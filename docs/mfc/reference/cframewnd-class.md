@@ -735,10 +735,10 @@ virtual BOOL OnCreateClient(
   
 ### Parameters  
  `lpcs`  
- A pointer to a Windows [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure *.*  
+ A pointer to a Windows [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.  
   
  `pContext`  
- A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure *.*  
+ A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  

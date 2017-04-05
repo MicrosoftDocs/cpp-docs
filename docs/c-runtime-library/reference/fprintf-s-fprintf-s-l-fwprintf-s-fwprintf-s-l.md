@@ -110,7 +110,7 @@ int _fwprintf_s_l(
  `fprintf_s` returns the number of bytes written. `fwprintf_s` returns the number of wide characters written. Each of these functions returns a negative value instead when an output error occurs.  
   
 ## Remarks  
- `fprintf_s` formats and prints a series of characters and values to the output `stream`*.* Each argument in `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
+ `fprintf_s` formats and prints a series of characters and values to the output `stream`. Each argument in `argument_list` (if any) is converted and output according to the corresponding format specification in `format`. The `format` argument uses the [format specification syntax for printf and wprintf functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
  `fwprintf_s` is a wide-character version of `fprintf_s`; in `fwprintf_s`, `format` is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. `fprintf_s` doesn't currently support output into a UNICODE stream.  
   

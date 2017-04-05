@@ -51,7 +51,8 @@ This topic lists the standard dialog data exchange (DDX) routines used for commo
 |[DDX_IPAddress](#ddx_ipaddress)|Initializes or retrieves the current value of an IP address control.|  
 |[DDX_LBIndex](#ddx_lbindex)|Initializes or retrieves the index of the current selection of a list box control.|  
 |[DDX_LBString](#ddx_lbstring)|Initializes or retrieves the current selection within a list box control.|  
-|[DDX_LBStringExact](#ddx_lbstringexact)|Initializes or retrieves the current selection within a list box control.|  
+|[DDX_LBStringExact](#ddx_lbstringexact)|Initializes or retrieves the current selection within a list box control.|
+|[DDX_ManagedControl](#ddx_managedcontrol)|Creates a .NET control matching the control's resource ID.|  
 |[DDX_MonthCalCtrl](#ddx_monthcalctrl)|Initializes or retrieves the current value of a month calendar control.|  
 |[DDX_Radio](#ddx_radio)|Initializes or retrieves the 0-based index of the radio control that is currently checked within a radio control group.|  
 |[DDX_Scroll](#ddx_scroll)|Initializes or retrieves the current position of a scroll control's thumb.|  
@@ -169,7 +170,7 @@ void AFXAPI DDX_Check(
  A reference to a member variable of the dialog box, form view, or control view object with which data is exchanged.  
   
 ### Remarks  
- When `DDX_Check` is called, *value* is set to the current state of the check box control. For a list of the possible state values, see [BM_GETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775986) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ When `DDX_Check` is called, *value* is set to the current state of the check box control. For a list of the possible state values, see [BM_GETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775986) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
@@ -243,6 +244,44 @@ void AFXAPI DDX_DateTimeCtrl(
   
 ### Requirements  
   **Header** afxdd_.h  
+
+   
+
+ 
+## <a name="ddx_managedcontrol"></a>  DDX_ManagedControl
+Creates a .NET control matching the control's resource ID.  
+   
+### Syntax  
+  ```  
+template <typename T>  
+void DDX_ManagedControl(  
+     CDataExchange* pDX,   
+     int nIDC,   
+     CWinFormsControl<T>& control );  
+```
+### Parameters  
+ `pDX`  
+ A pointer to a [CDataExchange Class](cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction.  
+  
+ `nIDC`  
+ The resource ID of the control associated with the control property.  
+  
+ `control`  
+ A reference to a [CWinFormsControl Class](cwinformscontrol-class.md) object.  
+   
+### Remarks  
+ `DDX_ManagedControl` calls [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol) to create a control matching the resource control ID. Use `DDX_ManagedControl` to create controls from resource IDs in [CDialog::OnInitDialog](cdialog-class.md#oninitdialog). For data exchange, you do not need to use the DDX/DDV functions with Windows Forms controls.  
+  
+ For more information, see [How to: Do DDX/DDV Data Binding with Windows Forms](../../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).  
+   
+### Requirements  
+ **Header:** afxwinforms.h  
+   
+### See Also  
+ [CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)   
+ [CDialog::OnInitDialog](cdialog-class.md#oninitdialog)
+ 
+
   
 ##  <a name="ddx_ipaddress"></a>  DDX_IPAddress  
  The `DDX_IPAddress` function manages the transfer of data between an IP Address control and a data member of the control view object.  

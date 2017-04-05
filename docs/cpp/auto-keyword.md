@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # auto Keyword
-The `auto` keyword is a declaration specifier. However, the C++ standard defines an original and a revised meaning for this keyword. Before [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], the `auto` keyword declares a variable in the *automatic* storage class; that is, a variable that has a local lifetime. Starting with [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], the`auto` keyword declares a variable whose type is deduced from the initialization expression in its declaration. The [/Zc:auto&#91;-&#93;](../build/reference/zc-auto-deduce-variable-type.md) compiler option controls the meaning of the `auto` keyword.  
+The `auto` keyword is a declaration specifier. However, the C++ standard defines an original and a revised meaning for this keyword. Before [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], the `auto` keyword declares a variable in the *automatic* storage class; that is, a variable that has a local lifetime. Starting with [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], the `auto` keyword declares a variable whose type is deduced from the initialization expression in its declaration. The [/Zc:auto&#91;-&#93;](../build/reference/zc-auto-deduce-variable-type.md) compiler option controls the meaning of the `auto` keyword.  
   
 ## Syntax  
   

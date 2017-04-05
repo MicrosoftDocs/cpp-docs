@@ -51,16 +51,16 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
- 
-    template <class Ty>  
+template <class Ty>  
 bool operator<(
     const Container <Ty>& left,  
     const Container <Ty>& right);
 ```  
   
 ## Return Value  
- Returns `lexicographical_compare`(_*Left*. [begin](../standard-library/container-class-begin.md), \_*Left*. [end](../standard-library/container-class-end.md), \_*Right***.begin**, \_*Right*.**end**).  
+ Returns `lexicographical_compare(left.begin, left.end, right.begin, right.end)`.  
   
 ## See Also  
- [\<sample container>](../standard-library/sample-container.md)
-
+[\<sample container>](../standard-library/sample-container.md)  
+[begin](../standard-library/container-class-begin.md)  
+[end](../standard-library/container-class-end.md)  

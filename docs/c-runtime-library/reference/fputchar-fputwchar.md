@@ -80,7 +80,7 @@ wint_t _fputwchar(
  Character to be written.  
   
 ## Return Value  
- Each of these functions returns the character written. For `_fputchar`, a return value of `EOF` indicates an error. For `_fputwchar`, a return value of `WEOF` indicates an error. If c is `NULL`, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return `EOF`(or`WEOF`) and set `errno` to `EINVAL`.  
+ Each of these functions returns the character written. For `_fputchar`, a return value of `EOF` indicates an error. For `_fputwchar`, a return value of `WEOF` indicates an error. If c is `NULL`, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return `EOF` (or `WEOF`) and set `errno` to `EINVAL`.  
   
  For more information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   

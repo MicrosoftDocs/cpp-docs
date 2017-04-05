@@ -143,12 +143,13 @@ typedef Allocator allocator_type;
  Erases elements from a forward list and copies a new set of elements to a target forward list.  
   
 ```  
- 
 void assign(
     size_type Count,   
     const Type& Val);
+
 void assign(
     initializer_list<Type> IList);
+
 template <class InputIterator>  
 void assign(InputIterator First, InputIterator Last);
 ```  
@@ -157,10 +158,10 @@ void assign(InputIterator First, InputIterator Last);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` first`|The beginning of the replacement range.|  
-|` last`|The end of the replacement range.|  
-|` count`|The number of elements to assign.|  
-|` val`|The value to assign each element.|  
+|`first`|The beginning of the replacement range.|  
+|`last`|The end of the replacement range.|  
+|`count`|The number of elements to assign.|  
+|`val`|The value to assign each element.|  
 |`Type`|The type of the value.|  
 |`IList`|The initializer_list to copy.|  
   
@@ -318,13 +319,13 @@ iterator emplace_after(const_iterator Where, Type&& val);
 |Parameter|Description|  
 |---------------|-----------------|  
 |`Where`|The position in the target forward list where the new element is constructed.|  
-|` val`|The constructor argument.|  
+|`val`|The constructor argument.|  
   
 ### Return Value  
  An iterator that designates the newly inserted element.  
   
 ### Remarks  
- This member function inserts an element with the constructor arguments ` val` just after the element pointed to by `Where` in the controlled sequence. Its behavior is otherwise the same as [forward_list::insert_after](#forward_list__insert_after).  
+ This member function inserts an element with the constructor arguments `val` just after the element pointed to by `Where` in the controlled sequence. Its behavior is otherwise the same as [forward_list::insert_after](#forward_list__insert_after).  
   
 ##  <a name="forward_list__emplace_front"></a>  forward_list::emplace_front  
  Adds an element constructed in place to the beginning of the list.  
@@ -338,7 +339,7 @@ void emplace_front(Type&& val);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` val`|The element added to the beginning of the forward list.|  
+|`val`|The element added to the beginning of the forward list.|  
   
 ### Remarks  
  This member function inserts an element with the constructor arguments `_ val` at the end of the controlled sequence.  
@@ -379,8 +380,8 @@ iterator erase_after(const_iterator first, const_iterator last);
 |Parameter|Description|  
 |---------------|-----------------|  
 |`Where`|The position in the target forward list where the element is erased.|  
-|` first`|The beginning of the range to erase.|  
-|` last`|The end of the range to erase.|  
+|`first`|The beginning of the range to erase.|  
+|`last`|The end of the range to erase.|  
   
 ### Return Value  
  An iterator that designates the first element remaining beyond any elements removed, or [forward_list::end](#forward_list__end) if no such element exists.  
@@ -540,17 +541,17 @@ void merge(forward_list& right, Predicate comp);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` right`|The forward list to merge from.|  
-|` comp`|The compare function object that is used to sort elements.|  
+|`right`|The forward list to merge from.|  
+|`comp`|The compare function object that is used to sort elements.|  
   
 ### Remarks  
- `forward_list::merge` removes the elements from the `forward_list`` right``,` and inserts them into this `forward_list`. Both sequences must be ordered by the same predicate, described below. The combined sequence is also ordered by that compare function object.  
+ `forward_list::merge` removes the elements from the `forward_list``right``,` and inserts them into this `forward_list`. Both sequences must be ordered by the same predicate, described below. The combined sequence is also ordered by that compare function object.  
   
  For the iterators `Pi` and `Pj` designating elements at positions `i` and `j`, the first member function imposes the order `!(*Pj < *Pi)` whenever `i < j`. (The elements are sorted in `ascending` order.) The second member function imposes the order `! comp(*Pj, *Pi)` whenever `i < j`.  
   
- No pairs of elements in the original controlled sequence are reversed in the resulting controlled sequence. If a pair of elements in the resulting controlled sequence compares equal ( `!(*Pi < *Pj) && !(*Pj < *Pi)`), an element from the original controlled sequence appears before an element from the sequence controlled by ` right`.  
+ No pairs of elements in the original controlled sequence are reversed in the resulting controlled sequence. If a pair of elements in the resulting controlled sequence compares equal ( `!(*Pi < *Pj) && !(*Pj < *Pi)`), an element from the original controlled sequence appears before an element from the sequence controlled by `right`.  
   
- An exception occurs only if ` comp` throws an exception. In that case, the controlled sequence is left in unspecified order and the exception is rethrown.  
+ An exception occurs only if `comp` throws an exception. In that case, the controlled sequence is left in unspecified order and the exception is rethrown.  
   
 ##  <a name="forward_list__operator_eq"></a>  forward_list::operator=  
  Replaces the elements of the forward list with a copy of another forward list.  
@@ -565,11 +566,11 @@ forward_list& operator=(forward_list&& right);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` right`|The forward list being copied into the forward list.|  
+|`right`|The forward list being copied into the forward list.|  
 |`IList`|A brace-enclosed initializer list, which behaves just like a sequence of elements of type `Type`.|  
   
 ### Remarks  
- The first member operator replaces the controlled sequence with a copy of the sequence controlled by ` right`.  
+ The first member operator replaces the controlled sequence with a copy of the sequence controlled by `right`.  
   
  The second member operator replaces the controlled sequence from an object of class `initializer_list<Type>`.  
   
@@ -608,7 +609,7 @@ void push_front(Type&& val);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` val`|The element added to the beginning of the forward list.|  
+|`val`|The element added to the beginning of the forward list.|  
   
 ### Remarks  
  If an exception is thrown, the container is left unaltered and the exception is rethrown.  
@@ -633,7 +634,7 @@ void remove(const Type& val);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` val`|The value which, if held by an element, will result in that element's removal from the list.|  
+|`val`|The value which, if held by an element, will result in that element's removal from the list.|  
   
 ### Remarks  
  The member function removes from the controlled sequence all elements, designated by the iterator `P`, for which `*P ==  val`.  
@@ -652,12 +653,12 @@ void remove_if(Predicate pred);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` pred`|The unary predicate which, if satisfied by an element, results in the deletion of that element from the list.|  
+|`pred`|The unary predicate which, if satisfied by an element, results in the deletion of that element from the list.|  
   
 ### Remarks  
  The member function removes from the controlled sequence all elements, designated by the iterator `P`, for which ` pred(*P)` is true.  
   
- An exception occurs only if ` pred` throws an exception. In that case, the controlled sequence is left in an unspecified state and the exception is rethrown.  
+ An exception occurs only if `pred` throws an exception. In that case, the controlled sequence is left in an unspecified state and the exception is rethrown.  
   
 ##  <a name="forward_list__resize"></a>  forward_list::resize  
  Specifies a new size for a forward list.  
@@ -672,10 +673,10 @@ void resize(size_type _Newsize, const Type& val);
 |Parameter|Description|  
 |---------------|-----------------|  
 |`_Newsize`|The number of elements in the resized forward list.|  
-|` val`|The value to use for padding.|  
+|`val`|The value to use for padding.|  
   
 ### Remarks  
- The member functions both ensure that the number of elements in the list henceforth is `_Newsize`. If it must make the controlled sequence longer, the first member function appends elements with value `Type()`, while the second member function appends elements with value ` val`. To make the controlled sequence shorter, both member functions effectively call `erase_after(begin() + _Newsize - 1, end())`.  
+ The member functions both ensure that the number of elements in the list henceforth is `_Newsize`. If it must make the controlled sequence longer, the first member function appends elements with value `Type()`, while the second member function appends elements with value `val`. To make the controlled sequence shorter, both member functions effectively call `erase_after(begin() + _Newsize - 1, end())`.  
   
 ##  <a name="forward_list__reverse"></a>  forward_list::reverse  
  Reverses the order in which the elements occur in a forward list.  
@@ -709,14 +710,14 @@ void sort(Predicate pred);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` pred`|The ordering predicate.|  
+|`pred`|The ordering predicate.|  
   
 ### Remarks  
  Both member functions order the elements in the controlled sequence by a predicate, described below.  
   
  For the iterators `Pi` and `Pj` designating elements at positions `i` and `j`, the first member function imposes the order `!(*Pj < *Pi)` whenever `i < j`. (The elements are sorted in `ascending` order.) The member template function imposes the order `! pred(*Pj, *Pi)` whenever `i < j`. No ordered pairs of elements in the original controlled sequence are reversed in the resulting controlled sequence. (The sort is stable.)  
   
- An exception occurs only if ` pred` throws an exception. In that case, the controlled sequence is left in unspecified order and the exception is rethrown.  
+ An exception occurs only if `pred` throws an exception. In that case, the controlled sequence is left in unspecified order and the exception is rethrown.  
   
 ##  <a name="forward_list__splice_after"></a>  forward_list::splice_after  
  Removes elements from a source forward_list and inserts them into a destination forward_list.  
@@ -856,10 +857,10 @@ void swap(forward_list& right);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` right`|The forward list providing the elements to be exchanged.|  
+|`right`|The forward list providing the elements to be exchanged.|  
   
 ### Remarks  
- The member function swaps the controlled sequences between `*this` and ` right`. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.  
+ The member function swaps the controlled sequences between `*this` and `right`. If `get_allocator() ==  right.get_allocator()`, it does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.  
   
 ##  <a name="forward_list__unique"></a>  forward_list::unique  
  Eliminates all but the first element from every consecutive group of equal elements.  
@@ -874,7 +875,7 @@ void unique(BinaryPredicate comp);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` comp`|The binary predicate used to compare successive elements.|  
+|`comp`|The binary predicate used to compare successive elements.|  
   
 ### Remarks  
  Keeps the first of each unique element, and removes the rest. The elements must be sorted so that elements of equal value are adjacent in the list.  
@@ -883,7 +884,7 @@ void unique(BinaryPredicate comp);
   
  For a controlled sequence of length `N` (> 0), the predicate ` comp(*Pi, *Pj)` is evaluated `N - 1` times.  
   
- An exception occurs only if ` comp` throws an exception. In that case, the controlled sequence is left in an unspecified state and the exception is rethrown.  
+ An exception occurs only if `comp` throws an exception. In that case, the controlled sequence is left in an unspecified state and the exception is rethrown.  
   
 ##  <a name="forward_list__value_type"></a>  forward_list::value_type  
  A type that represents the type of element stored in a forward list.  

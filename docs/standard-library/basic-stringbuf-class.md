@@ -124,13 +124,13 @@ basic_stringbuf(
  `_Mode`  
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#ios_base__openmode).  
   
- ` str`  
+ `str`  
  An object of type [basic_string](../standard-library/basic-string-class.md).  
   
 ### Remarks  
  The first constructor stores a null pointer in all the pointers controlling the input buffer and the output buffer. For more information, see the Remarks section of the [basic_streambuf Class](../standard-library/basic-streambuf-class.md). It also stores `_Mode` as the stringbuf mode. For more information, see the Remarks section of the [basic_stringbuf Class](../standard-library/basic-stringbuf-class.md).  
   
- The second constructor allocates a copy of the sequence controlled by the string object ` str`. If `_Mode & ios_base::in` is nonzero, it sets the input buffer to start reading at the start of the sequence. If `_Mode & ios_base::out` is nonzero, it sets the output buffer to begin writing at the start of the sequence. It also stores `_Mode` as the stringbuf mode. For more information, see the Remarks section of the [basic_stringbuf Class](../standard-library/basic-stringbuf-class.md).  
+ The second constructor allocates a copy of the sequence controlled by the string object `str`. If `_Mode & ios_base::in` is nonzero, it sets the input buffer to start reading at the start of the sequence. If `_Mode & ios_base::out` is nonzero, it sets the output buffer to begin writing at the start of the sequence. It also stores `_Mode` as the stringbuf mode. For more information, see the Remarks section of the [basic_stringbuf Class](../standard-library/basic-stringbuf-class.md).  
   
 ##  <a name="basic_stringbuf__char_type"></a>  basic_stringbuf::char_type  
  Associates a type name with the **Elem** template parameter.  

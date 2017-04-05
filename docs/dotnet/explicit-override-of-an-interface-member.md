@@ -66,7 +66,7 @@ public:
 };  
 ```  
   
- This revision requires that the interface member being explicitly overridden be given a unique name within the class. Here, I've provided the awkward name of `InterfaceClone`. The behavior is still the same - an invocation through the `ICloneable` interface invokes the renamed `InterfaceClone,` while a call through an object of type `R` invokes the second `Clone` instance.  
+ This revision requires that the interface member being explicitly overridden be given a unique name within the class. Here, I've provided the awkward name of `InterfaceClone`. The behavior is still the same - an invocation through the `ICloneable` interface invokes the renamed `InterfaceClone`, while a call through an object of type `R` invokes the second `Clone` instance.  
   
 ## See Also  
  [Member Declarations within a Class or Interface (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)   

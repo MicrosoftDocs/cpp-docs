@@ -186,40 +186,40 @@ virtual iter_type
     do_get(
  iter_type first,   
     iter_type last,  
-    ios_base& _Iosbase,   
-    ios_base::iostate& _State,   
-    tm* _Pt,  
-    char _Fmt,   
-    char _Mod) const;
+    ios_base& iosbase,   
+    ios_base::iostate& state,   
+    tm* ptm,  
+    char fmt,   
+    char mod) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  An Input iterator that indicates the start of the sequence to convert.  
   
- ` last`  
+ `last`  
  An Input iterator that indicates the end of the sequence.  
   
- `_Iosbase`  
+ `iosbase`  
  A stream object.  
   
- `_State`  
- A field in _Iosbase where appropriate bitmask elements are set to indicate errors.  
+ `state`  
+ A field in iosbase where appropriate bitmask elements are set to indicate errors.  
   
- `_Pt`  
+ `ptm`  
  A pointer to the time structure where the time is to be stored.  
   
- `_Fmt`  
+ `fmt`  
  A conversion specifier character.  
   
- `_Mod`  
+ `mod`  
  An optional modifier character.  
   
 ### Return Value  
- Returns an iterator that designates the first unconverted element. A conversion failure sets `ios_base::failbit` in `_State` and returns ` first`.  
+ Returns an iterator that designates the first unconverted element. A conversion failure sets `ios_base::failbit` in `state` and returns `first`.  
   
 ### Remarks  
- The virtual member function converts and skips one or more input elements in the range `[`` first``,` ` last``)` to determine the values stored in one or more members of `*pt`. A conversion failure sets `ios_base::failbit` in `_State` and returns ` first`. Otherwise, the function returns an iterator designating the first unconverted element.  
+ The virtual member function converts and skips one or more input elements in the range `[``first``,` `last``)` to determine the values stored in one or more members of `*pt`. A conversion failure sets `ios_base::failbit` in `state` and returns `first`. Otherwise, the function returns an iterator designating the first unconverted element.  
   
  The conversion specifiers are:  
   
@@ -277,32 +277,32 @@ virtual iter_type
 ```  
 virtual iter_type do_get_date(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.  
   
- `_State`  
+ `state`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the date information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The virtual protected member function tries to match sequential elements beginning at first in the sequence [ ` first`, ` last`) until it has recognized a complete, nonempty date input field. If successful, it converts this field to its equivalent value as the components **tm::tm_mon**, **tm::tm_day**, and **tm::tm_year**, and stores the results in _ *Pt*-> **tm_mon**, \_ *Pt*-> **tm_day** and \_ *Pt*-> **tm_year**, respectively. It returns an iterator designating the first element beyond the date input field. Otherwise, the function sets `_Iosbase`**::failbit** in `_State`. It returns an iterator designating the first element beyond any prefix of a valid date input field. In either case, if the return value equals ` last`, the function sets `ios_base::eofbit` in `_State`.  
+ The virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty date input field. If successful, it converts this field to its equivalent value as the components **tm::tm\_mon**, **tm::tm\_day**, and **tm::tm\_year**, and stores the results in `ptm->tm_mon`, `ptm->tm_day`, and `ptm->tm_year`, respectively. It returns an iterator designating the first element beyond the date input field. Otherwise, the function sets `iosbase::failbit` in `state`. It returns an iterator designating the first element beyond any prefix of a valid date input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `state`.  
   
  The format for the date input field is locale dependent. For the default locale, the date input field has the form MMM DD, YYYY, where:  
   
@@ -323,32 +323,32 @@ virtual iter_type do_get_date(iter_type first,
 ```  
 virtual iter_type do_get_monthname(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  Unused.  
   
- `_State`  
+ `state`  
  An output parameter that sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the month information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The virtual protected member function tries to match sequential elements beginning at first in the sequence [ ` first`, ` last`) until it has recognized a complete, nonempty month input field. If successful, it converts this field to its equivalent value as the component **tm::tm_mon**, and stores the result in _ *Pt*-> **tm_mon**. It returns an iterator designating the first element beyond the month input field. Otherwise, the function sets `ios_base::failbit` in \_ *State*. It returns an iterator designating the first element beyond any prefix of a valid month input field. In either case, if the return value equals ` last`, the function sets `ios_base::eofbit` in \_ *State*.  
+ The virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty month input field. If successful, it converts this field to its equivalent value as the component **tm::tm\_mon**, and stores the result in `ptm->tm_mon`. It returns an iterator designating the first element beyond the month input field. Otherwise, the function sets `ios_base::failbit` in *state*. It returns an iterator designating the first element beyond any prefix of a valid month input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in *state*.  
   
  The month input field is a sequence that matches the longest of a set of locale-specific sequences, such as Jan, January, Feb, February, and so on. The converted value is the number of months since January.  
   
@@ -361,32 +361,32 @@ virtual iter_type do_get_monthname(iter_type first,
 ```  
 virtual iter_type do_get_time(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  Unused.  
   
- `_State`  
+ `state`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the date information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The virtual protected member function tries to match sequential elements beginning at first in the sequence [ ` first`, ` last`) until it has recognized a complete, nonempty time input field. If successful, it converts this field to its equivalent value as the components **tm::tm_hour**, **tm::tm_min**, and **tm::tm_sec**, and stores the results in _ *Pt*-> **tm_hour**, \_ *Pt*-> **tm_min**, and \_ *Pt*-> **tm_sec**, respectively. It returns an iterator designating the first element beyond the time input field. Otherwise, the function sets `ios_base::failbit` in \_ *State*. It returns an iterator designating the first element beyond any prefix of a valid time input field. In either case, if the return value equals ` last`, the function sets `ios_base::eofbit` in \_ *State*.  
+ The virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty time input field. If successful, it converts this field to its equivalent value as the components **tm::tm_hour**, **tm::tm_min**, and **tm::tm_sec**, and stores the results in `ptm->tm_hour`, `ptm->tm_min`, and `ptm->tm_sec`, respectively. It returns an iterator designating the first element beyond the time input field. Otherwise, the function sets `ios_base::failbit` in *state*. It returns an iterator designating the first element beyond any prefix of a valid time input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in *state*.  
   
  In this implementation, the time input field has the form HH:MM:SS, where:  
   
@@ -407,32 +407,32 @@ virtual iter_type do_get_time(iter_type first,
 ```  
 virtual iter_type do_get_weekday(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.  
   
- `_State`  
+ `state`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the weekday information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The virtual protected member function tries to match sequential elements beginning at ` first` in the sequence [ ` first`, ` last`) until it has recognized a complete, nonempty weekday input field. If successful, it converts this field to its equivalent value as the component **tm::tm_wday**, and stores the result in _ *Pt*-> **tm_wday**. It returns an iterator designating the first element beyond the weekday input field. Otherwise, the function sets `ios_base::failbit` in \_ *State*. It returns an iterator designating the first element beyond any prefix of a valid weekday input field. In either case, if the return value equals ` last`, the function sets `ios_base::eofbit` in \_ *State*.  
+ The virtual protected member function tries to match sequential elements beginning at `first` in the sequence [ `first`, `last`) until it has recognized a complete, nonempty weekday input field. If successful, it converts this field to its equivalent value as the component **tm::tm\_wday**, and stores the result in `ptm->tm_wday`. It returns an iterator designating the first element beyond the weekday input field. Otherwise, the function sets `ios_base::failbit` in *state*. It returns an iterator designating the first element beyond any prefix of a valid weekday input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in *state*.  
   
  The weekday input field is a sequence that matches the longest of a set of locale-specific sequences, such as Sun, Sunday, Mon, Monday, and so on. The converted value is the number of days since Sunday.  
   
@@ -445,32 +445,32 @@ virtual iter_type do_get_weekday(iter_type first,
 ```  
 virtual iter_type do_get_year(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.  
   
- `_State`  
+ `state`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the year information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The virtual protected member function tries to match sequential elements beginning at ` first` in the sequence [ ` first`, ` last`) until it has recognized a complete, nonempty year input field. If successful, it converts this field to its equivalent value as the component **tm::tm_year**, and stores the result in _ *Pt*-> **tm_year**. It returns an iterator designating the first element beyond the year input field. Otherwise, the function sets `ios_base::failbit` in \_ *State*. It returns an iterator designating the first element beyond any prefix of a valid year input field. In either case, if the return value equals ` last`, the function sets `ios_base::eofbit` in \_ *State*.  
+ The virtual protected member function tries to match sequential elements beginning at `first` in the sequence [ `first`, `last`) until it has recognized a complete, nonempty year input field. If successful, it converts this field to its equivalent value as the component **tm::tm\_year**, and stores the result in `ptm->tm_year`. It returns an iterator designating the first element beyond the year input field. Otherwise, the function sets `ios_base::failbit` in *state*. It returns an iterator designating the first element beyond any prefix of a valid year input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in *state*.  
   
  The year input field is a sequence of decimal digits whose corresponding numeric value must be in the range [1900, 2036). The stored value is this value minus 1900. In this implementation, values in the range [69, 136) represent the range of years [1969, 2036). Values in the range [0, 69) are also permissible, but may represent either the range of years [1900, 1969) or [2000, 2069), depending on the specific translation environment.  
   
@@ -484,60 +484,59 @@ virtual iter_type do_get_year(iter_type first,
 iter_type get(
     iter_type first,   
     iter_type last,  
-    ios_base& _Iosbase,   
-    ios_base::iostate& _State,   
-    tm* _Pt,  
-    char _Fmt,   
-    char _Mod) const;
-
- 
+    ios_base& iosbase,   
+    ios_base::iostate& state,   
+    tm* ptm,  
+    char fmt,   
+    char mod) const;
+  
 iter_type get(
     iter_type first,   
     iter_type last,  
-    ios_base& _Iosbase,   
-    ios_base::iostate& _State,   
-    tm* _Pt,  
-    char_type* _Fmt_first, 
-    char_type* _Fmt_last) const;
+    ios_base& iosbase,   
+    ios_base::iostate& state,   
+    tm* ptm,  
+    char_type* fmt_first, 
+    char_type* fmt_last) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator that indicates where the sequence to be converted starts.  
   
- ` last`  
+ `last`  
  Input iterator that indicates the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  The stream.  
   
- `_State`  
+ `state`  
  The appropriate bitmask elements are set for the stream state to indicate errors.  
   
- `_Pt`  
+ `ptm`  
  Pointer to the time structure where the time is to be stored.  
   
- `_Fmt`  
+ `fmt`  
  A conversion specifier character.  
   
- `_Mod`  
+ `mod`  
  An optional modifier character.  
   
- `_Fmt_first`  
+ `fmt_first`  
  Points to where the format directives start.  
   
- `_Fmt_last`  
+ `fmt_last`  
  Points to the end of the format directives.  
   
 ### Return Value  
- Returns an iterator to the first character after the data that was used to assign the time struct *_Pt.  
+ Returns an iterator to the first character after the data that was used to assign the time struct `*ptm`.  
   
 ### Remarks  
- The first member function returns `do_get` `(`` first``,` ` last``,` `_Iosbase``,` `_State``,` `_Pt``,` `_Fmt``,` `_Mod``)`.  
+ The first member function returns `do_get(first, last, iosbase, state, ptm, fmt, mod)`.  
   
- The second member function calls `do_get` under the control of the format delimited by `[``_Fmt_first``,``_Fmt_last``)`. It treats the format as a sequence of fields, each of which determines the conversion of zero or more input elements delimited by `[first, last)`. It returns an iterator designating the first unconverted element. There are three kinds of fields:  
+ The second member function calls `do_get` under the control of the format delimited by `[fmt_first, fmt_last)`. It treats the format as a sequence of fields, each of which determines the conversion of zero or more input elements delimited by `[first, last)`. It returns an iterator designating the first unconverted element. There are three kinds of fields:  
   
- A per cent (%) in the format, followed by an optional modifier `mod` in the set [EOQ#], followed by a conversion specifier `fmt`, replaces `first` with the value returned by `do_get` `(`` first``,` ` last``,` `_Iosbase``,` `_State``,` `_Pt``,` `_Fmt``,` `_Mod``)`. A conversion failure sets `ios_base::failbit` in `state` and returns.  
+ A per cent (%) in the format, followed by an optional modifier `mod` in the set [EOQ#], followed by a conversion specifier `fmt`, replaces `first` with the value returned by `do_get(first, last, iosbase, state, ptm, fmt, mod)`. A conversion failure sets `ios_base::failbit` in `state` and returns.  
   
  A whitespace element in the format skips past zero or more input whitespace elements.  
   
@@ -549,32 +548,32 @@ iter_type get(
 ```  
 iter_type get_date(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.  
   
- `_State`  
+ `state`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the date information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The member function returns [do_get_date](#time_get__do_get_date)( ` first`, ` last`, `_Iosbase`, `_State`, `_Pt`).  
+ The member function returns [do_get_date](#time_get__do_get_date)( `first`, `last`, `iosbase`, `state`, `ptm`).  
   
  Note that months are counted from 0 to 11.  
   
@@ -639,32 +638,32 @@ tm_isdst: 0
 ```  
 iter_type get_monthname(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  Unused.  
   
- `_State`  
+ `state`  
  An output parameter that sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the month information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The member function returns [do_get_monthname](#time_get__do_get_monthname)( ` first`, ` last`, `_Iosbase`, `_State`, `_Pt`).  
+ The member function returns [do_get_monthname](#time_get__do_get_monthname)( `first`, `last`, `iosbase`, `state`, `ptm`).  
   
 ### Example  
   
@@ -727,32 +726,32 @@ tm_isdst: 0
 ```  
 iter_type get_time(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  Unused.  
   
- `_State`  
+ `state`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the date information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The member function returns [do_get_time](#time_get__do_get_time)( ` first`, ` last`, `_Iosbase`, `_State`, `_Pt`).  
+ The member function returns [do_get_time](#time_get__do_get_time)( `first`, `last`, `iosbase`, `state`, `ptm`).  
   
 ### Example  
   
@@ -804,32 +803,32 @@ tm_hour: 11
 ```  
 iter_type get_weekday(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.  
   
- `_State`  
+ `state`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the weekday information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The member function returns [do_get_weekday](#time_get__do_get_weekday)( ` first`, ` last`, `_Iosbase`, `_State`, `_Pt`).  
+ The member function returns [do_get_weekday](#time_get__do_get_weekday)( `first`, `last`, `iosbase`, `state`, `ptm`).  
   
 ### Example  
   
@@ -877,32 +876,32 @@ tm_wday: 3
 ```  
 iter_type get_year(iter_type first,
     iter_type last,
-    ios_base& _Iosbase,
-    ios_base::iostate& _State,
-    tm* _Pt) const;
+    ios_base& iosbase,
+    ios_base::iostate& state,
+    tm* ptm) const;
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  Input iterator addressing the beginning of the sequence to be converted.  
   
- ` last`  
+ `last`  
  Input iterator addressing the end of the sequence to be converted.  
   
- `_Iosbase`  
+ `iosbase`  
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.  
   
- `_State`  
+ `state`  
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.  
   
- `_Pt`  
+ `ptm`  
  A pointer to where the year information is to be stored.  
   
 ### Return Value  
  An input iterator addressing the first element beyond the input field.  
   
 ### Remarks  
- The member function returns [do_get_year](#time_get__do_get_year)( ` first`, ` last`, `_Iosbase`, `_State`, `_Pt`).  
+ The member function returns [do_get_year](#time_get__do_get_year)( `first`, `last`, `iosbase`, `state`, `ptm`).  
   
 ### Example  
   
@@ -959,25 +958,25 @@ typedef InputIterator iter_type;
  The constructor for objects of type `time_get`.  
   
 ```  
-explicit time_get(size_t _Refs = 0);
+explicit time_get(size_t refs = 0);
 ```  
   
 ### Parameters  
- `_Refs`  
+ `refs`  
  Integer value used to specify the type of memory management for the object.  
   
 ### Remarks  
- The possible values for the `_Refs` parameter and their significance are:  
+ The possible values for the `refs` parameter and their significance are:  
   
 -   0: The lifetime of the object is managed by the locales that contain it.  
   
 -   1: The lifetime of the object must be manually managed.  
   
--   \> 0: These values are not defined.  
+-   \> 1: These values are not defined.  
   
  No direct examples are possible, because the destructor is protected.  
   
- The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).  
+ The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `refs`).  
   
 ## See Also  
  [\<locale>](../standard-library/locale.md)   

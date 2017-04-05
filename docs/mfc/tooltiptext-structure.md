@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # TOOLTIPTEXT Structure
-In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), you need to use the `TOOLTIPTEXT` structure. The members of the `TOOLTIPTEXT`structure are:  
+In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), you need to use the `TOOLTIPTEXT` structure. The members of the `TOOLTIPTEXT` structure are:  
   
  `typedef struct {`  
   

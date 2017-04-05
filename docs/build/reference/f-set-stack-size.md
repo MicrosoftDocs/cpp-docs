@@ -52,7 +52,7 @@ Sets the program stack size in bytes.
  The stack size in bytes.  
   
 ## Remarks  
- Without this option the stack size defaults to 1 MB. The `number` argument can be in decimal or C-language notation. The argument can range from 1 to the maximum stack size accepted by the linker. The linker rounds up the specified value to the nearest 4 bytes. The space between **/F** and `number`is optional.  
+ Without this option the stack size defaults to 1 MB. The `number` argument can be in decimal or C-language notation. The argument can range from 1 to the maximum stack size accepted by the linker. The linker rounds up the specified value to the nearest 4 bytes. The space between **/F** and `number` is optional.  
   
  You may need to increase the stack size if your program gets stack-overflow messages.  
   

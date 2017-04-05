@@ -196,7 +196,7 @@ template <class Fx, class Alloc>
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The function object to copy.  
   
  `Fx`  

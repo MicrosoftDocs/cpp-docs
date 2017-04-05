@@ -94,7 +94,7 @@ void f(B* pb) {
   
  Consequently, `static_cast` can do the inverse of implicit conversions, in which case the results are undefined. It is left to the programmer to verify that the results of a `static_cast` conversion are safe.  
   
- This behavior also applies to types other than class types. For instance, `static_cast` can be used to convert from an int to a `char`. However, the resulting `char` may not have enough bits to hold the entire `int` value. Again, it is left to the programmer to verify that the results of a`static_cast` conversion are safe.  
+ This behavior also applies to types other than class types. For instance, `static_cast` can be used to convert from an int to a `char`. However, the resulting `char` may not have enough bits to hold the entire `int` value. Again, it is left to the programmer to verify that the results of a `static_cast` conversion are safe.  
   
  The `static_cast` operator can also be used to perform any implicit conversion, including standard conversions and user-defined conversions. For example:  
   

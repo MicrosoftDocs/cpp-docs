@@ -111,7 +111,7 @@ unsigned __int64 _wcstoui64(
  Locale to use.  
   
 ## Return Value  
- `_strtoui64` returns the value represented in the string `nptr`, except when the representation would cause an overflow, in which case it returns `_UI64_MAX`. _`strtoui64`will return 0 if no conversion can be performed.  
+ `_strtoui64` returns the value represented in the string `nptr`, except when the representation would cause an overflow, in which case it returns `_UI64_MAX`. `_strtoui64` returns 0 if no conversion can be performed.  
   
  `_UI64_MAX` is defined in LIMITS.H.  
   
@@ -120,7 +120,7 @@ unsigned __int64 _wcstoui64(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.  
   
 ## Remarks  
- The `_strtoui64`function converts `nptr` to an `unsigned` `__int64`. `_wcstoui64` is a wide-character version of `_strtoui64`; its `nptr` argument is a wide-character string. Otherwise these functions behave identically.  
+ The `_strtoui64` function converts `nptr` to an `unsigned` `__int64`. `_wcstoui64` is a wide-character version of `_strtoui64`; its `nptr` argument is a wide-character string. Otherwise these functions behave identically.  
   
  Both functions stop reading the string `nptr` at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to `base`.  
   
@@ -131,7 +131,7 @@ unsigned __int64 _wcstoui64(
 |`_tcstoui64`|`_strtoui64`|`_strtoui64`|`_wstrtoui64`|  
 |`_tcstoui64_l`|`_strtoui64_l`|`_strtoui64_l`|`_wstrtoui64_l`|  
   
- The current locale's `LC_NUMERIC` category setting determines recognition of the radix character in `nptr`; for more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; `_strtoui64_l` and`_wcstoui64_l` are identical to the corresponding functions without the `_l` suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
+ The current locale's `LC_NUMERIC` category setting determines recognition of the radix character in `nptr`; for more information, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). The functions without the _l suffix use the current locale; `_strtoui64_l` and `_wcstoui64_l` are identical to the corresponding functions without the `_l` suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  If `endptr` is not `NULL`, a pointer to the character that stopped the scan is stored at the location pointed to by `endptr`. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of `nptr` is stored at the location pointed to by `endptr`.  
   

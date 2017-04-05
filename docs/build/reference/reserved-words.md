@@ -55,12 +55,12 @@ The following words are reserved by the linker. These names can be used as argum
 |**CODE**|**LIBRARY**1|**PROTMODE**2|  
 |**CONFORMING**|**LOADONCALL**1|**PURE**1|  
 |**DATA**|**LONGNAMES**2|**READONLY**|  
-|**DESCRIPTION**|`MOVABLE`1|**READWRITE**|  
+|**DESCRIPTION**|**MOVABLE**1|**READWRITE**|  
 |**DEV386**|**MOVEABLE**1|**REALMODE**1|  
 |**DISCARDABLE**|**MULTIPLE**|**RESIDENT**|  
 |**DYNAMIC**|**NAME**|**RESIDENTNAME**1|  
 |**EXECUTE-ONLY**|**NEWFILES**2|**SECTIONS**|  
-|**EXECUTEONLY**|`NODATA`1|**SEGMENTS**|  
+|**EXECUTEONLY**|**NODATA**1|**SEGMENTS**|  
 |**EXECUTEREAD**|**NOIOPL**1|**SHARED**|  
 |**EXETYPE**|**NONAME**|**SINGLE**|  
 |**EXPORTS**|**NONCONFORMING**1|**STACKSIZE**|  

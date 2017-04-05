@@ -81,6 +81,7 @@ The following macros can be used to handle DHTML events.
 |[DHTML_EVENT_ONSELECTSTART](#dhtml_event_onselectstart)|Used to handle the **onselectstart** event from an HTML element.|  
 |[DHTML_EVENT_TAG](#dhtml_event_tag)|Used to handle an event at the document level for all elements with a particular HTML tag.|  
 |[END_DHTML_EVENT_MAP](#end_dhtml_event_map)|Marks the end of the DHTML event map.|  
+|[END_DHTML_EVENT_MAP_INLINE](#end_dhtml_event_map_inline)|Marks the end of the DHTML event map. |
   
 ## URL Event Map Macros  
  The following macros can be used to handle DHTML events in [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)-derived classes.  
@@ -880,7 +881,7 @@ BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 ### Remarks  
  Because a multipage DHTML dialog consists of multiple HTML pages, each of which can raise DHTML events, embedded event maps are used to map events to handlers on a per-page basis.  
   
- Embedded event maps within a DHTML and URL event map consist of a `BEGIN_EMBED_DHTML_EVENT_MAP` macro followed by [DHTML_EVENT](dhtml-event-maps.md#dhtml_event) macros and an [END_EMBED_DHTML_EVENT_MAP](dhtml-event-maps.md#end_embed_dhtml_event_map) macro.  
+ Embedded event maps within a DHTML and URL event map consist of a `BEGIN_EMBED_DHTML_EVENT_MAP` macro followed by [DHTML_EVENT](#dhtml_event) macros and an [END_EMBED_DHTML_EVENT_MAP](#end_embed_dhtml_event_map) macro.  
   
  Each embedded event map requires a corresponding [URL event entry](#url_event_entry) to map *mapName* (specified in `BEGIN_EMBED_DHTML_EVENT_MAP`) to a URL or HTML resource.  
   
@@ -1001,6 +1002,20 @@ URL_EVENT_ENTRY(className, url,  mapName)
   
 ### Requirements  
   **Header** afxdhtml.h  
-    
-## See Also  
- [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+
+##  <a name="end_dhtml_event_map_inline"></a>END_DHTML_EVENT_MAP_INLINE
+Marks the end of the DHTML event map.  
+   
+### Syntax    
+```
+END_DHTML_EVENT_MAP_INLINE( )    
+```  
+   
+### Remarks  
+ Must be used in conjunction with [BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_event_map_inline).  
+   
+### Requirements  
+ **Header:** afxdhtml.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   

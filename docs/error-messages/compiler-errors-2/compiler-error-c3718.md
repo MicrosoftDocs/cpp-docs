@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Error C3718
 can only call 'event' in the context of a member function of the receiving class  
   
- The `event`can only be called from the receiving class.  
+ The `event` can only be called from the receiving class.  
   
 ## Example  
  The following sample generates C3718:  

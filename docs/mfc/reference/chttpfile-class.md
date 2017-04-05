@@ -454,7 +454,7 @@ BOOL SendRequestEx(
  Number of bytes to be sent in the request.  
   
  `dwFlags`  
- Flags describing the operation. For a list of appropriate flags, see [HttpSendRequestEx](http://msdn.microsoft.com/library/windows/desktop/aa384318) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*.*  
+ Flags describing the operation. For a list of appropriate flags, see [HttpSendRequestEx](http://msdn.microsoft.com/library/windows/desktop/aa384318) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
   
  `dwContext`  
  The context identifier for the `CHttpFile` operation. See Remarks for more information about this parameter.  

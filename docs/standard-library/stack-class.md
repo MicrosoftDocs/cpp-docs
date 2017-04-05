@@ -216,7 +216,7 @@ void push(const Type& val);
 ```  
   
 ### Parameters  
- ` val`  
+ `val`  
  The element added to the top of the stack.  
   
 ### Remarks  
@@ -316,7 +316,7 @@ explicit stack(const container_type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The container of which the constructed stack is to be a copy.  
   
 ### Example  

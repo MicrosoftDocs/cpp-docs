@@ -114,7 +114,7 @@ class basic_streambuf;
 |[eback](#basic_streambuf__eback)|A protected function that returns a pointer to the beginning of the input buffer.|  
 |[egptr](#basic_streambuf__egptr)|A protected function that returns a pointer just past the end of the input buffer.|  
 |[epptr](#basic_streambuf__epptr)|A protected function that returns a pointer just past the end of the output buffer.|  
-|[gbump](#basic_streambuf__gbump)|A protected function that adds ` count` to the next pointer for the input buffer.|  
+|[gbump](#basic_streambuf__gbump)|A protected function that adds `count` to the next pointer for the input buffer.|  
 |[getloc](#basic_streambuf__getloc)|Gets the `basic_streambuf` object's locale.|  
 |[gptr](#basic_streambuf__gptr)|A protected function that returns a pointer to the next element of the input buffer.|  
 |[imbue](#basic_streambuf__imbue)|A protected, virtual function called by [pubimbue](#basic_streambuf__pubimbue).|  
@@ -172,13 +172,13 @@ basic_streambuf(const basic_streambuf& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An lvalue reference to the `basic_streambuf` object that is used to set the values for this `basic_streambuf` object.  
   
 ### Remarks  
  The first protected constructor stores a null pointer in all pointers controlling the input buffer and the output buffer. It also stores `locale::classic` in the locale object. For more information, see [locale::classic](../standard-library/locale-class.md#locale__classic).  
   
- The second protected constructor copies the pointers and locale from ` right`.  
+ The second protected constructor copies the pointers and locale from `right`.  
   
 ##  <a name="basic_streambuf__char_type"></a>  basic_streambuf::char_type  
  Associates a type name with the **Elem** template parameter.  
@@ -218,14 +218,14 @@ char_type *epptr() const;
  A pointer just past the end of the output buffer.  
   
 ##  <a name="basic_streambuf__gbump"></a>  basic_streambuf::gbump  
- A protected function that adds ` count` to the next pointer for the input buffer.  
+ A protected function that adds `count` to the next pointer for the input buffer.  
   
 ```  
 void gbump(int count);
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The amount by which to advance the pointer.  
   
 ##  <a name="basic_streambuf__getloc"></a>  basic_streambuf::getloc  
@@ -336,11 +336,11 @@ basic_streambuf& operator=(const basic_streambuf& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An lvalue reference to the `basic_streambuf` object that is used to assign values to this object.  
   
 ### Remarks  
- The protected member operator copies from ` right` the pointers that control the input buffer and the output buffer. It also stores ` right``.`[getloc()](#basic_streambuf__getloc) in the `locale object`. It returns `*this`.  
+ The protected member operator copies from `right` the pointers that control the input buffer and the output buffer. It also stores `right``.`[getloc()](#basic_streambuf__getloc) in the `locale object`. It returns `*this`.  
   
 ##  <a name="basic_streambuf__overflow"></a>  basic_streambuf::overflow  
  A protected virtual function that can be called when a new character is inserted into a full buffer.  
@@ -407,14 +407,14 @@ char_type *pbase() const;
  A pointer to the beginning of the output buffer.  
   
 ##  <a name="basic_streambuf__pbump"></a>  basic_streambuf::pbump  
- A protected function that adds ` count` to the next pointer for the output buffer.  
+ A protected function that adds `count` to the next pointer for the output buffer.  
   
 ```  
 void pbump(int count);
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The number of characters by which to move the write position forward.  
   
 ##  <a name="basic_streambuf__pos_type"></a>  basic_streambuf::pos_type  
@@ -512,11 +512,11 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
  `_Buffer`  
  A pointer to `char_type` for this instantiation.  
   
- ` count`  
+ `count`  
  The size of the buffer.  
   
 ### Return Value  
- Returns [setbuf](#basic_streambuf__setbuf)( `_Buffer`, ` count`).  
+ Returns [setbuf](#basic_streambuf__setbuf)( `_Buffer`, `count`).  
   
 ##  <a name="basic_streambuf__pubsync"></a>  basic_streambuf::pubsync  
  Calls [sync](#basic_streambuf__sync), a protected virtual function that is overridden in a derived class, and updates the external stream associated with this buffer.  
@@ -642,7 +642,7 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
  `_Buffer`  
  Pointer to a buffer.  
   
- ` count`  
+ `count`  
  Size of the buffer.  
   
 ### Return Value  
@@ -718,7 +718,7 @@ int main( )
 ```  
   
 ##  <a name="basic_streambuf__sgetn"></a>  basic_streambuf::sgetn  
- Extracts up to ` count` characters from the input buffer and stores them in the provided buffer ` ptr`.  
+ Extracts up to `count` characters from the input buffer and stores them in the provided buffer `ptr`.  
   
  This method is potentially unsafe, as it relies on the caller to check that the passed values are correct.  
   
@@ -729,17 +729,17 @@ streamsize sgetn(
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  The buffer to contain the extracted characters.  
   
- ` count`  
+ `count`  
  The number of elements to read.  
   
 ### Return Value  
  The number of elements read. See [streamsize](../standard-library/ios-typedefs.md#streamsize) for more information.  
   
 ### Remarks  
- The member function returns [xsgetn](#basic_streambuf__xsgetn)( ` ptr`, ` count`).  
+ The member function returns [xsgetn](#basic_streambuf__xsgetn)( `ptr`, `count`).  
   
 ### Example  
   
@@ -909,17 +909,17 @@ streamsize sputn(const char_type* ptr, streamsize count);
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  The character string.  
   
- ` count`  
+ `count`  
  The count of characters.  
   
 ### Return Value  
  The number of characters actually inserted into the stream.  
   
 ### Remarks  
- The member function returns [xsputn](#basic_streambuf__xsputn)( ` ptr`, ` count`). See the Remarks section of this member for more information.  
+ The member function returns [xsputn](#basic_streambuf__xsputn)( `ptr`, `count`). See the Remarks section of this member for more information.  
   
 ### Example  
   
@@ -1030,10 +1030,10 @@ void swap(basic_streambuf& right);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` right`|An lvalue reference to the `basic_streambuf` object that is used to exchange values.|  
+|`right`|An lvalue reference to the `basic_streambuf` object that is used to exchange values.|  
   
 ### Remarks  
- The protected member function exchanges with ` right` all the pointers controlling the `input buffer` and the `output buffer`. It also exchanges ` right``.`[getloc()](#basic_streambuf__getloc) with the `locale` object.  
+ The protected member function exchanges with `right` all the pointers controlling the `input buffer` and the `output buffer`. It also exchanges `right``.`[getloc()](#basic_streambuf__getloc) with the `locale` object.  
   
 ##  <a name="basic_streambuf__sync"></a>  basic_streambuf::sync  
  A protected virtual function that tries to synchronize the controlled streams with any associated external streams.  
@@ -1115,17 +1115,17 @@ virtual streamsize xsgetn(
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  The buffer to contain the extracted characters.  
   
- ` count`  
+ `count`  
  The number of elements to extract.  
   
 ### Return Value  
  The number of elements extracted.  
   
 ### Remarks  
- The protected virtual member function extracts up to ` count` elements from the input stream, as if by repeated calls to [sbumpc](#basic_streambuf__sbumpc), and stores them in the array beginning at ` ptr`. It returns the number of elements actually extracted.  
+ The protected virtual member function extracts up to `count` elements from the input stream, as if by repeated calls to [sbumpc](#basic_streambuf__sbumpc), and stores them in the array beginning at `ptr`. It returns the number of elements actually extracted.  
   
 ##  <a name="basic_streambuf__xsputn"></a>  basic_streambuf::xsputn  
  Protected, virtual function to insert elements into the output stream.  
@@ -1135,17 +1135,17 @@ virtual streamsize xsputn(const char_type* ptr, streamsize count);
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  Pointer to elements to insert.  
   
- ` count`  
+ `count`  
  Number of elements to insert.  
   
 ### Return Value  
  The number of elements actually inserted into the stream.  
   
 ### Remarks  
- The protected virtual member function inserts up to ` count` elements into the output stream, as if by repeated calls to [sputc](#basic_streambuf__sputc), from the array beginning at ` ptr`. The insertion of characters into the output stream stops once all ` count` characters have been written, or if calling `sputc( count)` would return `traits::eof()`. It returns the number of elements actually inserted.  
+ The protected virtual member function inserts up to `count` elements into the output stream, as if by repeated calls to [sputc](#basic_streambuf__sputc), from the array beginning at `ptr`. The insertion of characters into the output stream stops once all `count` characters have been written, or if calling `sputc( count)` would return `traits::eof()`. It returns the number of elements actually inserted.  
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   

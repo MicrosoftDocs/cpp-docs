@@ -780,7 +780,7 @@ bool operator==(const bitset\<N>& right) const;
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The bitset that is to be compared to the target bitset for equality.  
   
 ### Return Value  
@@ -972,7 +972,7 @@ bitset\<N>& operator^=(const bitset\<N>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The bitset that is to be combined bitwise with the target bitset.  
   
 ### Return Value  
@@ -1034,7 +1034,7 @@ bitset\<N>& operator|=(const bitset\<N>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The bitset that is to be combined bitwise with the target bitset.  
   
 ### Return Value  
@@ -1148,7 +1148,7 @@ public:
 ```    
   
 ### Parameters  
- ` val`  
+ `val`  
  The value of the object of type `bool` to be assigned to a bit in a bitset.  
   
  `_Bitref`  

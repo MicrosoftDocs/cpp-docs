@@ -155,11 +155,11 @@ if (( _access( "datafile",2 )) == -1 )
   
  The actual error number for `_strerror_s` is stored in the variable [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). The system error messages are accessed through the variable [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), which is an array of messages ordered by error number. `_strerror_s` accesses the appropriate error message by using the `errno` value as an index to the variable `_sys_errlist`. The value of the variable [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) is defined as the maximum number of elements in the `_sys_errlist` array. To produce accurate results, call `_strerror_s` immediately after a library routine returns with an error. Otherwise, subsequent calls to `strerror_s` or `_strerror_s` can overwrite the `errno` value.  
   
- `_wcserror_s` and `__wcserror_s`are wide-character versions of `strerror_s`and `_strerror_s`, respectively.  
+ `_wcserror_s` and `__wcserror_s` are wide-character versions of `strerror_s` and `_strerror_s`, respectively.  
   
  These functions validate their parameters. If buffer is `NULL` or if the size parameter is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return `EINVAL` and set `errno` to `EINVAL`.  
   
- `_strerror_s, _wcserror_s,` and `__wcserror_s` are not part of the ANSI definition but are instead Microsoft extensions to it. Do not use them where portability is desired; for ANSI compatibility, use `strerror_s` instead.  
+ `_strerror_s`, `_wcserror_s`, and `__wcserror_s` are not part of the ANSI definition but are instead Microsoft extensions to it. Do not use them where portability is desired; for ANSI compatibility, use `strerror_s` instead.  
   
  In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).  
   

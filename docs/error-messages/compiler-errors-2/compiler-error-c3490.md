@@ -45,7 +45,7 @@ translation.priority.mt:
 -   Remove the `const` modifier from your method declaration.  
   
 ## Example  
- The following example generates C3490 because it modifies the member variable`_i` in a `const` method:  
+ The following example generates C3490 because it modifies the member variable `_i` in a `const` method:  
   
 ```  
 // C3490a.cpp  

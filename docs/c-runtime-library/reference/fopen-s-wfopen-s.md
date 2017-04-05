@@ -94,7 +94,7 @@ errno_t _wfopen_s(
   
 ### Error Conditions  
   
-|`pFile`|`filename`|`mode`|Return Value|Contents of`pFile`|  
+|`pFile`|`filename`|`mode`|Return Value|Contents of `pFile`|  
 |-------------|----------------|------------|------------------|------------------------|  
 |`NULL`|any|any|`EINVAL`|unchanged|  
 |any|`NULL`|any|`EINVAL`|unchanged|  
@@ -114,9 +114,9 @@ errno_t _wfopen_s(
 ## Unicode support  
  `fopen_s` supports Unicode file streams. To open a new or existing Unicode file, pass a `ccs` flag that specifies the desired encoding to `fopen_s`:  
   
- `fopen_s(&fp, "newfile.txt", "rw,`   `ccs=`  `encoding` `");`  
+ `fopen_s(&fp, "newfile.txt", "rw, ccs=`*encoding*`");`  
   
- Allowed values of `encoding` are `UNICODE`, `UTF-8`, and `UTF-16LE`. If there no value is specified for `encoding`, `fopen_s` uses ANSI encoding.  
+ Allowed values of *encoding* are `UNICODE`, `UTF-8`, and `UTF-16LE`. If there no value is specified for *encoding*, `fopen_s` uses ANSI encoding.  
   
  If the file already exists and is opened for reading or appending, the Byte Order Mark (BOM), if present in the file, determines the encoding. The BOM encoding takes precedence over the encoding that's specified by the `ccs` flag. The `ccs` encoding is only used when no BOM is present or if the file is a new file.  
   
@@ -135,7 +135,7 @@ errno_t _wfopen_s(
   
  Files that are opened for writing in Unicode mode have a BOM written to them automatically.  
   
- If `mode` is "`a, ccs=<encoding>`", `fopen_s` first tries to open the file with both read access and write access. If successful, the function reads the BOM to determine the encoding for the file; if unsuccessful, the function uses the default encoding for the file. In either case, `fopen_s` then re-opens the file with write-only access. (This applies to `a` mode only, not `a+`.)  
+ If `mode` is "a, ccs=*encoding*", `fopen_s` first tries to open the file with both read access and write access. If successful, the function reads the BOM to determine the encoding for the file; if unsuccessful, the function uses the default encoding for the file. In either case, `fopen_s` then re-opens the file with write-only access. (This applies to `a` mode only, not `a+`.)  
   
 ### Generic-Text Routine Mappings  
   

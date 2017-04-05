@@ -54,7 +54,7 @@ unsigned long __segmentlimit( 
  A constant that specifies the segment selector.  
   
 ## Return Value  
- The segment limit of the segment selector specified by `a,` provided that the selector is valid and visible at the current permission level.  
+ The segment limit of the segment selector specified by `a`, provided that the selector is valid and visible at the current permission level.  
   
 ## Requirements  
   

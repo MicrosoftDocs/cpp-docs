@@ -58,17 +58,15 @@ Determines whether the specified parameter is an input or output parameter.
  *pParamIO*  
  A pointer to the variable containing the **DBPARAMIO** type (input or output) of the specified parameter. It is defined as follows:  
   
- `typedef DWORD DBPARAMIO;`  
+```  
+typedef DWORD DBPARAMIO;  
   
- `enum DBPARAMIOENUM`  
-  
- `{   DBPARAMIO_NOTPARAM   = 0,`  
-  
- `DBPARAMIO_INPUT      = 0x1,`  
-  
- `DBPARAMIO_OUTPUT     = 0x2`  
-  
- `};`  
+enum DBPARAMIOENUM {  
+    DBPARAMIO_NOTPARAM   = 0,  
+    DBPARAMIO_INPUT      = 0x1,  
+    DBPARAMIO_OUTPUT     = 0x2  
+};  
+```  
   
 ## Return Value  
  Returns **true** on success or **false** on failure.  

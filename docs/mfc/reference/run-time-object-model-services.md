@@ -49,6 +49,8 @@ The classes [CObject](../../mfc/reference/cobject-class.md) and [CRuntimeClass](
   
 ### Run-Time Object Model Services Macros  
   
+
+
 |||  
 |-|-|  
 |[DECLARE_DYNAMIC](#declare_dynamic)|Enables access to run-time class information (must be used in the class declaration).|  
@@ -65,12 +67,69 @@ The classes [CObject](../../mfc/reference/cobject-class.md) and [CRuntimeClass](
  The Microsoft Foundation Class Library provides two macros specific to OLE.  
   
 ### Dynamic Creation of OLE Objects  
-  
+
+ 
+
+
+
+
+
+
 |||  
 |-|-|  
+|[AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)|Determines whether the Common Controls library implements the specified API.|
+|[AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)|Determines whether the Common Controls library implements the specified API.|
 |[DECLARE_OLECREATE](#declare_olecreate)|Enables objects to be created through OLE automation.|  
+|[DECLARE_OLECTLTYPE](#declare_olectltype)|Declares the **GetUserTypeNameID** and `GetMiscStatus` member functions of your control class.|
+|[DECLARE_PROPPAGEIDS](#declare_proppageids)|Declares that the OLE control provides a list of property pages to display its properties.|
 |[IMPLEMENT_OLECREATE](#implement_olecreate)|Enables objects to be created by the OLE system.|  
-  
+|[IMPLEMENT_OLECTLTYPE](#implement_olectltype)|Implements the **GetUserTypeNameID** and `GetMiscStatus` member functions of your control class.|  
+|[IMPLEMENT_OLECREATE_FLAGS](#implement_olecreate_flags)|Either this macro or [IMPLEMENT_OLECREATE](#implement_olecreate) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`. |
+
+## <a name="afx_comctl32_if_exists"></a> AFX_COMCTL32_IF_EXISTS
+Determines whether the Common Controls library implements the specified API.  
+   
+### Syntax  
+  ```  
+AFX_COMCTL32_IF_EXISTS(  proc );  
+```
+### Parameters  
+ `proc`  
+ Pointer to a null-terminated string containing the function name, or specifies the function's ordinal value. If this parameter is an ordinal value, it must be in the low-order word; the high-order word must be zero. This parameter must be in Unicode.  
+   
+### Remarks  
+ Use this macro to determine whether the Common Controls library the function specified by `proc` (instead of calling [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212).  
+   
+### Requirements  
+ afxcomctl32.h, afxcomctl32.inl  
+   
+### See Also  
+ [Isolation of the MFC Common Controls Library](../isolation-of-the-mfc-common-controls-library.md)
+ [AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)
+ 
+## <a name="afx_comctl32_if_exists2"></a>  AFX_COMCTL32_IF_EXISTS2
+Determines whether the Common Controls library implements the specified API (this is the Unicode version of [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)).  
+   
+### Syntax    
+```  
+AFX_COMCTL32_IF_EXISTS2( proc );  
+```
+### Parameters  
+ `proc`  
+ Pointer to a null-terminated string containing the function name, or specifies the function's ordinal value. If this parameter is an ordinal value, it must be in the low-order word; the high-order word must be zero. This parameter must be in Unicode.  
+   
+### Remarks  
+ Use this macro to determine whether the Common Controls library the function specified by `proc` (instead of calling [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212). This macro is the Unicode version of `AFX_COMCTL32_IF_EXISTS`.  
+   
+### Requirements  
+ afxcomctl32.h, afxcomctl32.inl  
+   
+### See Also  
+ [Isolation of the MFC Common Controls Library](../isolation-of-the-mfc-common-controls-library.md)
+ [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)
+
+
+
 ##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC  
  Adds the ability to access run-time information about an object's class when deriving a class from `CObject`.  
   
@@ -125,6 +184,51 @@ DECLARE_DYNCREATE(class_name)
 
 ### Requirements  
  **Header:** afx.h 
+
+ 
+## DECLARE_OLECTLTYPE
+Declares the **GetUserTypeNameID** and `GetMiscStatus` member functions of your control class.  
+   
+### Syntax    
+```
+DECLARE_OLECTLTYPE( class_name )  
+```
+### Parameters  
+ *class_name*  
+ The name of the control class.  
+   
+### Remarks  
+ **GetUserTypeNameID** and `GetMiscStatus` are pure virtual functions, declared in `COleControl`. Because these functions are pure virtual, they must be overridden in your control class. In addition to **DECLARE_OLECTLTYPE**, you must add the `IMPLEMENT_OLECTLTYPE` macro to your control class declaration.  
+   
+### Requirements  
+ **Header:** afxctl.h  
+   
+### See Also  
+ [IMPLEMENT_OLECTLTYPE](#implement_olectltype)
+ 
+
+## DECLARE_PROPPAGEIDS
+Declares that the OLE control provides a list of property pages to display its properties.  
+   
+### Syntax    
+```
+DECLARE_PROPPAGEIDS( class_name )  
+```
+### Parameters  
+ *class_name*  
+ The name of the control class that owns the property pages.  
+   
+### Remarks  
+ Use the `DECLARE_PROPPAGEIDS` macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the `BEGIN_PROPPAGEIDS` macro, macro entries for each of your control's property pages, and the `END_PROPPAGEIDS` macro to declare the end of the property page list.  
+  
+ For more information on property pages, see the article [ActiveX Controls: Property Pages](../mfc-activex-controls-property-pages.md).  
+   
+### Requirements  
+ **Header:** afxctl.h  
+   
+### See Also   
+ [BEGIN_PROPPAGEIDS](#begin_proppageids)   
+ [END_PROPPAGEIDS](#end_proppageids)
 
 ##  <a name="declare_serial"></a>  DECLARE_SERIAL  
  Generates the C++ header code necessary for a `CObject`-derived class that can be serialized.  
@@ -215,6 +319,83 @@ IMPLEMENT_DYNCREATE(class_name, base_class_name)
 
 ### Requirements  
  **Header:** afx.h 
+
+## <a name="implement_olecreate_flags"></a>  IMPLEMENT_OLECREATE_FLAGS
+Either this macro or [IMPLEMENT_OLECREATE](#implement_olecreate) must appear in the implementation file for any class that uses `DECLARE_OLECREATE`.  
+   
+### Syntax    
+```
+IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags, 
+    l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8)  
+  
+```
+### Parameters  
+ *class_name*  
+ The actual name of the class.  
+  
+ *external_name*  
+ The object name exposed to other applications (enclosed in quotation marks).  
+  
+ `nFlags`  
+ Contains one or more of the following flags:  
+  
+-   `afxRegInsertable` Allows the control to appear in the Insert Object dialog box for OLE objects.    
+-   `afxRegApartmentThreading` Sets the threading model in the registry to ThreadingModel=Apartment.    
+-   **afxRegFreeThreading** Sets the threading model in the registry to ThreadingModel=Free.  
+  
+     You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](http://msdn.microsoft.com/library/windows/desktop/ms682390) in the Windows SDK for more information on threading model registration.    
+ *l*, *w1*, *w2*, *b1*, *b2*, *b3*, *b4*, *b5*, *b6*, *b7*, *b8*  
+ Components of the class's **CLSID**.  
+   
+### Remarks  
+  
+> [!NOTE]
+>  If you use `IMPLEMENT_OLECREATE_FLAGS`, you can specify which threading model your object supports by using the `nFlags` parameter. If you want to support only the single-treading model, use `IMPLEMENT_OLECREATE`.  
+  
+ The external name is the identifier exposed to other applications. Client applications use the external name to request an object of this class from an automation server.  
+  
+ The OLE class ID is a unique 128-bit identifier for the object. It consists of one **long**, two **WORD**s, and eight **BYTE**s, as represented by *l*, *w1*, *w2*, and *b1* through *b8* in the syntax description. The Application Wizard and code wizards create unique OLE class IDs for you as required.  
+   
+### Requirements  
+ **Header:** afxdisp.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [DECLARE_OLECREATE](#declare_olecreate)   
+ [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424)
+
+
+## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
+Implements the **GetUserTypeNameID** and `GetMiscStatus` member functions of your control class.  
+   
+### Syntax    
+```
+DECLARE_OLECTLTYPE( class_name, idsUserTypeName, dwOleMisc )  
+```
+### Parameters  
+ *class_name*  
+ The name of the control class.  
+  
+ *idsUserTypeName*  
+ The resource ID of a string containing the external name of the control.  
+  
+ *dwOleMisc*  
+ An enumeration containing one or more flags. For more information on this enumeration, see [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) in the Windows SDK.  
+   
+### Remarks  
+ In addition to `IMPLEMENT_OLECTLTYPE`, you must add the **DECLARE_OLECTLTYPE** macro to your control class declaration.  
+  
+ The **GetUserTypeNameID** member function returns the resource string that identifies your control class. `GetMiscStatus` returns the **OLEMISC** bits for your control. This enumeration specifies a collection of settings describing miscellaneous characteristics of your control. For a full description of the **OLEMISC** settings, see [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) in the Windows SDK.  
+  
+> [!NOTE]
+>  The default settings used by the ActiveX ControlWizard are: **OLEMISC_ACTIVATEWHENVISIBLE**, **OLEMISC_SETCLIENTSITEFIRST**, **OLEMISC_INSIDEOUT**, **OLEMISC_CANTLINKINSIDE**, and **OLEMISC_RECOMPOSEONRESIZE**.  
+   
+### Requirements  
+ **Header:** afxctl.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [DECLARE_OLECTLTYPE](#declare_olectltype)
 
 ##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL  
  Generates the C++ code necessary for a dynamic `CObject`-derived class with run-time access to the class name and position within the hierarchy.  
@@ -322,3 +503,4 @@ IMPLEMENT_OLECREATE(class_name, external_name, l, w1, w2, b1, b2, b3, b4, b5, b6
 
 ## See Also  
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+

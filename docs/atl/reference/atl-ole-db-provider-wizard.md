@@ -55,31 +55,31 @@ This wizard creates the classes that compose an OLE DB provider.
  If you select this option when you created a non-attributed project, the wizard warns you that the project will be converted to an attributed project and asks you whether to continue or not.  
   
  **ProgID**  
- The ProgID, or programmatic identifier, is a text string that your application can use instead of a GUID. The ProgID name has the form *Projectname*.*Coclassname*.  
+ The ProgID, or programmatic identifier, is a text string that your application can use instead of a GUID. The ProgID name has the form *Projectname.Coclassname*.  
   
  **Version**  
  The version number of your provider. The default is 1.  
   
  **DataSource class**  
- The name of the data source class, of the form C`Shortname`Source.  
+ The name of the data source class, of the form C*Shortname*Source.  
   
  **DataSource .h file**  
  The header file for the data source class. You can edit this file's name or select an existing header file.  
   
  **Session class**  
- The name of the session class, of the form C`Shortname`Session.  
+ The name of the session class, of the form C*Shortname*Session.  
   
  **Session .h file**  
  The header file for the session class. You can edit this file's name or select an existing header file.  
   
  **Command class**  
- The name of the command class, of the form C`Shortname`Command.  
+ The name of the command class, of the form C*Shortname*Command.  
   
  **Command .h file**  
  The header file for the command class. This name cannot be edited and depends on the name of the rowset header file.  
   
  **Rowset class**  
- The name of the rowset class, of the form C`Shortname`Rowset.  
+ The name of the rowset class, of the form C*Shortname*Rowset.  
   
  **Rowset .h file**  
  The header file for the rowset class. You can edit this file's name or select an existing header file.  

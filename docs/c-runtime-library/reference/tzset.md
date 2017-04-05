@@ -94,7 +94,7 @@ set TZ=GST-1GDT
   
  This command uses GST to indicate German standard time, assumes that UTC is one hour behind Germany (or in other words, that Germany is one hour ahead of UTC), and assumes that Germany observes daylight-saving time.  
   
- If the `TZ` value is not set, _`tzset` attempts to use the time zone information specified by the operating system. In the Windows operating system, this information is specified in the Date/Time application in Control Panel. If `_tzset` cannot obtain this information, it uses PST8PDT by default, which signifies the Pacific Time zone.  
+ If the `TZ` value is not set, `_tzset` attempts to use the time zone information specified by the operating system. In the Windows operating system, this information is specified in the Date/Time application in Control Panel. If `_tzset` cannot obtain this information, it uses PST8PDT by default, which signifies the Pacific Time zone.  
   
  Based on the `TZ` environment variable value, the following values are assigned to the global variables `_daylight`, `_timezone`, and `_tzname` when `_tzset` is called:  
   

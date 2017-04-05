@@ -173,13 +173,13 @@ basic_istream(basic_istream&& right);
 ```  
   
 ### Parameters  
- ` strbuf`  
+ `strbuf`  
  An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).  
   
  `_Isstd`  
  `true` if this is a standard stream; otherwise, `false`.  
   
- ` right`  
+ `right`  
  A `basic_istream` object to copy.  
   
 ### Remarks  
@@ -253,19 +253,19 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The number of characters to read from `strbuf`.  
   
  `Delim`  
- The character that should terminate the read if it is encountered before ` count`.  
+ The character that should terminate the read if it is encountered before `count`.  
   
- ` str`  
+ `str`  
  A string in which to write.  
   
  `Ch`  
  A character to get.  
   
- ` strbuf`  
+ `strbuf`  
  A buffer in which to write.  
   
 ### Return Value  
@@ -276,15 +276,15 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
   
  The second function extracts the [int_type](../standard-library/basic-ios-class.md#basic_ios__int_type) element `meta` the same way. If `meta` compares equal to **traits_type::eof**, the function calls `setstate`( **failbit**). Otherwise, it stores **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#char_traits__to_char_type)( `meta`) in `Ch`. The function returns **\*this**.  
   
- The third function returns **get**(_ *Str*, ` count`, `widen`('\ **n**')).  
+ The third function returns **get**(_ *Str*, `count`, `widen`('\ **n**')).  
   
- The fourth function extracts up to ` count` - 1 elements and stores them in the array beginning at _ *Str*. It always stores `char_type` after any extracted elements it stores. In order of testing, extraction stops:  
+ The fourth function extracts up to `count` - 1 elements and stores them in the array beginning at _ *Str*. It always stores `char_type` after any extracted elements it stores. In order of testing, extraction stops:  
   
 -   At end of file.  
   
 -   After the function extracts an element that compares equal to `Delim`, in which case the element is put back to the controlled sequence.  
   
--   After the function extracts ` count` - 1 elements.  
+-   After the function extracts `count` - 1 elements.  
   
  If the function extracts no elements, it calls `setstate`( **failbit**). In any case, it returns **\*this**.  
   
@@ -333,30 +333,30 @@ basic_istream<Elem, Tr>& getline(
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The number of characters to read from **strbuf**.  
   
  `Delim`  
- The character that should terminate the read if it is encountered before ` count`.  
+ The character that should terminate the read if it is encountered before `count`.  
   
- ` str`  
+ `str`  
  A string in which to write.  
   
 ### Return Value  
  The stream ( **\*this**).  
   
 ### Remarks  
- The first of these unformatted input functions returns **getline**(_ *Str*, ` count`, `widen`(' `\`**n**')).  
+ The first of these unformatted input functions returns **getline**(_ *Str*, `count`, `widen`(' `\`**n**')).  
   
- The second function extracts up to ` count` - 1 elements and stores them in the array beginning at _ *Str*. It always stores the string termination character after any extracted elements it stores. In order of testing, extraction stops:  
+ The second function extracts up to `count` - 1 elements and stores them in the array beginning at _ *Str*. It always stores the string termination character after any extracted elements it stores. In order of testing, extraction stops:  
   
 -   At end of file.  
   
 -   After the function extracts an element that compares equal to `Delim`, in which case the element is neither put back nor appended to the controlled sequence.  
   
--   After the function extracts ` count` - 1 elements.  
+-   After the function extracts `count` - 1 elements.  
   
- If the function extracts no elements or ` count` - 1 elements, it calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**). In any case, it returns **\*this**.  
+ If the function extracts no elements or `count` - 1 elements, it calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**). In any case, it returns **\*this**.  
   
 ### Example  
   
@@ -390,7 +390,7 @@ basic_istream<Elem, Tr>& ignore(
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The number of elements to skip from the current read position.  
   
  `Delim`  
@@ -400,7 +400,7 @@ basic_istream<Elem, Tr>& ignore(
  The stream ( **\*this**).  
   
 ### Remarks  
- The unformatted input function extracts up to ` count` elements and discards them. If ` count` equals **numeric_limits\<int>::max**, however, it is taken as arbitrarily large. Extraction stops early on end of file or on an element `Ch` such that **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#char_traits__to_int_type)( `Ch`) compares equal to _ *Delim* (which is also extracted). The function returns **\*this**.  
+ The unformatted input function extracts up to `count` elements and discards them. If `count` equals **numeric_limits\<int>::max**, however, it is taken as arbitrarily large. Extraction stops early on end of file or on an element `Ch` such that **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#char_traits__to_int_type)( `Ch`) compares equal to *Delim* (which is also extracted). The function returns **\*this**.  
   
 ### Example  
   
@@ -420,20 +420,14 @@ int main( )
 ```  
   
 ```Output  
-  
-abcdef  
-  
+Type 'abcdef': abcdef  
+def  
 ```  
   
-```Output  
-  
-abcdefdef  
-```  
-  
-##  <a name="basic_istream__operator_gt__gt_"></a>  basic_istream::operator&gt;&gt;
+##  <a name="basic_istream__operator_gt__gt_"></a>  basic\_istream::operator>>
   
 Calls a function on the input stream or reads formatted data from the input stream.  
-    
+  
 ```  
 basic_istream& operator>>(basic_istream& (* Pfn)(basic_istream&));
 basic_istream& operator>>(ios_base& (* Pfn)(ios_base&));
@@ -458,10 +452,10 @@ basic_istream& operator>>(long double& val);
  `Pfn`  
  A function pointer.  
   
- ` strbuf`  
+ `strbuf`  
  An object of type **stream_buf**.  
   
- ` val`  
+ `val`  
  The value to read from the stream.  
   
 ### Return Value  
@@ -479,7 +473,7 @@ basic_istream& operator>>(
     basic_streambuf<Elem, Tr>* strbuf);
 ```  
   
- extracts elements, if _ *Strbuf* is not a null pointer, and inserts them in ` strbuf`. Extraction stops on end of file. It also stops without extracting the element in question, if an insertion fails or throws an exception (which is caught but not rethrown). If the function extracts no elements, it calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**). In any case, the function returns **\*this**.  
+ extracts elements, if _ *Strbuf* is not a null pointer, and inserts them in `strbuf`. Extraction stops on end of file. It also stops without extracting the element in question, if an insertion fails or throws an exception (which is caught but not rethrown). If the function extracts no elements, it calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**). In any case, the function returns **\*this**.  
   
  The function:  
   
@@ -487,7 +481,7 @@ basic_istream& operator>>(
 basic_istream& operator>>(bool& val);
 ```  
   
- extracts a field and converts it to a Boolean value by calling [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open) < `num_get`\< **Elem**, **InIt**>( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)). [get](../standard-library/ios-base-class.md#ios_base__getloc)( **InIt**( [rdbuf](../standard-library/basic-ios-class.md#basic_ios__rdbuf)), `Init`(0), **\*this**, `getloc`, ` val`). Here, **InIt** is defined as [istreambuf_iterator](../standard-library/istreambuf-iterator-class.md)\< **Elem**, **Tr**>. The function returns **\*this**.  
+ extracts a field and converts it to a Boolean value by calling [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open) < `num_get`\< **Elem**, **InIt**>( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)). [get](../standard-library/ios-base-class.md#ios_base__getloc)( **InIt**( [rdbuf](../standard-library/basic-ios-class.md#basic_ios__rdbuf)), `Init`(0), **\*this**, `getloc`, `val`). Here, **InIt** is defined as [istreambuf_iterator](../standard-library/istreambuf-iterator-class.md)\< **Elem**, **Tr**>. The function returns **\*this**.  
   
  The functions:  
   
@@ -503,9 +497,9 @@ basic_istream& operator>>(unsigned long long& val);
 basic_istream& operator>>(void *& val);
 ```  
   
- each extract a field and convert it to a numeric value by calling `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). [get](#basic_istream__get)( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, ` val`). Here, **InIt** is defined as `istreambuf_iterator`\< **Elem**, **Tr**>, and ` val` has type **long***,*`unsigned long`*,* or **void \*** as needed.  
+ each extract a field and convert it to a numeric value by calling `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). [get](#basic_istream__get)( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). Here, **InIt** is defined as `istreambuf_iterator`\< **Elem**, **Tr**>, and `val` has type **long**,`unsigned long`, or **void \*** as needed.  
   
- If the converted value cannot be represented as the type of ` val`, the function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**). In any case, the function returns **\*this**.  
+ If the converted value cannot be represented as the type of `val`, the function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**). In any case, the function returns **\*this**.  
   
  The functions:  
   
@@ -515,9 +509,9 @@ basic_istream& operator>>(double& val);
 basic_istream& operator>>(long double& val);
 ```  
   
- each extract a field and convert it to a numeric value by calling `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). **get**( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, ` val`). Here, **InIt** is defined as `istreambuf_iterator`\< **Elem**, **Tr**>, and ` val` has type **double** or `long double` as needed.  
+ each extract a field and convert it to a numeric value by calling `use_facet`< `num_get`\< **Elem**, **InIt**>( `getloc`). **get**( **InIt**( `rdbuf`), `Init`(0), **\*this**, `getloc`, `val`). Here, **InIt** is defined as `istreambuf_iterator`\< **Elem**, **Tr**>, and `val` has type **double** or `long double` as needed.  
   
- If the converted value cannot be represented as the type of ` val`, the function calls `setstate`( **failbit**). In any case, it returns **\*this**.  
+ If the converted value cannot be represented as the type of `val`, the function calls `setstate`( **failbit**). In any case, it returns **\*this**.  
   
 ### Example  
   
@@ -564,7 +558,7 @@ basic_istream& operator=(basic_istream&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An `rvalue` reference to a `basic_ifstream` object.  
   
 ### Return Value  
@@ -673,10 +667,10 @@ basic_istream<Elem, Tr>& read(
 ```  
   
 ### Parameters  
- ` str`  
+ `str`  
  The array in which to read the characters.  
   
- ` count`  
+ `count`  
  The number of characters to read.  
   
 ### Return Value  
@@ -857,11 +851,11 @@ void swap(basic_istream& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An lvalue reference to a `basic_istream` object.  
   
 ### Remarks  
- The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#basic_ios__swap)`(`` right``)`. It also exchanges the extraction count with the extraction count for ` right`.  
+ The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#basic_ios__swap)`(``right``)`. It also exchanges the extraction count with the extraction count for `right`.  
   
 ##  <a name="basic_istream__sync"></a>  basic_istream::sync  
  Synchronizes the input device associated with the stream with the stream's buffer.  

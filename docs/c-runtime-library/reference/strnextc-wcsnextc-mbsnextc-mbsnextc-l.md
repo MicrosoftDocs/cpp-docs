@@ -105,7 +105,7 @@ unsigned int _mbsnextc_l(
  Locale to use.  
   
 ## Return Value  
- Each of these functions returns the integer value of the next character in `str`*.*  
+ Each of these functions returns the integer value of the next character in `str`.  
   
 ## Remarks  
  The `_mbsnextc` function returns the integer value of the next multibyte character in `str`, without advancing the string pointer. `_mbsnextc` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use.  

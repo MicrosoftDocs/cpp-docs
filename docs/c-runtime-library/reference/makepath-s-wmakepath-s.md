@@ -130,7 +130,7 @@ errno_t _wmakepath_s(
 |`NULL`|any|`EINVAL`|not modified|  
 |any|<= 0|`EINVAL`|not modified|  
   
- If any of the above error conditions occurs, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to`EINVAL` and the functions returns`EINVAL`**.** `NULL` is allowed for the parameters `drive`, `fname`, and `ext`. For information about the behavior when these parameters are null pointers or empty strings, see the Remarks section.  
+ If any of the above error conditions occurs, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, `errno` is set to `EINVAL` and the functions returns `EINVAL`. `NULL` is allowed for the parameters `drive`, `fname`, and `ext`. For information about the behavior when these parameters are null pointers or empty strings, see the Remarks section.  
   
 ## Remarks  
  The `_makepath_s` function creates a composite path string from individual components, storing the result in `path`. The `path` might include a drive letter, directory path, file name, and file name extension. `_wmakepath_s` is a wide-character version of `_makepath_s`; the arguments to `_wmakepath_s` are wide-character strings. `_wmakepath_s` and `_makepath_s` behave identically otherwise.  

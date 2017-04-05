@@ -1934,10 +1934,10 @@ unordered_multiset& operator=(unordered_multiset&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [unordered_multiset](../standard-library/unordered-multiset-class.md) being copied into the `unordered_multiset`.|  
+|`right`|The [unordered_multiset](../standard-library/unordered-multiset-class.md) being copied into the `unordered_multiset`.|  
   
 ### Remarks  
- After erasing any existing elements in an `unordered_multiset`, `operator=` either copies or moves the contents of ` right` into the `unordered_multiset`.  
+ After erasing any existing elements in an `unordered_multiset`, `operator=` either copies or moves the contents of `right` into the `unordered_multiset`.  
   
 ### Example  
   

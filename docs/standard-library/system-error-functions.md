@@ -24,7 +24,7 @@ extern const error_category& generic_category();
 ```  
   
 ### Remarks  
- The `generic_categor`y object is an implementation of [error_category](../standard-library/error-category-class.md).  
+ The `generic_category` object is an implementation of [error_category](../standard-library/error-category-class.md).  
   
 ##  <a name="make_error_code"></a>  make_error_code  
  Creates an error code object.  
@@ -70,7 +70,7 @@ extern const error_category& system_category();
 ```  
   
 ### Remarks  
- The `system_categor`y object is an implementation of [error_category](../standard-library/error-category-class.md).  
+ The `system_category` object is an implementation of [error_category](../standard-library/error-category-class.md).  
   
 ## See Also  
  [<system_error>](../standard-library/system-error.md)

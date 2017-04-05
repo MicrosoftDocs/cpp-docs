@@ -40,7 +40,7 @@ translation.priority.ht:
 > [!NOTE]
 >  This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).  
   
- Executes ` left.`[swap](../standard-library/container-class-swap.md)(_*Right*).  
+ Executes `left.`[swap](../standard-library/container-class-swap.md)`(right)`.  
   
 ## Syntax  
   

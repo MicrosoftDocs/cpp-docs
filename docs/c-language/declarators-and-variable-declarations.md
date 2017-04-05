@@ -63,32 +63,26 @@ __declspec(thread) char *var;
  You use declarators to declare arrays of values, pointers to values, and functions returning values of a specified type. Declarators appear in the array and pointer declarations described later in this section.  
   
 ## Syntax  
- `declarator`:  
- *pointer* opt*direct-declarator*  
+ *declarator*:  
+ &nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*  
   
  *direct-declarator*:  
- *identifier*  
+ &nbsp;&nbsp;*identifier*  
+ &nbsp;&nbsp;**(**  *declarator*  **)**  
+ &nbsp;&nbsp;*direct-declarator*  **[**  *constant-expression*<sub>opt</sub> **]**  
+ &nbsp;&nbsp;*direct-declarator*  **(**  *parameter-type-list*  **)**  
+ &nbsp;&nbsp;*direct-declarator*  **(**  *identifier-list*<sub>opt</sub> **)**  
   
- **(**  *declarator*  **)**  
-  
- *direct-declarator*  **[**  *constant-expression* opt**]**  
-  
- *direct-declarator*  **(**  *parameter-type-list*  **)**  
-  
- *direct-declarator*  **(**  *identifier-list* opt**)**  
-  
- `pointer`:  
- **\*** *type-qualifier-list* opt  
-  
- **\*** *type-qualifier-list* opt`pointer`  
+ *pointer*:  
+ &nbsp;&nbsp;**\*** *type-qualifier-list*<sub>opt</sub>  
+ &nbsp;&nbsp;**\*** *type-qualifier-list*<sub>opt</sub> *pointer*  
   
  *type-qualifier-list*:  
- *type-qualifier*  
-  
- *type-qualifier-list type-qualifier*  
+ &nbsp;&nbsp;*type-qualifier*  
+ &nbsp;&nbsp;*type-qualifier-list type-qualifier*  
   
 > [!NOTE]
->  See the syntax for `declaration` in [Overview of Declarations](../c-language/overview-of-declarations.md) or [C Language Syntax Summary](../c-language/c-language-syntax-summary.md) for the syntax that references a `declarator`.  
+>  See the syntax for *declaration* in [Overview of Declarations](../c-language/overview-of-declarations.md) or [C Language Syntax Summary](../c-language/c-language-syntax-summary.md) for the syntax that references a *declarator*.  
   
  When a declarator consists of an unmodified identifier, the item being declared has a base type. If an asterisk (**\***) appears to the left of an identifier, the type is modified to a pointer type. If the identifier is followed by brackets (**[ ]**), the type is modified to an array type. If the identifier is followed by parentheses, the type is modified to a function type. For more information about interpreting precedence within declarations, see [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md).  
   

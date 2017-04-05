@@ -63,7 +63,7 @@ constexpr explicit complex(const complex<long double>& complexNum);
  `ImagVal`  
  The value of type **double** for the imaginary part of the complex number being constructed.  
   
- ` complexNum`  
+ `complexNum`  
  The complex number of type **float** or of type `long double` whose real and imaginary parts are used to initialize a complex number of type **double** being constructed.  
   
 ## Return Value  

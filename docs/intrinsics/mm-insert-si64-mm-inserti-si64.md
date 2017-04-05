@@ -88,7 +88,7 @@ __m128i _mm_inserti_si64(
   
  In a call to _mm_insert_si64, the field length is contained in bits 77:72 of Source2 and the index in bits 69:64.  
   
- If you call `_mm_inserti_si64`with arguments that the compiler cannot determine to be integer constants, the compiler generates code to pack those values into an XMM register and to call `_mm_insert_si64`.  
+ If you call `_mm_inserti_si64` with arguments that the compiler cannot determine to be integer constants, the compiler generates code to pack those values into an XMM register and to call `_mm_insert_si64`.  
   
  To determine hardware support for the `insertq` instruction call the `__cpuid` intrinsic with `InfoType=0x80000001` and check bit 6 of `CPUInfo[2] (ECX)`. This bit will be 1 if the instruction is supported, and 0 otherwise. If you run code that uses this intrinsic on hardware that does not support the `insertq` instruction, the results are unpredictable.  
   

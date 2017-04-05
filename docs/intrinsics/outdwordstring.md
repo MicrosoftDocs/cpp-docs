@@ -40,7 +40,7 @@ translation.priority.mt:
 # __outdwordstring
 **Microsoft Specific**  
   
- Generates the `rep outsd`instruction, which sends `Count` doublewords starting at `Buffer` out the I/O port specified by `Port`.  
+ Generates the `rep outsd` instruction, which sends `Count` doublewords starting at `Buffer` out the I/O port specified by `Port`.  
   
 ## Syntax  
   

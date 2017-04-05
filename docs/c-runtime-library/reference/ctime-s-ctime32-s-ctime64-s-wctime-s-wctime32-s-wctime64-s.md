@@ -139,7 +139,7 @@ errno_t _wctime64_s(
   
 #### Parameters  
  [out] `buffer`  
- Must be large enough to hold 26 characters. A pointer to the character string result, or `NULL`if:  
+ Must be large enough to hold 26 characters. A pointer to the character string result, or `NULL` if:  
   
 -   `time` represents a date before midnight, January 1, 1970, UTC.  
   
@@ -152,7 +152,7 @@ errno_t _wctime64_s(
  [in] `numberOfElements`  
  The size of the buffer.  
   
- [in] t`ime`  
+ [in] `time`  
  Pointer to stored time.  
   
 ## Return Value  
@@ -197,8 +197,8 @@ Wed Jan 02 02:03:55 1980\n\0
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`ctime_s,`<br /><br /> `_ctime32_s,`<br /><br /> `_ctime64_s`|\<time.h>|  
-|`_wctime_s,`<br /><br /> `_wctime32_s,`<br /><br /> `_wctime64_s`|\<time.h> or \<wchar.h>|  
+|`ctime_s`, `_ctime32_s`, `_ctime64_s`|\<time.h>|  
+|`_wctime_s`, `_wctime32_s`, `_wctime64_s`|\<time.h> or \<wchar.h>|  
   
  For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   

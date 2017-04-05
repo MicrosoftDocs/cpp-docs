@@ -473,7 +473,7 @@ bool SetControl(
  `ControlBitsOfInterest`  
  A **SECURITY_DESCRIPTOR_CONTROL** mask that indicates the control bits to set. For a list of the flags which can be set, see [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
   
- `ControlBitsToSe`t  
+ `ControlBitsToSet`  
  A `SECURITY_DESCRIPTOR_CONTROL` mask that indicates the new values for the control bits specified by the `ControlBitsOfInterest` mask. This parameter can be a combination of the flags listed for the `ControlBitsOfInterest` parameter.  
   
 ### Return Value  

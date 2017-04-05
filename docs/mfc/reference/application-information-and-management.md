@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Application Information and Management
-When you write an application, you create a single [CWinApp](../../mfc/reference/cwinapp-class.md)-derived object. At times, you may want to get information about this object from outside the `CWinApp`-derived object.  
+When you write an application, you create a single [CWinApp](../../mfc/reference/cwinapp-class.md)-derived object. At times, you may want to get information about this object from outside the `CWinApp`-derived object. Or you may need access to other global "mananger" objects.
   
  The Microsoft Foundation Class Library provides the following global functions to help you accomplish these tasks:  
   
@@ -44,7 +44,9 @@ When you write an application, you create a single [CWinApp](../../mfc/reference
 |||  
 |-|-|  
 |[AfxBeginThread](#afxbeginthread)|Creates a new thread.|  
+|[AfxContextMenuManager](#afxcontextmenumanager)|Pointer to the global [context menu manager](ccontextmenumanager-class.md).|
 |[AfxEndThread](#afxendthread)|Terminates the current thread.|  
+|[AfxFindResourceHandle](#afxfindresourcehandle)|Walks the resource chain and locate a specific resource by resource ID and resource type. |
 |[AfxFreeLibrary](#afxfreelibrary)|Decrements the reference count of the loaded dynamic-link library (DLL) module; when the reference count reaches zero, the module is unmapped.|  
 |[AfxGetApp](#afxgetapp)|Returns a pointer to the application's single `CWinApp` object.|  
 |[AfxGetAppName](#afxgetappname)|Returns a string that contains the application's name.|  
@@ -54,13 +56,20 @@ When you write an application, you create a single [CWinApp](../../mfc/reference
 |[AfxGetResourceHandle](#afxgetresourcehandle)|Returns an `HINSTANCE` to the source of the application's default resources. Use this to access the application's resources directly.|  
 |[AfxGetThread](#afxgetthread)|Retrieves a pointer to the current [CWinThread](../../mfc/reference/cwinthread-class.md) object.|  
 |[AfxInitRichEdit](#afxinitrichedit)|Initializes the version 1.0 rich edit control for the application.|  
-|[AfxInitRichEdit2](#afxinitrichedit2)|Initializes the version 2.0 and later rich edit control for the application.|  
+|[AfxInitRichEdit2](#afxinitrichedit2)|Initializes the version 2.0 and later rich edit control for the application.| 
+|[AfxIsExtendedFrameClass](#afxisextendedframeclass)|Determines whether the given window is an extended frame object.|
+|[AfxIsMFCToolBar](#afxismfctoolbar)|Determines whether the given window is a toolbar object.|
+|[AfxKeyboardManager](#afxkeyboardmanager)|Pointer to the global [keyboard manager](ckeyboardmanager-class.md).|
 |[AfxLoadLibrary](#afxloadlibrary)|Maps a DLL module and returns a handle that can be used to obtain the address of a DLL function.|  
+|[AfxMenuTearOffManager](#afxmenutearoffmanager)|Pointer to the global [tearoff menu manager](cmenutearoffmanager-class.md).|
+|[AfxMouseManager](#afxmousemanager)|Pointer to the global [mouse manager](cmousemanager-class.md).|
 |[AfxRegisterClass](#afxregisterclass)|Registers a window class in a DLL that uses MFC.|  
 |[AfxRegisterWndClass](#afxregisterwndclass)|Registers a Windows window class to supplement those registered automatically by MFC.|  
 |[AfxSetPerUserRegistration](#afxsetperuserregistration)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|  
 |[AfxSetResourceHandle](#afxsetresourcehandle)|Sets the `HINSTANCE` handle where the default resources of the application are loaded.|  
+|[AfxShellManager](#afxshellmanager)|Pointer to the global [shell manager](cshellmanager-class.md). |
 |[AfxSocketInit](#afxsocketinit)|Called in a `CWinApp::InitInstance` override to initialize Windows Sockets.|  
+|[AfxUserToolsManager](#afxusertoolsmanager)|Pointer to the global [user tools manager](cusertoolsmanager-class.md).|
 |[AfxWinInit](#afxwininit)|Called by the MFC-supplied `WinMain` function, as part of the [CWinApp](../../mfc/reference/cwinapp-class.md) initialization of a GUI-based application, to initialize MFC. Must be called directly for console applications that use MFC.|  
   
 
@@ -98,7 +107,7 @@ CWinThread* AfxBeginThread(
  Parameter to be passed to the controlling function as shown in the parameter to the function declaration in `pfnThreadProc`.  
   
  `nPriority`  
- The desired priority of the thread. For a full list and description of the available priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The desired priority of the thread. For a full list and description of the available priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
   
  `nStackSize`  
  Specifies the size in bytes of the stack for the new thread. If 0, the stack size defaults to the same size stack as the creating thread.  
@@ -111,7 +120,7 @@ CWinThread* AfxBeginThread(
 - **0** Start the thread immediately after creation.  
   
  `lpSecurityAttrs`  
- Points to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies the security attributes for the thread. If **NULL**, the same security attributes as the creating thread will be used. For more information on this structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Points to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies the security attributes for the thread. If **NULL**, the same security attributes as the creating thread will be used. For more information on this structure, see the Windows SDK.  
   
 ### Return Value  
  Pointer to the newly created thread object, or **NULL** if a failure occurs.  
@@ -130,6 +139,20 @@ CWinThread* AfxBeginThread(
   
 ### Requirements  
   **Header** afxwin.h  
+
+## <a name="afxcontextmenumanager"></a> AfxContextMenuManager
+Pointer to the global [context menu manager](ccontextmenumanager-class.md).  
+   
+### Syntax    
+```  
+CContextMenuManager* afxContextMenuManager;  
+```     
+### Requirements  
+ **Header:** afxcontextmenumanager.h     
+
+### See Also   
+ [CContextMenuManager Class](ccontextmenumanager-class.md)
+
   
 ##  <a name="afxendthread"></a>  AfxEndThread  
  Call this function to terminate the currently executing thread.  
@@ -154,6 +177,43 @@ void AFXAPI AfxEndThread(
   
 ### Requirements  
   **Header** afxwin.h  
+
+  ## AfxFindResourceHandle
+Use `AfxFindResourceHandle` to walk the resource chain and locate a specific resource by resource ID and resource type.  
+   
+### Syntax    
+```
+HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );  
+```
+### Parameters  
+ `lpszName`  
+ A pointer to a string containing the resource ID.    
+ *lpszType*  
+ A pointer to the type of resource. For a list of resource types, see [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042) in the Windows SDK.  
+   
+### Return Value  
+ A handle to the module that contains the resource.  
+   
+### Remarks  
+ `AfxFindResourceHandle` finds the specific resource and returns a handle to the module that contains the resource. The resource might be in any extension DLL you have loaded. `AfxFindResourceHandle` tells you which one has the resource.  
+  
+ The modules are searched in this order:  
+  
+1.  The main module (if it is an extension DLL).  
+  
+2.  Non-system modules.  
+  
+3.  Language-specific modules.  
+  
+4.  The main module (if it is a system DLL).  
+  
+5.  System modules.  
+   
+### Requirements  
+ **Header:** afxwin.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
   
 ##  <a name="afxfreelibrary"></a>  AfxFreeLibrary  
  Both `AfxFreeLibrary` and `AfxLoadLibrary` maintain a reference count for each loaded library module.  
@@ -348,7 +408,84 @@ BOOL AFXAPI AfxInitRichEdit2();
   
 ### Requirements  
   **Header** afxwin.h  
+
+  ## <a name="afxisextendedframeclass"></a>  AfxIsExtendedFrameClass
+Determines whether the given window is an extended frame object.  
+   
+### Syntax    
+```  
+BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );  
+```
+### Parameters  
+ [in] `pWnd`  
+ A pointer to an object that is derived from `CWnd`.  
+   
+### Return Value  
+ `TRUE` if the provided window is an extended frame object; otherwise `FALSE`.  
+   
+### Remarks  
+ This method returns `TRUE` if `pWnd` derives from one of the following classes:  
   
+-   `CFrameWndEx`  
+  
+-   `CMDIFrameWndEx`  
+  
+-   `COleIPFrameWndEx`  
+  
+-   `COleDocIPFrameWndEx`  
+  
+-   `CMDIChildWndEx`  
+  
+ This method is useful when you have to validate that a function or method parameter is an extended frame window.  
+   
+### Requirements  
+ **Header:** afxpriv.h  
+   
+### See Also  
+ [CWnd Class](cwnd-class.md)   
+ [CFrameWndEx Class](cframewndex-class.md)   
+
+## <a name="afxismfctoolbar"></a> AfxIsMFCToolBar
+Determines whether the given window is a toolbar object.  
+   
+### Syntax    
+```  
+BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);  
+```
+### Parameters  
+ [in] `pWnd`  
+ A pointer to an object that is derived from `CWnd`.  
+   
+### Return Value  
+ `TRUE` if the provided window is a toolbar object; otherwise `FALSE`.  
+   
+### Remarks  
+ This method returns `TRUE` if `pWnd` derives from `CMFCToolBar`. This method is useful when you have to validate that a function or method parameter is a `CMFCToolBar` object.  
+   
+### Requirements  
+ **Header:** afxpriv.h  
+   
+### See Also  
+ [CWnd Class](cwnd-class.md)   
+ [CMFCToolBar Class](cmfctoolbar-class.md)
+
+ 
+## <a name="afxkeyboardmanager"></a> AfxKeyboardManager
+Pointer to the global [keyboard manager](ckeyboardmanager-class.md).  
+   
+### Syntax    
+```  
+CKeyboardManager* afxKeyboardManager;  
+```  
+### Requirements  
+ **Header:** afxkeyboardmanager.h  
+   
+### See Also  
+
+ [Macros, Global Functions, and Global Variables](mfc-macros-and-globals.md)   
+ [CKeyboardManager Class](ckeyboardmanager-class.md)
+
+
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary  
  Use `AfxLoadLibrary` to map a DLL module.  
   
@@ -396,6 +533,33 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 ### Requirements  
   **Header** afxdll_.h  
    
+## <a name="afxmenutearoffmanager"></a> AfxMenuTearOffManager
+Pointer to the global [tearoff menu manager](cmenutearoffmanager-class.md).  
+   
+### Syntax    
+```  
+CMenuTearOffManager* g_pTearOffMenuManager;  
+```  
+### Requirements  
+ **Header:** afxmenutearoffmanager.h  
+   
+### See Also     
+ [CMenuTearOffManager Class](cmenutearoffmanager-class.md)
+ 
+## <a name="afxmousemanager"></a>  AfxMouseManager
+Pointer to the global [mouse manager](cmousemanager-class.md).  
+   
+### Syntax  
+  ```  
+CMouseManager* afxMouseManager;  
+```  
+### Requirements  
+ **Header:** afxmousemanager.h  
+   
+### See Also  
+ [CMouseManager Class](cmousemanager-class.md)
+ 
+
   
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass  
  Use this function to register window classes in a DLL that uses MFC.  
@@ -406,7 +570,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
   
 ### Parameters  
  *lpWndClass*  
- Pointer to a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure containing information about the window class to be registered. For more information on this structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Pointer to a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure containing information about the window class to be registered. For more information on this structure, see the Windows SDK.  
   
 ### Return Value  
  **TRUE** if the class is successfully registered; otherwise **FALSE**.  
@@ -426,7 +590,6 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
  Allows you to register your own window classes.  
   
 ```  
- 
 LPCTSTR AFXAPI AfxRegisterWndClass(
     UINT nClassStyle,  
     HCURSOR hCursor = 0,  
@@ -436,7 +599,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
   
 ### Parameters  
  *nClassStyle*  
- Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. If **NULL**, the defaults will be set as follows:  
+ Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure in the Windows SDK. If **NULL**, the defaults will be set as follows:  
   
 -   Sets the mouse style to **CS_DBLCLKS**, which sends double-click messages to the window procedure when the user double-clicks the mouse.  
   
@@ -503,9 +666,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
  Use this function to set the `HINSTANCE` handle that determines where the default resources of the application are loaded.  
   
 ```  
- 
-void  
-AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);  
+void AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);  
 ```  
   
 ### Parameters  
@@ -517,14 +678,26 @@ AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);
   
 ### Requirements  
   **Header** afxwin.h  
+
+## <a name="afxshellmanager"></a>  AfxShellManager
+Pointer to the global [shell manager](cshellmanager-class.md).  
+   
+### Syntax    
+```  
+CShellManager* afxShellManager;  
+```  
+
+### Requirements  
+ **Header:** afxshellmanager.h  
+   
+### See Also  
+ [CShellManager Class](cshellmanager-class.md)
   
 ##  <a name="afxsocketinit"></a>  AfxSocketInit  
  Call this function in your `CWinApp::InitInstance` override to initialize Windows Sockets.  
   
 ```  
- 
-BOOL  
-AfxSocketInit(WSADATA* lpwsaData = NULL);  
+BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);  
 ```  
   
 ### Parameters  
@@ -539,12 +712,26 @@ AfxSocketInit(WSADATA* lpwsaData = NULL);
   
 ### Requirements  
   **Header** afxsock.h  
+
+## <a name="afxusertoolsmanager"></a>  AfxUserToolsManager
+Pointer to the global [user tools manager](cusertoolsmanager-class.md).  
+   
+### Syntax    
+```  
+CUserToolsManager* afxUserToolsManager;  
+```  
+   
+### Requirements  
+ **Header:** afxusertoolsmanager.h  
+   
+### See Also  
+ [CUserToolsManager Class](cusertoolsmanager-class.md)
+ 
   
 ##  <a name="afxwininit"></a>  AfxWinInit  
  This function is called by the MFC-supplied `WinMain` function, as part of the [CWinApp](../../mfc/reference/cwinapp-class.md) initialization of a GUI-based application, to initialize MFC.  
   
 ```  
- 
 BOOL AFXAPI AfxWinInit(
     HINSTANCE hInstance,  
     HINSTANCE hPrevInstance,  

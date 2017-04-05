@@ -190,9 +190,9 @@ explicit codecvt(size_t _Refs = 0);
   
 -   1: The lifetime of the object must be manually managed.  
   
--   \> 0: These values are not defined.  
+-   \> 1: These values are not defined.  
   
- The constructor initializes its `locale::facet` base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`) *.*  
+ The constructor initializes its `locale::facet` base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).  
   
 ##  <a name="codecvt__do_always_noconv"></a>  codecvt::do_always_noconv  
  A virtual function called to test whether no conversions need be done.  
@@ -246,22 +246,22 @@ virtual result do_in(
  `_State`  
  The conversion state that is maintained between calls to the member function.  
   
- ` first1`  
+ `first1`  
  Pointer to the beginning of the sequence to be converted.  
   
- ` last1`  
+ `last1`  
  Pointer to the end of the sequence to be converted.  
   
- ` next1`  
+ `next1`  
  Pointer beyond the end of the converted sequence, to the first unconverted character.  
   
- ` first2`  
+ `first2`  
  Pointer to the beginning of the converted sequence.  
   
- ` last2`  
+ `last2`  
  Pointer to the end of the converted sequence.  
   
- ` next2`  
+ `next2`  
  Pointer to the **CharType** that comes after the last converted **CharType**, to the first unaltered character in the destination sequence.  
   
 ### Return Value  
@@ -296,24 +296,24 @@ virtual int do_length(
  `_State`  
  The conversion state that is maintained between calls to the member function.  
   
- ` first1`  
+ `first1`  
  Pointer to the beginning of the external sequence.  
   
- ` last1`  
+ `last1`  
  Pointer to the end of the external sequence.  
   
  `_Len2`  
  The maximum number of **Byte**s that can be returned by the member function.  
   
 ### Return Value  
- An integer that represents a count of the maximum number of conversions, not greater than `_Len2`, defined by the external source sequence at [ ` first1`, ` last1`).  
+ An integer that represents a count of the maximum number of conversions, not greater than `_Len2`, defined by the external source sequence at [ `first1`, `last1`).  
   
 ### Remarks  
- The protected virtual member function effectively calls `do_in`( `_State`, ` first1`, ` last1`, ` next1`, `_Buf`, `_Buf` + `_Len2`, ` next2`) for `_State` (a copy of state), some buffer `_Buf`, and pointers ` next1`and ` next2`.  
+ The protected virtual member function effectively calls `do_in`( `_State`, `first1`, `last1`, `next1`, `_Buf`, `_Buf` + `_Len2`, `next2`) for `_State` (a copy of state), some buffer `_Buf`, and pointers `next1`and `next2`.  
   
- It then returns ` next2` - **buf**. Thus, it counts the maximum number of conversions, not greater than `_Len2`, defined by the source sequence at [ ` first1`, ` last1`).  
+ It then returns `next2` - **buf**. Thus, it counts the maximum number of conversions, not greater than `_Len2`, defined by the source sequence at [ `first1`, `last1`).  
   
- The template version always returns the lesser of ` last1` - ` first1` and `_Len2`.  
+ The template version always returns the lesser of `last1` - `first1` and `_Len2`.  
   
 ### Example  
   See the example for [length](#codecvt__length), which calls **do_length**.  
@@ -329,7 +329,7 @@ virtual int do_max_length() const throw();
  The maximum number of **Byte**s necessary to produce one **CharType**.  
   
 ### Remarks  
- The protected virtual member function returns the largest permissible value that can be returned by [do_length](#codecvt__do_length)( ` first1`, ` last1`, 1) for arbitrary valid values of ` first1` and ` last1`.  
+ The protected virtual member function returns the largest permissible value that can be returned by [do_length](#codecvt__do_length)( `first1`, `last1`, 1) for arbitrary valid values of `first1` and `last1`.  
   
 ### Example  
   See the example for [max_length](#codecvt__max_length), which calls `do_max_length`.  
@@ -352,22 +352,22 @@ virtual result do_out(
  `_State`  
  The conversion state that is maintained between calls to the member function.  
   
- ` first1`  
+ `first1`  
  Pointer to the beginning of the sequence to be converted.  
   
- ` last1`  
+ `last1`  
  Pointer to the end of the sequence to be converted.  
   
- ` next1`  
+ `next1`  
  Reference to a pointer to the first unconverted **CharType**, after the last **CharType** converted.  
   
- ` first2`  
+ `first2`  
  Pointer to the beginning of the converted sequence.  
   
- ` last2`  
+ `last2`  
  Pointer to the end of the converted sequence.  
   
- ` next2`  
+ `next2`  
  Reference to a pointer to the first unconverted **Byte**, after the last **Byte** converted.  
   
 ### Return Value  
@@ -402,13 +402,13 @@ virtual result do_unshift(
  `_State`  
  The conversion state that is maintained between calls to the member function.  
   
- ` first2`  
+ `first2`  
  Pointer to the first position in the destination range.  
   
- ` last2`  
+ `last2`  
  Pointer to the last position in the destination range.  
   
- ` next2`  
+ `next2`  
  Pointer to the first unaltered element in the destination sequence.  
   
 ### Return Value  
@@ -423,7 +423,7 @@ virtual result do_unshift(
 - **codecvt_base::partial** if the destination is not large enough for the conversion to succeed  
   
 ### Remarks  
- The protected virtual member function tries to convert the source element **CharType**(0) to a destination sequence that it stores within [ ` first2`, ` last2`), except for the terminating element **Byte**(0). It always stores in ` next2` a pointer to the first unaltered element in the destination sequence.  
+ The protected virtual member function tries to convert the source element **CharType**(0) to a destination sequence that it stores within [ `first2`, `last2`), except for the terminating element **Byte**(0). It always stores in `next2` a pointer to the first unaltered element in the destination sequence.  
   
  _ *State* must represent the initial conversion state at the beginning of a new source sequence. The function alters its stored value as needed to reflect the current state of a successful conversion. Typically, converting the source element **CharType**(0) leaves the current state in the initial conversion state.  
   
@@ -506,22 +506,22 @@ result in(
  `_State`  
  The conversion state that is maintained between calls to the member function.  
   
- ` first1`  
+ `first1`  
  Pointer to the beginning of the sequence to be converted.  
   
- ` last1`  
+ `last1`  
  Pointer to the end of the sequence to be converted.  
   
- ` next1`  
+ `next1`  
  Pointer beyond the end of the converted sequence to the first unconverted character.  
   
- ` first2`  
+ `first2`  
  Pointer to the beginning of the converted sequence.  
   
- ` last2`  
+ `last2`  
  Pointer to the end of the converted sequence.  
   
- ` next2`  
+ `next2`  
  Pointer to the **CharType** that comes after the last converted **Chartype** to the first unaltered character in the destination sequence.  
   
 ### Return Value  
@@ -602,20 +602,20 @@ int length(
  `_State`  
  The conversion state that is maintained between calls to the member function.  
   
- ` first1`  
+ `first1`  
  Pointer to the beginning of the external sequence.  
   
- ` last1`  
+ `last1`  
  Pointer to the end of the external sequence.  
   
  `_Len2`  
  The maximum number of Bytes that can be returned by the member function.  
   
 ### Return Value  
- An integer that represents a count of the maximum number of conversions, not greater than `_Len2`, defined by the external source sequence at [ ` first1`, ` last1`).  
+ An integer that represents a count of the maximum number of conversions, not greater than `_Len2`, defined by the external source sequence at [ `first1`, `last1`).  
   
 ### Remarks  
- The member function returns [do_length](#codecvt__do_length)( *_State,  first1*, ` last1`, `_Len2`).  
+ The member function returns [do_length](#codecvt__do_length)( *_State,  first1*, `last1`, `_Len2`).  
   
 ### Example  
   
@@ -700,26 +700,26 @@ result out(
  `_State`  
  The conversion state that is maintained between calls to the member function.  
   
- ` first1`  
+ `first1`  
  Pointer to the beginning of the sequence to be converted.  
   
- ` last1`  
+ `last1`  
  Pointer to the end of the sequence to be converted.  
   
- ` next1`  
+ `next1`  
  Reference to a pointer to the first unconverted **CharType** after the last **CharType** converted.  
   
- ` first2`  
+ `first2`  
  Pointer to the beginning of the converted sequence.  
   
- ` last2`  
+ `last2`  
  Pointer to the end of the converted sequence.  
   
- ` next2`  
+ `next2`  
  Reference to a pointer to the first unconverted **Byte** after the last converted **Byte**.  
   
 ### Return Value  
- The member function returns [do_out](#codecvt__do_out)( `_State`, ` first1`, ` last1`, ` next1`, ` first2`, ` last2`, ` next2`).  
+ The member function returns [do_out](#codecvt__do_out)( `_State`, `first1`, `last1`, `next1`, `first2`, `last2`, `next2`).  
   
 ### Remarks  
  For more information, see [codecvt::do_out](#codecvt__do_out).  
@@ -786,13 +786,13 @@ result unshift(
  `_State`  
  The conversion state that is maintained between calls to the member function.  
   
- ` first2`  
+ `first2`  
  Pointer to the first position in the destination range.  
   
- ` last2`  
+ `last2`  
  Pointer to the last position in the destination range.  
   
- ` next2`  
+ `next2`  
  Pointer to the first unaltered element in the destination sequence.  
   
 ### Return Value  
@@ -807,11 +807,11 @@ result unshift(
 - **codecvt_base::partial** if the destination is not large enough for the conversion to succeed.  
   
 ### Remarks  
- The protected virtual member function tries to convert the source element **CharType**(0) to a destination sequence that it stores within [ ` first2`, ` last2`), except for the terminating element **Byte**(0). It always stores in ` next2` a pointer to the first unaltered element in the destination sequence.  
+ The protected virtual member function tries to convert the source element **CharType**(0) to a destination sequence that it stores within [ `first2`, `last2`), except for the terminating element **Byte**(0). It always stores in `next2` a pointer to the first unaltered element in the destination sequence.  
   
  `_State` must represent the initial conversion state at the beginning of a new source sequence. The function alters its stored value, as needed, to reflect the current state of a successful conversion. Typically, converting the source element **CharType**(0) leaves the current state in the initial conversion state.  
   
- The member function returns [do_unshift](#codecvt__do_unshift)( `_State`, ` first2`, ` last2`, ` next2` ).  
+ The member function returns [do_unshift](#codecvt__do_unshift)( `_State`, `first2`, `last2`, `next2` ).  
   
 ## See Also  
  [\<locale>](../standard-library/locale.md)   

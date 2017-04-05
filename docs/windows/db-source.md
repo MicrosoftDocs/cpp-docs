@@ -67,7 +67,7 @@ Creates a connection to a data source.
   
  `db_source` adds data source properties to a class or within a method. It is used in conjunction with **db_command** (which takes the `db_source` *name* parameter as its `source_name` parameter).  
   
- When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to _*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName,* which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
+ When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
   
  For an example of this attribute used in an application, see the samples [AtlAgent](http://msdn.microsoft.com/en-us/52bef5da-c1a0-4223-b4e6-9e464b6db409) and [MultiRead](http://msdn.microsoft.com/en-us/5a2a915a-77dc-492f-94b2-1b809995dd5e).  
   
@@ -102,4 +102,4 @@ class CMyCommand {};
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
- [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
+ [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   

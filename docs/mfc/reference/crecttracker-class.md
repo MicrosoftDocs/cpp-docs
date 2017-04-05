@@ -59,7 +59,7 @@ class CRectTracker
 |[CRectTracker::AdjustRect](#adjustrect)|Called when the rectangle is resized.|  
 |[CRectTracker::Draw](#draw)|Renders the rectangle.|  
 |[CRectTracker::DrawTrackerRect](#drawtrackerrect)|Called when drawing the border of a `CRectTracker` object.|  
-|[CRectTracker::GetHandleMask](#gethandlemask)|Called to get the mask of a `CRectTracker`item's resize handles.|  
+|[CRectTracker::GetHandleMask](#gethandlemask)|Called to get the mask of a `CRectTracker` item's resize handles.|  
 |[CRectTracker::GetTrueRect](#gettruerect)|Returns width and height of rectangle, including resize handles.|  
 |[CRectTracker::HitTest](#hittest)|Returns the current position of the cursor related to the `CRectTracker` object.|  
 |[CRectTracker::NormalizeHit](#normalizehit)|Normalizes a hit-test code.|  

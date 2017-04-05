@@ -86,7 +86,7 @@ void _ftime64(
  Pointer to a `_timeb`,`__timeb32` or `__timeb64` structure.  
   
 ## Remarks  
- The `_ftime` function gets the current local time and stores it in the structure pointed to by `timeptr`*.* The `_timeb`, `__timeb32`,and`__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
+ The `_ftime` function gets the current local time and stores it in the structure pointed to by `timeptr`. The `_timeb`, `__timeb32`, and `__timeb64` structures are defined in SYS\Timeb.h. They contain four fields, which are listed in the following table.  
   
  `dstflag`  
  Nonzero if daylight savings time is currently in effect for the local time zone. (See [_tzset](../../c-runtime-library/reference/tzset.md) for an explanation of how daylight savings time is determined.)  

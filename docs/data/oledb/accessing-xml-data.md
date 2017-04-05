@@ -61,7 +61,7 @@ CCommand<CAccessor<CMyAccessor>, CStreamRowset> myCmd;
 CCommand<CNoAccessor, CStreamRowset> myCmd;  
 ```  
   
- Normally when you call `CCommand::Open` (specifying, for example, `CRowset` as the `TRowset` class), it obtains an `IRowset`pointer. `ICommand::Execute` returns an `IRowset`pointer, which is stored in the `m_spRowset` member of the `CRowset` object. Methods such as `MoveFirst`, `MoveNext`, and `GetData` use that pointer to retrieve the data.  
+ Normally when you call `CCommand::Open` (specifying, for example, `CRowset` as the `TRowset` class), it obtains an `IRowset` pointer. `ICommand::Execute` returns an `IRowset` pointer, which is stored in the `m_spRowset` member of the `CRowset` object. Methods such as `MoveFirst`, `MoveNext`, and `GetData` use that pointer to retrieve the data.  
   
  By contrast, when you call `CCommand::Open` (but specify `CStreamRowset` as the `TRowset` class), `ICommand::Execute` returns an `ISequentialStream` pointer, which is stored in the `m_spStream` data member of [CStreamRowset](../../data/oledb/cstreamrowset-class.md). You then use the `Read` method to retrieve the (Unicode string) data in XML format. For example:  
   

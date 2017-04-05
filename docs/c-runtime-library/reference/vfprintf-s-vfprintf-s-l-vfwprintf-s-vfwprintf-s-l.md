@@ -135,8 +135,8 @@ int _vfwprintf_s_l(
   
 |Routine|Required header|Optional headers|  
 |-------------|---------------------|----------------------|  
-|`vfprintf_s`, _`vfprintf_s_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|  
-|`vfwprintf_s`, _`vfwprintf_s_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|  
+|`vfprintf_s`, `_vfprintf_s_l`|\<stdio.h> and \<stdarg.h>|\<varargs.h>*|  
+|`vfwprintf_s`, `_vfwprintf_s_l`|\<stdio.h> or \<wchar.h>, and \<stdarg.h>|\<varargs.h>*|  
   
  \* Required for UNIX V compatibility.  
   

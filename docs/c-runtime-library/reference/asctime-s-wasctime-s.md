@@ -104,7 +104,7 @@ errno_t _wasctime_s(
 |`buffer`|`numberOfElements`|`tm`|Return|Value in `buffer`|  
 |--------------|------------------------|----------|------------|-----------------------|  
 |`NULL`|Any|Any|`EINVAL`|Not modified|  
-|Not`NULL` (points to valid memory)|0|Any|`EINVAL`|Not modified|  
+|Not `NULL` (points to valid memory)|0|Any|`EINVAL`|Not modified|  
 |Not `NULL`|0< size < 26|Any|`EINVAL`|Empty string|  
 |Not `NULL`|>= 26|`NULL`|`EINVAL`|Empty string|  
 |Not `NULL`|>= 26|Invalid time structure or out of range values for components of the time|`EINVAL`|Empty string|  

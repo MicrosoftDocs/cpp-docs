@@ -93,30 +93,30 @@ basic_iostream();
 ```  
   
 ### Parameters  
- ` strbuf`  
+ `strbuf`  
  An existing `basic_streambuf` object.  
   
- ` right`  
+ `right`  
  An existing `basic_iostream` object that is used to construct a new `basic_iostream`.  
   
 ### Remarks  
- The first constructor initializes the base objects by way of `basic_istream(`` strbuf``)` and `basic_ostream(`` strbuf``)`.  
+ The first constructor initializes the base objects by way of `basic_istream(strbuf)` and `basic_ostream(strbuf)`.  
   
- The second constructor initializes the base objects by calling move `(`` right``)`.  
+ The second constructor initializes the base objects by calling `move(right)`.  
   
 ##  <a name="basic_iostream__operator_eq"></a>  basic_iostream::operator=  
- Assign the value of a specified `basic_iostream` object to this object. This is a move assignment involving an `rvalue` that does not leave a copy behind.  
+ Assign the value of a specified `basic_iostream` object to this object. This is a move assignment involving an rvalue that does not leave a copy behind.  
   
 ```  
 basic_iostream& operator=(basic_iostream&& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An `rvalue` reference to a `basic_iostream` object to assign from.  
   
 ### Remarks  
- The member operator calls swap `(`` right``)`.  
+ The member operator calls `swap(right)`.  
   
 ##  <a name="basic_iostream__swap"></a>  basic_iostream::swap  
  Exchanges the contents of the provided `basic_iostream` object for the contents of this object.  
@@ -126,11 +126,11 @@ void swap(basic_iostream& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The `basic_iostream` object to swap.  
   
 ### Remarks  
- The member function calls swap `(`` right``)`  
+ The member function calls `swap(right)`.  
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   

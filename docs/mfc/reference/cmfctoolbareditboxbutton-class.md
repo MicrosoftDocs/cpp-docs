@@ -199,7 +199,7 @@ virtual CEdit* CreateEdit(
  A pointer to the newly created edit control; it is `NULL` if the control's creation and attachment fail.  
   
 ### Remarks  
- You construct a `CMFCToolBarEditBoxButton`object in two steps. First call the constructor, and then call `CreateEdit,` which creates the Windows edit control and attaches it to the `CMFCToolBarEditBoxButton` object.  
+ You construct a `CMFCToolBarEditBoxButton` object in two steps. First call the constructor, and then call `CreateEdit`, which creates the Windows edit control and attaches it to the `CMFCToolBarEditBoxButton` object.  
   
 ##  <a name="getbycmd"></a>  CMFCToolBarEditBoxButton::GetByCmd  
  Retrieves the first `CMFCToolBarEditBoxButton` object in the application that has the specified command ID.  

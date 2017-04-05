@@ -67,7 +67,7 @@ _locale_t _get_current_locale(void);
  A locale object representing the current locale.  
   
 ## Remarks  
- The `_get_current_locale`function gets the currently set locale for the thread and returns a locale object representing that locale.  
+ The `_get_current_locale` function gets the currently set locale for the thread and returns a locale object representing that locale.  
   
  The previous name of this function, `__get_current_locale` (with two leading underscores) has been deprecated.  
   

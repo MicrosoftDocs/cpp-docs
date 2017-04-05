@@ -87,7 +87,7 @@ int _mbsbtype_l(
  Locale to use.  
   
 ## Return Value  
- `_mbsbtype` and `_mbsbtype_l`returns an integer value indicating the result of the test on the specified byte. The manifest constants in the following table are defined in Mbctype.h.  
+ `_mbsbtype` and `_mbsbtype_l` returns an integer value indicating the result of the test on the specified byte. The manifest constants in the following table are defined in Mbctype.h.  
   
 |Return value|Byte type|  
 |------------------|---------------|  

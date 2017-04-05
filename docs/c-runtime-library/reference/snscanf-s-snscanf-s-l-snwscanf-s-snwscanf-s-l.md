@@ -153,7 +153,7 @@ int __cdecl _snwscanf_s_l(
   
 |Routine|Required header|  
 |-------------|---------------------|  
-|`_snscanf_s`, _`snscanf_s_l`|\<stdio.h>|  
+|`_snscanf_s`, `_snscanf_s_l`|\<stdio.h>|  
 |`_snwscanf_s`, `_snwscanf_s_l`|\<stdio.h> or \<wchar.h>|  
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  

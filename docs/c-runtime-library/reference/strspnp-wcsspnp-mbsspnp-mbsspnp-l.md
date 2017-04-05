@@ -110,7 +110,7 @@ unsigned char *_mbsspnp_l(
  Locale to use.  
   
 ## Return Value  
- `_strspnp`, `_wcsspnp`, and `_mbsspnp` return a pointer to the first character in `str` that does not belong to the set of characters in `charset`*.* Each of these functions returns `NULL` if `str` consists entirely of characters from `charset`*.* For each of these routines, no return value is reserved to indicate an error.  
+ `_strspnp`, `_wcsspnp`, and `_mbsspnp` return a pointer to the first character in `str` that does not belong to the set of characters in `charset`. Each of these functions returns `NULL` if `str` consists entirely of characters from `charset`. For each of these routines, no return value is reserved to indicate an error.  
   
 ## Remarks  
  The `_mbsspnp` function returns a pointer to the multibyte character that is the first character in `str` that does not belong to the set of characters in `charset`. `_mbsspnp` recognizes multibyte-character sequences according to the [multibyte code page](../../c-runtime-library/code-pages.md) currently in use. The search does not include terminating null characters.  

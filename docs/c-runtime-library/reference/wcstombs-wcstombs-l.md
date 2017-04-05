@@ -112,7 +112,7 @@ size_t _wcstombs_l(
   
  If the `mbstr` argument is `NULL`, `wcstombs` returns the required size in bytes of the destination string.  
   
- `wcstombs` validates its parameters. If `wcstr` is `NULL`, or if `count` is greater than`INT_MAX`, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.  
+ `wcstombs` validates its parameters. If `wcstr` is `NULL`, or if `count` is greater than `INT_MAX`, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function sets `errno` to `EINVAL` and returns -1.  
   
  `wcstombs` uses the current locale for any locale-dependent behavior; `_wcstombs_l` is identical except that it uses the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).  
   

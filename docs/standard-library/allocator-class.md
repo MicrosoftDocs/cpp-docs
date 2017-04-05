@@ -124,14 +124,14 @@ const_pointer address(const_reference val) const;
 ```  
   
 ### Parameters  
- ` val`  
+ `val`  
  The const or nonconst value of the object whose address is being searched for.  
   
 ### Return Value  
  A const or nonconst pointer to the object found of, respectively, const or nonconst value.  
   
 ### Remarks  
- The member functions return the address of ` val`, in the form that pointers must take for allocated elements.  
+ The member functions return the address of `val`, in the form that pointers must take for allocated elements.  
   
 ### Example  
   
@@ -185,7 +185,7 @@ pointer allocate(size_type count, const void* _Hint);
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The number of elements for which sufficient storage is to be allocated.  
   
  *_Hint*  
@@ -195,7 +195,7 @@ pointer allocate(size_type count, const void* _Hint);
  A pointer to the allocated object or null if memory was not allocated.  
   
 ### Remarks  
- The member function allocates storage for an array of count elements of type **Type**, by calling operator new( ` count`). It returns a pointer to the allocated object. The hint argument helps some allocators in improving locality of reference; a valid choice is the address of an object earlier allocated by the same allocator object and not yet deallocated. To supply no hint, use a null pointer argument instead.  
+ The member function allocates storage for an array of count elements of type **Type**, by calling operator new( `count`). It returns a pointer to the allocated object. The hint argument helps some allocators in improving locality of reference; a valid choice is the address of an object earlier allocated by the same allocator object and not yet deallocated. To supply no hint, use a null pointer argument instead.  
   
 ### Example  
   
@@ -244,7 +244,7 @@ allocator(const allocator<Other>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The allocator object to be copied.  
   
 ### Remarks  
@@ -441,14 +441,14 @@ void construct(pointer ptr, _Other&&...   val);
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  A pointer to the location where the object is to be constructed.  
   
- ` val`  
+ `val`  
  The value with which the object being constructed is to be initialized.  
   
 ### Remarks  
- The first member function is equivalent to **new** ( ( `void` \*) ` ptr` ) **Type** ( ` val` ).  
+ The first member function is equivalent to **new** ( ( `void` \*) `ptr` ) **Type** ( `val` ).  
   
 ### Example  
   
@@ -507,14 +507,14 @@ void deallocate(pointer ptr, size_type count);
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  A pointer to the first object to be deallocated from storage.  
   
- ` count`  
+ `count`  
  The number of objects to be deallocated from storage.  
   
 ### Remarks  
- The member function frees storage for the array of count objects of type **Type** beginning at ` ptr`, by calling `operator delete`( ` ptr`). The pointer ` ptr` must have been returned earlier by a call to [allocate](#allocator__allocate) for an allocator object that compares equal to **\*this**, allocating an array object of the same size and type. `deallocate` never throws an exception.  
+ The member function frees storage for the array of count objects of type **Type** beginning at `ptr`, by calling `operator delete(ptr)`. The pointer `ptr` must have been returned earlier by a call to [allocate](#allocator__allocate) for an allocator object that compares equal to **\*this**, allocating an array object of the same size and type. `deallocate` never throws an exception.  
   
 ### Example  
   For an example using the member function, see [allocator::allocate](#allocator__allocate).  
@@ -527,11 +527,11 @@ void destroy(pointer ptr);
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  A pointer designating the address of the object to be destroyed.  
   
 ### Remarks  
- The member function destroys the object designated by ` ptr`, by calling the destructor ` ptr` -> **Type**:: **~Type**.  
+ The member function destroys the object designated by `ptr`, by calling the destructor `ptr->`**Type**::**~Type**.  
   
 ### Example  
   
@@ -717,7 +717,7 @@ allocator<Type>& operator=(const allocator<Other>& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  An allocator object to be assigned to another such object.  
   
 ### Return Value  

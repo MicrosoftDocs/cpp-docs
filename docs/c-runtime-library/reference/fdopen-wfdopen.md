@@ -140,7 +140,7 @@ FILE *_wfdopen(
   
  Valid characters for the `mode` string used in `fopen` and `_fdopen` correspond to `oflag` arguments used in [_open](../../c-runtime-library/reference/open-wopen.md) and [_sopen](../../c-runtime-library/reference/sopen-wsopen.md), as follows.  
   
-|Characters in `mode` string|Equivalent `oflag`value for `_open`/`_sopen`|  
+|Characters in `mode` string|Equivalent `oflag` value for `_open`/`_sopen`|  
 |---------------------------------|---------------------------------------------------|  
 |`a`|`_O_WRONLY &#124; _O_APPEND` (usually `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|  
 |`a+`|`_O_RDWR &#124; _O_APPEND` (usually `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|  

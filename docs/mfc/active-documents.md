@@ -44,29 +44,22 @@ Active documents extend the compound document technology of OLE. These extension
   
  The following is the **IOleDocument** interface. Note that the **IEnumOleDocumentViews** interface is a standard OLE enumerator for **IOleDocumentView \*** types.  
   
- `interface IOleDocument : IUnknown`  
-  
- `{`  
-  
- `HRESULT CreateView(`  
-  
- `[in] IOleInPlaceSite *pIPSite,`  
-  
- `[in] IStream *pstm,`  
-  
- `[in] DWORD dwReserved,`  
-  
- `[out] IOleDocumentView **ppView);`  
-  
- `HRESULT GetDocMiscStatus([out] DWORD *pdwStatus);`  
-  
- `HRESULT EnumViews(`  
-  
- `[out] IEnumOleDocumentViews **ppEnum,`  
-  
- `[out] IOleDocumentView **ppView);`  
-  
- `}`  
+```  
+interface IOleDocument : IUnknown  
+    {  
+    HRESULT CreateView(  
+        [in] IOleInPlaceSite *pIPSite,  
+        [in] IStream *pstm,  
+        [in] DWORD dwReserved,  
+        [out] IOleDocumentView **ppView);  
+
+    HRESULT GetDocMiscStatus([out] DWORD *pdwStatus);  
+
+    HRESULT EnumViews(  
+        [out] IEnumOleDocumentViews **ppEnum,  
+        [out] IOleDocumentView **ppView);  
+    }  
+```  
   
  Every active document must have a view frame provider with this interface. If the document is not embedded within a container, the active document server itself must provide the view frame. However, when the active document is embedded in an active document container, the container provides the view frame.  
   
@@ -90,49 +83,30 @@ Active documents extend the compound document technology of OLE. These extension
   
  To be represented within an active document container, a view component must support **IOleInPlaceObject** and **IOleInPlaceActiveObject** in addition to `IOleDocumentView`:  
   
- `interface IOleDocumentView : IUnknown`  
-  
- `{`  
-  
- `HRESULT SetInPlaceSite([in] IOleInPlaceSite *pIPSite);`  
-  
- `HRESULT GetInPlaceSite([out] IOleInPlaceSite **ppIPSite);`  
-  
- `HRESULT GetDocument([out] IUnknown **ppunk);`  
-  
- `[input_sync] HRESULT SetRect([in] LPRECT prcView);`  
-  
- `HRESULT GetRect([in] LPRECT prcView);`  
-  
- `[input_sync] HRESULT SetRectComplex(`  
-  
- `[in] LPRECT prcView,`  
-  
- `[in] LPRECT prcHScroll,`  
-  
- `[in] LPRECT prcVScroll,`  
-  
- `[in] LPRECT prcSizeBox);`  
-  
- `HRESULT Show([in] BOOL fShow);`  
-  
- `HRESULT UIActivate([in] BOOL fUIActivate);`  
-  
- `HRESULT Open(void);`  
-  
- `HRESULT CloseView([in] DWORD dwReserved);`  
-  
- `HRESULT SaveViewState([in] IStream *pstm);`  
-  
- `HRESULT ApplyViewState([in] IStream *pstm);`  
-  
- `HRESULT Clone(`  
-  
- `[in] IOleInPlaceSite *pIPSiteNew,`  
-  
- `[out] IOleDocumentView **ppViewNew);`  
-  
- `}`  
+```  
+interface IOleDocumentView : IUnknown  
+    {  
+    HRESULT SetInPlaceSite([in] IOleInPlaceSite *pIPSite);  
+    HRESULT GetInPlaceSite([out] IOleInPlaceSite **ppIPSite);  
+    HRESULT GetDocument([out] IUnknown **ppunk);  
+    [input_sync] HRESULT SetRect([in] LPRECT prcView);  
+    HRESULT GetRect([in] LPRECT prcView);  
+    [input_sync] HRESULT SetRectComplex(  
+        [in] LPRECT prcView,  
+        [in] LPRECT prcHScroll,  
+        [in] LPRECT prcVScroll,  
+        [in] LPRECT prcSizeBox);  
+    HRESULT Show([in] BOOL fShow);  
+    HRESULT UIActivate([in] BOOL fUIActivate);  
+    HRESULT Open(void);  
+    HRESULT CloseView([in] DWORD dwReserved);  
+    HRESULT SaveViewState([in] IStream *pstm);  
+    HRESULT ApplyViewState([in] IStream *pstm);  
+    HRESULT Clone(  
+        [in] IOleInPlaceSite *pIPSiteNew,  
+        [out] IOleDocumentView **ppViewNew);  
+    }  
+```  
   
  Every view has an associated view site, which encapsulates the view frame and the view port (HWND and a rectangular area in that window). The site exposes this functionality though the standard **IOleInPlaceSite** interface. Note that it is possible to have more than one view port on a single HWND.  
   

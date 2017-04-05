@@ -51,15 +51,14 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
- 
-    template <class Ty>  
+template <class Ty>  
 bool operator<=(
     const Container <Ty>& left,  
     const Container <Ty>& right);
 ```  
   
 ## Return Value  
- Returns **!**(_*Right* < \_*Left*).  
+ Returns `!(right < left)`.  
   
 ## See Also  
  [\<sample container>](../standard-library/sample-container.md)

@@ -75,7 +75,7 @@ int fsetpos(
  See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, return codes.  
   
 ## Remarks  
- The `fsetpos` function sets the file-position indicator for `stream` to the value of `pos`*,* which is obtained in a prior call to `fgetpos` against `stream`*.* The function clears the end-of-file indicator and undoes any effects of [ungetc](../../c-runtime-library/reference/ungetc-ungetwc.md) on `stream`*.* After calling `fsetpos`, the next operation on `stream` may be either input or output.  
+ The `fsetpos` function sets the file-position indicator for `stream` to the value of `pos`, which is obtained in a prior call to `fgetpos` against `stream`. The function clears the end-of-file indicator and undoes any effects of [ungetc](../../c-runtime-library/reference/ungetc-ungetwc.md) on `stream`. After calling `fsetpos`, the next operation on `stream` may be either input or output.  
   
 ## Requirements  
   

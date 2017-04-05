@@ -136,7 +136,7 @@ int myFunc() {...}
   
  The `__restrict` keyword replaces the **/Oa** switch from previous versions.  
   
- With `__assume,` a developer can tell the compiler to make assumptions about the value of some variable.  
+ With `__assume`, a developer can tell the compiler to make assumptions about the value of some variable.  
   
  For example `__assume(a < 5);` tells the optimizer that at that line of code the variable `a` is less than 5. Again this is a promise to the compiler. If `a` is actually 6 at this point in the program then the behavior of the program after the compiler has optimized may not be what you would expect. `__assume` is most useful prior to switch statements and/or conditional expressions.  
   

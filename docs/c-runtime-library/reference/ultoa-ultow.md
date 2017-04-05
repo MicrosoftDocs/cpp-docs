@@ -99,7 +99,7 @@ wchar_t *_ultow(
  String result.  
   
  `radix`  
- Base of `value`*.*  
+ Base of `value`.  
   
 ## Return Value  
  Each of these functions returns a pointer to `str`. There is no error return.  

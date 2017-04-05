@@ -151,7 +151,7 @@ TCHAR m_state[3] = 'CA';
   
  **db_command** can be used to execute commands that do not return a result set.  
   
- When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to _*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName,* which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
+ When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
   
 ## Example  
  This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../data/oledb/crowset-movenext.md).  
@@ -281,4 +281,4 @@ int main() {
   
 ## See Also  
  [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
- [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
+ [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   

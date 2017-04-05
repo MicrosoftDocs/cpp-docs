@@ -65,7 +65,7 @@ Specifies the data segment where initialized variables are stored in the .obj fi
  *identifier* enables multiple records to be popped with a single **pop** command.  
   
  *"segment-name"*(optional)  
- The name of a segment*.* When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
+ The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.  
   
  *"segment-class"* (optional)  
  Included for compatibility with C++ prior to version 2.0. It is ignored.  

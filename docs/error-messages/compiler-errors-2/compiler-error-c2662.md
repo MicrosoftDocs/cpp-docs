@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Error C2662
 'function' : cannot convert 'this' pointer from 'type1' to 'type2'  
   
- The compiler could not convert the `this` pointer from `type1`to `type2`.  
+ The compiler could not convert the `this` pointer from `type1` to `type2`.  
   
  This error can be caused by invoking a non-`const` member function on a `const` object.  Possible resolutions:  
   

@@ -61,7 +61,7 @@ The **/MP** option can reduce the total time to compile the source files on the 
  The improvement in build time depends on the number of processors on a computer, the number of files to compile, and the availability of system resources, such as I/O capacity. Experiment with the **/MP** option to determine the best setting to build a particular project. For advice to help you make that decision, see [Guidelines](#guidelines).  
   
 ## Incompatible Options and Language Features  
- The **/MP** option is incompatible with some compiler options and language features. If you use an incompatible compiler option with the **/MP** option, the compiler issues warning `D9030` and ignores the **/MP** option. If you use an incompatible language feature, the compiler issues error `C2813`then ends or continues depending on the current compiler warning level option.  
+ The **/MP** option is incompatible with some compiler options and language features. If you use an incompatible compiler option with the **/MP** option, the compiler issues warning `D9030` and ignores the **/MP** option. If you use an incompatible language feature, the compiler issues error `C2813` then ends or continues depending on the current compiler warning level option.  
   
 > [!NOTE]
 >  Most options are incompatible because if they were permitted, the concurrently executing compilers would write their output at the same time to the console or to a particular file. As a result, the output would intermix and be garbled. In some cases, the combination of options would make the performance worse.  

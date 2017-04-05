@@ -110,7 +110,7 @@ int _wprintf_s_l(
   
  For information on `errno` and error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
- `printf_s` and`fprintf_s` behave identically except that `printf_s` writes output to `stdout` rather than to a destination of type `FILE`. For more information, see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  
+ `printf_s` and `fprintf_s` behave identically except that `printf_s` writes output to `stdout` rather than to a destination of type `FILE`. For more information, see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  
   
  `wprintf_s` is a wide-character version of `printf_s`; `format` is a wide-character string. `wprintf_s` and `printf_s` behave identically if the stream is opened in ANSI mode. `printf_s` doesn't currently support output into a UNICODE stream.  
   

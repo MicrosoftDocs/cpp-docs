@@ -197,7 +197,7 @@ virtual void Free(BYTE* lpMem);
   
 ### Parameters  
  `lpMem`  
- Pointer to the memory to be deallocated *.*  
+ Pointer to the memory to be deallocated.  
   
 ### Remarks  
  Override this function to implement custom memory deallocation. If you override this function, you'll probably want to override [Alloc](#alloc) and [Realloc](#realloc) as well.  

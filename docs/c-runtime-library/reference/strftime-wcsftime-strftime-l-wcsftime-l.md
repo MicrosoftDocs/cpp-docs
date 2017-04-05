@@ -119,12 +119,12 @@ size_t _wcsftime_l(
  The number of characters in `strDest` is equal to the number of literal characters in `format` as well as any characters that may be added to `format` via formatting codes. The terminating null of a string is not counted in the return value.  
   
 ## Remarks  
- The `strftime` and `wcsftime` functions format the `tm` time value in `timeptr` according to the supplied `format` argument and store the result in the buffer `strDest`*.* At most, `maxsize` characters are placed in the string. For a description of the fields in the `timeptr` structure, see [asctime](../../c-runtime-library/reference/asctime-wasctime.md). `wcsftime` is the wide-character equivalent of `strftime`; its string-pointer argument points to a wide-character string. These functions behave identically otherwise.  
+ The `strftime` and `wcsftime` functions format the `tm` time value in `timeptr` according to the supplied `format` argument and store the result in the buffer `strDest`. At most, `maxsize` characters are placed in the string. For a description of the fields in the `timeptr` structure, see [asctime](../../c-runtime-library/reference/asctime-wasctime.md). `wcsftime` is the wide-character equivalent of `strftime`; its string-pointer argument points to a wide-character string. These functions behave identically otherwise.  
   
 > [!NOTE]
->  In versions before Visual C++ 2005, the documentation described the `format` parameter of `wcsftime` as having the data type `const wchar_t *`, but the actual implementation of the `format` data type was `const char *`. The implementation of the `format`data type has been updated to reflect the previous and current documentation, that is, `const wchar_t *`.  
+>  In versions before Visual C++ 2005, the documentation described the `format` parameter of `wcsftime` as having the data type `const wchar_t *`, but the actual implementation of the `format` data type was `const char *`. The implementation of the `format` data type has been updated to reflect the previous and current documentation, that is, `const wchar_t *`.  
   
- This function validates its parameters. If `strDest`, `format`, or`timeptr` is a null pointer, or if the `tm` data structure addressed by `timeptr` is invalid (for example, if it contains out of range values for the time or date), or if the `format` string contains an invalid formatting code, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EINVAL`.  
+ This function validates its parameters. If `strDest`, `format`, or `timeptr` is a null pointer, or if the `tm` data structure addressed by `timeptr` is invalid (for example, if it contains out of range values for the time or date), or if the `format` string contains an invalid formatting code, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns 0 and sets `errno` to `EINVAL`.  
   
 ### Generic-Text Routine Mappings  
   
@@ -132,7 +132,7 @@ size_t _wcsftime_l(
 |---------------------|------------------------------------|--------------------|-----------------------|  
 |`_tcsftime`|`strftime`|`strftime`|`wcsftime`|  
   
- The `format` argument consists of one or more codes; as in `printf`, the formatting codes are preceded by a percent sign (`%`). Characters that do not begin with `%` are copied unchanged to `strDest`*.* The `LC_TIME` category of the current locale affects the output formatting of `strftime`. (For more information on `LC_TIME`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md).) The functions without the `_l` suffix use the currently set locale. The versions of these functions with the `_l` suffix are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
+ The `format` argument consists of one or more codes; as in `printf`, the formatting codes are preceded by a percent sign (`%`). Characters that do not begin with `%` are copied unchanged to `strDest`. The `LC_TIME` category of the current locale affects the output formatting of `strftime`. (For more information on `LC_TIME`, see [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md).) The functions without the `_l` suffix use the currently set locale. The versions of these functions with the `_l` suffix are identical except that they take the locale as a parameter and use that instead of the currently set locale. For more information, see [Locale](../../c-runtime-library/locale.md).  
   
  The formatting codes for `strftime` are listed below:  
   

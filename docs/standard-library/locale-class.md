@@ -443,7 +443,7 @@ locale(const locale& Loc, const Facet* Fac);
   
  `locale(const locale& Loc, const string& Locname, category Cat);`  
   
- replaces from `locale(Locname, _All)` those facets corresponding to a category C for which C & `Cat`is nonzero.  
+ replaces from `locale(Locname, _All)` those facets corresponding to a category C for which C & `Cat` is nonzero.  
   
  `template<class Facet> locale(const locale& Loc, Facet* Fac);`  
   
@@ -536,7 +536,7 @@ bool operator!=(const locale& right) const;
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  One of the locales to be tested for inequality.  
   
 ### Return Value  
@@ -596,10 +596,10 @@ bool operator()(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  The left string.  
   
- ` right`  
+ `right`  
  The right string.  
   
 ### Return Value  
@@ -661,7 +661,7 @@ bool operator==(const locale& right) const;
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  One of the locales to be tested for equality.  
   
 ### Return Value  

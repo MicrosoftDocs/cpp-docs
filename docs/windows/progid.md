@@ -53,7 +53,7 @@ Specifies the ProgID for a COM object.
  ProgIDs present a human-readable version of the class identifier (CLSID) used to identify COM/ActiveX objects.  
   
 ## Remarks  
- The **progid** C++ attribute lets you specify the ProgID for a COM object. A ProgID has the form *name1*.*name2*.*version*. If you do not specify a *version* for a ProgID, the default version is 1. If you do not specify *name1*.*name2*, the default name is *classname*.*classname*. If you do not specify **progid** and you do specify **vi_progid**, *name1*.*name2* are taken from **vi_progid** and the (next sequential number) version is appended.  
+ The **progid** C++ attribute lets you specify the ProgID for a COM object. A ProgID has the form *name1.name2.version*. If you do not specify a *version* for a ProgID, the default version is 1. If you do not specify *name1.name2*, the default name is *classname.classname*. If you do not specify **progid** and you do specify **vi_progid**, *name1.name2* are taken from **vi_progid** and the (next sequential number) version is appended.  
   
  If an attribute block that uses **progid** does not also use `uuid`, the compiler will check the registry to see if a `uuid` exists for the specified **progid**. If **progid** is not specified, the version (and coclass name, if creating a coclass) will be used to generate a **progid**.  
   
@@ -83,4 +83,4 @@ Specifies the ProgID for a COM object.
  [IDL Attributes](../windows/idl-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [ProgID Key](http://msdn.microsoft.com/library/windows/desktop/dd542719)   
+ [ProgID Key](http://msdn.microsoft.com/library/windows/desktop/dd542719)   

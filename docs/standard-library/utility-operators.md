@@ -28,10 +28,10 @@ constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **pair.**  
   
- ` right`  
+ `right`  
  An object of type `pair`.  
   
 ### Return Value  
@@ -96,17 +96,17 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type **pair.**  
   
- ` right`  
+ `right`  
  An object of type `pair`.  
   
 ### Return Value  
  **true** if the pairs are equal; **false** if the `pair`s are not equal.  
   
 ### Remarks  
- One pair is equal to another pair if each of their respective elements is equal. The function returns ` left`. **first** == ` right`. **first** && ` left`. **second** == ` right`. **second**. Two pairs are unequal if either the first or the second element of one is not equal to the corresponding element of the other pair.  
+ One pair is equal to another pair if each of their respective elements is equal. The function returns `left`. **first** == `right`. **first** && `left`. **second** == `right`. **second**. Two pairs are unequal if either the first or the second element of one is not equal to the corresponding element of the other pair.  
   
 ### Example  
   
@@ -155,17 +155,17 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `pair` on the left side of the operator.  
   
- ` right`  
+ `right`  
  An object of type `pair` on the right side of the operator.  
   
 ### Return Value  
  **true** if the `pair` on the left side of the operator is strictly less than the `pair` on the right side of the operator; otherwise **false**.  
   
 ### Remarks  
- The ` left``pair` object is said to be strictly less than the ` right``pair` object if ` left` is less than and not equal ` right.`  
+ The `left` `pair` object is said to be strictly less than the `right` `pair` object if `left` is less than and not equal to `right`.  
   
  In a comparison of pairs, the values' first elements of the two pairs have the highest priority. If they differ, then the result of their comparison is taken as the result of the comparison of the pair. If the values of the first elements are not different, then the values of the second elements are compared and the result of their comparison is taken as the result of the comparison of the pair.  
   
@@ -228,10 +228,10 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `pair` on the left side of the operator.  
   
- ` right`  
+ `right`  
  An object of type `pair` on the right side of the operator.  
   
 ### Return Value  
@@ -309,17 +309,17 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `pair` on the left side of the operator.  
   
- ` right`  
+ `right`  
  An object of type `pair` on the right side of the operator.  
   
 ### Return Value  
  **true** if the `pair` on the left side of the operator is strictly greater than the `pair` on the right side of the operator; otherwise **false**.  
   
 ### Remarks  
- The ` left``pair` object is said to be strictly greater than the ` right``pair` object if ` left` is greater than and not equal ` right.`  
+ The `left` `pair` object is said to be strictly greater than the `right` `pair` object if `left` is greater than and not equal to `right`.  
   
  In a comparison of pairs, the values' first elements of the two pairs have the highest priority. If they differ, then the result of their comparison is taken as the result of the comparison of the pair. If the values of the first elements are not different, then the values of the second elements are compared and the result of their comparison is taken as the result of the comparison of the pair.  
   
@@ -392,10 +392,10 @@ constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An object of type `pair` on the left side of the operator.  
   
- ` right`  
+ `right`  
  An object of type `pair` on the right side of the operator.  
   
 ### Return Value  

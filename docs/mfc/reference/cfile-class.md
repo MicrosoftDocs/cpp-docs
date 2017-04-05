@@ -396,23 +396,17 @@ static BOOL PASCAL GetStatus(
   
  The **m_attribute** member of the **CFileStatus** structure refers to the file attribute set. The `CFile` class provides the **Attribute** enumeration type so file attributes can be specified symbolically:  
   
- `enum Attribute {`  
-  
- `normal =    0x00,`  
-  
- `readOnly =  0x01,`  
-  
- `hidden =    0x02,`  
-  
- `system =    0x04,`  
-  
- `volume =    0x08,`  
-  
- `directory = 0x10,`  
-  
- `archive =   0x20`  
-  
- `};`  
+```  
+enum Attribute {
+    normal =    0x00,
+    readOnly =  0x01,
+    hidden =    0x02,
+    system =    0x04,
+    volume =    0x08,
+    directory = 0x10,
+    archive =   0x20
+    };
+```    
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#10](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_6.cpp)]  

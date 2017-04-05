@@ -82,10 +82,8 @@ inline bool AtlGetDacl(
  Returns true on success, false on failure.  
   
 ### Remarks  
- In debug builds, an assertion error will occur if either `hObject` or `pDacl` is invalid *.*  
-
-v
-
+ In debug builds, an assertion error will occur if either `hObject` or `pDacl` is invalid.  
+  
 ##  <a name="atlsetdacl"></a>  AtlSetDacl  
  Call this function to set the discretionary access-control list (DACL) information of a specified object.  
   

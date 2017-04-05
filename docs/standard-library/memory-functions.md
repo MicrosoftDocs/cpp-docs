@@ -225,11 +225,11 @@ void declare_no_pointers(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` ptr`|Address of first character that no longer contains traceable pointers.|  
-|`_Size`|Size of block that starts at ` ptr` that contains no traceable pointers.|  
+|`ptr`|Address of first character that no longer contains traceable pointers.|  
+|`_Size`|Size of block that starts at `ptr` that contains no traceable pointers.|  
   
 ### Remarks  
- The function informs any `garbage collector` that the range of addresses `[`` ptr``,` ` ptr` `+` `_Size``)` no longer contain traceable pointers. (Any pointers to allocated storage must not be dereferenced unless made `reachable`.)  
+ The function informs any `garbage collector` that the range of addresses `[ ptr, ptr + _Size)` no longer contain traceable pointers. (Any pointers to allocated storage must not be dereferenced unless made `reachable`.)  
   
 ##  <a name="declare_reachable"></a>  declare_reachable  
  Informs garbage collection that the indicated address is to allocated storage and is reachable.  
@@ -239,11 +239,11 @@ void declare_reachable(void* ptr);
 ```  
   
 ### Parameters  
- ` ptr`  
+ `ptr`  
  A pointer to a reachable, allocated, valid storage area.  
   
 ### Remarks  
- If ` ptr` is not null, the function informs any garbage collector that ` ptr` is hereafter reachable (points to valid allocated storage).  
+ If `ptr` is not null, the function informs any garbage collector that `ptr` is hereafter reachable (points to valid allocated storage).  
   
 ##  <a name="default_delete"></a>  default_delete  
  Deletes objects allocated with `operator new`. Suitable for use with `unique_ptr`.  
@@ -411,7 +411,7 @@ pair<Type *, ptrdiff_t> get_temporary_buffer(ptrdiff_t count);
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The maximum number of elements requested for which memory is to be allocated.  
   
 ### Return Value  
@@ -647,11 +647,11 @@ struct owner_less<weak_ptr<Type>>
  `_left`  
  A shared or weak pointer.  
   
- ` right`  
+ `right`  
  A shared or weak pointer.  
   
 ### Remarks  
- The template classes define all their member operators as returning ` left``.owner_before(`` right``)`.  
+ The template classes define all their member operators as returning `left``.owner_before(``right``)`.  
   
 ##  <a name="return_temporary_buffer"></a>  return_temporary_buffer  
  Deallocates the temporary memory that was allocated using the `get_temporary_buffer` template function.  
@@ -855,7 +855,7 @@ void undeclare_no_pointers(
 ```  
   
 ### Remarks  
- The function informs any `garbage collector` that the range of addresses `[`` ptr``,` ` ptr` `+` `_Size``)` may now contain `traceable pointers`.  
+ The function informs any `garbage collector` that the range of addresses `[ptr, ptr + _Size)` may now contain `traceable pointers`.  
   
 ##  <a name="undeclare_reachable"></a>  undeclare_reachable  
  Informs a `garbage_collector` that a specified memory location is not reachable.  
@@ -869,10 +869,10 @@ Type *undeclare_reachable(Type* ptr);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` ptr`|A pointer to the memory address to be declared not reachable.|  
+|`ptr`|A pointer to the memory address to be declared not reachable.|  
   
 ### Remarks  
- If ` ptr` is not `null`, the function informs any `garbage collector` that ` ptr` is hereafter not `reachable`. It returns a `safely derived` pointer that compares equal to ` ptr`.  
+ If `ptr` is not `null`, the function informs any `garbage collector` that `ptr` is hereafter not `reachable`. It returns a `safely derived` pointer that compares equal to `ptr`.  
   
 ##  <a name="uninitialized_copy"></a>  uninitialized_copy  
  Copies objects from a specified source range into an uninitialized destination range.  
@@ -883,13 +883,13 @@ ForwardIterator uninitialized_copy(InputIterator first, InputIterator last, Forw
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  An input iterator addressing the first element in the source range.  
   
- ` last`  
+ `last`  
  An input iterator addressing the last element in the source range.  
   
- ` dest`  
+ `dest`  
  A forward iterator addressing the first element in the destination range.  
   
 ### Return Value  
@@ -987,28 +987,26 @@ ForwardIterator uninitialized_copy_n(
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  An input iterator that refers to the object to copy.  
   
- ` count`  
+ `count`  
  A signed or unsigned integer type specifying the number of times to copy the object.  
   
- ` dest`  
+ `dest`  
  A forward iterator that refers to where the new copies go.  
   
 ### Return Value  
- A forward iterator that addresses the first position beyond the destination. If the source range was empty, the iterator addresses ` first`*.*  
+ A forward iterator that addresses the first position beyond the destination. If the source range was empty, the iterator addresses `first`.  
   
 ### Remarks  
  The template function effectively executes the following:  
   
- `for (; 0 < count; -- count)`  
-  
- `new ((void *)&*` ` dest` `++)`  
-  
- `iterator_traits<InputIterator>::value_type(*` ` first` `++);`  
-  
- `return dest;`  
+```cpp  
+    for (; 0 < count; --count)  
+        new ((void *)&* dest++) iterator_traits<InputIterator>::value_type(*first++);  
+    return dest;  
+```  
   
  unless the code throws an exception. In that case, all constructed objects are destroyed and the exception is rethrown.  
   
@@ -1021,13 +1019,13 @@ void uninitialized_fill(ForwardIterator first, ForwardIterator last, const Type&
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  A forward iterator addressing the first element in the destination range that is to be initiated.  
   
- ` last`  
+ `last`  
  A forward iterator addressing the last element in the destination range that is to be initiated.  
   
- ` val`  
+ `val`  
  The value to be used to initialize the destination range.  
   
 ### Remarks  
@@ -1090,13 +1088,13 @@ void uninitialized_fill_n(ForwardIterator first, Size count, const Type& val);
 ```  
   
 ### Parameters  
- ` first`  
+ `first`  
  A forward iterator addressing the first element in the destination range to be initiated.  
   
- ` count`  
+ `count`  
  The number of elements to be initialized.  
   
- ` val`  
+ `val`  
  The value to be used to initialize the destination range.  
   
 ### Remarks  

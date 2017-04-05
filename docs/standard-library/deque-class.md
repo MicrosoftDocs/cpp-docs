@@ -76,7 +76,7 @@ class deque
   
 |||  
 |-|-|  
-|[deque](#deque__deque)|Constructs a `deque.` Several constructors are provided to set up the contents of the new `deque` in different ways: empty; loaded with a specified number of empty elements; contents moved or copied from another `deque`; contents copied or moved by using an iterator; and one element copied into the `deque`` count` times. Some of the constructors enable using a custom `allocator` to create elements.|  
+|[deque](#deque__deque)|Constructs a `deque.` Several constructors are provided to set up the contents of the new `deque` in different ways: empty; loaded with a specified number of empty elements; contents moved or copied from another `deque`; contents copied or moved by using an iterator; and one element copied into the `deque` `count` times. Some of the constructors enable using a custom `allocator` to create elements.|  
   
 ### Typedefs  
   
@@ -685,9 +685,9 @@ deque(initializer_list<value_type> IList, const Allocator& Al);
   
  The first two constructors specify an empty initial deque; the second one also specifies the allocator type ( `_Al`) to be used.  
   
- The third constructor specifies a repetition of a specified number ( ` count`) of elements of the default value for class `Type`.  
+ The third constructor specifies a repetition of a specified number ( `count`) of elements of the default value for class `Type`.  
   
- The fourth and fifth constructors specify a repetition of ( `Count`) elements of value ` val`.  
+ The fourth and fifth constructors specify a repetition of ( `Count`) elements of value `val`.  
   
  The sixth constructor specifies a copy of the deque `Right`.  
   
@@ -971,7 +971,7 @@ iterator emplace(
 |-|-|  
 |Parameter|Description|  
 |`_Where`|The position in the [deque](../standard-library/deque-class.md) where the first element is inserted.|  
-|` val`|The value of the element being inserted into the `deque`.|  
+|`val`|The value of the element being inserted into the `deque`.|  
   
 ### Return Value  
  The function returns an iterator that points to the position where the new element was inserted into the deque.  
@@ -1033,7 +1033,7 @@ void emplace_back(Type&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The element added to the end of the [deque](../standard-library/deque-class.md).|  
+|`val`|The element added to the end of the [deque](../standard-library/deque-class.md).|  
   
 ### Example  
   
@@ -1083,7 +1083,7 @@ void emplace_front(Type&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The element added to the beginning of the [deque](../standard-library/deque-class.md).|  
+|`val`|The element added to the beginning of the [deque](../standard-library/deque-class.md).|  
   
 ### Example  
   
@@ -1226,10 +1226,10 @@ iterator erase(iterator first, iterator last);
  `_Where`  
  Position of the element to be removed from the deque.  
   
- ` first`  
+ `first`  
  Position of the first element removed from the deque.  
   
- ` last`  
+ `last`  
  Position just beyond the last element removed from the deque.  
   
 ### Return Value  
@@ -1515,10 +1515,10 @@ deque& operator=(deque&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The deque that provides the new content.|  
+|`right`|The deque that provides the new content.|  
   
 ### Remarks  
- The first override copies elements to this deque from ` right`, the source of the assignment. The second override moves elements to this deque from ` right`.  
+ The first override copies elements to this deque from `right`, the source of the assignment. The second override moves elements to this deque from `right`.  
   
  Elements that are contained in this deque before the operator executes are removed.  
   
@@ -1679,7 +1679,7 @@ void push_back(Type&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The element added to the end of the deque.|  
+|`val`|The element added to the end of the deque.|  
   
 ### Remarks  
  If an exception is thrown, the deque is left unaltered and the exception is rethrown.  
@@ -1698,7 +1698,7 @@ void push_front(Type&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The element added to the beginning of the deque.|  
+|`val`|The element added to the beginning of the deque.|  
   
 ### Remarks  
  If an exception is thrown, the deque is left unaltered and the exception is rethrown.  
@@ -1943,7 +1943,7 @@ void resize(size_type _Newsize, Type val);
  `_Newsize`  
  The new size of the deque.  
   
- ` val`  
+ `val`  
  The value of the new elements to be added to the deque if the new size is larger that the original size. If the value is omitted, the new elements are assigned the default value for the class.  
   
 ### Remarks  
@@ -2107,11 +2107,11 @@ void swap(deque<Type, Allocator>& left, deque<Type, Allocator>& right);
 ```  
   
 ### Parameters  
- ` right`  
- The deque providing the elements to be swapped, or the deque whose elements are to be exchanged with those of the deque ` left`.  
+ `right`  
+ The deque providing the elements to be swapped, or the deque whose elements are to be exchanged with those of the deque `left`.  
   
- ` left`  
- A deque whose elements are to be exchanged with those of the deque ` right`.  
+ `left`  
+ A deque whose elements are to be exchanged with those of the deque `right`.  
   
 ### Example  
   

@@ -152,7 +152,7 @@ size_t _mbstrnlen_l(
   
  Each of these functions returns the number of characters in `str`, not including the terminating null character. However, `strnlen` and `strnlen_s` interpret the string as a single-byte character string and therefore, the return value is always equal to the number of bytes, even if the string contains multibyte characters. `wcsnlen` and `wcsnlen_s` are wide-character versions of `strnlen` and `strnlen_s` respectively; the arguments for `wcsnlen` and `wcsnlen_s` are wide-character strings and the count of characters are in wide-character units. Otherwise, `wcsnlen` and `strnlen` behave identically, as do `strnlen_s` and `wcsnlen_s`.  
   
- `strnlen`, `wcsnlen,` and `_mbsnlen` do not validate their parameters. If `str` is `NULL`, an access violation occurs.  
+ `strnlen`, `wcsnlen`, and `_mbsnlen` do not validate their parameters. If `str` is `NULL`, an access violation occurs.  
   
  `strnlen_s` and `wcsnlen_s` validate their parameters. If `str` is `NULL`, the functions return 0.  
   

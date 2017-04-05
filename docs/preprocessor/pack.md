@@ -66,7 +66,7 @@ Specifies packing alignment for structure, union, and class members.
  `n` (optional)  
  Specifies the value, in bytes, to be used for packing. If the compiler option [/Zp](../build/reference/zp-struct-member-alignment.md) is not set for the module, the default value for `n` is 8. Valid values are 1, 2, 4, 8, and 16. The alignment of a member will be on a boundary that is either a multiple of `n` or a multiple of the size of the member, whichever is smaller.  
   
- `#pragma pack(pop,` `identifier` `,`  `n` `)` is undefined.  
+ `#pragma pack(pop, identifier, n)` is undefined.  
   
  For more information about how to modify alignment, see these topics:  
   

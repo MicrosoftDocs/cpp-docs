@@ -71,9 +71,9 @@ The simplest and most recommended way to create an active document container app
   
      Active document containment provides an improved printing scheme:  
   
-    -   You can first call the active document through its `IPrint`interface and tell it to print itself. This is different from previous OLE containment, in which the container had to render an image of the contained item onto the printer `CDC`object.  
+    -   You can first call the active document through its `IPrint` interface and tell it to print itself. This is different from previous OLE containment, in which the container had to render an image of the contained item onto the printer `CDC` object.  
   
-    -   If that fails, tell the contained item to print itself through its `IOleCommandTarget`interface  
+    -   If that fails, tell the contained item to print itself through its `IOleCommandTarget` interface  
   
     -   If that fails, make your own rendering of the item.  
   

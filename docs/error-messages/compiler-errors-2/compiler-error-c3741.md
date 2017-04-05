@@ -37,7 +37,7 @@ translation.priority.ht:
 # Compiler Error C3741
 'class': must be a coclass when the 'layout_dependent' parameter of event_receiver = true  
   
- When `layout_dependent=true`for an [event_receiver](../../windows/event-receiver.md) class, then the class must also have the [coclass](../../windows/coclass.md) attribute.  
+ When `layout_dependent=true` for an [event_receiver](../../windows/event-receiver.md) class, then the class must also have the [coclass](../../windows/coclass.md) attribute.  
   
  The following sample generates C3741  
   

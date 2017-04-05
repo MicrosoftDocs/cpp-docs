@@ -470,7 +470,7 @@ explicit moneypunct(size_t _Refs = 0);
   
 -   1: The lifetime of the object must be manually managed.  
   
--   \> 0: These values are not defined.  
+-   \> 1: These values are not defined.  
   
  No direct examples are possible, because the destructor is protected.  
   

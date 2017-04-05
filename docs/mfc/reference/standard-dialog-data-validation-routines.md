@@ -55,6 +55,7 @@ This topic lists the standard dialog data validation (DDV) routines used for com
 |[DDV_MinMaxShort](#ddv_minmaxshort)|Verifies a given control value does not exceed a given **short** range.|  
 |[DDV_MinMaxSlider](#ddv_minmaxslider)|Verifies a given slider control value falls within the given range.|  
 |[DDV_MinMaxUInt](#ddv_minmaxuint)|Verifies a given control value does not exceed a given **UINT** range.|  
+|[DDV_MinMaxUnsigned](#ddv_minmaxuint)|Verifies a given control value falls between two specified values.| 
 |[DDV_MinMaxULongLong](#ddv_minmaxulonglong)|Verifies a given control value does not exceed a given **ULONGLONG** range.|  
   
 
@@ -490,3 +491,41 @@ void AFXAPI DDV_MinMaxULongLong(
 ## See Also  
  [Standard Dialog Data Exchange Routines](../../mfc/reference/standard-dialog-data-exchange-routines.md)   
  [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+
+ ## DDV_MinMaxUnsigned
+Call `DDV_MinMaxUnsigned` to verify that the value in the control associated with *value* falls between `minVal` and `maxVal`.  
+   
+### Syntax    
+```
+   void AFXAPI DDV_MinMaxUnsigned(  
+       CDataExchange* pDX,  
+       unsigned value,  
+       unsigned minVal,  
+       unsigned maxVal );  
+```
+### Parameters  
+ `pDX`  
+ A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
+  
+ *value*  
+ A reference to a member variable of the dialog box, form view, or control view object with which data is validated.  
+  
+ `minVal`  
+ Minimum value (of type **unsigned** ) allowed.  
+  
+ `maxVal`  
+ Maximum value (of type **unsigned** ) allowed.  
+   
+### Remarks  
+ For more information about DDV, see [Dialog Data Exchange and Validation](../dialog-data-exchange-and-validation.md).  
+   
+### Requirements  
+ **Header:** afxdd_.h  
+   
+### See Also  
+ [Macros and Globals](mfc-macros-and-globals.md)   
+ [DDX_Slider](#ddx_slider)   
+ [DDX_FieldSlider](#ddx_fieldslider)
+ 
+
+

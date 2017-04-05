@@ -152,14 +152,14 @@ void swap(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  An lvalue reference to a `basic_ostream` object.  
   
- ` right`  
+ `right`  
  An lvalue reference to a `basic_ostream` object.  
   
 ### Remarks  
- The template function `swap` executes ` left.swap(`` right``)`.  
+ The template function `swap` executes `left.swap(right)`.  
   
 ## See Also  
  [\<ostream>](../standard-library/ostream.md)

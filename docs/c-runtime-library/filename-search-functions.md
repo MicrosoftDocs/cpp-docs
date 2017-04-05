@@ -58,7 +58,7 @@ These functions search for and close searches for specified file names:
 ## Remarks  
  The `_findfirst` function provides information about the first instance of a file name that matches the file specified in the `filespec` argument. You can use in `filespec` any combination of wildcard characters that is supported by the host operating system.  
   
- The functions return file information in a _`finddata_t` structure, which is defined in IO.h. Various functions in the family use many variations on the `_finddata_t` structure. The basic `_finddata_t` structure includes the following elements:  
+ The functions return file information in a `_finddata_t` structure, which is defined in IO.h. Various functions in the family use many variations on the `_finddata_t` structure. The basic `_finddata_t` structure includes the following elements:  
   
  `unsigned attrib`  
  File attribute.  
@@ -110,7 +110,7 @@ These functions search for and close searches for specified file names:
   
  `_findfirst` and `_findnext` use the 64-bit time type. If you must use the old 32-bit time type, you can define `_USE_32BIT_TIME_T`. The versions of these functions that have the `32` suffix in their names use the 32-bit time type, and those with the `64` suffix use the 64-bit time type.  
   
- Functions `_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`, and `_wfindnext32i64` also behave identically to the 32-bit time type versions of these functions except they use and return 64-bit file lengths. Functions `_findfirst64i32`, `_findnext64i32`, `_wfindfirst64i32`, and `_wfindnext64i32`use the 64-bit time type but use 32-bit file lengths. These functions use appropriate variations of the `_finddata_t` type in which the fields have different types for the time and the file size.  
+ Functions `_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`, and `_wfindnext32i64` also behave identically to the 32-bit time type versions of these functions except they use and return 64-bit file lengths. Functions `_findfirst64i32`, `_findnext64i32`, `_wfindfirst64i32`, and `_wfindnext64i32` use the 64-bit time type but use 32-bit file lengths. These functions use appropriate variations of the `_finddata_t` type in which the fields have different types for the time and the file size.  
   
  `_finddata_t` is actually a macro that evaluates to `_finddata64i32_t` (or `_finddata32_t` if `_USE_32BIT_TIME_T` is defined). The following table summarizes the variations on `_finddata_t`:  
   

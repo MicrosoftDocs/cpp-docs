@@ -199,7 +199,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
  [!code-cpp[concrt-join-tasks#2](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_9.cpp)]  
   
- In this example, you can also specify`task<vector<int>>` to produce a task-based continuation.  
+ In this example, you can also specify `task<vector<int>>` to produce a task-based continuation.  
   
  If any task in a set of tasks is canceled or throws an exception, `when_all` immediately completes and does not wait for the remaining tasks to finish. If an exception is thrown, the runtime rethrows the exception when you call `task::get` or `task::wait` on the task object that `when_all` returns. If more than one task throws, the runtime chooses one of them. Therefore, ensure that you observe all exceptions after all tasks complete; an unhandled task exception causes the app to terminate.  
   

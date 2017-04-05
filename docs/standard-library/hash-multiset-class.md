@@ -87,7 +87,7 @@ class hash_multiset
   
  The actual order of elements in the controlled sequence depends on the hash function, the ordering function, and the current size of the hash table stored in the container object. You cannot determine the current size of the hash table, so you cannot in general predict the order of elements in the controlled sequence. Inserting elements invalidates no iterators, and removing elements invalidates only those iterators that had specifically pointed at the removed elements.  
   
- The iterator provided by the hash_multiset class is a bidirectional iterator, but the class member functions insert and hash_multiset have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own hash_multiset of requirements, and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal hash_multiset of functionality, but it is enough to be able to talk meaningfully about a range of iterators [ ` first`, ` last`) in the context of the class member functions.  
+ The iterator provided by the hash_multiset class is a bidirectional iterator, but the class member functions insert and hash_multiset have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own hash_multiset of requirements, and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal hash_multiset of functionality, but it is enough to be able to talk meaningfully about a range of iterators [ `first`, `last`) in the context of the class member functions.  
   
  In Visual C++ .NET 2003, members of the <hash_map> and <hash_set> header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
@@ -489,7 +489,7 @@ size_type count(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key of the elements to be matched from the hash_multiset.  
   
 ### Return Value  
@@ -655,7 +655,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::di
 ```  
   
 ### Remarks  
- The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ ` first`, ` last`) between the iterators ` first` and ` last`, includes the element pointed to by ` first` and the range of elements up to, but not including, the element pointed to by ` last`.  
+ The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ `first`, `last`) between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.  
   
  Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers such as set. Subtraction between iterators is only supported by random-access iterators provided by a random-access container such as vector or deque.  
   
@@ -741,7 +741,7 @@ iterator insert(ValTy&& val);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The value of an element to be inserted into the [hash_multiset](../standard-library/hash-multiset-class.md) unless the `hash_multiset` already contains that element or, more generally, an element whose key is equivalently ordered.|  
+|`val`|The value of an element to be inserted into the [hash_multiset](../standard-library/hash-multiset-class.md) unless the `hash_multiset` already contains that element or, more generally, an element whose key is equivalently ordered.|  
   
 ### Return Value  
  The `emplace` member function returns an iterator that points to the position where the new element was inserted.  
@@ -794,7 +794,7 @@ iterator insert(
 |||  
 |-|-|  
 |Parameter|Description|  
-|` val`|The value of an element to be inserted into the [hash_multiset](../standard-library/hash-multiset-class.md) unless the `hash_multiset` already contains that element or, more generally, an element whose key is equivalently ordered.|  
+|`val`|The value of an element to be inserted into the [hash_multiset](../standard-library/hash-multiset-class.md) unless the `hash_multiset` already contains that element or, more generally, an element whose key is equivalently ordered.|  
 |`_Where`|The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.)|  
   
 ### Return Value  
@@ -957,7 +957,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the hash_multiset being searched.  
   
 ### Return Value  
@@ -1049,13 +1049,13 @@ size_type erase(const key_type& key);
  `_Where`  
  Position of the element to be removed from the hash_multiset.  
   
- ` first`  
+ `first`  
  Position of the first element removed from the hash_multiset.  
   
- ` last`  
+ `last`  
  Position just beyond the last element removed from the hash_multiset.  
   
- ` key`  
+ `key`  
  The key of the elements to be removed from the hash_multiset.  
   
 ### Return Value  
@@ -1165,7 +1165,7 @@ const_iterator find(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be matched by the sort key of an element from the hash_multiset being searched.  
   
 ### Return Value  
@@ -1598,7 +1598,7 @@ iterator lower_bound(const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the hash_multiset being searched.  
   
 ### Return Value  
@@ -1706,10 +1706,10 @@ hash_multiset& operator=(hash_multiset&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [hash_multiset](../standard-library/hash-multiset-class.md) being copied into the `hash_multiset`.|  
+|`right`|The [hash_multiset](../standard-library/hash-multiset-class.md) being copied into the `hash_multiset`.|  
   
 ### Remarks  
- After erasing any existing elements in a `hash_multiset`, `operator=` either copies or moves the contents of ` right` into the `hash_multiset`.  
+ After erasing any existing elements in a `hash_multiset`, `operator=` either copies or moves the contents of `right` into the `hash_multiset`.  
   
 ### Example  
   
@@ -2082,7 +2082,7 @@ void swap(hash_multiset& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The argument hash_multiset providing the elements to be swapped with the target hash_multiset.  
   
 ### Remarks  
@@ -2158,7 +2158,7 @@ iterator upper_bound(const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key to be compared with the sort key of an element from the hash_multiset being searched.  
   
 ### Return Value  

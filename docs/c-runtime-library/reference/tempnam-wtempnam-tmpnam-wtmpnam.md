@@ -101,7 +101,7 @@ wchar_t *_wtmpnam(
  Pointer that will hold the generated name and will be identical to the name returned by the function. This is a convenient way to save the generated name.  
   
 ## Return Value  
- Each of these functions returns a pointer to the name generated or `NULL` if there is a failure. Failure can occur if you attempt more than `TMP_MAX` (see STDIO.H) calls with `tmpnam` or if you use `_tempnam`and there is an invalid directory name specified in the TMP environment variable and in the `dir` parameter.  
+ Each of these functions returns a pointer to the name generated or `NULL` if there is a failure. Failure can occur if you attempt more than `TMP_MAX` (see STDIO.H) calls with `tmpnam` or if you use `_tempnam` and there is an invalid directory name specified in the TMP environment variable and in the `dir` parameter.  
   
 > [!NOTE]
 >  The pointers returned by `tmpnam` and `_wtmpnam` point to internal static buffers. [free](../../c-runtime-library/reference/free.md) should not be called to deallocate those pointers. `free` needs to be called for pointers allocated by `_tempnam` and `_wtempnam`.  

@@ -2037,10 +2037,10 @@ unordered_multimap& operator=(unordered_multimap&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The unordered_multimap being copied into the unordered_multimap.|  
+|`right`|The unordered_multimap being copied into the unordered_multimap.|  
   
 ### Remarks  
- After erasing any existing elements in a unordered_multimap, `operator=` either copies or moves the contents of ` right` into the unordered_multimap.  
+ After erasing any existing elements in a unordered_multimap, `operator=` either copies or moves the contents of `right` into the unordered_multimap.  
   
 ### Example  
   

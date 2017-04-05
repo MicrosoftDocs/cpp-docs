@@ -109,7 +109,7 @@ errno_t _wstrtime_s(
  Passing a value for `numberOfElements` that is greater than the actual size of the buffer will result in buffer overrun.  
   
 ## Remarks  
- These functions provide more secure versions of `_strtime` and `_wstrtime`. The `_strtime_s` function copies the current local time into the buffer pointed to by `timestr`*.* The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.  
+ These functions provide more secure versions of `_strtime` and `_wstrtime`. The `_strtime_s` function copies the current local time into the buffer pointed to by `timestr`. The time is formatted as `hh:mm:ss` where `hh` is two digits representing the hour in 24-hour notation, `mm` is two digits representing the minutes past the hour, and `ss` is two digits representing seconds. For example, the string `18:23:44` represents 23 minutes and 44 seconds past 6 P.M. The buffer must be at least 9 bytes long; the actual size is specified by the second parameter.  
   
  `_wstrtime` is a wide-character version of `_strtime`; the argument and return value of `_wstrtime` are wide-character strings. These functions behave identically otherwise.  
   

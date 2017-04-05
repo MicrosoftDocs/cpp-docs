@@ -48,10 +48,10 @@ bool operator!=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be tested for inequality.  
   
- ` right`  
+ `right`  
  One of the objects to be tested for inequality.  
   
  `Ty1`  
@@ -66,7 +66,7 @@ bool operator!=(
 ### Remarks  
  The first template operator returns false. (All default allocators are equal.)  
   
- The second and third template operators return `!(`` left` `==` ` right``)`.  
+ The second and third template operators return `!(left == right)`.  
   
 ### Example  
   
@@ -146,10 +146,10 @@ bool operator==(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be tested for equality.  
   
- ` right`  
+ `right`  
  One of the objects to be tested for equality.  
   
  `Ty1`  
@@ -250,10 +250,10 @@ bool operator>=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be compared.  
   
- ` right`  
+ `right`  
  One of the objects to be compared.  
   
  `Ty1`  
@@ -263,7 +263,7 @@ bool operator>=(
  The type controlled by the right shared pointer.  
   
 ### Remarks  
- The template operators return ` left``.get() >=` ` right``.get()`.  
+ The template operators return `left.get() >= right.get()`.  
   
 ##  <a name="operator_lt_"></a>  operator&lt;  
  Tests for one object being less than a second object.  
@@ -281,10 +281,10 @@ bool operator<(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be compared.  
   
- ` right`  
+ `right`  
  One of the objects to be compared.  
   
  `Ty1`  
@@ -309,10 +309,10 @@ bool operator<=(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be compared.  
   
- ` right`  
+ `right`  
  One of the objects to be compared.  
   
  `Ty1`  
@@ -322,7 +322,7 @@ bool operator<=(
  The type controlled by the right shared pointer.  
   
 ### Remarks  
- The template operators return ` left``.get() <=` ` right``.get()`  
+ The template operators return `left.get() <= right.get()`  
   
 ##  <a name="operator_gt_"></a>  operator&gt;  
  Tests for one object being greater than a second object.  
@@ -340,10 +340,10 @@ bool operator>(
 ```  
   
 ### Parameters  
- ` left`  
+ `left`  
  One of the objects to be compared.  
   
- ` right`  
+ `right`  
  One of the objects to be compared.  
   
  `Ty1`  

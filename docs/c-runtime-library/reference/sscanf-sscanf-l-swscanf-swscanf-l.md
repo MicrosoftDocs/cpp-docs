@@ -124,7 +124,7 @@ int _swscanf_l(
 > [!IMPORTANT]
 >  When reading a string with `sscanf`, always specify a width for the `%s` format (for example, `"%32s"` instead of `"%s"`); otherwise, improperly formatted input can easily cause a buffer overrun.  
   
- `swscanf` is a wide-character version of `sscanf`; the arguments to `swscanf` are wide-character strings. `sscanf`does not handle multibyte hexadecimal characters. `swscanf` does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, `swscanf` and `sscanf` behave identically.  
+ `swscanf` is a wide-character version of `sscanf`; the arguments to `swscanf` are wide-character strings. `sscanf` does not handle multibyte hexadecimal characters. `swscanf` does not handle Unicode full-width hexadecimal or "compatibility zone" characters. Otherwise, `swscanf` and `sscanf` behave identically.  
   
  The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.  
   

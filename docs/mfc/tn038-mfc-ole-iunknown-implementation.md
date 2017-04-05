@@ -578,7 +578,7 @@ END_INTERFACE_PART(
 ## Remarks  
   
 #### Parameters  
- l`ocalClass`  
+ `localClass`  
  The name of the class that implements the interface  
   
  `iface`  

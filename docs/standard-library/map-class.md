@@ -60,12 +60,12 @@ class map;
  The element data type to be stored in the map.  
   
  `Traits`  
- The type that provides a function object that can compare two element values as sort keys to determine their relative order in the map. This argument is optional and the binary predicate `less<``Key``>` is the default value.  
+ The type that provides a function object that can compare two element values as sort keys to determine their relative order in the map. This argument is optional and the binary predicate `less<Key>` is the default value.  
   
  In C++14 you can enable heterogeneous lookup by specifying the std::less<> predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)  
   
  `Allocator`  
- The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair``<const``Key`*,* `Type``> >`.  
+ The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair<const Key, Type> >`.  
   
 ## Remarks  
  The C++ Standard Library map class is:  
@@ -190,7 +190,7 @@ const Type& at(const Key& key) const;
 |||  
 |-|-|  
 |Parameter|Description|  
-|` key`|The key value to find.|  
+|`key`|The key value to find.|  
   
 ### Return Value  
  A reference to the data value of the element found.  
@@ -459,13 +459,13 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 ### Remarks  
  A type `const_reverse_iterator` cannot modify the value of an element and is use to iterate through the map in reverse.  
   
- The `const_reverse_iterator` defined by map points to elements that are objects of [value_type](#map__value_type), that is of type `pair`*\<***constKey***,* **Type***>*, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
+ The `const_reverse_iterator` defined by map points to elements that are objects of [value_type](#map__value_type), that is of type `pair<const Key, Type>`, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `const_reverse_iterator``crIter` pointing to an element in a map, use the **->** operator.  
+ To dereference a `const_reverse_iterator crIter` pointing to an element in a map, use the **->** operator.  
   
- To access the value of the key for the element, use `crIter` -> **first**, which is equivalent to (\* `crIter`). **first**.  
+ To access the value of the key for the element, use `crIter` -> **first**, which is equivalent to (\* `crIter`).**first**.  
   
- To access the value of the mapped datum for the element, use `crIter` -> **second**, which is equivalent to (\* `crIter`). **first**.  
+ To access the value of the mapped datum for the element, use `crIter` -> **second**, which is equivalent to (\* `crIter`).**first**.  
   
 ### Example  
   See the example for [rend](#map__rend) for an example of how to declare and use `const_reverse_iterator`.  
@@ -478,7 +478,7 @@ size_type count(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The key value of the elements to be matched from the map.  
   
 ### Return Value  
@@ -638,7 +638,7 @@ typedef allocator_type::difference_type difference_type;
 ```  
   
 ### Remarks  
- The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range *[ first,  last)* between the iterators ` first` and ` last`, includes the element pointed to by ` first` and the range of elements up to, but not including, the element pointed to by ` last`.  
+ The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range *[ first,  last)* between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.  
   
  Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers such as set, subtraction between iterators is only supported by random access iterators provided by a random access container such as vector.  
   
@@ -919,7 +919,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key value to be compared with the sort key of an element from the map being searched.  
   
 ### Return Value  
@@ -1457,9 +1457,9 @@ key_compare key_comp() const;
 ### Remarks  
  The stored object defines the member function  
   
- **bool operator**( **constKey&**` left`, **const Key&**` right`);  
+ **bool operator**( **constKey&**`left`, **const Key&**`right`);  
   
- which returns **true** if ` left` precedes and is not equal to ` right` in the sort order.  
+ which returns **true** if `left` precedes and is not equal to `right` in the sort order.  
   
 ### Example  
   
@@ -1552,7 +1552,7 @@ const_iterator lower_bound(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key value to be compared with the sort key of an element from the map being searched.  
   
 ### Return Value  
@@ -1866,7 +1866,7 @@ Type& operator 0-(Key&& key);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` key`|The key value of the element that is to be inserted.|  
+|`key`|The key value of the element that is to be inserted.|  
   
 ### Return Value  
  A reference to the data value of the inserted element.  
@@ -1874,7 +1874,7 @@ Type& operator 0-(Key&& key);
 ### Remarks  
  If the argument key value is not found, then it is inserted along with the default value of the data type.  
   
- `operator[]` may be used to insert elements into a map `m` using `m[ key] = DataValue;` where `DataValue` is the value of the `mapped_type` of the element with a key value of ` key`.  
+ `operator[]` may be used to insert elements into a map `m` using `m[ key] = DataValue;` where `DataValue` is the value of the `mapped_type` of the element with a key value of `key`.  
   
  When using `operator[]` to insert elements, the returned reference does not indicate whether an insertion is changing a pre-existing element or creating a new one. The member functions [find](#map__find) and [insert](#map__insert) can be used to determine whether an element with a specified key is already present before an insertion.  
   
@@ -1963,10 +1963,10 @@ map& operator=(map&& right);
 |||  
 |-|-|  
 |Parameter|Description|  
-|` right`|The [map](../standard-library/map-class.md) being copied into the `map`.|  
+|`right`|The [map](../standard-library/map-class.md) being copied into the `map`.|  
   
 ### Remarks  
- After erasing any existing elements in a `map`, `operator=` either copies or moves the contents of ` right` into the map.  
+ After erasing any existing elements in a `map`, `operator=` either copies or moves the contents of `right` into the map.  
   
 ### Example  
   
@@ -2310,7 +2310,7 @@ void swap(
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The argument map providing the elements to be swapped with the target map.  
   
 ### Remarks  
@@ -2378,7 +2378,7 @@ const_iterator upper_bound(const Key& key) const;
 ```  
   
 ### Parameters  
- ` key`  
+ `key`  
  The argument key value to be compared with the sort key value of an element from the map being searched.  
   
 ### Return Value  
@@ -2450,9 +2450,9 @@ value_compare value_comp() const;
 ### Remarks  
  For a map *m*, if two elements *e*1( *k*1, *d*1) and *e*2( *k*2, `d`2) are objects of type `value_type`, where *k*1 and *k*2 are their keys of type `key_type` and `d`1 and `d`2 are their data of type `mapped_type`, then *m.*`value_comp`( *e*1, *e*2) is equivalent to *m.*`key_comp`*(k*1, *k*2). A stored object defines the member function  
   
- **bool operator**( **value_type&**` left`, **value_type&**` right`);  
+ **bool operator**( **value_type&**`left`, **value_type&**`right`);  
   
- which returns **true** if the key value of ` left` precedes and is not equal to the key value of ` right` in the sort order.  
+ which returns **true** if the key value of `left` precedes and is not equal to the key value of `right` in the sort order.  
   
 ### Example  
   

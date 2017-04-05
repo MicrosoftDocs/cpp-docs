@@ -187,16 +187,16 @@ valarray<Type> cshift(int count) const;
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The number of places the elements are to be shifted forward.  
   
 ### Return Value  
- A new valarray in which all the elements have been moved ` count` positions cyclically toward the front of the valarray, left with respect to their positions in the operand valarray.  
+ A new valarray in which all the elements have been moved `count` positions cyclically toward the front of the valarray, left with respect to their positions in the operand valarray.  
   
 ### Remarks  
- A positive value of ` count` shifts the elements cyclically left ` count` places.  
+ A positive value of `count` shifts the elements cyclically left `count` places.  
   
- A negative value of ` count` shifts the elements cyclically right ` count` places.  
+ A negative value of `count` shifts the elements cyclically right `count` places.  
   
 ### Example  
   
@@ -431,11 +431,11 @@ valarray<Type>& operator%=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The valarray or value of an element type identical to that of the operand valarray that is to divide, element-wise, the operand valarray.  
   
 ### Return Value  
- A valarray whose elements are the remainder from the element-wise division of the operand valarray by ` right.`  
+ A valarray whose elements are the remainder from the element-wise division of the operand valarray by `right`  
   
 ### Example  
   
@@ -493,11 +493,11 @@ valarray<Type>& operator&=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the logical **AND** with the operand valarray.  
   
 ### Return Value  
- A valarray whose elements are the element-wise logical **AND** of the operand valarray by ` right.`  
+ A valarray whose elements are the element-wise logical **AND** of the operand valarray by `right`  
   
 ### Remarks  
  A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, **longdouble**, `void`, `bool`, or other, more complex data types.  
@@ -560,11 +560,11 @@ valarray<Type>& operator>>=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The value indicating the amount of right shift or valarray whose elements indicate the element-wise amount of right shift.  
   
 ### Return Value  
- A valarray whose elements have been shifted right the amount specified in ` right`.  
+ A valarray whose elements have been shifted right the amount specified in `right`.  
   
 ### Remarks  
  Signed numbers have their signs preserved.  
@@ -625,11 +625,11 @@ valarray<Type>& operator<<=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The value indicating the amount of left shift or valarray whose elements indicate the element-wise amount of left shift.  
   
 ### Return Value  
- A valarray whose elements have been shifted left the amount specified in ` right`.  
+ A valarray whose elements have been shifted left the amount specified in `right`.  
   
 ### Remarks  
  Signed numbers have their signs preserved.  
@@ -691,11 +691,11 @@ valarray<Type>& operator*=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The valarray or value of an element type identical to that of the operand valarray that is to multiply, element-wise, the operand valarray.  
   
 ### Return Value  
- A valarray whose elements are the element-wise product of the operand valarray and ` right.`  
+ A valarray whose elements are the element-wise product of the operand valarray and `right`.  
   
 ### Example  
   
@@ -802,11 +802,11 @@ valarray<Type>& operator+=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The valarray or value of an element type identical to that of the operand valarray that is to be added, element-wise, to the operand valarray.  
   
 ### Return Value  
- A valarray whose elements are the element-wise sum of the operand valarray and ` right.`  
+ A valarray whose elements are the element-wise sum of the operand valarray and `right`.  
   
 ### Example  
   
@@ -913,11 +913,11 @@ valarray<Type>& operator-=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The valarray or value of an element type identical to that of the operand valarray that is to be subtracted, element-wise, from the operand valarray.  
   
 ### Return Value  
- A valarray whose elements are the element-wise difference of the operand valarray and ` right.`  
+ A valarray whose elements are the element-wise difference of the operand valarray and `right`.  
   
 ### Example  
   
@@ -975,11 +975,11 @@ valarray<Type>& operator/=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The valarray or value of an element type identical to that of the operand valarray that is to be divided, element-wise, into the operand valarray.  
   
 ### Return Value  
- A valarray whose elements are the element-wise quotient of the operand valarray divided by ` right.`  
+ A valarray whose elements are the element-wise quotient of the operand valarray divided by `right`.  
   
 ### Example  
   
@@ -1047,10 +1047,10 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The valarray to be copied into the operand valarray.  
   
- ` val`  
+ `val`  
  The value to be assigned to the elements of the operand valarray.  
   
  `_Slicearray`  
@@ -1066,11 +1066,11 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
  The indirect_array to be copied into the operand valarray.  
   
 ### Return Value  
- The first member operator replaces the controlled sequence with a copy of the sequence controlled by ` right`.  
+ The first member operator replaces the controlled sequence with a copy of the sequence controlled by `right`.  
   
  The second member operator is the same as the first, but with an [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
- The third member operator replaces each element of the controlled sequence with a copy of ` val`.  
+ The third member operator replaces each element of the controlled sequence with a copy of `val`.  
   
  The remaining member operators replace those elements of the controlled sequence selected by their arguments, which are generated only by [operator&#91;&#93;](#valarray__operator_at).  
   
@@ -1197,11 +1197,11 @@ valarray<Type>& operator|=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the exclusive logical **XOR** with the operand valarray.  
   
 ### Return Value  
- A valarray whose elements are the element-wise, exclusive logical **XOR** of the operand valarray and ` right.`  
+ A valarray whose elements are the element-wise, exclusive logical **XOR** of the operand valarray and `right`.  
   
 ### Remarks  
  The exclusive logical or, referred to as **XOR**, has the following semantics: Given elements *e*1 and *e*2, *e*1 **XOR** *e*2 is **true** if exactly one of the elements is true; **false** if both elements are false or if both elements are true.  
@@ -1266,11 +1266,11 @@ valarray<Type>& operator|=(const Type& right);
 ```  
   
 ### Parameters  
- ` right`  
+ `right`  
  The valarray or value of an element type identical to that of the operand valarray that is to be combined, element-wise, by the bitwise `OR` with the operand valarray.  
   
 ### Return Value  
- A valarray whose elements are the element-wise bitwise `OR` of the operand valarray by ` right.`  
+ A valarray whose elements are the element-wise bitwise `OR` of the operand valarray by `right`.  
   
 ### Remarks  
  A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, **longdouble**, `void`, `bool`, or other, more complex data types.  
@@ -1437,7 +1437,7 @@ void resize(
  `_Newsize`  
  The number of elements in the resized valarray.  
   
- ` val`  
+ `val`  
  The value to be given to the elements of the resized valarray.  
   
 ### Remarks  
@@ -1500,16 +1500,16 @@ valarray<Type> shift(int count) const;
 ```  
   
 ### Parameters  
- ` count`  
+ `count`  
  The number of places the elements are to be shifted forward.  
   
 ### Return Value  
- A new valarray in which all the elements have been moved ` count` positions toward the front of the valarray, left with respect to their positions in the operand valarray.  
+ A new valarray in which all the elements have been moved `count` positions toward the front of the valarray, left with respect to their positions in the operand valarray.  
   
 ### Remarks  
- A positive value of ` count` shifts the elements left ` count` places, with zero fill.  
+ A positive value of `count` shifts the elements left `count` places, with zero fill.  
   
- A negative value of ` count` shifts the elements right ` count` places, with zero fill.  
+ A negative value of `count` shifts the elements right `count` places, with zero fill.  
   
 ### Example  
   
@@ -1692,10 +1692,10 @@ void swap(valarray& right);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|` right`|A `valarray` providing the elements to be swapped.|  
+|`right`|A `valarray` providing the elements to be swapped.|  
   
 ### Remarks  
- The member function swaps the controlled sequences between `*this` and ` right`. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.  
+ The member function swaps the controlled sequences between `*this` and `right`. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.  
   
 ##  <a name="valarray__valarray"></a>  valarray::valarray  
  Constructs a valarray of a specific size or with elements of a specific value or as a copy of another valarray or subset of another valarray.  

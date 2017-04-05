@@ -111,7 +111,7 @@ compare( context, (void *) & elem1, (void *) & elem2 );
 |any|any|any|any|<= 0|`EINVAL`|  
 |any|any|`NULL`|any|any|`EINVAL`|  
   
- `qsort_s` has the same behavior as `qsort` but has the `context` parameter and sets `errno`. By passing a `context` parameter, comparison functions can use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the `context` parameter makes `qsort_s`more secure because `context` can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the `compare` function.  
+ `qsort_s` has the same behavior as `qsort` but has the `context` parameter and sets `errno`. By passing a `context` parameter, comparison functions can use an object pointer to access object functionality or other information not accessible through an element pointer. The addition of the `context` parameter makes `qsort_s` more secure because `context` can be used to avoid reentrancy bugs introduced by using static variables to make shared information available to the `compare` function.  
   
 ## Requirements  
   
@@ -124,7 +124,7 @@ compare( context, (void *) & elem1, (void *) & elem2 );
  **Libraries:** All versions of the [CRT Library Features](../../c-runtime-library/crt-library-features.md).  
   
 ## Example  
- The following example demonstrates how to use the `context` parameter in the `qsort_s`function. The `context` parameter makes it easier to perform thread-safe sorts. Instead of using static variables that must be synchronized to ensure thread safety, pass a different `context` parameter in each sort. In this example, a locale object is used as the `context` parameter.  
+ The following example demonstrates how to use the `context` parameter in the `qsort_s` function. The `context` parameter makes it easier to perform thread-safe sorts. Instead of using static variables that must be synchronized to ensure thread safety, pass a different `context` parameter in each sort. In this example, a locale object is used as the `context` parameter.  
   
 ```  
 // crt_qsort_s.cpp  

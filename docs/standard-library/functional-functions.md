@@ -91,7 +91,7 @@ unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
 ### Remarks  
  The types `Fty, T1, T2, ..., TN` must be copy constructible, and `INVOKE(fn, t1, ..., tN)` must be a valid expression for some values `w1, w2, ..., wN`.  
   
- The first template function returns a forwarding call wrapper `g` with a weak result type. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN,` [result_of](../standard-library/result-of-class.md)`<Fty` `cv` `(V1, V2, ..., VN)>::type)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list.  
+ The first template function returns a forwarding call wrapper `g` with a weak result type. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN, `[result_of](../standard-library/result-of-class.md)`<Fty cv (V1, V2, ..., VN)>::type)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list.  
   
  The second template function returns a forwarding call wrapper `g` with a nested type `result_type` that is a synonym for `Ret`. The effect of `g(u1, u2, ..., uM)` is `INVOKE(f, v1, v2, ..., vN, Ret)`, where `cv` is the cv-qualifiers of `g` and the values and types of the bound arguments `v1, v2, ..., vN` are determined as specified below. You use it to bind arguments to a callable object to make a callable object with a tailored argument list and with a specified return type.  
   
@@ -175,11 +175,11 @@ binder1st <Operation> bind1st (const Operation& func, const Type& left);
  `func`  
  The binary function object to be converted to a unary function object.  
   
- ` left`  
+ `left`  
  The value to which the first argument of the binary function object is to be bound.  
   
 ### Return Value  
- The unary function object that results from binding the first argument of the binary function object to the value ` left.`  
+ The unary function object that results from binding the first argument of the binary function object to the value `left`.  
   
 ### Remarks  
  Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.  
@@ -265,11 +265,11 @@ binder2nd <Operation> bind2nd(const Operation& func, const Type& right);
  `func`  
  The binary function object to be converted to a unary function object.  
   
- ` right`  
+ `right`  
  The value to which the second argument of the binary function object is to be bound.  
   
 ### Return Value  
- The unary function object that results from binding the second argument of the binary function object to the value ` right.`  
+ The unary function object that results from binding the second argument of the binary function object to the value `right`.  
   
 ### Remarks  
  Function binders are a kind of function adaptor and, because they return function objects, can be used in certain types of function composition to construct more complicated and powerful expressions.  
@@ -365,14 +365,14 @@ struct bit_and<void>
 ```  
   
 ### Parameters  
- `Type`, ` T`, ` U`  
+ `Type`, `T`, `U`  
  Any type that supports an `operator&` that takes operands of the specified or inferred types.  
   
  `Left`  
- The left operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` T`.  
+ The left operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.  
   
  `Right`  
- The right operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` U`.  
+ The right operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ### Return Value  
  The result of `Left``&``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator&`.  
@@ -434,14 +434,14 @@ struct bit_or<void>
 ```  
   
 ### Parameters  
- `Type`, ` T`, ` U`  
+ `Type`, `T`, `U`  
  Any type that supports an `operator|` that takes operands of the specified or inferred types.  
   
  `Left`  
- The left operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` T`.  
+ The left operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.  
   
  `Right`  
- The right operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` U`.  
+ The right operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ### Return Value  
  The result of `Left``|``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator|`.  
@@ -471,14 +471,14 @@ struct bit_xor<void>
 ```  
   
 ### Parameters  
- `Type`, ` T`, ` U`  
+ `Type`, `T`, `U`  
  Any type that supports an `operator^` that takes operands of the specified or inferred types.  
   
  `Left`  
- The left operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` T`.  
+ The left operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.  
   
  `Right`  
- The right operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type ` U`.  
+ The right operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ### Return Value  
  The result of `Left``^``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator^`.  
@@ -796,7 +796,7 @@ unary_negate<UnaryPredicate> not1(const UnaryPredicate& pred);
 ```  
   
 ### Parameters  
- ` pred`  
+ `pred`  
  The unary predicate to be negated.  
   
 ### Return Value  

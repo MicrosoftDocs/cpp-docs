@@ -244,19 +244,19 @@ priority_queue(InputIterator first, InputIterator last, const Traits&_comp, cons
  `_Cont`  
  The base container of which the constructed priority_queue is to be a copy.  
   
- ` right`  
+ `right`  
  The priority_queue of which the constructed set is to be a copy.  
   
- ` first`  
+ `first`  
  The position of the first element in the range of elements to be copied.  
   
- ` last`  
+ `last`  
  The position of the first element beyond the range of elements to be copied.  
   
 ### Remarks  
- Each of the first three constructors specifies an empty initial priority_queue, the second also specifying the type of comparison function ( ` comp`) to be used in establishing the order of the elements and the third explicitly specifying the `container_type` ( `_Cont`) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.  
+ Each of the first three constructors specifies an empty initial priority_queue, the second also specifying the type of comparison function ( `comp`) to be used in establishing the order of the elements and the third explicitly specifying the `container_type` ( `_Cont`) to be used. The keyword **explicit** suppresses certain kinds of automatic type conversion.  
   
- The fourth constructor specifies a copy of the priority_queue ` right`.  
+ The fourth constructor specifies a copy of the priority_queue `right`.  
   
  The last three constructors copy the range [ * first,  last*) of some container and use the values to initialize a priority_queue with increasing explicitness in specifying the type of comparison function of class **Traits** and `container_type`.  
   
@@ -379,7 +379,7 @@ void push(const Type& val);
 ```  
   
 ### Parameters  
- ` val`  
+ `val`  
  The element added to the top of the priority_queue.  
   
 ### Remarks  
