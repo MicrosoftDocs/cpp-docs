@@ -107,9 +107,9 @@ Include the standard header \<chrono> to define classes and functions that repre
 |Literal|Description|  
 |-------------|-----------------|  
 |chrono::hours operator "" h(unsigned long long Val)|Specifies hours as an integral value.|  
-|chrono::duration<double, ratio\<3600> > operator "" h(long double Val)|Specifies hours as a floating-point value.|  
+|chrono::duration\<double, ratio\<3600> > operator "" h(long double Val)|Specifies hours as a floating-point value.|  
 |chrono::minutes (operator "" min)(unsigned long long Val)|Specifies minutes as an integral value.|  
-|chrono::duration<double, ratio\<60> > (operator "" min)( long double Val)|Specifies minutes as a floating-point value.|  
+|chrono::duration\<double, ratio\<60> > (operator "" min)( long double Val)|Specifies minutes as a floating-point value.|  
 |chrono::seconds operator "" s(unsigned long long Val)|Specifies minutes as an integral value.|  
 |chrono::duration\<double> operator "" s(long double Val)|Specifies seconds as a floating-point value.|  
 |chrono::milliseconds operator "" ms(unsigned long long Val)|Specifies milliseconds as an integral value.|  
