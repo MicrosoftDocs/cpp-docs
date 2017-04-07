@@ -103,7 +103,7 @@ class RuntimeClass<RuntimeClassFlags<classFlags>, I0, I1, I2, I3, I4, I5, I6, I7
  The ninth interface ID. (Optional)  
   
  `classFlags`  
- A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.  The   `__WRL_CONFIGURATION_LEGACY__` macro can be defined to change the default value of classFlags for all runtime classes in the project. If defined, RuntimeClass instances are non-agile dy default. When not defined, RuntimeClass instances are agile by default.
+ A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.  The   `__WRL_CONFIGURATION_LEGACY__` macro can be defined to change the default value of classFlags for all runtime classes in the project. If defined, RuntimeClass instances are non-agile dy default. When not defined, RuntimeClass instances are agile by default. To avoid ambiguity always specify the RuntimeClassType::FtmBase or RuntimeClassType::InhibitFtmBase.
   
 ## Members  
   
