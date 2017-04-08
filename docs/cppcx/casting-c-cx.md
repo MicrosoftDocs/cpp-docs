@@ -28,14 +28,13 @@ Four different cast operators apply to [!INCLUDE[wrt](../cppcx/includes/wrt-md.m
   
  Use `static_cast` if the code explicitly declares a relationship between the two types, and you therefore are sure that the cast should work.  
   
-```  
-interface class A{};  
+```
+    interface class A{};  
     public ref class Class1 sealed : A { };  
 ...  
-A^ obj = ref new Class1(); // Class1 is an A  
-// You know obj is a Class1. The compiler verifies that this is possible, and in C++/CX a run-time check is also performed.  
-Class1^ c = static_cast<Class1^>(obj);  
-  
+    A^ obj = ref new Class1(); // Class1 is an A  
+    // You know obj is a Class1. The compiler verifies that this is possible, and in C++/CX a run-time check is also performed.  
+    Class1^ c = static_cast<Class1^>(obj);
 ```  
   
 ## safe_cast  
@@ -44,26 +43,22 @@ Class1^ c = static_cast<Class1^>(obj);
  Use safe_cast if the code does not declare the relationship but you are sure that the cast should work.  
   
 ```  
-  
     // A and B are not related  
     interface class A{};  
     interface class B{};  
     public ref class Class1 sealed : A, B { };  
 ...  
-A^ obj = ref new Class1();  
+    A^ obj = ref new Class1();  
   
-// You know that obj’s backing type implements A and B, but  
-// the compiler can’t tell this by comparing A and B. The run-time type check succeeds.  
-B^ obj2 = safe_cast<B^>(obj);  
-  
+    // You know that obj’s backing type implements A and B, but  
+    // the compiler can’t tell this by comparing A and B. The run-time type check succeeds.  
+    B^ obj2 = safe_cast<B^>(obj);  
 ```  
   
 ## dynamic_cast  
  Use `dynamic_cast` when you cast an object (more specifically, a hat `^`) to a more derived type, you expect either that the target object might sometimes be `nullptr` or that the cast might fail, and you want to handle that condition as a regular code path instead of an exception. For example, in the **Windows Store Blank App** project template, the `OnLaunched` method in `app.xamp.cpp` uses `dynamic_cast` to test whether the app window has content. It's not an error if it doesn’t have content; it is an expected condition. `Windows::Current::Content` is a `Windows::UI::XAML::UIElement` and the conversion is to a `Windows::UI.XAML::Controls::Frame`, which is a more derived type in the inheritance hierarchy.  
-  
-```  
-  
-      void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ args)  
+```
+void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ args)  
 {  
     auto rootFrame = dynamic_cast<Frame^>(Window::Current->Content);  
   
@@ -76,7 +71,6 @@ B^ obj2 = safe_cast<B^>(obj);
         rootFrame = ref new Frame();  
 ...  
 ```  
-  
  Another use of `dynamic_cast` is to probe an `Object^` to determine whether it contains a boxed value type. In this case, you attempt a `dynamic_cast<Platform::Box>` or a `dynamic_cast<Platform::IBox>`.  
   
  **dynamic_cast and tracking references (%)**  
@@ -87,13 +81,11 @@ B^ obj2 = safe_cast<B^>(obj);
  We recommend that you not use [reinterpret_cast](../cpp/reinterpret-cast-operator.md) because neither a compile-time check nor a run-time check is performed. In the worst case, a `reinterpret_cast` makes it possible for programming errors to go undetected at development time and cause subtle or catastrophic errors in your program’s behavior. Therefore, we recommend that you use `reinterpret_cast` only in those rare cases when you must cast between unrelated types and you know that the cast will succeed. An example of a rare use is to convert a [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] type to its underlying ABI type—this means that you are taking control of the reference counting for the object. To do this, we recommend that you use the [ComPtr Class](../cpp/com-ptr-t-class.md) smart pointer. Otherwise, you must specifically call Release on the interface. The following example shows how a ref class can be cast to an `IInspectable*`.  
   
 ```  
-  
 #include <wrl.h>  
 using namespace Microsoft::WRL;  
 auto winRtObject = ref new SomeWinRTType();  
-ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(obj2);  
-...  
-  
+ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);  
+...
 ```  
   
  If you use `reinterpret_cast` to convert from one [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-[!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] interface.  
