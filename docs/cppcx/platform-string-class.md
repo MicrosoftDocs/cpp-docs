@@ -301,7 +301,7 @@ int len = str->Length(); //len = 5
 
 
 ## <a name="operator-plus"></a>  String::operator+ Operator
-Indicates whether two specifed [String](../cppcx/platform-string-class.md) objects have the same value.  
+Concatenates two [String](../cppcx/platform-string-class.md) objects into a new [String](../cppcx/platform-string-class.md) object.
   
 ### Syntax  
   
