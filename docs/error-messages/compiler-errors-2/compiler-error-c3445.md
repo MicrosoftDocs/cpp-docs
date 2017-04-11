@@ -55,10 +55,8 @@ struct A
 
 int main()
 {
-    A a1 = { 1 };        // error C3445: copy-list-initialization of 'A' 
-                         //              cannot use an explicit constructor
-    const A& a2 = { 1 }; // error C2440: 'initializing': cannot convert 
-                         //              from 'int' to 'const A &'
+    A a1 = { 1 };     // error C3445: copy-list-initialization of 
+                      //     'A' cannot use an explicit constructor
 }
 ```  
   
@@ -75,7 +73,6 @@ struct A
 int main()
 {
     A a1{ 1 };
-    const A& a2{ 1 };
 }  
 ```  
   
