@@ -83,7 +83,7 @@ void type(file_type ftype) noexcept
   
 ## permissions  
   
-``cpp  
+```cpp  
 perms permissions() const noexcept  
 void permissions(perms mask) noexcept   
 ```  
