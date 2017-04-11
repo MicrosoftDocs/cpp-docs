@@ -1,5 +1,5 @@
 ---
-title: "General Language Changes (C++-CLI) | Microsoft Docs"
+title: "General Language Changes (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

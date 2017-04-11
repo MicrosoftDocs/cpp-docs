@@ -1,5 +1,5 @@
 ---
-title: "Data Access Using ADO.NET (C++-CLI) | Microsoft Docs"
+title: "Data Access Using ADO.NET (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
