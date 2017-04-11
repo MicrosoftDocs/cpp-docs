@@ -1,5 +1,5 @@
 ---
-title: "How to: Read Data from the Windows Registry (C++-CLI) | Microsoft Docs"
+title: "How to: Read Data from the Windows Registry (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

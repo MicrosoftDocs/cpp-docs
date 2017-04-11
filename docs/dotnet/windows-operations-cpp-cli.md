@@ -1,5 +1,5 @@
 ---
-title: "Windows Operations (C++-CLI) | Microsoft Docs"
+title: "Windows Operations (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

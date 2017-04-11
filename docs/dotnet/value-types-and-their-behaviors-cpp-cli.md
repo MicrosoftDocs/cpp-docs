@@ -1,5 +1,5 @@
 ---
-title: "Value Types and Their Behaviors (C++-CLI) | Microsoft Docs"
+title: "Value Types and Their Behaviors (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
