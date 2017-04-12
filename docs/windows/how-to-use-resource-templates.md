@@ -83,7 +83,7 @@ A resource template is a customized resource that you have saved as an .rct file
   
      The resource editor automatically provides a unique resource ID. You can revise the [resource properties](../windows/changing-the-properties-of-a-resource.md) as needed.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/articles/framework/resources/index) in the *.NET Framework Developer's Guide.*  
   
  Requirements  
   

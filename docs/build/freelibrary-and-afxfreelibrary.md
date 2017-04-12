@@ -45,7 +45,7 @@ translation.priority.mt:
 # FreeLibrary and AfxFreeLibrary
 Processes that explicitly link to a DLL call the [FreeLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259188) function when the DLL module is no longer needed. This function decrements the module's reference count and, if the reference count is zero, unmaps it from the address space of the process.  
   
- In an MFC application, use [AfxFreeLibrary](http://msdn.microsoft.com/Library/0e06e292-710b-402f-9692-2cdcbab306f9) instead of `FreeLibrary` to unload an extension DLL. The interface (function prototype) for `AfxFreeLibrary` is the same as `FreeLibrary`.  
+ In an MFC application, use [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) instead of `FreeLibrary` to unload an extension DLL. The interface (function prototype) for `AfxFreeLibrary` is the same as `FreeLibrary`.  
   
 ## What do you want to do?  
   
@@ -62,4 +62,4 @@ Processes that explicitly link to a DLL call the [FreeLibrary](http://go.microso
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)   
  [FreeLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259188)   
- [AfxFreeLibrary](http://msdn.microsoft.com/Library/0e06e292-710b-402f-9692-2cdcbab306f9)
+ [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

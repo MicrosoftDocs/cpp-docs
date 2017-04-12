@@ -44,7 +44,7 @@ translation.priority.mt:
   
 3.  Add additional menu commands to the submenu menu.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/articles/framework/resources/index) in the *.NET Framework Developer's Guide.*  
   
  **Requirements**  
   

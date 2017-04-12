@@ -73,7 +73,7 @@ class CDumpContext
 ## Remarks  
  `CDumpContext` does not have a base class.  
   
- You can use [afxDump](http://msdn.microsoft.com/library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11), a predeclared `CDumpContext` object, for most of your dumping. The `afxDump` object is available only in the Debug version of the Microsoft Foundation Class Library.  
+ You can use [afxDump](diagnostic-services.md#afxdump), a predeclared `CDumpContext` object, for most of your dumping. The `afxDump` object is available only in the Debug version of the Microsoft Foundation Class Library.  
   
  Several of the memory [diagnostic services](../../mfc/reference/diagnostic-services.md) use `afxDump` for their output.  
   

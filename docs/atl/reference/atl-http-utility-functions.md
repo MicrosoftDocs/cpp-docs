@@ -96,7 +96,7 @@ inline BOOL AtlCombineUrl(
  Pointer to a variable that contains the length in characters of `szBuffer`. If the function succeeds, the variable receives the number of characters written to the buffer not including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
   
  `dwFlags`  
- Flags controlling the behavior of this function. See [ATL_URL Flags](http://msdn.microsoft.com/library/76e8cc5c-4e17-4eb1-ac29-a94d5256c4a7).  
+ Flags controlling the behavior of this function. See [AtlCanonicalizeUrl](#atlcanonicalizeurl).  
   
 ### Return Value  
  Returns **TRUE** on success, **FALSE** on failure.  

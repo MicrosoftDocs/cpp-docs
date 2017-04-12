@@ -39,7 +39,7 @@ translation.priority.mt:
 > [!WARNING]
 >  This section applies to Windows desktop applications written in C++. For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
 >   
->  For information on adding resources to C++/CLI  projects, please see [Resources in Desktop Apps](http://msdn.microsoft.com/Library/8ad495d4-2941-40cf-bf64-e82e85825890) in the *.NET Framework Developer's Guide.*  
+>  For information on adding resources to C++/CLI  projects, please see [Resources in Desktop Apps](/dotnet/articles/framework/resources/index) in the *.NET Framework Developer's Guide.*  
   
  Resources can be composed of a wide range of elements, including interface elements that provide information to the user (for example a bitmap, icon, or cursor); custom resources that contain data an application needs; version resources that are used by setup APIs; and menu and dialog box resources.  
   

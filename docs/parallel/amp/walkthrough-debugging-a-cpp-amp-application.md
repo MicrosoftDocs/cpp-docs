@@ -352,7 +352,7 @@ Show Flagged Only button
      Now the GPU Threads, Parallel Watch, and Parallel Stacks windows display only the flagged threads.  
   
 ## Freezing and Thawing GPU Threads  
- You can freeze (suspend) and thaw (resume) GPU threads from either the GPU Threads window or the Parallel Watch window. You can freeze and thaw CPU threads the same way; for information, see [How to: Use the Threads Window](http://msdn.microsoft.com/library/adfbe002-3d7b-42a9-b42a-5ac0903dfc25).  
+ You can freeze (suspend) and thaw (resume) GPU threads from either the GPU Threads window or the Parallel Watch window. You can freeze and thaw CPU threads the same way; for information, see [How to: Use the Threads Window](/visualstudio/debugger/how-to-use-the-threads-window).  
   
 ### To freeze and thaw GPU threads  
   
@@ -403,7 +403,7 @@ Grouped threads in the GPU Threads window
 ## See Also  
  [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md)   
  [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)   
- [How to: Use the GPU Threads Window](http://msdn.microsoft.com/library/c647c502-a9f0-48e0-a430-976744a5fa51)   
- [How to: Use the Parallel Watch Window](http://msdn.microsoft.com/library/28004d9b-420c-48f7-b80e-ab1519802558)   
+ [How to: Use the GPU Threads Window](/visualstudio/debugger/how-to-use-the-gpu-threads-window)   
+ [How to: Use the Parallel Watch Window](/visualstudio/debugger/how-to-use-the-parallel-watch-window)   
  [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/linkid=253987&clcid=0x409)
 
