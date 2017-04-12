@@ -213,6 +213,8 @@ The articles in this part of the documentation contain information about a subse
   
  [Compiler Error C3417](../../error-messages/compiler-errors-2/compiler-error-c3417.md)  
   
+ [Compiler Error C3445](../../error-messages/compiler-errors-2/compiler-error-c3445.md)  
+  
  [Compiler Error C3450](../../error-messages/compiler-errors-2/compiler-error-c3450.md)  
   
  [Compiler Error C3451](../../error-messages/compiler-errors-2/compiler-error-c3451.md)  
