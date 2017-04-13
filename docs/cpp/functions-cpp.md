@@ -107,7 +107,7 @@ int main()
   
      For more information, see [Inline Functions](../cpp/inline-functions-cpp.md).  
   
-4.  `noexcept`, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to `true`.  
+4.  A `noexcept` expression, which specifies whether or not the function can throw an exception. In the following example, the function does not throw an exception if the `is_pod` expression evaluates to `true`.  
   
     ```  
     #include <type_traits>  
