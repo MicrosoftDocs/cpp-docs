@@ -146,7 +146,7 @@ basic_ostream<Elem, _Tr>& operator<<(
   
  The template function  
   
-``cpp
+```cpp
 template <class _Elem, class _Tr>
 basic_ostream<Elem, _Tr>& operator<<(
     basic_ostream<Elem, _Tr>& _Ostr,
