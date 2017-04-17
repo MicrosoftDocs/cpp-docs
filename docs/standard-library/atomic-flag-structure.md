@@ -47,18 +47,18 @@ struct atomic_flag;
   
 |Name|Description|  
 |----------|-----------------|  
-|[atomic_flag::clear Method](#atomic_flag__clear_method)|Sets the stored flag to `false`.|  
-|[atomic_flag::test_and_set Method](#atomic_flag__test_and_set_method)|Sets the stored flag to `true` and returns the initial flag value.|  
+|[clear](#atomic_flag__clear)|Sets the stored flag to `false`.|  
+|[test_and_set](#atomic_flag__test_and_set)|Sets the stored flag to `true` and returns the initial flag value.|  
   
 ## Remarks  
- `atomic_flag` objects can be passed to the non-member functions [atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear_function), [atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit_function), [atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set_function), and [atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit_function). They can be initialized by using the value `ATOMIC_FLAG_INIT`.  
+ `atomic_flag` objects can be passed to the non-member functions [atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear), [atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit), [atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set), and [atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit). They can be initialized by using the value `ATOMIC_FLAG_INIT`.  
   
 ## Requirements  
  **Header:** atomic  
   
  **Namespace:** std  
   
-##  <a name="atomic_flag__clear_method"></a>  atomic_flag::clear Method  
+##  <a name="atomic_flag__clear"></a>  atomic_flag::clear
  Sets the `bool` flag that is stored in `*this` to `false`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.  
   
 ```
@@ -70,7 +70,7 @@ void atomic_flag::clear(memory_order Order = memory_order_seq_cst) noexcept;
  `Order`  
  A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
-##  <a name="atomic_flag__test_and_set_method"></a>  atomic_flag::test_and_set Method  
+##  <a name="atomic_flag__test_and_set"></a>  atomic_flag::test_and_set
  Sets the `bool` flag that is stored in `*this` to `true`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.  
   
 ```

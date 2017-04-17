@@ -57,12 +57,12 @@ manager: "ghogen"
 # &lt;functional&gt; functions
 ||||  
 |-|-|-|  
-|[bind](#bind_function)|[bind1st](#bind1st_function)|[bind2nd](#bind2nd_function)|  
-|[bit_and](#bit_and_function)|[bit_not](#bit_not_function)|[bit_or](#bit_or_function)|  
-|[bit_xor](#bit_xor_function)|[cref](#cref_function)|[mem_fn](#mem_fn_function)|  
-|[mem_fun](#mem_fun_function)|[mem_fun_ref](#mem_fun_ref_function)|[not1](#not1_function)|  
-|[not2](#not2_function)|[ptr_fun](#ptr_fun_function)|[ref](#ref_function)|  
-|[swap](#swap_function)|  
+|[bind](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|  
+|[bit_and](#bit_and)|[bit_not](#bit_not)|[bit_or](#bit_or)|  
+|[bit_xor](#bit_xor)|[cref](#cref)|[mem_fn](#mem_fn)|  
+|[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[not1](#not1)|  
+|[not2](#not2)|[ptr_fun](#ptr_fun)|[ref](#ref)|  
+|[swap](#swap)|  
   
 ##  <a name="bind_function"></a>  bind  
  Binds arguments to a callable object.  

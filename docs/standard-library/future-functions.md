@@ -13,8 +13,8 @@ manager: "ghogen"
 # &lt;future&gt; functions
 ||||  
 |-|-|-|  
-|[async](#async_function)|[future_category](#future_category_function)|[make_error_code](#make_error_code_function)|  
-|[make_error_condition](#make_error_condition_function)|[swap](#swap_function)|  
+|[async](#async)|[future_category](#future_category)|[make_error_code](#make_error_code)|  
+|[make_error_condition](#make_error_condition)|[swap](#swap)|  
   
 ##  <a name="async_function"></a>  async  
  Represents an *asynchronous provider*.  
@@ -31,7 +31,7 @@ future<typename result_of<Fn(ArgTypes...)>::type>
   
 ### Parameters  
  `policy`  
- A [launch](../standard-library/future-enums.md#launch_enumeration) value.  
+ A [launch](../standard-library/future-enums.md#launch) value.  
   
 ### Remarks  
  Definitions of abbreviations:  
@@ -77,7 +77,7 @@ inline error_code make_error_code(future_errc Errno) noexcept;
   
 ### Parameters  
  `Errno`  
- A [future_errc](../standard-library/future-enums.md#future_errc_enumeration) value that identifies the reported error.  
+ A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.  
   
 ### Return Value  
  `error_code(static_cast<int>(Errno), future_category());`  
@@ -91,7 +91,7 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
   
 ### Parameters  
  `Errno`  
- A [future_errc](../standard-library/future-enums.md#future_errc_enumeration) value that identifies the reported error.  
+ A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.  
   
 ### Return Value  
  `error_condition(static_cast<int>(Errno), future_category());`  

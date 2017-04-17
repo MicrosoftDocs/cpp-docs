@@ -147,20 +147,20 @@ shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared
   
 |||  
 |-|-|  
-|[shared_ptr::shared_ptr](#shared_ptr__shared_ptr)|Constructs a `shared_ptr`.|  
+|[shared_ptr](#shared_ptr__shared_ptr)|Constructs a `shared_ptr`.|  
 |[shared_ptr::~shared_ptr](#shared_ptr___dtorshared_ptr)|Destroys a `shared_ptr`.|  
   
 ### Methods  
   
 |||  
 |-|-|  
-|[shared_ptr::element_type](#shared_ptr__element_type)|The type of an element.|  
-|[shared_ptr::get](#shared_ptr__get)|Gets address of owned resource.|  
-|[shared_ptr::owner_before](#shared_ptr__owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|  
-|[shared_ptr::reset](#shared_ptr__reset)|Replace owned resource.|  
-|[shared_ptr::swap](#shared_ptr__swap)|Swaps two `shared_ptr` objects.|  
-|[shared_ptr::unique](#shared_ptr__unique)|Tests if owned resource is unique.|  
-|[shared_ptr::use_count](#shared_ptr__use_count)|Counts numbers of resource owners.|  
+|[element_type](#shared_ptr__element_type)|The type of an element.|  
+|[get](#shared_ptr__get)|Gets address of owned resource.|  
+|[owner_before](#shared_ptr__owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|  
+|[reset](#shared_ptr__reset)|Replace owned resource.|  
+|[swap](#shared_ptr__swap)|Swaps two `shared_ptr` objects.|  
+|[unique](#shared_ptr__unique)|Tests if owned resource is unique.|  
+|[use_count](#shared_ptr__use_count)|Counts numbers of resource owners.|  
   
 ### Operators  
   

@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # try_to_lock_t Structure
-Represents a `struct` that defines a [try_to_lock](../standard-library/mutex-functions.md#try_to_lock_variable) object. Used to select one of the overloaded constructors of [unique_lock](../standard-library/unique-lock-class.md).  
+Represents a `struct` that defines a [try_to_lock](../standard-library/mutex-functions.md#try_to_lock) object. Used to select one of the overloaded constructors of [unique_lock](../standard-library/unique-lock-class.md).  
   
 ## Syntax  
   

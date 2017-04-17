@@ -88,5 +88,5 @@ int main()
  **Namespace:** std  
   
 ## See Also  
- [bind Function](../standard-library/functional-functions.md#bind_function)
+ [bind](../standard-library/functional-functions.md#bind)
 

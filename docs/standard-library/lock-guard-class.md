@@ -58,7 +58,7 @@ class lock_guard;
   
 |Name|Description|  
 |----------|-----------------|  
-|[lock_guard::lock_guard Constructor](#lock_guard__lock_guard_constructor)|Constructs a `lock_guard` object.|  
+|[lock_guard](#lock_guard__lock_guard)|Constructs a `lock_guard` object.|  
 |[lock_guard::~lock_guard Destructor](#lock_guard___dtorlock_guard_destructor)|Unlocks the `mutex` that was passed to the constructor.|  
   
 ## Requirements  
@@ -66,7 +66,7 @@ class lock_guard;
   
  **Namespace:** std  
   
-##  <a name="lock_guard__lock_guard_constructor"></a>  lock_guard::lock_guard Constructor  
+##  <a name="lock_guard__lock_guard"></a>  lock_guard::lock_guard Constructor  
  Constructs a `lock_guard` object.  
   
 ```cpp  

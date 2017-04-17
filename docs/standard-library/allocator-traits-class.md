@@ -74,19 +74,19 @@ class allocator_traits;
   
 |Name|Description|  
 |----------|-----------------|  
-|[allocator_traits::allocate Method](#allocator_traits__allocate_method)|Static method that allocates memory by using the given allocator parameter.|  
-|[allocator_traits::construct Method](#allocator_traits__construct_method)|Static method that uses a specified allocator to construct an object.|  
-|[allocator_traits::deallocate Method](#allocator_traits__deallocate_method)|Static method that uses a specified allocator to deallocate a specified number of objects.|  
-|[allocator_traits::destroy Method](#allocator_traits__destroy_method)|Static method that uses a specified allocator to call the destructor on an object without deallocating its memory.|  
-|[allocator_traits::max_size Method](#allocator_traits__max_size_method)|Static method that uses a specified allocator to determine the maximum number of objects that can be allocated.|  
-|[allocator_traits::select_on_container_copy_construction Method](#allocator_traits__select_on_container_copy_construction_method)|Static method that calls `select_on_container_copy_construction` on the specified allocator.|  
+|[allocate](#allocator_traits__allocate)|Static method that allocates memory by using the given allocator parameter.|  
+|[construct](#allocator_traits__construct)|Static method that uses a specified allocator to construct an object.|  
+|[deallocate](#allocator_traits__deallocate)|Static method that uses a specified allocator to deallocate a specified number of objects.|  
+|[destroy](#allocator_traits__destroy)|Static method that uses a specified allocator to call the destructor on an object without deallocating its memory.|  
+|[max_size](#allocator_traits__max_size)|Static method that uses a specified allocator to determine the maximum number of objects that can be allocated.|  
+|[select_on_container_copy_construction](#allocator_traits__select_on_container_copy_construction)|Static method that calls `select_on_container_copy_construction` on the specified allocator.|  
   
 ## Requirements  
  **Header:** \<memory>  
   
  **Namespace:** std  
   
-##  <a name="allocator_traits__allocate_method"></a>  allocator_traits::allocate Method  
+##  <a name="allocator_traits__allocate"></a>  allocator_traits::allocate
  Static method that allocates memory by using the given allocator parameter.  
   
 ```cpp  
@@ -113,7 +113,7 @@ static pointer allocate(Alloc& al, size_type count,
   
  The second method returns `al.allocate(count, hint)`, if that expression is well formed; otherwise it returns `al.allocate(count)`.  
   
-##  <a name="allocator_traits__construct_method"></a>  allocator_traits::construct Method  
+##  <a name="allocator_traits__construct"></a>  allocator_traits::construct
  Static method that uses a specified allocator to construct an object.  
   
 ```cpp  
@@ -134,7 +134,7 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 ### Remarks  
  The static member function calls `al.construct(ptr, args...)`, if that expression is well formed; otherwise it evaluates `::new (static_cast<void *>(ptr)) Uty(std::forward<Types>(args)...)`.  
   
-##  <a name="allocator_traits__deallocate_method"></a>  allocator_traits::deallocate Method  
+##  <a name="allocator_traits__deallocate"></a>  allocator_traits::deallocate
  Static method that uses a specified allocator to deallocate a specified number of objects.  
   
 ```cpp  
@@ -158,7 +158,7 @@ static void deallocate(Alloc al,
   
  This method throws nothing.  
   
-##  <a name="allocator_traits__destroy_method"></a>  allocator_traits::destroy Method  
+##  <a name="allocator_traits__destroy"></a>  allocator_traits::destroy
  Static method that uses a specified allocator to call the destructor on an object without deallocating its memory.  
   
 ```cpp  
@@ -176,7 +176,7 @@ static void destroy(Alloc& al, Uty* ptr);
 ### Remarks  
  This method calls `al.destroy(ptr)`, if that expression is well formed; otherwise it evaluates `ptr->~Uty()`.  
   
-##  <a name="allocator_traits__max_size_method"></a>  allocator_traits::max_size Method  
+##  <a name="allocator_traits__max_size"></a>  allocator_traits::max_size
  Static method that uses a specified allocator to determine the maximum number of objects that can be allocated.  
   
 ```cpp  
@@ -190,7 +190,7 @@ static size_type max_size(const Alloc& al);
 ### Remarks  
  This method returns `al.max_size()`, if that expression is well formed; otherwise it returns `numeric_limits<size_type>::max()`.  
   
-##  <a name="allocator_traits__select_on_container_copy_construction_method"></a>  allocator_traits::select_on_container_copy_construction Method  
+##  <a name="allocator_traits__select_on_container_copy_construction"></a>  allocator_traits::select_on_container_copy_construction
  Static method that calls `select_on_container_copy_construction` on the specified allocator.  
   
 ```cpp  

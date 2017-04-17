@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # once_flag Structure
-Represents a `struct` that is used with the template function [call_once](../standard-library/mutex-functions.md#call_once_function) to ensure that initialization code is called only once, even in the presence of multiple threads of execution.  
+Represents a `struct` that is used with the template function [call_once](../standard-library/mutex-functions.md#call_once) to ensure that initialization code is called only once, even in the presence of multiple threads of execution.  
   
 ## Syntax  
   

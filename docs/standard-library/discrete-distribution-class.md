@@ -105,8 +105,8 @@ public:
   
 |||  
 |-|-|  
-|[discrete_distribution::discrete_distribution](#discrete_distribution__discrete_distribution)|`discrete_distribution::param`|  
-|`discrete_distribution::operator()`|[discrete_distribution::param_type](#discrete_distribution__param_type)|  
+|[discrete_distribution](#discrete_distribution__discrete_distribution)|`discrete_distribution::param`|  
+|`discrete_distribution::operator()`|[param_type](#discrete_distribution__param_type)|  
   
  The property function `vector<double> probabilities()` returns the individual probabilities for each integer generated.  
   

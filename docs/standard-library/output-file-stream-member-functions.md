@@ -76,7 +76,7 @@ ofile.open("FILE1",
 // FILE2 closed  // When ofile goes out of scope it is destroyed.  
 ```  
   
-## The put Function  
+## The put
  The **put** function writes one character to the output stream. The following two statements are the same by default, but the second is affected by the stream's format arguments:  
   
 ```  
@@ -86,7 +86,7 @@ cout.put('A');
 cout <<'A'; // Format arguments 'width' and 'fill' apply   
 ```  
   
-## The write Function  
+## The write
  The **write** function writes a block of memory to an output file stream. The length argument specifies the number of bytes written. This example creates an output file stream and writes the binary value of the `Date` structure to it:  
   
 ```  

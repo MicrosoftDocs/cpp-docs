@@ -13,10 +13,10 @@ manager: "ghogen"
 # &lt;chrono&gt; functions
 ||||  
 |-|-|-|  
-|[duration_cast Function](#duration_cast_function)|[time_point_cast Function](#time_point_cast_function)|  
+|[duration_cast](#duration_cast)|[time_point_cast](#time_point_cast)|  
   
 
-##  <a name="duration_cast_function"></a>  duration_cast Function  
+##  <a name="duration_cast_function"></a>  duration_cast
  Casts a `duration` object to a specified type.  
   
 ```  
@@ -30,7 +30,7 @@ constexpr To duration_cast(const duration<Rep, Period>& Dur);
 ### Remarks  
  If `To` is an instantiation of `duration`, this function does not participate in overload resolution.  
   
-##  <a name="time_point_cast_function"></a>  time_point_cast Function  
+##  <a name="time_point_cast_function"></a>  time_point_cast
  Casts a [time_point](../standard-library/time-point-class.md) object to a specified type.  
   
 ```  

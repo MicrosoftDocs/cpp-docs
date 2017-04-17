@@ -124,14 +124,14 @@ class hash_set
 |||  
 |-|-|  
 |[begin](#hash_set__begin)|Returns an iterator that addresses the first element in the `hash_set`.|  
-|[hash_set::cbegin](#hash_set__cbegin)|Returns a const iterator addressing the first element in the `hash_set`.|  
-|[hash_set::cend](#hash_set__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_set`.|  
+|[cbegin](#hash_set__cbegin)|Returns a const iterator addressing the first element in the `hash_set`.|  
+|[cend](#hash_set__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_set`.|  
 |[clear](#hash_set__clear)|Erases all the elements of a `hash_set`.|  
 |[count](#hash_set__count)|Returns the number of elements in a `hash_set` whose key matches a parameter-specified key.|  
-|[hash_set::crbegin](#hash_set__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_set`.|  
-|[hash_set::crend](#hash_set__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_set`.|  
-|[hash_set::emplace](#hash_set__emplace)|Inserts an element constructed in place into a `hash_set`.|  
-|[hash_set::emplace_hint](#hash_set__emplace_hint)|Inserts an element constructed in place into a `hash_set`, with a placement hint.|  
+|[crbegin](#hash_set__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_set`.|  
+|[crend](#hash_set__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_set`.|  
+|[emplace](#hash_set__emplace)|Inserts an element constructed in place into a `hash_set`.|  
+|[emplace_hint](#hash_set__emplace_hint)|Inserts an element constructed in place into a `hash_set`, with a placement hint.|  
 |[empty](#hash_set__empty)|Tests if a `hash_set` is empty.|  
 |[end](#hash_set__end)|Returns an iterator that addresses the location succeeding the last element in a `hash_set`.|  
 |[equal_range](#hash_set__equal_range)|Returns a pair of iterators respectively to the first element in a `hash_set` with a key that is greater than a specified key and to the first element in the `hash_set` with a key that is equal to or greater than the key.|  

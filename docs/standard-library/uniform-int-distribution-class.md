@@ -102,8 +102,8 @@ The template class describes an inclusive-inclusive distribution that produces v
   
 ||||  
 |-|-|-|  
-|[uniform_int_distribution::uniform_int_distribution](#uniform_int_distribution__uniform_int_distribution)|`uniform_int_distribution::a`|`uniform_int_distribution::param`|  
-|`uniform_int_distribution::operator()`|`uniform_int_distribution::b`|[uniform_int_distribution::param_type](#uniform_int_distribution__param_type)|  
+|[uniform_int_distribution](#uniform_int_distribution__uniform_int_distribution)|`uniform_int_distribution::a`|`uniform_int_distribution::param`|  
+|`uniform_int_distribution::operator()`|`uniform_int_distribution::b`|[param_type](#uniform_int_distribution__param_type)|  
   
 The property member `a()` returns the currently stored minimum bound of the distribution, while `b()` returns the currently stored maximum bound. For this distribution class, these minimum and maximum values are the same as those returned by the common property functions `min()` and `max()`.  
   

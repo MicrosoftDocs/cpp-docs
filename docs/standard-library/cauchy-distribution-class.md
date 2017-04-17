@@ -106,8 +106,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[cauchy_distribution::cauchy_distribution](#cauchy_distribution__cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|  
-|`cauchy_distribution::operator()`|`cauchy_distribution::b`|[cauchy_distribution::param_type](#cauchy_distribution__param_type)|  
+|[cauchy_distribution](#cauchy_distribution__cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|  
+|`cauchy_distribution::operator()`|`cauchy_distribution::b`|[param_type](#cauchy_distribution__param_type)|  
   
 The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
   

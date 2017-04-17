@@ -105,8 +105,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[gamma_distribution::gamma_distribution](#gamma_distribution__gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|  
-|`gamma_distribution::operator()`|`gamma_distribution::beta`|[gamma_distribution::param_type](#gamma_distribution__param_type)|  
+|[gamma_distribution](#gamma_distribution__gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|  
+|`gamma_distribution::operator()`|`gamma_distribution::beta`|[param_type](#gamma_distribution__param_type)|  
   
 The property functions `alpha()` and `beta()` return their respective values for stored distribution parameters *alpha* and *beta*.  
   

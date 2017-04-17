@@ -101,8 +101,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[geometric_distribution::geometric_distribution](#geometric_distribution__geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|  
-|`geometric_distribution::operator()`||[geometric_distribution::param_type](#geometric_distribution__param_type)|  
+|[geometric_distribution](#geometric_distribution__geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|  
+|`geometric_distribution::operator()`||[param_type](#geometric_distribution__param_type)|  
   
 The property function `p()` returns the value for stored distribution parameter `p`.  
   

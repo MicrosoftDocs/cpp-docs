@@ -101,8 +101,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[weibull_distribution::weibull_distribution](#weibull_distribution__weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|  
-|`weibull_distribution::operator()`|`weibull_distribution::b`|[weibull_distribution::param_type](#weibull_distribution__param_type)|  
+|[weibull_distribution](#weibull_distribution__weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|  
+|`weibull_distribution::operator()`|`weibull_distribution::b`|[param_type](#weibull_distribution__param_type)|  
   
 The property functions `a()` and `b()` return their respective values for stored distribution parameters *a* and *b*.  
   

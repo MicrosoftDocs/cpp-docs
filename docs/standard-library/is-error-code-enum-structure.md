@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # is_error_code_enum Structure
-Specialization that indicates that [future_errc](../standard-library/future-enums.md#future_errc_enumeration) is suitable for storing an [error_code](../standard-library/error-code-class.md).  
+Specialization that indicates that [future_errc](../standard-library/future-enums.md#future_errc) is suitable for storing an [error_code](../standard-library/error-code-class.md).  
   
 ## Syntax  
   

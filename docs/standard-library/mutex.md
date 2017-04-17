@@ -82,8 +82,8 @@ Include the standard header \<mutex> to define the classes `mutex`, `recursive_m
   
 |Name|Description|  
 |----------|-----------------|  
-|[call_once Function](../standard-library/mutex-functions.md#call_once_function)|Provides a mechanism for calling a specified callable object exactly once during execution.|  
-|[lock Function](../standard-library/mutex-functions.md#lock_function)|Attempts to lock all arguments without deadlock.|  
+|[call_once](../standard-library/mutex-functions.md#call_once)|Provides a mechanism for calling a specified callable object exactly once during execution.|  
+|[lock](../standard-library/mutex-functions.md#lock)|Attempts to lock all arguments without deadlock.|  
   
 ### Structs  
   
@@ -98,9 +98,9 @@ Include the standard header \<mutex> to define the classes `mutex`, `recursive_m
   
 |Name|Description|  
 |----------|-----------------|  
-|[adopt_lock Variable](../standard-library/mutex-functions.md#adopt_lock_variable)|Represents an object that can be passed to constructors for `lock_guard` and `unique_lock` to indicate that the mutex object that is also being passed to the constructor is locked.|  
-|[defer_lock Variable](../standard-library/mutex-functions.md#defer_lock_variable)|Represents an object that can be passed to the constructor for `unique_lock`, to indicate that the constructor should not lock the mutex object that is also being passed to it.|  
-|[try_to_lock Variable](../standard-library/mutex-functions.md#try_to_lock_variable)|Represents an object that can be passed to the constructor for `unique_lock` to indicate that the constructor should try to unlock the `mutex` that is also being passed to it without blocking.|  
+|[adopt_lock](../standard-library/mutex-functions.md#adopt_lock)|Represents an object that can be passed to constructors for `lock_guard` and `unique_lock` to indicate that the mutex object that is also being passed to the constructor is locked.|  
+|[defer_lock](../standard-library/mutex-functions.md#defer_lock)|Represents an object that can be passed to the constructor for `unique_lock`, to indicate that the constructor should not lock the mutex object that is also being passed to it.|  
+|[try_to_lock](../standard-library/mutex-functions.md#try_to_lock)|Represents an object that can be passed to the constructor for `unique_lock` to indicate that the constructor should try to unlock the `mutex` that is also being passed to it without blocking.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

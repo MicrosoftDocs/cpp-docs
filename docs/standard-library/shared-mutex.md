@@ -86,7 +86,7 @@ The <shared_mutex> header provides synchronization primitives for protection of 
   
 |Functions|Description|  
 |---------------|-----------------|  
-|[swap Function](../standard-library/shared-mutex.md#function_swap)|Swaps the content of the shared mutex objects referenced by the function parameters.|  
+|[swap](../standard-library/shared-mutex.md#function_swap)|Swaps the content of the shared mutex objects referenced by the function parameters.|  
   
 ## Syntax  
   
@@ -231,7 +231,7 @@ class shared_lock {
 
 ## Functions  
   
-###  <a name="function_swap"></a> swap Function  
+###  <a name="function_swap"></a> swap
  Swaps the `shared_lock` objects.  
   
 ```cpp  

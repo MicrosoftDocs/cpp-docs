@@ -129,16 +129,16 @@ class hash_map
   
 |||  
 |-|-|  
-|[hash_map::at](#hash_map__at)|Finds an element in a `hash_map` with a specified key value.|  
+|[at](#hash_map__at)|Finds an element in a `hash_map` with a specified key value.|  
 |[begin](#hash_map__begin)|Returns an iterator addressing the first element in the `hash_map`.|  
-|[hash_map::cbegin](#hash_map__cbegin)|Returns a const iterator addressing the first element in the `hash_map`.|  
-|[hash_map::cend](#hash_map__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_map`.|  
+|[cbegin](#hash_map__cbegin)|Returns a const iterator addressing the first element in the `hash_map`.|  
+|[cend](#hash_map__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_map`.|  
 |[clear](#hash_map__clear)|Erases all the elements of a `hash_map`.|  
 |[count](#hash_map__count)|Returns the number of elements in a `hash_map` whose key matches a parameter-specified key.|  
-|[hash_map::crbegin](#hash_map__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_map`.|  
-|[hash_map::crend](#hash_map__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_map`.|  
-|[hash_map::emplace](#hash_map__emplace)|Inserts an element constructed in place into a `hash_map`.|  
-|[hash_map::emplace_hint](#hash_map__emplace_hint)|Inserts an element constructed in place into a `hash_map`, with a placement hint.|  
+|[crbegin](#hash_map__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_map`.|  
+|[crend](#hash_map__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_map`.|  
+|[emplace](#hash_map__emplace)|Inserts an element constructed in place into a `hash_map`.|  
+|[emplace_hint](#hash_map__emplace_hint)|Inserts an element constructed in place into a `hash_map`, with a placement hint.|  
 |[empty](#hash_map__empty)|Tests if a `hash_map` is empty.|  
 |[end](#hash_map__end)|Returns an iterator that addresses the location succeeding the last element in a `hash_map`.|  
 |[equal_range](#hash_map__equal_range)|Returns a pair of iterators, respectively, to the first element in a `hash_map` with a key that is greater than a specified key and to the first element in the `hash_map` with a key that is equal to or greater than the key.|  

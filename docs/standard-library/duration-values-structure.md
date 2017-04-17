@@ -48,16 +48,16 @@ struct duration_values;
   
 |Name|Description|  
 |----------|-----------------|  
-|[duration_values::max](#duration_values__max_method)|Static. Specifies the upper limit for a value of type `Rep`.|  
-|[duration_values::min](#duration_values__min_method)|Static. Specifies the lower limit for a value of type `Rep`.|  
-|[duration_values::zero](#duration_values__zero_method)|Static. Returns `Rep(0)`.|  
+|[max](#duration_values__max)|Static. Specifies the upper limit for a value of type `Rep`.|  
+|[min](#duration_values__min)|Static. Specifies the lower limit for a value of type `Rep`.|  
+|[zero](#duration_values__zero)|Static. Returns `Rep(0)`.|  
   
 ## Requirements  
  **Header:** chrono  
   
  **Namespace:** std::chrono  
   
-##  <a name="duration_values__max_method"></a>  duration_values::max  
+##  <a name="duration_values__max"></a>  duration_values::max  
  Static method that returns the upper bound for values of type `Ref`.  
   
 ```  
@@ -68,9 +68,9 @@ static constexpr Rep max();
  In effect, returns `numeric_limits<Rep>::max()`.  
   
 ### Remarks  
- When `Rep` is a user-defined type, the return value must be greater than [duration_values::zero](#duration_values__zero_method).  
+ When `Rep` is a user-defined type, the return value must be greater than [duration_values::zero](#duration_values__zero).  
   
-##  <a name="duration_values__min_method"></a>  duration_values::min  
+##  <a name="duration_values__min"></a>  duration_values::min  
  Static method that returns the lower bound for values of type `Ref`.  
   
 ```  
@@ -81,9 +81,9 @@ static constexpr Rep min();
  In effect, returns `numeric_limits<Rep>::lowest()`.  
   
 ### Remarks  
- When `Rep` is a user-defined type, the return value must be less than or equal to [duration_values::zero](#duration_values__zero_method).  
+ When `Rep` is a user-defined type, the return value must be less than or equal to [duration_values::zero](#duration_values__zero).  
   
-##  <a name="duration_values__zero_method"></a>  duration_values::zero  
+##  <a name="duration_values__zero"></a>  duration_values::zero  
  Returns `Rep(0)`.  
   
 ```  

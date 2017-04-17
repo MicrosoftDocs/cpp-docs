@@ -20,7 +20,7 @@ The \<array> header includes two non-member functions, `get` and `swap`, that op
   
 |||  
 |-|-|  
-|[get](#get_function)|[swap](#swap_function)|  
+|[get](#get)|[swap](#swap)|  
   
 ##  <a name="get_function"></a>  get  
 Returns a reference to the specified element of the array.  

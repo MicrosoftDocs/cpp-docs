@@ -83,8 +83,8 @@ public:
   
 ||||  
 |-|-|-|  
-|[student_t_distribution::student_t_distribution](#student_t_distribution__student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|  
-|`student_t_distribution::operator()`||[student_t_distribution::param_type](#student_t_distribution__param_type)|  
+|[student_t_distribution](#student_t_distribution__student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|  
+|`student_t_distribution::operator()`||[param_type](#student_t_distribution__param_type)|  
   
  The property function `n()` returns the value for the stored distribution parameter `n`.  
   

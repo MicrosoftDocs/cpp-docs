@@ -11,7 +11,7 @@ ms.topic: "article"
 f1_keywords: 
   - "std.bad_exception"
   - "bad_exception"
-  - "std::bad_exception"
+  - "exception/std::bad_exception"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

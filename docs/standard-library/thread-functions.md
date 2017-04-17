@@ -13,8 +13,8 @@ manager: "ghogen"
 # &lt;thread&gt; functions
 ||||  
 |-|-|-|  
-|[get_id](#get_id_function)|[sleep_for](#sleep_for_function)|[sleep_until](#sleep_until_function)|  
-|[swap](#swap_function)|[yield](#yield_function)|  
+|[get_id](#get_id)|[sleep_for](#sleep_for)|[sleep_until](#sleep_until)|  
+|[swap](#swap)|[yield](#yield)|  
   
 ##  <a name="get_id_function"></a>  get_id  
  Uniquely identifies the current thread of execution.  

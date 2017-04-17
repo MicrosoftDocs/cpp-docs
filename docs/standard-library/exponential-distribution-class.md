@@ -102,8 +102,8 @@ The random number generator engine. For possible types, see [\<random>](../stand
   
 ||||  
 |-|-|-|  
-|[exponential_distribution::exponential_distribution](#exponential_distribution__exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|  
-|`exponential_distribution::operator()`||[exponential_distribution::param_type](#exponential_distribution__param_type)|  
+|[exponential_distribution](#exponential_distribution__exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|  
+|`exponential_distribution::operator()`||[param_type](#exponential_distribution__param_type)|  
   
 The property member function `lambda()` returns the value for the stored distribution parameter `lambda`.  
   

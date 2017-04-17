@@ -103,8 +103,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
   
 ||||  
 |-|-|-|  
-|[fisher_f_distribution::fisher_f_distribution](#fisher_f_distribution__fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|  
-|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[fisher_f_distribution::param_type](#fisher_f_distribution__param_type)|  
+|[fisher_f_distribution](#fisher_f_distribution__fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|  
+|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#fisher_f_distribution__param_type)|  
   
  The property functions `m()` and `n()` return the values for the stored distribution parameters `m` and `n` respectively.  
   
