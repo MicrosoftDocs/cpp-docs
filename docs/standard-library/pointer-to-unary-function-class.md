@@ -9,10 +9,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "xfunctional/std::pointer_to_unary_function"
-  - "pointer_to_unary_function"
-  - "std.pointer_to_unary_function"
-  - "std::pointer_to_unary_function"
+  - "xfunctional/std::pointer_to_unary"
+  - "pointer_to_unary"
+  - "std.pointer_to_unary"
+  - "std::pointer_to_unary"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

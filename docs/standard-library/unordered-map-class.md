@@ -78,8 +78,8 @@ f1_keywords:
   - "unordered_map/std::unordered_map::find"
   - "std::unordered_map::get_allocator"
   - "unordered_map/std::unordered_map::get_allocator"
-  - "std::unordered_map::hash_function"
-  - "unordered_map/std::unordered_map::hash_function"
+  - "std::unordered_map::hash"
+  - "unordered_map/std::unordered_map::hash"
   - "std::unordered_map::insert"
   - "unordered_map/std::unordered_map::insert"
   - "std::unordered_map::key_eq"
@@ -1299,7 +1299,7 @@ int main()
 al == std::allocator() is true  
 ```  
   
-##  <a name="unordered_map__hash_function"></a>  unordered_map::hash_function  
+##  <a name="unordered_map__hash"></a>  unordered_map::hash_function  
  Gets the stored hash function object.  
   
 ```  

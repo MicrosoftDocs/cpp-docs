@@ -9,10 +9,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std::pointer_to_binary_function"
-  - "xfunctional/std::pointer_to_binary_function"
-  - "pointer_to_binary_function"
-  - "std.pointer_to_binary_function"
+  - "std::pointer_to_binary"
+  - "xfunctional/std::pointer_to_binary"
+  - "pointer_to_binary"
+  - "std.pointer_to_binary"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

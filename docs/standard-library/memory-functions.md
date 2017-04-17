@@ -23,8 +23,8 @@ f1_keywords:
   - "memory/std::default_delete"
   - "std::dynamic_pointer_cast"
   - "memory/std::dynamic_pointer_cast"
-  - "std::get_deleter_function"
-  - "memory/std::get_deleter_function"
+  - "std::get_deleter"
+  - "memory/std::get_deleter"
   - "std::get_pointer_safety"
   - "memory/std::get_pointer_safety"
   - "std::get_temporary_buffer"
@@ -326,7 +326,7 @@ int main()
 sp1->val == 3  
 ```  
   
-##  <a name="get_deleter_function"></a>  get_deleter
+##  <a name="get_deleter"></a>  get_deleter
  Get deleter from shared_ptr.  
   
 ```  

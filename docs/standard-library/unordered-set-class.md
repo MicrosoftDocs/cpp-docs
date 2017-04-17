@@ -74,8 +74,8 @@ f1_keywords:
   - "unordered_set/std::unordered_set::find"
   - "std::unordered_set::get_allocator"
   - "unordered_set/std::unordered_set::get_allocator"
-  - "std::unordered_set::hash_function"
-  - "unordered_set/std::unordered_set::hash_function"
+  - "std::unordered_set::hash"
+  - "unordered_set/std::unordered_set::hash"
   - "std::unordered_set::insert"
   - "unordered_set/std::unordered_set::insert"
   - "std::unordered_set::key_eq"
@@ -1283,7 +1283,7 @@ int main()
 al == std::allocator() is true  
 ```  
   
-##  <a name="unordered_set__hash_function"></a>  unordered_set::hash_function  
+##  <a name="unordered_set__hash"></a>  unordered_set::hash_function  
  Gets the stored hash function object.  
   
 ```  

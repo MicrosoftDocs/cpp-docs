@@ -16,7 +16,7 @@ manager: "ghogen"
 |[async](#async)|[future_category](#future_category)|[make_error_code](#make_error_code)|  
 |[make_error_condition](#make_error_condition)|[swap](#swap)|  
   
-##  <a name="async_function"></a>  async  
+##  <a name="async"></a>  async  
  Represents an *asynchronous provider*.  
   
 ```
@@ -61,14 +61,14 @@ future<typename result_of<Fn(ArgTypes...)>::type>
   
  The pseudo-function `INVOKE` is defined in [\<functional>](../standard-library/functional.md).  
   
-##  <a name="future_category_function"></a>  future_category  
+##  <a name="future_category"></a>  future_category  
  Returns a reference to the [error_category](../standard-library/error-category-class.md) object that characterizes errors that are associated with `future` objects.  
   
 ```
 const error_category& future_category() noexcept;
 ```  
   
-##  <a name="make_error_code_function"></a>  make_error_code  
+##  <a name="make_error_code"></a>  make_error_code  
  Creates an [error_code](../standard-library/error-code-class.md) together with the [error_category](../standard-library/error-category-class.md) object that characterizes [future](../standard-library/future-class.md) errors.  
   
 ```
@@ -82,7 +82,7 @@ inline error_code make_error_code(future_errc Errno) noexcept;
 ### Return Value  
  `error_code(static_cast<int>(Errno), future_category());`  
   
-##  <a name="make_error_condition_function"></a>  make_error_condition  
+##  <a name="make_error_condition"></a>  make_error_condition  
  Creates an [error_condition](../standard-library/error-condition-class.md) together with the [error_category](../standard-library/error-category-class.md) object that characterizes [future](../standard-library/future-class.md) errors.  
   
 ```
@@ -96,7 +96,7 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 ### Return Value  
  `error_condition(static_cast<int>(Errno), future_category());`  
   
-##  <a name="swap_function"></a>  swap  
+##  <a name="swap"></a>  swap  
  Exchanges the *associated asynchronous state* of one `promise` object with that of another.  
   
 ```

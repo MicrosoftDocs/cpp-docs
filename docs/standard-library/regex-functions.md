@@ -27,7 +27,7 @@ manager: "ghogen"
 |[regex_match](#regex_match)|[regex_replace](#regex_replace)|[regex_search](#regex_search)|  
 |[swap](#swap)|  
   
-##  <a name="regex_match_function"></a>  regex_match
+##  <a name="regex_match"></a>  regex_match
  Tests whether a regular expression matches the entire target string.  
   
 ```  
@@ -187,7 +187,7 @@ int _tmain(int argc, _TCHAR* argv[])
   
 ```  
   
-##  <a name="regex_replace_function"></a>  regex_replace
+##  <a name="regex_replace"></a>  regex_replace
  Replaces matched regular expressions.  
   
 ```  
@@ -293,7 +293,7 @@ replacement == AdAeAf
 replacement == Adaeaf  
 ```  
   
-##  <a name="regex_search_function"></a>  regex_search
+##  <a name="regex_search"></a>  regex_search
  Searches for a regular expression match.  
   
 ```  
@@ -442,7 +442,7 @@ search(string, "abc") == true
   matched: "abc"  
 ```  
   
-##  <a name="swap_function"></a>  swap
+##  <a name="swap"></a>  swap
  Swaps two basic_regex or match_results objects.  
   
 ```  

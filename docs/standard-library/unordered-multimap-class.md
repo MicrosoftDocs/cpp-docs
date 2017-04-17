@@ -76,8 +76,8 @@ f1_keywords:
   - "unordered_map/std::unordered_multimap::find"
   - "std::unordered_multimap::get_allocator"
   - "unordered_map/std::unordered_multimap::get_allocator"
-  - "std::unordered_multimap::hash_function"
-  - "unordered_map/std::unordered_multimap::hash_function"
+  - "std::unordered_multimap::hash"
+  - "unordered_map/std::unordered_multimap::hash"
   - "std::unordered_multimap::insert"
   - "unordered_map/std::unordered_multimap::insert"
   - "std::unordered_multimap::key_eq"
@@ -1319,7 +1319,7 @@ int main()
 al == std::allocator() is true  
 ```  
   
-##  <a name="unordered_multimap__hash_function"></a>  unordered_multimap::hash_function  
+##  <a name="unordered_multimap__hash"></a>  unordered_multimap::hash_function  
  Gets the stored hash function object.  
   
 ```  

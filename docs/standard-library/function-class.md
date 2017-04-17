@@ -173,7 +173,7 @@ template <class Fx, class Alloc>
 ### Remarks  
  The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object `Ax`.  
   
-##  <a name="function__function"></a>  function::function  
+##  <a name="function_"></a>  function::function  
  Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.  
   
 ```  

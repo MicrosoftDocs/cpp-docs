@@ -26,7 +26,7 @@ manager: "ghogen"
 |[atomic_signal_fence](#atomic_signal_fence)|[atomic_store](#atomic_store)|[atomic_store_explicit](#atomic_store_explicit)|  
 |[atomic_thread_fence](#atomic_thread_fence)|[kill_dependency](#kill_dependency)|  
   
-##  <a name="atomic_compare_exchange_strong_function"></a>  atomic_compare_exchange_strong  
+##  <a name="atomic_compare_exchange_strong"></a>  atomic_compare_exchange_strong  
  Performs an atomic compare and exchange operation.  
   
 ```
@@ -59,7 +59,7 @@ inline bool atomic_compare_exchange_strong(
 ### Remarks  
  This method performs an atomic compare and exchange operation by using implicit `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum) arguments. For more information, see [atomic_compare_exchange_strong_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_strong_explicit).  
   
-##  <a name="atomic_compare_exchange_strong_explicit_function"></a>  atomic_compare_exchange_strong_explicit  
+##  <a name="atomic_compare_exchange_strong_explicit"></a>  atomic_compare_exchange_strong_explicit  
  Performs an *atomic compare and exchange* operation.  
   
 ```
@@ -104,7 +104,7 @@ inline bool atomic_compare_exchange_strong_explicit(
     The the value that is stored in the object that is pointed to by `atom` is replaced with `Val` by using a `read-modify-write` operation and applying the memory order constraints that are specified by `Order1`. If the values are not equal,
     The operation replaces the value that is pointed to by `Exp` with the value that is stored in the object that is pointed to by `Atom` and applies the memory order constraints that are specified by `Order2`.  
   
-##  <a name="atomic_compare_exchange_weak_function"></a>  atomic_compare_exchange_weak  
+##  <a name="atomic_compare_exchange_weak"></a>  atomic_compare_exchange_weak  
  Performs a *weak atomic compare and exchange* operation.  
   
 ```
@@ -137,7 +137,7 @@ inline bool atomic_compare_exchange_strong(
 ### Remarks  
  This method performs a *weak atomic compare and exchange operation* that has implicit `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum) arguments. For more information, see [atomic_compare_exchange_weak_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_explicit).  
   
-##  <a name="atomic_compare_exchange_weak_explicit_function"></a>  atomic_compare_exchange_weak_explicit  
+##  <a name="atomic_compare_exchange_weak_explicit"></a>  atomic_compare_exchange_weak_explicit  
  Performs a *weak atomic compare and exchange* operation.  
   
 ```
@@ -182,7 +182,7 @@ inline bool atomic_compare_exchange_weak_explicit(
   
  A *weak* atomic compare and exchange operation performs an exchange if the compared values are equal. However, if the values are not equal, the operation is not guaranteed to perform an exchange.  
   
-##  <a name="atomic_exchange_function"></a>  atomic_exchange  
+##  <a name="atomic_exchange"></a>  atomic_exchange  
  Uses `Value` to replace the stored value of `Atom`.  
   
 ```
@@ -206,7 +206,7 @@ inline T atomic_exchange(atomic<Ty>* Atom, Ty Value) noexcept;
 ### Remarks  
  The `atomic_exchange` function performs a `read-modify-write` operation to exchange the value that is stored in `Atom` with `Value`, using the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
-##  <a name="atomic_exchange_explicit_function"></a>  atomic_exchange_explicit  
+##  <a name="atomic_exchange_explicit"></a>  atomic_exchange_explicit  
  Replaces the stored value of `Atom` with `Value`.  
   
 ```
@@ -239,7 +239,7 @@ inline Ty atomic_exchange_explicit(
 ### Remarks  
  The `atomic_exchange_explicit` function performs a `read-modify-write` operation to exchange the value that is stored in `Atom` with `Value`, within the memory constraints that are specified by `Order`.  
   
-##  <a name="atomic_fetch_add_function"></a>  atomic_fetch_add  
+##  <a name="atomic_fetch_add"></a>  atomic_fetch_add  
  Adds a value to an existing value that is stored in an `atomic` object.  
   
 ```
@@ -272,7 +272,7 @@ integral atomic_fetch_add(volatile atomic-integral* Atom, integral Value) noexce
 integral atomic_fetch_add(atomic-integral* Atom, integral Value) noexcept;
 ```  
   
-##  <a name="atomic_fetch_add_explicit_function"></a>  atomic_fetch_add_explicit  
+##  <a name="atomic_fetch_add_explicit"></a>  atomic_fetch_add_explicit  
  Adds a value to an existing value that is stored in an `atomic` object.  
   
 ```
@@ -318,7 +318,7 @@ integral atomic_fetch_add_explicit(
     memory_order Order) noexcept;
 ```  
   
-##  <a name="atomic_fetch_and_function"></a>  atomic_fetch_and  
+##  <a name="atomic_fetch_and"></a>  atomic_fetch_and  
  Performs a bitwise `and` on a value and an existing value that is stored in an `atomic` object.  
   
 ```
@@ -341,7 +341,7 @@ inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value) noexcept;
 ### Remarks  
  The `atomic_fetch_and` function performs a `read-modify-write` operation to replace the stored value of `Atom` with a bitwise `and` of `Value` and the current value that is stored in `Atom`, using the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraint.  
   
-##  <a name="atomic_fetch_and_explicit_function"></a>  atomic_fetch_and_explicit  
+##  <a name="atomic_fetch_and_explicit"></a>  atomic_fetch_and_explicit  
  Performs a bitwise `and` of a value and an existing value that is stored in an `atomic` object.  
   
 ```
@@ -374,7 +374,7 @@ inline T atomic_fetch_and_explicit(
 ### Remarks  
  The `atomic_fetch_and_explicit` function performs a `read-modify-write` operation to replace the stored value of `Atom` with a bitwise `and` of `Value` and the current value that is stored in `Atom`, within the memory constraints that are specified by `Order`.  
   
-##  <a name="atomic_fetch_or_function"></a>  atomic_fetch_or  
+##  <a name="atomic_fetch_or"></a>  atomic_fetch_or  
  Performs a bitwise `or` on a value and an existing value that is stored in an `atomic` object.  
   
 ```
@@ -397,7 +397,7 @@ inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value) noexcept;
 ### Remarks  
  The `atomic_fetch_or` function performs a `read-modify-write` operation to replace the stored value of `Atom` with a bitwise `or` of `Value` and the current value that is stored in `Atom`, using the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
-##  <a name="atomic_fetch_or_explicit_function"></a>  atomic_fetch_or_explicit  
+##  <a name="atomic_fetch_or_explicit"></a>  atomic_fetch_or_explicit  
  Performs a bitwise `or` on a value and an existing value that is stored in an `atomic` object.  
   
 ```
@@ -430,7 +430,7 @@ inline T atomic_fetch_or_explicit(
 ### Remarks  
  The `atomic_fetch_or_explicit` function performs a `read-modify-write` operation to replace the stored value of `Atom` with a bitwise `or` of `Value` and the current value that is stored in `Atom`, within the [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints specified by `Order`.  
   
-##  <a name="atomic_fetch_sub_function"></a>  atomic_fetch_sub  
+##  <a name="atomic_fetch_sub"></a>  atomic_fetch_sub  
  Subtracts a value from an existing value that is stored in an `atomic` object.  
   
 ```
@@ -467,7 +467,7 @@ integral atomic_fetch_sub(volatile atomic-integral* Atom, integral Value) noexce
 integral atomic_fetch_sub(atomic-integral* Atom, integral Value) noexcept;
 ```  
   
-##  <a name="atomic_fetch_sub_explicit_function"></a>  atomic_fetch_sub_explicit  
+##  <a name="atomic_fetch_sub_explicit"></a>  atomic_fetch_sub_explicit  
  Subtracts a value from an existing value that is stored in an `atomic` object.  
   
 ```
@@ -512,7 +512,7 @@ integral atomic_fetch_sub_explicit(
     memory_order Order) noexcept;
 ```  
   
-##  <a name="atomic_fetch_xor_function"></a>  atomic_fetch_xor  
+##  <a name="atomic_fetch_xor"></a>  atomic_fetch_xor  
  Performs a bitwise `exclusive or` on a value and an existing value that is stored in an `atomic` object.  
   
 ```
@@ -536,7 +536,7 @@ inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value) noexcept;
 ### Remarks  
  The `atomic_fetch_xor` function performs a `read-modify-write` operation to replace the stored value of `Atom` with a bitwise `exclusive or` of `Value` and the current value that is stored in `Atom`, using the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
-##  <a name="atomic_fetch_xor_explicit_function"></a>  atomic_fetch_xor_explicit  
+##  <a name="atomic_fetch_xor_explicit"></a>  atomic_fetch_xor_explicit  
  Performs a bitwise `exclusive or` on a value and an existing value that is stored in an `atomic` object.  
   
 ```
@@ -569,7 +569,7 @@ inline T atomic_fetch_xor_explicit(
 ### Remarks  
  The `atomic_fetch_xor_explicit` function performs a `read-modify-write` operation to replace the stored value of `Atom` with a bitwise `exclusive or` of `Value` and the current value that is stored in `Atom`, within the [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints that are specified by `Order`.  
   
-##  <a name="atomic_flag_clear_function"></a>  atomic_flag_clear  
+##  <a name="atomic_flag_clear"></a>  atomic_flag_clear  
  Sets the `bool` flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `false`, within the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
 ```
@@ -581,7 +581,7 @@ inline void atomic_flag_clear(atomic_flag* Flag) noexcept;
  `Flag`  
  A pointer to an `atomic_flag` object.  
   
-##  <a name="atomic_flag_clear_explicit_function"></a>  atomic_flag_clear_explicit  
+##  <a name="atomic_flag_clear_explicit"></a>  atomic_flag_clear_explicit  
  Sets the `bool` flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `false`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.  
   
 ```
@@ -596,7 +596,7 @@ inline void atomic_flag_clear_explicit(atomic_flag* Flag, memory_order Order) no
  `Order`  
  A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
-##  <a name="atomic_flag_test_and_set_function"></a>  atomic_flag_test_and_set  
+##  <a name="atomic_flag_test_and_set"></a>  atomic_flag_test_and_set  
  Sets the `bool` flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `true`, within the constraints of the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
 ```
@@ -611,7 +611,7 @@ inline bool atomic_flag_test_and_set(atomic_flag* Flag,) noexcept;
 ### Return Value  
  The initial value of `Flag`.  
   
-##  <a name="atomic_flag_test_and_set_explicit_function"></a>  atomic_flag_test_and_set_explicit  
+##  <a name="atomic_flag_test_and_set_explicit"></a>  atomic_flag_test_and_set_explicit  
  Sets the `bool` flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to `true`, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.  
   
 ```
@@ -629,7 +629,7 @@ inline bool atomic_flag_test_and_set_explicit(atomic_flag* Flag, memory_order Or
 ### Return Value  
  The initial value of `Flag`.  
   
-##  <a name="atomic_init_function"></a>  atomic_init  
+##  <a name="atomic_init"></a>  atomic_init  
  Sets the stored value in an `atomic` object.  
   
 ```
@@ -649,7 +649,7 @@ inline void atomic_init(atomic<Ty>* Atom, Ty Value) noexcept;
 ### Remarks  
  `atomic_init` is not an atomic operation. It is not thread-safe.  
   
-##  <a name="atomic_is_lock_free_function"></a>  atomic_is_lock_free  
+##  <a name="atomic_is_lock_free"></a>  atomic_is_lock_free  
  Specifies whether atomic operations on an `atomic` object are *lock-free*.  
   
 ```
@@ -669,7 +669,7 @@ inline bool atomic_is_lock_free(const atomic<T>* Atom) noexcept;
 ### Remarks  
  An atomic type is lock-free if no atomic operations on that type use locks. If this function returns true, the type is safe to use in signal-handlers.  
   
-##  <a name="atomic_load_function"></a>  atomic_load  
+##  <a name="atomic_load"></a>  atomic_load  
  Retrieves the stored value in an `atomic` object.  
   
 ```
@@ -689,7 +689,7 @@ inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 ### Remarks  
  `atomic_load` implicitly uses the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
-##  <a name="atomic_load_explicit_function"></a>  atomic_load_explicit  
+##  <a name="atomic_load_explicit"></a>  atomic_load_explicit  
  Retrieves the stored value in an `atomic` object, within a specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum).  
   
 ```
@@ -709,7 +709,7 @@ inline Ty atomic_load_explicit(const atomic<Ty>* Atom, memory_order Order) noexc
 ### Return Value  
  The retrieved value that is stored in `Atom`.  
   
-##  <a name="atomic_signal_fence_function"></a>  atomic_signal_fence  
+##  <a name="atomic_signal_fence"></a>  atomic_signal_fence  
  Acts as a *fence*—which is a memory synchronization primitive that enforces ordering between load/store operations—between other fences in a calling thread that have signal handlers that are executed in the same thread.  
   
 ```
@@ -732,7 +732,7 @@ inline void atomic_signal_fence(memory_order Order) noexcept;
 |`memory_order_acq_rel`|The fence is both an acquire fence and a release fence.|  
 |`memory_order_seq_cst`|The fence is both an acquire fence and a release fence, and is sequentially consistent.|  
   
-##  <a name="atomic_store_function"></a>  atomic_store  
+##  <a name="atomic_store"></a>  atomic_store  
  Atomically stores a value in an atomic object.  
   
 ```
@@ -752,7 +752,7 @@ inline Ty atomic_store_explicit(const atomic<Ty>* Atom, T Value) noexcept;
 ### Remarks  
  `atomic_store` stores `Value` in the object that is pointed to by `Atom`, within the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraint.  
   
-##  <a name="atomic_store_explicit_function"></a>  atomic_store_explicit  
+##  <a name="atomic_store_explicit"></a>  atomic_store_explicit  
  Atomically stores a value in an atomic object.  
   
 ```
@@ -782,7 +782,7 @@ inline Ty atomic_store_explicit(
 ### Remarks  
  `atomic_store` stores `Value` in the object that is pointed to by `Atom`, within the `memory_order` that is specified by `Order`.  
   
-##  <a name="atomic_thread_fence_function"></a>  atomic_thread_fence  
+##  <a name="atomic_thread_fence"></a>  atomic_thread_fence  
  Acts as a *fence*—which is a memory synchronization primitive that enforces ordering between load/store operations—without an associated atomic operation.  
   
 ```
@@ -805,7 +805,7 @@ inline void atomic_thread_fence(memory_order Order) noexcept;
 |`memory_order_acq_rel`|The fence is both an acquire fence and a release fence.|  
 |`memory_order_seq_cst`|The fence is both an acquire fence and a release fence, and is sequentially consistent.|  
   
-##  <a name="kill_dependency_function"></a>  kill_dependency  
+##  <a name="kill_dependency"></a>  kill_dependency  
  Removes a dependency.  
   
 ```

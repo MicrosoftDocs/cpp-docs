@@ -23,7 +23,7 @@ manager: "ghogen"
 const adopt_lock_t adopt_lock;
 ```  
   
-##  <a name="call_once_function"></a>  call_once  
+##  <a name="call_once"></a>  call_once  
  Provides a mechanism for calling a specified callable object exactly once during execution.  
   
 ```
@@ -52,7 +52,7 @@ void call_once(once_flag& Flag,
 const defer_lock_t defer_lock;
 ```  
   
-##  <a name="lock_function"></a>  lock  
+##  <a name="lock"></a>  lock  
  Attempts to lock all arguments without deadlock.  
   
 ```cpp  
