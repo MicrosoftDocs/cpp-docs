@@ -61,7 +61,7 @@ class recursive_timed_mutex;
 |[unlock](#recursive_timed_mutex__unlock)|Releases ownership of the `mutex`.|  
   
 ## Requirements  
- **Header:** mutex  
+ **Header:** \<mutex>  
   
  **Namespace:** std  
   

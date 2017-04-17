@@ -72,7 +72,7 @@ class future;
 |[future::operator=](#future__operator_eq)|Transfers the associated asynchronous state from a specified object.|  
   
 ## Requirements  
- **Header:** future  
+ **Header:** \<fiuture>  
   
  **Namespace:** std  
   

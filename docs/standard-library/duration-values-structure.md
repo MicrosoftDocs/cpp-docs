@@ -53,7 +53,7 @@ struct duration_values;
 |[zero](#duration_values__zero)|Static. Returns `Rep(0)`.|  
   
 ## Requirements  
- **Header:** chrono  
+ **Header:** \<chrono>  
   
  **Namespace:** std::chrono  
   

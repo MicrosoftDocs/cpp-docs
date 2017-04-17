@@ -60,7 +60,7 @@ class mutex;
 |[unlock](#mutex__unlock)|Releases ownership of the `mutex`.|  
   
 ## Requirements  
- **Header:** mutex  
+ **Header:** \<mutex>  
   
  **Namespace:** std  
   

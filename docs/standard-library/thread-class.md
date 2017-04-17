@@ -79,7 +79,7 @@ class thread;
 |[thread::operator=](#thread__operator_eq)|Associates a thread with the current `thread` object.|  
   
 ## Requirements  
- **Header:** thread  
+ **Header:** \<thread>  
   
  **Namespace:** std  
   

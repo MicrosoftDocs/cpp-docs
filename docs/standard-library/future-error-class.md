@@ -51,7 +51,7 @@ const char *what() const throw();
 ```  
   
 ## Requirements  
- **Header:** future  
+ **Header:** \<fiuture>  
   
  **Namespace:** std  
   

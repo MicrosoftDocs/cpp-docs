@@ -44,7 +44,7 @@ struct is_error_code_enum<Future_errc> : public true_type;
 ```  
   
 ## Requirements  
- **Header:** future  
+ **Header:** \<fiuture>  
   
  **Namespace:** std  
   

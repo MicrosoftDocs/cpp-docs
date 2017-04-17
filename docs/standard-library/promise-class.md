@@ -71,7 +71,7 @@ class promise;
  `promise`  
   
 ## Requirements  
- **Header:** future  
+ **Header:** \<future>  
   
  **Namespace:** std  
   

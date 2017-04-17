@@ -72,7 +72,7 @@ class shared_future;
 |[shared_future::operator=](#shared_future__operator_eq)|Assigns a new associated asynchronous state.|  
   
 ## Requirements  
- **Header:** future  
+ **Header:** \<future>  
   
  **Namespace:** std  
   

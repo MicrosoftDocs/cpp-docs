@@ -70,7 +70,7 @@ class packaged_task;
 |[packaged_task::operator bool](#packaged_task__operator_bool)|Specifies whether the object has an associated asynchronous state.|  
   
 ## Requirements  
- **Header:** future  
+ **Header:** \<future>  
   
  **Namespace:** std  
   

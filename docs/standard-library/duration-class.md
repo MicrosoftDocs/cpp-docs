@@ -88,7 +88,7 @@ class duration <duration<Rep, Period1>, Period2>;
 |[duration::operator-=](#duration__operator-_eq)|Subtracts the tick count of a specified `duration` object from the stored tick count.|  
   
 ## Requirements  
- **Header:** chrono  
+ **Header:** \<chrono>  
   
  **Namespace:** std::chrono  
   

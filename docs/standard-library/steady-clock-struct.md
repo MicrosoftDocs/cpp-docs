@@ -63,7 +63,7 @@ struct steady_clock;
 |`system_clock::is_steady`|Holds `true`. A `steady_clock` is *steady*.|  
   
 ## Requirements  
- **Header:** chrono  
+ **Header:** \<chrono>  
   
  **Namespace:** std::chrono  
   

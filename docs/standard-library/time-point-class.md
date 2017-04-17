@@ -76,7 +76,7 @@ class time_point;
 |[time_point::operator-=](#time_point__operator-_eq)|Subtracts a specified value from the stored duration.|  
   
 ## Requirements  
- **Header:** chrono  
+ **Header:** \<chrono>  
   
  **Namespace:** std::chrono  
   

@@ -97,7 +97,7 @@ struct atomic;
  Integral specializations are derived from corresponding `atomic_``integral` types. For example, `atomic<unsigned int>` is derived from `atomic_uint`.  
   
 ## Requirements  
- **Header:** atomic  
+ **Header:** \<atomic>  
   
  **Namespace:** std  
   
