@@ -40,4 +40,4 @@ Visual C++ does not include any database products. To
   
  
 ## See Also  
- [Data Access](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ [Data Access](data-access-in-cpp.md)

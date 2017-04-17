@@ -150,5 +150,5 @@ By using property pages, you can specify settings for Visual Studio projects. To
   
 ## See Also  
  [How to: Create and Remove Project Dependencies](http://msdn.microsoft.com/Library/e2a0a8ff-dae7-40a8-b774-b88aa5235183)   
- [How to: Create and Edit Configurations](http://msdn.microsoft.com/Library/19be121c-148e-4ece-bbfc-d20b08cfc3f7)   
+ [How to: Create and Edit Configurations](/visualstudio/ide/how-to-create-and-edit-configurations)   
  [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)

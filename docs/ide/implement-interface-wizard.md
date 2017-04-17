@@ -71,7 +71,7 @@ This wizard implements an interface for a COM object. Implementations of many in
  Displays the names of the interfaces that you have selected to implement on your object.  
   
 > [!NOTE]
->  If you include more than one interface that derives from `IDispatch`, or if you try to implement an interface that is derived from another interface already on your class, then you must disambiguate the COM_MAP entries. See [COM_INTERFACE_ENTRY2](http://msdn.microsoft.com/Library/3d48c53b-827b-42cc-9e22-594f7ea2bf0b) for more information.  
+>  If you include more than one interface that derives from `IDispatch`, or if you try to implement an interface that is derived from another interface already on your class, then you must disambiguate the COM_MAP entries. See [COM_INTERFACE_ENTRY2](../atl/reference/com-interface-entry-macros.md#com_interface_entry2) for more information.  
   
 ## See Also  
  [Implementing an Interface](../ide/implementing-an-interface-visual-cpp.md)
