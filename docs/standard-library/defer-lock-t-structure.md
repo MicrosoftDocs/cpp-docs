@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # defer_lock_t Structure
-Represents a type that defines a [defer_lock](../standard-library/mutex-functions.md#defer_lock_variable) object that is used to select one of the overloaded constructors of [unique_lock](../standard-library/unique-lock-class.md).  
+Represents a type that defines a [defer_lock](../standard-library/mutex-functions.md#defer_lock) object that is used to select one of the overloaded constructors of [unique_lock](../standard-library/unique-lock-class.md).  
   
 ## Syntax  
   
@@ -43,7 +43,7 @@ struct defer_lock_t;
 ```  
   
 ## Requirements  
- **Header:** mutex  
+ **Header:** \<mutex>  
   
  **Namespace:** std  
   

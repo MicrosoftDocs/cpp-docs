@@ -80,7 +80,7 @@ protected:
 ## Remarks  
  The template class stores a copy of a binary function object _ *Func* in **op**, and a copy of `right` in **value**. It defines its member function `operator()` as returning **op**( `left`, **value**).  
   
- If `Func` is an object of type **Operation** and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd_function) ( `Func`, `c` ) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> ( `Func`, `c` ) and more convenient.  
+ If `Func` is an object of type **Operation** and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd) ( `Func`, `c` ) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> ( `Func`, `c` ) and more convenient.  
   
 ## Example  
   

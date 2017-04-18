@@ -115,22 +115,22 @@ public:
   
 |||  
 |-|-|  
-|[function::function](#function__function)|Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.|  
+|[function](#function_)|Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[function::result_type](#function__result_type)|The return type of the stored callable object.|  
+|[result_type](#function__result_type)|The return type of the stored callable object.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[function::assign](#function__assign)|Assigns a callable object to this function object.|  
-|[function::swap](#function__swap)|Swap two callable objects.|  
-|[function::target](#function__target)|Tests if stored callable object is callable as specified.|  
-|[function::target_type](#function__target_type)|Gets type information on the callable object.|  
+|[assign](#function__assign)|Assigns a callable object to this function object.|  
+|[swap](#function__swap)|Swap two callable objects.|  
+|[target](#function__target)|Tests if stored callable object is callable as specified.|  
+|[target_type](#function__target_type)|Gets type information on the callable object.|  
   
 ### Operators  
   
@@ -173,7 +173,7 @@ template <class Fx, class Alloc>
 ### Remarks  
  The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object `Ax`.  
   
-##  <a name="function__function"></a>  function::function  
+##  <a name="function_"></a>  function::function  
  Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.  
   
 ```  
@@ -654,5 +654,5 @@ type == void
 ```  
   
 ## See Also  
- [mem_fn Function](../standard-library/functional-functions.md#mem_fn_function)   
+ [mem_fn](../standard-library/functional-functions.md#mem_fn)   
  [reference_wrapper Class](../standard-library/reference-wrapper-class.md)

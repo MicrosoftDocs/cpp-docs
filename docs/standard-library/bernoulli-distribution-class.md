@@ -99,8 +99,8 @@ The class describes a distribution that produces values of type `bool`, distribu
   
 ||||  
 |-|-|-|  
-|[bernoulli_distribution::bernoulli_distribution](#bernoulli_distribution__bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|  
-|`bernoulli_distribution::operator()`||[bernoulli_distribution::param_type](#bernoulli_distribution__param_type)|  
+|[bernoulli_distribution](#bernoulli_distribution__bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|  
+|`bernoulli_distribution::operator()`||[param_type](#bernoulli_distribution__param_type)|  
   
 The property member `p()` returns the currently stored distribution parameter value `p`.  
   

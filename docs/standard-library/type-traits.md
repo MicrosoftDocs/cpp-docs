@@ -47,7 +47,7 @@ Defines templates that provide compile-time constants that give information abou
 ## Remarks  
  The classes and templates in `<type_traits>` are used to support type inference, classification, and transformation at compile time, to detect type-related errors, and to help you optimize your generic code. These classes and templates include unary type traits that describe a property of a type, binary type traits that describe a relationship between types, and transformation traits that modify a property of a type.  
   
- To support type traits, a helper class, `integral_constant`, is defined. It has template specializations `true_type` and `false_type` that form the base classes for type predicates. A *type predicate* is a template that takes one or more type arguments. When a type predicate *holds true*, it is publicly derived, directly or indirectly, from [true_type](../standard-library/type-traits-typedefs.md#true_type_typedef). When a type predicate *holds false*, it is publicly derived, directly or indirectly, from [false_type](../standard-library/type-traits-typedefs.md#false_type_typedef).  
+ To support type traits, a helper class, `integral_constant`, is defined. It has template specializations `true_type` and `false_type` that form the base classes for type predicates. A *type predicate* is a template that takes one or more type arguments. When a type predicate *holds true*, it is publicly derived, directly or indirectly, from [true_type](../standard-library/type-traits-typedefs.md#true_type). When a type predicate *holds false*, it is publicly derived, directly or indirectly, from [false_type](../standard-library/type-traits-typedefs.md#false_type).  
   
  A *type modifier* or *transformation trait* is a template that takes one or more template arguments and has one member, `type`, which is a synonym for the modified type.  
   
@@ -74,8 +74,8 @@ using add_const_t = typename add_const<T>::type;
 |||  
 |-|-|  
 |[integral_constant](../standard-library/integral-constant-class-bool-constant-class.md)|Makes an integral constant from a type and a value.|  
-|[true_type](../standard-library/type-traits-typedefs.md#true_type_typedef)|Holds integral constant with true value.|  
-|[false_type](../standard-library/type-traits-typedefs.md#false_type_typedef)|Holds integral constant with false value.|  
+|[true_type](../standard-library/type-traits-typedefs.md#true_type)|Holds integral constant with true value.|  
+|[false_type](../standard-library/type-traits-typedefs.md#false_type)|Holds integral constant with false value.|  
   
  Primary type categories  
   

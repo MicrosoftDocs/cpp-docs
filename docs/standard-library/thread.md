@@ -66,11 +66,11 @@ Include the standard header \<thread> to define the class `thread` and various s
   
 |Name|Description|  
 |----------|-----------------|  
-|[get_id Function](../standard-library/thread-functions.md#get_id_function)|Uniquely identifies the current thread of execution.|  
-|[sleep_for Function](../standard-library/thread-functions.md#sleep_for_function)|Blocks the calling thread.|  
-|[sleep_until Function](../standard-library/thread-functions.md#sleep_until_function)|Blocks the calling thread at least until the specified time.|  
-|[swap Function](../standard-library/thread-functions.md#swap_function)|Exchanges the states of two `thread` objects.|  
-|[yield Function](../standard-library/thread-functions.md#yield_function)|Signals the operating system to run other threads, even if the current thread would ordinarily continue to run.|  
+|[get_id](../standard-library/thread-functions.md#get_id)|Uniquely identifies the current thread of execution.|  
+|[sleep_for](../standard-library/thread-functions.md#sleep_for)|Blocks the calling thread.|  
+|[sleep_until](../standard-library/thread-functions.md#sleep_until)|Blocks the calling thread at least until the specified time.|  
+|[swap](../standard-library/thread-functions.md#swap)|Exchanges the states of two `thread` objects.|  
+|[yield](../standard-library/thread-functions.md#yield)|Signals the operating system to run other threads, even if the current thread would ordinarily continue to run.|  
   
 ### Public Operators  
   

@@ -59,7 +59,7 @@ Defines facilities for random number generation, allowing creation of uniformly 
 ### Quick Tips  
  Here are some tips to keep in mind when using `<random>`:  
   
--   For most purposes, URNGs produce raw bits that must be shaped by distributions. (A notable exception to this is [std::shuffle()](../standard-library/algorithm-functions.md#std__shuffle) because it uses a URNG directly.)  
+-   For most purposes, URNGs produce raw bits that must be shaped by distributions. (A notable exception to this is [std::shuffle()](../standard-library/algorithm-functions.md#shuffle) because it uses a URNG directly.)  
   
 -   A single instantiation of a URNG or distribution cannot safely be called concurrently because running a URNG or distribution is a modifying operation. For more information, see [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md).  
   

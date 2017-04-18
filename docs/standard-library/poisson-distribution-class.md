@@ -99,8 +99,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[poisson_distribution::poisson_distribution](#poisson_distribution__poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|  
-|`poisson_distribution::operator()`||[poisson_distribution::param_type](#poisson_distribution__param_type)|  
+|[poisson_distribution](#poisson_distribution__poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|  
+|`poisson_distribution::operator()`||[param_type](#poisson_distribution__param_type)|  
   
 The property function `mean()` returns the value for stored distribution parameter *mean*.  
   

@@ -93,14 +93,14 @@ class list
 |[assign](#list__assign)|Erases elements from a list and copies a new set of elements to the target list.|  
 |[back](#list__back)|Returns a reference to the last element of a list.|  
 |[begin](#list__begin)|Returns an iterator addressing the first element in a list.|  
-|[list::cbegin](#list__cbegin)|Returns a const iterator addressing the first element in a list.|  
-|[list::cend](#list__cend)|Returns a const iterator that addresses the location succeeding the last element in a list.|  
-|[list::clear](#list__clear)|Erases all the elements of a list.|  
-|[list::crbegin](#list__crbegin)|Returns a const iterator addressing the first element in a reversed list.|  
-|[list::crend](#list__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed list.|  
-|[list::emplace](#list__emplace)|Inserts an element constructed in place into a list at a specified position.|  
-|[list::emplace_back](#list__emplace_back)|Adds an element constructed in place to the end of a list.|  
-|[list::emplace_front](#list__emplace_front)|Adds an element constructed in place to the beginning of a list.|  
+|[cbegin](#list__cbegin)|Returns a const iterator addressing the first element in a list.|  
+|[cend](#list__cend)|Returns a const iterator that addresses the location succeeding the last element in a list.|  
+|[clear](#list__clear)|Erases all the elements of a list.|  
+|[crbegin](#list__crbegin)|Returns a const iterator addressing the first element in a reversed list.|  
+|[crend](#list__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed list.|  
+|[emplace](#list__emplace)|Inserts an element constructed in place into a list at a specified position.|  
+|[emplace_back](#list__emplace_back)|Adds an element constructed in place to the end of a list.|  
+|[emplace_front](#list__emplace_front)|Adds an element constructed in place to the beginning of a list.|  
 |[empty](#list__empty)|Tests if a list is empty.|  
 |[end](#list__end)|Returns an iterator that addresses the location succeeding the last element in a list.|  
 |[erase](#list__erase)|Removes an element or a range of elements in a list from specified positions.|  

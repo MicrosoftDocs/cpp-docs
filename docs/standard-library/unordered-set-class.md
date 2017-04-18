@@ -74,8 +74,8 @@ f1_keywords:
   - "unordered_set/std::unordered_set::find"
   - "std::unordered_set::get_allocator"
   - "unordered_set/std::unordered_set::get_allocator"
-  - "std::unordered_set::hash_function"
-  - "unordered_set/std::unordered_set::hash_function"
+  - "std::unordered_set::hash"
+  - "unordered_set/std::unordered_set::hash"
   - "std::unordered_set::insert"
   - "unordered_set/std::unordered_set::insert"
   - "std::unordered_set::key_eq"
@@ -151,52 +151,52 @@ class unordered_set;
 |||  
 |-|-|  
 |Type Definition|Description|  
-|[unordered_set::allocator_type](#unordered_set__allocator_type)|The type of an allocator for managing storage.|  
-|[unordered_set::const_iterator](#unordered_set__const_iterator)|The type of a constant iterator for the controlled sequence.|  
-|[unordered_set::const_local_iterator](#unordered_set__const_local_iterator)|The type of a constant bucket iterator for the controlled sequence.|  
-|[unordered_set::const_pointer](#unordered_set__const_pointer)|The type of a constant pointer to an element.|  
-|[unordered_set::const_reference](#unordered_set__const_reference)|The type of a constant reference to an element.|  
-|[unordered_set::difference_type](#unordered_set__difference_type)|The type of a signed distance between two elements.|  
-|[unordered_set::hasher](#unordered_set__hasher)|The type of the hash function.|  
-|[unordered_set::iterator](#unordered_set__iterator)|The type of an iterator for the controlled sequence.|  
-|[unordered_set::key_equal](#unordered_set__key_equal)|The type of the comparison function.|  
-|[unordered_set::key_type](#unordered_set__key_type)|The type of an ordering key.|  
-|[unordered_set::local_iterator](#unordered_set__local_iterator)|The type of a bucket iterator for the controlled sequence.|  
-|[unordered_set::pointer](#unordered_set__pointer)|The type of a pointer to an element.|  
-|[unordered_set::reference](#unordered_set__reference)|The type of a reference to an element.|  
-|[unordered_set::size_type](#unordered_set__size_type)|The type of an unsigned distance between two elements.|  
-|[unordered_set::value_type](#unordered_set__value_type)|The type of an element.|  
+|[allocator_type](#unordered_set__allocator_type)|The type of an allocator for managing storage.|  
+|[const_iterator](#unordered_set__const_iterator)|The type of a constant iterator for the controlled sequence.|  
+|[const_local_iterator](#unordered_set__const_local_iterator)|The type of a constant bucket iterator for the controlled sequence.|  
+|[const_pointer](#unordered_set__const_pointer)|The type of a constant pointer to an element.|  
+|[const_reference](#unordered_set__const_reference)|The type of a constant reference to an element.|  
+|[difference_type](#unordered_set__difference_type)|The type of a signed distance between two elements.|  
+|[hasher](#unordered_set__hasher)|The type of the hash function.|  
+|[iterator](#unordered_set__iterator)|The type of an iterator for the controlled sequence.|  
+|[key_equal](#unordered_set__key_equal)|The type of the comparison function.|  
+|[key_type](#unordered_set__key_type)|The type of an ordering key.|  
+|[local_iterator](#unordered_set__local_iterator)|The type of a bucket iterator for the controlled sequence.|  
+|[pointer](#unordered_set__pointer)|The type of a pointer to an element.|  
+|[reference](#unordered_set__reference)|The type of a reference to an element.|  
+|[size_type](#unordered_set__size_type)|The type of an unsigned distance between two elements.|  
+|[value_type](#unordered_set__value_type)|The type of an element.|  
   
 |||  
 |-|-|  
 |Member Function|Description|  
-|[unordered_set::begin](#unordered_set__begin)|Designates the beginning of the controlled sequence.|  
-|[unordered_set::bucket](#unordered_set__bucket)|Gets the bucket number for a key value.|  
-|[unordered_set::bucket_count](#unordered_set__bucket_count)|Gets the number of buckets.|  
-|[unordered_set::bucket_size](#unordered_set__bucket_size)|Gets the size of a bucket.|  
-|[unordered_set::cbegin](#unordered_set__cbegin)|Designates the beginning of the controlled sequence.|  
-|[unordered_set::cend](#unordered_set__cend)|Designates the end of the controlled sequence.|  
-|[unordered_set::clear](#unordered_set__clear)|Removes all elements.|  
-|[unordered_set::count](#unordered_set__count)|Finds the number of elements matching a specified key.|  
-|[unordered_set::emplace](#unordered_set__emplace)|Adds an element constructed in place.|  
-|[unordered_set::emplace_hint](#unordered_set__emplace_hint)|Adds an element constructed in place, with hint.|  
-|[unordered_set::empty](#unordered_set__empty)|Tests whether no elements are present.|  
-|[unordered_set::end](#unordered_set__end)|Designates the end of the controlled sequence.|  
-|[unordered_set::equal_range](#unordered_set__equal_range)|Finds range that matches a specified key.|  
-|[unordered_set::erase](#unordered_set__erase)|Removes elements at specified positions.|  
-|[unordered_set::find](#unordered_set__find)|Finds an element that matches a specified key.|  
-|[unordered_set::get_allocator](#unordered_set__get_allocator)|Gets the stored allocator object.|  
-|[unordered_set::hash_function](#unordered_set__hash_function)|Gets the stored hash function object.|  
-|[unordered_set::insert](#unordered_set__insert)|Adds elements.|  
-|[unordered_set::key_eq](#unordered_set__key_eq)|Gets the stored comparison function object.|  
-|[unordered_set::load_factor](#unordered_set__load_factor)|Counts the average elements per bucket.|  
-|[unordered_set::max_bucket_count](#unordered_set__max_bucket_count)|Gets the maximum number of buckets.|  
-|[unordered_set::max_load_factor](#unordered_set__max_load_factor)|Gets or sets the maximum elements per bucket.|  
-|[unordered_set::max_size](#unordered_set__max_size)|Gets the maximum size of the controlled sequence.|  
-|[unordered_set::rehash](#unordered_set__rehash)|Rebuilds the hash table.|  
-|[unordered_set::size](#unordered_set__size)|Counts the number of elements.|  
-|[unordered_set::swap](#unordered_set__swap)|Swaps the contents of two containers.|  
-|[unordered_set::unordered_set](#unordered_set__unordered_set)|Constructs a container object.|  
+|[begin](#unordered_set__begin)|Designates the beginning of the controlled sequence.|  
+|[bucket](#unordered_set__bucket)|Gets the bucket number for a key value.|  
+|[bucket_count](#unordered_set__bucket_count)|Gets the number of buckets.|  
+|[bucket_size](#unordered_set__bucket_size)|Gets the size of a bucket.|  
+|[cbegin](#unordered_set__cbegin)|Designates the beginning of the controlled sequence.|  
+|[cend](#unordered_set__cend)|Designates the end of the controlled sequence.|  
+|[clear](#unordered_set__clear)|Removes all elements.|  
+|[count](#unordered_set__count)|Finds the number of elements matching a specified key.|  
+|[emplace](#unordered_set__emplace)|Adds an element constructed in place.|  
+|[emplace_hint](#unordered_set__emplace_hint)|Adds an element constructed in place, with hint.|  
+|[empty](#unordered_set__empty)|Tests whether no elements are present.|  
+|[end](#unordered_set__end)|Designates the end of the controlled sequence.|  
+|[equal_range](#unordered_set__equal_range)|Finds range that matches a specified key.|  
+|[erase](#unordered_set__erase)|Removes elements at specified positions.|  
+|[find](#unordered_set__find)|Finds an element that matches a specified key.|  
+|[get_allocator](#unordered_set__get_allocator)|Gets the stored allocator object.|  
+|[hash_function](#unordered_set__hash)|Gets the stored hash function object.|  
+|[insert](#unordered_set__insert)|Adds elements.|  
+|[key_eq](#unordered_set__key_eq)|Gets the stored comparison function object.|  
+|[load_factor](#unordered_set__load_factor)|Counts the average elements per bucket.|  
+|[max_bucket_count](#unordered_set__max_bucket_count)|Gets the maximum number of buckets.|  
+|[max_load_factor](#unordered_set__max_load_factor)|Gets or sets the maximum elements per bucket.|  
+|[max_size](#unordered_set__max_size)|Gets the maximum size of the controlled sequence.|  
+|[rehash](#unordered_set__rehash)|Rebuilds the hash table.|  
+|[size](#unordered_set__size)|Counts the number of elements.|  
+|[swap](#unordered_set__swap)|Swaps the contents of two containers.|  
+|[unordered_set](#unordered_set__unordered_set)|Constructs a container object.|  
   
 |||  
 |-|-|  
@@ -204,7 +204,7 @@ class unordered_set;
 |[unordered_set::operator=](#unordered_set__operator_eq)|Copies a hash table.|  
   
 ## Remarks  
- The object orders the sequence it controls by calling two stored objects, a comparison function object of type[unordered_set::key_equal](#unordered_set__key_equal) and a hash function object of type[unordered_set::hasher](#unordered_set__hasher). You access the first stored object by calling the member function[unordered_set::key_eq](#unordered_set__key_eq)`()`; and you access the second stored object by calling the member function[unordered_set::hash_function](#unordered_set__hash_function)`()`. Specifically, for all values `X` and `Y` of type `Key`, the call `key_eq()(X, Y)` returns true only if the two argument values have equivalent ordering; the call `hash_function()(keyval)` yields a distribution of values of type `size_t`. Unlike template class[unordered_multiset Class](../standard-library/unordered-multiset-class.md), an object of template class `unordered_set` ensures that `key_eq()(X, Y)` is always false for any two elements of the controlled sequence. (Keys are unique.)  
+ The object orders the sequence it controls by calling two stored objects, a comparison function object of type[unordered_set::key_equal](#unordered_set__key_equal) and a hash function object of type[unordered_set::hasher](#unordered_set__hasher). You access the first stored object by calling the member function[unordered_set::key_eq](#unordered_set__key_eq)`()`; and you access the second stored object by calling the member function[unordered_set::hash_function](#unordered_set__hash)`()`. Specifically, for all values `X` and `Y` of type `Key`, the call `key_eq()(X, Y)` returns true only if the two argument values have equivalent ordering; the call `hash_function()(keyval)` yields a distribution of values of type `size_t`. Unlike template class[unordered_multiset Class](../standard-library/unordered-multiset-class.md), an object of template class `unordered_set` ensures that `key_eq()(X, Y)` is always false for any two elements of the controlled sequence. (Keys are unique.)  
   
  The object also stores a maximum load factor, which specifies the maximum desired average number of elements per bucket. If inserting an element causes[unordered_set::load_factor](#unordered_set__load_factor)`()` to exceed the maximum load factor, the container increases the number of buckets and rebuilds the hash table as needed.  
   
@@ -1283,7 +1283,7 @@ int main()
 al == std::allocator() is true  
 ```  
   
-##  <a name="unordered_set__hash_function"></a>  unordered_set::hash_function  
+##  <a name="unordered_set__hash"></a>  unordered_set::hash_function  
  Gets the stored hash function object.  
   
 ```  

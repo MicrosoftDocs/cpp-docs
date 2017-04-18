@@ -46,7 +46,7 @@ struct uses_allocator<packaged_task<Ty>, Alloc> : true_type;
 ```  
   
 ## Requirements  
- **Header:** future  
+ **Header:** \<fiuture>  
   
  **Namespace:** std  
   

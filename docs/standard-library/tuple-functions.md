@@ -17,9 +17,9 @@ manager: "ghogen"
 # &lt;tuple&gt; functions
 ||||  
 |-|-|-|  
-|[get Function](#get_function)|[make_tuple Function](#make_tuple_function)|[tie Function](#tie_function)|  
+|[get](#get)|[make_tuple](#make_tuple)|[tie](#tie)|  
   
-##  <a name="get_function"></a>  get Function  
+##  <a name="get"></a>  get
  Gets an element from a `tuple` object, by index or (in C++14) by type.  
   
 ```  
@@ -97,7 +97,7 @@ int main() {
 0 1.42 Call me Tuple  
 ```  
   
-##  <a name="make_tuple_function"></a>  make_tuple Function  
+##  <a name="make_tuple"></a>  make_tuple
  Makes a `tuple` from element values.  
   
 ```  
@@ -154,7 +154,7 @@ int main() {
  4 5 6 7  
 ```  
   
-##  <a name="tie_function"></a>  tie Function  
+##  <a name="tie"></a>  tie
  Makes a `tuple` from element references.  
   
 ```  

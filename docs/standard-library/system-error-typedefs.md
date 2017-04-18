@@ -23,7 +23,7 @@ typedef errc generic_error;
 ```  
   
 ### Remarks  
- The type is a synonym for [errc](../standard-library/system-error-enums.md#errc_enumeration).  
+ The type is a synonym for [errc](../standard-library/system-error-enums.md#errc).  
   
 ## See Also  
  [<system_error>](../standard-library/system-error.md)

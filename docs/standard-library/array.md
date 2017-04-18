@@ -66,8 +66,8 @@ Defines the container template class `array` and several supporting templates.
   
 |||  
 |-|-|  
-|[get](../standard-library/array-functions.md#get_function)|Get specified array element.|  
-|[swap](../standard-library/array-functions.md#swap_function)|Exchanges the contents of one array with the contents of another array.|  
+|[get](../standard-library/array-functions.md#get)|Get specified array element.|  
+|[swap](../standard-library/array-functions.md#swap)|Exchanges the contents of one array with the contents of another array.|  
   
 ## See Also  
  [\<tuple>](../standard-library/tuple.md)   

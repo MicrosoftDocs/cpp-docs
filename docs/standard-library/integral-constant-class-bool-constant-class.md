@@ -104,6 +104,6 @@ integral_constant<bool, false> == false
   
 ## See Also  
  [<type_traits>](../standard-library/type-traits.md)   
- [false_type Typedef](../standard-library/type-traits-typedefs.md#false_type_typedef)   
- [true_type Typedef](../standard-library/type-traits-typedefs.md#true_type_typedef)
+ [false_type](../standard-library/type-traits-typedefs.md#false_type)   
+ [true_type](../standard-library/type-traits-typedefs.md#true_type)
 

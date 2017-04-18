@@ -121,40 +121,40 @@ class array;
 |||  
 |-|-|  
 |Type Definition|Description|  
-|[array::const_iterator](#array__const_iterator)|The type of a constant iterator for the controlled sequence.|  
-|[array::const_pointer](#array__const_pointer)|The type of a constant pointer to an element.|  
-|[array::const_reference](#array__const_reference)|The type of a constant reference to an element.|  
-|[array::const_reverse_iterator](#array__const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|  
-|[array::difference_type](#array__difference_type)|The type of a signed distance between two elements.|  
-|[array::iterator](#array__iterator)|The type of an iterator for the controlled sequence.|  
-|[array::pointer](#array__pointer)|The type of a pointer to an element.|  
-|[array::reference](#array__reference)|The type of a reference to an element.|  
-|[array::reverse_iterator](#array__reverse_iterator)|The type of a reverse iterator for the controlled sequence.|  
-|[array::size_type](#array__size_type)|The type of an unsigned distance between two elements.|  
-|[array::value_type](#array__value_type)|The type of an element.|  
+|[const_iterator](#array__const_iterator)|The type of a constant iterator for the controlled sequence.|  
+|[const_pointer](#array__const_pointer)|The type of a constant pointer to an element.|  
+|[const_reference](#array__const_reference)|The type of a constant reference to an element.|  
+|[const_reverse_iterator](#array__const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|  
+|[difference_type](#array__difference_type)|The type of a signed distance between two elements.|  
+|[iterator](#array__iterator)|The type of an iterator for the controlled sequence.|  
+|[pointer](#array__pointer)|The type of a pointer to an element.|  
+|[reference](#array__reference)|The type of a reference to an element.|  
+|[reverse_iterator](#array__reverse_iterator)|The type of a reverse iterator for the controlled sequence.|  
+|[size_type](#array__size_type)|The type of an unsigned distance between two elements.|  
+|[value_type](#array__value_type)|The type of an element.|  
   
 |||  
 |-|-|  
 |Member Function|Description|  
-|[array::array](#array__array)|Constructs an array object.|  
-|[array::assign](#array__assign)|Replaces all elements.|  
-|[array::at](#array__at)|Accesses an element at a specified position.|  
-|[array::back](#array__back)|Accesses the last element.|  
-|[array::begin](#array__begin)|Designates the beginning of the controlled sequence.|  
-|[array::cbegin](#array__cbegin)|Returns a random-access const iterator to the first element in the array.|  
-|[array::cend](#array__cend)|Returns a random-access const iterator that points just beyond the end of the array.|  
-|[array::crbegin](#array__crbegin)|Returns a const iterator to the first element in a reversed array.|  
-|[array::crend](#array__crend)|Returns a const iterator to the end of a reversed array.|  
-|[array::data](#array__data)|Gets the address of the first element.|  
-|[array::empty](#array__empty)|Tests whether elements are present.|  
-|[array::end](#array__end)|Designates the end of the controlled sequence.|  
-|[array::fill](#array__fill)|Replaces all elements with a specified value.|  
-|[array::front](#array__front)|Accesses the first element.|  
-|[array::max_size](#array__max_size)|Counts the number of elements.|  
-|[array::rbegin](#array__rbegin)|Designates the beginning of the reversed controlled sequence.|  
-|[array::rend](#array__rend)|Designates the end of the reversed controlled sequence.|  
-|[array::size](#array__size)|Counts the number of elements.|  
-|[array::swap](#array__swap)|Swaps the contents of two containers.|  
+|[array](#array__array)|Constructs an array object.|  
+|[assign](#array__assign)|Replaces all elements.|  
+|[at](#array__at)|Accesses an element at a specified position.|  
+|[back](#array__back)|Accesses the last element.|  
+|[begin](#array__begin)|Designates the beginning of the controlled sequence.|  
+|[cbegin](#array__cbegin)|Returns a random-access const iterator to the first element in the array.|  
+|[cend](#array__cend)|Returns a random-access const iterator that points just beyond the end of the array.|  
+|[crbegin](#array__crbegin)|Returns a const iterator to the first element in a reversed array.|  
+|[crend](#array__crend)|Returns a const iterator to the end of a reversed array.|  
+|[data](#array__data)|Gets the address of the first element.|  
+|[empty](#array__empty)|Tests whether elements are present.|  
+|[end](#array__end)|Designates the end of the controlled sequence.|  
+|[fill](#array__fill)|Replaces all elements with a specified value.|  
+|[front](#array__front)|Accesses the first element.|  
+|[max_size](#array__max_size)|Counts the number of elements.|  
+|[rbegin](#array__rbegin)|Designates the beginning of the reversed controlled sequence.|  
+|[rend](#array__rend)|Designates the end of the reversed controlled sequence.|  
+|[size](#array__size)|Counts the number of elements.|  
+|[swap](#array__swap)|Swaps the contents of two containers.|  
   
 |||  
 |-|-|  
@@ -1120,7 +1120,7 @@ constexpr const_reference operator[](size_type off) const;
 ### Remarks  
  The member functions return a reference to the element of the controlled sequence at position `off`. If that position is invalid, the behavior is undefined.  
   
-There is also a non-member [get](array-functions.md#get_function) function available to get a reference to an element of an `array`.  
+There is also a non-member [get](array-functions.md#get) function available to get a reference to an element of an `array`.  
   
 ### Example  
   
@@ -1531,7 +1531,7 @@ void swap(array& right);
 ### Remarks  
 The member function swaps the controlled sequences between `*this` and `right`. It performs a number of element assignments and constructor calls proportional to `N`.  
 
-There is also a non-member [swap](array-functions.md#swap_function) function available to swap two `array` instances.  
+There is also a non-member [swap](array-functions.md#swap) function available to swap two `array` instances.  
   
 ### Example  
   

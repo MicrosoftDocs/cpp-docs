@@ -12,7 +12,6 @@ f1_keywords:
   - "ctype"
   - "std::ctype"
   - "std.ctype"
-  - "CType"
   - "xlocale/std::ctype"
 dev_langs: 
   - "C++"

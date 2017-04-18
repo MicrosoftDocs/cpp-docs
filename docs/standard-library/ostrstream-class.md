@@ -9,9 +9,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.oststream"
-  - "oststream"
-  - "std::oststream"
+  - "std.ostrstream"
+  - "ostrstream"
+  - "std::ostrstream"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

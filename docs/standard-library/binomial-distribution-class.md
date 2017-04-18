@@ -106,8 +106,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[binomial_distribution::binomial_distribution](#binomial_distribution__binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|  
-|`binomial_distribution::operator()`|`binomial_distribution::p`|[binomial_distribution::param_type](#binomial_distribution__param_type)|  
+|[binomial_distribution](#binomial_distribution__binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|  
+|`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#binomial_distribution__param_type)|  
   
 The property members `t()` and `p()` return the currently stored distribution parameter values `t` and `p` respectively.  
   

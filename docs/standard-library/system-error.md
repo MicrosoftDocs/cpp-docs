@@ -78,7 +78,7 @@ Include the header `<system_error>` to define the exception class `system_error`
   
 |||  
 |-|-|  
-|[errc](../standard-library/system-error-enums.md#errc_enumeration)|Provides symbolic names for all the error-code macros defined by Posix in `<errno.h>`.|  
+|[errc](../standard-library/system-error-enums.md#errc)|Provides symbolic names for all the error-code macros defined by Posix in `<errno.h>`.|  
   
 ### Classes and Structs  
   

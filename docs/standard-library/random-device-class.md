@@ -75,7 +75,7 @@ public:
   
 |||  
 |-|-|  
-|[random_device::random_device](#random_device__random_device)|[random_device::entropy](#random_device__entropy)|  
+|[random_device](#random_device__random_device)|[entropy](#random_device__entropy)|  
 |[random_device::operator()](#random_device__operator__)||  
   
 ## Remarks  

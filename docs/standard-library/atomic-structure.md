@@ -48,14 +48,14 @@ struct atomic;
   
 |Name|Description|  
 |----------|-----------------|  
-|[atomic::atomic Constructor](http://msdn.microsoft.com/Library/a538c43f-4d48-4308-ae1b-bab1839bccb8)|Constructs an atomic object.|  
+|[atomic](http://msdn.microsoft.com/Library/a538c43f-4d48-4308-ae1b-bab1839bccb8)|Constructs an atomic object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[atomic::operator Ty Operator](http://msdn.microsoft.com/Library/a366c700-c7a0-4bcb-8eb4-4b57dfaea065)|Reads and returns the stored value. ([atomic::load Method](http://msdn.microsoft.com/Library/05212726-cf8a-46fe-83d2-c16ac2abb7d1))|  
-|[atomic::operator= Operator](http://msdn.microsoft.com/Library/fe161d57-47ae-4bad-92bf-ce32ac8d5953)|Uses a specified value to replace the stored value. ([atomic::store Method](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b))|  
+|[atomic::operator Ty Operator](http://msdn.microsoft.com/Library/a366c700-c7a0-4bcb-8eb4-4b57dfaea065)|Reads and returns the stored value. ([atomic::load](http://msdn.microsoft.com/Library/05212726-cf8a-46fe-83d2-c16ac2abb7d1))|  
+|[atomic::operator= Operator](http://msdn.microsoft.com/Library/fe161d57-47ae-4bad-92bf-ce32ac8d5953)|Uses a specified value to replace the stored value. ([atomic::store](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b))|  
 |[atomic::operator++ Operator](http://msdn.microsoft.com/Library/492959e9-1ea8-4e02-a031-82b1b92e91a0)|Increments the stored value. Used only by integral and pointer specializations.|  
 |[atomic::operator+= Operator](http://msdn.microsoft.com/Library/9ec97aa2-c9d7-436b-943d-2989eb2617dd)|Adds a specified value to the stored value. Used only by integral and pointer specializations.|  
 |[atomic::operator-- Operator](http://msdn.microsoft.com/Library/ad7c1ea7-1f6d-4a54-bf26-07630f749864)|Decrements the stored value. Used only by integral and pointer specializations.|  
@@ -68,16 +68,16 @@ struct atomic;
   
 |Name|Description|  
 |----------|-----------------|  
-|[atomic::compare_exchange_strong Method](http://msdn.microsoft.com/Library/47bbf894-b28c-4ece-959e-67b3863cf4ed)|Performs an `atomic_compare_and_exchange` operation on `this` and returns the result.|  
-|[atomic::compare_exchange_weak Method](http://msdn.microsoft.com/Library/e15e421a-f7a3-4272-993a-f487d2242e4f)|Performs a `weak_atomic_compare_and_exchange` operation on `this` and returns the result.|  
-|[atomic::fetch_add Method](http://msdn.microsoft.com/Library/c68b91f2-6e8a-4ffa-8991-6bb6d466e1f3)|Adds a specified value to the stored value.|  
-|[atomic::fetch_and Method](http://msdn.microsoft.com/Library/a9c83001-b72c-4085-9640-f63f866714b9)|Performs a bitwise `and` on a specified value and the stored value.|  
-|[atomic::fetch_or Method](http://msdn.microsoft.com/Library/4c532f7f-80c5-432a-b34b-48feacab8dca)|Performs a bitwise `or` on a specified value and the stored value.|  
-|[atomic::fetch_sub Method](http://msdn.microsoft.com/Library/8cc80d4b-0942-45a3-9db8-bbf339a903e4)|Subtracts a specified value from the stored value.|  
-|[atomic::fetch_xor Method](http://msdn.microsoft.com/Library/92bbaff8-ee29-4a1e-aee4-d9d405285bfe)|Performs a bitwise `exclusive or` on a specified value and the stored value.|  
-|[atomic::is_lock_free Method](http://msdn.microsoft.com/Library/b99d5130-cdda-40a2-b14c-152b13a8ba45)|Specifies whether atomic operations on `this` are *lock free*. An atomic type is *lock free* if no atomic operations on that type use locks.|  
-|[atomic::load Method](http://msdn.microsoft.com/Library/05212726-cf8a-46fe-83d2-c16ac2abb7d1)|Reads and returns the stored value.|  
-|[atomic::store Method](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b)|Uses a specified value to replace the stored value.|  
+|[compare_exchange_strong](http://msdn.microsoft.com/Library/47bbf894-b28c-4ece-959e-67b3863cf4ed)|Performs an `atomic_compare_and_exchange` operation on `this` and returns the result.|  
+|[compare_exchange_weak](http://msdn.microsoft.com/Library/e15e421a-f7a3-4272-993a-f487d2242e4f)|Performs a `weak_atomic_compare_and_exchange` operation on `this` and returns the result.|  
+|[fetch_add](http://msdn.microsoft.com/Library/c68b91f2-6e8a-4ffa-8991-6bb6d466e1f3)|Adds a specified value to the stored value.|  
+|[fetch_and](http://msdn.microsoft.com/Library/a9c83001-b72c-4085-9640-f63f866714b9)|Performs a bitwise `and` on a specified value and the stored value.|  
+|[fetch_or](http://msdn.microsoft.com/Library/4c532f7f-80c5-432a-b34b-48feacab8dca)|Performs a bitwise `or` on a specified value and the stored value.|  
+|[fetch_sub](http://msdn.microsoft.com/Library/8cc80d4b-0942-45a3-9db8-bbf339a903e4)|Subtracts a specified value from the stored value.|  
+|[fetch_xor](http://msdn.microsoft.com/Library/92bbaff8-ee29-4a1e-aee4-d9d405285bfe)|Performs a bitwise `exclusive or` on a specified value and the stored value.|  
+|[is_lock_free](http://msdn.microsoft.com/Library/b99d5130-cdda-40a2-b14c-152b13a8ba45)|Specifies whether atomic operations on `this` are *lock free*. An atomic type is *lock free* if no atomic operations on that type use locks.|  
+|[load](http://msdn.microsoft.com/Library/05212726-cf8a-46fe-83d2-c16ac2abb7d1)|Reads and returns the stored value.|  
+|[store](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b)|Uses a specified value to replace the stored value.|  
   
 ## Remarks  
  The type `Ty` must be *trivially copyable*. That is, using [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) to copy its bytes must produce a valid `Ty` object that compares equal to the original object. The `compare_exchange_weak` and `compare_exchange_strong` member functions use [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) to determine whether two `Ty` values are equal. These functions will not use a `Ty`-defined `operator==`. The member functions of `atomic` use `memcpy` to copy values of type `Ty`.  
@@ -97,7 +97,7 @@ struct atomic;
  Integral specializations are derived from corresponding `atomic_``integral` types. For example, `atomic<unsigned int>` is derived from `atomic_uint`.  
   
 ## Requirements  
- **Header:** atomic  
+ **Header:** \<atomic>  
   
  **Namespace:** std  
   

@@ -102,7 +102,7 @@ class basic_regex {
  Traits class for elements.  
   
 ## Remarks  
- The template class describes an object that holds a regular expression. Objects of this template class can be passed to the template functions [regex_match Function](../standard-library/regex-functions.md#regex_match_function), [regex_search Function](../standard-library/regex-functions.md#regex_search_function), and [regex_replace Function](../standard-library/regex-functions.md#regex_replace_function), along with suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this template class, with the type definitions [regex](../standard-library/regex-typedefs.md#regex_typedef) for elements of type `char`, and [wregex](../standard-library/regex-typedefs.md#wregex_typedef) for elements of type `wchar_t`.  
+ The template class describes an object that holds a regular expression. Objects of this template class can be passed to the template functions [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), and [regex_replace](../standard-library/regex-functions.md#regex_replace), along with suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this template class, with the type definitions [regex](../standard-library/regex-typedefs.md#regex) for elements of type `char`, and [wregex](../standard-library/regex-typedefs.md#wregex) for elements of type `wchar_t`.  
   
  The template argument `RXtraits` describes various important properties of the syntax of the regular expressions that the template class supports. A class that specifies these regular expression traits must have the same external interface as an object of template class [regex_traits Class](../standard-library/regex-traits-class.md).  
   
@@ -348,7 +348,7 @@ explicit basic_regex(
   
  The first constructor constructs an empty `basic_regex` object. The other constructors construct a `basic_regex` object that holds the regular expression described by the operand sequence.  
   
- An empty `basic_regex` object does not match any character sequence when passed to [regex_match Function](../standard-library/regex-functions.md#regex_match_function), [regex_search Function](../standard-library/regex-functions.md#regex_search_function), or [regex_replace Function](../standard-library/regex-functions.md#regex_replace_function).  
+ An empty `basic_regex` object does not match any character sequence when passed to [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), or [regex_replace](../standard-library/regex-functions.md#regex_replace).  
   
 ### Example  
   
@@ -1315,10 +1315,10 @@ getloc == imbued == true
   
 ## See Also  
  [\<regex>](../standard-library/regex.md)   
- [regex_match Function](../standard-library/regex-functions.md#regex_match_function)   
- [regex_search Function](../standard-library/regex-functions.md#regex_search_function)   
- [regex_replace Function](../standard-library/regex-functions.md#regex_replace_function)   
- [regex](../standard-library/regex-typedefs.md#regex_typedef)   
- [wregex](../standard-library/regex-typedefs.md#wregex_typedef)   
+ [regex_match](../standard-library/regex-functions.md#regex_match)   
+ [regex_search](../standard-library/regex-functions.md#regex_search)   
+ [regex_replace](../standard-library/regex-functions.md#regex_replace)   
+ [regex](../standard-library/regex-typedefs.md#regex)   
+ [wregex](../standard-library/regex-typedefs.md#wregex)   
  [regex_traits Class](../standard-library/regex-traits-class.md)
 

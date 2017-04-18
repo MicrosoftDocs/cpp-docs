@@ -49,7 +49,7 @@ struct hash<thread::id> :
 ```  
   
 ## Requirements  
- **Header:** thread  
+ **Header:** \<thread>  
   
  **Namespace:** std  
   

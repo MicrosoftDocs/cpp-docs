@@ -52,7 +52,7 @@ chrono::time_point<Clock, Duration2>>;
 ```  
   
 ## Requirements  
- **Header:** chrono  
+ **Header:** \<chrono>  
   
  **Namespace:** std  
   

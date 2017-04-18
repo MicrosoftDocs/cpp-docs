@@ -301,7 +301,7 @@ manager: "ghogen"
 |[search_n](#search_n)|[set_difference](#set_difference)|[set_intersection](#set_intersection)|  
 |[set_symmetric_difference](#set_symmetric_difference)|[set_union](#set_union)|[sort](#sort)|  
 |[sort_heap](#sort_heap)|[stable_partition](#stable_partition)|[stable_sort](#stable_sort)|  
-|[std::shuffle](#std__shuffle)|[swap](#swap)|[swap_ranges](#swap_ranges)|  
+|[shuffle](#shuffle)|[swap](#swap)|[swap_ranges](#swap_ranges)|  
 |[transform](#transform)|[unique](#unique)|[unique_copy](#unique_copy)|  
 |[upper_bound](#upper_bound)|  
   
@@ -5459,7 +5459,7 @@ int main( ) {
 ```  
   
 ##  <a name="random_shuffle"></a>  random_shuffle  
- The std::random_shuffle() function is deprecated, replaced by [std::shuffle()](../standard-library/algorithm-functions.md#std__shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stackoverflow posting                 [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/?LinkId=397954).  
+ The std::random_shuffle() function is deprecated, replaced by [std::shuffle](../standard-library/algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stackoverflow posting  [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/?LinkId=397954).  
   
 ##  <a name="remove"></a>  remove  
  Eliminates a specified value from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.  
@@ -7437,7 +7437,7 @@ int main( )
 }  
 ```  
   
-##  <a name="std__shuffle"></a>  std::shuffle  
+##  <a name="shuffle"></a>  std::shuffle  
  Shuffles (rearranges) elements for a given range by using a random number generator.  
   
 ```  

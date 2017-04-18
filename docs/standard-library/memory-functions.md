@@ -23,8 +23,8 @@ f1_keywords:
   - "memory/std::default_delete"
   - "std::dynamic_pointer_cast"
   - "memory/std::dynamic_pointer_cast"
-  - "std::get_deleter_function"
-  - "memory/std::get_deleter_function"
+  - "std::get_deleter"
+  - "memory/std::get_deleter"
   - "std::get_pointer_safety"
   - "memory/std::get_pointer_safety"
   - "std::get_temporary_buffer"
@@ -64,7 +64,7 @@ manager: "ghogen"
 |-|-|-|  
 |[addressof](#addressof)|[align](#align)|[allocate_shared](#allocate_shared)|  
 |[const_pointer_cast](#const_pointer_cast)|[declare_no_pointers](#declare_no_pointers)|[declare_reachable](#declare_reachable)|  
-|[default_delete](#default_delete)|[dynamic_pointer_cast](#dynamic_pointer_cast)|[get_deleter Function](#get_deleter_function)|  
+|[default_delete](#default_delete)|[dynamic_pointer_cast](#dynamic_pointer_cast)|[get_deleter](#get_deleter)|  
 |[get_pointer_safety](#get_pointer_safety)|[get_temporary_buffer](#get_temporary_buffer)|[make_shared](#make_shared)|  
 |[make_unique](#make_unique)|[owner_less](#owner_less)|[return_temporary_buffer](#return_temporary_buffer)|  
 |[static_pointer_cast](#static_pointer_cast)|[swap (C++ Standard Library)](#swap)|[undeclare_no_pointers](#undeclare_no_pointers)|  
@@ -326,7 +326,7 @@ int main()
 sp1->val == 3  
 ```  
   
-##  <a name="get_deleter_function"></a>  get_deleter Function  
+##  <a name="get_deleter"></a>  get_deleter
  Get deleter from shared_ptr.  
   
 ```  

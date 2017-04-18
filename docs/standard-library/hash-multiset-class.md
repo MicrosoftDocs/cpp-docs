@@ -122,14 +122,14 @@ class hash_multiset
 |||  
 |-|-|  
 |[begin](#hash_multiset__begin)|Returns an iterator that addresses the first element in the `hash_multiset`.|  
-|[hash_multiset::cbegin](#hash_multiset__cbegin)|Returns a const iterator addressing the first element in the `hash_multiset`.|  
-|[hash_multiset::cend](#hash_multiset__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_multiset`.|  
+|[cbegin](#hash_multiset__cbegin)|Returns a const iterator addressing the first element in the `hash_multiset`.|  
+|[cend](#hash_multiset__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_multiset`.|  
 |[clear](#hash_multiset__clear)|Erases all the elements of a `hash_multiset`.|  
 |[count](#hash_multiset__count)|Returns the number of elements in a `hash_multiset` whose key matches a parameter-specified key|  
-|[hash_multiset::crbegin](#hash_multiset__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_multiset`.|  
-|[hash_multiset::crend](#hash_multiset__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_multiset`.|  
-|[hash_multiset::emplace](#hash_multiset__emplace)|Inserts an element constructed in place into a `hash_multiset`.|  
-|[hash_multiset::emplace_hint](#hash_multiset__emplace_hint)|Inserts an element constructed in place into a `hash_multiset`, with a placement hint.|  
+|[crbegin](#hash_multiset__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_multiset`.|  
+|[crend](#hash_multiset__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_multiset`.|  
+|[emplace](#hash_multiset__emplace)|Inserts an element constructed in place into a `hash_multiset`.|  
+|[emplace_hint](#hash_multiset__emplace_hint)|Inserts an element constructed in place into a `hash_multiset`, with a placement hint.|  
 |[empty](#hash_multiset__empty)|Tests if a `hash_multiset` is empty.|  
 |[end](#hash_multiset__end)|Returns an iterator that addresses the location succeeding the last element in a `hash_multiset`.|  
 |[equal_range](#hash_multiset__equal_range)|Returns a pair of iterators respectively to the first element in a `hash_multiset` with a key that is greater than a specified key and to the first element in the `hash_multiset` with a key that is equal to or greater than the key.|  

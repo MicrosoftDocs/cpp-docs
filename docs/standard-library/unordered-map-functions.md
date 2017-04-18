@@ -17,9 +17,9 @@ manager: "ghogen"
 # &lt;unordered_map&gt; functions
 |||  
 |-|-|  
-|[swap (unordered_map)](#swap_function)|[swap (unordered_multimap)](#swap_function_multimap)|  
+|[swap (unordered_map)](#swap)|[swap (unordered_multimap)](#swap_function_multimap)|  
   
-##  <a name="swap_function"></a>  swap (unordered_map)  
+##  <a name="swap"></a>  swap (unordered_map)  
  Swaps the contents of two containers.  
   
 ```  

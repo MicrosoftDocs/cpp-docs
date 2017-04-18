@@ -105,8 +105,8 @@ The random number generator engine. For possible types, see [\<random>](../stand
   
 ||||  
 |-|-|-|  
-|[extreme_value_distribution::extreme_value_distribution](#extreme_value_distribution__extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|  
-|`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[extreme_value_distribution::param_type](#extreme_value_distribution__param_type)|  
+|[extreme_value_distribution](#extreme_value_distribution__extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|  
+|`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[param_type](#extreme_value_distribution__param_type)|  
   
  The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
   

@@ -56,13 +56,13 @@ struct space_info	{
 |`unsigned long long free`|Represents the number of bytes that are not used to represent data on the volume.|  
   
 ## Requirements  
- **Header:** filesystem  
+ **Header:** \<filesystem>  
   
  **Namespace:** std::experimental::filesystem  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   
  [\<filesystem>](../standard-library/filesystem.md)   
- [space Function](http://msdn.microsoft.com/en-us/7fce0b0e-523b-4598-b218-47245d0204ca)   
+ [space](http://msdn.microsoft.com/en-us/7fce0b0e-523b-4598-b218-47245d0204ca)   
  [File System Navigation (C++)](../standard-library/file-system-navigation.md)
 

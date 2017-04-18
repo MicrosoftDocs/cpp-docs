@@ -130,14 +130,14 @@ class hash_multimap
 |||  
 |-|-|  
 |[begin](#hash_multimap__begin)|Returns an iterator addressing the first element in the `hash_multimap`.|  
-|[hash_multimap::cbegin](#hash_multimap__cbegin)|Returns a const iterator addressing the first element in the `hash_multimap`.|  
-|[hash_multimap::cend](#hash_multimap__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_multimap`.|  
+|[cbegin](#hash_multimap__cbegin)|Returns a const iterator addressing the first element in the `hash_multimap`.|  
+|[cend](#hash_multimap__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_multimap`.|  
 |[clear](#hash_multimap__clear)|Erases all the elements of a `hash_multimap`.|  
 |[count](#hash_multimap__count)|Returns the number of elements in a `hash_multimap` whose key matches a parameter-specified key.|  
-|[hash_multimap::crbegin](#hash_multimap__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_multimap`.|  
-|[hash_multimap::crend](#hash_multimap__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_multimap`.|  
-|[hash_multimap::emplace](#hash_multimap__emplace)|Inserts an element constructed in place into a `hash_multimap`.|  
-|[hash_multimap::emplace_hint](#hash_multimap__emplace_hint)|Inserts an element constructed in place into a `hash_multimap`, with a placement hint.|  
+|[crbegin](#hash_multimap__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_multimap`.|  
+|[crend](#hash_multimap__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_multimap`.|  
+|[emplace](#hash_multimap__emplace)|Inserts an element constructed in place into a `hash_multimap`.|  
+|[emplace_hint](#hash_multimap__emplace_hint)|Inserts an element constructed in place into a `hash_multimap`, with a placement hint.|  
 |[empty](#hash_multimap__empty)|Tests if a `hash_multimap` is empty.|  
 |[end](#hash_multimap__end)|Returns an iterator that addresses the location succeeding the last element in a `hash_multimap`.|  
 |[equal_range](#hash_multimap__equal_range)|Returns an iterator that addresses the location succeeding the last element in a `hash_multimap`.|  

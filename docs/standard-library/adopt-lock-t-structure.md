@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # adopt_lock_t Structure
-Represents a type that is used to define an [adopt_lock](../standard-library/mutex-functions.md#adopt_lock_variable).  
+Represents a type that is used to define an [adopt_lock](../standard-library/mutex-functions.md#adopt_lock).  
   
 ## Syntax  
   
@@ -43,7 +43,7 @@ struct adopt_lock_t;
 ```  
   
 ## Requirements  
- **Header:** mutex  
+ **Header:** \<mutex>  
   
  **Namespace:** std  
   

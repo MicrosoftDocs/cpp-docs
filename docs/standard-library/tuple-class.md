@@ -351,5 +351,5 @@ int main()
   
 ## See Also  
  [\<tuple>](../standard-library/tuple.md)   
- [make_tuple Function](../standard-library/tuple-functions.md#make_tuple_function)
+ [make_tuple](../standard-library/tuple-functions.md#make_tuple)
 

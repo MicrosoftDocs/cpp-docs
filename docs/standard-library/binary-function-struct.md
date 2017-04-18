@@ -9,10 +9,10 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std.binary_function"
-  - "functional/std::binary_function"
-  - "std::binary_function"
-  - "binary_function"
+  - "std.binary"
+  - "functional/std::binary"
+  - "std::binary"
+  - "binary"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
