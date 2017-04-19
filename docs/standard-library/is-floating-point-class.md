@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_floating_point"
-  - "std::is_floating_point"
-  - "type_traits/std::is_floating_point"
+f1_keywords: ['is_floating_point', 'type_traits/std::is_floating_point']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

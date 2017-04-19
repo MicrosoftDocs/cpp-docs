@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "memory/std::allocator<void>"
-  - "std::allocator<void>"
-  - "std.allocator<void>"
-  - "allocator<void>"
+f1_keywords: ['memory/std::allocator<void>', 'allocator<void>']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

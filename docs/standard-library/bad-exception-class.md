@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.bad_exception"
-  - "bad_exception"
-  - "exception/std::bad_exception"
+f1_keywords: ['bad_exception', 'exception/std::bad_exception']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

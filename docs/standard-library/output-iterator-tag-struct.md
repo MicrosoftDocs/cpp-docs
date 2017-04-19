@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::output_iterator_tag"
-  - "output_iterator_tag"
-  - "xutility/std::output_iterator_tag"
-  - "std.output_iterator_tag"
+f1_keywords: ['output_iterator_tag', 'xutility/std::output_iterator_tag']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

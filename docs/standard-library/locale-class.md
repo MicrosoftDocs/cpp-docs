@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xlocale/std::locale"
-  - "std::locale"
-  - "std.locale"
-  - "locale"
+f1_keywords: ['xlocale/std::locale', 'locale', 'locale/std::locale::category', 'locale/std::locale::combine', 'locale/std::locale::name', 'locale/std::locale::classic', 'locale/std::locale::global', 'locale/std::locale::operator( )', 'locale/std::locale::facet', 'locale/std::locale::id']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::gslice_array"
-  - "gslice_array"
-  - "valarray/std::gslice_array"
-  - "std.gslice_array"
+f1_keywords: ['gslice_array', 'valarray/std::gslice_array']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

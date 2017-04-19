@@ -8,15 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "integral_constant"
-  - "std::integral_constant"
-  - "type_traits/std::integral_constant"
-  - "XTR1COMMON/std::integral_constant"
-  - "bool_constant"
-  - "std::bool_constant"
-  - "type_traits/std::bool_constant"
-  - "XTR1COMMON/std::bool_constant"
+f1_keywords: ['integral_constant', 'type_traits/std::integral_constant', 'XTR1COMMON/std::integral_constant', 'bool_constant', 'type_traits/std::bool_constant', 'XTR1COMMON/std::bool_constant']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

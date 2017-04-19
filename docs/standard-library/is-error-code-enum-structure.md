@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "future/std::is_error_code_enum"
+f1_keywords: ['future/std::is_error_code_enum']  
 dev_langs: 
   - "C++"
 ms.assetid: 84ae4b99-66d2-41ba-9b50-645fcbe14630
@@ -44,7 +43,7 @@ struct is_error_code_enum<Future_errc> : public true_type;
 ```  
   
 ## Requirements  
- **Header:** \<fiuture>  
+ **Header:** \<future>  
   
  **Namespace:** std  
   

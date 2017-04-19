@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::num_put"
-  - "xlocnum/std::num_put"
-  - "num_put"
-  - "std.num_put"
+f1_keywords: ['xlocnum/std::num_put', 'num_put', 'locale/std::num_put::char_type', 'locale/std::num_put::iter_type', 'locale/std::num_put::do_put', 'locale/std::num_put::put']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

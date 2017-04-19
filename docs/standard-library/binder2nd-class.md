@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.binder2nd"
-  - "binder2nd"
-  - "xfunctional/std::binder2nd"
-  - "std::binder2nd"
+f1_keywords: ['binder2nd', 'xfunctional/std::binder2nd']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

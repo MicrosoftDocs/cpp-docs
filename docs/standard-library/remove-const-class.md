@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "remove_const"
-  - "std::remove_const"
-  - "type_traits/std::remove_const"
+f1_keywords: ['remove_const', 'type_traits/std::remove_const']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

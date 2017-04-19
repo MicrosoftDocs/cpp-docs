@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xlocmon/std::money_get"
-  - "money_get"
-  - "std.money_get"
-  - "std::money_get"
+f1_keywords: ['xlocmon/std::money_get', 'money_get', 'locale/std::money_get::char_type', 'locale/std::money_get::iter_type', 'locale/std::money_get::string_type', 'locale/std::money_get::do_get', 'locale/std::money_get::get']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

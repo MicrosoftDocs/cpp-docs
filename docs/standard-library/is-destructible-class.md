@@ -9,11 +9,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "is_destructible"
-  - "std.is_destructible"
-  - "std::is_destructible"
-  - "type_traits/std::is_destructible"
+f1_keywords: ['is_destructible', 'type_traits/std::is_destructible']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

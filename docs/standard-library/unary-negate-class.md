@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "unary_negate"
-  - "std::unary_negate"
-  - "std.unary_negate"
-  - "xfunctional/std::unary_negate"
+f1_keywords: ['unary_negate', 'xfunctional/std::unary_negate']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

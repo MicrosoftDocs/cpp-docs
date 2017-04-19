@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "mutex/std::once_flag"
+f1_keywords: ['mutex/std::once_flag']  
 dev_langs: 
   - "C++"
 ms.assetid: 71bfb88d-ca8c-4082-a6e1-ff52151e8629

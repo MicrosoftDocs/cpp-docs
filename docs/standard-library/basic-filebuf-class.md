@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.basic_filebuf"
-  - "fstream/std::basic_filebuf"
-  - "std::basic_filebuf"
-  - "basic_filebuf"
+f1_keywords: ['fstream/std::basic_filebuf', 'basic_filebuf', 'fstream/std::basic_filebuf::char_type', 'fstream/std::basic_filebuf::int_type', 'fstream/std::basic_filebuf::off_type', 'fstream/std::basic_filebuf::pos_type', 'fstream/std::basic_filebuf::traits_type', 'fstream/std::basic_filebuf::close', 'fstream/std::basic_filebuf::is_open', 'fstream/std::basic_filebuf::open', 'fstream/std::basic_filebuf::overflow', 'fstream/std::basic_filebuf::pbackfail', 'fstream/std::basic_filebuf::seekoff', 'fstream/std::basic_filebuf::seekpos', 'fstream/std::basic_filebuf::setbuf', 'fstream/std::basic_filebuf::Swap', 'fstream/std::basic_filebuf::sync', 'fstream/std::basic_filebuf::uflow', 'fstream/std::basic_filebuf::underflow']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

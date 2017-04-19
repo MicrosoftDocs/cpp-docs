@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::overflow_error"
-  - "std.overflow_error"
-  - "overflow_error"
-  - "stdexcept/std::overflow_error"
+f1_keywords: ['overflow_error', 'stdexcept/std::overflow_error']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::error_category"
-  - "system_error/std::error_category"
-  - "error_category"
-  - "std.error_category"
+f1_keywords: ['system_error/std::error_category', 'error_category', 'system_error/std::error_category::value_type', 'system_error/std::error_category::default_error_condition', 'system_error/std::error_category::equivalent', 'system_error/std::error_category::message', 'system_error/std::error_category::name']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::time_put"
-  - "time_put"
-  - "xloctime/std::time_put"
-  - "std.time_put"
+f1_keywords: ['time_put', 'xloctime/std::time_put', 'locale/std::time_put::char_type', 'locale/std::time_put::iter_type', 'locale/std::time_put::do_put', 'locale/std::time_put::put']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

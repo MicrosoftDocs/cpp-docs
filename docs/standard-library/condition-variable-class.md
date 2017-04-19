@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "condition_variable/std::condition"
+f1_keywords: ['condition_variable/std::condition', 'condition_variable/std::condition_variable::condition_variable', 'condition_variable/std::condition_variable::native_handle', 'condition_variable/std::condition_variable::notify_all', 'condition_variable/std::condition_variable::notify_one', 'condition_variable/std::condition_variable::wait', 'condition_variable/std::condition_variable::wait_for', 'condition_variable/std::condition_variable::wait_until']  
 dev_langs: 
   - "C++"
 ms.assetid: 80b1295c-b73d-4d46-b664-6e183f2eec1b

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext.sync_none"
-  - "sync_none"
-  - "allocators/stdext::sync_none"
-  - "stdext::sync_none"
+f1_keywords: ['sync_none', 'allocators/stdext::sync_none', 'stdext::sync_none', 'allocators/stdext::sync_none::allocate', 'allocators/stdext::sync_none::deallocate', 'allocators/stdext::sync_none::equals']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

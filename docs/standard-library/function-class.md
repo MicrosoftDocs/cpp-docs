@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "function"
-  - "std::function"
-  - "functional/std::function"
+f1_keywords: ['function', 'functional/std::function', 'functional/std::function::result_type', 'functional/std::function::assign', 'functional/std::function::swap', 'functional/std::function::target', 'functional/std::function::target_type', 'functional/std::function::operator unspecified', 'functional/std::function::operator()']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

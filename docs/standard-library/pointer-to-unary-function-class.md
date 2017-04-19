@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xfunctional/std::pointer_to_unary"
-  - "pointer_to_unary"
-  - "std.pointer_to_unary"
-  - "std::pointer_to_unary"
+f1_keywords: ['xfunctional/std::pointer_to_unary', 'pointer_to_unary']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

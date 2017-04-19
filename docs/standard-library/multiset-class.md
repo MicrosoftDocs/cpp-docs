@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::multiset"
-  - "set/std::multiset"
-  - "std.multiset"
-  - "multiset"
+f1_keywords: ['set/std::multiset', 'multiset', 'set/std::multiset::allocator_type', 'set/std::multiset::const_iterator', 'set/std::multiset::const_pointer', 'set/std::multiset::const_reference', 'set/std::multiset::const_reverse_iterator', 'set/std::multiset::difference_type', 'set/std::multiset::iterator', 'set/std::multiset::key_compare', 'set/std::multiset::key_type', 'set/std::multiset::pointer', 'set/std::multiset::reference', 'set/std::multiset::reverse_iterator', 'set/std::multiset::size_type', 'set/std::multiset::value_compare', 'set/std::multiset::value_type', 'set/std::multiset::begin', 'set/std::multiset::cbegin', 'set/std::multiset::cend', 'set/std::multiset::clear', 'set/std::multiset::count', 'set/std::multiset::crbegin', 'set/std::multiset::crend', 'set/std::multiset::emplace', 'set/std::multiset::emplace_hint', 'set/std::multiset::empty', 'set/std::multiset::end', 'set/std::multiset::equal_range', 'set/std::multiset::erase', 'set/std::multiset::find', 'set/std::multiset::get_allocator', 'set/std::multiset::insert', 'set/std::multiset::key_comp', 'set/std::multiset::lower_bound', 'set/std::multiset::max_size', 'set/std::multiset::rbegin', 'set/std::multiset::rend', 'set/std::multiset::size', 'set/std::multiset::swap', 'set/std::multiset::upper_bound', 'set/std::multiset::value_comp']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "aligned_storage"
-  - "std::aligned_storage"
-  - "type_traits/std::aligned_storage"
+f1_keywords: ['aligned_storage', 'type_traits/std::aligned_storage']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

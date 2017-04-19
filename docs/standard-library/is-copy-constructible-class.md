@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_copy_constructible"
-  - "std.is_copy_constructible"
-  - "std::is_copy_constructible"
-  - "type_traits/std::is_copy_constructible"
+f1_keywords: ['is_copy_constructible', 'type_traits/std::is_copy_constructible']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

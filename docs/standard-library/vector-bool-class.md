@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vector<bool>"
-  - "std.vector<bool>"
-  - "std::vector<bool>"
+f1_keywords: ['vector<bool>', 'vector/std::vector::const_pointer', 'vector/std::vector::const_reference', 'vector/std::vector::pointer', 'vector/std::vector::flip', 'vector/std::vector::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

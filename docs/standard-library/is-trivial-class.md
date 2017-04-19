@@ -9,10 +9,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "is_trivial"
-  - "std::is_trivial"
-  - "type_traits/std::is_trivial"
+f1_keywords: ['is_trivial', 'type_traits/std::is_trivial']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

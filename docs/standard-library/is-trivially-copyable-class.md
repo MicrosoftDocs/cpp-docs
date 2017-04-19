@@ -9,11 +9,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "is_trivially_copyable"
-  - "std.is_trivially_copyable"
-  - "std::is_trivially_copyable"
-  - "type_traits/std::is_trivially_copyable"
+f1_keywords: ['is_trivially_copyable', 'type_traits/std::is_trivially_copyable']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

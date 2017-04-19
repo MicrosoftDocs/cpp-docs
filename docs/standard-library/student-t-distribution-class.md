@@ -8,17 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "student_t_distribution"
-  - "std::student_t_distribution"
-  - "random/std::student_t_distribution"
-  - "random/std::student_t_distribution::result_type"
-  - "random/std::student_t_distribution::reset"
-  - "random/std::student_t_distribution::operator()"
-  - "random/std::student_t_distribution::n"
-  - "random/std::student_t_distribution::param"
-  - "random/std::student_t_distribution::min"
-  - "random/std::student_t_distribution::max"
+f1_keywords: ['student_t_distribution', 'random/std::student_t_distribution', 'random/std::student_t_distribution::result_type', 'random/std::student_t_distribution::reset', 'random/std::student_t_distribution::operator()', 'random/std::student_t_distribution::n', 'random/std::student_t_distribution::param', 'random/std::student_t_distribution::min', 'random/std::student_t_distribution::max', 'random/std::student_t_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

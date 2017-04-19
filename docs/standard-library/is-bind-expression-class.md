@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_bind_expression"
-  - "std::is_bind_expression"
-  - "functional/std::is_bind_expression"
+f1_keywords: ['is_bind_expression', 'functional/std::is_bind_expression']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

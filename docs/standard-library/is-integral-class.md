@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_integral"
-  - "std::is_integral"
-  - "type_traits/std::is_integral"
+f1_keywords: ['is_integral', 'type_traits/std::is_integral']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -12,6 +12,11 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "output streams, member functions"
+f1_keywords: []  
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "output streams, member functions"
 ms.assetid: 38aaf710-8035-4a34-a0c4-123a5327f28a
 caps.latest.revision: 8
 author: "corob-msft"

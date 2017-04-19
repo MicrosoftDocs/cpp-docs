@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::raw_storage_iterator"
-  - "raw_storage_iterator"
-  - "std.raw_storage_iterator"
-  - "memory/std::raw_storage_iterator"
+f1_keywords: ['raw_storage_iterator', 'memory/std::raw_storage_iterator', 'memory/std::raw_storage_iterator::element_type', 'memory/std::raw_storage_iterator::iter_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

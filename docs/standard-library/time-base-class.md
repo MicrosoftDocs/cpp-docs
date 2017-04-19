@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.time_base"
-  - "std::time_base"
-  - "time_base"
-  - "locale/std::time_base"
+f1_keywords: ['time_base', 'locale/std::time_base']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

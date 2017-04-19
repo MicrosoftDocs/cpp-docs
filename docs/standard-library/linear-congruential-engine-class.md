@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "linear_congruential_engine"
-  - "std::linear_congruential_engine"
-  - "random/std::linear_congruential_engine"
+f1_keywords: ['linear_congruential_engine', 'random/std::linear_congruential_engine']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

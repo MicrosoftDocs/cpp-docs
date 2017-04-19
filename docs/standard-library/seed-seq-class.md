@@ -8,18 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "seed_seq"
-  - "std::seed_seq"
-  - "random/std::seed_seq"
-  - "std::seed_seq::result_type"
-  - "random/std::seed_seq::result_type"
-  - "std::seed_seq::generate"
-  - "random/std::seed_seq::generate"
-  - "std::seed_seq::size"
-  - "random/std::seed_seq::size"
-  - "std::seed_seq::param"
-  - "random/std::seed_seq::param"
+f1_keywords: ['seed_seq', 'random/std::seed_seq', 'random/std::seed_seq::result_type', 'random/std::seed_seq::generate', 'random/std::seed_seq::size', 'random/std::seed_seq::param']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

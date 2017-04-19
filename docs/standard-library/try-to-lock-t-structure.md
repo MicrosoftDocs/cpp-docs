@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "mutex/std::try_to_lock_t"
+f1_keywords: ['mutex/std::try_to_lock_t']  
 dev_langs: 
   - "C++"
 ms.assetid: 3e48d632-0387-4871-8257-34efef5d6b83

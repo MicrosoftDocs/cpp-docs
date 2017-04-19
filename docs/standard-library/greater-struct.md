@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "greater"
-  - "xfunctional/std::greater"
-  - "std.greater"
-  - "std::greater"
+f1_keywords: ['greater', 'xfunctional/std::greater']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

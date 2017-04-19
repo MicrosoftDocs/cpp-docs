@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "utility/std::pair"
-  - "pair"
-  - "std::pair"
-  - "std.pair"
+f1_keywords: ['utility/std::pair', 'pair']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

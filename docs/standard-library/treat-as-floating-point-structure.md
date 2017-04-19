@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "chrono/std::chrono::treat_as_floating_point"
+f1_keywords: ['chrono/std::chrono::treat_as_floating_point']  
 dev_langs: 
   - "C++"
 ms.assetid: d0a2161c-bbb2-4924-8961-7568d5ad5434

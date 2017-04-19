@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::iterator_traits"
-  - "xutility/std::iterator_traits"
-  - "iterator_traits"
-  - "std.iterator_traits"
+f1_keywords: ['xutility/std::iterator_traits', 'iterator_traits']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "chrono/std::chrono::steady_clock"
+f1_keywords: ['chrono/std::chrono::steady_clock']  
 dev_langs: 
   - "C++"
 ms.assetid: 970d12ec-fc80-4391-a2f7-b57b2aec668d

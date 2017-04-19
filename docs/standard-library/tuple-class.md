@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "tuple"
-  - "std::tuple"
-  - "tuple/std::tuple"
-  - "tuple/std::tuple::operator="
+f1_keywords: ['tuple', 'tuple/std::tuple', 'tuple/std::tuple::operator=']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

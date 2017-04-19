@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_enum"
-  - "std::is_enum"
-  - "type_traits/std::is_enum"
+f1_keywords: ['is_enum', 'type_traits/std::is_enum']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

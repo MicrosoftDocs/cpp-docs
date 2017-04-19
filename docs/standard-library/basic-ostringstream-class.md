@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "basic_ostringstream"
-  - "std.basic_ostringstream"
-  - "sstream/std::basic_ostringstream"
-  - "std::basic_ostringstream"
+f1_keywords: ['basic_ostringstream', 'sstream/std::basic_ostringstream', 'sstream/std::basic_ostringstream::allocator_type', 'sstream/std::basic_ostringstream::rdbuf', 'sstream/std::basic_ostringstream::str']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
