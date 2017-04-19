@@ -398,7 +398,7 @@
 #### [pgomgr](pgomgr.md)
 #### [pgosweep](pgosweep.md)
 ### [How to: Merge Multiple PGO Profiles into a Single Profile](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
-# [Compiler Errors C2001 to C2499](../../error-messages/compiler-errors-1/TOC.md)
+# [Compiler Errors C999 to C2499](../../error-messages/compiler-errors-1/TOC.md)
 # [Compiler Errors C2500 to C3999](../../error-messages/compiler-errors-2/TOC.md)
 # [Compiler Warnings](../../error-messages/compiler-warnings/TOC.md)
 # [Tool Errors](../../error-messages/tool-errors/TOC.md)

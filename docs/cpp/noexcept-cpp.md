@@ -65,4 +65,4 @@ T copy_object(const T& obj) noexcept(std::is_pod<T>)
   
 ## See Also  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)
- [Exception Specifications (throw, noexcept)](../cpp/exception-specifications-throw.md)
+ [Exception Specifications (throw, noexcept)](../cpp/exception-specifications-throw-cpp.md)
