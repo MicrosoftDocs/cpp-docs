@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.ole"
+f1_keywords: ['afxdisp/AfxOleInit', 'afxdisp/AfxEnableControlContainer']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
