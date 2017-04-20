@@ -116,7 +116,7 @@ public ref class MySTAClass
   
 ```  
   
- An unsealed class must have marshaling and threading attribute settings so that the compiler can verify that derived classes have the same value for these attributes. If the class doesn't have the settings set explicitly, the compiler generates an error and fails to compile. Any class that's derived from an unsealedclass generates a compiler error in either of these cases:  
+ An unsealed class must have marshaling and threading attribute settings so that the compiler can verify that derived classes have the same value for these attributes. If the class doesn't have the settings set explicitly, the compiler generates an error and fails to compile. Any class that's derived from an unsealed class generates a compiler error in either of these cases:  
   
 -   The `ThreadingModel` and `MarshallingBehavior` attributes are not defined in the derived class.  
   
