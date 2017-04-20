@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "basic_stringbuf"
-  - "sstream/std::basic_stringbuf"
-  - "std.basic_stringbuf"
-  - "std::basic_stringbuf"
+f1_keywords: ['basic_stringbuf', 'sstream/std::basic_stringbuf', 'sstream/std::basic_stringbuf::allocator_type', 'sstream/std::basic_stringbuf::char_type', 'sstream/std::basic_stringbuf::int_type', 'sstream/std::basic_stringbuf::off_type', 'sstream/std::basic_stringbuf::pos_type', 'sstream/std::basic_stringbuf::traits_type', 'sstream/std::basic_stringbuf::overflow', 'sstream/std::basic_stringbuf::pbackfail', 'sstream/std::basic_stringbuf::seekoff', 'sstream/std::basic_stringbuf::seekpos', 'sstream/std::basic_stringbuf::str', 'sstream/std::basic_stringbuf::underflow']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

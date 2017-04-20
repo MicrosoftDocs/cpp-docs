@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.strstreambuf"
-  - "strstreambuf"
-  - "std::strstreambuf"
+f1_keywords: ['strstreambuf', 'strstream/std::strstreambuf::freeze', 'strstream/std::strstreambuf::overflow', 'strstream/std::strstreambuf::pbackfail', 'strstream/std::strstreambuf::pcount', 'strstream/std::strstreambuf::seekoff', 'strstream/std::strstreambuf::seekpos', 'strstream/std::strstreambuf::str', 'strstream/std::strstreambuf::underflow']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

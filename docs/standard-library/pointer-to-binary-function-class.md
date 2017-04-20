@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::pointer_to_binary"
-  - "xfunctional/std::pointer_to_binary"
-  - "pointer_to_binary"
-  - "std.pointer_to_binary"
+f1_keywords: ['xfunctional/std::pointer_to_binary', 'pointer_to_binary']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

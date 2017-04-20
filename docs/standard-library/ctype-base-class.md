@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "locale/std::ctype_base"
-  - "std.ctype_base"
-  - "ctype_base"
-  - "std::ctype_base"
+f1_keywords: ['locale/std::ctype_base', 'ctype_base']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

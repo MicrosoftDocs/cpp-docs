@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext::cvt::wbuffer_convert"
-  - "wbuffer_convert"
-  - "stdext.cvt.wbuffer_convert"
-  - "cvt.wbuffer_convert"
-  - "cvt::wbuffer_convert"
-  - "wbuffer/stdext::cvt::wbuffer_convert"
+f1_keywords: ['stdext::cvt::wbuffer_convert', 'wbuffer_convert', 'cvt::wbuffer_convert', 'wbuffer/stdext::cvt::wbuffer_convert']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

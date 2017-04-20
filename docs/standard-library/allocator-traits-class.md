@@ -8,19 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "memory/std::allocator_traits"
-  - "memory/std::allocator_traits::propagate_on_container_move_assignment"
-  - "memory/std::allocator_traits::const_pointer"
-  - "memory/std::allocator_traits::propagate_on_container_swap"
-  - "memory/std::allocator_traits::propagate_on_container_copy_assignment"
-  - "memory/std::allocator_traits::difference_type"
-  - "memory/std::allocator_traits::allocator_type"
-  - "memory/std::allocator_traits::value_type"
-  - "memory/std::allocator_traits::pointer"
-  - "memory/std::allocator_traits::size_type"
-  - "memory/std::allocator_traits::const_void_pointer"
-  - "memory/std::allocator_traits::void_pointer"
+f1_keywords: ['memory/std::allocator_traits', 'memory/std::allocator_traits::propagate_on_container_move_assignment', 'memory/std::allocator_traits::const_pointer', 'memory/std::allocator_traits::propagate_on_container_swap', 'memory/std::allocator_traits::propagate_on_container_copy_assignment', 'memory/std::allocator_traits::difference_type', 'memory/std::allocator_traits::allocator_type', 'memory/std::allocator_traits::value_type', 'memory/std::allocator_traits::pointer', 'memory/std::allocator_traits::size_type', 'memory/std::allocator_traits::const_void_pointer', 'memory/std::allocator_traits::void_pointer', 'memory/std::allocator_traits::allocate', 'memory/std::allocator_traits::construct', 'memory/std::allocator_traits::deallocate', 'memory/std::allocator_traits::destroy', 'memory/std::allocator_traits::max_size', 'memory/std::allocator_traits::select_on_container_copy_construction']  
 dev_langs: 
   - "C++"
 ms.assetid: 612974b8-b5d4-4668-82fb-824bff6821d6

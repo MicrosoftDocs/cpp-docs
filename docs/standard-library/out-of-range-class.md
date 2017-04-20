@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "out_of_range"
-  - "stdexcept/std::out_of_range"
-  - "std.out_of_range"
-  - "std::out_of_range"
+f1_keywords: ['out_of_range', 'stdexcept/std::out_of_range']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

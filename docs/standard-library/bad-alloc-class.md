@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::bad_alloc"
-  - "new/std::bad_alloc"
-  - "bad_alloc"
-  - "std.bad_alloc"
+f1_keywords: ['new/std::bad_alloc', 'bad_alloc']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

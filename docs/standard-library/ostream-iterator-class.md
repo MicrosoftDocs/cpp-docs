@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ostream_iterator"
-  - "std.ostream_iterator"
-  - "std::ostream_iterator"
-  - "iterator/std::ostream_iterator"
+f1_keywords: ['ostream_iterator', 'iterator/std::ostream_iterator', 'iterator/std::ostream_iterator::char_type', 'iterator/std::ostream_iterator::ostream_type', 'iterator/std::ostream_iterator::traits_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

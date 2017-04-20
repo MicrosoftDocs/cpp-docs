@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::allocator"
-  - "allocator"
-  - "memory/std::allocator"
-  - "std.allocator"
+f1_keywords: ['allocator', 'memory/std::allocator', 'memory/std::allocator::const_pointer', 'memory/std::allocator::const_reference', 'memory/std::allocator::difference_type', 'memory/std::allocator::pointer', 'memory/std::allocator::reference', 'memory/std::allocator::size_type', 'memory/std::allocator::value_type', 'memory/std::allocator::address', 'memory/std::allocator::allocate', 'memory/std::allocator::construct', 'memory/std::allocator::deallocate', 'memory/std::allocator::destroy', 'memory/std::allocator::max_size', 'memory/std::allocator::rebind']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

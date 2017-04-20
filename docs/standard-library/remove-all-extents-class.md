@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "remove_all_extents"
-  - "std::remove_all_extents"
-  - "type_traits/std::remove_all_extents"
+f1_keywords: ['remove_all_extents', 'type_traits/std::remove_all_extents']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

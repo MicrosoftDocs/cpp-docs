@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::identity"
-  - "utility/std::identity"
-  - "identity"
-  - "std.identity"
+f1_keywords: ['utility/std::identity', 'identity']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

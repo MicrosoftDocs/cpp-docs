@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "chrono/std::chrono::duration_values"
+f1_keywords: ['chrono/std::chrono::duration_values', 'chrono/std::chrono::duration_values::max', 'chrono/std::chrono::duration_values::min', 'chrono/std::chrono::duration_values::zero']  
 dev_langs: 
   - "C++"
 ms.assetid: 7f66d2e3-1faf-47c3-b47e-08f2a87f20e8

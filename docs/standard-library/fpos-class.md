@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.fpos"
-  - "std::fpos"
-  - "iosfwd/std::fpos"
-  - "fpos"
+f1_keywords: ['iosfwd/std::fpos', 'fpos', 'ios/std::fpos::seekpos', 'ios/std::fpos::state', 'ios/std::fpos::operator streamoff']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

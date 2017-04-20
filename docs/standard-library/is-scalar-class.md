@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_scalar"
-  - "std::is_scalar"
-  - "type_traits/std::is_scalar"
+f1_keywords: ['is_scalar', 'type_traits/std::is_scalar']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

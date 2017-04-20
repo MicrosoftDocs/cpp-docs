@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xlocnum/std::numpunct"
-  - "std::numpunct"
-  - "numpunct"
-  - "std.numpunct"
+f1_keywords: ['xlocnum/std::numpunct', 'numpunct', 'locale/std::numpunct::char_type', 'locale/std::numpunct::string_type', 'locale/std::numpunct::decimal_point', 'locale/std::numpunct::do_decimal_point', 'locale/std::numpunct::do_falsename', 'locale/std::numpunct::do_grouping', 'locale/std::numpunct::do_thousands_sep', 'locale/std::numpunct::do_truename', 'locale/std::numpunct::falsename', 'locale/std::numpunct::grouping', 'locale/std::numpunct::thousands_sep', 'locale/std::numpunct::truename']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

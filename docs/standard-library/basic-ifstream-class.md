@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "basic_ifstream"
-  - "fstream/std::basic_ifstream"
-  - "std::basic_ifstream"
-  - "std.basic_ifstream"
+f1_keywords: ['basic_ifstream', 'fstream/std::basic_ifstream', 'fstream/std::basic_ifstream::close', 'fstream/std::basic_ifstream::is_open', 'fstream/std::basic_ifstream::open', 'fstream/std::basic_ifstream::rdbuf', 'fstream/std::basic_ifstream::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

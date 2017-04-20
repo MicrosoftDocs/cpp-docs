@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "future/std::shared_future"
+f1_keywords: ['future/std::shared_future', 'future/std::shared_future::shared_future', 'future/std::shared_future::get', 'future/std::shared_future::valid', 'future/std::shared_future::wait', 'future/std::shared_future::wait_for', 'future/std::shared_future::wait_until']  
 dev_langs: 
   - "C++"
 ms.assetid: 454ebedd-f42b-405f-99a5-a25cc9ad7c90

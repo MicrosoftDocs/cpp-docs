@@ -8,14 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "allocators::allocator_suballoc"
-  - "allocator_suballoc"
-  - "stdext.allocators.allocator_suballoc"
-  - "allocators/stdext::allocators::allocator_suballoc"
-  - "stdext::allocators::allocator_suballoc"
-  - "allocators/stdext::allocator_suballoc"
-  - "allocators.allocator_suballoc"
+f1_keywords: ['allocators::allocator_suballoc', 'allocator_suballoc', 'allocators/stdext::allocators::allocator_suballoc', 'stdext::allocators::allocator_suballoc', 'allocators/stdext::allocator_suballoc']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

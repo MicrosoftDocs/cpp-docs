@@ -6,6 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: [ 'system_error/std::errc', 'system_error/std::io_errc']  
 ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
 caps.latest.revision: 12
 manager: "ghogen"

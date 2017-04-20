@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "istrstream"
-  - "std::istrstream"
-  - "std.istrstream"
+f1_keywords: ['istrstream', 'strstream/std::istrstream::rdbuf', 'strstream/std::istrstream::str']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

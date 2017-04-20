@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_base_of"
-  - "std::is_base_of"
-  - "type_traits/std::is_base_of"
+f1_keywords: ['is_base_of', 'type_traits/std::is_base_of']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

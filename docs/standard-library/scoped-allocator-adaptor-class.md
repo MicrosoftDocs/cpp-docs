@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.scoped_allocator_adaptor"
-  - "scoped_allocator_adaptor"
-  - "scoped_allocator/std::scoped_allocator_adaptor"
-  - "std::scoped_allocator_adaptor"
+f1_keywords: ['scoped_allocator_adaptor', 'scoped_allocator/std::scoped_allocator_adaptor', 'scoped_allocator/std::scoped_allocator_adaptor::rebind Struct', 'scoped_allocator/std::scoped_allocator_adaptor::allocate', 'scoped_allocator/std::scoped_allocator_adaptor::construct', 'scoped_allocator/std::scoped_allocator_adaptor::deallocate', 'scoped_allocator/std::scoped_allocator_adaptor::destroy', 'scoped_allocator/std::scoped_allocator_adaptor::inner_allocator', 'scoped_allocator/std::scoped_allocator_adaptor::max_size', 'scoped_allocator/std::scoped_allocator_adaptor::outer_allocator', 'scoped_allocator/std::scoped_allocator_adaptor::select_on_container_copy_construction']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

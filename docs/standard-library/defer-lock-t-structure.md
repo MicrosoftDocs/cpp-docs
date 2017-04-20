@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "mutex/std::defer_lock_t"
+f1_keywords: ['mutex/std::defer_lock_t']  
 dev_langs: 
   - "C++"
 ms.assetid: 4c4588eb-ca51-4949-b5d1-8539cc4577ad

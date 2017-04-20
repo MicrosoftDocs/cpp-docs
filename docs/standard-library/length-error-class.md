@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdexcept/std::length_error"
-  - "length_error"
-  - "std::length_error"
-  - "std.length_error"
+f1_keywords: ['stdexcept/std::length_error', 'length_error']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

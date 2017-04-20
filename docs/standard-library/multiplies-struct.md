@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::multiplies"
-  - "multiplies"
-  - "xfunctional/std::multiplies"
-  - "std.multiplies"
+f1_keywords: ['multiplies', 'xfunctional/std::multiplies']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

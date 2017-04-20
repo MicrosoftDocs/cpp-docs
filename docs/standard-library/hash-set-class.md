@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "hash_set/stdext::hash_set"
-  - "std::hash_set"
-  - "std.hash_set"
-  - "stdext::hash_set"
-  - "hash_set"
-  - "stdext.hash_set"
+f1_keywords: ['hash_set/stdext::hash_set', 'stdext::hash_set', 'hash_set', 'hash_set/stdext::hash_set::allocator_type', 'hash_set/stdext::hash_set::const_iterator', 'hash_set/stdext::hash_set::const_pointer', 'hash_set/stdext::hash_set::const_reference', 'hash_set/stdext::hash_set::const_reverse_iterator', 'hash_set/stdext::hash_set::difference_type', 'hash_set/stdext::hash_set::iterator', 'hash_set/stdext::hash_set::key_compare', 'hash_set/stdext::hash_set::key_type', 'hash_set/stdext::hash_set::pointer', 'hash_set/stdext::hash_set::reference', 'hash_set/stdext::hash_set::reverse_iterator', 'hash_set/stdext::hash_set::size_type', 'hash_set/stdext::hash_set::value_compare', 'hash_set/stdext::hash_set::value_type', 'hash_set/stdext::hash_set::begin', 'hash_set/stdext::hash_set::cbegin', 'hash_set/stdext::hash_set::cend', 'hash_set/stdext::hash_set::clear', 'hash_set/stdext::hash_set::count', 'hash_set/stdext::hash_set::crbegin', 'hash_set/stdext::hash_set::crend', 'hash_set/stdext::hash_set::emplace', 'hash_set/stdext::hash_set::emplace_hint', 'hash_set/stdext::hash_set::empty', 'hash_set/stdext::hash_set::end', 'hash_set/stdext::hash_set::equal_range', 'hash_set/stdext::hash_set::erase', 'hash_set/stdext::hash_set::find', 'hash_set/stdext::hash_set::get_allocator', 'hash_set/stdext::hash_set::insert', 'hash_set/stdext::hash_set::key_comp', 'hash_set/stdext::hash_set::lower_bound', 'hash_set/stdext::hash_set::max_size', 'hash_set/stdext::hash_set::rbegin', 'hash_set/stdext::hash_set::rend', 'hash_set/stdext::hash_set::size', 'hash_set/stdext::hash_set::swap', 'hash_set/stdext::hash_set::upper_bound', 'hash_set/stdext::hash_set::value_comp']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

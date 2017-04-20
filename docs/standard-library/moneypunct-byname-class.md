@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.moneypunct_byname"
-  - "std::moneypunct_byname"
-  - "xlocmon/std::moneypunct_byname"
-  - "moneypunct_byname"
+f1_keywords: ['xlocmon/std::moneypunct_byname', 'moneypunct_byname']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

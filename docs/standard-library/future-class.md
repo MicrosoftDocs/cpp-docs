@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "future/std::future"
+f1_keywords: ['future/std::future', 'future/std::future::future', 'future/std::future::get', 'future/std::future::share', 'future/std::future::valid', 'future/std::future::wait', 'future/std::future::wait_for', 'future/std::future::wait_until']  
 dev_langs: 
   - "C++"
 ms.assetid: 495e82c3-5341-4e37-87dd-b40107fbdfb6
@@ -72,7 +71,7 @@ class future;
 |[future::operator=](#future__operator_eq)|Transfers the associated asynchronous state from a specified object.|  
   
 ## Requirements  
- **Header:** \<fiuture>  
+ **Header:** \<future>  
   
  **Namespace:** std  
   

@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "cvt.wstring_convert"
-  - "wstring_convert"
-  - "stdext::cvt::wstring_convert"
-  - "cvt::wstring_convert"
-  - "wstring/stdext::cvt::wstring_convert"
-  - "stdext.cvt.wstring_convert"
+f1_keywords: ['wstring_convert', 'stdext::cvt::wstring_convert', 'cvt::wstring_convert', 'wstring/stdext::cvt::wstring_convert', 'locale/std::wstring_convert::byte_string', 'locale/std::wstring_convert::wide_string', 'locale/std::wstring_convert::state_type', 'locale/std::wstring_convert::int_type', 'locale/std::wstring_convert::from_bytes', 'locale/std::wstring_convert::to_bytes', 'locale/std::wstring_convert::converted', 'locale/std::wstring_convert::state']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

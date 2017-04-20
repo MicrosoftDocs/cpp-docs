@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "codecvt_utf8_utf16"
-  - "codecvt/std::cvt_utf8_utf16"
-  - "std::codecvt_utf8_utf16"
-  - "std.codecvt_utf8_utf16"
+f1_keywords: ['codecvt_utf8_utf16', 'codecvt/std::cvt_utf8_utf16']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

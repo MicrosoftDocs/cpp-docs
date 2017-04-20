@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "remove_cv"
-  - "std::remove_cv"
-  - "type_traits/std::remove_cv"
+f1_keywords: ['remove_cv', 'type_traits/std::remove_cv']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

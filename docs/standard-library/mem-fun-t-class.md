@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "mem_fun_t"
-  - "xfunctional/std::mem_fun_t"
-  - "std::mem_fun_t"
-  - "std.mem_fun_t"
+f1_keywords: ['mem_fun_t', 'xfunctional/std::mem_fun_t']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

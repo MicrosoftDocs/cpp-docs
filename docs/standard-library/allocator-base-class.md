@@ -8,16 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "allocators.allocator_base"
-  - "stdext.allocators.allocator_base"
-  - "allocator_base"
-  - "allocators/stdext::allocator_base"
-  - "stdext::allocator_base"
-  - "stdext::allocators::allocator_base"
-  - "allocators/stdext::allocators::allocator_base"
-  - "allocators::allocator_base"
-  - "stdext.allocator_base"
+f1_keywords: ['allocator_base', 'allocators/stdext::allocator_base', 'stdext::allocator_base', 'stdext::allocators::allocator_base', 'allocators/stdext::allocators::allocator_base', 'allocators::allocator_base', 'allocators/stdext::allocator_base::const_pointer', 'allocators/stdext::allocator_base::const_reference', 'allocators/stdext::allocator_base::difference_type', 'allocators/stdext::allocator_base::pointer', 'allocators/stdext::allocator_base::reference', 'allocators/stdext::allocator_base::size_type', 'allocators/stdext::allocator_base::value_type', 'allocators/stdext::allocator_base::_Charalloc', 'allocators/stdext::allocator_base::_Chardealloc', 'allocators/stdext::allocator_base::address', 'allocators/stdext::allocator_base::allocate', 'allocators/stdext::allocator_base::construct', 'allocators/stdext::allocator_base::deallocate', 'allocators/stdext::allocator_base::destroy', 'allocators/stdext::allocator_base::max_size']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

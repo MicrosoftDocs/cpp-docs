@@ -8,27 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "filesystem/std::experimental::filesystem::directory_iterator"
-  - "directory_iterator"
-  - "filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator"
-  - "filesystem/std::experimental::filesystem::directory_iterator"
-  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::directory_iterator"
-  - "std::experimental::filesystem::directory_iterator::directory_iterator"
-  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::increment"
-  - "std::experimental::filesystem::directory_iterator::increment"
-  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator="
-  - "std::experimental::filesystem::directory_iterator::operator="
-  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator=="
-  - "std::experimental::filesystem::directory_iterator::operator=="
-  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator!="
-  - "std::experimental::filesystem::directory_iterator::operator!="
-  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator*"
-  - "std::experimental::filesystem::directory_iterator::operator*"
-  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator->"
-  - "std::experimental::filesystem::directory_iterator::operator->"
-  - "FILESYSTEM/std::experimental::filesystem::directory_iterator::operator++"
-  - "std::experimental::filesystem::directory_iterator::operator++"
+f1_keywords: ['filesystem/std::experimental::filesystem::directory_iterator', 'directory_iterator', 'filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator', 'filesystem/std::experimental::filesystem::directory_iterator', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::directory_iterator', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::increment', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator=', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator==', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator!=', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator*', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator->', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator++']  
 dev_langs: 
   - "C++"
 ms.assetid: dca2ecf8-3e69-4644-a83d-705061e10cc8

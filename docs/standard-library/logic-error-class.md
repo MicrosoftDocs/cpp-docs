@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdexcept/std::logic_error"
-  - "std::logic_error"
-  - "logic_error"
-  - "std.logic_error"
+f1_keywords: ['stdexcept/std::logic_error', 'logic_error']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

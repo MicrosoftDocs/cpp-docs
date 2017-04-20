@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_compound"
-  - "std::is_compound"
-  - "type_traits/std::is_compound"
+f1_keywords: ['is_compound', 'type_traits/std::is_compound']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

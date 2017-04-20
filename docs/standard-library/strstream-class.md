@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::strstream"
-  - "strstream"
-  - "std.strstream"
+f1_keywords: ['strstream', 'strstream/std::strstream::freeze', 'strstream/std::strstream::pcount', 'strstream/std::strstream::rdbuf', 'strstream/std::strstream::str']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

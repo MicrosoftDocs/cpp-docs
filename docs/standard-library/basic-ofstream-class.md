@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::basic_ofstream"
-  - "basic_ofstream"
-  - "std.basic_ofstream"
-  - "fstream/std::basic_ofstream"
+f1_keywords: ['basic_ofstream', 'fstream/std::basic_ofstream', 'fstream/std::basic_ofstream::close', 'fstream/std::basic_ofstream::is_open', 'fstream/std::basic_ofstream::open', 'fstream/std::basic_ofstream::rdbuf', 'fstream/std::basic_ofstream::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

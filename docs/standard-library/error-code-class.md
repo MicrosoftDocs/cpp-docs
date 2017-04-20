@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "error_code"
-  - "std.error_code"
-  - "std::error_code"
-  - "system_error/std::error_code"
+f1_keywords: ['error_code', 'system_error/std::error_code', 'system_error/std::error_code::value_type', 'system_error/std::error_code::assign', 'system_error/std::error_code::category', 'system_error/std::error_code::clear', 'system_error/std::error_code::default_error_condition', 'system_error/std::error_code::message', 'system_error/std::error_code::operator bool']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

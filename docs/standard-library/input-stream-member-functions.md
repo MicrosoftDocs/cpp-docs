@@ -13,6 +13,12 @@ dev_langs:
 helpviewer_keywords: 
   - "input stream objects"
   - "input streams, member functions"
+f1_keywords: []  
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "input stream objects"
+  - "input streams, member functions"
 ms.assetid: b4b9465d-0da9-4ccf-859d-72a68418982e
 caps.latest.revision: 7
 author: "corob-msft"

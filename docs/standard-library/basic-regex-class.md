@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "basic_regex"
-  - "std::basic_regex"
-  - "regex/std::basic_regex"
+f1_keywords: ['basic_regex', 'regex/std::basic_regex']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "bitset/std::bitset"
-  - "std::bitset"
-  - "std.bitset"
-  - "bitset"
+f1_keywords: ['bitset/std::bitset', 'bitset', 'bitset/std::bitset::element_type', 'bitset/std::bitset::all', 'bitset/std::bitset::any', 'bitset/std::bitset::count', 'bitset/std::bitset::flip', 'bitset/std::bitset::none', 'bitset/std::bitset::reset', 'bitset/std::bitset::set', 'bitset/std::bitset::size', 'bitset/std::bitset::test', 'bitset/std::bitset::to_string', 'bitset/std::bitset::to_ullong', 'bitset/std::bitset::to_ulong', 'bitset/std::bitset::reference']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

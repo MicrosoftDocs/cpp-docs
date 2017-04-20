@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "chrono/std::common_type"
+f1_keywords: ['chrono/std::common_type']  
 dev_langs: 
   - "C++"
 ms.assetid: 2b42722c-c3dc-4d62-8613-0271e52b6f00

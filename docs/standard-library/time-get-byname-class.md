@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.time_get_byname"
-  - "time_get_byname"
-  - "xloctime/std::time_get_byname"
-  - "std::time_get_byname"
+f1_keywords: ['time_get_byname', 'xloctime/std::time_get_byname']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

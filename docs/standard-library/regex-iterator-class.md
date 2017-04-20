@@ -8,20 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "regex_iterator"
-  - "std::regex_iterator"
-  - "regex/std::regex_iterator"
-  - "std::regex_iterator::operator=="
-  - "regex/std::regex_iterator::operator=="
-  - "std::regex_iterator::operator!="
-  - "regex/std::regex_iterator::operator!="
-  - "std::regex_iterator::operator*"
-  - "regex/std::regex_iterator::operator*"
-  - "std::regex_iterator::operator->"
-  - "regex/std::regex_iterator::operator->"
-  - "std::regex_iterator::operator++"
-  - "regex/std::regex_iterator::operator++"
+f1_keywords: ['regex_iterator', 'regex/std::regex_iterator', 'regex/std::regex_iterator::operator==', 'regex/std::regex_iterator::operator!=', 'regex/std::regex_iterator::operator*', 'regex/std::regex_iterator::operator->', 'regex/std::regex_iterator::operator++']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

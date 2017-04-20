@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.priority_queue"
-  - "priority_queue"
-  - "std::priority_queue"
+f1_keywords: ['priority_queue', 'queue/std::priority_queue::container_type', 'queue/std::priority_queue::size_type', 'queue/std::priority_queue::value_type', 'queue/std::priority_queue::empty', 'queue/std::priority_queue::pop', 'queue/std::priority_queue::push', 'queue/std::priority_queue::size', 'queue/std::priority_queue::top']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

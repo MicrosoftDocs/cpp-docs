@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "hash_set/stdext::hash_compare"
-  - "std.hash_compare"
-  - "hash_compare"
-  - "std::hash_compare"
+f1_keywords: ['hash_set/stdext::hash_compare', 'hash_compare']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

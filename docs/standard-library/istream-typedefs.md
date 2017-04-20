@@ -6,6 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: [ 'istream/std::iostream', 'istream/std::istream', 'istream/std::wiostream', 'istream/std::wistream']  
 ms.assetid: 55bc1f84-53a7-46ca-a36f-ac6ef75d0374
 caps.latest.revision: 10
 manager: "ghogen"

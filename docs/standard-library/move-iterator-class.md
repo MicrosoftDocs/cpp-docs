@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.move_iterator"
-  - "move_iterator"
-  - "iterator/std::move_iterator"
-  - "std::move_iterator"
+f1_keywords: ['move_iterator', 'iterator/std::move_iterator', 'iterator/std::move_iterator::iterator_type', 'iterator/std::move_iterator::iterator_category', 'iterator/std::move_iterator::value_type', 'iterator/std::move_iterator::difference_type', 'iterator/std::move_iterator::pointer', 'iterator/std::move_iterator::reference', 'iterator/std::move_iterator::base']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

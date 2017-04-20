@@ -9,11 +9,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_constructible"
-  - "std.is_constructible"
-  - "std::is_constructible"
-  - "type_traits/std::is_constructible"
+f1_keywords: ['is_constructible', 'type_traits/std::is_constructible']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

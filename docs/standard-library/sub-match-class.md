@@ -8,24 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "sub_match"
-  - "std::sub_match"
-  - "regex/std::sub_match"
-  - "std::sub_match::matched"
-  - "regex/std::sub_match::matched"
-  - "std::sub_match::compare"
-  - "regex/std::sub_match::compare"
-  - "std::sub_match::length"
-  - "regex/std::sub_match::length"
-  - "std::sub_match::str"
-  - "regex/std::sub_match::str"
-  - "std::sub_match::difference_type"
-  - "regex/std::sub_match::difference_type"
-  - "std::sub_match::iterator"
-  - "regex/std::sub_match::iterator"
-  - "std::sub_match::value_type"
-  - "regex/std::sub_match::value_type"
+f1_keywords: ['sub_match', 'regex/std::sub_match', 'regex/std::sub_match::matched', 'regex/std::sub_match::compare', 'regex/std::sub_match::length', 'regex/std::sub_match::str', 'regex/std::sub_match::difference_type', 'regex/std::sub_match::iterator', 'regex/std::sub_match::value_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
