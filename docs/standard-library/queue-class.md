@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.queue"
-  - "std::queue"
-  - "queue"
+f1_keywords: ['queue', 'queue/std::queue::container_type', 'queue/std::queue::size_type', 'queue/std::queue::value_type', 'queue/std::queue::back', 'queue/std::queue::empty', 'queue/std::queue::front', 'queue/std::queue::pop', 'queue/std::queue::push', 'queue/std::queue::size']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

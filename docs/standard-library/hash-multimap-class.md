@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext::hash_multimap"
-  - "stdext.hash_multimap"
-  - "hash_map/stdext::hash_multimap"
-  - "hash_multimap"
-  - "std::hash_multimap"
-  - "std.hash_multimap"
+f1_keywords: ['stdext::hash_multimap', 'hash_map/stdext::hash_multimap', 'hash_multimap', 'hash_map/stdext::hash_multimap::allocator_type', 'hash_map/stdext::hash_multimap::const_iterator', 'hash_map/stdext::hash_multimap::const_pointer', 'hash_map/stdext::hash_multimap::const_reference', 'hash_map/stdext::hash_multimap::const_reverse_iterator', 'hash_map/stdext::hash_multimap::difference_type', 'hash_map/stdext::hash_multimap::iterator', 'hash_map/stdext::hash_multimap::key_compare', 'hash_map/stdext::hash_multimap::key_type', 'hash_map/stdext::hash_multimap::mapped_type', 'hash_map/stdext::hash_multimap::pointer', 'hash_map/stdext::hash_multimap::reference', 'hash_map/stdext::hash_multimap::reverse_iterator', 'hash_map/stdext::hash_multimap::size_type', 'hash_map/stdext::hash_multimap::value_type', 'hash_map/stdext::hash_multimap::begin', 'hash_map/stdext::hash_multimap::cbegin', 'hash_map/stdext::hash_multimap::cend', 'hash_map/stdext::hash_multimap::clear', 'hash_map/stdext::hash_multimap::count', 'hash_map/stdext::hash_multimap::crbegin', 'hash_map/stdext::hash_multimap::crend', 'hash_map/stdext::hash_multimap::emplace', 'hash_map/stdext::hash_multimap::emplace_hint', 'hash_map/stdext::hash_multimap::empty', 'hash_map/stdext::hash_multimap::end', 'hash_map/stdext::hash_multimap::equal_range', 'hash_map/stdext::hash_multimap::erase', 'hash_map/stdext::hash_multimap::find', 'hash_map/stdext::hash_multimap::get_allocator', 'hash_map/stdext::hash_multimap::insert', 'hash_map/stdext::hash_multimap::key_comp', 'hash_map/stdext::hash_multimap::lower_bound', 'hash_map/stdext::hash_multimap::max_size', 'hash_map/stdext::hash_multimap::rbegin', 'hash_map/stdext::hash_multimap::rend', 'hash_map/stdext::hash_multimap::size', 'hash_map/stdext::hash_multimap::swap', 'hash_map/stdext::hash_multimap::upper_bound', 'hash_map/stdext::hash_multimap::value_comp']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -130,14 +124,14 @@ class hash_multimap
 |||  
 |-|-|  
 |[begin](#hash_multimap__begin)|Returns an iterator addressing the first element in the `hash_multimap`.|  
-|[hash_multimap::cbegin](#hash_multimap__cbegin)|Returns a const iterator addressing the first element in the `hash_multimap`.|  
-|[hash_multimap::cend](#hash_multimap__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_multimap`.|  
+|[cbegin](#hash_multimap__cbegin)|Returns a const iterator addressing the first element in the `hash_multimap`.|  
+|[cend](#hash_multimap__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_multimap`.|  
 |[clear](#hash_multimap__clear)|Erases all the elements of a `hash_multimap`.|  
 |[count](#hash_multimap__count)|Returns the number of elements in a `hash_multimap` whose key matches a parameter-specified key.|  
-|[hash_multimap::crbegin](#hash_multimap__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_multimap`.|  
-|[hash_multimap::crend](#hash_multimap__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_multimap`.|  
-|[hash_multimap::emplace](#hash_multimap__emplace)|Inserts an element constructed in place into a `hash_multimap`.|  
-|[hash_multimap::emplace_hint](#hash_multimap__emplace_hint)|Inserts an element constructed in place into a `hash_multimap`, with a placement hint.|  
+|[crbegin](#hash_multimap__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_multimap`.|  
+|[crend](#hash_multimap__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_multimap`.|  
+|[emplace](#hash_multimap__emplace)|Inserts an element constructed in place into a `hash_multimap`.|  
+|[emplace_hint](#hash_multimap__emplace_hint)|Inserts an element constructed in place into a `hash_multimap`, with a placement hint.|  
 |[empty](#hash_multimap__empty)|Tests if a `hash_multimap` is empty.|  
 |[end](#hash_multimap__end)|Returns an iterator that addresses the location succeeding the last element in a `hash_multimap`.|  
 |[equal_range](#hash_multimap__equal_range)|Returns an iterator that addresses the location succeeding the last element in a `hash_multimap`.|  

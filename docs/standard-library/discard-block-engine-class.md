@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "discard_block_engine"
-  - "std::discard_block_engine"
-  - "random/std::discard_block_engine"
+f1_keywords: ['discard_block_engine', 'random/std::discard_block_engine']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

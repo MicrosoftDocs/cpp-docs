@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xfunctional/std::binary_negate"
-  - "std::binary_negate"
-  - "binary_negate"
-  - "std.binary_negate"
+f1_keywords: ['xfunctional/std::binary_negate', 'binary_negate']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -71,7 +67,7 @@ public:
 ## Remarks  
  The template class stores a copy of a binary function object _ *Func*. It defines its member function `operator()` as returning **!**\_ *Func(left, right).*  
   
- The constructor of `binary_negate` is rarely used directly. The helper function [not2](../standard-library/functional-functions.md#not2_function) is usually preferred to declare and use the **binary_negator** adaptor predicate.  
+ The constructor of `binary_negate` is rarely used directly. The helper function [not2](../standard-library/functional-functions.md#not2) is usually preferred to declare and use the **binary_negator** adaptor predicate.  
   
 ## Example  
   

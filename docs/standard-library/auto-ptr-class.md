@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::auto_ptr"
-  - "std.auto_ptr"
-  - "auto_ptr"
-  - "memory/std::auto_ptr"
+f1_keywords: ['auto_ptr', 'memory/std::auto_ptr', 'memory/std::auto_ptr::element_type', 'memory/std::auto_ptr::get', 'memory/std::auto_ptr::release', 'memory/std::auto_ptr::reset']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

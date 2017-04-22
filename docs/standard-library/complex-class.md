@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "complex"
-  - "std::complex"
-  - "std.complex"
+f1_keywords: ['complex', 'complex/std::complex::value_type', 'complex/std::complex::imag', 'complex/std::complex::real']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

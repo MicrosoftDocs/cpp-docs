@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "bad_function_call"
-  - "std::bad_function_call"
-  - "functional/std::bad_function_call"
+f1_keywords: ['bad_function_call', 'functional/std::bad_function_call']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

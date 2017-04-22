@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::set"
-  - "set"
-  - "set/std::set"
-  - "std.set"
+f1_keywords: ['set', 'set/std::set', 'set/std::set::allocator_type', 'set/std::set::const_iterator', 'set/std::set::const_pointer', 'set/std::set::const_reference', 'set/std::set::const_reverse_iterator', 'set/std::set::difference_type', 'set/std::set::iterator', 'set/std::set::key_compare', 'set/std::set::key_type', 'set/std::set::pointer', 'set/std::set::reference', 'set/std::set::reverse_iterator', 'set/std::set::size_type', 'set/std::set::value_compare', 'set/std::set::value_type', 'set/std::set::begin', 'set/std::set::cbegin', 'set/std::set::cend', 'set/std::set::clear', 'set/std::set::count', 'set/std::set::crbegin', 'set/std::set::crend', 'set/std::set::emplace', 'set/std::set::emplace_hint', 'set/std::set::empty', 'set/std::set::end', 'set/std::set::equal_range', 'set/std::set::erase', 'set/std::set::find', 'set/std::set::get_allocator', 'set/std::set::insert', 'set/std::set::key_comp', 'set/std::set::lower_bound', 'set/std::set::max_size', 'set/std::set::rbegin', 'set/std::set::rend', 'set/std::set::size', 'set/std::set::swap', 'set/std::set::upper_bound', 'set/std::set::value_comp']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -1,5 +1,5 @@
 ---
-title: "Mixed, Pure, and Verifiable Feature Comparison (C++-CLI) | Microsoft Docs"
+title: "Mixed, Pure, and Verifiable Feature Comparison (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

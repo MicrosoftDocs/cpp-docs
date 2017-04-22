@@ -8,34 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "negative_binomial_distribution"
-  - "std::negative_binomial_distribution"
-  - "random/std::negative_binomial_distribution"
-  - "std::negative_binomial_distribution::reset"
-  - "random/std::negative_binomial_distribution::reset"
-  - "std::negative_binomial_distribution::k"
-  - "random/std::negative_binomial_distribution::k"
-  - "std::negative_binomial_distribution::p"
-  - "random/std::negative_binomial_distribution::p"
-  - "std::negative_binomial_distribution::param"
-  - "random/std::negative_binomial_distribution::param"
-  - "std::negative_binomial_distribution::min"
-  - "random/std::negative_binomial_distribution::min"
-  - "std::negative_binomial_distribution::max"
-  - "random/std::negative_binomial_distribution::max"
-  - "std::negative_binomial_distribution::operator()"
-  - "random/std::negative_binomial_distribution::operator()"
-  - "std::negative_binomial_distribution::param_type"
-  - "random/std::negative_binomial_distribution::param_type"
-  - "std::negative_binomial_distribution::param_type::k"
-  - "random/std::negative_binomial_distribution::param_type::k"
-  - "std::negative_binomial_distribution::param_type::p"
-  - "random/std::negative_binomial_distribution::param_type::p"
-  - "std::negative_binomial_distribution::param_type::operator=="
-  - "random/std::negative_binomial_distribution::param_type::operator=="
-  - "std::negative_binomial_distribution::param_type::operator!="
-  - "random/std::negative_binomial_distribution::param_type::operator!="
+f1_keywords: ['negative_binomial_distribution', 'random/std::negative_binomial_distribution', 'random/std::negative_binomial_distribution::reset', 'random/std::negative_binomial_distribution::k', 'random/std::negative_binomial_distribution::p', 'random/std::negative_binomial_distribution::param', 'random/std::negative_binomial_distribution::min', 'random/std::negative_binomial_distribution::max', 'random/std::negative_binomial_distribution::operator()', 'random/std::negative_binomial_distribution::param_type', 'random/std::negative_binomial_distribution::param_type::k', 'random/std::negative_binomial_distribution::param_type::p', 'random/std::negative_binomial_distribution::param_type::operator==', 'random/std::negative_binomial_distribution::param_type::operator!=', 'random/std::negative_binomial_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -103,8 +76,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[negative_binomial_distribution::negative_binomial_distribution](#negative_binomial_distribution__negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|  
-|`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[negative_binomial_distribution::param_type](#negative_binomial_distribution__param_type)|  
+|[negative_binomial_distribution](#negative_binomial_distribution__negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|  
+|`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[param_type](#negative_binomial_distribution__param_type)|  
   
 The property members `k()` and `p()` return the currently stored distribution parameter values *k* and *p* respectively.  
   

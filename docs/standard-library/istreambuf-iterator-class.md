@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "istreambuf_iterator"
-  - "std.istreambuf_iterator"
-  - "std::istreambuf_iterator"
-  - "streambuf/std::istreambuf_iterator"
+f1_keywords: ['istreambuf_iterator', 'streambuf/std::istreambuf_iterator', 'iterator/std::istreambuf_iterator::char_type', 'iterator/std::istreambuf_iterator::int_type', 'iterator/std::istreambuf_iterator::istream_type', 'iterator/std::istreambuf_iterator::streambuf_type', 'iterator/std::istreambuf_iterator::traits_type', 'iterator/std::istreambuf_iterator::equal']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

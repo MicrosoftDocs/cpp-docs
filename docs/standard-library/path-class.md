@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "filesystem/std::experimental::filesystem::path"
+f1_keywords: ['filesystem/std::experimental::filesystem::path']  
 dev_langs: 
   - "C++"
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
@@ -607,7 +606,7 @@ wstring wstring() const;
  Converts the sequence stored in mypath to the encoding favored by the host system for a wchar_t sequence and returns it stored in an object of type wstring.  
   
 ## Requirements  
- **Header:** filesystem  
+ **Header:** \<filesystem>  
   
  **Namespace:** std::experimental::filesystem
   

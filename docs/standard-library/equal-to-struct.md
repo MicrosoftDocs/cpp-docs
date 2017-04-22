@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::equal_to"
-  - "equal_to"
-  - "xfunctional/std::equal_to"
-  - "std.equal_to"
+f1_keywords: ['equal_to', 'xfunctional/std::equal_to']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

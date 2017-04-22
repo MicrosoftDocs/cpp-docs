@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.messages_base"
-  - "messages_base"
-  - "std::messages_base"
-  - "locale/std::messages_base"
+f1_keywords: ['messages_base', 'locale/std::messages_base']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

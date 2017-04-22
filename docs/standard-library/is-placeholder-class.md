@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_placeholder"
-  - "std::is_placeholder"
-  - "functional/std::is_placeholder"
+f1_keywords: ['is_placeholder', 'functional/std::is_placeholder']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

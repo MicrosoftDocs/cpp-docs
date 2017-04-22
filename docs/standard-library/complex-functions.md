@@ -6,6 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: [ 'complex/std::abs', 'complex/std::arg', 'complex/std::conj', 'complex/std::cos', 'complex/std::cosh', 'complex/std::exp', 'complex/std::imag', 'complex/std::log', 'complex/std::log10', 'complex/std::norm', 'complex/std::polar', 'complex/std::pow', 'complex/std::real', 'complex/std::sin', 'complex/std::sinh', 'complex/std::sqrt', 'complex/std::tan', 'complex/std::tanh']  
 ms.assetid: 58b14e94-0e0c-493e-8237-8b4d685904a2
 caps.latest.revision: 14
 manager: "ghogen"

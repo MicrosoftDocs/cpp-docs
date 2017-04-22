@@ -50,6 +50,7 @@ To support message maps, MFC supplies the following macros:
 |-|-|  
 |[DECLARE_MESSAGE_MAP](#declare_message_map)|Declares that a message map will be used in a class to map messages to functions (must be used in the class declaration).|  
 |[BEGIN_MESSAGE_MAP](#begin_message_map)|Begins the definition of a message map (must be used in the class implementation).|  
+|[BEGIN_TEMPLATE_MESSAGE_MAP](#begin_template_interface_map)|Begins the definition of a message map on a class type containing a single template argument. |
 |[END_MESSAGE_MAP](#end_message_map)|Ends the definition of a message map (must be used in the class implementation).|  
   
 ### Message-Mapping Macros  
@@ -76,34 +77,6 @@ To support message maps, MFC supplies the following macros:
   
  For more information on message maps, the message-map declaration and demarcation macros, and the message-mapping macros, see [Message Maps](../../mfc/reference/message-maps-mfc.md) and [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md). For more information about message-map ranges, see [Handlers for Message-Map Ranges](../../mfc/handlers-for-message-map-ranges.md).  
 
-## <a name="declare_message_map"></a>  DECLARE_MESSAGE_MAP
- Declares that the class defines a message map. Each `CCmdTarget`-derived class in your program must provide a message map to handle messages.  
-  
-### Syntax  
-  
-```    
-DECLARE_MESSAGE_MAP( )  
-```  
-  
-### Remarks  
- Use the `DECLARE_MESSAGE_MAP` macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the `BEGIN_MESSAGE_MAP` macro, macro entries for each of your message-handler functions, and the `END_MESSAGE_MAP` macro.  
-  
-> [!NOTE]
->  If you declare any member after `DECLARE_MESSAGE_MAP`, you must specify a new access type (**public**, `private`, or `protected`) for them.  
-  
- For more information on message maps and the `DECLARE_MESSAGE_MAP` macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
-  
-### Example  
-```cpp  
-class CMainFrame : public CMDIFrameWnd
-{
-   DECLARE_MESSAGE_MAP()
-
-   // Remainder of class declaration omitted.
-``` 
-  
-### Requirements  
- **Header:** afxwin.h  
 
 ## <a name="begin_message_map"></a> BEGIN_MESSAGE_MAP
 Begins the definition of your message map.  
@@ -135,6 +108,61 @@ END_MESSAGE_MAP()
   
 ### Requirements  
  **Header:** afxwin.h 
+
+##  <a name="begin_template_message_map"></a>BEGIN_TEMPLATE_MESSAGE_MAP
+Begins the definition of a message map on a class type containing a single template argument.  
+   
+### Syntax  
+  ```
+BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )  
+```
+### Parameters  
+ `theClass`  
+ Specifies the name of the class whose message map this is.    
+ `type_name`  
+ The name of the template parameter specified for the class.    
+ `baseClass`  
+ Specifies the name of the base class of `theClass`.  
+   
+### Remarks  
+ This macro is similar to the [BEGIN_MESSAGE_MAP](message-map-macros-mfc.md#begin_message_map) macro; however, this macro is intended for classes containing a single template argument.  
+  
+ In the method implementation section of your class, start the message map with the **BEGIN_TEMPLATE_MESSAGE_MAP** macro; then add macro entries for each of your message-handler methods as you would for a standard message map. As with the **BEGIN_MESSAGE_MAP** macro, complete the template message map with the [END_MESSAGE_MAP](message-map-macros-mfc.md#end_message_map) macro.  
+  
+ For more information on implementing message maps for template classes, refer to [How to: Create a Message Map for a Template Class](../how-to-create-a-message-map-for-a-template-class.md).  
+   
+### Requirements  
+ **Header:** afxwin.h  
+ 
+## <a name="declare_message_map"></a>  DECLARE_MESSAGE_MAP
+ Declares that the class defines a message map. Each `CCmdTarget`-derived class in your program must provide a message map to handle messages.  
+  
+### Syntax  
+  
+```    
+DECLARE_MESSAGE_MAP( )  
+```  
+  
+### Remarks  
+ Use the `DECLARE_MESSAGE_MAP` macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the `BEGIN_MESSAGE_MAP` macro, macro entries for each of your message-handler functions, and the `END_MESSAGE_MAP` macro.  
+  
+> [!NOTE]
+>  If you declare any member after `DECLARE_MESSAGE_MAP`, you must specify a new access type (**public**, `private`, or `protected`) for them.  
+  
+ For more information on message maps and the `DECLARE_MESSAGE_MAP` macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
+  
+### Example  
+```cpp  
+class CMainFrame : public CMDIFrameWnd
+{
+   DECLARE_MESSAGE_MAP()
+
+   // Remainder of class declaration omitted.
+``` 
+  
+### Requirements  
+ **Header:** afxwin.h  
+
 
 ## <a name="end_message_map"></a>  END_MESSAGE_MAP
 Ends the definition of your message map.  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Overload Functions with Interior Pointers and Native Pointers (C++-CLI) | Microsoft Docs"
+title: "How to: Overload Functions with Interior Pointers and Native Pointers (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

@@ -8,30 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "poisson_distribution"
-  - "std::poisson_distribution"
-  - "random/std::poisson_distribution"
-  - "std::poisson_distribution::reset"
-  - "random/std::poisson_distribution::reset"
-  - "std::poisson_distribution::mean"
-  - "random/std::poisson_distribution::mean"
-  - "std::poisson_distribution::param"
-  - "random/std::poisson_distribution::param"
-  - "std::poisson_distribution::min"
-  - "random/std::poisson_distribution::min"
-  - "std::poisson_distribution::max"
-  - "random/std::poisson_distribution::max"
-  - "std::poisson_distribution::operator()"
-  - "random/std::poisson_distribution::operator()"
-  - "std::poisson_distribution::param_type"
-  - "random/std::poisson_distribution::param_type"
-  - "std::poisson_distribution::param_type::mean"
-  - "random/std::poisson_distribution::param_type::mean"
-  - "std::poisson_distribution::param_type::operator=="
-  - "random/std::poisson_distribution::param_type::operator=="
-  - "std::poisson_distribution::param_type::operator!="
-  - "random/std::poisson_distribution::param_type::operator!="
+f1_keywords: ['poisson_distribution', 'random/std::poisson_distribution', 'random/std::poisson_distribution::reset', 'random/std::poisson_distribution::mean', 'random/std::poisson_distribution::param', 'random/std::poisson_distribution::min', 'random/std::poisson_distribution::max', 'random/std::poisson_distribution::operator()', 'random/std::poisson_distribution::param_type', 'random/std::poisson_distribution::param_type::mean', 'random/std::poisson_distribution::param_type::operator==', 'random/std::poisson_distribution::param_type::operator!=', 'random/std::poisson_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -99,8 +76,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[poisson_distribution::poisson_distribution](#poisson_distribution__poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|  
-|`poisson_distribution::operator()`||[poisson_distribution::param_type](#poisson_distribution__param_type)|  
+|[poisson_distribution](#poisson_distribution__poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|  
+|`poisson_distribution::operator()`||[param_type](#poisson_distribution__param_type)|  
   
 The property function `mean()` returns the value for stored distribution parameter *mean*.  
   

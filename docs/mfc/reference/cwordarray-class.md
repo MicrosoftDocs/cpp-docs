@@ -374,7 +374,7 @@ void ContinueRouting();
 ```  
   
 ### Remarks  
- This is an advanced member function that should be used in conjunction with an [ON_COMMAND_EX](http://msdn.microsoft.com/library/0bb49090-aee8-4203-87c8-dd001d3dd26e) handler that returns `FALSE`. For more information, see Technical Note [TN006: Message Maps](../../mfc/tn006-message-maps.md).  
+ This is an advanced member function that should be used in conjunction with an [ON_COMMAND_EX](message-map-macros-mfc.md#on_command_ex) handler that returns `FALSE`. For more information, see Technical Note [TN006: Message Maps](../../mfc/tn006-message-maps.md).  
   
 ##  <a name="enabled"></a>  ICommandUI::Enabled  
  Enables or disables the user interface item for this command.  

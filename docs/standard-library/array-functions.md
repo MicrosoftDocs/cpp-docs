@@ -6,9 +6,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::array::get"
-  - "array/std::array::get"
+f1_keywords: ['array/std::array::get', 'array/std::get', 'array/std::swap']  
+dev_langs:  
+  - "C++"  
 ms.assetid: e0700a33-a833-4655-8735-16e71175efc8
 caps.latest.revision: 11
 author: "corob-msft"
@@ -20,9 +20,9 @@ The \<array> header includes two non-member functions, `get` and `swap`, that op
   
 |||  
 |-|-|  
-|[get](#get_function)|[swap](#swap_function)|  
+|[get](#get)|[swap](#swap)|  
   
-##  <a name="get_function"></a>  get  
+##  <a name="get"></a>  get  
 Returns a reference to the specified element of the array.  
   
 ```  
@@ -81,7 +81,7 @@ int main()
 1 3  
 ```  
   
-##  <a name="swap_function"></a>  swap  
+##  <a name="swap"></a>  swap  
 A non-member template specialization of `std::swap` that swaps two `array` objects.  
   
 ```  

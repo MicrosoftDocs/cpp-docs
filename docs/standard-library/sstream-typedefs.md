@@ -6,6 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: [ 'sstream/std::istringstream', 'sstream/std::ostringstream', 'sstream/std::stringbuf', 'sstream/std::stringstream', 'sstream/std::wistringstream', 'sstream/std::wostringstream', 'sstream/std::wstringbuf', 'sstream/std::wstringstream']  
 ms.assetid: d102edd2-ecea-4a35-a398-cf96e58dd422
 caps.latest.revision: 9
 manager: "ghogen"

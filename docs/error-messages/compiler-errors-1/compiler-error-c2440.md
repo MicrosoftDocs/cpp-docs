@@ -255,10 +255,12 @@ This error can appear in ATL code that uses the SINK_ENTRY_INFO macro defined in
 ## Example  
 ### Copy-list-initialization
 
-Visual Studio 2017 and later correctly raise compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior. As per N4594 13.3.1.7p1, in copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen.
-The following two examples compile in Visual Studio 2015 but not in Visual Studio 2017.
+Visual Studio 2017 and later correctly raise compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior. In C++17 copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen.
 
-```
+The following example compiles in Visual Studio 2015 but not in Visual Studio 2017.
+
+```cpp  
+// C2440j.cpp  
 struct A
 {
     explicit A(int) {} 
@@ -267,25 +269,33 @@ struct A
 
 int main()
 {
-    A a1 = { 1 }; // error C3445: copy-list-initialization of 'A' cannot use an explicit constructor
-    const A& a2 = { 1 }; // error C2440: 'initializing': cannot convert from 'int' to 'const A &'
-
+    const A& a2 = { 1 }; // error C2440: 'initializing': cannot 
+                         // convert from 'int' to 'const A &'
 }
-```
+```  
+  
+To correct the error, use direct initialization:  
+  
+```cpp  
+// C2440k.cpp  
+struct A
+{
+    explicit A(int) {} 
+    A(double) {}
+};
 
-To correct the error, use direct initialization:
-
-```
-A a1{ 1 };
-const A& a2{ 1 };
-```
+int main()
+{
+    const A& a2{ 1 };
+}  
+```  
 
 ## Example
 ### cv-qualifiers in class construction
 
 In Visual Studio 2015, the compiler sometimes incorrectly ignores the cv-qualifier when generating a class object via a constructor call. This can potentially cause a crash or unexpected runtime behavior. The following example compiles in Visual Studio 2015 but raises a compiler error in Visual Studio 2017 and later:
 
-```
+```cpp
 struct S 
 {
     S(int);

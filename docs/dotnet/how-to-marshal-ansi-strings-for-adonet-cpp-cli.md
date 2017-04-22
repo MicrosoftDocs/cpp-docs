@@ -1,5 +1,5 @@
 ---
-title: "How to: Marshal ANSI Strings for ADO.NET (C++-CLI) | Microsoft Docs"
+title: "How to: Marshal ANSI Strings for ADO.NET (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.move_iterator"
-  - "move_iterator"
-  - "iterator/std::move_iterator"
-  - "std::move_iterator"
+f1_keywords: ['move_iterator', 'iterator/std::move_iterator', 'iterator/std::move_iterator::iterator_type', 'iterator/std::move_iterator::iterator_category', 'iterator/std::move_iterator::value_type', 'iterator/std::move_iterator::difference_type', 'iterator/std::move_iterator::pointer', 'iterator/std::move_iterator::reference', 'iterator/std::move_iterator::base']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -59,18 +55,18 @@ class move_iterator;
   
 |||  
 |-|-|  
-|[move_iterator::iterator_type](#move_iterator__iterator_type)|A synonym for the template parameter `RandomIterator`.|  
-|[move_iterator::iterator_category](#move_iterator__iterator_category)|A synonym for a longer `typename` expression of the same name, `iterator_category` identifies the general abilities of the iterator.|  
-|[move_iterator::value_type](#move_iterator__value_type)|A synonym for a longer `typename` expression of the same name, `value_type` describes what type the iterator elements are.|  
-|[move_iterator::difference_type](#move_iterator__difference_type)|A synonym for a longer `typename` expression of the same name, `difference_type` describes the integral type required to express difference values between elements.|  
-|[move_iterator::pointer](#move_iterator__pointer)|A synonym for template parameter `RandomIterator`.|  
-|[move_iterator::reference](#move_iterator__reference)|A synonym for the `rvalue` reference `value_type&&`.|  
+|[iterator_type](#move_iterator__iterator_type)|A synonym for the template parameter `RandomIterator`.|  
+|[iterator_category](#move_iterator__iterator_category)|A synonym for a longer `typename` expression of the same name, `iterator_category` identifies the general abilities of the iterator.|  
+|[value_type](#move_iterator__value_type)|A synonym for a longer `typename` expression of the same name, `value_type` describes what type the iterator elements are.|  
+|[difference_type](#move_iterator__difference_type)|A synonym for a longer `typename` expression of the same name, `difference_type` describes the integral type required to express difference values between elements.|  
+|[pointer](#move_iterator__pointer)|A synonym for template parameter `RandomIterator`.|  
+|[reference](#move_iterator__reference)|A synonym for the `rvalue` reference `value_type&&`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[move_iterator::base](#move_iterator__base)|The member function returns the stored iterator wrapped by this `move_iterator`.|  
+|[base](#move_iterator__base)|The member function returns the stored iterator wrapped by this `move_iterator`.|  
   
 ### Operators  
   

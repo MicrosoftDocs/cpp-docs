@@ -1,5 +1,5 @@
 ---
-title: "C++-CLI Migration Primer | Microsoft Docs"
+title: "C++/CLI Migration Primer | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

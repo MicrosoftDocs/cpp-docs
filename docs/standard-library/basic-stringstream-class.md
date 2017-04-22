@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.basic_stringstream"
-  - "basic_stringstream"
-  - "std::basic_stringstream"
-  - "sstream/std::basic_stringstream"
+f1_keywords: ['basic_stringstream', 'sstream/std::basic_stringstream', 'sstream/std::basic_stringstream::allocator_type', 'sstream/std::basic_stringstream::rdbuf', 'sstream/std::basic_stringstream::str']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

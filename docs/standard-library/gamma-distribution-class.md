@@ -8,34 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "gamma_distribution"
-  - "std::gamma_distribution"
-  - "random/std::gamma_distribution"
-  - "std::gamma_distribution::reset"
-  - "random/std::gamma_distribution::reset"
-  - "std::gamma_distribution::alpha"
-  - "random/std::gamma_distribution::alpha"
-  - "std::gamma_distribution::beta"
-  - "random/std::gamma_distribution::beta"
-  - "std::gamma_distribution::param"
-  - "random/std::gamma_distribution::param"
-  - "std::gamma_distribution::min"
-  - "random/std::gamma_distribution::min"
-  - "std::gamma_distribution::max"
-  - "random/std::gamma_distribution::max"
-  - "std::gamma_distribution::operator()"
-  - "random/std::gamma_distribution::operator()"
-  - "std::gamma_distribution::param_type"
-  - "random/std::gamma_distribution::param_type"
-  - "std::gamma_distribution::param_type::alpha"
-  - "random/std::gamma_distribution::param_type::alpha"
-  - "std::gamma_distribution::param_type::beta"
-  - "random/std::gamma_distribution::param_type::beta"
-  - "std::gamma_distribution::param_type::operator=="
-  - "random/std::gamma_distribution::param_type::operator=="
-  - "std::gamma_distribution::param_type::operator!="
-  - "random/std::gamma_distribution::param_type::operator!="
+f1_keywords: ['gamma_distribution', 'random/std::gamma_distribution', 'random/std::gamma_distribution::reset', 'random/std::gamma_distribution::alpha', 'random/std::gamma_distribution::beta', 'random/std::gamma_distribution::param', 'random/std::gamma_distribution::min', 'random/std::gamma_distribution::max', 'random/std::gamma_distribution::operator()', 'random/std::gamma_distribution::param_type', 'random/std::gamma_distribution::param_type::alpha', 'random/std::gamma_distribution::param_type::beta', 'random/std::gamma_distribution::param_type::operator==', 'random/std::gamma_distribution::param_type::operator!=', 'random/std::gamma_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -105,8 +78,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[gamma_distribution::gamma_distribution](#gamma_distribution__gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|  
-|`gamma_distribution::operator()`|`gamma_distribution::beta`|[gamma_distribution::param_type](#gamma_distribution__param_type)|  
+|[gamma_distribution](#gamma_distribution__gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|  
+|`gamma_distribution::operator()`|`gamma_distribution::beta`|[param_type](#gamma_distribution__param_type)|  
   
 The property functions `alpha()` and `beta()` return their respective values for stored distribution parameters *alpha* and *beta*.  
   

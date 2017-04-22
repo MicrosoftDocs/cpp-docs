@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.forward_iterator_tag"
-  - "forward_iterator_tag"
-  - "std::forward_iterator_tag"
-  - "xutility/std::forward_iterator_tag"
+f1_keywords: ['forward_iterator_tag', 'xutility/std::forward_iterator_tag']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,14 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext::allocators::allocator_chunklist"
-  - "allocators::allocator_chunklist"
-  - "allocators/stdext::allocator_chunklist"
-  - "allocators.allocator_chunklist"
-  - "allocators/stdext::allocators::allocator_chunklist"
-  - "allocator_chunklist"
-  - "stdext.allocators.allocator_chunklist"
+f1_keywords: ['stdext::allocators::allocator_chunklist', 'allocators::allocator_chunklist', 'allocators/stdext::allocator_chunklist', 'allocators/stdext::allocators::allocator_chunklist', 'allocator_chunklist']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

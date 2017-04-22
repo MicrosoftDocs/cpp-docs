@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "iterator"
-  - "std::iterator"
-  - "std.iterator"
-  - "xutility/std::iterator"
+f1_keywords: ['iterator', 'xutility/std::iterator']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

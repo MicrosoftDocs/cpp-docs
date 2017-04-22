@@ -1,5 +1,5 @@
 ---
-title: "C-Style Casts with -clr (C++-CLI) | Microsoft Docs"
+title: "C-Style Casts with -clr (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xfunctional/std::binder1st"
-  - "std::binder1st"
-  - "binder1st"
-  - "std.binder1st"
+f1_keywords: ['xfunctional/std::binder1st', 'binder1st']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -80,7 +76,7 @@ protected:
 ## Remarks  
  The template class stores a copy of a binary function object `Func` in **op**, and a copy of `left` in **value**. It defines its member function `operator()` as returning **op**( **value**, `right`).  
   
- If `Func` is an object of type **Operation** and `c` is a constant , then [bind1st](../standard-library/functional-functions.md#bind1st_function) ( `Func`, `c` ) is equivalent to the `binder1st` class constructor `binder1st`\< **Operation**> ( `Func`, `c` ) and more convenient.  
+ If `Func` is an object of type **Operation** and `c` is a constant , then [bind1st](../standard-library/functional-functions.md#bind1st) ( `Func`, `c` ) is equivalent to the `binder1st` class constructor `binder1st`\< **Operation**> ( `Func`, `c` ) and more convenient.  
   
 ## Example  
   

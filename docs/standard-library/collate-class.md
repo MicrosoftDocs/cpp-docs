@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::collate"
-  - "locale/std::collate"
-  - "std.collate"
-  - "collate"
-  - "Collate"
+f1_keywords: ['locale/std::collate', 'collate', 'Collate', 'locale/std::collate::char_type', 'locale/std::collate::string_type', 'locale/std::collate::compare', 'locale/std::collate::do_compare', 'locale/std::collate::do_hash', 'locale/std::collate::do_transform', 'locale/std::collate::hash', 'locale/std::collate::transform']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::forward_list"
-  - "forward_list"
-  - "forward_list/std::forward_list"
-  - "std.forward_list"
+f1_keywords: ['forward_list', 'forward_list/std::forward_list', 'forward_list/std::forward_list::allocator_type', 'forward_list/std::forward_list::const_iterator', 'forward_list/std::forward_list::const_pointer', 'forward_list/std::forward_list::const_reference', 'forward_list/std::forward_list::difference_type', 'forward_list/std::forward_list::iterator', 'forward_list/std::forward_list::pointer', 'forward_list/std::forward_list::reference', 'forward_list/std::forward_list::size_type', 'forward_list/std::forward_list::value_type', 'forward_list/std::forward_list::assign', 'forward_list/std::forward_list::before_begin', 'forward_list/std::forward_list::begin', 'forward_list/std::forward_list::cbefore_begin', 'forward_list/std::forward_list::cbegin', 'forward_list/std::forward_list::cend', 'forward_list/std::forward_list::clear', 'forward_list/std::forward_list::emplace_after', 'forward_list/std::forward_list::emplace_front', 'forward_list/std::forward_list::empty', 'forward_list/std::forward_list::end', 'forward_list/std::forward_list::erase_after', 'forward_list/std::forward_list::front', 'forward_list/std::forward_list::get_allocator', 'forward_list/std::forward_list::insert_after', 'forward_list/std::forward_list::max_size', 'forward_list/std::forward_list::merge', 'forward_list/std::forward_list::pop_front', 'forward_list/std::forward_list::push_front', 'forward_list/std::forward_list::remove', 'forward_list/std::forward_list::remove_if', 'forward_list/std::forward_list::resize', 'forward_list/std::forward_list::reverse', 'forward_list/std::forward_list::sort', 'forward_list/std::forward_list::splice_after', 'forward_list/std::forward_list::swap', 'forward_list/std::forward_list::unique']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

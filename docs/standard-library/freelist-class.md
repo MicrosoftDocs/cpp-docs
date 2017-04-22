@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext::freelist"
-  - "freelist"
-  - "stdext.freelist"
-  - "allocators/stdext::freelist"
+f1_keywords: ['stdext::freelist', 'freelist', 'allocators/stdext::freelist', 'allocators/stdext::freelist::pop', 'allocators/stdext::freelist::push']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

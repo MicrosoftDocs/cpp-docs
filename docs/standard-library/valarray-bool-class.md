@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "valarray<bool>"
-  - "valarray/std::valarray<bool>"
-  - "std::valarray<bool>"
-  - "std.valarray<bool>"
+f1_keywords: ['valarray<bool>', 'valarray/std::valarray<bool>']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "typeindex/std::type_index"
+f1_keywords: ['typeindex/std::type_index']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

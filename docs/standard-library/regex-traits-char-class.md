@@ -8,9 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::regex_traits<char>"
-  - "regex/std::regex_traits<char>"
+f1_keywords: ['regex/std::regex_traits<char>']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

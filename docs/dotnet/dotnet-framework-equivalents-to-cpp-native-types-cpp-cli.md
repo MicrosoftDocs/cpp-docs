@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Equivalents to C++ Native Types (C++-CLI) | Microsoft Docs"
+title: ".NET Framework Equivalents to C++ Native Types (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

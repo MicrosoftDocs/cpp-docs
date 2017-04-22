@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::pointer_to_binary_function"
-  - "xfunctional/std::pointer_to_binary_function"
-  - "pointer_to_binary_function"
-  - "std.pointer_to_binary_function"
+f1_keywords: ['xfunctional/std::pointer_to_binary', 'pointer_to_binary']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -72,7 +68,7 @@ public:
  A binary function pointer is a function object and may be passed to any C++ Standard Library algorithm that is expecting a binary function as a parameter, but it is not adaptable. To use it with an adaptor, such as binding a value to it or using it with a negator, it must be supplied with the nested types **first_argument_type**, **second_argument_type**, and **result_type** that make such an adaptation possible. The conversion by `pointer_to_binary_function` allows the function adaptors to work with binary function pointers.  
   
 ## Example  
- The constructor of `pointer_to_binary_function` is rarely used directly. See the helper function [ptr_fun](../standard-library/functional-functions.md#ptr_fun_function) for an example of how to declare and use the `pointer_to_binary_function` adaptor predicate.  
+ The constructor of `pointer_to_binary_function` is rarely used directly. See the helper function [ptr_fun](../standard-library/functional-functions.md#ptr_fun) for an example of how to declare and use the `pointer_to_binary_function` adaptor predicate.  
   
 ## Requirements  
  **Header:** \<functional>  

@@ -8,32 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "shared_ptr"
-  - "std::shared_ptr"
-  - "memory/std::shared_ptr"
-  - "std::shared_ptr::element_type"
-  - "memory/std::shared_ptr::element_type"
-  - "std::shared_ptr::get"
-  - "memory/std::shared_ptr::get"
-  - "std::shared_ptr::owner_before"
-  - "memory/std::shared_ptr::owner_before"
-  - "std::shared_ptr::reset"
-  - "memory/std::shared_ptr::reset"
-  - "std::shared_ptr::swap"
-  - "memory/std::shared_ptr::swap"
-  - "std::shared_ptr::unique"
-  - "memory/std::shared_ptr::unique"
-  - "std::shared_ptr::use_count"
-  - "memory/std::shared_ptr::use_count"
-  - "std::shared_ptr::operator boolean-type"
-  - "memory/std::shared_ptr::operator boolean-type"
-  - "std::shared_ptr::operator*"
-  - "memory/std::shared_ptr::operator*"
-  - "std::shared_ptr::operator="
-  - "memory/std::shared_ptr::operator="
-  - "std::shared_ptr::operator->"
-  - "memory/std::shared_ptr::operator->"
+f1_keywords: ['shared_ptr', 'memory/std::shared_ptr', 'memory/std::shared_ptr::element_type', 'memory/std::shared_ptr::get', 'memory/std::shared_ptr::owner_before', 'memory/std::shared_ptr::reset', 'memory/std::shared_ptr::swap', 'memory/std::shared_ptr::unique', 'memory/std::shared_ptr::use_count', 'memory/std::shared_ptr::operator boolean-type', 'memory/std::shared_ptr::operator*', 'memory/std::shared_ptr::operator=', 'memory/std::shared_ptr::operator->', 'memory/std::shared_ptr::element_type', 'memory/std::shared_ptr::get', 'memory/std::shared_ptr::owner_before', 'memory/std::shared_ptr::reset', 'memory/std::shared_ptr::swap', 'memory/std::shared_ptr::unique', 'memory/std::shared_ptr::use_count']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -147,20 +122,20 @@ shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared
   
 |||  
 |-|-|  
-|[shared_ptr::shared_ptr](#shared_ptr__shared_ptr)|Constructs a `shared_ptr`.|  
+|[shared_ptr](#shared_ptr__shared_ptr)|Constructs a `shared_ptr`.|  
 |[shared_ptr::~shared_ptr](#shared_ptr___dtorshared_ptr)|Destroys a `shared_ptr`.|  
   
 ### Methods  
   
 |||  
 |-|-|  
-|[shared_ptr::element_type](#shared_ptr__element_type)|The type of an element.|  
-|[shared_ptr::get](#shared_ptr__get)|Gets address of owned resource.|  
-|[shared_ptr::owner_before](#shared_ptr__owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|  
-|[shared_ptr::reset](#shared_ptr__reset)|Replace owned resource.|  
-|[shared_ptr::swap](#shared_ptr__swap)|Swaps two `shared_ptr` objects.|  
-|[shared_ptr::unique](#shared_ptr__unique)|Tests if owned resource is unique.|  
-|[shared_ptr::use_count](#shared_ptr__use_count)|Counts numbers of resource owners.|  
+|[element_type](#shared_ptr__element_type)|The type of an element.|  
+|[get](#shared_ptr__get)|Gets address of owned resource.|  
+|[owner_before](#shared_ptr__owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|  
+|[reset](#shared_ptr__reset)|Replace owned resource.|  
+|[swap](#shared_ptr__swap)|Swaps two `shared_ptr` objects.|  
+|[unique](#shared_ptr__unique)|Tests if owned resource is unique.|  
+|[use_count](#shared_ptr__use_count)|Counts numbers of resource owners.|  
   
 ### Operators  
   

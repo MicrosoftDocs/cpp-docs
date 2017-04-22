@@ -151,7 +151,7 @@ CInternetSession(
 ### Remarks  
  **CInternetSession** is the first Internet function called by an application. It initializes internal data structures and prepares for future calls from the application.  
   
- If no Internet connection can be opened, `CInternetSession` throws an [AfxThrowInternetException](http://msdn.microsoft.com/library/c9645b10-9541-48b2-8b0c-94ca33fed3cb).  
+ If no Internet connection can be opened, `CInternetSession` throws an [AfxThrowInternetException](internet-url-parsing-globals.md#afxthrowinternetexception).  
   
 ### Example  
   See the example for [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md).  

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_member_function_pointer"
-  - "std::is_member_function_pointer"
-  - "type_traits/std::is_member_function_pointer"
+f1_keywords: ['is_member_function_pointer', 'type_traits/std::is_member_function_pointer']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

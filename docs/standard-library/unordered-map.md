@@ -56,10 +56,10 @@ Defines the container template classes [unordered_map](../standard-library/unord
 |-|-|  
 |[operator!=](../standard-library/unordered-map-operators.md#operator_neq)|Tests if the unordered_map object on the left side of the operator is not equal to the unordered_map object on the right side.|  
 |[operator==](../standard-library/unordered-map-operators.md#operator_eq_eq)|Tests if the unordered_map object on the left side of the operator is equal to the unordered_map object on the right side.|  
-|[swap Function (unordered_map)](../standard-library/unordered-map-functions.md#swap_function)|Swaps two maps.|  
+|[swap Function (unordered_map)](../standard-library/unordered-map-functions.md#swap)|Swaps two maps.|  
 |[operator!=](../standard-library/unordered-map-operators.md#operator_neq)|Tests if the unordered_multimap object on the left side of the operator is not equal to the unordered_multimap object on the right side.|  
 |[operator==](../standard-library/unordered-map-operators.md#operator_eq_eq)|Tests if the unordered_multimap object on the left side of the operator is equal to the unordered_multimap object on the right side.|  
-|[swap Function (unordered_map)](../standard-library/unordered-map-functions.md#swap_function)|Swaps two multimaps.|  
+|[swap Function (unordered_map)](../standard-library/unordered-map-functions.md#swap)|Swaps two multimaps.|  
   
 ## See Also  
  [unordered_multiset Class](../standard-library/unordered-multiset-class.md)   

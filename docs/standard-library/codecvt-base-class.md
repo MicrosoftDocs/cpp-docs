@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "codecvt_base"
-  - "xlocale/std::codecvt_base"
-  - "std.codecvt_base"
-  - "std::codecvt_base"
+f1_keywords: ['codecvt_base', 'xlocale/std::codecvt_base']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -80,7 +80,7 @@ Defines several template classes that describe objects based on template class [
   
 |||  
 |-|-|  
-|[codecvt_mode](../standard-library/codecvt-enums.md#codecvt_mode_enumeration)|Specifies configuration information for locale facets.|  
+|[codecvt_mode](../standard-library/codecvt-enums.md#codecvt_mode)|Specifies configuration information for locale facets.|  
   
 ### Classes  
   

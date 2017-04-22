@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "valarray/std::slice"
-  - "std.slice"
-  - "slice"
-  - "std::slice"
+f1_keywords: ['valarray/std::slice', 'slice', 'valarray/std::slice::size', 'valarray/std::slice::start', 'valarray/std::slice::stride']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

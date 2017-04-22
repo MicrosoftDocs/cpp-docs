@@ -165,7 +165,7 @@ void DumpStatistics() const;
 ```  
   
 ### Remarks  
- The report, which is printed on the [afxDump](http://msdn.microsoft.com/library/4b3cfa3f-fb75-456a-9d99-a5601acbcb11) device, shows the following:  
+ The report, which is printed on the [afxDump](diagnostic-services.md#afxdump) device, shows the following:  
   
  A sample report gives information on the number (or amount) of:  
   

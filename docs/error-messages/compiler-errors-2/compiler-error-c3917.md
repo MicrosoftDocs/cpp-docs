@@ -35,15 +35,15 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C3917
-'property': obsolete construct declaration style  
+'*property*': obsolete construct declaration style  
   
-A property or event definition used syntax from a previous version.  
+A property or event definition used syntax from a version before Visual Studio 2005.  
   
 For more information, see [property](../../windows/property-cpp-component-extensions.md).  
   
 ## Example  
   
-```  
+```cpp  
 // C3917.cpp  
 // compile with: /clr /c  
 public ref class  C {  

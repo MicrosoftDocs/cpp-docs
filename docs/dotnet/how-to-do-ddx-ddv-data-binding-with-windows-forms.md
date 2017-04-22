@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Do DDX/DDV Data Binding with Windows Forms
-[DDX_ManagedControl](http://msdn.microsoft.com/Library/61b55a90-c993-478e-9dea-db27fbf0e193) calls [CWinFormsControl::CreateManagedControl](../mfc/reference/cwinformscontrol-class.md#createmanagedcontrol) to create a control matching the resource control ID. If you use `DDX_ManagedControl` for a `CWinFormsControl` control (in wizard-generated code), you should not call `CreateManagedControl` explicitly for the same control.  
+[DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol) calls [CWinFormsControl::CreateManagedControl](../mfc/reference/cwinformscontrol-class.md#createmanagedcontrol) to create a control matching the resource control ID. If you use `DDX_ManagedControl` for a `CWinFormsControl` control (in wizard-generated code), you should not call `CreateManagedControl` explicitly for the same control.  
   
  Call `DDX_ManagedControl` in [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) to create controls from resource IDs. For data exchange, you do not need to use the DDX/DDV functions with Windows Forms controls. Instead, you can place code to access the properties of the managed control in the `DoDataExchange` method of your dialog (or view) class, as in the following example.  
   
@@ -99,5 +99,5 @@ m_MyControl.GetControl()->textBox1->Text = "hello";
   
 ## See Also  
  [CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md)   
- [DDX_ManagedControl](http://msdn.microsoft.com/Library/61b55a90-c993-478e-9dea-db27fbf0e193)   
+ [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)   
  [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange)

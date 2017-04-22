@@ -8,15 +8,12 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_function"
-  - "std::is_function"
-  - "type_traits/std::is_function"
+f1_keywords: ['is', 'type_traits/std::is']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
   - "is_function class"
-  - "is_function"
+  - "is"
 ms.assetid: e5c0dbcd-829b-415f-853f-8c5be47c5040
 caps.latest.revision: 19
 author: "corob-msft"

@@ -8,26 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "weak_ptr"
-  - "std::weak_ptr"
-  - "memory/std::weak_ptr"
-  - "std::weak_ptr::element_type"
-  - "memory/std::weak_ptr::element_type"
-  - "std::weak_ptr::expired"
-  - "memory/std::weak_ptr::expired"
-  - "std::weak_ptr::lock"
-  - "memory/std::weak_ptr::lock"
-  - "std::weak_ptr::owner_before"
-  - "memory/std::weak_ptr::owner_before"
-  - "std::weak_ptr::reset"
-  - "memory/std::weak_ptr::reset"
-  - "std::weak_ptr::swap"
-  - "memory/std::weak_ptr::swap"
-  - "std::weak_ptr::use_count"
-  - "memory/std::weak_ptr::use_count"
-  - "std::weak_ptr::operator="
-  - "memory/std::weak_ptr::operator="
+f1_keywords: ['weak_ptr', 'memory/std::weak_ptr', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count', 'memory/std::weak_ptr::operator=', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

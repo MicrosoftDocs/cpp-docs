@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "messages"
-  - "xlocmes/std::messages"
-  - "std.messages"
-  - "std::messages"
+f1_keywords: ['messages', 'xlocmes/std::messages', 'locale/std::messages::char_type', 'locale/std::messages::string_type', 'locale/std::messages::close', 'locale/std::messages::do_close', 'locale/std::messages::do_get', 'locale/std::messages::do_open', 'locale/std::messages::get', 'locale/std::messages::open']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

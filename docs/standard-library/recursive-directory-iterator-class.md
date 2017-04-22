@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "filesystem/std::tr2::sys::recursive_directory_iterator"
+f1_keywords: ['filesystem/std::tr2::sys::recursive_directory_iterator']  
 dev_langs: 
   - "C++"
 ms.assetid: 79a061bd-5b64-404c-97e8-749c888c2ced
@@ -189,7 +188,7 @@ recursive_directory_iterator& increment(error_code& ec) noexcept;
  The function attempts to advance to the next filename in the nested sequence. If successful, it stores that filename in myentry; otherwise it produces an end-of-sequence iterator.  
   
 ## Requirements  
- **Header:** filesystem  
+ **Header:** \<filesystem>  
   
  **Namespace:** std::tr2::sys  
   

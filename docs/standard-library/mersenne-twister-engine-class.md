@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "mersenne_twister_engine"
-  - "std::mersenne_twister_engine"
-  - "random/std::mersenne_twister_engine"
+f1_keywords: ['mersenne_twister_engine', 'random/std::mersenne_twister_engine']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
