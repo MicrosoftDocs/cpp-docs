@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdexcept/std::underflow_error"
-  - "underflow_error"
-  - "std.underflow_error"
-  - "std::underflow_error"
+f1_keywords: ['stdexcept/std::underflow_error', 'underflow_error']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

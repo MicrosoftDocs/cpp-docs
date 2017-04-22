@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_class"
-  - "std::is_class"
-  - "type_traits/std::is_class"
+f1_keywords: ['is_class', 'type_traits/std::is_class']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

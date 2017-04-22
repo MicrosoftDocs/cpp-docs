@@ -8,34 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "weibull_distribution"
-  - "std::weibull_distribution"
-  - "random/std::weibull_distribution"
-  - "std::weibull_distribution::reset"
-  - "random/std::weibull_distribution::reset"
-  - "std::weibull_distribution::a"
-  - "random/std::weibull_distribution::a"
-  - "std::weibull_distribution::b"
-  - "random/std::weibull_distribution::b"
-  - "std::weibull_distribution::param"
-  - "random/std::weibull_distribution::param"
-  - "std::weibull_distribution::min"
-  - "random/std::weibull_distribution::min"
-  - "std::weibull_distribution::max"
-  - "random/std::weibull_distribution::max"
-  - "std::weibull_distribution::operator()"
-  - "random/std::weibull_distribution::operator()"
-  - "std::weibull_distribution::param_type"
-  - "random/std::weibull_distribution::param_type"
-  - "std::weibull_distribution::param_type::a"
-  - "random/std::weibull_distribution::param_type::a"
-  - "std::weibull_distribution::param_type::b"
-  - "random/std::weibull_distribution::param_type::b"
-  - "std::weibull_distribution::param_type::operator=="
-  - "random/std::weibull_distribution::param_type::operator=="
-  - "std::weibull_distribution::param_type::operator!="
-  - "random/std::weibull_distribution::param_type::operator!="
+f1_keywords: ['weibull_distribution', 'random/std::weibull_distribution', 'random/std::weibull_distribution::reset', 'random/std::weibull_distribution::a', 'random/std::weibull_distribution::b', 'random/std::weibull_distribution::param', 'random/std::weibull_distribution::min', 'random/std::weibull_distribution::max', 'random/std::weibull_distribution::operator()', 'random/std::weibull_distribution::param_type', 'random/std::weibull_distribution::param_type::a', 'random/std::weibull_distribution::param_type::b', 'random/std::weibull_distribution::param_type::operator==', 'random/std::weibull_distribution::param_type::operator!=', 'random/std::weibull_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -101,8 +74,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[weibull_distribution::weibull_distribution](#weibull_distribution__weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|  
-|`weibull_distribution::operator()`|`weibull_distribution::b`|[weibull_distribution::param_type](#weibull_distribution__param_type)|  
+|[weibull_distribution](#weibull_distribution__weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|  
+|`weibull_distribution::operator()`|`weibull_distribution::b`|[param_type](#weibull_distribution__param_type)|  
   
 The property functions `a()` and `b()` return their respective values for stored distribution parameters *a* and *b*.  
   

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "max_none"
-  - "stdext::max_none"
-  - "stdext.max_none"
-  - "allocators/stdext::max_none"
+f1_keywords: ['max_none', 'stdext::max_none', 'allocators/stdext::max_none', 'allocators/stdext::max_none::allocated', 'allocators/stdext::max_none::deallocated', 'allocators/stdext::max_none::full', 'allocators/stdext::max_none::released', 'allocators/stdext::max_none::saved']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

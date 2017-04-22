@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "moneypunct"
-  - "std.moneypunct"
-  - "xlocmon/std::moneypunct"
-  - "std::moneypunct"
+f1_keywords: ['moneypunct', 'xlocmon/std::moneypunct', 'locale/std::moneypunct::char_type', 'locale/std::moneypunct::string_type', 'locale/std::moneypunct::curr_symbol', 'locale/std::moneypunct::decimal_point', 'locale/std::moneypunct::do_curr_symbol', 'locale/std::moneypunct::do_decimal_point', 'locale/std::moneypunct::do_frac_digits', 'locale/std::moneypunct::do_grouping', 'locale/std::moneypunct::do_neg_format', 'locale/std::moneypunct::do_negative_sign', 'locale/std::moneypunct::do_pos_format', 'locale/std::moneypunct::do_positive_sign', 'locale/std::moneypunct::do_thousands_sep', 'locale/std::moneypunct::frac_digits', 'locale/std::moneypunct::grouping', 'locale/std::moneypunct::neg_format', 'locale/std::moneypunct::negative_sign', 'locale/std::moneypunct::pos_format', 'locale/std::moneypunct::positive_sign', 'locale/std::moneypunct::thousands_sep']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

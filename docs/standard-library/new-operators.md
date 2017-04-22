@@ -6,6 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: [ 'new/std::operator delete', 'new/std::operator new']  
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 caps.latest.revision: 8
 manager: "ghogen"

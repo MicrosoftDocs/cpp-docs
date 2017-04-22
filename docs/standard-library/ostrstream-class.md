@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.oststream"
-  - "oststream"
-  - "std::oststream"
+f1_keywords: ['ostrstream', 'strstream/std::ostrstream::freeze', 'strstream/std::ostrstream::pcount', 'strstream/std::ostrstream::rdbuf', 'strstream/std::ostrstream::str']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

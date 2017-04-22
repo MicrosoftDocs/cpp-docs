@@ -8,98 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "unordered_map"
-  - "std::unordered_map"
-  - "unordered_map/std::unordered_map"
-  - "std::unordered_map::allocator_type"
-  - "unordered_map/std::unordered_map::allocator_type"
-  - "std::unordered_map::const_iterator"
-  - "unordered_map/std::unordered_map::const_iterator"
-  - "std::unordered_map::const_local_iterator"
-  - "unordered_map/std::unordered_map::const_local_iterator"
-  - "std::unordered_map::const_pointer"
-  - "unordered_map/std::unordered_map::const_pointer"
-  - "std::unordered_map::const_reference"
-  - "unordered_map/std::unordered_map::const_reference"
-  - "std::unordered_map::difference_type"
-  - "unordered_map/std::unordered_map::difference_type"
-  - "std::unordered_map::hasher"
-  - "unordered_map/std::unordered_map::hasher"
-  - "std::unordered_map::iterator"
-  - "unordered_map/std::unordered_map::iterator"
-  - "std::unordered_map::key_equal"
-  - "unordered_map/std::unordered_map::key_equal"
-  - "std::unordered_map::key_type"
-  - "unordered_map/std::unordered_map::key_type"
-  - "std::unordered_map::local_iterator"
-  - "unordered_map/std::unordered_map::local_iterator"
-  - "std::unordered_map::mapped_type"
-  - "unordered_map/std::unordered_map::mapped_type"
-  - "std::unordered_map::pointer"
-  - "unordered_map/std::unordered_map::pointer"
-  - "std::unordered_map::reference"
-  - "unordered_map/std::unordered_map::reference"
-  - "std::unordered_map::size_type"
-  - "unordered_map/std::unordered_map::size_type"
-  - "std::unordered_map::value_type"
-  - "unordered_map/std::unordered_map::value_type"
-  - "std::unordered_map::at"
-  - "unordered_map/std::unordered_map::at"
-  - "std::unordered_map::begin"
-  - "unordered_map/std::unordered_map::begin"
-  - "std::unordered_map::bucket"
-  - "unordered_map/std::unordered_map::bucket"
-  - "std::unordered_map::bucket_count"
-  - "unordered_map/std::unordered_map::bucket_count"
-  - "std::unordered_map::bucket_size"
-  - "unordered_map/std::unordered_map::bucket_size"
-  - "std::unordered_map::cbegin"
-  - "unordered_map/std::unordered_map::cbegin"
-  - "std::unordered_map::cend"
-  - "unordered_map/std::unordered_map::cend"
-  - "std::unordered_map::clear"
-  - "unordered_map/std::unordered_map::clear"
-  - "std::unordered_map::count"
-  - "unordered_map/std::unordered_map::count"
-  - "std::unordered_map::emplace"
-  - "unordered_map/std::unordered_map::emplace"
-  - "std::unordered_map::emplace_hint"
-  - "unordered_map/std::unordered_map::emplace_hint"
-  - "std::unordered_map::empty"
-  - "unordered_map/std::unordered_map::empty"
-  - "std::unordered_map::end"
-  - "unordered_map/std::unordered_map::end"
-  - "std::unordered_map::equal_range"
-  - "unordered_map/std::unordered_map::equal_range"
-  - "std::unordered_map::erase"
-  - "unordered_map/std::unordered_map::erase"
-  - "std::unordered_map::find"
-  - "unordered_map/std::unordered_map::find"
-  - "std::unordered_map::get_allocator"
-  - "unordered_map/std::unordered_map::get_allocator"
-  - "std::unordered_map::hash_function"
-  - "unordered_map/std::unordered_map::hash_function"
-  - "std::unordered_map::insert"
-  - "unordered_map/std::unordered_map::insert"
-  - "std::unordered_map::key_eq"
-  - "unordered_map/std::unordered_map::key_eq"
-  - "std::unordered_map::load_factor"
-  - "unordered_map/std::unordered_map::load_factor"
-  - "std::unordered_map::max_bucket_count"
-  - "unordered_map/std::unordered_map::max_bucket_count"
-  - "std::unordered_map::max_load_factor"
-  - "unordered_map/std::unordered_map::max_load_factor"
-  - "std::unordered_map::max_size"
-  - "unordered_map/std::unordered_map::max_size"
-  - "std::unordered_map::rehash"
-  - "unordered_map/std::unordered_map::rehash"
-  - "std::unordered_map::size"
-  - "unordered_map/std::unordered_map::size"
-  - "std::unordered_map::swap"
-  - "unordered_map/std::unordered_map::swap"
-  - "std::unordered_map::unordered_map"
-  - "unordered_map/std::unordered_map::unordered_map"
+f1_keywords: ['unordered_map', 'unordered_map/std::unordered_map', 'unordered_map/std::unordered_map::allocator_type', 'unordered_map/std::unordered_map::const_iterator', 'unordered_map/std::unordered_map::const_local_iterator', 'unordered_map/std::unordered_map::const_pointer', 'unordered_map/std::unordered_map::const_reference', 'unordered_map/std::unordered_map::difference_type', 'unordered_map/std::unordered_map::hasher', 'unordered_map/std::unordered_map::iterator', 'unordered_map/std::unordered_map::key_equal', 'unordered_map/std::unordered_map::key_type', 'unordered_map/std::unordered_map::local_iterator', 'unordered_map/std::unordered_map::mapped_type', 'unordered_map/std::unordered_map::pointer', 'unordered_map/std::unordered_map::reference', 'unordered_map/std::unordered_map::size_type', 'unordered_map/std::unordered_map::value_type', 'unordered_map/std::unordered_map::at', 'unordered_map/std::unordered_map::begin', 'unordered_map/std::unordered_map::bucket', 'unordered_map/std::unordered_map::bucket_count', 'unordered_map/std::unordered_map::bucket_size', 'unordered_map/std::unordered_map::cbegin', 'unordered_map/std::unordered_map::cend', 'unordered_map/std::unordered_map::clear', 'unordered_map/std::unordered_map::count', 'unordered_map/std::unordered_map::emplace', 'unordered_map/std::unordered_map::emplace_hint', 'unordered_map/std::unordered_map::empty', 'unordered_map/std::unordered_map::end', 'unordered_map/std::unordered_map::equal_range', 'unordered_map/std::unordered_map::erase', 'unordered_map/std::unordered_map::find', 'unordered_map/std::unordered_map::get_allocator', 'unordered_map/std::unordered_map::hash', 'unordered_map/std::unordered_map::insert', 'unordered_map/std::unordered_map::key_eq', 'unordered_map/std::unordered_map::load_factor', 'unordered_map/std::unordered_map::max_bucket_count', 'unordered_map/std::unordered_map::max_load_factor', 'unordered_map/std::unordered_map::max_size', 'unordered_map/std::unordered_map::rehash', 'unordered_map/std::unordered_map::size', 'unordered_map/std::unordered_map::swap', 'unordered_map/std::unordered_map::unordered_map', 'unordered_map/std::unordered_map::allocator_type', 'unordered_map/std::unordered_map::const_iterator', 'unordered_map/std::unordered_map::const_local_iterator', 'unordered_map/std::unordered_map::const_pointer', 'unordered_map/std::unordered_map::const_reference', 'unordered_map/std::unordered_map::difference_type', 'unordered_map/std::unordered_map::hasher', 'unordered_map/std::unordered_map::iterator', 'unordered_map/std::unordered_map::key_equal', 'unordered_map/std::unordered_map::key_type', 'unordered_map/std::unordered_map::local_iterator', 'unordered_map/std::unordered_map::mapped_type', 'unordered_map/std::unordered_map::pointer', 'unordered_map/std::unordered_map::reference', 'unordered_map/std::unordered_map::size_type', 'unordered_map/std::unordered_map::value_type', 'unordered_map/std::unordered_map::at', 'unordered_map/std::unordered_map::begin', 'unordered_map/std::unordered_map::bucket', 'unordered_map/std::unordered_map::bucket_count', 'unordered_map/std::unordered_map::bucket_size', 'unordered_map/std::unordered_map::cbegin', 'unordered_map/std::unordered_map::cend', 'unordered_map/std::unordered_map::clear', 'unordered_map/std::unordered_map::count', 'unordered_map/std::unordered_map::emplace', 'unordered_map/std::unordered_map::emplace_hint', 'unordered_map/std::unordered_map::empty', 'unordered_map/std::unordered_map::end', 'unordered_map/std::unordered_map::equal_range', 'unordered_map/std::unordered_map::erase', 'unordered_map/std::unordered_map::find', 'unordered_map/std::unordered_map::get_allocator', 'unordered_map/std::unordered_map::hash_function', 'unordered_map/std::unordered_map::insert', 'unordered_map/std::unordered_map::key_eq', 'unordered_map/std::unordered_map::load_factor', 'unordered_map/std::unordered_map::max_bucket_count', 'unordered_map/std::unordered_map::max_load_factor', 'unordered_map/std::unordered_map::max_size', 'unordered_map/std::unordered_map::rehash', 'unordered_map/std::unordered_map::size', 'unordered_map/std::unordered_map::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -154,54 +63,54 @@ class unordered_map;
 |||  
 |-|-|  
 |Type Definition|Description|  
-|[unordered_map::allocator_type](#unordered_map__allocator_type)|The type of an allocator for managing storage.|  
-|[unordered_map::const_iterator](#unordered_map__const_iterator)|The type of a constant iterator for the controlled sequence.|  
-|[unordered_map::const_local_iterator](#unordered_map__const_local_iterator)|The type of a constant bucket iterator for the controlled sequence.|  
-|[unordered_map::const_pointer](#unordered_map__const_pointer)|The type of a constant pointer to an element.|  
-|[unordered_map::const_reference](#unordered_map__const_reference)|The type of a constant reference to an element.|  
-|[unordered_map::difference_type](#unordered_map__difference_type)|The type of a signed distance between two elements.|  
-|[unordered_map::hasher](#unordered_map__hasher)|The type of the hash function.|  
-|[unordered_map::iterator](#unordered_map__iterator)|The type of an iterator for the controlled sequence.|  
-|[unordered_map::key_equal](#unordered_map__key_equal)|The type of the comparison function.|  
-|[unordered_map::key_type](#unordered_map__key_type)|The type of an ordering key.|  
-|[unordered_map::local_iterator](#unordered_map__local_iterator)|The type of a bucket iterator for the controlled sequence.|  
-|[unordered_map::mapped_type](#unordered_map__mapped_type)|The type of a mapped value associated with each key.|  
-|[unordered_map::pointer](#unordered_map__pointer)|The type of a pointer to an element.|  
-|[unordered_map::reference](#unordered_map__reference)|The type of a reference to an element.|  
-|[unordered_map::size_type](#unordered_map__size_type)|The type of an unsigned distance between two elements.|  
-|[unordered_map::value_type](#unordered_map__value_type)|The type of an element.|  
+|[allocator_type](#unordered_map__allocator_type)|The type of an allocator for managing storage.|  
+|[const_iterator](#unordered_map__const_iterator)|The type of a constant iterator for the controlled sequence.|  
+|[const_local_iterator](#unordered_map__const_local_iterator)|The type of a constant bucket iterator for the controlled sequence.|  
+|[const_pointer](#unordered_map__const_pointer)|The type of a constant pointer to an element.|  
+|[const_reference](#unordered_map__const_reference)|The type of a constant reference to an element.|  
+|[difference_type](#unordered_map__difference_type)|The type of a signed distance between two elements.|  
+|[hasher](#unordered_map__hasher)|The type of the hash function.|  
+|[iterator](#unordered_map__iterator)|The type of an iterator for the controlled sequence.|  
+|[key_equal](#unordered_map__key_equal)|The type of the comparison function.|  
+|[key_type](#unordered_map__key_type)|The type of an ordering key.|  
+|[local_iterator](#unordered_map__local_iterator)|The type of a bucket iterator for the controlled sequence.|  
+|[mapped_type](#unordered_map__mapped_type)|The type of a mapped value associated with each key.|  
+|[pointer](#unordered_map__pointer)|The type of a pointer to an element.|  
+|[reference](#unordered_map__reference)|The type of a reference to an element.|  
+|[size_type](#unordered_map__size_type)|The type of an unsigned distance between two elements.|  
+|[value_type](#unordered_map__value_type)|The type of an element.|  
   
 |||  
 |-|-|  
 |Member Function|Description|  
-|[unordered_map::at](#unordered_map__at)|Finds an element with the specified key.|  
-|[unordered_map::begin](#unordered_map__begin)|Designates the beginning of the controlled sequence.|  
-|[unordered_map::bucket](#unordered_map__bucket)|Gets the bucket number for a key value.|  
-|[unordered_map::bucket_count](#unordered_map__bucket_count)|Gets the number of buckets.|  
-|[unordered_map::bucket_size](#unordered_map__bucket_size)|Gets the size of a bucket.|  
-|[unordered_map::cbegin](#unordered_map__cbegin)|Designates the beginning of the controlled sequence.|  
-|[unordered_map::cend](#unordered_map__cend)|Designates the end of the controlled sequence.|  
-|[unordered_map::clear](#unordered_map__clear)|Removes all elements.|  
-|[unordered_map::count](#unordered_map__count)|Finds the number of elements matching a specified key.|  
-|[unordered_map::emplace](#unordered_map__emplace)|Adds an element constructed in place.|  
-|[unordered_map::emplace_hint](#unordered_map__emplace_hint)|Adds an element constructed in place, with hint.|  
-|[unordered_map::empty](#unordered_map__empty)|Tests whether no elements are present.|  
-|[unordered_map::end](#unordered_map__end)|Designates the end of the controlled sequence.|  
-|[unordered_map::equal_range](#unordered_map__equal_range)|Finds range that matches a specified key.|  
-|[unordered_map::erase](#unordered_map__erase)|Removes elements at specified positions.|  
-|[unordered_map::find](#unordered_map__find)|Finds an element that matches a specified key.|  
-|[unordered_map::get_allocator](#unordered_map__get_allocator)|Gets the stored allocator object.|  
-|[unordered_map::hash_function](#unordered_map__hash_function)|Gets the stored hash function object.|  
-|[unordered_map::insert](#unordered_map__insert)|Adds elements.|  
-|[unordered_map::key_eq](#unordered_map__key_eq)|Gets the stored comparison function object.|  
-|[unordered_map::load_factor](#unordered_map__load_factor)|Counts the average elements per bucket.|  
-|[unordered_map::max_bucket_count](#unordered_map__max_bucket_count)|Gets the maximum number of buckets.|  
-|[unordered_map::max_load_factor](#unordered_map__max_load_factor)|Gets or sets the maximum elements per bucket.|  
-|[unordered_map::max_size](#unordered_map__max_size)|Gets the maximum size of the controlled sequence.|  
-|[unordered_map::rehash](#unordered_map__rehash)|Rebuilds the hash table.|  
-|[unordered_map::size](#unordered_map__size)|Counts the number of elements.|  
-|[unordered_map::swap](#unordered_map__swap)|Swaps the contents of two containers.|  
-|[unordered_map::unordered_map](#unordered_map__unordered_map)|Constructs a container object.|  
+|[at](#unordered_map__at)|Finds an element with the specified key.|  
+|[begin](#unordered_map__begin)|Designates the beginning of the controlled sequence.|  
+|[bucket](#unordered_map__bucket)|Gets the bucket number for a key value.|  
+|[bucket_count](#unordered_map__bucket_count)|Gets the number of buckets.|  
+|[bucket_size](#unordered_map__bucket_size)|Gets the size of a bucket.|  
+|[cbegin](#unordered_map__cbegin)|Designates the beginning of the controlled sequence.|  
+|[cend](#unordered_map__cend)|Designates the end of the controlled sequence.|  
+|[clear](#unordered_map__clear)|Removes all elements.|  
+|[count](#unordered_map__count)|Finds the number of elements matching a specified key.|  
+|[emplace](#unordered_map__emplace)|Adds an element constructed in place.|  
+|[emplace_hint](#unordered_map__emplace_hint)|Adds an element constructed in place, with hint.|  
+|[empty](#unordered_map__empty)|Tests whether no elements are present.|  
+|[end](#unordered_map__end)|Designates the end of the controlled sequence.|  
+|[equal_range](#unordered_map__equal_range)|Finds range that matches a specified key.|  
+|[erase](#unordered_map__erase)|Removes elements at specified positions.|  
+|[find](#unordered_map__find)|Finds an element that matches a specified key.|  
+|[get_allocator](#unordered_map__get_allocator)|Gets the stored allocator object.|  
+|[hash_function](#unordered_map__hash)|Gets the stored hash function object.|  
+|[insert](#unordered_map__insert)|Adds elements.|  
+|[key_eq](#unordered_map__key_eq)|Gets the stored comparison function object.|  
+|[load_factor](#unordered_map__load_factor)|Counts the average elements per bucket.|  
+|[max_bucket_count](#unordered_map__max_bucket_count)|Gets the maximum number of buckets.|  
+|[max_load_factor](#unordered_map__max_load_factor)|Gets or sets the maximum elements per bucket.|  
+|[max_size](#unordered_map__max_size)|Gets the maximum size of the controlled sequence.|  
+|[rehash](#unordered_map__rehash)|Rebuilds the hash table.|  
+|[size](#unordered_map__size)|Counts the number of elements.|  
+|[swap](#unordered_map__swap)|Swaps the contents of two containers.|  
+|[unordered_map](#unordered_map__unordered_map)|Constructs a container object.|  
   
 |||  
 |-|-|  
@@ -210,7 +119,7 @@ class unordered_map;
 |[unordered_map::operator=](#unordered_map__operator_eq)|Copies a hash table.|  
   
 ## Remarks  
- The object orders the sequence it controls by calling two stored objects, a comparison function object of type [unordered_map::key_equal](#unordered_map__key_equal) and a hash function object of type [unordered_map::hasher](#unordered_map__hasher). You access the first stored object by calling the member function [unordered_map::key_eq](#unordered_map__key_eq)`()`; and you access the second stored object by calling the member function [unordered_map::hash_function](#unordered_map__hash_function)`()`. Specifically, for all values `X` and `Y` of type `Key`, the call `key_eq()(X, Y)` returns true only if the two argument values have equivalent ordering; the call `hash_function()(keyval)` yields a distribution of values of type `size_t`. Unlike template class [unordered_multimap Class](../standard-library/unordered-multimap-class.md), an object of template class `unordered_map` ensures that `key_eq()(X, Y)` is always false for any two elements of the controlled sequence. (Keys are unique.)  
+ The object orders the sequence it controls by calling two stored objects, a comparison function object of type [unordered_map::key_equal](#unordered_map__key_equal) and a hash function object of type [unordered_map::hasher](#unordered_map__hasher). You access the first stored object by calling the member function [unordered_map::key_eq](#unordered_map__key_eq)`()`; and you access the second stored object by calling the member function [unordered_map::hash_function](#unordered_map__hash)`()`. Specifically, for all values `X` and `Y` of type `Key`, the call `key_eq()(X, Y)` returns true only if the two argument values have equivalent ordering; the call `hash_function()(keyval)` yields a distribution of values of type `size_t`. Unlike template class [unordered_multimap Class](../standard-library/unordered-multimap-class.md), an object of template class `unordered_map` ensures that `key_eq()(X, Y)` is always false for any two elements of the controlled sequence. (Keys are unique.)  
   
  The object also stores a maximum load factor, which specifies the maximum desired average number of elements per bucket. If inserting an element causes [unordered_map::load_factor](#unordered_map__load_factor)`()` to exceed the maximum load factor, the container increases the number of buckets and rebuilds the hash table as needed.  
   
@@ -1299,7 +1208,7 @@ int main()
 al == std::allocator() is true  
 ```  
   
-##  <a name="unordered_map__hash_function"></a>  unordered_map::hash_function  
+##  <a name="unordered_map__hash"></a>  unordered_map::hash_function  
  Gets the stored hash function object.  
   
 ```  

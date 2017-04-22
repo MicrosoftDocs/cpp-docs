@@ -12,6 +12,11 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "container classes"
+f1_keywords: []  
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "container classes"
 ms.assetid: 5b1451f2-c708-45da-bbf0-9e42fd687a1a
 caps.latest.revision: 10
 author: "corob-msft"

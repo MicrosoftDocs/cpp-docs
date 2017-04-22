@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.mask_array"
-  - "mask_array"
-  - "std::mask_array"
-  - "valarray/std::mask_array"
+f1_keywords: ['mask_array', 'valarray/std::mask_array']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

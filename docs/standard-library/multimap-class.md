@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "multimap"
-  - "std.multimap"
-  - "map/std::multimap"
-  - "std::multimap"
+f1_keywords: ['multimap', 'map/std::multimap', 'map/std::multimap::allocator_type', 'map/std::multimap::const_iterator', 'map/std::multimap::const_pointer', 'map/std::multimap::const_reference', 'map/std::multimap::const_reverse_iterator', 'map/std::multimap::difference_type', 'map/std::multimap::iterator', 'map/std::multimap::key_compare', 'map/std::multimap::key_type', 'map/std::multimap::mapped_type', 'map/std::multimap::pointer', 'map/std::multimap::reference', 'map/std::multimap::reverse_iterator', 'map/std::multimap::size_type', 'map/std::multimap::value_type', 'map/std::multimap::begin', 'map/std::multimap::cbegin', 'map/std::multimap::cend', 'map/std::multimap::clear', 'map/std::multimap::count', 'map/std::multimap::crbegin', 'map/std::multimap::crend', 'map/std::multimap::emplace', 'map/std::multimap::emplace_hint', 'map/std::multimap::empty', 'map/std::multimap::end', 'map/std::multimap::equal_range', 'map/std::multimap::erase', 'map/std::multimap::find', 'map/std::multimap::get_allocator', 'map/std::multimap::insert', 'map/std::multimap::key_comp', 'map/std::multimap::lower_bound', 'map/std::multimap::max_size', 'map/std::multimap::rbegin', 'map/std::multimap::rend', 'map/std::multimap::size', 'map/std::multimap::swap', 'map/std::multimap::upper_bound', 'map/std::multimap::value_comp']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

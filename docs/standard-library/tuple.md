@@ -66,9 +66,9 @@ Defines a template `tuple` whose instances hold objects of varying types.
   
 |||  
 |-|-|  
-|[get](../standard-library/tuple-functions.md#get_function)|Gets an element from a `tuple` object.|  
-|[make_tuple](../standard-library/tuple-functions.md#make_tuple_function)|Makes a `tuple` from element values.|  
-|[tie](../standard-library/tuple-functions.md#tie_function)|Makes a `tuple` from element references.|  
+|[get](../standard-library/tuple-functions.md#get)|Gets an element from a `tuple` object.|  
+|[make_tuple](../standard-library/tuple-functions.md#make_tuple)|Makes a `tuple` from element values.|  
+|[tie](../standard-library/tuple-functions.md#tie)|Makes a `tuple` from element references.|  
   
 ## See Also  
  [\<array>](../standard-library/array.md)

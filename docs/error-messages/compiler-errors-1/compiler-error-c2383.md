@@ -35,15 +35,16 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C2383
-'symbol' : default-arguments are not allowed on this symbol  
+'*symbol*' : default-arguments are not allowed on this symbol  
   
  The C++ compiler does not allow default arguments on pointers to functions.  
   
- This code was accepted by the previous version's compiler but now gives an error. For code that works in all versions of Visual C++, do not assign a default value to a pointer-to-function argument.  
+ This code was accepted by the Visual C++ compiler in versions before Visual Studio 2005, but now gives an error. For code that works in all versions of Visual C++, do not assign a default value to a pointer-to-function argument.  
   
- The following line generates C2383:  
+## Example  
+ The following example generates C2383, and shows a possible solution:  
   
-```  
+```cpp  
 // C2383.cpp  
 // compile with: /c   
 void (*pf)(int = 0);   // C2383  

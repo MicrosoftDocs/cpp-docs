@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.logical_or"
-  - "std::logical_or"
-  - "logical_or"
-  - "xfunctional/std::logical_or"
+f1_keywords: ['logical_or', 'xfunctional/std::logical_or']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

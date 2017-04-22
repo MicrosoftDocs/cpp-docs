@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "typeindex/std::hash"
+f1_keywords: ['typeindex/std::hash']  
 dev_langs: 
   - "C++"
 ms.assetid: e5a41202-ef3b-45d0-b3a7-4c2dbdc0487a

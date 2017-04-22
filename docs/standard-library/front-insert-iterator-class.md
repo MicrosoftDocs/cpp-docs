@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "iterator/std::front_insert_iterator"
-  - "std::front_insert_iterator"
-  - "std.front_insert_iterator"
-  - "front_insert_iterator"
+f1_keywords: ['iterator/std::front_insert_iterator', 'front_insert_iterator', 'iterator/std::front_insert_iterator::container_type', 'iterator/std::front_insert_iterator::reference']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

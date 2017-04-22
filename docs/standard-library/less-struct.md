@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::less"
-  - "std.less"
-  - "less"
-  - "xfunctional/std::less"
+f1_keywords: ['less', 'xfunctional/std::less']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

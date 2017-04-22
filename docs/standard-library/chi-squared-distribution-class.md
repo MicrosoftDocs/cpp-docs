@@ -8,30 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "chi_squared_distribution"
-  - "std::chi_squared_distribution"
-  - "random/std::chi_squared_distribution"
-  - "std::chi_squared_distribution::reset"
-  - "random/std::chi_squared_distribution::reset"
-  - "std::chi_squared_distribution::n"
-  - "random/std::chi_squared_distribution::n"
-  - "std::chi_squared_distribution::param"
-  - "random/std::chi_squared_distribution::param"
-  - "std::chi_squared_distribution::min"
-  - "random/std::chi_squared_distribution::min"
-  - "std::chi_squared_distribution::max"
-  - "random/std::chi_squared_distribution::max"
-  - "std::chi_squared_distribution::operator()"
-  - "random/std::chi_squared_distribution::operator()"
-  - "std::chi_squared_distribution::param_type"
-  - "random/std::chi_squared_distribution::param_type"
-  - "std::chi_squared_distribution::param_type::n"
-  - "random/std::chi_squared_distribution::param_type::n"
-  - "std::chi_squared_distribution::param_type::operator=="
-  - "random/std::chi_squared_distribution::param_type::operator=="
-  - "std::chi_squared_distribution::param_type::operator!="
-  - "random/std::chi_squared_distribution::param_type::operator!="
+f1_keywords: ['chi_squared_distribution', 'random/std::chi_squared_distribution', 'random/std::chi_squared_distribution::reset', 'random/std::chi_squared_distribution::n', 'random/std::chi_squared_distribution::param', 'random/std::chi_squared_distribution::min', 'random/std::chi_squared_distribution::max', 'random/std::chi_squared_distribution::operator()', 'random/std::chi_squared_distribution::param_type', 'random/std::chi_squared_distribution::param_type::n', 'random/std::chi_squared_distribution::param_type::operator==', 'random/std::chi_squared_distribution::param_type::operator!=', 'random/std::chi_squared_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -100,8 +77,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[chi_squared_distribution::chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|  
-|`chi_squared_distribution::operator()`||[chi_squared_distribution::param_type](#chi_squared_distribution__param_type)|  
+|[chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|  
+|`chi_squared_distribution::operator()`||[param_type](#chi_squared_distribution__param_type)|  
   
 The property function `n()` returns the value for the stored distribution parameter `n`.  
   

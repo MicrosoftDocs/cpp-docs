@@ -8,20 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "regex_iterator"
-  - "std::regex_iterator"
-  - "regex/std::regex_iterator"
-  - "std::regex_iterator::operator=="
-  - "regex/std::regex_iterator::operator=="
-  - "std::regex_iterator::operator!="
-  - "regex/std::regex_iterator::operator!="
-  - "std::regex_iterator::operator*"
-  - "regex/std::regex_iterator::operator*"
-  - "std::regex_iterator::operator->"
-  - "regex/std::regex_iterator::operator->"
-  - "std::regex_iterator::operator++"
-  - "regex/std::regex_iterator::operator++"
+f1_keywords: ['regex_iterator', 'regex/std::regex_iterator', 'regex/std::regex_iterator::operator==', 'regex/std::regex_iterator::operator!=', 'regex/std::regex_iterator::operator*', 'regex/std::regex_iterator::operator->', 'regex/std::regex_iterator::operator++']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -100,13 +87,13 @@ private:
 ## Examples  
  See the following topics for examples on regular expressions:  
   
-- [regex_match Function](../standard-library/regex-functions.md#regex_match_function)  
+- [regex_match](../standard-library/regex-functions.md#regex_match)  
   
-- [regex_replace Function](../standard-library/regex-functions.md#regex_replace_function)  
+- [regex_replace](../standard-library/regex-functions.md#regex_replace)  
   
-- [regex_search Function](../standard-library/regex-functions.md#regex_search_function)  
+- [regex_search](../standard-library/regex-functions.md#regex_search)  
   
-- [swap Function](../standard-library/regex-functions.md#swap_function)  
+- [swap](../standard-library/regex-functions.md#swap)  
   
 ## Requirements  
  **Header:** \<regex>  

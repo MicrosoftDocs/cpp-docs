@@ -312,7 +312,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
     |has_trivial_move_assign|is_trivially_move_assignable|  
     |has_trivial_destructor|is_trivially_destructible|  
   
--   **launch::any and launch::sync policies** The nonstandard launch::any and launch::sync policies were removed. Instead, for launch::any, use launch:async &#124; launch:deferred. For launch::sync, use launch::deferred. See [launch Enumeration](../standard-library/future-enums.md#launch_enumeration).  
+-   **launch::any and launch::sync policies** The nonstandard launch::any and launch::sync policies were removed. Instead, for launch::any, use launch:async &#124; launch:deferred. For launch::sync, use launch::deferred. See [launch Enumeration](../standard-library/future-enums.md#launch).  
   
 ####  <a name="BK_MFC"></a> MFC and ATL  
   

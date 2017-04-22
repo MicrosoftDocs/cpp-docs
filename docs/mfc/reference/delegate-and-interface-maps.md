@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "delegate map macros"
   - "event map macros"
   - "interface map macros"
-  ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
+ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
 caps.latest.revision: 1
 author: "mikeblome"
 ms.author: "mblome"
@@ -39,7 +39,6 @@ translation.priority.ht:
 |-|-|  
 |[BEGIN_DELEGATE_MAP](#begin_delegate_map)|Begins a delegate map.|
 |[BEGIN_INTERFACE_MAP](#begin_interface_map)|Begins the definition of the interfaced map.|
-|[BEGIN_TEMPLATE_MESSAGE_MAP](#begin_template_interface_map)|Begins the definition of a message map on a class type containing a single template argument. |
 |[CommandHandler Delegate](#commandhandler)|Registers callback methods with a command source.  |
 |[END_DELEGATE_MAP](#end_delegate_map)|Ends a delegate map.|
 |[END_INTERFACE_MAP](#end_interface_map)|Ends the interface map in the implementation file. |
@@ -90,31 +89,6 @@ BEGIN_INTERFACE_MAP( theClass, baseClass )
 ### Requirements  
  **Header:** afxwin.h  
  
-##  <a name="begin_template_message_map"></a>BEGIN_TEMPLATE_MESSAGE_MAP
-Begins the definition of a message map on a class type containing a single template argument.  
-   
-### Syntax  
-  ```
-BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )  
-```
-### Parameters  
- `theClass`  
- Specifies the name of the class whose message map this is.    
- `type_name`  
- The name of the template parameter specified for the class.    
- `baseClass`  
- Specifies the name of the base class of `theClass`.  
-   
-### Remarks  
- This macro is similar to the [BEGIN_MESSAGE_MAP](message-map-macros-mfc.md#begin_message_map) macro; however, this macro is intended for classes containing a single template argument.  
-  
- In the method implementation section of your class, start the message map with the **BEGIN_TEMPLATE_MESSAGE_MAP** macro; then add macro entries for each of your message-handler methods as you would for a standard message map. As with the **BEGIN_MESSAGE_MAP** macro, complete the template message map with the [END_MESSAGE_MAP](message-map-macros-mfc.md#end_message_map) macro.  
-  
- For more information on implementing message maps for template classes, refer to [How to: Create a Message Map for a Template Class](../how-to-create-a-message-map-for-a-template-class.md).  
-   
-### Requirements  
- **Header:** afxwin.h  
-
 ##  <a name="commandhandler"></a>CommandHandler Delegate
 Registers callback methods with a command source.  
    

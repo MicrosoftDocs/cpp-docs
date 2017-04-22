@@ -40,9 +40,9 @@ You can enable native C++ classes to receive callbacks from managed events raise
   
  To do this, you need to:  
   
--   Attach an `OnClick` event handler to the control using [MAKE_DELEGATE](http://msdn.microsoft.com/Library/acc07fd2-4ea7-4c56-8d2c-73175524caeb).  
+-   Attach an `OnClick` event handler to the control using [MAKE_DELEGATE](../mfc/reference/delegate-and-interface-maps.md#make_delegate).  
   
--   Create a delegate map using [BEGIN_DELEGATE_MAP](http://msdn.microsoft.com/Library/cdf4341f-1c71-40bb-abc8-fc2c35b8247d), [END_DELEGATE_MAP](http://msdn.microsoft.com/Library/23992653-a52a-4c76-b1f8-8e67daae75da), and [EVENT_DELEGATE_ENTRY](http://msdn.microsoft.com/Library/17539da5-bad7-43ff-8a54-6ea3dc564965).  
+-   Create a delegate map using [BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map), [END_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#end_delegate_map), and [EVENT_DELEGATE_ENTRY](../mfc/reference/delegate-and-interface-maps.md#event_delegate_entry).  
   
  This sample continues the work you did in [How to: Do DDX/DDV Data Binding with Windows Forms](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).  
   
@@ -77,7 +77,7 @@ You can enable native C++ classes to receive callbacks from managed events raise
     ```  
   
 ## See Also  
- [MAKE_DELEGATE](http://msdn.microsoft.com/Library/acc07fd2-4ea7-4c56-8d2c-73175524caeb)   
- [BEGIN_DELEGATE_MAP](http://msdn.microsoft.com/Library/cdf4341f-1c71-40bb-abc8-fc2c35b8247d)   
- [END_DELEGATE_MAP](http://msdn.microsoft.com/Library/23992653-a52a-4c76-b1f8-8e67daae75da)   
- [EVENT_DELEGATE_ENTRY](http://msdn.microsoft.com/Library/17539da5-bad7-43ff-8a54-6ea3dc564965)
+ [MAKE_DELEGATE](../mfc/reference/delegate-and-interface-maps.md#make_delegate)   
+ [BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map)   
+ [END_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#end_delegate_map)   
+ [EVENT_DELEGATE_ENTRY](../mfc/reference/delegate-and-interface-maps.md#event_delegate_entry)

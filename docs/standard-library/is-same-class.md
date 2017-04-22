@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_same"
-  - "std::is_same"
-  - "type_traits/std::is_same"
+f1_keywords: ['is_same', 'type_traits/std::is_same']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

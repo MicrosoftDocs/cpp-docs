@@ -8,34 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "lognormal_distribution"
-  - "std::lognormal_distribution"
-  - "random/std::lognormal_distribution"
-  - "std::lognormal_distribution::reset"
-  - "random/std::lognormal_distribution::reset"
-  - "std::lognormal_distribution::m"
-  - "random/std::lognormal_distribution::m"
-  - "std::lognormal_distribution::s"
-  - "random/std::lognormal_distribution::s"
-  - "std::lognormal_distribution::param"
-  - "random/std::lognormal_distribution::param"
-  - "std::lognormal_distribution::min"
-  - "random/std::lognormal_distribution::min"
-  - "std::lognormal_distribution::max"
-  - "random/std::lognormal_distribution::max"
-  - "std::lognormal_distribution::operator()"
-  - "random/std::lognormal_distribution::operator()"
-  - "std::lognormal_distribution::param_type"
-  - "random/std::lognormal_distribution::param_type"
-  - "std::lognormal_distribution::param_type::m"
-  - "random/std::lognormal_distribution::param_type::m"
-  - "std::lognormal_distribution::param_type::s"
-  - "random/std::lognormal_distribution::param_type::s"
-  - "std::lognormal_distribution::param_type::operator=="
-  - "random/std::lognormal_distribution::param_type::operator=="
-  - "std::lognormal_distribution::param_type::operator!="
-  - "random/std::lognormal_distribution::param_type::operator!="
+f1_keywords: ['lognormal_distribution', 'random/std::lognormal_distribution', 'random/std::lognormal_distribution::reset', 'random/std::lognormal_distribution::m', 'random/std::lognormal_distribution::s', 'random/std::lognormal_distribution::param', 'random/std::lognormal_distribution::min', 'random/std::lognormal_distribution::max', 'random/std::lognormal_distribution::operator()', 'random/std::lognormal_distribution::param_type', 'random/std::lognormal_distribution::param_type::m', 'random/std::lognormal_distribution::param_type::s', 'random/std::lognormal_distribution::param_type::operator==', 'random/std::lognormal_distribution::param_type::operator!=', 'random/std::lognormal_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -99,8 +72,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[lognormal_distribution::lognormal_distribution](#lognormal_distribution__lognormal_distribution)|`lognormal_distribution::m`|`lognormal_distribution::param`|  
-|`lognormal_distribution::operator()`|`lognormal_distribution::s`|[lognormal_distribution::param_type](#lognormal_distribution__param_type)|  
+|[lognormal_distribution](#lognormal_distribution__lognormal_distribution)|`lognormal_distribution::m`|`lognormal_distribution::param`|  
+|`lognormal_distribution::operator()`|`lognormal_distribution::s`|[param_type](#lognormal_distribution__param_type)|  
   
 The property functions `m()` and `s()` return the values for the stored distribution parameters *m* and *s*, respectively.  
   

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "tuple"
-  - "std::tuple"
-  - "tuple/std::tuple"
-  - "tuple/std::tuple::operator="
+f1_keywords: ['tuple', 'tuple/std::tuple', 'tuple/std::tuple::operator=']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -351,5 +347,5 @@ int main()
   
 ## See Also  
  [\<tuple>](../standard-library/tuple.md)   
- [make_tuple Function](../standard-library/tuple-functions.md#make_tuple_function)
+ [make_tuple](../standard-library/tuple-functions.md#make_tuple)
 

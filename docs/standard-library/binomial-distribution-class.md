@@ -8,34 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "binomial_distribution"
-  - "std::binomial_distribution"
-  - "random/std::binomial_distribution"
-  - "std::binomial_distribution::reset"
-  - "random/std::binomial_distribution::reset"
-  - "std::binomial_distribution::p"
-  - "random/std::binomial_distribution::p"
-  - "std::binomial_distribution::t"
-  - "random/std::binomial_distribution::t"
-  - "std::binomial_distribution::param"
-  - "random/std::binomial_distribution::param"
-  - "std::binomial_distribution::min"
-  - "random/std::binomial_distribution::min"
-  - "std::binomial_distribution::max"
-  - "random/std::binomial_distribution::max"
-  - "std::binomial_distribution::operator()"
-  - "random/std::binomial_distribution::operator()"
-  - "std::binomial_distribution::param_type"
-  - "random/std::binomial_distribution::param_type"
-  - "std::binomial_distribution::param_type::p"
-  - "random/std::binomial_distribution::param_type::p"
-  - "std::binomial_distribution::param_type::t"
-  - "random/std::binomial_distribution::param_type::t"
-  - "std::binomial_distribution::param_type::operator=="
-  - "random/std::binomial_distribution::param_type::operator=="
-  - "std::binomial_distribution::param_type::operator!="
-  - "random/std::binomial_distribution::param_type::operator!="
+f1_keywords: ['binomial_distribution', 'random/std::binomial_distribution', 'random/std::binomial_distribution::reset', 'random/std::binomial_distribution::p', 'random/std::binomial_distribution::t', 'random/std::binomial_distribution::param', 'random/std::binomial_distribution::min', 'random/std::binomial_distribution::max', 'random/std::binomial_distribution::operator()', 'random/std::binomial_distribution::param_type', 'random/std::binomial_distribution::param_type::p', 'random/std::binomial_distribution::param_type::t', 'random/std::binomial_distribution::param_type::operator==', 'random/std::binomial_distribution::param_type::operator!=', 'random/std::binomial_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -106,8 +79,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[binomial_distribution::binomial_distribution](#binomial_distribution__binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|  
-|`binomial_distribution::operator()`|`binomial_distribution::p`|[binomial_distribution::param_type](#binomial_distribution__param_type)|  
+|[binomial_distribution](#binomial_distribution__binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|  
+|`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#binomial_distribution__param_type)|  
   
 The property members `t()` and `p()` return the currently stored distribution parameter values `t` and `p` respectively.  
   

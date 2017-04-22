@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext.sync_per_container"
-  - "sync_per_container"
-  - "stdext::sync_per_container"
-  - "allocators/stdext::sync_per_container"
+f1_keywords: ['sync_per_container', 'stdext::sync_per_container', 'allocators/stdext::sync_per_container', 'allocators/stdext::sync_per_container::equals']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,17 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "memory/std::pointer_traits::element_type"
-  - "memory/std::pointer_traits::pointer"
-  - "memory/std::pointer_traits"
-  - "memory/std::pointer_traits::difference_type"
-  - "memory/std::pointer_traits::rebind"
-  - "xmemory0/std::pointer_traits::element_type"
-  - "xmemory0/std::pointer_traits::pointer"
-  - "xmemory0/std::pointer_traits"
-  - "xmemory0/std::pointer_traits::difference_type"
-  - "xmemory0/std::pointer_traits::rebind"
+f1_keywords: ['memory/std::pointer_traits::element_type', 'memory/std::pointer_traits::pointer', 'memory/std::pointer_traits', 'memory/std::pointer_traits::difference_type', 'memory/std::pointer_traits::rebind', 'xmemory0/std::pointer_traits::element_type', 'xmemory0/std::pointer_traits::pointer', 'xmemory0/std::pointer_traits', 'xmemory0/std::pointer_traits::difference_type', 'xmemory0/std::pointer_traits::rebind', 'memory/std::pointer_traits::pointer_to']  
 dev_langs: 
   - "C++"
 ms.assetid: 545aecf1-3561-4859-8b34-603c079fe1b3
@@ -83,14 +73,14 @@ struct Ptr
   
 |Name|Description|  
 |----------|-----------------|  
-|[pointer_to](#pointer_traits__pointer_to_method)|Converts an arbitrary reference to an object of class `Ptr`.|  
+|[pointer_to](#pointer_traits__pointer_to)|Converts an arbitrary reference to an object of class `Ptr`.|  
   
 ## Requirements  
  **Header:** \<memory>  
   
  **Namespace:** std  
   
-##  <a name="pointer_traits__pointer_to_method"></a>  pointer_to  
+##  <a name="pointer_traits__pointer_to"></a>  pointer_to  
  Static method that returns `Ptr::pointer_to(obj)`, if that function exists. Otherwise, it is not possible to convert an arbitrary reference to an object of class `Ptr`. If `Ptr` is a raw pointer, this method returns `addressof(obj)`.  
   
 ```cpp  

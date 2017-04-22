@@ -8,34 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "fisher_f_distribution"
-  - "std::fisher_f_distribution"
-  - "random/std::fisher_f_distribution"
-  - "std::fisher_f_distribution::reset"
-  - "random/std::fisher_f_distribution::reset"
-  - "std::fisher_f_distribution::m"
-  - "random/std::fisher_f_distribution::m"
-  - "std::fisher_f_distribution::n"
-  - "random/std::fisher_f_distribution::n"
-  - "std::fisher_f_distribution::param"
-  - "random/std::fisher_f_distribution::param"
-  - "std::fisher_f_distribution::min"
-  - "random/std::fisher_f_distribution::min"
-  - "std::fisher_f_distribution::max"
-  - "random/std::fisher_f_distribution::max"
-  - "std::fisher_f_distribution::operator()"
-  - "random/std::fisher_f_distribution::operator()"
-  - "std::fisher_f_distribution::param_type"
-  - "random/std::fisher_f_distribution::param_type"
-  - "std::fisher_f_distribution::param_type::m"
-  - "random/std::fisher_f_distribution::param_type::m"
-  - "std::fisher_f_distribution::param_type::n"
-  - "random/std::fisher_f_distribution::param_type::n"
-  - "std::fisher_f_distribution::param_type::operator=="
-  - "random/std::fisher_f_distribution::param_type::operator=="
-  - "std::fisher_f_distribution::param_type::operator!="
-  - "random/std::fisher_f_distribution::param_type::operator!="
+f1_keywords: ['fisher_f_distribution', 'random/std::fisher_f_distribution', 'random/std::fisher_f_distribution::reset', 'random/std::fisher_f_distribution::m', 'random/std::fisher_f_distribution::n', 'random/std::fisher_f_distribution::param', 'random/std::fisher_f_distribution::min', 'random/std::fisher_f_distribution::max', 'random/std::fisher_f_distribution::operator()', 'random/std::fisher_f_distribution::param_type', 'random/std::fisher_f_distribution::param_type::m', 'random/std::fisher_f_distribution::param_type::n', 'random/std::fisher_f_distribution::param_type::operator==', 'random/std::fisher_f_distribution::param_type::operator!=', 'random/std::fisher_f_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -103,8 +76,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
   
 ||||  
 |-|-|-|  
-|[fisher_f_distribution::fisher_f_distribution](#fisher_f_distribution__fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|  
-|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[fisher_f_distribution::param_type](#fisher_f_distribution__param_type)|  
+|[fisher_f_distribution](#fisher_f_distribution__fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|  
+|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#fisher_f_distribution__param_type)|  
   
  The property functions `m()` and `n()` return the values for the stored distribution parameters `m` and `n` respectively.  
   

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.unary_function"
-  - "unary_function"
-  - "functional/std::unary_function"
-  - "std::unary_function"
+f1_keywords: ['unary', 'functional/std::unary']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

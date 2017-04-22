@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext::rts_alloc"
-  - "allocators/stdext::rts_alloc"
-  - "rts_alloc"
-  - "stdext.rts_alloc"
+f1_keywords: ['stdext::rts_alloc', 'allocators/stdext::rts_alloc', 'rts_alloc', 'allocators/stdext::rts_alloc::allocate', 'allocators/stdext::rts_alloc::deallocate', 'allocators/stdext::rts_alloc::equals']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

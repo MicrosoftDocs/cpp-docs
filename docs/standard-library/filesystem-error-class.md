@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "filesystem/std::experimental::filesystem::filesystem_error"
+f1_keywords: ['filesystem/std::experimental::filesystem::filesystem_error']  
 dev_langs: 
   - "C++"
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
@@ -87,7 +86,7 @@ const char *what() const noexcept;
  The member function returns a pointer to an NTBS, preferably composed from runtime_error::what(), system_error::what(), mymesg, mypval1.native_string(), and mypval2.native_string().  
   
 ## Requirements  
- **Header:** filesystem  
+ **Header:** \<filesystem>  
   
  **Namespace:** std::experimental::filesystem  
   

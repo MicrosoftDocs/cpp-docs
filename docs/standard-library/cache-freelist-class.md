@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext.cache_freelist"
-  - "allocators/stdext::cache_freelist"
-  - "stdext::cache_freelist"
-  - "cache_freelist"
+f1_keywords: ['allocators/stdext::cache_freelist', 'stdext::cache_freelist', 'cache_freelist', 'allocators/stdext::cache_freelist::allocate', 'allocators/stdext::cache_freelist::deallocate']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

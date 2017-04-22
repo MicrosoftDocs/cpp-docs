@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "domain_error"
-  - "std::domain_error"
-  - "std.domain_error"
-  - "stdexcept/std::domain_error"
+f1_keywords: ['domain_error', 'stdexcept/std::domain_error']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

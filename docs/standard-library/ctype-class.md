@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ctype"
-  - "std::ctype"
-  - "std.ctype"
-  - "CType"
-  - "xlocale/std::ctype"
+f1_keywords: ['ctype', 'xlocale/std::ctype', 'locale/std::ctype::char_type', 'locale/std::ctype::do_is', 'locale/std::ctype::do_narrow', 'locale/std::ctype::do_scan_is', 'locale/std::ctype::do_scan_not', 'locale/std::ctype::do_tolower', 'locale/std::ctype::do_toupper', 'locale/std::ctype::do_widen', 'locale/std::ctype::is', 'locale/std::ctype::narrow', 'locale/std::ctype::scan_is', 'locale/std::ctype::scan_not', 'locale/std::ctype::tolower', 'locale/std::ctype::toupper', 'locale/std::ctype::widen']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

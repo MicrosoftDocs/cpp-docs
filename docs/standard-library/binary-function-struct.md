@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.binary_function"
-  - "functional/std::binary_function"
-  - "std::binary_function"
-  - "binary_function"
+f1_keywords: ['functional/std::binary', 'binary']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

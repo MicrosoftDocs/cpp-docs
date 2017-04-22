@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ctype<char>"
-  - "locale/std::ctype<char>"
-  - "std::ctype<char>"
-  - "std.ctype<char>"
+f1_keywords: ['ctype<char>', 'locale/std::ctype<char>']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

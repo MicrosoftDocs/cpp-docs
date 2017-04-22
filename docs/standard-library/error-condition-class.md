@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "system_error/std::error_condition"
-  - "std::error_condition"
-  - "error_condition"
-  - "std.error_condition"
+f1_keywords: ['system_error/std::error_condition', 'error_condition', 'system_error/std::error_condition::value_type', 'system_error/std::error_condition::assign', 'system_error/std::error_condition::category', 'system_error/std::error_condition::clear', 'system_error/std::error_condition::message', 'system_error/std::error_condition::operator bool']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

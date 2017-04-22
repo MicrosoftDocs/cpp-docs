@@ -8,30 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "exponential_distribution"
-  - "std::exponential_distribution"
-  - "random/std::exponential_distribution"
-  - "std::exponential_distribution::reset"
-  - "random/std::exponential_distribution::reset"
-  - "std::exponential_distribution::lambda"
-  - "random/std::exponential_distribution::lambda"
-  - "std::exponential_distribution::param"
-  - "random/std::exponential_distribution::param"
-  - "std::exponential_distribution::min"
-  - "random/std::exponential_distribution::min"
-  - "std::exponential_distribution::max"
-  - "random/std::exponential_distribution::max"
-  - "std::exponential_distribution::operator()"
-  - "random/std::exponential_distribution::operator()"
-  - "std::exponential_distribution::param_type"
-  - "random/std::exponential_distribution::param_type"
-  - "std::exponential_distribution::param_type::lambda"
-  - "random/std::exponential_distribution::param_type::lambda"
-  - "std::exponential_distribution::param_type::operator=="
-  - "random/std::exponential_distribution::param_type::operator=="
-  - "std::exponential_distribution::param_type::operator!="
-  - "random/std::exponential_distribution::param_type::operator!="
+f1_keywords: ['exponential_distribution', 'random/std::exponential_distribution', 'random/std::exponential_distribution::reset', 'random/std::exponential_distribution::lambda', 'random/std::exponential_distribution::param', 'random/std::exponential_distribution::min', 'random/std::exponential_distribution::max', 'random/std::exponential_distribution::operator()', 'random/std::exponential_distribution::param_type', 'random/std::exponential_distribution::param_type::lambda', 'random/std::exponential_distribution::param_type::operator==', 'random/std::exponential_distribution::param_type::operator!=', 'random/std::exponential_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -102,8 +79,8 @@ The random number generator engine. For possible types, see [\<random>](../stand
   
 ||||  
 |-|-|-|  
-|[exponential_distribution::exponential_distribution](#exponential_distribution__exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|  
-|`exponential_distribution::operator()`||[exponential_distribution::param_type](#exponential_distribution__param_type)|  
+|[exponential_distribution](#exponential_distribution__exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|  
+|`exponential_distribution::operator()`||[param_type](#exponential_distribution__param_type)|  
   
 The property member function `lambda()` returns the value for the stored distribution parameter `lambda`.  
   

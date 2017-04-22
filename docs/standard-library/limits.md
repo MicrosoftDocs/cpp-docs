@@ -54,8 +54,8 @@ Defines the template class `numeric_limits` and two enumerations concerning floa
   
 |||  
 |-|-|  
-|[float_denorm_style](../standard-library/limits-enums.md#float_denorm_style_enumeration)|The enumeration describes the various methods that an implementation can choose for representing a denormalized floating-point value — one too small to represent as a normalized value:|  
-|[float_round_style](../standard-library/limits-enums.md#float_round_style_enumeration)|The enumeration describes the various methods that an implementation can choose for rounding a floating-point value to an integer value.|  
+|[float_denorm_style](../standard-library/limits-enums.md#float_denorm_style)|The enumeration describes the various methods that an implementation can choose for representing a denormalized floating-point value — one too small to represent as a normalized value:|  
+|[float_round_style](../standard-library/limits-enums.md#float_round_style)|The enumeration describes the various methods that an implementation can choose for rounding a floating-point value to an integer value.|  
   
 ### Classes  
   

@@ -6,8 +6,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "unordered_map/std::swap"
+f1_keywords: ['unordered_map/std::swap', 'unordered_map/std::swap (unordered_map)', 'unordered_map/std::swap (unordered_multimap)']  
+dev_langs:  
+  - "C++"  
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 caps.latest.revision: 10
 author: "corob-msft"
@@ -17,9 +18,9 @@ manager: "ghogen"
 # &lt;unordered_map&gt; functions
 |||  
 |-|-|  
-|[swap (unordered_map)](#swap_function)|[swap (unordered_multimap)](#swap_function_multimap)|  
+|[swap (unordered_map)](#swap)|[swap (unordered_multimap)](#swap_function_multimap)|  
   
-##  <a name="swap_function"></a>  swap (unordered_map)  
+##  <a name="swap"></a>  swap (unordered_map)  
  Swaps the contents of two containers.  
   
 ```  

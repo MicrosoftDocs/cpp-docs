@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "extent"
-  - "std::extent"
-  - "type_traits/std::extent"
+f1_keywords: ['extent', 'type_traits/std::extent']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -33,11 +33,7 @@ translation.priority.ht:
 # String Conversion Macros
 These macros provide string conversion features.  
   
-|||  
-|-|-|  
-|[ATL and MFC String Conversion Macros](string-conversion-macros.md)|Set of macros that convert between string types.|  
-|[DEVMODE and TEXTMETRIC String Conversion Macros](http://msdn.microsoft.com/library/85cebec0-2a18-48e5-9c1c-99d5b7f15425)|Set of macros that convert the strings within `DEVMODE` and `TEXTMETRIC` structures.|  
-  
+ 
 ##  <a name="atl_and_mfc_string_conversion_macros"></a>  ATL and MFC String Conversion Macros  
  The string conversion macros discussed here are valid for both ATL and MFC. For more information on MFC string conversion, see [TN059: Using MFC MBCS/Unicode Conversion Macros](../../mfc/tn059-using-mfc-mbcs-unicode-conversion-macros.md) and [MFC Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md).  
   
@@ -75,8 +71,6 @@ MACRONAME( address_of_structure )
 |**_UNICODE** and **OLE2ANSI**|**W**|**A**|  
   
  The following table lists the `DEVMODE` and `TEXTMETRIC` string conversion macros.  
-  
-### DEVMODE and TEXTMETRIC String Conversion Macros  
   
 |||  
 |-|-|  

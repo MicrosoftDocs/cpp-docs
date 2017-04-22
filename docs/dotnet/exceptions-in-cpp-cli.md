@@ -1,5 +1,5 @@
 ---
-title: "Exceptions in C++-CLI | Microsoft Docs"
+title: "Exceptions in C++/CLI | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

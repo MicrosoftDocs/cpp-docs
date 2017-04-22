@@ -1,5 +1,5 @@
 ---
-title: "How to: Migrate to -clr:safe (C++-CLI) | Microsoft Docs"
+title: "How to: Migrate to -clr:safe (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

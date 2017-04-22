@@ -82,20 +82,16 @@ Using the MFC Windows Forms support classes, you can host Windows Forms controls
   
  [IView Interface](../mfc/reference/iview-interface.md)  
   
- [CommandHandler](http://msdn.microsoft.com/Library/22096734-e074-4aca-8523-4b15590109f9)  
+ [CommandHandler](../atl/commandhandler.md)  
   
- [CommandUIHandler](http://msdn.microsoft.com/Library/2da11ecc-20d6-4a53-97fc-08b48f06d71a)  
+ [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)  
   
- [DDX_ManagedControl](http://msdn.microsoft.com/Library/61b55a90-c993-478e-9dea-db27fbf0e193)  
-  
- [UICheckState](http://msdn.microsoft.com/Library/68d84834-e7f9-4ccb-8126-d492e27073e9)  
+ [UICheckState](../mfc/reference/uicheckstate-enumeration.md)  
   
 ## Related Sections  
- [Windows Forms](http://msdn.microsoft.com/Library/627df1e9-b254-41af-bbac-9a4f02810c54)  
+ [Windows Forms](/dotnet/articles/framework/winforms/index)  
   
- [Windows Forms Controls](http://msdn.microsoft.com/Library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)  
-  
- [ASP.NET User Controls](http://msdn.microsoft.com/Library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca)  
+ [Windows Forms Controls](/dotnet/articles/framework/winforms/controls/index)  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   

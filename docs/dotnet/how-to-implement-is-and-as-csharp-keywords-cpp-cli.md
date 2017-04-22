@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement is and as C# Keywords (C++-CLI) | Microsoft Docs"
+title: "How to: Implement is and as C# Keywords (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

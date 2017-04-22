@@ -1,5 +1,5 @@
 ---
-title: "Strong Name Assemblies (Assembly Signing) (C++-CLI) | Microsoft Docs"
+title: "Strong Name Assemblies (Assembly Signing) (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

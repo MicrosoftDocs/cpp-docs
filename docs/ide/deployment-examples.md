@@ -47,5 +47,5 @@ This section contains examples demonstrating how to deploy Visual C++ applicatio
  [Preparing a Test Machine To Run a Debug Executable](../ide/preparing-a-test-machine-to-run-a-debug-executable.md)  
   
 ## See Also  
- [Walkthrough: Manually Deploying a ClickOnce Application](http://msdn.microsoft.com/Library/ccee6551-a1b9-4ca2-8845-9c1cf4ac2560)   
+ [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)   
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

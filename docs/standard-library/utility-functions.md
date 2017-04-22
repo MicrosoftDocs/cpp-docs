@@ -6,6 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: [ 'utility/std::exchange', 'utility/std::forward', 'utility/std::make_pair', 'utility/std::move', 'utility/std::swap']  
 ms.assetid: b1df38cd-3a59-4098-9c81-83342eb719a4
 caps.latest.revision: 7
 manager: "ghogen"

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "num_get"
-  - "std::num_get"
-  - "std.num_get"
-  - "xlocnum/std::num_get"
+f1_keywords: ['num_get', 'xlocnum/std::num_get', 'locale/std::num_get::char_type', 'locale/std::num_get::iter_type', 'locale/std::num_get::do_get', 'locale/std::num_get::get']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

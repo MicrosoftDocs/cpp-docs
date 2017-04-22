@@ -35,11 +35,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Warning (level 1) C4342
-behavior change: 'function' called, but a member operator was called in previous versions  
+behavior change: '*function*' called, but a member operator was called in previous versions  
   
- In previous versions of Visual C++, a member was called, but this behavior has been changed and the compiler will find the best match in namespace scope.  
+ In versions of Visual C++ before Visual Studio 2002, a member was called, but this behavior has been changed and the compiler now finds the best match in namespace scope.  
   
- If a member operator was found, the compiler would previously not consider any namespace scope operators. If there is a better match at namespace scope, the current compiler will correctly call it, whereas previous compilers wouldn't consider it.  
+ If a member operator was found, the compiler would previously not consider any namespace scope operators. If there is a better match at namespace scope, the current compiler correctly calls it, whereas previous compilers wouldn't consider it.  
   
  This warning should be disabled after you successfully port your code to the current version.  The compiler may give false positives, generating this warning for code where there is no behavior change.  
   
@@ -47,7 +47,7 @@ behavior change: 'function' called, but a member operator was called in previous
   
  The following sample generates C4342:  
   
-```  
+```cpp  
 // C4342.cpp  
 // compile with: /EHsc /W1  
 #include <fstream>  

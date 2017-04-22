@@ -8,34 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "normal_distribution"
-  - "std::normal_distribution"
-  - "random/std::normal_distribution"
-  - "std::normal_distribution::reset"
-  - "random/std::normal_distribution::reset"
-  - "std::normal_distribution::mean"
-  - "random/std::normal_distribution::mean"
-  - "std::normal_distribution::stddev"
-  - "random/std::normal_distribution::stddev"
-  - "std::normal_distribution::param"
-  - "random/std::normal_distribution::param"
-  - "std::normal_distribution::min"
-  - "random/std::normal_distribution::min"
-  - "std::normal_distribution::max"
-  - "random/std::normal_distribution::max"
-  - "std::normal_distribution::operator()"
-  - "random/std::normal_distribution::operator()"
-  - "std::normal_distribution::param_type"
-  - "random/std::normal_distribution::param_type"
-  - "std::normal_distribution::param_type::mean"
-  - "random/std::normal_distribution::param_type::mean"
-  - "std::normal_distribution::param_type::stddev"
-  - "random/std::normal_distribution::param_type::stddev"
-  - "std::normal_distribution::param_type::operator=="
-  - "random/std::normal_distribution::param_type::operator=="
-  - "std::normal_distribution::param_type::operator!="
-  - "random/std::normal_distribution::param_type::operator!="
+f1_keywords: ['normal_distribution', 'random/std::normal_distribution', 'random/std::normal_distribution::reset', 'random/std::normal_distribution::mean', 'random/std::normal_distribution::stddev', 'random/std::normal_distribution::param', 'random/std::normal_distribution::min', 'random/std::normal_distribution::max', 'random/std::normal_distribution::operator()', 'random/std::normal_distribution::param_type', 'random/std::normal_distribution::param_type::mean', 'random/std::normal_distribution::param_type::stddev', 'random/std::normal_distribution::param_type::operator==', 'random/std::normal_distribution::param_type::operator!=', 'random/std::normal_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -103,8 +76,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[normal_distribution::normal_distribution](#normal_distribution__normal_distribution)|`normal_distribution::mean`|`normal_distribution::param`|  
-|`normal_distribution::operator()`|`normal_distribution::stddev`|[normal_distribution::param_type](#normal_distribution__param_type)|  
+|[normal_distribution](#normal_distribution__normal_distribution)|`normal_distribution::mean`|`normal_distribution::param`|  
+|`normal_distribution::operator()`|`normal_distribution::stddev`|[param_type](#normal_distribution__param_type)|  
   
 The property functions `mean()` and `stddev()` return the values for the stored distribution parameters `mean` and `stddev` respectively.  
   

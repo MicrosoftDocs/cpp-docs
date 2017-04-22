@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::value_compare"
-  - "std.value_compare"
-  - "value_compare"
+f1_keywords: ['value_compare']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

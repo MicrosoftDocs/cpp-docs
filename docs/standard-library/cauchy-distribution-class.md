@@ -8,34 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "cauchy_distribution"
-  - "std::cauchy_distribution"
-  - "random/std::cauchy_distribution"
-  - "std::cauchy_distribution::reset"
-  - "random/std::cauchy_distribution::reset"
-  - "std::cauchy_distribution::a"
-  - "random/std::cauchy_distribution::a"
-  - "std::cauchy_distribution::b"
-  - "random/std::cauchy_distribution::b"
-  - "std::cauchy_distribution::param"
-  - "random/std::cauchy_distribution::param"
-  - "std::cauchy_distribution::min"
-  - "random/std::cauchy_distribution::min"
-  - "std::cauchy_distribution::max"
-  - "random/std::cauchy_distribution::max"
-  - "std::cauchy_distribution::operator()"
-  - "random/std::cauchy_distribution::operator()"
-  - "std::cauchy_distribution::param_type"
-  - "random/std::cauchy_distribution::param_type"
-  - "std::cauchy_distribution::param_type::a"
-  - "random/std::cauchy_distribution::param_type::a"
-  - "std::cauchy_distribution::param_type::b"
-  - "random/std::cauchy_distribution::param_type::b"
-  - "std::cauchy_distribution::param_type::operator=="
-  - "random/std::cauchy_distribution::param_type::operator=="
-  - "std::cauchy_distribution::param_type::operator!="
-  - "random/std::cauchy_distribution::param_type::operator!="
+f1_keywords: ['cauchy_distribution', 'random/std::cauchy_distribution', 'random/std::cauchy_distribution::reset', 'random/std::cauchy_distribution::a', 'random/std::cauchy_distribution::b', 'random/std::cauchy_distribution::param', 'random/std::cauchy_distribution::min', 'random/std::cauchy_distribution::max', 'random/std::cauchy_distribution::operator()', 'random/std::cauchy_distribution::param_type', 'random/std::cauchy_distribution::param_type::a', 'random/std::cauchy_distribution::param_type::b', 'random/std::cauchy_distribution::param_type::operator==', 'random/std::cauchy_distribution::param_type::operator!=', 'random/std::cauchy_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -106,8 +79,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[cauchy_distribution::cauchy_distribution](#cauchy_distribution__cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|  
-|`cauchy_distribution::operator()`|`cauchy_distribution::b`|[cauchy_distribution::param_type](#cauchy_distribution__param_type)|  
+|[cauchy_distribution](#cauchy_distribution__cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|  
+|`cauchy_distribution::operator()`|`cauchy_distribution::b`|[param_type](#cauchy_distribution__param_type)|  
   
 The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
   

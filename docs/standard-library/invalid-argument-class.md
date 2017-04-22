@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.invalid_argument"
-  - "stdexcept/std::invalid_argument"
-  - "invalid_argument"
-  - "std::invalid_argument"
+f1_keywords: ['stdexcept/std::invalid_argument', 'invalid_argument']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

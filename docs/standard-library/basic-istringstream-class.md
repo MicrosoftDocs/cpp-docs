@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::basic_istringstream"
-  - "sstream/std::basic_istringstream"
-  - "basic_istringstream"
-  - "std.basic_istringstream"
+f1_keywords: ['sstream/std::basic_istringstream', 'basic_istringstream', 'sstream/std::basic_istringstream::allocator_type', 'sstream/std::basic_istringstream::rdbuf', 'sstream/std::basic_istringstream::str', 'sstream/std::basic_istringstream::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

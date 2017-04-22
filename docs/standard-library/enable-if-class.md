@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "enable_if"
-  - "std::enable_if"
-  - "type_traits/std::enable_if"
+f1_keywords: ['enable_if', 'type_traits/std::enable_if']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

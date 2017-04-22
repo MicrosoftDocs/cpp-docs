@@ -56,7 +56,7 @@ translation.priority.mt:
   
  You may also need to build a bootstrapper (prerequisites installer) for your application to deploy prerequisite components; for information on the bootstrapper, see [Creating Bootstrapper Packages](/visualstudio/deployment/creating-bootstrapper-packages).  
   
- For a more detailed description of the technology, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For a detailed example of [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] deployment, see [Walkthrough: Manually Deploying a ClickOnce Application](http://msdn.microsoft.com/Library/ccee6551-a1b9-4ca2-8845-9c1cf4ac2560).  
+ For a more detailed description of the technology, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For a detailed example of [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] deployment, see [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application).  
   
 ## See Also  
  [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/Library/77dfe576-2962-407e-af13-82255df725a1)   

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.list"
-  - "list"
-  - "std::list"
-  - "list/std::list"
+f1_keywords: ['list', 'list/std::list', 'list/std::list::allocator_type', 'list/std::list::const_iterator', 'list/std::list::const_pointer', 'list/std::list::const_reference', 'list/std::list::const_reverse_iterator', 'list/std::list::difference_type', 'list/std::list::iterator', 'list/std::list::pointer', 'list/std::list::reference', 'list/std::list::reverse_iterator', 'list/std::list::size_type', 'list/std::list::value_type', 'list/std::list::assign', 'list/std::list::back', 'list/std::list::begin', 'list/std::list::cbegin', 'list/std::list::cend', 'list/std::list::clear', 'list/std::list::crbegin', 'list/std::list::crend', 'list/std::list::emplace', 'list/std::list::emplace_back', 'list/std::list::emplace_front', 'list/std::list::empty', 'list/std::list::end', 'list/std::list::erase', 'list/std::list::front', 'list/std::list::get_allocator', 'list/std::list::insert', 'list/std::list::max_size', 'list/std::list::merge', 'list/std::list::pop_back', 'list/std::list::pop_front', 'list/std::list::push_back', 'list/std::list::push_front', 'list/std::list::rbegin', 'list/std::list::remove', 'list/std::list::remove_if', 'list/std::list::rend', 'list/std::list::resize', 'list/std::list::reverse', 'list/std::list::size', 'list/std::list::sort', 'list/std::list::splice', 'list/std::list::swap', 'list/std::list::unique']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -93,14 +89,14 @@ class list
 |[assign](#list__assign)|Erases elements from a list and copies a new set of elements to the target list.|  
 |[back](#list__back)|Returns a reference to the last element of a list.|  
 |[begin](#list__begin)|Returns an iterator addressing the first element in a list.|  
-|[list::cbegin](#list__cbegin)|Returns a const iterator addressing the first element in a list.|  
-|[list::cend](#list__cend)|Returns a const iterator that addresses the location succeeding the last element in a list.|  
-|[list::clear](#list__clear)|Erases all the elements of a list.|  
-|[list::crbegin](#list__crbegin)|Returns a const iterator addressing the first element in a reversed list.|  
-|[list::crend](#list__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed list.|  
-|[list::emplace](#list__emplace)|Inserts an element constructed in place into a list at a specified position.|  
-|[list::emplace_back](#list__emplace_back)|Adds an element constructed in place to the end of a list.|  
-|[list::emplace_front](#list__emplace_front)|Adds an element constructed in place to the beginning of a list.|  
+|[cbegin](#list__cbegin)|Returns a const iterator addressing the first element in a list.|  
+|[cend](#list__cend)|Returns a const iterator that addresses the location succeeding the last element in a list.|  
+|[clear](#list__clear)|Erases all the elements of a list.|  
+|[crbegin](#list__crbegin)|Returns a const iterator addressing the first element in a reversed list.|  
+|[crend](#list__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed list.|  
+|[emplace](#list__emplace)|Inserts an element constructed in place into a list at a specified position.|  
+|[emplace_back](#list__emplace_back)|Adds an element constructed in place to the end of a list.|  
+|[emplace_front](#list__emplace_front)|Adds an element constructed in place to the beginning of a list.|  
 |[empty](#list__empty)|Tests if a list is empty.|  
 |[end](#list__end)|Returns an iterator that addresses the location succeeding the last element in a list.|  
 |[erase](#list__erase)|Removes an element or a range of elements in a list from specified positions.|  

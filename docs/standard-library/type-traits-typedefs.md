@@ -6,15 +6,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "false_type"
-  - "std::false_type"
-  - "type_traits/std::false_type"
-  - "xtr1common/std::false_type"
-  - "true_type"
-  - "std::true_type"
-  - "type_traits/std::true_type"
-  - "xtr1common/std::true_type"
+f1_keywords: ['false_type', 'type_traits/std::false_type', 'xtr1common/std::false_type', 'true_type', 'type_traits/std::true_type', 'xtr1common/std::true_type']  
+dev_langs:  
+  - "C++"  
 ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
 caps.latest.revision: 13
 manager: "ghogen"
@@ -22,9 +16,9 @@ manager: "ghogen"
 # &lt;type_traits&gt; typedefs
 |||  
 |-|-|  
-|[false_type Typedef](#false_type_typedef)|[true_type Typedef](#true_type_typedef)|  
+|[false_type](#false_type)|[true_type](#true_type)|  
   
-##  <a name="false_type_typedef"></a>  false_type Typedef  
+##  <a name="false_type"></a>  false_type Typedef  
  Holds integral constant with false value.  
   
 ```  
@@ -55,7 +49,7 @@ false_type == false
 true_type == true  
 ```  
   
-##  <a name="true_type_typedef"></a>  true_type Typedef  
+##  <a name="true_type"></a>  true_type Typedef  
  Holds integral constant with true value.  
   
 ```  

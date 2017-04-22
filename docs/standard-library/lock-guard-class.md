@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "mutex/std::lock_guard"
+f1_keywords: ['mutex/std::lock_guard', 'mutex/std::lock_guard::lock_guard']  
 dev_langs: 
   - "C++"
 ms.assetid: 57121f0d-9c50-481c-b971-54e64df864e0
@@ -58,15 +57,15 @@ class lock_guard;
   
 |Name|Description|  
 |----------|-----------------|  
-|[lock_guard::lock_guard Constructor](#lock_guard__lock_guard_constructor)|Constructs a `lock_guard` object.|  
+|[lock_guard](#lock_guard__lock_guard)|Constructs a `lock_guard` object.|  
 |[lock_guard::~lock_guard Destructor](#lock_guard___dtorlock_guard_destructor)|Unlocks the `mutex` that was passed to the constructor.|  
   
 ## Requirements  
- **Header:** mutex  
+ **Header:** \<mutex>  
   
  **Namespace:** std  
   
-##  <a name="lock_guard__lock_guard_constructor"></a>  lock_guard::lock_guard Constructor  
+##  <a name="lock_guard__lock_guard"></a>  lock_guard::lock_guard Constructor  
  Constructs a `lock_guard` object.  
   
 ```cpp  

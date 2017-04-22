@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "match_results"
-  - "std::match_results"
-  - "regex/std::match_results"
+f1_keywords: ['match_results', 'regex/std::match_results']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

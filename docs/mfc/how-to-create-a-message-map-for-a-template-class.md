@@ -38,7 +38,7 @@ Message mapping in MFC provides an efficient way to direct Windows messages to a
   
  Traditional MFC message maps are declared using the [BEGIN_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_message_map) macro to declare the start of the message map, a macro entry for each message-handler class method, and finally the [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map) macro to declare the end of the message map.  
   
- One limitation with the [BEGIN_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_message_map) macro occurs when it is used in conjunction with a class containing template arguments. When used with a template class, this macro will cause a compile-time error due to the missing template parameters during macro expansion. The [BEGIN_TEMPLATE_MESSAGE_MAP](http://msdn.microsoft.com/library/972e730b-5f7b-413b-938d-13a367db6a36) macro was designed to allow classes containing a single template argument to declare their own message maps.  
+ One limitation with the [BEGIN_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_message_map) macro occurs when it is used in conjunction with a class containing template arguments. When used with a template class, this macro will cause a compile-time error due to the missing template parameters during macro expansion. The [BEGIN_TEMPLATE_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_template_message_map) macro was designed to allow classes containing a single template argument to declare their own message maps.  
   
 ## Example  
  Consider an example where the MFC [CListBox](../mfc/reference/clistbox-class.md) class is extended to provide synchronization with an external data source. The fictitious **CSyncListBox** class is declared as follows:  
@@ -82,6 +82,6 @@ Message mapping in MFC provides an efficient way to direct Windows messages to a
  [!code-cpp[NVC_MFC_CListBox#48](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_7.cpp)]  
   
 ## See Also  
- [BEGIN_TEMPLATE_MESSAGE_MAP](http://msdn.microsoft.com/library/972e730b-5f7b-413b-938d-13a367db6a36)   
+ [BEGIN_TEMPLATE_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_template_message_map)   
  [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
 

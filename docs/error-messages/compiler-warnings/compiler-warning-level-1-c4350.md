@@ -38,7 +38,7 @@ translation.priority.mt:
 # Compiler Warning (level 1) C4350
 behavior change: 'member1' called instead of 'member2'  
   
- An rvalue cannot be bound to a non-const reference. In previous versions of Visual C++, it was possible to bind an rvalue to a non-const reference in a direct initialization. This code now gives a warning.  
+ An rvalue cannot be bound to a non-const reference. In versions of Visual C++ before Visual Studio 2003, it was possible to bind an rvalue to a non-const reference in a direct initialization. This code now gives a warning.  
   
  For backward compatibility, it is still possible to bind rvalues to non-const references, but standard conversions are preferred wherever possible.  
   
@@ -50,7 +50,7 @@ behavior change: 'member1' called instead of 'member2'
   
  The following sample generates C4350:  
   
-```  
+```cpp  
 // C4350.cpp  
 // compile with: /W1  
 #pragma warning (default : 4350)  
@@ -60,7 +60,7 @@ class B
 {  
 public:  
    B(B&){}  
-   // try the following instead  
+   // try the following instead:  
    // B(const B&){}  
   
    B(A){}  
