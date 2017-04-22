@@ -8,13 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext.hash_multiset"
-  - "std::hash_multiset"
-  - "stdext::hash_multiset"
-  - "hash_multiset"
-  - "std.hash_multiset"
-  - "hash_set/stdext::hash_multiset"
+f1_keywords: ['stdext::hash_multiset', 'hash_multiset', 'hash_set/stdext::hash_multiset', 'hash_set/stdext::hash_multiset::allocator_type', 'hash_set/stdext::hash_multiset::const_iterator', 'hash_set/stdext::hash_multiset::const_pointer', 'hash_set/stdext::hash_multiset::const_reference', 'hash_set/stdext::hash_multiset::const_reverse_iterator', 'hash_set/stdext::hash_multiset::difference_type', 'hash_set/stdext::hash_multiset::iterator', 'hash_set/stdext::hash_multiset::key_compare', 'hash_set/stdext::hash_multiset::key_type', 'hash_set/stdext::hash_multiset::pointer', 'hash_set/stdext::hash_multiset::reference', 'hash_set/stdext::hash_multiset::reverse_iterator', 'hash_set/stdext::hash_multiset::size_type', 'hash_set/stdext::hash_multiset::value_compare', 'hash_set/stdext::hash_multiset::value_type', 'hash_set/stdext::hash_multiset::begin', 'hash_set/stdext::hash_multiset::cbegin', 'hash_set/stdext::hash_multiset::cend', 'hash_set/stdext::hash_multiset::clear', 'hash_set/stdext::hash_multiset::count', 'hash_set/stdext::hash_multiset::crbegin', 'hash_set/stdext::hash_multiset::crend', 'hash_set/stdext::hash_multiset::emplace', 'hash_set/stdext::hash_multiset::emplace_hint', 'hash_set/stdext::hash_multiset::empty', 'hash_set/stdext::hash_multiset::end', 'hash_set/stdext::hash_multiset::equal_range', 'hash_set/stdext::hash_multiset::erase', 'hash_set/stdext::hash_multiset::find', 'hash_set/stdext::hash_multiset::get_allocator', 'hash_set/stdext::hash_multiset::insert', 'hash_set/stdext::hash_multiset::key_comp', 'hash_set/stdext::hash_multiset::lower_bound', 'hash_set/stdext::hash_multiset::max_size', 'hash_set/stdext::hash_multiset::rbegin', 'hash_set/stdext::hash_multiset::rend', 'hash_set/stdext::hash_multiset::size', 'hash_set/stdext::hash_multiset::swap', 'hash_set/stdext::hash_multiset::upper_bound', 'hash_set/stdext::hash_multiset::value_comp']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -122,14 +116,14 @@ class hash_multiset
 |||  
 |-|-|  
 |[begin](#hash_multiset__begin)|Returns an iterator that addresses the first element in the `hash_multiset`.|  
-|[hash_multiset::cbegin](#hash_multiset__cbegin)|Returns a const iterator addressing the first element in the `hash_multiset`.|  
-|[hash_multiset::cend](#hash_multiset__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_multiset`.|  
+|[cbegin](#hash_multiset__cbegin)|Returns a const iterator addressing the first element in the `hash_multiset`.|  
+|[cend](#hash_multiset__cend)|Returns a const iterator that addresses the location succeeding the last element in a `hash_multiset`.|  
 |[clear](#hash_multiset__clear)|Erases all the elements of a `hash_multiset`.|  
 |[count](#hash_multiset__count)|Returns the number of elements in a `hash_multiset` whose key matches a parameter-specified key|  
-|[hash_multiset::crbegin](#hash_multiset__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_multiset`.|  
-|[hash_multiset::crend](#hash_multiset__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_multiset`.|  
-|[hash_multiset::emplace](#hash_multiset__emplace)|Inserts an element constructed in place into a `hash_multiset`.|  
-|[hash_multiset::emplace_hint](#hash_multiset__emplace_hint)|Inserts an element constructed in place into a `hash_multiset`, with a placement hint.|  
+|[crbegin](#hash_multiset__crbegin)|Returns a const iterator addressing the first element in a reversed `hash_multiset`.|  
+|[crend](#hash_multiset__crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `hash_multiset`.|  
+|[emplace](#hash_multiset__emplace)|Inserts an element constructed in place into a `hash_multiset`.|  
+|[emplace_hint](#hash_multiset__emplace_hint)|Inserts an element constructed in place into a `hash_multiset`, with a placement hint.|  
 |[empty](#hash_multiset__empty)|Tests if a `hash_multiset` is empty.|  
 |[end](#hash_multiset__end)|Returns an iterator that addresses the location succeeding the last element in a `hash_multiset`.|  
 |[equal_range](#hash_multiset__equal_range)|Returns a pair of iterators respectively to the first element in a `hash_multiset` with a key that is greater than a specified key and to the first element in the `hash_multiset` with a key that is equal to or greater than the key.|  

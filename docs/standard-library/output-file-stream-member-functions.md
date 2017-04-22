@@ -12,6 +12,11 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "output streams, member functions"
+f1_keywords: []  
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "output streams, member functions"
 ms.assetid: 38aaf710-8035-4a34-a0c4-123a5327f28a
 caps.latest.revision: 8
 author: "corob-msft"
@@ -76,7 +81,7 @@ ofile.open("FILE1",
 // FILE2 closed  // When ofile goes out of scope it is destroyed.  
 ```  
   
-## The put Function  
+## The put
  The **put** function writes one character to the output stream. The following two statements are the same by default, but the second is affected by the stream's format arguments:  
   
 ```  
@@ -86,7 +91,7 @@ cout.put('A');
 cout <<'A'; // Format arguments 'width' and 'fill' apply   
 ```  
   
-## The write Function  
+## The write
  The **write** function writes a block of memory to an output file stream. The length argument specifies the number of bytes written. This example creates an output file stream and writes the binary value of the `Date` structure to it:  
   
 ```  

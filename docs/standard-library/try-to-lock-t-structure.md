@@ -8,8 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "mutex/std::try_to_lock_t"
+f1_keywords: ['mutex/std::try_to_lock_t']  
 dev_langs: 
   - "C++"
 ms.assetid: 3e48d632-0387-4871-8257-34efef5d6b83
@@ -33,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # try_to_lock_t Structure
-Represents a `struct` that defines a [try_to_lock](../standard-library/mutex-functions.md#try_to_lock_variable) object. Used to select one of the overloaded constructors of [unique_lock](../standard-library/unique-lock-class.md).  
+Represents a `struct` that defines a [try_to_lock](../standard-library/mutex-functions.md#try_to_lock) object. Used to select one of the overloaded constructors of [unique_lock](../standard-library/unique-lock-class.md).  
   
 ## Syntax  
   
@@ -42,7 +41,7 @@ struct try_to_lock_t;
 ```  
   
 ## Requirements  
- **Header:** mutex  
+ **Header:** \<mutex>  
   
  **Namespace:** std  
   

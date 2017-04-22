@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xfunctional/std::mem_fun1_ref_t"
-  - "std::mem_fun1_ref_t"
-  - "mem_fun1_ref_t"
-  - "std.mem_fun1_ref_t"
+f1_keywords: ['xfunctional/std::mem_fun1_ref_t', 'mem_fun1_ref_t']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -72,7 +68,7 @@ class mem_fun1_ref_t : public binary_function<Type, Arg, Result> {
  The template class stores a copy of `_Pm`, which must be a pointer to a member function of class **Type**, in a private member object. It defines its member function `operator()` as returning ( **left**.\* `_Pm`)( **right**).  
   
 ## Example  
- The constructor of `mem_fun1_ref_t` is not usually used directly; the helper function `mem_fun_ref` is used to adapt member functions. See [mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref_function) for an example of how to use member function adaptors.  
+ The constructor of `mem_fun1_ref_t` is not usually used directly; the helper function `mem_fun_ref` is used to adapt member functions. See [mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref) for an example of how to use member function adaptors.  
   
 ## Requirements  
  **Header:** \<functional>  

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_reference"
-  - "std::is_reference"
-  - "type_traits/std::is_reference"
+f1_keywords: ['is_reference', 'type_traits/std::is_reference']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

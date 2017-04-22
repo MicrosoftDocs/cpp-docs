@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "unique_ptr"
-  - "std.unique_ptr"
-  - "std::unique_ptr"
-  - "memory/std::unique_ptr"
+f1_keywords: ['unique_ptr', 'memory/std::unique_ptr', 'memory/std::unique_ptr::deleter_type', 'memory/std::unique_ptr::element_type', 'memory/std::unique_ptr::pointer', 'memory/std::unique_ptr::get', 'memory/std::unique_ptr::get_deleter', 'memory/std::unique_ptr::release', 'memory/std::unique_ptr::reset', 'memory/std::unique_ptr::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -131,7 +127,7 @@ public:
   
 |||  
 |-|-|  
-|[unique_ptr::unique_ptr](#unique_ptr__unique_ptr)|There are seven constructors for `unique_ptr`.|  
+|[unique_ptr](#unique_ptr__unique_ptr)|There are seven constructors for `unique_ptr`.|  
   
 ### Typedefs  
   
@@ -145,11 +141,11 @@ public:
   
 |||  
 |-|-|  
-|[unique_ptr::get](#unique_ptr__get)|Returns `stored_ptr`.|  
-|[unique_ptr::get_deleter](#unique_ptr__get_deleter)|Returns a reference to `stored_deleter`.|  
-|[unique_ptr::release](#unique_ptr__release)|stores `pointer()` in `stored_ptr` and returns its previous contents.|  
-|[unique_ptr::reset](#unique_ptr__reset)|Releases the currently owned resource and accepts a new resource.|  
-|[unique_ptr::swap](#unique_ptr__swap)|Exchanges resource and `deleter` with the provided `unique_ptr`.|  
+|[get](#unique_ptr__get)|Returns `stored_ptr`.|  
+|[get_deleter](#unique_ptr__get_deleter)|Returns a reference to `stored_deleter`.|  
+|[release](#unique_ptr__release)|stores `pointer()` in `stored_ptr` and returns its previous contents.|  
+|[reset](#unique_ptr__reset)|Releases the currently owned resource and accepts a new resource.|  
+|[swap](#unique_ptr__swap)|Exchanges resource and `deleter` with the provided `unique_ptr`.|  
   
 ### Operators  
   

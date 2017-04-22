@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "sync_shared"
-  - "allocators/stdext::sync_shared"
-  - "stdext.sync_shared"
-  - "stdext::sync_shared"
+f1_keywords: ['sync_shared', 'allocators/stdext::sync_shared', 'stdext::sync_shared', 'allocators/stdext::sync_shared::allocate', 'allocators/stdext::sync_shared::deallocate', 'allocators/stdext::sync_shared::equals']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

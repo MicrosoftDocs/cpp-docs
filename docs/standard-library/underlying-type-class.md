@@ -9,11 +9,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "underlying_type"
-  - "std.underlying_type"
-  - "std::underlying_type"
-  - "type_traits/std::underlying_type"
+f1_keywords: ['underlying_type', 'type_traits/std::underlying_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

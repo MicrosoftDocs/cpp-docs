@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "istream/std::basic_iostream"
-  - "std.basic_iostream"
-  - "basic_iostream"
-  - "std::basic_iostream"
+f1_keywords: ['istream/std::basic_iostream', 'basic_iostream', 'istream/std::basic_iostream::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

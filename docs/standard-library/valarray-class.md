@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "valarray"
-  - "std.valarray"
-  - "std::valarray"
-  - "valarray/std::valarray"
+f1_keywords: ['valarray', 'valarray/std::valarray', 'valarray/std::valarray::value_type', 'valarray/std::valarray::apply', 'valarray/std::valarray::cshift', 'valarray/std::valarray::free', 'valarray/std::valarray::max', 'valarray/std::valarray::min', 'valarray/std::valarray::resize', 'valarray/std::valarray::shift', 'valarray/std::valarray::size', 'valarray/std::valarray::sum', 'valarray/std::valarray::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

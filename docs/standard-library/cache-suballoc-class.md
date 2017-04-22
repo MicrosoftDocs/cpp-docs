@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdext.cache_suballoc"
-  - "allocators/stdext::cache_suballoc"
-  - "stdext::cache_suballoc"
-  - "cache_suballoc"
+f1_keywords: ['allocators/stdext::cache_suballoc', 'stdext::cache_suballoc', 'cache_suballoc', 'allocators/stdext::cache_suballoc::allocate', 'allocators/stdext::cache_suballoc::deallocate']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

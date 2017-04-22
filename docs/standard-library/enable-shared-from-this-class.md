@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "enable_shared_from_this"
-  - "std::enable_shared_from_this"
-  - "memory/std::enable_shared_from_this"
+f1_keywords: ['enable_shared_from_this', 'memory/std::enable_shared_from_this']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

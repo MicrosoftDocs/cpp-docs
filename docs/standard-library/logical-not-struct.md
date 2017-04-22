@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.logical_not"
-  - "logical_not"
-  - "xfunctional/std::logical_not"
-  - "std::logical_not"
+f1_keywords: ['logical_not', 'xfunctional/std::logical_not']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

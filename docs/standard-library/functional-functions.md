@@ -8,42 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::bind"
-  - "functional/std::bind"
-  - "std::bind1st"
-  - "functional/std::bind1st"
-  - "std::bind2nd"
-  - "functional/std::bind2nd"
-  - "std::bit_and"
-  - "functional/std::bit_and"
-  - "std::bit_not"
-  - "functional/std::bit_not"
-  - "std::bit_or"
-  - "functional/std::bit_or"
-  - "std::bit_xor"
-  - "functional/std::bit_xor"
-  - "std::cref"
-  - "functional/std::cref"
-  - "type_traits/std::cref"
-  - "std::mem_fn"
-  - "functional/std::mem_fn"
-  - "std::mem_fun"
-  - "functional/std::mem_fun"
-  - "std::mem_fun_ref"
-  - "functional/std::mem_fun_ref"
-  - "std::not1"
-  - "functional/std::not1"
-  - "std::not2"
-  - "functional/std::not2"
-  - "std::ptr_fun"
-  - "functional/std::ptr_fun"
-  - "std::ref"
-  - "functional/std::ref"
-  - "type_traits/std::ref"
-  - "std::swap"
-  - "functional/std::swap"
-  - "type_traits/std::swap"
+f1_keywords: ['functional/std::bind', 'functional/std::bind1st', 'functional/std::bind2nd', 'functional/std::bit_and', 'functional/std::bit_not', 'functional/std::bit_or', 'functional/std::bit_xor', 'functional/std::cref', 'type_traits/std::cref', 'functional/std::mem_fn', 'functional/std::mem_fun', 'functional/std::mem_fun_ref', 'functional/std::not1', 'functional/std::not2', 'functional/std::ptr_fun', 'functional/std::ref', 'type_traits/std::ref', 'functional/std::swap', 'type_traits/std::swap', 'functional/std::bind', 'functional/std::bind1st', 'functional/std::bind2nd', 'functional/std::bit_and', 'functional/std::bit_not', 'functional/std::bit_or', 'functional/std::bit_xor', 'functional/std::cref', 'functional/std::mem_fn', 'functional/std::mem_fun', 'functional/std::mem_fun_ref', 'functional/std::not1', 'functional/std::not2', 'functional/std::ptr_fun', 'functional/std::ref', 'functional/std::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -57,14 +22,14 @@ manager: "ghogen"
 # &lt;functional&gt; functions
 ||||  
 |-|-|-|  
-|[bind](#bind_function)|[bind1st](#bind1st_function)|[bind2nd](#bind2nd_function)|  
-|[bit_and](#bit_and_function)|[bit_not](#bit_not_function)|[bit_or](#bit_or_function)|  
-|[bit_xor](#bit_xor_function)|[cref](#cref_function)|[mem_fn](#mem_fn_function)|  
-|[mem_fun](#mem_fun_function)|[mem_fun_ref](#mem_fun_ref_function)|[not1](#not1_function)|  
-|[not2](#not2_function)|[ptr_fun](#ptr_fun_function)|[ref](#ref_function)|  
-|[swap](#swap_function)|  
+|[bind](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|  
+|[bit_and](#bit_and)|[bit_not](#bit_not)|[bit_or](#bit_or)|  
+|[bit_xor](#bit_xor)|[cref](#cref)|[mem_fn](#mem_fn)|  
+|[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[not1](#not1)|  
+|[not2](#not2)|[ptr_fun](#ptr_fun)|[ref](#ref)|  
+|[swap](#swap)|  
   
-##  <a name="bind_function"></a>  bind  
+##  <a name="bind"></a>  bind  
  Binds arguments to a callable object.  
   
 ```  
@@ -163,7 +128,7 @@ int main()
 3^2 == 9  
 ```  
   
-##  <a name="bind1st_function"></a>  bind1st  
+##  <a name="bind1st"></a>  bind1st  
  A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.  
   
 ```  
@@ -253,7 +218,7 @@ The number of elements in v1 greater than 5 is: 4.
 The number of elements in v1 less than 10 is: 2.  
 ```  
   
-##  <a name="bind2nd_function"></a>  bind2nd  
+##  <a name="bind2nd"></a>  bind2nd  
  A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the second argument of the binary function to a specified value.  
   
 ```  
@@ -343,7 +308,7 @@ The number of elements in v1 greater than 15 is: 2.
 The number of elements in v1 less than 10 is: 2.  
 ```  
   
-##  <a name="bit_and_function"></a>  bit_and  
+##  <a name="bit_and"></a>  bit_and  
  A predefined function object that performs the bitwise AND operation (binary `operator&`) on its arguments.  
   
 ```  
@@ -380,7 +345,7 @@ struct bit_and<void>
 ### Remarks  
  The `bit_and` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator&`.  
   
-##  <a name="bit_not_function"></a>  bit_not  
+##  <a name="bit_not"></a>  bit_not  
  A predefined function object that performs the bitwise complement (NOT) operation (unary `operator~`) on its argument.  
   
 ```  
@@ -412,7 +377,7 @@ struct bit_not<void>
 ### Remarks  
  The `bit_not` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator~`.  
   
-##  <a name="bit_or_function"></a>  bit_or  
+##  <a name="bit_or"></a>  bit_or  
  A predefined function object that performs the bitwise OR operation ( `operator|`) on its arguments.  
   
 ```  
@@ -449,7 +414,7 @@ struct bit_or<void>
 ### Remarks  
  The `bit_or` functor is restricted to integral types for the basic data types, or to user-defined types that implement `operator|`.  
   
-##  <a name="bit_xor_function"></a>  bit_xor  
+##  <a name="bit_xor"></a>  bit_xor  
  A predefined function object that performs the bitwise XOR operation (binary `operator^`) on its arguments.  
   
 ```  
@@ -486,7 +451,7 @@ struct bit_xor<void>
 ### Remarks  
  The `bit_xor` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator^`.  
   
-##  <a name="cref_function"></a>  cref  
+##  <a name="cref"></a>  cref  
  Constructs a const `reference_wrapper` from an argument.  
   
 ```  
@@ -540,7 +505,7 @@ cref(i) = 1
 cref(neg)(i) = -1  
 ```  
   
-##  <a name="mem_fn_function"></a>  mem_fn  
+##  <a name="mem_fn"></a>  mem_fn  
  Generates a simple call wrapper.  
   
 ```  
@@ -601,7 +566,7 @@ int main()
 3*2 == 6  
 ```  
   
-##  <a name="mem_fun_function"></a>  mem_fun  
+##  <a name="mem_fun"></a>  mem_fun  
  Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments.  
   
 ```  
@@ -685,7 +650,7 @@ int main( )
 }  
 ```  
   
-##  <a name="mem_fun_ref_function"></a>  mem_fun_ref  
+##  <a name="mem_fun_ref"></a>  mem_fun_ref  
  Helper template functions used to construct function object adaptors for member functions when initialized by using reference arguments.  
   
 ```  
@@ -787,7 +752,7 @@ The original values stored in v2 are: 1 2 3 4 5 6 7 8 9 10 11 12 13
 With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13   
 ```  
   
-##  <a name="not1_function"></a>  not1  
+##  <a name="not1"></a>  not1  
  Returns the complement of a unary predicate.  
   
 ```  
@@ -855,7 +820,7 @@ The number of elements in v1 greater than 10 is: 5.
 The number of elements in v1 not greater than 10 is: 3.  
 ```  
   
-##  <a name="not2_function"></a>  not2  
+##  <a name="not2"></a>  not2  
  Returns the complement of a binary predicate.  
   
 ```  
@@ -927,7 +892,7 @@ Sorted vector v1 = ( 41 6262 6262 6334 18467 19169 26500 )
 Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )  
 ```  
   
-##  <a name="ptr_fun_function"></a>  ptr_fun  
+##  <a name="ptr_fun"></a>  ptr_fun  
  Helper template functions used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions.  
   
 ```  
@@ -953,7 +918,7 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
 ### Example  
  [!code-cpp[functional_ptr_fun#1](../standard-library/codesnippet/CPP/functional-functions_1.cpp)]  
   
-##  <a name="ref_function"></a>  ref  
+##  <a name="ref"></a>  ref  
  Constructs a `reference_wrapper` from an argument.  
   
 ```  
@@ -1042,7 +1007,7 @@ tiger lion cougar
 tiger cougar  
 ```  
   
-##  <a name="swap_function"></a>  swap  
+##  <a name="swap"></a>  swap  
  Swaps two `function` objects.  
   
 ```  

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "iterator/std::istream_iterator"
-  - "std.istream_iterator"
-  - "std::istream_iterator"
-  - "istream_iterator"
+f1_keywords: ['iterator/std::istream_iterator', 'istream_iterator', 'iterator/std::istream_iterator::char_type', 'iterator/std::istream_iterator::istream_type', 'iterator/std::istream_iterator::traits_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

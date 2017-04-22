@@ -8,14 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "allocators/stdext::allocators::allocator_fixed_size"
-  - "allocators::allocator_fixed_size"
-  - "allocators/stdext::allocator_fixed_size"
-  - "allocator_fixed_size"
-  - "stdext::allocators::allocator_fixed_size"
-  - "allocators.allocator_fixed_size"
-  - "stdext.allocators.allocator_fixed_size"
+f1_keywords: ['allocators/stdext::allocators::allocator_fixed_size', 'allocators::allocator_fixed_size', 'allocators/stdext::allocator_fixed_size', 'allocator_fixed_size', 'stdext::allocators::allocator_fixed_size']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

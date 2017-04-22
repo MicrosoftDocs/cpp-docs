@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "allocators/stdext::max_fixed_size"
-  - "max_fixed_size"
-  - "stdext::max_fixed_size"
-  - "stdext.max_fixed_size"
+f1_keywords: ['allocators/stdext::max_fixed_size', 'max_fixed_size', 'stdext::max_fixed_size', 'allocators/stdext::max_fixed_size::allocated', 'allocators/stdext::max_fixed_size::deallocated', 'allocators/stdext::max_fixed_size::full', 'allocators/stdext::max_fixed_size::released', 'allocators/stdext::max_fixed_size::saved']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

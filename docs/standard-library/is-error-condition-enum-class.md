@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::is_error_condition_enum"
-  - "std.is_error_condition_enum"
-  - "is_error_condition_enum"
-  - "system_error/std::is_error_condition_enum"
+f1_keywords: ['is_error_condition_enum', 'system_error/std::is_error_condition_enum']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

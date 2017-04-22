@@ -8,12 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "regex_error"
-  - "std::regex_error"
-  - "regex/std::regex_error"
-  - "std::regex_error::code"
-  - "regex/std::regex_error::code"
+f1_keywords: ['regex_error', 'regex/std::regex_error', 'regex/std::regex_error::code']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

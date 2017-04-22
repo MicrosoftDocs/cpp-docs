@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.ostreambuf_iterator"
-  - "streambuf/std::ostreambuf_iterator"
-  - "ostreambuf_iterator"
-  - "std::ostreambuf_iterator"
+f1_keywords: ['streambuf/std::ostreambuf_iterator', 'ostreambuf_iterator', 'iterator/std::ostreambuf_iterator::char_type', 'iterator/std::ostreambuf_iterator::ostream_type', 'iterator/std::ostreambuf_iterator::streambuf_type', 'iterator/std::ostreambuf_iterator::traits_type', 'iterator/std::ostreambuf_iterator::failed']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

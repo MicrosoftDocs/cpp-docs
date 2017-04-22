@@ -86,19 +86,19 @@ Include the standard header \<future> to define template classes and supporting 
   
 |Name|Description|  
 |----------|-----------------|  
-|[async Function](../standard-library/future-functions.md#async_function)|Represents an asynchronous provider.|  
-|[future_category Function](../standard-library/future-functions.md#future_category_function)|Returns a reference to the `error_category` object that characterizes errors that are associated with `future` objects.|  
-|[make_error_code Function](../standard-library/future-functions.md#make_error_code_function)|Creates an `error_code` that has the `error_category` object that characterizes `future` errors.|  
-|[make_error_condition Function](../standard-library/future-functions.md#make_error_condition_function)|Creates an `error_condition` that has the `error_category` object that characterizes `future` errors.|  
-|[swap Function](../standard-library/future-functions.md#swap_function)|Exchanges the associated asynchronous state of one `promise` object with that of another.|  
+|[async](../standard-library/future-functions.md#async)|Represents an asynchronous provider.|  
+|[future_category](../standard-library/future-functions.md#future_category)|Returns a reference to the `error_category` object that characterizes errors that are associated with `future` objects.|  
+|[make_error_code](../standard-library/future-functions.md#make_error_code)|Creates an `error_code` that has the `error_category` object that characterizes `future` errors.|  
+|[make_error_condition](../standard-library/future-functions.md#make_error_condition)|Creates an `error_condition` that has the `error_category` object that characterizes `future` errors.|  
+|[swap](../standard-library/future-functions.md#swap)|Exchanges the associated asynchronous state of one `promise` object with that of another.|  
   
 ### Enumerations  
   
 |Name|Description|  
 |----------|-----------------|  
-|[future_errc Enumeration](../standard-library/future-enums.md#future_errc_enumeration)|Supplies symbolic names for the errors that are reported by the `future_error` class.|  
-|[future_status Enumeration](../standard-library/future-enums.md#future_status_enumeration)|Supplies symbolic names for the reasons that a timed wait function can return.|  
-|[launch Enumeration](../standard-library/future-enums.md#launch_enumeration)|Represents a bitmask type that describes the possible modes for the template function `async`.|  
+|[future_errc](../standard-library/future-enums.md#future_errc)|Supplies symbolic names for the errors that are reported by the `future_error` class.|  
+|[future_status](../standard-library/future-enums.md#future_status)|Supplies symbolic names for the reasons that a timed wait function can return.|  
+|[launch](../standard-library/future-enums.md#launch)|Represents a bitmask type that describes the possible modes for the template function `async`.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

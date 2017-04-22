@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::add_lvalue_reference"
-  - "add_lvalue_reference"
-  - "type_traits/std::add_lvalue_reference"
-  - "std.add_lvalue_reference"
+f1_keywords: ['add_lvalue_reference', 'type_traits/std::add_lvalue_reference']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

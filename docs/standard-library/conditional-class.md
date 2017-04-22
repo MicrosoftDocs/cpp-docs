@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "conditional"
-  - "std::conditional"
-  - "type_traits/std::conditional"
+f1_keywords: ['conditional', 'type_traits/std::conditional']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

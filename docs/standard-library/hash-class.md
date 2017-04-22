@@ -8,19 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "hash"
-  - "std::hash"
-  - "functional/std::hash"
-  - "bitset/std::hash"
-  - "memory/std::hash"
-  - "string/std::hash"
-  - "system_error/std::hash"
-  - "thread/std::hash"
-  - "typeindex/std::hash"
-  - "vector/std::hash"
-  - "XSTDDEF/std::hash"
-  - "xstring/std::hash"
+f1_keywords: ['hash', 'functional/std::hash', 'bitset/std::hash', 'memory/std::hash', 'string/std::hash', 'system_error/std::hash', 'thread/std::hash', 'typeindex/std::hash', 'vector/std::hash', 'XSTDDEF/std::hash', 'xstring/std::hash']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

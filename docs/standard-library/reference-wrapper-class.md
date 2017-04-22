@@ -8,14 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "reference_wrapper"
-  - "std::reference_wrapper"
-  - "functional/std::reference_wrapper"
-  - "type_traits/std::reference_wrapper"
-  - "xrefwrap/std::reference_wrapper"
-  - "type_traits/std::reference_wrapper::get"
-  - "type_traits/std::reference_wrapper::operator()"
+f1_keywords: ['reference_wrapper', 'functional/std::reference_wrapper', 'type_traits/std::reference_wrapper', 'xrefwrap/std::reference_wrapper', 'type_traits/std::reference_wrapper::get', 'type_traits/std::reference_wrapper::operator()', 'functional/std::reference_wrapper::result_type', 'functional/std::reference_wrapper::type', 'functional/std::reference_wrapper::get', 'functional/std::reference_wrapper::operator()']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -71,26 +64,26 @@ A `reference_wrapper<Ty>` is a copy constructible and copy assignable wrapper ar
   
 The type `Ty` must be an object type or a function type, or a static assert fails at compile time.  
   
-The helper functions [std::ref](functional-functions.md#ref_function) and [std::cref](functional-functions.md#cref_function) can be used to create `reference_wrapper` objects.  
+The helper functions [std::ref](functional-functions.md#ref) and [std::cref](functional-functions.md#cref) can be used to create `reference_wrapper` objects.  
   
 ### Constructors  
   
 |||  
 |-|-|  
-|[reference_wrapper::reference_wrapper](#reference_wrapper)|Constructs a `reference_wrapper`.|  
+|[reference_wrapper](#reference_wrapper)|Constructs a `reference_wrapper`.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[reference_wrapper::result_type](#result_type)|The weak result type of the wrapped reference.|  
-|[reference_wrapper::type](#type)|The type of the wrapped reference.|  
+|[result_type](#result_type)|The weak result type of the wrapped reference.|  
+|[type](#type)|The type of the wrapped reference.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[reference_wrapper::get](#get)|Obtains the wrapped reference.|  
+|[get](#get)|Obtains the wrapped reference.|  
   
 ### Operators  
   
@@ -343,6 +336,6 @@ rwi = 1
 ```  
   
 ## See Also  
- [cref Function](../standard-library/functional-functions.md#cref_function)   
- [ref Function](../standard-library/functional-functions.md#ref_function)
+ [cref](../standard-library/functional-functions.md#cref)   
+ [ref](../standard-library/functional-functions.md#ref)
 

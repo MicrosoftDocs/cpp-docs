@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::stack"
-  - "std.stack"
-  - "stack"
+f1_keywords: ['stack', 'stack/std::stack::container_type', 'stack/std::stack::size_type', 'stack/std::stack::value_type', 'stack/std::stack::empty', 'stack/std::stack::pop', 'stack/std::stack::push', 'stack/std::stack::size', 'stack/std::stack::top']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -49,7 +49,7 @@ namespace placeholders {
 ```  
   
 ## Remarks  
- The objects `_1, _2, ... _M` are placeholders designating the first, second, ..., Mth argument, respectively in a function call to an object returned by [bind Function](../standard-library/functional-functions.md#bind_function). You use `_N` to specify where the Nth argument should be inserted when the bind expression is evaluated.  
+ The objects `_1, _2, ... _M` are placeholders designating the first, second, ..., Mth argument, respectively in a function call to an object returned by [bind](../standard-library/functional-functions.md#bind). You use `_N` to specify where the Nth argument should be inserted when the bind expression is evaluated.  
   
  In this implementation the value of `M` is 20.  
   
@@ -111,5 +111,5 @@ int main()
  **Namespace:** std  
   
 ## See Also  
- [bind Function](../standard-library/functional-functions.md#bind_function)   
+ [bind](../standard-library/functional-functions.md#bind)   
  [is_placeholder Class](../standard-library/is-placeholder-class.md)

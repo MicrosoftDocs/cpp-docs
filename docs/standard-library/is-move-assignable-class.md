@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_move_assignable"
-  - "std.is_move_assignable"
-  - "std::is_move_assignable"
-  - "type_traits/std::is_move_assignable"
+f1_keywords: ['is_move_assignable', 'type_traits/std::is_move_assignable']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

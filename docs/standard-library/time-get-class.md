@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.time_get"
-  - "xloctime/std::time_get"
-  - "time_get"
-  - "std::time_get"
+f1_keywords: ['xloctime/std::time_get', 'time_get', 'locale/std::time_get::char_type', 'locale/std::time_get::iter_type', 'locale/std::time_get::date_order', 'locale/std::time_get::do_date_order', 'locale/std::time_get::do_get', 'locale/std::time_get::do_get_date', 'locale/std::time_get::do_get_monthname', 'locale/std::time_get::do_get_time', 'locale/std::time_get::do_get_weekday', 'locale/std::time_get::do_get_year', 'locale/std::time_get::get', 'locale/std::time_get::get_date', 'locale/std::time_get::get_monthname', 'locale/std::time_get::get_time', 'locale/std::time_get::get_weekday', 'locale/std::time_get::get_year']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

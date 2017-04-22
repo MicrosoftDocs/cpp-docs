@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "negate"
-  - "std.negate"
-  - "std::negate"
-  - "xfunctional/std::negate"
+f1_keywords: ['negate', 'xfunctional/std::negate']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

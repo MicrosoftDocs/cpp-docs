@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::operator!="
-  - "functional/std::operator!="
-  - "std::operator=="
-  - "functional/std::operator=="
+f1_keywords: ['functional/std::operator!=', 'functional/std::operator==']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

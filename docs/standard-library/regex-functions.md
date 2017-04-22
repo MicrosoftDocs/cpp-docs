@@ -6,17 +6,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "regex_match"
-  - "std::regex_match"
-  - "regex/std::regex_match"
-  - "regex_replace"
-  - "std::regex_replace"
-  - "regex/std::regex_replace"
-  - "regex_search"
-  - "std::regex_search"
-  - "regex/std::regex_search"
-  - "regex/std::swap"
+f1_keywords: ['regex_match', 'regex/std::regex_match', 'regex_replace', 'regex/std::regex_replace', 'regex_search', 'regex/std::regex_search', 'regex/std::swap', 'regex/std::swap']  
+dev_langs:  
+  - "C++"  
 ms.assetid: 91a8314b-6f7c-4e33-b7d6-d8583dd75585
 caps.latest.revision: 12
 manager: "ghogen"
@@ -24,10 +16,10 @@ manager: "ghogen"
 # &lt;regex&gt; functions
 ||||  
 |-|-|-|  
-|[regex_match Function](#regex_match_function)|[regex_replace Function](#regex_replace_function)|[regex_search Function](#regex_search_function)|  
-|[swap Function](#swap_function)|  
+|[regex_match](#regex_match)|[regex_replace](#regex_replace)|[regex_search](#regex_search)|  
+|[swap](#swap)|  
   
-##  <a name="regex_match_function"></a>  regex_match Function  
+##  <a name="regex_match"></a>  regex_match
  Tests whether a regular expression matches the entire target string.  
   
 ```  
@@ -116,7 +108,7 @@ bool regex_match(
  End of sequence to match.  
   
  `match`  
- The match results. Corresponds to Elem type: [smatch](../standard-library/regex-typedefs.md#smatch_typedef) for string, [wsmatch](../standard-library/regex-typedefs.md#wsmatch_typedef) for wstring, [cmatch](../standard-library/regex-typedefs.md#cmatch_typedef) for char* or [wcmatch](../standard-library/regex-typedefs.md#wcmatch_typedef) for wchar_t\*.  
+ The match results. Corresponds to Elem type: [smatch](../standard-library/regex-typedefs.md#smatch) for string, [wsmatch](../standard-library/regex-typedefs.md#wsmatch) for wstring, [cmatch](../standard-library/regex-typedefs.md#cmatch) for char* or [wcmatch](../standard-library/regex-typedefs.md#wcmatch) for wchar_t\*.  
   
  `ptr`  
  Pointer to beginning of sequence to match. If ptr is char*, then use cmatch and regex. If ptr is wchar_t\* then use wcmatch and wregex.  
@@ -128,7 +120,7 @@ bool regex_match(
  String to match. Corresponds to the type of Elem.  
   
 ### Remarks  
- Each template function returns true only if the entire operand sequence `str` exactly matches the regular expression argument `re`. Use [regex_search](../standard-library/regex-functions.md#regex_search_function) to match a substring within a target sequence and regex_iterator to find multiple matches. The functions that take a `match_results` object set its members to reflect whether the match succeeded and if so what the various capture groups in the regular expression captured.  
+ Each template function returns true only if the entire operand sequence `str` exactly matches the regular expression argument `re`. Use [regex_search](../standard-library/regex-functions.md#regex_search) to match a substring within a target sequence and regex_iterator to find multiple matches. The functions that take a `match_results` object set its members to reflect whether the match succeeded and if so what the various capture groups in the regular expression captured.  
   
  The functions that take a `match_results` object set its members to reflect whether the match succeeded and if so what the various capture groups in the regular expression captured.  
   
@@ -187,7 +179,7 @@ int _tmain(int argc, _TCHAR* argv[])
   
 ```  
   
-##  <a name="regex_replace_function"></a>  regex_replace Function  
+##  <a name="regex_replace"></a>  regex_replace
  Replaces matched regular expressions.  
   
 ```  
@@ -293,7 +285,7 @@ replacement == AdAeAf
 replacement == Adaeaf  
 ```  
   
-##  <a name="regex_search_function"></a>  regex_search Function  
+##  <a name="regex_search"></a>  regex_search
  Searches for a regular expression match.  
   
 ```  
@@ -442,7 +434,7 @@ search(string, "abc") == true
   matched: "abc"  
 ```  
   
-##  <a name="swap_function"></a>  swap Function  
+##  <a name="swap"></a>  swap
  Swaps two basic_regex or match_results objects.  
   
 ```  

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_const"
-  - "std::is_const"
-  - "type_traits/std::is_const"
+f1_keywords: ['is_const', 'type_traits/std::is_const']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

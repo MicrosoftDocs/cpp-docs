@@ -70,8 +70,8 @@ Include the standard header \<chrono> to define classes and functions that repre
   
 |Name|Description|  
 |----------|-----------------|  
-|[duration_cast Function](../standard-library/chrono-functions.md#duration_cast_function)|Casts a `duration` object to a specified type.|  
-|[time_point_cast Function](../standard-library/chrono-functions.md#time_point_cast_function)|Casts a `time_point` object to a specified type.|  
+|[duration_cast](../standard-library/chrono-functions.md#duration_cast)|Casts a `duration` object to a specified type.|  
+|[time_point_cast](../standard-library/chrono-functions.md#time_point_cast)|Casts a `time_point` object to a specified type.|  
   
 ### Operators  
   

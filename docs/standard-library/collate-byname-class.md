@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::collate_byname"
-  - "locale/std::collate_byname"
-  - "std.collate_byname"
-  - "collate_byname"
+f1_keywords: ['locale/std::collate_byname', 'collate_byname']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

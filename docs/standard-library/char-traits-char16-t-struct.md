@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::char_traits<char16_t>"
-  - "std.char_traits<char16_t>"
-  - "char_traits<char16_t>"
-  - "string/std::char_traits<char16_t>"
+f1_keywords: ['char_traits<char16_t>', 'string/std::char_traits<char16_t>']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,17 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "student_t_distribution"
-  - "std::student_t_distribution"
-  - "random/std::student_t_distribution"
-  - "random/std::student_t_distribution::result_type"
-  - "random/std::student_t_distribution::reset"
-  - "random/std::student_t_distribution::operator()"
-  - "random/std::student_t_distribution::n"
-  - "random/std::student_t_distribution::param"
-  - "random/std::student_t_distribution::min"
-  - "random/std::student_t_distribution::max"
+f1_keywords: ['student_t_distribution', 'random/std::student_t_distribution', 'random/std::student_t_distribution::result_type', 'random/std::student_t_distribution::reset', 'random/std::student_t_distribution::operator()', 'random/std::student_t_distribution::n', 'random/std::student_t_distribution::param', 'random/std::student_t_distribution::min', 'random/std::student_t_distribution::max', 'random/std::student_t_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -83,8 +73,8 @@ public:
   
 ||||  
 |-|-|-|  
-|[student_t_distribution::student_t_distribution](#student_t_distribution__student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|  
-|`student_t_distribution::operator()`||[student_t_distribution::param_type](#student_t_distribution__param_type)|  
+|[student_t_distribution](#student_t_distribution__student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|  
+|`student_t_distribution::operator()`||[param_type](#student_t_distribution__param_type)|  
   
  The property function `n()` returns the value for the stored distribution parameter `n`.  
   

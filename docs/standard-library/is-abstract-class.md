@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_abstract"
-  - "std::is_abstract"
-  - "type_traits/std::is_abstract"
+f1_keywords: ['is_abstract', 'type_traits/std::is_abstract']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

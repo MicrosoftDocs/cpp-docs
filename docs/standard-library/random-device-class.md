@@ -8,18 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "random_device"
-  - "std::random_device"
-  - "random/std::random_device"
-  - "std::random_device::min"
-  - "random/std::random_device::min"
-  - "std::random_device::max"
-  - "random/std::random_device::max"
-  - "std::random_device::entropy"
-  - "random/std::random_device::entropy"
-  - "std::random_device::operator()"
-  - "random/std::random_device::operator()"
+f1_keywords: ['random_device', 'random/std::random_device', 'random/std::random_device::min', 'random/std::random_device::max', 'random/std::random_device::entropy', 'random/std::random_device::operator()', 'random/std::random_device::entropy', 'random/std::random_device::operator()']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -75,7 +64,7 @@ public:
   
 |||  
 |-|-|  
-|[random_device::random_device](#random_device__random_device)|[random_device::entropy](#random_device__entropy)|  
+|[random_device](#random_device__random_device)|[entropy](#random_device__entropy)|  
 |[random_device::operator()](#random_device__operator__)||  
   
 ## Remarks  

@@ -8,10 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "add_pointer"
-  - "std::add_pointer"
-  - "type_traits/std::add_pointer"
+f1_keywords: ['add_pointer', 'type_traits/std::add_pointer']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "aligned_union"
-  - "std.aligned_union"
-  - "std::aligned_union"
-  - "type_traits/std::aligned_union"
+f1_keywords: ['aligned_union', 'type_traits/std::aligned_union']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

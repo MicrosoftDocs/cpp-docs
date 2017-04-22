@@ -8,72 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "array"
-  - "std::array"
-  - "array/std::array"
-  - "std::array::const_iterator"
-  - "array/std::array::const_iterator"
-  - "std::array::const_pointer"
-  - "array/std::array::const_pointer"
-  - "std::array::const_reference"
-  - "array/std::array::const_reference"
-  - "std::array::const_reverse_iterator"
-  - "array/std::array::const_reverse_iterator"
-  - "std::array::difference_type"
-  - "array/std::array::difference_type"
-  - "std::array::iterator"
-  - "array/std::array::iterator"
-  - "std::array::pointer"
-  - "array/std::array::pointer"
-  - "std::array::reference"
-  - "array/std::array::reference"
-  - "std::array::reverse_iterator"
-  - "array/std::array::reverse_iterator"
-  - "std::array::size_type"
-  - "array/std::array::size_type"
-  - "std::array::value_type"
-  - "array/std::array::value_type"
-  - "std::array::assign"
-  - "array/std::array::assign"
-  - "std::array::at"
-  - "array/std::array::at"
-  - "std::array::back"
-  - "array/std::array::back"
-  - "std::array::begin"
-  - "array/std::array::begin"
-  - "std::array::cbegin"
-  - "array/std::array::cbegin"
-  - "std::array::cend"
-  - "array/std::array::cend"
-  - "std::array::crbegin"
-  - "array/std::array::crbegin"
-  - "std::array::crend"
-  - "array/std::array::crend"
-  - "std::array::data"
-  - "array/std::array::data"
-  - "std::array::empty"
-  - "array/std::array::empty"
-  - "std::array::end"
-  - "array/std::array::end"
-  - "std::array::fill"
-  - "array/std::array::fill"
-  - "std::array::front"
-  - "array/std::array::front"
-  - "std::array::max_size"
-  - "array/std::array::max_size"
-  - "std::array::rbegin"
-  - "array/std::array::rbegin"
-  - "std::array::rend"
-  - "array/std::array::rend"
-  - "std::array::size"
-  - "array/std::array::size"
-  - "std::array::swap"
-  - "array/std::array::swap"
-  - "std::array::operator="
-  - "array/std::array::operator="
-  - "std::array::operator[]"
-  - "array/std::array::operator[]"
+f1_keywords: ['array', 'array/std::array', 'array/std::array::const_iterator', 'array/std::array::const_pointer', 'array/std::array::const_reference', 'array/std::array::const_reverse_iterator', 'array/std::array::difference_type', 'array/std::array::iterator', 'array/std::array::pointer', 'array/std::array::reference', 'array/std::array::reverse_iterator', 'array/std::array::size_type', 'array/std::array::value_type', 'array/std::array::assign', 'array/std::array::at', 'array/std::array::back', 'array/std::array::begin', 'array/std::array::cbegin', 'array/std::array::cend', 'array/std::array::crbegin', 'array/std::array::crend', 'array/std::array::data', 'array/std::array::empty', 'array/std::array::end', 'array/std::array::fill', 'array/std::array::front', 'array/std::array::max_size', 'array/std::array::rbegin', 'array/std::array::rend', 'array/std::array::size', 'array/std::array::swap', 'array/std::array::operator=', 'array/std::array::operator[]', 'array/std::array::const_iterator', 'array/std::array::const_pointer', 'array/std::array::const_reference', 'array/std::array::const_reverse_iterator', 'array/std::array::difference_type', 'array/std::array::iterator', 'array/std::array::pointer', 'array/std::array::reference', 'array/std::array::reverse_iterator', 'array/std::array::size_type', 'array/std::array::value_type', 'array/std::array::assign', 'array/std::array::at', 'array/std::array::back', 'array/std::array::begin', 'array/std::array::cbegin', 'array/std::array::cend', 'array/std::array::crbegin', 'array/std::array::crend', 'array/std::array::data', 'array/std::array::empty', 'array/std::array::end', 'array/std::array::fill', 'array/std::array::front', 'array/std::array::max_size', 'array/std::array::rbegin', 'array/std::array::rend', 'array/std::array::size', 'array/std::array::swap']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -121,40 +56,40 @@ class array;
 |||  
 |-|-|  
 |Type Definition|Description|  
-|[array::const_iterator](#array__const_iterator)|The type of a constant iterator for the controlled sequence.|  
-|[array::const_pointer](#array__const_pointer)|The type of a constant pointer to an element.|  
-|[array::const_reference](#array__const_reference)|The type of a constant reference to an element.|  
-|[array::const_reverse_iterator](#array__const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|  
-|[array::difference_type](#array__difference_type)|The type of a signed distance between two elements.|  
-|[array::iterator](#array__iterator)|The type of an iterator for the controlled sequence.|  
-|[array::pointer](#array__pointer)|The type of a pointer to an element.|  
-|[array::reference](#array__reference)|The type of a reference to an element.|  
-|[array::reverse_iterator](#array__reverse_iterator)|The type of a reverse iterator for the controlled sequence.|  
-|[array::size_type](#array__size_type)|The type of an unsigned distance between two elements.|  
-|[array::value_type](#array__value_type)|The type of an element.|  
+|[const_iterator](#array__const_iterator)|The type of a constant iterator for the controlled sequence.|  
+|[const_pointer](#array__const_pointer)|The type of a constant pointer to an element.|  
+|[const_reference](#array__const_reference)|The type of a constant reference to an element.|  
+|[const_reverse_iterator](#array__const_reverse_iterator)|The type of a constant reverse iterator for the controlled sequence.|  
+|[difference_type](#array__difference_type)|The type of a signed distance between two elements.|  
+|[iterator](#array__iterator)|The type of an iterator for the controlled sequence.|  
+|[pointer](#array__pointer)|The type of a pointer to an element.|  
+|[reference](#array__reference)|The type of a reference to an element.|  
+|[reverse_iterator](#array__reverse_iterator)|The type of a reverse iterator for the controlled sequence.|  
+|[size_type](#array__size_type)|The type of an unsigned distance between two elements.|  
+|[value_type](#array__value_type)|The type of an element.|  
   
 |||  
 |-|-|  
 |Member Function|Description|  
-|[array::array](#array__array)|Constructs an array object.|  
-|[array::assign](#array__assign)|Replaces all elements.|  
-|[array::at](#array__at)|Accesses an element at a specified position.|  
-|[array::back](#array__back)|Accesses the last element.|  
-|[array::begin](#array__begin)|Designates the beginning of the controlled sequence.|  
-|[array::cbegin](#array__cbegin)|Returns a random-access const iterator to the first element in the array.|  
-|[array::cend](#array__cend)|Returns a random-access const iterator that points just beyond the end of the array.|  
-|[array::crbegin](#array__crbegin)|Returns a const iterator to the first element in a reversed array.|  
-|[array::crend](#array__crend)|Returns a const iterator to the end of a reversed array.|  
-|[array::data](#array__data)|Gets the address of the first element.|  
-|[array::empty](#array__empty)|Tests whether elements are present.|  
-|[array::end](#array__end)|Designates the end of the controlled sequence.|  
-|[array::fill](#array__fill)|Replaces all elements with a specified value.|  
-|[array::front](#array__front)|Accesses the first element.|  
-|[array::max_size](#array__max_size)|Counts the number of elements.|  
-|[array::rbegin](#array__rbegin)|Designates the beginning of the reversed controlled sequence.|  
-|[array::rend](#array__rend)|Designates the end of the reversed controlled sequence.|  
-|[array::size](#array__size)|Counts the number of elements.|  
-|[array::swap](#array__swap)|Swaps the contents of two containers.|  
+|[array](#array__array)|Constructs an array object.|  
+|[assign](#array__assign)|Replaces all elements.|  
+|[at](#array__at)|Accesses an element at a specified position.|  
+|[back](#array__back)|Accesses the last element.|  
+|[begin](#array__begin)|Designates the beginning of the controlled sequence.|  
+|[cbegin](#array__cbegin)|Returns a random-access const iterator to the first element in the array.|  
+|[cend](#array__cend)|Returns a random-access const iterator that points just beyond the end of the array.|  
+|[crbegin](#array__crbegin)|Returns a const iterator to the first element in a reversed array.|  
+|[crend](#array__crend)|Returns a const iterator to the end of a reversed array.|  
+|[data](#array__data)|Gets the address of the first element.|  
+|[empty](#array__empty)|Tests whether elements are present.|  
+|[end](#array__end)|Designates the end of the controlled sequence.|  
+|[fill](#array__fill)|Replaces all elements with a specified value.|  
+|[front](#array__front)|Accesses the first element.|  
+|[max_size](#array__max_size)|Counts the number of elements.|  
+|[rbegin](#array__rbegin)|Designates the beginning of the reversed controlled sequence.|  
+|[rend](#array__rend)|Designates the end of the reversed controlled sequence.|  
+|[size](#array__size)|Counts the number of elements.|  
+|[swap](#array__swap)|Swaps the contents of two containers.|  
   
 |||  
 |-|-|  
@@ -1120,7 +1055,7 @@ constexpr const_reference operator[](size_type off) const;
 ### Remarks  
  The member functions return a reference to the element of the controlled sequence at position `off`. If that position is invalid, the behavior is undefined.  
   
-There is also a non-member [get](array-functions.md#get_function) function available to get a reference to an element of an `array`.  
+There is also a non-member [get](array-functions.md#get) function available to get a reference to an element of an `array`.  
   
 ### Example  
   
@@ -1531,7 +1466,7 @@ void swap(array& right);
 ### Remarks  
 The member function swaps the controlled sequences between `*this` and `right`. It performs a number of element assignments and constructor calls proportional to `N`.  
 
-There is also a non-member [swap](array-functions.md#swap_function) function available to swap two `array` instances.  
+There is also a non-member [swap](array-functions.md#swap) function available to swap two `array` instances.  
   
 ### Example  
   

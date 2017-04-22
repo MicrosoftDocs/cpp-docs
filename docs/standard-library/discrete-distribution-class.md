@@ -8,30 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "discrete_distribution"
-  - "std::discrete_distribution"
-  - "random/std::discrete_distribution"
-  - "std::discrete_distribution::reset"
-  - "random/std::discrete_distribution::reset"
-  - "std::discrete_distribution::probabilities"
-  - "random/std::discrete_distribution::probabilities"
-  - "std::discrete_distribution::param"
-  - "random/std::discrete_distribution::param"
-  - "std::discrete_distribution::min"
-  - "random/std::discrete_distribution::min"
-  - "std::discrete_distribution::max"
-  - "random/std::discrete_distribution::max"
-  - "std::discrete_distribution::operator()"
-  - "random/std::discrete_distribution::operator()"
-  - "std::discrete_distribution::param_type"
-  - "random/std::discrete_distribution::param_type"
-  - "std::discrete_distribution::param_type::probabilities"
-  - "random/std::discrete_distribution::param_type::probabilities"
-  - "std::discrete_distribution::param_type::operator=="
-  - "random/std::discrete_distribution::param_type::operator=="
-  - "std::discrete_distribution::param_type::operator!="
-  - "random/std::discrete_distribution::param_type::operator!="
+f1_keywords: ['discrete_distribution', 'random/std::discrete_distribution', 'random/std::discrete_distribution::reset', 'random/std::discrete_distribution::probabilities', 'random/std::discrete_distribution::param', 'random/std::discrete_distribution::min', 'random/std::discrete_distribution::max', 'random/std::discrete_distribution::operator()', 'random/std::discrete_distribution::param_type', 'random/std::discrete_distribution::param_type::probabilities', 'random/std::discrete_distribution::param_type::operator==', 'random/std::discrete_distribution::param_type::operator!=', 'random/std::discrete_distribution::param_type']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -105,8 +82,8 @@ public:
   
 |||  
 |-|-|  
-|[discrete_distribution::discrete_distribution](#discrete_distribution__discrete_distribution)|`discrete_distribution::param`|  
-|`discrete_distribution::operator()`|[discrete_distribution::param_type](#discrete_distribution__param_type)|  
+|[discrete_distribution](#discrete_distribution__discrete_distribution)|`discrete_distribution::param`|  
+|`discrete_distribution::operator()`|[param_type](#discrete_distribution__param_type)|  
   
  The property function `vector<double> probabilities()` returns the individual probabilities for each integer generated.  
   

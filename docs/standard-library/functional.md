@@ -121,22 +121,22 @@ Defines C++ Standard Library functions that help construct *function objects*—
   
 |||  
 |-|-|  
-|[bind](../standard-library/functional-functions.md#bind_function)|Binds arguments to a callable object.|  
-|[bind1st](../standard-library/functional-functions.md#bind1st_function)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.|  
-|[bind2nd](../standard-library/functional-functions.md#bind2nd_function)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the second argument of the binary function to a specified value.|  
-|[bit_and](../standard-library/functional-functions.md#bit_and_function)|Returns the bitwise logical AND (binary operator&) of the two parameters.|  
-|[bit_not](../standard-library/functional-functions.md#bit_not_function)|Returns the bitwise logical complement (operator~) of the parameter.|  
-|[bit_or](../standard-library/functional-functions.md#bit_or_function)|Returns the bitwise logical OR (operator&#124;) of the two parameters.|  
-|[bit_xor](../standard-library/functional-functions.md#bit_xor_function)|Returns the bitwise logical XOR (operator^) of the two parameters.|  
-|[cref](../standard-library/functional-functions.md#cref_function)|Constructs a const `reference_wrapper` from an argument.|  
-|[mem_fn](../standard-library/functional-functions.md#mem_fn_function)|Generates a simple call wrapper.|  
-|[mem_fun](../standard-library/functional-functions.md#mem_fun_function)|Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments.|  
-|[mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref_function)|A helper template function used to construct function object adaptors for member functions when initialized with reference arguments.|  
-|[not1](../standard-library/functional-functions.md#not1_function)|Returns the complement of a unary predicate.|  
-|[not2](../standard-library/functional-functions.md#not2_function)|Returns the complement of a binary predicate.|  
-|[ptr_fun](../standard-library/functional-functions.md#ptr_fun_function)|A helper template function used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions.|  
-|[ref](../standard-library/functional-functions.md#ref_function)|Constructs a `reference_wrapper` from an argument.|  
-|[swap](../standard-library/functional-functions.md#swap_function)|Swaps two `function` objects.|  
+|[bind](../standard-library/functional-functions.md#bind)|Binds arguments to a callable object.|  
+|[bind1st](../standard-library/functional-functions.md#bind1st)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.|  
+|[bind2nd](../standard-library/functional-functions.md#bind2nd)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the second argument of the binary function to a specified value.|  
+|[bit_and](../standard-library/functional-functions.md#bit_and)|Returns the bitwise logical AND (binary operator&) of the two parameters.|  
+|[bit_not](../standard-library/functional-functions.md#bit_not)|Returns the bitwise logical complement (operator~) of the parameter.|  
+|[bit_or](../standard-library/functional-functions.md#bit_or)|Returns the bitwise logical OR (operator&#124;) of the two parameters.|  
+|[bit_xor](../standard-library/functional-functions.md#bit_xor)|Returns the bitwise logical XOR (operator^) of the two parameters.|  
+|[cref](../standard-library/functional-functions.md#cref)|Constructs a const `reference_wrapper` from an argument.|  
+|[mem_fn](../standard-library/functional-functions.md#mem_fn)|Generates a simple call wrapper.|  
+|[mem_fun](../standard-library/functional-functions.md#mem_fun)|Helper template functions used to construct function object adaptors for member functions when initialized with pointer arguments.|  
+|[mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref)|A helper template function used to construct function object adaptors for member functions when initialized with reference arguments.|  
+|[not1](../standard-library/functional-functions.md#not1)|Returns the complement of a unary predicate.|  
+|[not2](../standard-library/functional-functions.md#not2)|Returns the complement of a binary predicate.|  
+|[ptr_fun](../standard-library/functional-functions.md#ptr_fun)|A helper template function used to convert unary and binary function pointers, respectively, into unary and binary adaptable functions.|  
+|[ref](../standard-library/functional-functions.md#ref)|Constructs a `reference_wrapper` from an argument.|  
+|[swap](../standard-library/functional-functions.md#swap)|Swaps two `function` objects.|  
   
 ### Structs  
   

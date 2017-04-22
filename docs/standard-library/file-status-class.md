@@ -8,16 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords:
-  - "file_status"
-  - "std::experimental::filesystem::v1::file_status"
-  - "filesystem/std::experimental::filesystem::v1::file_status"
-  - "std::experimental::filesystem::v1::file_status::operator="
-  - "filesystem/std::experimental::filesystem::v1::file_status::operator="
-  - "std::experimental::filesystem::v1::file_status::type"
-  - "filesystem/std::experimental::filesystem::v1::file_status::type"
-  - "std::experimental::filesystem::v1::file_status::permissions"
-  - "filesystem/std::experimental::filesystem::v1::file_status::permissions"
+f1_keywords: ['file_status', 'filesystem/std::experimental::filesystem::v1::file_status', 'filesystem/std::experimental::filesystem::v1::file_status::operator=', 'filesystem/std::experimental::filesystem::v1::file_status::type', 'filesystem/std::experimental::filesystem::v1::file_status::permissions']  
 dev_langs: 
   - "C++"
 ms.assetid: 9781840e-ad22-44dd-ad79-0fabaa94bac4
@@ -93,7 +84,7 @@ void permissions(perms mask) noexcept
  Use the setter to make a file readonly or remove the readonly attribute.  
   
 ## Requirements  
- **Header:** filesystem  
+ **Header:** \<filesystem>  
   
  **Namespace:** std::experimental::filesystem, std::experimental::filesystem::v1  
   

@@ -8,11 +8,7 @@ ms.technology:
   - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "unary_negate"
-  - "std::unary_negate"
-  - "std.unary_negate"
-  - "xfunctional/std::unary_negate"
+f1_keywords: ['unary_negate', 'xfunctional/std::unary_negate']  
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -66,7 +62,7 @@ public:
 ## Remarks  
  The template class stores a copy of a unary function object _ *Func.* It defines its member function `operator()` as returning **!**\_ *Func(left).*  
   
- The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1_function) provides an easier way to declare and use the **unary_negator** adaptor predicate.  
+ The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1) provides an easier way to declare and use the **unary_negator** adaptor predicate.  
   
 ## Example  
   

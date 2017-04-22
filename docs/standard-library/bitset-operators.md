@@ -6,6 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
+f1_keywords: []  
 ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
 caps.latest.revision: 12
 author: "corob-msft"
@@ -16,7 +17,7 @@ manager: "ghogen"
 ||||  
 |-|-|-|  
 |[operator&amp;](#operator_amp_)|[operator&gt;&gt;](#operator_gt__gt_)|[operator&lt;&lt;](#operator_lt__lt_)|  
-|[operator_xor](#operator_xor)|[operator_or](#operator_or)|  
+|[operator^](#operator_xor)|[operator|](#operator_or)|  
   
 ##  <a name="operator_amp_"></a>  operator&amp;  
  Performs a bitwise `AND` between two bitsets.  
@@ -205,7 +206,7 @@ int main()
 }  
 ```  
   
-##  <a name="operator_xor"></a>  operator_xor  
+##  <a name="operator_xor"></a>  operator^  
  Performs a bitwise `EXCLUSIVE-OR` between two bitsets.  
   
 ```  
@@ -254,7 +255,7 @@ bitset 2: 0011
 bitset 3: 0110  
 ```  
   
-##  <a name="operator_or"></a>  operator_or  
+##  <a name="operator_or"></a>  operator|  
  Performs a bitwise `OR` between two bitsets.  
   
 ```  
