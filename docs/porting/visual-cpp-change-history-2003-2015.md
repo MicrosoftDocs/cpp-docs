@@ -863,6 +863,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 <!--From here to VS_Update1 added 04/21/2017-->
 
 -   **main declared as extern "C" now requires a return type.**  
+
 The following code now produces C4430. 
 ```cpp
 extern "C" __cdecl main(){} // C4430
@@ -872,10 +873,11 @@ To fix the error, add the return type:
 extern "C" int __cdecl main(){} // OK
 ```
 
- -   **'typename' is not allowed in a member initializer**
- The following code now produces C2059
+ -   **typename is not allowed in a member initializer**  
+
+The following code now produces C2059:
  ```cpp
- template<typename T>
+template<typename T>
 struct S1 : public T::type
 {
 	S1() : typename T::type() // C2059
@@ -896,6 +898,7 @@ S1() : T::type() // OK
 ```
 
 -   **The storage class on explicit specializations is ignored.** 
+
 In the following code, the static storage class specifier is ignored 
 ```cpp
 template <typename T>
@@ -910,7 +913,8 @@ static void myfunc(double h) // static is ignored
 
 ```
 
--   **A constant used in a static_assert inside a class template will always fail.**
+-   **A constant used in a static_assert inside a class template will always fail.**  
+
 The following code causes the static_assert to always fail:
 ```cpp
 template <size_t some_value>
@@ -939,7 +943,8 @@ struct S1
 //other partial specializations here
 ```
 
--   **Rules enforced for forward declarations. (Applies only to C.)**
+-   **Rules enforced for forward declarations. (Applies only to C.)**  
+
 The following code now produces C2065:
 ```cpp
 struct token_s;
@@ -965,7 +970,8 @@ typedef TOKEN *PTOKEN;
 typedef int(*PFNTERM)(PTOKEN, BOOL, INT);
 ```
 
--   **More consistent enforcement of function pointer types**
+-   **More consistent enforcement of function pointer types**  
+
 The following code now produces C2197:
 
 ```cpp
@@ -978,7 +984,8 @@ void func(F1 f, int v1, int v2)
 }
 ```
 
--   **Ambiguous calls to overloaded functions**
+-   **Ambiguous calls to overloaded functions**  
+
 The following code now produces C266: 'N::bind': ambiguous call to overloaded function
 ```cpp 
 template<typename R, typename T, typename T1, typename A1>
@@ -1008,7 +1015,8 @@ To fix the error, you can fully qualify the call to bind: N::bind(...). However,
 
 This pattern happens frequently with ComPtr and other types in the Microsoft::WRL namespace.
 
--   **Fix incorrect address of**
+-   **Fix incorrect address of**  
+
 The following code now produces C2440:  '=': cannot convert from 'type *' to 'type'. To fix the error, change &(type) to (type) and (&f())
  to (f()).
  
@@ -1037,7 +1045,8 @@ void h()
 
 ```
 
--   **String literal is a constant array**
+-   **String literal is a constant array**  
+
 The following code now produces C2664: 'void f(void *)': cannot convert argument 1 from 'const char (*)[2]' to 'void *'
 ```cpp
 void f(void *);
@@ -1061,7 +1070,8 @@ void h(void)
 
 ```
 
--   **C++11 UDL strings**
+-   **C++11 UDL strings**  
+
 The following code now produces error C3688: invalid literal suffix 'L'; literal operator or literal operator template 'operator ""L' not found
 
 
@@ -1101,7 +1111,8 @@ In the example above, `MACRO` is no longer parsed as two tokens (a string follow
 String concatenation rules were also brought into compliance with the standard, which means L"a" "b" is equivalent to L"ab". Previous editions of Visual Studio did not accept concatenation of strings with different character width.
 
 
--   **C++11 empty character removed**
+-   **C++11 empty character removed**  
+
 The following code now produces error C2137: empty character constant
 
 ```cpp
@@ -1118,7 +1129,7 @@ bool check(wchar_t c){
 }
 ```
 
--   **MFC exceptions can't be caught by value because they are not copyable**
+-   **MFC exceptions can't be caught by value because they are not copyable**  
 
 The following code in an MFC application now causes error C2316: 'D': cannot be caught as the destructor and/or copy constructor are inaccessible or deleted
 
@@ -1146,22 +1157,26 @@ int main()
 ```
 To fix the code, you can change the catch block to `catch (const D &)' but the better solution is usually to use the MFC TRY/CATCH macros.
 
--   **alignof is now a keyword**
+-   **alignof is now a keyword**  
+
 The following code now produces error C2332: 'class': missing tag name. To fix the code you must rename the class or, if the class is performing the same work as alignof, just replace the class with the new keyword.
 ```cpp
 class alignof{}
 ```
 
--   **constexpr is now a keyword**
+-   **constexpr is now a keyword**  
+
 The following code now produces error C2059: syntax error: ')'. To fix the code, you must rename any function or variable names that are called "constexpr". 
 ```cpp
 int constexpr() {return 1;}
 ```
 
--   **Movable types cannot be const**
+-   **Movable types cannot be const**  
+
 When a function returns a type that is intended to be moved, its return type should not be const.
 
--   **Deleted copy constructors**
+-   **Deleted copy constructors**  
+
 The following code now produces C2280 'S::S(S &&)': attempting to reference a deleted function:
 
 ```cpp
@@ -1184,7 +1199,8 @@ struct S{
 S s2 = {2,3}; //OK
 ```
 
--   **Conversion to function pointer only generated when no lambda capture**
+-   **Conversion to function pointer only generated when no lambda capture**  
+
 The following code produces C2664 in Visual Studio 2015. 
 
 ```cpp
@@ -1197,7 +1213,8 @@ int main() {
 ```
 To fix the error, remove the `=` from the capture list.
 
--   **Ambiguous calls involving conversion operators**
+-   **Ambiguous calls involving conversion operators**  
+
 The following code now produces error C2440: 'type cast': cannot convert from 'S2' to 'S1':
 
 ```cpp 
@@ -1253,7 +1270,8 @@ void f(S1 *p, S2 s)
 }
 ```
 
--   **Fix invalid copy initialization in non-static data member initialization (NSDMI)**
+-   **Fix invalid copy initialization in non-static data member initialization (NSDMI)**  
+
 The following code now produces error C2664: 'S1::S1(S1 &&)': cannot convert argument 1 from 'bool' to 'const S1 &':
 ```cpp
 struct S1 {
@@ -1271,7 +1289,8 @@ S1 s1{true}; // OK
 };
 ```
 
--   **Accessing constructors inside decltype statements**
+-   **Accessing constructors inside decltype statements**  
+
 The following code now produces C2248: 'S::S': cannot access private member declared in class 'S':
 ```cpp
 class S {
@@ -1294,7 +1313,8 @@ public:
 };
 ```
 
--   **Default ctor of lambda is implicitly deleted**
+-   **Default ctor of lambda is implicitly deleted**  
+
 The following code now produces error C3497: you cannot construct an instance of a lambda:
 ```cpp
 void func(){
@@ -1305,7 +1325,8 @@ void func(){
 ```
 To fix the error, remove the need for the default constructor to be called. If the lambda does not capture anything then it can be cast to a function pointer.
 
--   **Lambdas with a deleted assignment operator**
+-   **Lambdas with a deleted assignment operator**  
+
 The following code now produces error C2280:
 
 ```cpp
@@ -1324,7 +1345,8 @@ void f(int i)
 ```
 To fix the error, replace the lambda with a functor class or remove the need to use the assignment operator.
 
--   **Attempting to move an object with deleted copy constructor**
+-   **Attempting to move an object with deleted copy constructor**  
+
 The following code now produces  error C2280: 'moveable::moveable(const moveable &)': attempting to reference a deleted function
 ```cpp
 struct moveable {
@@ -1347,7 +1369,8 @@ To fix the error, use std::move instead:
 S(moveable && m) :
 	m_m(std::move(m))
 ```
--   **Local class can't reference other local class defined later in the same function**
+-   **Local class can't reference other local class defined later in the same function**  
+
 The following code now produces error C2079: 's' uses undefined struct 'main::S2'
 ```cpp
 int main()
@@ -1376,7 +1399,8 @@ struct S1 {
 }
 ```
 
--   **Cannot call a protected base ctor in the body of derived ctor.**
+-   **Cannot call a protected base ctor in the body of derived ctor.**  
+
 The following code now produces error C2248: 'S1::S1': cannot access protected member declared in class 'S1'
 ```cpp
 struct S1 {
@@ -1392,7 +1416,8 @@ struct S2 : public S1 {
 ```
 To fix the error, in S2 remove the call to S1() from the constructor and if necessary put it in another function.
 
--   **{} prevents conversion to pointer**
+-   **{} prevents conversion to pointer**  
+
 The following code now produces C2439 'S::p': member could not be initialized	
 ```cpp
 struct S {
@@ -1408,7 +1433,8 @@ struct S {
 };
 ```
 
--   **Incorrect macro definition and usage with parentheses**
+-   **Incorrect macro definition and usage with parentheses**  
+
 The following example now produces error C2008: ';': unexpected in macro definition
 ```cpp
 #define A; //cause of error
@@ -1457,7 +1483,8 @@ To fix the problem, define A like this:
 #define A int
 ```
 
--   **Extra parens in declarations**
+-   **Extra parens in declarations**  
+
 The following code produces error C2062: type 'int' unexpected
 ```cpp
 
@@ -1468,7 +1495,8 @@ struct S {
 ```
 To fix the error, remove the parens from `j`. If the parens are needed for clarity, then use a typedef.
 
--   **@@@
+-   **Compiler-generated constructors and __declspec(novtable)**  
+
 In Visual Studio 2015, there is an increased likelihood that inline compiler-generated constructors of abstract classes with virtual base classes may expose improper usage of __declspec(novtable) when used in combination with __declspec(dllimport).
 
 -   **auto requires single expression in direct-list-initialization** 
@@ -1495,7 +1523,8 @@ std::tuple<int, int> testPositions[]{
 };
 ```
 
--   **Checking types vs. pointers to types for is_convertible**
+-   **Checking types vs. pointers to types for is_convertible**  
+
 The following code now causes the static assertion to fail. 
 
 ```cpp
@@ -1514,9 +1543,10 @@ To fix the error, change the static_assert so that it compares pointers to D and
 static_assert(std::is_convertible<D*, B2*>::value, "fail");
 ```
 
--   **declspec(novtable) declarations must be consistent**
+-   **declspec(novtable) declarations must be consistent**  
+
 declspec declarations must be consistent across all libraries. The following code will now produce a one-definition rule (ODR) violation:
-``cpp
+```cpp
 
 //a.cpp
 class __declspec(dllexport) 
