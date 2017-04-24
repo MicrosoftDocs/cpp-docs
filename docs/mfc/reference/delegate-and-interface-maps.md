@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "delegate map macros"
   - "event map macros"
   - "interface map macros"
-  ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
+ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
 caps.latest.revision: 1
 author: "mikeblome"
 ms.author: "mblome"
