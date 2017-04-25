@@ -50,7 +50,7 @@ EXPORTS
   
 |Keyword|Emits in the import library|Exports|  
 |-------------|---------------------------------|-------------|  
-|`CONSTANT`|`_imp_ulDataInDll_ulDataInDll`|`_ulDataInDll`|  
+|`CONSTANT`|`_imp_ulDataInDll`, `_ulDataInDll`|`_ulDataInDll`|  
 |`DATA`|`_imp_ulDataInDll`|`_ulDataInDll`|  
   
  Using **__declspec(dllimport)** and CONSTANT lists both the `imp` version and the undecorated name in the .lib DLL import library that is created to allow explicit linking. Using **__declspec(dllimport)** and DATA lists just the `imp` version of the name.  
