@@ -220,7 +220,7 @@ You may find additional assistance for errors and warnings on the MSDN public fo
 |Compiler warning C4463|overflow; assigning '*value*' to bit-field that can only hold values from '*min_value*' to '*max_value*'|  
 |Compiler warning C4464|relative include path contains '..'|  
 |[Compiler Warning (level 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|floating-point control pragmas ignored under /clr|  
-|[Compiler warning (level 4) C4471](compiler-warning-level-1-c4471.md)|'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)|  
+|[Compiler warning (level 4) C4471](compiler-warning-level-4-c4471.md)|'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)|  
 |Compiler warning (level 1) C4472|'*identifier*' is a native enum: add an access specifier (private/public) to declare a 'WinRT&#124;managed' enum|  
 |Compiler warning C4480|nonstandard extension used: specifying underlying type for enum '*enumeration*'|  
 |[Compiler Warning (level 4) C4481](../../error-messages/compiler-warnings/compiler-warning-level-4-c4481.md)|nonstandard extension used: override specifier '*keyword*'|  
