@@ -1546,60 +1546,63 @@ static_assert(std::is_convertible<D*, B2*>::value, "fail");
 -   **declspec(novtable) declarations must be consistent**  
 
 declspec declarations must be consistent across all libraries. The following code will now produce a one-definition rule (ODR) violation:
+
 ```cpp
 
 //a.cpp
-class __declspec(dllexport) 
-	A { 
-public: 
-	A(); 
-	A(const A&); 
-	virtual ~A();
-private: 
-	int i; 
-};
+class __declspec(dllexport)
+	A {
+public:
+	A();
+	A(const A&);
+	virtual ~A();
+private:
+	int i;
+};
 
-A::A() {}
-A::~A() {}
+A::A() {}
+A::~A() {}
 A::A(const A&) {}
 
 //b.cpp
 // compile with cl.exe /nologo /LD /EHsc /Osx b.cpp
 #pragma comment(lib, "A")
-class __declspec(dllimport) A
-{
+class __declspec(dllimport) A
+{
 public: A();
-		 A(const A&);
+		 A(const A&);
 		 virtual ~A();
-private: 
+private:
 	int i;
-};
+};
 
-struct __declspec(novtable) __declspec(dllexport) B 
-	: virtual public A { virtual void f() = 0; };
+struct __declspec(novtable) __declspec(dllexport) B
+	: virtual public A {
+	virtual void f() = 0;
+};
 
 //c.cpp
 #pragma comment(lib, "A")
 #pragma comment(lib, "B")
-class __declspec(dllimport) A
-{
-public: 
-	A(); 
+class __declspec(dllimport) A
+{
+public:
+	A();
 	A(const A&);
 	virtual ~A();
-private: 
-	int i;
+private:
+	int i;
 };
 struct  /* __declspec(novtable) */ __declspec(dllimport) B // Error. B needs to be novtable here also.
-	: virtual public A 
-{ 
-	virtual void f() = 0; 
-};
+	: virtual public A
+{
+	virtual void f() = 0;
+};
 
-struct C : virtual B 
-{ 
-	virtual void f(); 
-};
+struct C : virtual B
+{
+	virtual void f();
+};
 
 void C::f() {}
 C c;
