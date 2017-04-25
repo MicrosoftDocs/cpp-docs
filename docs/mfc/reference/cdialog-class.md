@@ -245,7 +245,7 @@ virtual BOOL CreateIndirect(
   
  Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the `CreateIndirect` function.  
   
- Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
+ Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).  
   
 ##  <a name="domodal"></a>  CDialog::DoModal  
  Call this member function to invoke the modal dialog box and return the dialog-box result when done.  
@@ -355,7 +355,7 @@ BOOL InitModalIndirect(
 ### Remarks  
  To create a modal dialog box indirectly, first allocate a global block of memory and fill it with the dialog box template. Then call the empty `CDialog` constructor to construct the dialog-box object. Next, call `InitModalIndirect` to store your handle to the in-memory dialog-box template. The Windows dialog box is created and displayed later, when the [DoModal](#domodal) member function is called.  
   
- Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
+ Dialog boxes that contain ActiveX controls require additional information provided in a **DLGINIT** resource. For more information, see Knowledge Base article Q231591, " HOWTO: Use a Dialog Template to Create a MFC Dialog with an ActiveX Control." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).  
   
 ##  <a name="mapdialogrect"></a>  CDialog::MapDialogRect  
  Call to convert the dialog-box units of a rectangle to screen units.  
