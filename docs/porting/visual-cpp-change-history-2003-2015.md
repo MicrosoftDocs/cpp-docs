@@ -1514,9 +1514,7 @@ To fix the error, one possibility is to initialize testPositions as follows:
 
 ```cpp
 std::tuple<int, int> testPositions[]{
-	std::tuple<int, int>{13, 33},Hiromi1GR!
-	Hiromi1GR!
-
+	std::tuple<int, int>{13, 33},
 	std::tuple<int, int>{-23, -48},
 	std::tuple<int, int>{38, -12},
 	std::tuple<int, int>{-21, 17}
