@@ -1,0 +1,137 @@
+---
+title: "Compiler Error C2280 | Microsoft Docs"
+ms.custom: ""
+ms.date: "04/25/2017"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "C2280"
+helpviewer_keywords: 
+  - "C2280"
+dev_langs: 
+  - "C++"
+ms.assetid: e6c5b1fb-2b9b-4554-8ff9-775eeb37161b
+caps.latest.revision: 8
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
+---
+# Compiler Error C2280  
+  
+'*declaration*': attempting to reference a deleted function  
+  
+The compiler detected an attempt to reference a deleted function. This error can be caused by a call to a member function that has been explicitly marked as deleted in the source code. This error can also be caused by a call to an implicit special member function that is declared and marked as deleted by the compiler.  
+
+Previous versions of the compiler allowed a derived class to call member functions of indirectly-derived `private virtual` base classes. This behavior was incorrect and does not conform to the C++ standard. The compiler no longer accepts these calls and issues compiler error C2280 as a result.  
+  
+## Example  
+  
+The compiler may create deleted special member functions implicitly in a class. For example, if a class declares a move constructor or move assignment operator, but does not explicitly declare a copy constructor, the compiler implicitly declares a copy constructor and defines it as deleted. Similarly, if a class declares a move constructor or move assignment operator, but does not explicitly declare a copy assignment operator, the compiler implicitly declares a copy assignment operator and defines it as deleted.  
+ 
+```cpp  
+// C2280d.cpp
+// compile with: cl /c C2280d.cpp
+class base  
+{  
+public:  
+    base();  
+    ~base(); 
+    base(base&&); 
+    // Move constructor causes copy constructor to be
+    // implicitly declared as deleted. To fix this 
+    // issue, you can explicitly declare a copy constructor:
+    // base(base&);
+    // If you want the compiler default version, do this:
+    // base(base&) = default;
+};  
+
+void copy(base *p)  
+{  
+    base b{*p};  // C2280
+}  
+```  
+  
+## Example  
+  
+In this example, class `top` indirectly derives from private virtual `base`. This makes the members of `base` inaccessible to `top`; an object of type `top` can't be instantiated or destroyed.  
+
+```cpp  
+// C2280a.cpp
+// compile with: cl /c C2280a.cpp
+class base  
+{  
+protected:  
+    base();  
+    ~base();  
+};  
+
+class middle : private virtual base {}; 
+class top : public virtual middle {};   
+
+void destroy(top *p)  
+{  
+    delete p;  // C2280  
+}  
+```  
+  
+You can fix this issue by changing class `middle` to use `protected virtual` derivation, or by directly deriving class `top` from private virtual `base`:  
+  
+```cpp  
+// C2280b.cpp
+// compile with: cl /c C2280b.cpp
+class base  
+{  
+protected:  
+    base();  
+    ~base();  
+};  
+
+class middle : private virtual base {}; 
+class top : public virtual middle, private virtual base {};   
+
+void destroy(top *p)  
+{  
+    delete p;  // OK  
+}  
+```  
+  
+Alternatively: 
+  
+```cpp  
+// C2280c.cpp
+// compile with: cl /c C2280c.cpp
+class base  
+{  
+protected:  
+    base();  
+    ~base();  
+};  
+
+class middle : protected virtual base {}; 
+class top : public virtual middle {};   
+
+void destroy(top *p)  
+{  
+    delete p;  // OK  
+}  
+```  
+  
