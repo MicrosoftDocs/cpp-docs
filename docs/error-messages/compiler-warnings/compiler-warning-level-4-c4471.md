@@ -106,7 +106,7 @@ enum Example;    // C4471
 // C4471f.cpp
 // Definition for scoped enumeration used in C4471e.cpp
 // Compile with: cl /c /w14471 C4471e.cpp C4471f.cpp
-enum class Example { item = 0x80000000 };
+enum class Example { item = 0 };
 // ...
 ```  
   
