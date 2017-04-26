@@ -59,7 +59,7 @@ struct B {
 	// To fix, remove the call to A(int)
 };
 
-void foo() {
+void f() {
 	B b;    // calls implicit B::B(void)
 }
 ```  
