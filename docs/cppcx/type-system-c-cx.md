@@ -21,15 +21,15 @@ By using the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture, you can 
   
  For an in-depth discussion of the C++/CX language projection and how it works under the covers, see these blog posts:  
   
-1.  [C++/CX Part 0 of \[n\]: An Introduction](http://blogs.msdn.com/b/vcblog/archive/2012/08/29/cxxcxpart00anintroduction.aspx)  
+1.  [C++/CX Part 0 of \[n\]: An Introduction](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction)  
   
-2.  [C++/CX Part 0 of \[n\]: An Introduction](http://blogs.msdn.com/b/vcblog/archive/2012/08/29/cxxcxpart00anintroduction.aspx)  
+2.  [C++/CX Part 1 of \[n\]: A Simple Class](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class)  
   
-3.  [C++/CX Part 2 of \[n\]: Types That Wear Hats](http://blogs.msdn.com/b/vcblog/archive/2012/09/17/cxxcxpart02typesthatwearhats.aspx)  
+3.  [C++/CX Part 2 of \[n\]: Types That Wear Hats](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats)  
   
-4.  [C++/CX Part 3 of \[n\]: Under Construction](http://blogs.msdn.com/b/vcblog/archive/2012/10/05/cxxcxpart03underconstruction.aspx)  
+4.  [C++/CX Part 3 of \[n\]: Under Construction](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)  
   
-5.  [C++/CX Part 4 of \[n\]: Static Member Functions](http://blogs.msdn.com/b/vcblog/archive/2012/10/19/cxxcxpart04staticmemberfunctions.aspx)  
+5.  [C++/CX Part 4 of \[n\]: Static Member Functions](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions)  
   
 ## Windows metadata (.winmd) files  
  When you compile a Universal Windows Platform app that's written in C++, the compiler generates the executable in native machine code, and also generates a separate Windows metadata (.winmd) file that contains descriptions of the public [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types, which include classes, structs, enumerations, interfaces, parameterized interfaces, and delegates. The format of the metadata resembles the format that's used in .NET Framework assemblies.  In a C++ component, the .winmd file contains only metadata; the executable code resides in a separate file. This is the case for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components that are included with Windows. The WinMD file name must match or be a prefix of the root namespace in the source code. (For .NET Framework languages, the .winmd file contains both the code and the metadata, just like a .NET Framework assembly.)  
