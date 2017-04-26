@@ -21,9 +21,9 @@ By using the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] architecture, you can 
   
  For an in-depth discussion of the C++/CX language projection and how it works under the covers, see these blog posts:  
   
-1.  [C++/CX Part 0 of \[n\]: An Introduction](http://blogs.msdn.com/b/vcblog/archive/2012/08/29/cxxcxpart00anintroduction.aspx)  
+1.  [C++/CX Part 0 of \[n\]: An Introduction](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction)  
   
-2.  [C++/CX Part 0 of \[n\]: An Introduction](http://blogs.msdn.com/b/vcblog/archive/2012/08/29/cxxcxpart00anintroduction.aspx)  
+2.  [C++/CX Part 1 of \[n\]: A Simple Class](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class)  
   
 3.  [C++/CX Part 2 of \[n\]: Types That Wear Hats](http://blogs.msdn.com/b/vcblog/archive/2012/09/17/cxxcxpart02typesthatwearhats.aspx)  
   
