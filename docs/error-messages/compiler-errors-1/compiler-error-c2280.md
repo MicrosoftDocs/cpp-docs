@@ -40,8 +40,14 @@ translation.priority.mt:
 '*declaration*': attempting to reference a deleted function  
   
 The compiler detected an attempt to reference a deleted function. This error can be caused by a call to a member function that has been explicitly marked as deleted in the source code. This error can also be caused by a call to an implicit special member function that is declared and marked as deleted by the compiler.  
-
-Previous versions of the compiler allowed a derived class to call member functions of indirectly-derived `private virtual` base classes. This behavior was incorrect and does not conform to the C++ standard. The compiler no longer accepts these calls and issues compiler error C2280 as a result.  
+  
+When you see error C2280 in connection with a `unique_ptr`, it is almost certainly because you are attempting to invoke its copy constructor, which is a deleted function. By design, a `unique_ptr` cannot be copied.  
+  
+Previous versions of the compiler allowed a derived class to call member functions of indirectly-derived `private virtual` base classes. This behavior was incorrect and does not conform to the C++ standard. The compiler now issues compiler error C2280 when such a call is made.  
+  
+Previous versions of the compiler also generated default constructors and destructors for anonymous unions. These are now implicitly declared as deleted.  
+  
+Previous versions of the compiler allowed implicit definition of default copy and move constructors and default copy and move assignment operators in classes that have `volatile` member variables. This  behavior does not conform to the C++ standard. The compiler now considers a class that has volatile member variables to have non-trivial construction and assignment operators, which prevents automatic generation of default implementations of these operators. When such a class is a member of a union, or an anonymous union inside of a class, the copy and move constructors and copy and move assignment operators of the union, or the class containing the unonymous union, are implicitly defined as deleted. An attempt to construct or copy such a union or class without explicitly defining these operators causes compiler error C2280.  
   
 ## Example  
   
