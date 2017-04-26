@@ -64,17 +64,15 @@ enum Example;    // C4471
 ```  
   
 ## Example  
-In C++11, you can add an explicit type to an unscoped enumeration and to its forward declaration. We recommend this solution only if complex header inclusion logic prevents use of the definition instead of a forward declaration. You can also specify an explicit type for the forward declaration of an enumeration that is implicitly typed by an initializer. This solution can lead to a maintenance issue: if you change the underlying type used for the enumeration definition, either explicitly or implicitly, you must also change all of the forward declarations to match, or you may have silent errors in your code. You can put the forward declaration into a header file to minimize this issue.  
+In C++11, you can add an explicit type to an unscoped enumeration and to its forward declaration. We recommend this solution only if complex header inclusion logic prevents use of the definition instead of a forward declaration. This solution can lead to a maintenance issue: if you change the underlying type used for the enumeration definition, you must also change all of the forward declarations to match, or you may have silent errors in your code. You can put the forward declaration into a header file to minimize this issue.  
   
 ```cpp  
 // C4471c.cpp
 // Client code for enumeration defined in C4471d.cpp
 // Compile with: cl /c /w14471 C4471c.cpp C4471d.cpp
-enum Example1;    // C4471, int assumed
-enum Example2;    // C4471, int assumed
+enum Example;    // C4471, int assumed
 // To fix, replace the lines above with the forward declarations:
-// enum Example1 : unsigned;
-// enum Example2 : unsigned;
+// enum Example : unsigned;
 // ...
 ```  
   
@@ -82,8 +80,7 @@ enum Example2;    // C4471, int assumed
 // C4471d.cpp
 // Definition for enumeration used in C4471c.cpp
 // Compile with: cl /c /w14471 C4471c.cpp C4471d.cpp
-enum Example1 : unsigned { item = 0x80000000 }; // explicit type
-enum Example2 { item = 0x80000000 }; // implicit unsigned int type
+enum Example : unsigned { item = 0x80000000 }; // explicit type
 // ...
 ```  
   
