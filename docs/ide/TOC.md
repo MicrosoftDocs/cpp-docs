@@ -21,6 +21,7 @@
 ### [Help Files (HTML Help)](help-files-html-help.md)
 ### [Help Files (WinHelp)](help-files-winhelp.md)
 ### [Hint Files](hint-files.md)
+### [Property Page XML Files](property-page-xml-files.md)
 ### [.vcxproj and .props file structure](vcxproj-file-structure.md)
 ## [Creating Desktop Projects By Using Application Wizards](creating-desktop-projects-by-using-application-wizards.md)
 ### [Wizard Support for Other Languages](wizard-support-for-other-languages.md)

@@ -1,3 +1,38 @@
+---
+title: ".vcxproj and .props file structure | Microsoft Docs"
+ms.custom: ""
+ms.date: "04/27/2017"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-cpp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - ".vcxproj file structure"
+ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
+caps.latest.revision: 1
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
+---
+
 # .vcxproj and .props file structure
 MSBuild is the default project system in Visual Studio; when you choose **File | New Project** in Visual C++ you are creating an MSBuild project whose settings are stored in an XML project file that has the extension `.vcxproj`. The project file may also import .props files and .targets files where settings can be stored. In most cases, you never need to manually edit the project file, and in fact you should not edit it manually unless you have a good understanding of MSBuild. Whenever possible you should use the Visual Studio property pages to modify project settings. However, in some cases you may need to modify a project file or property sheet manually. For those scenarios, this article contains basic information about the structure of the file. 
 
