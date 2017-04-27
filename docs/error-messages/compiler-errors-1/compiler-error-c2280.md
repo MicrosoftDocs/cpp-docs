@@ -167,8 +167,8 @@ Versions of the compiler before Visual Studio 2015 Update 2 were non-conforming 
 In this example, class `top` indirectly derives from private virtual `base`. In conforming code, this makes the members of `base` inaccessible to `top`; an object of type `top` can't be instantiated or destroyed. To fix this issue in code that relied on the old compiler behavior, change the intermediate class to use `protected virtual` derivation, or change the `top` class to use direct derivation:  
 
 ```cpp  
-// C2280a.cpp
-// compile with: cl /c C2280a.cpp
+// C2280_indirect.cpp
+// compile with: cl /c C2280_indirect.cpp
 class base  
 {  
 protected:  
@@ -179,7 +179,7 @@ protected:
 class middle : private virtual base {}; 
 // Possible fix: Replace line above with:
 // class middle : protected virtual base {};
-class top : public virtual middle {}; 
+class top : public virtual middle {};    // C4594, C4624
 // Another possible fix: use direct derivation:
 // class top : public virtual middle, private virtual base {};   
 
