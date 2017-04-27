@@ -49,12 +49,12 @@ Defines the container template class forward_list and several supporting templat
   
 |||  
 |-|-|  
-|[operator== (<forward_list>)](../standard-library/forward-list-operators.md#operator_eq_eq)|Tests if the forward list object on the left side of the operator is equal to the forward list object on the right side.|  
-|[operator!= (<forward_list>)](../standard-library/forward-list-operators.md#operator_neq)|Tests if the forward list object on the left side of the operator is not equal to the forward list object on the right side.|  
-|[operator< (<forward_list>)](../standard-library/forward-list-operators.md#operator_lt_)|Tests if the forward list object on the left side of the operator is less than the forward list object on the right side.|  
-|[operator<= (<forward_list>)](../standard-library/forward-list-operators.md#operator_lt__eq)|Tests if the forward list object on the left side of the operator is less than or equal to the forward list object on the right side.|  
-|[operator> (<forward_list>)](../standard-library/forward-list-operators.md#operator_gt_)|Tests if the forward list object on the left side of the operator is greater than the forward list object on the right side.|  
-|[operator>= (<forward_list>)](../standard-library/forward-list-operators.md#operator_gt__eq)|Tests if the forward list object on the left side of the operator is greater than or equal to the forward list object on the right side.|  
+|[operator== (<forward_list>)](../standard-library/forward-list-operators.md#op_eq_eq)|Tests if the forward list object on the left side of the operator is equal to the forward list object on the right side.|  
+|[operator!= (<forward_list>)](../standard-library/forward-list-operators.md#op_neq)|Tests if the forward list object on the left side of the operator is not equal to the forward list object on the right side.|  
+|[operator< (<forward_list>)](../standard-library/forward-list-operators.md#op_lt)|Tests if the forward list object on the left side of the operator is less than the forward list object on the right side.|  
+|[operator<= (<forward_list>)](../standard-library/forward-list-operators.md#eq)|Tests if the forward list object on the left side of the operator is less than or equal to the forward list object on the right side.|  
+|[operator> (<forward_list>)](../standard-library/forward-list-operators.md#op_gt)|Tests if the forward list object on the left side of the operator is greater than the forward list object on the right side.|  
+|[operator>= (<forward_list>)](../standard-library/forward-list-operators.md#eq)|Tests if the forward list object on the left side of the operator is greater than or equal to the forward list object on the right side.|  
   
 ### Functions  
   

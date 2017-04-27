@@ -14,10 +14,10 @@ manager: "ghogen"
 # &lt;hash_set&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator!= (hash_multiset)](#operator_neq__hash_multiset_)|[operator==](#operator_eq_eq)|  
-|[operator== (hash_multiset)](#operator_eq_eq__hash_multiset_)|  
+|[operator!=](#op_neq)|[operator!= (hash_multiset)](#neq_hash_multiset)|[operator==](#op_eq_eq)|  
+|[operator== (hash_multiset)](#eq_eq_hash_multiset)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
   
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).  
@@ -82,7 +82,7 @@ The hash_sets hs1 and hs2 are not equal.
 The hash_sets hs1 and hs3 are equal.  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
   
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).  
@@ -147,7 +147,7 @@ The hash_sets s1 and s2 are not equal.
 The hash_sets s1 and s3 are equal.  
 ```  
   
-##  <a name="operator_neq__hash_multiset_"></a>  operator!= (hash_multiset)  
+##  <a name="neq_hash_multiset"></a>  operator!= (hash_multiset)  
   
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).  
@@ -212,7 +212,7 @@ The hash_multisets hs1 and hs2 are not equal.
 The hash_multisets hs1 and hs3 are equal.  
 ```  
   
-##  <a name="operator_eq_eq__hash_multiset_"></a>  operator== (hash_multiset)  
+##  <a name="eq_eq_hash_multiset"></a>  operator== (hash_multiset)  
   
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).  
@@ -236,7 +236,7 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 ### Remarks  
  The comparison between hash_multiset objects is based on a pairwise comparison of their elements. Two hash_multisets are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+ In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext namespace](../standard-library/stdext-namespace.md) for more information.  
   
 ### Example  
   

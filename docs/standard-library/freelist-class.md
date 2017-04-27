@@ -58,21 +58,21 @@ class freelist
   
 |||  
 |-|-|  
-|[freelist](#freelist__freelist)|Constructs an object of type `freelist`.|  
+|[freelist](#freelist)|Constructs an object of type `freelist`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[pop](#freelist__pop)|Removes the first memory block from the free list.|  
-|[push](#freelist__push)|Adds a memory block to the list.|  
+|[pop](#pop)|Removes the first memory block from the free list.|  
+|[push](#push)|Adds a memory block to the list.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="freelist__freelist"></a>  freelist::freelist  
+##  <a name="freelist"></a>  freelist::freelist  
  Constructs an object of type `freelist`.  
   
 ```
@@ -81,7 +81,7 @@ freelist();
   
 ### Remarks  
   
-##  <a name="freelist__pop"></a>  freelist::pop  
+##  <a name="pop"></a>  freelist::pop  
  Removes the first memory block from the free list.  
   
 ```
@@ -94,7 +94,7 @@ void *pop();
 ### Remarks  
  The member function returns `NULL` if the list is empty. Otherwise, it removes the first memory block from the list.  
   
-##  <a name="freelist__push"></a>  freelist::push  
+##  <a name="push"></a>  freelist::push  
  Adds a memory block to the list.  
   
 ```

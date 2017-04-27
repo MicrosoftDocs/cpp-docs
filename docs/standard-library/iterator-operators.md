@@ -14,11 +14,11 @@ manager: "ghogen"
 # &lt;iterator&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
-|[operator&lt;](#operator_lt_)|[operator&lt;=](#operator_lt__eq)|[operator+](#operator_add)|  
-|[operator-](#operator-)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#eq)|[operator+](#op_add)|  
+|[operator-](#operator-)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests if the iterator object on the left side of the operator is not equal to the iterator object on the right side.  
   
 ```  
@@ -107,7 +107,7 @@ The iterator rVPOS1 now points to the second element
 The iterators are not equal.  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests if the iterator object on the left side of the operator is equal to the iterator object on the right side.  
   
 ```  
@@ -209,7 +209,7 @@ The iterator rVPOS1 now points to the second element
 The iterators are not equal.  
 ```  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Tests if the iterator object on the left side of the operator is less than the iterator object on the right side.  
   
 ```  
@@ -296,7 +296,7 @@ The iterator rVPOS2 now points to the second element
 The iterator rVPOS1 is less than the iterator rVPOS2.  
 ```  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="eq"></a>  operator&lt;=  
  Tests if the iterator object on the left side of the operator is less than or equal to the iterator object on the right side.  
   
 ```  
@@ -387,7 +387,7 @@ The iterator rVPOS2 now points to the second element
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.  
 ```  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Tests if the iterator object on the left side of the operator is greater than the iterator object on the right side.  
   
 ```  
@@ -472,7 +472,7 @@ The iterator rVPOS1 now points to the second element
 The iterator rVPOS1 is greater than the iterator rVPOS2.  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="eq"></a>  operator&gt;=  
  Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.  
   
 ```  
@@ -563,7 +563,7 @@ The iterator rVPOS1 now points to the second element
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.  
 ```  
   
-##  <a name="operator_add"></a>  operator+  
+##  <a name="op_add"></a>  operator+  
  Adds an offset to an iterator and returns a `move_iterator` or a `reverse_iterator` addressing the inserted element at the new offset position.  
   
 ```  

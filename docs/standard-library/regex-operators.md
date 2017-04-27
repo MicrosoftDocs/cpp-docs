@@ -16,11 +16,11 @@ manager: "ghogen"
 # &lt;regex&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
-|[operator&lt;](#operator_lt_)|[operator&lt;&lt;](#operator_lt__lt_)|[operator&lt;=](#operator_lt__eq)|  
-|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;&lt;](#lt)|[operator&lt;=](#eq)|  
+|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Not equal comparison for various objects.  
   
 ```  
@@ -137,7 +137,7 @@ sub != "aab" == true
 sub != 'a' == true  
 ```  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Less than comparison for various objects.  
   
 ```  
@@ -245,7 +245,7 @@ sub < "aab" == true
 sub < 'a' == false  
 ```  
   
-##  <a name="operator_lt__lt_"></a>  operator&lt;&lt;  
+##  <a name="lt"></a>  operator&lt;&lt;  
  Inserts a sub_match in a stream.  
   
 ```  
@@ -303,7 +303,7 @@ int main()
 whole match: caaa  
 ```  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="eq"></a>  operator&lt;=  
  Less than or equal comparison for various objects.  
   
 ```  
@@ -411,7 +411,7 @@ sub <= "aab" == true
 sub <= 'a' == false  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Equal comparison for various objects.  
   
 ```  
@@ -536,7 +536,7 @@ sub == "aab" == false
 sub == 'a' == false  
 ```  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Greater than comparison for various objects.  
   
 ```  
@@ -644,7 +644,7 @@ sub > "aab" == false
 sub > 'a' == true  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="eq"></a>  operator&gt;=  
  Greater than or equal comparison for various objects.  
   
 ```  

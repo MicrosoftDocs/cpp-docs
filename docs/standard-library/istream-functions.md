@@ -55,12 +55,12 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
  The stream.  
   
 ### Remarks  
- The manipulator extracts and discards any elements `ch` for which [use_facet](../standard-library/basic-filebuf-class.md#basic_filebuf__open)< **ctype**\< **Elem**> >( [getloc](../standard-library/ios-base-class.md#ios_base__getloc)). **is**( **ctype**\< **Elem**>:: **space**, **ch**) is true.  
+ The manipulator extracts and discards any elements `ch` for which [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **Elem**> >( [getloc](../standard-library/ios-base-class.md#getloc)). **is**( **ctype**\< **Elem**>:: **space**, **ch**) is true.  
   
- The function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **eofbit**) if it encounters end of file while extracting elements. It returns `_Istr`.  
+ The function calls [setstate](../standard-library/basic-ios-class.md#setstate)( **eofbit**) if it encounters end of file while extracting elements. It returns `_Istr`.  
   
 ### Example  
-  See [operator>>](../standard-library/istream-operators.md#operator_gt__gt_) for an example of using `ws`.  
+  See [operator>>](../standard-library/istream-operators.md#gt) for an example of using `ws`.  
   
 ## See Also  
  [\<istream>](../standard-library/istream.md)

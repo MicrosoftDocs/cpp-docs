@@ -16,10 +16,10 @@ manager: "ghogen"
 # &lt;bitset&gt; operators
 ||||  
 |-|-|-|  
-|[operator&amp;](#operator_amp_)|[operator&gt;&gt;](#operator_gt__gt_)|[operator&lt;&lt;](#operator_lt__lt_)|  
-|[operator^](#operator_xor)|[operator|](#operator_or)|  
+|[operator&amp;](#op_amp)|[operator&gt;&gt;](#gt)|[operator&lt;&lt;](#lt)|  
+|[operator^](#op_xor)|[operator|](#op_or)|  
   
-##  <a name="operator_amp_"></a>  operator&amp;  
+##  <a name="op_amp"></a>  operator&amp;  
  Performs a bitwise `AND` between two bitsets.  
   
 ```  
@@ -68,7 +68,7 @@ bitset 2: 0011
 bitset 3: 0001  
 ```  
   
-##  <a name="operator_lt__lt_"></a>  operator&lt;&lt;  
+##  <a name="lt"></a>  operator&lt;&lt;  
  Inserts a text representation of the bit sequence into the output stream.  
   
 ```  
@@ -123,7 +123,7 @@ int main( )
 }  
 ```  
   
-##  <a name="operator_gt__gt_"></a>  operator&gt;&gt;  
+##  <a name="gt"></a>  operator&gt;&gt;  
  Reads a string of bit characters into a bitset.  
   
 ```  
@@ -206,7 +206,7 @@ int main()
 }  
 ```  
   
-##  <a name="operator_xor"></a>  operator^  
+##  <a name="op_xor"></a>  operator^  
  Performs a bitwise `EXCLUSIVE-OR` between two bitsets.  
   
 ```  
@@ -255,7 +255,7 @@ bitset 2: 0011
 bitset 3: 0110  
 ```  
   
-##  <a name="operator_or"></a>  operator|  
+##  <a name="op_or"></a>  operator|  
  Performs a bitwise `OR` between two bitsets.  
   
 ```  

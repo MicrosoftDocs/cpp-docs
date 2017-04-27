@@ -53,7 +53,7 @@ void swap(
  The second container to swap.  
   
 ### Remarks  
- The template function executes `left.`[unordered_map::swap](../standard-library/unordered-map-class.md#unordered_map__swap)`(right)`.  
+ The template function executes `left.`[unordered_map::swap](../standard-library/unordered-map-class.md#swap)`(right)`.  
   
 ### Example  
   
@@ -144,7 +144,7 @@ void swap(
  The second container to swap.  
   
 ### Remarks  
- The template function executes `left.`[unordered_multimap::swap](../standard-library/unordered-multimap-class.md#unordered_multimap__swap)`(right)`.  
+ The template function executes `left.`[unordered_multimap::swap](../standard-library/unordered-multimap-class.md#swap)`(right)`.  
   
 ### Example  
   

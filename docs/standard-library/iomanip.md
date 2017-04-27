@@ -48,7 +48,7 @@ Include the `iostreams` standard header `<iomanip>` to define several manipulato
 ```  
   
 ## Remarks  
- Each of these manipulators returns an unspecified type, called **T1** through **T10**, that overloads both `basic_istream`\<**Elem**, **Tr**>`::`[operator>>](../standard-library/istream-operators.md#operator_gt__gt_) and `basic_ostream`\<**Elem**, **Tr**>`::`[operator<<](../standard-library/ostream-operators.md#operator_lt__lt_).  
+ Each of these manipulators returns an unspecified type, called **T1** through **T10**, that overloads both `basic_istream`\<**Elem**, **Tr**>`::`[operator>>](../standard-library/istream-operators.md#gt) and `basic_ostream`\<**Elem**, **Tr**>`::`[operator<<](../standard-library/ostream-operators.md#lt).  
   
 ### Manipulators  
   

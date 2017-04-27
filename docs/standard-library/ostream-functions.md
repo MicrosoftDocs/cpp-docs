@@ -38,7 +38,7 @@ template class<Elem, Tr> basic_ostream<Elem, Tr>& endl(basic_ostream<Elem, Tr>& 
  An object of type `basic_ostream`.  
   
 ### Remarks  
- The manipulator calls `Ostr`**.**[put](../standard-library/basic-ostream-class.md#basic_ostream__put)( `Ostr`**.** [widen](../standard-library/basic-ios-class.md#basic_ios__widen)( **'\n'**)), and then calls `Ostr`**.**[flush](../standard-library/basic-ostream-class.md#basic_ostream__flush). It returns `Ostr`.  
+ The manipulator calls `Ostr`**.**[put](../standard-library/basic-ostream-class.md#put)( `Ostr`**.** [widen](../standard-library/basic-ios-class.md#widen)( **'\n'**)), and then calls `Ostr`**.**[flush](../standard-library/basic-ostream-class.md#flush). It returns `Ostr`.  
   
 ### Example  
   
@@ -79,7 +79,7 @@ template class<Elem, Tr> basic_ostream<Elem, Tr>& ends(basic_ostream<Elem, Tr>& 
  An object of type `basic_ostream`.  
   
 ### Remarks  
- The manipulator calls `Ostr`**.**[put](../standard-library/basic-ostream-class.md#basic_ostream__put)( `Elem`( **'\0'**)). It returns `Ostr.`  
+ The manipulator calls `Ostr`**.**[put](../standard-library/basic-ostream-class.md#put)( `Elem`( **'\0'**)). It returns `Ostr.`  
   
 ### Example  
   
@@ -122,7 +122,7 @@ template class<Elem, Tr> basic_ostream<Elem, Tr>& flush(basic_ostream<Elem, Tr>&
  An object of type `basic_ostream`.  
   
 ### Remarks  
- The manipulator calls `Ostr`**.**[flush](../standard-library/basic-ostream-class.md#basic_ostream__flush). It returns `Ostr`.  
+ The manipulator calls `Ostr`**.**[flush](../standard-library/basic-ostream-class.md#flush). It returns `Ostr`.  
   
 ### Example  
   

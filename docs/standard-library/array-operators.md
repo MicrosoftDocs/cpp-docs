@@ -18,10 +18,10 @@ The \<array> header includes these `array` non-member comparison template functi
   
 ||||  
 |-|-|-|  
-|[operator!=](#operator_neq)|[operator&gt;](#operator_gt_)|[operator&gt;=](#operator_gt__eq)|  
-|[operator&lt;](#operator_lt_)|[operator&lt;=](#operator_lt__eq)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Array comparison, not equal.  
   
 ```  
@@ -91,7 +91,7 @@ false
 true  
 ```  
   
-##  <a name="operator_lt_"></a>  operator&lt;  
+##  <a name="op_lt"></a>  operator&lt;  
  Array comparison, less than.  
   
 ```  
@@ -162,7 +162,7 @@ false
 true  
 ```  
   
-##  <a name="operator_lt__eq"></a>  operator&lt;=  
+##  <a name="eq"></a>  operator&lt;=  
  Array comparison, less than or equal.  
   
 ```  
@@ -233,7 +233,7 @@ true
 false  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Array comparison, equal.  
   
 ```  
@@ -304,7 +304,7 @@ true
 false  
 ```  
   
-##  <a name="operator_gt_"></a>  operator&gt;  
+##  <a name="op_gt"></a>  operator&gt;  
  Array comparison, greater than.  
   
 ```  
@@ -375,7 +375,7 @@ false
 true  
 ```  
   
-##  <a name="operator_gt__eq"></a>  operator&gt;=  
+##  <a name="eq"></a>  operator&gt;=  
  Array comparison, greater than or equal.  
   
 ```  

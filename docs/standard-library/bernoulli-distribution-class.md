@@ -76,8 +76,8 @@ The class describes a distribution that produces values of type `bool`, distribu
   
 ||||  
 |-|-|-|  
-|[bernoulli_distribution](#bernoulli_distribution__bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|  
-|`bernoulli_distribution::operator()`||[param_type](#bernoulli_distribution__param_type)|  
+|[bernoulli_distribution](#bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|  
+|`bernoulli_distribution::operator()`||[param_type](#param_type)|  
   
 The property member `p()` returns the currently stored distribution parameter value `p`.  
   
@@ -158,7 +158,7 @@ false :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   
 **Namespace:** std  
   
-##  <a name="bernoulli_distribution__bernoulli_distribution"></a>  bernoulli_distribution::bernoulli_distribution  
+##  <a name="bernoulli_distribution"></a>  bernoulli_distribution::bernoulli_distribution  
 Constructs the distribution.  
   
 ```  
@@ -180,7 +180,7 @@ The first constructor constructs an object whose stored `p` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="bernoulli_distribution__param_type"></a>  bernoulli_distribution::param_type  
+##  <a name="param_type"></a>  bernoulli_distribution::param_type  
 Contains the parameters of the distribution.  
   
 struct param_type {  
