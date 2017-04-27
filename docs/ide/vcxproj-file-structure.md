@@ -36,6 +36,18 @@ translation.priority.ht:
 # .vcxproj and .props file structure
 MSBuild is the default project system in Visual Studio; when you choose **File | New Project** in Visual C++ you are creating an MSBuild project whose settings are stored in an XML project file that has the extension `.vcxproj`. The project file may also import .props files and .targets files where settings can be stored. In most cases, you never need to manually edit the project file, and in fact you should not edit it manually unless you have a good understanding of MSBuild. Whenever possible you should use the Visual Studio property pages to modify project settings. However, in some cases you may need to modify a project file or property sheet manually. For those scenarios, this article contains basic information about the structure of the file. 
 
+**Important:**
+If you choose to manually edit a .vcxproj file, be aware of these facts:
+1. The structure of the file must follow a prescribed form. For more information, see [A guide to .vcxproj and .props file structure]((https://blogs.msdn.microsoft.com/visualstudio/2010/05/14/a-guide-to-vcxproj-and-props-file-structure/)).
+2. Visual Studio does not support wildcards in CICompile includes properties. For example, this is not supported:
+```xaml
+<ClCompile Include="*.cpp"/>
+```
+3. Visual Studio does not support macros in project item paths. For example, this is not supported:
+```xaml
+<ClCompile Include="$(IntDir)\generated.cpp"/>
+```
+
 ## .vcxproj file elements
 You can inspect the contents of a .vcxproj file by using any text or XML editor. You can view it in Visual Studio by right-clicking on the project in Solution Explorer, choosing **Unload project** and then choosing **Edit Foo.vcxproj**. 
 
@@ -170,7 +182,8 @@ In the IDE, when you set the UseOfAtl property in the general property page, it 
    <ItemGroup />
  </Project>
 ```
-
+To make your own property sheet, copy one of the .props files in the VCTargets folder and modify it for your purposes. For Visual Studio 2017 Enterprise edition, the default VCTargets path is `%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets`. 
 
 ## See Also
-[Working with project properties](working-with-project-properties.md)
+[Working with Project Properties](working-with-project-properties.md)
+[Property Page XML Files](property-page-xml-files.md)

@@ -265,7 +265,7 @@ You can also set either option on the msbuild command line by using the /p: opti
 ```cmd
 > msbuild myproject.sln /p:ForceImportBeforeCppTargets="C:\sources\my_props.props" 
 > msbuild myproject.sln /p:ForceImportAfterCppTargets="C:\sources\my_target.targets" 
-```
+```  
 
 Overriding properties and targets in this way is equivalent to adding the following imports to all .vcxproj files in the solution:
 
@@ -273,17 +273,9 @@ Overriding properties and targets in this way is equivalent to adding the follow
 <Import Project=="C:\sources\my_props.props" />
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 <Import Project==" C:\sources\my_target.targets"" />
-```
-## Manually editing .vcxproj files
-If choose to manually edit a .vcxproj file, be aware of these facts:
-1. The structure of the file must follow a prescribed form. For more information, see [A guide to .vcxproj and .props file structure]((https://blogs.msdn.microsoft.com/visualstudio/2010/05/14/a-guide-to-vcxproj-and-props-file-structure/)).
-2. Visual Studio does not support wildcards in CICompile includes properties. For example, this is not supported:
-```xaml
- <ClCompile Include="*.cpp"/>
-```
-3. Visual Studio does not support macros in project item paths. For example, this is not supported:
-```xaml
-<ClCompile Include="$(IntDir)\generated.cpp"/>
-```
+```  
+
 ## See Also  
  [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)
+ [.vcxproj and .props file structure](vcxproj-file-structure.md)
+ [Property page XML files](property-page-xml-files.md)
