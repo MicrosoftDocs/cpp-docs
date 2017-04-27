@@ -16,8 +16,8 @@ manager: "ghogen"
 |-|-|-|  
 |[operator!=](#op_neq)|[operator%](#op_mod)|[operator&amp;](#op_amp)|  
 |[operator&amp;&amp;](#amp)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#gt)|  
-|[operator&gt;=](#eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#lt)|  
-|[operator&lt;=](#eq)|[operator*](#op_star)|[operator+](#op_add)|  
+|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#lt)|  
+|[operator&lt;=](#op_lt_eq)|[operator*](#op_star)|[operator+](#op_add)|  
 |[operator-](#operator-)|[operator/](#op_div)|[operator==](#op_eq_eq)|  
 |[operator^](#op_xor)|[operator|](#op_or)|[operator||](#op_lor)|  
   
@@ -447,7 +447,7 @@ The element-by-element result of the greater than comparison test is the
 *\  
 ```  
   
-##  <a name="eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Tests whether the elements of one valarray are greater than or equal to the elements of an equally sized valarray or whether all the elements of a valarray are greater than or equal to or less than or equal to a specified value.  
   
 ```  
@@ -704,7 +704,7 @@ The element-by-element result of the less-than comparson test is the
 *\  
 ```  
   
-##  <a name="eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Tests whether the elements of one valarray are less than or equal to the elements of an equally sized valarray or whether all the elements of a valarray are greater than or equal to or less than or equal to a specified value.  
   
 ```  

@@ -72,7 +72,7 @@ basic_istream<Elem, Tr>& operator>>(
  The stream  
   
 ### Remarks  
- The `basic_istream` class also defines several extraction operators. For more information, see [basic_istream::operator>>](../standard-library/basic-istream-class.md#op_gt__gt).  
+ The `basic_istream` class also defines several extraction operators. For more information, see [basic_istream::operator>>](../standard-library/basic-istream-class.md#op_gt_gt).  
   
  The template function:  
   

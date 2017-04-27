@@ -178,8 +178,8 @@ int main()
 |[operator!=](#op_neq)|Tests two `checked_array_iterator`s for inequality.|  
 |[operator<](#op_lt)|Tests if the `checked_array_iterator` on the left side of the operator is less than the `checked_array_iterator` on the right side.|  
 |[operator>](#op_gt)|Tests if the `checked_array_iterator` on the left side of the operator is greater than the `checked_array_iterator` on the right side.|  
-|[operator<=](#op_lt__eq)|Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.|  
-|[operator>=](#op_gt__eq)|Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.|  
+|[operator<=](#op_lt_eq)|Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.|  
+|[operator>=](#op_gt_eq)|Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.|  
 |[operator*](#op_star)|Returns the element that a `checked_array_iterator` addresses.|  
 |[operator->](#operator-_gt)|Returns a pointer to the element addressed by the `checked_array_iterator`.|  
 |[operator++](#op_add_add)|Increments the `checked_array_iterator` to the next element.|  
@@ -486,7 +486,7 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
   
  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
-##  <a name="eq"></a>  checked_array_iterator::operator&lt;=  
+##  <a name="lt_eq"></a>  checked_array_iterator::operator&lt;=  
  Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.  
   
 ```
@@ -498,11 +498,11 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
  The `checked_array_iterator` to compare against.  
   
 ### Remarks  
- See [checked_array_iterator::operator&gt;=](#op_gt__eq) for a code sample.  
+ See [checked_array_iterator::operator&gt;=](#op_gt_eq) for a code sample.  
   
  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).  
   
-##  <a name="eq"></a>  checked_array_iterator::operator&gt;=  
+##  <a name="gt_eq"></a>  checked_array_iterator::operator&gt;=  
  Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.  
   
 ```

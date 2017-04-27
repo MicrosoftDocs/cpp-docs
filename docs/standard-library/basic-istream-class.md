@@ -44,7 +44,7 @@ class basic_istream : virtual public basic_ios<Elem, Tr>
 ```  
   
 ## Remarks  
- Most of the member functions that overload [operator>>](#op_gt__gt) are formatted input functions. They follow the pattern:  
+ Most of the member functions that overload [operator>>](#op_gt_gt) are formatted input functions. They follow the pattern:  
   
 ```cpp  
 iostate state = goodbit;
@@ -149,7 +149,7 @@ setstate(state);
   
 |||  
 |-|-|  
-|[operator>>](#op_gt__gt)|Calls a function on the input stream or reads formatted data from the input stream.|  
+|[operator>>](#op_gt_gt)|Calls a function on the input stream or reads formatted data from the input stream.|  
 |[operator=](#op_eq)|Assigns the `basic_istream` on the right side of the operator to this object. This is a move assignment involving an `rvalue` reference that does not leave a copy behind.|  
   
 ## Requirements  

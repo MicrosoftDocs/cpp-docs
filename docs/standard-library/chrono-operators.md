@@ -15,7 +15,7 @@ manager: "ghogen"
 ||||  
 |-|-|-|  
 |[operator modulo](#op_modulo)|[operator!=](#op_neq)|[operator&gt;](#op_gt)|  
-|[operator&gt;=](#eq)|[operator&lt;](#op_lt)|[operator&lt;=](#eq)|  
+|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|  
 |[operator*](#op_star)|[operator+](#op_add)|[operator-](#operator-)|  
 |[operator/](#op_div)|[operator==](#op_eq_eq)|  
   
@@ -231,7 +231,7 @@ constexpr bool operator<(
   
  The second function returns `true` if `Left` precedes `Right`. Otherwise, the function returns `false`.  
   
-##  <a name="eq"></a>  operator&lt;=  
+##  <a name="lt_eq"></a>  operator&lt;=  
  Determines whether one [duration](../standard-library/duration-class.md) or [time_point](../standard-library/time-point-class.md) object is less than or equal to another `duration` or `time_point` object.  
   
 ```  
@@ -308,7 +308,7 @@ constexpr bool operator>(
 ### Return Value  
  Each function returns `Right < Left`.  
   
-##  <a name="eq"></a>  operator&gt;=  
+##  <a name="gt_eq"></a>  operator&gt;=  
  Determines whether one [duration](../standard-library/duration-class.md) or [time_point](../standard-library/time-point-class.md) object is greater than or equal to another `duration` or `time_point` object.  
   
 ```  

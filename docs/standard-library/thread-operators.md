@@ -14,11 +14,11 @@ manager: "ghogen"
 # &lt;thread&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#eq)|  
-|[operator&lt;](#op_lt)|[operator&lt;&lt;](#lt)|[operator&lt;=](#eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;&lt;](#lt)|[operator&lt;=](#op_lt_eq)|  
 |[operator==](#op_eq_eq)|  
   
-##  <a name="eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Determines whether one `thread::id` object is greater than or equal to another.  
   
 ```cpp  
@@ -62,7 +62,7 @@ bool operator> (
 ### Remarks  
  This function does not throw any exceptions.  
   
-##  <a name="eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Determines whether one `thread::id` object is less than or equal to another.  
   
 ```cpp  

@@ -14,8 +14,8 @@ manager: "ghogen"
 # &lt;map&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#eq)|  
-|[operator&lt;](#op_lt)|[operator&lt;=](#eq)|[operator==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
 |[operator!= (multimap)](#op_neq_multimap)|[operator&gt;](#op_gt_multimap)|[operator&gt;=](#eq_multimap)|  
 |[operator&lt;](#op_lt_multimap)|[operator&lt;=](#eq_multimap)|[operator==](#op_eq_eq_multimap)|  
   
@@ -139,7 +139,7 @@ The map m1 is not less than the map m3.
 *\  
 ```  
   
-##  <a name="eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Tests if the map object on the left side of the operator is less than or equal to the map object on the right side.  
   
 ```
@@ -323,7 +323,7 @@ The map m1 is greater than the map m3.
 *\  
 ```  
   
-##  <a name="eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Tests if the map object on the left side of the operator is greater than or equal to the map object on the right side.  
   
 ```

@@ -133,7 +133,7 @@ The set s1 is not less than the set s3.
 *\  
 ```  
   
-##  <a name="eq"></a>  operator&lt;= (set)  
+##  <a name="op_lt_eq"></a>  operator&lt;= (set)  
  Tests if the set object on the left side of the operator is less than or equal to the set object on the right side.  
   
 ```
@@ -311,7 +311,7 @@ The set s1 is greater than the set s3.
 *\  
 ```  
   
-##  <a name="eq"></a>  operator&gt;= (set)  
+##  <a name="op_gt_eq"></a>  operator&gt;= (set)  
  Tests if the set object on the left side of the operator is greater than or equal to the set object on the right side.  
   
 ```

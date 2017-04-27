@@ -80,7 +80,7 @@ class duration <duration<Rep, Period1>, Period2>;
 |[duration::operator--](#operator--)|Decrements the stored tick count.|  
 |[duration::operator=](#op_eq)|Reduces the stored tick count modulo a specified value.|  
 |[duration::operator*=](#op_star_eq)|Multiplies the stored tick count by a specified value.|  
-|[duration::operator/=](#op__eq)|Divides the stored tick count by the tick count of a specified `duration` object.|  
+|[duration::operator/=](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|  
 |[duration::operator+](#op_add)|Returns `*this`.|  
 |[duration::operator++](#op_add_add)|Increments the stored tick count.|  
 |[duration::operator+=](#op_add_eq)|Adds the tick count of a specified `duration` object to the stored tick count.|  
@@ -212,7 +212,7 @@ duration& operator*=(const rep& Mult);
 ### Return Value  
  The `duration` object after the multiplication is performed.  
   
-##  <a name="eq"></a>  duration::operator/=  
+##  <a name="op_div_eq"></a>  duration::operator/=  
  Divides the stored tick count by a specified value.  
   
 ```  

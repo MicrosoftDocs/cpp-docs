@@ -84,15 +84,15 @@ The template class describes an object that controls a sequence of elements of t
 |-|-|  
 |[operator!](#op_not)|A unary operator that obtains the logical `NOT` values of each element in a `valarray`.|  
 |[operator%=](#op_mod_eq)|Obtains the remainder of dividing the elements of an array element-wise either by a specified `valarray` or by a value of the element type.|  
-|[operator&=](#op_amp__eq)|Obtains the bitwise `AND` of elements in an array either with the corresponding elements in a specified `valarray` or with a value of the element type.|  
-|[operator>>=](#op_gt__gt__eq)|Right-shifts the bits for each element of a `valarray` operand a specified number of positions or by an element-wise amount specified by a second `valarray`.|  
-|[operator<<=](#op_lt_lt__eq)|Left-shifts the bits for each element of a `valarray` operand a specified number of positions or by an element-wise amount specified by a second `valarray`.|  
+|[operator&=](#op_amp_eq)|Obtains the bitwise `AND` of elements in an array either with the corresponding elements in a specified `valarray` or with a value of the element type.|  
+|[operator>>=](#op_gt_gt_eq)|Right-shifts the bits for each element of a `valarray` operand a specified number of positions or by an element-wise amount specified by a second `valarray`.|  
+|[operator<<=](#op_lt_lt_eq)|Left-shifts the bits for each element of a `valarray` operand a specified number of positions or by an element-wise amount specified by a second `valarray`.|  
 |[operator*=](#op_star_eq)|Multiplies the elements of a specified `valarray` or a value of the element type, element-wise, to an operand `valarray`.|  
 |[operator+](#op_add)|A unary operator that applies a plus to each element in a `valarray`.|  
 |[operator+=](#op_add_eq)|Adds the elements of a specified `valarray` or a value of the element type, element-wise, to an operand `valarray`.|  
 |[operator-](#operator-)|A unary operator that applies a minus to each element in a `valarray`.|  
 |[operator-=](#operator-_eq)|Subtracts the elements of a specified `valarray` or a value of the element type, element-wise, from an operand `valarray`.|  
-|[operator/=](#op__eq)|Divides an operand `valarray` element-wise by the elements of a specified `valarray` or a value of the element type.|  
+|[operator/=](#op_div_eq)|Divides an operand `valarray` element-wise by the elements of a specified `valarray` or a value of the element type.|  
 |[operator=](#op_eq)|Assigns elements to a `valarray` whose values are specified either directly or as part of some other `valarray` or by a `slice_array`, `gslice_array`, `mask_array`, or `indirect_array`.|  
 |[operator&#91;&#93;](#op_at)|Returns a reference to an element or its value at specified index or a specified subset.|  
 |[operator^=](#op_xor_eq)|Obtains the element-wise exclusive logical or operator ( `XOR`) of an array with either a specified valarray or a value of the element type.|  
@@ -479,7 +479,7 @@ The remainders from the element-by-element division is the
 *\  
 ```  
   
-##  <a name="eq"></a>  valarray::operator&amp;=  
+##  <a name="and_eq"></a>  valarray::operator&amp;=  
  Obtains the bitwise **AND** of elements in an array either with the corresponding elements in a specified valarray or with a value of the element type.  
   
 ```  
@@ -546,7 +546,7 @@ The element-by-element result of the logical AND operator&= is the
 *\  
 ```  
   
-##  <a name="eq"></a>  valarray::operator&gt;&gt;=  
+##  <a name="op_gt_gt_eq"></a>  valarray::operator&gt;&gt;=  
  Right-shifts the bits for each element of a valarray operand a specified number of positions or by an element-wise amount specified by a second valarray.  
   
 ```  
@@ -611,7 +611,7 @@ The element-by-element result of the right shift is the
 *\  
 ```  
   
-##  <a name="eq"></a>  valarray::operator&lt;&lt;=  
+##  <a name="op_lt_lt_eq"></a>  valarray::operator&lt;&lt;=  
  Left-shifts the bits for each element of a valarray operand a specified number of positions or by an element-wise amount specified by a second valarray.  
   
 ```  
@@ -961,7 +961,7 @@ The element-by-element result of the difference is the
 *\  
 ```  
   
-##  <a name="eq"></a>  valarray::operator/=  
+##  <a name="op_div_eq"></a>  valarray::operator/=  
  Divides an operand valarray element-wise by the elements of a specified valarray or a value of the element type.  
   
 ```  

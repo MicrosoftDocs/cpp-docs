@@ -14,8 +14,8 @@ manager: "ghogen"
 # &lt;utility&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#eq)|  
-|[operator&lt;](#op_lt)|[operator&lt;=](#eq)|[operator==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
 ##  <a name="op_neq"></a>  operator!=  
  Tests if the pair object on the left side of the operator is not equal to the pair object on the right side.  
@@ -217,7 +217,7 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.  
 ```  
   
-##  <a name="eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Tests if the pair object on the left side of the operator is less than or equal to the pair object on the right side.  
   
 ```  
@@ -381,7 +381,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.  
 ```  
   
-##  <a name="eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Tests if the pair object on the left side of the operator is greater than or equal to the pair object on the right side.  
   
 ```  

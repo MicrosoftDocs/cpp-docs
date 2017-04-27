@@ -14,8 +14,8 @@ manager: "ghogen"
 # &lt;iterator&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#eq)|  
-|[operator&lt;](#op_lt)|[operator&lt;=](#eq)|[operator+](#op_add)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator+](#op_add)|  
 |[operator-](#operator-)|[operator==](#op_eq_eq)|  
   
 ##  <a name="op_neq"></a>  operator!=  
@@ -296,7 +296,7 @@ The iterator rVPOS2 now points to the second element
 The iterator rVPOS1 is less than the iterator rVPOS2.  
 ```  
   
-##  <a name="eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Tests if the iterator object on the left side of the operator is less than or equal to the iterator object on the right side.  
   
 ```  
@@ -472,7 +472,7 @@ The iterator rVPOS1 now points to the second element
 The iterator rVPOS1 is greater than the iterator rVPOS2.  
 ```  
   
-##  <a name="eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.  
   
 ```  
