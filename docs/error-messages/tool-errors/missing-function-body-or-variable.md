@@ -49,7 +49,7 @@ int main() {
 ```  
   
 ## Example  
- In C++, make sure that you include the implementation of a specific function for a class and not just a prototype in the class definition. If you are defining the class outside of the header file, be sure to include the class name before the function (`Classname``::``memberfunction`).  
+ In C++, make sure that you include the implementation of a specific function for a class and not just a prototype in the class definition. If you are defining the class outside of the header file, be sure to include the class name before the function (`Classname::memberfunction`).  
   
 ```  
 // LNK2019_MFBV_2.cpp  
