@@ -355,6 +355,7 @@
 ## [Compiler Error C2276](compiler-error-c2276.md)
 ## [Compiler Error C2277](compiler-error-c2277.md)
 ## [Compiler Error C2279](compiler-error-c2279.md)
+## [Compiler Error C2280](compiler-error-c2280.md)
 ## [Compiler Error C2283](compiler-error-c2283.md)
 ## [Compiler Error C2285](compiler-error-c2285.md)
 ## [Compiler Error C2286](compiler-error-c2286.md)
