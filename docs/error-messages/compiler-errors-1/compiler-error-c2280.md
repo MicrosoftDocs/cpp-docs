@@ -82,22 +82,21 @@ struct A {
   
 ## Example: Reference and const data members  
   
-A `const` or reference type data member causes the compiler to declare a `deleted` copy constructor and assignment operator. To fix this issue, explicitly declare the required functions.  
+A `const` or reference type data member causes the compiler to declare a `deleted` copy assignment operator. Once initialized, these members can't be assigned to. To fix this issue, we recommend you change your logic to remove the copy assignment operations that cause the error.  
   
 ```cpp  
 // C2280_ref.cpp
 // compile with: cl /c C2280_ref.cpp
-int k = 42;
+extern int k;
 struct A {
     A();
-	int& ri = k; // reference data member
-    // causes implicit assignment operator to be deleted.
-    // To fix, declare it explicitly:
-    // A& operator=(const A& ra) { this->ri = ra.ri; return *this; };
+	int& ri = k; // a const or reference data member causes 
+    // implicit copy assignment operator to be deleted.
 };
 
 void f() {
     A a1, a2;
+    // To fix, consider removing this assignment.
     a2 = a1;    // C2280
 }
 ```  
@@ -164,7 +163,7 @@ int main() {
   
 Versions of the compiler before Visual Studio 2015 Update 2 were non-conforming and allowed a derived class to call special member functions of indirectly-derived `private virtual` base classes. The compiler now issues compiler error C2280 when such a call is made.  
   
-In this example, class `top` indirectly derives from private virtual `base`. In conforming code, this makes the members of `base` inaccessible to `top`; an object of type `top` can't be instantiated or destroyed. To fix this issue in code that relied on the old compiler behavior, change the intermediate class to use `protected virtual` derivation, or change the `top` class to use direct derivation:  
+In this example, class `top` indirectly derives from private virtual `base`. In conforming code, this makes the members of `base` inaccessible to `top`; an object of type `top` can't be default constructed or destroyed. To fix this issue in code that relied on the old compiler behavior, change the intermediate class to use `protected virtual` derivation, or change the `top` class to use direct derivation:  
 
 ```cpp  
 // C2280_indirect.cpp
