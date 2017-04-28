@@ -19,7 +19,7 @@ manager: "ghogen"
 ||||  
 |-|-|-|  
 |[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
-|[operator&lt;](#op_lt)|[operator&lt;&lt;](#lt)|[operator&lt;=](#op_lt_eq)|  
+|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|[operator&lt;=](#op_lt_eq)|  
 |[operator==](#op_eq_eq)|  
   
 ##  <a name="op_neq"></a>  operator!=  
@@ -347,7 +347,7 @@ bool operator>(
  `Ty2`  
  The type controlled by the right shared pointer.  
   
-##  <a name="lt"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
 Writes the shared pointer to the stream.  
   
 ```  

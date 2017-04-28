@@ -14,7 +14,7 @@ manager: "ghogen"
 # &lt;complex&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#op_neq)|[operator&gt;&gt;](#gt)|[operator&lt;&lt;](#lt)|  
+|[operator!=](#op_neq)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|  
 |[operator*](#op_star)|[operator+](#op_add)|[operator-](#operator-)|  
 |[operator/](#op_div)|[operator==](#op_eq_eq)|  
   
@@ -639,7 +639,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.  
 ```  
   
-##  <a name="lt"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
  Inserts a complex number specified into the output stream.  
   
 ```   
@@ -833,7 +833,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.  
 ```  
   
-##  <a name="gt"></a>  operator&gt;&gt;  
+##  <a name="op_gt_gt"></a>  operator&gt;&gt;  
  Extracts a complex value from the input stream.  
   
 ```  

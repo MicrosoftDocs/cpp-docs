@@ -16,7 +16,7 @@ manager: "ghogen"
 # &lt;bitset&gt; operators
 ||||  
 |-|-|-|  
-|[operator&amp;](#op_amp)|[operator&gt;&gt;](#gt)|[operator&lt;&lt;](#lt)|  
+|[operator&amp;](#op_amp)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|  
 |[operator^](#op_xor)|[operator|](#op_or)|  
   
 ##  <a name="op_amp"></a>  operator&amp;  
@@ -68,7 +68,7 @@ bitset 2: 0011
 bitset 3: 0001  
 ```  
   
-##  <a name="lt"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
  Inserts a text representation of the bit sequence into the output stream.  
   
 ```  
@@ -76,8 +76,7 @@ bitset 3: 0001
 template <class CharType, class Traits, size_t N>  
 basic_ostream<CharType, Traits>& operator<<(
     basic_ostream<CharType, Traits>& ostr,  
-    const bitset<N>& 
-    right);
+    const bitset<N>& right);
 ```  
   
 ### Parameters  
@@ -123,7 +122,7 @@ int main( )
 }  
 ```  
   
-##  <a name="gt"></a>  operator&gt;&gt;  
+##  <a name="op_gt_gt"></a>  operator&gt;&gt;  
  Reads a string of bit characters into a bitset.  
   
 ```  

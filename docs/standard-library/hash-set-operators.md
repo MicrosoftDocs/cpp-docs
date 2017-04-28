@@ -14,8 +14,8 @@ manager: "ghogen"
 # &lt;hash_set&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#op_neq)|[operator!= (hash_multiset)](#neq_hash_multiset)|[operator==](#op_eq_eq)|  
-|[operator== (hash_multiset)](#eq_eq_hash_multiset)|  
+|[operator!=](#op_neq)|[operator!= (hash_multiset)](#op_neq_hash_multiset)|[operator==](#op_eq_eq)|  
+|[operator== (hash_multiset)](#op_eq_eq_hash_multiset)|  
   
 ##  <a name="op_neq"></a>  operator!=  
   
@@ -41,7 +41,7 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 ### Remarks  
  The comparison between hash_set objects is based on a pairwise comparison between their elements. Two hash_sets are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+ Members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are in the [stdext Namespace](../standard-library/stdext-namespace.md).
   
 ### Example  
   

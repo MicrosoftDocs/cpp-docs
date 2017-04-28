@@ -16,9 +16,9 @@ manager: "ghogen"
 # &lt;ostream&gt; operators
 ||  
 |-|  
-|[operator&lt;&lt;](#lt)|  
+|[operator&lt;&lt;](#op_lt_lt)|  
   
-##  <a name="lt"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
  Writes various types to the stream.  
   
 ```

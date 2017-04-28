@@ -14,8 +14,8 @@ manager: "ghogen"
 # &lt;string&gt; operators
 ||||  
 |-|-|-|  
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#gt)|  
-|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#lt)|  
+|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#op_gt_gt)|  
+|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|  
 |[operator&lt;=](#op_lt_eq)|[operator+](#op_add)|[operator==](#op_eq_eq)|  
   
 ##  <a name="op_add"></a>  operator+  
@@ -513,7 +513,7 @@ The string s1 is less than or equal to the string s3.
 The string s2 is greater than the string s3.  
 ```  
   
-##  <a name="lt"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
  A template function that writes a string into the output stream.  
   
 ```  
@@ -734,7 +734,7 @@ The string s3 is greater than or equal to the string s1.
 The string s2 is greater than or equal to the string s3.  
 ```  
   
-##  <a name="gt"></a>  operator&gt;&gt;  
+##  <a name="op_gt_gt"></a>  operator&gt;&gt;  
  A template function that reads a string from an input stream.  
   
 ```  

@@ -56,8 +56,8 @@ translation.priority.mt:
   
 |Hash_set version|Hash_multiset version|Description|  
 |-----------------------|----------------------------|-----------------|  
-|[operator!= (hash_set)](../standard-library/hash-set-operators.md#op_neq)|[operator!= (hash_multiset)](../standard-library/hash-set-operators.md#neq_hash_multiset)|Tests if the hash_set or hash_multiset object on the left side of the operator is not equal to the hash_set or hash_multiset object on the right side.|  
-|[operator== (hash_set)](../standard-library/hash-set-operators.md#eq_eq)|[operator== (hash_multiset)](../standard-library/hash-set-operators.md#eq_eq_hash_multiset)|Tests if the hash_set or hash_multiset object on the left side of the operator is equal to the hash_set or hash_multiset object on the right side.|  
+|[operator!= (hash_set)](../standard-library/hash-set-operators.md#op_neq)|[operator!= (hash_multiset)](../standard-library/hash-set-operators.md#op_neq)|Tests if the hash_set or hash_multiset object on the left side of the operator is not equal to the hash_set or hash_multiset object on the right side.|  
+|[operator== (hash_set)](../standard-library/hash-set-operators.md#op_eq_eq)|[operator== (hash_multiset)](../standard-library/hash-set-operators.md#op_eq_eq)|Tests if the hash_set or hash_multiset object on the left side of the operator is equal to the hash_set or hash_multiset object on the right side.|  
   
 ### Specialized Template Functions  
   

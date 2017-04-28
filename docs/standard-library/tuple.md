@@ -58,9 +58,9 @@ Defines a template `tuple` whose instances hold objects of varying types.
 |[operator==](../standard-library/tuple-operators.md#op_eq_eq)|Comparison of `tuple` objects, equal|  
 |[operator!=](../standard-library/tuple-operators.md#op_neq)|Comparison of `tuple` objects, not equal|  
 |[operator<](../standard-library/tuple-operators.md#op_lt)|Comparison of `tuple` objects, less than|  
-|[operator<=](../standard-library/tuple-operators.md#eq)|Comparison of `tuple` objects, less than or equal|  
+|[operator<=](../standard-library/tuple-operators.md#op_lt_eq)|Comparison of `tuple` objects, less than or equal|  
 |[operator>](../standard-library/tuple-operators.md#op_gt)|Comparison of `tuple` objects, greater than|  
-|[operator>=](../standard-library/tuple-operators.md#eq)|Comparison of `tuple` objects, greater than or equal|  
+|[operator>=](../standard-library/tuple-operators.md#op_gt_eq)|Comparison of `tuple` objects, greater than or equal|  
   
 ### Functions  
   

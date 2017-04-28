@@ -15,8 +15,8 @@ manager: "ghogen"
 ||||  
 |-|-|-|  
 |[operator!=](#op_neq)|[operator%](#op_mod)|[operator&amp;](#op_amp)|  
-|[operator&amp;&amp;](#amp)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#gt)|  
-|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#lt)|  
+|[operator&amp;&amp;](#op_amp)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#op_gt_gt)|  
+|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|  
 |[operator&lt;=](#op_lt_eq)|[operator*](#op_star)|[operator+](#op_add)|  
 |[operator-](#operator-)|[operator/](#op_div)|[operator==](#op_eq_eq)|  
 |[operator^](#op_xor)|[operator|](#op_or)|[operator||](#op_lor)|  
@@ -277,7 +277,7 @@ The element-by-element result of the bitwise operator & is the
 *\  
 ```  
   
-##  <a name="amp"></a>  operator&amp;&amp;  
+##  <a name="op_amp_amp"></a>  operator&amp;&amp;  
  Obtains the logical **AND** between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the valarray's element type.  
   
 ```  
@@ -534,7 +534,7 @@ The element-by-element result of the greater than or equal test is the
 *\  
 ```  
   
-##  <a name="gt"></a>  operator&gt;&gt;  
+##  <a name="op_gt_gt"></a>  operator&gt;&gt;  
  Right-shifts the bits for each element of a valarray a specified number of positions or by an element-wise amount specified by a second valarray.  
   
 ```  
@@ -791,7 +791,7 @@ The element-by-element result of the less than or equal test is the
 *\  
 ```  
   
-##  <a name="lt"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
  Left shifts the bits for each element of a valarray a specified number of positions or by an element-wise amount specified by a second valarray.  
   
 ```  

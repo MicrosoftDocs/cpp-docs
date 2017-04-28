@@ -16,8 +16,8 @@ manager: "ghogen"
 |-|-|-|  
 |[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|  
 |[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
-|[operator!= (multimap)](#op_neq_multimap)|[operator&gt;](#op_gt_multimap)|[operator&gt;=](#eq_multimap)|  
-|[operator&lt;](#op_lt_multimap)|[operator&lt;=](#eq_multimap)|[operator==](#op_eq_eq_multimap)|  
+|[operator!= (multimap)](#op_neq_multimap)|[operator&gt;](#op_gt_multimap)|[operator&gt;=](#op_gt_eq_multimap)|  
+|[operator&lt;](#op_lt_multimap)|[operator&lt;=](#op_lt_eq_multimap)|[operator==](#op_eq_eq_multimap)|  
   
 ##  <a name="op_neq"></a>  operator!=  
  Tests if the map object on the left side of the operator is not equal to the map object on the right side.  
