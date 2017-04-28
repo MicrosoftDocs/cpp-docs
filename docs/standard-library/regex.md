@@ -111,7 +111,7 @@ Defines a template class to parse [Regular Expressions (C++)](../standard-librar
 |[operator\<=](../standard-library/regex-operators.md#op_gt_eq)|Comparison of various objects, less than or equal.|  
 |[operator>](../standard-library/regex-operators.md#op_gt)|Comparison of various objects, greater than.|  
 |[operator>=](../standard-library/regex-operators.md#op_gt_eq)|Comparison of various objects, greater than or equal.|  
-|[operator<<](../standard-library/regex-operators.md#lt)|Inserts a `sub_match` in a stream.|  
+|[operator<<](../standard-library/regex-operators.md#op_lt_lt)|Inserts a `sub_match` in a stream.|  
   
 ## See Also  
 [Regular Expressions (C++)](../standard-library/regular-expressions-cpp.md)  

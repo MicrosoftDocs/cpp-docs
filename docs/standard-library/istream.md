@@ -67,7 +67,7 @@ Defines the template class basic_istream, which mediates extractions for the ios
   
 |||  
 |-|-|  
-|[operator>>](../standard-library/istream-operators.md#gt)|Extracts characters and strings from the stream.|  
+|[operator>>](../standard-library/istream-operators.md#op_gt_gt)|Extracts characters and strings from the stream.|  
   
 ### Classes  
   

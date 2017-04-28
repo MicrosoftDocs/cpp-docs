@@ -691,7 +691,7 @@ The multimap m1 is greater than the multimap m3.
 *\  
 ```  
   
-##  <a name="eq_multimap"></a>  operator&gt;=  
+##  <a name="op_gt_eq_multimap"></a>  operator&gt;=  
  Tests if the multimap object on the left side of the operator is greater than or equal to the multimap object on the right side.  
   
 ```

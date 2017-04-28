@@ -242,7 +242,7 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
  A reference to the basic_ostream object.  
   
 ### Remarks  
- The `<ostream>` header also defines several global insertion operators. For more information, see [operator<< (\<ostream>)](../standard-library/ostream-operators.md#lt).  
+ The `<ostream>` header also defines several global insertion operators. For more information, see [operator<<](../standard-library/ostream-operators.md#op_lt_lt).  
   
  The first member function ensures that an expression of the form **ostr << endl** calls [endl](../standard-library/ostream-functions.md#endl)**(ostr)**, and then returns **\*this**. The second and third functions ensure that other manipulators, such as [hex](../standard-library/ios-functions.md#hex), behave similarly. The remaining functions are all formatted output functions.  
   

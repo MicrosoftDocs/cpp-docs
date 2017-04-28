@@ -88,7 +88,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[operator<](../standard-library/memory-operators.md#op_lt)|Tests for one object being less than a second object of a specified class.|  
 |[operator\<=](../standard-library/memory-operators.md#op_gt_eq)|Tests for one object being less than or equal to a second object of a specified class.|  
 |[operator>](../standard-library/memory-operators.md#op_gt)|Tests for one object being greater than a second object of a specified class.|  
-|[operator<<](../standard-library/memory-operators.md#lt)|`shared_ptr` inserter.|  
+|[operator<<](../standard-library/memory-operators.md#op_lt_lt)|`shared_ptr` inserter.|  
   
 ### Classes  
   

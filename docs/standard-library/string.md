@@ -73,10 +73,10 @@ Defines the container template class `basic_string` and various supporting templ
 |[operator==](../standard-library/string-operators.md#op_eq_eq)|Tests if the string object on the left side of the operator is equal to the string object on the right side.|  
 |[operator<](../standard-library/string-operators.md#op_lt)|Tests if the string object on the left side of the operator is less than to the string object on the right side.|  
 |[operator<=](../standard-library/string-operators.md#op_lt_eq)|Tests if the string object on the left side of the operator is less than or equal to the string object on the right side.|  
-|[operator<\<](../standard-library/string-operators.md#lt)|A template function that inserts a string into the output stream.|  
+|[operator<\<](../standard-library/string-operators.md#op_lt_lt)|A template function that inserts a string into the output stream.|  
 |[operator>](../standard-library/string-operators.md#op_gt)|Tests if the string object on the left side of the operator is greater than to the string object on the right side.|  
 |[operator>=](../standard-library/string-operators.md#op_gt_eq)|Tests if the string object on the left side of the operator is greater than or equal to the string object on the right side.|  
-|[operator>>](../standard-library/string-operators.md#gt)|A template function that extracts a string from the input stream.|  
+|[operator>>](../standard-library/string-operators.md#op_gt_gt)|A template function that extracts a string from the input stream.|  
   
 ### Specialized Template Functions  
   

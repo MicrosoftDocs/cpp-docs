@@ -15,7 +15,7 @@ manager: "ghogen"
 ||||  
 |-|-|-|  
 |[operator!=](#op_neq)|[operator%](#op_mod)|[operator&amp;](#op_amp)|  
-|[operator&amp;&amp;](#op_amp)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#op_gt_gt)|  
+|[operator&amp;&amp;](#op_amp_amp)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#op_gt_gt)|  
 |[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|  
 |[operator&lt;=](#op_lt_eq)|[operator*](#op_star)|[operator+](#op_add)|  
 |[operator-](#operator-)|[operator/](#op_div)|[operator==](#op_eq_eq)|  

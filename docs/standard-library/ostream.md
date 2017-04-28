@@ -67,7 +67,7 @@ Defines the template class [basic_ostream](../standard-library/basic-ostream-cla
   
 |||  
 |-|-|  
-|[operator<<](../standard-library/ostream-operators.md#lt)|Writes various types to the stream.|  
+|[operator<<](../standard-library/ostream-operators.md#op_lt_lt)|Writes various types to the stream.|  
   
 ### Classes  
   

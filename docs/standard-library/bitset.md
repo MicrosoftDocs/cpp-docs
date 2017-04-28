@@ -53,8 +53,8 @@ Defines the template class bitset and two supporting template functions for repr
 |||  
 |-|-|  
 |[operator&](../standard-library/bitset-operators.md#op_amp)|Performs a bitwise AND between two bitsets.|  
-|[operator<\<](../standard-library/bitset-operators.md#lt)|Inserts a text representation of the bit sequence into the standard output stream.|  
-|[operator>>](../standard-library/bitset-operators.md#gt)|Inserts a text representation of the bit sequence into the standard input stream.|  
+|[operator<\<](../standard-library/bitset-operators.md#op_lt_lt)|Inserts a text representation of the bit sequence into the standard output stream.|  
+|[operator>>](../standard-library/bitset-operators.md#op_gt_gt)|Inserts a text representation of the bit sequence into the standard input stream.|  
 |[operator^](../standard-library/bitset-operators.md#op_xor)|Performs a bitwise EXCLUSIVE-OR between two bitsets.|  
 |[operator&#124;](../standard-library/bitset-operators.md#op_or)|Performs a bitwise OR between two bitsets.|  
   

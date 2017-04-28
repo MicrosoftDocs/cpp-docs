@@ -60,7 +60,7 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
  The function calls [setstate](../standard-library/basic-ios-class.md#setstate)( **eofbit**) if it encounters end of file while extracting elements. It returns `_Istr`.  
   
 ### Example  
-  See [operator>>](../standard-library/istream-operators.md#gt) for an example of using `ws`.  
+  See [operator>>](../standard-library/istream-operators.md#op_gt_gt) for an example of using `ws`.  
   
 ## See Also  
  [\<istream>](../standard-library/istream.md)

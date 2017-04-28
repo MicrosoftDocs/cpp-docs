@@ -231,7 +231,7 @@ constexpr bool operator<(
   
  The second function returns `true` if `Left` precedes `Right`. Otherwise, the function returns `false`.  
   
-##  <a name="lt_eq"></a>  operator&lt;=  
+##  <a name="op_lt_eq"></a>  operator&lt;=  
  Determines whether one [duration](../standard-library/duration-class.md) or [time_point](../standard-library/time-point-class.md) object is less than or equal to another `duration` or `time_point` object.  
   
 ```  
@@ -308,7 +308,7 @@ constexpr bool operator>(
 ### Return Value  
  Each function returns `Right < Left`.  
   
-##  <a name="gt_eq"></a>  operator&gt;=  
+##  <a name="op_gt_eq"></a>  operator&gt;=  
  Determines whether one [duration](../standard-library/duration-class.md) or [time_point](../standard-library/time-point-class.md) object is greater than or equal to another `duration` or `time_point` object.  
   
 ```  
