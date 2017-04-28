@@ -40,8 +40,9 @@ The only scenarios in which you need to understand the internal workings of thes
 
 First, let's open the property pages for a project (right click on the project node in **Solution Explorer** and choose Properties):
    
+![Visual C++ Project Properties](media/cpp-property-page-2017.png)
 
-Each node under **Configuration Properties** is called a Rule. A Rule sometimes represents a single tool like the compiler, but in general the term refers to something that has properties, that executes and that may produce some output. Each rule is populated from an xml file in the VCTargets folder. For example, the C/C++ rule that is above is populated by `cl.xml'.
+Each node under **Configuration Properties** is called a Rule. A Rule sometimes represents a single tool like the compiler, but in general the term refers to something that has properties, that executes and that may produce some output. Each rule is populated from an xml file in the VCTargets folder. For example, the C/C++ rule that is shown above is populated by `cl.xml'.
 
 As shown above, each Rule has a set of properties which are organized into categories. Each sub-node under a Rule represents a category. For example, the Optimization node under C/C++ contains all the optimization-related properties of the compiler tool. The properties and their values themselves are rendered in a grid format on the right pane.
 
