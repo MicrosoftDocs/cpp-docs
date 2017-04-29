@@ -82,7 +82,7 @@ struct A {
   
 ## Example: Reference and const data members  
   
-A `const` or reference type data member causes the compiler to declare a `deleted` copy assignment operator. Once initialized, these members can't be assigned to. To fix this issue, we recommend you change your logic to remove the assignment operations that cause the error.  
+A `const` or reference type data member causes the compiler to declare a `deleted` copy assignment operator. Once initialized, these members can't be assigned to, so a simple copy or move can't work. To fix this issue, we recommend you change your logic to remove the assignment operations that cause the error.  
   
 ```cpp  
 // C2280_ref.cpp
