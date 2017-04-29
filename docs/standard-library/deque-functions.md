@@ -35,7 +35,7 @@ void swap(
  An object of type `deque`.  
   
 ### Example  
- See the example for [deque::swap](../standard-library/deque-class.md#deque__swap).  
+ See the example for [deque::swap](../standard-library/deque-class.md#swap).  
   
 ## See Also  
  [\<deque>](../standard-library/deque.md)

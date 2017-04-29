@@ -27,7 +27,7 @@ extern const std::nothrow_t nothrow;
  The object is used as a function argument to match the parameter type [std::nothrow_t](../standard-library/nothrow-t-structure.md).  
   
 ### Example  
-  See [operator new](../standard-library/new-operators.md#operator_new) and [operator new&#91;&#93;](../standard-library/new-operators.md#operator_new_arr) for examples of how `std::nothrow_t` is used as a function parameter.  
+  See [operator new](../standard-library/new-operators.md#op_new) and [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr) for examples of how `std::nothrow_t` is used as a function parameter.  
   
 ##  <a name="set_new_handler"></a>  set_new_handler  
  Installs a user function that is to be called when `operator new` fails in its attempt to allocate memory.  
@@ -44,7 +44,7 @@ new_handler set_new_handler(new_handler Pnew) throw();
  0 on the first call and the previous `new_handler` on subsequent calls.  
   
 ### Remarks  
- The function stores `Pnew` in a static [new handler](../standard-library/new-typedefs.md#new_handler) pointer that it maintains, then returns the value previously stored in the pointer. The new handler is used by [operator new](../standard-library/new-operators.md#operator_new)( **size_t**).  
+ The function stores `Pnew` in a static [new handler](../standard-library/new-typedefs.md#new_handler) pointer that it maintains, then returns the value previously stored in the pointer. The new handler is used by [operator new](../standard-library/new-operators.md#op_new)( **size_t**).  
   
 ### Example  
   

@@ -75,8 +75,8 @@ The template class describes an inclusive-exclusive distribution that produces v
   
 ||||  
 |-|-|-|  
-|[uniform_real_distribution](#uniform_real_distribution__uniform_real_distribution)|`uniform_real_distribution::a`|`uniform_real_distribution::param`|  
-|`uniform_real_distribution::operator()`|`uniform_real_distribution::b`|[param_type](#uniform_real_distribution__param_type)|  
+|[uniform_real_distribution](#uniform_real_distribution)|`uniform_real_distribution::a`|`uniform_real_distribution::param`|  
+|`uniform_real_distribution::operator()`|`uniform_real_distribution::b`|[param_type](#param_type)|  
   
 The property member `a()` returns the currently stored minimum bound of the distribution, while `b()` returns the currently stored maximum bound. For this distribution class, these minimum and maximum values are the same as those returned by the common property functions `min()` and `max()` described in the [\<random>](../standard-library/random.md) topic.  
   
@@ -173,7 +173,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="uniform_real_distribution__uniform_real_distribution"></a>  uniform_real_distribution::uniform_real_distribution  
+##  <a name="uniform_real_distribution"></a>  uniform_real_distribution::uniform_real_distribution  
 Constructs the distribution.  
   
 ```  
@@ -198,7 +198,7 @@ The first constructor constructs an object whose stored `a` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="uniform_real_distribution__param_type"></a>  uniform_real_distribution::param_type  
+##  <a name="param_type"></a>  uniform_real_distribution::param_type  
  Stores all the parameters of the distribution.  
   
 ```  

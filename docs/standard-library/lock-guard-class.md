@@ -57,15 +57,15 @@ class lock_guard;
   
 |Name|Description|  
 |----------|-----------------|  
-|[lock_guard](#lock_guard__lock_guard)|Constructs a `lock_guard` object.|  
-|[lock_guard::~lock_guard Destructor](#lock_guard___dtorlock_guard_destructor)|Unlocks the `mutex` that was passed to the constructor.|  
+|[lock_guard](#lock_guard)|Constructs a `lock_guard` object.|  
+|[lock_guard::~lock_guard Destructor](#dtorlock_guard_destructor)|Unlocks the `mutex` that was passed to the constructor.|  
   
 ## Requirements  
  **Header:** \<mutex>  
   
  **Namespace:** std  
   
-##  <a name="lock_guard__lock_guard"></a>  lock_guard::lock_guard Constructor  
+##  <a name="lock_guard"></a>  lock_guard::lock_guard Constructor  
  Constructs a `lock_guard` object.  
   
 ```cpp  
@@ -83,7 +83,7 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
   
  The second constructor does not lock `Mtx`. `Mtx` must be locked when this constructor is called. The constructor throws no exceptions.  
   
-##  <a name="lock_guard___dtorlock_guard_destructor"></a>  lock_guard::~lock_guard Destructor  
+##  <a name="dtorlock_guard_destructor"></a>  lock_guard::~lock_guard Destructor  
  Unlocks the `mutex` that was passed to the constructor.  
   
 ```

@@ -224,7 +224,7 @@ std::cout <<extracted;   //   This
   
  This behavior can be overcome manually, but to make string round-tripping more convenient, C++14 adds the `std::quoted` stream manipulator in `<iomanip>`. Upon insertion, `quoted()` surrounds the string with a delimiter (double quote ' " ' by default) and upon extraction manipulates the stream to extract all characters until the final delimiter is encountered. Any embedded quotes are escaped with an escape character ('\\\\' by default).  
   
- The delimiters are present only in the stream object; they are not present in the extracted string but they are present in the string returned by [basic_stringstream::str](../standard-library/basic-stringstream-class.md#basic_stringstream__str)().  
+ The delimiters are present only in the stream object; they are not present in the extracted string but they are present in the string returned by [basic_stringstream::str](../standard-library/basic-stringstream-class.md#str)().  
   
  The whitespace behavior of the insertion and extraction operations is independent of how a string is represented in code, so the quoted operator is useful regardless of whether the input string is a raw string literal or a regular string. The input string, whatever its format, can have embedded quotes, line breaks, tabs, and so on and all these will be preserved by the quoted() manipulator.  
   

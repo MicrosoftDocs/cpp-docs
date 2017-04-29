@@ -51,31 +51,31 @@ class future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[future](#future__future)|Constructs a `future` object.|  
+|[future](#future)|Constructs a `future` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[get](#future__get)|Retrieves the result that is stored in the associated asynchronous state.|  
-|[share](#future__share)|Converts the object to a `shared_future`.|  
-|[valid](#future__valid)|Specifies whether the object is not empty.|  
-|[wait](#future__wait)|Blocks the current thread until the associated asynchronous state is ready.|  
-|[wait_for](#future__wait_for)|Blocks until the associated asynchronous state is ready or until the specified time has elapsed.|  
-|[wait_until](#future__wait_until)|Blocks until the associated asynchronous state is ready or until a specified point in time.|  
+|[get](#get)|Retrieves the result that is stored in the associated asynchronous state.|  
+|[share](#share)|Converts the object to a `shared_future`.|  
+|[valid](#valid)|Specifies whether the object is not empty.|  
+|[wait](#wait)|Blocks the current thread until the associated asynchronous state is ready.|  
+|[wait_for](#wait_for)|Blocks until the associated asynchronous state is ready or until the specified time has elapsed.|  
+|[wait_until](#wait_until)|Blocks until the associated asynchronous state is ready or until a specified point in time.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[future::operator=](#future__operator_eq)|Transfers the associated asynchronous state from a specified object.|  
+|[future::operator=](#op_eq)|Transfers the associated asynchronous state from a specified object.|  
   
 ## Requirements  
  **Header:** \<future>  
   
  **Namespace:** std  
   
-##  <a name="future__future"></a>  future::future Constructor  
+##  <a name="future"></a>  future::future Constructor  
  Constructs a `future` object.  
   
 ```
@@ -92,7 +92,7 @@ future(future&& Other) noexcept;
   
  The second constructor constructs a `future` object and transfers the associated asynchronous state from `Other`. `Other` no longer has an associated asynchronous state.  
   
-##  <a name="future__get"></a>  future::get  
+##  <a name="get"></a>  future::get  
  Retrieves the result that is stored in the associated asynchronous state.  
   
 ```
@@ -111,7 +111,7 @@ Ty get();
   
  In other specializations, the method moves its return value from the stored value. Therefore, call this method only once.  
   
-##  <a name="future__operator_eq"></a>  future::operator=  
+##  <a name="op_eq"></a>  future::operator=  
  Transfers an associated asynchronous state from a specified object.  
   
 ```
@@ -128,7 +128,7 @@ future& operator=(future&& Right) noexcept;
 ### Remarks  
  After the transfer, `Right` no longer has an associated asynchronous state.  
   
-##  <a name="future__share"></a>  future::share  
+##  <a name="share"></a>  future::share  
  Converts the object to a [shared_future](../standard-library/shared-future-class.md) object.  
   
 ```
@@ -138,7 +138,7 @@ shared_future<Ty> share();
 ### Return Value  
  `shared_future(move(*this))`  
   
-##  <a name="future__valid"></a>  future::valid  
+##  <a name="valid"></a>  future::valid  
  Specifies whether the object has an associated asynchronous state.  
   
 ```
@@ -148,7 +148,7 @@ bool valid() noexcept;
 ### Return Value  
  `true` if the object has an associated asynchronous state; otherwise, `false`.  
   
-##  <a name="future__wait"></a>  future::wait  
+##  <a name="wait"></a>  future::wait  
  Blocks the current thread until the associated asynchronous state is *ready*.  
   
 ```cpp  
@@ -158,7 +158,7 @@ void wait() const;
 ### Remarks  
  An associated asynchronous state is *ready* only if its asynchronous provider has stored a return value or stored an exception.  
   
-##  <a name="future__wait_for"></a>  future::wait_for  
+##  <a name="wait_for"></a>  future::wait_for  
  Blocks the current thread until the associated asynchronous state is *ready* or until a specified time interval has elapsed.  
   
 ```
@@ -176,7 +176,7 @@ future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 ### Remarks  
  An associated asynchronous state is ready only if its asynchronous provider has stored a return value or stored an exception.  
   
-##  <a name="future__wait_until"></a>  future::wait_until  
+##  <a name="wait_until"></a>  future::wait_until  
  Blocks the current thread until the associated asynchronous state is *ready* or until after a specified time point.  
   
 ```cpp  

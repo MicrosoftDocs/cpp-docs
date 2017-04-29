@@ -12,12 +12,11 @@ caps.latest.revision: 13
 manager: "ghogen"
 ---
 # &lt;hash_map&gt; operators
-||||  
-|-|-|-|  
-|[operator!=](#operator_neq)|[operator!= (hash_map)](#operator_neq__hash_map_)|[operator==](#operator_eq_eq)|  
-|[operator== (hash_map)](#operator_eq_eq__hash_map_)|  
+|||  
+|-|-|  
+|[operator!=](#op_neq)|[operator!=](#op_neq)|
   
-##  <a name="operator_neq__hash_map_"></a>  operator!= (hash_map)  
+##  <a name="op_neq"></a>  operator!=  
   
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).  
@@ -41,7 +40,7 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 ### Remarks  
  The comparison between hash_map objects is based on a pairwise comparison of their elements. Two hash_maps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+ Members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files in the [ stdext Namespace](../standard-library/stdext-namespace.md).  
   
 ### Example  
   
@@ -83,7 +82,7 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="operator_eq_eq__hash_map_"></a>  operator== (hash_map)  
+##  <a name="op_eq_eq"></a>  operator== 
   
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).  
@@ -106,9 +105,7 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
   
 ### Remarks  
  The comparison between hash_map objects is based on a pairwise comparison of their elements. Two hash_maps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
-  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
-  
+    
 ### Example  
   
 ```cpp  
@@ -149,7 +146,7 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
   
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_multimap Class](../standard-library/unordered-multimap-class.md).  
@@ -172,9 +169,7 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
   
 ### Remarks  
  The comparison between hash_multimap objects is based on a pairwise comparison of their elements. Two hash_multimaps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
-  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
-  
+   
 ### Example  
   
 ```cpp  
@@ -215,7 +210,7 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
   
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_multimap Class](../standard-library/unordered-multimap-class.md).  
@@ -238,8 +233,6 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
   
 ### Remarks  
  The comparison between hash_multimap objects is based on a pairwise comparison of their elements. Two hash_multimaps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
-  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
 ### Example  
   

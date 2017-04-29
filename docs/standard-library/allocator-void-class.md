@@ -60,13 +60,13 @@ class allocator<void> {
 ## Remarks  
  The class explicitly specializes template class [allocator](../standard-library/allocator-class.md) for type *void.* Its constructors and assignment operator behave the same as for the template class, but it defines only the following types:  
   
-- [const_pointer](../standard-library/allocator-class.md#allocator__const_pointer).  
+- [const_pointer](../standard-library/allocator-class.md#const_pointer).  
   
-- [pointer](../standard-library/allocator-class.md#allocator__pointer).  
+- [pointer](../standard-library/allocator-class.md#pointer).  
   
-- [value_type](../standard-library/allocator-class.md#allocator__value_type).  
+- [value_type](../standard-library/allocator-class.md#value_type).  
   
-- [rebind](../standard-library/allocator-class.md#allocator__rebind), a nested template class.  
+- [rebind](../standard-library/allocator-class.md#rebind), a nested template class.  
   
 ## Requirements  
  **Header:** \<memory>  
