@@ -86,8 +86,8 @@ public:
   
 ||||  
 |-|-|-|  
-|[piecewise_linear_distribution](#piecewise_linear_distribution__piecewise_linear_distribution)|`piecewise_linear_distribution::intervals`|`piecewise_linear_distribution::param`|  
-|`piecewise_linear_distribution::operator()`|`piecewise_linear_distribution::densities`|[param_type](#piecewise_linear_distribution__param_type)|  
+|[piecewise_linear_distribution](#piecewise_linear_distribution)|`piecewise_linear_distribution::intervals`|`piecewise_linear_distribution::param`|  
+|`piecewise_linear_distribution::operator()`|`piecewise_linear_distribution::densities`|[param_type](#param_type)|  
   
 The property function `intervals()` returns a `vector<result_type>` with the set of stored intervals of the distribution.  
   
@@ -213,7 +213,7 @@ Distribution for 100 samples:
   
  **Namespace:** std  
   
-##  <a name="piecewise_linear_distribution__piecewise_linear_distribution"></a>  piecewise_linear_distribution::piecewise_linear_distribution  
+##  <a name="piecewise_linear_distribution"></a>  piecewise_linear_distribution::piecewise_linear_distribution  
  Constructs the distribution.  
   
 ```  
@@ -318,7 +318,7 @@ explicit piecewise_linear_distribution(const param_type& parm);
 ```  
 constructs a distribution object using `parm` as the stored parameter structure.  
   
-##  <a name="piecewise_linear_distribution__param_type"></a>  piecewise_linear_distribution::param_type  
+##  <a name="param_type"></a>  piecewise_linear_distribution::param_type  
 Stores all the parameters of the distribution.  
   
 ```  
@@ -340,7 +340,7 @@ struct param_type {
 ```  
 
 ### Parameters  
-See constructor parameters for [piecewise_linear_distribution](#piecewise_linear_distribution__piecewise_linear_distribution).  
+See constructor parameters for [piecewise_linear_distribution](#piecewise_linear_distribution).  
   
 ### Remarks  
  **Precondition:** `xmin < xmax`  

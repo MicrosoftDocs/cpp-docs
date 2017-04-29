@@ -112,37 +112,37 @@ public:
   
 |||  
 |-|-|  
-|[function](#function_)|Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.|  
+|[function](#function)|Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[result_type](#function__result_type)|The return type of the stored callable object.|  
+|[result_type](#result_type)|The return type of the stored callable object.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[assign](#function__assign)|Assigns a callable object to this function object.|  
-|[swap](#function__swap)|Swap two callable objects.|  
-|[target](#function__target)|Tests if stored callable object is callable as specified.|  
-|[target_type](#function__target_type)|Gets type information on the callable object.|  
+|[assign](#assign)|Assigns a callable object to this function object.|  
+|[swap](#swap)|Swap two callable objects.|  
+|[target](#target)|Tests if stored callable object is callable as specified.|  
+|[target_type](#target_type)|Gets type information on the callable object.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[function::operator unspecified](#function__operator_unspecified)|Tests if stored callable object exists.|  
-|[function::operator()](#function__operator__)|Calls a callable object.|  
-|[function::operator=](#function__operator_eq)|Replaces the stored callable object.|  
+|[function::operator unspecified](#op_unspecified)|Tests if stored callable object exists.|  
+|[function::operator()](#op_call)|Calls a callable object.|  
+|[function::operator=](#op_eq)|Replaces the stored callable object.|  
   
 ## Requirements  
  **Header:** \<functional>  
   
  **Namespace:** std  
   
-##  <a name="function__assign"></a>  function::assign  
+##  <a name="assign"></a>  function::assign  
  Assigns a callable object to this function object.  
   
 ```  
@@ -170,7 +170,7 @@ template <class Fx, class Alloc>
 ### Remarks  
  The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object `Ax`.  
   
-##  <a name="function_"></a>  function::function  
+##  <a name="function"></a>  function::function  
  Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.  
   
 ```  
@@ -284,7 +284,7 @@ f is non-empty (correct).
 g is empty (correct).  
 ```  
   
-##  <a name="function__operator_unspecified"></a>  function::operator unspecified  
+##  <a name="op_unspecified"></a>  function::operator unspecified  
  Tests if stored callable object exists.  
   
 ```  
@@ -324,7 +324,7 @@ not empty == false
 not empty == true  
 ```  
   
-##  <a name="function__operator__"></a>  function::operator()  
+##  <a name="op_call"></a>  function::operator()  
  Calls a callable object.  
   
 ```  
@@ -372,7 +372,7 @@ empty == false
 val == -3  
 ```  
   
-##  <a name="function__operator_eq"></a>  function::operator=  
+##  <a name="op_eq"></a>  function::operator=  
  Replaces the stored callable object.  
   
 ```  
@@ -451,7 +451,7 @@ empty == false
 val == -3  
 ```  
   
-##  <a name="function__result_type"></a>  function::result_type  
+##  <a name="result_type"></a>  function::result_type  
  The return type of the stored callable object.  
   
 ```  
@@ -491,7 +491,7 @@ empty == false
 val == -3  
 ```  
   
-##  <a name="function__swap"></a>  function::swap  
+##  <a name="swap"></a>  function::swap  
  Swap two callable objects.  
   
 ```  
@@ -547,7 +547,7 @@ empty == false
 val == -3  
 ```  
   
-##  <a name="function__target"></a>  function::target  
+##  <a name="target"></a>  function::target  
  Tests if stored callable object is callable as specified.  
   
 ```  
@@ -606,7 +606,7 @@ empty == true
 no target == true  
 ```  
   
-##  <a name="function__target_type"></a>  function::target_type  
+##  <a name="target_type"></a>  function::target_type  
  Gets type information on the callable object.  
   
 ```  

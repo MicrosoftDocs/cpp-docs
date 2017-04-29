@@ -80,30 +80,30 @@ int main(int argc, char **argv)
   
 |||  
 |-|-|  
-|[basic_ofstream](#basic_ofstream__basic_ofstream)|Creates an object of type `basic_ofstream`.|  
+|[basic_ofstream](#basic_ofstream)|Creates an object of type `basic_ofstream`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[close](#basic_ofstream__close)|Closes a file.|  
-|[is_open](#basic_ofstream__is_open)|Determines if a file is open.|  
-|[open](#basic_ofstream__open)|Opens a file.|  
-|[rdbuf](#basic_ofstream__rdbuf)|Returns the address of the stored stream buffer.|  
-|[swap](#basic_ofstream__swap)|Exchange the contents of this `basic_ofstream` for the contents of the provided `basic_ofstream`.|  
+|[close](#close)|Closes a file.|  
+|[is_open](#is_open)|Determines if a file is open.|  
+|[open](#open)|Opens a file.|  
+|[rdbuf](#rdbuf)|Returns the address of the stored stream buffer.|  
+|[swap](#swap)|Exchange the contents of this `basic_ofstream` for the contents of the provided `basic_ofstream`.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator=](#basic_ofstream__operator_eq)|Assigns the content of this stream object. This is a move assignment involving an `rvalue reference` that does not leave a copy behind.|  
+|[operator=](#op_eq)|Assigns the content of this stream object. This is a move assignment involving an `rvalue reference` that does not leave a copy behind.|  
   
 ## Requirements  
  **Header:** \<fstream>  
   
  **Namespace:** std  
   
-##  <a name="basic_ofstream__basic_ofstream"></a>  basic_ofstream::basic_ofstream  
+##  <a name="basic_ofstream"></a>  basic_ofstream::basic_ofstream  
  Creates an object of type `basic_ofstream`.  
   
 ```
@@ -128,7 +128,7 @@ basic_ofstream(
  The name of the file to open.  
   
  `_Mode`  
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#ios_base__openmode).  
+ One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).  
   
  `_Prot`  
  The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).  
@@ -139,7 +139,7 @@ basic_ofstream(
 ### Remarks  
  The first constructor initializes the base class by calling [basic_ostream](../standard-library/basic-ostream-class.md)( **sb**), where **sb** is the stored object of class [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>. It also initializes **sb** by calling `basic_filebuf`< `Elem`, `Tr`>.  
   
- The second and third constructors initializes the base class by calling `basic_ostream`( **sb**). It also initializes **sb** by calling `basic_filebuf`< `Elem`, `Tr`> and then **sb**. [open](../standard-library/basic-filebuf-class.md#basic_filebuf__open)( `_Filename`, `_Mode` &#124; `ios_base::out`). If the latter function returns a null pointer, the constructor calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**).  
+ The second and third constructors initializes the base class by calling `basic_ostream`( **sb**). It also initializes **sb** by calling `basic_filebuf`< `Elem`, `Tr`> and then **sb**. [open](../standard-library/basic-filebuf-class.md#open)( `_Filename`, `_Mode` &#124; `ios_base::out`). If the latter function returns a null pointer, the constructor calls [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**).  
   
  The fourth constructor is a copy function. It initializes the object with the contents of `right`, treated as an rvalue reference.  
   
@@ -164,7 +164,7 @@ int main(int argc, char **argv)
 }  
 ```  
   
-##  <a name="basic_ofstream__close"></a>  basic_ofstream::close  
+##  <a name="close"></a>  basic_ofstream::close  
  Closes a file.  
   
 ```
@@ -172,12 +172,12 @@ void close();
 ```  
   
 ### Remarks  
- The member function calls [rdbuf](../standard-library/basic-ifstream-class.md#basic_ifstream__rdbuf)**->**[close](../standard-library/basic-filebuf-class.md#basic_filebuf__close).  
+ The member function calls [rdbuf](../standard-library/basic-ifstream-class.md#rdbuf)**->**[close](../standard-library/basic-filebuf-class.md#close).  
   
 ### Example  
-  See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#basic_filebuf__close) for an example that uses **close**.  
+  See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses **close**.  
   
-##  <a name="basic_ofstream__is_open"></a>  basic_ofstream::is_open  
+##  <a name="is_open"></a>  basic_ofstream::is_open  
  Indicates whether a file is open.  
   
 ```
@@ -188,7 +188,7 @@ bool is_open() const;
  `true` if the file is open, `false` otherwise.  
   
 ### Remarks  
- The member function returns [rdbuf](#basic_ofstream__rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#basic_filebuf__is_open).  
+ The member function returns [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open).  
   
 ### Example  
   
@@ -212,7 +212,7 @@ int main( )
 }  
 ```  
   
-##  <a name="basic_ofstream__open"></a>  basic_ofstream::open  
+##  <a name="open"></a>  basic_ofstream::open  
  Opens a file.  
   
 ```
@@ -240,18 +240,18 @@ void open(
  The name of the file to open.  
   
  `_Mode`  
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#ios_base__openmode).  
+ One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).  
   
  `_Prot`  
  The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).  
   
 ### Remarks  
- The member function calls [rdbuf](#basic_ofstream__rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#basic_filebuf__open)(_ *Filename*, `_Mode` &#124; `ios_base::out`). If that function returns a null pointer, the function calls [setstate](../standard-library/basic-ios-class.md#basic_ios__setstate)( **failbit**).  
+ The member function calls [rdbuf](#rdbuf) **->** [open](../standard-library/basic-filebuf-class.md#open)(_ *Filename*, `_Mode` &#124; `ios_base::out`). If that function returns a null pointer, the function calls [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**).  
   
 ### Example  
-  See [basic_filebuf::open](../standard-library/basic-filebuf-class.md#basic_filebuf__open) for an example that uses **open**.  
+  See [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) for an example that uses **open**.  
   
-##  <a name="basic_ofstream__operator_eq"></a>  basic_ofstream::operator=  
+##  <a name="op_eq"></a>  basic_ofstream::operator=  
  Assigns the content of this stream object. This is a move assignment involving an `rvalue reference` that does not leave a copy behind.  
   
 ```
@@ -268,7 +268,7 @@ basic_ofstream& operator=(basic_ofstream&& right);
 ### Remarks  
  The member operator replaces the contents of the object by using the contents of `right`, treated as an rvalue reference.  
   
-##  <a name="basic_ofstream__rdbuf"></a>  basic_ofstream::rdbuf  
+##  <a name="rdbuf"></a>  basic_ofstream::rdbuf  
  Returns the address of the stored stream buffer.  
   
 ```
@@ -279,9 +279,9 @@ basic_filebuf<Elem, Tr> *rdbuf() const
  Returns the address of the stored stream buffer.  
   
 ### Example  
-  See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#basic_filebuf__close) for an example that uses `rdbuf`.  
+  See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `rdbuf`.  
   
-##  <a name="basic_ofstream__swap"></a>  basic_ofstream::swap  
+##  <a name="swap"></a>  basic_ofstream::swap  
  Exchanges the contents of two `basic_ofstream` objects.  
   
 ```

@@ -59,21 +59,21 @@ class cache_freelist
   
 |||  
 |-|-|  
-|[cache_freelist](#cache_freelist__cache_freelist)|Constructs an object of type `cache_freelist`.|  
+|[cache_freelist](#cache_freelist)|Constructs an object of type `cache_freelist`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[allocate](#cache_freelist__allocate)|Allocates a block of memory.|  
-|[deallocate](#cache_freelist__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
+|[allocate](#allocate)|Allocates a block of memory.|  
+|[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="cache_freelist__allocate"></a>  cache_freelist::allocate  
+##  <a name="allocate"></a>  cache_freelist::allocate  
  Allocates a block of memory.  
   
 ```
@@ -91,7 +91,7 @@ void *allocate(std::size_t count);
   
 ### Remarks  
   
-##  <a name="cache_freelist__cache_freelist"></a>  cache_freelist::cache_freelist  
+##  <a name="cache_freelist"></a>  cache_freelist::cache_freelist  
  Constructs an object of type `cache_freelist`.  
   
 ```
@@ -100,7 +100,7 @@ cache_freelist();
   
 ### Remarks  
   
-##  <a name="cache_freelist__deallocate"></a>  cache_freelist::deallocate  
+##  <a name="deallocate"></a>  cache_freelist::deallocate  
  Frees a specified number of objects from storage beginning at a specified position.  
   
 ```

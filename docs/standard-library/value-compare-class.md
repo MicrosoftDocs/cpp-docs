@@ -64,7 +64,7 @@ protected:
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
 ## Example  
- See the example for [hash_map::value_comp](../standard-library/hash-map-class.md#hash_map__value_comp) for an example of how to declare and use value_compare.  
+ See the example for [hash_map::value_comp](../standard-library/hash-map-class.md#value_comp) for an example of how to declare and use value_compare.  
   
 ## Requirements  
  **Header:** \<hash_map>  

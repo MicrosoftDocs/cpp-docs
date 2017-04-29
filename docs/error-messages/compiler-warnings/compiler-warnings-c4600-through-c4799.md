@@ -93,6 +93,11 @@ translation.priority.mt:
 # Compiler Warnings C4600 Through C4799
 The articles in this part of the documentation contain information about a subset of the Visual C++ compiler warnings. You can access the information here or, in the Output window in Visual Studio, you can select an error number and then press the F1 key.  
   
+> [!NOTE]
+>  Not every [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] error or warning is documented in MSDN. In many cases, the diagnostic message provides all of the information that's available. If you think an error message needs additional explanation, you can let us know. You can use the feedback form on this page, or go to the menu bar in Visual Studio and choose **Help**, **Report a Bug**, or you can submit a suggestion or bug report on [Microsoft Connect](http://connect.microsoft.com/VisualStudio).  
+  
+You may find additional assistance for errors and warnings on the MSDN public forums. The [Visual C++ Language](http://go.microsoft.com/fwlink/?LinkId=158195) forum is for questions and discussions about the [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] language syntax and compiler. The [Visual C++ General](http://go.microsoft.com/fwlink/?LinkId=158194) forum is for questions about [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] that are not discussed in other forums. You may also find help about errors and warnings on [Stack Overflow](http://stackoverflow.com/).  
+  
 ## In This Section  
   
 |Warning|Message|  

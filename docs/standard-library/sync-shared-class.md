@@ -53,16 +53,16 @@ class sync_shared
   
 |||  
 |-|-|  
-|[allocate](#sync_shared__allocate)|Allocates a block of memory.|  
-|[deallocate](#sync_shared__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
-|[equals](#sync_shared__equals)|Compares two caches for equality.|  
+|[allocate](#allocate)|Allocates a block of memory.|  
+|[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
+|[equals](#equals)|Compares two caches for equality.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="sync_shared__allocate"></a>  sync_shared::allocate  
+##  <a name="allocate"></a>  sync_shared::allocate  
  Allocates a block of memory.  
   
 ```
@@ -81,7 +81,7 @@ void *allocate(std::size_t count);
 ### Remarks  
  The member function locks the mutex, calls `cache.allocate(count)`, unlocks the mutex, and returns the result of the earlier call to `cache.allocate(count)`. `cache` represents the current cache object.  
   
-##  <a name="sync_shared__deallocate"></a>  sync_shared::deallocate  
+##  <a name="deallocate"></a>  sync_shared::deallocate  
  Frees a specified number of objects from storage beginning at a specified position.  
   
 ```
@@ -98,7 +98,7 @@ void deallocate(void* ptr, std::size_t count);
 ### Remarks  
  This member function locks the mutex, calls `cache.deallocate(ptr, count)`, where `cache` represents the cache object, and then unlocks the mutex.  
   
-##  <a name="sync_shared__equals"></a>  sync_shared::equals  
+##  <a name="equals"></a>  sync_shared::equals  
  Compares two caches for equality.  
   
 ```

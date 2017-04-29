@@ -70,9 +70,9 @@ Include the header `<system_error>` to define the exception class `system_error`
   
 |||  
 |-|-|  
-|[operator==](../standard-library/system-error-operators.md#operator_eq_eq)|Tests if the object on the left side of the operator is equal to the object on the right side.|  
-|[operator!=](../standard-library/system-error-operators.md#operator_neq)|Tests if the object on the left side of the operator is not equal to the object on the right side.|  
-|[operator<](../standard-library/system-error-operators.md#operator_lt_)|Tests if an object is less than the object passed in for comparison.|  
+|[operator==](../standard-library/system-error-operators.md#op_eq_eq)|Tests if the object on the left side of the operator is equal to the object on the right side.|  
+|[operator!=](../standard-library/system-error-operators.md#op_neq)|Tests if the object on the left side of the operator is not equal to the object on the right side.|  
+|[operator<](../standard-library/system-error-operators.md#op_lt)|Tests if an object is less than the object passed in for comparison.|  
   
 ### Enumerations  
   

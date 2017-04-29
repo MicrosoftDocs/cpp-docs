@@ -60,34 +60,34 @@ class basic_stringstream : public basic_iostream<Elem, Tr>
   
 |||  
 |-|-|  
-|[basic_stringstream](#basic_stringstream__basic_stringstream)|Constructs an object of type `basic_stringstream`.|  
+|[basic_stringstream](#basic_stringstream)|Constructs an object of type `basic_stringstream`.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[allocator_type](#basic_stringstream__allocator_type)|The type is a synonym for the template parameter `Alloc`.|  
+|[allocator_type](#allocator_type)|The type is a synonym for the template parameter `Alloc`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[rdbuf](#basic_stringstream__rdbuf)|Returns the address of the stored stream buffer of type `pointer` to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>.|  
-|[str](#basic_stringstream__str)|Sets or gets the text in a string buffer without changing the write position.|  
+|[rdbuf](#rdbuf)|Returns the address of the stored stream buffer of type `pointer` to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>.|  
+|[str](#str)|Sets or gets the text in a string buffer without changing the write position.|  
   
 ## Requirements  
  **Header:** \<sstream>  
   
  **Namespace:** std  
   
-##  <a name="basic_stringstream__allocator_type"></a>  basic_stringstream::allocator_type  
+##  <a name="allocator_type"></a>  basic_stringstream::allocator_type  
  The type is a synonym for the template parameter `Alloc`.  
   
 ```  
 typedef Alloc allocator_type;  
 ```  
   
-##  <a name="basic_stringstream__basic_stringstream"></a>  basic_stringstream::basic_stringstream  
+##  <a name="basic_stringstream"></a>  basic_stringstream::basic_stringstream  
  Constructs an object of type `basic_stringstream`.  
   
 ```  
@@ -98,7 +98,7 @@ explicit basic_stringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base::
   
 ### Parameters  
  `_Mode`  
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#ios_base__openmode).  
+ One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).  
   
  `str`  
  An object of type `basic_string`.  
@@ -108,7 +108,7 @@ explicit basic_stringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base::
   
  The second constructor initializes the base class by calling basic_iostream( **sb**). It also initializes **sb** by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(_ *Str*, `_Mode`).  
   
-##  <a name="basic_stringstream__rdbuf"></a>  basic_stringstream::rdbuf  
+##  <a name="rdbuf"></a>  basic_stringstream::rdbuf  
  Returns the address of the stored stream buffer of type **pointer** to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.  
   
 ```  
@@ -119,9 +119,9 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
  The address of the stored stream buffer of type **pointer** to basic_stringbuf< **Elem**, **Tr**, `Alloc`>.  
   
 ### Example  
-  See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#basic_filebuf__close) for an example that uses `rdbuf`.  
+  See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `rdbuf`.  
   
-##  <a name="basic_stringstream__str"></a>  basic_stringstream::str  
+##  <a name="str"></a>  basic_stringstream::str  
  Sets or gets the text in a string buffer without changing the write position.  
   
 ```  
@@ -140,10 +140,10 @@ void str(
  Returns an object of class [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by **\*this**.  
   
 ### Remarks  
- The first member function returns [rdbuf](#basic_stringstream__rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#basic_stringbuf__str). The second member function calls `rdbuf` -> **str**( `_Newstr`).  
+ The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**( `_Newstr`).  
   
 ### Example  
-  See [basic_stringbuf::str](../standard-library/basic-stringbuf-class.md#basic_stringbuf__str) for an example that uses **str**.  
+  See [basic_stringbuf::str](../standard-library/basic-stringbuf-class.md#str) for an example that uses **str**.  
   
 ## See Also  
  [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)   

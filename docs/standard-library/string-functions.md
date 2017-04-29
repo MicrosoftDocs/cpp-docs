@@ -79,18 +79,18 @@ basic_istream<Allocator, Traits>& getline(
   
 -   After the function extracts an element that compares equal to **delim**, in which case the element is neither put back nor appended to the controlled sequence.  
   
--   After the function extracts `str.`[max_size](../standard-library/basic-string-class.md#basic_string__max_size) elements, in which case the internal state flag of `is` is set to `ios_base::failbit`.  
+-   After the function extracts `str.`[max_size](../standard-library/basic-string-class.md#max_size) elements, in which case the internal state flag of `is` is set to `ios_base::failbit`.  
   
 -   Some other error other than those previously listed, in which case the internal state flag of `is` is set to `ios_base::badbit`  
   
- For information about internal state flags, see [ios_base::iostate](../standard-library/ios-base-class.md#ios_base__iostate).  
+ For information about internal state flags, see [ios_base::iostate](../standard-library/ios-base-class.md#iostate).  
   
  If the function extracts no elements, the internal state flag of `is` is set to `ios_base::failbit`. In any case, `getline` returns `is`.  
   
  If an exception is thrown, `is` and `str` are left in a valid state.  
   
 ### Example  
-  The following code demonstrates `getline()` in two modes: first with the default delimiter (newline) and second with a whitespace as delimiter. The end-of-file character (CTRL-Z on the keyboard) is used to control termination of the while loops. This sets the internal state flag of `cin` to `eofbit`, which must be cleared with [basic_ios::clear()](../standard-library/basic-ios-class.md#basic_ios__clear) before the second while loop will work properly.  
+  The following code demonstrates `getline()` in two modes: first with the default delimiter (newline) and second with a whitespace as delimiter. The end-of-file character (CTRL-Z on the keyboard) is used to control termination of the while loops. This sets the internal state flag of `cin` to `eofbit`, which must be cleared with [basic_ios::clear()](../standard-library/basic-ios-class.md#clear) before the second while loop will work properly.  
   
 ```cpp  
 // compile with: /EHsc /W4  
@@ -376,7 +376,7 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
  The other string whose elements are to be swapped with the first string.  
   
 ### Remarks  
- The template function executes the specialized member function *left*.[swap](../standard-library/basic-string-class.md#basic_string__swap)(*right*) for strings, which guarantees constant complexity.  
+ The template function executes the specialized member function *left*.[swap](../standard-library/basic-string-class.md#swap)(*right*) for strings, which guarantees constant complexity.  
   
 ### Example  
   

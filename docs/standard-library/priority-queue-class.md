@@ -54,7 +54,7 @@ class priority_queue
  The type that provides a function object that can compare two element values as sort keys to determine their relative order in the priority_queue. This argument is optional and the binary predicate **less***\<***typename** *Container***::value_type***>* is the default value.  
   
 ## Remarks  
- The elements of class **Type** stipulated in the first template parameter of a queue object are synonymous with [value_type](#priority_queue__value_type) and must match the type of element in the underlying container class **Container** stipulated by the second template parameter. The **Type** must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.  
+ The elements of class **Type** stipulated in the first template parameter of a queue object are synonymous with [value_type](#value_type) and must match the type of element in the underlying container class **Container** stipulated by the second template parameter. The **Type** must be assignable, so that it is possible to copy objects of that type and to assign values to variables of that type.  
   
  The priority_queue orders the sequence it controls by calling a stored function object of class **Traits**. In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense.  
   
@@ -74,32 +74,32 @@ class priority_queue
   
 |||  
 |-|-|  
-|[priority_queue](#priority_queue__priority_queue)|Constructs a `priority_queue` that is empty or that is a copy of a range of a base container object or of other `priority_queue`.|  
+|[priority_queue](#priority_queue)|Constructs a `priority_queue` that is empty or that is a copy of a range of a base container object or of other `priority_queue`.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[container_type](#priority_queue__container_type)|A type that provides the base container to be adapted by a `priority_queue`.|  
-|[size_type](#priority_queue__size_type)|An unsigned integer type that can represent the number of elements in a `priority_queue`.|  
-|[value_type](#priority_queue__value_type)|A type that represents the type of object stored as an element in a `priority_queue`.|  
+|[container_type](#container_type)|A type that provides the base container to be adapted by a `priority_queue`.|  
+|[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `priority_queue`.|  
+|[value_type](#value_type)|A type that represents the type of object stored as an element in a `priority_queue`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[empty](#priority_queue__empty)|Tests if the `priority_queue` is empty.|  
-|[pop](#priority_queue__pop)|Removes the largest element of the `priority_queue` from the top position.|  
-|[push](#priority_queue__push)|Adds an element to the priority queue based on the priority of the element from operator<.|  
-|[size](#priority_queue__size)|Returns the number of elements in the `priority_queue`.|  
-|[top](#priority_queue__top)|Returns a const reference to the largest element at the top of the `priority_queue`.|  
+|[empty](#empty)|Tests if the `priority_queue` is empty.|  
+|[pop](#pop)|Removes the largest element of the `priority_queue` from the top position.|  
+|[push](#push)|Adds an element to the priority queue based on the priority of the element from operator<.|  
+|[size](#size)|Returns the number of elements in the `priority_queue`.|  
+|[top](#top)|Returns a const reference to the largest element at the top of the `priority_queue`.|  
   
 ## Requirements  
  **Header:** \<queue>  
   
  **Namespace:** std  
   
-##  <a name="priority_queue__container_type"></a>  priority_queue::container_type  
+##  <a name="container_type"></a>  priority_queue::container_type  
  A type that provides the base container to be adapted.  
   
 ```  
@@ -112,9 +112,9 @@ typedef Container container_type;
  For more information on `Container`, see the Remarks section of the [priority_queue Class](../standard-library/priority-queue-class.md) topic.  
   
 ### Example  
-  See the example for [priority_queue](#priority_queue__priority_queue) for an example of how to declare and use `container_type`.  
+  See the example for [priority_queue](#priority_queue) for an example of how to declare and use `container_type`.  
   
-##  <a name="priority_queue__empty"></a>  priority_queue::empty  
+##  <a name="empty"></a>  priority_queue::empty  
  Tests if a priority_queue is empty.  
   
 ```  
@@ -158,7 +158,7 @@ The priority_queue q1 is not empty.
 The priority_queue s2 is empty.  
 ```  
   
-##  <a name="priority_queue__pop"></a>  priority_queue::pop  
+##  <a name="pop"></a>  priority_queue::pop  
  Removes the largest element of the priority_queue from the top position.  
   
 ```  
@@ -212,7 +212,7 @@ After a pop, the priority_queue length is 2.
 After a pop, the element at the top of the priority_queue is 20.  
 ```  
   
-##  <a name="priority_queue__priority_queue"></a>  priority_queue::priority_queue  
+##  <a name="priority_queue"></a>  priority_queue::priority_queue  
  Constructs a priority_queue that is empty or that is a copy of a range of a base container object or of another priority_queue.  
   
 ```  
@@ -368,7 +368,7 @@ int main( )
 }  
 ```  
   
-##  <a name="priority_queue__push"></a>  priority_queue::push  
+##  <a name="push"></a>  priority_queue::push  
  Adds an element to the priority queue based on the priority of the element from operator<.  
   
 ```  
@@ -414,7 +414,7 @@ The priority_queue length is 3.
 The element at the top of the priority_queue is 30.  
 ```  
   
-##  <a name="priority_queue__size"></a>  priority_queue::size  
+##  <a name="size"></a>  priority_queue::size  
  Returns the number of elements in the priority_queue.  
   
 ```  
@@ -453,7 +453,7 @@ The priority_queue length is 1.
 The priority_queue length is now 2.  
 ```  
   
-##  <a name="priority_queue__size_type"></a>  priority_queue::size_type  
+##  <a name="size_type"></a>  priority_queue::size_type  
  An unsigned integer type that can represent the number of elements in a priority_queue.  
   
 ```  
@@ -464,9 +464,9 @@ typedef typename Container::size_type size_type;
  The type is a synonym for the `size_type` of the base container adapted by the priority_queue.  
   
 ### Example  
-  See the example for [size](#priority_queue__size) for an example of how to declare and use `size_type`.  
+  See the example for [size](#size) for an example of how to declare and use `size_type`.  
   
-##  <a name="priority_queue__top"></a>  priority_queue::top  
+##  <a name="top"></a>  priority_queue::top  
  Returns a const reference to the largest element at the top of the priority_queue.  
   
 ```  
@@ -511,7 +511,7 @@ The priority_queue length is 3.
 The element at the top of the priority_queue is 30.  
 ```  
   
-##  <a name="priority_queue__value_type"></a>  priority_queue::value_type  
+##  <a name="value_type"></a>  priority_queue::value_type  
  A type that represents the type of object stored as an element in a priority_queue.  
   
 ```  

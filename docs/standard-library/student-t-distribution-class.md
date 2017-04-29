@@ -73,8 +73,8 @@ public:
   
 ||||  
 |-|-|-|  
-|[student_t_distribution](#student_t_distribution__student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|  
-|`student_t_distribution::operator()`||[param_type](#student_t_distribution__param_type)|  
+|[student_t_distribution](#student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|  
+|`student_t_distribution::operator()`||[param_type](#param_type)|  
   
  The property function `n()` returns the value for the stored distribution parameter `n`.  
   
@@ -162,7 +162,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="student_t_distribution__student_t_distribution"></a>  student_t_distribution::student_t_distribution  
+##  <a name="student_t_distribution"></a>  student_t_distribution::student_t_distribution  
  Constructs the distribution.  
   
 ```  
@@ -184,7 +184,7 @@ explicit student_t_distribution(const param_type& parm);
   
  The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="student_t_distribution__param_type"></a>  student_t_distribution::param_type  
+##  <a name="param_type"></a>  student_t_distribution::param_type  
  Stores all the parameters of the distribution.  
 ```cpp    
 struct param_type {  

@@ -57,29 +57,29 @@ class money_get : public locale::facet;
   
 |||  
 |-|-|  
-|[money_get](#money_get__money_get)|The constructor for objects of type `money_get` that are used to extract numerical values from sequences representing monetary values.|  
+|[money_get](#money_get)|The constructor for objects of type `money_get` that are used to extract numerical values from sequences representing monetary values.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[char_type](#money_get__char_type)|A type that is used to describe a character used by a locale.|  
-|[iter_type](#money_get__iter_type)|A type that describes an input iterator.|  
-|[string_type](#money_get__string_type)|A type that describes a string containing characters of type `CharType`.|  
+|[char_type](#char_type)|A type that is used to describe a character used by a locale.|  
+|[iter_type](#iter_type)|A type that describes an input iterator.|  
+|[string_type](#string_type)|A type that describes a string containing characters of type `CharType`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[do_get](#money_get__do_get)|A virtual function called to extracts a numerical value from a character sequence that represents a monetary value.|  
-|[get](#money_get__get)|Extracts a numerical value from a character sequence that represents a monetary value.|  
+|[do_get](#do_get)|A virtual function called to extracts a numerical value from a character sequence that represents a monetary value.|  
+|[get](#get)|Extracts a numerical value from a character sequence that represents a monetary value.|  
   
 ## Requirements  
  **Header:** \<locale>  
   
  **Namespace:** std  
   
-##  <a name="money_get__char_type"></a>  money_get::char_type  
+##  <a name="char_type"></a>  money_get::char_type  
  A type that is used to describe a character used by a locale.  
   
 ```
@@ -89,7 +89,7 @@ typedef CharType char_type;
 ### Remarks  
  The type is a synonym for the template parameter **CharType**.  
   
-##  <a name="money_get__do_get"></a>  money_get::do_get  
+##  <a name="do_get"></a>  money_get::do_get  
  Virtual function called to extracts a numerical value from a character sequence that represents a monetary value.  
   
 ```
@@ -129,42 +129,42 @@ virtual iter_type do_get(iter_type first,
  An input iterator addressing the first element beyond the monetary input field.  
   
 ### Remarks  
- The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty monetary input field. If successful, it converts this field to a sequence of one or more decimal digits, optionally preceded by a minus sign ( `-`), to represent the amount and stores the result in the [string_type](#money_get__string_type) object `val`. It returns an iterator designating the first element beyond the monetary input field. Otherwise, the function stores an empty sequence in `val` and sets `ios_base::failbit` in `State`. It returns an iterator designating the first element beyond any prefix of a valid monetary input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `State`.  
+ The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty monetary input field. If successful, it converts this field to a sequence of one or more decimal digits, optionally preceded by a minus sign ( `-`), to represent the amount and stores the result in the [string_type](#string_type) object `val`. It returns an iterator designating the first element beyond the monetary input field. Otherwise, the function stores an empty sequence in `val` and sets `ios_base::failbit` in `State`. It returns an iterator designating the first element beyond any prefix of a valid monetary input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `State`.  
   
  The second virtual protected member function behaves the same as the first, except that if successful it converts the optionally signed digit sequence to a value of type `long double` and stores that value in `val`.  
   
- The format of a monetary input field is determined by the [locale facet](../standard-library/locale-class.md#facet_class)**fac** returned by the effective call [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**>>( **iosbase**. [getloc](../standard-library/ios-base-class.md#ios_base__getloc)).  
+ The format of a monetary input field is determined by the [locale facet](../standard-library/locale-class.md#facet_class)**fac** returned by the effective call [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**>>( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).  
   
  Specifically:  
   
-- **fac**. [neg_format](../standard-library/moneypunct-class.md#moneypunct__neg_format) determines the order in which components of the field occur.  
+- **fac**. [neg_format](../standard-library/moneypunct-class.md#neg_format) determines the order in which components of the field occur.  
   
-- **fac**. [curr_symbol](../standard-library/moneypunct-class.md#moneypunct__curr_symbol) determines the sequence of elements that constitutes a currency symbol.  
+- **fac**. [curr_symbol](../standard-library/moneypunct-class.md#curr_symbol) determines the sequence of elements that constitutes a currency symbol.  
   
-- **fac**. [positive_sign](../standard-library/moneypunct-class.md#moneypunct__positive_sign) determines the sequence of elements that constitutes a positive sign.  
+- **fac**. [positive_sign](../standard-library/moneypunct-class.md#positive_sign) determines the sequence of elements that constitutes a positive sign.  
   
-- **fac**. [negative_sign](../standard-library/moneypunct-class.md#moneypunct__negative_sign) determines the sequence of elements that constitutes a negative sign.  
+- **fac**. [negative_sign](../standard-library/moneypunct-class.md#negative_sign) determines the sequence of elements that constitutes a negative sign.  
   
-- **fac**. [grouping](../standard-library/moneypunct-class.md#moneypunct__grouping) determines how digits are grouped to the left of any decimal point.  
+- **fac**. [grouping](../standard-library/moneypunct-class.md#grouping) determines how digits are grouped to the left of any decimal point.  
   
-- **fac**. [thousands_sep](../standard-library/moneypunct-class.md#moneypunct__thousands_sep) determines the element that separates groups of digits to the left of any decimal point.  
+- **fac**. [thousands_sep](../standard-library/moneypunct-class.md#thousands_sep) determines the element that separates groups of digits to the left of any decimal point.  
   
-- **fac**. [decimal_point](../standard-library/moneypunct-class.md#moneypunct__decimal_point) determines the element that separates the integer digits from the fraction digits.  
+- **fac**. [decimal_point](../standard-library/moneypunct-class.md#decimal_point) determines the element that separates the integer digits from the fraction digits.  
   
-- **fac**. [frac_digits](../standard-library/moneypunct-class.md#moneypunct__frac_digits) determines the number of significant fraction digits to the right of any decimal point. When parsing a monetary amount with more fraction digits than are called for by `frac_digits`, `do_get` stops parsing after consuming at most `frac_digits` characters.  
+- **fac**. [frac_digits](../standard-library/moneypunct-class.md#frac_digits) determines the number of significant fraction digits to the right of any decimal point. When parsing a monetary amount with more fraction digits than are called for by `frac_digits`, `do_get` stops parsing after consuming at most `frac_digits` characters.  
   
  If the sign string ( **fac**. `negative_sign` or **fac**. `positive_sign`) has more than one element, only the first element is matched where the element equal to **money_base::sign** appears in the format pattern ( **fac**. `neg_format`). Any remaining elements are matched at the end of the monetary input field. If neither string has a first element that matches the next element in the monetary input field, the sign string is taken as empty and the sign is positive.  
   
- If **iosbase**. [flags](../standard-library/ios-base-class.md#ios_base__flags) & [showbase](../standard-library/ios-functions.md#showbase) is nonzero, the string **fac**. `curr_symbol` must match where the element equal to **money_base::symbol** appears in the format pattern. Otherwise, if **money_base::symbol** occurs at the end of the format pattern, and if no elements of the sign string remain to be matched, the currency symbol is not matched. Otherwise, the currency symbol is optionally matched.  
+ If **iosbase**. [flags](../standard-library/ios-base-class.md#flags) & [showbase](../standard-library/ios-functions.md#showbase) is nonzero, the string **fac**. `curr_symbol` must match where the element equal to **money_base::symbol** appears in the format pattern. Otherwise, if **money_base::symbol** occurs at the end of the format pattern, and if no elements of the sign string remain to be matched, the currency symbol is not matched. Otherwise, the currency symbol is optionally matched.  
   
  If no instances of **fac**. `thousands_sep` occur in the value portion of the monetary input field (where the element equal to **money_base::value** appears in the format pattern), no grouping constraint is imposed. Otherwise, any grouping constraints imposed by **fac**. **grouping** is enforced. Note that the resulting digit sequence represents an integer whose low-order **fac**. `frac_digits` decimal digits are considered to the right of the decimal point.  
   
- Arbitrary white space is matched where the element equal to **money_base::space** appears in the format pattern, if it appears other than at the end of the format pattern. Otherwise, no internal white space is matched. An element *ch* is considered white space if [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md)\< **CharType**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#ios_base__getloc)). [is](../standard-library/ctype-class.md#ctype__is)( **ctype_base::space**, *ch*) is **true**.  
+ Arbitrary white space is matched where the element equal to **money_base::space** appears in the format pattern, if it appears other than at the end of the format pattern. Otherwise, no internal white space is matched. An element *ch* is considered white space if [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md)\< **CharType**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)). [is](../standard-library/ctype-class.md#is)( **ctype_base::space**, *ch*) is **true**.  
   
 ### Example  
-  See the example for [get](#money_get__get), which calls `do_get`.  
+  See the example for [get](#get), which calls `do_get`.  
   
-##  <a name="money_get__get"></a>  money_get::get  
+##  <a name="get"></a>  money_get::get  
  Extracts a numerical value from a character sequence that represents a monetary value.  
   
 ```
@@ -206,7 +206,7 @@ iter_type get(iter_type first,
  An input iterator addressing the first element beyond the monetary input field.  
   
 ### Remarks  
- Both member functions return [do_get](#money_get__do_get)( `first``,` `last``,` `Intl`, `Iosbase`, `State`, `val`).  
+ Both member functions return [do_get](#do_get)( `first``,` `last``,` `Intl`, `Iosbase`, `State`, `val`).  
   
 ### Example  
   
@@ -257,7 +257,7 @@ int main( )
 };  
 ```  
   
-##  <a name="money_get__iter_type"></a>  money_get::iter_type  
+##  <a name="iter_type"></a>  money_get::iter_type  
  A type that describes an input iterator.  
   
 ```
@@ -267,7 +267,7 @@ typedef InputIterator iter_type;
 ### Remarks  
  The type is a synonym for the template parameter **InputIterator**.  
   
-##  <a name="money_get__money_get"></a>  money_get::money_get  
+##  <a name="money_get"></a>  money_get::money_get  
  The constructor for objects of type `money_get` that are used to extract numerical values from sequences representing monetary values.  
   
 ```
@@ -291,7 +291,7 @@ explicit money_get(size_t _Refs = 0);
   
  The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( **_***Refs*).  
   
-##  <a name="money_get__string_type"></a>  money_get::string_type  
+##  <a name="string_type"></a>  money_get::string_type  
  A type that describes a string containing characters of type **CharType**.  
   
 ```
