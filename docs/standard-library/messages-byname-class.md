@@ -64,7 +64,7 @@ protected:
  An initial reference count.  
   
 ## Remarks  
- Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [messages](../standard-library/messages-class.md#messages__messages)\<CharType>( `_Refs`).  
+ Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [messages](../standard-library/messages-class.md#messages)\<CharType>( `_Refs`).  
   
 ## Requirements  
  **Header:** \<locale>  

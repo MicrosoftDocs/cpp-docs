@@ -49,12 +49,12 @@ Defines the container template class list and several supporting templates.
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/list-operators.md#operator_neq)|Tests if the list object on the left side of the operator is not equal to the list object on the right side.|  
-|[operator<](../standard-library/list-operators.md#operator_lt_)|Tests if the list object on the left side of the operator is less than the list object on the right side.|  
-|[operator\<=](../standard-library/list-operators.md#operator_lt__eq)|Tests if the list object on the left side of the operator is less than or equal to the list object on the right side.|  
-|[operator==](../standard-library/list-operators.md#operator_eq_eq)|Tests if the list object on the left side of the operator is equal to the list object on the right side.|  
-|[operator>](../standard-library/list-operators.md#operator_gt_)|Tests if the list object on the left side of the operator is greater than the list object on the right side.|  
-|[operator>=](../standard-library/list-operators.md#operator_gt__eq)|Tests if the list object on the left side of the operator is greater than or equal to the list object on the right side.|  
+|[operator!=](../standard-library/list-operators.md#op_neq)|Tests if the list object on the left side of the operator is not equal to the list object on the right side.|  
+|[operator<](../standard-library/list-operators.md#op_lt)|Tests if the list object on the left side of the operator is less than the list object on the right side.|  
+|[operator\<=](../standard-library/list-operators.md#op_gt_eq)|Tests if the list object on the left side of the operator is less than or equal to the list object on the right side.|  
+|[operator==](../standard-library/list-operators.md#op_eq_eq)|Tests if the list object on the left side of the operator is equal to the list object on the right side.|  
+|[operator>](../standard-library/list-operators.md#op_gt)|Tests if the list object on the left side of the operator is greater than the list object on the right side.|  
+|[operator>=](../standard-library/list-operators.md#op_gt_eq)|Tests if the list object on the left side of the operator is greater than or equal to the list object on the right side.|  
   
 ### Classes  
   

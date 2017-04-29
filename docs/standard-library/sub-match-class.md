@@ -78,7 +78,7 @@ public:
   
  **Namespace:** std  
   
-##  <a name="sub_match__compare"></a>  sub_match::compare  
+##  <a name="compare"></a>  sub_match::compare  
  Compare submatch against a sequence.  
   
 ```  
@@ -161,7 +161,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__difference_type"></a>  sub_match::difference_type  
+##  <a name="difference_type"></a>  sub_match::difference_type  
  The type of an iterator difference.  
   
 ```  
@@ -224,7 +224,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__iterator"></a>  sub_match::iterator  
+##  <a name="iterator"></a>  sub_match::iterator  
  The type of an iterator.  
   
 ```  
@@ -287,7 +287,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__length"></a>  sub_match::length  
+##  <a name="length"></a>  sub_match::length  
  Returns the length of a submatch.  
   
 ```  
@@ -350,7 +350,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__matched"></a>  sub_match::matched  
+##  <a name="matched"></a>  sub_match::matched  
  Indicates if match succeeded.  
   
 ```  
@@ -413,7 +413,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__operator_basic_string_lt_value_type_gt_"></a>  sub_match::operator basic_string&lt;value_type&gt;  
+##  <a name="op_basic_string_lt_value_type_gt"></a>  sub_match::operator basic_string&lt;value_type&gt;  
  Casts submatch to a string.  
   
 ```  
@@ -476,7 +476,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__str"></a>  sub_match::str  
+##  <a name="str"></a>  sub_match::str  
  Converts submatch to a string.  
   
 ```  
@@ -539,7 +539,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="sub_match__value_type"></a>  sub_match::value_type  
+##  <a name="value_type"></a>  sub_match::value_type  
  The type of an element.  
   
 ```  

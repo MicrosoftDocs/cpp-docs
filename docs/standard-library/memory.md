@@ -82,13 +82,13 @@ Defines a class, an operator, and several templates that help allocate and free 
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/memory-operators.md#operator_neq)|Tests for inequality between allocator objects of a specified class.|  
-|[operator==](../standard-library/memory-operators.md#operator_eq_eq)|Tests for equality between allocator objects of a specified class.|  
-|[operator>=](../standard-library/memory-operators.md#operator_gt__eq)|Tests for one allocator object being greater than or equal to a second allocator object, of a specified class.|  
-|[operator<](../standard-library/memory-operators.md#operator_lt_)|Tests for one object being less than a second object of a specified class.|  
-|[operator\<=](../standard-library/memory-operators.md#operator_lt__eq)|Tests for one object being less than or equal to a second object of a specified class.|  
-|[operator>](../standard-library/memory-operators.md#operator_gt_)|Tests for one object being greater than a second object of a specified class.|  
-|[operator<<](../standard-library/memory-operators.md#operator_lt__lt_)|`shared_ptr` inserter.|  
+|[operator!=](../standard-library/memory-operators.md#op_neq)|Tests for inequality between allocator objects of a specified class.|  
+|[operator==](../standard-library/memory-operators.md#op_eq_eq)|Tests for equality between allocator objects of a specified class.|  
+|[operator>=](../standard-library/memory-operators.md#op_gt_eq)|Tests for one allocator object being greater than or equal to a second allocator object, of a specified class.|  
+|[operator<](../standard-library/memory-operators.md#op_lt)|Tests for one object being less than a second object of a specified class.|  
+|[operator\<=](../standard-library/memory-operators.md#op_gt_eq)|Tests for one object being less than or equal to a second object of a specified class.|  
+|[operator>](../standard-library/memory-operators.md#op_gt)|Tests for one object being greater than a second object of a specified class.|  
+|[operator<<](../standard-library/memory-operators.md#op_lt_lt)|`shared_ptr` inserter.|  
   
 ### Classes  
   

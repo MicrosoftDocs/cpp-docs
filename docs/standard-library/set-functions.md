@@ -32,14 +32,14 @@ void swap(set<Key, Traits, Allocator>& left, set<Key, Traits, Allocator>& right)
  The set whose elements are to be exchanged with those of the set `right`.  
   
 ### Remarks  
- The template function is an algorithm specialized on the container class set to execute the member function `left``.`[swap](../standard-library/set-class.md#set__swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
+ The template function is an algorithm specialized on the container class set to execute the member function `left``.`[swap](../standard-library/set-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
   
  `template` \< **classT**> **void swap**( **T&**, **T&**)  
   
  in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.  
   
 ### Example  
-  See the code example for the member class [set::swap](../standard-library/set-class.md#set__swap) for an example of the use of the template version of `swap`.  
+  See the code example for the member class [set::swap](../standard-library/set-class.md#swap) for an example of the use of the template version of `swap`.  
   
 ##  <a name="swap_multiset"></a>  swap  (multiset)
  Exchanges the elements of two multisets.  
@@ -57,14 +57,14 @@ void swap(multiset<Key, Traits, Allocator>& left, multiset<Key, Traits, Allocato
  The multiset whose elements are to be exchanged with those of the multiset `right`.  
   
 ### Remarks  
- The template function is an algorithm specialized on the container class multiset to execute the member function `left``.`[swap](../standard-library/multiset-class.md#multiset__swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
+ The template function is an algorithm specialized on the container class multiset to execute the member function `left``.`[swap](../standard-library/multiset-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
   
  `template` \< **classT**> **void swap**( **T&**, **T&**)  
   
  in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.  
   
 ### Example  
-  See the code example for the member class [multiset::swap](../standard-library/multiset-class.md#multiset__swap)for an example of the use of the template version of `swap`.  
+  See the code example for the member class [multiset::swap](../standard-library/multiset-class.md#swap)for an example of the use of the template version of `swap`.  
   
 ## See Also  
  [\<set>](../standard-library/set.md)

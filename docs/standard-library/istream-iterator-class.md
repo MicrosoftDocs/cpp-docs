@@ -66,30 +66,30 @@ class istream_iterator
   
 |||  
 |-|-|  
-|[istream_iterator](#istream_iterator__istream_iterator)|Constructs either an end-of-stream iterator as the default `istream_iterator` or a `istream_iterator` initialized to the iterator's stream type from which it reads.|  
+|[istream_iterator](#istream_iterator)|Constructs either an end-of-stream iterator as the default `istream_iterator` or a `istream_iterator` initialized to the iterator's stream type from which it reads.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[char_type](#istream_iterator__char_type)|A type that provides for the character type of the `istream_iterator`.|  
-|[istream_type](#istream_iterator__istream_type)|A type that provides for the stream type of the `istream_iterator`.|  
-|[traits_type](#istream_iterator__traits_type)|A type that provides for the character traits type of the `istream_iterator`.|  
+|[char_type](#char_type)|A type that provides for the character type of the `istream_iterator`.|  
+|[istream_type](#istream_type)|A type that provides for the stream type of the `istream_iterator`.|  
+|[traits_type](#traits_type)|A type that provides for the character traits type of the `istream_iterator`.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator*](#istream_iterator__operator_star)|The dereferencing operator returns the stored object of type `Type` addressed by the `istream_iterator`.|  
-|[operator->](#istream_iterator__operator-_gt_)|Returns the value of a member, if any.|  
-|[operator++](#istream_iterator__operator_add_add)|Either extracts an incremented object from the input stream or copies the object before incrementing it and returns the copy.|  
+|[operator*](#op_star)|The dereferencing operator returns the stored object of type `Type` addressed by the `istream_iterator`.|  
+|[operator->](#operator-_gt)|Returns the value of a member, if any.|  
+|[operator++](#op_add_add)|Either extracts an incremented object from the input stream or copies the object before incrementing it and returns the copy.|  
   
 ## Requirements  
  **Header:** \<iterator>  
   
  **Namespace:** std  
   
-##  <a name="istream_iterator__char_type"></a>  istream_iterator::char_type  
+##  <a name="char_type"></a>  istream_iterator::char_type  
  A type that provides for the character type of the `istream_iterator`.  
   
 ```
@@ -135,7 +135,7 @@ int main( )
 }  
 ```  
   
-##  <a name="istream_iterator__istream_iterator"></a>  istream_iterator::istream_iterator  
+##  <a name="istream_iterator"></a>  istream_iterator::istream_iterator  
  Constructs either an end-of-stream iterator as the default `istream_iterator` or a `istream_iterator` initialized to the iterator's stream type from which it reads.  
   
 ```
@@ -187,7 +187,7 @@ int main( )
 }  
 ```  
   
-##  <a name="istream_iterator__istream_type"></a>  istream_iterator::istream_type  
+##  <a name="istream_type"></a>  istream_iterator::istream_type  
  A type that provides for the stream type of the `istream_iterator`.  
   
 ```
@@ -198,9 +198,9 @@ typedef basic_istream<CharType, Traits> istream_type;
  The type is a synonym for `basic_istream`\< **CharType**, **Traits**>.  
   
 ### Example  
-  See [istream_iterator](#istream_iterator__istream_iterator) for an example of how to declare and use `istream_type`.  
+  See [istream_iterator](#istream_iterator) for an example of how to declare and use `istream_type`.  
   
-##  <a name="istream_iterator__operator_star"></a>  istream_iterator::operator*  
+##  <a name="op_star"></a>  istream_iterator::operator*  
  The dereferencing operator returns the stored object of type **Type** addressed by the `istream_iterator`.  
   
 ```
@@ -242,7 +242,7 @@ int main( )
 }  
 ```  
   
-##  <a name="istream_iterator__operator-_gt_"></a>  istream_iterator::operator-&gt;  
+##  <a name="istream_iterator__operator-_gt"></a>  istream_iterator::operator-&gt;  
  Returns the value of a member, if any.  
   
 ```
@@ -289,7 +289,7 @@ int main( )
 }  
 ```  
   
-##  <a name="istream_iterator__operator_add_add"></a>  istream_iterator::operator++  
+##  <a name="op_add_add"></a>  istream_iterator::operator++  
  Either extracts an incremented object from the input stream or copies the object before incrementing it and returns the copy.  
   
 ```
@@ -333,7 +333,7 @@ int main( )
 }  
 ```  
   
-##  <a name="istream_iterator__traits_type"></a>  istream_iterator::traits_type  
+##  <a name="traits_type"></a>  istream_iterator::traits_type  
  A type that provides for the character traits type of the `istream_iterator`.  
   
 ```

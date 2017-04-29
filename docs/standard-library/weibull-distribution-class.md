@@ -74,8 +74,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[weibull_distribution](#weibull_distribution__weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|  
-|`weibull_distribution::operator()`|`weibull_distribution::b`|[param_type](#weibull_distribution__param_type)|  
+|[weibull_distribution](#weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|  
+|`weibull_distribution::operator()`|`weibull_distribution::b`|[param_type](#param_type)|  
   
 The property functions `a()` and `b()` return their respective values for stored distribution parameters *a* and *b*.  
   
@@ -207,7 +207,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="weibull_distribution__weibull_distribution"></a>  weibull_distribution::weibull_distribution  
+##  <a name="weibull_distribution"></a>  weibull_distribution::weibull_distribution  
   
 ```  
 explicit weibull_distribution(result_type a = 1.0, result_type b = 1.0);
@@ -231,7 +231,7 @@ The `param_type` structure used to construct the distribution.
   
  The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="weibull_distribution__param_type"></a>  weibull_distribution::param_type  
+##  <a name="param_type"></a>  weibull_distribution::param_type  
  Stores the parameters of the distribution.  
 ```  
 struct param_type {  

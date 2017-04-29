@@ -54,29 +54,29 @@ class back_insert_iterator;
   
 |||  
 |-|-|  
-|[back_insert_iterator](#back_insert_iterator__back_insert_iterator)|Constructs a `back_insert_iterator` that inserts elements after the last element in a container.|  
+|[back_insert_iterator](#back_insert_iterator)|Constructs a `back_insert_iterator` that inserts elements after the last element in a container.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[container_type](#back_insert_iterator__container_type)|A type that provides a container for the `back_insert_iterator`.|  
-|[reference](#back_insert_iterator__reference)|A type that provides a reference for the `back_insert_iterator`.|  
+|[container_type](#container_type)|A type that provides a container for the `back_insert_iterator`.|  
+|[reference](#reference)|A type that provides a reference for the `back_insert_iterator`.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator*](#back_insert_iterator__operator_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a back insertion.|  
-|[operator++](#back_insert_iterator__operator_add_add)|Increments the `back_insert_iterator` to the next location into which a value may be stored.|  
-|[operator=](#back_insert_iterator__operator_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a back insertion.|  
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a back insertion.|  
+|[operator++](#op_add_add)|Increments the `back_insert_iterator` to the next location into which a value may be stored.|  
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a back insertion.|  
   
 ## Requirements  
  **Header**: \<iterator>  
   
  **Namespace:** std  
   
-##  <a name="back_insert_iterator__back_insert_iterator"></a>  back_insert_iterator::back_insert_iterator  
+##  <a name="back_insert_iterator"></a>  back_insert_iterator::back_insert_iterator  
  Constructs a `back_insert_iterator` that inserts elements after the last element in a container.  
   
 ```   
@@ -138,7 +138,7 @@ The initial vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec is: ( 1 2 3 40 50 600 700 ).  
 ```  
   
-##  <a name="back_insert_iterator__container_type"></a>  back_insert_iterator::container_type  
+##  <a name="container_type"></a>  back_insert_iterator::container_type  
  A type that provides a container for the `back_insert_iterator`.  
   
 ```   
@@ -190,7 +190,7 @@ The original vector vec is: ( 1 2 3 ).
 After the insertion, the vector is: ( 1 2 3 40 ).  
 ```  
   
-##  <a name="back_insert_iterator__operator_star"></a>  back_insert_iterator::operator*  
+##  <a name="op_star"></a>  back_insert_iterator::operator*  
  Dereferencing operator used to implement the output iterator expression \* *i* = *x*.  
   
 ```  
@@ -247,7 +247,7 @@ The vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec becomes: ( 1 2 3 10 20 ).  
 ```  
   
-##  <a name="back_insert_iterator__operator_add_add"></a>  back_insert_iterator::operator++  
+##  <a name="op_add_add"></a>  back_insert_iterator::operator++  
  Increments the `back_insert_iterator` to the next location into which a value may be stored.  
   
 ```  
@@ -305,7 +305,7 @@ The vector vec is: ( 10 20 ).
 After the insertions, the vector vec becomes: ( 10 20 30 40 ).  
 ```  
   
-##  <a name="back_insert_iterator__operator_eq"></a>  back_insert_iterator::operator=  
+##  <a name="op_eq"></a>  back_insert_iterator::operator=  
  Appends or pushes a value onto the back end of a container.  
   
 ```  
@@ -368,7 +368,7 @@ int main( )
 }  
 ```  
   
-##  <a name="back_insert_iterator__reference"></a>  back_insert_iterator::reference  
+##  <a name="reference"></a>  back_insert_iterator::reference  
  A type that provides a reference for the `back_insert_iterator`.  
   
 ```  

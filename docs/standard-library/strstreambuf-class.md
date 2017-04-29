@@ -66,27 +66,27 @@ class strstreambuf : public streambuf
   
 |||  
 |-|-|  
-|[strstreambuf](#strstreambuf__strstreambuf)|Constructs an object of type `strstreambuf`.|  
+|[strstreambuf](#strstreambuf)|Constructs an object of type `strstreambuf`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[freeze](#strstreambuf__freeze)|Causes a stream buffer to be unavailable through stream buffer operations.|  
-|[overflow](#strstreambuf__overflow)|A protected virtual function that can be called when a new character is inserted into a full buffer.|  
-|[pbackfail](#strstreambuf__pbackfail)|A protected virtual member function that tries to put back an element into the input stream, and then make it the current element (pointed to by the next pointer).|  
-|[pcount](#strstreambuf__pcount)|Returns a count of the number of elements written to the controlled sequence.|  
-|[seekoff](#strstreambuf__seekoff)|A protected virtual member function that tries to alter the current positions for the controlled streams.|  
-|[seekpos](#strstreambuf__seekpos)|A protected virtual member function that tries to alter the current positions for the controlled streams.|  
-|[str](#strstreambuf__str)|Calls [freeze](#strstreambuf__freeze), and then returns a pointer to the beginning of the controlled sequence.|  
-|[underflow](#strstreambuf__underflow)|A protected virtual function to extract the current element from the input stream.|  
+|[freeze](#freeze)|Causes a stream buffer to be unavailable through stream buffer operations.|  
+|[overflow](#overflow)|A protected virtual function that can be called when a new character is inserted into a full buffer.|  
+|[pbackfail](#pbackfail)|A protected virtual member function that tries to put back an element into the input stream, and then make it the current element (pointed to by the next pointer).|  
+|[pcount](#pcount)|Returns a count of the number of elements written to the controlled sequence.|  
+|[seekoff](#seekoff)|A protected virtual member function that tries to alter the current positions for the controlled streams.|  
+|[seekpos](#seekpos)|A protected virtual member function that tries to alter the current positions for the controlled streams.|  
+|[str](#str)|Calls [freeze](#freeze), and then returns a pointer to the beginning of the controlled sequence.|  
+|[underflow](#underflow)|A protected virtual function to extract the current element from the input stream.|  
   
 ## Requirements  
  **Header:** \<strstream>  
   
  **Namespace:** std  
   
-##  <a name="strstreambuf__freeze"></a>  strstreambuf::freeze  
+##  <a name="freeze"></a>  strstreambuf::freeze  
  Causes a stream buffer to be unavailable through stream buffer operations.  
   
 ```  
@@ -100,7 +100,7 @@ void freeze(bool _Freezeit = true);
 ### Remarks  
  If `_Freezeit` is true, the function alters the stored `strstreambuf` mode to make the controlled sequence frozen. Otherwise, it makes the controlled sequence not frozen.  
   
- [str](#strstreambuf__str) implies `freeze`.  
+ [str](#str) implies `freeze`.  
   
 > [!NOTE]
 >  A frozen buffer will not be freed during `strstreambuf` destruction. You must unfreeze the buffer before it is freed to avoid a memory leak.  
@@ -171,7 +171,7 @@ after clearing stream: stream good
 test1test3  
 ```  
   
-##  <a name="strstreambuf__overflow"></a>  strstreambuf::overflow  
+##  <a name="overflow"></a>  strstreambuf::overflow  
  A protected virtual function that can be called when a new character is inserted into a full buffer.  
   
 ```  
@@ -192,7 +192,7 @@ virtual int overflow(int _Meta = EOF);
   
 -   If the stored strstreambuf mode says the controlled sequence is modifiable, extendable, and not frozen, the function can make a write position available by allocating new for the output buffer. Extending the output buffer this way also extends any associated input buffer.  
   
-##  <a name="strstreambuf__pbackfail"></a>  strstreambuf::pbackfail  
+##  <a name="pbackfail"></a>  strstreambuf::pbackfail  
  A protected virtual member function that tries to put back an element into the input stream, and then makes it the current element (pointed to by the next pointer).  
   
 ```  
@@ -215,7 +215,7 @@ virtual int pbackfail(int _Meta = EOF);
   
 -   If a putback position is available, and if the strstreambuf mode says the controlled sequence is modifiable, the function can store **ch** into the putback position and decrement the next pointer for the input buffer.  
   
-##  <a name="strstreambuf__pcount"></a>  strstreambuf::pcount  
+##  <a name="pcount"></a>  strstreambuf::pcount  
  Returns a count of the number of elements written to the controlled sequence.  
   
 ```  
@@ -226,7 +226,7 @@ streamsize pcount() const;
  A count of the number of elements written to the controlled sequence.  
   
 ### Remarks  
- Specifically, if [pptr](../standard-library/basic-streambuf-class.md#basic_streambuf__pptr) is a null pointer, the function returns zero. Otherwise, it returns `pptr` - [pbase](../standard-library/basic-streambuf-class.md#basic_streambuf__pbase).  
+ Specifically, if [pptr](../standard-library/basic-streambuf-class.md#pptr) is a null pointer, the function returns zero. Otherwise, it returns `pptr` - [pbase](../standard-library/basic-streambuf-class.md#pbase).  
   
 ### Example  
   
@@ -247,7 +247,7 @@ int main( )
 }  
 ```  
   
-##  <a name="strstreambuf__seekoff"></a>  strstreambuf::seekoff  
+##  <a name="seekoff"></a>  strstreambuf::seekoff  
  A protected virtual member function that tries to alter the current positions for the controlled streams.  
   
 ```  
@@ -261,7 +261,7 @@ virtual streampos seekoff(streamoff _Off,
  The position to seek for relative to `_Way`.  
   
  `_Way`  
- The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#ios_base__seekdir) for possible values.  
+ The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.  
   
  `_Which`  
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.  
@@ -284,7 +284,7 @@ virtual streampos seekoff(streamoff _Off,
   
  Otherwise, if `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function alters the next position to write in the output buffer. Otherwise, the positioning operation fails. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence.  
   
-##  <a name="strstreambuf__seekpos"></a>  strstreambuf::seekpos  
+##  <a name="seekpos"></a>  strstreambuf::seekpos  
  A protected virtual member function that tries to alter the current positions for the controlled streams.  
   
 ```  
@@ -306,8 +306,8 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
   
  If `_Which` & **ios_base::in** is nonzero and the input buffer exists, the function alters the next position to read in the input buffer. If `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function also sets the next position to write to match the next position to read. Otherwise, if `_Which` & `ios_base::out` is nonzero and the output buffer exists, the function alters the next position to write in the output buffer. Otherwise, the positioning operation fails. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence.  
   
-##  <a name="strstreambuf__str"></a>  strstreambuf::str  
- Calls [freeze](#strstreambuf__freeze), and then returns a pointer to the beginning of the controlled sequence.  
+##  <a name="str"></a>  strstreambuf::str  
+ Calls [freeze](#freeze), and then returns a pointer to the beginning of the controlled sequence.  
   
 ```  
 char *str();
@@ -320,9 +320,9 @@ char *str();
  No terminating null element exists, unless you explicitly insert one.  
   
 ### Example  
-  See [strstreambuf::freeze](#strstreambuf__freeze) for a sample that uses **str**.  
+  See [strstreambuf::freeze](#freeze) for a sample that uses **str**.  
   
-##  <a name="strstreambuf__strstreambuf"></a>  strstreambuf::strstreambuf  
+##  <a name="strstreambuf"></a>  strstreambuf::strstreambuf  
  Constructs an object of type `strstreambuf`.  
   
 ```  
@@ -442,7 +442,7 @@ streambuf((char *)_Getptr, count);
   
  except that the stored mode makes the controlled sequence neither modifiable nor extendable.  
   
-##  <a name="strstreambuf__underflow"></a>  strstreambuf::underflow  
+##  <a name="underflow"></a>  strstreambuf::underflow  
  A protected virtual function to extract the current element from the input stream.  
   
 ```  

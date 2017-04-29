@@ -45,7 +45,7 @@ An internal, auxiliary template class that supports objects that are subsets of 
   
  You construct an **indirect_array\<Type>** object only by writing an expression of the form **va[xa]**. The member functions of class indirect_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected.  
   
- The sequence consists of **xa.**[size](../standard-library/valarray-class.md#valarray__size) elements, where element `I` becomes the index **xa**[ `I`] within **va**.  
+ The sequence consists of **xa.**[size](../standard-library/valarray-class.md#size) elements, where element `I` becomes the index **xa**[ `I`] within **va**.  
   
 ## Example:  
   

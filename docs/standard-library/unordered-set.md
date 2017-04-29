@@ -54,11 +54,11 @@ Defines the container template classes [unordered_multiset](../standard-library/
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/unordered-set-operators.md#operator_neq)|Tests if the unordered_multiset object on the left side of the operator is not equal to the unordered_multiset object on the right side.|  
-|[operator==](../standard-library/unordered-set-operators.md#operator_eq_eq)|Tests if the unordered_multiset object on the left side of the operator is equal to the unordered_multiset object on the right side.|  
+|[operator!=](../standard-library/unordered-set-operators.md#op_neq)|Tests if the unordered_multiset object on the left side of the operator is not equal to the unordered_multiset object on the right side.|  
+|[operator==](../standard-library/unordered-set-operators.md#op_eq_eq)|Tests if the unordered_multiset object on the left side of the operator is equal to the unordered_multiset object on the right side.|  
 |[swap](../standard-library/unordered-set-functions.md#swap_unordered_multiset)|Swaps two multisets.|  
-|[operator!=](../standard-library/unordered-set-operators.md#operator_neq)|Tests if the unordered_set object on the left side of the operator is not equal to the unordered_set object on the right side.|  
-|[operator==](../standard-library/unordered-set-operators.md#operator_eq_eq)|Tests if the unordered_set object on the left side of the operator is equal to the unordered_set object on the right side.|  
+|[operator!=](../standard-library/unordered-set-operators.md#op_neq)|Tests if the unordered_set object on the left side of the operator is not equal to the unordered_set object on the right side.|  
+|[operator==](../standard-library/unordered-set-operators.md#op_eq_eq)|Tests if the unordered_set object on the left side of the operator is equal to the unordered_set object on the right side.|  
 |[swap](../standard-library/unordered-set-functions.md#swap)|Swaps two sets.|  
   
 ## See Also  

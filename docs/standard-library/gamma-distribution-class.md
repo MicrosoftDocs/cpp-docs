@@ -78,8 +78,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[gamma_distribution](#gamma_distribution__gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|  
-|`gamma_distribution::operator()`|`gamma_distribution::beta`|[param_type](#gamma_distribution__param_type)|  
+|[gamma_distribution](#gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|  
+|`gamma_distribution::operator()`|`gamma_distribution::beta`|[param_type](#param_type)|  
   
 The property functions `alpha()` and `beta()` return their respective values for stored distribution parameters *alpha* and *beta*.  
   
@@ -183,7 +183,7 @@ Distribution for 10 samples:
   
 **Namespace:** std  
   
-##  <a name="gamma_distribution__gamma_distribution"></a>  gamma_distribution::gamma_distribution  
+##  <a name="gamma_distribution"></a>  gamma_distribution::gamma_distribution  
 Constructs the distribution.  
   
 ```  
@@ -208,7 +208,7 @@ The first constructor constructs an object whose stored `alpha` value holds the 
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="gamma_distribution__param_type"></a>  gamma_distribution::param_type  
+##  <a name="param_type"></a>  gamma_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```cpp   

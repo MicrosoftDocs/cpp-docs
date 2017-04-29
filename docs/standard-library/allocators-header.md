@@ -153,8 +153,8 @@ Defines several templates that help allocate and free memory blocks for node-bas
   
 |||  
 |-|-|  
-|[operator!= (\<allocators>)](../standard-library/allocators-operators.md#operator_neq)|Tests for inequality between allocator objects of a specified class.|  
-|[operator== (\<allocators>)](../standard-library/allocators-operators.md#operator_eq_eq)|Tests for equality between allocator objects of a specified class.|  
+|[operator!= (\<allocators>)](../standard-library/allocators-operators.md#op_neq)|Tests for inequality between allocator objects of a specified class.|  
+|[operator== (\<allocators>)](../standard-library/allocators-operators.md#op_eq_eq)|Tests for equality between allocator objects of a specified class.|  
   
 ### Classes  
   
