@@ -127,7 +127,7 @@ public:
   
 |||  
 |-|-|  
-|[unique_ptr](#unique_ptr__unique_ptr)|There are seven constructors for `unique_ptr`.|  
+|[unique_ptr](#unique_ptr)|There are seven constructors for `unique_ptr`.|  
   
 ### Typedefs  
   
@@ -141,11 +141,11 @@ public:
   
 |||  
 |-|-|  
-|[get](#unique_ptr__get)|Returns `stored_ptr`.|  
-|[get_deleter](#unique_ptr__get_deleter)|Returns a reference to `stored_deleter`.|  
-|[release](#unique_ptr__release)|stores `pointer()` in `stored_ptr` and returns its previous contents.|  
-|[reset](#unique_ptr__reset)|Releases the currently owned resource and accepts a new resource.|  
-|[swap](#unique_ptr__swap)|Exchanges resource and `deleter` with the provided `unique_ptr`.|  
+|[get](#get)|Returns `stored_ptr`.|  
+|[get_deleter](#get_deleter)|Returns a reference to `stored_deleter`.|  
+|[release](#release)|stores `pointer()` in `stored_ptr` and returns its previous contents.|  
+|[reset](#reset)|Releases the currently owned resource and accepts a new resource.|  
+|[swap](#swap)|Exchanges resource and `deleter` with the provided `unique_ptr`.|  
   
 ### Operators  
   
@@ -181,7 +181,7 @@ typedef Type element_type;
 ### Remarks  
  The type is a synonym for the template parameter `Ty`.  
   
-##  <a name="unique_ptr__get"></a>  unique_ptr::get  
+##  <a name="get"></a>  unique_ptr::get  
  Returns `stored_ptr`.  
   
 ```  
@@ -191,7 +191,7 @@ pointer get() const;
 ### Remarks  
  The member function returns `stored_ptr`.  
   
-##  <a name="unique_ptr__get_deleter"></a>  unique_ptr::get_deleter  
+##  <a name="get_deleter"></a>  unique_ptr::get_deleter  
  Returns a reference to `stored_deleter`.  
   
 ```  
@@ -229,7 +229,7 @@ typedef T1 pointer;
 ### Remarks  
  The type is a synonym for `Del::pointer` if defined, otherwise `Type *`.  
   
-##  <a name="unique_ptr__release"></a>  unique_ptr::release  
+##  <a name="release"></a>  unique_ptr::release  
  Releases ownership of the returned stored pointer to the caller and sets the stored pointer value to `nullptr`.  
   
 ```  
@@ -289,7 +289,7 @@ Deleting Sample(3)
   
 ```  
   
-##  <a name="unique_ptr__reset"></a>  unique_ptr::reset  
+##  <a name="reset"></a>  unique_ptr::reset  
  Takes ownership of the pointer parameter, and then deletes the original stored pointer. If the new pointer is the same as the original stored pointer, `reset` deletes the pointer and sets the stored pointer to `nullptr`.  
   
 ```  
@@ -304,11 +304,11 @@ void reset(nullptr_t ptr);
 |`ptr`|A pointer to the resource to take ownership of.|  
   
 ### Remarks  
- Use `reset` to change the stored [pointer](#pointer) owned by the `unique_ptr` to `ptr` and then delete the original stored pointer. If the `unique_ptr` was not empty, `reset` invokes the deleter function returned by [get_deleter](#unique_ptr__get_deleter) on the original stored pointer.  
+ Use `reset` to change the stored [pointer](#pointer) owned by the `unique_ptr` to `ptr` and then delete the original stored pointer. If the `unique_ptr` was not empty, `reset` invokes the deleter function returned by [get_deleter](#get_deleter) on the original stored pointer.  
   
  Because `reset` first stores the new pointer `ptr`, and then deletes the original stored pointer, it's possible for `reset` to immediately delete `ptr` if it is the same as the original stored pointer.  
   
-##  <a name="unique_ptr__swap"></a>  unique_ptr::swap  
+##  <a name="swap"></a>  unique_ptr::swap  
  Exchanges pointers between two `unique_ptr` objects.  
   
 ```  
@@ -322,7 +322,7 @@ void swap(unique_ptr& right);
 ### Remarks  
  The member function swaps `stored_ptr` with `right.stored_ptr` and `stored_deleter` with `right.stored_deleter`.  
   
-##  <a name="unique_ptr__unique_ptr"></a>  unique_ptr::unique_ptr  
+##  <a name="unique_ptr"></a>  unique_ptr::unique_ptr  
  There are seven constructors for `unique_ptr`.  
   
 ```  
@@ -357,7 +357,7 @@ unique_ptr(unique_ptr<Ty2, Del2>&& right);
   
  The fifth constructor stores `ptr` in `stored_ptr` and moves `deleter` into `stored_deleter`. The sixth and seventh constructors store `right.reset()` in `stored_ptr` and moves `right.get_deleter()` into `stored_deleter`.  
   
-##  <a name="unique_ptr__dtorunique_ptr"></a>  unique_ptr ~unique_ptr  
+##  <a name="dtorunique_ptr"></a>  unique_ptr ~unique_ptr  
  The destructor for `unique_ptr`, destroys a `unique_ptr` object.  
   
 ```  

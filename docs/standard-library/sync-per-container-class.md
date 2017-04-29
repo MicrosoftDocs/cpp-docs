@@ -54,14 +54,14 @@ class sync_per_container
   
 |||  
 |-|-|  
-|[equals](#sync_per_container__equals)|Compares two caches for equality.|  
+|[equals](#equals)|Compares two caches for equality.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="sync_per_container__equals"></a>  sync_per_container::equals  
+##  <a name="equals"></a>  sync_per_container::equals  
  Compares two caches for equality.  
   
 ```

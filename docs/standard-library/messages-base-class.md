@@ -46,7 +46,7 @@ struct messages_base : locale::facet {
 ```  
   
 ## Remarks  
- The type catalog is a synonym for type `int` that describes the possible return values from messages:: [do_open](../standard-library/messages-class.md#messages__do_open).  
+ The type catalog is a synonym for type `int` that describes the possible return values from messages:: [do_open](../standard-library/messages-class.md#do_open).  
   
 ## Requirements  
  **Header:** \<locale>  

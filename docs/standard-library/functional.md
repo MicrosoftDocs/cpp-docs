@@ -170,8 +170,8 @@ Defines C++ Standard Library functions that help construct *function objects*—
   
 |||  
 |-|-|  
-|[operator==](../standard-library/functional-operators.md#operator_eq_eq)|Disallows equality comparison of callable objects.|  
-|[operator!=](../standard-library/functional-operators.md#operator_neq)|Disallows inequality comparison of callable objects.|  
+|[operator==](../standard-library/functional-operators.md#op_eq_eq)|Disallows equality comparison of callable objects.|  
+|[operator!=](../standard-library/functional-operators.md#op_neq)|Disallows inequality comparison of callable objects.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

@@ -87,13 +87,13 @@ Defines the iterator primitives, predefined iterators and stream iterators, as w
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/iterator-operators.md#operator_neq)|Tests if the iterator object on the left side of the operator is not equal to the iterator object on the right side.|  
-|[operator==](../standard-library/iterator-operators.md#operator_eq_eq)|Tests if the iterator object on the left side of the operator is equal to the iterator object on the right side.|  
-|[operator<](../standard-library/iterator-operators.md#operator_lt_)|Tests if the iterator object on the left side of the operator is less than the iterator object on the right side.|  
-|[operator\<=](../standard-library/iterator-operators.md#operator_lt__eq)|Tests if the iterator object on the left side of the operator is less than or equal to the iterator object on the right side.|  
-|[operator>](../standard-library/iterator-operators.md#operator_gt_)|Tests if the iterator object on the left side of the operator is greater than the iterator object on the right side.|  
-|[operator>=](../standard-library/iterator-operators.md#operator_gt__eq)|Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.|  
-|[operator+](../standard-library/iterator-operators.md#operator_add)|Adds an offset to an iterator and returns the new `reverse_iterator` addressing the inserted element at the new offset position.|  
+|[operator!=](../standard-library/iterator-operators.md#op_neq)|Tests if the iterator object on the left side of the operator is not equal to the iterator object on the right side.|  
+|[operator==](../standard-library/iterator-operators.md#op_eq_eq)|Tests if the iterator object on the left side of the operator is equal to the iterator object on the right side.|  
+|[operator<](../standard-library/iterator-operators.md#op_lt)|Tests if the iterator object on the left side of the operator is less than the iterator object on the right side.|  
+|[operator\<=](../standard-library/iterator-operators.md#op_gt_eq)|Tests if the iterator object on the left side of the operator is less than or equal to the iterator object on the right side.|  
+|[operator>](../standard-library/iterator-operators.md#op_gt)|Tests if the iterator object on the left side of the operator is greater than the iterator object on the right side.|  
+|[operator>=](../standard-library/iterator-operators.md#op_gt_eq)|Tests if the iterator object on the left side of the operator is greater than or equal to the iterator object on the right side.|  
+|[operator+](../standard-library/iterator-operators.md#op_add)|Adds an offset to an iterator and returns the new `reverse_iterator` addressing the inserted element at the new offset position.|  
 |[operator-](../standard-library/iterator-operators.md#operator-)|Subtracts one iterator from another and returns the difference.|  
   
 ### Classes  

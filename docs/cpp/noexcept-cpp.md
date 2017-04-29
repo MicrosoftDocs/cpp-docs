@@ -37,32 +37,32 @@ translation.priority.ht:
   
 ## Syntax  
   
-```cpp  
-ReturnType FunctionName(params) noexcept;  
-ReturnType FunctionName(params) noexcept(noexcept(expression);  
-```  
+> *noexcept-expression*:  
+> &nbsp;&nbsp;&nbsp;&nbsp;**noexcept**  
+> &nbsp;&nbsp;&nbsp;&nbsp;**noexcept(** *constant-expression* **)**  
   
-#### Parameters  
- expression  
- A constant expression that evaluates to true or false. The unconditional version is equivalent to noexcept(true).  
+### Parameters  
+ *constant-expression*  
+ A constant expression of type `bool` that represents whether the set of potential exception types is empty. The unconditional version is equivalent to `noexcept(true)`.  
   
 ## Remarks  
- `noexcept` ( and its synonym `noecept(true)`) specify that the function will never throw an exception or allow an exception to be propagated from any other function that it invokes either directly or indirectly. More specifically, `noexcept` means the function is `noexcept` only if all the functions that it calls are also noexcept or const, and there are no potentially evaluated dynamic casts that require a run-time check, typeid expressions applied to a glvalue expression whose type is a polymorphic class type, or throw expressions. However, the compiler does not necessarily check every code path for exceptions that might bubble up to a `noexcept` function. If an exception does reach a function marked `noexcept`, [std::terminate](../standard-library/exception-functions.md#terminate) is invoked immediately and there is no guarantee that destructors of any in-scope objects will be invoked.  
+ A *noexcept expression* is a kind of *exception specification*, a suffix to a function declaration that represents a set of types that might be matched by an exception handler for any exception that exits a function. Unary conditional operator `noexcept(`*constant_expression*`)` where *constant_expression* yeilds `true`, and its unconditional synonym `noexcept`, specify that the set of potential exception types that can exit a function is empty. That is, the function never throws an exception and never allows an exception to be propagated outside its scope. The operator `noexcept(`*constant_expression*`)` where *constant_expression* yeilds `false`, or the absence of an exception specification (other than for a destructor or deallocation function), indicates that the set of potential exceptions that can exit the function is the set of all types.  
+ 
+ Mark a function as `noexcept` only if all the functions that it calls, either directly or indirectly, are also `noexcept` or `const`. The compiler does not necessarily check every code path for exceptions that might bubble up to a `noexcept` function. If an exception does exit the outer scope of a function marked `noexcept`, [std::terminate](../standard-library/exception-functions.md#terminate) is invoked immediately, and there is no guarantee that destructors of any in-scope objects will be invoked. Use `noexcept` instead of the dynamic exception specifier `throw`, which is deprecated in C++11 and later and not fully implemented in Visual Studio. We recommended you apply `noexcept` to any function that never allows an exception to propagate up the call stack. When a function is declared `noexcept`, it enables the compiler to generate more efficient code in several different contexts.    
   
- A function declared with a conditional noexcept that evaluates to noexcept(false) specifies that it does permit exceptions to propagate. For example, a function that copies its argument might be declared noexcept on the condition that the object being copied is a plain old data type (POD). Such a function could be declared like this:  
+## Example  
+A template function that copies its argument might be declared `noexcept` on the condition that the object being copied is a plain old data type (POD). Such a function could be declared like this:  
   
-```  
+```cpp  
 #include <type_traits>  
   
 template <typename T>  
-T copy_object(T& obj) noexcept(std::is_pod<T>)  
+T copy_object(const T& obj) noexcept(std::is_pod<T>)  
 {  
- //. . .   
+   // ...   
 }  
-  
 ```  
-  
- Use `noexcept` instead of the exception specifier `throw`, which is deprecated in C++11 and later. We recommended you apply `noexcept` to a function when you are sure it will never allow an exception to propagate up the call stack. A function that is declared with `noexcept` enables compilers to generate more efficient code in several different contexts.  
   
 ## See Also  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)
+ [Exception Specifications (throw, noexcept)](../cpp/exception-specifications-throw-cpp.md)

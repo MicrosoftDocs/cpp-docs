@@ -279,16 +279,6 @@ static_assert(test2, "PASS2");
 According to the C++ standard, a class declared inside an anonymous namespace has internal linkage, and therefore cannot be exported. In Visual Studio 2015 and earlier, this rule was not enforced. In Visual Studio 2017 the rule is partially enforced. The following example raises this error in Visual Studio 2017: "error C2201: 'const `anonymous namespace'::S1::`vftable'': must have external linkage in order to be exported/imported."
 
 ```cpp
-namespace
-{
-	struct __declspec(dllexport) S1 { virtual void f() {} }; //C2201
-}
-```
-
-### Classes declared in anonymous namespaces
-According to the C++ standard, a class declared inside an anonymous namespace has internal linkage, and therefore cannot be exported. In Visual Studio 2015 and earlier, this rule was not enforced. In Visual Studio 2017 the rule is partially enforced. The following example raises this error in Visual Studio 2017: "error C2201: 'const `anonymous namespace'::S1::`vftable'': must have external linkage in order to be exported/imported."
-
-```cpp
 struct __declspec(dllexport) S1 { virtual void f() {} }; //C2201
 ```
 

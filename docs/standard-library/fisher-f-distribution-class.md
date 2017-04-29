@@ -76,8 +76,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
   
 ||||  
 |-|-|-|  
-|[fisher_f_distribution](#fisher_f_distribution__fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|  
-|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#fisher_f_distribution__param_type)|  
+|[fisher_f_distribution](#fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|  
+|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#param_type)|  
   
  The property functions `m()` and `n()` return the values for the stored distribution parameters `m` and `n` respectively.  
   
@@ -231,7 +231,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="fisher_f_distribution__fisher_f_distribution"></a>  fisher_f_distribution::fisher_f_distribution  
+##  <a name="fisher_f_distribution"></a>  fisher_f_distribution::fisher_f_distribution  
  Constructs the distribution.  
   
 ```  
@@ -256,7 +256,7 @@ explicit fisher_f_distribution(const param_type& parm);
   
  The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="fisher_f_distribution__param_type"></a>  fisher_f_distribution::param_type  
+##  <a name="param_type"></a>  fisher_f_distribution::param_type  
  Stores the parameters of the distribution.  
   
 ```cpp  

@@ -35,14 +35,16 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C2753
-'class' : template class has already been defined  
+'*template*' : partial specialization cannot match argument list for primary template  
   
  If the template argument list matches the parameter list, the compiler treats it as the same template. Defining the same template twice is not allowed.  
   
- The following sample generates C2753:  
+## Example
+ The following sample generates C2753 and shows a way to fix it:  
   
-```  
+```cpp  
 // C2753.cpp  
+// compile with: cl /c C2753.cpp
 template<class T>  
 struct A {};  
   

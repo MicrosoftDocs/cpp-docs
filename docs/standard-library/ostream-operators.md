@@ -16,9 +16,9 @@ manager: "ghogen"
 # &lt;ostream&gt; operators
 ||  
 |-|  
-|[operator&lt;&lt;](#operator_lt__lt_)|  
+|[operator&lt;&lt;](#op_lt_lt)|  
   
-##  <a name="operator_lt__lt_"></a>  operator&lt;&lt;  
+##  <a name="op_lt_lt"></a>  operator&lt;&lt;  
  Writes various types to the stream.  
   
 ```
@@ -101,7 +101,7 @@ basic_ostream <_Elem, _Tr>& operator<<(
  The stream.  
   
 ### Remarks  
- The `basic_ostream` class also defines several insertion operators. For more information, see [basic_ostream::operator&lt;&lt;](../standard-library/basic-ostream-class.md#basic_ostream_operator_lt_lt_).  
+ The `basic_ostream` class also defines several insertion operators. For more information, see [basic_ostream::operator&lt;&lt;](../standard-library/basic-ostream-class.md#basic_ostream_operator_lt_lt).  
   
  The template function  
   
@@ -112,7 +112,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```  
   
- determines the length N = `traits_type::`[length](../standard-library/char-traits-struct.md#char_traits__length)( `str`) of the sequence beginning at `str`, and inserts the sequence. If N < `_Ostr.`[width](../standard-library/ios-base-class.md#ios_base__width), then the function also inserts a repetition of `_Ostr.``width` - N fill characters. The repetition precedes the sequence if ( `_Ostr`. [flags](../standard-library/ios-base-class.md#ios_base__flags) & `adjustfield` != [left](../standard-library/ios-functions.md#left). Otherwise, the repetition follows the sequence. The function returns `_Ostr`.  
+ determines the length N = `traits_type::`[length](../standard-library/char-traits-struct.md#length)( `str`) of the sequence beginning at `str`, and inserts the sequence. If N < `_Ostr.`[width](../standard-library/ios-base-class.md#width), then the function also inserts a repetition of `_Ostr.``width` - N fill characters. The repetition precedes the sequence if ( `_Ostr`. [flags](../standard-library/ios-base-class.md#flags) & `adjustfield` != [left](../standard-library/ios-functions.md#left). Otherwise, the repetition follows the sequence. The function returns `_Ostr`.  
   
  The template function  
   
@@ -143,11 +143,11 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```  
   
- except that each element `_Ch` of the sequence beginning at `str` is converted to an object of type `Elem` by calling `_Ostr.`[put](../standard-library/basic-ostream-class.md#basic_ostream__put)( `_Ostr.`[widen](../standard-library/basic-ios-class.md#basic_ios__widen)( `_Ch`)).  
+ except that each element `_Ch` of the sequence beginning at `str` is converted to an object of type `Elem` by calling `_Ostr.`[put](../standard-library/basic-ostream-class.md#put)( `_Ostr.`[widen](../standard-library/basic-ios-class.md#widen)( `_Ch`)).  
   
  The template function  
   
-``cpp
+```cpp
 template <class _Elem, class _Tr>
 basic_ostream<Elem, _Tr>& operator<<(
     basic_ostream<Elem, _Tr>& _Ostr,

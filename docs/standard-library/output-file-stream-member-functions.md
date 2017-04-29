@@ -43,7 +43,7 @@ Output stream member functions have three types: those that are equivalent to ma
 ## The open Function for Output Streams  
  To use an output file stream ([ofstream](../standard-library/basic-ofstream-class.md)), you must associate that stream with a specific disk file in the constructor or the **open** function. If you use the **open** function, you can reuse the same stream object with a series of files. In either case, the arguments describing the file are the same.  
   
- When you open the file associated with an output stream, you generally specify an **open_mode** flag. You can combine these flags, which are defined as enumerators in the `ios` class, with the bitwise OR ( &#124; ) operator. See [ios_base::openmode](../standard-library/ios-base-class.md#ios_base__openmode) for a list of the enumerators.  
+ When you open the file associated with an output stream, you generally specify an **open_mode** flag. You can combine these flags, which are defined as enumerators in the `ios` class, with the bitwise OR ( &#124; ) operator. See [ios_base::openmode](../standard-library/ios-base-class.md#openmode) for a list of the enumerators.  
   
  Three common output stream situations involve mode options:  
   

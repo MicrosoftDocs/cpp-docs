@@ -72,8 +72,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[lognormal_distribution](#lognormal_distribution__lognormal_distribution)|`lognormal_distribution::m`|`lognormal_distribution::param`|  
-|`lognormal_distribution::operator()`|`lognormal_distribution::s`|[param_type](#lognormal_distribution__param_type)|  
+|[lognormal_distribution](#lognormal_distribution)|`lognormal_distribution::m`|`lognormal_distribution::param`|  
+|`lognormal_distribution::operator()`|`lognormal_distribution::s`|[param_type](#param_type)|  
   
 The property functions `m()` and `s()` return the values for the stored distribution parameters *m* and *s*, respectively.  
   
@@ -178,7 +178,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="lognormal_distribution__lognormal_distribution"></a>  lognormal_distribution::lognormal_distribution  
+##  <a name="lognormal_distribution"></a>  lognormal_distribution::lognormal_distribution  
  Constructs the distribution.  
   
 ```  
@@ -203,7 +203,7 @@ The first constructor constructs an object whose stored `m` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="lognormal_distribution__param_type"></a>  lognormal_distribution::param_type  
+##  <a name="param_type"></a>  lognormal_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```  

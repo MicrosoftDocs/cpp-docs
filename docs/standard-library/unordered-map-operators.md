@@ -14,9 +14,9 @@ manager: "ghogen"
 # &lt;unordered_map&gt; operators
 |||||  
 |-|-|-|-|  
-|[operator!=](#operator_neq)|[operator==](#operator_eq_eq)|[operator!=](#operator_neq_multimap)|[operator==](#operator_eq_eq_multimap)|  
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|[operator!=](#op_neq_multimap)|[operator==](#op_eq_eq_multimap)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests whether the [unordered_map](../standard-library/unordered-map-class.md) object on the left side of the operator is not equal to the unordered_map object on the right side.  
   
 ```
@@ -77,7 +77,7 @@ int main( )
   
  `um2 != um3: true`  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests whether the [unordered_map](../standard-library/unordered-map-class.md) object on the left side of the operator is equal to the unordered_map object on the right side.  
   
 ```
@@ -138,7 +138,7 @@ int main( )
   
  `um2 == um3: false`  
   
-##  <a name="operator_neq_multimap"></a>  operator!=  
+##  <a name="op_neq_multimap"></a>  operator!=  
  Tests whether the [unordered_multimap](../standard-library/unordered-multimap-class.md) object on the left side of the operator is not equal to the unordered_multimap object on the right side.  
   
 ```
@@ -200,7 +200,7 @@ int main( )
   
  `um2 != um3: true`  
   
-##  <a name="operator_eq_eq_multimap"></a>  operator==  
+##  <a name="op_eq_eq_multimap"></a>  operator==  
  Tests whether the [unordered_multimap](../standard-library/unordered-multimap-class.md) object on the left side of the operator is equal to the unordered_multimap object on the right side.  
   
 ```
