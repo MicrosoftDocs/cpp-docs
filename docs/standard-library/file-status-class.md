@@ -32,7 +32,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # file_status Class
-Wraps a [file_type](../standard-library/filesystem-enumerations.md#filesystem__file_type) and file [perms](../standard-library/filesystem-enumerations.md#filesystem__perms).  
+Wraps a [file_type](../standard-library/filesystem-enumerations.md#file_type) and file [perms](../standard-library/filesystem-enumerations.md#perms).  
   
 ## Syntax  
   

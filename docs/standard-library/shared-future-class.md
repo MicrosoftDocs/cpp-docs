@@ -52,30 +52,30 @@ class shared_future;
   
 |Name|Description|  
 |----------|-----------------|  
-|[shared_future](#shared_future__shared_future)|Constructs a `shared_future` object.|  
+|[shared_future](#shared_future)|Constructs a `shared_future` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[get](#shared_future__get)|Retrieves the result that's stored in the *associated asynchronous state*.|  
-|[valid](#shared_future__valid)|Specifies whether the object is not empty.|  
-|[wait](#shared_future__wait)|Blocks the current thread until the associated asynchronous state is ready.|  
-|[wait_for](#shared_future__wait_for)|Blocks until the associated asynchronous state is ready or until the specified time has elapsed.|  
-|[wait_until](#shared_future__wait_until)|Blocks until the associated asynchronous state is ready or until a specified point in time.|  
+|[get](#get)|Retrieves the result that's stored in the *associated asynchronous state*.|  
+|[valid](#valid)|Specifies whether the object is not empty.|  
+|[wait](#wait)|Blocks the current thread until the associated asynchronous state is ready.|  
+|[wait_for](#wait_for)|Blocks until the associated asynchronous state is ready or until the specified time has elapsed.|  
+|[wait_until](#wait_until)|Blocks until the associated asynchronous state is ready or until a specified point in time.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[shared_future::operator=](#shared_future__operator_eq)|Assigns a new associated asynchronous state.|  
+|[shared_future::operator=](#op_eq)|Assigns a new associated asynchronous state.|  
   
 ## Requirements  
  **Header:** \<future>  
   
  **Namespace:** std  
   
-##  <a name="shared_future__get"></a>  shared_future::get
+##  <a name="get"></a>  shared_future::get
  Retrieves the result that's stored in the *associated asynchronous state*.  
   
 ```
@@ -95,7 +95,7 @@ void get() const;
   
  Because no stored value exists for the specialization `shared_future<void>`, the method returns `void`.  
   
-##  <a name="shared_future__operator_eq"></a>  shared_future::operator=  
+##  <a name="op_eq"></a>  shared_future::operator=  
  Transfers an *associated asynchronous state* from a specified object.  
   
 ```
@@ -115,7 +115,7 @@ shared_future& operator=(const shared_future& Right);
   
  For the second method, `Right` maintains its associated asynchronous state.  
   
-##  <a name="shared_future__shared_future"></a>  shared_future::shared_future Constructor  
+##  <a name="shared_future"></a>  shared_future::shared_future Constructor  
  Constructs a `shared_future` object.  
   
 ```
@@ -136,7 +136,7 @@ shared_future(const shared_future& Right);
   
  The fourth constructor constructs a `shared_future` object that has the same associated asynchronous state as `Right`.  
   
-##  <a name="shared_future__valid"></a>  shared_future::valid
+##  <a name="valid"></a>  shared_future::valid
  Specifies whether the object has an *associated asynchronous state*.  
   
 ```
@@ -146,7 +146,7 @@ bool valid() noexcept;
 ### Return Value  
  `true` if the object has an associated asynchronous state; otherwise, `false`.  
   
-##  <a name="shared_future__wait"></a>  shared_future::wait
+##  <a name="wait"></a>  shared_future::wait
  Blocks the current thread until the *associated asynchronous state* is *ready*.  
   
 ```
@@ -156,7 +156,7 @@ void wait() const;
 ### Remarks  
  An associated asynchronous state is ready only if its asynchronous provider has stored a return value or stored an exception.  
   
-##  <a name="shared_future__wait_for"></a>  shared_future::wait_for
+##  <a name="wait_for"></a>  shared_future::wait_for
  Blocks the current thread until the associated asynchronous state is *ready* or until a specified time has elapsed.  
   
 ```
@@ -175,7 +175,7 @@ future_status wait_for(
 ### Remarks  
  An associated asynchronous state is *ready* only if its asynchronous provider has stored a return value or stored an exception.  
   
-##  <a name="shared_future__wait_until"></a>  shared_future::wait_until
+##  <a name="wait_until"></a>  shared_future::wait_until
  Blocks the current thread until the associated asynchronous state is *ready* or until after a specified time point.  
   
 ```

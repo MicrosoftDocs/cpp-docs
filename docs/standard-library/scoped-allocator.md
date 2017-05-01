@@ -47,8 +47,8 @@ Defines the container template class scoped_allocator.
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/scoped-allocator-operators.md#operator_neq)|Tests if the scoped_allocator object on the left side of the operator is not equal to the list object on the right side.|  
-|[operator==](../standard-library/scoped-allocator-operators.md#operator_eq_eq)|Tests if the scoped_allocator object on the left side of the operator is equal to the list object on the right side.|  
+|[operator!=](../standard-library/scoped-allocator-operators.md#op_neq)|Tests if the scoped_allocator object on the left side of the operator is not equal to the list object on the right side.|  
+|[operator==](../standard-library/scoped-allocator-operators.md#op_eq_eq)|Tests if the scoped_allocator object on the left side of the operator is equal to the list object on the right side.|  
   
 ### Classes  
   

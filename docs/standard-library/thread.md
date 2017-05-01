@@ -76,13 +76,13 @@ Include the standard header \<thread> to define the class `thread` and various s
   
 |Name|Description|  
 |----------|-----------------|  
-|[operator>= Operator](../standard-library/thread-operators.md#operator_gt__eq)|Determines whether one `thread::id` object is greater than or equal to another.|  
-|[operator> Operator](../standard-library/thread-operators.md#operator_gt_)|Determines whether one `thread::id` object is greater than another.|  
-|[operator<= Operator](../standard-library/thread-operators.md#operator_lt__eq)|Determines whether one `thread::id` object is less than or equal to another.|  
-|[operator< Operator](../standard-library/thread-operators.md#operator_lt_)|Determines whether one `thread::id` object is less than another.|  
-|[operator!= Operator](../standard-library/thread-operators.md#operator_neq)|Compares two `thread::id` objects for inequality.|  
-|[operator== Operator](../standard-library/thread-operators.md#operator_eq_eq)|Compares two `thread::id` objects for equality.|  
-|[operator<< Operator](../standard-library/thread-operators.md#operator_lt__lt_)|Inserts a text representation of a `thread::id` object into a stream.|  
+|[operator>= Operator](../standard-library/thread-operators.md#op_gt_eq)|Determines whether one `thread::id` object is greater than or equal to another.|  
+|[operator> Operator](../standard-library/thread-operators.md#op_gt)|Determines whether one `thread::id` object is greater than another.|  
+|[operator<= Operator](../standard-library/thread-operators.md#op_lt_eq)|Determines whether one `thread::id` object is less than or equal to another.|  
+|[operator< Operator](../standard-library/thread-operators.md#op_lt)|Determines whether one `thread::id` object is less than another.|  
+|[operator!= Operator](../standard-library/thread-operators.md#op_neq)|Compares two `thread::id` objects for inequality.|  
+|[operator== Operator](../standard-library/thread-operators.md#op_eq_eq)|Compares two `thread::id` objects for equality.|  
+|[operator<< Operator](../standard-library/thread-operators.md#op_lt_lt)|Inserts a text representation of a `thread::id` object into a stream.|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)   

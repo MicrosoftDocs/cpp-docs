@@ -136,7 +136,7 @@ The tuples in the vector are
   
  **Namespace:** std  
   
-##  <a name="tuple__operator_eq"></a>  tuple::operator=  
+##  <a name="op_eq"></a>  tuple::operator=  
  Assigns a `tuple` object.  
   
 ```  
@@ -234,7 +234,7 @@ template <class... Types>
 ### Remarks  
  The function executes `left.swap(right)`.  
   
-##  <a name="tuple__tuple"></a>  tuple::tuple  
+##  <a name="tuple"></a>  tuple::tuple  
  Constructs a `tuple` object.  
   
 ```  

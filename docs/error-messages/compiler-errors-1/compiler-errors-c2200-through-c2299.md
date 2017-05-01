@@ -28,7 +28,6 @@ f1_keywords:
   - "C2265"
   - "C2269"
   - "C2278"
-  - "C2280"
   - "C2281"
   - "C2282"
   - "C2288"
@@ -54,7 +53,6 @@ helpviewer_keywords:
   - "C2265"
   - "C2269"
   - "C2278"
-  - "C2280"
   - "C2281"
   - "C2282"
   - "C2288"
@@ -172,7 +170,7 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Error C2277](compiler-error-c2277.md)|'*function*': cannot take address of this member function|  
 |Compiler Error C2278|Obsolete.|  
 |[Compiler Error C2279](compiler-error-c2279.md)|exception specification cannot appear in a typedef declaration|  
-|Compiler Error C2280|'*class*::*function*': attempting to reference a deleted function|  
+|[Compiler Error C2280](compiler-error-c2280.md)|'*class*::*function*': attempting to reference a deleted function|  
 |Compiler Error C2281|'*class*::*function*': a function can only be deleted on the first declaration|  
 |Compiler Error C2282|'*function1*' cannot override '*function2*'|  
 |[Compiler Error C2283](compiler-error-c2283.md)|'*identifer*': pure specifier or abstract override specifier not allowed on unnamed class/struct|  

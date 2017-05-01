@@ -54,7 +54,7 @@ namespace regex_constants {
   
  **Namespace:** std  
   
-##  <a name="regex_constants__error_type"></a>  regex_constants::error_type  
+##  <a name="error_type"></a>  regex_constants::error_type  
  Flags for reporting regular expression syntax errors.  
   
 ```  
@@ -113,7 +113,7 @@ enum error_type
   
  `error_backref` -- the expression contained an invalid back reference  
   
-##  <a name="regex_constants__match_flag_type"></a>  regex_constants::match_flag_type  
+##  <a name="match_flag_type"></a>  regex_constants::match_flag_type  
  Flags for regular expression matching options.  
   
 ```  
@@ -169,7 +169,7 @@ enum match_flag_type
   
  `format_first_only` -- do not search for matches after the first one  
   
-##  <a name="regex_constants__syntax_option_type"></a>  regex_constants::syntax_option_type  
+##  <a name="syntax_option_type"></a>  regex_constants::syntax_option_type  
  Flags for selecting syntax options.  
   
 ```  

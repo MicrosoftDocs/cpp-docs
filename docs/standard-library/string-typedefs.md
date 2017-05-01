@@ -35,7 +35,7 @@ string str("");
 basic_string<char> str("");
 ```  
   
- For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string__basic_string).  
+ For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).  
   
 ##  <a name="u16string"></a>  u16string  
  A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type `char16_t`.  
@@ -47,7 +47,7 @@ typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16st
 ```  
   
 ### Remarks  
- For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string__basic_string).  
+ For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).  
   
 ##  <a name="u32string"></a>  u32string  
  A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type `char32_t`.  
@@ -59,7 +59,7 @@ typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32st
 ```  
   
 ### Remarks  
- For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string__basic_string).  
+ For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).  
   
 ##  <a name="wstring"></a>  wstring  
  A type that describes a specialization of the template class [basic_string](../standard-library/basic-string-class.md) with elements of type `wchar_t`.  
@@ -79,7 +79,7 @@ wstring wstr(L"");
 basic_string<wchar_t> wstr(L"");
 ```  
   
- For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string__basic_string).  
+ For a list of string constructors, see [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).  
   
 > [!NOTE]
 >  The size of `wchar_t` is implementation-defined. If your code depends on `wchar_t` to be a certain size, check your platform's implementation (for example, with `sizeof(wchar_t)`). If you need a string character type with a width that is guaranteed to remain the same on all platforms, use [string](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string), or [u32string](../standard-library/string-typedefs.md#u32string).  

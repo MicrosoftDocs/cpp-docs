@@ -78,16 +78,16 @@ Include the standard header \<chrono> to define classes and functions that repre
 |Name|Description|  
 |----------|-----------------|  
 |[operator-](../standard-library/chrono-operators.md#operator-)|Operator for subtraction or negation of `duration` and `time_point` objects.|  
-|[operator!=](../standard-library/chrono-operators.md#operator_neq)|Inequality operator that is used with `duration` or `time_point` objects.|  
-|[operator modulo](../standard-library/chrono-operators.md#operator_modulo)|Operator for modulo operations on `duration` objects.|  
-|[operator*](../standard-library/chrono-operators.md#operator_star)|Multiplication operator for `duration` objects.|  
-|[operator/](../standard-library/chrono-operators.md#operator_)|Division operator for `duration` objects.|  
-|[operator+](../standard-library/chrono-operators.md#operator_add)|Adds `duration` and `time_point` objects.|  
-|[operator&lt;](../standard-library/chrono-operators.md#operator_lt_)|Determines whether one `duration` or `time_point` object is less than another `duration` or `time_point` object.|  
-|[operator&lt;=](../standard-library/chrono-operators.md#operator_lt__eq)|Determines whether one `duration` or `time_point` object is less than or equal to another `duration` or `time_point` object.|  
-|[operator==](../standard-library/chrono-operators.md#operator_eq_eq)|Determines whether two `duration` objects represent time intervals that have the same length, or whether two `time_point` objects represent the same point in time.|  
-|[operator&gt;](../standard-library/chrono-operators.md#operator_gt_)|Determines whether one `duration` or `time_point` object is greater than another `duration` or `time_point` object.|  
-|[operator&gt;=](../standard-library/chrono-operators.md#operator_gt__eq)|Determines whether one `duration` or `time_point` object is greater than or equal to another `duration` or `time_point` object.|  
+|[operator!=](../standard-library/chrono-operators.md#op_neq)|Inequality operator that is used with `duration` or `time_point` objects.|  
+|[operator modulo](../standard-library/chrono-operators.md#op_modulo)|Operator for modulo operations on `duration` objects.|  
+|[operator*](../standard-library/chrono-operators.md#op_star)|Multiplication operator for `duration` objects.|  
+|[operator/](../standard-library/chrono-operators.md#op_div)|Division operator for `duration` objects.|  
+|[operator+](../standard-library/chrono-operators.md#op_add)|Adds `duration` and `time_point` objects.|  
+|[operator&lt;](../standard-library/chrono-operators.md#op_lt)|Determines whether one `duration` or `time_point` object is less than another `duration` or `time_point` object.|  
+|[operator&lt;=](../standard-library/chrono-operators.md#op_lt_eq)|Determines whether one `duration` or `time_point` object is less than or equal to another `duration` or `time_point` object.|  
+|[operator==](../standard-library/chrono-operators.md#op_eq_eq)|Determines whether two `duration` objects represent time intervals that have the same length, or whether two `time_point` objects represent the same point in time.|  
+|[operator&gt;](../standard-library/chrono-operators.md#op_gt)|Determines whether one `duration` or `time_point` object is greater than another `duration` or `time_point` object.|  
+|[operator&gt;=](../standard-library/chrono-operators.md#op_gt_eq)|Determines whether one `duration` or `time_point` object is greater than or equal to another `duration` or `time_point` object.|  
   
 ### Predefined Duration Types  
  For more information about ratio types that are used in the following typedefs, see [\<ratio>](../standard-library/ratio.md).  
