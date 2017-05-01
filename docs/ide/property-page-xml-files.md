@@ -1,5 +1,5 @@
 ---
-title: "Property Page XML Files | Microsoft Docs"
+title: "Property Page XML rule files | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/27/2017"
 ms.reviewer: ""
@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 
-# Property Page XML Files
+# Property Page XML rule files
 The project property pages in the IDE are configured by XML files in the VCTargets folder. The exact path depends on which edition(s) of Visual Studio are installed, and the product language. For Visual Studio 2017 Enterprise Edition, in English, the path is `%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033`. The XML files describe the names of the rules, the categories, and the individual properties, their data type, default values, and how they are to be displayed. When you set a property in the IDE, the new value is stored in the project file.
 
 The only scenarios in which you need to understand the internal workings of these files and the Visual Studio IDE are (a) you want to create a custom property page, or (b) you want to customize your project properties by some means other than through the Visual Studio IDE. 
@@ -48,7 +48,7 @@ As shown above, each Rule has a set of properties which are organized into categ
 
 You can open cl.xml in notepad or any XML editor (see snapshot below). You will see a root node called Rule that has the same list of properties defined under it as is displayed in the UI, along with additional metadata.
 
-```xaml  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>
 <!--Copyright, Microsoft Corporation, All rights reserved.-->
 <Rule Name="CL" PageTemplate="tool" DisplayName="C/C++" SwitchPrefix="/" Order="10" xmlns="http://schemas.microsoft.com/build/2009/properties" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib">
@@ -70,12 +70,12 @@ You can open cl.xml in notepad or any XML editor (see snapshot below). You will 
 
 There is one XML file corresponding to every node under Configuration Properties in the property pages UI. You can add or remove rules in the UI by including or removing locations to corresponding XML files in the project. For example, this is how Microsoft.CppBuild.targets (one level up from the 1033 folder) includes cl.xml:
 
-```xaml  
+```xml  
 <PropertyPageSchema Condition="'$(ConfigurationType)' != 'Utility'" Include="$(VCTargetsPath)$(LangID)\cl.xml"/>
 
 ``` 
 If you strip cl.xml of all data, you will end up with the following skeleton:
-```xaml  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>
 <Rule>
   <Rule.DataSource />
@@ -95,7 +95,7 @@ The following section describes each major elements and some of the metadata tha
 
 1. **Rule:**  Rule is generally the root node in the xml file; it can have many attributes:
 
-```xaml    
+```xml    
 <Rule Name="CL" PageTemplate="tool" SwitchPrefix="/" Order="10"
           xmlns="http://schemas.microsoft.com/build/2009/properties"
           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -107,7 +107,7 @@ The following section describes each major elements and some of the metadata tha
 
    a. **Name:** The Name attribute is an id for the Rule. It needs to be unique among all the property page xml files for a project.
 
-   b. **PageTemplate:** The value of this attribute is used by the UI to choose from a collection of UI templates. The "tool" template renders the properties in a standard grid format. Other in-built values for this attribute are "debugger" and "generic". See the Debugging node and General node, respectively, to see the UI format resulting from specifying these values. The UI for "debugger" page template uses a drop-down box to switch between the properties of different debuggers whereas the "generic" template displays different property categories all in one page as opposed to having multiple category sub-nodes under the Rule node. This attribute is just a suggestion to the UI; the xml file is designed to be UI independent. So, a different UI could use this attribute for different purposes.
+   b. **PageTemplate:** The value of this attribute is used by the UI to choose from a collection of UI templates. The "tool" template renders the properties in a standard grid format. Other in-built values for this attribute are "debugger" and "generic". See the Debugging node and General node, respectively, to see the UI format resulting from specifying these values. The UI for "debugger" page template uses a drop-down box to switch between the properties of different debuggers whereas the "generic" template displays different property categories all in one page as opposed to having multiple category sub-nodes under the Rule node. This attribute is just a suggestion to the UI; the xml file is designed to be UI independent. A different UI might use this attribute for different purposes.
 
   c. **SwitchPrefix:** This is the prefix used in the command line for the switches. A value of "/" would result in switches that look like /ZI, /nologo, /W3, etc.
 
@@ -119,32 +119,32 @@ The following section describes each major elements and some of the metadata tha
 
   g. **DataSource:** This is a very important property that tells the project system the location from which the property value should read from and written to, and its grouping (explained below). For cl.xml, these values are:
 
-```xaml  
+```xml  
        <DataSource Persistence="ProjectFile" ItemType="ClCompile" Label="" HasConfigurationCondition="true" />
 ```  
-   - Persistence="ProjectFile" tells the project system that all properties for the Rule should be written to the project file or the property sheet file (depending on which node was used to spawn the property pages). The other possible value is "UserFile" which will write the value to the .user file.
+   - `Persistence="ProjectFile` tells the project system that all properties for the Rule should be written to the project file or the property sheet file (depending on which node was used to spawn the property pages). The other possible value is "UserFile" which will write the value to the .user file.
 
    - `ItemType="ClCompile"` says that the properties will be stored as ItemDefinition metadata or item metadata (the latter only if the property pages were spawned from a file node in solution explorer) of this item type. If this field is not set, then the property is written as a common property in a PropertyGroup.
 
-   - `Label=""` indicates that when the properties are written as ItemDefinition metadata, the label of the parent ItemDefinitionGroup will be empty (every MSBuild element can have a Label). Visual Studio 2017 uses labeled groups to navigate the .vcxproj project file. Note that the groups that contain most Rule properties have an empty string as a label.
+   - `Label=""` indicates that when the properties are written as `ItemDefinition` metadata, the label of the parent ItemDefinitionGroup will be empty (every MSBuild element can have a Label). Visual Studio 2017 uses labeled groups to navigate the .vcxproj project file. Note that the groups that contain most Rule properties have an empty string as a label.
 
    - `HasConfigurationCondition="true"` tells the project system to affix a configuration condition to the value so that it takes effect only for the current project configuration (the condition could be affixed to the parent group or the value itself). For example,  open the property pages off the project node and set the value of the property **Treat Warnings As Error** under **Configuration Properties > C/C++ General** to "Yes". The following value is written to the project file. Notice the configuration condition attached to the parent ItemDefinitionGroup.
 
-```xaml  
+```xml  
      <ItemDefinitionGroup Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">
         <ClCompile>
            <TreatWarningAsError>true</TreatWarningAsError>
         </ClCompile>
      </ItemDefinitionGroup>
  ```
-   If this value were set in the property page for a specific file, say stdafx.cpp, then the property value would be written under the stdafx.cpp item in the project file as shown below. Notice how the configuration condition is directly attached to the metadata itself.
+   If this value were set in the property page for a specific file, such as stdafx.cpp, then the property value would be written under the stdafx.cpp item in the project file as shown below. Notice how the configuration condition is directly attached to the metadata itself.
 
- ```xaml  
-     <ItemGroup>
-          <ClCompile Include="stdafx.cpp">
-          <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">true</TreatWarningAsError>
-          </ClCompile>
-    </ItemGroup>
+ ```xml  
+<ItemGroup>
+   <ClCompile Include="stdafx.cpp">
+      <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">true</TreatWarningAsError>
+   </ClCompile>
+</ItemGroup>
  ```
    Another attribute of **DataSource** not listed above is **PersistedName**. You can use this attribute to represent a property in the project file using a different name. By default this attribute is set to the property’s **Name**. 
 
@@ -156,26 +156,26 @@ The following section describes each major elements and some of the metadata tha
 
 2.  **Category:** A Rule can have multiple Categories. The order in which the categories are listed in the xml file is a suggestion to the UI to display the categories in the same order. For example,  the order of the categories under the C/C++ node as seen in the UI –General, Optimization, Preprocessor, …  – is the same as that in cl.xml. A sample category looks like this:
 
-```xaml  
-<Category Name="Optimization">
-      <Category.DisplayName>
+```xml  
+ <Category Name="Optimization">
+    <Category.DisplayName>
         <sys:String>Optimization</sys:String>
-      </Category.DisplayName>
-    </Category>
+    </Category.DisplayName>
+ </Category>
 ```
 The above snippet shows the **Name** and **DisplayName** attributes that have been described before. Once again, there are other attributes a **Category** can have that are not used above. You can know about them by reading the documentation or by examining the assemblies using ildasm.exe.
 
 3. **Properties:** This is the meat of the xml file and contains the list of all properties in this Rule. Each property can be one of five possible types shown in the XAML skeleton above. Of course, you could have only a few of those types in your file. A property has a number of attributes that allow it to be described richly. I’ll explain only the **StringProperty** here. The rest are very similar.
 
-```xaml  
+```xml  
 <StringProperty Subtype="file" Name="ObjectFileName" Category="Output Files" Switch="Fo">
-     <StringProperty.DisplayName>
-       <sys:String>Object File Name</sys:String>
-     </StringProperty.DisplayName>
-     <StringProperty.Description>
-       <sys:String>Specifies a name to override the default object file name; can be file or directory name.(/Fo[name])</sys:String>
-     </StringProperty.Description>
-   </StringProperty>
+  <StringProperty.DisplayName>
+    <sys:String>Object File Name</sys:String>
+  </StringProperty.DisplayName>
+  <StringProperty.Description>
+    <sys:String>Specifies a name to override the default object file name; can be file or directory name.(/Fo[name])</sys:String>
+  </StringProperty.Description>
+</StringProperty>
 ```
 Most of the attributes in the snippet have been described before. The new ones are Subtype, Category and Switch.
 
@@ -192,3 +192,5 @@ Most of the attributes in the snippet have been described before. The new ones a
    e. **ReadOnly:** If you want to provide a read-only view of this property’s value in the property pages, set this attribute to true.
 
    f. **IncludeInCommandLine:** Some properties may not need to be passed to a tool during build time. Setting this attribute to false will prevent it from being passed.
+
+
