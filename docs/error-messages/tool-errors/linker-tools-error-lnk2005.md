@@ -35,9 +35,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Linker Tools Error LNK2005
-symbol already defined in object  
+*symbol* already defined in object  
   
-The given `symbol`, displayed in its decorated form, was multiply defined.  
+The symbol *symbol*, displayed in its decorated form, was multiply defined.  
   
 For more information, see the Knowledge Base articles:  
   

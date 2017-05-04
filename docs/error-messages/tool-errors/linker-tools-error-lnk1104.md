@@ -42,26 +42,28 @@ The linker could not open the specified file.
   
 To fix this error, check for the following possible causes:  
   
--   The file *filename* does not exist. If your project depends on another project to produce this file, make sure your project dependencies are set correctly.  
+-   The file *filename* does not exist. If your project depends on another project to produce this file, make sure your project dependencies are set correctly, so the file is built before it is required.  
   
--   When specifying libraries in a project's Property Pages dialog box, library names must be separated by spaces, not commas.  
+-   The filename or path specified on the command line is incorrect, or the path has an invalid drive specification. Check your spelling and verify the file exists at the specified location.  
   
--   The filename or path specified on the command line is incorrect, or the path has an invalid drive specification. Check your spelling and verify the file name and location. If you are building a project that was copied from another computer, check the paths on the [VC++ Directories Property Page](../../ide/vcpp-directories-property-page.md) and update them if necessary.  
+-   If you are using the Visual Studio IDE to build a project that was copied from another computer, the installation locations for required libraries may be different. Check the Library Directories property on the [VC++ Directories Property Page](../../ide/vcpp-directories-property-page.md) and update it if necessary. To see and edit the current library paths set in the IDE, choose the drop-down control for the Library Directories property and choose **Edit**. The **Evaluated value** section of the Library Directories dialog lists the current paths searched for library files.  
   
--   The libraries for the project configuration or platform toolset are not installed. Verify that the platform toolset and Windows SDK specified in the Property Pages for your project is installed, and includes the toolset and libraries needed by your configuration settings. There are separate settings for Debug and Retail configurations, so if one build works but the other causes an error, make sure the settings are correct and the required tools are installed for both configurations.  
+-   If you're building a project that was created using an older version of Visual Studio, the toolset and libraries for that version may not be not installed. To fix this issue, you have two options: you can upgrade the project to use the platform toolset you have installed, or you can install the older toolset and build the project unchanged. For more information, see [Upgrading Projects from Earlier Versions of Visual C++](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.mdd) and [Use native multi-targeting in Visual Studio to build old projects](../../porting/use-native-multi-targeting.md).
   
--   You don't have enough disk space. It's not unusual for the linker to consume a lot of temporary disk space during a link.  
+-   The libraries for the current project configuration or platform toolset are not installed. Verify that the platform toolset and Windows SDK specified in the [General property page](../../ide/general-property-page-project.md) for your project are installed, and verify that the required libraries are available in the Library Directories specified in the [VC++ Directories Property Page](../../ide/vcpp-directories-property-page.md) for your configuration settings. There are separate settings for Debug and Retail configurations, so if one build works but the other causes an error, make sure the settings are correct and the required tools and libraries are installed for both configurations.  
+  
+-   Another program may have the file open and the linker cannot write to it. Antivirus programs often temporarily block access to newly created files. Try excluding your project build directories from the antivirus scanner.  
+  
+-   You have an incorrect LIB environment variable. In command line builds, verify that the LIB environment variable is set and contains all the directories for the libraries you use. In the IDE, the LIB variable is set by the Library Directories property on the [VC++ Directories Property Page](../../ide/vcpp-directories-property-page.md). Make sure all the directories that contain the libraries you need are listed here.  
+  
+-   When specifying individual libraries in a project's Property Pages dialog box, library names must be separated by spaces, not commas.  
+  
+-   The path for *filename* expands to more than 260 characters. Change the names or rearrange your directory structure if needed to shorten the paths to the required files.  
   
 -   You have insufficient file permissions to access *filename*.  
   
--   The path for *filename* expands to more than 260 characters. Change the names or rearrange your directory structure if needed to shorten the paths to the required files.  
+-   You don't have enough disk space. The linker uses temporary files in several cases. Even if you have sufficient disk space, a very large link can deplete or fragment the available disk space. Consider using the [/OPT (Optimizations)](../../build/reference/opt-optimizations.md) option; doing transitive comdat elimination reads all the object files multiple times.  
   
 -   If the *filename* is named LNK*n*, which is a filename generated by the linker for a temporary file, the directory specified in the TMP environment variable may not exist, or more than one directory may be specified for the TMP environment variable. Only one directory path should be specified for the TMP environment variable.  
   
 -   If the error message occurs for a library name, and you recently ported the .mak file from a previous Microsoft Visual C++ development system, the library may no longer be valid. Ensure that the library name is correct and still exists in the specified location, or update the LIB path to point to the new location.  
-  
--   Another program may have the file open and the linker cannot write to it. Antivirus programs often temporarily block access to newly created files. Try excluding your project build directories from the antivirus scanner.  
-  
--   You have an incorrect LIB environment variable. For information on how to update the LIB environment variable, see [VC++ Directories Property Page](../../ide/vcpp-directories-property-page.md). Make sure any directories with libraries you need are listed here.  
-  
--   The linker uses temporary files in several cases. Even if you have sufficient disk space, a very large link can deplete or fragment the available disk space. Consider using the [/OPT (Optimizations)](../../build/reference/opt-optimizations.md) option; doing transitive comdat elimination reads all the object files multiple times.
