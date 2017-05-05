@@ -56,7 +56,7 @@ This topic demonstrates how to debug an application that uses C++ Accelerated Ma
   
 -   Read [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md).  
   
--   Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](http://msdn.microsoft.com/library/40b38559-b8de-4041-91f2-68986767c976).  
+-   Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).  
   
 -   Make sure you are running [!INCLUDE[win8](../../build/reference/includes/win8_md.md)] or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] to support debugging on the software emulator.  
   

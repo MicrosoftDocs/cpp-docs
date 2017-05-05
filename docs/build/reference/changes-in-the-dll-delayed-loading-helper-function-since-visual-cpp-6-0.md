@@ -71,4 +71,4 @@ If you have multiple versions of Visual C++ on your computer or if you defined y
  The linker can load all imports from a DLL that you specified to be delay loaded. See [Loading All Imports for a Delay-Loaded DLL](../../build/reference/loading-all-imports-for-a-delay-loaded-dll.md) for more information.  
   
 ## See Also  
- [Understanding the Helper Function](http://msdn.microsoft.com/en-us/6279c12c-d908-4967-b0b3-cabfc3e91d3d)
+ [Understanding the Helper Function](understanding-the-helper-function.md)

@@ -76,5 +76,5 @@ The Test Container application, shipped in Visual C++, is an ActiveX control con
   
 ## See Also  
  [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)   
- [How to: Debug an ActiveX Control](http://msdn.microsoft.com/library/bbc02cf7-a7e6-44fe-99af-87a43e1d7251)
+ [How to: Debug an ActiveX Control](/visualstudio/debugger/how-to-debug-an-activex-control)
 

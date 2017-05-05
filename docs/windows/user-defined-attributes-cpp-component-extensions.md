@@ -48,7 +48,7 @@ Custom attributes enable you to extend the metadata of an interface, class or st
  Compiler option: **/ZW**  
   
 ## Common Language Runtime  
- Custom attributes let you extend the metadata of a managed element. For more information, see [Attributes](http://msdn.microsoft.com/Library/30386922-1e00-4602-9ebf-526b271a8b87).  
+ Custom attributes let you extend the metadata of a managed element. For more information, see [Attributes](/dotnet/standard/attributes/index).  
   
 ### Remarks  
  The information and syntax presented in this topic is meant to supersede the information presented in [attribute](../windows/attribute.md).  
