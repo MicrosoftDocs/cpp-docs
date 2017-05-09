@@ -129,7 +129,7 @@ Visual Studio 2017 offers three ways to organize your C++ source code and relate
   
  When you deploy a native C++ desktop application to another computer, you must install the application itself and any library files that the application depends on. There are three ways to deploy the Visual C++ runtime with an application: central deployment, local deployment, or static linking. For more information, see [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md).  
   
- For more information about deploying a C++/CLI program, see [Deployment Guide for Developers](http://msdn.microsoft.com/Library/094d043e-33c4-40ba-a503-e0b20b55f4cf),  
+ For more information about deploying a C++/CLI program, see [Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers),  
   
 ## Related Articles  
   
