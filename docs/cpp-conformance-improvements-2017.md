@@ -29,7 +29,7 @@ translation.priority.ht:
 ---
    
 # C++ conformance improvements in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
-
+For improvements in Update Version 15.3, see [Bug fixes in Visual Studio Update Version 15.3](#update_153).
 ## New language features  
 With support for generalized constexpr and NSDMI for aggregates, the compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
@@ -349,9 +349,9 @@ void f(ClassLibrary1::Class1 ^r1, ClassLibrary1::Class2 ^r2)
 }
 ```
 
-## Visual Studio 2017 Updates
+## <a name="update_153"></a> Visual Studio 2017 Update Version 15.3
 ### Calls to deleted member templates
-In previous versions of Visual Studio, the compiler in some cases would fail to emit an error for calls to a deleted member template. The following code now produces C2280, "'int S<int>::f<int>(void)': attempting to reference a deleted function":
+In previous versions of Visual Studio, the compiler in some cases would fail to emit an error for ill-formed calls to a deleted member template which would’ve potentially caused crashes at runtime. The following code now produces C2280, "'int S<int>::f<int>(void)': attempting to reference a deleted function":
 ```cpp
 template<typename T> 
 struct S { 
@@ -366,7 +366,7 @@ decltype(S<int>::f<int>()) i; // this should fail
 To fix the error, declare i as `int`.
 
 ### Pre-condition checks for type traits
-Visual Studio 2017 Update 1 improves pre-condition checks for type-traits to more strictly follow the standard. One such check is for assignable. The following code produces C2139 in Update 1:
+Visual Studio 2017 Update Version 15.3 improves pre-condition checks for type-traits to more strictly follow the standard. One such check is for assignable. The following code produces C2139 in Update Version 15.3:
 
 ```cpp
 struct S; 
@@ -379,7 +379,7 @@ static_assert(__is_convertible_to(E, E), "fail"); // this is allowed in VS2017 R
 ### New compiler warning and runtime checks on native-to-managed marshaling
 Calling from managed functions to native functions requires marshalling. The CLR performs the marshaling but it doesn't understand C++ semantics. If you pass a native object by value, CLR will either call the object's copy-constructor or use BitBlt, which may cause undefined behavior at runtime. 
  
-Now the compiler will emit a warning if it can know at compile time that a native object with deleted copy ctor is passed between native and managed boundary by value. For those cases in which the compiler doesn't know at compile time, it will inject a runtime check so that the program will call std::terminate immediately when an ill-formed marshalling occurs. In Update 3, the following code produces C4606 "
+Now the compiler will emit a warning if it can know at compile time that a native object with deleted copy ctor is passed between native and managed boundary by value. For those cases in which the compiler doesn't know at compile time, it will inject a runtime check so that the program will call std::terminate immediately when an ill-formed marshalling occurs. In Update Version 15.3, the following code produces C4606 "
 'A': passing argument by value across native and managed boundary requires valid copy constructor. Otherwise the runtime behavior is undefined".
 ```cpp
 class A 
@@ -410,10 +410,10 @@ int main()
     f(A()); // This call from managed to native requires marshalling. The CLR doesn't understand C++ and uses BitBlt, which will result in a double-free later. 
 }
 ```
-To fix the error, mark the caller as native to avoid marshalling.
+To fix the error, remove the `#pragma managed` directive to mark the caller as native and avoid marshalling. 
 
 ### Experimental API warning for WinRT
-WinRT APIs that are released for experimentation and feedback will be decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Update 3, the compiler will produce warning C4698 when it encounters  the attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs will start triggering this compiler warning. Newer Windows SDKs will have the attribute removed from all shipped types, but if you are using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
+WinRT APIs that are released for experimentation and feedback will be decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Update Version 15.3, the compiler will produce warning C4698 when it encounters  the attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs will start triggering this compiler warning. Newer Windows SDKs will have the attribute removed from all shipped types, but if you are using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
 The following code produces warning C4698: "'Windows::Storage::IApplicationDataStatics2::GetForUserAsync' is for evaluation purposes only and is subject to change or removal in future updates":
 ```cpp
 Windows::Storage::IApplicationDataStatics2::GetForUserAsync()
@@ -430,7 +430,7 @@ Windows::Storage::IApplicationDataStatics2::GetForUserAsync()
 #pragma warning(pop)
 ```
 ### Out-of-line definition of a template member function 
-Update 3 produces an error when it encounters an out-of-line definition of a template member function that was not declared in the class. The following code now produces error C2039: 'f': is not a member of 'S':
+Update Version 15.3 produces an error when it encounters an out-of-line definition of a template member function that was not declared in the class. The following code now produces error C2039: 'f': is not a member of 'S':
 
 ```cpp
 struct S {}; 
@@ -451,11 +451,11 @@ void S::f(T t) {}
 ```
 
 ### Attempting to take the address of "this" pointer
-In C++ 'this' is an prvalue of type pointer to X. You cannot take the address of 'this' or bind it to an lvalue reference. In previous versions of Visual Studio, the compiler would allow you to circumvent this restriction by performing a cast. In Update 3, the compiler produces error C2664.
+In C++ 'this' is an prvalue of type pointer to X. You cannot take the address of 'this' or bind it to an lvalue reference. In previous versions of Visual Studio, the compiler would allow you to circumvent this restriction by performing a cast. In Update Version 15.3, the compiler produces error C2664.
 
 ### Conversion to an inaccessible base class
-Update 3 produces an error when you attempt to convert a type to a base class which is inaccessible. The following code now raises  
-error C2243: 'type cast': conversion from 'D *' to 'B *' exists, but is inaccessible:
+Update Version 15.3 produces an error when you attempt to convert a type to a base class which is inaccessible. The compiler now raises  
+"error C2243: 'type cast': conversion from 'D *' to 'B *' exists, but is inaccessible". The following code is ill-formed and can potentially cause a crash at runtime. The compiler now produces C2243 when it encounters code like this:
 
 ```cpp
 #include <memory> 
@@ -470,7 +470,7 @@ void f()
 ```
 ### Default arguments are not allowed on out of line definitions of member functions
 Default arguments are not allowed on out-of-line definitions of member functions in template classes.  The compiler will issue a warning under /permissive, and a hard error under /permissive-
-In Update 3, the following code produces warning C5034: 'A<T>::f': an out-of-line definition of a member of a class template cannot have default arguments:
+In previous versions of Visual Studio, the following ill-formed code could potentially cause a runtime crash. Update Version 15.3 produces warning C5034: 'A<T>::f': an out-of-line definition of a member of a class template cannot have default arguments:
 ```cpp
  
 template <typename T> 
@@ -484,10 +484,10 @@ T A<T>::f(T t, bool b = false)
 ... 
 }
 ```
-To fix the error, remove the "= false" default argument.
+To fix the error, remove the "= false" default argument. 
 
 ### Use of offsetof with compound member designator
-In Update 3, using offsetof(T, m) where m is a "compound member designator" will result in a warning when you compile with the /Wall option. The following code produces "warning C4841: non-standard extension used: compound member designator in offseto":
+In Update Version 15.3, using offsetof(T, m) where m is a "compound member designator" will result in a warning when you compile with the /Wall option. The following code is ill-formed and could potentially cause crash at runtime. Update Version 15.3 produces "warning C4841: non-standard extension used: compound member designator in offseto":
 
 ```cpp
   
@@ -508,7 +508,7 @@ constexpr auto off = offsetof(A, arr[2]);
 ```
 
 ### Using offsetof with static data member or member function
-In Update 3, using offsetof(T, m) where m refers to a static data member or a member function will result in an error. The following code produces "error C4597: undefined behavior: offsetof applied to member function 'foo'" and "error C4597: undefined behavior: offsetof applied to static data member 'bar'":
+In Update Version 15.3, using offsetof(T, m) where m refers to a static data member or a member function will result in an error. The following code produces "error C4597: undefined behavior: offsetof applied to member function 'foo'" and "error C4597: undefined behavior: offsetof applied to static data member 'bar'":
 ```cpp
  
 #include <cstddef> 
@@ -525,7 +525,7 @@ Constexpr auto off2 = offsetof(A, bar);
 This code is ill-formed and could potentially cause crash at runtime. To fix the error, change the code to no longer invoke undefined behavior. This is non-portable code that is disallowed by the C++ standard.
 
 ### New warning on declspec attributes
-In Update 3, the compiler no longer ignores attributes if __declspec(…) is applied before extern "C" linkage specification. Previously, the compiler would ignore the attritbute, which could have runtime implications. When the `/Wall /WX` option is set, the following code produces "warning C4768: __declspec attributes before linkage specification are ignored":
+In Update Version 15.3, the compiler no longer ignores attributes if __declspec(…) is applied before extern "C" linkage specification. Previously, the compiler would ignore the attritbute, which could have runtime implications. When the `/Wall /WX` option is set, the following code produces "warning C4768: __declspec attributes before linkage specification are ignored":
 
 ```cpp
  
@@ -539,7 +539,7 @@ extern "C" __declspec(noinline) HRESULT __stdcall
 ```
 
 ### decltype and calls to deleted destructors
-In previous versions of Visual Studio, the compiler did not detect when a call to a deleted destructor occurred in the context of the expression associated with 'decltype'. In Update 3, the following code produces  "error C2280: 'A<T>::~A(void)': attempting to reference a deleted function":
+In previous versions of Visual Studio, the compiler did not detect when a call to a deleted destructor occurred in the context of the expression associated with 'decltype'. In Update Version 15.3, the following code produces  "error C2280: 'A<T>::~A(void)': attempting to reference a deleted function":
 
 ```cpp
 template<typename T> 
@@ -559,6 +559,31 @@ void h()
    g(42); 
 }
 ```
+### Unitialized const variables
+Visual Studio 2017 RTW release had a regression in which the C++ compiler would not issue a diagnostic if a 'const' variable was not initialized. This regression has been fixed in Visual Studio 2017 Update 1. The following code now produces "warning C4132: 'Value': const object should be initialized":
+
+```cpp
+const int Value;
+```
+To fix the error, assign a value to `Value`.
+
+### Empty declarations
+Visual Studio 2017 Update Version 15.3 now warns on empty declarions for all types, not just built-in types. The following code now produces a level 2 C4091 warning for all four declarations:
+
+```cpp
+struct A {};
+template <typename> struct B {};
+enum C { c1, c2, c3 };
+ 
+int;    // warning C4091 : '' : ignored on left of 'int' when no variable is declared
+A;      // warning C4091 : '' : ignored on left of 'main::A' when no variable is declared
+B<int>; // warning C4091 : '' : ignored on left of 'B<int>' when no variable is declared
+C;      // warning C4091 : '' : ignored on left of 'C' when no variable is declared
+```
+
+To remove the warnings, simply comment-out or remove the empty declarations.  In cases where the un-named object is intended to have a side effect (such as RAII) it should be given a name.
+ 
+The warning is excluded under /Wv:18 and is on by default under warning level W2.
 
 
 ## See Also  
