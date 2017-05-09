@@ -60,7 +60,7 @@ Existing ActiveX controls (formerly OLE controls) can be used on the Internet wi
  You can also add optimizations, as described in [ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md). Monikers can be used to download properties and large BLOBs asynchronously, as described in [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md).  
   
 ##  <a name="_core_packaging_code_for_downloading"></a> Packaging Code for Downloading  
- For more information on this subject, see the Knowledge Base article "Packaging MFC Controls for Use Over the Internet" (Q167158). You can find Knowledge Base articles on the MSDN Library CD-ROM or at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
+ For more information on this subject, see the Knowledge Base article "Packaging MFC Controls for Use Over the Internet" (Q167158). You can find Knowledge Base articles at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
   
 ### The CODEBASE Tag  
  ActiveX controls are embedded in Web pages using the `<OBJECT>` tag. The `CODEBASE` parameter of the `<OBJECT>` tag specifies the location from which to download the control. `CODEBASE` can point at a number of different file types successfully.  

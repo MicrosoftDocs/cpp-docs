@@ -48,7 +48,7 @@ Here's how to getting information about how to write C++ code and use the Visual
 |[Windows Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=256534)|Contains information about how to use C++ and other languages to develop apps for [!INCLUDE[win8](build/reference/includes/win8_md.md)]. Part of the Windows Developer Center; the C++ content is under the Docs > Language Reference node.|  
   
 ### Online and Offline Documentation  
- You can view the content for both the MSDN Library and the Windows Developer Center online. This content is often updated.  
+ You can view Microsoft developer content online. This content is updated regularly. 
   
  You can also download and view the content locally in the offline Help Viewer. The offline documentation is organized by books of related content, which are also updated periodically. You can download the books you are interested in as they become available. For more information, see [Microsoft Help Viewer](/visualstudio/ide/microsoft-help-viewer).  
   

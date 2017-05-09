@@ -1232,9 +1232,9 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
   
  [_ismbbalnum_l](../../c-runtime-library/reference/ismbbalnum-ismbbalnum-l.md)  
   
- [_ismbbalpha](http://msdn.microsoft.com/en-us/8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0)  
+ [_ismbbalpha](ismbbalpha-ismbbalpha-l.md)  
   
- [_ismbbalpha_l](http://msdn.microsoft.com/en-us/8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0)  
+ [_ismbbalpha_l](ismbbalpha-ismbbalpha-l.md)  
   
  [_ismbbblank](../../c-runtime-library/reference/ismbbblank-ismbbblank-l.md)  
   

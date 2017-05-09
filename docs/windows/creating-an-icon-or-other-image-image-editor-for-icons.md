@@ -64,10 +64,10 @@ You can create a new image (bitmap, icon, cursor, or toolbar), then use the Imag
   
 4.  In the **Templates** pane, choose the resource type you'd like to add to your project.  
   
-     The resource is added to your project in Solution Explorer and the resource opens in the [Image editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the Image editor to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](http://msdn.microsoft.com/Library/4dc7b973-afb1-4276-8322-20825af96655).  
+     The resource is added to your project in Solution Explorer and the resource opens in the [Image editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the Image editor to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).  
   
     > [!NOTE]
-    >  Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources. For more information, see [Creating Resource Files](http://msdn.microsoft.com/Library/6c5ad891-66a0-4e7a-adcf-f41863ba6d8d) in the *.NET Framework Developer's Guide*.  
+    >  Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources. For more information, see [Creating Resource Files](/dotnet/framework/resources/creating-resource-files-for-desktop-apps) in the *.NET Framework Developer's Guide*.  
   
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
