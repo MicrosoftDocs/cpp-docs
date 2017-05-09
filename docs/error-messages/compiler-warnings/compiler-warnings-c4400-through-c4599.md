@@ -208,10 +208,10 @@ You may find additional assistance for errors and warnings on the MSDN public fo
 |Compiler warning (level 1) C4453|'*type*': A '[WebHostHidden]' type should not be used on the published surface of a public type that is not '[WebHostHidden]'|  
 |Compiler warning (level 1) C4454|'*function*' is overloaded by more than the number of input parameters without having [DefaultOverload] specified. Picking '*declaration*' as the default overload|  
 |Compiler warning (level 1) C4455|'operator *operator*': literal suffix identifiers that do not start with an underscore are reserved|  
-|Compiler warning (level 3) C4456|declaration of '*identifier*' hides previous local declaration|  
-|Compiler warning (level 3) C4457|declaration of '*identifier*' hides function parameter|  
-|Compiler warning (level 3) C4458|declaration of '*identifier*' hides class member|  
-|Compiler warning (level 3) C4459|declaration of '*identifier*' hides global declaration|  
+|[Compiler warning (level 4) C4456](compiler-warning-level-4-c4456.md)|declaration of '*identifier*' hides previous local declaration|  
+|[Compiler warning (level 4) C4457](compiler-warning-level-4-c4457.md)|declaration of '*identifier*' hides function parameter|  
+|[Compiler warning (level 4) C4458](compiler-warning-level-4-c4458.md)|declaration of '*identifier*' hides class member|  
+|[Compiler warning (level 4) C4459](compiler-warning-level-4-c4459.md)|declaration of '*identifier*' hides global declaration|  
 |[Compiler Warning (level 4) C4460](../../error-messages/compiler-warnings/compiler-warning-level-4-c4460.md)|'WinRT&#124;managed' operator '*operator*', has parameter passed by reference. 'WinRT&#124;managed' operator '*operator*' has different semantics from C++ operator '*cpp_operator*', did you intend to pass by value?|  
 |[Compiler Warning (level 1) C4461](../../error-messages/compiler-warnings/compiler-warning-level-1-c4461.md)|'*classname*': this class has a finalizer '!*finalizer*' but no destructor '~*dtor*'|  
 |[Compiler Warning (level 1) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.|  
