@@ -52,4 +52,4 @@ MFC uses the CWinFormsView class to host a Windows Forms user control in an MFC 
   
 ## See Also  
  [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)   
- [How to: Author Composite Controls](http://msdn.microsoft.com/Library/79c9cf05-5ab6-4a18-886d-88a64748b098)
+ [How to: Author Composite Controls](/dotnet/framework/winforms/controls/how-to-author-composite-controls)

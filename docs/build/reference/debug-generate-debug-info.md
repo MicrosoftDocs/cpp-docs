@@ -73,7 +73,7 @@ It is not possible to create an .exe or .dll that contains debug information. De
   
 ### To set this linker option in the Visual Studio development environment  
   
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](http://msdn.microsoft.com/Library/9b0d6f8b-7d4e-4e61-aa75-7d14944816cd).  
+1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Click the **Linker** folder.  
   

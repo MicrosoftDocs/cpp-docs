@@ -50,7 +50,7 @@ Use this dialog box to specify general options for [Mt.exe](http://msdn.microsof
  **Yes (/verbose)** specifies that additional build information will be displayed during manifest generation.  
   
  **Assembly Identity**  
- Uses the /identity option to specify an identity string, which comprises the attributes for the [\<assemblyIdentity> Element](http://msdn.microsoft.com/Library/f48e9531-efac-4d11-8166-f63a5ece1ac5). An identity string begins with the value for the `name` attribute, and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.  
+ Uses the /identity option to specify an identity string, which comprises the attributes for the [\<assemblyIdentity> Element](/visualstudio/deployment/assemblyidentity-element-clickonce-application). An identity string begins with the value for the `name` attribute, and is followed by *attribute* = *value* pairs. The attributes in an identity string are delimited by a comma.  
   
  The following is an example identity string:  
   

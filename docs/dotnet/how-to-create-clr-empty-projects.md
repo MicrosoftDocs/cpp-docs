@@ -56,4 +56,4 @@ To create a CLR empty project, use the **CLR Empty Project** template, which is 
   
 ## See Also  
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)   
- [Visual C++ Project Types](http://msdn.microsoft.com/Library/912b4ba2-7719-43d5-b087-db33e3f9329a)
+ [Visual C++ Project Types](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)

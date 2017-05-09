@@ -83,7 +83,7 @@ Select the type of debugging information created for your program and whether th
   
  You can use [/Gm (Enable Minimal Rebuild)](../../build/reference/gm-enable-minimal-rebuild.md) with **/Zi**, whereas **/Gm** is not available when compiling with **/Z7**.  
   
- When compiling with **/Zi** and **/clr**, the <xref:System.Diagnostics.DebuggableAttribute> attribute will not be placed in the assembly metadata; you must specify it in source code, if you want it. This attribute can affect the runtime performance of the application. For more information about how the Debuggable attribute affects performance and how you can modify the performance impact, see [Making an Image Easier to Debug](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3).  
+ When compiling with **/Zi** and **/clr**, the <xref:System.Diagnostics.DebuggableAttribute> attribute will not be placed in the assembly metadata; you must specify it in source code, if you want it. This attribute can affect the runtime performance of the application. For more information about how the Debuggable attribute affects performance and how you can modify the performance impact, see [Making an Image Easier to Debug](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug).  
   
  **/ZI**  
  Produces a program database, as described above, in a format that supports the Edit and Continue feature. If you want to use Edit and Continue debugging, you must use this option. Because most optimizations are incompatible with Edit and Continue, using **/ZI** disables any `#pragma optimize` statements in your code.  

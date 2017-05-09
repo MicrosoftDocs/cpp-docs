@@ -38,7 +38,7 @@ Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INC
 > [!NOTE]
 >  Instead of C#, you can also use JavaScript, Visual Basic, or C++ to consume the custom transform component.  
   
- In most cases, you can use C++/CX to create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] components. (For more information, see [Visual C++ Language Reference](http://msdn.microsoft.com/Library/3f6abf92-4e5e-4ed8-8e11-f9252380d30a).) However, sometimes you have to use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces. Because C++/CX can only create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects, to create a media extension you must use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] because it enables the implementation of both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces.  
+ In most cases, you can use C++/CX to create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] components. (For more information, see [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md).) However, sometimes you have to use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces. Because C++/CX can only create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects, to create a media extension you must use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] because it enables the implementation of both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces.  
   
 > [!NOTE]
 >  Although this code example is long, it demonstrates the minimum that's required to create a useful Media Foundation transform. You can use it as a starting point for your own custom transform. This example is adapted from the [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096), which uses media extensions to apply effects to video, decode video, and create scheme handlers that produce media streams.  
@@ -63,7 +63,7 @@ Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INC
   
 -   Use the Microsoft::WRL::[Module class](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/b4acf5de-2f4c-4c8b-b5ff-9140d023ecbe/locales/en-US) to implement DLL entry-point functions such as [DllGetActivationFactory](http://msdn.microsoft.com/library/br205771.aspx), [DllCanUnloadNow](http://msdn.microsoft.com/library/windows/desktop/ms690368\(v=vs.85\).aspx), and [DllGetClassObject](http://msdn.microsoft.com/library/windows/desktop/ms680760\(v=vs.85\).aspx).  
   
--   Link your component DLL to runtimeobject.lib. Also specify [/WINMD](http://msdn.microsoft.com/Library/ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb) on the linker line to generate Windows metadata.  
+-   Link your component DLL to runtimeobject.lib. Also specify [/WINMD](../cppcx/compiler-and-linker-options-c-cx.md) on the linker line to generate Windows metadata.  
   
 -   Use project references to make [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] components accessible to Universal Windows Platform apps.  
   
@@ -118,7 +118,7 @@ Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INC
   
 1.  Add a new **C# Blank App (XAML)** project to the `MediaCapture` solution. Name the project, for example, `MediaCapture`.  
   
-2.  In the **MediaCapture** project, add a reference to the `GrayscaleTransform` project. To learn how, see [How to: Add or Remove References By Using the Reference Manager](http://msdn.microsoft.com/Library/1aabb520-99b0-46c6-9368-21b4d84793eb).  
+2.  In the **MediaCapture** project, add a reference to the `GrayscaleTransform` project. To learn how, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager).  
   
 3.  In Package.appxmanifest, on the **Capabilities** tab, select **Microphone** and **Webcam**. Both capabilities are required to capture photos from the webcam.  
   
