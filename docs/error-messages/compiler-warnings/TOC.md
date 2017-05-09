@@ -296,6 +296,7 @@
 ## [Compiler Warning (level 4) C4460](compiler-warning-level-4-c4460.md)
 ## [Compiler Warning (level 1) C4461](compiler-warning-level-1-c4461.md)
 ## [Compiler Warning (level 1) C4462](compiler-warning-level-1-c4462.md)
+## [Compiler Warning (level 4) C4463](compiler-warning-level-4-c4463.md)
 ## [Compiler Warning (level 1) C4470](compiler-warning-level-1-c4470.md)
 ## [Compiler Warning (level 4) C4471](compiler-warning-level-4-c4471.md)
 ## [Compiler Warning (level 4) C4481](compiler-warning-level-4-c4481.md)

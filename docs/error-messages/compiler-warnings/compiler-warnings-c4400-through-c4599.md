@@ -39,7 +39,6 @@ f1_keywords:
   - "C4457"
   - "C4458"
   - "C4459"
-  - "C4463"
   - "C4464"
   - "C4472"
   - "C4480"
@@ -101,7 +100,6 @@ helpviewer_keywords:
   - "C4457"
   - "C4458"
   - "C4459"
-  - "C4463"
   - "C4464"
   - "C4472"
   - "C4480"
@@ -217,7 +215,7 @@ You may find additional assistance for errors and warnings on the MSDN public fo
 |[Compiler Warning (level 4) C4460](../../error-messages/compiler-warnings/compiler-warning-level-4-c4460.md)|'WinRT&#124;managed' operator '*operator*', has parameter passed by reference. 'WinRT&#124;managed' operator '*operator*' has different semantics from C++ operator '*cpp_operator*', did you intend to pass by value?|  
 |[Compiler Warning (level 1) C4461](../../error-messages/compiler-warnings/compiler-warning-level-1-c4461.md)|'*classname*': this class has a finalizer '!*finalizer*' but no destructor '~*dtor*'|  
 |[Compiler Warning (level 1) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.|  
-|Compiler warning C4463|overflow; assigning '*value*' to bit-field that can only hold values from '*min_value*' to '*max_value*'|  
+|[Compiler warning (level 4) C4463](compiler-warning-level-4-c4463.md)|overflow; assigning '*value*' to bit-field that can only hold values from '*min_value*' to '*max_value*'|  
 |Compiler warning C4464|relative include path contains '..'|  
 |[Compiler Warning (level 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|floating-point control pragmas ignored under /clr|  
 |[Compiler warning (level 4) C4471](compiler-warning-level-4-c4471.md)|'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)|  
