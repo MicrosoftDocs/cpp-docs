@@ -41,6 +41,14 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Creating and Managing Visual C++ Projects
+Visual Studio 2017 offers three ways to organize your C++ source code and related files to produce an executable (such as an .exe, .dll or .lib):
+ - As an MSBuild-based project
+ - As a CMake project. For more information, see [CMake support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2017/04/17/cmake-support-in-visual-studio-whats-new-in-2017-15-2-update/).
+ - As a loose collection of files in a folder with an optional JSON configuration file. For more information, see [Bring your C++ code to Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2017/04/14/bring-your-cpp-code-to-visual-studio/).
+
+> [!NOTE]
+>  This section describes MSBuild projects.
+
 You can create Visual C++ projects by choosing **File &#124; New &#124; Project**, ensuring that Visual C++ is selected in the left pane, and then choosing from the list of project templates in the middle pane. When you click on a template, in many cases a wizard will appear that enables you to set various project properties before the project is created. You can view and modify those properties later by using the project's property pages (**Project &#124; Properties**).  
   
  You can also create new projects by:  
