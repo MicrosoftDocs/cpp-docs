@@ -50,7 +50,7 @@ Check for one of these common issues:
   
 -   The file *filename* is built by your solution, but does not yet exist when the linker tries to access it. This can happen when one project depends on another project to produce this file, but the projects are not built in the correct order. To fix this issue, make sure your project references are set in the project that uses the file so the missing file is built before it is required. For more information, see [Adding references in Visual C++ projects](../../ide/adding-references-in-visual-cpp-projects.md) and [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).  
   
--   The filename or path specified on the command line is incorrect, or the path has an invalid drive specification. Check your spelling and verify the file exists at the specified location.  
+-   The filename or path specified on the command line or in a #pragma lib directive is incorrect, or the path has an invalid drive specification. Check your spelling and verify the file exists at the specified location.  
   
 -   If you are using the Visual Studio IDE to build a project that was copied from another computer, the installation locations for libraries may be different. Check the Library Directories property on the [VC++ Directories Property Page](../../ide/vcpp-directories-property-page.md) and update it if necessary. To see and edit the current library paths set in the IDE, choose the drop-down control for the Library Directories property and choose **Edit**. The **Evaluated value** section of the Library Directories dialog lists the current paths searched for library files.  
   
