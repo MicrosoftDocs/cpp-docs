@@ -56,7 +56,7 @@ Object-code libraries for MFC use the following naming conventions. The library 
 |*c*|Type of program to create: C=all|  
 |*d*|Debug or Release: D=Debug; omit specifier for Release|  
   
- The default is to build a debug Windows ANSI application for the Intel platform: NAFXCWD.Lib. All libraries listed in the following table are included prebuilt in the \atlmfc\lib directory on the Visual C++ CD-ROM.  
+ The default is to build a debug Windows ANSI application for the Intel platform: NAFXCWD.Lib. All libraries listed in the following table are included prebuilt in the \atlmfc\lib directory.  
   
 ### Static-Link Library Naming Conventions  
   

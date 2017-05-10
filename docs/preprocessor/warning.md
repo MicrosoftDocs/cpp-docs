@@ -38,23 +38,20 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# warning
+# warning Pragma
 Enables selective modification of the behavior of compiler warning messages.  
   
 ## Syntax  
   
-```  
-  
-      #pragma warning(   
-      warning-specifier  
-       :   
-      warning-number-list [; warning-specifier : warning-number-list...] )  
+```
+#pragma warning(   
+    warning-specifier : warning-number-list [; warning-specifier : warning-number-list...] )  
 #pragma warning( push[ ,n ] )  
 #pragma warning( pop )  
 ```  
   
 ## Remarks  
- The following warning-specifier parameters are available.  
+The following warning-specifier parameters are available.  
   
 |warning-specifier|Meaning|  
 |------------------------|-------------|  
@@ -67,13 +64,13 @@ Enables selective modification of the behavior of compiler warning messages.
   
  The following code statement illustrates that a `warning-number-list` parameter can contain multiple warning numbers, and that multiple `warning-specifier` parameters can be specified in the same pragma directive.  
   
-```  
+```cpp  
 #pragma warning( disable : 4507 34; once : 4385; error : 164 )  
 ```  
   
  This is functionally equivalent to the following code.  
   
-```  
+```cpp  
 // Disable warning messages 4507 and 4034.  
 #pragma warning( disable : 4507 34 )  
   
@@ -88,7 +85,7 @@ Enables selective modification of the behavior of compiler warning messages.
   
  For warning numbers in the range 4700-4999, which are the ones associated with code generation, the state of the warning in effect when the compiler encounters the open curly brace of a function will be in effect for the rest of the function. Using the `warning` pragma in the function to change the state of a warning that has a number larger than 4699 will only take effect after the end of the function. The following example shows the correct placement of `warning` pragmas to disable a code-generation warning message, and then to restore it.  
   
-```  
+```cpp  
 // pragma_warning.cpp  
 // compile with: /W1  
 #pragma warning(disable:4700)  
@@ -117,7 +114,7 @@ int main() {
   
  The pragma `warning( pop )` pops the last warning state pushed onto the stack. Any changes that you made to the warning state between `push` and `pop` are undone. Consider this example:  
   
-```  
+```cpp  
 #pragma warning( push )  
 #pragma warning( disable : 4705 )  
 #pragma warning( disable : 4706 )  
@@ -130,7 +127,7 @@ int main() {
   
  When you write header files, you can use `push` and `pop` to guarantee that warning-state changes made by a user do not prevent the headers from compiling correctly. Use `push` at the start of the header and `pop` at the end. For example, if you have a header that does not compile cleanly at warning level 4, the following code would change the warning level to 3 and then restore the original warning level at the end of the header.  
   
-```  
+```cpp  
 #pragma warning( push, 3 )  
 // Declarations/definitions  
 #pragma warning( pop )   

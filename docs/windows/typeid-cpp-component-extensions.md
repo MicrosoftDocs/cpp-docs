@@ -64,7 +64,7 @@ Platform::Type^ type = T::typeid;
  A type name.  
   
 ### Remarks  
- In C++/CX,  typeid returns a [Platform::Type](http://msdn.microsoft.com/Library/d6b03f1e-b240-49b9-a08e-53a460030475) that is constructed from runtime type information.  
+ In C++/CX,  typeid returns a [Platform::Type](../cppcx/platform-type-class.md) that is constructed from runtime type information.  
   
 ### Requirements  
  Compiler option: **/ZW**  

@@ -17,7 +17,6 @@ f1_keywords:
   - "C2131"
   - "C2136"
   - "C2176"
-  - "C2178"
   - "C2187"
   - "C2189"
 helpviewer_keywords: 
@@ -29,7 +28,6 @@ helpviewer_keywords:
   - "C2131"
   - "C2136"
   - "C2176"
-  - "C2178"
   - "C2187"
   - "C2189"
 dev_langs: 
@@ -142,7 +140,7 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Error C2175](compiler-error-c2175.md)|'*locale*': invalid locale|  
 |Compiler Error C2176|a return statement cannot appear in the handler of a function-try-block associated with a constructor|  
 |[Compiler Error C2177](compiler-error-c2177.md)|constant too big|  
-|Compiler Error C2178|'*identifier*' cannot be declared with '*specifier*' specifier|  
+|[Compiler Error C2178](compiler-error-c2178.md)|'*identifier*' cannot be declared with '*specifier*' specifier|  
 |[Compiler Error C2179](compiler-error-c2179.md)|'*type*': an attribute argument cannot use type parameters|  
 |[Compiler Error C2180](compiler-error-c2180.md)|controlling expression has type '*type*'|  
 |[Compiler Error C2181](compiler-error-c2181.md)|illegal else without matching if|  
