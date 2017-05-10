@@ -35,14 +35,16 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Warning (level 4) C4295
-**'**   
- ***array* ' : array is too small to include a terminating null character**  
+  
+> '*array*' : array is too small to include a terminating null character  
   
  An array was initialized but the last character in the array is not a null; accessing the array may produce unexpected results.  
   
- The following sample generates C4295:  
+## Example  
   
-```  
+ The following sample generates C4295. To fix this issue, you could declare the array size larger, to hold a terminating null from the initializer.  
+  
+```C  
 // C4295.c  
 // compile with: /W4  
   

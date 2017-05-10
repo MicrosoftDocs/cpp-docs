@@ -44,7 +44,6 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
-  
 __declspec( selectany ) declarator  
 ```  
   

@@ -274,6 +274,7 @@
 ## [Compiler Error C2174](compiler-error-c2174.md)
 ## [Compiler Error C2175](compiler-error-c2175.md)
 ## [Compiler Error C2177](compiler-error-c2177.md)
+## [Compiler Error C2178](compiler-error-c2178.md)
 ## [Compiler Error C2179](compiler-error-c2179.md)
 ## [Compiler Error C2180](compiler-error-c2180.md)
 ## [Compiler Error C2181](compiler-error-c2181.md)
