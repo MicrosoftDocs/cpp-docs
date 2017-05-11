@@ -58,4 +58,5 @@ Class1::Class1()
  When an event handler throws `DisconnectedException`, it causes the event to remove the handler from the subscriber list.  
   
 ## See Also  
- [(NOTINBUILD) Advanced Topics](http://msdn.microsoft.com/en-us/1ccff0cf-a6cc-47ef-a05f-eba6307b3ced)
+
+
