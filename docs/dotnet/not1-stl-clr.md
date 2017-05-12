@@ -53,7 +53,7 @@ template<typename Fun>
  The functor to wrap.  
   
 ## Remarks  
- The template function returns [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)`<``Fun``>(functor)`. You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.  
+ The template function returns [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)`<Fun>(functor)`. You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.  
   
 ## Example  
   

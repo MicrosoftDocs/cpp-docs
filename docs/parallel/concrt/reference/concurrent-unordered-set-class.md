@@ -58,13 +58,13 @@ template <typename K,
  The key type.  
   
  `_Hasher`  
- The hash function object type. This argument is optional and the default value is `std::hash<``K``>`.  
+ The hash function object type. This argument is optional and the default value is `std::hash<K>`.  
   
  `key_equality`  
- The equality comparison function object type. This argument is optional and the default value is `std::equal_to<``K``>`.  
+ The equality comparison function object type. This argument is optional and the default value is `std::equal_to<K>`.  
   
  `_Allocator_type`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent unordered set. This argument is optional and the default value is `std::allocator<``K``>`.  
+ The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent unordered set. This argument is optional and the default value is `std::allocator<K>`.  
   
 ## Members  
   

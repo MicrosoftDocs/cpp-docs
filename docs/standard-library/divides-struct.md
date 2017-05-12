@@ -68,7 +68,7 @@ struct divides<void>
  The right operand of the division operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``/``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator/`.  
+ The result of `Left / Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator/`.  
   
 ## Example  
   

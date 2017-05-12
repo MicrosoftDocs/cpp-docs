@@ -48,7 +48,7 @@ void assign(stack<Value, Container>% right);
  Container adapter to insert.  
   
 ## Remarks  
- The member function assigns `right``.get_container()` to the underlying container. You use it to change the entire contents of the stack.  
+ The member function assigns `right.get_container()` to the underlying container. You use it to change the entire contents of the stack.  
   
 ## Example  
   

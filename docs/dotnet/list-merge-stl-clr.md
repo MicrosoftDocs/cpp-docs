@@ -55,7 +55,7 @@ template<typename Pred2>
 ## Remarks  
  The first member function removes all elements from the sequence controlled by `right` and insert them in the controlled sequence. Both sequences must be previously ordered by `operator<` -- elements must not decrease in value as you progress through either sequence. The resulting sequence is also ordered by `operator<`. You use this member function to merge two sequences that increase in value into a sequence that also increases in value.  
   
- The second member function behaves the same as the first, except that the sequences are ordered by `pred` -- `pred``(X, Y)` must be false for any element `X` that follows element `Y` in the sequence. You use it to merge two sequences ordered by a predicate function or delegate that you specify.  
+ The second member function behaves the same as the first, except that the sequences are ordered by `pred` -- `pred(X, Y)` must be false for any element `X` that follows element `Y` in the sequence. You use it to merge two sequences ordered by a predicate function or delegate that you specify.  
   
  Both functions perform a stable merge -- no pair of elements in either of the original controlled sequences is reversed in the resulting controlled sequence. Also, if a pair of elements `X` and `Y` in the resulting controlled sequence has equivalent ordering -- `!(X < Y) && !(X < Y)` -- an element from the original controlled sequence appears before an element from the sequence controlled by `right`.  
   

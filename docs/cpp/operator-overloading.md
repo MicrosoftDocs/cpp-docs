@@ -52,7 +52,7 @@ type operator operator-symbol ( parameter-list )
 ## Remarks  
  You can redefine the function of most built-in operators globally or on a class-by-class basis. Overloaded operators are implemented as functions.  
   
- The name of an overloaded operator is `operator``x`, where `x` is the operator as it appears in the following table. For example, to overload the addition operator, you define a function called `operator+`. Similarly, to overload the addition/assignment operator, `+=`, define a function called `operator+=`.  
+ The name of an overloaded operator is `operator x`, where `x` is the operator as it appears in the following table. For example, to overload the addition operator, you define a function called `operator+`. Similarly, to overload the addition/assignment operator, `+=`, define a function called `operator+=`.  
   
 ### Redefinable Operators  
   

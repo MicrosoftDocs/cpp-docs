@@ -68,7 +68,7 @@ unsigned __int64 __readgsqword( 
  The offset from the beginning of `GS` to read from.  
   
 ## Return Value  
- The memory contents of the byte, word, double word, or quadword (as indicated by the name of the function called) at the location `GS:[``Offset``]`.  
+ The memory contents of the byte, word, double word, or quadword (as indicated by the name of the function called) at the location `GS:[Offset]`.  
   
 ## Requirements  
   

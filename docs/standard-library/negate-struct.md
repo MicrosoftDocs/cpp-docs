@@ -65,7 +65,7 @@ struct negate<void>
  The operand to be negated. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `Type`.  
   
 ## Return Value  
- The result of `-``Left.` The specialized template does perfect forwarding of the result, which has the type that's returned by unary `operator-`.  
+ The result of `-Left.` The specialized template does perfect forwarding of the result, which has the type that's returned by unary `operator-`.  
   
 ## Example  
   

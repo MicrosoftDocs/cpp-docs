@@ -76,21 +76,21 @@ translation.priority.ht:
 # Data Type Ranges
 Visual C++ 32-bit and 64-bit compilers recognize the types in the table later in this article.  
   
--   `int` (`unsigned``int`)  
+-   `int` (`unsigned int`)  
   
--   `__int8` (`unsigned``__int8`)  
+-   `__int8` (`unsigned __int8`)  
   
--   `__int16` (`unsigned``__int16`)  
+-   `__int16` (`unsigned __int16`)  
   
--   `__int32` (`unsigned``__int32`)  
+-   `__int32` (`unsigned __int32`)  
   
--   `__int64` (`unsigned``__int64`)  
+-   `__int64` (`unsigned __int64`)  
   
--   `short` (`unsigned``short`)  
+-   `short` (`unsigned short`)  
   
--   `long` (`unsigned``long`)  
+-   `long` (`unsigned long`)  
   
--   `long` `long` (`unsigned``long``long`)  
+-   `long` `long` (`unsigned long long`)  
   
  If its name begins with two underscores (`__`), a data type is non-standard.  
   
@@ -128,7 +128,7 @@ Visual C++ 32-bit and 64-bit compilers recognize the types in the table later in
   
  `signed` and `unsigned` are modifiers that you can use with any integral type except `bool`. Note that `char`, `signed char`, and `unsigned char` are three distinct types for the purposes of mechanisms like overloading and templates.  
   
- The `int` and `unsigned``int` types have a size of four bytes. However, portable code should not depend on the size of `int` because the language standard allows this to be implementation-specific.  
+ The `int` and `unsigned int` types have a size of four bytes. However, portable code should not depend on the size of `int` because the language standard allows this to be implementation-specific.  
   
  C/C++ in Visual Studio also supports sized integer types. For more information, see [__int8, \__int16, \__int32, \__int64](../cpp/int8-int16-int32-int64.md) and [Integer Limits](../cpp/integer-limits.md).  
   

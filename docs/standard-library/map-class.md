@@ -375,7 +375,7 @@ typedef implementation-defined const_iterator;
   
  The `const_iterator` defined by map points to elements that are objects of [value_type](#value_type), that is of type `pair`\< **constKey**, **Type**>, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `const_iterator``cIter` pointing to an element in a map, use the **->** operator.  
+ To dereference a `const_iterator` `cIter` pointing to an element in a map, use the **->** operator.  
   
  To access the value of the key for the element, use `cIter` -> **first**, which is equivalent to (\* `cIter`). **first**.  
   
@@ -700,7 +700,7 @@ emplace(
 ### Return Value  
  A [pair](../standard-library/pair-structure.md) whose `bool` component is true if an insertion was made, and false if the map already contained an element of equivalent value in the ordering. The iterator component of the return-value pair points to the newly inserted element if the `bool` component is true, or to the existing element if the `bool` component is false.  
   
- To access the iterator component of a `pair``pr`, use `pr.first`; to dereference it, use `*pr.first`. To access the `bool` component, use `pr.second`. For an example, see the sample code later in this article.  
+ To access the iterator component of a `pair` `pr`, use `pr.first`; to dereference it, use `*pr.first`. To access the `bool` component, use `pr.second`. For an example, see the sample code later in this article.  
   
 ### Remarks  
  No iterators or references are invalidated by this function.  
@@ -1314,7 +1314,7 @@ IList);
   
  During the insertion of just one element, if an exception is thrown, the container's state is not modified. During the insertion of multiple elements, if an exception is thrown, the container is left in an unspecified but valid state.  
   
- To access the iterator component of a `pair``pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the `bool` component, use `pr.second`. For an example, see the sample code later in this article.  
+ To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the `bool` component, use `pr.second`. For an example, see the sample code later in this article.  
   
  The [value_type](#value_type) of a container is a typedef that belongs to the container, and for map, `map<K, V>::value_type` is `pair<const K, V>`. The value of an element is an ordered pair in which the first component is equal to the key value and the second component is equal to the data value of the element.  
   
@@ -2239,7 +2239,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
   
  The `reverse_iterator` defined by map points to elements that are objects of [value_type](#value_type), that is of type `pair`*\<***constKey**, **Type***>*, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `reverse_iterator``rIter` pointing to an element in a map, use the **->** operator.  
+ To dereference a `reverse_iterator` `rIter` pointing to an element in a map, use the **->** operator.  
   
  To access the value of the key for the element, use `rIter` -> **first**, which is equivalent to (\* `rIter`). **first**. To access the value of the mapped datum for the element, use `rIter` -> **second**, which is equivalent to (\* `rIter`). **first**.  
   

@@ -51,10 +51,10 @@ template <typename T,
  The data type of the elements to be stored in the priority queue.  
   
  `_Compare`  
- The type of the function object that can compare two element values as sort keys to determine their relative order in the priority queue. This argument is optional and the binary predicate `less<``T``>` is the default value.  
+ The type of the function object that can compare two element values as sort keys to determine their relative order in the priority queue. This argument is optional and the binary predicate `less<T>` is the default value.  
   
  `_Ax`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent priority queue. This argument is optional and the default value is `allocator<``T``>`.  
+ The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent priority queue. This argument is optional and the default value is `allocator<T>`.  
   
 ## Members  
   

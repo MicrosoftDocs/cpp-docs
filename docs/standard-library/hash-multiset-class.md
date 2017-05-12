@@ -1368,7 +1368,7 @@ hash_multiset(
   
  The first three constructors specify an empty initial `hash_multiset`, the second specifying the type of comparison function ( `Comp`) to be used in establishing the order of the elements and the third explicitly specifying the allocator type ( `Al`) to be used. The keyword `explicit` suppresses certain kinds of automatic type conversion.  
   
- The fourth constructor moves the `hash_multiset``Right`.  
+ The fourth constructor moves the `hash_multiset` `Right`.  
   
  The fifth, sixth, and seventh constructors use an initializer_list.  
   

@@ -900,7 +900,7 @@ static Type lowest() throw();
  Returns the most negative finite value.  
   
 ### Remarks  
- Returns the most negative finite value for the type (which is typically `min` `()` for integer types and `-``max` `()` for floating-point types). The return value is meaningful if `is_bounded` is `true`.  
+ Returns the most negative finite value for the type (which is typically `min()` for integer types and `-max()` for floating-point types). The return value is meaningful if `is_bounded` is `true`.  
   
 ##  <a name="max"></a>  numeric_limits::max  
  Returns the maximum finite value for a type.  

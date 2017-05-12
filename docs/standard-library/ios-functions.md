@@ -88,7 +88,7 @@ ios_base& dec(ios_base& str);
 ### Remarks  
  By default, integer variables are displayed in base 10.  
   
- **dec** effectively calls `str``.`[setf](../standard-library/ios-base-class.md#setf)( `ios_base::dec`**, ios_base::basefield**), and then returns `str`.  
+ **dec** effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)( `ios_base::dec`**, ios_base::basefield**), and then returns `str`.  
   
 ### Example  
   

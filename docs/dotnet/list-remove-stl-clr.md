@@ -48,7 +48,7 @@ void remove(value_type val);
  Value of the element to remove.  
   
 ## Remarks  
- The member function removes an element in the controlled sequence for which `((System::Object^)``val``)->Equals((System::Object^)x)` is true (if any). You use it to erase an arbitrary element with the specified value.  
+ The member function removes an element in the controlled sequence for which `((System::Object^)val)->Equals((System::Object^)x)` is true (if any). You use it to erase an arbitrary element with the specified value.  
   
 ## Example  
   

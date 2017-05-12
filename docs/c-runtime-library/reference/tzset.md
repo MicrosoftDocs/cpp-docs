@@ -66,7 +66,7 @@ void _tzset( void );
 ## Remarks  
  The `_tzset` function uses the current setting of the environment variable `TZ` to assign values to three global variables: `_daylight`, `_timezone`, and `_tzname`. These variables are used by the [_ftime](../../c-runtime-library/reference/ftime-ftime32-ftime64.md) and [localtime](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) functions to make corrections from coordinated universal time (UTC) to local time, and by the `time` function to compute UTC from system time. Use the following syntax to set the `TZ` environment variable:  
   
- `set` `TZ`=`tzn`[+ &#124; -]`hh`[`:``mm`[`:``ss`] ][`dzn`]  
+ `set` `TZ`=`tzn`[+ &#124; -]`hh`[`:mm`[`:ss`] ][`dzn`]  
   
  `tzn`  
  Three-letter time-zone name, such as PST. You must specify the correct offset from local time to UTC.  

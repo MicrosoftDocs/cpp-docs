@@ -48,7 +48,7 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
  The data type of the elements to be stored in the queue.  
   
  `_Ax`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for this concurrent queue. This argument is optional and the default value is `allocator<``T``>`.  
+ The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for this concurrent queue. This argument is optional and the default value is `allocator<T>`.  
   
 ## Members  
   

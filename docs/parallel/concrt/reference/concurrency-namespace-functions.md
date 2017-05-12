@@ -658,7 +658,7 @@ void parallel_for(
  The value by which to step when iterating from `first` to `last`. The step must be positive. [invalid_argument](../../../standard-library/invalid-argument-class.md) is thrown if the step is less than 1.  
   
  `_Func`  
- The function to be executed at each iteration. This may be a lambda expression, a function pointer, or any object that supports a version of the function call operator with the signature `void operator()(``_Index_type``)`.  
+ The function to be executed at each iteration. This may be a lambda expression, a function pointer, or any object that supports a version of the function call operator with the signature `void operator()(_Index_type)`.  
   
  `_Part`  
  A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.  

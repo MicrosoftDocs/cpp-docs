@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # A.8   Specifying Parallel Sections
-In the following example, (for [Section 2.4.2](../../parallel/openmp/2-4-2-sections-construct.md) on page 14) functions *xaxis*, *yaxis*, and *zaxis* can be executed concurrently. The first `section` directive is optional.  Note that all `section` directives need to appear in the lexical extent of the `parallel``sections` construct.  
+In the following example, (for [Section 2.4.2](../../parallel/openmp/2-4-2-sections-construct.md) on page 14) functions *xaxis*, *yaxis*, and *zaxis* can be executed concurrently. The first `section` directive is optional.  Note that all `section` directives need to appear in the lexical extent of the `parallel sections` construct.  
   
 ```  
 #pragma omp parallel sections  

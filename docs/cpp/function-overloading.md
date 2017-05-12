@@ -396,7 +396,7 @@ int main()
   
  Unlike other arguments in overloaded functions, no temporary objects are introduced and no conversions are attempted when trying to match the `this` pointer argument.  
   
- When the `- >` member-selection operator is used to access a member function, the `this` pointer argument has a type of `class-name` `* const`. If the members are declared as `const` or `volatile`, the types are `const` `class-name``* const` and `volatile` `class-name` `* const`, respectively.  
+ When the `->` member-selection operator is used to access a member function of class `class_name`, the `this` pointer argument has a type of `class_name * const`. If the members are declared as `const` or `volatile`, the types are `const class_name * const` and `volatile class_name * const`, respectively.  
   
  The `.` member-selection operator works exactly the same way, except that an implicit `&` (address-of) operator is prefixed to the object name. The following example shows how this works:  
   

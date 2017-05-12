@@ -215,7 +215,7 @@ virtual iter_type
  Returns an iterator that designates the first unconverted element. A conversion failure sets `ios_base::failbit` in `state` and returns `first`.  
   
 ### Remarks  
- The virtual member function converts and skips one or more input elements in the range `[``first``,` `last``)` to determine the values stored in one or more members of `*pt`. A conversion failure sets `ios_base::failbit` in `state` and returns `first`. Otherwise, the function returns an iterator designating the first unconverted element.  
+ The virtual member function converts and skips one or more input elements in the range [`first`, `last`) to determine the values stored in one or more members of `*pt`. A conversion failure sets `ios_base::failbit` in `state` and returns `first`. Otherwise, the function returns an iterator designating the first unconverted element.  
   
  The conversion specifiers are:  
   
