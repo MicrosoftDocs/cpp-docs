@@ -65,8 +65,5 @@ You can build Visual C++ projects either in Visual Studio or on the command line
  Describes how to set the Platform Toolset to target Windows XP development.  
   
 ## Related Sections  
- [NIB: Samples Included in Visual C++](http://msdn.microsoft.com/en-us/c9ec56b3-2bbd-49b4-8a4c-9ed4b78b7a84)  
- Provides links to sample code that shows the capabilities of Visual C++ and the libraries and technologies it supports.  
-  
  [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)  
  Describes the Visual Studio build system and tools.

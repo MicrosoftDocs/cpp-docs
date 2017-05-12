@@ -59,4 +59,5 @@ int main()
   
 ## See Also  
  [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)   
- [(NOTINBUILD)Storage-Class Specifiers](http://msdn.microsoft.com/en-us/10b3d22d-cb40-450b-994b-08cf9a211b6c)
+
+

@@ -67,7 +67,8 @@ An Internet client application is a program that accesses information from a net
 -   [Steps in a Typical HTTP Client Application](../mfc/steps-in-a-typical-http-client-application.md)  
   
 ## See Also  
- [MFC Internet Programming (NIB)](http://msdn.microsoft.com/en-us/0f7a1f3a-385b-4d56-a55b-0d766840c58a)   
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)   
  [WinInet Basics](../mfc/wininet-basics.md)
+
+
 
