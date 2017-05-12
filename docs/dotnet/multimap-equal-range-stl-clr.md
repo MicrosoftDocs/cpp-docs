@@ -48,7 +48,7 @@ pair_iter_iter equal_range(key_type _Keyval);
  Key value to search for.  
   
 ## Remarks  
- The method returns a pair of iterators `-` [multimap::lower_bound (STL/CLR)](../dotnet/multimap-lower-bound-stl-clr.md)`(``_Keyval``),` [multimap::upper_bound (STL/CLR)](../dotnet/multimap-upper-bound-stl-clr.md)`(``_Keyval``)`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
+ The method returns a pair of iterators `-` [multimap::lower_bound (STL/CLR)](../dotnet/multimap-lower-bound-stl-clr.md)`(_Keyval),` [multimap::upper_bound (STL/CLR)](../dotnet/multimap-upper-bound-stl-clr.md)`(_Keyval)`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
   
 ## Example  
   

@@ -226,7 +226,7 @@ operator&(
  A valarray whose elements are the element-wise combination of the bitwise AND operation of `left` and `right`.  
   
 ### Remarks  
- A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, **longdouble**, `void``bool` or other, more complex data types.  
+ A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, **longdouble**, `void`, `bool` or other, more complex data types.  
   
  The bitwise **AND** has the same truth table as the logical **AND** but applies to the data type on the level of the individual bits. The [operator&&](../standard-library/valarray-operators.md#amp) applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise **ANDoperator&**, by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.  
   
@@ -1325,7 +1325,7 @@ operator^(
  A valarray whose elements are the element-wise combination of the bitwise **XOR** operation of `left` and `right`.  
   
 ### Remarks  
- A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, `long double`, `void``bool` or other, more complex data types.  
+ A bitwise operation can only be used to manipulate bits in `char` and `int` data types and variants and not on **float**, **double**, `long double`, `void`, `bool` or other, more complex data types.  
   
  The bitwise exclusive `OR` ( **XOR**) has the following semantics: Given bits *b*1 and *b*2, *b*1 **XOR** *b*2 is **true** if exactly one of the bits is true; **false** if both bits are false or if both bits are true.  
   
@@ -1503,7 +1503,7 @@ operator||(
  A valarray whose elements are of type `bool` and are the element-wise combination of the logical OR operation of `left` and `right`.  
   
 ### Remarks  
- The logical `OR``operator||` applies on an element level, counting all nonzero values as **true**, and the result is a valarray of Boolean values. The bitwise version of `OR`, [operator&#124;](../standard-library/valarray-operators.md#op_or) by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.  
+ The logical `OR` `operator||` applies on an element level, counting all nonzero values as **true**, and the result is a valarray of Boolean values. The bitwise version of `OR`, [operator&#124;](../standard-library/valarray-operators.md#op_or) by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.  
   
 ### Example  
   

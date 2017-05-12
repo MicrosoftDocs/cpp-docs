@@ -1502,7 +1502,7 @@ virtual BOOL SaveMDIState(LPCTSTR lpszProfileName);
   
 -   Call `CWinAppEx::EnableLoadWindowPlacement(FALSE);` before `pMainFrame->LoadFrame (IDR_MAINFRAME);`  
   
--   Call `CWinAppEx::ReloadWindowPlacement``(pMainFrame)` after `LoadMDIState` to display the main frame at the position that was stored in the registry.  
+-   Call `CWinAppEx::ReloadWindowPlacement(pMainFrame)` after `LoadMDIState` to display the main frame at the position that was stored in the registry.  
   
 -   Override `GetDocumentName` in the `CMDIChildWndEx`- derived class if your application displays documents that are not stored as files. The returned string will be saved in the registry as a document identifier. For more information, see [CMDIChildWndEx::GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#getdocumentname).  
   

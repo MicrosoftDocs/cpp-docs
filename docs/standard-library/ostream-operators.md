@@ -112,7 +112,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```  
   
- determines the length N = `traits_type::`[length](../standard-library/char-traits-struct.md#length)( `str`) of the sequence beginning at `str`, and inserts the sequence. If N < `_Ostr.`[width](../standard-library/ios-base-class.md#width), then the function also inserts a repetition of `_Ostr.``width` - N fill characters. The repetition precedes the sequence if ( `_Ostr`. [flags](../standard-library/ios-base-class.md#flags) & `adjustfield` != [left](../standard-library/ios-functions.md#left). Otherwise, the repetition follows the sequence. The function returns `_Ostr`.  
+ determines the length N = `traits_type::`[length](../standard-library/char-traits-struct.md#length)( `str`) of the sequence beginning at `str`, and inserts the sequence. If N < `_Ostr.`[width](../standard-library/ios-base-class.md#width), then the function also inserts a repetition of `_Ostr.width` - N fill characters. The repetition precedes the sequence if ( `_Ostr`. [flags](../standard-library/ios-base-class.md#flags) & `adjustfield` != [left](../standard-library/ios-functions.md#left). Otherwise, the repetition follows the sequence. The function returns `_Ostr`.  
   
  The template function  
   

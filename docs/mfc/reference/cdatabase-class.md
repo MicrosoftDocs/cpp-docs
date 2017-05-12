@@ -504,7 +504,7 @@ BOOL Rollback();
  Nonzero if the transaction was successfully reversed; otherwise 0. If a **Rollback** call fails, the data source and transaction states are undefined. If **Rollback** returns 0, you must check the data source to determine its state.  
   
 ### Remarks  
- All `CRecordset``AddNew`, **Edit**, **Delete**, and **Update** calls executed since the last [BeginTrans](#begintrans) are rolled back to the state that existed at the time of that call.  
+ All `CRecordset` `AddNew`, **Edit**, **Delete**, and **Update** calls executed since the last [BeginTrans](#begintrans) are rolled back to the state that existed at the time of that call.  
   
  After a call to **Rollback**, the transaction is over, and you must call **BeginTrans** again for another transaction. The record that was current before you called **BeginTrans** becomes the current record again after **Rollback**.  
   

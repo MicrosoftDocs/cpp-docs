@@ -62,7 +62,7 @@ virtualreturn-typemember-function-identifier() abstract ;
   
  The `abstract` keyword is supported in native and platform-specific code; that is, it can be compiled with or without the **/ZW** or **/clr** compiler option.  
   
- You can detect at compile time if a type is abstract with the `__is_abstract(``type``)` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ You can detect at compile time if a type is abstract with the `__is_abstract(type)` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
  The `abstract` keyword is a context-sensitive override specifier. For more information about context-sensitive keywords, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md). For more information about override specifiers, see [How to: Declare Override Specifiers in Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
   

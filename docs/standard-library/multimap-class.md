@@ -322,7 +322,7 @@ typedef implementation-defined const_iterator;
   
  The `const_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key**, **Type***>*. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.  
   
- To dereference a `const_iterator``cIter` pointing to an element in a multimap, use the **->** operator.  
+ To dereference a `const_iterator` `cIter` pointing to an element in a multimap, use the **->** operator.  
   
  To access the value of the key for the element, use `cIter` -> **first**, which is equivalent to (\* `cIter`). **first**. To access the value of the mapped datum for the element, use `cIter` -> **second**, which is equivalent to (\* `cIter`). **second**.  
   
@@ -402,7 +402,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
   
  The `const_reverse_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key**, **Type***>*. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.  
   
- To dereference a `const_reverse_iterator``crIter` pointing to an element in a multimap, use the **->** operator.  
+ To dereference a `const_reverse_iterator` `crIter` pointing to an element in a multimap, use the **->** operator.  
   
  To access the value of the key for the element, use `crIter` -> **first**, which is equivalent to (\* `crIter`). **first**. To access the value of the mapped datum for the element, use `crIter` -> **second**, which is equivalent to (\* `crIter`). **first**.  
   
@@ -1948,7 +1948,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
   
  The `reverse_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key**, **Type***>*. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.  
   
- To dereference a `reverse_iterator``rIter` pointing to an element in a multimap, use the -> operator.  
+ To dereference a `reverse_iterator` `rIter` pointing to an element in a multimap, use the -> operator.  
   
  To access the value of the key for the element, use `rIter` -> **first**, which is equivalent to (\* `rIter`). **first**. To access the value of the mapped datum for the element, use `rIter` -> **second**, which is equivalent to (\* `rIter`). **first**.  
   

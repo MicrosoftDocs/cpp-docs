@@ -93,7 +93,7 @@ struct atomic;
 |`atomic<unsigned int>`|`atomic<long>`|`atomic<unsigned long>`|  
 |`atomic<long long>`|`atomic<unsigned long long>`|  
   
- Integral specializations are derived from corresponding `atomic_``integral` types. For example, `atomic<unsigned int>` is derived from `atomic_uint`.  
+ Integral specializations are derived from corresponding `atomic_integral` types. For example, `atomic<unsigned int>` is derived from `atomic_uint`.  
   
 ## Requirements  
  **Header:** \<atomic>  

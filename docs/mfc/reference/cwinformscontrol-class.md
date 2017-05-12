@@ -210,7 +210,7 @@ inline operator TManagedControl^() const;
 ```  
   
 ### Remarks  
- This operator passes `CWinFormsControl<``TManagedControl``>` to functions that accept a pointer to a Windows Forms control.  
+ This operator passes `CWinFormsControl<TManagedControl>` to functions that accept a pointer to a Windows Forms control.  
   
 ## See Also  
  [CWinFormsDialog Class](../../mfc/reference/cwinformsdialog-class.md)   

@@ -206,7 +206,7 @@ iter_type get(iter_type first,
  An input iterator addressing the first element beyond the monetary input field.  
   
 ### Remarks  
- Both member functions return [do_get](#do_get)( `first``,` `last``,` `Intl`, `Iosbase`, `State`, `val`).  
+ Both member functions return [do_get](#do_get)`(first, last, Intl, Iosbase, State, val)`.  
   
 ### Example  
   

@@ -68,7 +68,7 @@ struct less_equal<void>
  The right operand of the less-than-or-equal-to operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``<=``Right`. The specialized template does perfect forwarding of the result, which has the type returned by `operator<=`.  
+ The result of `Left <= Right`. The specialized template does perfect forwarding of the result, which has the type returned by `operator<=`.  
   
 ## Remarks  
  The binary predicate `less_equal`< `Type`> provides a strict weak ordering of a set of element values of type `Type` into equivalence classes, if and only if this type satisfies the standard mathematical requirements for being so ordered. The specializations for any pointer type yield a total ordering of elements, in that all elements of distinct values are ordered with respect to each other.  

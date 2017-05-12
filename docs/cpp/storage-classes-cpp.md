@@ -60,7 +60,7 @@ A *storage class* in the context of C++ variable declarations is a type specifie
   
 2.  When you declare a variable in a function, the `static` keyword specifies that the variable retains its state between calls to that function.  
   
-3.  When you declare a data member in a class declaration, the `static` keyword specifies that one copy of the member is shared by all instances of the class. A static data member must be defined at file scope. An integral data member that you declare as `const``static` can have an initializer.  
+3.  When you declare a data member in a class declaration, the `static` keyword specifies that one copy of the member is shared by all instances of the class. A static data member must be defined at file scope. An integral data member that you declare as `const static` can have an initializer.  
   
 4.  When you declare a member function in a class declaration, the `static` keyword specifies that the function is shared by all instances of the class. A static member function cannot access an instance member because the function does not have an implicit `this` pointer. To access an instance member, declare the function with a parameter that is an instance pointer or reference.  
   

@@ -50,7 +50,7 @@ class concurrent_vector: protected details::_Allocator_base<T,
  The data type of the elements to be stored in the vector.  
   
  `_Ax`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent vector. This argument is optional and the default value is `allocator<``T``>`.  
+ The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent vector. This argument is optional and the default value is `allocator<T>`.  
   
 ## Members  
   

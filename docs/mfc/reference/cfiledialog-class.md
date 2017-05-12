@@ -733,7 +733,8 @@ CString GetNextPathName(POSITION& pos) const;
 ```  
 const OPENFILENAME& GetOFN() const;  
   
-OPENFILENAME& GetOFN();```  
+OPENFILENAME& GetOFN();
+```  
   
 ### Return Value  
  An [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure.  
@@ -960,8 +961,8 @@ virtual void OnControlActivating(DWORD dwIDCtl);
   
 ### Remarks  
   
-##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNameChange  
- Override this method if you want to handle the `WM_NOTIFY``CDN_SELCHANGE` message.  
+##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNY` `Change  
+ Override this method if you want to handle the `WM_NOTIFY` `CDN_SELCHANGE` message.  
   
 ```  
 virtual void OnFileNameChange();
@@ -1000,7 +1001,7 @@ virtual void OnFolderChange();
  Notification is sent only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_FOLDERCHANGE](http://msdn.microsoft.com/library/windows/desktop/ms646859). For information about the OFN_EXPLORER style, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure and [Open and Save As Dialog Boxes](http://msdn.microsoft.com/library/windows/desktop/ms646960).  
   
 ##  <a name="oninitdone"></a>  CFileDialog::OnInitDone  
- Override this function to handle the `WM_NOTIFY``CDN_INITDONE` message.  
+ Override this function to handle the `WM_NOTIFY` `CDN_INITDONE` message.  
   
 ```  
 virtual void OnInitDone();

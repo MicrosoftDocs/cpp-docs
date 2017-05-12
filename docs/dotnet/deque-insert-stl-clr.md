@@ -49,22 +49,22 @@ void insert(iterator where,
 ```  
   
 #### Parameters  
- count  
+ `count`  
  Number of elements to insert.  
   
- first  
+ `first`  
  Beginning of range to insert.  
   
- last  
+ `last`  
  End of range to insert.  
   
- right  
+ `right`  
  Enumeration to insert.  
   
- val  
+ `val`  
  Value of the element to insert.  
   
- where  
+ `where`  
  Where in container to insert before.  
   
 ## Remarks  
@@ -74,7 +74,7 @@ void insert(iterator where,
   
  The second member function inserts a repetition of `count` elements of value `val`. You use it to insert zero or more contiguous elements which are all copies of the same value.  
   
- If `InIt` is an integer type, the third member function behaves the same as `insert(``where``, (size_type)``first``, (value_type)``last``)`. Otherwise, it inserts the sequence `[``first``,` `last``)`. You use it to insert zero or more contiguous elements copied from another sequence.  
+ If `InIt` is an integer type, the third member function behaves the same as `insert(where, (size_type)first, (value_type)last)`. Otherwise, it inserts the sequence [`first`, `last`). You use it to insert zero or more contiguous elements copied from another sequence.  
   
  The fourth member function inserts the sequence designated by the `right`. You use it to insert a sequence described by an enumerator.  
   
@@ -82,7 +82,7 @@ void insert(iterator where,
   
 ## Example  
   
-```  
+```cpp  
 // cliext_deque_insert.cpp   
 // compile with: /clr   
 #include <cliext/deque>   

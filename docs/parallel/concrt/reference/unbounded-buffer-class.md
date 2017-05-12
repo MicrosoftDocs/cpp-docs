@@ -72,9 +72,9 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 |[accept_message](#accept_message)|Accepts a message that was offered by this `unbounded_buffer` messaging block, transferring ownership to the caller.|  
 |[consume_message](#consume_message)|Consumes a message previously offered by the `unbounded_buffer` messaging block and reserved by the target, transferring ownership to the caller.|  
 |[link_target_notification](#link_target_notification)|A callback that notifies that a new target has been linked to this `unbounded_buffer` messaging block.|  
-|[process_input_messages](#process_input_messages)|Places the `message``_PMessage` in this `unbounded_buffer` messaging block and tries to offer it to all of the linked targets.|  
+|[process_input_messages](#process_input_messages)|Places the `message` `_PMessage` in this `unbounded_buffer` messaging block and tries to offer it to all of the linked targets.|  
 |[propagate_message](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `unbounded_buffer` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
-|[propagate_output_messages](#propagate_output_messages)|Places the `message``_PMessage` in this `unbounded_buffer` messaging block and tries to offer it to all of the linked targets. (Overrides [source_block::propagate_output_messages](source-block-class.md#propagate_output_messages).)|  
+|[propagate_output_messages](#propagate_output_messages)|Places the `message` `_PMessage` in this `unbounded_buffer` messaging block and tries to offer it to all of the linked targets. (Overrides [source_block::propagate_output_messages](source-block-class.md#propagate_output_messages).)|  
 |[release_message](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
 |[reserve_message](#reserve_message)|Reserves a message previously offered by this `unbounded_buffer` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
 |[resume_propagation](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
@@ -201,7 +201,7 @@ virtual message_status propagate_message(
   
 ##  <a name="propagate_output_messages"></a> propagate_output_messages 
 
- Places the `message``_PMessage` in this `unbounded_buffer` messaging block and tries to offer it to all of the linked targets.  
+ Places the `message` `_PMessage` in this `unbounded_buffer` messaging block and tries to offer it to all of the linked targets.  
   
 ```  
 virtual void propagate_output_messages();  
@@ -212,7 +212,7 @@ virtual void propagate_output_messages();
   
 ##  <a name="process_input_messages"></a> process_input_messages 
 
- Places the `message``_PMessage` in this `unbounded_buffer` messaging block and tries to offer it to all of the linked targets.  
+ Places the `message` `_PMessage` in this `unbounded_buffer` messaging block and tries to offer it to all of the linked targets.  
   
 ```  
 virtual void process_input_messages(  

@@ -48,7 +48,7 @@ void assign(priority_queue<Value, Container>% right);
  Container adapter to insert.  
   
 ## Remarks  
- The member function assigns `right``.get_container()` to the underlying container. You use it to change the entire contents of the queue.  
+ The member function assigns `right.get_container()` to the underlying container. You use it to change the entire contents of the queue.  
   
 ## Example  
   

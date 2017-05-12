@@ -53,7 +53,7 @@ template<typename Key>
  Right container to compare.  
   
 ## Remarks  
- The operator function returns `!(``left` `==` `right``)`. You use it to test whether `left` is not ordered the same as `right` when the two multisets are compared element by element.  
+ The operator function returns `!(left == right)`. You use it to test whether `left` is not ordered the same as `right` when the two multisets are compared element by element.  
   
 ## Example  
   

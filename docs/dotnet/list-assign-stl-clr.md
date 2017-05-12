@@ -65,7 +65,7 @@ void assign(System::Collections::Generic::IEnumerable<Value>^ right);
 ## Remarks  
  The first member function replaces the controlled sequence with a repetition of `count` elements of value `val`. You use it to fill the container with elements all having the same value.  
   
- If `InIt` is an integer type, the second member function behaves the same as `assign((size_type)``first``, (value_type)``last``)`. Otherwise, it replaces the controlled sequence with the sequence `[``first``,` `last``)`. You use it to make the controlled sequence a copy another sequence.  
+ If `InIt` is an integer type, the second member function behaves the same as `assign((size_type)first, (value_type)last)`. Otherwise, it replaces the controlled sequence with the sequence [`first`, `last`). You use it to make the controlled sequence a copy another sequence.  
   
  The third member function replaces the controlled sequence with the sequence designated by the enumerator `right`. You use it to make the controlled sequence a copy of a sequence described by an enumerator.  
   

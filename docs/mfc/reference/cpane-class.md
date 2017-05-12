@@ -1105,7 +1105,7 @@ virtual void SetActiveInGroup(BOOL bActive);
 ### Remarks  
  When a dockable pane is shown or an auto-hide button is chosen, the corresponding auto-hide pane is marked as active.  
   
- The appearance of an auto-hide button that is associated with the pane is based on two factors. If the pane is active, and the `static``BOOL``CMFCAutoHideButton::m_bOverlappingTabs` is `TRUE`, the framework displays the auto-hide button as an icon and a label. For an inactive pane, the framework displays only the auto-hide icon.  
+ The appearance of an auto-hide button that is associated with the pane is based on two factors. If the pane is active, and the `static BOOL CMFCAutoHideButton::m_bOverlappingTabs` is `TRUE`, the framework displays the auto-hide button as an icon and a label. For an inactive pane, the framework displays only the auto-hide icon.  
   
  If `CMFCAutoHideButton::m_bOverlappingTabs` is `FALSE`, or if the pane is not located in a group, the framework displays the associated auto-hide button as an icon and a label.  
   

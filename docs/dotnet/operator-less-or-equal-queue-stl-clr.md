@@ -54,7 +54,7 @@ template<typename Value,
  Right container to compare.  
   
 ## Remarks  
- The operator function returns `!(``right` `<` `left``)`. You use it to test whether `left` is not ordered after `right` when the two queues are compared element by element.  
+ The operator function returns `!(right < left)`. You use it to test whether `left` is not ordered after `right` when the two queues are compared element by element.  
   
 ## Example  
   

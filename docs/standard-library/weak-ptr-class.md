@@ -326,7 +326,7 @@ bool owner_before(const weak_ptr<Other>& ptr);
  An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.  
   
 ### Remarks  
- The template member function returns `true` if `*this` is `ordered before``ptr`.  
+ The template member function returns `true` if `*this` is `ordered before` `ptr`.  
   
 ##  <a name="reset"></a>  reset  
  Releases owned resource.  

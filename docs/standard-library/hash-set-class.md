@@ -1375,13 +1375,13 @@ hash_set(
   
  The first constructor creates an empty initial `hash_set` The second specifies the type of comparison function ( `Comp`) to be used in establishing the order of the elements, and the third explicitly specifies the allocator type ( `Al`) to be used. The key word `explicit` suppresses certain kinds of automatic type conversion.  
   
- The fourth and fifth constructors specify a copy of the `hash_set``Right`.  
+ The fourth and fifth constructors specify a copy of the `hash_set` `Right`.  
   
  The last sixth, seventh, and eighth constructors use an initializer_list for the elements.  
   
  The last constructors copy the range [ `First`, `Last`) of a `hash_set` with increasing explicitness in specifying the type of comparison function of class Traits and allocator.  
   
- The eighth constructor moves the `hash_set``Right`.  
+ The eighth constructor moves the `hash_set` `Right`.  
   
  The actual order of elements in a `hash_set` container depends on the hash function, the ordering function and the current size of the hash table and cannot, in general, be predicted as it could with the set container, where it was determined by the ordering function alone.  
   

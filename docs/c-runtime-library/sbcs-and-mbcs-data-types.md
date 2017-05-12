@@ -38,7 +38,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # SBCS and MBCS Data Types
-Any Microsoft `MBCS` run-time library routine that handles only one multibyte character or one byte of a multibyte character expects an `unsigned``int` argument (where 0x00 <= character value <= 0xFFFF and 0x00 <= byte value <= 0xFF ). An `MBCS` routine that handles multibyte bytes or characters in a string context expects a multibyte-character string to be represented as an `unsigned``char` pointer.  
+Any Microsoft `MBCS` run-time library routine that handles only one multibyte character or one byte of a multibyte character expects an `unsigned int` argument (where 0x00 <= character value <= 0xFFFF and 0x00 <= byte value <= 0xFF ). An `MBCS` routine that handles multibyte bytes or characters in a string context expects a multibyte-character string to be represented as an `unsigned char` pointer.  
   
 > [!CAUTION]
 >  Each byte of a multibyte character can be represented in an 8-bit `char`. However, an `SBCS` or `MBCS` single-byte character of type `char` with a value greater than 0x7F is negative. When such a character is converted directly to an `int` or a `long`, the result is sign-extended by the compiler and can therefore yield unexpected results.  

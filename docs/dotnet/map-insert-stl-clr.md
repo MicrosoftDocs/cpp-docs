@@ -70,7 +70,7 @@ void insert(System::Collections::Generic::IEnumerable<value_type>^ right);
   
  The second member function inserts an element with value `val`, using `where` as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element which might be adjacent to an element you know.  
   
- The third member function inserts the sequence `[``first``,` `last``)`. You use it to insert zero or more elements copied from another sequence.  
+ The third member function inserts the sequence [`first`, `last`). You use it to insert zero or more elements copied from another sequence.  
   
  The fourth member function inserts the sequence designated by the `right`. You use it to insert a sequence described by an enumerator.  
   

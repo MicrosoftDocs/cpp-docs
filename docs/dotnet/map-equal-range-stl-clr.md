@@ -49,7 +49,7 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
  Key value to search for.  
   
 ## Remarks  
- The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [map::lower_bound (STL/CLR)](../dotnet/map-lower-bound-stl-clr.md)`(``key``),` [map::upper_bound (STL/CLR)](../dotnet/map-upper-bound-stl-clr.md)`(``key``))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
+ The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [map::lower_bound (STL/CLR)](../dotnet/map-lower-bound-stl-clr.md)`(key),` [map::upper_bound (STL/CLR)](../dotnet/map-upper-bound-stl-clr.md)`(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
   
 ## Example  
   

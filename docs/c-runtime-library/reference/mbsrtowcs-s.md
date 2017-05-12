@@ -117,13 +117,13 @@ errno_t mbsrtowcs_s(
   
  If `count` is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), `mbsrtowcs_s` converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.  
   
- If `mbsrtowcs_s` successfully converts the source string, it puts the size in wide characters of the converted string and the null terminator into `*``pReturnValue`, provided `pReturnValue` is not a null pointer. This occurs even if the `wcstr` argument is a null pointer and lets you determine the required buffer size. Note that if `wcstr` is a null pointer, `count` is ignored.  
+ If `mbsrtowcs_s` successfully converts the source string, it puts the size in wide characters of the converted string and the null terminator into `*pReturnValue`, provided `pReturnValue` is not a null pointer. This occurs even if the `wcstr` argument is a null pointer and lets you determine the required buffer size. Note that if `wcstr` is a null pointer, `count` is ignored.  
   
  If `wcstr` is not a null pointer, the pointer object pointed to by `mbstr` is assigned a null pointer if conversion stopped because a terminating null character was reached. Otherwise, it is assigned the address just past the last multibyte character converted, if any. This allows a subsequent function call to restart conversion where this call stopped.  
   
  If `mbstate` is a null pointer, the library internal `mbstate_t` conversion state static object is used. Because this internal static object is not thread-safe, we recommend that you pass your own `mbstate` value.  
   
- If `mbsrtowcs_s` encounters a multibyte character that is not valid in the current locale, it puts -1 in `*``pReturnValue`, sets the destination buffer `wcstr` to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
+ If `mbsrtowcs_s` encounters a multibyte character that is not valid in the current locale, it puts -1 in `*pReturnValue`, sets the destination buffer `wcstr` to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
   
  If the sequences pointed to by `mbstr` and `wcstr` overlap, the behavior of `mbsrtowcs_s` is undefined. `mbsrtowcs_s` is affected by the LC_TYPE category of the current locale.  
   

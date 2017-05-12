@@ -54,7 +54,7 @@ template<typename Key,
  Right container to compare.  
   
 ## Remarks  
- The operator function returns true if, for the lowest position `i` for which `!(``right``[i] <` `left``[i])` it is also true that `left``[i] <` `right``[i]`. Otherwise, it returns `left``->size() <` `right``->size()` You use it to test whether `left` is ordered before `right` when the two multimaps are compared element by element.  
+ The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->size() < right->size()` You use it to test whether `left` is ordered before `right` when the two multimaps are compared element by element.  
   
 ## Example  
   

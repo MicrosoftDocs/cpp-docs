@@ -211,7 +211,7 @@ int _wstat64i32(
   
  Variations of these functions support 32- or 64-bit time types, and 32- or 64-bit file lengths. The first numerical suffix (`32` or `64`) indicates the size of the time type used; the second suffix is either `i32` or `i64`, indicating whether the file size is represented as a 32-bit or 64-bit integer.  
   
- `_stat` is equivalent to `_stat64i32`, and `struct``_stat` contains a 64-bit time. This is true unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_stat` uses a 32-bit time, and `struct``_stat` contains a 32-bit time. The same is true for `_stati64`.  
+ `_stat` is equivalent to `_stat64i32`, and `struct _stat` contains a 64-bit time. This is true unless `_USE_32BIT_TIME_T` is defined, in which case the old behavior is in effect; `_stat` uses a 32-bit time, and `struct _stat` contains a 32-bit time. The same is true for `_stati64`.  
   
 > [!NOTE]
 >  `_wstat` does not work with [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] symbolic links. In these cases, `_wstat` will always report a file size of 0. `_stat` does work correctly with symbolic links.  

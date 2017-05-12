@@ -72,7 +72,7 @@ imaxdiv_t imaxdiv(
  `imaxdiv` called with arguments of type [intmax_t](../../c-runtime-library/standard-types.md) returns a structure of type [imaxdiv_t](../../c-runtime-library/standard-types.md) that comprises the quotient and the remainder.  
   
 ## Remarks  
- The `imaxdiv` function divides `numer` by `denom` and thereby computes the quotient and the remainder. The `imaxdiv_t` structure contains the quotient, `intmax_t``quot`, and the remainder, `intmax_t``rem`. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.  
+ The `imaxdiv` function divides `numer` by `denom` and thereby computes the quotient and the remainder. The `imaxdiv_t` structure contains the quotient, `intmax_t quot`, and the remainder, `intmax_t rem`. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.  
   
 ## Requirements  
   

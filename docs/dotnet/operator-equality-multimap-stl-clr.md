@@ -54,7 +54,7 @@ template<typename Key,
  Right container to compare.  
   
 ## Remarks  
- The operator function returns true only if the sequences controlled by `left` and `right` have the same length and, for each position `i`, `left``[i] ==` `right``[i]`. You use it to test whether `left` is ordered the same as `right` when the two multimaps are compared element by element.  
+ The operator function returns true only if the sequences controlled by `left` and `right` have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether `left` is ordered the same as `right` when the two multimaps are compared element by element.  
   
 ## Example  
   

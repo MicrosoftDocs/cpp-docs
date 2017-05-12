@@ -451,7 +451,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
   
  The `const_iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type `pair`*\<***const Key, Type***>*, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `const_iterator``cIter` pointing to an element in a hash_map, use the **->** operator.  
+ To dereference a `const_iterator` `cIter` pointing to an element in a hash_map, use the **->** operator.  
   
  To access the value of the key for the element, use `cIter` **-> first**, which is equivalent to (\* `cIter`) **.first**. To access the value of the mapped datum for the element, use `cIter` **-> second**, which is equivalent to (\* `cIter`) **.second**.  
   
@@ -551,7 +551,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
   
  The `const_reverse_iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type `pair`\< **const Key, Type**>, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `const_reverse_iterator``crIter` pointing to an element in a hash_map, use the **->** operator.  
+ To dereference a `const_reverse_iterator` `crIter` pointing to an element in a hash_map, use the **->** operator.  
   
  To access the value of the key for the element, use `crIter` -> **first**, which is equivalent to (\* `crIter`) **.first**. To access the value of the mapped datum for the element, use `crIter` -> **second**, which is equivalent to (\* `crIter`). **first**.  
   
@@ -2360,7 +2360,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::reve
   
  The `reverse_iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type **pair\<const Key, Type>**, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `reverse_iterator``rIter` pointing to an element in a hash_map, use the -> operator.  
+ To dereference a `reverse_iterator` `rIter` pointing to an element in a hash_map, use the -> operator.  
   
  To access the value of the key for the element, use `rIter` -> **first**, which is equivalent to (\* `rIter`). **first**. To access the value of the mapped datum for the element, use `rIter` -> **second**, which is equivalent to (\* `rIter`). **first**.  
   

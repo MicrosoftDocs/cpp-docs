@@ -655,7 +655,7 @@ make_move_iterator(const Iterator& _It);
  The iterator stored in the new move iterator.  
   
 ### Remarks  
- The template function returns `move_iterator``<Iterator>(``_It``)`.  
+ The template function returns `move_iterator` `<Iterator>(_It)`.  
   
 ##  <a name="make_unchecked_array_iterator"></a>  make_unchecked_array_iterator  
  Creates an [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) that can be used by other algorithms.  

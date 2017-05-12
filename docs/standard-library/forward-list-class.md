@@ -541,7 +541,7 @@ void merge(forward_list& right, Predicate comp);
 |`comp`|The compare function object that is used to sort elements.|  
   
 ### Remarks  
- `forward_list::merge` removes the elements from the `forward_list``right``,` and inserts them into this `forward_list`. Both sequences must be ordered by the same predicate, described below. The combined sequence is also ordered by that compare function object.  
+ `forward_list::merge` removes the elements from the `forward_list` `right`, and inserts them into this `forward_list`. Both sequences must be ordered by the same predicate, described below. The combined sequence is also ordered by that compare function object.  
   
  For the iterators `Pi` and `Pj` designating elements at positions `i` and `j`, the first member function imposes the order `!(*Pj < *Pi)` whenever `i < j`. (The elements are sorted in `ascending` order.) The second member function imposes the order `! comp(*Pj, *Pi)` whenever `i < j`.  
   

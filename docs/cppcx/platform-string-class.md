@@ -170,7 +170,7 @@ const char16* Data()
 ```  
   
 ### Return Value  
- A pointer to the beginning of a `const``char16` array of Unicode characters (`char16` is a typedef for `wchar_t`).  
+ A pointer to the beginning of a `const char16` array of Unicode characters (`char16` is a typedef for `wchar_t`).  
   
 ### Remarks  
  Use this method to convert from `Platform::String^` to `wchar_t*`. When the `String` object goes out of scope, the Data pointer is no longer guaranteed to be valid. To store the data beyond the lifetime of the original `String` object, use [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) to copy the array into memory that you have allocated yourself.  

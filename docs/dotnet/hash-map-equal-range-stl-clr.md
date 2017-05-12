@@ -44,15 +44,15 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
 ```  
   
 #### Parameters  
- key  
+ `key`  
  Key value to search for.  
   
 ## Remarks  
- The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [hash_map::lower_bound (STL/CLR)](../dotnet/hash-map-lower-bound-stl-clr.md)`(``key``),` [hash_map::upper_bound (STL/CLR)](../dotnet/hash-map-upper-bound-stl-clr.md)`(``key``))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
+ The member function returns a pair of iterators `cliext::pair<iterator, iterator>(lower_bound(key), upper_bound(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_hash_map_equal_range.cpp   
 // compile with: /clr   
 #include <cliext/hash_map>   

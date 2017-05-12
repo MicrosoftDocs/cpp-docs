@@ -32,7 +32,7 @@ void swap(set<Key, Traits, Allocator>& left, set<Key, Traits, Allocator>& right)
  The set whose elements are to be exchanged with those of the set `right`.  
   
 ### Remarks  
- The template function is an algorithm specialized on the container class set to execute the member function `left``.`[swap](../standard-library/set-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
+ The template function is an algorithm specialized on the container class set to execute the member function `left.`[swap](../standard-library/set-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
   
  `template` \< **classT**> **void swap**( **T&**, **T&**)  
   
@@ -57,7 +57,7 @@ void swap(multiset<Key, Traits, Allocator>& left, multiset<Key, Traits, Allocato
  The multiset whose elements are to be exchanged with those of the multiset `right`.  
   
 ### Remarks  
- The template function is an algorithm specialized on the container class multiset to execute the member function `left``.`[swap](../standard-library/multiset-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
+ The template function is an algorithm specialized on the container class multiset to execute the member function `left.`[swap](../standard-library/multiset-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
   
  `template` \< **classT**> **void swap**( **T&**, **T&**)  
   

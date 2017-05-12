@@ -49,7 +49,7 @@ template<typename Pred1>
  Test for elements to remove.  
   
 ## Remarks  
- The member function removes from the controlled sequence (erases) every element `X` for which `pred``(X)` is true. You use it to remove all elements that satisfy a condition you specify as a function or delegate.  
+ The member function removes from the controlled sequence (erases) every element `X` for which `pred(X)` is true. You use it to remove all elements that satisfy a condition you specify as a function or delegate.  
   
 ## Example  
   

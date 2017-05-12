@@ -181,7 +181,7 @@ basic_istream(basic_istream&& right);
 ### Remarks  
  The first constructor initializes the base class by calling [init](../standard-library/basic-ios-class.md#init)(_S `trbuf`). It also stores zero in the extraction count. For more information about this extraction count, see the Remarks section of the [basic_istream Class](../standard-library/basic-istream-class.md) overview topic.  
   
- The second constructor initializes the base class by calling `move``( right)`. It also stores _R `ight.gcount()` in the extraction count and stores zero in the extraction count for _R `ight`.  
+ The second constructor initializes the base class by calling `move( right)`. It also stores _R `ight.gcount()` in the extraction count and stores zero in the extraction count for _R `ight`.  
   
 ### Example  
   See the example for [basic_ifstream::basic_ifstream](../standard-library/basic-ifstream-class.md#basic_ifstream) to learn more about input streams.  
@@ -831,7 +831,7 @@ class sentry {
    };  
   
 ### Remarks  
- If `_Istr``.`[good](../standard-library/basic-ios-class.md#good) is true, the constructor:  
+ If `_Istr.`[good](../standard-library/basic-ios-class.md#good) is true, the constructor:  
   
 -   Calls `_Istr`. [tie](../standard-library/basic-ios-class.md#tie) -> [flush](../standard-library/basic-ostream-class.md#flush) if `_Istr`. `tie` is not a null pointer  
   
@@ -851,7 +851,7 @@ void swap(basic_istream& right);
  An lvalue reference to a `basic_istream` object.  
   
 ### Remarks  
- The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#swap)`(``right``)`. It also exchanges the extraction count with the extraction count for `right`.  
+ The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#swap)`(right)`. It also exchanges the extraction count with the extraction count for `right`.  
   
 ##  <a name="sync"></a>  basic_istream::sync  
  Synchronizes the input device associated with the stream with the stream's buffer.  
