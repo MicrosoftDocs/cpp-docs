@@ -87,7 +87,7 @@ void _exit(
 ## Remarks  
  The `exit`, `_Exit` and `_exit` functions terminate the calling process. The `exit` function calls destructors for thread-local objects, then calls—in last-in-first-out (LIFO) order—the functions that are registered by `atexit` and `_onexit`, and then flushes all file buffers before it terminates the process. The `_Exit` and `_exit` functions terminate the process without destroying thread-local objects or processing `atexit` or `_onexit` functions, and without flushing stream buffers.  
   
- Although the `exit`, `_Exit` and `_exit` calls do not return a value, the low-order byte of `status` is made available to the host environment or waiting calling process, if one exists, after the process exits. Typically, the caller sets the `status` value to 0 to indicate a normal exit, or to some other value to indicate an error. The `status` value is available to the operating-system batch command `ERRORLEVEL` and is represented by one of two constants: `EXIT_SUCCESS`, which represents a value of 0, or `EXIT_FAILURE`, which represents a value of 1.  
+ Although the `exit`, `_Exit` and `_exit` calls do not return a value, the value in `status` is made available to the host environment or waiting calling process, if one exists, after the process exits. Typically, the caller sets the `status` value to 0 to indicate a normal exit, or to some other value to indicate an error. The `status` value is available to the operating-system batch command `ERRORLEVEL` and is represented by one of two constants: `EXIT_SUCCESS`, which represents a value of 0, or `EXIT_FAILURE`, which represents a value of 1.  
   
  The `exit`, `_Exit`, `_exit`, `quick_exit`, `_cexit`, and `_c_exit` functions behave as follows.  
   
@@ -100,13 +100,18 @@ void _exit(
 |`_cexit`|Performs complete C library termination procedures and returns to the caller. Does not terminate the process.|  
 |`_c_exit`|Performs minimal C library termination procedures and returns to the caller. Does not terminate the process.|  
   
- When you call the `exit`,  `_Exit` or `_exit` function, the destructors for any temporary or automatic objects that exist at the time of the call are not called. An automatic object is defined in a function where the object is not declared to be static. A temporary object is an object that's created by the compiler. To destroy an automatic object before you call `exit`, `_Exit`, or `_exit`, explicitly call the destructor for the object, as follows:  
+When you call the `exit`,  `_Exit` or `_exit` function, the destructors for any temporary or automatic objects that exist at the time of the call are not called. An automatic object is a non-static local object defined in a function. A temporary object is an object that's created by the compiler, such as a value returned by a function call. To destroy an automatic object before you call `exit`, `_Exit`, or `_exit`, explicitly call the destructor for the object, as shown here:  
   
-```  
-myObject.myClass::~myClass();  
+```cpp 
+void last_fn() {} 
+    struct SomeClass {} myInstance{};
+    // ...
+    myInstance.~SomeClass(); // explicit destructor call
+    exit(0);  
+}
 ```  
   
- Do not use `DLL_PROCESS_ATTACH` to call `exit` from `DllMain`. If you want to exit the `DLLMain` function, return `FALSE` from `DLL_PROCESS_ATTACH`.  
+Do not use `DLL_PROCESS_ATTACH` to call `exit` from `DllMain`. To exit the `DLLMain` function, return `FALSE` from `DLL_PROCESS_ATTACH`.  
   
 ## Requirements  
   
@@ -118,7 +123,7 @@ myObject.myClass::~myClass();
   
 ## Example  
   
-```  
+```C  
 // crt_exit.c  
 // This program returns an exit code of 1. The  
 // error code could be tested in a batch file.  

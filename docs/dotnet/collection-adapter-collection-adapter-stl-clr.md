@@ -65,13 +65,13 @@ collection_adapter(Coll^ collection);
   
  `collection_adapter(collection_adapter<Coll>% right);`  
   
- initializes the stored handle with `right``.`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
+ initializes the stored handle with `right.`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
   
  The constructor:  
   
  `collection_adapter(collection_adapter<Coll>^ right);`  
   
- initializes the stored handle with `right``->`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
+ initializes the stored handle with `right->`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
   
  The constructor:  
   

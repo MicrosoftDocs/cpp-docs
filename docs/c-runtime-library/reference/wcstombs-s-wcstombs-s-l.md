@@ -138,9 +138,9 @@ errno_t _wcstombs_s_l(
   
  If `count` is the special value [_TRUNCATE](../../c-runtime-library/truncate.md), then `wcstombs_s` converts as much of the string as will fit into the destination buffer, while still leaving room for a null terminator.  
   
- If `wcstombs_s` successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*``pReturnValue` (provided `pReturnValue` is not `NULL`). This occurs even if the `mbstr` argument is `NULL` and provides a way to determine the required buffer size. Note that if `mbstr` is `NULL`, `count` is ignored.  
+ If `wcstombs_s` successfully converts the source string, it puts the size in bytes of the converted string, including the null terminator, into `*pReturnValue` (provided `pReturnValue` is not `NULL`). This occurs even if the `mbstr` argument is `NULL` and provides a way to determine the required buffer size. Note that if `mbstr` is `NULL`, `count` is ignored.  
   
- If `wcstombs_s` encounters a wide character it cannot convert to a multibyte character, it puts 0 in `*``pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
+ If `wcstombs_s` encounters a wide character it cannot convert to a multibyte character, it puts 0 in `*pReturnValue`, sets the destination buffer to an empty string, sets `errno` to `EILSEQ`, and returns `EILSEQ`.  
   
  If the sequences pointed to by `wcstr` and `mbstr` overlap, the behavior of `wcstombs_s` is undefined.  
   

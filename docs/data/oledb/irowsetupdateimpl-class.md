@@ -107,7 +107,7 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 |[m_mapCachedData](../../data/oledb/irowsetupdateimpl-m-mapcacheddata.md)|Contains the original data for the deferred operation.|  
   
 ## Remarks  
- You should first read and understand the documentation for [IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx), because everything described there also applies here. You should also read chapter 6 of the `OLE``DB``Programmer's``Reference` on setting data.  
+ You should first read and understand the documentation for [IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx), because everything described there also applies here. You should also read chapter 6 of the *OLE DB Programmer's Reference* on setting data.  
   
  `IRowsetUpdateImpl` implements the OLE DB `IRowsetUpdate` interface, which enables consumers to delay the transmission of changes made with `IRowsetChange` to the data source and undo changes before transmission.  
   
@@ -116,7 +116,7 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
   
 -   [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)  
   
--   Chapter 6 of the `OLE``DB``Programmer's``Reference`  
+-   Chapter 6 of the *OLE DB Programmer's Reference*  
   
 -   Also see how the `RUpdateRowset` class is used in the UpdatePV sample  
   

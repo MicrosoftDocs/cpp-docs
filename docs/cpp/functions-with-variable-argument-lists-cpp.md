@@ -55,7 +55,7 @@ Function declarations in which the last member of  is the ellipsis (...) can tak
   
  Functions that require variable lists are declared by using the ellipsis (...) in the argument list. Use the types and macros that are described in the STDARG.H include file to access arguments that are passed by a variable list. For more information about these macros, see [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). in the documentation for the C Run-Time Library.  
   
- The following example shows how the macros work together with the  type (declared in STDARG.H): `va_list``va_end``va_arg``va_start`  
+ The following example shows how the macros work together with the type (declared in STDARG.H): 
   
 ```  
 // variable_argument_lists.cpp  

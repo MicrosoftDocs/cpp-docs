@@ -65,7 +65,7 @@ translation.priority.mt:
   - "zh-tw"
 ---
 # _mkgmtime, _mkgmtime32, _mkgmtime64
-Converts a UTC time represented by a `tm``struct` to a UTC time represented by a `time_t` type.  
+Converts a UTC time represented by a `tm struct` to a UTC time represented by a `time_t` type.  
   
 ## Syntax  
   
@@ -84,7 +84,7 @@ __time64_t _mkgmtime64(
   
 #### Parameters  
  `timeptr`  
- A pointer to the UTC time as a `struct``tm` to convert.  
+ A pointer to the UTC time as a `struct tm` to convert.  
   
 ## Return Value  
  A quantity of type `__time32_t` or `__time64_t` representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input cannot be interpreted as a valid time, the return value is -1.  

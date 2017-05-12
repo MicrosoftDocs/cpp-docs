@@ -45,7 +45,7 @@ struct once_flag
    };  
   
 ## Remarks  
- The `once_flag``struct` has only a default constructor.  
+ The `once_flag` `struct` has only a default constructor.  
   
  Objects of type `once_flag` can be created, but they cannot be copied.  
   

@@ -54,7 +54,7 @@ template<typename Value1,
  Right pair to compare.  
   
 ## Remarks  
- The operator function returns `left``.first ==` `right``.first &&` `left``.second ==` `right``.second`. You use it to test whether `left` is ordered the same as `right` when the two pairs are compared element by element.  
+ The operator function returns `left.first ==` `right.first &&` `left.second ==` `right.second`. You use it to test whether `left` is ordered the same as `right` when the two pairs are compared element by element.  
   
 ## Example  
   

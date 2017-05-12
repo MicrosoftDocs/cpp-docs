@@ -403,7 +403,7 @@ This code demonstrates two different randomizations—randomize a vector of inte
   
 -   An explicit constructor with argument `seed_seq& seq` that creates a generator seeded as if by calling `seed(seq)`.  
   
-- `void discard(unsigned long long count)` effectively calls `operator()``count` times and discards each value.  
+- `void discard(unsigned long long count)` effectively calls `operator()` `count` times and discards each value.  
   
  **Engine adaptors** additionally support these members (`Engine` is the first template parameter of an engine adaptor, designating the base engine's type):  
   

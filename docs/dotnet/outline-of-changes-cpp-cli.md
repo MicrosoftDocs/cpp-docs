@@ -530,5 +530,6 @@ Array^ myIntArray =
   
 ## See Also  
  [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)   
- [(NOTINBUILD)Managed Extensions for C++ Syntax Upgrade Checklist](http://msdn.microsoft.com/en-us/edbded88-7ef3-4757-bd9d-b8f48ac2aada)   
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+
+

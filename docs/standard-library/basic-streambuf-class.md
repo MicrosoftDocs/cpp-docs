@@ -336,7 +336,7 @@ basic_streambuf& operator=(const basic_streambuf& right);
  An lvalue reference to the `basic_streambuf` object that is used to assign values to this object.  
   
 ### Remarks  
- The protected member operator copies from `right` the pointers that control the input buffer and the output buffer. It also stores `right``.`[getloc()](#getloc) in the `locale object`. It returns `*this`.  
+ The protected member operator copies from `right` the pointers that control the input buffer and the output buffer. It also stores `right.`[getloc()](#getloc) in the `locale object`. It returns `*this`.  
   
 ##  <a name="overflow"></a>  basic_streambuf::overflow  
  A protected virtual function that can be called when a new character is inserted into a full buffer.  
@@ -1029,7 +1029,7 @@ void swap(basic_streambuf& right);
 |`right`|An lvalue reference to the `basic_streambuf` object that is used to exchange values.|  
   
 ### Remarks  
- The protected member function exchanges with `right` all the pointers controlling the `input buffer` and the `output buffer`. It also exchanges `right``.`[getloc()](#getloc) with the `locale` object.  
+ The protected member function exchanges with `right` all the pointers controlling the `input buffer` and the `output buffer`. It also exchanges `right.`[getloc()](#getloc) with the `locale` object.  
   
 ##  <a name="sync"></a>  basic_streambuf::sync  
  A protected virtual function that tries to synchronize the controlled streams with any associated external streams.  

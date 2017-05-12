@@ -633,7 +633,7 @@ explicit operator bool() const;
 ```  
   
 ### Remarks  
- The operator returns a value convertible to `false` only if `fail``()`. The return type is convertible only to `bool`, not to `void *` or other known scalar type.  
+ The operator returns a value convertible to `false` only if `fail()`. The return type is convertible only to `bool`, not to `void *` or other known scalar type.  
   
 ##  <a name="pos_type"></a>  basic_ios::pos_type  
  A synonym for **traits_type::pos_type**.  

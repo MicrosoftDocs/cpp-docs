@@ -72,11 +72,11 @@ void abssort(float* x, unsigned n) {
 6.  *lambda body*)  
   
 ### Capture Clause  
- A lambda can introduce new variables in its body (in **C++14**), and it can also access—or *capture*--variables from the surrounding scope. A lambda begins with the capture clause (*lambda-introducer* in the Standard syntax), which specifies which variables are captured, and whether the capture is by value or by reference. Variables that have the ampersand (`&`) prefix are accessed by reference and variables that do not have it are accessed by value.  
+ A lambda can introduce new variables in its body (in **C++14**), and it can also access, or *capture*, variables from the surrounding scope. A lambda begins with the capture clause (*lambda-introducer* in the Standard syntax), which specifies which variables are captured, and whether the capture is by value or by reference. Variables that have the ampersand (`&`) prefix are accessed by reference and variables that do not have it are accessed by value.  
   
  An empty capture clause, `[ ]`, indicates that the body of the lambda expression accesses no variables in the enclosing scope.  
   
- You can use the default capture mode (`capture-default` in the Standard syntax) to indicate how to capture any outside variables that are referenced in the lambda: [&] means all variables that you refer to are captured by reference, and [=] means they are captured by value. You can use a default capture mode, and then specify the opposite mode explicitly for specific variables. For example, if a lambda body accesses the external variable `total` by reference and the external variable `factor` by value, then the following capture clauses are equivalent:  
+ You can use the default capture mode (*capture-default* in the Standard syntax) to indicate how to capture any outside variables that are referenced in the lambda: `[&]` means all variables that you refer to are captured by reference, and `[=]` means they are captured by value. You can use a default capture mode, and then specify the opposite mode explicitly for specific variables. For example, if a lambda body accesses the external variable `total` by reference and the external variable `factor` by value, then the following capture clauses are equivalent:  
   
 ```cpp  
 [&total, factor]  
@@ -87,9 +87,9 @@ void abssort(float* x, unsigned n) {
 [&total, =]  
 ```  
   
- Only variables that are mentioned in the lambda are captured when a `capture-default` is used.  
+ Only variables that are mentioned in the lambda are captured when a capture-default is used.  
   
- If a capture clause includes a `capture-default``&`, then no `identifier` in a `capture` of that capture clause can have the form `& identifier`. Likewise, if the capture clause includes a `capture-default``=`, then no `capture` of that capture clause can have the form `= identifier`. An identifier or `this` cannot appear more than once in a capture clause. The following code snippet illustrates some examples.  
+ If a capture clause includes a capture-default `&`, then no `identifier` in a `capture` of that capture clause can have the form `& identifier`. Likewise, if the capture clause includes a capture-default `=`, then no `capture` of that capture clause can have the form `= identifier`. An identifier or `this` cannot appear more than once in a capture clause. The following code snippet illustrates some examples.  
   
 ```cpp  
 struct S { void f(int i); };  
@@ -102,7 +102,7 @@ void S::f(int i) {
 }  
 ```  
   
- A `capture` followed by an ellipsis is a pack expansion, as shown in this [variadic template](../cpp/ellipses-and-variadic-templates.md) example:  
+ A capture followed by an ellipsis is a pack expansion, as shown in this [variadic template](../cpp/ellipses-and-variadic-templates.md) example:  
   
 ```cpp  
 template<class... Args>  
@@ -122,11 +122,11 @@ void f(Args... args) {
   
 -   Reference captures introduce a lifetime dependency, but value captures have no lifetime dependencies. This is especially important when the lambda runs asynchronously. If you capture a local by reference in an async lambda, that local will very possibly be gone by the time the lambda runs, resulting in an access violation at run time.  
   
- **Generalized capture (C++ 14)**  
+### Generalized capture (C++ 14)  
   
  In C++14, you can introduce and initialize new variables in the capture clause, without the need to have those variables exist in the lambda function’s enclosing scope. The initialization can be expressed as any arbitrary expression; the type of the new variable is deduced from the type produced by the expression. One benefit of this feature is that in C++14 you can capture move-only variables (such as std::unique_ptr) from the surrounding scope and use them in a lambda.  
   
-```  
+```cpp  
 pNums = make_unique<vector<int>>(nums);  
 //...  
       auto a = [ptr = move(pNums)]()  
@@ -138,7 +138,7 @@ pNums = make_unique<vector<int>>(nums);
 ### Parameter List  
  In addition to capturing variables, a lambda can accept input parameters. A parameter list (*lambda declarator* in the Standard syntax) is optional and in most aspects resembles the parameter list for a function.  
   
-```  
+```cpp  
 int y = [] (int first, int second)  
 {  
     return first + second;  
@@ -148,7 +148,7 @@ int y = [] (int first, int second)
   
  In **C++ 14**, if the parameter type is generic, you can use the auto keyword as the type specifier. This tells the compiler to create the function call operator as a template. Each instance of auto in a parameter list is equivalent to a distinct type parameter.  
   
-```  
+```cpp  
 auto y = [] (auto first, auto second)  
 {  
     return first + second;  
@@ -157,7 +157,7 @@ auto y = [] (auto first, auto second)
   
  A lambda expression can take another lambda expression as its argument. For more information, see "Higher-Order Lambda Expressions" in the topic [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
   
- Because a parameter list is optional, you can omit the empty parentheses if you do not pass arguments to the lambda expression and its `lambda-declarator:` does not contain *exception-specification*, *trailing-return-type*, or `mutable`.  
+ Because a parameter list is optional, you can omit the empty parentheses if you do not pass arguments to the lambda expression and its lambda-declarator does not contain *exception-specification*, *trailing-return-type*, or `mutable`.  
   
 ### Mutable Specification  
  Typically, a lambda's function call operator is const-by-value, but use of the `mutable` keyword cancels this out. It does not produce mutable data members. The mutable specification enables the body of a lambda expression to modify variables that are captured by value. Some of the examples later in this article show how to use `mutable`.  
@@ -218,8 +218,6 @@ int main()
    cout << m << endl << n << endl;  
 }  
 ```  
-  
- **Output:**  
   
 ```Output  
 5  
@@ -335,7 +333,6 @@ vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
   
 ```cpp  
 auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };  
-  
 ```  
   
  To determine whether a modifier is supported by lambdas, see the article about it in the [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md) section of the documentation.  

@@ -205,7 +205,7 @@ class CMFCBaseTabCtrl : public CWnd
  **Header:** afxbasetabctrl.h  
   
 ##  <a name="addicon"></a>  CMFCBaseTabCtrl::AddIcon  
- Adds an icon to the list of icons in the protected `CMap``m_mapAddedIcons` member.  
+ Adds an icon to the list of icons in the protected `CMap m_mapAddedIcons` member.  
   
 ```  
 void AddIcon(
@@ -218,7 +218,7 @@ void AddIcon(
  A handle to the icon to be added.  
   
  [in] `iIcon`  
- Zero-based index of the icon in the protected `CImageList``m_Images` member.  
+ Zero-based index of the icon in the protected `CImageList m_Images` member.  
   
 ### Remarks  
   

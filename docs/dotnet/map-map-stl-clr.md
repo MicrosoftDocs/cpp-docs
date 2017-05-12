@@ -84,25 +84,25 @@ map(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `map(map<Key, Mapped>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[map::begin (STL/CLR)](../dotnet/map-begin-stl-clr.md)`(),` `right``.`[map::end (STL/CLR)](../dotnet/map-end-stl-clr.md)`())`, with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the map object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the map object `right`, with the default ordering predicate.  
   
  The constructor:  
   
  `map(map<Key, Mapped>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[map::begin (STL/CLR)](../dotnet/map-begin-stl-clr.md)`(),` `right``->`[map::end (STL/CLR)](../dotnet/map-end-stl-clr.md)`())`, with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the map object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the map object `right`, with the default ordering predicate.  
   
  The constructor:  
   
  `template<typename InIter> map(InIter first, InIter last);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate.  
   
  The constructor:  
   
  `template<typename InIter> map(InIter first, InIter last, key_compare^ pred);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
   
  The constructor:  
   

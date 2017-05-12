@@ -41,8 +41,8 @@ Expressions are evaluated according to the precedence and grouping of their oper
 ## Order of evaluation  
  Consider this example:  
   
-```  
-// expre_pluslang__pluslang_Order_of_Evaluation.cpp  
+```cpp  
+// Order_of_Evaluation.cpp  
 // compile with: /EHsc  
 #include <iostream>  
 using namespace std;  
@@ -54,7 +54,9 @@ int main()
     cout << a + (b * c) << "\n";  
     cout << (a + b) * c << "\n";  
 }  
-//Output:  
+```  
+  
+```Output  
 38  
 38  
 54  
@@ -79,16 +81,16 @@ Expression-Evaluation Order with Parentheses
  Expressions such as those in the above figure are evaluated purely for their side effects — in this case, to transfer information to the standard output device.  
   
 ## Notation in expressions  
- The C++ language specifies certain compatibilities when specifying operands. The following table shows the types of operands acceptable to operators that require operands of type `type`.  
+ The C++ language specifies certain compatibilities when specifying operands. The following table shows the types of operands acceptable to operators that require operands of type *type*.  
   
 ### Operand Types Acceptable to Operators  
   
 |Type expected|Types allowed|  
 |-------------------|-------------------|  
-|`type`|**const** *type*<br /><br /> `volatile` *type*<br /><br /> `type`&<br /><br /> **const** `type`&<br /><br /> `volatile` `type`&<br /><br /> **volatile const** *type*<br /><br /> **volatile const** `type`&|  
-|*type\**|`type`\* **const**`type`\* `volatile``type`\* **volatile const**|  
-|**const** `type`|`type` **const** `type`**const** `type`&|  
-|`volatile` `type`|`type` `volatile` `type``volatile` `type`&|  
+|*type*|`const` *type*<br /> `volatile` *type*<br /> *type*&<br /> `const` *type*&<br /> `volatile` *type*&<br /> `volatile const` *type*<br /> `volatile const` *type*&|  
+|*type*\*|*type*\*<br /> `const` *type*\*<br /> `volatile` *type*\*<br /> `volatile const` *type*\*|  
+|`const` *type*|*type*<br /> `const` *type*<br />`const` *type*&|  
+|`volatile` *type*|*type*<br /> `volatile` *type*<br /> `volatile` *type*&|  
   
  Because the preceding rules can always be used in combination, a const pointer to a volatile object can be supplied where a pointer is expected.  
   

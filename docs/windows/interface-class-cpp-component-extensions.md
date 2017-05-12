@@ -80,7 +80,7 @@ interface class
   
  For information on other CLR types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).  
   
- You can detect at compile time if a type is an interface with `__is_interface_class(``type``)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ You can detect at compile time if a type is an interface with `__is_interface_class(type)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
  In the development environment, you can get F1 help on these keywords by highlighting the keyword, (`interface class`, for example) and pressing F1.  
   

@@ -486,7 +486,7 @@ const CharType* narrow(
  A const pointer to the first character of type `char` in the destination range that stores the converted range of characters.  
   
 ### Return Value  
- The first member function returns the native character of type `char` that corresponds to the parameter character of type `CharType``default` if not counterpart is defined.  
+ The first member function returns the native character of type `char` that corresponds to the parameter character of type `CharType default` if not counterpart is defined.  
   
  The second member function returns a pointer to the destination range of native characters converted from characters of type `CharType`.  
   
