@@ -188,7 +188,7 @@ protected:
             // Set the sentinel event.
             received_sentinel.set();
          },
-         [](int value) { 
+         [](int value) -> bool { 
             return value == 0; 
          });
 
