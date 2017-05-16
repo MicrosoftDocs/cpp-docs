@@ -117,9 +117,9 @@ This topic describes how to create a basic agent-based application. In this walk
   
  [!code-cpp[concrt-basic-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_7.h)]  
   
-     The `run` method opens the file and reads data from it. The `run` method uses exception handling to capture any errors that occur during file processing.  
+The `run` method opens the file and reads data from it. The `run` method uses exception handling to capture any errors that occur during file processing.  
   
-     Each time this method reads data from the file, it calls the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function to send that data to the target buffer. It sends the empty string to its target buffer to indicate the end of processing.  
+   Each time this method reads data from the file, it calls the [concurrency::asend](reference/concurrency-namespace-functions.md#asend) function to send that data to the target buffer. It sends the empty string to its target buffer to indicate the end of processing.  
 
   
  The following example shows the complete contents of file_reader.h.  
