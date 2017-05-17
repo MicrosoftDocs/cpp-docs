@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DBrush', 'AFXRENDERTARGET/CD2DBrush', 'AFXRENDERTARGET/CD2DBrush::CD2DBrush', 'AFXRENDERTARGET/CD2DBrush::Attach', 'AFXRENDERTARGET/CD2DBrush::Destroy', 'AFXRENDERTARGET/CD2DBrush::Detach', 'AFXRENDERTARGET/CD2DBrush::Get', 'AFXRENDERTARGET/CD2DBrush::GetOpacity', 'AFXRENDERTARGET/CD2DBrush::GetTransform', 'AFXRENDERTARGET/CD2DBrush::IsValid', 'AFXRENDERTARGET/CD2DBrush::SetOpacity', 'AFXRENDERTARGET/CD2DBrush::SetTransform', 'AFXRENDERTARGET/CD2DBrush::m_pBrush', 'AFXRENDERTARGET/CD2DBrush::m_pBrushProperties']

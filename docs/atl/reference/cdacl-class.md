@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDacl', 'ATLSECURITY/ATL::CDacl', 'ATLSECURITY/ATL::CDacl::CDacl', 'ATLSECURITY/ATL::CDacl::AddAllowedAce', 'ATLSECURITY/ATL::CDacl::AddDeniedAce', 'ATLSECURITY/ATL::CDacl::GetAceCount', 'ATLSECURITY/ATL::CDacl::RemoveAce', 'ATLSECURITY/ATL::CDacl::RemoveAllAces']

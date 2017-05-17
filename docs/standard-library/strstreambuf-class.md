@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['strstreambuf', 'strstream/std::strstreambuf::freeze', 'strstream/std::strstreambuf::overflow', 'strstream/std::strstreambuf::pbackfail', 'strstream/std::strstreambuf::pcount', 'strstream/std::strstreambuf::seekoff', 'strstream/std::strstreambuf::seekpos', 'strstream/std::strstreambuf::str', 'strstream/std::strstreambuf::underflow']  

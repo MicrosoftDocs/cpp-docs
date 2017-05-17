@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlFile', 'ATLFILE/ATL::CAtlFile', 'ATLFILE/ATL::CAtlFile::CAtlFile', 'ATLFILE/ATL::CAtlFile::Create', 'ATLFILE/ATL::CAtlFile::Flush', 'ATLFILE/ATL::CAtlFile::GetOverlappedResult', 'ATLFILE/ATL::CAtlFile::GetPosition', 'ATLFILE/ATL::CAtlFile::GetSize', 'ATLFILE/ATL::CAtlFile::LockRange', 'ATLFILE/ATL::CAtlFile::Read', 'ATLFILE/ATL::CAtlFile::Seek', 'ATLFILE/ATL::CAtlFile::SetSize', 'ATLFILE/ATL::CAtlFile::UnlockRange', 'ATLFILE/ATL::CAtlFile::Write', 'ATLFILE/ATL::CAtlFile::m_pTM']

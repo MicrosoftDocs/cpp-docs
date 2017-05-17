@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCOutlookBar', 'AFXOUTLOOKBAR/CMFCOutlookBar', 'AFXOUTLOOKBAR/CMFCOutlookBar::AllowDestroyEmptyTabbedPane', 'AFXOUTLOOKBAR/CMFCOutlookBar::CanAcceptPane', 'AFXOUTLOOKBAR/CMFCOutlookBar::CanSetCaptionTextToTabName', 'AFXOUTLOOKBAR/CMFCOutlookBar::Create', 'AFXOUTLOOKBAR/CMFCOutlookBar::CreateCustomPage', 'AFXOUTLOOKBAR/CMFCOutlookBar::DoesAllowDynInsertBefore', 'AFXOUTLOOKBAR/CMFCOutlookBar::FloatTab', 'AFXOUTLOOKBAR/CMFCOutlookBar::GetButtonsFont', 'AFXOUTLOOKBAR/CMFCOutlookBar::GetTabArea', 'AFXOUTLOOKBAR/CMFCOutlookBar::IsMode2003', 'AFXOUTLOOKBAR/CMFCOutlookBar::OnAfterAnimation', 'AFXOUTLOOKBAR/CMFCOutlookBar::OnBeforeAnimation', 'AFXOUTLOOKBAR/CMFCOutlookBar::OnScroll', 'AFXOUTLOOKBAR/CMFCOutlookBar::RemoveCustomPage', 'AFXOUTLOOKBAR/CMFCOutlookBar::SetButtonsFont', 'AFXOUTLOOKBAR/CMFCOutlookBar::SetMode2003']

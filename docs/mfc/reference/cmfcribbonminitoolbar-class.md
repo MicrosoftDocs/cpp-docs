@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonMiniToolBar', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsContextMenuMode', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsRibbonMiniToolBar', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::SetCommands', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::Show', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::ShowWithContextMenu']

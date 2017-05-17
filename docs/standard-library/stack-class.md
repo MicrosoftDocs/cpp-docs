@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['stack', 'stack/std::stack::container_type', 'stack/std::stack::size_type', 'stack/std::stack::value_type', 'stack/std::stack::empty', 'stack/std::stack::pop', 'stack/std::stack::push', 'stack/std::stack::size', 'stack/std::stack::top']  

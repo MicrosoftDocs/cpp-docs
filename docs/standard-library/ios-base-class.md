@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ios_base', 'xiosbase/std::ios_base', 'ios/std::ios_base::event_callback', 'ios/std::ios_base::fmtflags', 'ios/std::ios_base::iostate', 'ios/std::ios_base::openmode', 'ios/std::ios_base::seekdir', 'ios/std::ios_base::event', 'ios/std::ios_base::adjustfield', 'ios/std::ios_base::app', 'ios/std::ios_base::ate', 'ios/std::ios_base::badbit', 'ios/std::ios_base::basefield', 'ios/std::ios_base::beg', 'ios/std::ios_base::binary', 'ios/std::ios_base::boolalpha', 'ios/std::ios_base::cur', 'ios/std::ios_base::dec', 'ios/std::ios_base::end', 'ios/std::ios_base::eofbit', 'ios/std::ios_base::failbit', 'ios/std::ios_base::fixed', 'ios/std::ios_base::floatfield', 'ios/std::ios_base::goodbit', 'ios/std::ios_base::hex', 'ios/std::ios_base::in', 'ios/std::ios_base::internal', 'ios/std::ios_base::left', 'ios/std::ios_base::oct', 'ios/std::ios_base::out', 'ios/std::ios_base::right', 'ios/std::ios_base::scientific', 'ios/std::ios_base::showbase', 'ios/std::ios_base::showpoint', 'ios/std::ios_base::showpos', 'ios/std::ios_base::skipws', 'ios/std::ios_base::trunc', 'ios/std::ios_base::unitbuf', 'ios/std::ios_base::uppercase', 'ios/std::ios_base::failure', 'ios/std::ios_base::flags', 'ios/std::ios_base::getloc', 'ios/std::ios_base::imbue', 'ios/std::ios_base::Init', 'ios/std::ios_base::iword', 'ios/std::ios_base::precision', 'ios/std::ios_base::pword', 'ios/std::ios_base::register_callback', 'ios/std::ios_base::setf', 'ios/std::ios_base::sync_with_stdio', 'ios/std::ios_base::unsetf', 'ios/std::ios_base::width', 'ios/std::ios_base::xalloc']  

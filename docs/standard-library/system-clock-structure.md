@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['chrono/std::chrono::system_clock', 'chrono/std::chrono::system_clock::from_time_t', 'chrono/std::chrono::system_clock::now', 'chrono/std::chrono::system_clock::to_time_t', 'chrono/std::chrono::system_clock::is_monotonic Constant', 'chrono/std::chrono::system_clock::is_steady Constant']  

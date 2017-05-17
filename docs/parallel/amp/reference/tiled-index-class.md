@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['tiled_index', 'AMP/tiled_index', 'AMP/Concurrency::tiled_index::tiled_index', 'AMP/Concurrency::tiled_index::get_tile_extent', 'AMP/Concurrency::tiled_index::barrier', 'AMP/Concurrency::tiled_index::global', 'AMP/Concurrency::tiled_index::local', 'AMP/Concurrency::tiled_index::rank', 'AMP/Concurrency::tiled_index::tile', 'AMP/Concurrency::tiled_index::tile_dim0', 'AMP/Concurrency::tiled_index::tile_dim1', 'AMP/Concurrency::tiled_index::tile_dim2', 'AMP/Concurrency::tiled_index::tile_origin', 'AMP/Concurrency::tiled_index::tile_extent']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleStreamFile', 'AFXOLE/COleStreamFile', 'AFXOLE/COleStreamFile::COleStreamFile', 'AFXOLE/COleStreamFile::Attach', 'AFXOLE/COleStreamFile::CreateMemoryStream', 'AFXOLE/COleStreamFile::CreateStream', 'AFXOLE/COleStreamFile::Detach', 'AFXOLE/COleStreamFile::GetStream', 'AFXOLE/COleStreamFile::OpenStream']

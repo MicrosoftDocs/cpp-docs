@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['Context', 'CONCRT/concurrency::Context', 'CONCRT/concurrency::Context::Block', 'CONCRT/concurrency::Context::CurrentContext', 'CONCRT/concurrency::Context::GetId', 'CONCRT/concurrency::Context::GetScheduleGroupId', 'CONCRT/concurrency::Context::GetVirtualProcessorId', 'CONCRT/concurrency::Context::Id', 'CONCRT/concurrency::Context::IsCurrentTaskCollectionCanceling', 'CONCRT/concurrency::Context::IsSynchronouslyBlocked', 'CONCRT/concurrency::Context::Oversubscribe', 'CONCRT/concurrency::Context::ScheduleGroupId', 'CONCRT/concurrency::Context::Unblock', 'CONCRT/concurrency::Context::VirtualProcessorId', 'CONCRT/concurrency::Context::Yield']

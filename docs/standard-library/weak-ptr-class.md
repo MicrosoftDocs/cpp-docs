@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['weak_ptr', 'memory/std::weak_ptr', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count', 'memory/std::weak_ptr::operator=', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count']  

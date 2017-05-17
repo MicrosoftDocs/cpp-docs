@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['condition_variable/std::condition', 'condition_variable/std::condition_variable::condition_variable', 'condition_variable/std::condition_variable::native_handle', 'condition_variable/std::condition_variable::notify_all', 'condition_variable/std::condition_variable::notify_one', 'condition_variable/std::condition_variable::wait', 'condition_variable/std::condition_variable::wait_for', 'condition_variable/std::condition_variable::wait_until']  

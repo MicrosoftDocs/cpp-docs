@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMenuTearOffManager', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::CMenuTearOffManager', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Build', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::GetRegPath', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Initialize', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::IsDynamicID', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Parse', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus']

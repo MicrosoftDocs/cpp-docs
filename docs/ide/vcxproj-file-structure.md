@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "04/27/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-ide"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 

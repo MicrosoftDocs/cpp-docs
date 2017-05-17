@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDropTarget', 'AFXOLE/COleDropTarget', 'AFXOLE/COleDropTarget::COleDropTarget', 'AFXOLE/COleDropTarget::OnDragEnter', 'AFXOLE/COleDropTarget::OnDragLeave', 'AFXOLE/COleDropTarget::OnDragOver', 'AFXOLE/COleDropTarget::OnDragScroll', 'AFXOLE/COleDropTarget::OnDrop', 'AFXOLE/COleDropTarget::OnDropEx', 'AFXOLE/COleDropTarget::Register', 'AFXOLE/COleDropTarget::Revoke']

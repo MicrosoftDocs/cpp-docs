@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['mutex/std::mutex', 'mutex/std::mutex::mutex', 'mutex/std::mutex::lock', 'mutex/std::mutex::native_handle', 'mutex/std::mutex::try_lock', 'mutex/std::mutex::unlock']  

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDialogImpl', 'ATLWIN/ATL::CDialogImpl', 'ATLWIN/ATL::Create', 'ATLWIN/ATL::DestroyWindow', 'ATLWIN/ATL::DoModal', 'ATLWIN/ATL::EndDialog', 'ATLWIN/ATL::GetDialogProc', 'ATLWIN/ATL::MapDialogRect', 'ATLWIN/ATL::OnFinalMessage', 'ATLWIN/ATL::DialogProc', 'ATLWIN/ATL::StartDialogProc']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController']

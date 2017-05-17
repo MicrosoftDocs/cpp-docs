@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComObjectStack', 'ATLCOM/ATL::CComObjectStack', 'ATLCOM/ATL::CComObjectStack::CComObjectStack', 'ATLCOM/ATL::CComObjectStack::AddRef', 'ATLCOM/ATL::CComObjectStack::QueryInterface', 'ATLCOM/ATL::CComObjectStack::Release', 'ATLCOM/ATL::CComObjectStack::m_hResFinalConstruct']

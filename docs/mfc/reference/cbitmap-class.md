@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CBitmap', 'AFXWIN/CBitmap', 'AFXWIN/CBitmap::CBitmap', 'AFXWIN/CBitmap::CreateBitmap', 'AFXWIN/CBitmap::CreateBitmapIndirect', 'AFXWIN/CBitmap::CreateCompatibleBitmap', 'AFXWIN/CBitmap::CreateDiscardableBitmap', 'AFXWIN/CBitmap::FromHandle', 'AFXWIN/CBitmap::GetBitmap', 'AFXWIN/CBitmap::GetBitmapBits', 'AFXWIN/CBitmap::GetBitmapDimension', 'AFXWIN/CBitmap::LoadBitmap', 'AFXWIN/CBitmap::LoadMappedBitmap', 'AFXWIN/CBitmap::LoadOEMBitmap', 'AFXWIN/CBitmap::SetBitmapBits', 'AFXWIN/CBitmap::SetBitmapDimension']

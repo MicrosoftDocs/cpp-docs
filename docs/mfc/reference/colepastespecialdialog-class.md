@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COlePasteSpecialDialog', 'AFXODLGS/COlePasteSpecialDialog', 'AFXODLGS/COlePasteSpecialDialog::COlePasteSpecialDialog', 'AFXODLGS/COlePasteSpecialDialog::AddFormat', 'AFXODLGS/COlePasteSpecialDialog::AddLinkEntry', 'AFXODLGS/COlePasteSpecialDialog::AddStandardFormats', 'AFXODLGS/COlePasteSpecialDialog::CreateItem', 'AFXODLGS/COlePasteSpecialDialog::DoModal', 'AFXODLGS/COlePasteSpecialDialog::GetDrawAspect', 'AFXODLGS/COlePasteSpecialDialog::GetIconicMetafile', 'AFXODLGS/COlePasteSpecialDialog::GetPasteIndex', 'AFXODLGS/COlePasteSpecialDialog::GetSelectionType', 'AFXODLGS/COlePasteSpecialDialog::m_ps']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CBaseKeyFrame', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::CBaseKeyFrame', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::AddToStoryboard', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::GetAnimationKeyframe', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsAdded', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsKeyframeAtOffset', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bAdded', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bIsKeyframeAtOffset', 'AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_keyframe']

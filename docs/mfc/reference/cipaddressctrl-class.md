@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CIPAddressCtrl', 'AFXCMN/CIPAddressCtrl', 'AFXCMN/CIPAddressCtrl::CIPAddressCtrl', 'AFXCMN/CIPAddressCtrl::ClearAddress', 'AFXCMN/CIPAddressCtrl::Create', 'AFXCMN/CIPAddressCtrl::CreateEx', 'AFXCMN/CIPAddressCtrl::GetAddress', 'AFXCMN/CIPAddressCtrl::IsBlank', 'AFXCMN/CIPAddressCtrl::SetAddress', 'AFXCMN/CIPAddressCtrl::SetFieldFocus', 'AFXCMN/CIPAddressCtrl::SetFieldRange']

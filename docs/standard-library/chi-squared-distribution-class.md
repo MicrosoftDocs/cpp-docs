@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['chi_squared_distribution', 'random/std::chi_squared_distribution', 'random/std::chi_squared_distribution::reset', 'random/std::chi_squared_distribution::n', 'random/std::chi_squared_distribution::param', 'random/std::chi_squared_distribution::min', 'random/std::chi_squared_distribution::max', 'random/std::chi_squared_distribution::operator()', 'random/std::chi_squared_distribution::param_type', 'random/std::chi_squared_distribution::param_type::n', 'random/std::chi_squared_distribution::param_type::operator==', 'random/std::chi_squared_distribution::param_type::operator!=', 'random/std::chi_squared_distribution::param_type']  

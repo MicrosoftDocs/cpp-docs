@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['CurrentScheduler', 'CONCRT/concurrency::CurrentScheduler', 'CONCRT/concurrency::CurrentScheduler::Create', 'CONCRT/concurrency::CurrentScheduler::CreateScheduleGroup', 'CONCRT/concurrency::CurrentScheduler::Detach', 'CONCRT/concurrency::CurrentScheduler::Get', 'CONCRT/concurrency::CurrentScheduler::GetNumberOfVirtualProcessors', 'CONCRT/concurrency::CurrentScheduler::GetPolicy', 'CONCRT/concurrency::CurrentScheduler::Id', 'CONCRT/concurrency::CurrentScheduler::IsAvailableLocation', 'CONCRT/concurrency::CurrentScheduler::RegisterShutdownEvent', 'CONCRT/concurrency::CurrentScheduler::ScheduleTask']

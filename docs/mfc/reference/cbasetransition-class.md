@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CBaseTransition', 'AFXANIMATIONCONTROLLER/CBaseTransition', 'AFXANIMATIONCONTROLLER/CBaseTransition::CBaseTransition', 'AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboard', 'AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboardAtKeyframes', 'AFXANIMATIONCONTROLLER/CBaseTransition::Clear', 'AFXANIMATIONCONTROLLER/CBaseTransition::Create', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetEndKeyframe', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetRelatedVariable', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetStartKeyframe', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetTransition', 'AFXANIMATIONCONTROLLER/CBaseTransition::GetType', 'AFXANIMATIONCONTROLLER/CBaseTransition::IsAdded', 'AFXANIMATIONCONTROLLER/CBaseTransition::SetKeyframes', 'AFXANIMATIONCONTROLLER/CBaseTransition::SetRelatedVariable', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_bAdded', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_pEndKeyframe', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_pRelatedVariable', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_pStartKeyframe', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_transition', 'AFXANIMATIONCONTROLLER/CBaseTransition::m_type']

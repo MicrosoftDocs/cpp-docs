@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['reference_wrapper', 'functional/std::reference_wrapper', 'type_traits/std::reference_wrapper', 'xrefwrap/std::reference_wrapper', 'type_traits/std::reference_wrapper::get', 'type_traits/std::reference_wrapper::operator()', 'functional/std::reference_wrapper::result_type', 'functional/std::reference_wrapper::type', 'functional/std::reference_wrapper::get', 'functional/std::reference_wrapper::operator()']  

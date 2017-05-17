@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['normal_distribution', 'random/std::normal_distribution', 'random/std::normal_distribution::reset', 'random/std::normal_distribution::mean', 'random/std::normal_distribution::stddev', 'random/std::normal_distribution::param', 'random/std::normal_distribution::min', 'random/std::normal_distribution::max', 'random/std::normal_distribution::operator()', 'random/std::normal_distribution::param_type', 'random/std::normal_distribution::param_type::mean', 'random/std::normal_distribution::param_type::stddev', 'random/std::normal_distribution::param_type::operator==', 'random/std::normal_distribution::param_type::operator!=', 'random/std::normal_distribution::param_type']  

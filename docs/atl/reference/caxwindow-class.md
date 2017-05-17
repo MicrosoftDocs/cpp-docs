@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAxWindow', 'ATLWIN/ATL::CAxWindow', 'ATLWIN/ATL::AttachControl', 'ATLWIN/ATL::CAxWindow', 'ATLWIN/ATL::CreateControl', 'ATLWIN/ATL::CreateControlEx', 'ATLWIN/ATL::GetWndClassName', 'ATLWIN/ATL::QueryControl', 'ATLWIN/ATL::QueryHost', 'ATLWIN/ATL::SetExternalDispatch', 'ATLWIN/ATL::SetExternalUIHandler']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDispatchDriver', 'AFXDISP/COleDispatchDriver', 'AFXDISP/COleDispatchDriver::COleDispatchDriver', 'AFXDISP/COleDispatchDriver::AttachDispatch', 'AFXDISP/COleDispatchDriver::CreateDispatch', 'AFXDISP/COleDispatchDriver::DetachDispatch', 'AFXDISP/COleDispatchDriver::GetProperty', 'AFXDISP/COleDispatchDriver::InvokeHelper', 'AFXDISP/COleDispatchDriver::ReleaseDispatch', 'AFXDISP/COleDispatchDriver::SetProperty', 'AFXDISP/COleDispatchDriver::m_bAutoRelease', 'AFXDISP/COleDispatchDriver::m_lpDispatch']

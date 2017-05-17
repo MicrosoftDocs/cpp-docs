@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CWin32Heap', 'ATLMEM/ATL::CWin32Heap', 'ATLMEM/ATL::CWin32Heap::CWin32Heap', 'ATLMEM/ATL::CWin32Heap::Allocate', 'ATLMEM/ATL::CWin32Heap::Attach', 'ATLMEM/ATL::CWin32Heap::Detach', 'ATLMEM/ATL::CWin32Heap::Free', 'ATLMEM/ATL::CWin32Heap::GetSize', 'ATLMEM/ATL::CWin32Heap::Reallocate', 'ATLMEM/ATL::CWin32Heap::m_bOwnHeap', 'ATLMEM/ATL::CWin32Heap::m_hHeap']

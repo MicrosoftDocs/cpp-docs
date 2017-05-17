@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDaoQueryDef', 'AFXDAO/CDaoQueryDef', 'AFXDAO/CDaoQueryDef::CDaoQueryDef', 'AFXDAO/CDaoQueryDef::Append', 'AFXDAO/CDaoQueryDef::CanUpdate', 'AFXDAO/CDaoQueryDef::Close', 'AFXDAO/CDaoQueryDef::Create', 'AFXDAO/CDaoQueryDef::Execute', 'AFXDAO/CDaoQueryDef::GetConnect', 'AFXDAO/CDaoQueryDef::GetDateCreated', 'AFXDAO/CDaoQueryDef::GetDateLastUpdated', 'AFXDAO/CDaoQueryDef::GetFieldCount', 'AFXDAO/CDaoQueryDef::GetFieldInfo', 'AFXDAO/CDaoQueryDef::GetName', 'AFXDAO/CDaoQueryDef::GetODBCTimeout', 'AFXDAO/CDaoQueryDef::GetParameterCount', 'AFXDAO/CDaoQueryDef::GetParameterInfo', 'AFXDAO/CDaoQueryDef::GetParamValue', 'AFXDAO/CDaoQueryDef::GetRecordsAffected', 'AFXDAO/CDaoQueryDef::GetReturnsRecords', 'AFXDAO/CDaoQueryDef::GetSQL', 'AFXDAO/CDaoQueryDef::GetType', 'AFXDAO/CDaoQueryDef::IsOpen', 'AFXDAO/CDaoQueryDef::Open', 'AFXDAO/CDaoQueryDef::SetConnect', 'AFXDAO/CDaoQueryDef::SetName', 'AFXDAO/CDaoQueryDef::SetODBCTimeout', 'AFXDAO/CDaoQueryDef::SetParamValue', 'AFXDAO/CDaoQueryDef::SetReturnsRecords', 'AFXDAO/CDaoQueryDef::SetSQL', 'AFXDAO/CDaoQueryDef::m_pDAOQueryDef', 'AFXDAO/CDaoQueryDef::m_pDatabase']

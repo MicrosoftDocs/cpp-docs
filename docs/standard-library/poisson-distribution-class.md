@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['poisson_distribution', 'random/std::poisson_distribution', 'random/std::poisson_distribution::reset', 'random/std::poisson_distribution::mean', 'random/std::poisson_distribution::param', 'random/std::poisson_distribution::min', 'random/std::poisson_distribution::max', 'random/std::poisson_distribution::operator()', 'random/std::poisson_distribution::param_type', 'random/std::poisson_distribution::param_type::mean', 'random/std::poisson_distribution::param_type::operator==', 'random/std::poisson_distribution::param_type::operator!=', 'random/std::poisson_distribution::param_type']  

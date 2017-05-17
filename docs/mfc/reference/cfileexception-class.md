@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFileException', 'AFX/CFileException', 'AFX/CFileException::CFileException', 'AFX/CFileException::ErrnoToException', 'AFX/CFileException::GetErrorMessage', 'AFX/CFileException::OsErrorToException', 'AFX/CFileException::ThrowErrno', 'AFX/CFileException::ThrowOsError', 'AFX/CFileException::m_cause', 'AFX/CFileException::m_lOsError', 'AFX/CFileException::m_strFileName']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['IVirtualProcessorRoot', 'CONCRTRM/concurrency::IVirtualProcessorRoot', 'CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Activate', 'CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Deactivate', 'CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::EnsureAllTasksVisible', 'CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::GetId']

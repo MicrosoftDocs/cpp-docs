@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CLocalHeap', 'ATLMEM/ATL::CLocalHeap', 'ATLMEM/ATL::CLocalHeap::Allocate', 'ATLMEM/ATL::CLocalHeap::Free', 'ATLMEM/ATL::CLocalHeap::GetSize', 'ATLMEM/ATL::CLocalHeap::Reallocate']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CEditView', 'AFXEXT/CEditView', 'AFXEXT/CEditView::CEditView', 'AFXEXT/CEditView::FindText', 'AFXEXT/CEditView::GetBufferLength', 'AFXEXT/CEditView::GetEditCtrl', 'AFXEXT/CEditView::GetPrinterFont', 'AFXEXT/CEditView::GetSelectedText', 'AFXEXT/CEditView::LockBuffer', 'AFXEXT/CEditView::PrintInsideRect', 'AFXEXT/CEditView::SerializeRaw', 'AFXEXT/CEditView::SetPrinterFont', 'AFXEXT/CEditView::SetTabStops', 'AFXEXT/CEditView::UnlockBuffer', 'AFXEXT/CEditView::OnFindNext', 'AFXEXT/CEditView::OnReplaceAll', 'AFXEXT/CEditView::OnReplaceSel', 'AFXEXT/CEditView::OnTextNotFound', 'AFXEXT/CEditView::dwStyleDefault']

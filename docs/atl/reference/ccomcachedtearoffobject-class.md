@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject::CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject::AddRef', 'ATLCOM/ATL::CComCachedTearOffObject::FinalConstruct', 'ATLCOM/ATL::CComCachedTearOffObject::FinalRelease', 'ATLCOM/ATL::CComCachedTearOffObject::QueryInterface', 'ATLCOM/ATL::CComCachedTearOffObject::Release', 'ATLCOM/ATL::CComCachedTearOffObject::m_contained']

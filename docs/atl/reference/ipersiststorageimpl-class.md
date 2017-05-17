@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IPersistStorageImpl', 'ATLCOM/ATL::IPersistStorageImpl', 'ATLCOM/ATL::IPersistStorageImpl::GetClassID', 'ATLCOM/ATL::IPersistStorageImpl::HandsOffStorage', 'ATLCOM/ATL::IPersistStorageImpl::InitNew', 'ATLCOM/ATL::IPersistStorageImpl::IsDirty', 'ATLCOM/ATL::IPersistStorageImpl::Load', 'ATLCOM/ATL::IPersistStorageImpl::Save', 'ATLCOM/ATL::IPersistStorageImpl::SaveCompleted']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['AFXDAO/DDX_FieldCBIndex', 'AFXDAO/DDX_FieldCBString', 'AFXDAO/DDX_FieldCBStringExact', 'AFXDAO/DDX_FieldCheck', 'AFXDAO/DDX_FieldLBIndex', 'AFXDAO/DDX_FieldLBString', 'AFXDAO/DDX_FieldLBStringExact', 'AFXDAO/DDX_FieldRadio', 'AFXDAO/DDX_FieldScroll', 'AFXDAO/DDX_FieldText']

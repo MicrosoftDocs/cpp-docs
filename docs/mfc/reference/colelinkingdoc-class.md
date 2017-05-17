@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleLinkingDoc', 'AFXOLE/COleLinkingDoc', 'AFXOLE/COleLinkingDoc::COleLinkingDoc', 'AFXOLE/COleLinkingDoc::Register', 'AFXOLE/COleLinkingDoc::Revoke', 'AFXOLE/COleLinkingDoc::OnFindEmbeddedItem', 'AFXOLE/COleLinkingDoc::OnGetLinkedItem']

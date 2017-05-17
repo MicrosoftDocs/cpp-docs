@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCCaptionButton', 'AFXCAPTIONBUTTON/CMFCCaptionButton', 'AFXCAPTIONBUTTON/CMFCCaptionButton::CMFCCaptionButton', 'AFXCAPTIONBUTTON/CMFCCaptionButton::GetHit', 'AFXCAPTIONBUTTON/CMFCCaptionButton::GetIconID', 'AFXCAPTIONBUTTON/CMFCCaptionButton::GetRect', 'AFXCAPTIONBUTTON/CMFCCaptionButton::GetSize', 'AFXCAPTIONBUTTON/CMFCCaptionButton::IsMiniFrameButton', 'AFXCAPTIONBUTTON/CMFCCaptionButton::Move', 'AFXCAPTIONBUTTON/CMFCCaptionButton::OnDraw', 'AFXCAPTIONBUTTON/CMFCCaptionButton::SetMiniFrameButton']

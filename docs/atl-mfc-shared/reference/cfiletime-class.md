@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFileTime', 'ATLTIME/ATL::CFileTime', 'ATLTIME/ATL::CFileTime::CFileTime', 'ATLTIME/ATL::CFileTime::GetCurrentTime', 'ATLTIME/ATL::CFileTime::GetTime', 'ATLTIME/ATL::CFileTime::LocalToUTC', 'ATLTIME/ATL::CFileTime::SetTime', 'ATLTIME/ATL::CFileTime::UTCToLocal', 'ATLTIME/ATL::CFileTime::Day', 'ATLTIME/ATL::CFileTime::Hour', 'ATLTIME/ATL::CFileTime::Millisecond', 'ATLTIME/ATL::CFileTime::Minute', 'ATLTIME/ATL::CFileTime::Second', 'ATLTIME/ATL::CFileTime::Week']

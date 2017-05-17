@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['regex_token_iterator', 'regex/std::regex_token_iterator', 'regex/std::regex_token_iterator::regex_type', 'regex/std::regex_token_iterator::value_type', 'regex/std::regex_token_iterator::iterator_category', 'regex/std::regex_token_iterator::difference_type', 'regex/std::regex_token_iterator::pointer', 'regex/std::regex_token_iterator::reference', 'regex/std::regex_token_iterator::operator==', 'regex/std::regex_token_iterator::operator!=', 'regex/std::regex_token_iterator::operator*', 'regex/std::regex_token_iterator::operator->', 'regex/std::regex_token_iterator::operator++', 'regex/std::regex_token_iterator::operator!=']  

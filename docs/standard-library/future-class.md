@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['future/std::future', 'future/std::future::future', 'future/std::future::get', 'future/std::future::share', 'future/std::future::valid', 'future/std::future::wait', 'future/std::future::wait_for', 'future/std::future::wait_until']  
