@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['stdext::max_variable_size', 'allocators/stdext::max_variable_size', 'max_variable_size', 'allocators/stdext::max_variable_size::allocated', 'allocators/stdext::max_variable_size::deallocated', 'allocators/stdext::max_variable_size::full', 'allocators/stdext::max_variable_size::released', 'allocators/stdext::max_variable_size::saved']  

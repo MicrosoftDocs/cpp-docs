@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCToolBarDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::CMFCToolBarDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::CanBeStretched', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::CopyFrom', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarButton::ExportToMenuButton', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetByCmd', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetHwnd', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetTime', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetTimeAll', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::HaveHotBorder', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::NotifyCommand', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnAddToCustomizePage', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnChangeParentWnd', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnClick', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnCtlColor', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnGlobalFontsChanged', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnMove', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnShow', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnUpdateToolTip', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTime', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTimeAll']

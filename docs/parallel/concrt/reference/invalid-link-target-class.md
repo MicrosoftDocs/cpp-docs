@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['invalid_link_target', 'CONCRT/concurrency::invalid_link_target', 'CONCRT/concurrency::invalid_link_target::invalid_link_target']

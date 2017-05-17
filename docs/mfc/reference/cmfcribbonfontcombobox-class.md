@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::BuildFonts', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetCharSet', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontDesc', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontType', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont']

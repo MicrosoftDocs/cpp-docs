@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleServerDoc', 'AFXOLE/COleServerDoc', 'AFXOLE/COleServerDoc::COleServerDoc', 'AFXOLE/COleServerDoc::ActivateDocObject', 'AFXOLE/COleServerDoc::ActivateInPlace', 'AFXOLE/COleServerDoc::DeactivateAndUndo', 'AFXOLE/COleServerDoc::DiscardUndoState', 'AFXOLE/COleServerDoc::GetClientSite', 'AFXOLE/COleServerDoc::GetEmbeddedItem', 'AFXOLE/COleServerDoc::GetItemClipRect', 'AFXOLE/COleServerDoc::GetItemPosition', 'AFXOLE/COleServerDoc::GetZoomFactor', 'AFXOLE/COleServerDoc::IsDocObject', 'AFXOLE/COleServerDoc::IsEmbedded', 'AFXOLE/COleServerDoc::IsInPlaceActive', 'AFXOLE/COleServerDoc::NotifyChanged', 'AFXOLE/COleServerDoc::NotifyClosed', 'AFXOLE/COleServerDoc::NotifyRename', 'AFXOLE/COleServerDoc::NotifySaved', 'AFXOLE/COleServerDoc::OnDeactivate', 'AFXOLE/COleServerDoc::OnDeactivateUI', 'AFXOLE/COleServerDoc::OnDocWindowActivate', 'AFXOLE/COleServerDoc::OnResizeBorder', 'AFXOLE/COleServerDoc::OnShowControlBars', 'AFXOLE/COleServerDoc::OnUpdateDocument', 'AFXOLE/COleServerDoc::RequestPositionChange', 'AFXOLE/COleServerDoc::SaveEmbedding', 'AFXOLE/COleServerDoc::ScrollContainerBy', 'AFXOLE/COleServerDoc::UpdateAllItems', 'AFXOLE/COleServerDoc::CreateInPlaceFrame', 'AFXOLE/COleServerDoc::DestroyInPlaceFrame', 'AFXOLE/COleServerDoc::GetDocObjectServer', 'AFXOLE/COleServerDoc::OnClose', 'AFXOLE/COleServerDoc::OnExecOleCmd', 'AFXOLE/COleServerDoc::OnFrameWindowActivate', 'AFXOLE/COleServerDoc::OnGetEmbeddedItem', 'AFXOLE/COleServerDoc::OnReactivateAndUndo', 'AFXOLE/COleServerDoc::OnSetHostNames', 'AFXOLE/COleServerDoc::OnSetItemRects', 'AFXOLE/COleServerDoc::OnShowDocument']

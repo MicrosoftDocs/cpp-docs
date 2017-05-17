@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['mutex/std::timed_mutex', 'mutex/std::timed_mutex::timed_mutex', 'mutex/std::timed_mutex::lock', 'mutex/std::timed_mutex::try_lock', 'mutex/std::timed_mutex::try_lock_for', 'mutex/std::timed_mutex::try_lock_until', 'mutex/std::timed_mutex::unlock']  

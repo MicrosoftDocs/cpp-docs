@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['shared_ptr', 'memory/std::shared_ptr', 'memory/std::shared_ptr::element_type', 'memory/std::shared_ptr::get', 'memory/std::shared_ptr::owner_before', 'memory/std::shared_ptr::reset', 'memory/std::shared_ptr::swap', 'memory/std::shared_ptr::unique', 'memory/std::shared_ptr::use_count', 'memory/std::shared_ptr::operator boolean-type', 'memory/std::shared_ptr::operator*', 'memory/std::shared_ptr::operator=', 'memory/std::shared_ptr::operator->', 'memory/std::shared_ptr::element_type', 'memory/std::shared_ptr::get', 'memory/std::shared_ptr::owner_before', 'memory/std::shared_ptr::reset', 'memory/std::shared_ptr::swap', 'memory/std::shared_ptr::unique', 'memory/std::shared_ptr::use_count']  

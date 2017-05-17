@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['allocators/stdext::cache_chunklist', 'stdext::cache_chunklist', 'cache_chunklist', 'allocators/stdext::cache_chunklist::allocate', 'allocators/stdext::cache_chunklist::deallocate']  

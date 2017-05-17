@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCMenuButton', 'AFXMENUBUTTON/CMFCMenuButton', 'AFXMENUBUTTON/CMFCMenuButton::CMFCMenuButton', 'AFXMENUBUTTON/CMFCMenuButton::PreTranslateMessage', 'AFXMENUBUTTON/CMFCMenuButton::SizeToContent', 'AFXMENUBUTTON/CMFCMenuButton::m_bOSMenu', 'AFXMENUBUTTON/CMFCMenuButton::m_bRightArrow', 'AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed', 'AFXMENUBUTTON/CMFCMenuButton::m_hMenu', 'AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult']

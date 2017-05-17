@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDCRenderTarget', 'AFXRENDERTARGET/CDCRenderTarget', 'AFXRENDERTARGET/CDCRenderTarget::CDCRenderTarget', 'AFXRENDERTARGET/CDCRenderTarget::Attach', 'AFXRENDERTARGET/CDCRenderTarget::BindDC', 'AFXRENDERTARGET/CDCRenderTarget::Create', 'AFXRENDERTARGET/CDCRenderTarget::Detach', 'AFXRENDERTARGET/CDCRenderTarget::GetDCRenderTarget', 'AFXRENDERTARGET/CDCRenderTarget::m_pDCRenderTarget']

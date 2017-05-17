@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCPopupMenuBar', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::AdjustSizeImmediate', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::BuildOrigItems', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::CloseDelayedSubMenu', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::ExportToMenu', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::FindDestintationToolBar', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetCurrentMenuImageSize', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetDefaultMenuId', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetLastCommandIndex', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetOffset', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::ImportFromMenu', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsDropDownListMode', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsPaletteMode', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsRibbonPanel', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsRibbonPanelInRegularMode', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::LoadFromHash', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::RestoreDelayedSubMenu', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::SetButtonStyle', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::SetOffset', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::StartPopupMenuTimer', 'AFXPOPUPMENUBAR/CMFCPopupMenuBar::m_bDisableSideBarInXPMode']

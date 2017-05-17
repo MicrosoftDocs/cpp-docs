@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CKeyboardManager', 'AFXKEYBOARDMANAGER/CKeyboardManager', 'AFXKEYBOARDMANAGER/CKeyboardManager::CKeyboardManager', 'AFXKEYBOARDMANAGER/CKeyboardManager::CleanUp', 'AFXKEYBOARDMANAGER/CKeyboardManager::FindDefaultAccelerator', 'AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyHandled', 'AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyPrintable', 'AFXKEYBOARDMANAGER/CKeyboardManager::IsShowAllAccelerators', 'AFXKEYBOARDMANAGER/CKeyboardManager::LoadState', 'AFXKEYBOARDMANAGER/CKeyboardManager::ResetAll', 'AFXKEYBOARDMANAGER/CKeyboardManager::SaveState', 'AFXKEYBOARDMANAGER/CKeyboardManager::ShowAllAccelerators', 'AFXKEYBOARDMANAGER/CKeyboardManager::TranslateCharToUpper', 'AFXKEYBOARDMANAGER/CKeyboardManager::UpdateAccelTable']

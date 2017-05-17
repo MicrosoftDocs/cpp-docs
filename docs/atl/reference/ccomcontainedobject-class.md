@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComContainedObject', 'ATLCOM/ATL::CComContainedObject', 'ATLCOM/ATL::CComContainedObject::CComContainedObject', 'ATLCOM/ATL::CComContainedObject::AddRef', 'ATLCOM/ATL::CComContainedObject::GetControllingUnknown', 'ATLCOM/ATL::CComContainedObject::QueryInterface', 'ATLCOM/ATL::CComContainedObject::Release']

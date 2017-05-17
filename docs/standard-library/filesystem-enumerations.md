@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['copy_options', 'filesystem::copy_options', 'filesystem/std::filesystem::copy_options', 'experimental::filesystem::copy_options', 'filesystem/std::experimental::filesystem::copy_options', 'directory_options', 'filesystem::directory_options', 'filesystem/std::filesystem::directory_options', 'experimental::filesystem::directory_options', 'filesystem/std::experimental::filesystem::directory_options', 'file_type', 'filesystem::file_type', 'filesystem/std::filesystem::file_type', 'experimental::filesystem::file_type', 'filesystem/std::experimental::filesystem::file_type', 'perms', 'filesystem::perms', 'filesystem/std::filesystem::perms', 'experimental::filesystem::perms', 'filesystem/std::experimental::filesystem::perms']  

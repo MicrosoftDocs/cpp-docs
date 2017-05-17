@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlModuleT', 'ATLBASE/ATL::CAtlModuleT', 'ATLBASE/ATL::CAtlModuleT::CAtlModuleT', 'ATLBASE/ATL::CAtlModuleT::InitLibId', 'ATLBASE/ATL::CAtlModuleT::RegisterAppId', 'ATLBASE/ATL::CAtlModuleT::RegisterServer', 'ATLBASE/ATL::CAtlModuleT::UnregisterAppId', 'ATLBASE/ATL::CAtlModuleT::UnregisterServer', 'ATLBASE/ATL::CAtlModuleT::UpdateRegistryAppId']

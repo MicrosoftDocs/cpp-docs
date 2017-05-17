@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['IExecutionResource', 'CONCRTRM/concurrency::IExecutionResource', 'CONCRTRM/concurrency::IExecutionResource::IExecutionResource::CurrentSubscriptionLevel', 'CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetExecutionResourceId', 'CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetNodeId', 'CONCRTRM/concurrency::IExecutionResource::IExecutionResource::Remove']

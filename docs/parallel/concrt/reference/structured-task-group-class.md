@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['structured_task_group', 'PPL/concurrency::structured_task_group', 'PPL/concurrency::structured_task_group::structured_task_group', 'PPL/concurrency::structured_task_group::cancel', 'PPL/concurrency::structured_task_group::is_canceling', 'PPL/concurrency::structured_task_group::run', 'PPL/concurrency::structured_task_group::run_and_wait', 'PPL/concurrency::structured_task_group::wait']

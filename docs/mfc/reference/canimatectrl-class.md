@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimateCtrl', 'AFXCMN/CAnimateCtrl', 'AFXCMN/CAnimateCtrl::CAnimateCtrl', 'AFXCMN/CAnimateCtrl::Close', 'AFXCMN/CAnimateCtrl::Create', 'AFXCMN/CAnimateCtrl::CreateEx', 'AFXCMN/CAnimateCtrl::IsPlaying', 'AFXCMN/CAnimateCtrl::Open', 'AFXCMN/CAnimateCtrl::Play', 'AFXCMN/CAnimateCtrl::Seek', 'AFXCMN/CAnimateCtrl::Stop']

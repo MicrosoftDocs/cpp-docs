@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonColorButton', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::CMFCRibbonColorButton', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::AddColorsGroup', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::EnableAutomaticButton', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::EnableOtherButton', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetAutomaticColor', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetColor', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetColorBoxSize', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetColumns', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetHighlightedColor', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::RemoveAllColorGroups', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColor', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColorBoxSize', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColorName', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColumns', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetDocumentColors', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetPalette', 'AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::UpdateColor']

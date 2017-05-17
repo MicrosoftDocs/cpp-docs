@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPictureHolder', 'AFXCTL/CPictureHolder', 'AFXCTL/CPictureHolder::CPictureHolder', 'AFXCTL/CPictureHolder::CreateEmpty', 'AFXCTL/CPictureHolder::CreateFromBitmap', 'AFXCTL/CPictureHolder::CreateFromIcon', 'AFXCTL/CPictureHolder::CreateFromMetafile', 'AFXCTL/CPictureHolder::GetDisplayString', 'AFXCTL/CPictureHolder::GetPictureDispatch', 'AFXCTL/CPictureHolder::GetType', 'AFXCTL/CPictureHolder::Render', 'AFXCTL/CPictureHolder::SetPictureDispatch', 'AFXCTL/CPictureHolder::m_pPict']

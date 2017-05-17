@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFindReplaceDialog', 'AFXDLGS/CFindReplaceDialog', 'AFXDLGS/CFindReplaceDialog::CFindReplaceDialog', 'AFXDLGS/CFindReplaceDialog::Create', 'AFXDLGS/CFindReplaceDialog::FindNext', 'AFXDLGS/CFindReplaceDialog::GetFindString', 'AFXDLGS/CFindReplaceDialog::GetNotifier', 'AFXDLGS/CFindReplaceDialog::GetReplaceString', 'AFXDLGS/CFindReplaceDialog::IsTerminating', 'AFXDLGS/CFindReplaceDialog::MatchCase', 'AFXDLGS/CFindReplaceDialog::MatchWholeWord', 'AFXDLGS/CFindReplaceDialog::ReplaceAll', 'AFXDLGS/CFindReplaceDialog::ReplaceCurrent', 'AFXDLGS/CFindReplaceDialog::SearchDown', 'AFXDLGS/CFindReplaceDialog::m_fr']

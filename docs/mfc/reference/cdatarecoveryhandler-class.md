@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDataRecoveryHandler', 'AFXDATARECOVERY/CDataRecoveryHandler', 'AFXDATARECOVERY/CDataRecoveryHandler::CDataRecoveryHandler', 'AFXDATARECOVERY/CDataRecoveryHandler::AutosaveAllDocumentInfo', 'AFXDATARECOVERY/CDataRecoveryHandler::AutosaveDocumentInfo', 'AFXDATARECOVERY/CDataRecoveryHandler::CreateDocumentInfo', 'AFXDATARECOVERY/CDataRecoveryHandler::DeleteAllAutosavedFiles', 'AFXDATARECOVERY/CDataRecoveryHandler::DeleteAutosavedFile', 'AFXDATARECOVERY/CDataRecoveryHandler::GenerateAutosaveFileName', 'AFXDATARECOVERY/CDataRecoveryHandler::GetAutosaveInterval', 'AFXDATARECOVERY/CDataRecoveryHandler::GetAutosavePath', 'AFXDATARECOVERY/CDataRecoveryHandler::GetDocumentListName', 'AFXDATARECOVERY/CDataRecoveryHandler::GetNormalDocumentTitle', 'AFXDATARECOVERY/CDataRecoveryHandler::GetRecoveredDocumentTitle', 'AFXDATARECOVERY/CDataRecoveryHandler::GetRestartIdentifier', 'AFXDATARECOVERY/CDataRecoveryHandler::GetSaveDocumentInfoOnIdle', 'AFXDATARECOVERY/CDataRecoveryHandler::GetShutdownByRestartManager', 'AFXDATARECOVERY/CDataRecoveryHandler::Initialize', 'AFXDATARECOVERY/CDataRecoveryHandler::QueryRestoreAutosavedDocuments', 'AFXDATARECOVERY/CDataRecoveryHandler::ReadOpenDocumentList', 'AFXDATARECOVERY/CDataRecoveryHandler::RemoveDocumentInfo', 'AFXDATARECOVERY/CDataRecoveryHandler::ReopenPreviousDocuments', 'AFXDATARECOVERY/CDataRecoveryHandler::RestoreAutosavedDocuments', 'AFXDATARECOVERY/CDataRecoveryHandler::SaveOpenDocumentList', 'AFXDATARECOVERY/CDataRecoveryHandler::SetAutosaveInterval', 'AFXDATARECOVERY/CDataRecoveryHandler::SetAutosavePath', 'AFXDATARECOVERY/CDataRecoveryHandler::SetRestartIdentifier', 'AFXDATARECOVERY/CDataRecoveryHandler::SetSaveDocumentInfoOnIdle', 'AFXDATARECOVERY/CDataRecoveryHandler::SetShutdownByRestartManager', 'AFXDATARECOVERY/CDataRecoveryHandler::UpdateDocumentInfo']

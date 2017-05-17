@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimationPoint', 'AFXANIMATIONCONTROLLER/CAnimationPoint', 'AFXANIMATIONCONTROLLER/CAnimationPoint::CAnimationPoint', 'AFXANIMATIONCONTROLLER/CAnimationPoint::AddTransition', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetValue', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetX', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetY', 'AFXANIMATIONCONTROLLER/CAnimationPoint::SetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationPoint::GetAnimationVariableList', 'AFXANIMATIONCONTROLLER/CAnimationPoint::m_xValue', 'AFXANIMATIONCONTROLLER/CAnimationPoint::m_yValue']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMDIFrameWnd', 'AFXWIN/CMDIFrameWnd', 'AFXWIN/CMDIFrameWnd::CMDIFrameWnd', 'AFXWIN/CMDIFrameWnd::CreateClient', 'AFXWIN/CMDIFrameWnd::CreateNewChild', 'AFXWIN/CMDIFrameWnd::GetWindowMenuPopup', 'AFXWIN/CMDIFrameWnd::MDIActivate', 'AFXWIN/CMDIFrameWnd::MDICascade', 'AFXWIN/CMDIFrameWnd::MDIGetActive', 'AFXWIN/CMDIFrameWnd::MDIIconArrange', 'AFXWIN/CMDIFrameWnd::MDIMaximize', 'AFXWIN/CMDIFrameWnd::MDINext', 'AFXWIN/CMDIFrameWnd::MDIPrev', 'AFXWIN/CMDIFrameWnd::MDIRestore', 'AFXWIN/CMDIFrameWnd::MDISetMenu', 'AFXWIN/CMDIFrameWnd::MDITile']

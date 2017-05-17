@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPaneDivider', 'AFXPANEDIVIDER/CPaneDivider', 'AFXPANEDIVIDER/CPaneDivider::CPaneDivider', 'AFXPANEDIVIDER/CPaneDivider::AddPaneContainer', 'AFXPANEDIVIDER/CPaneDivider::AddPane', 'AFXPANEDIVIDER/CPaneDivider::AddRecentPane', 'AFXPANEDIVIDER/CPaneDivider::CalcExpectedDockedRect', 'AFXPANEDIVIDER/CPaneDivider::CalcFixedLayout', 'AFXPANEDIVIDER/CPaneDivider::CheckVisibility', 'AFXPANEDIVIDER/CPaneDivider::CreateEx', 'AFXPANEDIVIDER/CPaneDivider::DoesAllowDynInsertBefore', 'AFXPANEDIVIDER/CPaneDivider::DoesContainFloatingPane', 'AFXPANEDIVIDER/CPaneDivider::FindPaneContainer', 'AFXPANEDIVIDER/CPaneDivider::FindTabbedPane', 'AFXPANEDIVIDER/CPaneDivider::GetDefaultWidth', 'AFXPANEDIVIDER/CPaneDivider::GetFirstPane', 'AFXPANEDIVIDER/CPaneDivider::GetPaneDividerStyle', 'AFXPANEDIVIDER/CPaneDivider::GetRootContainerRect', 'AFXPANEDIVIDER/CPaneDivider::GetWidth', 'AFXPANEDIVIDER/CPaneDivider::Init', 'AFXPANEDIVIDER/CPaneDivider::InsertPane', 'AFXPANEDIVIDER/CPaneDivider::IsAutoHideMode', 'AFXPANEDIVIDER/CPaneDivider::IsDefault', 'AFXPANEDIVIDER/CPaneDivider::IsHorizontal', 'AFXPANEDIVIDER/CPaneDivider::Move', 'AFXPANEDIVIDER/CPaneDivider::NotifyAboutRelease', 'AFXPANEDIVIDER/CPaneDivider::OnShowPane', 'AFXPANEDIVIDER/CPaneDivider::ReleaseEmptyPaneContainers', 'AFXPANEDIVIDER/CPaneDivider::RemovePane', 'AFXPANEDIVIDER/CPaneDivider::ReplacePane', 'AFXPANEDIVIDER/CPaneDivider::RepositionPanes', 'AFXPANEDIVIDER/CPaneDivider::Serialize', 'AFXPANEDIVIDER/CPaneDivider::SetAutoHideMode', 'AFXPANEDIVIDER/CPaneDivider::SetPaneContainerManager', 'AFXPANEDIVIDER/CPaneDivider::ShowWindow', 'AFXPANEDIVIDER/CPaneDivider::StoreRecentDockSiteInfo', 'AFXPANEDIVIDER/CPaneDivider::StoreRecentTabRelatedInfo', 'AFXPANEDIVIDER/CPaneDivider::GetPanes', 'AFXPANEDIVIDER/CPaneDivider::GetPaneDividers', 'AFXPANEDIVIDER/CPaneDivider::m_nDefaultWidth', 'AFXPANEDIVIDER/CPaneDivider::m_pSliderRTC']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IConnectionPointImpl', 'ATLCOM/ATL::IConnectionPointImpl', 'ATLCOM/ATL::IConnectionPointImpl::Advise', 'ATLCOM/ATL::IConnectionPointImpl::EnumConnections', 'ATLCOM/ATL::IConnectionPointImpl::GetConnectionInterface', 'ATLCOM/ATL::IConnectionPointImpl::GetConnectionPointContainer', 'ATLCOM/ATL::IConnectionPointImpl::Unadvise', 'ATLCOM/ATL::IConnectionPointImpl::m_vec']

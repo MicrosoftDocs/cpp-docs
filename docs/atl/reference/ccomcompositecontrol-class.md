@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComCompositeControl', 'ATLCTL/ATL::CComCompositeControl', 'ATLCTL/ATL::CComCompositeControl::CComCompositeControl', 'ATLCTL/ATL::CComCompositeControl::AdviseSinkMap', 'ATLCTL/ATL::CComCompositeControl::CalcExtent', 'ATLCTL/ATL::CComCompositeControl::Create', 'ATLCTL/ATL::CComCompositeControl::CreateControlWindow', 'ATLCTL/ATL::CComCompositeControl::SetBackgroundColorFromAmbient', 'ATLCTL/ATL::CComCompositeControl::m_hbrBackground', 'ATLCTL/ATL::CComCompositeControl::m_hWndFocus']

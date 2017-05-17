@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDialog', 'AFXWIN/CDialog', 'AFXWIN/CDialog::CDialog', 'AFXWIN/CDialog::Create', 'AFXWIN/CDialog::CreateIndirect', 'AFXWIN/CDialog::DoModal', 'AFXWIN/CDialog::EndDialog', 'AFXWIN/CDialog::GetDefID', 'AFXWIN/CDialog::GotoDlgCtrl', 'AFXWIN/CDialog::InitModalIndirect', 'AFXWIN/CDialog::MapDialogRect', 'AFXWIN/CDialog::NextDlgCtrl', 'AFXWIN/CDialog::OnInitDialog', 'AFXWIN/CDialog::OnSetFont', 'AFXWIN/CDialog::PrevDlgCtrl', 'AFXWIN/CDialog::SetDefID', 'AFXWIN/CDialog::SetHelpID', 'AFXWIN/CDialog::OnCancel', 'AFXWIN/CDialog::OnOK']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCFontComboBox', 'AFXFONTCOMBOBOX/CMFCFontComboBox', 'AFXFONTCOMBOBOX/CMFCFontComboBox::CMFCFontComboBox', 'AFXFONTCOMBOBOX/CMFCFontComboBox::GetSelFont', 'AFXFONTCOMBOBOX/CMFCFontComboBox::SelectFont', 'AFXFONTCOMBOBOX/CMFCFontComboBox::Setup', 'AFXFONTCOMBOBOX/CMFCFontComboBox::m_bDrawUsingFont']

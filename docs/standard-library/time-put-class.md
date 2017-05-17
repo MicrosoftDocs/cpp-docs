@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['time_put', 'xloctime/std::time_put', 'locale/std::time_put::char_type', 'locale/std::time_put::iter_type', 'locale/std::time_put::do_put', 'locale/std::time_put::put']  

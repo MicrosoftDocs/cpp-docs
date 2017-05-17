@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['source_link_manager', 'AGENTS/concurrency::source_link_manager', 'AGENTS/concurrency::source_link_manager::source_link_manager', 'AGENTS/concurrency::source_link_manager::add', 'AGENTS/concurrency::source_link_manager::begin', 'AGENTS/concurrency::source_link_manager::contains', 'AGENTS/concurrency::source_link_manager::count', 'AGENTS/concurrency::source_link_manager::reference', 'AGENTS/concurrency::source_link_manager::register_target_block', 'AGENTS/concurrency::source_link_manager::release', 'AGENTS/concurrency::source_link_manager::remove', 'AGENTS/concurrency::source_link_manager::set_bound']

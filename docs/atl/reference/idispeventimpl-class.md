@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IDispEventImpl', 'ATLCOM/ATL::IDispEventImpl', 'ATLCOM/ATL::IDispEventImpl::IDispEventImpl', 'ATLCOM/ATL::IDispEventImpl::GetFuncInfoFromId', 'ATLCOM/ATL::IDispEventImpl::GetIDsOfNames', 'ATLCOM/ATL::IDispEventImpl::GetTypeInfo', 'ATLCOM/ATL::IDispEventImpl::GetTypeInfoCount', 'ATLCOM/ATL::IDispEventImpl::GetUserDefinedType']

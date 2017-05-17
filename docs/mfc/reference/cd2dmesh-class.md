@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DMesh', 'AFXRENDERTARGET/CD2DMesh', 'AFXRENDERTARGET/CD2DMesh::CD2DMesh', 'AFXRENDERTARGET/CD2DMesh::Attach', 'AFXRENDERTARGET/CD2DMesh::Create', 'AFXRENDERTARGET/CD2DMesh::Destroy', 'AFXRENDERTARGET/CD2DMesh::Detach', 'AFXRENDERTARGET/CD2DMesh::Get', 'AFXRENDERTARGET/CD2DMesh::IsValid', 'AFXRENDERTARGET/CD2DMesh::Open', 'AFXRENDERTARGET/CD2DMesh::m_pMesh']

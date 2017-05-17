@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "04/27/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 

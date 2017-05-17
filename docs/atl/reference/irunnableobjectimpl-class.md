@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IRunnableObjectImpl', 'ATLCTL/ATL::IRunnableObjectImpl', 'ATLCTL/ATL::IRunnableObjectImpl::GetRunningClass', 'ATLCTL/ATL::IRunnableObjectImpl::IsRunning', 'ATLCTL/ATL::IRunnableObjectImpl::LockRunning', 'ATLCTL/ATL::IRunnableObjectImpl::Run', 'ATLCTL/ATL::IRunnableObjectImpl::SetContainedObject']

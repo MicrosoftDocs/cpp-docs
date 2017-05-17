@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CBaseTabbedPane', 'AFXBASETABBEDPANE/CBaseTabbedPane', 'AFXBASETABBEDPANE/CBaseTabbedPane::AddTab', 'AFXBASETABBEDPANE/CBaseTabbedPane::AllowDestroyEmptyTabbedPane', 'AFXBASETABBEDPANE/CBaseTabbedPane::ApplyRestoredTabInfo', 'AFXBASETABBEDPANE/CBaseTabbedPane::CanFloat', 'AFXBASETABBEDPANE/CBaseTabbedPane::CanSetCaptionTextToTabName', 'AFXBASETABBEDPANE/CBaseTabbedPane::ConvertToTabbedDocument', 'AFXBASETABBEDPANE/CBaseTabbedPane::DetachPane', 'AFXBASETABBEDPANE/CBaseTabbedPane::EnableSetCaptionTextToTabName', 'AFXBASETABBEDPANE/CBaseTabbedPane::FillDefaultTabsOrderArray', 'AFXBASETABBEDPANE/CBaseTabbedPane::FindBarByTabNumber', 'AFXBASETABBEDPANE/CBaseTabbedPane::FindPaneByID', 'AFXBASETABBEDPANE/CBaseTabbedPane::FloatTab', 'AFXBASETABBEDPANE/CBaseTabbedPane::GetDefaultTabsOrder', 'AFXBASETABBEDPANE/CBaseTabbedPane::GetFirstVisibleTab', 'AFXBASETABBEDPANE/CBaseTabbedPane::GetMinSize', 'AFXBASETABBEDPANE/CBaseTabbedPane::GetPaneIcon', 'AFXBASETABBEDPANE/CBaseTabbedPane::GetPaneList', 'AFXBASETABBEDPANE/CBaseTabbedPane::GetTabArea', 'AFXBASETABBEDPANE/CBaseTabbedPane::GetTabsNum', 'AFXBASETABBEDPANE/CBaseTabbedPane::GetUnderlyingWindow', 'AFXBASETABBEDPANE/CBaseTabbedPane::GetVisibleTabsNum', 'AFXBASETABBEDPANE/CBaseTabbedPane::HasAutoHideMode', 'AFXBASETABBEDPANE/CBaseTabbedPane::IsHideSingleTab', 'AFXBASETABBEDPANE/CBaseTabbedPane::RecalcLayout', 'AFXBASETABBEDPANE/CBaseTabbedPane::RemovePane', 'AFXBASETABBEDPANE/CBaseTabbedPane::SetAutoDestroy', 'AFXBASETABBEDPANE/CBaseTabbedPane::SetAutoHideMode', 'AFXBASETABBEDPANE/CBaseTabbedPane::ShowTab']

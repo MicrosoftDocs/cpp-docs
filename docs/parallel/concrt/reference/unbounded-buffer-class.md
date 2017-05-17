@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['unbounded_buffer', 'AGENTS/concurrency::unbounded_buffer', 'AGENTS/concurrency::unbounded_buffer::unbounded_buffer', 'AGENTS/concurrency::unbounded_buffer::dequeue', 'AGENTS/concurrency::unbounded_buffer::enqueue', 'AGENTS/concurrency::unbounded_buffer::accept_message', 'AGENTS/concurrency::unbounded_buffer::consume_message', 'AGENTS/concurrency::unbounded_buffer::link_target_notification', 'AGENTS/concurrency::unbounded_buffer::process_input_messages', 'AGENTS/concurrency::unbounded_buffer::propagate_message', 'AGENTS/concurrency::unbounded_buffer::propagate_output_messages', 'AGENTS/concurrency::unbounded_buffer::release_message', 'AGENTS/concurrency::unbounded_buffer::reserve_message', 'AGENTS/concurrency::unbounded_buffer::resume_propagation', 'AGENTS/concurrency::unbounded_buffer::send_message', 'AGENTS/concurrency::unbounded_buffer::supports_anonymous_source']

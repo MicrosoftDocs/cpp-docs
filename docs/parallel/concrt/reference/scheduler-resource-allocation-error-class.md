@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['scheduler_resource_allocation_error', 'CONCRT/concurrency::scheduler_resource_allocation_error', 'CONCRT/concurrency::scheduler_resource_allocation_error::scheduler_resource_allocation_error', 'CONCRT/concurrency::scheduler_resource_allocation_error::get_error_code']

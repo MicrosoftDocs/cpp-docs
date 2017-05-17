@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMenu', 'AFXWIN/CMenu', 'AFXWIN/CMenu::CMenu', 'AFXWIN/CMenu::AppendMenu', 'AFXWIN/CMenu::Attach', 'AFXWIN/CMenu::CheckMenuItem', 'AFXWIN/CMenu::CheckMenuRadioItem', 'AFXWIN/CMenu::CreateMenu', 'AFXWIN/CMenu::CreatePopupMenu', 'AFXWIN/CMenu::DeleteMenu', 'AFXWIN/CMenu::DeleteTempMap', 'AFXWIN/CMenu::DestroyMenu', 'AFXWIN/CMenu::Detach', 'AFXWIN/CMenu::DrawItem', 'AFXWIN/CMenu::EnableMenuItem', 'AFXWIN/CMenu::FromHandle', 'AFXWIN/CMenu::GetDefaultItem', 'AFXWIN/CMenu::GetMenuContextHelpId', 'AFXWIN/CMenu::GetMenuInfo', 'AFXWIN/CMenu::GetMenuItemCount', 'AFXWIN/CMenu::GetMenuItemID', 'AFXWIN/CMenu::GetMenuItemInfo', 'AFXWIN/CMenu::GetMenuState', 'AFXWIN/CMenu::GetMenuString', 'AFXWIN/CMenu::GetSafeHmenu', 'AFXWIN/CMenu::GetSubMenu', 'AFXWIN/CMenu::InsertMenu', 'AFXWIN/CMenu::InsertMenuItem', 'AFXWIN/CMenu::LoadMenu', 'AFXWIN/CMenu::LoadMenuIndirect', 'AFXWIN/CMenu::MeasureItem', 'AFXWIN/CMenu::ModifyMenu', 'AFXWIN/CMenu::RemoveMenu', 'AFXWIN/CMenu::SetDefaultItem', 'AFXWIN/CMenu::SetMenuContextHelpId', 'AFXWIN/CMenu::SetMenuInfo', 'AFXWIN/CMenu::SetMenuItemBitmaps', 'AFXWIN/CMenu::SetMenuItemInfo', 'AFXWIN/CMenu::TrackPopupMenu', 'AFXWIN/CMenu::TrackPopupMenuEx', 'AFXWIN/CMenu::m_hMenu']

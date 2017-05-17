@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDaoWorkspace', 'AFXDAO/CDaoWorkspace', 'AFXDAO/CDaoWorkspace::CDaoWorkspace', 'AFXDAO/CDaoWorkspace::Append', 'AFXDAO/CDaoWorkspace::BeginTrans', 'AFXDAO/CDaoWorkspace::Close', 'AFXDAO/CDaoWorkspace::CommitTrans', 'AFXDAO/CDaoWorkspace::CompactDatabase', 'AFXDAO/CDaoWorkspace::Create', 'AFXDAO/CDaoWorkspace::GetDatabaseCount', 'AFXDAO/CDaoWorkspace::GetDatabaseInfo', 'AFXDAO/CDaoWorkspace::GetIniPath', 'AFXDAO/CDaoWorkspace::GetIsolateODBCTrans', 'AFXDAO/CDaoWorkspace::GetLoginTimeout', 'AFXDAO/CDaoWorkspace::GetName', 'AFXDAO/CDaoWorkspace::GetUserName', 'AFXDAO/CDaoWorkspace::GetVersion', 'AFXDAO/CDaoWorkspace::GetWorkspaceCount', 'AFXDAO/CDaoWorkspace::GetWorkspaceInfo', 'AFXDAO/CDaoWorkspace::Idle', 'AFXDAO/CDaoWorkspace::IsOpen', 'AFXDAO/CDaoWorkspace::Open', 'AFXDAO/CDaoWorkspace::RepairDatabase', 'AFXDAO/CDaoWorkspace::Rollback', 'AFXDAO/CDaoWorkspace::SetDefaultPassword', 'AFXDAO/CDaoWorkspace::SetDefaultUser', 'AFXDAO/CDaoWorkspace::SetIniPath', 'AFXDAO/CDaoWorkspace::SetIsolateODBCTrans', 'AFXDAO/CDaoWorkspace::SetLoginTimeout', 'AFXDAO/CDaoWorkspace::m_pDAOWorkspace']

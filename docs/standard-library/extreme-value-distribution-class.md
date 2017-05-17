@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['extreme_value_distribution', 'random/std::extreme_value_distribution', 'random/std::extreme_value_distribution::reset', 'random/std::extreme_value_distribution::a', 'random/std::extreme_value_distribution::b', 'random/std::extreme_value_distribution::param', 'random/std::extreme_value_distribution::min', 'random/std::extreme_value_distribution::max', 'random/std::extreme_value_distribution::operator()', 'random/std::extreme_value_distribution::param_type', 'random/std::extreme_value_distribution::param_type::a', 'random/std::extreme_value_distribution::param_type::b', 'random/std::extreme_value_distribution::param_type::operator==', 'random/std::extreme_value_distribution::param_type::operator!=', 'random/std::extreme_value_distribution::param_type']  

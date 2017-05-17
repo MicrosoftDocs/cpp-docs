@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['allocators/stdext::max_unbounded', 'stdext::max_unbounded', 'max_unbounded', 'allocators/stdext::max_unbounded::allocated', 'allocators/stdext::max_unbounded::deallocated', 'allocators/stdext::max_unbounded::full', 'allocators/stdext::max_unbounded::released', 'allocators/stdext::max_unbounded::saved']  

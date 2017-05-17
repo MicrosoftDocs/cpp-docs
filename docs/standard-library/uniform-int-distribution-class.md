@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['uniform_int_distribution', 'random/std::uniform_int_distribution', 'random/std::uniform_int_distribution::reset', 'random/std::uniform_int_distribution::a', 'random/std::uniform_int_distribution::b', 'random/std::uniform_int_distribution::param', 'random/std::uniform_int_distribution::min', 'random/std::uniform_int_distribution::max', 'random/std::uniform_int_distribution::operator()', 'random/std::uniform_int_distribution::param_type', 'random/std::uniform_int_distribution::param_type::a', 'random/std::uniform_int_distribution::param_type::b', 'random/std::uniform_int_distribution::param_type::operator==', 'random/std::uniform_int_distribution::param_type::operator!=', 'random/std::uniform_int_distribution::param_type']  

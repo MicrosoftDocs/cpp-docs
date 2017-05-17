@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['locale/std::collate', 'collate', 'Collate', 'locale/std::collate::char_type', 'locale/std::collate::string_type', 'locale/std::collate::compare', 'locale/std::collate::do_compare', 'locale/std::collate::do_hash', 'locale/std::collate::do_transform', 'locale/std::collate::hash', 'locale/std::collate::transform']  

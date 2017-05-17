@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDataExchange', 'AFXWIN/CDataExchange', 'AFXWIN/CDataExchange::CDataExchange', 'AFXWIN/CDataExchange::Fail', 'AFXWIN/CDataExchange::PrepareCtrl', 'AFXWIN/CDataExchange::PrepareEditCtrl', 'AFXWIN/CDataExchange::PrepareOleCtrl', 'AFXWIN/CDataExchange::m_bSaveAndValidate', 'AFXWIN/CDataExchange::m_pDlgWnd']

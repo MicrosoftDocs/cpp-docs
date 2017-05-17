@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ostream/std::basic_ostream', 'basic_ostream', 'ostream/std::basic_ostream::flush', 'ostream/std::basic_ostream::put', 'ostream/std::basic_ostream::seekp', 'ostream/std::basic_ostream::sentry', 'ostream/std::basic_ostream::swap', 'ostream/std::basic_ostream::tellp', 'ostream/std::basic_ostream::write']  

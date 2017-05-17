@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCToolTipCtrl', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetIconSize', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetParams', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawBorder', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawDescription', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawIcon', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawLabel', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawSeparator', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnFillBackground', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetDescription', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetFixedWidth', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetHotRibbonButton', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetLocation', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetParams']
