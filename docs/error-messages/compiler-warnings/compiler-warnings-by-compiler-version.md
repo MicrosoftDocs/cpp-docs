@@ -616,4 +616,4 @@ C4998|EXPECTATION FAILED: *description*(*number*)
 ## See Also  
 [/Wv compiler option](../../build/reference/compiler-option-warning-level.md)  
 [Compiler Warnings that are off by default](../../preprocessor/compiler-warnings-that-are-off-by-default.md)  
-[warning](../preprocessor/warning.md)  
+[warning](../../preprocessor/warning.md)  
