@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['ICollectionOnSTLImpl', 'ATLCOM/ATL::ICollectionOnSTLImpl', 'ATLCOM/ATL::ICollectionOnSTLImpl::get__NewEnum', 'ATLCOM/ATL::ICollectionOnSTLImpl::getcount', 'ATLCOM/ATL::ICollectionOnSTLImpl::get_Item', 'ATLCOM/ATL::ICollectionOnSTLImpl::m_coll']

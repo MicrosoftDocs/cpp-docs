@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleObjectFactory', 'AFXDISP/COleObjectFactory', 'AFXDISP/COleObjectFactory::COleObjectFactory', 'AFXDISP/COleObjectFactory::GetClassID', 'AFXDISP/COleObjectFactory::IsLicenseValid', 'AFXDISP/COleObjectFactory::IsRegistered', 'AFXDISP/COleObjectFactory::Register', 'AFXDISP/COleObjectFactory::RegisterAll', 'AFXDISP/COleObjectFactory::Revoke', 'AFXDISP/COleObjectFactory::RevokeAll', 'AFXDISP/COleObjectFactory::UnregisterAll', 'AFXDISP/COleObjectFactory::UpdateRegistry', 'AFXDISP/COleObjectFactory::UpdateRegistryAll', 'AFXDISP/COleObjectFactory::GetLicenseKey', 'AFXDISP/COleObjectFactory::OnCreateObject', 'AFXDISP/COleObjectFactory::VerifyLicenseKey', 'AFXDISP/COleObjectFactory::VerifyUserLicense']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IAxWinAmbientDispatch', 'No header/ATL::IAxWinAmbientDispatch', 'No header/ATL::get_AllowContextMenu', 'No header/ATL::get_AllowShowUI', 'No header/ATL::get_AllowWindowlessActivation', 'No header/ATL::get_BackColor', 'No header/ATL::get_DisplayAsDefault', 'No header/ATL::get_DocHostDoubleClickFlags', 'No header/ATL::get_DocHostFlags', 'No header/ATL::get_Font', 'No header/ATL::get_ForeColor', 'No header/ATL::get_LocaleID', 'No header/ATL::get_MessageReflect', 'No header/ATL::get_OptionKeyPath', 'No header/ATL::get_ShowGrabHandles', 'No header/ATL::get_ShowHatching', 'No header/ATL::get_UserMode', 'No header/ATL::put_AllowContextMenu', 'No header/ATL::put_AllowShowUI', 'No header/ATL::put_AllowWindowlessActivation', 'No header/ATL::put_BackColor', 'No header/ATL::put_DisplayAsDefault', 'No header/ATL::put_DocHostDoubleClickFlags', 'No header/ATL::put_DocHostFlags', 'No header/ATL::put_Font', 'No header/ATL::put_ForeColor', 'No header/ATL::put_LocaleID', 'No header/ATL::put_MessageReflect', 'No header/ATL::put_OptionKeyPath', 'No header/ATL::put_UserMode']

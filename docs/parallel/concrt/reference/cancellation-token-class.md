@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['cancellation_token', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token::cancellation_token', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token::deregister_callback', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_cancelable', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token::is_canceled', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token::none', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token::register_callback']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ordered_message_processor', 'AGENTS/concurrency::ordered_message_processor', 'AGENTS/concurrency::ordered_message_processor::ordered_message_processor', 'AGENTS/concurrency::ordered_message_processor::async_send', 'AGENTS/concurrency::ordered_message_processor::initialize', 'AGENTS/concurrency::ordered_message_processor::initialize_batched_processing', 'AGENTS/concurrency::ordered_message_processor::sync_send', 'AGENTS/concurrency::ordered_message_processor::wait', 'AGENTS/concurrency::ordered_message_processor::process_incoming_message']

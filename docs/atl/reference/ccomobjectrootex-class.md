@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComObjectRootEx', 'ATLCOM/ATL::CComObjectRootEx', 'ATLCOM/ATL::CComObjectRootEx', 'ATLCOM/ATL::InternalAddRef', 'ATLCOM/ATL::InternalRelease', 'ATLCOM/ATL::Lock', 'ATLCOM/ATL::Unlock', 'ATLCOM/ATL::FinalConstruct', 'ATLCOM/ATL::FinalRelease', 'ATLCOM/ATL::OuterAddRef', 'ATLCOM/ATL::OuterQueryInterface', 'ATLCOM/ATL::OuterRelease', 'ATLCOM/ATL::InternalQueryInterface', 'ATLCOM/ATL::ObjectMain', 'ATLCOM/ATL::m_dwRef', 'ATLCOM/ATL::m_pOuterUnknown']

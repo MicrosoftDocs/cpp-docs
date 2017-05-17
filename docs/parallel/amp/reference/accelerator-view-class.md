@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['accelerator_view', 'AMPRT/accelerator_view', 'AMPRT/Concurrency::accelerator_view:accelerator_view', 'AMPRT/Concurrency::accelerator_view:create_marker', 'AMPRT/Concurrency::accelerator_view:flush', 'AMPRT/Concurrency::accelerator_view:get_accelerator', 'AMPRT/Concurrency::accelerator_view:get_is_auto_selection', 'AMPRT/Concurrency::accelerator_view:get_is_debug', 'AMPRT/Concurrency::accelerator_view:get_queuing_mode', 'AMPRT/Concurrency::accelerator_view:get_version', 'AMPRT/Concurrency::accelerator_view:wait', 'AMPRT/Concurrency::accelerator_view:accelerator', 'AMPRT/Concurrency::accelerator_view:is_auto_selection', 'AMPRT/Concurrency::accelerator_view:is_debug', 'AMPRT/Concurrency::accelerator_view:queuing_mode', 'AMPRT/Concurrency::accelerator_view:version']

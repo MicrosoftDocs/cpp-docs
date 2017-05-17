@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['weibull_distribution', 'random/std::weibull_distribution', 'random/std::weibull_distribution::reset', 'random/std::weibull_distribution::a', 'random/std::weibull_distribution::b', 'random/std::weibull_distribution::param', 'random/std::weibull_distribution::min', 'random/std::weibull_distribution::max', 'random/std::weibull_distribution::operator()', 'random/std::weibull_distribution::param_type', 'random/std::weibull_distribution::param_type::a', 'random/std::weibull_distribution::param_type::b', 'random/std::weibull_distribution::param_type::operator==', 'random/std::weibull_distribution::param_type::operator!=', 'random/std::weibull_distribution::param_type']  

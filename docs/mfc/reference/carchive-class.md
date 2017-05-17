@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CArchive', 'AFX/CArchive', 'AFX/CArchive::CArchive', 'AFX/CArchive::Abort', 'AFX/CArchive::Close', 'AFX/CArchive::Flush', 'AFX/CArchive::GetFile', 'AFX/CArchive::GetObjectSchema', 'AFX/CArchive::IsBufferEmpty', 'AFX/CArchive::IsLoading', 'AFX/CArchive::IsStoring', 'AFX/CArchive::MapObject', 'AFX/CArchive::Read', 'AFX/CArchive::ReadClass', 'AFX/CArchive::ReadObject', 'AFX/CArchive::ReadString', 'AFX/CArchive::SerializeClass', 'AFX/CArchive::SetLoadParams', 'AFX/CArchive::SetObjectSchema', 'AFX/CArchive::SetStoreParams', 'AFX/CArchive::Write', 'AFX/CArchive::WriteClass', 'AFX/CArchive::WriteObject', 'AFX/CArchive::WriteString', 'AFX/CArchive::m_pDocument']

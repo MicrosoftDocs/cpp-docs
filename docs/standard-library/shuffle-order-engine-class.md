@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['shuffle_order_engine', 'random/std::shuffle_order_engine', 'random/std::shuffle_order_engine::base', 'random/std::shuffle_order_engine::discard', 'random/std::shuffle_order_engine::operator()', 'random/std::shuffle_order_engine::base_type', 'random/std::shuffle_order_engine::seed']  

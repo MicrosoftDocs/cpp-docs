@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['deque', 'deque/std::deque', 'deque/std::deque::allocator_type', 'deque/std::deque::const_iterator', 'deque/std::deque::const_pointer', 'deque/std::deque::const_reference', 'deque/std::deque::const_reverse_iterator', 'deque/std::deque::difference_type', 'deque/std::deque::iterator', 'deque/std::deque::pointer', 'deque/std::deque::reference', 'deque/std::deque::reverse_iterator', 'deque/std::deque::size_type', 'deque/std::deque::value_type', 'deque/std::deque::assign', 'deque/std::deque::at', 'deque/std::deque::back', 'deque/std::deque::begin', 'deque/std::deque::cbegin', 'deque/std::deque::cend', 'deque/std::deque::clear', 'deque/std::deque::crbegin', 'deque/std::deque::crend', 'deque/std::deque::emplace', 'deque/std::deque::emplace_back', 'deque/std::deque::emplace_front', 'deque/std::deque::empty', 'deque/std::deque::end', 'deque/std::deque::erase', 'deque/std::deque::front', 'deque/std::deque::get_allocator', 'deque/std::deque::insert', 'deque/std::deque::max_size', 'deque/std::deque::pop_back', 'deque/std::deque::pop_front', 'deque/std::deque::push_back', 'deque/std::deque::push_front', 'deque/std::deque::rbegin', 'deque/std::deque::rend', 'deque/std::deque::resize', 'deque/std::deque::shrink_to_fit', 'deque/std::deque::size', 'deque/std::deque::swap']  

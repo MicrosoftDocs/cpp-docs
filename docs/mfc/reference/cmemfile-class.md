@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMemFile', 'AFX/CMemFile', 'AFX/CMemFile::CMemFile', 'AFX/CMemFile::Attach', 'AFX/CMemFile::Detach', 'AFX/CMemFile::Alloc', 'AFX/CMemFile::Free', 'AFX/CMemFile::GrowFile', 'AFX/CMemFile::Memcpy', 'AFX/CMemFile::Realloc']

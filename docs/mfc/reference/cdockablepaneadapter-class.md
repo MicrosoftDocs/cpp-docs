@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDockablePaneAdapter', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::GetWrappedWnd', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::LoadState', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SaveState', 'AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SetWrappedWnd']

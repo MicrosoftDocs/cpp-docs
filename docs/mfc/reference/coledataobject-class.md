@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDataObject', 'AFXOLE/COleDataObject', 'AFXOLE/COleDataObject::COleDataObject', 'AFXOLE/COleDataObject::Attach', 'AFXOLE/COleDataObject::AttachClipboard', 'AFXOLE/COleDataObject::BeginEnumFormats', 'AFXOLE/COleDataObject::Detach', 'AFXOLE/COleDataObject::GetData', 'AFXOLE/COleDataObject::GetFileData', 'AFXOLE/COleDataObject::GetGlobalData', 'AFXOLE/COleDataObject::GetNextFormat', 'AFXOLE/COleDataObject::IsDataAvailable', 'AFXOLE/COleDataObject::Release']

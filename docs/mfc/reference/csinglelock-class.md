@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSingleLock', 'AFXMT/CSingleLock', 'AFXMT/CSingleLock::CSingleLock', 'AFXMT/CSingleLock::IsLocked', 'AFXMT/CSingleLock::Lock', 'AFXMT/CSingleLock::Unlock']

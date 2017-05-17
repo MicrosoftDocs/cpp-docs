@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['vector<bool>', 'vector/std::vector::const_pointer', 'vector/std::vector::const_reference', 'vector/std::vector::pointer', 'vector/std::vector::flip', 'vector/std::vector::swap']  

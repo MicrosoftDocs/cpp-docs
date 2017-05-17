@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['AFXDHTML/DDX_DHtml_ElementValue', 'AFXDHTML/DDX_DHtml_ElementInnerText', 'AFXDHTML/DDX_DHtml_ElementInnerHtml', 'AFXDHTML/DDX_DHtml_Anchor_Href', 'AFXDHTML/DDX_DHtml_Anchor_Target', 'AFXDHTML/DDX_DHtml_Img_Src', 'AFXDHTML/DDX_DHtml_Frame_Src', 'AFXDHTML/DDX_DHtml_IFrame_Src']

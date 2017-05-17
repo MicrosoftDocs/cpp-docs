@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleVariant', 'AFXDISP/COleVariant', 'AFXDISP/COleVariant::COleVariant', 'AFXDISP/COleVariant::Attach', 'AFXDISP/COleVariant::ChangeType', 'AFXDISP/COleVariant::Clear', 'AFXDISP/COleVariant::Detach', 'AFXDISP/COleVariant::GetByteArrayFromVariantArray', 'AFXDISP/COleVariant::SetString']

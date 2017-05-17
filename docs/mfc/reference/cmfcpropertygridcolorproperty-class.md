@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCPropertyGridColorProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableAutomaticButton', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableOtherButton', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::GetColor', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColor', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColumnsNumber', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetOriginalValue']

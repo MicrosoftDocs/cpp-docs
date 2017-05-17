@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleBusyDialog', 'AFXODLGS/COleBusyDialog', 'AFXODLGS/COleBusyDialog::COleBusyDialog', 'AFXODLGS/COleBusyDialog::DoModal', 'AFXODLGS/COleBusyDialog::GetSelectionType', 'AFXODLGS/COleBusyDialog::m_bz']

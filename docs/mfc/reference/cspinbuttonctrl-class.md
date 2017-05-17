@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSpinButtonCtrl', 'AFXCMN/CSpinButtonCtrl', 'AFXCMN/CSpinButtonCtrl::CSpinButtonCtrl', 'AFXCMN/CSpinButtonCtrl::Create', 'AFXCMN/CSpinButtonCtrl::CreateEx', 'AFXCMN/CSpinButtonCtrl::GetAccel', 'AFXCMN/CSpinButtonCtrl::GetBase', 'AFXCMN/CSpinButtonCtrl::GetBuddy', 'AFXCMN/CSpinButtonCtrl::GetPos', 'AFXCMN/CSpinButtonCtrl::GetRange', 'AFXCMN/CSpinButtonCtrl::SetAccel', 'AFXCMN/CSpinButtonCtrl::SetBase', 'AFXCMN/CSpinButtonCtrl::SetBuddy', 'AFXCMN/CSpinButtonCtrl::SetPos', 'AFXCMN/CSpinButtonCtrl::SetRange']

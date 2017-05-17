@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComSafeDeleteCriticalSection', 'ATLCORE/ATL::CComSafeDeleteCriticalSection', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::Init', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::Term', 'ATLCORE/ATL::m_bInitialized']

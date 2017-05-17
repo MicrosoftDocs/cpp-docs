@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CInternetSession', 'AFXINET/CInternetSession', 'AFXINET/CInternetSession::CInternetSession', 'AFXINET/CInternetSession::Close', 'AFXINET/CInternetSession::EnableStatusCallback', 'AFXINET/CInternetSession::GetContext', 'AFXINET/CInternetSession::GetCookie', 'AFXINET/CInternetSession::GetCookieLength', 'AFXINET/CInternetSession::GetFtpConnection', 'AFXINET/CInternetSession::GetGopherConnection', 'AFXINET/CInternetSession::GetHttpConnection', 'AFXINET/CInternetSession::OnStatusCallback', 'AFXINET/CInternetSession::OpenURL', 'AFXINET/CInternetSession::SetCookie', 'AFXINET/CInternetSession::SetOption']

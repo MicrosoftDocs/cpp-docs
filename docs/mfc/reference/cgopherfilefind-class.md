@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CGopherFileFind', 'AFXINET/CGopherFileFind', 'AFXINET/CGopherFileFind::CGopherFileFind', 'AFXINET/CGopherFileFind::FindFile', 'AFXINET/CGopherFileFind::FindNextFile', 'AFXINET/CGopherFileFind::GetCreationTime', 'AFXINET/CGopherFileFind::GetLastAccessTime', 'AFXINET/CGopherFileFind::GetLastWriteTime', 'AFXINET/CGopherFileFind::GetLength', 'AFXINET/CGopherFileFind::GetLocator', 'AFXINET/CGopherFileFind::GetScreenName', 'AFXINET/CGopherFileFind::IsDots']

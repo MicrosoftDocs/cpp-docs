@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['network_link_registry', 'AGENTS/concurrency::network_link_registry', 'AGENTS/concurrency::network_link_registry::add', 'AGENTS/concurrency::network_link_registry::begin', 'AGENTS/concurrency::network_link_registry::contains', 'AGENTS/concurrency::network_link_registry::count', 'AGENTS/concurrency::network_link_registry::remove']

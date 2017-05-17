@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleChangeSourceDialog', 'AFXODLGS/COleChangeSourceDialog', 'AFXODLGS/COleChangeSourceDialog::COleChangeSourceDialog', 'AFXODLGS/COleChangeSourceDialog::DoModal', 'AFXODLGS/COleChangeSourceDialog::GetDisplayName', 'AFXODLGS/COleChangeSourceDialog::GetFileName', 'AFXODLGS/COleChangeSourceDialog::GetFromPrefix', 'AFXODLGS/COleChangeSourceDialog::GetItemName', 'AFXODLGS/COleChangeSourceDialog::GetToPrefix', 'AFXODLGS/COleChangeSourceDialog::IsValidSource', 'AFXODLGS/COleChangeSourceDialog::m_cs']

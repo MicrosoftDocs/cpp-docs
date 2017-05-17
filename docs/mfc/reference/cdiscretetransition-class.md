@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDiscreteTransition', 'AFXANIMATIONCONTROLLER/CDiscreteTransition', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::CDiscreteTransition', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::Create', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::m_delay', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::m_hold']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['move_iterator', 'iterator/std::move_iterator', 'iterator/std::move_iterator::iterator_type', 'iterator/std::move_iterator::iterator_category', 'iterator/std::move_iterator::value_type', 'iterator/std::move_iterator::difference_type', 'iterator/std::move_iterator::pointer', 'iterator/std::move_iterator::reference', 'iterator/std::move_iterator::base']  

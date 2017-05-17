@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFile', 'AFX/CFile', 'AFX/CFile::CFile', 'AFX/CFile::Abort', 'AFX/CFile::Close', 'AFX/CFile::Duplicate', 'AFX/CFile::Flush', 'AFX/CFile::GetFileName', 'AFX/CFile::GetFilePath', 'AFX/CFile::GetFileTitle', 'AFX/CFile::GetLength', 'AFX/CFile::GetPosition', 'AFX/CFile::GetStatus', 'AFX/CFile::LockRange', 'AFX/CFile::Open', 'AFX/CFile::Read', 'AFX/CFile::Remove', 'AFX/CFile::Rename', 'AFX/CFile::Seek', 'AFX/CFile::SeekToBegin', 'AFX/CFile::SeekToEnd', 'AFX/CFile::SetFilePath', 'AFX/CFile::SetLength', 'AFX/CFile::SetStatus', 'AFX/CFile::UnlockRange', 'AFX/CFile::Write', 'AFX/CFile::hFileNull', 'AFX/CFile::m_hFile', 'AFX/CFile::m_pTM']

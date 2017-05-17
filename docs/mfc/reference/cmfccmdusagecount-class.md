@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCCmdUsageCount', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::AddCmd', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::GetCount', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::HasEnoughInformation', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::IsFreqeuntlyUsedCmd', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Reset', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Serialize', 'AFXCMDUSAGECOUNT/CMFCCmdUsageCount::SetOptions']

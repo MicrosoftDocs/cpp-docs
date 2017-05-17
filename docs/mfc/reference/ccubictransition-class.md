@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCubicTransition', 'AFXANIMATIONCONTROLLER/CCubicTransition', 'AFXANIMATIONCONTROLLER/CCubicTransition::CCubicTransition', 'AFXANIMATIONCONTROLLER/CCubicTransition::Create', 'AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalVelocity', 'AFXANIMATIONCONTROLLER/CCubicTransition::m_duration']

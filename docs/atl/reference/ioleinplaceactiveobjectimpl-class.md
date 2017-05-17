@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IOleInPlaceActiveObjectImpl', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ContextSensitiveHelp', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::EnableModeless', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::GetWindow', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnDocWindowActivate', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnFrameWindowActivate', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ResizeBorder', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::TranslateAccelerator']

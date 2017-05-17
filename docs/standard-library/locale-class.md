@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['xlocale/std::locale', 'locale', 'locale/std::locale::category', 'locale/std::locale::combine', 'locale/std::locale::name', 'locale/std::locale::classic', 'locale/std::locale::global', 'locale/std::locale::operator( )', 'locale/std::locale::facet', 'locale/std::locale::id']  

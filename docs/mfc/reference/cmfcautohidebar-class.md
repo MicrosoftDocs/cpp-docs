@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCAutoHideBar', 'AFXAUTOHIDEBAR/CMFCAutoHideBar', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::CMFCAutoHideBar', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::AddAutoHideWindow', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::AllowShowOnPaneMenu', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::CalcFixedLayout', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::Create', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::GetFirstAHWindow', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::GetVisibleCount', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::OnShowControlBarMenu', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::RemoveAutoHideWindow', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::SetActiveInGroup', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::SetRecentVisibleState', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::ShowAutoHideWindow', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::StretchPane', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::UnSetAutoHideMode', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::UpdateVisibleState', 'AFXAUTOHIDEBAR/CMFCAutoHideBar::m_nShowAHWndDelay']

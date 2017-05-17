@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCColorMenuButton', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::CMFCColorMenuButton', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableAutomaticButton', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableDocumentColors', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableOtherButton', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableTearOff', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::GetAutomaticColor', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::GetColor', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::GetColorByCmdID', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnChangeParentWnd', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::OpenColorDialog', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColor', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColorByCmdID', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColorName', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColumnsNumber', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::CopyFrom', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::CreatePopupMenu', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::IsEmptyMenuAllowed', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnDraw', 'AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnDrawOnCustomizeList']

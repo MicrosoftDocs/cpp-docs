@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['fisher_f_distribution', 'random/std::fisher_f_distribution', 'random/std::fisher_f_distribution::reset', 'random/std::fisher_f_distribution::m', 'random/std::fisher_f_distribution::n', 'random/std::fisher_f_distribution::param', 'random/std::fisher_f_distribution::min', 'random/std::fisher_f_distribution::max', 'random/std::fisher_f_distribution::operator()', 'random/std::fisher_f_distribution::param_type', 'random/std::fisher_f_distribution::param_type::m', 'random/std::fisher_f_distribution::param_type::n', 'random/std::fisher_f_distribution::param_type::operator==', 'random/std::fisher_f_distribution::param_type::operator!=', 'random/std::fisher_f_distribution::param_type']  

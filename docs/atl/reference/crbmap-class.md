@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRBMap', 'ATLCOLL/ATL::CRBMap', 'ATLCOLL/ATL::CRBMap::CRBMap', 'ATLCOLL/ATL::CRBMap::Lookup', 'ATLCOLL/ATL::CRBMap::RemoveKey', 'ATLCOLL/ATL::CRBMap::SetAt']

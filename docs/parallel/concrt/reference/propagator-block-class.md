@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['propagator_block', 'AGENTS/concurrency::propagator_block', 'AGENTS/concurrency::propagator_block::propagator_block', 'AGENTS/concurrency::propagator_block::propagate', 'AGENTS/concurrency::propagator_block::send', 'AGENTS/concurrency::propagator_block::decline_incoming_messages', 'AGENTS/concurrency::propagator_block::initialize_source_and_target', 'AGENTS/concurrency::propagator_block::link_source', 'AGENTS/concurrency::propagator_block::process_input_messages', 'AGENTS/concurrency::propagator_block::propagate_message', 'AGENTS/concurrency::propagator_block::register_filter', 'AGENTS/concurrency::propagator_block::remove_network_links', 'AGENTS/concurrency::propagator_block::send_message', 'AGENTS/concurrency::propagator_block::unlink_source', 'AGENTS/concurrency::propagator_block::unlink_sources']

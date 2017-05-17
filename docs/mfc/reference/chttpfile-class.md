@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CHttpFile', 'AFXINET/CHttpFile', 'AFXINET/CHttpFile::CHttpFile', 'AFXINET/CHttpFile::AddRequestHeaders', 'AFXINET/CHttpFile::EndRequest', 'AFXINET/CHttpFile::GetFileURL', 'AFXINET/CHttpFile::GetObject', 'AFXINET/CHttpFile::GetVerb', 'AFXINET/CHttpFile::QueryInfo', 'AFXINET/CHttpFile::QueryInfoStatusCode', 'AFXINET/CHttpFile::SendRequest', 'AFXINET/CHttpFile::SendRequestEx']

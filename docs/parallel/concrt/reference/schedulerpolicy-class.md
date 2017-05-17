@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['SchedulerPolicy', 'concrt/concurrency::SchedulerPolicy', 'concrt/concurrency::SchedulerPolicy::SchedulerPolicy', 'concrt/concurrency::SchedulerPolicy::GetPolicyValue', 'concrt/concurrency::SchedulerPolicy::SetConcurrencyLimits', 'concrt/concurrency::SchedulerPolicy::SetPolicyValue']

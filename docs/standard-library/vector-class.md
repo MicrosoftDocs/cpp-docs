@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['vector', 'vector/std::vector::allocator_type', 'vector/std::vector::const_iterator', 'vector/std::vector::const_pointer', 'vector/std::vector::const_reference', 'vector/std::vector::const_reverse_iterator', 'vector/std::vector::difference_type', 'vector/std::vector::iterator', 'vector/std::vector::pointer', 'vector/std::vector::reference', 'vector/std::vector::reverse_iterator', 'vector/std::vector::size_type', 'vector/std::vector::value_type', 'vector/std::vector::assign', 'vector/std::vector::at', 'vector/std::vector::back', 'vector/std::vector::begin', 'vector/std::vector::capacity', 'vector/std::vector::cbegin', 'vector/std::vector::cend', 'vector/std::vector::crbegin', 'vector/std::vector::crend', 'vector/std::vector::clear', 'vector/std::vector::data', 'vector/std::vector::emplace', 'vector/std::vector::emplace_back', 'vector/std::vector::empty', 'vector/std::vector::end', 'vector/std::vector::erase', 'vector/std::vector::front', 'vector/std::vector::get_allocator', 'vector/std::vector::insert', 'vector/std::vector::max_size', 'vector/std::vector::pop_back', 'vector/std::vector::push_back', 'vector/std::vector::rbegin', 'vector/std::vector::rend', 'vector/std::vector::reserve', 'vector/std::vector::resize', 'vector/std::vector::shrink_to_fit', 'vector/std::vector::size', 'vector/std::vector::swap']  

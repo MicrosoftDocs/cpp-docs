@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['unique_ptr', 'memory/std::unique_ptr', 'memory/std::unique_ptr::deleter_type', 'memory/std::unique_ptr::element_type', 'memory/std::unique_ptr::pointer', 'memory/std::unique_ptr::get', 'memory/std::unique_ptr::get_deleter', 'memory/std::unique_ptr::release', 'memory/std::unique_ptr::reset', 'memory/std::unique_ptr::swap']  

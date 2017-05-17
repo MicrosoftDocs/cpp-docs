@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DPathGeometry', 'AFXRENDERTARGET/CD2DPathGeometry', 'AFXRENDERTARGET/CD2DPathGeometry::CD2DPathGeometry', 'AFXRENDERTARGET/CD2DPathGeometry::Attach', 'AFXRENDERTARGET/CD2DPathGeometry::Create', 'AFXRENDERTARGET/CD2DPathGeometry::Destroy', 'AFXRENDERTARGET/CD2DPathGeometry::Detach', 'AFXRENDERTARGET/CD2DPathGeometry::GetFigureCount', 'AFXRENDERTARGET/CD2DPathGeometry::GetSegmentCount', 'AFXRENDERTARGET/CD2DPathGeometry::Open', 'AFXRENDERTARGET/CD2DPathGeometry::Stream', 'AFXRENDERTARGET/CD2DPathGeometry::m_pPathGeometry']

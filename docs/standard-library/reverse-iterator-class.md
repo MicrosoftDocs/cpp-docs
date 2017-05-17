@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['reverse_iterator', 'xutility/std::reverse_iterator', 'iterator/std::reverse_iterator::difference_type', 'iterator/std::reverse_iterator::iterator_type', 'iterator/std::reverse_iterator::pointer', 'iterator/std::reverse_iterator::reference', 'iterator/std::reverse_iterator::base', 'iterator/std::reverse_iterator::operator_star']  

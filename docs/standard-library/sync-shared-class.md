@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['sync_shared', 'allocators/stdext::sync_shared', 'stdext::sync_shared', 'allocators/stdext::sync_shared::allocate', 'allocators/stdext::sync_shared::deallocate', 'allocators/stdext::sync_shared::equals']  

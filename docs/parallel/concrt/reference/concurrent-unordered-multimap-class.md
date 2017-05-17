@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['concurrent_unordered_multimap', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::concurrent_unordered_multimap', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::hash_function', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::insert', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::key_eq', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::swap', 'CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::unsafe_erase']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['map/std::map', 'map', 'map/std::map::allocator_type', 'map/std::map::const_iterator', 'map/std::map::const_pointer', 'map/std::map::const_reference', 'map/std::map::const_reverse_iterator', 'map/std::map::difference_type', 'map/std::map::iterator', 'map/std::map::key_compare', 'map/std::map::key_type', 'map/std::map::mapped_type', 'map/std::map::pointer', 'map/std::map::reference', 'map/std::map::reverse_iterator', 'map/std::map::size_type', 'map/std::map::value_type', 'map/std::map::at', 'map/std::map::begin', 'map/std::map::cbegin', 'map/std::map::cend', 'map/std::map::clear', 'map/std::map::count', 'map/std::map::crbegin', 'map/std::map::crend', 'map/std::map::emplace', 'map/std::map::emplace_hint', 'map/std::map::empty', 'map/std::map::end', 'map/std::map::equal_range', 'map/std::map::erase', 'map/std::map::find', 'map/std::map::get_allocator', 'map/std::map::insert', 'map/std::map::key_comp', 'map/std::map::lower_bound', 'map/std::map::max_size', 'map/std::map::rbegin', 'map/std::map::rend', 'map/std::map::size', 'map/std::map::swap', 'map/std::map::upper_bound', 'map/std::map::value_comp']  

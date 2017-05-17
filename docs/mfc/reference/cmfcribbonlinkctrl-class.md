@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonLinkCtrl', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CopyFrom', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetCompactSize', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetLink', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetRegularSize', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetToolTipText', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::IsDrawTooltipImage', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDraw', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDrawMenuImage', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnMouseMove', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnSetIcon', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OpenLink', 'AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::SetLink']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCToolBarInfo', 'AFXTOOLBAR/CMFCToolBarInfo', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiColdResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiDisabledResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiHotResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeColdResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeDisabledResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeHotResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuDisabledResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuResID']

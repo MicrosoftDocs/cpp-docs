@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CContextMenuManager', 'AFXCONTEXTMENUMANAGER/CContextMenuManager', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::CContextMenuManager', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::AddMenu', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuById', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuByName', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuNames', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::LoadState', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::ResetState', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::SaveState', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::SetDontCloseActiveMenu', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::ShowPopupMenu', 'AFXCONTEXTMENUMANAGER/CContextMenuManager::TrackPopupMenu']

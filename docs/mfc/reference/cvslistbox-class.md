@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CVSListBox', 'AFXVSLISTBOX/CVSListBox', 'AFXVSLISTBOX/CVSListBox::CVSListBox', 'AFXVSLISTBOX/CVSListBox::AddItem', 'AFXVSLISTBOX/CVSListBox::EditItem', 'AFXVSLISTBOX/CVSListBox::GetCount', 'AFXVSLISTBOX/CVSListBox::GetItemData', 'AFXVSLISTBOX/CVSListBox::GetItemText', 'AFXVSLISTBOX/CVSListBox::GetSelItem', 'AFXVSLISTBOX/CVSListBox::RemoveItem', 'AFXVSLISTBOX/CVSListBox::SelectItem', 'AFXVSLISTBOX/CVSListBox::SetItemData', 'AFXVSLISTBOX/CVSListBox::GetListHwnd']

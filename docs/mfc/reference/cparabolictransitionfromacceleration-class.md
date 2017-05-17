@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CParabolicTransitionFromAcceleration', 'AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration', 'AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::CParabolicTransitionFromAcceleration', 'AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::Create', 'AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblAcceleration', 'AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblFinalVelocity']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['IScheduler', 'CONCRTRM/concurrency::IScheduler', 'CONCRTRM/concurrency::IScheduler::IScheduler::AddVirtualProcessors', 'CONCRTRM/concurrency::IScheduler::IScheduler::GetId', 'CONCRTRM/concurrency::IScheduler::IScheduler::GetPolicy', 'CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyBusy', 'CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle', 'CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors', 'CONCRTRM/concurrency::IScheduler::IScheduler::Statistics']

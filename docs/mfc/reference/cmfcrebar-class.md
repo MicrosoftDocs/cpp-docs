@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCReBar', 'AFXREBAR/CMFCReBar', 'AFXREBAR/CMFCReBar::AddBar', 'AFXREBAR/CMFCReBar::CalcFixedLayout', 'AFXREBAR/CMFCReBar::CanFloat', 'AFXREBAR/CMFCReBar::Create', 'AFXREBAR/CMFCReBar::EnableDocking', 'AFXREBAR/CMFCReBar::GetReBarBandInfoSize', 'AFXREBAR/CMFCReBar::GetReBarCtrl', 'AFXREBAR/CMFCReBar::OnShowControlBarMenu', 'AFXREBAR/CMFCReBar::OnToolHitTest', 'AFXREBAR/CMFCReBar::OnUpdateCmdUI', 'AFXREBAR/CMFCReBar::SetPaneAlignment']

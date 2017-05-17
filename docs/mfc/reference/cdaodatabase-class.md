@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDaoDatabase', 'AFXDAO/CDaoDatabase', 'AFXDAO/CDaoDatabase::CDaoDatabase', 'AFXDAO/CDaoDatabase::CanTransact', 'AFXDAO/CDaoDatabase::CanUpdate', 'AFXDAO/CDaoDatabase::Close', 'AFXDAO/CDaoDatabase::Create', 'AFXDAO/CDaoDatabase::CreateRelation', 'AFXDAO/CDaoDatabase::DeleteQueryDef', 'AFXDAO/CDaoDatabase::DeleteRelation', 'AFXDAO/CDaoDatabase::DeleteTableDef', 'AFXDAO/CDaoDatabase::Execute', 'AFXDAO/CDaoDatabase::GetConnect', 'AFXDAO/CDaoDatabase::GetName', 'AFXDAO/CDaoDatabase::GetQueryDefCount', 'AFXDAO/CDaoDatabase::GetQueryDefInfo', 'AFXDAO/CDaoDatabase::GetQueryTimeout', 'AFXDAO/CDaoDatabase::GetRecordsAffected', 'AFXDAO/CDaoDatabase::GetRelationCount', 'AFXDAO/CDaoDatabase::GetRelationInfo', 'AFXDAO/CDaoDatabase::GetTableDefCount', 'AFXDAO/CDaoDatabase::GetTableDefInfo', 'AFXDAO/CDaoDatabase::GetVersion', 'AFXDAO/CDaoDatabase::IsOpen', 'AFXDAO/CDaoDatabase::Open', 'AFXDAO/CDaoDatabase::SetQueryTimeout', 'AFXDAO/CDaoDatabase::m_pDAODatabase', 'AFXDAO/CDaoDatabase::m_pWorkspace']

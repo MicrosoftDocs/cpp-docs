@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CNonStatelessWorker', 'ATLUTIL/ATL::CNonStatelessWorker', 'ATLUTIL/ATL::CNonStatelessWorker::RequestType', 'ATLUTIL/ATL::CNonStatelessWorker::Execute', 'ATLUTIL/ATL::CNonStatelessWorker::Initialize', 'ATLUTIL/ATL::CNonStatelessWorker::Terminate']

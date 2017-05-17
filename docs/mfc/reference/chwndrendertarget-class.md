@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget::CHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget::Attach', 'AFXRENDERTARGET/CHwndRenderTarget::CheckWindowState', 'AFXRENDERTARGET/CHwndRenderTarget::Create', 'AFXRENDERTARGET/CHwndRenderTarget::Detach', 'AFXRENDERTARGET/CHwndRenderTarget::GetHwnd', 'AFXRENDERTARGET/CHwndRenderTarget::GetHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget::ReCreate', 'AFXRENDERTARGET/CHwndRenderTarget::Resize', 'AFXRENDERTARGET/CHwndRenderTarget::m_pHwndRenderTarget']

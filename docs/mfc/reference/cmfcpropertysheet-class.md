@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCPropertySheet', 'AFXPROPERTYSHEET/CMFCPropertySheet', 'AFXPROPERTYSHEET/CMFCPropertySheet::CMFCPropertySheet', 'AFXPROPERTYSHEET/CMFCPropertySheet::AddPage', 'AFXPROPERTYSHEET/CMFCPropertySheet::AddPageToTree', 'AFXPROPERTYSHEET/CMFCPropertySheet::AddTreeCategory', 'AFXPROPERTYSHEET/CMFCPropertySheet::EnablePageHeader', 'AFXPROPERTYSHEET/CMFCPropertySheet::GetHeaderHeight', 'AFXPROPERTYSHEET/CMFCPropertySheet::GetLook', 'AFXPROPERTYSHEET/CMFCPropertySheet::GetNavBarWidth', 'AFXPROPERTYSHEET/CMFCPropertySheet::GetTab', 'AFXPROPERTYSHEET/CMFCPropertySheet::InitNavigationControl', 'AFXPROPERTYSHEET/CMFCPropertySheet::OnActivatePage', 'AFXPROPERTYSHEET/CMFCPropertySheet::OnDrawPageHeader', 'AFXPROPERTYSHEET/CMFCPropertySheet::OnRemoveTreePage', 'AFXPROPERTYSHEET/CMFCPropertySheet::RemoveCategory', 'AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage', 'AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList', 'AFXPROPERTYSHEET/CMFCPropertySheet::SetLook']

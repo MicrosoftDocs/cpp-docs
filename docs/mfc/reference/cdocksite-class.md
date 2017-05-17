@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDockSite', 'AFXDOCKSITE/CDockSite', 'AFXDOCKSITE/CDockSite::AddRow', 'AFXDOCKSITE/CDockSite::AdjustDockingLayout', 'AFXDOCKSITE/CDockSite::AdjustLayout', 'AFXDOCKSITE/CDockSite::AlignDockSite', 'AFXDOCKSITE/CDockSite::CalcFixedLayout', 'AFXDOCKSITE/CDockSite::CanAcceptPane', 'AFXDOCKSITE/CDockSite::CreateEx', 'AFXDOCKSITE/CDockSite::CreateRow', 'AFXDOCKSITE/CDockSite::DockPane', 'AFXDOCKSITE/CDockSite::DoesAllowDynInsertBefore', 'AFXDOCKSITE/CDockSite::FindRowIndex', 'AFXDOCKSITE/CDockSite::FixupVirtualRects', 'AFXDOCKSITE/CDockSite::GetDockSiteID', 'AFXDOCKSITE/CDockSite::GetDockSiteRowsList', 'AFXDOCKSITE/CDockSite::IsAccessibilityCompatible', 'AFXDOCKSITE/CDockSite::IsDragMode', 'AFXDOCKSITE/CDockSite::IsLastRow', 'AFXDOCKSITE/CDockSite::IsRectWithinDockSite', 'AFXDOCKSITE/CDockSite::IsResizable', 'AFXDOCKSITE/CDockSite::MovePane', 'AFXDOCKSITE/CDockSite::OnInsertRow', 'AFXDOCKSITE/CDockSite::OnRemoveRow', 'AFXDOCKSITE/CDockSite::OnResizeRow', 'AFXDOCKSITE/CDockSite::OnSetWindowPos', 'AFXDOCKSITE/CDockSite::OnShowRow', 'AFXDOCKSITE/CDockSite::OnSizeParent', 'AFXDOCKSITE/CDockSite::PaneFromPoint', 'AFXDOCKSITE/CDockSite::DockPaneLeftOf', 'AFXDOCKSITE/CDockSite::FindPaneByID', 'AFXDOCKSITE/CDockSite::GetPaneList', 'AFXDOCKSITE/CDockSite::RectSideFromPoint', 'AFXDOCKSITE/CDockSite::RemovePane', 'AFXDOCKSITE/CDockSite::RemoveRow', 'AFXDOCKSITE/CDockSite::ReplacePane', 'AFXDOCKSITE/CDockSite::RepositionPanes', 'AFXDOCKSITE/CDockSite::ResizeDockSite', 'AFXDOCKSITE/CDockSite::ResizeRow', 'AFXDOCKSITE/CDockSite::ShowPane', 'AFXDOCKSITE/CDockSite::ShowRow', 'AFXDOCKSITE/CDockSite::SwapRows']

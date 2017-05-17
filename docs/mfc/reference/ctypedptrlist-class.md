@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CTypedPtrList', 'AFXTEMPL/CTypedPtrList', 'AFXTEMPL/CTypedPtrList::AddHead', 'AFXTEMPL/CTypedPtrList::AddTail', 'AFXTEMPL/CTypedPtrList::GetAt', 'AFXTEMPL/CTypedPtrList::GetHead', 'AFXTEMPL/CTypedPtrList::GetNext', 'AFXTEMPL/CTypedPtrList::GetPrev', 'AFXTEMPL/CTypedPtrList::GetTail', 'AFXTEMPL/CTypedPtrList::RemoveHead', 'AFXTEMPL/CTypedPtrList::RemoveTail', 'AFXTEMPL/CTypedPtrList::SetAt']

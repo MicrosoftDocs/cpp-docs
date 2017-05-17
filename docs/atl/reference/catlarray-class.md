@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlArray', 'ATLCOLL/ATL::CAtlArray', 'ATLCOLL/ATL::Add', 'ATLCOLL/ATL::Append', 'ATLCOLL/ATL::AssertValid', 'ATLCOLL/ATL::CAtlArray', 'ATLCOLL/ATL::Copy', 'ATLCOLL/ATL::FreeExtra', 'ATLCOLL/ATL::GetAt', 'ATLCOLL/ATL::GetCount', 'ATLCOLL/ATL::GetData', 'ATLCOLL/ATL::InsertArrayAt', 'ATLCOLL/ATL::InsertAt', 'ATLCOLL/ATL::IsEmpty', 'ATLCOLL/ATL::RemoveAll', 'ATLCOLL/ATL::RemoveAt', 'ATLCOLL/ATL::SetAt', 'ATLCOLL/ATL::SetAtGrow', 'ATLCOLL/ATL::SetCount', 'ATLCOLL/ATL::INARGTYPE', 'ATLCOLL/ATL::OUTARGTYPE']

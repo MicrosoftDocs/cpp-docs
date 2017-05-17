@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimationGroup', 'AFXANIMATIONCONTROLLER/CAnimationGroup', 'AFXANIMATIONCONTROLLER/CAnimationGroup::CAnimationGroup', 'AFXANIMATIONCONTROLLER/CAnimationGroup::Animate', 'AFXANIMATIONCONTROLLER/CAnimationGroup::ApplyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationGroup::FindAnimationObject', 'AFXANIMATIONCONTROLLER/CAnimationGroup::GetGroupID', 'AFXANIMATIONCONTROLLER/CAnimationGroup::RemoveKeyframes', 'AFXANIMATIONCONTROLLER/CAnimationGroup::RemoveTransitions', 'AFXANIMATIONCONTROLLER/CAnimationGroup::Schedule', 'AFXANIMATIONCONTROLLER/CAnimationGroup::SetAutodestroyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationGroup::AddKeyframes', 'AFXANIMATIONCONTROLLER/CAnimationGroup::AddTransitions', 'AFXANIMATIONCONTROLLER/CAnimationGroup::CreateTransitions', 'AFXANIMATIONCONTROLLER/CAnimationGroup::m_bAutoclearTransitions', 'AFXANIMATIONCONTROLLER/CAnimationGroup::m_bAutodestroyAnimationObjects', 'AFXANIMATIONCONTROLLER/CAnimationGroup::m_bAutodestroyKeyframes', 'AFXANIMATIONCONTROLLER/CAnimationGroup::m_lstAnimationObjects', 'AFXANIMATIONCONTROLLER/CAnimationGroup::m_lstKeyFrames', 'AFXANIMATIONCONTROLLER/CAnimationGroup::m_pStoryboard', 'AFXANIMATIONCONTROLLER/CAnimationGroup::m_nGroupID', 'AFXANIMATIONCONTROLLER/CAnimationGroup::m_pParentController']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMapStringToOb', 'AFXCOLL/CMapStringToOb', 'AFXCOLL/CMapStringToOb::CMapStringToOb', 'AFXCOLL/CMapStringToOb::GetCount', 'AFXCOLL/CMapStringToOb::GetHashTableSize', 'AFXCOLL/CMapStringToOb::GetNextAssoc', 'AFXCOLL/CMapStringToOb::GetSize', 'AFXCOLL/CMapStringToOb::GetStartPosition', 'AFXCOLL/CMapStringToOb::HashKey', 'AFXCOLL/CMapStringToOb::InitHashTable', 'AFXCOLL/CMapStringToOb::IsEmpty', 'AFXCOLL/CMapStringToOb::Lookup', 'AFXCOLL/CMapStringToOb::LookupKey', 'AFXCOLL/CMapStringToOb::RemoveAll', 'AFXCOLL/CMapStringToOb::RemoveKey', 'AFXCOLL/CMapStringToOb::SetAt']

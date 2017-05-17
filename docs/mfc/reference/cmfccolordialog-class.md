@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCColorDialog', 'AFXCOLORDIALOG/CMFCColorDialog', 'AFXCOLORDIALOG/CMFCColorDialog::CMFCColorDialog', 'AFXCOLORDIALOG/CMFCColorDialog::GetColor', 'AFXCOLORDIALOG/CMFCColorDialog::GetPalette', 'AFXCOLORDIALOG/CMFCColorDialog::RebuildPalette', 'AFXCOLORDIALOG/CMFCColorDialog::SetCurrentColor', 'AFXCOLORDIALOG/CMFCColorDialog::SetNewColor', 'AFXCOLORDIALOG/CMFCColorDialog::SetPageOne', 'AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo']

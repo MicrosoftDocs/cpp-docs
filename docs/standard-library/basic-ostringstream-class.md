@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['basic_ostringstream', 'sstream/std::basic_ostringstream', 'sstream/std::basic_ostringstream::allocator_type', 'sstream/std::basic_ostringstream::rdbuf', 'sstream/std::basic_ostringstream::str']  
