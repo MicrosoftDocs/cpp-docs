@@ -22,6 +22,11 @@ f1_keywords:
   - "C4822"
   - "C4825"
   - "C4827"
+  - "C4837"
+  - "C4839"
+  - "C4840"
+  - "C4841"
+  - "C4842"
   - "C4872"
   - "C4880"
   - "C4881"
@@ -137,11 +142,16 @@ You may find additional assistance for errors and warnings on the MSDN public fo
 |[Compiler Warning (level 1) C4821](../../error-messages/compiler-warnings/compiler-warning-level-1-c4821.md)|Unable to determine Unicode encoding type, please save the file with signature (BOM)|  
 |Compiler warning (level 1) C4822|'member function': local class member function does not have a body|  
 |[Compiler Warning (level 3) C4823](../../error-messages/compiler-warnings/compiler-warning-level-3-c4823.md)|'function': uses pinning pointers but unwind semantics are not enabled. Consider using /EHa|  
-|Compiler warning (level 4) C4825||  
+|Compiler warning (level 2) C4826|Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior.|  
 |Compiler warning (level 3) C4827|A public 'ToString' method with 0 parameters should be marked as virtual and override|  
 |[Compiler Warning (level 1) C4829](../../error-messages/compiler-warnings/compiler-warning-level-1-c4829.md)|Possibly incorrect parameters to function main. Consider 'int main(Platform::Array\<Platform::String^>^ argv)'|  
 |[Compiler Warning (level 1) C4835](../../error-messages/compiler-warnings/compiler-warning-level-1-c4835.md)|'variable': the initializer for exported data will not be run until managed code is first executed in the host assembly|  
+|Compiler warning (level 4) C4837|trigraph detected: '??*character*' replaced by '*character*'|  
 |[Compiler Warning (level 1) C4838](../../error-messages/compiler-warnings/compiler-warning-level-1-c4838.md)|conversion from 'type_1' to 'type_2' requires a narrowing conversion|  
+|Compiler warning (level 3) C4839|non-standard use of class '*type*' as an argument to a variadic function|  
+|Compiler warning (level 4) C4840|non-portable use of class '*type*' as an argument to a variadic function|  
+|Compiler warning (level 4) C4841|non-standard extension used: compound member designator used in offsetof|  
+|Compiler warning (level 4) C4842|the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases|  
 |[Compiler Warning C4867](../../error-messages/compiler-warnings/compiler-warning-c4867.md)|'function': function call missing argument list; use 'call' to create a pointer to member|  
 |[Compiler Warning C4868](../../error-messages/compiler-warnings/compiler-warning-c4868.md)|'file(line_number)' compiler may not enforce left-to-right evaluation order in braced initialization list|  
 |Compiler warning (level 2) C4872|floating point division by zero detected when compiling the call graph for the concurrency::parallel_for_each at: '*location*'|  
@@ -180,36 +190,36 @@ You may find additional assistance for errors and warnings on the MSDN public fo
 |[Compiler Warning (level 2) C4948](../../error-messages/compiler-warnings/compiler-warning-level-2-c4948.md)|return type of 'accessor' does not match the last parameter type of the corresponding setter|  
 |[Compiler Warning (level 1 and level 4) C4949](../../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4949.md)|pragmas 'managed' and 'unmanaged' are meaningful only when compiled with '/clr[:option]'|  
 |Compiler warning (level 1) C4950|'type_or_member': marked as obsolete|  
-|Compiler warning C4951|'function' has been edited since profile data was collected, function profile data not used|  
-|Compiler warning C4952|'function': no profile data found in program database 'pgd_file'|  
-|Compiler warning C4953|Inline 'function' has been edited since profile data was collected, profile data not used|  
+|Compiler warning (level 1) C4951|'function' has been edited since profile data was collected, function profile data not used|  
+|Compiler warning (level 1) C4952|'function': no profile data found in program database 'pgd_file'|  
+|Compiler warning (level 1) C4953|Inlinee 'function' has been edited since profile data was collected, profile data not used|  
 |Compiler warning C4954|'function': not profiled (contains __int64 switch expression)|  
 |Compiler warning C4955|'import2': import ignored; already imported from 'import1'|  
 |Compiler warning (level 1) C4956|'type': this type is not verifiable|  
 |Compiler warning (level 1) C4957|'cast': explicit cast from 'cast from' to 'cast_to' is not verifiable|  
 |Compiler warning (level 1) C4958|'operation': pointer arithmetic is not verifiable|  
 |Compiler warning (level 1) C4959|cannot define unmanaged type 'type' in /clr:safe because accessing its members yields unverifiable code|  
-|Compiler warning C4960|'function' is too big to be profiled|  
-|Compiler warning C4961|No profile data was merged into '.pgd file', profile-guided optimizations disabled|  
-|Compiler warning C4962|'function': Profile-guided optimizations disabled because optimizations caused profile data to become inconsistent|  
-|Compiler warning C4963|'*description*': no profile data found; different compiler options were used in instrumented build|  
+|Compiler warning (level 4) C4960|'function' is too big to be profiled|  
+|Compiler warning (level 1) C4961|No profile data was merged into '.pgd file', profile-guided optimizations disabled|  
+|Compiler warning (level 4) C4962|'function': Profile-guided optimizations disabled because optimizations caused profile data to become inconsistent|  
+|Compiler warning (level 1) C4963|'*description*': no profile data found; different compiler options were used in instrumented build|  
 |[Compiler Warning (level 1) C4964](../../error-messages/compiler-warnings/compiler-warning-level-1-c4964.md)|No optimization options were specified; profile info will not be collected|  
 |[Compiler Warning (level 1) C4965](../../error-messages/compiler-warnings/compiler-warning-level-1-c4965.md)|implicit box of integer 0; use nullptr or explicit cast|  
-|Compiler warning C4966|'*source*' has __code_seg annotation with unsupported segment name, annotation ignored|  
+|Compiler warning (level 1) C4966|'*function*' has __code_seg annotation with unsupported segment name, annotation ignored|  
 |Compiler warning C4970|delegate constructor: target object ignored since '*type*' is static|  
 |Compiler warning (level 1) C4971|Argument order: \<target object>, \<target function> for delegate constructor is deprecated, use \<target function>, \<target object="">|  
 |Compiler warning (level 1) C4972|Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable|  
-|Compiler warning C4973|'*description*': marked as deprecated|  
-|Compiler warning C4974|'*description*': marked as deprecated|  
-|Compiler warning C4981|Warbird: function '*function*' marked as __forceinline not inlined because it contains exception semantics|  
+|Compiler warning (level 1) C4973|'*symbol*': marked as deprecated|  
+|Compiler warning (level 1) C4974|'*symbol*': marked as deprecated|  
+|Compiler warning (level 3) C4981|Warbird: function '*function*' marked as __forceinline not inlined because it contains exception semantics|  
 |Compiler warning (level 3) C4985|symbol name': attributes not present on previous declaration.|  
 |[Compiler Warning C4986](../../error-messages/compiler-warnings/compiler-warning-c4986.md)|'*declaration*': exception specification does not match previous declaration|  
 |Compiler warning (level 4) C4987|nonstandard extension used: 'throw (...)'|  
 |Compiler warning (level 4) C4988|'*variable*': variable declared outside class/function scope|  
-|Compiler warning C4989|'*type*': type has conflicting definitions.|  
-|Compiler warning C4990|Warbird: *message*|  
-|Compiler warning C4991|Warbird: function '*function*' marked as __forceinline not inlined because protection level of inlinee is greater than the parent|  
-|Compiler warning C4992|Warbird: function '*function*' marked as __forceinline not inlined because it contains inline assembly which cannot be protected|  
+|Compiler warning (level 4) C4989|'*type*': type has conflicting definitions.|  
+|Compiler warning (level 3) C4990|Warbird: *message*|  
+|Compiler warning (level 3) C4991|Warbird: function '*function*' marked as __forceinline not inlined because protection level of inlinee is greater than the parent|  
+|Compiler warning (level 3) C4992|Warbird: function '*function*' marked as __forceinline not inlined because it contains inline assembly which cannot be protected|  
 |[Compiler Warning (level 3) C4995](../../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md)|'function': name was marked as #pragma deprecated|  
 |[Compiler Warning (level 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)|'*description*': *message*|  
 |Compiler warning (level 1) C4997|'class': coclass does not implement a COM interface or pseudo-interface|  
@@ -217,17 +227,17 @@ You may find additional assistance for errors and warnings on the MSDN public fo
 |Compiler warning C4999|UNKNOWN WARNING Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|  
 |Compiler warning C5022|'*type*': multiple move constructors specified|  
 |Compiler warning C5023|'*type*': multiple move assignment operators specified|  
-|Compiler warning (level 4) C5024|'*declaration*': move constructor was implicitly defined as deleted|  
-|Compiler warning (level 4) C5025|'*declaration*': move assignment operator was implicitly defined as deleted|  
+|Compiler warning (level 4) C5024|'*type*': move constructor was implicitly defined as deleted|  
+|Compiler warning (level 4) C5025|'*type*': move assignment operator was implicitly defined as deleted|  
 |Compiler warning (level 1 and level 4) C5026|'*type*': move constructor was implicitly defined as deleted|  
 |Compiler warning (level 1 and level 4) C5027|'*type*': move assignment operator was implicitly defined as deleted|  
 |Compiler warning (level 1) C5028|'*name*': Alignment specified in prior declaration (*number*) not specified in definition|  
 |Compiler warning (level 4) C5029|nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only|  
-|Compiler warning C5030|attribute '*attribute*' is not recognized|  
-|Compiler warning C5031|#pragma warning(pop): likely mismatch, popping warning state pushed in different file|  
-|Compiler warning C5032|detected #pragma warning(push) with no corresponding #pragma warning(pop)|  
-|Compiler warning C5033|'*storage-class*' is no longer a supported storage class|  
+|Compiler warning (level 3) C5030|attribute '*attribute*' is not recognized|  
+|Compiler warning (level 4) C5031|#pragma warning(pop): likely mismatch, popping warning state pushed in different file|  
+|Compiler warning (level 4) C5032|detected #pragma warning(push) with no corresponding #pragma warning(pop)|  
+|Compiler warning (level 1) C5033|'*storage-class*' is no longer a supported storage class|  
 |Compiler warning C5034|use of intrinsic '*intrinsic*' causes function *function* to be compiled as guest code|  
 |Compiler warning C5035|use of feature '*feature*' causes function *function* to be compiled as guest code|  
-|Compiler warning C5036|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*'|  
-|Compiler warning C5037|'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments|  
+|Compiler warning (level 1) C5036|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*'|  
+|Compiler warning (error) C5037|'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments|  
