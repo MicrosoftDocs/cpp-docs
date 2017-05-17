@@ -3,6 +3,7 @@
 ## [Visual C++ What's New 2003 through 2015](visual-cpp-what-s-new-2003-through-2015.md)
 ## [Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)
 ## [Porting 3rd-party libraries](porting-third-party-libraries.md)
+## [Porting data applications](porting-data-applications.md)
 ## [Porting and Upgrading: Examples and Case Studies](porting-and-upgrading-examples-and-case-studies.md)
 ### [Porting Guide: MFC Scribble](porting-guide-mfc-scribble.md)
 ### [Porting Guide: COM Spy](porting-guide-com-spy.md)
