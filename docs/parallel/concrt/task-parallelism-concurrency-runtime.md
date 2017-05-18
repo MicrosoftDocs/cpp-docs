@@ -58,7 +58,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
   
 -   A task-based continuation is always scheduled for execution when the antecedent task finishes, even when the antecedent task is canceled or throws an exception.  
   
--   Use [concurrency:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all) to create a task that completes after every member of a set of tasks completes. Use [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) to create a task that completes after one member of a set of tasks completes.  
+-   Use [concurrency::when_all](reference/concurrency-namespace-functions.md#when_all) to create a task that completes after every member of a set of tasks completes. Use [concurrency::when_any](reference/concurrency-namespace-functions.md#when_any) to create a task that completes after one member of a set of tasks completes.  
 
   
 -   Tasks and task groups can participate in the Parallel Patterns Library (PPL) cancellation mechanism. For more information, see [Cancellation in the PPL](cancellation-in-the-ppl.md).  
