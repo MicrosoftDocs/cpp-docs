@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CTime', 'ATLTIME/ATL::CTime', 'ATLTIME/ATL::CTime::CTime', 'ATLTIME/ATL::CTime::Format', 'ATLTIME/ATL::CTime::FormatGmt', 'ATLTIME/ATL::CTime::GetAsDBTIMESTAMP', 'ATLTIME/ATL::CTime::GetAsSystemTime', 'ATLTIME/ATL::CTime::GetCurrentTime', 'ATLTIME/ATL::CTime::GetDay', 'ATLTIME/ATL::CTime::GetDayOfWeek', 'ATLTIME/ATL::CTime::GetGmtTm', 'ATLTIME/ATL::CTime::GetHour', 'ATLTIME/ATL::CTime::GetLocalTm', 'ATLTIME/ATL::CTime::GetMinute', 'ATLTIME/ATL::CTime::GetMonth', 'ATLTIME/ATL::CTime::GetSecond', 'ATLTIME/ATL::CTime::GetTime', 'ATLTIME/ATL::CTime::GetYear', 'ATLTIME/ATL::CTime::Serialize64']

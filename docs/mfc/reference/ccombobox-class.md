@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComboBox', 'AFXWIN/CComboBox', 'AFXWIN/CComboBox::CComboBox', 'AFXWIN/CComboBox::AddString', 'AFXWIN/CComboBox::Clear', 'AFXWIN/CComboBox::CompareItem', 'AFXWIN/CComboBox::Copy', 'AFXWIN/CComboBox::Create', 'AFXWIN/CComboBox::Cut', 'AFXWIN/CComboBox::DeleteItem', 'AFXWIN/CComboBox::DeleteString', 'AFXWIN/CComboBox::Dir', 'AFXWIN/CComboBox::DrawItem', 'AFXWIN/CComboBox::FindString', 'AFXWIN/CComboBox::FindStringExact', 'AFXWIN/CComboBox::GetComboBoxInfo', 'AFXWIN/CComboBox::GetCount', 'AFXWIN/CComboBox::GetCueBanner', 'AFXWIN/CComboBox::GetCurSel', 'AFXWIN/CComboBox::GetDroppedControlRect', 'AFXWIN/CComboBox::GetDroppedState', 'AFXWIN/CComboBox::GetDroppedWidth', 'AFXWIN/CComboBox::GetEditSel', 'AFXWIN/CComboBox::GetExtendedUI', 'AFXWIN/CComboBox::GetHorizontalExtent', 'AFXWIN/CComboBox::GetItemData', 'AFXWIN/CComboBox::GetItemDataPtr', 'AFXWIN/CComboBox::GetItemHeight', 'AFXWIN/CComboBox::GetLBText', 'AFXWIN/CComboBox::GetLBTextLen', 'AFXWIN/CComboBox::GetLocale', 'AFXWIN/CComboBox::GetMinVisible', 'AFXWIN/CComboBox::GetTopIndex', 'AFXWIN/CComboBox::InitStorage', 'AFXWIN/CComboBox::InsertString', 'AFXWIN/CComboBox::LimitText', 'AFXWIN/CComboBox::MeasureItem', 'AFXWIN/CComboBox::Paste', 'AFXWIN/CComboBox::ResetContent', 'AFXWIN/CComboBox::SelectString', 'AFXWIN/CComboBox::SetCueBanner', 'AFXWIN/CComboBox::SetCurSel', 'AFXWIN/CComboBox::SetDroppedWidth', 'AFXWIN/CComboBox::SetEditSel', 'AFXWIN/CComboBox::SetExtendedUI', 'AFXWIN/CComboBox::SetHorizontalExtent', 'AFXWIN/CComboBox::SetItemData', 'AFXWIN/CComboBox::SetItemDataPtr', 'AFXWIN/CComboBox::SetItemHeight', 'AFXWIN/CComboBox::SetLocale', 'AFXWIN/CComboBox::SetMinVisibleItems', 'AFXWIN/CComboBox::SetTopIndex', 'AFXWIN/CComboBox::ShowDropDown']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFont', 'AFXWIN/CFont', 'AFXWIN/CFont::CFont', 'AFXWIN/CFont::CreateFont', 'AFXWIN/CFont::CreateFontIndirect', 'AFXWIN/CFont::CreatePointFont', 'AFXWIN/CFont::CreatePointFontIndirect', 'AFXWIN/CFont::FromHandle', 'AFXWIN/CFont::GetLogFont']

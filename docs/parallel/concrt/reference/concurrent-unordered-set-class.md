@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['concurrent_unordered_set', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::concurrent_unordered_set', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::hash_function', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::insert', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase']

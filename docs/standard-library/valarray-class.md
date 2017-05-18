@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['valarray', 'valarray/std::valarray', 'valarray/std::valarray::value_type', 'valarray/std::valarray::apply', 'valarray/std::valarray::cshift', 'valarray/std::valarray::free', 'valarray/std::valarray::max', 'valarray/std::valarray::min', 'valarray/std::valarray::resize', 'valarray/std::valarray::shift', 'valarray/std::valarray::size', 'valarray/std::valarray::sum', 'valarray/std::valarray::swap']  

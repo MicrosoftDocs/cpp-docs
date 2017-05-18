@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IDispEventSimpleImpl', 'ATLCOM/ATL::IDispEventSimpleImpl', 'ATLCOM/ATL::IDispEventSimpleImpl::Advise', 'ATLCOM/ATL::IDispEventSimpleImpl::DispEventAdvise', 'ATLCOM/ATL::IDispEventSimpleImpl::DispEventUnadvise', 'ATLCOM/ATL::IDispEventSimpleImpl::GetIDsOfNames', 'ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfo', 'ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfoCount', 'ATLCOM/ATL::IDispEventSimpleImpl::Invoke', 'ATLCOM/ATL::IDispEventSimpleImpl::Unadvise']

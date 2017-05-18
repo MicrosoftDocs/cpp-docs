@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['functional/std::bind', 'functional/std::bind1st', 'functional/std::bind2nd', 'functional/std::bit_and', 'functional/std::bit_not', 'functional/std::bit_or', 'functional/std::bit_xor', 'functional/std::cref', 'type_traits/std::cref', 'functional/std::mem_fn', 'functional/std::mem_fun', 'functional/std::mem_fun_ref', 'functional/std::not1', 'functional/std::not2', 'functional/std::ptr_fun', 'functional/std::ref', 'type_traits/std::ref', 'functional/std::swap', 'type_traits/std::swap', 'functional/std::bind', 'functional/std::bind1st', 'functional/std::bind2nd', 'functional/std::bit_and', 'functional/std::bit_not', 'functional/std::bit_or', 'functional/std::bit_xor', 'functional/std::cref', 'functional/std::mem_fn', 'functional/std::mem_fun', 'functional/std::mem_fun_ref', 'functional/std::not1', 'functional/std::not2', 'functional/std::ptr_fun', 'functional/std::ref', 'functional/std::swap']  

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStatusBar', 'AFXEXT/CStatusBar', 'AFXEXT/CStatusBar::CStatusBar', 'AFXEXT/CStatusBar::CommandToIndex', 'AFXEXT/CStatusBar::Create', 'AFXEXT/CStatusBar::CreateEx', 'AFXEXT/CStatusBar::DrawItem', 'AFXEXT/CStatusBar::GetItemID', 'AFXEXT/CStatusBar::GetItemRect', 'AFXEXT/CStatusBar::GetPaneInfo', 'AFXEXT/CStatusBar::GetPaneStyle', 'AFXEXT/CStatusBar::GetPaneText', 'AFXEXT/CStatusBar::GetStatusBarCtrl', 'AFXEXT/CStatusBar::SetIndicators', 'AFXEXT/CStatusBar::SetPaneInfo', 'AFXEXT/CStatusBar::SetPaneStyle', 'AFXEXT/CStatusBar::SetPaneText']

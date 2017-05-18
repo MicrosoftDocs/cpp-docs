@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CListBox', 'AFXWIN/CListBox', 'AFXWIN/CListBox::CListBox', 'AFXWIN/CListBox::AddString', 'AFXWIN/CListBox::CharToItem', 'AFXWIN/CListBox::CompareItem', 'AFXWIN/CListBox::Create', 'AFXWIN/CListBox::DeleteItem', 'AFXWIN/CListBox::DeleteString', 'AFXWIN/CListBox::Dir', 'AFXWIN/CListBox::DrawItem', 'AFXWIN/CListBox::FindString', 'AFXWIN/CListBox::FindStringExact', 'AFXWIN/CListBox::GetAnchorIndex', 'AFXWIN/CListBox::GetCaretIndex', 'AFXWIN/CListBox::GetCount', 'AFXWIN/CListBox::GetCurSel', 'AFXWIN/CListBox::GetHorizontalExtent', 'AFXWIN/CListBox::GetItemData', 'AFXWIN/CListBox::GetItemDataPtr', 'AFXWIN/CListBox::GetItemHeight', 'AFXWIN/CListBox::GetItemRect', 'AFXWIN/CListBox::GetListBoxInfo', 'AFXWIN/CListBox::GetLocale', 'AFXWIN/CListBox::GetSel', 'AFXWIN/CListBox::GetSelCount', 'AFXWIN/CListBox::GetSelItems', 'AFXWIN/CListBox::GetText', 'AFXWIN/CListBox::GetTextLen', 'AFXWIN/CListBox::GetTopIndex', 'AFXWIN/CListBox::InitStorage', 'AFXWIN/CListBox::InsertString', 'AFXWIN/CListBox::ItemFromPoint', 'AFXWIN/CListBox::MeasureItem', 'AFXWIN/CListBox::ResetContent', 'AFXWIN/CListBox::SelectString', 'AFXWIN/CListBox::SelItemRange', 'AFXWIN/CListBox::SetAnchorIndex', 'AFXWIN/CListBox::SetCaretIndex', 'AFXWIN/CListBox::SetColumnWidth', 'AFXWIN/CListBox::SetCurSel', 'AFXWIN/CListBox::SetHorizontalExtent', 'AFXWIN/CListBox::SetItemData', 'AFXWIN/CListBox::SetItemDataPtr', 'AFXWIN/CListBox::SetItemHeight', 'AFXWIN/CListBox::SetLocale', 'AFXWIN/CListBox::SetSel', 'AFXWIN/CListBox::SetTabStops', 'AFXWIN/CListBox::SetTopIndex', 'AFXWIN/CListBox::VKeyToItem']

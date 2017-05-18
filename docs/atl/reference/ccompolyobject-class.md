@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComPolyObject', 'ATLCOM/ATL::CComPolyObject', 'ATLCOM/ATL::CComPolyObject::CComPolyObject', 'ATLCOM/ATL::CComPolyObject::AddRef', 'ATLCOM/ATL::CComPolyObject::CreateInstance', 'ATLCOM/ATL::CComPolyObject::FinalConstruct', 'ATLCOM/ATL::CComPolyObject::FinalRelease', 'ATLCOM/ATL::CComPolyObject::QueryInterface', 'ATLCOM/ATL::CComPolyObject::Release', 'ATLCOM/ATL::CComPolyObject::m_contained']

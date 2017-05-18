@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
-  - "devlang-cpp"
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 

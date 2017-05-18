@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDynamicChain', 'ATLWIN/ATL::CDynamicChain', 'ATLWIN/ATL::CDynamicChain::CDynamicChain', 'ATLWIN/ATL::CDynamicChain::CallChain', 'ATLWIN/ATL::CDynamicChain::RemoveChainEntry', 'ATLWIN/ATL::CDynamicChain::SetChainEntry']

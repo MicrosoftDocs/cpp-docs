@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "04/21/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 f1_keywords: 

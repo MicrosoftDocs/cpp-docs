@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CNoWorkerThread', 'ATLUTIL/ATL::CNoWorkerThread', 'ATLUTIL/ATL::CNoWorkerThread::AddHandle', 'ATLUTIL/ATL::CNoWorkerThread::AddTimer', 'ATLUTIL/ATL::CNoWorkerThread::GetThreadHandle', 'ATLUTIL/ATL::CNoWorkerThread::GetThreadId', 'ATLUTIL/ATL::CNoWorkerThread::Initialize', 'ATLUTIL/ATL::CNoWorkerThread::RemoveHandle', 'ATLUTIL/ATL::CNoWorkerThread::Shutdown']

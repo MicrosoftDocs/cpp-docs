@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSocket', 'AFXSOCK/CSocket', 'AFXSOCK/CSocket::CSocket', 'AFXSOCK/CSocket::Attach', 'AFXSOCK/CSocket::CancelBlockingCall', 'AFXSOCK/CSocket::Create', 'AFXSOCK/CSocket::FromHandle', 'AFXSOCK/CSocket::IsBlocking', 'AFXSOCK/CSocket::OnMessagePending']

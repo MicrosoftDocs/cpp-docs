@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock::scoped_lock', 'CONCRT/concurrency::reader_writer_lock::scoped_lock_read', 'CONCRT/concurrency::reader_writer_lock::reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock::lock', 'CONCRT/concurrency::reader_writer_lock::lock_read', 'CONCRT/concurrency::reader_writer_lock::try_lock', 'CONCRT/concurrency::reader_writer_lock::try_lock_read', 'CONCRT/concurrency::reader_writer_lock::unlock']

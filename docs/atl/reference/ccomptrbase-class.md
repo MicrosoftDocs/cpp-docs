@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComPtrBase', 'ATLCOMCLI/ATL::CComPtrBase', 'ATLCOMCLI/ATL::CComPtrBase::Advise', 'ATLCOMCLI/ATL::CComPtrBase::Attach', 'ATLCOMCLI/ATL::CComPtrBase::CoCreateInstance', 'ATLCOMCLI/ATL::CComPtrBase::CopyTo', 'ATLCOMCLI/ATL::CComPtrBase::Detach', 'ATLCOMCLI/ATL::CComPtrBase::IsEqualObject', 'ATLCOMCLI/ATL::CComPtrBase::QueryInterface', 'ATLCOMCLI/ATL::CComPtrBase::Release', 'ATLCOMCLI/ATL::CComPtrBase::SetSite', 'ATLCOMCLI/ATL::CComPtrBase::p']

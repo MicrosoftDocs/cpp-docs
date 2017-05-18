@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlBaseModule', 'ATLCORE/ATL::CAtlBaseModule', 'ATLCORE/ATL::CAtlBaseModule::CAtlBaseModule', 'ATLCORE/ATL::CAtlBaseModule::AddResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::GetHInstanceAt', 'ATLCORE/ATL::CAtlBaseModule::GetModuleInstance', 'ATLCORE/ATL::CAtlBaseModule::GetResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::RemoveResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::SetResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::m_bInitFailed']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CUIntArray', 'AFXCOLL/CUIntArray', 'AFXCOLL/CObArray::CObArray', 'AFXCOLL/CObArray::Add', 'AFXCOLL/CObArray::Append', 'AFXCOLL/CObArray::Copy', 'AFXCOLL/CObArray::ElementAt', 'AFXCOLL/CObArray::FreeExtra', 'AFXCOLL/CObArray::GetAt', 'AFXCOLL/CObArray::GetCount', 'AFXCOLL/CObArray::GetData', 'AFXCOLL/CObArray::GetSize', 'AFXCOLL/CObArray::GetUpperBound', 'AFXCOLL/CObArray::InsertAt', 'AFXCOLL/CObArray::IsEmpty', 'AFXCOLL/CObArray::RemoveAll', 'AFXCOLL/CObArray::RemoveAt', 'AFXCOLL/CObArray::SetAt', 'AFXCOLL/CObArray::SetAtGrow', 'AFXCOLL/CObArray::SetSize']

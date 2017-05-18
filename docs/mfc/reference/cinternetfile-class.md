@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CInternetFile', 'AFXINET/CInternetFile', 'AFXINET/CInternetFile::CInternetFile', 'AFXINET/CInternetFile::Abort', 'AFXINET/CInternetFile::Close', 'AFXINET/CInternetFile::Flush', 'AFXINET/CInternetFile::GetLength', 'AFXINET/CInternetFile::Read', 'AFXINET/CInternetFile::ReadString', 'AFXINET/CInternetFile::Seek', 'AFXINET/CInternetFile::SetReadBufferSize', 'AFXINET/CInternetFile::SetWriteBufferSize', 'AFXINET/CInternetFile::Write', 'AFXINET/CInternetFile::WriteString', 'AFXINET/CInternetFile::m_hFile']

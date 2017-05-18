@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCEditBrowseCtrl', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableBrowseButton', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFileBrowseButton', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFolderBrowseButton', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::GetMode', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnAfterUpdate', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnBrowse', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnChangeLayout', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnDrawBrowseButton', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnIllegalFileName', 'AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::SetBrowseButtonImage']

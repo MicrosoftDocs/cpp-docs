@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['texture_view', 'AMP_GRAPHICS/texture_view', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::texture_view', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_alpha', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_blue', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_green', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_red', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::get', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::sample', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::set', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type']

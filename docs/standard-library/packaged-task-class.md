@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['future/std::packaged_task', 'future/std::packaged_task::packaged_task', 'future/std::packaged_task::get_future', 'future/std::packaged_task::make_ready_at_thread_exit', 'future/std::packaged_task::reset', 'future/std::packaged_task::swap', 'future/std::packaged_task::valid', 'future/std::packaged_task::operator()', 'future/std::packaged_task::operator bool']  

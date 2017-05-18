@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRectTracker', 'AFXEXT/CRectTracker', 'AFXEXT/CRectTracker::CRectTracker', 'AFXEXT/CRectTracker::AdjustRect', 'AFXEXT/CRectTracker::Draw', 'AFXEXT/CRectTracker::DrawTrackerRect', 'AFXEXT/CRectTracker::GetHandleMask', 'AFXEXT/CRectTracker::GetTrueRect', 'AFXEXT/CRectTracker::HitTest', 'AFXEXT/CRectTracker::NormalizeHit', 'AFXEXT/CRectTracker::OnChangedRect', 'AFXEXT/CRectTracker::SetCursor', 'AFXEXT/CRectTracker::Track', 'AFXEXT/CRectTracker::TrackRubberBand', 'AFXEXT/CRectTracker::m_nHandleSize', 'AFXEXT/CRectTracker::m_nStyle', 'AFXEXT/CRectTracker::m_rect', 'AFXEXT/CRectTracker::m_sizeMin']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 f1_keywords: 
@@ -310,4 +310,8 @@ You may find additional assistance for errors and warnings on the MSDN public fo
 |Compiler warning (level 3) C4592|'*function*': 'constexpr' call evaluation failed; function will be called at run-time|  
 |Compiler warning (level 1) C4593|'*function*': 'constexpr' call evaluation step limit of '*limit*' exceeded; use /constexpr:steps\<NUMBER> to increase the limit|  
 |Compiler warning (level 3) C4594|'*type*': destructor will not be implicitly called if an exception is thrown|  
-|Compiler warning (level 1) C4595|'*type*': behavior change: destructor will no longer be implicitly called if an exception is thrown|
+|Compiler warning (level 1) C4595|'*type*': behavior change: destructor will no longer be implicitly called if an exception is thrown|  
+|Compiler warning (level 4) C4596|'*identifier*': illegal qualified name in member declaration|  
+|Compiler warning (error) C4597|undefined behavior: offsetof applied to a member of a virtual base|  
+|Compiler warning (level 1 and level 3) C4598|'#include "*header*"': header number *number* in the precompiled header does not match current compilation at that position|  
+|Compiler warning (level 3) C4599|'*flag* *path*': command line argument number *number* does not match precompiled header|  

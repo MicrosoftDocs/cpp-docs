@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComClassFactory2', 'ATLCOM/ATL::CComClassFactory2', 'ATLCOM/ATL::CComClassFactory2::CreateInstance', 'ATLCOM/ATL::CComClassFactory2::CreateInstanceLic', 'ATLCOM/ATL::CComClassFactory2::GetLicInfo', 'ATLCOM/ATL::CComClassFactory2::LockServer', 'ATLCOM/ATL::CComClassFactory2::RequestLicKey']

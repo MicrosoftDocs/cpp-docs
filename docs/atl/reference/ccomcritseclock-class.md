@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComCritSecLock', 'ATLBASE/ATL::CComCritSecLock', 'ATLBASE/ATL::CComCritSecLock::CComCritSecLock', 'ATLBASE/ATL::CComCritSecLock::Lock', 'ATLBASE/ATL::CComCritSecLock::Unlock']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCDesktopAlertWnd', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::Create', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationSpeed', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationType', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAutoCloseTime', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetCaptionHeight', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetDialogSize', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetLastPos', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetTransparency', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::HasSmallCaption', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnBeforeShow', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnClickLinkButton', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnCommand', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnDraw', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::ProcessCommand', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationSpeed', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationType', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAutoCloseTime', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetSmallCaption', 'AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetTransparency']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPrivateObjectSecurityDesc', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::ConvertToAutoInherit', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set']

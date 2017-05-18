@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::Create', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_duration', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_period']

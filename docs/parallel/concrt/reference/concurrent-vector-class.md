@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['concurrent_vector', 'CONCURRENT_VECTOR/concurrency::concurrent_vector', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::concurrent_vector', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::assign', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::at', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::back', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::begin', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::capacity', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::cbegin', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::cend', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::clear', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::crbegin', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::crend', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::empty', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::end', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::front', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::get_allocator', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::grow_by', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::grow_to_at_least', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::max_size', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::push_back', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::rbegin', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::rend', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::reserve', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::resize', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::shrink_to_fit', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::size', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::swap']

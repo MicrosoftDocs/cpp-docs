@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAutoPtr', 'ATLBASE/ATL::CAutoPtr', 'ATLBASE/ATL::CAutoPtr::CAutoPtr', 'ATLBASE/ATL::CAutoPtr::Attach', 'ATLBASE/ATL::CAutoPtr::Detach', 'ATLBASE/ATL::CAutoPtr::Free', 'ATLBASE/ATL::CAutoPtr::m_p']

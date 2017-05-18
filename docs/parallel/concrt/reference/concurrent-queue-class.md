@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['concurrent_queue', 'CONCURRENT_QUEUE/concurrency::concurrent_queue', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::concurrent_queue', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::clear', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::empty', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::get_allocator', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::push', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::try_pop', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_begin', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_end', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_size']

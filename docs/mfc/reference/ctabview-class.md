@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CTabView', 'AFXTABVIEW/CTabView', 'AFXTABVIEW/CTabView::AddView', 'AFXTABVIEW/CTabView::FindTab', 'AFXTABVIEW/CTabView::GetActiveView', 'AFXTABVIEW/CTabView::GetTabControl', 'AFXTABVIEW/CTabView::RemoveView', 'AFXTABVIEW/CTabView::SetActiveView', 'AFXTABVIEW/CTabView::IsScrollBar', 'AFXTABVIEW/CTabView::OnActivateView']

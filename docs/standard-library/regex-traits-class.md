@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['regex_traits', 'regex/std::regex_traits', 'regex/std::regex_traits::char_type', 'regex/std::regex_traits::size_type', 'regex/std::regex_traits::string_type', 'regex/std::regex_traits::locale_type', 'regex/std::regex_traits::char_class_type', 'regex/std::regex_traits::length', 'regex/std::regex_traits::translate', 'regex/std::regex_traits::translate_nocase', 'regex/std::regex_traits::transform', 'regex/std::regex_traits::transform_primary', 'regex/std::regex_traits::lookup_classname', 'regex/std::regex_traits::lookup_collatename', 'regex/std::regex_traits::isctype', 'regex/std::regex_traits::value', 'regex/std::regex_traits::imbue', 'regex/std::regex_traits::getloc']  

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCtrlView', 'AFXWIN/CCtrlView', 'AFXWIN/CCtrlView::CCtrlView', 'AFXWIN/CCtrlView::OnDraw', 'AFXWIN/CCtrlView::PreCreateWindow', 'AFXWIN/CCtrlView::m_dwDefaultStyle', 'AFXWIN/CCtrlView::m_strClass']

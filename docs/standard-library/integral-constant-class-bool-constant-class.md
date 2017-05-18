@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['integral_constant', 'type_traits/std::integral_constant', 'XTR1COMMON/std::integral_constant', 'bool_constant', 'type_traits/std::bool_constant', 'XTR1COMMON/std::bool_constant']  

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDataPathProperty', 'AFXCTL/CDataPathProperty', 'AFXCTL/CDataPathProperty::CDataPathProperty', 'AFXCTL/CDataPathProperty::GetControl', 'AFXCTL/CDataPathProperty::GetPath', 'AFXCTL/CDataPathProperty::Open', 'AFXCTL/CDataPathProperty::ResetData', 'AFXCTL/CDataPathProperty::SetControl', 'AFXCTL/CDataPathProperty::SetPath']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['sub_match', 'regex/std::sub_match', 'regex/std::sub_match::matched', 'regex/std::sub_match::compare', 'regex/std::sub_match::length', 'regex/std::sub_match::str', 'regex/std::sub_match::difference_type', 'regex/std::sub_match::iterator', 'regex/std::sub_match::value_type']  

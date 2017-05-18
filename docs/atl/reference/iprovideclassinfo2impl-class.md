@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IProvideClassInfo2Impl', 'ATLCOM/ATL::IProvideClassInfo2Impl', 'ATLCOM/ATL::IProvideClassInfo2Impl::IProvideClassInfo2Impl', 'ATLCOM/ATL::IProvideClassInfo2Impl::GetClassInfo', 'ATLCOM/ATL::IProvideClassInfo2Impl::GetGUID', 'ATLCOM/ATL::IProvideClassInfo2Impl::_tih']

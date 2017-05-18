@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CGlobalUtils', 'AFXGLOBALUTILS/CGlobalUtils', 'AFXGLOBALUTILS/CGlobalUtils::AdjustRectToWorkArea', 'AFXGLOBALUTILS/CGlobalUtils::CalcExpectedDockedRect', 'AFXGLOBALUTILS/CGlobalUtils::CanBeAttached', 'AFXGLOBALUTILS/CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd', 'AFXGLOBALUTILS/CGlobalUtils::CheckAlignment', 'AFXGLOBALUTILS/CGlobalUtils::CyFromString', 'AFXGLOBALUTILS/CGlobalUtils::DecimalFromString', 'AFXGLOBALUTILS/CGlobalUtils::FlipRect', 'AFXGLOBALUTILS/CGlobalUtils::ForceAdjustLayout', 'AFXGLOBALUTILS/CGlobalUtils::GetDockingManager', 'AFXGLOBALUTILS/CGlobalUtils::GetOppositeAlignment', 'AFXGLOBALUTILS/CGlobalUtils::GetPaneAndAlignFromPoint', 'AFXGLOBALUTILS/CGlobalUtils::GetWndIcon', 'AFXGLOBALUTILS/CGlobalUtils::SetNewParent', 'AFXGLOBALUTILS/CGlobalUtils::StringFromCy', 'AFXGLOBALUTILS/CGlobalUtils::StringFromDecimal']

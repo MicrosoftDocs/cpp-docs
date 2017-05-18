@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COlePropertiesDialog', 'AFXODLGS/COlePropertiesDialog', 'AFXODLGS/COlePropertiesDialog::COlePropertiesDialog', 'AFXODLGS/COlePropertiesDialog::DoModal', 'AFXODLGS/COlePropertiesDialog::OnApplyScale', 'AFXODLGS/COlePropertiesDialog::m_gp', 'AFXODLGS/COlePropertiesDialog::m_lp', 'AFXODLGS/COlePropertiesDialog::m_op', 'AFXODLGS/COlePropertiesDialog::m_psh', 'AFXODLGS/COlePropertiesDialog::m_vp']

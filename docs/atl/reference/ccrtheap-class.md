@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCRTHeap', 'ATLMEM/ATL::CCRTHeap', 'ATLMEM/ATL::CCRTHeap::Allocate', 'ATLMEM/ATL::CCRTHeap::Free', 'ATLMEM/ATL::CCRTHeap::GetSize', 'ATLMEM/ATL::CCRTHeap::Reallocate']

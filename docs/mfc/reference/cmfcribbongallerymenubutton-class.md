@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonGalleryMenuButton', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CopyFrom', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CreatePopupMenu', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::GetPalette', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::HasButton', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed']

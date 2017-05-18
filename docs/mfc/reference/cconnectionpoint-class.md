@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CConnectionPoint', 'AFXDISP/CConnectionPoint', 'AFXDISP/CConnectionPoint::CConnectionPoint', 'AFXDISP/CConnectionPoint::GetConnections', 'AFXDISP/CConnectionPoint::GetContainer', 'AFXDISP/CConnectionPoint::GetIID', 'AFXDISP/CConnectionPoint::GetMaxConnections', 'AFXDISP/CConnectionPoint::GetNextConnection', 'AFXDISP/CConnectionPoint::GetStartPosition', 'AFXDISP/CConnectionPoint::OnAdvise', 'AFXDISP/CConnectionPoint::QuerySinkInterface']

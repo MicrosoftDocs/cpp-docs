@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlTransactionManager', 'ATLTRANSACTIONMANAGER/ATL::CAtlTransactionManager', 'ATLTRANSACTIONMANAGER/ATL::CAtlTransactionManager', 'ATLTRANSACTIONMANAGER/ATL::Close', 'ATLTRANSACTIONMANAGER/ATL::Commit', 'ATLTRANSACTIONMANAGER/ATL::Create', 'ATLTRANSACTIONMANAGER/ATL::CreateFile', 'ATLTRANSACTIONMANAGER/ATL::DeleteFile', 'ATLTRANSACTIONMANAGER/ATL::FindFirstFile', 'ATLTRANSACTIONMANAGER/ATL::GetFileAttributes', 'ATLTRANSACTIONMANAGER/ATL::GetFileAttributesEx', 'ATLTRANSACTIONMANAGER/ATL::GetHandle', 'ATLTRANSACTIONMANAGER/ATL::IsFallback', 'ATLTRANSACTIONMANAGER/ATL::MoveFile', 'ATLTRANSACTIONMANAGER/ATL::RegCreateKeyEx', 'ATLTRANSACTIONMANAGER/ATL::RegDeleteKey', 'ATLTRANSACTIONMANAGER/ATL::RegOpenKeyEx', 'ATLTRANSACTIONMANAGER/ATL::Rollback', 'ATLTRANSACTIONMANAGER/ATL::SetFileAttributes', 'ATLTRANSACTIONMANAGER/ATL::m_bFallback', 'ATLTRANSACTIONMANAGER/ATL::m_hTransaction']

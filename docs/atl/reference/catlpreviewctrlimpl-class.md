@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlPreviewCtrlImpl', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::CAtlPreviewCtrlImpl', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Create', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Destroy', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Focus', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::OnPaint', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::Redraw', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetHost', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetPreviewVisuals', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::SetRect', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::DoPaint', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_plf', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrBack', 'ATLPREVIEWCTRLIMPL/ATL::CAtlPreviewCtrlImpl::m_clrText']

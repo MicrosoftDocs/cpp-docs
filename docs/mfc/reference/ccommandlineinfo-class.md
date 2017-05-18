@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCommandLineInfo', 'AFXWIN/CCommandLineInfo', 'AFXWIN/CCommandLineInfo::CCommandLineInfo', 'AFXWIN/CCommandLineInfo::ParseParam', 'AFXWIN/CCommandLineInfo::m_bRunAutomated', 'AFXWIN/CCommandLineInfo::m_bRunEmbedded', 'AFXWIN/CCommandLineInfo::m_bShowSplash', 'AFXWIN/CCommandLineInfo::m_nShellCommand', 'AFXWIN/CCommandLineInfo::m_strDriverName', 'AFXWIN/CCommandLineInfo::m_strFileName', 'AFXWIN/CCommandLineInfo::m_strPortName', 'AFXWIN/CCommandLineInfo::m_strPrinterName', 'AFXWIN/CCommandLineInfo::m_strRestartIdentifier']

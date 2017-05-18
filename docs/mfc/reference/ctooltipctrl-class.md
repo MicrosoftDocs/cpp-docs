@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CToolTipCtrl', 'AFXCMN/CToolTipCtrl', 'AFXCMN/CToolTipCtrl::CToolTipCtrl', 'AFXCMN/CToolTipCtrl::Activate', 'AFXCMN/CToolTipCtrl::AddTool', 'AFXCMN/CToolTipCtrl::AdjustRect', 'AFXCMN/CToolTipCtrl::Create', 'AFXCMN/CToolTipCtrl::CreateEx', 'AFXCMN/CToolTipCtrl::DelTool', 'AFXCMN/CToolTipCtrl::GetBubbleSize', 'AFXCMN/CToolTipCtrl::GetCurrentTool', 'AFXCMN/CToolTipCtrl::GetDelayTime', 'AFXCMN/CToolTipCtrl::GetMargin', 'AFXCMN/CToolTipCtrl::GetMaxTipWidth', 'AFXCMN/CToolTipCtrl::GetText', 'AFXCMN/CToolTipCtrl::GetTipBkColor', 'AFXCMN/CToolTipCtrl::GetTipTextColor', 'AFXCMN/CToolTipCtrl::GetTitle', 'AFXCMN/CToolTipCtrl::GetToolCount', 'AFXCMN/CToolTipCtrl::GetToolInfo', 'AFXCMN/CToolTipCtrl::HitTest', 'AFXCMN/CToolTipCtrl::Pop', 'AFXCMN/CToolTipCtrl::Popup', 'AFXCMN/CToolTipCtrl::RelayEvent', 'AFXCMN/CToolTipCtrl::SetDelayTime', 'AFXCMN/CToolTipCtrl::SetMargin', 'AFXCMN/CToolTipCtrl::SetMaxTipWidth', 'AFXCMN/CToolTipCtrl::SetTipBkColor', 'AFXCMN/CToolTipCtrl::SetTipTextColor', 'AFXCMN/CToolTipCtrl::SetTitle', 'AFXCMN/CToolTipCtrl::SetToolInfo', 'AFXCMN/CToolTipCtrl::SetToolRect', 'AFXCMN/CToolTipCtrl::SetWindowTheme', 'AFXCMN/CToolTipCtrl::Update', 'AFXCMN/CToolTipCtrl::UpdateTipText']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPropExchange', 'AFXCTL/CPropExchange', 'AFXCTL/CPropExchange::ExchangeBlobProp', 'AFXCTL/CPropExchange::ExchangeFontProp', 'AFXCTL/CPropExchange::ExchangePersistentProp', 'AFXCTL/CPropExchange::ExchangeProp', 'AFXCTL/CPropExchange::ExchangeVersion', 'AFXCTL/CPropExchange::GetVersion', 'AFXCTL/CPropExchange::IsAsynchronous', 'AFXCTL/CPropExchange::IsLoading']

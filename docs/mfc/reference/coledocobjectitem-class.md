@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDocObjectItem', 'AFXOLE/COleDocObjectItem', 'AFXOLE/COleDocObjectItem::COleDocObjectItem', 'AFXOLE/COleDocObjectItem::DoDefaultPrinting', 'AFXOLE/COleDocObjectItem::ExecCommand', 'AFXOLE/COleDocObjectItem::GetActiveView', 'AFXOLE/COleDocObjectItem::GetPageCount', 'AFXOLE/COleDocObjectItem::OnPreparePrinting', 'AFXOLE/COleDocObjectItem::OnPrint', 'AFXOLE/COleDocObjectItem::QueryCommand', 'AFXOLE/COleDocObjectItem::Release']
