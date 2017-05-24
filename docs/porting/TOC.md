@@ -11,6 +11,7 @@
 ## [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)
 ### [Upgrade your code to the Universal CRT](upgrade-your-code-to-the-universal-crt.md)
 ### [Modifying WINVER and _WIN32_WINNT](modifying-winver-and-win32-winnt.md)
+### [Fix your dependencies on library internals](fix-your-dependencies-on-library-internals.md)
 ### [Floating-point migration issues](floating-point-migration-issues.md)
 ### [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)
 ## [Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md)
