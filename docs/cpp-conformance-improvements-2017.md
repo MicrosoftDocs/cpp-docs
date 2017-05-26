@@ -586,5 +586,104 @@ To remove the warnings, simply comment-out or remove the empty declarations.  In
 The warning is excluded under /Wv:18 and is on by default under warning level W2.
 
 
+### std::is_convertible for array types
+Previous versions of the compiler gave incorrect results for [std::is_convertible](standard-library/is-convertible-class.md) for array types. This required library writers to special-case the Visual C++ compiler when using the `std::is_convertable<…>` type trait. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 Update Version 15.3:
+
+```cpp
+#include <type_traits>
+ 
+using Array = char[1];
+ 
+static_assert(std::is_convertible<Array, Array>::value);
+static_assert((std::is_convertible<const Array, const Array>::value), "");
+static_assert((std::is_convertible<Array&, Array>::value), "");
+static_assert((std::is_convertible<Array, Array&>::value), "");
+```
+
+**std::is_convertible<From, To>** is calculated by checking to see if an imaginary function definition is well formed:
+```cpp 
+   To test() { return std::declval<From>(); }
+``` 
+
+### Private destructors and std::is_constructible
+Previous versions of the compiler ignore whether a destructor was private when decided the result of [std::is_constructible](standard-library/is-constructible-class.md). It now considers them. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 Update Version 15.3:
+
+```cpp
+#include <type_traits>
+ 
+class PrivateDtor {
+   PrivateDtor(int) { }
+private:
+   ~PrivateDtor() { }
+};
+ 
+// This assertion used to succeed. It now correctly fails.
+static_assert(std::is_constructible<PrivateDtor, int>::value);
+```  
+
+Private destructors cause a type to be non-constructible. **std::is_constructible<T, Args…>** is calculated as if the following declaration were written:
+```cpp 
+   T obj(std::declval<Args>()…)
+``` 
+This call implies a destructor call.
+
+### C2668: Ambiguous overload resolution
+Previous versions of the compiler sometimes failed to detect ambiguity when it found multiple candidates via both using declarations and argument dependent lookups. This can lead to wrong overload being chosen and unexpected runtime behavior. In the following example, Visual Studio 2017 Update Version 15.3 correctly raises C2668 'f': ambiguous call to overloaded function:
+
+```cpp
+namespace N {
+   template<class T>
+   void f(T&, T&);
+ 
+   template<class T>
+   void f();
+}
+ 
+template<class T>
+void f(T&, T&);
+ 
+struct S {};
+void f()
+{
+   using N::f; 
+ 
+   S s1, s2;
+   f(s1, s2);
+}
+```
+To fix the code, remove the using N::f statement if you intended to call ::f().
+
+### C2660: local function declarations and argument dependent lookup
+Local function declarations hide the function declaration in the enclosing scope and disable argument dependent lookup.
+However, previous versions of the Visual C++ compiler performed argument dependent lookup in this case, potentially leading to the wrong overload being chosen and unexpected runtime behavior. Typically, the error is due to an incorrect signature of the local function declaration. In the following example, Visual Studio 2017 Update Version 15.3 correctly raises C2660 'f': function does not take 2 arguments:
+
+```cpp
+struct S {}; 
+void f(S, int);
+ 
+void g()
+{
+   void f(S); // or void f(S, int);
+   S s;
+   f(s, 0);
+}
+```
+
+To fix the problem, either change the **f(S)** signature or remove it.
+
+### C5038: order of initialization in initializer lists
+Class members are initialized in the order they are declared, not the order they appear in initializer lists. Previous versions of the compiler did not warn when the order of the initializer list differed from the order of declaration. This could lead to undefined runtime behavior if the intialization of one member depended on another member in the list already being initialized. In the following example, Visual Studio 2017 Update Version 15.3 raises warning C5038 warning C5038: data member 'A::y' will be initialized after data member 'A::x':
+
+```cpp
+struct A
+{
+    A(int a) : y(a), x(y) {} // Initialized in reverse, y reused
+    int x;
+    int y;
+};
+
+```
+To fix the problem arrange the intializer list to have the same order as the declarations. A similar warning is raised when one or both initializers refer to base class members.
+
 ## See Also  
 [Visual C++ Language Conformance](visual-cpp-language-conformance.md)  
