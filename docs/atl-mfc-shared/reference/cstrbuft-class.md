@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStrBufT', 'ATLSIMPSTR/ATL::CStrBufT', 'ATLSIMPSTR/ATL::CStrBufT::CStrBufT', 'ATLSIMPSTR/ATL::CStrBufT::SetLength', 'ATLSIMPSTR/ATL::CStrBufT::AUTO_LENGTH', 'ATLSIMPSTR/ATL::CStrBufT::SET_LENGTH']

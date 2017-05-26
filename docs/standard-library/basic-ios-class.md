@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ios/std::basic_ios', 'basic_ios', 'ios/std::basic_ios::char_type', 'ios/std::basic_ios::int_type', 'ios/std::basic_ios::off_type', 'ios/std::basic_ios::pos_type', 'ios/std::basic_ios::traits_type', 'ios/std::basic_ios::bad', 'ios/std::basic_ios::clear', 'ios/std::basic_ios::copyfmt', 'ios/std::basic_ios::eof', 'ios/std::basic_ios::exceptions', 'ios/std::basic_ios::fail', 'ios/std::basic_ios::fill', 'ios/std::basic_ios::good', 'ios/std::basic_ios::imbue', 'ios/std::basic_ios::init', 'ios/std::basic_ios::move', 'ios/std::basic_ios::narrow', 'ios/std::basic_ios::rdbuf', 'ios/std::basic_ios::rdstate', 'ios/std::basic_ios::set_rdbuf', 'ios/std::basic_ios::setstate', 'ios/std::basic_ios::swap', 'ios/std::basic_ios::tie', 'ios/std::basic_ios::widen', 'ios/std::basic_ios::explicit operator bool']  
@@ -633,7 +633,7 @@ explicit operator bool() const;
 ```  
   
 ### Remarks  
- The operator returns a value convertible to `false` only if `fail``()`. The return type is convertible only to `bool`, not to `void *` or other known scalar type.  
+ The operator returns a value convertible to `false` only if `fail()`. The return type is convertible only to `bool`, not to `void *` or other known scalar type.  
   
 ##  <a name="pos_type"></a>  basic_ios::pos_type  
  A synonym for **traits_type::pos_type**.  

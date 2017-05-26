@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonSlider', 'AFXRIBBONSLIDER/CMFCRibbonSlider', 'AFXRIBBONSLIDER/CMFCRibbonSlider::CMFCRibbonSlider', 'AFXRIBBONSLIDER/CMFCRibbonSlider::GetPos', 'AFXRIBBONSLIDER/CMFCRibbonSlider::GetRangeMax', 'AFXRIBBONSLIDER/CMFCRibbonSlider::GetRangeMin', 'AFXRIBBONSLIDER/CMFCRibbonSlider::GetRegularSize', 'AFXRIBBONSLIDER/CMFCRibbonSlider::GetZoomIncrement', 'AFXRIBBONSLIDER/CMFCRibbonSlider::HasZoomButtons', 'AFXRIBBONSLIDER/CMFCRibbonSlider::OnDraw', 'AFXRIBBONSLIDER/CMFCRibbonSlider::SetPos', 'AFXRIBBONSLIDER/CMFCRibbonSlider::SetRange', 'AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomButtons', 'AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomIncrement']

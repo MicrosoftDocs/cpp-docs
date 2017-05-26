@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['set', 'set/std::set', 'set/std::set::allocator_type', 'set/std::set::const_iterator', 'set/std::set::const_pointer', 'set/std::set::const_reference', 'set/std::set::const_reverse_iterator', 'set/std::set::difference_type', 'set/std::set::iterator', 'set/std::set::key_compare', 'set/std::set::key_type', 'set/std::set::pointer', 'set/std::set::reference', 'set/std::set::reverse_iterator', 'set/std::set::size_type', 'set/std::set::value_compare', 'set/std::set::value_type', 'set/std::set::begin', 'set/std::set::cbegin', 'set/std::set::cend', 'set/std::set::clear', 'set/std::set::count', 'set/std::set::crbegin', 'set/std::set::crend', 'set/std::set::emplace', 'set/std::set::emplace_hint', 'set/std::set::empty', 'set/std::set::end', 'set/std::set::equal_range', 'set/std::set::erase', 'set/std::set::find', 'set/std::set::get_allocator', 'set/std::set::insert', 'set/std::set::key_comp', 'set/std::set::lower_bound', 'set/std::set::max_size', 'set/std::set::rbegin', 'set/std::set::rend', 'set/std::set::size', 'set/std::set::swap', 'set/std::set::upper_bound', 'set/std::set::value_comp']  
@@ -1214,7 +1214,7 @@ IList);
   
  During the insertion of just one element, if an exception is thrown, the container's state is not modified. During the insertion of multiple elements, if an exception is thrown, the container is left in an unspecified but valid state.  
   
- To access the iterator component of a `pair``pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the `bool` component, use `pr.second`. For an example, see the sample code later in this article.  
+ To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use `*pr.first`, giving you an element. To access the `bool` component, use `pr.second`. For an example, see the sample code later in this article.  
   
  The [value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and, for set, `set<V>::value_type` is type `const V`.  
   

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CScrollView', 'AFXWIN/CScrollView', 'AFXWIN/CScrollView::CScrollView', 'AFXWIN/CScrollView::CheckScrollBars', 'AFXWIN/CScrollView::FillOutsideRect', 'AFXWIN/CScrollView::GetDeviceScrollPosition', 'AFXWIN/CScrollView::GetDeviceScrollSizes', 'AFXWIN/CScrollView::GetScrollPosition', 'AFXWIN/CScrollView::GetTotalSize', 'AFXWIN/CScrollView::ResizeParentToFit', 'AFXWIN/CScrollView::ScrollToPosition', 'AFXWIN/CScrollView::SetScaleToFitSize', 'AFXWIN/CScrollView::SetScrollSizes']

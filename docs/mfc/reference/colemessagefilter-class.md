@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleMessageFilter', 'AFXOLE/COleMessageFilter', 'AFXOLE/COleMessageFilter::COleMessageFilter', 'AFXOLE/COleMessageFilter::BeginBusyState', 'AFXOLE/COleMessageFilter::EnableBusyDialog', 'AFXOLE/COleMessageFilter::EnableNotRespondingDialog', 'AFXOLE/COleMessageFilter::EndBusyState', 'AFXOLE/COleMessageFilter::OnMessagePending', 'AFXOLE/COleMessageFilter::Register', 'AFXOLE/COleMessageFilter::Revoke', 'AFXOLE/COleMessageFilter::SetBusyReply', 'AFXOLE/COleMessageFilter::SetMessagePendingDelay', 'AFXOLE/COleMessageFilter::SetRetryReply']

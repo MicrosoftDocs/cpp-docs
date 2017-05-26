@@ -118,7 +118,7 @@ allocate_shared(Allocator Alloc, Types&&... Args);
  The zero or more arguments that become the objects.  
   
 ### Remarks  
- The function creates the object `shared_ptr``<Type>`, a pointer to `Type(``Args``...)` as allocated and constructed by `Alloc`.  
+ The function creates the object `shared_ptr<Type>`, a pointer to `Type(Args...)` as allocated and constructed by `Alloc`.  
   
 ##  <a name="const_pointer_cast"></a>  const_pointer_cast  
  Const cast to shared_ptr.  
@@ -607,7 +607,7 @@ struct owner_less<weak_ptr<Type>>
  A shared or weak pointer.  
   
 ### Remarks  
- The template classes define all their member operators as returning `left``.owner_before(``right``)`.  
+ The template classes define all their member operators as returning `left.owner_before(right)`.  
   
 ##  <a name="return_temporary_buffer"></a>  return_temporary_buffer  
  Deallocates the temporary memory that was allocated using the `get_temporary_buffer` template function.  

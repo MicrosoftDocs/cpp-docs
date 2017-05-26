@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
@@ -89,7 +89,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
  When a reference type inherits from another reference type, virtual functions in the base class must explicitly be overridden (with [override](../windows/override-cpp-component-extensions.md)) or hidden (with [new (new slot in vtable)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)). The derived class functions must also be explicitly marked as `virtual`.  
   
- To detect at compile time whether a type is a `ref class` or `ref struct`, or a `value class` or `value struct`, use `__is_ref_class (``type``)`, `__is_value_class (``type``)`, or `__is_simple_value_class (``type``)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ To detect at compile time whether a type is a `ref class` or `ref struct`, or a `value class` or `value struct`, use `__is_ref_class (type)`, `__is_value_class (type)`, or `__is_simple_value_class (type)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
  For more information on classes and structs, see  
   

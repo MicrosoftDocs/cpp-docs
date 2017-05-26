@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['binomial_distribution', 'random/std::binomial_distribution', 'random/std::binomial_distribution::reset', 'random/std::binomial_distribution::p', 'random/std::binomial_distribution::t', 'random/std::binomial_distribution::param', 'random/std::binomial_distribution::min', 'random/std::binomial_distribution::max', 'random/std::binomial_distribution::operator()', 'random/std::binomial_distribution::param_type', 'random/std::binomial_distribution::param_type::p', 'random/std::binomial_distribution::param_type::t', 'random/std::binomial_distribution::param_type::operator==', 'random/std::binomial_distribution::param_type::operator!=', 'random/std::binomial_distribution::param_type']  

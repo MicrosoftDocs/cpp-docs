@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -239,7 +239,7 @@ template <class Mutex>
 void swap(shared_lock<Mutex>& x, shared_lock<Mutex>& y) noexcept;
 ```  
   
- Exchanges the content of two `shared_lock` objects. Effectively the same as `x``.swap(``y``)`.  
+ Exchanges the content of two `shared_lock` objects. Effectively the same as `x.swap(y)`.  
   
 ## Requirements  
  **Header:** \<shared_mutex>  

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['filesystem/std::experimental::filesystem::directory_entry', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &', 'FILESYSTEM/std::experimental::filesystem::directory_entry::directory_entry', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator=', 'FILESYSTEM/std::experimental::filesystem::directory_entry::assign', 'FILESYSTEM/std::experimental::filesystem::directory_entry::replace_filename', 'FILESYSTEM/std::experimental::filesystem::directory_entry::path', 'FILESYSTEM/std::experimental::filesystem::directory_entry::status', 'FILESYSTEM/std::experimental::filesystem::directory_entry::symlink_status', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator<', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator==', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator!=', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator<=', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator>', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator>=']  

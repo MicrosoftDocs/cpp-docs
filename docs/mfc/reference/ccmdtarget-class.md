@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCmdTarget', 'AFXWIN/CCmdTarget', 'AFXWIN/CCmdTarget::CCmdTarget', 'AFXWIN/CCmdTarget::BeginWaitCursor', 'AFXWIN/CCmdTarget::DoOleVerb', 'AFXWIN/CCmdTarget::EnableAutomation', 'AFXWIN/CCmdTarget::EnableConnections', 'AFXWIN/CCmdTarget::EnableTypeLib', 'AFXWIN/CCmdTarget::EndWaitCursor', 'AFXWIN/CCmdTarget::EnumOleVerbs', 'AFXWIN/CCmdTarget::FromIDispatch', 'AFXWIN/CCmdTarget::GetDispatchIID', 'AFXWIN/CCmdTarget::GetIDispatch', 'AFXWIN/CCmdTarget::GetTypeInfoCount', 'AFXWIN/CCmdTarget::GetTypeInfoOfGuid', 'AFXWIN/CCmdTarget::GetTypeLib', 'AFXWIN/CCmdTarget::GetTypeLibCache', 'AFXWIN/CCmdTarget::IsInvokeAllowed', 'AFXWIN/CCmdTarget::IsResultExpected', 'AFXWIN/CCmdTarget::OnCmdMsg', 'AFXWIN/CCmdTarget::OnFinalRelease', 'AFXWIN/CCmdTarget::RestoreWaitCursor']
@@ -179,7 +179,7 @@ void EnableTypeLib();
 ```  
   
 ### Remarks  
- Call this member function in the constructor of your `CCmdTarget`-derived object if it provides type information. For more information, see Knowledge Base article Q185720, "HOWTO: Provide Type Information From an MFC Automation Server." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
+ Call this member function in the constructor of your `CCmdTarget`-derived object if it provides type information. For more information, see Knowledge Base article Q185720, "HOWTO: Provide Type Information From an MFC Automation Server." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).  
   
 ##  <a name="endwaitcursor"></a>  CCmdTarget::EndWaitCursor  
  Call this function after you have called the `BeginWaitCursor` member function to return from the hourglass cursor to the previous cursor.  
@@ -245,7 +245,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
 ### Remarks  
  Derived classes should override this member function (if not overridden, `GetDispatchIID` returns FALSE). See [COleControl](../../mfc/reference/colecontrol-class.md).  
   
- For more information, see Knowledge Base article Q185720, "HOWTO: Provide Type Information From an MFC Automation Server." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
+ For more information, see Knowledge Base article Q185720, "HOWTO: Provide Type Information From an MFC Automation Server." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).  
   
 ##  <a name="getidispatch"></a>  CCmdTarget::GetIDispatch  
  Call this member function to retrieve the `IDispatch` pointer from an automation method that either returns an `IDispatch` pointer or takes an `IDispatch` pointer by reference.  

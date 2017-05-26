@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
@@ -42,18 +42,15 @@ translation.priority.ht:
 >  The ISO C++11 Standard language has the [final](../cpp/final-specifier.md) keyword, which is supported in Visual Studio. Use `final` on standard classes, and `sealed` on ref classes.  
   
 ## All Runtimes  
- **Syntax**  
+  
+## Syntax
   
 ```  
-  
-      ref class  
-      identifier  
-      sealed {...};  
-virtualreturn-typeidentifier() sealed {...};  
-  
+ref class identifier sealed {...};  
+virtual return-type identifier() sealed {...};  
 ```  
   
- **Parameters**  
+### Parameters  
   
  *identifier*  
  The name of the function or class.  
@@ -61,13 +58,13 @@ virtualreturn-typeidentifier() sealed {...};
  *return-type*  
  The type that's returned by a function.  
   
- **Remarks**  
+## Remarks  
   
  In the first syntax example, a class is sealed. In the second example, a virtual function is sealed.  
   
  The `sealed` keyword is valid for native targets, and also for the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and the common language runtime (CLR). For more information, see [Override Specifiers and Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
   
- You can detect at compile time whether a type is sealed by using the `__is_sealed (``type``)` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
+ You can detect at compile time whether a type is sealed by using the `__is_sealed(type)` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
  `sealed` is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
@@ -128,8 +125,6 @@ int main() {
    MyI2 -> f();  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 X::f override of I1::f  

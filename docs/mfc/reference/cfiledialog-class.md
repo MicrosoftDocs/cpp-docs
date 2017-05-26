@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFileDialog', 'AFXDLGS/CFileDialog', 'AFXDLGS/CFileDialog::CFileDialog', 'AFXDLGS/CFileDialog::AddCheckButton', 'AFXDLGS/CFileDialog::AddComboBox', 'AFXDLGS/CFileDialog::AddControlItem', 'AFXDLGS/CFileDialog::AddEditBox', 'AFXDLGS/CFileDialog::AddMenu', 'AFXDLGS/CFileDialog::AddPlace', 'AFXDLGS/CFileDialog::AddPushButton', 'AFXDLGS/CFileDialog::AddRadioButtonList', 'AFXDLGS/CFileDialog::AddSeparator', 'AFXDLGS/CFileDialog::AddText', 'AFXDLGS/CFileDialog::ApplyOFNToShellDialog', 'AFXDLGS/CFileDialog::DoModal', 'AFXDLGS/CFileDialog::EnableOpenDropDown', 'AFXDLGS/CFileDialog::EndVisualGroup', 'AFXDLGS/CFileDialog::GetCheckButtonState', 'AFXDLGS/CFileDialog::GetControlItemState', 'AFXDLGS/CFileDialog::GetControlState', 'AFXDLGS/CFileDialog::GetEditBoxText', 'AFXDLGS/CFileDialog::GetFileExt', 'AFXDLGS/CFileDialog::GetFileName', 'AFXDLGS/CFileDialog::GetFileTitle', 'AFXDLGS/CFileDialog::GetFolderPath', 'AFXDLGS/CFileDialog::GetIFileDialogCustomize', 'AFXDLGS/CFileDialog::GetIFileOpenDialog', 'AFXDLGS/CFileDialog::GetIFileSaveDialog', 'AFXDLGS/CFileDialog::GetNextPathName', 'AFXDLGS/CFileDialog::GetOFN', 'AFXDLGS/CFileDialog::GetPathName', 'AFXDLGS/CFileDialog::GetReadOnlyPref', 'AFXDLGS/CFileDialog::GetResult', 'AFXDLGS/CFileDialog::GetResults', 'AFXDLGS/CFileDialog::GetSelectedControlItem', 'AFXDLGS/CFileDialog::GetStartPosition', 'AFXDLGS/CFileDialog::HideControl', 'AFXDLGS/CFileDialog::IsPickFoldersMode', 'AFXDLGS/CFileDialog::MakeProminent', 'AFXDLGS/CFileDialog::RemoveControlItem', 'AFXDLGS/CFileDialog::SetCheckButtonState', 'AFXDLGS/CFileDialog::SetControlItemState', 'AFXDLGS/CFileDialog::SetControlItemText', 'AFXDLGS/CFileDialog::SetControlLabel', 'AFXDLGS/CFileDialog::SetControlState', 'AFXDLGS/CFileDialog::SetControlText', 'AFXDLGS/CFileDialog::SetDefExt', 'AFXDLGS/CFileDialog::SetEditBoxText', 'AFXDLGS/CFileDialog::SetProperties', 'AFXDLGS/CFileDialog::SetSelectedControlItem', 'AFXDLGS/CFileDialog::SetTemplate', 'AFXDLGS/CFileDialog::StartVisualGroup', 'AFXDLGS/CFileDialog::UpdateOFNFromShellDialog', 'AFXDLGS/CFileDialog::OnButtonClicked', 'AFXDLGS/CFileDialog::OnCheckButtonToggled', 'AFXDLGS/CFileDialog::OnControlActivating', 'AFXDLGS/CFileDialog::OnFileNameChange', 'AFXDLGS/CFileDialog::OnFileNameOK', 'AFXDLGS/CFileDialog::OnFolderChange', 'AFXDLGS/CFileDialog::OnInitDone', 'AFXDLGS/CFileDialog::OnItemSelected', 'AFXDLGS/CFileDialog::OnLBSelChangedNotify', 'AFXDLGS/CFileDialog::OnShareViolation', 'AFXDLGS/CFileDialog::OnTypeChange', 'AFXDLGS/CFileDialog::m_ofn']
@@ -733,7 +733,8 @@ CString GetNextPathName(POSITION& pos) const;
 ```  
 const OPENFILENAME& GetOFN() const;  
   
-OPENFILENAME& GetOFN();```  
+OPENFILENAME& GetOFN();
+```  
   
 ### Return Value  
  An [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure.  
@@ -960,8 +961,8 @@ virtual void OnControlActivating(DWORD dwIDCtl);
   
 ### Remarks  
   
-##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNameChange  
- Override this method if you want to handle the `WM_NOTIFY``CDN_SELCHANGE` message.  
+##  <a name="onfilenamechange"></a>  CFileDialog::OnFileNY` `Change  
+ Override this method if you want to handle the `WM_NOTIFY` `CDN_SELCHANGE` message.  
   
 ```  
 virtual void OnFileNameChange();
@@ -1000,7 +1001,7 @@ virtual void OnFolderChange();
  Notification is sent only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_FOLDERCHANGE](http://msdn.microsoft.com/library/windows/desktop/ms646859). For information about the OFN_EXPLORER style, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure and [Open and Save As Dialog Boxes](http://msdn.microsoft.com/library/windows/desktop/ms646960).  
   
 ##  <a name="oninitdone"></a>  CFileDialog::OnInitDone  
- Override this function to handle the `WM_NOTIFY``CDN_INITDONE` message.  
+ Override this function to handle the `WM_NOTIFY` `CDN_INITDONE` message.  
   
 ```  
 virtual void OnInitDone();

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -82,6 +82,6 @@ You can use the Console Application template to create a console app project tha
 4.  Choose the **OK** button.  
   
 ## See Also  
- [NOTINBUILD How to: Create CLR Console Applications](http://msdn.microsoft.com/en-us/b8af4197-e65f-4b17-b18e-b9e92965d026)   
  [CLR Projects](../ide/files-created-for-clr-projects.md)   
- [NIB:Item Management in Projects](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)
+
+

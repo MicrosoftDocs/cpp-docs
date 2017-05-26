@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['transformer', 'AGENTS/concurrency::transformer', 'AGENTS/concurrency::transformer::transformer', 'AGENTS/concurrency::transformer::accept_message', 'AGENTS/concurrency::transformer::consume_message', 'AGENTS/concurrency::transformer::link_target_notification', 'AGENTS/concurrency::transformer::propagate_message', 'AGENTS/concurrency::transformer::propagate_to_any_targets', 'AGENTS/concurrency::transformer::release_message', 'AGENTS/concurrency::transformer::reserve_message', 'AGENTS/concurrency::transformer::resume_propagation', 'AGENTS/concurrency::transformer::send_message', 'AGENTS/concurrency::transformer::supports_anonymous_source']

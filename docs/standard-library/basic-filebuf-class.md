@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['fstream/std::basic_filebuf', 'basic_filebuf', 'fstream/std::basic_filebuf::char_type', 'fstream/std::basic_filebuf::int_type', 'fstream/std::basic_filebuf::off_type', 'fstream/std::basic_filebuf::pos_type', 'fstream/std::basic_filebuf::traits_type', 'fstream/std::basic_filebuf::close', 'fstream/std::basic_filebuf::is_open', 'fstream/std::basic_filebuf::open', 'fstream/std::basic_filebuf::overflow', 'fstream/std::basic_filebuf::pbackfail', 'fstream/std::basic_filebuf::seekoff', 'fstream/std::basic_filebuf::seekpos', 'fstream/std::basic_filebuf::setbuf', 'fstream/std::basic_filebuf::Swap', 'fstream/std::basic_filebuf::sync', 'fstream/std::basic_filebuf::uflow', 'fstream/std::basic_filebuf::underflow']  
@@ -527,7 +527,7 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
   
  For a file opened for both reading and writing, both the input and output streams are positioned in tandem. To switch between inserting and extracting, you must call either [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff) or [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos). Calls to `pubseekoff` (and hence to `seekoff`) have various limitations for text streams, binary streams, and wide streams.  
   
- For a wide stream, if any insertions have occurred since the stream was opened, or since the last call to `streampos`, the function calls [overflow](#overflow). It also inserts any sequence needed to restore the initial conversion state, by using the file conversion facet **fac** to call **fac**`.``unshift` as needed. Each element **byte** of type `char` thus produced is written to the associated stream designated by the file pointer **fp** as if by successive calls of the form `fputc`( **byte**, **fp**). If the call to **fac.unshift** or any write fails, the function does not succeed.  
+ For a wide stream, if any insertions have occurred since the stream was opened, or since the last call to `streampos`, the function calls [overflow](#overflow). It also inserts any sequence needed to restore the initial conversion state, by using the file conversion facet **fac** to call **fac**`.unshift` as needed. Each element **byte** of type `char` thus produced is written to the associated stream designated by the file pointer **fp** as if by successive calls of the form `fputc`( **byte**, **fp**). If the call to **fac.unshift** or any write fails, the function does not succeed.  
   
 ##  <a name="setbuf"></a>  basic_filebuf::setbuf  
  Performs an operation particular to each derived stream buffer.  

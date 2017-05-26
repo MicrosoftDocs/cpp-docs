@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -53,7 +53,7 @@ template<typename Fun>
  The functor to wrap.  
   
 ## Remarks  
- The template function returns [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)`<``Fun``>(functor)`. You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.  
+ The template function returns [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)`<Fun>(functor)`. You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.  
   
 ## Example  
   

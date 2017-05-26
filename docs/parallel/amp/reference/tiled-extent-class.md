@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['tiled_extent', 'AMP/tiled_extent', 'AMP/Concurrency::tiled_extent::tiled_extent', 'AMP/Concurrency::tiled_extent::get_tile_extent', 'AMP/Concurrency::tiled_extent::pad', 'AMP/Concurrency::tiled_extent::truncate', 'AMP/Concurrency::tiled_extent::tile_dim0', 'AMP/Concurrency::tiled_extent::tile_dim1', 'AMP/Concurrency::tiled_extent::tile_dim2', 'AMP/Concurrency::tiled_extent::tile_extent']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleControlContainer', 'AFXOCC/COleControlContainer', 'AFXOCC/COleControlContainer::COleControlContainer', 'AFXOCC/COleControlContainer::AttachControlSite', 'AFXOCC/COleControlContainer::BroadcastAmbientPropertyChange', 'AFXOCC/COleControlContainer::CheckDlgButton', 'AFXOCC/COleControlContainer::CheckRadioButton', 'AFXOCC/COleControlContainer::CreateControl', 'AFXOCC/COleControlContainer::CreateOleFont', 'AFXOCC/COleControlContainer::FindItem', 'AFXOCC/COleControlContainer::FreezeAllEvents', 'AFXOCC/COleControlContainer::GetAmbientProp', 'AFXOCC/COleControlContainer::GetDlgItem', 'AFXOCC/COleControlContainer::GetDlgItemInt', 'AFXOCC/COleControlContainer::GetDlgItemText', 'AFXOCC/COleControlContainer::HandleSetFocus', 'AFXOCC/COleControlContainer::HandleWindowlessMessage', 'AFXOCC/COleControlContainer::IsDlgButtonChecked', 'AFXOCC/COleControlContainer::OnPaint', 'AFXOCC/COleControlContainer::OnUIActivate', 'AFXOCC/COleControlContainer::OnUIDeactivate', 'AFXOCC/COleControlContainer::ScrollChildren', 'AFXOCC/COleControlContainer::SendDlgItemMessage', 'AFXOCC/COleControlContainer::SetDlgItemInt', 'AFXOCC/COleControlContainer::SetDlgItemText', 'AFXOCC/COleControlContainer::m_crBack', 'AFXOCC/COleControlContainer::m_crFore', 'AFXOCC/COleControlContainer::m_listSitesOrWnds', 'AFXOCC/COleControlContainer::m_nWindowlessControls', 'AFXOCC/COleControlContainer::m_pOleFont', 'AFXOCC/COleControlContainer::m_pSiteCapture', 'AFXOCC/COleControlContainer::m_pSiteFocus', 'AFXOCC/COleControlContainer::m_pSiteUIActive', 'AFXOCC/COleControlContainer::m_pWnd', 'AFXOCC/COleControlContainer::m_siteMap']

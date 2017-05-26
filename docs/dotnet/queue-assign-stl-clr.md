@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -48,7 +48,7 @@ void assign(queue<Value, Container>% right);
  Container adapter to insert.  
   
 ## Remarks  
- The member function assigns `right``.get_container()` to the underlying container. You use it to change the entire contents of the queue.  
+ The member function assigns `right.get_container()` to the underlying container. You use it to change the entire contents of the queue.  
   
 ## Example  
   

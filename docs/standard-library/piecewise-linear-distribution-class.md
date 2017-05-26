@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['piecewise_linear_distribution', 'random/std::piecewise_linear_distribution', 'random/std::piecewise_linear_distribution::reset', 'random/std::piecewise_linear_distribution::intervals', 'random/std::piecewise_linear_distribution::densities', 'random/std::piecewise_linear_distribution::param', 'random/std::piecewise_linear_distribution::min', 'random/std::piecewise_linear_distribution::max', 'random/std::piecewise_linear_distribution::operator()', 'random/std::piecewise_linear_distribution::param_type', 'random/std::piecewise_linear_distribution::param_type::intervals', 'random/std::piecewise_linear_distribution::param_type::densities', 'random/std::piecewise_linear_distribution::param_type::operator==', 'random/std::piecewise_linear_distribution::param_type::operator!=', 'random/std::piecewise_linear_distribution::param_type']  

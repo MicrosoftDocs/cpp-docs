@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 apiname: 
@@ -142,7 +142,7 @@ int swprintf_s(
   
  One main difference between `sprintf_s` and `sprintf` is that `sprintf_s` checks the format string for valid formatting characters, whereas `sprintf` only checks if the format string or buffer are `NULL` pointers. If either check fails, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets `errno` to `EINVAL`.  
   
- The other main difference between `sprintf_s` and `sprintf` is that `sprintf_s` takes a length parameter specifying the size of the output buffer in characters. If the buffer is too small for the formatted text, including the terminating null, then the buffer is set to an empty string by placing a null character at `buffer``[0]`, and the invalid parameter handler is invoked. Unlike `_snprintf`, `sprintf_s` guarantees that the buffer will be null-terminated unless the buffer size is zero.  
+ The other main difference between `sprintf_s` and `sprintf` is that `sprintf_s` takes a length parameter specifying the size of the output buffer in characters. If the buffer is too small for the formatted text, including the terminating null, then the buffer is set to an empty string by placing a null character at `buffer[0]`, and the invalid parameter handler is invoked. Unlike `_snprintf`, `sprintf_s` guarantees that the buffer will be null-terminated unless the buffer size is zero.  
   
  `swprintf_s` is a wide-character version of `sprintf_s`; the pointer arguments to `swprintf_s` are wide-character strings. Detection of encoding errors in `swprintf_s` may differ from that in `sprintf_s`. The versions of these functions with the `_l` suffix are identical except that they use the locale parameter passed in instead of the current thread locale.  
   

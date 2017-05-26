@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COlePropertyPage', 'AFXCTL/COlePropertyPage', 'AFXCTL/COlePropertyPage::COlePropertyPage', 'AFXCTL/COlePropertyPage::GetControlStatus', 'AFXCTL/COlePropertyPage::GetObjectArray', 'AFXCTL/COlePropertyPage::GetPageSite', 'AFXCTL/COlePropertyPage::IgnoreApply', 'AFXCTL/COlePropertyPage::IsModified', 'AFXCTL/COlePropertyPage::OnEditProperty', 'AFXCTL/COlePropertyPage::OnHelp', 'AFXCTL/COlePropertyPage::OnInitDialog', 'AFXCTL/COlePropertyPage::OnObjectsChanged', 'AFXCTL/COlePropertyPage::OnSetPageSite', 'AFXCTL/COlePropertyPage::SetControlStatus', 'AFXCTL/COlePropertyPage::SetDialogResource', 'AFXCTL/COlePropertyPage::SetHelpInfo', 'AFXCTL/COlePropertyPage::SetModifiedFlag', 'AFXCTL/COlePropertyPage::SetPageName']

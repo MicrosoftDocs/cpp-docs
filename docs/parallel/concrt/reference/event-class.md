@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['event', 'CONCRT/concurrency::event', 'CONCRT/concurrency::event::reset', 'CONCRT/concurrency::event::set', 'CONCRT/concurrency::event::wait', 'CONCRT/concurrency::event::wait_for_multiple', 'CONCRT/concurrency::event::timeout_infinite']

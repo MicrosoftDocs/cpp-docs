@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['completion_future', 'AMPRT/completion_future', 'AMPRT/Concurrency::completion_future::completion_future', 'AMPRT/Concurrency::completion_future::get', 'AMPRT/Concurrency::completion_future::then', 'AMPRT/Concurrency::completion_future::to_task', 'AMPRT/Concurrency::completion_future::valid', 'AMPRT/Concurrency::completion_future::wait', 'AMPRT/Concurrency::completion_future::wait_for', 'AMPRT/Concurrency::completion_future::wait_until']

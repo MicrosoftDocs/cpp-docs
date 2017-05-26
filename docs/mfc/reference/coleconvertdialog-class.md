@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleConvertDialog', 'AFXODLGS/COleConvertDialog', 'AFXODLGS/COleConvertDialog::COleConvertDialog', 'AFXODLGS/COleConvertDialog::DoConvert', 'AFXODLGS/COleConvertDialog::DoModal', 'AFXODLGS/COleConvertDialog::GetClassID', 'AFXODLGS/COleConvertDialog::GetDrawAspect', 'AFXODLGS/COleConvertDialog::GetIconicMetafile', 'AFXODLGS/COleConvertDialog::GetSelectionType', 'AFXODLGS/COleConvertDialog::m_cv']

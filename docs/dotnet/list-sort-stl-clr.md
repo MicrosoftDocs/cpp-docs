@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -52,7 +52,7 @@ template<typename Pred2>
 ## Remarks  
  The first member function rearranges the elements in the controlled sequence so that they are ordered by `operator<` -- elements do not decrease in value as you progress through the sequence. You use this member function to sort the sequence in increasing order.  
   
- The second member function behaves the same as the first, except that the sequence is ordered by `pred` -- `pred``(X, Y)` is false for any element `X` that follows element `Y` in the resultant sequence. You use it to sort the sequence in an order that you specify by a predicate function or delegate.  
+ The second member function behaves the same as the first, except that the sequence is ordered by `pred` -- `pred(X, Y)` is false for any element `X` that follows element `Y` in the resultant sequence. You use it to sort the sequence in an order that you specify by a predicate function or delegate.  
   
  Both functions perform a stable sort -- no pair of elements in the original controlled sequence is reversed in the resulting controlled sequence.  
   

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['iosfwd/std::char_traits', 'char_traits', 'string/std::char_traits::char_type', 'string/std::char_traits::int_type', 'string/std::char_traits::off_type', 'string/std::char_traits::pos_type', 'string/std::char_traits::state_type', 'string/std::char_traits::assign', 'string/std::char_traits::compare', 'string/std::char_traits::copy', 'string/std::char_traits::_Copy_s', 'string/std::char_traits::eof', 'string/std::char_traits::eq', 'string/std::char_traits::eq_int_type', 'string/std::char_traits::find', 'string/std::char_traits::length', 'string/std::char_traits::lt', 'string/std::char_traits::move', 'string/std::char_traits::_Move_s', 'string/std::char_traits::not_eof', 'string/std::char_traits::to_char_type', 'string/std::char_traits::to_int_type']  

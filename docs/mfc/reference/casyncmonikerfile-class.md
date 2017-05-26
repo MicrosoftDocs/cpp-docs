@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAsyncMonikerFile', 'AFXOLE/CAsyncMonikerFile', 'AFXOLE/CAsyncMonikerFile::CAsyncMonikerFile', 'AFXOLE/CAsyncMonikerFile::Close', 'AFXOLE/CAsyncMonikerFile::GetBinding', 'AFXOLE/CAsyncMonikerFile::GetFormatEtc', 'AFXOLE/CAsyncMonikerFile::Open', 'AFXOLE/CAsyncMonikerFile::CreateBindStatusCallback', 'AFXOLE/CAsyncMonikerFile::GetBindInfo', 'AFXOLE/CAsyncMonikerFile::GetPriority', 'AFXOLE/CAsyncMonikerFile::OnDataAvailable', 'AFXOLE/CAsyncMonikerFile::OnLowResource', 'AFXOLE/CAsyncMonikerFile::OnProgress', 'AFXOLE/CAsyncMonikerFile::OnStartBinding', 'AFXOLE/CAsyncMonikerFile::OnStopBinding']

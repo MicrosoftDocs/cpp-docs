@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -65,13 +65,13 @@ collection_adapter(Coll^ collection);
   
  `collection_adapter(collection_adapter<Coll>% right);`  
   
- initializes the stored handle with `right``.`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
+ initializes the stored handle with `right.`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
   
  The constructor:  
   
  `collection_adapter(collection_adapter<Coll>^ right);`  
   
- initializes the stored handle with `right``->`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
+ initializes the stored handle with `right->`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.  
   
  The constructor:  
   

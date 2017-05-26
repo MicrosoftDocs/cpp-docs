@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['seed_seq', 'random/std::seed_seq', 'random/std::seed_seq::result_type', 'random/std::seed_seq::generate', 'random/std::seed_seq::size', 'random/std::seed_seq::param']  

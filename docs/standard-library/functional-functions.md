@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['functional/std::bind', 'functional/std::bind1st', 'functional/std::bind2nd', 'functional/std::bit_and', 'functional/std::bit_not', 'functional/std::bit_or', 'functional/std::bit_xor', 'functional/std::cref', 'type_traits/std::cref', 'functional/std::mem_fn', 'functional/std::mem_fun', 'functional/std::mem_fun_ref', 'functional/std::not1', 'functional/std::not2', 'functional/std::ptr_fun', 'functional/std::ref', 'type_traits/std::ref', 'functional/std::swap', 'type_traits/std::swap', 'functional/std::bind', 'functional/std::bind1st', 'functional/std::bind2nd', 'functional/std::bit_and', 'functional/std::bit_not', 'functional/std::bit_or', 'functional/std::bit_xor', 'functional/std::cref', 'functional/std::mem_fn', 'functional/std::mem_fun', 'functional/std::mem_fun_ref', 'functional/std::not1', 'functional/std::not2', 'functional/std::ptr_fun', 'functional/std::ref', 'functional/std::swap']  
@@ -340,7 +340,7 @@ struct bit_and<void>
  The right operand of the bitwise AND operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ### Return Value  
- The result of `Left``&``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator&`.  
+ The result of `Left & Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator&`.  
   
 ### Remarks  
  The `bit_and` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator&`.  
@@ -372,7 +372,7 @@ struct bit_not<void>
  The operand of the bitwise complement operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of an lvalue or rvalue reference argument of inferred type `Type`.  
   
 ### Return Value  
- The result of `~``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator~`.  
+ The result of `~ Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator~`.  
   
 ### Remarks  
  The `bit_not` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator~`.  
@@ -409,7 +409,7 @@ struct bit_or<void>
  The right operand of the bitwise OR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ### Return Value  
- The result of `Left``|``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator|`.  
+ The result of `Left | Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator|`.  
   
 ### Remarks  
  The `bit_or` functor is restricted to integral types for the basic data types, or to user-defined types that implement `operator|`.  
@@ -446,7 +446,7 @@ struct bit_xor<void>
  The right operand of the bitwise XOR operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ### Return Value  
- The result of `Left``^``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator^`.  
+ The result of `Left ^ Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator^`.  
   
 ### Remarks  
  The `bit_xor` functor is restricted to integral types for the basic data types, or to user-defined types that implement binary `operator^`.  

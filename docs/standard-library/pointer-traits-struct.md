@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['memory/std::pointer_traits::element_type', 'memory/std::pointer_traits::pointer', 'memory/std::pointer_traits', 'memory/std::pointer_traits::difference_type', 'memory/std::pointer_traits::rebind', 'xmemory0/std::pointer_traits::element_type', 'xmemory0/std::pointer_traits::pointer', 'xmemory0/std::pointer_traits', 'xmemory0/std::pointer_traits::difference_type', 'xmemory0/std::pointer_traits::rebind', 'memory/std::pointer_traits::pointer_to']  

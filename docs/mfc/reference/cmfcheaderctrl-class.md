@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCHeaderCtrl', 'AFXHEADERCTRL/CMFCHeaderCtrl', 'AFXHEADERCTRL/CMFCHeaderCtrl::CMFCHeaderCtrl', 'AFXHEADERCTRL/CMFCHeaderCtrl::EnableMultipleSort', 'AFXHEADERCTRL/CMFCHeaderCtrl::GetColumnState', 'AFXHEADERCTRL/CMFCHeaderCtrl::GetSortColumn', 'AFXHEADERCTRL/CMFCHeaderCtrl::IsAscending', 'AFXHEADERCTRL/CMFCHeaderCtrl::IsDialogControl', 'AFXHEADERCTRL/CMFCHeaderCtrl::IsMultipleSort', 'AFXHEADERCTRL/CMFCHeaderCtrl::RemoveSortColumn', 'AFXHEADERCTRL/CMFCHeaderCtrl::SetSortColumn', 'AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawItem', 'AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawSortArrow', 'AFXHEADERCTRL/CMFCHeaderCtrl::OnFillBackground']

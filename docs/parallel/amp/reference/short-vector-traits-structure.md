@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['short_vector_traits', 'AMP_SHORT_VECTORS/short_vector_traits', 'AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits', 'AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant']

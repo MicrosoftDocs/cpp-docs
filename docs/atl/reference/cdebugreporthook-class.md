@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDebugReportHook', 'ATLUTIL/ATL::CDebugReportHook', 'ATLUTIL/ATL::CDebugReportHook::CDebugReportHook', 'ATLUTIL/ATL::CDebugReportHook::CDebugReportHookProc', 'ATLUTIL/ATL::CDebugReportHook::RemoveHook', 'ATLUTIL/ATL::CDebugReportHook::SetHook', 'ATLUTIL/ATL::CDebugReportHook::SetPipeName', 'ATLUTIL/ATL::CDebugReportHook::SetTimeout']

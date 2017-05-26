@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComGITPtr', 'ATLBASE/ATL::CComGITPtr', 'ATLBASE/ATL::CComGITPtr::CComGITPtr', 'ATLBASE/ATL::CComGITPtr::Attach', 'ATLBASE/ATL::CComGITPtr::CopyTo', 'ATLBASE/ATL::CComGITPtr::Detach', 'ATLBASE/ATL::CComGITPtr::GetCookie', 'ATLBASE/ATL::CComGITPtr::Revoke', 'ATLBASE/ATL::CComGITPtr::m_dwCookie']

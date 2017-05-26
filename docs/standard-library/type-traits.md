@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -173,7 +173,7 @@ using add_const_t = typename add_const<T>::type;
 |-|-|  
 |[add_const](../standard-library/add-const-class.md)|Produces a `const` type from type.|  
 |[add_volatile](../standard-library/add-volatile-class.md)|Produces a `volatile` type from type.|  
-|[add_cv](../standard-library/add-cv-class.md)|Produces a `const``volatile` type from type.|  
+|[add_cv](../standard-library/add-cv-class.md)|Produces a `const volatile` type from type.|  
 |[remove_const](../standard-library/remove-const-class.md)|Produces a non-const type from type.|  
 |[remove_volatile](../standard-library/remove-volatile-class.md)|Produces a non-volatile type from type.|  
 |[remove_cv](../standard-library/remove-cv-class.md)|Produces a non-const non-volatile type from type.|  

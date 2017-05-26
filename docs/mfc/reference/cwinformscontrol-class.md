@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CWinFormsControl', 'AFXWINFORMS/CWinFormsControl', 'AFXWINFORMS/CWinFormsControl::CWinFormsControl', 'AFXWINFORMS/CWinFormsControl::CreateManagedControl', 'AFXWINFORMS/CWinFormsControl::GetControl', 'AFXWINFORMS/CWinFormsControl::GetControlHandle']
@@ -210,7 +210,7 @@ inline operator TManagedControl^() const;
 ```  
   
 ### Remarks  
- This operator passes `CWinFormsControl<``TManagedControl``>` to functions that accept a pointer to a Windows Forms control.  
+ This operator passes `CWinFormsControl<TManagedControl>` to functions that accept a pointer to a Windows Forms control.  
   
 ## See Also  
  [CWinFormsDialog Class](../../mfc/reference/cwinformsdialog-class.md)   

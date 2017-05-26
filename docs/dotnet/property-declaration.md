@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -69,7 +69,7 @@ public:
 };  
 ```  
   
- If the access methods of the property reflect distinct access levels - such as a `public``get` and a `private` or `protected``set`, an explicit access label can be specified. By default, the access level of the property reflects that of the enclosing access level. For example, in the above definition of `Vector`, both the `get` and `set` methods are `public`. To make the `set` method `protected` or `private`, the definition would be revised as follows:  
+ If the access methods of the property reflect distinct access levels - such as a `public get` and a `private` or `protected set`, an explicit access label can be specified. By default, the access level of the property reflects that of the enclosing access level. For example, in the above definition of `Vector`, both the `get` and `set` methods are `public`. To make the `set` method `protected` or `private`, the definition would be revised as follows:  
   
 ```  
 public ref class Vector sealed {   

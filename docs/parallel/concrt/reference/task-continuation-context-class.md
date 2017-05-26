@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['task_continuation_context', 'PPLTASKS/concurrency::task_continuation_context', 'PPLTASKS/concurrency::task_continuation_context::get_current_winrt_context', 'PPLTASKS/concurrency::task_continuation_context::use_arbitrary', 'PPLTASKS/concurrency::task_continuation_context::use_current', 'PPLTASKS/concurrency::task_continuation_context::use_default', 'PPLTASKS/concurrency::task_continuation_context::use_synchronous_execution']

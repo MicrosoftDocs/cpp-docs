@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDrawingManager', 'AFXDRAWMANAGER/CDrawingManager', 'AFXDRAWMANAGER/CDrawingManager::CDrawingManager', 'AFXDRAWMANAGER/CDrawingManager::CreateBitmap_32', 'AFXDRAWMANAGER/CDrawingManager::DrawAlpha', 'AFXDRAWMANAGER/CDrawingManager::DrawRotated', 'AFXDRAWMANAGER/CDrawingManager::DrawEllipse', 'AFXDRAWMANAGER/CDrawingManager::DrawGradientRing', 'AFXDRAWMANAGER/CDrawingManager::DrawRect', 'AFXDRAWMANAGER/CDrawingManager::DrawShadow', 'AFXDRAWMANAGER/CDrawingManager::Fill4ColorsGradient', 'AFXDRAWMANAGER/CDrawingManager::FillGradient', 'AFXDRAWMANAGER/CDrawingManager::FillGradient2', 'AFXDRAWMANAGER/CDrawingManager::GrayRect', 'AFXDRAWMANAGER/CDrawingManager::HighlightRect', 'AFXDRAWMANAGER/CDrawingManager::HLStoRGB_ONE', 'AFXDRAWMANAGER/CDrawingManager::HLStoRGB_TWO', 'AFXDRAWMANAGER/CDrawingManager::HSVtoRGB', 'AFXDRAWMANAGER/CDrawingManager::HuetoRGB', 'AFXDRAWMANAGER/CDrawingManager::MirrorRect', 'AFXDRAWMANAGER/CDrawingManager::PixelAlpha', 'AFXDRAWMANAGER/CDrawingManager::PrepareShadowMask', 'AFXDRAWMANAGER/CDrawingManager::RGBtoHSL', 'AFXDRAWMANAGER/CDrawingManager::RGBtoHSV', 'AFXDRAWMANAGER/CDrawingManager::SetAlphaPixel', 'AFXDRAWMANAGER/CDrawingManager::SetPixel', 'AFXDRAWMANAGER/CDrawingManager::SmartMixColors']

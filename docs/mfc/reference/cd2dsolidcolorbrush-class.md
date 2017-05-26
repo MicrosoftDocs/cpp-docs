@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DSolidColorBrush', 'AFXRENDERTARGET/CD2DSolidColorBrush', 'AFXRENDERTARGET/CD2DSolidColorBrush::CD2DSolidColorBrush', 'AFXRENDERTARGET/CD2DSolidColorBrush::Attach', 'AFXRENDERTARGET/CD2DSolidColorBrush::Create', 'AFXRENDERTARGET/CD2DSolidColorBrush::Destroy', 'AFXRENDERTARGET/CD2DSolidColorBrush::Detach', 'AFXRENDERTARGET/CD2DSolidColorBrush::Get', 'AFXRENDERTARGET/CD2DSolidColorBrush::GetColor', 'AFXRENDERTARGET/CD2DSolidColorBrush::SetColor', 'AFXRENDERTARGET/CD2DSolidColorBrush::m_colorSolid', 'AFXRENDERTARGET/CD2DSolidColorBrush::m_pSolidColorBrush']

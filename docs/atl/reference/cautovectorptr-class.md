@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAutoVectorPtr', 'ATLBASE/ATL::CAutoVectorPtr', 'ATLBASE/ATL::CAutoVectorPtr::CAutoVectorPtr', 'ATLBASE/ATL::CAutoVectorPtr::Allocate', 'ATLBASE/ATL::CAutoVectorPtr::Attach', 'ATLBASE/ATL::CAutoVectorPtr::Detach', 'ATLBASE/ATL::CAutoVectorPtr::Free', 'ATLBASE/ATL::CAutoVectorPtr::m_p']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CColorDialog', 'AFXDLGS/CColorDialog', 'AFXDLGS/CColorDialog::CColorDialog', 'AFXDLGS/CColorDialog::DoModal', 'AFXDLGS/CColorDialog::GetColor', 'AFXDLGS/CColorDialog::GetSavedCustomColors', 'AFXDLGS/CColorDialog::SetCurrentColor', 'AFXDLGS/CColorDialog::OnColorOK', 'AFXDLGS/CColorDialog::m_cc']

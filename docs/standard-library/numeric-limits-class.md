@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['numeric_limits', 'limits/std::numeric_limits', 'limits/std::numeric_limits::denorm_min', 'limits/std::numeric_limits::digits', 'limits/std::numeric_limits::digits10', 'limits/std::numeric_limits::epsilon', 'limits/std::numeric_limits::has_denorm', 'limits/std::numeric_limits::has_denorm_loss', 'limits/std::numeric_limits::has_infinity', 'limits/std::numeric_limits::has_quiet_NaN', 'limits/std::numeric_limits::has_signaling_NaN', 'limits/std::numeric_limits::infinity', 'limits/std::numeric_limits::is_bounded', 'limits/std::numeric_limits::is_exact', 'limits/std::numeric_limits::is_iec559', 'limits/std::numeric_limits::is_integer', 'limits/std::numeric_limits::is_modulo', 'limits/std::numeric_limits::is_signed', 'limits/std::numeric_limits::is_specialized', 'limits/std::numeric_limits::lowest', 'limits/std::numeric_limits::max', 'limits/std::numeric_limits::max_digits10', 'limits/std::numeric_limits::max_exponent', 'limits/std::numeric_limits::max_exponent10', 'limits/std::numeric_limits::min', 'limits/std::numeric_limits::min_exponent', 'limits/std::numeric_limits::min_exponent10', 'limits/std::numeric_limits::quiet_NaN', 'limits/std::numeric_limits::radix', 'limits/std::numeric_limits::round_error', 'limits/std::numeric_limits::round_style', 'limits/std::numeric_limits::signaling_NaN', 'limits/std::numeric_limits::tinyness_before', 'limits/std::numeric_limits::traps']  
@@ -900,7 +900,7 @@ static Type lowest() throw();
  Returns the most negative finite value.  
   
 ### Remarks  
- Returns the most negative finite value for the type (which is typically `min` `()` for integer types and `-``max` `()` for floating-point types). The return value is meaningful if `is_bounded` is `true`.  
+ Returns the most negative finite value for the type (which is typically `min()` for integer types and `-max()` for floating-point types). The return value is meaningful if `is_bounded` is `true`.  
   
 ##  <a name="max"></a>  numeric_limits::max  
  Returns the maximum finite value for a type.  

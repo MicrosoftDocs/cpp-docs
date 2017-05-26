@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['istreambuf_iterator', 'streambuf/std::istreambuf_iterator', 'iterator/std::istreambuf_iterator::char_type', 'iterator/std::istreambuf_iterator::int_type', 'iterator/std::istreambuf_iterator::istream_type', 'iterator/std::istreambuf_iterator::streambuf_type', 'iterator/std::istreambuf_iterator::traits_type', 'iterator/std::istreambuf_iterator::equal']  

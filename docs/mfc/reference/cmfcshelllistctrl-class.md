@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCShellListCtrl', 'AFXSHELLLISTCTRL/CMFCShellListCtrl', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayFolder', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayParentFolder', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::EnableShellContextMenu', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolder', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolderName', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentItemIdList', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentShellFolder', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemPath', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemTypes', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::IsDesktop', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::OnCompareItems', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileDate', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileSize', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemIcon', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemText', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::OnSetColumns', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::Refresh', 'AFXSHELLLISTCTRL/CMFCShellListCtrl::SetItemTypes']

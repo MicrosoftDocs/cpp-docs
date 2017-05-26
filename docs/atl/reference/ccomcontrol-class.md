@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComControl', 'ATLCTL/ATL::CComControl', 'ATLCTL/ATL::CComControl::CComControl', 'ATLCTL/ATL::CComControl::ControlQueryInterface', 'ATLCTL/ATL::CComControl::CreateControlWindow', 'ATLCTL/ATL::CComControl::FireOnChanged', 'ATLCTL/ATL::CComControl::FireOnRequestEdit', 'ATLCTL/ATL::CComControl::MessageBox']

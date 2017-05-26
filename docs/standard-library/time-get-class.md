@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['xloctime/std::time_get', 'time_get', 'locale/std::time_get::char_type', 'locale/std::time_get::iter_type', 'locale/std::time_get::date_order', 'locale/std::time_get::do_date_order', 'locale/std::time_get::do_get', 'locale/std::time_get::do_get_date', 'locale/std::time_get::do_get_monthname', 'locale/std::time_get::do_get_time', 'locale/std::time_get::do_get_weekday', 'locale/std::time_get::do_get_year', 'locale/std::time_get::get', 'locale/std::time_get::get_date', 'locale/std::time_get::get_monthname', 'locale/std::time_get::get_time', 'locale/std::time_get::get_weekday', 'locale/std::time_get::get_year']  
@@ -215,7 +215,7 @@ virtual iter_type
  Returns an iterator that designates the first unconverted element. A conversion failure sets `ios_base::failbit` in `state` and returns `first`.  
   
 ### Remarks  
- The virtual member function converts and skips one or more input elements in the range `[``first``,` `last``)` to determine the values stored in one or more members of `*pt`. A conversion failure sets `ios_base::failbit` in `state` and returns `first`. Otherwise, the function returns an iterator designating the first unconverted element.  
+ The virtual member function converts and skips one or more input elements in the range [`first`, `last`) to determine the values stored in one or more members of `*pt`. A conversion failure sets `ios_base::failbit` in `state` and returns `first`. Otherwise, the function returns an iterator designating the first unconverted element.  
   
  The conversion specifiers are:  
   

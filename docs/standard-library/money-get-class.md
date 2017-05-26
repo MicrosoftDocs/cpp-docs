@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['xlocmon/std::money_get', 'money_get', 'locale/std::money_get::char_type', 'locale/std::money_get::iter_type', 'locale/std::money_get::string_type', 'locale/std::money_get::do_get', 'locale/std::money_get::get']  
@@ -206,7 +206,7 @@ iter_type get(iter_type first,
  An input iterator addressing the first element beyond the monetary input field.  
   
 ### Remarks  
- Both member functions return [do_get](#do_get)( `first``,` `last``,` `Intl`, `Iosbase`, `State`, `val`).  
+ Both member functions return [do_get](#do_get)`(first, last, Intl, Iosbase, State, val)`.  
   
 ### Example  
   

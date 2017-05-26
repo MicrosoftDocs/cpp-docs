@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -99,31 +99,31 @@ hash_map(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `hash_map(hash_map<Key, Mapped>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[hash_map::begin (STL/CLR)](../dotnet/hash-map-begin-stl-clr.md)`(),` `right``.`[hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)`())`, with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_map object `right`, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_map object `right`, with the default ordering predicate and hash function.  
   
  The constructor:  
   
  `hash_map(hash_map<Key, Mapped>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[hash_map::begin (STL/CLR)](../dotnet/hash-map-begin-stl-clr.md)`(),` `right``->`[hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)`())`, with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_map object `right`, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_map object `right`, with the default ordering predicate and hash function.  
   
  The constructor:  
   
  `template<typename InIter> hash_map(InIter first, InIter last);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate and hash function.  
   
  The constructor:  
   
  `template<typename InIter> hash_map(InIter first, InIter last, key_compare^ pred);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.  
   
  The constructor:  
   
  `template<typename InIter> hash_map(InIter first, InIter last, key_compare^ pred, hasher^ hashfn);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.  
   
  The constructor:  
   

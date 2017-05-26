@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['basic_fstream', 'fstream/std::basic_fstream', 'fstream/std::basic_fstream::close', 'fstream/std::basic_fstream::is_open', 'fstream/std::basic_fstream::open', 'fstream/std::basic_fstream::rdbuf', 'fstream/std::basic_fstream::swap']  

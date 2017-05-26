@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -73,24 +73,24 @@ Defines a template class to parse [Regular Expressions (C++)](../standard-librar
   
 |||  
 |-|-|  
-|[cmatch](../standard-library/regex-typedefs.md#cmatch)|Type definition for `char``match_results`.|  
-|[cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator)|Type definition for `char``regex_iterator`.|  
-|[cregex_token_iterator](../standard-library/regex-typedefs.md#cregex_token_iterator)|Type definition for `char``regex_token_iterator`.|  
-|[csub_match](../standard-library/regex-typedefs.md#csub_match)|Type definition for `char``sub_match`.|  
-|[regex](../standard-library/regex-typedefs.md#regex)|Type definition for `char``basic_regex`.|  
-|[smatch](../standard-library/regex-typedefs.md#smatch)|Type definition for `string``match_results`.|  
-|[sregex_iterator](../standard-library/regex-typedefs.md#sregex_iterator)|Type definition for `string``regex_iterator`.|  
-|[sregex_token_iterator](../standard-library/regex-typedefs.md#sregex_token_iterator)|Type definition for `string``regex_token_iterator`.|  
-|[ssub_match](../standard-library/regex-typedefs.md#ssub_match)|Type definition for `string``sub_match`.|  
-|[wcmatch](../standard-library/regex-typedefs.md#wcmatch)|Type definition for `wchar_t``match_results`.|  
-|[wcregex_iterator](../standard-library/regex-typedefs.md#wcregex_iterator)|Type definition for `wchar_t``regex_iterator`.|  
-|[wcregex_token_iterator](../standard-library/regex-typedefs.md#wcregex_token_iterator)|Type definition for `wchar_t``regex_token_iterator`.|  
-|[wcsub_match](../standard-library/regex-typedefs.md#wcsub_match)|Type definition for `wchar_t``sub_match`.|  
-|[wregex](../standard-library/regex-typedefs.md#wregex)|Type definition for `wchar_t``basic_regex`.|  
-|[wsmatch](../standard-library/regex-typedefs.md#wsmatch)|Type definition for `wstring``match_results`.|  
-|[wsregex_iterator](../standard-library/regex-typedefs.md#wsregex_iterator)|Type definition for `wstring``regex_iterator`.|  
-|[wsregex_token_iterator](../standard-library/regex-typedefs.md#wsregex_token_iterator)|Type definition for `wstring``regex_token_iterator`.|  
-|[wssub_match](../standard-library/regex-typedefs.md#wssub_match)|Type definition for `wstring``sub_match`.|  
+|[cmatch](../standard-library/regex-typedefs.md#cmatch)|Type definition for `char` `match_results`.|  
+|[cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator)|Type definition for `char` `regex_iterator`.|  
+|[cregex_token_iterator](../standard-library/regex-typedefs.md#cregex_token_iterator)|Type definition for `char` `regex_token_iterator`.|  
+|[csub_match](../standard-library/regex-typedefs.md#csub_match)|Type definition for `char` `sub_match`.|  
+|[regex](../standard-library/regex-typedefs.md#regex)|Type definition for `char` `basic_regex`.|  
+|[smatch](../standard-library/regex-typedefs.md#smatch)|Type definition for `string` `match_results`.|  
+|[sregex_iterator](../standard-library/regex-typedefs.md#sregex_iterator)|Type definition for `string` `regex_iterator`.|  
+|[sregex_token_iterator](../standard-library/regex-typedefs.md#sregex_token_iterator)|Type definition for `string` `regex_token_iterator`.|  
+|[ssub_match](../standard-library/regex-typedefs.md#ssub_match)|Type definition for `string` `sub_match`.|  
+|[wcmatch](../standard-library/regex-typedefs.md#wcmatch)|Type definition for `wchar_t` `match_results`.|  
+|[wcregex_iterator](../standard-library/regex-typedefs.md#wcregex_iterator)|Type definition for `wchar_t` `regex_iterator`.|  
+|[wcregex_token_iterator](../standard-library/regex-typedefs.md#wcregex_token_iterator)|Type definition for `wchar_t` `regex_token_iterator`.|  
+|[wcsub_match](../standard-library/regex-typedefs.md#wcsub_match)|Type definition for `wchar_t` `sub_match`.|  
+|[wregex](../standard-library/regex-typedefs.md#wregex)|Type definition for `wchar_t` `basic_regex`.|  
+|[wsmatch](../standard-library/regex-typedefs.md#wsmatch)|Type definition for `wstring` `match_results`.|  
+|[wsregex_iterator](../standard-library/regex-typedefs.md#wsregex_iterator)|Type definition for `wstring` `regex_iterator`.|  
+|[wsregex_token_iterator](../standard-library/regex-typedefs.md#wsregex_token_iterator)|Type definition for `wstring` `regex_token_iterator`.|  
+|[wssub_match](../standard-library/regex-typedefs.md#wssub_match)|Type definition for `wstring` `sub_match`.|  
   
 ### Functions  
   

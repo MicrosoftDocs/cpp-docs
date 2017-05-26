@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSimpleArray', 'ATLSIMPCOLL/ATL::CSimpleArray', 'ATLSIMPCOLL/ATL::CSimpleArray::CSimpleArray', 'ATLSIMPCOLL/ATL::CSimpleArray::Add', 'ATLSIMPCOLL/ATL::CSimpleArray::Find', 'ATLSIMPCOLL/ATL::CSimpleArray::GetData', 'ATLSIMPCOLL/ATL::CSimpleArray::GetSize', 'ATLSIMPCOLL/ATL::CSimpleArray::Remove', 'ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll', 'ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt', 'ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex']

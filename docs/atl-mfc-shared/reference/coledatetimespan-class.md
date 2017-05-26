@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDateTimeSpan', 'ATLCOMTIME/ATL::COleDateTimeSpan', 'ATLCOMTIME/ATL::COleDateTimeSpan::COleDateTimeSpan', 'ATLCOMTIME/ATL::COleDateTimeSpan::Format', 'ATLCOMTIME/ATL::COleDateTimeSpan::GetDays', 'ATLCOMTIME/ATL::COleDateTimeSpan::GetHours', 'ATLCOMTIME/ATL::COleDateTimeSpan::GetMinutes', 'ATLCOMTIME/ATL::COleDateTimeSpan::GetSeconds', 'ATLCOMTIME/ATL::COleDateTimeSpan::GetStatus', 'ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalDays', 'ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalHours', 'ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalMinutes', 'ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalSeconds', 'ATLCOMTIME/ATL::COleDateTimeSpan::SetDateTimeSpan', 'ATLCOMTIME/ATL::COleDateTimeSpan::SetStatus', 'ATLCOMTIME/ATL::COleDateTimeSpan::m_span', 'ATLCOMTIME/ATL::COleDateTimeSpan::m_status']

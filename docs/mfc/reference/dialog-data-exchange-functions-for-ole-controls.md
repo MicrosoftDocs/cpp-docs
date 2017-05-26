@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['AFXDISP/DDX_OCBool', 'AFXDISP/DDX_OCBoolRO', 'AFXDISP/DDX_OCColor', 'AFXDISP/DDX_OCColorRO', 'AFXDISP/DDX_OCFloat', 'AFXDISP/DDX_OCFloatRO', 'AFXDISP/DDX_OCInt', 'AFXDISP/DDX_OCIntRO', 'AFXDISP/DDX_OCShort', 'AFXDISP/DDX_OCShortRO', 'AFXDISP/DDX_OCText', 'AFXDISP/DDX_OCTextRO']

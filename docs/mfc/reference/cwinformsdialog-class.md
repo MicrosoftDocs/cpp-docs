@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog::CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog::GetControl', 'AFXWINFORMS/CWinFormsDialog::GetControlHandle', 'AFXWINFORMS/CWinFormsDialog::OnInitDialog']
@@ -147,7 +147,7 @@ inline operator TManagedControl^() const throw();
 ```  
   
 ### Remarks  
- This operator casts a type as a reference to a Windows Forms control. It is used to pass a `CWinFormsDialog<``TManagedControl``>` dialog box to functions that accept a pointer to a Windows Forms user control object.  
+ This operator casts a type as a reference to a Windows Forms control. It is used to pass a `CWinFormsDialog<TManagedControl>` dialog box to functions that accept a pointer to a Windows Forms user control object.  
   
 ## See Also  
  [CWnd Class](../../mfc/reference/cwnd-class.md)   

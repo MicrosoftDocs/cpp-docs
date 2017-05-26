@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleServerItem', 'AFXOLE/COleServerItem', 'AFXOLE/COleServerItem::COleServerItem', 'AFXOLE/COleServerItem::AddOtherClipboardData', 'AFXOLE/COleServerItem::CopyToClipboard', 'AFXOLE/COleServerItem::DoDragDrop', 'AFXOLE/COleServerItem::GetClipboardData', 'AFXOLE/COleServerItem::GetDocument', 'AFXOLE/COleServerItem::GetEmbedSourceData', 'AFXOLE/COleServerItem::GetItemName', 'AFXOLE/COleServerItem::GetLinkSourceData', 'AFXOLE/COleServerItem::GetObjectDescriptorData', 'AFXOLE/COleServerItem::IsConnected', 'AFXOLE/COleServerItem::IsLinkedItem', 'AFXOLE/COleServerItem::NotifyChanged', 'AFXOLE/COleServerItem::OnDoVerb', 'AFXOLE/COleServerItem::OnDraw', 'AFXOLE/COleServerItem::OnDrawEx', 'AFXOLE/COleServerItem::OnGetClipboardData', 'AFXOLE/COleServerItem::OnGetExtent', 'AFXOLE/COleServerItem::OnInitFromData', 'AFXOLE/COleServerItem::OnQueryUpdateItems', 'AFXOLE/COleServerItem::OnRenderData', 'AFXOLE/COleServerItem::OnRenderFileData', 'AFXOLE/COleServerItem::OnRenderGlobalData', 'AFXOLE/COleServerItem::OnSetColorScheme', 'AFXOLE/COleServerItem::OnSetData', 'AFXOLE/COleServerItem::OnSetExtent', 'AFXOLE/COleServerItem::OnUpdate', 'AFXOLE/COleServerItem::OnUpdateItems', 'AFXOLE/COleServerItem::SetItemName', 'AFXOLE/COleServerItem::GetDataSource', 'AFXOLE/COleServerItem::OnHide', 'AFXOLE/COleServerItem::OnOpen', 'AFXOLE/COleServerItem::OnShow', 'AFXOLE/COleServerItem::m_sizeExtent']

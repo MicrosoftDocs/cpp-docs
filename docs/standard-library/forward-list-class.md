@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['forward_list', 'forward_list/std::forward_list', 'forward_list/std::forward_list::allocator_type', 'forward_list/std::forward_list::const_iterator', 'forward_list/std::forward_list::const_pointer', 'forward_list/std::forward_list::const_reference', 'forward_list/std::forward_list::difference_type', 'forward_list/std::forward_list::iterator', 'forward_list/std::forward_list::pointer', 'forward_list/std::forward_list::reference', 'forward_list/std::forward_list::size_type', 'forward_list/std::forward_list::value_type', 'forward_list/std::forward_list::assign', 'forward_list/std::forward_list::before_begin', 'forward_list/std::forward_list::begin', 'forward_list/std::forward_list::cbefore_begin', 'forward_list/std::forward_list::cbegin', 'forward_list/std::forward_list::cend', 'forward_list/std::forward_list::clear', 'forward_list/std::forward_list::emplace_after', 'forward_list/std::forward_list::emplace_front', 'forward_list/std::forward_list::empty', 'forward_list/std::forward_list::end', 'forward_list/std::forward_list::erase_after', 'forward_list/std::forward_list::front', 'forward_list/std::forward_list::get_allocator', 'forward_list/std::forward_list::insert_after', 'forward_list/std::forward_list::max_size', 'forward_list/std::forward_list::merge', 'forward_list/std::forward_list::pop_front', 'forward_list/std::forward_list::push_front', 'forward_list/std::forward_list::remove', 'forward_list/std::forward_list::remove_if', 'forward_list/std::forward_list::resize', 'forward_list/std::forward_list::reverse', 'forward_list/std::forward_list::sort', 'forward_list/std::forward_list::splice_after', 'forward_list/std::forward_list::swap', 'forward_list/std::forward_list::unique']  
@@ -541,7 +541,7 @@ void merge(forward_list& right, Predicate comp);
 |`comp`|The compare function object that is used to sort elements.|  
   
 ### Remarks  
- `forward_list::merge` removes the elements from the `forward_list``right``,` and inserts them into this `forward_list`. Both sequences must be ordered by the same predicate, described below. The combined sequence is also ordered by that compare function object.  
+ `forward_list::merge` removes the elements from the `forward_list` `right`, and inserts them into this `forward_list`. Both sequences must be ordered by the same predicate, described below. The combined sequence is also ordered by that compare function object.  
   
  For the iterators `Pi` and `Pj` designating elements at positions `i` and `j`, the first member function imposes the order `!(*Pj < *Pi)` whenever `i < j`. (The elements are sorted in `ascending` order.) The second member function imposes the order `! comp(*Pj, *Pi)` whenever `i < j`.  
   

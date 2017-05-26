@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStringData', 'ATLSIMPSTR/ATL::CStringData', 'ATLSIMPSTR/ATL::AddRef', 'ATLSIMPSTR/ATL::data', 'ATLSIMPSTR/ATL::IsLocked', 'ATLSIMPSTR/ATL::IsShared', 'ATLSIMPSTR/ATL::Lock', 'ATLSIMPSTR/ATL::Release', 'ATLSIMPSTR/ATL::Unlock', 'ATLSIMPSTR/ATL::nAllocLength', 'ATLSIMPSTR/ATL::nDataLength', 'ATLSIMPSTR/ATL::nRefs', 'ATLSIMPSTR/ATL::pStringMgr']

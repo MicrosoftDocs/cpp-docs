@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['strstreambuf', 'strstream/std::strstreambuf::freeze', 'strstream/std::strstreambuf::overflow', 'strstream/std::strstreambuf::pbackfail', 'strstream/std::strstreambuf::pcount', 'strstream/std::strstreambuf::seekoff', 'strstream/std::strstreambuf::seekpos', 'strstream/std::strstreambuf::str', 'strstream/std::strstreambuf::underflow']  
@@ -377,27 +377,26 @@ strstreambuf(const unsigned char* _Getptr,
  The three constructors:  
   
 ```  
- 
-    strstreambuf(char *_Getptr,
+strstreambuf(char *_Getptr,
     streamsize count,  
-char *putptr = 0);
-
-    strstreambuf(signed char *_Getptr,
+    char *putptr = 0);
+  
+strstreambuf(signed char *_Getptr,
     streamsize count,  
-signed char *putptr = 0);
-
-    strstreambuf(unsigned char *_Getptr,
+    signed char *putptr = 0);
+  
+strstreambuf(unsigned char *_Getptr,
     streamsize count,  
-unsigned char *putptr = 0);
+    unsigned char *putptr = 0);
 ```  
   
  also behave like the first, except that `_Getptr` designates the array object used to hold the controlled sequence. (Hence, it must not be a null pointer.) The number of elements *N* in the array is determined as follows:  
   
--   If ( `count` > 0), then *N* is **count**.  
+-   If (`count` > 0), then *N* is `count`.  
   
--   If `(``count` == 0), then *N* is `strlen`( ( **const**`char` *) `_Getptr` ).  
+-   If (`count` == 0), then *N* is `strlen`( ( **const** `char` *) `_Getptr` ).  
   
--   If ( `count` < 0), then *N* is **INT_MAX**.  
+-   If (`count` < 0), then *N* is **INT_MAX**.  
   
  If `_Putptr` is a null pointer, the function establishes just an input buffer by executing:  
   
@@ -423,14 +422,13 @@ setp(_Putptr,
  Finally, the three constructors:  
   
 ```  
- 
 strstreambuf(const char *_Getptr,
     streamsize count);
 
-    strstreambuf(const signed char *_Getptr,
+strstreambuf(const signed char *_Getptr,
     streamsize count);
 
-    strstreambuf(const unsigned char *_Getptr,
+strstreambuf(const unsigned char *_Getptr,
     streamsize count);
 ```  
   
@@ -453,7 +451,7 @@ virtual int underflow();
  If the function cannot succeed, it returns `EOF`. Otherwise, it returns the current element in the input stream, converted as described above.  
   
 ### Remarks  
- The protected virtual member function endeavors to extract the current element **ch** from the input buffer, then advance the current stream position, and return the element as ( `int`)( `unsigned``char`) **ch**. It can do so in only one way: if a read position is available, it takes **ch** as the element stored in the read position and advances the next pointer for the input buffer.  
+ The protected virtual member function endeavors to extract the current element **ch** from the input buffer, then advance the current stream position, and return the element as (`int`)(`unsigned char`) **ch**. It can do so in only one way: if a read position is available, it takes **ch** as the element stored in the read position and advances the next pointer for the input buffer.  
   
 ## See Also  
  [streambuf](../standard-library/streambuf-typedefs.md#streambuf)   

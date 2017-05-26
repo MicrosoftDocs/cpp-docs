@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 f1_keywords: 
@@ -35,19 +35,22 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C2461
-'class' : constructor syntax missing formal parameters  
   
- The constructor for the class does not specify any formal parameters. The declaration of a constructor must specify a formal parameter. (The list can be null.)  
+> '*class*' : constructor syntax missing formal parameters  
   
- Add a pair of parentheses after `class``::``class`.  
+ The constructor for the class does not specify any formal parameters. The declaration of a constructor must specify a formal parameter list. The list can be empty.  
   
- The following sample generates C2461:  
+To fix this issue, add a pair of parentheses after the declaration of *class*::**class*.  
   
-```  
+## Example  
+  
+The following sample shows how to fix C2461:  
+  
+```cpp  
 // C2461.cpp  
 // compile with: /c  
 class C {  
-   C::C;   // C2461  
+   C::C;     // C2461  
    C::C();   // OK  
 };  
 ```

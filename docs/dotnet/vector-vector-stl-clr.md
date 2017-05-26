@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -77,13 +77,13 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `vector(vector<Value>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[vector::begin (STL/CLR)](../dotnet/vector-begin-stl-clr.md)`(),` `right``.`[vector::end (STL/CLR)](../dotnet/vector-end-stl-clr.md)`())`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object `right`.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object `right`.  
   
  The constructor:  
   
  `vector(vector<Value>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[vector::begin (STL/CLR)](../dotnet/vector-begin-stl-clr.md)`(),` `right``->`[vector::end (STL/CLR)](../dotnet/vector-end-stl-clr.md)`())`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object whose handle is `right`.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object whose handle is `right`.  
   
  The constructor:  
   
@@ -103,7 +103,7 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `vector(InIt first, InIt last);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`. You use it to make the controlled sequence a copy of another sequence.  
+ initializes the controlled sequence with the sequence [`first`, `last`). You use it to make the controlled sequence a copy of another sequence.  
   
  The constructor:  
   

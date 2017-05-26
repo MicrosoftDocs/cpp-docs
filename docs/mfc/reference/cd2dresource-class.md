@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DResource', 'AFXRENDERTARGET/CD2DResource', 'AFXRENDERTARGET/CD2DResource::CD2DResource', 'AFXRENDERTARGET/CD2DResource::Create', 'AFXRENDERTARGET/CD2DResource::Destroy', 'AFXRENDERTARGET/CD2DResource::IsValid', 'AFXRENDERTARGET/CD2DResource::IsAutoDestroy', 'AFXRENDERTARGET/CD2DResource::ReCreate', 'AFXRENDERTARGET/CD2DResource::m_bIsAutoDestroy', 'AFXRENDERTARGET/CD2DResource::m_pParentTarget']

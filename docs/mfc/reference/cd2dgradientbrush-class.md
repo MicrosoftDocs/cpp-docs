@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DGradientBrush', 'AFXRENDERTARGET/CD2DGradientBrush', 'AFXRENDERTARGET/CD2DGradientBrush::CD2DGradientBrush', 'AFXRENDERTARGET/CD2DGradientBrush::Destroy', 'AFXRENDERTARGET/CD2DGradientBrush::m_arGradientStops', 'AFXRENDERTARGET/CD2DGradientBrush::m_colorInterpolationGamma', 'AFXRENDERTARGET/CD2DGradientBrush::m_extendMode', 'AFXRENDERTARGET/CD2DGradientBrush::m_pGradientStops']

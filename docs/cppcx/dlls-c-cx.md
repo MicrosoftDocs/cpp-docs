@@ -3,7 +3,7 @@ title: "DLLs (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
 ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -65,5 +65,4 @@ You can use Visual Studio to create either a standard Win32 DLL or a [!INCLUDE[w
   
 3.  In your source code files, add a `#include` statement for the DLL header file, as needed.  
   
-## See Also  
- [(NOTINBUILD) Advanced Topics](http://msdn.microsoft.com/en-us/1ccff0cf-a6cc-47ef-a05f-eba6307b3ced)
+

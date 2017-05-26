@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['stdext::hash_multiset', 'hash_multiset', 'hash_set/stdext::hash_multiset', 'hash_set/stdext::hash_multiset::allocator_type', 'hash_set/stdext::hash_multiset::const_iterator', 'hash_set/stdext::hash_multiset::const_pointer', 'hash_set/stdext::hash_multiset::const_reference', 'hash_set/stdext::hash_multiset::const_reverse_iterator', 'hash_set/stdext::hash_multiset::difference_type', 'hash_set/stdext::hash_multiset::iterator', 'hash_set/stdext::hash_multiset::key_compare', 'hash_set/stdext::hash_multiset::key_type', 'hash_set/stdext::hash_multiset::pointer', 'hash_set/stdext::hash_multiset::reference', 'hash_set/stdext::hash_multiset::reverse_iterator', 'hash_set/stdext::hash_multiset::size_type', 'hash_set/stdext::hash_multiset::value_compare', 'hash_set/stdext::hash_multiset::value_type', 'hash_set/stdext::hash_multiset::begin', 'hash_set/stdext::hash_multiset::cbegin', 'hash_set/stdext::hash_multiset::cend', 'hash_set/stdext::hash_multiset::clear', 'hash_set/stdext::hash_multiset::count', 'hash_set/stdext::hash_multiset::crbegin', 'hash_set/stdext::hash_multiset::crend', 'hash_set/stdext::hash_multiset::emplace', 'hash_set/stdext::hash_multiset::emplace_hint', 'hash_set/stdext::hash_multiset::empty', 'hash_set/stdext::hash_multiset::end', 'hash_set/stdext::hash_multiset::equal_range', 'hash_set/stdext::hash_multiset::erase', 'hash_set/stdext::hash_multiset::find', 'hash_set/stdext::hash_multiset::get_allocator', 'hash_set/stdext::hash_multiset::insert', 'hash_set/stdext::hash_multiset::key_comp', 'hash_set/stdext::hash_multiset::lower_bound', 'hash_set/stdext::hash_multiset::max_size', 'hash_set/stdext::hash_multiset::rbegin', 'hash_set/stdext::hash_multiset::rend', 'hash_set/stdext::hash_multiset::size', 'hash_set/stdext::hash_multiset::swap', 'hash_set/stdext::hash_multiset::upper_bound', 'hash_set/stdext::hash_multiset::value_comp']  
@@ -1368,7 +1368,7 @@ hash_multiset(
   
  The first three constructors specify an empty initial `hash_multiset`, the second specifying the type of comparison function ( `Comp`) to be used in establishing the order of the elements and the third explicitly specifying the allocator type ( `Al`) to be used. The keyword `explicit` suppresses certain kinds of automatic type conversion.  
   
- The fourth constructor moves the `hash_multiset``Right`.  
+ The fourth constructor moves the `hash_multiset` `Right`.  
   
  The fifth, sixth, and seventh constructors use an initializer_list.  
   

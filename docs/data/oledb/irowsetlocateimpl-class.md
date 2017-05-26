@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -105,7 +105,7 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
   
  To support OLE DB bookmarks in a rowset, make the rowset inherit from this class.  
   
- For information on implementing bookmark support, see [Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md) in the *Visual C++ Programmer's Guide* and [Bookmarks](https://msdn.microsoft.com/en-us/library/ms709728.aspx) in the *OLE DB Programmer's Reference* in the `Platform``SDK`.  
+ For information on implementing bookmark support, see [Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md) in the *Visual C++ Programmer's Guide* and [Bookmarks](https://msdn.microsoft.com/en-us/library/ms709728.aspx) in the *OLE DB Programmer's Reference* in the Platform SDK.  
   
 ## Requirements  
  **Header**: atldb.h  

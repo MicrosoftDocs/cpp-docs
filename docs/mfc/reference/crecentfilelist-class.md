@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRecentFileList', 'AFXADV/CRecentFileList', 'AFXADV/CRecentFileList::CRecentFileList', 'AFXADV/CRecentFileList::Add', 'AFXADV/CRecentFileList::GetDisplayName', 'AFXADV/CRecentFileList::GetSize', 'AFXADV/CRecentFileList::ReadList', 'AFXADV/CRecentFileList::Remove', 'AFXADV/CRecentFileList::UpdateMenu', 'AFXADV/CRecentFileList::WriteList']

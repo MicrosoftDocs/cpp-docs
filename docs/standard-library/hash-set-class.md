@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['hash_set/stdext::hash_set', 'stdext::hash_set', 'hash_set', 'hash_set/stdext::hash_set::allocator_type', 'hash_set/stdext::hash_set::const_iterator', 'hash_set/stdext::hash_set::const_pointer', 'hash_set/stdext::hash_set::const_reference', 'hash_set/stdext::hash_set::const_reverse_iterator', 'hash_set/stdext::hash_set::difference_type', 'hash_set/stdext::hash_set::iterator', 'hash_set/stdext::hash_set::key_compare', 'hash_set/stdext::hash_set::key_type', 'hash_set/stdext::hash_set::pointer', 'hash_set/stdext::hash_set::reference', 'hash_set/stdext::hash_set::reverse_iterator', 'hash_set/stdext::hash_set::size_type', 'hash_set/stdext::hash_set::value_compare', 'hash_set/stdext::hash_set::value_type', 'hash_set/stdext::hash_set::begin', 'hash_set/stdext::hash_set::cbegin', 'hash_set/stdext::hash_set::cend', 'hash_set/stdext::hash_set::clear', 'hash_set/stdext::hash_set::count', 'hash_set/stdext::hash_set::crbegin', 'hash_set/stdext::hash_set::crend', 'hash_set/stdext::hash_set::emplace', 'hash_set/stdext::hash_set::emplace_hint', 'hash_set/stdext::hash_set::empty', 'hash_set/stdext::hash_set::end', 'hash_set/stdext::hash_set::equal_range', 'hash_set/stdext::hash_set::erase', 'hash_set/stdext::hash_set::find', 'hash_set/stdext::hash_set::get_allocator', 'hash_set/stdext::hash_set::insert', 'hash_set/stdext::hash_set::key_comp', 'hash_set/stdext::hash_set::lower_bound', 'hash_set/stdext::hash_set::max_size', 'hash_set/stdext::hash_set::rbegin', 'hash_set/stdext::hash_set::rend', 'hash_set/stdext::hash_set::size', 'hash_set/stdext::hash_set::swap', 'hash_set/stdext::hash_set::upper_bound', 'hash_set/stdext::hash_set::value_comp']  
@@ -1375,13 +1375,13 @@ hash_set(
   
  The first constructor creates an empty initial `hash_set` The second specifies the type of comparison function ( `Comp`) to be used in establishing the order of the elements, and the third explicitly specifies the allocator type ( `Al`) to be used. The key word `explicit` suppresses certain kinds of automatic type conversion.  
   
- The fourth and fifth constructors specify a copy of the `hash_set``Right`.  
+ The fourth and fifth constructors specify a copy of the `hash_set` `Right`.  
   
  The last sixth, seventh, and eighth constructors use an initializer_list for the elements.  
   
  The last constructors copy the range [ `First`, `Last`) of a `hash_set` with increasing explicitness in specifying the type of comparison function of class Traits and allocator.  
   
- The eighth constructor moves the `hash_set``Right`.  
+ The eighth constructor moves the `hash_set` `Right`.  
   
  The actual order of elements in a `hash_set` container depends on the hash function, the ordering function and the current size of the hash table and cannot, in general, be predicted as it could with the set container, where it was determined by the ordering function alone.  
   

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStringT', 'No header/ATL::CStringT', 'No header/ATL::CStringT::CStringT', 'No header/ATL::CStringT::AllocSysString', 'No header/ATL::CStringT::AnsiToOem', 'No header/ATL::CStringT::AppendFormat', 'No header/ATL::CStringT::Collate', 'No header/ATL::CStringT::CollateNoCase', 'No header/ATL::CStringT::Compare', 'No header/ATL::CStringT::CompareNoCase', 'No header/ATL::CStringT::Delete', 'No header/ATL::CStringT::Find', 'No header/ATL::CStringT::FindOneOf', 'No header/ATL::CStringT::Format', 'No header/ATL::CStringT::FormatMessage', 'No header/ATL::CStringT::FormatMessageV', 'No header/ATL::CStringT::FormatV', 'No header/ATL::CStringT::GetEnvironmentVariable', 'No header/ATL::CStringT::Insert', 'No header/ATL::CStringT::Left', 'No header/ATL::CStringT::LoadString', 'No header/ATL::CStringT::MakeLower', 'No header/ATL::CStringT::MakeReverse', 'No header/ATL::CStringT::MakeUpper', 'No header/ATL::CStringT::Mid', 'No header/ATL::CStringT::OemToAnsi', 'No header/ATL::CStringT::Remove', 'No header/ATL::CStringT::Replace', 'No header/ATL::CStringT::ReverseFind', 'No header/ATL::CStringT::Right', 'No header/ATL::CStringT::SetSysString', 'No header/ATL::CStringT::SpanExcluding', 'No header/ATL::CStringT::SpanIncluding', 'No header/ATL::CStringT::Tokenize', 'No header/ATL::CStringT::Trim', 'No header/ATL::CStringT::TrimLeft', 'No header/ATL::CStringT::TrimRight']
@@ -159,7 +159,7 @@ public CSimpleStringT<BaseType,
  `CString`, `CStringA`, and `CStringW` are exported from the MFC DLL (MFC90.DLL), never from user DLLs. This is done to prevent `CStringT` from being multiply defined.  
   
 > [!NOTE]
->  If you encountered linker errors when exporting a `CString`-derived class from an MFC extension DLL in Visual C++ .NET 2002 and have applied the workaround as described in the Knowledge Base article, "Linking Errors When You Import CString-Derived Classes" (Q309801), you should remove the workaround code, because this has been fixed in Visual C++ .NET 2003. You can find Knowledge Base articles on the MSDN Library CD-ROM or at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
+>  If you encountered linker errors when exporting a `CString`-derived class from an MFC extension DLL in Visual C++ .NET 2002 and have applied the workaround as described in the Knowledge Base article, "Linking Errors When You Import CString-Derived Classes" (Q309801), you should remove the workaround code, because this has been fixed in Visual C++ .NET 2003. You can find Knowledge Base articles at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
   
  The following string types are available within MFC-based applications:  
   

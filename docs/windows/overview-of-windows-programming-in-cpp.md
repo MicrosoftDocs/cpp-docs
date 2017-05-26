@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -114,4 +114,4 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Visual C++](../visual-cpp-in-visual-studio.md)|Parent topic for MSDN Library content about C++.|
+|[Visual C++](../visual-cpp-in-visual-studio.md)|Parent topic for Visual C++ developer content.|

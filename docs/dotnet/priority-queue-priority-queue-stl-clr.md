@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -106,19 +106,19 @@ template<typename InIt>
   
  `template<typename InIt> priority_queue(InIt first, InIt last);`  
   
- creates an empty wrapped container, with the default ordering predicate, then pushes the sequence `[``first``,` `last``)`. You use it to specify an initial controlled sequence from a specified eqeuence, with the specified ordering predicate.  
+ creates an empty wrapped container, with the default ordering predicate, then pushes the sequence [`first`, `last`). You use it to specify an initial controlled sequence from a specified eqeuence, with the specified ordering predicate.  
   
  The constructor:  
   
  `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred);`  
   
- creates an empty wrapped container, with the ordering predicate `pred`, then pushes the sequence `[``first``,` `last``)`. You use it to specify an initial controlled sequence from a specified seqeuence, with the specified ordering predicate.  
+ creates an empty wrapped container, with the ordering predicate `pred`, then pushes the sequence [`first`, `last`). You use it to specify an initial controlled sequence from a specified seqeuence, with the specified ordering predicate.  
   
  The constructor:  
   
  `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred, container_type% cont);`  
   
- creates an empty wrapped container, with the ordering predicate `pred`, then pushes all the elements of `cont` plus the sequence `[``first``,` `last``)`. You use it to specify an initial controlled sequence from an existing container and a specified seqeuence, with the specified ordering predicate.  
+ creates an empty wrapped container, with the ordering predicate `pred`, then pushes all the elements of `cont` plus the sequence [`first`, `last`). You use it to specify an initial controlled sequence from an existing container and a specified seqeuence, with the specified ordering predicate.  
   
 ## Example  
   

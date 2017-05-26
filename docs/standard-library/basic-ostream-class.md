@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ostream/std::basic_ostream', 'basic_ostream', 'ostream/std::basic_ostream::flush', 'ostream/std::basic_ostream::put', 'ostream/std::basic_ostream::seekp', 'ostream/std::basic_ostream::sentry', 'ostream/std::basic_ostream::swap', 'ostream/std::basic_ostream::tellp', 'ostream/std::basic_ostream::write']  
@@ -162,7 +162,7 @@ basic_ostream(basic_ostream&& right);
  An rvalue reference to an object of type `basic_ostream`.  
   
 ### Remarks  
- The first constructor initializes the base class by calling [init](../standard-library/basic-ios-class.md#init)(`strbuf`). The second constructor initializes the base class by calling [basic_ios::move](../standard-library/basic-ios-class.md#move)`(``right``)`.  
+ The first constructor initializes the base class by calling [init](../standard-library/basic-ios-class.md#init)(`strbuf`). The second constructor initializes the base class by calling [basic_ios::move](../standard-library/basic-ios-class.md#move)`(right)`.  
   
 ### Example  
   See the example for [basic_ofstream::basic_ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream) to learn more about output streams.  
@@ -350,7 +350,7 @@ basic_ostream& operator=(basic_ostream&& right);
  An `rvalue` reference to a `basic_ostream` object.  
   
 ### Remarks  
- The member operator calls swap `(``right``)`.  
+ The member operator calls swap `(right)`.  
   
 ##  <a name="put"></a>  basic_ostream::put  
  Puts a character in a stream.  
@@ -472,7 +472,7 @@ void swap(basic_ostream& right);
  A reference to a `basic_ostream` object.  
   
 ### Remarks  
- The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#swap)`(``right``)` to exchange the contents of this object for the contents of `right`.  
+ The member function calls [basic_ios::swap](../standard-library/basic-ios-class.md#swap)`(right)` to exchange the contents of this object for the contents of `right`.  
   
 ##  <a name="tellp"></a>  basic_ostream::tellp  
  Report position in output stream.  

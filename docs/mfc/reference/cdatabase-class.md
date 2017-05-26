@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDatabase', 'AFXDB/CDatabase', 'AFXDB/CDatabase::CDatabase', 'AFXDB/CDatabase::BeginTrans', 'AFXDB/CDatabase::BindParameters', 'AFXDB/CDatabase::Cancel', 'AFXDB/CDatabase::CanTransact', 'AFXDB/CDatabase::CanUpdate', 'AFXDB/CDatabase::Close', 'AFXDB/CDatabase::CommitTrans', 'AFXDB/CDatabase::ExecuteSQL', 'AFXDB/CDatabase::GetBookmarkPersistence', 'AFXDB/CDatabase::GetConnect', 'AFXDB/CDatabase::GetCursorCommitBehavior', 'AFXDB/CDatabase::GetCursorRollbackBehavior', 'AFXDB/CDatabase::GetDatabaseName', 'AFXDB/CDatabase::IsOpen', 'AFXDB/CDatabase::OnSetOptions', 'AFXDB/CDatabase::Open', 'AFXDB/CDatabase::OpenEx', 'AFXDB/CDatabase::Rollback', 'AFXDB/CDatabase::SetLoginTimeout', 'AFXDB/CDatabase::SetQueryTimeout', 'AFXDB/CDatabase::m_hdbc']
@@ -504,7 +504,7 @@ BOOL Rollback();
  Nonzero if the transaction was successfully reversed; otherwise 0. If a **Rollback** call fails, the data source and transaction states are undefined. If **Rollback** returns 0, you must check the data source to determine its state.  
   
 ### Remarks  
- All `CRecordset``AddNew`, **Edit**, **Delete**, and **Update** calls executed since the last [BeginTrans](#begintrans) are rolled back to the state that existed at the time of that call.  
+ All `CRecordset` `AddNew`, **Edit**, **Delete**, and **Update** calls executed since the last [BeginTrans](#begintrans) are rolled back to the state that existed at the time of that call.  
   
  After a call to **Rollback**, the transaction is over, and you must call **BeginTrans** again for another transaction. The record that was current before you called **BeginTrans** becomes the current record again after **Rollback**.  
   

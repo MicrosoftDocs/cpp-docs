@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDispatchDriver', 'AFXDISP/COleDispatchDriver', 'AFXDISP/COleDispatchDriver::COleDispatchDriver', 'AFXDISP/COleDispatchDriver::AttachDispatch', 'AFXDISP/COleDispatchDriver::CreateDispatch', 'AFXDISP/COleDispatchDriver::DetachDispatch', 'AFXDISP/COleDispatchDriver::GetProperty', 'AFXDISP/COleDispatchDriver::InvokeHelper', 'AFXDISP/COleDispatchDriver::ReleaseDispatch', 'AFXDISP/COleDispatchDriver::SetProperty', 'AFXDISP/COleDispatchDriver::m_bAutoRelease', 'AFXDISP/COleDispatchDriver::m_lpDispatch']
@@ -139,7 +139,7 @@ COleDispatchDriver(LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE);
  Reference to an existing `COleDispatchDriver` object.  
   
 ### Remarks  
- The form `COleDispatchDriver`( `LPDISPATCH``lpDispatch`, **BOOL**`bAutoRelease` = **TRUE**) connects the [IDispatch](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) interface.  
+ The form `COleDispatchDriver`( `LPDISPATCH lpDispatch`, **BOOL**`bAutoRelease` = **TRUE**) connects the [IDispatch](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945) interface.  
   
  The form `COleDispatchDriver`( **const**`COleDispatchDriver`& `dispatchSrc`) copies an existing `COleDispatchDriver` object and increments the reference count.  
   

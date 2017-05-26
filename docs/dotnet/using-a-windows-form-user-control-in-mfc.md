@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -89,9 +89,9 @@ Using the MFC Windows Forms support classes, you can host Windows Forms controls
  [UICheckState](../mfc/reference/uicheckstate-enumeration.md)  
   
 ## Related Sections  
- [Windows Forms](/dotnet/articles/framework/winforms/index)  
+ [Windows Forms](/dotnet/framework/winforms/index)  
   
- [Windows Forms Controls](/dotnet/articles/framework/winforms/controls/index)  
+ [Windows Forms Controls](/dotnet/framework/winforms/controls/index)  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   

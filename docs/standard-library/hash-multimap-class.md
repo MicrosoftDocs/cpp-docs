@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['stdext::hash_multimap', 'hash_map/stdext::hash_multimap', 'hash_multimap', 'hash_map/stdext::hash_multimap::allocator_type', 'hash_map/stdext::hash_multimap::const_iterator', 'hash_map/stdext::hash_multimap::const_pointer', 'hash_map/stdext::hash_multimap::const_reference', 'hash_map/stdext::hash_multimap::const_reverse_iterator', 'hash_map/stdext::hash_multimap::difference_type', 'hash_map/stdext::hash_multimap::iterator', 'hash_map/stdext::hash_multimap::key_compare', 'hash_map/stdext::hash_multimap::key_type', 'hash_map/stdext::hash_multimap::mapped_type', 'hash_map/stdext::hash_multimap::pointer', 'hash_map/stdext::hash_multimap::reference', 'hash_map/stdext::hash_multimap::reverse_iterator', 'hash_map/stdext::hash_multimap::size_type', 'hash_map/stdext::hash_multimap::value_type', 'hash_map/stdext::hash_multimap::begin', 'hash_map/stdext::hash_multimap::cbegin', 'hash_map/stdext::hash_multimap::cend', 'hash_map/stdext::hash_multimap::clear', 'hash_map/stdext::hash_multimap::count', 'hash_map/stdext::hash_multimap::crbegin', 'hash_map/stdext::hash_multimap::crend', 'hash_map/stdext::hash_multimap::emplace', 'hash_map/stdext::hash_multimap::emplace_hint', 'hash_map/stdext::hash_multimap::empty', 'hash_map/stdext::hash_multimap::end', 'hash_map/stdext::hash_multimap::equal_range', 'hash_map/stdext::hash_multimap::erase', 'hash_map/stdext::hash_multimap::find', 'hash_map/stdext::hash_multimap::get_allocator', 'hash_map/stdext::hash_multimap::insert', 'hash_map/stdext::hash_multimap::key_comp', 'hash_map/stdext::hash_multimap::lower_bound', 'hash_map/stdext::hash_multimap::max_size', 'hash_map/stdext::hash_multimap::rbegin', 'hash_map/stdext::hash_multimap::rend', 'hash_map/stdext::hash_multimap::size', 'hash_map/stdext::hash_multimap::swap', 'hash_map/stdext::hash_multimap::upper_bound', 'hash_map/stdext::hash_multimap::value_comp']  
@@ -57,7 +57,7 @@ class hash_multimap
  The element data type to be stored in the hash_multimap.  
   
  `Traits`  
- The type that includes two function objects, one of class `Traits` that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type **size_t**. This argument is optional, and the `hash_compare``<Key, less<Key> >` is the default value.  
+ The type that includes two function objects, one of class `Traits` that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type **size_t**. This argument is optional, and the `hash_compare<Key, less<Key> >` is the default value.  
   
  `Allocator`  
  The type that represents the stored allocator object that encapsulates details about the hash_multimap's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<pair <const Key, Type> >`.  
@@ -406,7 +406,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
   
  The `const_iterator` defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***constKey, Type***>*. The value of the key is available through the first member pair, and the value of the mapped element is available through the second member of the pair.  
   
- To dereference a `const_iterator``cIter` pointing to an element in a hash_multimap, use the **->** operator.  
+ To dereference a `const_iterator` `cIter` pointing to an element in a hash_multimap, use the **->** operator.  
   
  To access the value of the key for the element, use `cIter` -> **first**, which is equivalent to (\* `cIter`). **first**. To access the value of the mapped datum for the element, use `cIter` -> **second**, which is equivalent to (\* `cIter`). **first**.  
   
@@ -506,7 +506,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
   
  The `const_reverse_iterator` defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key, Type>**, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `const_reverse_iterator``crIter` pointing to an element in a hash_multimap, use the **->** operator.  
+ To dereference a `const_reverse_iterator` `crIter` pointing to an element in a hash_multimap, use the **->** operator.  
   
  To access the value of the key for the element, use `crIter` -> **first**, which is equivalent to (\* `crIter`). **first**. To access the value of the mapped datum for the element, use `crIter` -> **second**, which is equivalent to (\* `crIter`). **first**.  
   
@@ -1454,7 +1454,7 @@ hash_multimap(
 |-|-|  
 |Parameter|Description|  
 |`Al`|The storage allocator class to be used for this hash_multimap object, which defaults to `Allocator`.|  
-|`Comp`|The comparison function of type `const``Traits` used to order the elements in the map, which defaults to `Traits`.|  
+|`Comp`|The comparison function of type `const Traits` used to order the elements in the map, which defaults to `Traits`.|  
 |`Right`|The map of which the constructed set is to be a copy.|  
 |`First`|The position of the first element in the range of elements to be copied.|  
 |`Last`|The position of the first element beyond the range of elements to be copied.|  

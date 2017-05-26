@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFontDialog', 'AFXDLGS/CFontDialog', 'AFXDLGS/CFontDialog::CFontDialog', 'AFXDLGS/CFontDialog::DoModal', 'AFXDLGS/CFontDialog::GetCharFormat', 'AFXDLGS/CFontDialog::GetColor', 'AFXDLGS/CFontDialog::GetCurrentFont', 'AFXDLGS/CFontDialog::GetFaceName', 'AFXDLGS/CFontDialog::GetSize', 'AFXDLGS/CFontDialog::GetStyleName', 'AFXDLGS/CFontDialog::GetWeight', 'AFXDLGS/CFontDialog::IsBold', 'AFXDLGS/CFontDialog::IsItalic', 'AFXDLGS/CFontDialog::IsStrikeOut', 'AFXDLGS/CFontDialog::IsUnderline', 'AFXDLGS/CFontDialog::m_cf']

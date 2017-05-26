@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['codecvt', 'xlocale/std::codecvt', 'locale/std::codecvt::extern_type', 'locale/std::codecvt::intern_type', 'locale/std::codecvt::state_type', 'locale/std::codecvt::always_noconv', 'locale/std::codecvt::do_always_noconv', 'locale/std::codecvt::do_encoding', 'locale/std::codecvt::do_in', 'locale/std::codecvt::do_length', 'locale/std::codecvt::do_max_length', 'locale/std::codecvt::do_out', 'locale/std::codecvt::do_unshift', 'locale/std::codecvt::encoding', 'locale/std::codecvt::in', 'locale/std::codecvt::length', 'locale/std::codecvt::max_length', 'locale/std::codecvt::out', 'locale/std::codecvt::unshift']  

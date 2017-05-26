@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IOleControlImpl', 'ATLCTL/ATL::IOleControlImpl', 'ATLCTL/ATL::IOleControlImpl::FreezeEvents', 'ATLCTL/ATL::IOleControlImpl::GetControlInfo', 'ATLCTL/ATL::IOleControlImpl::OnAmbientPropertyChange', 'ATLCTL/ATL::IOleControlImpl::OnMnemonic']

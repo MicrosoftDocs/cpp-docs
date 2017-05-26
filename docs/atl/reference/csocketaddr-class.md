@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSocketAddr', 'ATLSOCKET/ATL::CSocketAddr', 'ATLSOCKET/ATL::CSocketAddr::CSocketAddr', 'ATLSOCKET/ATL::CSocketAddr::FindAddr', 'ATLSOCKET/ATL::CSocketAddr::FindINET4Addr', 'ATLSOCKET/ATL::CSocketAddr::FindINET6Addr', 'ATLSOCKET/ATL::CSocketAddr::GetAddrInfo', 'ATLSOCKET/ATL::CSocketAddr::GetAddrInfoList']

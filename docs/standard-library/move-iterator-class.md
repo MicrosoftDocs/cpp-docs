@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['move_iterator', 'iterator/std::move_iterator', 'iterator/std::move_iterator::iterator_type', 'iterator/std::move_iterator::iterator_category', 'iterator/std::move_iterator::value_type', 'iterator/std::move_iterator::difference_type', 'iterator/std::move_iterator::pointer', 'iterator/std::move_iterator::reference', 'iterator/std::move_iterator::base']  
@@ -41,7 +41,7 @@ Class template `move_iterator` is a wrapper for an iterator. The move_iterator p
 class move_iterator;  
 ```
 ## Remarks  
- The template class describes an object that behaves like an iterator except when dereferenced. It stores a random-access iterator of type `Iterator`, accessed by way of the member function `base``()`. All operations on a `move_iterator` are performed directly on the stored iterator, except that the result of `operator*` is implicitly cast to `value_type&&` to make an rvalue reference.  
+ The template class describes an object that behaves like an iterator except when dereferenced. It stores a random-access iterator of type `Iterator`, accessed by way of the member function `base()`. All operations on a `move_iterator` are performed directly on the stored iterator, except that the result of `operator*` is implicitly cast to `value_type&&` to make an rvalue reference.  
   
  A `move_iterator` might be capable of operations that are not defined by the wrapped iterator. These operations should not be used.  
   
@@ -72,7 +72,7 @@ class move_iterator;
   
 |||  
 |-|-|  
-|[move_iterator::operator*](#op_star)|Returns `(reference)*``base``().`|  
+|[move_iterator::operator*](#op_star)|Returns `(reference)*base().`|  
 |[move_iterator::operator++](#op_add_add)|Increments the stored iterator. Exact behavior depends on whether it is a preincrement or a postincrement operation.|  
 |[move_iterator::operator--](#operator--)|Decrements the stored iterator. Exact behavior depends on whether it is a predecrement or a postdecrement operation.|  
 |[move_iterator::operator-&gt;](#operator-_gt)|Returns `&**this`.|  
@@ -98,7 +98,7 @@ RandomIterator base() const;
  The member function returns the stored iterator.  
   
 ##  <a name="difference_type"></a>  move_iterator::difference_type  
- The type `difference_type` is a `move_iterator``typedef` based on the iterator trait `difference_type`, and can be used interchangeably with it.  
+ The type `difference_type` is a `move_iterator` `typedef` based on the iterator trait `difference_type`, and can be used interchangeably with it.  
   
 ```
 typedef typename iterator_traits<RandomIterator>::difference_type difference_type;
@@ -108,7 +108,7 @@ typedef typename iterator_traits<RandomIterator>::difference_type difference_typ
  The type is a synonym for the iterator trait `typename iterator_traits<RandomIterator>::pointer`.  
   
 ##  <a name="iterator_category"></a>  move_iterator::iterator_category  
- The type `iterator_category` is a `move_iterator``typedef` based on the iterator trait `iterator_category`, and can be used interchangeably with it.  
+ The type `iterator_category` is a `move_iterator` `typedef` based on the iterator trait `iterator_category`, and can be used interchangeably with it.  
   
 ```
 typedef typename iterator_traits<RandomIterator>::iterator_category  iterator_category;
@@ -247,10 +247,10 @@ reference operator*() const;
 ```  
   
 ### Remarks  
- The operator returns `(reference)*``base``()`.  
+ The operator returns `(reference)*base()`.  
   
 ##  <a name="move_iterator__operator-_gt"></a>  move_iterator::operator-&gt;  
- Like a normal `RandomIterator``operator->`, it provides access to the fields that belong to the current element.  
+ Like a normal `RandomIterator` `operator->`, it provides access to the fields that belong to the current element.  
   
 ```
 pointer operator->() const;
@@ -280,7 +280,7 @@ typedef value_type&& reference;
  The type is a synonym for `value_type&&`, which is an rvalue reference.  
   
 ##  <a name="value_type"></a>  move_iterator::value_type  
- The type `value_type` is a `move_iterator``typedef` based on the iterator trait `value_type`, and can be used interchangeably with it.  
+ The type `value_type` is a `move_iterator` `typedef` based on the iterator trait `value_type`, and can be used interchangeably with it.  
   
 ```
 typedef typename iterator_traits<RandomIterator>::value_type   value_type;

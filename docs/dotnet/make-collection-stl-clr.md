@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -45,21 +45,21 @@ template<typename Iter>
 ```  
   
 #### Parameters  
- Iter  
+ `Iter`  
  The type of the wrapped iterators.  
   
- first  
+ `first`  
  First iterator to wrap.  
   
- last  
+ `last`  
  Second iterator to wrap.  
   
 ## Remarks  
- The template function returns `gcnew range_adapter<Iter>(``first``,` `last``)`. You use it to construct a `range_adapter``<Iter>` object from a pair of iterators.  
+ The template function returns `gcnew range_adapter<Iter>(first, last)`. You use it to construct a `range_adapter<Iter>` object from a pair of iterators.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_make_collection.cpp   
 // compile with: /clr   
 #include <cliext/adapter>   

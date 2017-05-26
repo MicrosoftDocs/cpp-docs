@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['stdext::hash_map', 'hash_map/stdext::hash_map', 'hash_map', 'hash_map/stdext::hash_map::allocator_type', 'hash_map/stdext::hash_map::const_iterator', 'hash_map/stdext::hash_map::const_pointer', 'hash_map/stdext::hash_map::const_reference', 'hash_map/stdext::hash_map::const_reverse_iterator', 'hash_map/stdext::hash_map::difference_type', 'hash_map/stdext::hash_map::iterator', 'hash_map/stdext::hash_map::key_compare', 'hash_map/stdext::hash_map::key_type', 'hash_map/stdext::hash_map::mapped_type', 'hash_map/stdext::hash_map::pointer', 'hash_map/stdext::hash_map::reference', 'hash_map/stdext::hash_map::reverse_iterator', 'hash_map/stdext::hash_map::size_type', 'hash_map/stdext::hash_map::value_type', 'hash_map/stdext::hash_map::at', 'hash_map/stdext::hash_map::begin', 'hash_map/stdext::hash_map::cbegin', 'hash_map/stdext::hash_map::cend', 'hash_map/stdext::hash_map::clear', 'hash_map/stdext::hash_map::count', 'hash_map/stdext::hash_map::crbegin', 'hash_map/stdext::hash_map::crend', 'hash_map/stdext::hash_map::emplace', 'hash_map/stdext::hash_map::emplace_hint', 'hash_map/stdext::hash_map::empty', 'hash_map/stdext::hash_map::end', 'hash_map/stdext::hash_map::equal_range', 'hash_map/stdext::hash_map::erase', 'hash_map/stdext::hash_map::find', 'hash_map/stdext::hash_map::get_allocator', 'hash_map/stdext::hash_map::insert', 'hash_map/stdext::hash_map::key_comp', 'hash_map/stdext::hash_map::lower_bound', 'hash_map/stdext::hash_map::max_size', 'hash_map/stdext::hash_map::rbegin', 'hash_map/stdext::hash_map::rend', 'hash_map/stdext::hash_map::size', 'hash_map/stdext::hash_map::swap', 'hash_map/stdext::hash_map::upper_bound', 'hash_map/stdext::hash_map::value_comp']  
@@ -451,7 +451,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
   
  The `const_iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type `pair`*\<***const Key, Type***>*, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `const_iterator``cIter` pointing to an element in a hash_map, use the **->** operator.  
+ To dereference a `const_iterator` `cIter` pointing to an element in a hash_map, use the **->** operator.  
   
  To access the value of the key for the element, use `cIter` **-> first**, which is equivalent to (\* `cIter`) **.first**. To access the value of the mapped datum for the element, use `cIter` **-> second**, which is equivalent to (\* `cIter`) **.second**.  
   
@@ -551,7 +551,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
   
  The `const_reverse_iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type `pair`\< **const Key, Type**>, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `const_reverse_iterator``crIter` pointing to an element in a hash_map, use the **->** operator.  
+ To dereference a `const_reverse_iterator` `crIter` pointing to an element in a hash_map, use the **->** operator.  
   
  To access the value of the key for the element, use `crIter` -> **first**, which is equivalent to (\* `crIter`) **.first**. To access the value of the mapped datum for the element, use `crIter` -> **second**, which is equivalent to (\* `crIter`). **first**.  
   
@@ -2360,7 +2360,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::reve
   
  The `reverse_iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type **pair\<const Key, Type>**, whose first member is the key to the element and whose second member is the mapped datum held by the element.  
   
- To dereference a `reverse_iterator``rIter` pointing to an element in a hash_map, use the -> operator.  
+ To dereference a `reverse_iterator` `rIter` pointing to an element in a hash_map, use the -> operator.  
   
  To access the value of the key for the element, use `rIter` -> **first**, which is equivalent to (\* `rIter`). **first**. To access the value of the mapped datum for the element, use `rIter` -> **second**, which is equivalent to (\* `rIter`). **first**.  
   

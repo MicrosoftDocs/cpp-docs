@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['weak_ptr', 'memory/std::weak_ptr', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count', 'memory/std::weak_ptr::operator=', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count']  
@@ -326,7 +326,7 @@ bool owner_before(const weak_ptr<Other>& ptr);
  An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.  
   
 ### Remarks  
- The template member function returns `true` if `*this` is `ordered before``ptr`.  
+ The template member function returns `true` if `*this` is `ordered before` `ptr`.  
   
 ##  <a name="reset"></a>  reset  
  Releases owned resource.  

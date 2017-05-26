@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -178,7 +178,7 @@ The Visual C++ compiler predefines certain preprocessor macros, depending on the
 ## Standard predefined identifier  
  The compiler supports this predefined identifier specified by ISO C99 and ISO C++11.  
   
--   **__func\_\_** The unqualified and unadorned name of the enclosing function as a function-local `static``const` array of `char`.  
+-   **__func\_\_** The unqualified and unadorned name of the enclosing function as a function-local `static const` array of `char`.  
   
     ```cpp  
     void example(){  

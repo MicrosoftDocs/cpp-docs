@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-ide"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -94,61 +94,59 @@ By using property pages, you can specify settings for Visual Studio projects. To
   
 ## In This Section  
   
-1.  [NIB: Add Reference Search Path Dialog Box](http://msdn.microsoft.com/en-us/4520d80d-aa9f-4d11-b92b-2f64a1fd5cb2)  
+ 
+  [Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/advanced-manifest-tool.md)   
   
-2.  [Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/advanced-manifest-tool.md)  
+  [Command Line Property Pages](../ide/command-line-property-pages.md)  
   
-3.  [Command Line Property Pages](../ide/command-line-property-pages.md)  
+  [Custom Build Step Property Page: General](../ide/custom-build-step-property-page-general.md)  
   
-4.  [Custom Build Step Property Page: General](../ide/custom-build-step-property-page-general.md)  
+  [Adding references](../ide/adding-references-in-visual-cpp-projects.md)  
   
-5.  [Adding references](../ide/adding-references-in-visual-cpp-projects.md)  
+  [General Property Page (File)](../ide/general-property-page-file.md)  
   
-6.  [General Property Page (File)](../ide/general-property-page-file.md)  
+  [General Property Page (Project)](../ide/general-property-page-project.md)  
+   
+  [General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/general-manifest-tool-configuration-properties.md)  
   
-7.  [General Property Page (Project)](../ide/general-property-page-project.md)  
+  [HLSL Property Pages](../ide/hlsl-property-pages.md)  
   
-8.  [General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/general-manifest-tool-configuration-properties.md)  
+  [HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)  
   
-9. [HLSL Property Pages](../ide/hlsl-property-pages.md)  
+  [HLSL Property Pages: General](../ide/hlsl-property-pages-general.md)  
   
-10. [HLSL Property Pages: Advanced](../ide/hlsl-property-pages-advanced.md)  
+  [HLSL Property Pages: Output Files](../ide/hlsl-property-pages-output-files.md)  
   
-11. [HLSL Property Pages: General](../ide/hlsl-property-pages-general.md)  
+  [Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/input-and-output-manifest-tool.md)  
   
-12. [HLSL Property Pages: Output Files](../ide/hlsl-property-pages-output-files.md)  
+  [Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/isolated-com-manifest-tool.md)  
   
-13. [Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/input-and-output-manifest-tool.md)  
+  [Linker Property Pages](../ide/linker-property-pages.md)  
   
-14. [Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](../ide/isolated-com-manifest-tool.md)  
+  [Managed Resources Property Page](../ide/managed-resources-property-page.md)  
   
-15. [Linker Property Pages](../ide/linker-property-pages.md)  
+  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)  
   
-16. [Managed Resources Property Page](../ide/managed-resources-property-page.md)  
+  [MIDL Property Pages](../ide/midl-property-pages.md)  
   
-17. [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)  
+  [MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md)  
   
-18. [MIDL Property Pages](../ide/midl-property-pages.md)  
+  [MIDL Property Pages: General](../ide/midl-property-pages-general.md)  
   
-19. [MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md)  
+  [MIDL Property Pages: Output](../ide/midl-property-pages-output.md)  
   
-20. [MIDL Property Pages: General](../ide/midl-property-pages-general.md)  
+  [NMake Property Page](../ide/nmake-property-page.md)  
   
-21. [MIDL Property Pages: Output](../ide/midl-property-pages-output.md)  
+  [Resources Property Pages](../ide/resources-property-pages.md)  
   
-22. [NMake Property Page](../ide/nmake-property-page.md)  
+  [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md)  
   
-23. [Resources Property Pages](../ide/resources-property-pages.md)  
+  [Web References Property Page](../ide/web-references-property-page.md)  
   
-24. [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md)  
+  [XML Data Generator Tool Property Page](../ide/xml-data-generator-tool-property-page.md)  
   
-25. [Web References Property Page](../ide/web-references-property-page.md)  
-  
-26. [XML Data Generator Tool Property Page](../ide/xml-data-generator-tool-property-page.md)  
-  
-27. [XML Document Generator Tool Property Pages](../ide/xml-document-generator-tool-property-pages.md)  
+  [XML Document Generator Tool Property Pages](../ide/xml-document-generator-tool-property-pages.md)  
   
 ## See Also  
  [How to: Create and Remove Project Dependencies](/visualstudio/ide/how-to-create-and-remove-project-dependencies)   
  [How to: Create and Edit Configurations](/visualstudio/ide/how-to-create-and-edit-configurations)   
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)

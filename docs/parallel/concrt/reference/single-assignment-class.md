@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['single_assignment', 'AGENTS/concurrency::single_assignment', 'AGENTS/concurrency::single_assignment::single_assignment', 'AGENTS/concurrency::single_assignment::has_value', 'AGENTS/concurrency::single_assignment::value', 'AGENTS/concurrency::single_assignment::accept_message', 'AGENTS/concurrency::single_assignment::consume_message', 'AGENTS/concurrency::single_assignment::link_target_notification', 'AGENTS/concurrency::single_assignment::propagate_message', 'AGENTS/concurrency::single_assignment::propagate_to_any_targets', 'AGENTS/concurrency::single_assignment::release_message', 'AGENTS/concurrency::single_assignment::reserve_message', 'AGENTS/concurrency::single_assignment::resume_propagation', 'AGENTS/concurrency::single_assignment::send_message']
@@ -71,7 +71,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 |[consume_message](#consume_message)|Consumes a message previously offered by the `single_assignment` and reserved by the target, returning a copy of the message to the caller.|  
 |[link_target_notification](#link_target_notification)|A callback that notifies that a new target has been linked to this `single_assignment` messaging block.|  
 |[propagate_message](#propagate_message)|Asynchronously passes a message from an `ISource` block to this `single_assignment` messaging block. It is invoked by the `propagate` method, when called by a source block.|  
-|[propagate_to_any_targets](#propagate_to_any_targets)|Places the `message``_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.|  
+|[propagate_to_any_targets](#propagate_to_any_targets)|Places the `message _PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.|  
 |[release_message](#release_message)|Releases a previous message reservation. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
 |[reserve_message](#reserve_message)|Reserves a message previously offered by this `single_assignment` messaging block. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
 |[resume_propagation](#resume_propagation)|Resumes propagation after a reservation has been released. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
@@ -179,7 +179,7 @@ virtual message_status propagate_message(
   
 ##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets 
 
- Places the `message``_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.  
+ Places the `message` `_PMessage` in this `single_assignment` messaging block and offers it to all of the linked targets.  
   
 ```
 virtual void propagate_to_any_targets(_Inout_opt_ message<T>* _PMessage);

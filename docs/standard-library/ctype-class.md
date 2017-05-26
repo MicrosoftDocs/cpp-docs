@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ctype', 'xlocale/std::ctype', 'locale/std::ctype::char_type', 'locale/std::ctype::do_is', 'locale/std::ctype::do_narrow', 'locale/std::ctype::do_scan_is', 'locale/std::ctype::do_scan_not', 'locale/std::ctype::do_tolower', 'locale/std::ctype::do_toupper', 'locale/std::ctype::do_widen', 'locale/std::ctype::is', 'locale/std::ctype::narrow', 'locale/std::ctype::scan_is', 'locale/std::ctype::scan_not', 'locale/std::ctype::tolower', 'locale/std::ctype::toupper', 'locale/std::ctype::widen']  
@@ -486,7 +486,7 @@ const CharType* narrow(
  A const pointer to the first character of type `char` in the destination range that stores the converted range of characters.  
   
 ### Return Value  
- The first member function returns the native character of type `char` that corresponds to the parameter character of type `CharType``default` if not counterpart is defined.  
+ The first member function returns the native character of type `char` that corresponds to the parameter character of type `CharType default` if not counterpart is defined.  
   
  The second member function returns a pointer to the destination range of native characters converted from characters of type `CharType`.  
   

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['system_error/std::error_category', 'error_category', 'system_error/std::error_category::value_type', 'system_error/std::error_category::default_error_condition', 'system_error/std::error_category::equivalent', 'system_error/std::error_category::message', 'system_error/std::error_category::name']  

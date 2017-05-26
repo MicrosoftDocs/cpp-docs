@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonCheckBox', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::CMFCRibbonCheckBox', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetCompactSize', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetIntermediateSize', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetRegularSize', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::IsDrawTooltipImage', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDraw', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawMenuImage', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawOnList', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::SetACCData']

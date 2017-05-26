@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRichEditView', 'AFXRICH/CRichEditView', 'AFXRICH/CRichEditView::CRichEditView', 'AFXRICH/CRichEditView::AdjustDialogPosition', 'AFXRICH/CRichEditView::CanPaste', 'AFXRICH/CRichEditView::DoPaste', 'AFXRICH/CRichEditView::FindText', 'AFXRICH/CRichEditView::FindTextSimple', 'AFXRICH/CRichEditView::GetCharFormatSelection', 'AFXRICH/CRichEditView::GetDocument', 'AFXRICH/CRichEditView::GetInPlaceActiveItem', 'AFXRICH/CRichEditView::GetMargins', 'AFXRICH/CRichEditView::GetPageRect', 'AFXRICH/CRichEditView::GetPaperSize', 'AFXRICH/CRichEditView::GetParaFormatSelection', 'AFXRICH/CRichEditView::GetPrintRect', 'AFXRICH/CRichEditView::GetPrintWidth', 'AFXRICH/CRichEditView::GetRichEditCtrl', 'AFXRICH/CRichEditView::GetSelectedItem', 'AFXRICH/CRichEditView::GetTextLength', 'AFXRICH/CRichEditView::GetTextLengthEx', 'AFXRICH/CRichEditView::InsertFileAsObject', 'AFXRICH/CRichEditView::InsertItem', 'AFXRICH/CRichEditView::IsRichEditFormat', 'AFXRICH/CRichEditView::OnCharEffect', 'AFXRICH/CRichEditView::OnParaAlign', 'AFXRICH/CRichEditView::OnUpdateCharEffect', 'AFXRICH/CRichEditView::OnUpdateParaAlign', 'AFXRICH/CRichEditView::PrintInsideRect', 'AFXRICH/CRichEditView::PrintPage', 'AFXRICH/CRichEditView::SetCharFormat', 'AFXRICH/CRichEditView::SetMargins', 'AFXRICH/CRichEditView::SetPaperSize', 'AFXRICH/CRichEditView::SetParaFormat', 'AFXRICH/CRichEditView::TextNotFound', 'AFXRICH/CRichEditView::GetClipboardData', 'AFXRICH/CRichEditView::GetContextMenu', 'AFXRICH/CRichEditView::IsSelected', 'AFXRICH/CRichEditView::OnFindNext', 'AFXRICH/CRichEditView::OnInitialUpdate', 'AFXRICH/CRichEditView::OnPasteNativeObject', 'AFXRICH/CRichEditView::OnPrinterChanged', 'AFXRICH/CRichEditView::OnReplaceAll', 'AFXRICH/CRichEditView::OnReplaceSel', 'AFXRICH/CRichEditView::OnTextNotFound', 'AFXRICH/CRichEditView::QueryAcceptData', 'AFXRICH/CRichEditView::WrapChanged', 'AFXRICH/CRichEditView::m_nBulletIndent', 'AFXRICH/CRichEditView::m_nWordWrap']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMDIChildWnd', 'AFXWIN/CMDIChildWnd', 'AFXWIN/CMDIChildWnd::CMDIChildWnd', 'AFXWIN/CMDIChildWnd::Create', 'AFXWIN/CMDIChildWnd::GetMDIFrame', 'AFXWIN/CMDIChildWnd::MDIActivate', 'AFXWIN/CMDIChildWnd::MDIDestroy', 'AFXWIN/CMDIChildWnd::MDIMaximize', 'AFXWIN/CMDIChildWnd::MDIRestore', 'AFXWIN/CMDIChildWnd::SetHandles']

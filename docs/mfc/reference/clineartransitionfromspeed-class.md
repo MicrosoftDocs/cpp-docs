@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CLinearTransitionFromSpeed', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::CLinearTransitionFromSpeed', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::Create', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblSpeed']

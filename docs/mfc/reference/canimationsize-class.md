@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimationSize', 'AFXANIMATIONCONTROLLER/CAnimationSize', 'AFXANIMATIONCONTROLLER/CAnimationSize::CAnimationSize', 'AFXANIMATIONCONTROLLER/CAnimationSize::AddTransition', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetCX', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetCY', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetValue', 'AFXANIMATIONCONTROLLER/CAnimationSize::SetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationSize::GetAnimationVariableList', 'AFXANIMATIONCONTROLLER/CAnimationSize::m_cxValue', 'AFXANIMATIONCONTROLLER/CAnimationSize::m_cyValue']

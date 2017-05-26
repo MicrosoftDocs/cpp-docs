@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCColorButton', 'AFXCOLORBUTTON/CMFCColorButton', 'AFXCOLORBUTTON/CMFCColorButton::CMFCColorButton', 'AFXCOLORBUTTON/CMFCColorButton::EnableAutomaticButton', 'AFXCOLORBUTTON/CMFCColorButton::EnableOtherButton', 'AFXCOLORBUTTON/CMFCColorButton::GetAutomaticColor', 'AFXCOLORBUTTON/CMFCColorButton::GetColor', 'AFXCOLORBUTTON/CMFCColorButton::SetColor', 'AFXCOLORBUTTON/CMFCColorButton::SetColorName', 'AFXCOLORBUTTON/CMFCColorButton::SetColumnsNumber', 'AFXCOLORBUTTON/CMFCColorButton::SetDocumentColors', 'AFXCOLORBUTTON/CMFCColorButton::SetPalette', 'AFXCOLORBUTTON/CMFCColorButton::SizeToContent', 'AFXCOLORBUTTON/CMFCColorButton::IsDrawXPTheme', 'AFXCOLORBUTTON/CMFCColorButton::OnDraw', 'AFXCOLORBUTTON/CMFCColorButton::OnDrawBorder', 'AFXCOLORBUTTON/CMFCColorButton::OnDrawFocusRect', 'AFXCOLORBUTTON/CMFCColorButton::OnShowColorPopup', 'AFXCOLORBUTTON/CMFCColorButton::RebuildPalette', 'AFXCOLORBUTTON/CMFCColorButton::UpdateColor', 'AFXCOLORBUTTON/CMFCColorButton::m_bEnabledInCustomizeMode']

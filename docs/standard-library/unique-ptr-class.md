@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['unique_ptr', 'memory/std::unique_ptr', 'memory/std::unique_ptr::deleter_type', 'memory/std::unique_ptr::element_type', 'memory/std::unique_ptr::pointer', 'memory/std::unique_ptr::get', 'memory/std::unique_ptr::get_deleter', 'memory/std::unique_ptr::release', 'memory/std::unique_ptr::reset', 'memory/std::unique_ptr::swap']  
@@ -117,7 +117,7 @@ public:
   
  `unique_ptr` uniquely manages a resource. Each `unique_ptr` object stores a pointer to the object that it owns or stores a null pointer. A resource can be owned by no more than one `unique_ptr` object;  when a `unique_ptr` object that owns a particular resource is destroyed, the resource is freed. A `unique_ptr` object may be moved, but not copied;  for more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
- The resource is freed by calling a stored `deleter` object of type `Del` that knows how resources are allocated for a particular `unique_ptr`. The default `deleter``default_delete``<T>` assumes that the resource pointed to by `ptr` is allocated with `new`, and that it can be freed by calling `delete _``Ptr`. (A partial specialization `unique_ptr<T[]>`manages array objects allocated with `new[]`, and has the default `deleter``default_delete<T[]>`, specialized to call delete[] `ptr`.)  
+ The resource is freed by calling a stored `deleter` object of type `Del` that knows how resources are allocated for a particular `unique_ptr`. The default `deleter` `default_delete<T>` assumes that the resource pointed to by `ptr` is allocated with `new`, and that it can be freed by calling `delete _Ptr`. (A partial specialization `unique_ptr<T[]>`manages array objects allocated with `new[]`, and has the default `deleter` `default_delete<T[]>`, specialized to call delete[] `ptr`.)  
   
  The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is `Del::pointer` if defined, and `T *` if not. The stored `deleter` object `stored_deleter` occupies no space in the object if the `deleter` is stateless. Note that `Del` can be a reference type.  
   
@@ -134,7 +134,7 @@ public:
 |||  
 |-|-|  
 |[deleter_type](#deleter_type)|A synonym for the template parameter `Del`.|  
-|[element_type](#element_type)|A synonym for the template parameter `T``.`|  
+|[element_type](#element_type)|A synonym for the template parameter `T`.|  
 |[pointer](#pointer)|A synonym for `Del::pointer` if defined, otherwise `T *`.|  
   
 ### Member Functions  
@@ -152,8 +152,8 @@ public:
 |||  
 |-|-|  
 |`operator bool`|The operator returns a value of a type that is convertible to `bool`. The result of the conversion to `bool` is `true` when `get() != pointer()`, otherwise `false`.|  
-|`operator->`|The member function returns `stored_ptr``.`|  
-|`operator*`|The member function returns* `stored_ptr``.`|  
+|`operator->`|The member function returns `stored_ptr`.|  
+|`operator*`|The member function returns `*stored_ptr`.|  
 |[unique_ptr operator=](#unique_ptr_operator_eq)|Assigns the value of a `unique_ptr` (or a `pointer-type`) to the current `unique_ptr`.|  
   
 ## Requirements  
@@ -217,7 +217,7 @@ unique_ptr& operator=(pointer-type);
  A `unique_ptr` reference used to assign the value of to the current `unique_ptr`.  
   
 ### Remarks  
- The member functions call `reset(``right``.release())` and move `right``.stored_deleter` to `stored_deleter`, then return `*this`.  
+ The member functions call `reset(right.release())` and move `right.stored_deleter` to `stored_deleter`, then return `*this`.  
   
 ##  <a name="pointer"></a>  pointer  
  A synonym for `Del::pointer` if defined, otherwise `Type *`.  

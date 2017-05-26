@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "index-page "
 f1_keywords: 
@@ -62,9 +62,6 @@ Beginning with Visual C++ .NET 2002, several existing MFC utility classes were r
   
  [Microsoft Foundation Class Library (MFC) Reference](../mfc/mfc-desktop-applications.md)  
  Provides reference material for the MFC Library, a set of classes in that constitute an application framework, which is the framework of an application written for the Windows API.  
-  
- [NIB: Samples Included in Visual C++](http://msdn.microsoft.com/en-us/c9ec56b3-2bbd-49b4-8a4c-9ed4b78b7a84)  
- Provides links to sample code showing the capabilities of Visual C++ and the libraries and technologies it supports.  
   
  [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
  Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the C++ Standard Library.  

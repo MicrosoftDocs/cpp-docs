@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['filesystem/std::experimental::filesystem::directory_iterator', 'directory_iterator', 'filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator', 'filesystem/std::experimental::filesystem::directory_iterator', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::directory_iterator', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::increment', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator=', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator==', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator!=', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator*', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator->', 'FILESYSTEM/std::experimental::filesystem::directory_iterator::operator++']  

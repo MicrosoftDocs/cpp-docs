@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCCaptionBar', 'AFXCAPTIONBAR/CMFCCaptionBar', 'AFXCAPTIONBAR/CMFCCaptionBar::Create', 'AFXCAPTIONBAR/CMFCCaptionBar::DoesAllowDynInsertBefore', 'AFXCAPTIONBAR/CMFCCaptionBar::EnableButton', 'AFXCAPTIONBAR/CMFCCaptionBar::GetAlignment', 'AFXCAPTIONBAR/CMFCCaptionBar::GetBorderSize', 'AFXCAPTIONBAR/CMFCCaptionBar::GetButtonRect', 'AFXCAPTIONBAR/CMFCCaptionBar::GetMargin', 'AFXCAPTIONBAR/CMFCCaptionBar::IsMessageBarMode', 'AFXCAPTIONBAR/CMFCCaptionBar::RemoveBitmap', 'AFXCAPTIONBAR/CMFCCaptionBar::RemoveButton', 'AFXCAPTIONBAR/CMFCCaptionBar::RemoveIcon', 'AFXCAPTIONBAR/CMFCCaptionBar::RemoveText', 'AFXCAPTIONBAR/CMFCCaptionBar::SetBitmap', 'AFXCAPTIONBAR/CMFCCaptionBar::SetBorderSize', 'AFXCAPTIONBAR/CMFCCaptionBar::SetButton', 'AFXCAPTIONBAR/CMFCCaptionBar::SetButtonPressed', 'AFXCAPTIONBAR/CMFCCaptionBar::SetButtonToolTip', 'AFXCAPTIONBAR/CMFCCaptionBar::SetFlatBorder', 'AFXCAPTIONBAR/CMFCCaptionBar::SetIcon', 'AFXCAPTIONBAR/CMFCCaptionBar::SetImageToolTip', 'AFXCAPTIONBAR/CMFCCaptionBar::SetMargin', 'AFXCAPTIONBAR/CMFCCaptionBar::SetText', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawBackground', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawBorder', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawButton', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawImage', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawText', 'AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarBackground', 'AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarBorder', 'AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarText']

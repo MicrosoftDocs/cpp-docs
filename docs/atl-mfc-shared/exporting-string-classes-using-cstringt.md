@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 dev_langs: 
@@ -39,7 +39,7 @@ In the past, MFC developers have derived from `CString` to specialize their own 
   
 -   With the new `CStringT` template class, you can customize `CString` behavior using template parameters that specify character traits, similar to the templates in the C++ Standard Library.  
   
--   When you export your own string class from a DLL using `CStringT`, the compiler also automatically exports the `CString` base class. Since `CString` is itself a template class, it may be instantiated by the compiler when used, unless the compiler is aware that `CString` is imported from a DLL. If you have migrated projects from Visual C++ 6.0 to Visual C++.NET, you might have seen linker symbol errors for a multiply-defined `CString` because of the collision of the `CString` imported from a DLL and the locally instantiated version. The proper way to do this is described below. For more information on this issue, see the Knowledge Base article, "Linking Errors When you Import CString-derived Classes" (Q309801) on the MSDN Library CD-ROM or at [http://support.microsoft.com/default.aspx](http://support.microsoft.com/default.aspx).  
+-   When you export your own string class from a DLL using `CStringT`, the compiler also automatically exports the `CString` base class. Since `CString` is itself a template class, it may be instantiated by the compiler when used, unless the compiler is aware that `CString` is imported from a DLL. If you have migrated projects from Visual C++ 6.0 to Visual C++.NET, you might have seen linker symbol errors for a multiply-defined `CString` because of the collision of the `CString` imported from a DLL and the locally instantiated version. The proper way to do this is described below. For more information on this issue, see the Knowledge Base article, "Linking Errors When you Import CString-derived Classes" (Q309801) at [http://support.microsoft.com/default.aspx](http://support.microsoft.com/default.aspx).  
   
  The following scenario will cause the linker to produce symbol errors for multiply defined classes. Assume that you are exporting a `CString`-derived class (`CMyString`) from an MFC extension DLL:  
   

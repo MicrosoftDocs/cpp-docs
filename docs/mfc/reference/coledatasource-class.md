@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDataSource', 'AFXOLE/COleDataSource', 'AFXOLE/COleDataSource::COleDataSource', 'AFXOLE/COleDataSource::CacheData', 'AFXOLE/COleDataSource::CacheGlobalData', 'AFXOLE/COleDataSource::DelayRenderData', 'AFXOLE/COleDataSource::DelayRenderFileData', 'AFXOLE/COleDataSource::DelaySetData', 'AFXOLE/COleDataSource::DoDragDrop', 'AFXOLE/COleDataSource::Empty', 'AFXOLE/COleDataSource::FlushClipboard', 'AFXOLE/COleDataSource::GetClipboardOwner', 'AFXOLE/COleDataSource::OnRenderData', 'AFXOLE/COleDataSource::OnRenderFileData', 'AFXOLE/COleDataSource::OnRenderGlobalData', 'AFXOLE/COleDataSource::OnSetData', 'AFXOLE/COleDataSource::SetClipboard']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -54,7 +54,7 @@ template<typename Value>
  Right container to compare.  
   
 ## Remarks  
- The operator function returns `!(``left` `<` `right``)`. You use it to test whether `left` is not ordered before `right` when the two vectors are compared element by element.  
+ The operator function returns `!(left < right)`. You use it to test whether `left` is not ordered before `right` when the two vectors are compared element by element.  
   
 ## Example  
   

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
 dev_langs: 
@@ -58,4 +58,3 @@ This topic discusses how to create a partially trusted Common Language Runtime a
  [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md)   
  [Library Support for Mixed Assemblies](../dotnet/library-support-for-mixed-assemblies.md)   
  [/link (Pass Options to Linker)](../build/reference/link-pass-options-to-linker.md)   
- [PAVE Security in Native and .NET Framework Code](http://msdn.microsoft.com/en-us/bd61be84-c143-409a-a75a-44253724f784)

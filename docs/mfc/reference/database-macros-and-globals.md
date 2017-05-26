@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['AFXDB/AFX_ODBC_CALL', 'AFXDB/AFX_SQL_ASYNC', 'AFXDB/AFX_SQL_SYNC', 'AFXDB/AfxGetHENV']
