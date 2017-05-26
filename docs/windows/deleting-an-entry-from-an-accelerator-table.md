@@ -49,7 +49,7 @@ translation.priority.ht:
   
 -   Press the Delete key.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/articles/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
   
  **Requirements**  
   

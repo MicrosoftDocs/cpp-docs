@@ -41,7 +41,7 @@ translation.priority.mt:
 A generic type was instantiated incorrectly. Check the type definition. For more information, see <xref:System.Nullable> and [Generics](../../windows/generics-cpp-component-extensions.md).  
   
 ## Example  
-The following sample uses C# to create a component that contains a generic type that has certain constraints that are not supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/articles/csharp/programming-guide/generics/constraints-on-type-parameters).  
+The following sample uses C# to create a component that contains a generic type that has certain constraints that are not supported when authoring generic types in C++/CLI. For more information, see [Constraints on Type Parameters](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).  
   
 ```cs  
 // C3391.cs  

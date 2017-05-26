@@ -53,7 +53,7 @@ You can create a runtime dialog box that a user cannot exit. This kind of dialog
 > [!NOTE]
 >  For MFC applications, to create a dialog box that users cannot exit, you must override the default behavior of `OnOK` and `OnCancel` because even if you delete the associated buttons, the dialog box can still be dismissed by pressing ENTER or ESC.  
   
- For information about how to add resources to managed projects, see [Resources in Desktop Apps](/dotnet/articles/framework/resources/index).  
+ For information about how to add resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index).  
   
 ## Requirements  
  Win32  

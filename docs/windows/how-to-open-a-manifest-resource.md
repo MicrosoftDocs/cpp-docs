@@ -51,7 +51,7 @@ If you open a manifest resource from [Resource View](../windows/resource-view-wi
   
 2.  In the **Open With** dialog box, specify the editor you would like to use and click **Open**.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/articles/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
   
  Requirements  
   
