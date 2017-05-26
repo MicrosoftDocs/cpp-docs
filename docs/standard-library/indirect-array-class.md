@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['valarray/std::indirect_array', 'indirect_array']  
@@ -45,7 +45,7 @@ An internal, auxiliary template class that supports objects that are subsets of 
   
  You construct an **indirect_array\<Type>** object only by writing an expression of the form **va[xa]**. The member functions of class indirect_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected.  
   
- The sequence consists of **xa.**[size](../standard-library/valarray-class.md#valarray__size) elements, where element `I` becomes the index **xa**[ `I`] within **va**.  
+ The sequence consists of **xa.**[size](../standard-library/valarray-class.md#size) elements, where element `I` becomes the index **xa**[ `I`] within **va**.  
   
 ## Example:  
   

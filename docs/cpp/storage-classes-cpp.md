@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
@@ -37,13 +37,15 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Storage classes (C++)
-A *storage class* in the context of C++ variable declarations is a type specifier that governs the lifetime, linkage, and memory location of objects and. A given object can have only one storage class. Variables defined within a block have automatic storage unless otherwise specified using the `extern`, `static`, or `thread_local` specifiers. Automatic objects and variables have no linkage; they are not visible to code outside the block.  
+A *storage class* in the context of C++ variable declarations is a type specifier that governs the lifetime, linkage, and memory location of objects. A given object can have only one storage class. Variables defined within a block have automatic storage unless otherwise specified using the `extern`, `static`, or `thread_local` specifiers. Automatic objects and variables have no linkage; they are not visible to code outside the block.  
   
  **Notes**  
   
 1.  The [mutable](../cpp/mutable-data-members-cpp.md) keyword may be considered a storage class specifier. However, it is only available in the member list of a class definition.  
   
 2.  Starting with [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], the `auto` keyword is no longer a C++ storage-class specifier, and the `register` keyword is deprecated.  
+
+## In this section:
   
 -   [static](#static)  
   
@@ -60,7 +62,7 @@ A *storage class* in the context of C++ variable declarations is a type specifie
   
 2.  When you declare a variable in a function, the `static` keyword specifies that the variable retains its state between calls to that function.  
   
-3.  When you declare a data member in a class declaration, the `static` keyword specifies that one copy of the member is shared by all instances of the class. A static data member must be defined at file scope. An integral data member that you declare as `const``static` can have an initializer.  
+3.  When you declare a data member in a class declaration, the `static` keyword specifies that one copy of the member is shared by all instances of the class. A static data member must be defined at file scope. An integral data member that you declare as `const static` can have an initializer.  
   
 4.  When you declare a member function in a class declaration, the `static` keyword specifies that the function is shared by all instances of the class. A static member function cannot access an instance member because the function does not have an implicit `this` pointer. To access an instance member, declare the function with a parameter that is an instance pointer or reference.  
   
@@ -199,29 +201,31 @@ int main() {
  A variable declared with the `thread_local` specifier is accessible only on the thread on which it is created. The variable is created when the thread is created, and destroyed when the thread is destroyed. Each thread has its own copy of the variable. On Windows, `thread_local` is functionally equivalent to the Microsoft-specific [__declspec( thread )](../cpp/thread.md) attribute.  
   
 ```  
-thread_local float f = 42.0; //global namespace  
+thread_local float f = 42.0; // Global namespace. Not implicitly static.
   
 struct C // cannot be applied to type definition  
 {  
-thread_local int i; //local  
-thread_local static char buf[10]; // local and static  
+    thread_local int i; // Illegal. The member must be static.  
+    thread_local static char buf[10]; // OK 
 };  
   
 void DoSomething()  
 {  
-thread_local C my_struct; // Apply  thread_local to a variable  
+   // Apply thread_local to a local variable.
+   // Implicitly “thread_local static C my_struct”.
+   thread_local C my_struct;  
 }  
 ```  
   
 1.  The thread_local specifier may be combined with `static` or `extern`.  
   
-2.  You can apply `thread_local` only to data declarations and definitions; **thread_local** cannot be used on function declarations or definitions.  
+2.  You can apply `thread_local` only to data declarations and definitions; `thread_local` cannot be used on function declarations or definitions.  
   
-3.  The use of `thread_local` may interfere with [delay loading](../build/reference/linker-support-for-delay-loaded-dlls.md) of DLL imports**.**  
+3.  The use of `thread_local` may interfere with [delay loading](../build/reference/linker-support-for-delay-loaded-dlls.md) of DLL imports. 
   
 4.  On XP systems, `thread_local` may not function correctly if a DLL uses `thread_local` data and it is loaded dynamically via LoadLibrary.  
   
-5.  You can specify `thread_local` only on data items with static storage duration. This includes global data objects (both **static** and `extern`), local static objects, and static data members of classes. You cannot declare automatic data objects with **thread_local**.  
+5.  You can specify `thread_local` only on data items with static storage duration. This includes global data objects (both `static` and `extern`), local static objects, and static data members of classes. Any local variable declared `thread_local` will be implicitly static if no other storage class is provided; in other words, at block scope `thread_local` is equivalent to `thread_local static`. 
   
 6.  You must specify `thread_local` for both the declaration and the definition of a thread local object, whether the declaration and definition occur in the same file or separate files.  
   

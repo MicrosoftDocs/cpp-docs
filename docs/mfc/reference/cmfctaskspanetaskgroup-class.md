@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCTasksPaneTaskGroup', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::SetACCData', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsBottom', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsCollapsed', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsSpecial', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_lstTasks', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rect', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rectGroup', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_strName']

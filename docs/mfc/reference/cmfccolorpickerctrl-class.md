@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCColorPickerCtrl', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::CMFCColorPickerCtrl', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetColor', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHLS', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHue', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetLuminance', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetSaturation', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SelectCellHexagon', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetColor', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHLS', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHue', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminance', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminanceBarWidth', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetOriginalColor', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetPalette', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetSaturation', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetType', 'AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::DrawCursor']

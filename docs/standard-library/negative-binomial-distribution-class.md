@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['negative_binomial_distribution', 'random/std::negative_binomial_distribution', 'random/std::negative_binomial_distribution::reset', 'random/std::negative_binomial_distribution::k', 'random/std::negative_binomial_distribution::p', 'random/std::negative_binomial_distribution::param', 'random/std::negative_binomial_distribution::min', 'random/std::negative_binomial_distribution::max', 'random/std::negative_binomial_distribution::operator()', 'random/std::negative_binomial_distribution::param_type', 'random/std::negative_binomial_distribution::param_type::k', 'random/std::negative_binomial_distribution::param_type::p', 'random/std::negative_binomial_distribution::param_type::operator==', 'random/std::negative_binomial_distribution::param_type::operator!=', 'random/std::negative_binomial_distribution::param_type']  
@@ -76,8 +76,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[negative_binomial_distribution](#negative_binomial_distribution__negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|  
-|`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[param_type](#negative_binomial_distribution__param_type)|  
+|[negative_binomial_distribution](#negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|  
+|`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[param_type](#param_type)|  
   
 The property members `k()` and `p()` return the currently stored distribution parameter values *k* and *p* respectively.  
   
@@ -217,7 +217,7 @@ Histogram for 100 samples:
   
 **Namespace:** std  
   
-##  <a name="negative_binomial_distribution__negative_binomial_distribution"></a>  negative_binomial_distribution::negative_binomial_distribution  
+##  <a name="negative_binomial_distribution"></a>  negative_binomial_distribution::negative_binomial_distribution  
 Constructs the distribution.  
   
 ```  
@@ -242,7 +242,7 @@ The first constructor constructs an object whose stored `p` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="negative_binomial_distribution__param_type"></a>  negative_binomial_distribution::param_type  
+##  <a name="param_type"></a>  negative_binomial_distribution::param_type  
 Stores the parameters of the distribution.  
   
 struct param_type {  

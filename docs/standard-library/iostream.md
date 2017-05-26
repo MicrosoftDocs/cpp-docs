@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -57,7 +57,7 @@ Declares objects that control reading from and writing to the standard streams. 
   
  All the objects declared in this header share a peculiar property — you can assume they are constructed before any static objects you define, in a translation unit that includes \<iostream>. Equally, you can assume that these objects are not destroyed before the destructors for any such static objects you define. (The output streams are, however, flushed during program termination.) Therefore, you can safely read from or write to the standard streams before program startup and after program termination.  
   
- This guarantee is not universal, however. A static constructor may call a function in another translation unit. The called function cannot assume that the objects declared in this header have been constructed, given the uncertain order in which translation units participate in static construction. To use these objects in such a context, you must first construct an object of class [ios_base::Init](../standard-library/ios-base-class.md#ios_base__init).  
+ This guarantee is not universal, however. A static constructor may call a function in another translation unit. The called function cannot assume that the objects declared in this header have been constructed, given the uncertain order in which translation units participate in static construction. To use these objects in such a context, you must first construct an object of class [ios_base::Init](../standard-library/ios-base-class.md#init).  
   
 ### Global Stream Objects  
   
@@ -83,7 +83,7 @@ extern ostream cerr;
  An [ostream](../standard-library/ostream-typedefs.md#ostream) object.  
   
 #### Remarks  
- The object controls unbuffered insertions to the standard error output as a byte stream. Once the object is constructed, the expression `cerr.`[flags](../standard-library/ios-base-class.md#ios_base__flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) is nonzero, and `cerr.tie() == &cout`.  
+ The object controls unbuffered insertions to the standard error output as a byte stream. Once the object is constructed, the expression `cerr.`[flags](../standard-library/ios-base-class.md#flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) is nonzero, and `cerr.tie() == &cout`.  
   
 #### Example  
   
@@ -126,7 +126,7 @@ extern istream cin;
  An [istream](../standard-library/istream-typedefs.md#istream) object.  
   
 #### Remarks  
- The object controls extractions from the standard input as a byte stream. Once the object is constructed, the call `cin.`[tie](../standard-library/basic-ios-class.md#basic_ios__tie) returns `&`[cout](#cout).  
+ The object controls extractions from the standard input as a byte stream. Once the object is constructed, the call `cin.`[tie](../standard-library/basic-ios-class.md#tie) returns `&`[cout](#cout).  
   
 #### Example  
   In this example, `cin` sets the fail bit on the stream when it encounters non-numeric characters. The program clears the fail bit and strips the invalid character from the stream to proceed.  
@@ -207,7 +207,7 @@ extern wostream wcerr;
  A [wostream](../standard-library/ostream-typedefs.md#wostream) object.  
   
 #### Remarks  
- The object controls unbuffered insertions to the standard error output as a wide stream. Once the object is constructed, the expression `wcerr.`[flags](../standard-library/ios-base-class.md#ios_base__flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) is nonzero.  
+ The object controls unbuffered insertions to the standard error output as a wide stream. Once the object is constructed, the expression `wcerr.`[flags](../standard-library/ios-base-class.md#flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) is nonzero.  
   
 #### Example  
   See [cerr](#cerr) for an example of using `wcerr`.  
@@ -223,7 +223,7 @@ extern wistream wcin;
  A [wistream](../standard-library/istream-typedefs.md#wistream) object.  
   
 #### Remarks  
- The object controls extractions from the standard input as a wide stream. Once the object is constructed, the call `wcin.`[tie](../standard-library/basic-ios-class.md#basic_ios__tie) returns `&`[wcout](#wcout).  
+ The object controls extractions from the standard input as a wide stream. Once the object is constructed, the call `wcin.`[tie](../standard-library/basic-ios-class.md#tie) returns `&`[wcout](#wcout).  
   
 #### Example  
   See [cerr](#cerr) for an example of using `wcin`.  

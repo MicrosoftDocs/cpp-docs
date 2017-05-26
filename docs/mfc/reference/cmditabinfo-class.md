@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMDITabInfo', 'AFXMDICLIENTAREAWND/CMDITabInfo', 'AFXMDICLIENTAREAWND/CMDITabInfo::Serialize', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bAutoColor', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bDocumentMenu', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bEnableTabSwap', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bFlatFrame', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabCloseButton', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabCustomTooltips', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_bTabIcons', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_nTabBorderSize', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_style', 'AFXMDICLIENTAREAWND/CMDITabInfo::m_tabLocation']

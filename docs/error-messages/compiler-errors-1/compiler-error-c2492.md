@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 f1_keywords: 
@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C2492
-'variable' : 'thread' data may not have dll interface  
+'*variable*': data with thread storage duration may not have dll interface    
   
  The variable is declared with the [thread](../../cpp/thread.md) attribute and with the DLL interface. The address of the `thread` variable is not known until run time, so it cannot be linked to a DLL import or export.  
   

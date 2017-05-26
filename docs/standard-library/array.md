@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -55,12 +55,12 @@ Defines the container template class `array` and several supporting templates.
   
 |||  
 |-|-|  
-|[operator==](../standard-library/array-operators.md#operator_eq_eq)|array comparison, equal|  
-|[operator!=](../standard-library/array-operators.md#operator_neq)|array comparison, not equal|  
-|[operator\<](../standard-library/array-operators.md#operator_lt_)|array comparison, less than|  
-|[operator>=](../standard-library/array-operators.md#operator_gt__eq)|array comparison, greater than or equal|  
-|[operator>](../standard-library/array-operators.md#operator_gt_)|array comparison, greater than|  
-|[operator<=](../standard-library/array-operators.md#operator_lt__eq)|array comparison, less than or equal|  
+|[operator==](../standard-library/array-operators.md#op_eq_eq)|array comparison, equal|  
+|[operator!=](../standard-library/array-operators.md#op_neq)|array comparison, not equal|  
+|[operator\<](../standard-library/array-operators.md#op_lt)|array comparison, less than|  
+|[operator>=](../standard-library/array-operators.md#op_gt_eq)|array comparison, greater than or equal|  
+|[operator>](../standard-library/array-operators.md#op_gt)|array comparison, greater than|  
+|[operator<=](../standard-library/array-operators.md#op_lt_eq)|array comparison, less than or equal|  
   
 ### Functions  
   

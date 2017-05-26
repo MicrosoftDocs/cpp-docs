@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -59,4 +59,5 @@ int main()
   
 ## See Also  
  [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)   
- [(NOTINBUILD)Storage-Class Specifiers](http://msdn.microsoft.com/en-us/10b3d22d-cb40-450b-994b-08cf9a211b6c)
+
+

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -100,5 +100,6 @@ Microsoft provides many APIs for programming both client and server applications
  The OLE section of the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.  
   
 ## See Also  
- [MFC Internet Programming (NIB)](http://msdn.microsoft.com/en-us/0f7a1f3a-385b-4d56-a55b-0d766840c58a)
+
+
 

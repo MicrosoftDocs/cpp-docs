@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -48,7 +48,7 @@ cliext::pair<iterator, iterator> equal_range(key_type key);
  Key value to search for.  
   
 ## Remarks  
- The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [hash_multiset::lower_bound (STL/CLR)](../dotnet/hash-multiset-lower-bound-stl-clr.md)`(``key``),` [hash_multiset::upper_bound (STL/CLR)](../dotnet/hash-multiset-upper-bound-stl-clr.md)`(``key``))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
+ The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [hash_multiset::lower_bound (STL/CLR)](../dotnet/hash-multiset-lower-bound-stl-clr.md)`(key),` [hash_multiset::upper_bound (STL/CLR)](../dotnet/hash-multiset-upper-bound-stl-clr.md)`(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.  
   
 ## Example  
   

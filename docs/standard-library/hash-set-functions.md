@@ -14,7 +14,7 @@ manager: "ghogen"
 # &lt;hash_set&gt; functions
 |||  
 |-|-|  
-|[swap](#swap)|[swap (hash_multiset)](#swap__hash_multiset_)|  
+|[swap](#swap)|[swap (hash_multiset)](#swap_hash_multiset)|  
   
 ##  <a name="swap"></a>  swap  
   
@@ -37,7 +37,7 @@ void swap(
  The hash_set whose elements are to be exchanged with those of the hash_set `right`.  
   
 ### Remarks  
- The `swap` template function is an algorithm specialized on the container class hash_set to execute the member function `left``.`[swap](../standard-library/hash-set-class.md#hash_set__swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
+ The `swap` template function is an algorithm specialized on the container class hash_set to execute the member function `left.`[swap](../standard-library/hash-set-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
   
  **template \<class T> void swap(T&, T&),**  
   
@@ -46,9 +46,9 @@ void swap(
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
 ### Example  
-  See the code example for the member class [hash_set::swap](../standard-library/hash-set-class.md#hash_set__swap) for an example that uses the template version of `swap`.  
+  See the code example for the member class [hash_set::swap](../standard-library/hash-set-class.md#swap) for an example that uses the template version of `swap`.  
   
-##  <a name="swap__hash_multiset_"></a>  swap (hash_multiset)  
+##  <a name="swap_hash_multiset"></a>  swap (hash_multiset)  
   
 > [!NOTE]
 >  This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).  
@@ -67,7 +67,7 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
  The hash_multiset whose elements are to be exchanged with those of the hash_multiset `right`.  
   
 ### Remarks  
- The `swap` template function is an algorithm specialized on the container class hash_multiset to execute the member function `left``.`[swap](../standard-library/hash-multiset-class.md#hash_multiset__swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
+ The `swap` template function is an algorithm specialized on the container class hash_multiset to execute the member function `left.`[swap](../standard-library/hash-multiset-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function  
   
  **template \<class T> void swap(T&, T&),**  
   
@@ -76,7 +76,7 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
  In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
 ### Example  
-  See the code example for the member class [hash_multiset::swap](../standard-library/hash-multiset-class.md#hash_multiset__swap) for an example that uses the template version of `swap`.  
+  See the code example for the member class [hash_multiset::swap](../standard-library/hash-multiset-class.md#swap) for an example that uses the template version of `swap`.  
   
 ## See Also  
  [<hash_set>](../standard-library/hash-set.md)

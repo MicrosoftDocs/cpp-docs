@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['time_get_byname', 'xloctime/std::time_get_byname']  
@@ -65,7 +65,7 @@ protected:
  An initial reference count.  
   
 ## Requirements  
- Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [time_get](../standard-library/time-get-class.md#time_get__time_get)\<CharType, InputIterator>( `_Refs`).  
+ Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [time_get](../standard-library/time-get-class.md#time_get)\<CharType, InputIterator>( `_Refs`).  
   
 ## Requirements  
  **Header:** \<locale>  

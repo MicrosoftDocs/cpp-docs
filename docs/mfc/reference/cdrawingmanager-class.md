@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDrawingManager', 'AFXDRAWMANAGER/CDrawingManager', 'AFXDRAWMANAGER/CDrawingManager::CDrawingManager', 'AFXDRAWMANAGER/CDrawingManager::CreateBitmap_32', 'AFXDRAWMANAGER/CDrawingManager::DrawAlpha', 'AFXDRAWMANAGER/CDrawingManager::DrawRotated', 'AFXDRAWMANAGER/CDrawingManager::DrawEllipse', 'AFXDRAWMANAGER/CDrawingManager::DrawGradientRing', 'AFXDRAWMANAGER/CDrawingManager::DrawRect', 'AFXDRAWMANAGER/CDrawingManager::DrawShadow', 'AFXDRAWMANAGER/CDrawingManager::Fill4ColorsGradient', 'AFXDRAWMANAGER/CDrawingManager::FillGradient', 'AFXDRAWMANAGER/CDrawingManager::FillGradient2', 'AFXDRAWMANAGER/CDrawingManager::GrayRect', 'AFXDRAWMANAGER/CDrawingManager::HighlightRect', 'AFXDRAWMANAGER/CDrawingManager::HLStoRGB_ONE', 'AFXDRAWMANAGER/CDrawingManager::HLStoRGB_TWO', 'AFXDRAWMANAGER/CDrawingManager::HSVtoRGB', 'AFXDRAWMANAGER/CDrawingManager::HuetoRGB', 'AFXDRAWMANAGER/CDrawingManager::MirrorRect', 'AFXDRAWMANAGER/CDrawingManager::PixelAlpha', 'AFXDRAWMANAGER/CDrawingManager::PrepareShadowMask', 'AFXDRAWMANAGER/CDrawingManager::RGBtoHSL', 'AFXDRAWMANAGER/CDrawingManager::RGBtoHSV', 'AFXDRAWMANAGER/CDrawingManager::SetAlphaPixel', 'AFXDRAWMANAGER/CDrawingManager::SetPixel', 'AFXDRAWMANAGER/CDrawingManager::SmartMixColors']
@@ -508,7 +508,7 @@ BOOL HighlightRect(
  `TRUE` if the method is successful; otherwise `FALSE`.  
   
 ### Remarks  
- If `nPercentage` is between 0 and 99, `HighlightRect` uses the alpha blending algorithm. For more information about alpha blending, see [Alpha Blending Lines and Fills](http://msdn.microsoft.com/library/5440f48c-3ac9-44c3-b170-c1c110bdbab8). If `nPercentage` is -1, this method uses the default highlight level. If `nPercentage` is 100, this method does nothing and returns `TRUE`.  
+ If `nPercentage` is between 0 and 99, `HighlightRect` uses the alpha blending algorithm. For more information about alpha blending, see [Alpha Blending Lines and Fills](/dotnet/framework/winforms/advanced/alpha-blending-lines-and-fills). If `nPercentage` is -1, this method uses the default highlight level. If `nPercentage` is 100, this method does nothing and returns `TRUE`.  
   
  The method uses the parameter `nTolerance` to determine whether to highlight the rectangular area. To highlight the rectangle, the difference between the background color of your application and `clrTransparent` must be less than `nTolerance` in each color component (red, green, and blue).  
   

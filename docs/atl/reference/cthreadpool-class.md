@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CThreadPool', 'ATLUTIL/ATL::CThreadPool', 'ATLUTIL/ATL::CThreadPool::CThreadPool', 'ATLUTIL/ATL::CThreadPool::AddRef', 'ATLUTIL/ATL::CThreadPool::GetNumThreads', 'ATLUTIL/ATL::CThreadPool::GetQueueHandle', 'ATLUTIL/ATL::CThreadPool::GetSize', 'ATLUTIL/ATL::CThreadPool::GetTimeout', 'ATLUTIL/ATL::CThreadPool::Initialize', 'ATLUTIL/ATL::CThreadPool::QueryInterface', 'ATLUTIL/ATL::CThreadPool::QueueRequest', 'ATLUTIL/ATL::CThreadPool::Release', 'ATLUTIL/ATL::CThreadPool::SetSize', 'ATLUTIL/ATL::CThreadPool::SetTimeout', 'ATLUTIL/ATL::CThreadPool::Shutdown']

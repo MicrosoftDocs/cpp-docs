@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCFontInfo', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::GetFullName', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nCharSet', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nPitchAndFamily', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nType', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strName', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strScript']

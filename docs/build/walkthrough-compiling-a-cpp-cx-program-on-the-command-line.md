@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -68,7 +68,7 @@ You can create Visual C++ programs that target the Windows Runtime and build the
   
 4.  On the menu bar, choose **File**, **Save**.  
   
-     You have created a Visual C++ source file that uses the Windows Runtime [Platform namespace](http://msdn.microsoft.com/Library/b160e822-d424-43d2-ba60-57b0e81f259c) namespace.  
+     You have created a Visual C++ source file that uses the Windows Runtime [Platform namespace](../cppcx/platform-namespace-c-cx.md) namespace.  
   
 5.  At the command prompt, enter **cl /EHsc /ZW basiccx.cpp /link /SUBSYSTEM:CONSOLE**. The cl.exe compiler compiles the source code into an .obj file, and then runs the linker to generate an executable program named basiccx.exe. (The [/EHsc](../build/reference/eh-exception-handling-model.md) compiler option specifies the C++ exception-handling model, and the [/link](../build/reference/link-pass-options-to-linker.md) flag specifies a console application.)  
   

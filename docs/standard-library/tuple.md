@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -55,12 +55,12 @@ Defines a template `tuple` whose instances hold objects of varying types.
   
 |||  
 |-|-|  
-|[operator==](../standard-library/tuple-operators.md#operator_eq_eq)|Comparison of `tuple` objects, equal|  
-|[operator!=](../standard-library/tuple-operators.md#operator_neq)|Comparison of `tuple` objects, not equal|  
-|[operator<](../standard-library/tuple-operators.md#operator_lt_)|Comparison of `tuple` objects, less than|  
-|[operator<=](../standard-library/tuple-operators.md#operator_lt__eq)|Comparison of `tuple` objects, less than or equal|  
-|[operator>](../standard-library/tuple-operators.md#operator_gt_)|Comparison of `tuple` objects, greater than|  
-|[operator>=](../standard-library/tuple-operators.md#operator_gt__eq)|Comparison of `tuple` objects, greater than or equal|  
+|[operator==](../standard-library/tuple-operators.md#op_eq_eq)|Comparison of `tuple` objects, equal|  
+|[operator!=](../standard-library/tuple-operators.md#op_neq)|Comparison of `tuple` objects, not equal|  
+|[operator<](../standard-library/tuple-operators.md#op_lt)|Comparison of `tuple` objects, less than|  
+|[operator<=](../standard-library/tuple-operators.md#op_lt_eq)|Comparison of `tuple` objects, less than or equal|  
+|[operator>](../standard-library/tuple-operators.md#op_gt)|Comparison of `tuple` objects, greater than|  
+|[operator>=](../standard-library/tuple-operators.md#op_gt_eq)|Comparison of `tuple` objects, greater than or equal|  
   
 ### Functions  
   

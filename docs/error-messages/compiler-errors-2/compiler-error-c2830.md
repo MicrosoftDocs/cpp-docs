@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 f1_keywords: 
@@ -37,4 +37,4 @@ translation.priority.ht:
 # Compiler Error C2830
 only placement parameters to 'operator new' can have default values  
   
-The standard formal parameters for [operator new](../../standard-library/new-operators.md#operator_new) cannot have default values. Only user-defined placement parameters can specify defaults.
+The standard formal parameters for [operator new](../../standard-library/new-operators.md#op_new) cannot have default values. Only user-defined placement parameters can specify defaults.

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
@@ -60,7 +60,7 @@ __declspec( dllexport ) declarator
   
  `dllexport` of a function exposes the function with its decorated name. For C++ functions, this includes name mangling. For C functions or functions that are declared as `extern "C"`, this includes platform-specific decoration that's based on the calling convention. For information on name decoration in C/C++ code, see [Decorated Names](../build/reference/decorated-names.md). No name decoration is applied to exported C functions or C++ `extern "C"` functions using the `__cdecl` calling convention.  
   
- To export an undecorated name, you can link by using a Module Definition (.def) file that defines the undecorated name in an EXPORTS section. For more information, see [EXPORTS](../build/reference/exports.md). Another way to export an undecorated name is to use a `#pragma comment(linker, "/export:``alias``=``decorated_name``")` directive in the source code.  
+ To export an undecorated name, you can link by using a Module Definition (.def) file that defines the undecorated name in an EXPORTS section. For more information, see [EXPORTS](../build/reference/exports.md). Another way to export an undecorated name is to use a `#pragma comment(linker, "/export:alias=decorated_name")` directive in the source code.  
   
  When you declare `dllexport` or **dllimport**, you must use [extended attribute syntax](../cpp/declspec.md) and the `__declspec` keyword.  
   

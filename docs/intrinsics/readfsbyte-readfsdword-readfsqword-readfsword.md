@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -72,7 +72,7 @@ unsigned __int64 __readfsqword( 
  The offset from the beginning of `FS` to read from.  
   
 ## Return Value  
- The memory contents of the byte, word, doubleword, or quadword (as indicated by the name of the function called) at the location `FS:[``Offset``]`.  
+ The memory contents of the byte, word, doubleword, or quadword (as indicated by the name of the function called) at the location `FS:[Offset]`.  
   
 ## Requirements  
   

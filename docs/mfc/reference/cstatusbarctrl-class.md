@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStatusBarCtrl', 'AFXCMN/CStatusBarCtrl', 'AFXCMN/CStatusBarCtrl::CStatusBarCtrl', 'AFXCMN/CStatusBarCtrl::Create', 'AFXCMN/CStatusBarCtrl::CreateEx', 'AFXCMN/CStatusBarCtrl::DrawItem', 'AFXCMN/CStatusBarCtrl::GetBorders', 'AFXCMN/CStatusBarCtrl::GetIcon', 'AFXCMN/CStatusBarCtrl::GetParts', 'AFXCMN/CStatusBarCtrl::GetRect', 'AFXCMN/CStatusBarCtrl::GetText', 'AFXCMN/CStatusBarCtrl::GetTextLength', 'AFXCMN/CStatusBarCtrl::GetTipText', 'AFXCMN/CStatusBarCtrl::IsSimple', 'AFXCMN/CStatusBarCtrl::SetBkColor', 'AFXCMN/CStatusBarCtrl::SetIcon', 'AFXCMN/CStatusBarCtrl::SetMinHeight', 'AFXCMN/CStatusBarCtrl::SetParts', 'AFXCMN/CStatusBarCtrl::SetSimple', 'AFXCMN/CStatusBarCtrl::SetText', 'AFXCMN/CStatusBarCtrl::SetTipText']

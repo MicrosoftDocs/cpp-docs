@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['chi_squared_distribution', 'random/std::chi_squared_distribution', 'random/std::chi_squared_distribution::reset', 'random/std::chi_squared_distribution::n', 'random/std::chi_squared_distribution::param', 'random/std::chi_squared_distribution::min', 'random/std::chi_squared_distribution::max', 'random/std::chi_squared_distribution::operator()', 'random/std::chi_squared_distribution::param_type', 'random/std::chi_squared_distribution::param_type::n', 'random/std::chi_squared_distribution::param_type::operator==', 'random/std::chi_squared_distribution::param_type::operator!=', 'random/std::chi_squared_distribution::param_type']  
@@ -78,7 +78,7 @@ The template class describes a distribution that produces values of a user-speci
 ||||  
 |-|-|-|  
 |[chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|  
-|`chi_squared_distribution::operator()`||[param_type](#chi_squared_distribution__param_type)|  
+|`chi_squared_distribution::operator()`||[param_type](#param_type)|  
   
 The property function `n()` returns the value for the stored distribution parameter `n`.  
   
@@ -222,7 +222,7 @@ Distribution for 10 samples:
   
 **Namespace:** std  
   
-##  <a name="chi_squared_distribution__chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution  
+##  <a name="chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution  
 Constructs the distribution.  
   
 ```  
@@ -244,7 +244,7 @@ The first constructor constructs an object whose stored `n` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="chi_squared_distribution__param_type"></a>  chi_squared_distribution::param_type  
+##  <a name="param_type"></a>  chi_squared_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```cpp    

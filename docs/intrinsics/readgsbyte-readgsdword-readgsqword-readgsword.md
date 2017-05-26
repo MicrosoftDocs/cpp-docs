@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -68,7 +68,7 @@ unsigned __int64 __readgsqword( 
  The offset from the beginning of `GS` to read from.  
   
 ## Return Value  
- The memory contents of the byte, word, double word, or quadword (as indicated by the name of the function called) at the location `GS:[``Offset``]`.  
+ The memory contents of the byte, word, double word, or quadword (as indicated by the name of the function called) at the location `GS:[Offset]`.  
   
 ## Requirements  
   

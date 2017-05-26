@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-ide"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -38,7 +38,7 @@ When you use Visual C++ templates to create your projects, several files are cre
   
 |File name|File description|  
 |---------------|----------------------|  
-|AssemblyInfo.cpp|The file that contains information (that is, attributes, files, resources, types, versioning information, signing information, and so on) for modifying the project's assembly metadata. For more information see [Assembly Concepts](http://msdn.microsoft.com/Library/28116714-da77-45f7-826d-fa035d121948).|  
+|AssemblyInfo.cpp|The file that contains information (that is, attributes, files, resources, types, versioning information, signing information, and so on) for modifying the project's assembly metadata. For more information see [Assembly Concepts](/dotnet/framework/app-domains/assembly-contents).|  
 |*projname*.asmx|A text file that references managed classes that encapsulate the functionality of the XML Web service.|  
 |*projname*.cpp|The main source file and entry point into the application that Visual Studio created for you. Identifies the project .dll file and the project namespace. Provide your own code in this file.|  
 |*projname*.vsdisco|An XML deployment file containing links to other resources that describe the XML Web service.|  

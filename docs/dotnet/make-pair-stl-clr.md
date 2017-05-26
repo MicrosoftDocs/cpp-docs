@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -46,24 +46,24 @@ template<typename Value1,
 ```  
   
 #### Parameters  
- Value1  
+ `Value1`  
  The type of the first wrapped value.  
   
- Value2  
+ `Value2`  
  The type of the second wrapped value.  
   
- first  
+ `first`  
  First value to wrap.  
   
- second  
+ `second`  
  Second value to wrap.  
   
 ## Remarks  
- The template function returns `pair<``Value1``,` `Value2``>(``first``,` `second``)`. You use it to construct a `pair``<``Value1``,` `Value2``>` object from a pair of values.  
+ The template function returns `pair<Value1, Value2>(first, second)`. You use it to construct a `pair<Value1, Value2>` object from a pair of values.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_make_pair.cpp   
 // compile with: /clr   
 #include <cliext/utility>   

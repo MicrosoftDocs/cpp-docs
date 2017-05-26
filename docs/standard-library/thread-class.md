@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['thread/std::thread', 'thread/std::thread::id Class', 'thread/std::thread::thread', 'thread/std::thread::detach', 'thread/std::thread::get_id', 'thread/std::thread::hardware_concurrency', 'thread/std::thread::join', 'thread/std::thread::joinable', 'thread/std::thread::native_handle', 'thread/std::thread::swap']  
@@ -51,38 +51,38 @@ class thread;
   
 |Name|Description|  
 |----------|-----------------|  
-|[thread::id Class](#thread__id_class)|Uniquely identifies the associated thread.|  
+|[thread::id Class](#id_class)|Uniquely identifies the associated thread.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[thread](#thread__thread)|Constructs a `thread` object.|  
+|[thread](#thread)|Constructs a `thread` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[detach](#thread__detach)|Detaches the associated thread from the `thread` object.|  
-|[get_id](#thread__get_id)|Returns the unique identifier of the associated thread.|  
-|[hardware_concurrency](#thread__hardware_concurrency)|Static. Returns an estimate of the number of hardware thread contexts.|  
-|[join](#thread__join)|Blocks until the associated thread completes.|  
-|[joinable](#thread__joinable)|Specifies whether the associated thread is joinable.|  
-|[native_handle](#thread__native_handle)|Returns the implementation-specific type that represents the thread handle.|  
-|[swap](#thread__swap)|Swaps the object state with a specified `thread` object.|  
+|[detach](#detach)|Detaches the associated thread from the `thread` object.|  
+|[get_id](#get_id)|Returns the unique identifier of the associated thread.|  
+|[hardware_concurrency](#hardware_concurrency)|Static. Returns an estimate of the number of hardware thread contexts.|  
+|[join](#join)|Blocks until the associated thread completes.|  
+|[joinable](#joinable)|Specifies whether the associated thread is joinable.|  
+|[native_handle](#native_handle)|Returns the implementation-specific type that represents the thread handle.|  
+|[swap](#swap)|Swaps the object state with a specified `thread` object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[thread::operator=](#thread__operator_eq)|Associates a thread with the current `thread` object.|  
+|[thread::operator=](#op_eq)|Associates a thread with the current `thread` object.|  
   
 ## Requirements  
  **Header:** \<thread>  
   
  **Namespace:** std  
   
-##  <a name="thread__detach"></a>  thread::detach
+##  <a name="detach"></a>  thread::detach
  Detaches the associated thread. The operating system becomes responsible for releasing thread resources on termination.  
   
 ```
@@ -90,13 +90,13 @@ void detach();
 ```  
   
 ### Remarks  
- After a call to `detach`, subsequent calls to [get_id](#thread__get_id) return [id](#thread__id_class).  
+ After a call to `detach`, subsequent calls to [get_id](#get_id) return [id](#id_class).  
   
  If the thread that's associated with the calling object is not joinable, the function throws a [system_error](../standard-library/system-error-class.md) that has an error code of `invalid_argument`.  
   
  If the thread that's associated with the calling object is invalid, the function throws a `system_error` that has an error code of `no_such_process`.  
   
-##  <a name="thread__get_id"></a>  thread::get_id
+##  <a name="get_id"></a>  thread::get_id
  Returns a unique identifier for the associated thread.  
   
 ```
@@ -104,9 +104,9 @@ id get_id() const noexcept;
 ```  
   
 ### Return Value  
- A [thread::id](#thread__id_class) object that uniquely identifies the associated thread, or `thread::id()` if no thread is associated with the object.  
+ A [thread::id](#id_class) object that uniquely identifies the associated thread, or `thread::id()` if no thread is associated with the object.  
   
-##  <a name="thread__hardware_concurrency"></a>  thread::hardware_concurrency
+##  <a name="hardware_concurrency"></a>  thread::hardware_concurrency
  Static method that returns an estimate of the number of hardware thread contexts.  
   
 ```
@@ -116,7 +116,7 @@ static unsigned int hardware_concurrency() noexcept;
 ### Return Value  
  An estimate of the number of hardware thread contexts. If the value cannot be computed or is not well defined, this method returns 0.  
   
-##  <a name="thread__id_class"></a>  thread::id Class  
+##  <a name="id_class"></a>  thread::id Class  
  Provides a unique identifier for each thread of execution in the process.  
   
 ```
@@ -130,7 +130,7 @@ class thread::id {
   
  All default-constructed `thread::id` objects compare equal.  
   
-##  <a name="thread__join"></a>  thread::join
+##  <a name="join"></a>  thread::join
  Blocks until the thread of execution that's associated with the calling object completes.  
   
 ```
@@ -138,9 +138,9 @@ void join();
 ```  
   
 ### Remarks  
- If the call succeeds, subsequent calls to [get_id](#thread__get_id) for the calling object return a default [thread::id](#thread__id_class) that does not compare equal to the `thread::id` of any existing thread; if the call does not succeed, the value that's returned by `get_id` is unchanged.  
+ If the call succeeds, subsequent calls to [get_id](#get_id) for the calling object return a default [thread::id](#id_class) that does not compare equal to the `thread::id` of any existing thread; if the call does not succeed, the value that's returned by `get_id` is unchanged.  
   
-##  <a name="thread__joinable"></a>  thread::joinable
+##  <a name="joinable"></a>  thread::joinable
  Specifies whether the associated thread is *joinable*.  
   
 ```
@@ -153,7 +153,7 @@ bool joinable() const noexcept;
 ### Remarks  
  A thread object is *joinable* if `get_id() != id()`.  
   
-##  <a name="thread__native_handle"></a>  thread::native_handle
+##  <a name="native_handle"></a>  thread::native_handle
  Returns the implementation-specific type that represents the thread handle. The thread handle can be used in implementation-specific ways.  
   
 ```
@@ -163,7 +163,7 @@ native_handle_type native_handle();
 ### Return Value  
  `native_handle_type` is defined as a Win32 `HANDLE` that's cast as `void *`.  
   
-##  <a name="thread__operator_eq"></a>  thread::operator=  
+##  <a name="op_eq"></a>  thread::operator=  
  Associates the thread of a specified object with the current object.  
   
 ```
@@ -182,7 +182,7 @@ thread& operator=(thread&& Other) noexcept;
   
  After the association is made, `Other` is set to a default-constructed state.  
   
-##  <a name="thread__swap"></a>  thread::swap
+##  <a name="swap"></a>  thread::swap
  Swaps the object state with that of a specified `thread` object.  
   
 ```
@@ -193,7 +193,7 @@ void swap(thread& Other) noexcept;
  `Other`  
  A `thread` object.  
   
-##  <a name="thread__thread"></a>  thread::thread Constructor  
+##  <a name="thread"></a>  thread::thread Constructor  
  Constructs a `thread` object.  
   
 ```

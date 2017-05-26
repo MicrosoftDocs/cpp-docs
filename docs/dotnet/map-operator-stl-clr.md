@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -48,7 +48,7 @@ mapped_type operator[](key_type key);
  Key value to search for.  
   
 ## Remarks  
- The member functions endeavors to find an element with equivalent ordering to `key`. If it finds one, it returns the associated mapped value; otherwise, it inserts `value_type(``key``, mapped_type())` and returns the associated (default) mapped value. You use it to look up a mapped value given its associated key, or to ensure that an entry exists for the key if none is found.  
+ The member functions endeavors to find an element with equivalent ordering to `key`. If it finds one, it returns the associated mapped value; otherwise, it inserts `value_type(key, mapped_type())` and returns the associated (default) mapped value. You use it to look up a mapped value given its associated key, or to ensure that an entry exists for the key if none is found.  
   
 ## Example  
   

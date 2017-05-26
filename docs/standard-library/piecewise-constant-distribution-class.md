@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['piecewise_constant_distribution', 'random/std::piecewise_constant_distribution', 'random/std::piecewise_constant_distribution::reset', 'random/std::piecewise_constant_distribution::intervals', 'random/std::piecewise_constant_distribution::densities', 'random/std::piecewise_constant_distribution::param', 'random/std::piecewise_constant_distribution::min', 'random/std::piecewise_constant_distribution::max', 'random/std::piecewise_constant_distribution::operator()', 'random/std::piecewise_constant_distribution::param_type', 'random/std::piecewise_constant_distribution::param_type::intervals', 'random/std::piecewise_constant_distribution::param_type::densities', 'random/std::piecewise_constant_distribution::param_type::operator==', 'random/std::piecewise_constant_distribution::param_type::operator!=', 'random/std::piecewise_constant_distribution::param_type']  
@@ -87,8 +87,8 @@ The following table links to articles about individual members:
   
 ||||  
 |-|-|-|  
-|[piecewise_constant_distribution](#piecewise_constant_distribution__piecewise_constant_distribution)|`piecewise_constant_distribution::intervals`|`piecewise_constant_distribution::param`|  
-|`piecewise_constant_distribution::operator()`|`piecewise_constant_distribution::densities`|[param_type](#piecewise_constant_distribution__param_type)|  
+|[piecewise_constant_distribution](#piecewise_constant_distribution)|`piecewise_constant_distribution::intervals`|`piecewise_constant_distribution::param`|  
+|`piecewise_constant_distribution::operator()`|`piecewise_constant_distribution::densities`|[param_type](#param_type)|  
   
 The property function `intervals()` returns a `vector<result_type>` with the set of stored intervals of the distribution.  
   
@@ -214,7 +214,7 @@ Distribution for 100 samples:
   
  **Namespace:** std  
   
-##  <a name="piecewise_constant_distribution__piecewise_constant_distribution"></a>  piecewise_constant_distribution::piecewise_constant_distribution  
+##  <a name="piecewise_constant_distribution"></a>  piecewise_constant_distribution::piecewise_constant_distribution  
 Constructs the distribution.  
   
 ```  
@@ -307,7 +307,7 @@ explicit piecewise_constant_distribution(const param_type& parm);
   
 constructs a distribution object using `parm` as the stored parameter structure.  
   
-##  <a name="piecewise_constant_distribution__param_type"></a>  piecewise_constant_distribution::param_type  
+##  <a name="param_type"></a>  piecewise_constant_distribution::param_type  
 Stores all the parameters of the distribution.  
   
 ```    
@@ -327,7 +327,7 @@ struct param_type {
 ```  
   
 ### Parameters  
-See the constructor parameters for the [piecewise_constant_distribution](#piecewise_constant_distribution__piecewise_constant_distribution).  
+See the constructor parameters for the [piecewise_constant_distribution](#piecewise_constant_distribution).  
   
 ### Remarks  
  **Precondition:** `xmin < xmax`  

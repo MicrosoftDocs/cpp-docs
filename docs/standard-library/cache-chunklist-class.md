@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['allocators/stdext::cache_chunklist', 'stdext::cache_chunklist', 'cache_chunklist', 'allocators/stdext::cache_chunklist::allocate', 'allocators/stdext::cache_chunklist::deallocate']  
@@ -58,21 +58,21 @@ class cache_chunklist
   
 |||  
 |-|-|  
-|[cache_chunklist](#cache_chunklist__cache_chunklist)|Constructs an object of type `cache_chunklist`.|  
+|[cache_chunklist](#cache_chunklist)|Constructs an object of type `cache_chunklist`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[allocate](#cache_chunklist__allocate)|Allocates a block of memory.|  
-|[deallocate](#cache_chunklist__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
+|[allocate](#allocate)|Allocates a block of memory.|  
+|[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="cache_chunklist__allocate"></a>  cache_chunklist::allocate  
+##  <a name="allocate"></a>  cache_chunklist::allocate  
  Allocates a block of memory.  
   
 ```
@@ -90,7 +90,7 @@ void *allocate(std::size_t count);
   
 ### Remarks  
   
-##  <a name="cache_chunklist__cache_chunklist"></a>  cache_chunklist::cache_chunklist  
+##  <a name="cache_chunklist"></a>  cache_chunklist::cache_chunklist  
  Constructs an object of type `cache_chunklist`.  
   
 ```
@@ -99,7 +99,7 @@ cache_chunklist();
   
 ### Remarks  
   
-##  <a name="cache_chunklist__deallocate"></a>  cache_chunklist::deallocate  
+##  <a name="deallocate"></a>  cache_chunklist::deallocate  
  Frees a specified number of objects from storage beginning at a specified position.  
   
 ```

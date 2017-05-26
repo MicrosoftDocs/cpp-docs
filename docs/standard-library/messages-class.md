@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['messages', 'xlocmes/std::messages', 'locale/std::messages::char_type', 'locale/std::messages::string_type', 'locale/std::messages::close', 'locale/std::messages::do_close', 'locale/std::messages::do_get', 'locale/std::messages::do_open', 'locale/std::messages::get', 'locale/std::messages::open']  
@@ -58,32 +58,32 @@ class messages : public messages_base;
   
 |||  
 |-|-|  
-|[messages](#messages__messages)|The message facet constructor function.|  
+|[messages](#messages)|The message facet constructor function.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[char_type](#messages__char_type)|A character type that is used display messages.|  
-|[string_type](#messages__string_type)|A type that describes a string of type `basic_string` containing characters of type `CharType`.|  
+|[char_type](#char_type)|A character type that is used display messages.|  
+|[string_type](#string_type)|A type that describes a string of type `basic_string` containing characters of type `CharType`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[close](#messages__close)|Closes the message catalog.|  
-|[do_close](#messages__do_close)|A virtual function called to lose the message catalog.|  
-|[do_get](#messages__do_get)|A virtual function called to retrieve the message catalog.|  
-|[do_open](#messages__do_open)|A virtual function called to open the message catalog.|  
-|[get](#messages__get)|Retrieves the message catalog.|  
-|[open](#messages__open)|Opens the message catalog.|  
+|[close](#close)|Closes the message catalog.|  
+|[do_close](#do_close)|A virtual function called to lose the message catalog.|  
+|[do_get](#do_get)|A virtual function called to retrieve the message catalog.|  
+|[do_open](#do_open)|A virtual function called to open the message catalog.|  
+|[get](#get)|Retrieves the message catalog.|  
+|[open](#open)|Opens the message catalog.|  
   
 ## Requirements  
  **Header:** \<locale>  
   
  **Namespace:** std  
   
-##  <a name="messages__char_type"></a>  messages::char_type  
+##  <a name="char_type"></a>  messages::char_type  
  A character type that is used display messages.  
   
 ```
@@ -93,7 +93,7 @@ typedef CharType char_type;
 ### Remarks  
  The type is a synonym for the template parameter **CharType**.  
   
-##  <a name="messages__close"></a>  messages::close  
+##  <a name="close"></a>  messages::close  
  Closes the message catalog.  
   
 ```
@@ -105,9 +105,9 @@ void close(catalog _Catval) const;
  The catalog to be closed.  
   
 ### Remarks  
- The member function calls [do_close](#messages__do_close)(_ *Catval*).  
+ The member function calls [do_close](#do_close)(_ *Catval*).  
   
-##  <a name="messages__do_close"></a>  messages::do_close  
+##  <a name="do_close"></a>  messages::do_close  
  A virtual function called to lose the message catalog.  
   
 ```
@@ -119,14 +119,14 @@ virtual void do_close(catalog _Catval) const;
  The catalog to be closed.  
   
 ### Remarks  
- The protected member function closes the message catalog `_Catval`, which must have been opened by an earlier call to [do_open](#messages__do_open).  
+ The protected member function closes the message catalog `_Catval`, which must have been opened by an earlier call to [do_open](#do_open).  
   
  *_Catval* must be obtained from a previously opened catalog that is not closed.  
   
 ### Example  
-  See the example for [close](#messages__close), which calls `do_close`.  
+  See the example for [close](#close), which calls `do_close`.  
   
-##  <a name="messages__do_get"></a>  messages::do_get  
+##  <a name="do_get"></a>  messages::do_get  
  A virtual function called to retrieve the message catalog.  
   
 ```
@@ -157,9 +157,9 @@ virtual string_type do_get(
  The protected member function tries to obtain a message sequence from the message catalog `_Catval`. It may make use of `_Set`, `_Message`, and `_Dfault` in doing so.  
   
 ### Example  
-  See the example for [get](#messages__get), which calls `do_get`.  
+  See the example for [get](#get), which calls `do_get`.  
   
-##  <a name="messages__do_open"></a>  messages::do_open  
+##  <a name="do_open"></a>  messages::do_open  
  A virtual function called to open the message catalog.  
   
 ```
@@ -176,17 +176,17 @@ virtual catalog do_open(
  The locale being searched for in the catalog.  
   
 ### Return Value  
- It returns a value that compares less than zero on failure. Otherwise, the returned value can be used as the first argument on a later call to [get](#messages__get).  
+ It returns a value that compares less than zero on failure. Otherwise, the returned value can be used as the first argument on a later call to [get](#get).  
   
 ### Remarks  
  The protected member function tries to open a message catalog whose name is `_Catname`. It may make use of the locale `_Loc` in doing so  
   
- The return value should be used as the argument on a later call to [close](#messages__close).  
+ The return value should be used as the argument on a later call to [close](#close).  
   
 ### Example  
-  See the example for [open](#messages__open), which calls `do_open`.  
+  See the example for [open](#open), which calls `do_open`.  
   
-##  <a name="messages__get"></a>  messages::get  
+##  <a name="get"></a>  messages::get  
  Retrieves the message catalog.  
   
 ```
@@ -214,9 +214,9 @@ string_type get(
  It returns a copy of `_Dfault` on failure. Otherwise, it returns a copy of the specified message sequence.  
   
 ### Remarks  
- The member function returns [do_get](#messages__do_get)( `_Catval`, `_Set`, `_Message`, `_Dfault`).  
+ The member function returns [do_get](#do_get)( `_Catval`, `_Set`, `_Message`, `_Dfault`).  
   
-##  <a name="messages__messages"></a>  messages::messages  
+##  <a name="messages"></a>  messages::messages  
  The message facet constructor function.  
   
 ```
@@ -248,7 +248,7 @@ protected: messages(
   
  The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).  
   
-##  <a name="messages__open"></a>  messages::open  
+##  <a name="open"></a>  messages::open  
  Opens the message catalog.  
   
 ```
@@ -265,12 +265,12 @@ catalog open(
  The locale being searched for in the catalog.  
   
 ### Return Value  
- It returns a value that compares less than zero on failure. Otherwise, the returned value can be used as the first argument on a later call to [get](#messages__get).  
+ It returns a value that compares less than zero on failure. Otherwise, the returned value can be used as the first argument on a later call to [get](#get).  
   
 ### Remarks  
- The member function returns [do_open](#messages__do_open)( `_Catname`, `_Loc`).  
+ The member function returns [do_open](#do_open)( `_Catname`, `_Loc`).  
   
-##  <a name="messages__string_type"></a>  messages::string_type  
+##  <a name="string_type"></a>  messages::string_type  
  A type that describes a string of type `basic_string` containing characters of type **CharType**.  
   
 ```

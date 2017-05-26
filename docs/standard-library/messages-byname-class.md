@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['messages_byname', 'xlocmes/std::messages_byname']  
@@ -64,7 +64,7 @@ protected:
  An initial reference count.  
   
 ## Remarks  
- Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [messages](../standard-library/messages-class.md#messages__messages)\<CharType>( `_Refs`).  
+ Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [messages](../standard-library/messages-class.md#messages)\<CharType>( `_Refs`).  
   
 ## Requirements  
  **Header:** \<locale>  

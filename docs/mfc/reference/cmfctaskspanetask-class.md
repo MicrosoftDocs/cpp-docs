@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCTasksPaneTask', 'AFXTASKSPANE/CMFCTasksPaneTask', 'AFXTASKSPANE/CMFCTasksPaneTask::CMFCTasksPaneTask', 'AFXTASKSPANE/CMFCTasksPaneTask::SetACCData', 'AFXTASKSPANE/CMFCTasksPaneTask::m_bAutoDestroyWindow', 'AFXTASKSPANE/CMFCTasksPaneTask::m_bIsBold', 'AFXTASKSPANE/CMFCTasksPaneTask::m_dwUserData', 'AFXTASKSPANE/CMFCTasksPaneTask::m_hwndTask', 'AFXTASKSPANE/CMFCTasksPaneTask::m_nIcon', 'AFXTASKSPANE/CMFCTasksPaneTask::m_nWindowHeight', 'AFXTASKSPANE/CMFCTasksPaneTask::m_pGroup', 'AFXTASKSPANE/CMFCTasksPaneTask::m_rect', 'AFXTASKSPANE/CMFCTasksPaneTask::m_strName', 'AFXTASKSPANE/CMFCTasksPaneTask::m_uiCommandID']

@@ -2,8 +2,7 @@
 title: "Partial classes (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -61,7 +60,7 @@ A partial class is a construct that supports scenarios in which you are modifyin
   
  Every partial class definition of a class  must lexically precede the one full definition of that class, but doesn't have to precede forward declarations of the class. If there's no full definition of the class, then the partial class declarations can only be forward declarations.  
   
- All class-keys such as `class` and `struct` must match. For example, it's an error to code `partial class` *X*`{};``struct` *X*`{};`.  
+ All class-keys such as `class` and `struct` must match. For example, it's an error to code `partial class X {}; struct X {};`.  
   
  The following example demonstrates number and ordering. The last partial declaration fails because the class is already defined.  
   

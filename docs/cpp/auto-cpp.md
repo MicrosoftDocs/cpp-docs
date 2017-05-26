@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
@@ -213,7 +213,7 @@ int v1 = 100, v2 = 200;
 auto x = v1 > v2 ? v1 : v2;  
 ```  
   
- The following code fragment initializes variable `x` to type `int`, variable `y` to a reference to type `const``int`, and variable `fp` to a pointer to a function that returns type `int`.  
+ The following code fragment initializes variable `x` to type `int`, variable `y` to a reference to type `const int`, and variable `fp` to a pointer to a function that returns type `int`.  
   
 ```cpp  
 int f(int x) { return x; }  

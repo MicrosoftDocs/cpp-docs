@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComObjectGlobal', 'ATLCOM/ATL::CComObjectGlobal', 'ATLCOM/ATL::CComObjectGlobal::CComObjectGlobal', 'ATLCOM/ATL::CComObjectGlobal::AddRef', 'ATLCOM/ATL::CComObjectGlobal::QueryInterface', 'ATLCOM/ATL::CComObjectGlobal::Release', 'ATLCOM/ATL::CComObjectGlobal::m_hResFinalConstruct']

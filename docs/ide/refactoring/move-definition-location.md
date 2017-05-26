@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/16/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-    - "devlang-cpp"
+ms.technology:  
+  - "cpp-ide"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c6d507ac-c61e-4da2-95c8-d504b42e2520

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "03/30/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "delegate map macros"
   - "event map macros"
   - "interface map macros"
-  ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
+ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
 caps.latest.revision: 1
 author: "mikeblome"
 ms.author: "mblome"

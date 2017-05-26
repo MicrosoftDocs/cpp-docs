@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DTextFormat', 'AFXRENDERTARGET/CD2DTextFormat', 'AFXRENDERTARGET/CD2DTextFormat::CD2DTextFormat', 'AFXRENDERTARGET/CD2DTextFormat::Create', 'AFXRENDERTARGET/CD2DTextFormat::Destroy', 'AFXRENDERTARGET/CD2DTextFormat::Get', 'AFXRENDERTARGET/CD2DTextFormat::GetFontFamilyName', 'AFXRENDERTARGET/CD2DTextFormat::GetLocaleName', 'AFXRENDERTARGET/CD2DTextFormat::IsValid', 'AFXRENDERTARGET/CD2DTextFormat::ReCreate', 'AFXRENDERTARGET/CD2DTextFormat::m_pTextFormat']

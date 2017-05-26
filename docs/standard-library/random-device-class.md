@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['random_device', 'random/std::random_device', 'random/std::random_device::min', 'random/std::random_device::max', 'random/std::random_device::entropy', 'random/std::random_device::operator()', 'random/std::random_device::entropy', 'random/std::random_device::operator()']  
@@ -64,8 +64,8 @@ public:
   
 |||  
 |-|-|  
-|[random_device](#random_device__random_device)|[entropy](#random_device__entropy)|  
-|[random_device::operator()](#random_device__operator__)||  
+|[random_device](#random_device)|[entropy](#entropy)|  
+|[random_device::operator()](#op_call)||  
   
 ## Remarks  
 The class describes a source of random numbers, and is allowed but not required to be non-deterministic or cryptographically secure by the ISO C++ Standard. In the Visual Studio implementation the values produced are non-deterministic and cryptographically secure, but runs more slowly than generators created from engines and engine adaptors (such as [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md), the high quality and fast engine of choice for most applications).  
@@ -116,7 +116,7 @@ This example is simplistic and not representative of the general use-case for th
   
  **Namespace:** std  
   
-##  <a name="random_device__random_device"></a>  random_device::random_device  
+##  <a name="random_device"></a>  random_device::random_device  
 Constructs the generator.  
   
 ```  
@@ -126,7 +126,7 @@ random_device(const std::string& = "");
 ### Remarks  
 The constructor initializes the generator as needed, ignoring the string parameter. Throws a value of an implementation-defined type derived from [exception](../standard-library/exception-class.md) if the `random_device` could not be initialized.  
   
-##  <a name="random_device__entropy"></a>  random_device::entropy  
+##  <a name="entropy"></a>  random_device::entropy  
 Estimates the randomness of the source.  
   
 ```  
@@ -136,7 +136,7 @@ double entropy() const noexcept;
 ### Remarks  
 The member function returns an estimate of the randomness of the source, as measured in bits.  
   
-##  <a name="random_device__operator__"></a>  random_device::operator()  
+##  <a name="op_call"></a>  random_device::operator()  
 Returns a random value.  
   
 ```  

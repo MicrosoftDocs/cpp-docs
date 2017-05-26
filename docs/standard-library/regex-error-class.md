@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['regex_error', 'regex/std::regex_error', 'regex/std::regex_error::code']  
@@ -58,7 +58,7 @@ public:
   
  **Namespace:** std  
   
-##  <a name="regex_error__code"></a>  regex_error::code  
+##  <a name="code"></a>  regex_error::code  
  Returns the error code.  
   
 ```  
@@ -105,7 +105,7 @@ int main()
 regex error: unbalanced parentheses  
 ```  
   
-##  <a name="regex_error__regex_error"></a>  regex_error::regex_error  
+##  <a name="regex_error"></a>  regex_error::regex_error  
  Constructs the object.  
   
 ```  

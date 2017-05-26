@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame::CKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboard', 'AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAfterTransition', 'AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAtOffset', 'AFXANIMATIONCONTROLLER/CKeyFrame::GetExistingKeyframe', 'AFXANIMATIONCONTROLLER/CKeyFrame::GetOffset', 'AFXANIMATIONCONTROLLER/CKeyFrame::GetTransition', 'AFXANIMATIONCONTROLLER/CKeyFrame::m_offset', 'AFXANIMATIONCONTROLLER/CKeyFrame::m_pExistingKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame::m_pTransition']

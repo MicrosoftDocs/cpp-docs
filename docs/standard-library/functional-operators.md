@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['functional/std::operator!=', 'functional/std::operator==']  
@@ -22,9 +22,9 @@ manager: "ghogen"
 # &lt;functional&gt; operators
 |||  
 |-|-|  
-|[operator!=](#operator_neq)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests if callable object is empty.  
   
 ```  
@@ -81,7 +81,7 @@ empty == true
 empty == false  
 ```  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests if callable object is not empty.  
   
 ```  

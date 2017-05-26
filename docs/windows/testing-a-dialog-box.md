@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -57,7 +57,7 @@ When you're designing a dialog box, you can simulate and test its run-time behav
   
 2.  To end the simulation, press Esc, or just choose the **Close** button in the dialog box you are testing.  
   
- For information about how to add resources to managed projects, see [Resources in Desktop Apps](/dotnet/articles/framework/resources/index).  
+ For information about how to add resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index).  
   
  Requirements  
   

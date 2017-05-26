@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -84,25 +84,25 @@ multimap(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `multimap(multimap<Key, Mapped>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[multimap::begin (STL/CLR)](../dotnet/multimap-begin-stl-clr.md)`(),` `right``.`[multimap::end (STL/CLR)](../dotnet/multimap-end-stl-clr.md)`())`, with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the multimap object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the multimap object `right`, with the default ordering predicate.  
   
  The constructor:  
   
  `multimap(multimap<Key, Mapped>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[multimap::begin (STL/CLR)](../dotnet/multimap-begin-stl-clr.md)`(),` `right``->`[multimap::end (STL/CLR)](../dotnet/multimap-end-stl-clr.md)`())`, with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the multimap object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the multimap object `right`, with the default ordering predicate.  
   
  The constructor:  
   
  `template<typename InIter> multimap(InIter first, InIter last);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence, with the default ordering predicate.  
   
  The constructor:  
   
  `template<typename InIter> multimap(InIter first, InIter last, key_compare^ pred);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`, with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
   
  The constructor:  
   

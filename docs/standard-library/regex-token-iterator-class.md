@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['regex_token_iterator', 'regex/std::regex_token_iterator', 'regex/std::regex_token_iterator::regex_type', 'regex/std::regex_token_iterator::value_type', 'regex/std::regex_token_iterator::iterator_category', 'regex/std::regex_token_iterator::difference_type', 'regex/std::regex_token_iterator::pointer', 'regex/std::regex_token_iterator::reference', 'regex/std::regex_token_iterator::operator==', 'regex/std::regex_token_iterator::operator!=', 'regex/std::regex_token_iterator::operator*', 'regex/std::regex_token_iterator::operator->', 'regex/std::regex_token_iterator::operator++', 'regex/std::regex_token_iterator::operator!=']  
@@ -95,7 +95,7 @@ private:
   
  **Namespace:** std  
   
-##  <a name="regex_token_iterator__difference_type"></a>  regex_token_iterator::difference_type  
+##  <a name="difference_type"></a>  regex_token_iterator::difference_type  
  The type of an iterator difference.  
   
 ```  
@@ -201,7 +201,7 @@ match == aa
 match == z  
 ```  
   
-##  <a name="regex_token_iterator__iterator_category"></a>  regex_token_iterator::iterator_category  
+##  <a name="iterator_category"></a>  regex_token_iterator::iterator_category  
  The type of the iterator category.  
   
 ```  
@@ -311,7 +311,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator_neq"></a>  regex_token_iterator::operator!=  
+##  <a name="op_neq"></a>  regex_token_iterator::operator!=  
  Compares iterators for inequality.  
   
 ```  
@@ -425,7 +425,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator_star"></a>  regex_token_iterator::operator*  
+##  <a name="op_star"></a>  regex_token_iterator::operator*  
  Accesses the designated submatch.  
   
 ```  
@@ -535,7 +535,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator_add_add"></a>  regex_token_iterator::operator++  
+##  <a name="op_add_add"></a>  regex_token_iterator::operator++  
  Increments the iterator.  
   
 ```  
@@ -649,7 +649,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator_eq_eq"></a>  regex_token_iterator::operator==  
+##  <a name="op_eq_eq"></a>  regex_token_iterator::operator==  
  Compares iterators for equality.  
   
 ```  
@@ -763,7 +763,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__operator-_gt_"></a>  regex_token_iterator::operator-&gt;  
+##  <a name="regex_token_iterator__operator-_gt"></a>  regex_token_iterator::operator-&gt;  
  Accesses the designated submatch.  
   
 ```  
@@ -873,7 +873,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__pointer"></a>  regex_token_iterator::pointer  
+##  <a name="pointer"></a>  regex_token_iterator::pointer  
  The type of a pointer to a match.  
   
 ```  
@@ -983,7 +983,7 @@ match == z
 ### Remarks  
  The type is a synonym for `sub_match<BidIt>*`, where `BidIt` is the template parameter.  
   
-##  <a name="regex_token_iterator__reference"></a>  regex_token_iterator::reference  
+##  <a name="reference"></a>  regex_token_iterator::reference  
  The type of a reference to a submatch.  
   
 ```  
@@ -1093,7 +1093,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__regex_token_iterator"></a>  regex_token_iterator::regex_token_iterator  
+##  <a name="regex_token_iterator"></a>  regex_token_iterator::regex_token_iterator  
  Constructs the iterator.  
   
 ```  
@@ -1235,7 +1235,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__regex_type"></a>  regex_token_iterator::regex_type  
+##  <a name="regex_type"></a>  regex_token_iterator::regex_type  
  The type of the regular expression to match.  
   
 ```  
@@ -1345,7 +1345,7 @@ match == z
   
 ```  
   
-##  <a name="regex_token_iterator__value_type"></a>  regex_token_iterator::value_type  
+##  <a name="value_type"></a>  regex_token_iterator::value_type  
  The type of a submatch.  
   
 ```  

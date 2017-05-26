@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-ide"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -73,6 +73,6 @@ Deployment is the process by which you distribute a finished application or comp
 ## Related Sections  
  [Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)  
   
- [Deployment](http://msdn.microsoft.com/Library/238d8284-6042-4a38-a7f6-1ee8efd719da)  
+ [Deployment](/dotnet/framework/deployment/index)  
   
  [Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

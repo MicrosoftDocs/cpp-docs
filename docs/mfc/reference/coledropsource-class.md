@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDropSource', 'AFXOLE/COleDropSource', 'AFXOLE/COleDropSource::COleDropSource', 'AFXOLE/COleDropSource::GiveFeedback', 'AFXOLE/COleDropSource::OnBeginDrag', 'AFXOLE/COleDropSource::QueryContinueDrag']

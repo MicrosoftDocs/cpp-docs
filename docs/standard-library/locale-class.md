@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['xlocale/std::locale', 'locale', 'locale/std::locale::category', 'locale/std::locale::combine', 'locale/std::locale::name', 'locale/std::locale::classic', 'locale/std::locale::global', 'locale/std::locale::operator( )', 'locale/std::locale::facet', 'locale/std::locale::id']  
@@ -51,7 +51,7 @@ static locale::id id;
   
  You can define an open-ended set of these facets. You can also construct a locale object that designates an arbitrary number of facets.  
   
- Predefined groups of these facets represent the [locale categories](#locale__category) traditionally managed in the Standard C Library by the function `setlocale`.  
+ Predefined groups of these facets represent the [locale categories](#category) traditionally managed in the Standard C Library by the function `setlocale`.  
   
  Category collate (LC_COLLATE) includes the facets:  
   
@@ -115,7 +115,7 @@ messages<wchar_t>
   
  Some of these predefined facets are used by the iostreams classes, to control the conversion of numeric values to and from text sequences.  
   
- An object of class locale also stores a locale name as an object of class [string](../standard-library/string-typedefs.md#string). Using an invalid locale name to construct a locale facet or a locale object throws an object of class [runtime_error](../standard-library/runtime-error-class.md). The stored locale name is `"*"` if the locale object cannot be certain that a C-style locale corresponds exactly to that represented by the object. Otherwise, you can establish a matching locale within the Standard C Library, for the locale object `Loc`, by calling `setlocale`(LC_ALL `,` `Loc`. [name](#locale__name)`().c_str()`).  
+ An object of class locale also stores a locale name as an object of class [string](../standard-library/string-typedefs.md#string). Using an invalid locale name to construct a locale facet or a locale object throws an object of class [runtime_error](../standard-library/runtime-error-class.md). The stored locale name is `"*"` if the locale object cannot be certain that a C-style locale corresponds exactly to that represented by the object. Otherwise, you can establish a matching locale within the Standard C Library, for the locale object `Loc`, by calling `setlocale`(LC_ALL `,` `Loc`. [name](#name)`().c_str()`).  
   
  In this implementation, you can also call the static member function:  
   
@@ -145,35 +145,35 @@ cout.imbue(loc);
   
 |||  
 |-|-|  
-|[locale](#locale__locale)|Creates a locale, or a copy of a locale, or a copy of locale where a facet or a category has been replaced by a facet or category from another locale.|  
+|[locale](#locale)|Creates a locale, or a copy of a locale, or a copy of locale where a facet or a category has been replaced by a facet or category from another locale.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[category](#locale__category)|An integer type that provides bitmask values to denote standard facet families.|  
+|[category](#category)|An integer type that provides bitmask values to denote standard facet families.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[combine](#locale__combine)|Inserts a facet from a specified locale into a target locale.|  
-|[name](#locale__name)|Returns the stored locale name.|  
+|[combine](#combine)|Inserts a facet from a specified locale into a target locale.|  
+|[name](#name)|Returns the stored locale name.|  
   
 ### Static Functions  
   
 |||  
 |-|-|  
-|[classic](#locale__classic)|The static member function returns a locale object that represents the classic C locale.|  
-|[global](#locale__global)|Resets the default local for the program.|  
+|[classic](#classic)|The static member function returns a locale object that represents the classic C locale.|  
+|[global](#global)|Resets the default local for the program.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator!=](#locale__operator_neq)|Tests two locales for inequality.|  
-|[operator( )](#locale__operator__)|Compares two `basic_string` objects.|  
-|[operator==](#locale__operator_eq_eq)|Tests two locales for equality.|  
+|[operator!=](#op_neq)|Tests two locales for inequality.|  
+|[operator( )](#op_call)|Compares two `basic_string` objects.|  
+|[operator==](#op_eq_eq)|Tests two locales for equality.|  
   
 ### Classes  
   
@@ -187,7 +187,7 @@ cout.imbue(loc);
   
  **Namespace:** std  
   
-##  <a name="locale__category"></a>  locale::category  
+##  <a name="category"></a>  locale::category  
  An integer type that provides bitmask values to denote standard facet families.  
   
 ```  
@@ -225,7 +225,7 @@ static const int none = 0;
   
  You can represent an arbitrary group of categories by using `OR` with these constants, as in **monetary** &#124; **time**.  
   
-##  <a name="locale__classic"></a>  locale::classic  
+##  <a name="classic"></a>  locale::classic  
  The static member function returns a locale object that represents the classic C locale.  
   
 ```  
@@ -277,7 +277,7 @@ The previous locale was classic.
 The current locale is not classic.  
 ```  
   
-##  <a name="locale__combine"></a>  locale::combine  
+##  <a name="combine"></a>  locale::combine  
  Inserts a facet from a specified locale into a target locale.  
   
 ```  
@@ -341,7 +341,7 @@ private:
   
  In such cases, the constructor for the base class facet should have a zero `_Refs` argument. When the object is no longer needed, it is deleted. Thus, you supply a nonzero _ *Refs* argument only in those rare cases where you take responsibility for the lifetime of the object.  
   
-##  <a name="locale__global"></a>  locale::global  
+##  <a name="global"></a>  locale::global  
  Resets the default locale for the program. This affects the global locale for both C and C++.  
   
 ```  
@@ -396,7 +396,7 @@ class id { protected:    id();
 ### Remarks  
  The member class describes the static member object required by each unique locale facet. Note that you cannot copy or assign an object of class **id**.  
   
-##  <a name="locale__locale"></a>  locale::locale  
+##  <a name="locale"></a>  locale::locale  
  Creates a locale, or a copy of a locale, or a copy of locale where a facet or a category has been replaced by a facet or category from another locale.  
   
 ```  
@@ -487,7 +487,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="locale__name"></a>  locale::name  
+##  <a name="name"></a>  locale::name  
  Returns the stored locale name.  
   
 ```  
@@ -524,7 +524,7 @@ The name of the previous locale is: C.
 The name of the current locale is: German_Germany.1252.  
 ```  
   
-##  <a name="locale__operator_neq"></a>  locale::operator!=  
+##  <a name="op_neq"></a>  locale::operator!=  
  Tests two locales for inequality.  
   
 ```  
@@ -581,7 +581,7 @@ locales loc1 (German_Germany.1252) and
  loc3 (English_United States.1252) are not equal.  
 ```  
   
-##  <a name="locale__operator__"></a>  locale::operator()  
+##  <a name="op_call"></a>  locale::operator()  
  Compares two `basic_string` objects.  
   
 ```  
@@ -613,7 +613,7 @@ bool operator()(
 ```  
 const collate<CharType>& fac = use_fac<collate<CharType>>(*this);
 
-return (fac.compare(left.begin(), left.end(), right.begin(), right.end()) <0);
+return (fac.compare(left.begin(), left.end(), right.begin(), right.end()) < 0);
 ```  
   
  Thus, you can use a locale object as a function object.  
@@ -649,7 +649,7 @@ int main( )
 0  
 ```  
   
-##  <a name="locale__operator_eq_eq"></a>  locale::operator==  
+##  <a name="op_eq_eq"></a>  locale::operator==  
  Tests two locales for equality.  
   
 ```  

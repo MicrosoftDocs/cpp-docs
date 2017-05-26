@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['cauchy_distribution', 'random/std::cauchy_distribution', 'random/std::cauchy_distribution::reset', 'random/std::cauchy_distribution::a', 'random/std::cauchy_distribution::b', 'random/std::cauchy_distribution::param', 'random/std::cauchy_distribution::min', 'random/std::cauchy_distribution::max', 'random/std::cauchy_distribution::operator()', 'random/std::cauchy_distribution::param_type', 'random/std::cauchy_distribution::param_type::a', 'random/std::cauchy_distribution::param_type::b', 'random/std::cauchy_distribution::param_type::operator==', 'random/std::cauchy_distribution::param_type::operator!=', 'random/std::cauchy_distribution::param_type']  
@@ -79,8 +79,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[cauchy_distribution](#cauchy_distribution__cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|  
-|`cauchy_distribution::operator()`|`cauchy_distribution::b`|[param_type](#cauchy_distribution__param_type)|  
+|[cauchy_distribution](#cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|  
+|`cauchy_distribution::operator()`|`cauchy_distribution::b`|[param_type](#param_type)|  
   
 The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
   
@@ -236,7 +236,7 @@ Distribution for 10 samples:
   
 **Namespace:** std  
   
-##  <a name="cauchy_distribution__cauchy_distribution"></a>  cauchy_distribution::cauchy_distribution  
+##  <a name="cauchy_distribution"></a>  cauchy_distribution::cauchy_distribution  
 Constructs the distribution.  
   
 ```  
@@ -261,7 +261,7 @@ The first constructor constructs an object whose stored `a` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="cauchy_distribution__param_type"></a>  cauchy_distribution::param_type  
+##  <a name="param_type"></a>  cauchy_distribution::param_type  
 Stores all the parameters of the distribution.  
   
 ```cpp    

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['weak_ptr', 'memory/std::weak_ptr', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count', 'memory/std::weak_ptr::operator=', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count']  
@@ -67,7 +67,7 @@ public:
 ## Remarks  
  The template class describes an object that points to a resource that is managed by one or more [shared_ptr Class](../standard-library/shared-ptr-class.md) objects. The `weak_ptr` objects that point to a resource do not affect the resource's reference count. Thus, when the last `shared_ptr` object that manages that resource is destroyed the resource will be freed, even if there are `weak_ptr` objects pointing to that resource. This is essential for avoiding cycles in data structures.  
   
- A `weak_ptr` object points to a resource if it was constructed from a `shared_ptr` object that owns that resource, if it was constructed from a `weak_ptr` object that points to that resource, or if that resource was assigned to it with [operator=](#weak_ptr__operator_eq). A `weak_ptr` object does not provide direct access to the resource that it points to. Code that needs to use the resource does so through a `shared_ptr` object that owns that resource, created by calling the member function [lock](#weak_ptr__lock). A `weak_ptr` object has expired when the resource that it points to has been freed because all of the `shared_ptr` objects that own the resource have been destroyed. Calling `lock` on a `weak_ptr` object that has expired creates an empty shared_ptr object.  
+ A `weak_ptr` object points to a resource if it was constructed from a `shared_ptr` object that owns that resource, if it was constructed from a `weak_ptr` object that points to that resource, or if that resource was assigned to it with [operator=](#op_eq). A `weak_ptr` object does not provide direct access to the resource that it points to. Code that needs to use the resource does so through a `shared_ptr` object that owns that resource, created by calling the member function [lock](#lock). A `weak_ptr` object has expired when the resource that it points to has been freed because all of the `shared_ptr` objects that own the resource have been destroyed. Calling `lock` on a `weak_ptr` object that has expired creates an empty shared_ptr object.  
   
  An empty weak_ptr object does not point to any resources and has no control block. Its member function `lock` returns an empty shared_ptr object.  
   
@@ -79,32 +79,32 @@ public:
   
 |||  
 |-|-|  
-|[weak_ptr](#weak_ptr__weak_ptr)|Constructs a `weak_ptr`.|  
+|[weak_ptr](#weak_ptr)|Constructs a `weak_ptr`.|  
   
 ### Methods  
   
 |||  
 |-|-|  
-|[element_type](#weak_ptr__element_type)|The type of the element.|  
-|[expired](#weak_ptr__expired)|Tests if ownership has expired.|  
-|[lock](#weak_ptr__lock)|Obtains exclusive ownership of a resource.|  
-|[owner_before](#weak_ptr__owner_before)|Returns `true` if this `weak_ptr` is ordered before (or less than) the provided pointer.|  
-|[reset](#weak_ptr__reset)|Releases owned resource.|  
-|[swap](#weak_ptr__swap)|Swaps two `weak_ptr` objects.|  
-|[use_count](#weak_ptr__use_count)|Counts number of designated `shared_ptr` objects.|  
+|[element_type](#element_type)|The type of the element.|  
+|[expired](#expired)|Tests if ownership has expired.|  
+|[lock](#lock)|Obtains exclusive ownership of a resource.|  
+|[owner_before](#owner_before)|Returns `true` if this `weak_ptr` is ordered before (or less than) the provided pointer.|  
+|[reset](#reset)|Releases owned resource.|  
+|[swap](#swap)|Swaps two `weak_ptr` objects.|  
+|[use_count](#use_count)|Counts number of designated `shared_ptr` objects.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator=](#weak_ptr__operator_eq)|Replaces owned resource.|  
+|[operator=](#op_eq)|Replaces owned resource.|  
   
 ## Requirements  
  **Header:** \<memory>  
   
  **Namespace:** std  
   
-##  <a name="weak_ptr__element_type"></a>  element_type  
+##  <a name="element_type"></a>  element_type  
  The type of the element.  
   
 ```  
@@ -139,7 +139,7 @@ int main()
 *wp0.lock() == 5  
 ```  
   
-##  <a name="weak_ptr__expired"></a>  expired  
+##  <a name="expired"></a>  expired  
  Tests if ownership has expired.  
   
 ```  
@@ -195,7 +195,7 @@ wp.expired() == true
 (bool)wp.lock() == false  
 ```  
   
-##  <a name="weak_ptr__lock"></a>  lock  
+##  <a name="lock"></a>  lock  
  Obtains exclusive ownership of a resource.  
   
 ```  
@@ -251,7 +251,7 @@ wp.expired() == true
 (bool)wp.lock() == false  
 ```  
   
-##  <a name="weak_ptr__operator_eq"></a>  operator=  
+##  <a name="op_eq"></a>  operator=  
  Replaces owned resource.  
   
 ```  
@@ -310,7 +310,7 @@ int main()
 *wp1.lock() == 10  
 ```  
   
-##  <a name="weak_ptr__owner_before"></a>  owner_before  
+##  <a name="owner_before"></a>  owner_before  
  Returns `true` if this `weak_ptr` is ordered before (or less than) the provided pointer.  
   
 ```  
@@ -326,9 +326,9 @@ bool owner_before(const weak_ptr<Other>& ptr);
  An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.  
   
 ### Remarks  
- The template member function returns `true` if `*this` is `ordered before``ptr`.  
+ The template member function returns `true` if `*this` is `ordered before` `ptr`.  
   
-##  <a name="weak_ptr__reset"></a>  reset  
+##  <a name="reset"></a>  reset  
  Releases owned resource.  
   
 ```  
@@ -369,7 +369,7 @@ wp.expired() == false
 wp.expired() == true  
 ```  
   
-##  <a name="weak_ptr__swap"></a>  swap  
+##  <a name="swap"></a>  swap  
  Swaps two `weak_ptr` objects.  
   
 ```  
@@ -437,7 +437,7 @@ int main()
 *wp1 == 5  
 ```  
   
-##  <a name="weak_ptr__use_count"></a>  use_count  
+##  <a name="use_count"></a>  use_count  
  Counts number of designated `shared_ptr` objects.  
   
 ```  
@@ -476,7 +476,7 @@ wp.use_count() == 1
 wp.use_count() == 2  
 ```  
   
-##  <a name="weak_ptr__weak_ptr"></a>  weak_ptr  
+##  <a name="weak_ptr"></a>  weak_ptr  
  Constructs a `weak_ptr`.  
   
 ```  

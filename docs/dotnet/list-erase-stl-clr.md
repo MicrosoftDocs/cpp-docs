@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -57,7 +57,7 @@ iterator erase(iterator first, iterator last);
 ## Remarks  
  The first member function removes the element of the controlled sequence pointed to by `where`. You use it to remove a single element.  
   
- The second member function removes the elements of the controlled sequence in the range `[``first``,` `last``)`. You use it to remove zero or more contiguous elements.  
+ The second member function removes the elements of the controlled sequence in the range [`first`, `last`). You use it to remove zero or more contiguous elements.  
   
  Both member functions return an iterator that designates the first element remaining beyond any elements removed, or [list::end (STL/CLR)](../dotnet/list-end-stl-clr.md)`()` if no such element exists.  
   

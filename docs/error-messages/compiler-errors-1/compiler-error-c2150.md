@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -36,17 +36,20 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Compiler Error C2150
-'identifier' : bit field must have type 'int', 'signed int', or 'unsigned int'  
   
- bit fields are required to be `int`, `signed``int`, or `unsigned``int`.  
+> '*identifier*' : bit field must have type 'int', 'signed int', or 'unsigned int'  
   
- The following sample generates C2150:  
+ The base type for a bit-field is required to be `int`, `signed int`, or `unsigned int`.  
   
-```  
+## Example  
+  
+ This sample shows how you might encounter C2150, and how you can fix it:  
+  
+```cpp  
 // C2150.cpp  
 // compile with: /c  
 struct A {  
    float a : 8;    // C2150  
-   int i : 8;   // OK  
+   int i : 8;      // OK  
 };  
 ```

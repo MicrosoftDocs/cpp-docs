@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['xlocnum/std::numpunct', 'numpunct', 'locale/std::numpunct::char_type', 'locale/std::numpunct::string_type', 'locale/std::numpunct::decimal_point', 'locale/std::numpunct::do_decimal_point', 'locale/std::numpunct::do_falsename', 'locale/std::numpunct::do_grouping', 'locale/std::numpunct::do_thousands_sep', 'locale/std::numpunct::do_truename', 'locale/std::numpunct::falsename', 'locale/std::numpunct::grouping', 'locale/std::numpunct::thousands_sep', 'locale/std::numpunct::truename']  
@@ -54,36 +54,36 @@ class numpunct : public locale::facet;
   
 |||  
 |-|-|  
-|[numpunct](#numpunct__numpunct)|The constructor for objects of type `numpunct`.|  
+|[numpunct](#numpunct)|The constructor for objects of type `numpunct`.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[char_type](#numpunct__char_type)|A type that is used to describe a character used by a locale.|  
-|[string_type](#numpunct__string_type)|A type that describes a string containing characters of type `CharType`.|  
+|[char_type](#char_type)|A type that is used to describe a character used by a locale.|  
+|[string_type](#string_type)|A type that describes a string containing characters of type `CharType`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[decimal_point](#numpunct__decimal_point)|Returns a locale-specific element to use as a decimal point.|  
-|[do_decimal_point](#numpunct__do_decimal_point)|A protected virtual member function that is called to return a locale-specific element to use as a decimal point.|  
-|[do_falsename](#numpunct__do_falsename)|A protected virtual member function that is called to return a string to use as a text representation of the value `false`.|  
-|[do_grouping](#numpunct__do_grouping)|A protected virtual member function that is called to return a locale-specific rule for determining how digits are grouped to the left of any decimal point.|  
-|[do_thousands_sep](#numpunct__do_thousands_sep)|A protected virtual member function that is called to return a locale-specific element to use as a thousands separator.|  
-|[do_truename](#numpunct__do_truename)|A protected virtual member function that is called to return a string to use as a text representation of the value `true`.|  
-|[falsename](#numpunct__falsename)|Returns a string to use as a text representation of the value `false`.|  
-|[grouping](#numpunct__grouping)|Returns a locale-specific rule for determining how digits are grouped to the left of any decimal point.|  
-|[thousands_sep](#numpunct__thousands_sep)|Returns a locale-specific element to use as a thousands separator.|  
-|[truename](#numpunct__truename)|Returns a string to use as a text representation of the value `true`.|  
+|[decimal_point](#decimal_point)|Returns a locale-specific element to use as a decimal point.|  
+|[do_decimal_point](#do_decimal_point)|A protected virtual member function that is called to return a locale-specific element to use as a decimal point.|  
+|[do_falsename](#do_falsename)|A protected virtual member function that is called to return a string to use as a text representation of the value `false`.|  
+|[do_grouping](#do_grouping)|A protected virtual member function that is called to return a locale-specific rule for determining how digits are grouped to the left of any decimal point.|  
+|[do_thousands_sep](#do_thousands_sep)|A protected virtual member function that is called to return a locale-specific element to use as a thousands separator.|  
+|[do_truename](#do_truename)|A protected virtual member function that is called to return a string to use as a text representation of the value `true`.|  
+|[falsename](#falsename)|Returns a string to use as a text representation of the value `false`.|  
+|[grouping](#grouping)|Returns a locale-specific rule for determining how digits are grouped to the left of any decimal point.|  
+|[thousands_sep](#thousands_sep)|Returns a locale-specific element to use as a thousands separator.|  
+|[truename](#truename)|Returns a string to use as a text representation of the value `true`.|  
   
 ## Requirements  
  **Header:** \<locale>  
   
  **Namespace:** std  
   
-##  <a name="numpunct__char_type"></a>  numpunct::char_type  
+##  <a name="char_type"></a>  numpunct::char_type  
  A type that is used to describe a character used by a locale.  
   
 ```  
@@ -93,7 +93,7 @@ typedef CharType char_type;
 ### Remarks  
  The type is a synonym for the template parameter **CharType.**  
   
-##  <a name="numpunct__decimal_point"></a>  numpunct::decimal_point  
+##  <a name="decimal_point"></a>  numpunct::decimal_point  
  Returns a locale-specific element to use as a decimal point.  
   
 ```  
@@ -104,7 +104,7 @@ CharType decimal_point() const;
  A locale-specific element to use as a decimal point.  
   
 ### Remarks  
- The member function returns [do_decimal_point](#numpunct__do_decimal_point).  
+ The member function returns [do_decimal_point](#do_decimal_point).  
   
 ### Example  
   
@@ -133,7 +133,7 @@ German_Germany.1252 decimal point ,
 German_Germany.1252 thousands separator .  
 ```  
   
-##  <a name="numpunct__do_decimal_point"></a>  numpunct::do_decimal_point  
+##  <a name="do_decimal_point"></a>  numpunct::do_decimal_point  
  A protected virtual member function that is called to return a locale-specific element to use as a decimal point.  
   
 ```  
@@ -144,9 +144,9 @@ virtual CharType do_decimal_point() const;
  A locale-specific element to use as a decimal point.  
   
 ### Example  
-  See the example for [decimal_point](#numpunct__decimal_point), where the virtual member function is called by `decimal_point`.  
+  See the example for [decimal_point](#decimal_point), where the virtual member function is called by `decimal_point`.  
   
-##  <a name="numpunct__do_falsename"></a>  numpunct::do_falsename  
+##  <a name="do_falsename"></a>  numpunct::do_falsename  
  The protected virtual member function returns a sequence to use as a text representation of the value **false**.  
   
 ```  
@@ -160,9 +160,9 @@ virtual string_type do_falsename() const;
  The member function returns the string "false" to represent the value **false** in all locales.  
   
 ### Example  
-  See the example for [falsename](#numpunct__falsename), where the virtual member function is called by `falsename`.  
+  See the example for [falsename](#falsename), where the virtual member function is called by `falsename`.  
   
-##  <a name="numpunct__do_grouping"></a>  numpunct::do_grouping  
+##  <a name="do_grouping"></a>  numpunct::do_grouping  
  A protected virtual member function that is called to return a locale-specific rule for determining how digits are grouped to the left of any decimal point.  
   
 ```  
@@ -176,9 +176,9 @@ virtual string do_grouping() const;
  The protected virtual member function returns a locale-specific rule for determining how digits are grouped to the left of any decimal point. The encoding is the same as for **lconv::grouping**.  
   
 ### Example  
-  See the example for [grouping](#numpunct__grouping), where the virtual member function is called by **grouping**.  
+  See the example for [grouping](#grouping), where the virtual member function is called by **grouping**.  
   
-##  <a name="numpunct__do_thousands_sep"></a>  numpunct::do_thousands_sep  
+##  <a name="do_thousands_sep"></a>  numpunct::do_thousands_sep  
  A protected virtual member function that is called to return a locale-specific element to use as a thousands separator.  
   
 ```  
@@ -192,9 +192,9 @@ virtual CharType do_thousands_sep() const;
  The protected virtual member function returns a locale-specific element of type **CharType** to use as a group separator to the left of any decimal point.  
   
 ### Example  
-  See the example for [thousands_sep](#numpunct__thousands_sep), where the virtual member function is called by `thousands_sep`.  
+  See the example for [thousands_sep](#thousands_sep), where the virtual member function is called by `thousands_sep`.  
   
-##  <a name="numpunct__do_truename"></a>  numpunct::do_truename  
+##  <a name="do_truename"></a>  numpunct::do_truename  
  A protected virtual member function that is called to return a string to use as a text representation of the value **true**.  
   
 ```  
@@ -207,9 +207,9 @@ virtual string_type do_truename() const;
  All locales return a string "true" to represent the value **true**.  
   
 ### Example  
-  See the example for [truename](#numpunct__truename), where the virtual member function is called by `truename`.  
+  See the example for [truename](#truename), where the virtual member function is called by `truename`.  
   
-##  <a name="numpunct__falsename"></a>  numpunct::falsename  
+##  <a name="falsename"></a>  numpunct::falsename  
  Returns a string to use as a text representation of the value **false**.  
   
 ```  
@@ -222,7 +222,7 @@ string_type falsename() const;
 ### Remarks  
  The member function returns the string "false" to represent the value **false** in all locales.  
   
- The member function returns [do_falsename](#numpunct__do_falsename).  
+ The member function returns [do_falsename](#do_falsename).  
   
 ### Example  
   
@@ -255,7 +255,7 @@ French_France.1252 truename true
 French_France.1252 falsename false  
 ```  
   
-##  <a name="numpunct__grouping"></a>  numpunct::grouping  
+##  <a name="grouping"></a>  numpunct::grouping  
  Returns a locale-specific rule for determining how digits are grouped to the left of any decimal point.  
   
 ```  
@@ -266,7 +266,7 @@ string grouping() const;
  A locale-specific rule for determining how digits are grouped to the left of any decimal point.  
   
 ### Remarks  
- The member function returns [do_grouping](#numpunct__do_grouping).  
+ The member function returns [do_grouping](#do_grouping).  
   
 ### Example  
   
@@ -298,7 +298,7 @@ German_Germany.1252 international grouping:
  the 0th group to the left of the radix character is of size 3  
 ```  
   
-##  <a name="numpunct__numpunct"></a>  numpunct::numpunct  
+##  <a name="numpunct"></a>  numpunct::numpunct  
  The constructor for objects of type `numpunct`.  
   
 ```  
@@ -322,7 +322,7 @@ explicit numpunct(size_t _Refs = 0);
   
  The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).  
   
-##  <a name="numpunct__string_type"></a>  numpunct::string_type  
+##  <a name="string_type"></a>  numpunct::string_type  
  A type that describes a string containing characters of type **CharType**.  
   
 ```  
@@ -332,7 +332,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 ### Remarks  
  The type describes a specialization of template class [basic_string](../standard-library/basic-string-class.md) whose objects can store copies of the punctuation sequences.  
   
-##  <a name="numpunct__thousands_sep"></a>  numpunct::thousands_sep  
+##  <a name="thousands_sep"></a>  numpunct::thousands_sep  
  Returns a locale-specific element to use as a thousands separator.  
   
 ```  
@@ -343,7 +343,7 @@ CharType thousands_sep() const;
  A locale-specific element to use as a thousands separator.  
   
 ### Remarks  
- The member function returns [do_thousands_sep](#numpunct__do_thousands_sep).  
+ The member function returns [do_thousands_sep](#do_thousands_sep).  
   
 ### Example  
   
@@ -372,7 +372,7 @@ German_Germany.1252 decimal point ,
 German_Germany.1252 thousands separator .  
 ```  
   
-##  <a name="numpunct__truename"></a>  numpunct::truename  
+##  <a name="truename"></a>  numpunct::truename  
  Returns a string to use as a text representation of the value **true**.  
   
 ```  
@@ -383,7 +383,7 @@ string_type falsename() const;
  A string to use as a text representation of the value **true**.  
   
 ### Remarks  
- The member function returns [do_truename](#numpunct__do_truename).  
+ The member function returns [do_truename](#do_truename).  
   
  All locales return a string "true" to represent the value **true**.  
   

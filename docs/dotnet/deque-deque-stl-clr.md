@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -51,19 +51,19 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
 ```  
   
 #### Parameters  
- count  
+ `count`  
  Number of elements to insert.  
   
- first  
+ `first`  
  Beginning of range to insert.  
   
- last  
+ `last`  
  End of range to insert.  
   
- right  
+ `right`  
  Object or range to insert.  
   
- val  
+ `val`  
  Value of the element to insert.  
   
 ## Remarks  
@@ -77,13 +77,13 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `deque(deque<Value>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[deque::begin (STL/CLR)](../dotnet/deque-begin-stl-clr.md)`(),` `right``.`[deque::end (STL/CLR)](../dotnet/deque-end-stl-clr.md)`())`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the deque object `right`.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the deque object `right`. For more information on the iterators, see [deque::begin (STL/CLR)](../dotnet/deque-begin-stl-clr.md) and [deque::end (STL/CLR)](../dotnet/deque-end-stl-clr.md).  
   
  The constructor:  
   
  `deque(deque<Value>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[deque::begin (STL/CLR)](../dotnet/deque-begin-stl-clr.md)`(),` `right``->`[deque::end (STL/CLR)](../dotnet/deque-end-stl-clr.md)`())`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the deque object whose handle is `right`.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the deque object whose handle is `right`.  
   
  The constructor:  
   
@@ -103,7 +103,7 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `deque(InIt first, InIt last);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`. You use it to make the controlled sequence a copy of another sequence.  
+ initializes the controlled sequence with the sequence [`first`, `last`). You use it to make the controlled sequence a copy of another sequence.  
   
  The constructor:  
   
@@ -113,7 +113,7 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
   
 ## Example  
   
-```  
+```cpp  
 // cliext_deque_construct.cpp   
 // compile with: /clr   
 #include <cliext/deque>   

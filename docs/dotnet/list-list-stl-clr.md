@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -51,22 +51,23 @@ list(System::Collections::Generic::IEnumerable<Value>^ right);
 ```  
   
 #### Parameters  
- count  
+ `count`  
  Number of elements to insert.  
   
- first  
+ `first`  
  Beginning of range to insert.  
   
- last  
+ `last`  
  End of range to insert.  
   
- right  
+ `right`  
  Object or range to insert.  
   
- val  
+ `val`  
  Value of the element to insert.  
   
 ## Remarks  
+  
  The constructor:  
   
  `list();`  
@@ -77,13 +78,13 @@ list(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `list(list<Value>% right);`  
   
- initializes the controlled sequence with the sequence `[``right``.`[list::begin (STL/CLR)](../dotnet/list-begin-stl-clr.md)`(),` `right``.`[list::end (STL/CLR)](../dotnet/list-end-stl-clr.md)`())`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the list object `right`.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the list object `right`.  
   
  The constructor:  
   
  `list(list<Value>^ right);`  
   
- initializes the controlled sequence with the sequence `[``right``->`[list::begin (STL/CLR)](../dotnet/list-begin-stl-clr.md)`(),` `right``->`[list::end (STL/CLR)](../dotnet/list-end-stl-clr.md)`())`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the list object whose handle is `right`.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the list object whose handle is `right`.  
   
  The constructor:  
   
@@ -103,7 +104,7 @@ list(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `list(InIt first, InIt last);`  
   
- initializes the controlled sequence with the sequence `[``first``,` `last``)`. You use it to make the controlled sequence a copy of another sequence.  
+ initializes the controlled sequence with the sequence [`first`, `last`). You use it to make the controlled sequence a copy of another sequence.  
   
  The constructor:  
   
@@ -113,7 +114,7 @@ list(System::Collections::Generic::IEnumerable<Value>^ right);
   
 ## Example  
   
-```  
+```cpp  
 // cliext_list_construct.cpp   
 // compile with: /clr   
 #include <cliext/list>   

@@ -2,8 +2,7 @@
 title: "Strings (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/22/2017"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -40,7 +39,7 @@ Text in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] is represented in C++/C
 ## String conversions  
  A `Platform::String` can contain only `char16` characters, or the `NULL` character. If your application has to work with 8-bit characters, use the [String::Data](../cppcx/platform-string-class.md#data) to extract the text as a `const wchar_t*`. You can then use the appropriate Windows functions or Standard Library functions to operate on the data and convert it back to a `wchar_t*` or [wstring](../standard-library/basic-string-class.md), which you can use to construct a new `Platform::String`.  
   
- The following code fragment shows how to convert a `String^` variable to and from a `wstring` variable. For more information about the string manipulation that's used in this example, see [basic_string::replace](../standard-library/basic-string-class.md#basic_string__replace).  
+ The following code fragment shows how to convert a `String^` variable to and from a `wstring` variable. For more information about the string manipulation that's used in this example, see [basic_string::replace](../standard-library/basic-string-class.md#replace).  
   
  [!code-cpp[cx_strings#04](../cppcx/codesnippet/CPP/cppcx_strings/class1.cpp#04)]  
   

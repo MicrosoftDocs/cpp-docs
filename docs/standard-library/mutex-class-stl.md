@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['mutex/std::mutex', 'mutex/std::mutex::mutex', 'mutex/std::mutex::lock', 'mutex/std::mutex::native_handle', 'mutex/std::mutex::try_lock', 'mutex/std::mutex::unlock']  
@@ -46,24 +46,24 @@ class mutex;
   
 |Name|Description|  
 |----------|-----------------|  
-|[mutex](#mutex__mutex)|Constructs a `mutex` object.|  
-|[mutex::~mutex Destructor](#mutex___dtormutex_destructor)|Releases any resources that were used by the `mutex` object.|  
+|[mutex](#mutex)|Constructs a `mutex` object.|  
+|[mutex::~mutex Destructor](#dtormutex_destructor)|Releases any resources that were used by the `mutex` object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[lock](#mutex__lock)|Blocks the calling thread until the thread obtains ownership of the `mutex`.|  
-|[native_handle](#mutex__native_handle)|Returns the implementation-specific type that represents the mutex handle.|  
-|[try_lock](#mutex__try_lock)|Attempts to obtain ownership of the `mutex` without blocking.|  
-|[unlock](#mutex__unlock)|Releases ownership of the `mutex`.|  
+|[lock](#lock)|Blocks the calling thread until the thread obtains ownership of the `mutex`.|  
+|[native_handle](#native_handle)|Returns the implementation-specific type that represents the mutex handle.|  
+|[try_lock](#try_lock)|Attempts to obtain ownership of the `mutex` without blocking.|  
+|[unlock](#unlock)|Releases ownership of the `mutex`.|  
   
 ## Requirements  
  **Header:** \<mutex>  
   
  **Namespace:** std  
   
-##  <a name="mutex__lock"></a>  mutex::lock
+##  <a name="lock"></a>  mutex::lock
  Blocks the calling thread until the thread obtains ownership of the `mutex`.  
   
 ```cpp  
@@ -73,14 +73,14 @@ void lock();
 ### Remarks  
  If the calling thread already owns the `mutex`, the behavior is undefined.  
   
-##  <a name="mutex__mutex"></a>  mutex::mutex Constructor  
+##  <a name="mutex"></a>  mutex::mutex Constructor  
  Constructs a `mutex` object that is not locked.  
   
 ```cpp  
 constexpr mutex() noexcept;
 ```  
   
-##  <a name="mutex___dtormutex_destructor"></a>  mutex::~mutex Destructor  
+##  <a name="dtormutex_destructor"></a>  mutex::~mutex Destructor  
  Releases any resources that are used by the `mutex` object.  
   
 ```cpp  
@@ -90,7 +90,7 @@ constexpr mutex() noexcept;
 ### Remarks  
  If the object is locked when the destructor runs, the behavior is undefined.  
   
-##  <a name="mutex__native_handle"></a>  mutex::native_handle
+##  <a name="native_handle"></a>  mutex::native_handle
  Returns the implementation-specific type that represents the mutex handle. The mutex handle can be used in implementation-specific ways.  
   
 ```
@@ -100,7 +100,7 @@ native_handle_type native_handle();
 ### Return Value  
  `native_handle_type` is defined as a `Concurrency::critical_section *` that's cast as `void *`.  
   
-##  <a name="mutex__try_lock"></a>  mutex::try_lock
+##  <a name="try_lock"></a>  mutex::try_lock
  Attempts to obtain ownership of the `mutex` without blocking.  
   
 ```cpp  
@@ -113,7 +113,7 @@ bool try_lock();
 ### Remarks  
  If the calling thread already owns the `mutex`, the behavior is undefined.  
   
-##  <a name="mutex__unlock"></a>  mutex::unlock
+##  <a name="unlock"></a>  mutex::unlock
  Releases ownership of the `mutex`.  
   
 ```cpp  

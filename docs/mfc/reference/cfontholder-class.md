@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFontHolder', 'AFXCTL/CFontHolder', 'AFXCTL/CFontHolder::CFontHolder', 'AFXCTL/CFontHolder::GetDisplayString', 'AFXCTL/CFontHolder::GetFontDispatch', 'AFXCTL/CFontHolder::GetFontHandle', 'AFXCTL/CFontHolder::InitializeFont', 'AFXCTL/CFontHolder::QueryTextMetrics', 'AFXCTL/CFontHolder::ReleaseFont', 'AFXCTL/CFontHolder::Select', 'AFXCTL/CFontHolder::SetFont', 'AFXCTL/CFontHolder::m_pFont']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComMultiThreadModelNoCS', 'ATLBASE/ATL::CComMultiThreadModelNoCS', 'ATLBASE/ATL::CComMultiThreadModelNoCS::AutoCriticalSection', 'ATLBASE/ATL::CComMultiThreadModelNoCS::CriticalSection', 'ATLBASE/ATL::CComMultiThreadModelNoCS::ThreadModelNoCS', 'ATLBASE/ATL::CComMultiThreadModelNoCS::Decrement', 'ATLBASE/ATL::CComMultiThreadModelNoCS::Increment']

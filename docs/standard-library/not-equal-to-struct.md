@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['not_equal_to', 'xfunctional/std::not_equal_to']  
@@ -68,7 +68,7 @@ struct not_equal_to<void>
  The right operand of the inequality operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.  
   
 ## Return Value  
- The result of `Left``!=``Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator!=`.  
+ The result of `Left != Right`. The specialized template does perfect forwarding of the result, which has the type that's returned by `operator!=`.  
   
 ## Remarks  
  The objects of type `Type` must be equality-comparable. This requires that the `operator!=` defined on the set of objects satisfies the mathematical properties of an equivalence relation. All of the built-in numeric and pointer types satisfy this requirement.  

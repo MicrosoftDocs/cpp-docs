@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -56,4 +56,5 @@ Visual C++ supports interoperability features that allow managed and unmanaged c
  Describes how non-CLR DLLs can be used from .NET applications.  
   
 ## See Also  
- [(NOTINBUILD)Visual C++ Programming Methodologies](http://msdn.microsoft.com/en-us/0822f806-fa81-4b65-bf0f-1e2921f30c95)
+
+

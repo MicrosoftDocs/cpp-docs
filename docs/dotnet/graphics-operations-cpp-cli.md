@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -51,7 +51,7 @@ Demonstrates image manipulation using the [!INCLUDE[winsdklong](../dotnet/includ
  [How to: Rotate Images with the .NET Framework](../dotnet/how-to-rotate-images-with-the-dotnet-framework.md)  
   
 ## Related Sections  
- [Getting Started with Graphics Programming](http://msdn.microsoft.com/Library/eb0f6d6f-9e52-4167-9592-ff4b82fb5869)  
+ [Getting Started with Graphics Programming](/dotnet/framework/winforms/advanced/getting-started-with-graphics-programming)  
   
  [About GDI+ Managed Code](http://msdn.microsoft.com/Library/a98a76ab-e455-49c9-891c-0491ac932f2c)  
   

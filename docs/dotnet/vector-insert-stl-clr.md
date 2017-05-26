@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -74,7 +74,7 @@ void insert(iterator where,
   
  The second member function inserts a repetition of `count` elements of value `val`. You use it to insert zero or more contiguous elements which are all copies of the same value.  
   
- If `InIt` is an integer type, the third member function behaves the same as `insert(``where``, (size_type)``first``, (value_type)``last``)`. Otherwise, it inserts the sequence `[``first``,` `last``)`. You use it to insert zero or more contiguous elements copied from another sequence.  
+ If `InIt` is an integer type, the third member function behaves the same as `insert(where, (size_type)first, (value_type)last)`. Otherwise, it inserts the sequence [`first`, `last`). You use it to insert zero or more contiguous elements copied from another sequence.  
   
  The fourth member function inserts the sequence designated by the `right`. You use it to insert a sequence described by an enumerator.  
   

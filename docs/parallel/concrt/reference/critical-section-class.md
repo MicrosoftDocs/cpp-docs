@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['critical_section', 'CONCRT/concurrency::critical_section', 'CONCRT/concurrency::critical_section::critical_section::scoped_lock Class', 'CONCRT/concurrency::critical_section::critical_section', 'CONCRT/concurrency::critical_section::lock', 'CONCRT/concurrency::critical_section::native_handle', 'CONCRT/concurrency::critical_section::try_lock', 'CONCRT/concurrency::critical_section::try_lock_for', 'CONCRT/concurrency::critical_section::unlock']

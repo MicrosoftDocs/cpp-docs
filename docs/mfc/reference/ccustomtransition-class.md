@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCustomTransition', 'AFXANIMATIONCONTROLLER/CCustomTransition', 'AFXANIMATIONCONTROLLER/CCustomTransition::CCustomTransition', 'AFXANIMATIONCONTROLLER/CCustomTransition::Create', 'AFXANIMATIONCONTROLLER/CCustomTransition::SetInitialValue', 'AFXANIMATIONCONTROLLER/CCustomTransition::SetInitialVelocity', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_bInitialValueSpecified', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_bInitialVelocitySpecified', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_initialValue', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_initialVelocity', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_pInterpolator']

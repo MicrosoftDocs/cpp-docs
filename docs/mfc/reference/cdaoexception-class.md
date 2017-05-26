@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDaoException', 'AFXDAO/CDaoException', 'AFXDAO/CDaoException::CDaoException', 'AFXDAO/CDaoException::GetErrorCount', 'AFXDAO/CDaoException::GetErrorInfo', 'AFXDAO/CDaoException::m_nAfxDaoError', 'AFXDAO/CDaoException::m_pErrorInfo', 'AFXDAO/CDaoException::m_scode']

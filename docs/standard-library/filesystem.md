@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -136,10 +136,10 @@ using namespace std::experimental::filesystem::v1;
   
 |Name|Description|  
 |----------|-----------------|  
-|[copy_options](../standard-library/filesystem-enumerations.md#filesystem__copy_options)|An enumeration that is used with [copy_file](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) and determines behavior if a destination file already exists.|  
-|[directory_options](../standard-library/filesystem-enumerations.md#filesystem__directory_options)|An enumeration that specifies options for directory iterators.|  
-|[file_type](../standard-library/filesystem-enumerations.md#filesystem__file_type)|An enumeration for file types.|  
-|[perms](../standard-library/filesystem-enumerations.md#filesystem__perms)|A bitmask type used to convey permissions and options to permissions|  
+|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](http://msdn.microsoft.com/en-us/4af7a9b0-8861-45ed-b84e-0307f0669d60) and determines behavior if a destination file already exists.|  
+|[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|An enumeration that specifies options for directory iterators.|  
+|[file_type](../standard-library/filesystem-enumerations.md#file_type)|An enumeration for file types.|  
+|[perms](../standard-library/filesystem-enumerations.md#perms)|A bitmask type used to convey permissions and options to permissions|  
   
 ## See Also  
  [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

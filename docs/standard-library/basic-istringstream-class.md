@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['sstream/std::basic_istringstream', 'basic_istringstream', 'sstream/std::basic_istringstream::allocator_type', 'sstream/std::basic_istringstream::rdbuf', 'sstream/std::basic_istringstream::str', 'sstream/std::basic_istringstream::swap']  
@@ -60,41 +60,41 @@ class basic_istringstream : public basic_istream<Elem, Tr>
   
 |||  
 |-|-|  
-|[basic_istringstream](#basic_istringstream__basic_istringstream)|Constructs an object of type `basic_istringstream`.|  
+|[basic_istringstream](#basic_istringstream)|Constructs an object of type `basic_istringstream`.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[allocator_type](#basic_istringstream__allocator_type)|The type is a synonym for the template parameter `Alloc`.|  
+|[allocator_type](#allocator_type)|The type is a synonym for the template parameter `Alloc`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[rdbuf](#basic_istringstream__rdbuf)|Returns the address of the stored stream buffer of type `pointer` to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>.|  
-|[str](#basic_istringstream__str)|Sets or gets the text in a string buffer without changing the write position.|  
-|[swap](#basic_istringstream__swap)|Exchanges the values in this `basic_istringstream` object for those of the provided object.|  
+|[rdbuf](#rdbuf)|Returns the address of the stored stream buffer of type `pointer` to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`, `Alloc`>.|  
+|[str](#str)|Sets or gets the text in a string buffer without changing the write position.|  
+|[swap](#swap)|Exchanges the values in this `basic_istringstream` object for those of the provided object.|  
   
 ### Operators  
   
 |||  
 |-|-|  
-|[operator=](#basic_istringstream__operator_eq)|Assigns the values to this `basic_istringstream` object from the object parameter.|  
+|[operator=](#op_eq)|Assigns the values to this `basic_istringstream` object from the object parameter.|  
   
 ## Requirements  
  **Header:** \<sstream>  
   
  **Namespace:** std  
   
-##  <a name="basic_istringstream__allocator_type"></a>  basic_istringstream::allocator_type  
+##  <a name="allocator_type"></a>  basic_istringstream::allocator_type  
  The type is a synonym for the template parameter `Alloc`.  
   
 ```  
 typedef Alloc allocator_type;  
 ```  
   
-##  <a name="basic_istringstream__basic_istringstream"></a>  basic_istringstream::basic_istringstream  
+##  <a name="basic_istringstream"></a>  basic_istringstream::basic_istringstream  
  Constructs an object of type `basic_istringstream`.  
   
 ```  
@@ -111,7 +111,7 @@ basic_istringstream(
   
 ### Parameters  
  `_Mode`  
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#ios_base__openmode).  
+ One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).  
   
  `str`  
  An object of type `basic_string`.  
@@ -126,7 +126,7 @@ basic_istringstream(
   
  The third constructor initializes the object with the contents of `right`, treated as an rvalue reference.  
   
-##  <a name="basic_istringstream__operator_eq"></a>  basic_istringstream::operator=  
+##  <a name="op_eq"></a>  basic_istringstream::operator=  
  Assigns the values to this `basic_istringstream` object from the object parameter.  
   
 ```  
@@ -140,7 +140,7 @@ basic_istringstream& operator=(basic_istringstream&& right);
 ### Remarks  
  The member operator replaces the contents of the object with the contents of `right`, treated as an rvalue reference move assignment.  
   
-##  <a name="basic_istringstream__rdbuf"></a>  basic_istringstream::rdbuf  
+##  <a name="rdbuf"></a>  basic_istringstream::rdbuf  
  Returns the address of the stored stream buffer of type **pointer** to [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.  
   
 ```  
@@ -151,9 +151,9 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
  The address of the stored stream buffer of type **pointer** to basic_stringbuf< **Elem**, **Tr**, `Alloc`>.  
   
 ### Example  
-  See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#basic_filebuf__close) for an example that uses `rdbuf`.  
+  See [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) for an example that uses `rdbuf`.  
   
-##  <a name="basic_istringstream__str"></a>  basic_istringstream::str  
+##  <a name="str"></a>  basic_istringstream::str  
  Sets or gets the text in a string buffer without changing the write position.  
   
 ```  
@@ -172,12 +172,12 @@ void str(
  Returns an object of class [basic_string](../standard-library/basic-string-class.md)< **Elem**, **Tr**, `Alloc`>, whose controlled sequence is a copy of the sequence controlled by **\*this**.  
   
 ### Remarks  
- The first member function returns [rdbuf](#basic_istringstream__rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#basic_stringbuf__str). The second member function calls `rdbuf` -> **str**( `_Newstr`).  
+ The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/basic-stringbuf-class.md#str). The second member function calls `rdbuf` -> **str**( `_Newstr`).  
   
 ### Example  
-  See [basic_stringbuf::str](../standard-library/basic-stringbuf-class.md#basic_stringbuf__str) for an example that uses **str**.  
+  See [basic_stringbuf::str](../standard-library/basic-stringbuf-class.md#str) for an example that uses **str**.  
   
-##  <a name="basic_istringstream__swap"></a>  basic_istringstream::swap  
+##  <a name="swap"></a>  basic_istringstream::swap  
  Exchanges the values of two `basic_istringstream` objects.  
   
 ```  

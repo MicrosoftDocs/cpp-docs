@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['array', 'AMP/array', 'AMP/Concurrency::array::array', 'AMP/Concurrency::array::copy_to', 'AMP/Concurrency::array::data', 'AMP/Concurrency::array::get_accelerator_view', 'AMP/Concurrency::array::get_associated_accelerator_view', 'AMP/Concurrency::array::get_cpu_access_type', 'AMP/Concurrency::array::get_extent', 'AMP/Concurrency::array::reinterpret_as', 'AMP/Concurrency::array::section', 'AMP/Concurrency::array::view_as', 'AMP/Concurrency::array::rank', 'AMP/Concurrency::array::accelerator_view', 'AMP/Concurrency::array::associated_accelerator_view', 'AMP/Concurrency::array::cpu_access_type', 'AMP/Concurrency::array::extent']

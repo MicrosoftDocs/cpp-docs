@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Error Handling and Notification
-For more information on error handling and notification, see [Understanding the Helper Function](http://msdn.microsoft.com/en-us/6279c12c-d908-4967-b0b3-cabfc3e91d3d).  
+For more information on error handling and notification, see [Understanding the Helper Function](understanding-the-helper-function.md).  
   
  For more information on hook functions, see [Structure and Constant Definitions](../../build/reference/structure-and-constant-definitions.md).  
   

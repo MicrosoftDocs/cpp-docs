@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CButton', 'AFXWIN/CButton', 'AFXWIN/CButton::CButton', 'AFXWIN/CButton::Create', 'AFXWIN/CButton::DrawItem', 'AFXWIN/CButton::GetBitmap', 'AFXWIN/CButton::GetButtonStyle', 'AFXWIN/CButton::GetCheck', 'AFXWIN/CButton::GetCursor', 'AFXWIN/CButton::GetIcon', 'AFXWIN/CButton::GetIdealSize', 'AFXWIN/CButton::GetImageList', 'AFXWIN/CButton::GetNote', 'AFXWIN/CButton::GetNoteLength', 'AFXWIN/CButton::GetSplitGlyph', 'AFXWIN/CButton::GetSplitImageList', 'AFXWIN/CButton::GetSplitInfo', 'AFXWIN/CButton::GetSplitSize', 'AFXWIN/CButton::GetSplitStyle', 'AFXWIN/CButton::GetState', 'AFXWIN/CButton::GetTextMargin', 'AFXWIN/CButton::SetBitmap', 'AFXWIN/CButton::SetButtonStyle', 'AFXWIN/CButton::SetCheck', 'AFXWIN/CButton::SetCursor', 'AFXWIN/CButton::SetDropDownState', 'AFXWIN/CButton::SetIcon', 'AFXWIN/CButton::SetImageList', 'AFXWIN/CButton::SetNote', 'AFXWIN/CButton::SetSplitGlyph', 'AFXWIN/CButton::SetSplitImageList', 'AFXWIN/CButton::SetSplitInfo', 'AFXWIN/CButton::SetSplitSize', 'AFXWIN/CButton::SetSplitStyle', 'AFXWIN/CButton::SetState', 'AFXWIN/CButton::SetTextMargin']

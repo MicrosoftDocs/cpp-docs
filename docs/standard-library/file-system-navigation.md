@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -170,7 +170,7 @@ C:\Documents\2014\ < D:\Documents\2013\Reports\: true
 To run this code, paste it into the full example above before `main` and uncomment the line that calls it in main.  
   
 ### Converting between path and string types  
-A `path` object is implicitly convertible to `std::wstring` or `std::string`. This means you can pass a path to functions such as [wofstream::open](../standard-library/basic-ofstream-class.md#basic_ofstream__open), as shown in this example:  
+A `path` object is implicitly convertible to `std::wstring` or `std::string`. This means you can pass a path to functions such as [wofstream::open](../standard-library/basic-ofstream-class.md#open), as shown in this example:  
   
 ```cpp  
 // filesystem_path_conversion.cpp  

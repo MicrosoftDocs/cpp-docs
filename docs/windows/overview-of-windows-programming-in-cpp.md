@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -88,7 +88,7 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
 -   Device drivers. For more information, see [Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/p/?LinkId=256421)  
   
--   Windows services. For more information, see [Introduction to Windows Service Applications](http://msdn.microsoft.com/Library/1b1b5e67-3ff3-40c0-8154-322cfd6ef0ae).  
+-   Windows services. For more information, see [Introduction to Windows Service Applications](/dotnet/framework/windows-services/introduction-to-windows-service-applications).  
   
  You can use Visual C++ to package almost any kind of custom high-performance functionality in Win32 DLLs or in COM DLLs that can be consumed by C++ apps or by apps that are written in other languages—for example, C# or Visual Basic. For more information about WIn32 DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about COM development, see [Component Object Model (COM)](http://msdn.microsoft.com/en-us/375d29a7-a1f3-4bd8-8621-bad7a049b2aa).  
   
@@ -114,4 +114,4 @@ You can use Visual C++ to write a wide variety of programs that run on a Windows
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Visual C++](../visual-cpp-in-visual-studio.md)|Parent topic for MSDN Library content about C++.|
+|[Visual C++](../visual-cpp-in-visual-studio.md)|Parent topic for Visual C++ developer content.|

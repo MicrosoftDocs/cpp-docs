@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['gslice_array', 'valarray/std::gslice_array']  
@@ -98,7 +98,7 @@ public:
 ## Remarks  
  The class describes an object that stores a reference to an object **va** of class [valarray](../standard-library/valarray-class.md)**\<Type>**, along with an object **gs** of class [gslice](../standard-library/gslice-class.md) which describes the sequence of elements to select from the **valarray\<Type>** object.  
   
- You construct a **gslice_array\<Type>** object only by writing an expression of the form [va&#91;gs&#93;](../standard-library/valarray-class.md#valarray__operator_at). The member functions of class gslice_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected.  
+ You construct a **gslice_array\<Type>** object only by writing an expression of the form [va&#91;gs&#93;](../standard-library/valarray-class.md#op_at). The member functions of class gslice_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected.  
   
  The template class is created indirectly by certain valarray operations and cannot be used directly in the program. An internal auxiliary template class instead is used by the slice subscript operator:  
   
@@ -120,7 +120,7 @@ const valarray<size_t> len(lv, 2), str(dv, 2);
  The indices must be valid for the procedure to be valid.  
   
 ## Example  
- See the example for [gslice::gslice](../standard-library/gslice-class.md#gslice__gslice) for an example of how to declare and use a slice_array.  
+ See the example for [gslice::gslice](../standard-library/gslice-class.md#gslice) for an example of how to declare and use a slice_array.  
   
 ## Requirements  
  **Header:** \<valarray>  

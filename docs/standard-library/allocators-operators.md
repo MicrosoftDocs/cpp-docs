@@ -14,9 +14,9 @@ manager: "ghogen"
 # &lt;allocators&gt; operators
 |||  
 |-|-|  
-|[operator!=](#operator_neq)|[operator==](#operator_eq_eq)|  
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator_neq"></a>  operator!=  
+##  <a name="op_neq"></a>  operator!=  
  Tests for inequality between allocator objects of a specified class.  
   
 ```
@@ -39,7 +39,7 @@ bool operator!=(
 ### Remarks  
  The template operator returns `!(left == right)`.  
   
-##  <a name="operator_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq"></a>  operator==  
  Tests for equality between allocator objects of a specified class.  
   
 ```

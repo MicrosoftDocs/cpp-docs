@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -40,7 +40,7 @@ The topics in [Using a Windows Form User Control in MFC](../dotnet/using-a-windo
   
  However, if you are accustomed to MFC, you might be used to creating certain types of applications that are not yet explicitly supported in Windows Forms. Windows Forms applications are equivalent to MFC dialog applications. However, they do not provide the infrastructure to directly support other MFC application types like OLE document server/container, ActiveX documents, the Document/View support for single-document interface (SDI), multiple-document interface (MDI), and multiple top-level interface (MTI). You can write your own logic to create these applications.  
   
- For more information about Windows Forms applications, see [Introduction to Windows Forms](http://msdn.microsoft.com/Library/3a2b6284-c8d6-4e1c-8c69-0bed38f38cd4).  
+ For more information about Windows Forms applications, see [Introduction to Windows Forms](/dotnet/framework/winforms/windows-forms-overview).  
   
  For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).  
   
@@ -64,7 +64,7 @@ The topics in [Using a Windows Form User Control in MFC](../dotnet/using-a-windo
   
 -   Commands  
   
-     MFC has the concept of commands. The menu bar, toolbar, and context menu can all invoke the same command, for example, Cut and Copy. In Windows Forms, commands are tightly bound events from a particular UI element (such as a menu item); therefore, you have to hook up all the command events explicitly. You can also handle multiple events with a single handler in Windows Forms. For more information, see [Connecting Multiple Events to a Single Event Handler in Windows Forms](http://msdn.microsoft.com/Library/5a20749a-41b5-4acc-8eb1-9e5040b0a2c4).  
+     MFC has the concept of commands. The menu bar, toolbar, and context menu can all invoke the same command, for example, Cut and Copy. In Windows Forms, commands are tightly bound events from a particular UI element (such as a menu item); therefore, you have to hook up all the command events explicitly. You can also handle multiple events with a single handler in Windows Forms. For more information, see [Connecting Multiple Events to a Single Event Handler in Windows Forms](/dotnet/framework/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms).  
   
 -   Command routing  
   

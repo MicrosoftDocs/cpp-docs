@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -51,7 +51,7 @@ You can use the [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-le
   
 When `_ITERATOR_DEBUG_LEVEL` is defined as 1 or 2, these iterator checks are performed:  
   
--   All standard iterators (for example, [vector::iterator](../standard-library/vector-class.md#vector__iterator)) are checked.  
+-   All standard iterators (for example, [vector::iterator](../standard-library/vector-class.md#iterator)) are checked.  
   
 -   If an output iterator is a checked iterator, calls to standard library functions such as [std::copy](../standard-library/algorithm-functions.md#copy) get checked behavior.  
   
@@ -61,9 +61,9 @@ When `_ITERATOR_DEBUG_LEVEL` is defined as 1 or 2, these iterator checks are per
   
 |||||  
 |-|-|-|-|  
-|[basic_string::operator\[\]](../standard-library/basic-string-class.md#basic_string__operator_at)|[bitset::operator\[\]](../standard-library/bitset-class.md#bitset__operator_at)|[back](../standard-library/deque-class.md#deque__back)|[front](../standard-library/deque-class.md#deque__front)|  
-|[deque::operator\[\]](../standard-library/deque-class.md#deque__operator_at)|[back](../standard-library/list-class.md#list__back)|[front](../standard-library/list-class.md#list__front)|[back](../standard-library/queue-class.md#queue__back)|  
-|[front](../standard-library/queue-class.md#queue__front)|[vector::operator\[\]](../standard-library/vector-class.md#vector__operator_at)|[back](../standard-library/vector-class.md#vector__back)|[front](../standard-library/vector-class.md#vector__front)|  
+|[basic_string::operator\[\]](../standard-library/basic-string-class.md#op_at)|[bitset::operator\[\]](../standard-library/bitset-class.md#op_at)|[back](../standard-library/deque-class.md#back)|[front](../standard-library/deque-class.md#front)|  
+|[deque::operator\[\]](../standard-library/deque-class.md#op_at)|[back](../standard-library/list-class.md#back)|[front](../standard-library/list-class.md#front)|[back](../standard-library/queue-class.md#back)|  
+|[front](../standard-library/queue-class.md#front)|[vector::operator\[\]](../standard-library/vector-class.md#op_at)|[back](../standard-library/vector-class.md#back)|[front](../standard-library/vector-class.md#front)|  
   
 When `_ITERATOR_DEBUG_LEVEL` is defined as 0:  
   

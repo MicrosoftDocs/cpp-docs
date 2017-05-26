@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['geometric_distribution', 'random/std::geometric_distribution', 'random/std::geometric_distribution::reset', 'random/std::geometric_distribution::p', 'random/std::geometric_distribution::param', 'random/std::geometric_distribution::min', 'random/std::geometric_distribution::max', 'random/std::geometric_distribution::operator()', 'random/std::geometric_distribution::param_type', 'random/std::geometric_distribution::param_type::p', 'random/std::geometric_distribution::param_type::operator==', 'random/std::geometric_distribution::param_type::operator!=', 'random/std::geometric_distribution::param_type']  
@@ -78,8 +78,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[geometric_distribution](#geometric_distribution__geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|  
-|`geometric_distribution::operator()`||[param_type](#geometric_distribution__param_type)|  
+|[geometric_distribution](#geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|  
+|`geometric_distribution::operator()`||[param_type](#param_type)|  
   
 The property function `p()` returns the value for stored distribution parameter `p`.  
   
@@ -208,7 +208,7 @@ Distribution for 100 samples:
   
 **Namespace:** std  
   
-##  <a name="geometric_distribution__geometric_distribution"></a>  geometric_distribution::geometric_distribution  
+##  <a name="geometric_distribution"></a>  geometric_distribution::geometric_distribution  
 Constructs the distribution.  
   
 ```  
@@ -230,7 +230,7 @@ The first constructor constructs an object whose stored `p` value holds the valu
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="geometric_distribution__param_type"></a>  geometric_distribution::param_type  
+##  <a name="param_type"></a>  geometric_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```  

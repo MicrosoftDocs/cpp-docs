@@ -432,7 +432,7 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
  A `front_insert_iterator` associated with the container object `_Cont`.  
   
 ### Remarks  
- The member function [front_insert_iterator](../standard-library/front-insert-iterator-class.md#front_insert_iterator__front_insert_iterator) of the front_insert_iterator class may also be used.  
+ The member function [front_insert_iterator](../standard-library/front-insert-iterator-class.md#front_insert_iterator) of the front_insert_iterator class may also be used.  
   
  Within the C++ Standard Library, the argument must refer to one of the two sequence containers that have the member function `push_back`: [deque Class](../standard-library/deque-class.md) or "list Class".  
   
@@ -502,7 +502,7 @@ inserter(
  An iterator locating the point of insertion.  
   
 ### Remarks  
- The template function returns [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator__insert_iterator)`<Container>(_Cont, _Where)`.  
+ The template function returns [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator)`<Container>(_Cont, _Where)`.  
   
 ### Example  
   
@@ -655,7 +655,7 @@ make_move_iterator(const Iterator& _It);
  The iterator stored in the new move iterator.  
   
 ### Remarks  
- The template function returns `move_iterator``<Iterator>(``_It``)`.  
+ The template function returns `move_iterator` `<Iterator>(_It)`.  
   
 ##  <a name="make_unchecked_array_iterator"></a>  make_unchecked_array_iterator  
  Creates an [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) that can be used by other algorithms.  

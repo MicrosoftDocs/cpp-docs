@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -56,7 +56,7 @@ A compiler option that you can use as an alternative to passing a file name to [
   
  If you are using [!INCLUDE[cppcli](../../build/reference/includes/cppcli_md.md)] and are referencing metadata to use the [Friend Assemblies](../../dotnet/friend-assemblies-cpp.md) feature, you can't use **/FU**. You must reference the metadata in code by using `#using`—together with the `[as friend]` attribute. Friend assemblies are not supported in [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]).  
   
- For information about how to create an assembly or module for the common language runtime (CLR), see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md). For information about how to build in [!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)], see [Building apps and libraries](http://msdn.microsoft.com/Library/ec2821a5-3479-4e64-9c2d-c777049f2cdc).  
+ For information about how to create an assembly or module for the common language runtime (CLR), see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md). For information about how to build in [!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)], see [Building apps and libraries](../../cppcx/building-apps-and-libraries-c-cx.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -63,9 +63,6 @@ The Microsoft Macro Assembler (MASM) provides several advantages over inline ass
 ## Related Sections  
  [Visual C++](../../top/visual-cpp-in-visual-studio.md)  
  Provides links to different areas of the Visual Studio and Visual C++ documentation.  
-  
- [Visual C++ Reference](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
- Provides links to articles that describe the C and C++ language references, the libraries that are included with Visual C++, and the Visual C++ Extensibility Object Model.  
   
 ## See Also  
  [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)   

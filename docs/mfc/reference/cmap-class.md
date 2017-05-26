@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMap', 'AFXTEMPL/CMap', 'AFXTEMPL/CMap::CPair', 'AFXTEMPL/CMap::CMap', 'AFXTEMPL/CMap::GetCount', 'AFXTEMPL/CMap::GetHashTableSize', 'AFXTEMPL/CMap::GetNextAssoc', 'AFXTEMPL/CMap::GetSize', 'AFXTEMPL/CMap::GetStartPosition', 'AFXTEMPL/CMap::InitHashTable', 'AFXTEMPL/CMap::IsEmpty', 'AFXTEMPL/CMap::Lookup', 'AFXTEMPL/CMap::PGetFirstAssoc', 'AFXTEMPL/CMap::PGetNextAssoc', 'AFXTEMPL/CMap::PLookup', 'AFXTEMPL/CMap::RemoveAll', 'AFXTEMPL/CMap::RemoveKey', 'AFXTEMPL/CMap::SetAt']
@@ -101,7 +101,7 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
   
  A variable of type **POSITION** is used for alternate access to entries. You can use a **POSITION** to "remember" an entry and to iterate through the map. You might think that this iteration is sequential by key value; it is not. The sequence of retrieved elements is indeterminate.  
   
- Certain member functions of this class call global helper functions that must be customized for most uses of the `CMap` class. See [Collection Class Helpers](../../mfc/reference/collection-class-helpers.md) in the Macros and Globals section of the `MFC``Reference`.  
+ Certain member functions of this class call global helper functions that must be customized for most uses of the `CMap` class. See [Collection Class Helpers](../../mfc/reference/collection-class-helpers.md) in the Macros and Globals section of the `MFC Reference`.  
   
  `CMap` overrides [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) to support serialization and dumping of its elements. If a map is stored to an archive using `Serialize`, each map element is serialized in turn. The default implementation of the `SerializeElements` helper function does a bitwise write. For information about serialization of pointer collection items derived from `CObject` or other user defined types, see [How to: Make a Type-Safe Collection](../../mfc/how-to-make-a-type-safe-collection.md).  
   

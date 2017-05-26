@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComAutoThreadModule', 'ATLBASE/ATL::CComAutoThreadModule', 'ATLBASE/ATL::CreateInstance', 'ATLBASE/ATL::GetDefaultThreads', 'ATLBASE/ATL::Init', 'ATLBASE/ATL::Lock', 'ATLBASE/ATL::Unlock', 'ATLBASE/ATL::dwThreadID', 'ATLBASE/ATL::m_Allocator', 'ATLBASE/ATL::m_nThreads', 'ATLBASE/ATL::m_pApartments']

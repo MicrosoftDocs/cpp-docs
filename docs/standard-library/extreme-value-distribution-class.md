@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['extreme_value_distribution', 'random/std::extreme_value_distribution', 'random/std::extreme_value_distribution::reset', 'random/std::extreme_value_distribution::a', 'random/std::extreme_value_distribution::b', 'random/std::extreme_value_distribution::param', 'random/std::extreme_value_distribution::min', 'random/std::extreme_value_distribution::max', 'random/std::extreme_value_distribution::operator()', 'random/std::extreme_value_distribution::param_type', 'random/std::extreme_value_distribution::param_type::a', 'random/std::extreme_value_distribution::param_type::b', 'random/std::extreme_value_distribution::param_type::operator==', 'random/std::extreme_value_distribution::param_type::operator!=', 'random/std::extreme_value_distribution::param_type']  
@@ -78,8 +78,8 @@ The random number generator engine. For possible types, see [\<random>](../stand
   
 ||||  
 |-|-|-|  
-|[extreme_value_distribution](#extreme_value_distribution__extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|  
-|`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[param_type](#extreme_value_distribution__param_type)|  
+|[extreme_value_distribution](#extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|  
+|`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[param_type](#param_type)|  
   
  The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.  
   
@@ -175,7 +175,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="extreme_value_distribution__extreme_value_distribution"></a>  extreme_value_distribution::extreme_value_distribution  
+##  <a name="extreme_value_distribution"></a>  extreme_value_distribution::extreme_value_distribution  
  Constructs the distribution.  
   
 ```  
@@ -200,7 +200,7 @@ explicit extreme_value_distribution(const param_type& parm);
   
  The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="extreme_value_distribution__param_type"></a>  extreme_value_distribution::param_type  
+##  <a name="param_type"></a>  extreme_value_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```cpp  

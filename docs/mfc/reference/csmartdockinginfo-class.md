@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSmartDockingInfo', 'AFXDOCKINGMANAGER/CSmartDockingInfo', 'AFXDOCKINGMANAGER/CSmartDockingInfo::CopyTo', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_bUseThemeColorInShading', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrBaseBackground', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneDest', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneSrc', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrTransparent', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_nCentralGroupOffset', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_sizeTotal', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerBmpResID', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerLightBmpResID']

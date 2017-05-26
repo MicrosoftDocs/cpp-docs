@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['iosfwd/std::char_traits', 'char_traits', 'string/std::char_traits::char_type', 'string/std::char_traits::int_type', 'string/std::char_traits::off_type', 'string/std::char_traits::pos_type', 'string/std::char_traits::state_type', 'string/std::char_traits::assign', 'string/std::char_traits::compare', 'string/std::char_traits::copy', 'string/std::char_traits::_Copy_s', 'string/std::char_traits::eof', 'string/std::char_traits::eq', 'string/std::char_traits::eq_int_type', 'string/std::char_traits::find', 'string/std::char_traits::length', 'string/std::char_traits::lt', 'string/std::char_traits::move', 'string/std::char_traits::_Move_s', 'string/std::char_traits::not_eof', 'string/std::char_traits::to_char_type', 'string/std::char_traits::to_int_type']  
@@ -55,38 +55,38 @@ struct char_traits;
   
 |||  
 |-|-|  
-|[char_type](#char_traits__char_type)|A type of character.|  
-|[int_type](#char_traits__int_type)|An integer type that can represent a character of type `char_type` or an end-of-file (EOF) character.|  
-|[off_type](#char_traits__off_type)|An integer type that can represent offsets between positions in a stream.|  
-|[pos_type](#char_traits__pos_type)|An integer type that can represent positions in a stream.|  
-|[state_type](#char_traits__state_type)|A type that represents the conversion state in for multibyte characters in a stream.|  
+|[char_type](#char_type)|A type of character.|  
+|[int_type](#int_type)|An integer type that can represent a character of type `char_type` or an end-of-file (EOF) character.|  
+|[off_type](#off_type)|An integer type that can represent offsets between positions in a stream.|  
+|[pos_type](#pos_type)|An integer type that can represent positions in a stream.|  
+|[state_type](#state_type)|A type that represents the conversion state in for multibyte characters in a stream.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[assign](#char_traits__assign)|Assigns one character value to another.|  
-|[compare](#char_traits__compare)|Compares up to a specified number of characters in two strings.|  
-|[copy](#char_traits__copy)|Copies a specified number of characters from one string to another. Deprecated. Use [char_traits::_Copy_s](#char_traits___copy_s) instead.|  
-|[_Copy_s](#char_traits___copy_s)|Copies a specified number of characters from one string to another.|  
-|[eof](#char_traits__eof)|Returns the end-of-file (EOF) character.|  
-|[eq](#char_traits__eq)|Tests whether two `char_type` characters are equal.|  
-|[eq_int_type](#char_traits__eq_int_type)|Tests whether two characters represented as `int_type`s are equal.|  
-|[find](#char_traits__find)|Searches for the first occurrence of a specified character in a range of characters.|  
-|[length](#char_traits__length)|Returns the length of a string.|  
-|[lt](#char_traits__lt)|Tests whether one character is less than another.|  
-|[move](#char_traits__move)|Copies a specified number of characters in a sequence to another, possible overlapping, sequence. Deprecated. Use [char_traits::_Move_s](#char_traits___move_s) instead.|  
-|[_Move_s](#char_traits___move_s)|Copies a specified number of characters in a sequence to another, possible overlapping, sequence.|  
-|[not_eof](#char_traits__not_eof)|Tests whether a character is the end-of-file (EOF) character.|  
-|[to_char_type](#char_traits__to_char_type)|Converts an `int_type` character to the corresponding `char_type` character and returns the result.|  
-|[to_int_type](#char_traits__to_int_type)|Converts a `char_type` character to the corresponding `int_type` character and returns the result.|  
+|[assign](#assign)|Assigns one character value to another.|  
+|[compare](#compare)|Compares up to a specified number of characters in two strings.|  
+|[copy](#copy)|Copies a specified number of characters from one string to another. Deprecated. Use [char_traits::_Copy_s](#copy_s) instead.|  
+|[_Copy_s](#copy_s)|Copies a specified number of characters from one string to another.|  
+|[eof](#eof)|Returns the end-of-file (EOF) character.|  
+|[eq](#eq)|Tests whether two `char_type` characters are equal.|  
+|[eq_int_type](#eq_int_type)|Tests whether two characters represented as `int_type`s are equal.|  
+|[find](#find)|Searches for the first occurrence of a specified character in a range of characters.|  
+|[length](#length)|Returns the length of a string.|  
+|[lt](#lt)|Tests whether one character is less than another.|  
+|[move](#move)|Copies a specified number of characters in a sequence to another, possible overlapping, sequence. Deprecated. Use [char_traits::_Move_s](#move_s) instead.|  
+|[_Move_s](#move_s)|Copies a specified number of characters in a sequence to another, possible overlapping, sequence.|  
+|[not_eof](#not_eof)|Tests whether a character is the end-of-file (EOF) character.|  
+|[to_char_type](#to_char_type)|Converts an `int_type` character to the corresponding `char_type` character and returns the result.|  
+|[to_int_type](#to_int_type)|Converts a `char_type` character to the corresponding `int_type` character and returns the result.|  
   
 ## Requirements  
  **Header:** \<string>  
   
  **Namespace:** std  
   
-##  <a name="char_traits__assign"></a>  char_traits::assign  
+##  <a name="assign"></a>  char_traits::assign  
  Assigns one character value to another or to a range of elements in a string.  
   
 ```  
@@ -155,7 +155,7 @@ The target string s1 is: abcd-1234-abcd
 The result1 = assign ( s1 , 4 , 'f' ) is: ffff-1234-abcd  
 ```  
   
-##  <a name="char_traits__char_type"></a>  char_traits::char_type  
+##  <a name="char_type"></a>  char_traits::char_type  
  A type of character.  
   
 ```  
@@ -166,9 +166,9 @@ typedef CharType char_type;
  The type is a synonym for the template parameter **CharType**.  
   
 ### Example  
-  See the example for [copy](#char_traits__copy) for an example of how to declare and use `char_type`.  
+  See the example for [copy](#copy) for an example of how to declare and use `char_type`.  
   
-##  <a name="char_traits__compare"></a>  char_traits::compare  
+##  <a name="compare"></a>  char_traits::compare  
  Compares up to a specified number of characters in two strings.  
   
 ```  
@@ -228,10 +228,10 @@ int main() {
 }  
 ```  
   
-##  <a name="char_traits__copy"></a>  char_traits::copy  
+##  <a name="copy"></a>  char_traits::copy  
  Copies a specified number of characters from one string to another.  
   
- This method is potentially unsafe, as it relies on the caller to check that the passed values are correct. Consider using [char_traits::_Copy_s](#char_traits___copy_s) instead.  
+ This method is potentially unsafe, as it relies on the caller to check that the passed values are correct. Consider using [char_traits::_Copy_s](#copy_s) instead.  
   
 ```  
 static char_type *copy(char_type* _To,
@@ -286,7 +286,7 @@ The destination string is: ABCD-1234
 The result1 = copy ( s1 , s2 , 4 ) is: ABCD-1234-abcd  
 ```  
   
-##  <a name="char_traits___copy_s"></a>  char_traits::_Copy_s  
+##  <a name="copy_s"></a>  char_traits::_Copy_s  
  Copies a specified number of characters from one string to another.  
   
 ```  
@@ -347,7 +347,7 @@ The destination string is: ABCD-1234
 The result1 = _Copy_s(s1, char_traits<char>::length(s1), s2, 4) is: ABCD-1234-abcd  
 ```  
   
-##  <a name="char_traits__eof"></a>  char_traits::eof  
+##  <a name="eof"></a>  char_traits::eof  
  Returns the end-of-file (EOF) character.  
   
 ```  
@@ -395,7 +395,7 @@ The eof marker for char_traits<char> is: -1
 The eof marker for char_traits<wchar_t> is: 65535  
 ```  
   
-##  <a name="char_traits__eq"></a>  char_traits::eq  
+##  <a name="eq"></a>  char_traits::eq  
  Tests whether two `char_type` characters are equal.  
   
 ```  
@@ -452,7 +452,7 @@ The character ch1 is not equal to the character ch2.
 The character ch1 is equal to the character ch3.  
 ```  
   
-##  <a name="char_traits__eq_int_type"></a>  char_traits::eq_int_type  
+##  <a name="eq_int_type"></a>  char_traits::eq_int_type  
  Tests whether two characters represented as `int_type`s are equal or not.  
   
 ```  
@@ -534,7 +534,7 @@ The int_type representation of character ch1
  is equal to the int_type representation of ch3.  
 ```  
   
-##  <a name="char_traits__find"></a>  char_traits::find  
+##  <a name="find"></a>  char_traits::find  
  Searches for the first occurrence of a specified character in a range of characters.  
   
 ```  
@@ -598,7 +598,7 @@ The string beginning with the first occurrence
 The result2 of the search is NULL.  
 ```  
   
-##  <a name="char_traits__int_type"></a>  char_traits::int_type  
+##  <a name="int_type"></a>  char_traits::int_type  
  An integer type that can represent a character of type `char_type` or an end-of-file (EOF) character.  
   
 ```  
@@ -609,9 +609,9 @@ typedef long int_type;
  It must be possible to type cast a value of type **CharType** to `int_type` then back to **CharType** without altering the original value.  
   
 ### Example  
-  See the example for [eq_int_type](#char_traits__eq_int_type) for an example of how to declare and use `int_type`.  
+  See the example for [eq_int_type](#eq_int_type) for an example of how to declare and use `int_type`.  
   
-##  <a name="char_traits__length"></a>  char_traits::length  
+##  <a name="length"></a>  char_traits::length  
  Returns the length of a string.  
   
 ```  
@@ -651,7 +651,7 @@ The C-string str1 is: Hello
 The length of C-string str1 is: 5.  
 ```  
   
-##  <a name="char_traits__lt"></a>  char_traits::lt  
+##  <a name="lt"></a>  char_traits::lt  
  Tests whether one character is less than another.  
   
 ```  
@@ -707,10 +707,10 @@ The character ch1 is less than the character ch2.
 The character ch3 is not less than the character ch2.  
 ```  
   
-##  <a name="char_traits__move"></a>  char_traits::move  
+##  <a name="move"></a>  char_traits::move  
  Copies a specified number of characters in a sequence to another, possibly overlapping sequence.  
   
- This method is potentially unsafe, as it relies on the caller to check that the passed values are correct. Consider using [char_traits::_Move_s](#char_traits___move_s) instead.  
+ This method is potentially unsafe, as it relies on the caller to check that the passed values are correct. Consider using [char_traits::_Move_s](#move_s) instead.  
   
 ```  
 static char_type *move(char_type* _To,
@@ -780,7 +780,7 @@ The source/destination string sToFrom2 is: abcd-1234-ABCD
 The result2 = move ( sToFrom2 , findc , 8 ) is: cd-1234-4-ABCD  
 ```  
   
-##  <a name="char_traits___move_s"></a>  char_traits::_Move_s  
+##  <a name="move_s"></a>  char_traits::_Move_s  
  Copies a specified number of characters in a sequence to another, possibly overlapping sequence.  
   
 ```  
@@ -856,7 +856,7 @@ The source/destination string sToFrom2 is: abcd-1234-ABCD
 The result2 = _Move_s(sToFrom2, char_traits<char>::length(sToFrom2), findc, 8) is: cd-1234-4-ABCD  
 ```  
   
-##  <a name="char_traits__not_eof"></a>  char_traits::not_eof  
+##  <a name="not_eof"></a>  char_traits::not_eof  
  Tests whether a character is not the end-of-file (EOF) character or is the EOF.  
   
 ```  
@@ -925,7 +925,7 @@ The eofTest1 returns: 120, which is the character: x.
 The eofTest2 indicates int2 is an EOF character.  
 ```  
   
-##  <a name="char_traits__off_type"></a>  char_traits::off_type  
+##  <a name="off_type"></a>  char_traits::off_type  
  An integer type that can represent offsets between positions in a stream.  
   
 ```  
@@ -935,7 +935,7 @@ typedef streamoff off_type;
 ### Remarks  
  The type is a signed integer that describes an object that can store a byte offset involved in various stream positioning operations. It is typically a synonym for [streamoff](../standard-library/ios-typedefs.md#streamoff), but it has essentially the same properties as that type.  
   
-##  <a name="char_traits__pos_type"></a>  char_traits::pos_type  
+##  <a name="pos_type"></a>  char_traits::pos_type  
  An integer type that can represent positions in a stream.  
   
 ```  
@@ -945,7 +945,7 @@ typedef streampos pos_type;
 ### Remarks  
  The type describes an object that can store all the information needed to restore an arbitrary file-position indicator within a stream. It is typically a synonym for [streampos](../standard-library/ios-typedefs.md#streampos), but in any case it has essentially the same properties as that type.  
   
-##  <a name="char_traits__state_type"></a>  char_traits::state_type  
+##  <a name="state_type"></a>  char_traits::state_type  
  A type that represents the conversion state for multibyte characters in a stream.  
   
 ```  
@@ -955,7 +955,7 @@ typedef implementation-defined state_type;
 ### Remarks  
  The type describes an object that can represent a conversion state. It is typically a synonym for `mbstate_t`, but in any case it has essentially the same properties as that type.  
   
-##  <a name="char_traits__to_char_type"></a>  char_traits::to_char_type  
+##  <a name="to_char_type"></a>  char_traits::to_char_type  
  Converts an `int_type` character to the corresponding `char_type` character and returns the result.  
   
 ```  
@@ -972,7 +972,7 @@ static char_type to_char_type(const int_type& _Ch);
  A value of `_Ch` that cannot be represented as such yields an unspecified result.  
   
 ### Remarks  
- The conversion operations [to_int_type](#char_traits__to_int_type) and `to_char_type` are inverse to each other, so that:  
+ The conversion operations [to_int_type](#to_int_type) and `to_char_type` are inverse to each other, so that:  
   
  `to_int_type` ( `to_char_type` ( *x* ) ) == *x*  
   
@@ -1057,7 +1057,7 @@ The recovered char_type of ch1 is equal to the original ch1.
 The recovered char_type of ch2 is equal to the original ch2.  
 ```  
   
-##  <a name="char_traits__to_int_type"></a>  char_traits::to_int_type  
+##  <a name="to_int_type"></a>  char_traits::to_int_type  
  Converts a `char_type` character to the corresponding `int_type` character and returns the result.  
   
 ```  
@@ -1072,7 +1072,7 @@ static int_type to_int_type(const char_type& _Ch);
  The `int_type` character corresponding to the `char_type` character.  
   
 ### Remarks  
- The conversion operations `to_int_type` and [to_char_type](#char_traits__to_char_type) are inverse to each other, so that:  
+ The conversion operations `to_int_type` and [to_char_type](#to_char_type) are inverse to each other, so that:  
   
  `to_int_type` ( `to_char_type` ( *x* ) ) == *x*  
   

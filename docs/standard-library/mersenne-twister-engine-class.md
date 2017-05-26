@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['mersenne_twister_engine', 'random/std::mersenne_twister_engine']  
@@ -86,7 +86,7 @@ class mersenne_twister_engine;
  For more information about engine members, see [\<random>](../standard-library/random.md).  
   
 ## Remarks  
- This template class describes a random number engine, returning values on the closed interval [ `0`, `2`<sup>W</sup> - `1`]. It holds a large integral value with `W * (N - 1) + R` bits. It extracts `W` bits at a time from this large value, and when it has used all the bits it twists the large value by shifting and mixing the bits so that it has a new set of bits to extract from. The engine's state is the last `N``W`-bit values used if `operator()` has been called at least `N` times, otherwise the `M``W`-bit values that have been used and the last `N - M` values of the seed.  
+ This template class describes a random number engine, returning values on the closed interval [ `0`, `2`<sup>W</sup> - `1`]. It holds a large integral value with `W * (N - 1) + R` bits. It extracts `W` bits at a time from this large value, and when it has used all the bits it twists the large value by shifting and mixing the bits so that it has a new set of bits to extract from. The engine's state is the last `N` `W`-bit values used if `operator()` has been called at least `N` times, otherwise the `M` `W`-bit values that have been used and the last `N - M` values of the seed.  
   
  The generator twists the large value that it holds by using a twisted generalized feedback shift register defined by shift values `N` and `M`, a twist value `R`, and a conditional XOR-mask `A`. Additionally, the bits of the raw shift register are scrambled (tempered) according to a bit-scrambling matrix defined by values `U`, `D`, `S`, `B`, `T`, `C`, and `L`.  
   

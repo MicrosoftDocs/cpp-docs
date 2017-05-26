@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-ide"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -150,11 +150,11 @@ Depending on your installation options, Visual Studio can make hundreds of macro
 |**$(ProjectName)**|The base name of the project.|  
 |**$(ProjectFileName)**|The file name of the project (defined as base name + file extension).|  
 |**$(ProjectExt)**|The file extension of the project. It includes the '.' before the file extension.|  
-|**$(SolutionDir)**|The directory of the solution (defined as drive + path); includes the trailing backslash '\\'.|  
-|**$(SolutionPath)**|The absolute path name of the solution (defined as drive + path + base name + file extension).|  
-|**$(SolutionName)**|The base name of the solution.|  
-|**$(SolutionFileName)**|The file name of the solution (defined as base name + file extension).|  
-|**$(SolutionExt)**|The file extension of the solution. It includes the '.' before the file extension.|  
+|**$(SolutionDir)**|The directory of the solution (defined as drive + path); includes the trailing backslash '\\'. Defined only when building a solution in the IDE.|  
+|**$(SolutionPath)**|The absolute path name of the solution (defined as drive + path + base name + file extension). Defined only when building a solution in the IDE.|  
+|**$(SolutionName)**|The base name of the solution. Defined only when building a solution in the IDE.|  
+|**$(SolutionFileName)**|The file name of the solution (defined as base name + file extension). Defined only when building a solution in the IDE.|  
+|**$(SolutionExt)**|The file extension of the solution. It includes the '.' before the file extension. Defined only when building a solution in the IDE.|  
 |**$(TargetDir)**|The directory of the primary output file for the build (defined as drive + path); includes the trailing backslash '\\'.|  
 |**$(TargetPath)**|The absolute path name of the primary output file for the build (defined as drive + path + base name + file extension).|  
 |**$(TargetName)**|The base name of the primary output file for the build.|  

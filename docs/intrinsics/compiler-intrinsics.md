@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -45,7 +45,7 @@ Most functions are contained in libraries, but some functions are built in (that
   
  Some intrinsics, such as `__assume` and `__ReadWriteBarrier`, provide information to the compiler, which affects the behavior of the optimizer.  
   
- Some intrinsics are available only as intrinsics, and some are available both in function and intrinsic implementations. You can instruct the compiler to use the intrinsic implementation in one of two ways, depending on whether you want to enable only specific functions or you want to enable all intrinsics. The first way is to use `#pragma intrinsic(``intrinsic-function-name-list``)`. The pragma can be used to specify a single intrinsic or multiple intrinsics separated by commas. The second is to use the [/Oi (Generate Intrinsic Functions)](../build/reference/oi-generate-intrinsic-functions.md) compiler option, which makes all intrinsics on a given platform available. Under **/Oi**, use `#pragma function(``intrinsic-function-name-list``)` to force a function call to be used instead of an intrinsic. If the documentation for a specific intrinsic notes that the routine is only available as an intrinsic, then the intrinsic implementation is used regardless of whether **/Oi** or `#pragma intrinsic` is specified. In all cases, **/Oi** or `#pragma intrinsic` allows, but does not force, the optimizer to use the intrinsic. The optimizer can still call the function.  
+ Some intrinsics are available only as intrinsics, and some are available both in function and intrinsic implementations. You can instruct the compiler to use the intrinsic implementation in one of two ways, depending on whether you want to enable only specific functions or you want to enable all intrinsics. The first way is to use `#pragma intrinsic(`*intrinsic-function-name-list*`)`. The pragma can be used to specify a single intrinsic or multiple intrinsics separated by commas. The second is to use the [/Oi (Generate Intrinsic Functions)](../build/reference/oi-generate-intrinsic-functions.md) compiler option, which makes all intrinsics on a given platform available. Under **/Oi**, use `#pragma function(`*intrinsic-function-name-list*`)` to force a function call to be used instead of an intrinsic. If the documentation for a specific intrinsic notes that the routine is only available as an intrinsic, then the intrinsic implementation is used regardless of whether **/Oi** or `#pragma intrinsic` is specified. In all cases, **/Oi** or `#pragma intrinsic` allows, but does not force, the optimizer to use the intrinsic. The optimizer can still call the function.  
   
  Some standard C/C++ library functions are available in intrinsic implementations on some architectures. When calling a CRT function, the intrinsic implementation is used if **/Oi** is specified on the command line.  
   

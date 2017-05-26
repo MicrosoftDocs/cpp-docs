@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -59,7 +59,7 @@ protected:
  For sets and multisets, which are simple containers where the key values are identical to the element values, `value_compare` is equivalent to `key_compare`; for maps and multimaps they are not, as the value of the type `pair` elements is not identical to the value of the element's key.  
   
 ## Example  
-  See example for [value_comp](../standard-library/map-class.md#map__value_comp) for an example of how to declare and use `value_compare`.  
+  See example for [value_comp](../standard-library/map-class.md#value_comp) for an example of how to declare and use `value_compare`.  
   
 ## Requirements  
  **Header:** \<map>  

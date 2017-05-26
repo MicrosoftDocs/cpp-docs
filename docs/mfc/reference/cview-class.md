@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CView', 'AFXWIN/CView', 'AFXWIN/CView::CView', 'AFXWIN/CView::DoPreparePrinting', 'AFXWIN/CView::GetDocument', 'AFXWIN/CView::IsSelected', 'AFXWIN/CView::OnDragEnter', 'AFXWIN/CView::OnDragLeave', 'AFXWIN/CView::OnDragOver', 'AFXWIN/CView::OnDragScroll', 'AFXWIN/CView::OnDrop', 'AFXWIN/CView::OnDropEx', 'AFXWIN/CView::OnInitialUpdate', 'AFXWIN/CView::OnPrepareDC', 'AFXWIN/CView::OnScroll', 'AFXWIN/CView::OnScrollBy', 'AFXWIN/CView::OnActivateFrame', 'AFXWIN/CView::OnActivateView', 'AFXWIN/CView::OnBeginPrinting', 'AFXWIN/CView::OnDraw', 'AFXWIN/CView::OnEndPrinting', 'AFXWIN/CView::OnEndPrintPreview', 'AFXWIN/CView::OnPreparePrinting', 'AFXWIN/CView::OnPrint', 'AFXWIN/CView::OnUpdate']

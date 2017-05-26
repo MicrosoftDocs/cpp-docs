@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCFilterChunkValueImpl', 'AFXWIN/CMFCFilterChunkValueImpl', 'AFXWIN/CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl', 'AFXWIN/CMFCFilterChunkValueImpl::Clear', 'AFXWIN/CMFCFilterChunkValueImpl::CopyChunk', 'AFXWIN/CMFCFilterChunkValueImpl::CopyFrom', 'AFXWIN/CMFCFilterChunkValueImpl::GetChunkGUID', 'AFXWIN/CMFCFilterChunkValueImpl::GetChunkPID', 'AFXWIN/CMFCFilterChunkValueImpl::GetChunkType', 'AFXWIN/CMFCFilterChunkValueImpl::GetString', 'AFXWIN/CMFCFilterChunkValueImpl::GetValue', 'AFXWIN/CMFCFilterChunkValueImpl::GetValueNoAlloc', 'AFXWIN/CMFCFilterChunkValueImpl::IsValid', 'AFXWIN/CMFCFilterChunkValueImpl::SetBoolValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetDwordValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetFileTimeValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetInt64Value', 'AFXWIN/CMFCFilterChunkValueImpl::SetIntValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetLongValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetSystemTimeValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetTextValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetChunk']

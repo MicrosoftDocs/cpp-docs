@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['filesystem/std::experimental::filesystem::directory_entry', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &', 'FILESYSTEM/std::experimental::filesystem::directory_entry::directory_entry', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator=', 'FILESYSTEM/std::experimental::filesystem::directory_entry::assign', 'FILESYSTEM/std::experimental::filesystem::directory_entry::replace_filename', 'FILESYSTEM/std::experimental::filesystem::directory_entry::path', 'FILESYSTEM/std::experimental::filesystem::directory_entry::status', 'FILESYSTEM/std::experimental::filesystem::directory_entry::symlink_status', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator<', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator==', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator!=', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator<=', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator>', 'FILESYSTEM/std::experimental::filesystem::directory_entry::operator>=']  
@@ -41,7 +41,7 @@ class directory_entry;
 ```  
   
 ## Remarks  
- The class stores an object of type [path](../standard-library/path-class.md). The stored `path` can be an instance of the [path Class](../standard-library/path-class.md) or of a type that is derived from `path`. It also stores two [file_type](../standard-library/filesystem-enumerations.md#filesystem__file_type) values; one that represents what is known about the status of the stored file name, and another that represents what is known about the symbolic link status of the file name.  
+ The class stores an object of type [path](../standard-library/path-class.md). The stored `path` can be an instance of the [path Class](../standard-library/path-class.md) or of a type that is derived from `path`. It also stores two [file_type](../standard-library/filesystem-enumerations.md#file_type) values; one that represents what is known about the status of the stored file name, and another that represents what is known about the symbolic link status of the file name.  
   
  For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).  
   

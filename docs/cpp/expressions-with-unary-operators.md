@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: 
@@ -89,7 +89,7 @@ Unary operators act on only one operand in an expression. The unary operators ar
   
  Any *postfix-expression* is considered a *unary-expression*, and because any primary expression is considered a *postfix-expression*, any primary expressions is considered a *unary-expression* also. For more information, see [Postfix Expressions](../cpp/postfix-expressions.md) and [Primary Expressions](../cpp/primary-expressions.md).  
   
- A *unary-operator* consists of one or more of the following symbols: `* &``+``-``!``~`  
+ A *unary-operator* consists of one or more of the following symbols: `* & + - ! ~`  
   
  The *cast-expression* is a unary expression with an optional cast to change the type. For more information see [Cast Operator: ()](../cpp/cast-operator-parens.md).  
   

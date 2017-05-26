@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -78,7 +78,7 @@ In mixed mode, you sometimes must marshal your data between native and managed t
   
  The marshaling library is extensible so that you can add your own marshaling types. For more information about extending the marshaling library, see [How to: Extend the Marshaling Library](../dotnet/how-to-extend-the-marshaling-library.md).  
   
- In earlier versions, you could marshal data by using [Platform Invoke](http://msdn.microsoft.com/Library/eca7606e-ebfb-4f47-b8d9-289903fdc045). For more information about `PInvoke`, see [Calling Native Functions from Managed Code](../dotnet/calling-native-functions-from-managed-code.md).  
+ In earlier versions, you could marshal data by using [Platform Invoke](/dotnet/framework/interop/consuming-unmanaged-dll-functions). For more information about `PInvoke`, see [Calling Native Functions from Managed Code](../dotnet/calling-native-functions-from-managed-code.md).  
   
 ## See Also  
  [C++ Support Library](../dotnet/cpp-support-library.md)   

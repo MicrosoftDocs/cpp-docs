@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['sync_per_container', 'stdext::sync_per_container', 'allocators/stdext::sync_per_container', 'allocators/stdext::sync_per_container::equals']  
@@ -54,14 +54,14 @@ class sync_per_container
   
 |||  
 |-|-|  
-|[equals](#sync_per_container__equals)|Compares two caches for equality.|  
+|[equals](#equals)|Compares two caches for equality.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="sync_per_container__equals"></a>  sync_per_container::equals  
+##  <a name="equals"></a>  sync_per_container::equals  
  Compares two caches for equality.  
   
 ```

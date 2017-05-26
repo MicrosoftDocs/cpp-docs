@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -67,11 +67,11 @@ pair(Value1 val1, Value2 val2);
   
  `pair(pair<Value1, Value2>% right);`  
   
- initializes the stored pair with `right``.`[pair::first (STL/CLR)](../dotnet/pair-first-stl-clr.md) and `right``.`[pair::second (STL/CLR)](../dotnet/pair-second-stl-clr.md).  
+ initializes the stored pair with `right.`[pair::first (STL/CLR)](../dotnet/pair-first-stl-clr.md) and `right.`[pair::second (STL/CLR)](../dotnet/pair-second-stl-clr.md).  
   
  `pair(pair<Value1, Value2>^ right);`  
   
- initializes the stored pair with `right``->`[pair::first (STL/CLR)](../dotnet/pair-first-stl-clr.md) and `right``>`[pair::second (STL/CLR)](../dotnet/pair-second-stl-clr.md).  
+ initializes the stored pair with `right->`[pair::first (STL/CLR)](../dotnet/pair-first-stl-clr.md) and `right>`[pair::second (STL/CLR)](../dotnet/pair-second-stl-clr.md).  
   
  The constructor:  
   

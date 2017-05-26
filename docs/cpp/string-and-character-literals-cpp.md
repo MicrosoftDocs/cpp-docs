@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: 
@@ -224,7 +224,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
  A string literal represents a sequence of characters that together form a null-terminated string. The characters must be enclosed between double quotation marks. There are the following kinds of string literals:  
   
 ### Narrow String Literals  
- A narrow string literal is a non-prefixed, double-quote delimited, null-terminated array of type `const` `char`[`n`], where n is the length of the array in bytes. A narrow string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A narrow string literal may also contain the escape sequences listed above, and universal character names that fit in a byte.  
+ A narrow string literal is a non-prefixed, double-quote delimited, null-terminated array of type `const char[n]`, where n is the length of the array in bytes. A narrow string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A narrow string literal may also contain the escape sequences listed above, and universal character names that fit in a byte.  
   
 ```cpp  
 const char *narrow = "abcd";  
@@ -233,9 +233,9 @@ const char *narrow = "abcd";
 const char *escaped = "yes\\no";  
 ```  
   
- **UTF-8 encoded strings**  
+#### UTF-8 encoded strings  
   
- A UTF-8 encoded string is a u8-prefixed, double-quote delimited, null-terminated array of type  `const``char`[`n`], where n is the length of the encoded array in bytes. A u8-prefixed string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A u8-prefixed string literal may also contain the escape sequences listed above, and any universal character name.  
+ A UTF-8 encoded string is a u8-prefixed, double-quote delimited, null-terminated array of type  `const char[n]`, where n is the length of the encoded array in bytes. A u8-prefixed string literal may contain any graphic character except the double quotation mark (`"`), backslash (`\`), or newline character. A u8-prefixed string literal may also contain the escape sequences listed above, and any universal character name.  
   
 ```cpp  
 const char* str1 = u8"Hello World";  
@@ -250,7 +250,7 @@ const wchar_t* wide = L"zyxw";
 const wchar_t* newline = L"hello\ngoodbye";  
 ```  
   
- **char16_t and char32_t (C++11)**  
+#### char16_t and char32_t (C++11)  
   
  C++11 introduces the portable `char16_t` (16-bit Unicode) and `char32_t` (32-bit Unicode) character types:  
   

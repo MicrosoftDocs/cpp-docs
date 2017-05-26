@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonButtonsGroup', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::AddButton', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::AddButtons', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetButton', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetCount', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetImageSize', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetRegularSize', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::HasImages', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::OnDrawImage', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::RemoveAll', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetImages', 'AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetParentCategory']

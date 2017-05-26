@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['allocators/stdext::cache_suballoc', 'stdext::cache_suballoc', 'cache_suballoc', 'allocators/stdext::cache_suballoc::allocate', 'allocators/stdext::cache_suballoc::deallocate']  
@@ -58,21 +58,21 @@ class cache_suballoc
   
 |||  
 |-|-|  
-|[cache_suballoc](#cache_suballoc__cache_suballoc)|Constructs an object of type `cache_suballoc`.|  
+|[cache_suballoc](#cache_suballoc)|Constructs an object of type `cache_suballoc`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[allocate](#cache_suballoc__allocate)|Allocates a block of memory.|  
-|[deallocate](#cache_suballoc__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
+|[allocate](#allocate)|Allocates a block of memory.|  
+|[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="cache_suballoc__allocate"></a>  cache_suballoc::allocate  
+##  <a name="allocate"></a>  cache_suballoc::allocate  
  Allocates a block of memory.  
   
 ```
@@ -90,7 +90,7 @@ void *allocate(std::size_t count);
   
 ### Remarks  
   
-##  <a name="cache_suballoc__cache_suballoc"></a>  cache_suballoc::cache_suballoc  
+##  <a name="cache_suballoc"></a>  cache_suballoc::cache_suballoc  
  Constructs an object of type `cache_suballoc`.  
   
 ```
@@ -99,7 +99,7 @@ cache_suballoc();
   
 ### Remarks  
   
-##  <a name="cache_suballoc__deallocate"></a>  cache_suballoc::deallocate  
+##  <a name="deallocate"></a>  cache_suballoc::deallocate  
  Frees a specified number of objects from storage beginning at a specified position.  
   
 ```

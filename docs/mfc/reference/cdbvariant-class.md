@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDBVariant', 'AFXDB/CDBVariant', 'AFXDB/CDBVariant::CDBVariant', 'AFXDB/CDBVariant::Clear', 'AFXDB/CDBVariant::m_dwType', 'AFXDB/CDBVariant::m_boolVal', 'AFXDB/CDBVariant::m_chVal', 'AFXDB/CDBVariant::m_dblVal', 'AFXDB/CDBVariant::m_fltVal', 'AFXDB/CDBVariant::m_iVal', 'AFXDB/CDBVariant::m_lVal', 'AFXDB/CDBVariant::m_pbinary', 'AFXDB/CDBVariant::m_pdate', 'AFXDB/CDBVariant::m_pstring', 'AFXDB/CDBVariant::m_pstringA', 'AFXDB/CDBVariant::m_pstringW']

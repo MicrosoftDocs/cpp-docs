@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CElementTraitsBase', 'ATLCOLL/ATL::CElementTraitsBase', 'ATLCOLL/ATL::CElementTraitsBase::INARGTYPE', 'ATLCOLL/ATL::CElementTraitsBase::OUTARGTYPE', 'ATLCOLL/ATL::CElementTraitsBase::CopyElements', 'ATLCOLL/ATL::CElementTraitsBase::RelocateElements']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['call', 'AGENTS/concurrency::call', 'AGENTS/concurrency::call::call', 'AGENTS/concurrency::call::process_input_messages', 'AGENTS/concurrency::call::process_message', 'AGENTS/concurrency::call::propagate_message', 'AGENTS/concurrency::call::send_message', 'AGENTS/concurrency::call::supports_anonymous_source']

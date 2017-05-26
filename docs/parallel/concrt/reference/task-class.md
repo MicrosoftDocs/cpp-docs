@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['task', 'PPLTASKS/concurrency::task', 'PPLTASKS/concurrency::task::task', 'PPLTASKS/concurrency::task::get', 'PPLTASKS/concurrency::task::is_apartment_aware', 'PPLTASKS/concurrency::task::is_done', 'PPLTASKS/concurrency::task::scheduler', 'PPLTASKS/concurrency::task::then', 'PPLTASKS/concurrency::task::wait']

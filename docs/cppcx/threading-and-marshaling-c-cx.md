@@ -3,7 +3,7 @@ title: "Threading and Marshaling (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
 ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -115,8 +115,8 @@ public ref class MySTAClass
 };  
   
 ```  
-  
- An unsealed class must have marshaling and threading attribute settings so that the compiler can verify that derived classes have the same value for these attributes. If the class doesn't have the settings set explicitly, the compiler generates an error and fails to compile. Any class that's derived from an unsealedclass generates a compiler error in either of these cases:  
+  An unsealed class must have marshaling and threading attribute settings so that the compiler can verify that derived classes have the same value for these attributes. If the class doesn't have the settings set explicitly, the compiler generates an error and fails to compile. Any class that's derived from an unsealed class generates a compiler error in either of these cases:  
+
   
 -   The `ThreadingModel` and `MarshallingBehavior` attributes are not defined in the derived class.  
   
@@ -125,6 +125,5 @@ public ref class MySTAClass
  The threading and marshaling information that's required by a third-party [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component is specified in the app manifest registration information for the component. We recommend that you make all of your [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components agile. This ensures that client code can call your component from any thread in the app, and improves the performance of those calls because they are direct calls that have no marshaling. If you author your class in this way, then client code doesn't have to use `Platform::Agile<T>` to consume your class.  
   
 ## See Also  
- [(NOTINBUILD) Advanced Topics](http://msdn.microsoft.com/en-us/1ccff0cf-a6cc-47ef-a05f-eba6307b3ced)   
  [ThreadingModel](http://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)   
  [MarshallingBehavior](http://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)

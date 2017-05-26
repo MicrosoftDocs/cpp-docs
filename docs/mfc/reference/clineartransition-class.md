@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CLinearTransition', 'AFXANIMATIONCONTROLLER/CLinearTransition', 'AFXANIMATIONCONTROLLER/CLinearTransition::CLinearTransition', 'AFXANIMATIONCONTROLLER/CLinearTransition::Create', 'AFXANIMATIONCONTROLLER/CLinearTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CLinearTransition::m_duration']

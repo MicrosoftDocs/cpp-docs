@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -67,7 +67,7 @@ Defines the template class [basic_ostream](../standard-library/basic-ostream-cla
   
 |||  
 |-|-|  
-|[operator<<](../standard-library/ostream-operators.md#operator_lt__lt_)|Writes various types to the stream.|  
+|[operator<<](../standard-library/ostream-operators.md#op_lt_lt)|Writes various types to the stream.|  
   
 ### Classes  
   

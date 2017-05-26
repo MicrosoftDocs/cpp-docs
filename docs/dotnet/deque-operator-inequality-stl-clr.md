@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -46,18 +46,18 @@ template<typename Value>
 ```  
   
 #### Parameters  
- left  
+ `left`  
  Left container to compare.  
   
- right  
+ `right`  
  Right container to compare.  
   
 ## Remarks  
- The operator function returns `!(``left` `==` `right``)`. You use it to test whether `left` is not ordered the same as `right` when the two deques are compared element by element.  
+ The operator function returns `!(left == right)`. You use it to test whether `left` is not ordered the same as `right` when the two deques are compared element by element.  
   
 ## Example  
   
-```  
+```cpp  
 // cliext_deque_operator_ne.cpp   
 // compile with: /clr   
 #include <cliext/deque>   

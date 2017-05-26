@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['discrete_distribution', 'random/std::discrete_distribution', 'random/std::discrete_distribution::reset', 'random/std::discrete_distribution::probabilities', 'random/std::discrete_distribution::param', 'random/std::discrete_distribution::min', 'random/std::discrete_distribution::max', 'random/std::discrete_distribution::operator()', 'random/std::discrete_distribution::param_type', 'random/std::discrete_distribution::param_type::probabilities', 'random/std::discrete_distribution::param_type::operator==', 'random/std::discrete_distribution::param_type::operator!=', 'random/std::discrete_distribution::param_type']  
@@ -82,8 +82,8 @@ public:
   
 |||  
 |-|-|  
-|[discrete_distribution](#discrete_distribution__discrete_distribution)|`discrete_distribution::param`|  
-|`discrete_distribution::operator()`|[param_type](#discrete_distribution__param_type)|  
+|[discrete_distribution](#discrete_distribution)|`discrete_distribution::param`|  
+|`discrete_distribution::operator()`|[param_type](#param_type)|  
   
  The property function `vector<double> probabilities()` returns the individual probabilities for each integer generated.  
   
@@ -173,7 +173,7 @@ Distribution for 100 samples:
   
  **Namespace:** std  
   
-##  <a name="discrete_distribution__discrete_distribution"></a>  discrete_distribution::discrete_distribution  
+##  <a name="discrete_distribution"></a>  discrete_distribution::discrete_distribution  
  Constructs the distribution.  
   
 ```  
@@ -233,7 +233,7 @@ The constructor that has *count*, *low*, *high*, and *weightfunc* parameters con
   
 The constructor that has a `param_type` parameter *parm* constructs a distribution object using *parm* as the stored parameter structure.  
   
-##  <a name="discrete_distribution__param_type"></a>  discrete_distribution::param_type  
+##  <a name="param_type"></a>  discrete_distribution::param_type  
  Stores all the parameters of the distribution.  
   
 ```  

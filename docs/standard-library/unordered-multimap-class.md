@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['unordered_multimap', 'unordered_map/std::unordered_multimap', 'unordered_map/std::unordered_multimap::allocator_type', 'unordered_map/std::unordered_multimap::const_iterator', 'unordered_map/std::unordered_multimap::const_local_iterator', 'unordered_map/std::unordered_multimap::const_pointer', 'unordered_map/std::unordered_multimap::const_reference', 'unordered_map/std::unordered_multimap::difference_type', 'unordered_map/std::unordered_multimap::hasher', 'unordered_map/std::unordered_multimap::iterator', 'unordered_map/std::unordered_multimap::key_equal', 'unordered_map/std::unordered_multimap::key_type', 'unordered_map/std::unordered_multimap::local_iterator', 'unordered_map/std::unordered_multimap::mapped_type', 'unordered_map/std::unordered_multimap::pointer', 'unordered_map/std::unordered_multimap::reference', 'unordered_map/std::unordered_multimap::size_type', 'unordered_map/std::unordered_multimap::value_type', 'unordered_map/std::unordered_multimap::begin', 'unordered_map/std::unordered_multimap::bucket', 'unordered_map/std::unordered_multimap::bucket_count', 'unordered_map/std::unordered_multimap::bucket_size', 'unordered_map/std::unordered_multimap::cbegin', 'unordered_map/std::unordered_multimap::cend', 'unordered_map/std::unordered_multimap::clear', 'unordered_map/std::unordered_multimap::count', 'unordered_map/std::unordered_multimap::emplace', 'unordered_map/std::unordered_multimap::emplace_hint', 'unordered_map/std::unordered_multimap::empty', 'unordered_map/std::unordered_multimap::end', 'unordered_map/std::unordered_multimap::equal_range', 'unordered_map/std::unordered_multimap::erase', 'unordered_map/std::unordered_multimap::find', 'unordered_map/std::unordered_multimap::get_allocator', 'unordered_map/std::unordered_multimap::hash', 'unordered_map/std::unordered_multimap::insert', 'unordered_map/std::unordered_multimap::key_eq', 'unordered_map/std::unordered_multimap::load_factor', 'unordered_map/std::unordered_multimap::max_bucket_count', 'unordered_map/std::unordered_multimap::max_load_factor', 'unordered_map/std::unordered_multimap::max_size', 'unordered_map/std::unordered_multimap::rehash', 'unordered_map/std::unordered_multimap::size', 'unordered_map/std::unordered_multimap::swap', 'unordered_map/std::unordered_multimap::unordered_multimap', 'unordered_map/std::unordered_multimap::operator=', 'unordered_map/std::unordered_multimap::allocator_type', 'unordered_map/std::unordered_multimap::const_iterator', 'unordered_map/std::unordered_multimap::const_local_iterator', 'unordered_map/std::unordered_multimap::const_pointer', 'unordered_map/std::unordered_multimap::const_reference', 'unordered_map/std::unordered_multimap::difference_type', 'unordered_map/std::unordered_multimap::hasher', 'unordered_map/std::unordered_multimap::iterator', 'unordered_map/std::unordered_multimap::key_equal', 'unordered_map/std::unordered_multimap::key_type', 'unordered_map/std::unordered_multimap::local_iterator', 'unordered_map/std::unordered_multimap::mapped_type', 'unordered_map/std::unordered_multimap::pointer', 'unordered_map/std::unordered_multimap::reference', 'unordered_map/std::unordered_multimap::size_type', 'unordered_map/std::unordered_multimap::value_type', 'unordered_map/std::unordered_multimap::begin', 'unordered_map/std::unordered_multimap::bucket', 'unordered_map/std::unordered_multimap::bucket_count', 'unordered_map/std::unordered_multimap::bucket_size', 'unordered_map/std::unordered_multimap::cbegin', 'unordered_map/std::unordered_multimap::cend', 'unordered_map/std::unordered_multimap::clear', 'unordered_map/std::unordered_multimap::count', 'unordered_map/std::unordered_multimap::emplace', 'unordered_map/std::unordered_multimap::emplace_hint', 'unordered_map/std::unordered_multimap::empty', 'unordered_map/std::unordered_multimap::end', 'unordered_map/std::unordered_multimap::equal_range', 'unordered_map/std::unordered_multimap::erase', 'unordered_map/std::unordered_multimap::find', 'unordered_map/std::unordered_multimap::get_allocator', 'unordered_map/std::unordered_multimap::hash_function', 'unordered_map/std::unordered_multimap::insert', 'unordered_map/std::unordered_multimap::key_eq', 'unordered_map/std::unordered_multimap::load_factor', 'unordered_map/std::unordered_multimap::max_bucket_count', 'unordered_map/std::unordered_multimap::max_load_factor', 'unordered_map/std::unordered_multimap::max_size', 'unordered_map/std::unordered_multimap::rehash', 'unordered_map/std::unordered_multimap::size', 'unordered_map/std::unordered_multimap::swap']  
@@ -63,74 +63,74 @@ class unordered_multimap;
 |||  
 |-|-|  
 |Type Definition|Description|  
-|[allocator_type](#unordered_multimap__allocator_type)|The type of an allocator for managing storage.|  
-|[const_iterator](#unordered_multimap__const_iterator)|The type of a constant iterator for the controlled sequence.|  
-|[const_local_iterator](#unordered_multimap__const_local_iterator)|The type of a constant bucket iterator for the controlled sequence.|  
-|[const_pointer](#unordered_multimap__const_pointer)|The type of a constant pointer to an element.|  
-|[const_reference](#unordered_multimap__const_reference)|The type of a constant reference to an element.|  
-|[difference_type](#unordered_multimap__difference_type)|The type of a signed distance between two elements.|  
-|[hasher](#unordered_multimap__hasher)|The type of the hash function.|  
-|[iterator](#unordered_multimap__iterator)|The type of an iterator for the controlled sequence.|  
-|[key_equal](#unordered_multimap__key_equal)|The type of the comparison function.|  
-|[key_type](#unordered_multimap__key_type)|The type of an ordering key.|  
-|[local_iterator](#unordered_multimap__local_iterator)|The type of a bucket iterator for the controlled sequence.|  
-|[mapped_type](#unordered_multimap__mapped_type)|The type of a mapped value associated with each key.|  
-|[pointer](#unordered_multimap__pointer)|The type of a pointer to an element.|  
-|[reference](#unordered_multimap__reference)|The type of a reference to an element.|  
-|[size_type](#unordered_multimap__size_type)|The type of an unsigned distance between two elements.|  
-|[value_type](#unordered_multimap__value_type)|The type of an element.|  
+|[allocator_type](#allocator_type)|The type of an allocator for managing storage.|  
+|[const_iterator](#const_iterator)|The type of a constant iterator for the controlled sequence.|  
+|[const_local_iterator](#const_local_iterator)|The type of a constant bucket iterator for the controlled sequence.|  
+|[const_pointer](#const_pointer)|The type of a constant pointer to an element.|  
+|[const_reference](#const_reference)|The type of a constant reference to an element.|  
+|[difference_type](#difference_type)|The type of a signed distance between two elements.|  
+|[hasher](#hasher)|The type of the hash function.|  
+|[iterator](#iterator)|The type of an iterator for the controlled sequence.|  
+|[key_equal](#key_equal)|The type of the comparison function.|  
+|[key_type](#key_type)|The type of an ordering key.|  
+|[local_iterator](#local_iterator)|The type of a bucket iterator for the controlled sequence.|  
+|[mapped_type](#mapped_type)|The type of a mapped value associated with each key.|  
+|[pointer](#pointer)|The type of a pointer to an element.|  
+|[reference](#reference)|The type of a reference to an element.|  
+|[size_type](#size_type)|The type of an unsigned distance between two elements.|  
+|[value_type](#value_type)|The type of an element.|  
   
 |||  
 |-|-|  
 |Member Function|Description|  
-|[begin](#unordered_multimap__begin)|Designates the beginning of the controlled sequence.|  
-|[bucket](#unordered_multimap__bucket)|Gets the bucket number for a key value.|  
-|[bucket_count](#unordered_multimap__bucket_count)|Gets the number of buckets.|  
-|[bucket_size](#unordered_multimap__bucket_size)|Gets the size of a bucket.|  
-|[cbegin](#unordered_multimap__cbegin)|Designates the beginning of the controlled sequence.|  
-|[cend](#unordered_multimap__cend)|Designates the end of the controlled sequence.|  
-|[clear](#unordered_multimap__clear)|Removes all elements.|  
-|[count](#unordered_multimap__count)|Finds the number of elements matching a specified key.|  
-|[emplace](#unordered_multimap__emplace)|Adds an element constructed in place.|  
-|[emplace_hint](#unordered_multimap__emplace_hint)|Adds an element constructed in place, with hint.|  
-|[empty](#unordered_multimap__empty)|Tests whether no elements are present.|  
-|[end](#unordered_multimap__end)|Designates the end of the controlled sequence.|  
-|[equal_range](#unordered_multimap__equal_range)|Finds range that matches a specified key.|  
-|[erase](#unordered_multimap__erase)|Removes elements at specified positions.|  
-|[find](#unordered_multimap__find)|Finds an element that matches a specified key.|  
-|[get_allocator](#unordered_multimap__get_allocator)|Gets the stored allocator object.|  
-|[hash_function](#unordered_multimap__hash)|Gets the stored hash function object.|  
-|[insert](#unordered_multimap__insert)|Adds elements.|  
-|[key_eq](#unordered_multimap__key_eq)|Gets the stored comparison function object.|  
-|[load_factor](#unordered_multimap__load_factor)|Counts the average elements per bucket.|  
-|[max_bucket_count](#unordered_multimap__max_bucket_count)|Gets the maximum number of buckets.|  
-|[max_load_factor](#unordered_multimap__max_load_factor)|Gets or sets the maximum elements per bucket.|  
-|[max_size](#unordered_multimap__max_size)|Gets the maximum size of the controlled sequence.|  
-|[rehash](#unordered_multimap__rehash)|Rebuilds the hash table.|  
-|[size](#unordered_multimap__size)|Counts the number of elements.|  
-|[swap](#unordered_multimap__swap)|Swaps the contents of two containers.|  
-|[unordered_multimap](#unordered_multimap__unordered_multimap)|Constructs a container object.|  
+|[begin](#begin)|Designates the beginning of the controlled sequence.|  
+|[bucket](#bucket)|Gets the bucket number for a key value.|  
+|[bucket_count](#bucket_count)|Gets the number of buckets.|  
+|[bucket_size](#bucket_size)|Gets the size of a bucket.|  
+|[cbegin](#cbegin)|Designates the beginning of the controlled sequence.|  
+|[cend](#cend)|Designates the end of the controlled sequence.|  
+|[clear](#clear)|Removes all elements.|  
+|[count](#count)|Finds the number of elements matching a specified key.|  
+|[emplace](#emplace)|Adds an element constructed in place.|  
+|[emplace_hint](#emplace_hint)|Adds an element constructed in place, with hint.|  
+|[empty](#empty)|Tests whether no elements are present.|  
+|[end](#end)|Designates the end of the controlled sequence.|  
+|[equal_range](#equal_range)|Finds range that matches a specified key.|  
+|[erase](#erase)|Removes elements at specified positions.|  
+|[find](#find)|Finds an element that matches a specified key.|  
+|[get_allocator](#get_allocator)|Gets the stored allocator object.|  
+|[hash_function](#hash)|Gets the stored hash function object.|  
+|[insert](#insert)|Adds elements.|  
+|[key_eq](#key_eq)|Gets the stored comparison function object.|  
+|[load_factor](#load_factor)|Counts the average elements per bucket.|  
+|[max_bucket_count](#max_bucket_count)|Gets the maximum number of buckets.|  
+|[max_load_factor](#max_load_factor)|Gets or sets the maximum elements per bucket.|  
+|[max_size](#max_size)|Gets the maximum size of the controlled sequence.|  
+|[rehash](#rehash)|Rebuilds the hash table.|  
+|[size](#size)|Counts the number of elements.|  
+|[swap](#swap)|Swaps the contents of two containers.|  
+|[unordered_multimap](#unordered_multimap)|Constructs a container object.|  
   
 |||  
 |-|-|  
 |Operator|Description|  
-|[unordered_multimap::operator=](#unordered_multimap__operator_eq)|Copies a hash table.|  
+|[unordered_multimap::operator=](#op_eq)|Copies a hash table.|  
   
 ## Remarks  
- The object orders the sequence it controls by calling two stored objects, a comparison function object of type [unordered_multimap::key_equal](#unordered_multimap__key_equal) and a hash function object of type [unordered_multimap::hasher](#unordered_multimap__hasher). You access the first stored object by calling the member function [unordered_multimap::key_eq](#unordered_multimap__key_eq)`()`; and you access the second stored object by calling the member function [unordered_multimap::hash_function](#unordered_multimap__hash)`()`. Specifically, for all values `X` and `Y` of type `Key`, the call `key_eq()(X, Y)` returns true only if the two argument values have equivalent ordering; the call `hash_function()(keyval)` yields a distribution of values of type `size_t`. Unlike template class [unordered_map Class](../standard-library/unordered-map-class.md), an object of template class `unordered_multimap` does not ensure that `key_eq()(X, Y)` is always false for any two elements of the controlled sequence. (Keys need not be unique.)  
+ The object orders the sequence it controls by calling two stored objects, a comparison function object of type [unordered_multimap::key_equal](#key_equal) and a hash function object of type [unordered_multimap::hasher](#hasher). You access the first stored object by calling the member function [unordered_multimap::key_eq](#key_eq)`()`; and you access the second stored object by calling the member function [unordered_multimap::hash_function](#hash)`()`. Specifically, for all values `X` and `Y` of type `Key`, the call `key_eq()(X, Y)` returns true only if the two argument values have equivalent ordering; the call `hash_function()(keyval)` yields a distribution of values of type `size_t`. Unlike template class [unordered_map Class](../standard-library/unordered-map-class.md), an object of template class `unordered_multimap` does not ensure that `key_eq()(X, Y)` is always false for any two elements of the controlled sequence. (Keys need not be unique.)  
   
- The object also stores a maximum load factor, which specifies the maximum desired average number of elements per bucket. If inserting an element causes [unordered_multimap::load_factor](#unordered_multimap__load_factor)`()` to exceed the maximum load factor, the container increases the number of buckets and rebuilds the hash table as needed.  
+ The object also stores a maximum load factor, which specifies the maximum desired average number of elements per bucket. If inserting an element causes [unordered_multimap::load_factor](#load_factor)`()` to exceed the maximum load factor, the container increases the number of buckets and rebuilds the hash table as needed.  
   
  The actual order of elements in the controlled sequence depends on the hash function, the comparison function, the order of insertion, the maximum load factor, and the current number of buckets. You cannot in general predict the order of elements in the controlled sequence. You can always be assured, however, that any subset of elements that have equivalent ordering are adjacent in the controlled sequence.  
   
- The object allocates and frees storage for the sequence it controls through a stored allocator object of type [unordered_multimap::allocator_type](#unordered_multimap__allocator_type). Such an allocator object must have the same external interface as an object of template class `allocator`. Note that the stored allocator object is not copied when the container object is assigned.  
+ The object allocates and frees storage for the sequence it controls through a stored allocator object of type [unordered_multimap::allocator_type](#allocator_type). Such an allocator object must have the same external interface as an object of template class `allocator`. Note that the stored allocator object is not copied when the container object is assigned.  
   
 ## Requirements  
  **Header:** \<unordered_map>  
   
  **Namespace:** std  
   
-##  <a name="unordered_multimap__allocator_type"></a>  unordered_multimap::allocator_type  
+##  <a name="allocator_type"></a>  unordered_multimap::allocator_type  
  The type of an allocator for managing storage.  
   
 ```  
@@ -167,7 +167,7 @@ int main()
 al == std::allocator() is true  
 ```  
   
-##  <a name="unordered_multimap__begin"></a>  unordered_multimap::begin  
+##  <a name="begin"></a>  unordered_multimap::begin  
  Designates the beginning of the controlled sequence or a bucket.  
   
 ```  
@@ -236,7 +236,7 @@ int main()
 [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__bucket"></a>  unordered_multimap::bucket  
+##  <a name="bucket"></a>  unordered_multimap::bucket  
  Gets the bucket number for a key value.  
   
 ```  
@@ -290,7 +290,7 @@ bucket('a') == 7
 bucket_size(7) == 1  
 ```  
   
-##  <a name="unordered_multimap__bucket_count"></a>  unordered_multimap::bucket_count  
+##  <a name="bucket_count"></a>  unordered_multimap::bucket_count  
  Gets the number of buckets.  
   
 ```  
@@ -376,7 +376,7 @@ max_load_factor() == 0.1
   
 ```  
   
-##  <a name="unordered_multimap__bucket_size"></a>  unordered_multimap::bucket_size  
+##  <a name="bucket_size"></a>  unordered_multimap::bucket_size  
  Gets the size of a bucket  
   
 ```  
@@ -430,7 +430,7 @@ bucket('a') == 7
 bucket_size(7) == 1  
 ```  
   
-##  <a name="unordered_multimap__cbegin"></a>  unordered_multimap::cbegin  
+##  <a name="cbegin"></a>  unordered_multimap::cbegin  
  Returns a `const` iterator that addresses the first element in the range.  
   
 ```  
@@ -453,7 +453,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator  
 ```  
   
-##  <a name="unordered_multimap__cend"></a>  unordered_multimap::cend  
+##  <a name="cend"></a>  unordered_multimap::cend  
  Returns a `const` iterator that addresses the location just beyond the last element in a range.  
   
 ```  
@@ -478,7 +478,7 @@ auto i2 = Container.cend();
   
  The value returned by `cend` should not be dereferenced.  
   
-##  <a name="unordered_multimap__clear"></a>  unordered_multimap::clear  
+##  <a name="clear"></a>  unordered_multimap::clear  
  Removes all elements.  
   
 ```  
@@ -486,7 +486,7 @@ void clear();
 ```  
   
 ### Remarks  
- The member function calls [unordered_multimap::erase](#unordered_multimap__erase)`(` [unordered_multimap::begin](#unordered_multimap__begin)`(),` [unordered_multimap::end](#unordered_multimap__end)`())`.  
+ The member function calls [unordered_multimap::erase](#erase)`(` [unordered_multimap::begin](#begin)`(),` [unordered_multimap::end](#end)`())`.  
   
 ### Example  
   
@@ -544,7 +544,7 @@ size == 2
 empty() == false  
 ```  
   
-##  <a name="unordered_multimap__const_iterator"></a>  unordered_multimap::const_iterator  
+##  <a name="const_iterator"></a>  unordered_multimap::const_iterator  
  The type of a constant iterator for the controlled sequence.  
   
 ```  
@@ -586,7 +586,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__const_local_iterator"></a>  unordered_multimap::const_local_iterator  
+##  <a name="const_local_iterator"></a>  unordered_multimap::const_local_iterator  
  The type of a constant bucket iterator for the controlled sequence.  
   
 ```  
@@ -633,7 +633,7 @@ int main()
 [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__const_pointer"></a>  unordered_multimap::const_pointer  
+##  <a name="const_pointer"></a>  unordered_multimap::const_pointer  
  The type of a constant pointer to an element.  
   
 ```  
@@ -678,7 +678,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__const_reference"></a>  unordered_multimap::const_reference  
+##  <a name="const_reference"></a>  unordered_multimap::const_reference  
  The type of a constant reference to an element.  
   
 ```  
@@ -723,7 +723,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__count"></a>  unordered_multimap::count  
+##  <a name="count"></a>  unordered_multimap::count  
  Finds the number of elements matching a specified key.  
   
 ```  
@@ -735,7 +735,7 @@ size_type count(const Key& keyval) const;
  Key value to search for.  
   
 ### Remarks  
- The member function returns the number of elements in the range delimited by [unordered_multimap::equal_range](#unordered_multimap__equal_range)`(keyval)`.  
+ The member function returns the number of elements in the range delimited by [unordered_multimap::equal_range](#equal_range)`(keyval)`.  
   
 ### Example  
   
@@ -776,7 +776,7 @@ count('b') == 1
 count('C') == 0  
 ```  
   
-##  <a name="unordered_multimap__difference_type"></a>  unordered_multimap::difference_type  
+##  <a name="difference_type"></a>  unordered_multimap::difference_type  
  The type of a signed distance between two elements.  
   
 ```  
@@ -834,7 +834,7 @@ end()-begin() == 3
 begin()-end() == -3  
 ```  
   
-##  <a name="unordered_multimap__emplace"></a>  unordered_multimap::emplace  
+##  <a name="emplace"></a>  unordered_multimap::emplace  
  Inserts an element constructed in place (no copy or move operations are performed), with a placement hint.  
   
 ```  
@@ -855,13 +855,13 @@ iterator emplace(Args&&... args);
 ### Remarks  
  No references to container elements are invalidated by this function, but it may invalidate all iterators to the container.  
   
- The [value_type](../standard-library/map-class.md#map__value_type) of an element is a pair, so that the value of an element will be an ordered pair with the first component equal to the key value and the second component equal to the data value of the element.  
+ The [value_type](../standard-library/map-class.md#value_type) of an element is a pair, so that the value of an element will be an ordered pair with the first component equal to the key value and the second component equal to the data value of the element.  
   
  During the insertion, if an exception is thrown but does not occur in the container's hash function, the container is not modified. If the exception is thrown in the hash function, the result is undefined.  
   
- For a code example, see [multimap::emplace](../standard-library/multimap-class.md#multimap__emplace).  
+ For a code example, see [multimap::emplace](../standard-library/multimap-class.md#emplace).  
   
-##  <a name="unordered_multimap__emplace_hint"></a>  unordered_multimap::emplace_hint  
+##  <a name="emplace_hint"></a>  unordered_multimap::emplace_hint  
  Inserts an element constructed in place (no copy or move operations are performed), with a placement hint.  
   
 ```  
@@ -887,11 +887,11 @@ iterator emplace_hint(
   
  During the insertion, if an exception is thrown but does not occur in the container's hash function, the container is not modified. If the exception is thrown in the hash function, the result is undefined.  
   
- The [value_type](../standard-library/map-class.md#map__value_type) of an element is a pair, so that the value of an element will be an ordered pair with the first component equal to the key value and the second component equal to the data value of the element.  
+ The [value_type](../standard-library/map-class.md#value_type) of an element is a pair, so that the value of an element will be an ordered pair with the first component equal to the key value and the second component equal to the data value of the element.  
   
- For a code example, see [map::emplace_hint](../standard-library/map-class.md#map__emplace_hint).  
+ For a code example, see [map::emplace_hint](../standard-library/map-class.md#emplace_hint).  
   
-##  <a name="unordered_multimap__empty"></a>  unordered_multimap::empty  
+##  <a name="empty"></a>  unordered_multimap::empty  
  Tests whether no elements are present.  
   
 ```  
@@ -957,7 +957,7 @@ size == 2
 empty() == false  
 ```  
   
-##  <a name="unordered_multimap__end"></a>  unordered_multimap::end  
+##  <a name="end"></a>  unordered_multimap::end  
  Designates the end of the controlled sequence.  
   
 ```  
@@ -1028,7 +1028,7 @@ int main()
 [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__equal_range"></a>  unordered_multimap::equal_range  
+##  <a name="equal_range"></a>  unordered_multimap::equal_range  
  Finds range that matches a specified key.  
   
 ```  
@@ -1097,7 +1097,7 @@ equal_range('x'):
 equal_range('b'): [b, 2]  
 ```  
   
-##  <a name="unordered_multimap__erase"></a>  unordered_multimap::erase  
+##  <a name="erase"></a>  unordered_multimap::erase  
  Removes an element or a range of elements in a unordered_multimap from specified positions or removes elements that match a specified key.  
   
 ```  
@@ -1131,9 +1131,9 @@ size_type erase(
  For the third member function, returns the number of elements that have been removed from the unordered_multimap.  
   
 ### Remarks  
- For a code example, see [map::erase](../standard-library/map-class.md#map__erase).  
+ For a code example, see [map::erase](../standard-library/map-class.md#erase).  
   
-##  <a name="unordered_multimap__find"></a>  unordered_multimap::find  
+##  <a name="find"></a>  unordered_multimap::find  
  Finds an element that matches a specified key.  
   
 ```  
@@ -1145,7 +1145,7 @@ const_iterator find(const Key& keyval) const;
  Key value to search for.  
   
 ### Remarks  
- The member function returns [unordered_multimap::equal_range](#unordered_multimap__equal_range)`(keyval).first`.  
+ The member function returns [unordered_multimap::equal_range](#equal_range)`(keyval).first`.  
   
 ### Example  
   
@@ -1191,7 +1191,7 @@ find('A') == false
 find('b') == true: [b, 2]  
 ```  
   
-##  <a name="unordered_multimap__get_allocator"></a>  unordered_multimap::get_allocator  
+##  <a name="get_allocator"></a>  unordered_multimap::get_allocator  
  Gets the stored allocator object.  
   
 ```  
@@ -1228,7 +1228,7 @@ int main()
 al == std::allocator() is true  
 ```  
   
-##  <a name="unordered_multimap__hash"></a>  unordered_multimap::hash_function  
+##  <a name="hash"></a>  unordered_multimap::hash_function  
  Gets the stored hash function object.  
   
 ```  
@@ -1265,7 +1265,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086  
 ```  
   
-##  <a name="unordered_multimap__hasher"></a>  unordered_multimap::hasher  
+##  <a name="hasher"></a>  unordered_multimap::hasher  
  The type of the hash function.  
   
 ```  
@@ -1302,7 +1302,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086  
 ```  
   
-##  <a name="unordered_multimap__insert"></a>  unordered_multimap::insert  
+##  <a name="insert"></a>  unordered_multimap::insert  
  Inserts an element or a range of elements into an unordered_multimap.  
   
 ```  
@@ -1351,10 +1351,10 @@ IList);
 |Parameter|Description|  
 |`Val`|The value of an element to be inserted into the unordered_multimap.|  
 |`Where`|The place to start searching for the correct point of insertion.|  
-|`ValTy`|Template parameter that specifies the argument type that the unordered_multimap can use to construct an element of [value_type](../standard-library/map-class.md#map__value_type), and perfect-forwards `Val` as an argument.|  
+|`ValTy`|Template parameter that specifies the argument type that the unordered_multimap can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|  
 |`First`|The position of the first element to be copied.|  
 |`Last`|The position just beyond the last element to be copied.|  
-|`InputIterator`|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#map__value_type) objects.|  
+|`InputIterator`|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|  
 |`IList`|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|  
   
 ### Return Value  
@@ -1367,17 +1367,17 @@ IList);
   
  During the insertion of just one element, if an exception is thrown but does not occur in the container's hash function, the container's state is not modified. If the exception is thrown in the hash function, the result is undefined. During the insertion of multiple elements, if an exception is thrown, the container is left in an unspecified but valid state.  
   
- The [value_type](../standard-library/map-class.md#map__value_type) of a container is a typedef that belongs to the container, and for map, `map<K, V>::value_type` is `pair<const K, V>`. The value of an element is an ordered pair in which the first component is equal to the key value and the second component is equal to the data value of the element.  
+ The [value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and for map, `map<K, V>::value_type` is `pair<const K, V>`. The value of an element is an ordered pair in which the first component is equal to the key value and the second component is equal to the data value of the element.  
   
  The range member function (5) inserts the sequence of element values into an unordered_multimap that corresponds to each element addressed by an iterator in the range `[First, Last)`; therefore, `Last` does not get inserted. The container member function `end()` refers to the position just after the last element in the container—for example, the statement `m.insert(v.begin(), v.end());` inserts all elements of `v` into `m`.  
   
  The initializer list member function (6) uses an [initializer_list](../standard-library/initializer-list.md) to copy elements into the unordered_multimap.  
   
- For insertion of an element constructed in place—that is, no copy or move operations are performed—see [unordered_multimap::emplace](#unordered_multimap__emplace) and [unordered_multimap::emplace_hint](#unordered_multimap__emplace_hint).  
+ For insertion of an element constructed in place—that is, no copy or move operations are performed—see [unordered_multimap::emplace](#emplace) and [unordered_multimap::emplace_hint](#emplace_hint).  
   
- For a code example, see [multimap::insert](../standard-library/multiset-class.md#multiset__insert).  
+ For a code example, see [multimap::insert](../standard-library/multiset-class.md#insert).  
   
-##  <a name="unordered_multimap__iterator"></a>  unordered_multimap::iterator  
+##  <a name="iterator"></a>  unordered_multimap::iterator  
  The type of an iterator for the controlled sequence.  
   
 ```  
@@ -1419,7 +1419,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__key_eq"></a>  unordered_multimap::key_eq  
+##  <a name="key_eq"></a>  unordered_multimap::key_eq  
  Gets the stored comparison function object.  
   
 ```  
@@ -1458,7 +1458,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false  
 ```  
   
-##  <a name="unordered_multimap__key_equal"></a>  unordered_multimap::key_equal  
+##  <a name="key_equal"></a>  unordered_multimap::key_equal  
  The type of the comparison function.  
   
 ```  
@@ -1497,7 +1497,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false  
 ```  
   
-##  <a name="unordered_multimap__key_type"></a>  unordered_multimap::key_type  
+##  <a name="key_type"></a>  unordered_multimap::key_type  
  The type of an ordering key.  
   
 ```  
@@ -1551,7 +1551,7 @@ int main()
 [d, 4] [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__load_factor"></a>  unordered_multimap::load_factor  
+##  <a name="load_factor"></a>  unordered_multimap::load_factor  
  Counts the average elements per bucket.  
   
 ```  
@@ -1559,7 +1559,7 @@ float load_factor() const;
 ```  
   
 ### Remarks  
- The member function returns `(float)`[unordered_multimap::size](#unordered_multimap__size)`() / (float)`[unordered_multimap::bucket_count](#unordered_multimap__bucket_count)`()`, the average number of elements per bucket.  
+ The member function returns `(float)`[unordered_multimap::size](#size)`() / (float)`[unordered_multimap::bucket_count](#bucket_count)`()`, the average number of elements per bucket.  
   
 ### Example  
   
@@ -1618,7 +1618,7 @@ int main()
   
 ```  
   
-##  <a name="unordered_multimap__local_iterator"></a>  unordered_multimap::local_iterator  
+##  <a name="local_iterator"></a>  unordered_multimap::local_iterator  
  The type of a bucket iterator.  
   
 ```  
@@ -1665,7 +1665,7 @@ int main()
 [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__mapped_type"></a>  unordered_multimap::mapped_type  
+##  <a name="mapped_type"></a>  unordered_multimap::mapped_type  
  The type of a mapped value associated with each key.  
   
 ```  
@@ -1719,7 +1719,7 @@ int main()
 [d, 4] [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__max_bucket_count"></a>  unordered_multimap::max_bucket_count  
+##  <a name="max_bucket_count"></a>  unordered_multimap::max_bucket_count  
  Gets the maximum number of buckets.  
   
 ```  
@@ -1805,7 +1805,7 @@ max_load_factor() == 0.1
   
 ```  
   
-##  <a name="unordered_multimap__max_load_factor"></a>  unordered_multimap::max_load_factor  
+##  <a name="max_load_factor"></a>  unordered_multimap::max_load_factor  
  Gets or sets the maximum elements per bucket.  
   
 ```  
@@ -1898,7 +1898,7 @@ max_load_factor() == 0.1
   
 ```  
   
-##  <a name="unordered_multimap__max_size"></a>  unordered_multimap::max_size  
+##  <a name="max_size"></a>  unordered_multimap::max_size  
  Gets the maximum size of the controlled sequence.  
   
 ```  
@@ -1932,7 +1932,7 @@ int main()
 max_size() == 536870911  
 ```  
   
-##  <a name="unordered_multimap__operator_eq"></a>  unordered_multimap::operator=  
+##  <a name="op_eq"></a>  unordered_multimap::operator=  
  Copies a hash table.  
   
 ```  
@@ -1988,7 +1988,7 @@ int main( )
    }  
 ```  
   
-##  <a name="unordered_multimap__pointer"></a>  unordered_multimap::pointer  
+##  <a name="pointer"></a>  unordered_multimap::pointer  
  The type of a pointer to an element.  
   
 ```  
@@ -2033,7 +2033,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__reference"></a>  unordered_multimap::reference  
+##  <a name="reference"></a>  unordered_multimap::reference  
  The type of a reference to an element.  
   
 ```  
@@ -2078,7 +2078,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__rehash"></a>  unordered_multimap::rehash  
+##  <a name="rehash"></a>  unordered_multimap::rehash  
  Rebuilds the hash table.  
   
 ```  
@@ -2154,7 +2154,7 @@ load_factor() == 0.0234375
 max_load_factor() == 0.1  
 ```  
   
-##  <a name="unordered_multimap__size"></a>  unordered_multimap::size  
+##  <a name="size"></a>  unordered_multimap::size  
  Counts the number of elements.  
   
 ```  
@@ -2220,7 +2220,7 @@ size == 2
 empty() == false  
 ```  
   
-##  <a name="unordered_multimap__size_type"></a>  unordered_multimap::size_type  
+##  <a name="size_type"></a>  unordered_multimap::size_type  
  The type of an unsigned distance between two elements.  
   
 ```  
@@ -2255,7 +2255,7 @@ int main()
 size == 0  
 ```  
   
-##  <a name="unordered_multimap__swap"></a>  unordered_multimap::swap  
+##  <a name="swap"></a>  unordered_multimap::swap  
  Swaps the contents of two containers.  
   
 ```  
@@ -2267,7 +2267,7 @@ void swap(unordered_multimap& right);
  The container to swap with.  
   
 ### Remarks  
- The member function swaps the controlled sequences between `*this` and `right`. If [unordered_multimap::get_allocator](#unordered_multimap__get_allocator)`() == right.get_allocator()`, it does so in constant time, it throws an exception only as a result of copying the stored traits object of type `Tr`, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.  
+ The member function swaps the controlled sequences between `*this` and `right`. If [unordered_multimap::get_allocator](#get_allocator)`() == right.get_allocator()`, it does so in constant time, it throws an exception only as a result of copying the stored traits object of type `Tr`, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.  
   
 ### Example  
   
@@ -2325,7 +2325,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__unordered_multimap"></a>  unordered_multimap::unordered_multimap  
+##  <a name="unordered_multimap"></a>  unordered_multimap::unordered_multimap  
  Constructs a container object.  
   
 ```  
@@ -2525,7 +2525,7 @@ int main()
  [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap__value_type"></a>  unordered_multimap::value_type  
+##  <a name="value_type"></a>  unordered_multimap::value_type  
  The type of an element.  
   
 ```  

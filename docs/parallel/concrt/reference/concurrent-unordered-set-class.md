@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['concurrent_unordered_set', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::concurrent_unordered_set', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::hash_function', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::insert', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase']
@@ -58,13 +58,13 @@ template <typename K,
  The key type.  
   
  `_Hasher`  
- The hash function object type. This argument is optional and the default value is `std::hash<``K``>`.  
+ The hash function object type. This argument is optional and the default value is `std::hash<K>`.  
   
  `key_equality`  
- The equality comparison function object type. This argument is optional and the default value is `std::equal_to<``K``>`.  
+ The equality comparison function object type. This argument is optional and the default value is `std::equal_to<K>`.  
   
  `_Allocator_type`  
- The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent unordered set. This argument is optional and the default value is `std::allocator<``K``>`.  
+ The type that represents the stored allocator object that encapsulates details about the allocation and deallocation of memory for the concurrent unordered set. This argument is optional and the default value is `std::allocator<K>`.  
   
 ## Members  
   

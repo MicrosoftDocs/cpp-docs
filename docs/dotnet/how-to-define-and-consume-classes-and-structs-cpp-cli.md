@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -856,7 +856,7 @@ int main() {
   
  If your type has a finalizer, the compiler generates a `Finalize(void)` method that overrides <xref:System.Object.Finalize%2A>.  
   
- If a type has either a finalizer or a destructor, the compiler generates a `Dispose(bool)` method, according to the design pattern. (For information, see [Dispose Pattern](http://msdn.microsoft.com/Library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)). You cannot explicitly author or call `Dispose(bool)` in Visual C++.  
+ If a type has either a finalizer or a destructor, the compiler generates a `Dispose(bool)` method, according to the design pattern. (For information, see [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)). You cannot explicitly author or call `Dispose(bool)` in Visual C++.  
   
  If a type has a base class that conforms to the design pattern, the destructors for all base classes are called when the destructor for the derived class is called. (If your type is written in Visual C++, the compiler ensures that your types implement this pattern.) In other words, the destructor of a reference class chains to its bases and members as specified by the C++ standard—first the class’s destructor is run, then the destructors for its members in the reverse of the order in which they were constructed, and finally the destructors for its base classes in the reverse of the order in which they were constructed.  
   

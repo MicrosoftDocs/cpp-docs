@@ -2,8 +2,7 @@
 title: "Platform::Collections::InputIterator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
-ms.technology: ""
+ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -41,8 +40,8 @@ class InputIterator;
 |----------|-----------------|  
 |`difference_type`|A pointer difference (ptrdiff_t).|  
 |`iterator_category`|The category of a input iterator (::std::input_iterator_tag).|  
-|`pointer`|A pointer to a `const``X`|  
-|`reference`|A reference to a `const``X`|  
+|`pointer`|A pointer to a `const X`|  
+|`reference`|A reference to a `const X`|  
 |`value_type`|The `X` typename.|  
   
 ### Public Constructors  

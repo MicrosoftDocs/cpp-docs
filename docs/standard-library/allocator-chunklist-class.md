@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['stdext::allocators::allocator_chunklist', 'allocators::allocator_chunklist', 'allocators/stdext::allocator_chunklist', 'allocators/stdext::allocators::allocator_chunklist', 'allocator_chunklist']  
@@ -50,7 +50,7 @@ class allocator_chunklist;
 |`Type`|The type of elements allocated by the allocator.|  
   
 ## Remarks  
- The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the `name` parameter in the following statement: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist``);`  
+ The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the `name` parameter in the following statement: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`  
   
 ## Requirements  
  **Header:** \<allocators>  

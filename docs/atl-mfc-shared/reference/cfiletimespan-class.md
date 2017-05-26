@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFileTimeSpan', 'ATLTIME/ATL::CFileTimeSpan', 'ATLTIME/ATL::CFileTimeSpan::CFileTimeSpan', 'ATLTIME/ATL::CFileTimeSpan::GetTimeSpan', 'ATLTIME/ATL::CFileTimeSpan::SetTimeSpan']

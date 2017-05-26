@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -54,11 +54,11 @@ Defines the container template classes [unordered_map](../standard-library/unord
   
 |||  
 |-|-|  
-|[operator!=](../standard-library/unordered-map-operators.md#operator_neq)|Tests if the unordered_map object on the left side of the operator is not equal to the unordered_map object on the right side.|  
-|[operator==](../standard-library/unordered-map-operators.md#operator_eq_eq)|Tests if the unordered_map object on the left side of the operator is equal to the unordered_map object on the right side.|  
+|[operator!=](../standard-library/unordered-map-operators.md#op_neq)|Tests if the unordered_map object on the left side of the operator is not equal to the unordered_map object on the right side.|  
+|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|Tests if the unordered_map object on the left side of the operator is equal to the unordered_map object on the right side.|  
 |[swap Function (unordered_map)](../standard-library/unordered-map-functions.md#swap)|Swaps two maps.|  
-|[operator!=](../standard-library/unordered-map-operators.md#operator_neq)|Tests if the unordered_multimap object on the left side of the operator is not equal to the unordered_multimap object on the right side.|  
-|[operator==](../standard-library/unordered-map-operators.md#operator_eq_eq)|Tests if the unordered_multimap object on the left side of the operator is equal to the unordered_multimap object on the right side.|  
+|[operator!=](../standard-library/unordered-map-operators.md#op_neq)|Tests if the unordered_multimap object on the left side of the operator is not equal to the unordered_multimap object on the right side.|  
+|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|Tests if the unordered_multimap object on the left side of the operator is equal to the unordered_multimap object on the right side.|  
 |[swap Function (unordered_map)](../standard-library/unordered-map-functions.md#swap)|Swaps two multimaps.|  
   
 ## See Also  

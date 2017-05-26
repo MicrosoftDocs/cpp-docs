@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMDIFrameWnd', 'AFXWIN/CMDIFrameWnd', 'AFXWIN/CMDIFrameWnd::CMDIFrameWnd', 'AFXWIN/CMDIFrameWnd::CreateClient', 'AFXWIN/CMDIFrameWnd::CreateNewChild', 'AFXWIN/CMDIFrameWnd::GetWindowMenuPopup', 'AFXWIN/CMDIFrameWnd::MDIActivate', 'AFXWIN/CMDIFrameWnd::MDICascade', 'AFXWIN/CMDIFrameWnd::MDIGetActive', 'AFXWIN/CMDIFrameWnd::MDIIconArrange', 'AFXWIN/CMDIFrameWnd::MDIMaximize', 'AFXWIN/CMDIFrameWnd::MDINext', 'AFXWIN/CMDIFrameWnd::MDIPrev', 'AFXWIN/CMDIFrameWnd::MDIRestore', 'AFXWIN/CMDIFrameWnd::MDISetMenu', 'AFXWIN/CMDIFrameWnd::MDITile']
@@ -188,7 +188,7 @@ CMDIChildWnd* CreateNewChild(
 ### Example  
  [!code-cpp[NVC_MFCWindowing#15](../../mfc/reference/codesnippet/cpp/cmdiframewnd-class_3.cpp)]  
   
- This example is an excerpt from Knowledge Base article Q201045, "HOWTO: Add Multiple Window Types to a Non-Document/View MDI App." Knowledge Base articles are available in the MSDN Library Visual Studio documentation or at [http://support.microsoft.com](http://support.microsoft.com/).  
+ This example is an excerpt from Knowledge Base article Q201045, "HOWTO: Add Multiple Window Types to a Non-Document/View MDI App." Knowledge Base articles are available at [http://support.microsoft.com](http://support.microsoft.com/).  
   
 ##  <a name="getwindowmenupopup"></a>  CMDIFrameWnd::GetWindowMenuPopup  
  Call this member function to obtain a handle to the current pop-up menu named "Window" (the pop-up menu with menu items for MDI window management).  

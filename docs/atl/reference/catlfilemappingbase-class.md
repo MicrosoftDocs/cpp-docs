@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlFileMappingBase', 'ATLFILE/ATL::CAtlFileMappingBase', 'ATLFILE/ATL::CAtlFileMappingBase::CAtlFileMappingBase', 'ATLFILE/ATL::CAtlFileMappingBase::CopyFrom', 'ATLFILE/ATL::CAtlFileMappingBase::GetData', 'ATLFILE/ATL::CAtlFileMappingBase::GetHandle', 'ATLFILE/ATL::CAtlFileMappingBase::GetMappingSize', 'ATLFILE/ATL::CAtlFileMappingBase::MapFile', 'ATLFILE/ATL::CAtlFileMappingBase::MapSharedMem', 'ATLFILE/ATL::CAtlFileMappingBase::OpenMapping', 'ATLFILE/ATL::CAtlFileMappingBase::Unmap']

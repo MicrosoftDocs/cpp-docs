@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['negate', 'xfunctional/std::negate']  
@@ -65,7 +65,7 @@ struct negate<void>
  The operand to be negated. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `Type`.  
   
 ## Return Value  
- The result of `-``Left.` The specialized template does perfect forwarding of the result, which has the type that's returned by unary `operator-`.  
+ The result of `-Left.` The specialized template does perfect forwarding of the result, which has the type that's returned by unary `operator-`.  
   
 ## Example  
   

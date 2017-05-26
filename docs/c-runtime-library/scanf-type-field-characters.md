@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 apilocation: 
@@ -58,7 +58,7 @@ The following information applies to any of the `scanf` family of functions, inc
 |`i`|An integer. Hexadecimal if the input string begins with "0x" or "0X", octal if the string begins with "0", otherwise decimal.|Pointer to `int`.|No.|  
 |`o`|Octal integer.|Pointer to `int`.|No.|  
 |`p`|A pointer address in hexadecimal digits. The maximum number of digits read depends on the size of a pointer (32 or 64 bits), which depends on the machine architecture. "0x" or "0X" are accepted as prefixes.|Pointer to `void*`.|No.|  
-|`u`|Unsigned decimal integer.|Pointer to `unsigned``int`.|No.|  
+|`u`|Unsigned decimal integer.|Pointer to `unsigned int`.|No.|  
 |`x`|Hexadecimal integer.|Pointer to `int`.|No.|  
 |`e`, `E`, `f`, `F`, `g`, `G`|Floating-point value consisting of optional sign (+ or -), series of one or more decimal digits containing decimal point, and optional exponent ("e" or "E") followed by an optionally signed integer value.|Pointer to `float`.|No.|  
 |`a`, `A`|Floating-point value consisting of a series of one or more hexadecimal digits containing an optional decimal point, and an exponent ("p" or "P") followed by a decimal value.|Pointer to `float`.|No.|  

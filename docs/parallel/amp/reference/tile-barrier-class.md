@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['tile_barrier', 'AMP/tile_barrier', 'AMP/Concurrency::tile_barrier::tile_barrier::tile_barrier', 'AMP/Concurrency::tile_barrier::tile_barrier::wait', 'AMP/Concurrency::tile_barrier::tile_barrier::wait_with_all_memory_fence', 'AMP/Concurrency::tile_barrier::tile_barrier::wait_with_global_memory_fence', 'AMP/Concurrency::tile_barrier::tile_barrier::wait_with_tile_static_memory_fence']

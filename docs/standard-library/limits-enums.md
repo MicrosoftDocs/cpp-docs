@@ -36,7 +36,7 @@ enum float_denorm_style {
 - **denorm_present** if denormalized forms are present.  
   
 ### Example  
-  See [numeric_limits::has_denorm](../standard-library/numeric-limits-class.md#numeric_limits__has_denorm) for an example in which the values of this enumeration may be accessed.  
+  See [numeric_limits::has_denorm](../standard-library/numeric-limits-class.md#has_denorm) for an example in which the values of this enumeration may be accessed.  
   
 ##  <a name="float_round_style"></a>  float_round_style Enumeration  
  The enumeration describes the various methods that an implementation can choose for rounding a floating-point value to an integer value.  
@@ -64,7 +64,7 @@ enum float_round_style {
 - **round_toward_neg_infinity** if the round to more negative integer.  
   
 ### Example  
-  See [numeric_limits::round_style](../standard-library/numeric-limits-class.md#numeric_limits__round_style) for an example in which the values of this enumeration may be accessed.  
+  See [numeric_limits::round_style](../standard-library/numeric-limits-class.md#round_style) for an example in which the values of this enumeration may be accessed.  
   
 ## See Also  
  [\<limits>](../standard-library/limits.md)

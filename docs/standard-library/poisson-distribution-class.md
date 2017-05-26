@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['poisson_distribution', 'random/std::poisson_distribution', 'random/std::poisson_distribution::reset', 'random/std::poisson_distribution::mean', 'random/std::poisson_distribution::param', 'random/std::poisson_distribution::min', 'random/std::poisson_distribution::max', 'random/std::poisson_distribution::operator()', 'random/std::poisson_distribution::param_type', 'random/std::poisson_distribution::param_type::mean', 'random/std::poisson_distribution::param_type::operator==', 'random/std::poisson_distribution::param_type::operator!=', 'random/std::poisson_distribution::param_type']  
@@ -76,8 +76,8 @@ The template class describes a distribution that produces values of a user-speci
   
 ||||  
 |-|-|-|  
-|[poisson_distribution](#poisson_distribution__poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|  
-|`poisson_distribution::operator()`||[param_type](#poisson_distribution__param_type)|  
+|[poisson_distribution](#poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|  
+|`poisson_distribution::operator()`||[param_type](#param_type)|  
   
 The property function `mean()` returns the value for stored distribution parameter *mean*.  
   
@@ -196,7 +196,7 @@ Distribution for 100 samples:
   
  **Namespace:** std  
   
-##  <a name="poisson_distribution__poisson_distribution"></a>  poisson_distribution::poisson_distribution  
+##  <a name="poisson_distribution"></a>  poisson_distribution::poisson_distribution  
 Constructs the distribution.  
   
 ```  
@@ -218,7 +218,7 @@ The first constructor constructs an object whose stored `mean` value holds the v
   
 The second constructor constructs an object whose stored parameters are initialized from *parm*. You can obtain and set the current parameters of an existing distribution by calling the `param()` member function.  
   
-##  <a name="poisson_distribution__param_type"></a>  poisson_distribution::param_type  
+##  <a name="param_type"></a>  poisson_distribution::param_type  
 Stores the parameters of the distribution.  
   
 ```    
@@ -233,7 +233,7 @@ struct param_type {
 ```  
   
 ### Parameters  
-See constructor parameters for [poisson_distribution](#poisson_distribution__poisson_distribution).  
+See constructor parameters for [poisson_distribution](#poisson_distribution).  
   
 ### Remarks  
  **Precondition:** `0.0 < mean`  

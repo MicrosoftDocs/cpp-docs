@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
@@ -36,11 +36,14 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Compiler Error C2316
-'exception' : cannot be caught as the destructor and/or copy constructor are inaccessible  
+
+> '*exception*' : cannot be caught as the destructor and/or copy constructor are inaccessible  
   
- An exception was caught by value or by reference but the copy constructor and/or the assignment operator were inaccessible.  
+An exception was caught by value or by reference but the copy constructor and/or the assignment operator were inaccessible.  
   
- This code was accepted by the previous version's compiler but now gives an error.  
+This code was accepted by versions of Visual C++ before Visual Studio 2003, but now gives an error.  
+  
+Conformance changes in Visual Studio 2015 made this error apply to bad catch statements of MFC exceptions derived from `CException`. Because `CException` has an inherited private copy constructor, the class and its derivatives are non-copyable, and cannot be passed by value, which also means they cannot be caught by value. Catch statements that caught MFC exceptions by value previously led to uncaught exceptions at runtime, but now the compiler correctly identifies this situation and reports error C2316. To fix this issue, we recommend you use the MFC TRY/CATCH macros rather than write your own exception handlers, but if that's not appropriate for your code, catch MFC exceptions by reference instead.   
   
 ## Example  
  The following sample generates C2316:  

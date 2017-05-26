@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DRadialGradientBrush', 'AFXRENDERTARGET/CD2DRadialGradientBrush', 'AFXRENDERTARGET/CD2DRadialGradientBrush::CD2DRadialGradientBrush', 'AFXRENDERTARGET/CD2DRadialGradientBrush::Attach', 'AFXRENDERTARGET/CD2DRadialGradientBrush::Create', 'AFXRENDERTARGET/CD2DRadialGradientBrush::Destroy', 'AFXRENDERTARGET/CD2DRadialGradientBrush::Detach', 'AFXRENDERTARGET/CD2DRadialGradientBrush::Get', 'AFXRENDERTARGET/CD2DRadialGradientBrush::GetCenter', 'AFXRENDERTARGET/CD2DRadialGradientBrush::GetGradientOriginOffset', 'AFXRENDERTARGET/CD2DRadialGradientBrush::GetRadiusX', 'AFXRENDERTARGET/CD2DRadialGradientBrush::GetRadiusY', 'AFXRENDERTARGET/CD2DRadialGradientBrush::SetCenter', 'AFXRENDERTARGET/CD2DRadialGradientBrush::SetGradientOriginOffset', 'AFXRENDERTARGET/CD2DRadialGradientBrush::SetRadiusX', 'AFXRENDERTARGET/CD2DRadialGradientBrush::SetRadiusY', 'AFXRENDERTARGET/CD2DRadialGradientBrush::m_pRadialGradientBrush', 'AFXRENDERTARGET/CD2DRadialGradientBrush::m_RadialGradientBrushProperties']

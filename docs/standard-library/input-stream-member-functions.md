@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -57,7 +57,7 @@ Input stream member functions are used for disk input. The member functions incl
 ##  <a name="vclrftheopenfunctionforinputstreamsanchor11"></a> The open Function for Input Streams  
  If you are using an input file stream (ifstream), you must associate that stream with a specific disk file. You can do this in the constructor, or you can use the **open** function. In either case, the arguments are the same.  
   
- You generally specify an [ios_base::openmode](../standard-library/ios-base-class.md#ios_base__openmode) flag when you open the file associated with an input stream (the default mode is **ios::in**). For a list of the **open_mode** flags, see [The open](#vclrftheopenfunctionforinputstreamsanchor11). The flags can be combined with the bitwise OR ( &#124; ) operator.  
+ You generally specify an [ios_base::openmode](../standard-library/ios-base-class.md#openmode) flag when you open the file associated with an input stream (the default mode is **ios::in**). For a list of the **open_mode** flags, see [The open](#vclrftheopenfunctionforinputstreamsanchor11). The flags can be combined with the bitwise OR ( &#124; ) operator.  
   
  To read a file, first use the **fail** member function to determine whether it exists:  
   

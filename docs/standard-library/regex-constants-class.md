@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['regex_constants', 'regex/std::regex_constants', 'error_collate', 'regex/std::regex_constants::error_collate', 'error_ctype', 'regex/std::regex_constants::error_ctype', 'error_escape', 'regex/std::regex_constants::error_escape', 'error_backref', 'regex/std::regex_constants::error_backref', 'error_brack', 'regex/std::regex_constants::error_brack', 'error_paren', 'regex/std::regex_constants::error_paren', 'error_brace', 'regex/std::regex_constants::error_brace', 'error_badbrace', 'regex/std::regex_constants::error_badbrace', 'error_range', 'regex/std::regex_constants::error_range', 'error_space', 'regex/std::regex_constants::error_space', 'error_badrepeat', 'regex/std::regex_constants::error_badrepeat', 'error_complexity', 'regex/std::regex_constants::error_complexity', 'error_stack', 'regex/std::regex_constants::error_stack', 'error_parse', 'regex/std::regex_constants::error_parse', 'error_syntax', 'regex/std::regex_constants::error_syntax', 'match_default', 'regex/std::regex_constants::match_default', 'match_not_bol', 'regex/std::regex_constants::match_not_bol', 'match_not_eol', 'regex/std::regex_constants::match_not_eol', 'match_not_bow', 'regex/std::regex_constants::match_not_bow', 'match_not_eow', 'regex/std::regex_constants::match_not_eow', 'match_any', 'regex/std::regex_constants::match_any', 'match_not_null', 'regex/std::regex_constants::match_not_null', 'match_continuous', 'regex/std::regex_constants::match_continuous', 'match_prev_avail', 'regex/std::regex_constants::match_prev_avail', 'format_default', 'regex/std::regex_constants::format_default', 'format_sed', 'regex/std::regex_constants::format_sed', 'format_no_copy', 'regex/std::regex_constants::format_no_copy', 'format_first_only', 'regex/std::regex_constants::format_first_only', 'regex/std::regex_constants::ECMAScript', 'regex/std::regex_constants::basic', 'regex/std::regex_constants::extended', 'regex/std::regex_constants::awk', 'regex/std::regex_constants::grep', 'regex/std::regex_constants::egrep', 'regex/std::regex_constants::icase', 'regex/std::regex_constants::nosubs', 'regex/std::regex_constants::optimize', 'regex/std::regex_constants::collate']  
@@ -54,7 +54,7 @@ namespace regex_constants {
   
  **Namespace:** std  
   
-##  <a name="regex_constants__error_type"></a>  regex_constants::error_type  
+##  <a name="error_type"></a>  regex_constants::error_type  
  Flags for reporting regular expression syntax errors.  
   
 ```  
@@ -113,7 +113,7 @@ enum error_type
   
  `error_backref` -- the expression contained an invalid back reference  
   
-##  <a name="regex_constants__match_flag_type"></a>  regex_constants::match_flag_type  
+##  <a name="match_flag_type"></a>  regex_constants::match_flag_type  
  Flags for regular expression matching options.  
   
 ```  
@@ -169,7 +169,7 @@ enum match_flag_type
   
  `format_first_only` -- do not search for matches after the first one  
   
-##  <a name="regex_constants__syntax_option_type"></a>  regex_constants::syntax_option_type  
+##  <a name="syntax_option_type"></a>  regex_constants::syntax_option_type  
  Flags for selecting syntax options.  
   
 ```  

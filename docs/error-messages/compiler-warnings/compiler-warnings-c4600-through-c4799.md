@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 f1_keywords: 
@@ -93,13 +93,20 @@ translation.priority.mt:
 # Compiler Warnings C4600 Through C4799
 The articles in this part of the documentation contain information about a subset of the Visual C++ compiler warnings. You can access the information here or, in the Output window in Visual Studio, you can select an error number and then press the F1 key.  
   
+> [!NOTE]
+>  Not every [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] error or warning is documented in MSDN. In many cases, the diagnostic message provides all of the information that's available. If you think an error message needs additional explanation, you can let us know. You can use the feedback form on this page, or go to the menu bar in Visual Studio and choose **Help**, **Report a Bug**, or you can submit a suggestion or bug report on [Microsoft Connect](http://connect.microsoft.com/VisualStudio).  
+  
+You may find additional assistance for errors and warnings on the MSDN public forums. The [Visual C++ Language](http://go.microsoft.com/fwlink/?LinkId=158195) forum is for questions and discussions about the [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] language syntax and compiler. The [Visual C++ General](http://go.microsoft.com/fwlink/?LinkId=158194) forum is for questions about [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] that are not discussed in other forums. You may also find help about errors and warnings on [Stack Overflow](http://stackoverflow.com/).  
+  
 ## In This Section  
   
 |Warning|Message|  
 |-------------|-------------|  
 |[Compiler Warning (level 1) C4600](../../error-messages/compiler-warnings/compiler-warning-level-1-c4600.md)|#pragma 'macro name': expected a valid non-empty string|  
 |Compiler warning (level 1) C4602|#pragma pop_macro: 'macro name' no previous #pragma push_macro for this identifier|  
-|Compiler warning (level 1) C4603|'\<identifier>': macro is not defined or definition is different after precompiled header use|  
+|Compiler warning (level 1) C4603|'*identifier*': macro is not defined or definition is different after precompiled header use|  
+|Compiler warning (level 1) C4604|'*type*': passing argument by value across native and managed boundary requires valid copy constructor. Otherwise the runtime behavior is undefined|  
+|Compiler warning (level 1) C4605|'/D*macro*' specified on current command line, but was not specified when precompiled header was built|  
 |[Compiler Warning (level 1) C4606](../../error-messages/compiler-warnings/compiler-warning-level-1-c4606.md)|#pragma warning: 'warning number' ignored; Code Analysis warnings are not associated with warning levels|  
 |[Compiler Warning (level 3) C4608](../../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md)|'union_member' has already been initialized by another union member in the initializer list, 'union_member'|  
 |Compiler warning (level 3) C4609|'%$S' derives from default interface '%$S' on type '%$S'. Use a different default interface for '%$S', or break the base/derived relationship.|  
@@ -135,10 +142,14 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Warning (level 3) C4641](../../error-messages/compiler-warnings/compiler-warning-level-3-c4641.md)|XML document comment has an ambiguous cross reference:|  
 |Compiler warning (level 3) C4645|function declared with __declspec(noreturn) has a return statement|  
 |Compiler warning (level 3) C4646|function declared with __declspec(noreturn) has non-void return type|  
+|Compiler warning (level 3) C4647|behavior change: __is_pod(*type*) has different value in previous versions|  
+|Compiler warning (level 3) C4648|standard attribute 'carries_dependency' is ignored|  
+|Compiler warning (level 3) C4649|attributes are ignored in this context|  
 |[Compiler Warning (level 1) C4650](../../error-messages/compiler-warnings/compiler-warning-level-1-c4650.md)|debugging information not in precompiled header; only global symbols from the header will be available|  
 |[Compiler Warning (level 1) C4651](../../error-messages/compiler-warnings/compiler-warning-level-1-c4651.md)|'definition' specified for precompiled header but not for current compile|  
 |[Compiler Warning (level 1) C4652](../../error-messages/compiler-warnings/compiler-warning-level-1-c4652.md)|compiler option 'option' inconsistent with precompiled header; current command-line option will override that defined in the precompiled header|  
 |[Compiler Warning (level 2) C4653](../../error-messages/compiler-warnings/compiler-warning-level-2-c4653.md)|compiler option 'option' inconsistent with precompiled header; current command-line option ignored|  
+|Compiler warning (level 4) C4654|Code placed before include of precompiled header line will be ignored. Add code to precompiled header.|  
 |Compiler warning (level 1) C4655|'symbol': variable type is new since the latest build, or is defined differently elsewhere|  
 |[Compiler Warning (level 1) C4656](../../error-messages/compiler-warnings/compiler-warning-level-1-c4656.md)|'symbol': data type is new or has changed since the latest build, or is defined differently elsewhere|  
 |Compiler warning (level 1) C4657|expression involves a data type that is new since the latest build|  
@@ -208,8 +219,9 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Warning (Level 1) C4742](../../error-messages/compiler-warnings/compiler-warning-level-1-c4742.md)|'var' has different alignment in 'file1' and 'file2': number and number|  
 |[Compiler Warning (Level 1) C4743](../../error-messages/compiler-warnings/compiler-warning-level-1-c4743.md)|'type' has different size in 'file1' and 'file2': number and number bytes|  
 |[Compiler Warning (Level 1) C4744](../../error-messages/compiler-warnings/compiler-warning-level-1-c4744.md)|'var' has different type in 'file1' and 'file2': 'type1' and 'type2'|  
-|[Compiler Warning C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile access of '%s' is subject to /volatile:\<iso&#124;ms> setting; consider using __iso_volatile_load/store intrinsic functions|  
+|[Compiler Warning C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile access of '*expression*' is subject to /volatile:\<iso&#124;ms> setting; consider using __iso_volatile_load/store intrinsic functions|  
 |[Compiler Warning (level 1) C4747](../../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md)|Calling managed 'entrypoint': Managed code may not be run under loader lock, including the DLL entrypoint and calls reached from the DLL entrypoint|  
+|Compiler warning (level 4) C4749|conditionally supported: offsetof applied to non-standard-layout type '*type*'|  
 |Compiler warning (level 1) C4750|'identifier': function with _alloca() inlined into a loop|  
 |Compiler warning (level 4) C4751|/arch:AVX does not apply to Intel(R) Streaming SIMD Extensions that are within inline ASM|  
 |Compiler warning (level 4) C4752|found Intel(R) Advanced Vector Extensions; consider using /arch:AVX|  
@@ -219,8 +231,15 @@ The articles in this part of the documentation contain information about a subse
 |Compiler warning (level 4) C4757|subscript is a large unsigned value, did you intend a negative constant?|  
 |Compiler warning (level 4) C4764|Can not align catch objects to greater than 16 bytes|  
 |Compiler warning (level 4) C4767|section name '%s' is longer than 8 characters and will be truncated by the linker|  
-|Compiler warning C4770|partially validated enum '%s' used as index|  
+|Compiler warning (level 3) C4768|__declspec attributes before linkage specification are ignored|  
+|Compiler warning C4770|partially validated enum '*name*' used as index|  
+|Compiler warning C4771|Bounds must be created using a simple pointer; MPX intrinsic function ignored|  
 |[Compiler Warning (level 1) C4772](../../error-messages/compiler-warnings/compiler-warning-level-1-c4772.md)|#import referenced a type from a missing type library; 'missing_type' used as a placeholder|  
+|Compiler warning (level 4) C4774|'*string*' : format string expected in argument *number* is not a string literal|  
+|Compiler warning (level 3) C4775|nonstandard extension used in format string '*string*' of function '*function*'|  
+|Compiler warning (level 1) C4776|'%*character*' is not allowed in the format string of function '*function*'|  
+|Compiler warning (level 4) C4777|'*function*' : format string '*string*' requires an argument of type '*type1*', but variadic argument *number* has type '*type2*'|  
+|Compiler warning (level 3) C4778|'*function*' : unterminated format string '*string*'|  
 |[Compiler Warning (Level 1) C4788](../../error-messages/compiler-warnings/compiler-warning-level-1-c4788.md)|'identifier': identifier was truncated to 'number' characters|  
 |[Compiler Warning (Level 1) C4789](../../error-messages/compiler-warnings/compiler-warning-level-1-c4789.md)|buffer 'identifier' of size N bytes will be overrun; M bytes will be written starting at offset L|  
 |Compiler warning (level 2) C4792|function '%s' declared using sysimport and referenced from native code; import library required to link|  

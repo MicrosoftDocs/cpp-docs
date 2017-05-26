@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['stdext::sync_per_thread', 'sync_per_thread', 'allocators/stdext::sync_per_thread', 'allocators/stdext::sync_per_thread::allocate', 'allocators/stdext::sync_per_thread::deallocate', 'allocators/stdext::sync_per_thread::equals']  
@@ -56,16 +56,16 @@ class sync_per_thread
   
 |||  
 |-|-|  
-|[allocate](#sync_per_thread__allocate)|Allocates a block of memory.|  
-|[deallocate](#sync_per_thread__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
-|[equals](#sync_per_thread__equals)|Compares two caches for equality.|  
+|[allocate](#allocate)|Allocates a block of memory.|  
+|[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
+|[equals](#equals)|Compares two caches for equality.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="sync_per_thread__allocate"></a>  sync_per_thread::allocate  
+##  <a name="allocate"></a>  sync_per_thread::allocate  
  Allocates a block of memory.  
   
 ```
@@ -81,7 +81,7 @@ void *allocate(std::size_t count);
 ### Remarks  
  The member function returns the result of a call to `cache::allocate(count)` on the cache object belonging to the current thread. If no cache object has been allocated for the current thread, it first allocates one.  
   
-##  <a name="sync_per_thread__deallocate"></a>  sync_per_thread::deallocate  
+##  <a name="deallocate"></a>  sync_per_thread::deallocate  
  Frees a specified number of objects from storage beginning at a specified position.  
   
 ```
@@ -98,7 +98,7 @@ void deallocate(void* ptr, std::size_t count);
 ### Remarks  
  The member function calls `deallocate` on the cache object belonging to the current thread. If no cache object has been allocated for the current thread, it first allocates one.  
   
-##  <a name="sync_per_thread__equals"></a>  sync_per_thread::equals  
+##  <a name="equals"></a>  sync_per_thread::equals  
  Compares two caches for equality.  
   
 ```

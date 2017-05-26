@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleCurrency', 'AFXDISP/COleCurrency', 'AFXDISP/COleCurrency::COleCurrency', 'AFXDISP/COleCurrency::Format', 'AFXDISP/COleCurrency::GetStatus', 'AFXDISP/COleCurrency::ParseCurrency', 'AFXDISP/COleCurrency::SetCurrency', 'AFXDISP/COleCurrency::SetStatus', 'AFXDISP/COleCurrency::m_cur', 'AFXDISP/COleCurrency::m_status']

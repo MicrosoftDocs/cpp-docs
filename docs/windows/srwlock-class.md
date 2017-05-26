@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
@@ -45,7 +45,7 @@ class SRWLock;
 ```  
   
 ## Remarks  
- A slim reader/writer lock is used to synchronize access across threads to an object or resource. For more information, see [Synchronization Functions](http://msdn.microsoft.com/en-us/9b6359c2-0113-49b6-83d0-316ad95aba1b) in the MSDN Library.  
+ A slim reader/writer lock is used to synchronize access across threads to an object or resource. For more information, see [Synchronization Functions](http://msdn.microsoft.com/en-us/9b6359c2-0113-49b6-83d0-316ad95aba1b).  
   
 ## Members  
   

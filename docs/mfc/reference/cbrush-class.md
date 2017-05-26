@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CBrush', 'AFXWIN/CBrush', 'AFXWIN/CBrush::CBrush', 'AFXWIN/CBrush::CreateBrushIndirect', 'AFXWIN/CBrush::CreateDIBPatternBrush', 'AFXWIN/CBrush::CreateHatchBrush', 'AFXWIN/CBrush::CreatePatternBrush', 'AFXWIN/CBrush::CreateSolidBrush', 'AFXWIN/CBrush::CreateSysColorBrush', 'AFXWIN/CBrush::FromHandle', 'AFXWIN/CBrush::GetLogBrush']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['xlocmon/std::money_put', 'money_put', 'locale/std::money_put::char_type', 'locale/std::money_put::iter_type', 'locale/std::money_put::string_type', 'locale/std::money_put::do_put', 'locale/std::money_put::put']  
@@ -58,29 +58,29 @@ class money_put : public locale::facet;
   
 |||  
 |-|-|  
-|[money_put](#money_put__money_put)|The constructor for objects of type `money_put`.|  
+|[money_put](#money_put)|The constructor for objects of type `money_put`.|  
   
 ### Typedefs  
   
 |||  
 |-|-|  
-|[char_type](#money_put__char_type)|A type that is used to describe a character used by a locale.|  
-|[iter_type](#money_put__iter_type)|A type that describes an output iterator.|  
-|[string_type](#money_put__string_type)|A type that describes a string containing characters of type `CharType`.|  
+|[char_type](#char_type)|A type that is used to describe a character used by a locale.|  
+|[iter_type](#iter_type)|A type that describes an output iterator.|  
+|[string_type](#string_type)|A type that describes a string containing characters of type `CharType`.|  
   
 ### Member Functions  
   
 |||  
 |-|-|  
-|[do_put](#money_put__do_put)|A virtual function called to convert either number or a string to a character sequence that represents a monetary value.|  
-|[put](#money_put__put)|Converts either number or a string to a character sequence that represents a monetary value.|  
+|[do_put](#do_put)|A virtual function called to convert either number or a string to a character sequence that represents a monetary value.|  
+|[put](#put)|Converts either number or a string to a character sequence that represents a monetary value.|  
   
 ## Requirements  
  **Header:** \<locale>  
   
  **Namespace:** std  
   
-##  <a name="money_put__char_type"></a>  money_put::char_type  
+##  <a name="char_type"></a>  money_put::char_type  
  A type that is used to describe a character used by a locale.  
   
 ```  
@@ -90,7 +90,7 @@ typedef CharType char_type;
 ### Remarks  
  The type is a synonym for the template parameter **CharType**.  
   
-##  <a name="money_put__do_put"></a>  money_put::do_put  
+##  <a name="do_put"></a>  money_put::do_put  
  A virtual function called to convert either number or a string to a character sequence that represents a monetary value.  
   
 ```  
@@ -130,35 +130,35 @@ virtual iter_type do_put(
  An output iterator the addresses the position one beyond the last element produced.  
   
 ### Remarks  
- The first virtual protected member function generates sequential elements beginning at `next` to produce a monetary output field from the [string_type](#money_put__string_type) object `val`. The sequence controlled by `val` must begin with one or more decimal digits, optionally preceded by a minus sign (-), which represents the amount. The function returns an iterator designating the first element beyond the generated monetary output field.  
+ The first virtual protected member function generates sequential elements beginning at `next` to produce a monetary output field from the [string_type](#string_type) object `val`. The sequence controlled by `val` must begin with one or more decimal digits, optionally preceded by a minus sign (-), which represents the amount. The function returns an iterator designating the first element beyond the generated monetary output field.  
   
  The second virtual protected member function behaves the same as the first, except that it effectively first converts `val` to a sequence of decimal digits, optionally preceded by a minus sign, then converts that sequence as above.  
   
- The format of a monetary output field is determined by the [locale facet](../standard-library/locale-class.md#facet_class) fac returned by the (effective) call [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#ios_base__getloc)).  
+ The format of a monetary output field is determined by the [locale facet](../standard-library/locale-class.md#facet_class) fac returned by the (effective) call [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).  
   
  Specifically:  
   
-- **fac**. [pos_format](../standard-library/moneypunct-class.md#moneypunct__pos_format) determines the order in which components of the field are generated for a nonnegative value.  
+- **fac**. [pos_format](../standard-library/moneypunct-class.md#pos_format) determines the order in which components of the field are generated for a nonnegative value.  
   
-- **fac**. [neg_format](../standard-library/moneypunct-class.md#moneypunct__neg_format) determines the order in which components of the field are generated for a negative value.  
+- **fac**. [neg_format](../standard-library/moneypunct-class.md#neg_format) determines the order in which components of the field are generated for a negative value.  
   
-- **fac**. [curr_symbol](../standard-library/moneypunct-class.md#moneypunct__curr_symbol) determines the sequence of elements to generate for a currency symbol.  
+- **fac**. [curr_symbol](../standard-library/moneypunct-class.md#curr_symbol) determines the sequence of elements to generate for a currency symbol.  
   
-- **fac**. [positive_sign](../standard-library/moneypunct-class.md#moneypunct__positive_sign) determines the sequence of elements to generate for a positive sign.  
+- **fac**. [positive_sign](../standard-library/moneypunct-class.md#positive_sign) determines the sequence of elements to generate for a positive sign.  
   
-- **fac**. [negative_sign](../standard-library/moneypunct-class.md#moneypunct__negative_sign) determines the sequence of elements to generate for a negative sign.  
+- **fac**. [negative_sign](../standard-library/moneypunct-class.md#negative_sign) determines the sequence of elements to generate for a negative sign.  
   
-- **fac**. [grouping](../standard-library/moneypunct-class.md#moneypunct__grouping) determines how digits are grouped to the left of any decimal point.  
+- **fac**. [grouping](../standard-library/moneypunct-class.md#grouping) determines how digits are grouped to the left of any decimal point.  
   
-- **fac**. [thousands_sep](../standard-library/moneypunct-class.md#moneypunct__thousands_sep) determines the element that separates groups of digits to the left of any decimal point.  
+- **fac**. [thousands_sep](../standard-library/moneypunct-class.md#thousands_sep) determines the element that separates groups of digits to the left of any decimal point.  
   
-- **fac**. [decimal_point](../standard-library/moneypunct-class.md#moneypunct__decimal_point) determines the element that separates the integer digits from any fraction digits.  
+- **fac**. [decimal_point](../standard-library/moneypunct-class.md#decimal_point) determines the element that separates the integer digits from any fraction digits.  
   
-- **fac**. [frac_digits](../standard-library/moneypunct-class.md#moneypunct__frac_digits) determines the number of significant fraction digits to the right of any decimal point.  
+- **fac**. [frac_digits](../standard-library/moneypunct-class.md#frac_digits) determines the number of significant fraction digits to the right of any decimal point.  
   
  If the sign string ( **fac**. `negative_sign` or **fac**. `positive_sign`) has more than one element, only the first element is generated where the element equal to **money_base::sign** appears in the format pattern ( **fac**. `neg_format` or **fac**. `pos_format`). Any remaining elements are generated at the end of the monetary output field.  
   
- If **iosbase**. [flags](../standard-library/ios-base-class.md#ios_base__flags) & [showbase](../standard-library/ios-functions.md#showbase) is nonzero, the string **fac**. `curr_symbol` is generated where the element equal to **money_base::symbol** appears in the format pattern. Otherwise, no currency symbol is generated.  
+ If **iosbase**. [flags](../standard-library/ios-base-class.md#flags) & [showbase](../standard-library/ios-functions.md#showbase) is nonzero, the string **fac**. `curr_symbol` is generated where the element equal to **money_base::symbol** appears in the format pattern. Otherwise, no currency symbol is generated.  
   
  If no grouping constraints are imposed by **fac**. **grouping** (its first element has the value CHAR_MAX), then no instances of **fac**. `thousands_sep` are generated in the value portion of the monetary output field (where the element equal to **money_base::value** appears in the format pattern). If **fac**. `frac_digits` is zero, then no instance of **fac**. `decimal_point` is generated after the decimal digits. Otherwise, the resulting monetary output field places the low-order **fac**. `frac_digits` decimal digits to the right of the decimal point.  
   
@@ -167,9 +167,9 @@ virtual iter_type do_put(
  The function calls **iosbase**. **width**(0) to reset the field width to zero.  
   
 ### Example  
-  See the example for [put](#money_put__put), where the virtual member function is called by **put**.  
+  See the example for [put](#put), where the virtual member function is called by **put**.  
   
-##  <a name="money_put__iter_type"></a>  money_put::iter_type  
+##  <a name="iter_type"></a>  money_put::iter_type  
  A type that describes an output iterator.  
   
 ```  
@@ -179,7 +179,7 @@ typedef OutputIterator iter_type;
 ### Remarks  
  The type is a synonym for the template parameter **OutputIterator.**  
   
-##  <a name="money_put__money_put"></a>  money_put::money_put  
+##  <a name="money_put"></a>  money_put::money_put  
  The constructor for objects of type `money_put`.  
   
 ```  
@@ -203,7 +203,7 @@ explicit money_put(size_t _Refs = 0);
   
  The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( `_Refs`).  
   
-##  <a name="money_put__put"></a>  money_put::put  
+##  <a name="put"></a>  money_put::put  
  Converts either number or a string to a character sequence that represents a monetary value.  
   
 ```  
@@ -243,7 +243,7 @@ iter_type put(
  An output iterator the addresses the position one beyond the last element produced.  
   
 ### Remarks  
- Both member functions return [do_put](#money_put__do_put)( `next`, `_Intl`, `_Iosbase`, `_Fill`, `val`).  
+ Both member functions return [do_put](#do_put)( `next`, `_Intl`, `_Iosbase`, `_Fill`, `val`).  
   
 ### Example  
   
@@ -277,7 +277,7 @@ int main( )
 money_put( ) = "CAD1,000.12"  
 ```  
   
-##  <a name="money_put__string_type"></a>  money_put::string_type  
+##  <a name="string_type"></a>  money_put::string_type  
  A type that describes a string containing characters of type **CharType**.  
   
 ```  

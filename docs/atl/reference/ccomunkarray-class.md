@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComUnkArray', 'ATLCOM/ATL::CComUnkArray', 'ATLCOM/ATL::CComUnkArray::CComUnkArray', 'ATLCOM/ATL::CComUnkArray::Add', 'ATLCOM/ATL::CComUnkArray::begin', 'ATLCOM/ATL::CComUnkArray::end', 'ATLCOM/ATL::CComUnkArray::GetCookie', 'ATLCOM/ATL::CComUnkArray::GetUnknown', 'ATLCOM/ATL::CComUnkArray::Remove']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
 f1_keywords: 
@@ -55,4 +55,5 @@ int main()
  Such redefinitions are invalid under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).  
   
 ## See Also  
- [(NOTINBUILD)Static Storage-Class Specifiers](http://msdn.microsoft.com/en-us/3ba9289a-a412-4a17-b319-ceb2c087df48)
+
+

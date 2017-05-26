@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CHeapPtr', 'ATLCORE/ATL::CHeapPtr', 'ATLCORE/ATL::CHeapPtr::CHeapPtr', 'ATLCORE/ATL::CHeapPtr::Allocate', 'ATLCORE/ATL::CHeapPtr::Reallocate']

@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -172,7 +172,7 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
  You implement [asynchronous monikers](../mfc/asynchronous-monikers-on-the-internet.md) using the `CAsyncMonikerFile` class. However, ActiveX controls can use the `CDataPathProperty` class, which is derived from `CAsyncMonikerFile`, to help implement asynchronous control properties.  
   
- The ASYNDOWN sample demonstrates how to set up an asynchronous loop using timers to read the data. ASYNDOWN is described in detail in the Knowledge Base article "HOWTO: AsyncDown Demonstrates Asynchronous Data Download" (Q177244) and is available for download from the Microsoft Download Center. (For more information about downloading files from the Microsoft Download Center, see the article "How to Obtain Microsoft Support Files from Online Services" (Q119591) in the Microsoft Knowledge Base.) You can find Knowledge Base articles on the MSDN Library CD-ROM or at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
+ The ASYNDOWN sample demonstrates how to set up an asynchronous loop using timers to read the data. ASYNDOWN is described in detail in the Knowledge Base article "HOWTO: AsyncDown Demonstrates Asynchronous Data Download" (Q177244) and is available for download from the Microsoft Download Center. (For more information about downloading files from the Microsoft Download Center, see the article "How to Obtain Microsoft Support Files from Online Services" (Q119591) in the Microsoft Knowledge Base.) You can find Knowledge Base articles at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
   
  The basic technique used in ASYNDOWN is to set a timer in **CDataPathProperty::OnDataAvailable** to indicate when data is available. When the timer message is received, the application reads in 128-byte blocks of data and fills an edit control. If data is not available when the timer message is handled, the timer is turned off. `OnDataAvailable` turns on the timer if more data arrives later.  
   

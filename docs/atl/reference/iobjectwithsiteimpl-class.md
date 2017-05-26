@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IObjectWithSiteImpl', 'ATLCOM/ATL::IObjectWithSiteImpl', 'ATLCOM/ATL::IObjectWithSiteImpl::GetSite', 'ATLCOM/ATL::IObjectWithSiteImpl::SetChildSite', 'ATLCOM/ATL::IObjectWithSiteImpl::SetSite', 'ATLCOM/ATL::IObjectWithSiteImpl::m_spUnkSite']

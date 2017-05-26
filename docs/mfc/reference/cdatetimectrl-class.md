@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDateTimeCtrl', 'AFXDTCTL/CDateTimeCtrl', 'AFXDTCTL/CDateTimeCtrl::CDateTimeCtrl', 'AFXDTCTL/CDateTimeCtrl::CloseMonthCal', 'AFXDTCTL/CDateTimeCtrl::Create', 'AFXDTCTL/CDateTimeCtrl::GetDateTimePickerInfo', 'AFXDTCTL/CDateTimeCtrl::GetIdealSize', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalColor', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalCtrl', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalFont', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalStyle', 'AFXDTCTL/CDateTimeCtrl::GetRange', 'AFXDTCTL/CDateTimeCtrl::GetTime', 'AFXDTCTL/CDateTimeCtrl::SetFormat', 'AFXDTCTL/CDateTimeCtrl::SetMonthCalColor', 'AFXDTCTL/CDateTimeCtrl::SetMonthCalFont', 'AFXDTCTL/CDateTimeCtrl::SetMonthCalStyle', 'AFXDTCTL/CDateTimeCtrl::SetRange', 'AFXDTCTL/CDateTimeCtrl::SetTime']

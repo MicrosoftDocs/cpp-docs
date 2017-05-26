@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['AFXDB/RFX_Binary', 'AFXDB/RFX_Bool', 'AFXDB/RFX_Byte', 'AFXDB/RFX_Date', 'AFXDB/RFX_Double', 'AFXDB/RFX_Int', 'AFXDB/RFX_Long', 'AFXDB/RFX_LongBinary', 'AFXDB/RFX_Single', 'AFXDB/RFX_Text', 'AFXDB/RFX_Binary_Bulk', 'AFXDB/RFX_Bool_Bulk', 'AFXDB/RFX_Byte_Bulk', 'AFXDB/RFX_Date_Bulk', 'AFXDB/RFX_Double_Bulk', 'AFXDB/RFX_Int_Bulk', 'AFXDB/RFX_Long_Bulk', 'AFXDB/RFX_Single_Bulk', 'AFXDB/RFX_Text_Bulk', 'AFXDB/DFX_Binary', 'AFXDB/DFX_Bool', 'AFXDB/DFX_Byte', 'AFXDB/DFX_Currency', 'AFXDB/DFX_DateTime', 'AFXDB/DFX_Double', 'AFXDB/DFX_Long', 'AFXDB/DFX_LongBinary', 'AFXDB/DFX_Short', 'AFXDB/DFX_Single', 'AFXDB/DFX_Text']

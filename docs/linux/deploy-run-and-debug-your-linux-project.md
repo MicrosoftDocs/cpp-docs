@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/16/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-    - "devlang-cpp"
+ms.technology:  
+  - "cpp-linux"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879

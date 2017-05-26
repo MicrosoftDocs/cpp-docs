@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ctype<char>', 'locale/std::ctype<char>']  
@@ -149,9 +149,9 @@ protected:
   
 -   The protected static member function **classic_table**( returns the ctype mask table appropriate to the "C" locale.  
   
--   There are no protected virtual member functions [do_is](../standard-library/ctype-class.md#ctype__do_is), [do_scan_is](../standard-library/ctype-class.md#ctype__do_scan_is), or [do_scan_not](../standard-library/ctype-class.md#ctype__do_scan_not). The corresponding public member functions perform the equivalent operations themselves.  
+-   There are no protected virtual member functions [do_is](../standard-library/ctype-class.md#do_is), [do_scan_is](../standard-library/ctype-class.md#do_scan_is), or [do_scan_not](../standard-library/ctype-class.md#do_scan_not). The corresponding public member functions perform the equivalent operations themselves.  
   
- The member functions [do_narrow](../standard-library/ctype-class.md#ctype__do_narrow) and [do_widen](../standard-library/ctype-class.md#ctype__do_widen) copy elements unaltered.  
+ The member functions [do_narrow](../standard-library/ctype-class.md#do_narrow) and [do_widen](../standard-library/ctype-class.md#do_widen) copy elements unaltered.  
   
 ## Requirements  
  **Header:** \<locale>  

@@ -536,7 +536,7 @@ template<class InputIterator, class OutputIterator, class BinaryPredicate>
   
  `if (_Pred(*_First + N)) * dest++ = *(_First + N))`  
   
- once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. If `dest` and  `first` designate regions of storage, `dest` must not be in the range `[` `first``,` `last``)`.  
+ once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. If `dest` and  `first` designate regions of storage, `dest` must not be in the range `[ first, last )`.  
   
 ##  <a name="copy_n"></a>  copy_n  
  Copies a specified number of elements.  
@@ -2223,7 +2223,7 @@ bool is_heap(
  Returns `true` if the elements in the specified range form a heap, `false` if they do not.  
   
 ### Remarks  
- The first template function returns [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(` `first``,` `last``) ==` `last`.  
+ The first template function returns [is_heap_until](../standard-library/algorithm-functions.md#is_heap_until)`(` `first ,` `last ) ==` `last`.  
   
  The second template function returns  
   
@@ -2259,7 +2259,7 @@ RandomAccessIterator is_heap_until(
  Returns `end` if the specified range forms a heap or contains one or fewer elements. Otherwise, returns an iterator for the first element found that does not satisfy the heap condition.  
   
 ### Remarks  
- The first template function returns the last iterator `next` in `[``begin``,` `end``]` where `[``begin``, next)` is a heap ordered by the function object `std::less<>`. If the distance `end` `-` `begin` `< 2`, the function returns `end`.  
+ The first template function returns the last iterator `next` in `[ begin , end ]` where `[ begin , next)` is a heap ordered by the function object `std::less<>`. If the distance `end - begin < 2`, the function returns `end`.  
   
  The second template function behaves the same as the first, except that it uses the predicate `compare` instead of `std::less<>` as the heap ordering condition.  
   
@@ -2288,7 +2288,7 @@ bool is_partitioned(
  Returns true when all of the elements in the given range that test `true` for a condition come before any elements that test `false`, and otherwise returns `false`.  
   
 ### Remarks  
- The template function returns `true` only if all elements in `[` `first``,` `last``)` are partitioned by `comp`; that is, all elements `X` in `[` `first``,` `last``)` for which `comp``(X)` is true occur before all elements `Y` for which `comp``(Y)` is `false`.  
+ The template function returns `true` only if all elements in `[` `first ,` `last )` are partitioned by `comp`; that is, all elements `X` in `[` `first ,` `last )` for which `comp (X)` is true occur before all elements `Y` for which `comp (Y)` is `false`.  
   
 ##  <a name="is_permutation"></a>  is_permutation  
  Returns true if both ranges contain the same elements, whether or not the elements are in the same order. Use the dual-range overloads in C++14 code because the overloads that only take a single iterator for the second range will not detect differences if the second range is longer than the first range, and will result in undefined behavior if the second range is shorter than the first range.  
@@ -2433,9 +2433,9 @@ bool is_sorted(
  The condition to test to determine an order between two elements. A predicate takes a single argument and returns `true` or `false`. This performs the same task as `operator<`.  
   
 ### Remarks  
- The first template function returns [is_sorted_until](http://msdn.microsoft.com/en-us/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`(` `first``,` `last``) ==` `last`. The operator< function performs the order comparison.  
+ The first template function returns [is_sorted_until](http://msdn.microsoft.com/en-us/bbad99d0-deaa-4fe6-ae58-eb5b3e4dded0)`( first, last ) == last`. The `operator<` function performs the order comparison.  
   
- The second template function returns `is_sorted_until``(` `first``,` `last``,` `comp``) ==` `last`. The `comp` predicate function performs the order comparison.  
+ The second template function returns `is_sorted_until( first, last , comp ) == last`. The `comp` predicate function performs the order comparison.  
   
 ##  <a name="is_sorted_until"></a>  is_sorted_until  
  Returns a `ForwardIterator` that is set to the last element that is in sorted order from a specified range.  
@@ -2470,9 +2470,9 @@ template<class ForwardIterator, class BinaryPredicate>
  Returns a `ForwardIterator` set to the last element in sorted order. The sorted sequence starts from  `first`.  
   
 ### Remarks  
- The first template function returns the last iterator `next` in `[` `first``,` `last``]` so that `[` `first``, next)` is a sorted sequence ordered by `operator<`. If `distance()` `< 2` the function returns `last`.  
+ The first template function returns the last iterator `next` in `[` `first ,` `last ]` so that `[` `first , next)` is a sorted sequence ordered by `operator<`. If `distance()` `< 2` the function returns `last`.  
   
- The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp``(X, Y)`.  
+ The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp (X, Y)`.  
   
 ##  <a name="iter_swap"></a>  iter_swap  
  Exchanges two values referred to by a pair of specified iterators.  
@@ -3887,18 +3887,18 @@ template<class ForwardIterator, class BinaryPredicate>
   
  `pair<ForwardIterator, ForwardIterator>`  
   
- `(` [min_element](../standard-library/algorithm-functions.md#min_element)(  `first`, `last`), [max_element](../standard-library/algorithm-functions.md#max_element)(  `first`, `last`)).  
+ `(` [min_element](../standard-library/algorithm-functions.md#min_element)`(first, last), `[max_element](../standard-library/algorithm-functions.md#max_element)`(first, last))`.  
   
 ### Remarks  
  The first template function returns  
   
  `pair<ForwardIterator,ForwardIterator>`  
   
- `(min_element(_First,Last),max_element(_First,Last))`.  
+ `(min_element(_First,Last), max_element(_First,Last))`.  
   
- The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp``(X, Y)`.  
+ The second template function behaves the same, except that it replaces `operator<(X, Y)` with `comp (X, Y)`.  
   
- If the sequence is non-empty, the function performs at most `3 * (``last` `-`  `first` `- 1) / 2` comparisons.  
+ If the sequence is non-empty, the function performs at most `3 * (last - first - 1) / 2` comparisons.  
   
 ##  <a name="minmax"></a>  minmax  
  Compares two input parameters and returns them as a pair, in order of lesser to greater.  
@@ -3942,7 +3942,7 @@ template<class Type, class BinaryPredicate>
  The initializer_list that contains the members to be compared.  
   
 ### Remarks  
- The first template function returns `pair<const Type&, const Type&>(``right``,` `left``)` if `right` is less than `left`. Otherwise, it returns `pair<const Type&, const Type&>(``left``,` `right``)`.  
+ The first template function returns `pair<const Type&, const Type&>( right , left )` if `right` is less than `left`. Otherwise, it returns `pair<const Type&, const Type&>( left , right )`.  
   
  The second member function returns a pair where the first element is the lesser and the second is the greater when compared by the predicate `comp`.  
   

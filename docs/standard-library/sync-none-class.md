@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['sync_none', 'allocators/stdext::sync_none', 'stdext::sync_none', 'allocators/stdext::sync_none::allocate', 'allocators/stdext::sync_none::deallocate', 'allocators/stdext::sync_none::equals']  
@@ -53,16 +53,16 @@ class sync_none
   
 |||  
 |-|-|  
-|[allocate](#sync_none__allocate)|Allocates a block of memory.|  
-|[deallocate](#sync_none__deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
-|[equals](#sync_none__equals)|Compares two caches for equality.|  
+|[allocate](#allocate)|Allocates a block of memory.|  
+|[deallocate](#deallocate)|Frees a specified number of objects from storage beginning at a specified position.|  
+|[equals](#equals)|Compares two caches for equality.|  
   
 ## Requirements  
  **Header:** \<allocators>  
   
  **Namespace:** stdext  
   
-##  <a name="sync_none__allocate"></a>  sync_none::allocate  
+##  <a name="allocate"></a>  sync_none::allocate  
  Allocates a block of memory.  
   
 ```
@@ -78,7 +78,7 @@ void *allocate(std::size_t count);
 ### Remarks  
  The member function returns `cache.allocate(count)`, where `cache` is the cache object.  
   
-##  <a name="sync_none__deallocate"></a>  sync_none::deallocate  
+##  <a name="deallocate"></a>  sync_none::deallocate  
  Frees a specified number of objects from storage beginning at a specified position.  
   
 ```
@@ -95,7 +95,7 @@ void deallocate(void* ptr, std::size_t count);
 ### Remarks  
  The member function calls `cache.deallocate(ptr, count)`, where `cache` represents the cache object.  
   
-##  <a name="sync_none__equals"></a>  sync_none::equals  
+##  <a name="equals"></a>  sync_none::equals  
  Compares two caches for equality.  
   
 ```

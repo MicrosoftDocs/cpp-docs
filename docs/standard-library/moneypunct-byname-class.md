@@ -4,8 +4,8 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology:  
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['xlocmon/std::moneypunct_byname', 'moneypunct_byname']  
@@ -58,7 +58,7 @@ protected:
 ```  
   
 ## Remarks  
- Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [moneypunct](../standard-library/moneypunct-class.md#moneypunct__moneypunct)\<CharType, Intl>( `_Refs`).  
+ Its behavior is determined by the named locale `_Locname`. Each constructor initializes its base object with [moneypunct](../standard-library/moneypunct-class.md#moneypunct)\<CharType, Intl>( `_Refs`).  
   
 ## Requirements  
  **Header:** \<locale>  
