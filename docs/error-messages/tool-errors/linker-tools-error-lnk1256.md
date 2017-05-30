@@ -40,7 +40,7 @@ ALINK operation failed : reason
   
  A common reason for LNK1256 is an incorrect version number for an assembly. The value 65535 is not allowed for any part of the assembly version number. The valid range for assembly versions is 0 - 65534.  
   
- LNK1256 can also be caused if ALINK could not find the named key container. Delete the key container and add it again to the strong name CSP by using [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).  
+ LNK1256 can also be caused if ALINK could not find the named key container. Delete the key container and add it again to the strong name CSP by using [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).  
   
  Another reason for LNK1256 is a version mismatch between the linker and Alink.dll. This can be caused by a corrupted Visual Studio installation. Use **Programs and Features** in the Windows Control Panel to repair or reinstall Visual Studio.  
   

@@ -72,7 +72,7 @@ Enables applications and components to use features from the common language run
  /clr:pure is deprecated. A future version of the compiler may not support this option. We recommend that you port code that must be pure MSIL to C#.  
   
  **/clr:safe**  
- Produces an MSIL-only (no native executable code), verifiable output file. **/clr:safe** enables verification diagnostics ([PEVerify Tool (Peverify.exe)](http://msdn.microsoft.com/Library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa)).  
+ Produces an MSIL-only (no native executable code), verifiable output file. **/clr:safe** enables verification diagnostics ([PEVerify Tool (Peverify.exe)](/dotnet/framework/tools/peverify-exe-peverify-tool)).  
   
 
  /clr:safe is deprecated. A future version of the compiler may not support this option. We recommend that you port code that must be pure, verifiable MSIL to C#.  

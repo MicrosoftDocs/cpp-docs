@@ -53,7 +53,7 @@ Demonstrates image manipulation using the [!INCLUDE[winsdklong](../dotnet/includ
 ## Related Sections  
  [Getting Started with Graphics Programming](/dotnet/framework/winforms/advanced/getting-started-with-graphics-programming)  
   
- [About GDI+ Managed Code](http://msdn.microsoft.com/Library/a98a76ab-e455-49c9-891c-0491ac932f2c)  
+ [About GDI+ Managed Code](/dotnet/framework/winforms/advanced/about-gdi-managed-code)  
   
  <xref:System.Drawing?displayProperty=fullName>  
   
