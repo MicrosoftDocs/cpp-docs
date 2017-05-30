@@ -59,7 +59,7 @@ An MFC DLL is a binary file that acts as a shared library of functions that can 
  Once your project is created, you can view the files created in the Solution Explorer. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md).  
   
 ## See Also  
- [Visual C++ Project Types](http://msdn.microsoft.com/library/912b4ba2-7719-43d5-b087-db33e3f9329a)   
+ [Visual C++ Project Types](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)   
  [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Property Pages](../../ide/property-pages-visual-cpp.md)   
  [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
