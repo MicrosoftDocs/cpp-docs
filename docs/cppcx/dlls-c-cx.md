@@ -65,6 +65,4 @@ You can use Visual Studio to create either a standard Win32 DLL or a [!INCLUDE[w
   
 3.  In your source code files, add a `#include` statement for the DLL header file, as needed.  
   
-## See Also  
-
 

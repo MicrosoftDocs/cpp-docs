@@ -48,7 +48,7 @@ While in the [Resource Symbols dialog box](../windows/resource-symbols-dialog-bo
     > [!NOTE]
     >  To change a symbol that *is* assigned to a resource or object, you must use the resource editor or Properties window. For more information, see [Changing a Symbol or Symbol Name](../windows/changing-a-symbol-or-symbol-name-id.md).  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/articles/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
   
  Requirements  
   

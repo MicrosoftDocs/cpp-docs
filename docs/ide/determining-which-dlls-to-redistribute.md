@@ -53,9 +53,9 @@ When you build an application that uses DLLs supplied by Visual Studio, users of
 |msvcp*version*.dll|C++ Standard Library for native code.|Applications that use the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).|  
 |mfc*version*.dll|Microsoft Foundation Classes (MFC) Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md).|  
 |mfc*version*u.dll|MFC Library with Unicode support.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) and require Unicode support.|  
-|mfcmifc80.dll|MFC Managed Interfaces Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/articles/framework/winforms/controls/index).|  
-|mfcm*version*.dll|MFC Managed Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/articles/framework/winforms/controls/index).|  
-|mfcm*version*u.dll|MFC Managed Library with Unicode support.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/articles/framework/winforms/controls/index) and require Unicode support.|  
+|mfcmifc80.dll|MFC Managed Interfaces Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/framework/winforms/controls/index).|  
+|mfcm*version*.dll|MFC Managed Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/framework/winforms/controls/index).|  
+|mfcm*version*u.dll|MFC Managed Library with Unicode support.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/framework/winforms/controls/index) and require Unicode support.|  
   
 > [!NOTE]
 >  You no longer need to redistribute the Active Template Library as a separate DLL. Its functionality has been moved to headers and a static library.  

@@ -39,6 +39,6 @@ If you use C++/CLI, you can continue to use ADO.NET as always. For more informat
 For more information about the history of data access technologies on Microsoft Windows, see [Microsoft Data Access Components (Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Data_Access_Components).  
 
 ## See Also  
- [Data Access](data-access-in-cpp.md)
- [Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)
- [Data Access Technologies Road Map](https://msdn.microsoft.com/en-us/library/ms810810.aspx)
+ [Data Access in Visual C++](../data/data-access-in-cpp.md)  
+ [Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)  
+ [Data Access Technologies Road Map](https://msdn.microsoft.com/en-us/library/ms810810.aspx)  

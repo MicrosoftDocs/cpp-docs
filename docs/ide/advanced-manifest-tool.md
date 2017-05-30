@@ -49,7 +49,7 @@ Use this dialog box to specify advanced options for [Mt.exe](http://msdn.microso
  Specifies the search path for files that are referenced in `<file>` elements. This option also uses the /hashupdate option.  
   
 ## See Also  
- [\<file> Element](http://msdn.microsoft.com/Library/56e3490c-eed5-4841-b1bf-eefe778b6ac9)   
+ [\<file> Element](/visualstudio/deployment/file-element-clickonce-application)   
  [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)   
  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)   
  [Working with Project Properties](../ide/working-with-project-properties.md)   

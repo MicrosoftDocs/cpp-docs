@@ -74,5 +74,5 @@ int main()
 ```  
   
 ## See Also  
- [.NET Framework Regular Expressions](http://msdn.microsoft.com/Library/521b3f6d-f869-42e1-93e5-158c54a6895d)   
+ [.NET Framework Regular Expressions](/dotnet/standard/base-types/regular-expressions)   
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
