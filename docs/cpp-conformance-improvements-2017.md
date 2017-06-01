@@ -537,6 +537,7 @@ To fix the warning, put extern "C" first:
 ```cpp
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
+This warning is off-by-default and only impacts code compiled with  `/Wall /WX`.
 
 ### decltype and calls to deleted destructors
 In previous versions of Visual Studio, the compiler did not detect when a call to a deleted destructor occurred in the context of the expression associated with 'decltype'. In Update Version 15.3, the following code produces  "error C2280: 'A<T>::~A(void)': attempting to reference a deleted function":
@@ -670,9 +671,10 @@ void g()
 ```
 
 To fix the problem, either change the **f(S)** signature or remove it.
+Note that the warning is off-by-default and only affects code compiled with  /Wall or /WX.
 
 ### C5038: order of initialization in initializer lists
-Class members are initialized in the order they are declared, not the order they appear in initializer lists. Previous versions of the compiler did not warn when the order of the initializer list differed from the order of declaration. This could lead to undefined runtime behavior if the intialization of one member depended on another member in the list already being initialized. In the following example, Visual Studio 2017 Update Version 15.3 raises warning C5038 warning C5038: data member 'A::y' will be initialized after data member 'A::x':
+Class members are initialized in the order they are declared, not the order they appear in initializer lists. Previous versions of the compiler did not warn when the order of the initializer list differed from the order of declaration. This could lead to undefined runtime behavior if the intialization of one member depended on another member in the list already being initialized. In the following example, Visual Studio 2017 Update Version 15.3 (with /Wall or /WX) raises warning C5038: data member 'A::y' will be initialized after data member 'A::x':
 
 ```cpp
 struct A
