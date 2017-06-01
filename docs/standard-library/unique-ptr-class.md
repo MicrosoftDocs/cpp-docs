@@ -355,7 +355,7 @@ unique_ptr(unique_ptr<Ty2, Del2>&& right);
 ### Remarks  
  The first two constructors construct an object that manages no resource. The third constructor stores `ptr` in `stored_ptr`. The fourth constructor stores `ptr` in `stored_ptr` and `deleter` in `stored_deleter`.  
   
- The fifth constructor stores `ptr` in `stored_ptr` and moves `deleter` into `stored_deleter`. The sixth and seventh constructors store `right.reset()` in `stored_ptr` and moves `right.get_deleter()` into `stored_deleter`.  
+ The fifth constructor stores `ptr` in `stored_ptr` and moves `deleter` into `stored_deleter`. The sixth and seventh constructors store `right.release()` in `stored_ptr` and moves `right.get_deleter()` into `stored_deleter`.  
   
 ##  <a name="dtorunique_ptr"></a>  unique_ptr ~unique_ptr  
  The destructor for `unique_ptr`, destroys a `unique_ptr` object.  
