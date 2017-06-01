@@ -164,7 +164,7 @@ OLEUIGNRLPROPS m_gp;
 ### Remarks  
  This page shows the type and size of an embedding and allows the user access to the Convert dialog box. This page also shows the link destination if the object is a link.  
   
- For more information on the **OLEUIGNRLPROPS** structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on the **OLEUIGNRLPROPS** structure, see the Windows SDK.  
   
 ##  <a name="m_lp"></a>  COlePropertiesDialog::m_lp  
  A structure of type [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735), used to initialize the Link page of the OLE Object Properties dialog box.  
@@ -176,7 +176,7 @@ OLEUILINKPROPS m_lp;
 ### Remarks  
  This page shows the location of the linked item and allows the user to update, or break, the link to the item.  
   
- For more information on the **OLEUILINKPROPS** structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on the **OLEUILINKPROPS** structure, see the Windows SDK.  
   
 ##  <a name="m_op"></a>  COlePropertiesDialog::m_op  
  A structure of type [OLEUIOBJECTPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687199), used to initialize the common OLE Object Properties dialog box.  
@@ -188,7 +188,7 @@ OLEUIOBJECTPROPS m_op;
 ### Remarks  
  This structure contains members used to initialize the General, Link, and View pages.  
   
- For more information, see the **OLEUIOBJECTPROPS** and [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735) structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the **OLEUIOBJECTPROPS** and [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735) structures in the Windows SDK.  
   
 ##  <a name="m_psh"></a>  COlePropertiesDialog::m_psh  
  A structure of type [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546), whose members store the characteristics of the dialog object.  
@@ -202,7 +202,7 @@ PROPSHEETHEADER m_psh;
   
  If you modify the `m_psh` data member directly, you will override any default behavior.  
   
- For more information on the **PROPSHEETHEADER** structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on the **PROPSHEETHEADER** structure, see the Windows SDK.  
   
 ##  <a name="m_vp"></a>  COlePropertiesDialog::m_vp  
  A structure of type [OLEUIVIEWPROPS](http://msdn.microsoft.com/library/windows/desktop/ms693751), used to initialize the View page of the OLE Object Properties dialog box.  
@@ -214,7 +214,7 @@ OLEUIVIEWPROPS m_vp;
 ### Remarks  
  This page allows the user to toggle between "content" and "iconic" views of the object, and change its scaling within the container. It also allows the user access to the Change Icon dialog box when the object is being displayed as an icon.  
   
- For more information on the **OLEUIVIEWPROPS** structure, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on the **OLEUIVIEWPROPS** structure, see the Windows SDK.  
   
 ##  <a name="onapplyscale"></a>  COlePropertiesDialog::OnApplyScale  
  Called by the framework when the scaling value has changed and either OK or Apply was selected.  

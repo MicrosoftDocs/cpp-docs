@@ -46,7 +46,7 @@ After creating the tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)),
   
 3.  Repeat steps 1 and 2 for additional tab items.  
   
- For more information, see [Creating a Tab Control](http://msdn.microsoft.com/library/windows/desktop/bb760550) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For more information, see [Creating a Tab Control](http://msdn.microsoft.com/library/windows/desktop/bb760550) in the Windows SDK.  
   
 ## See Also  
  [Using CTabCtrl](../mfc/using-ctabctrl.md)   

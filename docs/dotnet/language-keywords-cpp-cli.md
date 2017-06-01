@@ -33,9 +33,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Language Keywords (C++/CLI)
-Several language keywords changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+Several language keywords changed from Managed Extensions for C++ to Visual C++.  
   
- In the new [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] syntax, the double underscore is removed as a prefix from all keywords (with one exception: `__identifier` is retained). For example, a property is now declared as `property`, not `__property`.  
+ In the new Visual C++ syntax, the double underscore is removed as a prefix from all keywords (with one exception: `__identifier` is retained). For example, a property is now declared as `property`, not `__property`.  
   
  There were two primary reasons for using the double-underscore prefix in Managed Extensions:  
   

@@ -21,10 +21,10 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Threading and Marshaling (C++/CX)
-In the vast majority of cases, instances of [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] classes, like standard C++ objects, can be accessed from any thread. Such classes are referred to as "agile". However, a small number of [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] classes that ship with Windows are non-agile, and must be consumed more like COM objects than standard C++ objects. You don't need to be a COM expert to use non-agile classes, but you do need to take into consideration the class's threading model and its marshaling behavior. This article provides background and guidance for those rare scenarios in which you need to consume an instance of a non-agile class.  
+In the vast majority of cases, instances of Windows Runtime classes, like standard C++ objects, can be accessed from any thread. Such classes are referred to as "agile". However, a small number of Windows Runtime classes that ship with Windows are non-agile, and must be consumed more like COM objects than standard C++ objects. You don't need to be a COM expert to use non-agile classes, but you do need to take into consideration the class's threading model and its marshaling behavior. This article provides background and guidance for those rare scenarios in which you need to consume an instance of a non-agile class.  
   
 ## Threading model and marshaling behavior  
- A [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] class can support concurrent thread access in various ways, as indicated by two attributes that are applied to it:  
+ A Windows Runtime class can support concurrent thread access in various ways, as indicated by two attributes that are applied to it:  
   
 -   `ThreadingModel` attribute can have one of the values—STA, MTA, or Both, as defined by the `ThreadingModel` enumeration.  
   
@@ -32,7 +32,7 @@ In the vast majority of cases, instances of [!INCLUDE[wrt](../cppcx/includes/wrt
   
  The `ThreadingModel` attribute specifies where the class is loaded when activated: only in a user-interface thread (STA) context, only in a background thread (MTA) context, or in the context of the thread that creates the object (Both). The `MarshallingBehavior` attribute values refer to how the object behaves in the various threading contexts; in most cases, you don’t have to understand these values in detail.  Of the classes that are provided by the Windows API, about 90 percent have `ThreadingModel`=Both and `MarshallingType`=Agile. This means that they can handle low-level threading details transparently and efficiently.   When you use `ref new` to create an "agile" class, you can call methods on it from your main app thread or from one or more worker threads.  In other words, you can use an agile class—no matter whether it's provided by Windows or by a third party—from anywhere in your code. You don’t have to be concerned with the class’s threading model or marshaling behavior.  
   
-## Consuming [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components  
+## Consuming Windows Runtime components  
  When you create a Universal Windows Platform app, you might interact with both agile and non-agile components. When you interact with non-agile components, you may encounter the following warning.  
   
 ### Compiler warning when consuming non-agile classes (C4451)  
@@ -95,14 +95,14 @@ ref class MyOptions
   
  Notice that `Agile` cannot be passed as a return value or parameter in a ref class. The `Agile<T>::Get()` method returns a handle-to-object (^) that you can pass across the application binary interface (ABI) in a public method or property.  
   
- In Visual C++, when you create a reference to an in-proc [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] class that has a marshaling behavior of "None", the compiler issues warning C4451 but doesn't suggest that you consider using `Platform::Agile<T>`.  The compiler can't offer any help beyond this warning, so it's your responsibility to use the class correctly and ensure that your code calls STA components only from the user-interface thread, and MTA components only from a background thread.  
+ In Visual C++, when you create a reference to an in-proc Windows Runtime class that has a marshaling behavior of "None", the compiler issues warning C4451 but doesn't suggest that you consider using `Platform::Agile<T>`.  The compiler can't offer any help beyond this warning, so it's your responsibility to use the class correctly and ensure that your code calls STA components only from the user-interface thread, and MTA components only from a background thread.  
   
-## Authoring agile [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components  
+## Authoring agile Windows Runtime components  
  When you define a ref class in C++/CX, it's agile by default—that is, it has `ThreadingModel`=Both and `MarshallingType`=Agile.  If you're using the [!INCLUDE[cppwrl](../cppcx/includes/cppwrl-md.md)], you can make your class agile by deriving from `FtmBase`, which uses the `FreeThreadedMarshaller`.  If you author a class that has `ThreadingModel`=Both or `ThreadingModel`=MTA, make sure that the class is thread-safe. For more information, see [Create and Consume Objects (WRL)](http://msdn.microsoft.com/en-us/d5e42216-e888-4f1f-865a-b5ccd0def73e).  
   
  You can modify the threading model and marshaling behavior of a ref class. However, if you make changes that render the class non-agile, you must understand the implications that are associated with those changes.  
   
- The following example shows how to apply `MarshalingBehavior` and `ThreadingModel` attributes to a runtime class in a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] class library. When an app uses the DLL and uses the `ref new` keyword to activate a `MySTAClass` class object, the object is activated in a single-threaded apartment and doesn't support marshaling.  
+ The following example shows how to apply `MarshalingBehavior` and `ThreadingModel` attributes to a runtime class in a Windows Runtime class library. When an app uses the DLL and uses the `ref new` keyword to activate a `MySTAClass` class object, the object is activated in a single-threaded apartment and doesn't support marshaling.  
   
 ```  
 using namespace Windows::Foundation::Metadata;  
@@ -122,7 +122,7 @@ public ref class MySTAClass
   
 -   The values of the `ThreadingModel` and `MarshallingBehavior` attributes in the derived class don't match those in the base class.  
   
- The threading and marshaling information that's required by a third-party [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component is specified in the app manifest registration information for the component. We recommend that you make all of your [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components agile. This ensures that client code can call your component from any thread in the app, and improves the performance of those calls because they are direct calls that have no marshaling. If you author your class in this way, then client code doesn't have to use `Platform::Agile<T>` to consume your class.  
+ The threading and marshaling information that's required by a third-party Windows Runtime component is specified in the app manifest registration information for the component. We recommend that you make all of your Windows Runtime components agile. This ensures that client code can call your component from any thread in the app, and improves the performance of those calls because they are direct calls that have no marshaling. If you author your class in this way, then client code doesn't have to use `Platform::Agile<T>` to consume your class.  
   
 ## See Also  
  [ThreadingModel](http://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)   

@@ -46,7 +46,7 @@ When an Automation client creates or activates an OLE item, the server passes th
   
  Sometimes circumstances force the server to terminate while a client still has a reference to an object. For example, a resource on which the server depends may become unavailable, causing the server to encounter an error. The user may also close a server document that contains objects to which other applications have references.  
   
- In the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)], see `IUnknown::AddRef` and `IUnknown::Release`.  
+ In the Windows SDK, see `IUnknown::AddRef` and `IUnknown::Release`.  
   
 ## See Also  
  [Automation Servers](../mfc/automation-servers.md)   

@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Value Type Semantics
-Value type semantics have changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+Value type semantics have changed from Managed Extensions for C++ to Visual C++.  
   
  Here is the canonical simple value type used in the Managed Extensions for C++ spec:  
   

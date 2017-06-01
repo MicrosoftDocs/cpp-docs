@@ -41,7 +41,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Declaration of a Managed Class Type
-The way to declare a reference class type changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The way to declare a reference class type changed from Managed Extensions for C++ to Visual C++.  
   
  In Managed Extensions, a reference class type is prefaced with the `__gc` keyword. In the new syntax, the `__gc` keyword is replaced by one of two spaced keywords: `ref class` or `ref struct`. The choice of `struct` or `class` indicates the public (for `struct`) or private (for `class`) default access level of its members declared in an initial unlabeled section of the body of the type.  
   

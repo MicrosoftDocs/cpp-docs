@@ -41,7 +41,7 @@ Error spawning 'command line'.
   
  Possible reasons for this error:  
   
--   Your project depends on ATL Server. Beginning with [!INCLUDE[vs_orcas_long](../../atl/reference/includes/vs_orcas_long_md.md)], ATL Server is no longer included as part of Visual Studio, but has been released as a shared-source project at CodePlex. To download the ATL Server source code and tools, go to [http://go.microsoft.com/fwlink/?LinkID=81979](http://go.microsoft.com/fwlink/?LinkID=81979).  
+-   Your project depends on ATL Server. Beginning with Visual Studio 2008, ATL Server is no longer included as part of Visual Studio, but has been released as a shared-source project at CodePlex. To download the ATL Server source code and tools, go to [http://go.microsoft.com/fwlink/?LinkID=81979](http://go.microsoft.com/fwlink/?LinkID=81979).  
   
 -   Low system resources. Close some applications to resolve this.  
   

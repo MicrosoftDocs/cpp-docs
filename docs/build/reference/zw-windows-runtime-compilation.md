@@ -58,9 +58,9 @@ Compiles source code to support [!INCLUDE[cppwrt](../../build/reference/includes
 ## Remarks  
  When you specify the **/ZW** option, the compiler supports these features:  
   
--   The required metadata files, namespaces, data types, and functions that your app requires to execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+-   The required metadata files, namespaces, data types, and functions that your app requires to execute in the Windows Runtime.  
   
--   Automatic reference-counting of [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)] objects, and automatic discarding of an object when its reference count goes to zero.  
+-   Automatic reference-counting of Windows Runtime objects, and automatic discarding of an object when its reference count goes to zero.  
   
  Because the incremental linker does not support the Windows metadata included in .obj files by using the **/ZW** option, the [/Gm (Enable Minimal Rebuild)](../../build/reference/gm-enable-minimal-rebuild.md) option is incompatible with **/ZW**.  
   

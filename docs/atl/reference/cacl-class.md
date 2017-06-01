@@ -98,9 +98,9 @@ class CAcl
   
  An object can also have system-level security information associated with it, in the form of a system ACL controlled by a system administrator. A system ACL can allow the system administrator to audit any attempts to gain access to an object.  
   
- For more details, see the [ACL](http://msdn.microsoft.com/library/windows/desktop/aa374872) discussion in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more details, see the [ACL](http://msdn.microsoft.com/library/windows/desktop/aa374872) discussion in the Windows SDK.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  

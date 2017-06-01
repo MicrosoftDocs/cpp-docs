@@ -111,7 +111,7 @@ class CContainedWindowT : public TBase
 |Creating controls|[ATL Tutorial](../../atl/active-template-library-atl-tutorial.md)|  
 |Using windows in ATL|[ATL Window Classes](../../atl/atl-window-classes.md)|  
 |ATL Project Wizard|[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)|  
-|Windows|[Windows](http://msdn.microsoft.com/library/windows/desktop/ms632595) and subsequent topics in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]|  
+|Windows|[Windows](http://msdn.microsoft.com/library/windows/desktop/ms632595) and subsequent topics in the Windows SDK|  
   
 ## Inheritance Hierarchy  
  `TBase`  
@@ -216,10 +216,10 @@ HWND Create(
  [in] Specifies the name of the window. The default value is **NULL**.  
   
  `dwStyle`  
- [in] The style of the window. The default value is **WS_CHILD &#124; WS_VISIBLE**. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] The style of the window. The default value is **WS_CHILD &#124; WS_VISIBLE**. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
   
  `dwExStyle`  
- [in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `MenuOrID`  
  [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.  

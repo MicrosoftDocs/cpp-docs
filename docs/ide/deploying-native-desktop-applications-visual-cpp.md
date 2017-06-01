@@ -41,9 +41,9 @@ translation.priority.mt:
 # Deploying Native Desktop Applications (Visual C++)
 Deployment is the process by which you distribute a finished application or component to be installed on other computers. Deployment planning starts when an application is created on a developer's computer. Deployment ends when the application is installed and ready to run on a user's computer.  
   
- Visual Studio provides different technologies for deploying Windows applications. These include [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] deployment and Windows Installer deployment.  
+ Visual Studio provides different technologies for deploying Windows applications. These include ClickOnce deployment and Windows Installer deployment.  
   
--   [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] can be used to deploy C++ applications that target the common language runtime (CLR)—mixed, pure, and verifiable assemblies. Although you can use Windows Installer to deploy a managed application, we recommend that you use [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] because it takes advantage of .NET Framework security features such as manifest signing. [!INCLUDE[ndptecclick](../ide/includes/ndptecclick_md.md)] does not support deployment of native C++ applications. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md).  
+-   ClickOnce can be used to deploy C++ applications that target the common language runtime (CLR)—mixed, pure, and verifiable assemblies. Although you can use Windows Installer to deploy a managed application, we recommend that you use ClickOnce because it takes advantage of .NET Framework security features such as manifest signing. ClickOnce does not support deployment of native C++ applications. For more information, see [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md).  
   
 -   Windows Installer technology can be used to deploy either native C++ applications or C++ applications that target the CLR.  
   

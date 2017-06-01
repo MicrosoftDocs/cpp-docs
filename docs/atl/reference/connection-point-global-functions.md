@@ -36,7 +36,7 @@ translation.priority.ht:
 These functions provide support for connection points and sink maps.  
   
 > [!IMPORTANT]
->  The functions listed in the following table cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.  
   
 |||  
 |-|-|  
@@ -51,7 +51,7 @@ These functions provide support for connection points and sink maps.
  Creates a connection between an object's connection point and a client's sink.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 HRESULT    AtlAdvise(
@@ -87,7 +87,7 @@ HRESULT    AtlAdvise(
  Terminates the connection established through [AtlAdvise](#atladvise).  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 HRESULT    AtlUnadvise(
@@ -116,7 +116,7 @@ HRESULT    AtlUnadvise(
  Call this function to advise or unadvise all entries in the object's sink event map.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);

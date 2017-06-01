@@ -103,7 +103,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   **new and delete** In previous versions of the library, the implementation-defined operator new and delete functions were exported from the runtime library DLL (for example, msvcr120.dll). These operator functions are now always statically linked into your binaries, even when using the runtime library DLLs.  
   
-     This is not a breaking change for native or mixed code (/clr), however for code compiled as [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md), this might cause your code to fail to compile. If you compile code as /clr:pure, you may need to add #include \<new> or #include \<new.h> to work around build errors due to this change. Note that /clr:pure is deprecated in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)] and might be removed in future releases.  
+     This is not a breaking change for native or mixed code (/clr), however for code compiled as [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md), this might cause your code to fail to compile. If you compile code as /clr:pure, you may need to add #include \<new> or #include \<new.h> to work around build errors due to this change. Note that /clr:pure is deprecated in Visual Studio 2015 and might be removed in future releases.  
   
 #### \<process.h>  
   
@@ -254,7 +254,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
 ####  <a name="BK_STL"></a> C++ Standard Library  
  To enable new optimizations and debugging checks, the Visual Studio implementation of the C++ Standard Library intentionally breaks binary compatibility from one version to the next. Therefore, when the C++ Standard Library is used, object files and static libraries that are compiled by using different versions can't be mixed in one binary (EXE or DLL), and C++ Standard Library objects can't be passed between binaries that are compiled by using different versions. Such mixing emits linker errors about _MSC_VER mismatches. (_MSC_VER is the macro that contains the compiler's major version—for example, 1800 for Visual Studio 2013.) This check cannot detect DLL mixing, and cannot detect mixing that involves Visual C++ 2008 or earlier.  
   
--   **C++ Standard Library include files** Some changes have been made to the include structure in the C++ Standard Library headers. C++ Standard Library headers are allowed to include each other in unspecified ways. In general, you should write your code so that it carefully includes all of the headers that it needs according to the C++ standard and doesn't rely on which C++ Standard Library headers include which other C++ Standard Library headers. This makes code portable across versions and platforms. At least two header changes in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)] affect user code. First, \<string> no longer includes \<iterator>. Second, \<tuple> now declares std::array without including all of \<array>, which can break code through the following combination of code constructs: your code has a variable named "array", and you have a using-directive "using namespace std;", and you include a C++ Standard Library header (such as \<functional>) that includes \<tuple>, which now declares std::array.  
+-   **C++ Standard Library include files** Some changes have been made to the include structure in the C++ Standard Library headers. C++ Standard Library headers are allowed to include each other in unspecified ways. In general, you should write your code so that it carefully includes all of the headers that it needs according to the C++ standard and doesn't rely on which C++ Standard Library headers include which other C++ Standard Library headers. This makes code portable across versions and platforms. At least two header changes in Visual Studio 2015 affect user code. First, \<string> no longer includes \<iterator>. Second, \<tuple> now declares std::array without including all of \<array>, which can break code through the following combination of code constructs: your code has a variable named "array", and you have a using-directive "using namespace std;", and you include a C++ Standard Library header (such as \<functional>) that includes \<tuple>, which now declares std::array.  
   
 -   **steady_clock** The \<chrono> implementation of [steady_clock](../standard-library/steady-clock-struct.md) has changed to meet the C++ Standard requirements for steadiness and monotonicity. steady_clock is now based on [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and high_resolution_clock is now a typedef for steady_clock. As a result, in Visual C++ steady_clock::time_point is now a typedef for chrono::time_point<steady_clock>; however, this is not necessarily the case for other implementations.  
   
@@ -274,7 +274,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   **std::allocator::deallocate** In Visual C++ 2013 and earlier, std::allocator::deallocate(p, n) ignored the argument passed in for n.  The C++ standard has always required that n be equal to the value passed as the first argument to the invocation of allocate which returned p. However, in the current version, the value of n is inspected. Code that passes arguments for n that differ from what the standard requires might crash at runtime.  
   
--   **hash_map and hash_set** The non-standard header files hash_map and hash_set are deprecated in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)] and will be removed in a future release. Use unordered_map and unordered_set instead.  
+-   **hash_map and hash_set** The non-standard header files hash_map and hash_set are deprecated in Visual Studio 2015 and will be removed in a future release. Use unordered_map and unordered_set instead.  
   
 -   **comparators and operator()** Associative containers (the \<map> family) now require their comparators to have const-callable function call operators. The following code in a comparator class declaration now fails to compile:  
   
@@ -288,7 +288,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
     bool operator()(const X& a, const X& b) const  
     ```  
   
--   **type traits** The old names for type traits from an earlier version of the C++ draft standard have been removed. These were changed in C++11 and have been updated to the C++11 values in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)]. The following table shows the old and new names.  
+-   **type traits** The old names for type traits from an earlier version of the C++ draft standard have been removed. These were changed in C++11 and have been updated to the C++11 values in Visual Studio 2015. The following table shows the old and new names.  
   
     |Old name|New name|  
     |--------------|--------------|  
@@ -858,7 +858,7 @@ When you upgrade to a new version of the Visual C++ compiler, you might encounte
   
 -   **Copy constructors**  
   
-     In both [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] and [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], the compiler generates a copy constructor for a class if that class has a user-defined move constructor but no user-defined copy constructor. In Dev14, this implicitly generated copy constructor is also marked "= delete".  
+     In both [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] and Visual Studio 2015, the compiler generates a copy constructor for a class if that class has a user-defined move constructor but no user-defined copy constructor. In Dev14, this implicitly generated copy constructor is also marked "= delete".  
 
 <!--From here to VS_Update1 added 04/21/2017-->
 

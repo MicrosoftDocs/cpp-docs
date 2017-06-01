@@ -40,7 +40,7 @@ This article and two companion articles explain several issues in Windows Socket
  If you use or derive from class [CAsyncSocket](../mfc/reference/casyncsocket-class.md), you will need to manage these issues yourself. If you use or derive from class [CSocket](../mfc/reference/csocket-class.md), MFC manages them for you.  
   
 ## Converting Strings  
- If you communicate between applications that use strings stored in different wide-character formats, such as Unicode or multibyte character sets (MBCS), or between one of these and an application using ANSI character strings, you must manage the conversions yourself under `CAsyncSocket`. The `CArchive` object used with a `CSocket` object manages this conversion for you through the capabilities of class [CString](../atl-mfc-shared/reference/cstringt-class.md). For more information, see the Windows Sockets specification, located in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ If you communicate between applications that use strings stored in different wide-character formats, such as Unicode or multibyte character sets (MBCS), or between one of these and an application using ANSI character strings, you must manage the conversions yourself under `CAsyncSocket`. The `CArchive` object used with a `CSocket` object manages this conversion for you through the capabilities of class [CString](../atl-mfc-shared/reference/cstringt-class.md). For more information, see the Windows Sockets specification, located in the Windows SDK.  
   
  For more information, see:  
   

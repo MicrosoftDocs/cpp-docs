@@ -39,7 +39,7 @@ translation.priority.ht:
  This feature is not supported in all runtimes.  
   
 ## Windows Runtime  
- This feature is not supported in the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+ This feature is not supported in the Windows Runtime.  
   
 ### Requirements  
  Compiler option: **/ZW**  

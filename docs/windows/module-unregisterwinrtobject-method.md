@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Module::UnregisterWinRTObject Method
-Unregisters one or more [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so that other applications cannot connect to them.  
+Unregisters one or more Windows Runtime objects so that other applications cannot connect to them.  
   
 ## Syntax  
   

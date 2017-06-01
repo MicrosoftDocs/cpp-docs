@@ -66,7 +66,7 @@ Checks the validity of restrictions against a schema rowset.
   
  `CheckRestrictions` determines if the consumer is calling [GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) with the correct restriction and the correct restriction type (for example, a `VT_BSTR` for a string) that the provider supports. It also determines if the correct number of restrictions are supported. By default, `CheckRestrictions` will ask the provider, through the [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) call, which restrictions it supports on a given rowset. It then compares the restrictions from the consumer against those supported by the provider and either succeeds or fails.  
   
- For more information on schema rowsets, see [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on schema rowsets, see [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
 ## Requirements  
  **Header:** atldb.h  

@@ -37,7 +37,7 @@ translation.priority.ht:
 This class implements **IUnknown** and allows an object to save its properties to a client-supplied property bag.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -84,7 +84,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ```  
   
 ### Remarks  
- See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the Windows SDK.  
   
 ##  <a name="initnew"></a>  IPersistPropertyBagImpl::InitNew  
  Initializes a newly created object.  
@@ -97,7 +97,7 @@ STDMETHOD(InitNew)();
  Returns `S_OK`.  
   
 ### Remarks  
- See [IPersistPropertyBag::InitNew](https://msdn.microsoft.com/library/aa768204.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistPropertyBag::InitNew](https://msdn.microsoft.com/library/aa768204.aspx) in the Windows SDK.  
   
 ##  <a name="load"></a>  IPersistPropertyBagImpl::Load  
  Loads the object's properties from a client-supplied property bag.  
@@ -109,7 +109,7 @@ STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
 ### Remarks  
  ATL uses the object's property map to retrieve this information.  
   
- See [IPersistPropertyBag::Load](https://msdn.microsoft.com/library/aa768206.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistPropertyBag::Load](https://msdn.microsoft.com/library/aa768206.aspx) in the Windows SDK.  
   
 ##  <a name="save"></a>  IPersistPropertyBagImpl::Save  
  Saves the object's properties into a client-supplied property bag.  
@@ -124,7 +124,7 @@ STDMETHOD(Save)(
 ### Remarks  
  ATL uses the object's property map to store this information. By default, this method saves all properties, regardless of the value of *fSaveAllProperties*.  
   
- See [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) in the Windows SDK.  
   
 ## See Also  
  [BEGIN_PROP_MAP](property-map-macros.md#begin_prop_map)   

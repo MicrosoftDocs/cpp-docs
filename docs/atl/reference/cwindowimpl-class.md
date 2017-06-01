@@ -38,7 +38,7 @@ translation.priority.ht:
 Provides methods for creating or subclassing a window.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -155,10 +155,10 @@ HWND Create(
  [in] Specifies the name of the window. The default value is **NULL**.  
   
  `dwStyle`  
- [in] The style of the window. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] The style of the window. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
   
  `dwExStyle`  
- [in] The extended window style. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] The extended window style. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `MenuOrID`  
  [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.  

@@ -69,7 +69,7 @@ translation.priority.mt:
   
  For readability purposes, you may want to limit your use of context-sensitive keywords as user-defined symbols.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
  (There are no platform-specific remarks for this feature.)  
@@ -77,7 +77,7 @@ translation.priority.mt:
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  (There are no platform-specific remarks for this feature.)  

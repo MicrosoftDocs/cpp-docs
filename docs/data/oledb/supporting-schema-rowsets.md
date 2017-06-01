@@ -103,7 +103,7 @@ class CUpdateSessionTRSchemaRowset :
   
  Note that `CUpdateSession` inherits from `IDBSchemaRowsetImpl`, so it has all the restriction handling methods. Using `CSchemaRowsetImpl`, declare three child classes (listed in the schema map above): `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, and `CUpdateSessionPTSchemaRowset`. Each of these child classes has an `Execute` method that handles its respective set of restrictions (search criteria). Each `Execute` method compares the values of the `cRestrictions` and `rgRestrictions` parameters. See the description of these parameters in [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md).  
   
- For more information about which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ For more information about which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
  For example, if you supported the **TABLE_NAME** restriction on `DBSCHEMA_TABLES`, you would do the following:  
   

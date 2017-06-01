@@ -237,7 +237,7 @@ MemoryBlock& operator=(MemoryBlock&& other)
 ```  
   
 ## Example  
- The following example shows how move semantics can improve the performance of your applications. The example adds two elements to a vector object and then inserts a new element between the two existing elements. In [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], the `vector` class uses move semantics to perform the insertion operation efficiently by moving the elements of the vector instead of copying them.  
+ The following example shows how move semantics can improve the performance of your applications. The example adds two elements to a vector object and then inserts a new element between the two existing elements. In Visual C++ 2010, the `vector` class uses move semantics to perform the insertion operation efficiently by moving the elements of the vector instead of copying them.  
   
 ```cpp  
 // rvalue-references-move-semantics.cpp  
@@ -282,7 +282,7 @@ In ~MemoryBlock(). length = 50. Deleting resource.
 In ~MemoryBlock(). length = 75. Deleting resource.  
 ```  
   
- Before [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], this example produces the following output:  
+ Before Visual C++ 2010, this example produces the following output:  
   
 ```  
 In MemoryBlock(size_t). length = 25.  

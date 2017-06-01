@@ -37,7 +37,7 @@ translation.priority.ht:
 # Building C++ Projects in Visual Studio
 In the Visual Studio integrated development environment (IDE), there are several ways to build an entire solution or just one project in it. You can also modify build settings and specify custom build steps to make your development process more efficient.  
   
- To build a solution that's open in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] and selected in **Solution Explorer**, you can:  
+ To build a solution that's open in Visual Studio and selected in **Solution Explorer**, you can:  
   
 -   On the menu bar, choose **Build**, **Build Solution**.  
   

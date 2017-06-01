@@ -131,7 +131,7 @@ BOOL CreateStockObject(int nIndex);
   
 ### Parameters  
  `nIndex`  
- A constant specifying the type of stock object desired. See the parameter *fnObject* for [GetStockObject](http://msdn.microsoft.com/library/windows/desktop/dd144925) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a description of appropriate values.  
+ A constant specifying the type of stock object desired. See the parameter *fnObject* for [GetStockObject](http://msdn.microsoft.com/library/windows/desktop/dd144925) in the Windows SDK for a description of appropriate values.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  

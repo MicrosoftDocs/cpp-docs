@@ -32,13 +32,13 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # WRL Class Library Project Template
-If you use Visual Studio to write a [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) project, you can greatly simplify your task by downloading the WRL Class Library project template.  
+If you use Visual Studio to write a Windows Runtime C++ Template Library (WRL)project, you can greatly simplify your task by downloading the WRL Class Library project template.  
   
 > [!NOTE]
 >  If you have to manually update the project settings for an existing project, see [DLLs (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh699881\(v=vs.110\).aspx).  
   
 ## Download the WRL Project Template  
- Visual Studio doesn't provide a template for [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] projects. Here’s how to download a project template that creates a basic class library for Universal Windows Platform apps with [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)].  
+ Visual Studio doesn't provide a template for Windows Runtime C++ Template Library projects. Here’s how to download a project template that creates a basic class library for Universal Windows Platform apps with Windows Runtime C++ Template Library.  
   
 #### To download the WRL Project Template  
   
@@ -53,7 +53,7 @@ If you use Visual Studio to write a [!INCLUDE[cppwrl](../windows/includes/cppwrl
 5.  After the template installs, create a project by choosing **File**, **New Project**, and then selecting the `WRLClassLibrary` template. The project creates a DLL.  
   
 ## Examples that use the project template  
- Read [Walkthrough: Creating a Basic Windows Runtime Component](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md) for an example that uses this template to create a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] component.  
+ Read [Walkthrough: Creating a Basic Windows Runtime Component](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md) for an example that uses this template to create a Windows Runtime component.  
   
 ## What the project template provides  
  The project template provides:  

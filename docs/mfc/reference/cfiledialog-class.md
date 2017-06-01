@@ -147,7 +147,7 @@ class CFileDialog : public CCommonDialog
   
  The windows messages for the `CFileDialog` class vary based on what operating system you are using. For example, Windows XP does not support [CDialog::OnCancel](../../mfc/reference/cdialog-class.md#oncancel) and [CDialog::OnOK](../../mfc/reference/cdialog-class.md#onok) for the `CFileDialog` class. However, [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] does support them. For more information about the different messages that are generated and the order in which they are received, see [CFileDialog Sample: Logging Event Order](../../visual-cpp-samples.md).  
   
- To use a `CFileDialog` object, first create the object by using the `CFileDialog` constructor. After the dialog box has been constructed, you can set or modify any values in the [CFileDialog::m_ofn](#m_ofn) structure to initialize the values or states of the dialog box controls. The `m_ofn` structure is of type `OPENFILENAME`. For more information, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ To use a `CFileDialog` object, first create the object by using the `CFileDialog` constructor. After the dialog box has been constructed, you can set or modify any values in the [CFileDialog::m_ofn](#m_ofn) structure to initialize the values or states of the dialog box controls. The `m_ofn` structure is of type `OPENFILENAME`. For more information, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the Windows SDK.  
   
  After you initialize the dialog box controls, call the [CFileDialog::DoModal](#domodal) method to display the dialog box so that the user can type the path and file name. `DoModal` returns whether the user clicked the OK (IDOK) or the Cancel (IDCANCEL) button. If `DoModal` returns IDOK, you can use one of the `CFileDialog` public member functions to retrieve the information put in by the user.  
   
@@ -418,7 +418,7 @@ explicit CFileDialog(
  The initial file name that appears in the Filename box. If `NULL`, no initial file name appears.  
   
  [in] `dwFlags`  
- A combination of one or more flags that you can use to customize the dialog box. For a description of these flags, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. If you modify the `m_ofn.Flags` structure member, use a bitwise-OR operator in your changes to keep the default behavior intact.  
+ A combination of one or more flags that you can use to customize the dialog box. For a description of these flags, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the Windows SDK. If you modify the `m_ofn.Flags` structure member, use a bitwise-OR operator in your changes to keep the default behavior intact.  
   
  [in] `lpszFilter`  
  A series of string pairs that specify filters you can apply to the file. If you specify file filters, only files that match filter criteria will appear in the Files list. See the Remarks section for more information about how to work with file filters.  
@@ -453,7 +453,7 @@ explicit CFileDialog(
   
  However, if you plan to use this string to directly update the `OPENFILENAME` structure, you should delimit your strings with the null character, '\0', instead of the vertical bars ('&#124;').  
   
- The `bVistaStyle` parameter is applicable only when running under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Under earlier versions of Windows, this parameter is ignored. If `bVistaStyle` is set to `TRUE`, when you compile a program with [!INCLUDE[vs_orcas_long](../../atl/reference/includes/vs_orcas_long_md.md)] or later, the new Vista style **File Dialog** will be used. Otherwise, the previous MFC style **File Dialog** will be used.  
+ The `bVistaStyle` parameter is applicable only when running under [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)]. Under earlier versions of Windows, this parameter is ignored. If `bVistaStyle` is set to `TRUE`, when you compile a program with Visual Studio 2008 or later, the new Vista style **File Dialog** will be used. Otherwise, the previous MFC style **File Dialog** will be used.  
   
  Dialog templates are not supported on dialogs based on `bVistaStyle`  
   
@@ -902,7 +902,7 @@ BOOL IsPickFoldersMode() const;
   
 -   OFN_SHOWHELP  
   
- For more information about this structure, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about this structure, see the [OPENFILENAME](http://msdn.microsoft.com/library/windows/desktop/ms646839) structure in the Windows SDK.  
   
 ##  <a name="makeprominent"></a>  CFileDialog::MakeProminent  
  Places a control in the dialog so that it stands out compared to other controls.  

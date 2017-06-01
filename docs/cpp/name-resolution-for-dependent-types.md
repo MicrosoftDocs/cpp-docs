@@ -109,7 +109,7 @@ Int MyNamespace::myFunction
 ```  
   
 ### Template Disambiguation  
- [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] enforces the C++98/03/11 standard rules for disambiguation with the "template" keyword. In the following example, [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)] would accept both the nonconforming lines and the conforming lines.  [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] accepts only the conforming lines.  
+ [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] enforces the C++98/03/11 standard rules for disambiguation with the "template" keyword. In the following example, Visual C++ 2010 would accept both the nonconforming lines and the conforming lines.  [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] accepts only the conforming lines.  
   
 ```cpp  
 #include <iostream>  

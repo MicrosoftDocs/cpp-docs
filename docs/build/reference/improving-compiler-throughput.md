@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Improving Compiler Throughput
-Use precompiled header files to build your project faster. This is important if you are using ATL, MFC, or the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)] header files.  
+Use precompiled header files to build your project faster. This is important if you are using ATL, MFC, or the Windows SDK header files.  
   
  See [/Yc](../../build/reference/yc-create-precompiled-header-file.md) and [/Yu](../../build/reference/yu-use-precompiled-header-file.md).  
   

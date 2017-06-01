@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # String Literal
-The handling of string literals has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The handling of string literals has changed from Managed Extensions for C++ to Visual C++.  
   
  In the Managed Extensions for C++ language design, a managed string literal was indicated by prefacing the string literal with an `S`. For example:  
   

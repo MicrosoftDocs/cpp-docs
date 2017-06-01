@@ -90,7 +90,7 @@ modifiereventdelegate^ event_name
   
  `event` is a context-sensitive keyword; see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md) for more information.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
   
 ### Remarks  
  For more information, see [Events (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755799.aspx).  
@@ -100,7 +100,7 @@ modifiereventdelegate^ event_name
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  The `event` keyword lets you declare an event. An event is a way for a class to provide notifications when something of interest happens.  
   
  **Syntax**  

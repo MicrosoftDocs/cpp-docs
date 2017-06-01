@@ -100,7 +100,7 @@ class CSid
   
  Applications should not modify the `SID` structure directly, but instead use the methods provided in this wrapper class. See also [AtlGetOwnerSid](security-global-functions.md#atlgetownersid), [AtlSetGroupSid](security-global-functions.md#atlsetgroupsid), [AtlGetGroupSid](security-global-functions.md#atlgetgroupsid), and [AtlSetOwnerSid](security-global-functions.md#atlsetownersid).  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -217,7 +217,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
  Returns **true** on success, **false** on failure.  
   
 ### Remarks  
- See [EqualPrefixSid](http://msdn.microsoft.com/library/windows/desktop/aa446621) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more details.  
+ See [EqualPrefixSid](http://msdn.microsoft.com/library/windows/desktop/aa446621) in the Windows SDK for more details.  
   
 ##  <a name="getlength"></a>  CSid::GetLength  
  Returns the length of the `CSid` object.  

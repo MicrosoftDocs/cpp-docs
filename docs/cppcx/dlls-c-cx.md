@@ -15,21 +15,21 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # DLLs (C++/CX)
-You can use Visual Studio to create either a standard Win32 DLL or a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component DLL that can be consumed by Universal Windows Platform apps. A standard DLL that was created by using a version of Visual Studio or the Visual C++ compiler that's earlier than [!INCLUDE[vs_dev11_long](../cppcx/includes/vs-dev11-long-md.md)] may not load correctly in a Universal Windows Platform app and may not pass the app verification test in the [!INCLUDE[win8_appstore_long](../cppcx/includes/win8-appstore-long-md.md)].  
+You can use Visual Studio to create either a standard Win32 DLL or a Windows Runtime component DLL that can be consumed by Universal Windows Platform apps. A standard DLL that was created by using a version of Visual Studio or the Visual C++ compiler that's earlier than Visual Studio 2012 may not load correctly in a Universal Windows Platform app and may not pass the app verification test in the [!INCLUDE[win8_appstore_long](../cppcx/includes/win8-appstore-long-md.md)].  
   
-## [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component DLLs  
- In almost all cases, when you want to create a DLL for use in a Universal Windows Platform app, create it as a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component by using the project template of that name. You can create a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component project for DLLs that have public or private [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types. A [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component can be accessed from apps that are written in any [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]-compatible language. By default, the compiler settings for a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component project use the **/ZW** switch. A .winmd file must have the same name that the root namespace has. For example, a class that's named A.B.C.MyClass can be instantiated only if it's defined in a metadata file that's named A.winmd or A.B.winmd or A.B.C.winmd. The name of the DLL is not required to match the .winmd file name.  
+## Windows Runtime component DLLs  
+ In almost all cases, when you want to create a DLL for use in a Universal Windows Platform app, create it as a Windows Runtime component by using the project template of that name. You can create a Windows Runtime component project for DLLs that have public or private Windows Runtime types. A Windows Runtime component can be accessed from apps that are written in any Windows Runtime-compatible language. By default, the compiler settings for a Windows Runtime component project use the **/ZW** switch. A .winmd file must have the same name that the root namespace has. For example, a class that's named A.B.C.MyClass can be instantiated only if it's defined in a metadata file that's named A.winmd or A.B.winmd or A.B.C.winmd. The name of the DLL is not required to match the .winmd file name.  
   
  For more information, see [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  
   
-#### To reference a third-party [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component binary in your project  
+#### To reference a third-party Windows Runtime component binary in your project  
   
 1.  Open the shortcut menu for the project that will use the DLL and then choose **Properties**. On the **Common Properties** page, choose the **Add New Reference** button.  
   
-2.  A [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component consists of a DLL file and a .winmd file that contains the metadata. Typically, these files are located in the same folder. In the left pane of the **Add Reference** dialog box, choose the **Browse** button and then navigate to the location of the DLL and its .winmd file. For more information, see [Tutorial: Creating and using extension SDKs](http://msdn.microsoft.com/en-us/001e2fca-3d56-43ab-a5e0-0561d085679f).  
+2.  A Windows Runtime component consists of a DLL file and a .winmd file that contains the metadata. Typically, these files are located in the same folder. In the left pane of the **Add Reference** dialog box, choose the **Browse** button and then navigate to the location of the DLL and its .winmd file. For more information, see [Tutorial: Creating and using extension SDKs](http://msdn.microsoft.com/en-us/001e2fca-3d56-43ab-a5e0-0561d085679f).  
   
 ## Standard DLLs  
- You can create a standard DLL for C++ code that doesn’t consume or produce public [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types and consume it from a Universal Windows Platform app. Use the Universal Windows Platform DLL project type when you just want to migrate an existing DLL to compile in this version of Visual Studio but not convert the code to a Windows Runtime Component project. When you use the following steps, the DLL will be deployed alongside your app executable in the .appx package.  
+ You can create a standard DLL for C++ code that doesn’t consume or produce public Windows Runtime types and consume it from a Universal Windows Platform app. Use the Universal Windows Platform DLL project type when you just want to migrate an existing DLL to compile in this version of Visual Studio but not convert the code to a Windows Runtime Component project. When you use the following steps, the DLL will be deployed alongside your app executable in the .appx package.  
   
 #### To create a standard DLL in Visual Studio  
   

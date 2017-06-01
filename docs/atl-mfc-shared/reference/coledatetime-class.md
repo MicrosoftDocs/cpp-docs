@@ -204,7 +204,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
  A `SYSTEMTIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object.  
   
  `filetimeSrc`  
- A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
   
  `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec`  
  Indicate the date and time values to be copied into the new `COleDateTime` object.  
@@ -243,7 +243,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 - `COleDateTime(` *systimeSrc* **)** Constructs a `COleDateTime` object from a `SYSTEMTIME` value.  
   
-- `COleDateTime(` `filetimeSrc` **)** Constructs a `COleDateTime` object from a `FILETIME` value. . Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+- `COleDateTime(` `filetimeSrc` **)** Constructs a `COleDateTime` object from a `FILETIME` value. . Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
   
 - `COleDateTime(` `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec` **)** Constructs a `COleDateTime` object from the specified numerical values.  
   
@@ -251,7 +251,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
  For more information on the `time_t` data type, see the [time](../../c-runtime-library/reference/time-time32-time64.md) function in the *Run-Time Library Reference*.  
   
- For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structures in the Windows SDK.  
   
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
@@ -763,13 +763,13 @@ COleDateTime& operator=(const UDATE& udate) throw();
   
 - **operator =(** `udate` **)** The **UDATE** value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid. A **UDATE** structure represents an "unpacked" date. See the function [VarDateFromUdate](http://msdn.microsoft.com/en-us/1c924ac5-b896-49e1-9ccf-825ac7a030c8) for more details.  
   
-- **operator =(** `filetimeSrc` **)** The [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+- **operator =(** `filetimeSrc` **)** The [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. See [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
   
- For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entry in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) entry in the Windows SDK.  
   
  For more information on the `time_t` data type, see the [time](../../c-runtime-library/reference/time-time32-time64.md) function in the *Run-Time Library Reference*.  
   
- For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structures in the Windows SDK.  
   
  For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).  
   

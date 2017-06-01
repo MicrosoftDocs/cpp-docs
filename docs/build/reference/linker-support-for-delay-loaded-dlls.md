@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Linker Support for Delay-Loaded DLLs
-The Visual C++ linker now supports the delayed loading of DLLs. This relieves you of the need to use the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)] functions **LoadLibrary** and **GetProcAddress** to implement DLL delayed loading.  
+The Visual C++ linker now supports the delayed loading of DLLs. This relieves you of the need to use the Windows SDK functions **LoadLibrary** and **GetProcAddress** to implement DLL delayed loading.  
   
  Before Visual C++ 6.0, the only way to load a DLL at run time was by using **LoadLibrary** and **GetProcAddress**; the operating system would load the DLL when the executable or DLL using it was loaded.  
   

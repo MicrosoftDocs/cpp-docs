@@ -37,9 +37,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C++/CLI Migration Primer
-This is a guide to moving your Visual C++ programs from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)]. For a checklist summary of syntactic changes, see [(NOTINBUILD)Managed Extensions for C++ Syntax Upgrade Checklist](http://msdn.microsoft.com/en-us/edbded88-7ef3-4757-bd9d-b8f48ac2aada).  
+This is a guide to moving your Visual C++ programs from Managed Extensions for C++ to Visual C++. For a checklist summary of syntactic changes, see [(NOTINBUILD)Managed Extensions for C++ Syntax Upgrade Checklist](http://msdn.microsoft.com/en-us/edbded88-7ef3-4757-bd9d-b8f48ac2aada).  
   
- C++/CLI extends a dynamic component programming paradigm to the ISO-C++ standard language. The new language offers a number of significant improvements over Managed Extensions. This section provides an enumerated listing of the Managed Extensions for C++ language features and their mapping to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] where such a mapping exists, and points out those constructs for which no mapping exists.  
+ C++/CLI extends a dynamic component programming paradigm to the ISO-C++ standard language. The new language offers a number of significant improvements over Managed Extensions. This section provides an enumerated listing of the Managed Extensions for C++ language features and their mapping to Visual C++ where such a mapping exists, and points out those constructs for which no mapping exists.  
   
 ## In This Section  
  [Outline of Changes (C++/CLI)](../dotnet/outline-of-changes-cpp-cli.md)  

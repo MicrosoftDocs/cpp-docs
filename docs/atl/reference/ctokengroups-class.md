@@ -79,7 +79,7 @@ class CTokenGroups
   
  The **CTokenGroups** class is a wrapper for the [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure, containing information about the group security identifiers (SIDs) in an access token.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  

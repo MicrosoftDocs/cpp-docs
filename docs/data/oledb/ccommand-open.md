@@ -90,7 +90,7 @@ HRESULT Open(
  [in] Same as `wszCommand` except that this parameter takes an ANSI command string. The fourth form of this method can take a NULL value. See "Remarks" later in this topic for details.  
   
  *pPropSet*  
- [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/en-us/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/en-us/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
  `pRowsAffected`  
  [in/out] A pointer to memory where the count of rows affected by a command is returned. If *\*pRowsAffected* is **NULL**, no row count is returned. Otherwise, **Open** sets *`pRowsAffected` according to the following conditions:  

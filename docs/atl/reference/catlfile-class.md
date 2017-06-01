@@ -128,7 +128,7 @@ HRESULT Create(
  The file name.  
   
  `dwDesiredAccess`  
- The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the Windows SDK.  
   
  `dwShareMode`  
  The share mode. See `dwShareMode` in **CreateFile**.  
@@ -176,7 +176,7 @@ HRESULT GetOverlappedResult(
   
 ### Parameters  
  `pOverlapped`  
- The overlapped structure. See `lpOverlapped` in [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The overlapped structure. See `lpOverlapped` in [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) in the Windows SDK.  
   
  *dwBytesTransferred*  
  The bytes transferred. See *lpNumberOfBytesTransferred* in `GetOverlappedResult`.  
@@ -289,10 +289,10 @@ HRESULT Read(
  The number of bytes read.  
   
  `pOverlapped`  
- The overlapped structure. See `lpOverlapped` in [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The overlapped structure. See `lpOverlapped` in [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467) in the Windows SDK.  
   
  `pfnCompletionRoutine`  
- The completion routine. See *lpCompletionRoutine* in [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The completion routine. See *lpCompletionRoutine* in [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) in the Windows SDK.  
   
 ### Return Value  
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
@@ -388,10 +388,10 @@ HRESULT Write(
  The number of bytes to be transferred from the buffer.  
   
  `pOverlapped`  
- The overlapped structure. See `lpOverlapped` in [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The overlapped structure. See `lpOverlapped` in [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747) in the Windows SDK.  
   
  `pfnCompletionRoutine`  
- The completion routine. See *lpCompletionRoutine* in [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The completion routine. See *lpCompletionRoutine* in [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) in the Windows SDK.  
   
  `pnBytesWritten`  
  The bytes written.  

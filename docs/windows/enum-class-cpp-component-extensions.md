@@ -38,7 +38,7 @@ Declares an enumeration at namespace scope, which is a user-defined type consist
   
  C++/CX and C++/CLI support `public enum class` and `private enum class` which are similar to the standard C++ `enum class` but with the addition of the accessibility specifier. Under **/clr**, the C++11 `enum class` type is permitted but will generate warning C4472 which is intended to ensure that you really want the ISO enum type and not the C++/CX and C++/CLI type. For more information about the ISO Standard C++ `enum` keyword, see [Enumerations](../cpp/enumerations-cpp.md).  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Syntax**  
   
 ```  
@@ -61,7 +61,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
  *underlying-type*  
  (Optional) The underlying type of the enumeration.  
   
- (Optional. [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] only) The underlying type of the enumeration, which can be `bool`, `char`, `char16`, `int16`, `uint16`, `int`, `uint32`, `int64`, or `uint64`.  
+ (Optional. Windows Runtime only) The underlying type of the enumeration, which can be `bool`, `char`, `char16`, `int16`, `uint16`, `int`, `uint32`, `int64`, or `uint64`.  
   
  *enumerator-list*  
  A comma-delimited list of enumerator names.  
@@ -86,7 +86,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Syntax**  
   
 ```  

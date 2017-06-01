@@ -34,7 +34,7 @@ translation.priority.ht:
 This porting case study is designed to give you an idea of what a typical porting project is like, the types of problems you might encounter, and some general tips and tricks for addressing porting problems. It's not meant to be a definitive guide to porting, since the experience of porting a project depends very much on the specifics of the code.  
   
 ## Spy++  
- Spy++ is a widely used GUI diagnostic tool for the Windows desktop that provides all sorts of information about user interface elements on the Windows desktop. It shows the complete hierarchy of windows and provides access to metadata about each window and control. This useful application has shipped with Visual Studio for many years. We found an old version of it that was last compiled in Visual C++ 6.0 and ported it to [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)]. The experience for Visual Studio 2017 should be almost identical.
+ Spy++ is a widely used GUI diagnostic tool for the Windows desktop that provides all sorts of information about user interface elements on the Windows desktop. It shows the complete hierarchy of windows and provides access to metadata about each window and control. This useful application has shipped with Visual Studio for many years. We found an old version of it that was last compiled in Visual C++ 6.0 and ported it to Visual Studio 2015. The experience for Visual Studio 2017 should be almost identical.
   
  We considered this case to be typical for porting Windows desktop applications that use MFC and the Win32 API, especially for old projects that have not been updated with each release of Visual C++ since Visual C++ 6.0.  
   
@@ -78,7 +78,7 @@ warning MSB8012: TargetPath(...\spyxx\spyxxhk\.\..\Debug\SpyxxHk.dll) does not m
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h(40): fatal error C1189: #error:  MFC does not support WINVER less than 0x0501.  Please change the definition of WINVER in your project properties or precompiled header.  
 ```  
   
- Windows XP is no longer supported by Microsoft, so even though targeting it is allowed in [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you should be phasing out support for it in your applications, and encouraging your users to adopt new versions of Windows.  
+ Windows XP is no longer supported by Microsoft, so even though targeting it is allowed in Visual Studio 2015, you should be phasing out support for it in your applications, and encouraging your users to adopt new versions of Windows.  
   
  To get rid of the error, define WINVER by updating the **Project Properties** setting to the lowest version of Windows you currently want to target. Find a table of values for various Windows releases [here](http://msdn.microsoft.com/library/windows/desktop/aa383745.aspx).  
   

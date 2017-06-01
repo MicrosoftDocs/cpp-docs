@@ -45,7 +45,7 @@ After creating your header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-c
   
 3.  Repeat steps 1 and 2 for additional items.  
   
- For more information, see [Adding an Item to a Header Control](http://msdn.microsoft.com/library/windows/desktop/bb775238) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For more information, see [Adding an Item to a Header Control](http://msdn.microsoft.com/library/windows/desktop/bb775238) in the Windows SDK.  
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)   

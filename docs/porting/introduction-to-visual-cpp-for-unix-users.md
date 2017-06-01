@@ -33,12 +33,12 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Introduction to Visual C++ for UNIX Users
-This topic provides information for UNIX users who are new to [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] and want to become productive with [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)].  
+This topic provides information for UNIX users who are new to Visual C++ and want to become productive with Visual C++.  
   
 ## Getting Started on the Command Line  
- You can use [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] from the command line in a similar way that you would use a UNIX command-line environment. You compile from the command prompt with the command-line C and C++ compiler (CL.EXE) and tools, including NMAKE.EXE, the Microsoft version of the UNIX make utility.  
+ You can use Visual C++ from the command line in a similar way that you would use a UNIX command-line environment. You compile from the command prompt with the command-line C and C++ compiler (CL.EXE) and tools, including NMAKE.EXE, the Microsoft version of the UNIX make utility.  
   
- In UNIX, commands are installed in a common folder, such as /usr/bin. In [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)], the command-line tools are installed in your installation directory at VC\bin (on a typical installation at Program Files\Microsoft Visual Studio 8\VC\bin). To use the command-line tools, run vsvars32.bat, which is located in your installation directory at Common7\Tools. This adds your bin directory to your path and sets up other paths that are necessary to compile Visual C++ programs from the command line. For more information, see [Building on the Command Line](../build/building-on-the-command-line.md) and [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).  
+ In UNIX, commands are installed in a common folder, such as /usr/bin. In Visual C++, the command-line tools are installed in your installation directory at VC\bin (on a typical installation at Program Files\Microsoft Visual Studio 8\VC\bin). To use the command-line tools, run vsvars32.bat, which is located in your installation directory at Common7\Tools. This adds your bin directory to your path and sets up other paths that are necessary to compile Visual C++ programs from the command line. For more information, see [Building on the Command Line](../build/building-on-the-command-line.md) and [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).  
   
 > [!NOTE]
 >  If you open a command prompt with the **Visual Studio Command Line Prompt** from the **Start** menu, then vsvars32.bat is run for you.  
@@ -54,10 +54,10 @@ This topic provides information for UNIX users who are new to [!INCLUDE[vcprvc](
  An application that consists of multiple libraries and executables, each potentially built with a different set of compiler options or even in a different language, are stored in multiple projects that are part of a single *solution*. A solution is an abstraction for a container to group multiple projects together. Information about solutions is stored in a solution file with the extension .sln. For more information, see [Solutions and Projects in Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio) and [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
   
 ## Importing Your Existing Code  
- You can use [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] to use existing code that is set up to compile with or without a makefile and put it into a [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] project. For more information, see the **Create Project From Existing Code Files Wizard**. For more information, see [How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md).  
+ You can use Visual C++ to use existing code that is set up to compile with or without a makefile and put it into a [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] project. For more information, see the **Create Project From Existing Code Files Wizard**. For more information, see [How to: Create a C++ Project from Existing Code](../ide/how-to-create-a-cpp-project-from-existing-code.md).  
   
 ## Creating a New Project  
- You can create new projects in the development environment. [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] provides numerous templates that provide standard code for various common projects. You can use application wizards to generate projects with code outlines for various application types.  
+ You can create new projects in the development environment. Visual C++ provides numerous templates that provide standard code for various common projects. You can use application wizards to generate projects with code outlines for various application types.  
   
  You can start with an empty project by using the **Console Application (Win32) Wizard**. Select the **Empty Project** check box. You can then add new and existing files to the project later.  
   

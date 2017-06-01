@@ -69,7 +69,7 @@ Platform::Type^ type = T::typeid;
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Syntax**  
   
 ```  

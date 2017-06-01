@@ -32,9 +32,9 @@ public value struct Boolean
  Boolean has the Equals(), GetHashCode(), and ToString() methods derived from the [Platform::Object Class](../cppcx/platform-object-class.md), and the GetTypeCode() method derived from the [Platform::Type Class](../cppcx/platform-type-class.md).  
   
 ### Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   

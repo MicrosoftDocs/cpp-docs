@@ -100,7 +100,7 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
  [out] The address of a pointer variable that receives the requested interface pointer if creation succeeds.  
   
 ### Return Value  
- A standard `HRESULT` value. See [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a description of possible return values.  
+ A standard `HRESULT` value. See [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) in the Windows SDK for a description of possible return values.  
   
 ### Remarks  
  Use the first overload of this function for typical object creation; use the second overload when you need to aggregate the object being created.  

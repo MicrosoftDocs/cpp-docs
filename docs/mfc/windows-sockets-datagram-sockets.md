@@ -45,7 +45,7 @@ This article describes datagram sockets, one of the two Windows Socket types ava
   
  An example of a datagram socket is an application that keeps system clocks on the network synchronized. This illustrates an additional capability of datagram sockets in at least some settings: broadcasting messages to a large number of network addresses.  
   
- Datagram sockets are better than stream sockets for record-oriented data. For more information about datagram sockets, see the Windows Sockets specification, available in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ Datagram sockets are better than stream sockets for record-oriented data. For more information about datagram sockets, see the Windows Sockets specification, available in the Windows SDK.  
   
 ## See Also  
  [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)   

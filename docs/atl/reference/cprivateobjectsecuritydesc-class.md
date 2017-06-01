@@ -69,7 +69,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 ## Remarks  
  This class, derived from [CSecurityDesc](../../atl/reference/csecuritydesc-class.md), provides methods for creating and managing the security descriptor of a private object.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CSecurityDesc](../../atl/reference/csecuritydesc-class.md)  

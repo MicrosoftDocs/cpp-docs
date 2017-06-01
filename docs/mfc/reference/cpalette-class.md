@@ -112,7 +112,7 @@ void AnimatePalette(
 ### Remarks  
  When an application calls `AnimatePalette`, it does not have to update its client area, because Windows maps the new entries into the system palette immediately.  
   
- The `AnimatePalette` function will only change entries with the **PC_RESERVED** flag set in the corresponding **palPaletteEntry** member of the [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) structure that is attached to the `CPalette` object. See **LOGPALETTE** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about this structure.  
+ The `AnimatePalette` function will only change entries with the **PC_RESERVED** flag set in the corresponding **palPaletteEntry** member of the [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) structure that is attached to the `CPalette` object. See **LOGPALETTE** in the Windows SDK for more information about this structure.  
   
 ##  <a name="cpalette"></a>  CPalette::CPalette  
  Constructs a `CPalette` object.  
@@ -141,7 +141,7 @@ BOOL CreateHalftonePalette(CDC* pDC);
 ### Remarks  
  An application should create a halftone palette when the stretching mode of a device context is set to **HALFTONE**. The logical halftone palette returned by the [CreateHalftonePalette](http://msdn.microsoft.com/library/windows/desktop/dd183503) member function should then be selected and realized into the device context before the [CDC::StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) or [StretchDIBits](http://msdn.microsoft.com/library/windows/desktop/dd145121) function is called.  
   
- See the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about `CreateHalftonePalette` and **StretchDIBits**.  
+ See the Windows SDK for more information about `CreateHalftonePalette` and **StretchDIBits**.  
   
 ##  <a name="createpalette"></a>  CPalette::CreatePalette  
  Initializes a `CPalette` object by creating a Windows logical color palette and attaching it to the `CPalette` object.  
@@ -158,7 +158,7 @@ BOOL CreatePalette(LPLOGPALETTE lpLogPalette);
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- See the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about the **LOGPALETTE** structure.  
+ See the Windows SDK for more information about the **LOGPALETTE** structure.  
   
 ##  <a name="fromhandle"></a>  CPalette::FromHandle  
  Returns a pointer to a `CPalette` object when given a handle to a Windows palette object.  
@@ -237,7 +237,7 @@ operator HPALETTE() const;
 ### Remarks  
  This operator is a casting operator, which supports direct use of an `HPALETTE` object.  
   
- For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
 ##  <a name="resizepalette"></a>  CPalette::ResizePalette  
  Changes the size of the logical palette attached to the `CPalette` object to the number of entries specified by `nNumEntries`.  
@@ -256,7 +256,7 @@ BOOL ResizePalette(UINT nNumEntries);
 ### Remarks  
  If an application calls `ResizePalette` to reduce the size of the palette, the entries remaining in the resized palette are unchanged. If the application calls `ResizePalette` to enlarge the palette, the additional palette entries are set to black (the red, green, and blue values are all 0), and the flags for all additional entries are set to 0.  
   
- For more information on the Windows API `ResizePalette`, see [ResizePalette](http://msdn.microsoft.com/library/windows/desktop/dd162928) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on the Windows API `ResizePalette`, see [ResizePalette](http://msdn.microsoft.com/library/windows/desktop/dd162928) in the Windows SDK.  
   
 ##  <a name="setpaletteentries"></a>  CPalette::SetPaletteEntries  
  Sets RGB color values and flags in a range of entries in a logical palette.  
@@ -284,7 +284,7 @@ UINT SetPaletteEntries(
 ### Remarks  
  If the logical palette is selected into a device context when the application calls `SetPaletteEntries`, the changes will not take effect until the application calls [CDC::RealizePalette](../../mfc/reference/cdc-class.md#realizepalette).  
   
- For more information on the Windows structure **PALETTEENTRY**, see [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on the Windows structure **PALETTEENTRY**, see [PALETTEENTRY](http://msdn.microsoft.com/library/windows/desktop/dd162769) in the Windows SDK.  
   
 ## See Also  
  [MFC Sample DIBLOOK](../../visual-cpp-samples.md)   

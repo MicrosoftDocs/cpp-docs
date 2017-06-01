@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Static Const Int Linkage Is No Longer Literal
-Declaration of a constant member of a class has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+Declaration of a constant member of a class has changed from Managed Extensions for C++ to Visual C++.  
   
  Although `static const` integral members are still supported, their linkage attribute has changed. Their former linkage attribute is now carried in a literal integral member. For example, consider the following Managed Extensions class:  
   

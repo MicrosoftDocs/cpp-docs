@@ -43,7 +43,7 @@ A variable (data member) marked as `literal` in a **/clr** compilation is the na
   
  (There are no remarks for this language feature that apply to all runtimes.)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
  (There are no remarks for this language feature that apply to only the Windows Runtime.)  

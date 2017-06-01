@@ -121,7 +121,7 @@ int main() {
 retval: 60  
 ```  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
  There are no platform-specific remarks about this feature.  
@@ -129,7 +129,7 @@ retval: 60
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  There are no platform-specific remarks about this feature.  

@@ -62,7 +62,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 ## Remarks  
  The **SECURITY_ATTRIBUTES** structure contains a [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  `SECURITY_ATTRIBUTES`  

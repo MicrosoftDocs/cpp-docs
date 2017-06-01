@@ -298,7 +298,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
 ### Remarks  
  The **EXTLOGPEN** structure defines the style, width, and brush attributes of a pen. For example, call `GetExtLogPen` to match the particular style of a pen.  
   
- See the following topics in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for information about pen attributes:  
+ See the following topics in the Windows SDK for information about pen attributes:  
   
 - [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
   
@@ -332,7 +332,7 @@ int GetLogPen(LOGPEN* pLogPen);
   
  For example, call `GetLogPen` to match the particular style of pen.  
   
- See the following topics in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for information about pen attributes:  
+ See the following topics in the Windows SDK for information about pen attributes:  
   
 - [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
   
@@ -356,7 +356,7 @@ operator HPEN() const;
 ### Remarks  
  This operator is a casting operator, which supports direct use of an `HPEN` object.  
   
- For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/cpp/cpen-class_7.cpp)]  

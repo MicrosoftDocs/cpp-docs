@@ -74,7 +74,7 @@ translation.priority.mt:
 Writes formatted output to the console by using a pointer to a list of arguments, and supports positional parameters in the format string.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
   
 ## Syntax  
   

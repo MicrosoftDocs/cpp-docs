@@ -63,7 +63,7 @@ You can create Visual C++ projects by choosing **File &#124; New &#124; Project*
   
 ## In This Section  
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)  
- Describes the project types that are available in [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] and how to create a C-language project.  
+ Describes the project types that are available in Visual C++ and how to create a C-language project.  
   
  [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)  
  Describes the kinds of files that are used with various project types.  

@@ -39,7 +39,7 @@ translation.priority.ht:
 This class implements **IUnknown** and provides a default implementation of the [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) interface.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -87,7 +87,7 @@ STDMETHOD(GetPages)(CAUUID* pPages);
 ### Remarks  
  ATL uses the object's property map to retrieve each CLSID.  
   
- See [ISpecifyPropertyPages::GetPages](http://msdn.microsoft.com/library/windows/desktop/ms687276) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [ISpecifyPropertyPages::GetPages](http://msdn.microsoft.com/library/windows/desktop/ms687276) in the Windows SDK.  
   
 ## See Also  
  [IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)   

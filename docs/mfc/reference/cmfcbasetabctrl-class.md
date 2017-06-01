@@ -36,6 +36,7 @@ translation.priority.mt:
 ---
 # CMFCBaseTabCtrl Class
 Implements the base functionality for tabbed windows.  
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ## Syntax  
   
@@ -260,7 +261,7 @@ virtual void AddTab(
  If `pTabWnd` points to an object that is not derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) and if `bDetachable` is `TRUE`, the framework automatically creates a wrapper for the `pTabWnd` object. The wrapper makes the `pTabWnd` object detachable. By default, the wrapper is an instance of the [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md). If the functionality offered by the default wrapper is unacceptable, use the [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) method to specify a different wrapper.  
   
 ##  <a name="applyrestoredtabinfo"></a>  CMFCBaseTabCtrl::ApplyRestoredTabInfo  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
@@ -272,7 +273,7 @@ virtual void ApplyRestoredTabInfo(BOOL bUseTabIndexes = FALSE);
 ### Remarks  
   
 ##  <a name="autodestroywindow"></a>  CMFCBaseTabCtrl::AutoDestroyWindow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
@@ -284,7 +285,7 @@ void AutoDestroyWindow(BOOL bAutoDestroy = TRUE);
 ### Remarks  
   
 ##  <a name="calcrectedit"></a>  CMFCBaseTabCtrl::CalcRectEdit  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void CalcRectEdit(CRect& rectEdit);
@@ -296,7 +297,7 @@ virtual void CalcRectEdit(CRect& rectEdit);
 ### Remarks  
   
 ##  <a name="cleanup"></a>  CMFCBaseTabCtrl::CleanUp  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void CleanUp();
@@ -305,7 +306,7 @@ virtual void CleanUp();
 ### Remarks  
   
 ##  <a name="clearimagelist"></a>  CMFCBaseTabCtrl::ClearImageList  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void ClearImageList();
@@ -370,7 +371,7 @@ virtual BOOL DetachTab(
  If the tab specified by `nTabNum` is non-detachable, this function fails and returns `FALSE`.  
   
 ##  <a name="enableactivatelastactive"></a>  CMFCBaseTabCtrl::EnableActivateLastActive  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnableActivateLastActive(BOOL bLastActive = TRUE);
@@ -485,7 +486,7 @@ virtual BOOL EnsureVisible(int iTab);
  By default, this method is not supported by the `CMFCBaseTabCtrl Class`. You should implement this function in a custom class derived from `CMFCBaseTabCtrl` if that custom tab control supports tab scrolling. This method is supported by the [CMFCTabCtrl Class](../../mfc/reference/cmfctabctrl-class.md).  
   
 ##  <a name="enterdragmode"></a>  CMFCBaseTabCtrl::EnterDragMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnterDragMode();
@@ -511,7 +512,7 @@ virtual CWnd* FindTargetWnd(const CPoint& pt) = 0;
  In the `CMFCBaseTabCtrl` class, this method is a pure virtual function: you must implement it if you derive a class from `CMFCBaseTabCtrl`.  
   
 ##  <a name="firechangeactivetab"></a>  CMFCBaseTabCtrl::FireChangeActiveTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void FireChangeActiveTab(int nNewTab);
@@ -523,7 +524,7 @@ virtual void FireChangeActiveTab(int nNewTab);
 ### Remarks  
   
 ##  <a name="firechangingactivetab"></a>  CMFCBaseTabCtrl::FireChangingActiveTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL FireChangingActiveTab(int nNewTab);
@@ -623,7 +624,7 @@ virtual CWnd* GetFirstVisibleTab(
  If `iStartFrom` is larger than or equal to the number of tabs in the tab control, `GetFirstVisibleTab` automatically fails.  
   
 ##  <a name="getfirstvisibletabnum"></a>  CMFCBaseTabCtrl::GetFirstVisibleTabNum  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetFirstVisibleTabNum() const;  
@@ -644,7 +645,7 @@ int GetHighlightedTab() const;
  The zero-based index of the highlighted tab.  
   
 ##  <a name="getimagelist"></a>  CMFCBaseTabCtrl::GetImageList  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual const CImageList* GetImageList() const;  
@@ -655,7 +656,7 @@ virtual const CImageList* GetImageList() const;
 ### Remarks  
   
 ##  <a name="getimagesize"></a>  CMFCBaseTabCtrl::GetImageSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetImageSize() const;  
@@ -666,7 +667,7 @@ virtual CSize GetImageSize() const;
 ### Remarks  
   
 ##  <a name="getlastvisibletab"></a>  CMFCBaseTabCtrl::GetLastVisibleTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CWnd* GetLastVisibleTab(int& iTabNum);
@@ -693,7 +694,7 @@ Location GetLocation() const;
  Possible tab area location values are `LOCATION_BOTTOM` and `LOCATION_TOP`.  
   
 ##  <a name="getmaxwindowsize"></a>  CMFCBaseTabCtrl::GetMaxWindowSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetMaxWindowSize() const;  
@@ -769,7 +770,7 @@ virtual int GetTabByID(int id) const;
  The tab IDs are assigned automatically when tabs are added to a tab control.  
   
 ##  <a name="gettabclosebutton"></a>  CMFCBaseTabCtrl::GetTabCloseButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CRect GetTabCloseButton() const;  
@@ -808,7 +809,7 @@ virtual int GetTabFromPoint(CPoint& pt) const;
  The index of the tab that contains `pt`; -1 if no tab contains `pt`.  
   
 ##  <a name="gettabfullwidth"></a>  CMFCBaseTabCtrl::GetTabFullWidth  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetTabFullWidth(int iTab) const;  
@@ -910,7 +911,7 @@ virtual BOOL GetTabRect(
  `TRUE` if successful; `FALSE` if the tab index is invalid.  
   
 ##  <a name="gettabsheight"></a>  CMFCBaseTabCtrl::GetTabsHeight  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetTabsHeight() const;  
@@ -931,7 +932,7 @@ virtual int GetTabsNum() const;
  The number of tabs in the tab control.  
   
 ##  <a name="gettabsrect"></a>  CMFCBaseTabCtrl::GetTabsRect  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void GetTabsRect(CRect& rect) const;  
@@ -1015,7 +1016,7 @@ virtual int GetVisibleTabsNum() const;
  The number of visible tabs.  
   
 ##  <a name="hasimage"></a>  CMFCBaseTabCtrl::HasImage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasImage(int iTab) const;  
@@ -1085,7 +1086,7 @@ virtual void InsertTab(
  If the object indicated by `pNewWnd` is not derived from the [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) and if the `bDetachable` parameter is `TRUE`, the framework creates a special wrapper for the new tab. By default, the wrapper is an instance of the [CDockablePaneAdapter Class](../../mfc/reference/cdockablepaneadapter-class.md). Use the [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) method to create a different wrapper class. Any custom wrapper class needs to be derived from `CDockablePaneAdapter`.  
   
 ##  <a name="invalidatetab"></a>  CMFCBaseTabCtrl::InvalidateTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void InvalidateTab(int iTab);
@@ -1097,7 +1098,7 @@ void InvalidateTab(int iTab);
 ### Remarks  
   
 ##  <a name="isactivetabclosebutton"></a>  CMFCBaseTabCtrl::IsActiveTabCloseButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsActiveTabCloseButton() const;  
@@ -1121,7 +1122,7 @@ BOOL IsAutoColor() const;
  You can enable or disable the autocolor mode by using the [CMFCBaseTabCtrl::EnableAutoColor](#enableautocolor) method.  
   
 ##  <a name="isautodestroywindow"></a>  CMFCBaseTabCtrl::IsAutoDestroyWindow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsAutoDestroyWindow() const;  
@@ -1132,7 +1133,7 @@ BOOL IsAutoDestroyWindow() const;
 ### Remarks  
   
 ##  <a name="iscolored"></a>  CMFCBaseTabCtrl::IsColored  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsColored() const;  
@@ -1143,7 +1144,7 @@ virtual BOOL IsColored() const;
 ### Remarks  
   
 ##  <a name="isdialogcontrol"></a>  CMFCBaseTabCtrl::IsDialogControl  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsDialogControl() const;  
@@ -1154,7 +1155,7 @@ BOOL IsDialogControl() const;
 ### Remarks  
   
 ##  <a name="isdrawnoprefix"></a>  CMFCBaseTabCtrl::IsDrawNoPrefix  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsDrawNoPrefix() const;  
@@ -1180,7 +1181,7 @@ virtual BOOL IsFlatFrame() const;
  Tab controls that use the Outlook style cannot be rendered with flat frames. This includes the [CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md) and any classes derived from that class.  
   
 ##  <a name="isflattab"></a>  CMFCBaseTabCtrl::IsFlatTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsFlatTab() const;  
@@ -1204,7 +1205,7 @@ virtual BOOL IsHideSingleTab() const;
  Use the method [CMFCBaseTabCtrl::HideSingleTab](#hidesingletab) to enable hiding the tab label when there is only one tab.  
   
 ##  <a name="isiconadded"></a>  CMFCBaseTabCtrl::IsIconAdded  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsIconAdded(
@@ -1234,7 +1235,7 @@ virtual BOOL IsInPlaceEdit() const;
  You can enable or disable in-place editing by calling the method [CMFCBaseTabCtrl::EnableInPlaceEdit](#enableinplaceedit).  
   
 ##  <a name="isleftrightrounded"></a>  CMFCBaseTabCtrl::IsLeftRightRounded  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsLeftRightRounded() const;  
@@ -1245,7 +1246,7 @@ virtual BOOL IsLeftRightRounded() const;
 ### Remarks  
   
 ##  <a name="ismditab"></a>  CMFCBaseTabCtrl::IsMDITab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsMDITab() const;  
@@ -1288,7 +1289,7 @@ virtual BOOL IsPtInTabArea(CPoint point) const = 0;
  In the `CMFCBaseTabCtrl Class`, this method is a pure virtual function and has no implementation. If you derive a class from `CMFCBaseTabCtrl`, you have to implement this function.  
   
 ##  <a name="istabclosebuttonhighlighted"></a>  CMFCBaseTabCtrl::IsTabCloseButtonHighlighted  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsTabCloseButtonHighlighted() const;  
@@ -1299,7 +1300,7 @@ BOOL IsTabCloseButtonHighlighted() const;
 ### Remarks  
   
 ##  <a name="istabclosebuttonpressed"></a>  CMFCBaseTabCtrl::IsTabCloseButtonPressed  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsTabCloseButtonPressed() const;  
@@ -1371,7 +1372,7 @@ virtual BOOL IsTabVisible(int iTab) const;
  Nonzero if the specified tab is visible; otherwise 0.  
   
 ##  <a name="isvs2005style"></a>  CMFCBaseTabCtrl::IsVS2005Style  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsVS2005Style() const;  
@@ -1402,7 +1403,7 @@ BOOL m_bAutoDestroyWindow;
  By default, this member is `FALSE`.  
   
 ##  <a name="movetab"></a>  CMFCBaseTabCtrl::MoveTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void MoveTab(
@@ -1427,7 +1428,7 @@ virtual void OnChangeTabs();
  By default, this method does nothing. Override this method to execute custom code when the number of tabs on the tab control changes.  
   
 ##  <a name="ondrop"></a>  CMFCBaseTabCtrl::OnDrop  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnDrop(
@@ -1446,7 +1447,7 @@ virtual BOOL OnDrop(
 ### Remarks  
   
 ##  <a name="ondragover"></a>  CMFCBaseTabCtrl::OnDragOver  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual DROPEFFECT OnDragOver(
@@ -1465,7 +1466,7 @@ virtual DROPEFFECT OnDragOver(
 ### Remarks  
   
 ##  <a name="ondragleave"></a>  CMFCBaseTabCtrl::OnDragLeave  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDragLeave();
@@ -1474,7 +1475,7 @@ virtual void OnDragLeave();
 ### Remarks  
   
 ##  <a name="ondragenter"></a>  CMFCBaseTabCtrl::OnDragEnter  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual DROPEFFECT OnDragEnter(
@@ -1493,7 +1494,7 @@ virtual DROPEFFECT OnDragEnter(
 ### Remarks  
   
 ##  <a name="onrenametab"></a>  CMFCBaseTabCtrl::OnRenameTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnRenameTab(int, CString&);
@@ -1508,7 +1509,7 @@ virtual BOOL OnRenameTab(int, CString&);
 ### Remarks  
   
 ##  <a name="pretranslatemessage"></a>  CMFCBaseTabCtrl::PreTranslateMessage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1564,7 +1565,7 @@ virtual BOOL RemoveTab(
  If [CMFCBaseTabCtrl::m_bAutoDestroyWindow](#m_bautodestroywindow) is `TRUE`, `RemoveTab` destroys the [CWnd](../../mfc/reference/cwnd-class.md) object associated with the specified tab.  
   
 ##  <a name="renametab"></a>  CMFCBaseTabCtrl::RenameTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL RenameTab();
@@ -1582,7 +1583,7 @@ void ResetImageList();
 ```  
   
 ##  <a name="serialize"></a>  CMFCBaseTabCtrl::Serialize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void Serialize(CArchive& ar);
@@ -1723,7 +1724,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
  This method recalculates the height of the tab according to the image and text sizes.  
   
 ##  <a name="setlocation"></a>  CMFCBaseTabCtrl::SetLocation  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SetLocation(Location location);
@@ -1853,7 +1854,7 @@ virtual BOOL SetTabLabel(
  Nonzero if successful; 0 otherwise.  
   
 ##  <a name="settabsheight"></a>  CMFCBaseTabCtrl::SetTabsHeight  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SetTabsHeight();
@@ -1928,7 +1929,7 @@ virtual BOOL ShowTab(
  The parameter `bActivate` only applies if `bShow` is `TRUE`. If `bActivate` is `TRUE` and if `ShowTab` is successful, `ShowTab` will send the message AFX_WM_CHANGE_ACTIVE_TAB to the parent of the tab window.  
   
 ##  <a name="startrenametab"></a>  CMFCBaseTabCtrl::StartRenameTab  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL StartRenameTab(int iTab);
@@ -1942,7 +1943,7 @@ virtual BOOL StartRenameTab(int iTab);
 ### Remarks  
   
 ##  <a name="swaptabs"></a>  CMFCBaseTabCtrl::SwapTabs  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SwapTabs(

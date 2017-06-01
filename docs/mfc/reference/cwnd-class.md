@@ -517,12 +517,12 @@ virtual HRESULT accDoDefaultAction(VARIANT varChild);
  Specifies whether the default action to be invoked is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to perform the object's default action) or a child ID (to perform the default action of one of the object's child elements).  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::accDoDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318470) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::accDoDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318470) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
- Override this function in your `CWnd`-derived class to perform your object's default action. For more information, see [IAccessible::accDoDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318470) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Override this function in your `CWnd`-derived class to perform your object's default action. For more information, see [IAccessible::accDoDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318470) in the Windows SDK.  
   
 ##  <a name="acchittest"></a>  CWnd::accHitTest  
  Called by the framework to retrieve the child element or child object at a given point on the screen.  
@@ -542,17 +542,17 @@ virtual HRESULT accHitTest(
  Y-coordinate of the point to be hit tested (in screen units).  
   
  `pvarChild`  
- Receives information identifying the object at the point specified by `xLeft` and `yTop`. See *pvarID* in [IAccessible::accHitTest](http://msdn.microsoft.com/library/windows/desktop/dd318471) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Receives information identifying the object at the point specified by `xLeft` and `yTop`. See *pvarID* in [IAccessible::accHitTest](http://msdn.microsoft.com/library/windows/desktop/dd318471) in the Windows SDK.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::accHitTest** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::accHitTest** in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see [IAccessible::accHitTest](http://msdn.microsoft.com/library/windows/desktop/dd318471) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::accHitTest](http://msdn.microsoft.com/library/windows/desktop/dd318471) in the Windows SDK.  
   
 ##  <a name="acclocation"></a>  CWnd::accLocation  
  Called by the framework to retrieve the specified object's current screen location.  
@@ -583,12 +583,12 @@ virtual HRESULT accLocation(
  Specifies whether the location to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::accLocation** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::accLocation** in the Windows SDK.  
   
 ### Remarks  
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see **IAccessible::accLocation** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see **IAccessible::accLocation** in the Windows SDK.  
   
 ##  <a name="accnavigate"></a>  CWnd::accNavigate  
  Called by the framework to traverse to another user interface element within a container and if possible, retrieve the object.  
@@ -602,23 +602,23 @@ virtual HRESULT accNavigate(
   
 ### Parameters  
  `navDir`  
- Specifies the direction to navigate. See `navDir` in [IAccessible::accNavigate](http://msdn.microsoft.com/library/windows/desktop/dd318473) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the direction to navigate. See `navDir` in [IAccessible::accNavigate](http://msdn.microsoft.com/library/windows/desktop/dd318473) in the Windows SDK.  
   
  `varStart`  
- Specifies the starting object. See `varStart` in **IAccessible::accNavigate** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the starting object. See `varStart` in **IAccessible::accNavigate** in the Windows SDK.  
   
  *pvarEndUpAt*  
- Receives information about the destination user interface object. See *pvarEnd* in **IAccessible::accNavigate** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Receives information about the destination user interface object. See *pvarEnd* in **IAccessible::accNavigate** in the Windows SDK.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::accNavigate** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::accNavigate** in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see [IAccessible::accNavigate](http://msdn.microsoft.com/library/windows/desktop/dd318473) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::accNavigate](http://msdn.microsoft.com/library/windows/desktop/dd318473) in the Windows SDK.  
   
 ##  <a name="accselect"></a>  CWnd::accSelect  
  Called by the framework to modify the selection or move the keyboard focus of the specified object.  
@@ -631,20 +631,20 @@ virtual HRESULT accSelect(
   
 ### Parameters  
  `flagsSelect`  
- Specifies how to change the current selection or focus. See `flagsSelect` in [IAccessible::accSelect](http://msdn.microsoft.com/library/windows/desktop/dd318474) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies how to change the current selection or focus. See `flagsSelect` in [IAccessible::accSelect](http://msdn.microsoft.com/library/windows/desktop/dd318474) in the Windows SDK.  
   
  `varChild`  
  Specifies the object to be selected. This parameter can be either CHILDID_SELF (to select the object itself) or a child ID (to select one of the object's children).  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::accSelect** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::accSelect** in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see [IAccessible::accSelect](http://msdn.microsoft.com/library/windows/desktop/dd318474) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::accSelect](http://msdn.microsoft.com/library/windows/desktop/dd318474) in the Windows SDK.  
   
 ##  <a name="animatewindow"></a>  CWnd::AnimateWindow  
  Produces special effects when showing or hiding windows.  
@@ -666,7 +666,7 @@ BOOL AnimateWindow(
  Nonzero if the function succeeds; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [AnimateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632669), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [AnimateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632669), as described in the Windows SDK.  
   
 ##  <a name="arrangeiconicwindows"></a>  CWnd::ArrangeIconicWindows  
  Arranges all the minimized (iconic) child windows.  
@@ -1004,7 +1004,7 @@ void CloseWindow();
 ```  
   
 ### Remarks  
- This member function emulates the functionality of the function [CloseWindow](http://msdn.microsoft.com/library/windows/desktop/ms632678), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [CloseWindow](http://msdn.microsoft.com/library/windows/desktop/ms632678), as described in the Windows SDK.  
   
 ##  <a name="continuemodal"></a>  CWnd::ContinueModal  
  This member function is called by [RunModalLoop](#runmodalloop) to determine when the modal state should be exited.  
@@ -1715,7 +1715,7 @@ BOOL DragDetect(POINT pt) const;
  If the user did not move the mouse outside of the drag rectangle while holding down the left button , the return value is zero.  
   
 ### Remarks  
- This member function emulates the functionality of the function [DragDetect](http://msdn.microsoft.com/library/windows/desktop/ms646256), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [DragDetect](http://msdn.microsoft.com/library/windows/desktop/ms646256), as described in the Windows SDK.  
   
 ##  <a name="drawanimatedrects"></a>  CWnd::DrawAnimatedRects  
  Draws a wire-frame rectangle and animates it to indicate the opening of an icon or the minimizing or maximizing of a window.  
@@ -1741,7 +1741,7 @@ BOOL DrawAnimatedRects(
  Nonzero if the function succeeds; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [DrawAnimatedRects](http://msdn.microsoft.com/library/windows/desktop/dd162475), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [DrawAnimatedRects](http://msdn.microsoft.com/library/windows/desktop/dd162475), as described in the Windows SDK.  
   
 ##  <a name="drawcaption"></a>  CWnd::DrawCaption  
  Draws a window caption.  
@@ -1767,7 +1767,7 @@ BOOL DrawCaption(
  Nonzero if the function succeeds; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [DrawCaption](http://msdn.microsoft.com/library/windows/desktop/dd162476), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [DrawCaption](http://msdn.microsoft.com/library/windows/desktop/dd162476), as described in the Windows SDK.  
   
 ##  <a name="drawmenubar"></a>  CWnd::DrawMenuBar  
  Redraws the menu bar.  
@@ -1894,7 +1894,7 @@ BOOL EnableToolTips(BOOL bEnable = TRUE);
 > [!NOTE]
 >  Some windows, such as [CToolBar](../../mfc/reference/ctoolbar-class.md), provide a built-in implementation of [OnToolHitTest](#ontoolhittest).  
   
- See [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information on this structure.  
+ See [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) in the Windows SDK for more information on this structure.  
   
  Simply calling `EnableToolTips` is not enough to display tool tips for your child controls unless the parent window is derived from `CFrameWnd`. This is because `CFrameWnd` provides a default handler for the **TTN_NEEDTEXT** notification. If your parent window is not derived from `CFrameWnd`, that is, if it is a dialog box or a form view, tool tips for your child controls will not display correctly unless you provide a handler for the **TTN_NEEDTEXT** tool tip notification. See [Tool Tips](../../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).  
   
@@ -2084,7 +2084,7 @@ static CWnd* FindWindowEx(
  If the function succeeds, the return value is a pointer to the window object having the specified class and window names. If the function fails, the return value is **NULL**.  
   
 ### Remarks  
- This member function emulates the functionality of the function [FindWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms633500), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [FindWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms633500), as described in the Windows SDK.  
   
 ##  <a name="flashwindow"></a>  CWnd::FlashWindow  
  Flashes the given window once.  
@@ -2136,7 +2136,7 @@ BOOL FlashWindowEx(
  The return value specifies the window's state before the call to the `FlashWindowEx` function. If the window caption was drawn as active before the call, the return value is nonzero. Otherwise, the return value is zero.  
   
 ### Remarks  
- This method emulates the functionality of the function [FlashWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms679347), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method emulates the functionality of the function [FlashWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms679347), as described in the Windows SDK.  
   
 ##  <a name="fromhandle"></a>  CWnd::FromHandle  
  Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object is not attached to the handle, a temporary `CWnd` object is created and attached.  
@@ -2190,14 +2190,14 @@ virtual HRESULT get_accChild(
  Receives the address of the child object's `IDispatch` interface.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accChild](http://msdn.microsoft.com/library/windows/desktop/dd318475) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accChild](http://msdn.microsoft.com/library/windows/desktop/dd318475) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see [IAccessible::get_accChild](http://msdn.microsoft.com/library/windows/desktop/dd318475) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accChild](http://msdn.microsoft.com/library/windows/desktop/dd318475) in the Windows SDK.  
   
 ##  <a name="get_accchildcount"></a>  CWnd::get_accChildCount  
  Called by the framework to retrieve the number of children belonging to this object.  
@@ -2211,14 +2211,14 @@ virtual HRESULT get_accChildCount(long* pcountChildren);
  Receives the number of children.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accChildCount](http://msdn.microsoft.com/library/windows/desktop/dd318476) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accChildCount](http://msdn.microsoft.com/library/windows/desktop/dd318476) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles). Call the base class version and then add the nonwindowed child elements.  
   
- For more information, see [IAccessible::get_accChildCount](http://msdn.microsoft.com/library/windows/desktop/dd318476) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accChildCount](http://msdn.microsoft.com/library/windows/desktop/dd318476) in the Windows SDK.  
   
 ##  <a name="get_accdefaultaction"></a>  CWnd::get_accDefaultAction  
  Called by the framework to retrieve a string that describes the object's default action.  
@@ -2237,14 +2237,14 @@ virtual HRESULT get_accDefaultAction(
  Address of a `BSTR` that receives a localized string describing the default action for the specified object, or NULL if this object has no default action.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318477) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318477) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class to describe your object's default action.  
   
- For more information, see [IAccessible::get_accDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318477) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318477) in the Windows SDK.  
   
 ##  <a name="get_accdescription"></a>  CWnd::get_accDescription  
  Called by framework to retrieve a string that describes the visual appearance of the specified object.  
@@ -2263,14 +2263,14 @@ virtual HRESULT get_accDescription(
  Address of a `BSTR` that receives a localized string describing the specified object, or NULL if no description is available for this object.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accDescription](http://msdn.microsoft.com/library/windows/desktop/dd318478) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accDescription](http://msdn.microsoft.com/library/windows/desktop/dd318478) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class to describe your object. Call the base class version and add your description.  
   
- For more information, see [IAccessible::get_accDescription](http://msdn.microsoft.com/library/windows/desktop/dd318478) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accDescription](http://msdn.microsoft.com/library/windows/desktop/dd318478) in the Windows SDK.  
   
 ##  <a name="get_accfocus"></a>  CWnd::get_accFocus  
  Called by the framework to retrieve the object that has the keyboard focus.  
@@ -2281,17 +2281,17 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
   
 ### Parameters  
  `pvarChild`  
- Receives information about the object that has the focus. See *pvarID* in [IAccessible::get_accFocus](http://msdn.microsoft.com/library/windows/desktop/dd318479) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Receives information about the object that has the focus. See *pvarID* in [IAccessible::get_accFocus](http://msdn.microsoft.com/library/windows/desktop/dd318479) in the Windows SDK.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accFocus** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accFocus** in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see [IAccessible::get_accFocus](http://msdn.microsoft.com/library/windows/desktop/dd318479) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accFocus](http://msdn.microsoft.com/library/windows/desktop/dd318479) in the Windows SDK.  
   
 ##  <a name="get_acchelp"></a>  CWnd::get_accHelp  
  Called by the framework to retrieve an object's **Help** property string.  
@@ -2310,14 +2310,14 @@ virtual HRESULT get_accHelp(
  Address of a `BSTR` that receives the localized string containing the help information for the specified object, or NULL if no help information is available.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accHelp](http://msdn.microsoft.com/library/windows/desktop/dd318480) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accHelp](http://msdn.microsoft.com/library/windows/desktop/dd318480) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class to provide help text for your object.  
   
- For more information, see [IAccessible::get_accHelp](http://msdn.microsoft.com/library/windows/desktop/dd318480) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accHelp](http://msdn.microsoft.com/library/windows/desktop/dd318480) in the Windows SDK.  
   
 ##  <a name="get_acchelptopic"></a>  CWnd::get_accHelpTopic  
  Called by the framework to retrieve the full path of the **WinHelp** file associated with the specified object and the identifier of the appropriate topic within that file.  
@@ -2337,17 +2337,17 @@ virtual HRESULT get_accHelpTopic(
  Specifies whether the Help topic to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain a Help topic for the object) or a child ID (to obtain a Help topic for one of the object's child elements).  
   
  `pidTopic`  
- Identifies the Help file topic associated with the specified object. See `pidTopic` in [IAccessible::get_accHelpTopic](http://msdn.microsoft.com/library/windows/desktop/dd318481) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Identifies the Help file topic associated with the specified object. See `pidTopic` in [IAccessible::get_accHelpTopic](http://msdn.microsoft.com/library/windows/desktop/dd318481) in the Windows SDK.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accHelpTopic** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accHelpTopic** in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class to provide help information about your object.  
   
- For more information, see [IAccessible::get_accHelpTopic](http://msdn.microsoft.com/library/windows/desktop/dd318481) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accHelpTopic](http://msdn.microsoft.com/library/windows/desktop/dd318481) in the Windows SDK.  
   
 ##  <a name="get_acckeyboardshortcut"></a>  CWnd::get_accKeyboardShortcut  
  Called by the framework to retrieve the specified object's shortcut key or access key.  
@@ -2366,14 +2366,14 @@ virtual HRESULT get_accKeyboardShortcut(
  Address of a `BSTR` that receives a localized string identifying the keyboard shortcut, or NULL if no keyboard shortcut is associated with the specified object.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accKeyboardShortcut](http://msdn.microsoft.com/library/windows/desktop/dd318482) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accKeyboardShortcut](http://msdn.microsoft.com/library/windows/desktop/dd318482) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class to identify the keyboard shortcut for your object.  
   
- For more information, see [IAccessible::get_accKeyboardShortcut](http://msdn.microsoft.com/library/windows/desktop/dd318482) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accKeyboardShortcut](http://msdn.microsoft.com/library/windows/desktop/dd318482) in the Windows SDK.  
   
 ##  <a name="get_accname"></a>  CWnd::get_accName  
  Called by the framework to retrieve the name of the specified object.  
@@ -2392,14 +2392,14 @@ virtual HRESULT get_accName(
  Address of a `BSTR` that receives a string containing the specified object's name.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accName](http://msdn.microsoft.com/library/windows/desktop/dd318483) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accName](http://msdn.microsoft.com/library/windows/desktop/dd318483) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class to return the name of your object.  
   
- For more information, see [IAccessible::get_accName](http://msdn.microsoft.com/library/windows/desktop/dd318483) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accName](http://msdn.microsoft.com/library/windows/desktop/dd318483) in the Windows SDK.  
   
 ##  <a name="get_accparent"></a>  CWnd::get_accParent  
  Called by the framework to retrieve the `IDispatch` interface of the object's parent.  
@@ -2413,14 +2413,14 @@ virtual HRESULT get_accParent(IDispatch** ppdispParent);
  Receives the address of the parent object's `IDispatch` interface. The variable is set to NULL if no parent exists, or if the child cannot access its parent.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accParent](http://msdn.microsoft.com/library/windows/desktop/dd318484) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accParent](http://msdn.microsoft.com/library/windows/desktop/dd318484) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  In most cases you don't have to override this function.  
   
- For more information, see [IAccessible::get_accParent](http://msdn.microsoft.com/library/windows/desktop/dd318484) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accParent](http://msdn.microsoft.com/library/windows/desktop/dd318484) in the Windows SDK.  
   
 ##  <a name="get_accrole"></a>  CWnd::get_accRole  
  Called by the framework to retrieve information that describes the role of the specified object.  
@@ -2436,17 +2436,17 @@ virtual HRESULT get_accRole(
  Specifies whether the role information to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).  
   
  `pvarRole`  
- Receives the role information. See `pvarRole` in [IAccessible::get_accRole](http://msdn.microsoft.com/library/windows/desktop/dd318485) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Receives the role information. See `pvarRole` in [IAccessible::get_accRole](http://msdn.microsoft.com/library/windows/desktop/dd318485) in the Windows SDK.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accRole** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accRole** in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see [IAccessible::get_accRole](http://msdn.microsoft.com/library/windows/desktop/dd318485) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accRole](http://msdn.microsoft.com/library/windows/desktop/dd318485) in the Windows SDK.  
   
 ##  <a name="get_accselection"></a>  CWnd::get_accSelection  
  Called by the framework to retrieve the selected children of this object.  
@@ -2457,17 +2457,17 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
   
 ### Parameters  
  `pvarChildren`  
- Receives information about which children are selected. See `pvarChildren` in [IAccessible::get_accSelection](http://msdn.microsoft.com/library/windows/desktop/dd318486) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Receives information about which children are selected. See `pvarChildren` in [IAccessible::get_accSelection](http://msdn.microsoft.com/library/windows/desktop/dd318486) in the Windows SDK.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accSelection** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accSelection** in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see [IAccessible::get_accSelection](http://msdn.microsoft.com/library/windows/desktop/dd318486) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accSelection](http://msdn.microsoft.com/library/windows/desktop/dd318486) in the Windows SDK.  
   
 ##  <a name="get_accstate"></a>  CWnd::get_accState  
  Called by the framework to retrieve the current state of the specified object.  
@@ -2483,17 +2483,17 @@ virtual HRESULT get_accState(
  Specifies whether the state information to be retrieved is that of the object or one of the object's child elements. This parameter can be either CHILDID_SELF (to obtain information about the object) or a child ID (to obtain information about the object's child element).  
   
  `pvarState`  
- Receives information about the object's state. See `pvarState` in [IAccessible::get_accState](http://msdn.microsoft.com/library/windows/desktop/dd318487) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Receives information about the object's state. See `pvarState` in [IAccessible::get_accState](http://msdn.microsoft.com/library/windows/desktop/dd318487) in the Windows SDK.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accState** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in **IAccessible::get_accState** in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see [IAccessible::get_accState](http://msdn.microsoft.com/library/windows/desktop/dd318487) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accState](http://msdn.microsoft.com/library/windows/desktop/dd318487) in the Windows SDK.  
   
 ##  <a name="get_accvalue"></a>  CWnd::get_accValue  
  Called by the framework to retrieve the value of the specified object.  
@@ -2512,14 +2512,14 @@ virtual HRESULT get_accValue(
  Address of the `BSTR` that receives a localized string containing the object's current value.  
   
 ### Return Value  
- Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accValue](http://msdn.microsoft.com/library/windows/desktop/dd318488) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Returns S_OK on success, a COM error code on failure. See **Return Values** in [IAccessible::get_accValue](http://msdn.microsoft.com/library/windows/desktop/dd318488) in the Windows SDK.  
   
 ### Remarks  
  This function is part of MFC's [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) support.  
   
  Override this function in your `CWnd`-derived class if you have nonwindowed user interface elements (other than windowless ActiveX controls, which MFC handles).  
   
- For more information, see [IAccessible::get_accValue](http://msdn.microsoft.com/library/windows/desktop/dd318488) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IAccessible::get_accValue](http://msdn.microsoft.com/library/windows/desktop/dd318488) in the Windows SDK.  
   
 ##  <a name="getactivewindow"></a>  CWnd::GetActiveWindow  
  Retrieves a pointer to the active window.  
@@ -2549,7 +2549,7 @@ CWnd* GetAncestor(UINT gaFlags) const;
  If the function succeeds, the return value is a pointer to the ancestor window object. If the function fails, the return value is **NULL**.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetAncestor](http://msdn.microsoft.com/library/windows/desktop/ms633502), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetAncestor](http://msdn.microsoft.com/library/windows/desktop/ms633502), as described in the Windows SDK.  
   
 ##  <a name="getcapture"></a>  CWnd::GetCapture  
  Retrieves the window that has the mouse capture.  
@@ -2736,7 +2736,7 @@ CDC* GetDCEx(
   
  A device context with special characteristics is returned by the [GetDCEx](http://msdn.microsoft.com/library/windows/desktop/dd144873) function if the **CS_CLASSDC**, [CS_OWNDC](http://msdn.microsoft.com/library/windows/desktop/ms633576), or [CS_PARENTDC](http://msdn.microsoft.com/library/windows/desktop/ms633576) style was specified in the [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure when the class was registered.  
   
- For more information about these characteristics, see the description of the **WNDCLASS** structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about these characteristics, see the description of the **WNDCLASS** structure in the Windows SDK.  
   
 ##  <a name="getdcrendertarget"></a>  CWnd::GetDCRenderTarget  
  Retrieves the device context (DC) render target for the `CWnd` window.  
@@ -3035,7 +3035,7 @@ BOOL GetLayeredWindowAttributes(
  Nonzero if the function succeeds; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633508), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633508), as described in the Windows SDK.  
   
 ##  <a name="getmenu"></a>  CWnd::GetMenu  
  Retrieves a pointer to the menu for this window.  
@@ -3079,7 +3079,7 @@ BOOL GetMenuBarInfo(
  Nonzero if the function succeeds; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetMenuBarInfo](http://msdn.microsoft.com/library/windows/desktop/ms647833), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetMenuBarInfo](http://msdn.microsoft.com/library/windows/desktop/ms647833), as described in the Windows SDK.  
   
 ##  <a name="getnextdlggroupitem"></a>  CWnd::GetNextDlgGroupItem  
  Searches for the previous or next control within a group of controls in a dialog box.  
@@ -3217,7 +3217,7 @@ CWnd* GetParent() const;
 ```  
   
 ### Return Value  
- See the Return Values section in [GetParent](http://msdn.microsoft.com/library/windows/desktop/ms633510) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See the Return Values section in [GetParent](http://msdn.microsoft.com/library/windows/desktop/ms633510) in the Windows SDK.  
   
 ### Remarks  
  The `GetParent` function returns a pointer to the immediate parent (if it exists). In contrast, the [GetParentOwner](#getparentowner) function returns a pointer to the most immediate parent or owner window that is not a child window (does not have the **WS_CHILD** style). If you have a child window within a child window `GetParent` and `GetParentOwner` return different results.  
@@ -3367,7 +3367,7 @@ BOOL GetScrollBarInfo(
  Nonzero if the function succeeds; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetScrollBarInfo](http://msdn.microsoft.com/library/windows/desktop/bb787581), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetScrollBarInfo](http://msdn.microsoft.com/library/windows/desktop/bb787581), as described in the Windows SDK.  
   
 ##  <a name="getscrollinfo"></a>  CWnd::GetScrollInfo  
  Call this member function to retrieve the information that the `SCROLLINFO` structure maintains about a scroll bar.  
@@ -3390,7 +3390,7 @@ BOOL GetScrollInfo(
 - **SB_VERT** Retrieves the parameters for the window's standard vertical scroll bar.  
   
  `lpScrollInfo`  
- A pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure. See the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about this structure.  
+ A pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure. See the Windows SDK for more information about this structure.  
   
  `nMask`  
  Specifies the scroll bar parameters to retrieve. The default specifies a combination of **SIF_PAGE**, **SIF_POS**, **SIF_TRACKPOS**, and **SIF_RANGE**. See `SCROLLINFO` for more information on the *nMask* values.  
@@ -3401,7 +3401,7 @@ BOOL GetScrollInfo(
 ### Remarks  
  `GetScrollInfo` enables applications to use 32-bit scroll positions.  
   
- The [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about changing the structure defaults.  
+ The [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the Windows SDK for more information about changing the structure defaults.  
   
  The MFC Windows message handlers that indicate scroll-bar position, [CWnd::OnHScroll](#onhscroll) and [CWnd::OnVScroll](#onvscroll), provide only 16 bits of position data. `GetScrollInfo` and `SetScrollInfo` provide 32 bits of scroll-bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll-bar position data.  
   
@@ -3523,7 +3523,7 @@ BOOL GetTitleBarInfo(PTITLEBARINFO pti) const;
  Pointer to a [TITLEBARINFO](http://msdn.microsoft.com/library/windows/desktop/ms632608) structure that receives the information.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetTitleBarInfo](http://msdn.microsoft.com/library/windows/desktop/ms633513), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetTitleBarInfo](http://msdn.microsoft.com/library/windows/desktop/ms633513), as described in the Windows SDK.  
   
 ##  <a name="gettoplevelframe"></a>  CWnd::GetTopLevelFrame  
  Call this member function to retrieve the window's top level frame window, if any.  
@@ -3728,7 +3728,7 @@ BOOL GetWindowInfo(PWINDOWINFO pwi) const;
  A pointer to a [WINDOWINFO](http://msdn.microsoft.com/library/windows/desktop/ms632610) structure.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetWindowInfo](http://msdn.microsoft.com/library/windows/desktop/ms633516), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetWindowInfo](http://msdn.microsoft.com/library/windows/desktop/ms633516), as described in the Windows SDK.  
   
 ##  <a name="getwindowlesschildcount"></a>  CWnd::GetWindowlessChildCount  
  Retrieves the number of associated windowless child windows.  
@@ -3911,7 +3911,7 @@ virtual void HtmlHelp(
  Specifies additional data. The value used depends on the value of the `nCmd` parameter.  
   
  `nCmd`  
- Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the `uCommand` parameter described in the HTML Help API Reference in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the `uCommand` parameter described in the HTML Help API Reference in the Windows SDK.  
   
 ### Remarks  
  See [CWinApp::HtmlHelp](../../mfc/reference/cwinapp-class.md#htmlhelp) for more information.  
@@ -4294,7 +4294,7 @@ int MessageBox(
  Specifies the contents and behavior of the message box.  
   
 ### Return Value  
- This method utilizes the [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) function as defined in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This method returns the result of calling this function.  
+ This method utilizes the [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) function as defined in the Windows SDK. This method returns the result of calling this function.  
   
 ### Remarks  
  Use the global function [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) instead of this member function to implement a message box in your application.  
@@ -4335,7 +4335,7 @@ BOOL ModifyStyle(
  Nonzero if style was successfully modified; otherwise, 0.  
   
 ### Remarks  
- Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Window Styles](http://msdn.microsoft.com/library/windows/desktop/ms632600) and [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for information about the available window styles.  
+ Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Window Styles](http://msdn.microsoft.com/library/windows/desktop/ms632600) and [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for information about the available window styles.  
   
  If `nFlags` is nonzero, `ModifyStyle` calls the Windows API function [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) and redraws the window by combining `nFlags` with the following four preset flags:  
   
@@ -4379,7 +4379,7 @@ BOOL ModifyStyleEx(
  Nonzero if style was successfully modified; otherwise, 0.  
   
 ### Remarks  
- Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Extended Window Styles](../../mfc/reference/extended-window-styles.md) in this book and [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for information about the available extended styles  
+ Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Extended Window Styles](../../mfc/reference/extended-window-styles.md) in this book and [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK for information about the available extended styles  
   
  If `nFlags` is nonzero, `ModifyStyleEx` calls the Windows API function [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) and redraws the window by combining `nFlags` with the following four preset flags:  
   
@@ -4461,7 +4461,7 @@ void NotifyWinEvent(
  Identifies whether the event was generated by an object or a child element of the object. If this value is **CHILDID_SELF**, the event was generated by the object itself. If not, this value is the child ID of the element that generated the event.  
   
 ### Remarks  
- This member function emulates the functionality of the function [NotifyWinEvent](http://msdn.microsoft.com/library/windows/desktop/dd373603), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [NotifyWinEvent](http://msdn.microsoft.com/library/windows/desktop/dd373603), as described in the Windows SDK.  
   
 ##  <a name="onactivate"></a>  CWnd::OnActivate  
  The framework calls this member function when a `CWnd` object is being activated or deactivated.  
@@ -4565,7 +4565,7 @@ afx_msg void OnAppCommand(
 |[in] `nKey`|Indicates any virtual keys that are down, such as the CTRL key or the left mouse button. For a list of possible values, see the keys under the *dwKeys* section of the `lParam` parameter of [WM_APPCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646275). For more information, see the "Message Parameters" subheading in [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).|  
   
 ### Remarks  
- This method receives the [WM_APPCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646275) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_APPCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646275) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -4620,7 +4620,7 @@ afx_msg void OnCaptureChanged(CWnd* pWnd);
 ### Remarks  
  A window receives this message even if it calls [ReleaseCapture](http://msdn.microsoft.com/library/windows/desktop/ms646261) itself. An application should not attempt to set the mouse capture in response to this message. When it receives this message, a window should redraw itself, if necessary, to reflect the new mouse-capture state.  
   
- See the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for information on the `ReleaseCapture` Windows function.  
+ See the Windows SDK for information on the `ReleaseCapture` Windows function.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -4676,7 +4676,7 @@ afx_msg void OnChangeUIState(
 - **UISF_ACTIVE Windows XP:** A control should be drawn in the style used for active controls.  
   
 ### Remarks  
- This member function emulates the functionality of the [WM_CHANGEUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646342) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [WM_CHANGEUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646342) message, as described in the Windows SDK.  
   
 ##  <a name="onchar"></a>  CWnd::OnChar  
  The framework calls this member function when a keystroke translates to a nonsystem character.  
@@ -4821,7 +4821,7 @@ afx_msg void OnColorizationColorChanged(
 |[in] `bOpacity`|`true` if the new color is blended with opacity; `false` if it is not.|  
   
 ### Remarks  
- This method receives the [WM_DWMNCRENDERINGCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388198) notification message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_DWMNCRENDERINGCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388198) notification message, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -4915,7 +4915,7 @@ afx_msg void OnCompositionChanged();
 ```  
   
 ### Remarks  
- This method receives the [WM_DWMCOMPOSITIONCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388199) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_DWMCOMPOSITIONCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388199) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -5368,7 +5368,7 @@ afx_msg void OnEnterSizeMove();
 ```  
   
 ### Remarks  
- This method receives the [WM_ENTERSIZEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms632622) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_ENTERSIZEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms632622) notification, which is described in the Windows SDK.  
   
  A window enters a moving or sizing modal loop when the user clicks the window's title bar or sizing border, or when the window passes the [WM_SYSCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646360) message to the [CWnd::DefWindowProc](#defwindowproc) function and the `wParam` parameter of that message specifies `SC_MOVE` or `SC_SIZE`.  
   
@@ -5427,7 +5427,7 @@ afx_msg void OnExitSizeMove();
 ```  
   
 ### Remarks  
- This method receives the [WM_EXITSIZEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms632623) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_EXITSIZEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms632623) notification, which is described in the Windows SDK.  
   
  A window enters a moving or sizing modal loop when the user clicks the window's title bar or sizing border, or when the window passes the [WM_SYSCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646360) message to the [CWnd::DefWindowProc](#defwindowproc) function and the `wParam` parameter of that message specifies `SC_MOVE` or `SC_SIZE`.  
   
@@ -5578,7 +5578,7 @@ afx_msg void OnHotKey(
 |[in] `nKey2`|The virtual key code of the hot key.|  
   
 ### Remarks  
- This method receives the [WM_HOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646279) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This message is placed at the top of the message queue associated with the thread that registered the hot key. Use the [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309) function to register a system-wide hot key.  
+ This method receives the [WM_HOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646279) notification, which is described in the Windows SDK. This message is placed at the top of the message queue associated with the thread that registered the hot key. Use the [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309) function to register a system-wide hot key.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -5752,7 +5752,7 @@ afx_msg void OnInputDeviceChange(unsigned short uFlag);
 |[in] `uFlag`|This flag can contain the following values:<br /><br /> - `GIDC_ARRIVAL` - A new device has been added to the system.<br />- `GIDC_REMOVAL` - A device has been removed from the system.|  
   
 ### Remarks  
- This method receives the [WM_INPUT_DEVICE_CHANGE](http://msdn.microsoft.com/library/windows/desktop/ms645591) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The is a generic input device message.  
+ This method receives the [WM_INPUT_DEVICE_CHANGE](http://msdn.microsoft.com/library/windows/desktop/ms645591) notification, which is described in the Windows SDK. The is a generic input device message.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -5774,7 +5774,7 @@ afx_msg void OnInputLangChange(
 |[in] `nLocaleId`|The input locale identifier. For more information, see [Language Identifier Constants and Strings](http://msdn.microsoft.com/library/windows/desktop/dd318693).|  
   
 ### Remarks  
- This method receives the [WM_INPUTLANGCHANGE](http://msdn.microsoft.com/library/windows/desktop/ms632629) notification message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_INPUTLANGCHANGE](http://msdn.microsoft.com/library/windows/desktop/ms632629) notification message, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -5796,7 +5796,7 @@ afx_msg void OnInputLangChangeRequest(
 |[in] `nLocaleId`|The input locale identifier. For more information, see [Language Identifier Constants and Strings](http://msdn.microsoft.com/library/windows/desktop/dd318693).|  
   
 ### Remarks  
- This method receives the [WM_INPUTLANGCHANGEREQUEST](http://msdn.microsoft.com/library/windows/desktop/ms632630) notification message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This message is posted when the user chooses a new input language with either a hotkey that is specified in the keyboard control panel application, or from the indicator on the system taskbar.  
+ This method receives the [WM_INPUTLANGCHANGEREQUEST](http://msdn.microsoft.com/library/windows/desktop/ms632630) notification message, which is described in the Windows SDK. This message is posted when the user chooses a new input language with either a hotkey that is specified in the keyboard control panel application, or from the indicator on the system taskbar.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6200,7 +6200,7 @@ afx_msg UINT OnMenuDrag(
 |`MND_ENDMENU`|The menu should be ended.|  
   
 ### Remarks  
- This method receives the [WM_MENUDRAG](http://msdn.microsoft.com/library/windows/desktop/ms647606) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_MENUDRAG](http://msdn.microsoft.com/library/windows/desktop/ms647606) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6226,7 +6226,7 @@ afx_msg UINT OnMenuGetObject(MENUGETOBJECTINFO* pMenuGetObjectInfo);
 |`MNGO_NOINTERFACE`|No drop-and-drag interface is supported.|  
   
 ### Remarks  
- This method receives the [WM_MENUGETOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms647607) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_MENUGETOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms647607) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6248,7 +6248,7 @@ afx_msg void OnMenuRButtonUp(
 |[in] `pMenu`|Pointer to the [CMenu](../../mfc/reference/cmenu-class.md) object that contains the menu item.|  
   
 ### Remarks  
- This method receives the [WM_MENURBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms647610) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The [WM_MENURBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms647610) message enables an application to provide a context-sensitive menu for the menu item specified in the message.  
+ This method receives the [WM_MENURBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms647610) notification, which is described in the Windows SDK. The [WM_MENURBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms647610) message enables an application to provide a context-sensitive menu for the menu item specified in the message.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6356,7 +6356,7 @@ afx_msg void OnMouseHover(
 |[in] `point`|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that specifies the *x* and *y* coordinates of the cursor relative to the upper-left corner of the client area.|  
   
 ### Remarks  
- This method receives the [WM_MOUSEHOVER](http://msdn.microsoft.com/library/windows/desktop/ms645613) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_MOUSEHOVER](http://msdn.microsoft.com/library/windows/desktop/ms645613) notification, which is described in the Windows SDK.  
   
  The `nFlags` parameter can be a combination of modifier keys listed in the following table. For more information, see [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
@@ -6392,7 +6392,7 @@ afx_msg void OnMouseHWheel(
 |[in] `pt`|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that specifies the *x* and *y* coordinates of the cursor relative to the upper-left corner of the client area.|  
   
 ### Remarks  
- This method receives the [WM_MOUSEHWHEEL](http://msdn.microsoft.com/library/windows/desktop/ms645614) notification message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This message is sent to the window that has the focus when the mouse's horizontal scroll wheel is tilted or rotated.  
+ This method receives the [WM_MOUSEHWHEEL](http://msdn.microsoft.com/library/windows/desktop/ms645614) notification message, which is described in the Windows SDK. This message is sent to the window that has the focus when the mouse's horizontal scroll wheel is tilted or rotated.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6405,7 +6405,7 @@ afx_msg void OnMouseLeave();
 ```  
   
 ### Remarks  
- This method receives the [WM_MOUSELEAVE](http://msdn.microsoft.com/library/windows/desktop/ms645615) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_MOUSELEAVE](http://msdn.microsoft.com/library/windows/desktop/ms645615) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6773,7 +6773,7 @@ afx_msg void OnNcMouseHover(
 |[in] `point`|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that specifies the *x* and *y* coordinates of the cursor relative to the upper-left corner of the screen.|  
   
 ### Remarks  
- This method receives the [WM_NCMOUSEHOVER](http://msdn.microsoft.com/library/windows/desktop/ms645625) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_NCMOUSEHOVER](http://msdn.microsoft.com/library/windows/desktop/ms645625) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6786,7 +6786,7 @@ afx_msg void OnNcMouseLeave();
 ```  
   
 ### Remarks  
- This method receives the [WM_NCMOUSELEAVE](http://msdn.microsoft.com/library/windows/desktop/ms645626) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_NCMOUSELEAVE](http://msdn.microsoft.com/library/windows/desktop/ms645626) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6902,7 +6902,7 @@ afx_msg void OnNcRenderingChanged(BOOL bIsRendering);
 |[in] `bIsRendering`|`true` if Desktop Window Manager (DWM) rendering is enabled for the nonclient area of the window; `false` if rendering is disabled.|  
   
 ### Remarks  
- This method receives the [WM_DWMNCRENDERINGCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388200) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_DWMNCRENDERINGCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388200) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6926,7 +6926,7 @@ void OnNcXButtonDblClk(
 |[in] `point`|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that specifies the *x* and *y* coordinates of the cursor relative to the upper-left corner of the client area.|  
   
 ### Remarks  
- This method receives the [WM_XBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms646244) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.  
+ This method receives the [WM_XBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms646244) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6950,7 +6950,7 @@ afx_msg void OnNcXButtonDown(
 |[in] `point`|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that specifies the *x* and *y* coordinates of the cursor relative to the upper-left corner of the screen.|  
   
 ### Remarks  
- This method receives the [WM_NCXBUTTONDOWN](http://msdn.microsoft.com/library/windows/desktop/ms645632) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.  
+ This method receives the [WM_NCXBUTTONDOWN](http://msdn.microsoft.com/library/windows/desktop/ms645632) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6974,7 +6974,7 @@ afx_msg void OnNcXButtonUp(
 |[in] `point`|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that specifies the *x* and *y* coordinates of the cursor relative to the upper-left corner of the screen.|  
   
 ### Remarks  
- This method receives the [WM_NCXBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms646240) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.  
+ This method receives the [WM_NCXBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms646240) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6996,7 +6996,7 @@ afx_msg void OnNextMenu(
 |[in] `lpMdiNextMenu`|Pointer to a [MDINEXTMENU](http://msdn.microsoft.com/library/windows/desktop/ms647561) structure that contains information about the menu to be activated.|  
   
 ### Remarks  
- This method receives the [WM_UNINITMENUPOPUP](http://msdn.microsoft.com/library/windows/desktop/ms647614) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. In response to this message, your application can set the `hmenuNext` member of the [MDINEXTMENU](http://msdn.microsoft.com/library/windows/desktop/ms647561) structure to specify the menu to switch to, and the `hwndNext` member to specify the window to receive menu notification messages.  
+ This method receives the [WM_UNINITMENUPOPUP](http://msdn.microsoft.com/library/windows/desktop/ms647614) notification, which is described in the Windows SDK. In response to this message, your application can set the `hmenuNext` member of the [MDINEXTMENU](http://msdn.microsoft.com/library/windows/desktop/ms647561) structure to specify the menu to switch to, and the `hwndNext` member to specify the window to receive menu notification messages.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -7056,7 +7056,7 @@ afx_msg UINT OnNotifyFormat(
 |0|An error occurred.|  
   
 ### Remarks  
- This method receives the [WM_NOTIFYFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb775584) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. **WM_NOTIFY** messages are sent from a common control to its parent window, and from the parent window to the common control.  
+ This method receives the [WM_NOTIFYFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb775584) notification, which is described in the Windows SDK. **WM_NOTIFY** messages are sent from a common control to its parent window, and from the parent window to the common control.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -7079,7 +7079,7 @@ afx_msg void OnPaint();
   
  For information on rendering an image in document/view applications, see [CView::OnDraw](../../mfc/reference/cview-class.md#ondraw).  
   
- For more information about using **WM_Paint**, see the following topics in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]:  
+ For more information about using **WM_Paint**, see the following topics in the Windows SDK:  
   
 - [The WM_PAINT Message](http://msdn.microsoft.com/library/windows/desktop/dd145137)  
   
@@ -7200,7 +7200,7 @@ afx_msg UINT OnPowerBroadcast(
  If the event is a request, return `true` to grant the request, or `BROADCAST_QUERY_DENY` to deny the request.  
   
 ### Remarks  
- This method receives the [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) message, which is described in the Windows SDK.  
   
  The `nPowerEvent` parameter specifies events such as battery power is low, the power status has changed, permission to suspend operation is requested or denied, an operation is resuming automatically after an event, the system is suspending operation, or an operation is resuming after suspension. The `nEventData` parameter is typically not used. For more information, see the `wParam` and `lParam` parameters of the [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) message.  
   
@@ -7273,7 +7273,7 @@ afx_msg UINT OnQueryUIState();
 - **UISF_ACTIVE Windows XP:** A control should be drawn in the style used for active controls.  
   
 ### Remarks  
- This member function emulates the functionality of the [WM_QUERYUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646355) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [WM_QUERYUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646355) message, as described in the Windows SDK.  
   
 ##  <a name="onrawinput"></a>  CWnd::OnRawInput  
  The framework calls this member function when the current window gets raw input.  
@@ -7292,7 +7292,7 @@ afx_msg void OnRawInput(
 |[in] `hRawInput`|Handle to a [RAWINPUT](http://msdn.microsoft.com/library/windows/desktop/ms645562) structure that contains the raw input from the device.|  
   
 ### Remarks  
- This method receives the [WM_INPUT](http://msdn.microsoft.com/library/windows/desktop/ms646275) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_INPUT](http://msdn.microsoft.com/library/windows/desktop/ms646275) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -7458,7 +7458,7 @@ afx_msg void OnSessionChange(
 |[in] `nId`|A session identifier.|  
   
 ### Remarks  
- This method receives the [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/library/aa383828) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/library/aa383828) notification, which is described in the Windows SDK.  
   
  The `nSessionState` parameter specifies that a session is connected or disconnected from the console or a remote terminal, a user logged on or off, a session is locked or unlocked, or a session has changed to remote-controlled status. For more information, see the `wParam` parameter of the the [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/library/aa383828) message.  
   
@@ -7528,7 +7528,7 @@ afx_msg void OnSettingChange(
   
 ### Parameters  
  `uFlags`  
- When the system sends the message as a result of a **SystemParametersInfo** call, this parameter is a flag that indicates the system parameter that was changed. For a list of values, see [SystemParametersInfo](http://msdn.microsoft.com/library/windows/desktop/ms724947) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When an application sends the message, this parameter must be 0.  
+ When the system sends the message as a result of a **SystemParametersInfo** call, this parameter is a flag that indicates the system parameter that was changed. For a list of values, see [SystemParametersInfo](http://msdn.microsoft.com/library/windows/desktop/ms724947) in the Windows SDK. When an application sends the message, this parameter must be 0.  
   
  `lpszSection`  
  Points to a string that specifies the name of the section that has changed. (The string does not include the square brackets that enclose the section name.)  
@@ -8084,7 +8084,7 @@ virtual INT_PTR OnToolHitTest(
   
  Override `OnToolHitTest` to provide different information than the default provides.  
   
- See [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256), in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)], for more information about the structure.  
+ See [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256), in the Windows SDK, for more information about the structure.  
   
 ##  <a name="ontouchinput"></a>  CWnd::OnTouchInput  
  Process single input from Windows touch.  
@@ -8155,7 +8155,7 @@ afx_msg void OnUniChar(
 |[in] `nFlags`|Flags that specify the scan code, extended key, context code, previous key state, and transition state, as shown in the following table:<br /><br /> **0-7:** Specifies the scan code. The value depends on the original equipment manufacturer (OEM).<br /><br /> **8:** Specifies an extended key, such as the right-hand ALT and CTRL keys that appear on an enhanced 101 or 102-key keyboard. The flag is 1 if the key is an extended key; otherwise, it is 0.<br /><br /> **9-12:**  Used internally by Windows.<br /><br /> **13:**  Specifies the context code. The flag is 1 if the ALT key is held down while the key is pressed; otherwise, the value is 0.<br /><br /> **14:**  Specifies the previous key state. The flag is 1 if the key is down before the message is sent, or 0 if the key is up.<br /><br /> **15:**  Specifies the transition state. The flag is 1 if the key is being released, or 0 if the key is being pressed.|  
   
 ### Remarks  
- This method receives the [WM_UNICHAR](http://msdn.microsoft.com/library/windows/desktop/ms646288) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The [WM_UNICHAR](http://msdn.microsoft.com/library/windows/desktop/ms646288) message is designed to send or post Unicode characters to ANSI windows. It is equivalent to the [WM_CHAR](http://msdn.microsoft.com/library/windows/desktop/ms646276) message, but uses Unicode Transformation Format-32 encoding (UTF-32), whereas the [WM_CHAR](http://msdn.microsoft.com/library/windows/desktop/ms646276) message uses UTF-16.  
+ This method receives the [WM_UNICHAR](http://msdn.microsoft.com/library/windows/desktop/ms646288) notification, which is described in the Windows SDK. The [WM_UNICHAR](http://msdn.microsoft.com/library/windows/desktop/ms646288) message is designed to send or post Unicode characters to ANSI windows. It is equivalent to the [WM_CHAR](http://msdn.microsoft.com/library/windows/desktop/ms646276) message, but uses Unicode Transformation Format-32 encoding (UTF-32), whereas the [WM_CHAR](http://msdn.microsoft.com/library/windows/desktop/ms646276) message uses UTF-16.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -8177,7 +8177,7 @@ afx_msg void OnUnInitMenuPopup(
 |[in] `nFlags`|The menu that was destroyed. Currently, it can only be the window menu, `MF_SYSMENU`.|  
   
 ### Remarks  
- This method receives the [WM_UNINITMENUPOPUP](http://msdn.microsoft.com/library/windows/desktop/ms647614) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_UNINITMENUPOPUP](http://msdn.microsoft.com/library/windows/desktop/ms647614) notification, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -8211,7 +8211,7 @@ afx_msg void OnUpdateUIState(
 - **UISF_ACTIVE Windows XP:** A control should be drawn in the style used for active controls.  
   
 ### Remarks  
- This member function emulates the functionality of the [WM_UPDATEUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646361) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [WM_UPDATEUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646361) message, as described in the Windows SDK.  
   
 ##  <a name="onuserchanged"></a>  CWnd::OnUserChanged  
  The framework calls this member for all windows after the user has logged on or off.  
@@ -8221,7 +8221,7 @@ afx_msg void OnUserChanged();
 ```  
   
 ### Remarks  
- This method receives the [WM_USERCHANGED](http://msdn.microsoft.com/library/windows/desktop/ms632651) notification message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. When the user logs on or off, the operating system updates user-specific settings. The system sends this message immediately after updating the settings.  
+ This method receives the [WM_USERCHANGED](http://msdn.microsoft.com/library/windows/desktop/ms632651) notification message, which is described in the Windows SDK. When the user logs on or off, the operating system updates user-specific settings. The system sends this message immediately after updating the settings.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -8357,7 +8357,7 @@ afx_msg void OnWindowMaximizedChanged(BOOL bIsMaximized);
 |[in] `bIsMaximized`|`true` if the current window is maximized, and `false` if it is not.|  
   
 ### Remarks  
- This method receives the [WM_DWMWINDOWMAXIMIZEDCHANGE](http://msdn.microsoft.com/library/windows/desktop/dd388201) notification message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method receives the [WM_DWMWINDOWMAXIMIZEDCHANGE](http://msdn.microsoft.com/library/windows/desktop/dd388201) notification message, which is described in the Windows SDK.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -8472,7 +8472,7 @@ afx_msg void OnXButtonDblClk(
 |[in] `point`|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that specifies the *x* and *y* coordinates of the cursor relative to the upper-left corner of the client area.|  
   
 ### Remarks  
- This method receives the [WM_XBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms646244) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.  
+ This method receives the [WM_XBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms646244) notification, which is described in the Windows SDK. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.  
   
  The `nFlags` parameter can be a combination of modifier keys listed in the following table. For more information, see [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
@@ -8508,7 +8508,7 @@ afx_msg void OnXButtonDown(
 |[in] `point`|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that specifies the *x* and *y* coordinates of the cursor relative to the upper-left corner of the client area.|  
   
 ### Remarks  
- This method receives the [WM_XBUTTONDOWN](http://msdn.microsoft.com/library/windows/desktop/ms646245) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.  
+ This method receives the [WM_XBUTTONDOWN](http://msdn.microsoft.com/library/windows/desktop/ms646245) notification, which is described in the Windows SDK. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.  
   
  The `nFlags` parameter can be a combination of modifier keys listed in the following table. For more information, see [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
@@ -8544,7 +8544,7 @@ afx_msg void OnXButtonUp(
 |[in] `point`|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object that specifies the *x* and *y* coordinates of the cursor relative to the upper-left corner of the client area.|  
   
 ### Remarks  
- This method receives the [WM_XBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms646246) notification, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.  
+ This method receives the [WM_XBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms646246) notification, which is described in the Windows SDK. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.  
   
  The `nFlags` parameter can be a combination of modifier keys listed in the following table. For more information, see [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
@@ -8816,7 +8816,7 @@ BOOL PrintWindow(
  Nonzero if the function succeeds; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [PrintWindow](http://msdn.microsoft.com/library/windows/desktop/dd162869), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [PrintWindow](http://msdn.microsoft.com/library/windows/desktop/dd162869), as described in the Windows SDK.  
   
 ##  <a name="redrawwindow"></a>  CWnd::RedrawWindow  
  Updates the specified rectangle or region in the given window's client area.  
@@ -9504,7 +9504,7 @@ BOOL SetLayeredWindowAttributes(
  Nonzero if the function succeeds; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540), as described in the Windows SDK.  
   
 ##  <a name="setmenu"></a>  CWnd::SetMenu  
  Sets the current menu to the specified menu.  
@@ -9627,7 +9627,7 @@ BOOL SetScrollInfo(
 - **SB_VERT** Specifies that the window is a vertical scroll bar.  
   
  `lpScrollInfo`  
- A pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure. See the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about this structure.  
+ A pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure. See the Windows SDK for more information about this structure.  
   
  `bRedraw`  
  Specifies whether the scroll bar should be redrawn to reflect the new position. If `bRedraw` is **TRUE**, the scroll bar is redrawn. If it is **FALSE**, it is not redrawn. The scroll bar is redrawn by default.  
@@ -9636,7 +9636,7 @@ BOOL SetScrollInfo(
  If successful, the return is **TRUE**. Otherwise, it is **FALSE**.  
   
 ### Remarks  
- The [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about changing the structure defaults.  
+ The [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the Windows SDK for more information about changing the structure defaults.  
   
  The MFC Windows message handlers that indicate scroll-bar position, [CWnd::OnHScroll](#onhscroll) and [CWnd::OnVScroll](#onvscroll), provide only 16 bits of position data. [GetScrollInfo](#getscrollinfo) and `SetScrollInfo` provide 32 bits of scroll-bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll-bar position data.  
   
@@ -10193,7 +10193,7 @@ BOOL UpdateLayeredWindow(
  Nonzero if the function succeeds; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [UpdateLayeredWindow](http://msdn.microsoft.com/library/windows/desktop/ms633556), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [UpdateLayeredWindow](http://msdn.microsoft.com/library/windows/desktop/ms633556), as described in the Windows SDK.  
   
 ##  <a name="updatewindow"></a>  CWnd::UpdateWindow  
  Updates the client area by sending a [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message if the update region is not empty.  
@@ -10297,7 +10297,7 @@ virtual void WinHelp(
  Specifies additional data. The value used depends on the value of the `nCmd` parameter.  
   
  `nCmd`  
- Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows function in the Windows SDK.  
   
 ### Remarks  
  See [CWinApp::WinHelp](../../mfc/reference/cwinapp-class.md#winhelp) for more information.  

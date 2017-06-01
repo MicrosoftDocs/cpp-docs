@@ -169,7 +169,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md)|Specifies the precompiled header memory allocation limit.|  
 |[/Zp](../../build/reference/zp-struct-member-alignment.md)|Packs structure members.|  
 |[/Zs](../../build/reference/zs-syntax-check-only.md)|Checks syntax only.|  
-|[/ZW](../../build/reference/zw-windows-runtime-compilation.md)|Produces an output file to run on the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].|  
+|[/ZW](../../build/reference/zw-windows-runtime-compilation.md)|Produces an output file to run on the Windows Runtime.|  
   
 ## See Also  
  [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)   

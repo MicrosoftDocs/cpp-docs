@@ -14,7 +14,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Properties (C++/CX)
-[!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types expose public data as properties. Client code accesses the property like a public datamember. Internally, the property is implemented as a block that contains a get accessor method, a set accessor method, or both. By using the accessor methods, you can perform additional actions before or after you retrieve the value, for example, you could fire an event or perform validation checks.  
+Windows Runtime types expose public data as properties. Client code accesses the property like a public datamember. Internally, the property is implemented as a block that contains a get accessor method, a set accessor method, or both. By using the accessor methods, you can perform additional actions before or after you retrieve the value, for example, you could fire an event or perform validation checks.  
   
 ### Remarks  
  The value of a property is contained in a private variable—known as the *backing store*—which is the same type as the property. A property can contain both a set accessor, which assigns a value to the backing store, and a get accessor that retrieves the value of the backing store. The property is read-only if it provides only a get accessor, write-only if it provides only a set accessor, and read/write (modifiable) if it provides both accessors.  

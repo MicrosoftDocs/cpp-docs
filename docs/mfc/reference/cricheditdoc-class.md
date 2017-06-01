@@ -106,7 +106,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 ### Remarks  
  This function does not perform any OLE initialization.  
   
- For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the Windows SDK.  
   
 ##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat  
  Call this function to determine the text format for streaming the contents of the rich edit.  

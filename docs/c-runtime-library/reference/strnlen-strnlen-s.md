@@ -89,7 +89,7 @@ translation.priority.ht:
 Gets the length of a string by using the current locale or one that has been passed in. These are more secure versions of [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](../../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md).  
   
 > [!IMPORTANT]
->  `_mbsnlen`, `_mbsnlen_l`, `_mbstrnlen`, and `_mbstrnlen_l` cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsnlen`, `_mbsnlen_l`, `_mbstrnlen`, and `_mbstrnlen_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
   
 ## Syntax  
   

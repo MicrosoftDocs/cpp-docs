@@ -83,7 +83,7 @@ class COleDataObject
   
  This class enables you to determine whether the data exists in a specified format. You can also enumerate the available data formats or check whether a given format is available and then retrieve the data in the preferred format. Object retrieval can be accomplished in several different ways, including the use of a [CFile](../../mfc/reference/cfile-class.md), an `HGLOBAL`, or an **STGMEDIUM** structure.  
   
- For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in the Windows SDK.  
   
  For more information about using data objects in your application, see the article [Data Objects and Data Sources (OLE)](../../mfc/data-objects-and-data-sources-ole.md).  
   
@@ -110,7 +110,7 @@ void Attach(
  **TRUE** if the OLE data object should be released when the `COleDataObject` object is destroyed; otherwise **FALSE**.  
   
 ### Remarks  
- For more information, see [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) in the Windows SDK.  
   
 ##  <a name="attachclipboard"></a>  COleDataObject::AttachClipboard  
  Call this function to attach the data object that is currently on the Clipboard to the `COleDataObject` object.  
@@ -139,7 +139,7 @@ void BeginEnumFormats();
   
  To check on the availability of data in a given format, use [COleDataObject::IsDataAvailable](#isdataavailable).  
   
- For more information, see [IDataObject::EnumFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms683979) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDataObject::EnumFormatEtc](http://msdn.microsoft.com/library/windows/desktop/ms683979) in the Windows SDK.  
   
 ##  <a name="coledataobject"></a>  COleDataObject::COleDataObject  
  Constructs a `COleDataObject` object.  
@@ -190,9 +190,9 @@ BOOL GetData(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- For more information, see [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431), [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812), and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431), [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812), and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ##  <a name="getfiledata"></a>  COleDataObject::GetFileData  
  Call this function to create a `CFile` or `CFile`-derived object and to retrieve data in the specified format into a `CFile` pointer.  
@@ -219,9 +219,9 @@ CFile* GetFileData(
 > [!NOTE]
 >  The `CFile` object accessed by the return value of this function is owned by the caller. It is the responsibility of the caller to **delete** the `CFile` object, thereby closing the file.  
   
- For more information, see [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ##  <a name="getglobaldata"></a>  COleDataObject::GetGlobalData  
  Call this function to allocate a global memory block and to retrieve data in the specified format into an `HGLOBAL`.  
@@ -243,9 +243,9 @@ HGLOBAL GetGlobalData(
  The handle of the global memory block containing the data if successful; otherwise **NULL**.  
   
 ### Remarks  
- For more information, see [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ##  <a name="getnextformat"></a>  COleDataObject::GetNextFormat  
  Call this function repeatedly to obtain all the formats available for retrieving data from the item.  
@@ -266,7 +266,7 @@ BOOL GetNextFormat(LPFORMATETC lpFormatEtc);
   
  To check for the availability of a given format, call [COleDataObject::IsDataAvailable](#isdataavailable).  
   
- For more information, see [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) in the Windows SDK.  
   
 ##  <a name="isdataavailable"></a>  COleDataObject::IsDataAvailable  
  Call this function to determine if a particular format is available for retrieving data from the OLE item.  
@@ -290,9 +290,9 @@ BOOL IsDataAvailable(
 ### Remarks  
  This function is useful before calling `GetData`, `GetFileData`, or `GetGlobalData`.  
   
- For more information, see [IDataObject::QueryGetData](http://msdn.microsoft.com/library/windows/desktop/ms680637) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDataObject::QueryGetData](http://msdn.microsoft.com/library/windows/desktop/ms680637) and [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
   
 ### Example  
   See the example for [CRichEditView::QueryAcceptData](../../mfc/reference/cricheditview-class.md#queryacceptdata).  

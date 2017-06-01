@@ -52,9 +52,9 @@ class StringReference
 |[StringReference::operator()](#operator-call)|Converts a `StringReference` to a `Platform::String^`.|  
   
 ### Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   
