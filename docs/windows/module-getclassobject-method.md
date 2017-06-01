@@ -65,7 +65,7 @@ Retreives a cache of class factories.
 ## Return Value  
   
 ## Remarks  
- Use this method only for COM, not the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]. This method exposes only IClassFactory methods.  
+ Use this method only for COM, not the Windows Runtime. This method exposes only IClassFactory methods.  
   
 ## Requirements  
  **Header:** module.h  

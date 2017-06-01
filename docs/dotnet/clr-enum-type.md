@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # CLR Enum Type
-The declaration and behavior of enums has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The declaration and behavior of enums has changed from Managed Extensions for C++ to Visual C++.  
   
  The Managed Extensions enum declaration is preceded by the `__value` keyword. The idea here is to distinguish the native enum from the CLR enum which is derived from `System::ValueType`, while suggesting an analogous functionality. For example:  
   
@@ -96,9 +96,9 @@ int main()
 }  
 ```  
   
- For the native C++ programmer, the natural answer to the question of which instance of the overloaded `f()` is invoked is that of `f(int)`. An enum is a symbolic integral constant, and it participates in the standard integral promotions which take precedence in this case.  And in fact in Managed Extensions this was the instance to which the call resolves. This caused a number of surprises - not when we used them in a native C++ frame of mind - but when we needed them to interact with the existing BCL (Base Class Library) framework, where an `Enum` is a class indirectly derived from `Object`. In the [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] language design, the instance of `f()` invoked is that of `f(Object^)`.  
+ For the native C++ programmer, the natural answer to the question of which instance of the overloaded `f()` is invoked is that of `f(int)`. An enum is a symbolic integral constant, and it participates in the standard integral promotions which take precedence in this case.  And in fact in Managed Extensions this was the instance to which the call resolves. This caused a number of surprises - not when we used them in a native C++ frame of mind - but when we needed them to interact with the existing BCL (Base Class Library) framework, where an `Enum` is a class indirectly derived from `Object`. In the Visual C++ language design, the instance of `f()` invoked is that of `f(Object^)`.  
   
- The way [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] has chosen to enforce this is to not support implicit conversions between a CLR enum type and the arithmetic types. This means that any assignment of an object of a CLR enum type to an arithmetic type will require an explicit cast. So, for example, given  
+ The way Visual C++ has chosen to enforce this is to not support implicit conversions between a CLR enum type and the arithmetic types. This means that any assignment of an object of a CLR enum type to an arithmetic type will require an explicit cast. So, for example, given  
   
 ```  
 void f( int );  
@@ -110,7 +110,7 @@ void f( int );
 f( rslt ); // ok: Managed Extensions; error: new syntax  
 ```  
   
- is ok, and the value contained within `rslt` is implicitly converted into an integer value. In [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)], this call fails to compile. To correctly translate it, we must insert a conversion operator:  
+ is ok, and the value contained within `rslt` is implicitly converted into an integer value. In Visual C++, this call fails to compile. To correctly translate it, we must insert a conversion operator:  
   
 ```  
 f( safe_cast<int>( rslt )); // ok: new syntax  
@@ -182,11 +182,11 @@ public:
 };  
 ```  
   
- This changes the design strategy between a native and a CLR enum. With a CLR enum maintaining an associated scope in [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)], it is neither necessary nor effective to encapsulate the declaration of the enum within a class. This idiom evolved around the time of cfront 2.0 within Bell Laboratories also in order to solve the global name pollution problem.  
+ This changes the design strategy between a native and a CLR enum. With a CLR enum maintaining an associated scope in Visual C++, it is neither necessary nor effective to encapsulate the declaration of the enum within a class. This idiom evolved around the time of cfront 2.0 within Bell Laboratories also in order to solve the global name pollution problem.  
   
  In the original beta release of the new iostream library by Jerry Schwarz at Bell Laboratories, Jerry did not encapsulate all the associated enums defined for the library, and the common enumerators such as `read`, `write`, `append`, and so on, made it nearly impossible for users to compile their existing code. One solution would have been to mangle the names, such as `io_read`, `io_write`, etc. A second solution would have been to modify the language by adding scope to an enum, but this was not practicable at the time. The middle solution was to encapsulate the enum within the class, or class hierarchy, where both the tag name and enumerators of the enum populate the enclosing class scope.) That is, the motivation for placing enums within classes, at least originally, was not philosophical, but a practical response to the global name-space pollution problem.  
   
- With the [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] enum, there is no longer any compelling benefit to encapsulating an enum within a class. In fact, if you look at the `System` namespaces, you will see that enums, classes, and interfaces all inhabit the same declaration space.  
+ With the Visual C++ enum, there is no longer any compelling benefit to encapsulating an enum within a class. In fact, if you look at the `System` namespaces, you will see that enums, classes, and interfaces all inhabit the same declaration space.  
   
 ## See Also  
  [Value Types and Their Behaviors (C++/CLI)](../dotnet/value-types-and-their-behaviors-cpp-cli.md)   

@@ -64,7 +64,7 @@ This article explains the nature and purpose of Windows Sockets. The article als
   
  The Microsoft Foundation Class Library (MFC) supports programming with the Windows Sockets API by supplying two classes. One of these classes, `CSocket`, provides a high level of abstraction to simplify your network communications programming.  
   
- The Windows Sockets specification, Windows Sockets: An Open Interface for Network Computing Under Microsoft Windows, now at version 1.1, was developed as an open networking standard by a large group of individuals and corporations in the TCP/IP community and is freely available for use. The sockets programming model supports one "communication domain" currently, using the Internet Protocol Suite. The specification is available in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ The Windows Sockets specification, Windows Sockets: An Open Interface for Network Computing Under Microsoft Windows, now at version 1.1, was developed as an open networking standard by a large group of individuals and corporations in the TCP/IP community and is freely available for use. The sockets programming model supports one "communication domain" currently, using the Internet Protocol Suite. The specification is available in the Windows SDK.  
   
 > [!TIP]
 >  Because sockets use the Internet Protocol Suite, they are the preferred route for applications that support Internet communications on the "information highway."  
@@ -94,7 +94,7 @@ This article explains the nature and purpose of Windows Sockets. The article als
 ##  <a name="_core_the_socket_data_type"></a> The SOCKET Data Type  
  Each MFC socket object encapsulates a handle to a Windows Sockets object. The data type of this handle is **SOCKET**. A **SOCKET** handle is analogous to the `HWND` for a window. MFC socket classes provide operations on the encapsulated handle.  
   
- The **SOCKET** data type is described in detail in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)]. See "Socket Data Type and Error Values" under Windows Sockets.  
+ The **SOCKET** data type is described in detail in the Windows SDK. See "Socket Data Type and Error Values" under Windows Sockets.  
   
 ##  <a name="_core_uses_for_sockets"></a> Uses for Sockets  
  Sockets are highly useful in at least three communications contexts:  

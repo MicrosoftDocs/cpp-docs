@@ -88,7 +88,7 @@ Returns a schema rowset.
 ## Remarks  
  This method requires the user to have a schema map in the session class. Using the schema map information, `GetRowset` creates a given rowset object if the `rguidSchema` parameter is equal to one of the map entries GUIDs. See [SCHEMA_ENTRY](../../data/oledb/schema-entry.md) for a description of the map entry.  
   
- See [IDBSchemaRowset::GetRowset](https://msdn.microsoft.com/en-us/library/ms722634.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDBSchemaRowset::GetRowset](https://msdn.microsoft.com/en-us/library/ms722634.aspx) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atldb.h  

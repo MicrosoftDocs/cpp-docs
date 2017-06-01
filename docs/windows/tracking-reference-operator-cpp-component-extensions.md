@@ -53,7 +53,7 @@ A *tracking reference* (`%`) behaves like an ordinary C++ reference (`&`) except
   
 -   A tracking reference cannot be used as a unary take-address operator.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  A tracking reference behaves like a standard C++ reference, except that a % is reference-counted. The following snippet shows how to convert between % and ^ types:  
   
 ```  
@@ -81,7 +81,7 @@ ref class Foo sealed {};
     }  
 ```  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  In C++/CLI, you can use a tracking reference to a handle when you bind to an object of a CLR type on the garbage-collected heap.  
   
  In the CLR, the value of a tracking reference variable is updated automatically whenever the garbage collector moves the referenced object.  

@@ -97,7 +97,7 @@ Microsoft provides many APIs for programming both client and server applications
  The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.  
   
 ##  <a name="_core_more_internet_help"></a> More Internet Help  
- The OLE section of the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.  
+ The OLE section of the Windows SDK contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.  
   
 ## See Also  
 

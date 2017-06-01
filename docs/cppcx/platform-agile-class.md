@@ -33,7 +33,7 @@ class Agile;
  The typename for the non-agile class.  
   
 ### Remarks  
- Most of the classes in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] are agile. An agile object can call, or be called by, an in-proc or out-of-proc object in the same or a different thread. If an object is not agile, wrap the non-agile object in a `Agile<T>` object, which is agile. Then the `Agile<T>` object can be marshaled, and the underlying non-agile object can be used.  
+ Most of the classes in the Windows Runtime are agile. An agile object can call, or be called by, an in-proc or out-of-proc object in the same or a different thread. If an object is not agile, wrap the non-agile object in a `Agile<T>` object, which is agile. Then the `Agile<T>` object can be marshaled, and the underlying non-agile object can be used.  
   
  The `Agile<T>` class is a native, standard C++ class and requires `agile.h`. It represents the non-agile object and the Agile object's *context*. The context specifies an agile object's threading model and marshaling behavior. The operating system uses the context to determine how to marshal an object.  
   
@@ -68,9 +68,9 @@ class Agile;
  `Agile`  
   
 ### Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   

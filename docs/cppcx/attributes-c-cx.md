@@ -14,12 +14,12 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Attributes (C++/CX)
-An attribute is a special kind of ref class that can be prepended in square brackets to [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types and methods to specify certain behaviors in metadata creation. Several predefined attributes—for example,  [Windows::Foundation::Metadata::WebHostHidden](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.webhosthiddenattribute.aspx)—are commonly used in C++/CX code. This example shows how the attribute is applied to a class:  
+An attribute is a special kind of ref class that can be prepended in square brackets to Windows Runtime types and methods to specify certain behaviors in metadata creation. Several predefined attributes—for example,  [Windows::Foundation::Metadata::WebHostHidden](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.webhosthiddenattribute.aspx)—are commonly used in C++/CX code. This example shows how the attribute is applied to a class:  
   
  [!code-cpp[cx_attributes#01](../cppcx/codesnippet/CPP/cx_attributes/class1.h#01)]  
   
 ## Custom attributes  
- You can also define custom attributes. Custom attributes must conform to these [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] rules:  
+ You can also define custom attributes. Custom attributes must conform to these Windows Runtime rules:  
   
 -   Custom attributes can contain only public fields.  
   

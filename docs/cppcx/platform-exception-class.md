@@ -54,9 +54,9 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 |[Exception::Message](#message)|A message that describes the exception. This value is read-only and cannot be modified after the `Exception` is constructed.|  
   
 ### Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   
@@ -139,7 +139,7 @@ public:property String^ Message;
  In exceptions that originate in the Windows Runtime, this is a system-supplied description of the error.  
   
 ### Remarks  
- In [!INCLUDE[win8](../cppcx/includes/win8-md.md)], this property is read-only because exceptions in that version of the Windows Runtime are transported across the ABI only as HRESULTS. In [!INCLUDE[win81](../cppcx/includes/win81-md.md)], richer exception information is transported across the ABI and you can provide a custom message that other components can access programmatically. For more information, see [Exceptions (C++/CX)](../cppcx/exceptions-c-cx.md).  
+ In Windows 8, this property is read-only because exceptions in that version of the Windows Runtime are transported across the ABI only as HRESULTS. In Windows 8.1, richer exception information is transported across the ABI and you can provide a custom message that other components can access programmatically. For more information, see [Exceptions (C++/CX)](../cppcx/exceptions-c-cx.md).  
   
 
   

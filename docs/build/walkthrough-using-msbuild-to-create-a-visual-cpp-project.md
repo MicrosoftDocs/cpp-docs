@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Using MSBuild to Create a Visual C++ Project
-This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] to build a [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] project at a command prompt. You will learn how to create the C++ source files and an XML-based project file for a [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] console application. After building the project, you will learn how to customize the build process.  
+This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] to build a Visual C++ project at a command prompt. You will learn how to create the C++ source files and an XML-based project file for a Visual C++ console application. After building the project, you will learn how to customize the build process.  
   
  This walkthrough illustrates the following tasks:  
   
@@ -86,7 +86,7 @@ This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../build/includ
   
 -   Three item group tags (\<ItemGroup>) that specify project configuration and platform, source file name, and header file name.  
   
--   Three import tags (\<Import>) that specify the location of Microsoft [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] settings.  
+-   Three import tags (\<Import>) that specify the location of Microsoft Visual C++ settings.  
   
 -   A property group tag (\<PropertyGroup>) that specifies project settings.  
   
@@ -244,7 +244,7 @@ myproject
  `msbuild myproject.vcxproj /p:configuration=release /p:platform=myplatform`  
   
 ### Using MSBuild with the 64-bit Compiler and Tools  
- If you have installed [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] on 64-bit Windows, by default, the 64-bit x64 native and cross tools are installed. You can configure [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] to use the 64-bit compiler and tools to build your application by setting the `PreferredToolArchitecture` property. This property does not affect the project configuration or platform properties. By default, the 32-bit version of the tools is used. To specify the 64-bit version of the compiler and tools, add the following property group element to the Myproject.vcxproj project file after the `Microsoft.Cpp.default.props` \<Import /> element:  
+ If you have installed Visual C++ on 64-bit Windows, by default, the 64-bit x64 native and cross tools are installed. You can configure [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] to use the 64-bit compiler and tools to build your application by setting the `PreferredToolArchitecture` property. This property does not affect the project configuration or platform properties. By default, the 32-bit version of the tools is used. To specify the 64-bit version of the compiler and tools, add the following property group element to the Myproject.vcxproj project file after the `Microsoft.Cpp.default.props` \<Import /> element:  
   
 ```xml  
 <PropertyGroup>  
@@ -257,7 +257,7 @@ myproject
  `msbuild myproject.vcxproj /p:PreferredToolArchitecture=x64`  
   
 ### Using MSBuild with a Different Toolset  
- If you have the toolsets and libraries for other versions of [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] installed, [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] can build applications for either the current [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] version or for the other installed versions. For example, if you have installed [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)], to specify the [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] 11.0 toolset for Windows XP, add the following property group element to the Myproject.vcxproj project file after the Microsoft.Cpp.props `<Import />` element:  
+ If you have the toolsets and libraries for other versions of Visual C++ installed, [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] can build applications for either the current Visual C++ version or for the other installed versions. For example, if you have installed [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)], to specify the Visual C++ 11.0 toolset for Windows XP, add the following property group element to the Myproject.vcxproj project file after the Microsoft.Cpp.props `<Import />` element:  
   
 ```xml  
 <PropertyGroup>  
@@ -265,7 +265,7 @@ myproject
 </PropertyGroup>  
 ```  
   
- To rebuild your project with the [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] 11.0 Windows XP toolset, type either of the following commands:  
+ To rebuild your project with the Visual C++ 11.0 Windows XP toolset, type either of the following commands:  
   
  `msbuild myproject.vcxproj /p:PlatformToolset=v110_xp /t:rebuild`  
   

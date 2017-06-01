@@ -17,7 +17,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Value classes and structs (C++/CX)
-A *value struct* or *value class* is a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]-compatible POD ("plain old data structure"). It has a fixed size and consists of fields only; unlike a ref class, it has no properties.  
+A *value struct* or *value class* is a Windows Runtime-compatible POD ("plain old data structure"). It has a fixed size and consists of fields only; unlike a ref class, it has no properties.  
   
  The following examples show how to declare and initialize value structs.  
   

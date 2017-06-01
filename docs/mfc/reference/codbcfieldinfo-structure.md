@@ -56,13 +56,13 @@ struct CODBCFieldInfo
  The name of the field.  
   
  *m_nSQLType*  
- The SQL data type of the field. This can be an ODBC SQL data type or a driver-specific SQL data type. For a list of valid ODBC SQL data types, see "SQL Data Types" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For information about driver-specific SQL data types, see the driver's documentation.  
+ The SQL data type of the field. This can be an ODBC SQL data type or a driver-specific SQL data type. For a list of valid ODBC SQL data types, see "SQL Data Types" in the Windows SDK. For information about driver-specific SQL data types, see the driver's documentation.  
   
  *m_nPrecision*  
- The maximum precision of the field. For details, see "Precision, Scale, Length, and Display Size" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The maximum precision of the field. For details, see "Precision, Scale, Length, and Display Size" in the Windows SDK.  
   
  *m_nScale*  
- The scale of the field. For details, see "Precision, Scale, Length, and Display Size" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The scale of the field. For details, see "Precision, Scale, Length, and Display Size" in the Windows SDK.  
   
  *m_nNullability*  
  Whether the field accepts a Null value. This can be one of two values: **SQL_NULLABLE** if the field accepts Null values, or **SQL_NO_NULLS** if the field does not accept Null values.  

@@ -80,7 +80,7 @@ class CWndClassInfo
   
  [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwndclassinfo-class_1.h)]  
   
- For more information about window classes, see [Window Classes](http://msdn.microsoft.com/library/windows/desktop/ms632596) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about window classes, see [Window Classes](http://msdn.microsoft.com/library/windows/desktop/ms632596) in the Windows SDK.  
   
  For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).  
   

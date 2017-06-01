@@ -44,7 +44,7 @@ RoInitializeWrapper(   RO_INIT_TYPE flags)
   
 #### Parameters  
  `flags`  
- One of the RO_INIT_TYPE enumerations, which specifies the support provided by the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+ One of the RO_INIT_TYPE enumerations, which specifies the support provided by the Windows Runtime.  
   
 ## Remarks  
  The RoInitializeWrapper class invokes Windows::Foundation::Initialize(*flags*).  

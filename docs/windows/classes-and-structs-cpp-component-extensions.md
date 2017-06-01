@@ -81,7 +81,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
  *base_type* (optional)  
  A base type. However, a value type cannot act as a base type.  
   
- For more information, see the language-specific descriptions of this parameter in the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)] sections.  
+ For more information, see the language-specific descriptions of this parameter in the Windows Runtime and Common Language Runtimesections.  
   
  **Remarks**  
   
@@ -111,7 +111,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
 -   [Generic Classes (C++/CLI)](../windows/generic-classes-cpp-cli.md)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
  See [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx) and [Value classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699861.aspx).  
@@ -128,7 +128,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  The following table lists differences from the syntax shown in the **All Runtimes** section that are specific to C++/CLI.  

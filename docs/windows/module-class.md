@@ -92,12 +92,12 @@ class Module<OutOfProc> : public Module<InProc>;
 |[Module::GetObjectCount Method](../windows/module-getobjectcount-method.md)|Retrieves the number of objects managed by this module.|  
 |[Module::IncrementObjectCount Method](../windows/module-incrementobjectcount-method.md)|Increments the number of objects tracked by the module.|  
 |[Module::RegisterCOMObject Method](../windows/module-registercomobject-method.md)|Registers one or more COM objects so other applications can connect to them.|  
-|[Module::RegisterObjects Method](../windows/module-registerobjects-method.md)|Registers COM or [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so other applications can connect to them.|  
-|[Module::RegisterWinRTObject Method](../windows/module-registerwinrtobject-method.md)|Registers one or more [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so other applications can connect to them.|  
+|[Module::RegisterObjects Method](../windows/module-registerobjects-method.md)|Registers COM or Windows Runtime objects so other applications can connect to them.|  
+|[Module::RegisterWinRTObject Method](../windows/module-registerwinrtobject-method.md)|Registers one or more Windows Runtime objects so other applications can connect to them.|  
 |[Module::Terminate Method](../windows/module-terminate-method.md)|Causes all factories instantiated by the module to shut down.|  
 |[Module::UnregisterCOMObject Method](../windows/module-unregistercomobject-method.md)|Unregisters one or more COM objects, which prevents other applications from connecting to them.|  
 |[Module::UnregisterObjects Method](../windows/module-unregisterobjects-method.md)|Unregisters the objects in the specified module so that other applications cannot connect to them.|  
-|[Module::UnregisterWinRTObject Method](../windows/module-unregisterwinrtobject-method.md)|Unregisters one or more [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so that other applications cannot connect to them.|  
+|[Module::UnregisterWinRTObject Method](../windows/module-unregisterwinrtobject-method.md)|Unregisters one or more Windows Runtime objects so that other applications cannot connect to them.|  
   
 ### Protected Methods  
   

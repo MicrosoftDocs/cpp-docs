@@ -35,7 +35,9 @@ translation.priority.ht:
 ---
 # CMFCRibbonBar Class
 The `CMFCRibbonBar` class implements a ribbon bar similar to that used in Office 2007.  
-  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   
 ## Syntax  
   
 ```  
@@ -1160,7 +1162,7 @@ virtual void OnClickButton(
 ### Remarks  
   
 ##  <a name="oneditcontextmenu"></a>  CMFCRibbonBar::OnEditContextMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnEditContextMenu(
@@ -1205,7 +1207,7 @@ BOOL OnSetAccData(long lVal);
 ### Remarks  
   
 ##  <a name="onshowribboncontextmenu"></a>  CMFCRibbonBar::OnShowRibbonContextMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnShowRibbonContextMenu(
@@ -1226,7 +1228,7 @@ virtual BOOL OnShowRibbonContextMenu(
 ### Remarks  
   
 ##  <a name="onshowribbonqatmenu"></a>  CMFCRibbonBar::OnShowRibbonQATMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnShowRibbonQATMenu(

@@ -66,7 +66,7 @@ Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](
  [out] A pointer to an array of **ULONG**s that is to be filled with the restriction array.  
   
 ## Remarks  
- This method returns an array of all schema rowsets supported by the provider. See [IDBSchemaRowset::GetSchemas](https://msdn.microsoft.com/en-us/library/ms719605.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method returns an array of all schema rowsets supported by the provider. See [IDBSchemaRowset::GetSchemas](https://msdn.microsoft.com/en-us/library/ms719605.aspx) in the Windows SDK.  
   
  The implementation of this function requires the user to have a schema map in the session class. Using the schema map information, it then responds with the array of GUIDs for the schemas in the map. This represents the schemas supported by the provider.  
   

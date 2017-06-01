@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Value Types and Their Behaviors (C++/CLI)
-Value types have changed in various ways from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)]. In this section, we look at the CLR enum type and the value class type, together with a look at boxing and access to the boxed instance on the CLR heap, as well as a look at interior and pinning pointers. There have been extensive language changes in this area.  
+Value types have changed in various ways from Managed Extensions for C++ to Visual C++. In this section, we look at the CLR enum type and the value class type, together with a look at boxing and access to the boxed instance on the CLR heap, as well as a look at interior and pinning pointers. There have been extensive language changes in this area.  
   
 ## In This Section  
  [CLR Enum Type](../dotnet/value-types-and-their-behaviors-cpp-cli.md)  

@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Declaration of a CLR Array
-The syntax for declaring, instantiating, and initializing a managed array has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The syntax for declaring, instantiating, and initializing a managed array has changed from Managed Extensions for C++ to Visual C++.  
   
  The declaration of a CLR array object in Managed Extensions was an extension of the standard array declaration in which a `__gc` keyword was placed between the name of the array object and its possibly comma-filled dimension, as in the following pair of examples:  
   
@@ -56,7 +56,7 @@ Int32 f() [];
 int GetArray() __gc[];  
 ```  
   
- In [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)], the declaration is much simpler. For example,  
+ In Visual C++, the declaration is much simpler. For example,  
   
 ```  
 array<Int32>^ f();  

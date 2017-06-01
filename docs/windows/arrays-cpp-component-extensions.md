@@ -55,7 +55,7 @@ The `Platform::Array<T>` type in C++/CX, or the `array` keyword in C++/CLI, decl
     
 -   [Variable Argument Lists (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  Arrays are members of the `Platform` namespace. Arrays can be only one-dimensional.  
   
 ### Syntax  
@@ -74,7 +74,7 @@ The `Platform::Array<T>` type in C++/CX, or the `array` keyword in C++/CLI, decl
  One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).  
   
  `array-type`  
- The type of the array variable. Valid types are [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] classes and fundamental types, ref classes and structs, value classes and structs, and native pointers (`type*`).  
+ The type of the array variable. Valid types are Windows Runtime classes and fundamental types, ref classes and structs, value classes and structs, and native pointers (`type*`).  
   
  `rank` [optional]  
  The number of dimensions of the array. Must be 1.  
@@ -110,7 +110,7 @@ int main() {
 }  
 ```  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
   
 ### Syntax  
   
@@ -128,7 +128,7 @@ int main() {
  One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).  
   
  `array-type`  
- The type of the array variable. Valid types are [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] classes and fundamental types, ref classes and structs, value classes and structs, native pointers (`type*`), and native POD (plain old data) types.  
+ The type of the array variable. Valid types are Windows Runtime classes and fundamental types, ref classes and structs, value classes and structs, native pointers (`type*`), and native POD (plain old data) types.  
   
  `rank` [optional]  
  The number of dimensions of the array. The default is 1; the maximum is 32. Each dimension of the array is itself an array.  

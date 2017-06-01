@@ -400,7 +400,7 @@ bool LoadString(UINT nID) throw();
 ```  
   
 ### Parameters  
- See [LoadString](http://msdn.microsoft.com/library/windows/desktop/ms647486) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [LoadString](http://msdn.microsoft.com/library/windows/desktop/ms647486) in the Windows SDK.  
   
 ### Return Value  
  Returns **true** if the string is successfully loaded; otherwise, returns **false**.  

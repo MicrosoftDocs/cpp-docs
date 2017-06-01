@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # VerifyInterfaceHelper Structure
-Supports the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] infrastructure and is not intended to be used directly from your code.  
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   

@@ -48,9 +48,9 @@ class ArrayReference
  By using `ArrayReference` to fill a C-style array, you avoid the extra copy operation that would be involved in copying first to a `Platform::Array` variable, and then into the C-style array. When you use `ArrayReference`, there is only one copy operation. For a code example, see [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).  
   
 ### Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   

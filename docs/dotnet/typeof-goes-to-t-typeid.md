@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # typeof Goes to T::typeid
-The `typeof` operator used in Managed Extensions for C++ has been supplanted by the `typeid` keyword in [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The `typeof` operator used in Managed Extensions for C++ has been supplanted by the `typeid` keyword in Visual C++.  
   
  In Managed Extensions, the `__typeof()` operator returns the associated `Type*` object when passed the name of a managed type. For example:  
   

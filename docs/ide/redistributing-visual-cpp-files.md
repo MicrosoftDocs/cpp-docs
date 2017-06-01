@@ -57,7 +57,7 @@ When you deploy an application, you must also deploy the files that are required
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Redistributing By Using Merge Modules](../ide/redistributing-components-by-using-merge-modules.md)|Describes how to use [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] redistributable merge modules to install the Visual C++ runtime libraries as shared DLLs in the %windir%\system32\ folder.|  
+|[Redistributing By Using Merge Modules](../ide/redistributing-components-by-using-merge-modules.md)|Describes how to use Visual C++ redistributable merge modules to install the Visual C++ runtime libraries as shared DLLs in the %windir%\system32\ folder.|  
 |[Redistributing Visual C++ ActiveX Controls](../ide/redistributing-visual-cpp-activex-controls.md)|Describes how to redistribute an application that uses ActiveX Controls.|  
 |[Redistributing Database Support Files](../ide/redistributing-database-support-files.md)|Discusses how to redistribute support files for Data Access Objects (DAO) and the database technologies in the Microsoft Data Access SDK.|  
 |[Redistributing the MFC Library](../ide/redistributing-the-mfc-library.md)|Describes how to redistribute an application that uses MFC.|  

@@ -77,7 +77,7 @@ class CDacl : public CAcl
   
  Use the class methods provided to create, add, remove, and delete ACEs from the `CDacl` object. See also [AtlGetDacl](security-global-functions.md#atlgetdacl) and [AtlSetDacl](security-global-functions.md#atlsetdacl).  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CAcl](../../atl/reference/cacl-class.md)  

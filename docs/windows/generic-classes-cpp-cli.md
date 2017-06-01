@@ -73,7 +73,7 @@ class-body
  *class-or-interface*[`,` *...*]  
   
  *accessibility-modifiers*  
- Accessibility modifiers for the generic class. For the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], the only allowed modifier is `private`. For the common language runtime, the allowed modifiers are `private` and `public`.  
+ Accessibility modifiers for the generic class. For the Windows Runtime, the only allowed modifier is `private`. For the common language runtime, the allowed modifiers are `private` and `public`.  
   
  *identifier*  
  The name of the generic class, any valid C++ identifier.  

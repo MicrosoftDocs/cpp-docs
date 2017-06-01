@@ -52,7 +52,7 @@ Visual_C++_keyword
   
 Use of the `__identifier` keyword for identifiers that are not keywords is permitted, but strongly discouraged as a matter of style.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
   
 ### Requirements  
  Compiler option: **/ZW**  
@@ -80,7 +80,7 @@ int main() {
 }  
 ```  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  The `__identifier` keyword is valid with the **/clr** compiler option.  

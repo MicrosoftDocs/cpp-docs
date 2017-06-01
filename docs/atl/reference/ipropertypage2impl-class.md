@@ -39,7 +39,7 @@ translation.priority.ht:
 This class implements **IUnknown** and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -90,7 +90,7 @@ HRESULT EditProperty(DISPID dispID);
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IPropertyPage2::EditProperty](http://msdn.microsoft.com/library/windows/desktop/ms690353) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPropertyPage2::EditProperty](http://msdn.microsoft.com/library/windows/desktop/ms690353) in the Windows SDK.  
   
 ## See Also  
  [IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)   

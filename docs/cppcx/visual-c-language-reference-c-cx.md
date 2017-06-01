@@ -14,13 +14,13 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Visual C++ Language Reference (C++/CX)
-C++/CX is a set of extensions to the C++ language that enable the creation of Windows apps and [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components in an idiom that is as close as possible to modern C++. Use C++/CX to write Windows apps and components in native code that easily interact with Visual C#, Visual Basic, and JavaScript, and other languages that support the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]. In those rare cases that require direct access to the raw COM interfaces, or non-exceptional code, you can use the [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
+C++/CX is a set of extensions to the C++ language that enable the creation of Windows apps and Windows Runtime components in an idiom that is as close as possible to modern C++. Use C++/CX to write Windows apps and components in native code that easily interact with Visual C#, Visual Basic, and JavaScript, and other languages that support the Windows Runtime. In those rare cases that require direct access to the raw COM interfaces, or non-exceptional code, you can use the [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
  The new model represents the next generation of native C++ programming on Windows. By using it, you can create:  
   
 -   C++ Windows apps that use XAML to define the user interface and use the native stack. For more information, see [Create a "hello world" app in C++ (Windows 10)](http://msdn.microsoft.com/library/windows/apps/dn996906.aspx).  
   
--   C++ [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components that can be consumed by JavaScript-based Windows apps. For more information, see [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  
+-   C++ Windows Runtime components that can be consumed by JavaScript-based Windows apps. For more information, see [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  
   
 -   Windows DirectX games and graphics-intensive apps. For more information, see [Create a simple Universal Windows Platform (UWP) Game with DirectX](http://msdn.microsoft.com/library/windows/apps/xaml/mt210793.aspx).  
   
@@ -29,7 +29,7 @@ C++/CX is a set of extensions to the C++ language that enable the creation of Wi
 |||  
 |-|-|  
 |[Quick Reference](../cppcx/quick-reference-c-cx.md)|Table of keywords and operators for C++/CX.|  
-|[Type System](../cppcx/type-system-c-cx.md)|Describes basic C++/CX types and programming constructs, and how to utilize C++/CX to consume and create [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types.|  
+|[Type System](../cppcx/type-system-c-cx.md)|Describes basic C++/CX types and programming constructs, and how to utilize C++/CX to consume and create Windows Runtime types.|  
 |[Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)|Discusses how to use the IDE to build apps and link to static libraries aned DLLs.|  
 |[Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)|Discusses how components that are written by using C++/CX can be used with components that are written in JavaScript, any managed language, or the [!INCLUDE[cppwrl](../cppcx/includes/cppwrl-md.md)].|  
 |[Threading and Marshaling](../cppcx/threading-and-marshaling-c-cx.md)|Discusses how to specify the threading and marshaling behavior of components that you create.|  

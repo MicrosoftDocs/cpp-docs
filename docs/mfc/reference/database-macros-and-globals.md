@@ -86,14 +86,14 @@ AFX_ODBC_CALL(SQLFunc)
   
 ### Parameters  
  `SQLFunc`  
- An ODBC API function. For more information about ODBC API functions, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ An ODBC API function. For more information about ODBC API functions, see the Windows SDK.  
   
 ### Remarks  
  `AFX_ODBC_CALL` repeatedly calls the function until it no longer returns `SQL_STILL_EXECUTING`.  
   
  Before invoking `AFX_ODBC_CALL`, you must declare a variable, `nRetCode`, of type **RETCODE**.  
   
- Note that the MFC ODBC classes now use only synchronous processing. In order to perform an asynchronous operation, you must call the ODBC API function **SQLSetConnectOption**. For more information, see the topic "Executing Functions Asynchronously" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Note that the MFC ODBC classes now use only synchronous processing. In order to perform an asynchronous operation, you must call the ODBC API function **SQLSetConnectOption**. For more information, see the topic "Executing Functions Asynchronously" in the Windows SDK.  
 
   
 ### Example  
@@ -116,13 +116,13 @@ AFX_SQL_ASYNC(prs, SQLFunc)
  A pointer to a `CRecordset` object or a `CDatabase` object. Beginning with MFC 4.2, this parameter value is ignored.  
   
  `SQLFunc`  
- An ODBC API function. For more information about ODBC API functions, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ An ODBC API function. For more information about ODBC API functions, see the Windows SDK.  
   
 ### Remarks  
  `AFX_SQL_ASYNC` simply calls the macro [AFX_ODBC_CALL](#afx_odbc_call) and ignores the `prs` parameter. In versions of MFC prior to 4.2, `AFX_SQL_ASYNC` was used to call ODBC API functions that might return `SQL_STILL_EXECUTING`. If an ODBC API function did return `SQL_STILL_EXECUTING`, then `AFX_SQL_ASYNC` would call `prs->OnWaitForDataSource`.  
   
 > [!NOTE]
->  The MFC ODBC classes now use only synchronous processing. In order to perform an asynchronous operation, you must call the ODBC API function **SQLSetConnectOption**. For more information, see the topic "Executing Functions Asynchronously" in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+>  The MFC ODBC classes now use only synchronous processing. In order to perform an asynchronous operation, you must call the ODBC API function **SQLSetConnectOption**. For more information, see the topic "Executing Functions Asynchronously" in the Windows SDK.  
   
 ### Requirements  
   **Header** afxdb.h  
@@ -136,7 +136,7 @@ AFX_SQL_SYNC(SQLFunc)
   
 ### Parameters  
  `SQLFunc`  
- An ODBC API function. For more information about these functions, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ An ODBC API function. For more information about these functions, see the Windows SDK.  
   
 ### Remarks  
  Use this macro to call ODBC API functions that will not return `SQL_STILL_EXECUTING`.  

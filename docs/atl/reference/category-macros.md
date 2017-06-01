@@ -64,7 +64,7 @@ BEGIN_CATEGORY_MAP(theClass)
 > [!NOTE]
 >  ATL uses the standard component categories manager to register component categories. If the manager is not present on the system when the module is registered, registration succeeds, but the component categories will not be registered for that class.  
   
- For more information about component categories, see [What are Component Categories and how do they work](http://msdn.microsoft.com/library/windows/desktop/ms694322) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about component categories, see [What are Component Categories and how do they work](http://msdn.microsoft.com/library/windows/desktop/ms694322) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]  
@@ -95,7 +95,7 @@ IMPLEMENTED_CATEGORY(catID)
   
  Clients can use the category information registered for the class to determine its capabilities and requirements without having to create an instance of it.  
   
- For more information about component categories, see [What are Component Categories and how do they work](http://msdn.microsoft.com/library/windows/desktop/ms694322) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about component categories, see [What are Component Categories and how do they work](http://msdn.microsoft.com/library/windows/desktop/ms694322) in the Windows SDK.  
   
 ### A Selection of Stock Categories  
   
@@ -107,7 +107,7 @@ IMPLEMENTED_CATEGORY(catID)
 |Simple Data Binding|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|  
 |Advanced Data Binding|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|  
 |Windowless Controls|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|  
-|Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a sample list.||  
+|Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the Windows SDK for a sample list.||  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]  
@@ -128,7 +128,7 @@ REQUIRED_CATEGORY( catID )
   
  Clients can use the category information registered for the class to determine its capabilities and requirements without having to create an instance of it. For example, a control may require that a container support data binding. The container can find out if it has the capabilities necessary to host the control by querying the category manager for the categories required by that control. If the container does not support a required feature, it can refuse to host the COM object.  
   
- For more information about component categories, including a sample list, see [What are Component Categories and how do they work](http://msdn.microsoft.com/library/windows/desktop/ms694322) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about component categories, including a sample list, see [What are Component Categories and how do they work](http://msdn.microsoft.com/library/windows/desktop/ms694322) in the Windows SDK.  
   
 ### A Selection of Stock Categories  
   
@@ -140,7 +140,7 @@ REQUIRED_CATEGORY( catID )
 |Simple Data Binding|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|  
 |Advanced Data Binding|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|  
 |Windowless Controls|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|  
-|Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a sample list.||  
+|Internet-Aware Objects|See [Internet Aware Objects](http://msdn.microsoft.com/library/windows/desktop/ms690561) in the Windows SDK for a sample list.||  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#135](../../atl/codesnippet/cpp/category-macros_2.h)]  

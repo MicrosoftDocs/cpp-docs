@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Property Declaration
-The way to declare a property in a managed class has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The way to declare a property in a managed class has changed from Managed Extensions for C++ to Visual C++.  
   
  In the Managed Extensions design, each `set` or `get` property accessor is specified as an independent method. The declaration of each method is prefixed with the `__property` keyword. The method name begins with either `set_` or `get_` followed by the actual name of the property (as visible to the user). Thus, a `Vector` providing an `x` coordinate `get` property would name it `get_x` and the user would invoke it as `x`. This naming convention and separate specification of methods actually reflects the underlying runtime implementation of the property. For example, here is our `Vector` with a set of coordinate properties:  
   

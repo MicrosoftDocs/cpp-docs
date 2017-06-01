@@ -37,7 +37,7 @@ translation.priority.ht:
 # How WinInet Makes It Easier to Create Internet Client Applications
 The Win32 Internet Extensions, or WinInet, provide access to common Internet protocols, including gopher, FTP, and HTTP. Using WinInet, you can write Internet client applications at a higher level of programming, without having to deal with WinSock, TCP/IP, or the details of specific Internet protocols. WinInet provides a consistent set of functions for all three protocols, with a familiar Win32 API interface. This consistency minimizes code changes you need to make if the underlying protocol changes (for example, from FTP to HTTP).  
   
- Visual C++ provides two ways for you to use WinInet. You can call the Win32 Internet functions directly (see the OLE documentation in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] for more information) or you can use WinInet through the [MFC WinInet classes](../mfc/mfc-classes-for-creating-internet-client-applications.md).  
+ Visual C++ provides two ways for you to use WinInet. You can call the Win32 Internet functions directly (see the OLE documentation in the Windows SDK for more information) or you can use WinInet through the [MFC WinInet classes](../mfc/mfc-classes-for-creating-internet-client-applications.md).  
   
  **You can use WinInet to:**  
   

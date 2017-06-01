@@ -63,7 +63,7 @@ HRESULT OpenWithServiceComponents (
  [in] Program ID of a data provider.  
   
  `pPropset`  
- [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/en-us/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. If the data source object is initialized, the properties must belong to the Data Source property group. If the same property is specified more than once in `pPropset`, then which value is used is provider-specific. If `ulPropSets` is zero, this parameter is ignored.  
+ [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/en-us/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK. If the data source object is initialized, the properties must belong to the Data Source property group. If the same property is specified more than once in `pPropset`, then which value is used is provider-specific. If `ulPropSets` is zero, this parameter is ignored.  
   
  `ulPropSets`  
  [in] The number of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures passed in the *pPropSet* argument. If this is zero, the provider ignores `pPropset`.  

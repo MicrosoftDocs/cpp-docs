@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # RoInitializeWrapper Class
-Initializes the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+Initializes the Windows Runtime.  
   
 ## Syntax  
   
@@ -43,7 +43,7 @@ class RoInitializeWrapper
 ```  
   
 ## Remarks  
- RoInitializeWrapper is a convenience that initializes the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and returns an HRESULT that indicates whether the operation was successful.  
+ RoInitializeWrapper is a convenience that initializes the Windows Runtime and returns an HRESULT that indicates whether the operation was successful.  
   
 ## Members  
   

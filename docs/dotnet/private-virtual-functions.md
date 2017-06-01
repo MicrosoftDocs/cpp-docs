@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Private Virtual Functions
-The way private virtual functions are handled in derived classes has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The way private virtual functions are handled in derived classes has changed from Managed Extensions for C++ to Visual C++.  
   
  In Managed Extensions, the access level of a virtual function does not constrain its ability to be overridden within a derived class. In the new syntax, a virtual function cannot override a base class virtual function that it cannot access. For example:  
   

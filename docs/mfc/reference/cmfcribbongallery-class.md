@@ -35,6 +35,7 @@ translation.priority.ht:
 ---
 # CMFCRibbonGallery Class
 Implements Office 2007-style ribbon galleries.  
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ## Syntax  
   
@@ -286,7 +287,7 @@ void EnablMenuSideBar(BOOL bEnable=TRUE);
  Call this method to enable or disable the Office XP-style side bar at the left side of the menu.  
   
 ##  <a name="getcompactsize"></a>  CMFCRibbonGallery::GetCompactSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetCompactSize(CDC* pDC);
@@ -300,7 +301,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ### Remarks  
   
 ##  <a name="getdroppeddown"></a>  CMFCRibbonGallery::GetDroppedDown  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CMFCRibbonBaseElement* GetDroppedDown();
@@ -327,7 +328,7 @@ LPCTSTR GetGroupName(int nGroupIndex) const;
 ### Remarks  
   
 ##  <a name="getgroupoffset"></a>  CMFCRibbonGallery::GetGroupOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual int GetGroupOffset() const;  
@@ -394,7 +395,7 @@ int GetPaletteID() const;
 ### Remarks  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonGallery::GetRegularSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetRegularSize(CDC* pDC);
@@ -408,7 +409,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ### Remarks  
   
 ##  <a name="getselecteditem"></a>  CMFCRibbonGallery::GetSelectedItem  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetSelectedItem() const;  
@@ -419,7 +420,7 @@ int GetSelectedItem() const;
 ### Remarks  
   
 ##  <a name="hasmenu"></a>  CMFCRibbonGallery::HasMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasMenu() const;  
@@ -454,7 +455,7 @@ BOOL IsMenuResizeEnabled() const;
 ### Remarks  
   
 ##  <a name="ismenuresizevertical"></a>  CMFCRibbonGallery::IsMenuResizeVertical  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsMenuResizeVertical() const;  
@@ -477,7 +478,7 @@ BOOL IsMenuSideBar() const;
 ### Remarks  
   
 ##  <a name="onafterchangerect"></a>  CMFCRibbonGallery::OnAfterChangeRect  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnAfterChangeRect(CDC* pDC);
@@ -489,7 +490,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ### Remarks  
   
 ##  <a name="ondraw"></a>  CMFCRibbonGallery::OnDraw  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDraw(CDC* pDC);
@@ -532,7 +533,7 @@ virtual void OnDrawPaletteIcon(
  You can override this method in a derived class to customize the appearance of a ribbon gallery.  
   
 ##  <a name="onenable"></a>  CMFCRibbonGallery::OnEnable  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnEnable(BOOL bEnable);
@@ -544,7 +545,7 @@ virtual void OnEnable(BOOL bEnable);
 ### Remarks  
   
 ##  <a name="onrtlchanged"></a>  CMFCRibbonGallery::OnRTLChanged  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnRTLChanged(BOOL bIsRTL);
@@ -575,7 +576,7 @@ void RemoveItemToolTips();
 ### Remarks  
   
 ##  <a name="selectitem"></a>  CMFCRibbonGallery::SelectItem  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SelectItem(int nItemIndex);

@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Managed Types (C++/CL)
-The syntax for the declaration of managed types and the creation and use of objects of these types has been significantly altered from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)]. This was done to promote their integration within the ISO-C++ type system. These changes are presented in detail in the following subsections.  
+The syntax for the declaration of managed types and the creation and use of objects of these types has been significantly altered from Managed Extensions for C++ to Visual C++. This was done to promote their integration within the ISO-C++ type system. These changes are presented in detail in the following subsections.  
   
 ## In This Section  
  [Declaration of a Managed Class Type](../dotnet/declaration-of-a-managed-class-type.md)  

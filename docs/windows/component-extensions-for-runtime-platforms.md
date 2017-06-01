@@ -37,11 +37,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Component Extensions for Runtime Platforms
-Visual C++ provides language extensions to help you program against runtime platforms. By using C++/CX, you can program Universal Windows Platform apps and components that compile to native code. Although you can create Universal Windows Platform apps by programming directly against the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] COM interfaces, by using C++/CX, you can work with constructors, exceptions, and other modern C++ programming idioms. To enable C++ programming in a managed execution environment on the .NET platform, you can use C++/CLI.  
+Visual C++ provides language extensions to help you program against runtime platforms. By using C++/CX, you can program Universal Windows Platform apps and components that compile to native code. Although you can create Universal Windows Platform apps by programming directly against the Windows Runtime COM interfaces, by using C++/CX, you can work with constructors, exceptions, and other modern C++ programming idioms. To enable C++ programming in a managed execution environment on the .NET platform, you can use C++/CLI.  
   
  **Two runtimes, one set of extensions**  
   
- C++/CX is a subset of C++/CLI. For extensions that are common to C++/CX and C++/CLI, the semantics depend on whether you are targeting the common language runtime (CLR) or the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]. To compile your app to run on the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], specify the **/ZW** compiler option. To compile it to run on the CLR, specify the **/clr** compiler option. These switches are set automatically when you use Visual Studio to create a project.  
+ C++/CX is a subset of C++/CLI. For extensions that are common to C++/CX and C++/CLI, the semantics depend on whether you are targeting the common language runtime (CLR) or the Windows Runtime. To compile your app to run on the Windows Runtime, specify the **/ZW** compiler option. To compile it to run on the CLR, specify the **/clr** compiler option. These switches are set automatically when you use Visual Studio to create a project.  
   
  For more information about how to create Universal Windows Platform apps in C++, see [Roadmap for Windows Runtime apps using C++](http://msdn.microsoft.com/library/windows/apps/hh700360.aspx).  
   
@@ -90,7 +90,7 @@ Visual C++ provides language extensions to help you program against runtime plat
 |`finally`|Yes|Indicates default exception handlings behavior.|[Exception Handling](../windows/exception-handling-cpp-component-extensions.md)|  
 |`for each, in`|No|Enumerates elements of a collection.|[for each, in](../dotnet/for-each-in.md)|  
 |`gcnew`|No|Allocates types on the garbage-collected heap. Use instead of `new` and `delete`.|[ref new, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|  
-|`ref new`|Yes|Allocates a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] type. Use instead of `new` and `delete`.|[ref new, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|  
+|`ref new`|Yes|Allocates a Windows Runtime type. Use instead of `new` and `delete`.|[ref new, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|  
 |`initonly`|Yes|Indicates that a member can only be initialized at declaration or in a static constructor.|[initonly (C++/CLI)](../dotnet/initonly-cpp-cli.md)|  
 |`literal`|Yes|Creates a literal variable.|[literal](../windows/literal-cpp-component-extensions.md)|  
 |`nullptr`|No|Indicates that a handle or pointer does not point at an object.|[nullptr](../windows/nullptr-cpp-component-extensions.md)|  
@@ -111,16 +111,16 @@ Visual C++ provides language extensions to help you program against runtime plat
   
 |Operator|Purpose|Reference|  
 |--------------|-------------|---------------|  
-|`^`|Declares a handle to an object; that is, a pointer to a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] or CLR object that is automatically deleted when it is no longer usable.|[Handle to Object Operator (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)|  
-|`%`|Declares a tracking reference; that is, a reference to a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] or CLR object that is automatically deleted when it is no longer usable.|[Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md)|  
+|`^`|Declares a handle to an object; that is, a pointer to a Windows Runtime or CLR object that is automatically deleted when it is no longer usable.|[Handle to Object Operator (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)|  
+|`%`|Declares a tracking reference; that is, a reference to a Windows Runtime or CLR object that is automatically deleted when it is no longer usable.|[Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md)|  
   
 ## Additional Constructs and Related Topics  
  This section lists additional programming constructs, and topics that pertain to the CLR.  
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[__identifier (C++/CLI)](../windows/identifier-cpp-cli.md)|([!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and CLR) Enables the use of keywords as identifiers.|  
-|[Variable Argument Lists (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)|([!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and CLR) Enables a function to take a variable number of arguments.|  
+|[__identifier (C++/CLI)](../windows/identifier-cpp-cli.md)|(Windows Runtime and CLR) Enables the use of keywords as identifiers.|  
+|[Variable Argument Lists (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)|(Windows Runtime and CLR) Enables a function to take a variable number of arguments.|  
 |[.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)|Lists the CLR types that are used in place of C++ integral types.|  
 |[appdomain](../cpp/appdomain.md) `__declspec` modifier|`__declspec` modifier that mandates that static and global variables exist per appdomain.|  
 |[C-Style Casts with /clr (C++/CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)|Describes how C-style casts are interpreted.|  

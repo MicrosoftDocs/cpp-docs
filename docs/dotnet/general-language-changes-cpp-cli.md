@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # General Language Changes (C++/CLI)
-A number of CLR language features changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+A number of CLR language features changed from Managed Extensions for C++ to Visual C++.  
   
  The changes described in this section are a sort of language miscellany. It includes a change in the handling of string literals, a change in the overload resolution between an ellipsis and the `Param` attribute, the change of `typeof` to `typeid`, a change in the calling of constructor initializer lists, and the introduction of a new cast notation, that of `safe_cast`.  
   

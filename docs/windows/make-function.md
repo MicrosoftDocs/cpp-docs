@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Make Function
-Initializes the specified [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class. Use this function to instantiate a component that is defined in the same module.  
+Initializes the specified Windows Runtime class. Use this function to instantiate a component that is defined in the same module.  
   
 ## Syntax  
   

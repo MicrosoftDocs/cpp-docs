@@ -35,6 +35,7 @@ translation.priority.ht:
 ---
 # CMFCRibbonLinkCtrl Class
 Implements a hyperlink that is positioned on a ribbon. The hyperlink opens a Web page when you click it.  
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
   
 ## Syntax  
   
@@ -104,7 +105,7 @@ CMFCRibbonLinkCtrl(
  [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/cpp/cmfcribbonlinkctrl-class_1.cpp)]  
   
 ##  <a name="copyfrom"></a>  CMFCRibbonLinkCtrl::CopyFrom  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void CopyFrom(const CMFCRibbonBaseElement& src);
@@ -116,7 +117,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ### Remarks  
   
 ##  <a name="getcompactsize"></a>  CMFCRibbonLinkCtrl::GetCompactSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetCompactSize(CDC* pDC);
@@ -142,7 +143,7 @@ LPCTSTR GetLink() const;
 ### Remarks  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonLinkCtrl::GetRegularSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetRegularSize(CDC* pDC);
@@ -156,7 +157,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ### Remarks  
   
 ##  <a name="gettooltiptext"></a>  CMFCRibbonLinkCtrl::GetToolTipText  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CString GetToolTipText() const;  
@@ -167,7 +168,7 @@ virtual CString GetToolTipText() const;
 ### Remarks  
   
 ##  <a name="ondrawmenuimage"></a>  CMFCRibbonLinkCtrl::OnDrawMenuImage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnDrawMenuImage(CDC*, CRect);
@@ -182,7 +183,7 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 ### Remarks  
   
 ##  <a name="isdrawtooltipimage"></a>  CMFCRibbonLinkCtrl::IsDrawTooltipImage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsDrawTooltipImage() const;  
@@ -193,7 +194,7 @@ virtual BOOL IsDrawTooltipImage() const;
 ### Remarks  
   
 ##  <a name="ondraw"></a>  CMFCRibbonLinkCtrl::OnDraw  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDraw(CDC* pDC);
@@ -205,7 +206,7 @@ virtual void OnDraw(CDC* pDC);
 ### Remarks  
   
 ##  <a name="onmousemove"></a>  CMFCRibbonLinkCtrl::OnMouseMove  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnMouseMove(CPoint point);
@@ -217,7 +218,7 @@ virtual void OnMouseMove(CPoint point);
 ### Remarks  
   
 ##  <a name="onseticon"></a>  CMFCRibbonLinkCtrl::OnSetIcon  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnSetIcon();

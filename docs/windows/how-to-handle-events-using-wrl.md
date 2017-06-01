@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Handle Events Using WRL
-This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to subscribe to and handle the events of a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] object.  
+This document shows how to use the Windows Runtime C++ Template Library (WRL)to subscribe to and handle the events of a Windows Runtime object.  
   
  For a more basic example that creates an instance of that component and retrieves a property value, see [How to: Activate and Use a Windows Runtime Component](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md).  
   
@@ -39,9 +39,9 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
  The following steps start an `ABI::Windows::System::Threading::IDeviceWatcher` object and use event handlers to monitor progress. The `IDeviceWatcher` interface enables you to enumerate devices asynchronously, or in the background, and receive notification when devices are added, removed, or changed. The [Callback](../windows/callback-function-windows-runtime-cpp-template-library.md) function is an important part of this example because it enables it to specify event handlers that process the results of the background operation. The complete example follows.  
   
 > [!WARNING]
->  Although you typically use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] in a Universal Windows Platform app, this example uses a console app for illustration. Functions such as `wprintf_s` are not available from a Universal Windows Platform app. For more information about the types and functions that you can use in a Universal Windows Platform app, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx) and [Win32 and COM for Windows Store apps](http://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
+>  Although you typically use the Windows Runtime C++ Template Library in a Universal Windows Platform app, this example uses a console app for illustration. Functions such as `wprintf_s` are not available from a Universal Windows Platform app. For more information about the types and functions that you can use in a Universal Windows Platform app, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx) and [Win32 and COM for Windows Store apps](http://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
   
-1.  Include (`#include`) any required [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)], or C++ Standard Library headers.  
+1.  Include (`#include`) any required Windows Runtime, Windows Runtime C++ Template Library, or C++ Standard Library headers.  
   
      [!code-cpp[wrl-consume-event#2](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_1.cpp)]  
   
@@ -53,7 +53,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
      [!code-cpp[wrl-consume-event#7](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_2.cpp)]  
   
-3.  Initialize the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+3.  Initialize the Windows Runtime.  
   
      [!code-cpp[wrl-consume-event#3](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_3.cpp)]  
   
@@ -68,7 +68,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
      [!code-cpp[wrl-consume-event#5](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_5.cpp)]  
   
-     The [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] uses fully-qualified names to identify types. The `RuntimeClass_Windows_Devices_Enumeration_DeviceInformation` parameter is a string that's provided by the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and contains the required runtime class name.  
+     The Windows Runtime uses fully-qualified names to identify types. The `RuntimeClass_Windows_Devices_Enumeration_DeviceInformation` parameter is a string that's provided by the Windows Runtime and contains the required runtime class name.  
   
 6.  Create the `IDeviceWatcher` object.  
   

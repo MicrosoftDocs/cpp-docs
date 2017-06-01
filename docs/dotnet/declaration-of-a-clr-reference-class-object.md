@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Declaration of a CLR Reference Class Object
-The syntax to declare and instantiate an object of a reference class type has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The syntax to declare and instantiate an object of a reference class type has changed from Managed Extensions for C++ to Visual C++.  
   
  In Managed Extensions, a reference class type object is declared by using the ISO-C++ pointer syntax, with an optional use of the `__gc` keyword to the left of the star (`*`). For example, here are a variety of reference class type object declarations under the Managed Extensions syntax:  
   

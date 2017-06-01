@@ -21,7 +21,7 @@ manager: "ghogen"
 The articles in this section of the documentation describe namespaces that support the compiler for C++/CX.  
   
 ## Compiler-supplied namespaces  
- To simplify the coding of programs that target the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)], the C++/CX compiler and its supporting header files provide namespaces that define a wide range of types. The namespaces define the built-in numeric types; strings, arrays, and collections; Visual C++ exceptions that represent [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] errors; and language-specific enhancements to standard [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types.  
+ To simplify the coding of programs that target the Windows Runtime, the C++/CX compiler and its supporting header files provide namespaces that define a wide range of types. The namespaces define the built-in numeric types; strings, arrays, and collections; Visual C++ exceptions that represent Windows Runtime errors; and language-specific enhancements to standard Windows Runtime types.  
   
 ## Related topics  
   
@@ -29,7 +29,7 @@ The articles in this section of the documentation describe namespaces that suppo
 |-----------|-----------------|  
 |[default namespace](../cppcx/default-namespace.md)|Contains descriptions of built-in, fundamental types.|  
 |[Platform namespace](../cppcx/platform-namespace-c-cx.md)|Contains descriptions of types that you can use, and also internal types that are used only by the compiler infrastructure.|  
-|[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)|Contains descriptions of enhancements and extensions to the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]`Windows::Foundation::Collections` namespace.|  
+|[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)|Contains descriptions of enhancements and extensions to the Windows Runtime`Windows::Foundation::Collections` namespace.|  
   
 ## See Also  
  [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

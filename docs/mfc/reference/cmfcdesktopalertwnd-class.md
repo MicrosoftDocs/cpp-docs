@@ -35,7 +35,8 @@ translation.priority.ht:
 ---
 # CMFCDesktopAlertWnd Class
 The `CMFCDesktopAlertWnd` class implements the functionality of a modeless dialog box which appears on the screen to inform the user about an event.  
-  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
 ## Syntax  
   
 ```  
@@ -261,7 +262,7 @@ BOOL HasSmallCaption() const;
  Use this method to determine whether the popup window has a small caption or a regular-size caption. By default, the small caption is 7 pixels high. You can obtain the height of the regular-size caption by calling the Windows API function `GetSystemMetrics(SM_CYCAPTION)`.  
   
 ##  <a name="onbeforeshow"></a>  CMFCDesktopAlertWnd::OnBeforeShow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnBeforeShow(CPoint&);
@@ -292,7 +293,7 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
  Override this method in a derived class if you want to be notified when a user clicks the link on the alert window.  
   
 ##  <a name="oncommand"></a>  CMFCDesktopAlertWnd::OnCommand  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnCommand(
@@ -309,7 +310,7 @@ virtual BOOL OnCommand(
 ### Remarks  
   
 ##  <a name="ondraw"></a>  CMFCDesktopAlertWnd::OnDraw  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnDraw(CDC* pDC);
@@ -321,7 +322,7 @@ virtual void OnDraw(CDC* pDC);
 ### Remarks  
   
 ##  <a name="processcommand"></a>  CMFCDesktopAlertWnd::ProcessCommand  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL ProcessCommand(HWND hwnd);
@@ -415,7 +416,7 @@ void SetTransparency(BYTE nTransparency);
  Call this function to set the transparency level of the popup window.  
   
 ##  <a name="getdialogsize"></a>  CMFCDesktopAlertWnd::GetDialogSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CSize GetDialogSize();

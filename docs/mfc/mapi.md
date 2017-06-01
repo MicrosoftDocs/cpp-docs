@@ -45,7 +45,7 @@ This article describes the Microsoft Messaging Application Programming Interface
   
  Messaging clients provide a human interface for interaction with the Microsoft Windows Messaging System (WMS). This interaction typically includes requesting services from MAPI-compliant providers such as message stores and address books.  
   
- For more information about MAPI, see the articles under Guide in Win32 Messaging (MAPI) of the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For more information about MAPI, see the articles under Guide in Win32 Messaging (MAPI) of the Windows SDK.  
   
 ## In This Section  
  [MAPI Support in MFC](../mfc/mapi-support-in-mfc.md)  

@@ -102,7 +102,7 @@ template <class T,
 |Creating controls|[ATL Tutorial](../../atl/active-template-library-atl-tutorial.md)|  
 |Using dialog boxes in ATL|[ATL Window Classes](../../atl/atl-window-classes.md)|  
 |ATL Project Wizard|[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)|  
-|Dialog boxes|[Dialog Boxes](http://msdn.microsoft.com/library/windows/desktop/ms632588) and subsequent topics in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]|  
+|Dialog boxes|[Dialog Boxes](http://msdn.microsoft.com/library/windows/desktop/ms632588) and subsequent topics in the Windows SDK|  
   
 ## Requirements  
  **Header:** atlwin.h  

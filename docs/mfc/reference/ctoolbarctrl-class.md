@@ -378,7 +378,7 @@ BOOL ChangeBitmap(
 ### Remarks  
  If this method is successful, the system displays the specified image in the specified button.  
   
- This method sends the [TB_CHANGEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb787301) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TB_CHANGEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb787301) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example changes the bitmap for the **File Save** button to the bitmap for the **About** button.  
@@ -459,11 +459,11 @@ virtual BOOL Create(
   
 - **WS_DISABLED** Rarely  
   
- See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a description of window styles.  
+ See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a description of window styles.  
   
- Optionally, apply a combination of [common control styles](http://msdn.microsoft.com/library/windows/desktop/bb775498), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Optionally, apply a combination of [common control styles](http://msdn.microsoft.com/library/windows/desktop/bb775498), as described in the Windows SDK.  
   
- Apply a combination of toolbar styles to either the control or the buttons themselves. The styles are described in the topic [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Apply a combination of toolbar styles to either the control or the buttons themselves. The styles are described in the topic [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the Windows SDK.  
   
  To use extended toolbar styles, call [SetExtendedStyle](#setextendedstyle) after you call **Create**. To create a toolbar with extended window styles, call [CToolBarCtrl::CreateEx](#createex) instead of **Create**.  
   
@@ -483,7 +483,7 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
  Specifies the toolbar control's style. Toolbars must always have the **WS_CHILD** style. In addition, you can specify any combination of toolbar styles and window styles as described in the **Remarks** section of [Create](#create).  
@@ -501,7 +501,7 @@ virtual BOOL CreateEx(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**. **CreateEx** creates the control with the extended Windows styles specified by `dwExStyle`. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **TBSTYLE_EX_DRAWDDARROWS**. For more information, see the styles described in [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Use `CreateEx` instead of [Create](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**. **CreateEx** creates the control with the extended Windows styles specified by `dwExStyle`. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as **WS_EX_CONTEXTHELP**, but use `SetExtendedStyle` to set such styles as **TBSTYLE_EX_DRAWDDARROWS**. For more information, see the styles described in [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430) in the Windows SDK.  
   
 ##  <a name="ctoolbarctrl"></a>  CToolBarCtrl::CToolBarCtrl  
  Constructs a `CToolBarCtrl` object.  
@@ -574,7 +574,7 @@ BOOL GetAnchorHighlight() const;
  If nonzero, anchor highlighting is enabled. If zero, anchor highlighting is disabled.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETANCHORHIGHLIGHT](http://msdn.microsoft.com/library/windows/desktop/bb787313), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETANCHORHIGHLIGHT](http://msdn.microsoft.com/library/windows/desktop/bb787313), as described in the Windows SDK.  
   
 ##  <a name="getbitmap"></a>  CToolBarCtrl::GetBitmap  
  Retrieves the index of the bitmap associated with a button in a toolbar.  
@@ -591,7 +591,7 @@ int GetBitmap(int nID) const;
  Returns the index of the bitmap if successful, or zero otherwise.  
   
 ### Remarks  
- Implements the functionality of [TB_GETBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb787315) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Implements the functionality of [TB_GETBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb787315) in the Windows SDK.  
   
 ##  <a name="getbitmapflags"></a>  CToolBarCtrl::GetBitmapFlags  
  Retrieves the bitmap flags from the toolbar.  
@@ -655,7 +655,7 @@ int GetButtonInfo(
  The zero-based index of the button, if successful; otherwise -1.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETBUTTONINFO](http://msdn.microsoft.com/library/windows/desktop/bb787321), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETBUTTONINFO](http://msdn.microsoft.com/library/windows/desktop/bb787321), as described in the Windows SDK.  
   
 ##  <a name="getbuttonsize"></a>  CToolBarCtrl::GetButtonSize  
  Gets the size of a toolbar button.  
@@ -703,7 +703,7 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- This method sends the [TB_GETCOLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb787327) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TB_GETCOLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb787327) message, which is described in the Windows SDK.  
   
 ##  <a name="getdisabledimagelist"></a>  CToolBarCtrl::GetDisabledImageList  
  Retrieves the image list that a toolbar control uses to display disabled buttons.  
@@ -716,7 +716,7 @@ CImageList* GetDisabledImageList() const;
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or **NULL** if no disabled image list is set.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETDISABLEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787329), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The MFC implementation of `GetDisabledImageList` uses a `CImageList` object containing the toolbar control's button images, rather than a handle to an image list.  
+ This member function implements the behavior of the Win32 message [TB_GETDISABLEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787329), as described in the Windows SDK. The MFC implementation of `GetDisabledImageList` uses a `CImageList` object containing the toolbar control's button images, rather than a handle to an image list.  
   
 ##  <a name="getdroptarget"></a>  CToolBarCtrl::GetDropTarget  
  Retrieves the [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface for a toolbar control.  
@@ -733,7 +733,7 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;
  Returns an `HRESULT` value indicating success or failure of the operation.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787343), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787343), as described in the Windows SDK.  
   
 ##  <a name="getextendedstyle"></a>  CToolBarCtrl::GetExtendedStyle  
  Retrieves the extended styles for a toolbar control.  
@@ -743,10 +743,10 @@ DWORD GetExtendedStyle() const;
 ```  
   
 ### Return Value  
- A `DWORD` that represents the extended styles currently in use for the toolbar control. For a list of styles, see [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430), in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A `DWORD` that represents the extended styles currently in use for the toolbar control. For a list of styles, see [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430), in the Windows SDK.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb787331), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb787331), as described in the Windows SDK.  
   
 ##  <a name="gethotimagelist"></a>  CToolBarCtrl::GetHotImageList  
  Retrieves the image list that a toolbar control uses to display "hot" buttons. A hot button appears highlighted when the mouse pointer is above it.  
@@ -759,7 +759,7 @@ CImageList* GetHotImageList() const;
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or **NULL** if no disabled image list is set.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETHOTIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787334), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. A hot button appears highlighted when the mouse pointer is above it.  
+ This member function implements the behavior of the Win32 message [TB_GETHOTIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787334), as described in the Windows SDK. A hot button appears highlighted when the mouse pointer is above it.  
   
 ##  <a name="gethotitem"></a>  CToolBarCtrl::GetHotItem  
  Retrieves the index of the hot item in a toolbar.  
@@ -772,7 +772,7 @@ int GetHotItem() const;
  The zero-based index of the hot item in a toolbar.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETHOTITEM](http://msdn.microsoft.com/library/windows/desktop/bb787336), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETHOTITEM](http://msdn.microsoft.com/library/windows/desktop/bb787336), as described in the Windows SDK.  
   
 ##  <a name="getimagelist"></a>  CToolBarCtrl::GetImageList  
  Retrieves the image list that a toolbar control uses to display buttons in their default state.  
@@ -785,7 +785,7 @@ CImageList* GetImageList() const;
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object, or **NULL** if no image list is set.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787337), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787337), as described in the Windows SDK.  
   
 ##  <a name="getinsertmark"></a>  CToolBarCtrl::GetInsertMark  
  Retrieves the current insertion mark for the toolbar.  
@@ -799,7 +799,7 @@ void GetInsertMark(TBINSERTMARK* ptbim) const;
  A pointer to a [TBINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb760480) structure that receives the insertion mark.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb787338), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb787338), as described in the Windows SDK.  
   
 ##  <a name="getinsertmarkcolor"></a>  CToolBarCtrl::GetInsertMarkColor  
  Retrieves the color used to draw the insertion mark for the toolbar.  
@@ -812,7 +812,7 @@ COLORREF GetInsertMarkColor() const;
  A **COLORREF** value that contains the current insertion mark color.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb787339), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb787339), as described in the Windows SDK.  
   
 ##  <a name="getitemrect"></a>  CToolBarCtrl::GetItemRect  
  Retrieves the bounding rectangle of a button in a toolbar control.  
@@ -851,7 +851,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETMAXSIZE](http://msdn.microsoft.com/library/windows/desktop/bb787341), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETMAXSIZE](http://msdn.microsoft.com/library/windows/desktop/bb787341), as described in the Windows SDK.  
   
 ##  <a name="getmaxtextrows"></a>  CToolBarCtrl::GetMaxTextRows  
  Retrieves the maximum number of text rows displayed on a toolbar button.  
@@ -875,7 +875,7 @@ void GetMetrics(LPTBMETRICS ptbm) const;
  A pointer to the [TBMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb760482) structure of the `CToolBarCtrl` object.  
   
 ### Remarks  
- This member function emulates the functionality of the [TB_GETMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb787342) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [TB_GETMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb787342) message, as described in the Windows SDK.  
   
 ##  <a name="getpadding"></a>  CToolBarCtrl::GetPadding  
  Retrieves the horizontal and vertical padding of the current toolbar control.  
@@ -897,7 +897,7 @@ BOOL GetPadding(
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- This method sends the [TB_GETPADDING](http://msdn.microsoft.com/library/windows/desktop/bb787344) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TB_GETPADDING](http://msdn.microsoft.com/library/windows/desktop/bb787344) message, which is described in the Windows SDK.  
   
 ##  <a name="getpressedimagelist"></a>  CToolBarCtrl::GetPressedImageList  
  Retrieves the image list that the current toolbar control uses to represent buttons in the pressed state.  
@@ -910,7 +910,7 @@ CImageList* GetPressedImageList();
  Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the image list for the current control, or `NULL` if no such image list is set.  
   
 ### Remarks  
- This method sends the [TB_GETPRESSEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787345) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TB_GETPRESSEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787345) message, which is described in the Windows SDK.  
   
 ##  <a name="getrect"></a>  CToolBarCtrl::GetRect  
  Retrieves the bounding rectangle for a specified toolbar button.  
@@ -932,7 +932,7 @@ BOOL GetRect(
  **TRUE** if successful; otherwise **FALSE**.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETRECT](http://msdn.microsoft.com/library/windows/desktop/bb787346), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETRECT](http://msdn.microsoft.com/library/windows/desktop/bb787346), as described in the Windows SDK.  
   
 ##  <a name="getrows"></a>  CToolBarCtrl::GetRows  
  Retrieves the number of rows of buttons currently displayed by the toolbar control.  
@@ -995,7 +995,7 @@ int GetString(
  The length of the string if successful, -1 if not.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_GETSTRING](http://msdn.microsoft.com/library/windows/desktop/bb787349), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_GETSTRING](http://msdn.microsoft.com/library/windows/desktop/bb787349), as described in the Windows SDK.  
   
 ##  <a name="getstyle"></a>  CToolBarCtrl::GetStyle  
  Gets the styles currently applied to a toolbar control.  
@@ -1005,7 +1005,7 @@ DWORD GetStyle() const;
 ```  
   
 ### Return Value  
- A `DWORD` containing a combination of [toolbar control styles](http://msdn.microsoft.com/library/windows/desktop/bb760439), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A `DWORD` containing a combination of [toolbar control styles](http://msdn.microsoft.com/library/windows/desktop/bb760439), as described in the Windows SDK.  
   
 ##  <a name="gettooltips"></a>  CToolBarCtrl::GetToolTips  
  Retrieves the handle of the tool tip control, if any, associated with the toolbar control.  
@@ -1037,7 +1037,7 @@ int HitTest(LPPOINT ppt) const;
  If the return value is negative, the point does not lie within a button. The absolute value of the return value is the index of a separator item or the nearest nonseparator item.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb787360), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb787360), as described in the Windows SDK.  
   
 ##  <a name="hidebutton"></a>  CToolBarCtrl::HideButton  
  Hides or shows the specified button in a toolbar control.  
@@ -1125,7 +1125,7 @@ BOOL InsertMarkHitTest(
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_INSERTMARKHITTEST](http://msdn.microsoft.com/library/windows/desktop/bb787367), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_INSERTMARKHITTEST](http://msdn.microsoft.com/library/windows/desktop/bb787367), as described in the Windows SDK.  
   
 ##  <a name="isbuttonchecked"></a>  CToolBarCtrl::IsButtonChecked  
  Determines whether the specified button in a toolbar control is checked.  
@@ -1252,7 +1252,7 @@ void LoadImages(
  Program instance handle to the calling application. This parameter can be **HINST_COMMCTRL** to load a standard image list.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_LOADIMAGES](http://msdn.microsoft.com/library/windows/desktop/bb787381), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_LOADIMAGES](http://msdn.microsoft.com/library/windows/desktop/bb787381), as described in the Windows SDK.  
   
 ##  <a name="mapaccelerator"></a>  CToolBarCtrl::MapAccelerator  
  Maps an accelerator character to a toolbar button.  
@@ -1274,7 +1274,7 @@ BOOL MapAccelerator(
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_MAPACCELERATOR](http://msdn.microsoft.com/library/windows/desktop/bb787383), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_MAPACCELERATOR](http://msdn.microsoft.com/library/windows/desktop/bb787383), as described in the Windows SDK.  
   
 ##  <a name="markbutton"></a>  CToolBarCtrl::MarkButton  
  Sets the highlight state of a given button in a toolbar control.  
@@ -1296,7 +1296,7 @@ BOOL MarkButton(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_MARKBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb787385), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_MARKBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb787385), as described in the Windows SDK.  
   
 ##  <a name="movebutton"></a>  CToolBarCtrl::MoveButton  
  Moves a button from one index to another.  
@@ -1318,7 +1318,7 @@ BOOL MoveButton(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_MOVEBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb787387), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_MOVEBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb787387), as described in the Windows SDK.  
   
 ##  <a name="pressbutton"></a>  CToolBarCtrl::PressButton  
  Presses or releases the specified button in a toolbar control.  
@@ -1340,7 +1340,7 @@ BOOL PressButton(int nID, BOOL bPress = TRUE);
 ### Remarks  
  If you want to change more than one button state, consider calling [SetState](#setstate) instead.  
   
- This method sends the [TB_PRESSBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb787389) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TB_PRESSBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb787389) message, which is described in the Windows SDK.  
   
 ##  <a name="replacebitmap"></a>  CToolBarCtrl::ReplaceBitmap  
  Replaces the existing bitmap in the current toolbar control with a new bitmap.  
@@ -1359,7 +1359,7 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- This method sends the [TB_REPLACEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb787391) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TB_REPLACEBITMAP](http://msdn.microsoft.com/library/windows/desktop/bb787391) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example replaces the bitmap for the standard toolbar with a different bitmap.  
@@ -1437,7 +1437,7 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
  The previous anchor setting. If highlighting was enabled, this value is nonzero. If highlighting was not enabled, this value is zero.  
   
 ### Remarks  
- This method implements the behavior of the Win32 message [TB_SETANCHORHIGHLIGHT](http://msdn.microsoft.com/library/windows/desktop/bb787396), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method implements the behavior of the Win32 message [TB_SETANCHORHIGHLIGHT](http://msdn.microsoft.com/library/windows/desktop/bb787396), as described in the Windows SDK.  
   
 ##  <a name="setbitmapsize"></a>  CToolBarCtrl::SetBitmapSize  
  Sets the size of the actual bitmapped images to be added to a toolbar control.  
@@ -1476,7 +1476,7 @@ BOOL SetButtonInfo(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The member function implements the behavior of the Win32 message [TB_SETBUTTONINFO](http://msdn.microsoft.com/library/windows/desktop/bb787413), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The member function implements the behavior of the Win32 message [TB_SETBUTTONINFO](http://msdn.microsoft.com/library/windows/desktop/bb787413), as described in the Windows SDK.  
   
 ##  <a name="setbuttonsize"></a>  CToolBarCtrl::SetButtonSize  
  Sets the size of the buttons in the toolbar control.  
@@ -1534,7 +1534,7 @@ BOOL SetButtonWidth(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_SETBUTTONWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb787417), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_SETBUTTONWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb787417), as described in the Windows SDK.  
   
 ##  <a name="setcmdid"></a>  CToolBarCtrl::SetCmdID  
  Sets the command identifier that will be sent to the owner window when the specified button is pressed.  
@@ -1571,7 +1571,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
 ### Remarks  
  This method has no effect if a [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] visual theme is set.  
   
- This method sends the [TB_SETCOLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb787421) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TB_SETCOLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb787421) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example sets the color scheme for the current toolbar control. The code example makes the left and top edges of each tool button red and the right and bottom edges blue. When the user presses the button, the button's red edges turn blue and its blue edges turn red.  
@@ -1593,7 +1593,7 @@ CImageList* SetDisabledImageList(CImageList* pImageList);
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object that was previously used by the toolbar control to display disabled button images.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_SETDISABLEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787423), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The MFC implementation of `SetDisabledImageList` uses a `CImageList` object containing the toolbar control's disabled button images, rather than a handle to an image list.  
+ This member function implements the behavior of the Win32 message [TB_SETDISABLEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787423), as described in the Windows SDK. The MFC implementation of `SetDisabledImageList` uses a `CImageList` object containing the toolbar control's disabled button images, rather than a handle to an image list.  
   
 ##  <a name="setdrawtextflags"></a>  CToolBarCtrl::SetDrawTextFlags  
  Sets the flags in the Win32 function [DrawText](http://msdn.microsoft.com/library/windows/desktop/dd162498), which is used to draw the text in the specified rectangle, formatted according to how the flags are set.  
@@ -1615,7 +1615,7 @@ DWORD SetDrawTextFlags(
  A `DWORD` containing the previous text drawing flags.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_SETDRAWTEXTFLAGS](http://msdn.microsoft.com/library/windows/desktop/bb787425), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. This member function sets the flags in the Win32 function `DrawText`, which draws text in the specified rectangle, formatted according to how the flags are set.  
+ This member function implements the behavior of the Win32 message [TB_SETDRAWTEXTFLAGS](http://msdn.microsoft.com/library/windows/desktop/bb787425), as described in the Windows SDK. This member function sets the flags in the Win32 function `DrawText`, which draws text in the specified rectangle, formatted according to how the flags are set.  
   
 ##  <a name="setextendedstyle"></a>  CToolBarCtrl::SetExtendedStyle  
  Sets the extended styles for a toolbar control.  
@@ -1629,10 +1629,10 @@ DWORD SetExtendedStyle(DWORD dwExStyle);
  A value specifying the new extended styles. This parameter can be a combination of the toolbar extended styles.  
   
 ### Return Value  
- A `DWORD` that represents the previous extended styles. For a list of styles, see [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430), in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A `DWORD` that represents the previous extended styles. For a list of styles, see [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430), in the Windows SDK.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_SETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb787427), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_SETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb787427), as described in the Windows SDK.  
   
 ##  <a name="sethotimagelist"></a>  CToolBarCtrl::SetHotImageList  
  Sets the image list that the toolbar control will use to display "hot" buttons.  
@@ -1649,7 +1649,7 @@ CImageList* SetHotImageList(CImageList* pImageList);
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object that was previously used by the toolbar control to display hot button images.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_SETHOTIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787429), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_SETHOTIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787429), as described in the Windows SDK.  
   
  The MFC implementation of `SetHotImageList` uses a `CImageList` object containing the toolbar control's hot button images, rather than a handle to an image list. A hot button appears highlighted when the pointer is above it.  
   
@@ -1668,7 +1668,7 @@ int SetHotItem(int nHot);
  The index of the previous hot item, or -1 if there was no hot item.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_SETHOTITEM](http://msdn.microsoft.com/library/windows/desktop/bb787431), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_SETHOTITEM](http://msdn.microsoft.com/library/windows/desktop/bb787431), as described in the Windows SDK.  
   
 ##  <a name="setimagelist"></a>  CToolBarCtrl::SetImageList  
  Sets the image list that the toolbar will use to display buttons that are in their default state.  
@@ -1685,7 +1685,7 @@ CImageList* SetImageList(CImageList* pImageList);
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object that was previously used by the toolbar control to display button images in their default state.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_SETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787433), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_SETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787433), as described in the Windows SDK.  
   
  The MFC implementation of `SetImageList` uses a `CImageList` object containing the toolbar control's button images, rather than a handle to an image list.  
   
@@ -1715,7 +1715,7 @@ void SetInsertMark(TBINSERTMARK* ptbim);
  A pointer to the [TBINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb760480) structure that contains the insertion mark.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_SETINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb787437), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_SETINSERTMARK](http://msdn.microsoft.com/library/windows/desktop/bb787437), as described in the Windows SDK.  
   
 ##  <a name="setinsertmarkcolor"></a>  CToolBarCtrl::SetInsertMarkColor  
  Sets the color used to draw the insertion mark for the toolbar.  
@@ -1732,7 +1732,7 @@ COLORREF SetInsertMarkColor(COLORREF clrNew);
  A **COLORREF** value that contains the previous insertion mark color.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TB_SETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb787439), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TB_SETINSERTMARKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb787439), as described in the Windows SDK.  
   
 ##  <a name="setmaxtextrows"></a>  CToolBarCtrl::SetMaxTextRows  
  Sets the maximum number of text rows displayed on a toolbar button.  
@@ -1760,7 +1760,7 @@ void SetMetrics(LPTBMETRICS ptbm);
  A pointer to the [TBMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb760482) structure of the `CToolBarCtrl` object.  
   
 ### Remarks  
- This member function emulates the functionality of the [TB_SETMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb787446) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [TB_SETMETRICS](http://msdn.microsoft.com/library/windows/desktop/bb787446) message, as described in the Windows SDK.  
   
 ##  <a name="setowner"></a>  CToolBarCtrl::SetOwner  
  Sets the owner window for the toolbar control.  
@@ -1796,7 +1796,7 @@ DWORD SetPadding(
  A `DWORD` whose low word contains the previous horizontal padding value, and whose high word contains the previous vertical padding value. The padding values are measured in pixels.  
   
 ### Remarks  
- This method sends the [TB_SETPADDING](http://msdn.microsoft.com/library/windows/desktop/bb787448) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TB_SETPADDING](http://msdn.microsoft.com/library/windows/desktop/bb787448) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example sets the horizontal and vertical padding of the current toolbar control to 20 pixels.  
@@ -1823,7 +1823,7 @@ CImagelist* SetPressedImageList(
  Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the previous image list for the current control, or `NULL` if no such image list was set.  
   
 ### Remarks  
- This method sends the [TB_SETPRESSEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787453) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TB_SETPRESSEDIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb787453) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example sets the pressed image list to be the same as the default image list.  
@@ -1894,7 +1894,7 @@ void SetStyle(DWORD dwStyle);
   
 ### Parameters  
  `dwStyle`  
- A `DWORD` containing a combination of [toolbar control styles](http://msdn.microsoft.com/library/windows/desktop/bb760439), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A `DWORD` containing a combination of [toolbar control styles](http://msdn.microsoft.com/library/windows/desktop/bb760439), as described in the Windows SDK.  
   
 ##  <a name="settooltips"></a>  CToolBarCtrl::SetToolTips  
  Associates a tool tip control with a toolbar control.  
@@ -1922,7 +1922,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
  The return value is not used.  
   
 ### Remarks  
- This member function emulates the functionality of the [TB_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb787465) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [TB_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb787465) message, as described in the Windows SDK.  
   
 ## See Also  
  [MFC Sample CMNCTRL1](../../visual-cpp-samples.md)   

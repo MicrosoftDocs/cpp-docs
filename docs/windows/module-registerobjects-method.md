@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Module::RegisterObjects Method
-Registers COM or [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so other applications can connect to them.  
+Registers COM or Windows Runtime objects so other applications can connect to them.  
   
 ## Syntax  
   
@@ -48,7 +48,7 @@ HRESULT RegisterObjects(
   
 #### Parameters  
  `module`  
- An array of COM or [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects.  
+ An array of COM or Windows Runtime objects.  
   
  `serverName`  
  Name of the server that created the objects.  

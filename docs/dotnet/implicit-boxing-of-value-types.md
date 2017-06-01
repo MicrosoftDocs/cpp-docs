@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Implicit Boxing of Value Types
-The boxing of value types has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The boxing of value types has changed from Managed Extensions for C++ to Visual C++.  
   
  In language design, we imposed a philosophical position in lieu of practical experience with the feature and, in practice, it was a mistake. As an analogy, in the original multiple inheritance language design, Stroustrup decided that a virtual base class sub-object could not be initialized within a derived class constructor, and therefore the language required that any class serving as a virtual base class must define a default constructor. It is that default constructor that would be invoked by any subsequent virtual derivation.  
   
@@ -63,7 +63,7 @@ Console::WriteLine( "{0}\t{1}\t{2}", __box(0),
    __box(my1DIntArray->GetUpperBound(0)) );  
 ```  
   
- As you can see, there is a whole lot of boxing going on. Under [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)], value type boxing is implicit:  
+ As you can see, there is a whole lot of boxing going on. Under Visual C++, value type boxing is implicit:  
   
 ```  
 // new syntax makes boxing implicit  

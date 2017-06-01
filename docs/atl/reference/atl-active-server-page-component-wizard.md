@@ -41,7 +41,7 @@ This wizard inserts into the project an Active Server Pages (ASP) component. The
  By using this wizard, you can specify the component's threading model and its aggregation support. You can also indicate support for the error information interface, connection points, and free-threaded marshaling.  
   
 ## Remarks  
- Beginning with [!INCLUDE[vs_orcas_long](../../atl/reference/includes/vs_orcas_long_md.md)], the registration script produced by this wizard will register its COM components under **HKEY_CURRENT_USER** instead of **HKEY_LOCAL_MACHINE**. To modify this behavior, set the **Register component for all users** option of the ATL Wizard.  
+ Beginning with Visual Studio 2008, the registration script produced by this wizard will register its COM components under **HKEY_CURRENT_USER** instead of **HKEY_LOCAL_MACHINE**. To modify this behavior, set the **Register component for all users** option of the ATL Wizard.  
   
 ## Names  
  Specify the names for the object, interface, and classes to be added to your project. Except for **Short name**, all other boxes can be edited independently of the others. If you change the text for **Short name**, the change is reflected in the names of all other boxes in this page.  

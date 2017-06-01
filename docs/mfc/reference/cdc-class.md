@@ -429,7 +429,7 @@ BOOL AlphaBlend(
  **TRUE** if successful; otherwise **FALSE**.  
   
 ### Remarks  
- See [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ See [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) in the Windows SDK for more information.  
   
 ##  <a name="anglearc"></a>  CDC::AngleArc  
  Draws a line segment and an arc.  
@@ -628,7 +628,7 @@ BOOL BeginPath();
 ### Remarks  
  After a path bracket is open, an application can begin calling GDI drawing functions to define the points that lie in the path. An application can close an open path bracket by calling the `EndPath` member function. When an application calls `BeginPath`, any previous paths are discarded.  
   
- See [BeginPath](http://msdn.microsoft.com/library/windows/desktop/dd183363) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of the drawing functions that define points in a path.  
+ See [BeginPath](http://msdn.microsoft.com/library/windows/desktop/dd183363) in the Windows SDK for a list of the drawing functions that define points in a path.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#30](../../mfc/codesnippet/cpp/cdc-class_2.cpp)]  
@@ -671,9 +671,9 @@ BOOL BitBlt(
  Specifies the logical y-coordinate of the upper-left corner of the source bitmap.  
   
  *dwRop*  
- Specifies the raster operation to be performed. Raster-operation codes define how the GDI combines colors in output operations that involve a current brush, a possible source bitmap, and a destination bitmap. See [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of the raster-operation codes for *dwRop* and their descriptions  
+ Specifies the raster operation to be performed. Raster-operation codes define how the GDI combines colors in output operations that involve a current brush, a possible source bitmap, and a destination bitmap. See [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) in the Windows SDK for a list of the raster-operation codes for *dwRop* and their descriptions  
   
- For a complete list of raster-operation codes, see [About Raster Operation Codes](http://msdn.microsoft.com/library/windows/desktop/dd162892) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For a complete list of raster-operation codes, see [About Raster Operation Codes](http://msdn.microsoft.com/library/windows/desktop/dd162892) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
@@ -1050,10 +1050,10 @@ BOOL DrawEdge(
  A pointer to a **RECT** structure that contains the logical coordinates of the rectangle.  
   
  *nEdge*  
- Specifies the type of inner and outer edge to draw. This parameter must be a combination of one inner-border flag and one outer-border flag. See [DrawEdge](http://msdn.microsoft.com/library/windows/desktop/dd162477) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a table of the parameter's types.  
+ Specifies the type of inner and outer edge to draw. This parameter must be a combination of one inner-border flag and one outer-border flag. See [DrawEdge](http://msdn.microsoft.com/library/windows/desktop/dd162477) in the Windows SDK for a table of the parameter's types.  
   
  `nFlags`  
- The flags that specify the type of border to be drawn. See `DrawEdge` in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a table of the parameter's values. For diagonal lines, the **BF_RECT** flags specify the end point of the vector bounded by the rectangle parameter.  
+ The flags that specify the type of border to be drawn. See `DrawEdge` in the Windows SDK for a table of the parameter's values. For diagonal lines, the **BF_RECT** flags specify the end point of the vector bounded by the rectangle parameter.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -1116,10 +1116,10 @@ BOOL DrawFrameControl(
  A pointer to a **RECT** structure that contains the logical coordinates of the rectangle.  
   
  `nType`  
- Specifies the type of frame control to draw. See the *uType* parameter in [DrawFrameControl](http://msdn.microsoft.com/library/windows/desktop/dd162480) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of this parameter's possible values.  
+ Specifies the type of frame control to draw. See the *uType* parameter in [DrawFrameControl](http://msdn.microsoft.com/library/windows/desktop/dd162480) in the Windows SDK for a list of this parameter's possible values.  
   
  `nState`  
- Specifies the initial state of the frame control. Can be one or more of the values described for the *uState* parameter in `DrawFrameControl` in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Use the `nState` value **DFCS_ADJUSTRECT** to adjust the bounding rectangle to exclude the surrounding edge of the push button.  
+ Specifies the initial state of the frame control. Can be one or more of the values described for the *uState* parameter in `DrawFrameControl` in the Windows SDK. Use the `nState` value **DFCS_ADJUSTRECT** to adjust the bounding rectangle to exclude the surrounding edge of the push button.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -1307,7 +1307,7 @@ BOOL DrawState(
  A handle to a bitmap.  
   
  `nFlags`  
- Flags that specify the image type and state. See [DrawState](http://msdn.microsoft.com/library/windows/desktop/dd162496) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for the possible `nFlags` types and states.  
+ Flags that specify the image type and state. See [DrawState](http://msdn.microsoft.com/library/windows/desktop/dd162496) in the Windows SDK for the possible `nFlags` types and states.  
   
  `hBrush`  
  A handle to a brush.  
@@ -1331,7 +1331,7 @@ BOOL DrawState(
  Length of the text string pointed to by `lpszText`. If `nTextLen` is 0, the string is assumed to be null-terminated.  
   
  *lpDrawProc*  
- A pointer to a callback function used to render an image. This parameter is required if the image type in `nFlags` is **DST_COMPLEX**. It is optional and can be **NULL** if the image type is **DST_TEXT**. For all other image types, this parameter is ignored. For more information about the callback function, see the [DrawStateProc](http://msdn.microsoft.com/library/windows/desktop/dd162497) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A pointer to a callback function used to render an image. This parameter is required if the image type in `nFlags` is **DST_COMPLEX**. It is optional and can be **NULL** if the image type is **DST_TEXT**. For all other image types, this parameter is ignored. For more information about the callback function, see the [DrawStateProc](http://msdn.microsoft.com/library/windows/desktop/dd162497) function in the Windows SDK.  
   
  `lData`  
  Specifies information about the image. The meaning of this parameter depends on the image type.  
@@ -1370,7 +1370,7 @@ int DrawText(
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that contains the specified characters to be drawn.  
   
  `nFormat`  
- Specifies the method of formatting the text. It can be any combination of the values described for the `uFormat` parameter in [DrawText](http://msdn.microsoft.com/library/windows/desktop/dd162498) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. (combine using the bitwise OR operator):  
+ Specifies the method of formatting the text. It can be any combination of the values described for the `uFormat` parameter in [DrawText](http://msdn.microsoft.com/library/windows/desktop/dd162498) in the Windows SDK. (combine using the bitwise OR operator):  
   
 > [!NOTE]
 >  Some `uFormat` flag combinations can cause the passed string to be modified. Using **DT_MODIFYSTRING** with either **DT_END_ELLIPSIS** or **DT_PATH_ELLIPSIS** may cause the string to be modified, causing an assertion in the `CString` override. The values `DT_CALCRECT`, `DT_EXTERNALLEADING`, **DT_INTERNAL**, `DT_NOCLIP`, and `DT_NOPREFIX` cannot be used with the `DT_TABSTOP` value.  
@@ -1424,7 +1424,7 @@ int DrawTextEx(
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that contains the specified characters to be drawn.  
   
  `nFormat`  
- Specifies the method of formatting the text. It can be any combination of the values described for the `uFormat` parameter in [DrawText](http://msdn.microsoft.com/library/windows/desktop/dd162498) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. (Combine using the bitwise `OR` operator):  
+ Specifies the method of formatting the text. It can be any combination of the values described for the `uFormat` parameter in [DrawText](http://msdn.microsoft.com/library/windows/desktop/dd162498) in the Windows SDK. (Combine using the bitwise `OR` operator):  
   
 > [!NOTE]
 >  Some `uFormat` flag combinations can cause the passed string to be modified. Using **DT_MODIFYSTRING** with either **DT_END_ELLIPSIS** or **DT_PATH_ELLIPSIS** may cause the string to be modified, causing an assertion in the `CString` override. The values `DT_CALCRECT`, `DT_EXTERNALLEADING`, **DT_INTERNAL**, `DT_NOCLIP`, and `DT_NOPREFIX` cannot be used with the `DT_TABSTOP` value.  
@@ -1433,7 +1433,7 @@ int DrawTextEx(
  Pointer to a [DRAWTEXTPARAMS](http://msdn.microsoft.com/library/windows/desktop/dd162500) structure that specifies additional formatting options. This parameter can be **NULL**.  
   
 ### Remarks  
- It formats text by expanding tabs into appropriate spaces, aligning text to the left, right, or center of the given rectangle, and breaking text into lines that fit within the given rectangle. The type of formatting is specified by `nFormat` and `lpDTParams`. For more information, see [CDC::DrawText](#drawtext) and [DrawTextEx](http://msdn.microsoft.com/library/windows/desktop/dd162499) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ It formats text by expanding tabs into appropriate spaces, aligning text to the left, right, or center of the given rectangle, and breaking text into lines that fit within the given rectangle. The type of formatting is specified by `nFormat` and `lpDTParams`. For more information, see [CDC::DrawText](#drawtext) and [DrawTextEx](http://msdn.microsoft.com/library/windows/desktop/dd162499) in the Windows SDK.  
   
  The text color may be set by [CDC::SetTextColor](#settextcolor).  
   
@@ -1593,7 +1593,7 @@ int Escape(
  `nEscape`  
  Specifies the escape function to be performed.  
   
- For a complete list of escape functions, see [Escape](http://msdn.microsoft.com/library/windows/desktop/dd162701) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For a complete list of escape functions, see [Escape](http://msdn.microsoft.com/library/windows/desktop/dd162701) in the Windows SDK.  
   
  `nCount`  
  Specifies the number of bytes of data pointed to by `lpszInData`.  
@@ -1644,11 +1644,11 @@ int Escape(
   
 - [CDC::StartPage](#startpage)  
   
- In addition, [CDC::GetDeviceCaps](#getdevicecaps) supports Win32 indexes that supersede other printer escapes. See [GetDeviceCaps](http://msdn.microsoft.com/library/windows/desktop/dd144877) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ In addition, [CDC::GetDeviceCaps](#getdevicecaps) supports Win32 indexes that supersede other printer escapes. See [GetDeviceCaps](http://msdn.microsoft.com/library/windows/desktop/dd144877) in the Windows SDK for more information.  
   
  This member function allows applications to access facilities of a particular device that are not directly available through GDI.  
   
- Use the first version if your application uses predefined escape values. Use the second version if your application defines private escape values. See [ExtEscape](http://msdn.microsoft.com/library/windows/desktop/dd162708) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about the second version.  
+ Use the first version if your application uses predefined escape values. Use the second version if your application defines private escape values. See [ExtEscape](http://msdn.microsoft.com/library/windows/desktop/dd162708) in the Windows SDK for more information about the second version.  
   
 ##  <a name="excludecliprect"></a>  CDC::ExcludeClipRect  
  Creates a new clipping region that consists of the existing clipping region minus the specified rectangle.  
@@ -2177,7 +2177,7 @@ DWORD GetCharacterPlacement(
  If the function fails, the return value is zero.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetCharacterPlacement](http://msdn.microsoft.com/library/windows/desktop/dd144860\(v=vs.85\).aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetCharacterPlacement](http://msdn.microsoft.com/library/windows/desktop/dd144860\(v=vs.85\).aspx), as described in the Windows SDK.  
   
 ##  <a name="getcharabcwidths"></a>  CDC::GetCharABCWidths  
  Retrieves the widths of consecutive characters in a specified range from the current TrueType font.  
@@ -2251,7 +2251,7 @@ BOOL GetCharABCWidthsI(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetCharABCWidthsI](http://msdn.microsoft.com/library/windows/desktop/dd144859), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetCharABCWidthsI](http://msdn.microsoft.com/library/windows/desktop/dd144859), as described in the Windows SDK.  
   
 ##  <a name="getcharwidth"></a>  CDC::GetCharWidth  
  Retrieves the widths of individual characters in a consecutive group of characters from the current font, using `m_hAttribDC`, the input device context.  
@@ -2319,7 +2319,7 @@ BOOL GetCharWidthI(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetCharWidthI](http://msdn.microsoft.com/library/windows/desktop/dd144864), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetCharWidthI](http://msdn.microsoft.com/library/windows/desktop/dd144864), as described in the Windows SDK.  
   
 ##  <a name="getclipbox"></a>  CDC::GetClipBox  
  Retrieves the dimensions of the tightest bounding rectangle around the current clipping boundary.  
@@ -2451,7 +2451,7 @@ COLORREF GetDCBrushColor() const;
  If the function fails, the return value is **CLR_INVALID**.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetDCBrushColor](http://msdn.microsoft.com/library/windows/desktop/dd144872), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetDCBrushColor](http://msdn.microsoft.com/library/windows/desktop/dd144872), as described in the Windows SDK.  
   
 ##  <a name="getdcpencolor"></a>  CDC::GetDCPenColor  
  Retrieves the current pen color.  
@@ -2466,7 +2466,7 @@ COLORREF GetDCPenColor() const;
  If the function fails, the return value is **CLR_INVALID**.  
   
 ### Remarks  
- This member function utilizes the Win32 function [GetDCPenColor](http://msdn.microsoft.com/library/windows/desktop/dd144875), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function utilizes the Win32 function [GetDCPenColor](http://msdn.microsoft.com/library/windows/desktop/dd144875), as described in the Windows SDK.  
   
 ##  <a name="getdevicecaps"></a>  CDC::GetDeviceCaps  
  Retrieves a wide range of device-specific information about the display device.  
@@ -2477,7 +2477,7 @@ int GetDeviceCaps(int nIndex) const;
   
 ### Parameters  
  `nIndex`  
- Specifies the type of information to return. See [GetDeviceCaps](http://msdn.microsoft.com/library/windows/desktop/dd144877) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values.  
+ Specifies the type of information to return. See [GetDeviceCaps](http://msdn.microsoft.com/library/windows/desktop/dd144877) in the Windows SDK for a list of values.  
   
 ### Return Value  
  The value of the requested capability if the function is successful.  
@@ -2532,7 +2532,7 @@ DWORD GetFontLanguageInfo() const;
  The return value identifies characteristics of the currently selected font. For a complete listing of possible values, see [GetFontLanguageInfo](http://msdn.microsoft.com/library/windows/desktop/dd144886).  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetFontLanguageInfo](http://msdn.microsoft.com/library/windows/desktop/dd144886), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetFontLanguageInfo](http://msdn.microsoft.com/library/windows/desktop/dd144886), as described in the Windows SDK.  
   
 ##  <a name="getglyphoutline"></a>  CDC::GetGlyphOutline  
  Retrieves the outline curve or bitmap for an outline character in the current font.  
@@ -3141,7 +3141,7 @@ BOOL GetTextExtentExPointI(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetTextExtentExPointI](http://msdn.microsoft.com/library/windows/desktop/dd144936), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetTextExtentExPointI](http://msdn.microsoft.com/library/windows/desktop/dd144936), as described in the Windows SDK.  
   
 ##  <a name="gettextextentpointi"></a>  CDC::GetTextExtentPointI  
  Retrieves the width and height of the specified array of glyph indices.  
@@ -3167,7 +3167,7 @@ BOOL GetTextExtentPointI(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetTextExtentPointI](http://msdn.microsoft.com/library/windows/desktop/dd144939), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the function [GetTextExtentPointI](http://msdn.microsoft.com/library/windows/desktop/dd144939), as described in the Windows SDK.  
   
 ##  <a name="gettextface"></a>  CDC::GetTextFace  
  Call this member function to copy the typeface name of the current font into a buffer.  
@@ -3310,13 +3310,13 @@ BOOL GradientFill(
  The number of elements (triangles or rectangles) in `pMesh`.  
   
  `dwMode`  
- Specifies gradient fill mode. For a list of possible values, see [GradientFill](http://msdn.microsoft.com/library/windows/desktop/dd144957) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies gradient fill mode. For a list of possible values, see [GradientFill](http://msdn.microsoft.com/library/windows/desktop/dd144957) in the Windows SDK.  
   
 ### Return Value  
  **TRUE** if successful; otherwise **FALSE**.  
   
 ### Remarks  
- For more information, see `GradientFill` in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see `GradientFill` in the Windows SDK.  
   
 ##  <a name="graystring"></a>  CDC::GrayString  
  Draws dimmed (gray) text at the given location by writing the text in a memory bitmap, dimming the bitmap, and then copying the bitmap to the display.  
@@ -4158,7 +4158,7 @@ BOOL Polyline(
 ### Remarks  
  The lines are drawn from the first point through subsequent points using the current pen. Unlike the `LineTo` member function, the `Polyline` function neither uses nor updates the current position.  
   
- For more information, see [PolyLine](http://msdn.microsoft.com/library/windows/desktop/dd162815) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [PolyLine](http://msdn.microsoft.com/library/windows/desktop/dd162815) in the Windows SDK.  
   
 ##  <a name="polylineto"></a>  CDC::PolylineTo  
  Draws one or more straight lines.  
@@ -5007,7 +5007,7 @@ COLORREF SetDCBrushColor(COLORREF crColor);
  If the function fails, the return value is `CLR_INVALID`.  
   
 ### Remarks  
- This method emulates the functionality of the function [SetDCBrushColor](http://msdn.microsoft.com/library/windows/desktop/dd162969), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method emulates the functionality of the function [SetDCBrushColor](http://msdn.microsoft.com/library/windows/desktop/dd162969), as described in the Windows SDK.  
   
 ##  <a name="setdcpencolor"></a>  CDC::SetDCPenColor  
  Sets the current device context (DC) pen color to the specified color value.  
@@ -5024,7 +5024,7 @@ COLORREF SetDCPenColor(COLORREF crColor);
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function utilizes the Win32 function [SetDCPenColor](http://msdn.microsoft.com/library/windows/desktop/dd162970), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function utilizes the Win32 function [SetDCPenColor](http://msdn.microsoft.com/library/windows/desktop/dd162970), as described in the Windows SDK.  
   
 ##  <a name="setgraphicsmode"></a>  CDC::SetGraphicsMode  
  Sets the graphics mode for the specified device context.  
@@ -5074,7 +5074,7 @@ DWORD SetLayout(DWORD dwLayout);
   
  In some cases, such as with many bitmaps, you may want to preserve the left-to-right layout. In these cases, render the image by calling `BitBlt` or `StretchBlt`, then set the bitmap control flag for `dwLayout` to **LAYOUT_BITMAPORIENTATIONPRESERVED**.  
   
- Once you change the layout with the **LAYOUT_RTL** flag, the flags normally specifying right or left are reversed. To avoid confusion, you may want to define alternate names for the standard flags. For a list of suggested alternate flag names, see [SetLayout](http://msdn.microsoft.com/library/windows/desktop/dd162979) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Once you change the layout with the **LAYOUT_RTL** flag, the flags normally specifying right or left are reversed. To avoid confusion, you may want to define alternate names for the standard flags. For a list of suggested alternate flag names, see [SetLayout](http://msdn.microsoft.com/library/windows/desktop/dd162979) in the Windows SDK.  
   
 ##  <a name="setmapmode"></a>  CDC::SetMapMode  
  Sets the mapping mode.  
@@ -5192,7 +5192,7 @@ COLORREF SetPixel(
  Specifies the logical y-coordinate of the point to be set.  
   
  `crColor`  
- A **COLORREF** RGB value that specifies the color used to paint the point. See [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a description of this value.  
+ A **COLORREF** RGB value that specifies the color used to paint the point. See [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) in the Windows SDK for a description of this value.  
   
  `point`  
  Specifies the logical x- and y-coordinates of the point to be set. You can pass either a **POINT** structure or a `CPoint` object for this parameter.  
@@ -5304,7 +5304,7 @@ int SetROP2(int nDrawMode);
 ### Return Value  
  The previous drawing mode.  
   
- It can be any of the values given in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ It can be any of the values given in the Windows SDK.  
   
 ### Remarks  
  The drawing mode specifies how the colors of the pen and the interior of filled objects are combined with the color already on the display surface.  
@@ -5951,7 +5951,7 @@ BOOL TransparentBlt(
 ### Remarks  
  `TransparentBlt` allows for transparency; that is, the RGB color indicated by `clrTransparent` is rendered transparent for the transfer.  
   
- For more information, see [TransparentBlt](http://msdn.microsoft.com/library/windows/desktop/dd145141) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [TransparentBlt](http://msdn.microsoft.com/library/windows/desktop/dd145141) in the Windows SDK.  
   
 ##  <a name="updatecolors"></a>  CDC::UpdateColors  
  Updates the client area of the device context by matching the current colors in the client area to the system palette on a pixel-by-pixel basis.  
@@ -5963,7 +5963,7 @@ void UpdateColors();
 ### Remarks  
  An inactive window with a realized logical palette may call `UpdateColors` as an alternative to redrawing its client area when the system palette changes.  
   
- For more information about using color palettes, see [UpdateColors](http://msdn.microsoft.com/library/windows/desktop/dd145166) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about using color palettes, see [UpdateColors](http://msdn.microsoft.com/library/windows/desktop/dd145166) in the Windows SDK.  
   
  The `UpdateColors` member function typically updates a client area faster than redrawing the area. However, because the function performs the color translation based on the color of each pixel before the system palette changed, each call to this function results in the loss of some color accuracy.  
   

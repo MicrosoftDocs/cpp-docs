@@ -127,7 +127,7 @@ Controls are objects that users can interact with to enter or manipulate data. T
   
 -   [Samples](../mfc/common-control-sample-list.md)  
   
- For information about Windows common controls in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)], see [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493).  
+ For information about Windows common controls in the Windows SDK, see [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493).  
   
 ## See Also  
  [User Interface Elements](../mfc/user-interface-elements-mfc.md)   

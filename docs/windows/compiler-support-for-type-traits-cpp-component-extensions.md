@@ -98,7 +98,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
  The following list contains the type traits that are supported by the compiler. All type traits return `false` if the condition specified by the name of the type trait is not met.  
   
- (In the following list, code examples are written only in C++/CLI. But the corresponding type trait is also supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)] unless stated otherwise. The term, "platform type" refers to either [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] types or common language runtime types.)  
+ (In the following list, code examples are written only in C++/CLI. But the corresponding type trait is also supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)] unless stated otherwise. The term, "platform type" refers to either Windows Runtime types or common language runtime types.)  
   
 -   `__has_assign(` `type` `)`  
   
@@ -592,7 +592,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
     ```  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
  The `__has_finalizer(`*type*`)` type trait is not supported because this platform does not support finalizers.  
@@ -600,7 +600,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  (There are no platform-specific remarks for this feature.)  

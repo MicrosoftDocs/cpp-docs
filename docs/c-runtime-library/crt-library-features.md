@@ -115,14 +115,14 @@ This topic discusses the various .lib files that comprise the C run-time librari
 |LIBCPMTD.LIB|Multithreaded, static link|**/MTd**|_DEBUG, _MT|  
 |MSVCPRTD.LIB|Multithreaded, dynamic link (import library for MSVCP\<version>D.DLL)|**/MDd**|_DEBUG, _MT, _DLL|  
   
- When you build a release version of your project, one of the basic C run-time libraries (LIBCMT.LIB, MSVCMRT.LIB, MSVCRT.LIB) is linked by default, depending on the compiler option you choose (multithreaded, DLL, /clr). If you include one of the [C++ Standard Library header files](../standard-library/cpp-standard-library-header-files.md) in your code, a C++ Standard Library will be linked in automatically by [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] at compile time. For example:  
+ When you build a release version of your project, one of the basic C run-time libraries (LIBCMT.LIB, MSVCMRT.LIB, MSVCRT.LIB) is linked by default, depending on the compiler option you choose (multithreaded, DLL, /clr). If you include one of the [C++ Standard Library header files](../standard-library/cpp-standard-library-header-files.md) in your code, a C++ Standard Library will be linked in automatically by Visual C++ at compile time. For example:  
   
 ```  
 #include <ios>   
 ```  
   
 ## What problems exist if an application uses more than one CRT version?  
- If you have more than one DLL or EXE, then you may have more than one CRT, whether or not you are using different versions of [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)]. For example, statically linking the CRT into multiple DLLs can present the same problem. Developers encountering this problem with static CRTs have been instructed to compile with **/MD** to use the CRT DLL. If your DLLs pass CRT resources across the DLL boundary, you may encounter issues with mismatched CRTs and need to recompile your project with Visual C++.  
+ If you have more than one DLL or EXE, then you may have more than one CRT, whether or not you are using different versions of Visual C++. For example, statically linking the CRT into multiple DLLs can present the same problem. Developers encountering this problem with static CRTs have been instructed to compile with **/MD** to use the CRT DLL. If your DLLs pass CRT resources across the DLL boundary, you may encounter issues with mismatched CRTs and need to recompile your project with Visual C++.  
   
  If your program is using more than one version of the CRT, some care is needed when passing certain CRT objects (such as file handles, locales and environment variables) across DLL boundaries. For more information on the issues involved and how to resolve them, see [Potential Errors Passing CRT Objects Across DLL Boundaries](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).  
   

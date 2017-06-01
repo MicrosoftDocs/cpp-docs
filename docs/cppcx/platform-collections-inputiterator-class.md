@@ -19,7 +19,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Platform::Collections::InputIterator Class
-Provides a Standard Template Library InputIterator for collections derived from the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].  
+Provides a Standard Template Library InputIterator for collections derived from the Windows Runtime.  
   
 ## Syntax  
   

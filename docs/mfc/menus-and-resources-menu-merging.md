@@ -48,7 +48,7 @@ This article details the steps necessary for OLE document applications to handle
 - [Toolbars and Status Bars](#_core_toolbars_and_status_bars)  
   
 ##  <a name="_core_menu_layouts"></a> Menu Layouts  
- The first step is to coordinate menu layouts. For more information, see the **Menu Creation** section in [Menu Programming Considerations](https://msdn.microsoft.com/library/ms647557.aspx) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ The first step is to coordinate menu layouts. For more information, see the **Menu Creation** section in [Menu Programming Considerations](https://msdn.microsoft.com/library/ms647557.aspx) in the Windows SDK.  
   
  Container applications should create a new menu to be used only when embedded items are activated in place. At the minimum, this menu should consist of the following, in the order listed:  
   
