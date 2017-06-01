@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Point of declaration in C++
-A name is considered to be declared immediately after its declarator but before its (optional) initializer. (For more information on declarators, see [Declarations and definitions](declarations-and-definitions.md).)  
+A name is considered to be declared immediately after its declarator but before its (optional) initializer. (For more information on declarators, see [Declarations and definitions](declarations-and-definitions-cpp.md).)  
   
  Consider this example:  
   

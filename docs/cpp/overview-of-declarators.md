@@ -161,7 +161,7 @@ PIFN pifnDispatchArray[7];
 int ( *pifnDispatchArray[7] )( char * );  
 ```  
   
- For more information on typedef, see [Aliases and typedefs](aliases-and-typedefs.md).  
+ For more information on typedef, see [Aliases and typedefs](aliases-and-typedefs-cpp.md).  
   
  Pointers, references, arrays of a single base type can be combined in a single declaration (separated by commas) as  
   
