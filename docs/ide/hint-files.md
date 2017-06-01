@@ -327,8 +327,7 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
 -   The `#undef` hint in the `A2` directory removed the hints for `OBRACE` and `CBRACE` in the `Debug` directory hint file.  
   
 ## See Also  
- [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)   
- [Creating and Controlling Environment Windows](http://msdn.microsoft.com/Library/496ecde3-4fe1-412c-b7b4-b40e3efda618)   
+ [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md)    
  [#define Directive (C/C++)](../preprocessor/hash-define-directive-c-cpp.md)   
  [#undef Directive (C/C++)](../preprocessor/hash-undef-directive-c-cpp.md)   
  [SAL Annotations](../c-runtime-library/sal-annotations.md)   

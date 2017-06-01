@@ -61,7 +61,6 @@ void __stdcall f3() throw();
   
  Using `void __declspec(nothrow) __stdcall f2();` has the advantage that you can use an API definition, such as that illustrated by the `#define` statement, to easily specify `nothrow` on a set of functions. The third declaration`, void __stdcall f3() throw();` is the syntax defined by the C++ standard.  
   
- See [Synchronous Exception Handling](http://msdn.microsoft.com/en-us/81595fae-d8ab-4c14-9670-8d6639cc0369) for more information.  
   
  **END Microsoft Specific**  
   
