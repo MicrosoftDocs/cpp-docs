@@ -280,7 +280,7 @@ HRESULT ExecFormsCommand(
  Pointer to a **VARIANT** structure to receive command output. Can be **NULL**.  
   
 ### Return Value  
- A standard `HRESULT` value. For a complete listing of possible values, see [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A standard `HRESULT` value. For a complete listing of possible values, see [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) in the Windows SDK.  
   
 ### Remarks  
  **ExecFormsCommand** implements the behavior of the [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) method.  
@@ -310,7 +310,7 @@ void ExecWB(
  A variant used for specifying command output arguments.  
   
 ### Remarks  
- See [IWebBrowser2::ExecWB](https://msdn.microsoft.com/library/aa752117.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IWebBrowser2::ExecWB](https://msdn.microsoft.com/library/aa752117.aspx) in the Windows SDK.  
   
 ##  <a name="getaddressbar"></a>  CHtmlView::GetAddressBar  
  Call this member function to retrieve Internet Explorer's address bar.  
@@ -529,7 +529,7 @@ READYSTATE GetReadyState() const;
 ```  
   
 ### Return Value  
- A [READYSTATE](https://msdn.microsoft.com/library/aa768362.aspx) value, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A [READYSTATE](https://msdn.microsoft.com/library/aa768362.aspx) value, as described in the Windows SDK.  
   
 ### Remarks  
  Applies to Internet Explorer and WebBrowser.  
@@ -921,7 +921,7 @@ virtual HRESULT OnDocWindowActivate(BOOL fActivate);
  `S_OK` if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
- Override `OnDocWindowActivate` to react to the `OnDocWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnDocWindowActivate` to react to the `OnDocWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) in the Windows SDK for more information.  
   
 ##  <a name="ondownloadbegin"></a>  CHtmlView::OnDownloadBegin  
  This member function is called by the framework to begin downloading a document.  
@@ -955,7 +955,7 @@ virtual HRESULT OnEnableModeless(BOOL fEnable);
  `S_OK` if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
- Enables or disables modeless dialog boxes when the container creates or destroys a modal dialog box. Override `OnEnableModeless` to react to the `EnableModeless` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Enables or disables modeless dialog boxes when the container creates or destroys a modal dialog box. Override `OnEnableModeless` to react to the `EnableModeless` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) in the Windows SDK for more information.  
   
 ##  <a name="onfilterdataobject"></a>  CHtmlView::OnFilterDataObject  
  Called on the host by Internet Explorer or MSHTML to allow the host to replace Internet Explorer or MSHTML's data object.  
@@ -977,7 +977,7 @@ virtual HRESULT OnFilterDataObject(
  `S_OK` if the data object is replaced, **S_FALSE** if the data object is not replaced, or an OLE-defined error code if an error occurs.  
   
 ### Remarks  
- Override `OnFilterDataObject` to react to the `FilterDataObject` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnFilterDataObject` to react to the `FilterDataObject` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) in the Windows SDK for more information.  
   
 ##  <a name="onframewindowactivate"></a>  CHtmlView::OnFrameWindowActivate  
  Called from [IOleInPlaceActiveObject::OnFrameWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms683969) to notify the object when the container's top-level frame window is activated or deactivated.  
@@ -994,7 +994,7 @@ virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
  `S_OK` if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
- Override `OnFrameWindowActivate` to react to the `OnFrameWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnFrameWindowActivate` to react to the `OnFrameWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) in the Windows SDK for more information.  
   
 ##  <a name="onfullscreen"></a>  CHtmlView::OnFullScreen  
  This member function is called by the framework when the [FullScreen](https://msdn.microsoft.com/library/aa752119.aspx) property has changed.  
@@ -1024,10 +1024,10 @@ virtual HRESULT OnGetDropTarget(
  Address of the `IDropTarget` that receives the `IDropTarget` interface pointer the host wants to provide.  
   
 ### Return Value  
- See [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of return codes.  
+ See [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) in the Windows SDK for a list of return codes.  
   
 ### Remarks  
- Override `OnGetDropTarget` to react to the `GetDropTarget` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnGetDropTarget` to react to the `GetDropTarget` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) in the Windows SDK for more information.  
   
 ##  <a name="ongetexternal"></a>  CHtmlView::OnGetExternal  
  Called by Internet Explorer or MSHTML to obtain the host's `IDispatch` interface.  
@@ -1044,7 +1044,7 @@ virtual HRESULT OnGetExternal(LPDISPATCH* lppDispatch);
  `S_OK` if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
- Override `OnGetExternal` to react to the `GetExternal` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnGetExternal` to react to the `GetExternal` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) in the Windows SDK for more information.  
   
 ##  <a name="ongethostinfo"></a>  CHtmlView::OnGetHostInfo  
  Retrieves the UI capabilities of the Internet Explorer or MSHTML host.  
@@ -1061,7 +1061,7 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
  `S_OK` if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
- Override `OnGetHostInfo` to react to the `GetHostInfo` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnGetHostInfo` to react to the `GetHostInfo` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) in the Windows SDK for more information.  
   
 ##  <a name="ongetoptionkeypath"></a>  CHtmlView::OnGetOptionKeyPath  
  Call this member function to get the registry key under which Internet Explorer or MSHTML stores user preferences.  
@@ -1083,7 +1083,7 @@ virtual HRESULT OnGetOptionKeyPath(
  `S_OK` if successful, or **S_FALSE** otherwise. If **S_FALSE**, Internet Explorer or MSHTML will default to its own user options.  
   
 ### Remarks  
- Override `OnGetOptionKeyPath` to react to the `GetOptionKeyPath` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnGetOptionKeyPath` to react to the `GetOptionKeyPath` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) in the Windows SDK for more information.  
   
 ##  <a name="onhideui"></a>  CHtmlView::OnHideUI  
  This member function is called by the framework when Internet Explorer or MSHTML removes its menus and toolbars.  
@@ -1096,7 +1096,7 @@ virtual HRESULT OnHideUI();
  `S_OK` if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
- Override `OnHideUI` to react to the `HideUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnHideUI` to react to the `HideUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx) in the Windows SDK for more information.  
   
 ##  <a name="onmenubar"></a>  CHtmlView::OnMenuBar  
  This member function is called by the framework when the [MenuBar](https://msdn.microsoft.com/library/aa752131.aspx) property has changed.  
@@ -1234,7 +1234,7 @@ virtual HRESULT OnResizeBorder(
  `S_OK` if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
- Override `OnResizeBorder` to react to the `ResizeBorder` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnResizeBorder` to react to the `ResizeBorder` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) in the Windows SDK for more information.  
   
 ##  <a name="onshowcontextmenu"></a>  CHtmlView::OnShowContextMenu  
  Called from Internet Explorer or MSHTML when it is about to show its context menu.  
@@ -1249,7 +1249,7 @@ virtual HRESULT OnShowContextMenu(
   
 ### Parameters  
  `dwID`  
- Identifier of the context menu to be displayed. See **IDocHostUIHandler::ShowContextMenu** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values.  
+ Identifier of the context menu to be displayed. See **IDocHostUIHandler::ShowContextMenu** in the Windows SDK for a list of values.  
   
  `ppt`  
  Screen coordinates for the menu.  
@@ -1261,10 +1261,10 @@ virtual HRESULT OnShowContextMenu(
  IDispatch interface of the object at the screen coordinates. This allows a host to differentiate particular objects to provide more specific context.  
   
 ### Return Value  
- See [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values.  
+ See [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) in the Windows SDK for a list of values.  
   
 ### Remarks  
- Override `OnShowContextMenu` to react to the `ShowContextMenu` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnShowContextMenu` to react to the `ShowContextMenu` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) in the Windows SDK for more information.  
   
 ##  <a name="onshowui"></a>  CHtmlView::OnShowUI  
  Called before Internet Explorer or MSHTML displays its menus and toolbars.  
@@ -1295,10 +1295,10 @@ virtual HRESULT OnShowUI(
  [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) interface for the object. This is needed for toolbars.  
   
 ### Return Value  
- See [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values.  
+ See [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) in the Windows SDK for a list of values.  
   
 ### Remarks  
- Override `OnShowUI` to react to the `ShowUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnShowUI` to react to the `ShowUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) in the Windows SDK for more information.  
   
 ##  <a name="onstatusbar"></a>  CHtmlView::OnStatusBar  
  This member function is called by the framework when the [StatusBar](https://msdn.microsoft.com/library/aa768270.aspx) property has changed.  
@@ -1382,7 +1382,7 @@ virtual HRESULT OnTranslateAccelerator(
  `S_OK` if successful, or **S_FALSE** otherwise.  
   
 ### Remarks  
- Override `OnTranslateAccelerator` to react to the `TranslateAccelerator` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnTranslateAccelerator` to react to the `TranslateAccelerator` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) in the Windows SDK for more information.  
   
 ##  <a name="ontranslateurl"></a>  CHtmlView::OnTranslateUrl  
  Called by Internet Explorer or MSHTML to allow the host an opportunity to modify the URL to be loaded.  
@@ -1408,7 +1408,7 @@ virtual HRESULT OnTranslateUrl(
  `S_OK` if the URL was translated, **S_FALSE** if the URL was not translated, or an OLE-defined error code if an error occurred.  
   
 ### Remarks  
- Override `OnTranslateUrl` to react to the `TranslateUrl` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Override `OnTranslateUrl` to react to the `TranslateUrl` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) in the Windows SDK for more information.  
   
 ##  <a name="onupdateui"></a>  CHtmlView::OnUpdateUI  
  Notifies the host that the command state has changed.  
@@ -1516,7 +1516,7 @@ HRESULT QueryFormsCommand(
  A pointer to a **BOOL** specifying if the command (identified by `dwCommandID`) is checked. If TRUE, the command is supported; otherwise FALSE.  
   
 ### Return Value  
- A standard `HRESULT` value. For a complete listing of possible values, see [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A standard `HRESULT` value. For a complete listing of possible values, see [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) in the Windows SDK.  
   
 ### Remarks  
  `QueryFormsCommand` implements the behavior of the [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) method.  
@@ -1561,7 +1561,7 @@ void Refresh2(int nLevel);
   
 ### Parameters  
  `nLevel`  
- The address of the variable specifying the refresh level. The possible variables are defined in [RefreshConstants](https://msdn.microsoft.com/library/aa768363.aspx), in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The address of the variable specifying the refresh level. The possible variables are defined in [RefreshConstants](https://msdn.microsoft.com/library/aa768363.aspx), in the Windows SDK.  
   
 ### Remarks  
  Unlike [Refresh](#refresh), `Refresh2` contains a parameter that specifies the refresh level.  

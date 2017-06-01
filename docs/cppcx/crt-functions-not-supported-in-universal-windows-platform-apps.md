@@ -14,7 +14,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # CRT functions not supported in Universal Windows Platform apps
-Many C runtime (CRT) functions are not available when you build Universal Windows Platform (UWP) apps. In some cases, workarounds are available—-for example, you can use [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] or Win32 APIs. However, in other cases, CRT functions have been banned because the features that correspond to them or the supporting APIs are not applicable to UWP apps.  
+Many C runtime (CRT) functions are not available when you build Universal Windows Platform (UWP) apps. In some cases, workarounds are available—-for example, you can use Windows Runtime or Win32 APIs. However, in other cases, CRT functions have been banned because the features that correspond to them or the supporting APIs are not applicable to UWP apps.  
   
  The following table lists the CRT functions that are not available when you build UWP apps, and indicates any workarounds that apply.  
   
@@ -38,11 +38,11 @@ Many C runtime (CRT) functions are not available when you build Universal Window
 |_wexecl _wexecle _wexeclp _wexeclpe _wexecv _wexecve _wexecvp _wexecvpe _execl _execle _execlp _execlpe _execv _execve _execvp _execvpe _spawnl _spawnle _spawnlp _spawnlpe _spawnv _spawnve _spawnvp _spawnvpe _wspawnl _wspawnle _wspawnlp _wspawnlpe _wspawnv _wspawnve _wspawnvp _wspawnvpe _wsystem execl execle execlp execlpe execv execve execvp execvpe spawnl spawnle spawnlp spawnlpe spawnv spawnve spawnvp spawnvpe system|The functionality is not available in UWP apps. A UWP app cannot invoke another UWP app or a desktop app.|No workaround.|  
 |_heapwalk _heapadd _heapchk _heapset _heapused|These functions are typically used to work with the heap. However, corresponding Win32 APIs are not supported in UWP apps. And, apps can no longer create or use private heaps.|No workaround. However, `_heapwalk` available in the DEBUG CRT, for debugging purposes only. These cannot be used in apps that are uploaded to the Windows Store.|  
   
- The following functions are available in the CRT for UWP apps, but should be used only when the corresponding Win32 or [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] APIs cannot be used—for example, when you are porting large code bases  
+ The following functions are available in the CRT for UWP apps, but should be used only when the corresponding Win32 or Windows Runtime APIs cannot be used—for example, when you are porting large code bases  
   
 |||  
 |-|-|  
-|Single-byte string functions—for example, `strcat`, `strcpy`, `strlwr`, and so on.|Make your UWP apps strictly Unicode because all Win32 APIs and [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] APIs that are exposed use Unicode character sets only.  Single-byte functions were left for porting large code bases, but should otherwise be avoided, and the corresponding wide char functions should be used instead when possible.|  
+|Single-byte string functions—for example, `strcat`, `strcpy`, `strlwr`, and so on.|Make your UWP apps strictly Unicode because all Win32 APIs and Windows Runtime APIs that are exposed use Unicode character sets only.  Single-byte functions were left for porting large code bases, but should otherwise be avoided, and the corresponding wide char functions should be used instead when possible.|  
 |Stream IO and low-level file IO functions—for example, `fopen`, `open`, and so on.|These functions are synchronous, which is not recommended for UWP apps. In your UWP apps, use asynchronous APIs to open, read from, and write to files to prevent locking of the UI thread. Examples of such APIs are the ones in the `Windows::Storage::FileIO` class.|  
   
 ## Windows 8.x Store apps and Windows Phone 8.x apps  

@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Implementing Working Areas in List Controls
-By default, a list control arranges all items in a standard grid fashion. However, another method is supported, working areas, that arranges the list items into rectangular groups. For an image of a list control that implements working areas, see Using List-View Controls in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+By default, a list control arranges all items in a standard grid fashion. However, another method is supported, working areas, that arranges the list items into rectangular groups. For an image of a list control that implements working areas, see Using List-View Controls in the Windows SDK.  
   
 > [!NOTE]
 >  Working areas are visible only when the list control is in icon or small icon mode. However, any current working areas are maintained if the view is switched to the report or list mode.  

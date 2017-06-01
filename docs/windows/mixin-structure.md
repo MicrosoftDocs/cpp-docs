@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # MixIn Structure
-Ensures that a runtime class derives from [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces, if any, and then classic COM interfaces.  
+Ensures that a runtime class derives from Windows Runtime interfaces, if any, and then classic COM interfaces.  
   
 ## Syntax  
   
@@ -61,7 +61,7 @@ struct MixIn;
  `true` if `MixInType` is derived from the current implementation the base type; `false` otherwise.  
   
 ## Remarks  
- If a class is derived from both [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and class COM interfaces, the class declaration list must first list any [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces and then any classic COM interfaces. MixIn ensures that the interfaces are specified in the correct order.  
+ If a class is derived from both Windows Runtime and class COM interfaces, the class declaration list must first list any Windows Runtime interfaces and then any classic COM interfaces. MixIn ensures that the interfaces are specified in the correct order.  
   
 ## Inheritance Hierarchy  
  `MixIn`  

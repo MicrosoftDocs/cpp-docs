@@ -158,8 +158,5 @@ if (num < 100)
   
 ## See Also  
  [Lexical Conventions](../cpp/lexical-conventions.md)   
- [C++ Integer Constants](http://msdn.microsoft.com/en-us/1f3b58a4-8346-4533-ba6e-df26d76f8dcf)   
- [C++ Character Literals](http://msdn.microsoft.com/en-us/a7901c61-524d-47c6-beb6-d9dacc2e72ed)   
- [C++ Floating-Point Constants](http://msdn.microsoft.com/en-us/f6273f24-a876-4484-a7a2-e82275692ad3)   
  [C++ String Literals](../cpp/string-and-character-literals-cpp.md)   
  [C++ User-Defined Literals](../cpp/user-defined-literals-cpp.md)

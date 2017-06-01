@@ -84,7 +84,7 @@ interface class
   
  In the development environment, you can get F1 help on these keywords by highlighting the keyword, (`interface class`, for example) and pressing F1.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
  (There are no remarks for this language feature that apply to only the Windows Runtime.)  
@@ -92,7 +92,7 @@ interface class
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  (There are no remarks for this language feature that apply to only the common language runtime.)  

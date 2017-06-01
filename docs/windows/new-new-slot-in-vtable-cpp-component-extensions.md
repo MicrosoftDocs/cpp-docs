@@ -39,9 +39,9 @@ The `new` keyword indicates that a virtual member will get a new slot in the vta
  (There are no remarks for this language feature that apply to all runtimes.)  
   
 ## Windows Runtime  
- Not supported in [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+ Not supported in Windows Runtime.  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  In a **/clr** compilation, `new` indicates that a virtual member will get a new slot in the vtable; that the function does not override a base class method.  

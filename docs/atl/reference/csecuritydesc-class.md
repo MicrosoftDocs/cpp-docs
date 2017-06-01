@@ -97,7 +97,7 @@ class CSecurityDesc
   
  Applications should not modify the **SECURITY_DESCRIPTOR** structure directly, and instead should use the class methods provided.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  

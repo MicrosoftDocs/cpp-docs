@@ -47,9 +47,9 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Setting the Path and Environment Variables for Command-Line Builds
-The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] command-line build tools require several environment variables that are customized for your installation. When [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] is installed, it creates command files that set the required environment variables, and then creates shortcuts that start a Command Prompt window that already has these variables set. When you want to use the command-line tools, you can run one of these shortcuts, or you can open a plain Command Prompt window and then run the vcvarsall.bat command file.  
+The Visual C++ command-line build tools require several environment variables that are customized for your installation. When [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] is installed, it creates command files that set the required environment variables, and then creates shortcuts that start a Command Prompt window that already has these variables set. When you want to use the command-line tools, you can run one of these shortcuts, or you can open a plain Command Prompt window and then run the vcvarsall.bat command file.  
   
- The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] command-line tools use the PATH, TMP, INCLUDE, LIB, and LIBPATH environment variables, and may also use tool-specific environment variables. Because the values of these environment variables are specific to your installation, and can be changed by product updates or upgrades, we recommend that you use vcvarsall.bat or a Developer Command Prompt shortcut instead of setting them yourself. For information about the specific environment variables used by the compiler and linker, see [CL Environment Variables](../build/reference/cl-environment-variables.md) and [LINK Environment Variables](../build/reference/link-environment-variables.md).  
+ The Visual C++ command-line tools use the PATH, TMP, INCLUDE, LIB, and LIBPATH environment variables, and may also use tool-specific environment variables. Because the values of these environment variables are specific to your installation, and can be changed by product updates or upgrades, we recommend that you use vcvarsall.bat or a Developer Command Prompt shortcut instead of setting them yourself. For information about the specific environment variables used by the compiler and linker, see [CL Environment Variables](../build/reference/cl-environment-variables.md) and [LINK Environment Variables](../build/reference/link-environment-variables.md).  
   
 > [!NOTE]
 >  Several command-line tools or tool options require Administrator permission. To use them, we recommend that you open a Command Prompt window by using the **Run as Administrator** option. On Windows 10, right-click to open the shortcut menu for the Command Prompt window, then choose **More**, **Run as administrator**.  
@@ -105,7 +105,7 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] command-line build tools 
   
 #### To run vcvarsall.bat  
   
-1.  At the command prompt, change to the [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] installation directory. (The location depends on the system and the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] installation, but a typical location is C:\Program Files (x86)\Microsoft Visual Studio *version*\VC\\.) For example, enter:  
+1.  At the command prompt, change to the Visual C++ installation directory. (The location depends on the system and the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] installation, but a typical location is C:\Program Files (x86)\Microsoft Visual Studio *version*\VC\\.) For example, enter:  
   
      **cd "Program Files (x86)Microsoft Visual Studio 14.0VC"**  
   
@@ -122,7 +122,7 @@ The [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] command-line build tools 
 > [!CAUTION]
 >  The vcvarsall.bat file can vary from computer to computer. Do not replace a missing or damaged vcvarsall.bat file by using a file from another computer. Rerun [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Setup to replace the missing file.  
 >   
->  The vcvarsall.bat file also varies from version to version. If the current version of [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] is installed on a computer that also has an earlier version of [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)], do not run vcvarsall.bat or vcvars32.bat from the different versions in the same Command Prompt window.  
+>  The vcvarsall.bat file also varies from version to version. If the current version of Visual C++ is installed on a computer that also has an earlier version of Visual C++, do not run vcvarsall.bat or vcvars32.bat from the different versions in the same Command Prompt window.  
   
 ## See Also  
  [Building on the Command Line](../build/building-on-the-command-line.md)   

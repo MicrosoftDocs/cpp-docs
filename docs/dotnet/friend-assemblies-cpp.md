@@ -41,15 +41,15 @@ For applicable runtimes, the *friend assemblies* language feature makes types th
   
  (This language feature is not supported in all runtimes.)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  **Remarks**  
   
- (This language feature is not supported in the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].)  
+ (This language feature is not supported in the Windows Runtime.)  
   
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
 #### To make types at namespace scope or global scope in an assembly component accessible to a client assembly or .netmodule  

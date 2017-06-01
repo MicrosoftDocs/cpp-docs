@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Define and Use Delegates (C++/CLI)
-This article shows how to define and consume delegates in [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)].  
+This article shows how to define and consume delegates in C++/CLI.  
   
  Although the .NET Framework provides a number of delegates, sometimes you might have to define new delegates.  
   

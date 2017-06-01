@@ -39,7 +39,7 @@ translation.priority.ht:
 Provides a default implementation for the `IDispatch` part of a dual interface.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -121,7 +121,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispatchImpl::GetTypeInfo  
  Retrieves the type information for the dual interface.  
@@ -134,7 +134,7 @@ STDMETHOD(GetTypeInfo)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfo](http://msdn.microsoft.com/en-us/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::GetTypeInfo](http://msdn.microsoft.com/en-us/cc1ec9aa-6c40-4e70-819c-a7c6dd6b8c99) in the Windows SDK.  
   
 ##  <a name="gettypeinfocount"></a>  IDispatchImpl::GetTypeInfoCount  
  Determines whether there is type information available for the dual interface.  
@@ -144,7 +144,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```  
   
 ### Remarks  
- See `IDispatch::GetTypeInfoCount` in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `IDispatch::GetTypeInfoCount` in the Windows SDK.  
   
 ##  <a name="idispatchimpl"></a>  IDispatchImpl::IDispatchImpl  
  The constructor. Calls `AddRef` on the protected member variable that manages the type information for the dual interface. The destructor calls **Release**.  
@@ -169,7 +169,7 @@ STDMETHOD(Invoke)(
 ```  
   
 ### Remarks  
- See [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::Invoke](http://msdn.microsoft.com/en-us/964ade8e-9d8a-4d32-bd47-aa678912a54d) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

@@ -545,7 +545,7 @@ UINT GetDefaultItem(
  If the function succeeds, the return value is the identifier or position of the menu item. If the function fails, the return value is - 1.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 function [GetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647976), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 function [GetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647976), as described in the Windows SDK.  
   
 ### Example  
   See the example for [CMenu::InsertMenu](#insertmenu).  
@@ -625,16 +625,16 @@ BOOL GetMenuItemInfo(
  Identifier or position of the menu item to get information about. The meaning of this parameter depends on the value of `ByPos`.  
   
  `lpMenuItemInfo`  
- A pointer to a [MENUITEMINFO](http://msdn.microsoft.com/library/windows/desktop/ms647578), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)], that contains information about the menu.  
+ A pointer to a [MENUITEMINFO](http://msdn.microsoft.com/library/windows/desktop/ms647578), as described in the Windows SDK, that contains information about the menu.  
   
  `fByPos`  
  Value specifying the meaning of `nIDItem`. By default, `ByPos` is **FALSE**, which indicates that uItem is a menu item identifier. If `ByPos` is not set to **FALSE**, it indicates a menu item position.  
   
 ### Return Value  
- If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.  
   
 ### Remarks  
- This member function implements the behavior of the of the Win32 function [GetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms647980), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. Note that in the MFC implementation of `GetMenuItemInfo`, you do not use a handle to a menu.  
+ This member function implements the behavior of the of the Win32 function [GetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms647980), as described in the Windows SDK. Note that in the MFC implementation of `GetMenuItemInfo`, you do not use a handle to a menu.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#26](../../mfc/reference/codesnippet/cpp/cmenu-class_6.cpp)]  
@@ -826,16 +826,16 @@ BOOL InsertMenuItem(
   
 ### Parameters  
  `uItem`  
- See description of `uItem` in [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See description of `uItem` in [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988) in the Windows SDK.  
   
  `lpMenuItemInfo`  
- See description of `lpmii` in **InsertMenuItem** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See description of `lpmii` in **InsertMenuItem** in the Windows SDK.  
   
  `fByPos`  
- See description of `fByPosition` in **InsertMenuItem** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See description of `fByPosition` in **InsertMenuItem** in the Windows SDK.  
   
 ### Remarks  
- This function wraps [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988), described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This function wraps [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988), described in the Windows SDK.  
   
 ##  <a name="loadmenu"></a>  CMenu::LoadMenu  
  Loads a menu resource from the application's executable file and attaches it to the `CMenu` object.  
@@ -870,7 +870,7 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
   
 ### Parameters  
  *lpMenuTemplate*  
- Points to a menu template (which is a single [MENUITEMTEMPLATEHEADER](http://msdn.microsoft.com/library/windows/desktop/ms647583) structure and a collection of one or more [MENUITEMTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms647581) structures). For more information on these two structures, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Points to a menu template (which is a single [MENUITEMTEMPLATEHEADER](http://msdn.microsoft.com/library/windows/desktop/ms647583) structure and a collection of one or more [MENUITEMTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms647581) structures). For more information on these two structures, see the Windows SDK.  
   
 ### Return Value  
  Nonzero if the menu resource was loaded successfully; otherwise 0.  
@@ -1068,10 +1068,10 @@ BOOL SetDefaultItem(
  Value specifying the meaning of `uItem`. If this parameter is **FALSE**, `uItem` is a menu item identifier. Otherwise, it is a menu item position.  
   
 ### Return Value  
- If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 function [SetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647996), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 function [SetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647996), as described in the Windows SDK.  
   
 ### Example  
   See the example for [CMenu::InsertMenu](#insertmenu).  
@@ -1171,16 +1171,16 @@ BOOL SetMenuItemInfo(
   
 ### Parameters  
  `uItem`  
- See description of `uItem` in [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See description of `uItem` in [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001) in the Windows SDK.  
   
  `lpMenuItemInfo`  
- See description of `lpmii` in **SetMenuItemInfo** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See description of `lpmii` in **SetMenuItemInfo** in the Windows SDK.  
   
  `fByPos`  
- See description of `fByPosition` in **SetMenuItemInfo** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See description of `fByPosition` in **SetMenuItemInfo** in the Windows SDK.  
   
 ### Remarks  
- This function wraps [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001), described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This function wraps [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001), described in the Windows SDK.  
   
 ##  <a name="trackpopupmenu"></a>  CMenu::TrackPopupMenu  
  Displays a floating pop-up menu at the specified location and tracks the selection of items on the pop-up menu.  
@@ -1211,7 +1211,7 @@ BOOL TrackPopupMenu(
  Ignored.  
   
 ### Return Value  
- This method returns the result of calling [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method returns the result of calling [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) in the Windows SDK.  
   
 ### Remarks  
  A floating pop-up menu can appear anywhere on the screen.  

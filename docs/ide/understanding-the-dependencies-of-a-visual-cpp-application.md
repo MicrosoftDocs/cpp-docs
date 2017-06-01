@@ -40,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Understanding the Dependencies of a Visual C++ Application
-To determine which [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] libraries an application depends on, you can view the project properties. (In Solution Explorer, right-click on the project and choose **Properties** to open the **Property Pages** dialog box.) You can also use the Dependency Walker (depends.exe), which gives a more comprehensive picture of the dependencies.  
+To determine which Visual C++ libraries an application depends on, you can view the project properties. (In Solution Explorer, right-click on the project and choose **Properties** to open the **Property Pages** dialog box.) You can also use the Dependency Walker (depends.exe), which gives a more comprehensive picture of the dependencies.  
   
  In the **Property Pages** dialog box, you can examine various pages under **Configuration Properties** to understand the dependencies. For example, if your project uses the MFC libraries and you choose **Use of MFC**, **Use MFC in a Shared DLL** on the **Configuration Properties**, **General** page, your application at run time depends on MFC DLLs such as mfc\<version>.dll. If your application doesn't use MFC, it might depend on the CRT library if you choose a **Runtime Library** value of **Multi-threaded Debug DLL (/MDd)** or **Multi-threaded DLL (/MD)** on the **Configuration Properties**, **C/C++**, **Code Generation** page.  
   
@@ -50,7 +50,7 @@ To determine which [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] libraries 
   
  When you use depends.exe, be aware that a DLL might have a dependency on another DLL or on a specific version of a DLL. You can use depends.exe on either the development computer or on a target computer. On the development computer, depends.exe reports the DLLs that are required to support an application. If you have trouble getting an application to run on a target computer, you can copy depends.exe to it and then open the application in the tool so that you can determine whether any required DLLs are missing or incorrect.  
   
- When you know which DLLs your application depends on, you can determine the ones that you have to redistribute with your application when you deploy it to another computer. In most cases, you don't have to redistribute system DLLs, but you may have to redistribute DLLs for [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] libraries. For more information, see [Determining Which DLLs to Redistribute](../ide/determining-which-dlls-to-redistribute.md).  
+ When you know which DLLs your application depends on, you can determine the ones that you have to redistribute with your application when you deploy it to another computer. In most cases, you don't have to redistribute system DLLs, but you may have to redistribute DLLs for Visual C++ libraries. For more information, see [Determining Which DLLs to Redistribute](../ide/determining-which-dlls-to-redistribute.md).  
   
 ## See Also  
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

@@ -38,7 +38,7 @@ translation.priority.mt:
   
  C2813 is emitted if in a compiler command you specify the **/MP** compiler option and two or more files to compile, and one or more of the files contains the[#import](../../preprocessor/hash-import-directive-cpp.md) preprocessor directive. The [#import](../../preprocessor/hash-import-directive-cpp.md) directive generates C++ classes from the types in the specified type library, and then writes those classes to two header files. The [#import](../../preprocessor/hash-import-directive-cpp.md) directive is not supported because if multiple compilation units import the same type library, those units conflict when they try to write the same header files at the same time.  
   
- This compiler error and the **/MP** compiler option are new in [!INCLUDE[vs_orcas_long](../../atl/reference/includes/vs_orcas_long_md.md)].  
+ This compiler error and the **/MP** compiler option are new in Visual Studio 2008.  
   
 ## Example  
  The following sample generates C2813. The command line in the "compile with:" comment indicates to the compiler to use the **/MP** and **/c** compiler options to compile several files. At least one of the files contains the [#import](../../preprocessor/hash-import-directive-cpp.md) directive. We use the same file twice for the sake of testing this example.  

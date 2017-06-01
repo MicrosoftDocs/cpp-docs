@@ -201,7 +201,7 @@ BOOL AdjustRect(
 ### Remarks  
  This member function calculates a tool tip control's text display rectangle from its window rectangle, or the tool tip window rectangle needed to display a specified text display rectangle.  
   
- This member function implements the behavior of the Win32 message [TTM_ADJUSTRECT](http://msdn.microsoft.com/library/windows/desktop/bb760352), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_ADJUSTRECT](http://msdn.microsoft.com/library/windows/desktop/bb760352), as described in the Windows SDK.  
   
 ##  <a name="create"></a>  CToolTipCtrl::Create  
  Creates a tool tip control and attaches it to a `CToolTipCtrl` object.  
@@ -255,7 +255,7 @@ virtual BOOL CreateEx(
  Specifies the tool tip control's style. See the **Remarks** section of [Create](#create) for more information.  
   
  *dwStyleEx*  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if successful otherwise 0.  
@@ -307,7 +307,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
  The size of the tool tip.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_GETBUBBLESIZE](http://msdn.microsoft.com/library/windows/desktop/bb760387), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_GETBUBBLESIZE](http://msdn.microsoft.com/library/windows/desktop/bb760387), as described in the Windows SDK.  
   
 ##  <a name="getcurrenttool"></a>  CToolTipCtrl::GetCurrentTool  
  Retrieves information, such as the size, position, and text, of the tooltip window displayed by the current tooltip control.  
@@ -326,7 +326,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
  `true` if the information is retrieved successfully; otherwise, `false.`  
   
 ### Remarks  
- This method sends the [TTM_GETCURRENTTOOL](http://msdn.microsoft.com/library/windows/desktop/bb760389) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TTM_GETCURRENTTOOL](http://msdn.microsoft.com/library/windows/desktop/bb760389) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example retrieves information about the current tooltip window.  
@@ -354,7 +354,7 @@ int GetDelayTime(DWORD dwDuration) const;
  The specified delay time, in milliseconds  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_GETDELAYTIME](http://msdn.microsoft.com/library/windows/desktop/bb760390), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_GETDELAYTIME](http://msdn.microsoft.com/library/windows/desktop/bb760390), as described in the Windows SDK.  
   
 ##  <a name="getmargin"></a>  CToolTipCtrl::GetMargin  
  Retrieves the top, left, bottom, and right margins set for a tool tip window.  
@@ -375,7 +375,7 @@ void GetMargin(LPRECT lprc) const;
 |**right**|Distance between right border and right end of tip text, in pixels.|  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_GETMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb760391), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_GETMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb760391), as described in the Windows SDK.  
   
 ##  <a name="getmaxtipwidth"></a>  CToolTipCtrl::GetMaxTipWidth  
  Retrieves the maximum width for a tool tip window.  
@@ -388,7 +388,7 @@ int GetMaxTipWidth() const;
  The maximum width for a tool tip window.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_GETMAXTIPWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760392), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_GETMAXTIPWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760392), as described in the Windows SDK.  
   
 ##  <a name="gettext"></a>  CToolTipCtrl::GetText  
  Retrieves the text that a tool tip control maintains for a tool.  
@@ -424,7 +424,7 @@ COLORREF GetTipBkColor() const;
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that represents the background color.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_GETTIPBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760394), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_GETTIPBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760394), as described in the Windows SDK.  
   
 ##  <a name="gettiptextcolor"></a>  CToolTipCtrl::GetTipTextColor  
  Retrieves the text color in a tool tip window.  
@@ -437,7 +437,7 @@ COLORREF GetTipTextColor() const;
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that represents the text color.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_GETTIPTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760395), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_GETTIPTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760395), as described in the Windows SDK.  
   
 ##  <a name="gettitle"></a>  CToolTipCtrl::GetTitle  
  Retrieves the title of the current tooltip control.  
@@ -453,7 +453,7 @@ void GetTitle(PTTGETTITLE pttgt) const;
 |[out] `pttgt`|Pointer to a [TTGETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760260) structure that contains information about the ToolTip control. When this method returns, the `pszTitle` member of the [TTGETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760260) structure points to the text of the title.|  
   
 ### Remarks  
- This method sends the [TTM_GETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760396) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TTM_GETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760396) message, which is described in the Windows SDK.  
   
 ##  <a name="gettoolcount"></a>  CToolTipCtrl::GetToolCount  
  Retrieves a count of the tools registered with the tool tip control.  
@@ -546,7 +546,7 @@ void Pop();
 ```  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_POP](http://msdn.microsoft.com/library/windows/desktop/bb760401), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_POP](http://msdn.microsoft.com/library/windows/desktop/bb760401), as described in the Windows SDK.  
   
 ##  <a name="popup"></a>  CToolTipCtrl::Popup  
  Causes the current tooltip control to display at the coordinates of the last mouse message.  
@@ -556,7 +556,7 @@ void Popup();
 ```  
   
 ### Remarks  
- This method sends the [TTM_POPUP](http://msdn.microsoft.com/library/windows/desktop/bb760402) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [TTM_POPUP](http://msdn.microsoft.com/library/windows/desktop/bb760402) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example displays a tooltip window.  
@@ -623,7 +623,7 @@ void SetMargin(LPRECT lprc);
  Address of a `RECT` structure that contains the margin information to be set. The members of the `RECT` structure do not define a bounding rectangle. See [CToolTipCtrl::GetMargin](#getmargin) for a description of the margin information.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_SETMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb760406), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_SETMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb760406), as described in the Windows SDK.  
   
 ##  <a name="setmaxtipwidth"></a>  CToolTipCtrl::SetMaxTipWidth  
  Sets the maximum width for a tool tip window.  
@@ -640,7 +640,7 @@ int SetMaxTipWidth(int iWidth);
  The previous maximum tip width.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_SETMAXTIPWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760408), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_SETMAXTIPWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb760408), as described in the Windows SDK.  
   
 ##  <a name="settipbkcolor"></a>  CToolTipCtrl::SetTipBkColor  
  Sets the background color in a tool tip window.  
@@ -654,7 +654,7 @@ void SetTipBkColor(COLORREF clr);
  The new background color.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_SETTIPBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760411), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_SETTIPBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760411), as described in the Windows SDK.  
   
 ##  <a name="settiptextcolor"></a>  CToolTipCtrl::SetTipTextColor  
  Sets the text color in a tool tip window.  
@@ -668,7 +668,7 @@ void SetTipTextColor(COLORREF clr);
  The new text color.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_SETTIPTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760413), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_SETTIPTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760413), as described in the Windows SDK.  
   
 ##  <a name="settitle"></a>  CToolTipCtrl::SetTitle  
  Adds a standard icon and title string to a tool tip.  
@@ -681,7 +681,7 @@ BOOL SetTitle(
   
 ### Parameters  
  *uIcon*  
- See *icon* in [TTM_SETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760414) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See *icon* in [TTM_SETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760414) in the Windows SDK.  
   
  *lpstrTitle*  
  Pointer to the title string.  
@@ -690,7 +690,7 @@ BOOL SetTitle(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [TTM_SETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760414), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [TTM_SETTITLE](http://msdn.microsoft.com/library/windows/desktop/bb760414), as described in the Windows SDK.  
   
 ##  <a name="settoolinfo"></a>  CToolTipCtrl::SetToolInfo  
  Sets the information that a tool tip maintains for a tool.  
@@ -738,7 +738,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
  The return value is not used.  
   
 ### Remarks  
- This member function emulates the functionality of the [TTM_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb760418) message, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [TTM_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb760418) message, as described in the Windows SDK.  
   
 ##  <a name="update"></a>  CToolTipCtrl::Update  
  Forces the current tool to be redrawn.  

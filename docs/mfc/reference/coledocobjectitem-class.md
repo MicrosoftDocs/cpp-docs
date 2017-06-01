@@ -260,10 +260,10 @@ HRESULT QueryCommand(
  Unique identifier of the command group; can be **NULL** to specify the standard group.  
   
 ### Return Value  
- For a complete listing of return values, see [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For a complete listing of return values, see [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) in the Windows SDK.  
   
 ### Remarks  
- This member function emulates the functionality of the [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) method, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) method, as described in the Windows SDK.  
   
 ##  <a name="release"></a>  COleDocObjectItem::Release  
  Releases the connection to an OLE linked item and closes it if it was open. Does not destroy the client item.  

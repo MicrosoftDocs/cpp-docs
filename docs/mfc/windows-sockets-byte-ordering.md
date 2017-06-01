@@ -76,7 +76,7 @@ This article and two companion articles explain several issues in Windows Socket
 > [!NOTE]
 >  When the other end of the communication is not an MFC application, you also must avoid streaming C++ objects derived from `CObject` into your archive because the receiver will not be able to handle them. See the note in [Windows Sockets: Using Sockets with Archives](../mfc/windows-sockets-using-sockets-with-archives.md).  
   
- For more information about byte orders, see the Windows Sockets specification, available in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For more information about byte orders, see the Windows Sockets specification, available in the Windows SDK.  
   
 ## A Byte-Order Conversion Example  
  The following example shows a serialization function for a `CSocket` object that uses an archive. It also illustrates using the byte-order conversion functions in the Windows Sockets API.  

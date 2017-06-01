@@ -42,7 +42,7 @@ class HString;
 ```  
   
 ## Remarks  
- The [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] provides access to strings through HSTRING handles. The HString class provides convenience functions and operators to simplify using HSTRING handles.  
+ The Windows Runtime provides access to strings through HSTRING handles. The HString class provides convenience functions and operators to simplify using HSTRING handles.  
   
 ## Members  
   

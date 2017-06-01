@@ -75,7 +75,7 @@ class COleChangeSourceDialog : public COleDialog
 ## Remarks  
  Create an object of class `COleChangeSourceDialog` when you want to call this dialog box. After a `COleChangeSourceDialog` object has been constructed, you can use the [m_cs](#m_cs) structure to initialize the values or states of controls in the dialog box. The `m_cs` structure is of type [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160). For more information about using this dialog class, see the [DoModal](#domodal) member function.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
   
  For more information about OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -116,7 +116,7 @@ explicit COleChangeSourceDialog(
 ### Remarks  
  To display the dialog box, call the [DoModal](#domodal) function.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure and [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) function in [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure and [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) function in Windows SDK.  
   
 ##  <a name="domodal"></a>  COleChangeSourceDialog::DoModal  
  Call this function to display the OLE Change Source dialog box.  
@@ -132,7 +132,7 @@ virtual INT_PTR DoModal();
   
 - **IDCANCEL** if the user canceled the dialog box.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) function in [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+- **IDABORT** if an error occurred. If **IDABORT** is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) function in Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_cs](#m_cs) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
@@ -183,7 +183,7 @@ CString GetFromPrefix();
   
  This value comes directly from the **lpszFrom** member of the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
   
 ##  <a name="getitemname"></a>  COleChangeSourceDialog::GetItemName  
  Call this function to retrieve the item moniker portion of the display name for the linked client item.  
@@ -213,7 +213,7 @@ CString GetToPrefix();
   
  This value comes directly from the **lpszTo** member of the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
   
 ##  <a name="m_cs"></a>  COleChangeSourceDialog::m_cs  
  This data member is a structure of type [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160).  
@@ -225,7 +225,7 @@ OLEUICHANGESOURCE m_cs;
 ### Remarks  
  `OLEUICHANGESOURCE` is used to control the behavior of the OLE Change Source dialog box. Members of this structure can be modified directly.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
   
 ##  <a name="isvalidsource"></a>  COleChangeSourceDialog::IsValidSource  
  Call this function to determine if the new source is valid.  
@@ -240,7 +240,7 @@ BOOL IsValidSource();
 ### Remarks  
  Call this function only after [DoModal](#domodal) returns **IDOK**.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
   
 ## See Also  
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   

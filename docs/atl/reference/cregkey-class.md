@@ -167,7 +167,7 @@ LONG Create(
  Specifies the class of the key to be created or opened. The default value is REG_NONE.  
   
  `dwOptions`  
- Options for the key. The default value is REG_OPTION_NON_VOLATILE. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Options for the key. The default value is REG_OPTION_NON_VOLATILE. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the Windows SDK.  
   
  `samDesired`  
  The security access for the key. The default value is KEY_READ &#124; KEY_WRITE. For a list of possible values and descriptions, see **RegCreateKeyEx**.  
@@ -286,7 +286,7 @@ LONG EnumKey(
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- To enumerate the subkeys, call `CRegKey::EnumKey` with an index of zero. Increment the index value and repeat until the method returns ERROR_NO_MORE_ITEMS. For more information, see [RegEnumKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724862) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ To enumerate the subkeys, call `CRegKey::EnumKey` with an index of zero. Increment the index value and repeat until the method returns ERROR_NO_MORE_ITEMS. For more information, see [RegEnumKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724862) in the Windows SDK.  
   
 ##  <a name="flush"></a>  CRegKey::Flush  
  Call this method to write all of the attributes of the open registry key into the registry.  
@@ -299,7 +299,7 @@ LONG Flush() throw();
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- For more information, see [RegEnumFlush](http://msdn.microsoft.com/library/windows/desktop/ms724867) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [RegEnumFlush](http://msdn.microsoft.com/library/windows/desktop/ms724867) in the Windows SDK.  
   
 ##  <a name="getkeysecurity"></a>  CRegKey::GetKeySecurity  
  Call this method to retrieve a copy of the security descriptor protecting the open registry key.  
@@ -402,7 +402,7 @@ LONG Open(
  Specifies the name of a key to be created or opened. This name must be a subkey of `hKeyParent`.  
   
  `samDesired`  
- The security access for the key. The default value is KEY_ALL_ACCESS. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The security access for the key. The default value is KEY_ALL_ACCESS. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the Windows SDK.  
   
 ### Return Value  
  If successful, returns ERROR_SUCCESS; otherwise, a non-zero error value defined in WINERROR.H.  

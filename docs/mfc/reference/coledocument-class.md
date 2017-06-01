@@ -146,9 +146,9 @@ BOOL ApplyPrintDevice(const PRINTDLG* ppd);```
   
  The arguments to this function contain information that OLE uses to identify the target device. The [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) structure contains information that Windows uses to initialize the common Print dialog box. After the user closes the dialog box, Windows returns information about the user's selections in this structure. The `m_pd` member of a [CPrintDialog](../../mfc/reference/cprintdialog-class.md) object is a **PRINTDLG** structure.  
   
- For more information, see the [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) structure in the Windows SDK.  
   
- For more information, see the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure in the Windows SDK.  
   
 ##  <a name="coledocument"></a>  COleDocument::COleDocument  
  Constructs a `COleDocument` object.  

@@ -56,7 +56,7 @@ ref class Map sealed;
   
 -   public enum class  
   
- Map is basically a wrapper for [std::map](../standard-library/map-class.md). It is a C++ concrete implementation of the [Windows::Foundation::Collections::IMap<Windows::Foundation::Collections::IKeyValuePair\<K,V>>](http://go.microsoft.com/fwlink/p/?LinkId=262408) and [IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) types that are passed across public [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] interfaces. If you try to use a `Platform::Collections::Map` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap\<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262408).  
+ Map is basically a wrapper for [std::map](../standard-library/map-class.md). It is a C++ concrete implementation of the [Windows::Foundation::Collections::IMap<Windows::Foundation::Collections::IKeyValuePair\<K,V>>](http://go.microsoft.com/fwlink/p/?LinkId=262408) and [IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::Map` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap\<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262408).  
   
  For more information, see [Collections](../cppcx/collections-c-cx.md).  
   

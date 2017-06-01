@@ -59,7 +59,7 @@ Visual C++ includes compilers that you can use to create apps that can run on a 
   
 #### To run vcvarsall.bat to use a 64-bit toolset  
   
-1.  At the command prompt, change to the [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] installation directory. (The location depends on the system and the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] installation, but a typical location is C:\Program Files (x86)\Microsoft Visual Studio *version*\VC\\.) For example, enter:  
+1.  At the command prompt, change to the Visual C++ installation directory. (The location depends on the system and the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] installation, but a typical location is C:\Program Files (x86)\Microsoft Visual Studio *version*\VC\\.) For example, enter:  
   
      **cd "Program Files (x86)Microsoft Visual Studio 12.0VC"**  
   

@@ -35,6 +35,9 @@ translation.priority.ht:
 ---
 # CMFCRibbonPanel Class
 Implements a panel that contains a set of ribbon elements. When the panel is drawn, it displays as many elements as possible, given the size of the panel.  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ 
   
 ## Syntax  
   
@@ -388,7 +391,7 @@ LPCTSTR GetName() const;
 ### Remarks  
   
 ##  <a name="getparentbutton"></a>  CMFCRibbonPanel::GetParentButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCRibbonBaseElement* GetParentButton() const;  
@@ -409,7 +412,7 @@ CMFCRibbonCategory* GetParentCategory() const;
  A pointer to the ribbon category that contains this ribbon panel.  
   
 ##  <a name="getparentmenubar"></a>  CMFCRibbonPanel::GetParentMenuBar  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCRibbonPanelMenuBar* GetParentMenuBar() const;  
@@ -634,7 +637,7 @@ virtual BOOL IsMainPanel() const;
  The main ribbon panel is displayed when the user selects the application button.  
   
 ##  <a name="ismenumode"></a>  CMFCRibbonPanel::IsMenuMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsMenuMode() const;  
@@ -645,7 +648,7 @@ BOOL IsMenuMode() const;
 ### Remarks  
   
 ##  <a name="onkey"></a>  CMFCRibbonPanel::OnKey  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnKey(UINT nChar);

@@ -14,13 +14,13 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # WRL integration (C++/CX)
-You freely can mix [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] code with [!INCLUDE[cppwrl](includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)]) code. In the same translation unit, you can use objects declared with [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] handle-to-object (`^`) notation and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] HRESULT error codes and [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] exceptions.  
+You freely can mix WRL code with [!INCLUDE[cppwrl](includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)]) code. In the same translation unit, you can use objects declared with WRL handle-to-object (`^`) notation and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] HRESULT error codes and WRL exceptions.  
   
 ## [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] development  
  For more information about authoring and consuming [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] components, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  
   
 ### Example  
- The following code snippet demonstrates using [!INCLUDE[cppwrt_short](includes/cppwrt-short-md.md)] and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] to consume [!INCLUDE[wrt](includes/wrt-md.md)] classes and examine a metadata file.  
+ The following code snippet demonstrates using WRL and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] to consume [!INCLUDE[wrt](includes/wrt-md.md)] classes and examine a metadata file.  
 >>>>>>> master
   
  The example taken from a code snippet in the [Building Windows Store apps forum](http://social.msdn.microsoft.com/Forums/winappswithnativecode/thread/211ef583-db11-4e55-926b-6d9ab53dbdb4). The author of this code snippet offers the following disclaimers and stipulations:  

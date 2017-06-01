@@ -34,7 +34,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # CMFCToolBar Class
-The `CMFCToolBar` class resembles [CToolBar Class](../../mfc/reference/ctoolbar-class.md), but provides additional support for user interface features. These include flat toolbars, toolbars with hot images, large icons, pager buttons, locked toolbars, rebar controls, text under images, background images, and tabbed toolbars. The `CMFCToolBar` class also contains built-in support for user customization of toolbars and menus, drag-and-drop between toolbars and menus, combo box buttons, edit box buttons, color pickers, and roll-up buttons.  
+The `CMFCToolBar` class resembles [CToolBar Class](../../mfc/reference/ctoolbar-class.md), but provides additional support for user interface features. These include flat toolbars, toolbars with hot images, large icons, pager buttons, locked toolbars, rebar controls, text under images, background images, and tabbed toolbars. The `CMFCToolBar` class also contains built-in support for user customization of toolbars and menus, drag-and-drop between toolbars and menus, combo box buttons, edit box buttons, color pickers, and roll-up buttons.
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
   
 ## Syntax  
   
@@ -619,7 +621,7 @@ virtual BOOL Create(
  A pointer to the parent window of the toolbar.  
   
  [in] `dwStyle`  
- The toolbar style. See [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for the list of styles.  
+ The toolbar style. See [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the Windows SDK for the list of styles.  
   
  [in] `nID`  
  The ID of the child window of the toolbar.  
@@ -1930,7 +1932,7 @@ BOOL IsOneRowWithSibling();
  You typically do not have to use this method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   
 ##  <a name="isresourcechanged"></a>  CMFCToolBar::IsResourceChanged  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsResourceChanged() const;  
@@ -1941,7 +1943,7 @@ virtual BOOL IsResourceChanged() const;
 ### Remarks  
   
 ##  <a name="issibling"></a>  CMFCToolBar::IsSibling  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsSibling();
@@ -2002,7 +2004,7 @@ virtual BOOL LoadBitmap(
  Call the `LoadBitmapEx` method to load additional images after you create the toolbar.  
   
 ##  <a name="loadbitmapex"></a>  CMFCToolBar::LoadBitmapEx  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL LoadBitmapEx(
@@ -2019,7 +2021,7 @@ virtual BOOL LoadBitmapEx(
 ### Remarks  
   
 ##  <a name="loadlargeiconsstate"></a>  CMFCToolBar::LoadLargeIconsState  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static BOOL __stdcall LoadLargeIconsState(LPCTSTR lpszProfileName = NULL);
@@ -2164,7 +2166,7 @@ AFX_IMPORT_DATA static double m_dblLargeImageRatio;
  The framework uses this data member when you do not specify a set of large images. For example, if you provide only the set of small images with size 16x16 and want the large images to have the size 24x24, set this data member to 1.5.  
   
 ##  <a name="nextmenu"></a>  CMFCToolBar::NextMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL NextMenu();
@@ -2175,7 +2177,7 @@ virtual BOOL NextMenu();
 ### Remarks  
   
 ##  <a name="onbeforeremovebutton"></a>  CMFCToolBar::OnBeforeRemoveButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnBeforeRemoveButton(
@@ -2209,7 +2211,7 @@ virtual void OnChangeHot(int iHot);
  Override this method to process notifications that the user selected a button on a toolbar.  
   
 ##  <a name="onchangevisualmanager"></a>  CMFCToolBar::OnChangeVisualManager  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnChangeVisualManager();
@@ -2234,7 +2236,7 @@ virtual void OnFillBackground(CDC* pDC);
  Override this method to draw custom background in derived classes.  
   
 ##  <a name="onglobalfontschanged"></a>  CMFCToolBar::OnGlobalFontsChanged  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnGlobalFontsChanged();
@@ -2255,7 +2257,7 @@ virtual void OnReset();
  The default implementation does nothing. Override `OnReset` in a class derived from `CMFCToolBar` when the toolbar has dummy buttons that must be replaced when the toolbar returns to its original state.  
   
 ##  <a name="onsetaccdata"></a>  CMFCToolBar::OnSetAccData  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnSetAccData(long lVal);
@@ -2312,7 +2314,7 @@ virtual BOOL OnUserToolTip(
  Override `OnUserToolTip` to customize tool tips of toolbar buttons. The default implementation calls [CMFCToolBar::OnUserToolTip](#onusertooltip) to obtain the tooltip text.  
   
 ##  <a name="prevmenu"></a>  CMFCToolBar::PrevMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL PrevMenu();
@@ -2451,7 +2453,7 @@ static void __stdcall ResetAllImages();
  This method clears the image collections that are initialized by the [CMFCToolBar::LoadToolBar](#loadtoolbar) and [CMFCToolBar::LoadBitmap](#loadbitmap) methods.  
   
 ##  <a name="resetimages"></a>  CMFCToolBar::ResetImages  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void ResetImages();
@@ -2460,7 +2462,7 @@ virtual void ResetImages();
 ### Remarks  
   
 ##  <a name="restorefocus"></a>  CMFCToolBar::RestoreFocus  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void RestoreFocus();
@@ -2484,7 +2486,7 @@ virtual BOOL RestoreOriginalState();
  The framework calls this method when the user chooses the **Reset All** button on the **Toolbars** page of a customization dialog box.  
   
 ##  <a name="saveparameters"></a>  CMFCToolBar::SaveParameters  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static BOOL __stdcall SaveParameters(LPCTSTR lpszProfileName = NULL);
@@ -2711,7 +2713,7 @@ void SetHeight(int cyHeight);
  This method redraws the toolbar after it sets the height.  
   
 ##  <a name="sethelpmode"></a>  CMFCToolBar::SetHelpMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static void __stdcall SetHelpMode(BOOL bOn = TRUE);
@@ -2723,7 +2725,7 @@ static void __stdcall SetHelpMode(BOOL bOn = TRUE);
 ### Remarks  
   
 ##  <a name="sethot"></a>  CMFCToolBar::SetHot  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL SetHot(CMFCToolBarButton* pMenuButton);
@@ -2767,7 +2769,7 @@ static void SetHotTextColor(COLORREF clrText);
  For more information about hot-tracked toolbar buttons, see [CMFCToolBar::GetHotBorder](#gethotborder) and [CMFCToolBar::SetHotBorder](#sethotborder).  
   
 ##  <a name="setignoresettext"></a>  CMFCToolBar::SetIgnoreSetText  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetIgnoreSetText(BOOL bValue);
@@ -2822,7 +2824,7 @@ void SetLockedSizes(
  Call the [CMFCToolBar::GetLockedImageSize](#getlockedimagesize) method to retrieve the size of locked images. Call the [CMFCToolBar::GetButtonSize](#getbuttonsize) method to retrieve the size of locked toolbar buttons.  
   
 ##  <a name="setmaskmode"></a>  CMFCToolBar::SetMaskMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetMaskMode(BOOL bMasked);
@@ -2887,7 +2889,7 @@ void SetOneRowWithSibling();
  The framework calls the [CMFCToolBar::SetTwoRowsWithSibling](#settworowswithsibling) method when the user clicks the **Show Buttons on Two Rows** button.  
   
 ##  <a name="setorigbuttons"></a>  CMFCToolBar::SetOrigButtons  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetOrigButtons(const CObList& lstOrigButtons);

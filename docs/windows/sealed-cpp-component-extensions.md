@@ -62,13 +62,13 @@ virtual return-type identifier() sealed {...};
   
  In the first syntax example, a class is sealed. In the second example, a virtual function is sealed.  
   
- The `sealed` keyword is valid for native targets, and also for the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and the common language runtime (CLR). For more information, see [Override Specifiers and Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
+ The `sealed` keyword is valid for native targets, and also for the Windows Runtime and the common language runtime (CLR). For more information, see [Override Specifiers and Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
   
  You can detect at compile time whether a type is sealed by using the `__is_sealed(type)` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
  `sealed` is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  See [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
   
 ### Requirements  

@@ -43,7 +43,7 @@ translation.priority.ht:
 
 C++ supports dynamic allocation and deallocation of objects using the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The `new` operator calls the special function [operator new](../cpp/new-operator-cpp.md), and the `delete` operator calls the special function [operator delete](../cpp/delete-operator-cpp.md).  
   
- In [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] .NET 2002, the `new` function in the C++ Standard Library will support the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of `new`, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default `operator new` in the C++ Standard Library no longer functions.  
+ In Visual C++ .NET 2002, the `new` function in the C++ Standard Library will support the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of `new`, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default `operator new` in the C++ Standard Library no longer functions.  
   
  For a list of the library files that comprise the C Runtime Library and the C++ Standard Library, see [CRT Library Features](../c-runtime-library/crt-library-features.md).  
   

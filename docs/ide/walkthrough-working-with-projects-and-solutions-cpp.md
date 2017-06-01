@@ -38,14 +38,14 @@ translation.priority.ht:
 # Walkthrough: Working with Projects and Solutions (C++)
 Here's how to create a C++ project in Visual Studio, add code, and then build and run the project. The project in this walkthrough is a program that tracks how many players are playing different card games.  
   
- In [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], work is organized in projects and solutions. A solution can contain more than one project—for example, a DLL and an executable that references that DLL. For more information, see [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio).  
+ In Visual Studio, work is organized in projects and solutions. A solution can contain more than one project—for example, a DLL and an executable that references that DLL. For more information, see [Solutions and Projects](/visualstudio/ide/solutions-and-projects-in-visual-studio).  
   
 ## Prerequisites  
   
 -   To complete this walkthrough, you must understand the fundamentals of the C++ language.  
   
 ## Creating a Project  
- To create a project, first choose a project-type template. For each project type, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] sets compiler settings and—depending on the type—generates starter code that you can modify later.  
+ To create a project, first choose a project-type template. For each project type, Visual Studio sets compiler settings and—depending on the type—generates starter code that you can modify later.  
   
 #### To create a project  
   
@@ -59,7 +59,7 @@ Here's how to create a C++ project in Visual Studio, add code, and then build an
   
      You can accept the default location in the **Location** drop-down list, enter a different location, or choose the **Browse** button to browse to a directory where you want to save the project.  
   
-     When you create a project, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] puts the project in a solution. By default, the solution has the same name as the project. You can change the name in the **Solution name** box, but for this example, keep the default name.  
+     When you create a project, Visual Studio puts the project in a solution. By default, the solution has the same name as the project. You can change the name in the **Solution name** box, but for this example, keep the default name.  
   
      Choose the **OK** button to start the **Win32 Application Wizard**.  
   
@@ -72,7 +72,7 @@ Here's how to create a C++ project in Visual Studio, add code, and then build an
 ## Organizing Projects and Files in a Solution  
  You can use **Solution Explorer** to organize and manage the projects, files, and other resources in your solution.  
   
- This part of the walkthrough shows how add a class to the project. When you add the class, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] adds the corresponding .h and .cpp files. Next, you add a new source code file for the main program that tests the class.  
+ This part of the walkthrough shows how add a class to the project. When you add the class, Visual Studio adds the corresponding .h and .cpp files. Next, you add a new source code file for the main program that tests the class.  
   
 #### To add a class to a project  
   

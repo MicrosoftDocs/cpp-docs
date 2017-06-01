@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # FactoryCache::cookie Data Member
-Supports the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] infrastructure and is not intended to be used directly from your code.  
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
@@ -48,7 +48,7 @@ union {
 ```  
   
 ## Remarks  
- Contains a value that identifies a registered [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] or COM class object, and is later used to unregister the object.  
+ Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.  
   
 ## Requirements  
  **Header:** module.h  

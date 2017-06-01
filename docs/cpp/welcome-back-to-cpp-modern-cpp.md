@@ -55,7 +55,7 @@ C++ is one of the most widely used programming languages in the world. Well-writ
   
 -   Inline [lambda functions](../cpp/lambda-expressions-in-cpp.md) instead of small functions implemented separately.  
   
--   Range-based for loops to write more robust loops that work with arrays, C++ Standard Library containers, and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] collections in the form `for ( for-range-declaration : expression )`. This is part of the Core Language support. For more information, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).  
+-   Range-based for loops to write more robust loops that work with arrays, C++ Standard Library containers, and Windows Runtime collections in the form `for ( for-range-declaration : expression )`. This is part of the Core Language support. For more information, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).  
   
  The C++ language itself has also evolved. Compare the following code snippets. This one shows how things used to be in C++:  
   

@@ -14,12 +14,12 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Namespaces and Type Visibility (C++/CX )
-A namespace is a standard C++ construct for grouping types that have related functionality and for preventing name collisions in libraries. The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system requires that all public [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types, including those in your own code, must be declared in a namespace at namespace scope. Public types that are declared at global scope or nested inside another class will cause a compile-time error.  
+A namespace is a standard C++ construct for grouping types that have related functionality and for preventing name collisions in libraries. The Windows Runtime type system requires that all public Windows Runtime types, including those in your own code, must be declared in a namespace at namespace scope. Public types that are declared at global scope or nested inside another class will cause a compile-time error.  
   
  A .winmd file must have the same name that the root namespace has. For example, a class that's named A.B.C.MyClass can be instantiated only if it's defined in a metadata file that's named A.winmd or A.B.winmd or A.B.C.winmd. The name of the executable is not required to match the .winmd file name.  
   
 ## Type visibility  
- In a namespace, [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types—unlike standard C++ types—have either private or public accessibility. By default, the accessibility is private. Only a public type is visible to metadata and is therefore consumable from apps and components that might be written in languages other than C++. In general, the rules for visible types are more restrictive than the rules for non-visible types because visible types cannot expose C++-specific concepts that are not supported in .NET languages or JavaScript.  
+ In a namespace, Windows Runtime types—unlike standard C++ types—have either private or public accessibility. By default, the accessibility is private. Only a public type is visible to metadata and is therefore consumable from apps and components that might be written in languages other than C++. In general, the rules for visible types are more restrictive than the rules for non-visible types because visible types cannot expose C++-specific concepts that are not supported in .NET languages or JavaScript.  
   
 > [!NOTE]
 >  Metadata is only consumed at run time by .NET languages and JavaScript. When a C++ app or component is talking to another C++ app or component—this includes Windows components ,which are all written in C++—then no run-time consumption of metadata is required.  
@@ -39,18 +39,18 @@ A namespace is a standard C++ construct for grouping types that have related fun
 |`protected private` or `private protected`|Not visible in metadata; protected accessibility within the app or component.||  
 |`internal` or `private public`|The member is public within the app or component, but is not visible in metadata.|No|  
   
-## [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] namespaces  
+## Windows Runtime namespaces  
  The Windows API consists of types that are declared in the Windows::\* namespaces. These namespaces are reserved for Windows, and types cannot be added to them. In the **Object Browser**, you can view these namespaces in the windows.winmd file. For documentation about these namespaces, see [Windows API](http://msdn.microsoft.com/library/windows/apps/br211377).  
   
 ## C++/CX namespaces  
- The C++/CX define certain types in these namespaces as part of the projection of the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system.  
+ The C++/CX define certain types in these namespaces as part of the projection of the Windows Runtime type system.  
   
 |||  
 |-|-|  
 |**Namespace**|**Description**|  
 |default|Contains the built-in numeric and char16 types. These types are in scope in every namespace and a `using` statement is never required.|  
-|Platform|Contains primarily public types that correspond to [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types such as `Array<T>`, `String`, `Guid`, and `Boolean`. Also includes specialized helper types such as `Platform::Agile<T>` and `Platform::Box<T>`.|  
-|Platform::Collections|Contains the concrete collection classes that implement the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] collection interfaces `IVector`, `IMap`, and so on. These types are defined in a header file, collection.h, not in platform.winmd.|  
+|Platform|Contains primarily public types that correspond to Windows Runtime types such as `Array<T>`, `String`, `Guid`, and `Boolean`. Also includes specialized helper types such as `Platform::Agile<T>` and `Platform::Box<T>`.|  
+|Platform::Collections|Contains the concrete collection classes that implement the Windows Runtime collection interfaces `IVector`, `IMap`, and so on. These types are defined in a header file, collection.h, not in platform.winmd.|  
 |Platform::Details|Contains types that are used by the compiler and are not meant for public consumption.|  
   
 ## See Also  

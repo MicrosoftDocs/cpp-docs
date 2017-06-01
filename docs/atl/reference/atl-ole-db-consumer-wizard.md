@@ -44,7 +44,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
   
 ## UIElement List  
  **Data Source**  
- The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](https://msdn.microsoft.com/library/ms718102.aspx) in the [!INCLUDE[winsdkshort](../../atl-mfc-shared/reference/includes/winsdkshort_md.md)] documentation.  
+ The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](https://msdn.microsoft.com/library/ms718102.aspx) in the Windows SDK documentation.  
   
 > [!NOTE]
 >  In previous releases, Shift-clicking the **Data Source** button opened a File Open dialog to allow you to select a Data Link (.udl) file. This functionality is no longer supported.  

@@ -33,9 +33,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Param Array and Ellipsis
-Precedence of the param array for resolving overloaded function calls has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+Precedence of the param array for resolving overloaded function calls has changed from Managed Extensions for C++ to Visual C++.  
   
- In both Managed Extensions and the new syntax, there is no explicit support for the param array that C# and [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)] support. Instead, one flags an ordinary array with an attribute, as follows:  
+ In both Managed Extensions and the new syntax, there is no explicit support for the param array that C# and Visual Basic support. Instead, one flags an ordinary array with an attribute, as follows:  
   
 ```  
 void Trace1( String* format, [ParamArray]Object* args[] );  

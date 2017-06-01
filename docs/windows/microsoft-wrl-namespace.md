@@ -42,7 +42,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Microsoft::WRL Namespace
-Defines the fundamental types that make up the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)].  
+Defines the fundamental types that make up the Windows Runtime C++ Template Library.  
   
 ## Syntax  
   
@@ -101,7 +101,7 @@ namespace Microsoft::WRL;
 |[Callback Function](../windows/callback-function-windows-runtime-cpp-template-library.md)|Creates an object whose member function is a callback method.|  
 |[CreateActivationFactory Function](../windows/createactivationfactory-function.md)|Creates a factory that produces instances of the specified class that can be activated by the Windows Runtime.|  
 |[CreateClassFactory Function](../windows/createclassfactory-function.md)|Creates a factory that produces instances of the specified class.|  
-|[Make Function](../windows/make-function.md)|Initializes the specified [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class.|  
+|[Make Function](../windows/make-function.md)|Initializes the specified Windows Runtime class.|  
   
 ## Requirements  
  **Header:** async.h, client.h, corewrappers.h, event.h, ftm.h, implements.h, internal.h, module.h  

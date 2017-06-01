@@ -83,7 +83,7 @@ class CTokenPrivileges
   
  The `CTokenPrivileges` class is a wrapper for the [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) structure and contains 0 or more privileges. Privileges can be added, deleted, or queried using the supplied class methods.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  

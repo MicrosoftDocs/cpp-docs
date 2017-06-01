@@ -117,7 +117,7 @@ CA2WEX(LPCSTR psz) throw(...);
  The text string to be converted.  
   
  `nCodePage`  
- The code page used to perform the conversion. See the code page parameter discussion for the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] function [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072) for more details.  
+ The code page used to perform the conversion. See the code page parameter discussion for the Windows SDK function [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072) for more details.  
   
 ### Remarks  
  Allocates the buffer used in the translation process.  

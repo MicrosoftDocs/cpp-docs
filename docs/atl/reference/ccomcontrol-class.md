@@ -208,10 +208,10 @@ int MessageBox(
  The dialog box title. If NULL (the default), the title "Error" is used.  
   
  `nType`  
- Specifies the contents and behavior of the dialog box. See the [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) entry in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] documentation for a list of the different message boxes available. The default provides a simple **OK** button.  
+ Specifies the contents and behavior of the dialog box. See the [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) entry in the Windows SDK documentation for a list of the different message boxes available. The default provides a simple **OK** button.  
   
 ### Return Value  
- Returns an integer value specifying one of the menu-item values listed under [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] documentation.  
+ Returns an integer value specifying one of the menu-item values listed under [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) in the Windows SDK documentation.  
   
 ### Remarks  
  `MessageBox` is useful both during development and as an easy way to display an error or warning message to the user.  

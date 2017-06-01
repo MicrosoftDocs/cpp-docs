@@ -34,7 +34,8 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # CMFCPopupMenu Class
-Implements Windows pop-up menu functionality and extends it by adding features such as tear-off menus and tooltips.  
+Implements Windows pop-up menu functionality and extends it by adding features such as tear-off menus and tooltips.
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
   
 ## Syntax  
   
@@ -161,7 +162,7 @@ class CMFCPopupMenu : public CMiniFrameWnd
  **Header:** afxpopupmenu.h  
   
 ##  <a name="activatepopupmenu"></a>  CMFCPopupMenu::ActivatePopupMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static BOOL __stdcall ActivatePopupMenu(
@@ -189,7 +190,7 @@ static void AlwaysShowEmptyToolsEntry(BOOL bShow = TRUE);
  `TRUE` if the pop-up menu can display empty entries; `FALSE` otherwise.  
   
 ##  <a name="areallcommandsshown"></a>  CMFCPopupMenu::AreAllCommandsShown  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL AreAllCommandsShown() const;  
@@ -229,7 +230,7 @@ MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;
 -   MENU - `ptScreen` is over a command.  
   
 ##  <a name="closemenu"></a>  CMFCPopupMenu::CloseMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void CloseMenu(BOOL bSetFocusToBar = FALSE);
@@ -303,7 +304,7 @@ virtual BOOL Create(
  [!code-cpp[NVC_MFC_CustomPages#1](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_2.cpp)]  
   
 ##  <a name="createtearoffbar"></a>  CMFCPopupMenu::CreateTearOffBar  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CPane* CreateTearOffBar(
@@ -322,7 +323,7 @@ virtual CPane* CreateTearOffBar(
 ### Remarks  
   
 ##  <a name="defaultmouseclickonclose"></a>  CMFCPopupMenu::DefaultMouseClickOnClose  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL DefaultMouseClickOnClose() const;  
@@ -368,7 +369,7 @@ static void EnableMenuSound(BOOL bEnable = TRUE);
  If you enable sound, the framework calls the [PlaySound](http://msdn.microsoft.com/library/windows/desktop/bb774426) method when a user opens a pop-up menu or selects a menu command. By default, this feature is enabled.  
   
 ##  <a name="enableresize"></a>  CMFCPopupMenu::EnableResize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnableResize(CSize sizeMinResize);
@@ -380,7 +381,7 @@ void EnableResize(CSize sizeMinResize);
 ### Remarks  
   
 ##  <a name="enablescrolling"></a>  CMFCPopupMenu::EnableScrolling  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnableScrolling(BOOL = TRUE);
@@ -392,7 +393,7 @@ void EnableScrolling(BOOL = TRUE);
 ### Remarks  
   
 ##  <a name="enablevertresize"></a>  CMFCPopupMenu::EnableVertResize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnableVertResize(int nMinResize);
@@ -404,7 +405,7 @@ void EnableVertResize(int nMinResize);
 ### Remarks  
   
 ##  <a name="findsubitembycommand"></a>  CMFCPopupMenu::FindSubItemByCommand  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCToolBarMenuButton* FindSubItemByCommand(UINT uiCmd) const;  
@@ -475,7 +476,7 @@ static CMFCPopupMenu::ANIMATION_TYPE GetAnimationType(BOOL bNoSystem = FALSE);
  The pop-up menu first appears transparent and gradually solidifies.  
   
 ##  <a name="getdropdirection"></a>  CMFCPopupMenu::GetDropDirection  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 DROP_DIRECTION GetDropDirection() const;  
@@ -499,7 +500,7 @@ static BOOL GetForceMenuFocus();
  By default, your application does not return focus to the menu bar. To change this setting, use [CMFCPopupMenu::SetForceMenuFocus](#setforcemenufocus).  
   
 ##  <a name="getforceshadow"></a>  CMFCPopupMenu::GetForceShadow  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static BOOL __stdcall GetForceShadow();
@@ -570,7 +571,7 @@ CWnd* GetMessageWnd() const;
  When you use the method [CMFCPopupMenu::Create](#create) to create a pop-up menu, you specify what window receives the menu messages.  
   
 ##  <a name="getparentarea"></a>  CMFCPopupMenu::GetParentArea  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CWnd* GetParentArea(CRect& rectParentBtn);
@@ -612,7 +613,7 @@ CMFCPopupMenu* GetParentPopupMenu() const;
  A pop-up menu has a parent `CMFCPopupMenu` object only if it is a submenu.  
   
 ##  <a name="getparentribbonelement"></a>  CMFCPopupMenu::GetParentRibbonElement  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCRibbonBaseElement* GetParentRibbonElement() const;  
@@ -636,7 +637,7 @@ CMFCToolBar* GetParentToolBar() const;
  If the `CMFCPopupMenu` is a shortcut menu, then it has no parent toolbar.  
   
 ##  <a name="getquickcustomizetype"></a>  CMFCPopupMenu::GetQuickCustomizeType  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 QUICK_CUSTOMIZE_TYPE GetQuickCustomizeType() const;  
@@ -660,7 +661,7 @@ CMFCToolBarMenuButton* GetSelItem();
  The menu commands on a pop-up menu are represented by the [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md), or a class derived from `CMFCToolBarMenuButton`.  
   
 ##  <a name="hasbeenresized"></a>  CMFCPopupMenu::HasBeenResized  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL HasBeenResized() const;  
@@ -684,7 +685,7 @@ BOOL HideRarelyUsedCommands() const;
  This method specifies only whether a pop-up menu can hide rarely used commands, not if that configuration is enabled. A pop-up menu can hide rarely used commands if it has a parent button and the parent window is derived from the [CMFCMenuBar Class](../../mfc/reference/cmfcmenubar-class.md). Use [CMFCMenuBar::SetRecentlyUsedMenus](../../mfc/reference/cmfcmenubar-class.md#setrecentlyusedmenus) to enable this feature and [CMFCMenuBar::IsRecentlyUsedMenus](../../mfc/reference/cmfcmenubar-class.md#isrecentlyusedmenus) to determine if this feature is currently enabled. You must call both of these methods for the parent window.  
   
 ##  <a name="incommand"></a>  CMFCPopupMenu::InCommand  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL InCommand();
@@ -736,7 +737,7 @@ int InsertSeparator(int iInsertAt = -1);
  This method fails if `iInsertAt` is an invalid value.  
   
 ##  <a name="isalwaysclose"></a>  CMFCPopupMenu::IsAlwaysClose  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsAlwaysClose() const;  
@@ -747,7 +748,7 @@ virtual BOOL IsAlwaysClose() const;
 ### Remarks  
   
 ##  <a name="isalwaysshowemptytoolsentry"></a>  CMFCPopupMenu::IsAlwaysShowEmptyToolsEntry  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static BOOL __stdcall IsAlwaysShowEmptyToolsEntry();
@@ -773,7 +774,7 @@ BOOL IsCustomizePane();
  Your application should call this method during [CMDIFrameWndEx::OnShowCustomizePane](../../mfc/reference/cmdiframewndex-class.md#onshowcustomizepane).  
   
 ##  <a name="isescclose"></a>  CMFCPopupMenu::IsEscClose  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsEscClose();
@@ -797,7 +798,7 @@ virtual BOOL IsIdle() const;
  By default, a pop-up menu is in idle mode if the display animation is complete and the user is not scrolling the pop-up menu.  
   
 ##  <a name="ismenusound"></a>  CMFCPopupMenu::IsMenuSound  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 static UINT __stdcall IsMenuSound();
@@ -821,7 +822,7 @@ BOOL IsQuickCustomize();
  In QuickCustomize mode the user selects a button on a toolbar to customize the button directly.  
   
 ##  <a name="isresizeble"></a>  CMFCPopupMenu::IsResizeble  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsResizeble() const;  
@@ -847,7 +848,7 @@ BOOL IsRightAlign() const;
  Menu alignment is not a global setting and can vary between pop-up menus.  
   
 ##  <a name="isscrollable"></a>  CMFCPopupMenu::IsScrollable  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsScrollable() const;  
@@ -881,7 +882,7 @@ BOOL IsShown() const;
  `TRUE` if a pop-up menu is visible; otherwise `FALSE`.  
   
 ##  <a name="moveto"></a>  CMFCPopupMenu::MoveTo  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void MoveTo(const CPoint& pt);
@@ -893,7 +894,7 @@ void MoveTo(const CPoint& pt);
 ### Remarks  
   
 ##  <a name="onchangehot"></a>  CMFCPopupMenu::OnChangeHot  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnChangeHot(int nHot);
@@ -905,7 +906,7 @@ virtual void OnChangeHot(int nHot);
 ### Remarks  
   
 ##  <a name="onchooseitem"></a>  CMFCPopupMenu::OnChooseItem  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnChooseItem(UINT uidCmdID);
@@ -917,7 +918,7 @@ virtual void OnChooseItem(UINT uidCmdID);
 ### Remarks  
   
 ##  <a name="oncmdmsg"></a>  CMFCPopupMenu::OnCmdMsg  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnCmdMsg(
@@ -938,7 +939,7 @@ virtual BOOL OnCmdMsg(
 ### Remarks  
   
 ##  <a name="postcommand"></a>  CMFCPopupMenu::PostCommand  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL PostCommand(UINT uiCommandID);
@@ -952,7 +953,7 @@ BOOL PostCommand(UINT uiCommandID);
 ### Remarks  
   
 ##  <a name="pretranslatemessage"></a>  CMFCPopupMenu::PreTranslateMessage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -966,7 +967,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Remarks  
   
 ##  <a name="recalclayout"></a>  CMFCPopupMenu::RecalcLayout  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void RecalcLayout(BOOL bNotify = TRUE);
@@ -1002,7 +1003,7 @@ BOOL RemoveItem(int iIndex);
  This method automatically arranges any separators that are affected by the removal of an item. For more information about how the framework rearranges separators, see [CMFCToolBar::RemoveButton](../../mfc/reference/cmfctoolbar-class.md#removebutton).  
   
 ##  <a name="savestate"></a>  CMFCPopupMenu::SaveState  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void SaveState();
@@ -1041,7 +1042,7 @@ static void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
  See [CMFCPopupMenu::GetAnimationType](#getanimationtype) for a list of valid values for `type`.  
   
 ##  <a name="setautodestroy"></a>  CMFCPopupMenu::SetAutoDestroy  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
@@ -1109,7 +1110,7 @@ void SetMaxWidth(int iMaxWidth);
  If the text associated with a menu command will not fit in the maximum width, it is truncated and the part that does not fit is replaced by three dots.  
   
 ##  <a name="setmessagewnd"></a>  CMFCPopupMenu::SetMessageWnd  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetMessageWnd(CWnd* pMsgWnd);
@@ -1121,7 +1122,7 @@ void SetMessageWnd(CWnd* pMsgWnd);
 ### Remarks  
   
 ##  <a name="setparentribbonelement"></a>  CMFCPopupMenu::SetParentRibbonElement  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetParentRibbonElement(CMFCRibbonBaseElement* pElem);
@@ -1133,7 +1134,7 @@ void SetParentRibbonElement(CMFCRibbonBaseElement* pElem);
 ### Remarks  
   
 ##  <a name="setquickcustomizetype"></a>  CMFCPopupMenu::SetQuickCustomizeType  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetQuickCustomizeType(QUICK_CUSTOMIZE_TYPE Type);
@@ -1145,7 +1146,7 @@ void SetQuickCustomizeType(QUICK_CUSTOMIZE_TYPE Type);
 ### Remarks  
   
 ##  <a name="setquickmode"></a>  CMFCPopupMenu::SetQuickMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetQuickMode();
@@ -1192,7 +1193,7 @@ void ShowAllCommands();
  This is not a global setting and affects only the current pop-up menu.  
   
 ##  <a name="triggerresize"></a>  CMFCPopupMenu::TriggerResize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void TriggerResize();

@@ -35,7 +35,7 @@ translation.priority.ht:
 ---
 # CMFCOutlookBarTabCtrl Class
 A tab control that has the visual appearance of the **Navigation Pane** in Microsoft Outlook.  
-  
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
 ## Syntax  
   
 ```  
@@ -263,7 +263,7 @@ int GetBorderSize() const;
  The border size, in pixels.  
   
 ##  <a name="getvisiblepagebuttons"></a>  CMFCOutlookBarTabCtrl::GetVisiblePageButtons  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetVisiblePageButtons() const;  
@@ -420,7 +420,7 @@ BOOL SetToolbarImageList(
  This method should not be called if not in Microsoft Office 2003 mode. For more information, see [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md).  
   
 ##  <a name="setvisiblepagebuttons"></a>  CMFCOutlookBarTabCtrl::SetVisiblePageButtons  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetVisiblePageButtons(int nVisiblePageButtons);

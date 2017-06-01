@@ -91,7 +91,7 @@ STDMETHOD(GetSite)(
 ### Remarks  
  If the site supports this interface, the pointer is returned via `ppvSite`. Otherwise, `ppvSite` is set to **NULL**.  
   
- See [IObjectWithSite::GetSite](http://msdn.microsoft.com/library/windows/desktop/ms694452) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IObjectWithSite::GetSite](http://msdn.microsoft.com/library/windows/desktop/ms694452) in the Windows SDK.  
   
 ##  <a name="m_spunksite"></a>  IObjectWithSiteImpl::m_spUnkSite  
  Manages the site's **IUnknown** pointer.  
@@ -125,7 +125,7 @@ STDMETHOD(SetSite)(IUnknown* pUnkSite);
 ```  
   
 ### Remarks  
- See [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

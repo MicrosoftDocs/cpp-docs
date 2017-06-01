@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # RoInitializeWrapper::~RoInitializeWrapper Destructor
-Uninitializes the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+Uninitializes the Windows Runtime.  
   
 ## Syntax  
   

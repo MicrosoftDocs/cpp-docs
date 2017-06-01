@@ -35,7 +35,8 @@ translation.priority.ht:
 ---
 # CMFCRibbonGalleryMenuButton Class
 Implements a ribbon menu button that contains ribbon galleries.  
-  
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   
 ## Syntax  
   
 ```  
@@ -76,7 +77,8 @@ BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
     CMFCToolBarButton* pExButton = 
     pMenuBar->GetButton(nBulletIndex);
 ASSERT_VALID (pExButton);
-    CMFCRibbonGalleryMenuButton paletteBullet (
+
+    CMFCRibbonGalleryMenuButton paletteBullet (
     pExButton->m_nID, 
     pExButton->GetImage (),  
     pExButton->m_strText);
@@ -97,7 +99,7 @@ ASSERT_VALID (pExButton);
  **Header:** afxRibbonPaletteGallery.h  
   
 ##  <a name="copyfrom"></a>  CMFCRibbonGalleryMenuButton::CopyFrom  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void CopyFrom(const CMFCToolBarButton& src);
@@ -155,7 +157,7 @@ CMFCRibbonGalleryMenuButton(
  [!code-cpp[NVC_MFC_MSOffice2007Demo#8](../../mfc/reference/codesnippet/cpp/cmfcribbongallerymenubutton-class_1.cpp)]  
   
 ##  <a name="createpopupmenu"></a>  CMFCRibbonGalleryMenuButton::CreatePopupMenu  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CMFCPopupMenu* CreatePopupMenu();
@@ -166,7 +168,7 @@ virtual CMFCPopupMenu* CreatePopupMenu();
 ### Remarks  
   
 ##  <a name="getpalette"></a>  CMFCRibbonGalleryMenuButton::GetPalette  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCRibbonGallery& GetPalette();
@@ -177,7 +179,7 @@ CMFCRibbonGallery& GetPalette();
 ### Remarks  
   
 ##  <a name="hasbutton"></a>  CMFCRibbonGalleryMenuButton::HasButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL HasButton() const;  
@@ -188,7 +190,7 @@ virtual BOOL HasButton() const;
 ### Remarks  
   
 ##  <a name="isemptymenuallowed"></a>  CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsEmptyMenuAllowed() const;  

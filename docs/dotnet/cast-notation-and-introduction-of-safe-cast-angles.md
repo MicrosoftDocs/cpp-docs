@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Cast Notation and Introduction of safe_cast&lt;&gt;
-The cast notation has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The cast notation has changed from Managed Extensions for C++ to Visual C++.  
   
  Modifying an existing structure is a different and more difficult experience than crafting the initial structure. There are fewer degrees of freedom, and the solution tends towards a compromise between an ideal restructuring and what is practicable given the existing structural dependencies.  
   

@@ -67,7 +67,7 @@ Loading a C/C++ application can fail if dependent libraries cannot be found. Thi
 6.  Check that all assemblies that are enumerated in the manifest are correctly installed on the computer. Each assembly is specified in the manifest by its name, version number, and processor architecture. If your application depends on side-by-side assemblies, check that these assemblies are correctly installed on the computer so that the operating system loader can find them, as described in [Assembly Searching Sequence](http://msdn.microsoft.com/library/aa374224). Remember that 64-bit assemblies cannot be loaded in 32-bit processes and cannot be executed on 32-bit operating systems.  
   
 ## Example  
- Assume we have an application, appl.exe, that's built by using [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)]. The application manifest either is embedded in appl.exe as the binary resource RT_MANIFEST, which has an ID equal to 1, or is stored as the separate file appl.exe.manifest. The content of this manifest resembles this:  
+ Assume we have an application, appl.exe, that's built by using Visual C++. The application manifest either is embedded in appl.exe as the binary resource RT_MANIFEST, which has an ID equal to 1, or is stored as the separate file appl.exe.manifest. The content of this manifest resembles this:  
   
 ```  
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  

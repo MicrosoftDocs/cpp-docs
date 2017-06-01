@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Use Arrays in C++/CLI
-This article describes how to use arrays in [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)].  
+This article describes how to use arrays in C++/CLI.  
   
 ## Single-dimension arrays  
  The following sample shows how to create single-dimension arrays of reference, value, and native pointer types. It also shows how to return a single-dimension array from a function and how to pass a single-dimension array as an argument to a function.  

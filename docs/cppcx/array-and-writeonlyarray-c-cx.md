@@ -26,7 +26,7 @@ You can freely use regular C-style arrays or [std::array](../standard-library/ar
   
 4.  return value of Platform::Array^  
   
- You use these array types to implement the three kinds of array patterns that are defined by the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].  
+ You use these array types to implement the three kinds of array patterns that are defined by the Windows Runtime.  
   
  PassArray  
  Used when the caller passes an array to a method. The C++ input parameter type is `const`[Platform::Array](../cppcx/platform-array-class.md)\<T>.  
@@ -38,7 +38,7 @@ You can freely use regular C-style arrays or [std::array](../standard-library/ar
  Used when the caller receives an array that the method allocates. In C++/CX you can return the array in the return value as an Array^ or you can return it as an out parameter as type Array^*.  
   
 ## PassArray pattern  
- When client code passes an array to a C++ method and the method does not modify it, the method accepts the array as a const Array^. At the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] application binary interface (ABI) level, this is known as a PassArray. The next example shows how to pass an array that's allocated in JavaScript to a C++ function that reads from it.  
+ When client code passes an array to a C++ method and the method does not modify it, the method accepts the array as a const Array^. At the Windows Runtime application binary interface (ABI) level, this is known as a PassArray. The next example shows how to pass an array that's allocated in JavaScript to a C++ function that reads from it.  
   
  [!code-javascript[cx_arrays#101](../cppcx/codesnippet/JavaScript/array-and-writeonlyarray-c-_1.js)]  
   

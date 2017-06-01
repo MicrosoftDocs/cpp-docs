@@ -14,7 +14,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Delegates (C++/CX)
-The `delegate` keyword is used to declare a reference type that is the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] equivalent of a function object in standard C++. A delegate declaration similar to a function signature; it specifies the return type and parameter types that its wrapped function must have. This is a user-defined delegate declaration:  
+The `delegate` keyword is used to declare a reference type that is the Windows Runtime equivalent of a function object in standard C++. A delegate declaration similar to a function signature; it specifies the return type and parameter types that its wrapped function must have. This is a user-defined delegate declaration:  
   
 ```cpp  
      public delegate void PrimeFoundHandler(int result);  
@@ -29,7 +29,7 @@ event PrimeFoundHandler^ primeFoundEvent;
  When declaring delegates that will be exposed to clients across the Windows Runtime application binary interface, use [Windows::Foundation::TypedEventHandler\<TSender, TResult>](http://msdn.microsoft.com/library/windows/apps/br225997.aspx). This delegate has predefined proxy and stub binaries that enable it to be consumed by Javascript clients.  
   
 ## Consuming delegates  
- When you create a Universal Windows Platform app, you often work with a delegate as the type of an event that a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] class exposes. To subscribe to an event, create an instance of its delegate type by specifying a function—or lambda—that matches the delegate signature. Then use the `+=` operator to pass the delegate object to the event member on the class. This is known as subscribing to the event. When the class instance "fires" the event, your function is called, along with any other handlers that were added by your object or other objects.  
+ When you create a Universal Windows Platform app, you often work with a delegate as the type of an event that a Windows Runtime class exposes. To subscribe to an event, create an instance of its delegate type by specifying a function—or lambda—that matches the delegate signature. Then use the `+=` operator to pass the delegate object to the event member on the class. This is known as subscribing to the event. When the class instance "fires" the event, your function is called, along with any other handlers that were added by your object or other objects.  
   
 > [!TIP]
 >  Visual Studio does a lot of work for you when you create an event handler. For example, if you specify an event handler in XAML markup, a tool tip appears. If you choose the tool tip, Visual Studio automatically creates the event handler method and associates it with the event on the publishing class.  
@@ -47,7 +47,7 @@ event PrimeFoundHandler^ primeFoundEvent;
 > [!WARNING]
 >  In general, for an event handler, it's better to use a named function instead of a lambda unless you take great care to avoid circular references. A named function captures the "this" pointer by weak reference, but a lambda captures it by strong reference and creates a circular reference. For more information, see [Weak references and breaking cycles](../cppcx/weak-references-and-breaking-cycles-c-cx.md).  
   
- By convention, event-handler delegate names that are defined by the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] have the form *EventHandler—for example, RoutedEventHandler, SizeChangedEventHandler, or SuspendingEventHandler. Also by convention, event handler delegates have two parameters and return void. In a delegate that doesn't have type parameters, the first parameter is of type [Platform::Object^](../cppcx/platform-object-class.md); it holds a reference to the sender, which is the object that fired the event. You have to cast back to the original type before you use the argument in the event handler method. In an event handler delegate that has type parameters, the first type parameter specifies the type of the sender, and the second parameter is a handle to a ref class that holds information about the event. By convention, that class is named \*EventArgs. For example, a RoutedEventHandler delegate has a second parameter of type RoutedEventArgs^, and DragEventHander has a second parameter of type DragEventArgs^.  
+ By convention, event-handler delegate names that are defined by the Windows Runtime have the form *EventHandler—for example, RoutedEventHandler, SizeChangedEventHandler, or SuspendingEventHandler. Also by convention, event handler delegates have two parameters and return void. In a delegate that doesn't have type parameters, the first parameter is of type [Platform::Object^](../cppcx/platform-object-class.md); it holds a reference to the sender, which is the object that fired the event. You have to cast back to the original type before you use the argument in the event handler method. In an event handler delegate that has type parameters, the first type parameter specifies the type of the sender, and the second parameter is a handle to a ref class that holds information about the event. By convention, that class is named \*EventArgs. For example, a RoutedEventHandler delegate has a second parameter of type RoutedEventArgs^, and DragEventHander has a second parameter of type DragEventArgs^.  
   
  By convention, delegates that wrap the code that executes when an asynchronous operation completes are named *CompletedHandler. These delegates are defined as properties on the class, not as events. Therefore, you don't use the `+=` operator to subscribe to them; you just assign a delegate object to the property.  
   
@@ -55,7 +55,7 @@ event PrimeFoundHandler^ primeFoundEvent;
 >  C++ IntelliSense doesn't show the full delegate signature; therefore, it doesn't help you determine the specific type of the EventArgs parameter. To find the type, you can go to the **Object Browser** and look at the `Invoke` method for the delegate.  
   
 ## Creating custom delegates  
- You can define your own delegates, to define event handlers or to enable consumers to pass in custom functionality to your [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component. Like any other [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type, a public delegate cannot be declared as generic.  
+ You can define your own delegates, to define event handlers or to enable consumers to pass in custom functionality to your Windows Runtime component. Like any other Windows Runtime type, a public delegate cannot be declared as generic.  
   
 ### Declaration  
  The declaration of a delegate resembles a function declaration except that the delegate is a type. Typically, you declare a delegate at namespace scope, although you can also nest a delegate declaration in a class declaration. The following delegate encapsulates any function that takes a `ContactInfo^` as input and returns a `Platform::String^`.  
@@ -67,9 +67,9 @@ event PrimeFoundHandler^ primeFoundEvent;
  [!code-cpp[Cx_delegates#112](../cppcx/codesnippet/CPP/delegatesevents/class1.h#112)]  
   
 > [!NOTE]
->  You use the "^" symbol when you refer to the delegate type, just as you do with any [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] reference type.  
+>  You use the "^" symbol when you refer to the delegate type, just as you do with any Windows Runtime reference type.  
   
- An event declaration always has a delegate type. This example shows a typical delegate type signature in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]:  
+ An event declaration always has a delegate type. This example shows a typical delegate type signature in the Windows Runtime:  
   
  [!code-cpp[cx_delegates#122](../cppcx/codesnippet/CPP/delegatesevents/class1.h#122)]  
   
@@ -83,7 +83,7 @@ event PrimeFoundHandler^ primeFoundEvent;
   
  [!code-cpp[Cx_delegates#114](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#114)]  
   
- In the next example, a client app passes a custom delegate to a public method in a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component that executes the delegate against each item in a `Vector`:  
+ In the next example, a client app passes a custom delegate to a public method in a Windows Runtime component that executes the delegate against each item in a `Vector`:  
   
  [!code-cpp[Cx_delegates#118](../cppcx/codesnippet/CPP/clientapp/mainpage.xaml.cpp#118)]  
   
@@ -119,7 +119,7 @@ event PrimeFoundHandler^ primeFoundEvent;
 ## Delegates and threads  
  A delegate, just like a function object, contains code that will execute at some time in the future. If the code that creates and passes the delegate, and the function that accepts and executes the delegate, are running on the same thread, then things are relatively simple. If that thread is the UI thread, then the delegate can directly manipulate user interface objects such as XAML controls.  
   
- If a client app loads a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component that runs in a threaded apartment, and provides a delegate to that component, then by default the delegate is invoked directly on the STA thread. Most [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components can run in either STA or MTA.  
+ If a client app loads a Windows Runtime component that runs in a threaded apartment, and provides a delegate to that component, then by default the delegate is invoked directly on the STA thread. Most Windows Runtime components can run in either STA or MTA.  
   
  If the code that executes the delegate is running on a different thread—for example, within the context of a concurrency::task object—then you are responsible for synchronizing access to shared data. For example, if your delegate contains a reference to a Vector, and a XAML control has a reference to that same Vector, you must take steps to avoid deadlocks or race conditions that might occur when both the delegate and XAML control attempt to access the Vector at the same time. You must also take care that the delegate doesn't attempt to capture by reference local variables that might go out of scope before the delegate is invoked.  
   

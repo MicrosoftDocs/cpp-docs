@@ -128,7 +128,7 @@ CColorDialog(
  The default color selection. If no value is specified, the default is RGB(0,0,0) (black).  
   
  `dwFlags`  
- A set of flags that customize the function and appearance of the dialog box. For more information, see the [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A set of flags that customize the function and appearance of the dialog box. For more information, see the [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830) structure in the Windows SDK.  
   
  `pParentWnd`  
  A pointer to the dialog box's parent or owner window.  

@@ -41,7 +41,7 @@ translation.priority.ht:
 This class implements **IUnknown** and provides a default implementation of the [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) interface.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -90,7 +90,7 @@ HRESULT GetRunningClass(LPCLSID lpClsid);
  The ATL implementation sets \* *lpClsid* to `GUID_NULL` and returns **E_UNEXPECTED**.  
   
 ### Remarks  
- See [IRunnableObject::GetRunningClass](http://msdn.microsoft.com/library/windows/desktop/ms693734) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IRunnableObject::GetRunningClass](http://msdn.microsoft.com/library/windows/desktop/ms693734) in the Windows SDK.  
   
 ##  <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning  
  Determines if the control is running.  
@@ -103,7 +103,7 @@ virtual BOOL IsRunning();
  The ATL implementation returns **TRUE**.  
   
 ### Remarks  
- See [IRunnableObject::IsRunning](http://msdn.microsoft.com/library/windows/desktop/ms678496) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IRunnableObject::IsRunning](http://msdn.microsoft.com/library/windows/desktop/ms678496) in the Windows SDK.  
   
 ##  <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning  
  Locks the control into the running state.  
@@ -116,7 +116,7 @@ HRESULT LockRunning(BOOL fLock, BOOL fLastUnlockCloses);
  The ATL implementation returns `S_OK`.  
   
 ### Remarks  
- See [IRunnableObject::LockRunning](http://msdn.microsoft.com/library/windows/desktop/ms693361) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IRunnableObject::LockRunning](http://msdn.microsoft.com/library/windows/desktop/ms693361) in the Windows SDK.  
   
 ##  <a name="run"></a>  IRunnableObjectImpl::Run  
  Forces the control to run.  
@@ -129,7 +129,7 @@ HRESULT Run(LPBINDCTX lpbc);
  The ATL implementation returns `S_OK`.  
   
 ### Remarks  
- See [IRunnableObject::Run](http://msdn.microsoft.com/library/windows/desktop/ms694517) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IRunnableObject::Run](http://msdn.microsoft.com/library/windows/desktop/ms694517) in the Windows SDK.  
   
 ##  <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject  
  Indicates that the control is embedded.  
@@ -142,7 +142,7 @@ HRESULT SetContainedObject(BOOL fContained);
  The ATL implementation returns `S_OK`.  
   
 ### Remarks  
- See [IRunnableObject::SetContainedObject](http://msdn.microsoft.com/library/windows/desktop/ms693710) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IRunnableObject::SetContainedObject](http://msdn.microsoft.com/library/windows/desktop/ms693710) in the Windows SDK.  
   
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   

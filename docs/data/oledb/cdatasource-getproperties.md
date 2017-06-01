@@ -54,7 +54,7 @@ Returns the property information requested for the connected data source object.
 ```  
   
 #### Parameters  
- See [IDBProperties::GetProperties](https://msdn.microsoft.com/en-us/library/ms714344.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDBProperties::GetProperties](https://msdn.microsoft.com/en-us/library/ms714344.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
 ## Return Value  
  A standard `HRESULT`.  

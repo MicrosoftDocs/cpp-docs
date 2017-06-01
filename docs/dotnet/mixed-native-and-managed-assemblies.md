@@ -73,7 +73,7 @@ Mixed assemblies are capable of containing both unmanaged machine instructions a
  Discusses how to ensure proper shutdown of a managed application that consumes a COM object compiled with **/clr**.  
   
  [How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL](../dotnet/create-a-partially-trusted-application.md)  
- Discusses how to create a partially trusted Common Language Runtime application using [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] by removing dependency on msvcm90.dll.  
+ Discusses how to create a partially trusted Common Language Runtime application using Visual C++ by removing dependency on msvcm90.dll.  
   
  For more information about coding guidelines for mixed assemblies, see the MSDN article "An Overview of Managed/Unmanaged Code Interoperability" at [http://msdn.microsoft.com/netframework/default.aspx?pull=/library/dndotnet/html/manunmancode.asp](http://msdn.microsoft.com/netframework/default.aspx?pull=/library/dndotnet/html/manunmancode.asp).  
   

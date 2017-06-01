@@ -35,7 +35,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Define and Consume Classes and Structs (C++/CLI)
-This article shows how to define and consume user-defined reference types and value types in [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)].  
+This article shows how to define and consume user-defined reference types and value types in C++/CLI.  
   
 ##  <a name="BKMK_Contents"></a> Contents  
  [Object instantiation](#BKMK_Object_instantiation)  

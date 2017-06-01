@@ -100,7 +100,7 @@ This topic provides a guide for upgrading Visual C++ code. This includes getting
 |[Porting 3rd-party libraries](porting-third-party-libraries.md)|How to use the **vcpkg** command line tool to port older open-source libraries to versions compiled with more recent Visual C++ toolsets.|  
 |[Porting and Upgrading: Examples and Case Studies](porting-and-upgrading-examples-and-case-studies.md)|For this section, we ported and upgrades several samples and applications and discussed the experiences and results. You might find that reading these gives you a sense of what is involved in the porting and upgrading process. Throughout the process, we discuss tips and tricks for upgrading and show how specific errors were fixed.|  
 |[Porting to the Universal Windows Platform](porting-to-the-universal-windows-platform-cpp.md)|Contains information about porting code to Windows 10|  
-|[Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md)|Provides information for UNIX users who are new to [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] and want to become productive with it.|  
+|[Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md)|Provides information for UNIX users who are new to Visual C++ and want to become productive with it.|  
 |[Porting from UNIX to Win32](porting-from-unix-to-win32.md)|Discusses options for migrating UNIX applications to Windows.|  
 |[C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)|Shows in detail how to upgrade your Managed Extensions for C++ syntax to use the new syntax. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).|  
   

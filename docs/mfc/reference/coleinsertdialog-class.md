@@ -77,7 +77,7 @@ class COleInsertDialog : public COleDialog
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.  
   
- For more information, see the [OLEUIINSERTOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms691316) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUIINSERTOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms691316) structure in the Windows SDK.  
   
  For more information regarding OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -178,7 +178,7 @@ INT_PTR
   
 -   IDCANCEL if the user canceled the dialog box.  
   
--   IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIInsertObject](http://msdn.microsoft.com/library/windows/desktop/ms694325) function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+-   IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIInsertObject](http://msdn.microsoft.com/library/windows/desktop/ms694325) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_io](#m_io) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
@@ -196,7 +196,7 @@ REFCLSID GetClassID() const;
  Returns the **CLSID** associated with the selected item.  
   
 ### Remarks  
- For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the Windows SDK.  
   
 ##  <a name="getdrawaspect"></a>  COleInsertDialog::GetDrawAspect  
  Call this function to determine if the user chose to display the selected item as an icon.  
@@ -215,7 +215,7 @@ DVASPECT GetDrawAspect() const;
 ### Remarks  
  Call this function only if [DoModal](#domodal) returns **IDOK**.  
   
- For more information on drawing aspect, see [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) data structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on drawing aspect, see [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) data structure in the Windows SDK.  
   
 ##  <a name="geticonicmetafile"></a>  COleInsertDialog::GetIconicMetafile  
  Call this function to get a handle to the metafile that contains the iconic aspect of the selected item.  
@@ -276,7 +276,7 @@ OLEUIINSERTOBJECT m_io;
 ### Remarks  
  Members of this structure can be modified either directly or through member functions.  
   
- For more information, see the [OLEUIINSERTOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms691316) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUIINSERTOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms691316) structure in the Windows SDK.  
   
 ## See Also  
  [MFC Sample OCLIENT](../../visual-cpp-samples.md)   

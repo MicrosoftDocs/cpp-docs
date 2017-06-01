@@ -14,11 +14,11 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Casting (C++/CX)
-Four different cast operators apply to [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] types: [static_cast Operator](../cpp/static-cast-operator.md), [dynamic_cast Operator](../cpp/dynamic-cast-operator.md), **safe_cast Operator**, and [reinterpret_cast Operator](../cpp/reinterpret-cast-operator.md). `safe_cast` and `static_cast` throw an exception when the conversion can't be performed; [static_cast Operator](../cpp/static-cast-operator.md) also performs compile-time type checking. `dynamic_cast` returns `nullptr` if it fails to convert the type. Although `reinterpret_cast` returns a non-null value, it might be invalid. For this reason, we recommend that you not use `reinterpret_cast` unless you know that the cast will succeed. In addition, we recommend that you not use C-style casts in your C++/CX code because they are identical to `reinterpret_cast`.  
+Four different cast operators apply to Windows Runtime types: [static_cast Operator](../cpp/static-cast-operator.md), [dynamic_cast Operator](../cpp/dynamic-cast-operator.md), **safe_cast Operator**, and [reinterpret_cast Operator](../cpp/reinterpret-cast-operator.md). `safe_cast` and `static_cast` throw an exception when the conversion can't be performed; [static_cast Operator](../cpp/static-cast-operator.md) also performs compile-time type checking. `dynamic_cast` returns `nullptr` if it fails to convert the type. Although `reinterpret_cast` returns a non-null value, it might be invalid. For this reason, we recommend that you not use `reinterpret_cast` unless you know that the cast will succeed. In addition, we recommend that you not use C-style casts in your C++/CX code because they are identical to `reinterpret_cast`.  
   
  The compiler and runtime also perform implicit casts—for example, in boxing operations when a value type or built-in type are passed as arguments to a method whose parameter type is `Object^`. In theory, an implicit cast should never cause an exception at run time; if the compiler can't perform an implicit conversion, it raises an error at compile time.  
   
- [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] is an abstraction over COM, which uses HRESULT error codes instead of exceptions. In general, the [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) indicates a low-level COM error of E_NOINTERFACE.  
+Windows Runtime is an abstraction over COM, which uses HRESULT error codes instead of exceptions. In general, the [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) indicates a low-level COM error of E_NOINTERFACE.  
   
 ## static_cast  
  A `static_cast` is checked at compile time to determine whether there is an inheritance relationship between the two types. The cast causes a compiler error if the types are not related.  
@@ -37,7 +37,7 @@ Four different cast operators apply to [!INCLUDE[wrt](../cppcx/includes/wrt-md.m
 ```  
   
 ## safe_cast  
- The `safe_cast` operator is part of [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)]. It performs a run-time type check and throws a `Platform::InvalidCastException` if the conversion fails. Use `safe_cast` when a run-time failure indicates an exceptional condition. The primary purpose of `safe_cast` is to help identify programming errors during the development and testing phases at the point where they occur. You don't have to handle the exception because the unhandled exception itself identifies the point of failure.  
+ The `safe_cast` operator is part ofWindows Runtime. It performs a run-time type check and throws a `Platform::InvalidCastException` if the conversion fails. Use `safe_cast` when a run-time failure indicates an exceptional condition. The primary purpose of `safe_cast` is to help identify programming errors during the development and testing phases at the point where they occur. You don't have to handle the exception because the unhandled exception itself identifies the point of failure.  
   
  Use safe_cast if the code does not declare the relationship but you are sure that the cast should work.  
   
@@ -77,7 +77,7 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
  You can also apply a `dynamic_cast` to a tracking reference, but in this case the cast behaves like `safe_cast`. It throws `Platform::InvalidCastException` on failure because a tracking reference cannot have a value of `nullptr`.  
   
 ## reinterpret_cast  
- We recommend that you not use [reinterpret_cast](../cpp/reinterpret-cast-operator.md) because neither a compile-time check nor a run-time check is performed. In the worst case, a `reinterpret_cast` makes it possible for programming errors to go undetected at development time and cause subtle or catastrophic errors in your program’s behavior. Therefore, we recommend that you use `reinterpret_cast` only in those rare cases when you must cast between unrelated types and you know that the cast will succeed. An example of a rare use is to convert a [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] type to its underlying ABI type—this means that you are taking control of the reference counting for the object. To do this, we recommend that you use the [ComPtr Class](../cpp/com-ptr-t-class.md) smart pointer. Otherwise, you must specifically call Release on the interface. The following example shows how a ref class can be cast to an `IInspectable*`.  
+ We recommend that you not use [reinterpret_cast](../cpp/reinterpret-cast-operator.md) because neither a compile-time check nor a run-time check is performed. In the worst case, a `reinterpret_cast` makes it possible for programming errors to go undetected at development time and cause subtle or catastrophic errors in your program’s behavior. Therefore, we recommend that you use `reinterpret_cast` only in those rare cases when you must cast between unrelated types and you know that the cast will succeed. An example of a rare use is to convert aWindows Runtime type to its underlying ABI type—this means that you are taking control of the reference counting for the object. To do this, we recommend that you use the [ComPtr Class](../cpp/com-ptr-t-class.md) smart pointer. Otherwise, you must specifically call Release on the interface. The following example shows how a ref class can be cast to an `IInspectable*`.  
   
 ```  
 #include <wrl.h>  
@@ -87,7 +87,7 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 ...
 ```  
   
- If you use `reinterpret_cast` to convert from one [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-[!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] interface.  
+ If you use `reinterpret_cast` to convert from oneWindows Runtime interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-[!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] interface.  
   
  **ABI types**  
   
@@ -95,9 +95,9 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
   
 -   ABI types live in a special namespace ABI—for example, `ABI::Windows::Storage::Streams::IBuffer*`.  
   
--   Conversions between a [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] interface type and its equivalent ABI type are always safe—that is, `IBuffer^` to `ABI::IBuffer*`.  
+-   Conversions between aWindows Runtime interface type and its equivalent ABI type are always safe—that is, `IBuffer^` to `ABI::IBuffer*`.  
   
--   A [!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] runtime class should always be converted to `IInspectable*` or its default interface, if that is known.  
+-   AWindows Runtime runtime class should always be converted to `IInspectable*` or its default interface, if that is known.  
   
 -   After you convert to ABI types, you own the lifetime of the type and must follow the COM rules. We recommend that you use `WRL::ComPtr` to simplify lifetime management of ABI pointers.  
   

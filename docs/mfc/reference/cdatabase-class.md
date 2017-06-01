@@ -160,7 +160,7 @@ void Cancel();
 ```  
   
 ### Remarks  
- Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function [SQLSetConnectOption](https://msdn.microsoft.com/library/ms713564.aspx). For more information, see [Asynchronous Execution](https://msdn.microsoft.com/library/ms713563.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function [SQLSetConnectOption](https://msdn.microsoft.com/library/ms713564.aspx). For more information, see [Asynchronous Execution](https://msdn.microsoft.com/library/ms713563.aspx) in the Windows SDK.  
   
 ##  <a name="cantransact"></a>  CDatabase::CanTransact  
  Call this member function to determine whether the database allows transactions.  
@@ -286,7 +286,7 @@ DWORD GetBookmarkPersistence() const;
 |`SQL_BP_UPDATE`|The bookmark for a row is valid after an **Update** operation on that row.|  
 |`SQL_BP_OTHER_HSTMT`|Bookmarks associated with one recordset object are valid on a second recordset.|  
   
- For more information about this return value, see the ODBC API function **SQLGetInfo** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information about bookmarks, see the article [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).  
+ For more information about this return value, see the ODBC API function **SQLGetInfo** in the Windows SDK. For more information about bookmarks, see the article [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).  
   
 ##  <a name="getconnect"></a>  CDatabase::GetConnect  
  Call this member function to retrieve the connection string used during the call to `OpenEx` or `Open` that connected the `CDatabase` object to a data source.  
@@ -320,7 +320,7 @@ int GetCursorCommitBehavior() const;
 |`SQL_CB_DELETE`|Call `CRecordset::Close` immediately following the transaction commit.|  
 |`SQL_CB_PRESERVE`|Proceed normally with `CRecordset` operations.|  
   
- For more information about this return value, see the ODBC API function **SQLGetInfo** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
+ For more information about this return value, see the ODBC API function **SQLGetInfo** in the Windows SDK. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
   
 ##  <a name="getcursorrollbackbehavior"></a>  CDatabase::GetCursorRollbackBehavior  
  Call this member function to determine how a [Rollback](#rollback) operation affects cursors on open recordset objects.  
@@ -341,7 +341,7 @@ int GetCursorRollbackBehavior() const;
 |`SQL_CB_DELETE`|Call `CRecordset::Close` immediately following the transaction rollback.|  
 |`SQL_CB_PRESERVE`|Proceed normally with `CRecordset` operations.|  
   
- For more information about this return value, see the ODBC API function **SQLGetInfo** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
+ For more information about this return value, see the ODBC API function **SQLGetInfo** in the Windows SDK. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
   
 ##  <a name="getdatabasename"></a>  CDatabase::GetDatabaseName  
  Call this member function to retrieve the name of the currently connected database (provided that the data source defines a named object called "database").  
@@ -443,7 +443,7 @@ virtual BOOL Open(
   
  If you wish, you can open your own dialog box before you call **Open** to get information from the user, such as a password, then add that information to the connection string you pass to **Open**. Or you might want to save the connection string you pass so you can reuse it the next time your application calls **Open** on a `CDatabase` object.  
   
- You can also use the connection string for multiple levels of login authorization (each for a different `CDatabase` object) or to convey other data source-specific information. For more information about connection strings, see Chapter 5 in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ You can also use the connection string for multiple levels of login authorization (each for a different `CDatabase` object) or to convey other data source-specific information. For more information about connection strings, see Chapter 5 in the Windows SDK.  
   
  It is possible for a connection attempt to time out if, for example, the DBMS host is unavailable. If the connection attempt fails, **Open** throws a `CDBException`.  
   

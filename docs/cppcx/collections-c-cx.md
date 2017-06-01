@@ -14,9 +14,9 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Collections (C++/CX)
-In a C++/CX program, you can make free use of Standard Template Library (STL) containers, or any other user-defined collection type. However, when you pass collections back and forth across the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] application binary interface (ABI)—for example, to a XAML control or to a JavaScript client—you must use [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] collection types.  
+In a C++/CX program, you can make free use of Standard Template Library (STL) containers, or any other user-defined collection type. However, when you pass collections back and forth across the Windows Runtime application binary interface (ABI)—for example, to a XAML control or to a JavaScript client—you must use Windows Runtime collection types.  
   
- The [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] defines the interfaces for collections and related types, and C++/CX provides the concrete C++ implementations in the collection.h header file. This illustration shows the relationships between the collection types:  
+ The Windows Runtime defines the interfaces for collections and related types, and C++/CX provides the concrete C++ implementations in the collection.h header file. This illustration shows the relationships between the collection types:  
   
  ![C&#43;&#43;&#47;CX inheritance tree for collection types](../cppcx/media/cppcxcollectionsinheritancetree.png "CPPCXCollectionsInheritanceTree")  
   
@@ -26,7 +26,7 @@ In a C++/CX program, you can make free use of Standard Template Library (STL) co
   
 -   [Platform::Collections::VectorView Class](../cppcx/platform-collections-vectorview-class.md) and[Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md) are read-only versions of `Vector` and `Map`.  
   
--   Iterators are defined in the [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md). These iterators satisfy the requirements for STL iterators and enable the use of [std::find](../standard-library/algorithm-functions.md#find),  [std::count_if](../standard-library/algorithm-functions.md#count_if), and other STL algorithms on any [Windows::Foundation::Collections](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.aspx) interface type or [Platform::Collections](../cppcx/platform-collections-namespace.md) concrete type. For example, this means that you can iterate a collection in a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component that's created in C# and apply an STL algorithm to it.  
+-   Iterators are defined in the [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md). These iterators satisfy the requirements for STL iterators and enable the use of [std::find](../standard-library/algorithm-functions.md#find),  [std::count_if](../standard-library/algorithm-functions.md#count_if), and other STL algorithms on any [Windows::Foundation::Collections](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.aspx) interface type or [Platform::Collections](../cppcx/platform-collections-namespace.md) concrete type. For example, this means that you can iterate a collection in a Windows Runtime component that's created in C# and apply an STL algorithm to it.  
   
     > [!IMPORTANT]
     >  Proxy iterators `VectorIterator` and `VectorViewIterator` utilize proxy objects `VectoryProxy<T>` and `ArrowProxy<T>` to enable usage with STL containers. For more information, see "VectorProxy elements" later in this article.  
@@ -36,7 +36,7 @@ In a C++/CX program, you can make free use of Standard Template Library (STL) co
 -   [Windows::Foundation::Collections::IObservableVector](http://msdn.microsoft.com/library/windows/apps/br226052.aspx) and [Windows::Foundation::Collections::IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) define events that are fired when the collection changes in various ways. By implementing these interfaces,  [Platform::Collections::Map](../cppcx/platform-collections-map-class.md) and [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) support databinding with XAML collections. For example, if you have a `Vector` that is data-bound to a `Grid`, when you add an item to a collection, the change is reflected in the Grid UI.  
   
 ## Vector usage  
- When your class has to pass a sequence container to another [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component, use [Windows::Foundation::Collections:: IVector\<T>](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) as the parameter or return type, and [Platform::Collections::Vector\<T>](../cppcx/platform-collections-vector-class.md) as the concrete implementation. If you attempt to use a `Vector` type in a public return value or parameter, compiler error C3986 will be raised. You can fix the error by changing the `Vector` to an `IVector`.  
+ When your class has to pass a sequence container to another Windows Runtime component, use [Windows::Foundation::Collections:: IVector\<T>](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) as the parameter or return type, and [Platform::Collections::Vector\<T>](../cppcx/platform-collections-vector-class.md) as the concrete implementation. If you attempt to use a `Vector` type in a public return value or parameter, compiler error C3986 will be raised. You can fix the error by changing the `Vector` to an `IVector`.  
   
 > [!IMPORTANT]
 >  If you are passing a sequence within your own program, then use either `Vector` or `std::vector` because they are more efficient than `IVector`. Use `IVector` only when you pass the container across the ABI.  
@@ -47,7 +47,7 @@ In a C++/CX program, you can make free use of Standard Template Library (STL) co
   
  [!code-cpp[cx_collections#01](../cppcx/codesnippet/CPP/collections/class1.cpp#01)]  
   
- If you have existing code that uses `std::vector` and you want to reuse it in a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component, just use one of the `Vector` constructors that takes a `std::vector` or a pair of iterators to construct a `Vector` at the point where you pass the collection across the ABI. The following example shows how to use the `Vector` move constructor for efficient initialization from a `std::vector`. After the move operation, the original `vec` variable is no longer valid.  
+ If you have existing code that uses `std::vector` and you want to reuse it in a Windows Runtime component, just use one of the `Vector` constructors that takes a `std::vector` or a pair of iterators to construct a `Vector` at the point where you pass the collection across the ABI. The following example shows how to use the `Vector` move constructor for efficient initialization from a `std::vector`. After the move operation, the original `vec` variable is no longer valid.  
   
  [!code-cpp[cx_collections#02](../cppcx/codesnippet/CPP/collections/class1.cpp#02)]  
   

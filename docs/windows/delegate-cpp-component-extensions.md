@@ -40,7 +40,7 @@ translation.priority.mt:
 Declares a type that represents a function pointer.  
   
 ## All Runtimes  
- Both the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] and common language runtime support delegates.  
+ Both the Windows Runtime and common language runtime support delegates.  
   
 ### Remarks  
  `delegate` is a context-sensitive keyword. For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  

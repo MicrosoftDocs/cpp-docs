@@ -35,7 +35,8 @@ translation.priority.ht:
 ---
 # CMFCAutoHideButton Class
 A button that displays or hides a [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) that is configured to hide.  
-  
+
+ [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
 ## Syntax  
   
 ```  
@@ -90,7 +91,7 @@ class CMFCAutoHideButton : public CObject
  **Header:** afxautohidebutton.h  
   
 ##  <a name="bringtotop"></a>  CMFCAutoHideButton::BringToTop  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void BringToTop();
@@ -169,7 +170,7 @@ CDockablePane* GetAutoHideWindow() const;
  To associate an auto-hide button with a `CDockablePane`, pass the `CDockablePane` as a parameter to the [CMFCAutoHideButton::Create](#create) method.  
   
 ##  <a name="getparenttoolbar"></a>  CMFCAutoHideButton::GetParentToolBar  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CMFCAutoHideBar* GetParentToolBar();
@@ -180,7 +181,7 @@ CMFCAutoHideBar* GetParentToolBar();
 ### Remarks  
   
 ##  <a name="getrect"></a>  CMFCAutoHideButton::GetRect  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 CRect GetRect() const;  
@@ -240,7 +241,7 @@ BOOL IsHorizontal() const;
  The framework sets the orientation of a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object when you create it.  You can control the orientation by using the `dwAlignment` parameter in the [CMFCAutoHideButton::Create](#create) method.  
   
 ##  <a name="istop"></a>  CMFCAutoHideButton::IsTop  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsTop() const;  
@@ -339,7 +340,7 @@ virtual void ShowButton(BOOL bShow);
  A Boolean that specifies whether to show the auto-hide button.  
   
 ##  <a name="move"></a>  CMFCAutoHideButton::Move  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void Move(int nOffset);
@@ -351,7 +352,7 @@ void Move(int nOffset);
 ### Remarks  
   
 ##  <a name="replacepane"></a>  CMFCAutoHideButton::ReplacePane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void ReplacePane(CDockablePane* pNewBar);

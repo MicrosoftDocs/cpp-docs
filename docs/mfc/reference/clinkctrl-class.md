@@ -77,7 +77,7 @@ class CLinkCtrl : public CWnd
   
  This control (and therefore the `CLinkCtrl` class) is available only to programs running under Windows XP and later.  
   
- For more information, see [SysLink Control](http://msdn.microsoft.com/library/windows/desktop/bb760706) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [SysLink Control](http://msdn.microsoft.com/library/windows/desktop/bb760706) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -175,10 +175,10 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
  Pointer to a zero-terminated string that contains the marked up text to display. For more information, see the section "Markup and Link Access" in the topic [Overview of SysLink Controls](http://msdn.microsoft.com/library/windows/desktop/bb760706) in the [MSDN Library](http://go.microsoft.com/fwlink/linkid=556).  
   
  `dwExStyle`  
- Specifies the extended style of the link control. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the link control. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
- Specifies the link control's style. Apply any combination of control styles. For more information, see [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the link control's style. Apply any combination of control styles. For more information, see [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK.  
   
  `rect`  
  Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
@@ -208,7 +208,7 @@ int GetIdealHeight() const;
  The ideal height of the control, in pixels.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [LM_GETIDEALHEIGHT](http://msdn.microsoft.com/library/windows/desktop/bb760716), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [LM_GETIDEALHEIGHT](http://msdn.microsoft.com/library/windows/desktop/bb760716), as described in the Windows SDK.  
   
 ##  <a name="getidealsize"></a>  CLinkCtrl::GetIdealSize  
  Calculates the preferred height of the link text for the current link control, depending on the specified width of the link.  
@@ -232,7 +232,7 @@ int GetIdealSize(
 ### Remarks  
  For an example of the `GetIdealSize` method, see the example in [CLinkCtrl::Create](#create).  
   
- This method sends the [LM_GETIDEALSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760718) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [LM_GETIDEALSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760718) message, which is described in the Windows SDK.  
   
 ##  <a name="getitem"></a>  CLinkCtrl::GetItem  
  Retrieves the states and attributes of a link control item.  
@@ -249,7 +249,7 @@ BOOL GetItem(PLITEM pItem) const;
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720), as described in the Windows SDK.  
   
 ##  <a name="getitemid"></a>  CLinkCtrl::GetItemID  
  Retrieves the ID of a link control item.  
@@ -285,7 +285,7 @@ BOOL GetItemID(
 >  This function also returns **FALSE** if the buffer of *szID or strID* is smaller than **MAX_LINKID_TEXT**.  
   
 ### Remarks  
- Retrieves the ID of a specific link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Retrieves the ID of a specific link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the Windows SDK.  
   
 ##  <a name="getitemstate"></a>  CLinkCtrl::GetItemState  
  Retrieves the state of the link control item.  
@@ -311,7 +311,7 @@ BOOL GetItemState(
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ### Remarks  
- Retrieves the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Retrieves the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the Windows SDK.  
   
 ##  <a name="getitemurl"></a>  CLinkCtrl::GetItemUrl  
  Retrieves the URL represented by the link control item.  
@@ -347,7 +347,7 @@ BOOL GetItemUrl(
 >  This function also returns **FALSE** if the buffer of *szUrl or strUrl* is smaller than **MAX_LINKID_TEXT**.  
   
 ### Remarks  
- Retrieves the URL represented by the specified link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Retrieves the URL represented by the specified link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the Windows SDK.  
   
 ##  <a name="hittest"></a>  CLinkCtrl::HitTest  
  Determines if the user clicked the specified link.  
@@ -364,7 +364,7 @@ BOOL HitTest(PLHITTESTINFO phti) const;
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [LM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb760722), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [LM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb760722), as described in the Windows SDK.  
   
 ##  <a name="setitem"></a>  CLinkCtrl::SetItem  
  Sets the states and attributes of a link control item.  
@@ -381,7 +381,7 @@ BOOL SetItem(PLITEM pItem);
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724), as described in the Windows SDK.  
   
 ##  <a name="setitemid"></a>  CLinkCtrl::SetItemID  
  Retrieves the ID of a link control item.  
@@ -403,7 +403,7 @@ BOOL SetItemID(
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ### Remarks  
- Sets the ID of a specific link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Sets the ID of a specific link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the Windows SDK.  
   
 ##  <a name="setitemstate"></a>  CLinkCtrl::SetItemState  
  Retrieves the state of the link control item.  
@@ -429,7 +429,7 @@ BOOL SetItemState(
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ### Remarks  
- Sets the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Sets the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the Windows SDK.  
   
 ##  <a name="setitemurl"></a>  CLinkCtrl::SetItemUrl  
  Sets the URL represented by the link control item.  
@@ -451,7 +451,7 @@ BOOL SetItemUrl(
  Returns **TRUE** on success, **FALSE** on failure.  
   
 ### Remarks  
- Sets the URL represented by the specified link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Sets the URL represented by the specified link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the Windows SDK.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

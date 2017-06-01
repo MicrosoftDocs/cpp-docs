@@ -772,7 +772,7 @@ virtual void HtmlHelp(
  Specifies additional data. The value used depends on the value of the `nCmd` parameter.  
   
  `nCmd`  
- Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the `uCommand` parameter described in About the HTMLHelp API Function in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the type of help requested. For a list of possible values and how they affect the `dwData` parameter, see the `uCommand` parameter described in About the HTMLHelp API Function in the Windows SDK.  
   
 ### Remarks  
  The framework also calls this function to invoke the HTMLHelp application.  
@@ -825,7 +825,7 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
  Points to a null-terminated string that contains the name of the cursor resource. You can use a `CString` for this argument.  
   
  `nIDResource`  
- ID of the cursor resource. For a list of resources, see [LoadCursor](http://msdn.microsoft.com/library/windows/desktop/ms648391) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ ID of the cursor resource. For a list of resources, see [LoadCursor](http://msdn.microsoft.com/library/windows/desktop/ms648391) in the Windows SDK.  
   
 ### Return Value  
  A handle to a cursor if successful; otherwise **NULL**.  
@@ -955,7 +955,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
   
 ### Parameters  
  `lpszIconName`  
- A manifest constant identifier that specifies a predefined Windows icon. These identifiers are defined in WINDOWS.H. For a list of the possible predefined values and their descriptions, see the *lpIconName* parameter in [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ A manifest constant identifier that specifies a predefined Windows icon. These identifiers are defined in WINDOWS.H. For a list of the possible predefined values and their descriptions, see the *lpIconName* parameter in [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072) in the Windows SDK.  
   
 ### Return Value  
  A handle to an icon if successful; otherwise **NULL**.  

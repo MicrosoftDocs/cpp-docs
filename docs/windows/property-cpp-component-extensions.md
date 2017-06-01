@@ -101,13 +101,13 @@ property type default[index_list] {
  `property_body`  
  The property method body of the set or get accessor. The `property_body` can use the `index_list` to access the underlying property data member, or as parameters in user-defined processing.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  For more information, see [Properties (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755807.aspx).  
   
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Syntax**  
   
 ```cpp  

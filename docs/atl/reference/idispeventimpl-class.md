@@ -37,7 +37,7 @@ translation.priority.ht:
 This class provides implementations of the `IDispatch` methods.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -169,7 +169,7 @@ STDMETHOD(GetIDsOfNames)(
 ```  
   
 ### Remarks  
- See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::GetIDsOfNames](http://msdn.microsoft.com/en-us/6f6cf233-3481-436e-8d6a-51f93bf91619) in the Windows SDK.  
   
 ##  <a name="gettypeinfo"></a>  IDispEventImpl::GetTypeInfo  
  Retrieves the type information for an object, which can then be used to get the type information for an interface.  
@@ -191,7 +191,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```  
   
 ### Remarks  
- See [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12) in the Windows SDK.  
   
 ##  <a name="getuserdefinedtype"></a>  IDispEventImpl::GetUserDefinedType  
  Retrieves the basic type of a user-defined type.  

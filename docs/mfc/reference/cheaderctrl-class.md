@@ -137,7 +137,7 @@ BOOL ClearAllFilters();
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306) with a column value of -1, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306) with a column value of -1, as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#2](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_2.cpp)]  
@@ -157,7 +157,7 @@ BOOL ClearFilter(int nColumn);
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method implements the behavior of the Win32 message [HDM_CLEARFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775306), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#3](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_3.cpp)]  
@@ -175,7 +175,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the header control's style. For a description of header control styles, see [Header Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775241) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the header control's style. For a description of header control styles, see [Header Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775241) in the Windows SDK.  
   
  `rect`  
  Specifies the header control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
@@ -237,10 +237,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  `dwStyle`  
- The header control's style. For a description of header control styles, see [Header Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775241) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. See [Create](#create) for a list of additional styles.  
+ The header control's style. For a description of header control styles, see [Header Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775241) in the Windows SDK. See [Create](#create) for a list of additional styles.  
   
  `rect`  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
@@ -272,7 +272,7 @@ CImageList* CreateDragImage(int nIndex);
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object if successful; otherwise **NULL**. The returned list contains only one image.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [HDM_CREATEDRAGIMAGE](http://msdn.microsoft.com/library/windows/desktop/bb775308), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It is provided to support header item drag and drop.  
+ This member function implements the behavior of the Win32 message [HDM_CREATEDRAGIMAGE](http://msdn.microsoft.com/library/windows/desktop/bb775308), as described in the Windows SDK. It is provided to support header item drag and drop.  
   
  The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.  
   
@@ -336,7 +336,7 @@ BOOL EditFilter(
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- This method implements the behavior of the Win32 message [HDM_EDITFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775312), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method implements the behavior of the Win32 message [HDM_EDITFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775312), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#7](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_7.cpp)]  
@@ -352,7 +352,7 @@ int GetBitmapMargin() const;
  The width of the bitmap margin in pixels.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [HDM_GETBITMAPMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb775314), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [HDM_GETBITMAPMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb775314), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#8](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_8.cpp)]  
@@ -368,7 +368,7 @@ int GetFocusedItem() const;
  The zero-based index of the header item that has the focus.  
   
 ### Remarks  
- This method sends the [HDM_GETFOCUSEDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775330) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [HDM_GETFOCUSEDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775330) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
@@ -391,7 +391,7 @@ CImageList* GetImageList() const;
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [HDM_GETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775332), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.  
+ This member function implements the behavior of the Win32 message [HDM_GETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775332), as described in the Windows SDK. The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#9](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_11.cpp)]  
@@ -451,7 +451,7 @@ BOOL GetItemDropDownRect(
  `true` if this function is successful; otherwise, `false`.  
   
 ### Remarks  
- This method sends the [HDM_GETITEMDROPDOWNRECT](http://msdn.microsoft.com/library/windows/desktop/bb775339) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [HDM_GETITEMDROPDOWNRECT](http://msdn.microsoft.com/library/windows/desktop/bb775339) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
@@ -483,7 +483,7 @@ BOOL GetItemRect(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This method implements the behavior of the Win32 message [HDM_GETITEMRECT](http://msdn.microsoft.com/library/windows/desktop/bb775341), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method implements the behavior of the Win32 message [HDM_GETITEMRECT](http://msdn.microsoft.com/library/windows/desktop/bb775341), as described in the Windows SDK.  
   
 ##  <a name="getorderarray"></a>  CHeaderCtrl::GetOrderArray  
  Retrieves the left-to-right order of items in a header control.  
@@ -505,7 +505,7 @@ BOOL GetOrderArray(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [HDM_GETORDERARRAY](http://msdn.microsoft.com/library/windows/desktop/bb775343), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It is provided to support header item ordering.  
+ This member function implements the behavior of the Win32 message [HDM_GETORDERARRAY](http://msdn.microsoft.com/library/windows/desktop/bb775343), as described in the Windows SDK. It is provided to support header item ordering.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#11](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_14.cpp)]  
@@ -529,7 +529,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
 ### Remarks  
  If the header control contains more items than can be simultaneously displayed, the control can display an overflow button that scrolls to items that are not visible. The header control must have the `HDS_OVERFLOW` and `HDF_SPLITBUTTON` styles to display the overflow button. The bounding rectangle encloses the overflow button and exists only when the overflow button is displayed. For more information, see [Header Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775241).  
   
- This method sends the [HDM_GETOVERFLOWRECT](http://msdn.microsoft.com/library/windows/desktop/bb775345) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [HDM_GETOVERFLOWRECT](http://msdn.microsoft.com/library/windows/desktop/bb775345) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
@@ -558,7 +558,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
  The zero-based index of the header item, if any, at the specified position; otherwise, -1.  
   
 ### Remarks  
- This method sends the [HDM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb775349) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [HDM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb775349) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
@@ -627,7 +627,7 @@ int OrderToIndex(int nOrder) const;
  The index of the item, based on its order in the header control. The index counts from left to right, beginning with 0.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 macro [HDM_ORDERTOINDEX](http://msdn.microsoft.com/library/windows/desktop/bb775355), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It is provided to support header item ordering.  
+ This member function implements the behavior of the Win32 macro [HDM_ORDERTOINDEX](http://msdn.microsoft.com/library/windows/desktop/bb775355), as described in the Windows SDK. It is provided to support header item ordering.  
   
 ##  <a name="setbitmapmargin"></a>  CHeaderCtrl::SetBitmapMargin  
  Sets the width of the margin of a bitmap in a header control.  
@@ -644,7 +644,7 @@ int SetBitmapMargin(int nWidth);
  The width of the bitmap margin in pixels.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [HDM_SETBITMAPMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb775357), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [HDM_SETBITMAPMARGIN](http://msdn.microsoft.com/library/windows/desktop/bb775357), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#14](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_19.cpp)]  
@@ -664,7 +664,7 @@ int SetFilterChangeTimeout(DWORD dwTimeOut);
  The index of the filter control being modified.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [HDM_SETFILTERCHANGETIMEOUT](http://msdn.microsoft.com/library/windows/desktop/bb775359), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function implements the behavior of the Win32 message [HDM_SETFILTERCHANGETIMEOUT](http://msdn.microsoft.com/library/windows/desktop/bb775359), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#15](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_20.cpp)]  
@@ -686,7 +686,7 @@ BOOL SetFocusedItem(int iItem);
  `true` if this method is successful; otherwise, `false`.  
   
 ### Remarks  
- This method sends the [HDM_SETFOCUSEDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775361) message, which is described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method sends the [HDM_SETFOCUSEDITEM](http://msdn.microsoft.com/library/windows/desktop/bb775361) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, `m_headerCtrl`, that is used to access the current header control. This variable is used in the next example.  
@@ -717,7 +717,7 @@ int SetHotDivider(int nIndex);
  The index of the highlighted divider.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [HDM_SETHOTDIVIDER](http://msdn.microsoft.com/library/windows/desktop/bb775363), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It is provided to support header item drag and drop.  
+ This member function implements the behavior of the Win32 message [HDM_SETHOTDIVIDER](http://msdn.microsoft.com/library/windows/desktop/bb775363), as described in the Windows SDK. It is provided to support header item drag and drop.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CHeaderCtrl#16](../../mfc/reference/codesnippet/cpp/cheaderctrl-class_21.cpp)]  
@@ -737,7 +737,7 @@ CImageList* SetImageList(CImageList* pImageList);
  A pointer to the [CImageList](../../mfc/reference/cimagelist-class.md) object previously assigned to the header control.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [HDM_SETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775365), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.  
+ This member function implements the behavior of the Win32 message [HDM_SETIMAGELIST](http://msdn.microsoft.com/library/windows/desktop/bb775365), as described in the Windows SDK. The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.  
   
 ### Example  
   See the example for [CHeaderCtrl::GetImageList](#getimagelist).  
@@ -784,7 +784,7 @@ BOOL SetOrderArray(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 macro [HDM_SETORDERARRAY](http://msdn.microsoft.com/library/windows/desktop/bb775369), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]. It is provided to support header item ordering.  
+ This member function implements the behavior of the Win32 macro [HDM_SETORDERARRAY](http://msdn.microsoft.com/library/windows/desktop/bb775369), as described in the Windows SDK. It is provided to support header item ordering.  
   
 ### Example  
   See the example for [CHeaderCtrl::GetOrderArray](#getorderarray).  

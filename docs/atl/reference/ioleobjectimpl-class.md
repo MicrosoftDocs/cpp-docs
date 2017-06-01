@@ -39,7 +39,7 @@ translation.priority.ht:
 This class implements **IUnknown** and is the principal interface through which a container communicates with a control.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -122,7 +122,7 @@ STDMETHOD(Advise)(
 ```  
   
 ### Remarks  
- See [IOleObject::Advise](http://msdn.microsoft.com/library/windows/desktop/ms686573) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::Advise](http://msdn.microsoft.com/library/windows/desktop/ms686573) in the Windows SDK.  
   
 ##  <a name="close"></a>  IOleObjectImpl::Close  
  Changes the control state from running to loaded.  
@@ -136,7 +136,7 @@ STDMETHOD(Close)(DWORD dwSaveOption);
   
  The pointers held in the control class data members [CComControlBase::m_spInPlaceSite](../../atl/reference/ccomcontrolbase-class.md#m_spinplacesite) and [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink) are released, and the data members [CComControlBase::m_bNegotiatedWnd](../../atl/reference/ccomcontrolbase-class.md#m_bnegotiatedwnd), [CComControlBase::m_bWndless](../../atl/reference/ccomcontrolbase-class.md#m_bwndless), and [CComControlBase::m_bInPlaceSiteEx](../../atl/reference/ccomcontrolbase-class.md#m_binplacesiteex) are set to **FALSE**.  
   
- See [IOleObject::Close](http://msdn.microsoft.com/library/windows/desktop/ms683922) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::Close](http://msdn.microsoft.com/library/windows/desktop/ms683922) in the Windows SDK.  
   
 ##  <a name="doverb"></a>  IOleObjectImpl::DoVerb  
  Tells the control to perform one of its enumerated actions.  
@@ -165,7 +165,7 @@ STDMETHOD(DoVerb)(
 |`OLEIVERB_SHOW`|[DoVerbShow](#doverbshow)|  
 |`OLEIVERB_UIACTIVATE`|[DoVerbUIActivate](#doverbuiactivate)|  
   
- See [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the Windows SDK.  
   
 ##  <a name="doverbdiscardundo"></a>  IOleObjectImpl::DoVerbDiscardUndo  
  Tells the control to discard any undo state it is maintaining.  
@@ -300,7 +300,7 @@ STDMETHOD(EnumAdvise)(IEnumSTATDATA** ppenumAdvise);
 ```  
   
 ### Remarks  
- See [IOleObject::EnumAdvise](http://msdn.microsoft.com/library/windows/desktop/ms682355) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::EnumAdvise](http://msdn.microsoft.com/library/windows/desktop/ms682355) in the Windows SDK.  
   
 ##  <a name="enumverbs"></a>  IOleObjectImpl::EnumVerbs  
  Supplies an enumeration of registered actions (verbs) for this control by calling **OleRegEnumVerbs**.  
@@ -312,7 +312,7 @@ STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
 ### Remarks  
  You can add verbs to your project's .rgs file. For example, see CIRCCTL.RGS in the [CIRC](../../visual-cpp-samples.md) sample.  
   
- See [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781) in the Windows SDK.  
   
 ##  <a name="getclientsite"></a>  IOleObjectImpl::GetClientSite  
  Puts the pointer in the control class data member [CComControlBase::m_spClientSite](../../atl/reference/ccomcontrolbase-class.md#m_spclientsite) into *ppClientSite* and increments the reference count on the pointer.  
@@ -322,7 +322,7 @@ STDMETHOD(GetClientSite)(IOleClientSite** ppClientSite);
 ```  
   
 ### Remarks  
- See [IOleObject::GetClientSite](http://msdn.microsoft.com/library/windows/desktop/ms692603) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::GetClientSite](http://msdn.microsoft.com/library/windows/desktop/ms692603) in the Windows SDK.  
   
 ##  <a name="getclipboarddata"></a>  IOleObjectImpl::GetClipboardData  
  Retrieves data from the Clipboard.  
@@ -337,7 +337,7 @@ STDMETHOD(GetClipboardData)(
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IOleObject::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/ms682288) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/ms682288) in the Windows SDK.  
   
 ##  <a name="getextent"></a>  IOleObjectImpl::GetExtent  
  Retrieves a running control's display size in HIMETRIC units (0.01 millimeter per unit).  
@@ -351,7 +351,7 @@ STDMETHOD(GetExtent)(
 ### Remarks  
  The size is stored in the control class data member [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).  
   
- See [IOleObject::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms692325) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms692325) in the Windows SDK.  
   
 ##  <a name="getmiscstatus"></a>  IOleObjectImpl::GetMiscStatus  
  Returns a pointer to registered status information for the control by calling **OleRegGetMiscStatus**.  
@@ -365,7 +365,7 @@ STDMETHOD(GetMiscStatus)(
 ### Remarks  
  The status information includes behaviors supported by the control and presentation data. You can add status information to your project's .rgs file.  
   
- See [IOleObject::GetMiscStatus](http://msdn.microsoft.com/library/windows/desktop/ms678521) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::GetMiscStatus](http://msdn.microsoft.com/library/windows/desktop/ms678521) in the Windows SDK.  
   
 ##  <a name="getmoniker"></a>  IOleObjectImpl::GetMoniker  
  Retrieves the control's moniker.  
@@ -381,7 +381,7 @@ STDMETHOD(GetMoniker)(
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IOleObject::GetMoniker](http://msdn.microsoft.com/library/windows/desktop/ms686576) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::GetMoniker](http://msdn.microsoft.com/library/windows/desktop/ms686576) in the Windows SDK.  
   
 ##  <a name="getuserclassid"></a>  IOleObjectImpl::GetUserClassID  
  Returns the control's class identifier.  
@@ -391,7 +391,7 @@ STDMETHOD(GetUserClassID)(CLSID* pClsid);
 ```  
   
 ### Remarks  
- See [IOleObject::GetUserClassID](http://msdn.microsoft.com/library/windows/desktop/ms682313) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::GetUserClassID](http://msdn.microsoft.com/library/windows/desktop/ms682313) in the Windows SDK.  
   
 ##  <a name="getusertype"></a>  IOleObjectImpl::GetUserType  
  Returns the control's user-type name by calling **OleRegGetUserType**.  
@@ -405,7 +405,7 @@ STDMETHOD(GetUserType)(
 ### Remarks  
  The user-type name is used for display in user-interfaces elements such as menus and dialog boxes. You can change the user-type name in your project's .rgs file.  
   
- See [IOleObject::GetUserType](http://msdn.microsoft.com/library/windows/desktop/ms688643) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::GetUserType](http://msdn.microsoft.com/library/windows/desktop/ms688643) in the Windows SDK.  
   
 ##  <a name="initfromdata"></a>  IOleObjectImpl::InitFromData  
  Initializes the control from selected data.  
@@ -421,7 +421,7 @@ STDMETHOD(InitFromData)(
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IOleObject::InitFromData](http://msdn.microsoft.com/library/windows/desktop/ms688510) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::InitFromData](http://msdn.microsoft.com/library/windows/desktop/ms688510) in the Windows SDK.  
   
 ##  <a name="isuptodate"></a>  IOleObjectImpl::IsUpToDate  
  Checks if the control is up to date.  
@@ -434,7 +434,7 @@ STDMETHOD(IsUpToDate)(void);
  Returns `S_OK`.  
   
 ### Remarks  
- See [IOleObject::IsUpToDate](http://msdn.microsoft.com/library/windows/desktop/ms686624) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::IsUpToDate](http://msdn.microsoft.com/library/windows/desktop/ms686624) in the Windows SDK.  
   
 ##  <a name="onpostverbdiscardundo"></a>  IOleObjectImpl::OnPostVerbDiscardUndo  
  Called by [DoVerbDiscardUndo](#doverbdiscardundo) after the undo state is discarded.  
@@ -602,7 +602,7 @@ STDMETHOD(SetClientSite)(IOleClientSite* pClientSite);
 ### Remarks  
  The method then returns `S_OK`.  
   
- See [IOleObject::SetClientSite](http://msdn.microsoft.com/library/windows/desktop/ms684013) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::SetClientSite](http://msdn.microsoft.com/library/windows/desktop/ms684013) in the Windows SDK.  
   
 ##  <a name="setcolorscheme"></a>  IOleObjectImpl::SetColorScheme  
  Recommends a color scheme to the control's application, if any.  
@@ -615,7 +615,7 @@ STDMETHOD(SetColorScheme)(LOGPALETTE* /* pLogPal */);
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) in the Windows SDK.  
   
 ##  <a name="setextent"></a>  IOleObjectImpl::SetExtent  
  Sets the extent of the control's display area.  
@@ -633,7 +633,7 @@ STDMETHOD(SetExtent)(
   
  If the control class data member [CComControlBase::m_bRecomposeOnResize](../../atl/reference/ccomcontrolbase-class.md#m_brecomposeonresize) is **TRUE**, `SetExtent` calls `SendOnDataChange` and `SendOnViewChange` to notify all advisory sinks registered with the advise holder that the control size has changed.  
   
- See [IOleObject::SetExtent](http://msdn.microsoft.com/library/windows/desktop/ms694330) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::SetExtent](http://msdn.microsoft.com/library/windows/desktop/ms694330) in the Windows SDK.  
   
 ##  <a name="sethostnames"></a>  IOleObjectImpl::SetHostNames  
  Tells the control the names of the container application and container document.  
@@ -646,7 +646,7 @@ STDMETHOD(SetHostNames)(LPCOLESTR /* szContainerApp */, LPCOLESTR /* szContainer
  Returns `S_OK`.  
   
 ### Remarks  
- See [IOleObject::SetHostNames](http://msdn.microsoft.com/library/windows/desktop/ms680642) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::SetHostNames](http://msdn.microsoft.com/library/windows/desktop/ms680642) in the Windows SDK.  
   
 ##  <a name="setmoniker"></a>  IOleObjectImpl::SetMoniker  
  Tells the control what its moniker is.  
@@ -661,7 +661,7 @@ STDMETHOD(SetMoniker)(
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IOleObject::SetMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679671) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::SetMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679671) in the Windows SDK.  
   
 ##  <a name="unadvise"></a>  IOleObjectImpl::Unadvise  
  Deletes the advisory connection stored in the control class's `m_spOleAdviseHolder` data member.  
@@ -671,7 +671,7 @@ STDMETHOD(Unadvise)(DWORD dwConnection);
 ```  
   
 ### Remarks  
- See [IOleObject::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms693749) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms693749) in the Windows SDK.  
   
 ##  <a name="update"></a>  IOleObjectImpl::Update  
  Updates the control.  
@@ -684,7 +684,7 @@ STDMETHOD(Update)(void);
  Returns `S_OK`.  
   
 ### Remarks  
- See [IOleObject::Update](http://msdn.microsoft.com/library/windows/desktop/ms679699) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IOleObject::Update](http://msdn.microsoft.com/library/windows/desktop/ms679699) in the Windows SDK.  
   
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   

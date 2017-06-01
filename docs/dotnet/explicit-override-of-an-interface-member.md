@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Explicit Override of an Interface Member
-The syntax for declaring an explicit override of an interface member within a class has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The syntax for declaring an explicit override of an interface member within a class has changed from Managed Extensions for C++ to Visual C++.  
   
  You often want to provide two instances of an interface member within a class that implements the interface - one that is used when class objects are manipulated through an interface handle, and one that is used when class objects are used through the class interface. For example:  
   

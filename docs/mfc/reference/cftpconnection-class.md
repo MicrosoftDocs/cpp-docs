@@ -177,7 +177,7 @@ CInternetFile* Command(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133) function, as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function emulates the functionality of the [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133) function, as described in the Windows SDK.  
   
  If an error occurs, MFC throws an exception of type [CInternetException](../../mfc/reference/cinternetexception-class.md).  
   
@@ -311,7 +311,7 @@ BOOL GetFile(
 -   FILE_ATTRIBUTE_TEMPORARY   The file is being used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.  
   
  `dwFlags`  
- Specifies the conditions under which the transfer occurs. This parameter can be any of the `dwFlags` values described in [FtpGetFile](http://msdn.microsoft.com/library/windows/desktop/aa384157) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ Specifies the conditions under which the transfer occurs. This parameter can be any of the `dwFlags` values described in [FtpGetFile](http://msdn.microsoft.com/library/windows/desktop/aa384157) in the Windows SDK.  
   
  `dwContext`  
  The context identifier for the file retrieval. See **Remarks** for more information about `dwContext`.  

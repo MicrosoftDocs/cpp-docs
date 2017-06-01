@@ -40,7 +40,7 @@ translation.priority.ht:
 This class combines containers' control initialization into a single call.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -86,7 +86,7 @@ STDMETHOD(GetContentExtent)(LPSIZEL pSize);
 ### Remarks  
  The size is for a full rendering of the control and is specified in HIMETRIC units.  
   
- See [IQuickActivate::GetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms693792) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IQuickActivate::GetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms693792) in the Windows SDK.  
   
 ##  <a name="quickactivate"></a>  IQuickActivateImpl::QuickActivate  
  Performs quick initialization of controls being loaded.  
@@ -100,7 +100,7 @@ STDMETHOD(QuickActivate)(
 ### Remarks  
  The structure contains pointers to interfaces needed by the control and the values of some ambient properties. Upon return, the control passes a pointer to a [QACONTROL](http://msdn.microsoft.com/library/windows/desktop/ms693721) structure that contains pointers to its own interfaces that the container requires, and additional status information.  
   
- See [IQuickActivate::QuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms682421) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IQuickActivate::QuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms682421) in the Windows SDK.  
   
 ##  <a name="setcontentextent"></a>  IQuickActivateImpl::SetContentExtent  
  Informs the control of how much display space the container has assigned to it.  
@@ -112,7 +112,7 @@ STDMETHOD(SetContentExtent)(LPSIZEL pSize);
 ### Remarks  
  The size is specified in HIMETRIC units.  
   
- See [IQuickActivate::SetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms678806) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IQuickActivate::SetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms678806) in the Windows SDK.  
   
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   

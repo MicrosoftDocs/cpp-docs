@@ -36,7 +36,7 @@ translation.priority.ht:
 These functions provide support for creating dialog boxes, and for creating, hosting and licensing ActiveX controls.  
   
 > [!IMPORTANT]
->  The functions listed in the following table cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.  
   
 |||  
 |-|-|  
@@ -96,9 +96,9 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100  
 ```  
   
- For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](http://msdn.microsoft.com/library/windows/desktop/aa380902) under [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]*: SDK Tools*.  
+ For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](http://msdn.microsoft.com/library/windows/desktop/aa380902) under Windows SDK*: SDK Tools*.  
   
- For more information on dialog boxes in general, refer to [DialogBox](http://msdn.microsoft.com/library/windows/desktop/ms645452) and [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on dialog boxes in general, refer to [DialogBox](http://msdn.microsoft.com/library/windows/desktop/ms645452) and [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) in the Windows SDK.  
   
 ##  <a name="atlaxcreatedialog"></a>  AtlAxCreateDialog  
  Creates a modeless dialog box from a dialog template provided by the user.  
@@ -134,7 +134,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 ### Remarks  
  The resulting dialog box can contain ActiveX controls.  
   
- See [CreateDialog](http://msdn.microsoft.com/library/windows/desktop/ms645434) and [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [CreateDialog](http://msdn.microsoft.com/library/windows/desktop/ms645434) and [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) in the Windows SDK.  
   
 ##  <a name="atlaxcreatecontrol"></a>  AtlAxCreateControl  
  Creates an ActiveX control, initializes it, and hosts it in the specified window.  
@@ -439,7 +439,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
  Nonzero if the initialization of the control hosting code was successful; otherwise **FALSE**.  
   
 ### Remarks  
- This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) or [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) or [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680), as described in the Windows SDK.  
 
 ##  <a name="atlaxwinterm"></a>  AtlAxWinTerm  
  This function uninitializes ATL's control hosting code by unregistering the **"AtlAxWin80"** and **"AtlAxWinLic80"** window classes.  
@@ -452,7 +452,7 @@ inline BOOL AtlAxWinTerm();
  Always returns **TRUE**.  
   
 ### Remarks  
- This function simply calls [UnregisterClass](http://msdn.microsoft.com/library/windows/desktop/ms644899) as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This function simply calls [UnregisterClass](http://msdn.microsoft.com/library/windows/desktop/ms644899) as described in the Windows SDK.  
   
  Call this function to clean up after all existing host windows have been destroyed if you called [AtlAxWinInit](#atlaxwininit) and you no longer need to create host windows. If you don't call this function, the window class will be unregistered automatically when the process terminates.  
   

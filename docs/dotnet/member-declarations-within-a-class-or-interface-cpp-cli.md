@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Member Declarations within a Class or Interface (C++/CLI)
-The declaration of properties and operators has been extensively reworked from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)], hiding the underlying implementation details that were exposed in the Managed Extensions design. Event declarations have been modified as well.  
+The declaration of properties and operators has been extensively reworked from Managed Extensions for C++ to Visual C++, hiding the underlying implementation details that were exposed in the Managed Extensions design. Event declarations have been modified as well.  
   
  Under the category of changes that have no Managed Extensions support, static constructors can now be defined out-of-line (they were required to be defined inline within Managed Extensions), and the notion of a delegating constructor has been introduced.  
   

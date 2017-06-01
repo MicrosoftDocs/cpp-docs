@@ -213,7 +213,7 @@ int GetThreadPriority();
   
 - **THREAD_PRIORITY_IDLE**  
   
- For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
   
 ##  <a name="initinstance"></a>  CWinThread::InitInstance  
  `InitInstance` must be overridden to initialize each new instance of a user-interface thread.  
@@ -520,7 +520,7 @@ BOOL SetThreadPriority(int nPriority);
   
 - **THREAD_PRIORITY_IDLE**  
   
- For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if function was successful; otherwise 0.  

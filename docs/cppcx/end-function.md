@@ -52,7 +52,7 @@ template <typename T>
  A collection of Vector\<T> or VectorView\<T> objects that are accessed by an IVector\<T>, or IVectorView\<T> interface.  
   
  `i`  
- A collection of arbitraty [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] objects that are accessed by an IIterable\<T> interface.  
+ A collection of arbitraty Windows Runtime objects that are accessed by an IIterable\<T> interface.  
   
 ### Return Value  
  An iterator that points beyond the end of the collection.  

@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # RuntimeClass Class
-Represents an instantiated class that inherits the specified number of interfaces, and provides the specified [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)], classic COM, and weak reference support.  
+Represents an instantiated class that inherits the specified number of interfaces, and provides the specified Windows Runtime, classic COM, and weak reference support.  
   
  You typically derive your WRL types from `RuntimeClass` because this class implements `AddRef`, `Release`, and `QueryInterface`, and helps manage the overall reference count of the module.  
   

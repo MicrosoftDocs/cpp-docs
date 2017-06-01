@@ -39,7 +39,7 @@ translation.priority.ht:
 This class implements **IUnknown** and the [IPointerInactive](http://msdn.microsoft.com/library/windows/desktop/ms693712) interface methods.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -90,7 +90,7 @@ HRESULT GetActivationPolicy(DWORD* pdwPolicy);
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IPointerInactive::GetActivationPolicy](http://msdn.microsoft.com/library/windows/desktop/ms692470) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPointerInactive::GetActivationPolicy](http://msdn.microsoft.com/library/windows/desktop/ms692470) in the Windows SDK.  
   
 ##  <a name="oninactivemousemove"></a>  IPointerInactiveImpl::OnInactiveMouseMove  
  Notifies the object that the mouse pointer has moved over it, indicating the object can fire mouse events.  
@@ -107,7 +107,7 @@ HRESULT OnInactiveMouseMove(
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IPointerInactive::OnInactiveMouseMove](http://msdn.microsoft.com/library/windows/desktop/ms693374) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPointerInactive::OnInactiveMouseMove](http://msdn.microsoft.com/library/windows/desktop/ms693374) in the Windows SDK.  
   
 ##  <a name="oninactivesetcursor"></a>  IPointerInactiveImpl::OnInactiveSetCursor  
  Sets the mouse pointer for the inactive object.  
@@ -125,7 +125,7 @@ HRESULT OnInactiveSetCursor(
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- See [IPointerInactive::OnInactiveSetCursor](http://msdn.microsoft.com/library/windows/desktop/ms694336) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IPointerInactive::OnInactiveSetCursor](http://msdn.microsoft.com/library/windows/desktop/ms694336) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

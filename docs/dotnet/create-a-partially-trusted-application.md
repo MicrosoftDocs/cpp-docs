@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL
-This topic discusses how to create a partially trusted Common Language Runtime application using [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] by removing dependency on msvcm90.dll.  
+This topic discusses how to create a partially trusted Common Language Runtime application using Visual C++ by removing dependency on msvcm90.dll.  
   
  A Visual C++ application built with **/clr** will have a dependency on msvcm90.dll, which is part of the C-Runtime Library. When you want your application to be used in a partial trust environment, the CLR will enforce certain code access security rules on your DLL. Therefore, it will be necessary to remove this dependency because msvcm90.dll contains native code and code access security policy cannot be enforced on it.  
   

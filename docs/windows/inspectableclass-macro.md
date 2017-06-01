@@ -51,7 +51,7 @@ InspectableClass(
  One of the [TrustLevel](http://msdn.microsoft.com/library/br224625.aspx) enumerated values.  
   
 ## Remarks  
- The `InspectableClass` macro can be used only with [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] types.  
+ The `InspectableClass` macro can be used only with Windows Runtime types.  
   
 ## Requirements  
  **Header:** implements.h  

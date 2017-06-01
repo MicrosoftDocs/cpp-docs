@@ -37,9 +37,9 @@ public ref class ValueType : Object
  The ValueType class is used to construct value types. ValueType is derived from Object, which has basic members. However, the compiler detaches those basic members from value types that are derived from the ValueType class. The compiler reattaches those basic members when a value type is boxed.  
   
 ### Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   

@@ -508,7 +508,7 @@ virtual DROPEFFECT OnDropEx(
   
 - `DROPEFFECT_SCROLL` Indicates that a drag scroll operation is about to occur or is occurring in the target.  
   
- For more information on setting the default menu command, see [SetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647996) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] and [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) in this volume.  
+ For more information on setting the default menu command, see [SetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647996) in the Windows SDK and [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) in this volume.  
   
 ##  <a name="onendprinting"></a>  CView::OnEndPrinting  
  Called by the framework after a document has been printed or previewed.  

@@ -16,7 +16,7 @@ manager: "ghogen"
 # Obtaining pointers to data buffers (C++/CX)
 In the Windows Runtime the [Windows::Storage::Streams::IBuffer](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) interface provides a language-neutral, stream-based means to access data buffers. In C++ you can get a raw pointer to the underlying byte array by using the Windows Runtime Library IBufferByteAccess interface that is defined in robuffer.h. By using this approach you can modify the byte array in-place without making any unnecessary copies of the data.  
   
- The following diagram shows a XAML image element, whose source is a [Windows::UI::Xaml::Media::Imaging WriteableBitmap](http://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx). A client app that's written in any language can pass a reference to the `WriteableBitmap` to C++ code and then C++ can use the reference to get at the underlying buffer. In a Universal Windows Platform app that's written in C++, you can use the function in the following example directly in the source code without packaging it in a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component.  
+ The following diagram shows a XAML image element, whose source is a [Windows::UI::Xaml::Media::Imaging WriteableBitmap](http://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx). A client app that's written in any language can pass a reference to the `WriteableBitmap` to C++ code and then C++ can use the reference to get at the underlying buffer. In a Universal Windows Platform app that's written in C++, you can use the function in the following example directly in the source code without packaging it in a Windows Runtime component.  
   
  ![C&#43;&#43; code accessing pixel data directly](../cppcx/media/ibufferbyteaccessdiagram.png "IBufferByteAccessDiagram")  
   
@@ -53,7 +53,7 @@ byte* Class1::GetPointerToPixelData(IBuffer^ pixelBuffer, unsigned int *length)
 ```  
   
 ## Complete Example  
- The following steps show how to create a C# Universal Windows Platform app that passes a `WriteableBitmap` to a C++ [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component DLL. The C++ code obtains a pointer to the pixel buffer and performs a simple in-place modification on the image. As an alternative, you can create the client app in Visual Basic, JavaScript, or C++ instead of C#. If you use C++, you don't need the component DLL; you can just add these methods directly to the MainPage class or some other class that you define.  
+ The following steps show how to create a C# Universal Windows Platform app that passes a `WriteableBitmap` to a C++ Windows Runtime component DLL. The C++ code obtains a pointer to the pixel buffer and performs a simple in-place modification on the image. As an alternative, you can create the client app in Visual Basic, JavaScript, or C++ instead of C#. If you use C++, you don't need the component DLL; you can just add these methods directly to the MainPage class or some other class that you define.  
   
 #### Create the client  
   
@@ -131,7 +131,7 @@ byte* Class1::GetPointerToPixelData(IBuffer^ pixelBuffer, unsigned int *length)
   
 #### Create the C++ component  
   
-1.  Add a new C++ [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component to the existing solution, and name it `ImageManipCPP`. Add a reference to it in the C# project by right-clicking on that project in **Solution Explorer** and choosing **Add**, **Reference**.  
+1.  Add a new C++ Windows Runtime component to the existing solution, and name it `ImageManipCPP`. Add a reference to it in the C# project by right-clicking on that project in **Solution Explorer** and choosing **Add**, **Reference**.  
   
 2.  In Class1.h  
   

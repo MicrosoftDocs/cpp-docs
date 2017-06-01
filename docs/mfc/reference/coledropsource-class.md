@@ -68,7 +68,7 @@ class COleDropSource : public CCmdTarget
   
  For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
- For more information, see [IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -114,7 +114,7 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
 ### Remarks  
  Override this function to provide feedback to the user about what would happen if a drop occurred at this point. The default implementation uses the OLE default cursors. For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
- For more information, see [IDropSource::GiveFeedback](http://msdn.microsoft.com/library/windows/desktop/ms693723), [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129), and [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [IDropSource::GiveFeedback](http://msdn.microsoft.com/library/windows/desktop/ms693723), [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129), and [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) in the Windows SDK.  
   
 ##  <a name="onbegindrag"></a>  COleDropSource::OnBeginDrag  
  Called by the framework when an event occurs that could begin a drag operation, such as pressing the left mouse button.  

@@ -83,9 +83,9 @@ public ref class String sealed : Object,
 |[String::operator< Operator](#operator-less-than)|Indicates whether the value of one String object is less than the value of a second String object.|  
   
 ### Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   

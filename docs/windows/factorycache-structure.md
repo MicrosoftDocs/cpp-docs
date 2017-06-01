@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # FactoryCache Structure
-Supports the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] infrastructure and is not intended to be used directly from your code.  
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
@@ -53,8 +53,8 @@ struct FactoryCache;
   
 |Name|Description|  
 |----------|-----------------|  
-|[FactoryCache::cookie Data Member](../windows/factorycache-cookie-data-member.md)|Contains a value that identifies a registered [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] or COM class object, and is later used to unregister the object.|  
-|[FactoryCache::factory Data Member](../windows/factorycache-factory-data-member.md)|Points to a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] or COM class factory.|  
+|[FactoryCache::cookie Data Member](../windows/factorycache-cookie-data-member.md)|Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.|  
+|[FactoryCache::factory Data Member](../windows/factorycache-factory-data-member.md)|Points to a Windows Runtime or COM class factory.|  
   
 ## Inheritance Hierarchy  
  `FactoryCache`  

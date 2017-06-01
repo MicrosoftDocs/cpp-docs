@@ -40,9 +40,9 @@ translation.priority.mt:
 The `partial` keyword enables different parts of the same ref class to be authored independently and in different files.  
   
 ## All Runtimes  
- (This language feature applies only to the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].)  
+ (This language feature applies only to the Windows Runtime.)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  For a ref class that has two partial definitions, the `partial` keyword is applied to the first occurrence of the definition, and this is typically done by auto-generated code, so that a human coder doesn’t use the keyword very often. For all subsequent partial definitions of the class, omit the `partial` modifier from the *class-key* keyword and class identifier. When the compiler encounters a previously defined ref class and class identifier but no `partial` keyword, it internally combines all of the parts of the ref class definition into one definition.  
   
 ### Syntax  
@@ -61,7 +61,7 @@ class-key identifier {
   
 ### Parameters  
  *class-key*  
- A keyword that declares a class or struct that is supported by the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]. Either `ref class`, `value class`, `ref struct`, or `value struct`.  
+ A keyword that declares a class or struct that is supported by the Windows Runtime. Either `ref class`, `value class`, `ref struct`, or `value struct`.  
   
  *identifier*  
  The name of the defined type.  

@@ -43,7 +43,7 @@ A *storage class* in the context of C++ variable declarations is a type specifie
   
 1.  The [mutable](../cpp/mutable-data-members-cpp.md) keyword may be considered a storage class specifier. However, it is only available in the member list of a class definition.  
   
-2.  Starting with [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)], the `auto` keyword is no longer a C++ storage-class specifier, and the `register` keyword is deprecated.  
+2.  Starting with Visual C++ 2010, the `auto` keyword is no longer a C++ storage-class specifier, and the `register` keyword is deprecated.  
 
 ## In this section:
   

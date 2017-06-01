@@ -14,7 +14,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Compiler and Linker options (C++/CX)
-An environment variable, C++/CX compiler options, and linker options support the building of apps for the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].  
+An environment variable, C++/CX compiler options, and linker options support the building of apps for the Windows Runtime.  
   
 ## Library path  
  The %LIBPATH% environment variable specifies the default path to search for .winmd files.  
@@ -23,10 +23,10 @@ An environment variable, C++/CX compiler options, and linker options support the
   
 |Option|Description|  
 |------------|-----------------|  
-|[/ZW](../build/reference/zw-windows-runtime-compilation.md)<br /><br /> /ZW:nostdlib|Enables [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] language extensions.<br /><br /> The `nostdlib` parameter prevents the compiler from using the standard, predefined search path to find assembly and .winmd files.<br /><br /> The **/ZW** compiler option implicitly specifies the following compiler options:<br /><br /> -   **/FI** vccorlib.h, which forces inclusion of the vccorlib.h header file that defines many types that are required by the compiler.<br />-   [/FU](../build/reference/fu-name-forced-hash-using-file.md) Windows.winmd, which forces inclusion of the Windows.winmd metadata file that's provided by the operating system and defines many types in the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].<br />-   **/FU** Platform.winmd, which forces inclusion of the Platform.winmd metadata file that's provided by the compiler and defines most types in the Platform family of namespaces.|  
+|[/ZW](../build/reference/zw-windows-runtime-compilation.md)<br /><br /> /ZW:nostdlib|Enables Windows Runtime language extensions.<br /><br /> The `nostdlib` parameter prevents the compiler from using the standard, predefined search path to find assembly and .winmd files.<br /><br /> The **/ZW** compiler option implicitly specifies the following compiler options:<br /><br /> -   **/FI** vccorlib.h, which forces inclusion of the vccorlib.h header file that defines many types that are required by the compiler.<br />-   [/FU](../build/reference/fu-name-forced-hash-using-file.md) Windows.winmd, which forces inclusion of the Windows.winmd metadata file that's provided by the operating system and defines many types in the Windows Runtime.<br />-   **/FU** Platform.winmd, which forces inclusion of the Platform.winmd metadata file that's provided by the compiler and defines most types in the Platform family of namespaces.|  
 |[/AI](../build/reference/ai-specify-metadata-directories.md) *dir*|Adds a directory, which is specified by the *dir* parameter, to the search path that the compiler uses to find assembly and .winmd files.|  
 |**/FU**  *file*|Forces the inclusion of the specified module, or .winmd file. That is, you don't have to specify `#using`*file* in your source code. The compiler automatically forces the inclusion of its own Windows metadata file, Platform.winmd.|  
-|/D "WINAPI_FAMILY=2"|Creates a definition that enables the use of a subset of the Win32 SDK that's compatible with the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)].|  
+|/D "WINAPI_FAMILY=2"|Creates a definition that enables the use of a subset of the Win32 SDK that's compatible with the Windows Runtime.|  
   
 ## Linker options  
   

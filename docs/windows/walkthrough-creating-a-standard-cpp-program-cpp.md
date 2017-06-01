@@ -41,7 +41,7 @@ You can use Visual C++ in the Visual Studio integrated development environment (
   
  You can type your own C++ program or use one of the sample programs. The sample program in this walkthrough is a console application. This application uses the `set` container in the C++ Standard Library.  
   
- [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] complies with the 2003 C++ Standard, with these major exceptions: two-stage name lookup, exception specifications, and export. Additionally, [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] supports several C++0x features, for example, lambdas, auto, static_assert, rvalue references, and extern templates.  
+ Visual C++ complies with the 2003 C++ Standard, with these major exceptions: two-stage name lookup, exception specifications, and export. Additionally, Visual C++ supports several C++0x features, for example, lambdas, auto, static_assert, rvalue references, and extern templates.  
   
 > [!NOTE]
 >  If compliance with the standard is required, use the **/Za** compiler option to disable Microsoft extensions to the standard. For more information, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md).  

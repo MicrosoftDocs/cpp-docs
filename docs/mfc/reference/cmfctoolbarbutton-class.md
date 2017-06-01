@@ -302,7 +302,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
  Set this parameter to `TRUE` to enable input, or to `FALSE` to disable input.  
   
 ### Remarks  
- This method calls the `EnableWindow` function to enable or disable input. For more information, see [EnableWindow](http://msdn.microsoft.com/library/windows/desktop/ms646291) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This method calls the `EnableWindow` function to enable or disable input. For more information, see [EnableWindow](http://msdn.microsoft.com/library/windows/desktop/ms646291) in the Windows SDK.  
   
 ##  <a name="exporttomenubutton"></a>  CMFCToolBarButton::ExportToMenuButton  
  Copies text from the toolbar button to a menu.  

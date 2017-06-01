@@ -31,14 +31,16 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Creating a Windows Store app using WRL and Media Foundation
-Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to create a Universal Windows Platform app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
+Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
   
  This example creates a custom Media Foundation transform that applies a grayscale effect to images that are captured from a webcam. The app uses C++ to define the custom transform and C# to use the component to transform the captured images.  
   
 > [!NOTE]
 >  Instead of C#, you can also use JavaScript, Visual Basic, or C++ to consume the custom transform component.  
   
- In most cases, you can use C++/CX to create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] components. (For more information, see [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md).) However, sometimes you have to use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces. Because C++/CX can only create [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects, to create a media extension you must use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] because it enables the implementation of both COM and [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] interfaces.  
+
+ In most cases, you can use C++/CX to create Windows Runtime). However, sometimes you have to use the WRL. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and Windows Runtime interfaces. Because C++/CX can only create Windows Runtime objects, to create a media extension you must use the WRL because it enables the implementation of both COM and Windows Runtime interfaces.  
+
   
 > [!NOTE]
 >  Although this code example is long, it demonstrates the minimum that's required to create a useful Media Foundation transform. You can use it as a starting point for your own custom transform. This example is adapted from the [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096), which uses media extensions to apply effects to video, decode video, and create scheme handlers that produce media streams.  
@@ -55,9 +57,9 @@ Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INC
   
 -   To create a custom Media Foundation component, use a Microsoft Interface Definition Language (MIDL) definition file to define an interface, implement that interface, and then make it activatable from other components.  
   
--   The `namespace` and `runtimeclass` attributes, and the `NTDDI_WIN8`[version](http://msdn.microsoft.com/en-us/66ac5cf3-2230-44fd-aaf6-8013e4a4ae81) attribute value are important parts of the MIDL definition for a Media Foundation component that uses [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)].  
+-   The `namespace` and `runtimeclass` attributes, and the `NTDDI_WIN8`[version](http://msdn.microsoft.com/en-us/66ac5cf3-2230-44fd-aaf6-8013e4a4ae81) attribute value are important parts of the MIDL definition for a Media Foundation component that uses WRL.  
   
--   [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md) is the base class for the custom Media Foundation component. The [Microsoft::WRL::RuntimeClassType::WinRtClassicComMix](../windows/runtimeclasstype-enumeration.md) enum value, which is provided as a template argument, marks the class for use both as a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class and as a classic COM runtime class.  
+-   [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md) is the base class for the custom Media Foundation component. The [Microsoft::WRL::RuntimeClassType::WinRtClassicComMix](../windows/runtimeclasstype-enumeration.md) enum value, which is provided as a template argument, marks the class for use both as a Windows Runtime class and as a classic COM runtime class.  
   
 -   The [InspectableClass](../windows/inspectableclass-macro.md) macro implements basic COM functionality such as reference counting and the `QueryInterface` method, and sets the runtime class name and trust level.  
   
@@ -65,9 +67,9 @@ Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INC
   
 -   Link your component DLL to runtimeobject.lib. Also specify [/WINMD](../cppcx/compiler-and-linker-options-c-cx.md) on the linker line to generate Windows metadata.  
   
--   Use project references to make [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] components accessible to Universal Windows Platform apps.  
+-   Use project references to make WRL components accessible to Universal Windows Platform apps.  
   
-### To use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] to create the Media Foundation grayscale transform component  
+### To use the WRL to create the Media Foundation grayscale transform component  
   
 1.  In Visual Studio, create a **Blank Solution** project. Name the project, for example, `MediaCapture`.  
   
@@ -114,7 +116,7 @@ Learn how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INC
   
     3.  Under **Windows Metadata**, set **Generate Windows Metadata** to **Yes (/WINMD)**.  
   
-### To use the [!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)] the custom Media Foundation component from a C# app  
+### To use the WRL the custom Media Foundation component from a C# app  
   
 1.  Add a new **C# Blank App (XAML)** project to the `MediaCapture` solution. Name the project, for example, `MediaCapture`.  
   

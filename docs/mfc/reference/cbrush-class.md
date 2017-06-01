@@ -199,7 +199,7 @@ BOOL CreateDIBPatternBrush(
   
  When an application selects a two-color DIB pattern brush into a monochrome device context, Windows ignores the colors specified in the DIB and instead displays the pattern brush using the current text and background colors of the device context. Pixels mapped to the first color (at offset 0 in the DIB color table) of the DIB are displayed using the text color. Pixels mapped to the second color (at offset 1 in the color table) are displayed using the background color.  
   
- For information about using the following Windows functions, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)]:  
+ For information about using the following Windows functions, see the Windows SDK:  
   
 - [CreateDIBPatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183492) (This function is provided only for compatibility with applications written for versions of Windows earlier than 3.0; use the **CreateDIBPatternBrushPt** function.)  
   
@@ -236,7 +236,7 @@ BOOL CreateHatchBrush(
 - `HS_VERTICAL` Vertical hatch  
   
  `crColor`  
- Specifies the foreground color of the brush as an RGB color (the color of the hatches). See [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information.  
+ Specifies the foreground color of the brush as an RGB color (the color of the hatches). See [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) in the Windows SDK for more information.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -270,7 +270,7 @@ BOOL CreatePatternBrush(CBitmap* pBitmap);
   
  A brush created using a monochrome bitmap (1 color plane, 1 bit per pixel) is drawn using the current text and background colors. Pixels represented by a bit set to 0 are drawn with the current text color. Pixels represented by a bit set to 1 are drawn with the current background color.  
   
- For information about using [CreatePatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183508), a Windows function, see the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For information about using [CreatePatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183508), a Windows function, see the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#25](../../mfc/codesnippet/cpp/cbrush-class_5.cpp)]  
@@ -306,7 +306,7 @@ BOOL CreateSysColorBrush(int nIndex);
   
 ### Parameters  
  `nIndex`  
- Specifies a color index. This value corresponds to the color used to paint one of the 21 window elements. See [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of values.  
+ Specifies a color index. This value corresponds to the color used to paint one of the 21 window elements. See [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) in the Windows SDK for a list of values.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -336,7 +336,7 @@ static CBrush* PASCAL FromHandle(HBRUSH hBrush);
 ### Remarks  
  If a `CBrush` object is not already attached to the handle, a temporary `CBrush` object is created and attached. This temporary `CBrush` object is valid only until the next time the application has idle time in its event loop. At this time, all temporary graphic objects are deleted. In other words, the temporary object is valid only during the processing of one window message.  
   
- For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
 ### Example  
   See the example for [CBrush::CBrush](#cbrush).  
@@ -380,7 +380,7 @@ operator HBRUSH() const;
 ### Remarks  
  This operator is a casting operator, which supports direct use of an `HBRUSH` object.  
   
- For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/cpp/cbrush-class_8.cpp)]  
