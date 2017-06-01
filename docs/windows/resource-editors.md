@@ -54,7 +54,6 @@ A Resource editor is a specialized environment for creating or modifying resourc
 |[Accelerator Editor](../windows/accelerator-editor.md)|Accelerator tables in Visual C++ projects.|  
 |[Binary Editor](binary-editor.md)|Binary data information and custom resources in Visual C++, Visual Basic, or Visual C# projects.|  
 |[Dialog Editor](../windows/dialog-editor.md)|Dialog boxes in Visual C++ projects.|  
-|[HTML Designer](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)|HTML pages in both Design view and HTML view. Caveat: You cannot make changes to HTML pages that are in EXEs or DLLs because the changes are not imported back into the EXE or DLL.|  
 |[Image Editor](../windows/image-editor-for-icons.md)|Bitmaps, icons, cursors, and other image files in Visual C++, Visual Basic, or Visual C# projects.|  
 |[Menu Editor](../windows/menu-editor.md)|Menu resources in Visual C++ projects.|  
 |[Ribbon Editor](../mfc/ribbon-designer-mfc.md)|Ribbon resources in MFC projects.|  

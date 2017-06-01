@@ -82,8 +82,6 @@ Pointers are declared using the following sequence.
 * identifier [ [ constant-expression ] ]  
 ```  
   
--   However, pointer declarators can be more complex. For more information,see [Declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838).  
-  
 -   Multiple declarators and their initializers may appear together in a single declaration in a comma separated list following the declaration specifier.  
   
  A simple example of a pointer declaration is:  

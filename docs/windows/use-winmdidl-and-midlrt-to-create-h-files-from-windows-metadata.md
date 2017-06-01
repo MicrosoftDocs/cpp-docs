@@ -37,7 +37,7 @@ Winmdidl.exe and midlrt.exe enable COM-level interaction between native C++ code
   
 -   Creating custom IDL and header files so that a  C++ app written by using the Windows Runtime Template Library (WRL) can consume a custom Windows Runtime component.  
   
--   Generating proxy and stub files for user-defined event types in a Windows Runtime Component. For more information, see [Raising Events in Windows Runtime Components](http://msdn.microsoft.com/Library/52e42521-a80d-455d-b5ff-82f03980936e).  
+-   Generating proxy and stub files for user-defined event types in a Windows Runtime Component. For more information, see [Custom events and event accessors in Windows Runtime Components](/uwp/winrt-components/custom-events-and-event-accessors-in-windows-runtime-components).  
   
  These tools are required only for parsing custom .winmd files. The .idl and .h files for Windows operating system components are already generated for you. By default in [!INCLUDE[win81](../misc/includes/win81_md.md)], they are located in \Program Files (x86)\Windows Kits\8.1\Include\winrt\\.  
   
@@ -90,4 +90,4 @@ Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:fil
 ## Remarks  
  The output file from a winmdidl operation has the same name as the input file but has the .idl file name extension.  
   
- If you are developing a Windows Runtime component that will be accessed from the WRL, you can specify winmdidl.exe and midlrt.exe to run as post-build steps so that the .idl and .h files are generated on each build. For an example, see [Raising Events in Windows Runtime Components](http://msdn.microsoft.com/Library/52e42521-a80d-455d-b5ff-82f03980936e).
+ If you are developing a Windows Runtime component that will be accessed from the WRL, you can specify winmdidl.exe and midlrt.exe to run as post-build steps so that the .idl and .h files are generated on each build. For an example, see [Raising Events in Windows Runtime Components](/uwp/winrt-components/raising-events-in-windows-runtime-components).

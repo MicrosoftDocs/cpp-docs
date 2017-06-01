@@ -201,8 +201,6 @@ int main()
   
 -   The class has a default constructor (a constructor that can be called with no arguments).  
   
- Access control and ambiguity control are performed on `operator new` and on the constructors according to the rules set forth in [Ambiguity](http://msdn.microsoft.com/en-us/0b399cab-40a7-4e79-9278-05f40139a0e1) and [Initialization Using Special Member Functions](http://msdn.microsoft.com/en-us/82223d73-64cb-4923-b678-78f9568ff3ca).  
-  
  No explicit per-element initialization can be done when allocating arrays using the **new** operator; only the default constructor, if present, is called. See [Default Arguments](../cpp/default-arguments.md) for more information.  
   
  If the memory allocation fails (`operator new` returns a value of 0), no initialization is performed. This protects against attempts to initialize data that does not exist.  
