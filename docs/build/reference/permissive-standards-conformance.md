@@ -53,6 +53,8 @@ By default, the **/permissive-** option is not set. When the option is set, the 
 
 The **/permissive-** option sets the [/Zc:strictStrings](../../build/reference/zc-conformance.md) and [/Zc:rvalueCast](../../build/reference/zc-conformance.md) options to conforming behavior. They default to non-conforming behavior. You can pass specific **/Zc** options after **/permissive-** on the command line to override this behavior.  
   
+In versions of the compiler beginning in Visual Studio 2017 Update 3, the **/permissive-** option sets the [/Zc:ternary]() option. The compiler also implements more of the requirements for two-phase name look-up. When the **/permissive-** option is set, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in the templates. In this release, only name dependency analysis is performed.  
+  
 Environment-specific extensions and language areas that the standard leaves up to the implementation are not affected by **/permissive-**. For example, the Microsoft-specific `__declspec`, calling convention and structured exception handling keywords, and compiler-specific pragma directives or attributes are not flagged by the compiler in **/permissive-** mode.  
   
 The **/permissive-** option uses the conformance support in the current compiler version to determine which language constructs are non-conforming. The option does not determine if your code conforms to a specific version of the C++ standard. To enable all implemented compiler support for the latest draft standard, use the [/std:latest](../../build/reference/std-specify-language-standard-version.md) option. To restrict the compiler support to more closely match the C++14 standard, use the [/std:c++14](../../build/reference/std-specify-language-standard-version.md) option, which is the default.  
@@ -233,6 +235,106 @@ class ATL_NO_VTABLE CFooImpl : public ICustom,
     END_COM_MAP()
 }; 
 ```  
+  
+#### Ambiguous conditional operator arguments  
+  
+In versions of the compiler before Visual Studio 2017 Update 3, the compiler accepted arguments to the conditional operator (or ternary operator) `?:` that are considered ambiguous by the C++17 standard. In **/permissive-** mode, the compiler now issues one or more diagnostics in cases that compiled without diagnostics in earlier versions.  
+  
+Commmon errors that may result from this change include:  
+  
+- error C2593: 'operator ?' is ambiguous  
+  
+- error C2679: binary '?': no operator found which takes a right-hand operand of type 'B' (or there is no acceptable conversion)  
+  
+- error C2678: binary '?': no operator found which takes a left-hand operand of type 'A' (or there is no acceptable conversion)  
+  
+- error C2446: ':': no conversion from 'B' to 'A'  
+  
+A typical code pattern that can cause this issue is when some class C provides both a non-explicit constructor from another type T and a non-explicit conversion operator to type T. In this case, both the conversion of the 2nd argument to the type of the 3rd and the conversion of the 3rd argument to the type of the 2nd are valid conversions, which is ambiguous according to the standard.  
+  
+```cpp
+// Example 1: class that provides conversion to and initialization from some type T 
+struct A 
+{ 
+    A(int); 
+    operator int() const; 
+}; 
+
+extern bool cond;
+ 
+A a(42); 
+// Accepted when /Zc:ternary or /permissive- is not used: 
+auto x = cond ? 7 : a; // A: permissive prefers A(7) over (int)a 
+// Accepted always: 
+auto y = cond ? 7 : int(a); 
+auto z = cond ? A(7) : a; 
+```  
+  
+There is an important exception to this common pattern when T represents one of the null-terminated string types (for example, `const char *`, `const char16_t *`, and so on) and the actual argument to `?:` is a string literal of corresponding type. C++17 has changed semantics from C++14. As a result, the code in example 2 is accepted under /std:c++14 and rejected under /std:c++17 when **/Zc:ternary** or **/permissive-** is used.  
+  
+```cpp  
+// Example 2: exception from the above 
+struct MyString 
+{
+    MyString(const char* s = "") noexcept;  // from char* 
+    operator const char* () const noexcept; //   to char* 
+}; 
+ 
+MyString s; 
+// Accepted when /Zc:ternary or /permissive- is not used: 
+auto x = cond ? "A" : s; // MyString: permissive prefers MyString("A") over (const char*)s 
+// Accepted always:
+auto y = cond ? "A" : static_cast<const char*>(s); 
+```  
+  
+Another case where you may see errors is in conditional optators with one argument of type `void`. This case may be common in ASSERT-like macros.  
+  
+```cpp  
+// Example 3: void arguments 
+void myassert(const char* text, const char* file, int line); 
+// Accepted when /Zc:ternary or /permissive- is not used: 
+#define ASSERT(ex) (void)((ex) ? 0 : myassert(#ex, __FILE__, __LINE__)) 
+// Accepted always:
+#define ASSERT(ex) (void)((ex) ? void() : myassert(#ex, __FILE__, __LINE__)) 
+```  
+  
+You may also see errors in template metaprogramming, where conditional operator result types may change under **/Zc:ternary** and **/permissive-**. One way to resolve this issue is to use `std::remove_reference` on the resulting type.  
+  
+```cpp  
+// Example 4: different result types 
+char  a = 'A'; 
+const char  b = 'B'; 
+decltype(auto) x = cond ? a : b; // char without, const char& with /Zc:ternary 
+const char (&z)[2] = argc > 3 ? "A" : "B"; // const char* without /Zc:ternary 
+```  
+  
+#### Name dependency analysis  
+  
+When the **/permissive-** option is set in Visual Studio 2017 Update 3, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in templates as required for two-phase look-up. In this release, only name dependency analysis is performed. In particular, non-dependent names that are not declared in the context of a template definition cause a diagnostic message as required by the ISO C++ standards. However, binding of non-dependent names that require argument dependent look up in the definition context is not done.  
+  
+```cpp 
+// dependency.cpp 
+// For previous behavior, compile with: cl /W4 dependency.cpp
+// For name dependency analysis, compile with: cl /W4 /permissive- dependency.cpp
+#include <stdio.h>
+
+void f(long) {
+    puts("Standard two-phase!");
+}
+
+template <typename T> void g(T t) {
+    f(t);
+}
+
+void f(int) {
+    puts("Microsoft one-phase!");
+}
+
+int main() {
+    g(42);
+}
+```  
+
   
 ### To set this compiler option in the Visual Studio development environment  
   
