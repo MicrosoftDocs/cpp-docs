@@ -310,7 +310,7 @@ const char (&z)[2] = argc > 3 ? "A" : "B"; // const char* without /Zc:ternary
   
 #### Name dependency analysis  
   
-When the **/permissive-** option is set in Visual Studio 2017 Update 3, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in templates as required for two-phase look-up. In this release, only name dependency analysis is performed. In particular, non-dependent names that are not declared in the context of a template definition cause a diagnostic message as required by the ISO C++ standards. However, binding of non-dependent names that require argument dependent look up in the definition context is not done.  
+When the **/permissive-** option is set in Visual Studio 2017 Update 3, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in templates as required for two-phase name look-up. In this release, only name dependency analysis is performed. In particular, non-dependent names that are not declared in the context of a template definition cause a diagnostic message as required by the ISO C++ standards. However, binding of non-dependent names that require argument dependent look up in the definition context is not done.  
   
 ```cpp 
 // dependency.cpp 
@@ -319,7 +319,7 @@ When the **/permissive-** option is set in Visual Studio 2017 Update 3, the comp
 #include <stdio.h>
 
 void f(long) {
-    puts("Standard two-phase!");
+    puts("Standard two-phase name dependency");
 }
 
 template <typename T> void g(T t) {
@@ -327,7 +327,7 @@ template <typename T> void g(T t) {
 }
 
 void f(int) {
-    puts("Microsoft one-phase!");
+    puts("Microsoft one-phase name dependency");
 }
 
 int main() {
