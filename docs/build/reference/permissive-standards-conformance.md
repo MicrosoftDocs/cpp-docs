@@ -326,7 +326,7 @@ struct B {
 
 template<typename T>
 struct D : T {
-void f() {
+    void f() {
         // The call to g was incorrectly allowed in VS2017:
         g();  // Now under /permissive-: C3861 
         // Possible fixes:
@@ -337,8 +337,8 @@ void f() {
 
 int main()
 {
-	D<B> d;
-	d.f();
+    D<B> d;
+    d.f();
 }
 ```  
   
