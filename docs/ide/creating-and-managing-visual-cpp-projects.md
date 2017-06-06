@@ -77,9 +77,6 @@ You can create Visual C++ projects by choosing **File &#124; New &#124; Project*
  [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)  
  Describes how to add classes, methods, variables, and other elements to your project to add functionality.  
   
- [Designing a Wizard](../ide/designing-a-wizard.md)  
- Describes concepts on how to create your own wizard that generates code and a user interface for other users.  
-  
  [How to: Organize Project Output Files for Builds](../ide/how-to-organize-project-output-files-for-builds.md)  
  Describes how to organize project output files.  
   
