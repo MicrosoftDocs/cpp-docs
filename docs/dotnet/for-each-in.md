@@ -83,7 +83,7 @@ Iterates through an array or collection. This non-standard keyword is available 
   
 -   [How to: Iterate Over a User-Defined Collection with for each](../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md)  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
   
 ### Requirements  
  Compiler option: **/ZW**  
@@ -125,7 +125,7 @@ abcd
 Testing  
 ```  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  The CLR syntax is the same as the **All Runtimes** syntax, except as follows.  

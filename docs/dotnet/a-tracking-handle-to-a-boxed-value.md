@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # A Tracking Handle to a Boxed Value
-The usage of a tracking handle to reference a value type has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The usage of a tracking handle to reference a value type has changed from Managed Extensions for C++ to Visual C++.  
   
  Boxing is a peculiarity of the CLR unified type system. Value types directly contain their state, while reference types are an implicit pair: the named entity is a handle to an unnamed object allocated on the managed heap. Any initialization or assignment of a value type to an `Object`, for example, requires that the value type be placed within the CLR heap - this is where the image of boxing it arises - first by allocating the associated memory, then by copying the value type’s state, and then returning the address of this anonymous Value/Reference hybrid. Thus, when one writes in C#  
   
@@ -47,13 +47,13 @@ object o = 1024; // C# implicit boxing
 Object *o = __box( 1024 ); // Managed Extensions explicit boxing  
 ```  
   
- Boxing is implicit in [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)]:  
+ Boxing is implicit in Visual C++:  
   
 ```  
 Object ^o = 1024; // new syntax implicit boxing  
 ```  
   
- The `__box` keyword serves a vital service within Managed Extensions, one that is absent by design from languages such as C# and [!INCLUDE[vbprvb](../dotnet/includes/vbprvb_md.md)]: it provides both a vocabulary and tracking handle for directly manipulating a boxed instance on the managed heap. For example, consider the following small program:  
+ The `__box` keyword serves a vital service within Managed Extensions, one that is absent by design from languages such as C# and Visual Basic: it provides both a vocabulary and tracking handle for directly manipulating a boxed instance on the managed heap. For example, consider the following small program:  
   
 ```  
 int main() {  

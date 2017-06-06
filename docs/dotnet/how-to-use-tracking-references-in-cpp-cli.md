@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Use Tracking References in C++/CLI
-This article shows how to use a tracking reference (%) in [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)] to pass common language runtime (CLR) types by reference.  
+This article shows how to use a tracking reference (%) in C++/CLI to pass common language runtime (CLR) types by reference.  
   
 ## To pass CLR types by reference  
  The following sample shows how to use a tracking reference to pass CLR types by reference.  

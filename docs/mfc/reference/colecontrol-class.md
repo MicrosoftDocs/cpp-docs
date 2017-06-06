@@ -2578,7 +2578,7 @@ virtual BOOL OnRenderData(
   
  Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If your data is small and fixed in size, override `OnRenderGlobalData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
- For more information, see the **FORMATETC** and **STGMEDIUM** structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the **FORMATETC** and **STGMEDIUM** structures in the Windows SDK.  
   
 ##  <a name="onrenderfiledata"></a>  COleControl::OnRenderFileData  
  Called by the framework to retrieve data in the specified format when the storage medium is a file.  
@@ -2604,7 +2604,7 @@ virtual BOOL OnRenderFileData(
   
  Override this function to provide your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override `OnRenderData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
- For more information, see the **FORMATETC** structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the **FORMATETC** structure in the Windows SDK.  
   
 ##  <a name="onrenderglobaldata"></a>  COleControl::OnRenderGlobalData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is global memory.  
@@ -2632,7 +2632,7 @@ virtual BOOL OnRenderGlobalData(
   
  Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override `OnRenderData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
- For more information, see the **FORMATETC** structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the **FORMATETC** structure in the Windows SDK.  
   
 ##  <a name="onresetstate"></a>  COleControl::OnResetState  
  Called by the framework when the control's properties should be set to their default values.  
@@ -2686,7 +2686,7 @@ virtual BOOL OnSetData(
   
  Override this function to replace the control's data with the specified data.  
   
- For more information, see the **FORMATETC** and **STGMEDIUM** structures in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the **FORMATETC** and **STGMEDIUM** structures in the Windows SDK.  
   
 ##  <a name="onsetextent"></a>  COleControl::OnSetExtent  
  Called by the framework when the control's extent needs to be changed, as a result of a call to [IOleObject::SetExtent](http://msdn.microsoft.com/library/windows/desktop/ms694330).  

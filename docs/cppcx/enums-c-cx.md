@@ -19,7 +19,7 @@ C++/CX supports the `public enum class` keyword, which is analagous to a standar
 ### Remarks  
  A `public enum class` that doesn't have an access specifier, such as `public`, is treated as a standard C++ [scoped enum](../cpp/enumerations-cpp.md).  
   
- A `public enum class` or `public enum struct` declaration can have an underlying type of any integral type although the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] itself requires that the type be int32, or uint32 for a flags enum. The following syntax describes the parts of an `public enum class` or `public enum struct`.  
+ A `public enum class` or `public enum struct` declaration can have an underlying type of any integral type although the Windows Runtime itself requires that the type be int32, or uint32 for a flags enum. The following syntax describes the parts of an `public enum class` or `public enum struct`.  
   
  This example shows how to define a public enum class:  
   

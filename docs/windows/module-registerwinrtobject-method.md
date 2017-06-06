@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Module::RegisterWinRTObject Method
-Registers one or more [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] objects so other applications can connect to them.  
+Registers one or more Windows Runtime objects so other applications can connect to them.  
   
 ## Syntax  
   

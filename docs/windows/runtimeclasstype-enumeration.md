@@ -54,7 +54,7 @@ enum RuntimeClassType;
 |`Delegate`|Equivalent to **ClassicCom**.|  
 |`InhibitFtmBase`|Disables `FtmBase` support while `__WRL_CONFIGURATION_LEGACY__` is not defined.|  
 |`InhibitWeakReference`|Disables weak reference support.|  
-|`WinRt`|A [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class.|  
+|`WinRt`|A Windows Runtime class.|  
 |`WinRtClassicComMix`|A combination of `WinRt` and `ClassicCom`.|  
   
 ## Requirements  

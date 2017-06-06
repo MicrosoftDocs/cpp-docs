@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Windows Runtime Unsupported CRT Functions
-Many C run-time (CRT) APIs can’t be used in [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps that execute in the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]. These apps are built by using the /ZW compiler flag. For a list of unsupported CRT functions, see [CRT functions not supported by /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+Many C run-time (CRT) APIs can’t be used in [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps that execute in the Windows Runtime. These apps are built by using the /ZW compiler flag. For a list of unsupported CRT functions, see [CRT functions not supported by /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
   
  All CRT APIs are described in the [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md) section of the documentation.  
   

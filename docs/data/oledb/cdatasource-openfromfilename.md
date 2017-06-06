@@ -54,7 +54,7 @@ Opens a data source from a file specified by the user-supplied file name.
  `szFileName`  
  [in] The name of a file, usually a data source connection (.UDL) file.  
   
- For more information about data link files (.udl files), see [Data Link API Overview](https://msdn.microsoft.com/en-us/library/ms718102.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information about data link files (.udl files), see [Data Link API Overview](https://msdn.microsoft.com/en-us/library/ms718102.aspx) in the Windows SDK.  
   
 ## Return Value  
  A standard `HRESULT`.  

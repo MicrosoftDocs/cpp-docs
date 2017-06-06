@@ -115,7 +115,7 @@ forward iterator
 > [!NOTE]
 >  You can avoid using iterators explicitly by using range-for loops. For more information, see [Loops (Modern C++)](http://msdn.microsoft.com/en-us/b1b2779c-750e-4576-a514-a84178eae9da).  
   
- [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).  
+ Visual C++ now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).  
   
 ## See Also  
  [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)   

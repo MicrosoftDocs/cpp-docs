@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # FactoryCache::factory Data Member
-Supports the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] infrastructure and is not intended to be used directly from your code.  
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
@@ -45,7 +45,7 @@ IUnknown* factory;
 ```  
   
 ## Remarks  
- Points to a [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] or COM class factory.  
+ Points to a Windows Runtime or COM class factory.  
   
 ## Requirements  
  **Header:** module.h  

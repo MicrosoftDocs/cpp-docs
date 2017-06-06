@@ -75,7 +75,7 @@ translation.priority.ht:
 Returns a pointer to the first occurrence of a search string in a string.  
   
 > [!IMPORTANT]
->  `_mbsstr` and `_mbsstr_l` cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)]. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsstr` and `_mbsstr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
   
 ## Syntax  
   

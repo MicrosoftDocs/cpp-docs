@@ -108,8 +108,6 @@ int i[2][2]; // two dimensional array
 int f(int a, int b, int c);  
 ```  
   
- For information on argument lists, see [Function Declarations](http://msdn.microsoft.com/en-us/3f9b4e14-60d2-47c1-acd8-4fa8fc988be7).  
-  
  Pointers and references to functions are declared by prepending the pointer or reference operator to the function name as shown below.  Parentheses, normally optional, are required to distinguish a pointer to a function from a function that returns a pointer:  
   
 ```  
@@ -163,7 +161,7 @@ PIFN pifnDispatchArray[7];
 int ( *pifnDispatchArray[7] )( char * );  
 ```  
   
- For more information on typedef, see [typedef Specifier](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
+ For more information on typedef, see [Aliases and typedefs](aliases-and-typedefs-cpp.md).  
   
  Pointers, references, arrays of a single base type can be combined in a single declaration (separated by commas) as  
   

@@ -189,7 +189,7 @@ class SafeInt;
  Many binary operators do not support using two different `SafeInt` types. One example of this is the `&` operator. `SafeInt<T, E> & int` is supported, but `SafeInt<T, E> & SafeInt<U, E>` is not. In the latter example, the compiler does not know what type of parameter to return. One solution to this problem is to cast the second parameter back to the base type. By using the same parameters, this can be done with `SafeInt<T, E> & (U)SafeInt<U, E>`.  
   
 > [!NOTE]
->  For any bitwise operations, the two different parameters should be the same size. If the sizes differ, the compiler will throw an [ASSERT](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) exception. The results of this operation cannot be guaranteed to be accurate. To resolve this issue, cast the smaller parameter until it is the same size as the larger parameter.  
+>  For any bitwise operations, the two different parameters should be the same size. If the sizes differ, the compiler will throw an [ASSERT](../mfc/reference/diagnostic-services.md#assert) exception. The results of this operation cannot be guaranteed to be accurate. To resolve this issue, cast the smaller parameter until it is the same size as the larger parameter.  
   
  For the shift operators, shifting more bits than exist for the template type will throw an ASSERT exception. This will have no effect in release mode. Mixing two types of SafeInt parameters is possible for the shift operators because the return type is the same as the original type. The number on the right side of the operator only indicates the number of bits to shift.  
   
@@ -237,6 +237,5 @@ Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;
  **Namespace:** msl::utilities  
   
 ## See Also  
- [Miscellaneous Support Libraries Classes](http://msdn.microsoft.com/en-us/406fd46e-d53f-4096-ab40-36aa754c7a5c)   
  [SafeInt Library](../windows/safeint-library.md)   
  [SafeIntException Class](../windows/safeintexception-class.md)

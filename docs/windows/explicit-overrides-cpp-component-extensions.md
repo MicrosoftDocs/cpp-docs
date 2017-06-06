@@ -64,12 +64,12 @@ overriding-function-declarator = function { overriding-function-definition }
   
  For information about modifying the behavior of inherited types and inherited type members, see [Override Specifiers](../windows/override-specifiers-cpp-component-extensions.md).  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
   
 ### Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  **Remarks**  
   
  For information about explicit overrides in native code or code compiled with **/clr:oldSyntax**, see [Explicit Overrides](../cpp/explicit-overrides-cpp.md).  

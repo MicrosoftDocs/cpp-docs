@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Changes to Conversion Operators
-The syntax for conversion operators has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The syntax for conversion operators has changed from Managed Extensions for C++ to Visual C++.  
   
  One example is to write `op_Implicit` to specify a conversion. Here is a definition of `MyDouble` taken from the language specification:  
   
@@ -67,7 +67,7 @@ class MyDouble {
   
  On the other hand, you should not provide a conversion pair when designing a class type within C++. The best example for that is the standard string class. The implicit conversion is the single-argument constructor taking a C-style string. However, it does not provide the corresponding implicit conversion operator - that of converting a string object to a C-style string, but rather requires the user to explicitly invoke a named function - in this case, `c_str()`.  
   
- So, associating an implicit/explicit behavior on a conversion operator (and as encapsulating the set of conversions to a single form of declaration) appears to be an improvement on the original C++ support for conversion operators, which eventually led to the `explicit` keyword. The [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] language support for conversion operators looks as follows, which is slightly less verbose than that of C# because of the default behavior of the operator supporting an implicit application of the conversion algorithm:  
+ So, associating an implicit/explicit behavior on a conversion operator (and as encapsulating the set of conversions to a single form of declaration) appears to be an improvement on the original C++ support for conversion operators, which eventually led to the `explicit` keyword. The Visual C++ language support for conversion operators looks as follows, which is slightly less verbose than that of C# because of the default behavior of the operator supporting an implicit application of the conversion algorithm:  
   
 ```  
 ref struct MyDouble {  

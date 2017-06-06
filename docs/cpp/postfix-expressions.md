@@ -100,7 +100,7 @@ simple-type-name ( expression-list )
     Func( Temp_i );  
     ```  
   
-     Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md), [Initialization Using Special Member Functions](http://msdn.microsoft.com/en-us/82223d73-64cb-4923-b678-78f9568ff3ca), and [Explicit Initialization](http://msdn.microsoft.com/en-us/c89724f8-ddd3-4d77-b86d-77fcd8bd8595).  
+     Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md)).  
   
      Therefore, if the function prototype (declaration) calls for an argument of type **long**, and if the calling program supplies an actual argument of type `int`, the actual argument is promoted using a standard type conversion to type **long** (see [Standard Conversions](../cpp/standard-conversions.md)).  
   

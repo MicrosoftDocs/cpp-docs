@@ -140,7 +140,7 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
  The path for the temporary file. If this is NULL, [GetTempPath](http://msdn.microsoft.com/library/windows/desktop/aa364992) will be called to assign a path.  
   
  `dwDesiredAccess`  
- The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ The desired access. See `dwDesiredAccess` in [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) in the Windows SDK.  
   
 ### Return Value  
  Returns `S_OK` on success, or an error `HRESULT` on failure.  
@@ -328,7 +328,7 @@ LPCTSTR TempFileName() throw();
  Returns the `LPCTSTR` pointing to the file name.  
   
 ### Remarks  
- The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](http://msdn.microsoft.com/library/windows/desktop/aa364991)[!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] function. The file extension will always be "TFR" for the temporary file.  
+ The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](http://msdn.microsoft.com/library/windows/desktop/aa364991)Windows SDK function. The file extension will always be "TFR" for the temporary file.  
   
 ##  <a name="unlockrange"></a>  CAtlTemporaryFile::UnlockRange  
  Call this method to unlock a region of the temporary file.  

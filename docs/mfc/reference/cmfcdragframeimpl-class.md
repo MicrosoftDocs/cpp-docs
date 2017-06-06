@@ -36,7 +36,8 @@ translation.priority.ht:
 ---
 # CMFCDragFrameImpl Class
 The `CMFCDragFrameImpl` class draws the drag rectangle that appears when the user drags a pane in the standard dock mode.  
-  
+   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   
 ## Syntax  
   
 ```  
@@ -55,7 +56,7 @@ class CMFCDragFrameImpl
  **Header:** afxdragframeimpl.h  
   
 ##  <a name="enddrawdragframe"></a>  CMFCDragFrameImpl::EndDrawDragFrame  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
@@ -67,7 +68,7 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 ### Remarks  
   
 ##  <a name="init"></a>  CMFCDragFrameImpl::Init  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void Init(CWnd* pDraggedWnd);
@@ -79,7 +80,7 @@ void Init(CWnd* pDraggedWnd);
 ### Remarks  
   
 ##  <a name="movedragframe"></a>  CMFCDragFrameImpl::MoveDragFrame  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void MoveDragFrame(BOOL bForceMove = FALSE);
@@ -91,7 +92,7 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 ### Remarks  
   
 ##  <a name="placetabpredocking"></a>  CMFCDragFrameImpl::PlaceTabPreDocking  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void PlaceTabPreDocking(
@@ -109,7 +110,7 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 ### Remarks  
   
 ##  <a name="removetabpredocking"></a>  CMFCDragFrameImpl::RemoveTabPreDocking  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
@@ -121,7 +122,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 ### Remarks  
   
 ##  <a name="resetstate"></a>  CMFCDragFrameImpl::ResetState  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void ResetState();

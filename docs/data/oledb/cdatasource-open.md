@@ -103,7 +103,7 @@ HRESULT Open( 
  [in] The **CLSID** of the data provider.  
   
  *pPropSet*  
- [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/en-us/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/en-us/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
  *nPropertySets*  
  [in] The number of [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) structures passed in the *pPropSet* argument.  
@@ -118,7 +118,7 @@ HRESULT Open( 
  [in] The user's password.  
   
  `nInitMode`  
- [in] Database initialization mode. See [Initialization Properties](https://msdn.microsoft.com/en-us/library/ms723127.aspx)in the *OLE DB Programmer's Reference* in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for a list of valid initialization modes. If `nInitMode` is zero, no initialization mode is included in the property set used to open the connection.  
+ [in] Database initialization mode. See [Initialization Properties](https://msdn.microsoft.com/en-us/library/ms723127.aspx)in the *OLE DB Programmer's Reference* in the Windows SDK for a list of valid initialization modes. If `nInitMode` is zero, no initialization mode is included in the property set used to open the connection.  
   
  `szProgID`  
  [in] A program identifier.  

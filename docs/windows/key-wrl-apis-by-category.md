@@ -32,7 +32,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Key WRL APIs by Category
-The following tables list primary [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] classes, structs, functions, and macros. Constructs in helper namespaces and classes are omitted. These lists augment the API documentation, which is arranged by namespace.  
+The following tables list primary Windows Runtime C++ Template Library classes, structs, functions, and macros. Constructs in helper namespaces and classes are omitted. These lists augment the API documentation, which is arranged by namespace.  
   
 ### Classes  
   
@@ -52,7 +52,7 @@ The following tables list primary [!INCLUDE[cppwrl](../windows/includes/cppwrl_m
 |[Module::GenericReleaseNotifier Class](../windows/module-genericreleasenotifier-class.md)|Invokes an event handler when the last object in the current module is released. The event handler is specified by on a lambda, functor, or pointer-to-function.|  
 |[Module::MethodReleaseNotifier Class](../windows/module-methodreleasenotifier-class.md)|Invokes an event handler when the last object in the current module is released. The event handler is specified by an object and its pointer-to-a-method member.|  
 |[Module::ReleaseNotifier Class](../windows/module-releasenotifier-class.md)|Invokes an event handler when the last object in a module is released.|  
-|[RoInitializeWrapper Class](../windows/roinitializewrapper-class.md)|Initializes the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].|  
+|[RoInitializeWrapper Class](../windows/roinitializewrapper-class.md)|Initializes the Windows Runtime.|  
 |[RuntimeClass Class](../windows/runtimeclass-class.md)|Represents an instantiated class that inherits the specified number of interfaces, and provides the specified Windows Runtime, classic COM, and weak reference support.|  
 |[SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)|Provides a fundamental mechanism to create a Windows Runtime or classic COM base class.|  
 |[SimpleClassFactory Class](../windows/simpleclassfactory-class.md)|Provides a fundamental mechanism to create a base class.|  
@@ -77,7 +77,7 @@ The following tables list primary [!INCLUDE[cppwrl](../windows/includes/cppwrl_m
 |[CreateActivationFactory Function](../windows/createactivationfactory-function.md)|Creates a factory that produces instances of the specified class that can be activated by the Windows Runtime.|  
 |[CreateClassFactory Function](../windows/createclassfactory-function.md)|Creates a factory that produces instances of the specified class.|  
 |[GetActivationFactory Function](../windows/getactivationfactory-function.md)|Retrieves an activation factory for the type specified by the template parameter.|  
-|[Make Function](../windows/make-function.md)|Initializes the specified [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] class.|  
+|[Make Function](../windows/make-function.md)|Initializes the specified Windows Runtime class.|  
   
 ### Macros  
   

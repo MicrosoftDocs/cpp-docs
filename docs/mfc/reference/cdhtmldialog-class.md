@@ -465,13 +465,13 @@ STDMETHOD(EnableModeless)(BOOL fEnable);
   
 ### Parameters  
  `fEnable`  
- See `fEnable` in [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `fEnable` in [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) in the Windows SDK.  
   
 ### Return Value  
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx), as described in the Windows SDK.  
   
 ##  <a name="filterdataobject"></a>  CDHtmlDialog::FilterDataObject  
  Allows the dialog to filter clipboard data objects created by the hosted browser.  
@@ -484,16 +484,16 @@ STDMETHOD(FilterDataObject)(
   
 ### Parameters  
  `pDO`  
- See `pDO` in [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pDO` in [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) in the Windows SDK.  
   
  `ppDORet`  
- See `ppDORet` in **IDocHostUIHandler::FilterDataObject** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `ppDORet` in **IDocHostUIHandler::FilterDataObject** in the Windows SDK.  
   
 ### Return Value  
  Returns **S_FALSE**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx), as described in the Windows SDK.  
   
 ##  <a name="getcontroldispatch"></a>  CDHtmlDialog::GetControlDispatch  
  Retrieves the `IDispatch` interface on an ActiveX control embedded in the HTML document returned by [GetDHtmlDocument](#getdhtmldocument).  
@@ -588,16 +588,16 @@ STDMETHOD(GetDropTarget)(
   
 ### Parameters  
  `pDropTarget`  
- See `pDropTarget` in [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pDropTarget` in [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) in the Windows SDK.  
   
  `ppDropTarget`  
- See `ppDropTarget` in **IDocHostUIHandler::GetDropTarget** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `ppDropTarget` in **IDocHostUIHandler::GetDropTarget** in the Windows SDK.  
   
 ### Return Value  
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx), as described in the Windows SDK.  
   
 ##  <a name="getelement"></a>  CDHtmlDialog::GetElement  
  Returns an interface on the HTML element specified by `szElementId`.  
@@ -739,13 +739,13 @@ STDMETHOD(GetExternal)(IDispatch** ppDispatch);
   
 ### Parameters  
  *ppDispatch*  
- See *ppDispatch* in [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See *ppDispatch* in [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) in the Windows SDK.  
   
 ### Return Value  
  Returns `S_OK` on success or **E_NOTIMPL** on failure.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx), as described in the Windows SDK.  
   
 ##  <a name="gethostinfo"></a>  CDHtmlDialog::GetHostInfo  
  Retrieves the host's UI capabilities.  
@@ -756,13 +756,13 @@ STDMETHOD(GetHostInfo)(DOCHOSTUIINFO* pInfo);
   
 ### Parameters  
  `pInfo`  
- See `pInfo` in [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pInfo` in [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) in the Windows SDK.  
   
 ### Return Value  
  Returns `S_OK`.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx), as described in the Windows SDK.  
   
 ##  <a name="getoptionkeypath"></a>  CDHtmlDialog::GetOptionKeyPath  
  Retrieves the registry key under which user preferences are stored.  
@@ -775,16 +775,16 @@ STDMETHOD(GetOptionKeyPath)(
   
 ### Parameters  
  `pchKey`  
- See `pchKey` in [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pchKey` in [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) in the Windows SDK.  
   
  `dw`  
- See `dw` in **IDocHostUIHandler::GetOptionKeyPath** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `dw` in **IDocHostUIHandler::GetOptionKeyPath** in the Windows SDK.  
   
 ### Return Value  
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx), as described in the Windows SDK.  
   
 ##  <a name="hideui"></a>  CDHtmlDialog::HideUI  
  Hides the host's UI.  
@@ -797,7 +797,7 @@ STDMETHOD(HideUI)(void);
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx), as described in the Windows SDK.  
   
 ##  <a name="isexternaldispatchsafe"></a>  CDHtmlDialog::IsExternalDispatchSafe  
  Indicates whether the host's `IDispatch` interface is safe for scripting.  
@@ -950,13 +950,13 @@ STDMETHOD(OnDocWindowActivate)(BOOL fActivate);
   
 ### Parameters  
  `fActivate`  
- See `fActivate` in [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `fActivate` in [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) in the Windows SDK.  
   
 ### Return Value  
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implemention of [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implemention of [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx), as described in the Windows SDK.  
   
 ##  <a name="onframewindowactivate"></a>  CDHtmlDialog::OnFrameWindowActivate  
  Called by the framework when the frame window is activated or deactivated.  
@@ -967,13 +967,13 @@ STDMETHOD(OnFrameWindowActivate)(BOOL fActivate);
   
 ### Parameters  
  `fActivate`  
- See `fActivate` in [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `fActivate` in [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) in the Windows SDK.  
   
 ### Return Value  
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx), as described in the Windows SDK.  
   
 ##  <a name="oninitdialog"></a>  CDHtmlDialog::OnInitDialog  
  Called in response to the **WM_INITDIALOG** message.  
@@ -1020,13 +1020,13 @@ STDMETHOD(ResizeBorder)(
   
 ### Parameters  
  `prcBorder`  
- See `prcBorder` in [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `prcBorder` in [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) in the Windows SDK.  
   
  `pUIWindow`  
- See `pUIWindow` in **IDocHostUIHandler::ResizeBorder** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pUIWindow` in **IDocHostUIHandler::ResizeBorder** in the Windows SDK.  
   
  `fFrameWindow`  
- See *fFrameWindow* in **IDocHostUIHandler::ResizeBorder** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See *fFrameWindow* in **IDocHostUIHandler::ResizeBorder** in the Windows SDK.  
   
 ### Return Value  
  Returns **E_NOTIMPL**.  
@@ -1157,7 +1157,7 @@ void SetHostFlags(DWORD dwFlags);
   
 ### Parameters  
  `dwFlags`  
- For possible values, see [DOCHOSTUIFLAG](https://msdn.microsoft.com/library/aa753277.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For possible values, see [DOCHOSTUIFLAG](https://msdn.microsoft.com/library/aa753277.aspx) in the Windows SDK.  
   
 ##  <a name="showcontextmenu"></a>  CDHtmlDialog::ShowContextMenu  
  Called when a context menu is about to be displayed.  
@@ -1172,22 +1172,22 @@ STDMETHOD(ShowContextMenu)(
   
 ### Parameters  
  `dwID`  
- See `dwID` in [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `dwID` in [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) in the Windows SDK.  
   
  `ppt`  
- See `ppt` in **IDocHostUIHandler::ShowContextMenu** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `ppt` in **IDocHostUIHandler::ShowContextMenu** in the Windows SDK.  
   
  `pcmdtReserved`  
- See `pcmdtReserved` in **IDocHostUIHandler::ShowContextMenu** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pcmdtReserved` in **IDocHostUIHandler::ShowContextMenu** in the Windows SDK.  
   
  `pdispReserved`  
- See `pdispReserved` in **IDocHostUIHandler::ShowContextMenu** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pdispReserved` in **IDocHostUIHandler::ShowContextMenu** in the Windows SDK.  
   
 ### Return Value  
  Returns **S_FALSE**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx), as described in the Windows SDK.  
   
 ##  <a name="showui"></a>  CDHtmlDialog::ShowUI  
  Shows the host's UI.  
@@ -1203,25 +1203,25 @@ STDMETHOD(ShowUI)(
   
 ### Parameters  
  `dwID`  
- See `dwID` in [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `dwID` in [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) in the Windows SDK.  
   
  `pActiveObject`  
- See *d pActiveObject* in **IDocHostUIHandler::ShowUI** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See *d pActiveObject* in **IDocHostUIHandler::ShowUI** in the Windows SDK.  
   
  `pCommandTarget`  
- See `pCommandTarget` in **IDocHostUIHandler::ShowUI** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pCommandTarget` in **IDocHostUIHandler::ShowUI** in the Windows SDK.  
   
  `pFrame`  
- See `pFrame` in **IDocHostUIHandler::ShowUI** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pFrame` in **IDocHostUIHandler::ShowUI** in the Windows SDK.  
   
  `pDoc`  
- See `pDoc` in **IDocHostUIHandler::ShowUI** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pDoc` in **IDocHostUIHandler::ShowUI** in the Windows SDK.  
   
 ### Return Value  
  Returns **S_FALSE**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx), as described in the Windows SDK.  
   
 ##  <a name="translateaccelerator"></a>  CDHtmlDialog::TranslateAccelerator  
  Called to process menu accelerator-key messages.  
@@ -1235,19 +1235,19 @@ STDMETHOD(TranslateAccelerator)(
   
 ### Parameters  
  `lpMsg`  
- See `lpMsg` in [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `lpMsg` in [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) in the Windows SDK.  
   
  `pguidCmdGroup`  
- See `pguidCmdGroup` in **IDocHostUIHandler::TranslateAccelerator** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pguidCmdGroup` in **IDocHostUIHandler::TranslateAccelerator** in the Windows SDK.  
   
  `nCmdID`  
- See `nCmdID` in **IDocHostUIHandler::TranslateAccelerator** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `nCmdID` in **IDocHostUIHandler::TranslateAccelerator** in the Windows SDK.  
   
 ### Return Value  
  Returns **S_FALSE**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx), as described in the Windows SDK.  
   
 ##  <a name="translateurl"></a>  CDHtmlDialog::TranslateUrl  
  Called to modify the URL to be loaded.  
@@ -1261,19 +1261,19 @@ STDMETHOD(TranslateUrl)(
   
 ### Parameters  
  `dwTranslate`  
- See `dwTranslate` in [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `dwTranslate` in [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) in the Windows SDK.  
   
  `pchURLIn`  
- See `pchURLIn` in **IDocHostUIHandler::TranslateUrl** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `pchURLIn` in **IDocHostUIHandler::TranslateUrl** in the Windows SDK.  
   
  `ppchURLOut`  
- See `ppchURLOut` in **IDocHostUIHandler::TranslateUrl** in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See `ppchURLOut` in **IDocHostUIHandler::TranslateUrl** in the Windows SDK.  
   
 ### Return Value  
  Returns **S_FALSE**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx), as described in the Windows SDK.  
   
 ##  <a name="updateui"></a>  CDHtmlDialog::UpdateUI  
  Called to notify the host that the command state has changed.  
@@ -1286,7 +1286,7 @@ STDMETHOD(UpdateUI)(void);
  Returns **E_NOTIMPL**.  
   
 ### Remarks  
- This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx), as described in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ This member function is CDHtmlDialog's implementation of [IDocHostUIHandler::UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx), as described in the Windows SDK.  
   
 ## See Also  
  [MFC Sample DHtmlExplore](../../visual-cpp-samples.md)   

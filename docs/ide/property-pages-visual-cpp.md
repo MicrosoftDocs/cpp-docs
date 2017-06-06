@@ -52,7 +52,7 @@ By using property pages, you can specify settings for Visual Studio projects. To
  For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## Default Properties vs. Modified Properties  
- When you use the **New Project** dialog box to create a project, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] uses the specified project template to initialize the project properties. Therefore, the property values in the template can be thought of as default values for that project type. In other project types, the properties may have different default values.  
+ When you use the **New Project** dialog box to create a project, Visual Studio uses the specified project template to initialize the project properties. Therefore, the property values in the template can be thought of as default values for that project type. In other project types, the properties may have different default values.  
   
  A project property value appears in bold if it is modified. A project property can be modified for the following reasons:  
   

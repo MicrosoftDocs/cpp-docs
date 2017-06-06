@@ -145,7 +145,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Zl](../../build/reference/zl-omit-default-library-name.md)|Removes the default library name from the .obj file.|  
 |[/Zp](../../build/reference/zp-struct-member-alignment.md) *n*|Packs structure members.|  
 |[/Zs](../../build/reference/zs-syntax-check-only.md)|Checks syntax only.|  
-|[/ZW](../../build/reference/zw-windows-runtime-compilation.md)|Produces an output file to run on the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].|  
+|[/ZW](../../build/reference/zw-windows-runtime-compilation.md)|Produces an output file to run on the Windows Runtime.|  
   
 ### Linking  
   

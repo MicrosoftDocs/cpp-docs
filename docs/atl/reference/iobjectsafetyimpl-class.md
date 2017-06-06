@@ -40,7 +40,7 @@ translation.priority.ht:
 This class provides a default implementation of the `IObjectSafety` interface to allow a client to retrieve and set an object's safety levels.  
   
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
 ## Syntax  
   
@@ -106,7 +106,7 @@ HRESULT GetInterfaceSafetyOptions(
 > [!IMPORTANT]
 >  Any object that supports `IObjectSafety` is responsible for its own security, and that of any object it delegates. The programmer must take into account issues arising from running code in the user's context, cross-site scripting and perform suitable zone checking.  
   
- See [IObjectSafety::GetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768223.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IObjectSafety::GetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768223.aspx) in the Windows SDK.  
   
 ##  <a name="m_dwcurrentsafety"></a>  IObjectSafetyImpl::m_dwCurrentSafety  
  Stores the object's current safety level.  
@@ -131,7 +131,7 @@ HRESULT SetInterfaceSafetyOptions(
 > [!IMPORTANT]
 >  Any object that supports `IObjectSafety` is responsible for its own security, and that of any object it delegates. The programmer must take into account issues arising from running code in the user's context, cross-site scripting and perform suitable zone checking.  
   
- See [IObjectSafety::SetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768225.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ See [IObjectSafety::SetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768225.aspx) in the Windows SDK.  
   
 ## See Also  
  [IObjectSafety Interface](https://msdn.microsoft.com/library/aa768224.aspx)   

@@ -39,7 +39,7 @@ The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](.
 ## Accessing the Declared Object  
  A variable that is declared with the handle declarator behaves like a pointer to the object. However, the variable points to the entire object, cannot point to a member of the object, and it does not support pointer arithmetic. Use the indirection operator (`*`) to access the object, and the arrow member-access operator (`->`) to access a member of the object.  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  The compiler uses the COM *reference counting* mechanism to determine if the object is no longer being used and can be deleted. This is possible because an object that is derived from a Windows Runtime interface is actually a COM object. The reference count is incremented when the object is created or copied, and decremented when the object is set to null or goes out of scope. If the reference count goes to zero, the object is automatically and immediately deleted.  
   
  The advantage of the handle declarator is that in COM you must explicitly manage the reference count for an object, which is a tedious and error prone process. That is, to increment and decrement the reference count you must call the object's AddRef() and Release() methods. However, if you declare an object with the handle declarator, the Visual C++ compiler generates code that automatically adjusts the reference count.  
@@ -49,7 +49,7 @@ The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](.
 ## Requirements  
  Compiler option: **/ZW**  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  The system uses the CLR *garbage collector* mechanism to determine if the object is no longer being used and can be deleted. The common language runtime maintains a heap on which it allocates objects, and uses managed references (variables) in your program indicate the location of objects on the heap. When an object is no longer used, the memory that it occupied on the heap is freed. Periodically, the garbage collector compacts the heap to better use the freed memory. Compacting the heap can move objects on the heap, which invalidates the locations refered to by managed references. However, the garbage collector is aware of the location of all managed references, and automatically updates them to indicate the current location of the objects on the heap.  
   
  Because native C++ pointers (`*`) and references (`&`) are not managed references, the garbage collector cannot automatically update the addresses they point to. To solve this problem, use the handle declarator to specify a variable that the garbage collector is aware of and can update automatically.  

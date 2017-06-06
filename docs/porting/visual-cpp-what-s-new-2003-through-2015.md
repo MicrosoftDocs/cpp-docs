@@ -521,7 +521,7 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
   
 -   **Copy constructors**  
   
-     In both [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] and [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], the compiler generates a copy constructor for a class if that class has a user-defined move constructor but no user-defined copy constructor. In Dev14, this implicitly generated copy constructor is also marked "= delete".  
+     In both [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] and Visual Studio 2015, the compiler generates a copy constructor for a class if that class has a user-defined move constructor but no user-defined copy constructor. In Dev14, this implicitly generated copy constructor is also marked "= delete".  
   
 ##  <a name="VS_Update1"></a> Conformance Improvements in Update 1  
   

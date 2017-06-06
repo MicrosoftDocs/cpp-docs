@@ -19,7 +19,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Platform::Collections::VectorIterator Class
-Provides a Standard Template Library iterator for objects derived from the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] IVector interface.  
+Provides a Standard Template Library iterator for objects derived from the Windows Runtime IVector interface.  
   
  VectorIterator is a proxy iterator that stores elements of type VectorProxy\<T>. However, the proxy object is almost never visible to user code. For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
   

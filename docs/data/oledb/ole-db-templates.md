@@ -49,7 +49,7 @@ The OLE DB templates make OLE DB data access easier. Visual C++ provides templat
  Describes what OLE DB is and discusses Universal Data Access in OLE DB.  
   
  [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx)  
- Provides links to the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] documentation on OLE DB.  
+ Provides links to the Windows SDK documentation on OLE DB.  
   
  [OLE DB Templates Samples](../../visual-cpp-samples.md)  
  Provides links to the OLE DB Templates samples that show how to use OLE DB in your projects.  

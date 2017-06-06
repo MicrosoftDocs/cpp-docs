@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Delegates and Events
-The way to declare delegates and events has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The way to declare delegates and events has changed from Managed Extensions for C++ to Visual C++.  
   
  The double underscore is no longer needed, as shown in the following sample. Here a sample code in Managed Extensions:  
   

@@ -33,9 +33,9 @@ public ref class WrongThreadException : COMException,    IException,    IPrintab
  For more information, see the [COMException](../cppcx/platform-comexception-class.md).  
   
 ### Requirements  
- **Minimum supported client:** [!INCLUDE[win8](../cppcx/includes/win8-md.md)]  
+ **Minimum supported client:** Windows 8  
   
- **Minimum supported server:** [!INCLUDE[winserver8](../cppcx/includes/winserver8-md.md)]  
+ **Minimum supported server:** Windows Server 2012  
   
  **Namespace:** Platform  
   

@@ -41,7 +41,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # main: Program Startup
-A special function named `main` is the starting point of execution for all C and [!INCLUDE[TLA#tla_cpp](../cpp/includes/tlasharptla_cpp_md.md)] programs. If you are writing code that adheres to the [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] programming model, you can use `wmain`, which is the wide-character version of `main`.  
+A special function named `main` is the starting point of execution for all C and C++ programs. If you are writing code that adheres to the [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] programming model, you can use `wmain`, which is the wide-character version of `main`.  
   
  The `main` function is not predefined by the compiler. It must be supplied in the program text.  
   

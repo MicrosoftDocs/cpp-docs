@@ -58,7 +58,7 @@ typedef struct tagBITMAPINFO {
   
  A *packed bitmap* is a bitmap where the byte array immediately follows the `BITMAPINFO` structure. Packed bitmaps are referenced by a single pointer.  
   
- For more information about the `BITMAPINFO` structure and appropriate values for members of the `BITMAPINFOHEADER` and `RGBQUAD` structures, see the following topics in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] documentation.  
+ For more information about the `BITMAPINFO` structure and appropriate values for members of the `BITMAPINFOHEADER` and `RGBQUAD` structures, see the following topics in the Windows SDK documentation.  
   
 - [BITMAPINFO structure](http://msdn.microsoft.com/library/windows/desktop/dd183375)  
   

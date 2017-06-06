@@ -14,7 +14,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Ref classes and structs (C++/CX)
-The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defined *value classes* and *value structs*. These data structures are the primary containers by which C++/CX supports the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system. Their contents are emitted to metadata according to certain specific rules, and this enables them to be passed between [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components and Universal Windows Platform apps that are written in C++ or other languages.  
+The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defined *value classes* and *value structs*. These data structures are the primary containers by which C++/CX supports the Windows Runtime type system. Their contents are emitted to metadata according to certain specific rules, and this enables them to be passed between Windows Runtime components and Universal Windows Platform apps that are written in C++ or other languages.  
   
  A ref class or ref struct has these essential features:  
   
@@ -31,7 +31,7 @@ The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defin
 -   Its lifetime is managed by automatic reference counting.  
   
 ## Declaration  
- The following code fragment declares the `Person` ref class. Notice that the standard C++ `std::map` type is used in the private members, and the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)]`IMapView` interface is used in the public interface. Also notice that the "^" is appended to declarations of reference types.  
+ The following code fragment declares the `Person` ref class. Notice that the standard C++ `std::map` type is used in the private members, and the Windows Runtime`IMapView` interface is used in the public interface. Also notice that the "^" is appended to declarations of reference types.  
   
  [!code-cpp[cx_classes#03](../cppcx/codesnippet/CPP/classesstructs/class1.h#03)]  
   
@@ -67,9 +67,9 @@ The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defin
   
  A ref struct is the same as a ref class, except that by default its members have `public` accessibility.  
   
- A `public` ref class or ref struct is emitted in metadata, but to be usable from other Universal Windows Platform apps and [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] components it must have at least one public or protected constructor. A public ref class that has a public constructor must also be declared as `sealed` to prevent further derivation through the application binary interface (ABI).  
+ A `public` ref class or ref struct is emitted in metadata, but to be usable from other Universal Windows Platform apps and Windows Runtime components it must have at least one public or protected constructor. A public ref class that has a public constructor must also be declared as `sealed` to prevent further derivation through the application binary interface (ABI).  
   
- Public members may not be declared as const because the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] type system does not support const. You can use a static property to declare a public data member with a constant value.  
+ Public members may not be declared as const because the Windows Runtime type system does not support const. You can use a static property to declare a public data member with a constant value.  
   
  When you define a public ref class or struct, the compiler applies the required attributes to the class and stores that information in the .winmd file of the app. However, when you define a public unsealed ref class, manually apply the `Windows::Foundation::Metadata::WebHostHidden` attribute to ensure that the class is not visible to Universal Windows Platform apps that are written in JavaScript.  
   
@@ -97,7 +97,7 @@ The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defin
  When you declare a public destructor, the compiler generates the code so that the ref class implements `Platform::IDisposable` and the destructor implements the `Dispose` method. `Platform::IDisposable` is the C++/CX projection of `Windows::Foundation::IClosable`. Never explicitly implement these interfaces.  
   
 ## Inheritance  
- Platform::Object is the universal base class for all ref classes. All ref classes are implicitly convertible to Platform::Object and can override [Object::ToString](../cppcx/platform-object-class.md#tostring). However, the [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] inheritance model not intended as a general inheritance model; in C++/CX this means that a user-defined public ref class cannot serve as a base class.  
+ Platform::Object is the universal base class for all ref classes. All ref classes are implicitly convertible to Platform::Object and can override [Object::ToString](../cppcx/platform-object-class.md#tostring). However, the Windows Runtime inheritance model not intended as a general inheritance model; in C++/CX this means that a user-defined public ref class cannot serve as a base class.  
   
  If you are creating a XAML user control, and the object participates in the dependency property system, then you can use `Windows::UI::Xaml::DependencyObject` as a base class.  
   
@@ -105,7 +105,7 @@ The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defin
   
  A private base ref class is not required to derive from an existing unsealed class. If you require an object hierarchy to model your own program structure or to enable code reuse, then use private or internal ref classes, or better yet, standard C++ classes. You can expose the functionality of the private object hierarchy through a public sealed ref class wrapper.  
   
- A ref class that has a public or protected constructor in C++/CX must be declared as sealed. This restriction means that there is no way for classes that are written in other languages such as C# or Visual Basic to inherit from types that you declare in a [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component that's written in C++/CX.  
+ A ref class that has a public or protected constructor in C++/CX must be declared as sealed. This restriction means that there is no way for classes that are written in other languages such as C# or Visual Basic to inherit from types that you declare in a Windows Runtime component that's written in C++/CX.  
   
  Here are the basic rules for inheritance in C++/CX:  
   
@@ -113,7 +113,7 @@ The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defin
   
 -   If a class has a public constructor, it must be declared as sealed to prevent further derivation.  
   
--   You can create public unsealed base classes that have internal or protected private constructors, provided that the base class derives directly or indirectly from an existing unsealed base class such as `Windows::UI::Xaml::DependencyObject`. Inheritance of user-defined ref classes across .winmd files is not supported; however, a ref class can inherit from an interface that's defined in another .winmd file. You can create derived classes from a user-defined base ref class only within the same [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component or Universal Windows Platform app.  
+-   You can create public unsealed base classes that have internal or protected private constructors, provided that the base class derives directly or indirectly from an existing unsealed base class such as `Windows::UI::Xaml::DependencyObject`. Inheritance of user-defined ref classes across .winmd files is not supported; however, a ref class can inherit from an interface that's defined in another .winmd file. You can create derived classes from a user-defined base ref class only within the same Windows Runtime component or Universal Windows Platform app.  
   
 -   For ref classes, only public inheritance is supported.  
   

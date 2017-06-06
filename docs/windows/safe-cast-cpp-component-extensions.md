@@ -57,7 +57,7 @@ expression
   
 ### Remarks  
   
-## [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)]  
+## Windows Runtime  
  `safe_cast` allows you to change the type of a specified expression. In situations where you fully expect a variable or parameter to be convertible to a certain type, you can use safe_cast without a try-catch block to detect programming errors during development. For more information, see [Casting (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755802.aspx).  
   
 ### Syntax  
@@ -87,7 +87,7 @@ expression
 ### Examples  
  **Example**  
   
- The following code example demonstrates how to use `safe_cast` with the [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)].  
+ The following code example demonstrates how to use `safe_cast` with the Windows Runtime.  
   
 ```cpp#  
 // safe_cast_ZW.cpp  
@@ -121,7 +121,7 @@ int main(Array<String^>^ args) {
 Caught expected exception: InvalidCastException  
 ```  
   
-## [!INCLUDE[clr_for_headings](../dotnet/includes/clr_for_headings_md.md)]  
+## Common Language Runtime 
  `safe_cast` allows you to change the type of an expression and generate verifiable MSIL code.  
   
 ### Syntax  

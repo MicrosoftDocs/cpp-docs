@@ -41,7 +41,7 @@ The classes in the following list are included in the Microsoft Foundation Class
 >  For information about [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) and other classes that are common to both MFC and ATL programming, see [Classes Shared by MFC and ATL](../../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md).  
   
 > [!IMPORTANT]
->  The MFC classes and their members cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  The MFC classes and their members cannot be used in applications that execute in the Windows Runtime.  
   
 ## In This Section  
  [CAccelerateDecelerateTransition Class](../../mfc/reference/cacceleratedeceleratetransition-class1.md)  
@@ -942,7 +942,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Provides support for custom client-side control interfaces.  
   
  [COleConvertDialog Class](../../mfc/reference/coleconvertdialog-class.md)  
- For more information, see the [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) structure in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see the [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) structure in the Windows SDK.  
   
  [COleCurrency Class](../../mfc/reference/colecurrency-class.md)  
  Encapsulates the `CURRENCY` data type of OLE automation.  

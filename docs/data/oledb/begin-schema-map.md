@@ -51,7 +51,7 @@ Denotes the beginning of a schema map.
  The class that contains the MAP. Typically this will be the session class.  
   
 ## Remarks  
- See [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)] for more information about schema rowsets.  
+ See [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) in the Windows SDK for more information about schema rowsets.  
   
 ## Requirements  
  **Header:** atldb.h  

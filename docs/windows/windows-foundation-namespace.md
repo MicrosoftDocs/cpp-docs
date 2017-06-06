@@ -37,7 +37,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Windows::Foundation Namespace
-Enables fundamental [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] functionality, such as object and factory creation.  
+Enables fundamental Windows Runtime functionality, such as object and factory creation.  
   
 ## Syntax  
   

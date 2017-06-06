@@ -110,7 +110,7 @@ MSBuild is the standard build system for Visual C++ projects. When you build a p
   
  `msbuild myProject.vcxproj /p:PlatformToolset=v110`  
   
- Set the `PlatformToolset` property to `v100` to use [!INCLUDE[cpp_dev10_long](../build/includes/cpp_dev10_long_md.md)] tools and libraries to build your application.  
+ Set the `PlatformToolset` property to `v100` to use Visual C++ 2010 tools and libraries to build your application.  
   
  `msbuild myProject.vcxproj /p:PlatformToolset=v100`  
   

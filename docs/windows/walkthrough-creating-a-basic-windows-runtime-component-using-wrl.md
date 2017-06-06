@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Walkthrough: Creating a Basic Windows Runtime Component Using WRL
-This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_md.md)] ([!INCLUDE[cppwrl_short](../windows/includes/cppwrl_short_md.md)]) to create a basic [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] component. The component adds two numbers and raises an event when the result is prime. This document also demonstrates how to use the component from a Universal Windows Platform app that uses JavaScript.  
+This document shows how to use the Windows Runtime C++ Template Library (WRL)to create a basic Windows Runtime component. The component adds two numbers and raises an event when the result is prime. This document also demonstrates how to use the component from a Universal Windows Platform app that uses JavaScript.  
   
 ## Prerequisites  
   
@@ -39,7 +39,7 @@ This document shows how to use the [!INCLUDE[cppwrl](../windows/includes/cppwrl_
   
 -   Experience with COM.  
   
-### To create a basic [!INCLUDE[wrt](../atl/reference/includes/wrt_md.md)] component that adds two numbers  
+### To create a basic Windows Runtime component that adds two numbers  
   
 1.  In Visual Studio, create a Visual C++ `WRLClassLibrary` project. The document [Class Library Project Template](../windows/wrl-class-library-project-template.md) describes how to download this template. Name the project `Contoso`.  
   

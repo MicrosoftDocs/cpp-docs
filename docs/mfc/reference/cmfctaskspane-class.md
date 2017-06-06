@@ -308,7 +308,7 @@ int AddPage(LPCTSTR lpszPageLabel);
  The zero-based index of the new page.  
   
 ##  <a name="addseparator"></a>  CMFCTasksPane::AddSeparator  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int AddSeparator(int nGroup);
@@ -394,7 +394,7 @@ CMFCTasksPane();
 ```  
   
 ##  <a name="collapseallgroups"></a>  CMFCTasksPane::CollapseAllGroups  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void CollapseAllGroups(BOOL bCollapse = TRUE);
@@ -442,7 +442,7 @@ BOOL CollapseGroup(
  A collapsed group shows only the group caption; the list of tasks is hidden.  
   
 ##  <a name="createdefaultminiframe"></a>  CMFCTasksPane::CreateDefaultMiniframe  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
@@ -546,7 +546,7 @@ void EnableNavigationToolbar(
  By default, the framework does not display the navigation toolbar. If the navigation toolbar is not displayed, the navigation buttons are located on the caption of the docking bar.  
   
 ##  <a name="enableoffsetcustomcontrols"></a>  CMFCTasksPane::EnableOffsetCustomControls  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void EnableOffsetCustomControls(BOOL bEnable);
@@ -695,7 +695,7 @@ int GetHorzMargin() const;
  The default spacing between a task pane and the edge of the client area is 12 pixels.  
   
 ##  <a name="getnextpages"></a>  CMFCTasksPane::GetNextPages  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void GetNextPages(CStringList& lstNextPages) const;  
@@ -736,7 +736,7 @@ int GetPagesCount() const;
  The number of pages in the task pane.  
   
 ##  <a name="getpreviouspages"></a>  CMFCTasksPane::GetPreviousPages  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void GetPreviousPages(CStringList& lstPrevPages) const;  
@@ -748,7 +748,7 @@ void GetPreviousPages(CStringList& lstPrevPages) const;
 ### Remarks  
   
 ##  <a name="getscrollbarctrl"></a>  CMFCTasksPane::GetScrollBarCtrl  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual CScrollBar* GetScrollBarCtrl(int nBar) const;  
@@ -864,7 +864,7 @@ int GetTasksHorzOffset() const;
  The default horizontal offset of tasks is 12 pixels.  
   
 ##  <a name="gettasksiconhorzoffset"></a>  CMFCTasksPane::GetTasksIconHorzOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksIconHorzOffset() const;  
@@ -875,7 +875,7 @@ int GetTasksIconHorzOffset() const;
 ### Remarks  
   
 ##  <a name="gettasksiconvertoffset"></a>  CMFCTasksPane::GetTasksIconVertOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 int GetTasksIconVertOffset() const;  
@@ -899,7 +899,7 @@ int GetVertMargin() const;
  The vertical margin is the space between a task pane and the edges of the client area. The default value of the vertical margin is 12 pixels.  
   
 ##  <a name="isaccessibilitycompatible"></a>  CMFCTasksPane::IsAccessibilityCompatible  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsAccessibilityCompatible();
@@ -949,7 +949,7 @@ BOOL IsForwardButtonEnabled() const;
  The forward button enables forward navigation in the history of task pages.  
   
 ##  <a name="isgroupcollapseenabled"></a>  CMFCTasksPane::IsGroupCollapseEnabled  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 BOOL IsGroupCollapseEnabled() const;  
@@ -980,7 +980,7 @@ BOOL IsNavigationToolbarEnabled() const;
  `TRUE` if the navigation toolbar is enabled; otherwise, `FALSE`.  
   
 ##  <a name="istoolbox"></a>  CMFCTasksPane::IsToolBox  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL IsToolBox() const;  
@@ -1011,7 +1011,7 @@ BOOL IsWrapTasksEnabled() const;
  `TRUE` if the task string is wrapped; otherwise, `FALSE`.  
   
 ##  <a name="loadstate"></a>  CMFCTasksPane::LoadState  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL LoadState(
@@ -1040,7 +1040,7 @@ virtual void OnActivateTasksPanePage();
  Override this method in a derived class to customize the appearance of the task pane page.  
   
 ##  <a name="oncancel"></a>  CMFCTasksPane::OnCancel  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnCancel();
@@ -1078,7 +1078,7 @@ virtual void OnClickTask(
  Override this method in a derived class to execute custom code when a task is clicked.  
   
 ##  <a name="onok"></a>  CMFCTasksPane::OnOK  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnOK();
@@ -1123,7 +1123,7 @@ virtual void OnPressHomeButton();
  Override this method in a derived class to execute custom code when the user clicks the home navigation button.  
   
 ##  <a name="onpressotherbutton"></a>  CMFCTasksPane::OnPressOtherButton  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnPressOtherButton(
@@ -1138,7 +1138,7 @@ virtual void OnPressOtherButton(
 ### Remarks  
   
 ##  <a name="onsetaccdata"></a>  CMFCTasksPane::OnSetAccData  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL OnSetAccData(long lVal);
@@ -1152,7 +1152,7 @@ virtual BOOL OnSetAccData(long lVal);
 ### Remarks  
   
 ##  <a name="onupdatecmdui"></a>  CMFCTasksPane::OnUpdateCmdUI  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void OnUpdateCmdUI(
@@ -1167,7 +1167,7 @@ virtual void OnUpdateCmdUI(
 ### Remarks  
   
 ##  <a name="pretranslatemessage"></a>  CMFCTasksPane::PreTranslateMessage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1181,7 +1181,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Remarks  
   
 ##  <a name="recalclayout"></a>  CMFCTasksPane::RecalcLayout  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void RecalcLayout(BOOL bRedraw = TRUE);
@@ -1275,7 +1275,7 @@ BOOL RemoveTask(
  `TRUE` if the function succeeds; `FALSE` if `nGroup` or `nTask` is invalid.  
   
 ##  <a name="savestate"></a>  CMFCTasksPane::SaveState  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual BOOL SaveState(
@@ -1294,7 +1294,7 @@ virtual BOOL SaveState(
 ### Remarks  
   
 ##  <a name="serialize"></a>  CMFCTasksPane::Serialize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void Serialize(CArchive& ar);
@@ -1536,7 +1536,7 @@ void SetTasksHorzOffset(int n = -1);
  The default horizontal offset is 12 pixels.  
   
 ##  <a name="settasksiconhorzoffset"></a>  CMFCTasksPane::SetTasksIconHorzOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetTasksIconHorzOffset(int n = -1);
@@ -1548,7 +1548,7 @@ void SetTasksIconHorzOffset(int n = -1);
 ### Remarks  
   
 ##  <a name="settasksiconvertoffset"></a>  CMFCTasksPane::SetTasksIconVertOffset  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 void SetTasksIconVertOffset(int n = -1);
@@ -1634,7 +1634,7 @@ BOOL SetWindowHeight(
  Call [CMFCTasksPane::AddWindow](#addwindow) to add tasks with window controls.  
   
 ##  <a name="showcommandmessagestring"></a>  CMFCTasksPane::ShowCommandMessageString  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+
   
 ```  
 virtual void ShowCommandMessageString(UINT uiCmdId);

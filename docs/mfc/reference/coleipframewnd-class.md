@@ -87,7 +87,7 @@ COleIPFrameWnd();
 ```  
   
 ### Remarks  
- For more information, see [OLEINPLACEFRAMEINFO](http://msdn.microsoft.com/library/windows/desktop/ms693737) in the [!INCLUDE[winSDK](../../atl/includes/winsdk_md.md)].  
+ For more information, see [OLEINPLACEFRAMEINFO](http://msdn.microsoft.com/library/windows/desktop/ms693737) in the Windows SDK.  
   
 ##  <a name="oncreatecontrolbars"></a>  COleIPFrameWnd::OnCreateControlBars  
  The framework calls the `OnCreateControlBars` function when an item is activated for in-place editing.  

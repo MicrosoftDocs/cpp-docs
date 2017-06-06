@@ -40,7 +40,7 @@ translation.priority.mt:
 # Building on the Command Line
 You can build C and C++ applications on the command line by using tools that are included in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. Every edition of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] installs a command-line toolset that includes a compiler, linker, and other build tools, and a command file that sets the required build environment. By default, these tools are installed in *drive*:\Program Files (x86)\Microsoft Visual Studio *version*\VC\bin\\. (The actual directory on your computer depends on the system, the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] version, and your installation choices.)  
   
- To work correctly, the [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] command-line tools require several environment variables that are customized for your installation. When [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] is installed, it creates a vcvarsall.bat command file that you can run to set the required environment variables. It also creates a shortcut that starts a Developer Command Prompt window in which these variables are already set. These environment variables are specific to your installation, and might be changed by product updates or upgrades. Therefore, we recommend that you use vcvarsall.bat or a Developer Command Prompt shortcut instead of setting them yourself. For more information, see [Setting the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
+ To work correctly, the Visual C++ command-line tools require several environment variables that are customized for your installation. When [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] is installed, it creates a vcvarsall.bat command file that you can run to set the required environment variables. It also creates a shortcut that starts a Developer Command Prompt window in which these variables are already set. These environment variables are specific to your installation, and might be changed by product updates or upgrades. Therefore, we recommend that you use vcvarsall.bat or a Developer Command Prompt shortcut instead of setting them yourself. For more information, see [Setting the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
   
 ### To open a Developer Command Prompt window  
   
@@ -48,7 +48,7 @@ You can build C and C++ applications on the command line by using tools that are
   
 2.  In the **Visual Studio** folder, choose the **Developer Command Prompt** for your version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. If you've installed the Visual C++ Build Tools edition, choose the **x86 Native Tools Command Prompt**.  
   
- To build a C/C++ project on the command line, you can use these [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] command-line tools:  
+ To build a C/C++ project on the command line, you can use these Visual C++ command-line tools:  
   
  [CL](../build/reference/compiling-a-c-cpp-program.md)  
  Use the compiler (cl.exe) to compile and link source code files into apps, libraries, and DLLs.  
@@ -57,13 +57,13 @@ You can build C and C++ applications on the command line by using tools that are
  Use the linker (link.exe) to link compiled object files and libraries into apps and DLLs.  
   
  [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)  
- Use MSBuild (msbuild.exe) to build [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] projects and [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] solutions. This is equivalent to running the **Build** project or **Build Solution** command in the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE.  
+ Use MSBuild (msbuild.exe) to build Visual C++ projects and [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] solutions. This is equivalent to running the **Build** project or **Build Solution** command in the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE.  
   
  [DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)  
  Use DEVENV (devenv.exe) combined with a command-line switch—for example, **/Build** or **/Clean**—to perform certain build commands without displaying the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] IDE.  
   
  [NMAKE](../build/nmake-reference.md)  
- Use NMAKE (nmake.exe) to automate tasks that build [!INCLUDE[vcprvc](../build/includes/vcprvc_md.md)] projects by using a traditional makefile.  
+ Use NMAKE (nmake.exe) to automate tasks that build Visual C++ projects by using a traditional makefile.  
   
  When you build on the command line, you can get information about warnings, errors, and messages by starting [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] and then on the menu bar, choosing **Help**, **Search**.  
   

@@ -36,7 +36,7 @@ translation.priority.ht:
 These functions provide support for loading and registering a type library.  
   
 > [!IMPORTANT]
->  The functions listed in the following tables cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  The functions listed in the following tables cannot be used in applications that execute in the Windows Runtime.  
   
 |||  
 |-|-|  

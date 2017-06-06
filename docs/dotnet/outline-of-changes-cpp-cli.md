@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Outline of Changes (C++/CLI)
-This outline shows you examples of some of the changes in the language from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)]. Follow the link that accompanies each item for more information.  
+This outline shows you examples of some of the changes in the language from Managed Extensions for C++ to Visual C++. Follow the link that accompanies each item for more information.  
   
 ## No Double Underscore Keywords  
  The double underscore in front of all keywords has been removed, with one exception. Thus, `__value` becomes `value`, and `__interface` becomes `interface`, and so on. To prevent name clashes between keywords and identifiers in user code, keywords are primarily treated as contextual.  
@@ -465,7 +465,7 @@ public enum class e2 : unsigned short {
   
 -   A forward declaration of a CLR enum is no longer supported.  
   
--   The overload resolution between the built-in arithmetic types and the Object class hierarchy has reversed between Managed Extensions and [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)]. As a side-effect, CLR enums are no longer implicitly converted to arithmetic types.  
+-   The overload resolution between the built-in arithmetic types and the Object class hierarchy has reversed between Managed Extensions and Visual C++. As a side-effect, CLR enums are no longer implicitly converted to arithmetic types.  
   
 -   In the new syntax, a CLR enum maintains its own scope, which is not the case in Managed Extensions. Previously, enumerators were visible within the containing scope of the enum; now, enumerators are encapsulated within the scope of the enum.  
   

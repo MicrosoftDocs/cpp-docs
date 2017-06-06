@@ -31,7 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # C++/CLI Tasks
-The articles in this section of the documentation show how to use various features of [!INCLUDE[cppcli](../build/reference/includes/cppcli_md.md)].  
+The articles in this section of the documentation show how to use various features of C++/CLI.  
   
 ## In This Section  
  

@@ -14,7 +14,7 @@ ms.author: "ghogen"
 manager: "ghogen"
 ---
 # Building apps and libraries (C++/CX)
-The topics in this section provide a few details about using the build system to produce a Universal Windows Platform app or [!INCLUDE[wrt](../cppcx/includes/wrt-md.md)] component.  
+The topics in this section provide a few details about using the build system to produce a Universal Windows Platform app or Windows Runtime component.  
   
 ## In this section  
   

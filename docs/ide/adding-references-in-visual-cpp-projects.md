@@ -41,7 +41,7 @@ It is very common for programs to call into APIs in other binaries such as DLLs,
   
  In a native C++ project, if you are consuming a native DLL or COM component that is not being produced by another project in your solution, you use LoadLibrary or CoCreateInstance to specify the path to the binary, or else let the system locate it by looking in specific well-defined locations.  
   
- In other types of projects such as UWP projects or C++/CLI projects, or when the binary is produced by another project in your solution, you add a *reference* to the assembly,  component or project.   A reference is essentially a set of data that enables your program to locate and communicate with the binary.       When you add a reference, Visual Studio handles the low level details. To set references from a C++ project to [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] assemblies (C++/CLI only), COM components, other projects in your solution including shared projects, or connected services,  right-click on the **References** node in **Solution Explorer** to bring up the **Reference Manager**. What you see in Reference Manager differs depending on your project type.  
+ In other types of projects such as UWP projects or C++/CLI projects, or when the binary is produced by another project in your solution, you add a *reference* to the assembly,  component or project.   A reference is essentially a set of data that enables your program to locate and communicate with the binary.       When you add a reference, Visual Studio handles the low level details. To set references from a C++ project to .NET Frameworkassemblies (C++/CLI only), COM components, other projects in your solution including shared projects, or connected services,  right-click on the **References** node in **Solution Explorer** to bring up the **Reference Manager**. What you see in Reference Manager differs depending on your project type.  
   
  In a native C++ project (ATL) the concept of *references* only applies to other projects in the solution, including shared projects, so that is all you see in **Reference Manager**:  
   
@@ -71,7 +71,7 @@ It is very common for programs to call into APIs in other binaries such as DLLs,
  Displays the tool that is used to build the interop assembly from the referenced COM library or ActiveX control.  
   
 ### Assembly reference properties  
- Assembly reference properties are available only for references to [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] assemblies in C++/CLI projects. These properties are displayed only when a [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] assembly is selected in the **References** pane. The properties cannot be modified.  
+ Assembly reference properties are available only for references to .NET Frameworkassemblies in C++/CLI projects. These properties are displayed only when a .NET Frameworkassembly is selected in the **References** pane. The properties cannot be modified.  
   
  **Relative Path**  
  Displays the relative path from the project directory to the referenced assembly.  
@@ -116,7 +116,7 @@ It is very common for programs to call into APIs in other binaries such as DLLs,
  Displays the directory path of the referenced assembly.  
   
  **Identity**  
- For the [!INCLUDE[dnprdnshort](../error-messages/tool-errors/includes/dnprdnshort_md.md)] assemblies, displays the full path. For COM components, displays the GUID.  
+ For the .NET Frameworkassemblies, displays the full path. For COM components, displays the GUID.  
   
  **Label**  
  Displays the label of the reference.  

@@ -37,7 +37,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Sealing a Virtual Function
-The syntax for sealing a virtual function has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The syntax for sealing a virtual function has changed from Managed Extensions for C++ to Visual C++.  
   
  The `__sealed` keyword is used in Managed Extensions to modify either a reference type, disallowing subsequent derivation from it (see [Declaration of a Managed Class Type](../dotnet/declaration-of-a-managed-class-type.md)), or to modify a virtual function, disallowing subsequent overriding of the method in a derived class. For example:  
   

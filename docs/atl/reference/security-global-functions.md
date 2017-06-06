@@ -38,7 +38,7 @@ translation.priority.ht:
 These functions provide support for modifying SID and ACL objects.  
   
 > [!IMPORTANT]
->  The functions listed in the following table cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.  
   
 |||  
 |-|-|  
@@ -59,7 +59,7 @@ These functions provide support for modifying SID and ACL objects.
  Call this function to retrieve the discretionary access-control list (DACL) information of a specified object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 inline bool AtlGetDacl(
@@ -88,7 +88,7 @@ inline bool AtlGetDacl(
  Call this function to set the discretionary access-control list (DACL) information of a specified object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 inline bool AtlSetDacl(
@@ -123,7 +123,7 @@ inline bool AtlSetDacl(
  Call this function to retrieve the group security identifier (SID) of an object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 inline bool AtlGetGroupSid(
@@ -152,7 +152,7 @@ inline bool AtlGetGroupSid(
  Call this function to set the group security identifier (SID) of an object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 inline bool AtlSetGroupSid(
@@ -181,7 +181,7 @@ inline bool AtlSetGroupSid(
  Call this function to retrieve the owner security identifier (SID) of an object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 inline bool AtlGetOwnerSid(
@@ -210,7 +210,7 @@ inline bool AtlGetOwnerSid(
  Call this function to set the owner security identifier (SID) of an object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 inline bool AtlSetOwnerSid(
@@ -239,7 +239,7 @@ inline bool AtlSetOwnerSid(
  Call this function to retrieve the system access-control list (SACL) information of a specified object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 inline bool AtlGetSacl(
@@ -275,7 +275,7 @@ inline bool AtlGetSacl(
  Call this function to set the system access-control list (SACL) information of a specified object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 inline bool AtlSetSacl(
@@ -317,7 +317,7 @@ inline bool AtlSetSacl(
  Call this function to retrieve the security descriptor of a given object.  
   
 > [!IMPORTANT]
->  This function cannot be used in applications that execute in the [!INCLUDE[wrt](../../atl/reference/includes/wrt_md.md)].  
+>  This function cannot be used in applications that execute in the Windows Runtime.  
   
 ```
 inline bool AtlGetSecurityDescriptor(

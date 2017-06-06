@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Changes in Constructor Initialization Order
-The order of initialization for class constructors has changed from Managed Extensions for C++ to [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)].  
+The order of initialization for class constructors has changed from Managed Extensions for C++ to Visual C++.  
   
 ## Comparison of Constructor Initialization Order  
  Under Managed Extensions for C++, constructor initialization occurred in the following order:  
@@ -52,7 +52,7 @@ The order of initialization for class constructors has changed from Managed Exte
   
 3.  The code body of the class constructor is executed.  
   
- Note this change applies only to CLR classes; native classes in [!INCLUDE[cpp_current_long](../dotnet/includes/cpp_current_long_md.md)] still follow the previous conventions. In both cases, these rules cascade upward throughout the whole hierarchy chain of a given class.  
+ Note this change applies only to CLR classes; native classes in Visual C++ still follow the previous conventions. In both cases, these rules cascade upward throughout the whole hierarchy chain of a given class.  
   
  Consider the following code example using Managed Extensions for C++:  
   

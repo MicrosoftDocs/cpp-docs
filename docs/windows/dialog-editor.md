@@ -50,7 +50,7 @@ The Dialog editor allows you to create or edit dialog box resources. You open th
   
  The Dialog editor also allows you to use custom controls, including ActiveX controls. In addition, you can edit a [form view](../mfc/reference/cformview-class.md), [Record Views](../data/record-views-mfc-data-access.md), or [Dialog Bars](../mfc/dialog-bars.md).  
   
- Starting with [!INCLUDE[vs_dev14](../ide/includes/vs_dev14_md.md)], you can use the dialog editor to define dynamic layouts, which specify how controls move and resize when the user resizes a dialog. For more information, see [Dynamic Layout](../mfc/dynamic-layout.md).  
+ Starting with Visual Studio 2015, you can use the dialog editor to define dynamic layouts, which specify how controls move and resize when the user resizes a dialog. For more information, see [Dynamic Layout](../mfc/dynamic-layout.md).  
   
 -   [Creating a New Dialog Box](../windows/creating-a-new-dialog-box.md)  
   
