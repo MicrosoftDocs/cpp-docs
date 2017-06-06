@@ -1,7 +1,7 @@
 ---
 title: "C++ compiler conformance improvements | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/16/2016"
+ms.date: "06/05/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
     - "cs-cz"
@@ -143,7 +143,7 @@ int main()
 ```
 
 ### constexpr
-Visual Studio 2017 correctly raises an error when the left-hand operand of a conditionally evaluating operation is not valid in a constexpr context. The following code compiles in Visual Studio 2015 but not in Visual Studio 2017:
+Visual Studio 2017 correctly raises an error when the left-hand operand of a conditionally evaluating operation is not valid in a constexpr context. The following code compiles in Visual Studio 2015 but not in Visual Studio 2017 (C3615 constexpr function 'f' cannot result in a constant expression):
 
 ```cpp  
 template<int N>
@@ -154,7 +154,7 @@ struct array
 
 constexpr bool f(const array<1> &arr)
 {
-       return arr.size() == 10 || arr.size() == 11; // error starting in Visual Studio 2017
+       return arr.size() == 10 || arr.size() == 11; // C3615	
 }
 ```
 To correct the error, either declare the array::size() function as constexpr or remove the constexpr qualifier from f. 
@@ -372,8 +372,8 @@ Visual Studio 2017 Update Version 15.3 improves pre-condition checks for type-tr
 struct S; 
 enum E; 
  
-static_assert(!__is_assignable(S, S), "fail"); // this is allowed in VS2017 RTM, but should fail 
-static_assert(__is_convertible_to(E, E), "fail"); // this is allowed in VS2017 RTM, but should fail
+static_assert(!__is_assignable(S, S), "fail"); // C2139 in 15.3
+static_assert(__is_convertible_to(E, E), "fail"); // C2139 in 15.3
 ```
 
 ### New compiler warning and runtime checks on native-to-managed marshaling
@@ -416,7 +416,7 @@ To fix the error, remove the `#pragma managed` directive to mark the caller as n
 WinRT APIs that are released for experimentation and feedback will be decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Update Version 15.3, the compiler will produce warning C4698 when it encounters  the attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs will start triggering this compiler warning. Newer Windows SDKs will have the attribute removed from all shipped types, but if you are using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
 The following code produces warning C4698: "'Windows::Storage::IApplicationDataStatics2::GetForUserAsync' is for evaluation purposes only and is subject to change or removal in future updates":
 ```cpp
-Windows::Storage::IApplicationDataStatics2::GetForUserAsync()
+Windows::Storage::IApplicationDataStatics2::GetForUserAsync() //C4698
 ```
 
 To disable the warning, add a #pragma:
@@ -436,7 +436,7 @@ Update Version 15.3 produces an error when it encounters an out-of-line definiti
 struct S {}; 
  
 template <typename T> 
-void S::f(T t) {}
+void S::f(T t) {} //C2039: 'f': is not a member of 'S'
 ```
 
 To fix the error, add a declaration to the class:
@@ -461,7 +461,7 @@ Update Version 15.3 produces an error when you attempt to convert a type to a ba
 #include <memory> 
  
 class B { }; 
-class D : B { }; // should be public B { }; 
+class D : B { }; // C2243. should be public B { }; 
  
 void f() 
 { 
@@ -479,7 +479,7 @@ struct A {
 }; 
  
 template <typename T> 
-T A<T>::f(T t, bool b = false) 
+T A<T>::f(T t, bool b = false) // C5034
 { 
 ... 
 }
@@ -529,7 +529,7 @@ In Update Version 15.3, the compiler no longer ignores attributes if __declspec(
 
 ```cpp
  
-__declspec(noinline) extern "C" HRESULT __stdcall
+__declspec(noinline) extern "C" HRESULT __stdcall //C4768
 ```
 
 To fix the warning, put extern "C" first:
@@ -564,7 +564,7 @@ void h()
 Visual Studio 2017 RTW release had a regression in which the C++ compiler would not issue a diagnostic if a 'const' variable was not initialized. This regression has been fixed in Visual Studio 2017 Update 1. The following code now produces "warning C4132: 'Value': const object should be initialized":
 
 ```cpp
-const int Value;
+const int Value; //C4132
 ```
 To fix the error, assign a value to `Value`.
 
@@ -649,7 +649,7 @@ void f()
    using N::f; 
  
    S s1, s2;
-   f(s1, s2);
+   f(s1, s2); // C2668
 }
 ```
 To fix the code, remove the using N::f statement if you intended to call ::f().
@@ -664,7 +664,8 @@ void f(S, int);
  
 void g()
 {
-   void f(S); // or void f(S, int);
+   void f(S); // C2660 'f': function does not take 2 arguments:
+   // or void f(S, int);
    S s;
    f(s, 0);
 }
