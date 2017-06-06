@@ -1,6 +1,5 @@
 ---
-# Mandatory fields. See more on aka.ms/skyeye/meta.
-title: vcpkg: C++ Package Manager for Windows | Microsoft Docs 
+title: vcpkg-- a C++ Package Manager for Windows | Microsoft Docs 
 description: vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows.
 keywords: vcpkg
 author: mikeblome
@@ -18,8 +17,10 @@ manager: ghogen
 
 # vcpkg: C++ Package Manager for Windows 
 vcpkg is a command line package manager that greatly simplifies the acquisition and installation of third-party libraries on Windows. If your project uses third-party libraries, we recommend that you use vcpkg to install them. vcpkg supports both open-source and proprietary libraries. All libraries in the vcpkg public catalog have been tested for compatibility with Visual Studio 2015 and Visual Studio 2017. As of May 2017 there are over 238 libraries in the catalog and the C++ community is adding more libraries on an ongoing basis.
+
 The following diagram shows the basic architecture of vcpkg:
- ![vcpkg architecture](media/vcpkg_arch.png "vcpkg architecture")  
+
+![vcpkg architecture](media/vcpkg_arch.png "vcpkg architecture")  
 
 ## Simple yet flexible
 With a single command, you can download sources and build a library. vcpkg is itself an open-source project, available on GitHub. You can customize your private clone(s) in any way you like, for example by specifying different libraries, or different versions of libraries than what are found in the public catalog. You can have multiple clones of vcpkg on a single machine, each one producing custom sets of libraries and/or compilation switches, etc. Each clone is a completely self-contained, x-copyable environment with its own copy of vcpkg.exe that operates only on its own hierarchy. vcpkg is not added to any environment variables, and has no dependency on the Windows Registry or Visual Studio.
