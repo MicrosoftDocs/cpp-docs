@@ -70,7 +70,7 @@ translation.priority.ht:
 |[operator ==, !=, \<, >, \<=, >=](../cpp/bstr-t-relational-operators.md)|Compares two `_bstr_t` objects.|  
 |[operator wchar_t* &#124; char\*](../cpp/bstr-t-wchar-t-star-bstr-t-char-star.md)|Extract the pointers to the encapsulated Unicode or multibyte `BSTR` object.|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Requirements  
  **Header:** comutil.h  

@@ -76,7 +76,7 @@ void __incfsdword(
 ## Remarks  
  These intrinsics are only available in kernel mode, and the routines are only available as intrinsics.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)   

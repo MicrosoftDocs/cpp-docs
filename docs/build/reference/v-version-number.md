@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # /V (Version Number)
-Embeds a text stringin the .obj file. Deprecated.  
+Deprecated. Embeds a text string in the .obj file.  
   
 ## Syntax  
   
@@ -56,7 +56,7 @@ Embeds a text stringin the .obj file. Deprecated.
   
  You can also use [comment (C/C++)](../../preprocessor/comment-c-cpp.md) with the compiler comment-type argument to place the name and version number of the compiler in the .obj file.  
   
- **/V** is deprecated; **/V** was primarily used to support building virtual device drivers (VxDs), and building VxDs is no longer supported by the [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] toolset. For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ The **/V** option is deprecated beginning in Visual Studio 2005; **/V** was primarily used to support building virtual device drivers (VxDs), and building VxDs is no longer supported by the Visual C++ toolset. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

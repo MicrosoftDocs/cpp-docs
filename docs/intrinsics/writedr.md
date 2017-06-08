@@ -63,7 +63,7 @@ void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
   
  **Header file** \<intrin.h>  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

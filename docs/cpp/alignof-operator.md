@@ -112,7 +112,7 @@ S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
   
 -   [Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   

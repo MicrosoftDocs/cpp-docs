@@ -76,7 +76,7 @@ unsigned __int64 __shiftright128( 
 ## Example  
  For an example, see [__shiftleft128](../intrinsics/shiftleft128.md).  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__shiftleft128](../intrinsics/shiftleft128.md)   

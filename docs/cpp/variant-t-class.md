@@ -68,7 +68,7 @@ translation.priority.ht:
 |[operator ==, !=](../cpp/variant-t-relational-operators.md)|Compare two `_variant_t` objects for equality or inequality.|  
 |[Extractors](../cpp/variant-t-extractors.md)|Extract data from the encapsulated **VARIANT** object.|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Requirements  
  **Header:** comutil.h  

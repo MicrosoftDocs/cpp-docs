@@ -63,7 +63,7 @@ unsigned __int64 __readdr(unsigned int DebugRegister);
   
  **Header file** \<intrin.h>  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

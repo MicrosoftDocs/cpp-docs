@@ -34,20 +34,21 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Project Build Error PRJ0003
-Error spawning 'command line'.  
+# Project Build Error PRJ0003  
   
- A command, ***command line***, which was formed from input in the **Property Pages** dialog box, returned an error code but no information will appear in the Output window.  
+> Error spawning '*command line*'.  
   
- Possible reasons for this error:  
+The *command line* command formed from input in the **Property Pages** dialog box returned an error code, but no information appears in the **Output** window.  
   
--   Your project depends on ATL Server. Beginning with Visual Studio 2008, ATL Server is no longer included as part of Visual Studio, but has been released as a shared-source project at CodePlex. To download the ATL Server source code and tools, go to [http://go.microsoft.com/fwlink/?LinkID=81979](http://go.microsoft.com/fwlink/?LinkID=81979).  
+Possible reasons for this error include:  
+  
+-   Your project depends on ATL Server. Beginning in Visual Studio 2008, ATL Server is no longer included as part of Visual Studio, but has been released as a shared-source project at CodePlex. To download the ATL Server source code and tools, go to [ATL Server Library and Tools](http://go.microsoft.com/fwlink/?LinkID=81979).  
   
 -   Low system resources. Close some applications to resolve this.  
   
 -   Insufficient security privileges. Verify that you have sufficient security privileges.  
   
--   The executable paths specified in [VC++ Directories](http://msdn.microsoft.com/en-us/e027448b-c811-4c3d-8531-4325ad3f6e02) do not include the path for the tool that you are attempting to run.  
+-   The executable paths specified in **VC++ Directories** do not include the path for the tool that you are attempting to run. For information, see [Working with Project Properties](../../ide/working-with-project-properties.md)  
   
 -   For makefile projects, you are missing a command to run on either **Build Command Line** or **Rebuild Command Line**.  
   

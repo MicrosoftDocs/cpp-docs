@@ -36,7 +36,8 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# _mm_stream_si64x
+# _mm_stream_si64x  
+  
 **Microsoft Specific**  
   
  Generates the MOVNTI instruction. Writes the data in `Source` to a memory location specified by `Dest`, without polluting the caches.  
@@ -51,6 +52,7 @@ void _mm_stream_si64x( 
 ```  
   
 #### Parameters  
+  
  [out] `Dest`  
  A pointer to the location to write the source data to.  
   
@@ -66,11 +68,12 @@ void _mm_stream_si64x( 
  **Header file** \<intrin.h>  
   
 ## Remarks  
+  
  This routine is only available as an intrinsic.  
   
 ## Example  
   
-```  
+```C  
 // _mm_stream_si64x.c  
 // processor: x64  
   
@@ -94,8 +97,7 @@ int main()
 0 ffffffffffff 0 0  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
- [Cache Support for Streaming SIMD Extensions 2 Integer Operations](http://msdn.microsoft.com/en-us/a9c9b42f-de9e-4374-aeb6-5f65bfb669b6)   
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

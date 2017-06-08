@@ -60,7 +60,7 @@ void __ud2();
   
  **Header file** \<intrin.h>  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Example  
  The following example executes an undefined instruction, which raises an exception. The exception handler then changes the return code from zero to one.  

@@ -34,14 +34,17 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Compiler Error C2823
-a typedef template is illegal  
+# Compiler Error C2823  
   
- Templates are not allowed in [typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1) definitions.  
+> a typedef template is illegal  
   
- The following sample generates C2823:  
+Templates are not allowed in `typedef` definitions.  
   
-```  
+## Example  
+  
+The following sample generates C2823, and shows one way to fix it:  
+  
+```cpp  
 // C2823.cpp  
 template<class T>  
 typedef struct x {  

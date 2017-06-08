@@ -59,7 +59,7 @@ unsigned __int64 __readeflags(void);
   
  **Header file** \<intrin.h>  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

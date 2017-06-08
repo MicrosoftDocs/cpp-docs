@@ -77,5 +77,5 @@ In this walkthrough, you deliberately introduce a Visual C++ syntax error in you
  **Previous:** [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) &#124; **Next:**[Walkthrough: Testing a Project (C++)](../ide/walkthrough-testing-a-project-cpp.md)  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
- [DELETE_PENDING_Building and Debugging](http://msdn.microsoft.com/en-us/9f6ba537-5ea0-46fb-b6ba-b63d657d84f1)
+ [C++ Language Reference](../cpp/cpp-language-reference.md)   
+ [Building C/C++ Programs](../build/building-c-cpp-programs.md)

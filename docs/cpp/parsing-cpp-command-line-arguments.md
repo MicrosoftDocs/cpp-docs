@@ -90,7 +90,7 @@ int main( int argc,      // Number of strings in array argv
 |`a\\\"b c d`|`a\"b`|`c`|`d`|  
 |`a\\\\"b c" d e`|`a\\b c`|`d`|`e`|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [main: Program Startup](../cpp/main-program-startup.md)

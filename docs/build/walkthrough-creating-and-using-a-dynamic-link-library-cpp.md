@@ -256,7 +256,6 @@ This step-by-step walkthrough shows how to create a dynamic link library (DLL) f
      Now that you've created a DLL and a client application, you can experiment. Try setting breakpoints in the code of the client app or in the library, and run the app in the debugger. Add other members to the Functions class, or add a new class.  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)   
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
  [Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)   

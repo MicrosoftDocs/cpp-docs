@@ -66,7 +66,7 @@ translation.priority.ht:
   
  If a value exceeds the largest integer representation, the Microsoft compiler generates an error.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Floating Limits](../cpp/floating-limits.md)

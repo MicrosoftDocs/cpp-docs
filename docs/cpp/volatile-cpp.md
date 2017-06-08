@@ -86,7 +86,7 @@ volatile declarator ;
 > [!NOTE]
 >  When it relies on the enhanced guarantee that's provided when the **/volatile:ms** compiler option is used, the code is non-portable.  
   
-## End Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   

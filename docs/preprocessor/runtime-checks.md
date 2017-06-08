@@ -84,4 +84,3 @@ Disables or restores the [/RTC](../build/reference/rtc-run-time-error-checks.md)
   
 ## See Also  
  [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)   
- [RTC sample](http://msdn.microsoft.com/en-us/b3415b09-f6fd-43dc-8c02-9a910bc2574e)

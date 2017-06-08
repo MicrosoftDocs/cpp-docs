@@ -62,7 +62,7 @@ argc[ ,char*argv[] [,char*envp[] ] ] );intwmain(intargc[ ,wchar_t*argv[] [,wchar
  `envp`  
  The `envp` array, which is a common extension in many UNIX systems, is used in Microsoft C++. It is an array of strings representing the variables set in the user's environment. This array is terminated by a **NULL** entry. It can be declared as an array of pointers to **char (char** \*envp[ ]**)** or as a pointer to pointers to **char (char** \*\*envp**)**. If your program uses **wmain** instead of **main**, use the `wchar_t` data type instead of `char`. The environment block passed to **main** and **wmain** is a "frozen" copy of the current environment. If you subsequently change the environment via a call to **putenv** or `_wputenv`, the current environment (as returned by `getenv`/`_wgetenv` and the `_environ`/ `_wenviron` variable) will change, but the block pointed to by envp will not change. See [Customizing Command Line Processing](../cpp/customizing-cpp-command-line-processing.md) for information on suppressing environment processing. This argument is ANSI compatible in C, but not in C++.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Example  
  The following example shows how to use the `argc`, `argv`, and `envp` arguments to **main**:  

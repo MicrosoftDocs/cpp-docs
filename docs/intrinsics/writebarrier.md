@@ -41,7 +41,7 @@ translation.priority.ht:
  Limits the compiler optimizations that can reorder memory access operations across the point of the call.  
   
 > [!CAUTION]
->  The `_ReadBarrier`, `_WriteBarrier`, and `_ReadWriteBarrier` compiler intrinsics and the `MemoryBarrier` macro are all deprecated and should not be used. For inter-thread communication, use mechanisms such as [atomic_thread_fence](http://msdn.microsoft.com/Library/14d2d5fc-e490-4160-9b1e-4711d78b0577) and [std::atomic\<T>](../standard-library/atomic.md), which are defined in the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md). For hardware access, use the [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option together with the [volatile](../cpp/volatile-cpp.md) keyword.  
+>  The `_ReadBarrier`, `_WriteBarrier`, and `_ReadWriteBarrier` compiler intrinsics and the `MemoryBarrier` macro are all deprecated and should not be used. For inter-thread communication, use mechanisms such as [atomic_thread_fence](../standard-library/atomic-functions.md#atomic_thread_fence) and [std::atomic\<T>](../standard-library/atomic.md), which are defined in the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md). For hardware access, use the [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option together with the [volatile](../cpp/volatile-cpp.md) keyword.  
   
 ## Syntax  
   
@@ -60,7 +60,7 @@ void _WriteBarrier(void);
 ## Remarks  
  The `_WriteBarrier` intrinsic limits the compiler optimizations that can remove or reorder memory access operations across the point of the call.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [_ReadBarrier](../intrinsics/readbarrier.md)   

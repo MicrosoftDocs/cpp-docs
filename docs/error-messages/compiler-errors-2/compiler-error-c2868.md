@@ -34,14 +34,17 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Compiler Error C2868
-'identifier' : illegal syntax for using-declaration; expected qualified-name  
+# Compiler Error C2868  
   
- A [using declaration](../../cpp/using-declaration.md) requires a [qualified name](http://msdn.microsoft.com/en-us/3fefb16d-8120-4627-8b3f-3d90fbdcd1df).  
+> '*identifier*' : illegal syntax for using-declaration; expected qualified-name  
   
- The following sample generates C2868:  
+A [using declaration](../../cpp/using-declaration.md) requires a *qualified name*, a scope-operator (`::`) separated sequence of namespace, class, or enumeration names that ends with the identifier name. A single scope resolution operator may be used to introduce a name from the global namespace.  
   
-```  
+## Example  
+  
+The following sample generates C2868 and also shows correct usage:  
+  
+```cpp  
 // C2868.cpp  
 class X {  
 public:  

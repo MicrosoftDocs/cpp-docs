@@ -87,7 +87,7 @@ int main()
 64  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Fundamental Types](../cpp/fundamental-types-cpp.md)

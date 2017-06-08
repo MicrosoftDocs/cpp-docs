@@ -234,7 +234,7 @@ void DoSomething()
  For more information, see [Thread Local Storage (TLS)](../parallel/thread-local-storage-tls.md).  
   
 ##  <a name="register"></a>  register  
- In C++11, the **register** keyword is deprecated. It specifies that the variable is to be stored in a machine register, if possible. Only function arguments and local variables can be declared with the register storage class.  
+ In C++11, the `register` keyword is deprecated. It specifies that the variable is to be stored in a machine register, if possible. Only function arguments and local variables can be declared with the register storage class.  
   
 ```  
 register int num;  
@@ -242,7 +242,7 @@ register int num;
   
  Like automatic variables, register variables persist only until the end of the block in which they are declared.  
   
- The compiler does not honor user requests for register variables; instead, it makes its own register choices when global optimizations are on. However, all other semantics associated with the [register](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9) keyword are honored by the compiler.  
+ The compiler does not honor user requests for register variables; instead, it makes its own register choices when global optimizations are on. However, all other semantics associated with the `register` keyword are honored by the compiler.  
   
  If the address-of operator (**&**) is used on an object that is declared with register, the compiler must put the object in memory rather than a register.  
   
@@ -251,7 +251,7 @@ register int num;
   
  Consider the following example, which defines a class that logs initialization and destruction of objects and then defines three objects, `I1`, `I2`, and `I3`:  
   
-```  
+```cpp  
 // initialization_of_objects.cpp  
 // compile with: /EHsc  
 #include <iostream>  

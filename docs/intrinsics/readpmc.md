@@ -68,7 +68,7 @@ unsigned __int64 __readpmc( 
 ## Remarks  
  This intrinsic is available in kernel mode only, and the routine is only available as an intrinsic.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

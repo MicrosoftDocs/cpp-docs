@@ -74,7 +74,7 @@ long _InterlockedAddLargeStatistic(
   
  This function behaves as a read-write barrier. For more information, see [_ReadWriteBarrier](../intrinsics/readwritebarrier.md).  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

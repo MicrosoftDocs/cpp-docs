@@ -33,10 +33,11 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Creating a Resource-Only DLL
+# Creating a Resource-Only DLL  
+  
 A resource-only DLL is a DLL that contains nothing but resources, such as icons, bitmaps, strings, and dialog boxes. Using a resource-only DLL is a good way to share the same set of resources among multiple programs. It is also a good way to provide an application with resources localized for multiple languages (see [Localized Resources in MFC Applications: Satellite DLLs](../build/localized-resources-in-mfc-applications-satellite-dlls.md)).  
   
- To create a resource-only DLL, you create a new Win32 DLL (non-MFC) project and add your resources to the project.  
+To create a resource-only DLL, you create a new Win32 DLL (non-MFC) project and add your resources to the project.  
   
 -   Select Win32 Project in the **New Project** dialog box and specify a DLL project type in the Win32 Project Wizard.  
   
@@ -44,15 +45,15 @@ A resource-only DLL is a DLL that contains nothing but resources, such as icons,
   
 -   On the **Project** menu, click **Add Existing Item**, and then insert the new .rc file into the project.  
   
--   Specify the [/NOENTRY](../build/reference/noentry-no-entry-point.md) linker option. /NOENTRY prevents the linker from linking a reference to _main into the DLL; this option is required to create a resource-only DLL.  
+-   Specify the [/NOENTRY](../build/reference/noentry-no-entry-point.md) linker option. /NOENTRY prevents the linker from linking a reference to `_main` into the DLL; this option is required to create a resource-only DLL.  
   
 -   Build the DLL.  
   
- The application that uses the resource-only DLL should call **LoadLibrary** to [explicitly link to the DLL](../build/loadlibrary-and-afxloadlibrary.md). To access the resources, call the generic functions **FindResource** and **LoadResource**, which work on any kind of resource, or call one of the following resource-specific functions:  
+The application that uses the resource-only DLL should call [LoadLibrary](../build/loadlibrary-and-afxloadlibrary.md) to explicitly link to the DLL. To access the resources, call the generic functions `FindResource` and `LoadResource`, which work on any kind of resource, or call one of the following resource-specific functions:  
   
 -   `FormatMessage`  
   
--   **LoadAccelerators**  
+-   `LoadAccelerators`  
   
 -   `LoadBitmap`  
   
@@ -64,11 +65,9 @@ A resource-only DLL is a DLL that contains nothing but resources, such as icons,
   
 -   `LoadString`  
   
- The application should call **FreeLibrary** when it is finished using the resources.  
-  
-## What do you want to know more about?  
-  
--   [DELETE_PENDING_Editing Resources](http://msdn.microsoft.com/en-us/c29d31c7-2d94-40ca-8aa0-c7262883529c)  
+The application should call `FreeLibrary` when it is finished using the resources.  
   
 ## See Also  
- [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+  
+[Working with Resource Files](../windows/working-with-resource-files.md)  
+[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

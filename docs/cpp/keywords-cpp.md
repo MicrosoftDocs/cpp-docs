@@ -125,7 +125,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 |[nothrow](../cpp/nothrow-cpp.md) <sup>1</sup>|[novtable](../cpp/novtable.md) <sup>1</sup>|[nullptr](../cpp/nullptr.md)|  
 |[operator](../cpp/operator-overloading.md)|[private](../cpp/private-cpp.md)|[property](../windows/property-cpp-component-extensions.md)|  
 |[property](../cpp/property-cpp.md) <sup>1</sup>|[protected](../cpp/protected-cpp.md)|[public](../cpp/public-cpp.md)|  
-|[ref class](../windows/classes-and-structs-cpp-component-extensions.md)|[ref struct](../windows/classes-and-structs-cpp-component-extensions.md)|[register](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)|  
+|[ref class](../windows/classes-and-structs-cpp-component-extensions.md)|[ref struct](../windows/classes-and-structs-cpp-component-extensions.md)|[register](../cpp/storage-classes-cpp.md#register)|  
 |[reinterpret_cast](../cpp/reinterpret-cast-operator.md)|[return](../cpp/return-statement-cpp.md)|[safecast](../windows/safe-cast-cpp-component-extensions.md)|  
 |[sealed](../windows/sealed-cpp-component-extensions.md)|[selectany](../cpp/selectany.md) <sup>1</sup>|[short](../cpp/fundamental-types-cpp.md)|  
 |[signed](../cpp/fundamental-types-cpp.md)|[sizeof](../cpp/sizeof-operator.md)|[static](storage-classes-cpp.md)|  
@@ -157,7 +157,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
   
  The `__based` keyword has limited uses for 32-bit and 64-bit target compilations.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Lexical Conventions](../cpp/lexical-conventions.md)   

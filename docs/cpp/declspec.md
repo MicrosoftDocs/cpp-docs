@@ -136,7 +136,7 @@ int * __declspec(selectany) pi3 = 0;   //ERROR, selectany is not part of a decla
 __declspec( thread ) int tls_i = 1;  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   

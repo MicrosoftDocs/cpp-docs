@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # /H (Restrict Length of External Names)
-Restricts the length of external names.  
+Deprecated. Restricts the length of external names.  
   
 ## Syntax  
   
@@ -72,7 +72,7 @@ Restricts the length of external names.
   
  The following example shows how using **/H** can actually introduce errors if identifier lengths are limited too much:  
   
-```  
+```cpp  
 // compiler_option_H.cpp  
 // compile with: /H5  
 // processor: x86  
@@ -90,7 +90,7 @@ void func2(void) {}
   
  Use of **/H** is incompatible with [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md).  
   
- **/H** is deprecated; the maximum length limits have been increased and **/H** is no longer needed.  For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ The **/H** option is deprecated since Visual Studio 2005; the maximum length limits have been increased and **/H** is no longer needed. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

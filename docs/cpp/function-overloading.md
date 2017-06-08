@@ -421,7 +421,7 @@ obj.name
   
  You can overload **operator new** solely on the basis of return type — specifically, on the basis of the memory-model modifier specified.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 -   Member functions cannot be overloaded solely on the basis of one being static and the other nonstatic.  
   

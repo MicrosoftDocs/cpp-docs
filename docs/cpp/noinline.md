@@ -52,7 +52,7 @@ class X {
 };  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__declspec](../cpp/declspec.md)   
