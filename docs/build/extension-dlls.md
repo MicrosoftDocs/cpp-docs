@@ -48,11 +48,11 @@ An MFC extension DLL is a DLL that typically implements reusable classes derived
   
  An MFC extension DLL has the following features and requirements:  
   
--   The client executable must be an MFC application compiled with **_AFXDLL** defined.  
+-   The client executable must be an MFC application compiled with `_AFXDLL` defined.  
   
 -   An extension DLL can also be used by a regular DLL that is dynamically linked to MFC.  
   
--   Extension DLLs should be compiled with `_AFXEXT` defined. This forces **_AFXDLL** to be also defined and ensures that the proper declarations is pulled in from the MFC header files. It also ensures that **AFX_EXT_CLASS** is defined as **__declspec(dllexport)** while building the DLL, which is necessary if you are using this macro to declare the classes in your extension DLL.  
+-   Extension DLLs should be compiled with `_AFXEXT` defined. This forces `_AFXDLL` to be also defined and ensures that the proper declarations is pulled in from the MFC header files. It also ensures that `AFX_EXT_CLASS` is defined as `__declspec(dllexport)` while building the DLL, which is necessary if you are using this macro to declare the classes in your extension DLL.  
   
 -   Extension DLLs should not instantiate a class derived from `CWinApp`, but should rely on the client application (or DLL) to provide this object.  
   
@@ -70,13 +70,13 @@ An MFC extension DLL is a DLL that typically implements reusable classes derived
   
 -   It creates a **CDynLinkLibrary** object during initialization if the extension DLL wants to export `CRuntimeClass` objects or resources to the application.  
   
- Before version 4.0 of MFC, this type of DLL was called an AFXDLL. AFXDLL refers to the **_AFXDLL** preprocessor symbol that is defined when building the DLL.  
+ Before version 4.0 of MFC, this type of DLL was called an AFXDLL. AFXDLL refers to the `_AFXDLL` preprocessor symbol that is defined when building the DLL.  
   
  The import libraries for the shared version of MFC are named according to the convention described in [Naming conventions for MFC DLLs](../build/naming-conventions-for-mfc-dlls.md). Visual C++ supplies prebuilt versions of the MFC DLLs, plus a number of non-MFC DLLs that you can use and distribute with your applications. These are documented in Redist.txt, which is installed to the Program Files\Microsoft Visual Studio folder.  
   
  If you are exporting using a .def file, place the following code at the beginning and end of your header file:  
   
-```  
+```cpp  
 #undef AFX_DATA  
 #define AFX_DATA AFX_EXT_DATA  
 // <body of your header file>  
@@ -102,11 +102,11 @@ An MFC extension DLL is a DLL that typically implements reusable classes derived
   
  Walking the list has the disadvantages that it is slightly slower and requires managing resource ID ranges. It has the advantage that a client application that links to several extension DLLs can use any DLL-provided resource without having to specify the DLL instance handle. `AfxFindResourceHandle` is an API used for walking the resource list to look for a given match. It takes the name and type of a resource and returns the resource handle where it was first found (or NULL).  
   
- If you do not want to walk the list and only load resources from a specific place, use the functions `AfxGetResourceHandle` and `AfxSetResourceHandle` to save the old handle and set the new handle. Be sure to restore the old resource handle before you return to the client application. For an example of using this approach to explicitly load a menu, see Testdll2 .cpp in the MFC sample [DLLHUSK](http://msdn.microsoft.com/en-us/dfcaa6ff-b8e2-4efd-8100-ee3650071f90).  
+ If you do not want to walk the list and only load resources from a specific place, use the functions `AfxGetResourceHandle` and `AfxSetResourceHandle` to save the old handle and set the new handle. Be sure to restore the old resource handle before you return to the client application. For an example of using this approach to explicitly load a menu, see Testdll2 .cpp in the MFC sample [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk).  
   
  Dynamic creation of MFC objects given an MFC name is similar. The MFC object deserialization mechanism needs to have all of the `CRuntimeClass` objects registered so that it can reconstruct by dynamically creating C++ objects of the required type based on what was stored earlier.  
   
- In the case of the MFC sample [DLLHUSK](http://msdn.microsoft.com/en-us/dfcaa6ff-b8e2-4efd-8100-ee3650071f90), the list looks something like:  
+ In the case of the MFC sample [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk), the list looks something like:  
   
 ```  
 head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE  
@@ -128,7 +128,7 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
   
  Merging the resources and class names of all DLLs into the client application's name space has the disadvantage of requiring you to be careful with what IDs or names you pick.  
   
- The [DLLHUSK](http://msdn.microsoft.com/en-us/dfcaa6ff-b8e2-4efd-8100-ee3650071f90) sample manages the shared resource name space by using multiple header files.  
+ The [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk) sample manages the shared resource name space by using multiple header files.  
   
  If your MFC extension DLL needs to maintain extra data for each application, you can derive a new class from **CDynLinkLibrary** and create it in `DllMain`. When running, the DLL can check the current application's list of **CDynLinkLibrary** objects to find the one for that particular extension DLL.  
   

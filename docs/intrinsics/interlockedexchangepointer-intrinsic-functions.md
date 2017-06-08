@@ -111,7 +111,7 @@ void * _InterlockedExchangePointer_HLERelease(
   
  These routines are only available as intrinsics.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

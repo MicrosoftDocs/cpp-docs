@@ -184,7 +184,7 @@ ff0000000000 + ff0000ffffffff = ffff00ffffffff
 Return value: ffff00ffffffff  
 ```  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

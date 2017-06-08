@@ -41,7 +41,7 @@ An MFC extension DLL is a DLL that typically implements reusable classes derived
   
  Extension DLLs can also be used for passing MFC-derived objects between the application and the DLL. The member functions associated with the passed object exist in the module where the object was created. Because these functions are properly exported when using the shared DLL version of MFC, you can freely pass MFC or MFC-derived object pointers between an application and the extension DLLs it loads.  
   
- For an example of a DLL that fulfills the basic requirements of an extension DLL, see the MFC sample [DLLHUSK](http://msdn.microsoft.com/en-us/dfcaa6ff-b8e2-4efd-8100-ee3650071f90). In particular, look at the Testdll1.cpp and Testdll2.cpp files.  
+ For an example of a DLL that fulfills the basic requirements of an extension DLL, see the MFC sample [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk). In particular, look at the Testdll1.cpp and Testdll2.cpp files.  
   
  Note that the term AFXDLL is no longer used in the Visual C++ documentation. An extension DLL has the same characteristics as the former AFXDLL.  
   

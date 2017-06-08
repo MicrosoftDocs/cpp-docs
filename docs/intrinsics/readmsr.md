@@ -70,7 +70,7 @@ __int64 __readmsr( 
   
  For more information, see the AMD documentation.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

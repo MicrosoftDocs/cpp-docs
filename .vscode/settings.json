@@ -1,4 +1,7 @@
 {
-    "files.associations": {},
+    "files.associations": {
+        "random": "cpp"
+    },
+
     "git.ignoreLimitWarning": true
 }

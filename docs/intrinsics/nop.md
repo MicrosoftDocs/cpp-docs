@@ -55,7 +55,7 @@ void __nop();
   
  **Header file** \<intrin.h>  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Remarks  
  The `__nop` function is equivalent to the `NOP` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](http://go.microsoft.com/fwlink/?LinkId=127) site.  

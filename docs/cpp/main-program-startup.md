@@ -74,7 +74,7 @@ int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
   
  Alternatively, the `main` and `wmain` functions can be declared as returning `void` (no return value). If you declare `main` or `wmain` as returning `void`, you cannot return an exit code to the parent process or operating system by using a [return](../cpp/return-statement-in-program-termination-cpp.md) statement. To return an exit code when `main` or `wmain` is declared as `void`, you must use the [exit](../cpp/exit-function.md) function.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
  The types for `argc` and `argv` are defined by the language. The names `argc`, `argv`, and `envp` are traditional, but are not required by the compiler. For more information and an example, see [Argument Definitions](../cpp/argument-definitions.md).  
   
 ## See Also  

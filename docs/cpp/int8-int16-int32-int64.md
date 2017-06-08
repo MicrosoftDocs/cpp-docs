@@ -85,7 +85,7 @@ int main()
 func  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   

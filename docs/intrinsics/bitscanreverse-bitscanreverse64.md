@@ -118,7 +118,7 @@ Enter a positive integer as the mask:
 Mask: 12 Index: 3  
 ```  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

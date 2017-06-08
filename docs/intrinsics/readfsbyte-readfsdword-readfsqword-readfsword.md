@@ -88,7 +88,7 @@ unsigned __int64 __readfsqword( 
 ## Remarks  
  These routines are available only as intrinsics.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)   

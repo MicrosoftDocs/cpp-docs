@@ -77,4 +77,4 @@ This topic provides information for UNIX users who are new to Visual C++ and wan
  For more information, see [Porting from UNIX to Win32](../porting/porting-from-unix-to-win32.md).  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)
+ [Building C/C++ Programs](../build/building-c-cpp-programs.md)

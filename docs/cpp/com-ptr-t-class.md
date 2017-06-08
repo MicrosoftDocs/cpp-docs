@@ -76,7 +76,7 @@ _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
 |[operators ==, !=, \<, >, \<=, >=](../cpp/com-ptr-t-relational-operators.md)|Compare the smart pointer object to another smart pointer, raw interface pointer, or **NULL**.|  
 |[Extractors](../cpp/com-ptr-t-extractors.md)|Extract the encapsulated COM interface pointer.|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Requirements  
  **Header:** comip.h  

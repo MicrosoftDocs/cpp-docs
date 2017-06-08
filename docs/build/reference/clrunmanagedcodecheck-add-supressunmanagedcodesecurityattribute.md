@@ -53,7 +53,7 @@ translation.priority.ht:
   
  Note that if you use <xref:System.Security.AllowPartiallyTrustedCallersAttribute> in your code, you should explicitly set **/CLRUNMANAGEDCODECHECK**. It is potential security vulnerability if an image contains both the SuppressUnmanagedCodeSecurity and AllowPartiallyTrustedCallers attributes.  
   
- See [Security Optimizations](http://msdn.microsoft.com/en-us/cf255069-d85d-4de3-914a-e4625215a7c0) for more information about the implications of using SuppressUnmanagedCodeSecurityAttribute.  
+ See [Secure Coding Guidelines for Unmanaged Code](/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code) for more information about the implications of using SuppressUnmanagedCodeSecurityAttribute.  
   
 ### To set this linker option in the Visual Studio development environment  
   

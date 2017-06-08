@@ -58,7 +58,7 @@ The __stdcall and thiscall calling conventions
  ![Calling convention for &#95;&#95;fastcall](../cpp/media/vc37i03.gif "vc37I03")  
 The __fastcall calling convention  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Calling Example: Function Prototype and Call](../cpp/calling-example-function-prototype-and-call.md)

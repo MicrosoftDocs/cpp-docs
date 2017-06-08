@@ -102,7 +102,7 @@ int main()
 950 850 750 650 550 450 350 250 150 50   
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

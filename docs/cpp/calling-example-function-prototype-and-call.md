@@ -58,7 +58,7 @@ MyFunc ('x', 12, 8192, 2.7183);
   
  For more information, see [Results of Calling Example](../cpp/results-of-calling-example.md).  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Calling Conventions](../cpp/calling-conventions.md)

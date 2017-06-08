@@ -88,7 +88,7 @@ class DllExport C {
   
 -   If you define a member function in a place other than the body of the class definition in which you declared it, a warning is generated if the function is defined as `dllexport` or **dllimport** (if this definition differs from that specified in the class declaration).  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [dllexport, dllimport](../cpp/dllexport-dllimport.md)

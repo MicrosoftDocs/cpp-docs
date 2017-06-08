@@ -256,7 +256,7 @@ struct S {
   
  The offset of an object is based on the offset of the previous object and the current packing setting, unless the object has a `__declspec(align(#))` attribute, in which case the alignment is based on the offset of the previous object and the `__declspec(align(#))` value for the object.  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__declspec](../cpp/declspec.md)   

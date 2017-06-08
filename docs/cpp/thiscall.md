@@ -54,7 +54,7 @@ translation.priority.mt:
   
  For non-static class functions, if the function is defined out-of-line, the calling convention modifier does not have to be specified on the out-of-line definition. That is, for class non-static member methods, the calling convention specified during declaration is assumed at the point of definition.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)

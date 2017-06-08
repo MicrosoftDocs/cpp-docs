@@ -53,7 +53,7 @@ translation.priority.ht:
   
 -   [_variant_t](../cpp/variant-t-class.md)  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)   

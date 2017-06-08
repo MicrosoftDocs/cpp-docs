@@ -57,5 +57,4 @@ The following syntax rules apply to all statements in a .def file. Other rules t
 -   If a string argument matches a [reserved word](../../build/reference/reserved-words.md), it must be enclosed in double quotation marks (").  
   
 ## See Also  
- [Module-Definition (.Def) Files](../../build/reference/module-definition-dot-def-files.md)   
- [Frequently Asked Questions on Building](http://msdn.microsoft.com/en-us/56a3bb8f-0181-4989-bab4-a07ba950ab08)
+ [Module-Definition (.Def) Files](../../build/reference/module-definition-dot-def-files.md)  

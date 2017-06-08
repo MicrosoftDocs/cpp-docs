@@ -65,7 +65,7 @@ unsigned char __inbyte(
   
  **Header file** \<intrin.h>  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Remarks  
  This routine is only available as an intrinsic.  

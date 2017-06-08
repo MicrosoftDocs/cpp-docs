@@ -62,7 +62,7 @@ translation.priority.ht:
 > [!NOTE]
 >  The information in the table may differ in future versions of the product.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Integer Limits](../cpp/integer-limits.md)

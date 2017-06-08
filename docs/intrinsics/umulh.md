@@ -95,7 +95,7 @@ int main()
 0x10 * 0xfedcba9876543210 = 0xfedcba98765432100   
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

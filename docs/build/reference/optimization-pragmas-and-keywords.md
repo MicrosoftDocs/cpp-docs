@@ -57,7 +57,7 @@ Several keywords and pragmas that you use in your C or C++ code affect optimizat
   
 -   [#pragma optimize](../../preprocessor/optimize.md)  
   
--   [register Keyword](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)  
+-   [register Keyword](../../cpp/storage-classes-cpp.md#register)  
   
 ## See Also  
  [Optimizing Your Code](../../build/reference/optimizing-your-code.md)

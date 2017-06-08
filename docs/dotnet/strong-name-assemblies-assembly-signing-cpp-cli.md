@@ -63,7 +63,7 @@ This topic discusses how you can sign your assembly, often referred to as giving
   
 -   [/KEYCONTAINER (Specify a Key Container to Sign an Assembly)](../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md)  
   
- For more information on strong assemblies, see [Creating and Using Strong-Named Assemblies](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+ For more information on strong assemblies, see [Creating and Using Strong-Named Assemblies](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).  
   
 ## See Also  
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

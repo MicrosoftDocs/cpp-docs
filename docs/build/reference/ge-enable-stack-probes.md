@@ -54,7 +54,7 @@ Activates stack probes for every function call that requires storage for local v
   
  [/Gs (Control Stack Checking Calls)](../../build/reference/gs-control-stack-checking-calls.md) has the same effect.  
   
- **/Ge** is deprecated; the compiler will generate stack checking. For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ **/Ge** is deprecated; beginning in Visual Studio 2005, the compiler automatically generates stack checking. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
