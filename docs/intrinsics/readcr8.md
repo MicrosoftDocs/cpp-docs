@@ -60,7 +60,7 @@ unsigned __int64 __readcr8(void);
 ## Remarks  
  This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -34,11 +34,12 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Compiler Warning (level 1) C4799
-No EMMS at end of function 'function'  
+# Compiler Warning (level 1) C4799  
   
- The function has at least one MMX instruction, but does not have an EMMS instruction. When a multimedia instruction is used, an EMMS instruction should also be used to clear the multimedia tag word at the end of the MMX code. For more information on EMMS instructions, see [Guidelines for When to Use EMMS](http://msdn.microsoft.com/en-us/a0c3b1e4-01a4-419c-a58f-ff1e97dea7d3).  
+> No EMMS at end of function '*function*'  
   
- You may get C4799 when using ivec.h, indicating that the code does not use properly execute the EMMS instruction before returning. This is a false warning for these headers. You may turn these off by defining _SILENCE_IVEC_C4799 in ivec.h. However, be aware that this will also keep the compiler from giving correct warnings of this type.  
+The function has at least one MMX instruction, but does not have an `EMMS` instruction. When a multimedia instruction is used, an `EMMS` instruction or `_mm_empty` intrinsic should also be used to clear the multimedia tag word at the end of the MMX code.  
   
- For related information, see the [Intel's MMX Instruction Set](../../assembler/inline/intel-s-mmx-instruction-set.md).
+You may get C4799 when using ivec.h, indicating that the code does not use properly execute the EMMS instruction before returning. This is a false warning for these headers. You may turn these off by defining _SILENCE_IVEC_C4799 in ivec.h. However, be aware that this will also keep the compiler from giving correct warnings of this type.  
+  
+For related information, see [Intel's MMX Instruction Set](../../assembler/inline/intel-s-mmx-instruction-set.md).

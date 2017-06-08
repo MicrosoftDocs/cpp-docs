@@ -115,7 +115,7 @@ Rotating 0x41 left by 7 bits gives 0xa0
 Rotating unsigned short 0x12 left by 10 bits gives 0x4800  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)   

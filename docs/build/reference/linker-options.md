@@ -151,5 +151,4 @@ LINK.exe links Common Object File Format (COFF) object files and libraries to cr
   
 ## See Also  
  [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)   
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Frequently Asked Questions on Building](http://msdn.microsoft.com/en-us/56a3bb8f-0181-4989-bab4-a07ba950ab08)
+ [Setting Linker Options](../../build/reference/setting-linker-options.md)  

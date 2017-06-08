@@ -120,7 +120,7 @@ int main()
 4294967295 * 251658240 = 1080863910317260800  
 ```  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -97,7 +97,7 @@ EFLAGS 0x202
 EFLAGS 0x206  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

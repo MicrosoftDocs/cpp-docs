@@ -163,7 +163,7 @@ p->int_data = 100
 bstr_data = Testing  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Keywords](../cpp/keywords-cpp.md)   

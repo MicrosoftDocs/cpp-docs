@@ -104,7 +104,7 @@ printf_s( "%u %u %u %u",
 0 99999 99999 0  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

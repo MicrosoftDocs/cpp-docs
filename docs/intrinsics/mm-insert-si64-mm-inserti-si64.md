@@ -136,7 +136,7 @@ result2 = 0xfffffffff3210fff
 result3 = 0xfffffffff3210fff  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
  Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.  
   
 ## See Also  

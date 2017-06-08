@@ -98,7 +98,7 @@ int main()
 1  
 ```  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__ll_lshift](../intrinsics/ll-lshift.md)   

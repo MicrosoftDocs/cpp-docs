@@ -149,6 +149,5 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
     ```  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
  [Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)   
  [Desktop Applications (Visual C++)](../windows/desktop-applications-visual-cpp.md)

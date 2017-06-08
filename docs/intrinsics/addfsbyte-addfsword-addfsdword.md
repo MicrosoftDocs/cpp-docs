@@ -82,7 +82,7 @@ void __addfsdword( 
 ## Remarks  
  These routines are available only as intrinsics.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__incfsbyte, \__incfsword, \__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)   

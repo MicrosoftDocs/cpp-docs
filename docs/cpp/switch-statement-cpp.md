@@ -172,7 +172,7 @@ int main(int argc, char *argv[])
   
  The default for Microsoft C is that the Microsoft extensions are enabled. Use the [/Za](../build/reference/za-ze-disable-language-extensions.md) compiler option to disable these extensions.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   

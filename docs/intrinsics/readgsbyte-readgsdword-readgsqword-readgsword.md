@@ -84,7 +84,7 @@ unsigned __int64 __readgsqword( 
 ## Remarks  
  These intrinsics are only available in kernel mode, and the routines are only available as intrinsics.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)   

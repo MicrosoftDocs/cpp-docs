@@ -164,7 +164,7 @@ Flags: 0x4
 Flags: 0x0  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1383,7 +1383,7 @@ In Visual C++ 2015 and later, ongoing improvements to compiler conformance can s
     warning C4467: Usage of ATL attributes is deprecated  
     ```  
   
-     If you want to continue using attributed ATL code until support is removed from the compiler, you can disable this warning by passing the `/Wv:18` or `/wd:4467` command line arguments to the compiler, or by adding  `#pragma warning(disable:4467)` in your source code.  
+     If you want to continue using attributed ATL code until support is removed from the compiler, you can disable this warning by passing the `/Wv:18` or `/wd4467` command line arguments to the compiler, or by adding  `#pragma warning(disable:4467)` in your source code.  
   
      Example 1 (before)  
   

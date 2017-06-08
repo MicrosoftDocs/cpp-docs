@@ -63,7 +63,7 @@ void _disable(void);
   
  On ARM platforms, this routine is only available as an intrinsic.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

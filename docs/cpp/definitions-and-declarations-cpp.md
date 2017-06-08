@@ -87,7 +87,7 @@ void func() {
 }  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [dllexport, dllimport](../cpp/dllexport-dllimport.md)
