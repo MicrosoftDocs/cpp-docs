@@ -64,7 +64,7 @@ typedef struct MyStruct { int i; } T2;
 void f2(T2 * t) {}  
 ```  
   
- The **/Zg** option was deprecated in Visual Studio 2005 and has been removed in Visual Studio 2015. The Visual C++ compiler has removed support for older, C-style code. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category).  
+ The **/Zg** option was deprecated in Visual Studio 2005 and has been removed in Visual Studio 2015. The Visual C++ compiler has removed support for older, C-style code. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

@@ -68,7 +68,7 @@ Deprecated. Suppresses the call of the helper function `_ftol` when a conversion
 > [!NOTE]
 >  **/QIfist** is not in effect by default because the rounding bits also affect floating point to floating point rounding (which occurs after every calculation), so when you set the flags for C-style (toward zero) rounding, your floating point calculations might be different. **/QIfist** should not be used if your code depends upon the expected behavior of truncating the fractional portion of the floating-point number. If you are unsure, do not use **/QIfist**.  
   
- The **/QIfist** option is deprecated starting in Visual Studio 2005. The compiler has made significant improvements in float to int conversion speed. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category).  
+ The **/QIfist** option is deprecated starting in Visual Studio 2005. The compiler has made significant improvements in float to int conversion speed. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   
