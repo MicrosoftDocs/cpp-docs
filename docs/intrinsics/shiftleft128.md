@@ -111,7 +111,7 @@ int main()
 0x100000000000000001 >> 1 = 0x080000000000000000  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__shiftright128](../intrinsics/shiftright128.md)   

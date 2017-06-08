@@ -45,7 +45,7 @@ translation.priority.ht:
   
  Exercise care when providing imported inline functions. For example, if you update the DLL, don't assume that the client will use the changed version of the DLL. To ensure that you are loading the proper version of the DLL, rebuild the DLL's client as well.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [dllexport, dllimport](../cpp/dllexport-dllimport.md)

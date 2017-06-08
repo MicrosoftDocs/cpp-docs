@@ -105,7 +105,7 @@ int main()
 54.000000 0.000000 0.000000 0.000000  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__m128](../cpp/m128.md)   

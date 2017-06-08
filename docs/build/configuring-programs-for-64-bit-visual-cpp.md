@@ -50,7 +50,7 @@ This section contains topics about targeting 64-bit hardware with the Visual C++
 -   [x64 Software Conventions](../build/x64-software-conventions.md)  
   
 ## Related Sections  
- [64-bit Applications](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)  
+ [64-bit Applications](/dotnet/framework/64-bit-apps)  
   
  [align](../cpp/align-cpp.md)  
   

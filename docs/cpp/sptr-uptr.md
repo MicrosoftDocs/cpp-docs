@@ -106,7 +106,7 @@ p32s: p64 = FFFFFFFF87654321
 p32u: p64 = 0000000087654321  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)

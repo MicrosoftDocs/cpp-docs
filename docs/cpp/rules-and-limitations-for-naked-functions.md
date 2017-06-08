@@ -89,7 +89,7 @@ __declspec(naked) int __fastcall  power(int i, int j) {
 }  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Naked Function Calls](../cpp/naked-function-calls.md)

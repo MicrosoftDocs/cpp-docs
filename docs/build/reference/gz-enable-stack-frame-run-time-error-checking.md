@@ -50,7 +50,7 @@ Performs the same operations as the [/RTC (Run-Time Error Checks)](../../build/r
 ## Remarks  
  **/GZ** is only for use in a nonoptimized ([/Od (Disable (Debug))](../../build/reference/od-disable-debug.md)) build.  
   
- **/GZ** is deprecated; use [/RTC (Run-Time Error Checks)](../../build/reference/rtc-run-time-error-checks.md) instead. For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ **/GZ** is deprecated since Visual Studio 2005; use [/RTC (Run-Time Error Checks)](../../build/reference/rtc-run-time-error-checks.md) instead. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

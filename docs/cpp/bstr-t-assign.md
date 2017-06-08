@@ -127,7 +127,7 @@ bstrWrapper = changing BSTR
 bstrWrapper2 = some text  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

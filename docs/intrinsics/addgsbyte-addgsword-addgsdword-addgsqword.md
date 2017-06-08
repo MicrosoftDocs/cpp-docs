@@ -90,7 +90,7 @@ void __addgsqword( 
 ## Remarks  
  These intrinsics are available in kernel mode only, and these routines are only available as intrinsics.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__incgsbyte, \__incgsword, \__incgsdword, \__incgsqword](../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md)   

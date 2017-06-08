@@ -81,7 +81,7 @@ BSTR text: Test
 char * text: Test  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Requirements  
  **Header:** comutil.h.  

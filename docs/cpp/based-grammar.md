@@ -54,7 +54,7 @@ translation.priority.ht:
  *base-type*:  
  *type-name*  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Based Pointers](../cpp/based-pointers-cpp.md)

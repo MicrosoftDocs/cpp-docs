@@ -103,7 +103,7 @@ int main()
   
  **Note** There is no unsigned version of the left shift operation. This is because `__ll_lshift` already uses an unsigned input parameter. Unlike the right shift, there is no sign dependence for the left shift, because the least significant bit in the result is always set to zero regardless of the sign of the value shifted.  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__ll_rshift](../intrinsics/ll-rshift.md)   

@@ -47,7 +47,7 @@ Paces complete debugging information in all object files created from a precompi
 ```  
   
 ## Remarks  
- **/Yd** is deprecated; [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] now supports multiple objects writing to a single .pdb file, use **/Zi** instead. For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ **/Yd** is deprecated; [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] now supports multiple objects writing to a single .pdb file, use **/Zi** instead. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category).  
   
  Unless you need to distribute a library containing debugging information, use the [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) option rather than **/Z7** and **/Yd**.  
   

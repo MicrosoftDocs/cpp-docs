@@ -58,7 +58,7 @@ void __wbinvd(void);
 ## Remarks  
  This function is only available in kernel mode with a privilege level (CPL) of 0, and the routine is only available as an intrinsic.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

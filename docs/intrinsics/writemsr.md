@@ -69,7 +69,7 @@ void __writemsr( 
 ## Remarks  
  This function may only be used in kernel mode, and this routine is only available as an intrinsic.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

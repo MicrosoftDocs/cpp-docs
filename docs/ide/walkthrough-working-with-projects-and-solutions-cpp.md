@@ -175,4 +175,5 @@ Here's how to create a C++ project in Visual Studio, add code, and then build an
  **Previous:** [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md). **Next:**[Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md).  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)
+ [C++ Language Reference](../cpp/cpp-language-reference.md)   
+ [Building C/C++ Programs](../build/building-c-cpp-programs.md)

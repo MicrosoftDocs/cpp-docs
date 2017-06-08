@@ -34,7 +34,8 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Compiler Warning (level 1) C4821
-Unable to determine Unicode encoding type, please save the file with signature (BOM)  
+# Compiler Warning (level 1) C4821  
   
- The compiler could not determine the encoding type for a file. To resolve this warning, save the file with a byte order marker. See [Managing Files with Encoding](http://msdn.microsoft.com/en-us/ab3a74da-5c8f-4680-8882-f1def4909e82) for more information.
+> Unable to determine Unicode encoding type, please save the file with signature (BOM)  
+  
+The compiler could not determine the encoding type for a file. To resolve this warning, save the file with a byte order marker. See [Manage Files with Encoding](/sql/ssms/solution/manage-files-with-encoding) for more information.  

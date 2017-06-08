@@ -242,7 +242,7 @@ int main()
 0xff00 0xffff00 0xff00ff00  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

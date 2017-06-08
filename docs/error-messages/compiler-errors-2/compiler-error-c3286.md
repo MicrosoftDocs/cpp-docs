@@ -35,17 +35,17 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# Compiler Error C3286
-'specifier': an iteration variable cannot have any storage-class specifiers  
+# Compiler Error C3286  
   
- See [(NOTINBUILD)Storage-Class Specifiers](http://msdn.microsoft.com/en-us/10b3d22d-cb40-450b-994b-08cf9a211b6c) for more information.  
+> '*specifier*': an iteration variable cannot have any storage-class specifiers  
   
- See [for each, in](../../dotnet/for-each-in.md) for more information.  
+A storage class can't be specified on an iteration variable. For more information, see [Storage classes (C++)](../../cpp/storage-classes-cpp.md) and [for each, in](../../dotnet/for-each-in.md).  
   
 ## Example  
- The following sample generates C3286.  
   
-```  
+The following sample generates C3286, and also shows correct usage.  
+  
+```cpp  
 // C3286.cpp  
 // compile with: /clr  
 int main() {  

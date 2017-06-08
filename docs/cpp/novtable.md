@@ -73,7 +73,7 @@ int main() {
 In Y  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__declspec](../cpp/declspec.md)   

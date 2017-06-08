@@ -447,7 +447,7 @@ int main(
 <29  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)   

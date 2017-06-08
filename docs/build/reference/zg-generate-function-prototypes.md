@@ -57,14 +57,14 @@ Removed. Creates a function prototype for each function defined in the source fi
   
  If you use the **/Zg** option and your program contains formal parameters that have struct, enum, or union type (or pointers to such types), the declaration of each struct, enum, or union type must have a tag (name). In the following sample, the tag name is `MyStruct`.  
   
-```  
+```C  
 // Zg_compiler_option.c  
 // compile with: /Zg  
 typedef struct MyStruct { int i; } T2;  
 void f2(T2 * t) {}  
 ```  
   
- **/Zg** is deprecated. The Visual C++ compiler plans to remove support for older, C-style code. For more information, see [Deprecated Compiler Options in Visual C++ 2005](http://msdn.microsoft.com/en-us/aa59fce3-50b8-4f66-9aeb-ce09a7a84cce).  
+ The **/Zg** option was deprecated in Visual Studio 2005 and has been removed in Visual Studio 2015. The Visual C++ compiler has removed support for older, C-style code. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

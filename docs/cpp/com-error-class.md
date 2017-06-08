@@ -82,7 +82,7 @@ translation.priority.ht:
 |[HRESULTToWCode](../cpp/com-error-hresulttowcode.md)|Maps 32-bit `HRESULT` to 16-bit `wCode`.|  
 |[WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)|Maps 16-bit `wCode` to 32-bit `HRESULT`.|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## Requirements  
  **Header:** comdef.h  

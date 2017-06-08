@@ -188,7 +188,6 @@ Visual C++ includes a command-line C++ compiler that you can use to create every
  The Visual C++ compiler includes a C Runtime Library (CRT) that is generally compatible with the ISO C99 standard, but not strictly compliant. In most cases, portable code will compile and run as expected. Visual C++ does not support some of the CRT changes in ISO C11. Certain library functions and POSIX function names are deprecated by the Visual C++ compiler. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [Building C/C++ Programs](../build/building-c-cpp-programs.md)   
  [Compiler Options](../build/reference/compiler-options.md)

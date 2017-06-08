@@ -51,7 +51,7 @@ translation.priority.ht:
   
 -   [Considerations for Writing Prolog/Epilog Code](../cpp/considerations-for-writing-prolog-epilog-code.md)  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Calling Conventions](../cpp/calling-conventions.md)

@@ -45,7 +45,7 @@ translation.priority.ht:
 |[ConvertBSTRToString](../cpp/convertbstrtostring.md)|Converts a `BSTR` value to a **char \***.|  
 |[ConvertStringToBSTR](../cpp/convertstringtobstr.md)|Converts a **char \*** value to a `BSTR`.|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)   

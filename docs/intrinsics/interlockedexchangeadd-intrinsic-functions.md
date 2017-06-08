@@ -206,7 +206,7 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
 ## Example  
  For a sample of how to use `_InterlockedExchangeAdd`, see [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

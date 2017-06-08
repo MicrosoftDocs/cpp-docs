@@ -50,7 +50,7 @@ translation.priority.ht:
   
  Your program might make calls to the **spawn** or `exec` family of routines in the C run-time library. If this is the case, you should not suppress the environment-processing routine, since this routine is used to pass an environment from the parent process to the child process.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [main: Program Startup](../cpp/main-program-startup.md)

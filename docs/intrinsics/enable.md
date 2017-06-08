@@ -61,7 +61,7 @@ void _enable(void);
   
  This function is only available in kernel mode. If used in user mode, a Privileged Instruction exception is thrown.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

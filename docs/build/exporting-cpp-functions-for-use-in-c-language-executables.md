@@ -35,10 +35,11 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Exporting C++ Functions for Use in C-Language Executables
+# Exporting C++ Functions for Use in C-Language Executables  
+  
 If you have functions in a DLL written in C++ that you want to access from a C-language module, you should declare these functions with C linkage instead of C++ linkage. Unless otherwise specified, the C++ compiler uses C++ type-safe naming (also known as name decoration) and C++ calling conventions, which can be difficult to call from C.  
   
- To specify C linkage, specify **extern** "**C**" for your function declarations. For example:  
+To specify C linkage, specify `extern "C"` for your function declarations. For example:  
   
 ```  
 extern "C" __declspec( dllexport ) int MyFunc(long parm1);  
@@ -64,7 +65,7 @@ extern "C" __declspec( dllexport ) int MyFunc(long parm1);
   
 -   [Decorated names](../build/reference/decorated-names.md)  
   
--   [Linkage specifications](http://msdn.microsoft.com/en-us/d2b0cff1-7798-4c38-9ac8-61c3bfe2bfb9)  
+-   [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)  
   
 ## See Also  
  [Exporting from a DLL](../build/exporting-from-a-dll.md)
