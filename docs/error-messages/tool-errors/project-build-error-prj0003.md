@@ -39,7 +39,7 @@ translation.priority.ht:
 > Error spawning '*command line*'.  
   
 The *command line* command formed from input in the **Property Pages** dialog box returned an error code, but no information appears in the **Output** window.  
-  
+
 Possible reasons for this error include:  
   
 -   Your project depends on ATL Server. Beginning in Visual Studio 2008, ATL Server is no longer included as part of Visual Studio, but has been released as a shared-source project at CodePlex. To download the ATL Server source code and tools, go to [ATL Server Library and Tools](http://go.microsoft.com/fwlink/?LinkID=81979).  

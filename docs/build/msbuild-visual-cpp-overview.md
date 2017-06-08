@@ -108,7 +108,7 @@ The support file directories contain files with these extensions:
 ## User Targets and Properties  
   
 To use MSBuild most effectively on the command line, it helps to know which properties and targets are useful and relevant. Most properties and targets help implement the Visual C++ build system, and consequently are not relevant to the user. This section describes some worthwhile user-oriented properties and targets.  
-  
+
 ### PlatformToolset Property  
   
 The `PlatformToolset` property determines which Visual C++ toolset is used in the build. By default, the current toolset is used. When this property is set, the value of the property is concatenated with literal strings to form the path of a directory that contains the property and target files that are required to build a project for a particular platform. The platform toolset must be installed to build by using that platform toolset version.  
