@@ -1,7 +1,7 @@
 ---
 title: "C++ compiler conformance improvements | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/16/2016"
+ms.date: "06/05/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
     - "cs-cz"
@@ -143,7 +143,7 @@ int main()
 ```
 
 ### constexpr
-Visual Studio 2017 correctly raises an error when the left-hand operand of a conditionally evaluating operation is not valid in a constexpr context. The following code compiles in Visual Studio 2015 but not in Visual Studio 2017:
+Visual Studio 2017 correctly raises an error when the left-hand operand of a conditionally evaluating operation is not valid in a constexpr context. The following code compiles in Visual Studio 2015 but not in Visual Studio 2017 (C3615 constexpr function 'f' cannot result in a constant expression):
 
 ```cpp  
 template<int N>
@@ -154,7 +154,7 @@ struct array
 
 constexpr bool f(const array<1> &arr)
 {
-       return arr.size() == 10 || arr.size() == 11; // error starting in Visual Studio 2017
+       return arr.size() == 10 || arr.size() == 11; // C3615	
 }
 ```
 To correct the error, either declare the array::size() function as constexpr or remove the constexpr qualifier from f. 
@@ -372,8 +372,8 @@ Visual Studio 2017 Update Version 15.3 improves pre-condition checks for type-tr
 struct S; 
 enum E; 
  
-static_assert(!__is_assignable(S, S), "fail"); // this is allowed in VS2017 RTM, but should fail 
-static_assert(__is_convertible_to(E, E), "fail"); // this is allowed in VS2017 RTM, but should fail
+static_assert(!__is_assignable(S, S), "fail"); // C2139 in 15.3
+static_assert(__is_convertible_to(E, E), "fail"); // C2139 in 15.3
 ```
 
 ### New compiler warning and runtime checks on native-to-managed marshaling
@@ -416,7 +416,7 @@ To fix the error, remove the `#pragma managed` directive to mark the caller as n
 WinRT APIs that are released for experimentation and feedback will be decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Update Version 15.3, the compiler will produce warning C4698 when it encounters  the attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs will start triggering this compiler warning. Newer Windows SDKs will have the attribute removed from all shipped types, but if you are using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
 The following code produces warning C4698: "'Windows::Storage::IApplicationDataStatics2::GetForUserAsync' is for evaluation purposes only and is subject to change or removal in future updates":
 ```cpp
-Windows::Storage::IApplicationDataStatics2::GetForUserAsync()
+Windows::Storage::IApplicationDataStatics2::GetForUserAsync() //C4698
 ```
 
 To disable the warning, add a #pragma:
@@ -436,7 +436,7 @@ Update Version 15.3 produces an error when it encounters an out-of-line definiti
 struct S {}; 
  
 template <typename T> 
-void S::f(T t) {}
+void S::f(T t) {} //C2039: 'f': is not a member of 'S'
 ```
 
 To fix the error, add a declaration to the class:
@@ -461,7 +461,7 @@ Update Version 15.3 produces an error when you attempt to convert a type to a ba
 #include <memory> 
  
 class B { }; 
-class D : B { }; // should be public B { }; 
+class D : B { }; // C2243. should be public B { }; 
  
 void f() 
 { 
@@ -479,7 +479,7 @@ struct A {
 }; 
  
 template <typename T> 
-T A<T>::f(T t, bool b = false) 
+T A<T>::f(T t, bool b = false) // C5034
 { 
 ... 
 }
@@ -529,7 +529,7 @@ In Update Version 15.3, the compiler no longer ignores attributes if __declspec(
 
 ```cpp
  
-__declspec(noinline) extern "C" HRESULT __stdcall
+__declspec(noinline) extern "C" HRESULT __stdcall //C4768
 ```
 
 To fix the warning, put extern "C" first:
@@ -537,6 +537,7 @@ To fix the warning, put extern "C" first:
 ```cpp
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
+This warning is off-by-default and only impacts code compiled with  `/Wall /WX`.
 
 ### decltype and calls to deleted destructors
 In previous versions of Visual Studio, the compiler did not detect when a call to a deleted destructor occurred in the context of the expression associated with 'decltype'. In Update Version 15.3, the following code produces  "error C2280: 'A<T>::~A(void)': attempting to reference a deleted function":
@@ -563,7 +564,7 @@ void h()
 Visual Studio 2017 RTW release had a regression in which the C++ compiler would not issue a diagnostic if a 'const' variable was not initialized. This regression has been fixed in Visual Studio 2017 Update 1. The following code now produces "warning C4132: 'Value': const object should be initialized":
 
 ```cpp
-const int Value;
+const int Value; //C4132
 ```
 To fix the error, assign a value to `Value`.
 
@@ -585,6 +586,108 @@ To remove the warnings, simply comment-out or remove the empty declarations.  In
  
 The warning is excluded under /Wv:18 and is on by default under warning level W2.
 
+
+### std::is_convertible for array types
+Previous versions of the compiler gave incorrect results for [std::is_convertible](standard-library/is-convertible-class.md) for array types. This required library writers to special-case the Visual C++ compiler when using the `std::is_convertable<…>` type trait. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 Update Version 15.3:
+
+```cpp
+#include <type_traits>
+ 
+using Array = char[1];
+ 
+static_assert(std::is_convertible<Array, Array>::value);
+static_assert((std::is_convertible<const Array, const Array>::value), "");
+static_assert((std::is_convertible<Array&, Array>::value), "");
+static_assert((std::is_convertible<Array, Array&>::value), "");
+```
+
+**std::is_convertible<From, To>** is calculated by checking to see if an imaginary function definition is well formed:
+```cpp 
+   To test() { return std::declval<From>(); }
+``` 
+
+### Private destructors and std::is_constructible
+Previous versions of the compiler ignore whether a destructor was private when decided the result of [std::is_constructible](standard-library/is-constructible-class.md). It now considers them. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 Update Version 15.3:
+
+```cpp
+#include <type_traits>
+ 
+class PrivateDtor {
+   PrivateDtor(int) { }
+private:
+   ~PrivateDtor() { }
+};
+ 
+// This assertion used to succeed. It now correctly fails.
+static_assert(std::is_constructible<PrivateDtor, int>::value);
+```  
+
+Private destructors cause a type to be non-constructible. **std::is_constructible<T, Args…>** is calculated as if the following declaration were written:
+```cpp 
+   T obj(std::declval<Args>()…)
+``` 
+This call implies a destructor call.
+
+### C2668: Ambiguous overload resolution
+Previous versions of the compiler sometimes failed to detect ambiguity when it found multiple candidates via both using declarations and argument dependent lookups. This can lead to wrong overload being chosen and unexpected runtime behavior. In the following example, Visual Studio 2017 Update Version 15.3 correctly raises C2668 'f': ambiguous call to overloaded function:
+
+```cpp
+namespace N {
+   template<class T>
+   void f(T&, T&);
+ 
+   template<class T>
+   void f();
+}
+ 
+template<class T>
+void f(T&, T&);
+ 
+struct S {};
+void f()
+{
+   using N::f; 
+ 
+   S s1, s2;
+   f(s1, s2); // C2668
+}
+```
+To fix the code, remove the using N::f statement if you intended to call ::f().
+
+### C2660: local function declarations and argument dependent lookup
+Local function declarations hide the function declaration in the enclosing scope and disable argument dependent lookup.
+However, previous versions of the Visual C++ compiler performed argument dependent lookup in this case, potentially leading to the wrong overload being chosen and unexpected runtime behavior. Typically, the error is due to an incorrect signature of the local function declaration. In the following example, Visual Studio 2017 Update Version 15.3 correctly raises C2660 'f': function does not take 2 arguments:
+
+```cpp
+struct S {}; 
+void f(S, int);
+ 
+void g()
+{
+   void f(S); // C2660 'f': function does not take 2 arguments:
+   // or void f(S, int);
+   S s;
+   f(s, 0);
+}
+```
+
+To fix the problem, either change the **f(S)** signature or remove it.
+
+### C5038: order of initialization in initializer lists
+Class members are initialized in the order they are declared, not the order they appear in initializer lists. Previous versions of the compiler did not warn when the order of the initializer list differed from the order of declaration. This could lead to undefined runtime behavior if the intialization of one member depended on another member in the list already being initialized. In the following example, Visual Studio 2017 Update Version 15.3 (with /Wall or /WX) raises warning C5038: data member 'A::y' will be initialized after data member 'A::x':
+
+```cpp
+struct A
+{
+    A(int a) : y(a), x(y) {} // Initialized in reverse, y reused
+    int x;
+    int y;
+};
+
+```
+To fix the problem arrange the intializer list to have the same order as the declarations. A similar warning is raised when one or both initializers refer to base class members.
+
+Note that the warning is off-by-default and only affects code compiled with  /Wall or /WX.
 
 ## See Also  
 [Visual C++ Language Conformance](visual-cpp-language-conformance.md)  
