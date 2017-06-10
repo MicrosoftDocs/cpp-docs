@@ -72,7 +72,6 @@ You can use a project template to create the basic program structure, menus, too
 |Project template|How to create a project|  
 |----------------------|-----------------------------|  
 |Empty Project|[Creating Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects)|  
-|Custom Wizard|[Creating a Custom Wizard](../ide/creating-a-custom-wizard.md)|  
 |Makefile Project|[Creating a Makefile Project](../ide/creating-a-makefile-project.md)|  
   
 ### MFC  
