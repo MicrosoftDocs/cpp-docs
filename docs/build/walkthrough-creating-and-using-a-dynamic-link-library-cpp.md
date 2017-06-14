@@ -36,7 +36,7 @@ translation.priority.mt:
 ---
 # Walkthrough: Create and use your own Dynamic Link Library (C++)  
   
-This step-by-step walkthrough shows how to use the Visual Studio IDE to create your own dynamic link library (DLL) written in C++, and then use it from another C++ app.  
+This step-by-step walkthrough shows how to use the Visual Studio IDE to create your own dynamic link library (DLL) written in C++, and then use it from another C++ app. DLLs are one of the most useful kinds of Windows components, a way to share code and resources, to shrink the size of your apps, and to make it easier to service and extend your apps. In this walkthrough, you'll create a DLL that implements some math functions, and then create a console app that uses the functions from the DLL. Along the way, you'll get an introduction to some of the programming techniques and conventions used in Windows DLLs.  
   
 This walkthrough covers these tasks:  
   
@@ -50,7 +50,11 @@ This walkthrough covers these tasks:
   
 -   Run the completed app.  
   
-This walkthrough is for the simplest DLL case. It creates a Visual Studio solution that contains both the DLL and the client app, and uses implicit linking at load-time to import functions from the DLL. The walkthrough doesn't cover common situations such as use of third-party DLLs that are not built as part of your solution, or that use explicit linking to load the DLLs at run-time rather than at load-time.  
+Like a statically-linked library, a DLL _exports_ variables, functions, and resources by name, and your app _imports_ those names in order to use those variables, functions, and resources. Unlike a statically-linked library that connects the imports to the exports at link-time, Windows does some work to connect the imports in your app to the exports in a DLL at load-time or at run-time. To do this, Windows requires extra information that isn't part of the standard C++ compilation model. The Visual C++ compiler implements some Microsoft-specific extensions to C++ to provide this extra information. We'll explain these extensions as we go.  
+  
+For simplicity, this walkthrough creates a Visual Studio solution that builds both the DLL and the client app as part of a single solution. It creates a DLL that can be only be called from apps built by using the same Visual C++ compiler toolset, so that the calling and linking conventions match. It also uses _implicit linking_, where Windows links the app to the DLL at load-time, which lets the app call the DLL-supplied functions just like the functions in a statically-linked library.  
+  
+This walkthrough doesn't cover some common situations. It doesn't cover the creation and use of DLLs that are not built as part of your solution. It doesn't show the use of explicit linking to load DLLs at run-time rather than at load-time. It also doesn't show how to create DLLs that can be called from other programming languages. Rest assured, you can use Visual C++ to do all of these things. For links to more information about DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about implicit linking and explicit linking, see [Determining Which Linking Method to Use](../build/determining-which-linking-method-to-use.md). For information about creating C++ DLLs for use with programming languages that use C-language linkage conventions, see [Exporting C++ Functions for Use in C-Language Executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md). For information about how to create DLLs for use with .NET languages, see [Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md).  
   
 ## Prerequisites  
   
@@ -64,21 +68,10 @@ This walkthrough is for the simplest DLL case. It creates a Visual Studio soluti
   
 - An understanding of enough of the fundamentals of the C++ language to follow along. Don't worry, we won't do anything too complicated.  
   
-### Background information  
-  
-If you're here, you probably know what a DLL is and why you'd want to use one, but here's an introduction if this is new. A DLL is a Windows operating system (OS) component that contains a library of resources and/or executable code. Much of the Windows OS itself consists of DLLs. The code in a DLL is not a stand-alone program; it runs in the context of another executable, such as an app. There are a lot of advantages to using DLLs as part of your apps. A DLL can be implicitly linked to your app, where the OS maps the DLL into your process address space at load time, and which lets you call it like a regular code library. Or it can be dynamically linked by the OS at run time, which lets your app load DLLs as needed and call functions by name without knowing their addresses in advance. Like a library, you can use the code and resources in a DLL from many apps at once. Unlike a library, if you are careful to maintain binary compatibility, you can update the code in a DLL separately, and then use the new code in all the applications that link to the DLL without recompiling them. For more information about DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about implicit linking and explicit linking, see [Determining Which Linking Method to Use](../build/determining-which-linking-method-to-use.md).  
-  
-The C++ language standard doesn't specify an application binary interface (ABI). This means that every C++ compiler can use its own calling conventions for symbol names and linkage, or how code is linked together. This walkthrough creates a DLL that can be only be called from apps built by using the same C++ compiler toolset, so that the calling conventions match. This walkthrough also doesn't cover the common case of creating a DLL for use by apps written in other languages or built by using a different compiler. These are all possible in Visual C++ if you use the required conventions. For example, your DLL can be called from C and several other languages by using C linkage. For more information, see [Exporting C++ Functions for Use in C-Language Executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md). For information about how to create DLLs for use with .NET languages, see [Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md).    
-  
-As a Windows OS component, DLLs aren't addressed by the compilation model in Standard C++. The Visual C++ compiler provides some Microsoft-specific extensions to the C++ model to support the use and creation of DLLs. We'll explain these extensions as we go.    
   
 ## Create the DLL project  
   
-In this set of tasks, you'll create a new project and solution for your DLL, add code, and build it. To begin, start the Visual Studio IDE.  
-  
-   ![Start Visual Studio](media/start-visual-studio.gif "Start Visual Studio")  
-  
-Next, create a new DLL project by using the New Project wizard.
+In this set of tasks, you'll create a new project and solution for your DLL, add code, and build it. To begin, start the Visual Studio IDE. Next, create a new DLL project by using the New Project wizard:
 
 ### To create a DLL project  
   
