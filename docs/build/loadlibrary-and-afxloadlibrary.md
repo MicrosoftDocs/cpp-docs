@@ -54,9 +54,9 @@ Processes call [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (o
   
 ## What do you want to do?  
   
--   [Link implicitly](../build/linking-implicitly.md)  
+-   [How to link implicitly to a DLL](../build/linking-an-executable-to-a-dll.md#linking-implicitly)  
   
--   [Determine which linking method to use](../build/determining-which-linking-method-to-use.md)  
+-   [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)  
   
 ## What do you want to know more about?  
   

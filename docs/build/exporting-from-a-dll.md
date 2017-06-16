@@ -65,7 +65,7 @@ A DLL file has a layout very similar to an .exe file, with one important differe
   
 -   [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)  
   
--   [Determine which linking method to use](../build/determining-which-linking-method-to-use.md)  
+-   [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)  
   
 -   [Initialize a DLL](../build/initializing-a-dll.md)  
   
