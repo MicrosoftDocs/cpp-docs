@@ -51,11 +51,11 @@ section section exists; there may be unhandled static initializers or terminator
   
 -   Add msvcrt.lib, libcmt.lib, or libcmtd.lib to your linker command line.  
   
--   When moving from /clr:pure compilation to /clr, remove the [/ENTRY](../../build/reference/entry-entry-point-symbol.md) option from the linker-line. This will enable CRT initialization allowing static initializers to be executed at application startup.  
+-   When moving from /clr:pure compilation to /clr, remove the [/ENTRY](../../build/reference/entry-entry-point-symbol.md) option from the linker-line. This enables CRT initialization and allows static initializers to be executed at application startup.  
   
--   If your project is built with [/ENTRY](../../build/reference/entry-entry-point-symbol.md), and if /ENTRY is passed a function other than `_DllMainCRTStartup`, the function must call CRT_INIT. See [Run-Time Library Behavior](../../build/run-time-library-behavior.md) and Knowledge Base article Q94248, [http://support.microsoft.com/default.aspx?scid=kb;en-us;94248](http://support.microsoft.com/default.aspx?scid=kb;en-us;94248) for more information.  
+ The [/GS](../../build/reference/gs-buffer-security-check.md) compiler option requires the VCRuntime library startup code that runs in `_DllMainCRTStartup`.  
   
- The [/GS](../../build/reference/gs-buffer-security-check.md) compiler option requires CRT startup code.  
+-   If your project is built using /ENTRY, and if /ENTRY is passed a function other than `_DllMainCRTStartup`, the function must call `_CRT_INIT` to initialize the CRT. This is not sufficient if your DLL uses /GS, requires static initializers, or is called in the context of MFC or ATL code. See [DLLs and Visual C++ run-time library behavior](../../build/run-time-library-behavior.md) for more information.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)

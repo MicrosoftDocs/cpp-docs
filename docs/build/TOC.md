@@ -72,7 +72,7 @@
 ### [Initializing Regular DLLs](initializing-regular-dlls.md)
 ### [Initializing Extension DLLs](initializing-extension-dlls.md)
 ### [Initializing Non-MFC DLLs](initializing-non-mfc-dlls.md)
-## [Run-Time Library Behavior](run-time-library-behavior.md)
+## [DLLs and Visual C++ run-time library behavior](run-time-library-behavior.md)
 ## [LoadLibrary and AfxLoadLibrary](loadlibrary-and-afxloadlibrary.md)
 ## [GetProcAddress](getprocaddress.md)
 ## [FreeLibrary and AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)

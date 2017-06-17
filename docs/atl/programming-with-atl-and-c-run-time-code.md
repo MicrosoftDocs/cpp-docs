@@ -49,8 +49,8 @@ This section discusses the benefits of using the C Run-Time Library (CRT) with e
  [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  
   
- [Run-Time Library Behavior](../build/run-time-library-behavior.md)  
- Provides details on how the CRT startup code works.  
+ [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)  
+ Provides details on how the VCRuntime and CRT startup code works.  
   
  [C Run-Time Libraries](../c-runtime-library/crt-library-features.md)  
  Discusses the various .lib files that comprise the C run-time libraries and lists their associated compiler options and preprocessor directives.  

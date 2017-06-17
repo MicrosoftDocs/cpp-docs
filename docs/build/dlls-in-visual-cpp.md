@@ -81,7 +81,7 @@ Dynamic linking has the following advantages:
   
 ## More information on how to create and use DLLs  
   
-The following topics provide detailed information about how to program DLLs.  
+The following topics provide detailed information about how to program DLLs in Visual C++.  
   
  [Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)  
  Describes how to create and use a DLL using Visual Studio.  
@@ -98,7 +98,7 @@ The following topics provide detailed information about how to program DLLs.
  [Initializing a DLL](../build/initializing-a-dll.md)  
  Discusses DLL initialization code (such as allocating memory) that must execute when your DLL loads.  
   
- [Run-Time Library Behavior](../build/run-time-library-behavior.md)  
+ [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)  
  Describes how the run-time library performs the DLL startup sequence.  
   
  [LoadLibrary and AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)  
