@@ -32,7 +32,7 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# CMake Projects in Visual C++
+# CMake projects in Visual C++
 CMake is a cross-platform, open-source tool for defining build processes that run on multiple platforms. Until recently, Visual Studio users could use CMake to generate MSBuild project files, which the IDE then consumed for Intellisense, browsing and compilation. Starting in Visual Studio 2017, the Visual C++ tools for CMake component enables the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of Intellisense and browsing. 
 
 Beginning in Visual Studio Update 15.3, support is provided for  both Ninja and Visual Studio generators. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for Intellisense or browsing purposes. 

@@ -9,7 +9,7 @@
 ## [Rename](refactoring/rename.md)
 # [Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)
 # [CMake and other non-MSBuild projects in Visual C++](non-msbuild-projects.md)
-## [CMake tools for Visual C++](cmake-support-in-visual-cpp.md)
+## [CMake projects in Visual C++](cmake-projects-in-visual-cpp.md)
 # [Creating and Managing MSBuild Projects in Visual C++](creating-and-managing-visual-cpp-projects.md)
 ## [Visual C++ Project Types](visual-cpp-project-types.md)
 ## [Using Visual C++ Add New Item Templates](using-visual-cpp-add-new-item-templates.md)
