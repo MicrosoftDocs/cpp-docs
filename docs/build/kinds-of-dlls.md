@@ -56,7 +56,7 @@ This topic provides information to help you determine the kind of DLL to build.
   
 -   [regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs: Overview](../build/extension-dlls-overview.md)  
+-   [MFC extension DLLs: Overview](../build/extension-dlls-overview.md)  
   
 -   [Which kind of DLL to use](#_core_which_kind_of_dll_to_use)  
   
@@ -83,7 +83,7 @@ This topic provides information to help you determine the kind of DLL to build.
   
 -   [regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs: Overview](../build/extension-dlls-overview.md)  
+-   [MFC extension DLLs: Overview](../build/extension-dlls-overview.md)  
   
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

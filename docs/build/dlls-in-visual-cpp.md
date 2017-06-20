@@ -46,7 +46,7 @@ Static linking copies all the object code in a static library into the executabl
   
 <a name="differences-between-applications-and-dlls"></a>  
   
-# Differences between applications and DLLs  
+## Differences between applications and DLLs  
   
 Even though DLLs and applications are both executable modules, they differ in several ways. To the end user, the most obvious difference is that DLLs are not applications that can be directly executed. From the system's point of view, there are two fundamental differences between applications and DLLs:  
   
@@ -96,7 +96,7 @@ The following topics provide detailed information about how to program DLLs in V
  Describes explicit and implicit linking to a DLL.  
   
  [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
- Discusses DLL initialization code (such as allocating memory) that must execute when your DLL loads.  
+ Discusses DLL initialization code that must execute when your DLL loads.  
   
  [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)  
  Describes how the run-time library performs the DLL startup sequence.  
@@ -116,7 +116,7 @@ The following topics provide detailed information about how to program DLLs in V
  [Module States of a regular MFC DLL Dynamically Linked to MFC](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)  
  Describes the module states of a regular MFC DLL dynamically linked to MFC.  
   
- [Extension DLLs](../build/extension-dlls-overview.md)  
+ [MFC extension DLLs](../build/extension-dlls-overview.md)  
  Explains DLLs that typically implements reusable classes derived from the existing Microsoft Foundation Class Library classes.  
   
  [Creating a Resource-Only DLL](../build/creating-a-resource-only-dll.md)  

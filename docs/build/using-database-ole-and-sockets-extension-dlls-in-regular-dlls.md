@@ -155,7 +155,7 @@ BOOL CYourRegularDLL::InitInstance()
   
 ### What do you want to know more about?  
   
--   [Extension DLLs](../build/extension-dlls.md)  
+-   [MFC extension DLLs](../build/extension-dlls.md)  
   
 -   [regular MFC DLLs Statically Linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
@@ -166,4 +166,4 @@ BOOL CYourRegularDLL::InitInstance()
 -   [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)  
   
 ## See Also  
- [Extension DLLs](../build/extension-dlls.md)
+ [MFC extension DLLs](../build/extension-dlls.md)

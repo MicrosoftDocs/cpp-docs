@@ -51,7 +51,7 @@ An MFC extension DLL is a DLL that typically implements reusable classes derived
   
 ## What do you want to know more about?  
   
--   [Extension DLLs](../build/extension-dlls.md)  
+-   [MFC extension DLLs](../build/extension-dlls.md)  
   
 -   [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   

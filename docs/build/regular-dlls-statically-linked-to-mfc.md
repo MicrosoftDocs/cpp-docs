@@ -98,7 +98,7 @@ extern "C" __declspec(dllexport) MyExportedFunction( );
   
 -   [regular MFC DLLs Dynamically Linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs](../build/extension-dlls-overview.md)  
+-   [MFC extension DLLs](../build/extension-dlls-overview.md)  
   
 ## See Also  
  [Kinds of DLLs](../build/kinds-of-dlls.md)

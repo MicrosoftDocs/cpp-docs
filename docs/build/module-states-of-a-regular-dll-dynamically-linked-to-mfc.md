@@ -59,7 +59,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
   
 -   [regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs](../build/extension-dlls-overview.md)  
+-   [MFC extension DLLs](../build/extension-dlls-overview.md)  
   
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
