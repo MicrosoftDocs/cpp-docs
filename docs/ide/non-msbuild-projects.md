@@ -39,16 +39,16 @@ Powered by Open Folder, Visual C++ can now support not only loose collections of
 ## Open Folder in Visual C++
 To use Open Folder, from the main menu select *File | Open | Folder* or press *Ctrl + Shift + Alt + O*. 
 Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable Intellisense, navigation and refactoring features. As you edit, create, move or delete files, Visual Studio tracks the changes automatically and continuously updates its Intellisense index. 
-## MSBuild projects
-	MSBuild is the "native" build system for Visual Studio on Windows. C++ project information is stored in a .vcxproj file, and one or more project file are referenced by a .sln solution file. You typically modify solution and project settings through property pages in the IDE rather than editing the .sln and .vcxproj files directly. MSBuild projects are best for UWP apps and Windows desktop applications that use MFC or ATL. For more information, see [Creating and Managing Visual C++ Projects](creating-and-managing-visual-cpp-projects.md) and [Building C++ Projects in Visual Studio](building-cpp-projects-in-visual-cpp.md).
+  
 ## CMake projects
 CMake is a cross-platform open-source tool for defining build processes that run across multiple platforms by abstracting away native build environments and compilers. CMake interprets a CMakeLists.txt script the user authors and generates a build plan in a build environment of choice (e.g. Visual studio projects, make scripts, Xcode projects, etc.).
 CMake is integrated in the Visual studio IDE as CMake Tools for Visual C++, a component of the C++ desktop workload. For more information, see [CMake Tools for Visual C++](cmake-support-in-visual-cpp.md).
  
 ## QMake projects that target the Qt framework
-	can use CMake for Qt
-	or use Qt extension to import .pro file which converts to vcxproj. (not round tripped)
+	You can use CMake tools for Visual C++ to target Qt to build Qt projects, or you can use the QT Visual Studio Extension to perform a one-way conversion from a qmake .pro project to an MSBuild project. Note: As of June 2017, the QT Visual Studio Extension supports only Visual Studio 2015.
+
 ## gyp, Cons, SCons, Cons, 
-	--configure with json files: cppProperties.json vs.launch.json, 
+	You can use any build system in Visual C++ and still enjoy the advantages of the Visual C++ IDE and debugger. When you open the root folder of your project, Visual C++ uses heuristics to index the source files for Intellisense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure your build program by editing the launch.vs.json file. 
+
 ## Linux server, IoT, 
 ## Configuring Open Folder build parameters
