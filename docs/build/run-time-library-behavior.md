@@ -209,15 +209,6 @@ Note that the header file Afxdllx.h contains special definitions for structures 
   
  A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](http://msdn.microsoft.com/library/windows/desktop/ms686997) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)]. Note that the sample contains an entry-point function called `LibMain`, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.  
   
-## What do you want to do?  
-  
--   [Initialize regular MFC DLLs](../build/initializing-regular-dlls.md)  
-  
--   [Initialize MFC extension DLLs](../build/initializing-extension-dlls.md)  
-  
--   [Initialize non-MFC DLLs](../build/initializing-non-mfc-dlls.md)  
-  
-  
 ## See Also  
   
 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)  

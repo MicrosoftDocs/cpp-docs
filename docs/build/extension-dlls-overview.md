@@ -47,7 +47,7 @@ An MFC extension DLL is a DLL that typically implements reusable classes derived
   
 ## What do you want to do?  
   
--   [Initialize an MFC extension DLL](../build/initializing-extension-dlls.md)  
+-   [Initialize an MFC extension DLL](../build/run-time-library-behavior.md#initializing-extension-dlls)  
   
 ## What do you want to know more about?  
   

@@ -103,7 +103,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
   
 ## What do you want to do?  
   
--   [Initialize regular MFC DLLs](../build/initializing-regular-dlls.md)  
+-   [Initialize regular MFC DLLs](../build/run-time-library-behavior.md#initializing-regular-dlls)  
   
 ## What do you want to know more about?  
   

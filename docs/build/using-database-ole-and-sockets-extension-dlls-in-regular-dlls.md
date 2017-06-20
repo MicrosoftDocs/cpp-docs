@@ -149,9 +149,9 @@ BOOL CYourRegularDLL::InitInstance()
   
 ### What do you want to do?  
   
--   [Initialize an MFC extension DLL](../build/initializing-extension-dlls.md)  
+-   [Initialize an MFC extension DLL](../build/run-time-library-behavior.md#initializing-extension-dlls)  
   
--   [Initialize regular MFC DLLs](../build/initializing-regular-dlls.md)  
+-   [Initialize regular MFC DLLs](../build/run-time-library-behavior.md#initializing-regular-dlls)  
   
 ### What do you want to know more about?  
   
