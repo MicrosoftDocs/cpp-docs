@@ -15,6 +15,7 @@
 # [Parallel Programming](parallel/parallel-programming-in-visual-cpp.md)
 # [Data Access](data/data-access-in-cpp.md)
 # [Text and Strings](text/text-and-strings-in-visual-cpp.md)
+# [vcpkg: A package manager for C++](vcpkg.md)
 # [Using the Visual Studio IDE for C++](ide/ide-and-tools-for-visual-cpp-development.md)
 # [Compilers and Build Tools](build/building-c-cpp-programs.md)
 # [Porting and Upgrading Visual C++ Code](porting/visual-cpp-porting-and-upgrading-guide.md)
