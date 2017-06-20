@@ -41,7 +41,7 @@ translation.priority.ht:
 ---
 # Exporting and Importing Using AFX_EXT_CLASS  
   
-[Extension DLLs](../build/extension-dlls-overview.md) use the macro **AFX_EXT_CLASS** to export classes; the executables that link to the extension DLL use the macro to import classes. With the **AFX_EXT_CLASS** macro, the same header files that are used to build the extension DLL can be used with the executables that link to the DLL.  
+[Extension DLLs](../build/extension-dlls-overview.md) use the macro **AFX_EXT_CLASS** to export classes; the executables that link to the MFC extension DLL use the macro to import classes. With the **AFX_EXT_CLASS** macro, the same header files that are used to build the MFC extension DLL can be used with the executables that link to the DLL.  
   
  In the header file for your DLL, add the **AFX_EXT_CLASS** keyword to the declaration of your class as follows:  
   
@@ -52,9 +52,9 @@ class AFX_EXT_CLASS CMyClass : public CDocument
 };  
 ```  
   
-This macro is defined by MFC as `__declspec(dllexport)` when the preprocessor symbols `_AFXDLL` and `_AFXEXT` are defined. But the macro is defined as `__declspec(dllimport)` when `_AFXDLL` is defined and `_AFXEXT` is not defined. When defined, the preprocessor symbol `_AFXDLL` indicates that the shared version of MFC is being used by the target executable (either a DLL or an application). When both `_AFXDLL` and `_AFXEXT` are defined, this indicates that the target executable is an extension DLL.  
+This macro is defined by MFC as `__declspec(dllexport)` when the preprocessor symbols `_AFXDLL` and `_AFXEXT` are defined. But the macro is defined as `__declspec(dllimport)` when `_AFXDLL` is defined and `_AFXEXT` is not defined. When defined, the preprocessor symbol `_AFXDLL` indicates that the shared version of MFC is being used by the target executable (either a DLL or an application). When both `_AFXDLL` and `_AFXEXT` are defined, this indicates that the target executable is an MFC extension DLL.  
   
-Because `AFX_EXT_CLASS` is defined as `__declspec(dllexport)` when exporting from an extension DLL, you can export entire classes without placing the decorated names for all of that class's symbols in the .def file.  
+Because `AFX_EXT_CLASS` is defined as `__declspec(dllexport)` when exporting from an MFC extension DLL, you can export entire classes without placing the decorated names for all of that class's symbols in the .def file.  
   
 Although you can avoid creating a .def file and all of the decorated names for the class with this method, creating a .def file is more efficient because the names can be exported by ordinal. To use the .def file method of exporting, place the following code at the beginning and end of your header file:  
   
@@ -89,7 +89,7 @@ public:
   
 Because you are no longer exporting all members of the class, you may run into an additional problem because of the way that MFC macros work. Several of MFC's helper macros actually declare or define data members. Therefore, these data members must also be exported from your DLL.  
   
-For example, the `DECLARE_DYNAMIC` macro is defined as follows when building an extension DLL:  
+For example, the `DECLARE_DYNAMIC` macro is defined as follows when building an MFC extension DLL:  
   
 ```cpp  
 #define DECLARE_DYNAMIC(class_name) \  
@@ -137,7 +137,7 @@ Because MFC always uses the `AFX_DATA` symbol on data items it defines within it
   
 -   [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
--   [Initialize a DLL](../build/initializing-a-dll.md)  
+-   [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
   
 ### What do you want to know more about?  
   

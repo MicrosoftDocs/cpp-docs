@@ -34,28 +34,29 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Linker Tools Warning LNK4210
-section section exists; there may be unhandled static initializers or terminators  
+# Linker Tools Warning LNK4210  
   
- Some code introduced static initializers or terminators, but the CRT or its equivalent (which needs to run the static initializers or terminators) isn't run when the application starts. Examples of code that would cause this:  
+> section *section* exists; there may be unhandled static initializers or terminators  
+  
+Some code has introduced static initializers or terminators, but the VCRuntime library startup code or its equivalent (which needs to run the static initializers or terminators) isn't run when the application starts. Here are some examples of code that requires static initializers or terminators:  
   
 -   Global class variable with a constructor, destructor, or virtual function table.  
   
 -   Global variable initialized with a non-compile-time constant.  
   
- To fix this problem, try one of the following:  
+To fix this problem, try one of the following:  
   
 -   Remove all code with static initializers.  
   
--   Do not use [/NOENTRY](../../build/reference/noentry-no-entry-point.md).  After you remove /NOENTRY, you may also have to add msvcrt.lib, libcmt.lib, or libcmtd.lib to your linker command line.  
+-   Do not use [/NOENTRY](../../build/reference/noentry-no-entry-point.md). After you remove /NOENTRY, you may also have to remove [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) from your linker command line.  
   
--   Add msvcrt.lib, libcmt.lib, or libcmtd.lib to your linker command line.  
+-   If your build uses /MT, add libcmt.lib, libvcruntime.lib, and libucrt.lib to your linker command line. If your build uses /MTd, add libcmtd.lib, vcruntimed.lib, and libucrtd.lib.  
   
 -   When moving from /clr:pure compilation to /clr, remove the [/ENTRY](../../build/reference/entry-entry-point-symbol.md) option from the linker-line. This enables CRT initialization and allows static initializers to be executed at application startup.  
   
- The [/GS](../../build/reference/gs-buffer-security-check.md) compiler option requires the VCRuntime library startup code that runs in `_DllMainCRTStartup`.  
+ The [/GS](../../build/reference/gs-buffer-security-check.md) compiler option requires initialization by the `__security_init_cookie` function. This initialization is provided by default in the VCRuntime library startup code that runs in `_DllMainCRTStartup`.  
   
--   If your project is built using /ENTRY, and if /ENTRY is passed a function other than `_DllMainCRTStartup`, the function must call `_CRT_INIT` to initialize the CRT. This is not sufficient if your DLL uses /GS, requires static initializers, or is called in the context of MFC or ATL code. See [DLLs and Visual C++ run-time library behavior](../../build/run-time-library-behavior.md) for more information.  
+-   If your project is built using /ENTRY, and if /ENTRY is passed a function other than `_DllMainCRTStartup`, the function must call `_CRT_INIT` to initialize the CRT. This call alone is not sufficient if your DLL uses /GS, requires static initializers, or is called in the context of MFC or ATL code. See [DLLs and Visual C++ run-time library behavior](../../build/run-time-library-behavior.md) for more information.  
   
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)

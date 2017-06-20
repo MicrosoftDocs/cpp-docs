@@ -38,20 +38,20 @@ translation.priority.ht:
 |-|-|
 |[AFX_EXT_CLASS](#afx_ext_class)]|Exports classes.|
 |[AFX_MANAGE_STATE](#afx_manage_state)|Protect an exported function in a DLL.|
-|[AfxOleInitModule](#afxoleinitmodule)|Provides OLE support from a regular DLL that is dynamically linked to MFC.|
-|[AfxNetInitModule](#afxnetinitmodule)|Provides MFC Sockets support from a regular DLL that is dynamically linked to MFC.|
+|[AfxOleInitModule](#afxoleinitmodule)|Provides OLE support from a regular MFC DLL that is dynamically linked to MFC.|
+|[AfxNetInitModule](#afxnetinitmodule)|Provides MFC Sockets support from a regular MFC DLL that is dynamically linked to MFC.|
 |[AfxGetAmbientActCtx](#afxgetambientactctx)|Gets the current state of the per-module state flag.|
 |[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Sets the module state before initialization and/or to restore the previous module state after cleanup.|
 |[AfxInitExtensionModule]()#afxinitextensionmodule|Initializes the DLL.|
 |[AfxSetAmbientActCtx](#afxsetambientactctx)|set the per-module state flag, which affects the WinSxS behavior of MFC.|
-|[AfxTermExtensionModule]()#afxtermextensionmodule)|Allows MFC to cleanup the extension DLL when each process detaches from the DLL.|
+|[AfxTermExtensionModule]()#afxtermextensionmodule)|Allows MFC to cleanup the MFC extension DLL when each process detaches from the DLL.|
 
 
 ## <a name="afx_ext_class"></a>  AFX_EXT_CLASS
-[Extension DLLs](../../build/extension-dlls.md) use the macro **AFX_EXT_CLASS** to export classes; the executables that link to the extension DLL use the macro to import classes.  
+[Extension DLLs](../../build/extension-dlls.md) use the macro **AFX_EXT_CLASS** to export classes; the executables that link to the MFC extension DLL use the macro to import classes.  
    
 ### Remarks  
- With the **AFX_EXT_CLASS** macro, the same header file(s) used to build the extension DLL can be used with the executables that link to the DLL.  
+ With the **AFX_EXT_CLASS** macro, the same header file(s) used to build the MFC extension DLL can be used with the executables that link to the DLL.  
   
  In the header file for your DLL, add the **AFX_EXT_CLASS** keyword to the declaration of your class as follows:  
   
@@ -97,7 +97,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
  [AfxGetStaticModuleState](#afxgetstaticmodulestate)
 
 ## <a name="afxoleinitmodule"><a/> AfxOleInitModule
-For OLE support from a regular DLL that is dynamically linked to MFC, call this function in your regular DLL's `CWinApp::InitInstance` function to initialize the MFC OLE DLL.  
+For OLE support from a regular MFC DLL that is dynamically linked to MFC, call this function in your regular MFC DLL's `CWinApp::InitInstance` function to initialize the MFC OLE DLL.  
    
 ### Syntax    
 ```
@@ -105,7 +105,7 @@ void AFXAPI AfxOleInitModule( );
 ```  
    
 ### Remarks  
- The MFC OLE DLL is an extension DLL; in order for an extension DLL to get wired into a **CDynLinkLibrary** chain, it must create a **CDynLinkLibrary** object in the context of every module that will be using it. `AfxOleInitModule` creates the **CDynLinkLibrary** object in your regular DLL's context so that it gets wired into the **CDynLinkLibrary** object chain of the regular DLL.  
+ The MFC OLE DLL is an MFC extension DLL; in order for an MFC extension DLL to get wired into a **CDynLinkLibrary** chain, it must create a **CDynLinkLibrary** object in the context of every module that will be using it. `AfxOleInitModule` creates the **CDynLinkLibrary** object in your regular MFC DLL's context so that it gets wired into the **CDynLinkLibrary** object chain of the regular MFC DLL.  
   
  If you are building an OLE control and are using `COleControlModule`, you should not call **AfxOleInitModule** because the `InitInstance` member function for `COleControlModule` calls `AfxOleInitModule`.  
    
@@ -117,7 +117,7 @@ void AFXAPI AfxOleInitModule( );
  [AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)
 
 ## <a name="afxnetinitmodule"></a>  AfxNetInitModule
-For MFC Sockets support from a regular DLL that is dynamically linked to MFC, add a call to this function in your regular DLL's **CWinApp::InitInstance** function to initialize the MFC Sockets DLL.  
+For MFC Sockets support from a regular MFC DLL that is dynamically linked to MFC, add a call to this function in your regular MFC DLL's **CWinApp::InitInstance** function to initialize the MFC Sockets DLL.  
    
 ### Syntax    
 ```
@@ -125,7 +125,7 @@ void AFXAPI AfxNetInitModule( );
 ```  
    
 ### Remarks  
- The MFC Sockets DLL is an extension DLL; in order for an extension DLL to get wired into a **CDynLinkLibrary** chain, it must create a **CDynLinkLibrary** object in the context of every module that will be using it. `AfxNetInitModule` creates the **CDynLinkLibrary** object in your regular DLL's context so that it gets wired into the **CDynLinkLibrary** object chain of the regular DLL.  
+ The MFC Sockets DLL is an MFC extension DLL; in order for an MFC extension DLL to get wired into a **CDynLinkLibrary** chain, it must create a **CDynLinkLibrary** object in the context of every module that will be using it. `AfxNetInitModule` creates the **CDynLinkLibrary** object in your regular MFC DLL's context so that it gets wired into the **CDynLinkLibrary** object chain of the regular MFC DLL.  
    
 ### Requirements  
  **Header:** <afxdll_.h>  
@@ -191,7 +191,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
    
 
 ## <a name="afxinitextensionmodule"></a> AfxInitExtensionModule
-Call this function in an extension DLL's `DllMain` to initialize the DLL.  
+Call this function in an MFC extension DLL's `DllMain` to initialize the DLL.  
    
 ### Syntax    
 ```
@@ -199,13 +199,13 @@ BOOL AFXAPI AfxInitExtensionModule( AFX_EXTENSION_MODULE& state,  HMODULE hModul
 ```
 ### Parameters  
  `state`  
- A reference to the [AFX_EXTENSION_MODULE Structure](afx-extension-module-structure.md) structure that will contain the state of the extension DLL module after the initialization. The state includes a copy of the runtime class objects that have been initialized by the extension DLL as part of normal static object construction executed before `DllMain` is entered.  
+ A reference to the [AFX_EXTENSION_MODULE Structure](afx-extension-module-structure.md) structure that will contain the state of the MFC extension DLL module after the initialization. The state includes a copy of the runtime class objects that have been initialized by the MFC extension DLL as part of normal static object construction executed before `DllMain` is entered.  
   
  `hModule`  
- A handle of the extension DLL module.  
+ A handle of the MFC extension DLL module.  
    
 ### Return Value  
- **TRUE** if the extension DLL is successfully initialized; otherwise, **FALSE**.  
+ **TRUE** if the MFC extension DLL is successfully initialized; otherwise, **FALSE**.  
    
 ### Remarks  
  For example:  
@@ -222,7 +222,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 	{
 		TRACE0("NVC_MFC_DLL.DLL Initializing!\n");
 
-		// Extension DLL one-time initialization
+		// MFC extension DLL one-time initialization
 		if (!AfxInitExtensionModule(NVC_MFC_DLLDLL, hInstance))
 			return 0;
 
@@ -232,7 +232,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
  MFC extension DLLs need to do two things in their `DllMain` function:    
 -   Call [AfxInitExtensionModule](#_mfc_afxinitextensionmodule) and check the return value.   
 -   Create a **CDynLinkLibrary** object if the DLL will be exporting [CRuntimeClass Structure](cruntimeclass-structure.md) objects or has its own custom resources.    
- You can call `AfxTermExtensionModule` to clean up the extension DLL when each process detaches from the extension DLL (which happens when the process exits, or when the DLL is unloaded as a result of an `AfxFreeLibrary` call).     
+ You can call `AfxTermExtensionModule` to clean up the MFC extension DLL when each process detaches from the MFC extension DLL (which happens when the process exits, or when the DLL is unloaded as a result of an `AfxFreeLibrary` call).     
 
 ### Requirements  
  **Header:** afxdll_.h     
@@ -277,7 +277,7 @@ BOOL CMFCListViewApp::InitInstance()
 
 ## <a name="afxtermextensionmodule"></a>  AfxTermExtensionModule
 
-Call this function to allow MFC to cleanup the extension DLL when each process detaches from the DLL (which happens when the process exits, or when the DLL is unloaded as a result of a `AfxFreeLibrary` call).  
+Call this function to allow MFC to cleanup the MFC extension DLL when each process detaches from the DLL (which happens when the process exits, or when the DLL is unloaded as a result of a `AfxFreeLibrary` call).  
    
 ### Syntax  
   ```
@@ -285,10 +285,10 @@ void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = 
 ```
 ### Parameters  
  `state`  
- A reference to the [AFX_EXTENSION_MODULE](afx-extension-module-structure.md) structure that contains the state of extension DLL module.  
+ A reference to the [AFX_EXTENSION_MODULE](afx-extension-module-structure.md) structure that contains the state of MFC extension DLL module.  
   
  *bAll*  
- If **TRUE**, cleanup all extension DLL modules. Otherwise, cleanup only the current DLL module.  
+ If **TRUE**, cleanup all MFC extension DLL modules. Otherwise, cleanup only the current DLL module.  
    
 ### Remarks  
  `AfxTermExtensionModule` will delete any local storage attached to the module and remove any entries from the message map cache. For example:  
@@ -305,7 +305,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 	{
 		TRACE0("NVC_MFC_DLL.DLL Initializing!\n");
 
-		// Extension DLL one-time initialization
+		// MFC extension DLL one-time initialization
 		if (!AfxInitExtensionModule(NVC_MFC_DLLDLL, hInstance))
 			return 0;
 
@@ -324,7 +324,7 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 
 ```
   
- If your application loads and frees extension DLLs dynamically, be sure to call `AfxTermExtensionModule`. Since most extension DLLs are not dynamically loaded (usually, they are linked via their import libraries), the call to `AfxTermExtensionModule` is usually not necessary.  
+ If your application loads and frees MFC extension DLLs dynamically, be sure to call `AfxTermExtensionModule`. Since most MFC extension DLLs are not dynamically loaded (usually, they are linked via their import libraries), the call to `AfxTermExtensionModule` is usually not necessary.  
   
  MFC extension DLLs need to call [AfxInitExtensionModule](#afxinitextensionmodule) in their `DllMain`. If the DLL will be exporting [CRuntimeClass](cruntimeclass-structure.md) objects or has its own custom resources, you also need to create a **CDynLinkLibrary** object in `DllMain`.  
    

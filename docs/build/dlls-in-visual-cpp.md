@@ -95,7 +95,7 @@ The following topics provide detailed information about how to program DLLs in V
  [Link an executable to a DLL](../build/linking-an-executable-to-a-dll.md)  
  Describes explicit and implicit linking to a DLL.  
   
- [Initializing a DLL](../build/initializing-a-dll.md)  
+ [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
  Discusses DLL initialization code (such as allocating memory) that must execute when your DLL loads.  
   
  [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)  
@@ -113,8 +113,8 @@ The following topics provide detailed information about how to program DLLs in V
  [Search Path Used by Windows to Locate a DLL](../build/search-path-used-by-windows-to-locate-a-dll.md)  
  Describes the search path that the Windows operating system uses to locate a DLL on the system.  
   
- [Module States of a Regular DLL Dynamically Linked to MFC](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)  
- Describes the module states of a regular DLL dynamically linked to MFC.  
+ [Module States of a regular MFC DLL Dynamically Linked to MFC](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)  
+ Describes the module states of a regular MFC DLL dynamically linked to MFC.  
   
  [Extension DLLs](../build/extension-dlls-overview.md)  
  Explains DLLs that typically implements reusable classes derived from the existing Microsoft Foundation Class Library classes.  
@@ -143,7 +143,7 @@ The following topics provide detailed information about how to program DLLs in V
 ## Related Sections  
   
  [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
- Describes regular DLLs, which let you use the MFC library as part of a Windows dynamic-link library.  
+ Describes regular MFC DLLs, which let you use the MFC library as part of a Windows dynamic-link library.  
   
  [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)  
- Describes how you can use the MFCxx.dll and MFCxxD.dll (where x is the MFC version number) shared dynamic-link libraries with MFC applications and extension DLLs.  
+ Describes how you can use the MFCxx.dll and MFCxxD.dll (where x is the MFC version number) shared dynamic-link libraries with MFC applications and MFC extension DLLs.  

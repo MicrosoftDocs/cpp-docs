@@ -40,10 +40,10 @@ Use this page of the MFC DLL wizard to design and add basic features to a new MF
 ## DLL type  
  Select the type of DLL you want to create.  
   
- **Regular DLL using shared MFC DLL**  
+ **regular MFC DLL using shared MFC DLL**  
  Select this option to link the MFC library to your program as a shared DLL. Using this option, you cannot share MFC objects between your DLL and the calling application. Your program makes calls to the MFC library at run time. This option reduces the disk and memory requirements of your program if it is composed of multiple execution files that use the MFC library. Both Win32 and MFC programs can call functions in your DLL. You must redistribute the MFC DLL with this type of project.  
   
- **Regular DLL with MFC statically linked**  
+ **regular MFC DLL with MFC statically linked**  
  Select this option to link your program statically to the MFC library at build time. Both Win32 and MFC programs can call functions in your DLL. While this option increases the size of your program, you do not need to redistribute the MFC DLL with this type of project. You cannot share MFC objects between your DLL and the calling application.  
   
  **MFC extension DLL**  

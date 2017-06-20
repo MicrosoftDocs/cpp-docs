@@ -52,7 +52,7 @@ Checks if a project is MFC based.
  The selected project  
   
  *bCWinAppRequired*  
- Indicates whether extension DLLs are included in the check.  
+ Indicates whether MFC extension DLLs are included in the check.  
   
 ## Return Value  
  **true** if the project is an MFC project; otherwise **false**.  
@@ -67,7 +67,7 @@ if (!IsMFCProject(selProj, true))
    {  
       if (gbExceptionThrown)  
          return false;  
-      var L_ErrMsg2_Text = "ATL support can only be added to MFC EXEs or MFC Regular DLLs.";  
+      var L_ErrMsg2_Text = "ATL support can only be added to MFC EXEs or Regular MFC DLLs.";  
       wizard.ReportError(L_ErrMsg2_Text);  
       return false;  
    }  

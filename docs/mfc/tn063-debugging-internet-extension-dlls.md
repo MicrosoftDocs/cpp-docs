@@ -1,5 +1,5 @@
 ---
-title: "TN063: Debugging Internet Extension DLLs | Microsoft Docs"
+title: "TN063: Debugging Internet MFC extension DLLs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# TN063: Debugging Internet Extension DLLs
+# TN063: Debugging Internet MFC extension DLLs
 This information is obsolete and has been removed.  
   
 ## See Also  

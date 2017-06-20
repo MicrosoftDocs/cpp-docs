@@ -46,7 +46,7 @@ This topic discusses issues that arise when compiling native code with **/clr** 
 -   Your code may query types at runtime with [CRuntimeClass::FromName](../mfc/reference/cruntimeclass-structure.md#fromname). However, if a type is in an MSIL .dll (compiled with **/clr**), the call to `FromName` may fail if it occurs before the static constructors run in the managed .dll (you will not see this problem if the FromName call happens after code has executed in the managed .dll). To work around this problem, you can force the construction of the managed static constructor by defining a function in the managed .dll, exporting it, and invoking it from the native MFC application. For example:  
   
     ```  
-    // Extension DLL Header file:  
+    // MFC extension DLL Header file:  
     __declspec( dllexport ) void EnsureManagedInitialization () {  
        // managed code that won't be optimized away  
        System::GC::KeepAlive(System::Int32::MaxValue);  

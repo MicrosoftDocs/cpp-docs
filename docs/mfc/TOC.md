@@ -637,7 +637,7 @@
 ## [TN060: The New Windows Common Controls](tn060-the-new-windows-common-controls.md)
 ## [TN061: ON_NOTIFY and WM_NOTIFY Messages](tn061-on-notify-and-wm-notify-messages.md)
 ## [TN062: Message Reflection for Windows Controls](tn062-message-reflection-for-windows-controls.md)
-## [TN063: Debugging Internet Extension DLLs](tn063-debugging-internet-extension-dlls.md)
+## [TN063: Debugging Internet MFC extension DLLs](tn063-debugging-internet-extension-dlls.md)
 ## [TN064: Apartment-Model Threading in ActiveX Controls](tn064-apartment-model-threading-in-activex-controls.md)
 ## [TN065: Dual-Interface Support for OLE Automation Servers](tn065-dual-interface-support-for-ole-automation-servers.md)
 ## [TN066: Common MFC 3.x to 4.0 Porting Issues](tn066-common-mfc-3-x-to-4-0-porting-issues.md)

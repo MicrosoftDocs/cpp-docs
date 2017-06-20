@@ -86,8 +86,8 @@ When you create a wizard, your project includes the Default.js and Common.js fil
           {  
              if (!IsMFCProject(oProj, true))  
              {     
-                var L_CanAddATLClass_Text = "ATL classes can only be added  
-     to ATL, MFC EXE and MFC regular DLL projects.";  
+                var L_CanAddATLClass_Text = "ATL classes can only be added "  
+                   "to ATL, MFC EXE and regular MFC DLL projects.";  
                 wizard.ReportError(L_CanAddATLClass_Text);  
                 return false;  
              }  

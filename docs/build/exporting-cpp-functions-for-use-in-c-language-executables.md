@@ -59,7 +59,7 @@ extern "C" __declspec( dllexport ) int MyFunc(long parm1);
   
 -   [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
--   [Initialize a DLL](../build/initializing-a-dll.md)  
+-   [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
   
 ## What do you want to know more about?  
   

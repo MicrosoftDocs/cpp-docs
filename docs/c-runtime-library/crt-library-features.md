@@ -90,7 +90,7 @@ This topic discusses the various .lib files that comprise the C run-time librari
 |msvcurt.lib|**Deprecated** Static library for the pure managed CRT.|**/clr:pure**||  
 |msvcurtd.lib|**Deprecated** Static library for the Debug version of the pure managed CRT. Not redistributable.|**/clr:pure**||  
   
- If you link your program from the command line without a compiler option that specifies a C run-time library, the linker will usethe statically linked CRT libraries: libcmt.lib, libvcruntime.lib, and libucrt.lib.  
+ If you link your program from the command line without a compiler option that specifies a C run-time library, the linker will use the statically linked CRT libraries: libcmt.lib, libvcruntime.lib, and libucrt.lib.  
   
  Using the statically linked CRT implies that any state information saved by the C runtime library will be local to that instance of the CRT. For example, if you use [strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l](../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) when using a statically linked CRT, the position of the `strtok` parser is unrelated to the `strtok` state used in code in the same process (but in a different DLL or EXE) that is linked to another instance of the static CRT. In contrast, the dynamically linked CRT shares state for all code within a process that is dynamically linked to the CRT. This concern does not apply if you use the new more secure versions of these functions; for example, `strtok_s` does not have this problem.  
   

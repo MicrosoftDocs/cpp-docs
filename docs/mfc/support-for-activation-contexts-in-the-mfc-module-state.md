@@ -45,7 +45,7 @@ MFC creates an activation context using a manifest resource provided by the user
 ## Remarks  
  When reading these Windows SDK topics, note that the MFC activation context mechanism resembles the Windows SDK activation context except that MFC does not use the Windows SDK Activation Context API.  
   
- Activation context works in MFC applications, user DLLs, and extension DLLs in the following ways:  
+ Activation context works in MFC applications, user DLLs, and MFC extension DLLs in the following ways:  
   
 -   MFC applications use resource ID 1 for their manifest resource. In this case, the MFC does not create its own activation context, but uses the default application context.  
   
