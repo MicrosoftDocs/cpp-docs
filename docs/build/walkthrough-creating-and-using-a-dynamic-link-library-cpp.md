@@ -80,7 +80,7 @@ In this set of tasks, you create a project and solution for your DLL, add code, 
   
 2.  In the left pane of the **New Project** dialog box, if needed, expand **Installed**, **Templates**, and then choose **Visual C++**. In the center pane, select **Win32 Console Application**.  
   
-   ![Select Win32 Console Application](media/new-project-select-win32-console.gif "Select Win32 Console Application")  
+   ![Select Win32 Console Application](media/new-project-choose-win32-console.gif "Select Win32 Console Application")  
   
 3.  Specify a name for the project—for example, **MathLibrary**—in the **Name** box. Specify a name for the solution—for example, **MathLibraryAndClient**—in the **Solution name** box. Choose the **OK** button.  
   
@@ -89,6 +89,10 @@ In this set of tasks, you create a project and solution for your DLL, add code, 
 5.  On the **Overview** page of the **Win32 Application Wizard** dialog box, choose the **Next** button. On the **Application Settings** page, under **Application type**, select **DLL**. Choose the **Finish** button to create the project.  
   
    ![Create DLL in Win32 Application Wizard](media/win32-app-wizard-create-dll.gif "Create DLL in Win32 Application Wizard")  
+  
+When the wizard completes the solution, you can see the generated project and source files in the **Solution Explorer** window in Visual Studio.  
+  
+   ![Generated solution in Visual Studio](media/after-win32-app-wizard.png "Generated solution in Visual Studio")  
   
 ### To add a class to the dynamic link library  
   
