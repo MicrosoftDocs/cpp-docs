@@ -36,7 +36,7 @@ translation.priority.mt:
 ---
 # Walkthrough: Create and use your own Dynamic Link Library (C++)  
   
-This step-by-step walkthrough shows how to use the Visual Studio IDE to create your own dynamic link library (DLL) written in C++, and then use it from another C++ app. DLLs are one of the most useful kinds of Windows components, a way to share code and resources, to shrink the size of your apps, and to make it easier to service and extend your apps. In this walkthrough, you'll create a DLL that implements some math functions, and then create a console app that uses the functions from the DLL. Along the way, you'll get an introduction to some of the programming techniques and conventions used in Windows DLLs.  
+This step-by-step walkthrough shows how to use the Visual Studio IDE to create your own dynamic link library (DLL) written in C++, and then use it from another C++ app. DLLs are one of the most useful kinds of Windows components. You can use them as a way to share code and resources, to shrink the size of your apps, and to make it easier to service and extend your apps. In this walkthrough, you create a DLL that implements some math functions, and then create a console app that uses the functions from the DLL. Along the way, you get an introduction to some of the programming techniques and conventions used in Windows DLLs.  
   
 This walkthrough covers these tasks:  
   
@@ -50,11 +50,11 @@ This walkthrough covers these tasks:
   
 -   Run the completed app.  
   
-Like a statically-linked library, a DLL _exports_ variables, functions, and resources by name, and your app _imports_ those names in order to use those variables, functions, and resources. Unlike a statically-linked library that connects the imports to the exports at link-time, Windows does some work to connect the imports in your app to the exports in a DLL at load-time or at run-time. To do this, Windows requires extra information that isn't part of the standard C++ compilation model. The Visual C++ compiler implements some Microsoft-specific extensions to C++ to provide this extra information. We'll explain these extensions as we go.  
+Like a statically linked library, a DLL _exports_ variables, functions, and resources by name, and your app _imports_ those names to use those variables, functions, and resources. Unlike a statically linked library, Windows connects the imports in your app to the exports in a DLL at load time or at run time, instead of connecting them at link time. Windows requires extra information that isn't part of the standard C++ compilation model to make these connections. The Visual C++ compiler implements some Microsoft-specific extensions to C++ to provide this extra information. We explain these extensions as we go.  
   
-For simplicity, this walkthrough creates a Visual Studio solution that builds both the DLL and the client app as part of a single solution. It creates a DLL that can be only be called from apps built by using the same Visual C++ compiler toolset, so that the calling and linking conventions match. It also uses _implicit linking_, where Windows links the app to the DLL at load-time, which lets the app call the DLL-supplied functions just like the functions in a statically-linked library.  
+For simplicity, this walkthrough creates a Visual Studio solution that builds both the DLL and the client app as part of a single solution. It creates a DLL that can only be called from apps built by using the same Visual C++ compiler toolset, so that the calling and linking conventions match. It also uses _implicit linking_, where Windows links the app to the DLL at load-time. This lets the app call the DLL-supplied functions just like the functions in a statically linked library.  
   
-This walkthrough doesn't cover some common situations. It doesn't cover the creation and use of DLLs that are not built as part of your solution. It doesn't show the use of explicit linking to load DLLs at run-time rather than at load-time. It also doesn't show how to create DLLs that can be called from other programming languages. Rest assured, you can use Visual C++ to do all of these things. For links to more information about DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about implicit linking and explicit linking, see [Determining Which Linking Method to Use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). For information about creating C++ DLLs for use with programming languages that use C-language linkage conventions, see [Exporting C++ Functions for Use in C-Language Executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md). For information about how to create DLLs for use with .NET languages, see [Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md).  
+This walkthrough doesn't cover some common situations. It doesn't cover the creation and use of DLLs that are not built as part of your solution. It doesn't show the use of explicit linking to load DLLs at run-time rather than at load-time. It also doesn't show how to create DLLs that can be called from other programming languages. Rest assured, you can use Visual C++ to do all these things. For links to more information about DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about implicit linking and explicit linking, see [Determining Which Linking Method to Use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). For information about creating C++ DLLs for use with programming languages that use C-language linkage conventions, see [Exporting C++ Functions for Use in C-Language Executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md). For information about how to create DLLs for use with .NET languages, see [Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md).  
   
 ## Prerequisites  
   
@@ -64,30 +64,31 @@ This walkthrough doesn't cover some common situations. It doesn't cover the crea
   
    ![Desktop development with C++](media/desktop-development-with-cpp.png "Desktop development with C++")  
   
-- An understanding of the basics of using the Visual Studio IDE. If you've used Windows desktop apps before, you can probably follow along. For a more complete introduction, see [Visual Studio IDE feature tour](/visualstudio/ide/visual-studio-ide).  
+- An understanding of the basics of using the Visual Studio IDE. If you've used Windows desktop apps before, you can probably follow along. For an introduction, see [Visual Studio IDE feature tour](/visualstudio/ide/visual-studio-ide).  
   
-- An understanding of enough of the fundamentals of the C++ language to follow along. Don't worry, we won't do anything too complicated.  
-  
+- An understanding of enough of the fundamentals of the C++ language to follow along. Don't worry, we don't do anything too complicated.  
   
 ## Create the DLL project  
   
-In this set of tasks, you'll create a new project and solution for your DLL, add code, and build it. To begin, start the Visual Studio IDE. Next, create a new DLL project by using the New Project wizard:
+In this set of tasks, you create a project and solution for your DLL, add code, and build it. To begin, start the Visual Studio IDE. 
 
 ### To create a DLL project  
   
 1.  On the menu bar, choose **File**, **New**, **Project**.  
   
-2.  In the left pane of the **New Project** dialog box, expand **Installed**, **Templates**, **Visual C++**, and then select **Win32**.  
+   ![Open the New Project dialog](media/file-new-project-menu.gif "Open the New Project dialog")  
   
-3.  In the center pane, select **Win32 Console Application**.  
+2.  In the left pane of the **New Project** dialog box, if needed, expand **Installed**, **Templates**, and then choose **Visual C++**. In the center pane, select **Win32 Console Application**.  
   
-4.  Specify a name for the project—for example, **MathLibrary**—in the **Name** box. Specify a name for the solution—for example, **MathLibraryAndClient**—in the **Solution name** box. Choose the **OK** button.  
+   ![Select Win32 Console Application](media/new-project-select-win32-console.gif "Select Win32 Console Application")  
   
-5.  On the **Overview** page of the **Win32 Application Wizard** dialog box, choose the **Next** button.  
+3.  Specify a name for the project—for example, **MathLibrary**—in the **Name** box. Specify a name for the solution—for example, **MathLibraryAndClient**—in the **Solution name** box. Choose the **OK** button.  
   
-6.  On the **Application Settings** page, under **Application type**, select **DLL**.  
+   ![Name project and solution](media/new-project-name-solution.gif "Name project and solution")  
   
-7.  Choose the **Finish** button to create the project.  
+5.  On the **Overview** page of the **Win32 Application Wizard** dialog box, choose the **Next** button. On the **Application Settings** page, under **Application type**, select **DLL**. Choose the **Finish** button to create the project.  
+  
+   ![Create DLL in Win32 Application Wizard](media/win32-app-wizard-create-dll.gif "Create DLL in Win32 Application Wizard")  
   
 ### To add a class to the dynamic link library  
   
@@ -125,7 +126,7 @@ In this set of tasks, you'll create a new project and solution for your DLL, add
   
      This code declares a namespace, **MathLibrary**,  that contains a class named **Functions** that contains member functions to perform some mathematical operations.  
   
-     Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds *PROJECTNAME*\_EXPORTS to the defined preprocessor symbols for the DLL project. In this example, **MATHLIBRARY\_EXPORTS** is defined when your **MathLibrary** DLL project is built. When the **MATHLIBRARY\_EXPORTS** symbol is defined, the **MATHLIBRARY\_API** symbol sets the `__declspec(dllexport)` modifier on the member function declarations in this code. This modifier tells the compiler and linker to export the function or variable from the DLL so that it can be used by other applications. When **MATHLIBRARY\_EXPORTS** is undefined—for example, when the header file is included by a client application—**MATHLIBRARY\_API** defines the `__declspec(dllimport)` modifier on the member function declarations. This modifier optimizes the import of the function in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
+     Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds *PROJECTNAME*\_EXPORTS to the defined preprocessor symbols for the DLL project. In this example, **MATHLIBRARY\_EXPORTS** is defined when your **MathLibrary** DLL project is built. When the **MATHLIBRARY\_EXPORTS** symbol is defined, the **MATHLIBRARY\_API** symbol sets the `__declspec(dllexport)` modifier on the function declarations. This modifier tells the compiler and linker to export the function or variable from the DLL so that it can be used by other applications. When **MATHLIBRARY\_EXPORTS** is undefined—for example, when the header file is included by a client application—**MATHLIBRARY\_API** applies the `__declspec(dllimport)` modifier to the function declarations. This modifier optimizes the import of the function in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
   
     > [!NOTE]
     >  If you are building the DLL project on the command line, use the **/D** compiler option to define the **MATHLIBRARY_EXPORTS** symbol.  
