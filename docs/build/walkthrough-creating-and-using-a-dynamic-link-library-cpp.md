@@ -80,7 +80,7 @@ In this set of tasks, you create a project and solution for your DLL, add code, 
   
 2.  In the left pane of the **New Project** dialog box, if needed, expand **Installed**, **Templates**, and then choose **Visual C++**. In the center pane, select **Win32 Console Application**.  
   
-   ![Select Win32 Console Application](media/new-project-choose-win32-console.gif "Select Win32 Console Application")  
+   ![Select Win32 Console Application](media/new-project-choose-win32-console.png "Select Win32 Console Application")  
   
 3.  Specify a name for the project—for example, **MathLibrary**—in the **Name** box. Specify a name for the solution—for example, **MathLibraryAndClient**—in the **Solution name** box. Choose the **OK** button.  
   
