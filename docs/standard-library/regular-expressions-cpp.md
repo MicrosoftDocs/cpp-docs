@@ -159,13 +159,13 @@ Zero or more flags may be combined with the grammar to specify the regular expre
   
  For all grammars except `basic` and `grep`, a repetition count can also take one of the following forms:  
   
--   "". Equivalent to "{0,1}".  
+-   "?". Equivalent to "{0,1}".  
   
 -   "+". Equivalent to "{1,unbounded}".  
   
  Examples:  
   
--   "a" matches the target sequence "" and the target sequence "a", but not the target sequence "aa".  
+-   "a?" matches the target sequence "" and the target sequence "a", but not the target sequence "aa".  
   
 -   "a+" matches the target sequence "a", the target sequence "aa", and so on, but not the target sequence "".  
   
