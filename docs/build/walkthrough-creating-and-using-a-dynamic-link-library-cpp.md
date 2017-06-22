@@ -86,7 +86,11 @@ In this set of tasks, you create a project and solution for your DLL, add code, 
   
    ![Name project and solution](media/new-project-name-solution.gif "Name project and solution")  
   
-5.  On the **Overview** page of the **Win32 Application Wizard** dialog box, choose the **Next** button. On the **Application Settings** page, under **Application type**, select **DLL**. Choose the **Finish** button to create the project.  
+4.  On the **Overview** page of the **Win32 Application Wizard** dialog box, choose the **Next** button.  
+  
+   ![Win32 Application Wizard Overview](media/win32-app-wizard-overview.png "Win32 Application Wizard Overview")  
+  
+5.  On the **Application Settings** page, under **Application type**, select **DLL**. Choose the **Finish** button to create the project.  
   
    ![Create DLL in Win32 Application Wizard](media/win32-app-wizard-create-dll.gif "Create DLL in Win32 Application Wizard")  
   
