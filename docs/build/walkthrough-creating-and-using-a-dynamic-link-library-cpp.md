@@ -64,13 +64,13 @@ This walkthrough doesn't cover some common situations. It doesn't cover the crea
   
    ![Desktop development with C++](media/desktop-development-with-cpp.png "Desktop development with C++")  
   
-- An understanding of the basics of using the Visual Studio IDE. If you've used Windows desktop apps before, you can probably follow along. For an introduction, see [Visual Studio IDE feature tour](/visualstudio/ide/visual-studio-ide).  
+- An understanding of the basics of using the Visual Studio IDE. If you've used Windows desktop apps before, you can probably keep up. For an introduction, see [Visual Studio IDE feature tour](/visualstudio/ide/visual-studio-ide).  
   
 - An understanding of enough of the fundamentals of the C++ language to follow along. Don't worry, we don't do anything too complicated.  
   
 ## Create the DLL project  
   
-In this set of tasks, you create a project and solution for your DLL, add code, and build it. To begin, start the Visual Studio IDE. 
+In this set of tasks, you create a project and solution for your DLL, add code, and build it. To begin, start the Visual Studio IDE, and sign in if you need to. 
 
 ### To create a DLL project  
   
@@ -98,9 +98,21 @@ When the wizard completes the solution, you can see the generated project and so
   
    ![Generated solution in Visual Studio](media/after-win32-app-wizard.png "Generated solution in Visual Studio")  
   
-### To add a class to the dynamic link library  
+Right now, this DLL doesn't do very much. Next, you create a header file to declare the functions your DLL exports, and then add the function definitions to the DLL to make it more useful.  
   
-1.  To create a header file for a new class, on the menu bar, choose **Project**, **Add New Item**. In the **Add New Item** dialog box, in the left pane, select **Visual C++**. In the center pane, select **Header File (.h)**. Specify a name for the header file—for example, **MathLibrary.h**—and then choose the **Add** button. A blank header file is displayed.  
+### To add code to the DLL  
+  
+1.  To create a header file for your functions, on the menu bar, choose **Project**, **Add New Item**.  
+  
+   ![Add New Item menu](media/menu-project-add-new-item.png "Add New Item menu")  
+  
+1.  In the **Add New Item** dialog box, in the left pane, select **Visual C++**. In the center pane, select **Header File (.h)**. Specify a name for the header file—for example, **MathLibrary.h**—and then choose the **Add** button.  
+  
+   ![Add header in Add New Item dialog](media/add-new-item-header-file.png "Add header in Add New Item dialog")  
+  
+   A blank header file is displayed.  
+  
+   ![Empty MathLibrary.h file in editor](media/edit-empty-mathlibrary-header.png "Empty MathLibrary.h file in editor")  
   
 2.  Replace the contents of the header file with this code:  
   
@@ -132,9 +144,9 @@ When the wizard completes the solution, you can see the generated project and so
     }  
     ```  
   
-     This code declares a namespace, **MathLibrary**,  that contains a class named **Functions** that contains member functions to perform some mathematical operations.  
+    This code declares a namespace, **MathLibrary**,  that contains a class named **Functions** that contains member functions to perform some mathematical operations.  
   
-     Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds *PROJECTNAME*\_EXPORTS to the defined preprocessor symbols for the DLL project. In this example, **MATHLIBRARY\_EXPORTS** is defined when your **MathLibrary** DLL project is built. When the **MATHLIBRARY\_EXPORTS** symbol is defined, the **MATHLIBRARY\_API** symbol sets the `__declspec(dllexport)` modifier on the function declarations. This modifier tells the compiler and linker to export the function or variable from the DLL so that it can be used by other applications. When **MATHLIBRARY\_EXPORTS** is undefined—for example, when the header file is included by a client application—**MATHLIBRARY\_API** applies the `__declspec(dllimport)` modifier to the function declarations. This modifier optimizes the import of the function in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
+    Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds *PROJECTNAME*\_EXPORTS to the defined preprocessor symbols for the DLL project. In this example, **MATHLIBRARY\_EXPORTS** is defined when your **MathLibrary** DLL project is built. When the **MATHLIBRARY\_EXPORTS** symbol is defined, the **MATHLIBRARY\_API** symbol sets the `__declspec(dllexport)` modifier on the function declarations. This modifier tells the compiler and linker to export the function or variable from the DLL so that it can be used by other applications. When **MATHLIBRARY\_EXPORTS** is undefined—for example, when the header file is included by a client application—**MATHLIBRARY\_API** applies the `__declspec(dllimport)` modifier to the function declarations. This modifier optimizes the import of the function in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
   
     > [!NOTE]
     >  If you are building the DLL project on the command line, use the **/D** compiler option to define the **MATHLIBRARY_EXPORTS** symbol.  
