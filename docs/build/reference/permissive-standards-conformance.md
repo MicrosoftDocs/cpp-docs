@@ -291,7 +291,7 @@ auto x = cond ? "A" : s;
 auto y = cond ? "A" : static_cast<const char*>(s); 
 ```  
   
-Another case where you may see errors is in conditional optators with one argument of type `void`. This case may be common in ASSERT-like macros.  
+Another case where you may see errors is in conditional operators with one argument of type `void`. This case may be common in ASSERT-like macros.  
   
 ```cpp  
 // Example 3: void arguments 

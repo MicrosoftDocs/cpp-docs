@@ -159,13 +159,13 @@ Zero or more flags may be combined with the grammar to specify the regular expre
   
  For all grammars except `basic` and `grep`, a repetition count can also take one of the following forms:  
   
--   "". Equivalent to "{0,1}".  
+-   "?". Equivalent to "{0,1}".  
   
 -   "+". Equivalent to "{1,unbounded}".  
   
  Examples:  
   
--   "a" matches the target sequence "" and the target sequence "a", but not the target sequence "aa".  
+-   "a?" matches the target sequence "" and the target sequence "a", but not the target sequence "aa".  
   
 -   "a+" matches the target sequence "a", the target sequence "aa", and so on, but not the target sequence "".  
   
@@ -211,7 +211,7 @@ Zero or more flags may be combined with the grammar to specify the regular expre
 |repetition using "{}"||+|+||+|+|  
 |repetition using "\\{\\}"|+|||+|||  
 |repetition using '*'|+|+|+|+|+|+|  
-|repetition using '' and '+'||+|+||+|+|  
+|repetition using '?' and '+'||+|+||+|+|  
 |unicode escape sequence|||+||||  
 |wildcard character|+|+|+|+|+|+|  
 |word boundary assert|||+||||  
@@ -323,18 +323,18 @@ Zero or more flags may be combined with the grammar to specify the regular expre
 ### Identity Escape  
  An identity escape is a backslash followed by a single character. It matches that character. It is required when the character has a special meaning; by using the identity escape, the special meaning is removed. For example:  
   
--   "a*" matches the target sequence "aaa", but does not match the target sequence "a\*".  
+-   "a\*" matches the target sequence "aaa", but does not match the target sequence "a\*".  
   
--   "a\\*" does not match the target sequence "aaa", but matches the target sequence "a\*".  
+-   "a\\\*" does not match the target sequence "aaa", but matches the target sequence "a\*".  
   
  The set of characters that are allowed in an identity escape depends on the regular expression grammar, as shown in the following table.  
   
 |Grammar|Allowed Identity Escape Characters|  
 |-------------|----------------------------------------|  
-|`basic`, `grep`|{ '(', ')', '{', '}', '.', '[', '\\', '*', '^', '$' }|  
-|`extended`, `egrep`|{ '(', ')', '{', '.', '[', '\\', '*', '^', '$', '+', '', '&#124;' }|  
+|`basic`, `grep`|{ '(', ')', '{', '}', '.', '[', '\\', '\*', '^', '$' }|  
+|`extended`, `egrep`|{ '(', ')', '{', '.', '[', '\\', '\*', '^', '$', '+', '?', '&#124;' }|  
 |`awk`|`extended` plus { '"', '/' }|  
-|`ECMAScript`|All characters except those that can be part of an identifier. Typically, this includes letters, digits, '$', '_', and unicode escape sequences. For more information, see the ECMAScript Language Specification.|  
+|`ECMAScript`|All characters except those that can be part of an identifier. Typically, this includes letters, digits, '$', '\_', and unicode escape sequences. For more information, see the ECMAScript Language Specification.|  
   
 ### Individual Character  
  An individual character in a bracket expression adds that character to the character set that is defined by the bracket expression. Anywhere in a bracket expression except at the beginning, a '^' represents itself.  
@@ -372,10 +372,10 @@ Zero or more flags may be combined with the grammar to specify the regular expre
  A negative word boundary assert matches if the current position in the target string is not immediately after a *word boundary*.  
   
 ### Non-capture Group  
- A non-capture group marks its contents as a single unit in the regular expression grammar, but does not label the target text. For example, "(a)(:b)*(c) matches the target text "abbc" and associates capture group 1 with the subsequence "a" and capture group 2 with the subsequence "c".  
+ A non-capture group marks its contents as a single unit in the regular expression grammar, but does not label the target text. For example, "(a)(:b)\*(c)" matches the target text "abbc" and associates capture group 1 with the subsequence "a" and capture group 2 with the subsequence "c".  
   
 ### Non-greedy Repetition  
- A non-greedy repetition consumes the shortest subsequence of the target sequence that matches the pattern. A greedy repetition consumes the longest. For example, "(a+)(a*b)" matches the target sequence "aaab". When a non-greedy repetition is used, it associates capture group 1 with the subsequence "a" at the beginning of the target sequence and capture group 2 with the subsequence "aab" at the end of the target sequence. When a greedy match is used, it associates capture group 1 with the subsequence "aaa" and capture group 2 with the subsequence "b".  
+ A non-greedy repetition consumes the shortest subsequence of the target sequence that matches the pattern. A greedy repetition consumes the longest. For example, "(a+)(a\*b)" matches the target sequence "aaab". When a non-greedy repetition is used, it associates capture group 1 with the subsequence "a" at the beginning of the target sequence and capture group 2 with the subsequence "aab" at the end of the target sequence. When a greedy match is used, it associates capture group 1 with the subsequence "aaa" and capture group 2 with the subsequence "b".  
   
 ### Octal Escape Sequence  
  An octal escape sequence is a backslash followed by one, two, or three octal digits (0-7). It matches a character in the target sequence that has the value that is specified by those digits. If all the digits are '0', the sequence is invalid. For example, "\101" matches the target sequence "A" when ASCII character encoding is used.  
@@ -385,7 +385,7 @@ Zero or more flags may be combined with the grammar to specify the regular expre
   
  In `ECMAScript`, the following characters have special meanings:  
   
--   ^  $  \  .  *  +    (  )  [  ]  {  }  &#124;  
+-   ^  $  \  .  *  +  ?  (  )  [  ]  {  }  &#124;  
   
  In `basic` and `grep`, the following characters have special meanings:  
   
@@ -393,7 +393,7 @@ Zero or more flags may be combined with the grammar to specify the regular expre
   
  Also in `basic` and `grep`, the following characters have special meanings when they are used in a particular context:  
   
--   '*' has a special meaning in all cases except when it is the first character in a regular expression or the first character that follows an initial '^' in a regular expression, or when it is the first character of a capture group or the first character that follows an initial '^' in a capture group.  
+-   '\*' has a special meaning in all cases except when it is the first character in a regular expression or the first character that follows an initial '^' in a regular expression, or when it is the first character of a capture group or the first character that follows an initial '^' in a capture group.  
   
 -   '^' has a special meaning when it is the first character of a regular expression.  
   
@@ -401,7 +401,7 @@ Zero or more flags may be combined with the grammar to specify the regular expre
   
  In `extended`, `egrep`, and `awk`, the following characters have special meanings:  
   
--   .   [   \   (   *   +      {   &#124;  
+-   .   [   \   (   *   +   ?   {   &#124;  
   
  Also in `extended`, `egrep`, and `awk`, the following characters have special meanings when they are used in a particular context.  
   
@@ -418,9 +418,9 @@ Zero or more flags may be combined with the grammar to specify the regular expre
   
  Examples:  
   
--   "(=aa)(a*)" matches the target sequence "aaaa" and associates capture group 1 with the subsequence "aaaa".  
+-   "(=aa)(a\*)" matches the target sequence "aaaa" and associates capture group 1 with the subsequence "aaaa".  
   
--   "(aa)(a*)" matches the target sequence "aaaa" and associates capture group 1 with the subsequence "aa" at the beginning of the target sequence and capture group 2 with the subsequence "aa" at the end of the target sequence.  
+-   "(aa)(a\*)" matches the target sequence "aaaa" and associates capture group 1 with the subsequence "aa" at the beginning of the target sequence and capture group 2 with the subsequence "aa" at the end of the target sequence.  
   
 -   "(=aa)(a)&#124;(a)" matches the target sequence "a" and associates capture group 1 with an empty sequence (because the positive assert failed) and capture group 2 with the subsequence "a". It also matches the target sequence "aa" and associates capture group 1 with the subsequence "aa" and capture group 2 with an empty sequence.  
   
@@ -466,7 +466,7 @@ Zero or more flags may be combined with the grammar to specify the regular expre
 |"$&"|"&"|The character sequence that matches the entire regular expression (`[match[0].first, match[0].second)`)|  
 |"$$"||"$"|  
 ||"\\&"|"&"|  
-|"$`" (dollar sign followed by back quote)||The character sequence that precedes the subsequence that matches the regular expression (`[match.prefix().first, match.prefix().second)`)|  
+|"$\`" (dollar sign followed by back quote)||The character sequence that precedes the subsequence that matches the regular expression (`[match.prefix().first, match.prefix().second)`)|  
 |"$'" (dollar sign followed by forward quote)||The character sequence that follows the subsequence that matches the regular expression (`[match.suffix().first, match.suffix().second)`)|  
 |"$n"|"\n"|The character sequence that matches the capture group at position `n`, where `n` is a number between 0 and 9 (`[match[n].first, match[n].second)`)|  
 ||"\\\n"|"\n"|  
