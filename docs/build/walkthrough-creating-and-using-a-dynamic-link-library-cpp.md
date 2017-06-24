@@ -110,7 +110,7 @@ Right now, this DLL doesn't do very much. Next, you create a header file to decl
   
    ![Add header in Add New Item dialog](media/add-new-item-header-file.png "Add header in Add New Item dialog")  
   
-   A blank header file is displayed.  
+   The template generates a blank header file, which is displayed in a new editor window.  
   
    ![Empty MathLibrary.h file in editor](media/edit-empty-mathlibrary-header.png "Empty MathLibrary.h file in editor")  
   
@@ -146,10 +146,10 @@ Right now, this DLL doesn't do very much. Next, you create a header file to decl
   
     This code declares a namespace, **MathLibrary**,  that contains a class named **Functions** that contains member functions to perform some mathematical operations.  
   
-    Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds *PROJECTNAME*\_EXPORTS to the defined preprocessor symbols for the DLL project. In this example, **MATHLIBRARY\_EXPORTS** is defined when your **MathLibrary** DLL project is built. When the **MATHLIBRARY\_EXPORTS** symbol is defined, the **MATHLIBRARY\_API** symbol sets the `__declspec(dllexport)` modifier on the function declarations. This modifier tells the compiler and linker to export the function or variable from the DLL so that it can be used by other applications. When **MATHLIBRARY\_EXPORTS** is undefined—for example, when the header file is included by a client application—**MATHLIBRARY\_API** applies the `__declspec(dllimport)` modifier to the function declarations. This modifier optimizes the import of the function in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
+    Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds *PROJECTNAME*\_EXPORTS to the defined preprocessor macros for the DLL project. In this example, Visual Studio defines **MATHLIBRARY\_EXPORTS** when your **MathLibrary** DLL project is built. When the **MATHLIBRARY\_EXPORTS** macro is defined, the **MATHLIBRARY\_API** macro sets the `__declspec(dllexport)` modifier on the function declarations. This modifier tells the compiler and linker to export the function or variable from the DLL so that it can be used by other applications. When **MATHLIBRARY\_EXPORTS** is undefined—for example, when the header file is included by a client application—**MATHLIBRARY\_API** applies the `__declspec(dllimport)` modifier to the function declarations. This modifier optimizes the import of the function in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
   
     > [!NOTE]
-    >  If you are building the DLL project on the command line, use the **/D** compiler option to define the **MATHLIBRARY_EXPORTS** symbol.  
+    >  If you are building the DLL project on the command line, use the **/D** compiler option to define the **MATHLIBRARY_EXPORTS** macro.  
   
 3.  In the **MathLibrary** project in **Solution Explorer**, in the **Source Files** folder, open **MathLibrary.cpp**.  
   
@@ -197,7 +197,7 @@ Right now, this DLL doesn't do very much. Next, you create a header file to decl
     >  If you are using an Express edition that does not display a **Build** menu, on the menu bar, choose **Tools**, **Settings**, **Expert Settings** to enable it, and then choose **Build**, **Build Solution**.  
   
     > [!NOTE]
-    >  If you are building a project on the command line, use the **/D** compiler option to define your project's *PROJECTNAME*_EXPORTS preprocessor symbol. Use the **/LD** compiler option to specify that the output file is to be a DLL. For more information, see [/MD, /MT, /LD (Use Run-Time Library)](../build/reference/md-mt-ld-use-run-time-library.md). Use the **/EHsc** compiler option to enable C++ exception handling. For more information, see [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md).  
+    >  If you are building a project on the command line, use the **/D** compiler option to define your project's *PROJECTNAME*_EXPORTS preprocessor macro. Use the **/LD** compiler option to specify that the output file is to be a DLL. For more information, see [/MD, /MT, /LD (Use Run-Time Library)](../build/reference/md-mt-ld-use-run-time-library.md). Use the **/EHsc** compiler option to enable C++ exception handling. For more information, see [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md).  
   
      Congratulations, you've created a DLL using Visual C++! Next, you'll create a client app that uses the functions exported by the DLL.  
   
