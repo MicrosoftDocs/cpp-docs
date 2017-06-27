@@ -49,7 +49,7 @@ You can download vcpkg from the [vcpkg GitHub repo][vcpkg](https://github.com/Mi
  - To acquire a library (for example Boost): vcpkg install boost
  - To list the libs that are currently installed: vcpkg list
 
-The blog post [Vcpkg: a tool to acquire and build C++ open source libraries on Windows](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) explains how vcpkg works and gives a list of supported libraries. The list is updated every week.
+See [Vcpkg: A Package Manager for C++](../vcpkg.md) for more information about how vcpkg works.
 
 ## Reporting issues
 If your library is not present in vcpkg catalog, you can open an issue on the [GitHub repo](https://github.com/Microsoft/vcpkg/issues) where the community and the Visual C++ team can see it and potentially create the port file for this library.
