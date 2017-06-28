@@ -175,7 +175,7 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
 ### Remarks  
  Override this method in a derived class to create a custom text box.  
   
- You can apply the following [Window Styles](../../mfc/reference/window-styles.md) to a text box:  
+ You can apply the following [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a text box:  
   
 - **WS_CHILD**  
   

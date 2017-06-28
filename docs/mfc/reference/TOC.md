@@ -564,7 +564,6 @@
 ### [Message Map Macros (MFC)](message-map-macros-mfc.md)
 ### [Delegate and Interface Map Macros](delegate-and-interface-maps.md)
 ### [How to: Use the Message-Map Cross-Reference](how-to-use-the-message-map-cross-reference.md)
-### [WM_COMMAND Message Handler](wm-command-message-handler.md)
 ### [Child Window Notification Message Handlers](child-window-notification-message-handlers.md)
 ### [Generic Control Handler](generic-control-handler.md)
 ### [User Button Handlers](user-button-handlers.md)

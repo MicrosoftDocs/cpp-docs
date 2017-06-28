@@ -5068,7 +5068,7 @@ DWORD SetLayout(DWORD dwLayout);
  If unsuccessful, **GDI_ERROR**. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- Normally, you would not call **SetLayout** for a window. Rather, you control the right-to-left layout in a window by setting the [extended window styles](../../mfc/reference/extended-window-styles.md) such as **WS_EX_RTLREADING**. A device context, such as a printer or a metafile, does not inherit this layout. The only way to set the device context for a right-to-left layout is by calling **SetLayout**.  
+ Normally, you would not call **SetLayout** for a window. Rather, you control the right-to-left layout in a window by setting the [extended window styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) such as **WS_EX_RTLREADING**. A device context, such as a printer or a metafile, does not inherit this layout. The only way to set the device context for a right-to-left layout is by calling **SetLayout**.  
   
  If you call **SetLayout(LAYOUT_RTL** ), **SetLayout** automatically changes the mapping mode to `MM_ISOTROPIC`. As a result, a subsequent call to [GetMapMode](#getmapmode) will return **MM_ISOTROPIC** instead of `MM_TEXT`.  
   

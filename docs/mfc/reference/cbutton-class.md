@@ -97,7 +97,7 @@ class CButton : public CWnd
 ## Remarks  
  A button control is a small, rectangular child window that can be clicked on and off. Buttons can be used alone or in groups and can either be labeled or appear without text. A button typically changes appearance when the user clicks it.  
   
- Typical buttons are the check box, radio button, and pushbutton. A `CButton` object can become any of these, according to the [button style](../../mfc/reference/button-styles.md) specified at its initialization by the [Create](#create) member function.  
+ Typical buttons are the check box, radio button, and pushbutton. A `CButton` object can become any of these, according to the [button style](../../mfc/reference/styles-used-by-mfc.md#button-styles) specified at its initialization by the [Create](#create) member function.  
   
  In addition, the [CBitmapButton](../../mfc/reference/cbitmapbutton-class.md) class derived from `CButton` supports creation of button controls labeled with bitmap images instead of text. A `CBitmapButton` can have separate bitmaps for a button's up, down, focused, and disabled states.  
   
@@ -167,7 +167,7 @@ virtual BOOL Create(
  Specifies the button control's text.  
   
  `dwStyle`  
- Specifies the button control's style. Apply any combination of [button styles](../../mfc/reference/button-styles.md) to the button.  
+ Specifies the button control's style. Apply any combination of [button styles](../../mfc/reference/styles-used-by-mfc.md#button-styles) to the button.  
   
  `rect`  
  Specifies the button control's size and position. It can be either a `CRect` object or a `RECT` structure.  
@@ -186,7 +186,7 @@ virtual BOOL Create(
   
  If the **WS_VISIBLE** style is given, Windows sends the button control all the messages required to activate and show the button.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to a button control:  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a button control:  
   
 - **WS_CHILD** Always  
   
@@ -215,7 +215,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Remarks  
  An owner-drawn button has the **BS_OWNERDRAW** style set. Override this member function to implement drawing for an owner-drawn `CButton` object. The application should restore all graphics device interface (GDI) objects selected for the display context supplied in `lpDrawItemStruct` before the member function terminates.  
   
- Also see the [BS_](../../mfc/reference/button-styles.md) style values.  
+ Also see the [BS_](../../mfc/reference/styles-used-by-mfc.md#button-styles) style values.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CButton#3](../../mfc/reference/codesnippet/cpp/cbutton-class_3.cpp)]  
@@ -241,7 +241,7 @@ UINT GetButtonStyle() const;
 ```  
   
 ### Return Value  
- Returns the button styles for this `CButton` object. This function returns only the [BS_](../../mfc/reference/button-styles.md) style values, not any of the other window styles.  
+ Returns the button styles for this `CButton` object. This function returns only the [BS_](../../mfc/reference/styles-used-by-mfc.md#button-styles) style values, not any of the other window styles.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CButton#5](../../mfc/reference/codesnippet/cpp/cbutton-class_5.cpp)]  
@@ -556,7 +556,7 @@ void SetButtonStyle(
   
 ### Parameters  
  `nStyle`  
- Specifies the [button style](../../mfc/reference/button-styles.md).  
+ Specifies the [button style](../../mfc/reference/styles-used-by-mfc.md#button-styles).  
   
  `bRedraw`  
  Specifies whether the button is to be redrawn. A nonzero value redraws the button. A 0 value does not redraw the button. The button is redrawn by default.  

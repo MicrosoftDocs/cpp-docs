@@ -175,7 +175,7 @@ int AFXAPI AfxMessageBox(
  Points to a `CString` object or null-terminated string containing the message to be displayed in the message box.  
   
  `nType`  
- The style of the message box. Apply any of the [message-box styles](../../mfc/reference/message-box-styles.md) to the box.  
+ The style of the message box. Apply any of the [message-box styles](../../mfc/reference/styles-used-by-mfc.md#message-box-styles) to the box.  
   
  `nIDHelp`  
  The Help context ID for the message; 0 indicates the application's default Help context will be used.  
