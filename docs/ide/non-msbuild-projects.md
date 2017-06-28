@@ -47,7 +47,7 @@ CMake is integrated in the Visual studio IDE as CMake Tools for Visual C++, a co
 ## QMake projects that target the Qt framework
 	You can use CMake tools for Visual C++ to target Qt to build Qt projects, or you can use the QT Visual Studio Extension to perform a one-way conversion from a qmake .pro project to an MSBuild project. Note: As of June 2017, the QT Visual Studio Extension supports only Visual Studio 2015.
 
-## gyp, Cons, SCons, Cons, 
+## gyp, SCons, Gradle, Buck, etc.
 	You can use any build system in Visual C++ and still enjoy the advantages of the Visual C++ IDE and debugger. When you open the root folder of your project, Visual C++ uses heuristics to index the source files for Intellisense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure your build program by editing the launch.vs.json file. 
 
 ## Linux server, IoT, 
