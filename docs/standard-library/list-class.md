@@ -636,7 +636,7 @@ The number '30' is in c1 collection 3 times.
  Inserts an element constructed in place into a list at a specified position.  
   
 ```  
-void emplace_back(iterator Where, Type&& val);
+void emplace(iterator Where, Type&& val);
 ```  
   
 ### Parameters  
@@ -675,7 +675,7 @@ Moved first element: a
 ```  
   
 ##  <a name="emplace_back"></a>  list::emplace_back  
- Adds an element constructed in place to the beginning of a list.  
+ Adds an element constructed in place to the end of a list.  
   
 ```  
 void emplace_back(Type&& val);

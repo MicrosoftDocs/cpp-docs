@@ -36,7 +36,6 @@ translation.priority.mt:
 VS2017 introduces the "Open Folder" feature, which enables you to open a folder of source files and immediately start coding with support for Intellisense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. 
 Powered by Open Folder, Visual C++ can now support not only loose collections of files, but also virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. 
 
-## Open Folder in Visual C++
 To use Open Folder, from the main menu select *File | Open | Folder* or press *Ctrl + Shift + Alt + O*. 
 Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable Intellisense, navigation and refactoring features. As you edit, create, move or delete files, Visual Studio tracks the changes automatically and continuously updates its Intellisense index. 
   
@@ -45,17 +44,17 @@ CMake is a cross-platform open-source tool for defining build processes that run
 CMake is integrated in the Visual studio IDE as CMake Tools for Visual C++, a component of the C++ desktop workload. For more information, see [CMake Tools for Visual C++](cmake-support-in-visual-cpp.md).
  
 ## QMake projects that target the Qt framework
-	You can use CMake tools for Visual C++ to target Qt to build Qt projects, or you can use the QT Visual Studio Extension to perform a one-way conversion from a qmake .pro project to an MSBuild project. Note: As of June 2017, the QT Visual Studio Extension supports only Visual Studio 2015.
+You can use CMake tools for Visual C++ to target Qt to build Qt projects, or you can use the QT Visual Studio Extension to perform a one-way conversion from a qmake .pro project to an MSBuild project. Note: As of June 2017, the QT Visual Studio Extension supports only Visual Studio 2015.
 
 ## gyp, Cons, SCons, Cons, 
-	You can use any build system in Visual C++ and still enjoy the advantages of the Visual C++ IDE and debugger. When you open the root folder of your project, Visual C++ uses heuristics to index the source files for Intellisense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure your build program by editing the launch.vs.json file. 
+You can use any build system in Visual C++ and still enjoy the advantages of the Visual C++ IDE and debugger. When you open the root folder of your project, Visual C++ uses heuristics to index the source files for Intellisense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure your build program by editing the launch.vs.json file. 
 
 ## Configuring Open Folder projects
 You can customize an Open Folder project through three JSON files:
 |||
 |-|-|
 |CppProperties.json|Specify custom configuration information for browsing. Create this file, if needed, in your root project folder.|
-|launch.vs.json|Specify command line arguments|
+|launch.vs.json|Specify command line arguments. Accessed via Solution Explorer context menu item **Debug and Launch Settings**.|
 |tasks.vs.json|Specify custom build commands and compiler switches. Accessed via Solution Explorer context menu item **Configure Tasks**.|
 
 ### Configure Intellisense with CppProperties.json
