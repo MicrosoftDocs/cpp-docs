@@ -56,19 +56,19 @@ You can open folders containing any number of CMake projects. Visual Studio dete
 To build a CMake project you have two choices:
 1.	Right click on the CMakeLists.txt and select Build from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target, or
   
-2. From the main menu, select **Build | Build Solution** (F7 or Ctrl+Shift+B) (for this to work, make sure that a CMake target is already selected in the Startup Item dropdown in the General toolbar).
+2. Make sure that a CMake target is already selected in the Startup Item dropdown in the General toolbar. Then, from the main menu, select **Build | Build Solution** (F7 or Ctrl+Shift+B).
 
 ![CMake build menu command](media/cmake-build-menu.png) 
  
-When a Visual Studio generator  is selected for the active configuration, MSBuild.exe is invoked with “-m -v:minimal” arguments. To customize the build, inside the CMakeSettings.json file, you can specify additional command line arguments to be passed to the build system via the “buildCommandArgs” property e.g .
+When a Visual Studio generator  is selected for the active configuration, MSBuild.exe is invoked with “-m -v:minimal” arguments. To customize the build, modify “buildCommandArgs” property in the CMakeSettings.json file. For example, you can specify additional command line arguments to be passed to the build system:
 ```json
 "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
 ```
-As you would expect, build results are shown in the Output window and Error List window.
+Build results are shown in the Output window and Error List window.
  
 ![CMake build errors](media/cmake-build-errors.png)
 
-In a folder with multiple build targets, by default all are built when you press F5 or **Ctrl+Shift+B**. You can choose the Build item on the CMakeLists.txt context menu to which CMake target to build.
+In a folder with multiple build targets, by default all are built when you press F5 or **Ctrl+Shift+B**. You can choose the **Build** item on the CMakeLists.txt context menu to which CMake target to build.
 
 ## Debugging the project
 To debug a CMake project, choose the desired configuration and press F5, or press the Run button in the toolbar. If the Run button says "Select Startup Item", click on the down arrow and choose the target that you want to run. (In a CMake project, the "Current document" option isn't valid.)
