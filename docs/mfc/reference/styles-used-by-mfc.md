@@ -13,18 +13,197 @@ f1_keywords:
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "edit styles [MFC]"
-  - "window styles, in MFC"
-  - "styles"
-  - "frame windows, styles"
-  - "message-box styles"
-  - "styles, MFC"
+  - "button objects (CButton), button styles"
+  - "button styles"
   - "buttons, MFC toolbars"
-  - "list boxes, styles"
-  - "static styles"
-  - "scroll-bar styles [MFC]"
   - "combo boxes, styles"
+  - "edit styles [MFC]"
   - "extended window styles"
+  - "frame windows, styles"
+  - "list boxes, styles"
+  - "message-box styles"
+  - "scroll bars, styles"
+  - "scroll-bar styles [MFC]"
+  - "static styles"
+  - "styles, button objects"
+  - "styles, MFC"
+  - "styles, windows"
+  - "styles"
+  - "window styles, in MFC"
+  - "window styles"
+  - "BS_3STATE constant"
+  - "BS_AUTO3STATE constant"
+  - "BS_AUTOCHECKBOX constant"
+  - "BS_AUTORADIOBUTTON constant"
+  - "BS_BITMAP constant"
+  - "BS_BOTTOM constant"
+  - "BS_CENTER constant"
+  - "BS_CHECKBOX constant"
+  - "BS_DEFPUSHBUTTON constant"
+  - "BS_FLAT constant"
+  - "BS_GROUPBOX constant"
+  - "BS_ICON constant"
+  - "BS_LEFT constant"
+  - "BS_LEFTTEXT constant"
+  - "BS_MULTILINE constant"
+  - "BS_NOTIFY constant"
+  - "BS_OWNERDRAW constant"
+  - "BS_PUSHBUTTON constant"
+  - "BS_PUSHLIKE constant"
+  - "BS_RADIOBUTTON constant"
+  - "BS_RIGHT constant"
+  - "BS_RIGHTBUTTON constant"
+  - "BS_TEXT constant"
+  - "BS_TOP constant"
+  - "BS_USERBUTTON constant"
+  - "BS_VCENTER constant"
+  - "CBS_AUTOHSCROLL constant"
+  - "CBS_DISABLENOSCROLL constant"
+  - "CBS_DROPDOWN constant"
+  - "CBS_DROPDOWNLIST constant"
+  - "CBS_HASSTRINGS constant"
+  - "CBS_LOWERCASE constant"
+  - "CBS_NOINTEGRALHEIGHT constant"
+  - "CBS_OEMCONVERT constant"
+  - "CBS_OWNERDRAWFIXED constant"
+  - "CBS_OWNERDRAWVARIABLE constant"
+  - "CBS_SIMPLE constant"
+  - "CBS_SORT constant"
+  - "CBS_UPPERCASE constant"
+  - "ES_AUTOHSCROLL constant"
+  - "ES_AUTOVSCROLL constant"
+  - "ES_CENTER constant"
+  - "ES_LEFT constant"
+  - "ES_LOWERCASE constant"
+  - "ES_MULTILINE constant"
+  - "ES_NOHIDESEL constant"
+  - "ES_NUMBER constant"
+  - "ES_OEMCONVERT constant"
+  - "ES_PASSWORD constant"
+  - "ES_READONLY constant"
+  - "ES_RIGHT constant"
+  - "ES_UPPERCASE constant"
+  - "ES_WANTRETURN constant"
+  - "FWS_ADDTOTITLE constant"
+  - "FWS_PREFIXTITLE constant"
+  - "FWS_SNAPTOBARS constant"
+  - "LBS_DISABLENOSCROLL constant"
+  - "LBS_EXTENDEDSEL constant"
+  - "LBS_HASSTRINGS constant"
+  - "LBS_MULTICOLUMN constant"
+  - "LBS_MULTIPLESEL constant"
+  - "LBS_NODATA constant"
+  - "LBS_NOINTEGRALHEIGHT constant"
+  - "LBS_NOREDRAW constant"
+  - "LBS_NOSEL constant"
+  - "LBS_NOTIFY constant"
+  - "LBS_OWNERDRAWFIXED constant"
+  - "LBS_OWNERDRAWVARIABLE constant"
+  - "LBS_SORT constant"
+  - "LBS_STANDARD constant"
+  - "LBS_USETABSTOPS constant"
+  - "LBS_WANTKEYBOARDINPUT constant"
+  - "MB_ABORTRETRYIGNORE constant"
+  - "MB_APPLMODAL constant"
+  - "MB_DEFBUTTON1 constant"
+  - "MB_DEFBUTTON2 constant"
+  - "MB_DEFBUTTON3 constant"
+  - "MB_ICONEXCLAMATION constant"
+  - "MB_ICONINFORMATION constant"
+  - "MB_ICONQUESTION constant"
+  - "MB_ICONSTOP constant"
+  - "MB_OK constant"
+  - "MB_OKCANCEL constant"
+  - "MB_RETRYCANCEL constant"
+  - "MB_SYSTEMMODAL constant"
+  - "MB_TASKMODAL constant"
+  - "MB_YESNO constant"
+  - "MB_YESNOCANCEL constant"
+  - "SBS_BOTTOMALIGN constant"
+  - "SBS_HORZ constant"
+  - "SBS_LEFTALIGN constant"
+  - "SBS_RIGHTALIGN constant"
+  - "SBS_SIZEBOX constant"
+  - "SBS_SIZEBOXBOTTOMRIGHTALIGN constant"
+  - "SBS_SIZEBOXTOPLEFTALIGN constant"
+  - "SBS_TOPALIGN constant"
+  - "SBS_VERT constant"
+  - "SS_BITMAP constant"
+  - "SS_BLACKFRAME constant"
+  - "SS_BLACKRECT constant"
+  - "SS_CENTER constant"
+  - "SS_CENTERIMAGE constant"
+  - "SS_ENDELLIPSIS constant"
+  - "SS_ENHMETAFILE constant"
+  - "SS_ETCHEDFRAME constant"
+  - "SS_ETCHEDHORZ constant"
+  - "SS_ETCHEDVERT constant"
+  - "SS_GRAYFRAME constant"
+  - "SS_GRAYRECT constant"
+  - "SS_ICON constant"
+  - "SS_LEFT constant"
+  - "SS_LEFTNOWORDWRAP constant"
+  - "SS_NOPREFIX constant"
+  - "SS_NOTIFY constant"
+  - "SS_OWNERDRAW constant"
+  - "SS_PATHELLIPSIS constant"
+  - "SS_REALSIZEIMAGE constant"
+  - "SS_RIGHT constant"
+  - "SS_RIGHTJUST constant"
+  - "SS_SIMPLE constant"
+  - "SS_SUNKEN constant"
+  - "SS_USERITEM constant"
+  - "SS_WHITEFRAME constant"
+  - "SS_WHITERECT constant"
+  - "SS_WORDELLIPSIS constant"
+  - "WS_BORDER constant"
+  - "WS_CAPTION constant"
+  - "WS_CHILD constant"
+  - "WS_CHILDWINDOW constant"
+  - "WS_CLIPCHILDREN constant"
+  - "WS_CLIPSIBLINGS constant"
+  - "WS_DISABLED constant"
+  - "WS_DLGFRAME constant"
+  - "WS_GROUP constant"
+  - "WS_HSCROLL constant"
+  - "WS_ICONIC constant"
+  - "WS_MAXIMIZE constant"
+  - "WS_MAXIMIZEBOX constant"
+  - "WS_MINIMIZE constant"
+  - "WS_MINIMIZEBOX constant"
+  - "WS_OVERLAPPED constant"
+  - "WS_OVERLAPPEDWINDOW constant"
+  - "WS_POPUP constant"
+  - "WS_POPUPWINDOW constant"
+  - "WS_SIZEBOX constant"
+  - "WS_SYSMENU constant"
+  - "WS_TABSTOP constant"
+  - "WS_THICKFRAME constant"
+  - "WS_TILED constant"
+  - "WS_TILEDWINDOW constant"
+  - "WS_VISIBLE constant"
+  - "WS_VSCROLL constant"
+  - "WS_EX_ACCEPTFILES constant"
+  - "WS_EX_APPWINDOW constant"
+  - "WS_EX_CLIENTEDGE constant"
+  - "WS_EX_CONTEXTHELP constant"
+  - "WS_EX_CONTROLPARENT constant"
+  - "WS_EX_DLGMODALFRAME constant"
+  - "WS_EX_LEFT constant"
+  - "WS_EX_LEFTSCROLLBAR constant"
+  - "WS_EX_LTRREADING constant"
+  - "WS_EX_MDICHILD constant"
+  - "WS_EX_NOPARENTNOTIFY constant"
+  - "WS_EX_OVERLAPPEDWINDOW constant"
+  - "WS_EX_PALETTEWINDOW constant"
+  - "WS_EX_RIGHT constant"
+  - "WS_EX_RIGHTSCROLLBAR constant"
+  - "WS_EX_RTLREADING constant"
+  - "WS_EX_STATICEDGE constant"
+  - "WS_EX_TOOLWINDOW constant"
+  - "WS_EX_TOPMOST constant"
+  - "WS_EX_TRANSPARENT constant"
+  - "WS_EX_WINDOWEDGE constant"
 ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
 caps.latest.revision: 10
 author: "mikeblome"
@@ -47,28 +226,13 @@ translation.priority.ht:
 ---
 # Styles Used by MFC  
   
-Use the following styles when you create the corresponding MFC object. In most cases, these styles are set in the `dwStyle` parameter of the class `Create` function.  
-  
-## MFC Styles  
-  
-|Style|Description|  
-|-----------|-----------------|  
-|[Button styles](../../mfc/reference/styles-used-by-mfc.md#button-styles)|Applies to [CButton Class](../../mfc/reference/cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the `dwStyle` parameter of [CButton::Create](../../mfc/reference/cbutton-class.md#create).|  
-|[Combo-box styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles)|Applies to [CComboBox Class](../../mfc/reference/ccombobox-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CComboBox::Create](../../mfc/reference/ccombobox-class.md#create).|  
-|[Edit styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles)|Applies to [CEdit Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CEdit::Create](../../mfc/reference/cedit-class.md#create).|  
-|[Frame-window styles](../../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc)|Applies to [CFrameWnd Class](../../mfc/reference/cframewnd-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create).|  
-|[List-box styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles)|Applies to [CListBox Class](../../mfc/reference/clistbox-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CListBox::Create](../../mfc/reference/clistbox-class.md#create).|  
-|[Message-box styles](../../mfc/reference/styles-used-by-mfc.md#message-box-styles)|Applies to [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the `nType` parameter of `AfxMessageBox`.|  
-|[Scroll-bar styles](../../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)|Applies to [CScrollBar Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create).|  
-|[Static styles](../../mfc/reference/styles-used-by-mfc.md#static-styles)|Applies to [CStatic Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CStatic::Create](../../mfc/reference/cstatic-class.md#create).|  
-|[Window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles)|Applies to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex).|  
-|[Extended window styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)|Applies to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the `dwExStyle` parameter of [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex).|  
+Use the following style flags to specify window or control appearance and behavior when you create the corresponding MFC object. In most cases, these styles are set in the `dwStyle` parameter of the class `Create` function.  
   
 <a name="button-styles"></a>  
   
 ## Button styles  
   
-Button styles apply to [CButton Class](../../mfc/reference/cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the `dwStyle` parameter of [CButton::Create](../../mfc/reference/cbutton-class.md#create).  
+Button styles apply to [CButton Class](../../mfc/reference/cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the `dwStyle` parameter of [CButton::Create](../../mfc/reference/cbutton-class.md#create). For more information on button styles in Windows, see [Button Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951).  
   
 ### Button types  
   
@@ -93,7 +257,8 @@ The following table lists button types. You can optionally choose one of the fol
 |`BS_USERBUTTON`|Obsolete, but provided for compatibility with 16-bit versions of Windows. Win32-based applications should use `BS_OWNERDRAW` instead.|  
   
 ### Radio button and check box styles  
- The following table lists styles that are specific to radio buttons and check boxes. These styles are ignored in all other button types. You can optionally choose one or more of the following.  
+  
+The following table lists styles that are specific to radio buttons and check boxes. These styles are ignored in all other button types. You can optionally choose one or more of the following.  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -102,7 +267,8 @@ The following table lists button types. You can optionally choose one of the fol
 |`BS_PUSHLIKE`|Makes a check box or radio button look and behave like a command button. The button appears pressed when its state is `BST_CHECKED`, pressed and dimmed when its state is `BST_INDETERMINATE`, and released when its state is `BST_UNCHECKED`.|  
   
 ### Button text alignment styles  
- The following table lists horizontal and vertical text alignment options. You can optionally choose one of the following.  
+  
+The following table lists horizontal and vertical text alignment options. You can optionally choose one of the following.  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -114,7 +280,8 @@ The following table lists button types. You can optionally choose one of the fol
 |`BS_VCENTER`|Centers text vertically in the button rectangle.|  
   
 ### Button content options  
- The following table lists options that indicate what is displayed in the button. Button types that only display text ignore these styles. You can optionally choose one of the following.  
+  
+The following table lists options that indicate what is displayed in the button. Button types that only display text ignore these styles. You can optionally choose one of the following.  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -123,7 +290,8 @@ The following table lists button types. You can optionally choose one of the fol
 |`BS_TEXT`|Specifies that the button displays text.|  
   
 ### Other button options  
- The following table lists additional options that you can use with any button type. You can optionally choose one or more of the following.  
+  
+The following table lists additional options that you can use with any button type. You can optionally choose one or more of the following.  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -135,7 +303,7 @@ The following table lists button types. You can optionally choose one of the fol
   
 ## Combo-box styles  
   
-The following combo-box styles are available in MFC.  
+The following combo-box styles are available in MFC. For more information about combo-box styles in Windows, see [Combo Box Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -157,7 +325,7 @@ The following combo-box styles are available in MFC.
   
 ## Edit styles  
   
-Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CEdit::Create](../../mfc/reference/cedit-class.md#create).  
+Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CEdit::Create](../../mfc/reference/cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -192,7 +360,7 @@ Frame-window styles apply to [CFrameWnd Class](../../mfc/reference/cframewnd-cla
   
 ## List-box styles  
   
-List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CListBox::Create](../../mfc/reference/clistbox-class.md#create).  
+List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CListBox::Create](../../mfc/reference/clistbox-class.md#create). For more information about list box styles in Windows, see [List Box Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -217,7 +385,7 @@ List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md)
   
 ## Message-box styles  
   
-Message-box styles apply to [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the `nType` parameter of `AfxMessageBox`.  
+Message-box styles apply to [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the `nType` parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [MessageBox Function (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505).  
   
 The following message-box styles are available.  
   
@@ -260,7 +428,7 @@ The following message-box styles are available.
   
 ## Scroll-bar styles  
   
-Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create).  
+Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -279,7 +447,7 @@ Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-cla
   
 ## Static styles  
   
-Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CStatic::Create](../../mfc/reference/cstatic-class.md#create).  
+Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CStatic::Create](../../mfc/reference/cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -315,7 +483,7 @@ Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) obj
   
 ## Window styles  
   
-Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex).  
+Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the `dwStyle` parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -351,7 +519,7 @@ Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. 
   
 ## Extended window styles  
   
-Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the `dwExStyle` parameter of [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex).  
+Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the `dwExStyle` parameter of [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about extended window styles in Windows, see [Extended Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -389,12 +557,12 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)  
 [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679)  
 [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680)  
-[DrawEdge](http://msdn.microsoft.com/library/windows/desktop/dd162477)  
-[Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600)  
-[Extended Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543)  
 [Button Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951)  
 [Combo Box Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796)  
 [Edit Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464)  
-[List Box Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149)  
+[List Box Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149) 
+[MessageBox Function (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505) 
 [Scroll Bar Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533)  
 [Static Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773)  
+[Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600)  
+[Extended Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543)  
