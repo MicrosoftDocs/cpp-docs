@@ -158,7 +158,7 @@ Executing SEH __except block
   
  For more information, see [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md).  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)   

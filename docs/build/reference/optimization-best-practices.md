@@ -153,7 +153,7 @@ int myFunc() {...}
   
 3.  Your code gets the benefit of compiler optimizations. As the compiler gets better, the code generation for the intrinsics improves.  
   
- For more information, see [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md) and [Benefits of Using Intrinsics](http://msdn.microsoft.com/en-us/57af8920-527f-44af-a741-a07cbe80bf02).  
+ For more information, see [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md).  
   
 ## Exceptions  
  There is a performance hit associated with using exceptions. Some restrictions are introduced when using try blocks that inhibit the compiler from performing certain optimizations. On x86 platforms there is additional performance degradation from try blocks due to additional state information that must be generated during code execution. On the 64-bit platforms, try blocks do not degrade performance as much, but once an exception is thrown, the process of finding the handler and unwinding the stack can be expensive.  

@@ -101,7 +101,7 @@ int main()
 0 ffffffffffff ffffffffffff 0  
 ```  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

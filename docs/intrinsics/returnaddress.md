@@ -80,7 +80,7 @@ int main(void)
 }  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)   

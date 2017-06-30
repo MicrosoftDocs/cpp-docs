@@ -34,12 +34,13 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Initializing Extension DLLs
+# Initializing Extension DLLs  
+  
 Because extension DLLs do not have a `CWinApp`-derived object (as do regular DLLs), you should add your initialization and termination code to the `DllMain` function that the MFC DLL Wizard generates.  
   
  The wizard provides the following code for extension DLLs. In the code, `PROJNAME` is a placeholder for the name of your project.  
   
-```  
+```cpp  
 #include "stdafx.h"  
 #include <afxdllx.h>  
   
@@ -89,11 +90,9 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
  Note that the header file Afxdllx.h contains special definitions for structures used in extension DLLs, such as the definition for `AFX_EXTENSION_MODULE` and **CDynLinkLibrary**. You should include this header file in your extension DLL.  
   
 > [!NOTE]
->  It is important that you neither define nor undefine any of the _AFX_NO_XXX macros in Stdafx.h. For more information, see the Knowledge Base article "PRB: Problems Occur When Defining _AFX_NO_XXX" (Q140751). You can find Knowledge Base articles in the MSDN Library or at [http://search.support.microsoft.com/](http://search.support.microsoft.com/).  
+>  It is important that you neither define nor undefine any of the `_AFX_NO_XXX` macros in Stdafx.h. These macros exist only for the purpose of checking whether a particular target platform supports that feature or not. You can write your program to check these macros (for example, `#ifndef _AFX_NO_OLE_SUPPORT`), but your program should never define or undefine these macros.  
   
- A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](http://msdn.microsoft.com/library/windows/desktop/ms686997) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)]. Note that the sample contains an entry-point function called **LibMain**, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.  
-  
- The MFC sample [DLLHUSK](http://msdn.microsoft.com/en-us/dfcaa6ff-b8e2-4efd-8100-ee3650071f90) demonstrates the use of initialization functions.  
+ A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](http://msdn.microsoft.com/library/windows/desktop/ms686997) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)]. Note that the sample contains an entry-point function called `LibMain`, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.  
   
 ## What do you want to do?  
   

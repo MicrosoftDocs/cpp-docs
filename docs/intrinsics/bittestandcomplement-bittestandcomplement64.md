@@ -119,7 +119,7 @@ Testing bit 0
 Value changed to 0, Result: 1  
 ```  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

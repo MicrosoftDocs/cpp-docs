@@ -103,7 +103,7 @@ int main()
 101  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [__m128d](../cpp/m128d.md)   

@@ -229,7 +229,7 @@ C4996 can also occur if you use MFC or ATL functions that were deprecated for se
   
 To fix this issue, we strongly recommend you change your code to use updated functions instead.  
   
-For information on how to suppress these warnings, see [_AFX_SECURE_NO_WARNINGS](../../mfc/reference/diagnostic-services.md#afx_secure_no_warnings) and [_ATL_SECURE_NO_WARNINGS](http://msdn.microsoft.com/Library/587d29d8-a75a-44a3-bec8-f724087e5e73).  
+For information on how to suppress these warnings, see [_AFX_SECURE_NO_WARNINGS](../../mfc/reference/diagnostic-services.md#afx_secure_no_warnings).  
   
 ## Obsolete CRT functions and variables  
   

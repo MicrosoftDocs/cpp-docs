@@ -46,7 +46,7 @@ translation.priority.ht:
   
  WINDOWS.H now supports the **WINAPI** macro, which translates to the appropriate calling convention for the target. Use **WINAPI** where you previously used **PASCAL** or **__far \__pascal**.  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)

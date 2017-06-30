@@ -95,7 +95,7 @@ __declspec ( naked ) int main() {
 }  
 ```  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Naked Function Calls](../cpp/naked-function-calls.md)

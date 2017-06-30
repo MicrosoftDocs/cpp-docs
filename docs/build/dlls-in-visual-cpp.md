@@ -36,16 +36,18 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# DLLs in Visual C++
+# DLLs in Visual C++  
+  
 A dynamic-link library (DLL) is an executable file that acts as a shared library of functions and resources. Dynamic linking enables an executable to call functions or use resources stored in a separate file. These functions and resources can be compiled and deployed separately from the executables that use them. The operating system can load the DLL into the executable's memory space when the executable is loaded, or on demand at runtime. DLLs also make it easy to share functions and resources across executables. Multiple applications can access the contents of a single copy of a DLL in memory at the same time.  
   
- Static linking copies all the object code in a .lib file into an executable. Dynamic linking includes only the information needed at run time to locate and load the DLL that contains a data item or function. When you create a DLL, you also create a .lib file that contains this information. When you build an executable that calls the DLL, the linker uses the exported symbols in the .lib file to store this information for the loader. When the loader loads a DLL, the DLL is mapped into the memory space of your executable. A special function in the DLL, `DllMain`, is called to perform any initialization the DLL requires.  
+Static linking copies all the object code in a .lib file into an executable. Dynamic linking includes only the information needed at run time to locate and load the DLL that contains a data item or function. When you create a DLL, you also create a .lib file that contains this information. When you build an executable that calls the DLL, the linker uses the exported symbols in the .lib file to store this information for the loader. When the loader loads a DLL, the DLL is mapped into the memory space of your executable. A special function in the DLL, `DllMain`, is called to perform any initialization the DLL requires.  
   
- Using dynamic linking instead of static linking offers several advantages. When you use DLLs, you can save memory space and reduce swapping. When multiple applications can use a single copy of a DLL, you can save disk space and download bandwidth. DLLs can be deployed and updated separately, which lets you provide after-market support and software updates without having to rebuild and ship all your code. DLLs are a convenient way to supply locale-specific resources, which can support multi-language programs, and ease creating international versions of your applications.  
+Using dynamic linking instead of static linking offers several advantages. When you use DLLs, you can save memory space and reduce swapping. When multiple applications can use a single copy of a DLL, you can save disk space and download bandwidth. DLLs can be deployed and updated separately, which lets you provide after-market support and software updates without having to rebuild and ship all your code. DLLs are a convenient way to supply locale-specific resources, which can support multi-language programs, and ease creating international versions of your applications.  
   
- The following topics provide detailed information about how to program DLLs.  
+The following topics provide detailed information about how to program DLLs.  
   
 ## In This Section  
+  
  [Walkthrough: Creating and Using a Dynamic Link Library (C++)](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)  
  Describes how to create and use a DLL using Visual Studio.  
   
@@ -110,11 +112,9 @@ A dynamic-link library (DLL) is an executable file that acts as a shared library
  Describes how to call DLL functions from Visual Basic applications.  
   
 ## Related Sections  
+  
  [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
  Describes regular DLLs, which let you use the MFC library as part of a Windows dynamic-link library.  
   
  [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)  
  Describes how you can use the MFCxx.dll and MFCxxD.dll (where x is the MFC version number) shared dynamic-link libraries with MFC applications and extension DLLs.  
-  
- [(NOTINBUILD)Visual C++ Programming Methodologies](http://msdn.microsoft.com/en-us/0822f806-fa81-4b65-bf0f-1e2921f30c95)  
- Provides links to topics that describe conceptual information about the Visual C++ libraries and topics that discuss various coding technologies and techniques.

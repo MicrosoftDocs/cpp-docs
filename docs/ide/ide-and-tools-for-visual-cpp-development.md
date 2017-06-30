@@ -136,7 +136,6 @@ Visual Studio 2017 offers three ways to organize your C++ source code and relate
 |||  
 |-|-|  
 |[Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|  
-|[Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)|Provides an overview of the Visual Studio development environment and the kinds of C++ apps that you can create.|  
 |[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ projects in Visual Studio and links to other articles that explain how to create and manage them.|  
 |[Building C/C++ Programs](../build/building-c-cpp-programs.md)|Describes how to build C++ projects.|  
 |[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|  

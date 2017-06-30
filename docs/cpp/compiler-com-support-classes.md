@@ -47,7 +47,7 @@ translation.priority.ht:
 |[_com_ptr_t](../cpp/com-ptr-t-class.md)|Encapsulates COM interface pointers, and automates the required calls to `AddRef`, **Release**, and `QueryInterface`.|  
 |[_variant_t](../cpp/variant-t-class.md)|Wraps the **VARIANT** type to provide useful operators and methods.|  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler COM Support](../cpp/compiler-com-support.md)   

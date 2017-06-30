@@ -170,7 +170,7 @@ private:
   
  Recursive functions can be substituted inline to a depth specified by the [inline_depth](../preprocessor/inline-depth.md) pragma, up to a maximum of 16 calls. After that depth, recursive function calls are treated as calls to an instance of the function.  The depth to which recursive functions are examined by the inline heuristic cannot exceed 16. The [inline_recursion](../preprocessor/inline-recursion.md) pragma controls the inline expansion of a function currently under expansion. See the [Inline-Function Expansion](../build/reference/ob-inline-function-expansion.md) (/Ob) compiler option for related information.  
   
-### END Microsoft Specific  
+**END Microsoft Specific**  
  For more information on using the **inline** specifier, see:  
   
 -   [Inline Class Member Functions](../cpp/inline-functions-cpp.md)  

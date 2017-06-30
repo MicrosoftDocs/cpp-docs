@@ -196,7 +196,7 @@ __int64 _InterlockedExchange64_rel(
 ## Example  
  For a sample of how to use `_InterlockedExchange`, see [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)   

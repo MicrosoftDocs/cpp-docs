@@ -107,5 +107,6 @@ Now that you've created your application by completing the earlier related walkt
  **Previous:** [Walkthrough: Debugging a Project (C++)](../ide/walkthrough-debugging-a-project-cpp.md)  
   
 ## See Also  
- [Visual C++ Guided Tour](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)   
+ [C++ Language Reference](../cpp/cpp-language-reference.md)   
+ [Building C/C++ Programs](../build/building-c-cpp-programs.md)  
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

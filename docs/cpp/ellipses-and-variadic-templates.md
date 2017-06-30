@@ -114,7 +114,7 @@ template <typename First, typename... Rest> returntype functionname(const First&
 template<typename... Arguments>  
 void tfunc(const Arguments&... args)  
 {  
-    const unsigned numargs = sizeof...(Arguments);  
+    constexpr auto numargs{ sizeof...(Arguments) };  
   
     X xobj[numargs]; // array of some previously defined type X  
   

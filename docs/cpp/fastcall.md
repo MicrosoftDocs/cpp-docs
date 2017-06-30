@@ -86,7 +86,7 @@ void FASTCALL DeleteAggrWrapper(void* pWrapper);
 typedef BOOL (__fastcall *funcname_ptr)(void * arg1, const char * arg2, DWORD flags, ...);  
 ```  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)   

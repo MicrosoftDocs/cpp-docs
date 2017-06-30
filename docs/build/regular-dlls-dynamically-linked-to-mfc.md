@@ -99,7 +99,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
   
  The **AFX_MANAGE_STATE** macro should not be used in regular DLLs that statically link to MFC or in extension DLLs. For more information, see [Managing the State Data of MFC Modules](../mfc/managing-the-state-data-of-mfc-modules.md).  
   
- For an example of how to write, build, and use a regular DLL, see the sample [DLLScreenCap](http://msdn.microsoft.com/en-us/2171291d-3a50-403b-90a1-d93c2acb4f4a). For more information about regular DLLs that dynamically link to MFC, see the section titled "Converting DLLScreenCap to Dynamically Link with the MFC DLL" in the abstract for the sample.  
+ For an example of how to write, build, and use a regular DLL, see the sample [DLLScreenCap](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/DllScreenCap). For more information about regular DLLs that dynamically link to MFC, see the section titled "Converting DLLScreenCap to Dynamically Link with the MFC DLL" in the abstract for the sample.  
   
 ## What do you want to do?  
   

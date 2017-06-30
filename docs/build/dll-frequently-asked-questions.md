@@ -34,7 +34,8 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# DLL Frequently Asked Questions
+# DLL Frequently Asked Questions  
+  
 Following are some frequently asked questions (FAQ) about DLLs.  
     
 -   [Can an MFC DLL create multiple threads?](#mfc_multithreaded_1)  
@@ -47,7 +48,8 @@ Following are some frequently asked questions (FAQ) about DLLs.
   
 -   [There's a memory leak in my regular DLL, but my code looks fine. How can I find the memory leak?](#memory_leak)  
 
-## <a name="mfc_multithreaded_1"></a> Can an MFC DLL create multiple threads?
+## <a name="mfc_multithreaded_1"></a> Can an MFC DLL create multiple threads?  
+  
 Except during initialization, an MFC DLL can safely create multiple threads as long as it uses the Win32 thread local storage (TLS) functions such as **TlsAlloc** to allocate thread local storage. However, if an MFC DLL uses **__declspec(thread)** to allocate thread local storage, the client application must be implicitly linked to the DLL. If the client application explicitly links to the DLL, the call to **LoadLibrary** will not successfully load the DLL. For more information about creating multiple threads inside MFC DLLs, see the Knowledge Base article, "PRB: Calling LoadLibrary() to Load a DLL That Has Static TLS" (Q118816).  
   
  An MFC DLL that creates a new MFC thread during startup will stop responding when it is loaded by an application. This includes whenever a thread is created by calling `AfxBeginThread` or `CWinThread::CreateThread` inside:  
@@ -82,11 +84,9 @@ If your DLL is a regular DLL that is statically linked to MFC, changing it to a 
   
  DLLs that are implicitly linked to an application are loaded when the application loads. To improve the performance when loading, try dividing the DLL into different DLLs. Put all the functions that the calling application needs immediately after loading into one DLL and have the calling application implicitly link to that DLL. Put the other functions that the calling application does not need right away into another DLL and have the application explicitly link to that DLL. For more information, see [Determining Which Linking Method to Use](../build/determining-which-linking-method-to-use.md).  
 
-## <a name="memory_leak"></a> There&#39;s a memory leak in my regular DLL, but my code looks fine. How can I find the memory leak?
-One possible cause of the memory leak is that MFC creates temporary objects that are used inside message handler functions. In regular DLLs, MFC does not automatically release memory allocated for these objects. For more information, see [Memory Management and the Debug Heap](http://msdn.microsoft.com/en-us/34dc6ef6-31c9-460e-a2a7-15e7f8e3334b) or the Knowledge Base article, "Cleaning Up Temporary MFC Objects in _USRDLL DLLs" (Q105286).  
+## <a name="memory_leak"></a> There&#39;s a memory leak in my regular DLL, but my code looks fine. How can I find the memory leak?  
   
- Note that the term USRDLL is no longer used in the Visual C++ documentation. A regular DLL that is statically linked to MFC has the same characteristics as the former USRDLL. The advice in the Knowledge Base article also applies to regular DLLs that are dynamically linked to MFC. The information in the above Knowledge Base article applies to both regular DLLs that statically link to MFC and regular DLLs that dynamically link to MFC.  
+One possible cause of the memory leak is that MFC creates temporary objects that are used inside message handler functions. In MFC applications, these temporary objects are automatically cleaned up in the `CWinApp::OnIdle()` function that is called in between processing messages. However, in MFC dynamic-link libraries (DLLs), the `OnIdle()` function is not automatically called. As a result, temporary objects are not automatically cleaned up. To clean up temporary objects, the DLL must explicitly call `OnIdle(1)` periodically.  
   
-
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

@@ -47,7 +47,7 @@ translation.priority.ht:
   
  For more information on the MBCS environment, see [Single-byte and Multibyte Character Sets](../c-runtime-library/single-byte-and-multibyte-character-sets.md) in the *Run-Time Library Reference.*  
   
-## END Microsoft Specific  
+**END Microsoft Specific**  
   
 ## See Also  
  [main: Program Startup](../cpp/main-program-startup.md)
