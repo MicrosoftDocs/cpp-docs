@@ -92,7 +92,8 @@ zlib:x86-windows        1.2.11   A compression library
 Run `vcpkg integrate install` to configure Visual Studio to locate all vcpkg header files and binaries on a per-user basis without the need for manual editing of VC++ Directories paths. If you have multiple clones, the clone from which you run this command becomes the new default location.
 
 Now you can #include headers simply by typing the folder/header, and auto-complete will help you. No additional steps are required for linking to libs or adding project references. The following illustration shows how Visual Studio finds the azure-storage-cpp headers. vcpkg places its headers in the \installed subfolder, partitioned by target platform. The following diagram shows the list of include files in the `/was` subfolder for the library:
- ![vcpkg Intellisense integration](media/vcpkg_intellisense.png "vcpkg and Intellisense")  
+
+ ![vcpkg Intellisense integration](media/vcpkg-intellisense.png "vcpkg and Intellisense")  
 
 #### Per project
 If you need to use a specific version of a library that is different from the version in your active vcpkg instance, you can make a new clone of vcpkg, modify the portfile for the library to obtain the version you need, and then run `vcpkg install <library>`. After that, you can use `vcpkg integrate project` to create a NuGet package that references that library on a per-project basis.
