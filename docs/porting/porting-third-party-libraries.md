@@ -41,6 +41,7 @@ When you upgrade a project to the current version of Visual C++, you also have t
 ## Introducing vcpkg
 In the past, finding and upgrading 3rd party libraries was sometimes a non-trivial task. To make it easier to acquire and rebuild C++ 3rd party open source libraries, the Visual C++ team has created a command-line tool called the **VC++ Packaging Tool** or **vcpkg**. Vcpkg has a searchable catalog of many popular C++ open-source libraries. You can install any library in the catalog directly from the vcpkg command line. When you install a library, Vcpkg creates a directory tree on your machine and adds the .h, the .lib and binaries in this folder. You can use this folder in your compilation command line, or integrate it into Visual Studio 2015 or later by using the vcpkg integrate install command. After you integrate a library location, Visual Studio can find it and add it to any new project that you create. To use a library, just #include it, and Visual Studio will automatically add the .lib path to your project settings and copy the dll to your solution folder. For more information, see [vcpkg: A package manager for C++](../vcpkg.md).
 
+
 ## Reporting issues
 If your library is not present in vcpkg catalog, you can open an issue on the [GitHub repo](https://github.com/Microsoft/vcpkg/issues) where the community and the Visual C++ team can see it and potentially create the port file for this library.
 
