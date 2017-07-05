@@ -63,7 +63,7 @@ The **/DEBUG:FULL** option is the linker default for debug/release builds in Vis
   
 The **/DEBUG:NONE** option does not generate a PDB.  
 
-Notwithstanding the above comments, the **/DEBUG** option (wit no additional options) defaults to **/DEBUG:FULL** when you use the linker outside the Visual Studio IDE, e.g., in the command prompt or in a Makefile.
+Notwithstanding the above comments, the **/DEBUG** option (with no additional options) defaults to **/DEBUG:FULL** when you use the linker outside the Visual Studio IDE, e.g., in the command prompt or in a Makefile.
 
 The compiler's [C7 Compatible](../../build/reference/z7-zi-zi-debug-information-format.md) (/Z7) option causes the compiler to leave the debugging information in the .obj files. You can also use the [Program Database](../../build/reference/z7-zi-zi-debug-information-format.md) (/Zi) compiler option to store the debugging information in a PDB for the .obj file. The linker looks for the object's PDB first in the absolute path written in the .obj file, and then in the directory that contains the .obj file. You cannot specify an object's PDB file name or location to the linker.  
   
