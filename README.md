@@ -1,4 +1,4 @@
-## Microsoft Open Source Code of Conduct
+ ## Microsoft Open Source Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
@@ -7,7 +7,9 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 
 Welcome! This repo contains source files for the work-in-progress Visual C++ technical documentation. The topics are published on the [Visual C++ documentation site](https://docs.microsoft.com/cpp).
 
-The documentation for Visual Basic and Visual C# are located in a separate repo at [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), and the Visual Studio documentation is located in the repo located at [http://github.com/Microsoft/visualstudio-docs](http://github.com/Microsoft/visualstudio-docs).
+This repo was moved from Microsoft/vcppdocs to MicrosoftDocs/cpp-docs-pr on June 23, 2017.
+
+The documentation for Visual Basic and Visual C# are located in a separate repo at [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), and the Visual Studio 2017 documentation is located in the repo located at [http://github.com/Microsoft/visualstudio-docs](http://github.com/Microsoft/visualstudio-docs).
 
 ## Contributing to the documentation
 

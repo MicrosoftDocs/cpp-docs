@@ -69,16 +69,15 @@ Creates a pipe and executes a command.
   
 ## Syntax  
   
-```  
-  
-      FILE *_popen(  
-const char *command,  
-const char *mode   
-);  
-FILE *_wpopen(  
-const wchar_t *command,  
-const wchar_t *mode   
-);  
+```
+FILE *_popen(
+const char *command,
+const char *mode
+);
+FILE *_wpopen(
+const wchar_t *command,
+const wchar_t *mode
+);
 ```  
   
 #### Parameters  
