@@ -18,17 +18,32 @@ In C++11, attributes provide a standardized way to annotate C++ constructs (incl
 void Foo(int);    
 ```  
   
- Attributes represent a standardized alternative to vendor-specific extensions such as #pragma directives, __declspec() (Visual C++), or \__attribute\_\_ (GNU). However, you will still need to use the vendor-specific constructs for most purposes. The standard currently specifies three attributes that a conforming compiler should recognize:  
+ Attributes represent a standardized alternative to vendor-specific extensions such as #pragma directives, __declspec() (Visual C++), or \__attribute\_\_ (GNU). However, you will still need to use the vendor-specific constructs for most purposes. The standard currently specifies the following attributes that a conforming compiler should recognize:  
   
--   `noreturn` -- specifies that a function never returns; in other words it always throws an exception. The compiler can adjust its compilation rules for [[noreturn]] entities.  
+-   `noreturn` Specifies that a function never returns; in other words it always throws an exception. The compiler can adjust its compilation rules for `[[noreturn]]` entities.  
   
--   `carries_dependency`--specifies that the function propagates data dependency ordering with respect to thread synchronization. The attribute can be applied to one or more parameters, to specify that the passed-in argument carries a dependency into the function body. The attribute can be applied to the function itself, to specify that the return value carries a dependency out of the function. The compiler can use this information to generate more efficient code.  
+-   `carries_dependency` Specifies that the function propagates data dependency ordering with respect to thread synchronization. The attribute can be applied to one or more parameters, to specify that the passed-in argument carries a dependency into the function body. The attribute can be applied to the function itself, to specify that the return value carries a dependency out of the function. The compiler can use this information to generate more efficient code.  
   
--   `deprecated` - **Visual Studio 2015 and later:** specifies that a function is not intended to be used, and might not exist in future versions of a library interface. The compiler can use this to generate an informational message when client code attempts to call the function. Can be applied to declaration of a class, a typedef-name, a variable, a non-static data member, a function, a namespace, an enumeration, an enumerator, or a template specialization.  
+-   `deprecated` - **Visual Studio 2015 and later:** Specifies that a function is not intended to be used, and might not exist in future versions of a library interface. The compiler can use this to generate an informational message when client code attempts to call the function. Can be applied to declaration of a class, a typedef-name, a variable, a non-static data member, a function, a namespace, an enumeration, an enumerator, or a template specialization.  
 
 -   `fallthrough` - **Visual Studio 2017 and later:**(available with [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute can be used in the context of [switch](switch-statement-cpp.md) statements as a hint to the compiler (or anyone reading the code) that the fallthrough behavior is intended. The Visual C++ compiler currently does not warn on fallthrough behavior, so this attribute has no effect compiler behavior.
 
-**Microsoft-specific:**
+- `nodiscard` **Visual Studio 2017 version 15.3 and later:**(available with [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) Specifies that a function's return value is not intended to be discarded. Raises warning C4834, as shown in the following example
+ 
+```cpp
+[[nodiscard]]
+int foo(int i) { return i * i; }
+
+int main()
+{
+	foo(42); //warning C4834: discarding return value of function with 'nodiscard' attribute
+    return 0;
+}
+```
+
+- `[[maybe_unused]]` **Visual Studio 2017 version 15.3 and later:**(available with [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) Specifies that a variable, function, class, typedef, non-static data member, enum, or template specialization may intentionally not be used. The compiler does not warn when an entity marked `[[maybe_unused]]` is not used. An entity that is declared without the attribute can later be redeclared with the attribute and vice versa. An entity is considered marked after its first declaration that is marked is analyzed, and for the remainder of translation of the current translation unit.
+
+# Microsoft-specific attributes
   
 -   `gsl::suppress`  -- this Microsoft-specific attribute is used for suppressing warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. For example, consider the code snippet below  
   
