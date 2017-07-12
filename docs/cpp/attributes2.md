@@ -10,7 +10,20 @@ ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
 caps.latest.revision: 11
 manager: "ghogen"
 ---
-# C++ Standard Attributes
+# Attributes in C++
+ The C++ standard defines a set of attributes and also allows compiler vendors to define their own attributes (within a vendor-specific namespace), but compilers are required to recognize only those attributes defined in the standard. 
+ In some cases, standard attributes overlap with compiler-specific declspec parameters. Visual C++, you can use the [[deprecated]] attribute instead of using declspec(deprecated) and the attribute will be recognized by any conformant compiler. For all other declspec parameters such as dllimport and dllexport, there is as yet no standard attribute equivalent so you must continue to use declspec syntax. Attributes do not affect the type system, and they don’t change the meaning of a program. Compilers ignore attribute values they don't recognize.
+
+**Visual Studio 2017 version 15.3 and later:**(available with [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) In the scope of an attribute list, you can specify the namespace for all names with a single `using` introducer:
+
+```cpp
+void g() {
+[[ using rpr: kernel , target(cpu,gpu)]] // equivalent to [[ rpr::kernel, rpr::target(cpu,gpu) ]]
+do task();
+}
+```   
+
+## C++ Standard Attributes
 In C++11, attributes provide a standardized way to annotate C++ constructs (including but not limited to classes, functions, variables, and blocks) with additional information that may or may not be vendor-specific. A compiler can use this information to generate informational messages, or to apply special logic when compiling the attributed code. The compiler ignores any attributes that it does not recognize, which means that you cannot define your own custom attributes using this syntax. Attributes are enclosed by double square brackets:  
   
 ```  
@@ -43,7 +56,7 @@ int main()
 
 - `[[maybe_unused]]` **Visual Studio 2017 version 15.3 and later:**(available with [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) Specifies that a variable, function, class, typedef, non-static data member, enum, or template specialization may intentionally not be used. The compiler does not warn when an entity marked `[[maybe_unused]]` is not used. An entity that is declared without the attribute can later be redeclared with the attribute and vice versa. An entity is considered marked after its first declaration that is marked is analyzed, and for the remainder of translation of the current translation unit.
 
-# Microsoft-specific attributes
+## Microsoft-specific attributes
   
 -   `gsl::suppress`  -- this Microsoft-specific attribute is used for suppressing warnings from checkers that enforce [Guidelines Support Library (GSL)](https://github.com/Microsoft/GSL) rules in code. For example, consider the code snippet below  
   
@@ -70,4 +83,3 @@ int main()
   
    The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing [[gsl::suppress(bounds)]] without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they are not wanted.  
   
- The C++ standard allows compiler vendors to define their own attribute parameters (within a vendor-specific namespace), but compilers are required to recognize only those attributes defined in the standard. In Visual C++, you can use the [[deprecated]] attribute instead of using declspec (deprecated) and the attribute will be recognized by any conformant compiler. For all other declspec parameters such as dllimport and dllexport, there is as yet no standard attribute equivalent so you must continue to use declspec syntax. Attributes do not affect the type system, and they don’t change the meaning of a program. Compilers ignore attribute values they don't recognize.
