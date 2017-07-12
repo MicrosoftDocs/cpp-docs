@@ -67,7 +67,7 @@ i++;
   
  The operands to postfix increment and postfix decrement operators must be modifiable (not **const**) l-values of arithmetic or pointer type. The type of the result is the same as that of the *postfix-expression*, but it is no longer an l-value.  
   
- The operand of a postfix increment operator may also be of type `bool`, in which case the operand is evaluated and then set to **true**. The operand of a postfix decrement operator cannot be of type `bool`.  
+ **Visual Studio 2017 version 15.3 and later:**(available with [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) The operand of a postfix increment  or decrement operator may not be of type `bool`.
   
  The following code illustrates the postfix increment operator:  
   
