@@ -72,9 +72,9 @@ extern inline void f1() {
 
 *Visual Studio 2015 and newer:*
 
-In C++11, a static local variable initialization is guaranteed to be thread-safe; a feature sometimes called "magic statics". This is the default starting with Visual Studio 2015. The thread-safe statics feature can be disabled by using the  flag to avoid taking a 
+In C++11, a static local variable initialization is guaranteed to be thread-safe; a feature sometimes called "magic statics". This is the default starting with Visual Studio 2015. The thread-safe statics feature can be disabled by using the /Zc:threadSafeInit- compielr flag.
 
-One potential cause for this error in Visual Studio 2015 and newer versions is the disabling of thread safe static initialization via the /Zc:threadSafeInit- compiler flag. If you are encountering this error, consider whether or not this flag is necessary for your application.
+One potential cause for this error in Visual Studio 2015 and newer versions is the disabling of thread safe static initialization via the /Zc:threadSafeInit- compiler flag. If you are encountering this error, consider whether or not this flag is necessary for your application, and remove it if possible.
 
 
 
