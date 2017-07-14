@@ -45,8 +45,7 @@ Controls conditional branching.
 ## Syntax  
   
 ```  
-  
-      if ( expression )  
+if ( expression )  
    statement1  
 [else  
    statement2]  

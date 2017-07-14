@@ -379,7 +379,7 @@ int main()
 }
 ```
 
-4. Although not "returning values" in the strict sense, you can also define any number of parameters to use pass-by reference so that the function can modify the value of the object that the caller provides. 
+4. Although not "returning values" in the strict sense, you can define any number of parameters to use pass-by reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).
   
 ## Function pointers  
  C++ supports function pointers in the same manner as the C language. However a more type-safe alternative is usually to use a function object.  
