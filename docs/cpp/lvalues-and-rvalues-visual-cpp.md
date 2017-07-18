@@ -1,5 +1,5 @@
 ---
-title: "Lvalues and Rvalues (Visual C++) | Microsoft Docs"
+title: "Value Categories: Lvalues and Rvalues (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -34,22 +34,18 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Lvalues and Rvalues (Visual C++)
-Every C++ expression is either an lvalue or an rvalue. An lvalue refers to an object that persists beyond a single expression. You can think of an lvalue as an object that has a name. All variables, including nonmodifiable (`const`) variables, are lvalues. An rvalue is a temporary value that does not persist beyond the expression that uses it. To better understand the difference between lvalues and rvalues, consider the following example:  
-  
-```  
-// lvalues_and_rvalues1.cpp  
-// compile with: /EHsc  
-#include <iostream>  
-using namespace std;  
-int main()  
-{  
-   int x = 3 + 4;  
-   cout << x << endl;  
-}  
-```  
-  
- In this example, `x` is an lvalue because it persists beyond the expression that defines it. The expression `3 + 4` is an rvalue because it evaluates to a temporary value that does not persist beyond the expression that defines it.  
-  
+Every C++ expression has a type, and belongs to a *value category*. The value categories are the basis for rules that compilers must follow when creating, copying, and moving temporary objects during expression evaluation. In C++17 the rules were restated to ensure that all compilers behave identically by not creating objects unless they are actually required. The new specified behavior is called "guaranteed copy elision." It helps to make your code more portable and efficient and eliminates the need to provide copy and move constructors for types that never use them.
+
+ The C++17 standard defines value categories as follows:
+
+- A *glvalue* is an expression whose evaluation determines the identity of an object, bit-field, or function. 
+- A *prvalue* is an expression whose evaluation initializes an object or a bit-field, or computes the value of the operand of an operator, as specified by the context in which it appears. 
+- An *xvalue* is a glvalue that denotes an object or bit-field whose resources can be reused (usually because it is near the end of its lifetime). [ Example: Certain kinds of expressions involving rvalue references (8.3.2) yield xvalues, such as a call to a function whose return type is an rvalue reference or a cast to an rvalue reference type. ] 
+- An *lvalue* is a glvalue that is not an xvalue. 
+- An *rvalue* is a prvalue or an xvalue. 
+ 
+ Examples of lvalues include variables, including `const` variables, array elements, bit-fields, unions, and class members. Examples of rvalues include literals, function calls, and temporary objects that are created during expression evalution but accessible only by the compiler. 
+ 
  The following example demonstrates several correct and incorrect usages of lvalues and rvalues:  
   
 ```  
@@ -79,6 +75,41 @@ int main()
   
 > [!NOTE]
 >  The examples in this topic illustrate correct and incorrect usage when operators are not overloaded. By overloading operators, you can make an expression such as `j * 4` an lvalue.  
+
+The following example shows the new behavior for guaranteed copy elision. Note that construction from temporary objects succeeds in both cases despite the absence of a move constructor.
+
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct S {
+	S(int) { cout << "S(int)" << endl; }
+	S(S&) = delete;
+	S(S&&) = delete; // { cout << "move" << endl; }
+	///...
+};
+
+S make_s() 
+{
+	// Return value initialized directly at call site.
+	// In Visual Studio 2015 this does not compile due to deleted move ctor.
+	return S(42);
+}
+
+
+int main()
+{
+	auto nm = make_s(); 
+	S x4 = 5; // Construct from an rvalue.
+}
+```
+The program produces this output:
+```output
+S(int)
+S(int)
+```
   
  The terms *lvalue* and *rvalue* are often used when you refer to object references. For more information about references, see [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md) and [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
