@@ -47,6 +47,7 @@ else  // optional
    ...
 } 
 
+// Visual Studio 2017 version 15.3 and later:
 if ( initialization; expression )  
 {
    statement1;
@@ -57,6 +58,18 @@ else  // optional
    statement2;
    ...
 }  
+
+// Visual Studio 2017 version 15.3 and later:
+if constexpr (expression)
+{
+    statement1;
+    ...
+}
+else  // optional
+{
+   statement2;
+   ...
+} 
 ```  
 ## Example  
 ```  
@@ -105,7 +118,7 @@ int main()
 }
 ```  
 ## if statement with an initializer
-**Visual Studio 2017 version 15.3 and later:** An **if** statement may also contain an initialization expression, as shown in the following example: 
+**Visual Studio 2017 version 15.3 and later**: An **if** statement may also contain an expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-block. 
 
 ```cpp
 ## Example  
@@ -143,18 +156,38 @@ int main()
 		shared_flag = false;
 	}
 
+
 	string s{ "if" };
-	if (auto keywords = { "if", "for", "while" }; any_of(keywords.begin(), keywords.end(), [&s](const char* kw) { return s == kw; }))
+    if (auto keywords = { "if", "for", "while" }; any_of(keywords.begin(), keywords.end(), [&s](const char* kw) { return s == kw; }))
 	{
 		cout << "Error! Token must not be a keyword\n";
 	}
 
 }
 ```
-## Remarks   
+
  In all forms of the **if** statement, *expression*, which can have any value except a structure, is evaluated, including all side effects. Control passes from the **if** statement to the next statement in the program unless one of the *statement*s contains a [break](../cpp/break-statement-cpp.md), [continue](../cpp/continue-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md).  
   
  The **else** clause of an `if...else` statement is associated with the closest previous **if** statement in the same scope that does not have a corresponding **else** statement.   
+
+## constexpr if statements
+**Visual Studio 2017 version 15.3 and later**: In function templates, you can use a **constexpr if** statement to make compile-time branching decisions without having to resort to multiple function overloads. For example, you can write a single function that handles parameter unpacking (no zero-parameter overload is needed): 
+
+```cpp
+template <class T, class... Rest>
+void f(T&& t, Rest&&... r)
+{
+    // handle t
+	do_something(t);
+
+   constexpr if (sizeof...(r)) 
+   {
+      // handle r
+      f(r...); 
+   }
+}
+```
+
   
  
 ## See Also  
