@@ -39,12 +39,12 @@ translation.priority.ht:
 # noalias
 **Microsoft Specific**
 
- `noalias` means that a function call does not modify or reference visible global state and only modifies the memory pointed to `directly` by pointer parameters (first-level indirections).
+ `noalias` means that a function call does not modify or reference visible global state and only modifies the memory pointed to *directly* by pointer parameters (first-level indirections).
 
  If a function is annotated as `noalias`, the optimizer can assume that, in addition to the parameters themselves, only first-level indirections of pointer parameters are referenced or modified inside the function. The visible global state is the set of all data that is not defined or referenced outside of the compilation scope, and their address is not taken. The compilation scope is all source files ([/LTCG (Link-time Code Generation)](../build/reference/ltcg-link-time-code-generation.md) builds) or a single source file (non-**/LTCG** build).
 
 ## Example
- The following sample demonstrates using `__declspec(restrict)` and `__declspec(noalias)`. Normally, memory returned from `malloc` is `restrict` and `noalias` because the CRT headers are decorated appropriately.
+ The following sample demonstrates using `__declspec(restrict)` and `__declspec(noalias)`. Normally, memory returned from `malloc` is `restrict` because the CRT headers are decorated appropriately.
 
  However, in this example, the pointers `mempool` and `memptr` are global so the compiler has no assurance that the memory is not subject to aliasing. Decorating the functions that return pointers with `__declspec(restrict)` tells the compiler that the memory pointed to by the return value is not aliased.
 
