@@ -18,7 +18,7 @@ manager: "ghogen"
 translation.priority.ht: 
   - "de-de"
   - "es-es"
-  - "fr-fr"
+   - "fr-fr"
   - "it-it"
   - "ja-jp"
   - "ko-kr"
