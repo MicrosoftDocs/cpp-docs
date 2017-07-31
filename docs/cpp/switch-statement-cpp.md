@@ -47,8 +47,7 @@ Allows selection among multiple sections of code, depending on the value of an i
 ## Syntax  
   
 ```  
-  
-      switch ( expression )  
+   switch ( init; expression )  
    case constant-expression : statement  
    [default  : statement]  
 ```  
@@ -128,7 +127,20 @@ int main()
 	return 0;
 }
 ```
-  
+
+ **Visual Studio 2017 version 15.3 and later** (available with [/std:c++latest](../build/reference/std-specify-language-standard-version.md)):  A switch statement may introduce and initialize a variable whose scope is limited to the block of the switch statement:
+
+```cpp
+ switch (Gadget gadget(args); auto s = gadget.get_status())
+		{
+		case status::good:
+			gadget.zip();
+			break;
+		case status::bad:
+			throw BadGadget();
+		};
+```
+
  An inner block of a `switch` statement can contain definitions with initializations as long as they are reachable — that is, not bypassed by all possible execution paths. Names introduced using these declarations have local scope. For example:  
   
 ```cpp  
