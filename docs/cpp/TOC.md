@@ -231,6 +231,7 @@
 ## [Lambda Expressions in C++](lambda-expressions-in-cpp.md)
 ### [Lambda Expression Syntax](lambda-expression-syntax.md)
 ### [Examples of Lambda Expressions](examples-of-lambda-expressions.md)
+### [constexpr Lambda Expressions](lambda-expressions-constexpr.md)
 ## [Arrays (C++)](arrays-cpp.md)
 ### [Using Arrays (C++)](using-arrays-cpp.md)
 ### [Initializing Arrays](initializing-arrays.md)
