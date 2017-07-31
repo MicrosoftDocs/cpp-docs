@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Lvalues and Rvalues (Visual C++)
-Every C++ expression has a type, and belongs to a *value category*. The value categories are the basis for rules that compilers must follow when creating, copying, and moving temporary objects during expression evaluation. In C++17 the rules were restated to ensure that all compilers behave identically by not creating objects unless they are actually required. The new specified behavior is called "guaranteed copy elision." It helps to make your code more portable and efficient and eliminates the need to provide copy and move constructors for types that never use them.
+Every C++ expression has a type, and belongs to a *value category*. The value categories are the basis for rules that compilers must follow when creating, copying, and moving temporary objects during expression evaluation. In C++17 (**Visual Studio version 15.3 and later**) the rules were restated to ensure that all compilers behave identically by not creating objects unless they are actually required. The new specified behavior is called "guaranteed copy elision." It helps to make your code more portable and efficient and eliminates the need to provide copy and move constructors for types that never use them.
 
  The C++17 standard defines value categories as follows:
 
