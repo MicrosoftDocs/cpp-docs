@@ -43,8 +43,16 @@ Every C++ expression has a type, and belongs to a *value category*. The value ca
 - An *xvalue* is a glvalue that denotes an object or bit-field whose resources can be reused (usually because it is near the end of its lifetime). [ Example: Certain kinds of expressions involving rvalue references (8.3.2) yield xvalues, such as a call to a function whose return type is an rvalue reference or a cast to an rvalue reference type. ] 
 - An *lvalue* is a glvalue that is not an xvalue. 
 - An *rvalue* is a prvalue or an xvalue. 
+
+The following diagram illustrates the relationships between the categories:
+
+ ![C++ expression value categories](media/value_categories.png "C++ expression value categories")  
  
- Examples of lvalue expressions include variable names, including `const` variables, array elements, bit-fields, unions, and class members. Examples of rvalue expressions include literals, function calls, and temporary objects that are created during expression evalution but accessible only by the compiler. 
+ An lvalue has an address that your program can access. Examples of lvalue expressions include variable names, including `const` variables, array elements, function calls that return an lvalue reference, bit-fields, unions, and class members. 
+ 
+ A prvalue expression has no address that is accessible by your program. Examples of prvalue expressions include literals, function calls that return a non-reference type, and temporary objects that are created during expression evalution but accessible only by the compiler. 
+
+ An xvalue expression has no address but can be used to initialize an rvalue reference, which provides access to the expression. Examples include function calls that return an rvalue reference, and the array subscript, member and pointer to member expressions where the array or object is an rvalue reference. 
  
  The following example demonstrates several correct and incorrect usages of lvalues and rvalues:  
   
