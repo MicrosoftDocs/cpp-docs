@@ -166,8 +166,8 @@ namespace ScopedEnumConversions
   
  Notice that the line `hand = account_num;` still causes the error that occurs with unscoped enums, as shown earlier. It is allowed with an explicit cast. However, with scoped enums, the attempted conversion in the next statement, `account_num = Suit::Hearts;`, is no longer allowed without an explicit cast. 
 
-## Enums with no enumerators (Visual Studio 2017 version 15.3 and later)
-By defining an enum (regular or scoped) with an explicit underlying type and no enumerators, you can in effect introduce a new integral type that has no implicit conversion to any other type. By using this type instead of its built-in underlying type, you can eliminate the potential for subtle errors caused by inadvertent implicit conversions.  
+## Enums with no enumerators
+**Visual Studio 2017 version 15.3 and later**:By defining an enum (regular or scoped) with an explicit underlying type and no enumerators, you can in effect introduce a new integral type that has no implicit conversion to any other type. By using this type instead of its built-in underlying type, you can eliminate the potential for subtle errors caused by inadvertent implicit conversions.  
 
 
 ```cpp

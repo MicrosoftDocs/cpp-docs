@@ -19,7 +19,7 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # constexpr Lambda Expressions in C++
-In Visual Studio 2017 version 15.3 and later, a lambda expression may be declared as `constexpr` or used in a contant expression when the initialization of each data member that it captures or introduces is allowed within a constant expression.  
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): A lambda expression may be declared as `constexpr` or used in a contant expression when the initialization of each data member that it captures or introduces is allowed within a constant expression.  
 
 ```cpp
     int y = 32;

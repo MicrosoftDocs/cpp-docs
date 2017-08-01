@@ -339,7 +339,8 @@ int main()
 	return 0;
 }
 ```
-3. Use structured bindings (**Visual Studio 2017 version 15.3 and later**): The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and intialize names that are in scope for the entire function block.  
+
+3. **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Use structured bindings  The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and intialize names that are in scope for the entire function block.  
 
 ```cpp
 #include <tuple>
