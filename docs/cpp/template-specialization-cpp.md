@@ -89,7 +89,7 @@ PTS<int S::*>::IsPointer == 0 PTS<int S::*>::IsPointerToDataMember == 1
 ```  
   
 ## Example  
- If you have a template collection class that takes any type **T**, you can create a partial specialization that takes any pointer type **T\***. The following code demonstrates a collection class template `Bag` and a partial specialization for pointer types in which the collection dereferences the pointer types before copying them to the array. The collection then stores the values that are pointed to. With the original template, only the pointers themselves would have been stored in the collection, leaving the data vulnerable to deletion or modification. In this special pointer version of the collection, code to check for a null pointer in the `add` method is added.  
+ If you have a template collection class that takes any type **T**, you can create a partial specialization that takes any pointer type **T***. The following code demonstrates a collection class template `Bag` and a partial specialization for pointer types in which the collection dereferences the pointer types before copying them to the array. The collection then stores the values that are pointed to. With the original template, only the pointers themselves would have been stored in the collection, leaving the data vulnerable to deletion or modification. In this special pointer version of the collection, code to check for a null pointer in the `add` method is added.  
   
 ```  
 // partial_specialization_of_class_templates2.cpp  
