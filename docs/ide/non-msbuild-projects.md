@@ -1,7 +1,7 @@
 ---
 title: "Non-MSBuild Projects in Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/28/2017"
+ms.date: "08/02/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
