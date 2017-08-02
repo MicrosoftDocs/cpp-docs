@@ -177,13 +177,18 @@ int main()
 template <class T, class... Rest>
 void f(T&& t, Rest&&... r)
 {
-    // handle t
-	do_something(t);
+// handle t
+   do_something(t);
 
+   // handle r conditionally
    constexpr if (sizeof...(r)) 
    {
-      // handle r
+      
       f(r...); 
+   }
+   else
+   {
+       g(r...);
    }
 }
 ```

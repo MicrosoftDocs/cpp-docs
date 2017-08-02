@@ -40,9 +40,9 @@ void Foo(int);
   
 -   `deprecated` - **Visual Studio 2015 and later:** Specifies that a function is not intended to be used, and might not exist in future versions of a library interface. The compiler can use this to generate an informational message when client code attempts to call the function. Can be applied to declaration of a class, a typedef-name, a variable, a non-static data member, a function, a namespace, an enumeration, an enumerator, or a template specialization.  
 
--   `[[fallthrough]]` - **Visual Studio 2017 and later:**(available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute can be used in the context of [switch](switch-statement-cpp.md) statements as a hint to the compiler (or anyone reading the code) that the fallthrough behavior is intended. The Visual C++ compiler currently does not warn on fallthrough behavior, so this attribute has no effect compiler behavior.
+-   `[[fallthrough]]` - **Visual Studio 2017 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute can be used in the context of [switch](switch-statement-cpp.md) statements as a hint to the compiler (or anyone reading the code) that the fallthrough behavior is intended. The Visual C++ compiler currently does not warn on fallthrough behavior, so this attribute has no effect compiler behavior.
 
-- `[[nodiscard]]` **Visual Studio 2017 version 15.3 and later:**(available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) Specifies that a function's return value is not intended to be discarded. Raises warning C4834, as shown in the following example
+- `[[nodiscard]]` **Visual Studio 2017 version 15.3 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) Specifies that a function's return value is not intended to be discarded. Raises warning C4834, as shown in the following example
  
 ```cpp
 [[nodiscard]]
@@ -55,7 +55,7 @@ int main()
 }
 ```
 
-- `[[maybe_unused]]` **Visual Studio 2017 version 15.3 and later:**(available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) Specifies that a variable, function, class, typedef, non-static data member, enum, or template specialization may intentionally not be used. The compiler does not warn when an entity marked `[[maybe_unused]]` is not used. An entity that is declared without the attribute can later be redeclared with the attribute and vice versa. An entity is considered marked after its first declaration that is marked is analyzed, and for the remainder of translation of the current translation unit.
+- `[[maybe_unused]]` **Visual Studio 2017 version 15.3 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) Specifies that a variable, function, class, typedef, non-static data member, enum, or template specialization may intentionally not be used. The compiler does not warn when an entity marked `[[maybe_unused]]` is not used. An entity that is declared without the attribute can later be redeclared with the attribute and vice versa. An entity is considered marked after its first declaration that is marked is analyzed, and for the remainder of translation of the current translation unit.
 
 ## Microsoft-specific attributes
   

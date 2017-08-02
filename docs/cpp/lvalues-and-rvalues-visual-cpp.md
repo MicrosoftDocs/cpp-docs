@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Lvalues and Rvalues (Visual C++)
-Every C++ expression has a type, and belongs to a *value category*. The value categories are the basis for rules that compilers must follow when creating, copying, and moving temporary objects during expression evaluation. In C++17 (**Visual Studio version 15.3 and later**) the rules were restated to ensure that all compilers behave identically by not creating objects unless they are actually required. The new specified behavior is called "guaranteed copy elision." It helps to make your code more portable and efficient and eliminates the need to provide copy and move constructors for types that never use them.
+Every C++ expression has a type, and belongs to a *value category*. The value categories are the basis for rules that compilers must follow when creating, copying, and moving temporary objects during expression evaluation. 
 
  The C++17 standard defines expression value categories as follows:
 
@@ -84,40 +84,6 @@ int main()
 > [!NOTE]
 >  The examples in this topic illustrate correct and incorrect usage when operators are not overloaded. By overloading operators, you can make an expression such as `j * 4` an lvalue.  
 
-The following example shows the new behavior for guaranteed copy elision. Note that construction from temporary objects succeeds in both cases despite the absence of a move constructor.
-
-```cpp
-#include <iostream>
-#include <string>
-
-using namespace std;
-
-struct S {
-	S(int) { cout << "S(int)" << endl; }
-	S(S&) = delete;
-	S(S&&) = delete; // { cout << "move" << endl; }
-	///...
-};
-
-S make_s() 
-{
-	// Return value initialized directly at call site.
-	// In Visual Studio 2015 this does not compile due to deleted move ctor.
-	return S(42);
-}
-
-
-int main()
-{
-	auto nm = make_s(); 
-	S x4 = 5; // Construct from an rvalue.
-}
-```
-The program produces this output:
-```output
-S(int)
-S(int)
-```
   
  The terms *lvalue* and *rvalue* are often used when you refer to object references. For more information about references, see [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md) and [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
