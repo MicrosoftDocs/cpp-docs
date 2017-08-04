@@ -52,9 +52,9 @@ This walkthrough covers these tasks:
   
 Like a statically linked library, a DLL _exports_ variables, functions, and resources by name, and your app _imports_ those names to use those variables, functions, and resources. Unlike a statically linked library, Windows connects the imports in your app to the exports in a DLL at load time or at run time, instead of connecting them at link time. Windows requires extra information that isn't part of the standard C++ compilation model to make these connections. The Visual C++ compiler implements some Microsoft-specific extensions to C++ to provide this extra information. We explain these extensions as we go.  
   
-For simplicity, this walkthrough creates a Visual Studio solution that builds both the DLL and the client app as part of a single solution. It creates a DLL that can only be called from apps built by using the same Visual C++ compiler toolset, so that the calling and linking conventions match. It also uses _implicit linking_, where Windows links the app to the DLL at load-time. This lets the app call the DLL-supplied functions just like the functions in a statically linked library.  
+This walkthrough creates two Visual Studio solutions; one that builds the DLL, and one that builds the client app. The DLL uses the C calling convention so it can be called from apps built by using other languages, as long as the calling and linking conventions match. The client app uses _implicit linking_, where Windows links the app to the DLL at load-time. This lets the app call the DLL-supplied functions just like the functions in a statically linked library.  
   
-This walkthrough doesn't cover some common situations. It doesn't cover the creation and use of DLLs that are not built as part of your solution. It doesn't show the use of explicit linking to load DLLs at run-time rather than at load-time. It also doesn't show how to create DLLs that can be called from other programming languages. Rest assured, you can use Visual C++ to do all these things. For links to more information about DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about implicit linking and explicit linking, see [Determining Which Linking Method to Use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). For information about creating C++ DLLs for use with programming languages that use C-language linkage conventions, see [Exporting C++ Functions for Use in C-Language Executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md). For information about how to create DLLs for use with .NET languages, see [Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md).  
+This walkthrough doesn't cover some common situations. It doesn't show the use of C++ DLLs by other programming languages. It doesn't show how to create a resource-only DLL. It also doesn't show the use of explicit linking to load DLLs at run-time rather than at load-time. Rest assured, you can use Visual C++ to do all these things. For links to more information about DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about implicit linking and explicit linking, see [Determining Which Linking Method to Use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). For information about creating C++ DLLs for use with programming languages that use C-language linkage conventions, see [Exporting C++ Functions for Use in C-Language Executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md). For information about how to create DLLs for use with .NET languages, see [Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md).  
   
 ## Prerequisites  
   
@@ -82,17 +82,17 @@ In this set of tasks, you create a project and solution for your DLL, add code, 
   
    ![Select Win32 Console Application](media/new-project-choose-win32-console.png "Select Win32 Console Application")  
   
-3.  Specify a name for the project—for example, **MathLibrary**—in the **Name** box. Specify a name for the solution—for example, **MathLibraryAndClient**—in the **Solution name** box. Choose the **OK** button.  
+3.  Specify a name for the project—for example, **MathLibrary**—in the **Name** box. Choose the **OK** button.  
   
-   ![Name project and solution](media/new-project-name-solution.gif "Name project and solution")  
+   ![Name the project and solution](media/mathlibrary-project-name.png "Name the project and solution")  
   
 4.  On the **Overview** page of the **Win32 Application Wizard** dialog box, choose the **Next** button.  
   
-   ![Win32 Application Wizard Overview](media/win32-app-wizard-overview.png "Win32 Application Wizard Overview")  
+   ![Win32 Application Wizard Overview](media/mathlibrary-project-wizard-1.png "Win32 Application Wizard Overview")  
   
 5.  On the **Application Settings** page, under **Application type**, select **DLL**. Choose the **Finish** button to create the project.  
   
-   ![Create DLL in Win32 Application Wizard](media/win32-app-wizard-create-dll.gif "Create DLL in Win32 Application Wizard")  
+   ![Create DLL in Win32 Application Wizard](media/mathlibrary-project-wizard-1.png "Create DLL in Win32 Application Wizard")  
   
 When the wizard completes the solution, you can see the generated project and source files in the **Solution Explorer** window in Visual Studio.  
   
@@ -100,15 +100,13 @@ When the wizard completes the solution, you can see the generated project and so
   
 Right now, this DLL doesn't do very much. Next, you create a header file to declare the functions your DLL exports, and then add the function definitions to the DLL to make it more useful.  
   
-### To add code to the DLL  
+### To add a header file to the DLL  
   
 1.  To create a header file for your functions, on the menu bar, choose **Project**, **Add New Item**.  
   
-   ![Add New Item menu](media/menu-project-add-new-item.png "Add New Item menu")  
-  
 1.  In the **Add New Item** dialog box, in the left pane, select **Visual C++**. In the center pane, select **Header File (.h)**. Specify a name for the header file—for example, **MathLibrary.h**—and then choose the **Add** button.  
   
-   ![Add header in Add New Item dialog](media/add-new-item-header-file.png "Add header in Add New Item dialog")  
+   ![Add header in Add New Item dialog](media/mathlibrary-header-add-new-item.png "Add header in Add New Item dialog")  
   
    The template generates a blank header file, which is displayed in a new editor window.  
   
@@ -117,101 +115,148 @@ Right now, this DLL doesn't do very much. Next, you create a header file to decl
 2.  Replace the contents of the header file with this code:  
   
     ```cpp  
-    // MathLibrary.h - Contains declaration of Function class  
+    // MathLibrary.h - Contains declaration of interesting math functions  
     #pragma once  
-  
+    
+    #include <limits.h>
+    
     #ifdef MATHLIBRARY_EXPORTS  
     #define MATHLIBRARY_API __declspec(dllexport)   
     #else  
     #define MATHLIBRARY_API __declspec(dllimport)   
     #endif  
-  
-    namespace MathLibrary  
-    {  
-        // This class is exported from the MathLibrary.dll  
-        class Functions  
-        {  
-        public:  
-            // Returns a + b  
-            static MATHLIBRARY_API double Add(double a, double b);  
-  
-            // Returns a * b  
-            static MATHLIBRARY_API double Multiply(double a, double b);  
-  
-            // Returns a + (a * b)  
-            static MATHLIBRARY_API double AddMultiply(double a, double b);  
-        };  
-    }  
+    
+    // The Fibonacci recurrence relation describes a sequence F
+    // where F(n) is { n = 0, a
+    //               { n = 1, b
+    //               { n > 1, F(n-2) + F(n-1)
+    // for some initial integer values a and b.
+    // If the sequence is initialized F(0) = 0, F(1) = 1,
+    // then this relation produces the Fibonacci sequence,
+    // 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+    
+    // Initialize a Fibonacci relation sequence
+    // such that F(0) = a, F(1) = b. 
+    // This function must be called before any other function.
+    extern "C" MATHLIBRARY_API void fibonacci_init(
+        const unsigned long long a = 0, const unsigned long long b = 1);
+    
+    // Produce the next value in the sequence.
+    // Returns true on success and updates current value and index;
+    // Returns false on overflow and leaves current value and index unchanged.
+    extern "C" MATHLIBRARY_API bool fibonacci_next();
+    
+    // Get the current value in the sequence.
+    extern "C" MATHLIBRARY_API unsigned long long fibonacci_current();
+    
+    // Get the current position in the sequence.
+    extern "C" MATHLIBRARY_API unsigned fibonacci_index();
     ```  
   
-    This code declares a namespace, **MathLibrary**,  that contains a class named **Functions** that contains member functions to perform some mathematical operations.  
+This header file declares some functions to produce a generalized Fibonacci sequence, given two initial values. Default argument values 0 and 1 generate the familiar Fibonacci number sequence.  
   
-    Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds *PROJECTNAME*\_EXPORTS to the defined preprocessor macros for the DLL project. In this example, Visual Studio defines **MATHLIBRARY\_EXPORTS** when your **MathLibrary** DLL project is built. When the **MATHLIBRARY\_EXPORTS** macro is defined, the **MATHLIBRARY\_API** macro sets the `__declspec(dllexport)` modifier on the function declarations. This modifier tells the compiler and linker to export the function or variable from the DLL so that it can be used by other applications. When **MATHLIBRARY\_EXPORTS** is undefined—for example, when the header file is included by a client application—**MATHLIBRARY\_API** applies the `__declspec(dllimport)` modifier to the function declarations. This modifier optimizes the import of the function in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
+Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds ***PROJECTNAME*\_EXPORTS** to the defined preprocessor macros for the DLL project. In this example, Visual Studio defines **MATHLIBRARY\_EXPORTS** when your **MathLibrary** DLL project is built.  
   
-    > [!NOTE]
-    >  If you are building the DLL project on the command line, use the **/D** compiler option to define the **MATHLIBRARY_EXPORTS** macro.  
+When the **MATHLIBRARY\_EXPORTS** macro is defined, the **MATHLIBRARY\_API** macro sets the `__declspec(dllexport)` modifier on the function declarations. This modifier tells the compiler and linker to export a function or variable from the DLL so that it can be used by other applications. When **MATHLIBRARY\_EXPORTS** is undefined, for example, when the header file is included by a client application, **MATHLIBRARY\_API** applies the `__declspec(dllimport)` modifier to the declarations. This modifier optimizes the import of the function or variable in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
   
-3.  In the **MathLibrary** project in **Solution Explorer**, in the **Source Files** folder, open **MathLibrary.cpp**.  
+### To add an implementation to the DLL
+
+1.  In **Solution Explorer**, in the **Source Files** folder of the **MathLibrary** project, open **MathLibrary.cpp**.  
   
-4.  Implement the members of the **Functions** class in the source file. Replace the contents of the **MathLibrary.cpp** file with the following code:  
+2.  Implement the functions declared in the header in this source file. Replace the contents of the **MathLibrary.cpp** file with the following code:  
   
     ```cpp  
-    // MathLibrary.cpp : Defines the exported functions for the DLL application.  
-    // Compile by using: cl /EHsc /DMATHLIBRARY_EXPORTS /LD MathLibrary.cpp  
-  
-    #include "stdafx.h"  
-    #include "MathLibrary.h"  
-  
-    namespace MathLibrary  
-    {  
-        double Functions::Add(double a, double b)  
-        {  
-            return a + b;  
-        }  
-  
-        double Functions::Multiply(double a, double b)  
-        {  
-            return a * b;  
-        }  
-  
-        double Functions::AddMultiply(double a, double b)  
-        {  
-            return a + (a * b);  
-        }  
-    }  
+    // MathLibrary.cpp : Defines the exported functions for the DLL application.
+    #include "stdafx.h"
+    #include <utility>
+    #include "MathLibrary.h"
+    
+    // DLL internal state variables:
+    static unsigned long long previous_;   // F(n-1) previous value, if any
+    static unsigned long long current_;    // F(n) Current value in sequence
+    static unsigned index_;                // Current position in sequence
+    
+    // Initialize a Fibonacci relation sequence
+    // such that F(0) = a, F(1) = b. 
+    // This function must be called before any other function.
+    void fibonacci_init(
+        const unsigned long long a,
+        const unsigned long long b)a
+    {
+        index_ = 0;
+        current_ = a;
+        previous_ = b; // special case to store when initialized
+    }
+    
+    // Produce the next value in the sequence.
+    // Returns true on success, and updates current and previous values and 
+    // index; returns false on overflow and leaves all values unchanged.
+    bool fibonacci_next()
+    {
+        // check to see if we'd overflow result or position
+        if ((ULLONG_MAX - previous_ < current_) || (UINT_MAX == index_))
+        {
+            return false;
+        }
+    
+        // Special case for index == 0, just swap current and previous values
+        if (index_ > 0)
+        {
+            previous_ += current_;
+        }
+        std::swap(current_, previous_);
+        ++index_;
+        return true;
+    }
+    
+    // Get the current value in the sequence.
+    unsigned long long fibonacci_current()
+    {
+        return current_;
+    }
+    
+    // Get the current index position in the sequence.
+    unsigned fibonacci_index()
+    {
+        return index_;
+    }
     ```  
   
-5.  To verify that everything is working so far, compile the dynamic link library by choosing **Build**, **Build Solution** on the menu bar.  The output should look something like this:  
+To verify that everything is working so far, compile the dynamic link library. To compile, choose **Build**, **Build Solution** on the menu bar. The output should look something like this:  
   
-    ```Output  
-    1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------  
-    1>  stdafx.cpp  
-    1>  dllmain.cpp  
-    1>  MathLibrary.cpp  
-    1>     Creating library c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathLibrary.lib and object c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathLibrary.exp  
-    1>  MathLibrary.vcxproj -> c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathLibrary.dll  
-    ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========  
-    ```  
+```Output  
+1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
+1>stdafx.cpp
+1>dllmain.cpp
+1>MathLibrary.cpp
+1>   Creating library C:\Users\username\Documents\Visual Studio 2017\Projects\MathLibrary\Debug\MathLibrary.lib and object C:\Users\username\Documents\Visual Studio 2017\Projects\MathLibrary\Debug\MathLibrary.exp
+1>MathLibrary.vcxproj -> C:\Users\username\Documents\Visual Studio 2017\Projects\MathLibrary\Debug\MathLibrary.dll
+1>MathLibrary.vcxproj -> C:\Users\username\Documents\Visual Studio 2017\Projects\MathLibrary\Debug\MathLibrary.pdb (Partial PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+```  
   
-    > [!NOTE]
-    >  If you are using an Express edition that does not display a **Build** menu, on the menu bar, choose **Tools**, **Settings**, **Expert Settings** to enable it, and then choose **Build**, **Build Solution**.  
+> [!NOTE]
+>  If you are building a project on the command line, use the [/D](../build/reference/d-preprocessor-definitions.md) compiler option to define your project's ***PROJECTNAME*_EXPORTS** preprocessor macro. Use the [/LD](../build/reference/md-mt-ld-use-run-time-library.md) compiler option to specify that the output file is a DLL. Use the [/EHsc](../build/reference/eh-exception-handling-model.md) compiler option to enable C++ exception handling.  
   
-    > [!NOTE]
-    >  If you are building a project on the command line, use the **/D** compiler option to define your project's *PROJECTNAME*_EXPORTS preprocessor macro. Use the **/LD** compiler option to specify that the output file is to be a DLL. For more information, see [/MD, /MT, /LD (Use Run-Time Library)](../build/reference/md-mt-ld-use-run-time-library.md). Use the **/EHsc** compiler option to enable C++ exception handling. For more information, see [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md).  
+Congratulations, you've created a DLL using Visual C++! Next, you'll create a client app that uses the functions exported by the DLL.  
   
-     Congratulations, you've created a DLL using Visual C++! Next, you'll create a client app that uses the functions exported by the DLL.  
+## Create a client app that uses the DLL  
   
-### To create an app that references the DLL  
+When you create a DLL, you must think about how your DLL can be used. To compile code that calls the functions exported by a DLL, the declarations must be included in the client source code. At link time, when these calls to DLL functions are resolved, the DLL import library must be specified for the linker. And at run time, the DLL must be available to the client, in a location that the operating system can find.  
+  
+To make use of a DLL, whether your own or a third-party DLL, your client app project must be able to find the headers that declare the DLL exports, the import libraries for the linker, and the DLL itself. One way to do this is to copy all of these files into your client project. For third-party DLLs that are unlikely to change while your client is in development, this may be the best way to use them. However, when you also build the DLL, it's better to avoid duplication. If you make a copy of DLL files that are under development, you may accidentally change a header file in one copy but not the other, or use an out of date library. To avoid this problem, we recommend you set the include path in your client project to include the DLL header files from the DLL project. Also, set the library path in your client project to include the DLL import libraries from the DLL project. And finally, copy the built DLL from the DLL project into your build output directory. This ensures that your client app uses the same DLL code you built.  
+  
+### To create a client app  
   
 1.  To create a C++ app that uses the DLL that you just created, on the menu bar, choose **File**, **New**, **Project**.  
   
-2.  In the left pane of the **New Project** dialog, expand **Installed**, **Templates**, **Visual C++**, and then select **Win32**.  
+2.  In the left pane of the **New Project** dialog, if needed, expand **Installed**, **Templates**, **Visual C++**, and then select **Win32**.  
   
 3.  In the center pane, select **Win32 Console Application**.  
   
-4.  Specify a name for the project—for example, **MathClient**—in the **Name** box.  
+4.  Specify a name for the project, for example, **MathClient**, in the **Name** box.  
   
-5.  Choose the drop-down button at the end of the **Solution** control, and then select **Add to Solution** from the drop-down list. This adds the new project to the same solution that contains the DLL. Choose the **OK** button.  
+   ![Name the client project](media/mathclient-project-name.png "Name the client project")  
   
 6.  On the **Overview** page of the **Win32 Application Wizard** dialog box, choose the **Next** button.  
   
@@ -219,79 +264,138 @@ Right now, this DLL doesn't do very much. Next, you create a header file to decl
   
 8.  Choose the **Finish** button to create the project.  
   
-### To use the functionality from the class library in the app  
+When the Win32 Application Wizard finishes, a minimal console application project is created for you. The name for the main source file is the same as the project name that you chose earlier. In this example, it is named **MathClient.cpp**. You can build it, but it doesn't use your DLL yet.  
   
-1.  When the Win32 Application Wizard finishes, a minimal console application project is created for you. The name for the main source file is the same as the project name that you chose earlier. In this example, it is named **MathClient.cpp**.  
+Next, to call the MathLibrary functions in your source code, your project must include the MathLibrary.h file. You could copy this header file into your client app project, but that might lead to changes in one copy that are not reflected in the other. To avoid this issue, you can change the **Additional Include Directories** path in your project to include the path to the original header.
   
-2.  To use the math routines that you created in the DLL, you must reference the DLL in your app. To do this, under the **MathClient** project in **Solution Explorer**, select the **References** item. On the menu bar, choose **Project**, **Add Reference**.  
+### To add the DLL header to your include path  
   
-    > [!NOTE]
-    >  In Visual Studio 2013 and earlier, references are added to your project in a different way. Select the **MathClient** project in **Solution Explorer**, and then on the menu bar, choose **Project**, **References**. In the **Property Pages** dialog box, expand the **Common Properties** node, select **Framework and References**, and then choose the **Add New Reference** button. For more information about the **References** dialog box, see [Adding references](../ide/adding-references-in-visual-cpp-projects.md).  
+1. Open the **Property Pages** dialog box for the **MathClient** project.  
   
-3.  The **Add Reference** dialog box lists the libraries that you can reference. The **Projects** tab lists the projects in the current solution and any libraries that they contain. On the **Projects** tab, select the check box next to **MathLibrary**, and then choose the **OK** button.  
+2. In the left pane, expand **Configuration Properties**, **C/C++** node, and then select **General**.  
   
-4.  You need the definitions in the MathLibrary.h file to call the DLLs functions from your app. You could copy the header file into your client app project, but that might lead to changes in one copy that are not reflected in the other. To avoid this issue when you reference the header files of the DLL, you can change the included directories path in your project to include the original header. To do this, open the **Property Pages** dialog box for the **MathClient** project. In the left pane, expand **Configuration Properties**, **C/C++** node, and then select **General**. In the center pane, select the drop-down control next to the **Additional Include Directories** edit box, and then choose **\<Edit...>**. Select the top pane of the **Additional Include Directories** dialog box to enable an edit control. In the edit control, specify the path to the location of the **MathLibrary.h** header file. Because typing the complete path may be difficult, you can use the browse control (**...**) at the end of the edit box to bring up a **Select Directory** dialog box. In the dialog, navigate up one folder level to the **MathLibraryAndClient** folder, then select the **MathLibrary** folder, and then choose the **Select Folder** button. Once you've entered the path to the header file in the **Additional Include Directories** dialog box, choose the **OK** button to go back to the **Property Pages** dialog box, and then choose the **OK** button to save your changes.  
+3. In the center pane, select the drop-down control next to the **Additional Include Directories** edit box, and then choose **\<Edit...>**.  
   
-5.  You can now include the **MathLibrary.h** file and use the **Functions** class in your client application. Replace the contents of **MathClient.cpp** by using the following code:  
+4. Select the top pane of the **Additional Include Directories** dialog box to enable an edit control.  
   
-    ```cpp  
-    // MathClient.cpp : Defines the entry point for the console application.  
-    // Compile by using: cl /EHsc /link MathLibrary.lib MathClient.cpp  
+5. In the edit control, specify the path to the location of the **MathLibrary.h** header file. Because the complete path may be difficult to remember, use the browse control (**...**) at the end of the edit box to browse to the header location.  
   
-    #include "stdafx.h"  
-    #include <iostream>  
-    #include "MathLibrary.h"  
+6. In the **Select Directory** dialog box, navigate up two folder levels to find the **MathLibrary** solution folder, then select it, and then choose the **Select Folder** button.  
   
-    using namespace std;  
+7. Once you've entered the path to the header file in the **Additional Include Directories** dialog box, choose the **OK** button to go back to the **Property Pages** dialog box, and then choose the **OK** button to save your changes.  
   
-    int main()  
-    {  
-        double a = 7.4;  
-        int b = 99;  
+You can now include the **MathLibrary.h** file and use the functions it declares in your client application. Replace the contents of **MathClient.cpp** by using the following code:  
   
-        cout << "a + b = " <<  
-            MathLibrary::Functions::Add(a, b) << endl;  
-        cout << "a * b = " <<  
-            MathLibrary::Functions::Multiply(a, b) << endl;  
-        cout << "a + (a * b) = " <<  
-            MathLibrary::Functions::AddMultiply(a, b) << endl;  
+```cpp  
+// MathClient.cpp : Client app for MathLibrary.
+#include "stdafx.h"
+#include <iostream>
+#include <MathLibrary.h>
+
+int main()
+{
+    // Initialize a Fibonacci sequence using default values 0 and 1.
+    fibonacci_init();
+    // Write out the Fibonacci sequence values until overflow.
+    do {
+        std::cout << fibonacci_index() << ": " 
+            << fibonacci_current() << std::endl;
+    } while (fibonacci_next());
+    // Report how many sequence values were written before overflow.
+    std::cout << fibonacci_index() + 1 << 
+        " Fibonacci sequence values fit in an " <<
+        "unsigned 64-bit integer." << std::endl;
+}
+```  
   
-        return 0;  
-    }  
-    ```  
+This code can be compiled, but the linker does not have the import library required to build the app yet. Once again, you could copy this file into your client app project, but that might lead to changes in one copy that are not reflected in the other. To avoid this issue, you can change the **Additional Library Directories** path in your project to include the path to the original library.
   
-6.  Build the application by choosing **Build**, **Build Solution** on the menu bar. The Output window in Visual Studio might contain something like this:  
+### To add the DLL import library to your library path  
   
-    ```Output  
-    1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------  
-    1>  MathLibrary.cpp  
-    1>  MathLibrary.vcxproj -> c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathLibrary.dll  
-    2>------ Build started: Project: MathClient, Configuration: Debug Win32 ------  
-    2>  stdafx.cpp  
-    2>  MathClient.cpp  
-    2>  MathClient.vcxproj -> c:\users\username\documents\visual studio 2017\Projects\MathLibraryAndClient\Debug\MathClient.exe  
-    ========== Build: 2 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========  
+1. Open the **Property Pages** dialog box for the **MathClient** project.  
   
-    ```  
+1. In the left pane, expand the **Configuration Properties**, **Linker** node. In the center pane, select the drop-down control next to the **Additional Library Directories** edit box, and then choose **\<Edit...>**.  
   
-     Congratulations, you've created an application that calls functions in a DLL. Next, you'll run your application to see what it does.  
+   ![Add the library directory](media/mathclient-additional-library-directories.png "Name the project and solution")  
+
+1. Select the top pane of the **Additional Include Directories** dialog box to enable an edit control.  
   
-### To run the application  
+1. In the edit control, specify the path to the location of the **MathLibrary.lib** file. Because the complete path may be difficult to remember, you can use the browse control (**...**) at the end of the edit box to navigate to the directory.  
   
-1.  Since you can't run a DLL, make sure that **MathClient** is selected as the default project. This is the project that Visual Studio runs when you choose the **Start Debugging** or **Start Without Debugging** commands. In **Solution Explorer**, select **MathClient**, and then on the menu bar, choose **Project**, **Set As StartUp Project**.  
+1. In the **Select Directory** dialog box, navigate up two folder levels to find the **MathLibrary** solution folder, then select the **MathLibrary** project folder, and then choose the **Select Folder** button.  
   
-2.  To run the **MathClient** project, on the menu bar, choose **Debug**, **Start Without Debugging**. Visual Studio opens a command window for the program to run in. The output should resemble this:  
+1. Once you've entered the path to the header file in the **Additional Include Directories** dialog box, choose the **OK** button to go back to the **Property Pages** dialog box, and then choose the **OK** button to save your changes.  
   
-    ```Output  
-    a + b = 106.4  
-    a * b = 732.6  
-    a + (a * b) = 740  
-    Press any key to continue . . .  
-    ```  
+Your client app can now be compiled and linked, but it still does not have everything it needs to run. When the operating system loads your app, it looks for the MathLibrary DLL. If it can't find the DLL in certain system directories, the environment path, or the local app directory, the load fails. One way to avoid this issue is to copy the DLL to the directory that contains your client executable as part of the build process. To copy the DLL, you can add a **Post-Build Event** to your project, to add a command that copies the file only if it is missing or has changed, and uses macros to copy to and from the correct locations for your configuration. 
   
-     You can press any key to dismiss the command window.  
+### To copy the DLL in a post-build event  
   
-     Now that you've created a DLL and a client application, you can experiment. Try setting breakpoints in the code of the client app or in the library, and run the app in the debugger. Add other members to the Functions class, or add a new class.  
+1. Open the **Property Pages** dialog box for the **MathClient** project.  
+  
+1. In the Configuration drop-down box, select **All Configurations**.  
+  
+1. In the left pane, expand **Configuration Properties**, **Build Event**, then select **Post-Build Event**.  
+  
+1. In the center pane, select the drop-down control next to the **Command Line** field, and then choose **\<Edit...>**.  
+  
+1. In the top pane of the **Command Line** dialog box, enter this command:  
+    `xcopy /y /d "..\..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"`  
+  
+1. Choose the **OK** button to save the command line.  
+  
+1. In the center pane, select the drop-down control next to the **Description** field, and then choose **\<Edit...>**.  
+  
+1. In the edit box in the **Description** dialog box, enter this description:  
+    `Copy MathLibrary.dll to output directory` 
+  
+1. Choose the **OK** button the save the description, and then choose the **OK** button to save your changes to the project properties.  
+  
+Now your client app has everything it needs to build and run. Build the application by choosing **Build**, **Build Solution** on the menu bar. The Output window in Visual Studio might contain something like this:  
+  
+```Output  
+1>------ Build started: Project: MathClient, Configuration: Debug Win32 ------
+1>stdafx.cpp
+1>MathClient.cpp
+1>MathClient.vcxproj -> C:\Users\username\Documents\Visual Studio 2017\Projects\MathClient\Debug\MathClient.exe
+1>MathClient.vcxproj -> C:\Users\username\Documents\Visual Studio 2017\Projects\MathClient\Debug\MathClient.pdb (Partial PDB)
+1>1 File(s) copied
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+```  
+  
+Congratulations, you've created an application that calls functions in a DLL. Now run your application to see what it does. On the menu bar, choose **Debug**, **Start Without Debugging**. Visual Studio opens a command window for the program to run in. The last part of the output should look like this:  
+  
+```Output  
+72: 498454011879264
+73: 806515533049393
+74: 1304969544928657
+75: 2111485077978050
+76: 3416454622906707
+77: 5527939700884757
+78: 8944394323791464
+79: 14472334024676221
+80: 23416728348467685
+81: 37889062373143906
+82: 61305790721611591
+83: 99194853094755497
+84: 160500643816367088
+85: 259695496911122585
+86: 420196140727489673
+87: 679891637638612258
+88: 1100087778366101931
+89: 1779979416004714189
+90: 2880067194370816120
+91: 4660046610375530309
+92: 7540113804746346429
+93: 12200160415121876738
+94 Fibonacci sequence values fit in an unsigned 64-bit integer.
+Press any key to continue . . .
+```  
+  
+Press any key to dismiss the command window.  
+  
+Now that you've created a DLL and a client application, you can experiment. Try setting breakpoints in the code of the client app, and run the app in the debugger. See what happens when you step into a library call. Add other functions to the library, or write another client app that uses your DLL.  
+  
+When you deploy your app, you must also deploy the DLLs it uses. The simplest way to make the DLLs that you build or that you include from third parties available to your app is to put them in the same directory as your app, also known as *app-local deployment*. For more information about deployment, see [Deployment in Visual C++](..\ide\deployment-in-visual-cpp.md).  
   
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)   
