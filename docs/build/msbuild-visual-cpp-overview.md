@@ -40,7 +40,7 @@ MSBuild is the standard build system for Visual C++ projects. When you build a p
   
 Read the following documents about MSBuild.  
   
-- [MSBuild](/visualstudio/msbuild/msbuild1)  
+- [MSBuild](/visualstudio/msbuild/msbuild)  
  Overview of MSBuild concepts.  
   
 - [MSBuild Reference](/visualstudio/msbuild/msbuild-reference)  
