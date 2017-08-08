@@ -74,3 +74,30 @@ int main() {
    }  
 } // C3821  
 ```  
+
+## Example  
+ The following sample generates C3821.  
+  
+```  
+// C3821c.cpp  ( ? )
+// compile with: /clr  
+// processor: /x64  
+#include <vcclr.h>  
+#include <atomic>
+
+class nativeInteropClass 
+{
+private:
+	gcroot<System::Object^> syncObj;
+
+	std::atomic<int> AtomicSuperCounter;
+public:
+	nativeInteropClass()
+		: syncObj(gcnew System::Object())
+	{
+		AtomicSuperCounter = 0;
+	}
+};
+} // C3821  
+```  
+
