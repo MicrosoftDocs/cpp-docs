@@ -40,11 +40,10 @@ To use Open Folder, from the main menu select *File | Open | Folder* or press *C
 Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable Intellisense, navigation and refactoring features. As you edit, create, move or delete files, Visual Studio tracks the changes automatically and continuously updates its Intellisense index. 
   
 ## CMake projects
-CMake is a cross-platform open-source tool for defining build processes that run across multiple platforms by abstracting away native build environments and compilers. CMake interprets a CMakeLists.txt script the user authors and generates a build plan in a build environment of choice (e.g. Visual studio projects, make scripts, Xcode projects, etc.).
 CMake is integrated in the Visual studio IDE as CMake Tools for Visual C++, a component of the C++ desktop workload. For more information, see [CMake Tools for Visual C++](cmake-tools-for-visual-cpp.md).
  
 ## QMake projects that target the Qt framework
-You can use CMake tools for Visual C++ to target Qt to build Qt projects, or you can use the QT Visual Studio Extension to perform a one-way conversion from a qmake .pro project to an MSBuild project. Note: As of June 2017, the QT Visual Studio Extension supports only Visual Studio 2015.
+You can use CMake tools for Visual C++ to target Qt to build Qt projects, or you can use the Qt Visual Studio Extension. Note: As of August 2017, the [QT Visual Studio Extension support for Visual Studio 2017](https://download.qt.io/development_releases/vsaddin/) is available as a beta version.
 
 ## gyp, Cons, SCons, Cons, Buck, etc
 You can use any build system in Visual C++ and still enjoy the advantages of the Visual C++ IDE and debugger. When you open the root folder of your project, Visual C++ uses heuristics to index the source files for Intellisense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure your build program by editing the launch.vs.json file. 
@@ -54,8 +53,8 @@ You can customize an Open Folder project through three JSON files:
 |||
 |-|-|
 |CppProperties.json|Specify custom configuration information for browsing. Create this file, if needed, in your root project folder.|
-|launch.vs.json|Specify command line arguments. Accessed via Solution Explorer context menu item **Debug and Launch Settings**.|
-|tasks.vs.json|Specify custom build commands and compiler switches. Accessed via Solution Explorer context menu item **Configure Tasks**.|
+|launch.vs.json|Specify command line arguments. Accessed via **Solution Explorer** context menu item **Debug and Launch Settings**.|
+|tasks.vs.json|Specify custom build commands and compiler switches. Accessed via **Solution Explorer** context menu item **Configure Tasks**.|
 
 ### Configure Intellisense with CppProperties.json
 IntelliSense and browsing behavior partly depends on the active build configuration, which defines #include paths, compiler switches, and other parameters. By default, Visual Studio provides Debug and Release configurations. For some projects, you may need to create a custom configuration in order for Intellisense and browsing features to fully comprehend your code. To define a new configuration, create a file called CppProperties.json in the root folder. Here is an example:
@@ -126,7 +125,7 @@ For example, if your project has an include folder and also includes windows.h a
 
 **Note:** `%WindowsSdkDir%` and `%VCToolsInstallDir%` are not set as global environment variables so make sure you start  devenv.exe from a "Developer Command Prompt for VS 2017" that defines these variables.
 
-To troubleshoot IntelliSense errors caused by missing includes, open the **Error List** and filter its output to "IntelliSense only" and error code E1696 "cannot open source file ...". 
+To troubleshoot IntelliSense errors caused by missing include paths, open the **Error List** and filter its output to "IntelliSense only" and error code E1696 "cannot open source file ...". 
 
 You can create any number of configurations in  CppProperties.json. Each will appear in the configuration dropdown:
 
@@ -149,7 +148,7 @@ You can automate build scripts or any other external operations on the files you
 
 ![Open Folder Configure Tasks](media/open-folder-config-tasks.png)
 
-This creates (or opens) the `tasks.vs.json` file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable,which identifies the path for the console (cmd.exe on Windows). The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in Solution Explorer. 
+This creates (or opens) the `tasks.vs.json` file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (cmd.exe on Windows). The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
 
 ```json
 {
@@ -180,7 +179,7 @@ You can create tasks for any file or folder by specifying its name in the `appli
 |`"/makefile"`| task is available only on the makefile in the root of the workspace|
 
 #### output
-Use the `output` property to specify the executable that will launch when you press F5. For example:
+Use the `output` property to specify the executable that will launch when you press **F5**. For example:
 
 ```json
       "output": "${workspaceRoot}\\bin\\hellomake.exe" 
@@ -190,13 +189,13 @@ Use the `output` property to specify the executable that will launch when you pr
 
 |||
 |-|-|
-|`${env.<VARIABLE>}`| specifies any environment variable (e.g. ${env.PATH}, ${env.COMSPEC} and so on) that is set for the developer command prompt. For more information, see [Developer Command Prompt for Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
-|`${workspaceRoot}`| the full path to the workspace folder (e.g. "C:\sources\hello")|
-|`${file}`| the full path of the file or folder selected to run this task against (e.g. "C:\sources\hello\src\hello.cpp")|
-|`${relativeFile}`| the relative path to the file or folder (e.g.  "src\hello.cpp")|
-|`${fileBasename}`| the name of the file without path or extension (e.g. "hello")|
-|`${fileDirname}`| the the full path to the file, excluding the filename (e.g. "C:\sources\hello\src")|
-|`${fileExtname}`| the extension of the selected file (e.g. ".cpp")|
+|`${env.<VARIABLE>}`| specifies any environment variable (for example,  ${env.PATH}, ${env.COMSPEC} and so on) that is set for the developer command prompt. For more information, see [Developer Command Prompt for Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
+|`${workspaceRoot}`| the full path to the workspace folder (for example,  "C:\sources\hello")|
+|`${file}`| the full path of the file or folder selected to run this task against (for example,  "C:\sources\hello\src\hello.cpp")|
+|`${relativeFile}`| the relative path to the file or folder (for example,   "src\hello.cpp")|
+|`${fileBasename}`| the name of the file without path or extension (for example,  "hello")|
+|`${fileDirname}`| the the full path to the file, excluding the filename (for example,  "C:\sources\hello\src")|
+|`${fileExtname}`| the extension of the selected file (for example,  ".cpp")|
 
 #### Custom macros
 To define a custom macro in tasks.vs.json, add a name:value pair prior to the task blocks. The following example defines a macro named "outDir" which is consumed in the `args` property:
@@ -219,9 +218,9 @@ To define a custom macro in tasks.vs.json, add a name:value pair prior to the ta
 ```
 
 ### Configure debugging parameters with launch.vs.json
-To customize your program’s command line arguments, right-click on the executable in Solution Explorer and select **Debug and Launch Settings**. This will create a new `launch.vs.json` file prepopulated with the information about the program you have selected. 
+To customize your program’s command line arguments, right-click on the executable in Solution Explorer and select **Debug and Launch Settings**. This will open an existing `launch.vs.json` file, or if none exists, it will create a new file prepopulated with the information about the program you have selected. 
 
-To specify additional arguments, just add them in the "args" JSON array as in the following example:
+To specify additional arguments, just add them in the `args` JSON array as shown in the following example:
 
 ```json
 {
@@ -238,7 +237,7 @@ To specify additional arguments, just add them in the "args" JSON array as in th
 }
 ```
 
-When you save this file, the new configuration appears in the Debug Target dropdown and you can select it to start the debugger. You can create as many debug configurations as you like, for any number of executables. If you press F5 now, the debugger will launch and hit any breakpoint you may have already set. All the familiar debugger windows and functionality is now available.
+When you save this file, the new configuration appears in the Debug Target dropdown and you can select it to start the debugger. You can create as many debug configurations as you like, for any number of executables. If you press **F5** now, the debugger will launch and hit any breakpoint you may have already set. All the familiar debugger windows and their functionality are now available.
 
 ## See Also
 [IDE and Tools for Visual C++ Development](ide-and-tools-for-visual-cpp-development.md)
