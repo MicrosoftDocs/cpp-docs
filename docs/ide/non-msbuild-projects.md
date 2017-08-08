@@ -1,5 +1,5 @@
 ---
-title: "Non-MSBuild Projects in Visual C++ | Microsoft Docs"
+title: "Open Folder projects in Visual C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "08/02/2017"
 ms.reviewer: ""
@@ -11,7 +11,7 @@ ms.topic: "article"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - "Non-MSBuild Projects in Visual C++"
+  - "Open Folder Projects in Visual C++"
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 author: "mikeblome"
 ms.author: "mblome"
@@ -32,8 +32,8 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-## Non-MSBuild projects in Visual C++
-VS2017 introduces the "Open Folder" feature, which enables you to open a folder of source files and immediately start coding with support for Intellisense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. 
+# Open Folder projects in Visual C++
+Visual Studio 2017 introduces the "Open Folder" feature, which enables you to open a folder of source files and immediately start coding with support for Intellisense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. 
 Powered by Open Folder, Visual C++ can now support not only loose collections of files, but also virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. 
 
 To use Open Folder, from the main menu select *File | Open | Folder* or press *Ctrl + Shift + Alt + O*. 
