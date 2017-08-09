@@ -29,7 +29,6 @@ translation.priority.ht:
 ---
    
 # C++ conformance improvements in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
-For improvements in Visual Studio 2017 version 15.3, see [Bug fixes in Visual Studio 2017 version 15.3](#update_153).
 
 ## New language features  
 With support for generalized constexpr and NSDMI for aggregates, the compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
@@ -56,7 +55,7 @@ The [[fallthrough]] attribute can be used in the context of switch statements as
 **Generalized range-based for loops** (no compiler switch required)
 Range-based for loops no longer require that begin() and end() return objects of the same type. This enables end() to return a sentinel object such as used by ranges as defined in the Ranges-V3 proposal. For more information, see [Generalizing the Range-Based For Loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html) and the [range-v3 library on GitHub](https://github.com/ericniebler/range-v3). 
 
-*Visual Studio 2017 version 15.3**:
+**Visual Studio 2017 version 15.3**:
 
 **constexpr lambdas** Lambda expressions may now be used in constant expressions. For more information, see [Constexpr Lambda](http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4487.pdf).
 
