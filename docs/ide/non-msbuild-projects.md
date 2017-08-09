@@ -33,31 +33,31 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Open Folder projects in Visual C++
-Visual Studio 2017 introduces the "Open Folder" feature, which enables you to open a folder of source files and immediately start coding with support for Intellisense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. 
+Visual Studio 2017 introduces the "Open Folder" feature, which enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. 
 Powered by Open Folder, Visual C++ can now support not only loose collections of files, but also virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. 
 
 To use Open Folder, from the main menu select *File | Open | Folder* or press *Ctrl + Shift + Alt + O*. 
-Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable Intellisense, navigation and refactoring features. As you edit, create, move or delete files, Visual Studio tracks the changes automatically and continuously updates its Intellisense index. 
+Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable IntelliSense, navigation and refactoring features. As you edit, create, move or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index. 
   
 ## CMake projects
-CMake is integrated in the Visual studio IDE as CMake Tools for Visual C++, a component of the C++ desktop workload. For more information, see [CMake Tools for Visual C++](cmake-tools-for-visual-cpp.md).
+CMake is integrated in the Visual Studio IDE as CMake Tools for Visual C++, a component of the C++ desktop workload. For more information, see [CMake Tools for Visual C++](cmake-tools-for-visual-cpp.md).
  
 ## QMake projects that target the Qt framework
-You can use CMake tools for Visual C++ to target Qt to build Qt projects, or you can use the Qt Visual Studio Extension. Note: As of August 2017, the [QT Visual Studio Extension support for Visual Studio 2017](https://download.qt.io/development_releases/vsaddin/) is available as a beta version.
+You can use CMake Tools for Visual C++ to target Qt to build Qt projects, or you can use the Qt Visual Studio Extension. Note: As of August 2017, the [Qt Visual Studio Extension support for Visual Studio 2017](https://download.qt.io/development_releases/vsaddin/) is available as a beta version.
 
-## gyp, Cons, SCons, Cons, Buck, etc
-You can use any build system in Visual C++ and still enjoy the advantages of the Visual C++ IDE and debugger. When you open the root folder of your project, Visual C++ uses heuristics to index the source files for Intellisense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure your build program by editing the launch.vs.json file. 
+## gyp, Cons, SCons, Buck, etc
+You can use any build system in Visual C++ and still enjoy the advantages of the Visual C++ IDE and debugger. When you open the root folder of your project, Visual C++ uses heuristics to index the source files for IntelliSense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure your build program by editing the launch.vs.json file. 
 
 ## Configuring Open Folder projects
 You can customize an Open Folder project through three JSON files:
 |||
 |-|-|
 |CppProperties.json|Specify custom configuration information for browsing. Create this file, if needed, in your root project folder.|
-|launch.vs.json|Specify command line arguments. Accessed via **Solution Explorer** context menu item **Debug and Launch Settings**.|
-|tasks.vs.json|Specify custom build commands and compiler switches. Accessed via **Solution Explorer** context menu item **Configure Tasks**.|
+|launch.vs.json|Specify command line arguments. Accessed via the **Solution Explorer** context menu item **Debug and Launch Settings**.|
+|tasks.vs.json|Specify custom build commands and compiler switches. Accessed via the **Solution Explorer** context menu item **Configure Tasks**.|
 
-### Configure Intellisense with CppProperties.json
-IntelliSense and browsing behavior partly depends on the active build configuration, which defines #include paths, compiler switches, and other parameters. By default, Visual Studio provides Debug and Release configurations. For some projects, you may need to create a custom configuration in order for Intellisense and browsing features to fully comprehend your code. To define a new configuration, create a file called CppProperties.json in the root folder. Here is an example:
+### Configure IntelliSense with CppProperties.json
+IntelliSense and browsing behavior partly depends on the active build configuration, which defines #include paths, compiler switches, and other parameters. By default, Visual Studio provides Debug and Release configurations. For some projects, you may need to create a custom configuration in order for IntelliSense and browsing features to fully comprehend your code. To define a new configuration, create a file called CppProperties.json in the root folder. Here is an example:
 
 ```json
 {
@@ -66,7 +66,7 @@ IntelliSense and browsing behavior partly depends on the active build configurat
       "name": "Windows x64",
       "includePath": [ "include" ],
       "defines": [ "_DEBUG" ],
-      "compilerSwitches": "/std:c++14",
+      "compilerSwitches": "/std:c++17",
       "intelliSenseMode": "msvc-x64",
       "forcedInclude": [ "pch.h" ],
       "undefines": []
@@ -144,7 +144,7 @@ You can create any number of configurations in  CppProperties.json. Each will ap
 }
 ```
 ### Define tasks with tasks.vs.json
-You can automate build scripts or any other external operations on the files you have in your current workspace by running them as tasks directly in the IDE. You can configure a new task by right-clicking on a file or folder and select **Configure Tasks**. 
+You can automate build scripts or any other external operations on the files you have in your current workspace by running them as tasks directly in the IDE. You can configure a new task by right-clicking on a file or folder and selecting **Configure Tasks**. 
 
 ![Open Folder Configure Tasks](media/open-folder-config-tasks.png)
 
@@ -170,13 +170,13 @@ After saving tasks.vs.json, you can right-click any .cpp file in the folder, cho
 You can create tasks for any file or folder by specifying its name in the `appliesTo` field, for example `"appliesTo" : "hello.cpp"`. The following file masks can be used as values:
 |||
 |-|-|
-|`"*"`| – task is available to all files and folders in the workspace|
+|`"*"`| task is available to all files and folders in the workspace|
 |`"*/"`| task is available to all folders in the workspace|
 |`"*.cpp"`| task is available to all files with the extension .cpp in the workspace|
 |`"/*.cpp"`| task is available to all files with the extension .cpp in the root of the workspace|
 |`"src/*/"`| task is available to all subfolders of the "src" folder|
 |`"makefile"`| task is available to all makefile files in the workspace|
-|`"/makefile"`| task is available only on the makefile in the root of the workspace|
+|`"/makefile"`| task is available only to the makefile in the root of the workspace|
 
 #### output
 Use the `output` property to specify the executable that will launch when you press **F5**. For example:
@@ -198,7 +198,7 @@ Use the `output` property to specify the executable that will launch when you pr
 |`${fileExtname}`| the extension of the selected file (for example,  ".cpp")|
 
 #### Custom macros
-To define a custom macro in tasks.vs.json, add a name:value pair prior to the task blocks. The following example defines a macro named "outDir" which is consumed in the `args` property:
+To define a custom macro in tasks.vs.json, add a name:value pair prior to the task blocks. The following example defines a macro named `outDir` which is consumed in the `args` property:
 
 ```json
 {
@@ -218,7 +218,7 @@ To define a custom macro in tasks.vs.json, add a name:value pair prior to the ta
 ```
 
 ### Configure debugging parameters with launch.vs.json
-To customize your program’s command line arguments, right-click on the executable in Solution Explorer and select **Debug and Launch Settings**. This will open an existing `launch.vs.json` file, or if none exists, it will create a new file prepopulated with the information about the program you have selected. 
+To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing `launch.vs.json` file, or if none exists, it will create a new file prepopulated with the information about the program you have selected. 
 
 To specify additional arguments, just add them in the `args` JSON array as shown in the following example:
 
