@@ -278,6 +278,7 @@ template<typename F, typename Tuple = tuple<T...>,
 ```  
 ## Returning multiple values from a function
 There are various ways to return more than one value from a function:
+
 1. Encapsulate the values in a named class or struct object. Requires the class or struct definition to be visible to the caller:
 
 ```cpp
@@ -288,25 +289,27 @@ using namespace std;
 
 struct S
 {
-	string name;
-	int num;
+    string name;
+    int num;
 };
 
 S g()
 {
-	string t{ "hello" };
-	int u{ 42 };
-	return { t, u };
+    string t{ "hello" };
+    int u{ 42 };
+    return { t, u };
 }
 
 int main()
 {
-	S s = g();
-	cout << s.name << " " << s.num << endl;
-	return 0;
+    S s = g();
+    cout << s.name << " " << s.num << endl;
+    return 0;
 }
 ```
+
 2. Return a std::tuple or std::pair object:
+
 ```cpp
 #include <tuple>
 #include <string>
@@ -317,29 +320,30 @@ using namespace std;
 
 tuple<int, string, double> f()
 {
-	int i{ 108 };
-	string s{ "Some text" };
-	double d{ .01 };
-	return { i,s,d };
+    int i{ 108 };
+    string s{ "Some text" };
+    double d{ .01 };
+    return { i,s,d };
 }
 
 int main()
 {
-	auto t = f();
-	cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
+    auto t = f();
+    cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
     
-	// --or--
+    // --or--
 
-	int myval;
-	string myname;
-	double mydecimal;
-	tie(myval, myname, mydecimal) = f();
-	cout << myval << " " << myname << " " << mydecimal << endl;
+    int myval;
+    string myname;
+    double mydecimal;
+    tie(myval, myname, mydecimal) = f();
+    cout << myval << " " << myname << " " << mydecimal << endl;
 
-	return 0;
+    return 0;
 }
 ```
-3. Use structured bindings (**Visual Studio 2017 version 15.3 and later**): The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and intialize names that are in scope for the entire function block.  
+
+3. **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Use structured bindings. The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and intialize names that are in scope for the entire function block.  
 
 ```cpp
 #include <tuple>
@@ -350,36 +354,36 @@ using namespace std;
 
 tuple<int, string, double> f()
 {
-	int i{ 108 };
-	string s{ "Some text" };
-	double d{ .01 };
-	return { i,s,d };
+    int i{ 108 };
+    string s{ "Some text" };
+    double d{ .01 };
+    return { i,s,d };
 }
 struct S
 {
-	string name;
-	int num;
+    string name;
+    int num;
 };
 
 S g()
 {
-	string t{ "hello" };
-	int u{ 42 };
-	return { t, u };
+    string t{ "hello" };
+    int u{ 42 };
+    return { t, u };
 }
 
 int main()
 {
-	auto[x, y, z] = f(); // init from tuple
-	cout << x << " " << y << " " << z << endl;
+    auto[x, y, z] = f(); // init from tuple
+    cout << x << " " << y << " " << z << endl;
 
-	auto[a, b] = g(); // init from POD struct
-	cout << a << " " << b << endl;
-	return 0;
+    auto[a, b] = g(); // init from POD struct
+    cout << a << " " << b << endl;
+    return 0;
 }
 ```
 
-4. Although not "returning values" in the strict sense, you can define any number of parameters to use pass-by reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).
+4. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).
   
 ## Function pointers  
  C++ supports function pointers in the same manner as the C language. However a more type-safe alternative is usually to use a function object.  

@@ -118,7 +118,7 @@ int main()
 }
 ```  
 ## if statement with an initializer
-**Visual Studio 2017 version 15.3 and later**: An **if** statement may also contain an expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-block. 
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): An **if** statement may also contain an expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-block. 
 
 ```cpp
 ## Example  
@@ -171,19 +171,24 @@ int main()
  The **else** clause of an `if...else` statement is associated with the closest previous **if** statement in the same scope that does not have a corresponding **else** statement.   
 
 ## constexpr if statements
-**Visual Studio 2017 version 15.3 and later**: In function templates, you can use a **constexpr if** statement to make compile-time branching decisions without having to resort to multiple function overloads. For example, you can write a single function that handles parameter unpacking (no zero-parameter overload is needed): 
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): In function templates, you can use a **constexpr if** statement to make compile-time branching decisions without having to resort to multiple function overloads. For example, you can write a single function that handles parameter unpacking (no zero-parameter overload is needed): 
 
 ```cpp
 template <class T, class... Rest>
 void f(T&& t, Rest&&... r)
 {
-    // handle t
-	do_something(t);
+// handle t
+   do_something(t);
 
+   // handle r conditionally
    constexpr if (sizeof...(r)) 
    {
-      // handle r
+      
       f(r...); 
+   }
+   else
+   {
+       g(r...);
    }
 }
 ```

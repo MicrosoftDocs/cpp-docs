@@ -39,6 +39,8 @@ translation.priority.ht:
 ---
 # bool (C++)
 This keyword is a built-in type. A variable of this type can have values [true](../cpp/true-cpp.md) and [false](../cpp/false-cpp.md). Conditional expressions have the type `bool` and so have values of type `bool`. For example, `i!=0` now has **true** or **false** depending on the value of `i`.  
+
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The operand of a postfix or prefix increment or decrement operator may not be of type `bool`. 
   
  The values **true** and **false** have the following relationship:  
   

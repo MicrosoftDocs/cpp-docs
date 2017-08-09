@@ -54,7 +54,7 @@ translation.priority.ht:
   
  The prefix decrement operator (**--**) is analogous to the prefix increment operator, except that the operand is decremented by one and the result is this decremented value.  
 
- **Visual Studio 2017 version 15.3 and later:**(available with [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) The operand of an increment or decrement operator may not be of type `bool`.
+ **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The operand of an increment or decrement operator may not be of type `bool`.
   
  Both the prefix and postfix increment and decrement operators affect their operands. The key difference between them is the order in which the increment or decrement takes place in the evaluation of an expression. (For more information, see [Postfix Increment and Decrement Operators](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md).) In the prefix form, the increment or decrement takes place before the value is used in expression evaluation, so the value of the expression is different from the value of the operand. In the postfix form, the increment or decrement takes place after the value is used in expression evaluation, so the value of the expression is the same as the value of the operand. For example, the following program prints "`++i = 6`":  
   
