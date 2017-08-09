@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Properties in C++/CLI | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "07/21/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
