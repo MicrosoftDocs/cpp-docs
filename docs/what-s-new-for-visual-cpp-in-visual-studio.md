@@ -1,7 +1,7 @@
 ---
 title: "What's New for Visual C++ in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "3/7/2017"
+ms.date: "8/2/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mblome"
+ms.author: "mblome"
 manager: "ghogen"
 translation.priority.ht: 
     - "cs-cz"
@@ -42,7 +42,9 @@ In this release, we've updated the C++ compiler and standard library with enhanc
 
 ### New compiler switches  
 
- -**/std:c++14** and **/std:c++latest**: These compiler switches enable you to opt-in to specific versions of the ISO C++ programming language in a project. For more information, see [Standards version switches in the compiler](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/standards-version-switches-in-the-compiler). Most of the new draft standard features are guarded by the /std:c++latest switch. 
+ -**/std:c++14** and **/std:c++latest**: These compiler switches enable you to opt-in to specific versions of the ISO C++ programming language in a project. For more information, see [-std (Specify Language Standard Version)](build/reference/std-specify-language-standard-version.md). Most of the new draft standard features are guarded by the /std:c++latest switch. 
+
+**Visual Studio 2017 version 15.3**: The **/std:c++17** option enables the set of C++17 features implemented by the Visual C++ compiler. This option disables compiler and standard library support for features that are changed or new in more recent versions of the Working Draft and defect updates of the C++ Standard.
 
 -[/permissive-](build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not __declspec(dllimport), for example). (Off by default but will be on by default at some point in the future.)
 
@@ -63,6 +65,8 @@ This release brings several improvements in optimization, code generation, tools
 - New toolset layout: The compiler and related build tools have a new location and directory structure on your development machine. The new layout enables side-by-side installations of multiple versions of the compiler. For more information, see [Compiler Tools Layout in Visual Studio "15"](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/).
 - Improved diagnostics: The output window now shows the column where an error occurs. For more information, see [C++ compiler diagnostics improvements in VS "15" Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/).
 - When using co-routines, the Experimental keyword "yield" (available under /await switch) has been removed. Your code should be updated to use the "co_yield" instead. For more information, see the Visual C++ Team blog. 
+
+**Visual Studio 2017 version 15.3**: Additional improvements to diagnostics in the compiler. For more information, see [Diagnostic Improvements in Visual Studio 2017 15.3.0](https://blogs.msdn.microsoft.com/vcblog/2017/07/21/diagnostic-improvements-in-vs2017-15-3-0/).
 
 ## C++ Libraries
 
@@ -131,20 +135,22 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 * The experimental refactoring features Change Signature and Extract Function are now available by default.
 
-* We've enabled the new experimental feature for C++ projects 'Faster project load'. The next time you open a C++ project it will load faster, and the time after that it will load really fast!
+* The experimental feature for C++ projects 'Faster project load'. The next time you open a C++ project it will load faster, and the time after that it will load really fast!
 
 Some of these features are common to other languages, and some are specific to C++. For more information about these new features, see [Announcing Visual Studio “15”](https://blogs.msdn.microsoft.com/visualstudio/2016/10/05/announcing-visual-studio-15-preview-5/). 
 
 ### Support for non-MSBuild projects with Open Folder
-Visual Studio 2017 introduces the “Open Folder” feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it a lot simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With “Open Folder” you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Bring your C++ codebase to Visual Studio with “Open Folder”](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/bring-your-c-codebase-to-visual-studio-with-open-folder/).
+Visual Studio 2017 introduces the “Open Folder” feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it a lot simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With “Open Folder” you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects in Visual C++](ide/non-msbuild-projects.md).
 
 * Improvements to the Open Folder experience. You can customize the experience through these json files:
   -	CppProperties.json to customize the IntelliSense and browsing experience.
   -	Tasks.json to customize the build steps. 
   -	Launch.json to customize the debugging experience.
 
+**Visual Studio 2017 version 15.3**: Improved support for alternative compilers and build environments such as MinGW and Cygwin. For more information, see [Using MinGW and Cygwin with Visual C++ and Open Folder](https://blogs.msdn.microsoft.com/vcblog/2017/07/19/using-mingw-and-cygwin-with-visual-cpp-and-open-folder/).
+
 ### CMake support via Open Folder
-Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/cmake-support-in-visual-studio/) and [CMake support in Visual Studio 2017 - what’s new in the RC.2 update](https://blogs.msdn.microsoft.com/vcblog/2016/12/20/cmake-support-in-visual-studio-2017-whats-new-in-the-rc-update/). Opening CMake projects with “Open Folder” will automatically configure the environment for C++ editing, building and debugging.
+Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md). Opening CMake projects with “Open Folder” will automatically configure the environment for C++ editing, building and debugging.
 
 * C++ IntelliSense will work without the need to create a CppProperties.json file in the root folder. Along with this, we've added a new dropdown to allow users to easily switch between configurations provided by CMake and CppProperties.json files.
 
@@ -152,6 +158,7 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 
   ![Cmake Open Folder](media/cmake_cpp.png "CMake Open Folder")
 
+**Visual Studio 2017 version 15.3**: Support added for the CMake Ninja generator. For more information, see [CMake support in Visual Studio – what’s new in 2017 15.3 Preview 2](https://blogs.msdn.microsoft.com/vcblog/2017/06/14/cmake-support-in-visual-studio-whats-new-in-2017-15-3-preview-2/). 
 
 ## C++ Installation Workloads 
 
@@ -162,6 +169,8 @@ To successfully create Win32 projects in the C++ desktop workload, you must inst
 
 ### Linux Development with C++:  
 The popular extension [Visual C++ for Linux Development](https://visualstudiogallery.msdn.microsoft.com/725025cf-7067-45c2-8d01-1e0fd359ae6e) is now part of Visual Studio. This installation provides everything you need to develop and debug C++ applications running on a Linux environment.  
+
+**Visual Studio 2017 version 15.2**: Improvements for cross-platform code sharing and type visualization. For more information, see [Linux C++ improvements for cross-platform code sharing and type visualization](https://blogs.msdn.microsoft.com/vcblog/2017/05/10/linux-cross-platform-and-type-visualization/).
 
 ### Game Development with C++:  
 Use the full power of C++ to build professional games powered by DirectX or Cocos2d.  
@@ -187,6 +196,8 @@ The Clang/C2 toolset that ships with [!INCLUDE[vs_dev15_md](misc/includes/vs_dev
 The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) are now distributed with Visual Studio. Simply enable the checkers in the Code Analysis Extensions dialog in the project's property pages and the extensions will be included when you run code analysis. 
 
 ![CppCoreCheck](media/CppCoreCheck.png "CppCoreCheck properties page") 
+
+**Visual Studio 2017 version 15.3**: Support added for rules related to resource management. For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## Visual Studio Graphics Diagnostics
 
