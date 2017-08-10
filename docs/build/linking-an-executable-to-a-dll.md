@@ -41,7 +41,7 @@ translation.priority.ht:
 ---
 # Link an executable to a DLL  
   
-An executable file links to (or loads) a DLL in one of two ways. implicit linking, The operating system loads the DLL when the executable using it is loaded. Like a statically linked library, the client executable calls the DLL's exported functions just as if the functions were contained within the executable. 
+An executable file links to (or loads) a DLL in one of two ways:  
   
 -   *Implicit linking*, where the operating system loads the DLL when the executable using it is loaded. The client executable calls the exported functions of the DLL just as if the functions were statically linked and contained within the executable. Implicit linking is sometimes referred to as *static load* or *load-time dynamic linking*.  
   
@@ -83,9 +83,9 @@ Most applications use implicit linking because it is the easiest linking method 
   
 -   Explicit linking eliminates the need to link the application by using an import library. If changes in the DLL cause the export ordinals to change, applications that use explicit linking do not have to relink if they call `GetProcAddress` using the name of a function and not an ordinal value, whereas applications that use implicit linking must relink to the new import library.  
   
- Here are two hazards of explicit linking to be aware of:  
+Here are two hazards of explicit linking to be aware of:  
   
--   If the DLL has a `DllMain` entry point function, the operating system calls the function in the context of the thread that called `LoadLibrary`. The entry-point function is not called if the DLL is already attached to the process because of a previous call to `LoadLibrary` that has had no corresponding call to the `FreeLibrary` function. Explicit linking can cause problems if the DLL uses a `DllMain` function to perform initialization for each thread of a process because threads existing when `LoadLibrary` (or `AfxLoadLibrary`) is called will not be initialized.  
+-   If the DLL has a `DllMain` entry point function, the operating system calls the function in the context of the thread that called `LoadLibrary`. The entry-point function is not called if the DLL is already attached to the process because of a previous call to `LoadLibrary` that has had no corresponding call to the `FreeLibrary` function. Explicit linking can cause problems if the DLL uses a `DllMain` function to perform initialization for each thread of a process because threads that already exist when `LoadLibrary` (or `AfxLoadLibrary`) is called are not initialized.  
   
 -   If a DLL declares static-extent data as `__declspec(thread)`, it can cause a protection fault if explicitly linked. After the DLL is loaded by a call to `LoadLibrary`, it causes a protection fault whenever the code references this data. (Static-extent data includes both global and local static items.) Therefore, when you create a DLL, you should either avoid using thread-local storage or inform DLL users about the potential pitfalls of dynamically loading your DLL. For more information, see [Using thread local storage in a dynamic-link library (Windows SDK)](http://msdn.microsoft.com/library/windows/desktop/ms686997).  
   

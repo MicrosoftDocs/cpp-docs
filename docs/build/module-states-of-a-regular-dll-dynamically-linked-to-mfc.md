@@ -1,5 +1,5 @@
 ---
-title: "Module States of a regular MFC DLL Dynamically Linked to MFC | Microsoft Docs"
+title: "Module States of a Regular MFC DLL Dynamically Linked to MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Module States of a regular MFC DLL Dynamically Linked to MFC
+# Module States of a Regular MFC DLL Dynamically Linked to MFC
 The ability to dynamically link a regular MFC DLL to the MFC DLL allows some configurations that are very complicated. For example, a regular MFC DLL and the executable that uses it can both dynamically link to the MFC DLL and to any MFC extension DLLs.  
   
  This configuration poses a problem with regard to the MFC global data, such as the pointer to the current `CWinApp` object and handle maps.  

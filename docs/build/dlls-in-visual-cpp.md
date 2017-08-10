@@ -113,7 +113,7 @@ The following topics provide detailed information about how to program DLLs in V
  [Search Path Used by Windows to Locate a DLL](../build/search-path-used-by-windows-to-locate-a-dll.md)  
  Describes the search path that the Windows operating system uses to locate a DLL on the system.  
   
- [Module States of a regular MFC DLL Dynamically Linked to MFC](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)  
+ [Module States of a Regular MFC DLL Dynamically Linked to MFC](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)  
  Describes the module states of a regular MFC DLL dynamically linked to MFC.  
   
  [MFC extension DLLs](../build/extension-dlls-overview.md)  
