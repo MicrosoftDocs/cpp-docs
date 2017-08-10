@@ -142,9 +142,9 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
   
 -   [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)  
   
--   [regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
+-   [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
--   [regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
+-   [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
 -   [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   

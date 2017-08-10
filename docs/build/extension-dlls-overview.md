@@ -57,9 +57,9 @@ An MFC extension DLL is a DLL that typically implements reusable classes derived
   
 -   [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)  
   
--   [regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
+-   [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
--   [regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
+-   [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
 -   [Creating an MFC DLL](../mfc/reference/mfc-dll-wizard.md)  
   

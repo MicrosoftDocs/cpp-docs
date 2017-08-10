@@ -1,5 +1,5 @@
 ---
-title: "regular MFC DLLs Dynamically Linked to MFC | Microsoft Docs"
+title: "Regular MFC DLLs Dynamically Linked to MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# regular MFC DLLs Dynamically Linked to MFC
+# Regular MFC DLLs Dynamically Linked to MFC
 A regular MFC DLL dynamically linked to MFC is a DLL that uses MFC internally, and the exported functions in the DLL can be called by either MFC or non-MFC executables. As the name describes, this kind of DLL is built using the dynamic-link library version of MFC (also known as the shared version of MFC). Functions are usually exported from a regular MFC DLL using the standard C interface.  
   
  You must add the `AFX_MANAGE_STATE` macro at the beginning of all the exported functions in regular MFC DLLs that dynamically link to MFC to set the current module state to the one for the DLL. This is done by adding the following line of code to the beginning of functions exported from the DLL:  

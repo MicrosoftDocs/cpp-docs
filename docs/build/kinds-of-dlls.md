@@ -52,9 +52,9 @@ This topic provides information to help you determine the kind of DLL to build.
   
 -   [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)  
   
--   [regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
+-   [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
--   [regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
+-   [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
 -   [MFC extension DLLs: Overview](../build/extension-dlls-overview.md)  
   
@@ -73,15 +73,15 @@ This topic provides information to help you determine the kind of DLL to build.
   
  If your DLL dynamically links to MFC, the MFC DLLs might be redistributed with your DLL. This architecture is particularly useful for sharing the class library between multiple executable files to save disk space and minimize memory usage.  
   
- Prior to version 4.0, Visual C++ only supported two kinds of DLLs that used MFC: USRDLLs and AFXDLLs. regular MFC DLLs statically linked to MFC have the same characteristics as the former USRDLL. MFC extension DLLs have the same characteristics as the former AFXDLLs.  
+ Prior to version 4.0, Visual C++ only supported two kinds of DLLs that used MFC: USRDLLs and AFXDLLs. Regular MFC DLLs statically linked to MFC have the same characteristics as the former USRDLL. MFC extension DLLs have the same characteristics as the former AFXDLLs.  
   
 ### What do you want to know more about?  
   
 -   [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)  
   
--   [regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
+-   [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
--   [regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
+-   [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
 -   [MFC extension DLLs: Overview](../build/extension-dlls-overview.md)  
   

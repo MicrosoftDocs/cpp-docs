@@ -157,9 +157,9 @@ BOOL CYourRegularDLL::InitInstance()
   
 -   [MFC extension DLLs](../build/extension-dlls.md)  
   
--   [regular MFC DLLs Statically Linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
+-   [Regular MFC DLLs Statically Linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
--   [regular MFC DLLs Dynamically Linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
+-   [Regular MFC DLLs Dynamically Linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
 -   [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
   
