@@ -46,15 +46,15 @@ A non-MFC DLL is a DLL that does not use MFC internally, and the exported functi
   
 -   [Link an executable to a DLL](../build/linking-an-executable-to-a-dll.md)  
   
--   [Initialize a DLL](../build/initializing-a-dll.md)  
+-   [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
   
 ## What do you want to know more about?  
   
--   [Regular DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
+-   [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)  
   
--   [Regular DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
+-   [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Extension DLLs: Overview](../build/extension-dlls-overview.md)  
+-   [MFC extension DLLs: Overview](../build/extension-dlls-overview.md)  
   
 ## See Also  
  [Kinds of DLLs](../build/kinds-of-dlls.md)

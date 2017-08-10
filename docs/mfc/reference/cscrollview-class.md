@@ -94,7 +94,7 @@ class CScrollView : public CView
   
  Scroll bars can appear in three places relative to a view, as shown in the following cases:  
   
--   Standard window-style scroll bars can be set for the view using the **WS_HSCROLL** and **WS_VSCROLL**[Windows Styles](../../mfc/reference/window-styles.md).  
+-   Standard window-style scroll bars can be set for the view using the **WS_HSCROLL** and **WS_VSCROLL**[Windows Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
 -   Scroll-bar controls can also be added to the frame containing the view, in which case the framework forwards `WM_HSCROLL` and `WM_VSCROLL` messages from the frame window to the currently active view.  
   

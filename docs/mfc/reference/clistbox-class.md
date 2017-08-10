@@ -126,7 +126,7 @@ class CListBox : public CWnd
   
  Following is a list of potential message-map entries and a description of the cases in which they would be sent to the parent:  
   
-- **ON_LBN_DBLCLK** The user double-clicks a string in a list box. Only a list box that has the [LBS_NOTIFY](../../mfc/reference/list-box-styles.md) style will send this notification message.  
+- **ON_LBN_DBLCLK** The user double-clicks a string in a list box. Only a list box that has the [LBS_NOTIFY](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style will send this notification message.  
   
 - **ON_LBN_ERRSPACE** The list box cannot allocate enough memory to meet the request.  
   
@@ -175,7 +175,7 @@ int AddString(LPCTSTR lpszItem);
  The zero-based index to the string in the list box. The return value is **LB_ERR** if an error occurs; the return value is **LB_ERRSPACE** if insufficient space is available to store the new string.  
   
 ### Remarks  
- If the list box was not created with the [LBS_SORT](../../mfc/reference/list-box-styles.md) style, the string is added to the end of the list. Otherwise, the string is inserted into the list, and the list is sorted. If the list box was created with the **LBS_SORT** style but not the [LBS_HASSTRINGS](../../mfc/reference/list-box-styles.md) style, the framework sorts the list by one or more calls to the `CompareItem` member function.  
+ If the list box was not created with the [LBS_SORT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the string is added to the end of the list. Otherwise, the string is inserted into the list, and the list is sorted. If the list box was created with the **LBS_SORT** style but not the [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the framework sorts the list by one or more calls to the `CompareItem` member function.  
   
  Use [InsertString](#insertstring) to insert a string into a specific location within the list box.  
   
@@ -206,7 +206,7 @@ virtual int CharToItem(
   
 -   Is an owner-draw list box.  
   
--   Does not have the [LBS_HASSTRINGS](../../mfc/reference/list-box-styles.md) style set.  
+-   Does not have the [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style set.  
   
 -   Has at least one item.  
   
@@ -273,7 +273,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the style of the list box. Apply any combination of [list-box styles](../../mfc/reference/list-box-styles.md) to the box.  
+ Specifies the style of the list box. Apply any combination of [list-box styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) to the box.  
   
  `rect`  
  Specifies the list-box size and position. Can be either a `CRect` object or a `RECT` structure.  
@@ -294,7 +294,7 @@ virtual BOOL Create(
   
  These messages are handled by default by the [OnNcCreate](../../mfc/reference/cwnd-class.md#onnccreate), [OnCreate](../../mfc/reference/cwnd-class.md#oncreate), [OnNcCalcSize](../../mfc/reference/cwnd-class.md#onnccalcsize), and [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo) member functions in the `CWnd` base class. To extend the default message handling, derive a class from `CListBox`, add a message map to the new class, and override the preceding message-handler member functions. Override `OnCreate`, for example, to perform needed initialization for a new class.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to a list-box control.  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a list-box control.  
   
 - **WS_CHILD** Always  
   
@@ -451,7 +451,7 @@ int FindStringExact(
  The index of the matching item, or **LB_ERR** if the search was unsuccessful.  
   
 ### Remarks  
- If the list box was created with an owner-draw style but without the [LBS_HASSTRINGS](../../mfc/reference/list-box-styles.md) style, the `FindStringExact` member function attempts to match the doubleword value against the value of `lpszFind`.  
+ If the list box was created with an owner-draw style but without the [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the `FindStringExact` member function attempts to match the doubleword value against the value of `lpszFind`.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#11](../../mfc/codesnippet/cpp/clistbox-class_11.cpp)]  
@@ -587,7 +587,7 @@ int GetItemHeight(int nIndex) const;
  Specifies the zero-based index of the item in the list box. This parameter is used only if the list box has the **LBS_OWNERDRAWVARIABLE** style; otherwise, it should be set to 0.  
   
 ### Return Value  
- The height, in pixels, of the items in the list box. If the list box has the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/list-box-styles.md) style, the return value is the height of the item specified by `nIndex`. If an error occurs, the return value is **LB_ERR**.  
+ The height, in pixels, of the items in the list box. If the list box has the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the return value is the height of the item specified by `nIndex`. If an error occurs, the return value is **LB_ERR**.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#17](../../mfc/codesnippet/cpp/clistbox-class_17.cpp)]  
@@ -814,7 +814,7 @@ int InsertString(
  The zero-based index of the position at which the string was inserted. The return value is **LB_ERR** if an error occurs; the return value is **LB_ERRSPACE** if insufficient space is available to store the new string.  
   
 ### Remarks  
- Unlike the [AddString](#addstring) member function, `InsertString` does not cause a list with the [LBS_SORT](../../mfc/reference/list-box-styles.md) style to be sorted.  
+ Unlike the [AddString](#addstring) member function, `InsertString` does not cause a list with the [LBS_SORT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style to be sorted.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#24](../../mfc/codesnippet/cpp/clistbox-class_24.cpp)]  
@@ -856,9 +856,9 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
  A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.  
   
 ### Remarks  
- By default, this member function does nothing. Override this member function and fill in the `MEASUREITEMSTRUCT` structure to inform Windows of the list-box dimensions. If the list box is created with the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/list-box-styles.md) style, the framework calls this member function for each item in the list box. Otherwise, this member is called only once.  
+ By default, this member function does nothing. Override this member function and fill in the `MEASUREITEMSTRUCT` structure to inform Windows of the list-box dimensions. If the list box is created with the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the framework calls this member function for each item in the list box. Otherwise, this member is called only once.  
   
- For further information about using the [LBS_OWNERDRAWFIXED](../../mfc/reference/list-box-styles.md) style in an owner-draw list box created with the `SubclassDlgItem` member function of `CWnd`, see the discussion in [Technical Note 14](../../mfc/tn014-custom-controls.md).  
+ For further information about using the [LBS_OWNERDRAWFIXED](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style in an owner-draw list box created with the `SubclassDlgItem` member function of `CWnd`, see the discussion in [Technical Note 14](../../mfc/tn014-custom-controls.md).  
   
  See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) for a description of the `MEASUREITEMSTRUCT` structure **.**  
   
@@ -897,7 +897,7 @@ int SelectString(
 ### Remarks  
  The list box is scrolled, if necessary, to bring the selected item into view.  
   
- This member function cannot be used with a list box that has the [LBS_MULTIPLESEL](../../mfc/reference/list-box-styles.md) style.  
+ This member function cannot be used with a list box that has the [LBS_MULTIPLESEL](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style.  
   
  An item is selected only if its initial characters (from the starting point) match the characters in the string specified by `lpszItem`.  
   
@@ -978,7 +978,7 @@ int SetCaretIndex(
  [!code-cpp[NVC_MFC_CListBox#30](../../mfc/codesnippet/cpp/clistbox-class_30.cpp)]  
   
 ##  <a name="setcolumnwidth"></a>  CListBox::SetColumnWidth  
- Sets the width in pixels of all columns in a multicolumn list box (created with the [LBS_MULTICOLUMN](../../mfc/reference/list-box-styles.md) style).  
+ Sets the width in pixels of all columns in a multicolumn list box (created with the [LBS_MULTICOLUMN](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style).  
   
 ```  
 void SetColumnWidth(int cxWidth);
@@ -1029,7 +1029,7 @@ void SetHorizontalExtent(int cxExtent);
 ### Remarks  
  If the size of the list box is smaller than this value, the horizontal scroll bar will horizontally scroll items in the list box. If the list box is as large or larger than this value, the horizontal scroll bar is hidden.  
   
- To respond to a call to `SetHorizontalExtent`, the list box must have been defined with the [WS_HSCROLL](../../mfc/reference/window-styles.md) style.  
+ To respond to a call to `SetHorizontalExtent`, the list box must have been defined with the [WS_HSCROLL](../../mfc/reference/styles-used-by-mfc.md#window-styles) style.  
   
  This member function is not useful for multicolumn list boxes. For multicolumn list boxes, call the `SetColumnWidth` member function.  
   
@@ -1103,7 +1103,7 @@ int SetItemHeight(
  **LB_ERR** if the index or height is invalid.  
   
 ### Remarks  
- If the list box has the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/list-box-styles.md) style, this function sets the height of the item specified by `nIndex`. Otherwise, this function sets the height of all items in the list box.  
+ If the list box has the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, this function sets the height of the item specified by `nIndex`. Otherwise, this function sets the height of all items in the list box.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#36](../../mfc/codesnippet/cpp/clistbox-class_36.cpp)]  
@@ -1186,7 +1186,7 @@ BOOL SetTabStops(
   
  To set tab stops to an array of sizes, use the version with the `rgTabStops` and `nTabStops` arguments. A tab stop will be set for each value in `rgTabStops`, up to the number specified by `nTabStops`.  
   
- To respond to a call to the `SetTabStops` member function, the list box must have been created with the [LBS_USETABSTOPS](../../mfc/reference/list-box-styles.md) style.  
+ To respond to a call to the `SetTabStops` member function, the list box must have been created with the [LBS_USETABSTOPS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CListBox#39](../../mfc/codesnippet/cpp/clistbox-class_39.cpp)]  
@@ -1233,7 +1233,7 @@ virtual int VKeyToItem(
 ### Remarks  
  The `WM_VKEYTOITEM` message is sent by the list box when it receives a `WM_KEYDOWN` message, but only if the list box meets both of the following:  
   
--   Has the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/list-box-styles.md) style set.  
+-   Has the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style set.  
   
 -   Has at least one item.  
   

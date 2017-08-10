@@ -474,7 +474,7 @@ UINT GetFlags() const;
  `AFX_CUSTOMIZE_NO_LARGE_ICONS`  
  Removes the **Large Icons** option from the customization dialog box.  
   
- For more information about the `WS_EX_CONTEXTHELP` visual style, see [Extended Window Styles](../../mfc/reference/extended-window-styles.md).  
+ For more information about the `WS_EX_CONTEXTHELP` visual style, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
   
 ##  <a name="onafterchangetool"></a>  CMFCToolBarsCustomizeDialog::OnAfterChangeTool  
  Responds to a change in a user tool immediately after it occurs.  
