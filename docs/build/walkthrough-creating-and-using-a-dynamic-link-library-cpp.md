@@ -56,7 +56,7 @@ This walkthrough creates two Visual Studio solutions; one that builds the DLL, a
   
 This walkthrough doesn't cover some common situations. It doesn't show the use of C++ DLLs by other programming languages. It doesn't show how to create a resource-only DLL. It also doesn't show the use of explicit linking to load DLLs at run-time rather than at load-time. Rest assured, you can use Visual C++ to do all these things. For links to more information about DLLs, see [DLLs in Visual C++](../build/dlls-in-visual-cpp.md). For more information about implicit linking and explicit linking, see [Determining Which Linking Method to Use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). For information about creating C++ DLLs for use with programming languages that use C-language linkage conventions, see [Exporting C++ Functions for Use in C-Language Executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md). For information about how to create DLLs for use with .NET languages, see [Calling DLL Functions from Visual Basic Applications](../build/calling-dll-functions-from-visual-basic-applications.md).  
   
-This walkthrough uses Visual Studio 2017, but the code and most of the instructions are applicable to earlier versions. The steps to build new projects changed starting in Visual Studio 2017 Update 15.3. This walkthrough describes how to create projects for both newer and older versions. Look for the steps that match your version of Visual Studio.  
+This walkthrough uses Visual Studio 2017, but the code and most of the instructions are applicable to earlier versions. The steps to build new projects changed starting in Visual Studio 2017 version 15.3. This walkthrough describes how to create projects for both newer and older versions. Look for the steps that match your version of Visual Studio.  
   
 ## Prerequisites  
   
@@ -72,9 +72,9 @@ This walkthrough uses Visual Studio 2017, but the code and most of the instructi
   
 ## Create the DLL project  
   
-In this set of tasks, you create a project for your DLL, add code, and build it. To begin, start the Visual Studio IDE, and sign in if you need to. The instructions for Visual Studio 2017 Update 15.3 come first. Instructions for earlier versions come later, so skip ahead if you need to.   
+In this set of tasks, you create a project for your DLL, add code, and build it. To begin, start the Visual Studio IDE, and sign in if you need to. The instructions for Visual Studio 2017 version 15.3 come first. Instructions for earlier versions come later, so skip ahead if you need to.   
 
-### To create a DLL project in Visual Studio 2017 Update 15.3  
+### To create a DLL project in Visual Studio 2017 version 15.3  
   
 1. On the menu bar, choose **File**, **New**, **Project** to open the **New Project** dialog box.  
   
@@ -91,7 +91,7 @@ In this set of tasks, you create a project for your DLL, add code, and build it.
 1. Choose the **OK** button to create the project.  
   
 > [!NOTE]  
-> Additional steps are required to fix an issue in Visual Studio 2017 Update 15.3. Follow these instructions to see if you need to make this change.  
+> Additional steps are required to fix an issue in Visual Studio 2017 version 15.3. Follow these instructions to see if you need to make this change.  
 >  
 >1. In **Solution Explorer**, if it is not already selected, select the **MathLibrary** project under **Solution 'MathLibrary'**.  
 >  
@@ -192,7 +192,7 @@ Right now, this DLL doesn't do very much. Next, you create a header file to decl
   
 This header file declares some functions to produce a generalized Fibonacci sequence, given two initial values. A call to `fibonacci_init(1, 1)` generates the familiar Fibonacci number sequence.  
   
-Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds ***PROJECTNAME*\_EXPORTS** to the defined preprocessor macros for the DLL project. In this example, Visual Studio defines **MATHLIBRARY\_EXPORTS** when your MathLibrary DLL project is built. (The wizard in Visual Studio 2017 Update 15.3 does not force this symbol definition to upper case. If you name your project "MathLibrary" then the symbol defined is MathLibrary\_EXPORTS instead of MATHLIBRARY_EXPORTS. That's why there are extra steps above to add this symbol.)  
+Notice the preprocessor statements at the top of the file. By default, the New Project template for a DLL adds ***PROJECTNAME*\_EXPORTS** to the defined preprocessor macros for the DLL project. In this example, Visual Studio defines **MATHLIBRARY\_EXPORTS** when your MathLibrary DLL project is built. (The wizard in Visual Studio 2017 version 15.3 does not force this symbol definition to upper case. If you name your project "MathLibrary" then the symbol defined is MathLibrary\_EXPORTS instead of MATHLIBRARY_EXPORTS. That's why there are extra steps above to add this symbol.)  
   
 When the **MATHLIBRARY\_EXPORTS** macro is defined, the **MATHLIBRARY\_API** macro sets the `__declspec(dllexport)` modifier on the function declarations. This modifier tells the compiler and linker to export a function or variable from the DLL so that it can be used by other applications. When **MATHLIBRARY\_EXPORTS** is undefined, for example, when the header file is included by a client application, **MATHLIBRARY\_API** applies the `__declspec(dllimport)` modifier to the declarations. This modifier optimizes the import of the function or variable in an application. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).  
   
@@ -283,7 +283,7 @@ When you create a DLL, you must think about how your DLL can be used. To compile
   
 To make use of a DLL, whether your own or a third-party DLL, your client app project must be able to find the headers that declare the DLL exports, the import libraries for the linker, and the DLL itself. One way to do this is to copy all of these files into your client project. For third-party DLLs that are unlikely to change while your client is in development, this may be the best way to use them. However, when you also build the DLL, it's better to avoid duplication. If you make a copy of DLL files that are under development, you may accidentally change a header file in one copy but not the other, or use an out of date library. To avoid this problem, we recommend you set the include path in your client project to include the DLL header files from the DLL project. Also, set the library path in your client project to include the DLL import libraries from the DLL project. And finally, copy the built DLL from the DLL project into your build output directory. This ensures that your client app uses the same DLL code you build.  
   
-### To create a client app in Visual Studio 2017 Update 15.3  
+### To create a client app in Visual Studio 2017 version 15.3  
   
 1. To create a C++ app that uses the DLL that you just created, on the menu bar, choose **File**, **New**, **Project**.  
   
