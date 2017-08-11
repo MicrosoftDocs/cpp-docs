@@ -90,7 +90,7 @@ In its version of the `WinMain` function, MFC registers several standard window 
   
 ### What do you want to know more about  
   
--   [Windows styles](../mfc/reference/window-styles.md)  
+-   [Windows styles](../mfc/reference/styles-used-by-mfc.md#window-styles)  
   
 -   [Frame-window styles](../mfc/frame-window-styles-cpp.md)  
   

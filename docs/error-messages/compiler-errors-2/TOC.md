@@ -684,6 +684,7 @@
 ## [Compiler Error C3418](compiler-error-c3418.md)
 ## [Compiler Error C3420](compiler-error-c3420.md)
 ## [Compiler Error C3421](compiler-error-c3421.md)
+## [Compiler Error C3446](compiler-error-c3446.md)
 ## [Compiler Error C3450](compiler-error-c3450.md)
 ## [Compiler Error C3451](compiler-error-c3451.md)
 ## [Compiler Error C3452](compiler-error-c3452.md)

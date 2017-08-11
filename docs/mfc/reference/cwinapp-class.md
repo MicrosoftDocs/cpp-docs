@@ -356,7 +356,7 @@ virtual int DoMessageBox(
  Address of text in the message box.  
   
  `nType`  
- The message box [style](../../mfc/reference/message-box-styles.md).  
+ The message box [style](../../mfc/reference/styles-used-by-mfc.md#message-box-styles).  
   
  `nIDPrompt`  
  An index to a Help context string.  

@@ -110,7 +110,7 @@ virtual BOOL Create(
  Specifies the text to place in the control. If **NULL**, no text will be visible.  
   
  `dwStyle`  
- Specifies the static control's window style. Apply any combination of [static control styles](../../mfc/reference/static-styles.md) to the control.  
+ Specifies the static control's window style. Apply any combination of [static control styles](../../mfc/reference/styles-used-by-mfc.md#static-styles) to the control.  
   
  `rect`  
  Specifies the position and size of the static control. It can be either a `RECT` structure or a `CRect` object.  
@@ -127,7 +127,7 @@ virtual BOOL Create(
 ### Remarks  
  Construct a `CStatic` object in two steps. First, call the constructor `CStatic`, and then call **Create**, which creates the Windows static control and attaches it to the `CStatic` object.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to a static control:  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a static control:  
   
 - **WS_CHILD** Always  
   
@@ -135,7 +135,7 @@ virtual BOOL Create(
   
 - **WS_DISABLED** Rarely  
   
- If you're going to display a bitmap, cursor, icon, or metafile in the static control, you'll need to apply one of the following [static styles](../../mfc/reference/static-styles.md):  
+ If you're going to display a bitmap, cursor, icon, or metafile in the static control, you'll need to apply one of the following [static styles](../../mfc/reference/styles-used-by-mfc.md#static-styles):  
   
 - **SS_BITMAP** Use this style for bitmaps.  
   

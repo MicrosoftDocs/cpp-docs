@@ -56,11 +56,11 @@ With both implicit and explicit linking, Windows first searches for "known DLLs"
   
 ## What do you want to do?  
   
--   [Link implicitly](../build/linking-implicitly.md)  
+-   [How to link implicitly to a DLL](../build/linking-an-executable-to-a-dll.md#linking-implicitly)  
   
--   [Link explicitly](../build/linking-explicitly.md)  
+-   [How to link explicitly to a DLL](../build/linking-an-executable-to-a-dll.md#linking-explicitly)  
   
--   [Determine which linking method to use](../build/determining-which-linking-method-to-use.md)  
+-   [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)  
   
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

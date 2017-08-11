@@ -108,7 +108,7 @@ virtual BOOL Create(
   
 ### Parameters  
  `dwStyle`  
- Specifies the scroll bar's style. Apply any combination of [scroll-bar styles](../../mfc/reference/scroll-bar-styles.md) to the scroll bar.  
+ Specifies the scroll bar's style. Apply any combination of [scroll-bar styles](../../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles) to the scroll bar.  
   
  `rect`  
  Specifies the scroll bar's size and position. Can be either a `RECT` structure or a `CRect` object.  
@@ -125,7 +125,7 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CScrollBar` object in two steps. First, call the constructor, which constructs the `CScrollBar` object; then call **Create**, which creates and initializes the associated Windows scroll bar and attaches it to the `CScrollBar` object.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to a scroll bar:  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a scroll bar:  
   
 - **WS_CHILD** Always  
   

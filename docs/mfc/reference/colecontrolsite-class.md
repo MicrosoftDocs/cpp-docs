@@ -456,7 +456,7 @@ virtual DWORD GetStyle() const;
  The window's styles.  
   
 ### Remarks  
- For a list of possible values, see [Windows Styles](../../mfc/reference/window-styles.md). To retrieve the extended styles of the control site, call [COleControlSite::GetExStyle](#getexstyle).  
+ For a list of possible values, see [Windows Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). To retrieve the extended styles of the control site, call [COleControlSite::GetExStyle](#getexstyle).  
   
 ##  <a name="getwindowtext"></a>  COleControlSite::GetWindowText  
  Retrieves the current text of the control.  
@@ -872,7 +872,8 @@ virtual int SetDlgCtrlID(int nID);
   
 ```  
 virtual CWnd* SetFocus();  
-virtual CWnd* SetFocus(LPMSG lpmsg);```  
+virtual CWnd* SetFocus(LPMSG lpmsg);
+```  
   
 ### Parameters  
  *lpmsg*  
