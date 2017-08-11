@@ -166,6 +166,8 @@ The Microsoft C Runtime library (CRT) provides many floating point math library 
   
  [_gcvt_s](../c-runtime-library/reference/gcvt-s.md)  
   
+ [_get_FMA3_enable, _set_FMA3_enable](../c-runtime-library/reference/get-fma3-enable-set-fma3-enable.md)  
+  
  [hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl](../c-runtime-library/reference/hypot-hypotf-hypotl-hypot-hypotf-hypotl.md)  
   
  [ilogb, ilogbf, ilogbl](../c-runtime-library/reference/ilogb-ilogbf-ilogbl2.md)  

@@ -324,7 +324,7 @@ virtual BOOL Create(
   
 ### Parameters  
  [in] `dwStyle`  
- A bitwise combination (OR) of [window styles](../../mfc/reference/window-styles.md).  
+ A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `rect`  
  A bounding rectangle that specifies the size and position of the window, in client coordinates of `pParentWnd`.  

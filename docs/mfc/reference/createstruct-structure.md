@@ -91,7 +91,7 @@ typedef struct tagCREATESTRUCT {
  Points to a null-terminated string that specifies the new window's Windows class name (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure; for more information, see the Windows SDK).  
   
  `dwExStyle`  
- Specifies the [extended style](../../mfc/reference/extended-window-styles.md) for the new window.  
+ Specifies the [extended style](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) for the new window.  
   
 ## Requirements  
  **Header:** winuser.h  
