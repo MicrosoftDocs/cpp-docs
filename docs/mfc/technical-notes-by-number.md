@@ -43,7 +43,7 @@ The technical notes below are listed numerically, with the most recently written
 |66|[Common MFC 3.x to 4.0 Porting Issues](../mfc/tn066-common-mfc-3-x-to-4-0-porting-issues.md)|  
 |65|[Dual-Interface Support for OLE Automation Servers](../mfc/tn065-dual-interface-support-for-ole-automation-servers.md)|  
 |64|[Apartment-Model Threading in OLE Controls](../mfc/tn064-apartment-model-threading-in-activex-controls.md)|  
-|63|[Debugging Internet Extension DLLs](../mfc/tn063-debugging-internet-extension-dlls.md)|  
+|63|[Debugging Internet MFC extension DLLs](../mfc/tn063-debugging-internet-extension-dlls.md)|  
 |62|[Message Reflection for Windows Controls](../mfc/tn062-message-reflection-for-windows-controls.md)|  
 |61|[ON_NOTIFY and WM_NOTIFY Messages](../mfc/tn061-on-notify-and-wm-notify-messages.md)|  
 |60|[Windows Common Controls](../mfc/tn060-the-new-windows-common-controls.md)|  

@@ -277,6 +277,7 @@
 ## [_get_doserrno](get-doserrno.md)
 ## [_get_dstbias](get-dstbias.md)
 ## [_get_errno](get-errno.md)
+## [_get_FMA3_enable, _set_FMA3_enable](get-fma3-enable-set-fma3-enable.md)
 ## [_get_fmode](get-fmode.md)
 ## [_get_heap_handle](get-heap-handle.md)
 ## [_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)

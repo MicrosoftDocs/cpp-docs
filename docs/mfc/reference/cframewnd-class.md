@@ -237,7 +237,7 @@ virtual BOOL Create(
  Points to a null-terminated character string that represents the window name. Used as text for the title bar.  
   
  `dwStyle`  
- Specifies the window [style](../../mfc/reference/window-styles.md) attributes. Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
+ Specifies the window [style](../../mfc/reference/styles-used-by-mfc.md#window-styles) attributes. Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
   
  `rect`  
  Specifies the size and position of the window. The `rectDefault` value allows Windows to specify the size and position of the new window.  
@@ -249,7 +249,7 @@ virtual BOOL Create(
  Identifies the name of the menu resource to be used with the window. Use **MAKEINTRESOURCE** if the menu has an integer ID instead of a string. This parameter can be **NULL**.  
   
  `dwExStyle`  
- Specifies the window extended [style](../../mfc/reference/extended-window-styles.md) attributes.  
+ Specifies the window extended [style](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) attributes.  
   
  `pContext`  
  Specifies a pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure. This parameter can be **NULL**.  
@@ -629,7 +629,7 @@ virtual BOOL LoadFrame(
  The ID of shared resources associated with the frame window.  
   
  *dwDefaultStyle*  
- The frame's [style](../../mfc/reference/window-styles.md). Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
+ The frame's [style](../../mfc/reference/styles-used-by-mfc.md#window-styles). Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
   
  `pParentWnd`  
  A pointer to the frame's parent.  
