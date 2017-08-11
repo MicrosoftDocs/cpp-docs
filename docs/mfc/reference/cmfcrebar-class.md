@@ -138,7 +138,7 @@ BOOL Create(
  Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK documentation.  
   
  [in] `dwStyle`  
- The window style of the rebar control. For a list of valid styles, see [Window Styles](../../mfc/reference/window-styles.md).  
+ The window style of the rebar control. For a list of valid styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `nID`  
  The rebar's child-window ID.  

@@ -44,6 +44,6 @@ Your project can link with the CRT either dynamically or statically. The table b
   
 ## See Also  
  [Programming with ATL and C Run-Time Code](../atl/programming-with-atl-and-c-run-time-code.md)   
- [Run-Time Library Behavior](../build/run-time-library-behavior.md)   
+ [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)   
  [CRT Library Features](../c-runtime-library/crt-library-features.md)
 

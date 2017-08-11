@@ -1041,7 +1041,7 @@ virtual BOOL Create(
  Pointer to a null-terminated string that contains the window display name; otherwise `NULL` for no window display name.  
   
  [in] `dwStyle`  
- Bitwise combination (OR) of [window styles](../../mfc/reference/window-styles.md). The `WS_POPUP` option is not a valid style.  
+ Bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). The `WS_POPUP` option is not a valid style.  
   
  [in] `rect`  
  The size and location of the window relative to the top-left corner of the parent window.  
@@ -1250,7 +1250,7 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  `dwExStyle`  
- Bitwise combination (OR) of [extended window styles](../../mfc/reference/extended-window-styles.md); otherwise `NULL` for the default extended window style.  
+ Bitwise combination (OR) of [extended window styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles); otherwise `NULL` for the default extended window style.  
   
  `lpszClassName`  
  Pointer to a null-terminated string that contains the name of a registered system window class; or the name of a predefined system window class.  
@@ -1259,7 +1259,7 @@ virtual BOOL CreateEx(
  Pointer to a null-terminated string that contains the window display name; otherwise `NULL` for no window display name.  
   
  `dwStyle`  
- Bitwise combination (OR) of [window styles](../../mfc/reference/window-styles.md); otherwise `NULL` for the default window style.  
+ Bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles); otherwise `NULL` for the default window style.  
   
  `x`  
  The initial horizontal distance of the window from the left side of the screen or the parent window.  
@@ -1458,7 +1458,7 @@ virtual BOOL DestroyWindow();
   
  The `DestroyWindow` member function also destroys modeless dialog boxes created by [CDialog::Create](../../mfc/reference/cdialog-class.md#create).  
   
- If the `CWnd` being destroyed is a child window and does not have the [WS_EX_NOPARENTNOTIFY](../../mfc/reference/extended-window-styles.md) style set, then the [WM_PARENTNOTIFY ](https://msdn.microsoft.com/library/ms632638.aspx)       message is sent to the parent.  
+ If the `CWnd` being destroyed is a child window and does not have the [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) style set, then the [WM_PARENTNOTIFY ](https://msdn.microsoft.com/library/ms632638.aspx)       message is sent to the parent.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#87](../../mfc/reference/codesnippet/cpp/cwnd-class_26.cpp)]  
@@ -2011,7 +2011,7 @@ BOOL ExecuteDlgInit(LPVOID lpResource);
  **TRUE** if a dialog resource is executed; otherwise **FALSE**.  
   
 ### Remarks  
- `ExecuteDlgInit` will use resources bound to the executing module, or resources from other sources. To accomplish this, `ExecuteDlgInit` finds a resource handle by calling `AfxFindResourceHandle`. If your MFC application does not use the shared DLL (MFCx0[U][D].DLL), **AfxFindResourceHandle** calls [AfxGetResourceHandle](application-information-and-management.md#afxgetresourcehandle), which returns the current resource handle for the executable. If your MFC application that uses MFCx0[U][D].DLL, `AfxFindResourceHandle` traverses the **CDynLinkLibrary** object list of shared and extension DLLs looking for the correct resource handle.  
+ `ExecuteDlgInit` will use resources bound to the executing module, or resources from other sources. To accomplish this, `ExecuteDlgInit` finds a resource handle by calling `AfxFindResourceHandle`. If your MFC application does not use the shared DLL (MFCx0[U][D].DLL), **AfxFindResourceHandle** calls [AfxGetResourceHandle](application-information-and-management.md#afxgetresourcehandle), which returns the current resource handle for the executable. If your MFC application that uses MFCx0[U][D].DLL, `AfxFindResourceHandle` traverses the **CDynLinkLibrary** object list of shared and MFC extension DLLs looking for the correct resource handle.  
   
 ##  <a name="filtertooltipmessage"></a>  CWnd::FilterToolTipMessage  
  Called by the framework to display tool tip messages.  
@@ -2936,7 +2936,7 @@ DWORD GetExStyle() const;
 ```  
   
 ### Return Value  
- The window's extended style. For more information about the extended window styles used in MFC, see [Extended Window Styles](../../mfc/reference/extended-window-styles.md).  
+ The window's extended style. For more information about the extended window styles used in MFC, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
   
 ##  <a name="getfocus"></a>  CWnd::GetFocus  
  Retrieves a pointer to the `CWnd` that currently has the input focus.  
@@ -3109,7 +3109,7 @@ COleControlSiteOrWnd* GetNextDlgGroupItem(
  The returned pointer may be temporary and should not be stored for later use.  
   
 ### Remarks  
- A group of controls begins with a control that was created with the [WS_GROUP](../../mfc/reference/window-styles.md) style and ends with the last control that was not created with the **WS_GROUP** style.  
+ A group of controls begins with a control that was created with the [WS_GROUP](../../mfc/reference/styles-used-by-mfc.md#window-styles) style and ends with the last control that was not created with the **WS_GROUP** style.  
   
  By default, the `GetNextDlgGroupItem` member function returns a pointer to the next control in the group. If `pWndCtl` identifies the first control in the group and `bPrevious` is **TRUE**, `GetNextDlgGroupItem` returns a pointer to the last control in the group.  
   
@@ -3481,7 +3481,7 @@ DWORD GetStyle() const;
 ```  
   
 ### Return Value  
- The window's style. For more information about the window styles used in MFC, see [Window Styles](../../mfc/reference/window-styles.md).  
+ The window's style. For more information about the window styles used in MFC, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
 ##  <a name="getsystemmenu"></a>  CWnd::GetSystemMenu  
  Allows the application to access the Control menu for copying and modification.  
@@ -4160,7 +4160,7 @@ BOOL IsWindowVisible() const;
 ```  
   
 ### Return Value  
- Nonzero if `CWnd` is visible (has the [WS_VISIBLE](../../mfc/reference/window-styles.md) style bit set, and parent window is visible). Because the return value reflects the state of the **WS_VISIBLE** style bit, the return value may be nonzero even though `CWnd` is totally obscured by other windows.  
+ Nonzero if `CWnd` is visible (has the [WS_VISIBLE](../../mfc/reference/styles-used-by-mfc.md#window-styles) style bit set, and parent window is visible). Because the return value reflects the state of the **WS_VISIBLE** style bit, the return value may be nonzero even though `CWnd` is totally obscured by other windows.  
   
 ### Remarks  
  A window possesses a visibility state indicated by the **WS_VISIBLE** style bit. When this style bit is set with a call to the [ShowWindow](#showwindow) member function, the window is displayed and subsequent drawing to the window is displayed as long as the window has the style bit set.  
@@ -4234,7 +4234,7 @@ BOOL LockWindowUpdate();
   
  While window updates are locked, the system keeps track of the bounding rectangle of any drawing operations to device contexts associated with a locked window. When drawing is reenabled, this bounding rectangle is invalidated in the locked window and its child windows to force an eventual [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message to update the screen. If no drawing has occurred while the window updates were locked, no area is invalidated.  
   
- The `LockWindowUpdate` member function does not make the given window invisible and does not clear the [WS_VISIBLE](../../mfc/reference/window-styles.md) style bit.  
+ The `LockWindowUpdate` member function does not make the given window invisible and does not clear the [WS_VISIBLE](../../mfc/reference/styles-used-by-mfc.md#window-styles) style bit.  
   
 ##  <a name="m_hwnd"></a>  CWnd::m_hWnd  
  The handle of the Windows window attached to this `CWnd`.  
@@ -4274,7 +4274,7 @@ void MapWindowPoints(
  Specifies the number of **POINT** structures in the array pointed to by `lpPoint`.  
   
 ##  <a name="messagebox"></a>  CWnd::MessageBox  
- Creates and displays a window that contains an application-supplied message and caption, plus a combination of the predefined icons and pushbuttons described in the [Message-Box Styles](../../mfc/reference/message-box-styles.md) list.  
+ Creates and displays a window that contains an application-supplied message and caption, plus a combination of the predefined icons and pushbuttons described in the [Message-Box Styles](../../mfc/reference/styles-used-by-mfc.md#message-box-styles) list.  
   
 ```  
 int MessageBox(
@@ -4379,7 +4379,7 @@ BOOL ModifyStyleEx(
  Nonzero if style was successfully modified; otherwise, 0.  
   
 ### Remarks  
- Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Extended Window Styles](../../mfc/reference/extended-window-styles.md) in this book and [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK for information about the available extended styles  
+ Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) in this book and [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK for information about the available extended styles  
   
  If `nFlags` is nonzero, `ModifyStyleEx` calls the Windows API function [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) and redraws the window by combining `nFlags` with the following four preset flags:  
   
@@ -4719,7 +4719,7 @@ afx_msg void OnChar(
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
   
 ##  <a name="onchartoitem"></a>  CWnd::OnCharToItem  
- Called when a list box with the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/list-box-styles.md) style sends its owner a [WM_CHARTOITEM](http://msdn.microsoft.com/library/windows/desktop/bb761358) message in response to a [WM_CHAR](#onchar) message.  
+ Called when a list box with the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style sends its owner a [WM_CHARTOITEM](http://msdn.microsoft.com/library/windows/desktop/bb761358) message in response to a [WM_CHAR](#onchar) message.  
   
 ```  
 afx_msg int OnCharToItem(
@@ -4898,7 +4898,7 @@ afx_msg int OnCompareItem(
 |1|Item 1 sorts after item 2.|  
   
 ### Remarks  
- If a combo or list box is created with the [CBS_SORT](../../mfc/reference/combo-box-styles.md) or [LBS_SORT](../../mfc/reference/list-box-styles.md) style, Windows sends the combo-box or list-box owner a `WM_COMPAREITEM` message whenever the application adds a new item.  
+ If a combo or list box is created with the [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) or [LBS_SORT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, Windows sends the combo-box or list-box owner a `WM_COMPAREITEM` message whenever the application adds a new item.  
   
  Two items in the combo or list box are reformed in a `COMPAREITEMSTRUCT` structure pointed to by `lpCompareItemStruct`. `OnCompareItem` should return a value that indicates which of the items should appear before the other. Typically, Windows makes this call several times until it determines the exact position for the new item.  
   
@@ -5292,7 +5292,7 @@ afx_msg void OnEnable(BOOL bEnable);
  Specifies whether the `CWnd` object has been enabled or disabled. This parameter is **TRUE** if the `CWnd` has been enabled; it is **FALSE** if the `CWnd` has been disabled.  
   
 ### Remarks  
- `OnEnable` is called before the [EnableWindow](#enablewindow) member function returns, but after the window enabled state ( [WS_DISABLED](../../mfc/reference/window-styles.md) style bit) has changed.  
+ `OnEnable` is called before the [EnableWindow](#enablewindow) member function returns, but after the window enabled state ( [WS_DISABLED](../../mfc/reference/styles-used-by-mfc.md#window-styles) style bit) has changed.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -6128,7 +6128,7 @@ afx_msg void OnMeasureItem(
 ### Remarks  
  Override this member function and fill in the `MEASUREITEMSTRUCT` data structure pointed to by `lpMeasureItemStruct` and return; this informs Windows of the dimensions of the control and allows Windows to process user interaction with the control correctly.  
   
- If a list box or combo box is created with the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/list-box-styles.md) or [CBS_OWNERDRAWVARIABLE](../../mfc/reference/combo-box-styles.md) style, the framework calls this function for the owner for each item in the control; otherwise this function is called once.  
+ If a list box or combo box is created with the [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) or [CBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, the framework calls this function for the owner for each item in the control; otherwise this function is called once.  
   
  Windows initiates the call to `OnMeasureItem` for the owner of combo boxes and list boxes created with the **OWNERDRAWFIXED** style before sending the [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) message. As a result, when the owner receives this call, Windows has not yet determined the height and width of the font used in the control; function calls and calculations that require these values should occur in the main function of the application or library.  
   
@@ -7175,7 +7175,7 @@ afx_msg void OnParentNotify(
   
  `OnParentNotify` is called for all ancestor windows of the child window, including the top-level window.  
   
- All child windows except those that have the [WS_EX_NOPARENTNOTIFY](../../mfc/reference/extended-window-styles.md) style send this message to their parent windows. By default, child windows in a dialog box have the **WS_EX_NOPARENTNOTIFY** style unless the child window was created without this style by calling the [CreateEx](#createex) member function.  
+ All child windows except those that have the [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) style send this message to their parent windows. By default, child windows in a dialog box have the **WS_EX_NOPARENTNOTIFY** style unless the child window was created without this style by calling the [CreateEx](#createex) member function.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -8227,7 +8227,7 @@ afx_msg void OnUserChanged();
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
   
 ##  <a name="onvkeytoitem"></a>  CWnd::OnVKeyToItem  
- If the `CWnd` object owns a list box with the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/list-box-styles.md) style, the list box will send the `WM_VKEYTOITEM` message in response to a `WM_KEYDOWN` message.  
+ If the `CWnd` object owns a list box with the [LBS_WANTKEYBOARDINPUT](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style, the list box will send the `WM_VKEYTOITEM` message in response to a `WM_KEYDOWN` message.  
   
 ```  
 afx_msg int OnVKeyToItem(
@@ -8250,7 +8250,7 @@ afx_msg int OnVKeyToItem(
  Specifies the action that the application performed in response to the message. A return value of -2 indicates that the application handled all aspects of selecting the item and requires no further action by the list box. A return value of -1 indicates that the list box should perform the default action in response to the keystroke. A return value of 0 or greater specifies the zero-based index of an item in the list box and indicates that the list box should perform the default action for the keystroke on the given item.  
   
 ### Remarks  
- This member function is called by the framework only for list boxes that have the [LBS_HASSTRINGS](../../mfc/reference/list-box-styles.md) style.  
+ This member function is called by the framework only for list boxes that have the [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
@@ -8393,7 +8393,7 @@ afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
 ### Remarks  
  An application can prevent changes to the window by setting or clearing the appropriate bits in the **flags** member of the [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) structure.  
   
- For a window with the [WS_OVERLAPPED](../../mfc/reference/window-styles.md) or [WS_THICKFRAME](../../mfc/reference/window-styles.md) style, the default implementation sends a [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) message to the window. This is done to validate the new size and position of the window and to enforce the **CS_BYTEALIGNCLIENT** and **CS_BYTEALIGN** client styles. An application can override this functionality by not calling its base class.  
+ For a window with the [WS_OVERLAPPED](../../mfc/reference/styles-used-by-mfc.md#window-styles) or [WS_THICKFRAME](../../mfc/reference/styles-used-by-mfc.md#window-styles) style, the default implementation sends a [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) message to the window. This is done to validate the new size and position of the window and to enforce the **CS_BYTEALIGNCLIENT** and **CS_BYTEALIGN** client styles. An application can override this functionality by not calling its base class.  
   
 > [!NOTE]
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  

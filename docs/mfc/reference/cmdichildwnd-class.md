@@ -146,7 +146,7 @@ virtual BOOL Create(
  Points to a null-terminated character string that represents the window name. Used as text for the title bar.  
   
  `dwStyle`  
- Specifies the window [style](../../mfc/reference/window-styles.md) attributes. The **WS_CHILD** style is required.  
+ Specifies the window [style](../../mfc/reference/styles-used-by-mfc.md#window-styles) attributes. The **WS_CHILD** style is required.  
   
  `rect`  
  Contains the size and position of the window. The `rectDefault` value allows Windows to specify the size and position of the new `CMDIChildWnd`.  

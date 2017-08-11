@@ -214,7 +214,7 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [Classes](../../mfc/reference/mfc-classes.md)   
  [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)   
- [Window Styles](../../mfc/reference/window-styles.md)
+ [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles)
 
 
 

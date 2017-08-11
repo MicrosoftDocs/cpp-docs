@@ -240,7 +240,7 @@ virtual BOOL Create(
  Specifies the parent window of the Outlook bar pane control. Must not be `NULL`.  
   
  [in] `dwStyle`  
- The window style.  For a list of window styles, see [Window Styles](../../mfc/reference/window-styles.md).  
+ The window style.  For a list of window styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `uiID`  
  The control ID. Must be unique to enable saving of the control's state.  

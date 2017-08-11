@@ -376,7 +376,7 @@ virtual BOOL Create(
  Pointer to the parent window.  
   
  [in] `dwStyle`  
- A bitwise combination (OR) of [window styles](../../mfc/reference/window-styles.md).  
+ A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `nID`  
  The command ID.  

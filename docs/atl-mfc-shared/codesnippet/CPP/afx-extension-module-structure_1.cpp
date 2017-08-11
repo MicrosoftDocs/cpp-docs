@@ -9,6 +9,6 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 	{
 		TRACE0("NVC_MFC_DLL.DLL Initializing!\n");
 		
-		// Extension DLL one-time initialization
+		// MFC extension DLL one-time initialization
 		if (!AfxInitExtensionModule(NVC_MFC_DLLDLL, hInstance))
 			return 0;

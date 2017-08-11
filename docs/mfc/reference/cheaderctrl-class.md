@@ -206,7 +206,7 @@ virtual BOOL Create(
   
 - `CCS_TOP` Causes the control to position itself at the top of the parent window's client area and sets the width to be the same as the parent window's width.  
   
- You can also apply the following window styles to a header control (see [Window Styles](../../mfc/reference/window-styles.md) for more information):  
+ You can also apply the following window styles to a header control (see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) for more information):  
   
 - **WS_CHILD** Creates a child window. Cannot be used with the `WS_POPUP` style.  
   

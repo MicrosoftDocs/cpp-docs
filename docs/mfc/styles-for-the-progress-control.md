@@ -60,7 +60,7 @@ When you initially create the progress control ([CProgressCtrl::Create](../mfc/r
   
  ![Progress bar style, smooth and vertical](../mfc/media/vc4ruw2.gif "vc4ruw2")  
   
- For more information, see [Window Styles](../mfc/reference/frame-window-styles-mfc.md) in the *MFC Reference*.  
+ For more information, see [Window Styles](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) in the *MFC Reference*.  
   
 ## See Also  
  [Using CProgressCtrl](../mfc/using-cprogressctrl.md)

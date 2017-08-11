@@ -338,7 +338,7 @@ virtual BOOL Create(
  Specifies the name of the Windows class.  
   
  [in] `dwStyle`  
- Specifies the window style attributes. For more information, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Specifies the window style attributes. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `rect`  
  Specifies the initial size and position of the `pParentWnd` window, in client coordinates.  
@@ -399,13 +399,13 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  [in] `dwStyleEx`  
- Specifies extended window style attributes. For more information, see [Extended Window Styles](../../mfc/reference/extended-window-styles.md).  
+ Specifies extended window style attributes. For more information, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).  
   
  [in] `lpszClassName`  
  Specifies the name of the Windows class.  
   
  [in] `dwStyle`  
- Specifies window style attributes. For more information, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Specifies window style attributes. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `rect`  
  Specifies the initial size and position of the `pParentWnd` window, in client coordinates.  
