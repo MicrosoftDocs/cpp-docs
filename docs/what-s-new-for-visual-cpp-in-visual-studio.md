@@ -91,7 +91,98 @@ This release brings several improvements in optimization, code generation, tools
 * To increase compiler throughput, C++ Standard Library headers now avoid including declarations for unnecessary compiler intrinsics.
 * Slightly improved compiler diagnostics for incorrect bind() calls.
 * Improved the performance of std::string/std::wstring's move constructors by more than 3x
-* For a complete list of STL improvment see the [STL Fixes In VS 2017 RTM](https://blogs.msdn.microsoft.com/vcblog/2017/02/06/stl-fixes-in-vs-2017-rtm/).
+* For a complete list of Standard Library improvments see the [Standard Library Fixes In VS 2017 RTM](https://blogs.msdn.microsoft.com/vcblog/2017/02/06/stl-fixes-in-vs-2017-rtm/).
+
+#### Visual Studio 2017 version 15.3
+
+##### C++17 features
+* …	Boyer-Moore search()	
+* [P0031R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0031r0.html) constexpr For <array> (Again) And <iterator>	
+* [P0040R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0040r3.html) Extending Memory Management Tools	
+* [P0084R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0084r2.pdf) Emplace Return Type	
+* [P0152R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0152r1.html) atomic::is_always_lock_free	
+* [P0154R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0154r1.html) hardware_destructive_interference_size, etc.	
+* [P0156R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0156r2.html) scoped_lock	
+* [P0253R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0253r1.pdf) Fixing Searcher Return Types	
+* [P0258R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0258r2.html) has_unique_object_representations	[obj_rep]
+* [P0295R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0295r0.pdf) gcd(), lcm()	
+* [P0298R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0298r3.pdf) std::byte	[byte]
+* [P0403R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0403r1.html) UDLs For <string_view> ("meow"sv, etc.)	
+* [P0418R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0418r2.html) atomic compare_exchange memory_order Requirements
+* [P0435R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0435r1.pdf) Overhauling common_type
+* [P0505R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0505r0.html) constexpr For <chrono> (Again)	
+* [P0513R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0513r0.pdf) Poisoning hash
+* [P0516R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0516r0.html) Marking shared_future Copying As noexcept
+* [P0517R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0517r0.html) Constructing future_error From future_errc
+* [P0548R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0548r1.pdf) Tweaking common_type And duration
+* [P0558R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0558r1.pdf) Resolving atomic<T> Named Base Class Inconsistencies	[atomic] 
+* [P0599R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0599r1.pdf) noexcept hash
+* [P0604R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0604r0.html) invoke_result, is_invocable, is_nothrow_invocable	[depr]
+
+##### Other new features
+* The Standard Library no longer depends on Magic Statics, allowing clean use in code compiled with /Zc:threadSafeInit-.
+* Implemented P0602R0 "variant and optional should propagate copy/move triviality".
+* The Standard Library now officially tolerates dynamic RTTI being disabled via /GR-. dynamic_pointer_cast() and rethrow_if_nested() inherently require dynamic_cast, so the Standard Library now marks them as =delete under /GR-.
+* Even when dynamic RTTI has been disabled via /GR-, "static RTTI" (in the form of typeid(SomeType)) is still available and powers several Standard Library components. The Standard Library now supports disabling this too, via /D_HAS_STATIC_RTTI=0. *Note that this will disable std::any, std::function's target() and target_type(), and shared_ptr's get_deleter().*
+
+##### Correctness Fixes
+* Standard Library containers now clamp their max_size() to numeric_limits<difference_type>::max() rather than size_type's max. This ensures that the result of distance() on iterators from that container is representable in the return type of distance().
+* Fixed missing specialization auto_ptr<void>.
+* The meow_n() algorithms previously failed to compile if the length argument was not an integral type; they now attempt to convert non-integral lengths to the iterators' difference_type.
+* normal_distribution<float> no longer emits warnings inside the Standard Library about narrowing from double to float.
+* Fixed some basic_string operations which were comparing with npos instead of max_size() when checking for maximum size overflow.
+* condition_variable::wait_for(lock, relative_time, predicate) would wait for the entire relative time in the event of a spurious wake. Now, it will wait for only a single interval of the relative time.
+* future::get() now invalidates the future, as the standard requires.
+* iterator_traits<void *> used to be a hard error because it attempted to form void&; it now cleanly becomes an empty struct to allow use of iterator_traits in "is iterator" SFINAE conditions.
+* Some warnings reported by Clang -Wsystem-headers were fixed.
+* Also fixed "exception specification in declaration does not match previous declaration" reported by Clang -Wmicrosoft-exception-spec.
+* Also fixed mem-initializer-list ordering warnings reported by Clang and C1XX.
+* The unordered containers did not swap their hashers or predicates when the containers themselves were swapped. Now they do.
+* Many container swap operations are now marked noexcept (as our Standard Library never intends to throw an exception when detecting the non-propagate_on_container_swap non-equal-allocator undefined behavior condition).
+* Many vector<bool> operations are now marked noexcept.
+* The Standard Library will now enforce matching allocator value_types (in C++17 mode) with an opt-out escape hatch.
+* Fixed some conditions where self-range-insert into basic_strings would scramble the strings' contents. (Note: self-range-insert into vectors is still prohibited by the Standard.)
+* basic_string::shrink_to_fit() is no longer affected by the allocator's propagate_on_container_swap.
+* std::decay now handles abominable function types (i.e. function types that are cv-qualified and/or ref-qualified).
+* Changed include directives to use proper case sensitivity and forward slashes, improving portability.
+* Fixed warning C4061 "enumerator 'Meow' in switch of enum 'Kitten' is not explicitly handled by a case label". This warning is off-by-default and was fixed as an exception to the Standard Library's general policy for warnings. (The Standard Library is /W4 clean, but does not attempt to be /Wall clean. Many off-by-default warnings are extremely noisy and aren't intended to be used on a regular basis.)
+* Improved std::list's debug checks. List iterators now check operator->(), and list::unique() now marks iterators as invalidated.
+* Fixed uses-allocator metaprogramming in tuple.
+
+##### Performance/Throughput Fixes
+* Worked around interactions with noexcept which prevented inlining std::atomic's implementation into functions that use Structured Exception Handling (SEH).
+* Changed the Standard Library's internal _Deallocate() function to optimize into smaller code, allowing it to be inlined into more places.
+* Changed std::try_lock() to use pack expansion instead of recursion.
+* Improved std::lock()'s deadlock avoidance algorithm to use lock() operations instead of spinning on all the locks' try_lock()s.
+* Enabled the Named Return Value Optimization in system_category::message().
+* conjunction and disjunction now instantiate N + 1 types, instead of 2N + 2 types.
+* std::function no longer instantiates allocator support machinery for each type-erased callable, improving throughput and reducing .obj size in programs that pass many distinct lambdas to std::function.
+* allocator_traits<std::allocator> contains manually inlined std::allocator operations, reducing code size in code that interacts with std::allocator through allocator_traits only (i.e. most code).
+* The C++11 minimal allocator interface is now handled by the Standard Library calling allocator_traits directly, instead of wrapping the allocator in an internal class _Wrap_alloc. This reduces the code size generated for allocator support, improves the optimizer's ability to reason about Standard Library containers in some cases, and provides a better debugging experience (as now you see your allocator type, rather than _Wrap_alloc<your allocator type> in the debugger).
+* Removed metaprogramming for customized allocator::reference, which allocators aren't actually allowed to customize. (Allocators can make containers use fancy pointers but not fancy references.)
+* The compiler front-end was taught to unwrap debug iterators in range-based for-loops, improving the performance of debug builds.
+* basic_string's internal shrink path for shrink_to_fit() and reserve() is no longer in the path of reallocating operations, reducing code size for all mutating members.
+* basic_string's internal grow path is no longer in the path of shrink_to_fit().
+* basic_string's mutating operations are now factored into non-allocating fast path and allocating slow path functions, making it more likely for the common no-reallocate case to be inlined into callers.
+* basic_string's mutating operations now construct reallocated buffers in the desired state rather than resizing in place. For example, inserting at the beginning of a string now moves the content after the insertion exactly once (either down or to the newly allocated buffer), instead of twice in the reallocating case (to the newly allocated buffer and then down).
+* Operations calling the C standard library in <string> now cache errno's address to remove repeated interaction with TLS.
+* Simplified is_pointer's implementation.
+* Finished changing function-based Expression SFINAE to struct/void_t-based.
+* Standard Library algorithms now avoid postincrementing iterators.
+* Fixed truncation warnings when using 32-bit allocators on 64-bit systems.
+* std::vector move assignment is now more efficient in the non-POCMA non-equal-allocator case, by reusing the buffer when possible.
+
+##### Readability And Other Improvements
+* The Standard Library now uses C++14 constexpr unconditionally, instead of conditionally-defined macros.
+* The Standard Library now uses alias templates internally.
+* The Standard Library now uses nullptr internally, instead of nullptr_t{}. (Internal usage of NULL has been eradicated. Internal usage of 0-as-null is being cleaned up gradually.)
+* The Standard Library now uses std::move() internally, instead of stylistically misusing std::forward().
+* Changed static_assert(false, "message") to #error message. This improves compiler diagnostics because #error immediately stops compilation.
+* The Standard Library no longer marks functions as __declspec(dllimport). Modern linker technology no longer requires this.
+* Extracted SFINAE to default template arguments, which reduces clutter compared to return types and function argument types.
+* Debug checks in <random> now use the Standard Library's usual machinery, instead of the internal function _Rng_abort() which called fputs() to stderr. This function's implementation is being retained for binary compatibility, but has been removed in the next binary-incompatible version of the Standard Library.
+
+
 
 ### Open source library support  
 Vcpkg is an open-source command line tool that greatly simplifies the process of acquiring and building open source C++ static libs and DLLS in Visual Studio. For more information, see [vcpkg: A package manager for C++](vcpkg.md).
