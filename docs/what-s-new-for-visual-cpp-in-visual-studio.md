@@ -112,6 +112,12 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 * Configuration change performance is now better for C++ native projects and much better for C++/CLI projects. When a solution configuration is activated for the first time it will now be faster and all subsequent activations of this solution configuration will be almost instantaneous.
 
+**Visual Studio 2017 version 15.3**:
+* Several project and code wizards have been rewritten in the signature dialog style.
+* **Add Class** now launches the Add Class wizard directly. All of the other items that were previously here are now available under **Add > New Item**.
+* Win32 projects are now under the Windows Desktop category in the **New Project** dialog.
+* The Windows Console and Desktop Application templates now create the projects without displaying a wizard. There's a new Windows Desktop Wizard now under the same category that displays the same options as before.
+
 ### Intellisense  
 * The new SQLite-based database engine is now being used by default. This will speed up database operations like Go To Definition and Find All References, and will significantly improve initial solution parse time. The setting has been moved to Tools > Options > Text Editor > C/C++ > Advanced (it was formerly under ...C/C++ > Experimental).
 
@@ -139,6 +145,7 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 
 Some of these features are common to other languages, and some are specific to C++. For more information about these new features, see [Announcing Visual Studio “15”](https://blogs.msdn.microsoft.com/visualstudio/2016/10/05/announcing-visual-studio-15-preview-5/). 
 
+
 ### Support for non-MSBuild projects with Open Folder
 Visual Studio 2017 introduces the “Open Folder” feature, which enables you to code, build and debug in a folder containing source code without the need to create any solutions or projects. This makes it a lot simpler to get started with Visual Studio even if your project is not an MSBuild-based project. With “Open Folder” you get access to the powerful code understanding, editing, building and debugging capabilities that Visual Studio already provides for MSBuild projects. For more information, see [Open Folder projects in Visual C++](ide/non-msbuild-projects.md).
 
@@ -147,7 +154,10 @@ Visual Studio 2017 introduces the “Open Folder” feature, which enables you t
   -	Tasks.json to customize the build steps. 
   -	Launch.json to customize the debugging experience.
 
-**Visual Studio 2017 version 15.3**: Improved support for alternative compilers and build environments such as MinGW and Cygwin. For more information, see [Using MinGW and Cygwin with Visual C++ and Open Folder](https://blogs.msdn.microsoft.com/vcblog/2017/07/19/using-mingw-and-cygwin-with-visual-cpp-and-open-folder/).
+**Visual Studio 2017 version 15.3**: 
+* Improved support for alternative compilers and build environments such as MinGW and Cygwin. For more information, see [Using MinGW and Cygwin with Visual C++ and Open Folder](https://blogs.msdn.microsoft.com/vcblog/2017/07/19/using-mingw-and-cygwin-with-visual-cpp-and-open-folder/).
+* Added support to define global and configuration specific environment variables in "CppProperties.json" and "CMakeSettings.json". These environment variables can be consumed by debug configurations defined in "launch.vs.json" and tasks in "tasks.vs.json".
+* Improved support for CMake's Ninja generator, including the ability to easily target 64-bit platforms.
 
 ### CMake support via Open Folder
 Visual Studio 2017 introduces support for using CMake projects without converting to MSBuild project files (.vcxproj). For more information, see [CMake projects in Visual C++](ide/cmake-tools-for-visual-cpp.md). Opening CMake projects with “Open Folder” will automatically configure the environment for C++ editing, building and debugging.
