@@ -13,7 +13,8 @@ f1_keywords:
   - "#endif"
   - "#if"
   - "#elif"
-  - "Defined"
+  - "defined"
+  - "__has_include"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -111,7 +112,8 @@ The `#if` directive, with the `#elif`, `#else`, and `#endif` directives, control
 -   The translator can translate character constants to a set of code values different from the set for the target environment. To determine the properties of the target environment, check values of macros from LIMITS.H in an application built for the target environment.  
   
 -   The expression must not perform any environmental inquiries and must remain insulated from implementation details on the target computer.  
-  
+
+## defined  
  The preprocessor operator **defined** can be used in special constant expressions, as shown by the following syntax:  
   
  defined( `identifier` )  
@@ -190,6 +192,24 @@ class Example
 ```  
   
  The preceding code checks to see if the symbolic constant `EXAMPLE_H` is defined. If so, the file has already been included and need not be reprocessed. If not, the constant `EXAMPLE_H` is defined to mark EXAMPLE.H as already processed.  
+
+## __has_include
+**Visual Studio 2017 version 15.3 and later**:  Determines whether a library header is available for inclusion:  
+
+```cpp
+#ifdef __has_include
+#  if __has_include(<filesystem>)
+#    include <filesystem>
+#    define have_filesystem 1
+#  elif __has_include(<experimental/filesystem>)
+#    include <experimental/filesystem>
+#    define have_filesystem 1
+#    define experimental_filesystem
+#  else
+#    define have_filesystem 0
+#  endif
+#endif
+```
   
 ## See Also  
  [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

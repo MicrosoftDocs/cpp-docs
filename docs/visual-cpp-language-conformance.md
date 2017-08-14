@@ -1,34 +1,34 @@
 ---
-title: "Visual C++ Language Conformance | Microsoft Docs"
-ms.custom: ""
-ms.date: "3/1/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "cpp-language"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Visual C++ Language Conformance | Microsoft Docs"  
+ms.custom: ""  
+ms.date: "3/1/2017"  
+ms.reviewer: ""  
+ms.suite: ""  
+ms.technology:  
+  - "cpp-language"  
+ms.tgt_pltfrm: ""  
+ms.topic: "article"  
 dev_langs: 
-  - "C++"
-ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
-caps.latest.revision: 11
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+  - "C++"  
+ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe  
+caps.latest.revision: 11  
+author: "corob-msft"  
+ms.author: "corob"  
+manager: "ghogen"  
 translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+  - "cs-cz"  
+  - "de-de"  
+  - "es-es"  
+  - "fr-fr"   
+  - "it-it"  
+  - "ja-jp"  
+  - "ko-kr"  
+  - "pl-pl"  
+  - "pt-br"  
+  - "ru-ru"  
+  - "tr-tr"  
+  - "zh-cn"  
+  - "zh-tw"  
 ---
 # Visual C++ Language Conformance 
 This topic summarizes the ISO C++03, C++11, C++14, C++17, and Draft C++20 language standards conformance of compiler features and Standard Library features for Visual C++ in Visual Studio 2017 and earlier versions. Each compiler and standard library feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time. The Supported column lists the Visual Studio version in which support for the feature first appeared.  
