@@ -224,6 +224,7 @@
 ### [-MAPINFO (Include Information in Mapfile)](mapinfo-include-information-in-mapfile.md)
 ### [-MERGE (Combine Sections)](merge-combine-sections.md)
 ### [-MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)
+### [-NATVIS (Add Natvis to PDB)](natvis-add-natvis-to-pdb.md)
 ### [-NOASSEMBLY (Create a MSIL Module)](noassembly-create-a-msil-module.md)
 ### [-NODEFAULTLIB (Ignore Libraries)](nodefaultlib-ignore-libraries.md)
 ### [-NOENTRY (No Entry Point)](noentry-no-entry-point.md)
