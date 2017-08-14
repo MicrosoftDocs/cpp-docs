@@ -75,7 +75,7 @@ This release brings several improvements in optimization, code generation, tools
 * Minor basic_string _ITERATOR_DEBUG_LEVEL != 0 diagnostics improvements. Tripping an IDL check in string machinery will now report the specific behavior that caused the trip. For example, instead of "string iterator not dereferencable" you'll get "cannot dereference string iterator because it is out of range (e.g. an end iterator)".
 * Performance improvement: made basic_string::find(char) overloads only call traits::find once. Previously this was implemented as a general string search for a string of length 1.
 * Performance improvement: basic_string::operator== now checks the string's size before comparing the strings' contents.
-* Performance improvement: removed control coupling in basic_string which was difficult for the compiler optimizer to analyze. Resolves VSO# 262848 "<string>: reserve() does too much work". Note that for all short strings, calling reserve still has nonzero cost to do nothing.
+* Performance improvement: removed control coupling in basic_string which was difficult for the compiler optimizer to analyze. Resolves VSO# 262848 "\<string\>: reserve() does too much work". Note that for all short strings, calling reserve still has nonzero cost to do nothing.
 * We added \<any\>, \<string_view\>, apply(), make_from_tuple().
 * std::vector has been overhauled for correctness and performance: aliasing during insertion/emplacement is now correctly handled as required by the Standard, the strong exception guarantee is now provided when required by the Standard via move_if_noexcept() and other logic, and insertion/emplacement perform fewer element operations.
 * The C++ Standard Library now avoids dereferencing null fancy pointers.
@@ -105,20 +105,20 @@ Several additional C++17 features have been implemented. For more information, s
 * Even when dynamic RTTI has been disabled via /GR-, "static RTTI" (in the form of typeid(SomeType)) is still available and powers several Standard Library components. The Standard Library now supports disabling this too, via /D_HAS_STATIC_RTTI=0. *Note that this will disable std::any, std::function's target() and target_type(), and shared_ptr's get_deleter().*
 
 ##### Correctness Fixes
-* Standard Library containers now clamp their max_size() to numeric_limits<difference_type>::max() rather than size_type's max. This ensures that the result of distance() on iterators from that container is representable in the return type of distance().
-* Fixed missing specialization auto_ptr<void>.
+* Standard Library containers now clamp their max_size() to numeric_limits\<difference_type\>::max() rather than size_type's max. This ensures that the result of distance() on iterators from that container is representable in the return type of distance().
+* Fixed missing specialization auto_ptr\<void\>.
 * The meow_n() algorithms previously failed to compile if the length argument was not an integral type; they now attempt to convert non-integral lengths to the iterators' difference_type.
-* normal_distribution<float> no longer emits warnings inside the Standard Library about narrowing from double to float.
+* normal_distribution\<float\> no longer emits warnings inside the Standard Library about narrowing from double to float.
 * Fixed some basic_string operations which were comparing with npos instead of max_size() when checking for maximum size overflow.
 * condition_variable::wait_for(lock, relative_time, predicate) would wait for the entire relative time in the event of a spurious wake. Now, it will wait for only a single interval of the relative time.
 * future::get() now invalidates the future, as the standard requires.
-* iterator_traits<void *> used to be a hard error because it attempted to form void&; it now cleanly becomes an empty struct to allow use of iterator_traits in "is iterator" SFINAE conditions.
+* iterator_traits\<void \*\> used to be a hard error because it attempted to form void&; it now cleanly becomes an empty struct to allow use of iterator_traits in "is iterator" SFINAE conditions.
 * Some warnings reported by Clang -Wsystem-headers were fixed.
 * Also fixed "exception specification in declaration does not match previous declaration" reported by Clang -Wmicrosoft-exception-spec.
 * Also fixed mem-initializer-list ordering warnings reported by Clang and C1XX.
 * The unordered containers did not swap their hashers or predicates when the containers themselves were swapped. Now they do.
 * Many container swap operations are now marked noexcept (as our Standard Library never intends to throw an exception when detecting the non-propagate_on_container_swap non-equal-allocator undefined behavior condition).
-* Many vector<bool> operations are now marked noexcept.
+* Many vector\<bool\> operations are now marked noexcept.
 * The Standard Library will now enforce matching allocator value_types (in C++17 mode) with an opt-out escape hatch.
 * Fixed some conditions where self-range-insert into basic_strings would scramble the strings' contents. (Note: self-range-insert into vectors is still prohibited by the Standard.)
 * basic_string::shrink_to_fit() is no longer affected by the allocator's propagate_on_container_swap.
@@ -136,15 +136,15 @@ Several additional C++17 features have been implemented. For more information, s
 * Enabled the Named Return Value Optimization in system_category::message().
 * conjunction and disjunction now instantiate N + 1 types, instead of 2N + 2 types.
 * std::function no longer instantiates allocator support machinery for each type-erased callable, improving throughput and reducing .obj size in programs that pass many distinct lambdas to std::function.
-* allocator_traits<std::allocator> contains manually inlined std::allocator operations, reducing code size in code that interacts with std::allocator through allocator_traits only (i.e. most code).
-* The C++11 minimal allocator interface is now handled by the Standard Library calling allocator_traits directly, instead of wrapping the allocator in an internal class _Wrap_alloc. This reduces the code size generated for allocator support, improves the optimizer's ability to reason about Standard Library containers in some cases, and provides a better debugging experience (as now you see your allocator type, rather than _Wrap_alloc<your allocator type> in the debugger).
+* allocator_traits\<std::allocator\> contains manually inlined std::allocator operations, reducing code size in code that interacts with std::allocator through allocator_traits only (i.e. most code).
+* The C++11 minimal allocator interface is now handled by the Standard Library calling allocator_traits directly, instead of wrapping the allocator in an internal class _Wrap_alloc. This reduces the code size generated for allocator support, improves the optimizer's ability to reason about Standard Library containers in some cases, and provides a better debugging experience (as now you see your allocator type, rather than _Wrap_alloc\<your allocator type\> in the debugger).
 * Removed metaprogramming for customized allocator::reference, which allocators aren't actually allowed to customize. (Allocators can make containers use fancy pointers but not fancy references.)
 * The compiler front-end was taught to unwrap debug iterators in range-based for-loops, improving the performance of debug builds.
 * basic_string's internal shrink path for shrink_to_fit() and reserve() is no longer in the path of reallocating operations, reducing code size for all mutating members.
 * basic_string's internal grow path is no longer in the path of shrink_to_fit().
 * basic_string's mutating operations are now factored into non-allocating fast path and allocating slow path functions, making it more likely for the common no-reallocate case to be inlined into callers.
 * basic_string's mutating operations now construct reallocated buffers in the desired state rather than resizing in place. For example, inserting at the beginning of a string now moves the content after the insertion exactly once (either down or to the newly allocated buffer), instead of twice in the reallocating case (to the newly allocated buffer and then down).
-* Operations calling the C standard library in <string> now cache errno's address to remove repeated interaction with TLS.
+* Operations calling the C standard library in \<string\> now cache errno's address to remove repeated interaction with TLS.
 * Simplified is_pointer's implementation.
 * Finished changing function-based Expression SFINAE to struct/void_t-based.
 * Standard Library algorithms now avoid postincrementing iterators.
@@ -159,7 +159,7 @@ Several additional C++17 features have been implemented. For more information, s
 * Changed static_assert(false, "message") to #error message. This improves compiler diagnostics because #error immediately stops compilation.
 * The Standard Library no longer marks functions as __declspec(dllimport). Modern linker technology no longer requires this.
 * Extracted SFINAE to default template arguments, which reduces clutter compared to return types and function argument types.
-* Debug checks in <random> now use the Standard Library's usual machinery, instead of the internal function _Rng_abort() which called fputs() to stderr. This function's implementation is being retained for binary compatibility, but has been removed in the next binary-incompatible version of the Standard Library. 
+* Debug checks in \<random\> now use the Standard Library's usual machinery, instead of the internal function _Rng_abort() which called fputs() to stderr. This function's implementation is being retained for binary compatibility, but has been removed in the next binary-incompatible version of the Standard Library. 
 
 ### Open source library support  
 Vcpkg is an open-source command line tool that greatly simplifies the process of acquiring and building open source C++ static libs and DLLS in Visual Studio. For more information, see [vcpkg: A package manager for C++](vcpkg.md).

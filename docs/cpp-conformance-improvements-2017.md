@@ -82,7 +82,7 @@ For the complete list of conformance improvements up through Visual Studio 2015,
 
 ## Bug fixes
 ### Copy-list-initialization
-Visual Studio 2017 correctly raises compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior.  As per N4594 13.3.1.7p1, in copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen. 
+Visual Studio 2017 correctly raises compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior. As per N4594 13.3.1.7p1, in copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen. 
 
 The following two examples compile in Visual Studio 2015 but not in Visual Studio 2017.
 ```cpp  
@@ -305,7 +305,7 @@ struct __declspec(dllexport) S1 { virtual void f() {} }; //C2201
 ```
 
 ### Default initializers for value class members (C++/CLI)
-In Visual Studio 2015 and earlier, the compiler permitted (but ignored) a default member initializer for a member of a value class.  Default initialization of a value class always zero-initializes the members; a default constructor is not permitted.  In Visual Studio 2017, default member initializers raise a compiler error, as shown in this example:
+In Visual Studio 2015 and earlier, the compiler permitted (but ignored) a default member initializer for a member of a value class. Default initialization of a value class always zero-initializes the members; a default constructor is not permitted. In Visual Studio 2017, default member initializers raise a compiler error, as shown in this example:
 
 ```cpp  
 value struct V
@@ -435,7 +435,7 @@ int main()
 To fix the error, remove the `#pragma managed` directive to mark the caller as native and avoid marshalling. 
 
 ### Experimental API warning for WinRT
-WinRT APIs that are released for experimentation and feedback will be decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Visual Studio 2017 version 15.3, the compiler will produce warning C4698 when it encounters  the attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs will start triggering this compiler warning. Newer Windows SDKs will have the attribute removed from all shipped types, but if you are using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
+WinRT APIs that are released for experimentation and feedback will be decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Visual Studio 2017 version 15.3, the compiler will produce warning C4698 when it encounters the attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs will start triggering this compiler warning. Newer Windows SDKs will have the attribute removed from all shipped types, but if you are using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
 The following code produces warning C4698: "'Windows::Storage::IApplicationDataStatics2::GetForUserAsync' is for evaluation purposes only and is subject to change or removal in future updates":
 ```cpp
 Windows::Storage::IApplicationDataStatics2::GetForUserAsync() //C4698
@@ -490,7 +490,7 @@ void f()
 }
 ```
 ### Default arguments are not allowed on out of line definitions of member functions
-Default arguments are not allowed on out-of-line definitions of member functions in template classes.  The compiler will issue a warning under /permissive, and a hard error under /permissive-. 
+Default arguments are not allowed on out-of-line definitions of member functions in template classes The compiler will issue a warning under /permissive, and a hard error under /permissive-. 
 
 In previous versions of Visual Studio, the following ill-formed code could potentially cause a runtime crash. Visual Studio 2017 version 15.3 produces warning C5034: 'A<T>::f': an out-of-line definition of a member of a class template cannot have default arguments:
 ```cpp
@@ -604,7 +604,7 @@ B<int>; // warning C4091 : '' : ignored on left of 'B<int>' when no variable is 
 C;      // warning C4091 : '' : ignored on left of 'C' when no variable is declared
 ```
 
-To remove the warnings, simply comment-out or remove the empty declarations.  In cases where the un-named object is intended to have a side effect (such as RAII) it should be given a name.
+To remove the warnings, simply comment-out or remove the empty declarations. In cases where the un-named object is intended to have a side effect (such as RAII) it should be given a name.
  
 The warning is excluded under /Wv:18 and is on by default under warning level W2.
 
