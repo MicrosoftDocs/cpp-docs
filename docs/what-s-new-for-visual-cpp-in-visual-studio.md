@@ -277,6 +277,10 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 
 **Visual Studio 2017 version 15.3**: Support added for rules related to resource management. For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
 
+## Unit Testing
+
+New Visual Studio extensions enable you to run your unit tests based on Google Test and Boost.Test directly in Visual Studio. For more information, see [C++ Unit Testing Updates: Announcing Boost.Test Adapter and Improved Google Test Support](https://blogs.msdn.microsoft.com/vcblog/2017/08/04/c-unit-testing-updates-announcing-boost-test-adapter-and-improved-google-test-support/).
+
 ## Visual Studio Graphics Diagnostics
 
 Visual Studio Graphics Diagnostics is a set of tools for recording and analyzing rendering and performance problems in Direct3D apps. Graphics Diagnostics features can be used with apps that are running locally on your Windows PC, in a Windows device emulator, or on a remote PC or device.
