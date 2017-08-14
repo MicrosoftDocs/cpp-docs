@@ -33,7 +33,7 @@ translation.priority.ht:
 # Visual C++ Language Conformance 
 This topic summarizes the ISO C++03, C++11, C++14, C++17, and Draft C++20 language standards conformance of compiler features and Standard Library features for Visual C++ in Visual Studio 2017 and earlier versions. Each compiler and standard library feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time. The Supported column lists the Visual Studio version in which support for the feature first appeared.  
   
-For details on conformance improvements and other changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) and [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/).  
+For details on conformance improvements and other changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) and [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [Visual C++ team blog](https://blogs.msdn.microsoft.com/vcblog/).  
 
  > [!NOTE]
  > There are no binary breaking changes between Visual Studio 2015 and Visual Studio 2017.
@@ -103,7 +103,7 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |&nbsp;&nbsp;[P0522R0 Matching template template-parameters to compatible arguments](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0522r0.html)|No|
 |&nbsp;&nbsp;[P0702R1 Fixing class template argument deduction for initializer-list ctors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0702r1.html)|No|
 |__C++20 Core Language Features__|__Supported__|
-|&nbsp;&nbsp;[P0306R4 Adding __VA_OPT__ for comma omission and comma deletion](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0306r4.pdf)|No|
+|&nbsp;&nbsp;[P0306R4 Adding \_\_VA_OPT\_\_ for comma omission and comma deletion](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0306r4.pdf)|No|
 |&nbsp;&nbsp;[P0329R4 Designated initialization](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|No|
 |&nbsp;&nbsp;[P0409R2 Allowing lambda-capture [=, this]](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)|No|
 |&nbsp;&nbsp;[P0428R2 Familiar template syntax for generic lambdas](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|No|
@@ -254,7 +254,7 @@ __VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 ver
 <a name="note_14"></a>__14__ These C++17 features are always enabled, even when [/std:c++14](./build/reference/std-specify-language-standard-version.md) (the default) is specified. This is either because the feature was implemented before the introduction of the **/std** options, or because conditional implementation was undesirably complex.  
 <a name="note_17"></a>__17__ These features are enabled by the [/std:c++17](./build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) compiler option.  
 <a name="note_byte"></a>__byte__ `std::byte` is enabled by [/std:c++17](./build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](./build/reference/std-specify-language-standard-version.md)), but because it can conflict with the Windows SDK headers in some cases, it has a fine-grained opt-out macro. It can be disabled by defining `_HAS_STD_BYTE` as `0`.  
-<a name="note_C11"></a>__C11__ The Universal CRT implemented the parts of the C11 Standard Library that are required by C++17, with these exceptions: missing C99 `strftime()` E/O alternative conversion specifiers, missing C11 `fopen()` exclusive mode, and missing C11 `aligned_alloc()`. The `strftime()` and `fopen()` functionality are not yet implemented. C11 specified `aligned_alloc()` in a way that's incompatible with the Microsoft implementation of `free()`, namely, that `free()` must be able to handle highly aligned allocations.  
+<a name="note_C11"></a>__C11__ The Universal CRT implemented the parts of the C11 Standard Library that are required by C++17, with the exception of C99 `strftime()` E/O alternative conversion specifiers, C11 `fopen()` exclusive mode, and C11 `aligned_alloc()`. The latter is unlikely to be implemented, because C11 specified `aligned_alloc()` in a way that's incompatible with the Microsoft implementation of `free()`, namely, that `free()` must be able to handle highly aligned allocations.  
 <a name="note_rem"></a>__rem__ Features removed when the [/std:c++17](./build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) compiler option is specified. These features have opt-out macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
   
 ## See Also  
@@ -264,4 +264,4 @@ __VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 ver
 [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md)  
 [Visual C++ change history 2003 through 2015](porting/visual-cpp-change-history-2003-2015.md)  
 [Visual C++ What's New 2003 through 2015](porting/visual-cpp-what-s-new-2003-through-2015.md)  
-[Visual C++ team blog](http://blogs.msdn.microsoft.com/vcblog/)  
+[Visual C++ team blog](https://blogs.msdn.microsoft.com/vcblog/)  
