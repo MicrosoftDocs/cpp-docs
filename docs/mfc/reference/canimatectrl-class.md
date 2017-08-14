@@ -158,7 +158,7 @@ virtual BOOL Create(
 ### Remarks  
  You construct a `CAnimateCtrl` in two steps. First, call the constructor, and then call **Create**, which creates the animation control and attaches it to the `CAnimateCtrl` object.  
   
- Apply the following [window styles](../../mfc/reference/window-styles.md) to an animation control.  
+ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to an animation control.  
   
 - **WS_CHILD** Always  
   

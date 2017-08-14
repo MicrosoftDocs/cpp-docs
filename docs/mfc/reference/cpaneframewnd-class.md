@@ -298,7 +298,7 @@ virtual BOOL Create(
  Specifies the text to display on the miniframe window.  
   
  [in] `dwStyle`  
- Specifies the window style. For more information, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Specifies the window style. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `rect`  
  Specifies the initial size and position of the miniframe window.  
@@ -330,13 +330,13 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  [in] `dwStyleEx`  
- Specifies the extended window style. For more information, see [Extended Window Styles](../../mfc/reference/extended-window-styles.md)  
+ Specifies the extended window style. For more information, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
   
  [in] `lpszWindowName`  
  Specifies the text to display on the miniframe window.  
   
  [in] `dwStyle`  
- Specifies the window style. For more information, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Specifies the window style. For more information, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `rect`  
  Specifies the initial size and position of the miniframe window.  

@@ -1010,6 +1010,8 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
   
  [_get_errno](../../c-runtime-library/reference/get-errno.md)  
   
+ [_get_FMA3_enable](../../c-runtime-library/reference/get-fma3-enable-set-fma3-enable.md)  
+  
  [_get_fmode](../../c-runtime-library/reference/get-fmode.md)  
   
  [_get_heap_handle](../../c-runtime-library/reference/get-heap-handle.md)  
@@ -2241,6 +2243,8 @@ The C Run-Time (CRT) Library reference documentation is arranged alphabetically 
  [_set_errno](../../c-runtime-library/reference/set-errno.md)  
   
  [_set_error_mode](../../c-runtime-library/reference/set-error-mode.md)  
+  
+ [_set_FMA3_enable](../../c-runtime-library/reference/get-fma3-enable-set-fma3-enable.md)  
   
  [_set_fmode](../../c-runtime-library/reference/set-fmode.md)  
   

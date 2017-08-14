@@ -128,5 +128,5 @@ Technical notes are divided into the following categories. For a numerical listi
   
 ||  
 |-|  
-|[TN063: Debugging Internet Extension DLLs](../mfc/tn063-debugging-internet-extension-dlls.md)|
+|[TN063: Debugging Internet MFC extension DLLs](../mfc/tn063-debugging-internet-extension-dlls.md)|
 

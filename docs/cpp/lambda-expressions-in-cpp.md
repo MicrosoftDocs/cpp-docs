@@ -1,7 +1,7 @@
 ---
 title: "Lambda Expressions in C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "07/19/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -35,8 +35,13 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Lambda Expressions in C++
-In C++11 and later, a lambda expression—often called a *lambda*—is a convenient way of defining an anonymous function object right at the location where it is invoked or passed as an argument to a function. Typically lambdas are used to encapsulate a few lines of code that are passed to algorithms or asynchronous methods. This article defines what lambdas are, compares them to other programming techniques, describes their advantages, and provides a basic example.  
-  
+In C++11 and later, a lambda expression—often called a *lambda*—is a convenient way of defining an anonymous function object (a *closure*) right at the location where it is invoked or passed as an argument to a function. Typically lambdas are used to encapsulate a few lines of code that are passed to algorithms or asynchronous methods. This article defines what lambdas are, compares them to other programming techniques, describes their advantages, and provides a basic example.  
+
+## Related Topics
+- [Lambda expressions vs. function objects](lambda-expression-syntax.md)
+- [Working with lambda expressions](examples-of-lambda-expressions.md)
+- [constexpr lambda expressions](lambda-expressions-constexpr.md)
+
 ## Parts of a Lambda Expression  
  The ISO C++ Standard shows a simple lambda that is passed as the third argument to the `std::sort()` function:  
   
@@ -95,10 +100,11 @@ void abssort(float* x, unsigned n) {
 struct S { void f(int i); };  
   
 void S::f(int i) {  
-    [&, i]{};    // OK  
-    [&, &i]{};   // ERROR: i preceded by & when & is the default  
-    [=, this]{}; // ERROR: this when = is the default  
-    [i, i]{};    // ERROR: i repeated  
+    [&, i]{};      // OK  
+    [&, &i]{};     // ERROR: i preceded by & when & is the default  
+    [=, this]{};   // ERROR: this when = is the default  
+    [=, *this]{ }; // OK: captures this by value. See below.
+    [i, i]{};      // ERROR: i repeated  
 }  
 ```  
   
@@ -112,7 +118,11 @@ void f(Args... args) {
 }  
 ```  
   
- To use lambda expressions in the body of a class method, pass the `this` pointer to the capture clause to provide access to the methods and data members of the enclosing class. For an example that shows how to use lambda expressions with class methods, see "Example: Using a Lambda Expression in a Method" in [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
+ To use lambda expressions in the body of a class method, pass the `this` pointer to the capture clause to provide access to the methods and data members of the enclosing class. 
+ 
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The `this` pointer may be captured by value by specifying `*this` in the capture clause. Capture by value means that the entire *closure*, which is the anonymous function object that encapulates the lambda expression, is copied to every call site where the lambda is invoked. Capture by value is useful when the lambda will execute in parallel or asynchronous operations, especially on certain hardware architectures such as NUMA. 
+
+For an example that shows how to use lambda expressions with class methods, see "Example: Using a Lambda Expression in a Method" in [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md).  
   
  When you use the capture clause, we recommend that you keep these points in mind, particularly when you use lambdas with multithreading:  
   
@@ -325,6 +335,43 @@ vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
 ```  
   
  For more information, see [generate_n](../standard-library/algorithm-functions.md#generate_n).  
+
+## constexpr lambda expressions
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): A lambda expression may be declared as `constexpr` or used in a constant expression when the initialization of each data member that it captures or introduces is allowed within a constant expression.  
+
+```cpp
+    int y = 32;
+	auto answer = [y]() constexpr 
+	{
+		int x = 10;
+		return y + x; 
+	};
+
+    constexpr int Increment(int n) 
+    {
+	    return [n] { return n + 1; }();
+    }
+
+``` 
+A lambda is implicitly `constexpr` if its result satisfies the requirements of a `constexpr` function:
+```cpp
+	auto answer = [](int n) 
+	{
+		return 32 + n; 
+	};
+
+	constexpr int response = answer(10);
+``` 
+If a lambda is implicitly or explicitly `constexpr`, conversion to a function pointer produces a `constexpr` function:
+
+```cpp
+	auto Increment = [](int n)
+	{
+		return n + 1;
+	};
+
+	constexpr int(*inc)(int) = Increment;
+```
   
 ## Microsoft-Specific  
  Lambdas are not supported in the following common language runtime (CLR) managed entities: `ref class`, `ref struct`, `value class`, or `value struct`.  

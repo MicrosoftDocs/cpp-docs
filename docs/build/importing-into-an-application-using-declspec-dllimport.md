@@ -65,7 +65,7 @@ class CLASS_DECLSPEC CExampleA : public CObject
   
 ## What do you want to do?  
   
--   [Initialize a DLL](../build/initializing-a-dll.md)  
+-   [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
   
 ## What do you want to know more about?  
   
