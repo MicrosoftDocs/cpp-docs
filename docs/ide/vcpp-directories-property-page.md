@@ -80,5 +80,3 @@ Specifies the directories that you want Visual Studio to use to build a project.
 ## Sharing the Settings  
  You can share project properties with other users or across multiple computers. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
-## See Also  
- [Working with Project Properties](../ide/working-with-project-properties.md)
