@@ -59,12 +59,11 @@ Range-based for loops no longer require that begin() and end() return objects of
 
 **constexpr lambdas** Lambda expressions may now be used in constant expressions. For more information, see [Constexpr Lambda](http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4487.pdf).
 
-**constexpr if in function templates** A function template may contain `constexpr if` statements to enable compile-time branching. For more information, see [constexpr if](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0128r1.html).
+**if constexpr in function templates** A function template may contain `if constexpr` statements to enable compile-time branching. For more information, see [if constexpr](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0128r1.html).
 
 **Selection statements with initializers** An `if` statement may include an initializer that introduces a variable at block scope within the statement itself. For more information, see [Selection statements with initializer](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0305r1.html).
 
-**[[maybe_unused]] and [[nodiscard]] attributes** New attributes to silence warnings when an entity is not used, or to create a warning if the return value of a function call is discarded. For more information, see [Wording for \[\]maybe_unused\]\] attribute](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0212r0.pdf) and [Proposal of \[\[unused\]\], \[\[nodiscard\]\] and
-\[\[fallthrough\]\] attributes](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0068r0.pdf).
+**[[maybe_unused]] and [[nodiscard]] attributes** New attributes to silence warnings when an entity is not used, or to create a warning if the return value of a function call is discarded. For more information, see [Wording for maybe_unused attribute](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0212r0.pdf) and [Proposal of unused,nodiscard and fallthrough attributes](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0068r0.pdf).
 
 **Using attribute namespaces without repetition** New syntax to enable only a single namespace identifier in an attribute list. For more information, see [Attributes in C++](cpp/attributes2.md).
 
@@ -73,9 +72,7 @@ Range-based for loops no longer require that begin() and end() return objects of
 **Construction rules for enum class values** There is now an implicit/non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself, when its definition introduces no enumerator and the source uses a list-initialization syntax. 
 For more information, see [Construction Rules for enum class Values ](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf).
 
-**Guaranteed copy elision** Copy elision is now guaranteed to occur when the source object is a temporary, and there are no longer any semantic checks on copy or move constructors when the guaranteed elision occurs. For more information, see [Guaranteed copy elision through simplified value categories](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0135r0.html).
-
-**Capturing *this by value** The "this" pointer in a lambda expression may now be captured by value. This enables scenarios in which the lambda will be invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of *this by Value as [=,*this]](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html).
+**Capturing *this by value** The "\*this" object in a lambda expression may now be captured by value. This enables scenarios in which the lambda will be invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as [=,\*this]](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html).
 
 **Removing operator++ for bool** operator++ is no longer supported on `bool` types. For more information, see [Remove Deprecated operator++(bool)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0002r1.html).
 
@@ -301,7 +298,7 @@ constexpr bool test2 = !IsCallable<int*, int>::value;
 static_assert(test2, "PASS2");
 ```
 ### Classes declared in anonymous namespaces
-According to the C++ standard, a class declared inside an anonymous namespace has internal linkage, and therefore cannot be exported. In Visual Studio 2015 and earlier, this rule was not enforced. In Visual Studio 2017 the rule is partially enforced. The following example raises this error in Visual Studio 2017: "error C2201: 'const `anonymous namespace'::S1::`vftable'': must have external linkage in order to be exported/imported."
+According to the C++ standard, a class declared inside an anonymous namespace has internal linkage, and therefore cannot be exported. In Visual Studio 2015 and earlier, this rule was not enforced. In Visual Studio 2017 the rule is partially enforced. The following example raises this error in Visual Studio 2017: "error C2201: const anonymous namespace::S1::vftable: must have external linkage in order to be exported/imported."
 
 ```cpp
 struct __declspec(dllexport) S1 { virtual void f() {} }; //C2201
@@ -479,8 +476,7 @@ void S::f(T t) {}
 In C++ 'this' is an prvalue of type pointer to X. You cannot take the address of 'this' or bind it to an lvalue reference. In previous versions of Visual Studio, the compiler would allow you to circumvent this restriction by performing a cast. In Visual Studio 2017 version 15.3, the compiler produces error C2664.
 
 ### Conversion to an inaccessible base class
-Visual Studio 2017 version 15.3 produces an error when you attempt to convert a type to a base class which is inaccessible. The compiler now raises  
-"error C2243: 'type cast': conversion from 'D *' to 'B *' exists, but is inaccessible". The following code is ill-formed and can potentially cause a crash at runtime. The compiler now produces C2243 when it encounters code like this:
+Visual Studio 2017 version 15.3 produces an error when you attempt to convert a type to a base class which is inaccessible. The compiler now raises "error C2243: 'type cast': conversion from 'D *' to 'B *' exists, but is inaccessible". The following code is ill-formed and can potentially cause a crash at runtime. The compiler now produces C2243 when it encounters code like this:
 
 ```cpp
 #include <memory> 
@@ -494,7 +490,8 @@ void f()
 }
 ```
 ### Default arguments are not allowed on out of line definitions of member functions
-Default arguments are not allowed on out-of-line definitions of member functions in template classes.  The compiler will issue a warning under /permissive, and a hard error under /permissive-
+Default arguments are not allowed on out-of-line definitions of member functions in template classes.  The compiler will issue a warning under /permissive, and a hard error under /permissive-. 
+
 In previous versions of Visual Studio, the following ill-formed code could potentially cause a runtime crash. Visual Studio 2017 version 15.3 produces warning C5034: 'A<T>::f': an out-of-line definition of a member of a class template cannot have default arguments:
 ```cpp
  
@@ -512,7 +509,7 @@ T A<T>::f(T t, bool b = false) // C5034
 To fix the error, remove the "= false" default argument. 
 
 ### Use of offsetof with compound member designator
-In Visual Studio 2017 version 15.3, using offsetof(T, m) where m is a "compound member designator" will result in a warning when you compile with the /Wall option. The following code is ill-formed and could potentially cause crash at runtime. Visual Studio 2017 version 15.3 produces "warning C4841: non-standard extension used: compound member designator in offseto":
+In Visual Studio 2017 version 15.3, using offsetof(T, m) where m is a "compound member designator" will result in a warning when you compile with the /Wall option. The following code is ill-formed and could potentially cause a crash at runtime. Visual Studio 2017 version 15.3 produces "warning C4841: non-standard extension used: compound member designator in offseto":
 
 ```cpp
   
@@ -547,7 +544,7 @@ constexpr auto off = offsetof(A, foo);
 Constexpr auto off2 = offsetof(A, bar);
 ```
  
-This code is ill-formed and could potentially cause crash at runtime. To fix the error, change the code to no longer invoke undefined behavior. This is non-portable code that is disallowed by the C++ standard.
+This code is ill-formed and could potentially cause a crash at runtime. To fix the error, change the code to no longer invoke undefined behavior. This is non-portable code that is disallowed by the C++ standard.
 
 ### New warning on declspec attributes
 In Visual Studio 2017 version 15.3, the compiler no longer ignores attributes if __declspec(…) is applied before extern "C" linkage specification. Previously, the compiler would ignore the attritbute, which could have runtime implications. When the `/Wall /WX` option is set, the following code produces "warning C4768: __declspec attributes before linkage specification are ignored":
@@ -586,7 +583,7 @@ void h()
 }
 ```
 ### Uninitialized const variables
-Visual Studio 2017 RTW release had a regression in which the C++ compiler would not issue a diagnostic if a 'const' variable was not initialized. This regression has been fixed in Visual Studio 2017 Update 1. The following code now produces "warning C4132: 'Value': const object should be initialized":
+Visual Studio 2017 RTW release had a regression in which the C++ compiler would not issue a diagnostic if a 'const' variable was not initialized. This regression has been fixed in Visual Studio 2017 version 15.3. The following code now produces "warning C4132: 'Value': const object should be initialized":
 
 ```cpp
 const int Value; //C4132
@@ -594,7 +591,7 @@ const int Value; //C4132
 To fix the error, assign a value to `Value`.
 
 ### Empty declarations
-Visual Studio 2017 version 15.3 now warns on empty declarions for all types, not just built-in types. The following code now produces a level 2 C4091 warning for all four declarations:
+Visual Studio 2017 version 15.3 now warns on empty declarations for all types, not just built-in types. The following code now produces a level 2 C4091 warning for all four declarations:
 
 ```cpp
 struct A {};
@@ -613,7 +610,7 @@ The warning is excluded under /Wv:18 and is on by default under warning level W2
 
 
 ### std::is_convertible for array types
-Previous versions of the compiler gave incorrect results for [std::is_convertible](standard-library/is-convertible-class.md) for array types. This required library writers to special-case the Visual C++ compiler when using the `std::is_convertable<…>` type trait. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
+Previous versions of the compiler gave incorrect results for [std::is_convertible](standard-library/is-convertible-class.md) for array types. This required library writers to special-case the Visual C++ compiler when using the `std::is_convertible<…>` type trait. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
 
 ```cpp
 #include <type_traits>
@@ -621,9 +618,9 @@ Previous versions of the compiler gave incorrect results for [std::is_convertibl
 using Array = char[1];
  
 static_assert(std::is_convertible<Array, Array>::value);
-static_assert((std::is_convertible<const Array, const Array>::value), "");
-static_assert((std::is_convertible<Array&, Array>::value), "");
-static_assert((std::is_convertible<Array, Array&>::value), "");
+static_assert(std::is_convertible<const Array, const Array>::value, "");
+static_assert(std::is_convertible<Array&, Array>::value, "");
+static_assert(std::is_convertible<Array, Array&>::value, "");
 ```
 
 **std::is_convertible<From, To>** is calculated by checking to see if an imaginary function definition is well formed:
@@ -632,7 +629,7 @@ static_assert((std::is_convertible<Array, Array&>::value), "");
 ``` 
 
 ### Private destructors and std::is_constructible
-Previous versions of the compiler ignore whether a destructor was private when decided the result of [std::is_constructible](standard-library/is-constructible-class.md). It now considers them. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
+Previous versions of the compiler ignored whether a destructor was private when deciding the result of [std::is_constructible](standard-library/is-constructible-class.md). It now considers them. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
 
 ```cpp
 #include <type_traits>
@@ -654,7 +651,7 @@ Private destructors cause a type to be non-constructible. **std::is_constructibl
 This call implies a destructor call.
 
 ### C2668: Ambiguous overload resolution
-Previous versions of the compiler sometimes failed to detect ambiguity when it found multiple candidates via both using declarations and argument dependent lookups. This can lead to wrong overload being chosen and unexpected runtime behavior. In the following example, Visual Studio 2017 version 15.3 correctly raises C2668 'f': ambiguous call to overloaded function:
+Previous versions of the compiler sometimes failed to detect ambiguity when it found multiple candidates via both using declarations and argument dependent lookup. This can lead to wrong overload being chosen and unexpected runtime behavior. In the following example, Visual Studio 2017 version 15.3 correctly raises C2668 'f': ambiguous call to overloaded function:
 
 ```cpp
 namespace N {
@@ -699,7 +696,7 @@ void g()
 To fix the problem, either change the **f(S)** signature or remove it.
 
 ### C5038: order of initialization in initializer lists
-Class members are initialized in the order they are declared, not the order they appear in initializer lists. Previous versions of the compiler did not warn when the order of the initializer list differed from the order of declaration. This could lead to undefined runtime behavior if the intialization of one member depended on another member in the list already being initialized. In the following example, Visual Studio 2017 version 15.3 (with /Wall or /WX) raises warning C5038: data member 'A::y' will be initialized after data member 'A::x':
+Class members are initialized in the order they are declared, not the order they appear in initializer lists. Previous versions of the compiler did not warn when the order of the initializer list differed from the order of declaration. This could lead to undefined runtime behavior if the intialization of one member depended on another member in the list already being initialized. In the following example, Visual Studio 2017 version 15.3 (with /Wall) raises warning C5038: data member 'A::y' will be initialized after data member 'A::x':
 
 ```cpp
 struct A
@@ -712,7 +709,7 @@ struct A
 ```
 To fix the problem arrange the intializer list to have the same order as the declarations. A similar warning is raised when one or both initializers refer to base class members.
 
-Note that the warning is off-by-default and only affects code compiled with  /Wall or /WX.
+Note that the warning is off-by-default and only affects code compiled with /Wall.
 
 ## See Also  
 [Visual C++ Language Conformance](visual-cpp-language-conformance.md)  

@@ -57,14 +57,14 @@ Enable up to 30% faster incremental link times (vs. Visual Studio 2015) by not c
 [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] allows using /sdl with /await. We removed the /RTC limitation with Coroutines. 
 
 ### Codegen, security, diagnostics and versioning
-This release brings several improvements in optimization, code generation, toolset versioning and diagnostics. Some notable improvements include:  
+This release brings several improvements in optimization, code generation, toolset versioning, and diagnostics. Some notable improvements include:  
 
 - Improved code generation of loops: Support for automatic vectorization of division of constant integers, better identification of memset patterns.
 - Improved code security: Improved emission of buffer overrun compiler diagnostics, and /guard:cf now guards switch statements that generate jump tables.
 - Versioning: The value of the built-in preprocessor macro _MSC_VER is now being monotonically updated at every Visual C++ toolset update. For more information, see [Visual C++ Compiler Version](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/).
 - New toolset layout: The compiler and related build tools have a new location and directory structure on your development machine. The new layout enables side-by-side installations of multiple versions of the compiler. For more information, see [Compiler Tools Layout in Visual Studio "15"](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/).
 - Improved diagnostics: The output window now shows the column where an error occurs. For more information, see [C++ compiler diagnostics improvements in VS "15" Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/).
-- When using co-routines, the Experimental keyword "yield" (available under /await switch) has been removed. Your code should be updated to use the "co_yield" instead. For more information, see the Visual C++ Team blog. 
+- When using co-routines, the experimental keyword "yield" (available under the /await switch) has been removed. Your code should be updated to use `co_yield` instead. For more information, see the [Visual C++ Team blog](https://blogs.msdn.microsoft.com/vcblog/). 
 
 **Visual Studio 2017 version 15.3**: Additional improvements to diagnostics in the compiler. For more information, see [Diagnostic Improvements in Visual Studio 2017 15.3.0](https://blogs.msdn.microsoft.com/vcblog/2017/07/21/diagnostic-improvements-in-vs2017-15-3-0/).
 
@@ -95,29 +95,8 @@ This release brings several improvements in optimization, code generation, tools
 
 #### Visual Studio 2017 version 15.3
 
-##### C++17 features
-* …	Boyer-Moore search()	
-* [P0031R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0031r0.html) constexpr For <array> (Again) And <iterator>	
-* [P0040R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0040r3.html) Extending Memory Management Tools	
-* [P0084R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0084r2.pdf) Emplace Return Type	
-* [P0152R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0152r1.html) atomic::is_always_lock_free	
-* [P0154R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0154r1.html) hardware_destructive_interference_size, etc.	
-* [P0156R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0156r2.html) scoped_lock	
-* [P0253R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0253r1.pdf) Fixing Searcher Return Types	
-* [P0258R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0258r2.html) has_unique_object_representations	[obj_rep]
-* [P0295R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0295r0.pdf) gcd(), lcm()	
-* [P0298R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0298r3.pdf) std::byte	[byte]
-* [P0403R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0403r1.html) UDLs For <string_view> ("meow"sv, etc.)	
-* [P0418R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0418r2.html) atomic compare_exchange memory_order Requirements
-* [P0435R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0435r1.pdf) Overhauling common_type
-* [P0505R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0505r0.html) constexpr For <chrono> (Again)	
-* [P0513R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0513r0.pdf) Poisoning hash
-* [P0516R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0516r0.html) Marking shared_future Copying As noexcept
-* [P0517R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0517r0.html) Constructing future_error From future_errc
-* [P0548R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0548r1.pdf) Tweaking common_type And duration
-* [P0558R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0558r1.pdf) Resolving atomic<T> Named Base Class Inconsistencies	[atomic] 
-* [P0599R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0599r1.pdf) noexcept hash
-* [P0604R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0604r0.html) invoke_result, is_invocable, is_nothrow_invocable	[depr]
+##### C++17 features 
+Several additional C++17 features have been implemented. For more information, see [Visual C++ Language Conformance](visual-cpp-language-conformance.md).
 
 ##### Other new features
 * The Standard Library no longer depends on Magic Statics, allowing clean use in code compiled with /Zc:threadSafeInit-.
@@ -180,9 +159,7 @@ This release brings several improvements in optimization, code generation, tools
 * Changed static_assert(false, "message") to #error message. This improves compiler diagnostics because #error immediately stops compilation.
 * The Standard Library no longer marks functions as __declspec(dllimport). Modern linker technology no longer requires this.
 * Extracted SFINAE to default template arguments, which reduces clutter compared to return types and function argument types.
-* Debug checks in <random> now use the Standard Library's usual machinery, instead of the internal function _Rng_abort() which called fputs() to stderr. This function's implementation is being retained for binary compatibility, but has been removed in the next binary-incompatible version of the Standard Library.
-
-
+* Debug checks in <random> now use the Standard Library's usual machinery, instead of the internal function _Rng_abort() which called fputs() to stderr. This function's implementation is being retained for binary compatibility, but has been removed in the next binary-incompatible version of the Standard Library. 
 
 ### Open source library support  
 Vcpkg is an open-source command line tool that greatly simplifies the process of acquiring and building open source C++ static libs and DLLS in Visual Studio. For more information, see [vcpkg: A package manager for C++](vcpkg.md).
