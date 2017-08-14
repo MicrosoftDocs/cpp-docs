@@ -133,7 +133,7 @@ CMFCToolBarFontComboBox();
  If set to DEFAULT_CHARSET, the combo box contains all uniquely-named fonts in all character sets. (If there are two fonts with the same name, the combo box contains one of them.) If set to a valid character set value, the combo box contains only fonts in the specified character set. See [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) for a listing of possible character sets.  
   
  [in] `dwStyle`  
- The style of the combo box. (see [Combo-Box Styles](../../mfc/reference/combo-box-styles.md))  
+ The style of the combo box. (see [Combo-Box Styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
   
  [in] `iWidth`  
  The width in pixels of the edit control.  

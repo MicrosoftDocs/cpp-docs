@@ -68,7 +68,7 @@ EXPORTS
 #define AFX_DATA  
 ```  
   
- These lines ensure that MFC variables that are used internally or that are added to your classes are exported (or imported) from your extension DLL. For example, when deriving a class using `DECLARE_DYNAMIC`, the macro expands to add a `CRuntimeClass` member variable to your class. Leaving out these four lines might cause your DLL to compile or link incorrectly or cause an error when the client application links to the DLL.  
+ These lines ensure that MFC variables that are used internally or that are added to your classes are exported (or imported) from your MFC extension DLL. For example, when deriving a class using `DECLARE_DYNAMIC`, the macro expands to add a `CRuntimeClass` member variable to your class. Leaving out these four lines might cause your DLL to compile or link incorrectly or cause an error when the client application links to the DLL.  
   
  When building the DLL, the linker uses the .def file to create an export (.exp) file and an import library (.lib) file. The linker then uses the export file to build the DLL file. Executables that implicitly link to the DLL link to the import library when they are built.  
   
@@ -88,7 +88,7 @@ EXPORTS
   
 -   [Import into an application using __declspec(dllimport)](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
--   [Initialize a DLL](../build/initializing-a-dll.md)  
+-   [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
   
 ## What do you want to know more about?  
   

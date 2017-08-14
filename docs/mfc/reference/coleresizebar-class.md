@@ -107,7 +107,7 @@ virtual BOOL Create(
  Pointer to the parent window of the resize bar.  
   
  `dwStyle`  
- Specifies the [window style](../../mfc/reference/window-styles.md) attributes.  
+ Specifies the [window style](../../mfc/reference/styles-used-by-mfc.md#window-styles) attributes.  
   
  `nID`  
  The resize bar's child window ID.  

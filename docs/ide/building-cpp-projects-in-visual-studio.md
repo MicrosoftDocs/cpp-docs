@@ -79,8 +79,8 @@ In the Visual Studio integrated development environment (IDE), there are several
  Presents the XML structure of a .vcxproj file.  
   
 ## Related Sections  
- [VC++ Directories, Projects, Options Dialog Box](http://msdn.microsoft.com/en-us/e027448b-c811-4c3d-8531-4325ad3f6e02)  
- Discusses how to modify the search path for executable files, include files, library files, and source code files during a build  
+ [VC++ Directories, Projects, Options Dialog Box](vcpp-directories-property-page.md)  
+ (MSBuild projects only) Discusses how to modify the search path for executable files, include files, library files, and source code files during a build.  
   
  [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio)  
  Provides information on building within Visual Studio.  
@@ -94,8 +94,8 @@ In the Visual Studio integrated development environment (IDE), there are several
  [Upgrading Projects from Earlier Versions of Visual C++](../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
  Provides links to topics covering issues on upgrading Visual C++ 6.0 and later projects to Visual C++ .NET.  
   
- [Porting and Upgrading Programs](http://msdn.microsoft.com/en-us/c36c44b3-5a9b-4bb4-9b7a-469aa770ed00)  
- Provides details about porting applications and discusses makefiles.  
+[Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)  
+  Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.  
   
 ## See Also  
  [Roadmap for Windows Store apps using C++](http://msdn.microsoft.com/en-us/0b71e4a4-5d8a-4a20-b2ec-e40062675ec1)

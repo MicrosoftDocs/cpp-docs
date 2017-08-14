@@ -39,18 +39,17 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # /IMPLIB (Name Import Library)
-```  
-/IMPLIB:filename  
-```  
+  
+> /IMPLIB:*filename*  
+  
+## Parameters  
+  
+*filename*  
+A user-specified name for the import library. It replaces the default name.  
   
 ## Remarks  
- where:  
   
- *filename*  
- A user-specified name for the import library. It replaces the default name.  
-  
-## Remarks  
- The /IMPLIB option overrides the default name for the import library that LINK creates when it builds a program that contains exports. The default name is formed from the base name of the main output file and the extension .lib. A program contains exports if one or more of the following are specified:  
+The /IMPLIB option overrides the default name for the import library that LINK creates when it builds a program that contains exports. The default name is formed from the base name of the main output file and the extension .lib. A program contains exports if one or more of the following are specified:  
   
 -   The [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) keyword in the source code  
   

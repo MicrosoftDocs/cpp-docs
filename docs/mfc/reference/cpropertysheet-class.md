@@ -94,7 +94,7 @@ class CPropertySheet : public CWnd
   
  Even though `CPropertySheet` is not derived from [CDialog](../../mfc/reference/cdialog-class.md), managing a `CPropertySheet` object is like managing a `CDialog` object. For example, creation of a property sheet requires two-part construction: call the constructor, and then call [DoModal](#domodal) for a modal property sheet or [Create](#create) for a modeless property sheet. `CPropertySheet` has two types of constructors: [CPropertySheet::Construct](#construct) and [CPropertySheet::CPropertySheet](#cpropertysheet).  
   
- When you construct a `CPropertySheet` object, some [Window Styles](../../mfc/reference/window-styles.md) can cause a first-chance exception to occur. This results from the system trying to change the style of the property sheet before the sheet is created. To avoid this exception, make sure that you set the following styles when you create your `CPropertySheet`:  
+ When you construct a `CPropertySheet` object, some [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) can cause a first-chance exception to occur. This results from the system trying to change the style of the property sheet before the sheet is created. To avoid this exception, make sure that you set the following styles when you create your `CPropertySheet`:  
   
 -   DS_3DLOOK  
   
@@ -310,10 +310,10 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
  Points to parent window. If **NULL**, parent is the desktop.  
   
  `dwStyle`  
- Window styles for property sheet. For a complete list of available styles, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Window styles for property sheet. For a complete list of available styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  `dwExStyle`  
- Extended window styles for property sheet. For a complete list of available styles, see [Extended Window Styles](../../mfc/reference/extended-window-styles.md)  
+ Extended window styles for property sheet. For a complete list of available styles, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)  
   
 ### Return Value  
  Nonzero if the property sheet is created successfully; otherwise 0.  
@@ -354,7 +354,7 @@ virtual INT_PTR DoModal();
 > [!NOTE]
 >  This exception must be handled by the operating system if you are compiling with the asynchronous exception handling model. For more information about exception handling models, see [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md). In this case, do not wrap calls to `CPropertySheet::DoModal` with a C++ try-catch block in which the catch handles all exceptions, for example, `catch (...)`. This block would handle the exception intended for the operating system, and cause unpredictable behavior. However, you can safely use C++ exception handling with specific exception types or structured exception handling where the Access Violation exception is passed through to the operating system.  
   
- To avoid generating this first-chance exception, you can manually guarantee that the property sheet has the correct [Window Styles](../../mfc/reference/window-styles.md). You need to set the following styles for a property sheet:  
+ To avoid generating this first-chance exception, you can manually guarantee that the property sheet has the correct [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). You need to set the following styles for a property sheet:  
   
 -   DS_3DLOOK  
   
