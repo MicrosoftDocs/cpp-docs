@@ -50,7 +50,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 -   When possible, use cancellation tokens to cancel work. The [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) class defines a cancellation token.  
   
 
--   When you use cancellation tokens, use the [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) method to initiate cancellation and the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function to respond to cancellation. Use the [concurrency::cancellation_token_source::is_canceled](reference/cancellation-token-source-class.md#is_canceled) method to check whether any other task has requested cancellation.
+-   When you use cancellation tokens, use the [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) method to initiate cancellation and the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function to respond to cancellation. Use the [concurrency::cancellation_token::is_canceled](reference/cancellation-token-class.md#is_canceled) method to check whether any other task has requested cancellation.
   
 -   Cancellation does not occur immediately. Although new work is not started if a task or task group is cancelled, active work must check for and respond to cancellation.  
   
