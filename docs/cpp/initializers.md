@@ -543,5 +543,5 @@ Decision Graph for Initialization of Reference Types
  References that are not qualified with either the **const** or `volatile` keyword can be initialized only with objects declared as neither **const** nor `volatile`.  
   
 ### Initialization of external variables  
- Declarations of automatic, register, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as `extern`.
+ Declarations of automatic, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as `extern`.
   
