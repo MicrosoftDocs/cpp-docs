@@ -56,7 +56,9 @@ if( Amount > 100 )
     Alert();  
 }  
 else  
+{
     Balance -= Amount;  
+}
 ```  
   
 > [!NOTE]

@@ -187,7 +187,7 @@ The Visual C++ compiler predefines certain preprocessor macros, depending on the
     ```  
   
 ## Standard predefined macros  
- The compiler supports these predefined macros specified by the ISO C99 and ISO C++14 standards.  
+ The compiler supports these predefined macros specified by the ISO C99 and ISO C++17 standards.  
   
 -   **__cplusplus** Defined as an integer literal value when the translation unit is compiled as C++. Otherwise, undefined.  
   
