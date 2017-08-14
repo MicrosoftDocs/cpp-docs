@@ -37,30 +37,24 @@ translation.priority.mt:
 As part of the Visual Studio Integrated Development Environment (IDE), Visual C++ shares many windows and tools in common with other languages. Many of those, including **Solution Explorer**, the Code Editor, and the Debugger, are documented under [Visual Studio IDE](/visualstudio/ide/visual-studio-ide). Often, a shared tool or window has a slightly different set of features for C++ than for the .NET languages or Javascript. Some windows or tools are only available in Visual Studio Pro or Visual Studio Enterprise.   
   
  In addition to shared tools in the Visual Studio IDE, Visual C++ has several tools specifically for native code development. These tools are also listed in this article. For a list of which tools are available in each edition of Visual Studio, see [Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).  
-
-  
-  
 ## Creating a solution and project(s)  
 
-Visual Studio 2017 offers three ways to organize your C++ source code and related files to produce an executable (such as an .exe, .dll or .lib):
- - As an MSBuild-based project
- - As a CMake project. For more information, see [CMake support in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2017/04/17/cmake-support-in-visual-studio-whats-new-in-2017-15-2-update/).
- - As a loose collection of files in a folder with an optional JSON configuration file. For more information, see [Bring your C++ code to Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2017/04/14/bring-your-cpp-code-to-visual-studio/).
-
-> [!NOTE]
->  This section describes MSBuild projects; the later sections apply to CMake and Open Folder as well.  
- An MSBuild-based project has a project file in XML format (.vcxproj) that specifies all the files and resources needed to compile the program, as well as other configuration settings, for example the target platform (x86, x64 or ARM) and whether you are building a release version or debug version of the program. A project (or many projects) are contained in a *Solution*; for example, a solution might contain several Win32 DLL projects, and a single Win32 console application that uses those DLLs. When you build the project, the MSBuild engine consumes the project file and produces the executable file and/or any other custom output you have specified. 
-  
- **Project templates**  
+A "project" is basically a set of source code files and resources such as images or data files that are built into an executable file. Visual Studio 2017 can support any build system or custom build tools that you wish to use, with full support for Intellisense, browsing and debugging:
+ - MSBuild is the "native" build system for Visual Studio and is often the best choice for UWP apps or legacy Windows desktop applications that use MFC or ATL. For more information about MSBuild-based C++ projects, see [Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md).
+ - CMake is a cross-platform build system that is integrated into the Visual Studio IDE when you install the Desktop C++ workload. For more information, see [CMake projects in Visual C++](cmake-projects-in-visual-cpp.md).
+ - Any other C++ build system, including a loose collection of files, is supported via the Open Folder feature. You create simple JSON files to invoke your build program and configure debugging sessions. For more information, see [Bring your C++ code to Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2017/04/14/bring-your-cpp-code-to-visual-studio/).
+ 
+ 
+ **Project templates (MSBuild)**  
   
  Visual C++ comes with several templates for MSBuild-based projects; these templates contain starter code and the settings needed for a variety of basic program types. Typically you start by choosing **File &#124; New Project** to create a project from a project template, then add new source code files to that project, or start coding in the files provided. For information specific to C++ projects and project wizards, see [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md).  
   
- **Application wizards**  
+ **Application wizards (MSBuild)**  
   
  Visual C++ provides wizards for some MSBuild project types when you choose **File &#124; New Project**. A wizard guides you step-by-step through the process of creating a new project. This is useful for project types that have many options and settings. For more information, see [Creating Desktop Projects By Using Application Wizards](../ide/creating-desktop-projects-by-using-application-wizards.md).  
   
-## Creating user interfaces with designers  
- If your program has a user interface, one of the first tasks is to populate it with controls such as buttons, list boxes and so on. Visual Studio includes a visual design surface and a toolbox for each flavor of C++ application. No matter which type of app you are creating, the basic idea is the same: you drag a control from the toolbox window and drop it onto the design surface at the desired location. In the background, Visual Studio generates the resources and code required to make it all work. Then you write the code to populate the controls with data or customize their appearance and behavior.  
+## Creating user interfaces with designers (MSBuild) 
+ If your program has a user interface, one of the first tasks is to populate it with controls such as buttons, list boxes and so on. Visual Studio includes a visual design surface and a toolbox for each flavor of C++ application. No matter which type of app you are creating, the basic idea is the same: you drag a control from the toolbox window and drop it onto the design surface at the desired location. In the background, Visual Studio generates the resources and code required to make it all work. Then you write the code to populate the controls with data or customize their appearance and behavior.
   
  For more information about designing a user interface for a Universal Windows Platform app, see  [Design and UI](https://developer.microsoft.com/en-us/windows/design).  
   
@@ -108,13 +102,13 @@ Visual Studio 2017 offers three ways to organize your C++ source code and relate
   
  Use **Architecture Explorer** to view relationships between various elements in your code. For more information, see [Find code with Architecture Explorer](http://msdn.microsoft.com/en-us/b1707926-ef73-47f9-92cd-e00d0fac7e76). Use dependency graphs to view dependency relationships. For more information, see [How to: Generate Dependency Graphs for C and C++ Code](http://msdn.microsoft.com/en-us/3bd5cf9f-62f6-41d0-9f35-d4b2637cba3c).  
   
-## Adding and Editing Resources  
+## Adding and Editing Resources  (MSBuild)
  The term "resource" in the context of a Visual Studio desktop project includes things such as dialog boxes, icons, localizable strings, spash screens, database connection strings, or any arbitrary data that you want to include in the executable file.  
   
  For more information on adding and editing resources in native desktop C++ projects, see [Working with Resource Files](../windows/working-with-resource-files.md).  
   
 ## Building (compiling and linking)  
- Press **Ctrl + Shift + B** to compile and link a project. Visual Studio uses [MSBuild](/visualstudio/msbuild/msbuild1) to create executable code. You can set general build options under **Tools &#124; Options &#124; Projects and Solutions** and you can set properties for specific projects under **Project &#124; Properties**. Build errors and warnings are reported in the Error List (**Ctrl +\\, E**). Additional information is sometimes shown in the Output Window (**Alt + 2**). For more information, see  [Working with Project Properties](../ide/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md).  
+ Press **Ctrl + Shift + B** to compile and link a project. To create executable code, Visual Studio uses [MSBuild](/visualstudio/msbuild/msbuild1) or CMake or whatever build environment you set up via **Open Folder**. For MSBuild projects, you set general build options under **Tools &#124; Options &#124; Projects and Solutions** and you can set properties for specific projects under **Project &#124; Properties**. Build errors and warnings are reported in the Error List (**Ctrl +\\, E**). Non-MSBuild projects are configured with JSON files that you create in Solution Explorer. Whatever build system you use, the Output Window (**Alt + 2**) shows information about the build process. For more information about MSBuild configurations, see  [Working with Project Properties](../ide/working-with-project-properties.md) and [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md).  
   
  You can also use the Visual C++ compiler (cl.exe) and many other build-related standalone tools such as NMAKE and LIB directly from the command line. For more information, see [Building on the Command Line](../build/building-on-the-command-line.md) and [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).  
   
@@ -136,9 +130,10 @@ Visual Studio 2017 offers three ways to organize your C++ source code and relate
 |||  
 |-|-|  
 |[Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|  
-|[Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ projects in Visual Studio and links to other articles that explain how to create and manage them.|  
+|[Creating and managing MSBuild-based projects](../ide/creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ MSBuild-based projects in Visual Studio and links to other articles that explain how to create and manage them.|  
+|[CMake projects in Visual C++](cmake-projects-in-visual-cpp.md).|Describes how to build CMake or other non-MSBuild projects in Visual C++.|
 |[Building C/C++ Programs](../build/building-c-cpp-programs.md)|Describes how to build C++ projects.|  
 |[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|  
-|[Porting and Upgrading Programs](http://msdn.microsoft.com/en-us/c36c44b3-5a9b-4bb4-9b7a-469aa770ed00)|Links to articles that describe how to open C++ apps that were created in earlier versions of Visual Studio, and also how to open apps that were created by using tools other than Visual Studio.|  
+|[Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)|Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.|  
 |||  
 |[Visual C++](../top/visual-cpp-in-visual-studio.md)|Describes key features of Visual C++ in Visual Studio and links to the rest of the Visual C++ documentation.|
