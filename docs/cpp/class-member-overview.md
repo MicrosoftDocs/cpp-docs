@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Class Member Overview
-A class or struct consists of its members. The work that a class does is performed by its member functions. The state that it maintains is stored in its data members. Initialization of members is done by constructors, and cleanup work such as freeing of memory and releasing of resources is done by constructors. In C++11 and later, data members can (and usually should) be initialized at the point of declaration.  
+A class or struct consists of its members. The work that a class does is performed by its member functions. The state that it maintains is stored in its data members. Initialization of members is done by constructors, and cleanup work such as freeing of memory and releasing of resources is done by destructors. In C++11 and later, data members can (and usually should) be initialized at the point of declaration.  
   
 ## Kinds of class members  
  The full list of member categories is as follows:  
