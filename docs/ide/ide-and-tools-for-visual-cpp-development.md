@@ -41,7 +41,7 @@ As part of the Visual Studio Integrated Development Environment (IDE), Visual C+
 
 A "project" is basically a set of source code files and resources such as images or data files that are built into an executable file. Visual Studio 2017 can support any build system or custom build tools that you wish to use, with full support for Intellisense, browsing and debugging:
  - MSBuild is the "native" build system for Visual Studio and is often the best choice for UWP apps or legacy Windows desktop applications that use MFC or ATL. For more information about MSBuild-based C++ projects, see [Creating and managing MSBuild-based projects](creating-and-managing-visual-cpp-projects.md).
- - CMake is a cross-platform build system that is integrated into the Visual Studio IDE when you install the Desktop C++ workload. For more information, see [CMake projects in Visual C++](cmake-projects-in-visual-cpp.md).
+ - CMake is a cross-platform build system that is integrated into the Visual Studio IDE when you install the Desktop C++ workload. For more information, see [CMake projects in Visual C++](cmake-tools-for-visual-cpp.md).
  - Any other C++ build system, including a loose collection of files, is supported via the Open Folder feature. You create simple JSON files to invoke your build program and configure debugging sessions. For more information, see [Bring your C++ code to Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2017/04/14/bring-your-cpp-code-to-visual-studio/).
  
  
@@ -131,7 +131,7 @@ A "project" is basically a set of source code files and resources such as images
 |-|-|  
 |[Visual C++ Tools and Features in Visual Studio Editions](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)|Shows which features are available in the various editions of Visual Studio.|  
 |[Creating and managing MSBuild-based projects](../ide/creating-and-managing-visual-cpp-projects.md)|Provides an overview of C++ MSBuild-based projects in Visual Studio and links to other articles that explain how to create and manage them.|  
-|[CMake projects in Visual C++](cmake-projects-in-visual-cpp.md).|Describes how to build CMake or other non-MSBuild projects in Visual C++.|
+|[CMake projects in Visual C++](cmake-tools-for-visual-cpp.md).|Describes how to build CMake or other non-MSBuild projects in Visual C++.|
 |[Building C/C++ Programs](../build/building-c-cpp-programs.md)|Describes how to build C++ projects.|  
 |[Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)|Provides an overview of deployment for C++ apps and links to other articles that describe deployment in detail.|  
 |[Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)|Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.|  
