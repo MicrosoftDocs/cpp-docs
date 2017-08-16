@@ -50,7 +50,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 -   When possible, use cancellation tokens to cancel work. The [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) class defines a cancellation token.  
   
 
--   When you use cancellation tokens, use the [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) method to initiate cancellation and the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function to respond to cancellation.  
+-   When you use cancellation tokens, use the [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) method to initiate cancellation and the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function to respond to cancellation. Use the [concurrency::cancellation_token::is_canceled](reference/cancellation-token-class.md#is_canceled) method to check whether any other task has requested cancellation.
   
 -   Cancellation does not occur immediately. Although new work is not started if a task or task group is cancelled, active work must check for and respond to cancellation.  
   
@@ -97,7 +97,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
  For more examples that cancel parallel tasks, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), and [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).  
   
 ###  <a name="tokens"></a> Using a Cancellation Token to Cancel Parallel Work  
- The `task`, `task_group`, and `structured_task_group` classes support cancellation through the use of cancellation tokens. The PPL defines the [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) and [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) classes for this purpose. When you use a cancellation token to cancel work, the runtime does not start new work that subscribes to that token. Work that is already active can monitor its cancellation token and stop when it can.  
+ The `task`, `task_group`, and `structured_task_group` classes support cancellation through the use of cancellation tokens. The PPL defines the [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) and [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) classes for this purpose. When you use a cancellation token to cancel work, the runtime does not start new work that subscribes to that token. Work that is already active can use the [is_canceled]((../../parallel/concrt/reference/cancellation-token-class.md#is_canceled) member function to monitor the cancellation token and stop when it can.  
   
 
  To initiate cancellation, call the [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) method. You respond to cancellation in these ways:  

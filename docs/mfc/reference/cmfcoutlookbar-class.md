@@ -242,7 +242,7 @@ virtual BOOL Create(
  Specifies the control ID. Must be distinct from other control IDs used in the application.  
   
  [in] `dwStyle`  
- Specifies the desired control bar style. For possible values, see [Window Styles](../../mfc/reference/window-styles.md).  
+ Specifies the desired control bar style. For possible values, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
  [in] `dwControlBarStyle`  
  Specifies the special library-defined styles.  

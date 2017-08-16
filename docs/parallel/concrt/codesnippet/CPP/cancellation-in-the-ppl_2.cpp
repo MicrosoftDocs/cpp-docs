@@ -29,7 +29,7 @@ int wmain()
         while (moreToDo)
         {
             // Check for cancellation.
-            if (is_task_cancellation_requested())
+            if (token.is_canceled())
             {
                 // TODO: Perform any necessary cleanup here...
 

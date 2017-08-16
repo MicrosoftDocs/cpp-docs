@@ -43,7 +43,7 @@ The *special member functions* are class (or struct) member functions that, in c
   
 You can explicitly declare a default special member function by using the `= default` keyword. This causes the compiler to define the function only if needed, in the same way as if the function was not declared at all. 
 
-In some cases, the compiler may generate *deleted* special member functions, which are not defined and therefore not callable. This can happen in cases where a call to a particular special member function on a class doesn't make sense, given other properties of the class. To explicitly prevent automatic generation of a special member function, you can declare it as deleted by using the `= deleted` keyword.  
+In some cases, the compiler may generate *deleted* special member functions, which are not defined and therefore not callable. This can happen in cases where a call to a particular special member function on a class doesn't make sense, given other properties of the class. To explicitly prevent automatic generation of a special member function, you can declare it as deleted by using the `= delete` keyword.  
   
 The compiler generates a *default constructor*, a constructor that takes no arguments, only when you have not declared any other constructor. If you have declared only a constructor that takes parameters, code that attempts to call a default constructor causes the compiler to produce an error message. The compiler-generated default constructor performs simple member-wise [default initialization](initializers.md#default_initialization) of the object. Default initialization leaves all member variables in an indeterminate state.  
   

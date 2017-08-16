@@ -35,7 +35,9 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Language Strings
-The `setlocale` and `_create_locale` functions can use the Windows NLS API supported languages on operating systems that do not use the Unicode code page. For a list of supported languages by operating system version, see [National Language Support (NLS) API Reference](http://msdn.microsoft.com/goglobal/bb896001.aspx). The language string can be any of the values in the **Language** and **Language name abbreviation** columns of the list of supported languages. The C run-time library implementation also supports these language strings:  
+The `setlocale` and `_create_locale` functions can use the Windows NLS API supported languages on operating systems that do not use the Unicode code page. For a list of supported languages by operating system version, see [National Language Support (NLS) API Reference](https://www.microsoft.com/resources/msdn/goglobal/default.mspx). The language string can be any of the values in the **Language** and **Language name abbreviation** columns of the list of supported languages. For additional information on language support by operating system version, see [Appendix A: Product Behavior](http://msdn.microsoft.com/goglobal/bb896001.aspx) in [MS-LCID]: Windows Language Code Identifier (LCID) Reference.   
+  
+The C run-time library implementation also supports these language strings:  
   
 |Language string|Equivalent Locale Name|  
 |---------------------|----------------------------|  

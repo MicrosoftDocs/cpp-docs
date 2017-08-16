@@ -46,7 +46,7 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
   
 -   [Button control](../mfc/reference/cbutton-class.md)  
   
--   [Check Box control](../mfc/reference/button-styles.md)  
+-   [Check Box control](../mfc/reference/styles-used-by-mfc.md#button-styles)  
   
 -   [Combo Box control](../mfc/reference/ccombobox-class.md)  
   
@@ -56,7 +56,7 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
   
 -   [List Box control](../mfc/reference/clistbox-class.md)  
   
--   [Radio Button control](../mfc/reference/button-styles.md)  
+-   [Radio Button control](../mfc/reference/styles-used-by-mfc.md#button-styles)  
   
 -   [Static Text control](../mfc/reference/cstatic-class.md)  
   
@@ -111,7 +111,7 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
  [Controls](../mfc/controls-mfc.md)   
  [Control Classes](../mfc/control-classes.md)   
  [Dialog Box Classes](../mfc/dialog-box-classes.md)   
- [Scroll-Bar Styles](../mfc/reference/scroll-bar-styles.md)   
+ [Scroll-Bar Styles](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles)   
  [Rich Edit Control Examples](../mfc/rich-edit-control-examples.md)   
  [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)

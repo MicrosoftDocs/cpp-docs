@@ -54,12 +54,12 @@ The macros and globals listed below apply to ODBC-based database applications. T
   
 |||  
 |-|-| 
-|[AfxDbInitModule](#afxdbinitmodule)|Adds database support for a regular DLL that is dynamically linked to MFC.| 
+|[AfxDbInitModule](#afxdbinitmodule)|Adds database support for a regular MFC DLL that is dynamically linked to MFC.| 
 |[AfxGetHENV](#afxgethenv)|Retrieves a handle to the ODBC environment currently in use by MFC. You can use this handle in direct ODBC calls.|  
 
 
 ## <a name="afxdbinitmodule"></a> AfxDbInitModule
-For MFC database (or DAO) support from a regular DLL that is dynamically linked to MFC, add a call to this function in your regular DLL's **CWinApp::InitInstance** function to initialize the MFC database DLL.  
+For MFC database (or DAO) support from a regular MFC DLL that is dynamically linked to MFC, add a call to this function in your regular MFC DLL's **CWinApp::InitInstance** function to initialize the MFC database DLL.  
    
 ### Syntax    
 ```
@@ -67,7 +67,7 @@ void AFXAPI AfxDbInitModule( );
 ```  
    
 ### Remarks  
- Make sure this call occurs before any base-class call or any added code which accesses the MFC database DLL. The MFC database DLL is an extension DLL; in order for an extension DLL to get wired into a **CDynLinkLibrary** chain, it must create a **CDynLinkLibrary** object in the context of every module that will be using it. `AfxDbInitModule` creates the **CDynLinkLibrary** object in your regular DLL's context so that it gets wired into the **CDynLinkLibrary** object chain of the regular DLL.  
+ Make sure this call occurs before any base-class call or any added code which accesses the MFC database DLL. The MFC database DLL is an MFC extension DLL; in order for an MFC extension DLL to get wired into a **CDynLinkLibrary** chain, it must create a **CDynLinkLibrary** object in the context of every module that will be using it. `AfxDbInitModule` creates the **CDynLinkLibrary** object in your regular MFC DLL's context so that it gets wired into the **CDynLinkLibrary** object chain of the regular MFC DLL.  
    
 ### Requirements  
  **Header:** <afxdll_.h>  

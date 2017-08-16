@@ -38,7 +38,8 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Exporting from a DLL
+# Exporting from a DLL  
+  
 A DLL file has a layout very similar to an .exe file, with one important difference — a DLL file contains an exports table. The exports table contains the name of every function that the DLL exports to other executables. These functions are the entry points into the DLL; only the functions in the exports table can be accessed by other executables. Any other functions in the DLL are private to the DLL. The exports table of a DLL can be viewed by using the [DUMPBIN](../build/reference/dumpbin-reference.md) tool with the /EXPORTS option.  
   
  You can export functions from a DLL using two methods:  
@@ -65,9 +66,9 @@ A DLL file has a layout very similar to an .exe file, with one important differe
   
 -   [Determine which exporting method to use](../build/determining-which-exporting-method-to-use.md)  
   
--   [Determine which linking method to use](../build/determining-which-linking-method-to-use.md)  
+-   [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)  
   
--   [Initialize a DLL](../build/initializing-a-dll.md)  
+-   [Initialize a DLL](../build/run-time-library-behavior.md#initializing-a-dll)  
   
 ## What do you want to know more about?  
   

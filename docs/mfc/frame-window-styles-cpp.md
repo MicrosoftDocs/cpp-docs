@@ -50,7 +50,7 @@ The frame windows you get with the framework are suitable for most programs, but
   
 -   [Changing the styles of a window created by MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)  
   
--   [Window styles](../mfc/reference/window-styles.md)  
+-   [Window styles](../mfc/reference/styles-used-by-mfc.md#window-styles)  
   
 ## See Also  
  [Frame Windows](../mfc/frame-windows.md)

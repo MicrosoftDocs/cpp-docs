@@ -62,10 +62,12 @@ enum [class|struct]
   
 ```  
 // Forward declaration of enumerations  (C++11):  
-enum A : int; // non-scoped enum must have type specifiedenum class B; // scoped enum defaults to intenum class C : short;  
+enum A : int; // non-scoped enum must have type specified
+enum class B; // scoped enum defaults to int but ...
+enum class C : short;  // ... may have any integral underlying type
 ```  
   
-#### Parameters  
+## Parameters  
  `identifier`  
  The type name given to the enumeration.  
   
@@ -73,12 +75,12 @@ enum A : int; // non-scoped enum must have type specifiedenum class B; // scoped
  The underlying type of the enumerators; all enumerators have the same underlying type. May be any integral type.  
   
  `enum-list`  
- Comma-separated list of the enumerators in the enumeration. Every enumerator or variable name in the scope must be unique. However, the values can be duplicated. In a unscoped enum, the scope is the surrounding scope; in a scoped enum, the scope is the `enum-list` itself.  
+ Comma-separated list of the enumerators in the enumeration. Every enumerator or variable name in the scope must be unique. However, the values can be duplicated. In a unscoped enum, the scope is the surrounding scope; in a scoped enum, the scope is the `enum-list` itself.  In a scoped enum, the list may be empty which in effect defines a new integral type.
   
  `class`  
  By using this keyword in the declaration, you specify the enum is scoped, and an `identifier` must be provided. You can also use the `struct` keyword in place of `class`, as they are semantically equivalent in this context.  
   
-## Remarks  
+## Enumerator scope  
  An enumeration provides context to describe a range of values which are represented as named constants and are also called enumerators. In the original C and C++ enum types, the unqualified enumerators are visible throughout the scope in which the enum is declared. In scoped enums, the enumerator name must be qualified by the enum type name. The following example demonstrates this basic difference between the two kinds of enums:  
   
 ```cpp  
@@ -123,7 +125,7 @@ enum Suit { Diamonds = 5, Hearts, Clubs = 4, Spades };
   
  Then the values of `Diamonds`, `Hearts`, `Clubs`, and `Spades` are 5, 6, 4, and 5, respectively. Notice that 5 is used more than once; this is allowed even though it may not be intended. These rules are the same for scoped enums.  
   
- **Casting rules**  
+ ## Casting rules  
   
  Unscoped enum constants can be implicitly converted to `int`, but an `int` is never implicitly convertible to an enum value. The following example shows what happens if you try to assign `hand` a value that is not a `Suit`:  
   
@@ -162,7 +164,45 @@ namespace ScopedEnumConversions
   
 ```  
   
- Notice that the line `hand = account_num;` still causes the error that occurs with unscoped enums, as shown earlier. It is allowed with an explicit cast. However, with scoped enums, the attempted conversion in the next statement, `account_num = Suit::Hearts;`, is no longer allowed without an explicit cast.  
+ Notice that the line `hand = account_num;` still causes the error that occurs with unscoped enums, as shown earlier. It is allowed with an explicit cast. However, with scoped enums, the attempted conversion in the next statement, `account_num = Suit::Hearts;`, is no longer allowed without an explicit cast. 
+
+## Enums with no enumerators
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): By defining an enum (regular or scoped) with an explicit underlying type and no enumerators, you can in effect introduce a new integral type that has no implicit conversion to any other type. By using this type instead of its built-in underlying type, you can eliminate the potential for subtle errors caused by inadvertent implicit conversions.  
+
+
+```cpp
+enum class byte : unsigned char { };
+```
+
+The new type is an exact copy of the underlying type, and therefore has the same calling convention, which means it can be used across ABIs without any performance penalty. No cast is required when variables of the type are initialized by using direct-list initialization. The following example shows how to initialize enums with no enumerators in various contexts:
+
+```cpp
+enum class byte : unsigned char { };
+
+enum class E : int { };
+E e1{ 0 };
+E e2 = E{ 0 };
+
+struct X 
+{
+    E e{ 0 };
+    X() : e{ 0 } { }
+};
+
+E* p = new E{ 0 }; 
+
+void f(E e) {};
+
+int main()
+{
+    f(E{ 0 });
+    byte i{ 42 };
+    byte j = byte{ 42 };
+
+    // unsigned char c = j; // C2440: 'initializing': cannot convert from 'byte' to 'unsigned char'
+    return 0;
+}
+``` 
   
 ## See Also  
  [C Enumeration Declarations](../c-language/c-enumeration-declarations.md)   

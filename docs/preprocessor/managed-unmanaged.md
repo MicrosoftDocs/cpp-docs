@@ -74,7 +74,7 @@ Enable function-level control for compiling functions as managed or unmanaged.
   
 ## Example  
   
-```  
+```cpp  
 // pragma_directives_managed_unmanaged.cpp  
 // compile with: /clr  
 #include <stdio.h>  

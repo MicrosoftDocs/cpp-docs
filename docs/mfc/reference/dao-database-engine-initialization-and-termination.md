@@ -72,9 +72,9 @@ void AfxDaoTerm();
 ```  
   
 ### Remarks  
- Typically, you only need to call this function in a regular DLL; an application will automatically call `AfxDaoTerm` when it is needed.  
+ Typically, you only need to call this function in a regular MFC DLL; an application will automatically call `AfxDaoTerm` when it is needed.  
   
- In regular DLLs, call `AfxDaoTerm` before the `ExitInstance` function, but after all MFC DAO objects have been destroyed.  
+ In regular MFC DLLs, call `AfxDaoTerm` before the `ExitInstance` function, but after all MFC DAO objects have been destroyed.  
   
  For related information, see [Technical Note 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).  
 

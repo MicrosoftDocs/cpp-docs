@@ -114,6 +114,7 @@ LINK.exe links Common Object File Format (COFF) object files and libraries to cr
 |[/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md)|Includes the specified information in the mapfile.|  
 |[/MERGE](../../build/reference/merge-combine-sections.md)|Combines sections.|  
 |[/MIDL](../../build/reference/midl-specify-midl-command-line-options.md)|Specifies MIDL command-line options.|  
+|[/NATVIS](../../build/reference/natvis-add-natvis-to-pdb.md)|Adds debugger visualizers from a Natvis file to the PDB.|  
 |[/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)|Suppresses the creation of a .NET Framework assembly.|  
 |[/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md)|Ignores all (or the specified) default libraries when external references are resolved.|  
 |[/NOENTRY](../../build/reference/noentry-no-entry-point.md)|Creates a resource-only DLL.|  
