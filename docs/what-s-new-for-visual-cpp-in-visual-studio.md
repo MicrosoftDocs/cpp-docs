@@ -99,7 +99,6 @@ This release brings several improvements in optimization, code generation, tools
 Several additional C++17 features have been implemented. For more information, see [Visual C++ Language Conformance](visual-cpp-language-conformance.md).
 
 ##### Other new features
-* The Standard Library no longer depends on Magic Statics, allowing clean use in code compiled with /Zc:threadSafeInit-.
 * Implemented P0602R0 "variant and optional should propagate copy/move triviality".
 * The Standard Library now officially tolerates dynamic RTTI being disabled via /GR-. dynamic_pointer_cast() and rethrow_if_nested() inherently require dynamic_cast, so the Standard Library now marks them as =delete under /GR-.
 * Even when dynamic RTTI has been disabled via /GR-, "static RTTI" (in the form of typeid(SomeType)) is still available and powers several Standard Library components. The Standard Library now supports disabling this too, via /D_HAS_STATIC_RTTI=0. *Note that this will disable std::any, std::function's target() and target_type(), and shared_ptr's get_deleter().*
