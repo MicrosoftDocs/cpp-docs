@@ -43,17 +43,21 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/AI](../../build/reference/ai-specify-metadata-directories.md)|Specifies a directory to search to resolve file references passed to the [#using](../../preprocessor/hash-using-directive-cpp.md) directive.|  
 |[/analyze](../../build/reference/analyze-code-analysis.md)|Enable code analysis.|  
 |[/arch](../../build/reference/arch-minimum-cpu-architecture.md)|Specifies the architecture for code generation.|  
+|[/await](await-enable-coroutine-support.md)|Enable coroutines (resumable functions) extensions.|  
 |[/bigobj](../../build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md)|Increases the number of addressable sections in an .obj file.|  
 |[/C](../../build/reference/c-preserve-comments-during-preprocessing.md)|Preserves comments during preprocessing.|  
 |[/c](../../build/reference/c-compile-without-linking.md)|Compiles without linking.|  
 |[/cgthreads](../../build/reference/cgthreads-code-generation-threads.md)|Specifies number of cl.exe threads to use for optimization and code generation.|  
 |[/clr](../../build/reference/clr-common-language-runtime-compilation.md)|Produces an output file to run on the common language runtime.|  
+|[/constexpr](constexpr-control-constexpr-evaluation.md)|Control constexpr evaluation at compile-time.|  
 |[/D](../../build/reference/d-preprocessor-definitions.md)|Defines constants and macros.|  
+|[/diagnostics](diagnostics-compiler-diagnostic-options.md)|Controls the format of diagnostic messages.|  
 |[/doc](../../build/reference/doc-process-documentation-comments-c-cpp.md)|Process documentation comments to an XML file.|  
 |[/E](../../build/reference/e-preprocess-to-stdout.md)|Copies preprocessor output to standard output.|  
 |[/EH](../../build/reference/eh-exception-handling-model.md)|Specifies the model of exception handling.|  
 |[/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to standard output.|  
 |[/errorReport](../../build/reference/errorreport-report-internal-compiler-errors.md)|Allows you to provide internal compiler error (ICE) information directly to the Visual C++ team.|  
+|[/execution-charset](execution-charset-set-execution-character-set.md)|Set execution character set.|  
 |[/F](../../build/reference/f-set-stack-size.md)|Sets stack size.|  
 |[/favor](../../build/reference/favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specific [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] architecture or for the specifics of micro-architectures in both the AMD64 and Extended Memory 64 Technology (EM64T) architectures.|  
 |[/FA](../../build/reference/fa-fa-listing-file.md)|Creates a listing file.|  
@@ -120,6 +124,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Ox](../../build/reference/ox-full-optimization.md)|Uses maximum optimization (/Ob2gity /Gs).|  
 |[/Oy](../../build/reference/oy-frame-pointer-omission.md)|Omits frame pointer (x86 only).|  
 |[/P](../../build/reference/p-preprocess-to-a-file.md)|Writes preprocessor output to a file.|  
+|[/permissive-](permissive-standards-conformance.md)|Set standard-conformance mode.|  
 |[/Qfast_transcendentals](../../build/reference/qfast-transcendentals-force-fast-transcendentals.md)|Generates fast transcendentals.|  
 |[/QIfist](../../build/reference/qifist-suppress-ftol.md)|Deprecated. Suppresses `_ftol` when a conversion from a floating-point type to an integral type is required (x86 only).|  
 |[/Qimprecise_fwaits](../../build/reference/qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Removes `fwait` commands inside `try` blocks.|  
@@ -129,11 +134,17 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/RTC](../../build/reference/rtc-run-time-error-checks.md)|Enables run-time error checking.|  
 |[/sdl](../../build/reference/sdl-enable-additional-security-checks.md)|Enables additional security features and warnings.|  
 |[/showIncludes](../../build/reference/showincludes-list-include-files.md)|Displays a list of include files during compilation.|  
-|[/Tc](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)<br /><br /> [/TC](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies a C source file.|  
-|[/Tp](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)<br /><br /> [/TP](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies a C++ source file.|  
+|[/source-charset](source-charset-set-source-character-set.md)|Set source character set.|  
+|[/std](std-specify-language-standard-version.md)|C++ standard version compatibility selector.|  
+|[/Tc](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies a C source file.|  
+|[/TC](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies all source files are C.|  
+|[/Tp](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies a C++ source file.|  
+|[/TP](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies all source files are C++.|  
 |[/U](../../build/reference/u-u-undefine-symbols.md)|Removes a predefined macro.|  
 |[/u](../../build/reference/u-u-undefine-symbols.md)|Removes all predefined macros.|  
+|[/utf-8](utf-8-set-source-and-executable-character-sets-to-utf-8.md)|Set source and execution character sets to UTF-8.|  
 |[/V](../../build/reference/v-version-number.md)|Deprecated. Sets the .obj file version string.|  
+|[/validate-charset](validate-charset-validate-for-compatible-characters.md)|Validate UTF-8 files for only compatible characters.|  
 |[/vd](../../build/reference/vd-disable-construction-displacements.md)|Suppresses or enables hidden vtordisp class members.|  
 |[/vmb](../../build/reference/vmb-vmg-representation-method.md)|Uses best base for pointers to members.|  
 |[/vmg](../../build/reference/vmb-vmg-representation-method.md)|Uses full generality for pointers to members.|  

@@ -7,7 +7,9 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - "std option"
+  - "/std"
+  - "-std"
+  - "VC.Project.VCCLCompilerTool.CppLanguageStandard"
 dev_langs: 
   - "C++"
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
@@ -41,6 +43,8 @@ The default **/std:c++14** option enables the set of C++14 features implemented 
   
 -   [u8 character literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)  
   
+For additional information on which C++17 features are enabled when **/std:c++14** is specified, see the notes in [Visual C++ Language Conformance](../../visual-cpp-language-conformance.md).
+  
 The **/std:c++17** option enables the set of C++17 features implemented by the Visual C++ compiler. This option disables compiler and standard library support for features that are changed or new in more recent versions of the Working Draft and defect updates of the C++ Standard.  
   
 The **/std:c++latest** option enables the set of C++ language and library features implemented by Visual C++ to track the most recent Working Draft and defect updates of the C++ Standard. Use this switch to get the latest language features supported by the compiler. For a list of supported language and library features, see [What's New for Visual C++](../../what-s-new-for-visual-cpp-in-visual-studio.md). The **/std:c++latest** option does not enable features guarded by the **/experimental** switch.  
@@ -54,9 +58,9 @@ The **/std:c++14** and **/std:c++latest** options are available beginning in Vis
   
 1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Select **Configuration Properties**, **C/C++**, **Command Line**.  
+2.  Select **Configuration Properties**, **C/C++**, **Language**.  
   
-3.  In **Additional Options**, enter **/std:c++latest** to enable the latest language feature support, or **/std:c++14** to disable it and use only C++14 language features.  
+3.  In **C++ Language Standard**, choose the language standard to support from the dropdown control, then choose **OK** or **Apply** to save your changes.  
   
 ## See Also  
   

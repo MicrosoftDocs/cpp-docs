@@ -129,6 +129,7 @@ This article contains a categorical list of compiler options. For an alphabetica
   
 |Option|Purpose|  
 |------------|-------------|  
+|[/constexpr](constexpr-control-constexpr-evaluation.md)|Control constexpr evaluation at compile-time.|  
 |[/openmp](../../build/reference/openmp-enable-openmp-2-0-support.md)|Enables [#pragma omp](../../preprocessor/omp.md) in source code.|  
 |[/vd](../../build/reference/vd-disable-construction-displacements.md)|Suppresses or enables hidden `vtordisp` class members.|  
 |[/vmb](../../build/reference/vmb-vmg-representation-method.md)|Uses best base for pointers to members.|  
@@ -161,15 +162,6 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/MT](../../build/reference/md-mt-ld-use-run-time-library.md)|Compiles to create a multithreaded executable file, by using LIBCMT.lib.|  
 |[/MTd](../../build/reference/md-mt-ld-use-run-time-library.md)|Compiles to create a debug multithreaded executable file, by using LIBCMTD.lib.|  
   
-### Precompiled Header  
-  
-|Option|Purpose|  
-|------------|-------------|  
-|[/Y-](../../build/reference/y-ignore-precompiled-header-options.md)|Ignores all other precompiled-header compiler options in the current build.|  
-|[/Yc](../../build/reference/yc-create-precompiled-header-file.md)|Creates a precompiled header file.|  
-|[/Yd](../../build/reference/yd-place-debug-information-in-object-file.md)|Places complete debugging information in all object files.|  
-|[/Yu](../../build/reference/yu-use-precompiled-header-file.md)|Uses a precompiled header file during build.|  
-  
 ### Miscellaneous  
   
 |Option|Purpose|  
@@ -191,8 +183,10 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/nologo](../../build/reference/nologo-suppress-startup-banner-c-cpp.md)|Suppresses display of sign-on banner.|  
 |[/sdl](../../build/reference/sdl-enable-additional-security-checks.md)|Enables additional security features and warnings.|  
 |[/showIncludes](../../build/reference/showincludes-list-include-files.md)|Displays a list of all include files during compilation.|  
-|[/Tc](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) [/TC](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies a C source file.|  
-|[/Tp](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) [/TP](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies a C++ source file.|  
+|[/Tc](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies a C source file.|  
+|[/TC](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies all source files are C.|  
+|[/Tp](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies a C++ source file.|  
+|[/TP](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Specifies all source files are C++.|  
 |[/V](../../build/reference/v-version-number.md)|Deprecated. Sets the version string.|  
 |[/w](../../build/reference/compiler-option-warning-level.md)|Disables all warnings.|  
 |[/W0, /W1, /W2, /W3, /W4](../../build/reference/compiler-option-warning-level.md)|Sets output warning level.|  
@@ -202,12 +196,22 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/we](../../build/reference/compiler-option-warning-level.md)|Treats the specified warning as an error.|  
 |[/WL](../../build/reference/wl-enable-one-line-diagnostics.md)|Enables one-line diagnostics for error and warning messages when compiling C++ source code from the command line.|  
 |[/wo](../../build/reference/compiler-option-warning-level.md)|Displays the specified warning only once.|  
-|[/Wp64](../../build/reference/wp64-detect-64-bit-portability-issues.md)|Obsolete. Detects 64-bit portability problems.|  
 |[/Wv](../../build/reference/compiler-option-warning-level.md)|Disables warnings introduced by later versions of the compiler.|  
 |[/WX](../../build/reference/compiler-option-warning-level.md)|Treats warnings as errors.|  
+|[/Yc](../../build/reference/yc-create-precompiled-header-file.md)|Create .PCH file.|  
 |[/Yd](../../build/reference/yd-place-debug-information-in-object-file.md)|Deprecated. Places complete debugging information in all object files. Use [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) instead.|  
 |[/Yl](../../build/reference/yl-inject-pch-reference-for-debug-library.md)|Injects a PCH reference when creating a debug library.|  
+|[/Yu](../../build/reference/yu-use-precompiled-header-file.md)|Uses a precompiled header file during build.|  
+|[/Y-](../../build/reference/y-ignore-precompiled-header-options.md)|Ignores all other precompiled-header compiler options in the current build.|  
 |[/Zm](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md)|Specifies the precompiled header memory allocation limit.|  
+|[/await](await-enable-coroutine-support.md)|Enable coroutines (resumable functions) extensions.|  
+|[/source-charset](source-charset-set-source-character-set.md)|Set source character set.|
+|[/execution-charset](execution-charset-set-execution-character-set.md)|Set execution character set.|
+|[/utf-8](utf-8-set-source-and-executable-character-sets-to-utf-8.md)|Set source and execution character sets to UTF-8.|
+|[/validate-charset](validate-charset-validate-for-compatible-characters.md)|Validate UTF-8 files for only compatible characters.|
+|[/diagnostics](diagnostics-compiler-diagnostic-options.md)|Controls the format of diagnostic messages.|
+|[/permissive-](permissive-standards-conformance.md)|Set standard-conformance mode.|
+|[/std](std-specify-language-standard-version.md)|C++ standard version compatibility selector.|
   
 ### Deprecated and Removed Compiler Options  
   
@@ -222,6 +226,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Og](../../build/reference/og-global-optimizations.md)|Deprecated. Uses global optimizations.|  
 |[QIfist](../../build/reference/qifist-suppress-ftol.md)|Deprecated. Once used to specify how to convert from a floating-point type to an integral type.|  
 |[/V](../../build/reference/v-version-number.md)|Deprecated. Sets the .obj file version string.|  
+|[/Wp64](../../build/reference/wp64-detect-64-bit-portability-issues.md)|Obsolete. Detects 64-bit portability problems.|  
 |[/Yd](../../build/reference/yd-place-debug-information-in-object-file.md)|Deprecated. Places complete debugging information in all object files. Use [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) instead.|  
 |[/Zc:forScope-](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md)|Deprecated. Disables conformance in for loop scope.|  
 |[/Ze](../../build/reference/za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|  
