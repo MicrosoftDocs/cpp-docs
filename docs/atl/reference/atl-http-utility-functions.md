@@ -48,7 +48,7 @@ inline BOOL AtlCanonicalizeUrl(
  Caller-allocated buffer to receive the canonicalized URL.  
   
  `pdwMaxLength`  
- Pointer to a variable that contains the length in characters of `szCanonicalized`. If the function succeeds, the variable receives the number of characters written to the buffer not including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
+ Pointer to a variable that contains the length in characters of `szCanonicalized`. If the function succeeds, the variable receives the number of characters written to the buffer including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
   
  `dwFlags`  
  ATL_URL flags controlling the behavior of this function. 
@@ -93,7 +93,7 @@ inline BOOL AtlCombineUrl(
  Caller-allocated buffer to receive the canonicalized URL.  
   
  `pdwMaxLength`  
- Pointer to a variable that contains the length in characters of `szBuffer`. If the function succeeds, the variable receives the number of characters written to the buffer not including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
+ Pointer to a variable that contains the length in characters of `szBuffer`. If the function succeeds, the variable receives the number of characters written to the buffer including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
   
  `dwFlags`  
  Flags controlling the behavior of this function. See [AtlCanonicalizeUrl](#atlcanonicalizeurl).  
@@ -131,7 +131,7 @@ inline BOOL AtlEscapeUrl(
  Caller-allocated buffer to which the converted URL will be written.  
   
  `pdwStrLen`  
- Pointer to a DWORD variable. If the function succeeds, `pdwStrLen` receives the number of characters written to the buffer, not including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character. When using the wide character version of this method, `pdwStrLen` receives the number of characters required, not the number of bytes.  
+ Pointer to a DWORD variable. If the function succeeds, `pdwStrLen` receives the number of characters written to the buffer including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character. When using the wide character version of this method, `pdwStrLen` receives the number of characters required, not the number of bytes.  
   
  `dwMaxLength`  
  The size of the buffer `lpszStringOut`.  
