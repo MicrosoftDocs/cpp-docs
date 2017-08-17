@@ -198,7 +198,7 @@ inline BOOL AtlUnescapeUrl(
  Caller-allocated buffer to which the converted URL will be written.  
   
  `pdwStrLen`  
- Pointer to a DWORD variable. If the function succeeds, the variable receives the number of characters written to the buffer not including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
+ Pointer to a DWORD variable. If the function succeeds, the variable receives the number of characters written to the buffer including the terminating null character. If the function fails, the variable receives the required length in bytes of the buffer including space for the terminating null character.  
   
  `dwMaxLength`  
  The size of the buffer `lpszStringOut`.  
