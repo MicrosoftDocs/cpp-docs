@@ -10,6 +10,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
   - "/permissive"
+  - "VC.Project.VCCLCompilerTool.ConformanceMode"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
