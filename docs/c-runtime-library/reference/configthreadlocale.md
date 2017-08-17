@@ -84,7 +84,7 @@ int _configthreadlocale(
  `0`  
  Retrieves the current setting for this particular thread.  
   
- These functions affect the behavior of `setlocale`, `_tsetlocale`, and `_wsetlocale`. When per-thread locale is disabled, any subsequent call to `setlocale` or `_wsetlocale` changes the locale of all threads that use the global locale. When per-thread locale is enabled, `setlocale` or `_wsetlocale` only affects the current thread's locale.  
+ These functions affect the behavior of `setlocale`, `_tsetlocale`, `_wsetlocale`, and `_setmbcp`. When per-thread locale is disabled, any subsequent call to `setlocale` or `_wsetlocale` changes the locale of all threads that use the global locale. When per-thread locale is enabled, `setlocale` or `_wsetlocale` only affects the current thread's locale.  
   
  If you use `_configurethreadlocale` to enable a per-thread locale, we recommend that you call `setlocale` or `_wsetlocale` to set the preferred locale in that thread immediately afterward.  
   
