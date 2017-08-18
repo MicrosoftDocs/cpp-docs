@@ -67,7 +67,7 @@ Defines facilities for random number generation, allowing creation of uniformly 
   
 -   The most useful pairing for most applications is the `mt19937` engine with `uniform_int_distribution`, as shown in the [code example](#code) later in this article.  
   
- There are many options to choose from in the `<random>` header, and any of them is preferable to the outdated C Runtime function `rand()`. For information about what's wrong with `rand()` and how `<random>` addresses these shortcomings, see [this video](http://go.microsoft.com/fwlink/LinkId=397615).  
+ There are many options to choose from in the `<random>` header, and any of them is preferable to the outdated C Runtime function `rand()`. For information about what's wrong with `rand()` and how `<random>` addresses these shortcomings, see [this video](http://go.microsoft.com/fwlink/?LinkId=397615).  
   
 ##  <a name="code"></a> Examples  
  The following code example shows how to generate some random numbers in this case five of them using a generator created with non-deterministic seed.  
