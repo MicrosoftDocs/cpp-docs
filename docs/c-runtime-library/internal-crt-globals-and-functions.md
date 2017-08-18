@@ -18,6 +18,8 @@ apiname:
   - "__C_specific_handler"
   - "_calloc_base"
   - "_chkesp"
+  - "__chkstk"
+  - "_chkstk"
   - "_chvalidator"
   - "_chvalidator_l"
   - "_CIacos"
@@ -295,6 +297,7 @@ apilocation:
   - "api-ms-win-crt-conio-l1-1-0.dll"
   - "vcruntime140_app.dll"
   - "msvcp140_app.dll"
+  - "ntdll.dll"
 apitype: "DLLExport"
 f1_keywords: 
   - "__acrt_iob_func"
@@ -306,6 +309,8 @@ f1_keywords:
   - "__C_specific_handler"
   - "_calloc_base"
   - "_chkesp"
+  - "__chkstk"
+  - "_chkstk"
   - "_chvalidator"
   - "_chvalidator_l"
   - "_CIacos"
@@ -580,6 +585,8 @@ helpviewer_keywords:
   - "__C_specific_handler"
   - "_calloc_base"
   - "_chkesp"
+  - "__chkstk"
+  - "_chkstk"
   - "_chvalidator"
   - "_chvalidator_l"
   - "_CIacos"
@@ -899,6 +906,8 @@ These global variables and macro definitions are used to implement the CRT.
 |__C_specific_handler|  
 |_calloc_base|  
 |_chkesp|  
+|__chkstk|  
+|_chkstk|  
 |_chvalidator|  
 |_chvalidator_l|  
 |_CIacos|  
