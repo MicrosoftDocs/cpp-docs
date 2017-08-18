@@ -1,7 +1,7 @@
 ---
 title: "Create a New Linux Project | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/16/2016"
+ms.date: "08/16/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -33,7 +33,7 @@ translation.priority.ht:
 To create a new Linux project in Visual Studio, do the following:
 
 1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**.
-1. Select the **Templates > Other Languages > Visual C++ > Cross Platform > Linux** node and then select the project type you would like to create, enter a Name/Location, and click OK.
+1. Select the **Visual C++ > Cross Platform > Linux** node and then select the project type you would like to create, enter a Name/Location, and click OK.
 
    ![New Linux Project](media/newproject.png)
 
