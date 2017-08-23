@@ -60,6 +60,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &lt;ratio&gt;
+
 Include the standard header \<ratio> to define constants and templates that are used to store and manipulate rational numbers at compile time.  
   
 ## Syntax  
@@ -68,24 +69,27 @@ Include the standard header \<ratio> to define constants and templates that are 
 #include <ratio>  
 ```  
   
-### ratio Structure  
+### ratio Template  
 
-```
-struct ratio
+```cpp
+template<std::intmax_t Numerator, std::intmax_t Denominator = 1>
+   struct ratio	// holds the ratio of Numerator to Denominator
 {
-    static constexpr intmax_t num;
-    static constexpr intmax_t den;
-    typedef ratio<num, den>  type;
-};
+   static constexpr std::intmax_t num;
+   static constexpr std::intmax_t den;
+   typedef ratio<num, den> type;
+}
 ```  
- The [ratio Structure](http://msdn.microsoft.com/en-us/3f7961f4-802b-4251-b3c3-090ef91c0dba) defines the static constants `num` and `den` such that `num` / `den` == N / D and `num` and `den` have no common factors. `num` / `den` is the `value` that is represented by the template class. Therefore, `type` designates the instantiation `ratio<N0, D0>` for which `num` == N0 and `den` == D0.  
+
+The template `ratio` defines the static constants `num` and `den` such that `num` / `den` == Numerator / Denominator and `num` and `den` have no common factors. `num` / `den` is the value that is represented by the template class. Therefore, `type` designates the instantiation `ratio<num, den>`.  
   
-### Specializations  
- \<ratio> also defines specializations of `ratio` that have the following form.  
+### Specializations
+
+\<ratio> also defines specializations of `ratio` that have the following form.  
   
- `template <class R1, class R2> struct ratio_specialization`  
+`template <class R1, class R2> struct ratio_specialization`  
   
- Each specialization takes two template parameters that must also be specializations of `ratio`. The value of `type` is determined by an associated logical operation.  
+Each specialization takes two template parameters that must also be specializations of `ratio`. The value of `type` is determined by an associated logical operation.  
   
 |Name|`type` Value|  
 |----------|------------------|  
@@ -101,16 +105,18 @@ struct ratio
 |`ratio_subtract`|`R1 - R2`|  
   
 ### typedefs  
+
+For convenience, the header defines ratios for the standard SI prefixes:
   
-```
-typedef ratio<1,  1000000000000000000> atto;
-typedef ratio<1,     1000000000000000> femto;
-typedef ratio<1,        1000000000000> pico;
+```cpp
+typedef ratio<1, 1000000000000000000> atto;
+typedef ratio<1, 1000000000000000> femto;
+typedef ratio<1, 1000000000000> pico;
 typedef ratio<1, 1000000000> nano;
 typedef ratio<1, 1000000> micro;
 typedef ratio<1, 1000> milli;
-typedef ratio<1,  100> centi;
-typedef ratio<1,   10> deci;
+typedef ratio<1, 100> centi;
+typedef ratio<1, 10> deci;
 typedef ratio<10, 1> deca;
 typedef ratio<100, 1> hecto;
 typedef ratio<1000, 1> kilo;
