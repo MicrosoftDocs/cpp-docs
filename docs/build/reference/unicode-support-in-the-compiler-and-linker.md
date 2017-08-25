@@ -66,4 +66,4 @@ This topic describes Unicode support in the Visual C++ build tools.
  You can enable Unicode file names in the development environment (see  [Working with Project Properties](../../ide/working-with-project-properties.md)) by selecting the appropriate tool and by selecting the **Enable Unicode Response Files** property, which is enabled by default. One reason you might change this default is if you modify your development environment to use a compiler that does not have Unicode support.  
   
 ## See Also  
- [Building on the Command Line](../../build/building-on-the-command-line.md)
+ [Build C/C++ code on the command line](../../build/building-on-the-command-line.md)

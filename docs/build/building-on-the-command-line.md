@@ -37,13 +37,13 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# Set up to build C/C++ code on the command Line
+# Build C/C++ code on the command line
 
 You can build C and C++ applications on the command line by using tools that are included in [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].
 
 When you choose one of the C++ workloads in the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] Installer, it installs a command-line toolset that includes the C/C++ compilers, linkers, and other build tools. To work correctly, these command-line tools require several specific environment variables to add the tools to the path and to set include file, library file, and SDK locations. To make it easy to set these environment variables, the installer creates customized command files, also known as batch files, during installation. You can run one of these command files in a command prompt window to set a specific build configuration. For convenience, the installer also creates shortcuts in your Start menu (or Start page on Windows 8.x) that start command prompt windows by using these command files, so all the required environment variables are set and ready to use. 
 
-The required environment variables are specific to your installation and to the build configuration you choose, and might be changed by product updates or upgrades. Therefore, we strongly recommend that you use one of the installed command prompt shortcuts or command files instead of setting the environment variables in Windows yourself. For more information, see [Setting the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
+The required environment variables are specific to your installation and to the build configuration you choose, and might be changed by product updates or upgrades. Therefore, we strongly recommend that you use one of the installed command prompt shortcuts or command files instead of setting the environment variables in Windows yourself. For more information, see [Set the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
 
 The command-line toolsets, command files, and command prompt shortcuts that are installed depend on your computer processor and the options selected during installation. At a minimum, the 32-bit, x86-native tools that build 32-bit, x86-native code and 64-bit, x64-native code are installed. If you have a 64-bit processor, the 64-bit native tools that build 32-bit native code and 64-bit native code are also installed. If you choose to install the optional C++ Universal Windows Platform tools, then the 32-bit and 64-bit native tools that build ARM code are also installed. 
 
@@ -97,23 +97,44 @@ You can use the **store** or **uwp** options to specify the platform type, or ne
 
 ## To set up the build environment in an existing command prompt window  
   
-1.  At the command prompt, use the CD command to change to the Visual C++ installation directory.  
+1.  At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2017, this is the VC\Ausiliary\Build subdirectory. For Visual Studio 2015, use the VC subdirectory.  
   
-2.  To configure this command prompt window for 32-bit x86 builds, at the command prompt, enter:  
+1.  To configure this command prompt window to use 32-bit tools to build code for x86 platforms, at the command prompt, enter:  
   
-     `vc\vcvarsall.bat`  
+     `vcvarsall`  
+
+1.  To configure this command prompt window to use 32-bit tools to build code for x64 platforms, at the command prompt, enter:  
   
+     `vcvarsall x86_amd64`  
+  
+1.  To configure this command prompt window to use 32-bit tools to build code for ARM platforms, at the command prompt, enter:  
+  
+     `vcvarsall x86_arm`  
+  
+1.  To configure this command prompt window to use 64-bit tools to build code for x64 platforms, at the command prompt, enter:  
+  
+     `vcvarsall amd64`  
+  
+1.  To configure this command prompt window to use 64-bit tools to build code for x86 platforms, at the command prompt, enter:  
+  
+     `vcvarsall amd64_x86`  
+  
+1.  To configure this command prompt window to use 64-bit tools to build code for ARM platforms, at the command prompt, enter:  
+  
+     `vcvarsall amd64_arm`  
+
 The command file sets the required environment variables for the paths to the build tools, libraries, and headers. You can now use this command prompt window to run the command-line compiler and tools.  
   
 If you are using [DEVENV](/visualstudio/ide/reference/devenv-command-line-switches) for command-line builds, the environment set by vcvarsall.bat or other command files does not affect your builds, unless you also specify the **/useenv** option.  
 
-## To open a Developer Command Prompt window  
+<a name="developer_command_prompt"></a>
+## To open a developer command prompt window  
   
-1.  On the desktop, open the Windows **Start** menu, and then scroll to the **Visual Studio** folder for your version of Visual Studio. In some versions of Visual Studio, the folder is called  **Visual Studio Tools**.  
+1.  On the desktop, open the Windows **Start** menu, and then scroll to find and open the folder for your version of Visual Studio, for example, **Visual Studio 2017**. In some older versions of Visual Studio, the shortcuts are in a subfolder called **Visual Studio Tools**.  
   
-2.  In the **Visual Studio** folder, choose the **Developer Command Prompt** for your version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] to start a developer command prompt window set up to use the default build configuration of 32-bit, x86-native tools to build 32-bit, x86-native code. If you prefer a non-default build configuration, choose one of the native or cross tools command prompts to specify the host and target architecture. 
+2.  In the folder, choose the **Developer Command Prompt** for your version of Visual Studio. This shortcut starts a developer command prompt window that uses the default build configuration of 32-bit, x86-native tools to build 32-bit, x86-native code. If you prefer a non-default build configuration, choose one of the native or cross tools command prompts to specify the host and target architecture. 
 
-An even faster way to open a developer command prompt window is to enter "Developer Command Prompt" in the desktop search box, then choose the desired result.
+An even faster way to open a developer command prompt window is to enter *developer command prompt* in the desktop search box, then choose the desired result.
 
 ## Command line tools
   
@@ -152,8 +173,8 @@ Describes how to create and compile a C++/CLI program that uses the .NET Framewo
 [Walkthrough: Compiling a C++/CX Program on the Command Line](../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)  
 Describes how to create and compile a C++/CX program that uses the Windows Runtime.  
   
-[Setting the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md)  
-Describes how to start a Command Prompt window that has the required environment variables set for command-line builds that target x86, x64, and ARM platforms by using a 32-bit or 64-bit toolset.  
+[Set the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md)  
+Describes how to start a command prompt window that has the required environment variables set for command-line builds that target x86, x64, and ARM platforms by using a 32-bit or 64-bit toolset.  
   
 [NMAKE Reference](../build/nmake-reference.md)  
 Provides links to articles that describe the Microsoft Program Maintenance Utility (NMAKE.EXE).  
