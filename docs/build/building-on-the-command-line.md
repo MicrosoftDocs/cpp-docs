@@ -95,6 +95,7 @@ The simplest way to specify a particular build configuration in an existing comm
   
 You can use the **store** or **uwp** options to specify the platform type, or neither to specify a desktop app. To specify the Windows SDK version, you can use a full Windows 10 SDK number such as 10.0.10240.0, or specify 8.1 to use the Windows 8.1 SDK. Use 14.0 to specify the Visual Studio 2015 compiler toolset; by default, the environment is set to use the Visual Studio 2017 compiler toolset.
 
+<a name="vcvarsall"></a>
 ## To set up the build environment in an existing command prompt window  
   
 1.  At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2017, this is the VC\Ausiliary\Build subdirectory. For Visual Studio 2015, use the VC subdirectory.  

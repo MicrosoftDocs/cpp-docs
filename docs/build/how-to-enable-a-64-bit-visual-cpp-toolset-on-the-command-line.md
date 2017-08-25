@@ -57,27 +57,8 @@ When Visual Studio is installed on a 64-bit Windows operating system, additional
   
 ## Use Vcvarsall.bat to set a 64-bit hosted build configuration
   
-Any of the native or cross compiler tools build configurations can be used on the command line by running the vcvarsall.bat command file. This command file configures the path and environment variables that enable a particular build configuration in an existing command prompt window. For more information, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md).  
-  
-The following steps show how to configure a command prompt to use the 64-bit native tools to build x86, x64, or ARM code. First, change to the Visual C++ installation directory. For Visual Studio 2017, this is typically in a directory  
-  
-### To run vcvarsall.bat to use 64-bit tools  
-  
-1.  At the command prompt, change to the Visual C++ installation directory. (The location depends on the system and the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] installation, but a typical location is C:\Program Files (x86)\Microsoft Visual Studio *version*\VC\\.) For example, enter:  
-  
-     **cd "Program Files (x86)Microsoft Visual Studio 12.0VC"**  
-  
-2.  To configure this Command Prompt window for 64-bit command-line builds that target x64 platforms, at the command prompt, enter:  
-  
-     `vcvarsall amd64`  
-  
-3.  To configure this Command Prompt window for 64-bit command-line builds that target x86 platforms, at the command prompt, enter:  
-  
-     `vcvarsall amd64_x86`  
-  
-4.  To configure this Command Prompt window for 64-bit command-line builds that target ARM platforms, at the command prompt, enter:  
-  
-     `vcvarsall amd64_arm`  
+Any of the native or cross compiler tools build configurations can be used on the command line by running the vcvarsall.bat command file. This command file configures the path and environment variables that enable a particular build configuration in an existing command prompt window. For more information, see [To set up the build environment in an existing command prompt window](../build/building-on-the-command-line.md#vcvarsall) in [Build C/C++ code on the command line](../build/building-on-the-command-line.md).  
   
 ## See Also  
- [Configuring Programs for 64-Bit](../build/configuring-programs-for-64-bit-visual-cpp.md)
+
+[Configuring Programs for 64-Bit](../build/configuring-programs-for-64-bit-visual-cpp.md)
