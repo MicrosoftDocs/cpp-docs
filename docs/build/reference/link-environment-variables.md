@@ -38,6 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # LINK Environment Variables
+
 The LINK tool uses the following environment variables:  
   
 -   LINK and _LINK\_, if defined. The LINK tool prepends the options and arguments defined in the LINK environment variable and appends the options and arguments defined in the _LINK\_ environment variable to the command line arguments before processing.  
@@ -52,5 +53,5 @@ The LINK tool uses the following environment variables:
 
 [Setting Linker Options](../../build/reference/setting-linker-options.md)   
 [Linker Options](../../build/reference/linker-options.md)   
-[Build C/C++ code on the command line](../build/building-on-the-command-line.md)  
+[Build C/C++ code on the command line](../../build/building-on-the-command-line.md)  
 [Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)

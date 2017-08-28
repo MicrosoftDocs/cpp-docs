@@ -46,7 +46,7 @@ You can create Visual C++ programs that target the Windows Runtime and build the
   
 #### To compile a C++/CX application on the command line  
   
-1.  Open a **Developer Command Prompt** window. (On the **Start** window, open **Apps**. Open the **Visual Studio Tools** folder under your version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], and then choose the **Developer Command Prompt** shortcut.) For more information about how to open a Developer Command Prompt window, see [Build C/C++ code on the command line](../build/building-code-on-the-command-line.md).  
+1.  Open a **Developer Command Prompt** window. (On the **Start** window, open **Apps**. Open the **Visual Studio Tools** folder under your version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)], and then choose the **Developer Command Prompt** shortcut.) For more information about how to open a Developer Command Prompt window, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md).  
   
      Administrator credentials may be required to successfully compile the code, depending on the computer's operating system and configuration. To run the Command Prompt window as an administrator, open the shortcut menu for **Developer Command Prompt** and then choose **Run as administrator**.  
   

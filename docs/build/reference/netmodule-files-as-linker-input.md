@@ -42,7 +42,7 @@ link.exe now accepts MSIL .obj and .netmodules as input. The output file produce
   
  In most cases, you will need to pass to the linker the .obj file from the Visual C++ compilation that created the .netmodule, unless the .netmodule was created with [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md). MSIL .netmodules used as input to the linker must be pure MSIL, which can be produced by the Visual C++ compiler using **/clr:safe**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015. The .NET Visual Studio compilers produce pure MSIL modules by default.  
   
- For information on how to invoke the linker from the command line, see [Linker Command-Line Syntax](../../build/reference/linker-command-line-syntax.md), [Build C/C++ code on the command line](../build/building-on-the-command-line.md), and [Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
+ For information on how to invoke the linker from the command line, see [Linker Command-Line Syntax](../../build/reference/linker-command-line-syntax.md), [Build C/C++ code on the command line](../../build/building-on-the-command-line.md), and [Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
   
  Passing a .netmodule or .dll file to the linker that was compiled by the Visual C++ compiler with **/clr** or with **/clr:pure** can result in a linker error. For more information, see [Choosing the Format of .netmodule Input Files](../../build/reference/choosing-the-format-of-netmodule-input-files.md).  
   
