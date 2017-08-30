@@ -35,7 +35,8 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C2065
-'identifier' : undeclared identifier  
+
+> '*identifier*' : undeclared identifier  
   
 The compiler can't find the declaration for an identifier. If the identifier is a variable, you must specify the type of the variable in a declaration before it can be used. If the identifier is a function name, the parameters that the function uses must be specified in a declaration before the function can be used. If the identifier is the tag for a user-defined type, for example, a `class` or `struct`, the type of the tag must be declared before it can be used. If the identifier is a type alias, the type must be declared by using a `using` declaration or `typedef` before the type can be used.  
   
@@ -58,6 +59,28 @@ int main() {
     // cout << "Some Identifier: " << someIdentifier << endl;   
 }  
 ```
+  
+## Example: use an unscoped identifier  
+  
+This error can occur if your identifier is not properly scoped. For example, when C++ Standard Library functions and operators are not fully qualified by namespace, or you have not brought the `std` namespace into the current scope by using a `using` directive, the compiler can't find them. To fix this issue, you must either fully qualify the identifier names, or specify the namespace with the `using` directive.  
+  
+This example fails to compile because `cout` and `endl` are defined in the `std` namespace:  
+  
+```cpp  
+// C2065_scope.cpp  
+// compile with: cl /EHsc C2065_scope.cpp
+
+// using namespace std;   // Uncomment this line to fix  
+#include <iostream>  
+int main() {  
+    cout << "Hello" << endl;   // C2065 'cout': undeclared identifier 
+                               // C2065 'endl': undeclared identifier
+    // Or try the following line instead  
+    std::cout << "Hello" << std::endl;  
+}
+```  
+  
+Identifiers that are declared inside of `class`, `struct`, or `enum class` types must also be qualified by the name of the enclosing scope when you use them.
   
 ## Example: missing header file  
   
@@ -143,27 +166,6 @@ int main() {
     // #endif
 }
 ```
-  
-## Example: use an unscoped identifier  
-  
-This error can occur if your identifier is not properly scoped. For example, when C++ Standard Library functions and operators are not fully qualified by namespace, or you have not brought the `std` namespace into the current scope by using a `using` directive, the compiler can't find them. To fix this issue, you must either fully qualify the identifier names, or specify the namespace with the `using` directive.  
-  
-This example fails to compile because `cout` and `endl` are defined in the `std` namespace:  
-  
-```cpp  
-// C2065_scope.cpp  
-// compile with: cl /EHsc C2065_scope.cpp 
-// using namespace std;   // Uncomment this line to fix  
-#include <iostream>  
-int main() {  
-    cout << "Hello" << endl;   // C2065 'cout': undeclared identifier 
-                               // C2065 'endl': undeclared identifier
-    // Or try the following line instead  
-    std::cout << "Hello" << std::endl;  
-}
-```  
-  
-Identifiers that are declared inside of `class`, `struct`, or `enum class` types, must also be qualified by the name of the enclosing scope.
   
 ## Example: C++/CLI type deduction failure  
   

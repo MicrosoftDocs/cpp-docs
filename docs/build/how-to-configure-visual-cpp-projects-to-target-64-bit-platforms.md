@@ -1,5 +1,5 @@
 ---
-title: "How to: Configure Visual C++ Projects to Target 64-Bit Platforms | Microsoft Docs"
+title: "How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -35,8 +35,9 @@ translation.priority.mt:
   - "pt-br"
   - "tr-tr"
 ---
-# How to: Configure Visual C++ Projects to Target 64-Bit Platforms
-You can use the project configurations in Visual Studio to set up C++ applications to target 64-bit platforms. You can also migrate Win32 project settings into a 64-bit project configuration.  
+# How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms
+
+You can use the project configurations in the Visual Studio IDE to set up C++ applications to target 64-bit, x64 platforms. You can also migrate Win32 project settings into a 64-bit project configuration.  
   
 ### To set up C++ applications to target 64-bit platforms  
   
@@ -51,7 +52,7 @@ You can use the project configurations in Visual Studio to set up C++ applicatio
   
 4.  In the **Active Solution Platform** drop-down list, select the **\<New...>** option to open the **New Solution Platform** dialog box.  
   
-5.  In the **Type or select the new platform** drop-down list, select a 64-bit platform.  
+5.  In the **Type or select the new platform** drop-down list, select a 64-bit target platform.  
   
     > [!NOTE]
     >  In the **New Solution Platform** dialog box, you can use the **Copy settings from** option to copy existing project settings into the new 64-bit project configuration.  
@@ -78,6 +79,7 @@ You can use the project configurations in Visual Studio to set up C++ applicatio
     >  None of these project properties are changed if they are overridden on the file level.  
   
 ## See Also  
- [64-bit Applications](/dotnet/framework/64-bit-apps)   
- [Configuring Programs for 64-Bit](../build/configuring-programs-for-64-bit-visual-cpp.md)   
- [Debug 64-Bit Applications](/visualstudio/debugger/debug-64-bit-applications)
+
+[.NET Framework 64-bit Applications](/dotnet/framework/64-bit-apps)   
+[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)   
+[Debug 64-Bit Applications](/visualstudio/debugger/debug-64-bit-applications)

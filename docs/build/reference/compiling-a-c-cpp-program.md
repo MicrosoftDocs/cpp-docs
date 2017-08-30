@@ -34,6 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiling a C/C++ Program
+
 For information on using the compiler, see the following sections:  
   
 -   [Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
@@ -43,8 +44,9 @@ For information on using the compiler, see the following sections:
 -   [Creating Precompiled Header Files](../../build/reference/creating-precompiled-header-files.md)  
   
 -   [Unicode Support in the Compiler and Linker](../../build/reference/unicode-support-in-the-compiler-and-linker.md)  
-  
- For more information, see [Configuring Programs for 64-Bit](../../build/configuring-programs-for-64-bit-visual-cpp.md).  
+
+For information on choosing the compiler host and target architecture, see [Configure Visual C++ for 64-bit, x64 targets](../../build/configuring-programs-for-64-bit-visual-cpp.md).  
   
 ## See Also  
- [C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)
+
+[C/C++ Building Reference](../../build/reference/c-cpp-building-reference.md)

@@ -87,7 +87,7 @@ This error can occur if your code refers to a symbol from one version of a libra
   
 -  This problem may appear when a new SDK is installed (perhaps to a different location), and the search order is not updated to point to the new location. Normally, you should put the path to new SDK include and lib directories in front of the default Visual C++ location. Also, a project containing embedded paths may still point to old paths that are valid, but out of date for new functionality added by the new version that is installed to a different location.  
   
--   If you build at the command line and have created your own environment variables, verify that the paths to tools, libraries, and header files go to a consistent version. For more information, see [Setting the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)
+-   If you build at the command line and have created your own environment variables, verify that the paths to tools, libraries, and header files go to a consistent version. For more information, see [Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)
   
 There is currently no standard for [C++ naming](../../error-messages/tool-errors/name-decoration.md) between compiler vendors or even between different versions of a compiler. Therefore, linking object files compiled with other compilers may not produce the same naming scheme and thus cause error LNK2001.  
   
