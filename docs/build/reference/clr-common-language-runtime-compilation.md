@@ -136,7 +136,7 @@ Enables applications and components to use features from the common language run
   
  **cl /clr:safe t.cpp /link /clrimagetype:pure /entry:?main@@$$HYMHXZ /subsystem:console**  
   
- For information about how to get a decorated name, see [Decorated Names](../../build/reference/decorated-names.md). For more information about 64-bit programming, see [Configuring Programs for 64-Bit](../../build/configuring-programs-for-64-bit-visual-cpp.md). For information about using pure CLR code, see [How to: Migrate to /clr:pure (C++/CLI)](../../dotnet/how-to-migrate-to-clr-pure-cpp-cli.md) and [Pure and Verifiable Code (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).  
+ For information about how to get a decorated name, see [Decorated Names](../../build/reference/decorated-names.md). For more information about 64-bit targets, see [Configure Visual C++ for 64-bit, x64 targets](../../build/configuring-programs-for-64-bit-visual-cpp.md). For information about using pure CLR code, see [How to: Migrate to /clr:pure (C++/CLI)](../../dotnet/how-to-migrate-to-clr-pure-cpp-cli.md) and [Pure and Verifiable Code (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).  
   
 ## Metadata and Unnamed Classes  
  Unnamed classes will appear in metadata named as follows: `$UnnamedClass$`*crc-of-current-file-name*`$`*index*`$`, where *index* is a sequential count of the unnamed classes in the compilation. For example, the following code sample generates an unnamed class in metadata.  

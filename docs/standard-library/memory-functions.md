@@ -50,12 +50,14 @@ T* addressof(T& Val);
 ```  
 void* align(
     size_t Alignment, // input  
-    size_t Size,   // input  
-    void*& Ptr        // input/output  
-    size_t& Space     // input/output);
+    size_t Size,      // input  
+    void*& Ptr,        // input/output  
+    size_t& Space     // input/output
+);
 ```  
   
 ### Parameters  
+
  `Alignment`  
  The alignment bound to attempt.  
   
@@ -63,9 +65,7 @@ void* align(
  The size in bytes for the aligned storage.  
   
  `Ptr`  
- The starting address of the available contiguous storage pool to use. This parameter is also an output parameter, and will contain the new starting address if the alignment is successful.  
-  
- If `align()` is unsuccessful, this parameter is not modified.  
+ The starting address of the available contiguous storage pool to use. This parameter is also an output parameter, and is set to contain the new starting address if the alignment is successful. If `align()` is unsuccessful, this parameter is not modified.  
   
  `Space`  
  The total space available to `align()` to use in creating the aligned storage. This parameter is also an output parameter, and contains the adjusted space left in the storage buffer after the aligned storage and any associated overhead is subtracted.  
@@ -73,9 +73,11 @@ void* align(
  If `align()` is unsuccessful, this parameter is not modified.  
   
 ### Return Value  
+
  A null pointer if the requested aligned buffer would not fit into the available space; otherwise, the new value of `Ptr`.  
   
 ### Remarks  
+
  The modified `Ptr` and `Space` parameters enable you to call `align()` repeatedly on the same buffer, possibly with different values for `Alignment` and `Size`. The following code snippet shows one use of `align()`.  
   
 ```cpp  
@@ -87,7 +89,7 @@ size_t alignment = std::alignment_of<int>::value;
 void * ptr = buffer;  
 std::size_t space = sizeof(buffer); // Be sure this results in the true size of your buffer  
   
-while (alignment, sizeof(MyObj), ptr, space)) {  
+while (std::align(alignment, sizeof(MyObj), ptr, space)) {  
     // You now have storage the size of MyObj, starting at ptr, aligned on   
     // int boundary. Use it here if you like, or save off the starting address  
     // contained in ptr for later use.  
@@ -151,7 +153,7 @@ const_pointer_cast(const shared_ptr<Other>& sp);
 #include <iostream>   
   
 int main()   
-    {   
+{   
     std::shared_ptr<int> sp0(new int);   
     std::shared_ptr<const int> sp1 =   
         std::const_pointer_cast<const int>(sp0);   
@@ -160,8 +162,7 @@ int main()
     std::cout << "sp1 == " << *sp1 << std::endl;   
   
     return (0);   
-    }  
-  
+}
 ```  
   
 ```Output  
@@ -185,7 +186,7 @@ void declare_no_pointers(
 |`_Size`|Size of block that starts at `ptr` that contains no traceable pointers.|  
   
 ### Remarks  
- The function informs any `garbage collector` that the range of addresses `[ ptr, ptr + _Size)` no longer contain traceable pointers. (Any pointers to allocated storage must not be dereferenced unless made `reachable`.)  
+ The function informs any garbage collector that the range of addresses `[ ptr, ptr + _Size)` no longer contain traceable pointers. (Any pointers to allocated storage must not be dereferenced unless made reachable.)  
   
 ##  <a name="declare_reachable"></a>  declare_reachable  
  Informs garbage collection that the indicated address is to allocated storage and is reachable.  
@@ -202,13 +203,16 @@ void declare_reachable(void* ptr);
  If `ptr` is not null, the function informs any garbage collector that `ptr` is hereafter reachable (points to valid allocated storage).  
   
 ##  <a name="default_delete"></a>  default_delete  
- Deletes objects allocated with `operator new`. Suitable for use with `unique_ptr`.  
+
+Deletes objects allocated with `operator new`. Suitable for use with `unique_ptr`.  
+
 ```  
 struct default_delete {
    constexpr default_delete() noexcept = default;
    template <class Other, class = typename enable_if<is_convertible<Other*, T*>::value, void>::type>>  
    default_delete(const default_delete<Other>&) noexcept;
-   void operator()(T* Ptr) const noexcept;     };  
+   void operator()(T* Ptr) const noexcept;     
+};  
 ```
 ### Parameters  
  `Ptr`  
@@ -226,7 +230,7 @@ struct default_delete {
 ```  
 template <class Ty, class Other>  
 shared_ptr<Ty>  
-dynamic_pointer_cast(const shared_ptr`<`Other>& sp);
+dynamic_pointer_cast(const shared_ptr<Other>& sp);
 ```  
   
 ### Parameters  
@@ -251,21 +255,18 @@ dynamic_pointer_cast(const shared_ptr`<`Other>& sp);
 #include <iostream>   
   
 struct base   
-    {   
-    virtual ~base()   
-        {   
-        }   
-  
+{   
+    virtual ~base() {}   
     int val;   
-    };   
+};   
   
 struct derived   
     : public base   
-    {   
-    };   
+{   
+};   
   
 int main()   
-    {   
+{   
     std::shared_ptr<base> sp0(new derived);   
     std::shared_ptr<derived> sp1 =   
         std::dynamic_pointer_cast<derived>(sp0);   
@@ -274,8 +275,7 @@ int main()
     std::cout << "sp1->val == " << sp1->val << std::endl;   
   
     return (0);   
-    }  
-  
+}
 ```  
   
 ```Output  
@@ -287,7 +287,7 @@ sp1->val == 3
   
 ```  
 template <class D, class Ty>  
-D *get_deleter(const shared_ptr<Ty>& sp);
+D* get_deleter(const shared_ptr<Ty>& sp);
 ```  
   
 ### Parameters  
@@ -297,7 +297,7 @@ D *get_deleter(const shared_ptr<Ty>& sp);
  `Ty`  
  The type controlled by the shared pointer.  
   
- `Other`  
+ `sp`  
  The shared pointer.  
   
 ### Remarks  
@@ -312,20 +312,20 @@ D *get_deleter(const shared_ptr<Ty>& sp);
 #include <iostream>   
   
 struct base   
-    {   
+{   
     int val;   
-    };   
+};   
   
 struct deleter   
-    {   
+{   
     void operator()(base *p)   
-        {   
+    {   
         delete p;   
-        }   
-    };   
+    }   
+};   
   
 int main()   
-    {   
+{   
     std::shared_ptr<base> sp0(new base);   
   
     sp0->val = 3;   
@@ -339,8 +339,8 @@ int main()
         << (std::get_deleter<deleter>(sp1) != 0) << std::endl;   
   
     return (0);   
-    }  
-  
+}  
+
 ```  
   
 ```Output  
@@ -356,7 +356,7 @@ pointer_safety get_pointer_safety();
 ```  
   
 ### Remarks  
- The function returns the type of pointer safety assumed by any automatic `garbage collector`.  
+ The function returns the type of pointer safety assumed by any automatic garbage collector.  
   
 ##  <a name="get_temporary_buffer"></a>  get_temporary_buffer  
  Allocates temporary storage for a sequence of elements that does not exceed a specified number of elements.  
@@ -417,8 +417,7 @@ could store is given by: resultPair.second = 9.
 ```  
 template <class Type, class... Types>  
 shared_ptr<Type>  
-make_shared(
-    Types&&... _Args);
+make_shared(Types&&... _Args);
 ```  
   
 ### Parameters  
@@ -508,27 +507,26 @@ Playing Blackbird by The Beatles, use count: 3
 ##  <a name="make_unique"></a>  make_unique  
  Creates and returns a [unique_ptr](../standard-library/unique-ptr-class.md) to an object of the specified type, which is constructed by using the specified arguments.  
   
-```scr  
-// make_unique<T>template <class T,   
-    class... Types>  
-unique_ptr<T> make_unique(Types&&... Args)  
- {  
+```  
+// make_unique<T> 
+template <class T, class... Types>  
+unique_ptr<T> 
+make_unique(Types&&... Args)  
+{  
     return (unique_ptr<T>(new T(forward<Types>(Args)...)));
-
- }  
+}
+  
 // make_unique<T[]>  
 template <class T>  
 make_unique(size_t Size)   
- {   
+{   
     return (unique_ptr<T>(new Elem[Size]()));
-
- }  
+}  
  
 // make_unique<T[N]> disallowed  
-template <class T,   
-    class... Types>  
-typename enable_if<extent<T>::value != 0,   
-    void>::type make_unique(Types&&...) = delete;  
+template <class T, class... Types>  
+typename enable_if<extent<T>::value != 0, void>::type 
+make_unique(Types&&...) = delete;  
 ```  
   
 ### Parameters  
@@ -579,7 +577,6 @@ struct owner_less<shared_ptr<Type>> {
     bool operator()(
     const weak_ptr<Type>& left,  
     const shared_ptr<Type>& right);
-
 };  
  
 template <class Type>  
@@ -595,7 +592,6 @@ struct owner_less<weak_ptr<Type>>
     bool operator()(
     const shared_ptr<Type>& left,  
     const weak_ptr<Type>& right);
-
 };  
 ```  
   
@@ -693,17 +689,17 @@ static_pointer_cast(const shared_ptr<Other>& sp);
 #include <iostream>   
   
 struct base   
-    {   
+{   
     int val;   
-    };   
+};   
   
 struct derived   
     : public base   
-    {   
-    };   
+{   
+};   
   
 int main()   
-    {   
+{   
     std::shared_ptr<base> sp0(new derived);   
     std::shared_ptr<derived> sp1 =   
         std::static_pointer_cast<derived>(sp0);   
@@ -712,8 +708,7 @@ int main()
     std::cout << "sp1->val == " << sp1->val << std::endl;   
   
     return (0);   
-    }  
-  
+}
 ```  
   
 ```Output  
@@ -788,7 +783,6 @@ int main()
 
     return (0);
 }
-
 ```  
   
 ```Output  
@@ -811,10 +805,10 @@ void undeclare_no_pointers(
 ```  
   
 ### Remarks  
- The function informs any `garbage collector` that the range of addresses `[ptr, ptr + _Size)` may now contain `traceable pointers`.  
+ The function informs any garbage collector that the range of addresses `[ptr, ptr + _Size)` may now contain traceable pointers.  
   
 ##  <a name="undeclare_reachable"></a>  undeclare_reachable  
- Informs a `garbage_collector` that a specified memory location is not reachable.  
+ Revokes a declaration of reachability for a specified memory location.  
   
 ```  
 template <class Type>  
@@ -828,7 +822,7 @@ Type *undeclare_reachable(Type* ptr);
 |`ptr`|A pointer to the memory address to be declared not reachable.|  
   
 ### Remarks  
- If `ptr` is not `null`, the function informs any `garbage collector` that `ptr` is hereafter not `reachable`. It returns a `safely derived` pointer that compares equal to `ptr`.  
+ If `ptr` is not `nullptr`, the function informs any garbage collector that `ptr` is no longer reachable. It returns a safely-derived pointer that compares equal to `ptr`.  
   
 ##  <a name="uninitialized_copy"></a>  uninitialized_copy  
  Copies objects from a specified source range into an uninitialized destination range.  
@@ -849,19 +843,19 @@ ForwardIterator uninitialized_copy(InputIterator first, InputIterator last, Forw
  A forward iterator addressing the first element in the destination range.  
   
 ### Return Value  
- A forward iterator addressing the first position beyond the destination range, unless the source range was empty and iterator addresses * first.*  
+ A forward iterator addressing the first position beyond the destination range, unless the source range was empty.  
   
 ### Remarks  
  This algorithm allows the decoupling of memory allocation from object construction.  
   
  The template function effectively executes:  
   
-```  
-while (first!= last)  
-    new ((void*)&* dest ++)  
-    iterator_traits<InputIterator>::value_type (* first ++);
-
-return first;  
+```cpp  
+while (first != last) {  
+    new (static_cast<void*>(&* dest++))  
+        typename iterator_traits<InputIterator>::value_type(*first++);
+}
+return dest;  
 ```  
   
  unless the code throws an exception. In that case, all constructed objects are destroyed and the exception is rethrown.  
@@ -960,7 +954,8 @@ ForwardIterator uninitialized_copy_n(
   
 ```cpp  
     for (; 0 < count; --count)  
-        new ((void *)&* dest++) iterator_traits<InputIterator>::value_type(*first++);  
+        new (static_cast<void*>(&* dest++)) 
+            typename iterator_traits<InputIterator>::value_type(*first++);  
     return dest;  
 ```  
   
@@ -989,10 +984,10 @@ void uninitialized_fill(ForwardIterator first, ForwardIterator last, const Type&
   
  The template function effectively executes:  
   
-```  
+```cpp  
 while (first != last)  
-    new ((void*)&* first ++)  
-    iterator_traits<ForwardIterator>::value_type (_Val);
+    new (static_cast<void*>(&* first ++))  
+        typename iterator_traits<ForwardIterator>::value_type (val);
 ```  
   
  unless the code throws an exception. In that case, all constructed objects are destroyed and the exception is rethrown.  
@@ -1007,13 +1002,13 @@ while (first != last)
   
 using namespace std;  
   
-   class Integer {         // No default constructor  
+class Integer {         // No default constructor  
    public:  
       Integer( int x ) : val( x ) {}  
       int get( ) { return val; }  
    private:  
       int val;  
-   };  
+};  
   
 int main( )  
 {  
@@ -1059,9 +1054,9 @@ void uninitialized_fill_n(ForwardIterator first, Size count, const Type& val);
  The template function effectively executes:  
   
 ```cpp  
-while (0 <count--)  
-    new ((void*)&* first ++)  
-    iterator_traits<ForwardIterator>::value_type(val);
+while (0 < count--)  
+    new (static_cast<void*>(&* first++))  
+        typename iterator_traits<ForwardIterator>::value_type(val);
 ```  
   
  unless the code throws an exception. In that case, all constructed objects are destroyed and the exception is rethrown.  
