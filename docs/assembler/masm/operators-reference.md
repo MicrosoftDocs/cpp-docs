@@ -1,5 +1,5 @@
 ---
-title: "Operators Reference | Microsoft Docs"
+title: "MASM Operators Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -33,8 +33,9 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Operators Reference
-**Arithmetic**  
+# MASM Operators Reference
+
+## Arithmetic  
   
 ||||  
 |-|-|-|  
@@ -42,7 +43,7 @@ translation.priority.ht:
 |[.](../../assembler/masm/operator-dot.md)|[/](../../assembler/masm/operator-subtract-1.md)|[&#91;&#93;](../../assembler/masm/operator-brackets.md)|  
 |[MOD](../../assembler/masm/operator-mod.md)|||  
   
-### Control Flow  
+## Control Flow  
   
 ||||  
 |-|-|-|  
@@ -51,21 +52,21 @@ translation.priority.ht:
 |[==](../../assembler/masm/operator-equal-masm-run-time.md)|[>](../../assembler/masm/operator-greater-than-masm-run-time.md)|[>=](../../assembler/masm/operator-greater-or-equal-masm-run-time.md)|  
 |[&#124;&#124;](../../assembler/masm/operator-logical-or.md)|||  
   
-### Logical and Shift  
+## Logical and Shift  
   
 ||||  
 |-|-|-|  
 |[AND](../../assembler/masm/operator-and.md)|[NOT](../../assembler/masm/operator-not.md)|[OR](../../assembler/masm/operator-or.md)|  
 |[SHL](../../assembler/masm/operator-shl.md)|[SHR](../../assembler/masm/operator-shr.md)|[XOR](../../assembler/masm/operator-xor.md)|  
   
-### Macro  
+## Macro  
   
 ||||  
 |-|-|-|  
 |[!](../../assembler/masm/operator-logical-not-masm-run-time.md)|[%](../../assembler/masm/operator-percent.md)|[&](../../assembler/masm/operator-bitwise-and.md)|  
 |[;;](../../assembler/masm/operator-semicolons.md)|[<>](../../assembler/masm/operator-literal.md)||  
   
-### Miscellaneous  
+## Miscellaneous  
   
 ||||  
 |-|-|-|  
@@ -74,20 +75,20 @@ translation.priority.ht:
 |[DUP](../../assembler/masm/operator-dup.md)|[OVERFLOW?](../../assembler/masm/operator-overflow-q.md)|[PARITY?](../../assembler/masm/operator-parity-q.md)|  
 |[SIGN?](../../assembler/masm/operator-sign-q.md)|[ZERO?](../../assembler/masm/operator-zero-q.md)||  
   
-### Record  
+## Record  
   
 |||  
 |-|-|  
 |[MASK](../../assembler/masm/operator-mask.md)|[WIDTH](../../assembler/masm/operator-width.md)|  
   
-### Relational  
+## Relational  
   
 ||||  
 |-|-|-|  
 |[EQ](../../assembler/masm/operator-eq.md)|[GE](../../assembler/masm/operator-ge.md)|[GT](../../assembler/masm/operator-gt.md)|  
 |[LE](../../assembler/masm/operator-le.md)|[LT](../../assembler/masm/operator-lt.md)|[NE](../../assembler/masm/operator-ne.md)|  
   
-### Segment  
+## Segment  
   
 |||  
 |-|-|  
@@ -95,7 +96,7 @@ translation.priority.ht:
 |[LROFFSET](../../assembler/masm/operator-lroffset.md)|[OFFSET](../../assembler/masm/operator-offset.md)|  
 |[SECTIONREL](../../assembler/masm/operator-sectionrel.md)|[SEG](../../assembler/masm/operator-seg.md)|  
   
-### Type  
+## Type  
   
 ||||  
 |-|-|-|  
@@ -106,4 +107,5 @@ translation.priority.ht:
 |[SIZEOF](../../assembler/masm/operator-sizeof.md)|[THIS](../../assembler/masm/operator-this.md)|[TYPE](../../assembler/masm/operator-type.md)|  
   
 ## See Also  
- [Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+
+[Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
