@@ -124,7 +124,7 @@ translation.priority.mt:
 # Common Macros for Build Commands and Properties
 Depending on your installation options, Visual Studio can make hundreds of macros available to you. These correspond to the MSBuild properties that are set by default, or in .props or .targets files, or in your project settings. You can use these macros anywhere in a project's **Property Pages** dialog box where strings are accepted. These macros are not case sensitive.  
   
- To display the currently available macros, in the column to the right of a property name, click the drop-down arrow. If **Edit** is available, click it and then in the edit dialog box, click **Macros**. For more information, see the **Specifying User-Defined Values** section of [Property Pages](../ide/property-pages-visual-cpp.md).  
+ To display the currently available macros, in the column to the right of a property name, click the drop-down arrow. If **Edit** is available, click it and then in the edit dialog box, click **Macros**. For example, click on the **Edit Post-build...** button in the Build Events of Project Properties and then select **Macros >>**. For more information, see the **Specifying User-Defined Values** section of [Property Pages](../ide/property-pages-visual-cpp.md). 
   
  Macros that are marked "Deprecated" are no longer used or have been replaced by an equivalent [item metadata macro](/visualstudio/msbuild/itemmetadata-element-msbuild) (**%(***name***)**). Macros that are marked "Deprecated; migrated" are also deprecated. And in addition, if the project that contains the macro is migrated from Visual Studio 2008, Visual Studio converts the macro to the equivalent current macro.  
   
