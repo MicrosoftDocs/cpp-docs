@@ -51,15 +51,11 @@ The tab order is the order in which the TAB key moves the input focus from one c
   
 #### To view the current tab order for all controls in a dialog box  
   
-1.  On the **Format** menu, click **Tab Order**.  
-  
- \- or -  
-  
--   Press CTRL + D.  
+1.  On the **View** menu, click **Tab Order**.  
   
 #### To change the tab order for all controls in a dialog box  
   
-1.  On the **Format** menu, click **Tab Order**.  
+1.  On the **View** menu, click **Tab Order**.  
   
      A number in the upper-left corner of each control shows its place in the current tab order.  
   
@@ -69,21 +65,6 @@ The tab order is the order in which the TAB key moves the input focus from one c
   
     > [!TIP]
     >  Once you enter Tab Order mode, you can press ESC or ENTER to disable the ability to change the tab order.  
-  
-#### To change the tab order for two or more controls  
-  
-1.  From the **Format** menu, choose **Tab Order**.  
-  
-2.  Specify where the change in order will begin. To do this, hold down the **CTRL** key and click the control prior to the one where you want the changed order to begin.  
-  
-     For example, if you want to change the order of controls 7 through 9, hold down CTRL, then select control 6 first.  
-  
-    > [!NOTE]
-    >  To set a specific control to number 1 (first in the tab order), double-click the control.  
-  
-3.  Release the CTRL key, then click the controls in the order you want the TAB key to follow from that point.  
-  
-4.  Press **ENTER** to exit **Tab Order** mode.  
   
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](https://msdn.microsoft.com/library/f45fce5x.aspx) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](https://msdn.microsoft.com/library/xbx3z216.aspx). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](https://msdn.microsoft.com/library/h6270d0z.aspx).  
   
