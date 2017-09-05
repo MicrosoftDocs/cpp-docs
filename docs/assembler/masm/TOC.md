@@ -54,7 +54,7 @@
 ### [.ERR2](dot-err2.md)
 ### [.ERRB](dot-errb.md)
 ### [.ERRDEF](dot-errdef.md)
-### [.ERRDIF]]](dot-errdif.md)
+### [.ERRDIF[[I]]](dot-errdif.md)
 ### [.ERRE](dot-erre.md)
 ### [.ERRIDN]](dot-erridn.md)
 ### [.ERRNB](dot-errnb.md)
