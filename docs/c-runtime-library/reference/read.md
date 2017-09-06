@@ -61,7 +61,7 @@ Reads data from a file.
   
 ```  
   
-      int _read(  
+int _read(  
    int fd,  
    void *buffer,  
    unsigned int count   
