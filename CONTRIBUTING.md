@@ -80,7 +80,7 @@ If you are comfortable with other ways listed on the link above, feel free to us
 
 **Note:** Currently DocFX requires the .NET Framework on Windows or Mono (for Linux or macOS). We hope to port it to .NET Core in the future.
 
-You can build and preview the resulting site locally using a built-in web server. Navigate to the core-docs folder on your machine and type the following command:
+You can build and preview the resulting site locally using a built-in web server. Navigate to the `cpp-docs\docs` folder on your machine and type the following command:
 
 ```
 docfx -t default --serve
