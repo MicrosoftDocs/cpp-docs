@@ -1,7 +1,7 @@
 ---
 title: "Namespaces (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -66,7 +66,7 @@ ContosoData::Func(mgr);
  Use a using declaration to bring one identifier into scope:  
   
 ```cpp  
-using WidgetsUnlimited::ObjectManager;  
+using ContosoData::ObjectManager;  
 ObjectManager mgr;  
 mgr.DoSomething();  
   
@@ -75,7 +75,8 @@ mgr.DoSomething();
  Use a using directive to bring everything in the namespace into scope:  
   
 ```cpp  
-using namespace WidgetsUnlimited;  
+using namespace ContosoData;
+  
 ObjectManager mgr;  
 mgr.DoSomething();  
 Func(mgr);  
@@ -104,15 +105,15 @@ namespace ContosoDataServer
 }  
 ```  
   
- Function implementations in contosodata.cpp should use the fully qualified name, even if you place a using directive at the top of the file:  
+ Function implementations in contosodata.cpp should use the fully qualified name, even if you place a `using` directive at the top of the file:  
   
 ```cpp  
 #include "contosodata.h"  
 using namespace ContosoDataServer;   
   
-void ContosoDataServer::Foo()  
+void ContosoDataServer::Foo() // use fully-qualified name here  
 {  
-   //no qualification because using directive above  
+   // no qualification needed for Bar()  
    Bar();   
 }  
   

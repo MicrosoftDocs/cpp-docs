@@ -1,7 +1,7 @@
 ---
 title: "Visual C++ change history 2003 - 2015 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
