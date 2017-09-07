@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Visual C++ for UNIX Users | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/01/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  

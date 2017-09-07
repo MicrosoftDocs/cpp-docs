@@ -1,7 +1,7 @@
 ---
 title: "Linker Tools Error LNK2001 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "05/17/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
