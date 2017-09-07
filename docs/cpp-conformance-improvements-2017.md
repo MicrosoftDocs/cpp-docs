@@ -1,7 +1,7 @@
 ---
 title: "C++ compiler conformance improvements | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/05/2017"
+ms.date: "08/13/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
