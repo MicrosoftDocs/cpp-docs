@@ -1,7 +1,7 @@
 ---
 title: "ARM Assembler Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/28/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -31,6 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # ARM Assembler Reference
+
 The articles in this section of the documentation provide reference material for the Microsoft ARM assembler (armasm) and related tools.  
   
 ## Related Articles  
@@ -44,5 +45,6 @@ The articles in this section of the documentation provide reference material for
 |[ARM Compiler armasm User Guide](https://developer.arm.com/search#q=ARM%20Compiler%20armasm%20User%20Guide) on the ARM Developer website.|Choose a recent version to find up-to-date information about the ARM assembly language. **Note:**  The "armasm" assembler that is referred to on the ARM Developer website is not the Microsoft armasm assembler that is included in Visual Studio and is documented in this section.|  
   
 ## See Also  
+
  [ARM Intrinsics](../../intrinsics/arm-intrinsics.md)   
  [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)
