@@ -62,7 +62,7 @@ SET _CL_=[ [option] ... [file] ...] [/link link-opt ...]
  For related information, see [Set Environment Variables](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
   
 ## Examples  
- The following is an example of settting the CL environment variable:  
+ The following is an example of setting the CL environment variable:  
   
 ```  
 SET CL=/Zp2 /Ox /I\INCLUDE\MYINCLS \LIB\BINMODE.OBJ  
