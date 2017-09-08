@@ -1,5 +1,5 @@
 ---
-title: ".ERRDIF]] | Microsoft Docs"
+title: ".ERRDIF[[I]] | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -9,11 +9,11 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: 
-  - ".ERRDIF[[I]]]"
+  - ".ERRDIF[[I]]"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
-  - ".ERRDIF[[I]]] directive"
+  - ".ERRDIF[[I]] directive"
 ms.assetid: af7cb441-0373-4c7e-af9c-06bcb9ed2b0a
 caps.latest.revision: 7
 author: "corob-msft"
@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# .ERRDIF]]
+# .ERRDIF[[I]]
 Generates an error if the text items are different.  
   
 ## Syntax  

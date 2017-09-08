@@ -1376,7 +1376,7 @@ void SetOptions(
   
 - `ECOOP_AND` Retain only those current options that are also specified by `dwFlags`.  
   
-- `ECOOP_XOR` Retain only those current options that are *not* specified by `dwFlags`.  
+- `ECOOP_XOR` Logically exclusive OR the current options with those specified by `dwFlags`.  
   
  `dwFlags`  
  Rich edit options. The flag values are listed in the Remarks section.  
