@@ -31,6 +31,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Templates and Name Resolution
+
 In template definitions, there are three types of names.  
   
 -   Locally declared names, including the name of the template itself and any names declared inside the template definition.  
@@ -45,37 +46,37 @@ In template definitions, there are three types of names.
   
 -   The template argument itself:  
   
-    ```  
+    ```cpp
     T  
     ```  
   
 -   A qualified name with a qualification including a dependent type:  
   
-    ```  
+    ```cpp
     T::myType  
     ```  
   
 -   A qualified name if the unqualified part identifies a dependent type:  
   
-    ```  
+    ```cpp
     N::T  
     ```  
   
 -   A const or volatile type for which the base type is a dependent type:  
   
-    ```  
+    ```cpp
     const T  
     ```  
   
 -   A pointer, reference, array, or function pointer type based on a dependent type:  
   
-    ```  
+    ```cpp
     T *, T &, T [10], T (*)()  
     ```  
   
 -   An array whose size is based on a template parameter:  
   
-    ```  
+    ```cpp
     template <int arg> class X {  
     int x[arg] ; // dependent type  
     }  
@@ -83,14 +84,16 @@ In template definitions, there are three types of names.
   
 -   a template type constructed from a template parameter:  
   
-    ```  
+    ```cpp
     T<int>, MyTemplate<T>  
     ```  
   
-## Type Dependence and Value Dependence  
+## Type Dependence and Value Dependence
+
  Names and expressions dependent on a template parameter are categorized as type dependent or value dependent, depending on whether the template parameter is a type parameter or a value parameter. Also, any identifiers declared in a template with a type dependent on the template argument are considered value dependent, as is a integral or enumeration type initialized with a value-dependent expression.  
   
  Type-dependent and value-dependent expressions are expressions that involve variables that are type dependent or value dependent. These expressions can have semantics that differ, depending on the parameters used for the template.  
   
-## See Also  
+## See Also
+
  [Templates](../cpp/templates-cpp.md)
