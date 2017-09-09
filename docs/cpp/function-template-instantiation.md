@@ -41,7 +41,7 @@ When a function template is first called for each type, the compiler creates an 
   
  Function templates can be explicitly instantiated by declaring the template with a particular type as an argument. For example, the following code is allowed:  
   
-```  
+```cpp
 // function_template_instantiation.cpp  
 template<class T> void f(T) { }  
   
