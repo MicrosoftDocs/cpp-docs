@@ -41,6 +41,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Common Visual C++ 64-bit Migration Issues
+
 When you use Visual C++ to create applications to run on a 64-bit Windows operating system, you should be aware of the following issues:  
   
 -   An `int` and a `long` are 32-bit values on 64-bit Windows operating systems. For programs that you plan to compile for 64-bit platforms, you should be careful not to assign pointers to 32-bit variables. Pointers are 64-bit on 64-bit platforms, and you will truncate the pointer value if you assign it to a 32-bit variable.  
@@ -51,7 +52,7 @@ When you use Visual C++ to create applications to run on a 64-bit Windows operat
   
      You should be aware of where your code takes an `int` value and processes it as a `size_t` or `time_t` value. It is possible that the number could grow to be larger than a 32-bit number and data will be truncated when it is passed back to the `int` storage.  
   
- The %x (hex `int` format) `printf` modifier will not work as expected on a 64-bit Windows operating system. It will only operate on the first 32 bits of the value that is passed to it.  
+The %x (hex `int` format) `printf` modifier will not work as expected on a 64-bit Windows operating system. It will only operate on the first 32 bits of the value that is passed to it.  
   
 -   Use %I32x to display a 32-bit integral type in hex format.  
   
@@ -59,12 +60,13 @@ When you use Visual C++ to create applications to run on a 64-bit Windows operat
   
 -   The %p (hex format for a pointer) will work as expected on a 64-bit Windows operating system.  
   
- For more information, see:  
+For more information, see:  
   
 -   [Compiler Options](../build/reference/compiler-options.md)  
   
 -   [Migration Tips](http://msdn.microsoft.com/library/windows/desktop/aa384214)  
   
 ## See Also  
- [Configuring Programs for 64-Bit](../build/configuring-programs-for-64-bit-visual-cpp.md)   
- [Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)
+
+[Configure Visual C++ for 64-bit, x64 targets](../build/configuring-programs-for-64-bit-visual-cpp.md)   
+[Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)

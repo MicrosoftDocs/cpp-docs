@@ -51,4 +51,4 @@ You can use the **MSBuild** tool to build a Visual C++ application from the comm
 |[How to: Modify the Target Framework and Platform Toolset](../build/how-to-modify-the-target-framework-and-platform-toolset.md)|Demonstrates how to compile a project for multiple frameworks or toolsets.|  
   
 ## See Also  
- [Building on the Command Line](../build/building-on-the-command-line.md)
+ [Build C/C++ code on the command line](../build/building-on-the-command-line.md)

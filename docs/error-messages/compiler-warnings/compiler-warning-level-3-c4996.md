@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 3) C4996 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "06/07/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -36,6 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Compiler Warning (level 3) C4996
+
 The compiler encountered a deprecated declaration.  
   
 This warning or error has several possible meanings, depending on the context.  

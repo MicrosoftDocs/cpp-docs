@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
+ms.technology: 
   - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -18,6 +18,8 @@ apiname:
   - "__C_specific_handler"
   - "_calloc_base"
   - "_chkesp"
+  - "__chkstk"
+  - "_chkstk"
   - "_chvalidator"
   - "_chvalidator_l"
   - "_CIacos"
@@ -295,6 +297,7 @@ apilocation:
   - "api-ms-win-crt-conio-l1-1-0.dll"
   - "vcruntime140_app.dll"
   - "msvcp140_app.dll"
+  - "ntdll.dll"
 apitype: "DLLExport"
 f1_keywords: 
   - "__acrt_iob_func"
@@ -306,6 +309,8 @@ f1_keywords:
   - "__C_specific_handler"
   - "_calloc_base"
   - "_chkesp"
+  - "__chkstk"
+  - "_chkstk"
   - "_chvalidator"
   - "_chvalidator_l"
   - "_CIacos"
@@ -580,6 +585,8 @@ helpviewer_keywords:
   - "__C_specific_handler"
   - "_calloc_base"
   - "_chkesp"
+  - "__chkstk"
+  - "_chkstk"
   - "_chvalidator"
   - "_chvalidator_l"
   - "_CIacos"
@@ -843,25 +850,9 @@ helpviewer_keywords:
   - "_Xbad_alloc"
   - "_Xlength_error"
 ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Internal CRT Globals and Functions  
   
@@ -886,8 +877,9 @@ These global variables and macro definitions are used to implement the CRT.
 |[_wcmdln](../c-runtime-library/acmdln-tcmdln-wcmdln.md)|  
 |__winitenv|  
   
-## Internal CRT Functions and Function Macros  
- These functions and function macros are used to implement the CRT and the C++ Standard Library.  
+## Internal CRT Functions and Function Macros
+
+These functions and function macros are used to implement the CRT and the C++ Standard Library.  
   
 |Name|  
 |----------|  
@@ -899,6 +891,8 @@ These global variables and macro definitions are used to implement the CRT.
 |__C_specific_handler|  
 |_calloc_base|  
 |_chkesp|  
+|__chkstk|  
+|_chkstk|  
 |_chvalidator|  
 |_chvalidator_l|  
 |_CIacos|  
@@ -1191,5 +1185,6 @@ These global variables and macro definitions are used to implement the CRT.
 |_Xbad_alloc|  
 |_Xlength_error|  
   
-## See Also  
- [Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
+## See Also
+
+[Run-Time Routines by Category](../c-runtime-library/run-time-routines-by-category.md)
