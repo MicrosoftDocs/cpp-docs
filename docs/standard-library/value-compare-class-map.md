@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::value_compare"
-  - "std.value_compare"
-  - "map/std::value_compare"
-  - "value_compare"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "value_compare class"
+f1_keywords: ['std::value_compare", "std.value_compare", "map/std::value_compare", "value_compare']
+dev_langs: ["C++"]
+helpviewer_keywords: [", ", 
 ms.assetid: ea97c1d0-04b2-4d42-8d96-23522c04cc41
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # value_compare Class (&lt;map&gt;)
 Provides a function object that can compare the elements of a map by comparing the values of their keys to determine their relative order in the map.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xloctime/std::time_get', 'time_get', 'locale/std::time_get::char_type', 'locale/std::time_get::iter_type', 'locale/std::time_get::date_order', 'locale/std::time_get::do_date_order', 'locale/std::time_get::do_get', 'locale/std::time_get::do_get_date', 'locale/std::time_get::do_get_monthname', 'locale/std::time_get::do_get_time', 'locale/std::time_get::do_get_weekday', 'locale/std::time_get::do_get_year', 'locale/std::time_get::get', 'locale/std::time_get::get_date', 'locale/std::time_get::get_monthname', 'locale/std::time_get::get_time', 'locale/std::time_get::get_weekday', 'locale/std::time_get::get_year']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "time_get class"
+f1_keywords: ['xloctime/std::time_get', 'locale/std::time_get::char_type', 'locale/std::time_get::iter_type', 'locale/std::time_get::date_order', 'locale/std::time_get::do_date_order', 'locale/std::time_get::do_get', 'locale/std::time_get::do_get_date', 'locale/std::time_get::do_get_monthname', 'locale/std::time_get::do_get_time', 'locale/std::time_get::do_get_weekday', 'locale/std::time_get::do_get_year', 'locale/std::time_get::get', 'locale/std::time_get::get_date', 'locale/std::time_get::get_monthname', 'locale/std::time_get::get_time', 'locale/std::time_get::get_weekday', 'locale/std::time_get::get_year']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::time_get [C++]", "std::time_get [C++], char_type", "std::time_get [C++], iter_type", "std::time_get [C++], date_order", "std::time_get [C++], do_date_order", "std::time_get [C++], do_get", "std::time_get [C++], do_get_date", "std::time_get [C++], do_get_monthname", "std::time_get [C++], do_get_time", "std::time_get [C++], do_get_weekday", "std::time_get [C++], do_get_year", "std::time_get [C++], get", "std::time_get [C++], get_date", "std::time_get [C++], get_monthname", "std::time_get [C++], get_time", "std::time_get [C++], get_weekday", "std::time_get [C++], get_year"]
 ms.assetid: 869d5f5b-dbab-4628-8333-bdea7e272023
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # time_get Class
 The template class describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to time values.  

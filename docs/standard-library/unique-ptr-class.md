@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['unique_ptr', 'memory/std::unique_ptr', 'memory/std::unique_ptr::deleter_type', 'memory/std::unique_ptr::element_type', 'memory/std::unique_ptr::pointer', 'memory/std::unique_ptr::get', 'memory/std::unique_ptr::get_deleter', 'memory/std::unique_ptr::release', 'memory/std::unique_ptr::reset', 'memory/std::unique_ptr::swap']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unique_ptr class"
+f1_keywords: ['memory/std::unique_ptr', 'memory/std::unique_ptr::deleter_type', 'memory/std::unique_ptr::element_type', 'memory/std::unique_ptr::pointer', 'memory/std::unique_ptr::get', 'memory/std::unique_ptr::get_deleter', 'memory/std::unique_ptr::release', 'memory/std::unique_ptr::reset', 'memory/std::unique_ptr::swap']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::unique_ptr [C++]", "std::unique_ptr [C++], deleter_type", "std::unique_ptr [C++], element_type", "std::unique_ptr [C++], pointer", "std::unique_ptr [C++], get", "std::unique_ptr [C++], get_deleter", "std::unique_ptr [C++], release", "std::unique_ptr [C++], reset", "std::unique_ptr [C++], swap"]
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # unique_ptr Class
 Stores a pointer to an owned object or array. The object/array is owned by no other `unique_ptr`. The object/array is destroyed when the `unique_ptr` is destroyed.  

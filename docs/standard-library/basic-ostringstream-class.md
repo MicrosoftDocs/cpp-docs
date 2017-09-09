@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['basic_ostringstream', 'sstream/std::basic_ostringstream', 'sstream/std::basic_ostringstream::allocator_type', 'sstream/std::basic_ostringstream::rdbuf', 'sstream/std::basic_ostringstream::str']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "basic_ostringstream class"
+f1_keywords: ['sstream/std::basic_ostringstream', 'sstream/std::basic_ostringstream::allocator_type', 'sstream/std::basic_ostringstream::rdbuf', 'sstream/std::basic_ostringstream::str']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::basic_ostringstream [C++]", "std::basic_ostringstream [C++], allocator_type", "std::basic_ostringstream [C++], rdbuf", "std::basic_ostringstream [C++], str"]
 ms.assetid: aea699f7-350f-432a-acca-adbae7b483fb
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # basic_ostringstream Class
 Describes an object that controls insertion of elements and encoded objects into a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.  

@@ -4,36 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['equal_to', 'xfunctional/std::equal_to']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "equal_to function"
-  - "equal_to struct"
+f1_keywords: ['xfunctional/std::equal_to']
+dev_langs: ["C++"]
+helpviewer_keywords: ["equal_to function", "equal_to struct"]
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # equal_to Struct
 A binary predicate that performs the equality operation ( `operator==`) on its arguments.  

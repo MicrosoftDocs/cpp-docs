@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['ostream/std::basic_ostream', 'basic_ostream', 'ostream/std::basic_ostream::flush', 'ostream/std::basic_ostream::put', 'ostream/std::basic_ostream::seekp', 'ostream/std::basic_ostream::sentry', 'ostream/std::basic_ostream::swap', 'ostream/std::basic_ostream::tellp', 'ostream/std::basic_ostream::write']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "basic_ostream class"
+f1_keywords: ['ostream/std::basic_ostream', 'ostream/std::basic_ostream::flush', 'ostream/std::basic_ostream::put', 'ostream/std::basic_ostream::seekp', 'ostream/std::basic_ostream::sentry', 'ostream/std::basic_ostream::swap', 'ostream/std::basic_ostream::tellp', 'ostream/std::basic_ostream::write']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::basic_ostream [C++]", "std::basic_ostream [C++], flush", "std::basic_ostream [C++], put", "std::basic_ostream [C++], seekp", "std::basic_ostream [C++], sentry", "std::basic_ostream [C++], swap", "std::basic_ostream [C++], tellp", "std::basic_ostream [C++], write"]
 ms.assetid: 5baadc65-b662-4fab-8c9f-94457c58cda1
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # basic_ostream Class
 This template class describes an object that controls insertion of elements and encoded objects into a stream buffer with elements of type **Elem**, also known as [char_type](../standard-library/basic-ios-class.md#char_type), whose character traits are determined by the class **Tr**, also known as [traits_type](../standard-library/basic-ios-class.md#traits_type).  

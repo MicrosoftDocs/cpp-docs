@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['mem_fun1_t', 'xfunctional/std::mem_fun1_t']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mem_fun1_t class"
+f1_keywords: ['xfunctional/std::mem_fun1_t']
+dev_langs: ["C++"]
+helpviewer_keywords: ["mem_fun1_t class"]
 ms.assetid: 01a8c2c2-b2f7-4e3f-869c-5b5b9f06ea54
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # mem_fun1_t Class
 An adapter class that allows a **non_const** member function that takes a single argument to be called as a binary function object when initialized with a pointer argument.  

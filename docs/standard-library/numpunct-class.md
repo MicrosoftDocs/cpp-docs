@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocnum/std::numpunct', 'numpunct', 'locale/std::numpunct::char_type', 'locale/std::numpunct::string_type', 'locale/std::numpunct::decimal_point', 'locale/std::numpunct::do_decimal_point', 'locale/std::numpunct::do_falsename', 'locale/std::numpunct::do_grouping', 'locale/std::numpunct::do_thousands_sep', 'locale/std::numpunct::do_truename', 'locale/std::numpunct::falsename', 'locale/std::numpunct::grouping', 'locale/std::numpunct::thousands_sep', 'locale/std::numpunct::truename']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "numpunct class"
+f1_keywords: ['xlocnum/std::numpunct', 'locale/std::numpunct::char_type', 'locale/std::numpunct::string_type', 'locale/std::numpunct::decimal_point', 'locale/std::numpunct::do_decimal_point', 'locale/std::numpunct::do_falsename', 'locale/std::numpunct::do_grouping', 'locale/std::numpunct::do_thousands_sep', 'locale/std::numpunct::do_truename', 'locale/std::numpunct::falsename', 'locale/std::numpunct::grouping', 'locale/std::numpunct::thousands_sep', 'locale/std::numpunct::truename']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::numpunct [C++]", "std::numpunct [C++], char_type", "std::numpunct [C++], string_type", "std::numpunct [C++], decimal_point", "std::numpunct [C++], do_decimal_point", "std::numpunct [C++], do_falsename", "std::numpunct [C++], do_grouping", "std::numpunct [C++], do_thousands_sep", "std::numpunct [C++], do_truename", "std::numpunct [C++], falsename", "std::numpunct [C++], grouping", "std::numpunct [C++], thousands_sep", "std::numpunct [C++], truename"]
 ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # numpunct Class
 A template class that describes an object that can serve as a local facet to describe the sequences of type `CharType` used to represent information about the formatting and punctuation of numeric and Boolean expressions.  

@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['chrono/std::chrono::duration', 'chrono/std::chrono::duration::duration', 'chrono/std::chrono::duration::count', 'chrono/std::chrono::duration::max', 'chrono/std::chrono::duration::min', 'chrono/std::chrono::duration::zero']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['chrono/std::chrono::duration', 'chrono/std::chrono::duration::duration', 'chrono/std::chrono::duration::count', 'chrono/std::chrono::duration::max', 'chrono/std::chrono::duration::min', 'chrono/std::chrono::duration::zero']
+dev_langs: ["C++"]
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+helpviewer_keywords: ["std::chrono [C++], duration", "]
 ---
 # duration Class
 Describes a type that holds a *time interval*, which is an elapsed time between two time points.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['is_copy_constructible', 'type_traits/std::is_copy_constructible']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_copy_constructible"
+f1_keywords: ['type_traits/std::is_copy_constructible']
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_copy_constructible"]
 ms.assetid: d8db9d4c-21ed-4884-bead-0b0b562de007
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # is_copy_constructible Class
 Tests if type has a copy constructor.  

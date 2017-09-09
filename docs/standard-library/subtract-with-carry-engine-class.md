@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['subtract_with_carry_engine', 'random/std::subtract_with_carry_engine', 'random/std::subtract_with_carry_engine::default_seed', 'random/std::subtract_with_carry_engine::discard', 'random/std::subtract_with_carry_engine::min', 'random/std::subtract_with_carry_engine::max', 'random/std::subtract_with_carry_engine::seed']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "subtract_with_carry_engine class"
+f1_keywords: ['random/std::subtract_with_carry_engine', 'random/std::subtract_with_carry_engine::default_seed', 'random/std::subtract_with_carry_engine::discard', 'random/std::subtract_with_carry_engine::min', 'random/std::subtract_with_carry_engine::max', 'random/std::subtract_with_carry_engine::seed']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::subtract_with_carry_engine [C++]", "std::subtract_with_carry_engine [C++], default_seed", "std::subtract_with_carry_engine [C++], discard", "std::subtract_with_carry_engine [C++], min", "std::subtract_with_carry_engine [C++], max", "std::subtract_with_carry_engine [C++], seed"]
 ms.assetid: 94a055f2-a620-4a22-ac34-c156924bab31
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # subtract_with_carry_engine Class
 Generates a random sequence by the subtract-with-carry (lagged Fibonacci) algorithm.  

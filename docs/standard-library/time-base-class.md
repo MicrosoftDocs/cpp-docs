@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['time_base', 'locale/std::time_base']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "time_base class"
+f1_keywords: ['locale/std::time_base']
+dev_langs: ["C++"]
+helpviewer_keywords: ["time_base class"]
 ms.assetid: 9ae37f0b-9a42-496e-9870-3d9b71bab8fb
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # time_base Class
 The class serves as a base class for facets of template class time_get, defining just the enumerated type **dateorder** and several constants of this type.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['scoped_allocator_adaptor', 'scoped_allocator/std::scoped_allocator_adaptor', 'scoped_allocator/std::scoped_allocator_adaptor::rebind Struct', 'scoped_allocator/std::scoped_allocator_adaptor::allocate', 'scoped_allocator/std::scoped_allocator_adaptor::construct', 'scoped_allocator/std::scoped_allocator_adaptor::deallocate', 'scoped_allocator/std::scoped_allocator_adaptor::destroy', 'scoped_allocator/std::scoped_allocator_adaptor::inner_allocator', 'scoped_allocator/std::scoped_allocator_adaptor::max_size', 'scoped_allocator/std::scoped_allocator_adaptor::outer_allocator', 'scoped_allocator/std::scoped_allocator_adaptor::select_on_container_copy_construction']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "scoped_allocator_adaptor Class"
+f1_keywords: ['scoped_allocator/std::scoped_allocator_adaptor', 'scoped_allocator/std::scoped_allocator_adaptor::rebind Struct', 'scoped_allocator/std::scoped_allocator_adaptor::allocate', 'scoped_allocator/std::scoped_allocator_adaptor::construct', 'scoped_allocator/std::scoped_allocator_adaptor::deallocate', 'scoped_allocator/std::scoped_allocator_adaptor::destroy', 'scoped_allocator/std::scoped_allocator_adaptor::inner_allocator', 'scoped_allocator/std::scoped_allocator_adaptor::max_size', 'scoped_allocator/std::scoped_allocator_adaptor::outer_allocator', 'scoped_allocator/std::scoped_allocator_adaptor::select_on_container_copy_construction']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::scoped_allocator_adaptor", "std::scoped_allocator_adaptor::allocate", "std::scoped_allocator_adaptor::construct", "std::scoped_allocator_adaptor::deallocate", "std::scoped_allocator_adaptor::destroy", "std::scoped_allocator_adaptor::inner_allocator", "std::scoped_allocator_adaptor::max_size", "std::scoped_allocator_adaptor::outer_allocator", "std::scoped_allocator_adaptor::select_on_container_copy_construction"]
 ms.assetid: 0d9b06a1-9a4a-4669-9470-8805cae48e89
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # scoped_allocator_adaptor Class
 Represents a nest of allocators.  

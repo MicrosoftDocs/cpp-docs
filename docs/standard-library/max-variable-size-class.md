@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdext::max_variable_size', 'allocators/stdext::max_variable_size', 'max_variable_size', 'allocators/stdext::max_variable_size::allocated', 'allocators/stdext::max_variable_size::deallocated', 'allocators/stdext::max_variable_size::full', 'allocators/stdext::max_variable_size::released', 'allocators/stdext::max_variable_size::saved']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "max_variable_size class"
+f1_keywords: ['allocators/stdext::max_variable_size', 'allocators/stdext::max_variable_size::allocated', 'allocators/stdext::max_variable_size::deallocated', 'allocators/stdext::max_variable_size::full', 'allocators/stdext::max_variable_size::released', 'allocators/stdext::max_variable_size::saved']
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::max_variable_size", "stdext::max_variable_size [C++], allocated", "stdext::max_variable_size [C++], deallocated", "stdext::max_variable_size [C++], full", "stdext::max_variable_size [C++], released", "stdext::max_variable_size [C++], saved"]
 ms.assetid: 9f2e9df0-4148-4b37-bc30-f8eca0ef86ae
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # max_variable_size Class
 Describes a [max class](../standard-library/allocators-header.md) object that limits a [freelist](../standard-library/freelist-class.md) object to a maximum length that is roughly proportional to the number of allocated memory blocks.  

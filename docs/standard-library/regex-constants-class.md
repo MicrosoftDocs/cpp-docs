@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['regex_constants', 'regex/std::regex_constants', 'error_collate', 'regex/std::regex_constants::error_collate', 'error_ctype', 'regex/std::regex_constants::error_ctype', 'error_escape', 'regex/std::regex_constants::error_escape', 'error_backref', 'regex/std::regex_constants::error_backref', 'error_brack', 'regex/std::regex_constants::error_brack', 'error_paren', 'regex/std::regex_constants::error_paren', 'error_brace', 'regex/std::regex_constants::error_brace', 'error_badbrace', 'regex/std::regex_constants::error_badbrace', 'error_range', 'regex/std::regex_constants::error_range', 'error_space', 'regex/std::regex_constants::error_space', 'error_badrepeat', 'regex/std::regex_constants::error_badrepeat', 'error_complexity', 'regex/std::regex_constants::error_complexity', 'error_stack', 'regex/std::regex_constants::error_stack', 'error_parse', 'regex/std::regex_constants::error_parse', 'error_syntax', 'regex/std::regex_constants::error_syntax', 'match_default', 'regex/std::regex_constants::match_default', 'match_not_bol', 'regex/std::regex_constants::match_not_bol', 'match_not_eol', 'regex/std::regex_constants::match_not_eol', 'match_not_bow', 'regex/std::regex_constants::match_not_bow', 'match_not_eow', 'regex/std::regex_constants::match_not_eow', 'match_any', 'regex/std::regex_constants::match_any', 'match_not_null', 'regex/std::regex_constants::match_not_null', 'match_continuous', 'regex/std::regex_constants::match_continuous', 'match_prev_avail', 'regex/std::regex_constants::match_prev_avail', 'format_default', 'regex/std::regex_constants::format_default', 'format_sed', 'regex/std::regex_constants::format_sed', 'format_no_copy', 'regex/std::regex_constants::format_no_copy', 'format_first_only', 'regex/std::regex_constants::format_first_only', 'regex/std::regex_constants::ECMAScript', 'regex/std::regex_constants::basic', 'regex/std::regex_constants::extended', 'regex/std::regex_constants::awk', 'regex/std::regex_constants::grep', 'regex/std::regex_constants::egrep', 'regex/std::regex_constants::icase', 'regex/std::regex_constants::nosubs', 'regex/std::regex_constants::optimize', 'regex/std::regex_constants::collate']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "regex_constants class"
+f1_keywords: ['regex/std::regex_constants', 'regex/std::regex_constants::error_collate', 'regex/std::regex_constants::error_ctype', 'regex/std::regex_constants::error_escape', 'regex/std::regex_constants::error_backref', 'regex/std::regex_constants::error_brack', 'regex/std::regex_constants::error_paren', 'regex/std::regex_constants::error_brace', 'regex/std::regex_constants::error_badbrace', 'regex/std::regex_constants::error_range', 'regex/std::regex_constants::error_space', 'regex/std::regex_constants::error_badrepeat', 'regex/std::regex_constants::error_complexity', 'regex/std::regex_constants::error_stack', 'regex/std::regex_constants::error_parse', 'regex/std::regex_constants::error_syntax', 'regex/std::regex_constants::match_default', 'regex/std::regex_constants::match_not_bol', 'regex/std::regex_constants::match_not_eol', 'regex/std::regex_constants::match_not_bow', 'regex/std::regex_constants::match_not_eow', 'regex/std::regex_constants::match_any', 'regex/std::regex_constants::match_not_null', 'regex/std::regex_constants::match_continuous', 'regex/std::regex_constants::match_prev_avail', 'regex/std::regex_constants::format_default', 'regex/std::regex_constants::format_sed', 'regex/std::regex_constants::format_no_copy', 'regex/std::regex_constants::format_first_only', 'regex/std::regex_constants::ECMAScript', 'regex/std::regex_constants::basic', 'regex/std::regex_constants::extended', 'regex/std::regex_constants::awk', 'regex/std::regex_constants::grep', 'regex/std::regex_constants::egrep', 'regex/std::regex_constants::icase', 'regex/std::regex_constants::nosubs', 'regex/std::regex_constants::optimize', 'regex/std::regex_constants::collate']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::regex_constants [C++]", "std::regex_constants [C++], error_collate", "std::regex_constants [C++], error_ctype", "std::regex_constants [C++], error_escape", "std::regex_constants [C++], error_backref", "std::regex_constants [C++], error_brack", "std::regex_constants [C++], error_paren", "std::regex_constants [C++], error_brace", "std::regex_constants [C++], error_badbrace", "std::regex_constants [C++], error_range", "std::regex_constants [C++], error_space", "std::regex_constants [C++], error_badrepeat", "std::regex_constants [C++], error_complexity", "std::regex_constants [C++], error_stack", "std::regex_constants [C++], error_parse", "std::regex_constants [C++], error_syntax", "std::regex_constants [C++], match_default", "std::regex_constants [C++], match_not_bol", "std::regex_constants [C++], match_not_eol", "std::regex_constants [C++], match_not_bow", "std::regex_constants [C++], match_not_eow", "std::regex_constants [C++], match_any", "std::regex_constants [C++], match_not_null", "std::regex_constants [C++], match_continuous", "std::regex_constants [C++], match_prev_avail", "std::regex_constants [C++], format_default", "std::regex_constants [C++], format_sed", "std::regex_constants [C++], format_no_copy", "std::regex_constants [C++], format_first_only", "std::regex_constants [C++], ECMAScript", "std::regex_constants [C++], basic", "std::regex_constants [C++], extended", "std::regex_constants [C++], awk", "std::regex_constants [C++], grep", "std::regex_constants [C++], egrep", "std::regex_constants [C++], icase", "std::regex_constants [C++], nosubs", "std::regex_constants [C++], optimize", "std::regex_constants [C++], collate"]
 ms.assetid: 4a69c0ba-c46d-46e4-bd29-6f4efb805f26
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # regex_constants Class
 Namespace for regular expression flags.  

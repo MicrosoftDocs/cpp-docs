@@ -4,32 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['FILESYSTEM/std::experimental::filesystem::operator==', 'FILESYSTEM/std::experimental::filesystem::operator!=', 'FILESYSTEM/std::experimental::filesystem::operator<', 'FILESYSTEM/std::experimental::filesystem::operator<=', 'FILESYSTEM/std::experimental::filesystem::operator>', 'FILESYSTEM/std::experimental::filesystem::operator>=', 'FILESYSTEM/std::experimental::filesystem::operator/', 'FILESYSTEM/std::experimental::filesystem::operator<<', 'FILESYSTEM/std::experimental::filesystem::operator>>']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['FILESYSTEM/std::experimental::filesystem::operator==', 'FILESYSTEM/std::experimental::filesystem::operator!=', 'FILESYSTEM/std::experimental::filesystem::operator<', 'FILESYSTEM/std::experimental::filesystem::operator<=', 'FILESYSTEM/std::experimental::filesystem::operator>', 'FILESYSTEM/std::experimental::filesystem::operator>=', 'FILESYSTEM/std::experimental::filesystem::operator/', 'FILESYSTEM/std::experimental::filesystem::operator<<', 'FILESYSTEM/std::experimental::filesystem::operator>>']
+dev_langs: ["C++"]
 ms.assetid: 102c4833-aa3b-41a8-8998-f5003c546bfd
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;filesystem&gt; operators
 The operators perform a lexical comparison of two paths as strings. Use the **equivalent** function to determine whether two paths (for example a relative path and an absolute path) refer to the same file or directory on disk.  

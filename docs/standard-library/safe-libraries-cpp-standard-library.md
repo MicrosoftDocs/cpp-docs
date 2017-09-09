@@ -4,38 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_SCL_SECURE_NO_DEPRECATE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Safe Libraries"
-  - "Safe Libraries, C++ Standard Library"
-  - "Safe C++ Standard Library"
+f1_keywords: ['_SCL_SECURE_NO_DEPRECATE']
+dev_langs: ["C++"]
+helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library"]
 ms.assetid: 3993340f-1f29-4d81-b3f5-52a52bc8e148
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Safe Libraries: C++ Standard Library
 Several enhancements have been made to the libraries that ship with Visual C++, including the C++ Standard Library, to make them more secure.  

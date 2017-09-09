@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: [ 'map/std::swap (map)', 'map/std::swap (multimap)']  
+f1_keywords: ['map/std::swap (map)', 'map/std::swap (multimap)']
 ms.assetid: 7cb3d1a5-7add-4726-a73f-61927eafd466
 caps.latest.revision: 6
 manager: "ghogen"

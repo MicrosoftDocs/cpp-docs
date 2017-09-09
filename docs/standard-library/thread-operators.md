@@ -6,10 +6,12 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: []  
+f1_keywords: ['thread/std::operator!=', 'thread/std::operator&gt;', 'thread/std::operator&gt;=', 'thread/std::operator&lt;', 'thread/std::operator&lt;&lt;', 'thread/std::operator&lt;=', 'thread/std::operator==']
+dev_langs: ["C++"]
 ms.assetid: e6bb6c0f-64f9-4cb2-9ff2-05b88a6ba7ac
 caps.latest.revision: 11
 manager: "ghogen"
+helpviewer_keywords: ["std::operator!= (thread)", "std::operator&gt; (thread)", "std::operator&gt;= (thread)", "std::operator&lt; (thread)", "std::operator&lt;&lt; (thread)", "std::operator&lt;= (thread)", "std::operator== (thread)"]
 ---
 # &lt;thread&gt; operators
 ||||  

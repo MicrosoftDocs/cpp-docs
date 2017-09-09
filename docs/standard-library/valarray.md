@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.<valarray>"
-  - "valarray/std::<valarray>"
-  - "std::<valarray>"
-  - "<valarray>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "valarray header"
+f1_keywords: ['valarray/std::<valarray>", "std::<valarray>", "<valarray>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["valarray header"]
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;valarray&gt;
 Defines the template class valarray and numerous supporting template classes and functions.  

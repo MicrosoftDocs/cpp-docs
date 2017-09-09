@@ -6,10 +6,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: [ 'future/std::async', 'future/std::future_category', 'future/std::make_error_code', 'future/std::make_error_condition', 'future/std::swap']  
+f1_keywords: ['future/std::async', 'future/std::future_category', 'future/std::make_error_code', 'future/std::make_error_condition', 'future/std::swap']
 ms.assetid: 1e3acc1e-736a-42dc-ade2-b2fe69aa96bc
 caps.latest.revision: 11
 manager: "ghogen"
+helpviewer_keywords: ["std::async [C++]", "std::future_category [C++]", "std::make_error_code [C++]", "std::make_error_condition [C++]", "std::swap [C++]"]
 ---
 # &lt;future&gt; functions
 ||||  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['ctype', 'xlocale/std::ctype', 'locale/std::ctype::char_type', 'locale/std::ctype::do_is', 'locale/std::ctype::do_narrow', 'locale/std::ctype::do_scan_is', 'locale/std::ctype::do_scan_not', 'locale/std::ctype::do_tolower', 'locale/std::ctype::do_toupper', 'locale/std::ctype::do_widen', 'locale/std::ctype::is', 'locale/std::ctype::narrow', 'locale/std::ctype::scan_is', 'locale/std::ctype::scan_not', 'locale/std::ctype::tolower', 'locale/std::ctype::toupper', 'locale/std::ctype::widen']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ctype class"
+f1_keywords: ['xlocale/std::ctype', 'locale/std::ctype::char_type', 'locale/std::ctype::do_is', 'locale/std::ctype::do_narrow', 'locale/std::ctype::do_scan_is', 'locale/std::ctype::do_scan_not', 'locale/std::ctype::do_tolower', 'locale/std::ctype::do_toupper', 'locale/std::ctype::do_widen', 'locale/std::ctype::is', 'locale/std::ctype::narrow', 'locale/std::ctype::scan_is', 'locale/std::ctype::scan_not', 'locale/std::ctype::tolower', 'locale/std::ctype::toupper', 'locale/std::ctype::widen']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::ctype [C++]", "std::ctype [C++], char_type", "std::ctype [C++], do_is", "std::ctype [C++], do_narrow", "std::ctype [C++], do_scan_is", "std::ctype [C++], do_scan_not", "std::ctype [C++], do_tolower", "std::ctype [C++], do_toupper", "std::ctype [C++], do_widen", "std::ctype [C++], is", "std::ctype [C++], narrow", "std::ctype [C++], scan_is", "std::ctype [C++], scan_not", "std::ctype [C++], tolower", "std::ctype [C++], toupper", "std::ctype [C++], widen"]
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ctype Class
 A class that provides a facet that is used to classify characters, convert from upper and lower cases, and convert between the native character set and that set used by the locale.  

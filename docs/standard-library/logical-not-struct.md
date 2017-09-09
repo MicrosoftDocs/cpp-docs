@@ -4,36 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['logical_not', 'xfunctional/std::logical_not']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "logical_not class"
-  - "logical_not struct"
+f1_keywords: ['xfunctional/std::logical_not']
+dev_langs: ["C++"]
+helpviewer_keywords: ["logical_not class", "logical_not struct"]
 ms.assetid: 892db678-31da-4540-974b-17b05efc0849
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # logical_not Struct
 A predefined function object that performs the logical not operation ( `operator!`) on its argument.  

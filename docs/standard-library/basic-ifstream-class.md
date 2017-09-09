@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['basic_ifstream', 'fstream/std::basic_ifstream', 'fstream/std::basic_ifstream::close', 'fstream/std::basic_ifstream::is_open', 'fstream/std::basic_ifstream::open', 'fstream/std::basic_ifstream::rdbuf', 'fstream/std::basic_ifstream::swap']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "basic_ifstream class"
+f1_keywords: ['fstream/std::basic_ifstream', 'fstream/std::basic_ifstream::close', 'fstream/std::basic_ifstream::is_open', 'fstream/std::basic_ifstream::open', 'fstream/std::basic_ifstream::rdbuf', 'fstream/std::basic_ifstream::swap']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::basic_ifstream [C++]", "std::basic_ifstream [C++], close", "std::basic_ifstream [C++], is_open", "std::basic_ifstream [C++], open", "std::basic_ifstream [C++], rdbuf", "std::basic_ifstream [C++], swap"]
 ms.assetid: 366cd9a7-efc4-4b7f-ba10-c8271e47ffcf
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # basic_ifstream Class
 Describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, with elements of type `Elem`, whose character traits are determined by the class `Tr`.  

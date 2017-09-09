@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['bernoulli_distribution', 'random/std::bernoulli_distribution', 'random/std::bernoulli_distribution::reset', 'random/std::bernoulli_distribution::p', 'random/std::bernoulli_distribution::param', 'random/std::bernoulli_distribution::min', 'random/std::bernoulli_distribution::max', 'random/std::bernoulli_distribution::operator()', 'random/std::bernoulli_distribution::param_type', 'random/std::bernoulli_distribution::param_type::p', 'random/std::bernoulli_distribution::param_type::operator==', 'random/std::bernoulli_distribution::param_type::operator!=', 'random/std::bernoulli_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "bernoulli_distribution class"
+f1_keywords: ['random/std::bernoulli_distribution', 'random/std::bernoulli_distribution::reset', 'random/std::bernoulli_distribution::p', 'random/std::bernoulli_distribution::param', 'random/std::bernoulli_distribution::min', 'random/std::bernoulli_distribution::max', 'random/std::bernoulli_distribution::operator()', 'random/std::bernoulli_distribution::param_type', 'random/std::bernoulli_distribution::param_type::p', 'random/std::bernoulli_distribution::param_type::operator==', 'random/std::bernoulli_distribution::param_type::operator!=', 'random/std::bernoulli_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::bernoulli_distribution [C++]", "std::bernoulli_distribution [C++], reset", "std::bernoulli_distribution [C++], p", "std::bernoulli_distribution [C++], param", "std::bernoulli_distribution [C++], min", "std::bernoulli_distribution [C++], max", "std::bernoulli_distribution [C++], param_type", "std::bernoulli_distribution [C++], param_type"]
 ms.assetid: 586bcde1-95ca-411a-bf17-4aaf19482f34
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # bernoulli_distribution Class
 Generates a Bernoulli distribution.  

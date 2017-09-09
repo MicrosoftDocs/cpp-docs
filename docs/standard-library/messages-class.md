@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['messages', 'xlocmes/std::messages', 'locale/std::messages::char_type', 'locale/std::messages::string_type', 'locale/std::messages::close', 'locale/std::messages::do_close', 'locale/std::messages::do_get', 'locale/std::messages::do_open', 'locale/std::messages::get', 'locale/std::messages::open']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "messages class"
+f1_keywords: ['xlocmes/std::messages', 'locale/std::messages::char_type', 'locale/std::messages::string_type', 'locale/std::messages::close', 'locale/std::messages::do_close', 'locale/std::messages::do_get', 'locale/std::messages::do_open', 'locale/std::messages::get', 'locale/std::messages::open']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::messages [C++]", "std::messages [C++], char_type", "std::messages [C++], string_type", "std::messages [C++], close", "std::messages [C++], do_close", "std::messages [C++], do_get", "std::messages [C++], do_open", "std::messages [C++], get", "std::messages [C++], open"]
 ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # messages Class
 The template class describes an object that can serve as a locale facet to retrieve localized messages from a catalog of internationalized messages for a given locale.  

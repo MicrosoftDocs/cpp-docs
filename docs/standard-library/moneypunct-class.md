@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['moneypunct', 'xlocmon/std::moneypunct', 'locale/std::moneypunct::char_type', 'locale/std::moneypunct::string_type', 'locale/std::moneypunct::curr_symbol', 'locale/std::moneypunct::decimal_point', 'locale/std::moneypunct::do_curr_symbol', 'locale/std::moneypunct::do_decimal_point', 'locale/std::moneypunct::do_frac_digits', 'locale/std::moneypunct::do_grouping', 'locale/std::moneypunct::do_neg_format', 'locale/std::moneypunct::do_negative_sign', 'locale/std::moneypunct::do_pos_format', 'locale/std::moneypunct::do_positive_sign', 'locale/std::moneypunct::do_thousands_sep', 'locale/std::moneypunct::frac_digits', 'locale/std::moneypunct::grouping', 'locale/std::moneypunct::neg_format', 'locale/std::moneypunct::negative_sign', 'locale/std::moneypunct::pos_format', 'locale/std::moneypunct::positive_sign', 'locale/std::moneypunct::thousands_sep']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "moneypunct class"
+f1_keywords: ['xlocmon/std::moneypunct', 'locale/std::moneypunct::char_type', 'locale/std::moneypunct::string_type', 'locale/std::moneypunct::curr_symbol', 'locale/std::moneypunct::decimal_point', 'locale/std::moneypunct::do_curr_symbol', 'locale/std::moneypunct::do_decimal_point', 'locale/std::moneypunct::do_frac_digits', 'locale/std::moneypunct::do_grouping', 'locale/std::moneypunct::do_neg_format', 'locale/std::moneypunct::do_negative_sign', 'locale/std::moneypunct::do_pos_format', 'locale/std::moneypunct::do_positive_sign', 'locale/std::moneypunct::do_thousands_sep', 'locale/std::moneypunct::frac_digits', 'locale/std::moneypunct::grouping', 'locale/std::moneypunct::neg_format', 'locale/std::moneypunct::negative_sign', 'locale/std::moneypunct::pos_format', 'locale/std::moneypunct::positive_sign', 'locale/std::moneypunct::thousands_sep']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::moneypunct [C++]", "std::moneypunct [C++], char_type", "std::moneypunct [C++], string_type", "std::moneypunct [C++], curr_symbol", "std::moneypunct [C++], decimal_point", "std::moneypunct [C++], do_curr_symbol", "std::moneypunct [C++], do_decimal_point", "std::moneypunct [C++], do_frac_digits", "std::moneypunct [C++], do_grouping", "std::moneypunct [C++], do_neg_format", "std::moneypunct [C++], do_negative_sign", "std::moneypunct [C++], do_pos_format", "std::moneypunct [C++], do_positive_sign", "std::moneypunct [C++], do_thousands_sep", "std::moneypunct [C++], frac_digits", "std::moneypunct [C++], grouping", "std::moneypunct [C++], neg_format", "std::moneypunct [C++], negative_sign", "std::moneypunct [C++], pos_format", "std::moneypunct [C++], positive_sign", "std::moneypunct [C++], thousands_sep"]
 ms.assetid: cf2650da-3e6f-491c-95d5-23e57f582ee6
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # moneypunct Class
 The template class describes an object that can serve as a locale facet to describe the sequences of type `CharType` used to represent a monetary input field or a monetary output field. If the template parameter `Intl` is `true`, international conventions are observed.  

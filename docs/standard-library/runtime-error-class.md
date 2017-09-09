@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['runtime_error', 'stdexcept/std::runtime_error']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "runtime_error class"
+f1_keywords: ['stdexcept/std::runtime_error']
+dev_langs: ["C++"]
+helpviewer_keywords: ["runtime_error class"]
 ms.assetid: 4d0227bf-847b-45a2-a320-2351ebf98368
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # runtime_error Class
 The class serves as the base class for all exceptions thrown to report errors presumably detectable only when the program executes.  

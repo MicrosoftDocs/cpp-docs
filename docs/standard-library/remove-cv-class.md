@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['remove_cv', 'type_traits/std::remove_cv']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "remove_cv class"
-  - "remove_cv"
+f1_keywords: ['type_traits/std::remove_cv']
+dev_langs: ["C++"]
+helpviewer_keywords: ["remove_cv class", "remove_cv"]
 ms.assetid: 8502602a-1c80-479c-84e0-33bd1d6496d6
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # remove_cv Class
 Makes non const/volatile type from type.  

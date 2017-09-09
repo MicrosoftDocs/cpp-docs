@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['aligned_union', 'type_traits/std::aligned_union']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "aligned_union"
+f1_keywords: ['type_traits/std::aligned_union']
+dev_langs: ["C++"]
+helpviewer_keywords: ["aligned_union"]
 ms.assetid: 9931a44d-3a67-4f29-a0f6-d47a7cf560ac
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # aligned_union Class
 Provides a POD type large enough and suitably aligned to store a union type, and the size required.  

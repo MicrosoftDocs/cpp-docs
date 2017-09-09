@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::<new>"
-  - "<new>"
-  - "std.<new>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "new header"
+f1_keywords: ['std::<new>", "<new>", "std.<new>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["new header"]
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;new&gt;
 Defines several types and functions that control the allocation and freeing of storage under program control. It also defines components for reporting on storage management errors.  

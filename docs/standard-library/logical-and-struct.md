@@ -4,36 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::logical_and', 'logical_and']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "logical_and class"
-  - "logical_and struct"
+f1_keywords: ['xfunctional/std::logical_and'
+dev_langs: ["C++"]
+helpviewer_keywords: ["logical_and class", "logical_and struct"]
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # logical_and Struct
 A predefined function object that performs the logical conjunction operation ( `operator&&`) on its arguments.  

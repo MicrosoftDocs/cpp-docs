@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "memory/std::<memory>"
-  - "std.<memory>"
-  - "<memory>"
-  - "std::<memory>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "memory header"
+f1_keywords: ['memory/std::<memory>", "<memory>", "std::<memory>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["memory header"]
 ms.assetid: ef8e38da-7c9d-4037-9ad1-20c99febf5dc
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;memory&gt;
 Defines a class, an operator, and several templates that help allocate and free objects.  

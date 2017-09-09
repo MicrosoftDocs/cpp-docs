@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.<system_error>"
-  - "std::<system_error>"
-  - "<system_error>"
-  - "system_error"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "system_error header"
+f1_keywords: ['std::<system_error>", "<system_error>", "system_error']
+dev_langs: ["C++"]
+helpviewer_keywords: ["system_error header"]
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;system_error&gt;
 Include the header `<system_error>` to define the exception class `system_error` and related templates for processing low-level system errors.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::max_unbounded', 'stdext::max_unbounded', 'max_unbounded', 'allocators/stdext::max_unbounded::allocated', 'allocators/stdext::max_unbounded::deallocated', 'allocators/stdext::max_unbounded::full', 'allocators/stdext::max_unbounded::released', 'allocators/stdext::max_unbounded::saved']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "max_unbounded class"
+f1_keywords: ['allocators/stdext::max_unbounded', 'allocators/stdext::max_unbounded::allocated', 'allocators/stdext::max_unbounded::deallocated', 'allocators/stdext::max_unbounded::full', 'allocators/stdext::max_unbounded::released', 'allocators/stdext::max_unbounded::saved']
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::max_unbounded", "stdext::max_unbounded [C++], allocated", "stdext::max_unbounded [C++], deallocated", "stdext::max_unbounded [C++], full", "stdext::max_unbounded [C++], released", "stdext::max_unbounded [C++], saved"]
 ms.assetid: e34627a9-c231-4031-a483-cbb0514fff46
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # max_unbounded Class
 Describes a [max class](../standard-library/allocators-header.md) object that does not limit the maximum length of a [freelist](../standard-library/freelist-class.md) object.  

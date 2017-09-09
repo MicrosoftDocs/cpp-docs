@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['sub_match', 'regex/std::sub_match', 'regex/std::sub_match::matched', 'regex/std::sub_match::compare', 'regex/std::sub_match::length', 'regex/std::sub_match::str', 'regex/std::sub_match::difference_type', 'regex/std::sub_match::iterator', 'regex/std::sub_match::value_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sub_match class"
+f1_keywords: ['regex/std::sub_match', 'regex/std::sub_match::matched', 'regex/std::sub_match::compare', 'regex/std::sub_match::length', 'regex/std::sub_match::str', 'regex/std::sub_match::difference_type', 'regex/std::sub_match::iterator', 'regex/std::sub_match::value_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::sub_match [C++]", "std::sub_match [C++], matched", "std::sub_match [C++], compare", "std::sub_match [C++], length", "std::sub_match [C++], str", "std::sub_match [C++], difference_type", "std::sub_match [C++], iterator", "std::sub_match [C++], value_type"]
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # sub_match Class
 Describes a submatch.  

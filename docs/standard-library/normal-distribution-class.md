@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['normal_distribution', 'random/std::normal_distribution', 'random/std::normal_distribution::reset', 'random/std::normal_distribution::mean', 'random/std::normal_distribution::stddev', 'random/std::normal_distribution::param', 'random/std::normal_distribution::min', 'random/std::normal_distribution::max', 'random/std::normal_distribution::operator()', 'random/std::normal_distribution::param_type', 'random/std::normal_distribution::param_type::mean', 'random/std::normal_distribution::param_type::stddev', 'random/std::normal_distribution::param_type::operator==', 'random/std::normal_distribution::param_type::operator!=', 'random/std::normal_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "normal_distribution class"
+f1_keywords: ['random/std::normal_distribution', 'random/std::normal_distribution::reset', 'random/std::normal_distribution::mean', 'random/std::normal_distribution::stddev', 'random/std::normal_distribution::param', 'random/std::normal_distribution::min', 'random/std::normal_distribution::max', 'random/std::normal_distribution::operator()', 'random/std::normal_distribution::param_type', 'random/std::normal_distribution::param_type::mean', 'random/std::normal_distribution::param_type::stddev', 'random/std::normal_distribution::param_type::operator==', 'random/std::normal_distribution::param_type::operator!=', 'random/std::normal_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::normal_distribution [C++]", "std::normal_distribution [C++], reset", "std::normal_distribution [C++], mean", "std::normal_distribution [C++], stddev", "std::normal_distribution [C++], param", "std::normal_distribution [C++], min", "std::normal_distribution [C++], max", "std::normal_distribution [C++], param_type", "std::normal_distribution [C++], param_type"]
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # normal_distribution Class
 Generates a normal distribution.  

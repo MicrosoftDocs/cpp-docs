@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['remove_extent', 'type_traits/std::remove_extent']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "remove_extent class"
-  - "remove_extent"
+f1_keywords: ['type_traits/std::remove_extent']
+dev_langs: ["C++"]
+helpviewer_keywords: ["remove_extent class", "remove_extent"]
 ms.assetid: b9320862-3891-49fc-80bc-571eb2c035cf
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # remove_extent Class
 Makes element type from array type.  

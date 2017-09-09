@@ -6,10 +6,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: [ 'mutex/std::adopt_lock', 'mutex/std::call_once', 'mutex/std::defer_lock', 'mutex/std::lock', 'mutex/std::try_to_lock']  
+f1_keywords: ['mutex/std::adopt_lock', 'mutex/std::call_once', 'mutex/std::defer_lock', 'mutex/std::lock', 'mutex/std::try_to_lock']
 ms.assetid: 78ab3c8b-c7db-4226-ac93-e2e78ff8b964
 caps.latest.revision: 11
 manager: "ghogen"
+helpviewer_keywords: ["std::adopt_lock [C++]", "std::call_once [C++]", "std::defer_lock [C++]", "std::lock [C++]", "std::try_to_lock [C++]"]
 ---
 # &lt;mutex&gt; functions and variables
 ||||  

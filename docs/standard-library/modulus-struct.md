@@ -4,36 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['modulus', 'xfunctional/std::modulus']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "modulus class"
-  - "modulus struct"
+f1_keywords: ['xfunctional/std::modulus']
+dev_langs: ["C++"]
+helpviewer_keywords: ["modulus class", "modulus struct"]
 ms.assetid: 86d342f7-b7b1-46a4-b0bb-6b7ae827369b
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # modulus Struct
 A predefined function object that performs the modulus division operation ( `operator%`) on its arguments.  

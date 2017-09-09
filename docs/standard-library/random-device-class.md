@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['random_device', 'random/std::random_device', 'random/std::random_device::min', 'random/std::random_device::max', 'random/std::random_device::entropy', 'random/std::random_device::operator()', 'random/std::random_device::entropy', 'random/std::random_device::operator()']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "random_device class"
+f1_keywords: ['random/std::random_device', 'random/std::random_device::min', 'random/std::random_device::max', 'random/std::random_device::entropy', 'random/std::random_device::operator()', 'random/std::random_device::entropy', 'random/std::random_device::operator()']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::random_device [C++]", "std::random_device [C++], min", "std::random_device [C++], max", "std::random_device [C++], entropy", "std::random_device [C++], entropy"]
 ms.assetid: 4393d515-0cb6-4e0d-a2ba-c780f05dc1bf
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # random_device Class
 Generates a random sequence from an external device.  

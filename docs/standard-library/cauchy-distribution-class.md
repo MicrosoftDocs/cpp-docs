@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['cauchy_distribution', 'random/std::cauchy_distribution', 'random/std::cauchy_distribution::reset', 'random/std::cauchy_distribution::a', 'random/std::cauchy_distribution::b', 'random/std::cauchy_distribution::param', 'random/std::cauchy_distribution::min', 'random/std::cauchy_distribution::max', 'random/std::cauchy_distribution::operator()', 'random/std::cauchy_distribution::param_type', 'random/std::cauchy_distribution::param_type::a', 'random/std::cauchy_distribution::param_type::b', 'random/std::cauchy_distribution::param_type::operator==', 'random/std::cauchy_distribution::param_type::operator!=', 'random/std::cauchy_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cauchy_distribution class"
+f1_keywords: ['random/std::cauchy_distribution', 'random/std::cauchy_distribution::reset', 'random/std::cauchy_distribution::a', 'random/std::cauchy_distribution::b', 'random/std::cauchy_distribution::param', 'random/std::cauchy_distribution::min', 'random/std::cauchy_distribution::max', 'random/std::cauchy_distribution::operator()', 'random/std::cauchy_distribution::param_type', 'random/std::cauchy_distribution::param_type::a', 'random/std::cauchy_distribution::param_type::b', 'random/std::cauchy_distribution::param_type::operator==', 'random/std::cauchy_distribution::param_type::operator!=', 'random/std::cauchy_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::cauchy_distribution [C++]", "std::cauchy_distribution [C++], reset", "std::cauchy_distribution [C++], a", "std::cauchy_distribution [C++], b", "std::cauchy_distribution [C++], param", "std::cauchy_distribution [C++], min", "std::cauchy_distribution [C++], max", "std::cauchy_distribution [C++], param_type", "std::cauchy_distribution [C++], param_type"]
 ms.assetid: 21522351-f2f1-46d9-97f0-d358c932356c
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # cauchy_distribution Class
 Generates a Cauchy distribution.  

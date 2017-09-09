@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['thread/std::thread', 'thread/std::thread::id Class', 'thread/std::thread::thread', 'thread/std::thread::detach', 'thread/std::thread::get_id', 'thread/std::thread::hardware_concurrency', 'thread/std::thread::join', 'thread/std::thread::joinable', 'thread/std::thread::native_handle', 'thread/std::thread::swap']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['thread/std::thread', 'thread/std::thread::id Class', 'thread/std::thread::thread', 'thread/std::thread::detach', 'thread/std::thread::get_id', 'thread/std::thread::hardware_concurrency', 'thread/std::thread::join', 'thread/std::thread::joinable', 'thread/std::thread::native_handle', 'thread/std::thread::swap']
+dev_langs: ["C++"]
 ms.assetid: df249bc7-ff81-4ff9-a6d6-5e3d9a8f56a1
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+helpviewer_keywords: ["std::thread [C++]", "std::thread [C++], thread", "std::thread [C++], detach", "std::thread [C++], get_id", "std::thread [C++], hardware_concurrency", "std::thread [C++], join", "std::thread [C++], joinable", "std::thread [C++], native_handle", "std::thread [C++], swap"]
 ---
 # thread Class
 Defines an object that's used to observe and manage a thread of execution within an application.  

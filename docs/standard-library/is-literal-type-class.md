@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['is_literal_type', 'type_traits/std::is_literal_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_literal_type"
+f1_keywords: ['type_traits/std::is_literal_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_literal_type"]
 ms.assetid: a03a4ebb-ee66-48d6-91bb-41cf72b2401f
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # is_literal_type Class
 Tests whether a type can be used as a `constexpr` variable or be constructed, used by, or returned from `constexpr` functions.  

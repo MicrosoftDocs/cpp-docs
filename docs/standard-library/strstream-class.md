@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['strstream', 'strstream/std::strstream::freeze', 'strstream/std::strstream::pcount', 'strstream/std::strstream::rdbuf', 'strstream/std::strstream::str']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strstream class"
+f1_keywords: ['strstream/std::strstream::freeze', 'strstream/std::strstream::pcount', 'strstream/std::strstream::rdbuf', 'strstream/std::strstream::str']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::strstream [C++], freeze", "std::strstream [C++], pcount", "std::strstream [C++], rdbuf", "std::strstream [C++], str"]
 ms.assetid: 63f3be31-9e36-42b1-9715-a474a5997e2a
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # strstream Class
 Describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [strstreambuf](../standard-library/strstreambuf-class.md).  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['complex', 'complex/std::complex::value_type', 'complex/std::complex::imag', 'complex/std::complex::real']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "complex numbers"
-  - "complex class"
+f1_keywords: ['complex/std::complex::value_type', 'complex/std::complex::imag', 'complex/std::complex::real']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::complex [C++], value_type", "std::complex [C++], imag", "std::complex [C++], real"]
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # complex Class
 The template class describes an object that stores two objects of type **Type**, one that represents the real part of a complex number and one that represents the imaginary part.  

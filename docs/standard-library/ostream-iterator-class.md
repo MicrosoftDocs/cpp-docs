@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['ostream_iterator', 'iterator/std::ostream_iterator', 'iterator/std::ostream_iterator::char_type', 'iterator/std::ostream_iterator::ostream_type', 'iterator/std::ostream_iterator::traits_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ostream_iterator class"
+f1_keywords: ['iterator/std::ostream_iterator', 'iterator/std::ostream_iterator::char_type', 'iterator/std::ostream_iterator::ostream_type', 'iterator/std::ostream_iterator::traits_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::ostream_iterator [C++]", "std::ostream_iterator [C++], char_type", "std::ostream_iterator [C++], ostream_type", "std::ostream_iterator [C++], traits_type"]
 ms.assetid: 24d842d3-9f45-4bf6-a697-62f5968f5a03
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ostream_iterator Class
 The template class ostream_iterator describes an output iterator object that writes successive elements onto the output stream with the extraction **operator <<**.  

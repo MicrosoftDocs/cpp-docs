@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/checked_array_iterator', 'checked_array_iterator', 'iterator/stdext::checked_array_iterator::difference_type', 'iterator/stdext::checked_array_iterator::pointer', 'iterator/stdext::checked_array_iterator::reference', 'iterator/stdext::checked_array_iterator::base']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "checked_array_iterator, syntax"
-  - "checked_array_iterator class"
-  - "checked_array_iterator"
+f1_keywords: ['iterator/checked_array_iterator', 'iterator/stdext::checked_array_iterator::difference_type', 'iterator/stdext::checked_array_iterator::pointer', 'iterator/stdext::checked_array_iterator::reference', 'iterator/stdext::checked_array_iterator::base']
+dev_langs: ["C++"]
+helpviewer_keywords: , "stdext::checked_array_iterator [C++], difference_type", "stdext::checked_array_iterator [C++], pointer", "stdext::checked_array_iterator [C++], reference", "stdext::checked_array_iterator [C++], base"]
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # checked_array_iterator Class
 The `checked_array_iterator` class allows you to transform an array or pointer into a checked iterator. Use this class as a wrapper (using the [make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator) function) for raw pointers or arrays as a targeted way to provide checking and to manage unchecked pointer warnings instead of globally silencing these warnings. If necessary, you can use the unchecked version of this class, [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md).  

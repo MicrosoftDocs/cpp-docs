@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: [ 'ios/std::ios', 'ios/std::streamoff', 'ios/std::streampos', 'ios/std::streamsize', 'ios/std::wios', 'ios/std::wstreampos']  
+f1_keywords: ['ios/std::ios', 'ios/std::streamoff', 'ios/std::streampos', 'ios/std::streamsize', 'ios/std::wios', 'ios/std::wstreampos']
 ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
 caps.latest.revision: 13
 manager: "ghogen"

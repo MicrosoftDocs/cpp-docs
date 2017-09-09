@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['system_error/std::error_condition', 'error_condition', 'system_error/std::error_condition::value_type', 'system_error/std::error_condition::assign', 'system_error/std::error_condition::category', 'system_error/std::error_condition::clear', 'system_error/std::error_condition::message', 'system_error/std::error_condition::operator bool']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "error_condition class"
+f1_keywords: ['system_error/std::error_condition', 'system_error/std::error_condition::value_type', 'system_error/std::error_condition::assign', 'system_error/std::error_condition::category', 'system_error/std::error_condition::clear', 'system_error/std::error_condition::message', 'system_error/std::error_condition::operator bool']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::error_condition", "std::error_condition::value_type", "std::error_condition::assign", "std::error_condition::category", "std::error_condition::clear", "std::error_condition::message", ""]
 ms.assetid: 6690f481-97c9-4554-a0ff-851dc96b7a06
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # error_condition Class
 Represents user-defined error codes.  

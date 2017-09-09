@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['poisson_distribution', 'random/std::poisson_distribution', 'random/std::poisson_distribution::reset', 'random/std::poisson_distribution::mean', 'random/std::poisson_distribution::param', 'random/std::poisson_distribution::min', 'random/std::poisson_distribution::max', 'random/std::poisson_distribution::operator()', 'random/std::poisson_distribution::param_type', 'random/std::poisson_distribution::param_type::mean', 'random/std::poisson_distribution::param_type::operator==', 'random/std::poisson_distribution::param_type::operator!=', 'random/std::poisson_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "poisson_distribution class"
+f1_keywords: ['random/std::poisson_distribution', 'random/std::poisson_distribution::reset', 'random/std::poisson_distribution::mean', 'random/std::poisson_distribution::param', 'random/std::poisson_distribution::min', 'random/std::poisson_distribution::max', 'random/std::poisson_distribution::operator()', 'random/std::poisson_distribution::param_type', 'random/std::poisson_distribution::param_type::mean', 'random/std::poisson_distribution::param_type::operator==', 'random/std::poisson_distribution::param_type::operator!=', 'random/std::poisson_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::poisson_distribution [C++]", "std::poisson_distribution [C++], reset", "std::poisson_distribution [C++], mean", "std::poisson_distribution [C++], param", "std::poisson_distribution [C++], min", "std::poisson_distribution [C++], max", "std::poisson_distribution [C++], param_type", "std::poisson_distribution [C++], param_type"]
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # poisson_distribution Class
 Generates a Poisson distribution.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['seed_seq', 'random/std::seed_seq', 'random/std::seed_seq::result_type', 'random/std::seed_seq::generate', 'random/std::seed_seq::size', 'random/std::seed_seq::param']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "seed_seq class"
+f1_keywords: ['random/std::seed_seq', 'random/std::seed_seq::result_type', 'random/std::seed_seq::generate', 'random/std::seed_seq::size', 'random/std::seed_seq::param']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::seed_seq [C++]", "std::seed_seq [C++], result_type", "std::seed_seq [C++], generate", "std::seed_seq [C++], size", "std::seed_seq [C++], param"]
 ms.assetid: cba114f7-9ac6-4f2f-b773-9c84805401d6
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # seed_seq Class
 Stores a vector of unsigned integer values that can supply a randomized seed for a random-number engine.  

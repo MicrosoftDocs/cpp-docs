@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['weak_ptr', 'memory/std::weak_ptr', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count', 'memory/std::weak_ptr::operator=', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "weak_ptr class"
+f1_keywords: ['memory/std::weak_ptr', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count', 'memory/std::weak_ptr::operator=', 'memory/std::weak_ptr::element_type', 'memory/std::weak_ptr::expired', 'memory/std::weak_ptr::lock', 'memory/std::weak_ptr::owner_before', 'memory/std::weak_ptr::reset', 'memory/std::weak_ptr::swap', 'memory/std::weak_ptr::use_count']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::weak_ptr [C++]", "std::weak_ptr [C++], element_type", "std::weak_ptr [C++], expired", "std::weak_ptr [C++], lock", "std::weak_ptr [C++], owner_before", "std::weak_ptr [C++], reset", "std::weak_ptr [C++], swap", "std::weak_ptr [C++], use_count", "std::weak_ptr [C++], element_type", "std::weak_ptr [C++], expired", "std::weak_ptr [C++], lock", "std::weak_ptr [C++], owner_before", "std::weak_ptr [C++], reset", "std::weak_ptr [C++], swap", "std::weak_ptr [C++], use_count"]
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # weak_ptr Class
 Wraps a weakly linked pointer.  

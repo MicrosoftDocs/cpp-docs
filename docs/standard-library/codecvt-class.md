@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['codecvt', 'xlocale/std::codecvt', 'locale/std::codecvt::extern_type', 'locale/std::codecvt::intern_type', 'locale/std::codecvt::state_type', 'locale/std::codecvt::always_noconv', 'locale/std::codecvt::do_always_noconv', 'locale/std::codecvt::do_encoding', 'locale/std::codecvt::do_in', 'locale/std::codecvt::do_length', 'locale/std::codecvt::do_max_length', 'locale/std::codecvt::do_out', 'locale/std::codecvt::do_unshift', 'locale/std::codecvt::encoding', 'locale/std::codecvt::in', 'locale/std::codecvt::length', 'locale/std::codecvt::max_length', 'locale/std::codecvt::out', 'locale/std::codecvt::unshift']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "codecvt class"
+f1_keywords: ['xlocale/std::codecvt', 'locale/std::codecvt::extern_type', 'locale/std::codecvt::intern_type', 'locale/std::codecvt::state_type', 'locale/std::codecvt::always_noconv', 'locale/std::codecvt::do_always_noconv', 'locale/std::codecvt::do_encoding', 'locale/std::codecvt::do_in', 'locale/std::codecvt::do_length', 'locale/std::codecvt::do_max_length', 'locale/std::codecvt::do_out', 'locale/std::codecvt::do_unshift', 'locale/std::codecvt::encoding', 'locale/std::codecvt::in', 'locale/std::codecvt::length', 'locale/std::codecvt::max_length', 'locale/std::codecvt::out', 'locale/std::codecvt::unshift']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::codecvt [C++]", "std::codecvt [C++], extern_type", "std::codecvt [C++], intern_type", "std::codecvt [C++], state_type", "std::codecvt [C++], always_noconv", "std::codecvt [C++], do_always_noconv", "std::codecvt [C++], do_encoding", "std::codecvt [C++], do_in", "std::codecvt [C++], do_length", "std::codecvt [C++], do_max_length", "std::codecvt [C++], do_out", "std::codecvt [C++], do_unshift", "std::codecvt [C++], encoding", "std::codecvt [C++], in", "std::codecvt [C++], length", "std::codecvt [C++], max_length", "std::codecvt [C++], out", "std::codecvt [C++], unshift"]
 ms.assetid: 37d3efa1-2b7f-42b6-b04f-7a972c8c2c86
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # codecvt Class
 A template class that describes an object that can serve as a locale facet. It is able to control conversions between a sequence of values used to encode characters within the program and a sequence of values used to encode characters outside the program.  

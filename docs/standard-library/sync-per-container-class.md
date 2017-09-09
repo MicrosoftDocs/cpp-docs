@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['sync_per_container', 'stdext::sync_per_container', 'allocators/stdext::sync_per_container', 'allocators/stdext::sync_per_container::equals']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sync_per_container class"
+f1_keywords: ['allocators/stdext::sync_per_container', 'allocators/stdext::sync_per_container::equals']
+dev_langs: ["C++"]
+helpviewer_keywords: ["sync_per_container class"]
 ms.assetid: 0b4b2904-b668-4d94-a422-d4f919cbffab
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # sync_per_container Class
 Describes a [synchronization filter](../standard-library/allocators-header.md) that provides a separate cache object for each allocator object.  

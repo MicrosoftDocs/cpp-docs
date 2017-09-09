@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['set/std::multiset', 'multiset', 'set/std::multiset::allocator_type', 'set/std::multiset::const_iterator', 'set/std::multiset::const_pointer', 'set/std::multiset::const_reference', 'set/std::multiset::const_reverse_iterator', 'set/std::multiset::difference_type', 'set/std::multiset::iterator', 'set/std::multiset::key_compare', 'set/std::multiset::key_type', 'set/std::multiset::pointer', 'set/std::multiset::reference', 'set/std::multiset::reverse_iterator', 'set/std::multiset::size_type', 'set/std::multiset::value_compare', 'set/std::multiset::value_type', 'set/std::multiset::begin', 'set/std::multiset::cbegin', 'set/std::multiset::cend', 'set/std::multiset::clear', 'set/std::multiset::count', 'set/std::multiset::crbegin', 'set/std::multiset::crend', 'set/std::multiset::emplace', 'set/std::multiset::emplace_hint', 'set/std::multiset::empty', 'set/std::multiset::end', 'set/std::multiset::equal_range', 'set/std::multiset::erase', 'set/std::multiset::find', 'set/std::multiset::get_allocator', 'set/std::multiset::insert', 'set/std::multiset::key_comp', 'set/std::multiset::lower_bound', 'set/std::multiset::max_size', 'set/std::multiset::rbegin', 'set/std::multiset::rend', 'set/std::multiset::size', 'set/std::multiset::swap', 'set/std::multiset::upper_bound', 'set/std::multiset::value_comp']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multiset class"
+f1_keywords: ['set/std::multiset', 'set/std::multiset::allocator_type', 'set/std::multiset::const_iterator', 'set/std::multiset::const_pointer', 'set/std::multiset::const_reference', 'set/std::multiset::const_reverse_iterator', 'set/std::multiset::difference_type', 'set/std::multiset::iterator', 'set/std::multiset::key_compare', 'set/std::multiset::key_type', 'set/std::multiset::pointer', 'set/std::multiset::reference', 'set/std::multiset::reverse_iterator', 'set/std::multiset::size_type', 'set/std::multiset::value_compare', 'set/std::multiset::value_type', 'set/std::multiset::begin', 'set/std::multiset::cbegin', 'set/std::multiset::cend', 'set/std::multiset::clear', 'set/std::multiset::count', 'set/std::multiset::crbegin', 'set/std::multiset::crend', 'set/std::multiset::emplace', 'set/std::multiset::emplace_hint', 'set/std::multiset::empty', 'set/std::multiset::end', 'set/std::multiset::equal_range', 'set/std::multiset::erase', 'set/std::multiset::find', 'set/std::multiset::get_allocator', 'set/std::multiset::insert', 'set/std::multiset::key_comp', 'set/std::multiset::lower_bound', 'set/std::multiset::max_size', 'set/std::multiset::rbegin', 'set/std::multiset::rend', 'set/std::multiset::size', 'set/std::multiset::swap', 'set/std::multiset::upper_bound', 'set/std::multiset::value_comp']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::multiset [C++]", "std::multiset [C++], allocator_type", "std::multiset [C++], const_iterator", "std::multiset [C++], const_pointer", "std::multiset [C++], const_reference", "std::multiset [C++], const_reverse_iterator", "std::multiset [C++], difference_type", "std::multiset [C++], iterator", "std::multiset [C++], key_compare", "std::multiset [C++], key_type", "std::multiset [C++], pointer", "std::multiset [C++], reference", "std::multiset [C++], reverse_iterator", "std::multiset [C++], size_type", "std::multiset [C++], value_compare", "std::multiset [C++], value_type", "std::multiset [C++], begin", "std::multiset [C++], cbegin", "std::multiset [C++], cend", "std::multiset [C++], clear", "std::multiset [C++], count", "std::multiset [C++], crbegin", "std::multiset [C++], crend", "std::multiset [C++], emplace", "std::multiset [C++], emplace_hint", "std::multiset [C++], empty", "std::multiset [C++], end", "std::multiset [C++], equal_range", "std::multiset [C++], erase", "std::multiset [C++], find", "std::multiset [C++], get_allocator", "std::multiset [C++], insert", "std::multiset [C++], key_comp", "std::multiset [C++], lower_bound", "std::multiset [C++], max_size", "std::multiset [C++], rbegin", "std::multiset [C++], rend", "std::multiset [C++], size", "std::multiset [C++], swap", "std::multiset [C++], upper_bound", "std::multiset [C++], value_comp"]
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # multiset Class
 The C++ Standard Library multiset class is used for the storage and retrieval of data from a collection in which the values of the elements contained need not be unique and in which they serve as the key values according to which the data is automatically ordered. The key value of an element in a multiset may not be changed directly. Instead, old values must be deleted and elements with new values inserted.  

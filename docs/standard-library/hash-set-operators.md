@@ -6,7 +6,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: []  
+f1_keywords: ["hash_set/std::operator!=", "hash_set/std::operator=="]  
+dev_langs:  
+  - "C++"  
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
 caps.latest.revision: 13
 manager: "ghogen"

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocmon/std::money_get', 'money_get', 'locale/std::money_get::char_type', 'locale/std::money_get::iter_type', 'locale/std::money_get::string_type', 'locale/std::money_get::do_get', 'locale/std::money_get::get']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "money_get class"
+f1_keywords: ['xlocmon/std::money_get', 'locale/std::money_get::char_type', 'locale/std::money_get::iter_type', 'locale/std::money_get::string_type', 'locale/std::money_get::do_get', 'locale/std::money_get::get']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::money_get [C++]", "std::money_get [C++], char_type", "std::money_get [C++], iter_type", "std::money_get [C++], string_type", "std::money_get [C++], do_get", "std::money_get [C++], get"]
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # money_get Class
 The template class describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to monetary values.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['tuple', 'tuple/std::tuple', 'tuple/std::tuple::operator=']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tuple class"
+f1_keywords: ['tuple/std::tuple', 'tuple/std::tuple::operator=']
+dev_langs: ["C++"]
+helpviewer_keywords: ["tuple class"]
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # tuple Class
 Wraps a fixed-length sequence of elements.  

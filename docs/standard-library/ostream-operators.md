@@ -6,7 +6,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: []  
+f1_keywords: ['ostream/std::operator&lt;&lt;']  
+dev_langs:  
+  - "C++"  
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
 caps.latest.revision: 10
 author: "corob-msft"

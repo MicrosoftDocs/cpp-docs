@@ -4,32 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['filesystem/std::experimental::filesystem::path']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['filesystem/std::experimental::filesystem::path']
+dev_langs: ["C++"]
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # path Class
 The **path** class stores an object of type string\_type, called myname here for the purposes of exposition, suitable for use as a pathname. string\_type is a synonym for basic\_string\<value_type>, where value\_type is a synonym for char under Windows or wchar_t under Posix.  
