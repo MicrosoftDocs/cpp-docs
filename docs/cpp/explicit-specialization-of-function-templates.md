@@ -39,7 +39,7 @@ translation.priority.ht:
 # Explicit Specialization of Function Templates
 With a function template, you can define special behavior for a specific type by providing an explicit specialization (override) of the function template for that type. For example:  
   
-```  
+```cpp
 template<> void MySwap(double a, double b);  
 ```  
   
@@ -47,7 +47,7 @@ template<> void MySwap(double a, double b);
   
 ## Example  
   
-```  
+```cpp
 // explicit_specialization.cpp  
 template<class T> void f(T t)  
 {  
