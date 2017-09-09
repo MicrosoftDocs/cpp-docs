@@ -32,10 +32,12 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
+
 # Partial Ordering of Function Templates (C++)
+
 Multiple function templates that match the argument list of a function call can be available. C++ defines a partial ordering of function templates to specify which function should be called. The ordering is partial because there can be some templates that are considered equally specialized.  
   
- The compiler chooses the most specialized template function available from the possible matches. For example, if a function template takes a type **T**, and another function template taking **T\*** is available, the **T\*** version is said to be more specialized and is preferred over the generic **T** version whenever the argument is a pointer type, even though both would be allowable matches.  
+ The compiler chooses the most specialized template function available from the possible matches. For example, if a function template takes a type **T**, and another function template taking **T&#x2a;** is available, the **T&#x2a;** version is said to be more specialized and is preferred over the generic **T** version whenever the argument is a pointer type, even though both would be allowable matches.  
   
  Use the following process to determine if one function template candidate is more specialized:  
   
@@ -53,15 +55,15 @@ Multiple function templates that match the argument list of a function call can 
   
     1.  A template specialization for a specific type is more specialized than one taking a generic type argument.  
   
-    2.  A template taking only **T\*** is more specialized than one taking only **T**, because a hypothetical type **X\*** is a valid argument for a **T** template argument, but **X** is not a valid argument for a **T\*** template argument.  
+    2.  A template taking only **T&#x2a;** is more specialized than one taking only **T**, because a hypothetical type **X&#x2a;** is a valid argument for a **T** template argument, but **X** is not a valid argument for a **T&#x2a;** template argument.  
   
     3.  **const T** is more specialized than **T**, because **const X** is a valid argument for a **T** template argument, but **X** is not a valid argument for a **const T** template argument.  
   
-    4.  **const T\*** is more specialized than **T\***, because **const X\*** is a valid argument for a **T\*** template argument, but **X\*** is not a valid argument for a **const T\*** template argument.  
+    4.  **const T&#x2a;** is more specialized than **T&#x2a;**, because **const X&#x2a;** is a valid argument for a **T&#x2a;** template argument, but **X&#x2a;** is not a valid argument for a **const T&#x2a;** template argument.  
   
 7.  The following sample works in Visual C++ .NET 2003 as specified in the standard:  
   
-```  
+```cpp
 // partial_ordering_of_function_templates.cpp  
 // compile with: /EHsc  
 #include <iostream>  
