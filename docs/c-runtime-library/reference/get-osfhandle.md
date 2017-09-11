@@ -1,7 +1,7 @@
 ---
 title: "_get_osfhandle | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/11/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -55,6 +55,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # _get_osfhandle
+
 Retrieves the operating-system file handle that is associated with the specified file descriptor.  
   
 ## Syntax  
@@ -65,15 +66,18 @@ intptr_t _get_osfhandle(
 );  
 ```  
   
-#### Parameters  
- `fd`  
- An existing file descriptor.  
+### Parameters
+
+*fd*
+An existing file descriptor.  
   
-## Return Value  
- An operating-system file handle if `fd` is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets `errno` to `EBADF`, indicating an invalid file handle.  
+## Return Value
+
+An operating-system file handle if *fd* is valid. Otherwise, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns `INVALID_HANDLE_VALUE` (-1) and sets `errno` to `EBADF`, indicating an invalid file handle.  
   
-## Remarks  
- To close a file opened with `_get_osfhandle`, call `_close`. The underlying handle is also closed by a call to `_close`, so it is not necessary to call the Win32 function `CloseHandle` on the original handle.  
+## Remarks
+
+To close a file whose operating-system file handle is obtained by `_get_osfhandle`, call [\_close](../../c-runtime-library/reference/close.md) on the file descriptor *fd*. The underlying handle is also closed by a call to `_close`, so it is not necessary to call the Win32 function `CloseHandle` on the original handle.  
   
 ## Requirements  
   
@@ -83,9 +87,10 @@ intptr_t _get_osfhandle(
   
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
-## See Also  
- [File Handling](../../c-runtime-library/file-handling.md)   
- [_close](../../c-runtime-library/reference/close.md)   
- [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
- [_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)   
- [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+## See Also
+
+[File Handling](../../c-runtime-library/file-handling.md)   
+[_close](../../c-runtime-library/reference/close.md)   
+[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
+[_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)   
+[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
