@@ -18,7 +18,7 @@ translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Containers (Modern C++)  
   
-By default, use [vector](../standard-library/vector-class.md) as the preferred sequential container in C++. This is equivalent to `List\<T>` in .NET languages.  
+By default, use [vector](../standard-library/vector-class.md) as the preferred sequential container in C++. This is equivalent to `List<T>` in .NET languages.  
   
 ```cpp  
 vector<string> apples;  

@@ -23,7 +23,6 @@ This topic describes rules that are specific to C++ class templates.
  Member functions can be defined inside or outside of a class template. They are defined like function templates if defined outside the class template.  
   
 ```cpp  
-Copy Code  
 // member_function_templates1.cpp  
 template<class T, int i> class MyStack  
 {  
@@ -190,8 +189,7 @@ X<T>::Y<U>::Y()
 10  
 99  
 X<T>::Y<U>::~Y()  
-X<T>::Y<U>::~Y()  
-  
+X<T>::Y<U>::~Y()
 ```  
   
  Local classes are not allowed to have member templates.  
