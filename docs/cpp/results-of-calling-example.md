@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "examples [C++], results of calling"
-  - "results, thiscall call"
-  - "results, __fastcall keyword call"
-  - "results, __cdecl call"
-  - "results, __stdcall call"
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""examples [C++], results of calling"", ""results, thiscall call"", ""results, __fastcall keyword call"", ""results, __cdecl call"", ""results, __stdcall call""]"]
 ms.assetid: aa70a7cb-ba1d-4aa6-bd0a-ba783da2e642
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Results of Calling Example
 ## Microsoft Specific  

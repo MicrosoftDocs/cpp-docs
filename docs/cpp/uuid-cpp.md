@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "uuid"
-  - "uuid_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__declspec keyword [C++], uuid"
-  - "uuid __declspec keyword"
+f1_keywords: ["uuid", "uuid_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""__declspec keyword [C++], uuid"", ""uuid __declspec keyword""]"]
 ms.assetid: 9d004621-09bc-4a8d-871b-648f5d5102d7
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # uuid (C++)
 **Microsoft Specific**  

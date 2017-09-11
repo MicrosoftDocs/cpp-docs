@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "default"
-  - "default_cpp"
-  - "switch"
-  - "switch_cpp"
-  - "case"
-  - "case_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "switch keyword [C++]"
-  - "case keyword [C++], in switch statements"
-  - "default keyword [C++]"
+f1_keywords: ["default", "default_cpp", "switch", "switch_cpp", "case", "case_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""switch keyword [C++]"", ""case keyword [C++], in switch statements"", ""default keyword [C++]""]"]
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # switch Statement (C++)
 Allows selection among multiple sections of code, depending on the value of an integral expression.  

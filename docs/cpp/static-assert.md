@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "C2338"
-  - "static_assert_cpp"
-  - "static_assert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C++ keywords, static_assert"
-  - "C2338"
-  - "assertions [C++], static_assert"
-  - "static_assert"
+f1_keywords: ["C2338", "static_assert_cpp", "static_assert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""C++ keywords, static_assert"", ""C2338"", ""assertions [C++], static_assert"", ""static_assert [C++]""]"]
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # static_assert
 Tests a software assertion at compile time. If the specified constant expression is `false`, the compiler displays the specified message, if one is provided, and the compilation fails with error C2338; otherwise, the declaration has no effect.  

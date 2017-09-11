@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "access control [C++]"
-  - "member access [C++]"
-  - "member-access control [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""access control [C++]"", ""member access [C++]"", ""member-access control [C++]""]"]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Member Access Control (C++)
 Access controls enable you to separate the [public](../cpp/public-cpp.md) interface of a class from the [private](../cpp/private-cpp.md) implementation details and the [protected](../cpp/protected-cpp.md) members that are only for use by derived classes. The access specifier applies to all members declared after it until the next access specifier is encountered.  

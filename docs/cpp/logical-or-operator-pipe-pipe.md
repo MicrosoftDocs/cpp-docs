@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "||"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OR operator, logical"
-  - "|| operator"
-  - "OR operator"
-  - "logical OR operator"
+f1_keywords: ["||"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""OR operator [C++], logical"", ""|| operator [C++]"", ""OR operator [C++]"", ""logical OR operator [C++]""]"]
 ms.assetid: 31837c99-2655-4bf3-8ded-f13b7a9dc533
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Logical OR Operator: ||
 ## Syntax  

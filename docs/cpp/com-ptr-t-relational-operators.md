@@ -4,63 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "_com_ptr_t::operator>"
-  - "_com_ptr_t::operator>="
-  - "_com_ptr_t.operator<="
-  - "_com_ptr_t.operator!="
-  - "_com_ptr_t::operator<="
-  - "_com_ptr_t.operator>"
-  - "_com_ptr_t.operator<"
-  - "_com_ptr_t.operator=="
-  - "_com_ptr_t::operator=="
-  - "_com_ptr_t.operator>="
-  - "_com_ptr_t::operator!="
-  - "_com_ptr_t::operator<"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ">= operator, comparing specific objects"
-  - "!= operator"
-  - "operator >, pointers"
-  - "operator>=, pointers"
-  - "operator <, pointers"
-  - "operator!=, relational operators"
-  - "< operator, comparing specific objects"
-  - "operator==, pointers"
-  - "operator ==, pointers"
-  - "<= operator, with specific objects"
-  - "relational operators, _com_ptr_t class"
-  - "operator >=, pointers"
-  - "operator !=, relational operators"
-  - "operator <=, pointers"
-  - "> operator, comparing specific objects"
-  - "operator<=, pointers"
-  - "operator<, pointers"
-  - "== operator, with specific Visual C++ objects"
+f1_keywords: []
+dev_langs: ["C++"]
+helpviewer_keywords: ["["">= operator [C++], comparing specific objects"", ""!= operator [C++]"", ""operator >, pointers"", ""operator>=, pointers"", ""operator <, pointers"", ""operator!=, relational operators"", ""< operator [C++], comparing specific objects"", ""operator==, pointers"", ""operator ==, pointers"", ""<= operator [C++], with specific objects"", ""relational operators [C++], _com_ptr_t class"", ""operator >=, pointers"", ""operator !=, relational operators"", ""operator <=, pointers"", ""> operator [C++], comparing specific objects"", ""operator<=, pointers"", ""operator<, pointers"", ""== operator [C++], with specific Visual C++ objects""]"]
 ms.assetid: 5ae4028c-33ee-485d-bbda-88d2604d6d4b
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # _com_ptr_t Relational Operators
 **Microsoft Specific**  

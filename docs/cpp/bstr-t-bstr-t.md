@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "_bstr_t::_bstr_t"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BSTR object"
-  - "_bstr_t method"
-  - "_bstr_t class"
+f1_keywords: []
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""BSTR object [C++]"", ""_bstr_t method [C++]"", ""_bstr_t class""]"]
 ms.assetid: 116d994e-5a72-4351-afbe-866c80b4c165
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # _bstr_t::_bstr_t
 **Microsoft Specific**  
