@@ -35,10 +35,11 @@ translation.priority.ht:
 # Overload Resolution of Function Template Calls
 A function template can overload nontemplate functions of the same name. In this scenario, function calls are resolved by first using template argument deduction to instantiate the function template with a unique specialization. If template argument deduction fails, the other function overloads are considered to resolve the call. These other overloads, also known as the candidate set, include nontemplate functions and other instantiated function templates. If template argument deduction succeeds, then the generated function is compared with the other functions to determine the best match, following the rules for overload resolution. For more information, see [Function Overloading](function-overloading.md).  
   
-## Example  
+## Example
+
  If a nontemplate function is an equally good match to a template function, the nontemplate function is chosen (unless the template arguments were explicitly specified), as in the call `f(1, 1)` in the following example.  
   
-```  
+```cpp
 // template_name_resolution9.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -67,10 +68,11 @@ void f(T1, T2)
 void f(T1, T2)  
 ```  
   
-## Example  
+## Example
+
  The next example illustrates that the exactly matching template function is preferred if the nontemplate function requires a conversion.  
   
-```  
+```cpp
 // template_name_resolution10.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -98,7 +100,8 @@ int main()
 void f(T1, T2)  
 ```  
   
-## See Also  
+## See Also
+
  [Name Resolution](../cpp/templates-and-name-resolution.md)   
  [typename](../cpp/typename.md)   
  
