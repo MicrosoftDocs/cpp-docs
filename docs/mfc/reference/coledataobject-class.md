@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDataObject', 'AFXOLE/COleDataObject', 'AFXOLE/COleDataObject::COleDataObject', 'AFXOLE/COleDataObject::Attach', 'AFXOLE/COleDataObject::AttachClipboard', 'AFXOLE/COleDataObject::BeginEnumFormats', 'AFXOLE/COleDataObject::Detach', 'AFXOLE/COleDataObject::GetData', 'AFXOLE/COleDataObject::GetFileData', 'AFXOLE/COleDataObject::GetGlobalData', 'AFXOLE/COleDataObject::GetNextFormat', 'AFXOLE/COleDataObject::IsDataAvailable', 'AFXOLE/COleDataObject::Release']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "drag and drop [C++], MFC support"
-  - "Clipboard [C++], OLE support"
-  - "uniform data transfer"
-  - "OLE [C++], uniform data transfer"
-  - "Clipboard [C++], MFC support"
-  - "OLE Clipboard [C++], support"
-  - "IDataObject interface, MFC encapsulation"
-  - "data transfer [C++]"
-  - "data transfer [C++], OLE"
-  - "OLE data transfer [C++]"
-  - "COleDataObject class"
-  - "uniform data transfer, OLE"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDataObject [MFC], COleDataObject", "COleDataObject [MFC], Attach", "COleDataObject [MFC], AttachClipboard", "COleDataObject [MFC], BeginEnumFormats", "COleDataObject [MFC], Detach", "COleDataObject [MFC], GetData", "COleDataObject [MFC], GetFileData", "COleDataObject [MFC], GetGlobalData", "COleDataObject [MFC], GetNextFormat", "COleDataObject [MFC], IsDataAvailable", "COleDataObject [MFC], Release"]
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleDataObject Class
 Used in data transfers for retrieving data in various formats from the Clipboard, through drag and drop, or from an embedded OLE item.  

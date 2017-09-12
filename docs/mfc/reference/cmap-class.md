@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMap', 'AFXTEMPL/CMap', 'AFXTEMPL/CMap::CPair', 'AFXTEMPL/CMap::CMap', 'AFXTEMPL/CMap::GetCount', 'AFXTEMPL/CMap::GetHashTableSize', 'AFXTEMPL/CMap::GetNextAssoc', 'AFXTEMPL/CMap::GetSize', 'AFXTEMPL/CMap::GetStartPosition', 'AFXTEMPL/CMap::InitHashTable', 'AFXTEMPL/CMap::IsEmpty', 'AFXTEMPL/CMap::Lookup', 'AFXTEMPL/CMap::PGetFirstAssoc', 'AFXTEMPL/CMap::PGetNextAssoc', 'AFXTEMPL/CMap::PLookup', 'AFXTEMPL/CMap::RemoveAll', 'AFXTEMPL/CMap::RemoveKey', 'AFXTEMPL/CMap::SetAt']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dictionary mapping class"
-  - "collection classes, dictionary mapping"
-  - "CMap class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMap [MFC], CPair", "CMap [MFC], CMap", "CMap [MFC], GetCount", "CMap [MFC], GetHashTableSize", "CMap [MFC], GetNextAssoc", "CMap [MFC], GetSize", "CMap [MFC], GetStartPosition", "CMap [MFC], InitHashTable", "CMap [MFC], IsEmpty", "CMap [MFC], Lookup", "CMap [MFC], PGetFirstAssoc", "CMap [MFC], PGetNextAssoc", "CMap [MFC], PLookup", "CMap [MFC], RemoveAll", "CMap [MFC], RemoveKey", "CMap [MFC], SetAt"]
 ms.assetid: 640a45ab-0993-4def-97ec-42cc78eb10b9
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMap Class
 A dictionary collection class that maps unique keys to values.  

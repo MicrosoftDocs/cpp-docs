@@ -4,48 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.messages.maps"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ON_UPDATE_COMMAND_UI macro"
-  - "ON_NOTIFY_RANGE macro"
-  - "ON_COMMAND macro"
-  - "ON_CONTROL_RANGE macro"
-  - "ON_REGISTERED_MESSAGE macro"
-  - "ON_NOTIFY message"
-  - "ON_COMMAND_RANGE_EX macro"
-  - "ON_MESSAGE macro"
-  - "Windows messages [C++], message maps"
-  - "ON_COMMAND_RANGE macro"
-  - "TN006"
-  - "ON_CONTROL macro"
-  - "ON_COMMAND_EX macro"
-  - "message maps [C++], Windows messaging"
+f1_keywords: ["vc.messages.maps"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ON_UPDATE_COMMAND_UI macro [MFC]", "ON_NOTIFY_RANGE macro [MFC]", "ON_COMMAND macro [MFC]", "ON_CONTROL_RANGE macro [MFC]", "ON_REGISTERED_MESSAGE macro [MFC]", "ON_NOTIFY message [MFC]", "ON_COMMAND_RANGE_EX macro [MFC]", "ON_MESSAGE macro [MFC]", "Windows messages [MFC], message maps", "ON_COMMAND_RANGE macro [MFC]", "TN006", "ON_CONTROL macro [MFC]", "ON_COMMAND_EX macro [MFC]", "message maps [MFC], Windows messaging"]
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # TN006: Message Maps
 This note describes the MFC message map facility.  

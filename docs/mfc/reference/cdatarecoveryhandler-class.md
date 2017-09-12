@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDataRecoveryHandler', 'AFXDATARECOVERY/CDataRecoveryHandler', 'AFXDATARECOVERY/CDataRecoveryHandler::CDataRecoveryHandler', 'AFXDATARECOVERY/CDataRecoveryHandler::AutosaveAllDocumentInfo', 'AFXDATARECOVERY/CDataRecoveryHandler::AutosaveDocumentInfo', 'AFXDATARECOVERY/CDataRecoveryHandler::CreateDocumentInfo', 'AFXDATARECOVERY/CDataRecoveryHandler::DeleteAllAutosavedFiles', 'AFXDATARECOVERY/CDataRecoveryHandler::DeleteAutosavedFile', 'AFXDATARECOVERY/CDataRecoveryHandler::GenerateAutosaveFileName', 'AFXDATARECOVERY/CDataRecoveryHandler::GetAutosaveInterval', 'AFXDATARECOVERY/CDataRecoveryHandler::GetAutosavePath', 'AFXDATARECOVERY/CDataRecoveryHandler::GetDocumentListName', 'AFXDATARECOVERY/CDataRecoveryHandler::GetNormalDocumentTitle', 'AFXDATARECOVERY/CDataRecoveryHandler::GetRecoveredDocumentTitle', 'AFXDATARECOVERY/CDataRecoveryHandler::GetRestartIdentifier', 'AFXDATARECOVERY/CDataRecoveryHandler::GetSaveDocumentInfoOnIdle', 'AFXDATARECOVERY/CDataRecoveryHandler::GetShutdownByRestartManager', 'AFXDATARECOVERY/CDataRecoveryHandler::Initialize', 'AFXDATARECOVERY/CDataRecoveryHandler::QueryRestoreAutosavedDocuments', 'AFXDATARECOVERY/CDataRecoveryHandler::ReadOpenDocumentList', 'AFXDATARECOVERY/CDataRecoveryHandler::RemoveDocumentInfo', 'AFXDATARECOVERY/CDataRecoveryHandler::ReopenPreviousDocuments', 'AFXDATARECOVERY/CDataRecoveryHandler::RestoreAutosavedDocuments', 'AFXDATARECOVERY/CDataRecoveryHandler::SaveOpenDocumentList', 'AFXDATARECOVERY/CDataRecoveryHandler::SetAutosaveInterval', 'AFXDATARECOVERY/CDataRecoveryHandler::SetAutosavePath', 'AFXDATARECOVERY/CDataRecoveryHandler::SetRestartIdentifier', 'AFXDATARECOVERY/CDataRecoveryHandler::SetSaveDocumentInfoOnIdle', 'AFXDATARECOVERY/CDataRecoveryHandler::SetShutdownByRestartManager', 'AFXDATARECOVERY/CDataRecoveryHandler::UpdateDocumentInfo']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDataRecoveryHandler class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDataRecoveryHandler [MFC], CDataRecoveryHandler", "CDataRecoveryHandler [MFC], AutosaveAllDocumentInfo", "CDataRecoveryHandler [MFC], AutosaveDocumentInfo", "CDataRecoveryHandler [MFC], CreateDocumentInfo", "CDataRecoveryHandler [MFC], DeleteAllAutosavedFiles", "CDataRecoveryHandler [MFC], DeleteAutosavedFile", "CDataRecoveryHandler [MFC], GenerateAutosaveFileName", "CDataRecoveryHandler [MFC], GetAutosaveInterval", "CDataRecoveryHandler [MFC], GetAutosavePath", "CDataRecoveryHandler [MFC], GetDocumentListName", "CDataRecoveryHandler [MFC], GetNormalDocumentTitle", "CDataRecoveryHandler [MFC], GetRecoveredDocumentTitle", "CDataRecoveryHandler [MFC], GetRestartIdentifier", "CDataRecoveryHandler [MFC], GetSaveDocumentInfoOnIdle", "CDataRecoveryHandler [MFC], GetShutdownByRestartManager", "CDataRecoveryHandler [MFC], Initialize", "CDataRecoveryHandler [MFC], QueryRestoreAutosavedDocuments", "CDataRecoveryHandler [MFC], ReadOpenDocumentList", "CDataRecoveryHandler [MFC], RemoveDocumentInfo", "CDataRecoveryHandler [MFC], ReopenPreviousDocuments", "CDataRecoveryHandler [MFC], RestoreAutosavedDocuments", "CDataRecoveryHandler [MFC], SaveOpenDocumentList", "CDataRecoveryHandler [MFC], SetAutosaveInterval", "CDataRecoveryHandler [MFC], SetAutosavePath", "CDataRecoveryHandler [MFC], SetRestartIdentifier", "CDataRecoveryHandler [MFC], SetSaveDocumentInfoOnIdle", "CDataRecoveryHandler [MFC], SetShutdownByRestartManager", "CDataRecoveryHandler [MFC], UpdateDocumentInfo"]
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDataRecoveryHandler Class
 The `CDataRecoveryHandler` autosaves documents and restores them if an application unexpectedly exits.  

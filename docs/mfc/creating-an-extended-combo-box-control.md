@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "extended combo boxes"
-  - "CComboBoxEx class, creating extended combo box controls"
-  - "extended combo boxes, creating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["extended combo boxes", "CComboBoxEx class [MFC], creating extended combo box controls", "extended combo boxes [MFC], creating"]
 ms.assetid: a964267e-97b6-4e77-9f89-55bb5c68913f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Creating an Extended Combo Box Control
 How the extended combo box control is created depends on whether you are using the control in a dialog box or creating it in a nondialog window.  

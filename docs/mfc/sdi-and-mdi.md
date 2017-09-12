@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "frame windows, SDI applications"
-  - "frame windows, MDI applications"
-  - "MFC, windows"
-  - "single document interface (SDI), applications"
-  - "MDI, vs. SDI"
+dev_langs: ["C++"]
+helpviewer_keywords: ["frame windows [MFC], SDI applications", "frame windows [MFC], MDI applications", "MFC, windows", "single document interface (SDI) [MFC], applications", "MDI [MFC], vs. SDI"]
 ms.assetid: bb7239d9-4759-4f63-bfff-44a04b48c067
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # SDI and MDI
 MFC makes it easy to work with both single-document interface (SDI) and multiple-document interface (MDI) applications.  

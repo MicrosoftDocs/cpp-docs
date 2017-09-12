@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDispatchDriver', 'AFXDISP/COleDispatchDriver', 'AFXDISP/COleDispatchDriver::COleDispatchDriver', 'AFXDISP/COleDispatchDriver::AttachDispatch', 'AFXDISP/COleDispatchDriver::CreateDispatch', 'AFXDISP/COleDispatchDriver::DetachDispatch', 'AFXDISP/COleDispatchDriver::GetProperty', 'AFXDISP/COleDispatchDriver::InvokeHelper', 'AFXDISP/COleDispatchDriver::ReleaseDispatch', 'AFXDISP/COleDispatchDriver::SetProperty', 'AFXDISP/COleDispatchDriver::m_bAutoRelease', 'AFXDISP/COleDispatchDriver::m_lpDispatch']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleDispatchDriver class"
-  - "Automation clients, implementing Automation"
-  - "OLE dispatch interface"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDispatchDriver [MFC], COleDispatchDriver", "COleDispatchDriver [MFC], AttachDispatch", "COleDispatchDriver [MFC], CreateDispatch", "COleDispatchDriver [MFC], DetachDispatch", "COleDispatchDriver [MFC], GetProperty", "COleDispatchDriver [MFC], InvokeHelper", "COleDispatchDriver [MFC], ReleaseDispatch", "COleDispatchDriver [MFC], SetProperty", "COleDispatchDriver [MFC], m_bAutoRelease", "COleDispatchDriver [MFC], m_lpDispatch"]
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleDispatchDriver Class
 Implements the client side of OLE automation.  

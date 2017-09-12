@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCTasksPaneTask', 'AFXTASKSPANE/CMFCTasksPaneTask', 'AFXTASKSPANE/CMFCTasksPaneTask::CMFCTasksPaneTask', 'AFXTASKSPANE/CMFCTasksPaneTask::SetACCData', 'AFXTASKSPANE/CMFCTasksPaneTask::m_bAutoDestroyWindow', 'AFXTASKSPANE/CMFCTasksPaneTask::m_bIsBold', 'AFXTASKSPANE/CMFCTasksPaneTask::m_dwUserData', 'AFXTASKSPANE/CMFCTasksPaneTask::m_hwndTask', 'AFXTASKSPANE/CMFCTasksPaneTask::m_nIcon', 'AFXTASKSPANE/CMFCTasksPaneTask::m_nWindowHeight', 'AFXTASKSPANE/CMFCTasksPaneTask::m_pGroup', 'AFXTASKSPANE/CMFCTasksPaneTask::m_rect', 'AFXTASKSPANE/CMFCTasksPaneTask::m_strName', 'AFXTASKSPANE/CMFCTasksPaneTask::m_uiCommandID']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCTasksPaneTask class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCTasksPaneTask [MFC], CMFCTasksPaneTask", "CMFCTasksPaneTask [MFC], SetACCData", "CMFCTasksPaneTask [MFC], m_bAutoDestroyWindow", "CMFCTasksPaneTask [MFC], m_bIsBold", "CMFCTasksPaneTask [MFC], m_dwUserData", "CMFCTasksPaneTask [MFC], m_hwndTask", "CMFCTasksPaneTask [MFC], m_nIcon", "CMFCTasksPaneTask [MFC], m_nWindowHeight", "CMFCTasksPaneTask [MFC], m_pGroup", "CMFCTasksPaneTask [MFC], m_rect", "CMFCTasksPaneTask [MFC], m_strName", "CMFCTasksPaneTask [MFC], m_uiCommandID"]
 ms.assetid: c5a7513b-cd8f-4e2e-b16f-650e1fe30954
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCTasksPaneTask Class
 The `CMFCTasksPaneTask` class is a helper class that represents tasks for the task pane control ( [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md)). The task object represents an item in the task group ( [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md)). Each task can have a command that the framework executes when a user clicks on the task and an icon that appears to the left of the task name.  

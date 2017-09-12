@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleConvertDialog', 'AFXODLGS/COleConvertDialog', 'AFXODLGS/COleConvertDialog::COleConvertDialog', 'AFXODLGS/COleConvertDialog::DoConvert', 'AFXODLGS/COleConvertDialog::DoModal', 'AFXODLGS/COleConvertDialog::GetClassID', 'AFXODLGS/COleConvertDialog::GetDrawAspect', 'AFXODLGS/COleConvertDialog::GetIconicMetafile', 'AFXODLGS/COleConvertDialog::GetSelectionType', 'AFXODLGS/COleConvertDialog::m_cv']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleConvertDialog class"
-  - "OLE Convert dialog box"
-  - "dialog boxes, OLE"
-  - "OLE dialog boxes, Convert"
-  - "Convert dialog box"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleConvertDialog [MFC], COleConvertDialog", "COleConvertDialog [MFC], DoConvert", "COleConvertDialog [MFC], DoModal", "COleConvertDialog [MFC], GetClassID", "COleConvertDialog [MFC], GetDrawAspect", "COleConvertDialog [MFC], GetIconicMetafile", "COleConvertDialog [MFC], GetSelectionType", "COleConvertDialog [MFC], m_cv"]
 ms.assetid: a7c57714-31e8-4b78-834d-8ddd1b856a1c
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleConvertDialog Class
 For more information, see the [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) structure in the Windows SDK.  

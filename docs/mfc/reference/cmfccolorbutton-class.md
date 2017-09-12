@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCColorButton', 'AFXCOLORBUTTON/CMFCColorButton', 'AFXCOLORBUTTON/CMFCColorButton::CMFCColorButton', 'AFXCOLORBUTTON/CMFCColorButton::EnableAutomaticButton', 'AFXCOLORBUTTON/CMFCColorButton::EnableOtherButton', 'AFXCOLORBUTTON/CMFCColorButton::GetAutomaticColor', 'AFXCOLORBUTTON/CMFCColorButton::GetColor', 'AFXCOLORBUTTON/CMFCColorButton::SetColor', 'AFXCOLORBUTTON/CMFCColorButton::SetColorName', 'AFXCOLORBUTTON/CMFCColorButton::SetColumnsNumber', 'AFXCOLORBUTTON/CMFCColorButton::SetDocumentColors', 'AFXCOLORBUTTON/CMFCColorButton::SetPalette', 'AFXCOLORBUTTON/CMFCColorButton::SizeToContent', 'AFXCOLORBUTTON/CMFCColorButton::IsDrawXPTheme', 'AFXCOLORBUTTON/CMFCColorButton::OnDraw', 'AFXCOLORBUTTON/CMFCColorButton::OnDrawBorder', 'AFXCOLORBUTTON/CMFCColorButton::OnDrawFocusRect', 'AFXCOLORBUTTON/CMFCColorButton::OnShowColorPopup', 'AFXCOLORBUTTON/CMFCColorButton::RebuildPalette', 'AFXCOLORBUTTON/CMFCColorButton::UpdateColor', 'AFXCOLORBUTTON/CMFCColorButton::m_bEnabledInCustomizeMode']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCColorButton::m_Color data member"
-  - "CMFCColorButton::m_bAutoSetFocus data member"
-  - "CMFCColorButton::m_pPopup data member"
-  - "CMFCColorButton::m_nColumns data member"
-  - "CMFCColorButton class"
-  - "CMFCColorButton::m_strAutoColorText data member"
-  - "CMFCColorButton::m_bAltColorDlg data member"
-  - "CMFCColorButton::m_strDocColorsText data member"
-  - "CMFCColorButton::m_strOtherText data member"
-  - "CMFCColorButton::m_pPalette data member"
-  - "CMFCColorButton::m_lstDocColors data member"
-  - "CMFCColorButton::m_ColorAutomatic data member"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCColorButton [MFC], CMFCColorButton", "CMFCColorButton [MFC], EnableAutomaticButton", "CMFCColorButton [MFC], EnableOtherButton", "CMFCColorButton [MFC], GetAutomaticColor", "CMFCColorButton [MFC], GetColor", "CMFCColorButton [MFC], SetColor", "CMFCColorButton [MFC], SetColorName", "CMFCColorButton [MFC], SetColumnsNumber", "CMFCColorButton [MFC], SetDocumentColors", "CMFCColorButton [MFC], SetPalette", "CMFCColorButton [MFC], SizeToContent", "CMFCColorButton [MFC], IsDrawXPTheme", "CMFCColorButton [MFC], OnDraw", "CMFCColorButton [MFC], OnDrawBorder", "CMFCColorButton [MFC], OnDrawFocusRect", "CMFCColorButton [MFC], OnShowColorPopup", "CMFCColorButton [MFC], RebuildPalette", "CMFCColorButton [MFC], UpdateColor", "CMFCColorButton [MFC], m_bEnabledInCustomizeMode"]
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCColorButton Class
 The `CMFCColorButton` and [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md) classes are used together to implement a color picker control.  

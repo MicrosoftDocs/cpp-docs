@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MkTypLib"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "clients, Automation"
-  - "dispatch class"
-  - "Automation clients, type libraries"
-  - "type libraries, Automation clients"
-  - "ODL (Object Description Language)"
-  - "ODL files"
-  - "classes [C++], dispatch"
-  - "MkTypLib tool"
-  - ".odl files"
+f1_keywords: ["MkTypLib"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["clients, Automation", "dispatch class [MFC]", "Automation clients, type libraries", "type libraries, Automation clients", "ODL (Object Description Language)", "ODL files", "classes [MFC], dispatch", "MkTypLib tool", ".odl files"]
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Automation Clients: Using Type Libraries
 Automation clients must have information about server objects' properties and methods if the clients are to manipulate the servers' objects. Properties have data types; methods often return values and accept parameters. The client requires information about the data types of all of these in order to statically bind to the server object type.  

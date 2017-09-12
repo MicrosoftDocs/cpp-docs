@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRectTracker', 'AFXEXT/CRectTracker', 'AFXEXT/CRectTracker::CRectTracker', 'AFXEXT/CRectTracker::AdjustRect', 'AFXEXT/CRectTracker::Draw', 'AFXEXT/CRectTracker::DrawTrackerRect', 'AFXEXT/CRectTracker::GetHandleMask', 'AFXEXT/CRectTracker::GetTrueRect', 'AFXEXT/CRectTracker::HitTest', 'AFXEXT/CRectTracker::NormalizeHit', 'AFXEXT/CRectTracker::OnChangedRect', 'AFXEXT/CRectTracker::SetCursor', 'AFXEXT/CRectTracker::Track', 'AFXEXT/CRectTracker::TrackRubberBand', 'AFXEXT/CRectTracker::m_nHandleSize', 'AFXEXT/CRectTracker::m_nStyle', 'AFXEXT/CRectTracker::m_rect', 'AFXEXT/CRectTracker::m_sizeMin']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "displaying items"
-  - "CRectTracker class"
-  - "resizing items"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRectTracker [MFC], CRectTracker", "CRectTracker [MFC], AdjustRect", "CRectTracker [MFC], Draw", "CRectTracker [MFC], DrawTrackerRect", "CRectTracker [MFC], GetHandleMask", "CRectTracker [MFC], GetTrueRect", "CRectTracker [MFC], HitTest", "CRectTracker [MFC], NormalizeHit", "CRectTracker [MFC], OnChangedRect", "CRectTracker [MFC], SetCursor", "CRectTracker [MFC], Track", "CRectTracker [MFC], TrackRubberBand", "CRectTracker [MFC], m_nHandleSize", "CRectTracker [MFC], m_nStyle", "CRectTracker [MFC], m_rect", "CRectTracker [MFC], m_sizeMin"]
 ms.assetid: 99caa7f2-3c0d-4a42-bbee-e5d1d342d4ee
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CRectTracker Class
 Allows an item to be displayed, moved, and resized in different fashions.  

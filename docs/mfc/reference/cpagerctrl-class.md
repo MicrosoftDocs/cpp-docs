@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPagerCtrl', 'AFXCMN/CPagerCtrl', 'AFXCMN/CPagerCtrl::CPagerCtrl', 'AFXCMN/CPagerCtrl::Create', 'AFXCMN/CPagerCtrl::CreateEx', 'AFXCMN/CPagerCtrl::ForwardMouse', 'AFXCMN/CPagerCtrl::GetBkColor', 'AFXCMN/CPagerCtrl::GetBorder', 'AFXCMN/CPagerCtrl::GetButtonSize', 'AFXCMN/CPagerCtrl::GetButtonState', 'AFXCMN/CPagerCtrl::GetDropTarget', 'AFXCMN/CPagerCtrl::GetScrollPos', 'AFXCMN/CPagerCtrl::IsButtonDepressed', 'AFXCMN/CPagerCtrl::IsButtonGrayed', 'AFXCMN/CPagerCtrl::IsButtonHot', 'AFXCMN/CPagerCtrl::IsButtonInvisible', 'AFXCMN/CPagerCtrl::IsButtonNormal', 'AFXCMN/CPagerCtrl::RecalcSize', 'AFXCMN/CPagerCtrl::SetBkColor', 'AFXCMN/CPagerCtrl::SetBorder', 'AFXCMN/CPagerCtrl::SetButtonSize', 'AFXCMN/CPagerCtrl::SetChild', 'AFXCMN/CPagerCtrl::SetScrollPos']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPagerCtrl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPagerCtrl [MFC], CPagerCtrl", "CPagerCtrl [MFC], Create", "CPagerCtrl [MFC], CreateEx", "CPagerCtrl [MFC], ForwardMouse", "CPagerCtrl [MFC], GetBkColor", "CPagerCtrl [MFC], GetBorder", "CPagerCtrl [MFC], GetButtonSize", "CPagerCtrl [MFC], GetButtonState", "CPagerCtrl [MFC], GetDropTarget", "CPagerCtrl [MFC], GetScrollPos", "CPagerCtrl [MFC], IsButtonDepressed", "CPagerCtrl [MFC], IsButtonGrayed", "CPagerCtrl [MFC], IsButtonHot", "CPagerCtrl [MFC], IsButtonInvisible", "CPagerCtrl [MFC], IsButtonNormal", "CPagerCtrl [MFC], RecalcSize", "CPagerCtrl [MFC], SetBkColor", "CPagerCtrl [MFC], SetBorder", "CPagerCtrl [MFC], SetButtonSize", "CPagerCtrl [MFC], SetChild", "CPagerCtrl [MFC], SetScrollPos"]
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPagerCtrl Class
 The `CPagerCtrl` class wraps the Windows pager control, which can scroll into view a contained window that does not fit the containing window.  

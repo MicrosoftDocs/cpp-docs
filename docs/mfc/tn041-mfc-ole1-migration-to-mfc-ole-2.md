@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE1 [C++]"
-  - "migrating OLE1 to OLE2"
-  - "migration [C++], OLE1 to OLE2"
-  - "OLE2 [C++]"
-  - "porting OLE1 to OLE2"
-  - "converting OLE1 to OLE2"
-  - "upgrading Visual C++ applications, OLE1 to OLE2"
-  - "TN041"
+f1_keywords: ["vc.mfc.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE1 [MFC]", "migrating OLE1 to OLE2", "migration [MFC], OLE1 to OLE2", "OLE2 [MFC]", "porting OLE1 to OLE2", "converting OLE1 to OLE2", "upgrading Visual C++ applications [MFC], OLE1 to OLE2", "TN041"]
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # TN041: MFC/OLE1 Migration to MFC/OLE 2
 > [!NOTE]

@@ -4,48 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "OnFontChanged"
-  - "HeadingFont"
-  - "InternalFont"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "notifications, MFC ActiveX controls fonts"
-  - "OnDraw method, MFC ActiveX controls"
-  - "InternalFont method"
-  - "SetFont method"
-  - "OnFontChanged method"
-  - "IPropertyNotifySink class"
-  - "MFC ActiveX controls, fonts"
-  - "Stock Font property"
-  - "HeadingFont property"
-  - "GetFont method"
-  - "SelectStockFont method"
-  - "fonts, ActiveX controls"
+f1_keywords: ["OnFontChanged", "HeadingFont", "InternalFont"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["notifications [MFC], MFC ActiveX controls fonts", "OnDraw method, MFC ActiveX controls", "InternalFont method [MFC]", "SetFont method [MFC]", "OnFontChanged method [MFC]", "IPropertyNotifySink class [MFC]", "MFC ActiveX controls [MFC], fonts", "Stock Font property [MFC]", "HeadingFont property [MFC]", "GetFont method [MFC]", "SelectStockFont method [MFC]", "fonts [MFC], ActiveX controls"]
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # MFC ActiveX Controls: Using Fonts
 If your ActiveX control displays text, you can allow the control user to change the text appearance by changing a font property. Font properties are implemented as font objects and can be one of two types: stock or custom. Stock Font properties are preimplemented font properties that you can add using the Add Property Wizard. Custom Font properties are not preimplemented and the control developer determines the property's behavior and usage.  

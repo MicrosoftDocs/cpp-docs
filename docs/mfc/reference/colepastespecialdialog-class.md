@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COlePasteSpecialDialog', 'AFXODLGS/COlePasteSpecialDialog', 'AFXODLGS/COlePasteSpecialDialog::COlePasteSpecialDialog', 'AFXODLGS/COlePasteSpecialDialog::AddFormat', 'AFXODLGS/COlePasteSpecialDialog::AddLinkEntry', 'AFXODLGS/COlePasteSpecialDialog::AddStandardFormats', 'AFXODLGS/COlePasteSpecialDialog::CreateItem', 'AFXODLGS/COlePasteSpecialDialog::DoModal', 'AFXODLGS/COlePasteSpecialDialog::GetDrawAspect', 'AFXODLGS/COlePasteSpecialDialog::GetIconicMetafile', 'AFXODLGS/COlePasteSpecialDialog::GetPasteIndex', 'AFXODLGS/COlePasteSpecialDialog::GetSelectionType', 'AFXODLGS/COlePasteSpecialDialog::m_ps']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Paste Special dialog box"
-  - "dialog boxes, Paste Special"
-  - "OLE Paste Special dialog box"
-  - "COlePasteSpecialDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COlePasteSpecialDialog [MFC], COlePasteSpecialDialog", "COlePasteSpecialDialog [MFC], AddFormat", "COlePasteSpecialDialog [MFC], AddLinkEntry", "COlePasteSpecialDialog [MFC], AddStandardFormats", "COlePasteSpecialDialog [MFC], CreateItem", "COlePasteSpecialDialog [MFC], DoModal", "COlePasteSpecialDialog [MFC], GetDrawAspect", "COlePasteSpecialDialog [MFC], GetIconicMetafile", "COlePasteSpecialDialog [MFC], GetPasteIndex", "COlePasteSpecialDialog [MFC], GetSelectionType", "COlePasteSpecialDialog [MFC], m_ps"]
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COlePasteSpecialDialog Class
 Used for the OLE Paste Special dialog box.  

@@ -4,52 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ON_WM_TCARD"
-  - "ON_WM_WININICHANGE"
-  - "ON_WM_VSCROLLCLIPBOARD"
-  - "ON_WM_VSCROLL"
-  - "ON_WM_WINDOWPOSCHANGED"
-  - "ON_WM_TIMECHANGE"
-  - "ON_WM_TIMER"
-  - "ON_WM_VKEYTOITEM"
-  - "ON_WM_WINDOWPOSCHANGING"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ON_WM_VSCROLLCLIPBOARD"
-  - "ON_WM_WININICHANGE"
-  - "ON_WM_WINDOWPOSCHANGED"
-  - "ON_WM_TCARD"
-  - "ON_WM_TIMECHANGE"
-  - "ON_WM_TIMER"
-  - "WM_ messages"
-  - "ON_WM_WINDOWPOSCHANGING"
-  - "ON_WM_VKEYTOITEM"
-  - "ON_WM_VSCROLL"
+f1_keywords: ["ON_WM_TCARD", "ON_WM_WININICHANGE", "ON_WM_VSCROLLCLIPBOARD", "ON_WM_VSCROLL", "ON_WM_WINDOWPOSCHANGED", "ON_WM_TIMECHANGE", "ON_WM_TIMER", "ON_WM_VKEYTOITEM", "ON_WM_WINDOWPOSCHANGING"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ON_WM_VSCROLLCLIPBOARD [MFC]", "ON_WM_WININICHANGE [MFC]", "ON_WM_WINDOWPOSCHANGED [MFC]", "ON_WM_TCARD [MFC]", "ON_WM_TIMECHANGE [MFC]", "ON_WM_TIMER [MFC]", "WM_ messages [MFC]", "ON_WM_WINDOWPOSCHANGING [MFC]", "ON_WM_VKEYTOITEM [MFC]", "ON_WM_VSCROLL"]
 ms.assetid: c528bb2e-ddb5-4da6-b652-432a387408b8
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # WM_ Messages: T - Z
 The following map entries correspond to the function prototypes:  

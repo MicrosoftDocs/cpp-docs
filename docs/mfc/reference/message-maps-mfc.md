@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.messages"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message maps [C++], MFC"
-  - "Windows messages [C++], message maps"
-  - "messages [C++], Windows"
-  - "MFC [C++], messages"
+f1_keywords: ["vc.mfc.messages"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["message maps [MFC], MFC", "Windows messages [MFC], message maps", "messages [MFC], Windows", "MFC, messages"]
 ms.assetid: 3f9855e4-9d7d-4b64-8f3f-a19ea3cf79ba
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Message Maps (MFC)
 This section of the reference lists all [message mapping macros](../../mfc/reference/message-map-macros-mfc.md) and all [CWnd](../../mfc/reference/cwnd-class.md) message-map entries along with the corresponding member function prototypes:  

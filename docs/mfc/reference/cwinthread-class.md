@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CWinThread', 'AFXWIN/CWinThread', 'AFXWIN/CWinThread::CWinThread', 'AFXWIN/CWinThread::CreateThread', 'AFXWIN/CWinThread::ExitInstance', 'AFXWIN/CWinThread::GetMainWnd', 'AFXWIN/CWinThread::GetThreadPriority', 'AFXWIN/CWinThread::InitInstance', 'AFXWIN/CWinThread::IsIdleMessage', 'AFXWIN/CWinThread::OnIdle', 'AFXWIN/CWinThread::PostThreadMessage', 'AFXWIN/CWinThread::PreTranslateMessage', 'AFXWIN/CWinThread::ProcessMessageFilter', 'AFXWIN/CWinThread::ProcessWndProcException', 'AFXWIN/CWinThread::PumpMessage', 'AFXWIN/CWinThread::ResumeThread', 'AFXWIN/CWinThread::Run', 'AFXWIN/CWinThread::SetThreadPriority', 'AFXWIN/CWinThread::SuspendThread', 'AFXWIN/CWinThread::m_bAutoDelete', 'AFXWIN/CWinThread::m_hThread', 'AFXWIN/CWinThread::m_nThreadID', 'AFXWIN/CWinThread::m_pActiveWnd', 'AFXWIN/CWinThread::m_pMainWnd']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "worker threads"
-  - "threading [MFC], safety"
-  - "CWinThread class"
-  - "threading [MFC], creating threads"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWinThread [MFC], CWinThread", "CWinThread [MFC], CreateThread", "CWinThread [MFC], ExitInstance", "CWinThread [MFC], GetMainWnd", "CWinThread [MFC], GetThreadPriority", "CWinThread [MFC], InitInstance", "CWinThread [MFC], IsIdleMessage", "CWinThread [MFC], OnIdle", "CWinThread [MFC], PostThreadMessage", "CWinThread [MFC], PreTranslateMessage", "CWinThread [MFC], ProcessMessageFilter", "CWinThread [MFC], ProcessWndProcException", "CWinThread [MFC], PumpMessage", "CWinThread [MFC], ResumeThread", "CWinThread [MFC], Run", "CWinThread [MFC], SetThreadPriority", "CWinThread [MFC], SuspendThread", "CWinThread [MFC], m_bAutoDelete", "CWinThread [MFC], m_hThread", "CWinThread [MFC], m_nThreadID", "CWinThread [MFC], m_pActiveWnd", "CWinThread [MFC], m_pMainWnd"]
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CWinThread Class
 Represents a thread of execution within an application.  

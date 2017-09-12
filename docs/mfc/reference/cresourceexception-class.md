@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CResourceException', 'AFXWIN/CResourceException', 'AFXWIN/CResourceException::CResourceException']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resource allocation exception"
-  - "resources [C++], allocating"
-  - "resource exceptions"
-  - "exceptions, resource"
-  - "CResourceException class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CResourceException [MFC], CResourceException"]
 ms.assetid: af6ae043-d124-4bfd-b35e-7bb0db67d289
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CResourceException Class
 Generated when Windows cannot find or allocate a requested resource.  

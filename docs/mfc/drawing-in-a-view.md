@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "drawing, in views"
-  - "views, printing"
-  - "views, updating"
-  - "printing [MFC], views"
-  - "views, rendering"
-  - "printing views"
-  - "paint messages in view class"
-  - "device contexts, screen drawings"
+dev_langs: ["C++"]
+helpviewer_keywords: ["drawing [MFC], in views", "views [MFC], printing", "views [MFC], updating", "printing [MFC], views", "views [MFC], rendering", "printing views [MFC]", "paint messages in view class [MFC]", "device contexts, screen drawings"]
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Drawing in a View
 Nearly all drawing in your application occurs in the view's `OnDraw` member function, which you must override in your view class. (The exception is mouse drawing, discussed in [Interpreting User Input Through a View](../mfc/interpreting-user-input-through-a-view.md).) Your `OnDraw` override:  

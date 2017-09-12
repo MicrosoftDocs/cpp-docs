@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE containers, client-item states"
-  - "states, OLE container client-item"
-  - "lifetime, lifetime states and OLE container client items"
-  - "client items and OLE containers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE containers [MFC], client-item states", "states, OLE container client-item", "lifetime, lifetime states and OLE container client items", "client items and OLE containers"]
 ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Containers: Client-Item States
 This article explains the different states a client item passes through in its lifetime.  

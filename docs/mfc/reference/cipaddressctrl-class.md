@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CIPAddressCtrl', 'AFXCMN/CIPAddressCtrl', 'AFXCMN/CIPAddressCtrl::CIPAddressCtrl', 'AFXCMN/CIPAddressCtrl::ClearAddress', 'AFXCMN/CIPAddressCtrl::Create', 'AFXCMN/CIPAddressCtrl::CreateEx', 'AFXCMN/CIPAddressCtrl::GetAddress', 'AFXCMN/CIPAddressCtrl::IsBlank', 'AFXCMN/CIPAddressCtrl::SetAddress', 'AFXCMN/CIPAddressCtrl::SetFieldFocus', 'AFXCMN/CIPAddressCtrl::SetFieldRange']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IP address control"
-  - "Internet address edit box"
-  - "CIPAddressCtrl class"
-  - "Internet protocol address box"
-  - "common controls, Internet Explorer 4.0"
-  - "Internet Explorer 4.0 common controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CIPAddressCtrl [MFC], CIPAddressCtrl", "CIPAddressCtrl [MFC], ClearAddress", "CIPAddressCtrl [MFC], Create", "CIPAddressCtrl [MFC], CreateEx", "CIPAddressCtrl [MFC], GetAddress", "CIPAddressCtrl [MFC], IsBlank", "CIPAddressCtrl [MFC], SetAddress", "CIPAddressCtrl [MFC], SetFieldFocus", "CIPAddressCtrl [MFC], SetFieldRange"]
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CIPAddressCtrl Class
 Provides the functionality of the Windows common IP Address control.  

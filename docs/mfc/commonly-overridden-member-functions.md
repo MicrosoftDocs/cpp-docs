@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDialog class, members"
-  - "OnInitDialog function"
-  - "dialog classes, commonly overridden member functions"
-  - "OnCancel function"
-  - "overriding, dialog class members"
-  - "OnOK function"
-  - "MFC dialog boxes, overriding member functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDialog class [MFC], members", "OnInitDialog function", "dialog classes [MFC], commonly overridden member functions", "OnCancel function", "overriding, dialog class members", "OnOK function", "MFC dialog boxes [MFC], overriding member functions"]
 ms.assetid: 78eb566c-e361-4c86-8db5-c7e2791b249a
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Commonly Overridden Member Functions
 The following table lists the most likely member functions to override in your `CDialog`-derived class.  

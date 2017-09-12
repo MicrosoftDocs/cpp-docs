@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSplitterWndEx', 'AFXSPLITTERWNDEX/CSplitterWndEx', 'AFXSPLITTERWNDEX/CSplitterWndEx::OnDrawSplitter']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSplitterWndEx"
-  
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSplitterWndEx [MFC], OnDrawSplitter"]
 ms.assetid: 33e5eef3-05e1-4a07-a968-bf9207ce8598
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSplitterWndEx Class
 

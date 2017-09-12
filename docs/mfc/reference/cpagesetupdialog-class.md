@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPageSetupDialog', 'AFXDLGS/CPageSetupDialog', 'AFXDLGS/CPageSetupDialog::CPageSetupDialog', 'AFXDLGS/CPageSetupDialog::CreatePrinterDC', 'AFXDLGS/CPageSetupDialog::DoModal', 'AFXDLGS/CPageSetupDialog::GetDeviceName', 'AFXDLGS/CPageSetupDialog::GetDevMode', 'AFXDLGS/CPageSetupDialog::GetDriverName', 'AFXDLGS/CPageSetupDialog::GetMargins', 'AFXDLGS/CPageSetupDialog::GetPaperSize', 'AFXDLGS/CPageSetupDialog::GetPortName', 'AFXDLGS/CPageSetupDialog::OnDrawPage', 'AFXDLGS/CPageSetupDialog::PreDrawPage', 'AFXDLGS/CPageSetupDialog::m_psd']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "page setup"
-  - "Print Setup dialog box"
-  - "Page Setup dialog box"
-  - "OLE Page Setup dialog box"
-  - "CPageSetupDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPageSetupDialog [MFC], CPageSetupDialog", "CPageSetupDialog [MFC], CreatePrinterDC", "CPageSetupDialog [MFC], DoModal", "CPageSetupDialog [MFC], GetDeviceName", "CPageSetupDialog [MFC], GetDevMode", "CPageSetupDialog [MFC], GetDriverName", "CPageSetupDialog [MFC], GetMargins", "CPageSetupDialog [MFC], GetPaperSize", "CPageSetupDialog [MFC], GetPortName", "CPageSetupDialog [MFC], OnDrawPage", "CPageSetupDialog [MFC], PreDrawPage", "CPageSetupDialog [MFC], m_psd"]
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPageSetupDialog Class
 Encapsulates the services provided by the Windows common OLE Page Setup dialog box with additional support for setting and modifying print margins.  

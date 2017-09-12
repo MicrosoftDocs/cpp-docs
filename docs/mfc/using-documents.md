@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "documents [C++], C++ applications"
-  - "data [MFC], reading"
-  - "documents [C++]"
-  - "files [C++], writing to"
-  - "data [MFC], documents"
-  - "files [C++]"
-  - "views [C++], C++ applications"
-  - "document/view architecture [C++], documents"
-  - "reading data [C++], documents and views"
-  - "printing [MFC], documents"
-  - "writing to files [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["documents [MFC], C++ applications", "data [MFC], reading", "documents [MFC]", "files [MFC], writing to", "data [MFC], documents", "files [MFC]", "views [MFC], C++ applications", "document/view architecture [MFC], documents", "reading data [MFC], documents and views", "printing [MFC], documents", "writing to files [MFC]"]
 ms.assetid: f390d6d8-d0e1-4497-9b6a-435f7ce0776c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using Documents
 Working together, documents and views:  

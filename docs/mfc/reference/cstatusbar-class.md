@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStatusBar', 'AFXEXT/CStatusBar', 'AFXEXT/CStatusBar::CStatusBar', 'AFXEXT/CStatusBar::CommandToIndex', 'AFXEXT/CStatusBar::Create', 'AFXEXT/CStatusBar::CreateEx', 'AFXEXT/CStatusBar::DrawItem', 'AFXEXT/CStatusBar::GetItemID', 'AFXEXT/CStatusBar::GetItemRect', 'AFXEXT/CStatusBar::GetPaneInfo', 'AFXEXT/CStatusBar::GetPaneStyle', 'AFXEXT/CStatusBar::GetPaneText', 'AFXEXT/CStatusBar::GetStatusBarCtrl', 'AFXEXT/CStatusBar::SetIndicators', 'AFXEXT/CStatusBar::SetPaneInfo', 'AFXEXT/CStatusBar::SetPaneStyle', 'AFXEXT/CStatusBar::SetPaneText']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "indicators, status bar"
-  - "CStatusBar class"
-  - "status bars"
-  - "indicators"
-  - "status indicators"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStatusBar [MFC], CStatusBar", "CStatusBar [MFC], CommandToIndex", "CStatusBar [MFC], Create", "CStatusBar [MFC], CreateEx", "CStatusBar [MFC], DrawItem", "CStatusBar [MFC], GetItemID", "CStatusBar [MFC], GetItemRect", "CStatusBar [MFC], GetPaneInfo", "CStatusBar [MFC], GetPaneStyle", "CStatusBar [MFC], GetPaneText", "CStatusBar [MFC], GetStatusBarCtrl", "CStatusBar [MFC], SetIndicators", "CStatusBar [MFC], SetPaneInfo", "CStatusBar [MFC], SetPaneStyle", "CStatusBar [MFC], SetPaneText"]
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CStatusBar Class
 A control bar with a row of text output panes, or "indicators."  

@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exception objects"
-  - "memory leaks, exception object not deleted"
-  - "exception handling, MFC"
-  - "try-catch exception handling, mixing MFC macros and C++ keywords"
-  - "exception objects, deleting"
-  - "exceptions, MFC macros vs. C++ keywords"
-  - "catch blocks, mixed"
-  - "exception handling, mixed-language"
-  - "nested try blocks"
-  - "catch blocks, explicitly deleting code in"
-  - "try-catch exception handling, nested try blocks"
-  - "heap corruption"
-  - "nested catch blocks"
+dev_langs: ["C++"]
+helpviewer_keywords: ["exception objects [MFC]", "memory leaks [MFC], exception object not deleted", "exception handling [MFC], MFC", "try-catch exception handling [MFC], mixing MFC macros and C++ keywords", "exception objects [MFC], deleting", "exceptions [MFC], MFC macros vs. C++ keywords", "catch blocks [MFC], mixed", "exception handling [MFC], mixed-language", "nested try blocks [MFC]", "catch blocks [MFC], explicitly deleting code in", "try-catch exception handling [MFC], nested try blocks", "heap corruption [MFC]", "nested catch blocks [MFC]"]
 ms.assetid: d664a83d-879b-44d4-bdf0-029f0aca69e9
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Exceptions: Using MFC Macros and C++ Exceptions
 This article discusses considerations for writing code that uses both the MFC exception-handling macros and the C++ exception-handling keywords.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAnimationManagerEventHandler class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimationManagerEventHandler [MFC], CAnimationManagerEventHandler", "CAnimationManagerEventHandler [MFC], CreateInstance", "CAnimationManagerEventHandler [MFC], OnManagerStatusChanged", "CAnimationManagerEventHandler [MFC], SetAnimationController"]
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CAnimationManagerEventHandler Class
 Implements a callback, which is called by the Animation API when a status of an animation manager is changed.  

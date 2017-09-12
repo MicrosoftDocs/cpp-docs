@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CTypedPtrMap', 'AFXTEMPL/CTypedPtrMap', 'AFXTEMPL/CTypedPtrMap::GetNextAssoc', 'AFXTEMPL/CTypedPtrMap::Lookup', 'AFXTEMPL/CTypedPtrMap::RemoveKey', 'AFXTEMPL/CTypedPtrMap::SetAt']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "type-safe collections"
-  - "template classes, CTypedPtrMap class"
-  - "maps"
-  - "CTypedPtrMap class"
-  - "pointer maps"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTypedPtrMap [MFC], GetNextAssoc", "CTypedPtrMap [MFC], Lookup", "CTypedPtrMap [MFC], RemoveKey", "CTypedPtrMap [MFC], SetAt"]
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CTypedPtrMap Class
 Provides a type-safe "wrapper" for objects of the pointer-map classes `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, and `CMapStringToPtr`.  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleLinksDialog', 'AFXODLGS/COleLinksDialog', 'AFXODLGS/COleLinksDialog::COleLinksDialog', 'AFXODLGS/COleLinksDialog::DoModal', 'AFXODLGS/COleLinksDialog::m_el']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Edit Links dialog box"
-  - "COleLinksDialog class"
-  - "dialog boxes, OLE"
-  - "OLE Edit Links dialog box"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleLinksDialog [MFC], COleLinksDialog", "COleLinksDialog [MFC], DoModal", "COleLinksDialog [MFC], m_el"]
 ms.assetid: fb2eb638-2809-46db-ac74-392a732affc7
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleLinksDialog Class
 Used for the OLE Edit Links dialog box.  

@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DECLARE_DYNCREATE macro"
-  - "DECLARE_SERIAL macro"
-  - "macros [C++], serialization"
-  - "serialization [C++], macros"
-  - "DECLARE_DYNAMIC macro"
-  - "derived classes, from CObject"
-  - "CObject class, deriving serializable classes"
-  - "CObject class, deriving from"
+f1_keywords: ["CObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DECLARE_DYNCREATE macro [MFC]", "DECLARE_SERIAL macro [MFC]", "macros [MFC], serialization", "serialization [MFC], macros", "DECLARE_DYNAMIC macro [MFC]", "derived classes [MFC], from CObject", "CObject class [MFC], deriving serializable classes", "CObject class [MFC], deriving from"]
 ms.assetid: 5ea4ea41-08b5-4bd8-b247-c5de8c152a27
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Deriving a Class from CObject
 This article describes the minimum steps necessary to derive a class from [CObject](../mfc/reference/cobject-class.md). Other `CObject` class articles describe the steps needed to take advantage of specific `CObject` features, such as serialization and diagnostic debugging support.  

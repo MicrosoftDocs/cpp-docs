@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFtpConnection', 'AFXINET/CFtpConnection', 'AFXINET/CFtpConnection::CFtpConnection', 'AFXINET/CFtpConnection::Command', 'AFXINET/CFtpConnection::CreateDirectory', 'AFXINET/CFtpConnection::GetCurrentDirectory', 'AFXINET/CFtpConnection::GetCurrentDirectoryAsURL', 'AFXINET/CFtpConnection::GetFile', 'AFXINET/CFtpConnection::OpenFile', 'AFXINET/CFtpConnection::PutFile', 'AFXINET/CFtpConnection::Remove', 'AFXINET/CFtpConnection::RemoveDirectory', 'AFXINET/CFtpConnection::Rename', 'AFXINET/CFtpConnection::SetCurrentDirectory']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFtpConnection class"
-  - "FTP (File Transfer Protocol), establishing connections"
-  - "Internet connections, FTP"
-  - "Internet services, FTP"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFtpConnection [MFC], CFtpConnection", "CFtpConnection [MFC], Command", "CFtpConnection [MFC], CreateDirectory", "CFtpConnection [MFC], GetCurrentDirectory", "CFtpConnection [MFC], GetCurrentDirectoryAsURL", "CFtpConnection [MFC], GetFile", "CFtpConnection [MFC], OpenFile", "CFtpConnection [MFC], PutFile", "CFtpConnection [MFC], Remove", "CFtpConnection [MFC], RemoveDirectory", "CFtpConnection [MFC], Rename", "CFtpConnection [MFC], SetCurrentDirectory"]
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CFtpConnection Class
 Manages your FTP connection to an Internet server and allows direct manipulation of directories and files on that server.  

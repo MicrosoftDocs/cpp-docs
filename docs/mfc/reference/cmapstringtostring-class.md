@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMapStringToString', 'AFXCOLL/CMapStringToString', 'AFXCOLL/CMapStringToString::CPair', 'AFXCOLL/CMapStringToOb::CMapStringToOb', 'AFXCOLL/CMapStringToOb::GetCount', 'AFXCOLL/CMapStringToOb::GetHashTableSize', 'AFXCOLL/CMapStringToOb::GetNextAssoc', 'AFXCOLL/CMapStringToOb::GetSize', 'AFXCOLL/CMapStringToOb::GetStartPosition', 'AFXCOLL/CMapStringToOb::HashKey', 'AFXCOLL/CMapStringToOb::InitHashTable', 'AFXCOLL/CMapStringToOb::IsEmpty', 'AFXCOLL/CMapStringToOb::Lookup', 'AFXCOLL/CMapStringToOb::LookupKey', 'AFXCOLL/CMapStringToString::PGetFirstAssoc', 'AFXCOLL/CMapStringToString::PGetNextAssoc', 'AFXCOLL/CMapStringToString::PLookup', 'AFXCOLL/CMapStringToOb::RemoveAll', 'AFXCOLL/CMapStringToOb::RemoveKey', 'AFXCOLL/CMapStringToOb::SetAt']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "collection classes, string mapping"
-  - "strings [C++], mapping"
-  - "strings [C++], class for mapping"
-  - "CMapStringToString class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMapStringToString [MFC], CPair", "CMapStringToOb [MFC], CMapStringToOb", "CMapStringToOb [MFC], GetCount", "CMapStringToOb [MFC], GetHashTableSize", "CMapStringToOb [MFC], GetNextAssoc", "CMapStringToOb [MFC], GetSize", "CMapStringToOb [MFC], GetStartPosition", "CMapStringToOb [MFC], HashKey", "CMapStringToOb [MFC], InitHashTable", "CMapStringToOb [MFC], IsEmpty", "CMapStringToOb [MFC], Lookup", "CMapStringToOb [MFC], LookupKey", "CMapStringToString [MFC], PGetFirstAssoc", "CMapStringToString [MFC], PGetNextAssoc", "CMapStringToString [MFC], PLookup", "CMapStringToOb [MFC], RemoveAll", "CMapStringToOb [MFC], RemoveKey", "CMapStringToOb [MFC], SetAt"]
 ms.assetid: b45794c2-fe6b-4edb-a8ca-faa03b57b4a8
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMapStringToString Class
 Supports maps of `CString` objects keyed by `CString` objects.  

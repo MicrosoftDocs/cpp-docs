@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPropertySheet', 'AFXDLGS/CPropertySheet', 'AFXDLGS/CPropertySheet::CPropertySheet', 'AFXDLGS/CPropertySheet::AddPage', 'AFXDLGS/CPropertySheet::Construct', 'AFXDLGS/CPropertySheet::Create', 'AFXDLGS/CPropertySheet::DoModal', 'AFXDLGS/CPropertySheet::EnableStackedTabs', 'AFXDLGS/CPropertySheet::EndDialog', 'AFXDLGS/CPropertySheet::GetActiveIndex', 'AFXDLGS/CPropertySheet::GetActivePage', 'AFXDLGS/CPropertySheet::GetPage', 'AFXDLGS/CPropertySheet::GetPageCount', 'AFXDLGS/CPropertySheet::GetPageIndex', 'AFXDLGS/CPropertySheet::GetTabControl', 'AFXDLGS/CPropertySheet::MapDialogRect', 'AFXDLGS/CPropertySheet::OnInitDialog', 'AFXDLGS/CPropertySheet::PressButton', 'AFXDLGS/CPropertySheet::RemovePage', 'AFXDLGS/CPropertySheet::SetActivePage', 'AFXDLGS/CPropertySheet::SetFinishText', 'AFXDLGS/CPropertySheet::SetTitle', 'AFXDLGS/CPropertySheet::SetWizardButtons', 'AFXDLGS/CPropertySheet::SetWizardMode', 'AFXDLGS/CPropertySheet::m_psh']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog boxes, tabs"
-  - "CPropertySheet class"
-  - "property sheets, CPropertySheet class"
-  - "tab dialog boxes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPropertySheet [MFC], CPropertySheet", "CPropertySheet [MFC], AddPage", "CPropertySheet [MFC], Construct", "CPropertySheet [MFC], Create", "CPropertySheet [MFC], DoModal", "CPropertySheet [MFC], EnableStackedTabs", "CPropertySheet [MFC], EndDialog", "CPropertySheet [MFC], GetActiveIndex", "CPropertySheet [MFC], GetActivePage", "CPropertySheet [MFC], GetPage", "CPropertySheet [MFC], GetPageCount", "CPropertySheet [MFC], GetPageIndex", "CPropertySheet [MFC], GetTabControl", "CPropertySheet [MFC], MapDialogRect", "CPropertySheet [MFC], OnInitDialog", "CPropertySheet [MFC], PressButton", "CPropertySheet [MFC], RemovePage", "CPropertySheet [MFC], SetActivePage", "CPropertySheet [MFC], SetFinishText", "CPropertySheet [MFC], SetTitle", "CPropertySheet [MFC], SetWizardButtons", "CPropertySheet [MFC], SetWizardMode", "CPropertySheet [MFC], m_psh"]
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPropertySheet Class
 Represents property sheets, also known as tab dialog boxes.  

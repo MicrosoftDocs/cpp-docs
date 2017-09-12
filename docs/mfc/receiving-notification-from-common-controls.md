@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ON_NOTIFY"
-  - "WM_NOTIFY"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OnNotify method"
-  - "common controls [C++], notifications"
-  - "ON_NOTIFY macro"
-  - "controls [MFC], notifications"
-  - "receiving notifications from common controls"
-  - "notifications, common controls"
-  - "Windows common controls [C++], notifications"
-  - "WM_NOTIFY message"
+f1_keywords: ["ON_NOTIFY", "WM_NOTIFY"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OnNotify method [MFC]", "common controls [MFC], notifications", "ON_NOTIFY macro [MFC]", "controls [MFC], notifications", "receiving notifications from common controls", "notifications [MFC], common controls", "Windows common controls [MFC], notifications", "WM_NOTIFY message"]
 ms.assetid: 50194592-d60d-44d0-8ab3-338a2a2c63e7
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Receiving Notification from Common Controls
 Common controls are child windows that send notification messages to the parent window when events, such as input from the user, occur in the control.  

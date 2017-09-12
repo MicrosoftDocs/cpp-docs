@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CObject class, adding functionality to derived classes"
-  - "runtime [C++], class information"
-  - "serialization [C++], Cobject"
-  - "dynamic creation support"
-  - "levels [C++], functionality in CObject"
-  - "run-time class, information support"
-  - "levels [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CObject class [MFC], adding functionality to derived classes", "runtime [MFC], class information", "serialization [MFC], Cobject", "dynamic creation support", "levels [MFC], functionality in CObject", "run-time class [MFC], information support", "levels [MFC]"]
 ms.assetid: 562669ba-c858-4f66-b5f1-b3beeea4f486
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Specifying Levels of Functionality
 This article describes how to add the following levels of functionality to your [CObject](../mfc/reference/cobject-class.md)-derived class:  

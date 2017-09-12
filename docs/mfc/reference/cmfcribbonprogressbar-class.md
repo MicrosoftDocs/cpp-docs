@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonProgressBar', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::CMFCRibbonProgressBar', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetPos', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMax', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMin', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRegularSize', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::IsInfiniteMode', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::OnDraw', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetInfiniteMode', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetPos', 'AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetRange']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonProgressBar class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonProgressBar [MFC], CMFCRibbonProgressBar", "CMFCRibbonProgressBar [MFC], GetPos", "CMFCRibbonProgressBar [MFC], GetRangeMax", "CMFCRibbonProgressBar [MFC], GetRangeMin", "CMFCRibbonProgressBar [MFC], GetRegularSize", "CMFCRibbonProgressBar [MFC], IsInfiniteMode", "CMFCRibbonProgressBar [MFC], OnDraw", "CMFCRibbonProgressBar [MFC], SetInfiniteMode", "CMFCRibbonProgressBar [MFC], SetPos", "CMFCRibbonProgressBar [MFC], SetRange"]
 ms.assetid: de3d9f2e-ed59-480e-aa7d-08a33ab36c67
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCRibbonProgressBar Class
 Implements a control that visually indicates the progress of a lengthy operation.  

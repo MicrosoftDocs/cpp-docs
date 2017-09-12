@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::BuildFonts', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetCharSet', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontDesc', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontType', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonFontComboBox class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonFontComboBox [MFC], CMFCRibbonFontComboBox", "CMFCRibbonFontComboBox [MFC], BuildFonts", "CMFCRibbonFontComboBox [MFC], GetCharSet", "CMFCRibbonFontComboBox [MFC], GetFontDesc", "CMFCRibbonFontComboBox [MFC], GetFontType", "CMFCRibbonFontComboBox [MFC], GetPitchAndFamily", "CMFCRibbonFontComboBox [MFC], RebuildFonts", "CMFCRibbonFontComboBox [MFC], SetFont"]
 ms.assetid: 33b4db50-df4f-45fa-8f05-2e6e73c31435
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCRibbonFontComboBox Class
 Implements a combo box that contains a list of fonts. You place the combo box on a ribbon panel.  

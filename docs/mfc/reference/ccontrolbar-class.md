@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CControlBar', 'AFXEXT/CControlBar', 'AFXEXT/CControlBar::CControlBar', 'AFXEXT/CControlBar::CalcDynamicLayout', 'AFXEXT/CControlBar::CalcFixedLayout', 'AFXEXT/CControlBar::CalcInsideRect', 'AFXEXT/CControlBar::DoPaint', 'AFXEXT/CControlBar::DrawBorders', 'AFXEXT/CControlBar::DrawGripper', 'AFXEXT/CControlBar::EnableDocking', 'AFXEXT/CControlBar::GetBarStyle', 'AFXEXT/CControlBar::GetBorders', 'AFXEXT/CControlBar::GetCount', 'AFXEXT/CControlBar::GetDockingFrame', 'AFXEXT/CControlBar::IsFloating', 'AFXEXT/CControlBar::OnUpdateCmdUI', 'AFXEXT/CControlBar::SetBarStyle', 'AFXEXT/CControlBar::SetBorders', 'AFXEXT/CControlBar::SetInPlaceOwner', 'AFXEXT/CControlBar::m_bAutoDelete', 'AFXEXT/CControlBar::m_pInPlaceOwner']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CControlBar class"
-  - "OLE resize bars"
-  - "OLE resize bars, base class"
-  - "dialog bars, base class"
-  - "toolbars [C++], base class"
-  - "control bars [C++], base class"
-  - "status bars, base class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CControlBar [MFC], CControlBar", "CControlBar [MFC], CalcDynamicLayout", "CControlBar [MFC], CalcFixedLayout", "CControlBar [MFC], CalcInsideRect", "CControlBar [MFC], DoPaint", "CControlBar [MFC], DrawBorders", "CControlBar [MFC], DrawGripper", "CControlBar [MFC], EnableDocking", "CControlBar [MFC], GetBarStyle", "CControlBar [MFC], GetBorders", "CControlBar [MFC], GetCount", "CControlBar [MFC], GetDockingFrame", "CControlBar [MFC], IsFloating", "CControlBar [MFC], OnUpdateCmdUI", "CControlBar [MFC], SetBarStyle", "CControlBar [MFC], SetBorders", "CControlBar [MFC], SetInPlaceOwner", "CControlBar [MFC], m_bAutoDelete", "CControlBar [MFC], m_pInPlaceOwner"]
 ms.assetid: 4d668c55-9b42-4838-97ac-cf2b3000b82c
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CControlBar Class
 The base class for the control-bar classes [CStatusBar](../../mfc/reference/cstatusbar-class.md), [CToolBar](../../mfc/reference/ctoolbar-class.md), [CDialogBar](../../mfc/reference/cdialogbar-class.md), [CReBar](../../mfc/reference/crebar-class.md), and [COleResizeBar](../../mfc/reference/coleresizebar-class.md).  

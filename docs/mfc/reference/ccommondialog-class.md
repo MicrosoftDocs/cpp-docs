@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCommonDialog', 'AFXDLGS/CCommonDialog', 'AFXDLGS/CCommonDialog::CCommonDialog']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog boxes [C++], Windows common dialogs"
-  - "common dialog boxes [C++], common dialog classes"
-  - "common dialog classes [C++]"
-  - "MFC dialog boxes, Windows common dialogs"
-  - "Windows common dialogs [C++]"
-  - "CCommonDialog class"
-  - "dialog classes [C++], common"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCommonDialog [MFC], CCommonDialog"]
 ms.assetid: 1f68d65f-a0fd-4778-be22-ebbe51a95f95
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CCommonDialog Class
 The base class for classes that encapsulate functionality of the Windows common dialogs.  

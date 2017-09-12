@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonCustomizePropertyPage', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::AddCustomCategory', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::OnOK']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "~CMFCRibbonCustomizePropertyPage destructor"
-  - "CMFCRibbonCustomizePropertyPage class, destructor"
-  - "GetThisClass method"
-  - "CreateObject method"
-  - "CMFCRibbonCustomizePropertyPage class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonCustomizePropertyPage [MFC], CMFCRibbonCustomizePropertyPage", "CMFCRibbonCustomizePropertyPage [MFC], AddCustomCategory", "CMFCRibbonCustomizePropertyPage [MFC], OnOK"]
 ms.assetid: ea32a99a-dfbe-401e-8975-aa191552532f
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCRibbonCustomizePropertyPage Class
 Implements a custom page for the **Customize** dialog box in Ribbon-based applications.  

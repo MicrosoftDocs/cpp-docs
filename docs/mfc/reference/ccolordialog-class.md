@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CColorDialog', 'AFXDLGS/CColorDialog', 'AFXDLGS/CColorDialog::CColorDialog', 'AFXDLGS/CColorDialog::DoModal', 'AFXDLGS/CColorDialog::GetColor', 'AFXDLGS/CColorDialog::GetSavedCustomColors', 'AFXDLGS/CColorDialog::SetCurrentColor', 'AFXDLGS/CColorDialog::OnColorOK', 'AFXDLGS/CColorDialog::m_cc']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "colors, dialog box"
-  - "dialog boxes, colors"
-  - "CColorDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CColorDialog [MFC], CColorDialog", "CColorDialog [MFC], DoModal", "CColorDialog [MFC], GetColor", "CColorDialog [MFC], GetSavedCustomColors", "CColorDialog [MFC], SetCurrentColor", "CColorDialog [MFC], OnColorOK", "CColorDialog [MFC], m_cc"]
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CColorDialog Class
 Allows you to incorporate a color-selection dialog box into your application.  

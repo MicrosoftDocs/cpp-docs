@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tree controls, item information"
-  - "CTreeCtrl class, item information"
+dev_langs: ["C++"]
+helpviewer_keywords: ["tree controls [MFC], item information", "CTreeCtrl class [MFC], item information"]
 ms.assetid: 8dcab855-27de-49e9-95d8-f78ba963ea71
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Tree Control Item Information
 Tree controls ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) have a number of member functions that retrieve information about items in the control. The [GetItem](../mfc/reference/ctreectrl-class.md#getitem) member function retrieves some or all of the data associated with an item. This data could include the item's text, state, images, count of child items, and an application-defined 32-bit data value. There is also a [SetItem](../mfc/reference/ctreectrl-class.md#setitem) function that can set some or all of the data associated with an item.  

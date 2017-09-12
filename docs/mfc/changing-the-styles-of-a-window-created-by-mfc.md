@@ -4,50 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "window styles [C++]"
-  - "WS_OVERLAPPEDWINDOW macro"
-  - "single document interface (SDI), changing window attributes"
-  - "MDI [C++], window styles"
-  - "windows [C++], MFC"
-  - "child windows, styles"
-  - "MFC [C++], windows"
-  - "CFrameWnd class, window styles"
-  - "CREATESTRUCT macro"
-  - "CMDIChildWnd class, changing window styles"
-  - "multidocument interface style"
-  - "PreCreateWindow method, window styles"
-  - "single document interface (SDI), style"
-  - "default window style"
-  - "defaults [C++], window style"
-  - "PreCreateWindow method, changing window styles"
-  - "CMainFrame class"
-  - "styles, windows"
+dev_langs: ["C++"]
+helpviewer_keywords: ["window styles [MFC]", "WS_OVERLAPPEDWINDOW macro [MFC]", "single document interface (SDI), changing window attributes", "MDI [MFC], window styles", "windows [MFC], MFC", "child windows [MFC], styles", "MFC, windows", "CFrameWnd class [MFC], window styles", "CREATESTRUCT macro [MFC]", "CMDIChildWnd class [MFC], changing window styles", "multidocument interface style", "PreCreateWindow method [MFC], window styles", "single document interface (SDI), style", "default window style", "defaults [MFC], window style", "PreCreateWindow method [MFC], changing window styles", "CMainFrame class [MFC]", "styles [MFC], windows"]
 ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Changing the Styles of a Window Created by MFC
 In its version of the `WinMain` function, MFC registers several standard window classes for you. Because you don't normally edit MFC's `WinMain`, that function gives you no opportunity to change the MFC default window styles. This article explains how you can change the styles of such a preregistered window class in an existing application.  

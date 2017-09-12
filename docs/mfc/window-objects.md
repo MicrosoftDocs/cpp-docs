@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "objects [C++], window"
-  - "Windows window [C++]"
-  - "MFC [C++], windows"
-  - "frame windows [C++], C++ window objects"
-  - "window objects [C++]"
-  - "windows [C++], C++ window objects"
-  - "window messages [C++]"
-  - "HWND"
-  - "messages [C++], Windows"
-  - "Visual C++, window objects"
-  - "HWND, window objects"
+dev_langs: ["C++"]
+helpviewer_keywords: ["objects [MFC], window", "Windows window [MFC]", "MFC, windows", "frame windows [MFC], C++ window objects", "window objects [MFC]", "windows [MFC], C++ window objects", "window messages [MFC]", "HWND", "messages [MFC], Windows", "Visual C++, window objects [MFC]", "HWND, window objects [MFC]"]
 ms.assetid: 28b33ce2-af05-4617-9d03-1cb9a02be687
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Window Objects
 MFC supplies class [CWnd](../mfc/reference/cwnd-class.md) to encapsulate the `HWND` handle of a window. The `CWnd` object is a C++ window object, distinct from the `HWND` that represents a Windows window but containing it. Use `CWnd` to derive your own child window classes, or use one of the many MFC classes derived from `CWnd`. Class `CWnd` is the base class for all windows, including frame windows, dialog boxes, child windows, controls, and control bars such as toolbars. A good understanding of [the relationship between a C++ window object and an HWND](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md) is crucial for effective programming with MFC.  

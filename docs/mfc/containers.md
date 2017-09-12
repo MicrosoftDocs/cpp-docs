@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "containers [C++]"
-  - "OLE containers"
-  - "application containers [C++]"
-  - "containers [C++], OLE container applications"
-  - "containers [C++], container applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["containers [MFC]", "OLE containers", "application containers [MFC]", "containers [MFC], OLE container applications", "containers [MFC], container applications"]
 ms.assetid: b19d7c05-4d02-44bd-b76a-4a6c25994a62
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Containers
 A container application is an application that can incorporate embedded or linked items into its own documents. The documents managed by a container application must be able to store and display OLE compound document components as well as data created by the application itself. A container application must also allow users to insert new items or edit existing items.  

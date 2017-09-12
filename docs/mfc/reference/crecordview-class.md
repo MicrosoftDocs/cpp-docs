@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRecordView', 'AFXDB/CRecordView', 'AFXDB/CRecordView::CRecordView', 'AFXDB/CRecordView::IsOnFirstRecord', 'AFXDB/CRecordView::IsOnLastRecord', 'AFXDB/CRecordView::OnGetRecordset', 'AFXDB/CRecordView::OnMove', 'AFXDB/CRecordView::OnMove']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRecordView class"
-  - "ODBC recordsets, viewing records"
-  - "records, viewing ODBC"
-  - "views, ODBC"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRecordView [MFC], CRecordView", "CRecordView [MFC], IsOnFirstRecord", "CRecordView [MFC], IsOnLastRecord", "CRecordView [MFC], OnGetRecordset", "CRecordView [MFC], OnMove", "CRecordView [MFC], OnMove"]
 ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CRecordView Class
 A view that displays database records in controls.  

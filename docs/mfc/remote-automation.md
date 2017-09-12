@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC COM, Remote Automation"
-  - "Automation objects"
-  - "DCOM, Remote Automation"
-  - "Automation objects, creating"
-  - "Remote Automation"
-  - "MFC, COM support"
-  - "Automation controller"
-  - "COM, Remote Automation"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC COM, Remote Automation", "Automation objects [MFC]", "DCOM [MFC], Remote Automation", "Automation objects [MFC], creating", "Remote Automation [MFC]", "MFC, COM support", "Automation controller [MFC]", "COM, Remote Automation [MFC]"]
 ms.assetid: 363f87fb-08fa-4458-b089-b46365a6d4f2
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Remote Automation
 > [!NOTE]

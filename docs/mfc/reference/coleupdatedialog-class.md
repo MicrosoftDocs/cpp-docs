@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleUpdateDialog', 'AFXODLGS/COleUpdateDialog', 'AFXODLGS/COleUpdateDialog::COleUpdateDialog', 'AFXODLGS/COleUpdateDialog::DoModal']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Update dialog"
-  - "links [C++], updating"
-  - "updating OLE links"
-  - "OLE dialog boxes, Edit Link"
-  - "OLE link updating"
-  - "COleUpdateDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleUpdateDialog [MFC], COleUpdateDialog", "COleUpdateDialog [MFC], DoModal"]
 ms.assetid: 699ca980-52b1-4cf8-9ab1-ac6767ad5b0e
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleUpdateDialog Class
 Used for a special case of the OLE Edit Links dialog box, which should be used when you need to update only existing linked or embedded objects in a document.  

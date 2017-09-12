@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit::CMFCRibbonEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit::CanBeStretched', 'AFXRIBBONEDIT/CMFCRibbonEdit::CMFCRibbonEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit::CopyFrom', 'AFXRIBBONEDIT/CMFCRibbonEdit::CreateEdit', 'AFXRIBBONEDIT/CMFCRibbonEdit::DestroyCtrl', 'AFXRIBBONEDIT/CMFCRibbonEdit::DropDownList', 'AFXRIBBONEDIT/CMFCRibbonEdit::EnableSpinButtons', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetCompactSize', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetEditText', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetIntermediateSize', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetTextAlign', 'AFXRIBBONEDIT/CMFCRibbonEdit::GetWidth', 'AFXRIBBONEDIT/CMFCRibbonEdit::HasCompactMode', 'AFXRIBBONEDIT/CMFCRibbonEdit::HasFocus', 'AFXRIBBONEDIT/CMFCRibbonEdit::HasLargeMode', 'AFXRIBBONEDIT/CMFCRibbonEdit::HasSpinButtons', 'AFXRIBBONEDIT/CMFCRibbonEdit::IsHighlighted', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnAfterChangeRect', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnDraw', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnDrawLabelAndImage', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnDrawOnList', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnEnable', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnHighlight', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnKey', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnLButtonDown', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnLButtonUp', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnRTLChanged', 'AFXRIBBONEDIT/CMFCRibbonEdit::OnShow', 'AFXRIBBONEDIT/CMFCRibbonEdit::Redraw', 'AFXRIBBONEDIT/CMFCRibbonEdit::SetACCData', 'AFXRIBBONEDIT/CMFCRibbonEdit::SetEditText', 'AFXRIBBONEDIT/CMFCRibbonEdit::SetTextAlign', 'AFXRIBBONEDIT/CMFCRibbonEdit::SetWidth']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonEdit class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonEdit [MFC], CMFCRibbonEdit", "CMFCRibbonEdit [MFC], CanBeStretched", "CMFCRibbonEdit [MFC], CMFCRibbonEdit", "CMFCRibbonEdit [MFC], CopyFrom", "CMFCRibbonEdit [MFC], CreateEdit", "CMFCRibbonEdit [MFC], DestroyCtrl", "CMFCRibbonEdit [MFC], DropDownList", "CMFCRibbonEdit [MFC], EnableSpinButtons", "CMFCRibbonEdit [MFC], GetCompactSize", "CMFCRibbonEdit [MFC], GetEditText", "CMFCRibbonEdit [MFC], GetIntermediateSize", "CMFCRibbonEdit [MFC], GetTextAlign", "CMFCRibbonEdit [MFC], GetWidth", "CMFCRibbonEdit [MFC], HasCompactMode", "CMFCRibbonEdit [MFC], HasFocus", "CMFCRibbonEdit [MFC], HasLargeMode", "CMFCRibbonEdit [MFC], HasSpinButtons", "CMFCRibbonEdit [MFC], IsHighlighted", "CMFCRibbonEdit [MFC], OnAfterChangeRect", "CMFCRibbonEdit [MFC], OnDraw", "CMFCRibbonEdit [MFC], OnDrawLabelAndImage", "CMFCRibbonEdit [MFC], OnDrawOnList", "CMFCRibbonEdit [MFC], OnEnable", "CMFCRibbonEdit [MFC], OnHighlight", "CMFCRibbonEdit [MFC], OnKey", "CMFCRibbonEdit [MFC], OnLButtonDown", "CMFCRibbonEdit [MFC], OnLButtonUp", "CMFCRibbonEdit [MFC], OnRTLChanged", "CMFCRibbonEdit [MFC], OnShow", "CMFCRibbonEdit [MFC], Redraw", "CMFCRibbonEdit [MFC], SetACCData", "CMFCRibbonEdit [MFC], SetEditText", "CMFCRibbonEdit [MFC], SetTextAlign", "CMFCRibbonEdit [MFC], SetWidth"]
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCRibbonEdit Class
 Implements an edit control that is located on a ribbon bar.  

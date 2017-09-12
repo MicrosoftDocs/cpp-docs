@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NAFXCW.LIB"
-  - "libraries [C++], static"
-  - "coding conventions, MFC library names"
-  - "NAFXCWD.LIB"
-  - "console applications, MFC library versions"
-  - "naming conventions [C++], MFC object code libraries"
-  - "object code libraries, MFC naming conventions"
-  - "object code libraries"
-  - "conventions [C++], MFC library names"
-  - "MFC libraries, naming conventions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["NAFXCW.LIB [MFC]", "libraries [MFC], static", "coding conventions [MFC], MFC library names", "NAFXCWD.LIB [MFC]", "console applications [MFC], MFC library versions", "naming conventions [MFC], MFC object code libraries", "object code libraries, MFC naming conventions", "object code libraries", "conventions [MFC], MFC library names", "MFC libraries, naming conventions"]
 ms.assetid: 39fe7d93-5a14-4c6a-b16c-bf318fa01278
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Library Naming Conventions
 Object-code libraries for MFC use the following naming conventions. The library names have the form  

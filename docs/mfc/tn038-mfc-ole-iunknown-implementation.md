@@ -4,47 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "aggregation macros [C++]"
-  - "COM interfaces, base interface"
-  - "IUnknown interface"
-  - "END_INTERFACE_MAP macro"
-  - "TN038"
-  - "BEGIN_INTERFACE_PART macro"
-  - "DECLARE_INTERFACE_MAP macro"
-  - "BEGIN_INTERFACE_MAP macro"
-  - "OLE [C++], implementing IUnknown interface"
-  - "METHOD_PROLOGUE macro"
-  - "STDMETHOD macro"
-  - "END_INTERFACE_PART macro"
-  - "INTERFACE_PART macro"
+f1_keywords: ["vc.mfc.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["aggregation macros [MFC]", "COM interfaces, base interface", "IUnknown interface", "END_INTERFACE_MAP macro [MFC]", "TN038", "BEGIN_INTERFACE_PART macro [MFC]", "DECLARE_INTERFACE_MAP macro [MFC]", "BEGIN_INTERFACE_MAP macro [MFC]", "OLE [MFC], implementing IUnknown interface", "METHOD_PROLOGUE macro [MFC]", "STDMETHOD macro [MFC]", "END_INTERFACE_PART macro [MFC]", "INTERFACE_PART macro"]
 ms.assetid: 19d946ba-beaf-4881-85c6-0b598d7f6f11
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # TN038: MFC/OLE IUnknown Implementation
 > [!NOTE]

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.support"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "application objects [C++], thread support classes"
-  - "lock classes"
-  - "thread support classes [C++]"
-  - "threading [MFC]"
-  - "synchronization classes, multithreading"
-  - "application support classes [C++]"
+f1_keywords: ["vc.classes.support"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["application objects [MFC], thread support classes", "lock classes [MFC]", "thread support classes [MFC]", "threading [MFC]", "synchronization classes [MFC], multithreading", "application support classes [MFC]"]
 ms.assetid: 3c1d14fd-c35c-48f1-86ce-1e0f9a32c36d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Application and Thread Support Classes
 Each application has one and only one application object; this object coordinates other objects in the running program and is derived from `CWinApp`.  

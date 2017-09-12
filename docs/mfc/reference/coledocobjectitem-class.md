@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDocObjectItem', 'AFXOLE/COleDocObjectItem', 'AFXOLE/COleDocObjectItem::COleDocObjectItem', 'AFXOLE/COleDocObjectItem::DoDefaultPrinting', 'AFXOLE/COleDocObjectItem::ExecCommand', 'AFXOLE/COleDocObjectItem::GetActiveView', 'AFXOLE/COleDocObjectItem::GetPageCount', 'AFXOLE/COleDocObjectItem::OnPreparePrinting', 'AFXOLE/COleDocObjectItem::OnPrint', 'AFXOLE/COleDocObjectItem::QueryCommand', 'AFXOLE/COleDocObjectItem::Release']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleDocObjectItem class"
-  - "document object containment"
-  - "containment"
-  - "containment, doc object"
-  - "doc object containment"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDocObjectItem [MFC], COleDocObjectItem", "COleDocObjectItem [MFC], DoDefaultPrinting", "COleDocObjectItem [MFC], ExecCommand", "COleDocObjectItem [MFC], GetActiveView", "COleDocObjectItem [MFC], GetPageCount", "COleDocObjectItem [MFC], OnPreparePrinting", "COleDocObjectItem [MFC], OnPrint", "COleDocObjectItem [MFC], QueryCommand", "COleDocObjectItem [MFC], Release"]
 ms.assetid: d150d306-8fd3-4831-b06d-afbe71d8fc9b
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleDocObjectItem Class
 Implements Active document containment.  

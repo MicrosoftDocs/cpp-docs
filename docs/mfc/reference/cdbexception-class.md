@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDBException', 'AFXDB/CDBException', 'AFXDB/CDBException::m_nRetCode', 'AFXDB/CDBException::m_strError', 'AFXDB/CDBException::m_strStateNativeOrigin']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDBException class"
-  - "exceptions [C++], database"
-  - "database exceptions [C++]"
-  - "ODBC classes [C++], exceptions"
-  - "errors [C++], database"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDBException [MFC], m_nRetCode", "CDBException [MFC], m_strError", "CDBException [MFC], m_strStateNativeOrigin"]
 ms.assetid: eb9e1119-89f5-49a7-b9d4-b91cee1ccc82
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDBException Class
 Represents an exception condition arising from the database classes.  

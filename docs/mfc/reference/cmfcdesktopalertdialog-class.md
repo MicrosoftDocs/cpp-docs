@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCDesktopAlertDialog', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::CreateFromParams', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::GetDlgSize', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::HasFocus', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::PreTranslateMessage']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCDesktopAlertDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCDesktopAlertDialog [MFC], CreateFromParams", "CMFCDesktopAlertDialog [MFC], GetDlgSize", "CMFCDesktopAlertDialog [MFC], HasFocus", "CMFCDesktopAlertDialog [MFC], PreTranslateMessage"]
 ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCDesktopAlertDialog Class
 The `CMFCDesktopAlertDialog` class is used together with the [CMFCDesktopAlertWnd Class](../../mfc/reference/cmfcdesktopalertwnd-class.md) to display a custom dialog in a popup window.  

@@ -4,51 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "type-safe collections"
-  - "CTypedPtrList class, template-based classes"
-  - "arrays [C++], classes"
-  - "arrays [C++], pointers"
-  - "typed pointers, collections of"
-  - "arrays [C++], template-based"
-  - "CArray class, template-based classes"
-  - "simple template-based collections"
-  - "simple array collection classes"
-  - "typed pointers"
-  - "collections, typed-pointer"
-  - "CList class, template-based classes"
-  - "collection classes, template-based"
-  - "CTypedPtrMap class, template-based classes"
-  - "pointers, collections of typed"
-  - "CTypedPtrArray class, template-based classes"
-  - "MFC collection classes, template-based"
-  - "template-based collection classes"
-  - "simple list collection classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["type-safe collections", "CTypedPtrList class [MFC], template-based classes", "arrays [MFC], classes", "arrays [MFC], pointers", "typed pointers, collections of", "arrays [MFC], template-based", "CArray class [MFC], template-based classes", "simple template-based collections", "simple array collection classes [MFC]", "typed pointers", "collections, typed-pointer", "CList class [MFC], template-based classes", "collection classes [MFC], template-based", "CTypedPtrMap class [MFC], template-based classes", "pointers, collections of typed", "CTypedPtrArray class [MFC], template-based classes", "MFC collection classes [MFC], template-based", "template-based collection classes [MFC]", "simple list collection classes [MFC]"]
 ms.assetid: c69fc95b-c8f6-4a99-abed-517c9898ef0c
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Template-Based Classes
 This article explains the type-safe template-based collection classes in MFC version 3.0 and later. Using these templates to create type-safe collections is more convenient and helps provide type safety more effectively than using the collection classes not based on templates.  

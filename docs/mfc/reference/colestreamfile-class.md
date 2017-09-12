@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleStreamFile', 'AFXOLE/COleStreamFile', 'AFXOLE/COleStreamFile::COleStreamFile', 'AFXOLE/COleStreamFile::Attach', 'AFXOLE/COleStreamFile::CreateMemoryStream', 'AFXOLE/COleStreamFile::CreateStream', 'AFXOLE/COleStreamFile::Detach', 'AFXOLE/COleStreamFile::GetStream', 'AFXOLE/COleStreamFile::OpenStream']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data streams [C++]"
-  - "streams [C++], OLE"
-  - "data streams [C++], OLE"
-  - "structured storage in OLE"
-  - "OLE structured storage [C++]"
-  - "OLE [C++], streams of data"
-  - "COleStreamFile class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleStreamFile [MFC], COleStreamFile", "COleStreamFile [MFC], Attach", "COleStreamFile [MFC], CreateMemoryStream", "COleStreamFile [MFC], CreateStream", "COleStreamFile [MFC], Detach", "COleStreamFile [MFC], GetStream", "COleStreamFile [MFC], OpenStream"]
 ms.assetid: e4f93698-e17c-4a18-a7c0-4b4df8eb4d93
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleStreamFile Class
 Represents a stream of data ( `IStream`) in a compound file as part of OLE Structured Storage.  

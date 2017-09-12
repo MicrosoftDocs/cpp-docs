@@ -4,50 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CBRS_SIZE_DYNAMIC"
-  - "CBRS_SIZE_FIXED"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "size, toolbars"
-  - "size"
-  - "frame windows, toolbar docking"
-  - "CBRS_ALIGN_ANY constant"
-  - "palettes, floating"
-  - "toolbars [C++], docking"
-  - "CBRS_SIZE_DYNAMIC constant"
-  - "floating toolbars"
-  - "toolbars [C++], size"
-  - "toolbars [C++], floating"
-  - "fixed-size toolbars"
-  - "CBRS_SIZE_FIXED constant"
-  - "toolbar controls [MFC], wrapping"
-  - "toolbars [C++], wrapping"
-  - "floating palettes"
+f1_keywords: ["CBRS_SIZE_DYNAMIC", "CBRS_SIZE_FIXED"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["size [MFC], toolbars", "size", "frame windows [MFC], toolbar docking", "CBRS_ALIGN_ANY constant [MFC]", "palettes, floating", "toolbars [MFC], docking", "CBRS_SIZE_DYNAMIC constant [MFC]", "floating toolbars", "toolbars [MFC], size", "toolbars [MFC], floating", "fixed-size toolbars", "CBRS_SIZE_FIXED constant [MFC]", "toolbar controls [MFC], wrapping", "toolbars [MFC], wrapping", "floating palettes"]
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Docking and Floating Toolbars
 The Microsoft Foundation Class Library supports dockable toolbars. A dockable toolbar can be attached, or docked, to any side of its parent window, or it can be detached, or floated, in its own mini-frame window. This article explains how to use dockable toolbars in your applications.  

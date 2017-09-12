@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDateTimeCtrl', 'AFXDTCTL/CDateTimeCtrl', 'AFXDTCTL/CDateTimeCtrl::CDateTimeCtrl', 'AFXDTCTL/CDateTimeCtrl::CloseMonthCal', 'AFXDTCTL/CDateTimeCtrl::Create', 'AFXDTCTL/CDateTimeCtrl::GetDateTimePickerInfo', 'AFXDTCTL/CDateTimeCtrl::GetIdealSize', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalColor', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalCtrl', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalFont', 'AFXDTCTL/CDateTimeCtrl::GetMonthCalStyle', 'AFXDTCTL/CDateTimeCtrl::GetRange', 'AFXDTCTL/CDateTimeCtrl::GetTime', 'AFXDTCTL/CDateTimeCtrl::SetFormat', 'AFXDTCTL/CDateTimeCtrl::SetMonthCalColor', 'AFXDTCTL/CDateTimeCtrl::SetMonthCalFont', 'AFXDTCTL/CDateTimeCtrl::SetMonthCalStyle', 'AFXDTCTL/CDateTimeCtrl::SetRange', 'AFXDTCTL/CDateTimeCtrl::SetTime']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DateTimePicker control [MFC], CDateTimeCtrl class"
-  - "date-picking functionality"
-  - "CDateTimeCtrl class"
-  - "DateTimePicker control [MFC]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDateTimeCtrl [MFC], CDateTimeCtrl", "CDateTimeCtrl [MFC], CloseMonthCal", "CDateTimeCtrl [MFC], Create", "CDateTimeCtrl [MFC], GetDateTimePickerInfo", "CDateTimeCtrl [MFC], GetIdealSize", "CDateTimeCtrl [MFC], GetMonthCalColor", "CDateTimeCtrl [MFC], GetMonthCalCtrl", "CDateTimeCtrl [MFC], GetMonthCalFont", "CDateTimeCtrl [MFC], GetMonthCalStyle", "CDateTimeCtrl [MFC], GetRange", "CDateTimeCtrl [MFC], GetTime", "CDateTimeCtrl [MFC], SetFormat", "CDateTimeCtrl [MFC], SetMonthCalColor", "CDateTimeCtrl [MFC], SetMonthCalFont", "CDateTimeCtrl [MFC], SetMonthCalStyle", "CDateTimeCtrl [MFC], SetRange", "CDateTimeCtrl [MFC], SetTime"]
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDateTimeCtrl Class
 Encapsulates the functionality of a date and time picker control.  

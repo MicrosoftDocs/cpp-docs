@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COlePropertyPage', 'AFXCTL/COlePropertyPage', 'AFXCTL/COlePropertyPage::COlePropertyPage', 'AFXCTL/COlePropertyPage::GetControlStatus', 'AFXCTL/COlePropertyPage::GetObjectArray', 'AFXCTL/COlePropertyPage::GetPageSite', 'AFXCTL/COlePropertyPage::IgnoreApply', 'AFXCTL/COlePropertyPage::IsModified', 'AFXCTL/COlePropertyPage::OnEditProperty', 'AFXCTL/COlePropertyPage::OnHelp', 'AFXCTL/COlePropertyPage::OnInitDialog', 'AFXCTL/COlePropertyPage::OnObjectsChanged', 'AFXCTL/COlePropertyPage::OnSetPageSite', 'AFXCTL/COlePropertyPage::SetControlStatus', 'AFXCTL/COlePropertyPage::SetDialogResource', 'AFXCTL/COlePropertyPage::SetHelpInfo', 'AFXCTL/COlePropertyPage::SetModifiedFlag', 'AFXCTL/COlePropertyPage::SetPageName']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE property pages"
-  - "custom controls [MFC], properties"
-  - "COlePropertyPage class"
-  - "properties [C++], displaying"
-  - "displaying properties"
-  - "property pages, OLE"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COlePropertyPage [MFC], COlePropertyPage", "COlePropertyPage [MFC], GetControlStatus", "COlePropertyPage [MFC], GetObjectArray", "COlePropertyPage [MFC], GetPageSite", "COlePropertyPage [MFC], IgnoreApply", "COlePropertyPage [MFC], IsModified", "COlePropertyPage [MFC], OnEditProperty", "COlePropertyPage [MFC], OnHelp", "COlePropertyPage [MFC], OnInitDialog", "COlePropertyPage [MFC], OnObjectsChanged", "COlePropertyPage [MFC], OnSetPageSite", "COlePropertyPage [MFC], SetControlStatus", "COlePropertyPage [MFC], SetDialogResource", "COlePropertyPage [MFC], SetHelpInfo", "COlePropertyPage [MFC], SetModifiedFlag", "COlePropertyPage [MFC], SetPageName"]
 ms.assetid: e9972872-8e6b-4550-905e-d36a274d64dc
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COlePropertyPage Class
 Used to display the properties of a custom control in a graphical interface, similar to a dialog box.  

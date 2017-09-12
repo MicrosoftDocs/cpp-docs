@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleChangeIconDialog', 'AFXODLGS/COleChangeIconDialog', 'AFXODLGS/COleChangeIconDialog::COleChangeIconDialog', 'AFXODLGS/COleChangeIconDialog::DoChangeIcon', 'AFXODLGS/COleChangeIconDialog::DoModal', 'AFXODLGS/COleChangeIconDialog::GetIconicMetafile', 'AFXODLGS/COleChangeIconDialog::m_ci']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE dialog boxes, Change Icon"
-  - "OLE Change Icon dialog box"
-  - "dialog boxes, OLE"
-  - "COleChangeIconDialog class"
-  - "Change Icon dialog box"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleChangeIconDialog [MFC], COleChangeIconDialog", "COleChangeIconDialog [MFC], DoChangeIcon", "COleChangeIconDialog [MFC], DoModal", "COleChangeIconDialog [MFC], GetIconicMetafile", "COleChangeIconDialog [MFC], m_ci"]
 ms.assetid: 8d6e131b-ddbb-4dff-a432-f239efda8e3d
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleChangeIconDialog Class
 Used for the OLE Change Icon dialog box.  

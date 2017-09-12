@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [MFC], creating for dialog boxes"
-  - "Windows common controls [C++], about common controls"
-  - "common controls [C++], about common controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [MFC], creating for dialog boxes", "Windows common controls [MFC], about common controls", "common controls [MFC], about common controls"]
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Making and Using Controls
 You make most controls for dialog boxes in the Visual C++ [dialog editor](../windows/dialog-editor.md). But you can also create controls in any dialog box or window.  

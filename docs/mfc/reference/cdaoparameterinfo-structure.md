@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDaoParameterInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDaoParameterInfo structure"
-  - "DAO (Data Access Objects), Parameters collection"
+f1_keywords: ["CDaoParameterInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoParameterInfo structure [MFC]", "DAO (Data Access Objects), Parameters collection"]
 ms.assetid: 45fd53cd-cb84-4e12-b48d-7f2979f898ad
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDaoParameterInfo Structure
 The `CDaoParameterInfo` structure contains information about a parameter object defined for data access objects (DAO).  

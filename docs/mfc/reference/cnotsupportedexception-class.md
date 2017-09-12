@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CNotSupportedException', 'AFX/CNotSupportedException', 'AFX/CNotSupportedException::CNotSupportedException']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CNotSupportedException class"
-  - "unsupported features"
-  - "exceptions, not supported"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CNotSupportedException [MFC], CNotSupportedException"]
 ms.assetid: e517391b-eb94-4c39-ae32-87b45bf7d624
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CNotSupportedException Class
 Represents an exception that is the result of a request for an unsupported feature.  

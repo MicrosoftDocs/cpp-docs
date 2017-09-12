@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CInternetFile', 'AFXINET/CInternetFile', 'AFXINET/CInternetFile::CInternetFile', 'AFXINET/CInternetFile::Abort', 'AFXINET/CInternetFile::Close', 'AFXINET/CInternetFile::Flush', 'AFXINET/CInternetFile::GetLength', 'AFXINET/CInternetFile::Read', 'AFXINET/CInternetFile::ReadString', 'AFXINET/CInternetFile::Seek', 'AFXINET/CInternetFile::SetReadBufferSize', 'AFXINET/CInternetFile::SetWriteBufferSize', 'AFXINET/CInternetFile::Write', 'AFXINET/CInternetFile::WriteString', 'AFXINET/CInternetFile::m_hFile']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CInternetFile class"
-  - "Internet files"
-  - "Internet files, CInternetFile class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CInternetFile [MFC], CInternetFile", "CInternetFile [MFC], Abort", "CInternetFile [MFC], Close", "CInternetFile [MFC], Flush", "CInternetFile [MFC], GetLength", "CInternetFile [MFC], Read", "CInternetFile [MFC], ReadString", "CInternetFile [MFC], Seek", "CInternetFile [MFC], SetReadBufferSize", "CInternetFile [MFC], SetWriteBufferSize", "CInternetFile [MFC], Write", "CInternetFile [MFC], WriteString", "CInternetFile [MFC], m_hFile"]
 ms.assetid: 96935681-ee71-4a8d-9783-5abc7b3e6f10
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CInternetFile Class
 Allows access to files on remote systems that use Internet protocols.  

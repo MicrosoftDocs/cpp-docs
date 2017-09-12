@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMultiPaneFrameWnd', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::AddPane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::AddRecentPane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::AdjustLayout', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::AdjustPaneFrames', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CalcExpectedDockedRect', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CanBeAttached', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CanBeDockedToPane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CheckGripperVisibility', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::CloseMiniFrame', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::ConvertToTabbedDocument', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::DockFrame', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::DockPane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::DockRecentPaneToMainFrame', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetCaptionText', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetPaneContainerManager', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetFirstVisiblePane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetPane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetPaneCount', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::GetVisiblePaneCount', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::InsertPane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::LoadState', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnDockToRecentPos', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnKillRollUpTimer', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnPaneRecalcLayout', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnSetRollUpTimer', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::OnShowPane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::PaneFromPoint', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::RemoveNonValidPanes', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::RemovePane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::ReplacePane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::SaveState', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::Serialize', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::SetDockState', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::SetLastFocusedPane', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::SetPreDockState', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::StoreRecentDockSiteInfo', 'AFXMULTIPANEFRAMEWND/CMultiPaneFrameWnd::StoreRecentTabRelatedInfo']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMultiPaneFrameWnd class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMultiPaneFrameWnd [MFC], AddPane", "CMultiPaneFrameWnd [MFC], AddRecentPane", "CMultiPaneFrameWnd [MFC], AdjustLayout", "CMultiPaneFrameWnd [MFC], AdjustPaneFrames", "CMultiPaneFrameWnd [MFC], CalcExpectedDockedRect", "CMultiPaneFrameWnd [MFC], CanBeAttached", "CMultiPaneFrameWnd [MFC], CanBeDockedToPane", "CMultiPaneFrameWnd [MFC], CheckGripperVisibility", "CMultiPaneFrameWnd [MFC], CloseMiniFrame", "CMultiPaneFrameWnd [MFC], ConvertToTabbedDocument", "CMultiPaneFrameWnd [MFC], DockFrame", "CMultiPaneFrameWnd [MFC], DockPane", "CMultiPaneFrameWnd [MFC], DockRecentPaneToMainFrame", "CMultiPaneFrameWnd [MFC], GetCaptionText", "CMultiPaneFrameWnd [MFC], GetPaneContainerManager", "CMultiPaneFrameWnd [MFC], GetFirstVisiblePane", "CMultiPaneFrameWnd [MFC], GetPane", "CMultiPaneFrameWnd [MFC], GetPaneCount", "CMultiPaneFrameWnd [MFC], GetVisiblePaneCount", "CMultiPaneFrameWnd [MFC], InsertPane", "CMultiPaneFrameWnd [MFC], LoadState", "CMultiPaneFrameWnd [MFC], OnDockToRecentPos", "CMultiPaneFrameWnd [MFC], OnKillRollUpTimer", "CMultiPaneFrameWnd [MFC], OnPaneRecalcLayout", "CMultiPaneFrameWnd [MFC], OnSetRollUpTimer", "CMultiPaneFrameWnd [MFC], OnShowPane", "CMultiPaneFrameWnd [MFC], PaneFromPoint", "CMultiPaneFrameWnd [MFC], RemoveNonValidPanes", "CMultiPaneFrameWnd [MFC], RemovePane", "CMultiPaneFrameWnd [MFC], ReplacePane", "CMultiPaneFrameWnd [MFC], SaveState", "CMultiPaneFrameWnd [MFC], Serialize", "CMultiPaneFrameWnd [MFC], SetDockState", "CMultiPaneFrameWnd [MFC], SetLastFocusedPane", "CMultiPaneFrameWnd [MFC], SetPreDockState", "CMultiPaneFrameWnd [MFC], StoreRecentDockSiteInfo", "CMultiPaneFrameWnd [MFC], StoreRecentTabRelatedInfo"]
 ms.assetid: 989a548e-0d70-46b7-a513-8cf740e1be3e
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMultiPaneFrameWnd Class
 The `CMultiPaneFrameWnd` class extends [CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md). It can support multiple panes. Instead of a single embedded handle to a control bar, `CMultiPaneFrameWnd` contains a [CPaneContainerManager Class](../../mfc/reference/cpanecontainermanager-class.md) object that enables the user to dock one `CMultiPaneFrameWnd` to another and dynamically create multiple floating, tabbed windows.  

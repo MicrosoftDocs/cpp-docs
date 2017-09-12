@@ -4,35 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleIPFrameWndEx', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::AddDockSite', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::AddPane', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::AdjustDockingLayout', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::DockPane', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::DockPaneLeftOf', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::EnableAutoHidePanes', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::EnableDocking', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::EnablePaneMenu', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetActivePopup', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetContainerFrameWindow', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetDefaultResId', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetDockFrame', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetDockingManager', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetMainFrame', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetMenuBar', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetPane', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetTearOffBars', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::GetToolbarButtonToolTipText', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::InsertPane', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::IsMenuBarAvailable', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::IsPointNearDockSite', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::LoadFrame', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnCloseDockingPane', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnCloseMiniFrame', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnClosePopupMenu', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnCmdMsg', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnDrawMenuImage', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnDrawMenuLogo', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnMenuButtonToolHitTest', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnMoveMiniFrame', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnSetPreviewMode', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnShowCustomizePane', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnShowPanes', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnShowPopupMenu', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::OnTearOffMenu', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::PaneFromPoint', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::PreTranslateMessage', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::RecalcLayout', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::RemovePaneFromDockManager', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::SetDockState', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::SetupToolbarMenu', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::ShowPane', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::WinHelpA', 'AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::InitUserToobars']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleIPFrameWndEx class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleIPFrameWndEx [MFC], AddDockSite", "COleIPFrameWndEx [MFC], AddPane", "COleIPFrameWndEx [MFC], AdjustDockingLayout", "COleIPFrameWndEx [MFC], DockPane", "COleIPFrameWndEx [MFC], DockPaneLeftOf", "COleIPFrameWndEx [MFC], EnableAutoHidePanes", "COleIPFrameWndEx [MFC], EnableDocking", "COleIPFrameWndEx [MFC], EnablePaneMenu", "COleIPFrameWndEx [MFC], GetActivePopup", "COleIPFrameWndEx [MFC], GetContainerFrameWindow", "COleIPFrameWndEx [MFC], GetDefaultResId", "COleIPFrameWndEx [MFC], GetDockFrame", "COleIPFrameWndEx [MFC], GetDockingManager", "COleIPFrameWndEx [MFC], GetMainFrame", "COleIPFrameWndEx [MFC], GetMenuBar", "COleIPFrameWndEx [MFC], GetPane", "COleIPFrameWndEx [MFC], GetTearOffBars", "COleIPFrameWndEx [MFC], GetToolbarButtonToolTipText", "COleIPFrameWndEx [MFC], InsertPane", "COleIPFrameWndEx [MFC], IsMenuBarAvailable", "COleIPFrameWndEx [MFC], IsPointNearDockSite", "COleIPFrameWndEx [MFC], LoadFrame", "COleIPFrameWndEx [MFC], OnCloseDockingPane", "COleIPFrameWndEx [MFC], OnCloseMiniFrame", "COleIPFrameWndEx [MFC], OnClosePopupMenu", "COleIPFrameWndEx [MFC], OnCmdMsg", "COleIPFrameWndEx [MFC], OnDrawMenuImage", "COleIPFrameWndEx [MFC], OnDrawMenuLogo", "COleIPFrameWndEx [MFC], OnMenuButtonToolHitTest", "COleIPFrameWndEx [MFC], OnMoveMiniFrame", "COleIPFrameWndEx [MFC], OnSetPreviewMode", "COleIPFrameWndEx [MFC], OnShowCustomizePane", "COleIPFrameWndEx [MFC], OnShowPanes", "COleIPFrameWndEx [MFC], OnShowPopupMenu", "COleIPFrameWndEx [MFC], OnTearOffMenu", "COleIPFrameWndEx [MFC], PaneFromPoint", "COleIPFrameWndEx [MFC], PreTranslateMessage", "COleIPFrameWndEx [MFC], RecalcLayout", "COleIPFrameWndEx [MFC], RemovePaneFromDockManager", "COleIPFrameWndEx [MFC], SetDockState", "COleIPFrameWndEx [MFC], SetupToolbarMenu", "COleIPFrameWndEx [MFC], ShowPane", "COleIPFrameWndEx [MFC], WinHelpA", "COleIPFrameWndEx [MFC], InitUserToobars"]
 ms.assetid: ebff1560-a1eb-4854-af00-95d4a192bd55
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # COleIPFrameWndEx Class
 The `COleIPFrameWndEx` class implements an OLE container that supports MFC. You must derive the in-place frame window class for your application from the `COleIPFrameWndEx` class, instead of deriving it from the [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md)class. 

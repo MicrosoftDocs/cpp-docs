@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCDropDownToolbarButton', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::CMFCDropDownToolbarButton', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::CopyFrom', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::DropDownToolbar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::ExportToMenuButton', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::GetDropDownToolBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::IsDropDown', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::IsExtraSize', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnCalculateSize', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnChangeParentWnd', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnClick', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnClickUp', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnContextHelp', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnCustomizeMenu', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnDraw', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::OnDrawOnCustomizeList', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::Serialize', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::SetDefaultCommand', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolbarButton::m_uiShowBarDelay']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCDropDownToolbarButton class"
-  - "OnCancelMode method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCDropDownToolbarButton [MFC], CMFCDropDownToolbarButton", "CMFCDropDownToolbarButton [MFC], CopyFrom", "CMFCDropDownToolbarButton [MFC], DropDownToolbar", "CMFCDropDownToolbarButton [MFC], ExportToMenuButton", "CMFCDropDownToolbarButton [MFC], GetDropDownToolBar", "CMFCDropDownToolbarButton [MFC], IsDropDown", "CMFCDropDownToolbarButton [MFC], IsExtraSize", "CMFCDropDownToolbarButton [MFC], OnCalculateSize", "CMFCDropDownToolbarButton [MFC], OnChangeParentWnd", "CMFCDropDownToolbarButton [MFC], OnClick", "CMFCDropDownToolbarButton [MFC], OnClickUp", "CMFCDropDownToolbarButton [MFC], OnContextHelp", "CMFCDropDownToolbarButton [MFC], OnCustomizeMenu", "CMFCDropDownToolbarButton [MFC], OnDraw", "CMFCDropDownToolbarButton [MFC], OnDrawOnCustomizeList", "CMFCDropDownToolbarButton [MFC], Serialize", "CMFCDropDownToolbarButton [MFC], SetDefaultCommand", "CMFCDropDownToolbarButton [MFC], m_uiShowBarDelay"]
 ms.assetid: bc9d69e6-bd3e-4c15-9368-e80a504a0ba7
 caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCDropDownToolbarButton Class
 A type of toolbar button that behaves like a regular button when it is clicked. However, it opens a drop-down toolbar ( [CMFCDropDownToolBar Class](../../mfc/reference/cmfcdropdowntoolbar-class.md) if the user presses and holds the toolbar button down.  

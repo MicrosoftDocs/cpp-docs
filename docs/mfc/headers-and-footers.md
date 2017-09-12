@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "printing [MFC], multipage documents"
-  - "page headers, printing"
-  - "headers, printing"
-  - "footers, printing"
-  - "page footers, printing"
-  - "page headers"
-  - "printing [MFC], headers and footers"
-  - "page footers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["printing [MFC], multipage documents", "page headers [MFC], printing", "headers [MFC], printing", "footers [MFC], printing", "page footers [MFC], printing", "page headers [MFC]", "printing [MFC], headers and footers", "page footers [MFC]"]
 ms.assetid: b0be9c53-5773-4955-a777-3c15da745128
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Headers and Footers
 This article explains how to add headers and footers to a printed document.  

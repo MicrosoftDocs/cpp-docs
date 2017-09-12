@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CToolBarCtrl', 'AFXCMN/CToolBarCtrl', 'AFXCMN/CToolBarCtrl::CToolBarCtrl', 'AFXCMN/CToolBarCtrl::AddBitmap', 'AFXCMN/CToolBarCtrl::AddButtons', 'AFXCMN/CToolBarCtrl::AddString', 'AFXCMN/CToolBarCtrl::AddStrings', 'AFXCMN/CToolBarCtrl::AutoSize', 'AFXCMN/CToolBarCtrl::ChangeBitmap', 'AFXCMN/CToolBarCtrl::CheckButton', 'AFXCMN/CToolBarCtrl::CommandToIndex', 'AFXCMN/CToolBarCtrl::Create', 'AFXCMN/CToolBarCtrl::CreateEx', 'AFXCMN/CToolBarCtrl::Customize', 'AFXCMN/CToolBarCtrl::DeleteButton', 'AFXCMN/CToolBarCtrl::EnableButton', 'AFXCMN/CToolBarCtrl::GetAnchorHighlight', 'AFXCMN/CToolBarCtrl::GetBitmap', 'AFXCMN/CToolBarCtrl::GetBitmapFlags', 'AFXCMN/CToolBarCtrl::GetButton', 'AFXCMN/CToolBarCtrl::GetButtonCount', 'AFXCMN/CToolBarCtrl::GetButtonInfo', 'AFXCMN/CToolBarCtrl::GetButtonSize', 'AFXCMN/CToolBarCtrl::GetColorScheme', 'AFXCMN/CToolBarCtrl::GetDisabledImageList', 'AFXCMN/CToolBarCtrl::GetDropTarget', 'AFXCMN/CToolBarCtrl::GetExtendedStyle', 'AFXCMN/CToolBarCtrl::GetHotImageList', 'AFXCMN/CToolBarCtrl::GetHotItem', 'AFXCMN/CToolBarCtrl::GetImageList', 'AFXCMN/CToolBarCtrl::GetInsertMark', 'AFXCMN/CToolBarCtrl::GetInsertMarkColor', 'AFXCMN/CToolBarCtrl::GetItemRect', 'AFXCMN/CToolBarCtrl::GetMaxSize', 'AFXCMN/CToolBarCtrl::GetMaxTextRows', 'AFXCMN/CToolBarCtrl::GetMetrics', 'AFXCMN/CToolBarCtrl::GetPadding', 'AFXCMN/CToolBarCtrl::GetPressedImageList', 'AFXCMN/CToolBarCtrl::GetRect', 'AFXCMN/CToolBarCtrl::GetRows', 'AFXCMN/CToolBarCtrl::GetState', 'AFXCMN/CToolBarCtrl::GetString', 'AFXCMN/CToolBarCtrl::GetStyle', 'AFXCMN/CToolBarCtrl::GetToolTips', 'AFXCMN/CToolBarCtrl::HideButton', 'AFXCMN/CToolBarCtrl::HitTest', 'AFXCMN/CToolBarCtrl::Indeterminate', 'AFXCMN/CToolBarCtrl::InsertButton', 'AFXCMN/CToolBarCtrl::InsertMarkHitTest', 'AFXCMN/CToolBarCtrl::IsButtonChecked', 'AFXCMN/CToolBarCtrl::IsButtonEnabled', 'AFXCMN/CToolBarCtrl::IsButtonHidden', 'AFXCMN/CToolBarCtrl::IsButtonHighlighted', 'AFXCMN/CToolBarCtrl::IsButtonIndeterminate', 'AFXCMN/CToolBarCtrl::IsButtonPressed', 'AFXCMN/CToolBarCtrl::LoadImages', 'AFXCMN/CToolBarCtrl::MapAccelerator', 'AFXCMN/CToolBarCtrl::MarkButton', 'AFXCMN/CToolBarCtrl::MoveButton', 'AFXCMN/CToolBarCtrl::PressButton', 'AFXCMN/CToolBarCtrl::ReplaceBitmap', 'AFXCMN/CToolBarCtrl::RestoreState', 'AFXCMN/CToolBarCtrl::SaveState', 'AFXCMN/CToolBarCtrl::SetAnchorHighlight', 'AFXCMN/CToolBarCtrl::SetBitmapSize', 'AFXCMN/CToolBarCtrl::SetButtonInfo', 'AFXCMN/CToolBarCtrl::SetButtonSize', 'AFXCMN/CToolBarCtrl::SetButtonStructSize', 'AFXCMN/CToolBarCtrl::SetButtonWidth', 'AFXCMN/CToolBarCtrl::SetCmdID', 'AFXCMN/CToolBarCtrl::SetColorScheme', 'AFXCMN/CToolBarCtrl::SetDisabledImageList', 'AFXCMN/CToolBarCtrl::SetDrawTextFlags', 'AFXCMN/CToolBarCtrl::SetExtendedStyle', 'AFXCMN/CToolBarCtrl::SetHotImageList', 'AFXCMN/CToolBarCtrl::SetHotItem', 'AFXCMN/CToolBarCtrl::SetImageList', 'AFXCMN/CToolBarCtrl::SetIndent', 'AFXCMN/CToolBarCtrl::SetInsertMark', 'AFXCMN/CToolBarCtrl::SetInsertMarkColor', 'AFXCMN/CToolBarCtrl::SetMaxTextRows', 'AFXCMN/CToolBarCtrl::SetMetrics', 'AFXCMN/CToolBarCtrl::SetOwner', 'AFXCMN/CToolBarCtrl::SetPadding', 'AFXCMN/CToolBarCtrl::SetPressedImageList', 'AFXCMN/CToolBarCtrl::SetRows', 'AFXCMN/CToolBarCtrl::SetState', 'AFXCMN/CToolBarCtrl::SetStyle', 'AFXCMN/CToolBarCtrl::SetToolTips', 'AFXCMN/CToolBarCtrl::SetWindowTheme']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CToolBarCtrl class"
-  - "Windows common controls [C++], CToolBarCtrl"
-  - "toolbar controls [MFC], CToolBarCtrl class"
-  - "tool tips [C++], notifications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CToolBarCtrl [MFC], CToolBarCtrl", "CToolBarCtrl [MFC], AddBitmap", "CToolBarCtrl [MFC], AddButtons", "CToolBarCtrl [MFC], AddString", "CToolBarCtrl [MFC], AddStrings", "CToolBarCtrl [MFC], AutoSize", "CToolBarCtrl [MFC], ChangeBitmap", "CToolBarCtrl [MFC], CheckButton", "CToolBarCtrl [MFC], CommandToIndex", "CToolBarCtrl [MFC], Create", "CToolBarCtrl [MFC], CreateEx", "CToolBarCtrl [MFC], Customize", "CToolBarCtrl [MFC], DeleteButton", "CToolBarCtrl [MFC], EnableButton", "CToolBarCtrl [MFC], GetAnchorHighlight", "CToolBarCtrl [MFC], GetBitmap", "CToolBarCtrl [MFC], GetBitmapFlags", "CToolBarCtrl [MFC], GetButton", "CToolBarCtrl [MFC], GetButtonCount", "CToolBarCtrl [MFC], GetButtonInfo", "CToolBarCtrl [MFC], GetButtonSize", "CToolBarCtrl [MFC], GetColorScheme", "CToolBarCtrl [MFC], GetDisabledImageList", "CToolBarCtrl [MFC], GetDropTarget", "CToolBarCtrl [MFC], GetExtendedStyle", "CToolBarCtrl [MFC], GetHotImageList", "CToolBarCtrl [MFC], GetHotItem", "CToolBarCtrl [MFC], GetImageList", "CToolBarCtrl [MFC], GetInsertMark", "CToolBarCtrl [MFC], GetInsertMarkColor", "CToolBarCtrl [MFC], GetItemRect", "CToolBarCtrl [MFC], GetMaxSize", "CToolBarCtrl [MFC], GetMaxTextRows", "CToolBarCtrl [MFC], GetMetrics", "CToolBarCtrl [MFC], GetPadding", "CToolBarCtrl [MFC], GetPressedImageList", "CToolBarCtrl [MFC], GetRect", "CToolBarCtrl [MFC], GetRows", "CToolBarCtrl [MFC], GetState", "CToolBarCtrl [MFC], GetString", "CToolBarCtrl [MFC], GetStyle", "CToolBarCtrl [MFC], GetToolTips", "CToolBarCtrl [MFC], HideButton", "CToolBarCtrl [MFC], HitTest", "CToolBarCtrl [MFC], Indeterminate", "CToolBarCtrl [MFC], InsertButton", "CToolBarCtrl [MFC], InsertMarkHitTest", "CToolBarCtrl [MFC], IsButtonChecked", "CToolBarCtrl [MFC], IsButtonEnabled", "CToolBarCtrl [MFC], IsButtonHidden", "CToolBarCtrl [MFC], IsButtonHighlighted", "CToolBarCtrl [MFC], IsButtonIndeterminate", "CToolBarCtrl [MFC], IsButtonPressed", "CToolBarCtrl [MFC], LoadImages", "CToolBarCtrl [MFC], MapAccelerator", "CToolBarCtrl [MFC], MarkButton", "CToolBarCtrl [MFC], MoveButton", "CToolBarCtrl [MFC], PressButton", "CToolBarCtrl [MFC], ReplaceBitmap", "CToolBarCtrl [MFC], RestoreState", "CToolBarCtrl [MFC], SaveState", "CToolBarCtrl [MFC], SetAnchorHighlight", "CToolBarCtrl [MFC], SetBitmapSize", "CToolBarCtrl [MFC], SetButtonInfo", "CToolBarCtrl [MFC], SetButtonSize", "CToolBarCtrl [MFC], SetButtonStructSize", "CToolBarCtrl [MFC], SetButtonWidth", "CToolBarCtrl [MFC], SetCmdID", "CToolBarCtrl [MFC], SetColorScheme", "CToolBarCtrl [MFC], SetDisabledImageList", "CToolBarCtrl [MFC], SetDrawTextFlags", "CToolBarCtrl [MFC], SetExtendedStyle", "CToolBarCtrl [MFC], SetHotImageList", "CToolBarCtrl [MFC], SetHotItem", "CToolBarCtrl [MFC], SetImageList", "CToolBarCtrl [MFC], SetIndent", "CToolBarCtrl [MFC], SetInsertMark", "CToolBarCtrl [MFC], SetInsertMarkColor", "CToolBarCtrl [MFC], SetMaxTextRows", "CToolBarCtrl [MFC], SetMetrics", "CToolBarCtrl [MFC], SetOwner", "CToolBarCtrl [MFC], SetPadding", "CToolBarCtrl [MFC], SetPressedImageList", "CToolBarCtrl [MFC], SetRows", "CToolBarCtrl [MFC], SetState", "CToolBarCtrl [MFC], SetStyle", "CToolBarCtrl [MFC], SetToolTips", "CToolBarCtrl [MFC], SetWindowTheme"]
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CToolBarCtrl Class
 Provides the functionality of the Windows toolbar common control.  

@@ -4,53 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "LPCRECT"
-  - "POSITION"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LPCRECT data type"
-  - "WPARAM data type"
-  - "data types [C++], MFC"
-  - "LRESULT"
-  - "POSITION data type"
-  - "UINT"
-  - "LPVOID data type"
-  - "COLORREF"
-  - "LPCTSTR"
-  - "LPSTR"
-  - "DWORD operator"
-  - "WORD data type"
-  - "LPTSTR"
-  - "BYTE data type (Windows)"
-  - "Long data type, Windows types"
-  - "Boolean data type [C++], supported data types"
-  - "LPARAM data type"
-  - "LPCSTR"
+f1_keywords: ["LPCRECT", "POSITION"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LPCRECT data type [MFC]", "WPARAM data type [MFC]", "data types [MFC], MFC", "LRESULT [MFC]", "POSITION data type [MFC]", "UINT [MFC]", "LPVOID data type [MFC]", "COLORREF [MFC]", "LPCTSTR [MFC]", "LPSTR [MFC]", "DWORD operator [MFC]", "WORD data type [MFC]", "LPTSTR [MFC]", "BYTE data type (Windows)", "Long data type [MFC], Windows types", "Boolean data type [MFC], supported data types", "LPARAM data type [MFC]", "LPCSTR [MFC]"]
 ms.assetid: 8954848b-2c01-4a4f-abf5-ee55f6a05eeb
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Data Types (MFC)
 This topic lists the data types most commonly used in the Microsoft Foundation Class Library. Most of the data types are the same as those in the Platform Software Development Kit (SDK), while others are unique to MFC.  

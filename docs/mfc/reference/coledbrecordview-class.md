@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDBRecordView', 'AFXOLEDB/COleDBRecordView', 'AFXOLEDB/COleDBRecordView::COleDBRecordView', 'AFXOLEDB/COleDBRecordView::OnGetRowset', 'AFXOLEDB/COleDBRecordView::OnMove']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, OLE DB"
-  - "COleDBRecordView class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDBRecordView [MFC], COleDBRecordView", "COleDBRecordView [MFC], OnGetRowset", "COleDBRecordView [MFC], OnMove"]
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleDBRecordView Class
 A view that displays database records in controls.  

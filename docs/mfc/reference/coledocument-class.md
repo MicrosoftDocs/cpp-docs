@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDocument', 'AFXOLE/COleDocument', 'AFXOLE/COleDocument::COleDocument', 'AFXOLE/COleDocument::AddItem', 'AFXOLE/COleDocument::ApplyPrintDevice', 'AFXOLE/COleDocument::EnableCompoundFile', 'AFXOLE/COleDocument::GetInPlaceActiveItem', 'AFXOLE/COleDocument::GetNextClientItem', 'AFXOLE/COleDocument::GetNextItem', 'AFXOLE/COleDocument::GetNextServerItem', 'AFXOLE/COleDocument::GetPrimarySelectedItem', 'AFXOLE/COleDocument::GetStartPosition', 'AFXOLE/COleDocument::HasBlankItems', 'AFXOLE/COleDocument::OnShowViews', 'AFXOLE/COleDocument::RemoveItem', 'AFXOLE/COleDocument::UpdateModifiedFlag', 'AFXOLE/COleDocument::OnEditChangeIcon', 'AFXOLE/COleDocument::OnEditConvert', 'AFXOLE/COleDocument::OnEditLinks', 'AFXOLE/COleDocument::OnFileSendMail', 'AFXOLE/COleDocument::OnUpdateEditChangeIcon', 'AFXOLE/COleDocument::OnUpdateEditLinksMenu', 'AFXOLE/COleDocument::OnUpdateObjectVerbMenu', 'AFXOLE/COleDocument::OnUpdatePasteLinkMenu', 'AFXOLE/COleDocument::OnUpdatePasteMenu']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleDocument class"
-  - "OLE documents, base class"
-  - "OLE containers, client items"
-  - "visual editing, OLE document base class"
-  - "OLE documents"
-  - "documents, OLE"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDocument [MFC], COleDocument", "COleDocument [MFC], AddItem", "COleDocument [MFC], ApplyPrintDevice", "COleDocument [MFC], EnableCompoundFile", "COleDocument [MFC], GetInPlaceActiveItem", "COleDocument [MFC], GetNextClientItem", "COleDocument [MFC], GetNextItem", "COleDocument [MFC], GetNextServerItem", "COleDocument [MFC], GetPrimarySelectedItem", "COleDocument [MFC], GetStartPosition", "COleDocument [MFC], HasBlankItems", "COleDocument [MFC], OnShowViews", "COleDocument [MFC], RemoveItem", "COleDocument [MFC], UpdateModifiedFlag", "COleDocument [MFC], OnEditChangeIcon", "COleDocument [MFC], OnEditConvert", "COleDocument [MFC], OnEditLinks", "COleDocument [MFC], OnFileSendMail", "COleDocument [MFC], OnUpdateEditChangeIcon", "COleDocument [MFC], OnUpdateEditLinksMenu", "COleDocument [MFC], OnUpdateObjectVerbMenu", "COleDocument [MFC], OnUpdatePasteLinkMenu", "COleDocument [MFC], OnUpdatePasteMenu"]
 ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleDocument Class
 The base class for OLE documents that support visual editing.  

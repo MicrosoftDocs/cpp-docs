@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "converting exceptions"
-  - "exception objects"
-  - "conversions, code written with MFC macros"
-  - "keywords [C++], macros"
-  - "macros, C++ keywords"
-  - "exception objects, deleting"
-  - "CException class, deleting CException class objects"
-  - "exceptions, converting"
-  - "exceptions, deleting exception objects"
-  - "catch blocks, delimiting"
-  - "exception handling, converting exceptions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["converting exceptions [MFC]", "exception objects [MFC]", "conversions [MFC], code written with MFC macros", "keywords [MFC], macros", "macrosv, C++ keywords", "exception objects [MFC], deleting", "CException class [MFC], deleting CException class objects", "exceptions [MFC], converting", "exceptions [MFC], deleting exception objects", "catch blocks [MFC], delimiting", "exception handling [MFC], converting exceptions"]
 ms.assetid: bd3ac3b3-f3ce-4fdd-a168-a2cff13ed796
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Exceptions: Converting from MFC Exception Macros
 This is an advanced topic.  

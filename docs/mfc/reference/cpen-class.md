@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPen', 'AFXWIN/CPen', 'AFXWIN/CPen::CPen', 'AFXWIN/CPen::CreatePen', 'AFXWIN/CPen::CreatePenIndirect', 'AFXWIN/CPen::FromHandle', 'AFXWIN/CPen::GetExtLogPen', 'AFXWIN/CPen::GetLogPen']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "HPEN"
-  - "CPen class"
-  - "pens, MFC"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPen [MFC], CPen", "CPen [MFC], CreatePen", "CPen [MFC], CreatePenIndirect", "CPen [MFC], FromHandle", "CPen [MFC], GetExtLogPen", "CPen [MFC], GetLogPen"]
 ms.assetid: 93175a3a-d46c-4768-be8d-863254f97a5f
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPen Class
 Encapsulates a Windows graphics device interface (GDI) pen.  

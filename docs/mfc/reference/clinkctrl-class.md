@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CLinkCtrl', 'AFXCMN/CLinkCtrl', 'AFXCMN/CLinkCtrl::CLinkCtrl', 'AFXCMN/CLinkCtrl::Create', 'AFXCMN/CLinkCtrl::CreateEx', 'AFXCMN/CLinkCtrl::GetIdealHeight', 'AFXCMN/CLinkCtrl::GetIdealSize', 'AFXCMN/CLinkCtrl::GetItem', 'AFXCMN/CLinkCtrl::GetItemID', 'AFXCMN/CLinkCtrl::GetItemState', 'AFXCMN/CLinkCtrl::GetItemUrl', 'AFXCMN/CLinkCtrl::HitTest', 'AFXCMN/CLinkCtrl::SetItem', 'AFXCMN/CLinkCtrl::SetItemID', 'AFXCMN/CLinkCtrl::SetItemState', 'AFXCMN/CLinkCtrl::SetItemUrl']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CLinkCtrl class"
-  - "Web pages, link control"
-  - "controls [MFC], links"
-  - "links [C++], link control"
-  - "SysLink control"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CLinkCtrl [MFC], CLinkCtrl", "CLinkCtrl [MFC], Create", "CLinkCtrl [MFC], CreateEx", "CLinkCtrl [MFC], GetIdealHeight", "CLinkCtrl [MFC], GetIdealSize", "CLinkCtrl [MFC], GetItem", "CLinkCtrl [MFC], GetItemID", "CLinkCtrl [MFC], GetItemState", "CLinkCtrl [MFC], GetItemUrl", "CLinkCtrl [MFC], HitTest", "CLinkCtrl [MFC], SetItem", "CLinkCtrl [MFC], SetItemID", "CLinkCtrl [MFC], SetItemState", "CLinkCtrl [MFC], SetItemUrl"]
 ms.assetid: d1cd876a-ecca-42db-8ac4-9cd327df0cd4
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CLinkCtrl Class
 Provides the functionality of the Windows common SysLink control.  

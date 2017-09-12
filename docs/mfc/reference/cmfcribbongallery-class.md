@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonGallery', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::CMFCRibbonGallery', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::AddGroup', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::AddSubItem', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::Clear', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::EnableMenuResize', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::EnableMenuSideBar', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetCompactSize', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetDroppedDown', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetGroupName', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetGroupOffset', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetIconsInRow', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetItemToolTip', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetLastSelectedItem', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetPaletteID', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetRegularSize', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetSelectedItem', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::HasMenu', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::IsButtonMode', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::IsMenuResizeEnabled', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::IsMenuResizeVertical', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::IsMenuSideBar', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnAfterChangeRect', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnDraw', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnEnable', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnRTLChanged', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::RedrawIcons', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::RemoveItemToolTips', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SelectItem', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetACCData', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetButtonMode', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetGroupName', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetIconsInRow', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetItemToolTip', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetPalette', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetPaletteID', 'AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnDrawPaletteIcon']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonGallery class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonGallery [MFC], CMFCRibbonGallery", "CMFCRibbonGallery [MFC], AddGroup", "CMFCRibbonGallery [MFC], AddSubItem", "CMFCRibbonGallery [MFC], Clear", "CMFCRibbonGallery [MFC], EnableMenuResize", "CMFCRibbonGallery [MFC], EnableMenuSideBar", "CMFCRibbonGallery [MFC], GetCompactSize", "CMFCRibbonGallery [MFC], GetDroppedDown", "CMFCRibbonGallery [MFC], GetGroupName", "CMFCRibbonGallery [MFC], GetGroupOffset", "CMFCRibbonGallery [MFC], GetIconsInRow", "CMFCRibbonGallery [MFC], GetItemToolTip", "CMFCRibbonGallery [MFC], GetLastSelectedItem", "CMFCRibbonGallery [MFC], GetPaletteID", "CMFCRibbonGallery [MFC], GetRegularSize", "CMFCRibbonGallery [MFC], GetSelectedItem", "CMFCRibbonGallery [MFC], HasMenu", "CMFCRibbonGallery [MFC], IsButtonMode", "CMFCRibbonGallery [MFC], IsMenuResizeEnabled", "CMFCRibbonGallery [MFC], IsMenuResizeVertical", "CMFCRibbonGallery [MFC], IsMenuSideBar", "CMFCRibbonGallery [MFC], OnAfterChangeRect", "CMFCRibbonGallery [MFC], OnDraw", "CMFCRibbonGallery [MFC], OnEnable", "CMFCRibbonGallery [MFC], OnRTLChanged", "CMFCRibbonGallery [MFC], RedrawIcons", "CMFCRibbonGallery [MFC], RemoveItemToolTips", "CMFCRibbonGallery [MFC], SelectItem", "CMFCRibbonGallery [MFC], SetACCData", "CMFCRibbonGallery [MFC], SetButtonMode", "CMFCRibbonGallery [MFC], SetGroupName", "CMFCRibbonGallery [MFC], SetIconsInRow", "CMFCRibbonGallery [MFC], SetItemToolTip", "CMFCRibbonGallery [MFC], SetPalette", "CMFCRibbonGallery [MFC], SetPaletteID", "CMFCRibbonGallery [MFC], OnDrawPaletteIcon"]
 ms.assetid: 9734c9c9-981c-4b3f-8c59-264fd41811b4
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCRibbonGallery Class
 Implements Office 2007-style ribbon galleries.  

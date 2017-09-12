@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPaneContainerManager', 'AFXPANECONTAINERMANAGER/CPaneContainerManager', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPaneContainerManager', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPaneContainerManagerToDockablePane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPanesToList', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPaneToList', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPaneToRecentPaneContainer', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::CalcRects', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::CanBeAttached', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::CheckAndRemoveNonValidPane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::CheckForMiniFrameAndCaption', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::Create', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::DoesAllowDynInsertBefore', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::DoesContainFloatingPane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::EnableGrippers', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::FindPaneContainer', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::FindTabbedPane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetAvailableSpace', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetDefaultPaneDivider', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetDockSiteFrameWnd', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetFirstPane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetFirstVisiblePane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetMinMaxOffset', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetMinSize', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetNodeCount', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetPaneContainerRTC', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetPaneCount', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetTotalRefCount', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetVisiblePaneCount', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::GetWindowRect', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::HideAll', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::InsertPane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::IsAutoHideMode', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::IsEmpty', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::IsRootPaneContainerVisible', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::NotifyPaneDivider', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::OnPaneDividerMove', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::OnShowPane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::PaneFromPoint', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::ReleaseEmptyPaneContainers', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::RemoveAllPanesAndPaneDividers', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::RemoveNonValidPanes', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::RemovePaneDivider', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::RemovePaneFromPaneContainer', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::ReplacePane', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::ResizePaneContainers', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::Serialize', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::SetDefaultPaneDividerForPanes', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::SetPaneContainerRTC', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::SetResizeMode', 'AFXPANECONTAINERMANAGER/CPaneContainerManager::StoreRecentDockSiteInfo']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPaneContainerManager class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPaneContainerManager [MFC], AddPane", "CPaneContainerManager [MFC], AddPaneContainerManager", "CPaneContainerManager [MFC], AddPaneContainerManagerToDockablePane", "CPaneContainerManager [MFC], AddPanesToList", "CPaneContainerManager [MFC], AddPaneToList", "CPaneContainerManager [MFC], AddPaneToRecentPaneContainer", "CPaneContainerManager [MFC], CalcRects", "CPaneContainerManager [MFC], CanBeAttached", "CPaneContainerManager [MFC], CheckAndRemoveNonValidPane", "CPaneContainerManager [MFC], CheckForMiniFrameAndCaption", "CPaneContainerManager [MFC], Create", "CPaneContainerManager [MFC], DoesAllowDynInsertBefore", "CPaneContainerManager [MFC], DoesContainFloatingPane", "CPaneContainerManager [MFC], EnableGrippers", "CPaneContainerManager [MFC], FindPaneContainer", "CPaneContainerManager [MFC], FindTabbedPane", "CPaneContainerManager [MFC], GetAvailableSpace", "CPaneContainerManager [MFC], GetDefaultPaneDivider", "CPaneContainerManager [MFC], GetDockSiteFrameWnd", "CPaneContainerManager [MFC], GetFirstPane", "CPaneContainerManager [MFC], GetFirstVisiblePane", "CPaneContainerManager [MFC], GetMinMaxOffset", "CPaneContainerManager [MFC], GetMinSize", "CPaneContainerManager [MFC], GetNodeCount", "CPaneContainerManager [MFC], GetPaneContainerRTC", "CPaneContainerManager [MFC], GetPaneCount", "CPaneContainerManager [MFC], GetTotalRefCount", "CPaneContainerManager [MFC], GetVisiblePaneCount", "CPaneContainerManager [MFC], GetWindowRect", "CPaneContainerManager [MFC], HideAll", "CPaneContainerManager [MFC], InsertPane", "CPaneContainerManager [MFC], IsAutoHideMode", "CPaneContainerManager [MFC], IsEmpty", "CPaneContainerManager [MFC], IsRootPaneContainerVisible", "CPaneContainerManager [MFC], NotifyPaneDivider", "CPaneContainerManager [MFC], OnPaneDividerMove", "CPaneContainerManager [MFC], OnShowPane", "CPaneContainerManager [MFC], PaneFromPoint", "CPaneContainerManager [MFC], ReleaseEmptyPaneContainers", "CPaneContainerManager [MFC], RemoveAllPanesAndPaneDividers", "CPaneContainerManager [MFC], RemoveNonValidPanes", "CPaneContainerManager [MFC], RemovePaneDivider", "CPaneContainerManager [MFC], RemovePaneFromPaneContainer", "CPaneContainerManager [MFC], ReplacePane", "CPaneContainerManager [MFC], ResizePaneContainers", "CPaneContainerManager [MFC], Serialize", "CPaneContainerManager [MFC], SetDefaultPaneDividerForPanes", "CPaneContainerManager [MFC], SetPaneContainerRTC", "CPaneContainerManager [MFC], SetResizeMode", "CPaneContainerManager [MFC], StoreRecentDockSiteInfo"]
 ms.assetid: 3d974c15-a62f-4648-bb5b-cc31ab7950af
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPaneContainerManager Class
 The `CPaneContainerManager` class manages the storage and display of the current docking layout.  

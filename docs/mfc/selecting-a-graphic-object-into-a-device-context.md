@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "graphic objects, selecting into device context"
-  - "SelectObject method"
-  - "GDI objects [C++], device contexts"
-  - "lifetime, graphic objects"
-  - "device contexts, selecting graphic objects into"
-  - "device contexts, graphic objects"
+dev_langs: ["C++"]
+helpviewer_keywords: ["graphic objects [MFC], selecting into device context", "SelectObject method [MFC]", "GDI objects [MFC], device contexts", "lifetime, graphic objects [MFC]", "device contexts, selecting graphic objects into", "device contexts, graphic objects [MFC]"]
 ms.assetid: cf54a330-63ef-421f-83eb-90ec7bd82eef
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Selecting a Graphic Object into a Device Context
 This topic applies to using graphic objects in a window's device context. After you [create a drawing object](../mfc/one-stage-and-two-stage-construction-of-objects.md), you must select it into the device context in place of the default object stored there:  

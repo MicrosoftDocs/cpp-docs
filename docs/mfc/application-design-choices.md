@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "design"
-  - "application design [C++], design goals"
-  - "application design [C++], Internet applications"
-  - "Internet applications [C++], designing applications"
-  - "Internet [C++], vs. intranets"
-  - "applications [MFC], Internet"
-  - "server applications, vs. client applications on Internet"
-  - "client applications [C++], vs. server applications on Internet"
+dev_langs: ["C++"]
+helpviewer_keywords: ["design", "application design [MFC], design goals", "application design [MFC], Internet applications", "Internet applications [MFC], designing applications", "Internet [MFC], vs. intranets", "applications [MFC], Internet", "server applications [MFC], vs. client applications on Internet", "client applications [MFC], vs. server applications on Internet"]
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Application Design Choices
 This article discusses some of the design issues to consider when programming for the Internet.  

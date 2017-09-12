@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IMarshall"
-  - "IMoniker"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC libraries, implementing"
-  - "OLE MFC library implementation"
-  - "OLE IMarshal interface"
-  - "IMoniker interface, MFC"
-  - "IMarshall class"
-  - "OLE, compound files"
-  - "OLE IMoniker interface"
-  - "OLE IUnknown"
+f1_keywords: ["IMarshall", "IMoniker"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC libraries, implementing", "OLE MFC library implementation", "OLE IMarshal interface", "IMoniker interface, MFC", "IMarshall class [MFC]", "OLE, compound files", "OLE IMoniker interface", "OLE IUnknown"]
 ms.assetid: 2b67016a-d78e-4d60-925f-c28ec8fb6180
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # OLE Background: MFC Implementation
 Because of the size and complexity of the raw OLE API, calling it directly to write OLE applications can be very time consuming. The goal of the Microsoft Foundation Class Library implementation of OLE is to reduce the amount of work you have to do to write full-featured, OLE-capable applications.  

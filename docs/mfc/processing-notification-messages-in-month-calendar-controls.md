@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMonthCalCtrl class, notifications"
-  - "CMonthCalCtrl class, day states"
-  - "month calendar controls, notification messages"
-  - "notifications, for CMonthCalCtrl"
-  - "notifications, month calendar control"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMonthCalCtrl class [MFC], notifications", "CMonthCalCtrl class [MFC], day states", "month calendar controls [MFC], notification messages", "notifications [MFC], for CMonthCalCtrl", "notifications [MFC], month calendar control"]
 ms.assetid: 607c3e90-0756-493b-9503-ce835a50c7ab
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Processing Notification Messages in Month Calendar Controls
 As users interact with the month calendar control (selecting dates and/or viewing a different month), the control (`CMonthCalCtrl`) sends notification messages to its parent window, usually a view or dialog object. Handle these messages if you want to do something in response. For example, when the user selects a new month to view, you could provide a set of dates that should be emphasized.  

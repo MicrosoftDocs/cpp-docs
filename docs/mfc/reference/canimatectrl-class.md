@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimateCtrl', 'AFXCMN/CAnimateCtrl', 'AFXCMN/CAnimateCtrl::CAnimateCtrl', 'AFXCMN/CAnimateCtrl::Close', 'AFXCMN/CAnimateCtrl::Create', 'AFXCMN/CAnimateCtrl::CreateEx', 'AFXCMN/CAnimateCtrl::IsPlaying', 'AFXCMN/CAnimateCtrl::Open', 'AFXCMN/CAnimateCtrl::Play', 'AFXCMN/CAnimateCtrl::Seek', 'AFXCMN/CAnimateCtrl::Stop']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "animation controls [C++], CAnimateCtrl class"
-  - "Windows common controls [C++], CAnimateCtrl class"
-  - "CAnimateCtrl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimateCtrl [MFC], CAnimateCtrl", "CAnimateCtrl [MFC], Close", "CAnimateCtrl [MFC], Create", "CAnimateCtrl [MFC], CreateEx", "CAnimateCtrl [MFC], IsPlaying", "CAnimateCtrl [MFC], Open", "CAnimateCtrl [MFC], Play", "CAnimateCtrl [MFC], Seek", "CAnimateCtrl [MFC], Stop"]
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CAnimateCtrl Class
 Provides the functionality of the Windows common animation control.  

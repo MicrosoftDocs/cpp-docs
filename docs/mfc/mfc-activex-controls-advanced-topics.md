@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX controls, error codes"
-  - "MFC ActiveX controls, accessing invisible dialog controls"
-  - "MFC ActiveX controls, advanced topics"
-  - "FireError method"
-  - "MFC ActiveX controls, database classes"
-  - "MFC ActiveX controls, special keys"
-  - "PreTranslateMessage method"
-  - "MFC ActiveX controls, parameterized property"
-  - "ThrowError method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "MFC ActiveX controls [MFC], accessing invisible dialog controls", "MFC ActiveX controls [MFC], advanced topics", "FireError method [MFC]", "MFC ActiveX controls [MFC], database classes", "MFC ActiveX controls [MFC], special keys", "PreTranslateMessage method [MFC]", "MFC ActiveX controls [MFC], parameterized property", "ThrowError method [MFC]"]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # MFC ActiveX Controls: Advanced Topics
 This article covers advanced topics related to developing ActiveX controls. These include:  

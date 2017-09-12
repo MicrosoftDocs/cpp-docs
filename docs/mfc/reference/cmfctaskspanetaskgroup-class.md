@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCTasksPaneTaskGroup', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::SetACCData', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsBottom', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsCollapsed', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsSpecial', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_lstTasks', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rect', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rectGroup', 'AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_strName']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCTasksPaneTaskGroup class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCTasksPaneTaskGroup [MFC], CMFCTasksPaneTaskGroup", "CMFCTasksPaneTaskGroup [MFC], SetACCData", "CMFCTasksPaneTaskGroup [MFC], m_bIsBottom", "CMFCTasksPaneTaskGroup [MFC], m_bIsCollapsed", "CMFCTasksPaneTaskGroup [MFC], m_bIsSpecial", "CMFCTasksPaneTaskGroup [MFC], m_lstTasks", "CMFCTasksPaneTaskGroup [MFC], m_rect", "CMFCTasksPaneTaskGroup [MFC], m_rectGroup", "CMFCTasksPaneTaskGroup [MFC], m_strName"]
 ms.assetid: 2111640b-a46e-4b27-b033-29e88632b86a
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCTasksPaneTaskGroup Class
 The `CMFCTasksPaneTaskGroup` class is a helper class used by the [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) control. Objects of type `CMFCTasksPaneTaskGroup` represent a *task group*. The task group is a list of items that the framework displays in a separate box that has a collapse button. The box can have an optional caption (group name). If a group is collapsed, the list of tasks is not visible.  

@@ -4,19 +4,11 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message maps, in document class"
-  - "command handling"
-  - "documents, message maps"
-  - "message handling, WM_COMMAND messages"
-  - "command handling, commands in documents"
-  - "documents, handling messages in"
+dev_langs: ["C++"]
+helpviewer_keywords: ["message maps [MFC]], in document class", "command handling [MFC]", "documents [MFC], message maps", "message handling [MFC], WM_COMMAND messages", "command handling [MFC], commands in documents", "documents [MFC], handling messages in"]
 ms.assetid: c7375584-27af-4275-b2fd-afea476785d0
 caps.latest.revision: 9
 author: "mikeblome"

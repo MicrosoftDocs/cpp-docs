@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDockSite', 'AFXDOCKSITE/CDockSite', 'AFXDOCKSITE/CDockSite::AddRow', 'AFXDOCKSITE/CDockSite::AdjustDockingLayout', 'AFXDOCKSITE/CDockSite::AdjustLayout', 'AFXDOCKSITE/CDockSite::AlignDockSite', 'AFXDOCKSITE/CDockSite::CalcFixedLayout', 'AFXDOCKSITE/CDockSite::CanAcceptPane', 'AFXDOCKSITE/CDockSite::CreateEx', 'AFXDOCKSITE/CDockSite::CreateRow', 'AFXDOCKSITE/CDockSite::DockPane', 'AFXDOCKSITE/CDockSite::DoesAllowDynInsertBefore', 'AFXDOCKSITE/CDockSite::FindRowIndex', 'AFXDOCKSITE/CDockSite::FixupVirtualRects', 'AFXDOCKSITE/CDockSite::GetDockSiteID', 'AFXDOCKSITE/CDockSite::GetDockSiteRowsList', 'AFXDOCKSITE/CDockSite::IsAccessibilityCompatible', 'AFXDOCKSITE/CDockSite::IsDragMode', 'AFXDOCKSITE/CDockSite::IsLastRow', 'AFXDOCKSITE/CDockSite::IsRectWithinDockSite', 'AFXDOCKSITE/CDockSite::IsResizable', 'AFXDOCKSITE/CDockSite::MovePane', 'AFXDOCKSITE/CDockSite::OnInsertRow', 'AFXDOCKSITE/CDockSite::OnRemoveRow', 'AFXDOCKSITE/CDockSite::OnResizeRow', 'AFXDOCKSITE/CDockSite::OnSetWindowPos', 'AFXDOCKSITE/CDockSite::OnShowRow', 'AFXDOCKSITE/CDockSite::OnSizeParent', 'AFXDOCKSITE/CDockSite::PaneFromPoint', 'AFXDOCKSITE/CDockSite::DockPaneLeftOf', 'AFXDOCKSITE/CDockSite::FindPaneByID', 'AFXDOCKSITE/CDockSite::GetPaneList', 'AFXDOCKSITE/CDockSite::RectSideFromPoint', 'AFXDOCKSITE/CDockSite::RemovePane', 'AFXDOCKSITE/CDockSite::RemoveRow', 'AFXDOCKSITE/CDockSite::ReplacePane', 'AFXDOCKSITE/CDockSite::RepositionPanes', 'AFXDOCKSITE/CDockSite::ResizeDockSite', 'AFXDOCKSITE/CDockSite::ResizeRow', 'AFXDOCKSITE/CDockSite::ShowPane', 'AFXDOCKSITE/CDockSite::ShowRow', 'AFXDOCKSITE/CDockSite::SwapRows']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDockSite class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDockSite [MFC], AddRow", "CDockSite [MFC], AdjustDockingLayout", "CDockSite [MFC], AdjustLayout", "CDockSite [MFC], AlignDockSite", "CDockSite [MFC], CalcFixedLayout", "CDockSite [MFC], CanAcceptPane", "CDockSite [MFC], CreateEx", "CDockSite [MFC], CreateRow", "CDockSite [MFC], DockPane", "CDockSite [MFC], DoesAllowDynInsertBefore", "CDockSite [MFC], FindRowIndex", "CDockSite [MFC], FixupVirtualRects", "CDockSite [MFC], GetDockSiteID", "CDockSite [MFC], GetDockSiteRowsList", "CDockSite [MFC], IsAccessibilityCompatible", "CDockSite [MFC], IsDragMode", "CDockSite [MFC], IsLastRow", "CDockSite [MFC], IsRectWithinDockSite", "CDockSite [MFC], IsResizable", "CDockSite [MFC], MovePane", "CDockSite [MFC], OnInsertRow", "CDockSite [MFC], OnRemoveRow", "CDockSite [MFC], OnResizeRow", "CDockSite [MFC], OnSetWindowPos", "CDockSite [MFC], OnShowRow", "CDockSite [MFC], OnSizeParent", "CDockSite [MFC], PaneFromPoint", "CDockSite [MFC], DockPaneLeftOf", "CDockSite [MFC], FindPaneByID", "CDockSite [MFC], GetPaneList", "CDockSite [MFC], RectSideFromPoint", "CDockSite [MFC], RemovePane", "CDockSite [MFC], RemoveRow", "CDockSite [MFC], ReplacePane", "CDockSite [MFC], RepositionPanes", "CDockSite [MFC], ResizeDockSite", "CDockSite [MFC], ResizeRow", "CDockSite [MFC], ShowPane", "CDockSite [MFC], ShowRow", "CDockSite [MFC], SwapRows"]
 ms.assetid: 0fcfff79-5f50-4281-b2de-a55653bbea40
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDockSite Class
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

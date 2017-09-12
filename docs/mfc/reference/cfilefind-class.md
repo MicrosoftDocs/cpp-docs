@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFileFind', 'AFX/CFileFind', 'AFX/CFileFind::CFileFind', 'AFX/CFileFind::Close', 'AFX/CFileFind::FindFile', 'AFX/CFileFind::FindNextFile', 'AFX/CFileFind::GetCreationTime', 'AFX/CFileFind::GetFileName', 'AFX/CFileFind::GetFilePath', 'AFX/CFileFind::GetFileTitle', 'AFX/CFileFind::GetFileURL', 'AFX/CFileFind::GetLastAccessTime', 'AFX/CFileFind::GetLastWriteTime', 'AFX/CFileFind::GetLength', 'AFX/CFileFind::GetRoot', 'AFX/CFileFind::IsArchived', 'AFX/CFileFind::IsCompressed', 'AFX/CFileFind::IsDirectory', 'AFX/CFileFind::IsDots', 'AFX/CFileFind::IsHidden', 'AFX/CFileFind::IsNormal', 'AFX/CFileFind::IsReadOnly', 'AFX/CFileFind::IsSystem', 'AFX/CFileFind::IsTemporary', 'AFX/CFileFind::MatchesMask', 'AFX/CFileFind::CloseContext', 'AFX/CFileFind::m_pTM']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++], finding"
-  - "Internet files [C++], finding"
-  - "CFileFind class"
-  - "URLs [C++], searching for"
-  - "local files"
-  - "local files, searching for"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFileFind [MFC], CFileFind", "CFileFind [MFC], Close", "CFileFind [MFC], FindFile", "CFileFind [MFC], FindNextFile", "CFileFind [MFC], GetCreationTime", "CFileFind [MFC], GetFileName", "CFileFind [MFC], GetFilePath", "CFileFind [MFC], GetFileTitle", "CFileFind [MFC], GetFileURL", "CFileFind [MFC], GetLastAccessTime", "CFileFind [MFC], GetLastWriteTime", "CFileFind [MFC], GetLength", "CFileFind [MFC], GetRoot", "CFileFind [MFC], IsArchived", "CFileFind [MFC], IsCompressed", "CFileFind [MFC], IsDirectory", "CFileFind [MFC], IsDots", "CFileFind [MFC], IsHidden", "CFileFind [MFC], IsNormal", "CFileFind [MFC], IsReadOnly", "CFileFind [MFC], IsSystem", "CFileFind [MFC], IsTemporary", "CFileFind [MFC], MatchesMask", "CFileFind [MFC], CloseContext", "CFileFind [MFC], m_pTM"]
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CFileFind Class
 Performs local file searches and is the base class for [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) and [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md), which perform Internet file searches.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DBrushProperties', 'AFXRENDERTARGET/CD2DBrushProperties', 'AFXRENDERTARGET/CD2DBrushProperties::CD2DBrushProperties', 'AFXRENDERTARGET/CD2DBrushProperties::CommonInit']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DBrushProperties class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DBrushProperties [MFC], CD2DBrushProperties", "CD2DBrushProperties [MFC], CommonInit"]
 ms.assetid: c77d717f-0a16-4d74-b2ce-0ae1766ed6f9
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CD2DBrushProperties Class
 A wrapper for `D2D1_BRUSH_PROPERTIES`.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCustomInterpolator', 'AFXANIMATIONCONTROLLER/CCustomInterpolator', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::CCustomInterpolator', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::GetDependencies', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::GetDuration', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::GetFinalValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::Init', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::InterpolateValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::InterpolateVelocity', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::SetDuration', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::SetInitialValueAndVelocity', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_currentValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_currentVelocity', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_duration', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_finalValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialValue', 'AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialVelocity']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CCustomInterpolator class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCustomInterpolator [MFC], CCustomInterpolator", "CCustomInterpolator [MFC], GetDependencies", "CCustomInterpolator [MFC], GetDuration", "CCustomInterpolator [MFC], GetFinalValue", "CCustomInterpolator [MFC], Init", "CCustomInterpolator [MFC], InterpolateValue", "CCustomInterpolator [MFC], InterpolateVelocity", "CCustomInterpolator [MFC], SetDuration", "CCustomInterpolator [MFC], SetInitialValueAndVelocity", "CCustomInterpolator [MFC], m_currentValue", "CCustomInterpolator [MFC], m_currentVelocity", "CCustomInterpolator [MFC], m_duration", "CCustomInterpolator [MFC], m_finalValue", "CCustomInterpolator [MFC], m_initialValue", "CCustomInterpolator [MFC], m_initialVelocity"]
 ms.assetid: 28d85595-989a-40a3-b003-e0e38437a94d
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CCustomInterpolator Class
 Implements a basic interpolator.  

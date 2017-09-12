@@ -4,53 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MDI [C++], creating windows"
-  - "window objects [C++], creating"
-  - "objects [C++], creating document objects"
-  - "MFC default objects"
-  - "frame windows [C++], creating"
-  - "windows [C++], MDI"
-  - "MFC [C++], documents"
-  - "view objects, creating"
-  - "windows [C++], creating"
-  - "overriding, default view behavior"
-  - "views [C++], initializing"
-  - "customizing MFC default objects"
-  - "MFC [C++], frame windows"
-  - "MFC [C++], views"
-  - "MDI [C++], frame windows"
-  - "child windows, creating MDI"
-  - "view objects"
-  - "document objects, creating"
-  - "MFC default objects, customizing"
-  - "views [C++], overriding default behavior"
-  - "initializing views"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MDI [MFC], creating windows", "window objects [MFC], creating", "objects [MFC], creating document objects", "MFC default objects", "frame windows [MFC], creating", "windows [MFC], MDI", "MFC, documents", "view objects [MFC], creating", "windows [MFC], creating", "overriding, default view behavior", "views [MFC], initializing", "customizing MFC default objects", "MFC, frame windows", "MFC, views", "MDI [MFC], frame windows", "child windows [MFC], creating MDI", "view objects [MFC]", "document objects [MFC], creating", "MFC default objects [MFC], customizing", "views [MFC], overriding default behavior", "initializing views [MFC]"]
 ms.assetid: 88aa1f5f-2078-4603-b16b-a2b4c7b4a2a3
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Creating New Documents, Windows, and Views
 The following figures give an overview of the creation process for documents, views, and frame windows. Other articles that focus on the participating objects provide further details.  

@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CGopherConnection', 'AFXINET/CGopherConnection', 'AFXINET/CGopherConnection::CGopherConnection', 'AFXINET/CGopherConnection::CreateLocator', 'AFXINET/CGopherConnection::GetAttribute', 'AFXINET/CGopherConnection::OpenFile']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "servers, connecting to"
-  - "Internet server, gopher"
-  - "connecting to servers, gopher servers"
-  - "protocols, gopher"
-  - "services, gopher"
-  - "CGopherConnection class"
-  - "gopher protocol"
-  - "gopher server"
-  - "connecting to servers"
-  - "Internet connections, gopher"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CGopherConnection [MFC], CGopherConnection", "CGopherConnection [MFC], CreateLocator", "CGopherConnection [MFC], GetAttribute", "CGopherConnection [MFC], OpenFile"]
 ms.assetid: b5b96aea-ac99-430e-bd84-d1372b43f78f
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CGopherConnection Class
 Manages your connection to a gopher Internet server.  

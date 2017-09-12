@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCPropertyGridColorProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableAutomaticButton', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableOtherButton', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::GetColor', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColor', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColumnsNumber', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetOriginalValue']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCPropertyGridColorProperty class"
-  - "CMFCPropertyGridColorProperty::OnClickButton method"
-  - "CMFCPropertyGridColorProperty::FormatProperty method"
-  - "CMFCPropertyGridColorProperty::OnDrawValue method"
-  - "CMFCPropertyGridColorProperty::OnUpdateValue method"
-  - "CMFCPropertyGridColorProperty::OnEdit method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCPropertyGridColorProperty [MFC], CMFCPropertyGridColorProperty", "CMFCPropertyGridColorProperty [MFC], EnableAutomaticButton", "CMFCPropertyGridColorProperty [MFC], EnableOtherButton", "CMFCPropertyGridColorProperty [MFC], GetColor", "CMFCPropertyGridColorProperty [MFC], SetColor", "CMFCPropertyGridColorProperty [MFC], SetColumnsNumber", "CMFCPropertyGridColorProperty [MFC], SetOriginalValue"]
 ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCPropertyGridColorProperty Class
 The `CMFCPropertyGridColorProperty` class supports a property list control item that opens a color selection dialog box.  

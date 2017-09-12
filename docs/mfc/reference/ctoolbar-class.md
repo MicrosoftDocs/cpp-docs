@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CToolBar', 'AFXEXT/CToolBar', 'AFXEXT/CToolBar::CToolBar', 'AFXEXT/CToolBar::CommandToIndex', 'AFXEXT/CToolBar::Create', 'AFXEXT/CToolBar::CreateEx', 'AFXEXT/CToolBar::GetButtonInfo', 'AFXEXT/CToolBar::GetButtonStyle', 'AFXEXT/CToolBar::GetButtonText', 'AFXEXT/CToolBar::GetItemID', 'AFXEXT/CToolBar::GetItemRect', 'AFXEXT/CToolBar::GetToolBarCtrl', 'AFXEXT/CToolBar::LoadBitmap', 'AFXEXT/CToolBar::LoadToolBar', 'AFXEXT/CToolBar::SetBitmap', 'AFXEXT/CToolBar::SetButtonInfo', 'AFXEXT/CToolBar::SetButtons', 'AFXEXT/CToolBar::SetButtonStyle', 'AFXEXT/CToolBar::SetButtonText', 'AFXEXT/CToolBar::SetHeight', 'AFXEXT/CToolBar::SetSizes']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows toolbar common controls [C++]"
-  - "control bars [C++], CToolBar class"
-  - "toolbars [C++], CToolBar class"
-  - "buttons [C++], MFC toolbars"
-  - "bitmaps [C++], button controls"
-  - "CToolBar class"
-  - "Windows common controls [C++], CToolBar class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CToolBar [MFC], CToolBar", "CToolBar [MFC], CommandToIndex", "CToolBar [MFC], Create", "CToolBar [MFC], CreateEx", "CToolBar [MFC], GetButtonInfo", "CToolBar [MFC], GetButtonStyle", "CToolBar [MFC], GetButtonText", "CToolBar [MFC], GetItemID", "CToolBar [MFC], GetItemRect", "CToolBar [MFC], GetToolBarCtrl", "CToolBar [MFC], LoadBitmap", "CToolBar [MFC], LoadToolBar", "CToolBar [MFC], SetBitmap", "CToolBar [MFC], SetButtonInfo", "CToolBar [MFC], SetButtons", "CToolBar [MFC], SetButtonStyle", "CToolBar [MFC], SetButtonText", "CToolBar [MFC], SetHeight", "CToolBar [MFC], SetSizes"]
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CToolBar Class
 Control bars that have a row of bitmapped buttons and optional separators.  

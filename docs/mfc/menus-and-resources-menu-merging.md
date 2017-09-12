@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "status bars, OLE document applications"
-  - "visual editing, application menus and resources"
-  - "coordinating menu layouts"
-  - "OLE containers, menus and resources"
-  - "toolbars [C++], OLE document applications"
-  - "merging toolbar and status bar"
-  - "menus [C++], OLE document applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["status bars [MFC], OLE document applications", "visual editing [MFC], application menus and resources", "coordinating menu layouts [MFC]", "OLE containers [MFC], menus and resources", "toolbars [MFC], OLE document applications", "merging toolbar and status bar [MFC]", "menus [MFC], OLE document applications"]
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Menus and Resources: Menu Merging
 This article details the steps necessary for OLE document applications to handle visual editing and in-place activation properly. In-place activation poses a challenge for both container and server (component) applications. The user remains in the same frame window (within the context of the container document) but is actually running another application (the server). This requires coordination between the resources of the container and server applications.  

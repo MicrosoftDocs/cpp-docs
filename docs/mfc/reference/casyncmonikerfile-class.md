@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAsyncMonikerFile', 'AFXOLE/CAsyncMonikerFile', 'AFXOLE/CAsyncMonikerFile::CAsyncMonikerFile', 'AFXOLE/CAsyncMonikerFile::Close', 'AFXOLE/CAsyncMonikerFile::GetBinding', 'AFXOLE/CAsyncMonikerFile::GetFormatEtc', 'AFXOLE/CAsyncMonikerFile::Open', 'AFXOLE/CAsyncMonikerFile::CreateBindStatusCallback', 'AFXOLE/CAsyncMonikerFile::GetBindInfo', 'AFXOLE/CAsyncMonikerFile::GetPriority', 'AFXOLE/CAsyncMonikerFile::OnDataAvailable', 'AFXOLE/CAsyncMonikerFile::OnLowResource', 'AFXOLE/CAsyncMonikerFile::OnProgress', 'AFXOLE/CAsyncMonikerFile::OnStartBinding', 'AFXOLE/CAsyncMonikerFile::OnStopBinding']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX controls [C++], asynchronous"
-  - "OLE controls [C++], asynchronous"
-  - "monikers [C++], MFC"
-  - "asynchronous controls [C++]"
-  - "CAsyncMonikerFile class"
-  - "IMoniker interface, binding"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAsyncMonikerFile [MFC], CAsyncMonikerFile", "CAsyncMonikerFile [MFC], Close", "CAsyncMonikerFile [MFC], GetBinding", "CAsyncMonikerFile [MFC], GetFormatEtc", "CAsyncMonikerFile [MFC], Open", "CAsyncMonikerFile [MFC], CreateBindStatusCallback", "CAsyncMonikerFile [MFC], GetBindInfo", "CAsyncMonikerFile [MFC], GetPriority", "CAsyncMonikerFile [MFC], OnDataAvailable", "CAsyncMonikerFile [MFC], OnLowResource", "CAsyncMonikerFile [MFC], OnProgress", "CAsyncMonikerFile [MFC], OnStartBinding", "CAsyncMonikerFile [MFC], OnStopBinding"]
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CAsyncMonikerFile Class
 Provides functionality for the use of asynchronous monikers in ActiveX controls (formerly OLE controls).  

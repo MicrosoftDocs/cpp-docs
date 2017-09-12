@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CUserTool', 'AFXUSERTOOL/CUserTool', 'AFXUSERTOOL/CUserTool::CopyIconToClipboard', 'AFXUSERTOOL/CUserTool::DrawToolIcon', 'AFXUSERTOOL/CUserTool::GetCommand', 'AFXUSERTOOL/CUserTool::GetCommandId', 'AFXUSERTOOL/CUserTool::Invoke', 'AFXUSERTOOL/CUserTool::Serialize', 'AFXUSERTOOL/CUserTool::SetCommand', 'AFXUSERTOOL/CUserTool::SetToolIcon', 'AFXUSERTOOL/CUserTool::LoadDefaultIcon', 'AFXUSERTOOL/CUserTool::m_strArguments', 'AFXUSERTOOL/CUserTool::m_strInitialDirectory', 'AFXUSERTOOL/CUserTool::m_strLabel']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CUserTool class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CUserTool [MFC], CopyIconToClipboard", "CUserTool [MFC], DrawToolIcon", "CUserTool [MFC], GetCommand", "CUserTool [MFC], GetCommandId", "CUserTool [MFC], Invoke", "CUserTool [MFC], Serialize", "CUserTool [MFC], SetCommand", "CUserTool [MFC], SetToolIcon", "CUserTool [MFC], LoadDefaultIcon", "CUserTool [MFC], m_strArguments", "CUserTool [MFC], m_strInitialDirectory", "CUserTool [MFC], m_strLabel"]
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CUserTool Class
 A user tool is a menu item that runs an external application. The **Tools** tab of the **Customize** dialog box ( [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) enables the user to add user tools, and to specify the name, command, arguments, and initial directory for each user tool.  

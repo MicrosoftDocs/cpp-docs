@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMonikerFile', 'AFXOLE/CMonikerFile', 'AFXOLE/CMonikerFile::CMonikerFile', 'AFXOLE/CMonikerFile::Close', 'AFXOLE/CMonikerFile::Detach', 'AFXOLE/CMonikerFile::GetMoniker', 'AFXOLE/CMonikerFile::Open', 'AFXOLE/CMonikerFile::CreateBindContext']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMonikerFile class"
-  - "monikers, MFC"
-  - "IMoniker interface, binding"
-  - "IMoniker interface"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMonikerFile [MFC], CMonikerFile", "CMonikerFile [MFC], Close", "CMonikerFile [MFC], Detach", "CMonikerFile [MFC], GetMoniker", "CMonikerFile [MFC], Open", "CMonikerFile [MFC], CreateBindContext"]
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMonikerFile Class
 Represents a stream of data ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)) named by an [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705).  

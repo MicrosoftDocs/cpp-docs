@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDumpContext', 'AFX/CDumpContext', 'AFX/CDumpContext::CDumpContext', 'AFX/CDumpContext::DumpAsHex', 'AFX/CDumpContext::Flush', 'AFX/CDumpContext::GetDepth', 'AFX/CDumpContext::HexDump', 'AFX/CDumpContext::SetDepth']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDumpContext class"
-  - "AfxDump object"
-  - "diagnostics, diagnostic classes"
-  - "diagnostic classes"
-  - "diagnosis, diagnostic classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDumpContext [MFC], CDumpContext", "CDumpContext [MFC], DumpAsHex", "CDumpContext [MFC], Flush", "CDumpContext [MFC], GetDepth", "CDumpContext [MFC], HexDump", "CDumpContext [MFC], SetDepth"]
 ms.assetid: 98c52b2d-14b5-48ed-b423-479a4d1c60fa
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDumpContext Class
 Supports stream-oriented diagnostic output in the form of human-readable text.  

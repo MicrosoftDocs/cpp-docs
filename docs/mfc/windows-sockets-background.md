@@ -4,47 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "record-oriented data [C++]"
-  - "e-mail [C++]"
-  - "Internet Protocol Suite"
-  - "mail [C++]"
-  - "communications [C++], domain"
-  - "Windows Sockets [C++], stream sockets"
-  - "mail [C++], programming for"
-  - "sockets [C++], stream sockets"
-  - "datagram sockets [C++]"
-  - "SOCKET handle"
-  - "data types [C++], socket"
-  - "e-mail [C++], programming for"
-  - "X Window servers"
-  - "sequenced data flow"
-  - "stream sockets [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["record-oriented data [MFC]", "e-mail [MFC]", "Internet Protocol Suite", "mail [MFC]", "communications [MFC], domain", "Windows Sockets [MFC], stream sockets", "mail [MFC], programming for", "sockets [MFC], stream sockets", "datagram sockets [MFC]", "SOCKET handle", "data types [MFC], socket", "e-mail [MFC], programming for", "X Window servers", "sequenced data flow", "stream sockets [MFC]"]
 ms.assetid: f60d4ed2-bf23-4a0e-98d2-fee77e8473dd
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Windows Sockets: Background
 This article explains the nature and purpose of Windows Sockets. The article also:  

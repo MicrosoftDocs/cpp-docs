@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "application wizards [C++], and MFC"
-  - "MFC [C++], resource editors"
-  - "resource editors, MFC"
-  - "MFC Application Wizard"
-  - "editors, resource"
-  - "wizards [MFC]"
-  - "wizards [C++], MFC programming"
-  - "MFC [C++], wizards"
-  - "Class View tool, managing Windows messages"
+dev_langs: ["C++"]
+helpviewer_keywords: ["application wizards [MFC], and MFC", "MFC, resource editors", "resource editors, MFC", "MFC Application Wizard", "editors [MFC], resource", "wizards [MFC]", "wizards [MFC], MFC programming", "MFC, wizards", "Class View tool, managing Windows messages"]
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Wizards and the Resource Editors
 Visual C++ includes several wizards for use in MFC programming, along with many integrated resource editors. For ActiveX controls programming, the [ActiveX Control Wizard](../mfc/reference/mfc-activex-control-wizard.md) serves a purpose much like that of the MFC Application Wizard. While you can write MFC applications without most of these tools, the tools greatly simplify and speed your work.  

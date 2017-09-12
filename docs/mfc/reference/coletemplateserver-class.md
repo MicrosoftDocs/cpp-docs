@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleTemplateServer', 'AFXDISP/COleTemplateServer', 'AFXDISP/COleTemplateServer::COleTemplateServer', 'AFXDISP/COleTemplateServer::ConnectTemplate', 'AFXDISP/COleTemplateServer::Unregister', 'AFXDISP/COleTemplateServer::UpdateRegistry']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Automation servers [C++], implementing"
-  - "servers, OLE"
-  - "OLE server applications, managing server documents"
-  - "link containers [C++]"
-  - "visual editing, servers"
-  - "OLE link containers"
-  - "COleTemplateServer class"
-  - "OLE server applications, COleTemplateServer class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleTemplateServer [MFC], COleTemplateServer", "COleTemplateServer [MFC], ConnectTemplate", "COleTemplateServer [MFC], Unregister", "COleTemplateServer [MFC], UpdateRegistry"]
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleTemplateServer Class
 Used for OLE visual editing servers, automation servers, and link containers (applications that support links to embeddings).  

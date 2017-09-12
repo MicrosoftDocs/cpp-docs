@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CProgressCtrl class, working with"
-  - "progress controls [C++], manipulating"
-  - "CProgressCtrl class, manipulating"
-  - "controlling progress controls"
-  - "CProgressCtrl class, using"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CProgressCtrl class [MFC], working with", "progress controls [MFC], manipulating", "CProgressCtrl class [MFC], manipulating", "controlling progress controls [MFC]", "CProgressCtrl class [MFC], using"]
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Manipulating the Progress Control
 There are three ways to change the current position of a progress control ([CProgressCtrl](../mfc/reference/cprogressctrl-class.md)).  

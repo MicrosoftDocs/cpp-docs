@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCtrlView', 'AFXWIN/CCtrlView', 'AFXWIN/CCtrlView::CCtrlView', 'AFXWIN/CCtrlView::OnDraw', 'AFXWIN/CCtrlView::PreCreateWindow', 'AFXWIN/CCtrlView::m_dwDefaultStyle', 'AFXWIN/CCtrlView::m_strClass']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "views, and common controls"
-  - "controls [MFC], common"
-  - "CCtrlView class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCtrlView [MFC], CCtrlView", "CCtrlView [MFC], OnDraw", "CCtrlView [MFC], PreCreateWindow", "CCtrlView [MFC], m_dwDefaultStyle", "CCtrlView [MFC], m_strClass"]
 ms.assetid: ff488596-1e71-451f-8fec-b0831a7b44e0
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CCtrlView Class
 Adapts the document-view architecture to the common controls supported by Windows 98 and Windows NT versions 3.51 and later.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DGeometry', 'AFXRENDERTARGET/CD2DGeometry', 'AFXRENDERTARGET/CD2DGeometry::CD2DGeometry', 'AFXRENDERTARGET/CD2DGeometry::Attach', 'AFXRENDERTARGET/CD2DGeometry::CombineWithGeometry', 'AFXRENDERTARGET/CD2DGeometry::CompareWithGeometry', 'AFXRENDERTARGET/CD2DGeometry::ComputeArea', 'AFXRENDERTARGET/CD2DGeometry::ComputeLength', 'AFXRENDERTARGET/CD2DGeometry::ComputePointAtLength', 'AFXRENDERTARGET/CD2DGeometry::Destroy', 'AFXRENDERTARGET/CD2DGeometry::Detach', 'AFXRENDERTARGET/CD2DGeometry::FillContainsPoint', 'AFXRENDERTARGET/CD2DGeometry::Get', 'AFXRENDERTARGET/CD2DGeometry::GetBounds', 'AFXRENDERTARGET/CD2DGeometry::GetWidenedBounds', 'AFXRENDERTARGET/CD2DGeometry::IsValid', 'AFXRENDERTARGET/CD2DGeometry::Outline', 'AFXRENDERTARGET/CD2DGeometry::Simplify', 'AFXRENDERTARGET/CD2DGeometry::StrokeContainsPoint', 'AFXRENDERTARGET/CD2DGeometry::Tessellate', 'AFXRENDERTARGET/CD2DGeometry::Widen', 'AFXRENDERTARGET/CD2DGeometry::m_pGeometry']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DGeometry class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DGeometry [MFC], CD2DGeometry", "CD2DGeometry [MFC], Attach", "CD2DGeometry [MFC], CombineWithGeometry", "CD2DGeometry [MFC], CompareWithGeometry", "CD2DGeometry [MFC], ComputeArea", "CD2DGeometry [MFC], ComputeLength", "CD2DGeometry [MFC], ComputePointAtLength", "CD2DGeometry [MFC], Destroy", "CD2DGeometry [MFC], Detach", "CD2DGeometry [MFC], FillContainsPoint", "CD2DGeometry [MFC], Get", "CD2DGeometry [MFC], GetBounds", "CD2DGeometry [MFC], GetWidenedBounds", "CD2DGeometry [MFC], IsValid", "CD2DGeometry [MFC], Outline", "CD2DGeometry [MFC], Simplify", "CD2DGeometry [MFC], StrokeContainsPoint", "CD2DGeometry [MFC], Tessellate", "CD2DGeometry [MFC], Widen", "CD2DGeometry [MFC], m_pGeometry"]
 ms.assetid: 3f95054b-fdb8-4e87-87f2-9fc3df7279ec
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CD2DGeometry Class
 A wrapper for ID2D1Geometry.  

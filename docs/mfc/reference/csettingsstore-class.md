@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSettingsStore', 'AFXSETTINGSSTORE/CSettingsStore', 'AFXSETTINGSSTORE/CSettingsStore::CSettingsStore', 'AFXSETTINGSSTORE/CSettingsStore::Close', 'AFXSETTINGSSTORE/CSettingsStore::CreateKey', 'AFXSETTINGSSTORE/CSettingsStore::DeleteKey', 'AFXSETTINGSSTORE/CSettingsStore::DeleteValue', 'AFXSETTINGSSTORE/CSettingsStore::Open', 'AFXSETTINGSSTORE/CSettingsStore::Read', 'AFXSETTINGSSTORE/CSettingsStore::Write']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSettingsStore class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSettingsStore [MFC], CSettingsStore", "CSettingsStore [MFC], Close", "CSettingsStore [MFC], CreateKey", "CSettingsStore [MFC], DeleteKey", "CSettingsStore [MFC], DeleteValue", "CSettingsStore [MFC], Open", "CSettingsStore [MFC], Read", "CSettingsStore [MFC], Write"]
 ms.assetid: 0ea181de-a13e-4b29-b560-7c43838223ff
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSettingsStore Class
 Wraps Windows API functions, providing an object-oriented interface that you use to access the registry.  

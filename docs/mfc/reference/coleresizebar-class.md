@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleResizeBar', 'AFXOLE/COleResizeBar', 'AFXOLE/COleResizeBar::COleResizeBar', 'AFXOLE/COleResizeBar::Create']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE items, resizing"
-  - "in-place items"
-  - "in-place items, resizing"
-  - "resizing in-place OLE items"
-  - "control bars, resizing"
-  - "COleResizeBar class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleResizeBar [MFC], COleResizeBar", "COleResizeBar [MFC], Create"]
 ms.assetid: 56a708d9-28c5-4eb0-9404-77b688d91c63
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleResizeBar Class
 A type of control bar that supports resizing of in-place OLE items.  

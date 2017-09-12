@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFindReplaceDialog', 'AFXDLGS/CFindReplaceDialog', 'AFXDLGS/CFindReplaceDialog::CFindReplaceDialog', 'AFXDLGS/CFindReplaceDialog::Create', 'AFXDLGS/CFindReplaceDialog::FindNext', 'AFXDLGS/CFindReplaceDialog::GetFindString', 'AFXDLGS/CFindReplaceDialog::GetNotifier', 'AFXDLGS/CFindReplaceDialog::GetReplaceString', 'AFXDLGS/CFindReplaceDialog::IsTerminating', 'AFXDLGS/CFindReplaceDialog::MatchCase', 'AFXDLGS/CFindReplaceDialog::MatchWholeWord', 'AFXDLGS/CFindReplaceDialog::ReplaceAll', 'AFXDLGS/CFindReplaceDialog::ReplaceCurrent', 'AFXDLGS/CFindReplaceDialog::SearchDown', 'AFXDLGS/CFindReplaceDialog::m_fr']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "text searches, replacing text"
-  - "text searches, CFindReplaceDialog class"
-  - "Find/Replace dialog box"
-  - "replacing text, CFindReplaceDialog class"
-  - "CFindReplaceDialog class"
-  - "replacing text"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFindReplaceDialog [MFC], CFindReplaceDialog", "CFindReplaceDialog [MFC], Create", "CFindReplaceDialog [MFC], FindNext", "CFindReplaceDialog [MFC], GetFindString", "CFindReplaceDialog [MFC], GetNotifier", "CFindReplaceDialog [MFC], GetReplaceString", "CFindReplaceDialog [MFC], IsTerminating", "CFindReplaceDialog [MFC], MatchCase", "CFindReplaceDialog [MFC], MatchWholeWord", "CFindReplaceDialog [MFC], ReplaceAll", "CFindReplaceDialog [MFC], ReplaceCurrent", "CFindReplaceDialog [MFC], SearchDown", "CFindReplaceDialog [MFC], m_fr"]
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CFindReplaceDialog Class
 Allows you to implement standard string Find/Replace dialog boxes in your application.  

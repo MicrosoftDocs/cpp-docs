@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CLongBinary', 'AFXDB_/CLongBinary', 'AFXDB_/CLongBinary::CLongBinary', 'AFXDB_/CLongBinary::m_dwDataLength', 'AFXDB_/CLongBinary::m_hData']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BLOB (binary large object)"
-  - "CLongBinary class"
-  - "BLOB (binary large object), CLongBinary class"
+dev_langs: ["C++"]
+helpviewer_keywords: [" [MFC], "]"]
 ms.assetid: f4320059-aeb4-4ee5-bc2b-25f19d898ef5
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CLongBinary Class
 Simplifies working with very large binary data objects (often called BLOBs, or "binary large objects") in a database.  

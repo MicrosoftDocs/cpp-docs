@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog templates, property sheets"
-  - "dialog resources"
-  - "property pages, property sheets"
-  - "DoModal method property sheets"
-  - "AddPage method"
-  - "property sheets, about property sheets"
-  - "Create method [C++], property sheets"
-  - "CPropertyPage class, styles"
+dev_langs: ["C++"]
+helpviewer_keywords: ["dialog templates [MFC], property sheets", "dialog resources", "property pages [MFC], property sheets", "DoModal method property sheets", "AddPage method [MFC]", "property sheets, about property sheets", "Create method [MFC], property sheets", "CPropertyPage class [MFC], styles"]
 ms.assetid: 240654d4-152b-4e3f-af7b-44234339206e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using Property Sheets in Your Application
 To use a property sheet in your application, complete the following steps:  

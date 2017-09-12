@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX controls, error codes"
-  - "SetNotSupported method, using"
-  - "errors [C++], ActiveX control error codes"
-  - "GetNotSupported method"
-  - "FireError method"
-  - "SCODE, MFC ActiveX controls"
-  - "ThrowError method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "SetNotSupported method, using", "errors [MFC], ActiveX control error codes", "GetNotSupported method [MFC]", "FireError method [MFC]", "SCODE, MFC ActiveX controls", "ThrowError method [MFC]"]
 ms.assetid: 771fb9c9-2413-4dcc-b386-7bc4c4adeafd
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # MFC ActiveX Controls: Returning Error Codes From a Method
 This article describes how to return error codes from an ActiveX control method.  

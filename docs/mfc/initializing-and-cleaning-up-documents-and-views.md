@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "initializing documents"
-  - "views, cleaning up"
-  - "documents, initializing"
-  - "documents, cleaning up"
-  - "views, initializing"
-  - "initializing objects, document objects"
-  - "document objects, life cycle of"
-  - "initializing views"
+dev_langs: ["C++"]
+helpviewer_keywords: ["initializing documents [MFC]", "views [MFC], cleaning up", "documents [MFC], initializing", "documents [MFC], cleaning up", "views [MFC], initializing", "initializing objects [MFC], document objects", "document objects [MFC], life cycle of", "initializing views [MFC]"]
 ms.assetid: 95d6f09b-a047-4079-856a-ae7d0548e9d2
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Initializing and Cleaning Up Documents and Views
 Use the following guidelines for initializing and cleaning up after your documents and views:  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSliderCtrl', 'AFXCMN/CSliderCtrl', 'AFXCMN/CSliderCtrl::CSliderCtrl', 'AFXCMN/CSliderCtrl::ClearSel', 'AFXCMN/CSliderCtrl::ClearTics', 'AFXCMN/CSliderCtrl::Create', 'AFXCMN/CSliderCtrl::CreateEx', 'AFXCMN/CSliderCtrl::GetBuddy', 'AFXCMN/CSliderCtrl::GetChannelRect', 'AFXCMN/CSliderCtrl::GetLineSize', 'AFXCMN/CSliderCtrl::GetNumTics', 'AFXCMN/CSliderCtrl::GetPageSize', 'AFXCMN/CSliderCtrl::GetPos', 'AFXCMN/CSliderCtrl::GetRange', 'AFXCMN/CSliderCtrl::GetRangeMax', 'AFXCMN/CSliderCtrl::GetRangeMin', 'AFXCMN/CSliderCtrl::GetSelection', 'AFXCMN/CSliderCtrl::GetThumbLength', 'AFXCMN/CSliderCtrl::GetThumbRect', 'AFXCMN/CSliderCtrl::GetTic', 'AFXCMN/CSliderCtrl::GetTicArray', 'AFXCMN/CSliderCtrl::GetTicPos', 'AFXCMN/CSliderCtrl::GetToolTips', 'AFXCMN/CSliderCtrl::SetBuddy', 'AFXCMN/CSliderCtrl::SetLineSize', 'AFXCMN/CSliderCtrl::SetPageSize', 'AFXCMN/CSliderCtrl::SetPos', 'AFXCMN/CSliderCtrl::SetRange', 'AFXCMN/CSliderCtrl::SetRangeMax', 'AFXCMN/CSliderCtrl::SetRangeMin', 'AFXCMN/CSliderCtrl::SetSelection', 'AFXCMN/CSliderCtrl::SetThumbLength', 'AFXCMN/CSliderCtrl::SetTic', 'AFXCMN/CSliderCtrl::SetTicFreq', 'AFXCMN/CSliderCtrl::SetTipSide', 'AFXCMN/CSliderCtrl::SetToolTips']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows common controls [C++], CSliderCtrl"
-  - "slider controls, CSliderCtrl class"
-  - "CSliderCtrl class, common controls"
-  - "CSliderCtrl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSliderCtrl [MFC], CSliderCtrl", "CSliderCtrl [MFC], ClearSel", "CSliderCtrl [MFC], ClearTics", "CSliderCtrl [MFC], Create", "CSliderCtrl [MFC], CreateEx", "CSliderCtrl [MFC], GetBuddy", "CSliderCtrl [MFC], GetChannelRect", "CSliderCtrl [MFC], GetLineSize", "CSliderCtrl [MFC], GetNumTics", "CSliderCtrl [MFC], GetPageSize", "CSliderCtrl [MFC], GetPos", "CSliderCtrl [MFC], GetRange", "CSliderCtrl [MFC], GetRangeMax", "CSliderCtrl [MFC], GetRangeMin", "CSliderCtrl [MFC], GetSelection", "CSliderCtrl [MFC], GetThumbLength", "CSliderCtrl [MFC], GetThumbRect", "CSliderCtrl [MFC], GetTic", "CSliderCtrl [MFC], GetTicArray", "CSliderCtrl [MFC], GetTicPos", "CSliderCtrl [MFC], GetToolTips", "CSliderCtrl [MFC], SetBuddy", "CSliderCtrl [MFC], SetLineSize", "CSliderCtrl [MFC], SetPageSize", "CSliderCtrl [MFC], SetPos", "CSliderCtrl [MFC], SetRange", "CSliderCtrl [MFC], SetRangeMax", "CSliderCtrl [MFC], SetRangeMin", "CSliderCtrl [MFC], SetSelection", "CSliderCtrl [MFC], SetThumbLength", "CSliderCtrl [MFC], SetTic", "CSliderCtrl [MFC], SetTicFreq", "CSliderCtrl [MFC], SetTipSide", "CSliderCtrl [MFC], SetToolTips"]
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSliderCtrl Class
 Provides the functionality of the Windows common slider control.  

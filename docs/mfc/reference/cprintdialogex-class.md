@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPrintDialogEx', 'AFXDLGS/CPrintDialogEx', 'AFXDLGS/CPrintDialogEx::CPrintDialogEx', 'AFXDLGS/CPrintDialogEx::CreatePrinterDC', 'AFXDLGS/CPrintDialogEx::DoModal', 'AFXDLGS/CPrintDialogEx::GetCopies', 'AFXDLGS/CPrintDialogEx::GetDefaults', 'AFXDLGS/CPrintDialogEx::GetDeviceName', 'AFXDLGS/CPrintDialogEx::GetDevMode', 'AFXDLGS/CPrintDialogEx::GetDriverName', 'AFXDLGS/CPrintDialogEx::GetPortName', 'AFXDLGS/CPrintDialogEx::GetPrinterDC', 'AFXDLGS/CPrintDialogEx::PrintAll', 'AFXDLGS/CPrintDialogEx::PrintCollate', 'AFXDLGS/CPrintDialogEx::PrintCurrentPage', 'AFXDLGS/CPrintDialogEx::PrintRange', 'AFXDLGS/CPrintDialogEx::PrintSelection', 'AFXDLGS/CPrintDialogEx::m_pdex']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Print Setup dialog box"
-  - "CPrintDialogEx class"
-  - "Print dialog box"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPrintDialogEx [MFC], CPrintDialogEx", "CPrintDialogEx [MFC], CreatePrinterDC", "CPrintDialogEx [MFC], DoModal", "CPrintDialogEx [MFC], GetCopies", "CPrintDialogEx [MFC], GetDefaults", "CPrintDialogEx [MFC], GetDeviceName", "CPrintDialogEx [MFC], GetDevMode", "CPrintDialogEx [MFC], GetDriverName", "CPrintDialogEx [MFC], GetPortName", "CPrintDialogEx [MFC], GetPrinterDC", "CPrintDialogEx [MFC], PrintAll", "CPrintDialogEx [MFC], PrintCollate", "CPrintDialogEx [MFC], PrintCurrentPage", "CPrintDialogEx [MFC], PrintRange", "CPrintDialogEx [MFC], PrintSelection", "CPrintDialogEx [MFC], m_pdex"]
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPrintDialogEx Class
 Encapsulates the services provided by the Windows 2000 Print property sheet.  

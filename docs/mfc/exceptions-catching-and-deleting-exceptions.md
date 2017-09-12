@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exceptions, deleting"
-  - "AND_CATCH macro"
-  - "try-catch exception handling, catching and deleting exceptions"
-  - "exception handling, catching and deleting exceptions"
-  - "catch blocks, catching and deleting exceptions"
-  - "execution, returns from within catch block"
+dev_langs: ["C++"]
+helpviewer_keywords: ["exceptions [MFC], deleting", "AND_CATCH macro [MFC]", "try-catch exception handling [MFC], catching and deleting exceptions", "exception handling [MFC], catching and deleting exceptions", "catch blocks [MFC], catching and deleting exceptions", "execution [MFC], returns from within catch block"]
 ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Exceptions: Catching and Deleting Exceptions
 The following instructions and examples show you how to catch and delete exceptions. For more information on the **try**, **catch**, and `throw` keywords, see [C++ Exception Handling](../cpp/cpp-exception-handling.md).  

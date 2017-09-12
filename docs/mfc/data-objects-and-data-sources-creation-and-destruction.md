@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "destroying data objects"
-  - "object creation [C++], data source objects"
-  - "data sources [C++], and data objects"
-  - "data source objects [C++], creating"
-  - "destruction [C++], data sources"
-  - "data source objects [C++], destroying"
-  - "data objects [C++], creating"
-  - "data objects [C++], destroying"
-  - "data sources [C++], role"
-  - "data sources [C++], destroying"
-  - "destruction [C++], data objects"
-  - "data sources [C++], creating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["destroying data objects [MFC]", "object creation [MFC], data source objects", "data sources [MFC], and data objects", "data source objects [MFC], creating", "destruction [MFC], data sources", "data source objects [MFC], destroying", "data objects [MFC], creating", "data objects [MFC], destroying", "data sources [MFC], role", "data sources [MFC], destroying", "destruction [MFC], data objects", "data sources [MFC], creating"]
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Data Objects and Data Sources: Creation and Destruction
 As explained in the article [Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md), data objects and data sources represent both sides of a data transfer. This article explains when to create and destroy these objects and sources to perform your data transfers properly, including:  

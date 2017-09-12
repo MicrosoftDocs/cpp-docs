@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE drag and drop, initiating drag operations"
-  - "drag and drop, calling DoDragDrop"
-  - "OLE drag and drop, drop source"
-  - "OLE drag and drop, calling DoDragDrop"
-  - "drag and drop, initiating drag operations"
-  - "drag and drop, drop source"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE drag and drop [MFC], initiating drag operations", "drag and drop [MFC], calling DoDragDrop", "OLE drag and drop [MFC], drop source", "OLE drag and drop [MFC], calling DoDragDrop", "drag and drop [MFC], initiating drag operations", "drag and drop [MFC], drop source"]
 ms.assetid: 0ed2fda0-63fa-4b1e-b398-f1f142f40035
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Drag and Drop: Implementing a Drop Source
 This article explains how to get your application to provide data to a drag-and-drop operation.  

@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCommandLineInfo', 'AFXWIN/CCommandLineInfo', 'AFXWIN/CCommandLineInfo::CCommandLineInfo', 'AFXWIN/CCommandLineInfo::ParseParam', 'AFXWIN/CCommandLineInfo::m_bRunAutomated', 'AFXWIN/CCommandLineInfo::m_bRunEmbedded', 'AFXWIN/CCommandLineInfo::m_bShowSplash', 'AFXWIN/CCommandLineInfo::m_nShellCommand', 'AFXWIN/CCommandLineInfo::m_strDriverName', 'AFXWIN/CCommandLineInfo::m_strFileName', 'AFXWIN/CCommandLineInfo::m_strPortName', 'AFXWIN/CCommandLineInfo::m_strPrinterName', 'AFXWIN/CCommandLineInfo::m_strRestartIdentifier']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CCommandLineInfo class"
-  - "command line, parsing"
-  - "parsing, command-line arguments"
-  - "argv argument"
-  - "startup code, parsing command-line arguments"
-  - "application flags [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCommandLineInfo [MFC], CCommandLineInfo", "CCommandLineInfo [MFC], ParseParam", "CCommandLineInfo [MFC], m_bRunAutomated", "CCommandLineInfo [MFC], m_bRunEmbedded", "CCommandLineInfo [MFC], m_bShowSplash", "CCommandLineInfo [MFC], m_nShellCommand", "CCommandLineInfo [MFC], m_strDriverName", "CCommandLineInfo [MFC], m_strFileName", "CCommandLineInfo [MFC], m_strPortName", "CCommandLineInfo [MFC], m_strPrinterName", "CCommandLineInfo [MFC], m_strRestartIdentifier"]
 ms.assetid: 3e313ddb-0a82-4991-87ac-a27feff4668c
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CCommandLineInfo Class
 Aids in parsing the command line at application startup.  

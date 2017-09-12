@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "WinInet classes, gopher"
-  - "Internet applications, gopher client applications"
-  - "Gopher client applications"
-  - "Internet client applications, gopher table"
+dev_langs: ["C++"]
+helpviewer_keywords: ["WinInet classes [MFC], gopher", "Internet applications [MFC], gopher client applications", "Gopher client applications [MFC]", "Internet client applications [MFC], gopher table"]
 ms.assetid: 3e4e1869-5da0-453d-8ba9-b648c894bb90
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Steps in a Typical Gopher Client Application
 The following table shows the steps you might perform in a typical gopher client application.  

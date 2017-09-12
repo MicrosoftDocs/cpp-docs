@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCToolTipCtrl', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetIconSize', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetParams', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawBorder', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawDescription', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawIcon', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawLabel', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawSeparator', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnFillBackground', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetDescription', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetFixedWidth', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetHotRibbonButton', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetLocation', 'AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetParams']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCToolTipCtrl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCToolTipCtrl [MFC], GetIconSize", "CMFCToolTipCtrl [MFC], GetParams", "CMFCToolTipCtrl [MFC], OnDrawBorder", "CMFCToolTipCtrl [MFC], OnDrawDescription", "CMFCToolTipCtrl [MFC], OnDrawIcon", "CMFCToolTipCtrl [MFC], OnDrawLabel", "CMFCToolTipCtrl [MFC], OnDrawSeparator", "CMFCToolTipCtrl [MFC], OnFillBackground", "CMFCToolTipCtrl [MFC], SetDescription", "CMFCToolTipCtrl [MFC], SetFixedWidth", "CMFCToolTipCtrl [MFC], SetHotRibbonButton", "CMFCToolTipCtrl [MFC], SetLocation", "CMFCToolTipCtrl [MFC], SetParams"]
 ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCToolTipCtrl Class
 An extended tooltip implementation based on the [CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md). A tooltip based on the `CMFCToolTipCtrl` class can display an icon, a label, and a description. You can customize its visual appearance by using a gradient fill, custom text and border colors, bold text, rounded corners, or a balloon style.  

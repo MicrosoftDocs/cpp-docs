@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CTabCtrl', 'AFXCMN/CTabCtrl', 'AFXCMN/CTabCtrl::CTabCtrl', 'AFXCMN/CTabCtrl::AdjustRect', 'AFXCMN/CTabCtrl::Create', 'AFXCMN/CTabCtrl::CreateEx', 'AFXCMN/CTabCtrl::DeleteAllItems', 'AFXCMN/CTabCtrl::DeleteItem', 'AFXCMN/CTabCtrl::DeselectAll', 'AFXCMN/CTabCtrl::DrawItem', 'AFXCMN/CTabCtrl::GetCurFocus', 'AFXCMN/CTabCtrl::GetCurSel', 'AFXCMN/CTabCtrl::GetExtendedStyle', 'AFXCMN/CTabCtrl::GetImageList', 'AFXCMN/CTabCtrl::GetItem', 'AFXCMN/CTabCtrl::GetItemCount', 'AFXCMN/CTabCtrl::GetItemRect', 'AFXCMN/CTabCtrl::GetItemState', 'AFXCMN/CTabCtrl::GetRowCount', 'AFXCMN/CTabCtrl::GetToolTips', 'AFXCMN/CTabCtrl::HighlightItem', 'AFXCMN/CTabCtrl::HitTest', 'AFXCMN/CTabCtrl::InsertItem', 'AFXCMN/CTabCtrl::RemoveImage', 'AFXCMN/CTabCtrl::SetCurFocus', 'AFXCMN/CTabCtrl::SetCurSel', 'AFXCMN/CTabCtrl::SetExtendedStyle', 'AFXCMN/CTabCtrl::SetImageList', 'AFXCMN/CTabCtrl::SetItem', 'AFXCMN/CTabCtrl::SetItemExtra', 'AFXCMN/CTabCtrl::SetItemSize', 'AFXCMN/CTabCtrl::SetItemState', 'AFXCMN/CTabCtrl::SetMinTabWidth', 'AFXCMN/CTabCtrl::SetPadding', 'AFXCMN/CTabCtrl::SetToolTips']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tab controls"
-  - "CTabCtrl class, common controls"
-  - "CTabCtrl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTabCtrl [MFC], CTabCtrl", "CTabCtrl [MFC], AdjustRect", "CTabCtrl [MFC], Create", "CTabCtrl [MFC], CreateEx", "CTabCtrl [MFC], DeleteAllItems", "CTabCtrl [MFC], DeleteItem", "CTabCtrl [MFC], DeselectAll", "CTabCtrl [MFC], DrawItem", "CTabCtrl [MFC], GetCurFocus", "CTabCtrl [MFC], GetCurSel", "CTabCtrl [MFC], GetExtendedStyle", "CTabCtrl [MFC], GetImageList", "CTabCtrl [MFC], GetItem", "CTabCtrl [MFC], GetItemCount", "CTabCtrl [MFC], GetItemRect", "CTabCtrl [MFC], GetItemState", "CTabCtrl [MFC], GetRowCount", "CTabCtrl [MFC], GetToolTips", "CTabCtrl [MFC], HighlightItem", "CTabCtrl [MFC], HitTest", "CTabCtrl [MFC], InsertItem", "CTabCtrl [MFC], RemoveImage", "CTabCtrl [MFC], SetCurFocus", "CTabCtrl [MFC], SetCurSel", "CTabCtrl [MFC], SetExtendedStyle", "CTabCtrl [MFC], SetImageList", "CTabCtrl [MFC], SetItem", "CTabCtrl [MFC], SetItemExtra", "CTabCtrl [MFC], SetItemSize", "CTabCtrl [MFC], SetItemState", "CTabCtrl [MFC], SetMinTabWidth", "CTabCtrl [MFC], SetPadding", "CTabCtrl [MFC], SetToolTips"]
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CTabCtrl Class
 Provides the functionality of the Windows common tab control.  

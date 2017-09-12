@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDocObjectServerItem', 'AFXDOCOB/CDocObjectServerItem', 'AFXDOCOB/CDocObjectServerItem::CDocObjectServerItem', 'AFXDOCOB/CDocObjectServerItem::GetDocument', 'AFXDOCOB/CDocObjectServerItem::OnHide', 'AFXDOCOB/CDocObjectServerItem::OnShow']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "document object server"
-  - "CDocObjectServerItem class"
-  - "servers [C++], ActiveX documents"
-  - "docobject server"
-  - "servers [C++], doc objects"
-  - "ActiveX documents [C++], document server"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDocObjectServerItem [MFC], CDocObjectServerItem", "CDocObjectServerItem [MFC], GetDocument", "CDocObjectServerItem [MFC], OnHide", "CDocObjectServerItem [MFC], OnShow"]
 ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDocObjectServerItem Class
 Implements OLE server verbs specifically for DocObject servers.  

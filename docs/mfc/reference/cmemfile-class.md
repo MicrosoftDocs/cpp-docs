@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMemFile', 'AFX/CMemFile', 'AFX/CMemFile::CMemFile', 'AFX/CMemFile::Attach', 'AFX/CMemFile::Detach', 'AFX/CMemFile::Alloc', 'AFX/CMemFile::Free', 'AFX/CMemFile::GrowFile', 'AFX/CMemFile::Memcpy', 'AFX/CMemFile::Realloc']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "memory files"
-  - "CMemFile class"
-  - "temporary files, memory files"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMemFile [MFC], CMemFile", "CMemFile [MFC], Attach", "CMemFile [MFC], Detach", "CMemFile [MFC], Alloc", "CMemFile [MFC], Free", "CMemFile [MFC], GrowFile", "CMemFile [MFC], Memcpy", "CMemFile [MFC], Realloc"]
 ms.assetid: 20e86515-e465-4f73-b2ea-e49789d63165
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMemFile Class
 The [CFile](../../mfc/reference/cfile-class.md)-derived class that supports memory files.  

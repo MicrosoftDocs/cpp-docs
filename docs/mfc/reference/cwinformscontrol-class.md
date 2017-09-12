@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CWinFormsControl', 'AFXWINFORMS/CWinFormsControl', 'AFXWINFORMS/CWinFormsControl::CWinFormsControl', 'AFXWINFORMS/CWinFormsControl::CreateManagedControl', 'AFXWINFORMS/CWinFormsControl::GetControl', 'AFXWINFORMS/CWinFormsControl::GetControlHandle']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], Windows Forms support"
-  - "CWinFormsControl class"
-  - "Windows Forms [C++], MFC support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWinFormsControl [MFC], CWinFormsControl", "CWinFormsControl [MFC], CreateManagedControl", "CWinFormsControl [MFC], GetControl", "CWinFormsControl [MFC], GetControlHandle"]
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CWinFormsControl Class
 Provides the basic functionality for hosting of a Windows Forms control.  

@@ -4,37 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPaneFrameWnd', 'AFXPANEFRAMEWND/CPaneFrameWnd', 'AFXPANEFRAMEWND/CPaneFrameWnd::AddPane', 'AFXPANEFRAMEWND/CPaneFrameWnd::AddRemovePaneFromGlobalList', 'AFXPANEFRAMEWND/CPaneFrameWnd::AdjustLayout', 'AFXPANEFRAMEWND/CPaneFrameWnd::AdjustPaneFrames', 'AFXPANEFRAMEWND/CPaneFrameWnd::CalcBorderSize', 'AFXPANEFRAMEWND/CPaneFrameWnd::CalcExpectedDockedRect', 'AFXPANEFRAMEWND/CPaneFrameWnd::CanBeAttached', 'AFXPANEFRAMEWND/CPaneFrameWnd::CanBeDockedToPane', 'AFXPANEFRAMEWND/CPaneFrameWnd::CheckGripperVisibility', 'AFXPANEFRAMEWND/CPaneFrameWnd::ConvertToTabbedDocument', 'AFXPANEFRAMEWND/CPaneFrameWnd::Create', 'AFXPANEFRAMEWND/CPaneFrameWnd::CreateEx', 'AFXPANEFRAMEWND/CPaneFrameWnd::DockPane', 'AFXPANEFRAMEWND/CPaneFrameWnd::FindFloatingPaneByID', 'AFXPANEFRAMEWND/CPaneFrameWnd::FrameFromPoint', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetCaptionHeight', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetCaptionRect', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetCaptionText', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetDockingManager', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetDockingMode', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetFirstVisiblePane', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetHotPoint', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetPane', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetPaneCount', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetParent', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetPinState', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetRecentFloatingRect', 'AFXPANEFRAMEWND/CPaneFrameWnd::GetVisiblePaneCount', 'AFXPANEFRAMEWND/CPaneFrameWnd::HitTest', 'AFXPANEFRAMEWND/CPaneFrameWnd::IsCaptured', 'AFXPANEFRAMEWND/CPaneFrameWnd::IsDelayShow', 'AFXPANEFRAMEWND/CPaneFrameWnd::IsRollDown', 'AFXPANEFRAMEWND/CPaneFrameWnd::IsRollUp', 'AFXPANEFRAMEWND/CPaneFrameWnd::KillDockingTimer', 'AFXPANEFRAMEWND/CPaneFrameWnd::LoadState', 'AFXPANEFRAMEWND/CPaneFrameWnd::OnBeforeDock', 'AFXPANEFRAMEWND/CPaneFrameWnd::OnDockToRecentPos', 'AFXPANEFRAMEWND/CPaneFrameWnd::OnKillRollUpTimer', 'AFXPANEFRAMEWND/CPaneFrameWnd::OnMovePane', 'AFXPANEFRAMEWND/CPaneFrameWnd::OnPaneRecalcLayout', 'AFXPANEFRAMEWND/CPaneFrameWnd::OnSetRollUpTimer', 'AFXPANEFRAMEWND/CPaneFrameWnd::OnShowPane', 'AFXPANEFRAMEWND/CPaneFrameWnd::PaneFromPoint', 'AFXPANEFRAMEWND/CPaneFrameWnd::Pin', 'AFXPANEFRAMEWND/CPaneFrameWnd::RedrawAll', 'AFXPANEFRAMEWND/CPaneFrameWnd::RemoveNonValidPanes', 'AFXPANEFRAMEWND/CPaneFrameWnd::RemovePane', 'AFXPANEFRAMEWND/CPaneFrameWnd::ReplacePane', 'AFXPANEFRAMEWND/CPaneFrameWnd::SaveState', 'AFXPANEFRAMEWND/CPaneFrameWnd::SetCaptionButtons', 'AFXPANEFRAMEWND/CPaneFrameWnd::SetDelayShow', 'AFXPANEFRAMEWND/CPaneFrameWnd::SetDockingManager', 'AFXPANEFRAMEWND/CPaneFrameWnd::SetDockingTimer', 'AFXPANEFRAMEWND/CPaneFrameWnd::SetDockState', 'AFXPANEFRAMEWND/CPaneFrameWnd::SetHotPoint', 'AFXPANEFRAMEWND/CPaneFrameWnd::SetPreDockState', 'AFXPANEFRAMEWND/CPaneFrameWnd::SizeToContent', 'AFXPANEFRAMEWND/CPaneFrameWnd::StartTearOff', 'AFXPANEFRAMEWND/CPaneFrameWnd::StoreRecentDockSiteInfo', 'AFXPANEFRAMEWND/CPaneFrameWnd::StoreRecentTabRelatedInfo', 'AFXPANEFRAMEWND/CPaneFrameWnd::OnCheckRollState', 'AFXPANEFRAMEWND/CPaneFrameWnd::OnDrawBorder', 'AFXPANEFRAMEWND/CPaneFrameWnd::m_bUseSaveBits']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPaneFrameWnd class"
-  - "Serialize method"
-  - "PreTranslateMessage method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPaneFrameWnd [MFC], AddPane", "CPaneFrameWnd [MFC], AddRemovePaneFromGlobalList", "CPaneFrameWnd [MFC], AdjustLayout", "CPaneFrameWnd [MFC], AdjustPaneFrames", "CPaneFrameWnd [MFC], CalcBorderSize", "CPaneFrameWnd [MFC], CalcExpectedDockedRect", "CPaneFrameWnd [MFC], CanBeAttached", "CPaneFrameWnd [MFC], CanBeDockedToPane", "CPaneFrameWnd [MFC], CheckGripperVisibility", "CPaneFrameWnd [MFC], ConvertToTabbedDocument", "CPaneFrameWnd [MFC], Create", "CPaneFrameWnd [MFC], CreateEx", "CPaneFrameWnd [MFC], DockPane", "CPaneFrameWnd [MFC], FindFloatingPaneByID", "CPaneFrameWnd [MFC], FrameFromPoint", "CPaneFrameWnd [MFC], GetCaptionHeight", "CPaneFrameWnd [MFC], GetCaptionRect", "CPaneFrameWnd [MFC], GetCaptionText", "CPaneFrameWnd [MFC], GetDockingManager", "CPaneFrameWnd [MFC], GetDockingMode", "CPaneFrameWnd [MFC], GetFirstVisiblePane", "CPaneFrameWnd [MFC], GetHotPoint", "CPaneFrameWnd [MFC], GetPane", "CPaneFrameWnd [MFC], GetPaneCount", "CPaneFrameWnd [MFC], GetParent", "CPaneFrameWnd [MFC], GetPinState", "CPaneFrameWnd [MFC], GetRecentFloatingRect", "CPaneFrameWnd [MFC], GetVisiblePaneCount", "CPaneFrameWnd [MFC], HitTest", "CPaneFrameWnd [MFC], IsCaptured", "CPaneFrameWnd [MFC], IsDelayShow", "CPaneFrameWnd [MFC], IsRollDown", "CPaneFrameWnd [MFC], IsRollUp", "CPaneFrameWnd [MFC], KillDockingTimer", "CPaneFrameWnd [MFC], LoadState", "CPaneFrameWnd [MFC], OnBeforeDock", "CPaneFrameWnd [MFC], OnDockToRecentPos", "CPaneFrameWnd [MFC], OnKillRollUpTimer", "CPaneFrameWnd [MFC], OnMovePane", "CPaneFrameWnd [MFC], OnPaneRecalcLayout", "CPaneFrameWnd [MFC], OnSetRollUpTimer", "CPaneFrameWnd [MFC], OnShowPane", "CPaneFrameWnd [MFC], PaneFromPoint", "CPaneFrameWnd [MFC], Pin", "CPaneFrameWnd [MFC], RedrawAll", "CPaneFrameWnd [MFC], RemoveNonValidPanes", "CPaneFrameWnd [MFC], RemovePane", "CPaneFrameWnd [MFC], ReplacePane", "CPaneFrameWnd [MFC], SaveState", "CPaneFrameWnd [MFC], SetCaptionButtons", "CPaneFrameWnd [MFC], SetDelayShow", "CPaneFrameWnd [MFC], SetDockingManager", "CPaneFrameWnd [MFC], SetDockingTimer", "CPaneFrameWnd [MFC], SetDockState", "CPaneFrameWnd [MFC], SetHotPoint", "CPaneFrameWnd [MFC], SetPreDockState", "CPaneFrameWnd [MFC], SizeToContent", "CPaneFrameWnd [MFC], StartTearOff", "CPaneFrameWnd [MFC], StoreRecentDockSiteInfo", "CPaneFrameWnd [MFC], StoreRecentTabRelatedInfo", "CPaneFrameWnd [MFC], OnCheckRollState", "CPaneFrameWnd [MFC], OnDrawBorder", "CPaneFrameWnd [MFC], m_bUseSaveBits"]
 ms.assetid: ea3423a3-2763-482e-b763-817036ded10d
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CPaneFrameWnd Class
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

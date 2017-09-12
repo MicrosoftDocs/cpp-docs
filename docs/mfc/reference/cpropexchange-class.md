@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPropExchange', 'AFXCTL/CPropExchange', 'AFXCTL/CPropExchange::ExchangeBlobProp', 'AFXCTL/CPropExchange::ExchangeFontProp', 'AFXCTL/CPropExchange::ExchangePersistentProp', 'AFXCTL/CPropExchange::ExchangeProp', 'AFXCTL/CPropExchange::ExchangeVersion', 'AFXCTL/CPropExchange::GetVersion', 'AFXCTL/CPropExchange::IsAsynchronous', 'AFXCTL/CPropExchange::IsLoading']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPropExchange class"
-  - "OLE controls, persistence"
-  - "controls [MFC], OLE"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPropExchange [MFC], ExchangeBlobProp", "CPropExchange [MFC], ExchangeFontProp", "CPropExchange [MFC], ExchangePersistentProp", "CPropExchange [MFC], ExchangeProp", "CPropExchange [MFC], ExchangeVersion", "CPropExchange [MFC], GetVersion", "CPropExchange [MFC], IsAsynchronous", "CPropExchange [MFC], IsLoading"]
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPropExchange Class
 Supports the implementation of persistence for your OLE controls.  

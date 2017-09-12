@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCFilterChunkValueImpl', 'AFXWIN/CMFCFilterChunkValueImpl', 'AFXWIN/CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl', 'AFXWIN/CMFCFilterChunkValueImpl::Clear', 'AFXWIN/CMFCFilterChunkValueImpl::CopyChunk', 'AFXWIN/CMFCFilterChunkValueImpl::CopyFrom', 'AFXWIN/CMFCFilterChunkValueImpl::GetChunkGUID', 'AFXWIN/CMFCFilterChunkValueImpl::GetChunkPID', 'AFXWIN/CMFCFilterChunkValueImpl::GetChunkType', 'AFXWIN/CMFCFilterChunkValueImpl::GetString', 'AFXWIN/CMFCFilterChunkValueImpl::GetValue', 'AFXWIN/CMFCFilterChunkValueImpl::GetValueNoAlloc', 'AFXWIN/CMFCFilterChunkValueImpl::IsValid', 'AFXWIN/CMFCFilterChunkValueImpl::SetBoolValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetDwordValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetFileTimeValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetInt64Value', 'AFXWIN/CMFCFilterChunkValueImpl::SetIntValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetLongValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetSystemTimeValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetTextValue', 'AFXWIN/CMFCFilterChunkValueImpl::SetChunk']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCFilterChunkValueImpl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCFilterChunkValueImpl [MFC], CMFCFilterChunkValueImpl", "CMFCFilterChunkValueImpl [MFC], Clear", "CMFCFilterChunkValueImpl [MFC], CopyChunk", "CMFCFilterChunkValueImpl [MFC], CopyFrom", "CMFCFilterChunkValueImpl [MFC], GetChunkGUID", "CMFCFilterChunkValueImpl [MFC], GetChunkPID", "CMFCFilterChunkValueImpl [MFC], GetChunkType", "CMFCFilterChunkValueImpl [MFC], GetString", "CMFCFilterChunkValueImpl [MFC], GetValue", "CMFCFilterChunkValueImpl [MFC], GetValueNoAlloc", "CMFCFilterChunkValueImpl [MFC], IsValid", "CMFCFilterChunkValueImpl [MFC], SetBoolValue", "CMFCFilterChunkValueImpl [MFC], SetDwordValue", "CMFCFilterChunkValueImpl [MFC], SetFileTimeValue", "CMFCFilterChunkValueImpl [MFC], SetInt64Value", "CMFCFilterChunkValueImpl [MFC], SetIntValue", "CMFCFilterChunkValueImpl [MFC], SetLongValue", "CMFCFilterChunkValueImpl [MFC], SetSystemTimeValue", "CMFCFilterChunkValueImpl [MFC], SetTextValue", "CMFCFilterChunkValueImpl [MFC], SetChunk"]
 ms.assetid: 3c833f23-5b88-4d08-9e09-ca6a8aec88bf
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCFilterChunkValueImpl Class
 This is a class which simplifies both chunk and property value pair logic.  

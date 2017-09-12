@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCKeyMapDialog', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::CMFCKeyMapDialog', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::DoModal', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::FormatItem', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::GetCommandKeys', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnInsertItem', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnPrintHeader', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnPrintItem', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnSetColumns', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::PrintKeyMap', 'AFXKEYMAPDIALOG/CMFCKeyMapDialog::SetColumnsWidth']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCKeyMapDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCKeyMapDialog [MFC], CMFCKeyMapDialog", "CMFCKeyMapDialog [MFC], DoModal", "CMFCKeyMapDialog [MFC], FormatItem", "CMFCKeyMapDialog [MFC], GetCommandKeys", "CMFCKeyMapDialog [MFC], OnInsertItem", "CMFCKeyMapDialog [MFC], OnPrintHeader", "CMFCKeyMapDialog [MFC], OnPrintItem", "CMFCKeyMapDialog [MFC], OnSetColumns", "CMFCKeyMapDialog [MFC], PrintKeyMap", "CMFCKeyMapDialog [MFC], SetColumnsWidth"]
 ms.assetid: 5feb4942-d636-462d-a162-0104dd320f4e
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCKeyMapDialog Class
 The `CMFCKeyMapDialog` class supports a control that maps commands to keys on the keyboard.  

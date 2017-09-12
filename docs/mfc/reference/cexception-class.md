@@ -4,47 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CException', 'AFX/CException', 'AFX/CException::CException', 'AFX/CException::Delete', 'AFX/CException::ReportError']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleDispatchException class, base class"
-  - "CException class"
-  - "exceptions, classes for"
-  - "CInternetException class, base class"
-  - "macros, exception handling"
-  - "CNotSupportedException class, base class"
-  - "CFileException class, base class"
-  - "CDBException class, base class"
-  - "CArchiveException class, base class"
-  - "CUserException class"
-  - "CDaoException class, base class"
-  - "CMemoryException class, base class"
-  - "COleException class, base class"
-  - "CResourceException class, base class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CException [MFC], CException", "CException [MFC], Delete", "CException [MFC], ReportError"]
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CException Class
 The base class for all exceptions in the Microsoft Foundation Class Library.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DGradientBrush', 'AFXRENDERTARGET/CD2DGradientBrush', 'AFXRENDERTARGET/CD2DGradientBrush::CD2DGradientBrush', 'AFXRENDERTARGET/CD2DGradientBrush::Destroy', 'AFXRENDERTARGET/CD2DGradientBrush::m_arGradientStops', 'AFXRENDERTARGET/CD2DGradientBrush::m_colorInterpolationGamma', 'AFXRENDERTARGET/CD2DGradientBrush::m_extendMode', 'AFXRENDERTARGET/CD2DGradientBrush::m_pGradientStops']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DGradientBrush class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DGradientBrush [MFC], CD2DGradientBrush", "CD2DGradientBrush [MFC], Destroy", "CD2DGradientBrush [MFC], m_arGradientStops", "CD2DGradientBrush [MFC], m_colorInterpolationGamma", "CD2DGradientBrush [MFC], m_extendMode", "CD2DGradientBrush [MFC], m_pGradientStops"]
 ms.assetid: 5bf133e6-16b7-4e3a-845d-0ce63fafe5ec
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CD2DGradientBrush Class
 The base class of the CD2DLinearGradientBrush and the CD2DRadialGradientBrush classes.  

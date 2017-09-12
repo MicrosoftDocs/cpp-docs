@@ -4,51 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message handlers"
-  - "handlers, message-map ranges"
-  - "message maps, message handler functions"
-  - "message maps, ranges"
-  - "control-notification messages"
-  - "command IDs, message mapping"
-  - "message-map ranges"
-  - "handlers"
-  - "message handling, message handler functions"
-  - "mappings, message ranges"
-  - "command handling, command update handlers"
-  - "controls [MFC], notifications"
-  - "handler functions, message-map ranges"
-  - "handler functions"
-  - "command update handlers"
-  - "command routing, command update handlers"
-  - "message ranges"
-  - "handler functions, declaring"
-  - "message ranges, mapping"
+dev_langs: ["C++"]
+helpviewer_keywords: ["message handlers [MFC]", "handlers [MFC], message-map ranges", "message maps [MFC]], message handler functions", "message maps [MFC]], ranges", "control-notification messages [MFC]", "command IDs [MFC], message mapping", "message-map ranges [MFC]", "handlers [MFC]", "message handling [MFC], message handler functions", "mappings [MFC]], message ranges", "command handling [MFC], command update handlers", "controls [MFC], notifications", "handler functions [MFC], message-map ranges", "handler functions [MFC]", "command update handlers [MFC]", "command routing [MFC], command update handlers", "message ranges [MFC]", "handler functions [MFC], declaring", "message ranges [MFC], mapping"]
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Handlers for Message-Map Ranges
 This article explains how to map a range of messages to a single message handler function (instead of mapping one message to only one function).  

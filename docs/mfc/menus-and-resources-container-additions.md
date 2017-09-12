@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IDP_OLE_INIT_FAILED"
-  - "IDP_FAILED_TO_CREATE"
-  - "VK_ESCAPE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "application accelerator table [C++]"
-  - "VK_ESCAPE key"
-  - "IDP_FAILED_TO_CREATE macro"
-  - "visual editing, application menus and resources"
-  - "OLE containers, menus and resources"
-  - "accelerator tables [C++], container applications"
-  - "IDP_OLE_INIT_FAILED macro"
-  - "CONTAIN tutorial"
-  - "Links menu item"
+f1_keywords: ["IDP_OLE_INIT_FAILED", "IDP_FAILED_TO_CREATE", "VK_ESCAPE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["application accelerator table [MFC]", "VK_ESCAPE key [MFC]", "IDP_FAILED_TO_CREATE macro [MFC]", "visual editing, application menus and resources", "OLE containers [MFC], menus and resources", "accelerator tables [MFC], container applications", "IDP_OLE_INIT_FAILED macro [MFC]", "CONTAIN tutorial [MFC]", "Links menu item [MFC]"]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Menus and Resources: Container Additions
 This article explains the changes that need to be made to the menus and other resources in a visual editing container application.  
