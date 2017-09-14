@@ -84,8 +84,7 @@ translation.priority.ht:
 ## Syntax  
   
 ```  
-  
-      operator short( ) const;   
+operator short( ) const;   
 operator long( ) const;   
 operator float( ) const;   
 operator double( ) const;   
