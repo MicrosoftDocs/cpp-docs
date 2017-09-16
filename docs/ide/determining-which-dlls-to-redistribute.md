@@ -40,7 +40,7 @@ translation.priority.ht:
 
 When you build an application that uses DLLs supplied by Visual Studio, users of your application must also have those DLLs on their computers for the application to run. Because most users probably do not have Visual Studio installed, you must provide these DLLs for them. Visual Studio makes these DLLs available as *redistributable files* that you can include in your application installer.
 
-The redistributable DLLs are included with your installation of Visual Studio. By default, they are installed in the Visual Studio installation directory in the \VC\Redist\MSVC\*version* folder. 
+The redistributable DLLs are included with your installation of Visual Studio. By default, they are installed in the Visual Studio installation directory in the \VC\Redist\MSVC\*version* folder.
 
 To make it easier to include the redistributable DLLs with your installer, they are also available as stand-alone *redistributable packages*. These are executables that install the redistributable files on a user's computer. In addition to the copy in your Visual Studio installation, the current redistributable packages are available for download on [VisualStudio.com/Downloads](https://www.visualstudio.com/downloads/) in the Other Tools and Frameworks section. The version of the redistributable package must match the version of the Visual Studio toolset used to create your application. To find matching redistributable packages for earlier versions of Visual Studio, search the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=158431) for "Visual C++ Redistributable Packages".
 
@@ -63,14 +63,14 @@ The following table describes some of the Visual C++ DLLs that your application 
 |mfc*version*.dll|Microsoft Foundation Classes (MFC) Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md).|
 |mfc*version* *language*.dll|Microsoft Foundation Classes (MFC) Library Resources.|Applications that use specific language resources for MFC.|
 |mfc*version*u.dll|MFC Library with Unicode support.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) and require Unicode support.|
-|mfcmifc80.dll|MFC Managed Interfaces Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/framework/winforms/controls/index).|  
+|mfcmifc80.dll|MFC Managed Interfaces Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/framework/winforms/controls/index).|
 |mfcm*version*.dll|MFC Managed Library.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/framework/winforms/controls/index).|
 |mfcm*version*u.dll|MFC Managed Library with Unicode support.|Applications that use the [MFC Library](../mfc/mfc-desktop-applications.md) with [Windows Forms Controls](/dotnet/framework/winforms/controls/index) and require Unicode support.|
 |vcamp*version*.dll|AMP Library for native code.|Applications that use the [C++ AMP library](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md) code.|
 |vcomp*version*.dll|OpenMP Library for native code.|Applications that use the [C++ OpenMP library](../parallel/openmp/openmp-in-visual-cpp.md) code.|
 
 > [!NOTE]
->  You no longer need to redistribute the Active Template Library as a separate DLL. Its functionality has been moved to headers and a static library.
+> You no longer need to redistribute the Active Template Library as a separate DLL. Its functionality has been moved to headers and a static library.
 
 For more information about how to redistribute these DLLs with your application, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md). For examples, see [Deployment Examples](../ide/deployment-examples.md).
 
@@ -78,5 +78,5 @@ Typically, you do not have to redistribute system DLLs because they are part of 
 
 ## See Also
 
-[Choosing a Deployment Method](../ide/choosing-a-deployment-method.md)   
+[Choosing a Deployment Method](../ide/choosing-a-deployment-method.md)  
 [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
