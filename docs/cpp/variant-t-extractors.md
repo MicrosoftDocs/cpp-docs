@@ -25,8 +25,7 @@ translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", 
 ## Syntax  
   
 ```  
-  
-      operator short( ) const;   
+operator short( ) const;   
 operator long( ) const;   
 operator float( ) const;   
 operator double( ) const;   
