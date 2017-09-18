@@ -8,7 +8,7 @@ ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["message handling [MFC], derived message handlers", "messages, routing", "message maps [MFC]], derived", "derived message maps"]
+helpviewer_keywords: ["message handling [MFC], derived message handlers", "messages, routing", "message maps [MFC], derived", "derived message maps"]
 ms.assetid: 21829556-6e64-40c3-8279-fed85d99de77
 caps.latest.revision: 11
 author: "mikeblome"
