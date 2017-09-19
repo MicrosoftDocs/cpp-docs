@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["MFC ActiveX Controls (MFC)"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["COleControl class [MFC], MFC ActiveX controls", "ActiveX controls [MFC], MFC", "containers [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], serializing", "MFC ActiveX controls [MFC], containers", "serialization [MFC], MFC ActiveX controls", "dispatch maps [MFC]], for MFC ActiveX controls", "MFC ActiveX controls [MFC], active/inactive state", "events [MFC], ActiveX controls", "MFC ActiveX controls [MFC]"]
+helpviewer_keywords: ["COleControl class [MFC], MFC ActiveX controls", "ActiveX controls [MFC], MFC", "containers [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], serializing", "MFC ActiveX controls [MFC], containers", "serialization [MFC], MFC ActiveX controls", "dispatch maps [MFC], for MFC ActiveX controls", "MFC ActiveX controls [MFC], active/inactive state", "events [MFC], ActiveX controls", "MFC ActiveX controls [MFC]"]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
 caps.latest.revision: 14
 author: "mikeblome"
