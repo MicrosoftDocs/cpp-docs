@@ -8,7 +8,7 @@ ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["event handlers [MFC], ActiveX controls", "ActiveX control containers [MFC], event sinks", "event handling [MFC], ActiveX controls", "ON_EVENT macro [MFC]", "ActiveX controls [MFC], events [MFC]"r, "END_EVENTSINK_MAP macro, using", "events [MFC], ActiveX controls", "BEGIN_EVENTSINK_MAP macro"]
+helpviewer_keywords: ["event handlers [MFC], ActiveX controls", "ActiveX control containers [MFC], event sinks", "event handling [MFC], ActiveX controls", "ON_EVENT macro [MFC]", "ActiveX controls [MFC], events [MFC]", "END_EVENTSINK_MAP macro, using", "events [MFC], ActiveX controls", "BEGIN_EVENTSINK_MAP macro"]
 ms.assetid: f9c106db-052f-4e32-82ad-750646aa760b
 caps.latest.revision: 9
 author: "mikeblome"

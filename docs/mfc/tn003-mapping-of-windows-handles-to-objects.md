@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["vc.mapping"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["TN003", "handle maps", "Windows handles to objects [MFC]", "mappings [MFC]], Windows handles to objects"]
+helpviewer_keywords: ["TN003", "handle maps", "Windows handles to objects [MFC]", "mappings [MFC], Windows handles to objects"]
 ms.assetid: fbea9f38-992c-4091-8dbc-f29e288617d6
 caps.latest.revision: 15
 author: "mikeblome"

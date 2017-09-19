@@ -8,7 +8,7 @@ ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["commands [MFC], handlers for", "functions [MFC], handler", "handlers [MFC]", "controls [MFC], notifications", "handlers [MFC], control notification [MFC]", "notifications [MFC], handlers for control", "handlers [MFC]], command"]
+helpviewer_keywords: ["commands [MFC], handlers for", "functions [MFC], handler", "handlers [MFC]", "controls [MFC], notifications", "handlers [MFC], control notification [MFC]", "notifications [MFC], handlers for control", "handlers [MFC], command"]
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
 caps.latest.revision: 10
 author: "mikeblome"
