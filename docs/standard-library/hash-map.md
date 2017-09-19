@@ -1,13 +1,13 @@
 ---
 title: "&lt;hash_map&gt; | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/18/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<hash_map>", "std::<hash_map>']
+f1_keywords: ['<hash_map>', 'std::<hash_map>']
 dev_langs: ["C++"]
 helpviewer_keywords: ["hash_map header"]
 ms.assetid: 0765708a-a668-42a2-9800-654c857bdcc2
