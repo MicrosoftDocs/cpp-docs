@@ -8,7 +8,7 @@ ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["template classes [MFC], creating message maps", "message maps [MFC]], template classes"]
+helpviewer_keywords: ["template classes [MFC], creating message maps", "message maps [MFC], template classes"]
 ms.assetid: 4e7e24f8-06df-4b46-82aa-7435c8650de3
 caps.latest.revision: 10
 author: "mikeblome"
