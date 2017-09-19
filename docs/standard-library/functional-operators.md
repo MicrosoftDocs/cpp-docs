@@ -4,15 +4,12 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['functional/std::operator!=', 'functional/std::operator==']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "functional operators"
+f1_keywords: ['functional/std::operator!=', 'functional/std::operator==']
+dev_langs: ["C++"]
+helpviewer_keywords: ["functional operators"]
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
 caps.latest.revision: 13
 author: "corob-msft"

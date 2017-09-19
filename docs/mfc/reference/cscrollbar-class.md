@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CScrollBar', 'AFXWIN/CScrollBar', 'AFXWIN/CScrollBar::CScrollBar', 'AFXWIN/CScrollBar::Create', 'AFXWIN/CScrollBar::EnableScrollBar', 'AFXWIN/CScrollBar::GetScrollBarInfo', 'AFXWIN/CScrollBar::GetScrollInfo', 'AFXWIN/CScrollBar::GetScrollLimit', 'AFXWIN/CScrollBar::GetScrollPos', 'AFXWIN/CScrollBar::GetScrollRange', 'AFXWIN/CScrollBar::SetScrollInfo', 'AFXWIN/CScrollBar::SetScrollPos', 'AFXWIN/CScrollBar::SetScrollRange', 'AFXWIN/CScrollBar::ShowScrollBar']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CScrollBar class"
-  - "SCROLLBAR window class"
-  - "scroll bars"
-  - "Windows common controls [C++], CScrollBar"
-  - "controls [MFC], scroll bar"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CScrollBar [MFC], CScrollBar", "CScrollBar [MFC], Create", "CScrollBar [MFC], EnableScrollBar", "CScrollBar [MFC], GetScrollBarInfo", "CScrollBar [MFC], GetScrollInfo", "CScrollBar [MFC], GetScrollLimit", "CScrollBar [MFC], GetScrollPos", "CScrollBar [MFC], GetScrollRange", "CScrollBar [MFC], SetScrollInfo", "CScrollBar [MFC], SetScrollPos", "CScrollBar [MFC], SetScrollRange", "CScrollBar [MFC], ShowScrollBar"]
 ms.assetid: f3735ca5-73ea-46dc-918b-4d824c9fe47f
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CScrollBar Class
 Provides the functionality of a Windows scroll-bar control.  

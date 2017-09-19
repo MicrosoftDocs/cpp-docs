@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDocTemplate', 'AFXWIN/CDocTemplate', 'AFXWIN/CDocTemplate::CDocTemplate', 'AFXWIN/CDocTemplate::AddDocument', 'AFXWIN/CDocTemplate::CloseAllDocuments', 'AFXWIN/CDocTemplate::CreateNewDocument', 'AFXWIN/CDocTemplate::CreateNewFrame', 'AFXWIN/CDocTemplate::CreateOleFrame', 'AFXWIN/CDocTemplate::CreatePreviewFrame', 'AFXWIN/CDocTemplate::GetDocString', 'AFXWIN/CDocTemplate::GetFirstDocPosition', 'AFXWIN/CDocTemplate::GetNextDoc', 'AFXWIN/CDocTemplate::InitialUpdateFrame', 'AFXWIN/CDocTemplate::LoadTemplate', 'AFXWIN/CDocTemplate::MatchDocType', 'AFXWIN/CDocTemplate::OpenDocumentFile', 'AFXWIN/CDocTemplate::RemoveDocument', 'AFXWIN/CDocTemplate::SaveAllModified', 'AFXWIN/CDocTemplate::SetContainerInfo', 'AFXWIN/CDocTemplate::SetDefaultTitle', 'AFXWIN/CDocTemplate::SetPreviewInfo', 'AFXWIN/CDocTemplate::SetServerInfo']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "document templates"
-  - "templates, document"
-  - "CDocTemplate class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDocTemplate [MFC], CDocTemplate", "CDocTemplate [MFC], AddDocument", "CDocTemplate [MFC], CloseAllDocuments", "CDocTemplate [MFC], CreateNewDocument", "CDocTemplate [MFC], CreateNewFrame", "CDocTemplate [MFC], CreateOleFrame", "CDocTemplate [MFC], CreatePreviewFrame", "CDocTemplate [MFC], GetDocString", "CDocTemplate [MFC], GetFirstDocPosition", "CDocTemplate [MFC], GetNextDoc", "CDocTemplate [MFC], InitialUpdateFrame", "CDocTemplate [MFC], LoadTemplate", "CDocTemplate [MFC], MatchDocType", "CDocTemplate [MFC], OpenDocumentFile", "CDocTemplate [MFC], RemoveDocument", "CDocTemplate [MFC], SaveAllModified", "CDocTemplate [MFC], SetContainerInfo", "CDocTemplate [MFC], SetDefaultTitle", "CDocTemplate [MFC], SetPreviewInfo", "CDocTemplate [MFC], SetServerInfo"]
 ms.assetid: 14b41a1f-bf9d-4eac-b6a8-4c54ffcc77f6
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDocTemplate Class
 An abstract base class that defines the basic functionality for document templates.  

@@ -6,12 +6,14 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: []  
+f1_keywords: ['bitset/std::operator&amp;', 'bitset/std::operator&gt;&gt;', 'bitset/std::operator&lt;&lt;', 'bitset/std::operator^', 'bitset/std::operator|']
+dev_langs: ["C++"]
 ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+helpviewer_keywords: ["std::operator&amp; (bitset)", "std::operator&gt;&gt; (bitset)", "std::operator&lt;&lt; (bitset), """]
 ---
 # &lt;bitset&gt; operators
 ||||  

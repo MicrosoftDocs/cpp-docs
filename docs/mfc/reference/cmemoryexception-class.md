@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMemoryException', 'AFX/CMemoryException', 'AFX/CMemoryException::CMemoryException']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMemoryException class"
-  - "memory exceptions"
-  - "exceptions, memory type"
-  - "C++ exception handling, memory"
-  - "memory, exception handling"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMemoryException [MFC], CMemoryException"]
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMemoryException Class
 Represents an out-of-memory exception condition.  

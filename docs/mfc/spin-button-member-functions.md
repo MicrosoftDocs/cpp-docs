@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "spin button control, methods"
-  - "CSpinButtonCtrl class, methods"
+dev_langs: ["C++"]
+helpviewer_keywords: ["spin button control, methods", "CSpinButtonCtrl class [MFC], methods"]
 ms.assetid: a08a26fd-b803-4cbe-a509-395fa357d057
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Spin Button Member Functions
 There are several member functions available for the spin control ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)). Use these functions to change the following attributes of the spin button.  

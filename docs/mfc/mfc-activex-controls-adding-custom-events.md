@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX controls, events"
-  - "EVENT_CUSTOM prefix"
-  - "custom events, adding to ActiveX controls"
-  - "EVENT_CUSTOM macro"
-  - "InCircle method"
-  - "ClickIn event"
-  - "FireClickIn event"
-  - "COleControl class, custom events"
-  - "Click event, custom events"
-  - "events [C++], ActiveX controls"
-  - "custom events"
-  - "FireEvent method, adding custom events"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX controls [MFC], events [MFC]"r, "EVENT_CUSTOM prefix [MFC]", "custom events [MFC], adding to ActiveX controls", "EVENT_CUSTOM macro [MFC]", "InCircle method [MFC]", "ClickIn event", "FireClickIn event", "COleControl class [MFC], custom events [MFC]"r, "Click event, custom events [MFC]", "events [MFC], ActiveX controls", "custom events [MFC]", "FireEvent method, adding custom events"]
 ms.assetid: c584d053-1e34-47aa-958e-37d3e9b85892
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # MFC ActiveX Controls: Adding Custom Events
 Custom events differ from stock events in that they are not automatically fired by class `COleControl`. A custom event recognizes a certain action, determined by the control developer, as an event. The event map entries for custom events are represented by the `EVENT_CUSTOM` macro. The following section implements a custom event for an ActiveX control project that was created using the ActiveX Control Wizard.  

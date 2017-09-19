@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['auto_ptr', 'memory/std::auto_ptr', 'memory/std::auto_ptr::element_type', 'memory/std::auto_ptr::get', 'memory/std::auto_ptr::release', 'memory/std::auto_ptr::reset']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "auto_ptr class"
+f1_keywords: ['memory/std::auto_ptr', 'memory/std::auto_ptr::element_type', 'memory/std::auto_ptr::get', 'memory/std::auto_ptr::release', 'memory/std::auto_ptr::reset']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::auto_ptr [C++]", "std::auto_ptr [C++], element_type", "std::auto_ptr [C++], get", "std::auto_ptr [C++], release", "std::auto_ptr [C++], reset"]
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # auto_ptr Class
 Wraps a smart pointer around a resource that ensures the resource is destroyed automatically when control leaves a block.  

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['AFXDHTML/DDX_DHtml_ElementValue', 'AFXDHTML/DDX_DHtml_ElementInnerText', 'AFXDHTML/DDX_DHtml_ElementInnerHtml', 'AFXDHTML/DDX_DHtml_Anchor_Href', 'AFXDHTML/DDX_DHtml_Anchor_Target', 'AFXDHTML/DDX_DHtml_Img_Src', 'AFXDHTML/DDX_DHtml_Frame_Src', 'AFXDHTML/DDX_DHtml_IFrame_Src']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "macros, exchanging data with HMTL pages"
-  - "DDX macros"
-  - "HTML pages, helper macros"
-  - "DDX (dialog data exchange), DHtml helper macros"
-  - "macros, DDX_DHtml helpers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["macros [MFC], exchanging data with HMTL pages", "DDX macros [MFC]", "HTML pages [MFC], helper macros", "DDX (dialog data exchange), DHtml helper macros", "macros [MFC], DDX_DHtml helpers"]
 ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # DDX_DHtml Helper Macros
 The DDX_DHtml helper macros allow easy access to the commonly used properties of controls on an HTML page.  

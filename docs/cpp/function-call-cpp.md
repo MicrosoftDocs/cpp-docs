@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "function calls, C++ functions"
-  - "functions [C++], calling"
-  - "operator overloading, function calls"
-  - "function overloading, function-call operator"
-  - "function calls, operator"
-  - "operators [C++], overloading"
-  - "operator overloading, examples"
-  - "function call operator ( )"
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""function calls, C++ functions"", ""functions [C++], calling"", ""operator overloading [C++], function calls"", ""function overloading [C++], function-call operator"", ""function calls, operator"", ""operators [C++], overloading"", ""operator overloading [C++], examples"", ""function call operator ( ) [C++]""]"]
 ms.assetid: 5094254a-045b-46f7-8653-69bc91e80dce
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Function Call (C++)
 The function-call operator, invoked using parentheses, is a binary operator.  

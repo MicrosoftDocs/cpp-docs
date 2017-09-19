@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStatic', 'AFXWIN/CStatic', 'AFXWIN/CStatic::CStatic', 'AFXWIN/CStatic::Create', 'AFXWIN/CStatic::DrawItem', 'AFXWIN/CStatic::GetBitmap', 'AFXWIN/CStatic::GetCursor', 'AFXWIN/CStatic::GetEnhMetaFile', 'AFXWIN/CStatic::GetIcon', 'AFXWIN/CStatic::SetBitmap', 'AFXWIN/CStatic::SetCursor', 'AFXWIN/CStatic::SetEnhMetaFile', 'AFXWIN/CStatic::SetIcon']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "enhanced metafiles"
-  - "cursors, displaying"
-  - "static controls"
-  - "controls [MFC], static"
-  - "icons, displaying"
-  - "CStatic class"
-  - "enhanced metafiles, displaying"
-  - "bitmaps, displaying"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStatic [MFC], CStatic", "CStatic [MFC], Create", "CStatic [MFC], DrawItem", "CStatic [MFC], GetBitmap", "CStatic [MFC], GetCursor", "CStatic [MFC], GetEnhMetaFile", "CStatic [MFC], GetIcon", "CStatic [MFC], SetBitmap", "CStatic [MFC], SetCursor", "CStatic [MFC], SetEnhMetaFile", "CStatic [MFC], SetIcon"]
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CStatic Class
 Provides the functionality of a Windows static control.  

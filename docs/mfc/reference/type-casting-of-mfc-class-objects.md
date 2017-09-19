@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.classes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "macros, type casting"
-  - "pointers, type casting"
-  - "type casts"
-  - "casting types"
-  - "macros, casting pointers"
+f1_keywords: ["vc.mfc.macros.classes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["macros [MFC], type casting", "pointers [MFC], type casting", "type casts [MFC]", "casting types [MFC]", "macros [MFC], casting pointers"]
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Type Casting of MFC Class Objects
 Type casting macros provide a way to cast a given pointer to a pointer that points to an object of specific class, with or without checking that the cast is legal.  

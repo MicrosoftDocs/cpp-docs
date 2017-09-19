@@ -4,45 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.components"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "components [MFC]"
-  - "TN056"
-  - "resources [MFC], localization"
-  - "localization [C++], MFC resources"
-  - "MFC70LOC.DLL"
-  - "MFC DLLs [C++], localizing"
-  - "components [MFC], installing"
-  - "DLLs [C++], localizing MFC"
-  - "CTL3D32.DLL"
-  - "localization [C++], resources"
-  - "installing MFC components"
+f1_keywords: ["vc.mfc.components"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["components [MFC]", "TN056", "resources [MFC], localization", "localization [MFC], MFC resources", "MFC70LOC.DLL", "MFC DLLs [MFC], localizing", "components [MFC], installing", "DLLs [MFC], localizing MFC", "CTL3D32.DLL", "localization [MFC], resources", "installing MFC components"]
 ms.assetid: 0b582615-3bb1-4fc0-b569-d127d6deccd3
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # TN056: Installation of Localized MFC Components
 This tech note, which discussed the installation of localized MFC components, is now obsolete.  

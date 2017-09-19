@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "walkthroughs [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["walkthroughs [MFC]"]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Walkthrough: Updating the MFC Scribble Application (Part 2)
 [Part 1](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) of this walkthrough showed how to add an Office Fluent Ribbon to the classic Scribble application. This part shows how to add ribbon panels and controls that users can use instead of menus and commands.  

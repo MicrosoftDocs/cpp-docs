@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSmartDockingInfo', 'AFXDOCKINGMANAGER/CSmartDockingInfo', 'AFXDOCKINGMANAGER/CSmartDockingInfo::CopyTo', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_bUseThemeColorInShading', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrBaseBackground', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneDest', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneSrc', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrTransparent', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_nCentralGroupOffset', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_sizeTotal', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerBmpResID', 'AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerLightBmpResID']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSmartDockingInfo class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSmartDockingInfo [MFC], CopyTo", "CSmartDockingInfo [MFC], m_bUseThemeColorInShading", "CSmartDockingInfo [MFC], m_clrBaseBackground", "CSmartDockingInfo [MFC], m_clrToneDest", "CSmartDockingInfo [MFC], m_clrToneSrc", "CSmartDockingInfo [MFC], m_clrTransparent", "CSmartDockingInfo [MFC], m_nCentralGroupOffset", "CSmartDockingInfo [MFC], m_sizeTotal", "CSmartDockingInfo [MFC], m_uiMarkerBmpResID", "CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID"]
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSmartDockingInfo Class
 Defines the appearance of smart docking markers.  

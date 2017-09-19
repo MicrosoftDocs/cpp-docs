@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['condition_variable/std::condition', 'condition_variable/std::condition_variable::condition_variable', 'condition_variable/std::condition_variable::native_handle', 'condition_variable/std::condition_variable::notify_all', 'condition_variable/std::condition_variable::notify_one', 'condition_variable/std::condition_variable::wait', 'condition_variable/std::condition_variable::wait_for', 'condition_variable/std::condition_variable::wait_until']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['condition_variable/std::condition', 'condition_variable/std::condition_variable::condition_variable', 'condition_variable/std::condition_variable::native_handle', 'condition_variable/std::condition_variable::notify_all', 'condition_variable/std::condition_variable::notify_one', 'condition_variable/std::condition_variable::wait', 'condition_variable/std::condition_variable::wait_for', 'condition_variable/std::condition_variable::wait_until']
+dev_langs: ["C++"]
 ms.assetid: 80b1295c-b73d-4d46-b664-6e183f2eec1b
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+helpviewer_keywords: ["std::condition", "std::condition_variable::condition_variable", "std::condition_variable::native_handle", "std::condition_variable::notify_all", "std::condition_variable::notify_one", "std::condition_variable::wait", "std::condition_variable::wait_for", "std::condition_variable::wait_until"]
 ---
 # condition_variable Class
 Use the `condition_variable` class to wait for an event when you have a `mutex` of type `unique_lock<mutex>`. Objects of this type may have better performance than objects of type [condition_variable_any<unique_lock\<mutex>>](../standard-library/condition-variable-any-class.md).  

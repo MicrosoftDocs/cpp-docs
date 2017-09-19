@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: [ 'set/std::swap (map)', 'set/std::swap (multiset)']  
+f1_keywords: ['set/std::swap (map)', 'set/std::swap (multiset)']
 ms.assetid: d1277d14-8502-46c0-b820-bcda820f9406
 caps.latest.revision: 7
 manager: "ghogen"

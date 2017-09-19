@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISAPI extensions, programming with ISAPI"
-  - "Internet applications [C++]"
-  - "ISAPI"
-  - "ActiveX controls [C++], Internet"
-  - "programming [C++], Internet"
-  - "Web applications [C++], MFC classes"
-  - "ISAPI filters, programming with ISAPI"
-  - "Internet applications [C++], ActiveX controls"
-  - "Internet applications [C++], writing"
-  - "Internet applications [C++], Active technology"
-  - "Active technology [C++]"
-  - "Internet content [C++]"
-  - "WinInet classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISAPI extensions, programming with ISAPI", "Internet applications [MFC]", "ISAPI", "ActiveX controls [MFC], Internet", "programming [MFC], Internet", "Web applications [MFC], MFC classes", "ISAPI filters [MFC], programming with ISAPI", "Internet applications [MFC], ActiveX controls", "Internet applications [MFC], writing", "Internet applications [MFC], Active technology", "Active technology [MFC]", "Internet content [MFC]", "WinInet classes [MFC]"]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # MFC Internet Programming Basics
 Microsoft provides many APIs for programming both client and server applications. Many new applications are being written for the Internet, and as technologies, browser capabilities, and security options change, new types of applications will be written. Browsers run on client computers, providing access to the World Wide Web and displaying HTML pages that contain text, graphics, ActiveX controls, and documents. Servers provide FTP, HTTP, and gopher services, and run server extension applications using CGI. Your custom application can retrieve information and provide data on the Internet.  

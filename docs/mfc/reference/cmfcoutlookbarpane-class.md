@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCOutlookBarPane', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::AddButton', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::CanBeAttached', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::ClearAll', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::Create', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::EnablePageScrollMode', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::GetRegularColor', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::IsBackgroundTexture', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::IsDrawShadedHighlight', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::RemoveButton', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetBackColor', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetBackImage', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetDefaultState', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetExtraSpace', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetTextColor', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetTransparentColor', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::EnableContextMenuItems', 'AFXOUTLOOKBARPANE/CMFCOutlookBarPane::RemoveAllButtons']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Dock method"
-  - "IsChangeState method"
-  - "SmartUpdate method"
-  - "OnBeforeFloat method"
-  - "RestoreOriginalstate method"
-  - "CMFCOutlookBarPane class"
-  - "CanBeRestored method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCOutlookBarPane [MFC], AddButton", "CMFCOutlookBarPane [MFC], CanBeAttached", "CMFCOutlookBarPane [MFC], ClearAll", "CMFCOutlookBarPane [MFC], Create", "CMFCOutlookBarPane [MFC], EnablePageScrollMode", "CMFCOutlookBarPane [MFC], GetRegularColor", "CMFCOutlookBarPane [MFC], IsBackgroundTexture", "CMFCOutlookBarPane [MFC], IsDrawShadedHighlight", "CMFCOutlookBarPane [MFC], RemoveButton", "CMFCOutlookBarPane [MFC], SetBackColor", "CMFCOutlookBarPane [MFC], SetBackImage", "CMFCOutlookBarPane [MFC], SetDefaultState", "CMFCOutlookBarPane [MFC], SetExtraSpace", "CMFCOutlookBarPane [MFC], SetTextColor", "CMFCOutlookBarPane [MFC], SetTransparentColor", "CMFCOutlookBarPane [MFC], EnableContextMenuItems", "CMFCOutlookBarPane [MFC], RemoveAllButtons"]
 ms.assetid: 094e2ef3-a118-487e-a4cc-27626108fe08
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCOutlookBarPane Class
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

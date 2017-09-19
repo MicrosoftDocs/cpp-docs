@@ -4,32 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['chrono/std::chrono::duration_values', 'chrono/std::chrono::duration_values::max', 'chrono/std::chrono::duration_values::min', 'chrono/std::chrono::duration_values::zero']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['chrono/std::chrono::duration_values', 'chrono/std::chrono::duration_values::max', 'chrono/std::chrono::duration_values::min', 'chrono/std::chrono::duration_values::zero']
+dev_langs: ["C++"]
 ms.assetid: 7f66d2e3-1faf-47c3-b47e-08f2a87f20e8
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # duration_values Structure
 Provides specific values for the [duration](../standard-library/duration-class.md) template parameter `Rep`.  

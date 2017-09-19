@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleVariant', 'AFXDISP/COleVariant', 'AFXDISP/COleVariant::COleVariant', 'AFXDISP/COleVariant::Attach', 'AFXDISP/COleVariant::ChangeType', 'AFXDISP/COleVariant::Clear', 'AFXDISP/COleVariant::Detach', 'AFXDISP/COleVariant::GetByteArrayFromVariantArray', 'AFXDISP/COleVariant::SetString']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Automation, parameter types"
-  - "COleVariant class"
-  - "VARIANT data type"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleVariant [MFC], COleVariant", "COleVariant [MFC], Attach", "COleVariant [MFC], ChangeType", "COleVariant [MFC], Clear", "COleVariant [MFC], Detach", "COleVariant [MFC], GetByteArrayFromVariantArray", "COleVariant [MFC], SetString"]
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleVariant Class
 Encapsulates the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) data type.  

@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], OLE and"
-  - "OLE items"
-  - "OLE applications [C++], about OLE"
-  - "OLE [C++]"
-  - "OLE containers, about OLE"
-  - "applications [OLE], about OLE"
-  - "OLE component object model (COM)"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, OLE and", "OLE items", "OLE applications [MFC], about OLE", "OLE [MFC]", "OLE containers [MFC], about OLE", "applications [OLE], about OLE", "OLE component object model (COM)"]
 ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # OLE in MFC
 These articles explain the fundamentals of OLE programming using MFC. MFC provides the easiest way to write programs that use OLE:  

@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "documents, views"
-  - "multiple views, updating from document"
-  - "document/view architecture"
-  - "views, and user input"
-  - "documents, accessing data from view"
-  - "views, updating"
-  - "input, view class"
-  - "documents, multiple views"
-  - "document/view architecture, accessing data from view"
-  - "document/view architecture, about document/view architecture"
-  - "views, accessing document data from"
+dev_langs: ["C++"]
+helpviewer_keywords: ["documents [MFC], views", "multiple views [MFC], updating from document", "document/view architecture [MFC]", "views [MFC], and user input", "documents [MFC], accessing data from view", "views [MFC], updating", "input [MFC], view class", "documents [MFC], multiple views", "document/view architecture [MFC], accessing data from view", "document/view architecture [MFC], about document/view architecture", "views [MFC], accessing document data from"]
 ms.assetid: 4e7f65dc-b166-45d8-bcd5-9bb0d399b946
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # A Portrait of the Document/View Architecture
 Documents and views are paired in a typical MFC application. Data is stored in the document, but the view has privileged access to the data. The separation of document from view separates the storage and maintenance of data from its display.  

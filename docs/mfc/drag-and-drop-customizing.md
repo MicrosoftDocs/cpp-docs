@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "drag and drop, implementing in non-OLE applications"
-  - "drag and drop, customizing behavior"
-  - "drag and drop, COleDataSource object"
-  - "drag and drop, calling DoDragDrop"
-  - "OLE drag and drop, customizing behavior"
+dev_langs: ["C++"]
+helpviewer_keywords: ["drag and drop [MFC], implementing in non-OLE applications", "drag and drop [MFC], customizing behavior", "drag and  [MFC], COleDataSource object", "drag and drop [MFC], calling DoDragDrop", "OLE drag and drop [MFC], customizing behavior"]
 ms.assetid: 03369d3e-46bf-4140-b58c-d0c9657cf38a
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Drag and Drop: Customizing
 The default implementation of the drag-and-drop feature is sufficient for most applications. However, some applications may require that this standard behavior be changed. This article explains the steps necessary to change these defaults. In addition, you can use this technique to establish applications that do not support compound documents as drop sources.  

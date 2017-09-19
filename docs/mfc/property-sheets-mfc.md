@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog boxes, tabs"
-  - "property sheets"
-  - "dialog boxes, property sheets"
-  - "tab dialog boxes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["dialog boxes [MFC], tabs", "property sheets", "dialog boxes [MFC], property sheets", "tab dialog boxes"]
 ms.assetid: 09439f65-921d-45a2-b3cc-e13884a087b1
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Property Sheets (MFC)
 This family of articles explains how to implement support for property sheets in MFC applications. A property sheet, also known as a tab dialog box, provides a way to manage large numbers of controls in a dialog box. The property sheet contains property pages, each based on a separate dialog template resource. You can divide your dialog box's controls into logical groups and put each group on its own property page.  

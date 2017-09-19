@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CHttpFile', 'AFXINET/CHttpFile', 'AFXINET/CHttpFile::CHttpFile', 'AFXINET/CHttpFile::AddRequestHeaders', 'AFXINET/CHttpFile::EndRequest', 'AFXINET/CHttpFile::GetFileURL', 'AFXINET/CHttpFile::GetObject', 'AFXINET/CHttpFile::GetVerb', 'AFXINET/CHttpFile::QueryInfo', 'AFXINET/CHttpFile::QueryInfoStatusCode', 'AFXINET/CHttpFile::SendRequest', 'AFXINET/CHttpFile::SendRequestEx']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "HTTP files"
-  - "HTTP requests, requesting and reading files"
-  - "CHttpFile class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CHttpFile [MFC], CHttpFile", "CHttpFile [MFC], AddRequestHeaders", "CHttpFile [MFC], EndRequest", "CHttpFile [MFC], GetFileURL", "CHttpFile [MFC], GetObject", "CHttpFile [MFC], GetVerb", "CHttpFile [MFC], QueryInfo", "CHttpFile [MFC], QueryInfoStatusCode", "CHttpFile [MFC], SendRequest", "CHttpFile [MFC], SendRequestEx"]
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CHttpFile Class
 Provides the functionality to request and read files on an HTTP server.  

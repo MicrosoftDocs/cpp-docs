@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CHotKeyCtrl', 'AFXCMN/CHotKeyCtrl', 'AFXCMN/CHotKeyCtrl::CHotKeyCtrl', 'AFXCMN/CHotKeyCtrl::Create', 'AFXCMN/CHotKeyCtrl::CreateEx', 'AFXCMN/CHotKeyCtrl::GetHotKey', 'AFXCMN/CHotKeyCtrl::GetHotKeyName', 'AFXCMN/CHotKeyCtrl::GetKeyName', 'AFXCMN/CHotKeyCtrl::SetHotKey', 'AFXCMN/CHotKeyCtrl::SetRules']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hot key controls"
-  - "CHotKeyCtrl class"
-  - "Windows common controls [C++], CHotKeyCtrl"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CHotKeyCtrl [MFC], CHotKeyCtrl", "CHotKeyCtrl [MFC], Create", "CHotKeyCtrl [MFC], CreateEx", "CHotKeyCtrl [MFC], GetHotKey", "CHotKeyCtrl [MFC], GetHotKeyName", "CHotKeyCtrl [MFC], GetKeyName", "CHotKeyCtrl [MFC], SetHotKey", "CHotKeyCtrl [MFC], SetRules"]
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CHotKeyCtrl Class
 Provides the functionality of the Windows common hot key control.  

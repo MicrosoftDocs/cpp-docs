@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__LIBID_"
-  - "__LIBID_cpp"
-  - "__uuidof"
-  - "__uuidof_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__uuidof keyword [C++]"
-  - "__LIBID_ keyword [C++]"
+f1_keywords: ["__LIBID_", "__LIBID_cpp", "__uuidof", "__uuidof_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""__uuidof keyword [C++]"", ""__LIBID_ keyword [C++]""]"]
 ms.assetid: badfe709-809b-4b66-ad48-ee35039d25c6
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # __uuidof Operator
 **Microsoft Specific**  

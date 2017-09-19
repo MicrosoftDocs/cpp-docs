@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Automation clients, configuring for Remote Automation"
-  - "registry, remote Automation"
-  - "Automation servers, configuring for Remote Automation"
-  - "Remote Automation Connection Manager"
-  - "Remote Automation, configuring client and server machines"
-  - "RAC Manager tool"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Automation clients [MFC], configuring for Remote Automation", "registry [MFC], remote Automation", "Automation servers [MFC], configuring for Remote Automation", "Remote Automation Connection Manager [MFC]", "Remote Automation [MFC], configuring client and server machines", "RAC Manager tool [MFC]"]
 ms.assetid: 562eb7bc-f95c-46ad-ac97-f0dfa98362af
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Remote Automation Connection Manager
 To configure both client and server machines, you need to make registry changes. Rather than doing this by hand, it is far easier to use the Remote Automation Connection (RAC) Manager tool. This tool, RACMGR32.EXE, along with RACREG32.DLL, needs to be copied to any directory you choose. By putting it in the PATH, it can be executed from the taskbar using Run. Alternatively, you can create a shortcut to it or place a reference to it on the Start menu.  

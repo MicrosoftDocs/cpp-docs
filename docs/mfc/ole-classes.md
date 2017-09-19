@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActiveX classes [C++]"
-  - "classes [C++], OLE"
-  - "OLE classes [C++]"
-  - "OLE [C++], classes"
+f1_keywords: ["vc.classes.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActiveX classes [MFC]", "classes [MFC], OLE", "OLE classes [MFC]", "OLE [MFC], classes"]
 ms.assetid: 4c2b2bca-fafb-4d2d-8498-9ed1e04011d2
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # OLE Classes
 The OLE classes work with the other application framework classes to provide easy access to the ActiveX API, giving your programs an easy way to provide the power of ActiveX to your users. Using ActiveX, you can:  

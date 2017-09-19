@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "LOGPEN"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LOGPEN structure"
+f1_keywords: ["LOGPEN"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LOGPEN structure [MFC]"]
 ms.assetid: a89e8690-6b61-4af5-990c-7c82da24f3b0
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # LOGPEN Structure
 The `LOGPEN` structure defines the style, width, and color of a pen, a drawing object used to draw lines and borders. The [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#createpenindirect) function uses the `LOGPEN` structure.  

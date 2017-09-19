@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocnum/std::num_put', 'num_put', 'locale/std::num_put::char_type', 'locale/std::num_put::iter_type', 'locale/std::num_put::do_put', 'locale/std::num_put::put']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "num_put class"
+f1_keywords: ['xlocnum/std::num_put', 'locale/std::num_put::char_type', 'locale/std::num_put::iter_type', 'locale/std::num_put::do_put', 'locale/std::num_put::put']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::num_put [C++]", "std::num_put [C++], char_type", "std::num_put [C++], iter_type", "std::num_put [C++], do_put", "std::num_put [C++], put"]
 ms.assetid: 36c5bffc-8283-4201-8ed4-78c4d81f8a17
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # num_put Class
 A template class that describes an object that can serve as a locale facet to control conversions of numeric values to sequences of type `CharType`.  

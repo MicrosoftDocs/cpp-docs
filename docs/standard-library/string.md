@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std::<string>"
-  - "string/std::<string>"
-  - "std.<string>"
-  - "<string>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "string header"
+f1_keywords: ['std::<string>", "string/std::<string>", "<string>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["string header"]
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;string&gt;
 Defines the container template class `basic_string` and various supporting templates.  

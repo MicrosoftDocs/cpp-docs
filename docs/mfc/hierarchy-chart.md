@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "object models, MFC"
-  - "classes [C++], MFC hierarchy"
-  - "MFC, object model"
+f1_keywords: ["vc.mfc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["object models, MFC", "classes [MFC], MFC hierarchy", "MFC, object model"]
 ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Hierarchy Chart
 The following illustration represents the MFC classes derived from `CObject`:  

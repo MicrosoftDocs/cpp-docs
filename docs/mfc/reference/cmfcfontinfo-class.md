@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCFontInfo', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::GetFullName', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nCharSet', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nPitchAndFamily', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nType', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strName', 'AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strScript']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCFontInfo class"
-  - "CMFCFontInfo::CMFCFontInfo constructor"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCFontInfo [MFC], GetFullName", "CMFCFontInfo [MFC], m_nCharSet", "CMFCFontInfo [MFC], m_nPitchAndFamily", "CMFCFontInfo [MFC], m_nType", "CMFCFontInfo [MFC], m_strName", "CMFCFontInfo [MFC], m_strScript"]
 ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCFontInfo Class
 The `CMFCFontInfo` class describes the name and other attributes of a font.  

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CBitmap', 'AFXWIN/CBitmap', 'AFXWIN/CBitmap::CBitmap', 'AFXWIN/CBitmap::CreateBitmap', 'AFXWIN/CBitmap::CreateBitmapIndirect', 'AFXWIN/CBitmap::CreateCompatibleBitmap', 'AFXWIN/CBitmap::CreateDiscardableBitmap', 'AFXWIN/CBitmap::FromHandle', 'AFXWIN/CBitmap::GetBitmap', 'AFXWIN/CBitmap::GetBitmapBits', 'AFXWIN/CBitmap::GetBitmapDimension', 'AFXWIN/CBitmap::LoadBitmap', 'AFXWIN/CBitmap::LoadMappedBitmap', 'AFXWIN/CBitmap::LoadOEMBitmap', 'AFXWIN/CBitmap::SetBitmapBits', 'AFXWIN/CBitmap::SetBitmapDimension']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "drawing, tools"
-  - "CBitmap class"
-  - "GDI bitmap"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CBitmap [MFC], CBitmap", "CBitmap [MFC], CreateBitmap", "CBitmap [MFC], CreateBitmapIndirect", "CBitmap [MFC], CreateCompatibleBitmap", "CBitmap [MFC], CreateDiscardableBitmap", "CBitmap [MFC], FromHandle", "CBitmap [MFC], GetBitmap", "CBitmap [MFC], GetBitmapBits", "CBitmap [MFC], GetBitmapDimension", "CBitmap [MFC], LoadBitmap", "CBitmap [MFC], LoadMappedBitmap", "CBitmap [MFC], LoadOEMBitmap", "CBitmap [MFC], SetBitmapBits", "CBitmap [MFC], SetBitmapDimension"]
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CBitmap Class
 Encapsulates a Windows graphics device interface (GDI) bitmap and provides member functions to manipulate the bitmap.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRecentDockSiteInfo', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::CleanUp', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDefaultPaneDivider', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedPercent', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedRect', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentListOfPanes', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentPaneContainer', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentTabContainer', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::Init', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::IsRecentLeftPane', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SaveListOfRecentPanes', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SetInfo', 'AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::StoreDockInfo']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRecentDockSiteInfo class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRecentDockSiteInfo [MFC], CleanUp", "CRecentDockSiteInfo [MFC], GetRecentDefaultPaneDivider", "CRecentDockSiteInfo [MFC], GetRecentDockedPercent", "CRecentDockSiteInfo [MFC], GetRecentDockedRect", "CRecentDockSiteInfo [MFC], GetRecentListOfPanes", "CRecentDockSiteInfo [MFC], GetRecentPaneContainer", "CRecentDockSiteInfo [MFC], GetRecentTabContainer", "CRecentDockSiteInfo [MFC], Init", "CRecentDockSiteInfo [MFC], IsRecentLeftPane", "CRecentDockSiteInfo [MFC], SaveListOfRecentPanes", "CRecentDockSiteInfo [MFC], SetInfo", "CRecentDockSiteInfo [MFC], StoreDockInfo"]
 ms.assetid: 2dd14f95-d5a2-4461-a7a5-2c6c36a3a165
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CRecentDockSiteInfo Class
 The `CRecentDockSiteInfo` class is a helper class that stores recent state information for the [CPane Class](../../mfc/reference/cpane-class.md).  

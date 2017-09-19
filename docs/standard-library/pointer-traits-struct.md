@@ -4,32 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['memory/std::pointer_traits::element_type', 'memory/std::pointer_traits::pointer', 'memory/std::pointer_traits', 'memory/std::pointer_traits::difference_type', 'memory/std::pointer_traits::rebind', 'xmemory0/std::pointer_traits::element_type', 'xmemory0/std::pointer_traits::pointer', 'xmemory0/std::pointer_traits', 'xmemory0/std::pointer_traits::difference_type', 'xmemory0/std::pointer_traits::rebind', 'memory/std::pointer_traits::pointer_to']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['memory/std::pointer_traits::element_type', 'memory/std::pointer_traits::pointer', 'memory/std::pointer_traits', 'memory/std::pointer_traits::difference_type', 'memory/std::pointer_traits::rebind', 'xmemory0/std::pointer_traits::element_type', 'xmemory0/std::pointer_traits::pointer', 'xmemory0/std::pointer_traits', 'xmemory0/std::pointer_traits::difference_type', 'xmemory0/std::pointer_traits::rebind', 'memory/std::pointer_traits::pointer_to']
+dev_langs: ["C++"]
 ms.assetid: 545aecf1-3561-4859-8b34-603c079fe1b3
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # pointer_traits Struct
 Supplies information that is needed by an object of template class `allocator_traits` to describe an allocator with pointer type `Ptr`.  

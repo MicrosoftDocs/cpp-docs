@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRenderTarget', 'AFXRENDERTARGET/CRenderTarget', 'AFXRENDERTARGET/CRenderTarget::CRenderTarget', 'AFXRENDERTARGET/CRenderTarget::Attach', 'AFXRENDERTARGET/CRenderTarget::BeginDraw', 'AFXRENDERTARGET/CRenderTarget::Clear', 'AFXRENDERTARGET/CRenderTarget::COLORREF_TO_D2DCOLOR', 'AFXRENDERTARGET/CRenderTarget::CreateCompatibleRenderTarget', 'AFXRENDERTARGET/CRenderTarget::Destroy', 'AFXRENDERTARGET/CRenderTarget::Detach', 'AFXRENDERTARGET/CRenderTarget::DrawBitmap', 'AFXRENDERTARGET/CRenderTarget::DrawEllipse', 'AFXRENDERTARGET/CRenderTarget::DrawGeometry', 'AFXRENDERTARGET/CRenderTarget::DrawGlyphRun', 'AFXRENDERTARGET/CRenderTarget::DrawLine', 'AFXRENDERTARGET/CRenderTarget::DrawRectangle', 'AFXRENDERTARGET/CRenderTarget::DrawRoundedRectangle', 'AFXRENDERTARGET/CRenderTarget::DrawText', 'AFXRENDERTARGET/CRenderTarget::DrawTextLayout', 'AFXRENDERTARGET/CRenderTarget::EndDraw', 'AFXRENDERTARGET/CRenderTarget::FillEllipse', 'AFXRENDERTARGET/CRenderTarget::FillGeometry', 'AFXRENDERTARGET/CRenderTarget::FillMesh', 'AFXRENDERTARGET/CRenderTarget::FillOpacityMask', 'AFXRENDERTARGET/CRenderTarget::FillRectangle', 'AFXRENDERTARGET/CRenderTarget::FillRoundedRectangle', 'AFXRENDERTARGET/CRenderTarget::Flush', 'AFXRENDERTARGET/CRenderTarget::GetAntialiasMode', 'AFXRENDERTARGET/CRenderTarget::GetDpi', 'AFXRENDERTARGET/CRenderTarget::GetMaximumBitmapSize', 'AFXRENDERTARGET/CRenderTarget::GetPixelFormat', 'AFXRENDERTARGET/CRenderTarget::GetPixelSize', 'AFXRENDERTARGET/CRenderTarget::GetRenderTarget', 'AFXRENDERTARGET/CRenderTarget::GetSize', 'AFXRENDERTARGET/CRenderTarget::GetTags', 'AFXRENDERTARGET/CRenderTarget::GetTextAntialiasMode', 'AFXRENDERTARGET/CRenderTarget::GetTextRenderingParams', 'AFXRENDERTARGET/CRenderTarget::GetTransform', 'AFXRENDERTARGET/CRenderTarget::IsSupported', 'AFXRENDERTARGET/CRenderTarget::IsValid', 'AFXRENDERTARGET/CRenderTarget::PopAxisAlignedClip', 'AFXRENDERTARGET/CRenderTarget::PopLayer', 'AFXRENDERTARGET/CRenderTarget::PushAxisAlignedClip', 'AFXRENDERTARGET/CRenderTarget::PushLayer', 'AFXRENDERTARGET/CRenderTarget::RestoreDrawingState', 'AFXRENDERTARGET/CRenderTarget::SaveDrawingState', 'AFXRENDERTARGET/CRenderTarget::SetAntialiasMode', 'AFXRENDERTARGET/CRenderTarget::SetDpi', 'AFXRENDERTARGET/CRenderTarget::SetTags', 'AFXRENDERTARGET/CRenderTarget::SetTextAntialiasMode', 'AFXRENDERTARGET/CRenderTarget::SetTextRenderingParams', 'AFXRENDERTARGET/CRenderTarget::SetTransform', 'AFXRENDERTARGET/CRenderTarget::VerifyResource', 'AFXRENDERTARGET/CRenderTarget::m_lstResources', 'AFXRENDERTARGET/CRenderTarget::m_pRenderTarget', 'AFXRENDERTARGET/CRenderTarget::m_pTextFormatDefault']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRenderTarget class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRenderTarget [MFC], CRenderTarget", "CRenderTarget [MFC], Attach", "CRenderTarget [MFC], BeginDraw", "CRenderTarget [MFC], Clear", "CRenderTarget [MFC], COLORREF_TO_D2DCOLOR", "CRenderTarget [MFC], CreateCompatibleRenderTarget", "CRenderTarget [MFC], Destroy", "CRenderTarget [MFC], Detach", "CRenderTarget [MFC], DrawBitmap", "CRenderTarget [MFC], DrawEllipse", "CRenderTarget [MFC], DrawGeometry", "CRenderTarget [MFC], DrawGlyphRun", "CRenderTarget [MFC], DrawLine", "CRenderTarget [MFC], DrawRectangle", "CRenderTarget [MFC], DrawRoundedRectangle", "CRenderTarget [MFC], DrawText", "CRenderTarget [MFC], DrawTextLayout", "CRenderTarget [MFC], EndDraw", "CRenderTarget [MFC], FillEllipse", "CRenderTarget [MFC], FillGeometry", "CRenderTarget [MFC], FillMesh", "CRenderTarget [MFC], FillOpacityMask", "CRenderTarget [MFC], FillRectangle", "CRenderTarget [MFC], FillRoundedRectangle", "CRenderTarget [MFC], Flush", "CRenderTarget [MFC], GetAntialiasMode", "CRenderTarget [MFC], GetDpi", "CRenderTarget [MFC], GetMaximumBitmapSize", "CRenderTarget [MFC], GetPixelFormat", "CRenderTarget [MFC], GetPixelSize", "CRenderTarget [MFC], GetRenderTarget", "CRenderTarget [MFC], GetSize", "CRenderTarget [MFC], GetTags", "CRenderTarget [MFC], GetTextAntialiasMode", "CRenderTarget [MFC], GetTextRenderingParams", "CRenderTarget [MFC], GetTransform", "CRenderTarget [MFC], IsSupported", "CRenderTarget [MFC], IsValid", "CRenderTarget [MFC], PopAxisAlignedClip", "CRenderTarget [MFC], PopLayer", "CRenderTarget [MFC], PushAxisAlignedClip", "CRenderTarget [MFC], PushLayer", "CRenderTarget [MFC], RestoreDrawingState", "CRenderTarget [MFC], SaveDrawingState", "CRenderTarget [MFC], SetAntialiasMode", "CRenderTarget [MFC], SetDpi", "CRenderTarget [MFC], SetTags", "CRenderTarget [MFC], SetTextAntialiasMode", "CRenderTarget [MFC], SetTextRenderingParams", "CRenderTarget [MFC], SetTransform", "CRenderTarget [MFC], VerifyResource", "CRenderTarget [MFC], m_lstResources", "CRenderTarget [MFC], m_pRenderTarget", "CRenderTarget [MFC], m_pTextFormatDefault"]
 ms.assetid: 30d1607d-68d3-4d14-ac36-fdbd0ef903a1
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CRenderTarget Class
 A wrapper for ID2D1RenderTarget.  

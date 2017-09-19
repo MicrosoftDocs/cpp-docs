@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/std::insert_iterator', 'insert_iterator', 'iterator/std::insert_iterator::container_type', 'iterator/std::insert_iterator::reference']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "insert_iterator class"
-  - "insert_iterator class, syntax"
+f1_keywords: ['iterator/std::insert_iterator', 'iterator/std::insert_iterator::container_type', 'iterator/std::insert_iterator::reference']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::insert_iterator [C++]", "std::insert_iterator [C++], container_type", "std::insert_iterator [C++], reference"]
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # insert_iterator Class
 Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into a sequence and thus provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence and associative containers. The `insert_iterator` class is templatized on the type of container being adapted.  

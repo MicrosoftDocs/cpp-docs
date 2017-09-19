@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSingleLock', 'AFXMT/CSingleLock', 'AFXMT/CSingleLock::CSingleLock', 'AFXMT/CSingleLock::IsLocked', 'AFXMT/CSingleLock::Lock', 'AFXMT/CSingleLock::Unlock']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSingleLock class"
-  - "threading [MFC], access control"
-  - "synchronization objects, access control"
-  - "threading [MFC], synchronization"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSingleLock [MFC], CSingleLock", "CSingleLock [MFC], IsLocked", "CSingleLock [MFC], Lock", "CSingleLock [MFC], Unlock"]
 ms.assetid: 7dae7288-8066-4a3e-85e0-78d28bfc6bc8
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSingleLock Class
 Represents the access-control mechanism used in controlling access to a resource in a multithreaded program.  

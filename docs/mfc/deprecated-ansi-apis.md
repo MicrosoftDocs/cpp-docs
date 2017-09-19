@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC, ANSI deprecated methods"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC, ANSI deprecated methods"]
 ms.assetid: c7c5a6fd-95e4-4bee-b3d5-d3826c30947d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Deprecated ANSI APIs
 The Microsoft Foundation Class (MFC) library is migrating toward classes and methods that are based on the Unicode character set. Consequently, the ANSI versions of several MFC methods are deprecated. Use the Unicode versions of these methods in your future applications.  

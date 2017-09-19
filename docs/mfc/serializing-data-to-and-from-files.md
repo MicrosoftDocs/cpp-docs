@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "documents [C++], serialization"
-  - "documents [C++], saving"
-  - "saving documents"
-  - "deserialization [C++]"
-  - "serialization [C++], role of document"
-  - "serialization [C++], role of data"
-  - "data [MFC]"
-  - "data [MFC], serializing"
-  - "document data [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["documents [MFC], serialization", "documents [MFC], saving", "saving documents", "deserialization [MFC]", "serialization [MFC], role of document", "serialization [MFC], role of data", "data [MFC]", "data [MFC], serializing", "document data [MFC]"]
 ms.assetid: b42a0c68-4bc4-4012-9938-5433a26d2c24
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Serializing Data to and from Files
 The basic idea of persistence is that an object should be able to write its current state, indicated by the values of its member variables, to persistent storage. Later, the object can be re-created by reading, or "deserializing," the object's state from persistent storage. A key point here is that the object itself is responsible for reading and writing its own state. Thus, for a class to be persistent, it must implement the basic serialization operations.  

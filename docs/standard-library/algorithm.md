@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "<algorithm>"
-  - "std::<algorithm>"
-  - "algorithm/std::<algorithm>"
-  - "std.<algorithm>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "algorithm header [C++]"
-  - "C++ Standard Library, algorithms"
-  - "<algorithm> header"
+f1_keywords: ['<algorithm>", "std::<algorithm>", "algorithm/std::<algorithm>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["algorithm header [C++]", "C++ Standard Library, algorithms", "<algorithm> header"]
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;algorithm&gt;
 Defines C++ Standard Library container template functions that perform algorithms.  

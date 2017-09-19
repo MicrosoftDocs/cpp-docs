@@ -4,61 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CBS_LOWERCASE"
-  - "CBS_SORT"
-  - "CBS_OWNERDRAWVARIABLE"
-  - "CBS_OEMCONVERT"
-  - "CBS_AUTOHSCROLL"
-  - "CBS_NOINTEGRALHEIGHT"
-  - "CBS_SIMPLE"
-  - "CBS_DROPDOWNLIST"
-  - "CBS_DROPDOWN"
-  - "CBS_UPPERCASE"
-  - "CBS_HASSTRINGS"
-  - "CBS_DISABLENOSCROLL"
-  - "CBS_OWNERDRAWFIXED"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CBS_OWNERDRAWVARIABLE constant"
-  - "CBS_NOINTEGRALHEIGHT constant"
-  - "CBS_SIMPLE constant"
-  - "CBS_AUTOHSCROLL constant"
-  - "CBS_OEMCONVERT constant"
-  - "CBS_DISABLENOSCROLL constant"
-  - "CBS_HASSTRINGS constant"
-  - "CBS_LOWERCASE constant"
-  - "CBS_SORT constant"
-  - "CBS_DROPDOWN constant"
-  - "CBS_OWNERDRAWFIXED constant"
-  - "combo boxes, styles"
-  - "CBS_UPPERCASE constant"
-  - "CBS_DROPDOWNLIST constant"
+f1_keywords: ["CBS_LOWERCASE", "CBS_SORT", "CBS_OWNERDRAWVARIABLE", "CBS_OEMCONVERT", "CBS_AUTOHSCROLL", "CBS_NOINTEGRALHEIGHT", "CBS_SIMPLE", "CBS_DROPDOWNLIST", "CBS_DROPDOWN", "CBS_UPPERCASE", "CBS_HASSTRINGS", "CBS_DISABLENOSCROLL", "CBS_OWNERDRAWFIXED"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CBS_OWNERDRAWVARIABLE constant [MFC]", "CBS_NOINTEGRALHEIGHT constant [MFC]", "CBS_SIMPLE constant [MFC]", "CBS_AUTOHSCROLL constant [MFC]", "CBS_OEMCONVERT constant [MFC]", "CBS_DISABLENOSCROLL constant [MFC]", "CBS_HASSTRINGS constant [MFC]", "CBS_LOWERCASE constant [MFC]", "CBS_SORT constant [MFC]", "CBS_DROPDOWN constant [MFC]", "CBS_OWNERDRAWFIXED constant [MFC]", "combo boxes [MFC], styles", "CBS_UPPERCASE constant [MFC]", "CBS_DROPDOWNLIST constant"]
 ms.assetid: d21a5023-e6a2-495b-a6bd-010a515cbc63
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Combo-Box Styles
 The following combo-box styles are available in MFC.  

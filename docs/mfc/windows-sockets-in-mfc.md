@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "WINSOCK.DLL"
-  - "sockets [C++], programming models"
-  - "MFC [C++], Windows Sockets"
-  - "Windows Sockets [C++], MFC support"
-  - "Windows Sockets [C++], programming models"
-  - "WSOCK32.DLL"
-  - "sockets [C++], MFC"
+dev_langs: ["C++"]
+helpviewer_keywords: ["WINSOCK.DLL", "sockets [MFC], programming models", "MFC, Windows Sockets", "Windows Sockets [MFC], MFC support", "Windows Sockets [MFC], programming models", "WSOCK32.DLL", "sockets [MFC], MFC"]
 ms.assetid: 1f3c476a-9c68-49fe-9a25-d22971a334d0
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Windows Sockets in MFC
 > [!NOTE]

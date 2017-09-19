@@ -4,61 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OnPrepareDC method"
-  - "windows [C++], and device context"
-  - "drawing, device context"
-  - "CClientDC class, and GetDC method"
-  - "drawing, in mouse and device contexts"
-  - "CDC class, objects"
-  - "device contexts [C++]"
-  - "client areas"
-  - "CMetaFileDC class, and OnPrepareDC method"
-  - "GDI objects [C++], device contexts"
-  - "graphic objects, device contexts"
-  - "frame windows [C++], device contexts"
-  - "metafiles and device contexts"
-  - "EndPaint method"
-  - "printers [C++], device contexts"
-  - "mouse [C++], drawing and device contexts"
-  - "BeginPaint method, CPaintDC"
-  - "CPaintDC class, device context for painting"
-  - "windows [C++], drawing directly into"
-  - "client areas, and device context"
-  - "device contexts [C++], CDC class"
-  - "user interface [C++], device contexts"
-  - "device-independent drawing"
-  - "GetDC method and CClientDC class"
-  - "CClientDC class, and ReleaseDC method"
-  - "ReleaseDC method"
-  - "device contexts [C++], about device contexts"
-  - "drawing, directly into windows"
-  - "painting and device context"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OnPrepareDC method [MFC]", "windows [MFC], and device context", "drawing [MFC], device context", "CClientDC class [MFC], and GetDC method [MFC]", "drawing [MFC], in mouse and device contexts", "CDC class [MFC], objects", "device contexts [MFC]", "client areas", "CMetaFileDC class [MFC], and OnPrepareDC method [MFC]", "GDI objects [MFC], device contexts", "graphic objects [MFC], device contexts", "frame windows [MFC], device contexts", "metafiles and device contexts", "EndPaint method [MFC]", "printers [MFC], device contexts", "mouse [MFC], drawing and device contexts", "BeginPaint method, CPaintDC", "CPaintDC class [MFC], device context for painting", "windows [MFC], drawing directly into", "client areas, and device context", "device contexts [MFC], CDC class [MFC]", "user interface [MFC], device contexts", "device-independent drawing", "GetDC method and CClientDC class [MFC]", "CClientDC class [MFC], and ReleaseDC method [MFC]", "ReleaseDC method [MFC]", "device contexts [MFC], about device contexts", "drawing [MFC], directly into windows", "painting and device context"]
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Device Contexts
 A device context is a Windows data structure containing information about the drawing attributes of a device such as a display or a printer. All drawing calls are made through a device-context object, which encapsulates the Windows APIs for drawing lines, shapes, and text. Device contexts allow device-independent drawing in Windows. Device contexts can be used to draw to the screen, to the printer, or to a metafile.  

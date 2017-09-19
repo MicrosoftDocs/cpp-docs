@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "04/03/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.isapi"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "parsing, URLs"
-  - "URLs, parsing"
+f1_keywords: ["vc.mfc.macros.isapi"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["parsing, URLs", "URLs, parsing"]
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Internet URL Parsing Globals and Helpers
 When a client sends a query to the Internet server, you can use one of the URL parsing globals to extract information about the client. The helper functions provide other internet functionality.

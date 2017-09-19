@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "<unordered_map>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unordered_map header"
+f1_keywords: ['<unordered_map>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["unordered_map header"]
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;unordered_map&gt;
 Defines the container template classes [unordered_map](../standard-library/unordered-map-class.md) and [unordered_multimap](../standard-library/unordered-multimap-class.md) and their supporting templates.  

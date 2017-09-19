@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['valarray/std::slice', 'slice', 'valarray/std::slice::size', 'valarray/std::slice::start', 'valarray/std::slice::stride']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "slice class"
+f1_keywords: ['valarray/std::slice', 'valarray/std::slice::size', 'valarray/std::slice::start', 'valarray/std::slice::stride']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::slice [C++]", "std::slice [C++], size", "std::slice [C++], start", "std::slice [C++], stride"]
 ms.assetid: 00f0b03d-d657-4b81-ba53-5a9034bb2bf2
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # slice Class
 A utility class to valarray that is used to define one-dimensional subsets of a parent valarray. If a valarray is regarded as a two-dimensional matrix with all elements in an array, then the slice extracts a vector in one dimension out of the two-dimensional array.  

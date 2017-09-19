@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimationBaseObject', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::CAnimationBaseObject', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::ApplyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::ClearTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::ContainsVariable', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::CreateTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::DetachFromController', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::EnableIntegerValueChangedEvent', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::EnableValueChangedEvent', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetAutodestroyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetGroupID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetObjectID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetUserData', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetAutodestroyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetUserData', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetAnimationVariableList', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetParentAnimationObjects', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_bAutodestroyTransitions', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_dwUserData', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_nGroupID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_nObjectID', 'AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_pParentController']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAnimationBaseObject class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimationBaseObject [MFC], CAnimationBaseObject", "CAnimationBaseObject [MFC], ApplyTransitions", "CAnimationBaseObject [MFC], ClearTransitions", "CAnimationBaseObject [MFC], ContainsVariable", "CAnimationBaseObject [MFC], CreateTransitions", "CAnimationBaseObject [MFC], DetachFromController", "CAnimationBaseObject [MFC], EnableIntegerValueChangedEvent", "CAnimationBaseObject [MFC], EnableValueChangedEvent", "CAnimationBaseObject [MFC], GetAutodestroyTransitions", "CAnimationBaseObject [MFC], GetGroupID", "CAnimationBaseObject [MFC], GetObjectID", "CAnimationBaseObject [MFC], GetUserData", "CAnimationBaseObject [MFC], SetAutodestroyTransitions", "CAnimationBaseObject [MFC], SetID", "CAnimationBaseObject [MFC], SetUserData", "CAnimationBaseObject [MFC], GetAnimationVariableList", "CAnimationBaseObject [MFC], SetParentAnimationObjects", "CAnimationBaseObject [MFC], m_bAutodestroyTransitions", "CAnimationBaseObject [MFC], m_dwUserData", "CAnimationBaseObject [MFC], m_nGroupID", "CAnimationBaseObject [MFC], m_nObjectID", "CAnimationBaseObject [MFC], m_pParentController"]
 ms.assetid: 76b25917-940e-4eba-940f-31d270702603
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CAnimationBaseObject Class
 The base class for all animation objects.  

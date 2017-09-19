@@ -4,54 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "GetWindowsDirectory"
-  - "GetSystemDirectory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC ActiveX controls, ANSI or Unicode versions"
-  - "RegSvr32.exe"
-  - "MFC ActiveX controls, distributing"
-  - "distributing MFC ActiveX controls"
-  - "redistributable files, MFC ActiveX controls"
-  - "GetSystemDirectory method"
-  - "registering ActiveX controls"
-  - "MSVCRT40.dll"
-  - "registry, registering controls"
-  - "LoadLibrary method, registering ActiveX controls"
-  - "MFC40U.DLL"
-  - "MFC40.DLL"
-  - "GetWindowsDirectory method"
-  - "installing ActiveX controls"
-  - "GetProcAddress method, registering ActiveX controls"
-  - "MFC ActiveX controls, installing"
-  - "MFC ActiveX controls, registering"
-  - "registering controls"
-  - "OLEPRO32.DLL"
+f1_keywords: ["GetWindowsDirectory", "GetSystemDirectory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC ActiveX controls [MFC], ANSI or Unicode versions", "RegSvr32.exe", "MFC ActiveX controls [MFC], distributing", "distributing MFC ActiveX controls", "redistributable files, MFC ActiveX controls", "GetSystemDirectory method [MFC]", "registering ActiveX controls", "MSVCRT40.dll", "registry [MFC], registering controls", "LoadLibrary method, registering ActiveX controls", "MFC40U.DLL", "MFC40.DLL", "GetWindowsDirectory method [MFC]", "installing ActiveX controls", "GetProcAddress method, registering ActiveX controls", "MFC ActiveX controls [MFC], installing", "MFC ActiveX controls [MFC], registering", "registering controls", "OLEPRO32.DLL"]
 ms.assetid: cd70ac9b-f613-4879-9e81-6381fdfda2a1
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # MFC ActiveX Controls: Distributing ActiveX Controls
 This article discusses several issues related to redistributing ActiveX controls:  

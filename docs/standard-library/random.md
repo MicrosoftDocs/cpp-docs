@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "08/24/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "<random>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "random header"
+f1_keywords: ['<random>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["random header"]
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
 caps.latest.revision: 58
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;random&gt;
 Defines facilities for random number generation, allowing creation of uniformly distributed random numbers.  

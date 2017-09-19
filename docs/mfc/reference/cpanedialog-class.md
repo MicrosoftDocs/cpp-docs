@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPaneDialog', 'AFXPANEDIALOG/CPaneDialog', 'AFXPANEDIALOG/CPaneDialog::Create', 'AFXPANEDIALOG/CPaneDialog::HandleInitDialog', 'AFXPANEDIALOG/CPaneDialog::SetOccDialogInfo']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPaneDialog::OnLButtonDblClk method"
-  - "CPaneDialog::OnLButtonDown method"
-  - "CPaneDialog::CreateObject method"
-  - "CPaneDialog::OnUpdateCmdUI method"
-  - "CPaneDialog constructor"
-  - "CPaneDialog::OnEraseBkgnd method"
-  - "CPaneDialog class"
-  - "CPaneDialog::OnWindowPosChanging method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPaneDialog [MFC], Create", "CPaneDialog [MFC], HandleInitDialog", "CPaneDialog [MFC], SetOccDialogInfo"]
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPaneDialog Class
 The `CPaneDialog` class supports a modeless, dockable dialog box.  

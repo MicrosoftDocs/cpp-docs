@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame::CKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboard', 'AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAfterTransition', 'AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAtOffset', 'AFXANIMATIONCONTROLLER/CKeyFrame::GetExistingKeyframe', 'AFXANIMATIONCONTROLLER/CKeyFrame::GetOffset', 'AFXANIMATIONCONTROLLER/CKeyFrame::GetTransition', 'AFXANIMATIONCONTROLLER/CKeyFrame::m_offset', 'AFXANIMATIONCONTROLLER/CKeyFrame::m_pExistingKeyFrame', 'AFXANIMATIONCONTROLLER/CKeyFrame::m_pTransition']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CKeyFrame class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CKeyFrame [MFC], CKeyFrame", "CKeyFrame [MFC], AddToStoryboard", "CKeyFrame [MFC], AddToStoryboardAfterTransition", "CKeyFrame [MFC], AddToStoryboardAtOffset", "CKeyFrame [MFC], GetExistingKeyframe", "CKeyFrame [MFC], GetOffset", "CKeyFrame [MFC], GetTransition", "CKeyFrame [MFC], m_offset", "CKeyFrame [MFC], m_pExistingKeyFrame", "CKeyFrame [MFC], m_pTransition"]
 ms.assetid: d050a562-20f6-4c65-8ce5-ccb3aef1a20e
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CKeyFrame Class
 Represents an animation keyframe.  

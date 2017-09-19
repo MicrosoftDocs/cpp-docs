@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCRibbonCheckBox', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::CMFCRibbonCheckBox', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetCompactSize', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetIntermediateSize', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetRegularSize', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::IsDrawTooltipImage', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDraw', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawMenuImage', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawOnList', 'AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::SetACCData']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCRibbonCheckBox class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCRibbonCheckBox [MFC], CMFCRibbonCheckBox", "CMFCRibbonCheckBox [MFC], GetCompactSize", "CMFCRibbonCheckBox [MFC], GetIntermediateSize", "CMFCRibbonCheckBox [MFC], GetRegularSize", "CMFCRibbonCheckBox [MFC], IsDrawTooltipImage", "CMFCRibbonCheckBox [MFC], OnDraw", "CMFCRibbonCheckBox [MFC], OnDrawMenuImage", "CMFCRibbonCheckBox [MFC], OnDrawOnList", "CMFCRibbonCheckBox [MFC], SetACCData"]
 ms.assetid: 3a6c3891-c8d1-4af0-b954-7b9ab048782a
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCRibbonCheckBox Class
 The `CMFCRibbonCheckBox` class implements a check box that you can add to a ribbon panel, Quick Access Toolbar, or popup menu.  

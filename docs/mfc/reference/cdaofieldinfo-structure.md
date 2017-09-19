@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDaoFieldInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DAO (Data Access Objects), Fields collection"
-  - "CDaoFieldInfo structure"
+f1_keywords: ["CDaoFieldInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DAO (Data Access Objects), Fields collection", "CDaoFieldInfo structure [MFC]"]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDaoFieldInfo Structure
 The `CDaoFieldInfo` structure contains information about a field object defined for data access objects (DAO).  

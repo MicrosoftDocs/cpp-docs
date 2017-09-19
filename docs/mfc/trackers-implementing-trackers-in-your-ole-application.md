@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "trackers"
-  - "OLE applications [C++], trackers"
-  - "applications [OLE], trackers"
-  - "tracking OLE items"
-  - "OLE containers, trackers"
-  - "CRectTracker class, implementing trackers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["trackers [MFC]", "OLE applications [MFC], trackers", "applications [OLE], trackers", "tracking OLE items [MFC]", "OLE containers [MFC], trackers", "CRectTracker class [MFC], implementing trackers"]
 ms.assetid: 5103a517-65bd-441a-8a53-02915ff3ef08
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Trackers: Implementing Trackers in Your OLE Application
 Trackers provide a graphical interface to enable users to interact with OLE client items. By using different tracker styles, OLE client items can be displayed with hatched borders, resize handles, or a variety of other visual effects. This article describes:  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/std::istream_iterator', 'istream_iterator', 'iterator/std::istream_iterator::char_type', 'iterator/std::istream_iterator::istream_type', 'iterator/std::istream_iterator::traits_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "istream_iterator class"
+f1_keywords: ['iterator/std::istream_iterator', 'iterator/std::istream_iterator::char_type', 'iterator/std::istream_iterator::istream_type', 'iterator/std::istream_iterator::traits_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::istream_iterator [C++]", "std::istream_iterator [C++], char_type", "std::istream_iterator [C++], istream_type", "std::istream_iterator [C++], traits_type"]
 ms.assetid: fb52a8cd-7f71-48d1-b73e-4b064e2a8d16
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # istream_iterator Class
 Describes an input iterator object. It extracts objects of class `Type` from an input stream, which it accesses through an object it stores, of type `pointer` to `basic_istream`< `CharType`, `Traits`>.  

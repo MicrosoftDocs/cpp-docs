@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['is_trivially_copy_constructible', 'type_traits/std::is_trivially_copy_constructible']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_trivially_copy_constructible"
+f1_keywords: ['type_traits/std::is_trivially_copy_constructible']
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_trivially_copy_constructible"]
 ms.assetid: 4274cef5-afdd-4f2d-bc83-7562e7944ddf
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # is_trivially_copy_constructible Class
 Tests if the type has a trivial copy constructor.  

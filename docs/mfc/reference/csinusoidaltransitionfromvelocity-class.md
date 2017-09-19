@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::Create', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_duration', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_period']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSinusoidalTransitionFromVelocity class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSinusoidalTransitionFromVelocity [MFC], CSinusoidalTransitionFromVelocity", "CSinusoidalTransitionFromVelocity [MFC], Create", "CSinusoidalTransitionFromVelocity [MFC], m_duration", "CSinusoidalTransitionFromVelocity [MFC], m_period"]
 ms.assetid: cc885f17-b84b-45ee-8f1f-36a8bbb7adad
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSinusoidalTransitionFromVelocity Class
 Encapsulates a sinusoidal-velocity transition that has an amplitude that is determined by the initial velocity of the animation variable.  

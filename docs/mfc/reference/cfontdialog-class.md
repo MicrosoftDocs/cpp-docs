@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFontDialog', 'AFXDLGS/CFontDialog', 'AFXDLGS/CFontDialog::CFontDialog', 'AFXDLGS/CFontDialog::DoModal', 'AFXDLGS/CFontDialog::GetCharFormat', 'AFXDLGS/CFontDialog::GetColor', 'AFXDLGS/CFontDialog::GetCurrentFont', 'AFXDLGS/CFontDialog::GetFaceName', 'AFXDLGS/CFontDialog::GetSize', 'AFXDLGS/CFontDialog::GetStyleName', 'AFXDLGS/CFontDialog::GetWeight', 'AFXDLGS/CFontDialog::IsBold', 'AFXDLGS/CFontDialog::IsItalic', 'AFXDLGS/CFontDialog::IsStrikeOut', 'AFXDLGS/CFontDialog::IsUnderline', 'AFXDLGS/CFontDialog::m_cf']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFontDialog class"
-  - "dialog boxes, fonts"
-  - "fonts"
-  - "fonts, selecting"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFontDialog [MFC], CFontDialog", "CFontDialog [MFC], DoModal", "CFontDialog [MFC], GetCharFormat", "CFontDialog [MFC], GetColor", "CFontDialog [MFC], GetCurrentFont", "CFontDialog [MFC], GetFaceName", "CFontDialog [MFC], GetSize", "CFontDialog [MFC], GetStyleName", "CFontDialog [MFC], GetWeight", "CFontDialog [MFC], IsBold", "CFontDialog [MFC], IsItalic", "CFontDialog [MFC], IsStrikeOut", "CFontDialog [MFC], IsUnderline", "CFontDialog [MFC], m_cf"]
 ms.assetid: 6228d500-ed0f-4156-81e5-ab0d57d1dcf4
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CFontDialog Class
 Allows you to incorporate a font-selection dialog box into your application.  

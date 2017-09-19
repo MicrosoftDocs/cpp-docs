@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.classes.control.variable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "variables, control classes"
-  - "control classes, variables"
-  - "classes [C++], declaring variables based on"
+f1_keywords: ["vc.codewiz.classes.control.variable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["variables [MFC], control classes", "control classes [MFC], variables", "classes [MFC], declaring variables based on"]
 ms.assetid: 5722dc38-c0eb-40bd-93da-67a808140d03
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Declaring a Variable Based on Your New Control Class
 Once you have created an MFC control class, you can declare a variable based on it. To provide a context for the new variable, you must open the dialog editor and edit the dialog box in which you want to use your reusable control. Also, the dialog box must already have a class associated with it. For information on using the dialog editor, see [Dialog Editor](../../windows/dialog-editor.md).  

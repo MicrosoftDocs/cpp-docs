@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "examples [C++], update existing application"
-  - "ribbon UI, porting to"
-  - "Office Fluent UI, porting to"
-  - "samples [C++], update existing application"
-  - "MFC Feature Pack, update existing application"
-  - "walkthroughs [C++], update existing application"
+dev_langs: ["C++"]
+helpviewer_keywords: ["examples [MFC], update existing application", "ribbon UI, porting to", "Office Fluent UI, porting to", "samples [MFC], update existing application", "MFC Feature Pack, update existing application", "walkthroughs [MFC], update existing application"]
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
 caps.latest.revision: 54
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Walkthrough: Updating the MFC Scribble Application (Part 1)
 This walkthrough demonstrates how to modify an existing MFC application to use the Ribbon user interface. Visual Studio supports both the Office 2007 Ribbon and the Windows 7 Scenic Ribbon. For more information about the Ribbon user interface, see [Ribbons](http://go.microsoft.com/fwlink/linkid=129233) on the MSDN Web site.  

@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDaoTableDefInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDaoTableDefInfo structure"
-  - "DAO (Data Access Objects), TableDefs collection"
+f1_keywords: ["CDaoTableDefInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoTableDefInfo structure [MFC]", "DAO (Data Access Objects), TableDefs collection"]
 ms.assetid: c01ccebb-5615-434e-883c-4f60eac943dd
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDaoTableDefInfo Structure
 The `CDaoTableDefInfo` structure contains information about a tabledef object defined for data access objects (DAO).  

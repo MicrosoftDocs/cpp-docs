@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['piecewise_constant_distribution', 'random/std::piecewise_constant_distribution', 'random/std::piecewise_constant_distribution::reset', 'random/std::piecewise_constant_distribution::intervals', 'random/std::piecewise_constant_distribution::densities', 'random/std::piecewise_constant_distribution::param', 'random/std::piecewise_constant_distribution::min', 'random/std::piecewise_constant_distribution::max', 'random/std::piecewise_constant_distribution::operator()', 'random/std::piecewise_constant_distribution::param_type', 'random/std::piecewise_constant_distribution::param_type::intervals', 'random/std::piecewise_constant_distribution::param_type::densities', 'random/std::piecewise_constant_distribution::param_type::operator==', 'random/std::piecewise_constant_distribution::param_type::operator!=', 'random/std::piecewise_constant_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "piecewise_constant_distribution class"
+f1_keywords: ['random/std::piecewise_constant_distribution', 'random/std::piecewise_constant_distribution::reset', 'random/std::piecewise_constant_distribution::intervals', 'random/std::piecewise_constant_distribution::densities', 'random/std::piecewise_constant_distribution::param', 'random/std::piecewise_constant_distribution::min', 'random/std::piecewise_constant_distribution::max', 'random/std::piecewise_constant_distribution::operator()', 'random/std::piecewise_constant_distribution::param_type', 'random/std::piecewise_constant_distribution::param_type::intervals', 'random/std::piecewise_constant_distribution::param_type::densities', 'random/std::piecewise_constant_distribution::param_type::operator==', 'random/std::piecewise_constant_distribution::param_type::operator!=', 'random/std::piecewise_constant_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::piecewise_constant_distribution [C++]", "std::piecewise_constant_distribution [C++], reset", "std::piecewise_constant_distribution [C++], intervals", "std::piecewise_constant_distribution [C++], densities", "std::piecewise_constant_distribution [C++], param", "std::piecewise_constant_distribution [C++], min", "std::piecewise_constant_distribution [C++], max", "std::piecewise_constant_distribution [C++], param_type", "std::piecewise_constant_distribution [C++], param_type"]
 ms.assetid: 2c9a21fa-623e-4d63-b827-3f1556b6dedb
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # piecewise_constant_distribution Class
 Generates a piecewise constant distribution that has varying-width intervals with uniform probability in each interval.  

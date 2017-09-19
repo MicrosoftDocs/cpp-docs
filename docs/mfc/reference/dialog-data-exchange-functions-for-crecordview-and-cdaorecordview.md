@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['AFXDAO/DDX_FieldCBIndex', 'AFXDAO/DDX_FieldCBString', 'AFXDAO/DDX_FieldCBStringExact', 'AFXDAO/DDX_FieldCheck', 'AFXDAO/DDX_FieldLBIndex', 'AFXDAO/DDX_FieldLBString', 'AFXDAO/DDX_FieldLBStringExact', 'AFXDAO/DDX_FieldRadio', 'AFXDAO/DDX_FieldScroll', 'AFXDAO/DDX_FieldText']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DDX_Field functions"
-  - "ODBC [C++], dialog data exchange (DDX) support"
-  - "DDX (dialog data exchange) [C++], database support"
-  - "DDX (dialog data exchange) [C++], functions"
-  - "databases [C++], dialog data exchange (DDX) support"
-  - "DAO [C++], dialog data exchange (DDX) support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["DDX_Field functions [MFC]", "ODBC [MFC], dialog data exchange (DDX) support", "DDX (dialog data exchange) [MFC], database support", "DDX (dialog data exchange) [MFC], functions", "databases [MFC], dialog data exchange (DDX) support", "DAO [MFC], dialog data exchange (DDX) support"]
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Dialog Data Exchange Functions for CRecordView and CDaoRecordView
 This topic lists the DDX_Field functions used to exchange data between a [CRecordset](../../mfc/reference/crecordset-class.md) and a [CRecordView](../../mfc/reference/crecordview-class.md) form or a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) and a [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) form.  

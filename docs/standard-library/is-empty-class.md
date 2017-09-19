@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['is_empty', 'type_traits/std::is_empty']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_empty class"
-  - "is_empty"
+f1_keywords: ['type_traits/std::is_empty']
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_empty class", "is_empty"]
 ms.assetid: 44a6fc92-7e55-4fbe-9a24-2a0ce2dccba0
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # is_empty Class
 Tests if type is an empty class.  

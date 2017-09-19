@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "TBN_DROPDOWN"
-  - "TBSTYLE_EX_DRAWDDARROWS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CToolBarCtrl class, drop-down buttons"
-  - "toolbars [C++], drop-down buttons"
-  - "drop-down buttons in toolbars"
-  - "TBSTYLE_EX_DRAWDDARROWS"
-  - "TBN_DROPDOWN notification"
+f1_keywords: ["TBN_DROPDOWN", "TBSTYLE_EX_DRAWDDARROWS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CToolBarCtrl class [MFC], drop-down buttons", "toolbars [MFC], drop-down buttons", "drop-down buttons in toolbars", "TBSTYLE_EX_DRAWDDARROWS", "TBN_DROPDOWN notification [MFC]"]
 ms.assetid: b859f758-d2f6-40d9-9c26-0ff61993b9b2
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using Drop-Down Buttons in a Toolbar Control
 In addition to standard push buttons, a toolbar can also have drop-down buttons. A drop-down button is usually indicated by the presence of an attached down arrow.  

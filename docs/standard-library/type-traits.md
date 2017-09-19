@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "<type_traits>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "typetrait header"
-  - "type_traits"
+f1_keywords: ['<type_traits>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["typetrait header", "type_traits"]
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
 caps.latest.revision: 35
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;type_traits&gt;
 Defines templates that provide compile-time constants that give information about the properties of their type arguments or produce transformed types.  

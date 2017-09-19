@@ -4,32 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['chrono/std::chrono::system_clock', 'chrono/std::chrono::system_clock::from_time_t', 'chrono/std::chrono::system_clock::now', 'chrono/std::chrono::system_clock::to_time_t', 'chrono/std::chrono::system_clock::is_monotonic Constant', 'chrono/std::chrono::system_clock::is_steady Constant']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['chrono/std::chrono::system_clock', 'chrono/std::chrono::system_clock::from_time_t', 'chrono/std::chrono::system_clock::now', 'chrono/std::chrono::system_clock::to_time_t', 'chrono/std::chrono::system_clock::is_monotonic Constant', 'chrono/std::chrono::system_clock::is_steady Constant']
+dev_langs: ["C++"]
 ms.assetid: a97bd46e-267a-4836-9f7d-af1f664e99ae
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # system_clock Structure
 Represents a *clock type* that is based on the real-time clock of the system.  

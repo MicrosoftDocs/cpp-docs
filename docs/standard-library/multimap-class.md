@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['multimap', 'map/std::multimap', 'map/std::multimap::allocator_type', 'map/std::multimap::const_iterator', 'map/std::multimap::const_pointer', 'map/std::multimap::const_reference', 'map/std::multimap::const_reverse_iterator', 'map/std::multimap::difference_type', 'map/std::multimap::iterator', 'map/std::multimap::key_compare', 'map/std::multimap::key_type', 'map/std::multimap::mapped_type', 'map/std::multimap::pointer', 'map/std::multimap::reference', 'map/std::multimap::reverse_iterator', 'map/std::multimap::size_type', 'map/std::multimap::value_type', 'map/std::multimap::begin', 'map/std::multimap::cbegin', 'map/std::multimap::cend', 'map/std::multimap::clear', 'map/std::multimap::count', 'map/std::multimap::crbegin', 'map/std::multimap::crend', 'map/std::multimap::emplace', 'map/std::multimap::emplace_hint', 'map/std::multimap::empty', 'map/std::multimap::end', 'map/std::multimap::equal_range', 'map/std::multimap::erase', 'map/std::multimap::find', 'map/std::multimap::get_allocator', 'map/std::multimap::insert', 'map/std::multimap::key_comp', 'map/std::multimap::lower_bound', 'map/std::multimap::max_size', 'map/std::multimap::rbegin', 'map/std::multimap::rend', 'map/std::multimap::size', 'map/std::multimap::swap', 'map/std::multimap::upper_bound', 'map/std::multimap::value_comp']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multimap class"
+f1_keywords: ['map/std::multimap', 'map/std::multimap::allocator_type', 'map/std::multimap::const_iterator', 'map/std::multimap::const_pointer', 'map/std::multimap::const_reference', 'map/std::multimap::const_reverse_iterator', 'map/std::multimap::difference_type', 'map/std::multimap::iterator', 'map/std::multimap::key_compare', 'map/std::multimap::key_type', 'map/std::multimap::mapped_type', 'map/std::multimap::pointer', 'map/std::multimap::reference', 'map/std::multimap::reverse_iterator', 'map/std::multimap::size_type', 'map/std::multimap::value_type', 'map/std::multimap::begin', 'map/std::multimap::cbegin', 'map/std::multimap::cend', 'map/std::multimap::clear', 'map/std::multimap::count', 'map/std::multimap::crbegin', 'map/std::multimap::crend', 'map/std::multimap::emplace', 'map/std::multimap::emplace_hint', 'map/std::multimap::empty', 'map/std::multimap::end', 'map/std::multimap::equal_range', 'map/std::multimap::erase', 'map/std::multimap::find', 'map/std::multimap::get_allocator', 'map/std::multimap::insert', 'map/std::multimap::key_comp', 'map/std::multimap::lower_bound', 'map/std::multimap::max_size', 'map/std::multimap::rbegin', 'map/std::multimap::rend', 'map/std::multimap::size', 'map/std::multimap::swap', 'map/std::multimap::upper_bound', 'map/std::multimap::value_comp']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::multimap [C++]", "std::multimap [C++], allocator_type", "std::multimap [C++], const_iterator", "std::multimap [C++], const_pointer", "std::multimap [C++], const_reference", "std::multimap [C++], const_reverse_iterator", "std::multimap [C++], difference_type", "std::multimap [C++], iterator", "std::multimap [C++], key_compare", "std::multimap [C++], key_type", "std::multimap [C++], mapped_type", "std::multimap [C++], pointer", "std::multimap [C++], reference", "std::multimap [C++], reverse_iterator", "std::multimap [C++], size_type", "std::multimap [C++], value_type", "std::multimap [C++], begin", "std::multimap [C++], cbegin", "std::multimap [C++], cend", "std::multimap [C++], clear", "std::multimap [C++], count", "std::multimap [C++], crbegin", "std::multimap [C++], crend", "std::multimap [C++], emplace", "std::multimap [C++], emplace_hint", "std::multimap [C++], empty", "std::multimap [C++], end", "std::multimap [C++], equal_range", "std::multimap [C++], erase", "std::multimap [C++], find", "std::multimap [C++], get_allocator", "std::multimap [C++], insert", "std::multimap [C++], key_comp", "std::multimap [C++], lower_bound", "std::multimap [C++], max_size", "std::multimap [C++], rbegin", "std::multimap [C++], rend", "std::multimap [C++], size", "std::multimap [C++], swap", "std::multimap [C++], upper_bound", "std::multimap [C++], value_comp"]
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # multimap Class
 The C++ Standard Library multimap class is used for the storage and retrieval of data from a collection in which the each element is a pair that has both a data value and a sort key. The value of the key does not need to be unique and is used to order the data automatically. The value of an element in a multimap, but not its associated key value, may be changed directly. Instead, key values associated with old elements must be deleted and new key values associated with new elements inserted.  

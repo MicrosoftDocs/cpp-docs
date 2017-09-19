@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unary operators, plus"
-  - "increment operators, overloaded"
-  - "unary operators, minus"
-  - "operators [C++], unary"
-  - "redefinable unary operators"
-  - "unary operators"
-  - "pointer dereference operator overloading"
-  - "plus operator"
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""unary operators [C++], plus"", ""increment operators [C++], overloaded"", ""unary operators [C++], minus"", ""operators [C++], unary"", ""redefinable unary operators [C++]"", ""unary operators [C++]"", ""pointer dereference operator overloading"", ""plus operator [C++]""]"]
 ms.assetid: 7683ef08-42a4-4283-928f-d3dd4f3ab4c0
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Overloading Unary Operators
 The unary operators that can be overloaded are the following:  

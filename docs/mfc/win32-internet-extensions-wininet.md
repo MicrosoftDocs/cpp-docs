@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Internet applications, Win32 Internet Extensions"
-  - "Internet client applications, about Internet client applications"
-  - "client applications, Win32 Internet"
-  - "WinInet classes, about WinInet classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Internet applications [MFC], Win32 Internet Extensions", "Internet client applications [MFC], about Internet client applications", "client applications [MFC], Win32 Internet", "WinInet classes [MFC], about WinInet classes"]
 ms.assetid: f8c80f0b-ce14-4f0d-a3cf-4f7d8c5cca59
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Win32 Internet Extensions (WinInet)
 An Internet client application is a program that accesses information from a network data source (server) using Internet protocols such as gopher, FTP, or HTTP. An Internet client application might access a server to retrieve data such as weather maps, stock prices, or newspaper headlines, for example. The Internet client can access the server through an external network (the Internet) or an internal network (sometimes called an intranet).  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['error_code', 'system_error/std::error_code', 'system_error/std::error_code::value_type', 'system_error/std::error_code::assign', 'system_error/std::error_code::category', 'system_error/std::error_code::clear', 'system_error/std::error_code::default_error_condition', 'system_error/std::error_code::message', 'system_error/std::error_code::operator bool']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "error_code class"
+f1_keywords: ['system_error/std::error_code', 'system_error/std::error_code::value_type', 'system_error/std::error_code::assign', 'system_error/std::error_code::category', 'system_error/std::error_code::clear', 'system_error/std::error_code::default_error_condition', 'system_error/std::error_code::message', 'system_error/std::error_code::operator bool']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::error_code", "std::error_code::value_type", "std::error_code::assign", "std::error_code::category", "std::error_code::clear", "std::error_code::default_error_condition", "std::error_code::message", ""]
 ms.assetid: c09b4a96-cb14-4281-a319-63543f9b2b4a
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # error_code Class
 Represents low-level system errors that are implementation-specific.  

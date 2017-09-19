@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['const_mem_fun_ref_t', 'xfunctional/std::const_mem_fun_ref_t']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "const_mem_fun_ref_t class"
+f1_keywords: ['xfunctional/std::const_mem_fun_ref_t']
+dev_langs: ["C++"]
+helpviewer_keywords: ["const_mem_fun_ref_t class"]
 ms.assetid: 316ddbaa-9f46-4931-8eba-ea4ca66360ef
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # const_mem_fun_ref_t Class
 An adapter class that allows a **const** member function that takes no arguments to be called as a unary function object when initialized with a reference argument.  

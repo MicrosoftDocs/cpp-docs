@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMultiPageDHtmlDialog', 'AFXDHTML/CMultiPageDHtmlDialog', 'AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMultiPageDHtmlDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog"]
 ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMultiPageDHtmlDialog Class
 A multipage dialog displays multiple HTML pages sequentially and handles the events from each page.  

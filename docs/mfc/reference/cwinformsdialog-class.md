@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog::CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog::GetControl', 'AFXWINFORMS/CWinFormsDialog::GetControlHandle', 'AFXWINFORMS/CWinFormsDialog::OnInitDialog']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], Windows Forms support"
-  - "CWinFormsDialog class"
-  - "Windows Forms [C++], MFC support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWinFormsDialog [MFC], CWinFormsDialog", "CWinFormsDialog [MFC], GetControl", "CWinFormsDialog [MFC], GetControlHandle", "CWinFormsDialog [MFC], OnInitDialog"]
 ms.assetid: e3cec000-a578-448e-b06a-8af256312f61
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CWinFormsDialog Class
 A wrapper for an MFC dialog class that hosts a Windows Forms user control.  

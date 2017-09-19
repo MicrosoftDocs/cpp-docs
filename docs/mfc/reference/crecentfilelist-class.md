@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRecentFileList', 'AFXADV/CRecentFileList', 'AFXADV/CRecentFileList::CRecentFileList', 'AFXADV/CRecentFileList::Add', 'AFXADV/CRecentFileList::GetDisplayName', 'AFXADV/CRecentFileList::GetSize', 'AFXADV/CRecentFileList::ReadList', 'AFXADV/CRecentFileList::Remove', 'AFXADV/CRecentFileList::UpdateMenu', 'AFXADV/CRecentFileList::WriteList']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++], most recently used"
-  - "MRU files"
-  - "CRecentFileList class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRecentFileList [MFC], CRecentFileList", "CRecentFileList [MFC], Add", "CRecentFileList [MFC], GetDisplayName", "CRecentFileList [MFC], GetSize", "CRecentFileList [MFC], ReadList", "CRecentFileList [MFC], Remove", "CRecentFileList [MFC], UpdateMenu", "CRecentFileList [MFC], WriteList"]
 ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CRecentFileList Class
 Supports control of the most recently used (MRU) file list.  

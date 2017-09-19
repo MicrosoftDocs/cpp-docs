@@ -4,62 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DAO [C++], exceptions"
-  - "assertions [C++], When to use exceptions"
-  - "exception handling [C++], MFC"
-  - "resource allocation exception"
-  - "resources [C++], allocating"
-  - "keywords [C++], exception handling"
-  - "errors [C++], detected by assertions"
-  - "ODBC exceptions [C++]"
-  - "serialization [C++], exceptions"
-  - "Automation [C++], exceptions"
-  - "exception macros [C++]"
-  - "predefined exceptions [C++]"
-  - "C++ exception handling, enabling"
-  - "C++ exception handling, MFC applications"
-  - "requests for unsupported services"
-  - "database exceptions [C++]"
-  - "archive exceptions [C++]"
-  - "MFC [C++], exceptions"
-  - "C++ exception handling, types of"
-  - "macros [C++], exception handling"
-  - "abnormal program execution [C++]"
-  - "OLE exceptions [C++], MFC exception handling"
-  - "error handling [C++], exceptions and"
-  - "class libraries [C++], exception support"
-  - "exceptions [C++], MFC macros vs. C++ keywords"
-  - "memory [C++], out-of-memory exceptions"
-  - "Windows [C++], resource allocation exceptions"
-  - "macros [C++], MFC exception macros"
-  - "function calls, results"
-  - "out-of-memory exceptions [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["DAO [MFC], exceptions", "assertions [MFC], When to use exceptions", "exception handling [MFC], MFC", "resource allocation exception", "resources [MFC], allocating", "keywords [MFC], exception handling", "errors [MFC], detected by assertions", "ODBC exceptions [MFC]", "serialization [MFC], exceptions", "Automation [MFC], exceptions", "exception macros [MFC]", "predefined exceptions [MFC]", "C++ exception handling [MFC], enabling", "C++ exception handling [MFC], MFC applications", "requests for unsupported services [MFC]", "database exceptions [MFC]", "archive exceptions [MFC]", "MFC, exceptions", "C++ exception handling [MFC], types of", "macros [MFC], exception handling", "abnormal program execution [MFC]", "OLE exceptions [MFC], MFC exception handling", "error handling [MFC], exceptions and", "class libraries [MFC], exception support", "exceptions [MFC], MFC macros vs. C++ keywords", "memory [MFC], out-of-memory exceptions", "Windows [MFC], resource allocation exceptions", "macros [MFC], MFC exception macros", "function calls [MFC], results", "out-of-memory exceptions [MFC]"]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Exception Handling in MFC
 This article explains the exception-handling mechanisms available in MFC. Two mechanisms are available:  

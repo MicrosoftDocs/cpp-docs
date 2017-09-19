@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros.exceptions"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "macros, exception handling"
-  - "DAO (Data Access Objects), exceptions"
-  - "OLE exceptions, MFC functions"
-  - "exceptions, processing"
-  - "exception macros"
-  - "termination functions, MFC"
-  - "MFC, exceptions"
-  - "exceptions, MFC throwing functions"
+f1_keywords: ["vc.mfc.macros.exceptions"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["macros [MFC], exception handling", "DAO (Data Access Objects), exceptions [MFC]", "OLE exceptions [MFC], MFC functions", "exceptions [MFC], processing", "exception macros [MFC]", "termination functions, MFC", "MFC, exceptions", "exceptions [MFC], MFC throwing functions"]
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Exception Processing
 When a program executes, a number of abnormal conditions and errors called "exceptions" can occur. These may include running out of memory, resource allocation errors, and failure to find files.  

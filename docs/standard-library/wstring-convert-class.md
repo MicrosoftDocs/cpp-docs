@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['wstring_convert', 'stdext::cvt::wstring_convert', 'cvt::wstring_convert', 'wstring/stdext::cvt::wstring_convert', 'locale/std::wstring_convert::byte_string', 'locale/std::wstring_convert::wide_string', 'locale/std::wstring_convert::state_type', 'locale/std::wstring_convert::int_type', 'locale/std::wstring_convert::from_bytes', 'locale/std::wstring_convert::to_bytes', 'locale/std::wstring_convert::converted', 'locale/std::wstring_convert::state']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wstring_convert class"
+f1_keywords: ['wstring/stdext::cvt::wstring_convert', 'locale/std::wstring_convert::byte_string', 'locale/std::wstring_convert::wide_string', 'locale/std::wstring_convert::state_type', 'locale/std::wstring_convert::int_type', 'locale/std::wstring_convert::from_bytes', 'locale/std::wstring_convert::to_bytes', 'locale/std::wstring_convert::converted', 'locale/std::wstring_convert::state']
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::cvt [C++], wstring_convert", "std::wstring_convert [C++], byte_string", "std::wstring_convert [C++], wide_string", "std::wstring_convert [C++], state_type", "std::wstring_convert [C++], int_type", "std::wstring_convert [C++], from_bytes", "std::wstring_convert [C++], to_bytes", "std::wstring_convert [C++], converted", "std::wstring_convert [C++], state"]
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # wstring_convert Class
 The template class `wstring_convert` performs conversions between a wide string and a byte string.  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_SCL_SECURE_NO_DEPRECATE"
-  - "_SCL_SECURE_NO_WARNINGS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_SCL_SECURE_NO_DEPRECATE"
-  - "_SCL_SECURE_NO_WARNINGS"
+f1_keywords: ['_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS']
+dev_langs: ["C++"]
+helpviewer_keywords: ["_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS"]
 ms.assetid: ef0ddea9-7c62-4b53-8b64-5f4fd369776f
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # _SCL_SECURE_NO_WARNINGS
 Calling any one of the potentially unsafe methods in the C++ Standard Library will result in [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). To disable this warning, define the macro **_SCL_SECURE_NO_WARNINGS** in your code:  

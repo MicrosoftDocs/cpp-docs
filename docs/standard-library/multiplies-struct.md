@@ -4,36 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['multiplies', 'xfunctional/std::multiplies']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multiplies class"
-  - "multiplies struct"
+f1_keywords: ['xfunctional/std::multiplies']
+dev_langs: ["C++"]
+helpviewer_keywords: ["multiplies class", "multiplies struct"]
 ms.assetid: ec85e8af-70ad-44ad-90f0-d961a5847864
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # multiplies Struct
 A predefined function object that performs the multiplication operation (binary `operator*`) on its arguments.  

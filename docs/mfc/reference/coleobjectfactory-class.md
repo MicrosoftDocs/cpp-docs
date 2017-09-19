@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleObjectFactory', 'AFXDISP/COleObjectFactory', 'AFXDISP/COleObjectFactory::COleObjectFactory', 'AFXDISP/COleObjectFactory::GetClassID', 'AFXDISP/COleObjectFactory::IsLicenseValid', 'AFXDISP/COleObjectFactory::IsRegistered', 'AFXDISP/COleObjectFactory::Register', 'AFXDISP/COleObjectFactory::RegisterAll', 'AFXDISP/COleObjectFactory::Revoke', 'AFXDISP/COleObjectFactory::RevokeAll', 'AFXDISP/COleObjectFactory::UnregisterAll', 'AFXDISP/COleObjectFactory::UpdateRegistry', 'AFXDISP/COleObjectFactory::UpdateRegistryAll', 'AFXDISP/COleObjectFactory::GetLicenseKey', 'AFXDISP/COleObjectFactory::OnCreateObject', 'AFXDISP/COleObjectFactory::VerifyLicenseKey', 'AFXDISP/COleObjectFactory::VerifyUserLicense']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE, class factory"
-  - "OLE class factory"
-  - "COleObjectFactory class"
-  - "objects [C++], creating OLE"
-  - "OLE objects"
-  - "object creation, OLE objects"
-  - "class factories, COleObjectFactory class"
-  - "OLE objects, creating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleObjectFactory [MFC], COleObjectFactory", "COleObjectFactory [MFC], GetClassID", "COleObjectFactory [MFC], IsLicenseValid", "COleObjectFactory [MFC], IsRegistered", "COleObjectFactory [MFC], Register", "COleObjectFactory [MFC], RegisterAll", "COleObjectFactory [MFC], Revoke", "COleObjectFactory [MFC], RevokeAll", "COleObjectFactory [MFC], UnregisterAll", "COleObjectFactory [MFC], UpdateRegistry", "COleObjectFactory [MFC], UpdateRegistryAll", "COleObjectFactory [MFC], GetLicenseKey", "COleObjectFactory [MFC], OnCreateObject", "COleObjectFactory [MFC], VerifyLicenseKey", "COleObjectFactory [MFC], VerifyUserLicense"]
 ms.assetid: ab179c1e-4af2-44aa-a576-37c48149b427
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleObjectFactory Class
 Implements the OLE class factory, which creates OLE objects such as servers, automation objects, and documents.  

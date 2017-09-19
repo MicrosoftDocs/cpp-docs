@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CImageList', 'AFXCMN/CImageList', 'AFXCMN/CImageList::CImageList', 'AFXCMN/CImageList::Add', 'AFXCMN/CImageList::Attach', 'AFXCMN/CImageList::BeginDrag', 'AFXCMN/CImageList::Copy', 'AFXCMN/CImageList::Create', 'AFXCMN/CImageList::DeleteImageList', 'AFXCMN/CImageList::DeleteTempMap', 'AFXCMN/CImageList::Detach', 'AFXCMN/CImageList::DragEnter', 'AFXCMN/CImageList::DragLeave', 'AFXCMN/CImageList::DragMove', 'AFXCMN/CImageList::DragShowNolock', 'AFXCMN/CImageList::Draw', 'AFXCMN/CImageList::DrawEx', 'AFXCMN/CImageList::DrawIndirect', 'AFXCMN/CImageList::EndDrag', 'AFXCMN/CImageList::ExtractIcon', 'AFXCMN/CImageList::FromHandle', 'AFXCMN/CImageList::FromHandlePermanent', 'AFXCMN/CImageList::GetBkColor', 'AFXCMN/CImageList::GetDragImage', 'AFXCMN/CImageList::GetImageCount', 'AFXCMN/CImageList::GetImageInfo', 'AFXCMN/CImageList::GetSafeHandle', 'AFXCMN/CImageList::Read', 'AFXCMN/CImageList::Remove', 'AFXCMN/CImageList::Replace', 'AFXCMN/CImageList::SetBkColor', 'AFXCMN/CImageList::SetDragCursorImage', 'AFXCMN/CImageList::SetImageCount', 'AFXCMN/CImageList::SetOverlayImage', 'AFXCMN/CImageList::Write', 'AFXCMN/CImageList::m_hImageList']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows common controls [C++], CImageList"
-  - "image lists [C++], CImageList class"
-  - "CImageList class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CImageList [MFC], CImageList", "CImageList [MFC], Add", "CImageList [MFC], Attach", "CImageList [MFC], BeginDrag", "CImageList [MFC], Copy", "CImageList [MFC], Create", "CImageList [MFC], DeleteImageList", "CImageList [MFC], DeleteTempMap", "CImageList [MFC], Detach", "CImageList [MFC], DragEnter", "CImageList [MFC], DragLeave", "CImageList [MFC], DragMove", "CImageList [MFC], DragShowNolock", "CImageList [MFC], Draw", "CImageList [MFC], DrawEx", "CImageList [MFC], DrawIndirect", "CImageList [MFC], EndDrag", "CImageList [MFC], ExtractIcon", "CImageList [MFC], FromHandle", "CImageList [MFC], FromHandlePermanent", "CImageList [MFC], GetBkColor", "CImageList [MFC], GetDragImage", "CImageList [MFC], GetImageCount", "CImageList [MFC], GetImageInfo", "CImageList [MFC], GetSafeHandle", "CImageList [MFC], Read", "CImageList [MFC], Remove", "CImageList [MFC], Replace", "CImageList [MFC], SetBkColor", "CImageList [MFC], SetDragCursorImage", "CImageList [MFC], SetImageCount", "CImageList [MFC], SetOverlayImage", "CImageList [MFC], Write", "CImageList [MFC], m_hImageList"]
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CImageList Class
 Provides the functionality of the Windows common image list control.  

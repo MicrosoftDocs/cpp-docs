@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CInstantaneousTransition', 'AFXANIMATIONCONTROLLER/CInstantaneousTransition', 'AFXANIMATIONCONTROLLER/CInstantaneousTransition::CInstantaneousTransition', 'AFXANIMATIONCONTROLLER/CInstantaneousTransition::Create', 'AFXANIMATIONCONTROLLER/CInstantaneousTransition::m_dblFinalValue']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CInstantaneousTransition class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CInstantaneousTransition [MFC], CInstantaneousTransition", "CInstantaneousTransition [MFC], Create", "CInstantaneousTransition [MFC], m_dblFinalValue"]
 ms.assetid: c3d5121f-2c6b-4221-9e57-10e082a31120
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CInstantaneousTransition Class
 Encapsulates an instantaneous transition.  

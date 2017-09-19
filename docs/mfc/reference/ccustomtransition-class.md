@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCustomTransition', 'AFXANIMATIONCONTROLLER/CCustomTransition', 'AFXANIMATIONCONTROLLER/CCustomTransition::CCustomTransition', 'AFXANIMATIONCONTROLLER/CCustomTransition::Create', 'AFXANIMATIONCONTROLLER/CCustomTransition::SetInitialValue', 'AFXANIMATIONCONTROLLER/CCustomTransition::SetInitialVelocity', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_bInitialValueSpecified', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_bInitialVelocitySpecified', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_initialValue', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_initialVelocity', 'AFXANIMATIONCONTROLLER/CCustomTransition::m_pInterpolator']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CCustomTransition class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCustomTransition [MFC], CCustomTransition", "CCustomTransition [MFC], Create", "CCustomTransition [MFC], SetInitialValue", "CCustomTransition [MFC], SetInitialVelocity", "CCustomTransition [MFC], m_bInitialValueSpecified", "CCustomTransition [MFC], m_bInitialVelocitySpecified", "CCustomTransition [MFC], m_initialValue", "CCustomTransition [MFC], m_initialVelocity", "CCustomTransition [MFC], m_pInterpolator"]
 ms.assetid: 5bd3f492-940f-4290-a38b-fa68eb8f8401
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CCustomTransition Class
 Implements a custom transition.  

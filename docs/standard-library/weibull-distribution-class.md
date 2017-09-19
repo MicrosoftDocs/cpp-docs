@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['weibull_distribution', 'random/std::weibull_distribution', 'random/std::weibull_distribution::reset', 'random/std::weibull_distribution::a', 'random/std::weibull_distribution::b', 'random/std::weibull_distribution::param', 'random/std::weibull_distribution::min', 'random/std::weibull_distribution::max', 'random/std::weibull_distribution::operator()', 'random/std::weibull_distribution::param_type', 'random/std::weibull_distribution::param_type::a', 'random/std::weibull_distribution::param_type::b', 'random/std::weibull_distribution::param_type::operator==', 'random/std::weibull_distribution::param_type::operator!=', 'random/std::weibull_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "weibull_distribution class"
+f1_keywords: ['random/std::weibull_distribution', 'random/std::weibull_distribution::reset', 'random/std::weibull_distribution::a', 'random/std::weibull_distribution::b', 'random/std::weibull_distribution::param', 'random/std::weibull_distribution::min', 'random/std::weibull_distribution::max', 'random/std::weibull_distribution::operator()', 'random/std::weibull_distribution::param_type', 'random/std::weibull_distribution::param_type::a', 'random/std::weibull_distribution::param_type::b', 'random/std::weibull_distribution::param_type::operator==', 'random/std::weibull_distribution::param_type::operator!=', 'random/std::weibull_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::weibull_distribution [C++]", "std::weibull_distribution [C++], reset", "std::weibull_distribution [C++], a", "std::weibull_distribution [C++], b", "std::weibull_distribution [C++], param", "std::weibull_distribution [C++], min", "std::weibull_distribution [C++], max", "std::weibull_distribution [C++], param_type", "std::weibull_distribution [C++], param_type"]
 ms.assetid: f20b49d3-1b9a-41af-8db4-baf800eaa02b
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # weibull_distribution Class
 Generates a Weibull distribution.  

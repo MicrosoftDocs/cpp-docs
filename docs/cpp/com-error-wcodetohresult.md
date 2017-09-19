@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "_com_error::WCodeToHRESULT"
-  - "_com_error.WCodeToHRESULT"
-  - "WCodeToHRESULT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "WCodeToHRESULT method"
+f1_keywords: []
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""WCodeToHRESULT method [C++]""]"]
 ms.assetid: 0ec43a4b-ca91-42d5-b270-3fde9c8412ea
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # _com_error::WCodeToHRESULT
 **Microsoft Specific**  

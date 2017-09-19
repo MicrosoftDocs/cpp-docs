@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "type-safe collections"
-  - "serializing collection-class elements"
-  - "collection classes, type safety"
-  - "SerializeElements function"
-  - "collection classes, template-based"
-  - "serialization [C++], collection classes"
-  - "collection classes, deriving from nontemplate"
+dev_langs: ["C++"]
+helpviewer_keywords: ["type-safe collections [MFC]", "serializing collection-class elements [MFC]", "collection classes [MFC], type safety", "SerializeElements function [MFC]", "collection classes [MFC], template-based", "serialization [MFC], collection classes", "collection classes [MFC], deriving from nontemplate"]
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # How to: Make a Type-Safe Collection
 This article explains how to make type-safe collections for your own data types. Topics include:  

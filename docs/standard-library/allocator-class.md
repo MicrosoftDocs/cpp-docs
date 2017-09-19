@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocator', 'memory/std::allocator', 'memory/std::allocator::const_pointer', 'memory/std::allocator::const_reference', 'memory/std::allocator::difference_type', 'memory/std::allocator::pointer', 'memory/std::allocator::reference', 'memory/std::allocator::size_type', 'memory/std::allocator::value_type', 'memory/std::allocator::address', 'memory/std::allocator::allocate', 'memory/std::allocator::construct', 'memory/std::allocator::deallocate', 'memory/std::allocator::destroy', 'memory/std::allocator::max_size', 'memory/std::allocator::rebind']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "allocator class"
+f1_keywords: ['memory/std::allocator', 'memory/std::allocator::const_pointer', 'memory/std::allocator::const_reference', 'memory/std::allocator::difference_type', 'memory/std::allocator::pointer', 'memory/std::allocator::reference', 'memory/std::allocator::size_type', 'memory/std::allocator::value_type', 'memory/std::allocator::address', 'memory/std::allocator::allocate', 'memory/std::allocator::construct', 'memory/std::allocator::deallocate', 'memory/std::allocator::destroy', 'memory/std::allocator::max_size', 'memory/std::allocator::rebind']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::allocator [C++]", "std::allocator [C++], const_pointer", "std::allocator [C++], const_reference", "std::allocator [C++], difference_type", "std::allocator [C++], pointer", "std::allocator [C++], reference", "std::allocator [C++], size_type", "std::allocator [C++], value_type", "std::allocator [C++], address", "std::allocator [C++], allocate", "std::allocator [C++], construct", "std::allocator [C++], deallocate", "std::allocator [C++], destroy", "std::allocator [C++], max_size", "std::allocator [C++], rebind"]
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # allocator Class
 The template class describes an object that manages storage allocation and freeing for arrays of objects of type **Type**. An object of class **allocator** is the default allocator object specified in the constructors for several container template classes in the C++ Standard Library.  

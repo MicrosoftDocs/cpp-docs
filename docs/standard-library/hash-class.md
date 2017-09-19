@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['hash', 'functional/std::hash', 'bitset/std::hash', 'memory/std::hash', 'string/std::hash', 'system_error/std::hash', 'thread/std::hash', 'typeindex/std::hash', 'vector/std::hash', 'XSTDDEF/std::hash', 'xstring/std::hash']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hash class"
+f1_keywords: ['functional/std::hash', 'bitset/std::hash', 'memory/std::hash', 'string/std::hash', 'system_error/std::hash', 'thread/std::hash', 'typeindex/std::hash', 'vector/std::hash', 'XSTDDEF/std::hash', 'xstring/std::hash']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]"]
 ms.assetid: e1b500c6-a5c8-4f6f-ad33-7ec52eb8e2e4
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # hash Class
 Computes hash code for a value.  

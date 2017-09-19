@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.mfc.exe.database"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC Application Wizard, database support"
+f1_keywords: ["vc.appwiz.mfc.exe.database"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC Application Wizard, database support"]
 ms.assetid: 9ddf4558-fd41-4ac7-8d9b-c93d9c68ab59
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Database Support, MFC Application Wizard
 This page provides options that allow you to specify the level of database support (plus a data source, if necessary) for your project.  

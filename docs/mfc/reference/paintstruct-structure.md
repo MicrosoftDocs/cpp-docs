@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "PAINTSTRUCT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PAINTSTRUCT structure"
+f1_keywords: ["PAINTSTRUCT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["PAINTSTRUCT structure [MFC]"]
 ms.assetid: 81ce4993-3e89-43b2-8c98-7946f1314d24
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # PAINTSTRUCT Structure
 The `PAINTSTRUCT` structure contains information that can be used to paint the client area of a window.  

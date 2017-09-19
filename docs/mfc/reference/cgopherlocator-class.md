@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CGopherLocator', 'AFXINET/CGopherLocator', 'AFXINET/CGopherLocator::CGopherLocator', 'AFXINET/CGopherLocator::GetLocatorType']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "gopher locator"
-  - "CGopherLocator class"
-  - "Internet, gopher searches"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CGopherLocator [MFC], CGopherLocator", "CGopherLocator [MFC], GetLocatorType"]
 ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CGopherLocator Class
 Gets a gopher "locator" from a gopher server, determines the locator's type, and makes the locator available to [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md).  

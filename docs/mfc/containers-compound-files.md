@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "compound files"
-  - "compound documents"
-  - "containers [C++], compound files"
-  - "OLE documents, compound files"
-  - "performance [C++], compound files"
-  - "files [C++], compound"
-  - "standardized file structure compound files"
-  - "documents [C++], compound"
-  - "documents [C++], OLE"
-  - "OLE containers, compound files"
-  - "access modes for files [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["compound files [MFC]", "compound documents", "containers [MFC], compound files", "OLE documents [MFC], compound files", "performance [MFC], compound files", "files [MFC], compound", "standardized file structure compound files", "documents [MFC], compound", "documents [MFC], OLE", "OLE containers [MFC], compound files", "access modes for files [MFC]"]
 ms.assetid: 8b83cb3e-76c8-4bbe-ba16-737092b36f49
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Containers: Compound Files
 This article explains the components and implementation of compound files and the advantages and disadvantages of using compound files in your OLE applications.  

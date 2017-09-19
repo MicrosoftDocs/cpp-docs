@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocale/std::locale', 'locale', 'locale/std::locale::category', 'locale/std::locale::combine', 'locale/std::locale::name', 'locale/std::locale::classic', 'locale/std::locale::global', 'locale/std::locale::operator( )', 'locale/std::locale::facet', 'locale/std::locale::id']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "locale class"
+f1_keywords: ['xlocale/std::locale', 'locale/std::locale::category', 'locale/std::locale::combine', 'locale/std::locale::name', 'locale/std::locale::classic', 'locale/std::locale::global', 'locale/std::locale::operator( )', 'locale/std::locale::facet', 'locale/std::locale::id']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::locale [C++]", "std::locale [C++], category", "std::locale [C++], combine", "std::locale [C++], name", "std::locale [C++], classic", "std::locale [C++], global", "std::locale [C++], facet", "std::locale [C++], id"]
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # locale Class
 The class that describes a locale object that encapsulates culture-specific information as a set of facets that collectively define a specific localized environment.  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DELETEITEMSTRUCT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DELETEITEMSTRUCT structure"
+f1_keywords: ["DELETEITEMSTRUCT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DELETEITEMSTRUCT structure [MFC]"]
 ms.assetid: 48d3998c-f4a8-402a-bf90-df3770a78685
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # DELETEITEMSTRUCT Structure
 The `DELETEITEMSTRUCT` structure describes a deleted owner-drawn list-box or combo-box item.  

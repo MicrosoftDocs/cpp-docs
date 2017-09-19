@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFieldExchange', 'AFXDB/CFieldExchange', 'AFXDB/CFieldExchange::IsFieldType', 'AFXDB/CFieldExchange::SetFieldType']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "enum FieldType, CFieldExchange"
-  - "RFX (record field exchange) [C++]"
-  - "RFX (record field exchange) [C++], classes for"
-  - "CFieldExchange class"
-  - "FieldType enumeration"
-  - "data types [C++], custom"
-  - "enum FieldType"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFieldExchange [MFC], IsFieldType", "CFieldExchange [MFC], SetFieldType"]
 ms.assetid: 24c5c0b3-06a6-430e-9b6f-005a2c65e29f
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CFieldExchange Class
 Supports the record field exchange (RFX) and bulk record field exchange (Bulk RFX) routines used by the database classes.  

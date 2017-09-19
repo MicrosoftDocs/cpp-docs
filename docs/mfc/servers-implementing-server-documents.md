@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE server applications, managing server documents"
-  - "OLE server applications, implementing OLE servers"
-  - "servers, server documents"
-  - "server documents, implementing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE server applications [MFC], managing server documents", "OLE server applications [MFC], implementing OLE servers", "servers, server documents", "server documents [MFC], implementing"]
 ms.assetid: cca1451a-ad09-47ed-b56e-bccd78fc86d1
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Servers: Implementing Server Documents
 This article explains the steps you must take to successfully implement a server document if you did not specify the OLE Server option in the application wizard.  

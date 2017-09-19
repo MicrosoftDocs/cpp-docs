@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPtrArray', 'AFXCOLL/CPtrArray', 'AFXCOLL/CObArray::CObArray', 'AFXCOLL/CObArray::Add', 'AFXCOLL/CObArray::Append', 'AFXCOLL/CObArray::Copy', 'AFXCOLL/CObArray::ElementAt', 'AFXCOLL/CObArray::FreeExtra', 'AFXCOLL/CObArray::GetAt', 'AFXCOLL/CObArray::GetCount', 'AFXCOLL/CObArray::GetData', 'AFXCOLL/CObArray::GetSize', 'AFXCOLL/CObArray::GetUpperBound', 'AFXCOLL/CObArray::InsertAt', 'AFXCOLL/CObArray::IsEmpty', 'AFXCOLL/CObArray::RemoveAll', 'AFXCOLL/CObArray::RemoveAt', 'AFXCOLL/CObArray::SetAt', 'AFXCOLL/CObArray::SetAtGrow', 'AFXCOLL/CObArray::SetSize']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "arrays [C++], generic"
-  - "CPtrArray class"
-  - "generic arrays"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArray [MFC], Append", "CObArray [MFC], Copy", "CObArray [MFC], ElementAt", "CObArray [MFC], FreeExtra", "CObArray [MFC], GetAt", "CObArray [MFC], GetCount", "CObArray [MFC], GetData", "CObArray [MFC], GetSize", "CObArray [MFC], GetUpperBound", "CObArray [MFC], InsertAt", "CObArray [MFC], IsEmpty", "CObArray [MFC], RemoveAll", "CObArray [MFC], RemoveAt", "CObArray [MFC], SetAt", "CObArray [MFC], SetAtGrow", "CObArray [MFC], SetSize"]
 ms.assetid: c23b87a3-bf84-49d6-a66b-61e999d0938a
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPtrArray Class
 Supports arrays of void pointers.  

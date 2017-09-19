@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "objects [C++], creating graphic objects"
-  - "object creation, graphic objects"
-  - "objects [C++], graphic objects"
-  - "one-stage and two-stage construction of objects"
+dev_langs: ["C++"]
+helpviewer_keywords: ["objects [MFC], creating graphic objects", "object creation [MFC], graphic objects", "objects [MFC], graphic objects", "one-stage and two-stage construction of objects [MFC]"]
 ms.assetid: 5a1c410c-4a4b-4dd9-a2ec-ced831aa7f21
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # One-Stage and Two-Stage Construction of Objects
 You have a choice between two techniques for creating graphic objects, such as pens and brushes:  

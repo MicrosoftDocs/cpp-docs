@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSplitButton', 'AFXCMN/CSplitButton', 'AFXCMN/CSplitButton::CSplitButton', 'AFXCMN/CSplitButton::Create', 'AFXCMN/CSplitButton::SetDropDownMenu', 'AFXCMN/CSplitButton::OnDropDown']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSplitButton class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSplitButton [MFC], CSplitButton", "CSplitButton [MFC], Create", "CSplitButton [MFC], SetDropDownMenu", "CSplitButton [MFC], OnDropDown"]
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSplitButton Class
 The `CSplitButton` class represents a split button control. The split button control performs a default behavior when a user clicks the main part of the button, and displays a drop-down menu when a user clicks the drop-down arrow of the button.  

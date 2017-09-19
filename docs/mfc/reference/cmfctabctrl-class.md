@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCTabCtrl', 'AFXTABCTRL/CMFCTabCtrl', 'AFXTABCTRL/CMFCTabCtrl::ActivateMDITab', 'AFXTABCTRL/CMFCTabCtrl::AllowDestroyEmptyTabbedPane', 'AFXTABCTRL/CMFCTabCtrl::AutoSizeWindow', 'AFXTABCTRL/CMFCTabCtrl::CalcRectEdit', 'AFXTABCTRL/CMFCTabCtrl::Create', 'AFXTABCTRL/CMFCTabCtrl::EnableActiveTabCloseButton', 'AFXTABCTRL/CMFCTabCtrl::EnableInPlaceEdit', 'AFXTABCTRL/CMFCTabCtrl::EnableTabDocumentsMenu', 'AFXTABCTRL/CMFCTabCtrl::EnsureVisible', 'AFXTABCTRL/CMFCTabCtrl::GetDocumentIcon', 'AFXTABCTRL/CMFCTabCtrl::GetFirstVisibleTabNum', 'AFXTABCTRL/CMFCTabCtrl::GetResizeMode', 'AFXTABCTRL/CMFCTabCtrl::GetScrollBar', 'AFXTABCTRL/CMFCTabCtrl::GetTabArea', 'AFXTABCTRL/CMFCTabCtrl::GetTabMaxWidth', 'AFXTABCTRL/CMFCTabCtrl::GetTabsHeight', 'AFXTABCTRL/CMFCTabCtrl::GetTabsRect', 'AFXTABCTRL/CMFCTabCtrl::GetWndArea', 'AFXTABCTRL/CMFCTabCtrl::HideActiveWindowHorzScrollBar', 'AFXTABCTRL/CMFCTabCtrl::HideInactiveWindow', 'AFXTABCTRL/CMFCTabCtrl::HideNoTabs', 'AFXTABCTRL/CMFCTabCtrl::HideSingleTab', 'AFXTABCTRL/CMFCTabCtrl::IsActiveInMDITabGroup', 'AFXTABCTRL/CMFCTabCtrl::IsActiveTabBoldFont', 'AFXTABCTRL/CMFCTabCtrl::IsActiveTabCloseButton', 'AFXTABCTRL/CMFCTabCtrl::IsDrawFrame', 'AFXTABCTRL/CMFCTabCtrl::IsFlatFrame', 'AFXTABCTRL/CMFCTabCtrl::IsFlatTab', 'AFXTABCTRL/CMFCTabCtrl::IsLeftRightRounded', 'AFXTABCTRL/CMFCTabCtrl::IsMDITabGroup', 'AFXTABCTRL/CMFCTabCtrl::IsOneNoteStyle', 'AFXTABCTRL/CMFCTabCtrl::IsSharedScroll', 'AFXTABCTRL/CMFCTabCtrl::IsTabDocumentsMenu', 'AFXTABCTRL/CMFCTabCtrl::IsVS2005Style', 'AFXTABCTRL/CMFCTabCtrl::ModifyTabStyle', 'AFXTABCTRL/CMFCTabCtrl::OnDragEnter', 'AFXTABCTRL/CMFCTabCtrl::OnDragOver', 'AFXTABCTRL/CMFCTabCtrl::OnShowTabDocumentsMenu', 'AFXTABCTRL/CMFCTabCtrl::SetActiveInMDITabGroup', 'AFXTABCTRL/CMFCTabCtrl::SetActiveTab', 'AFXTABCTRL/CMFCTabCtrl::SetActiveTabBoldFont', 'AFXTABCTRL/CMFCTabCtrl::SetDrawFrame', 'AFXTABCTRL/CMFCTabCtrl::SetFlatFrame', 'AFXTABCTRL/CMFCTabCtrl::SetImageList', 'AFXTABCTRL/CMFCTabCtrl::SetResizeMode', 'AFXTABCTRL/CMFCTabCtrl::SetTabMaxWidth', 'AFXTABCTRL/CMFCTabCtrl::StopResize', 'AFXTABCTRL/CMFCTabCtrl::SynchronizeScrollBar', 'AFXTABCTRL/CMFCTabCtrl::m_bEnableActivate']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCTabCtrl::SwapTabs method"
-  - "CMFCTabCtrl constructor"
-  - "CMFCTabCtrl::MoveTab method"
-  - "CMFCTabCtrl::GetTabFromPoint method"
-  - "CMFCTabCtrl::PreTranslateMessage method"
-  - "CMFCTabCtrl::RecalcLayout method"
-  - "CMFCTabCtrl class"
-  - "CMFCTabCtrl::IsPtInTabArea method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCTabCtrl [MFC], ActivateMDITab", "CMFCTabCtrl [MFC], AllowDestroyEmptyTabbedPane", "CMFCTabCtrl [MFC], AutoSizeWindow", "CMFCTabCtrl [MFC], CalcRectEdit", "CMFCTabCtrl [MFC], Create", "CMFCTabCtrl [MFC], EnableActiveTabCloseButton", "CMFCTabCtrl [MFC], EnableInPlaceEdit", "CMFCTabCtrl [MFC], EnableTabDocumentsMenu", "CMFCTabCtrl [MFC], EnsureVisible", "CMFCTabCtrl [MFC], GetDocumentIcon", "CMFCTabCtrl [MFC], GetFirstVisibleTabNum", "CMFCTabCtrl [MFC], GetResizeMode", "CMFCTabCtrl [MFC], GetScrollBar", "CMFCTabCtrl [MFC], GetTabArea", "CMFCTabCtrl [MFC], GetTabMaxWidth", "CMFCTabCtrl [MFC], GetTabsHeight", "CMFCTabCtrl [MFC], GetTabsRect", "CMFCTabCtrl [MFC], GetWndArea", "CMFCTabCtrl [MFC], HideActiveWindowHorzScrollBar", "CMFCTabCtrl [MFC], HideInactiveWindow", "CMFCTabCtrl [MFC], HideNoTabs", "CMFCTabCtrl [MFC], HideSingleTab", "CMFCTabCtrl [MFC], IsActiveInMDITabGroup", "CMFCTabCtrl [MFC], IsActiveTabBoldFont", "CMFCTabCtrl [MFC], IsActiveTabCloseButton", "CMFCTabCtrl [MFC], IsDrawFrame", "CMFCTabCtrl [MFC], IsFlatFrame", "CMFCTabCtrl [MFC], IsFlatTab", "CMFCTabCtrl [MFC], IsLeftRightRounded", "CMFCTabCtrl [MFC], IsMDITabGroup", "CMFCTabCtrl [MFC], IsOneNoteStyle", "CMFCTabCtrl [MFC], IsSharedScroll", "CMFCTabCtrl [MFC], IsTabDocumentsMenu", "CMFCTabCtrl [MFC], IsVS2005Style", "CMFCTabCtrl [MFC], ModifyTabStyle", "CMFCTabCtrl [MFC], OnDragEnter", "CMFCTabCtrl [MFC], OnDragOver", "CMFCTabCtrl [MFC], OnShowTabDocumentsMenu", "CMFCTabCtrl [MFC], SetActiveInMDITabGroup", "CMFCTabCtrl [MFC], SetActiveTab", "CMFCTabCtrl [MFC], SetActiveTabBoldFont", "CMFCTabCtrl [MFC], SetDrawFrame", "CMFCTabCtrl [MFC], SetFlatFrame", "CMFCTabCtrl [MFC], SetImageList", "CMFCTabCtrl [MFC], SetResizeMode", "CMFCTabCtrl [MFC], SetTabMaxWidth", "CMFCTabCtrl [MFC], StopResize", "CMFCTabCtrl [MFC], SynchronizeScrollBar", "CMFCTabCtrl [MFC], m_bEnableActivate"]
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCTabCtrl Class
 The `CMFCTabCtrl` class provides functionality for a tab control. The tab control displays a dockable window with flat or three-dimensional tabs at its top or bottom. The tabs can display text and an image and can change color when active.  

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.win32"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Internet classes"
-  - "WinInet classes, classes"
-  - "Win32 [C++], Internet classes"
-  - "Windows API [C++], Internet classes"
+f1_keywords: ["vc.classes.win32"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Internet classes [MFC]", "WinInet classes [MFC], classes", "Win32 [MFC], Internet classes", "Windows API [MFC], Internet classes"]
 ms.assetid: b49601d5-3025-4068-9408-316b54ee4375
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Win32 Internet Classes
 MFC wraps the Win32 Internet (WinInet) and ActiveX technology to make Internet programming easier.  

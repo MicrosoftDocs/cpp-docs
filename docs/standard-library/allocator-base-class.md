@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocator_base', 'allocators/stdext::allocator_base', 'stdext::allocator_base', 'stdext::allocators::allocator_base', 'allocators/stdext::allocators::allocator_base', 'allocators::allocator_base', 'allocators/stdext::allocator_base::const_pointer', 'allocators/stdext::allocator_base::const_reference', 'allocators/stdext::allocator_base::difference_type', 'allocators/stdext::allocator_base::pointer', 'allocators/stdext::allocator_base::reference', 'allocators/stdext::allocator_base::size_type', 'allocators/stdext::allocator_base::value_type', 'allocators/stdext::allocator_base::_Charalloc', 'allocators/stdext::allocator_base::_Chardealloc', 'allocators/stdext::allocator_base::address', 'allocators/stdext::allocator_base::allocate', 'allocators/stdext::allocator_base::construct', 'allocators/stdext::allocator_base::deallocate', 'allocators/stdext::allocator_base::destroy', 'allocators/stdext::allocator_base::max_size']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "allocator_base class"
+f1_keywords: ['allocators/stdext::allocator_base', 'allocators/stdext::allocators::allocator_base', 'allocators/stdext::allocator_base::const_pointer', 'allocators/stdext::allocator_base::const_reference', 'allocators/stdext::allocator_base::difference_type', 'allocators/stdext::allocator_base::pointer', 'allocators/stdext::allocator_base::reference', 'allocators/stdext::allocator_base::size_type', 'allocators/stdext::allocator_base::value_type', 'allocators/stdext::allocator_base::_Charalloc', 'allocators/stdext::allocator_base::_Chardealloc', 'allocators/stdext::allocator_base::address', 'allocators/stdext::allocator_base::allocate', 'allocators/stdext::allocator_base::construct', 'allocators/stdext::allocator_base::deallocate', 'allocators/stdext::allocator_base::destroy', 'allocators/stdext::allocator_base::max_size']
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::allocator_base [C++]", "stdext::allocators [C++], allocator_base", "stdext::allocator_base [C++], const_pointer", "stdext::allocator_base [C++], const_reference", "stdext::allocator_base [C++], difference_type", "stdext::allocator_base [C++], pointer", "stdext::allocator_base [C++], reference", "stdext::allocator_base [C++], size_type", "stdext::allocator_base [C++], value_type", "stdext::allocator_base [C++], _Charalloc", "stdext::allocator_base [C++], _Chardealloc", "stdext::allocator_base [C++], address", "stdext::allocator_base [C++], allocate", "stdext::allocator_base [C++], construct", "stdext::allocator_base [C++], deallocate", "stdext::allocator_base [C++], destroy", "stdext::allocator_base [C++], max_size"]
 ms.assetid: f920b45f-2a88-4bb0-8ead-b6126b426ed4
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # allocator_base Class
 Defines the base class and common functions needed to create a user-defined allocator from a synchronization filter.  

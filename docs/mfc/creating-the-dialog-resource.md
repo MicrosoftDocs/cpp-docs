@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog resources"
-  - "MFC dialog boxes, creating"
-  - "dialog templates, creating dialog resource"
-  - "templates, creating"
-  - "resources [MFC], creating dialog boxes"
-  - "MFC dialog boxes, dialog resource"
+dev_langs: ["C++"]
+helpviewer_keywords: ["dialog resources", "MFC dialog boxes [MFC], creating", "dialog templates [MFC], creating dialog resource", "templates [MFC], creating", "resources [MFC], creating dialog boxes", "MFC dialog boxes [MFC], dialog resource"]
 ms.assetid: 0b83bd33-14d3-4611-8129-fccdae18053e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Creating the Dialog Resource
 To design the [dialog box](../mfc/dialog-boxes.md) and create the dialog resource, you use the [dialog editor](../windows/dialog-editor.md). In the dialog editor, you can:  

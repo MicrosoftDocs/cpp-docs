@@ -4,37 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "GLOBAL_DATA"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AFX_GLOBAL_DATA structure"
-  - "AFX_GLOBAL_DATA constructor"
+f1_keywords: ["AFX_GLOBAL_DATA"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AFX_GLOBAL_DATA structure [MFC]", "AFX_GLOBAL_DATA constructor"]
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # AFX_GLOBAL_DATA Structure
 The `AFX_GLOBAL_DATA` structure contains fields and methods that are used to manage the framework or customize the appearance and behavior of your application.  

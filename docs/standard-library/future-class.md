@@ -4,33 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['future/std::future', 'future/std::future::future', 'future/std::future::get', 'future/std::future::share', 'future/std::future::valid', 'future/std::future::wait', 'future/std::future::wait_for', 'future/std::future::wait_until']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['future/std::future', 'future/std::future::future', 'future/std::future::get', 'future/std::future::share', 'future/std::future::valid', 'future/std::future::wait', 'future/std::future::wait_for', 'future/std::future::wait_until']
+dev_langs: ["C++"]
 ms.assetid: 495e82c3-5341-4e37-87dd-b40107fbdfb6
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
+helpviewer_keywords: ["std::future [C++]", "std::future [C++], future", "std::future [C++], get", "std::future [C++], share", "std::future [C++], valid", "std::future [C++], wait", "std::future [C++], wait_for", "std::future [C++], wait_until"]
 ---
 # future Class
 Describes an *asynchronous return object*.  

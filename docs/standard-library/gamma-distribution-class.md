@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['gamma_distribution', 'random/std::gamma_distribution', 'random/std::gamma_distribution::reset', 'random/std::gamma_distribution::alpha', 'random/std::gamma_distribution::beta', 'random/std::gamma_distribution::param', 'random/std::gamma_distribution::min', 'random/std::gamma_distribution::max', 'random/std::gamma_distribution::operator()', 'random/std::gamma_distribution::param_type', 'random/std::gamma_distribution::param_type::alpha', 'random/std::gamma_distribution::param_type::beta', 'random/std::gamma_distribution::param_type::operator==', 'random/std::gamma_distribution::param_type::operator!=', 'random/std::gamma_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "gamma_distribution"
-  - "gamma_distribution class"
+f1_keywords: ['random/std::gamma_distribution', 'random/std::gamma_distribution::reset', 'random/std::gamma_distribution::alpha', 'random/std::gamma_distribution::beta', 'random/std::gamma_distribution::param', 'random/std::gamma_distribution::min', 'random/std::gamma_distribution::max', 'random/std::gamma_distribution::operator()', 'random/std::gamma_distribution::param_type', 'random/std::gamma_distribution::param_type::alpha', 'random/std::gamma_distribution::param_type::beta', 'random/std::gamma_distribution::param_type::operator==', 'random/std::gamma_distribution::param_type::operator!=', 'random/std::gamma_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::gamma_distribution [C++]", "std::gamma_distribution [C++], reset", "std::gamma_distribution [C++], alpha", "std::gamma_distribution [C++], beta", "std::gamma_distribution [C++], param", "std::gamma_distribution [C++], min", "std::gamma_distribution [C++], max", "std::gamma_distribution [C++], param_type", "std::gamma_distribution [C++], param_type"]
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # gamma_distribution Class
 Generates a gamma distribution.  

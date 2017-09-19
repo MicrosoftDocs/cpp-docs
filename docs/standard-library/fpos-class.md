@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iosfwd/std::fpos', 'fpos', 'ios/std::fpos::seekpos', 'ios/std::fpos::state', 'ios/std::fpos::operator streamoff']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fpos class, about fpos class"
-  - "fpos class"
+f1_keywords: ['iosfwd/std::fpos', 'ios/std::fpos::seekpos', 'ios/std::fpos::state', 'ios/std::fpos::operator streamoff']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::fpos [C++]", "std::fpos [C++], seekpos", "std::fpos [C++], state"]
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # fpos Class
 The template class describes an object that can store all the information needed to restore an arbitrary file-position indicator within any stream. An object of class fpos\< **St**> effectively stores at least two member objects:  

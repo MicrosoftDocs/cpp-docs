@@ -4,35 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCMenuButton', 'AFXMENUBUTTON/CMFCMenuButton', 'AFXMENUBUTTON/CMFCMenuButton::CMFCMenuButton', 'AFXMENUBUTTON/CMFCMenuButton::PreTranslateMessage', 'AFXMENUBUTTON/CMFCMenuButton::SizeToContent', 'AFXMENUBUTTON/CMFCMenuButton::m_bOSMenu', 'AFXMENUBUTTON/CMFCMenuButton::m_bRightArrow', 'AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed', 'AFXMENUBUTTON/CMFCMenuButton::m_hMenu', 'AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCMenuButton class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCMenuButton [MFC], CMFCMenuButton", "CMFCMenuButton [MFC], PreTranslateMessage", "CMFCMenuButton [MFC], SizeToContent", "CMFCMenuButton [MFC], m_bOSMenu", "CMFCMenuButton [MFC], m_bRightArrow", "CMFCMenuButton [MFC], m_bStayPressed", "CMFCMenuButton [MFC], m_hMenu", "CMFCMenuButton [MFC], m_nMenuResult"]
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
 caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CMFCMenuButton Class
 A button that displays a pop-up menu and reports on the user's menu selections.  

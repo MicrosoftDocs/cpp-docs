@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "entry points, COM interfaces"
-  - "state management, OLE/COM interfaces"
-  - "MFC COM, COM interface entry points"
-  - "OLE, interface entry points"
-  - "MFC, managing state data"
-  - "COM interfaces, entry points"
+dev_langs: ["C++"]
+helpviewer_keywords: ["entry points, COM interfaces", "state management, OLE/COM interfaces", "MFC COM, COM interface entry points", "OLE, interface entry points", "MFC, managing state data", "COM interfaces, entry points"]
 ms.assetid: 9e7421dc-0731-4748-9e1b-90acbaf26d77
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COM Interface Entry Points
 For member functions of a COM interface, use the [METHOD_PROLOGUE](com-interface-entry-points.md#method_prologue) macro to maintain the proper global state when calling methods of an exported interface.  

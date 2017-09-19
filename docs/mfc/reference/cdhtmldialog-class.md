@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDHtmlDialog', 'AFXDHTML/CDHtmlDialog', 'AFXDHTML/CDHtmlDialog::CDHtmlDialog', 'AFXDHTML/CDHtmlDialog::CanAccessExternal', 'AFXDHTML/CDHtmlDialog::CreateControlSite', 'AFXDHTML/CDHtmlDialog::DDX_DHtml_AxControl', 'AFXDHTML/CDHtmlDialog::DDX_DHtml_CheckBox', 'AFXDHTML/CDHtmlDialog::DDX_DHtml_ElementText', 'AFXDHTML/CDHtmlDialog::DDX_DHtml_Radio', 'AFXDHTML/CDHtmlDialog::DDX_DHtml_SelectIndex', 'AFXDHTML/CDHtmlDialog::DDX_DHtml_SelectString', 'AFXDHTML/CDHtmlDialog::DDX_DHtml_SelectValue', 'AFXDHTML/CDHtmlDialog::DestroyModeless', 'AFXDHTML/CDHtmlDialog::EnableModeless', 'AFXDHTML/CDHtmlDialog::FilterDataObject', 'AFXDHTML/CDHtmlDialog::GetControlDispatch', 'AFXDHTML/CDHtmlDialog::GetControlProperty', 'AFXDHTML/CDHtmlDialog::GetCurrentUrl', 'AFXDHTML/CDHtmlDialog::GetDHtmlDocument', 'AFXDHTML/CDHtmlDialog::GetDropTarget', 'AFXDHTML/CDHtmlDialog::GetElement', 'AFXDHTML/CDHtmlDialog::GetElementHtml', 'AFXDHTML/CDHtmlDialog::GetElementInterface', 'AFXDHTML/CDHtmlDialog::GetElementProperty', 'AFXDHTML/CDHtmlDialog::GetElementText', 'AFXDHTML/CDHtmlDialog::GetEvent', 'AFXDHTML/CDHtmlDialog::GetExternal', 'AFXDHTML/CDHtmlDialog::GetHostInfo', 'AFXDHTML/CDHtmlDialog::GetOptionKeyPath', 'AFXDHTML/CDHtmlDialog::HideUI', 'AFXDHTML/CDHtmlDialog::IsExternalDispatchSafe', 'AFXDHTML/CDHtmlDialog::LoadFromResource', 'AFXDHTML/CDHtmlDialog::Navigate', 'AFXDHTML/CDHtmlDialog::OnBeforeNavigate', 'AFXDHTML/CDHtmlDialog::OnDocumentComplete', 'AFXDHTML/CDHtmlDialog::OnDocWindowActivate', 'AFXDHTML/CDHtmlDialog::OnFrameWindowActivate', 'AFXDHTML/CDHtmlDialog::OnInitDialog', 'AFXDHTML/CDHtmlDialog::OnNavigateComplete', 'AFXDHTML/CDHtmlDialog::ResizeBorder', 'AFXDHTML/CDHtmlDialog::SetControlProperty', 'AFXDHTML/CDHtmlDialog::SetElementHtml', 'AFXDHTML/CDHtmlDialog::SetElementProperty', 'AFXDHTML/CDHtmlDialog::SetElementText', 'AFXDHTML/CDHtmlDialog::SetExternalDispatch', 'AFXDHTML/CDHtmlDialog::SetHostFlags', 'AFXDHTML/CDHtmlDialog::ShowContextMenu', 'AFXDHTML/CDHtmlDialog::ShowUI', 'AFXDHTML/CDHtmlDialog::TranslateAccelerator', 'AFXDHTML/CDHtmlDialog::TranslateUrl', 'AFXDHTML/CDHtmlDialog::UpdateUI', 'AFXDHTML/CDHtmlDialog::m_bUseHtmlTitle', 'AFXDHTML/CDHtmlDialog::m_nHtmlResID', 'AFXDHTML/CDHtmlDialog::m_pBrowserApp', 'AFXDHTML/CDHtmlDialog::m_spHtmlDoc', 'AFXDHTML/CDHtmlDialog::m_strCurrentUrl', 'AFXDHTML/CDHtmlDialog::m_szHtmlResID']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDHtmlDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDHtmlDialog [MFC], CDHtmlDialog", "CDHtmlDialog [MFC], CanAccessExternal", "CDHtmlDialog [MFC], CreateControlSite", "CDHtmlDialog [MFC], DDX_DHtml_AxControl", "CDHtmlDialog [MFC], DDX_DHtml_CheckBox", "CDHtmlDialog [MFC], DDX_DHtml_ElementText", "CDHtmlDialog [MFC], DDX_DHtml_Radio", "CDHtmlDialog [MFC], DDX_DHtml_SelectIndex", "CDHtmlDialog [MFC], DDX_DHtml_SelectString", "CDHtmlDialog [MFC], DDX_DHtml_SelectValue", "CDHtmlDialog [MFC], DestroyModeless", "CDHtmlDialog [MFC], EnableModeless", "CDHtmlDialog [MFC], FilterDataObject", "CDHtmlDialog [MFC], GetControlDispatch", "CDHtmlDialog [MFC], GetControlProperty", "CDHtmlDialog [MFC], GetCurrentUrl", "CDHtmlDialog [MFC], GetDHtmlDocument", "CDHtmlDialog [MFC], GetDropTarget", "CDHtmlDialog [MFC], GetElement", "CDHtmlDialog [MFC], GetElementHtml", "CDHtmlDialog [MFC], GetElementInterface", "CDHtmlDialog [MFC], GetElementProperty", "CDHtmlDialog [MFC], GetElementText", "CDHtmlDialog [MFC], GetEvent", "CDHtmlDialog [MFC], GetExternal", "CDHtmlDialog [MFC], GetHostInfo", "CDHtmlDialog [MFC], GetOptionKeyPath", "CDHtmlDialog [MFC], HideUI", "CDHtmlDialog [MFC], IsExternalDispatchSafe", "CDHtmlDialog [MFC], LoadFromResource", "CDHtmlDialog [MFC], Navigate", "CDHtmlDialog [MFC], OnBeforeNavigate", "CDHtmlDialog [MFC], OnDocumentComplete", "CDHtmlDialog [MFC], OnDocWindowActivate", "CDHtmlDialog [MFC], OnFrameWindowActivate", "CDHtmlDialog [MFC], OnInitDialog", "CDHtmlDialog [MFC], OnNavigateComplete", "CDHtmlDialog [MFC], ResizeBorder", "CDHtmlDialog [MFC], SetControlProperty", "CDHtmlDialog [MFC], SetElementHtml", "CDHtmlDialog [MFC], SetElementProperty", "CDHtmlDialog [MFC], SetElementText", "CDHtmlDialog [MFC], SetExternalDispatch", "CDHtmlDialog [MFC], SetHostFlags", "CDHtmlDialog [MFC], ShowContextMenu", "CDHtmlDialog [MFC], ShowUI", "CDHtmlDialog [MFC], TranslateAccelerator", "CDHtmlDialog [MFC], TranslateUrl", "CDHtmlDialog [MFC], UpdateUI", "CDHtmlDialog [MFC], m_bUseHtmlTitle", "CDHtmlDialog [MFC], m_nHtmlResID", "CDHtmlDialog [MFC], m_pBrowserApp", "CDHtmlDialog [MFC], m_spHtmlDoc", "CDHtmlDialog [MFC], m_strCurrentUrl", "CDHtmlDialog [MFC], m_szHtmlResID"]
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDHtmlDialog Class
 Is used to create dialog boxes that use HTML rather than dialog resources to implement their user interface.  

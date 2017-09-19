@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['enable_shared_from_this', 'memory/std::enable_shared_from_this']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "enable_shared_from_this class"
-  - "enable_shared_from_this"
+f1_keywords: ['memory/std::enable_shared_from_this']
+dev_langs: ["C++"]
+helpviewer_keywords: ["enable_shared_from_this class", "enable_shared_from_this"]
 ms.assetid: 9237603d-22e2-421f-b070-838ac006baf5
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # enable_shared_from_this Class
 Helps generate a `shared_ptr`.  

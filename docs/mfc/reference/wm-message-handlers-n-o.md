@@ -4,66 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ON_WM_NCHITTEST"
-  - "ON_WM_NCLBUTTONDOWN"
-  - "ON_WM_NCCALCSIZE"
-  - "ON_WM_NCLBUTTONUP"
-  - "ON_WM_NCPAINT"
-  - "ON_WM_NCMBUTTONUP"
-  - "ON_WM_NCCREATE"
-  - "ON_WM_NCACTIVATE"
-  - "ON_WM_NCMOUSEMOVE"
-  - "ON_WM_NCRBUTTONDBLCLK"
-  - "ON_WM_NCLBUTTONDBLCLK"
-  - "ON_WM_NCDESTROY"
-  - "ON_WM_NCMBUTTONDBLCLK"
-  - "ON_WM_NCRBUTTONDOWN"
-  - "ON_WM_NCRBUTTONUP"
-  - "ON_WM_NCMBUTTONDOWN"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ON_WM_NCCALCSIZE"
-  - "ON_WM_NCMBUTTONDOWN"
-  - "ON_WM_NCRBUTTONDBLCLK"
-  - "ON_WM_NCMBUTTONDBLCLK"
-  - "ON_WM_NCLBUTTONDBLCLK"
-  - "ON_WM_NCDESTROY"
-  - "ON_WM_NCRBUTTONDOWN"
-  - "ON_WM_NCLBUTTONDOWN"
-  - "ON_WM_NCCREATE"
-  - "ON_WM_NCRBUTTONUP"
-  - "ON_WM_NCLBUTTONUP"
-  - "ON_WM_NCPAINT"
-  - "ON_WM_NCACTIVATE"
-  - "ON_WM_NCHITTEST"
-  - "ON_WM_NCMOUSEMOVE"
-  - "ON_WM_NCMBUTTONUP"
-  - "WM_ messages"
+f1_keywords: ["ON_WM_NCHITTEST", "ON_WM_NCLBUTTONDOWN", "ON_WM_NCCALCSIZE", "ON_WM_NCLBUTTONUP", "ON_WM_NCPAINT", "ON_WM_NCMBUTTONUP", "ON_WM_NCCREATE", "ON_WM_NCACTIVATE", "ON_WM_NCMOUSEMOVE", "ON_WM_NCRBUTTONDBLCLK", "ON_WM_NCLBUTTONDBLCLK", "ON_WM_NCDESTROY", "ON_WM_NCMBUTTONDBLCLK", "ON_WM_NCRBUTTONDOWN", "ON_WM_NCRBUTTONUP", "ON_WM_NCMBUTTONDOWN"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ON_WM_NCCALCSIZE [MFC]", "ON_WM_NCMBUTTONDOWN [MFC]", "ON_WM_NCRBUTTONDBLCLK [MFC]", "ON_WM_NCMBUTTONDBLCLK [MFC]", "ON_WM_NCLBUTTONDBLCLK [MFC]", "ON_WM_NCDESTROY [MFC]", "ON_WM_NCRBUTTONDOWN [MFC]", "ON_WM_NCLBUTTONDOWN [MFC]", "ON_WM_NCCREATE [MFC]", "ON_WM_NCRBUTTONUP [MFC]", "ON_WM_NCLBUTTONUP [MFC]", "ON_WM_NCPAINT [MFC]", "ON_WM_NCACTIVATE [MFC]", "ON_WM_NCHITTEST [MFC]", "ON_WM_NCMOUSEMOVE [MFC]", "ON_WM_NCMBUTTONUP [MFC]", "WM_ messages"]
 ms.assetid: 4efd1cda-b642-4e8b-89e8-73255fa70d77
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # WM_ Message Handlers: N - O
 The following map entries on the left correspond to the function prototypes on the right:  

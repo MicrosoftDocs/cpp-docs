@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::index_sequence', 'type_traits/std::make_index_sequence', 'type_traits/std::integer_sequence', 'type_traits/std::make_integer_sequence', 'type_traits/std::index_sequence_for', 'integer_sequence']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "integer_sequence"
+f1_keywords: ['type_traits/std::index_sequence', 'type_traits/std::make_index_sequence', 'type_traits/std::integer_sequence', 'type_traits/std::make_integer_sequence', 'type_traits/std::index_sequence_for'
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::index_sequence", "std::make_index_sequence", "std::integer_sequence", "std::make_integer_sequence", "std::index_sequence_for"]
 ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # integer_sequence Class
 Represents an integer sequence. Can be used to deduce and expand parameter packs in variadic types such as std::tuple\<T...> that are passed as arguments to a function.  

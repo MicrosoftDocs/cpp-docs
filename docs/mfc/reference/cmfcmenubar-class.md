@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCMenuBar', 'AFXMENUBAR/CMFCMenuBar', 'AFXMENUBAR/CMFCMenuBar::AdjustLocations', 'AFXMENUBAR/CMFCMenuBar::AllowChangeTextLabels', 'AFXMENUBAR/CMFCMenuBar::AllowShowOnPaneMenu', 'AFXMENUBAR/CMFCMenuBar::CalcFixedLayout', 'AFXMENUBAR/CMFCMenuBar::CalcLayout', 'AFXMENUBAR/CMFCMenuBar::CalcMaxButtonHeight', 'AFXMENUBAR/CMFCMenuBar::CanBeClosed', 'AFXMENUBAR/CMFCMenuBar::CanBeRestored', 'AFXMENUBAR/CMFCMenuBar::Create', 'AFXMENUBAR/CMFCMenuBar::CreateEx', 'AFXMENUBAR/CMFCMenuBar::CreateFromMenu', 'AFXMENUBAR/CMFCMenuBar::EnableHelpCombobox', 'AFXMENUBAR/CMFCMenuBar::EnableMenuShadows', 'AFXMENUBAR/CMFCMenuBar::GetAvailableExpandSize', 'AFXMENUBAR/CMFCMenuBar::GetColumnWidth', 'AFXMENUBAR/CMFCMenuBar::GetDefaultMenu', 'AFXMENUBAR/CMFCMenuBar::GetDefaultMenuResId', 'AFXMENUBAR/CMFCMenuBar::GetFloatPopupDirection', 'AFXMENUBAR/CMFCMenuBar::GetForceDownArrows', 'AFXMENUBAR/CMFCMenuBar::GetHelpCombobox', 'AFXMENUBAR/CMFCMenuBar::GetHMenu', 'AFXMENUBAR/CMFCMenuBar::GetMenuFont', 'AFXMENUBAR/CMFCMenuBar::GetMenuItem', 'AFXMENUBAR/CMFCMenuBar::GetRowHeight', 'AFXMENUBAR/CMFCMenuBar::GetSystemButton', 'AFXMENUBAR/CMFCMenuBar::GetSystemButtonsCount', 'AFXMENUBAR/CMFCMenuBar::GetSystemMenu', 'AFXMENUBAR/CMFCMenuBar::HighlightDisabledItems', 'AFXMENUBAR/CMFCMenuBar::IsButtonExtraSizeAvailable', 'AFXMENUBAR/CMFCMenuBar::IsHighlightDisabledItems', 'AFXMENUBAR/CMFCMenuBar::IsMenuShadows', 'AFXMENUBAR/CMFCMenuBar::IsRecentlyUsedMenus', 'AFXMENUBAR/CMFCMenuBar::IsShowAllCommands', 'AFXMENUBAR/CMFCMenuBar::IsShowAllCommandsDelay', 'AFXMENUBAR/CMFCMenuBar::LoadState', 'AFXMENUBAR/CMFCMenuBar::OnChangeHot', 'AFXMENUBAR/CMFCMenuBar::OnDefaultMenuLoaded', 'AFXMENUBAR/CMFCMenuBar::OnSendCommand', 'AFXMENUBAR/CMFCMenuBar::OnSetDefaultButtonText', 'AFXMENUBAR/CMFCMenuBar::OnToolHitTest', 'AFXMENUBAR/CMFCMenuBar::PreTranslateMessage', 'AFXMENUBAR/CMFCMenuBar::RestoreOriginalstate', 'AFXMENUBAR/CMFCMenuBar::SaveState', 'AFXMENUBAR/CMFCMenuBar::SetDefaultMenuResId', 'AFXMENUBAR/CMFCMenuBar::SetForceDownArrows', 'AFXMENUBAR/CMFCMenuBar::SetMaximizeMode', 'AFXMENUBAR/CMFCMenuBar::SetMenuButtonRTC', 'AFXMENUBAR/CMFCMenuBar::SetMenuFont', 'AFXMENUBAR/CMFCMenuBar::SetRecentlyUsedMenus', 'AFXMENUBAR/CMFCMenuBar::SetShowAllCommands']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCMenuBar class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCMenuBar [MFC], AdjustLocations", "CMFCMenuBar [MFC], AllowChangeTextLabels", "CMFCMenuBar [MFC], AllowShowOnPaneMenu", "CMFCMenuBar [MFC], CalcFixedLayout", "CMFCMenuBar [MFC], CalcLayout", "CMFCMenuBar [MFC], CalcMaxButtonHeight", "CMFCMenuBar [MFC], CanBeClosed", "CMFCMenuBar [MFC], CanBeRestored", "CMFCMenuBar [MFC], Create", "CMFCMenuBar [MFC], CreateEx", "CMFCMenuBar [MFC], CreateFromMenu", "CMFCMenuBar [MFC], EnableHelpCombobox", "CMFCMenuBar [MFC], EnableMenuShadows", "CMFCMenuBar [MFC], GetAvailableExpandSize", "CMFCMenuBar [MFC], GetColumnWidth", "CMFCMenuBar [MFC], GetDefaultMenu", "CMFCMenuBar [MFC], GetDefaultMenuResId", "CMFCMenuBar [MFC], GetFloatPopupDirection", "CMFCMenuBar [MFC], GetForceDownArrows", "CMFCMenuBar [MFC], GetHelpCombobox", "CMFCMenuBar [MFC], GetHMenu", "CMFCMenuBar [MFC], GetMenuFont", "CMFCMenuBar [MFC], GetMenuItem", "CMFCMenuBar [MFC], GetRowHeight", "CMFCMenuBar [MFC], GetSystemButton", "CMFCMenuBar [MFC], GetSystemButtonsCount", "CMFCMenuBar [MFC], GetSystemMenu", "CMFCMenuBar [MFC], HighlightDisabledItems", "CMFCMenuBar [MFC], IsButtonExtraSizeAvailable", "CMFCMenuBar [MFC], IsHighlightDisabledItems", "CMFCMenuBar [MFC], IsMenuShadows", "CMFCMenuBar [MFC], IsRecentlyUsedMenus", "CMFCMenuBar [MFC], IsShowAllCommands", "CMFCMenuBar [MFC], IsShowAllCommandsDelay", "CMFCMenuBar [MFC], LoadState", "CMFCMenuBar [MFC], OnChangeHot", "CMFCMenuBar [MFC], OnDefaultMenuLoaded", "CMFCMenuBar [MFC], OnSendCommand", "CMFCMenuBar [MFC], OnSetDefaultButtonText", "CMFCMenuBar [MFC], OnToolHitTest", "CMFCMenuBar [MFC], PreTranslateMessage", "CMFCMenuBar [MFC], RestoreOriginalstate", "CMFCMenuBar [MFC], SaveState", "CMFCMenuBar [MFC], SetDefaultMenuResId", "CMFCMenuBar [MFC], SetForceDownArrows", "CMFCMenuBar [MFC], SetMaximizeMode", "CMFCMenuBar [MFC], SetMenuButtonRTC", "CMFCMenuBar [MFC], SetMenuFont", "CMFCMenuBar [MFC], SetRecentlyUsedMenus", "CMFCMenuBar [MFC], SetShowAllCommands"]
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCMenuBar Class
 A menu bar that implements docking.  

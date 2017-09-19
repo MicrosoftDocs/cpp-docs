@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDaoFieldExchange', 'AFXDAO/CDaoFieldExchange', 'AFXDAO/CDaoFieldExchange::IsValidOperation', 'AFXDAO/CDaoFieldExchange::SetFieldType', 'AFXDAO/CDaoFieldExchange::m_nOperation', 'AFXDAO/CDaoFieldExchange::m_prs']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DAO (Data Access Objects), record field exchange (DFX)"
-  - "field exchange"
-  - "DFX (DAO record field exchange)"
-  - "RFX (record field exchange), DAO classes"
-  - "field exchange, record for DAO classes"
-  - "exchanging data between databases and recordsets"
-  - "DFX (DAO record field exchange), DAO Record Field Exchange"
-  - "RFX (record field exchange)"
-  - "CDaoFieldExchange class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDaoFieldExchange [MFC], IsValidOperation", "CDaoFieldExchange [MFC], SetFieldType", "CDaoFieldExchange [MFC], m_nOperation", "CDaoFieldExchange [MFC], m_prs"]
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDaoFieldExchange Class
 Supports the DAO record field exchange (DFX) routines used by the DAO database classes.  

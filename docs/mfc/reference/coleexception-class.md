@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleException', 'AFXDISP/COleException', 'AFXDISP/COleException::Process', 'AFXDISP/COleException::m_sc']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleException class"
-  - "exceptions, OLE"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleException [MFC], Process", "COleException [MFC], m_sc"]
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleException Class
 Represents an exception condition related to an OLE operation.  

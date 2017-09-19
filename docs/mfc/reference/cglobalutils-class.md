@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CGlobalUtils', 'AFXGLOBALUTILS/CGlobalUtils', 'AFXGLOBALUTILS/CGlobalUtils::AdjustRectToWorkArea', 'AFXGLOBALUTILS/CGlobalUtils::CalcExpectedDockedRect', 'AFXGLOBALUTILS/CGlobalUtils::CanBeAttached', 'AFXGLOBALUTILS/CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd', 'AFXGLOBALUTILS/CGlobalUtils::CheckAlignment', 'AFXGLOBALUTILS/CGlobalUtils::CyFromString', 'AFXGLOBALUTILS/CGlobalUtils::DecimalFromString', 'AFXGLOBALUTILS/CGlobalUtils::FlipRect', 'AFXGLOBALUTILS/CGlobalUtils::ForceAdjustLayout', 'AFXGLOBALUTILS/CGlobalUtils::GetDockingManager', 'AFXGLOBALUTILS/CGlobalUtils::GetOppositeAlignment', 'AFXGLOBALUTILS/CGlobalUtils::GetPaneAndAlignFromPoint', 'AFXGLOBALUTILS/CGlobalUtils::GetWndIcon', 'AFXGLOBALUTILS/CGlobalUtils::SetNewParent', 'AFXGLOBALUTILS/CGlobalUtils::StringFromCy', 'AFXGLOBALUTILS/CGlobalUtils::StringFromDecimal']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CGlobalUtils class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CGlobalUtils [MFC], AdjustRectToWorkArea", "CGlobalUtils [MFC], CalcExpectedDockedRect", "CGlobalUtils [MFC], CanBeAttached", "CGlobalUtils [MFC], CanPaneBeInFloatingMultiPaneFrameWnd", "CGlobalUtils [MFC], CheckAlignment", "CGlobalUtils [MFC], CyFromString", "CGlobalUtils [MFC], DecimalFromString", "CGlobalUtils [MFC], FlipRect", "CGlobalUtils [MFC], ForceAdjustLayout", "CGlobalUtils [MFC], GetDockingManager", "CGlobalUtils [MFC], GetOppositeAlignment", "CGlobalUtils [MFC], GetPaneAndAlignFromPoint", "CGlobalUtils [MFC], GetWndIcon", "CGlobalUtils [MFC], SetNewParent", "CGlobalUtils [MFC], StringFromCy", "CGlobalUtils [MFC], StringFromDecimal"]
 ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CGlobalUtils Class
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

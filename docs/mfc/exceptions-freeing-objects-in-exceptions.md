@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "throwing exceptions, freeing objects in exceptions"
-  - "local exception handling"
-  - "memory leaks, caused by exception"
-  - "try-catch exception handling, destroying objects"
-  - "destroying objects"
-  - "freeing objects"
-  - "throwing exceptions, after destroying"
-  - "exception handling, destroying objects"
+dev_langs: ["C++"]
+helpviewer_keywords: ["throwing exceptions [MFC], freeing objects in exceptions", "local exception handling", "memory leaks, caused by exception", "try-catch exception handling [MFC], destroying objects", "destroying objects [MFC]", "freeing objects [MFC]", "throwing exceptions [MFC], after destroying", "exception handling [MFC], destroying objects"]
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Exceptions: Freeing Objects in Exceptions
 This article explains the need and the method of freeing objects when an exception occurs. Topics include:  

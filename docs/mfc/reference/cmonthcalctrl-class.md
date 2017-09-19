@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMonthCalCtrl', 'AFXDTCTL/CMonthCalCtrl', 'AFXDTCTL/CMonthCalCtrl::CMonthCalCtrl', 'AFXDTCTL/CMonthCalCtrl::Create', 'AFXDTCTL/CMonthCalCtrl::GetCalendarBorder', 'AFXDTCTL/CMonthCalCtrl::GetCalendarCount', 'AFXDTCTL/CMonthCalCtrl::GetCalendarGridInfo', 'AFXDTCTL/CMonthCalCtrl::GetCalID', 'AFXDTCTL/CMonthCalCtrl::GetColor', 'AFXDTCTL/CMonthCalCtrl::GetCurrentView', 'AFXDTCTL/CMonthCalCtrl::GetCurSel', 'AFXDTCTL/CMonthCalCtrl::GetFirstDayOfWeek', 'AFXDTCTL/CMonthCalCtrl::GetMaxSelCount', 'AFXDTCTL/CMonthCalCtrl::GetMaxTodayWidth', 'AFXDTCTL/CMonthCalCtrl::GetMinReqRect', 'AFXDTCTL/CMonthCalCtrl::GetMonthDelta', 'AFXDTCTL/CMonthCalCtrl::GetMonthRange', 'AFXDTCTL/CMonthCalCtrl::GetRange', 'AFXDTCTL/CMonthCalCtrl::GetSelRange', 'AFXDTCTL/CMonthCalCtrl::GetToday', 'AFXDTCTL/CMonthCalCtrl::HitTest', 'AFXDTCTL/CMonthCalCtrl::IsCenturyView', 'AFXDTCTL/CMonthCalCtrl::IsDecadeView', 'AFXDTCTL/CMonthCalCtrl::IsMonthView', 'AFXDTCTL/CMonthCalCtrl::IsYearView', 'AFXDTCTL/CMonthCalCtrl::SetCalendarBorder', 'AFXDTCTL/CMonthCalCtrl::SetCalendarBorderDefault', 'AFXDTCTL/CMonthCalCtrl::SetCalID', 'AFXDTCTL/CMonthCalCtrl::SetCenturyView', 'AFXDTCTL/CMonthCalCtrl::SetColor', 'AFXDTCTL/CMonthCalCtrl::SetCurrentView', 'AFXDTCTL/CMonthCalCtrl::SetCurSel', 'AFXDTCTL/CMonthCalCtrl::SetDayState', 'AFXDTCTL/CMonthCalCtrl::SetDecadeView', 'AFXDTCTL/CMonthCalCtrl::SetFirstDayOfWeek', 'AFXDTCTL/CMonthCalCtrl::SetMaxSelCount', 'AFXDTCTL/CMonthCalCtrl::SetMonthDelta', 'AFXDTCTL/CMonthCalCtrl::SetMonthView', 'AFXDTCTL/CMonthCalCtrl::SetRange', 'AFXDTCTL/CMonthCalCtrl::SetSelRange', 'AFXDTCTL/CMonthCalCtrl::SetToday', 'AFXDTCTL/CMonthCalCtrl::SetYearView', 'AFXDTCTL/CMonthCalCtrl::SizeMinReq', 'AFXDTCTL/CMonthCalCtrl::SizeRectToMin']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "month calendar controls, CMonthCalCtrl class"
-  - "common controls, Internet Explorer 4.0"
-  - "CMonthCalCtrl class"
-  - "Internet Explorer 4.0 common controls"
-  - "month calendar controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMonthCalCtrl [MFC], CMonthCalCtrl", "CMonthCalCtrl [MFC], Create", "CMonthCalCtrl [MFC], GetCalendarBorder", "CMonthCalCtrl [MFC], GetCalendarCount", "CMonthCalCtrl [MFC], GetCalendarGridInfo", "CMonthCalCtrl [MFC], GetCalID", "CMonthCalCtrl [MFC], GetColor", "CMonthCalCtrl [MFC], GetCurrentView", "CMonthCalCtrl [MFC], GetCurSel", "CMonthCalCtrl [MFC], GetFirstDayOfWeek", "CMonthCalCtrl [MFC], GetMaxSelCount", "CMonthCalCtrl [MFC], GetMaxTodayWidth", "CMonthCalCtrl [MFC], GetMinReqRect", "CMonthCalCtrl [MFC], GetMonthDelta", "CMonthCalCtrl [MFC], GetMonthRange", "CMonthCalCtrl [MFC], GetRange", "CMonthCalCtrl [MFC], GetSelRange", "CMonthCalCtrl [MFC], GetToday", "CMonthCalCtrl [MFC], HitTest", "CMonthCalCtrl [MFC], IsCenturyView", "CMonthCalCtrl [MFC], IsDecadeView", "CMonthCalCtrl [MFC], IsMonthView", "CMonthCalCtrl [MFC], IsYearView", "CMonthCalCtrl [MFC], SetCalendarBorder", "CMonthCalCtrl [MFC], SetCalendarBorderDefault", "CMonthCalCtrl [MFC], SetCalID", "CMonthCalCtrl [MFC], SetCenturyView", "CMonthCalCtrl [MFC], SetColor", "CMonthCalCtrl [MFC], SetCurrentView", "CMonthCalCtrl [MFC], SetCurSel", "CMonthCalCtrl [MFC], SetDayState", "CMonthCalCtrl [MFC], SetDecadeView", "CMonthCalCtrl [MFC], SetFirstDayOfWeek", "CMonthCalCtrl [MFC], SetMaxSelCount", "CMonthCalCtrl [MFC], SetMonthDelta", "CMonthCalCtrl [MFC], SetMonthView", "CMonthCalCtrl [MFC], SetRange", "CMonthCalCtrl [MFC], SetSelRange", "CMonthCalCtrl [MFC], SetToday", "CMonthCalCtrl [MFC], SetYearView", "CMonthCalCtrl [MFC], SizeMinReq", "CMonthCalCtrl [MFC], SizeRectToMin"]
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMonthCalCtrl Class
 Encapsulates the functionality of a month calendar control.  

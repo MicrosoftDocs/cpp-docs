@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CObject class, and RTTI"
-  - "CObject class, using IsKindOf method"
-  - "run time, class information"
-  - "RUNTIME_CLASS macro"
-  - "CObject class, using RUNTIME_CLASS macro"
-  - "RTTI compiler option"
-  - "CObject class, accessing run-time class information"
-  - "run time"
-  - "IsKindOf method method"
-  - "run-time class, accessing information"
-  - "classes [C++], run-time class information"
-  - "run-time class"
-  - "RUNTIME_CLASS macro, using"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CObject class [MFC], and RTTI", "CObject class [MFC], using IsKindOf method [MFC]", "run time [MFC], class information", "RUNTIME_CLASS macro [MFC]", "CObject class [MFC], using RUNTIME_CLASS macro [MFC]", "RTTI compiler option [MFC]", "CObject class [MFC], accessing run-time class information", "run time [MFC]", "IsKindOf method method [MFC]", "run-time class [MFC], accessing information", "classes [MFC], run-time class information", "run-time class [MFC]", "RUNTIME_CLASS macro, using"]
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Accessing Run-Time Class Information
 This article explains how to access information about the class of an object at run time.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSmoothStopTransition', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::CSmoothStopTransition', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::Create', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_maximumDuration']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSmoothStopTransition class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSmoothStopTransition [MFC], CSmoothStopTransition", "CSmoothStopTransition [MFC], Create", "CSmoothStopTransition [MFC], m_dblFinalValue", "CSmoothStopTransition [MFC], m_maximumDuration"]
 ms.assetid: e1a4b476-6f96-43dd-90db-870a64406b85
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSmoothStopTransition Class
 Encapsulates a smooth-stop transition.  

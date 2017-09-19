@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CTaskDialog', 'AFXTASKDIALOG/CTaskDialog', 'AFXTASKDIALOG/CTaskDialog::CTaskDialog', 'AFXTASKDIALOG/CTaskDialog::AddCommandControl', 'AFXTASKDIALOG/CTaskDialog::AddRadioButton', 'AFXTASKDIALOG/CTaskDialog::ClickCommandControl', 'AFXTASKDIALOG/CTaskDialog::ClickRadioButton', 'AFXTASKDIALOG/CTaskDialog::DoModal', 'AFXTASKDIALOG/CTaskDialog::GetCommonButtonCount', 'AFXTASKDIALOG/CTaskDialog::GetCommonButtonFlag', 'AFXTASKDIALOG/CTaskDialog::GetCommonButtonId', 'AFXTASKDIALOG/CTaskDialog::GetOptions', 'AFXTASKDIALOG/CTaskDialog::GetSelectedCommandControlID', 'AFXTASKDIALOG/CTaskDialog::GetSelectedRadioButtonID', 'AFXTASKDIALOG/CTaskDialog::GetVerificationCheckboxState', 'AFXTASKDIALOG/CTaskDialog::IsCommandControlEnabled', 'AFXTASKDIALOG/CTaskDialog::IsRadioButtonEnabled', 'AFXTASKDIALOG/CTaskDialog::IsSupported', 'AFXTASKDIALOG/CTaskDialog::LoadCommandControls', 'AFXTASKDIALOG/CTaskDialog::LoadRadioButtons', 'AFXTASKDIALOG/CTaskDialog::NavigateTo', 'AFXTASKDIALOG/CTaskDialog::OnCommandControlClick', 'AFXTASKDIALOG/CTaskDialog::OnCreate', 'AFXTASKDIALOG/CTaskDialog::OnDestroy', 'AFXTASKDIALOG/CTaskDialog::OnExpandButtonClick', 'AFXTASKDIALOG/CTaskDialog::OnHelp', 'AFXTASKDIALOG/CTaskDialog::OnHyperlinkClick', 'AFXTASKDIALOG/CTaskDialog::OnInit', 'AFXTASKDIALOG/CTaskDialog::OnNavigatePage', 'AFXTASKDIALOG/CTaskDialog::OnRadioButtonClick', 'AFXTASKDIALOG/CTaskDialog::OnTimer', 'AFXTASKDIALOG/CTaskDialog::OnVerificationCheckboxClick', 'AFXTASKDIALOG/CTaskDialog::RemoveAllCommandControls', 'AFXTASKDIALOG/CTaskDialog::RemoveAllRadioButtons', 'AFXTASKDIALOG/CTaskDialog::SetCommandControlOptions', 'AFXTASKDIALOG/CTaskDialog::SetCommonButtonOptions', 'AFXTASKDIALOG/CTaskDialog::SetCommonButtons', 'AFXTASKDIALOG/CTaskDialog::SetContent', 'AFXTASKDIALOG/CTaskDialog::SetDefaultCommandControl', 'AFXTASKDIALOG/CTaskDialog::SetDefaultRadioButton', 'AFXTASKDIALOG/CTaskDialog::SetDialogWidth', 'AFXTASKDIALOG/CTaskDialog::SetExpansionArea', 'AFXTASKDIALOG/CTaskDialog::SetFooterIcon', 'AFXTASKDIALOG/CTaskDialog::SetFooterText', 'AFXTASKDIALOG/CTaskDialog::SetMainIcon', 'AFXTASKDIALOG/CTaskDialog::SetMainInstruction', 'AFXTASKDIALOG/CTaskDialog::SetOptions', 'AFXTASKDIALOG/CTaskDialog::SetProgressBarMarquee', 'AFXTASKDIALOG/CTaskDialog::SetProgressBarPosition', 'AFXTASKDIALOG/CTaskDialog::SetProgressBarRange', 'AFXTASKDIALOG/CTaskDialog::SetProgressBarState', 'AFXTASKDIALOG/CTaskDialog::SetRadioButtonOptions', 'AFXTASKDIALOG/CTaskDialog::SetVerificationCheckbox', 'AFXTASKDIALOG/CTaskDialog::SetVerificationCheckboxText', 'AFXTASKDIALOG/CTaskDialog::SetWindowTitle', 'AFXTASKDIALOG/CTaskDialog::ShowDialog', 'AFXTASKDIALOG/CTaskDialog::TaskDialogCallback']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CTaskDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTaskDialog [MFC], CTaskDialog", "CTaskDialog [MFC], AddCommandControl", "CTaskDialog [MFC], AddRadioButton", "CTaskDialog [MFC], ClickCommandControl", "CTaskDialog [MFC], ClickRadioButton", "CTaskDialog [MFC], DoModal", "CTaskDialog [MFC], GetCommonButtonCount", "CTaskDialog [MFC], GetCommonButtonFlag", "CTaskDialog [MFC], GetCommonButtonId", "CTaskDialog [MFC], GetOptions", "CTaskDialog [MFC], GetSelectedCommandControlID", "CTaskDialog [MFC], GetSelectedRadioButtonID", "CTaskDialog [MFC], GetVerificationCheckboxState", "CTaskDialog [MFC], IsCommandControlEnabled", "CTaskDialog [MFC], IsRadioButtonEnabled", "CTaskDialog [MFC], IsSupported", "CTaskDialog [MFC], LoadCommandControls", "CTaskDialog [MFC], LoadRadioButtons", "CTaskDialog [MFC], NavigateTo", "CTaskDialog [MFC], OnCommandControlClick", "CTaskDialog [MFC], OnCreate", "CTaskDialog [MFC], OnDestroy", "CTaskDialog [MFC], OnExpandButtonClick", "CTaskDialog [MFC], OnHelp", "CTaskDialog [MFC], OnHyperlinkClick", "CTaskDialog [MFC], OnInit", "CTaskDialog [MFC], OnNavigatePage", "CTaskDialog [MFC], OnRadioButtonClick", "CTaskDialog [MFC], OnTimer", "CTaskDialog [MFC], OnVerificationCheckboxClick", "CTaskDialog [MFC], RemoveAllCommandControls", "CTaskDialog [MFC], RemoveAllRadioButtons", "CTaskDialog [MFC], SetCommandControlOptions", "CTaskDialog [MFC], SetCommonButtonOptions", "CTaskDialog [MFC], SetCommonButtons", "CTaskDialog [MFC], SetContent", "CTaskDialog [MFC], SetDefaultCommandControl", "CTaskDialog [MFC], SetDefaultRadioButton", "CTaskDialog [MFC], SetDialogWidth", "CTaskDialog [MFC], SetExpansionArea", "CTaskDialog [MFC], SetFooterIcon", "CTaskDialog [MFC], SetFooterText", "CTaskDialog [MFC], SetMainIcon", "CTaskDialog [MFC], SetMainInstruction", "CTaskDialog [MFC], SetOptions", "CTaskDialog [MFC], SetProgressBarMarquee", "CTaskDialog [MFC], SetProgressBarPosition", "CTaskDialog [MFC], SetProgressBarRange", "CTaskDialog [MFC], SetProgressBarState", "CTaskDialog [MFC], SetRadioButtonOptions", "CTaskDialog [MFC], SetVerificationCheckbox", "CTaskDialog [MFC], SetVerificationCheckboxText", "CTaskDialog [MFC], SetWindowTitle", "CTaskDialog [MFC], ShowDialog", "CTaskDialog [MFC], TaskDialogCallback"]
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CTaskDialog Class
 A pop-up dialog box that functions like a message box but can display additional information to the user. The `CTaskDialog` also includes functionality for gathering information from the user.  

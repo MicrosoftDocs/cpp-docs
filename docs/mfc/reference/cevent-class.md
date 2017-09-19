@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CEvent', 'AFXMT/CEvent', 'AFXMT/CEvent::CEvent', 'AFXMT/CEvent::PulseEvent', 'AFXMT/CEvent::ResetEvent', 'AFXMT/CEvent::SetEvent', 'AFXMT/CEvent::Unlock']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "synchronization objects, event"
-  - "synchronization classes, CEvent class"
-  - "CEvent class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CEvent [MFC], CEvent", "CEvent [MFC], PulseEvent", "CEvent [MFC], ResetEvent", "CEvent [MFC], SetEvent", "CEvent [MFC], Unlock"]
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CEvent Class
 Represents an event, which is a synchronization object that enables one thread to notify another that an event has occurred.  

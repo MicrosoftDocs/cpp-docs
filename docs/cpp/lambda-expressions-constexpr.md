@@ -4,14 +4,11 @@ ms.custom: ""
 ms.date: "07/19/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lambda expressions [C++], constexpr"
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""lambda expressions [C++], constexpr""]"]
 ms.assetid: b56346cd-fbff-475f-aeaa-ed2010c6d6f7
 caps.latest.revision: 0
 author: "mikeblome"

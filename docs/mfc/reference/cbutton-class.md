@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CButton', 'AFXWIN/CButton', 'AFXWIN/CButton::CButton', 'AFXWIN/CButton::Create', 'AFXWIN/CButton::DrawItem', 'AFXWIN/CButton::GetBitmap', 'AFXWIN/CButton::GetButtonStyle', 'AFXWIN/CButton::GetCheck', 'AFXWIN/CButton::GetCursor', 'AFXWIN/CButton::GetIcon', 'AFXWIN/CButton::GetIdealSize', 'AFXWIN/CButton::GetImageList', 'AFXWIN/CButton::GetNote', 'AFXWIN/CButton::GetNoteLength', 'AFXWIN/CButton::GetSplitGlyph', 'AFXWIN/CButton::GetSplitImageList', 'AFXWIN/CButton::GetSplitInfo', 'AFXWIN/CButton::GetSplitSize', 'AFXWIN/CButton::GetSplitStyle', 'AFXWIN/CButton::GetState', 'AFXWIN/CButton::GetTextMargin', 'AFXWIN/CButton::SetBitmap', 'AFXWIN/CButton::SetButtonStyle', 'AFXWIN/CButton::SetCheck', 'AFXWIN/CButton::SetCursor', 'AFXWIN/CButton::SetDropDownState', 'AFXWIN/CButton::SetIcon', 'AFXWIN/CButton::SetImageList', 'AFXWIN/CButton::SetNote', 'AFXWIN/CButton::SetSplitGlyph', 'AFXWIN/CButton::SetSplitImageList', 'AFXWIN/CButton::SetSplitInfo', 'AFXWIN/CButton::SetSplitSize', 'AFXWIN/CButton::SetSplitStyle', 'AFXWIN/CButton::SetState', 'AFXWIN/CButton::SetTextMargin']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CButton class"
-  - "checkbox buttons"
-  - "pushbuttons"
-  - "button control [MFC]"
-  - "check boxes, button controls"
-  - "button objects (CButton)"
-  - "radio buttons, CButton class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CButton [MFC], CButton", "CButton [MFC], Create", "CButton [MFC], DrawItem", "CButton [MFC], GetBitmap", "CButton [MFC], GetButtonStyle", "CButton [MFC], GetCheck", "CButton [MFC], GetCursor", "CButton [MFC], GetIcon", "CButton [MFC], GetIdealSize", "CButton [MFC], GetImageList", "CButton [MFC], GetNote", "CButton [MFC], GetNoteLength", "CButton [MFC], GetSplitGlyph", "CButton [MFC], GetSplitImageList", "CButton [MFC], GetSplitInfo", "CButton [MFC], GetSplitSize", "CButton [MFC], GetSplitStyle", "CButton [MFC], GetState", "CButton [MFC], GetTextMargin", "CButton [MFC], SetBitmap", "CButton [MFC], SetButtonStyle", "CButton [MFC], SetCheck", "CButton [MFC], SetCursor", "CButton [MFC], SetDropDownState", "CButton [MFC], SetIcon", "CButton [MFC], SetImageList", "CButton [MFC], SetNote", "CButton [MFC], SetSplitGlyph", "CButton [MFC], SetSplitImageList", "CButton [MFC], SetSplitInfo", "CButton [MFC], SetSplitSize", "CButton [MFC], SetSplitStyle", "CButton [MFC], SetState", "CButton [MFC], SetTextMargin"]
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CButton Class
 Provides the functionality of Windows button controls.  

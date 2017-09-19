@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['streambuf/std::ostreambuf_iterator', 'ostreambuf_iterator', 'iterator/std::ostreambuf_iterator::char_type', 'iterator/std::ostreambuf_iterator::ostream_type', 'iterator/std::ostreambuf_iterator::streambuf_type', 'iterator/std::ostreambuf_iterator::traits_type', 'iterator/std::ostreambuf_iterator::failed']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ostreambuf_iterator class"
+f1_keywords: ['streambuf/std::ostreambuf_iterator', 'iterator/std::ostreambuf_iterator::char_type', 'iterator/std::ostreambuf_iterator::ostream_type', 'iterator/std::ostreambuf_iterator::streambuf_type', 'iterator/std::ostreambuf_iterator::traits_type', 'iterator/std::ostreambuf_iterator::failed']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::ostreambuf_iterator [C++]", "std::ostreambuf_iterator [C++], char_type", "std::ostreambuf_iterator [C++], ostream_type", "std::ostreambuf_iterator [C++], streambuf_type", "std::ostreambuf_iterator [C++], traits_type", "std::ostreambuf_iterator [C++], failed"]
 ms.assetid: dad1e624-2f45-4e94-8887-a885e95f9071
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ostreambuf_iterator Class
 The template class ostreambuf_iterator describes an output iterator object that writes successive character elements onto the output stream with the extraction **operator>>**. The `ostreambuf_iterator`s differ from those of the [ostream_iterator Class](../standard-library/ostream-iterator-class.md) in having characters instead of a generic type at the type of object being inserted into the output stream.  

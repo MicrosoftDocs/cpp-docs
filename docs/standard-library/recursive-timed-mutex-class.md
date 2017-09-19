@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['mutex/std::recursive_timed_mutex', 'mutex/std::recursive_timed_mutex::recursive_timed_mutex', 'mutex/std::recursive_timed_mutex::lock', 'mutex/std::recursive_timed_mutex::try_lock', 'mutex/std::recursive_timed_mutex::try_lock_for', 'mutex/std::recursive_timed_mutex::try_lock_until', 'mutex/std::recursive_timed_mutex::unlock']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['mutex/std::recursive_timed_mutex', 'mutex/std::recursive_timed_mutex::recursive_timed_mutex', 'mutex/std::recursive_timed_mutex::lock', 'mutex/std::recursive_timed_mutex::try_lock', 'mutex/std::recursive_timed_mutex::try_lock_for', 'mutex/std::recursive_timed_mutex::try_lock_until', 'mutex/std::recursive_timed_mutex::unlock']
+dev_langs: ["C++"]
 ms.assetid: 59cc2d5c-ed80-45f3-a0a8-05652a8ead7e
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+helpviewer_keywords: ["std::recursive_timed_mutex [C++]", "std::recursive_timed_mutex [C++], recursive_timed_mutex", "std::recursive_timed_mutex [C++], lock", "std::recursive_timed_mutex [C++], try_lock", "std::recursive_timed_mutex [C++], try_lock_for", "std::recursive_timed_mutex [C++], try_lock_until", "std::recursive_timed_mutex [C++], unlock"]
 ---
 # recursive_timed_mutex Class
 Represents a *timed mutex type*. Objects of this type are used to enforce mutual exclusion by using time-limited blocking within a program. Unlike objects of type [timed_mutex](../standard-library/timed-mutex-class.md), the effect of calling locking methods for `recursive_timed_mutex` objects is well-defined.  

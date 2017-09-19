@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::binder1st', 'binder1st']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binder1st class"
+f1_keywords: ['xfunctional/std::binder1st'
+dev_langs: ["C++"]
+helpviewer_keywords: ["binder1st class"]
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # binder1st Class
 A template class providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value.  

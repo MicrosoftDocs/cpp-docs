@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['future/std::packaged_task', 'future/std::packaged_task::packaged_task', 'future/std::packaged_task::get_future', 'future/std::packaged_task::make_ready_at_thread_exit', 'future/std::packaged_task::reset', 'future/std::packaged_task::swap', 'future/std::packaged_task::valid', 'future/std::packaged_task::operator()', 'future/std::packaged_task::operator bool']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['future/std::packaged_task', 'future/std::packaged_task::packaged_task', 'future/std::packaged_task::get_future', 'future/std::packaged_task::make_ready_at_thread_exit', 'future/std::packaged_task::reset', 'future/std::packaged_task::swap', 'future/std::packaged_task::valid', 'future/std::packaged_task::operator()', 'future/std::packaged_task::operator bool']
+dev_langs: ["C++"]
 ms.assetid: 0a72cbe3-f22a-4bfe-8e50-dcb268c98780
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+helpviewer_keywords: ["std::packaged_task [C++]", "std::packaged_task [C++], packaged_task", "std::packaged_task [C++], get_future", "std::packaged_task [C++], make_ready_at_thread_exit", "std::packaged_task [C++], reset", "std::packaged_task [C++], swap", "std::packaged_task [C++], valid", 
 ---
 # packaged_task Class
 Describes an *asynchronous provider* that is a call wrapper whose call signature is `Ty(ArgTypes...)`. Its *associated asynchronous state* holds a copy of its callable object in addition to the potential result.  

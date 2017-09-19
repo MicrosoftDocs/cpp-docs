@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCReBar', 'AFXREBAR/CMFCReBar', 'AFXREBAR/CMFCReBar::AddBar', 'AFXREBAR/CMFCReBar::CalcFixedLayout', 'AFXREBAR/CMFCReBar::CanFloat', 'AFXREBAR/CMFCReBar::Create', 'AFXREBAR/CMFCReBar::EnableDocking', 'AFXREBAR/CMFCReBar::GetReBarBandInfoSize', 'AFXREBAR/CMFCReBar::GetReBarCtrl', 'AFXREBAR/CMFCReBar::OnShowControlBarMenu', 'AFXREBAR/CMFCReBar::OnToolHitTest', 'AFXREBAR/CMFCReBar::OnUpdateCmdUI', 'AFXREBAR/CMFCReBar::SetPaneAlignment']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCReBar class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCReBar [MFC], AddBar", "CMFCReBar [MFC], CalcFixedLayout", "CMFCReBar [MFC], CanFloat", "CMFCReBar [MFC], Create", "CMFCReBar [MFC], EnableDocking", "CMFCReBar [MFC], GetReBarBandInfoSize", "CMFCReBar [MFC], GetReBarCtrl", "CMFCReBar [MFC], OnShowControlBarMenu", "CMFCReBar [MFC], OnToolHitTest", "CMFCReBar [MFC], OnUpdateCmdUI", "CMFCReBar [MFC], SetPaneAlignment"]
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCReBar Class
 A `CMFCReBar` object is a control bar that provides layout, persistence, and state information for rebar controls.  

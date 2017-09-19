@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDrawingManager', 'AFXDRAWMANAGER/CDrawingManager', 'AFXDRAWMANAGER/CDrawingManager::CDrawingManager', 'AFXDRAWMANAGER/CDrawingManager::CreateBitmap_32', 'AFXDRAWMANAGER/CDrawingManager::DrawAlpha', 'AFXDRAWMANAGER/CDrawingManager::DrawRotated', 'AFXDRAWMANAGER/CDrawingManager::DrawEllipse', 'AFXDRAWMANAGER/CDrawingManager::DrawGradientRing', 'AFXDRAWMANAGER/CDrawingManager::DrawRect', 'AFXDRAWMANAGER/CDrawingManager::DrawShadow', 'AFXDRAWMANAGER/CDrawingManager::Fill4ColorsGradient', 'AFXDRAWMANAGER/CDrawingManager::FillGradient', 'AFXDRAWMANAGER/CDrawingManager::FillGradient2', 'AFXDRAWMANAGER/CDrawingManager::GrayRect', 'AFXDRAWMANAGER/CDrawingManager::HighlightRect', 'AFXDRAWMANAGER/CDrawingManager::HLStoRGB_ONE', 'AFXDRAWMANAGER/CDrawingManager::HLStoRGB_TWO', 'AFXDRAWMANAGER/CDrawingManager::HSVtoRGB', 'AFXDRAWMANAGER/CDrawingManager::HuetoRGB', 'AFXDRAWMANAGER/CDrawingManager::MirrorRect', 'AFXDRAWMANAGER/CDrawingManager::PixelAlpha', 'AFXDRAWMANAGER/CDrawingManager::PrepareShadowMask', 'AFXDRAWMANAGER/CDrawingManager::RGBtoHSL', 'AFXDRAWMANAGER/CDrawingManager::RGBtoHSV', 'AFXDRAWMANAGER/CDrawingManager::SetAlphaPixel', 'AFXDRAWMANAGER/CDrawingManager::SetPixel', 'AFXDRAWMANAGER/CDrawingManager::SmartMixColors']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDrawingManager class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDrawingManager [MFC], CDrawingManager", "CDrawingManager [MFC], CreateBitmap_32", "CDrawingManager [MFC], DrawAlpha", "CDrawingManager [MFC], DrawRotated", "CDrawingManager [MFC], DrawEllipse", "CDrawingManager [MFC], DrawGradientRing", "CDrawingManager [MFC], DrawRect", "CDrawingManager [MFC], DrawShadow", "CDrawingManager [MFC], Fill4ColorsGradient", "CDrawingManager [MFC], FillGradient", "CDrawingManager [MFC], FillGradient2", "CDrawingManager [MFC], GrayRect", "CDrawingManager [MFC], HighlightRect", "CDrawingManager [MFC], HLStoRGB_ONE", "CDrawingManager [MFC], HLStoRGB_TWO", "CDrawingManager [MFC], HSVtoRGB", "CDrawingManager [MFC], HuetoRGB", "CDrawingManager [MFC], MirrorRect", "CDrawingManager [MFC], PixelAlpha", "CDrawingManager [MFC], PrepareShadowMask", "CDrawingManager [MFC], RGBtoHSL", "CDrawingManager [MFC], RGBtoHSV", "CDrawingManager [MFC], SetAlphaPixel", "CDrawingManager [MFC], SetPixel", "CDrawingManager [MFC], SmartMixColors"]
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDrawingManager Class
 The `CDrawingManager` class implements complex drawing algorithms.  

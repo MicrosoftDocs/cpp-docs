@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.mfc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "application framework [C++], building applications"
-  - "applications [MFC]"
-  - "application framework [C++]"
+f1_keywords: ["vc.classes.mfc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["application framework [MFC], building applications", "applications [MFC]", "application framework [MFC]"]
 ms.assetid: 912684e6-4418-49dc-9877-a4cd19d69d20
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Application Framework
 The core of the Microsoft Foundation Class (MFC) Library is an encapsulation of a large portion of the Windows API in C++ form. Library classes represent windows, dialog boxes, device contexts, common GDI objects such as brushes and pens, controls, and other standard Windows items. These classes provide a convenient C++ member function interface to the structures in Windows that they encapsulate. For more about using these classes, see [Window Object Topics](../mfc/window-objects.md).  

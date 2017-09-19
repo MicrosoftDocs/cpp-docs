@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAutoHideDockSite', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::CanAcceptPane', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::DockPane', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::GetAlignRect', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::RepositionPanes', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetLeft', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetRight', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::UnSetAutoHideMode', 'AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::m_nExtraSpace']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AllowShowOnPaneMenu method"
-  - "CAutoHideDockSite class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAutoHideDockSite [MFC], CanAcceptPane", "CAutoHideDockSite [MFC], DockPane", "CAutoHideDockSite [MFC], GetAlignRect", "CAutoHideDockSite [MFC], RepositionPanes", "CAutoHideDockSite [MFC], SetOffsetLeft", "CAutoHideDockSite [MFC], SetOffsetRight", "CAutoHideDockSite [MFC], UnSetAutoHideMode", "CAutoHideDockSite [MFC], m_nExtraSpace"]
 ms.assetid: 2a0f6bec-c369-4ab7-977d-564e7946ebad
 caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CAutoHideDockSite Class
 The `CAutoHideDockSite` extends the [CDockSite Class](../../mfc/reference/cdocksite-class.md) to implement auto-hide dock panes.  

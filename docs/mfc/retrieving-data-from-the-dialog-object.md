@@ -4,50 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog boxes [C++], retrieving user data"
-  - "dialog box data [C++]"
-  - "data [MFC], retrieving"
-  - "GetDlgItemText method"
-  - "SetDlgItemText method"
-  - "SetWindowText method"
-  - "dialog box data [C++], retrieving"
-  - "retrieving data"
-  - "user input [C++], retrieving from MFC dialog boxes"
-  - "capturing user input"
-  - "dialog box controls [C++], initializing values"
-  - "DDX (dialog data exchange) [C++]"
-  - "MFC dialog boxes, retrieving user input"
-  - "data retrieval [C++], dialog boxes"
-  - "data [MFC], dialog boxes"
-  - "DDX (dialog data exchange) [C++], about DDX"
-  - "DDX (dialog data exchange) [C++], retrieving data from Dialog object"
-  - "GetWindowText method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["dialog boxes [MFC], retrieving user data", "dialog box data [MFC]", "data [MFC], retrieving", "GetDlgItemText method [MFC]", "SetDlgItemText method [MFC]", "SetWindowText method [MFC]", "dialog box data [MFC], retrieving", "retrieving data [MFC]", "user input [MFC], retrieving from MFC dialog boxes", "capturing user input [MFC]", "dialog box controls [MFC], initializing values", "DDX (dialog data exchange) [MFC]", "MFC dialog boxes [MFC], retrieving user input", "data retrieval [MFC], dialog boxes", "data [MFC], dialog boxes", "DDX (dialog data exchange) [MFC], about DDX", "DDX (dialog data exchange) [MFC], retrieving data from Dialog object", "GetWindowText method [MFC]"]
 ms.assetid: bdca2b61-6b53-4c2e-b426-8712c7a38ec0
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Retrieving Data from the Dialog Object
 The framework provides an easy way to initialize the values of controls in a dialog box and to retrieve values from the controls. The more laborious manual approach is to call functions such as the `SetDlgItemText` and `GetDlgItemText` member functions of class `CWnd`, which apply to control windows. With these functions, you access each control individually to set or get its value, calling functions such as `SetWindowText` and `GetWindowText`. The framework's approach automates both initialization and retrieval.  

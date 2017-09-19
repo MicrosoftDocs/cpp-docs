@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['independent_bits_engine', 'random/std::independent_bits_engine']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "independent_bits_engine class"
+f1_keywords: ['random/std::independent_bits_engine']
+dev_langs: ["C++"]
+helpviewer_keywords: ["independent_bits_engine class"]
 ms.assetid: 889e9a82-f457-49a7-9d2e-26e0fc3cd907
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # independent_bits_engine Class
 Generates a random sequence of numbers with a specified number of bits by repacking bits from the values returned by its base engine.  

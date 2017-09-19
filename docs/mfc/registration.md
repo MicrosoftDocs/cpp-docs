@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "servers, initializing"
-  - "initializing servers"
-  - "OLE, registration"
-  - "installing servers"
-  - "registry, OLE item database"
-  - "registration databases"
-  - "servers, installing"
-  - "OLE server applications, registering servers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["servers [MFC], initializing", "initializing servers [MFC]", "OLE, registration", "installing servers [MFC]", "registry [MFC], OLE item database", "registration databases [MFC]", "servers [MFC], installing", "OLE server applications [MFC], registering servers"]
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Registration
 When a user wants to insert an OLE item into an application, OLE presents a list of object types to choose from. OLE gets this list from the system registration database, which contains information provided by all server applications. When a server registers itself, the entries it puts into the system registration database (the Registry) describe each type of object it supplies, file extensions, and the path to itself, among other information.  

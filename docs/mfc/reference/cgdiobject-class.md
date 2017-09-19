@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CGdiObject', 'AFXWIN/CGdiObject', 'AFXWIN/CGdiObject::CGdiObject', 'AFXWIN/CGdiObject::Attach', 'AFXWIN/CGdiObject::CreateStockObject', 'AFXWIN/CGdiObject::DeleteObject', 'AFXWIN/CGdiObject::DeleteTempMap', 'AFXWIN/CGdiObject::Detach', 'AFXWIN/CGdiObject::FromHandle', 'AFXWIN/CGdiObject::GetObject', 'AFXWIN/CGdiObject::GetObjectType', 'AFXWIN/CGdiObject::GetSafeHandle', 'AFXWIN/CGdiObject::UnrealizeObject', 'AFXWIN/CGdiObject::m_hObject']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "brushes, base class for"
-  - "fonts, base class for"
-  - "regions, base class for"
-  - "pens, base class for"
-  - "palettes, base class for"
-  - "CGdiObject class"
-  - "GDI objects, base class for"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CGdiObject [MFC], CGdiObject", "CGdiObject [MFC], Attach", "CGdiObject [MFC], CreateStockObject", "CGdiObject [MFC], DeleteObject", "CGdiObject [MFC], DeleteTempMap", "CGdiObject [MFC], Detach", "CGdiObject [MFC], FromHandle", "CGdiObject [MFC], GetObject", "CGdiObject [MFC], GetObjectType", "CGdiObject [MFC], GetSafeHandle", "CGdiObject [MFC], UnrealizeObject", "CGdiObject [MFC], m_hObject"]
 ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CGdiObject Class
 Provides a base class for various kinds of Windows graphics device interface (GDI) objects such as bitmaps, regions, brushes, pens, palettes, and fonts.  

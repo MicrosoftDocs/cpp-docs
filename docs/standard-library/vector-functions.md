@@ -6,8 +6,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: []  
+f1_keywords: ["vector/std::swap"]
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
+helpviewer_keywords: ["std::swap \<vector\>"]
 caps.latest.revision: 10
 manager: "ghogen"
 ---

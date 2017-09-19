@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "extern"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "extern keyword [C++], linkage to non-C++ functions"
-  - "declarations, external"
-  - "external linkage, extern modifier"
+f1_keywords: ["extern"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""extern keyword [C++], linkage to non-C++ functions"", ""declarations [C++], external"", ""external linkage, extern modifier""]"]
 ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using extern to Specify Linkage
 ## Syntax  

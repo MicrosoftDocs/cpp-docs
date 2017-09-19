@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['move_iterator', 'iterator/std::move_iterator', 'iterator/std::move_iterator::iterator_type', 'iterator/std::move_iterator::iterator_category', 'iterator/std::move_iterator::value_type', 'iterator/std::move_iterator::difference_type', 'iterator/std::move_iterator::pointer', 'iterator/std::move_iterator::reference', 'iterator/std::move_iterator::base']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "move_iterator class"
+f1_keywords: ['iterator/std::move_iterator', 'iterator/std::move_iterator::iterator_type', 'iterator/std::move_iterator::iterator_category', 'iterator/std::move_iterator::value_type', 'iterator/std::move_iterator::difference_type', 'iterator/std::move_iterator::pointer', 'iterator/std::move_iterator::reference', 'iterator/std::move_iterator::base']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::move_iterator [C++]", "std::move_iterator [C++], iterator_type", "std::move_iterator [C++], iterator_category", "std::move_iterator [C++], value_type", "std::move_iterator [C++], difference_type", "std::move_iterator [C++], pointer", "std::move_iterator [C++], reference", "std::move_iterator [C++], base"]
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # move_iterator Class
 Class template `move_iterator` is a wrapper for an iterator. The move_iterator provides the same behavior as the iterator it wraps (stores), except it turns the stored iterator’s dereference operator into an rvalue reference, turning a copy into a move. For more information about rvalues, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleIPFrameWnd', 'AFXOLE/COleIPFrameWnd', 'AFXOLE/COleIPFrameWnd::COleIPFrameWnd', 'AFXOLE/COleIPFrameWnd::OnCreateControlBars', 'AFXOLE/COleIPFrameWnd::RepositionFrame']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleIPFrameWnd class"
-  - "OLE, editing"
-  - "OLE, in-place activation"
-  - "in-place editing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleIPFrameWnd [MFC], COleIPFrameWnd", "COleIPFrameWnd [MFC], OnCreateControlBars", "COleIPFrameWnd [MFC], RepositionFrame"]
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleIPFrameWnd Class
 The base for your application's in-place editing window.  

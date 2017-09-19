@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "longjmp"
-  - "setjmp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C++ exception handling, setjmp/longjmp functions"
-  - "SETJMPEX.H"
-  - "longjmp function in C++ programs"
-  - "SETJMP.H"
-  - "setjmp function"
-  - "setjmp function, C++ programs"
+f1_keywords: ["longjmp", "setjmp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""C++ exception handling, setjmp/longjmp functions"", ""SETJMPEX.H"", ""longjmp function in C++ programs"", ""SETJMP.H"", ""setjmp function [C++]"", ""setjmp function, C++ programs""]"]
 ms.assetid: 96be8816-f6f4-4567-9a9c-0c3c720e37c5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using setjmp/longjmp
 When [setjmp](../c-runtime-library/reference/setjmp.md) and [longjmp](../c-runtime-library/reference/longjmp.md) are used together, they provide a way to execute a non-local `goto`. They are typically used to pass execution control to error-handling or recovery code in a previously called routine without using the standard calling or return conventions.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['sync_none', 'allocators/stdext::sync_none', 'stdext::sync_none', 'allocators/stdext::sync_none::allocate', 'allocators/stdext::sync_none::deallocate', 'allocators/stdext::sync_none::equals']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sync_none class"
+f1_keywords: ['allocators/stdext::sync_none', 'allocators/stdext::sync_none::allocate', 'allocators/stdext::sync_none::deallocate', 'allocators/stdext::sync_none::equals']
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::sync_none", "stdext::sync_none [C++], allocate", "stdext::sync_none [C++], deallocate", "stdext::sync_none [C++], equals"]
 ms.assetid: f7473cee-14f3-4fe1-88bc-68cd085e59e1
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # sync_none Class
 Describes a [synchronization filter](../standard-library/allocators-header.md) that provides no synchronization.  

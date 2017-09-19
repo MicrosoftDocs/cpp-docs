@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['is_compound', 'type_traits/std::is_compound']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "is_compound class"
-  - "is_compound"
+f1_keywords: ['type_traits/std::is_compound']
+dev_langs: ["C++"]
+helpviewer_keywords: ["is_compound class", "is_compound"]
 ms.assetid: bdad1167-cf3f-4f37-8321-62a5df159ead
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # is_compound Class
 Tests if the specified type is not fundamental.  

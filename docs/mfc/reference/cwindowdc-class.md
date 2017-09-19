@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CWindowDC', 'No header/CWindowDC', 'No header/CWindowDC::CWindowDC', 'No header/CWindowDC::m_hWnd']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "device contexts, window"
-  - "screen output classes"
-  - "CWindowDC class"
+f1_keywords: ['CWindowDC', 'AFXWIN/CWindowDC', 'AFXWIN/CWindowDC::CWindowDC', 'AFXWIN/CWindowDC::m_hWnd']
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWindowDC [MFC], CWindowDC", "CWindowDC [MFC], m_hWnd"]
 ms.assetid: 876a3641-4cde-471c-b0d1-fe58b32af79c
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CWindowDC Class
 Derived from `CDC`.  

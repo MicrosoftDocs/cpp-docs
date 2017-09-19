@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCDropDownToolBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::AllowShowOnPaneMenu', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadBitmap', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadToolBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnLButtonUp', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnMouseMove', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnSendCommand', 'AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnUpdateCmdUI']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCDropDownToolBar class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCDropDownToolBar [MFC], AllowShowOnPaneMenu", "CMFCDropDownToolBar [MFC], LoadBitmap", "CMFCDropDownToolBar [MFC], LoadToolBar", "CMFCDropDownToolBar [MFC], OnLButtonUp", "CMFCDropDownToolBar [MFC], OnMouseMove", "CMFCDropDownToolBar [MFC], OnSendCommand", "CMFCDropDownToolBar [MFC], OnUpdateCmdUI"]
 ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
 caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCDropDownToolBar Class
 A toolbar that appears when the user presses and holds a top-level toolbar button.  

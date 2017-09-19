@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/std::back_insert_iterator', 'back_insert_iterator', 'iterator/std::back_insert_iterator::container_type', 'iterator/std::back_insert_iterator::reference']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "back_insert_iterator class"
+f1_keywords: ['iterator/std::back_insert_iterator', 'iterator/std::back_insert_iterator::container_type', 'iterator/std::back_insert_iterator::reference']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::back_insert_iterator [C++]", "std::back_insert_iterator [C++], container_type", "std::back_insert_iterator [C++], reference"]
 ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # back_insert_iterator Class
 Describes an iterator adaptor that satisfies the requirements of an output iterator. It inserts, rather than overwrites, elements into the back end of a sequence and thus provides semantics that are different from the overwrite semantics provided by the iterators of the C++ sequence containers. The `back_insert_iterator` class is templatized on the type of container.  

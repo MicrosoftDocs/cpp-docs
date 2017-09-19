@@ -4,70 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "HRGN"
-  - "HFONT"
-  - "HBITMAP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRgn class, HRGN handle type"
-  - "HPEN"
-  - "objects [C++], graphic"
-  - "palettes, creating in device context"
-  - "pens, creating in device context"
-  - "bitmaps [C++], creating in device contexts"
-  - "palette objects"
-  - "memory [C++], display contexts"
-  - "MFC, graphic objects"
-  - "regions, creating in device context"
-  - "CPen class, HPEN handle type"
-  - "GDI objects [C++]"
-  - "HRGN"
-  - "graphic objects"
-  - "GDI objects [C++], graphic-object classes"
-  - "CFont class, HFONT handle type"
-  - "HFONT and class CFont"
-  - "HBITMAP and class CBitmap"
-  - "fonts [C++], creating in device context"
-  - "images [C++], graphic objects"
-  - "CBitmap class, HBITMAP handle type"
-  - "HPALETTE and class CPalette"
-  - "CBrush class, HBRUSH handle type"
-  - "objects [C++], graphic objects"
-  - "drawing, in device contexts"
-  - "device contexts, graphic objects"
-  - "brushes, creating in device context"
-  - "region objects"
-  - "pen objects"
-  - "GDI [C++], graphic-object classes"
-  - "graphic objects, creating in device context"
-  - "HBRUSH and class CBrush"
-  - "painting and device context"
-  - "CPalette class, HPALETTE handle type"
+f1_keywords: ["HRGN", "HFONT", "HBITMAP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRgn class [MFC], HRGN handle type", "HPEN [MFC]", "objects [MFC], graphic", "palettes [MFC], creating in device context", "pens [MFC], creating in device context", "bitmaps [MFC], creating in device contexts", "palette objects [MFC]", "memory [MFC], display contexts", "MFC, graphic objects", "regions [MFC], creating in device context", "CPen class [MFC], HPEN handle type", "GDI objects [MFC]", "HRGN [MFC]", "graphic objects [MFC]", "GDI objects [MFC], graphic-object classes", "CFont class [MFC], HFONT handle type", "HFONT and class CFont [MFC]", "HBITMAP and class CBitmap [MFC]", "fonts [MFC], creating in device context", "images [MFC], graphic objects [MFC]", "CBitmap class [MFC], HBITMAP handle type", "HPALETTE and class CPalette [MFC]", "CBrush class [MFC], HBRUSH handle type", "objects [MFC], graphic objects", "drawing [MFC], in device contexts", "device contexts [MFC], graphic objects [MFC]", "brushes [MFC], creating in device context", "region objects [MFC]", "pen objects [MFC]", "GDI [MFC], graphic-object classes", "graphic objects [MFC], creating in device context", "HBRUSH and class CBrush [MFC]", "painting and device context [MFC]", "CPalette class [MFC], HPALETTE handle type"]
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Graphic Objects
 Windows provides a variety of drawing tools to use in device contexts. It provides pens to draw lines, brushes to fill interiors, and fonts to draw text. MFC provides graphic-object classes equivalent to the drawing tools in Windows. The table below shows the available classes and the equivalent Windows graphics device interface (GDI) handle types.  

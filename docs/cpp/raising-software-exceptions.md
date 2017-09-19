@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "run-time errors, treating as exceptions"
-  - "exception handling, errors as exceptions"
-  - "exceptions, flagging errors as exceptions"
-  - "errors [C++], treating as exceptions"
-  - "exception handling, detecting errors"
-  - "structured exception handling, errors as exceptions"
-  - "exceptions, software"
-  - "RaiseException function"
-  - "software exceptions"
-  - "formats [C++], exception codes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""run-time errors, treating as exceptions"", ""exception handling [C++], errors as exceptions"", ""exceptions [C++], flagging errors as exceptions"", ""errors [C++], treating as exceptions"", ""exception handling [C++], detecting errors"", ""structured exception handling [C++], errors as exceptions"", ""exceptions [C++], software"", ""RaiseException function"", ""software exceptions [C++]"", ""formats [C++], exception codes""]"]
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Raising Software Exceptions
 Some of the most common sources of program errors are not flagged as exceptions by the system. For example, if you attempt to allocate a memory block but there is insufficient memory, the run-time or API function does not raise an exception but returns an error code.  

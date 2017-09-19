@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimationRect', 'AFXANIMATIONCONTROLLER/CAnimationRect', 'AFXANIMATIONCONTROLLER/CAnimationRect::CAnimationRect', 'AFXANIMATIONCONTROLLER/CAnimationRect::AddTransition', 'AFXANIMATIONCONTROLLER/CAnimationRect::GetBottom', 'AFXANIMATIONCONTROLLER/CAnimationRect::GetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationRect::GetLeft', 'AFXANIMATIONCONTROLLER/CAnimationRect::GetRight', 'AFXANIMATIONCONTROLLER/CAnimationRect::GetTop', 'AFXANIMATIONCONTROLLER/CAnimationRect::GetValue', 'AFXANIMATIONCONTROLLER/CAnimationRect::SetDefaultValue', 'AFXANIMATIONCONTROLLER/CAnimationRect::GetAnimationVariableList', 'AFXANIMATIONCONTROLLER/CAnimationRect::m_bFixedSize', 'AFXANIMATIONCONTROLLER/CAnimationRect::m_bottomValue', 'AFXANIMATIONCONTROLLER/CAnimationRect::m_leftValue', 'AFXANIMATIONCONTROLLER/CAnimationRect::m_rightValue', 'AFXANIMATIONCONTROLLER/CAnimationRect::m_szInitial', 'AFXANIMATIONCONTROLLER/CAnimationRect::m_topValue']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAnimationRect class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimationRect [MFC], CAnimationRect", "CAnimationRect [MFC], AddTransition", "CAnimationRect [MFC], GetBottom", "CAnimationRect [MFC], GetDefaultValue", "CAnimationRect [MFC], GetLeft", "CAnimationRect [MFC], GetRight", "CAnimationRect [MFC], GetTop", "CAnimationRect [MFC], GetValue", "CAnimationRect [MFC], SetDefaultValue", "CAnimationRect [MFC], GetAnimationVariableList", "CAnimationRect [MFC], m_bFixedSize", "CAnimationRect [MFC], m_bottomValue", "CAnimationRect [MFC], m_leftValue", "CAnimationRect [MFC], m_rightValue", "CAnimationRect [MFC], m_szInitial", "CAnimationRect [MFC], m_topValue"]
 ms.assetid: 0294156d-241e-4a57-92b2-31234fe557d6
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CAnimationRect Class
 Implements the functionality of a rectangle whose sides can be animated.  

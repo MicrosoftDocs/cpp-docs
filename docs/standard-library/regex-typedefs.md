@@ -6,9 +6,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['cmatch', 'regex/std::cmatch', 'cregex_iterator', 'regex/std::cregex_iterator', 'cregex_token_iterator', 'regex/std::cregex_token_iterator', 'csub_match', 'regex/std::csub_match', 'regex', 'regex/std::regex', 'smatch', 'regex/std::smatch', 'sregex_iterator', 'regex/std::sregex_iterator', 'sregex_token_iterator', 'regex/std::sregex_token_iterator', 'ssub_match', 'regex/std::ssub_match', 'wcmatch', 'regex/std::wcmatch', 'wcregex_iterator', 'regex/std::wcregex_iterator', 'wcregex_token_iterator', 'regex/std::wcregex_token_iterator', 'wcsub_match', 'regex/std::wcsub_match', 'wregex', 'regex/std::wregex', 'wsmatch', 'regex/std::wsmatch', 'wsregex_iterator', 'regex/std::wsregex_iterator', 'wsregex_token_iterator', 'regex/std::wsregex_token_iterator', 'wssub_match', 'regex/std::wssub_match']  
-dev_langs:  
-  - "C++"  
+f1_keywords: ['regex/std::cmatch', 'regex/std::cregex_iterator', 'regex/std::cregex_token_iterator', 'regex/std::csub_match', 'regex/std::regex', 'regex/std::smatch', 'regex/std::sregex_iterator', 'regex/std::sregex_token_iterator', 'regex/std::ssub_match', 'regex/std::wcmatch', 'regex/std::wcregex_iterator', 'regex/std::wcregex_token_iterator', 'regex/std::wcsub_match', 'regex/std::wregex', 'regex/std::wsmatch', 'regex/std::wsregex_iterator', 'regex/std::wsregex_token_iterator', 'regex/std::wssub_match']
+dev_langs: ["C++"]
 ms.assetid: e6a69067-106c-4a24-9e08-7c867a3a2260
 caps.latest.revision: 10
 author: "corob-msft"

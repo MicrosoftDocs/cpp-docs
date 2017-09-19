@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['mutex/std::mutex', 'mutex/std::mutex::mutex', 'mutex/std::mutex::lock', 'mutex/std::mutex::native_handle', 'mutex/std::mutex::try_lock', 'mutex/std::mutex::unlock']  
-dev_langs: 
-  - "C++"
+f1_keywords: ['mutex/std::mutex', 'mutex/std::mutex::mutex', 'mutex/std::mutex::lock', 'mutex/std::mutex::native_handle', 'mutex/std::mutex::try_lock', 'mutex/std::mutex::unlock']
+dev_langs: ["C++"]
 ms.assetid: 7999d055-f74f-4303-810f-8d3c9cde2f69
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+helpviewer_keywords: ["std::mutex [C++]", "std::mutex [C++], mutex", "std::mutex [C++], lock", "std::mutex [C++], native_handle", "std::mutex [C++], try_lock", "std::mutex [C++], unlock"]
 ---
 # mutex Class (C++ Standard Library)
 Represents a *mutex type*. Objects of this type can be used to enforce mutual exclusion within a program.  

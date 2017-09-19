@@ -4,47 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE visual editing servers"
-  - "status bars, OLE document applications"
-  - "visual editing, application menus and resources"
-  - "string tables, visual editing applications"
-  - "OLE containers, menus and resources"
-  - "OLE applications [C++], menus and resources"
-  - "OLE server applications, menus and resources"
-  - "toolbars [C++], OLE document applications"
-  - "string editing, visual editing applications"
-  - "server applications, OLE menus and resources"
-  - "applications [OLE], menus and resources"
-  - "menus [C++], OLE document applications"
-  - "in-place activation, OLE menus and resources"
-  - "containers [C++], OLE container applications"
-  - "OLE menus and resources"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE visual editing servers [MFC]", "status bars [MFC], OLE document applications", "visual editing [MFC], application menus and resources", "string tables [MFC], visual editing applications", "OLE containers [MFC], menus and resources", "OLE applications [MFC], menus and resources", "OLE server applications [MFC], menus and resources", "toolbars [MFC], OLE document applications", "string editing [MFC], visual editing applications", "server applications [MFC], OLE menus and resources", "applications [OLE], menus and resources", "menus [MFC], OLE document applications", "in-place activation [MFC], OLE menus and resources", "containers [MFC], OLE container applications", "OLE menus and resources [MFC]"]
 ms.assetid: 52bfa086-7d3d-466f-94c7-c7061f3bdb3a
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Menus and Resources (OLE)
 This group of articles explains the use of menus and resources in MFC OLE document applications.  

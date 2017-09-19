@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "updating user interface objects"
-  - "command routing, update commands"
-  - "toolbar buttons [C++], enabling"
-  - "disabling toolbar buttons"
-  - "menus [C++], initializing"
-  - "update handlers"
-  - "disabling menu items"
-  - "toolbars [C++], updating"
-  - "menus [C++], updating as context changes"
-  - "toolbar controls [MFC], updated during OnIdle method"
-  - "menu items, enabling"
-  - "command routing, update handlers"
-  - "update handlers, calling"
+dev_langs: ["C++"]
+helpviewer_keywords: ["updating user interface objects [MFC]", "command routing [MFC], update commands", "toolbar buttons [MFC], enabling", "disabling toolbar buttons", "menus [MFC], initializing", "update handlers [MFC]", "disabling menu items", "toolbars [MFC], updating", "menus [MFC], updating as context changes", "toolbar controls [MFC], updated during OnIdle method [MFC]", "menu items, enabling", "command routing [MFC], update handlers", "update handlers, calling"]
 ms.assetid: 7359f6b1-4669-477d-bd99-690affed08d9
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # When Update Handlers Are Called
 Suppose the user clicks the mouse in the File menu, which generates a `WM_INITMENUPOPUP` message. The framework's update mechanism collectively updates all items on the File menu before the menu drops down so the user can see it.  

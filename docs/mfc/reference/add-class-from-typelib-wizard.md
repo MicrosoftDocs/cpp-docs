@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.class.typelib"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Add Class from TypeLib Wizard [C++]"
-  - "COM interfaces, adding classes"
+f1_keywords: ["vc.codewiz.class.typelib"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Add Class from TypeLib Wizard [MFC]", "COM interfaces, adding classes"]
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Add Class from Typelib Wizard
 Use this wizard to add an MFC class from an available type library. The wizard creates a class for each interface you add from the selected type library.  

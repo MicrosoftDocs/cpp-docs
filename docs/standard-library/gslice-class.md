@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['gslice', 'valarray/std::gslice', 'valarray/std::gslice::size', 'valarray/std::gslice::start', 'valarray/std::gslice::stride']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "gslice class"
+f1_keywords: ['valarray/std::gslice', 'valarray/std::gslice::size', 'valarray/std::gslice::start', 'valarray/std::gslice::stride']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::gslice [C++]", "std::gslice [C++], size", "std::gslice [C++], start", "std::gslice [C++], stride"]
 ms.assetid: f47cffd0-ea59-4b13-848b-7a5ce1d7e2a3
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # gslice Class
 A utility class to valarray that is used to define multidimensional subsets of a valarray. If a valarray is regarded as a multidimensional matrix with all elements in an array, then the slice extracts a vector out of the multidimensional array.  

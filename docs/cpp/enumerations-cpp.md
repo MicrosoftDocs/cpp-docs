@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "enum"
-  - "enum_cpp"
-  - "enum class"
-  - "enum struct"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "declarations, enumerations"
-  - "enumerators, declaring"
-  - "enum keyword [C++]"
-  - "named constants, enumeration declarations"
-  - "declaring enumerations"
+f1_keywords: ["enum", "enum_cpp", "enum class", "enum struct"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""declarations [C++], enumerations"", ""enumerators, declaring"", ""enum keyword [C++]"", ""named constants [C++], enumeration declarations"", ""declaring enumerations [C++]""]"]
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Enumerations (C++)
 An enumeration is a user-defined type that consists of a set of named integral constants that are known as enumerators.  

@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CReBar"
-  - "CReBarCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CReBar class, vs. CReBarCtrl"
-  - "rebar controls, CReBarCtrl class"
-  - "GetReBarCtrl class"
+f1_keywords: ["CReBar", "CReBarCtrl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CReBar class [MFC], vs. CReBarCtrl", "rebar controls [MFC], CReBarCtrl class [MFC]", "GetReBarCtrl class [MFC]"]
 ms.assetid: 7f9c1d7e-5d5f-4956-843c-69ed3df688d0
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CReBar vs. CReBarCtrl
 MFC provides two classes to create rebars: [CReBar](../mfc/reference/crebar-class.md) and [CReBarCtrl](../mfc/reference/crebarctrl-class.md) (which wraps the Windows common control API). **CReBar** provides all of the functionality of the rebar common control, and it handles many of the required common control settings and structures for you.  

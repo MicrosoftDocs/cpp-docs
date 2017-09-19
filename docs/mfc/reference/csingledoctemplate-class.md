@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSingleDocTemplate', 'AFXWIN/CSingleDocTemplate', 'AFXWIN/CSingleDocTemplate::CSingleDocTemplate']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "templates, SDI"
-  - "document templates, single"
-  - "single document interface (SDI), applications"
-  - "CSingleDocTemplate class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSingleDocTemplate [MFC], CSingleDocTemplate"]
 ms.assetid: 4f3a8212-81ee-48a0-ad22-e0ed7c36a391
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSingleDocTemplate Class
 Defines a document template that implements the single document interface (SDI).  

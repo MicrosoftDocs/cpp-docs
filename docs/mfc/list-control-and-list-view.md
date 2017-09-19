@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CListView class, and CListCtrl"
-  - "views, list and list control"
-  - "CListCtrl class, and CListView"
-  - "list views"
-  - "list controls, List view"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CListView class [MFC], and CListCtrl", "views [MFC], list and list control", "CListCtrl class [MFC], and CListView", "list views [MFC]", "list controls [MFC], List view"]
 ms.assetid: 7aee1c48-b158-4399-be0b-be366993665e
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # List Control and List View
 For convenience, MFC encapsulates the list control in two ways. You can use list controls:  

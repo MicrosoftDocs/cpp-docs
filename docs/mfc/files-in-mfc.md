@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "serialization [C++], MFC files"
-  - "I/O [C++], MFC classes"
-  - "files [C++], MFC"
-  - "files [C++], serialization"
-  - "binary access, binary file operations in MFC"
-  - "file I/O classes [C++]"
-  - "I/O [MFC]"
-  - "persistence [C++]"
-  - "MFC [C++], file operations"
-  - "files [C++], manipulating"
-  - "binary access"
+dev_langs: ["C++"]
+helpviewer_keywords: ["serialization [MFC], MFC files", "I/O [MFC], MFC classes", "files [MFC], MFC", "files [MFC], serialization", "binary access, binary file operations in MFC", "file I/O classes [MFC]", "I/O [MFC]", "persistence [MFC]", "MFC, file operations", "files [MFC], manipulating", "binary access [MFC]"]
 ms.assetid: ae25e2c5-2859-4679-ab97-438824e93ce1
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Files in MFC
 In the Microsoft Foundation Class Library (MFC), class [CFile](../mfc/reference/cfile-class.md) handles normal file I/O operations. This family of articles explains how to open and close files as well as read and write data to those files. It also discusses file status operations. For a description of how to use the object-based serialization features of MFC as an alternative way of reading and writing data in files, see the article [Serialization](../mfc/serialization-in-mfc.md).  

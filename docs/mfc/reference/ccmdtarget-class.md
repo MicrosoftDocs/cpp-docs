@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCmdTarget', 'AFXWIN/CCmdTarget', 'AFXWIN/CCmdTarget::CCmdTarget', 'AFXWIN/CCmdTarget::BeginWaitCursor', 'AFXWIN/CCmdTarget::DoOleVerb', 'AFXWIN/CCmdTarget::EnableAutomation', 'AFXWIN/CCmdTarget::EnableConnections', 'AFXWIN/CCmdTarget::EnableTypeLib', 'AFXWIN/CCmdTarget::EndWaitCursor', 'AFXWIN/CCmdTarget::EnumOleVerbs', 'AFXWIN/CCmdTarget::FromIDispatch', 'AFXWIN/CCmdTarget::GetDispatchIID', 'AFXWIN/CCmdTarget::GetIDispatch', 'AFXWIN/CCmdTarget::GetTypeInfoCount', 'AFXWIN/CCmdTarget::GetTypeInfoOfGuid', 'AFXWIN/CCmdTarget::GetTypeLib', 'AFXWIN/CCmdTarget::GetTypeLibCache', 'AFXWIN/CCmdTarget::IsInvokeAllowed', 'AFXWIN/CCmdTarget::IsResultExpected', 'AFXWIN/CCmdTarget::OnCmdMsg', 'AFXWIN/CCmdTarget::OnFinalRelease', 'AFXWIN/CCmdTarget::RestoreWaitCursor']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message maps, CCmdTarget base class"
-  - "command targets"
-  - "CCmdTarget class"
-  - "command routing, command targets"
-  - "targets, command"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCmdTarget [MFC], CCmdTarget", "CCmdTarget [MFC], BeginWaitCursor", "CCmdTarget [MFC], DoOleVerb", "CCmdTarget [MFC], EnableAutomation", "CCmdTarget [MFC], EnableConnections", "CCmdTarget [MFC], EnableTypeLib", "CCmdTarget [MFC], EndWaitCursor", "CCmdTarget [MFC], EnumOleVerbs", "CCmdTarget [MFC], FromIDispatch", "CCmdTarget [MFC], GetDispatchIID", "CCmdTarget [MFC], GetIDispatch", "CCmdTarget [MFC], GetTypeInfoCount", "CCmdTarget [MFC], GetTypeInfoOfGuid", "CCmdTarget [MFC], GetTypeLib", "CCmdTarget [MFC], GetTypeLibCache", "CCmdTarget [MFC], IsInvokeAllowed", "CCmdTarget [MFC], IsResultExpected", "CCmdTarget [MFC], OnCmdMsg", "CCmdTarget [MFC], OnFinalRelease", "CCmdTarget [MFC], RestoreWaitCursor"]
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CCmdTarget Class
 The base class for the Microsoft Foundation Class Library message-map architecture.  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog boxes [C++], creating"
-  - "MFC dialog boxes, creating"
-  - "files [C++], creating"
-  - "dialog classes, Add Class Wizard"
-  - "dialog classes, creating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "files [MFC], creating", "dialog classes [MFC], Add Class Wizard", "dialog classes [MFC], creating"]
 ms.assetid: d5321741-da41-47a8-bb1c-6a0e8b28c4c1
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Creating Your Dialog Class
 For each dialog box in your program, create a new dialog class to work with the dialog resource.  

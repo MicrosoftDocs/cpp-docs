@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocmon/std::money_put', 'money_put', 'locale/std::money_put::char_type', 'locale/std::money_put::iter_type', 'locale/std::money_put::string_type', 'locale/std::money_put::do_put', 'locale/std::money_put::put']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "money_put class"
+f1_keywords: ['xlocmon/std::money_put', 'locale/std::money_put::char_type', 'locale/std::money_put::iter_type', 'locale/std::money_put::string_type', 'locale/std::money_put::do_put', 'locale/std::money_put::put']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::money_put [C++]", "std::money_put [C++], char_type", "std::money_put [C++], iter_type", "std::money_put [C++], string_type", "std::money_put [C++], do_put", "std::money_put [C++], put"]
 ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # money_put Class
 The template class describes an object that can serve as a locale facet to control conversions of monetary values to sequences of type `CharType`.  

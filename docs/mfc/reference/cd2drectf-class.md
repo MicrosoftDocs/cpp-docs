@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DRectF', 'AFXRENDERTARGET/CD2DRectF', 'AFXRENDERTARGET/CD2DRectF::CD2DRectF', 'AFXRENDERTARGET/CD2DRectF::IsNull']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DRectF class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DRectF [MFC], CD2DRectF", "CD2DRectF [MFC], IsNull"]
 ms.assetid: 87c12d87-9d18-4a19-ba14-0f51d6b6835a
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CD2DRectF Class
 A wrapper for `D2D1_RECT_F`.  

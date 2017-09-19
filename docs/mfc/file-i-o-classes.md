@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.file"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "disk file classes"
-  - "stdio classes"
-  - "OLE streams"
-  - "I/O [C++], MFC classes"
-  - "translated stream classes"
-  - "file I/O classes [C++]"
-  - "I/O [MFC], classes"
-  - "sockets classes"
-  - "stream classes"
-  - "memory file classes"
+f1_keywords: ["vc.classes.file"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["disk file classes [MFC]", "stdio classes [MFC]", "OLE streams [MFC]", "I/O [MFC], MFC classes", "translated stream classes [MFC]", "file I/O classes [MFC]", "I/O [MFC], classes", "sockets classes [MFC]", "stream classes [MFC]", "memory file classes [MFC]"]
 ms.assetid: 92821c3f-d9e1-47f6-98c9-3b632d86e811
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # File I/O Classes
 These classes provide an interface to traditional disk files, in-memory files, Active streams, and Windows sockets. All of the classes derived from `CFile` can be used with a `CArchive` object to perform serialization.  

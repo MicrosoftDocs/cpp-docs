@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CProgressCtrl', 'AFXCMN/CProgressCtrl', 'AFXCMN/CProgressCtrl::CProgressCtrl', 'AFXCMN/CProgressCtrl::Create', 'AFXCMN/CProgressCtrl::CreateEx', 'AFXCMN/CProgressCtrl::GetBarColor', 'AFXCMN/CProgressCtrl::GetBkColor', 'AFXCMN/CProgressCtrl::GetPos', 'AFXCMN/CProgressCtrl::GetRange', 'AFXCMN/CProgressCtrl::GetState', 'AFXCMN/CProgressCtrl::GetStep', 'AFXCMN/CProgressCtrl::OffsetPos', 'AFXCMN/CProgressCtrl::SetBarColor', 'AFXCMN/CProgressCtrl::SetBkColor', 'AFXCMN/CProgressCtrl::SetMarquee', 'AFXCMN/CProgressCtrl::SetPos', 'AFXCMN/CProgressCtrl::SetRange', 'AFXCMN/CProgressCtrl::SetState', 'AFXCMN/CProgressCtrl::SetStep', 'AFXCMN/CProgressCtrl::StepIt']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CProgressCtrl class"
-  - "progress controls [C++], CProgressCtrl class"
-  - "Internet Explorer 4.0 common controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CProgressCtrl [MFC], CProgressCtrl", "CProgressCtrl [MFC], Create", "CProgressCtrl [MFC], CreateEx", "CProgressCtrl [MFC], GetBarColor", "CProgressCtrl [MFC], GetBkColor", "CProgressCtrl [MFC], GetPos", "CProgressCtrl [MFC], GetRange", "CProgressCtrl [MFC], GetState", "CProgressCtrl [MFC], GetStep", "CProgressCtrl [MFC], OffsetPos", "CProgressCtrl [MFC], SetBarColor", "CProgressCtrl [MFC], SetBkColor", "CProgressCtrl [MFC], SetMarquee", "CProgressCtrl [MFC], SetPos", "CProgressCtrl [MFC], SetRange", "CProgressCtrl [MFC], SetState", "CProgressCtrl [MFC], SetStep", "CProgressCtrl [MFC], StepIt"]
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CProgressCtrl Class
 Provides the functionality of the Windows common progress bar control.  

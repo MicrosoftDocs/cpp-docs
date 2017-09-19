@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MFC ActiveX Controls (MFC)"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COleControl class, MFC ActiveX controls"
-  - "ActiveX controls [C++], MFC"
-  - "containers [C++], MFC ActiveX controls"
-  - "MFC ActiveX controls [C++], serializing"
-  - "MFC ActiveX controls [C++], containers"
-  - "serialization [C++], MFC ActiveX controls"
-  - "dispatch maps, for MFC ActiveX controls"
-  - "MFC ActiveX controls [C++], active/inactive state"
-  - "events [C++], ActiveX controls"
-  - "MFC ActiveX controls [C++]"
+f1_keywords: ["MFC ActiveX Controls (MFC)"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleControl class [MFC], MFC ActiveX controls", "ActiveX controls [MFC], MFC", "containers [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], serializing", "MFC ActiveX controls [MFC], containers", "serialization [MFC], MFC ActiveX controls", "dispatch maps [MFC], for MFC ActiveX controls", "MFC ActiveX controls [MFC], active/inactive state", "events [MFC], ActiveX controls", "MFC ActiveX controls [MFC]"]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # MFC ActiveX Controls
 An ActiveX control is a reusable software component based on the Component Object Model (COM) that supports a wide variety of OLE functionality and can be customized to fit many software needs. ActiveX controls are designed for use both in ordinary ActiveX control containers and on the Internet, in World Wide Web pages. You can create ActiveX controls either with MFC, described here, or with the [Active Template Library (ATL)](../atl/active-template-library-atl-concepts.md).  

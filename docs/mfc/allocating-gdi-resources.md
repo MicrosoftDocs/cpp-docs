@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resources [MFC], printing"
-  - "GDI objects, allocating during printing"
-  - "printing [MFC], allocating GDI resources"
+dev_langs: ["C++"]
+helpviewer_keywords: ["resources [MFC], printing", "GDI objects [MFC], allocating during printing", "printing [MFC], allocating GDI resources"]
 ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Allocating GDI Resources
 This article explains how to allocate and deallocate the Windows graphics device interface (GDI) objects needed for printing.  

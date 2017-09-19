@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DMesh', 'AFXRENDERTARGET/CD2DMesh', 'AFXRENDERTARGET/CD2DMesh::CD2DMesh', 'AFXRENDERTARGET/CD2DMesh::Attach', 'AFXRENDERTARGET/CD2DMesh::Create', 'AFXRENDERTARGET/CD2DMesh::Destroy', 'AFXRENDERTARGET/CD2DMesh::Detach', 'AFXRENDERTARGET/CD2DMesh::Get', 'AFXRENDERTARGET/CD2DMesh::IsValid', 'AFXRENDERTARGET/CD2DMesh::Open', 'AFXRENDERTARGET/CD2DMesh::m_pMesh']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DMesh class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DMesh [MFC], CD2DMesh", "CD2DMesh [MFC], Attach", "CD2DMesh [MFC], Create", "CD2DMesh [MFC], Destroy", "CD2DMesh [MFC], Detach", "CD2DMesh [MFC], Get", "CD2DMesh [MFC], IsValid", "CD2DMesh [MFC], Open", "CD2DMesh [MFC], m_pMesh"]
 ms.assetid: 11a2c78a-1367-40e8-a34f-44aa0509a4c9
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CD2DMesh Class
 A wrapper for ID2D1Mesh.  

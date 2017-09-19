@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['ostrstream', 'strstream/std::ostrstream::freeze', 'strstream/std::ostrstream::pcount', 'strstream/std::ostrstream::rdbuf', 'strstream/std::ostrstream::str']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ostrstream class"
+f1_keywords: ['strstream/std::ostrstream::freeze', 'strstream/std::ostrstream::pcount', 'strstream/std::ostrstream::rdbuf', 'strstream/std::ostrstream::str']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::ostrstream [C++], freeze", "std::ostrstream [C++], pcount", "std::ostrstream [C++], rdbuf", "std::ostrstream [C++], str"]
 ms.assetid: e2e34679-b266-4728-a8e1-8eda5d400e46
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ostrstream Class
 Describes an object that controls insertion of elements and encoded objects into a stream buffer of class [strstreambuf](../standard-library/strstreambuf-class.md).  

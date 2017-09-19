@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CD2DTextLayout', 'AFXRENDERTARGET/CD2DTextLayout', 'AFXRENDERTARGET/CD2DTextLayout::CD2DTextLayout', 'AFXRENDERTARGET/CD2DTextLayout::Create', 'AFXRENDERTARGET/CD2DTextLayout::Destroy', 'AFXRENDERTARGET/CD2DTextLayout::Get', 'AFXRENDERTARGET/CD2DTextLayout::GetFontFamilyName', 'AFXRENDERTARGET/CD2DTextLayout::GetLocaleName', 'AFXRENDERTARGET/CD2DTextLayout::IsValid', 'AFXRENDERTARGET/CD2DTextLayout::ReCreate', 'AFXRENDERTARGET/CD2DTextLayout::SetFontFamilyName', 'AFXRENDERTARGET/CD2DTextLayout::SetLocaleName', 'AFXRENDERTARGET/CD2DTextLayout::m_pTextLayout']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CD2DTextLayout class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CD2DTextLayout [MFC], CD2DTextLayout", "CD2DTextLayout [MFC], Create", "CD2DTextLayout [MFC], Destroy", "CD2DTextLayout [MFC], Get", "CD2DTextLayout [MFC], GetFontFamilyName", "CD2DTextLayout [MFC], GetLocaleName", "CD2DTextLayout [MFC], IsValid", "CD2DTextLayout [MFC], ReCreate", "CD2DTextLayout [MFC], SetFontFamilyName", "CD2DTextLayout [MFC], SetLocaleName", "CD2DTextLayout [MFC], m_pTextLayout"]
 ms.assetid: 724bd13c-f2ef-4e55-a775-8cb04b7b7908
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CD2DTextLayout Class
 A wrapper for IDWriteTextLayout.  

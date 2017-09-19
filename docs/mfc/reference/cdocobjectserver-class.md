@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDocObjectServer', 'AFXDOCOB/CDocObjectServer', 'AFXDOCOB/CDocObjectServer::CDocObjectServer', 'AFXDOCOB/CDocObjectServer::ActivateDocObject', 'AFXDOCOB/CDocObjectServer::OnActivateView', 'AFXDOCOB/CDocObjectServer::OnApplyViewState', 'AFXDOCOB/CDocObjectServer::OnSaveViewState']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "document object server"
-  - "CDocObjectServer class"
-  - "servers [C++], ActiveX documents"
-  - "docobject server"
-  - "servers [C++], doc objects"
-  - "ActiveX documents [C++], document server"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDocObjectServer [MFC], CDocObjectServer", "CDocObjectServer [MFC], ActivateDocObject", "CDocObjectServer [MFC], OnActivateView", "CDocObjectServer [MFC], OnApplyViewState", "CDocObjectServer [MFC], OnSaveViewState"]
 ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDocObjectServer Class
 Implements the additional OLE interfaces needed to make a normal `COleDocument` server into a full DocObject server: `IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, and `IPrint`.  

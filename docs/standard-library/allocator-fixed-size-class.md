@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::allocators::allocator_fixed_size', 'allocators::allocator_fixed_size', 'allocators/stdext::allocator_fixed_size', 'allocator_fixed_size', 'stdext::allocators::allocator_fixed_size']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "allocator_fixed_size class"
+f1_keywords: ['allocators/stdext::allocators::allocator_fixed_size', 'allocators/stdext::allocator_fixed_size', 'stdext::allocators::allocator_fixed_size']
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdext::allocators [C++], allocator_fixed_size", "stdext::allocator_fixed_size"]
 ms.assetid: 138f3ef8-b0b3-49c3-9486-58f2213c172f
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # allocator_fixed_size Class
 Describes an object that manages storage allocation and freeing for objects of type `Type` using a cache of type [cache_freelist](../standard-library/cache-freelist-class.md) with a length managed by [max_fixed_size](../standard-library/max-fixed-size-class.md).  

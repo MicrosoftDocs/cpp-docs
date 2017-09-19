@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "tuple_element"
-  - "std::tuple_element"
-  - "utility/std::tuple_element"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tuple_element Class"
+f1_keywords: ['tuple_element", "std::tuple_element", "utility/std::tuple_element']
+dev_langs: ["C++"]
+helpviewer_keywords: [", "]
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # tuple_element Class
 Wraps a `tuple` element. Specializations wrap `array` elements and `pair` elements.  

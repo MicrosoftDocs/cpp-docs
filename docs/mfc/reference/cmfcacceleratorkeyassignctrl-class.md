@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCAcceleratorKeyAssignCtrl', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::GetAccel', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsFocused', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsKeyDefined', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::ResetKey']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCAcceleratorKeyAssignCtrl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCAcceleratorKeyAssignCtrl [MFC], CMFCAcceleratorKeyAssignCtrl", "CMFCAcceleratorKeyAssignCtrl [MFC], GetAccel", "CMFCAcceleratorKeyAssignCtrl [MFC], IsFocused", "CMFCAcceleratorKeyAssignCtrl [MFC], IsKeyDefined", "CMFCAcceleratorKeyAssignCtrl [MFC], PreTranslateMessage", "CMFCAcceleratorKeyAssignCtrl [MFC], ResetKey"]
 ms.assetid: 89fb8e62-596e-4e71-8c9a-32740347aaab
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCAcceleratorKeyAssignCtrl Class
 The `CMFCAcceleratorKeyAssignCtrl` class extends the [CEdit Class](../../mfc/reference/cedit-class.md) to support extra system buttons such as ALT, CONTROL, and SHIFT.  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMultiLock', 'AFXMT/CMultiLock', 'AFXMT/CMultiLock::CMultiLock', 'AFXMT/CMultiLock::IsLocked', 'AFXMT/CMultiLock::Lock', 'AFXMT/CMultiLock::Unlock']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMultiLock class"
-  - "synchronization objects, access control"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMultiLock [MFC], CMultiLock", "CMultiLock [MFC], IsLocked", "CMultiLock [MFC], Lock", "CMultiLock [MFC], Unlock"]
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMultiLock Class
 Represents the access-control mechanism used in controlling access to resources in a multithreaded program.  

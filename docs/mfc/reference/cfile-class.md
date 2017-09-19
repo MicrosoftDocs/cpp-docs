@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFile', 'AFX/CFile', 'AFX/CFile::CFile', 'AFX/CFile::Abort', 'AFX/CFile::Close', 'AFX/CFile::Duplicate', 'AFX/CFile::Flush', 'AFX/CFile::GetFileName', 'AFX/CFile::GetFilePath', 'AFX/CFile::GetFileTitle', 'AFX/CFile::GetLength', 'AFX/CFile::GetPosition', 'AFX/CFile::GetStatus', 'AFX/CFile::LockRange', 'AFX/CFile::Open', 'AFX/CFile::Read', 'AFX/CFile::Remove', 'AFX/CFile::Rename', 'AFX/CFile::Seek', 'AFX/CFile::SeekToBegin', 'AFX/CFile::SeekToEnd', 'AFX/CFile::SetFilePath', 'AFX/CFile::SetLength', 'AFX/CFile::SetStatus', 'AFX/CFile::UnlockRange', 'AFX/CFile::Write', 'AFX/CFile::hFileNull', 'AFX/CFile::m_hFile', 'AFX/CFile::m_pTM']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFile class"
-  - "CArchive class, using with CFile"
-  - "files [C++], classes for"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFile [MFC], CFile", "CFile [MFC], Abort", "CFile [MFC], Close", "CFile [MFC], Duplicate", "CFile [MFC], Flush", "CFile [MFC], GetFileName", "CFile [MFC], GetFilePath", "CFile [MFC], GetFileTitle", "CFile [MFC], GetLength", "CFile [MFC], GetPosition", "CFile [MFC], GetStatus", "CFile [MFC], LockRange", "CFile [MFC], Open", "CFile [MFC], Read", "CFile [MFC], Remove", "CFile [MFC], Rename", "CFile [MFC], Seek", "CFile [MFC], SeekToBegin", "CFile [MFC], SeekToEnd", "CFile [MFC], SetFilePath", "CFile [MFC], SetLength", "CFile [MFC], SetStatus", "CFile [MFC], UnlockRange", "CFile [MFC], Write", "CFile [MFC], hFileNull", "CFile [MFC], m_hFile", "CFile [MFC], m_pTM"]
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CFile Class
 The base class for Microsoft Foundation Class file classes.  

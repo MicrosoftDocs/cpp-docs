@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['geometric_distribution', 'random/std::geometric_distribution', 'random/std::geometric_distribution::reset', 'random/std::geometric_distribution::p', 'random/std::geometric_distribution::param', 'random/std::geometric_distribution::min', 'random/std::geometric_distribution::max', 'random/std::geometric_distribution::operator()', 'random/std::geometric_distribution::param_type', 'random/std::geometric_distribution::param_type::p', 'random/std::geometric_distribution::param_type::operator==', 'random/std::geometric_distribution::param_type::operator!=', 'random/std::geometric_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "geometric_distribution class"
-  - "geometric_distribution"
+f1_keywords: ['random/std::geometric_distribution', 'random/std::geometric_distribution::reset', 'random/std::geometric_distribution::p', 'random/std::geometric_distribution::param', 'random/std::geometric_distribution::min', 'random/std::geometric_distribution::max', 'random/std::geometric_distribution::operator()', 'random/std::geometric_distribution::param_type', 'random/std::geometric_distribution::param_type::p', 'random/std::geometric_distribution::param_type::operator==', 'random/std::geometric_distribution::param_type::operator!=', 'random/std::geometric_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::geometric_distribution [C++]", "std::geometric_distribution [C++], reset", "std::geometric_distribution [C++], p", "std::geometric_distribution [C++], param", "std::geometric_distribution [C++], min", "std::geometric_distribution [C++], max", "std::geometric_distribution [C++], param_type", "std::geometric_distribution [C++], param_type"]
 ms.assetid: 38f933af-3b49-492e-9d26-b6b272a60013
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # geometric_distribution Class
 Generates a geometric distribution.  

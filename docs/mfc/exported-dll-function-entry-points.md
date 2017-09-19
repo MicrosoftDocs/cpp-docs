@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exporting DLLs, functions"
-  - "MFC, managing state data"
-  - "state management, exported DLLs"
+dev_langs: ["C++"]
+helpviewer_keywords: ["exporting DLLs [MFC], functions", "MFC, managing state data", "state management [MFC], exported DLLs"]
 ms.assetid: 3268666e-d24b-44f2-80e8-7c80f73b93ca
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Exported DLL Function Entry Points
 For exported functions of a DLL, use the [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state) macro to maintain the proper global state when switching from the DLL module to the calling application's DLL.  

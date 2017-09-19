@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['discrete_distribution', 'random/std::discrete_distribution', 'random/std::discrete_distribution::reset', 'random/std::discrete_distribution::probabilities', 'random/std::discrete_distribution::param', 'random/std::discrete_distribution::min', 'random/std::discrete_distribution::max', 'random/std::discrete_distribution::operator()', 'random/std::discrete_distribution::param_type', 'random/std::discrete_distribution::param_type::probabilities', 'random/std::discrete_distribution::param_type::operator==', 'random/std::discrete_distribution::param_type::operator!=', 'random/std::discrete_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "discrete_distribution class"
+f1_keywords: ['random/std::discrete_distribution', 'random/std::discrete_distribution::reset', 'random/std::discrete_distribution::probabilities', 'random/std::discrete_distribution::param', 'random/std::discrete_distribution::min', 'random/std::discrete_distribution::max', 'random/std::discrete_distribution::operator()', 'random/std::discrete_distribution::param_type', 'random/std::discrete_distribution::param_type::probabilities', 'random/std::discrete_distribution::param_type::operator==', 'random/std::discrete_distribution::param_type::operator!=', 'random/std::discrete_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::discrete_distribution [C++]", "std::discrete_distribution [C++], reset", "std::discrete_distribution [C++], probabilities", "std::discrete_distribution [C++], param", "std::discrete_distribution [C++], min", "std::discrete_distribution [C++], max", "std::discrete_distribution [C++], param_type", "std::discrete_distribution [C++], param_type"]
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # discrete_distribution Class
 Generates a discrete integer distribution that has uniform-width intervals with uniform probability in each interval.  

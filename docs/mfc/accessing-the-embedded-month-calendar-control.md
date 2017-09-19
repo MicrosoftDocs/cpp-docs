@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DateTimePicker control [MFC], accessing month calendar"
-  - "CDateTimeCtrl class, accessing embedded control"
-  - "month calendar controls, embedded in date/time picker"
-  - "CMonthCalCtrl class, changing the font"
-  - "month calendar controls, changing the font"
-  - "DateTimePicker control [MFC]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["DateTimePicker control [MFC], accessing month calendar", "CDateTimeCtrl class [MFC], accessing embedded control", "month calendar controls [MFC], embedded in date/time picker", "CMonthCalCtrl class [MFC], changing the font", "month calendar controls [MFC], changing the font", "DateTimePicker control [MFC]"]
 ms.assetid: 355e97ed-cf81-4df3-a2f8-9ddbbde93227
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Accessing the Embedded Month Calendar Control
 The embedded month calendar control object can be accessed from the `CDateTimeCtrl` object with a call to the [GetMonthCalCtrl](../mfc/reference/cdatetimectrl-class.md#getmonthcalctrl) member function.  

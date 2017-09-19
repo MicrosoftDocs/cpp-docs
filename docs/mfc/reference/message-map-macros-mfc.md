@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['AFXWIN/DECLARE_MESSAGE_MAP', 'AFXWIN/BEGIN_MESSAGE_MAP', 'AFXWIN/BEGIN_TEMPLATE_MESSAGE_MAP', 'AFXWIN/END_MESSAGE_MAP', 'AFXWIN/ON_COMMAND', 'AFXWIN/ON_COMMAND_EX', 'AFXWIN/ON_CONTROL', 'AFXWIN/ON_MESSAGE', 'AFXWIN/ON_OLECMD', 'AFXWIN/ON_REGISTERED_MESSAGE', 'AFXWIN/ON_REGISTERED_THREAD_MESSAGE', 'AFXWIN/ON_THREAD_MESSAGE', 'AFXWIN/ON_UPDATE_COMMAND_UI', 'AFXWIN/ON_COMMAND_RANGE', 'AFXWIN/ON_UPDATE_COMMAND_UI_RANGE', 'AFXWIN/ON_CONTROL_RANGE']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message map macros"
-  - "Windows messages [C++], declaration"
-  - "demarcating Windows messages"
-  - "message maps [C++], macros"
-  - "message maps [C++], declaration and demarcation"
-  - "message mapping macros"
-  - "ranges, message map"
-  - "message map ranges"
+f1_keywords: ['AFXWIN/DECLARE_MESSAGE_MAP', 'AFXWIN/BEGIN_MESSAGE_MAP', 'AFXWIN/BEGIN_TEMPLATE_MESSAGE_MAP', 'AFXWIN/END_MESSAGE_MAP', 'AFXWIN/ON_COMMAND', 'AFXWIN/ON_COMMAND_EX', 'AFXWIN/ON_CONTROL', 'AFXWIN/ON_MESSAGE', 'AFXWIN/ON_OLECMD', 'AFXWIN/ON_REGISTERED_MESSAGE', 'AFXWIN/ON_REGISTERED_THREAD_MESSAGE', 'AFXWIN/ON_THREAD_MESSAGE', 'AFXWIN/ON_UPDATE_COMMAND_UI', 'AFXWIN/ON_COMMAND_RANGE', 'AFXWIN/ON_UPDATE_COMMAND_UI_RANGE', 'AFXWIN/ON_CONTROL_RANGE']
+dev_langs: ["C++"]
+helpviewer_keywords: ["message map macros", "Windows messages [MFC], declaration", "demarcating Windows messages", "message maps [MFC], macros", "message maps [MFC], declaration and demarcation", "message mapping macros", "ranges, message map", "message map ranges"]
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Message Map Macros (MFC)
 To support message maps, MFC supplies the following macros:  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iosfwd/std::char_traits', 'char_traits', 'string/std::char_traits::char_type', 'string/std::char_traits::int_type', 'string/std::char_traits::off_type', 'string/std::char_traits::pos_type', 'string/std::char_traits::state_type', 'string/std::char_traits::assign', 'string/std::char_traits::compare', 'string/std::char_traits::copy', 'string/std::char_traits::_Copy_s', 'string/std::char_traits::eof', 'string/std::char_traits::eq', 'string/std::char_traits::eq_int_type', 'string/std::char_traits::find', 'string/std::char_traits::length', 'string/std::char_traits::lt', 'string/std::char_traits::move', 'string/std::char_traits::_Move_s', 'string/std::char_traits::not_eof', 'string/std::char_traits::to_char_type', 'string/std::char_traits::to_int_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "char_traits struct"
-  - "char_traits class"
+f1_keywords: ['iosfwd/std::char_traits', 'string/std::char_traits::char_type', 'string/std::char_traits::int_type', 'string/std::char_traits::off_type', 'string/std::char_traits::pos_type', 'string/std::char_traits::state_type', 'string/std::char_traits::assign', 'string/std::char_traits::compare', 'string/std::char_traits::copy', 'string/std::char_traits::_Copy_s', 'string/std::char_traits::eof', 'string/std::char_traits::eq', 'string/std::char_traits::eq_int_type', 'string/std::char_traits::find', 'string/std::char_traits::length', 'string/std::char_traits::lt', 'string/std::char_traits::move', 'string/std::char_traits::_Move_s', 'string/std::char_traits::not_eof', 'string/std::char_traits::to_char_type', 'string/std::char_traits::to_int_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["char_traits struct", "char_traits class"]
 ms.assetid: 568e59f0-4521-4207-9223-9dcf6a16d620
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # char_traits Struct
 The char_traits struct describes attributes associated with a character.  

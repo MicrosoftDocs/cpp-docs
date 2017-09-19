@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "document templates, template objects"
-  - "applications [MFC]"
-  - "MFC [C++], application framework"
-  - "application objects [C++], relation to other MFC objects"
-  - "documents [C++]"
-  - "MFC [C++], documents"
-  - "document objects, in relation to other MFC objects"
-  - "view objects, relation to other MFC objects"
-  - "MFC [C++], views"
-  - "document/view architecture, about document/view architecture"
-  - "objects [C++], MFC applications"
-  - "MFC object relationships"
-  - "thread objects"
+dev_langs: ["C++"]
+helpviewer_keywords: ["document templates [MFC], template objects", "applications [MFC]", "MFC, application framework", "application objects [MFC], relation to other MFC objects", "documents [MFC]", "MFC, documents", "document objects [MFC], in relation to other MFC objects", "view objects [MFC], relation to other MFC objects", "MFC, views", "document/view architecture [MFC], about document/view architecture", "objects [MFC], MFC applications", "MFC object relationships", "thread objects [MFC]"]
 ms.assetid: 409ddd9b-66ad-4625-84f7-bf55a41d697b
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Documents, Views, and the Framework
 At the heart of the MFC framework are the concepts of document and view. A document is a data object with which the user interacts in an editing session. It is created by the `New` or **Open** command on the **File** menu and is typically saved in a file. (Standard MFC documents, derived from class **CDocument**, are different from Active documents and OLE compound documents.) A view is a window object through which the user interacts with a document.  

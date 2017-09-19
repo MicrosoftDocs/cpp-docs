@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MDICLIENT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MDI [C++], child windows"
-  - "child windows, and MDICLIENT window"
-  - "MDICLIENT window"
-  - "windows [C++], MDI"
-  - "frame windows [C++], MDI child windows"
-  - "child windows"
-  - "MDI [C++], frame windows"
+f1_keywords: ["MDICLIENT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MDI [MFC], child windows", "child windows [MFC], and MDICLIENT window", "MDICLIENT window [MFC]", "windows [MFC], MDI", "frame windows [MFC], MDI child windows", "child windows [MFC]", "MDI [MFC], frame windows"]
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Managing MDI Child Windows
 MDI main frame windows (one per application) contain a special child window called the **MDICLIENT** window. The **MDICLIENT** window manages the client area of the main frame window, and itself has child windows: the document windows, derived from `CMDIChildWnd`. Because the document windows are frame windows themselves (MDI child windows), they can also have their own children. In all of these cases, the parent window manages its child windows and forwards some commands to them.  

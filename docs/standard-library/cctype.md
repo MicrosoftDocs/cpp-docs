@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.<cctype>"
-  - "std::<cctype>"
-  - "<cctype>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cctype header"
+f1_keywords: ['std::<cctype>", "<cctype>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["cctype header"]
 ms.assetid: 3fd18bfd-c414-4def-bac1-c362e1fe8b71
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;cctype&gt;
 Includes the Standard C library header \<ctype.h> and adds the associated names to the `std` namespace.  

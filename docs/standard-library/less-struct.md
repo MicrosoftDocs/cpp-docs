@@ -4,36 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['less', 'xfunctional/std::less']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "less struct"
-  - "less function"
+f1_keywords: ['xfunctional/std::less']
+dev_langs: ["C++"]
+helpviewer_keywords: ["less struct", "less function"]
 ms.assetid: 39349da3-11cd-4774-b2cc-b46af5aae5d7
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # less Struct
 A binary predicate that performs the less-than operation ( `operator<`) on its arguments.  

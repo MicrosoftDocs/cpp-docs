@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.data"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "VERSIONABLE_SCHEMA macro"
-  - "persistent object data"
-  - "CArchive class, support for persistent data"
-  - "persistent C++ objects"
-  - "TN002"
+f1_keywords: ["vc.data"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["VERSIONABLE_SCHEMA macro [MFC]", "persistent object data", "CArchive class [MFC], support for persistent data", "persistent C++ objects [MFC]", "TN002"]
 ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # TN002: Persistent Object Data Format
 This note describes the MFC routines that support persistent C++ objects and the format of the object data when it is stored in a file. This applies only to classes with the [DECLARE_SERIAL](../mfc/reference/run-time-object-model-services.md#declare_serial) and [IMPLEMENT_SERIAL](../mfc/reference/run-time-object-model-services.md#implement_serial) macros.  

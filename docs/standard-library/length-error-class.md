@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdexcept/std::length_error', 'length_error']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "length_error class"
+f1_keywords: ['stdexcept/std::length_error'
+dev_langs: ["C++"]
+helpviewer_keywords: ["length_error class"]
 ms.assetid: d53c46c5-4626-400d-bd76-bf3e1e0f64ae
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # length_error Class
 The class serves as the base class for all exceptions thrown to report an attempt to generate an object too long to be specified.  

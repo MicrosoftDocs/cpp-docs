@@ -4,36 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::divides', 'divides']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "divides struct"
-  - "divides class"
+f1_keywords: ['xfunctional/std::divides'
+dev_langs: ["C++"]
+helpviewer_keywords: ["divides struct", "divides class"]
 ms.assetid: b9cf8e9c-6981-43a6-a6a3-8f761987dd7a
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # divides Struct
 A predefined function object that performs the division operation ( `operator/`) on its arguments.  

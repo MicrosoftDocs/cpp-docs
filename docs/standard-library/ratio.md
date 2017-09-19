@@ -4,60 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ratio/std::mega"
-  - "ratio/std::peta"
-  - "ratio/std::ratio_greater"
-  - "ratio/std::micro"
-  - "ratio/std::ratio_add"
-  - "ratio/std::ratio_not_equal"
-  - "ratio/std::hecto"
-  - "ratio/std::nano"
-  - "ratio/std::ratio_less_equal"
-  - "ratio/std::ratio_less"
-  - "ratio/std::centi"
-  - "ratio/std::ratio_greater_equal"
-  - "ratio/std::ratio_subtract"
-  - "<ratio>"
-  - "ratio/std::atto"
-  - "ratio/std::tera"
-  - "ratio/std::milli"
-  - "ratio/std::ratio_multiply"
-  - "ratio/std::kilo"
-  - "ratio/std::ratio_divide"
-  - "ratio/std::giga"
-  - "ratio/std::pico"
-  - "ratio/std::femto"
-  - "ratio/std::ratio_equal"
-  - "ratio/std::ratio"
-  - "ratio/std::exa"
-  - "ratio/std::deci"
-  - "ratio/std::deca"
-dev_langs: 
-  - "C++"
+f1_keywords: ['ratio/std::mega", "ratio/std::peta", "ratio/std::ratio_greater", "ratio/std::micro", "ratio/std::ratio_add", "ratio/std::ratio_not_equal", "ratio/std::hecto", "ratio/std::nano", "ratio/std::ratio_less_equal", "ratio/std::ratio_less", "ratio/std::centi", "ratio/std::ratio_greater_equal", "ratio/std::ratio_subtract", "<ratio>", "ratio/std::atto", "ratio/std::tera", "ratio/std::milli", "ratio/std::ratio_multiply", "ratio/std::kilo", "ratio/std::ratio_divide", "ratio/std::giga", "ratio/std::pico", "ratio/std::femto", "ratio/std::ratio_equal", "ratio/std::ratio", "ratio/std::exa", "ratio/std::deci", "ratio/std::deca']
+dev_langs: ["C++"]
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;ratio&gt;
 

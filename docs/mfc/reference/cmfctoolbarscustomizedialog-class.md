@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCToolBarsCustomizeDialog', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::CMFCToolBarsCustomizeDialog', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillAllCommandsList', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillCategoriesComboBox', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillCategoriesListBox', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetCommandName', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetCountInCategory', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetFlags', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::OnInitDialog', 'AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::PostNcDestroy']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCToolBarsCustomizeDialog class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCToolBarsCustomizeDialog [MFC], CMFCToolBarsCustomizeDialog", "CMFCToolBarsCustomizeDialog [MFC], FillAllCommandsList", "CMFCToolBarsCustomizeDialog [MFC], FillCategoriesComboBox", "CMFCToolBarsCustomizeDialog [MFC], FillCategoriesListBox", "CMFCToolBarsCustomizeDialog [MFC], GetCommandName", "CMFCToolBarsCustomizeDialog [MFC], GetCountInCategory", "CMFCToolBarsCustomizeDialog [MFC], GetFlags", "CMFCToolBarsCustomizeDialog [MFC], OnInitDialog", "CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy"]
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCToolBarsCustomizeDialog Class
 A modeless tab dialog box ( [CPropertySheet Class](../../mfc/reference/cpropertysheet-class.md)) that enables the user to customize the toolbars, menus, keyboard shortcuts, user-defined tools, and visual style in an application. Typically, the user accesses this dialog box by selecting **Customize** from the **Tools** menu.  

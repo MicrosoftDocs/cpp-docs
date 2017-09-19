@@ -4,47 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE server applications, activation"
-  - "OLE items, visual editing"
-  - "activation [C++]"
-  - "OLE [C++], in-place activation"
-  - "OLE [C++], activation"
-  - "in-place activation, embedded and linked items"
-  - "activating objects"
-  - "visual editing, activation"
-  - "visual editing"
-  - "documents, OLE"
-  - "embedded objects"
-  - "OLE [C++], editing"
-  - "in-place activation"
-  - "activation [C++], embedded OLE items"
-  - "OLE activation"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE server applications [MFC], activation", "OLE items [MFC], visual editing", "activation [MFC]", "OLE [MFC], in-place activation", "OLE [MFC], activation", "in-place activation, embedded and linked items", "activating objects", "visual editing, activation", "visual editing", "documents [MFC], OLE", "embedded objects [MFC]", "OLE [MFC], editing", "in-place activation", "activation [MFC], embedded OLE items", "OLE activation [MFC]"]
 ms.assetid: ed8357d9-e487-4aaa-aa6b-2edc4de25dfa
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Activation (C++)
 This article explains the role of activation in the visual editing of OLE items. After a user has embedded an OLE item in a container document, it may need to be used. To do this, the user double-clicks the item, which activates that item. The most frequent activity for activation is editing. Many current OLE items, when activated for editing, cause the menus and toolbars in the current frame window to change to reflect those belonging to the server application that created the item. This behavior, known as in-place activation, allows the user to edit any embedded item in a compound document without leaving the container document's window.  

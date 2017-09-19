@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMenuTearOffManager', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::CMenuTearOffManager', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Build', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::GetRegPath', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Initialize', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::IsDynamicID', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Parse', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse', 'AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMenuTearOffManager class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMenuTearOffManager [MFC], CMenuTearOffManager", "CMenuTearOffManager [MFC], Build", "CMenuTearOffManager [MFC], GetRegPath", "CMenuTearOffManager [MFC], Initialize", "CMenuTearOffManager [MFC], IsDynamicID", "CMenuTearOffManager [MFC], Parse", "CMenuTearOffManager [MFC], Reset", "CMenuTearOffManager [MFC], SetInUse", "CMenuTearOffManager [MFC], SetupTearOffMenus"]
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
 caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMenuTearOffManager Class
 Manages tear-off menus. A tear-off menu is a menu on the menu bar. The user can remove a tear-off menu from the menu bar, causing the tear-off menu to float.  

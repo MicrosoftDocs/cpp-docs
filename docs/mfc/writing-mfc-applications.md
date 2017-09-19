@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/16/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Internet applications [C++], MFC"
-  - "MFC [C++], Internet applications"
-  - "application wizards [C++], Internet applications"
-  - "MFC [C++], application development"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Internet applications [MFC], MFC", "MFC, Internet applications", "application wizards [MFC], Internet applications", "MFC, application development"]
 ms.assetid: 6a8d8a03-abfa-4976-86c2-c5773a4b7179
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Writing MFC Applications
 This article explains the initial steps you take to develop your application. First, you must decide what kind of application you are writing. Several of the choices were discussed in [Application Design Choices](../mfc/application-design-choices.md). Will your application be:  

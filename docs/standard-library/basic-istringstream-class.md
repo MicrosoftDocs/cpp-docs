@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['sstream/std::basic_istringstream', 'basic_istringstream', 'sstream/std::basic_istringstream::allocator_type', 'sstream/std::basic_istringstream::rdbuf', 'sstream/std::basic_istringstream::str', 'sstream/std::basic_istringstream::swap']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "basic_istringstream class"
+f1_keywords: ['sstream/std::basic_istringstream', 'sstream/std::basic_istringstream::allocator_type', 'sstream/std::basic_istringstream::rdbuf', 'sstream/std::basic_istringstream::str', 'sstream/std::basic_istringstream::swap']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::basic_istringstream [C++]", "std::basic_istringstream [C++], allocator_type", "std::basic_istringstream [C++], rdbuf", "std::basic_istringstream [C++], str", "std::basic_istringstream [C++], swap"]
 ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # basic_istringstream Class
 Describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.  

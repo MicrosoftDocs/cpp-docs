@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: [ 'memory/std::pointer_safety']  
+f1_keywords: ['memory/std::pointer_safety']
 ms.assetid: b9be0a7b-0beb-40b2-8183-911de371c6b9
 caps.latest.revision: 11
 manager: "ghogen"

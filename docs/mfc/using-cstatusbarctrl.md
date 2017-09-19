@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CStatusBarCtrl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CStatusBarCtrl class, using"
-  - "status bar controls, about status bar controls"
+f1_keywords: ["CStatusBarCtrl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStatusBarCtrl class [MFC], using", "status bar controls [MFC], about status bar controls"]
 ms.assetid: 08b39f83-580d-439a-b93e-7ef9e2a5702a
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using CStatusBarCtrl
 You can use the status bar control ([CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)) to create a control window that reflects various kinds of status information about the application. The status window can be divided into parts that display more than one type of information.  

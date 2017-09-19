@@ -4,49 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "RT_TOOLBAR"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "embedding toolbar in frame window class"
-  - "application wizards [C++], installing default application toolbars"
-  - "toolbars [C++], creating"
-  - "resources [MFC], toolbar"
-  - "toolbar controls [MFC], toolbars created using Application Wizard"
-  - "toolbar controls [MFC], command ID"
-  - "RT_TOOLBAR resource"
-  - "toolbars [C++], adding default using Application Wizard"
-  - "LoadBitmap method, toolbars"
-  - "Toolbar editor, Application Wizard"
-  - "command IDs, toolbar buttons"
-  - "SetButtons method"
-  - "CToolBar class, default toolbars in Application Wizard"
-  - "frame window classes, toolbar embedded in"
-  - "LoadToolBar method"
+f1_keywords: ["RT_TOOLBAR"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["embedding toolbar in frame window class [MFC]", "application wizards [MFC], installing default application toolbars", "toolbars [MFC], creating", "resources [MFC], toolbar", "toolbar controls [MFC], toolbars created using Application Wizard", "toolbar controls [MFC], command ID", "RT_TOOLBAR resource [MFC]", "toolbars [MFC], adding default using Application Wizard", "LoadBitmap method [MFC], toolbars", "Toolbar editor [MFC], Application Wizard", "command IDs [MFC], toolbar buttons", "SetButtons method [MFC]", "CToolBar class [MFC], default toolbars in Application Wizard", "frame window classes [MFC], toolbar embedded in", "LoadToolBar method [MFC]"]
 ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Toolbar Fundamentals
 This article describes the fundamental MFC implementation that lets you add a default toolbar to your application by selecting an option in the Application Wizard. Topics covered include:  

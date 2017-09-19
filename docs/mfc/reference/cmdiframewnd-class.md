@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMDIFrameWnd', 'AFXWIN/CMDIFrameWnd', 'AFXWIN/CMDIFrameWnd::CMDIFrameWnd', 'AFXWIN/CMDIFrameWnd::CreateClient', 'AFXWIN/CMDIFrameWnd::CreateNewChild', 'AFXWIN/CMDIFrameWnd::GetWindowMenuPopup', 'AFXWIN/CMDIFrameWnd::MDIActivate', 'AFXWIN/CMDIFrameWnd::MDICascade', 'AFXWIN/CMDIFrameWnd::MDIGetActive', 'AFXWIN/CMDIFrameWnd::MDIIconArrange', 'AFXWIN/CMDIFrameWnd::MDIMaximize', 'AFXWIN/CMDIFrameWnd::MDINext', 'AFXWIN/CMDIFrameWnd::MDIPrev', 'AFXWIN/CMDIFrameWnd::MDIRestore', 'AFXWIN/CMDIFrameWnd::MDISetMenu', 'AFXWIN/CMDIFrameWnd::MDITile']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MDI frame windows"
-  - "CMDIFrameWnd class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMDIFrameWnd [MFC], CMDIFrameWnd", "CMDIFrameWnd [MFC], CreateClient", "CMDIFrameWnd [MFC], CreateNewChild", "CMDIFrameWnd [MFC], GetWindowMenuPopup", "CMDIFrameWnd [MFC], MDIActivate", "CMDIFrameWnd [MFC], MDICascade", "CMDIFrameWnd [MFC], MDIGetActive", "CMDIFrameWnd [MFC], MDIIconArrange", "CMDIFrameWnd [MFC], MDIMaximize", "CMDIFrameWnd [MFC], MDINext", "CMDIFrameWnd [MFC], MDIPrev", "CMDIFrameWnd [MFC], MDIRestore", "CMDIFrameWnd [MFC], MDISetMenu", "CMDIFrameWnd [MFC], MDITile"]
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMDIFrameWnd Class
 Provides the functionality of a Windows multiple document interface (MDI) frame window, along with members for managing the window.  

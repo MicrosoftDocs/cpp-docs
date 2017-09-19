@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCToolBarDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::CMFCToolBarDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::CanBeStretched', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::CopyFrom', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarButton::ExportToMenuButton', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetByCmd', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetDateTimeCtrl', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetHwnd', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetTime', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::GetTimeAll', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::HaveHotBorder', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::NotifyCommand', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnAddToCustomizePage', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnChangeParentWnd', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnClick', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnCtlColor', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnGlobalFontsChanged', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnMove', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnShow', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnUpdateToolTip', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTime', 'AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTimeAll']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetStyle method"
-  - "OnCalculateSize method"
-  - "OnDraw method"
-  - "OnDrawOnCustomizeList method"
-  - "CMFCToolBarDateTimeCtrl class"
-  - "Serialize method"
-  - "OnSize method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCToolBarDateTimeCtrl [MFC], CMFCToolBarDateTimeCtrl", "CMFCToolBarDateTimeCtrl [MFC], CanBeStretched", "CMFCToolBarDateTimeCtrl [MFC], CopyFrom", "CMFCToolBarButton [MFC], ExportToMenuButton", "CMFCToolBarDateTimeCtrl [MFC], GetByCmd", "CMFCToolBarDateTimeCtrl [MFC], GetDateTimeCtrl", "CMFCToolBarDateTimeCtrl [MFC], GetHwnd", "CMFCToolBarDateTimeCtrl [MFC], GetTime", "CMFCToolBarDateTimeCtrl [MFC], GetTimeAll", "CMFCToolBarDateTimeCtrl [MFC], HaveHotBorder", "CMFCToolBarDateTimeCtrl [MFC], NotifyCommand", "CMFCToolBarDateTimeCtrl [MFC], OnAddToCustomizePage", "CMFCToolBarDateTimeCtrl [MFC], OnChangeParentWnd", "CMFCToolBarDateTimeCtrl [MFC], OnClick", "CMFCToolBarDateTimeCtrl [MFC], OnCtlColor", "CMFCToolBarDateTimeCtrl [MFC], OnGlobalFontsChanged", "CMFCToolBarDateTimeCtrl [MFC], OnMove", "CMFCToolBarDateTimeCtrl [MFC], OnShow", "CMFCToolBarDateTimeCtrl [MFC], OnUpdateToolTip", "CMFCToolBarDateTimeCtrl [MFC], SetTime", "CMFCToolBarDateTimeCtrl [MFC], SetTimeAll"]
 ms.assetid: a3853cb9-8ebc-444f-a1e4-9cf905e24c18
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCToolBarDateTimeCtrl Class
 A toolbar button that contains a date and time picker control.  

@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CVSListBox', 'AFXVSLISTBOX/CVSListBox', 'AFXVSLISTBOX/CVSListBox::CVSListBox', 'AFXVSLISTBOX/CVSListBox::AddItem', 'AFXVSLISTBOX/CVSListBox::EditItem', 'AFXVSLISTBOX/CVSListBox::GetCount', 'AFXVSLISTBOX/CVSListBox::GetItemData', 'AFXVSLISTBOX/CVSListBox::GetItemText', 'AFXVSLISTBOX/CVSListBox::GetSelItem', 'AFXVSLISTBOX/CVSListBox::RemoveItem', 'AFXVSLISTBOX/CVSListBox::SelectItem', 'AFXVSLISTBOX/CVSListBox::SetItemData', 'AFXVSLISTBOX/CVSListBox::GetListHwnd']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CVSListBox::PreTranslateMessage method"
-  - "CVSListBox class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CVSListBox [MFC], CVSListBox", "CVSListBox [MFC], AddItem", "CVSListBox [MFC], EditItem", "CVSListBox [MFC], GetCount", "CVSListBox [MFC], GetItemData", "CVSListBox [MFC], GetItemText", "CVSListBox [MFC], GetSelItem", "CVSListBox [MFC], RemoveItem", "CVSListBox [MFC], SelectItem", "CVSListBox [MFC], SetItemData", "CVSListBox [MFC], GetListHwnd"]
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CVSListBox Class
 The `CVSListBox` class supports an editable list control.  

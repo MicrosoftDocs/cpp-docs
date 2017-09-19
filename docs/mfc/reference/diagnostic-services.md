@@ -4,50 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.mfc.macros"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "diagnosis, diagnostic services"
-  - "diagnostic macros, list of general MFC"
-  - "services, diagnostic"
-  - "MFC, diagnostic services"
-  - "general diagnostic functions and variables"
-  - "diagnostics, diagnostic functions and variables"
-  - "diagnostics, list of general MFC"
-  - "diagnosis, diagnostic functions and variables"
-  - "diagnosis, list of general MFC"
-  - "general diagnostic macros in MFC"
-  - "diagnostic macros"
-  - "diagnostic services"
-  - "object diagnostic functions in MFC"
-  - "diagnostics, diagnostic services"
-  - "diagnostic functions and variables"
+f1_keywords: ["vc.mfc.macros"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["diagnosi [MFC]s, diagnostic services", "diagnostic macros [MFC], list of general MFC", "services [MFC], diagnostic", "MFC, diagnostic services", "general diagnostic functions and variables [MFC]", "diagnostics [MFC], diagnostic functions and variables", "diagnostics [MFC], list of general MFC", "diagnosis [MFC], diagnostic functions and variables", "diagnosis [MFC], list of general MFC", "general diagnostic macros in MFC", "diagnostic macros [MFC]", "diagnostic services [MFC]", "object diagnostic functions in MFC", "diagnostics [MFC], diagnostic services", "diagnostic functions and variables [MFC]"]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Diagnostic Services
 The Microsoft Foundation Class Library supplies many diagnostic services that make debugging your programs easier. These diagnostic services include macros and global functions that allow you to track your program's memory allocations, dump the contents of objects during run time, and print debugging messages during run time. The macros and global functions for diagnostic services are grouped into the following categories:  

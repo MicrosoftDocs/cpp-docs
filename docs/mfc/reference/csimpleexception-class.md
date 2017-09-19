@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSimpleException', 'AFX/CSimpleException', 'AFX/CSimpleException::CSimpleException', 'AFX/CSimpleException::GetErrorMessage']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSimpleException class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSimpleException [MFC], CSimpleException", "CSimpleException [MFC], GetErrorMessage"]
 ms.assetid: be0eb8ef-e5b9-47d6-b0fb-efaff2d1e666
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CSimpleException Class
 This class is a base class for resource-critical MFC exceptions.  

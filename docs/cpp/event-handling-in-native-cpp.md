@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event handling, Visual C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""event handling [C++], Visual C++""]"]
 ms.assetid: e4b9219a-15d8-42fb-83c8-6d2e4e087c8d
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Event Handling in Native C++
 In native C++ event handling, you set up an event source and event receiver using the [event_source](../windows/event-source.md) and [event_receiver](../windows/event-receiver.md) attributes, respectively, specifying `type`=`native`. These attributes allow the classes to which they are applied to fire events and handle events in a native, non-COM context.  

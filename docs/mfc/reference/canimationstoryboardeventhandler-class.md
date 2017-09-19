@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimationStoryboardEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::CreateInstance', 'AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardStatusChanged', 'AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardUpdated', 'AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::SetAnimationController']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAnimationStoryboardEventHandler class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimationStoryboardEventHandler [MFC], CAnimationStoryboardEventHandler", "CAnimationStoryboardEventHandler [MFC], CreateInstance", "CAnimationStoryboardEventHandler [MFC], OnStoryboardStatusChanged", "CAnimationStoryboardEventHandler [MFC], OnStoryboardUpdated", "CAnimationStoryboardEventHandler [MFC], SetAnimationController"]
 ms.assetid: 10a7e86b-c02d-4124-9a2e-61ecf8ac62fc
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CAnimationStoryboardEventHandler Class
 Implements a callback, which is called by the Animation API when the status of a storyboard is changed or a storyboard is updated.  

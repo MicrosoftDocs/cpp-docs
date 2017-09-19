@@ -4,46 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "std.<hash_map>"
-  - "<hash_map>"
-  - "std::<hash_map>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hash_map header"
+f1_keywords: ['<hash_map>", "std::<hash_map>']
+dev_langs: ["C++"]
+helpviewer_keywords: ["hash_map header"]
 ms.assetid: 0765708a-a668-42a2-9800-654c857bdcc2
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # &lt;hash_map&gt;
 > [!NOTE]
->  This header is obsolete. The alternative is [<unordered_map>](../standard-library/unordered-map.md).  
+>  This header is obsolete. The alternative is [\<unordered_map>](../standard-library/unordered-map.md).  
   
  Defines the container template classes hash_map and hash_multimap and their supporting templates.  
   
- In Visual C++ .NET 2003, members of the <hash_map> and <hash_set> header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+ In Visual C++ .NET 2003, members of the \<hash_map> and \<hash_set> header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
   
 ## Syntax  
   

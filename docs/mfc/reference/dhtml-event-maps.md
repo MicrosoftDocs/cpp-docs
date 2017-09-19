@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.macros.shared"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event map macros"
-  - "DHTML, event map macros"
-  - "macros, DHTML event map"
-  - "DHTML events, event map"
-  - "DHTML events"
+f1_keywords: ["vc.macros.shared"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["event map macros [MFC]", "DHTML [MFC], event map macros", "macros [MFC], DHTML event map", "DHTML events [MFC], event map", "DHTML events [MFC]"]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # DHTML Event Maps
 The following macros can be used to handle DHTML events.  

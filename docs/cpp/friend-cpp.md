@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Friend"
-  - "friend_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "member access, from friend functions"
-  - "friend classes"
-  - "friend keyword [C++]"
+f1_keywords: ["Friend", "friend_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""member access [C++], from friend functions"", ""friend classes [C++]"", ""friend keyword [C++]""]"]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # friend (C++)
 In some circumstances, it is more convenient to grant member-level access to functions that are not members of a class or to all members in a separate class. Only the class implementer can declare who its friends are. A function or class cannot declare itself as a friend of any class. In a class definition, use the `friend` keyword and the name of a non-member function or other class to grant it access to the private and protected members of your class.         In a template definition, a type parameter can be declared as a friend.  

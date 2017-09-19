@@ -4,32 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCDynamicLayout', 'AFXLAYOUT/CMFCDynamicLayout', 'AFXLAYOUT/CMFCDynamicLayout::AddItem', 'AFXLAYOUT/CMFCDynamicLayout::Adjust', 'AFXLAYOUT/CMFCDynamicLayout::Create', 'AFXLAYOUT/CMFCDynamicLayout::GetHostWnd', 'AFXLAYOUT/CMFCDynamicLayout::GetMinSize', 'AFXLAYOUT/CMFCDynamicLayout::GetWindowRect', 'AFXLAYOUT/CMFCDynamicLayout::HasItem', 'AFXLAYOUT/CMFCDynamicLayout::IsEmpty', 'AFXLAYOUT/CMFCDynamicLayout::LoadResource', 'AFXLAYOUT/CMFCDynamicLayout::SetMinSize']
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCDynamicLayout Class
 Specifies how controls in a window are moved and resized as the user resizes the window.  

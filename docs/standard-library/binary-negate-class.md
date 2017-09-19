@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::binary_negate', 'binary_negate']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binary_negate class"
+f1_keywords: ['xfunctional/std::binary_negate'
+dev_langs: ["C++"]
+helpviewer_keywords: ["binary_negate class"]
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # binary_negate Class
 A template class providing a member function that negates the return value of a specified binary function.  

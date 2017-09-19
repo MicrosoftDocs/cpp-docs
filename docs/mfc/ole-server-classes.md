@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.classes.ole"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE server applications, server classes"
-  - "OLE server documents"
-  - "COM components, classes"
-  - "component classes"
+f1_keywords: ["vc.classes.ole"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE server applications [MFC], server classes", "OLE server documents", "COM components, classes [MFC]", "component classes [MFC]"]
 ms.assetid: 8e9b67a2-c0ff-479c-a8d6-19b36c5e6fc6
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # OLE Server Classes
 These classes are used by server applications. Server documents are derived from `COleServerDoc` rather than from **CDocument**. Note that because `COleServerDoc` is derived from `COleLinkingDoc`, server documents can also be containers that support linking.  

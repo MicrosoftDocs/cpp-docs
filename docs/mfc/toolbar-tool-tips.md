@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tool tips [C++], activating"
-  - "CBRS_TOOLTIPS constant"
-  - "tool tips [C++], adding text"
-  - "updates"
-  - "CBRS_FLYBY constant"
-  - "tool tips [C++]"
-  - "updating status bar messages"
-  - "updates, status bar messages"
-  - "status bars, tool tips"
-  - "flyby status bar updates"
+dev_langs: ["C++"]
+helpviewer_keywords: ["tool tips [MFC], activating", "CBRS_TOOLTIPS constant [MFC]", "tool tips [MFC], adding text", "updates [MFC]", "CBRS_FLYBY constant [MFC]", "tool tips [MFC]", "updating status bar messages", "updates, status bar messages", "status bars [MFC], tool tips", "flyby status bar updates"]
 ms.assetid: d1696305-b604-4fad-9f09-638878371412
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Toolbar Tool Tips
 Tool tips are the tiny popup windows that present short descriptions of a toolbar button's purpose when you position the mouse over a button for a period of time. When you create an application with the Application Wizard that has a toolbar, tool tip support is provided for you. This article explains both the tool tip support created by the Application Wizard and how to add tool tip support to your application.  

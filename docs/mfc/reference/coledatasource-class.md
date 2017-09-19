@@ -4,44 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['COleDataSource', 'AFXOLE/COleDataSource', 'AFXOLE/COleDataSource::COleDataSource', 'AFXOLE/COleDataSource::CacheData', 'AFXOLE/COleDataSource::CacheGlobalData', 'AFXOLE/COleDataSource::DelayRenderData', 'AFXOLE/COleDataSource::DelayRenderFileData', 'AFXOLE/COleDataSource::DelaySetData', 'AFXOLE/COleDataSource::DoDragDrop', 'AFXOLE/COleDataSource::Empty', 'AFXOLE/COleDataSource::FlushClipboard', 'AFXOLE/COleDataSource::GetClipboardOwner', 'AFXOLE/COleDataSource::OnRenderData', 'AFXOLE/COleDataSource::OnRenderFileData', 'AFXOLE/COleDataSource::OnRenderGlobalData', 'AFXOLE/COleDataSource::OnSetData', 'AFXOLE/COleDataSource::SetClipboard']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "drag and drop [C++], MFC support"
-  - "Clipboard [C++], OLE support"
-  - "uniform data transfer"
-  - "OLE [C++], uniform data transfer"
-  - "Clipboard [C++], MFC support"
-  - "OLE Clipboard [C++], support"
-  - "IDataObject, MFC encapsulation"
-  - "data transfer [C++], OLE"
-  - "COleDataSource class"
-  - "OLE data transfer [C++]"
-  - "uniform data transfer, OLE"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COleDataSource [MFC], COleDataSource", "COleDataSource [MFC], CacheData", "COleDataSource [MFC], CacheGlobalData", "COleDataSource [MFC], DelayRenderData", "COleDataSource [MFC], DelayRenderFileData", "COleDataSource [MFC], DelaySetData", "COleDataSource [MFC], DoDragDrop", "COleDataSource [MFC], Empty", "COleDataSource [MFC], FlushClipboard", "COleDataSource [MFC], GetClipboardOwner", "COleDataSource [MFC], OnRenderData", "COleDataSource [MFC], OnRenderFileData", "COleDataSource [MFC], OnRenderGlobalData", "COleDataSource [MFC], OnSetData", "COleDataSource [MFC], SetClipboard"]
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # COleDataSource Class
 Acts as a cache into which an application places the data that it will offer during data transfer operations, such as Clipboard or drag-and-drop operations.  

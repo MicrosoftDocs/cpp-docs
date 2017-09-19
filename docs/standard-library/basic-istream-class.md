@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['basic_istream', 'istream/std::basic_istream', 'istream/std::basic_istream::gcount', 'istream/std::basic_istream::get', 'istream/std::basic_istream::getline', 'istream/std::basic_istream::ignore', 'istream/std::basic_istream::peek', 'istream/std::basic_istream::putback', 'istream/std::basic_istream::read', 'istream/std::basic_istream::readsome', 'istream/std::basic_istream::seekg', 'istream/std::basic_istream::sentry', 'istream/std::basic_istream::swap', 'istream/std::basic_istream::sync', 'istream/std::basic_istream::tellg', 'istream/std::basic_istream::unget']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "basic_istream class"
+f1_keywords: ['istream/std::basic_istream', 'istream/std::basic_istream::gcount', 'istream/std::basic_istream::get', 'istream/std::basic_istream::getline', 'istream/std::basic_istream::OVERWRITE', 'istream/std::basic_istream::peek', 'istream/std::basic_istream::putback', 'istream/std::basic_istream::read', 'istream/std::basic_istream::readsome', 'istream/std::basic_istream::seekg', 'istream/std::basic_istream::sentry', 'istream/std::basic_istream::swap', 'istream/std::basic_istream::sync', 'istream/std::basic_istream::tellg', 'istream/std::basic_istream::unget']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::basic_istream [C++]", "std::basic_istream [C++], gcount", "std::basic_istream [C++], get", "std::basic_istream [C++], getline", "std::basic_istream [C++], OVERWRITE", "std::basic_istream [C++], peek", "std::basic_istream [C++], putback", "std::basic_istream [C++], read", "std::basic_istream [C++], readsome", "std::basic_istream [C++], seekg", "std::basic_istream [C++], sentry", "std::basic_istream [C++], swap", "std::basic_istream [C++], sync", "std::basic_istream [C++], tellg", "std::basic_istream [C++], unget"]
 ms.assetid: c7c27111-de6d-42b4-95a3-a7e65259bf17
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # basic_istream Class
 Describes an object that controls extraction of elements and encoded objects from a stream buffer with elements of type `Elem`, also known as [char_type](../standard-library/basic-ios-class.md#char_type), whose character traits are determined by the class *Tr*, also known as [traits_type](../standard-library/basic-ios-class.md#traits_type).  

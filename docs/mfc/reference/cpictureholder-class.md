@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPictureHolder', 'AFXCTL/CPictureHolder', 'AFXCTL/CPictureHolder::CPictureHolder', 'AFXCTL/CPictureHolder::CreateEmpty', 'AFXCTL/CPictureHolder::CreateFromBitmap', 'AFXCTL/CPictureHolder::CreateFromIcon', 'AFXCTL/CPictureHolder::CreateFromMetafile', 'AFXCTL/CPictureHolder::GetDisplayString', 'AFXCTL/CPictureHolder::GetPictureDispatch', 'AFXCTL/CPictureHolder::GetType', 'AFXCTL/CPictureHolder::Render', 'AFXCTL/CPictureHolder::SetPictureDispatch', 'AFXCTL/CPictureHolder::m_pPict']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Picture property"
-  - "controls [MFC], OLE"
-  - "OLE controls, image"
-  - "CPictureHolder class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPictureHolder [MFC], CPictureHolder", "CPictureHolder [MFC], CreateEmpty", "CPictureHolder [MFC], CreateFromBitmap", "CPictureHolder [MFC], CreateFromIcon", "CPictureHolder [MFC], CreateFromMetafile", "CPictureHolder [MFC], GetDisplayString", "CPictureHolder [MFC], GetPictureDispatch", "CPictureHolder [MFC], GetType", "CPictureHolder [MFC], Render", "CPictureHolder [MFC], SetPictureDispatch", "CPictureHolder [MFC], m_pPict"]
 ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CPictureHolder Class
 Implements a Picture property, which allows the user to display a picture in your control.  

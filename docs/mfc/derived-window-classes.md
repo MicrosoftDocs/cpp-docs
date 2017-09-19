@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "window class hierarchy"
-  - "hierarchies, window classes"
-  - "classes [C++], derived"
-  - "CWnd class, classes derived from"
-  - "derived classes, window classes"
-  - "window classes, derived"
+dev_langs: ["C++"]
+helpviewer_keywords: ["window class hierarchy", "hierarchies, window classes", "classes [MFC], derived", "CWnd class [MFC], classes derived from", "derived classes [MFC], window classes", "window classes [MFC], derived"]
 ms.assetid: 6f7e437e-fbde-4a06-bfab-72d9dbf05292
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Derived Window Classes
 You can create windows directly from [CWnd](../mfc/reference/cwnd-class.md), or derive new window classes from `CWnd`. This is how you typically create your own custom windows. However, most windows used in a framework program are instead created from one of the `CWnd`-derived frame-window classes supplied by MFC.  

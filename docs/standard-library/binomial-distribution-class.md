@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['binomial_distribution', 'random/std::binomial_distribution', 'random/std::binomial_distribution::reset', 'random/std::binomial_distribution::p', 'random/std::binomial_distribution::t', 'random/std::binomial_distribution::param', 'random/std::binomial_distribution::min', 'random/std::binomial_distribution::max', 'random/std::binomial_distribution::operator()', 'random/std::binomial_distribution::param_type', 'random/std::binomial_distribution::param_type::p', 'random/std::binomial_distribution::param_type::t', 'random/std::binomial_distribution::param_type::operator==', 'random/std::binomial_distribution::param_type::operator!=', 'random/std::binomial_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binomial_distribution class"
+f1_keywords: ['random/std::binomial_distribution', 'random/std::binomial_distribution::reset', 'random/std::binomial_distribution::p', 'random/std::binomial_distribution::t', 'random/std::binomial_distribution::param', 'random/std::binomial_distribution::min', 'random/std::binomial_distribution::max', 'random/std::binomial_distribution::operator()', 'random/std::binomial_distribution::param_type', 'random/std::binomial_distribution::param_type::p', 'random/std::binomial_distribution::param_type::t', 'random/std::binomial_distribution::param_type::operator==', 'random/std::binomial_distribution::param_type::operator!=', 'random/std::binomial_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::binomial_distribution [C++]", "std::binomial_distribution [C++], reset", "std::binomial_distribution [C++], p", "std::binomial_distribution [C++], t", "std::binomial_distribution [C++], param", "std::binomial_distribution [C++], min", "std::binomial_distribution [C++], max", "std::binomial_distribution [C++], param_type", "std::binomial_distribution [C++], param_type"]
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # binomial_distribution Class
 Generates a binomial distribution.  

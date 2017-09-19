@@ -4,35 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCCaptionBar', 'AFXCAPTIONBAR/CMFCCaptionBar', 'AFXCAPTIONBAR/CMFCCaptionBar::Create', 'AFXCAPTIONBAR/CMFCCaptionBar::DoesAllowDynInsertBefore', 'AFXCAPTIONBAR/CMFCCaptionBar::EnableButton', 'AFXCAPTIONBAR/CMFCCaptionBar::GetAlignment', 'AFXCAPTIONBAR/CMFCCaptionBar::GetBorderSize', 'AFXCAPTIONBAR/CMFCCaptionBar::GetButtonRect', 'AFXCAPTIONBAR/CMFCCaptionBar::GetMargin', 'AFXCAPTIONBAR/CMFCCaptionBar::IsMessageBarMode', 'AFXCAPTIONBAR/CMFCCaptionBar::RemoveBitmap', 'AFXCAPTIONBAR/CMFCCaptionBar::RemoveButton', 'AFXCAPTIONBAR/CMFCCaptionBar::RemoveIcon', 'AFXCAPTIONBAR/CMFCCaptionBar::RemoveText', 'AFXCAPTIONBAR/CMFCCaptionBar::SetBitmap', 'AFXCAPTIONBAR/CMFCCaptionBar::SetBorderSize', 'AFXCAPTIONBAR/CMFCCaptionBar::SetButton', 'AFXCAPTIONBAR/CMFCCaptionBar::SetButtonPressed', 'AFXCAPTIONBAR/CMFCCaptionBar::SetButtonToolTip', 'AFXCAPTIONBAR/CMFCCaptionBar::SetFlatBorder', 'AFXCAPTIONBAR/CMFCCaptionBar::SetIcon', 'AFXCAPTIONBAR/CMFCCaptionBar::SetImageToolTip', 'AFXCAPTIONBAR/CMFCCaptionBar::SetMargin', 'AFXCAPTIONBAR/CMFCCaptionBar::SetText', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawBackground', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawBorder', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawButton', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawImage', 'AFXCAPTIONBAR/CMFCCaptionBar::OnDrawText', 'AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarBackground', 'AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarBorder', 'AFXCAPTIONBAR/CMFCCaptionBar::m_clrBarText']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCCaptionBar class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCCaptionBar [MFC], Create", "CMFCCaptionBar [MFC], DoesAllowDynInsertBefore", "CMFCCaptionBar [MFC], EnableButton", "CMFCCaptionBar [MFC], GetAlignment", "CMFCCaptionBar [MFC], GetBorderSize", "CMFCCaptionBar [MFC], GetButtonRect", "CMFCCaptionBar [MFC], GetMargin", "CMFCCaptionBar [MFC], IsMessageBarMode", "CMFCCaptionBar [MFC], RemoveBitmap", "CMFCCaptionBar [MFC], RemoveButton", "CMFCCaptionBar [MFC], RemoveIcon", "CMFCCaptionBar [MFC], RemoveText", "CMFCCaptionBar [MFC], SetBitmap", "CMFCCaptionBar [MFC], SetBorderSize", "CMFCCaptionBar [MFC], SetButton", "CMFCCaptionBar [MFC], SetButtonPressed", "CMFCCaptionBar [MFC], SetButtonToolTip", "CMFCCaptionBar [MFC], SetFlatBorder", "CMFCCaptionBar [MFC], SetIcon", "CMFCCaptionBar [MFC], SetImageToolTip", "CMFCCaptionBar [MFC], SetMargin", "CMFCCaptionBar [MFC], SetText", "CMFCCaptionBar [MFC], OnDrawBackground", "CMFCCaptionBar [MFC], OnDrawBorder", "CMFCCaptionBar [MFC], OnDrawButton", "CMFCCaptionBar [MFC], OnDrawImage", "CMFCCaptionBar [MFC], OnDrawText", "CMFCCaptionBar [MFC], m_clrBarBackground", "CMFCCaptionBar [MFC], m_clrBarBorder", "CMFCCaptionBar [MFC], m_clrBarText"]
 ms.assetid: acb54d5f-14ff-4c96-aeb3-7717cf566d9a
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CMFCCaptionBar Class
 A `CMFCCaptionBar` object is a control bar that can display three elements: a button, a text label, and a bitmap. It can only display one element of each type at a time. You can align each element to the left or right edges of the control or to the center. You can also apply a flat or 3D style to the top and bottom borders of the caption bar.  

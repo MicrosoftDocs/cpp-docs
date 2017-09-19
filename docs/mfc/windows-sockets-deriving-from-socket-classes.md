@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "derived classes, from socket classes"
-  - "Windows Sockets [C++], deriving from socket classes"
-  - "sockets [C++], deriving from socket classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["derived classes [MFC], from socket classes", "Windows Sockets [MFC], deriving from socket classes", "sockets [MFC], deriving from socket classes"]
 ms.assetid: 3a26e67a-e323-433b-9b05-eca018799801
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Windows Sockets: Deriving from Socket Classes
 This article describes some of the functionality you can gain by deriving your own class from one of the socket classes.  

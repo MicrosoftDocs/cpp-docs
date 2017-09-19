@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAnimationController', 'AFXANIMATIONCONTROLLER/CAnimationController', 'AFXANIMATIONCONTROLLER/CAnimationController::CAnimationController', 'AFXANIMATIONCONTROLLER/CAnimationController::AddAnimationObject', 'AFXANIMATIONCONTROLLER/CAnimationController::AddKeyframeToGroup', 'AFXANIMATIONCONTROLLER/CAnimationController::AnimateGroup', 'AFXANIMATIONCONTROLLER/CAnimationController::CleanUpGroup', 'AFXANIMATIONCONTROLLER/CAnimationController::CreateKeyframe', 'AFXANIMATIONCONTROLLER/CAnimationController::EnableAnimationManagerEvent', 'AFXANIMATIONCONTROLLER/CAnimationController::EnableAnimationTimerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationController::EnablePriorityComparisonHandler', 'AFXANIMATIONCONTROLLER/CAnimationController::EnableStoryboardEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationController::FindAnimationGroup', 'AFXANIMATIONCONTROLLER/CAnimationController::FindAnimationObject', 'AFXANIMATIONCONTROLLER/CAnimationController::GetKeyframeStoryboardStart', 'AFXANIMATIONCONTROLLER/CAnimationController::GetUIAnimationManager', 'AFXANIMATIONCONTROLLER/CAnimationController::GetUIAnimationTimer', 'AFXANIMATIONCONTROLLER/CAnimationController::GetUITransitionFactory', 'AFXANIMATIONCONTROLLER/CAnimationController::GetUITransitionLibrary', 'AFXANIMATIONCONTROLLER/CAnimationController::IsAnimationInProgress', 'AFXANIMATIONCONTROLLER/CAnimationController::IsValid', 'AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationIntegerValueChanged', 'AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationManagerStatusChanged', 'AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationTimerPostUpdate', 'AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationTimerPreUpdate', 'AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationTimerRenderingTooSlow', 'AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationValueChanged', 'AFXANIMATIONCONTROLLER/CAnimationController::OnBeforeAnimationStart', 'AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityCancel', 'AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityCompress', 'AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityConclude', 'AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityTrim', 'AFXANIMATIONCONTROLLER/CAnimationController::OnStoryboardStatusChanged', 'AFXANIMATIONCONTROLLER/CAnimationController::OnStoryboardUpdated', 'AFXANIMATIONCONTROLLER/CAnimationController::RemoveAllAnimationGroups', 'AFXANIMATIONCONTROLLER/CAnimationController::RemoveAnimationGroup', 'AFXANIMATIONCONTROLLER/CAnimationController::RemoveAnimationObject', 'AFXANIMATIONCONTROLLER/CAnimationController::RemoveTransitions', 'AFXANIMATIONCONTROLLER/CAnimationController::ScheduleGroup', 'AFXANIMATIONCONTROLLER/CAnimationController::SetRelatedWnd', 'AFXANIMATIONCONTROLLER/CAnimationController::UpdateAnimationManager', 'AFXANIMATIONCONTROLLER/CAnimationController::CleanUpGroup', 'AFXANIMATIONCONTROLLER/CAnimationController::OnAfterSchedule', 'AFXANIMATIONCONTROLLER/CAnimationController::gkeyframeStoryboardStart', 'AFXANIMATIONCONTROLLER/CAnimationController::m_bIsValid', 'AFXANIMATIONCONTROLLER/CAnimationController::m_lstAnimationGroups', 'AFXANIMATIONCONTROLLER/CAnimationController::m_pAnimationManager', 'AFXANIMATIONCONTROLLER/CAnimationController::m_pAnimationTimer', 'AFXANIMATIONCONTROLLER/CAnimationController::m_pRelatedWnd', 'AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionFactory', 'AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionLibrary']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAnimationController class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAnimationController [MFC], CAnimationController", "CAnimationController [MFC], AddAnimationObject", "CAnimationController [MFC], AddKeyframeToGroup", "CAnimationController [MFC], AnimateGroup", "CAnimationController [MFC], CleanUpGroup", "CAnimationController [MFC], CreateKeyframe", "CAnimationController [MFC], EnableAnimationManagerEvent", "CAnimationController [MFC], EnableAnimationTimerEventHandler", "CAnimationController [MFC], EnablePriorityComparisonHandler", "CAnimationController [MFC], EnableStoryboardEventHandler", "CAnimationController [MFC], FindAnimationGroup", "CAnimationController [MFC], FindAnimationObject", "CAnimationController [MFC], GetKeyframeStoryboardStart", "CAnimationController [MFC], GetUIAnimationManager", "CAnimationController [MFC], GetUIAnimationTimer", "CAnimationController [MFC], GetUITransitionFactory", "CAnimationController [MFC], GetUITransitionLibrary", "CAnimationController [MFC], IsAnimationInProgress", "CAnimationController [MFC], IsValid", "CAnimationController [MFC], OnAnimationIntegerValueChanged", "CAnimationController [MFC], OnAnimationManagerStatusChanged", "CAnimationController [MFC], OnAnimationTimerPostUpdate", "CAnimationController [MFC], OnAnimationTimerPreUpdate", "CAnimationController [MFC], OnAnimationTimerRenderingTooSlow", "CAnimationController [MFC], OnAnimationValueChanged", "CAnimationController [MFC], OnBeforeAnimationStart", "CAnimationController [MFC], OnHasPriorityCancel", "CAnimationController [MFC], OnHasPriorityCompress", "CAnimationController [MFC], OnHasPriorityConclude", "CAnimationController [MFC], OnHasPriorityTrim", "CAnimationController [MFC], OnStoryboardStatusChanged", "CAnimationController [MFC], OnStoryboardUpdated", "CAnimationController [MFC], RemoveAllAnimationGroups", "CAnimationController [MFC], RemoveAnimationGroup", "CAnimationController [MFC], RemoveAnimationObject", "CAnimationController [MFC], RemoveTransitions", "CAnimationController [MFC], ScheduleGroup", "CAnimationController [MFC], SetRelatedWnd", "CAnimationController [MFC], UpdateAnimationManager", "CAnimationController [MFC], CleanUpGroup", "CAnimationController [MFC], OnAfterSchedule", "CAnimationController [MFC], gkeyframeStoryboardStart", "CAnimationController [MFC], m_bIsValid", "CAnimationController [MFC], m_lstAnimationGroups", "CAnimationController [MFC], m_pAnimationManager", "CAnimationController [MFC], m_pAnimationTimer", "CAnimationController [MFC], m_pRelatedWnd", "CAnimationController [MFC], m_pTransitionFactory", "CAnimationController [MFC], m_pTransitionLibrary"]
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CAnimationController Class
 Implements the animation controller, which provides a central interface for creating and managing animations.  

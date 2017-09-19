@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCPrintPreviewToolBar class"
-  - "CMFCPrintPreviewToolBar class, destructor"
-  - "CMFCPrintPreviewToolBar::GetThisClass method"
-  - "~CMFCPrintPreviewToolBar destructor"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCPrintPreviewToolBar class [MFC]", "CMFCPrintPreviewToolBar class [MFC], destructor", ]
 ms.assetid: 7b9f641b-d402-4339-8815-e5247237e7e5
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCPrintPreviewToolBar Class
 The toolbar on the print preview.  

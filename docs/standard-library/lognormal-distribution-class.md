@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['lognormal_distribution', 'random/std::lognormal_distribution', 'random/std::lognormal_distribution::reset', 'random/std::lognormal_distribution::m', 'random/std::lognormal_distribution::s', 'random/std::lognormal_distribution::param', 'random/std::lognormal_distribution::min', 'random/std::lognormal_distribution::max', 'random/std::lognormal_distribution::operator()', 'random/std::lognormal_distribution::param_type', 'random/std::lognormal_distribution::param_type::m', 'random/std::lognormal_distribution::param_type::s', 'random/std::lognormal_distribution::param_type::operator==', 'random/std::lognormal_distribution::param_type::operator!=', 'random/std::lognormal_distribution::param_type']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lognormal_distribution class"
+f1_keywords: ['random/std::lognormal_distribution', 'random/std::lognormal_distribution::reset', 'random/std::lognormal_distribution::m', 'random/std::lognormal_distribution::s', 'random/std::lognormal_distribution::param', 'random/std::lognormal_distribution::min', 'random/std::lognormal_distribution::max', 'random/std::lognormal_distribution::operator()', 'random/std::lognormal_distribution::param_type', 'random/std::lognormal_distribution::param_type::m', 'random/std::lognormal_distribution::param_type::s', 'random/std::lognormal_distribution::param_type::operator==', 'random/std::lognormal_distribution::param_type::operator!=', 'random/std::lognormal_distribution::param_type']
+dev_langs: ["C++"]
+helpviewer_keywords: ["std::lognormal_distribution [C++]", "std::lognormal_distribution [C++], reset", "std::lognormal_distribution [C++], m", "std::lognormal_distribution [C++], s", "std::lognormal_distribution [C++], param", "std::lognormal_distribution [C++], min", "std::lognormal_distribution [C++], max", "std::lognormal_distribution [C++], param_type", "std::lognormal_distribution [C++], param_type"]
 ms.assetid: f2d6a431-6c3a-4370-b12e-4adb4ddf6cc4
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # lognormal_distribution Class
 Generates a log normal distribution.  

@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDockablePane', 'AFXDOCKABLEPANE/CDockablePane', 'AFXDOCKABLEPANE/CDockablePane::CDockablePane', 'AFXDOCKABLEPANE/CDockablePane::AttachToTabWnd', 'AFXDOCKABLEPANE/CDockablePane::CalcFixedLayout', 'AFXDOCKABLEPANE/CDockablePane::CanAcceptMiniFrame', 'AFXDOCKABLEPANE/CDockablePane::CanAcceptPane', 'AFXDOCKABLEPANE/CDockablePane::CanAutoHide', 'AFXDOCKABLEPANE/CDockablePane::CanBeAttached', 'AFXDOCKABLEPANE/CDockablePane::ConvertToTabbedDocument', 'AFXDOCKABLEPANE/CDockablePane::CopyState', 'AFXDOCKABLEPANE/CDockablePane::Create', 'AFXDOCKABLEPANE/CDockablePane::CreateDefaultPaneDivider', 'AFXDOCKABLEPANE/CDockablePane::CreateEx', 'AFXDOCKABLEPANE/CDockablePane::CreateTabbedPane', 'AFXDOCKABLEPANE/CDockablePane::DockPaneContainer', 'AFXDOCKABLEPANE/CDockablePane::DockPaneStandard', 'AFXDOCKABLEPANE/CDockablePane::DockToRecentPos', 'AFXDOCKABLEPANE/CDockablePane::DockToWindow', 'AFXDOCKABLEPANE/CDockablePane::EnableAutohideAll', 'AFXDOCKABLEPANE/CDockablePane::EnableGripper', 'AFXDOCKABLEPANE/CDockablePane::GetAHRestoredRect', 'AFXDOCKABLEPANE/CDockablePane::GetAHSlideMode', 'AFXDOCKABLEPANE/CDockablePane::GetCaptionHeight', 'AFXDOCKABLEPANE/CDockablePane::GetDefaultPaneDivider', 'AFXDOCKABLEPANE/CDockablePane::GetDockingStatus', 'AFXDOCKABLEPANE/CDockablePane::GetDragSensitivity', 'AFXDOCKABLEPANE/CDockablePane::GetLastPercentInPaneContainer', 'AFXDOCKABLEPANE/CDockablePane::GetTabArea', 'AFXDOCKABLEPANE/CDockablePane::GetTabbedPaneRTC', 'AFXDOCKABLEPANE/CDockablePane::HasAutoHideMode', 'AFXDOCKABLEPANE/CDockablePane::HitTest', 'AFXDOCKABLEPANE/CDockablePane::IsAutohideAllEnabled', 'AFXDOCKABLEPANE/CDockablePane::IsAutoHideMode', 'AFXDOCKABLEPANE/CDockablePane::IsDocked', 'AFXDOCKABLEPANE/CDockablePane::IsHideInAutoHideMode', 'AFXDOCKABLEPANE/CDockablePane::IsInFloatingMultiPaneFrameWnd', 'AFXDOCKABLEPANE/CDockablePane::IsResizable', 'AFXDOCKABLEPANE/CDockablePane::IsTabLocationBottom', 'AFXDOCKABLEPANE/CDockablePane::IsTracked', 'AFXDOCKABLEPANE/CDockablePane::IsVisible', 'AFXDOCKABLEPANE/CDockablePane::OnAfterChangeParent', 'AFXDOCKABLEPANE/CDockablePane::OnAfterDockFromMiniFrame', 'AFXDOCKABLEPANE/CDockablePane::OnBeforeChangeParent', 'AFXDOCKABLEPANE/CDockablePane::OnBeforeFloat', 'AFXDOCKABLEPANE/CDockablePane::RemoveFromDefaultPaneDividier', 'AFXDOCKABLEPANE/CDockablePane::ReplacePane', 'AFXDOCKABLEPANE/CDockablePane::RestoreDefaultPaneDivider', 'AFXDOCKABLEPANE/CDockablePane::SetAutoHideMode', 'AFXDOCKABLEPANE/CDockablePane::SetAutoHideParents', 'AFXDOCKABLEPANE/CDockablePane::SetLastPercentInPaneContainer', 'AFXDOCKABLEPANE/CDockablePane::SetRestoredDefaultPaneDivider', 'AFXDOCKABLEPANE/CDockablePane::SetTabbedPaneRTC', 'AFXDOCKABLEPANE/CDockablePane::ShowPane', 'AFXDOCKABLEPANE/CDockablePane::Slide', 'AFXDOCKABLEPANE/CDockablePane::ToggleAutoHide', 'AFXDOCKABLEPANE/CDockablePane::UndockPane', 'AFXDOCKABLEPANE/CDockablePane::CheckAutoHideCondition', 'AFXDOCKABLEPANE/CDockablePane::CheckStopSlideCondition', 'AFXDOCKABLEPANE/CDockablePane::DrawCaption', 'AFXDOCKABLEPANE/CDockablePane::OnPressButtons', 'AFXDOCKABLEPANE/CDockablePane::OnSlide', 'AFXDOCKABLEPANE/CDockablePane::m_bDisableAnimation', 'AFXDOCKABLEPANE/CDockablePane::m_bHideInAutoHideMode', 'AFXDOCKABLEPANE/CDockablePane::m_nSlideSteps']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDockablePane class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDockablePane [MFC], CDockablePane", "CDockablePane [MFC], AttachToTabWnd", "CDockablePane [MFC], CalcFixedLayout", "CDockablePane [MFC], CanAcceptMiniFrame", "CDockablePane [MFC], CanAcceptPane", "CDockablePane [MFC], CanAutoHide", "CDockablePane [MFC], CanBeAttached", "CDockablePane [MFC], ConvertToTabbedDocument", "CDockablePane [MFC], CopyState", "CDockablePane [MFC], Create", "CDockablePane [MFC], CreateDefaultPaneDivider", "CDockablePane [MFC], CreateEx", "CDockablePane [MFC], CreateTabbedPane", "CDockablePane [MFC], DockPaneContainer", "CDockablePane [MFC], DockPaneStandard", "CDockablePane [MFC], DockToRecentPos", "CDockablePane [MFC], DockToWindow", "CDockablePane [MFC], EnableAutohideAll", "CDockablePane [MFC], EnableGripper", "CDockablePane [MFC], GetAHRestoredRect", "CDockablePane [MFC], GetAHSlideMode", "CDockablePane [MFC], GetCaptionHeight", "CDockablePane [MFC], GetDefaultPaneDivider", "CDockablePane [MFC], GetDockingStatus", "CDockablePane [MFC], GetDragSensitivity", "CDockablePane [MFC], GetLastPercentInPaneContainer", "CDockablePane [MFC], GetTabArea", "CDockablePane [MFC], GetTabbedPaneRTC", "CDockablePane [MFC], HasAutoHideMode", "CDockablePane [MFC], HitTest", "CDockablePane [MFC], IsAutohideAllEnabled", "CDockablePane [MFC], IsAutoHideMode", "CDockablePane [MFC], IsDocked", "CDockablePane [MFC], IsHideInAutoHideMode", "CDockablePane [MFC], IsInFloatingMultiPaneFrameWnd", "CDockablePane [MFC], IsResizable", "CDockablePane [MFC], IsTabLocationBottom", "CDockablePane [MFC], IsTracked", "CDockablePane [MFC], IsVisible", "CDockablePane [MFC], OnAfterChangeParent", "CDockablePane [MFC], OnAfterDockFromMiniFrame", "CDockablePane [MFC], OnBeforeChangeParent", "CDockablePane [MFC], OnBeforeFloat", "CDockablePane [MFC], RemoveFromDefaultPaneDividier", "CDockablePane [MFC], ReplacePane", "CDockablePane [MFC], RestoreDefaultPaneDivider", "CDockablePane [MFC], SetAutoHideMode", "CDockablePane [MFC], SetAutoHideParents", "CDockablePane [MFC], SetLastPercentInPaneContainer", "CDockablePane [MFC], SetRestoredDefaultPaneDivider", "CDockablePane [MFC], SetTabbedPaneRTC", "CDockablePane [MFC], ShowPane", "CDockablePane [MFC], Slide", "CDockablePane [MFC], ToggleAutoHide", "CDockablePane [MFC], UndockPane", "CDockablePane [MFC], CheckAutoHideCondition", "CDockablePane [MFC], CheckStopSlideCondition", "CDockablePane [MFC], DrawCaption", "CDockablePane [MFC], OnPressButtons", "CDockablePane [MFC], OnSlide", "CDockablePane [MFC], m_bDisableAnimation", "CDockablePane [MFC], m_bHideInAutoHideMode", "CDockablePane [MFC], m_nSlideSteps"]
 ms.assetid: e2495f4c-765f-48f9-a2e2-e45e47608d91
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDockablePane Class
 Implements a pane that can either be docked in a dock site or included in a tabbed pane.  

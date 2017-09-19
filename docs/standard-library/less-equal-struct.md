@@ -4,36 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::less_equal', 'less_equal']  
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "less_equal function"
-  - "less_equal struct"
+f1_keywords: ['xfunctional/std::less_equal'
+dev_langs: ["C++"]
+helpviewer_keywords: ["less_equal function", "less_equal struct"]
 ms.assetid: 32085782-c7e0-4310-9b40-8aa3c1bff211
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # less_equal Struct
 A binary predicate that performs the less-than-or-equal-to operation ( `operator<=`) on its arguments.  

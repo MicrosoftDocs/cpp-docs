@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCToolBarFontComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::CMFCToolBarFontComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::GetFontDesc', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::SetFont']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMFCToolBarFontComboBox class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMFCToolBarFontComboBox [MFC], CMFCToolBarFontComboBox", "CMFCToolBarFontComboBox [MFC], GetFontDesc", "CMFCToolBarFontComboBox [MFC], SetFont"]
 ms.assetid: 25f8e08c-aadd-4cb5-9581-a99d49d444b1
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCToolBarFontComboBox Class
 A toolbar button that contains a combo box control that enables the user to select a font from a list of system fonts.  

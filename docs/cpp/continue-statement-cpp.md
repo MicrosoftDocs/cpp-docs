@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "continue"
-  - "continue_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "continue keyword [C++]"
+f1_keywords: ["continue", "continue_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["[""continue keyword [C++]""]"]
 ms.assetid: 3c94ee57-f732-4c1d-8537-d0ce5382bfd4
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # continue Statement (C++)
 Forces transfer of control to the controlling expression of the smallest enclosing [do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md), or [while](../cpp/while-statement-cpp.md) loop.  
