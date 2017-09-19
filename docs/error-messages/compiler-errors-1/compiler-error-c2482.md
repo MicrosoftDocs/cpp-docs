@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2482 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/15/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -35,18 +35,21 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Compiler Error C2482
-'identifier' : dynamic initialization of 'thread' data not allowed  
-  
- Variables declared with the `thread` attribute cannot be initialized with an expression that requires run-time evaluation. A static expression is required to initialize `thread` data.  
-  
- The following sample generates C2482:  
-  
-```  
-// C2482.cpp  
-// compile with: /c  
-#define Thread __declspec( thread )  
-Thread int tls_i = tls_i;   // C2482  
-  
-int j = j;   // OK in C++; C error  
-Thread int tls_i = sizeof( tls_i );   // Okay in C and C++  
+
+>'*identifier*' : dynamic initialization of 'thread' data not allowed
+
+This error message is obsolete in Visual Studio 2015 and later versions. In previous versions, variables declared by using the `thread` attribute cannot be initialized with an expression that requires run-time evaluation. A static expression is required to initialize `thread` data.
+
+## Example
+
+The following sample generates C2482 in Visual Studio 2013 and earlier:
+
+```cpp
+// C2482.cpp
+// compile with: /c
+#define Thread __declspec( thread )
+Thread int tls_i = tls_i;   // C2482
+
+int j = j;   // OK in C++; C error
+Thread int tls_i = sizeof( tls_i );   // Okay in C and C++
 ```
