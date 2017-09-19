@@ -8,7 +8,7 @@ ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["message maps [MFC]], searching"]
+helpviewer_keywords: ["message maps [MFC], searching"]
 ms.assetid: fd1df878-5601-45d7-bd1f-b8f8e65b9a17
 caps.latest.revision: 9
 author: "mikeblome"
