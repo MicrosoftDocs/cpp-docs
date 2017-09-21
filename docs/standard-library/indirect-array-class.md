@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: "valarray/std::indirect_array"
+f1_keywords: ["valarray/std::indirect_array"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["indirect_array class"]
 ms.assetid: 10e1eaea-ba5a-405c-a25e-7bdd3eee7fc7

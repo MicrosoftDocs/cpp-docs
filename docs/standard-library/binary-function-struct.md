@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: "functional/std::binary"
+f1_keywords: ["functional/std::binary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["binary_function class"]
 ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60

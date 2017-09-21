@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: "type_traits/std::add_rvalue_reference"
+f1_keywords: ["type_traits/std::add_rvalue_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["add_rvalue_reference Class"]
 ms.assetid: 76b0cb7c-1031-45d0-b409-f03ab0297580

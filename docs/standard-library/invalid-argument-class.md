@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: "stdexcept/std::invalid_argument"
+f1_keywords: ["stdexcept/std::invalid_argument"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_argument class"]
 ms.assetid: af6c227d-ad7c-4e63-9dee-67af81d83506

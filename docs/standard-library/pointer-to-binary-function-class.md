@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: "xfunctional/std::pointer_to_binary"
+f1_keywords: ["xfunctional/std::pointer_to_binary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pointer_to_binary_function function", "pointer_to_binary_function class"]
 ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
