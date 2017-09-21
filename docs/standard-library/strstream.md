@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["std::<strstream>", "<strstream>"]
+f1_keywords: ["<strstream>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["strstream header"]
 ms.assetid: eaa9d0d4-d217-4f28-8a68-9b9ad7b1c0f5

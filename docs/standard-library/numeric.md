@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["std::<numeric>", "<numeric>"]
+f1_keywords: ["<numeric>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<numeric> header"]
 ms.assetid: 6d6ccb94-48cc-479b-b4a9-bd9c78d4896a

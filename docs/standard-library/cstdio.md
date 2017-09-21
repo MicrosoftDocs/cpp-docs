@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["std::<cstdio>", "<cstdio>"]
+f1_keywords: ["<cstdio>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cstdio header"]
 ms.assetid: 838ca50b-dea5-4ee3-a39c-e7c23a6ee016

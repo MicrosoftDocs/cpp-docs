@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["valarray/std::<valarray>", "std::<valarray>", "<valarray>"]
+f1_keywords: ["<valarray>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["valarray header"]
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
