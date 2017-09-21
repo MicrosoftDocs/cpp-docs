@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<utility>", "utility/std::<utility>", "std::<utility>']
+f1_keywords: ["<utility>", "utility/std::<utility>", "std::<utility>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["utility header"]
 ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599

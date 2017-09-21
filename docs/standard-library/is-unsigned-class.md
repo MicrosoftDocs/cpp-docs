@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_unsigned']
+f1_keywords: ["type_traits/std::is_unsigned"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_unsigned class", "is_unsigned"]
 ms.assetid: ba5bec3d-796b-4e54-8595-a3941ec6a8dc

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/std::operator!=', 'iterator/std::operator&gt;', 'iterator/std::operator&gt;=', 'iterator/std::operator&lt;', 'iterator/std::operator&lt;=', 'iterator/std::operator+', 'iterator/std::operator-', 'iterator/std::operator==']
+f1_keywords: ["iterator/std::operator!=", "iterator/std::operator&gt;", "iterator/std::operator&gt;=", "iterator/std::operator&lt;", "iterator/std::operator&lt;=", "iterator/std::operator+", "iterator/std::operator-", "iterator/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: b7c664f0-49d4-4993-b5d1-9ac4859fdddc
 caps.latest.revision: 10

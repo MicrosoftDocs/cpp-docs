@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['complex/std::complex::value_type', 'complex/std::complex::imag', 'complex/std::complex::real']
+f1_keywords: ["complex/std::complex::value_type", "complex/std::complex::imag", "complex/std::complex::real"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::complex [C++], value_type", "std::complex [C++], imag", "std::complex [C++], real"]
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868

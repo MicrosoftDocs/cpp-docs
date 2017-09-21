@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_trivially_copy_constructible']
+f1_keywords: ["type_traits/std::is_trivially_copy_constructible"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_copy_constructible"]
 ms.assetid: 4274cef5-afdd-4f2d-bc83-7562e7944ddf

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_void']
+f1_keywords: ["type_traits/std::is_void"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_void class", "is_void"]
 ms.assetid: 99b0de3b-1b38-4949-b053-080e5363174e

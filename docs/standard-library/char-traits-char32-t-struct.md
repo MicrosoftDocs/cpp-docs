@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['string/std::char_traits<char_32t>', 'char_traits<char32_t>']
+f1_keywords: ["string/std::char_traits<char_32t>", "char_traits<char32_t>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["char_traits<char32_t> class"]
 ms.assetid: c0315466-45d0-4a99-b83e-3b1dbfbfbbc3

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xloctime/std::time_get_byname']
+f1_keywords: ["xloctime/std::time_get_byname"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["time_get_byname class"]
 ms.assetid: 6e54153e-da40-4bb9-a942-1a6ce57b30c9

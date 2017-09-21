@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdext::<allocators>", "allocators/stdext::allocators", "<allocators>']
+f1_keywords: ["stdext::<allocators>", "allocators/stdext::allocators", "<allocators>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["allocators header"]
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83

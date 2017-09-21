@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['thread/std::get_id', 'thread/std::sleep_for', 'thread/std::sleep_until', 'thread/std::swap', 'thread/std::yield']
+f1_keywords: ["thread/std::get_id", "thread/std::sleep_for", "thread/std::sleep_until", "thread/std::swap", "thread/std::yield"]
 ms.assetid: bb1aa1ef-fe3f-4e2c-8b6e-e22dbf2f5a19
 caps.latest.revision: 12
 manager: "ghogen"

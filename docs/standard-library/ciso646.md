@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<ciso646>", "<ciso646>']
+f1_keywords: ["std::<ciso646>", "<ciso646>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ciso646 header"]
 ms.assetid: 9d570924-d299-4225-9a58-8c4c820f5903

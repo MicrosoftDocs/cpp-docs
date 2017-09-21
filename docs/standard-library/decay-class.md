@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::decay']
+f1_keywords: ["type_traits/std::decay"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["decay class"]
 ms.assetid: 96baa2fd-c8e0-49af-be91-ba375ba7f9dc

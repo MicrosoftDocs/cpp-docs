@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['locale/std::has_facet', 'locale/std::isalnum', 'locale/std::isalpha', 'locale/std::iscntrl', 'locale/std::isdigit', 'locale/std::isgraph', 'locale/std::islower', 'locale/std::isprint', 'locale/std::ispunct', 'locale/std::isspace', 'locale/std::isupper', 'locale/std::isxdigit', 'locale/std::tolower', 'locale/std::toupper', 'locale/std::use_facet']
+f1_keywords: ["locale/std::has_facet", "locale/std::isalnum", "locale/std::isalpha", "locale/std::iscntrl", "locale/std::isdigit", "locale/std::isgraph", "locale/std::islower", "locale/std::isprint", "locale/std::ispunct", "locale/std::isspace", "locale/std::isupper", "locale/std::isxdigit", "locale/std::tolower", "locale/std::toupper", "locale/std::use_facet"]
 ms.assetid: b06c1ceb-33a7-48d3-8d4b-2714bbb27f14
 caps.latest.revision: 15
 manager: "ghogen"

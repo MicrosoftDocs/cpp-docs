@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocmes/std::messages', 'locale/std::messages::char_type', 'locale/std::messages::string_type', 'locale/std::messages::close', 'locale/std::messages::do_close', 'locale/std::messages::do_get', 'locale/std::messages::do_open', 'locale/std::messages::get', 'locale/std::messages::open']
+f1_keywords: ["xlocmes/std::messages", "locale/std::messages::char_type", "locale/std::messages::string_type", "locale/std::messages::close", "locale/std::messages::do_close", "locale/std::messages::do_get", "locale/std::messages::do_open", "locale/std::messages::get", "locale/std::messages::open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::messages [C++]", "std::messages [C++], char_type", "std::messages [C++], string_type", "std::messages [C++], close", "std::messages [C++], do_close", "std::messages [C++], do_get", "std::messages [C++], do_open", "std::messages [C++], get", "std::messages [C++], open"]
 ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83

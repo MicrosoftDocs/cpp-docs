@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['regex/std::basic_regex']
+f1_keywords: ["regex/std::basic_regex"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["basic_regex class"]
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3

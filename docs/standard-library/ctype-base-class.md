@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['locale/std::ctype_base'
+f1_keywords: "locale/std::ctype_base"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ctype_base class"]
 ms.assetid: ccffe891-d7ab-4d22-baf8-8eb6d438a96d

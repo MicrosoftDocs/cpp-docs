@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iosfwd/std::fpos', 'ios/std::fpos::seekpos', 'ios/std::fpos::state', 'ios/std::fpos::operator streamoff']
+f1_keywords: ["iosfwd/std::fpos", "ios/std::fpos::seekpos", "ios/std::fpos::state", "ios/std::fpos::operator streamoff"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::fpos [C++]", "std::fpos [C++], seekpos", "std::fpos [C++], state"]
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47

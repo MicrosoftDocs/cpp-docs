@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocale/std::ctype', 'locale/std::ctype::char_type', 'locale/std::ctype::do_is', 'locale/std::ctype::do_narrow', 'locale/std::ctype::do_scan_is', 'locale/std::ctype::do_scan_not', 'locale/std::ctype::do_tolower', 'locale/std::ctype::do_toupper', 'locale/std::ctype::do_widen', 'locale/std::ctype::is', 'locale/std::ctype::narrow', 'locale/std::ctype::scan_is', 'locale/std::ctype::scan_not', 'locale/std::ctype::tolower', 'locale/std::ctype::toupper', 'locale/std::ctype::widen']
+f1_keywords: ["xlocale/std::ctype", "locale/std::ctype::char_type", "locale/std::ctype::do_is", "locale/std::ctype::do_narrow", "locale/std::ctype::do_scan_is", "locale/std::ctype::do_scan_not", "locale/std::ctype::do_tolower", "locale/std::ctype::do_toupper", "locale/std::ctype::do_widen", "locale/std::ctype::is", "locale/std::ctype::narrow", "locale/std::ctype::scan_is", "locale/std::ctype::scan_not", "locale/std::ctype::tolower", "locale/std::ctype::toupper", "locale/std::ctype::widen"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::ctype [C++]", "std::ctype [C++], char_type", "std::ctype [C++], do_is", "std::ctype [C++], do_narrow", "std::ctype [C++], do_scan_is", "std::ctype [C++], do_scan_not", "std::ctype [C++], do_tolower", "std::ctype [C++], do_toupper", "std::ctype [C++], do_widen", "std::ctype [C++], is", "std::ctype [C++], narrow", "std::ctype [C++], scan_is", "std::ctype [C++], scan_not", "std::ctype [C++], tolower", "std::ctype [C++], toupper", "std::ctype [C++], widen"]
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b

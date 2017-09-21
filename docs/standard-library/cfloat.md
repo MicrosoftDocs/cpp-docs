@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<cfloat>", "<cfloat>']
+f1_keywords: ["std::<cfloat>", "<cfloat>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cfloat header"]
 ms.assetid: 25ec4ab9-3c1d-46e3-9e68-ad9a8762cadb

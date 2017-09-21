@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::const_mem_fun_ref_t']
+f1_keywords: ["xfunctional/std::const_mem_fun_ref_t"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["const_mem_fun_ref_t class"]
 ms.assetid: 316ddbaa-9f46-4931-8eba-ea4ca66360ef

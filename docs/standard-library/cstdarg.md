@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<cstdarg>", "std::<cstdarg>", "std.<cstdarg>']
+f1_keywords: ["<cstdarg>", "std::<cstdarg>", "std.<cstdarg>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cstdarg header"]
 ms.assetid: 639b4ef7-8408-4640-9343-41631f0ab663

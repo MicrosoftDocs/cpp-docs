@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['typeinfo']
+f1_keywords: ["typeinfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["typeinfo header"]
 ms.assetid: 97ebc4d0-0e0e-41c3-9787-fdef2e38e56f

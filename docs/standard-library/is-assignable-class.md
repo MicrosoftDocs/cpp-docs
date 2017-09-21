@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_assignable']
+f1_keywords: ["type_traits/std::is_assignable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_assignable"]
 ms.assetid: 53444287-c8be-4ad2-9487-a85c066a4f84

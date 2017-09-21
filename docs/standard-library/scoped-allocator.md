@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<scoped_allocator>']
+f1_keywords: ["<scoped_allocator>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["scoped_allocator Header"]
 ms.assetid: d20175b8-96be-4896-8141-3faba45e0005

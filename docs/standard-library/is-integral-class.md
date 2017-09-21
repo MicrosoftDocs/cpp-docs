@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_integral']
+f1_keywords: ["type_traits/std::is_integral"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_integral class", "is_integral"]
 ms.assetid: fe9279d0-4495-4e88-bf23-153cc6602397

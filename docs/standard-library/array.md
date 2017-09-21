@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<array>']
+f1_keywords: ["<array>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["array header"]
 ms.assetid: 084147c1-e805-478e-8201-76846020f187

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['exception/std::bad_exception']
+f1_keywords: ["exception/std::bad_exception"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["bad_exception class"]
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000

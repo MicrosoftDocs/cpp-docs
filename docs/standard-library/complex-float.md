@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::complex<float>", "complex<float>']
+f1_keywords: ["complex/std::complex<float>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["complex<float> function"]
 ms.assetid: 1178eb1e-39bd-4017-89cd-aea95f813939

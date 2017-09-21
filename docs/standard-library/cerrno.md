@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<cerrno>", "<cerrno>']
+f1_keywords: ["std::<cerrno>", "<cerrno>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cerrno header"]
 ms.assetid: c618f95c-ad4b-4a6f-825b-8727322ec77a

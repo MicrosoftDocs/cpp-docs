@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdext::unchecked_array_iterator']
+f1_keywords: ["stdext::unchecked_array_iterator"]
 dev_langs: ["C++"]
 ms.assetid: 693b3b30-4e3a-465b-be06-409700bc50b1
 caps.latest.revision: 15

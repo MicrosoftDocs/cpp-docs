@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['functional/std::is_placeholder']
+f1_keywords: ["functional/std::is_placeholder"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_placeholder class"]
 ms.assetid: 2b21a792-96d1-4bb8-b911-0db796510835

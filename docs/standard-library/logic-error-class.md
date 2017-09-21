@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdexcept/std::logic_error'
+f1_keywords: "stdexcept/std::logic_error"
 dev_langs: ["C++"]
 helpviewer_keywords: ["logic_error class"]
 ms.assetid: b290d73d-94e1-4288-af86-2bb5d71f677a

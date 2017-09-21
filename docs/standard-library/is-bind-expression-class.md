@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['functional/std::is_bind_expression']
+f1_keywords: ["functional/std::is_bind_expression"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_bind_expression class"]
 ms.assetid: 0715f9e9-2239-4778-a1cf-2c21f49dfd47

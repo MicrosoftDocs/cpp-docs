@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['_HAS_ITERATOR_DEBUGGING']
+f1_keywords: ["_HAS_ITERATOR_DEBUGGING"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_HAS_ITERATOR_DEBUGGING"]
 ms.assetid: 90077dbb-8a76-4963-83a6-29f4854007a8

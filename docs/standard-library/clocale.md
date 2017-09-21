@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<clocale>", "std::<clocale>", "std.<clocale>']
+f1_keywords: ["<clocale>", "std::<clocale>", "std.<clocale>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["clocale header"]
 ms.assetid: 5bde3e01-cf67-4f1f-a383-447ec814d00e

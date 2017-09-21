@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['regex/std::regex_iterator', 'regex/std::regex_iterator::operator==', 'regex/std::regex_iterator::operator!=', 'regex/std::regex_iterator::operator*', 'regex/std::regex_iterator::operator->', 'regex/std::regex_iterator::operator++']
+f1_keywords: ["regex/std::regex_iterator", "regex/std::regex_iterator::operator==", "regex/std::regex_iterator::operator!=", "regex/std::regex_iterator::operator*", "regex/std::regex_iterator::operator->", "regex/std::regex_iterator::operator++"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::regex_iterator [C++]", "]
 ms.assetid: 0cfd8fd0-5a95-4f3c-bf8e-6ef028c423d3

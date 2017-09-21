@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['chrono/std::chrono::time_point', 'chrono/std::chrono::time_point::time_point', 'chrono/std::chrono::time_point::max', 'chrono/std::chrono::time_point::min', 'chrono/std::chrono::time_point::time_since_epoch']
+f1_keywords: ["chrono/std::chrono::time_point", "chrono/std::chrono::time_point::time_point", "chrono/std::chrono::time_point::max", "chrono/std::chrono::time_point::min", "chrono/std::chrono::time_point::time_since_epoch"]
 dev_langs: ["C++"]
 ms.assetid: 18be1e52-57b9-489a-8a9b-f58894f0aaad
 caps.latest.revision: 10
@@ -15,7 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
-helpviewer_keywords: ["std::chrono [C++], time_point", 
+helpviewer_keywords: ["std::chrono [C++], time_point",
 ---
 # time_point Class
 A `time_point` describes a type that represents a point in time. It holds an object of type [duration](../standard-library/duration-class.md) that stores the elapsed time since the epoch that is represented by the template argument `Clock`.  

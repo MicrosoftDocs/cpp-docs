@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['utility/std::operator!=', 'utility/std::operator&gt;', 'utility/std::operator&gt;=', 'utility/std::operator&lt;', 'utility/std::operator&lt;=', 'utility/std::operator==']
+f1_keywords: ["utility/std::operator!=", "utility/std::operator&gt;", "utility/std::operator&gt;=", "utility/std::operator&lt;", "utility/std::operator&lt;=", "utility/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: a6617109-2cec-4a69-948f-6c87116eda5f
 caps.latest.revision: 13

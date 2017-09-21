@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['sstream/std::basic_ostringstream', 'sstream/std::basic_ostringstream::allocator_type', 'sstream/std::basic_ostringstream::rdbuf', 'sstream/std::basic_ostringstream::str']
+f1_keywords: ["sstream/std::basic_ostringstream", "sstream/std::basic_ostringstream::allocator_type", "sstream/std::basic_ostringstream::rdbuf", "sstream/std::basic_ostringstream::str"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_ostringstream [C++]", "std::basic_ostringstream [C++], allocator_type", "std::basic_ostringstream [C++], rdbuf", "std::basic_ostringstream [C++], str"]
 ms.assetid: aea699f7-350f-432a-acca-adbae7b483fb

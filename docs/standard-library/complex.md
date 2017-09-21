@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<complex>", "std::<complex>']
+f1_keywords: ["<complex>", "std::<complex>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["complex header"]
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b

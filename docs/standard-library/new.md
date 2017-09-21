@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<new>", "<new>", "std.<new>']
+f1_keywords: ["std::<new>", "<new>", "std.<new>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["new header"]
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559

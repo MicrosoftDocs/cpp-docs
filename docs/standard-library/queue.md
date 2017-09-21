@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<queue>", "<queue>']
+f1_keywords: ["std::<queue>", "<queue>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["queue header"]
 ms.assetid: 24fcf350-eb0e-48cf-9fef-978be1aeda1f

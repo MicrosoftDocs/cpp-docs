@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['random/std::mersenne_twister_engine']
+f1_keywords: ["random/std::mersenne_twister_engine"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["mersenne_twister_engine class"]
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685

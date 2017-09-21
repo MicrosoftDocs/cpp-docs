@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::allocator_unbounded', 'allocators/stdext::allocators::allocator_unbounded']
+f1_keywords: ["allocators/stdext::allocator_unbounded", "allocators/stdext::allocators::allocator_unbounded"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["allocator_unbounded class"]
 ms.assetid: facbaea1-b320-4d99-96da-039b2642f352

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<set>", "<set>']
+f1_keywords: ["std::<set>", "<set>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["set header"]
 ms.assetid: 43cb1ab2-6383-48cf-8bdc-2b96d7203596

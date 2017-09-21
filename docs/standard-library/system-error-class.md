@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['system_error/std::system_error'
+f1_keywords: "system_error/std::system_error"
 dev_langs: ["C++"]
 helpviewer_keywords: ["system_error class"]
 ms.assetid: 2eeaacbb-8a4a-4ad7-943a-997901a77f32

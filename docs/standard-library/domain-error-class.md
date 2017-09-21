@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdexcept/std::domain_error']
+f1_keywords: ["stdexcept/std::domain_error"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["domain_error class"]
 ms.assetid: a1d8245d-61c2-4d1e-973f-073bd5dd5fa3

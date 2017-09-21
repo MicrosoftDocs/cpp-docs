@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['future/std::is_error_code_enum']
+f1_keywords: ["future/std::is_error_code_enum"]
 dev_langs: ["C++"]
 ms.assetid: 84ae4b99-66d2-41ba-9b50-645fcbe14630
 caps.latest.revision: 13

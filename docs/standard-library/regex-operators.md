@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['regex/std::operator!=', 'regex/std::operator>', 'regex/std::operator>=', 'regex/std::operator<', 'regex/std::operator<=', 'regex/std::operator==', 'regex/std::operator<<']
+f1_keywords: ["regex/std::operator!=", "regex/std::operator>", "regex/std::operator>=", "regex/std::operator<", "regex/std::operator<=", "regex/std::operator==", "regex/std::operator<<"]
 dev_langs: ["C++"]
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
 caps.latest.revision: 12

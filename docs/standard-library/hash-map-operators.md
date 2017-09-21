@@ -7,8 +7,7 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["hash_map/std::operator!=", "hash_map/std::operator=="]
-dev_langs:  
-  - "C++"  
+dev_langs: ["C++"]
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
 caps.latest.revision: 13
 manager: "ghogen"
@@ -16,12 +15,13 @@ manager: "ghogen"
 # &lt;hash_map&gt; operators
 |||  
 |-|-|  
-|[operator!=](#op_neq)|[operator!=](#op_neq)|
+|[operator!=](#op_neq)|[operator!= (multimap)](#op_neq_mm)|
+|[operator==](#op_eq_eq)|[operator== (multimap)](#op_eq_eq_mm)|
   
 ##  <a name="op_neq"></a>  operator!=  
   
 > [!NOTE]
->  This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).  
+>  This API is obsolete. The alternative is [unordered_map Class](unordered-map-class.md).  
   
  Tests if the hash_map object on the left side of the operator is not equal to the hash_map object on the right side.  
   
@@ -42,7 +42,7 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 ### Remarks  
  The comparison between hash_map objects is based on a pairwise comparison of their elements. Two hash_maps are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
   
- Members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files in the [ stdext Namespace](../standard-library/stdext-namespace.md).  
+ Members of the [<hash_map>](hash-map.md) and [<hash_set>](hash-set.md) header files in the [ stdext Namespace](stdext-namespace.md).  
   
 ### Example  
   
@@ -87,7 +87,7 @@ The hash_maps hm1 and hm3 are equal.
 ##  <a name="op_eq_eq"></a>  operator== 
   
 > [!NOTE]
->  This API is obsolete. The alternative is [unordered_map Class](../standard-library/unordered-map-class.md).  
+>  This API is obsolete. The alternative is [unordered_map Class](unordered-map-class.md).  
   
  Tests if the hash_map object on the left side of the operator is equal to the hash_map object on the right side.  
   
@@ -148,10 +148,10 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="op_neq"></a>  operator!=  
+##  <a name="op_neq_mm"></a>  operator!= (hash_multimap) 
   
 > [!NOTE]
->  This API is obsolete. The alternative is [unordered_multimap Class](../standard-library/unordered-multimap-class.md).  
+>  This API is obsolete. The alternative is [unordered_multimap Class](unordered-multimap-class.md).  
   
  Tests if the hash_multimap object on the left side of the operator is not equal to the hash_multimap object on the right side.  
   
@@ -212,10 +212,10 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="op_eq_eq"></a>  operator==  
+##  <a name="op_eq_eq_mm"></a>  operator==  (hash_multimap)
   
 > [!NOTE]
->  This API is obsolete. The alternative is [unordered_multimap Class](../standard-library/unordered-multimap-class.md).  
+>  This API is obsolete. The alternative is [unordered_multimap Class](unordered-multimap-class.md).  
   
  Tests if the hash_multimap object on the left side of the operator is equal to the hash_multimap object on the right side.  
   
@@ -277,5 +277,5 @@ The hash_multimaps hm1 and hm3 are equal.
 ```  
   
 ## See Also  
- [<hash_map>](../standard-library/hash-map.md)
+ [<hash_map>](hash-map.md)
 

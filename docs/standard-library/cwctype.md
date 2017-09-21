@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<cwctype>", "<cwctype>']
+f1_keywords: ["std::<cwctype>", "<cwctype>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cwctype header"]
 ms.assetid: 46476f95-b8c3-4ab2-a172-9a1be91124b7

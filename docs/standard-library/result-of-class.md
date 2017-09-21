@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['type_traits/std::result_of', 'type_traits/std::result_of_t', 'type_traits/std::result_of::type']
+f1_keywords: ["type_traits/std::result_of", "type_traits/std::result_of_t", "type_traits/std::result_of::type"]
 dev_langs: ["C++"]
 helpviewer_keywords: [", "]
 ms.assetid: 5374a096-4b4a-4712-aa97-6852c5cdd6be

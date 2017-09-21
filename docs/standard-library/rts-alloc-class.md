@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::rts_alloc', 'allocators/stdext::rts_alloc::allocate', 'allocators/stdext::rts_alloc::deallocate', 'allocators/stdext::rts_alloc::equals']
+f1_keywords: ["allocators/stdext::rts_alloc", "allocators/stdext::rts_alloc::allocate", "allocators/stdext::rts_alloc::deallocate", "allocators/stdext::rts_alloc::equals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::rts_alloc", "stdext::rts_alloc [C++], allocate", "stdext::rts_alloc [C++], deallocate", "stdext::rts_alloc [C++], equals"]
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f

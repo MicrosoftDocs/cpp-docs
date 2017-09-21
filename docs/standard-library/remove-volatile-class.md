@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::remove_volatile']
+f1_keywords: ["type_traits/std::remove_volatile"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["remove_volatile class", "remove_volatile"]
 ms.assetid: 8b87e2c2-a581-4eb3-8691-c5603910d61d

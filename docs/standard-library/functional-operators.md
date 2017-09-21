@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['functional/std::operator!=', 'functional/std::operator==']
+f1_keywords: ["functional/std::operator!=", "functional/std::operator=="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["functional operators"]
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1

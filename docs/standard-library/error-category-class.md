@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['system_error/std::error_category', 'system_error/std::error_category::value_type', 'system_error/std::error_category::default_error_condition', 'system_error/std::error_category::equivalent', 'system_error/std::error_category::message', 'system_error/std::error_category::name']
+f1_keywords: ["system_error/std::error_category", "system_error/std::error_category::value_type", "system_error/std::error_category::default_error_condition", "system_error/std::error_category::equivalent", "system_error/std::error_category::message", "system_error/std::error_category::name"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::error_category", "std::error_category::value_type", "std::error_category::default_error_condition", "std::error_category::equivalent", "std::error_category::message", "std::error_category::name"]
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d

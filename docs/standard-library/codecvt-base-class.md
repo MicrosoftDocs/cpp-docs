@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocale/std::codecvt_base']
+f1_keywords: ["xlocale/std::codecvt_base"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["codecvt_base class"]
 ms.assetid: 7e95c083-91b4-4b3f-8918-0d4ea244a040

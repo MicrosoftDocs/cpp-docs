@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['locale/std::collate_byname'
+f1_keywords: ["locale/std::collate_byname"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["collate_byname class"]
 ms.assetid: 3dc380df-867c-4763-b60e-ba62a8e63ca7

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<functional>", "functional/std::<functional>", "std::<functional>']
+f1_keywords: ["<functional>", "functional/std::<functional>", "std::<functional>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["functors", "functional header"]
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc

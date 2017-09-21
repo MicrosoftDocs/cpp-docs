@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std.==", "std::==", "operator==", "std.operator==", "std::operator==", "==']
+f1_keywords: ["std.==", "std::==", "operator==", "std.operator==", "std::operator==", "=="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator ==, containers", "operator==, containers", "== operator, with specific standard C++ objects"]
 ms.assetid: d3d8754e-5157-4b8b-bf9c-da41856f5eed

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocnum/std::numpunct', 'locale/std::numpunct::char_type', 'locale/std::numpunct::string_type', 'locale/std::numpunct::decimal_point', 'locale/std::numpunct::do_decimal_point', 'locale/std::numpunct::do_falsename', 'locale/std::numpunct::do_grouping', 'locale/std::numpunct::do_thousands_sep', 'locale/std::numpunct::do_truename', 'locale/std::numpunct::falsename', 'locale/std::numpunct::grouping', 'locale/std::numpunct::thousands_sep', 'locale/std::numpunct::truename']
+f1_keywords: ["xlocnum/std::numpunct", "locale/std::numpunct::char_type", "locale/std::numpunct::string_type", "locale/std::numpunct::decimal_point", "locale/std::numpunct::do_decimal_point", "locale/std::numpunct::do_falsename", "locale/std::numpunct::do_grouping", "locale/std::numpunct::do_thousands_sep", "locale/std::numpunct::do_truename", "locale/std::numpunct::falsename", "locale/std::numpunct::grouping", "locale/std::numpunct::thousands_sep", "locale/std::numpunct::truename"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::numpunct [C++]", "std::numpunct [C++], char_type", "std::numpunct [C++], string_type", "std::numpunct [C++], decimal_point", "std::numpunct [C++], do_decimal_point", "std::numpunct [C++], do_falsename", "std::numpunct [C++], do_grouping", "std::numpunct [C++], do_thousands_sep", "std::numpunct [C++], do_truename", "std::numpunct [C++], falsename", "std::numpunct [C++], grouping", "std::numpunct [C++], thousands_sep", "std::numpunct [C++], truename"]
 ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['new/std::nothrow', 'new/std::set_new_handler']
+f1_keywords: ["new/std::nothrow", "new/std::set_new_handler"]
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
 caps.latest.revision: 10
 manager: "ghogen"

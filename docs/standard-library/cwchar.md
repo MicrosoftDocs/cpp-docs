@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<cwchar>", "<cwchar>", "std.<cwchar>']
+f1_keywords: ["std::<cwchar>", "<cwchar>", "std.<cwchar>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cwchar header"]
 ms.assetid: 7380b1bf-a220-46e5-b832-9f9f4e543aac

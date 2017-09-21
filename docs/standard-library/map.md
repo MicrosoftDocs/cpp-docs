@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<map>", "<map>']
+f1_keywords: ["std::<map>", "<map>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["map header"]
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a

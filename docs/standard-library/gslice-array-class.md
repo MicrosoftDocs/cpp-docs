@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['valarray/std::gslice_array']
+f1_keywords: ["valarray/std::gslice_array"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["gslice_array class"]
 ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75

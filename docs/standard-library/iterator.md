@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<iterator>", "<iterator>", "iterator/std::<iterator>']
+f1_keywords: ["std::<iterator>", "<iterator>", "iterator/std::<iterator>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iterator header"]
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd

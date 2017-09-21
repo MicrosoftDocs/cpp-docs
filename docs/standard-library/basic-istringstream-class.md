@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['sstream/std::basic_istringstream', 'sstream/std::basic_istringstream::allocator_type', 'sstream/std::basic_istringstream::rdbuf', 'sstream/std::basic_istringstream::str', 'sstream/std::basic_istringstream::swap']
+f1_keywords: ["sstream/std::basic_istringstream", "sstream/std::basic_istringstream::allocator_type", "sstream/std::basic_istringstream::rdbuf", "sstream/std::basic_istringstream::str", "sstream/std::basic_istringstream::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_istringstream [C++]", "std::basic_istringstream [C++], allocator_type", "std::basic_istringstream [C++], rdbuf", "std::basic_istringstream [C++], str", "std::basic_istringstream [C++], swap"]
 ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915

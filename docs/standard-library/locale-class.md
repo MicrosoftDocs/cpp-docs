@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocale/std::locale', 'locale/std::locale::category', 'locale/std::locale::combine', 'locale/std::locale::name', 'locale/std::locale::classic', 'locale/std::locale::global', 'locale/std::locale::operator( )', 'locale/std::locale::facet', 'locale/std::locale::id']
+f1_keywords: ["xlocale/std::locale", "locale/std::locale::category", "locale/std::locale::combine", "locale/std::locale::name", "locale/std::locale::classic", "locale/std::locale::global", "locale/std::locale::operator( )", "locale/std::locale::facet", "locale/std::locale::id"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::locale [C++]", "std::locale [C++], category", "std::locale [C++], combine", "std::locale [C++], name", "std::locale [C++], classic", "std::locale [C++], global", "std::locale [C++], facet", "std::locale [C++], id"]
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62

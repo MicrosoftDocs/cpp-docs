@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['ostream/std::swap', 'ostream/std::endl', 'ostream/std::ends', 'ostream/std::flush']
+f1_keywords: ["ostream/std::swap", "ostream/std::endl", "ostream/std::ends", "ostream/std::flush"]
 ms.assetid: d6e56cc0-c8df-4dbe-be10-98e14c35ed3a
 caps.latest.revision: 15
 manager: "ghogen"

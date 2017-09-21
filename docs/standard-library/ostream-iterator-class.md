@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/std::ostream_iterator', 'iterator/std::ostream_iterator::char_type', 'iterator/std::ostream_iterator::ostream_type', 'iterator/std::ostream_iterator::traits_type']
+f1_keywords: ["iterator/std::ostream_iterator", "iterator/std::ostream_iterator::char_type", "iterator/std::ostream_iterator::ostream_type", "iterator/std::ostream_iterator::traits_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::ostream_iterator [C++]", "std::ostream_iterator [C++], char_type", "std::ostream_iterator [C++], ostream_type", "std::ostream_iterator [C++], traits_type"]
 ms.assetid: 24d842d3-9f45-4bf6-a697-62f5968f5a03

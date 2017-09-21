@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::extent']
+f1_keywords: ["type_traits/std::extent"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["extent class", "extent"]
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d

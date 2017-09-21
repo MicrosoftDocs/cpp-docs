@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<fstream>", "<fstream>", "std.<fstream>']
+f1_keywords: ["std::<fstream>", "<fstream>", "std.<fstream>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["fstream header"]
 ms.assetid: 660de351-0489-41df-b239-40e0cdcab46b

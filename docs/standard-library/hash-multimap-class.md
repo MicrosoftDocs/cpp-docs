@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['hash_map/stdext::hash_multimap', 'hash_map/stdext::hash_multimap::allocator_type', 'hash_map/stdext::hash_multimap::const_iterator', 'hash_map/stdext::hash_multimap::const_pointer', 'hash_map/stdext::hash_multimap::const_reference', 'hash_map/stdext::hash_multimap::const_reverse_iterator', 'hash_map/stdext::hash_multimap::difference_type', 'hash_map/stdext::hash_multimap::iterator', 'hash_map/stdext::hash_multimap::key_compare', 'hash_map/stdext::hash_multimap::key_type', 'hash_map/stdext::hash_multimap::mapped_type', 'hash_map/stdext::hash_multimap::pointer', 'hash_map/stdext::hash_multimap::reference', 'hash_map/stdext::hash_multimap::reverse_iterator', 'hash_map/stdext::hash_multimap::size_type', 'hash_map/stdext::hash_multimap::value_type', 'hash_map/stdext::hash_multimap::begin', 'hash_map/stdext::hash_multimap::cbegin', 'hash_map/stdext::hash_multimap::cend', 'hash_map/stdext::hash_multimap::clear', 'hash_map/stdext::hash_multimap::count', 'hash_map/stdext::hash_multimap::crbegin', 'hash_map/stdext::hash_multimap::crend', 'hash_map/stdext::hash_multimap::emplace', 'hash_map/stdext::hash_multimap::emplace_hint', 'hash_map/stdext::hash_multimap::empty', 'hash_map/stdext::hash_multimap::end', 'hash_map/stdext::hash_multimap::equal_range', 'hash_map/stdext::hash_multimap::erase', 'hash_map/stdext::hash_multimap::find', 'hash_map/stdext::hash_multimap::get_allocator', 'hash_map/stdext::hash_multimap::insert', 'hash_map/stdext::hash_multimap::key_comp', 'hash_map/stdext::hash_multimap::lower_bound', 'hash_map/stdext::hash_multimap::max_size', 'hash_map/stdext::hash_multimap::rbegin', 'hash_map/stdext::hash_multimap::rend', 'hash_map/stdext::hash_multimap::size', 'hash_map/stdext::hash_multimap::swap', 'hash_map/stdext::hash_multimap::upper_bound', 'hash_map/stdext::hash_multimap::value_comp']
+f1_keywords: ["hash_map/stdext::hash_multimap", "hash_map/stdext::hash_multimap::allocator_type", "hash_map/stdext::hash_multimap::const_iterator", "hash_map/stdext::hash_multimap::const_pointer", "hash_map/stdext::hash_multimap::const_reference", "hash_map/stdext::hash_multimap::const_reverse_iterator", "hash_map/stdext::hash_multimap::difference_type", "hash_map/stdext::hash_multimap::iterator", "hash_map/stdext::hash_multimap::key_compare", "hash_map/stdext::hash_multimap::key_type", "hash_map/stdext::hash_multimap::mapped_type", "hash_map/stdext::hash_multimap::pointer", "hash_map/stdext::hash_multimap::reference", "hash_map/stdext::hash_multimap::reverse_iterator", "hash_map/stdext::hash_multimap::size_type", "hash_map/stdext::hash_multimap::value_type", "hash_map/stdext::hash_multimap::begin", "hash_map/stdext::hash_multimap::cbegin", "hash_map/stdext::hash_multimap::cend", "hash_map/stdext::hash_multimap::clear", "hash_map/stdext::hash_multimap::count", "hash_map/stdext::hash_multimap::crbegin", "hash_map/stdext::hash_multimap::crend", "hash_map/stdext::hash_multimap::emplace", "hash_map/stdext::hash_multimap::emplace_hint", "hash_map/stdext::hash_multimap::empty", "hash_map/stdext::hash_multimap::end", "hash_map/stdext::hash_multimap::equal_range", "hash_map/stdext::hash_multimap::erase", "hash_map/stdext::hash_multimap::find", "hash_map/stdext::hash_multimap::get_allocator", "hash_map/stdext::hash_multimap::insert", "hash_map/stdext::hash_multimap::key_comp", "hash_map/stdext::hash_multimap::lower_bound", "hash_map/stdext::hash_multimap::max_size", "hash_map/stdext::hash_multimap::rbegin", "hash_map/stdext::hash_multimap::rend", "hash_map/stdext::hash_multimap::size", "hash_map/stdext::hash_multimap::swap", "hash_map/stdext::hash_multimap::upper_bound", "hash_map/stdext::hash_multimap::value_comp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::hash_multimap", "stdext::hash_multimap::allocator_type", "stdext::hash_multimap::const_iterator", "stdext::hash_multimap::const_pointer", "stdext::hash_multimap::const_reference", "stdext::hash_multimap::const_reverse_iterator", "stdext::hash_multimap::difference_type", "stdext::hash_multimap::iterator", "stdext::hash_multimap::key_compare", "stdext::hash_multimap::key_type", "stdext::hash_multimap::mapped_type", "stdext::hash_multimap::pointer", "stdext::hash_multimap::reference", "stdext::hash_multimap::reverse_iterator", "stdext::hash_multimap::size_type", "stdext::hash_multimap::value_type", "stdext::hash_multimap::begin", "stdext::hash_multimap::cbegin", "stdext::hash_multimap::cend", "stdext::hash_multimap::clear", "stdext::hash_multimap::count", "stdext::hash_multimap::crbegin", "stdext::hash_multimap::crend", "stdext::hash_multimap::emplace", "stdext::hash_multimap::emplace_hint", "stdext::hash_multimap::empty", "stdext::hash_multimap::end", "stdext::hash_multimap::equal_range", "stdext::hash_multimap::erase", "stdext::hash_multimap::find", "stdext::hash_multimap::get_allocator", "stdext::hash_multimap::insert", "stdext::hash_multimap::key_comp", "stdext::hash_multimap::lower_bound", "stdext::hash_multimap::max_size", "stdext::hash_multimap::rbegin", "stdext::hash_multimap::rend", "stdext::hash_multimap::size", "stdext::hash_multimap::swap", "stdext::hash_multimap::upper_bound", "stdext::hash_multimap::value_comp"]
 ms.assetid: f41a6db9-67aa-43a3-a3c5-dbfe9ec3ae7d
@@ -41,10 +41,10 @@ class hash_multimap
  The element data type to be stored in the hash_multimap.  
   
  `Traits`  
- The type that includes two function objects, one of class `Traits` that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type **size_t**. This argument is optional, and the `hash_compare<Key, less<Key> >` is the default value.  
+ The type that includes two function objects, one of class `Traits` that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type **size_t**. This argument is optional, and the `hash_compare<Key, less<Key>>` is the default value.  
   
  `Allocator`  
- The type that represents the stored allocator object that encapsulates details about the hash_multimap's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<pair <const Key, Type> >`.  
+ The type that represents the stored allocator object that encapsulates details about the hash_multimap's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<pair <const Key, Type>>`.  
   
 ## Remarks  
  The hash_multimap is:  
@@ -67,7 +67,7 @@ class hash_multimap
   
  The hash_multimap should be the associative container of choice when the conditions associating the values with their keys are satisfied by the application. A model for this type of structure is an ordered list of key words with associated string values providing, say, definitions, where the words were not always uniquely defined. If, instead, the keywords were uniquely defined so that keys were unique, then a hash_map would be the container of choice. If, on the other hand, just the list of words were being stored, then a hash_set would be the correct container. If multiple occurrences of the words were allowed, then a hash_multiset would be the appropriate container structure.  
   
- The hash_multimap orders the sequence it controls by calling a stored hash `Traits` object of type [value_compare](../standard-library/value-compare-class.md). This stored object may be accessed by calling the member function [key_comp](../standard-library/hash-map-class.md#key_comp). Such a function object must behave the same as an object of class [hash_compare](../standard-library/hash-compare-class.md)`<Key,  less<Key> >`. Specifically, for all values `Key` of type `Key`, the call `Traits (Key)` yields a distribution of values of type `size_t`.  
+ The hash_multimap orders the sequence it controls by calling a stored hash `Traits` object of type [value_compare](../standard-library/value-compare-class.md). This stored object may be accessed by calling the member function [key_comp](../standard-library/hash-map-class.md#key_comp). Such a function object must behave the same as an object of class [hash_compare](../standard-library/hash-compare-class.md)`<Key, less<Key>>`. Specifically, for all values `Key` of type `Key`, the call `Traits (Key)` yields a distribution of values of type `size_t`.  
   
  In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the non-equivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate f(x, y) is a function object that has two argument objects `x` and `y` and a return value of `true` or `false`. An ordering imposed on a hash_multimap is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects `x` and `y` are defined to be equivalent when both f(x, y) and f(y, x) are `false`. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.  
   
@@ -1577,8 +1577,8 @@ int main( )
    using namespace std;  
    using namespace stdext;  
   
-   hash_multimap <int, int, hash_compare<int, less<int> > > hm1;  
-   hash_multimap <int, int, hash_compare<int, less<int> >   
+   hash_multimap <int, int, hash_compare<int, less<int>>> hm1;  
+   hash_multimap <int, int, hash_compare<int, less<int>>   
       >::key_compare kc1 = hm1.key_comp( ) ;  
    bool result1 = kc1( 2, 3 ) ;  
    if( result1 == true )  
@@ -1594,8 +1594,8 @@ int main( )
            << endl;  
    }  
   
-   hash_multimap <int, int, hash_compare<int, greater<int> > > hm2;  
-   hash_multimap <int, int, hash_compare<int, greater<int> >   
+   hash_multimap <int, int, hash_compare<int, greater<int>>> hm2;  
+   hash_multimap <int, int, hash_compare<int, greater<int>>   
       >::key_compare kc2 = hm2.key_comp( );  
    bool result2 = kc2( 2, 3 ) ;  
    if( result2 == true )  
@@ -2404,8 +2404,8 @@ int main( )
    using namespace std;  
    using namespace stdext;  
   
-   hash_multimap <int, int, hash_compare<int, less<int> > > hm1;  
-   hash_multimap <int, int, hash_compare<int, less<int> >   
+   hash_multimap <int, int, hash_compare<int, less<int>>> hm1;  
+   hash_multimap <int, int, hash_compare<int, less<int>>   
       >::value_compare vc1 = hm1.value_comp( );  
    hash_multimap <int,int>::iterator Iter1, Iter2;  
   
