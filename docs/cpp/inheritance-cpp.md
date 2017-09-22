@@ -4,17 +4,35 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""derived classes [C++]"", ""derived classes [C++], about derived classes"", ""classes [C++], derived""]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "derived classes"
+  - "derived classes, about derived classes"
+  - "classes [C++], derived"
 ms.assetid: 3534ca19-d9ed-4a40-be1b-b921ad0e6956
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Inheritance  (C++)
 This section explains how to use derived classes to produce extensible programs.  

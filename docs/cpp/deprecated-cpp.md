@@ -4,18 +4,37 @@ ms.custom: ""
 ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["deprecated", "deprecated_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""__declspec keyword [C++], deprecated"", ""deprecated __declspec keyword [C++]""]"]
+f1_keywords: 
+  - "deprecated"
+  - "deprecated_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "__declspec keyword [C++], deprecated"
+  - "deprecated __declspec keyword"
 ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # deprecated (C++)
 This topic is about the Microsoft-specific deprecated declspec declaration. For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs. the Microsoft-specific declspec or pragma, see [C++ Standard Attributes](attributes2.md).

@@ -4,18 +4,37 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["appdomain_cpp", "appdomain"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""tilde (~) one's complement operator [C++]"", ""one's complement operator [C++]"", ""bitwise-complement operator [C++]"", ""compl operator [C++]"", ""~ operator [C++], syntax""]"]
+f1_keywords: 
+  - "appdomain_cpp"
+  - "appdomain"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "appdomain __declspec keyword"
+  - "__declspec keyword [C++], appdomain"
 ms.assetid: 29d843cb-cb6b-4d1b-a48d-d928a877234d
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # appdomain
 Specifies that each application domain of your managed application should have its own copy of a particular global variable or static member variable. See [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md) for more information.  
