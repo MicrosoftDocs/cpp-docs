@@ -4,18 +4,38 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["[]"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""operators [C++], subscript"", ""postfix operators [C++]"", ""[] operator [C++]"", ""subscript operator [C++], syntax""]"]
+f1_keywords: 
+  - "[]"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operators [C++], subscript"
+  - "postfix operators"
+  - "[] operator"
+  - "subscript operator, syntax"
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Subscript Operator:
 ## Syntax  

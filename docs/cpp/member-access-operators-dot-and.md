@@ -4,18 +4,43 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: [".", "->"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""member access [C++], expressions"", ""operators [C++], member access"", ""dot operator (.) [C++]"", ""-> operator [C++]"", ""member access [C++], operators"", ""postfix operators [C++]"", "". operator [C++]"", ""member access [C++]""]"]
+f1_keywords: 
+  - "."
+  - "->"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "member access, expressions"
+  - "operators [C++], member access"
+  - "dot operator (.)"
+  - "-> operator"
+  - "member access, operators"
+  - "postfix operators"
+  - ". operator"
+  - "member access"
 ms.assetid: f8fc3df9-d728-40c5-b384-276927f5f1b3
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Member Access Operators: . and -&gt;
 ## Syntax  

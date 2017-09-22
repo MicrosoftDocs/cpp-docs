@@ -4,18 +4,38 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["this", "this_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""nonstatic member functions [C++]"", ""pointers [C++], to class instance"", ""this pointer [C++]""]"]
+f1_keywords: 
+  - "this"
+  - "this_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "nonstatic member functions"
+  - "pointers, to class instance"
+  - "this pointer"
 ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # this Pointer
 The **this** pointer is a pointer accessible only within the nonstatic member functions of a **class**, `struct`, or **union** type. It points to the object for which the member function is called. Static member functions do not have a **this** pointer.  

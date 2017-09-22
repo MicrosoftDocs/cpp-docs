@@ -4,18 +4,38 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""decorated names [C++]"", ""decorated names, about decorated names"", ""identifiers, C++"", ""white space, in C++ identifiers"", ""identifiers [C++]""]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "decorated names"
+  - "decorated names, about decorated names"
+  - "identifiers, C++"
+  - "white space, in C++ identifiers"
+  - "identifiers"
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
+translation.priority.ht: 
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "ru-ru"
+  - "zh-cn"
+  - "zh-tw"
+translation.priority.mt: 
+  - "cs-cz"
+  - "pl-pl"
+  - "pt-br"
+  - "tr-tr"
 ---
 # Identifiers (C++)
 An identifier is a sequence of characters used to denote one of the following:  
