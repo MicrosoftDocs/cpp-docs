@@ -65,7 +65,7 @@ This option requires that you enable optimizations using **/O1**, **/O2**, **/Ox
 
 The compiler treats the inline expansion options and keywords as suggestions. There is no guarantee that any function will be expanded inline. You can disable inline expansions, but you cannot force the compiler to inline a particular function, even when using the `__forceinline` keyword.
 
-You can use the `#pragma`[auto_inline](../../preprocessor/auto-inline.md) directive to exclude functions from consideration as candidates for inline expansion. Also see the `#pragma`[intrinsic](../../preprocessor/intrinsic.md) directive.
+You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) directive to exclude functions from consideration as candidates for inline expansion. Also see the `#pragma` [intrinsic](../../preprocessor/intrinsic.md) directive.
 
 > [!NOTE]
 > Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, see [Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md).
