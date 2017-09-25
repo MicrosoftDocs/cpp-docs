@@ -1,7 +1,7 @@
 ---
 title: "-Ox (Enable Most Speed Optimizations) | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/22/2017"
+ms.date: "09/25/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -26,7 +26,7 @@ manager: "ghogen"
 ---
 # /Ox (Enable Most Speed Optimizations)
 
-The **/Ox** compiler option enables a strict subset of the optimizations of [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) that produces code that favors faster execution speed over smaller size. The **/Ox** compiler option does not include the [/GF (Eliminate Duplicate Strings)](../../build/reference/gf-eliminate-duplicate-strings.md) and [/Gy (Enable Function-Level Linking)](../../build/reference/gy-enable-function-level-linking.md) options enabled by **/O2**.
+The **/Ox** compiler option enables a combination of **/O** compiler options that favor speed. In both the Visual Studio IDE and the compiler help message, this is called full optimization, but the **/Ox** compiler option enables only a subset of the speed optimization options enabled by **/O2**.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ The **/Ox** compiler option enables a strict subset of the optimizations of [/O2
 
 ## Remarks
 
-The **/Ox** compiler option is the same as using the following options in combination:
+The **/Ox** compiler option enables a combination of **/O** compiler options that favor speed. The **/Ox** compiler option does not include the additional [/GF (Eliminate Duplicate Strings)](../../build/reference/gf-eliminate-duplicate-strings.md) and [/Gy (Enable Function-Level Linking)](../../build/reference/gy-enable-function-level-linking.md) options enabled by [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md). The **/Ox** compiler option is the same as using the following options in combination:
 
 - [/Ob (Inline Function Expansion)](../../build/reference/ob-inline-function-expansion.md), where the option parameter is 2 (**/Ob2**)
 
@@ -60,9 +60,7 @@ We recommend you specify [/O2 (Maximize Speed)](../../build/reference/o1-o2-mini
 
 1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Optimization** property page.
+1. Under **Configuration Properties**, open **C/C++** and then choose the **Optimization** property page.
 
 1. Modify the **Optimization** property.
 

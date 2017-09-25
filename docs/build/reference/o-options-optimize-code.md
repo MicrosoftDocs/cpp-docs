@@ -27,7 +27,7 @@ manager: "ghogen"
 
 The **/O** options control various optimizations that help you create code for maximum speed or minimum size.
 
-  [/O1](../../build/reference/o1-o2-minimize-size-maximize-speed.md) sets a combination of optimizations that generate minimum size code.
+- [/O1](../../build/reference/o1-o2-minimize-size-maximize-speed.md) sets a combination of optimizations that generate minimum size code.
 
 - [/O2](../../build/reference/o1-o2-minimize-size-maximize-speed.md) sets a combination of optimizations that optimizes code for maximum speed.
 
