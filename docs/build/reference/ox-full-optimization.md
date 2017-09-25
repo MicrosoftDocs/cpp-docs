@@ -26,7 +26,7 @@ manager: "ghogen"
 ---
 # /Ox (Enable Most Speed Optimizations)
 
-The **/Ox** compiler option enables a combination of **/O** compiler options that favor speed. In both the Visual Studio IDE and the compiler help message, this is called full optimization, but the **/Ox** compiler option enables only a subset of the speed optimization options enabled by **/O2**.
+The **/Ox** compiler option enables a combination of optimizations that favor speed. In both the Visual Studio IDE and the compiler help message, this is called full optimization, but the **/Ox** compiler option enables only a subset of the speed optimization options enabled by **/O2**.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ The **/Ox** compiler option enables a combination of **/O** compiler options tha
 
 ## Remarks
 
-The **/Ox** compiler option enables a combination of **/O** compiler options that favor speed. The **/Ox** compiler option does not include the additional [/GF (Eliminate Duplicate Strings)](../../build/reference/gf-eliminate-duplicate-strings.md) and [/Gy (Enable Function-Level Linking)](../../build/reference/gy-enable-function-level-linking.md) options enabled by [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md). The **/Ox** compiler option is the same as using the following options in combination:
+The **/Ox** compiler option enables the **/O** compiler options that favor speed. The **/Ox** compiler option does not include the additional [/GF (Eliminate Duplicate Strings)](../../build/reference/gf-eliminate-duplicate-strings.md) and [/Gy (Enable Function-Level Linking)](../../build/reference/gy-enable-function-level-linking.md) options enabled by [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md). The **/Ox** compiler option is the same as using the following options in combination:
 
 - [/Ob (Inline Function Expansion)](../../build/reference/ob-inline-function-expansion.md), where the option parameter is 2 (**/Ob2**)
 
