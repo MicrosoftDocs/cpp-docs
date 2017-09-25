@@ -1,7 +1,7 @@
 ---
 title: "-Ob (Inline Function Expansion) | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/22/2017"
+ms.date: "09/25/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -84,8 +84,6 @@ You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) direc
 
 ## See Also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
-
-[Compiler Options](../../build/reference/compiler-options.md)
-
+[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)  
+[Compiler Options](../../build/reference/compiler-options.md)  
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)

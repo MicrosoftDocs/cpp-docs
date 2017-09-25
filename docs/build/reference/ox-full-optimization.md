@@ -70,8 +70,6 @@ We recommend you specify [/O2 (Maximize Speed)](../../build/reference/o1-o2-mini
 
 ## See Also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)
-
-[Compiler Options](../../build/reference/compiler-options.md)
-
+[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)  
+[Compiler Options](../../build/reference/compiler-options.md)  
 [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
