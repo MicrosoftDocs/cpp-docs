@@ -1,7 +1,7 @@
 ---
 title: "-O1, -O2 (Minimize Size, Maximize Speed) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/25/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:  
@@ -29,82 +29,46 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /O1, /O2 (Minimize Size, Maximize Speed)
-Selects a predefined set of options that affect the size and speed of files.  
-  
-## Syntax  
-  
-```  
-/O1  
-/O2  
-```  
-  
-## Remarks  
- The following table describes **/O1** and **/O2**.  
-  
-|Option|Equivalent to|Comment|  
-|------------|-------------------|-------------|  
-|**/O1** (Minimize Size)|**/Og /Os /Oy /Ob2 /Gs /GF /Gy**|Creates the smallest code in the majority of cases.|  
-|**/O2** (Maximize Speed)|**/Og /Oi /Ot /Oy /Ob2 /Gs /GF /Gy**|Creates the fastest code in the majority of cases. (default setting for release builds)|  
-  
- **/O1** and **/O2** also enable the Named Return Value optimization, which eliminates the copy constructor and destructor of a stack based return value. Consider the following sample.  The `Test` function will not create the copy constructor or destructor. Add output statements to the constructor, destructor and copy constructor to see the effect of Named Return Value Optimization when you run the program. For more information, see [Named Return Value Optimization in Visual C++ 2005](http://go.microsoft.com/fwlink/?linkid=131571).  
-  
-```  
-// O1_O2_NRVO.cpp  
-// compile with: /O1  
-struct A {  
-   A() {}  
-   ~A() {}  
-   A(const A& aa) {}  
-};  
-  
-A Test() {  
-   A a;  
-   return a;  
-}  
-int main() {  
-   A aa;  
-   aa = Test();  
-}  
-```  
-  
- **x86 Specific**  
-  
- These options imply the use of the Frame-Pointer Omission ([/Oy](../../build/reference/oy-frame-pointer-omission.md)) option.  
-  
- **END x86 Specific**  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **C/C++** folder.  
-  
-3.  Click the **Optimization** property page.  
-  
-4.  Modify the **Optimization** property.  
-  
-### To set this compiler option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.  
-  
-## See Also  
- [/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)   
- [Compiler Options](../../build/reference/compiler-options.md)   
- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)
+
+Selects a predefined set of options that affect the size and speed of generated code.
+
+## Syntax
+
+> /O1  
+> /O2
+
+## Remarks
+
+The **/O1** and **/O2** compiler options are a quick way to set several specific optimization options at once. The **/O1** option sets the individual optimization options that create the smallest code in the majority of cases. The **/O2** option sets the options that create the fastest code in the majority of cases. The **/O2** option is the default for release builds. This table shows the specific options that are set by **/O1** and **/O2**:
+
+|Option|Equivalent to|
+|------------|-------------------|
+|**/O1** (Minimize Size)|[/Og](../../build/reference/og-global-optimizations.md) [/Os](../../build/reference/os-ot-favor-small-code-favor-fast-code.md) [/Oy](../../build/reference/oy-frame-pointer-omission.md) [/Ob2](../../build/reference/ob-inline-function-expansion.md) [/Gs](../../build/reference/gs-control-stack-checking-calls.md) [/GF](../../build/reference/gf-eliminate-duplicate-strings.md) [/Gy](../../build/reference/gy-enable-function-level-linking.md)|
+|**/O2** (Maximize Speed)|[/Og](../../build/reference/og-global-optimizations.md) [/Oi](../../build/reference/oi-generate-intrinsic-functions.md) [/Ot](../../build/reference/os-ot-favor-small-code-favor-fast-code.md) [/Oy](../../build/reference/oy-frame-pointer-omission.md) [/Ob2](../../build/reference/ob-inline-function-expansion.md) [/Gs](../../build/reference/gs-control-stack-checking-calls.md) [/GF](../../build/reference/gf-eliminate-duplicate-strings.md) [/Gy](../../build/reference/gy-enable-function-level-linking.md)|
+
+**/O1** and **/O2** are mutually exclusive.
+
+> [!NOTE]  
+> **x86 Specific**  
+> These options imply the use of the Frame-Pointer Omission ([/Oy](../../build/reference/oy-frame-pointer-omission.md)) option.
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Under **Configuration Properties**, open **C/C++** and then choose the **Optimization** property page.
+
+1. Modify the **Optimization** property.
+
+### To set this compiler option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
+
+## See Also
+
+[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)  
+[Compiler Options](../../build/reference/compiler-options.md)  
+[Setting Compiler Options](../../build/reference/setting-compiler-options.md)  
+[/EH (Exception Handling Model)](../../build/reference/eh-exception-handling-model.md)
