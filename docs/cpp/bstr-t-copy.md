@@ -4,18 +4,36 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: []
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""Copy method [C++]"", ""BSTR object, copy""]"]
+f1_keywords: 
+  - "_bstr_t::copy"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Copy method"
+  - "BSTR object, copy"
 ms.assetid: 00ba7311-e82e-4a79-8106-5329fa2f869a
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # _bstr_t::copy
 **Microsoft Specific**  

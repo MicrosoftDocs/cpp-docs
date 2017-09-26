@@ -4,17 +4,37 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""explicit data type conversion operator"", ""conversions [C++], explicit"", ""operators [C++], explicit type conversion"", ""data type conversion [C++], explicit"", ""type conversion [C++], explicit conversions""]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "explicit data type conversion operator"
+  - "conversions [C++], explicit"
+  - "operators [C++], explicit type conversion"
+  - "data type conversion [C++], explicit"
+  - "type conversion [C++], explicit conversions"
 ms.assetid: 54272006-5ffb-45ed-8283-27152ab97529
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Explicit Type Conversion Operator: ()
 C++ allows explicit type conversion using syntax similar to the function-call syntax.  

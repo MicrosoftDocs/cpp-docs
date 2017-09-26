@@ -4,17 +4,39 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""( ) function call operator"", ""function calls, C++ functions"", ""() function call operator [C++]"", ""postfix operators [C++]"", ""function calls, operator"", ""functions [C++], function-call operator"", ""function call operator ( ) [C++]""]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "( ) function call operator"
+  - "function calls, C++ functions"
+  - "() function call operator"
+  - "postfix operators"
+  - "function calls, operator"
+  - "functions [C++], function-call operator"
+  - "function call operator ( )"
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Function Call Operator: ()
 A postfix-expression followed by the function-call operator, **( )**, specifies a function call.  
