@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/std::back_insert_iterator', 'iterator/std::back_insert_iterator::container_type', 'iterator/std::back_insert_iterator::reference']
+f1_keywords: ["iterator/std::back_insert_iterator", "iterator/std::back_insert_iterator::container_type", "iterator/std::back_insert_iterator::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::back_insert_iterator [C++]", "std::back_insert_iterator [C++], container_type", "std::back_insert_iterator [C++], reference"]
 ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713

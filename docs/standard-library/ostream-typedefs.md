@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['ostream/std::ostream', 'ostream/std::wostream']
+f1_keywords: ["iosfwd/std::ostream", "iosfwd/std::wostream"]
 ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
 caps.latest.revision: 11
 manager: "ghogen"

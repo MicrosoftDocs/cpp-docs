@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::conditional']
+f1_keywords: ["type_traits/std::conditional"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["conditional class", "conditional"]
 ms.assetid: ece9f539-fb28-4e26-a79f-3264bc984493

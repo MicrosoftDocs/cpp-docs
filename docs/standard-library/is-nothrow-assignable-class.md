@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['type_traits/std::is_nothrow_assignable']
+f1_keywords: ["type_traits/std::is_nothrow_assignable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_nothrow_assignable"]
 ms.assetid: aa3aca92-308b-4b1d-b3f3-c54216c48fe7

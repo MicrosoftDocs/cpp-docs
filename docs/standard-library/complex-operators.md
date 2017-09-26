@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['complex/std::operator!=', 'complex/std::operator&gt;&gt;', 'complex/std::operator&lt;&lt;', 'complex/std::operator*', 'complex/std::operator+', 'complex/std::operator-', 'complex/std::operator/', 'complex/std::operator==']
+f1_keywords: ["xcomplex/std::operator!=", "xcomplex/std::operator&gt;&gt;", "xcomplex/std::operator&lt;&lt;", "xcomplex/std::operator*", "xcomplex/std::operator+", "xcomplex/std::operator-", "xcomplex/std::operator/", "xcomplex/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: aa282604-dcb9-46a2-bf1d-34c50aa6c4ba
 caps.latest.revision: 11

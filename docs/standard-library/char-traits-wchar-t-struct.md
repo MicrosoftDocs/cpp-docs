@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['char_traits<wchar_t>', 'string/std::char_traits<wchar_t>']
+f1_keywords: ["char_traits<wchar_t>", "iosfwd/std::char_traits<wchar_t>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["char_traits<wchar_t> class"]
 ms.assetid: 31f34072-04d6-4871-88fe-48e17d473484

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['mutex/std::timed_mutex', 'mutex/std::timed_mutex::timed_mutex', 'mutex/std::timed_mutex::lock', 'mutex/std::timed_mutex::try_lock', 'mutex/std::timed_mutex::try_lock_for', 'mutex/std::timed_mutex::try_lock_until', 'mutex/std::timed_mutex::unlock']
+f1_keywords: ["mutex/std::timed_mutex", "mutex/std::timed_mutex::timed_mutex", "mutex/std::timed_mutex::lock", "mutex/std::timed_mutex::try_lock", "mutex/std::timed_mutex::try_lock_for", "mutex/std::timed_mutex::try_lock_until", "mutex/std::timed_mutex::unlock"]
 dev_langs: ["C++"]
 ms.assetid: cd198081-6f38-447a-9dba-e06dfbfafe59
 caps.latest.revision: 9

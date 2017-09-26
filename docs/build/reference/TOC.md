@@ -90,7 +90,7 @@
 ##### [-Og (Global Optimizations)](og-global-optimizations.md)
 ##### [-Oi (Generate Intrinsic Functions)](oi-generate-intrinsic-functions.md)
 ##### [-Os, -Ot (Favor Small Code, Favor Fast Code)](os-ot-favor-small-code-favor-fast-code.md)
-##### [-Ox (Full Optimization)](ox-full-optimization.md)
+##### [-Ox (Enable Most Speed Optimizations)](ox-full-optimization.md)
 ##### [-Oy (Frame-Pointer Omission)](oy-frame-pointer-omission.md)
 #### [-openmp (Enable OpenMP 2.0 Support)](openmp-enable-openmp-2-0-support.md)
 #### [-P (Preprocess to a File)](p-preprocess-to-a-file.md)

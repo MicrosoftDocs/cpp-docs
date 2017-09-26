@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['memory/std::allocator<void>', 'allocator<void>']
+f1_keywords: ["memory/std::allocator<void>", "allocator<void>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["allocator<void> class"]
 ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd

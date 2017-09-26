@@ -1,6 +1,7 @@
 # [Visual C++ Porting and Upgrading Guide](visual-cpp-porting-and-upgrading-guide.md)
 ## [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)
 ## [Visual C++ What's New 2003 through 2015](visual-cpp-what-s-new-2003-through-2015.md)
+## [C++ Binary Compatibility between 2015 and 2017](binary-compat-2015-2017.md)
 ## [Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)
 ## [Porting 3rd-party libraries](porting-third-party-libraries.md)
 ## [Porting data applications](porting-data-applications.md)

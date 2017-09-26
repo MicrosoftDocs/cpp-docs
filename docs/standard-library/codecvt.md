@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['codecvt", "std::<codecvt>", "<codecvt>']
+f1_keywords: ["codecvt", "<codecvt>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["codecvt header"]
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d

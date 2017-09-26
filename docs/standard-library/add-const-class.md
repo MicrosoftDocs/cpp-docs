@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::add_const']
+f1_keywords: ["type_traits/std::add_const"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["add_const class", "add_const"]
 ms.assetid: 1262a1eb-8c9c-4dd6-9f43-88ba280182f1

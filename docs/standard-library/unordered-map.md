@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<unordered_map>']
+f1_keywords: ["<unordered_map>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unordered_map header"]
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde

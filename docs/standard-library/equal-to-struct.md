@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::equal_to']
+f1_keywords: ["xfunctional/std::equal_to"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["equal_to function", "equal_to struct"]
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6

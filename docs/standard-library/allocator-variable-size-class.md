@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::allocator_variable_size', 'allocators/stdext::allocators::allocator_variable_size', 'stdext::allocators::allocator_variable_size']
+f1_keywords: ["allocators/stdext::allocator_variable_size", "allocators/stdext::allocators::allocator_variable_size", "stdext::allocators::allocator_variable_size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::allocator_variable_size", "stdext::allocators [C++], allocator_variable_size"]
 ms.assetid: c3aa4105-ae45-4385-bbbe-9f23060478cb

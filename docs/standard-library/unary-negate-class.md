@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::unary_negate']
+f1_keywords: ["xfunctional/std::unary_negate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unary_negate class"]
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c

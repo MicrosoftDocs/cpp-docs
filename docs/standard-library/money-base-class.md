@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['locale/std::money_base'
+f1_keywords: ["xlocmon/std::money_base"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["money_base class"]
 ms.assetid: 1a303c15-9272-4f26-ae16-dcf43a0fd38a

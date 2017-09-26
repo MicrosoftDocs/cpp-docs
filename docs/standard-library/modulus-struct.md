@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::modulus']
+f1_keywords: ["xfunctional/std::modulus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["modulus class", "modulus struct"]
 ms.assetid: 86d342f7-b7b1-46a4-b0bb-6b7ae827369b

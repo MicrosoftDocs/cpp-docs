@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['complex<double>", "std::complex<double>']
+f1_keywords: ["complex/std::complex<double>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["complex<double> function"]
 ms.assetid: 0d0b9d2a-9b9b-410b-82a0-86b6df127e47

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['memory/std::<memory>", "<memory>", "std::<memory>']
+f1_keywords: ["memory/std::<memory>", "<memory>", "std::<memory>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["memory header"]
 ms.assetid: ef8e38da-7c9d-4037-9ad1-20c99febf5dc

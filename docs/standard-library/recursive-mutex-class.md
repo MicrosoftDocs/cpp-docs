@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['mutex/std::recursive_mutex', 'mutex/std::recursive_mutex::recursive_mutex', 'mutex/std::recursive_mutex::lock', 'mutex/std::recursive_mutex::try_lock', 'mutex/std::recursive_mutex::unlock']
+f1_keywords: ["mutex/std::recursive_mutex", "mutex/std::recursive_mutex::recursive_mutex", "mutex/std::recursive_mutex::lock", "mutex/std::recursive_mutex::try_lock", "mutex/std::recursive_mutex::unlock"]
 dev_langs: ["C++"]
 ms.assetid: eb5ffd1b-7e78-4559-8391-bb220ead42fc
 caps.latest.revision: 9

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::remove_const']
+f1_keywords: ["type_traits/std::remove_const"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["remove_const class", "remove_const"]
 ms.assetid: feb76fb3-9228-41d6-80f6-2fbb04daec43

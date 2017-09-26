@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['condition_variable/std::cv_status']
+f1_keywords: ["condition_variable/std::cv_status"]
 ms.assetid: f261ad79-e25b-4afa-9f8a-909ce697e0d8
 caps.latest.revision: 11
 manager: "ghogen"

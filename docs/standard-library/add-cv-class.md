@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::add_cv']
+f1_keywords: ["type_traits/std::add_cv"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["add_cv class", "add_cv"]
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['type_traits/std::is_trivially_destructible']
+f1_keywords: ["type_traits/std::is_trivially_destructible"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_destructible"]
 ms.assetid: 3f7a787d-2448-40c5-ac51-a228318e02ce

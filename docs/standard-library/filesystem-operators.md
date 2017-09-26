@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['FILESYSTEM/std::experimental::filesystem::operator==', 'FILESYSTEM/std::experimental::filesystem::operator!=', 'FILESYSTEM/std::experimental::filesystem::operator<', 'FILESYSTEM/std::experimental::filesystem::operator<=', 'FILESYSTEM/std::experimental::filesystem::operator>', 'FILESYSTEM/std::experimental::filesystem::operator>=', 'FILESYSTEM/std::experimental::filesystem::operator/', 'FILESYSTEM/std::experimental::filesystem::operator<<', 'FILESYSTEM/std::experimental::filesystem::operator>>']
+f1_keywords: ["FILESYSTEM/std::experimental::filesystem::operator==", "FILESYSTEM/std::experimental::filesystem::operator!=", "FILESYSTEM/std::experimental::filesystem::operator<", "FILESYSTEM/std::experimental::filesystem::operator<=", "FILESYSTEM/std::experimental::filesystem::operator>", "FILESYSTEM/std::experimental::filesystem::operator>=", "FILESYSTEM/std::experimental::filesystem::operator/", "FILESYSTEM/std::experimental::filesystem::operator<<", "FILESYSTEM/std::experimental::filesystem::operator>>"]
 dev_langs: ["C++"]
 ms.assetid: 102c4833-aa3b-41a8-8998-f5003c546bfd
 caps.latest.revision: 12

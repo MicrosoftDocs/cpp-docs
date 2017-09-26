@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_object']
+f1_keywords: ["type_traits/std::is_object"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_object class", "is_object"]
 ms.assetid: b452ceea-5676-488f-925b-ab881126c387

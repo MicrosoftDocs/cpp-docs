@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['=", "operator=", "vector<bool>::reference::operator=", "std::vector<bool>::reference::operator=']
+f1_keywords: ["=", "operator=", "vector<bool>::reference::operator=", "std::vector<bool>::reference::operator="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["= operator, with specific C++ Standard Library objects", "reference::operator="]
 ms.assetid: eed20d81-36b9-40b2-a3b6-340ed0bb4f34

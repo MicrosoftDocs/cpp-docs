@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_literal_type']
+f1_keywords: ["type_traits/std::is_literal_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_literal_type"]
 ms.assetid: a03a4ebb-ee66-48d6-91bb-41cf72b2401f

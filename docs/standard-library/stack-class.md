@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stack/std::stack::container_type', 'stack/std::stack::size_type', 'stack/std::stack::value_type', 'stack/std::stack::empty', 'stack/std::stack::pop', 'stack/std::stack::push', 'stack/std::stack::size', 'stack/std::stack::top']
+f1_keywords: ["stack/std::stack::container_type", "stack/std::stack::size_type", "stack/std::stack::value_type", "stack/std::stack::empty", "stack/std::stack::pop", "stack/std::stack::push", "stack/std::stack::size", "stack/std::stack::top"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::stack [C++], container_type", "std::stack [C++], size_type", "std::stack [C++], value_type", "std::stack [C++], empty", "std::stack [C++], pop", "std::stack [C++], push", "std::stack [C++], size", "std::stack [C++], top"]
 ms.assetid: 02151c1e-eab0-41b8-be94-a839ead78ecf

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/std::ALLOCATOR_DECL', 'allocators/std::CACHE_CHUNKLIST', 'allocators/std::CACHE_FREELIST', 'allocators/std::CACHE_SUBALLOC', 'allocators/std::SYNC_DEFAULT']
+f1_keywords: ["allocators/std::ALLOCATOR_DECL", "allocators/std::CACHE_CHUNKLIST", "allocators/std::CACHE_FREELIST", "allocators/std::CACHE_SUBALLOC", "allocators/std::SYNC_DEFAULT"]
 ms.assetid: 9cb5ee07-1ff9-4594-ae32-3c8c6efb511a
 caps.latest.revision: 12
 manager: "ghogen"

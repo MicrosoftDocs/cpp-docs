@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_empty']
+f1_keywords: ["type_traits/std::is_empty"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_empty class", "is_empty"]
 ms.assetid: 44a6fc92-7e55-4fbe-9a24-2a0ce2dccba0

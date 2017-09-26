@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<random>']
+f1_keywords: ["<random>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["random header"]
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['map/std::operator!=', 'map/std::operator&gt;', 'map/std::operator&gt;=', 'map/std::operator&lt;', 'map/std::operator&lt;=', 'map/std::operator==']
+f1_keywords: ["map/std::operator!=", "map/std::operator&gt;", "map/std::operator&gt;=", "map/std::operator&lt;", "map/std::operator&lt;=", "map/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 7df02b9f-701c-44ed-834a-a819badc5bd0
 caps.latest.revision: 7

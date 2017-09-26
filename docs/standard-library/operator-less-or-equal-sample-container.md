@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<=", "std.operator<=", "operator<=", "std.<=", "std::operator<=", "<=']
+f1_keywords: ["std::<=", "std.operator<=", "operator<=", "std.<=", "std::operator<=", "<="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator<=", "operator <=", "<= operator, with specific objects", "<= operator"]
 ms.assetid: 338577dd-dc88-4a2b-9e12-0379c54fc8a2

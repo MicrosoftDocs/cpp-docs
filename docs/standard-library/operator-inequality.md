@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::!=", "!=", "std::operator!=", "std.operator!=", "std.!=", "operator!=']
+f1_keywords: ["std::!=", "!=", "std::operator!=", "std.operator!=", "std.!=", "operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["!= operator", "operator!=", "operator !="]
 ms.assetid: ef2be7f0-1c94-4edc-b65c-731fddd519f4

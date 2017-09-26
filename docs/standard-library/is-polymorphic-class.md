@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_polymorphic']
+f1_keywords: ["type_traits/std::is_polymorphic"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_polymorphic class", "is_polymorphic"]
 ms.assetid: 4e1704db-d6f9-4154-a100-0ba02a373f20

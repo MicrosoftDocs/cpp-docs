@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['future/std::future_errc', 'future/std::future_status', 'future/std::launch']
+f1_keywords: ["future/std::future_errc", "future/std::future_status", "future/std::launch"]
 ms.assetid: 8c675645-db47-4cab-bc0e-7b87f8a302df
 caps.latest.revision: 11
 manager: "ghogen"

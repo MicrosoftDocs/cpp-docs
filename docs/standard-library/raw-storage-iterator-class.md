@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['memory/std::raw_storage_iterator', 'memory/std::raw_storage_iterator::element_type', 'memory/std::raw_storage_iterator::iter_type']
+f1_keywords: ["memory/std::raw_storage_iterator", "memory/std::raw_storage_iterator::element_type", "memory/std::raw_storage_iterator::iter_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::raw_storage_iterator [C++]", "std::raw_storage_iterator [C++], element_type", "std::raw_storage_iterator [C++], iter_type"]
 ms.assetid: 6f033f15-f48e-452a-a326-647ea2cf346f

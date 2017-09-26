@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<iosfwd>", "<iosfwd>", "std.<iosfwd>']
+f1_keywords: ["<iosfwd>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iosfwd header"]
 ms.assetid: 964442eb-17f1-43ef-a0e0-c5bb77f9c187

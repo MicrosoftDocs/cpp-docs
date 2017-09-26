@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['thread/std::hash']
+f1_keywords: ["thread/std::hash"]
 dev_langs: ["C++"]
 ms.assetid: 4a8bf5bc-4334-4070-936b-98585f8a073b
 caps.latest.revision: 13

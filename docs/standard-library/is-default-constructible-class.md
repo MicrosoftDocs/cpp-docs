@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_default_constructible']
+f1_keywords: ["type_traits/std::is_default_constructible"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_default_constructible"]
 ms.assetid: dd8f1c44-dae5-4258-891f-c5e048d94092

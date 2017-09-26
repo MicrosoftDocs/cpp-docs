@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<cstddef>", "std::<cstddef>", "std.<cstddef>']
+f1_keywords: ["<cstddef>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cstddef header"]
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_arithmetic']
+f1_keywords: ["type_traits/std::is_arithmetic"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_arithmetic class", "is_arithmetic"]
 ms.assetid: ea427b7e-0141-4a04-848f-561054c53001

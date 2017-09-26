@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdext.cvt.<cvt/wstring>", "<cvt/wstring>", "stdext::cvt::<cvt/wstring>']
+f1_keywords: ["stdext.cvt.<cvt/wstring>", "<cvt/wstring>", "stdext::cvt::<cvt/wstring>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cvt/wstring header"]
 ms.assetid: d78b04bb-9ac0-4adb-8ffe-3aefb9b14c2d

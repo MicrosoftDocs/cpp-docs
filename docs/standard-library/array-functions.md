@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['array/std::array::get', 'array/std::get', 'array/std::swap']
+f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap"]
 dev_langs: ["C++"]
 ms.assetid: e0700a33-a833-4655-8735-16e71175efc8
 caps.latest.revision: 11

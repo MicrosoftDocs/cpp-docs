@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_fundamental']
+f1_keywords: ["type_traits/std::is_fundamental"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_fundamental class", "is_fundamental"]
 ms.assetid: b84eee84-2fb2-4611-beaf-b384074d8b6a

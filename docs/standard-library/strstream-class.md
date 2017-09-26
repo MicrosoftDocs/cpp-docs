@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['strstream/std::strstream::freeze', 'strstream/std::strstream::pcount', 'strstream/std::strstream::rdbuf', 'strstream/std::strstream::str']
+f1_keywords: ["strstream/std::strstream::freeze", "strstream/std::strstream::pcount", "strstream/std::strstream::rdbuf", "strstream/std::strstream::str"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::strstream [C++], freeze", "std::strstream [C++], pcount", "std::strstream [C++], rdbuf", "std::strstream [C++], str"]
 ms.assetid: 63f3be31-9e36-42b1-9715-a474a5997e2a

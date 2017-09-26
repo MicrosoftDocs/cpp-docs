@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::cache_chunklist', 'allocators/stdext::cache_chunklist::allocate', 'allocators/stdext::cache_chunklist::deallocate']
+f1_keywords: ["allocators/stdext::cache_chunklist", "allocators/stdext::cache_chunklist::allocate", "allocators/stdext::cache_chunklist::deallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::cache_chunklist", "stdext::cache_chunklist [C++], allocate", "stdext::cache_chunklist [C++], deallocate"]
 ms.assetid: af19eccc-4ae7-4a34-bbb2-81e397424cb9

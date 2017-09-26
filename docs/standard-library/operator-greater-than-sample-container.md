@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::operator>", "operator>", "std::>", ">']
+f1_keywords: ["std::operator>", "operator>", "std::>", ">"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["> operator, comparing specific objects", "operator >"]
 ms.assetid: 49bd417a-3305-4ffa-9884-39d3904ed87d

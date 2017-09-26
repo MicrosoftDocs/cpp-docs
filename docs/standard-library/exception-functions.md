@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['exception/std::current_exception', 'exception/std::get_terminate', 'exception/std::get_unexpected', 'exception/std::make_exception_ptr', 'exception/std::rethrow_exception', 'exception/std::set_terminate', 'exception/std::set_unexpected', 'exception/std::terminate', 'exception/std::uncaught_exception', 'exception/std::unexpected']
+f1_keywords: ["exception/std::current_exception", "exception/std::get_terminate", "exception/std::get_unexpected", "exception/std::make_exception_ptr", "exception/std::rethrow_exception", "exception/std::set_terminate", "exception/std::set_unexpected", "exception/std::terminate", "exception/std::uncaught_exception", "exception/std::unexpected"]
 ms.assetid: c09ac569-5e35-4fe8-872d-ca5810274dd7
 caps.latest.revision: 12
 manager: "ghogen"

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<bitset>", "<bitset>']
+f1_keywords: ["<bitset>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["<bitset> header", "bitset header"]
 ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['random/std::seed_seq', 'random/std::seed_seq::result_type', 'random/std::seed_seq::generate', 'random/std::seed_seq::size', 'random/std::seed_seq::param']
+f1_keywords: ["random/std::seed_seq", "random/std::seed_seq::result_type", "random/std::seed_seq::generate", "random/std::seed_seq::size", "random/std::seed_seq::param"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::seed_seq [C++]", "std::seed_seq [C++], result_type", "std::seed_seq [C++], generate", "std::seed_seq [C++], size", "std::seed_seq [C++], param"]
 ms.assetid: cba114f7-9ac6-4f2f-b773-9c84805401d6

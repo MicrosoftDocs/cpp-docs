@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS']
+f1_keywords: ["_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS"]
 ms.assetid: ef0ddea9-7c62-4b53-8b64-5f4fd369776f

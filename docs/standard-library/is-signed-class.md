@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_signed']
+f1_keywords: ["type_traits/std::is_signed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_signed class", "is_signed"]
 ms.assetid: 20ae44d9-22ad-4fbd-b26a-f18c62689451

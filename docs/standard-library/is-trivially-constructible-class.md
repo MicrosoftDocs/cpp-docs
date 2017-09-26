@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['type_traits/std::is_trivially_constructible']
+f1_keywords: ["type_traits/std::is_trivially_constructible"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_constructible"]
 ms.assetid: 3fa918c1-e66f-4d0e-a11b-be1fb2c02e7b

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['random/std::student_t_distribution', 'random/std::student_t_distribution::result_type', 'random/std::student_t_distribution::reset', 'random/std::student_t_distribution::operator()', 'random/std::student_t_distribution::n', 'random/std::student_t_distribution::param', 'random/std::student_t_distribution::min', 'random/std::student_t_distribution::max', 'random/std::student_t_distribution::param_type']
+f1_keywords: ["random/std::student_t_distribution", "random/std::student_t_distribution::result_type", "random/std::student_t_distribution::reset", "random/std::student_t_distribution::operator()", "random/std::student_t_distribution::n", "random/std::student_t_distribution::param", "random/std::student_t_distribution::min", "random/std::student_t_distribution::max", "random/std::student_t_distribution::param_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::student_t_distribution [C++]", "std::student_t_distribution [C++], result_type", "std::student_t_distribution [C++], reset", "std::student_t_distribution [C++], n", "std::student_t_distribution [C++], param", "std::student_t_distribution [C++], min", "std::student_t_distribution [C++], max", "std::student_t_distribution [C++], param_type"]
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1

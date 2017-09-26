@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['random/std::discard_block_engine']
+f1_keywords: ["random/std::discard_block_engine"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["discard_block_engine class"]
 ms.assetid: aa84808e-38fe-4fa0-9f73-d5b9a653345b

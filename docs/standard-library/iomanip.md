@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iomanip/std::<iomanip>", "std::<iomanip>", "<iomanip>", "std.<iomanip>']
+f1_keywords: ["iomanip/std::<iomanip>", "<iomanip>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iomanip header"]
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974

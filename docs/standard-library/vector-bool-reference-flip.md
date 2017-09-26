@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['vector/std::vector<bool>::reference::flip']
+f1_keywords: ["vector/std::vector<bool>::reference::flip"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reference::flip method"]
 ms.assetid: ef940365-cbe4-4a87-a3e2-1f3cfa357e29

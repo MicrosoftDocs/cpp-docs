@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<csignal>", "<csignal>", "std.<csignal>']
+f1_keywords: ["<csignal>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["csignal header"]
 ms.assetid: d18bcf82-a89a-476c-a6bf-726af956f7c0

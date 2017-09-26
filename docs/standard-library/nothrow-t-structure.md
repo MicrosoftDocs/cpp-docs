@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['nothrow_t']
+f1_keywords: ["nothrow_t"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["nothrow_t class"]
 ms.assetid: dc7d5d42-ed5a-4919-88fe-bbad519b7a1d
