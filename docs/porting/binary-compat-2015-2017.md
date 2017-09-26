@@ -12,7 +12,7 @@ dev_langs:
   - "C++"
 helpviewer_keywords: 
   - "binary compatibility, Visual C++"
-  ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
+ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
