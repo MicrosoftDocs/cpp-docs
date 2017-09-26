@@ -4,18 +4,43 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["_setenvp", "_setargv"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""command line, processing"", ""command-line processing"", ""startup code, customizing command-line processing"", ""environment, environment-processing routine"", ""_setargv function [C++]"", ""command line, processing arguments"", ""suppressing environment processing"", ""_setenvp function [C++]""]"]
+f1_keywords: 
+  - "_setenvp"
+  - "_setargv"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "command line, processing"
+  - "command-line processing"
+  - "startup code, customizing command-line processing"
+  - "environment, environment-processing routine"
+  - "_setargv function"
+  - "command line, processing arguments"
+  - "suppressing environment processing"
+  - "_setenvp function"
 ms.assetid: aae01cbb-892b-48b8-8e1f-34f22421f263
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Customizing C++ Command-Line Processing
 ## Microsoft Specific  

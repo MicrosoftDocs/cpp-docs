@@ -4,17 +4,37 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""ranges [C++], floating-point constants"", ""floating-point constants [C++], limits"", ""FLOAT.H header file"", ""limits, floating-point constants"", ""floating-point numbers, floating limits""]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ranges, floating-point constants"
+  - "floating-point constants, limits"
+  - "FLOAT.H header file"
+  - "limits, floating-point constants"
+  - "floating-point numbers, floating limits"
 ms.assetid: fc718652-1f4c-4ed8-af60-0e769637459c
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Floating Limits
 **Microsoft Specific**  

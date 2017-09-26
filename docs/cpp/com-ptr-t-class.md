@@ -4,18 +4,35 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["_com_ptr_t"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""_com_ptr_t class [C++]""]"]
+f1_keywords: 
+  - "_com_ptr_t"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_com_ptr_t class"
 ms.assetid: 3753a8a0-03d4-4cfd-8a9a-74872ea53971
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # _com_ptr_t Class
 **Microsoft Specific**  

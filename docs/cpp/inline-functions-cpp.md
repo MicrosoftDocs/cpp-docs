@@ -4,18 +4,40 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp", "__forceinline", "__inline", "inline"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""inline functions [C++], class members""]"]
+f1_keywords: 
+  - "__forceinline_cpp"
+  - "__inline_cpp"
+  - "inline_cpp"
+  - "__forceinline"
+  - "__inline"
+  - "inline"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "inline functions, class members"
 ms.assetid: 355f120c-2847-4608-ac04-8dda18ffe10c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Inline Functions (C++)
 A function defined in the body of a class declaration is an inline function.  

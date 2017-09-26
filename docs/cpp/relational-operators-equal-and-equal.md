@@ -4,18 +4,44 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["<", ">"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""> operator [C++]"", ""less than operator [C++]"", ""relational operators [C++], syntax"", "">= operator [C++]"", ""greater than or equal to operators [C++]"", ""greater than operators [C++]"", ""< operator [C++]"", ""less than or equal to operator [C++]"", ""<= operator [C++]""]"]
+f1_keywords: 
+  - "<"
+  - ">"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "> operator"
+  - "less than operator"
+  - "relational operators, syntax"
+  - ">= operator"
+  - "greater than or equal to operators"
+  - "greater than operators"
+  - "< operator"
+  - "less than or equal to operator"
+  - "<= operator"
 ms.assetid: d346b53d-f14d-4962-984f-89d39a17ca0f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Relational Operators: &lt;, &gt;, &lt;=, and &gt;=
 ## Syntax  

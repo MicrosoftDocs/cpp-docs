@@ -4,17 +4,38 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""no linkage [C++]"", ""linkage [C++], none"", ""linkage [C++], types of"", ""types [C++], linkage"", ""internal linkage, types of linkage"", ""external linkage, linkage types""]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "no linkage"
+  - "linkage [C++], none"
+  - "linkage [C++], types of"
+  - "types [C++], linkage"
+  - "internal linkage, types of linkage"
+  - "external linkage, linkage types"
 ms.assetid: 41326c7f-4602-4bad-a648-697604858ba0
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Types of Linkage
 The way the names of objects and functions are shared between translation units is called linkage. These names can have:  
