@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['functional/std::unary']
+f1_keywords: ["functional/std::unary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unary_function class"]
 ms.assetid: 04c2fbdc-c1f6-48ed-b6cc-292a6d484627

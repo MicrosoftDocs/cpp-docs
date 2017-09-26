@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_abstract']
+f1_keywords: ["type_traits/std::is_abstract"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_abstract class", "is_abstract"]
 ms.assetid: 8867f660-3434-404c-ba90-c26607a5e0d2

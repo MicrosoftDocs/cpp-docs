@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdexcept/std::out_of_range']
+f1_keywords: ["stdexcept/std::out_of_range"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["out_of_range class"]
 ms.assetid: d0e14dc0-065e-4666-9ac9-51e52223c503

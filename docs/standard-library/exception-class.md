@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['exception']
+f1_keywords: ["exception"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["exception class"]
 ms.assetid: 4f181f67-5888-4b50-89a6-745091ffb2fe

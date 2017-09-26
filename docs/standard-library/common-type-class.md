@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::common_type']
+f1_keywords: ["type_traits/std::common_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["common_type class", "common_type"]
 ms.assetid: 02bc4e7b-c63d-49de-9f8a-511d3a5c1e7f

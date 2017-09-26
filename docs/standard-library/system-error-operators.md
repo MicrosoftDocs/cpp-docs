@@ -6,9 +6,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["system_error/std::operator!=", "system_error/std::operator=="]    
-dev_langs:  
-  - "C++"  
+f1_keywords: ["system_error/std::operator!=", "system_error/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
 caps.latest.revision: 11
 manager: "ghogen"

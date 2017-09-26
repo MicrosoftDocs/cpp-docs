@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::logical_and'
+f1_keywords: ["xfunctional/std::logical_and"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["logical_and class", "logical_and struct"]
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610

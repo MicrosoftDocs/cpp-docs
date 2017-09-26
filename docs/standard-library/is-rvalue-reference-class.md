@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_rvalue_reference']
+f1_keywords: ["type_traits/std::is_rvalue_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_rvalue_reference class", "is_rvalue_reference"]
 ms.assetid: 40a97072-7b5c-4274-9154-298d3dcf064a

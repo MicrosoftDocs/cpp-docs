@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_standard_layout']
+f1_keywords: ["type_traits/std::is_standard_layout"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_standard_layout class", "is_standard_layout"]
 ms.assetid: 15ccf111-f537-45ef-b552-59152a7ba312

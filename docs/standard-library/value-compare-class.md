@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['value_compare']
+f1_keywords: ["value_compare"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["value_compare class"]
 ms.assetid: c306c5b9-3505-4357-aa6b-216451b951ed

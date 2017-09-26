@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['streambuf/std::ostreambuf_iterator', 'iterator/std::ostreambuf_iterator::char_type', 'iterator/std::ostreambuf_iterator::ostream_type', 'iterator/std::ostreambuf_iterator::streambuf_type', 'iterator/std::ostreambuf_iterator::traits_type', 'iterator/std::ostreambuf_iterator::failed']
+f1_keywords: ["streambuf/std::ostreambuf_iterator", "iterator/std::ostreambuf_iterator::char_type", "iterator/std::ostreambuf_iterator::ostream_type", "iterator/std::ostreambuf_iterator::streambuf_type", "iterator/std::ostreambuf_iterator::traits_type", "iterator/std::ostreambuf_iterator::failed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::ostreambuf_iterator [C++]", "std::ostreambuf_iterator [C++], char_type", "std::ostreambuf_iterator [C++], ostream_type", "std::ostreambuf_iterator [C++], streambuf_type", "std::ostreambuf_iterator [C++], traits_type", "std::ostreambuf_iterator [C++], failed"]
 ms.assetid: dad1e624-2f45-4e94-8887-a885e95f9071

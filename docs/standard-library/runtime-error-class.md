@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdexcept/std::runtime_error']
+f1_keywords: ["stdexcept/std::runtime_error"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["runtime_error class"]
 ms.assetid: 4d0227bf-847b-45a2-a320-2351ebf98368

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['mutex/std::mutex', 'mutex/std::mutex::mutex', 'mutex/std::mutex::lock', 'mutex/std::mutex::native_handle', 'mutex/std::mutex::try_lock', 'mutex/std::mutex::unlock']
+f1_keywords: ["mutex/std::mutex", "mutex/std::mutex::mutex", "mutex/std::mutex::lock", "mutex/std::mutex::native_handle", "mutex/std::mutex::try_lock", "mutex/std::mutex::unlock"]
 dev_langs: ["C++"]
 ms.assetid: 7999d055-f74f-4303-810f-8d3c9cde2f69
 caps.latest.revision: 11

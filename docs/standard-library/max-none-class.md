@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::max_none', 'allocators/stdext::max_none::allocated', 'allocators/stdext::max_none::deallocated', 'allocators/stdext::max_none::full', 'allocators/stdext::max_none::released', 'allocators/stdext::max_none::saved']
+f1_keywords: ["allocators/stdext::max_none", "allocators/stdext::max_none::allocated", "allocators/stdext::max_none::deallocated", "allocators/stdext::max_none::full", "allocators/stdext::max_none::released", "allocators/stdext::max_none::saved"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::max_none", "stdext::max_none [C++], allocated", "stdext::max_none [C++], deallocated", "stdext::max_none [C++], full", "stdext::max_none [C++], released", "stdext::max_none [C++], saved"]
 ms.assetid: 12ab5376-412e-479c-86dc-2c3d6a3559b6

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::make_unsigned']
+f1_keywords: ["type_traits/std::make_unsigned"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["make_unsigned class", "make_unsigned"]
 ms.assetid: 7a6a3c4f-1a4c-47e8-9ee2-ac1f7b669353

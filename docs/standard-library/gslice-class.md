@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['valarray/std::gslice', 'valarray/std::gslice::size', 'valarray/std::gslice::start', 'valarray/std::gslice::stride']
+f1_keywords: ["valarray/std::gslice", "valarray/std::gslice::size", "valarray/std::gslice::start", "valarray/std::gslice::stride"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::gslice [C++]", "std::gslice [C++], size", "std::gslice [C++], start", "std::gslice [C++], stride"]
 ms.assetid: f47cffd0-ea59-4b13-848b-7a5ce1d7e2a3

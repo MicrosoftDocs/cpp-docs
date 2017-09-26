@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_reference']
+f1_keywords: ["type_traits/std::is_reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_reference class", "is_reference"]
 ms.assetid: 3d9e631f-3092-430c-843e-e914ab58c257

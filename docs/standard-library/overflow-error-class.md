@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdexcept/std::overflow_error']
+f1_keywords: ["stdexcept/std::overflow_error"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["overflow_error class"]
 ms.assetid: bae7128d-e36b-4a45-84f1-2f89da441d20

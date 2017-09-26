@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['hash_set/std::swap', 'hash_set/std::swap (hash_multiset)']
+f1_keywords: ["hash_set/std::swap", "hash_set/std::swap (hash_multiset)"]
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
 caps.latest.revision: 7
 manager: "ghogen"

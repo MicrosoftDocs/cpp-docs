@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_same']
+f1_keywords: ["type_traits/std::is_same"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_same class", "is_same"]
 ms.assetid: d9df6c1d-c270-4ec2-802a-af275648dd1d

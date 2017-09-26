@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['vector/vector<bool>::reference']
+f1_keywords: ["vector/vector<bool>::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["vector<bool> reference class"]
 ms.assetid: f27854f9-0ef0-4e7e-ad2e-cd53b6cb3334

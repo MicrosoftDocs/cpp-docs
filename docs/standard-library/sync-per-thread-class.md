@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::sync_per_thread', 'allocators/stdext::sync_per_thread::allocate', 'allocators/stdext::sync_per_thread::deallocate', 'allocators/stdext::sync_per_thread::equals']
+f1_keywords: ["allocators/stdext::sync_per_thread", "allocators/stdext::sync_per_thread::allocate", "allocators/stdext::sync_per_thread::deallocate", "allocators/stdext::sync_per_thread::equals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::sync_per_thread", "stdext::sync_per_thread [C++], allocate", "stdext::sync_per_thread [C++], deallocate", "stdext::sync_per_thread [C++], equals"]
 ms.assetid: 47bf75f8-5b02-4760-b1d3-3099d08fe14c

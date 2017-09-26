@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/std::advance', 'iterator/std::back_inserter', 'iterator/std::begin', 'iterator/std::cbegin', 'iterator/std::cend', 'iterator/std::distance', 'iterator/std::end', 'iterator/std::front_inserter', 'iterator/std::inserter', 'iterator/std::make_checked_array_iterator', 'iterator/std::make_move_iterator', 'iterator/std::make_unchecked_array_iterator', 'iterator/std::next', 'iterator/std::prev']
+f1_keywords: ["xutility/std::advance", "xutility/std::back_inserter", "xutility/std::begin", "xutility/std::cbegin", "xutility/std::cend", "xutility/std::distance", "xutility/std::end", "xutility/std::front_inserter", "xutility/std::inserter", "xutility/std::make_checked_array_iterator", "xutility/std::make_move_iterator", "xutility/std::make_unchecked_array_iterator", "xutility/std::next", "xutility/std::prev"]
 ms.assetid: 4a57c9a3-7e36-411f-8655-e0be2eec88e7
 caps.latest.revision: 16
 manager: "ghogen"

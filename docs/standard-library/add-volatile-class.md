@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::add_volatile']
+f1_keywords: ["type_traits/std::add_volatile"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["add_volatile class", "add_volatile"]
 ms.assetid: cde57277-d764-402d-841e-97611ebaab14

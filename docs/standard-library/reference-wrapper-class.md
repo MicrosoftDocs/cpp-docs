@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['functional/std::reference_wrapper', 'type_traits/std::reference_wrapper', 'xrefwrap/std::reference_wrapper', 'type_traits/std::reference_wrapper::get', 'type_traits/std::reference_wrapper::operator()', 'functional/std::reference_wrapper::result_type', 'functional/std::reference_wrapper::type', 'functional/std::reference_wrapper::get', 'functional/std::reference_wrapper::operator()']
+f1_keywords: ["functional/std::reference_wrapper", "type_traits/std::reference_wrapper", "xrefwrap/std::reference_wrapper", "type_traits/std::reference_wrapper::get", "type_traits/std::reference_wrapper::operator()", "functional/std::reference_wrapper::result_type", "functional/std::reference_wrapper::type", "functional/std::reference_wrapper::get", "functional/std::reference_wrapper::operator()"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::reference_wrapper [C++]", "std::reference_wrapper [C++]", "std::reference_wrapper [C++], result_type", "std::reference_wrapper [C++], type", "std::reference_wrapper [C++], get"]
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a

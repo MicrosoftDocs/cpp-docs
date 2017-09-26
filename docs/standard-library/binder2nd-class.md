@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::binder2nd']
+f1_keywords: ["xfunctional/std::binder2nd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["binder2nd class"]
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d

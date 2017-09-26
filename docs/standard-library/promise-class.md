@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['future/std::promise', 'future/std::promise::promise', 'future/std::promise::get_future', 'future/std::promise::set_exception', 'future/std::promise::set_exception_at_thread_exit', 'future/std::promise::set_value', 'future/std::promise::set_value_at_thread_exit', 'future/std::promise::swap']
+f1_keywords: ["future/std::promise", "future/std::promise::promise", "future/std::promise::get_future", "future/std::promise::set_exception", "future/std::promise::set_exception_at_thread_exit", "future/std::promise::set_value", "future/std::promise::set_value_at_thread_exit", "future/std::promise::swap"]
 dev_langs: ["C++"]
 ms.assetid: 2931558c-d94a-4ba1-ac4f-20bf7b6e23f9
 caps.latest.revision: 15

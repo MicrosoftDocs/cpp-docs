@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_nothrow_move_constructible']
+f1_keywords: ["type_traits/std::is_nothrow_move_constructible"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_nothrow_move_constructible"]
 ms.assetid: d186d97b-7b89-470a-8d30-993046a83379

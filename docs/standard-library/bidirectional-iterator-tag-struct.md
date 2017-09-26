@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xutility/std::bidirectional_iterator_tag'
+f1_keywords: ["xutility/std::bidirectional_iterator_tag"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["bidirectional_iterator_tag class", "bidirectional_iterator_tag struct"]
 ms.assetid: 9ac06066-b8ae-44b6-bee4-b05855f6a31a

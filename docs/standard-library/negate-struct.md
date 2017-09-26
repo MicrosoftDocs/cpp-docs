@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::negate']
+f1_keywords: ["xfunctional/std::negate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["negate struct", "negate class"]
 ms.assetid: 8a372686-786e-4262-b37c-ca13dc11e62f

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdexcept/std::underflow_error'
+f1_keywords: ["stdexcept/std::underflow_error"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["underflow_error class"]
 ms.assetid: d632f1f9-9c6c-4954-b96b-03041bfab22d

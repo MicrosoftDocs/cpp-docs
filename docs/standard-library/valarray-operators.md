@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['valarray/std::operator!=', 'valarray/std::operator%', 'valarray/std::operator&amp;', 'valarray/std::operator&amp;&amp;', 'valarray/std::operator&gt;', 'valarray/std::operator&gt;&gt;', 'valarray/std::operator&gt;=', 'valarray/std::operator&lt;', 'valarray/std::operator&lt;&lt;', 'valarray/std::operator&lt;=', 'valarray/std::operator*', 'valarray/std::operator+', 'valarray/std::operator-', 'valarray/std::operator/', 'valarray/std::operator==', 'valarray/std::operator^', 'valarray/std::operator|', 'valarray/std::operator||']
+f1_keywords: ["valarray/std::operator!=", "valarray/std::operator%", "valarray/std::operator&amp;", "valarray/std::operator&amp;&amp;", "valarray/std::operator&gt;", "valarray/std::operator&gt;&gt;", "valarray/std::operator&gt;=", "valarray/std::operator&lt;", "valarray/std::operator&lt;&lt;", "valarray/std::operator&lt;=", "valarray/std::operator*", "valarray/std::operator+", "valarray/std::operator-", "valarray/std::operator/", "valarray/std::operator==", "valarray/std::operator^", "valarray/std::operator|", "valarray/std::operator||"]
 dev_langs: ["C++"]
 ms.assetid: 8a53562c-90ab-4eb3-85d3-ada5259d90b0
 caps.latest.revision: 8

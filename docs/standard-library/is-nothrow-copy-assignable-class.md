@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_nothrow_copy_assignable']
+f1_keywords: ["type_traits/std::is_nothrow_copy_assignable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_nothrow_copy_assignable"]
 ms.assetid: baa8abd6-4f53-489f-abba-8d5d5c53bbbc

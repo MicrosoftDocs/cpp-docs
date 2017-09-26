@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['_SCL_SECURE_NO_DEPRECATE']
+f1_keywords: ["_SCL_SECURE_NO_DEPRECATE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library"]
 ms.assetid: 3993340f-1f29-4d81-b3f5-52a52bc8e148

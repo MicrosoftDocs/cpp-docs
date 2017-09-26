@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['tuple/std::get', 'tuple/std::make_tuple', 'tuple/std::tie', 'tuple/std::get', 'tuple/std::make_tuple', 'tuple/std::tie']
+f1_keywords: ["tuple/std::get", "tuple/std::make_tuple", "tuple/std::tie", "tuple/std::get", "tuple/std::make_tuple", "tuple/std::tie"]
 dev_langs: ["C++"]
 ms.assetid: bc6be38f-5258-4c14-b81b-63caa335fd44
 caps.latest.revision: 13

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['typeindex/std::type_index']
+f1_keywords: ["typeindex/std::type_index"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["type_index class"]
 ms.assetid: db366119-74cb-43e8-aacf-9679e561fa2f

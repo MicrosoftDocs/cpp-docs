@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['fstream/std::basic_ifstream', 'fstream/std::basic_ifstream::close', 'fstream/std::basic_ifstream::is_open', 'fstream/std::basic_ifstream::open', 'fstream/std::basic_ifstream::rdbuf', 'fstream/std::basic_ifstream::swap']
+f1_keywords: ["fstream/std::basic_ifstream", "fstream/std::basic_ifstream::close", "fstream/std::basic_ifstream::is_open", "fstream/std::basic_ifstream::open", "fstream/std::basic_ifstream::rdbuf", "fstream/std::basic_ifstream::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_ifstream [C++]", "std::basic_ifstream [C++], close", "std::basic_ifstream [C++], is_open", "std::basic_ifstream [C++], open", "std::basic_ifstream [C++], rdbuf", "std::basic_ifstream [C++], swap"]
 ms.assetid: 366cd9a7-efc4-4b7f-ba10-c8271e47ffcf

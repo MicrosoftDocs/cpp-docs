@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<limits>", "limits/std::<limits>", "<limits>']
+f1_keywords: ["limits/std::<limits>", "<limits>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["limits header"]
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['type_traits/std::is_trivially_copyable']
+f1_keywords: ["type_traits/std::is_trivially_copyable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_copyable"]
 ms.assetid: 89a53bf8-036c-4108-91e1-fe34adbde8b3

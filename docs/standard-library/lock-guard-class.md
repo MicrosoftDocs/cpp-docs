@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['mutex/std::lock_guard', 'mutex/std::lock_guard::lock_guard']
+f1_keywords: ["mutex/std::lock_guard", "mutex/std::lock_guard::lock_guard"]
 dev_langs: ["C++"]
 ms.assetid: 57121f0d-9c50-481c-b971-54e64df864e0
 caps.latest.revision: 9

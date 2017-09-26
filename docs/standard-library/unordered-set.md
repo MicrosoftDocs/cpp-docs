@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<unordered_set>']
+f1_keywords: ["<unordered_set>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unordered_set header"]
 ms.assetid: a3364d54-147d-4796-8728-9e62a2e4c226

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['strstream/std::istrstream::rdbuf', 'strstream/std::istrstream::str']
+f1_keywords: ["strstream/std::istrstream::rdbuf", "strstream/std::istrstream::str"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["istrstream class"]
 ms.assetid: c2d41c75-bd2c-4437-bd77-5939ce1b97af

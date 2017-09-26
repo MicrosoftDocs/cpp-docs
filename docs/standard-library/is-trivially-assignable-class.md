@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['type_traits/std::is_trivially_assignable']
+f1_keywords: ["type_traits/std::is_trivially_assignable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_assignable"]
 ms.assetid: 1284a8f7-4093-426d-9c9a-dabb46f90d6d

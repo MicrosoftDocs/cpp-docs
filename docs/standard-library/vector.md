@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<vector>", "std::<vector>']
+f1_keywords: ["<vector>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["vector header"]
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std.swap", "std::swap", "swap']
+f1_keywords: ["std.swap", "std::swap", "swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["swap function"]
 ms.assetid: d8dd6436-fb97-46ed-bec5-052cfd710462

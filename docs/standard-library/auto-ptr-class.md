@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['memory/std::auto_ptr', 'memory/std::auto_ptr::element_type', 'memory/std::auto_ptr::get', 'memory/std::auto_ptr::release', 'memory/std::auto_ptr::reset']
+f1_keywords: ["memory/std::auto_ptr", "memory/std::auto_ptr::element_type", "memory/std::auto_ptr::get", "memory/std::auto_ptr::release", "memory/std::auto_ptr::reset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::auto_ptr [C++]", "std::auto_ptr [C++], element_type", "std::auto_ptr [C++], get", "std::auto_ptr [C++], release", "std::auto_ptr [C++], reset"]
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
