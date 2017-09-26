@@ -4,17 +4,38 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""objects [C++], destroying"", ""Visual C++, destructors"", ""destroying objects, destructors"", ""~ operator [C++], specifying destructors"", ""destructors, about destructors"", ""destructors, C++""]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "objects [C++], destroying"
+  - "Visual C++, destructors"
+  - "destroying objects, destructors"
+  - "~ operator, specifying destructors"
+  - "destructors, about destructors"
+  - "destructors, C++"
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Destructors (C++)
 A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to `delete`. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`. 

@@ -4,17 +4,42 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""scope, scope resolution operator"", ""operators [C++], scope resolution"", ""scope resolution operator [C++]"", "":: operator [C++]""]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "argument passing [C++], conventions"
+  - "arguments [C++], widening"
+  - "coding conventions, arguments"
+  - "arguments [C++], passing"
+  - "registers, return values"
+  - "thiscall keyword [C++]"
+  - "naming conventions [C++], arguments"
+  - "arguments [C++], naming"
+  - "passing arguments, conventions"
+  - "conventions [C++], argument names"
 ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Argument Passing and Naming Conventions
 **Microsoft Specific**  

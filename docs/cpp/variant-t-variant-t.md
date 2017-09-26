@@ -4,18 +4,37 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: []
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""_variant_t class, constructor"", ""_variant_t method [C++]""]"]
+f1_keywords: 
+  - "_variant_t::_variant_t"
+  - "_variant_t._variant_t"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_variant_t class, constructor"
+  - "_variant_t method"
 ms.assetid: a50e5b33-d4c6-4a26-8e7e-a0a25fd9895b
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # _variant_t::_variant_t
 **Microsoft Specific**  

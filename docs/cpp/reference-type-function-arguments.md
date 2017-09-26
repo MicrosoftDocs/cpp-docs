@@ -4,17 +4,37 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""arguments [C++], function"", ""functions [C++], paramters"", ""function parameters, reference-type"", ""function arguments, reference-type"", ""passing parameters, reference-type arguments""]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "arguments [C++], function"
+  - "functions [C++], paramters"
+  - "function parameters, reference-type"
+  - "function arguments, reference-type"
+  - "passing parameters, reference-type arguments"
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Reference-Type Function Arguments
 It is often more efficient to pass references, rather than large objects, to functions. This allows the compiler to pass the address of the object while maintaining the syntax that would have been used to access the object. Consider the following example that uses the `Date` structure:  

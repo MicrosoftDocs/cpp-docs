@@ -4,18 +4,37 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology:  
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["thread_local_cpp", "external_cpp", "static_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["[""storage classes [C++], basic concepts""]"]
+f1_keywords: 
+  - "thread_local_cpp"
+  - "external_cpp"
+  - "static_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "storage classes, basic concepts"
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
+translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
 # Storage classes (C++)  
   
