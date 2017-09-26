@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::aligned_union']
+f1_keywords: ["type_traits/std::aligned_union"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_union"]
 ms.assetid: 9931a44d-3a67-4f29-a0f6-d47a7cf560ac

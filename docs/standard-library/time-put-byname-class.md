@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xloctime/std::time_put_byname']
+f1_keywords: ["xloctime/std::time_put_byname"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["time_put_byname class"]
 ms.assetid: e08c2348-64d2-4ace-98b1-1496e14c7b1a

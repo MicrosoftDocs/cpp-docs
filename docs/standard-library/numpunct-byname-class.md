@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocnum/std::numpunct_byname']
+f1_keywords: ["xlocnum/std::numpunct_byname"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["numpunct_byname class"]
 ms.assetid: 18412924-e085-4771-b5e9-7a200cbdd7c0

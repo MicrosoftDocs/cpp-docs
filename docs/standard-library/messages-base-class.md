@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['locale/std::messages_base']
+f1_keywords: ["xlocmes/std::messages_base"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["messages_base class"]
 ms.assetid: 9aad38c6-4c13-445d-b096-364bd0836efb

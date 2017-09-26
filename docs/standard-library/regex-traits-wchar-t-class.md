@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['regex/std::regex_traits<wchar_t>']
+f1_keywords: ["regex/std::regex_traits<wchar_t>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["regex_traits<wchar_t> class"]
 ms.assetid: 288d6fdb-fb8e-4a4d-904a-53916be7f95b

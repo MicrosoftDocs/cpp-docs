@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::sync_shared', 'allocators/stdext::sync_shared::allocate', 'allocators/stdext::sync_shared::deallocate', 'allocators/stdext::sync_shared::equals']
+f1_keywords: ["allocators/stdext::sync_shared", "allocators/stdext::sync_shared::allocate", "allocators/stdext::sync_shared::deallocate", "allocators/stdext::sync_shared::equals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::sync_shared", "stdext::sync_shared [C++], allocate", "stdext::sync_shared [C++], deallocate", "stdext::sync_shared [C++], equals"]
 ms.assetid: cab3af9e-3d1a-4f2c-8580-0f89e5687d8e

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<stack>", "<stack>']
+f1_keywords: ["<stack>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stack, stack header", "stack header"]
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1

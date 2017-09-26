@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['queue/std::queue::container_type', 'queue/std::queue::size_type', 'queue/std::queue::value_type', 'queue/std::queue::back', 'queue/std::queue::empty', 'queue/std::queue::front', 'queue/std::queue::pop', 'queue/std::queue::push', 'queue/std::queue::size']
+f1_keywords: ["queue/std::queue::container_type", "queue/std::queue::size_type", "queue/std::queue::value_type", "queue/std::queue::back", "queue/std::queue::empty", "queue/std::queue::front", "queue/std::queue::pop", "queue/std::queue::push", "queue/std::queue::size"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::queue [C++], container_type", "std::queue [C++], size_type", "std::queue [C++], value_type", "std::queue [C++], back", "std::queue [C++], empty", "std::queue [C++], front", "std::queue [C++], pop", "std::queue [C++], push", "std::queue [C++], size"]
 ms.assetid: 28c20ab0-3a72-4185-9e0f-5a44eea0e204

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['utility/std::identity'
+f1_keywords: ["utility/std::identity"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["identity class", "identity structure"]
 ms.assetid: 990756fd-7969-4b39-ad7e-0878e8dac8fd

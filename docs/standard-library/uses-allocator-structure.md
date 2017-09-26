@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['future/std::uses_allocator']
+f1_keywords: ["future/std::uses_allocator"]
 dev_langs: ["C++"]
 ms.assetid: c418f002-62e9-4806-b70c-41c663cae583
 caps.latest.revision: 13

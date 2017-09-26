@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['valarray/std::abs', 'valarray/std::acos', 'valarray/std::asin', 'valarray/std::atan', 'valarray/std::atan2', 'valarray/std::cos', 'valarray/std::cosh', 'valarray/std::exp', 'valarray/std::log', 'valarray/std::log10', 'valarray/std::pow', 'valarray/std::sin', 'valarray/std::sinh', 'valarray/std::sqrt', 'valarray/std::swap', 'valarray/std::tan', 'valarray/std::tanh']
+f1_keywords: ["valarray/std::abs", "valarray/std::acos", "valarray/std::asin", "valarray/std::atan", "valarray/std::atan2", "valarray/std::cos", "valarray/std::cosh", "valarray/std::exp", "valarray/std::log", "valarray/std::log10", "valarray/std::pow", "valarray/std::sin", "valarray/std::sinh", "valarray/std::sqrt", "valarray/std::swap", "valarray/std::tan", "valarray/std::tanh"]
 ms.assetid: 109778fc-440e-4239-b23e-bafda2b165c2
 caps.latest.revision: 12
 manager: "ghogen"

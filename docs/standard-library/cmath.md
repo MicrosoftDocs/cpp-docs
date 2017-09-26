@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<cmath>", "<cmath>", "std.<cmath>']
+f1_keywords: ["<cmath>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cmath header"]
 ms.assetid: 80df1dba-60ca-4918-9c2e-fbf446eaa7d6

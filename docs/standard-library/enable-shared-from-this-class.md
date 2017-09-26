@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['memory/std::enable_shared_from_this']
+f1_keywords: ["memory/std::enable_shared_from_this"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["enable_shared_from_this class", "enable_shared_from_this"]
 ms.assetid: 9237603d-22e2-421f-b070-838ac006baf5

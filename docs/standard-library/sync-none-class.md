@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['allocators/stdext::sync_none', 'allocators/stdext::sync_none::allocate', 'allocators/stdext::sync_none::deallocate', 'allocators/stdext::sync_none::equals']
+f1_keywords: ["allocators/stdext::sync_none", "allocators/stdext::sync_none::allocate", "allocators/stdext::sync_none::deallocate", "allocators/stdext::sync_none::equals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::sync_none", "stdext::sync_none [C++], allocate", "stdext::sync_none [C++], deallocate", "stdext::sync_none [C++], equals"]
 ms.assetid: f7473cee-14f3-4fe1-88bc-68cd085e59e1

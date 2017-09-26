@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/std::front_insert_iterator', 'iterator/std::front_insert_iterator::container_type', 'iterator/std::front_insert_iterator::reference']
+f1_keywords: ["iterator/std::front_insert_iterator", "iterator/std::front_insert_iterator::container_type", "iterator/std::front_insert_iterator::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::front_insert_iterator [C++]", "std::front_insert_iterator [C++], container_type", "std::front_insert_iterator [C++], reference"]
 ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c

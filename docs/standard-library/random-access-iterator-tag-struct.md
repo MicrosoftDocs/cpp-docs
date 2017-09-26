@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xutility/std::random_access_iterator_tag'
+f1_keywords: ["xutility/std::random_access_iterator_tag"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["random_access_iterator_tag class", "random_access_iterator_tag struct"]
 ms.assetid: 59f5b741-c5b4-459c-ad0a-3b67cddeea23

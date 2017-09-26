@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xlocmon/std::moneypunct_byname'
+f1_keywords: ["xlocmon/std::moneypunct_byname"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["moneypunct_byname class"]
 ms.assetid: e8a544d2-6aee-420d-b513-deb385c9b416

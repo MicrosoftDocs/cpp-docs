@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::add_pointer']
+f1_keywords: ["type_traits/std::add_pointer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["add_pointer class", "add_pointer"]
 ms.assetid: d8095cb0-6578-4143-b78f-87f82485298c

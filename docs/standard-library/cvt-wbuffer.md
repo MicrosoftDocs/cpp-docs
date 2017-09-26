@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['stdext.cvt.<cvt/wbuffer>", "stdext::cvt::<cvt/wbuffer>", "<cvt/wbuffer>']
+f1_keywords: ["stdext.cvt.<cvt/wbuffer>", "stdext::cvt::<cvt/wbuffer>", "<cvt/wbuffer>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cvt/wbuffer header"]
 ms.assetid: 6e6eb44c-1bc4-4d8c-a4bd-b39c753ce725

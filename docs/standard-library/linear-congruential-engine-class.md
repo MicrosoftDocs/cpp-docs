@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['random/std::linear_congruential_engine']
+f1_keywords: ["random/std::linear_congruential_engine"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["linear_congruential_engine class"]
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1

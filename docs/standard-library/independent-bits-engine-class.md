@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['random/std::independent_bits_engine']
+f1_keywords: ["random/std::independent_bits_engine"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["independent_bits_engine class"]
 ms.assetid: 889e9a82-f457-49a7-9d2e-26e0fc3cd907

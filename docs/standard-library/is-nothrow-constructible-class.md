@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['type_traits/std::is_nothrow_constructible']
+f1_keywords: ["type_traits/std::is_nothrow_constructible"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_nothrow_constructible"]
 ms.assetid: 8be3f927-283e-4d67-95a5-8bf5dc4e7a3d

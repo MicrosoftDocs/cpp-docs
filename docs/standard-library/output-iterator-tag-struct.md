@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xutility/std::output_iterator_tag']
+f1_keywords: ["xutility/std::output_iterator_tag"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["output_iterator_tag class", "output_iterator_tag struct"]
 ms.assetid: c23a4331-b069-4fa0-9c3a-1c9be7095553

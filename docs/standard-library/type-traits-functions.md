@@ -6,11 +6,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_assignable', 'type_traits/std::is_copy_assignable', 'type_traits/std::is_copy_constructible', 'type_traits/std::is_default_constructible', 'type_traits/std::is_move_assignable', 'type_traits/std::is_move_constructible', 'type_traits/std::is_nothrow_move_assignable', 'type_traits/std::is_trivially_copy_assignable', 'type_traits/std::is_trivially_move_assignable', 'type_traits/std::is_trivially_move_constructible']
+f1_keywords: ["type_traits/std::is_assignable", "type_traits/std::is_copy_assignable", "type_traits/std::is_copy_constructible", "type_traits/std::is_default_constructible", "type_traits/std::is_move_assignable", "type_traits/std::is_move_constructible", "type_traits/std::is_nothrow_move_assignable", "type_traits/std::is_trivially_copy_assignable", "type_traits/std::is_trivially_move_assignable", "type_traits/std::is_trivially_move_constructible"]
 ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec
 caps.latest.revision: 13
 manager: "ghogen"
-helpviewer_keywords: [", ", ", ", ", ", ", ", 
+helpviewer_keywords: [", ", ", ", ", ", ", ",
 ---
 # &lt;type_traits&gt; functions
 ||||  

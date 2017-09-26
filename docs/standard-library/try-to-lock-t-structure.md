@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['mutex/std::try_to_lock_t']
+f1_keywords: ["mutex/std::try_to_lock_t"]
 dev_langs: ["C++"]
 ms.assetid: 3e48d632-0387-4871-8257-34efef5d6b83
 caps.latest.revision: 13

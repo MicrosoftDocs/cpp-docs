@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['tuple_size", "std::tuple_size", "utility/std::tuple_size']
+f1_keywords: ["tuple_size", "std::tuple_size", "utility/std::tuple_size"]
 dev_langs: ["C++"]
 helpviewer_keywords: [", "]
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a

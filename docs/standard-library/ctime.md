@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<ctime>", "std::<ctime>']
+f1_keywords: ["<ctime>", "std::<ctime>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ctime header"]
 ms.assetid: c1f7d4a4-4bfe-4e35-92cb-f63dbd3c39a8

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<deque>", "<deque>", "std.<deque>']
+f1_keywords: ["<deque>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["deque header"]
 ms.assetid: 4521fe92-5a91-4853-9e9f-59600bf9e46f

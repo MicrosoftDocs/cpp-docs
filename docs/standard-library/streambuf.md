@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<streambuf>", "<streambuf>", "streambuf/std::<streambuf>", "std.<streambuf>']
+f1_keywords: ["<streambuf>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["streambuf header"]
 ms.assetid: 4365b25c-5831-488b-b9c2-867bfe961b89

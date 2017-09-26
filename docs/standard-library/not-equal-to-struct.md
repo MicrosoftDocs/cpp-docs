@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::not_equal_to']
+f1_keywords: ["xfunctional/std::not_equal_to"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["not_equal_to function", "not_equal_to struct"]
 ms.assetid: 333fce09-4f51-44e0-ba26-533bccffd485

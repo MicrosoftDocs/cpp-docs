@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['istream/std::<istream>", "<istream>", "std::<istream>']
+f1_keywords: ["istream/std::<istream>", "<istream>", "std::<istream>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["istream header"]
 ms.assetid: efcf24e4-05d1-4719-ab0b-9e7ebe845d89

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::is_compound']
+f1_keywords: ["type_traits/std::is_compound"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_compound class", "is_compound"]
 ms.assetid: bdad1167-cf3f-4f37-8321-62a5df159ead

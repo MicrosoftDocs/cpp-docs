@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['system_error/std::is_error_condition_enum']
+f1_keywords: ["system_error/std::is_error_condition_enum"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["is_error_condition_enum class"]
 ms.assetid: 752bb87a-c61c-4304-9254-5aaf228b59c0

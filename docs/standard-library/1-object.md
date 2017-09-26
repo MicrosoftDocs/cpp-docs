@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['_1', 'std::_1', 'functional/std::_1']
+f1_keywords: ["_1", "std::_1", "functional/std::_1"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_1 object"]
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9

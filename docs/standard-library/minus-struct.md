@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::minus']
+f1_keywords: ["xfunctional/std::minus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["minus struct", "minus class"]
 ms.assetid: 7bce784e-2be6-413a-b516-004e9ecb2a39

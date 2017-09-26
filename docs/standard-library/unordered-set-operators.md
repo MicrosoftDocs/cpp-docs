@@ -6,9 +6,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["unordered_set/std::operator!=", "unordered_set/std::operator=="]   
-dev_langs:  
-  - "C++"  
+f1_keywords: ["unordered_set/std::operator!=", "unordered_set/std::operator=="]
+dev_langs: ["C++"]
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
 caps.latest.revision: 7
 manager: "ghogen"

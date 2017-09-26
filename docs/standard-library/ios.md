@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['std::<ios>", "<ios>", "ios/std::<ios>']
+f1_keywords: ["<ios>", "ios/std::<ios>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ios header"]
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c

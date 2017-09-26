@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::logical_not']
+f1_keywords: ["xfunctional/std::logical_not"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["logical_not class", "logical_not struct"]
 ms.assetid: 892db678-31da-4540-974b-17b05efc0849

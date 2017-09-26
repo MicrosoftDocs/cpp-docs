@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['<csetjmp>", "std::<csetjmp>", "std.<csetjmp>']
+f1_keywords: ["<csetjmp>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["csetjmp header"]
 ms.assetid: 8f21fddd-5e9b-4219-a848-581cdd3569d9

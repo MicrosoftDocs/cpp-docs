@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::less']
+f1_keywords: ["xfunctional/std::less"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["less struct", "less function"]
 ms.assetid: 39349da3-11cd-4774-b2cc-b46af5aae5d7

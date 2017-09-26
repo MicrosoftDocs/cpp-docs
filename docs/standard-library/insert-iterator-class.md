@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['iterator/std::insert_iterator', 'iterator/std::insert_iterator::container_type', 'iterator/std::insert_iterator::reference']
+f1_keywords: ["iterator/std::insert_iterator", "iterator/std::insert_iterator::container_type", "iterator/std::insert_iterator::reference"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::insert_iterator [C++]", "std::insert_iterator [C++], container_type", "std::insert_iterator [C++], reference"]
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221

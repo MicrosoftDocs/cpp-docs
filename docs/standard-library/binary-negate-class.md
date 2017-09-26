@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['xfunctional/std::binary_negate'
+f1_keywords: ["xfunctional/std::binary_negate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["binary_negate class"]
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65

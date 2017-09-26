@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['tuple_element", "std::tuple_element", "utility/std::tuple_element']
+f1_keywords: ["tuple_element", "std::tuple_element", "utility/std::tuple_element"]
 dev_langs: ["C++"]
 helpviewer_keywords: [", "]
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c

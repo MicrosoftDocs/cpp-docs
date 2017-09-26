@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['type_traits/std::remove_pointer']
+f1_keywords: ["type_traits/std::remove_pointer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["remove_pointer class", "remove_pointer"]
 ms.assetid: 2cd4e417-32fb-4f53-bd16-4e8a98240832

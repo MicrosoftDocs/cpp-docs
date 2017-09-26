@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['filesystem/std::tr2::sys::space_info']
+f1_keywords: ["filesystem/std::tr2::sys::space_info"]
 dev_langs: ["C++"]
 ms.assetid: f2b35b42-06ff-45bd-8617-39a0f5358a54
 caps.latest.revision: 13
