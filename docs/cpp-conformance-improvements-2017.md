@@ -80,6 +80,14 @@ For more information, see [Construction Rules for enum class Values ](http://www
 
 For the complete list of conformance improvements up through Visual Studio 2015, Update 3, see [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/en-us/library/mt723604.aspx).
 
+**Visual Studio 2017 version 15.5**:@@@@@
+
+**std::tr1 deprecated** The non-Standard std::tr1 namespace is now marked as deprecated (in both C++14 and C++17 modes). For more information, see [std::tr1 namespace is deprecated](#tr1).
+
+**Annex D features deprecated** When the std:C++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
+
+**New compiler switch for extern constexpr** In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, a new compiler switch (/Zc:externConstexpr) enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
+
 ## Bug fixes
 ### Copy-list-initialization
 Visual Studio 2017 correctly raises compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior. As per N4594 13.3.1.7p1, in copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen. 
@@ -710,6 +718,313 @@ struct A
 To fix the problem arrange the intializer list to have the same order as the declarations. A similar warning is raised when one or both initializers refer to base class members.
 
 Note that the warning is off-by-default and only affects code compiled with /Wall.
+
+## <a name="update_155"></a> Bug fixes in Visual Studio 2017 version 15.5
+### Partial Ordering Change
+
+The compiler now correctly rejects the following code and gives the correct error message.
+
+
+```cpp
+
+template<typename... T>
+int f(T* ...)
+{
+	return 1;
+}
+
+template<typename T>
+int f(const T&)
+{
+	return 2;
+}
+
+int main()
+{
+	int i = 0;
+	f(&i);    // C2668
+}
+```
+```output
+t161.cpp
+t161.cpp(16): error C2668: 'f': ambiguous call to overloaded function
+t161.cpp(8): note: could be 'int f<int*>(const T &)'
+        with
+        [
+            T=int*
+        ]
+t161.cpp(2): note: or       'int f<int>(int*)'
+t161.cpp(16): note: while trying to match the argument list '(int*)'
+``` 
+The problem in the example above is that there are two differences in the types (const vs non-const and pack vs non-pack). To eliminate the compiler error, remove one of the differences which then lets the compiler unambiguously order the functions.
+
+```cpp
+template<typename... T>
+int f(T* ...)
+{
+	return 1;
+}
+
+template<typename T>
+int f(T&)
+{
+	return 2;
+}
+
+int main()
+{
+	int i = 0;
+	f(&i);
+}
+```
+
+
+### Exception handlers
+Handlers of reference to array or function type are never a match for any exception object. The compiler now correctly honors this. It also no longer matches a handler of 'char*' or 'wchar_t*' to a string literal when /Zc:strictStrings is used.
+
+```cpp
+int main()
+{
+	try {
+		throw "";
+	}
+	catch (int (&)[1]) {} // C4843 (This should always be dead code.)
+	catch (void (&)()) {} // C4843 (This should always be dead code.)
+	catch (char*) {} // this should not be a match under /Zc:strictStrings
+}
+```
+
+```output
+warning C4843: 'int (&)[1]': An exception handler of reference to array or function type is unreachable, use 'int*' instead
+warning C4843: 'void (__cdecl &)(void)': An exception handler of reference to array or function type is unreachable, use 'void (__cdecl*)(void)' instead
+```
+The following code avoids the error:
+
+```cpp
+int main()
+{
+	try {
+		throw "";
+	}
+	catch (int (*)[1]) {}
+	catch (void (*)()) {}
+	catch (const char*) {}
+}
+```
+
+### <a name="tr1"></a>std::tr1 namespace is deprecated
+The non-Standard std::tr1 namespace is now marked as deprecated (in both C++14 and C++17 modes).
+
+In Visual Studio version 15.5, the following code raises C4996:
+
+```cpp
+#include <functional>
+#include <iostream>
+using namespace std;
+
+int main() {
+    std::tr1::function<int (int, int)> f = std::plus<int>(); //C4996
+    cout << f(3, 5) << std::endl;
+    f = std::multiplies<int>();
+    cout << f(3, 5) << std::endl;
+}
+```
+
+```output
+warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
+```
+
+To avoid the error, remove the reference to the tr1 namespace:
+
+```cpp
+#include <functional>
+#include <iostream>
+using namespace std;
+
+int main() {
+    std::function<int (int, int)> f = std::plus<int>();
+    cout << f(3, 5) << std::endl;
+    f = std::multiplies<int>();
+    cout << f(3, 5) << std::endl;
+}
+```
+
+
+### <a name="annex_d"></a>Standard Library features in Annex D are marked as deprecated.
+When the std:C++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated.
+
+In Visual Studio version 15.5, the following code raises C4996:
+
+```cpp
+#include <iterator>
+
+class MyIter : public std::iterator<std::random_access_iterator_tag, int> {
+public:
+    // ... other members ...
+};
+
+#include <type_traits>
+
+static_assert(std::is_same<MyIter::pointer, int*>::value, "BOOM");
+```
+
+```output
+warning C4996: 'std::iterator<std::random_access_iterator_tag,int,ptrdiff_t,_Ty*,_Ty &>::pointer': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to acknowledge that you have received this warning.
+```
+
+To fix the error, follow the instructions in the warning text, as demonstrated in the following code:
+
+```cpp
+#include <iterator>
+
+class MyIter {
+public:
+    typedef std::random_access_iterator_tag iterator_category;
+    typedef int value_type;
+    typedef ptrdiff_t difference_type;
+    typedef int* pointer;
+    typedef int& reference;
+
+    // ... other members ...
+};
+
+#include <type_traits>
+
+static_assert(std::is_same<MyIter::pointer, int*>::value, "BOOM");
+```
+
+### Unreferenced local variables
+In Visual Studio 15.5, warning C4189 is emitted in more cases, as shown in the following code:
+
+```cpp
+void f() {
+	char s[2] = {0}; // C4189. Either use the variable or remove it.
+}
+
+```
+
+```output
+warning C4189: 's': local variable is initialized but not referenced
+```
+
+The fix the error, remove the unused variable.
+
+### Single line comments 
+In Visual Studio version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the /Za compiler switch.  The warnings are no longer needed because single line comments have been part of the C standard for several years. 
+
+```cpp
+/* C only */
+#pragma warning(disable:C4001) //C4619
+#pragma warning(disable:C4179)
+// single line comment
+//* single line comment */
+```
+
+```output
+warning C4619: #pragma warning: there is no warning number '4001'   
+```
+
+If the code does not need to be backwards compatible, you can avoid the warning by removing the C4001/C4179 suppression. If the code does need to be backward compatible, then suppress C4619 only.
+
+```cpp
+/* C only */
+
+#pragma warning(disable:C4619)
+#pragma warning(disable:C4001)
+#pragma warning(disable:C4179)
+
+// single line comment
+/* single line comment */
+```
+
+
+### __declspec attributes with extern "C" linkage  
+
+In earlier versions of Visual Studio, the compiler ignored the attributes when `__declspec(…)` was applied before the `extern "C"` linkage specification. By ignoring the attributes, the compiler was generating code that user didn't intend, which had possible runtime implications. The warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio version 15.5, the warning on by default.
+
+```cpp
+__declspec(noinline) extern "C" HRESULT __stdcall //C4768
+```
+
+```output
+warning C4768: __declspec attributes before linkage specification are ignored
+```
+
+To avoid the error, place the linkage specification before the __declspec attribute:
+
+```cpp
+extern "C" __declspec(noinline) HRESULT __stdcall
+```
+
+### <a name="extern_linkage"></a>Extern constexpr linkage 
+
+In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, we have added a new compiler switch (/Zc:externConstexpr) to allow for correct standards-conforming behavior. Eventually this will become the default.
+
+```cpp
+extern constexpr int x = 10; 
+```
+
+```output
+error LNK2005: "int const x" already defined
+```
+
+If a header file contains a variable declared "extern constexpr", it needs to be marked `__declspec(selectany)` in order to correctly have its duplicate declarations combined:
+
+```cpp
+extern constexpr __declspec(selectany) int x = 10;
+```
+
+### typeid can't be used on incomplete class type.
+In earlier versions of Visual Studio, the compiler incorrectly allowed the following code, resulting in potentially incorrect type information:
+
+```cpp
+#include <typeinfo>
+
+struct S;
+
+void f() { typeid(S); }
+```
+
+In Visual Studio version 15.5, the compiler correctly raises an error:
+
+```cpp
+#include <typeinfo>
+
+struct S {};
+
+void f() { typeid(S); } //C2027
+```
+
+```output
+error C2027: use of undefined type 'S'
+```
+
+
+### std::is_convertible target type
+
+`std::is_convertible` requires the target type to be a valid return type. In earlier versions of Visual Studio, the compiler incorrectly allowed abstract types which might cause incorrect overload resolution result and runtime behavior.  The following code now correctly raises C2338:
+
+```cpp
+#include <type_traits>
+ 
+struct B { virtual ~B() = 0; };
+struct D : public B { virtual ~D(); };
+ 
+static_assert(std::is_convertible<D, B>::value, "fail");
+
+```
+To avoid the error, when using `is_convertible` you should compare pointer types because a non-pointer-type comparison might fail if one type is abstract:
+
+```cpp
+#include <type_traits>
+ 
+struct B { virtual ~B() = 0; };
+struct D : public B { virtual ~D(); };
+ 
+static_assert(std::is_convertible<D *, B *>::value, "fail");
+
+```
+
 
 ## See Also  
 [Visual C++ Language Conformance](visual-cpp-language-conformance.md)  
