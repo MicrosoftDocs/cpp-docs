@@ -33,19 +33,19 @@ translation.priority.ht:
 
 With support for generalized constexpr and NSDMI for aggregates, the compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
-## C++11:
+## C++11
 **Expression SFINAE support in more libraries** 
 The Visual C++ compiler continues to improve its support for expression SFINAE, which is required for template argument deduction and substitution where decltype and constexpr expressions may appear as template parameters. For more information, see [Expression SFINAE improvements in Visual Studio 2017 RC](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/expression-sfinae-improvements-in-vs-2015-update-3). 
 
 
-## C++ 14:
+## C++ 14
 **NSDMI for Aggregates**
 An aggregate is an array or a class with no user-provided constructor, no private or protected non-static data members, no base classes, and no virtual functions. Beginning in C++14 aggregates may contain member initializers. For more information, see [Member initializers and aggregates](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3605.html).
 
 **Extended constexpr**
 Expressions declared as constexpr are now allowed to contain certain kinds of declarations, if and switch statements, loop statements, and mutation of objects whose lifetime began within the constexpr expression evaluation. Also, there is no longer a requirement that a constexpr non-static member function be implicitly const. For more information, see [Relaxing constraints on constexpr functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3652.html). 
 
-## C++17:
+## C++17
 **Terse static_assert**  (available with /std:c++latest)
 In C++17 the message parameter for static_assert is optional. For more information, see [Extending static_assert, v2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3928.pdf). 
 
@@ -55,7 +55,7 @@ The [[fallthrough]] attribute can be used in the context of switch statements as
 **Generalized range-based for loops** (no compiler switch required)
 Range-based for loops no longer require that begin() and end() return objects of the same type. This enables end() to return a sentinel object such as used by ranges as defined in the Ranges-V3 proposal. For more information, see [Generalizing the Range-Based For Loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html) and the [range-v3 library on GitHub](https://github.com/ericniebler/range-v3). 
 
-## Improvements in Visual Studio 2017 version 15.3:
+## Improvements in Visual Studio 2017 version 15.3
 
 **constexpr lambdas** Lambda expressions may now be used in constant expressions. For more information, see [Constexpr Lambda](http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4487.pdf).
 
@@ -80,9 +80,9 @@ For more information, see [Construction Rules for enum class Values ](http://www
 
 For the complete list of conformance improvements up through Visual Studio 2015, Update 3, see [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/en-us/library/mt723604.aspx).
 
-## Improvements in Visual Studio 2017 version 15.5:
+## Improvements in Visual Studio 2017 version 15.5
 
-**std::tr1 deprecated** The non-Standard std::tr1 namespace is now marked as deprecated (in both C++14 and C++17 modes). For more information, see [std::tr1 namespace is deprecated](#tr1).
+**std::tr1 deprecated** The non-standard std::tr1 namespace is now marked as deprecated (in both C++14 and C++17 modes). For more information, see [std::tr1 namespace is deprecated](#tr1).
 
 **Annex D features deprecated** When the std:C++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
 
@@ -722,8 +722,7 @@ Note that the warning is off-by-default and only affects code compiled with /Wal
 ## <a name="update_155"></a> Bug fixes in Visual Studio 2017 version 15.5
 ### Partial Ordering Change
 
-The compiler now correctly rejects the following code and gives the correct error message.
-
+The compiler now correctly rejects the following code and gives the correct error message:
 
 ```cpp
 
@@ -756,7 +755,7 @@ t161.cpp(8): note: could be 'int f<int*>(const T &)'
 t161.cpp(2): note: or       'int f<int>(int*)'
 t161.cpp(16): note: while trying to match the argument list '(int*)'
 ``` 
-The problem in the example above is that there are two differences in the types (const vs non-const and pack vs non-pack). To eliminate the compiler error, remove one of the differences which then lets the compiler unambiguously order the functions.
+The problem in the example above is that there are two differences in the types (const vs. non-const and pack vs. non-pack). To eliminate the compiler error, remove one of the differences. This enables the compiler to unambiguously order the functions.
 
 ```cpp
 template<typename... T>
@@ -780,7 +779,7 @@ int main()
 
 
 ### Exception handlers
-Handlers of reference to array or function type are never a match for any exception object. The compiler now correctly honors this. It also no longer matches a handler of 'char*' or 'wchar_t*' to a string literal when /Zc:strictStrings is used.
+Handlers of reference to array or function type are never a match for any exception object. The compiler now correctly honors this rule. It also no longer matches a handler of 'char*' or 'wchar_t*' to a string literal when **/Zc:strictStrings** is used.
 
 ```cpp
 int main()
@@ -790,7 +789,7 @@ int main()
 	}
 	catch (int (&)[1]) {} // C4843 (This should always be dead code.)
 	catch (void (&)()) {} // C4843 (This should always be dead code.)
-	catch (char*) {} // this should not be a match under /Zc:strictStrings
+	catch (char*) {} // This should not be a match under /Zc:strictStrings
 }
 ```
 
@@ -813,9 +812,7 @@ int main()
 ```
 
 ### <a name="tr1"></a>std::tr1 namespace is deprecated
-The non-Standard std::tr1 namespace is now marked as deprecated (in both C++14 and C++17 modes).
-
-In Visual Studio version 15.5, the following code raises C4996:
+The non-Standard std::tr1 namespace is now marked as deprecated in both C++14 and C++17 modes. In Visual Studio version 15.5, the following code raises C4996:
 
 ```cpp
 #include <functional>
@@ -834,7 +831,7 @@ int main() {
 warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
 ```
 
-To avoid the error, remove the reference to the tr1 namespace:
+To fix the error, remove the reference to the tr1 namespace:
 
 ```cpp
 #include <functional>
@@ -910,7 +907,7 @@ warning C4189: 's': local variable is initialized but not referenced
 The fix the error, remove the unused variable.
 
 ### Single line comments 
-In Visual Studio version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the /Za compiler switch.  The warnings are no longer needed because single line comments have been part of the C standard for several years. 
+In Visual Studio version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the **/Za** compiler switch.  The warnings are no longer needed because single line comments have been part of the C standard for several years. 
 
 ```cpp
 /* C only */
@@ -938,9 +935,9 @@ If the code does not need to be backwards compatible, you can avoid the warning 
 ```
 
 
-### __declspec attributes with extern "C" linkage  
+### __declspec attributes with extern "C" linkage 
 
-In earlier versions of Visual Studio, the compiler ignored the attributes when `__declspec(…)` was applied before the `extern "C"` linkage specification. By ignoring the attributes, the compiler was generating code that user didn't intend, which had possible runtime implications. The warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio version 15.5, the warning on by default.
+In earlier versions of Visual Studio, the compiler ignored `__declspec(…)` attributes when `__declspec(…)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that user didn't intend, with possible runtime implications. The warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio version 15.5, the warning on by default.
 
 ```cpp
 __declspec(noinline) extern "C" HRESULT __stdcall //C4768
@@ -950,7 +947,7 @@ __declspec(noinline) extern "C" HRESULT __stdcall //C4768
 warning C4768: __declspec attributes before linkage specification are ignored
 ```
 
-To avoid the error, place the linkage specification before the __declspec attribute:
+To fix the error, place the linkage specification before the __declspec attribute:
 
 ```cpp
 extern "C" __declspec(noinline) HRESULT __stdcall
@@ -958,7 +955,7 @@ extern "C" __declspec(noinline) HRESULT __stdcall
 
 ### <a name="extern_linkage"></a>Extern constexpr linkage 
 
-In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, we have added a new compiler switch (/Zc:externConstexpr) to allow for correct standards-conforming behavior. Eventually this will become the default.
+In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, a new compiler switch (/Zc:externConstexpr) enables correct standards-conforming behavior. Eventually this will become the default.
 
 ```cpp
 extern constexpr int x = 10; 
@@ -968,31 +965,21 @@ extern constexpr int x = 10;
 error LNK2005: "int const x" already defined
 ```
 
-If a header file contains a variable declared "extern constexpr", it needs to be marked `__declspec(selectany)` in order to correctly have its duplicate declarations combined:
+If a header file contains a variable declared `extern constexpr`, it needs to be marked `__declspec(selectany)` in order to correctly have its duplicate declarations combined:
 
 ```cpp
 extern constexpr __declspec(selectany) int x = 10;
 ```
 
 ### typeid can't be used on incomplete class type.
-In earlier versions of Visual Studio, the compiler incorrectly allowed the following code, resulting in potentially incorrect type information:
-
-```cpp
-#include <typeinfo>
-
-struct S;
-
-void f() { typeid(S); }
-```
-
-In Visual Studio version 15.5, the compiler correctly raises an error:
+In earlier versions of Visual Studio, the compiler incorrectly allowed the following code, resulting in potentially incorrect type information. In Visual Studio version 15.5, the compiler correctly raises an error:
 
 ```cpp
 #include <typeinfo>
 
 struct S {};
 
-void f() { typeid(S); } //C2027
+void f() { typeid(S); } //C2027 in 15.5
 ```
 
 ```output
@@ -1002,7 +989,7 @@ error C2027: use of undefined type 'S'
 
 ### std::is_convertible target type
 
-`std::is_convertible` requires the target type to be a valid return type. In earlier versions of Visual Studio, the compiler incorrectly allowed abstract types which might cause incorrect overload resolution result and runtime behavior.  The following code now correctly raises C2338:
+`std::is_convertible` requires the target type to be a valid return type. In earlier versions of Visual Studio, the compiler incorrectly allowed abstract types, which might lead to incorrect overload resolution and unintended runtime behavior.  The following code now correctly raises C2338:
 
 ```cpp
 #include <type_traits>
@@ -1010,7 +997,7 @@ error C2027: use of undefined type 'S'
 struct B { virtual ~B() = 0; };
 struct D : public B { virtual ~D(); };
  
-static_assert(std::is_convertible<D, B>::value, "fail");
+static_assert(std::is_convertible<D, B>::value, "fail"); // C2338 in 15.5
 
 ```
 To avoid the error, when using `is_convertible` you should compare pointer types because a non-pointer-type comparison might fail if one type is abstract:
