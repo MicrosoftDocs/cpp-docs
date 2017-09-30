@@ -86,7 +86,7 @@ For the complete list of conformance improvements up through Visual Studio 2015,
 
 **Annex D features deprecated** When the std:C++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
 
-**New compiler switch for extern constexpr** In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, a new compiler switch (/Zc:externConstexpr) enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
+**New compiler switch for extern constexpr** In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, a new compiler switch, [/Zc:externConstexpr](build/reference/zc-externconstexpr.md), enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
 
 ## Bug fixes in Visual Studio version 15.0
 ### Copy-list-initialization
