@@ -1,0 +1,37 @@
+---
+title: "Librarian | Microsoft Docs"
+ms.custom: ""
+ms.date: "9/26/2017"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+ms.assetid: 2f9c894f-d353-4704-8040-fb933b39bc27
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
+f1_keywords:
+  - VC.Project.Ar.CreateIndex
+  - VC.Project.Ar.CreateThinArchive
+  - VC.Project.Ar.NoWarnOnCreate
+  - VC.Project.Ar.TruncateTimestamp
+  - VC.Project.Ar.SuppressStartupBanner
+  - VC.Project.Ar.Verbose
+  - vc.project.AdditionalOptionsPage
+  - VC.Project.Ar.OutputFile
+---
+
+# Librarian
+
+Property | Description
+--- | ---
+Create an archive index | Create an archive index (cf. ranlib).  This can speed up linking and reduce dependency within its own library.
+Create Thin Archive | Create a thin archive.  A thin archive contains relativepaths to the objects instead of embedding the objects.  Switching between Thin and Normal requires deleting the existing library.
+No Warning on Create | Do not warn if when the library is created.
+Truncate Timestamp | Use zero for timestamps and uids/gids.
+Suppress Startup Banner | Dont show version number.
+Verbose | Verbose
+Additional Options | Additional Options.
+Output File | The /OUT option overrides the default name and location of the program that the lib creates.
