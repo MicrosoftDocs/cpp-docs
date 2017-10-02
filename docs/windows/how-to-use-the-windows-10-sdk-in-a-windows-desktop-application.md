@@ -32,7 +32,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # How to: Use the Windows 10 SDK in a Windows Desktop Application
-When you create a classic Windows desktop project in Visual Studio 2017, it is set up by default to build with the Windows 10 SDK. This version of the Windows SDK is compatible with all recent Windows releases, including Windows 10, but it does not contain the newest Windows 10 APIs and CRT functions which are in the Windows 10 SDK. If you want to use the new APIs, you can retarget your project to reference the Windows 10 SDK.  
+When you create a classic Windows desktop project in Visual Studio 2017, it is set up by default to build with the version of the Windows 10 SDK that was installed when the C++ Desktop workload was installed or last updated. This version of the Windows SDK is compatible with all recent Windows releases. If you want to target an earlier version of the SDK, you can open Project | Properties and choose from the other SDK versions available in the Windows SDK Version dropdown.  
   
  Starting with Visual Studio 2015 and the Windows 10 SDK, the CRT library was separated into two parts, one (ucrtbase) that contains the functions that are acceptable to be used in Universal Windows Apps, and one that contains everything else (vcruntime140). Since the Windows 10 SDK contains new functions, such as many C99 functions, you need to follow these steps in order to use those functions. See [CRT Library Features](../c-runtime-library/crt-library-features.md).  
   
@@ -48,7 +48,7 @@ When you create a classic Windows desktop project in Visual Studio 2017, it is s
   
      ![Review Solution Actions](../windows/media/retargetingwindowssdk2.PNG "RetargetingWindowsSDK2")  
   
-3.  In the **Target Platform Version** dropdown list, choose the version of the Windows 10 SDK you want to target, or choose 8.1 if you don't want to make any changes. Choose the OK button to apply the change.  
+3.  In the **Target Platform Version** dropdown list, choose the version of the Windows 10 SDK you want to target. Choose the OK button to apply the change.  
   
      Note that 8.1 in this context refers to the Windows SDK version, which is also backwardly compatible with Windows 8, Windows Server 2012, Windows 7, Windows Server 2008, and Windows Vista.  
   
