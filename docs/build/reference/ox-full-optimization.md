@@ -58,7 +58,7 @@ The **/Ox** compiler option is the same as using the following options in combin
 
 You can cancel the bias toward speed of the **/Ox** compiler option if you specify **/Oxs**, which combines the **/Ox** compiler option with [/Os (Favor Small Code)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md). The combined options favor smaller code size.
 
-To apply the most optimizations for release builds, we recommend you specify [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Ox**, and [/O1 (Minimize Size)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Oxs**. For even more optimization in release builds, also consider the [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md) compiler option and [/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md) linker option.
+To apply all available file-level optimizations for release builds, we recommend you specify [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Ox**, and [/O1 (Minimize Size)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Oxs**. For even more optimization in release builds, also consider the [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md) compiler option and [/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md) linker option.
 
 ### To set this compiler option in the Visual Studio development environment
 
