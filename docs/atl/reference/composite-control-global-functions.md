@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlhost/ATL::AtlAxDialogBox", "atlhost/ATL::AtlAxCreateDialog", "atlhost/ATL::AtlAxCreateControl", "atlhost/ATL::AtlAxCreateControlEx", "atlhost/ATL::AtlAxCreateControlLic", "atlhost/ATL::AtlAxCreateControlLicEx", "atlhost/ATL::AtlAxAttachControl", "atlhost/ATL::AtlAxGetHost", "atlhost/ATL::AtlAxGetControl", "atlhost/ATL::AtlSetChildSite", "atlhost/ATL::AtlAxWinInit", "atlhost/ATL::AtlAxWinTerm", "atlhost/ATL::AtlGetObjectSourceInterface"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

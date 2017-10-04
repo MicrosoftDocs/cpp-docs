@@ -44,7 +44,8 @@ This section contains the reference topics for the ATL global operators.
 |[operator <=](#operator_lt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is less than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).|  
 |[operator >=](#operator_gt__eq)|Tests if the `CSid` object or `SID` structure on the left side of the operator is greater than or equal to the `CSid` object or `SID` structure on the right side (for C++ Standard Library compatibility).|  
   
- These operators are all defined in the file atlsecurity.h.  
+## Requirements  
+ **Header:** atlsecurity.h.  
   
 ##  <a name="operator_eq_eq"></a>  operator ==  
  Compares `CSid` objects or `SID` (security identifier) structures for equality.  

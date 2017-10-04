@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atldef/ATL::_ATL_DEBUG_INTERFACES", "atldef/ATL::_ATL_DEBUG_QI", "atldef/ATL::ATLASSERT", "afx/ATL::ATLENSURE", "atltrace/ATL::ATLTRACENOTIMPL", "atltrace/ATL::ATLTRACE"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

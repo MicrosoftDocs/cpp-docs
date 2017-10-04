@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atldef/ATL::_ATLCATCH", "atldef/ATL::_ATLCATCHALL", "atldef/ATL::_ATLTRY"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -42,6 +43,9 @@ These macros provide support for exception handling.
 |[_ATLCATCHALL](#_atlcatchall)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|  
 |[_ATLTRY](#_atltry)|Marks a guarded code section where an error could possibly occur.|  
   
+## Requirements:
+**Header:** atldef.h
+
 ##  <a name="_atlcatch"></a>  _ATLCATCH  
  Statement(s) to handle errors occurring in the associated `_ATLTRY`.  
   

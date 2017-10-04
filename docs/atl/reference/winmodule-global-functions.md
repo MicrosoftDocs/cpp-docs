@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlbase/ATL::AtlWinModuleAddCreateWndData", "atlbase/ATL::AtlWinModuleExtractCreateWndData"]
 dev_langs: 
   - "C++"
 ms.assetid: 8ce45a5b-26a7-491f-9096-c09ceca5f2c2

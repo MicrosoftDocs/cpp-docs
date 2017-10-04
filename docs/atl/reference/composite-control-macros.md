@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlcom/ATL::BEGIN_SINK_MAP", "atlcom/ATL::END_SINK_MAP", "atlcom/ATL::SINK_ENTRY"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

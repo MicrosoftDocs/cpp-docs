@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlcom/ATL::BEGIN_COM_MAP", "atlcom/ATL::END_COM_MAP"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

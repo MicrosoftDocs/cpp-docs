@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlcom/ATL::DECLARE_OBJECT_DESCRIPTION", "atlcom/ATL::OBJECT_ENTRY_AUTO", "atlcom/ATL::OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO"]
 dev_langs: 
   - "C++"
 ms.assetid: 680087f4-9894-41dd-a79c-6f337e1f13c1

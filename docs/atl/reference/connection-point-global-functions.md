@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlbase/ATL::AtlAdvise", "atlbase/ATL::AtlUnadvise", "atlbase/ATL::AtlAdviseSinkMap"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

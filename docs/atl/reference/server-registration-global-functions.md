@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlbase/ATL::AtlComModuleRegisterServer", "atlbase/ATL::AtlComModuleUnregisterServer", "atlbase/ATL::AtlComModuleRegisterClassObjects", "atlbase/ATL::AtlComModuleRevokeClassObjects", "atlbase/ATL::AtlComModuleGetClassObject"]
 dev_langs: 
   - "C++"
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06

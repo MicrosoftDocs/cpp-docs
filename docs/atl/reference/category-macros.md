@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlbase/ATL::AtlGetHexValue", "atlbase/ATL::AtlGetVersion", "atlenc/ATL::AtlHexDecode", "atlenc/ATL::AtlHexDecodeGetRequiredLength", "atlenc/ATL::AtlHexEncode", "atlenc/ATL::AtlHexEncodeGetRequiredLength", "atlenc/ATL::AtlHexValue", "atlenc/ATL::BEncode", "atlenc/ATL::BEncodeGetRequiredLength", "atlenc/ATL::EscapeXML", "atlenc/ATL::GetExtendedChars", "atlenc/ATL::IsExtendedChar", "atlenc/ATL::QEncode", "atlenc/ATL::QEncodeGetRequiredLength", "atlenc/ATL::QPDecode", "atlenc/ATL::QPDecodeGetRequiredLength", "atlenc/ATL::QPEncode", "atlenc/ATL::QPEncodeGetRequiredLength", "atlenc/ATL::UUDecode", "atlenc/ATL::UUDecodeGetRequiredLength", "atlenc/ATL::UUEncode", "atlenc/ATL::UUEncodeGetRequiredLength"]
 dev_langs: 
   - "C++"
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee

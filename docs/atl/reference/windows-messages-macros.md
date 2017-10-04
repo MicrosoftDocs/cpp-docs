@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlbase/ATL::WM_FORWARDMSG"]
 dev_langs: 
   - "C++"
 ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f

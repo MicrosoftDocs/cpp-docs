@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlbase/ATL::AtlGetPerUserRegistration", "afxpriv/ATL::AfxRegCreateKey", "afxpriv/ATL::AfxRegDeleteKey", "atlbase/ATL::AtlRegisterTypeLib", "afxpriv/ATL::AfxRegOpenKey", "afxpriv/ATL::AfxRegOpenKeyEx", "afxdisp/ATL::AfxUnregisterPreviewHandler", "atlbase/ATL::AtlSetPerUserRegistration", "atlbase/ATL::AtlUnRegisterTypeLib", "atlbase/ATL::AtlLoadTypeLib", "atlbase/ATL::AtlUpdateRegistryFromResourceD", "atlbase/ATL::RegistryDataExchange"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

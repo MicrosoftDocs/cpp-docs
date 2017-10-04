@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlplus/ATL::BEGIN_RDX_MAP", "atlplus/ATL::END_RDX_MAP", "atlplus/ATL::RDX_BINARY", "atlplus/ATL::RDX_CSTRING_TEXT", "atlplus/ATL::RDX_DWORD", "atlplus/ATL::RDX_TEXT"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

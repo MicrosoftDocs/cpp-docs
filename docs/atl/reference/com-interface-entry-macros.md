@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlcom/ATL::COM_INTERFACE_ENTRY", "atlcom/ATL::COM_INTERFACE_ENTRY_IID", "atlcom/ATL::COM_INTERFACE_ENTRY_AGGREGATE", "atlcom/ATL::COM_INTERFACE_ENTRY_AGGREGATE_BLIND", "atlcom/ATL::COM_INTERFACE_ENTRY_AUTOAGGREGATE", "atlcom/ATL::COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND", "atlcom/ATL::COM_INTERFACE_ENTRY_BREAK", "atlcom/ATL::COM_INTERFACE_ENTRY_CACHED_TEAR_OFF", "atlcom/ATL::COM_INTERFACE_ENTRY_TEAR_OFF", "atlcom/ATL::COM_INTERFACE_ENTRY_CHAIN", "atlcom/ATL::COM_INTERFACE_ENTRY_FUNC", "atlcom/ATL::COM_INTERFACE_ENTRY_FUNC_BLIND", "atlcom/ATL::COM_INTERFACE_ENTRY_NOINTERFACE"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -54,6 +55,8 @@ translation.priority.ht:
 |[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|Same as [COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func), except that querying for any IID results in a call to `func`.|  
 |[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|Returns **E_NOINTERFACE** and terminates COM map processing when the specified interface is queried for.|  
 
+## Requirements
+**Header:** atlcom.h
 
 ## <a name="com_interface_entry"></a> COM_INTERFACE_ENTRY
 Enters interfaces into the COM interface map.

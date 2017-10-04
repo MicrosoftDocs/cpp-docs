@@ -8,11 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATLBASE/_pAtlModule"
-  - "_pAtlModule"
-  - "ATL::_pAtlModule"
-  - "ATL._pAtlModule"
+f1_keywords: ["ATLBASE/ATL::_pAtlModule"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

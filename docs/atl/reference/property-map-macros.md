@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlcom/ATL::BEGIN_PROP_MAP", "atlcom/ATL::PROP_DATA_ENTRY", "atlcom/ATL::PROP_ENTRY_TYPE", "atlcom/ATL::PROP_ENTRY_TYPE_EX", "atlcom/ATL::PROP_PAGE", "atlcom/ATL::END_PROP_MAP"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlbase/ATL::AtlFreeMarshalStream", "atlbase/ATL::AtlMarshalPtrInProc", "atlbase/ATL::AtlUnmarshalPtr"]
 dev_langs: 
   - "C++"
 ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
@@ -41,6 +42,9 @@ These functions provide support for marshaling and converting marshaling data in
 |[AtlFreeMarshalStream](#atlfreemarshalstream)|Releases the marshal data and the `IStream` pointer.|  
 |[AtlMarshalPtrInProc](#atlmarshalptrinproc)|Creates a new stream object and marshals the specified interface pointer.|  
 |[AtlUnmarshalPtr](#atlunmarshalptr)|Converts a stream's marshaling data into an interface pointer.|  
+
+## Requirements:
+**Header:** atlbase.h
   
 ##  <a name="atlfreemarshalstream"></a>  AtlFreeMarshalStream  
  Releases the marshal data in the stream, then releases the stream pointer.  

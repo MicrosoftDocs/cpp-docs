@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlsecurity/ATL::AtlGetDacl", "atlsecurity/ATL::AtlSetDacl", "atlsecurity/ATL::AtlGetGroupSid", "atlsecurity/ATL::AtlSetGroupSid", "atlsecurity/ATL::AtlGetOwnerSid", "atlsecurity/ATL::AtlSetOwnerSid", "atlsecurity/ATL::AtlGetSacl", "atlsecurity/ATL::AtlSetSacl", "atlsecurity/ATL::AtlGetSecurityDescriptor"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

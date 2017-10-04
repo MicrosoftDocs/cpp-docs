@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlcom/ATL::DECLARE_OLEMISC_STATUS"]
 dev_langs: 
   - "C++"
 ms.assetid: 727dbef2-a342-4157-9d64-a421805d9747

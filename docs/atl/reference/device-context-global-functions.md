@@ -8,6 +8,7 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
+f1_keywords: ["atlwin/ATL::AtlCreateTargetDC"]
 dev_langs: 
   - "C++"
 ms.assetid: 08ec28f6-daff-4882-9544-e8a4639d05c4
