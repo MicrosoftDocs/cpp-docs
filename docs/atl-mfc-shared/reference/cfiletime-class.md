@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFileTime', 'ATLTIME/ATL::CFileTime', 'ATLTIME/ATL::CFileTime::CFileTime', 'ATLTIME/ATL::CFileTime::GetCurrentTime', 'ATLTIME/ATL::CFileTime::GetTime', 'ATLTIME/ATL::CFileTime::LocalToUTC', 'ATLTIME/ATL::CFileTime::SetTime', 'ATLTIME/ATL::CFileTime::UTCToLocal', 'ATLTIME/ATL::CFileTime::Day', 'ATLTIME/ATL::CFileTime::Hour', 'ATLTIME/ATL::CFileTime::Millisecond', 'ATLTIME/ATL::CFileTime::Minute', 'ATLTIME/ATL::CFileTime::Second', 'ATLTIME/ATL::CFileTime::Week']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFileTime class"
-  - "shared classes, CFileTime"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFileTime class", "shared classes, CFileTime"]
 ms.assetid: 1a358a65-1383-4124-b0d4-59b026e6860f
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CFileTime Class
 This class provides methods for managing the date and time values associated with a file.  

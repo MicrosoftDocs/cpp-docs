@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IOleInPlaceActiveObjectImpl', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ContextSensitiveHelp', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::EnableModeless', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::GetWindow', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnDocWindowActivate', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnFrameWindowActivate', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ResizeBorder', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::TranslateAccelerator']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IOleInPlaceActiveObjectImpl class"
-  - "ActiveX controls [C++], communication between container and control"
-  - "IOleInPlaceActiveObject, ATL implementation"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IOleInPlaceActiveObjectImpl class", "ActiveX controls [C++], communication between container and control", "IOleInPlaceActiveObject, ATL implementation"]
 ms.assetid: 44e6cc6d-a2dc-4187-98e3-73cf0320dea9
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IOleInPlaceActiveObjectImpl Class
 This class provides methods for assisting communication between an in-place control and its container.  

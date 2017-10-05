@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IPropertyPage2Impl', 'ATLCTL/ATL::IPropertyPage2Impl', 'ATLCTL/ATL::IPropertyPage2Impl::EditProperty']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property pages"
-  - "IPropertyPage2 ATL implementation"
-  - "IPropertyPage2Impl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["property pages", "IPropertyPage2 ATL implementation", "IPropertyPage2Impl class"]
 ms.assetid: e89fbe90-203a-47f0-a5de-23616697e1ce
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IPropertyPage2Impl Class
 This class implements **IUnknown** and inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md).  

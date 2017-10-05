@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDefaultCompareTraits', 'ATLCOLL/ATL::CDefaultCompareTraits', 'ATLCOLL/ATL::CDefaultCompareTraits::CompareElements', 'ATLCOLL/ATL::CDefaultCompareTraits::CompareElementsOrdered']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDefaultCompareTraits class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDefaultCompareTraits class"]
 ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDefaultCompareTraits Class
 This class provides default element comparison functions.  

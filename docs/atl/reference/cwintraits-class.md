@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CWinTraits', 'ATLWIN/ATL::CWinTraits', 'ATLWIN/ATL::CWinTraits::GetWndExStyle', 'ATLWIN/ATL::CWinTraits::GetWndStyle']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMDIChildWinTraits class"
-  - "window styles, default values for ATL"
-  - "CWinTraits class"
-  - "CFrameWinTraits class"
-  - "CControlWinTraits class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMDIChildWinTraits class", "window styles, default values for ATL", "CWinTraits class", "CFrameWinTraits class", "CControlWinTraits class"]
 ms.assetid: f78f486e-6d9c-42c6-8e86-371e05aa7e59
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CWinTraits Class
 This class provides a method for standardizing the styles used when creating a window object.  

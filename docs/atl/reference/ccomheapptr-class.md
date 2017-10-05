@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComHeapPtr', 'ATLBASE/ATL::CComHeapPtr', 'ATLBASE/ATL::CComHeapPtr::CComHeapPtr']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComHeapPtr class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComHeapPtr class"]
 ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComHeapPtr Class
 A smart pointer class for managing heap pointers.  

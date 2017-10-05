@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSnapInItemImpl', 'ATLSNAP/ATL::CSnapInItemImpl', 'ATLSNAP/ATL::CSnapInItemImpl::CSnapInItemImpl', 'ATLSNAP/ATL::CSnapInItemImpl::AddMenuItems', 'ATLSNAP/ATL::CSnapInItemImpl::Command', 'ATLSNAP/ATL::CSnapInItemImpl::CreatePropertyPages', 'ATLSNAP/ATL::CSnapInItemImpl::FillData', 'ATLSNAP/ATL::CSnapInItemImpl::GetResultPaneInfo', 'ATLSNAP/ATL::CSnapInItemImpl::GetResultViewType', 'ATLSNAP/ATL::CSnapInItemImpl::GetScopePaneInfo', 'ATLSNAP/ATL::CSnapInItemImpl::Notify', 'ATLSNAP/ATL::CSnapInItemImpl::QueryPagesFor', 'ATLSNAP/ATL::CSnapInItemImpl::SetMenuInsertionFlags', 'ATLSNAP/ATL::CSnapInItemImpl::SetToolbarButtonInfo', 'ATLSNAP/ATL::CSnapInItemImpl::UpdateMenuState', 'ATLSNAP/ATL::CSnapInItemImpl::UpdateToolbarButton', 'ATLSNAP/ATL::CSnapInItemImpl::m_bstrDisplayName', 'ATLSNAP/ATL::CSnapInItemImpl::m_resultDataItem', 'ATLSNAP/ATL::CSnapInItemImpl::m_scopeDataItem']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "snap-ins, data items"
-  - "snap-ins, ATL support for"
-  - "CSnapInItemImpl class"
-  - "snap-ins"
+dev_langs: ["C++"]
+helpviewer_keywords: ["snap-ins, data items", "snap-ins, ATL support for", "CSnapInItemImpl class", "snap-ins"]
 ms.assetid: 52caefbd-9eae-49b0-add2-d55524271aa7
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CSnapInItemImpl Class
 This class provides methods for implementing a snap-in node object.  

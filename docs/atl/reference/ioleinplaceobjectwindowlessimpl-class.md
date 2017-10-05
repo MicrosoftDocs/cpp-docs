@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IOleInPlaceObjectWindowlessImpl', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetDropTarget', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetWindow', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::OnWindowMessage', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::SetObjectRects', 'ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::UIDeactivate']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IOleInPlaceObjectWindowless, ATL implementation"
-  - "activation [C++], ATL"
-  - "IOleInPlaceObjectWindowlessImpl class"
-  - "ActiveX controls [C++], communication between container and control"
-  - "controls [ATL], windowless"
-  - "deactivating ATL"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IOleInPlaceObjectWindowless, ATL implementation", "activation [C++], ATL", "IOleInPlaceObjectWindowlessImpl class", "ActiveX controls [C++], communication between container and control", "controls [ATL], windowless", "deactivating ATL"]
 ms.assetid: a2e0feb4-bc59-4adf-aab2-105457bbdbb4
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IOleInPlaceObjectWindowlessImpl Class
 This class implements **IUnknown** and provides methods that enable a windowless control to receive window messages and to participate in drag-and-drop operations.  

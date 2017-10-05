@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDynamicChain', 'ATLWIN/ATL::CDynamicChain', 'ATLWIN/ATL::CDynamicChain::CDynamicChain', 'ATLWIN/ATL::CDynamicChain::CallChain', 'ATLWIN/ATL::CDynamicChain::RemoveChainEntry', 'ATLWIN/ATL::CDynamicChain::SetChainEntry']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message maps, chaining"
-  - "chaining message maps"
-  - "CDynamicChain class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["message maps, chaining", "chaining message maps", "CDynamicChain class"]
 ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDynamicChain Class
 This class provides methods supporting the dynamic chaining of message maps.  

@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IAxWinAmbientDispatch', 'No header/ATL::IAxWinAmbientDispatch', 'No header/ATL::get_AllowContextMenu', 'No header/ATL::get_AllowShowUI', 'No header/ATL::get_AllowWindowlessActivation', 'No header/ATL::get_BackColor', 'No header/ATL::get_DisplayAsDefault', 'No header/ATL::get_DocHostDoubleClickFlags', 'No header/ATL::get_DocHostFlags', 'No header/ATL::get_Font', 'No header/ATL::get_ForeColor', 'No header/ATL::get_LocaleID', 'No header/ATL::get_MessageReflect', 'No header/ATL::get_OptionKeyPath', 'No header/ATL::get_ShowGrabHandles', 'No header/ATL::get_ShowHatching', 'No header/ATL::get_UserMode', 'No header/ATL::put_AllowContextMenu', 'No header/ATL::put_AllowShowUI', 'No header/ATL::put_AllowWindowlessActivation', 'No header/ATL::put_BackColor', 'No header/ATL::put_DisplayAsDefault', 'No header/ATL::put_DocHostDoubleClickFlags', 'No header/ATL::put_DocHostFlags', 'No header/ATL::put_Font', 'No header/ATL::put_ForeColor', 'No header/ATL::put_LocaleID', 'No header/ATL::put_MessageReflect', 'No header/ATL::put_OptionKeyPath', 'No header/ATL::put_UserMode']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAxWinAmbientDispatch interface"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAxWinAmbientDispatch interface"]
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IAxWinAmbientDispatch Interface
 This interface provides methods for specifying characteristics of the hosted control or container.  

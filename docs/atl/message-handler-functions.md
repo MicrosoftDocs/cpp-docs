@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "NOFITY_HANDLER"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MESSAGE_HANDLER macro"
-  - "COMMAND_HANDLER macro"
-  - "CommandHandler method"
-  - "MessageHandler method"
-  - "NotifyHandler method"
-  - "message maps, ATL"
-  - "NOTIFY_HANDLER macro, message handler functions"
-  - "ATL, message handlers"
+f1_keywords: ["NOFITY_HANDLER"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MESSAGE_HANDLER macro", "COMMAND_HANDLER macro", "CommandHandler method", "MessageHandler method", "NotifyHandler method", "message maps, ATL", "NOTIFY_HANDLER macro, message handler functions", "ATL, message handlers"]
 ms.assetid: 2007a8c5-0143-42f1-91ab-809f235f9d50
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Message Handler Functions
 ATL provides three types of message handler functions:  

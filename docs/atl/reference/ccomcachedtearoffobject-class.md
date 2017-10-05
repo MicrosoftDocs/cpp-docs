@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject::CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject::AddRef', 'ATLCOM/ATL::CComCachedTearOffObject::FinalConstruct', 'ATLCOM/ATL::CComCachedTearOffObject::FinalRelease', 'ATLCOM/ATL::CComCachedTearOffObject::QueryInterface', 'ATLCOM/ATL::CComCachedTearOffObject::Release', 'ATLCOM/ATL::CComCachedTearOffObject::m_contained']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cache, ATL cached tear-off objects"
-  - "CComCachedTearOffObject class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["cache, ATL cached tear-off objects", "CComCachedTearOffObject class"]
 ms.assetid: ae19507d-a1de-4dbc-a988-da9f75a50c95
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComCachedTearOffObject Class
 This class implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for a tear-off interface.  

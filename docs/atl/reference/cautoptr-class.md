@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAutoPtr', 'ATLBASE/ATL::CAutoPtr', 'ATLBASE/ATL::CAutoPtr::CAutoPtr', 'ATLBASE/ATL::CAutoPtr::Attach', 'ATLBASE/ATL::CAutoPtr::Detach', 'ATLBASE/ATL::CAutoPtr::Free', 'ATLBASE/ATL::CAutoPtr::m_p']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAutoPtr class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAutoPtr class"]
 ms.assetid: 08988d53-4fb0-4711-bdfc-8ac29c63f410
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAutoPtr Class
 This class represents a smart pointer object.  

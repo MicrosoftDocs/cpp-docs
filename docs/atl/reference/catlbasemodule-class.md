@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlBaseModule', 'ATLCORE/ATL::CAtlBaseModule', 'ATLCORE/ATL::CAtlBaseModule::CAtlBaseModule', 'ATLCORE/ATL::CAtlBaseModule::AddResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::GetHInstanceAt', 'ATLCORE/ATL::CAtlBaseModule::GetModuleInstance', 'ATLCORE/ATL::CAtlBaseModule::GetResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::RemoveResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::SetResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::m_bInitFailed']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlBaseModule class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlBaseModule class"]
 ms.assetid: 55ade80c-9b0c-4c51-933e-2158436c1096
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAtlBaseModule Class
 This class is instantiated in every ATL project.  

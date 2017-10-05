@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPathT', 'ATLPATH/ATL::CPathT', 'ATLPATH/ATL::CPathT::PCXSTR', 'ATLPATH/ATL::CPathT::PXSTR', 'ATLPATH/ATL::CPathT::XCHAR', 'ATLPATH/ATL::CPathT::CPathT', 'ATLPATH/ATL::CPathT::AddBackslash', 'ATLPATH/ATL::CPathT::AddExtension', 'ATLPATH/ATL::CPathT::Append', 'ATLPATH/ATL::CPathT::BuildRoot', 'ATLPATH/ATL::CPathT::Canonicalize', 'ATLPATH/ATL::CPathT::Combine', 'ATLPATH/ATL::CPathT::CommonPrefix', 'ATLPATH/ATL::CPathT::CompactPath', 'ATLPATH/ATL::CPathT::CompactPathEx', 'ATLPATH/ATL::CPathT::FileExists', 'ATLPATH/ATL::CPathT::FindExtension', 'ATLPATH/ATL::CPathT::FindFileName', 'ATLPATH/ATL::CPathT::GetDriveNumber', 'ATLPATH/ATL::CPathT::GetExtension', 'ATLPATH/ATL::CPathT::IsDirectory', 'ATLPATH/ATL::CPathT::IsFileSpec', 'ATLPATH/ATL::CPathT::IsPrefix', 'ATLPATH/ATL::CPathT::IsRelative', 'ATLPATH/ATL::CPathT::IsRoot', 'ATLPATH/ATL::CPathT::IsSameRoot', 'ATLPATH/ATL::CPathT::IsUNC', 'ATLPATH/ATL::CPathT::IsUNCServer', 'ATLPATH/ATL::CPathT::IsUNCServerShare', 'ATLPATH/ATL::CPathT::MakePretty', 'ATLPATH/ATL::CPathT::MatchSpec', 'ATLPATH/ATL::CPathT::QuoteSpaces', 'ATLPATH/ATL::CPathT::RelativePathTo', 'ATLPATH/ATL::CPathT::RemoveArgs', 'ATLPATH/ATL::CPathT::RemoveBackslash', 'ATLPATH/ATL::CPathT::RemoveBlanks', 'ATLPATH/ATL::CPathT::RemoveExtension', 'ATLPATH/ATL::CPathT::RemoveFileSpec', 'ATLPATH/ATL::CPathT::RenameExtension', 'ATLPATH/ATL::CPathT::SkipRoot', 'ATLPATH/ATL::CPathT::StripPath', 'ATLPATH/ATL::CPathT::StripToRoot', 'ATLPATH/ATL::CPathT::UnquoteSpaces', 'ATLPATH/ATL::CPathT::m_strPath']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPathT class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPathT class"]
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CPathT Class
 This class represents a path.  

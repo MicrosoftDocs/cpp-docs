@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CLocalHeap', 'ATLMEM/ATL::CLocalHeap', 'ATLMEM/ATL::CLocalHeap::Allocate', 'ATLMEM/ATL::CLocalHeap::Free', 'ATLMEM/ATL::CLocalHeap::GetSize', 'ATLMEM/ATL::CLocalHeap::Reallocate']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CLocalHeap class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CLocalHeap class"]
 ms.assetid: 1ffa87a5-5fc8-4f8d-8809-58e87e963bd2
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CLocalHeap Class
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the Win32 local heap functions.  

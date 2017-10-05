@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CImage', 'ATLIMAGE/ATL::CImage', 'ATLIMAGE/ATL::CImage::CImage', 'ATLIMAGE/ATL::CImage::AlphaBlend', 'ATLIMAGE/ATL::CImage::Attach', 'ATLIMAGE/ATL::CImage::BitBlt', 'ATLIMAGE/ATL::CImage::Create', 'ATLIMAGE/ATL::CImage::CreateEx', 'ATLIMAGE/ATL::CImage::Destroy', 'ATLIMAGE/ATL::CImage::Detach', 'ATLIMAGE/ATL::CImage::Draw', 'ATLIMAGE/ATL::CImage::GetBits', 'ATLIMAGE/ATL::CImage::GetBPP', 'ATLIMAGE/ATL::CImage::GetColorTable', 'ATLIMAGE/ATL::CImage::GetDC', 'ATLIMAGE/ATL::CImage::GetExporterFilterString', 'ATLIMAGE/ATL::CImage::GetHeight', 'ATLIMAGE/ATL::CImage::GetImporterFilterString', 'ATLIMAGE/ATL::CImage::GetMaxColorTableEntries', 'ATLIMAGE/ATL::CImage::GetPitch', 'ATLIMAGE/ATL::CImage::GetPixel', 'ATLIMAGE/ATL::CImage::GetPixelAddress', 'ATLIMAGE/ATL::CImage::GetTransparentColor', 'ATLIMAGE/ATL::CImage::GetWidth', 'ATLIMAGE/ATL::CImage::IsDIBSection', 'ATLIMAGE/ATL::CImage::IsIndexed', 'ATLIMAGE/ATL::CImage::IsNull', 'ATLIMAGE/ATL::CImage::IsTransparencySupported', 'ATLIMAGE/ATL::CImage::Load', 'ATLIMAGE/ATL::CImage::LoadFromResource', 'ATLIMAGE/ATL::CImage::MaskBlt', 'ATLIMAGE/ATL::CImage::PlgBlt', 'ATLIMAGE/ATL::CImage::ReleaseDC', 'ATLIMAGE/ATL::CImage::ReleaseGDIPlus', 'ATLIMAGE/ATL::CImage::Save', 'ATLIMAGE/ATL::CImage::SetColorTable', 'ATLIMAGE/ATL::CImage::SetPixel', 'ATLIMAGE/ATL::CImage::SetPixelIndexed', 'ATLIMAGE/ATL::CImage::SetPixelRGB', 'ATLIMAGE/ATL::CImage::SetTransparentColor', 'ATLIMAGE/ATL::CImage::StretchBlt', 'ATLIMAGE/ATL::CImage::TransparentBlt']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "jpeg files"
-  - "bitmaps [C++], ATL and MFC support for"
-  - "images [C++], ATL and MFC support for"
-  - "gif files, ATL and MFC support"
-  - ".gif files, ATL and MFC support"
-  - "PNG files, ATL and MFC support"
-  - "CImage class"
-  - "transparent color"
+dev_langs: ["C++"]
+helpviewer_keywords: ["jpeg files", "bitmaps [C++], ATL and MFC support for", "images [C++], ATL and MFC support for", "gif files, ATL and MFC support", ".gif files, ATL and MFC support", "PNG files, ATL and MFC support", "CImage class", "transparent color"]
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CImage Class
 `CImage` provides enhanced bitmap support, including the ability to load and save images in JPEG, GIF, BMP, and Portable Network Graphics (PNG) formats.  

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMFCVisualManagerWindows7', 'AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7', 'AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::CMFCVisualManagerWindows7', 'AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor', 'AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::OnFillMenuImageRect']
 dev_langs: ["C++"]
-helpviewer_keywords: [" [MFC], "]"]
+helpviewer_keywords: ["CMFCVisualManagerWindows7 Class [MFC]"]
 ms.assetid: e8d87df1-0c09-4b58-8ade-4e911f796e42
 caps.latest.revision: 21
 author: "mikeblome"

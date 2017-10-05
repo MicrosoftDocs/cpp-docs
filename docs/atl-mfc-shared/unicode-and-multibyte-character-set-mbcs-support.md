@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], character set support"
-  - "MBCS [C++], strings and MFC support"
-  - "strings [C++], MBCS support in MFC"
-  - "character sets [C++], multibyte"
-  - "Unicode [C++], MFC strings"
-  - "Unicode [C++], string objects"
-  - "strings [C++], Unicode"
-  - "strings [C++], character set support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC [C++], character set support", "MBCS [C++], strings and MFC support", "strings [C++], MBCS support in MFC", "character sets [C++], multibyte", "Unicode [C++], MFC strings", "Unicode [C++], string objects", "strings [C++], Unicode", "strings [C++], character set support"]
 ms.assetid: 44b3193b-c92d-40c5-9fa8-5774da303cce
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Unicode and Multibyte Character Set (MBCS) Support
 Some languages, for example, Japanese and Chinese, have large character sets. To support programming for these markets, the Microsoft Foundation Class Library (MFC) is enabled for two different approaches to handling large character sets:  

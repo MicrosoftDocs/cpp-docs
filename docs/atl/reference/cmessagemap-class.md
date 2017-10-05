@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CMessageMap', 'ATLWIN/ATL::CMessageMap', 'ATLWIN/ATL::CMessageMap::ProcessWindowMessage']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMessageMap class"
-  - "message maps, ATL"
-  - "ATL, message handlers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMessageMap class", "message maps, ATL", "ATL, message handlers"]
 ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CMessageMap Class
 This class allows an object's message maps to be access by another object.  

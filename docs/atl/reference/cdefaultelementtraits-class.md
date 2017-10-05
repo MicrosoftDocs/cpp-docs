@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords:
- - "CDefaultElementTraits"
- - "atlcoll/ATL::CDefaultElementTraits"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDefaultElementTraits class"
+f1_keywords: ["CDefaultElementTraits", "atlcoll/ATL::CDefaultElementTraits"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDefaultElementTraits class"]
 ms.assetid: ac5ee610-7957-4b7c-92b6-38ff72e4118e
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDefaultElementTraits Class
 This class provides default methods and functions for a collection class.  

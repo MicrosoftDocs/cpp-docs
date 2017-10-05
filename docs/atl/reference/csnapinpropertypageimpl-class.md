@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSnapInPropertyPageImpl', 'ATLSNAP/ATL::CSnapInPropertyPageImpl', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::CSnapInPropertyPageImpl', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::CancelToClose', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::Create', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::OnApply', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::OnHelp', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::OnKillActive', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::OnQueryCancel', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::OnReset', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::OnSetActive', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardBack', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardFinish', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardNext', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::QuerySiblings', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::SetModified', 'ATLSNAP/ATL::CSnapInPropertyPageImpl::m_psp']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "snap-ins, property pages"
-  - "snap-ins"
-  - "property pages, ATL"
-  - "CSnapInPropertyPageImpl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["snap-ins, property pages", "snap-ins", "property pages, ATL", "CSnapInPropertyPageImpl class"]
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CSnapInPropertyPageImpl Class
 This class provides methods for implementing a snap-in property page object.  
