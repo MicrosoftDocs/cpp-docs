@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__asm"
-  - "__asm_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__asm keyword [C++], vs. asm blocks"
-  - "__asm keyword [C++]"
+f1_keywords: ["__asm", "__asm_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__asm keyword [C++], vs. asm blocks", "__asm keyword [C++]"]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # __asm
 **Microsoft Specific**  

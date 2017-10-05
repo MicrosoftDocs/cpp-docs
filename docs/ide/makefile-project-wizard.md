@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.makefile.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Makefile projects, Makefile Project Wizard"
-  - "MakeFile Project Wizard [Visual Studio]"
+f1_keywords: ["vc.appwiz.makefile.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Makefile projects, Makefile Project Wizard", "MakeFile Project Wizard [Visual Studio]"]
 ms.assetid: 38219802-320d-4c48-a118-4792de8f3b2d
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Makefile Project Wizard
 Use this wizard to create a command line for the build engine to execute. Once you create the project, you can view and edit the project's properties in the project's [property page](../ide/working-with-project-properties.md).  

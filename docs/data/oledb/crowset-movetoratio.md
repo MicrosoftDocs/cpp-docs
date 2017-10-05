@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MoveToRatio"
-  - "CRowset<TAccessor>::MoveToRatio"
-  - "CRowset::MoveToRatio"
-  - "CRowset<TAccessor>.MoveToRatio"
-  - "ATL.CRowset.MoveToRatio"
-  - "ATL::CRowset::MoveToRatio"
-  - "CRowset.MoveToRatio"
-  - "ATL.CRowset<TAccessor>.MoveToRatio"
-  - "ATL::CRowset<TAccessor>::MoveToRatio"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MoveToRatio method"
+f1_keywords: ["MoveToRatio", "CRowset<TAccessor>::MoveToRatio", "CRowset::MoveToRatio", "CRowset<TAccessor>.MoveToRatio", "ATL.CRowset.MoveToRatio", "ATL::CRowset::MoveToRatio", "CRowset.MoveToRatio", "ATL.CRowset<TAccessor>.MoveToRatio", "ATL::CRowset<TAccessor>::MoveToRatio"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MoveToRatio method"]
 ms.assetid: 1fa313bd-8fd1-4608-8e85-44993b97dd88
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CRowset::MoveToRatio
 Fetches rows starting from a fractional position in the rowset.  

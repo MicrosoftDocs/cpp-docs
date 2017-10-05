@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__vmx_vmresume"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__vmx_vmresume intrinsic"
-  - "VMRESUME instruction"
+f1_keywords: ["__vmx_vmresume"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__vmx_vmresume intrinsic", "VMRESUME instruction"]
 ms.assetid: 233fe1b6-c727-493a-a484-1b2363732281
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __vmx_vmresume
 **Microsoft Specific**  

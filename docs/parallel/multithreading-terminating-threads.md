@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CREATE_SUSPENDED"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "premature thread termination"
-  - "starting threads"
-  - "threading [MFC], terminating threads"
-  - "multithreading [C++], terminating threads"
-  - "threading [C++], stopping threads"
-  - "terminating threads"
-  - "stopping threads"
-  - "AfxEndThread method"
+f1_keywords: ["CREATE_SUSPENDED"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["premature thread termination", "starting threads", "threading [MFC], terminating threads", "multithreading [C++], terminating threads", "threading [C++], stopping threads", "terminating threads", "stopping threads", "AfxEndThread method"]
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Multithreading: Terminating Threads
 Two normal situations cause a thread to terminate: the controlling function exits or the thread is not allowed to run to completion. If a word processor used a thread for background printing, the controlling function would terminate normally if printing completed successfully. If the user wants to cancel the printing, however, the background printing thread has to be terminated prematurely. This topic explains both how to implement each situation and how to get the exit code of a thread after it terminates.  

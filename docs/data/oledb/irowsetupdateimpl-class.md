@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IRowsetUpdateImpl"
-  - "ATL.IRowsetUpdateImpl"
-  - "ATL::IRowsetUpdateImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "providers, updatable"
-  - "IRowsetUpdateImpl class"
-  - "updatable providers, deferred update"
+f1_keywords: ["IRowsetUpdateImpl", "ATL.IRowsetUpdateImpl", "ATL::IRowsetUpdateImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["providers, updatable", "IRowsetUpdateImpl class", "updatable providers, deferred update"]
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IRowsetUpdateImpl Class
 The OLE DB Templates implementation of the [IRowsetUpdate](https://msdn.microsoft.com/en-us/library/ms714401.aspx) interface.  

@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DoFieldExchange method, overriding"
-  - "Unicode, with database classes"
-  - "field data members, declaring"
-  - "RFX (ODBC), wizard code"
-  - "RFX (ODBC), implementing"
-  - "field data members"
-  - "ODBC, RFX"
-  - "m_nParams data member, initializing"
-  - "m_nFields data member"
-  - "m_nParams data member"
-  - "overriding, DoFieldExchange"
-  - "m_nFields data member, initializing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["DoFieldExchange method, overriding", "Unicode, with database classes", "field data members, declaring", "RFX (ODBC), wizard code", "RFX (ODBC), implementing", "field data members", "ODBC, RFX", "m_nParams data member, initializing", "m_nFields data member", "m_nParams data member", "overriding, DoFieldExchange", "m_nFields data member, initializing"]
 ms.assetid: f00d882a-ff1b-4a75-9717-98d8762bb237
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Record Field Exchange: Working with the Wizard Code
 This topic explains the code that the MFC Application Wizard and **Add Class** (as described in [Adding an MFC ODBC Consumer](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) write to support RFX and how you might want to alter that code.  

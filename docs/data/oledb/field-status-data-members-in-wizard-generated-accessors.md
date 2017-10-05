@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB consumer templates, field status"
-  - "field status in OLE DB templates"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB consumer templates, field status", "field status in OLE DB templates"]
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Field Status Data Members in Wizard-Generated Accessors
 When you use the ATL OLE DB Consumer Wizard to create a consumer, the wizard generates a data member in the user record class for each field that you specify in your column map. Each data member is of type `DWORD` and contains a status value corresponding to its respective field.  

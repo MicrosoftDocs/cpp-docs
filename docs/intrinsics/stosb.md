@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__stosb"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rep stosb instruction"
-  - "__stosb intrinsic"
-  - "stosb instruction"
+f1_keywords: ["__stosb"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["rep stosb instruction", "__stosb intrinsic", "stosb instruction"]
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __stosb
 **Microsoft Specific**  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::IErrorRecordsImpl"
-  - "ATL.IErrorRecordsImpl"
-  - "IErrorRecordsImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IErrorRecordsImpl class"
+f1_keywords: ["ATL::IErrorRecordsImpl", "ATL.IErrorRecordsImpl", "IErrorRecordsImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IErrorRecordsImpl class"]
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IErrorRecordsImpl Class
 Implements the OLE DB [IErrorRecords](https://msdn.microsoft.com/en-us/library/ms718112.aspx) interface, adding records to and retrieving records from a data member ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) of type **CAtlArray<**`RecordClass`**>**.  

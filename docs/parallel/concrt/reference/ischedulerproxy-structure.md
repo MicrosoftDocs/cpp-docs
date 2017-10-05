@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ISchedulerProxy', 'CONCRTRM/concurrency::ISchedulerProxy', 'CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::BindContext', 'CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::CreateOversubscriber', 'CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::RequestInitialVirtualProcessors', 'CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::Shutdown', 'CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::SubscribeCurrentThread', 'CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::UnbindContext']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISchedulerProxy structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISchedulerProxy structure"]
 ms.assetid: af416973-7a1c-4c30-aa3b-4161c2aaea54
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ISchedulerProxy Structure
 The interface by which schedulers communicate with the Concurrency Runtime's Resource Manager to negotiate resource allocation.  

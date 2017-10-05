@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "warnings, compiler"
-  - "cl.exe compiler, setting options"
+dev_langs: ["C++"]
+helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 caps.latest.revision: 39
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warnings That Are Off by Default
 The compiler includes warnings that are turned off by default because most users don't want to see them. However, you can enable these warnings by using one of the following options.  

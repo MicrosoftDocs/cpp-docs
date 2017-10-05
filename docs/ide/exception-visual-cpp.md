@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "exception"
-  - "<exception>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<exception> C++ XML tag"
-  - "exception C++ XML tag"
+f1_keywords: ["exception", "<exception>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<exception> C++ XML tag", "exception C++ XML tag"]
 ms.assetid: 24451e79-9b89-4b77-98fb-702c6516b818
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;exception&gt; (Visual C++)
 The \<exception> tag lets you specify which exceptions can be thrown. This tag is applied to a method definition.  

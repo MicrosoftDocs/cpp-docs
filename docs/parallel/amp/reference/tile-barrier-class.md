@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['tile_barrier', 'AMP/tile_barrier', 'AMP/Concurrency::tile_barrier::tile_barrier::tile_barrier', 'AMP/Concurrency::tile_barrier::tile_barrier::wait', 'AMP/Concurrency::tile_barrier::tile_barrier::wait_with_all_memory_fence', 'AMP/Concurrency::tile_barrier::tile_barrier::wait_with_global_memory_fence', 'AMP/Concurrency::tile_barrier::tile_barrier::wait_with_tile_static_memory_fence']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tile_barrier class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["tile_barrier class"]
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # tile_barrier Class
 Synchronizes the execution of threads that are running in the thread group (the tile) by using `wait` methods. Only the runtime can instantiate this class.  

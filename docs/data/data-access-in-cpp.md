@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Visual C++, data access applications"
-  - "databases [C++]"
-  - "OLE DB [C++], data access technologies"
-  - "data [C++], data access technologies"
-  - "data access [C++], class libraries for databases"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Visual C++, data access applications", "databases [C++]", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]
 ms.assetid: 95da6237-bbe2-480a-ae50-3a520051ceff
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 
 # Data Access in Visual C++

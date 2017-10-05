@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications [C++]"
-  - "application deployment [C++]"
-  - "Visual C++, application deployment"
-  - "application deployment [C++], about application deployment"
-  - "deploying applications [C++], about deploying applications"
-  - "distributing applications [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["deploying applications [C++]", "application deployment [C++]", "Visual C++, application deployment", "application deployment [C++], about application deployment", "deploying applications [C++], about deploying applications", "distributing applications [C++]"]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
 caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Deploying Native Desktop Applications (Visual C++)
 Deployment is the process by which you distribute a finished application or component to be installed on other computers. Deployment planning starts when an application is created on a developer's computer. Deployment ends when the application is installed and ready to run on a user's computer.  

@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['unorm', 'AMP_SHORT_VECTORS/unorm', 'AMP_SHORT_VECTORS/Concurrency::graphics::unorm Constructor']
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: bc30bd20-6452-4d5f-9158-3b11c4c16ed2
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # unorm Class
 Represent a unorm number. Each element is a floating point number in the range of [0.0f, 1.0f].  

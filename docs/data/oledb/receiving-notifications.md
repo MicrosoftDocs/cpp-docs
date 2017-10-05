@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "notifications [C++], OLE DB consumers"
-  - "receiving notifications in OLE DB"
-  - "events [C++], notifications in OLE DB"
-  - "notifications [C++], events"
-  - "OLE DB consumers, notifications"
-  - "rowsets, event notifications"
-  - "OLE DB providers, notifications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["notifications [C++], OLE DB consumers", "receiving notifications in OLE DB", "events [C++], notifications in OLE DB", "notifications [C++], events", "OLE DB consumers, notifications", "rowsets, event notifications", "OLE DB providers, notifications"]
 ms.assetid: 305a1103-0c87-40c8-94bc-7fbbdd52ae32
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Receiving Notifications
 OLE DB provides interfaces for receiving notifications when events occur. These are described in [OLE DB Object Notifications](https://msdn.microsoft.com/en-us/library/ms725406.aspx) in the *OLE DB Programmer's Reference*. Setup of these events uses the standard COM connection-point mechanism. For example, an ATL object that wants to retrieve events through `IRowsetNotify` implements the `IRowsetNotify` interface by adding `IRowsetNotify` to the class-derived list and exposing it through a **COM_INTERFACE_ENTRY** macro.  

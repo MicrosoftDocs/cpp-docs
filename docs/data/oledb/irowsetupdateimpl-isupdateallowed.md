@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IRowsetUpdateImpl::IsUpdateAllowed"
-  - "IRowsetUpdateImpl.IsUpdateAllowed"
-  - "IsUpdateAllowed"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IsUpdateAllowed method"
+f1_keywords: ["IRowsetUpdateImpl::IsUpdateAllowed", "IRowsetUpdateImpl.IsUpdateAllowed", "IsUpdateAllowed"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IsUpdateAllowed method"]
 ms.assetid: d6daf3b3-a8e0-4275-a67d-897dea01e297
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IRowsetUpdateImpl::IsUpdateAllowed
 Override this method to check for security, integrity, and so on before updates.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "platforms [C++], 64-bit"
-  - "64-bit programming [C++], configuring projects"
-  - "project configurations [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["platforms [C++], 64-bit", "64-bit programming [C++], configuring projects", "project configurations [C++]"]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms
 

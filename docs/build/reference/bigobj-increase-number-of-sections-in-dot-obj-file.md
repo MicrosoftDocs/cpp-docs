@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/bigobj"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-bigobj compiler option [C++]"
-  - "/bigobj compiler option [C++]"
-  - "bigobj compiler option [C++]"
+f1_keywords: ["/bigobj"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-bigobj compiler option [C++]", "/bigobj compiler option [C++]", "bigobj compiler option [C++]"]
 ms.assetid: ba94d602-4015-4a8d-86ec-49241ab74c12
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /bigobj (Increase Number of Sections in .Obj file)
 **/bigobj** increases the number of sections that an object file can contain.  

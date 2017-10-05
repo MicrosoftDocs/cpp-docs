@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['bad_target', 'CONCRT/concurrency::bad_target', 'CONCRT/concurrency::bad_target::bad_target']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "bad_target class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["bad_target class"]
 ms.assetid: e6dcddbf-9217-4fac-ac7f-7b8b4781d2f5
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # bad_target Class
 This class describes an exception thrown when a messaging block is given a pointer to a target which is invalid for the operation being performed.  

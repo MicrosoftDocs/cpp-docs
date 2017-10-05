@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "records, updating"
-  - "ODBC recordsets, updating"
-  - "recordsets, editing records"
-  - "updating recordsets"
-  - "recordsets, updating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["records, updating", "ODBC recordsets, updating", "recordsets, editing records", "updating recordsets", "recordsets, updating"]
 ms.assetid: 5ceecc06-7a86-43b1-93db-a54fb1e717c7
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Recordset: How Recordsets Update Records (ODBC)
 This topic applies to the MFC ODBC classes.  

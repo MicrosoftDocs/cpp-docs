@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "auto_inline_CPP"
-  - "vc-pragma.auto_inline"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pragmas, auto_inline"
-  - "auto_inline pragma"
+f1_keywords: ["auto_inline_CPP", "vc-pragma.auto_inline"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["pragmas, auto_inline", "auto_inline pragma"]
 ms.assetid: f7624cd1-be76-429a-881c-65c9040acf43
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # auto_inline
 Excludes any functions defined within the range where **off** is specified from being considered as candidates for automatic inline expansion.  

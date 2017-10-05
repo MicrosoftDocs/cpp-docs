@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/CLR"
-  - "VC.Project.VCNMakeTool.CompileAsManaged"
-  - "VC.Project.VCCLCompilerTool.CompileAsManaged"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cl.exe compiler, common language runtime option"
-  - "-clr compiler option [C++]"
-  - "clr compiler option [C++]"
-  - "/clr compiler option [C++]"
-  - "Managed Extensions for C++, compiling"
-  - "common language runtime, /clr compiler option"
+f1_keywords: ["/CLR", "VC.Project.VCNMakeTool.CompileAsManaged", "VC.Project.VCCLCompilerTool.CompileAsManaged"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-clr compiler option [C++]", "clr compiler option [C++]", "/clr compiler option [C++]", "Managed Extensions for C++, compiling", "common language runtime, /clr compiler option"]
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
 caps.latest.revision: 72
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /clr (Common Language Runtime Compilation)
 Enables applications and components to use features from the common language runtime (CLR).  

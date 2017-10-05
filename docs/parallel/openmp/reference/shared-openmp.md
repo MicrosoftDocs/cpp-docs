@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Shared"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "shared OpenMP clause"
+f1_keywords: ["Shared"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["shared OpenMP clause"]
 ms.assetid: 7887dc95-67a2-462f-a3a2-8e0632bf5d04
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # shared (OpenMP)
 Specifies that one or more variables should be shared among all threads.  

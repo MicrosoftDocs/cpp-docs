@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data access [C++], XML data"
-  - "XML [C++], accessing data"
-  - "CXMLAccessor class, retrieving XML data"
-  - "data [C++], XML data access"
-  - "rowsets [C++], retrieving XML data"
-  - "CStreamRowset class, retrieving XML data"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data access [C++], XML data", "XML [C++], accessing data", "CXMLAccessor class, retrieving XML data", "data [C++], XML data access", "rowsets [C++], retrieving XML data", "CStreamRowset class, retrieving XML data"]
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Accessing XML Data
 There are two separate methods of retrieving XML data from a data source: one uses [CStreamRowset](../../data/oledb/cstreamrowset-class.md) and the other uses [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md).  

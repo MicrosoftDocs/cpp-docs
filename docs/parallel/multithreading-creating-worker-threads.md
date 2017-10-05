@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multithreading [C++], worker threads"
-  - "background tasks [C++]"
-  - "threading [C++], worker threads"
-  - "worker threads [C++]"
-  - "threading [C++], creating threads"
-  - "threading [MFC], worker threads"
-  - "threading [C++], user input not required"
+dev_langs: ["C++"]
+helpviewer_keywords: ["multithreading [C++], worker threads", "background tasks [C++]", "threading [C++], worker threads", "worker threads [C++]", "threading [C++], creating threads", "threading [MFC], worker threads", "threading [C++], user input not required"]
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Multithreading: Creating Worker Threads
 A worker thread is commonly used to handle background tasks that the user should not have to wait for to continue using your application. Tasks such as recalculation and background printing are good examples of worker threads. This topic details the steps necessary to create a worker thread. Topics include:  

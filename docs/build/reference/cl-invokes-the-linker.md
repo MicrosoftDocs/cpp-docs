@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "cl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "compiling source code [C++], without linking"
-  - "invoking linker from the compiler"
-  - "LINK tool [C++], invoking from CL compiler"
-  - "cl.exe compiler [C++], compiling without linking"
-  - "cl.exe compiler [C++], controlling linker"
+f1_keywords: ["cl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["compiling source code [C++], without linking", "invoking linker from the compiler", "LINK tool [C++], invoking from CL compiler", "cl.exe compiler [C++], compiling without linking", "cl.exe compiler [C++], controlling linker"]
 ms.assetid: eae47ef7-09eb-40c9-b318-7c714cd452fc
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CL Invokes the Linker
 CL automatically invokes the linker after compiling unless the /c option is used. CL passes to the linker the names of .obj files created during compiling and the names of any other files specified on the command line. The linker uses the options listed in the LINK environment variable. You can use the /link option to specify linker options on the CL command line. Options that follow the /link option override those in the LINK environment variable. The options in the following table suppress linking.  

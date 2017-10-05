@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "omp_get_max_threads"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "omp_get_max_threads OpenMP function"
+f1_keywords: ["omp_get_max_threads"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["omp_get_max_threads OpenMP function"]
 ms.assetid: f47c3725-3e40-469f-8bc8-a1e47f264cc3
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # omp_get_max_threads
 Returns an integer that is equal to or greater than the number of threads that would be available if a parallel region without [num_threads](../../../parallel/openmp/reference/num-threads.md) were defined at that point in the code.  

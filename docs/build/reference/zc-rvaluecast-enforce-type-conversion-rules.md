@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "rvaluecast"
-  - "/Zc:rvalueCast"
-  - "VC.Project.VCCLCompilerTool.EnforceTypeConversionRules"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Zc compiler options (C++)"
-  - "rvaluecast"
-  - "Enforce type conversion rules"
-  - "/Zc compiler options (C++)"
-  - "Zc compiler options (C++)"
+f1_keywords: ["rvaluecast", "/Zc:rvalueCast", "VC.Project.VCCLCompilerTool.EnforceTypeConversionRules"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Zc compiler options (C++)", "rvaluecast", "Enforce type conversion rules", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 7825277d-e565-4c48-b0fb-76ac0b0c6e38
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /Zc:rvalueCast (Enforce type conversion rules)
 When the **/Zc:rvalueCast** option is specified, the compiler correctly identifies an rvalue reference type as the result of a cast operation in accordance with the C++11 standard. When the option is not specified, the compiler behavior is the same as in Visual Studio 2012. By default, **/Zc:rvalueCast** is off. For conformance and to eliminate errors in the use of casts, we recommend that you use **/Zc:rvalueCast**.  

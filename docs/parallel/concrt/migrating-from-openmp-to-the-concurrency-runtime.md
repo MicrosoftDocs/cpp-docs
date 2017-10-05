@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Concurrency Runtime, migrating from OpenMP"
-  - "OpenMP, migrating to the Concurrency Runtime"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Concurrency Runtime, migrating from OpenMP", "OpenMP, migrating to the Concurrency Runtime"]
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Migrating from OpenMP to the Concurrency Runtime
 The Concurrency Runtime enables a variety of programming models. These models may overlap or complement the models of other libraries. The documents in this section compare [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) to the Concurrency Runtime and provide examples about how to migrate existing OpenMP code to use the Concurrency Runtime.  

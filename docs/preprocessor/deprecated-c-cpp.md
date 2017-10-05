@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.deprecated"
-  - "deprecated_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "deprecated pragma"
-  - "pragmas, deprecated"
+f1_keywords: ["vc-pragma.deprecated", "deprecated_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["deprecated pragma", "pragmas, deprecated"]
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # deprecated (C/C++)
 The **deprecated** pragma lets you indicate that a function, type, or any other identifier may no longer be supported in a future release or should no longer be used.  

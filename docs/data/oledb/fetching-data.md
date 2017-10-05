@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data [C++], fetching"
-  - "rowsets [C++], fetching"
-  - "fetching"
-  - "OLE DB consumer templates [C++], fetching data"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data [C++], fetching", "rowsets [C++], fetching", "fetching", "OLE DB consumer templates [C++], fetching data"]
 ms.assetid: b07f747f-9855-4f27-a03d-b1d5b10fa284
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Fetching Data
 After you open the data source, session, and rowset objects, you can fetch data. Depending on the type of accessor you are using, you might need to bind columns.  

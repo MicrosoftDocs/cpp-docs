@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Visual C++, output files"
-  - "output files, organizing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Visual C++, output files", "output files, organizing"]
 ms.assetid: 521d95ea-2dcc-4da0-b5eb-ac3e57941446
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Organize Project Output Files for Builds
 This topic describes best practices for organizing project output files. Build errors can occur when you set up project output files incorrectly. This topic also outlines the advantages and disadvantages of each alternative for organizing your project output files.  

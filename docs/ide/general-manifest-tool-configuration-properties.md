@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCManifestTool.MergeRulesFile"
-  - "VC.Project.VCManifestTool.UseUnicodeResponseFiles"
-  - "VC.Project.VCManifestTool.SuppressStartupBanner"
-  - "VC.Project.VCManifestTool.UseFAT32Workaround"
-  - "VC.Project.VCManifestTool.VerboseOutput"
-  - "VC.Project.VCManifestTool.AssemblyIdentity"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.VCManifestTool.MergeRulesFile", "VC.Project.VCManifestTool.UseUnicodeResponseFiles", "VC.Project.VCManifestTool.SuppressStartupBanner", "VC.Project.VCManifestTool.UseFAT32Workaround", "VC.Project.VCManifestTool.VerboseOutput", "VC.Project.VCManifestTool.AssemblyIdentity"]
+dev_langs: ["C++"]
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # General, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
 Use this dialog box to specify general options for [Mt.exe](http://msdn.microsoft.com/library/aa375649).  

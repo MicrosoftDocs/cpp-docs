@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['IUMSCompletionList', 'CONCRTRM/concurrency::IUMSCompletionList', 'CONCRTRM/concurrency::IUMSCompletionList::IUMSCompletionList::GetUnblockNotifications']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IUMSCompletionList structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IUMSCompletionList structure"]
 ms.assetid: 81b5250e-3065-492c-b20d-2cdabf12271a
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IUMSCompletionList Structure
 Represents a UMS completion list. When a UMS thread blocks, the scheduler's designated scheduling context is dispatched in order to make a decision of what to schedule on the underlying virtual processor root while the original thread is blocked. When the original thread unblocks, the operating system queues it to the completion list which is accessible through this interface. The scheduler can query the completion list on the designated scheduling context or any other place it searches for work.  

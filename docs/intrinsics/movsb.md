@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__movsb"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "movsb instruction"
-  - "rep movsb instruction"
-  - "__movsb intrinsic"
+f1_keywords: ["__movsb"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["movsb instruction", "rep movsb instruction", "__movsb intrinsic"]
 ms.assetid: ba5469f6-f797-4cd2-bee8-74c7666c26d4
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __movsb
 **Microsoft Specific**  

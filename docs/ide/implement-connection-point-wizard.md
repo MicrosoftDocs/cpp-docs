@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.impl.cp.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Implement Connection Point Wizard [C++]"
+f1_keywords: ["vc.codewiz.impl.cp.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Implement Connection Point Wizard [C++]"]
 ms.assetid: c117f6c6-30f0-4adb-82b4-b1f34e0f0fa8
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Implement Connection Point Wizard
 This wizard implements a connection point for a COM object. A connectable object (that is, a source) can expose a connection point for its own interfaces or for any outgoing interface. Visual C++ and Windows both provide type libraries that have outgoing interfaces. Each outgoing interface can be implemented by a client on an object (that is, a sink).  

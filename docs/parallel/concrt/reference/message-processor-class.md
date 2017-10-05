@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['message_processor', 'AGENTS/concurrency::message_processor', 'AGENTS/concurrency::message_processor::async_send', 'AGENTS/concurrency::message_processor::sync_send', 'AGENTS/concurrency::message_processor::wait', 'AGENTS/concurrency::message_processor::process_incoming_message']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "message_processor class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["message_processor class"]
 ms.assetid: 23afb052-daa7-44ed-bf24-d2513db748da
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # message_processor Class
 The `message_processor` class is the abstract base class for processing of `message` objects. There is no guarantee on the ordering of the messages.  

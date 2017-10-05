@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "float keyword"
-  - "real*8 value"
-  - "floating-point numbers, IEEE representation"
-  - "double data type, floating-point representation"
-  - "IEEE floating point representation"
-  - "real*10 value"
-  - "long double"
-  - "real*4 value"
+dev_langs: ["C++"]
+helpviewer_keywords: ["float keyword", "real*8 value", "floating-point numbers, IEEE representation", "double data type, floating-point representation", "IEEE floating point representation", "real*10 value", "long double", "real*4 value"]
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IEEE Floating-Point Representation
 Microsoft Visual C++ is consistent with the IEEE numeric standards. There are three internal varieties of real numbers. Real\*4 and real\*8 are used in Visual C++. Real\*4 is declared using the word **float**. Real\*8 is declared using the word **double**. In Windows 32-bit programming, the `long double` data type maps to **double**. There is, however, assembly language support for computations using the real*10 data type.  

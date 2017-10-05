@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IDBSchemaRowsetImpl::SetRestrictions"
-  - "SetRestrictions"
-  - "IDBSchemaRowsetImpl.SetRestrictions"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetRestrictions method"
+f1_keywords: ["IDBSchemaRowsetImpl::SetRestrictions", "SetRestrictions", "IDBSchemaRowsetImpl.SetRestrictions"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetRestrictions method"]
 ms.assetid: 707d5065-b853-4d38-9b67-3066b4d3b279
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # IDBSchemaRowsetImpl::SetRestrictions
 Specifies which restrictions you support on a particular schema rowset.  

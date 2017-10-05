@@ -4,42 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], multithreading"
-  - "threading [MFC], synchronization classes"
-  - "resources [C++], multithreading"
-  - "thread-safe classes [C++]"
-  - "synchronization classes [C++]"
-  - "synchronization [C++], multithreading"
-  - "threading [MFC], thread-safe class design"
-  - "threading [C++], synchronization"
-  - "multithreading [C++], synchronization classes"
-  - "threading [C++], thread-safe class design"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC [C++], multithreading", "threading [MFC], synchronization classes", "resources [C++], multithreading", "thread-safe classes [C++]", "synchronization classes [C++]", "synchronization [C++], multithreading", "threading [MFC], thread-safe class design", "threading [C++], synchronization", "multithreading [C++], synchronization classes", "threading [C++], thread-safe class design"]
 ms.assetid: f266d4c6-0454-4bda-9758-26157ef74cc5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Multithreading: How to Use the Synchronization Classes
 Synchronizing resource access between threads is a common problem when writing multithreaded applications. Having two or more threads simultaneously access the same data can lead to undesirable and unpredictable results. For example, one thread could be updating the contents of a structure while another thread is reading the contents of the same structure. It is unknown what data the reading thread will receive: the old data, the newly written data, or possibly a mixture of both. MFC provides a number of synchronization and synchronization access classes to aid in solving this problem. This topic explains the classes available and how to use them to create thread-safe classes in a typical multithreaded application.  

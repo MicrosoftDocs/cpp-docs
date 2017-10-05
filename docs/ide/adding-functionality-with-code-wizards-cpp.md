@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.classes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "code wizards [C++]"
-  - "wizards [C++], code"
-  - "Visual C++ projects, adding functionality"
-  - "projects [C++], adding functionality"
-  - "class wizards [C++]"
+f1_keywords: ["vc.codewiz.classes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["code wizards [C++]", "wizards [C++], code", "Visual C++ projects, adding functionality", "projects [C++], adding functionality", "class wizards [C++]"]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Adding Functionality with Code Wizards (C++)
 Once you have created a project, you will want to change or add to that project's functionality. Such tasks include creating new classes, adding new member functions and variables, and adding Automation methods and properties. The code wizards are designed to let you do all these things.  

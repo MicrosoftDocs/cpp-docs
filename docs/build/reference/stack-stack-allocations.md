@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.StackReserveSize"
-  - "VC.Project.VCLinkerTool.StackCommitSize"
-  - "/stack"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "STACK linker option"
-  - "-STACK linker option"
-  - "memory allocation, stack"
-  - "/STACK linker option"
-  - "stack, setting size"
+f1_keywords: ["VC.Project.VCLinkerTool.StackReserveSize", "VC.Project.VCLinkerTool.StackCommitSize", "/stack"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["STACK linker option", "-STACK linker option", "memory allocation, stack", "/STACK linker option", "stack, setting size"]
 ms.assetid: 73283660-e4bd-47cc-b5ca-04c5d739034c
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /STACK (Stack Allocations)
 ```  

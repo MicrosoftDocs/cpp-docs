@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['unsupported_os', 'CONCRT/concurrency::unsupported_os', 'CONCRT/concurrency::unsupported_os::unsupported_os']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unsupported_os class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["unsupported_os class"]
 ms.assetid: 6fa57636-341b-4b51-84cc-261d283ff736
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # unsupported_os Class
 This class describes an exception thrown when an unsupported operating system is used.  

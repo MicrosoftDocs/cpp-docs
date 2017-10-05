@@ -4,55 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/rtc"
-  - "VC.Project.VCCLCompilerTool.SmallerTypeCheck"
-  - "VC.Project.VCCLCompilerTool.UninitializedVariableCheck"
-  - "VC.Project.VCCLCompilerTool.StackFrameCheck"
-  - "VC.Project.VCCLCompilerTool.BasicRuntimeChecks"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/RTCs compiler option [C++]"
-  - "-RTC1 compiler option [C++]"
-  - "run-time errors, error checks"
-  - "-RTCu compiler option [C++]"
-  - "/RTC1 compiler option [C++]"
-  - "/RTCc compiler option [C++]"
-  - "/RTCu compiler option [C++]"
-  - "__MSVC_RUNTIME_CHECKS macro"
-  - "-RTCs compiler option [C++]"
-  - "RTCs compiler option"
-  - "RTC1 compiler option"
-  - "run-time errors, run-time checks"
-  - "run-time checks, /RTC option"
-  - "RTCu compiler option"
-  - "RTCc compiler option"
-  - "-RTCc compiler option [C++]"
+f1_keywords: ["/rtc", "VC.Project.VCCLCompilerTool.SmallerTypeCheck", "VC.Project.VCCLCompilerTool.UninitializedVariableCheck", "VC.Project.VCCLCompilerTool.StackFrameCheck", "VC.Project.VCCLCompilerTool.BasicRuntimeChecks"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/RTCs compiler option [C++]", "-RTC1 compiler option [C++]", "run-time errors, error checks", "-RTCu compiler option [C++]", "/RTC1 compiler option [C++]", "/RTCc compiler option [C++]", "/RTCu compiler option [C++]", "__MSVC_RUNTIME_CHECKS macro", "-RTCs compiler option [C++]", "RTCs compiler option", "RTC1 compiler option", "run-time errors, run-time checks", "run-time checks, /RTC option", "RTCu compiler option", "RTCc compiler option", "-RTCc compiler option [C++]"]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /RTC (Run-Time Error Checks)
 Used to enable and disable the run-time error checks feature, in conjunction with the [runtime_checks](../../preprocessor/runtime-checks.md) pragma.  

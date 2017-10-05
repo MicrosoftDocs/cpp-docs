@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "transformer class, example"
-  - "data pipelines, using transformer [Concurrency Runtime]"
-  - "using transformer in data pipelines [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["transformer class, example", "data pipelines, using transformer [Concurrency Runtime]", "using transformer in data pipelines [Concurrency Runtime]"]
 ms.assetid: ca49cb3f-4dab-4b09-a9c9-d3a109ae4c29
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Use transformer in a Data Pipeline
 This topic contains a basic example that shows how to use the [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) class in a data pipeline. For a more complete example that uses a data pipeline to perform image processing, see [Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).  

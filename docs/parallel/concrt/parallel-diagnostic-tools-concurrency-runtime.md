@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Parallel Diagnostic Tools [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Parallel Diagnostic Tools [Concurrency Runtime]"]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Parallel Diagnostic Tools (Concurrency Runtime)
 [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] provides extensive support for debugging and profiling multi-threaded applications.  

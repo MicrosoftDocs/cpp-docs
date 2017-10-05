@@ -4,45 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "oversubscription [Concurrency Runtime]"
-  - "task scheduler [Concurrency Runtime], oversubscription"
-  - "schedule groups [Concurrency Runtime]"
-  - "task scheduler [Concurrency Runtime], lightweight tasks"
-  - "task scheduler [Concurrency Runtime]"
-  - "lightweight tasks [Concurrency Runtime]"
-  - "task scheduler [Concurrency Runtime], scheduler policies"
-  - "task scheduler [Concurrency Runtime], schedule groups"
-  - "wait function [Concurrency Runtime]"
-  - "task scheduler [Concurrency Runtime], scheduler instances"
-  - "scheduler instances [Concurrency Runtime]"
-  - "scheduler policies [Concurrency Runtime]"
-  - "task scheduler [Concurrency Runtime], wait function"
+dev_langs: ["C++"]
+helpviewer_keywords: ["oversubscription [Concurrency Runtime]", "task scheduler [Concurrency Runtime], oversubscription", "schedule groups [Concurrency Runtime]", "task scheduler [Concurrency Runtime], lightweight tasks", "task scheduler [Concurrency Runtime]", "lightweight tasks [Concurrency Runtime]", "task scheduler [Concurrency Runtime], scheduler policies", "task scheduler [Concurrency Runtime], schedule groups", "wait function [Concurrency Runtime]", "task scheduler [Concurrency Runtime], scheduler instances", "scheduler instances [Concurrency Runtime]", "scheduler policies [Concurrency Runtime]", "task scheduler [Concurrency Runtime], wait function"]
 ms.assetid: 9aba278c-e0c9-4ede-b7c6-fedf7a365d90
 caps.latest.revision: 42
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Task Scheduler (Concurrency Runtime)
 The topics in this part of the documentation describe the important features of the Concurrency Runtime Task Scheduler. The Task Scheduler is useful when you want fine-tune the performance of your existing code that uses the Concurrency Runtime.  

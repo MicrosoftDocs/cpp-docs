@@ -4,48 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/vms"
-  - "/vmm"
-  - "/vmv"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Virtual Inheritance compiler option"
-  - "general purpose representation compiler options"
-  - "vms compiler option [C++]"
-  - "vmm compiler option [C++]"
-  - "/vmm compiler option [C++]"
-  - "-vmm compiler option [C++]"
-  - "-vms compiler option [C++]"
-  - "/vms compiler option [C++]"
-  - "vmv compiler option [C++]"
-  - "/vmv compiler option [C++]"
-  - "Single Inheritance compiler option"
-  - "-vmv compiler option [C++]"
+f1_keywords: ["/vms", "/vmm", "/vmv"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Virtual Inheritance compiler option", "general purpose representation compiler options", "vms compiler option [C++]", "vmm compiler option [C++]", "/vmm compiler option [C++]", "-vmm compiler option [C++]", "-vms compiler option [C++]", "/vms compiler option [C++]", "vmv compiler option [C++]", "/vmv compiler option [C++]", "Single Inheritance compiler option", "-vmv compiler option [C++]"]
 ms.assetid: 0fcd7ae0-3031-4c62-a2a8-e154c8685dae
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /vmm, /vms, /vmv (General Purpose Representation)
 Used when [/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-representation-method.md) is selected as the [representation method](../../build/reference/vmb-vmg-representation-method.md). These options indicate the inheritance model of the not-yet-encountered class definition.  

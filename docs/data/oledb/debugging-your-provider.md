@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debugging [C++], providers"
-  - "OLE DB providers, debugging"
-  - "Visual C++ debugger, debugging providers"
-  - "Visual C++ debugger"
+dev_langs: ["C++"]
+helpviewer_keywords: ["debugging [C++], providers", "OLE DB providers, debugging", "Visual C++ debugger, debugging providers", "Visual C++ debugger"]
 ms.assetid: 90d4e7db-06ea-4de0-a7f4-4f3751d50d93
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Debugging Your Provider
 There are two ways to debug your provider:  

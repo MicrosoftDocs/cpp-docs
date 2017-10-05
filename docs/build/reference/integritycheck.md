@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/INTEGRITYCHECK"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-INTEGRITYCHECK editbin options"
-  - "/INTEGRITYCHECK editbin options"
-  - "INTEGRITYCHECK editbin options"
+f1_keywords: ["/INTEGRITYCHECK"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-INTEGRITYCHECK editbin options", "/INTEGRITYCHECK editbin options", "INTEGRITYCHECK editbin options"]
 ms.assetid: 2a293705-4396-421b-a5a5-693b4b867a85
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /INTEGRITYCHECK
 Specifies that the digital signature of the binary image must be checked at load time.  

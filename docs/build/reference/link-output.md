@@ -4,46 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "link"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mapfiles [C++]"
-  - "ILK files"
-  - "output files [C++], linker"
-  - "files [C++], LINK"
-  - ".ilk files"
-  - "LINK tool [C++], output"
-  - "import libraries [C++], creating"
-  - "executable files [C++], as linker output"
-  - "mapfiles [C++], LINK output"
-  - "linker [C++], output files"
-  - "DLLs [C++], as linker output"
-  - "LINK tool [C++], mapfile"
+f1_keywords: ["link"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mapfiles [C++]", "ILK files", "output files [C++], linker", "files [C++], LINK", ".ilk files", "LINK tool [C++], output", "import libraries [C++], creating", "executable files [C++], as linker output", "mapfiles [C++], LINK output", "linker [C++], output files", "DLLs [C++], as linker output", "LINK tool [C++], mapfile"]
 ms.assetid: a98b557c-1947-447a-be1f-616fb45a9580
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # LINK Output
 Link output includes .exe files, DLLs, mapfiles, and messages.  

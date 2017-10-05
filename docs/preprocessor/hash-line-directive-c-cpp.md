@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "#line"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "preprocessor, directives"
-  - "line directive (#line)"
-  - "#line directive"
+f1_keywords: ["#line"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["preprocessor, directives", "line directive (#line)", "#line directive"]
 ms.assetid: 585c1dc4-5184-4f01-98f4-80c1909744d7
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # #line Directive (C/C++)
 The `#line` directive tells the preprocessor to change the compiler's internally stored line number and filename to a given line number and filename.  

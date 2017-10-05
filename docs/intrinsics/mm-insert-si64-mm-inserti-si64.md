@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_mm_inserti_si64"
-  - "_mm_insert_si64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "insertq instruction"
-  - "_mm_insert_si64 intrinsic"
-  - "_mm_inserti_si64 intrinsic"
+f1_keywords: ["_mm_inserti_si64", "_mm_insert_si64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["insertq instruction", "_mm_insert_si64 intrinsic", "_mm_inserti_si64 intrinsic"]
 ms.assetid: 897a4b36-8b08-4b00-a18f-7850f5732d7d
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _mm_insert_si64, _mm_inserti_si64
 **Microsoft Specific**  

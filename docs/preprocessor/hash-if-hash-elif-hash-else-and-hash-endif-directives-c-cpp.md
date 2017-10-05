@@ -4,50 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "#else"
-  - "#endif"
-  - "#if"
-  - "#elif"
-  - "defined"
-  - "__has_include"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "#elif directive"
-  - "conditional compilation, directives"
-  - "endif directive (#endif)"
-  - "preprocessor, directives"
-  - "#else directive"
-  - "#endif directive"
-  - "if directive (#if)"
-  - "else directive (#else)"
-  - "#if directive"
-  - "elif directive (#elif)"
-  - "defined directive"
+f1_keywords: ["#else", "#endif", "#if", "#elif", "defined", "__has_include"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["#elif directive", "conditional compilation, directives", "endif directive (#endif)", "preprocessor, directives", "#else directive", "#endif directive", "if directive (#if)", "else directive (#else)", "#if directive", "elif directive (#elif)", "defined directive"]
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # #if, #elif, #else, and #endif Directives (C/C++)
 The `#if` directive, with the `#elif`, `#else`, and `#endif` directives, controls compilation of portions of a source file. If the expression you write (after the `#if`) has a nonzero value, the line group immediately following the `#if` directive is retained in the translation unit.  

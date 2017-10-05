@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "no_dual_interfaces"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "no_dual_interfaces attribute"
+f1_keywords: ["no_dual_interfaces"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["no_dual_interfaces attribute"]
 ms.assetid: 9acd5d9d-4a49-4cdc-9470-73a2c23cf512
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # no_dual_interfaces
 **C++ Specific**  

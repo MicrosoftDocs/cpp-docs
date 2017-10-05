@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['task', 'PPLTASKS/concurrency::task', 'PPLTASKS/concurrency::task::task', 'PPLTASKS/concurrency::task::get', 'PPLTASKS/concurrency::task::is_apartment_aware', 'PPLTASKS/concurrency::task::is_done', 'PPLTASKS/concurrency::task::scheduler', 'PPLTASKS/concurrency::task::then', 'PPLTASKS/concurrency::task::wait']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "task class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["task class"]
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # task Class (Concurrency Runtime)
 The Parallel Patterns Library (PPL) `task` class. A `task` object represents work that can be executed asynchronously, and concurrently with other tasks and parallel work produced by parallel algorithms in the Concurrency Runtime. It produces a result of type `_ResultType` on successful completion. Tasks of type `task<void>` produce no result. A task can be waited upon and canceled independently of other tasks. It can also be composed with other tasks using continuations( `then`), and join( `when_all`) and choice( `when_any`) patterns.  

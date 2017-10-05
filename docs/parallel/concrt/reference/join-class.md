@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['join', 'AGENTS/concurrency::join', 'AGENTS/concurrency::join::join', 'AGENTS/concurrency::join::accept_message', 'AGENTS/concurrency::join::consume_message', 'AGENTS/concurrency::join::link_target_notification', 'AGENTS/concurrency::join::propagate_message', 'AGENTS/concurrency::join::propagate_to_any_targets', 'AGENTS/concurrency::join::release_message', 'AGENTS/concurrency::join::reserve_message', 'AGENTS/concurrency::join::resume_propagation']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "join class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["join class"]
 ms.assetid: d2217119-70a1-40b6-809f-c1c13a571c3f
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # join Class
 A `join` messaging block is a single-target, multi-source, ordered `propagator_block` which combines together messages of type `T` from each of its sources.  

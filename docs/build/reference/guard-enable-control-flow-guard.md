@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/guard"
-  - "VC.Project.VCCLCompilerTool.ControlFlowGuard"
-dev_langs: 
-  - "C++"
+f1_keywords: ["/guard", "VC.Project.VCCLCompilerTool.ControlFlowGuard"]
+dev_langs: ["C++"]
 ms.assetid: be495323-f59f-4cf3-a6b6-8ee69e6a19dd
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /guard (Enable Control Flow Guard)
 Enable compiler generation of Control Flow Guard security checks.  

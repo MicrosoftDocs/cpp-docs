@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.classes.adding"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL projects, adding classes"
-  - "classes [C++], creating"
-  - "classes [C++], adding"
+f1_keywords: ["vc.codewiz.classes.adding"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL projects, adding classes", "classes [C++], creating", "classes [C++], adding"]
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Adding a Class (Visual C++)
 To add a class in a Visual C++ project, in **Solution Explorer**, right-click the project, click **Add**, and then click **Class**. This opens the [Add Class Dialog Box](../ide/add-class-dialog-box.md) dialog box.  

@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.UsePrecompiledHeader"
-  - "/yc"
-  - "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderThrough"
-  - "VC.Project.VCCLWCECompilerTool.UsePrecompiledHeader"
-  - "VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "precompiled header files, creating"
-  - "PCH files, creating"
-  - ".pch files, creating"
-  - "-Yc compiler option [C++]"
-  - "/Yc compiler option [C++]"
-  - "Yc compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.UsePrecompiledHeader", "/yc", "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderThrough", "VC.Project.VCCLWCECompilerTool.UsePrecompiledHeader", "VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", ".pch files, creating", "-Yc compiler option [C++]", "/Yc compiler option [C++]", "Yc compiler option [C++]"]
 ms.assetid: 47c2e555-b4f5-46e6-906e-ab5cf21f0678
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /Yc (Create Precompiled Header File)
 Instructs the compiler to create a precompiled header (.pch) file that represents the state of compilation at a certain point.  

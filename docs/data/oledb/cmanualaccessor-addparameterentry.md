@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CManualAccessor::AddParameterEntry"
-  - "ATL.CManualAccessor.AddParameterEntry"
-  - "CManualAccessor.AddParameterEntry"
-  - "AddParameterEntry"
-  - "ATL::CManualAccessor::AddParameterEntry"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AddParameterEntry method"
+f1_keywords: ["CManualAccessor::AddParameterEntry", "ATL.CManualAccessor.AddParameterEntry", "CManualAccessor.AddParameterEntry", "AddParameterEntry", "ATL::CManualAccessor::AddParameterEntry"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AddParameterEntry method"]
 ms.assetid: 9048b164-052b-41b1-a861-227fc529e0b5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CManualAccessor::AddParameterEntry
 Adds a parameter entry to the parameter entry structures.  

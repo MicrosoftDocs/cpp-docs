@@ -4,28 +4,13 @@ ms.custom: ""
 ms.date: "11/16/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-linux"
+ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
-translation.priority.ht: 
-    - "cs-cz"
-    - "de-de"
-    - "es-es"
-    - "fr-fr"
-    - "it-it"
-    - "ja-jp"
-    - "ko-kr"
-    - "pl-pl"
-    - "pt-br"
-    - "ru-ru"
-    - "tr-tr"
-    - "zh-cn"
-    - "zh-tw"
 ---
 
 # Configure a Linux Project

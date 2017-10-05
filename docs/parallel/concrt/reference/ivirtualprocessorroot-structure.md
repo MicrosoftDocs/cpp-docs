@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['IVirtualProcessorRoot', 'CONCRTRM/concurrency::IVirtualProcessorRoot', 'CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Activate', 'CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Deactivate', 'CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::EnsureAllTasksVisible', 'CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::GetId']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IVirtualProcessorRoot structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IVirtualProcessorRoot structure"]
 ms.assetid: 5ef371b8-9e4f-4fef-bb0d-49099693dd2b
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IVirtualProcessorRoot Structure
 An abstraction for a hardware thread on which a thread proxy can execute.  
