@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Critical"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "critical OpenMP directive"
+f1_keywords: ["Critical"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["critical OpenMP directive"]
 ms.assetid: 2ab87d6d-5ca4-43ae-9f0a-1f517a6a2bab
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # critical
 Specifies that code is only be executed on one thread at a time.  

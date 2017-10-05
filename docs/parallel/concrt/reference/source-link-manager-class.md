@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['source_link_manager', 'AGENTS/concurrency::source_link_manager', 'AGENTS/concurrency::source_link_manager::source_link_manager', 'AGENTS/concurrency::source_link_manager::add', 'AGENTS/concurrency::source_link_manager::begin', 'AGENTS/concurrency::source_link_manager::contains', 'AGENTS/concurrency::source_link_manager::count', 'AGENTS/concurrency::source_link_manager::reference', 'AGENTS/concurrency::source_link_manager::register_target_block', 'AGENTS/concurrency::source_link_manager::release', 'AGENTS/concurrency::source_link_manager::remove', 'AGENTS/concurrency::source_link_manager::set_bound']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "source_link_manager class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["source_link_manager class"]
 ms.assetid: 287487cf-e0fe-4c35-aa3c-24f081d1ddae
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # source_link_manager Class
 The `source_link_manager` object manages messaging block network links to `ISource` blocks.  

@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['SchedulerPolicy', 'concrt/concurrency::SchedulerPolicy', 'concrt/concurrency::SchedulerPolicy::SchedulerPolicy', 'concrt/concurrency::SchedulerPolicy::GetPolicyValue', 'concrt/concurrency::SchedulerPolicy::SetConcurrencyLimits', 'concrt/concurrency::SchedulerPolicy::SetPolicyValue']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SchedulerPolicy class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["SchedulerPolicy class"]
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # SchedulerPolicy Class
 The `SchedulerPolicy` class contains a set of key/value pairs, one for each policy element, that control the behavior of a scheduler instance.  

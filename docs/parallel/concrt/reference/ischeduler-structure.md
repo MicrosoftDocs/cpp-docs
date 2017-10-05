@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['IScheduler', 'CONCRTRM/concurrency::IScheduler', 'CONCRTRM/concurrency::IScheduler::IScheduler::AddVirtualProcessors', 'CONCRTRM/concurrency::IScheduler::IScheduler::GetId', 'CONCRTRM/concurrency::IScheduler::IScheduler::GetPolicy', 'CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyBusy', 'CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle', 'CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors', 'CONCRTRM/concurrency::IScheduler::IScheduler::Statistics']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IScheduler structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IScheduler structure"]
 ms.assetid: 471de85a-2b1a-4b6d-ab81-2eff2737161e
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IScheduler Structure
 An interface to an abstraction of a work scheduler. The Concurrency Runtime's Resource Manager uses this interface to communicate with work schedulers.  

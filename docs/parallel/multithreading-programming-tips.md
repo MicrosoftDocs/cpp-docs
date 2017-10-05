@@ -4,45 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multithreading [C++], programming tips"
-  - "handle maps [C++]"
-  - "access control [C++], multithreading"
-  - "objects [C++], multiple threads and"
-  - "non-MFC threads [C++]"
-  - "threading [MFC], programming tips"
-  - "critical sections [C++]"
-  - "synchronization [C++], multithreading"
-  - "programming [C++], multithreaded"
-  - "communications [C++], between threads"
-  - "threading [C++], best practices"
-  - "troubleshooting [C++], multithreading"
-  - "Windows handle maps [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["multithreading [C++], programming tips", "handle maps [C++]", "access control [C++], multithreading", "objects [C++], multiple threads and", "non-MFC threads [C++]", "threading [MFC], programming tips", "critical sections [C++]", "synchronization [C++], multithreading", "programming [C++], multithreaded", "communications [C++], between threads", "threading [C++], best practices", "troubleshooting [C++], multithreading", "Windows handle maps [C++]"]
 ms.assetid: ad14cc70-c91c-4c24-942f-13a75e58bf8a
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Multithreading: Programming Tips
 Multithreaded applications require stricter care than single-threaded applications when accessing data. Because there are multiple, independent paths of execution in use simultaneously in multithreaded applications, either the algorithms, the data, or both must be aware that data could be used by more than one thread at a time. This topic explains techniques for avoiding potential problems when programming multithreaded applications with the Microsoft Foundation Class (MFC) library.  

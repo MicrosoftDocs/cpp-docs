@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['concurrent_queue', 'CONCURRENT_QUEUE/concurrency::concurrent_queue', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::concurrent_queue', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::clear', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::empty', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::get_allocator', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::push', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::try_pop', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_begin', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_end', 'CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_size']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "concurrent_queue class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["concurrent_queue class"]
 ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # concurrent_queue Class
 The `concurrent_queue` class is a sequence container class that allows first-in, first-out access to its elements. It enables a limited set of concurrency-safe operations, such as `push` and `try_pop`.  

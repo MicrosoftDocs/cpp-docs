@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['multitype_join', 'AGENTS/concurrency::multitype_join', 'AGENTS/concurrency::multitype_join::multitype_join', 'AGENTS/concurrency::multitype_join::accept', 'AGENTS/concurrency::multitype_join::acquire_ref', 'AGENTS/concurrency::multitype_join::consume', 'AGENTS/concurrency::multitype_join::link_target', 'AGENTS/concurrency::multitype_join::release', 'AGENTS/concurrency::multitype_join::release_ref', 'AGENTS/concurrency::multitype_join::reserve', 'AGENTS/concurrency::multitype_join::unlink_target', 'AGENTS/concurrency::multitype_join::unlink_targets']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multitype_join class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["multitype_join class"]
 ms.assetid: 236e87a0-4867-49fd-869a-bef4010e49a7
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # multitype_join Class
 A `multitype_join` messaging block is a multi-source, single-target messaging block that combines together messages of different types from each of its sources and offers a tuple of the combined messages to its targets.  

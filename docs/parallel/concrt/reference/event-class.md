@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['event', 'CONCRT/concurrency::event', 'CONCRT/concurrency::event::reset', 'CONCRT/concurrency::event::set', 'CONCRT/concurrency::event::wait', 'CONCRT/concurrency::event::wait_for_multiple', 'CONCRT/concurrency::event::timeout_infinite']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["event class"]
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # event Class
 A manual reset event which is explicitly aware of the Concurrency Runtime.  

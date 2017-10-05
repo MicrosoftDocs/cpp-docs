@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['texture', 'AMP_GRAPHICS/texture', 'AMP_GRAPHICS/concurrency::graphics::texture::texture', 'AMP_GRAPHICS/concurrency::graphics::texture::copy_to', 'AMP_GRAPHICS/concurrency::graphics::texture::data', 'AMP_GRAPHICS/concurrency::graphics::texture::get', 'AMP_GRAPHICS/concurrency::graphics::texture::get_associated_accelerator_view', 'AMP_GRAPHICS/concurrency::graphics::texture::get_depth_pitch', 'AMP_GRAPHICS/concurrency::graphics::texture::get_row_pitch', 'AMP_GRAPHICS/concurrency::graphics::texture::set', 'AMP_GRAPHICS/concurrency::graphics::texture::rank', 'AMP_GRAPHICS/concurrency::graphics::texture::associated_accelerator_view', 'AMP_GRAPHICS/concurrency::graphics::texture::depth_pitch', 'AMP_GRAPHICS/concurrency::graphics::texture::row_pitch']
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # texture Class
 A texture is a data aggregate on an `accelerator_view` in the extent domain. It is a collection of variables, one for each element in an extent domain. Each variable holds a value corresponding to C++ primitive type ( `unsigned int`, `int`, `float`, `double`), a scalar type ( `norm`, or `unorm`), or a short vector type.  

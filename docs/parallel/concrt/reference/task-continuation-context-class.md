@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['task_continuation_context', 'PPLTASKS/concurrency::task_continuation_context', 'PPLTASKS/concurrency::task_continuation_context::get_current_winrt_context', 'PPLTASKS/concurrency::task_continuation_context::use_arbitrary', 'PPLTASKS/concurrency::task_continuation_context::use_current', 'PPLTASKS/concurrency::task_continuation_context::use_default', 'PPLTASKS/concurrency::task_continuation_context::use_synchronous_execution']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "task_continuation_context class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["task_continuation_context class"]
 ms.assetid: 1fb5a76a-3682-45c2-a615-8b6b527741f0
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # task_continuation_context Class
 The `task_continuation_context` class allows you to specify where you would like a continuation to be executed. It is only useful to use this class from a Windows Store app. For non-Windows Store apps, the task continuation's execution context is determined by the runtime, and not configurable.  

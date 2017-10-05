@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['multi_link_registry', 'AGENTS/concurrency::multi_link_registry', 'AGENTS/concurrency::multi_link_registry::multi_link_registry', 'AGENTS/concurrency::multi_link_registry::add', 'AGENTS/concurrency::multi_link_registry::begin', 'AGENTS/concurrency::multi_link_registry::contains', 'AGENTS/concurrency::multi_link_registry::count', 'AGENTS/concurrency::multi_link_registry::remove', 'AGENTS/concurrency::multi_link_registry::set_bound']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multi_link_registry class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["multi_link_registry class"]
 ms.assetid: b2aa73a8-e8a6-4255-b117-d07530c328b2
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # multi_link_registry Class
 The `multi_link_registry` object is a `network_link_registry` that manages multiple source blocks or multiple target blocks.  

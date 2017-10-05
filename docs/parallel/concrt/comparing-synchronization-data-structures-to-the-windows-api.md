@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "synchronization data structures, compared to Windows API"
-  - "event class, example"
+dev_langs: ["C++"]
+helpviewer_keywords: ["synchronization data structures, compared to Windows API", "event class, example"]
 ms.assetid: 8b0b1a3a-ef80-408c-91fa-93e6af920b4e
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Comparing Synchronization Data Structures to the Windows API
 This topic compares the behavior of the synchronization data structures that are provided by the Concurrency Runtime to those provided by the Windows API.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "omp_get_nested"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "omp_get_nested OpenMP function"
+f1_keywords: ["omp_get_nested"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["omp_get_nested OpenMP function"]
 ms.assetid: e9784847-516e-40d3-89f7-b8b6898d8667
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # omp_get_nested
 Returns a value that indicates if nested parallelism is enabled.  

@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['invalid_multiple_scheduling', 'CONCRT/concurrency::invalid_multiple_scheduling', 'CONCRT/concurrency::invalid_multiple_scheduling::invalid_multiple_scheduling']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "invalid_multiple_scheduling class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["invalid_multiple_scheduling class"]
 ms.assetid: e9a47cb7-a778-4df7-92b0-3752119fd4c7
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # invalid_multiple_scheduling Class
 This class describes an exception thrown when a `task_handle` object is scheduled multiple times using the `run` method of a `task_group` or `structured_task_group` object without an intervening call to either the `wait` or `run_and_wait` methods.  

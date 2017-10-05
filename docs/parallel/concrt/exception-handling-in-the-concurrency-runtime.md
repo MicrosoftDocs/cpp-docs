@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lightweight tasks, exception handling [Concurrency Runtime]"
-  - "exception handling [Concurrency Runtime]"
-  - "structured task groups, exception handling [Concurrency Runtime]"
-  - "agents, exception handling [Concurrency Runtime]"
-  - "task groups, exception handling [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["lightweight tasks, exception handling [Concurrency Runtime]", "exception handling [Concurrency Runtime]", "structured task groups, exception handling [Concurrency Runtime]", "agents, exception handling [Concurrency Runtime]", "task groups, exception handling [Concurrency Runtime]"]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Exception Handling in the Concurrency Runtime
 The Concurrency Runtime uses C++ exception handling to communicate many kinds of errors. These errors include invalid use of the runtime, runtime errors such as failure to acquire a resource, and errors that occur in work functions that you provide to tasks and task groups. When a task or task group throws an exception, the runtime holds that exception and marshals it to the context that waits for the task or task group to finish. For components such as lightweight tasks and agents, the runtime does not manage exceptions for you. In these cases, you must implement your own exception-handling mechanism. This topic describes how the runtime handles exceptions that are thrown by tasks, task groups, lightweight tasks, and asynchronous agents, and how to respond to exceptions in your applications.  

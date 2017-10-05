@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debugging, C++ Accelerated Massive Parallelism"
-  - "C++ AMP, debugging"
-  - "C++ Accelerated Massive Parallelism, debugging"
-  - "debugging, C++ AMP"
+dev_langs: ["C++"]
+helpviewer_keywords: ["debugging, C++ Accelerated Massive Parallelism", "C++ AMP, debugging", "C++ Accelerated Massive Parallelism, debugging", "debugging, C++ AMP"]
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Walkthrough: Debugging a C++ AMP Application
 This topic demonstrates how to debug an application that uses C++ Accelerated Massive Parallelism (C++ AMP) to take advantage of the graphics processing unit (GPU). It uses a parallel-reduction program that sums up a large array of integers. This walkthrough illustrates the following tasks:  

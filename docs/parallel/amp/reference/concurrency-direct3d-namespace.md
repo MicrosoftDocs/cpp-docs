@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp/Concurrency::direct3d"
-  - "amprt/Concurrency::direct3d"
-  - "amp_short_vectors/Concurrency::direct3d"
-  - "amp_graphics/Concurrency::direct3d"
-  - "amp_math/Concurrency::direct3d"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "direct3d namespace"
+f1_keywords: ["amp/Concurrency::direct3d", "amprt/Concurrency::direct3d", "amp_short_vectors/Concurrency::direct3d", "amp_graphics/Concurrency::direct3d", "amp_math/Concurrency::direct3d"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["direct3d namespace"]
 ms.assetid: 9566a2f1-4d5f-43e4-a3ac-676643d38420
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Concurrency::direct3d Namespace
 The `direct3d` namespace provides functions that support D3D interoperability. It enables seamless use of D3D resources for compute in AMP code as well as allow use of resources created in AMP in D3D code, without creating redundant intermediate copies. You can incrementally accelerate the compute intensive sections of your DirectX applications by using C++ AMP and use the D3D API on data produced from AMP computations.  

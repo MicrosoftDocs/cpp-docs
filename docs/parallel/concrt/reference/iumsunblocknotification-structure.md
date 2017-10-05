@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['IUMSUnblockNotification', 'CONCRTRM/concurrency::IUMSUnblockNotification', 'CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetContext', 'CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetNextUnblockNotification']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IUMSUnblockNotification structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IUMSUnblockNotification structure"]
 ms.assetid: eaca9529-c1cc-472b-8ec6-722a1ff0fa2a
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IUMSUnblockNotification Structure
 Represents a notification from the Resource Manager that a thread proxy which blocked and triggered a return to the scheduler's designated scheduling context has unblocked and is ready to be scheduled. This interface is invalid once the thread proxy's associated execution context, returned from the `GetContext` method, is rescheduled.  
