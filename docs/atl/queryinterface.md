@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "QueryInterface"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interfaces, pointers"
-  - "interfaces, availability"
-  - "QueryInterface method"
+f1_keywords: ["QueryInterface"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["interfaces, pointers", "interfaces, availability", "QueryInterface method"]
 ms.assetid: 62fce95e-aafa-4187-b50b-e6611b74c3b3
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # QueryInterface
 Although there are mechanisms by which an object can express the functionality it provides statically (before it is instantiated), the fundamental COM mechanism is to use the **IUnknown** method called [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521).  

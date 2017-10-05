@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::min"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "min function [STL/CLR]"
+f1_keywords: ["cliext::min"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["min function [STL/CLR]"]
 ms.assetid: 7a2c82d1-424c-48a9-a944-adcf95511aef
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # min (STL/CLR)
 Compares two objects and returns the lesser of the two, where the ordering criterion may be specified by a binary predicate.  

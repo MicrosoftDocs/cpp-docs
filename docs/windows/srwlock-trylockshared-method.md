@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "corewrappers/Microsoft::WRL::Wrappers::SRWLock::TryLockShared"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "TryLockShared method"
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::SRWLock::TryLockShared"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["TryLockShared method"]
 ms.assetid: 10cc198d-39a0-4d18-aa78-706744948668
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # SRWLock::TryLockShared Method
 Attempts to acquire a SRWLock object in shared mode for the current or specified SRWLock object.  

@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.symbol.shared.calculated"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "symbols, read-only"
-  - "symbols, shared"
-  - "symbols, calculated"
-  - "read-only symbols"
-  - "symbol directives"
-  - "calculated symbols"
-  - "shared symbols"
+f1_keywords: ["vc.editors.symbol.shared.calculated"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["symbols, read-only", "symbols, shared", "symbols, calculated", "read-only symbols", "symbol directives", "calculated symbols", "shared symbols"]
 ms.assetid: 32b77faf-a066-4371-a072-9a5b84c0766d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Including Shared (Read-Only) or Calculated Symbols
 The first time the development environment reads a resource file created by another application, it marks all included header files as read-only. Subsequently, you can use the [Resource Includes dialog box](../windows/resource-includes-dialog-box.md) to add additional read-only symbol header files.  

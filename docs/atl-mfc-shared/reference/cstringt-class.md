@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStringT', 'No header/ATL::CStringT', 'No header/ATL::CStringT::CStringT', 'No header/ATL::CStringT::AllocSysString', 'No header/ATL::CStringT::AnsiToOem', 'No header/ATL::CStringT::AppendFormat', 'No header/ATL::CStringT::Collate', 'No header/ATL::CStringT::CollateNoCase', 'No header/ATL::CStringT::Compare', 'No header/ATL::CStringT::CompareNoCase', 'No header/ATL::CStringT::Delete', 'No header/ATL::CStringT::Find', 'No header/ATL::CStringT::FindOneOf', 'No header/ATL::CStringT::Format', 'No header/ATL::CStringT::FormatMessage', 'No header/ATL::CStringT::FormatMessageV', 'No header/ATL::CStringT::FormatV', 'No header/ATL::CStringT::GetEnvironmentVariable', 'No header/ATL::CStringT::Insert', 'No header/ATL::CStringT::Left', 'No header/ATL::CStringT::LoadString', 'No header/ATL::CStringT::MakeLower', 'No header/ATL::CStringT::MakeReverse', 'No header/ATL::CStringT::MakeUpper', 'No header/ATL::CStringT::Mid', 'No header/ATL::CStringT::OemToAnsi', 'No header/ATL::CStringT::Remove', 'No header/ATL::CStringT::Replace', 'No header/ATL::CStringT::ReverseFind', 'No header/ATL::CStringT::Right', 'No header/ATL::CStringT::SetSysString', 'No header/ATL::CStringT::SpanExcluding', 'No header/ATL::CStringT::SpanIncluding', 'No header/ATL::CStringT::Tokenize', 'No header/ATL::CStringT::Trim', 'No header/ATL::CStringT::TrimLeft', 'No header/ATL::CStringT::TrimRight']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], in ATL"
-  - "shared classes, CStringT"
-  - "CStringT class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], in ATL", "shared classes, CStringT", "CStringT class"]
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
 caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CStringT Class
 This class represents a `CStringT` object.  

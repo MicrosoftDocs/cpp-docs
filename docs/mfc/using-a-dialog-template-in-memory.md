@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using a Dialog Template in Memory
 Instead of using the methods given in the [Dialog Creation table](../mfc/creating-a-dialog-class-with-code-wizards.md), you can create either kind of dialog box indirectly from a dialog template in memory. For more information, see class [CDialog](../mfc/reference/cdialog-class.md) in the *MFC Reference*.  

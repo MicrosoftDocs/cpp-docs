@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_set::insert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "insert member [STL/CLR]"
+f1_keywords: ["cliext::hash_set::insert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["insert member [STL/CLR]"]
 ms.assetid: 0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # hash_set::insert (STL/CLR)
 Adds elements.  

@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::COM_INTERFACE_ENTRY", "atlcom/ATL::COM_INTERFACE_ENTRY_IID", "atlcom/ATL::COM_INTERFACE_ENTRY_AGGREGATE", "atlcom/ATL::COM_INTERFACE_ENTRY_AGGREGATE_BLIND", "atlcom/ATL::COM_INTERFACE_ENTRY_AUTOAGGREGATE", "atlcom/ATL::COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND", "atlcom/ATL::COM_INTERFACE_ENTRY_BREAK", "atlcom/ATL::COM_INTERFACE_ENTRY_CACHED_TEAR_OFF", "atlcom/ATL::COM_INTERFACE_ENTRY_TEAR_OFF", "atlcom/ATL::COM_INTERFACE_ENTRY_CHAIN", "atlcom/ATL::COM_INTERFACE_ENTRY_FUNC", "atlcom/ATL::COM_INTERFACE_ENTRY_FUNC_BLIND", "atlcom/ATL::COM_INTERFACE_ENTRY_NOINTERFACE"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COM interfaces, COM interface entry macros"
+dev_langs: ["C++"]
+helpviewer_keywords: ["COM interfaces, COM interface entry macros"]
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 
 # COM_INTERFACE_ENTRY Macros  

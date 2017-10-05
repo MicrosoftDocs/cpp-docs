@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Custom Control"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [C++], templates"
-  - "custom controls [Visual Studio], dialog boxes"
-  - "custom controls [Visual Studio]"
-  - "dialog box controls, custom (user) controls"
-  - "Dialog editor, custom controls"
+f1_keywords: ["Custom Control"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [C++], templates", "custom controls [Visual Studio], dialog boxes", "custom controls [Visual Studio]", "dialog box controls, custom (user) controls", "Dialog editor, custom controls"]
 ms.assetid: f494b314-4000-4bbe-bbd0-4b18fb71ede1
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Custom Controls in the Dialog Editor
 The Dialog editor lets you use existing "custom" or "user" controls in a dialog box template.  

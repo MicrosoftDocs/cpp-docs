@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::BEGIN_SERVICE_MAP", "atlcom/ATL::END_SERVICE_MAP", "atlcom/ATL::SERVICE_ENTRY", "atlcom/ATL::SERVICE_ENTRY_CHAIN"]
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Service Map Macros
 These macros define service maps and entries.  

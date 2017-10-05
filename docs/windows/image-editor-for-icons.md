@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.cursor.F1"
-  - "vc.editors.icon.F1"
-  - "vc.editors.cursor"
-  - "vc.editors.bitmap.F1"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "editors, images"
-  - "resource editors, graphics"
-  - "Image editor [C++]"
-  - "resource editors, Image editor"
+f1_keywords: ["vc.editors.cursor.F1", "vc.editors.icon.F1", "vc.editors.cursor", "vc.editors.bitmap.F1"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["editors, images", "resource editors, graphics", "Image editor [C++]", "resource editors, Image editor"]
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Image Editor for Icons
 The Image editor has an extensive set of tools for creating and editing images, as well as features to help you create toolbar bitmaps. In addition to bitmaps, icons, and cursors, you can edit images in GIF or JPEG format using commands on the **Image** menu and tools on the **Image Editor** toolbar.  

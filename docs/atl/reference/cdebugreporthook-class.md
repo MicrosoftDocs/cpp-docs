@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDebugReportHook', 'ATLUTIL/ATL::CDebugReportHook', 'ATLUTIL/ATL::CDebugReportHook::CDebugReportHook', 'ATLUTIL/ATL::CDebugReportHook::CDebugReportHookProc', 'ATLUTIL/ATL::CDebugReportHook::RemoveHook', 'ATLUTIL/ATL::CDebugReportHook::SetHook', 'ATLUTIL/ATL::CDebugReportHook::SetPipeName', 'ATLUTIL/ATL::CDebugReportHook::SetTimeout']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDebugReportHook class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDebugReportHook class"]
 ms.assetid: 798076c3-6e63-4286-83b8-aa1bbcd0c20c
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDebugReportHook Class
 Use this class to send debug reports to a named pipe.  

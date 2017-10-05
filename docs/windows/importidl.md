@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.importidl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "importidl attribute"
+f1_keywords: ["vc-attr.importidl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["importidl attribute"]
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # importidl
 Inserts the specified .idl file into the generated .idl file.  

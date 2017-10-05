@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::Details::CreateActivationFactory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateActivationFactory function"
+f1_keywords: ["module/Microsoft::WRL::Details::CreateActivationFactory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateActivationFactory function"]
 ms.assetid: a1a53e04-6757-4faf-a4c8-ecf06e43b959
 caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CreateActivationFactory Function
 Creates a factory that produces instances of the specified class that can be activated by the Windows Runtime.  

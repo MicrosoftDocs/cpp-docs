@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.dialog.combo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "combo boxes, sizing"
-  - "controls [C++], sizing"
+f1_keywords: ["vc.editors.dialog.combo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["combo boxes, sizing", "controls [C++], sizing"]
 ms.assetid: 51fb53cf-9ddf-4a20-962e-8553938e55ee
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Setting the Size of the Combo Box and Its Drop-Down List
 You can size a combo box when you add it to the dialog box. You can also specify the size of the drop-down list box.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComModule', 'ATLBASE/ATL::CComModule', 'ATLBASE/ATL::CComModule::GetClassObject', 'ATLBASE/ATL::CComModule::GetModuleInstance', 'ATLBASE/ATL::CComModule::GetResourceInstance', 'ATLBASE/ATL::CComModule::GetTypeLibInstance', 'ATLBASE/ATL::CComModule::Init', 'ATLBASE/ATL::CComModule::RegisterClassHelper', 'ATLBASE/ATL::CComModule::RegisterClassObjects', 'ATLBASE/ATL::CComModule::RegisterServer', 'ATLBASE/ATL::CComModule::RegisterTypeLib', 'ATLBASE/ATL::CComModule::RevokeClassObjects', 'ATLBASE/ATL::CComModule::Term', 'ATLBASE/ATL::CComModule::UnregisterClassHelper', 'ATLBASE/ATL::CComModule::UnregisterServer', 'ATLBASE/ATL::CComModule::UpdateRegistryClass', 'ATLBASE/ATL::CComModule::UpdateRegistryFromResourceD', 'ATLBASE/ATL::CComModule::UpdateRegistryFromResourceS', 'ATLBASE/ATL::CComModule::m_csObjMap', 'ATLBASE/ATL::CComModule::m_csTypeInfoHolder', 'ATLBASE/ATL::CComModule::m_csWindowCreate', 'ATLBASE/ATL::CComModule::m_hInst', 'ATLBASE/ATL::CComModule::m_hInstResource', 'ATLBASE/ATL::CComModule::m_hInstTypeLib', 'ATLBASE/ATL::CComModule::m_pObjMap']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComModule class"
-  - "DLL modules [C++], ATL"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComModule class", "DLL modules [C++], ATL"]
 ms.assetid: f5face2c-8fd8-40e6-9ec3-54ab74701769
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComModule Class
 As of ATL 7.0, `CComModule` is deprecated: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  

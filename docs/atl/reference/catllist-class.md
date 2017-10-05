@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlList', 'ATLCOLL/ATL::CAtlList', 'ATLCOLL/ATL::CAtlList::INARGTYPE', 'ATLCOLL/ATL::CAtlList::CAtlList', 'ATLCOLL/ATL::CAtlList::AddHead', 'ATLCOLL/ATL::CAtlList::AddHeadList', 'ATLCOLL/ATL::CAtlList::AddTail', 'ATLCOLL/ATL::CAtlList::AddTailList', 'ATLCOLL/ATL::CAtlList::AssertValid', 'ATLCOLL/ATL::CAtlList::Find', 'ATLCOLL/ATL::CAtlList::FindIndex', 'ATLCOLL/ATL::CAtlList::GetAt', 'ATLCOLL/ATL::CAtlList::GetCount', 'ATLCOLL/ATL::CAtlList::GetHead', 'ATLCOLL/ATL::CAtlList::GetHeadPosition', 'ATLCOLL/ATL::CAtlList::GetNext', 'ATLCOLL/ATL::CAtlList::GetPrev', 'ATLCOLL/ATL::CAtlList::GetTail', 'ATLCOLL/ATL::CAtlList::GetTailPosition', 'ATLCOLL/ATL::CAtlList::InsertAfter', 'ATLCOLL/ATL::CAtlList::InsertBefore', 'ATLCOLL/ATL::CAtlList::IsEmpty', 'ATLCOLL/ATL::CAtlList::MoveToHead', 'ATLCOLL/ATL::CAtlList::MoveToTail', 'ATLCOLL/ATL::CAtlList::RemoveAll', 'ATLCOLL/ATL::CAtlList::RemoveAt', 'ATLCOLL/ATL::CAtlList::RemoveHead', 'ATLCOLL/ATL::CAtlList::RemoveHeadNoReturn', 'ATLCOLL/ATL::CAtlList::RemoveTail', 'ATLCOLL/ATL::CAtlList::RemoveTailNoReturn', 'ATLCOLL/ATL::CAtlList::SetAt', 'ATLCOLL/ATL::CAtlList::SwapElements']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlList class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlList class"]
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAtlList Class
 This class provides methods for creating and managing a list object.  

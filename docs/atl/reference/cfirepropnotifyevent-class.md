@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CFirePropNotifyEvent', 'ATLCTL/ATL::CFirePropNotifyEvent', 'ATLCTL/ATL::CFirePropNotifyEvent::FireOnChanged', 'ATLCTL/ATL::CFirePropNotifyEvent::FireOnRequestEdit']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sinks, notifying of ATL events"
-  - "CFirePropNotifyEvent class"
-  - "connection points [C++], notifying of events"
+dev_langs: ["C++"]
+helpviewer_keywords: ["sinks, notifying of ATL events", "CFirePropNotifyEvent class", "connection points [C++], notifying of events"]
 ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CFirePropNotifyEvent Class
 This class provides methods for notifying the container's sink regarding control property changes.  

@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Toolbox [C++], Dialog Editor tab"
-  - "controls [C++], types"
-  - "syslink controls ino dialog boxes"
-  - "custom controls [Visual Studio], dialog boxes"
-  - "controls [C++], standard"
-  - "Dialog editor, creating controls"
-  - "controls [C++], adding to dialog boxes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls ino dialog boxes", "custom controls [Visual Studio], dialog boxes", "controls [C++], standard", "Dialog editor, creating controls", "controls [C++], adding to dialog boxes"]
 ms.assetid: 253885c2-dcb9-4d8e-ac9b-805ea31cbf5e
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Dialog Editor Tab, Toolbox
 The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the Dialog editor. To add controls to your new dialog box, drag controls from the Toolbox to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.  

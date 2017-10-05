@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.codewiz.class.atl.asp.asp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL Active Server Page Component Wizard, ASP"
+f1_keywords: ["vc.codewiz.class.atl.asp.asp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL Active Server Page Component Wizard, ASP"]
 ms.assetid: 4d8cafd6-5e12-4461-8911-29288896af3c
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ASP, ATL Active Server Page Component Wizard
 Use this page of the ATL Active Server Page Component Wizard to specify optional settings for handling information and state related to your ASP component.  

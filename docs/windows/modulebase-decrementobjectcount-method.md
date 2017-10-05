@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL::Details::ModuleBase::DecrementObjectCount"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DecrementObjectCount method"
+f1_keywords: ["implements/Microsoft::WRL::Details::ModuleBase::DecrementObjectCount"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DecrementObjectCount method"]
 ms.assetid: a016fb07-a36e-40cd-bc7b-8f6e85e256e7
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ModuleBase::DecrementObjectCount Method
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "gcnew"
-  - "ref new"
-  - "gcnew_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ref new keyword (C++)"
-  - "gcnew keyword [C++]"
+f1_keywords: ["gcnew", "ref new", "gcnew_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ref new keyword (C++)", "gcnew keyword [C++]"]
 ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ref new, gcnew  (C++ Component Extensions)
 The `ref new` aggregate keyword allocates an instance of a type that is garbage collected when the object becomes inaccessible, and that returns a handle ([^](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)) to the allocated object.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.propget"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "propget attribute"
+f1_keywords: ["vc-attr.propget"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["propget attribute"]
 ms.assetid: c9d4a97f-36dd-4b61-8eb0-b1a217598f14
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # propget
 Specifies a property accessor function.  

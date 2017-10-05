@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data marshaling [C++], callbacks and delegates"
-  - "interop [C++], callbacks and delegates"
-  - "platform invoke [C++], callbacks and delegates"
-  - "marshaling [C++], callbacks and delegates"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data marshaling [C++], callbacks and delegates", "interop [C++], callbacks and delegates", "platform invoke [C++], callbacks and delegates", "marshaling [C++], callbacks and delegates"]
 ms.assetid: dcf396fd-a91d-49c0-ab0b-1ea160668a89
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Marshal Function Pointers Using PInvoke
 This topic explains how managed delegates can be used in place of function pointers when interoperating with unmanaged functions using .NET Framework P/Invoke features. However, Visual C++ programmers are encouraged to use the C++ Interop features instead (when possible) because P/Invoke provides little compile-time error reporting, is not type-safe, and can be tedious to implement. If the unmanaged API is packaged as a DLL and the source code is not available, P/Invoke is the only option. Otherwise, see the following topics:  

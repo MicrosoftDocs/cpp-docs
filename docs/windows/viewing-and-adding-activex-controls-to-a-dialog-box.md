@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.controls.activex"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog boxes [C++], adding ActiveX controls"
-  - "Insert ActiveX Control command"
-  - "ActiveX controls [C++], adding to dialog boxes"
+f1_keywords: ["vc.controls.activex"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["dialog boxes [C++], adding ActiveX controls", "Insert ActiveX Control command", "ActiveX controls [C++], adding to dialog boxes"]
 ms.assetid: e1c2e3ae-e1b0-40d3-9766-623007073856
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Viewing and Adding ActiveX Controls to a Dialog Box
 Visual Studio enables you to insert ActiveX controls into your dialog box.  

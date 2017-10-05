@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::operator>="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator>= member [STL/CLR]"
+f1_keywords: ["cliext::vector::operator>="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator>= member [STL/CLR]"]
 ms.assetid: c06f4489-f65a-4bd6-944f-9b23a2bb4e35
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # operator&gt;= (vector) (STL/CLR)
 Vector greater than or equal comparison.  

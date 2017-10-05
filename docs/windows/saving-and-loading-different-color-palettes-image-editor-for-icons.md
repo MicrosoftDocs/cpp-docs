@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.image.color"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "color palettes [C++]"
-  - "palettes"
-  - "palettes, Image editor"
-  - "colors [C++], Image editor"
-  - "Image editor [C++], palettes"
+f1_keywords: ["vc.editors.image.color"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["color palettes [C++]", "palettes", "palettes, Image editor", "colors [C++], Image editor", "Image editor [C++], palettes"]
 ms.assetid: 694b6346-e606-4f19-aa01-9b4ceb47f423
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Saving and Loading Different Color Palettes (Image Editor for Icons)
 You can save and load a Colors palette that contains [customized colors](../windows/customizing-or-changing-colors-image-editor-for-icons.md). (By default, the Colors palette most recently used is automatically loaded when you start Visual Studio.)  

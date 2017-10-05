@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Settings for the Toolbar Control
 The buttons on a toolbar can display a bitmap, a string, or both. By default, the image size is set to the dimensions of 16 by 15 pixels. All buttons are the same width, by default 24 by 22 pixels. A toolbar's height is determined by the height of the buttons, and a toolbar's width is the same as the width of the parent window's client area, also by default.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IPointerInactiveImpl', 'ATLCTL/ATL::IPointerInactiveImpl', 'ATLCTL/ATL::IPointerInactiveImpl::GetActivationPolicy', 'ATLCTL/ATL::IPointerInactiveImpl::OnInactiveMouseMove', 'ATLCTL/ATL::IPointerInactiveImpl::OnInactiveSetCursor']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IPointerInactive ATL implementation"
-  - "inactive objects"
-  - "IPointerInactiveImpl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IPointerInactive ATL implementation", "inactive objects", "IPointerInactiveImpl class"]
 ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IPointerInactiveImpl Class
 This class implements **IUnknown** and the [IPointerInactive](http://msdn.microsoft.com/library/windows/desktop/ms693712) interface methods.  

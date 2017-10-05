@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.resourcesymbols"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "New Symbol dialog box"
-  - "Resource Symbols dialog box"
-  - "Change Symbol dialog box"
+f1_keywords: ["vc.editors.resourcesymbols"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["New Symbol dialog box", "Resource Symbols dialog box", "Change Symbol dialog box"]
 ms.assetid: 9706cde3-1f48-4fcd-bedb-2b03b455e3c1
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Resource Symbols Dialog Box
 The **Resource Symbols** dialog box allows you to add new resource symbols, change the symbols that are displayed, or skip to the location in the source code where a symbol is in use.  

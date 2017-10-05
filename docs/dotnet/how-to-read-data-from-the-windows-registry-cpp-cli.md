@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Visual C++, reading from Windows Registry"
-  - "registry, reading"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Visual C++, reading from Windows Registry", "registry, reading"]
 ms.assetid: aebf52c0-acc7-40e2-adbc-d34e0a1e467e
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Read Data from the Windows Registry (C++/CLI)
 The following code example uses the <xref:Microsoft.Win32.Registry.CurrentUser> key to read data from the Windows registry. First, the subkeys are enumerated using the <xref:Microsoft.Win32.RegistryKey.GetSubKeyNames%2A> method and then the Identities subkey is opened using the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method. Like the root keys, each subkey is represented by the <xref:Microsoft.Win32.RegistryKey> class. Finally, the new <xref:Microsoft.Win32.RegistryKey> object is used to enumerate the key/value pairs.  

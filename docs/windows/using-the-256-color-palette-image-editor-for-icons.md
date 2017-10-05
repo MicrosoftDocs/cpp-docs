@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "256-color palette"
-  - "colors, icons and cursors"
-  - "cursors, color"
-  - "color palettes, 256-color"
-  - "palettes, 256-color"
-  - "icons, color"
+dev_langs: ["C++"]
+helpviewer_keywords: ["256-color palette", "colors, icons and cursors", "cursors, color", "color palettes, 256-color", "palettes, 256-color", "icons, color"]
 ms.assetid: 1506ed00-669b-4a21-b1a4-39b6a84a78bb
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using the 256-Color Palette (Image Editor for Icons)
 To draw with a selection from the 256-color palette, you need to select the colors from the Colors palette in the [Colors window](../windows/colors-window-image-editor-for-icons.md).  

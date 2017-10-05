@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Making Owner-Drawn Header Controls
 You can define individual items of a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Header Controls](http://msdn.microsoft.com/library/windows/desktop/bb775238) in the Windows SDK.  

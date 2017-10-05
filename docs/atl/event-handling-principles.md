@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event handling, implementing"
-  - "event handling, advising event sources"
-  - "interfaces, event and event sink"
-  - "dual interfaces, event interfaces"
-  - "event handling, dual event interfaces"
+dev_langs: ["C++"]
+helpviewer_keywords: ["event handling, implementing", "event handling, advising event sources", "interfaces, event and event sink", "dual interfaces, event interfaces", "event handling, dual event interfaces"]
 ms.assetid: d17ca7cb-54f2-4658-ab8b-b721ac56801d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Event Handling Principles
 There are three steps common to all event handling. You will need to:  

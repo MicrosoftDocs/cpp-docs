@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlComModule', 'ATLBASE/ATL::CAtlComModule', 'ATLBASE/ATL::CAtlComModule::CAtlComModule', 'ATLBASE/ATL::CAtlComModule::RegisterServer', 'ATLBASE/ATL::CAtlComModule::RegisterTypeLib', 'ATLBASE/ATL::CAtlComModule::UnregisterServer', 'ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlComModule class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlComModule class"]
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAtlComModule Class
 This class implements a COM server module.  

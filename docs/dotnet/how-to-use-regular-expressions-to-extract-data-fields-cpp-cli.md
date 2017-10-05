@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], extracting data from"
-  - "formatted strings [C++]"
-  - "regular expressions [C++], extracting data fields"
-  - "data [C++], extracting from strings"
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], extracting data from", "formatted strings [C++]", "regular expressions [C++], extracting data fields", "data [C++], extracting from strings"]
 ms.assetid: b581d9b6-630e-48fa-94fe-20b0f7b89b06
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Use Regular Expressions to Extract Data Fields (C++/CLI)
 The following code example demonstrates the use of regular expressions to extract data from a formatted string. The following code example uses the <xref:System.Text.RegularExpressions.Regex> class to specify a pattern that corresponds to an e-mail address. This patter includes field identifiers that can be used to retrieve the user and host name portions of each e-mail address. The <xref:System.Text.RegularExpressions.Match> class is used to perform the actual pattern matching. If the given e-mail address is valid, the user name and host names are extracted and displayed.  

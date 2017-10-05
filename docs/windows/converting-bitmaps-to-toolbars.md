@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "bitmaps [C++], converting to toolbars"
-  - "Toolbar editor, converting bitmaps"
-  - "toolbars [C++], converting bitmaps"
+dev_langs: ["C++"]
+helpviewer_keywords: ["bitmaps [C++], converting to toolbars", "Toolbar editor, converting bitmaps", "toolbars [C++], converting bitmaps"]
 ms.assetid: 971c181b-40f5-44be-843d-677a7c235667
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Converting Bitmaps to Toolbars
 You can create a new toolbar by converting a bitmap. The graphic from the bitmap converts to the button images for a toolbar. Usually the bitmap contains several button images on a single bitmap, with one image for each button. Images can be any size; the default is 16 pixels wide and the height of the image. You can specify the size of the button images in the [New Toolbar Resource dialog box](../windows/new-toolbar-resource-dialog-box.md) when you choose Toolbar Editor from the **Image** menu while in the Image editor.  

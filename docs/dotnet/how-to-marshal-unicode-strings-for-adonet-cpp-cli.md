@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ADO.NET [C++], marshaling Unicode strings"
-  - "Unicode [C++], strings"
-  - "strings [C++], Unicode"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ADO.NET [C++], marshaling Unicode strings", "Unicode [C++], strings", "strings [C++], Unicode"]
 ms.assetid: 1da090ff-6b53-40be-841f-dc79dfe8ba10
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Marshal Unicode Strings for ADO.NET (C++/CLI)
 Demonstrates how to add a native Unicode string (`wchar_t *`) to a database and how to marshal a <xref:System.String?displayProperty=fullName> from a database to a native Unicode string.  

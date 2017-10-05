@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.accelerator.F1"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "accelerator tables [C++], editing"
-  - "tables [Visual Studio], accelerator key"
-  - "accelerator keys"
-  - "resource editors, Accelerator editor"
-  - "keyboard shortcuts [C++], Accelerator editor"
-  - "Accelerator editor"
+f1_keywords: ["vc.editors.accelerator.F1"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["accelerator tables [C++], editing", "tables [Visual Studio], accelerator key", "accelerator keys", "resource editors, Accelerator editor", "keyboard shortcuts [C++], Accelerator editor", "Accelerator editor"]
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Accelerator Editor
 An accelerator table is a Windows resource that contains a list of accelerator keys (also known as shortcut keys) and the command identifiers that are associated with them. A program can have more than one accelerator table.  
