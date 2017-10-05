@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL::RuntimeClassType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RuntimeClassType enumeration"
+f1_keywords: ["implements/Microsoft::WRL::RuntimeClassType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RuntimeClassType enumeration"]
 ms.assetid: d380712d-672e-4ea9-b7c5-cf9fa7dbb770
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # RuntimeClassType Enumeration
 Specifies the type of [RuntimeClass](../windows/runtimeclass-class.md) instance that is supported.  

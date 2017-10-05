@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "games [C++]"
-  - "Windows applications [C++], games"
-  - "DirectX [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["games [C++]", "Windows applications [C++], games", "DirectX [C++]"]
 ms.assetid: 863090ed-6091-45db-aabb-7fd02f76c1df
 caps.latest.revision: 14
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Resources for Creating a Game Using DirectX
 To create the best desktop games, use Visual C++ and DirectX together.  

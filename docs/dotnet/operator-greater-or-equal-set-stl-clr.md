@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::operator>="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator>= member [STL/CLR]"
+f1_keywords: ["cliext::set::operator>="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator>= member [STL/CLR]"]
 ms.assetid: d08a0fc9-02e4-4e05-b469-bac325c38370
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # operator&gt;= (set) (STL/CLR)
 List greater than or equal comparison.  

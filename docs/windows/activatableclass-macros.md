@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ActivatableClass"
-  - "ActivatableClassWithFactory"
-  - "ActivatableClassWithFactoryEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ActivatableClassWithFactory"
-  - "ActivatableClass"
-  - "ActivatableClassWithFactoryEx"
+f1_keywords: ["ActivatableClass", "ActivatableClassWithFactory", "ActivatableClassWithFactoryEx"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ActivatableClassWithFactory", "ActivatableClass", "ActivatableClassWithFactoryEx"]
 ms.assetid: 9bd64709-ec2c-4678-8c96-ea5982622bdd
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ActivatableClass Macros
 Populates an internal cache that contains a factory that can create an instance of the specified class.  

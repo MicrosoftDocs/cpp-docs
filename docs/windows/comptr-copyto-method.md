@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "client/Microsoft::WRL::ComPtr::CopyTo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CopyTo method"
+f1_keywords: ["client/Microsoft::WRL::ComPtr::CopyTo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CopyTo method"]
 ms.assetid: 8801bc49-6db4-4393-a55f-a701ae3b8718
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ComPtr::CopyTo Method
 Copies the current or specified interface associated with this ComPtr to the specified pointer.  

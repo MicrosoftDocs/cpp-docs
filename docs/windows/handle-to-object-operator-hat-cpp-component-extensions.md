@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "^ handle to object [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["^ handle to object [C++]"]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Handle to Object Operator (^)  (C++ Component Extensions)
 The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](../cpp/overview-of-declarators.md) to mean that the declared object should be automatically deleted when the system determines that the object is no longer accessible.  

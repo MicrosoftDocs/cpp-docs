@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "accelerator properties"
-  - "properties [C++], accelerator properties"
-  - "Type property"
-  - "Key property"
-  - "Modifier property"
+dev_langs: ["C++"]
+helpviewer_keywords: ["accelerator properties", "properties [C++], accelerator properties", "Type property", "Key property", "Modifier property"]
 ms.assetid: 0fce9156-3025-4e18-b034-e219a4c65812
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Setting Accelerator Properties
 In Visual C++ .NET, you can set accelerator properties in the [Properties window](/visualstudio/ide/reference/properties-window) at any time. You can also use the Accelerator editor to modify the accelerator properties in the accelerator table. Changes made using the Properties window or the Accelerator editor have the same result: edits are immediately reflected in the accelerator table.  

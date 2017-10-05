@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.version.F1"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Version Information editor, about Version Information editor"
-  - "editors, Version Information"
-  - "resource editors, Version Information editor"
+f1_keywords: ["vc.editors.version.F1"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Version Information editor, about Version Information editor", "editors, Version Information", "resource editors, Version Information editor"]
 ms.assetid: 772e6f19-f765-4cec-9521-0ad3eeb99f9b
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Version Information Editor
 Version information consists of company and product identification, a product release number, and copyright and trademark notification. With the Version Information editor, you create and maintain this data, which is stored in the version information resource. The version information resource is not required by an application, but it is a useful place to collect information that identifies the application. Version information is also used by setup APIs.  

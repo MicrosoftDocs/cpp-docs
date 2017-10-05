@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.symbol.changing.value"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "numeric values"
-  - "symbols, numeric values"
-  - "numeric values, changing symbols"
+f1_keywords: ["vc.editors.symbol.changing.value"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["numeric values", "symbols, numeric values", "numeric values, changing symbols"]
 ms.assetid: 468e903b-9c07-4251-ae09-3b6cb754cc2b
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Changing a Symbol&#39;s Numeric Value
 For symbols associated with a single resource, you can use the [Properties Window](/visualstudio/ide/reference/properties-window) to change the symbol value. You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the value of symbols not currently assigned to a resource. For more information, see [Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md).  

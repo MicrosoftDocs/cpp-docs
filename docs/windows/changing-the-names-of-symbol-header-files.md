@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.symbol.changing.header"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resource files, multiple"
-  - "Resource Includes dialog box"
-  - "symbol header files, changing names"
-  - "symbol header files"
-  - "header files, changing names"
-  - "names [C++], symbol header files"
-  - "symbols, symbol header files"
-  - "Resource.h"
+f1_keywords: ["vc.editors.symbol.changing.header"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resource files, multiple", "Resource Includes dialog box", "symbol header files, changing names", "symbol header files", "header files, changing names", "names [C++], symbol header files", "symbols, symbol header files", "Resource.h"]
 ms.assetid: b948284a-7899-402e-ab12-9f2c8480ca9d
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Changing the Names of Symbol Header Files
 Normally all symbol definitions are saved in Resource.h. However, you may need to change this include filename so that you can, for example, work with more than one resource file in the same directory.  

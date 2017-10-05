@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.out"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "out attribute"
+f1_keywords: ["vc-attr.out"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["out attribute"]
 ms.assetid: 5051b1bf-4949-4bf1-b82f-35e14f0f244b
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # out (C++)
 Identifies pointer parameters that are returned from the called procedure to the calling procedure (from the server to the client).  

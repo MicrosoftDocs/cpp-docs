@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "safe_cast"
-  - "safe_cast_cpp"
-  - "stdcli::language::safe_cast"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "safe_cast keyword [C++]"
+f1_keywords: ["safe_cast", "safe_cast_cpp", "stdcli::language::safe_cast"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["safe_cast keyword [C++]"]
 ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
 caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # safe_cast (C++ Component Extensions)
 The `safe_cast` operation returns the specified expression as the specified type, if successful; otherwise, throws `InvalidCastException`.  

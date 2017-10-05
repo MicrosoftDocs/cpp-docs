@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [C++], positioning"
-  - "Arrange Buttons command"
-  - "buttons, arranging push buttons in dialog boxes"
-  - "push buttons"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [C++], positioning", "Arrange Buttons command", "buttons, arranging push buttons in dialog boxes", "push buttons"]
 ms.assetid: 2e855cbf-90f8-4ff0-9511-508cf78e2cd5
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Arranging Push Buttons Along the Right or Bottom of a Dialog Box
 ### To arrange push buttons along the right or bottom of a dialog box  

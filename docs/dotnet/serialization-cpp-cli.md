@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "serialization [C++]"
-  - "SerializableAttribute class, managed applications"
-  - "NonSerializedAttribute class, managed applications"
-  - "managed code [C++], serializing"
-  - ".NET Framework [C++], serialization"
-  - "serialization [C++], about serialization"
+dev_langs: ["C++"]
+helpviewer_keywords: ["serialization [C++]", "SerializableAttribute class, managed applications", "NonSerializedAttribute class, managed applications", "managed code [C++], serializing", ".NET Framework [C++], serialization", "serialization [C++], about serialization"]
 ms.assetid: 869010ca-74e1-4989-b409-4643cdb94084
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Serialization (C++/CLI)
 Serialization (the process of storing the state of an object or member to a permanent medium) of managed classes (including individual fields or properties) is supported by the <xref:System.SerializableAttribute> and <xref:System.NonSerializedAttribute> classes.  

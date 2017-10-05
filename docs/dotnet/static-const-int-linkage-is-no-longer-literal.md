@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "literal attribute [C++]"
-  - "constants, declaring"
-  - "integral constant expressions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["literal attribute [C++]", "constants, declaring", "integral constant expressions"]
 ms.assetid: d2a5e3d2-ffb0-4b61-8114-bec5993a1195
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Static Const Int Linkage Is No Longer Literal
 Declaration of a constant member of a class has changed from Managed Extensions for C++ to Visual C++.  

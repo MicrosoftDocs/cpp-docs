@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [C++], undoing changes"
-  - "controls [C++], editing properties"
-  - "dialog box controls, editing properties"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [C++], undoing changes", "controls [C++], editing properties", "dialog box controls, editing properties"]
 ms.assetid: 9bdae21d-6dec-4344-a197-2ca4fc46d040
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Editing Control Properties
 ### To edit the properties of a control or controls  

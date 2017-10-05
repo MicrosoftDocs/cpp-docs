@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::size"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "size member [STL/CLR]"
+f1_keywords: ["cliext::set::size"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["size member [STL/CLR]"]
 ms.assetid: f231c515-b07e-4e18-90fd-535b13c2db70
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # set::size (STL/CLR)
 Counts the number of elements.  

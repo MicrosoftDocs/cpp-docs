@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "guides, clearing"
-  - "guides"
-  - "Dialog editor, guides and margins"
-  - "dialog box controls, placement"
-  - "controls [C++], guides and margins"
-  - "guides, creating"
-  - "guides, moving"
-  - "margins, moving"
+dev_langs: ["C++"]
+helpviewer_keywords: ["guides, clearing", "guides", "Dialog editor, guides and margins", "dialog box controls, placement", "controls [C++], guides and margins", "guides, creating", "guides, moving", "margins, moving"]
 ms.assetid: fafa4545-8f00-436f-b590-300e76601156
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Creating and Setting Guides and Margins
 Whether you are moving controls, adding controls, or rearranging a current layout, guides can help you align controls accurately within a dialog box. Guides appear as blue dotted lines across the dialog box displayed in the editor and corresponding arrows in the rulers (at the top and along the left side of the Dialog editor).  

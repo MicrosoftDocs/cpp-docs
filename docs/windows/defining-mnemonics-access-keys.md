@@ -4,43 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "access keys [C++], adding"
-  - "keyboard shortcuts [C++], controls"
-  - "dialog box controls, mnemonics"
-  - "access keys [C++], checking"
-  - "mnemonics, checking for duplicate"
-  - "mnemonics"
-  - "mnemonics, dialog box controls"
-  - "keyboard shortcuts [C++], uniqueness checking"
-  - "Check Mnemonics command"
-  - "controls [C++], access keys"
-  - "access keys [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["access keys [C++], adding", "keyboard shortcuts [C++], controls", "dialog box controls, mnemonics", "access keys [C++], checking", "mnemonics, checking for duplicate", "mnemonics", "mnemonics, dialog box controls", "keyboard shortcuts [C++], uniqueness checking", "Check Mnemonics command", "controls [C++], access keys", "access keys [C++]"]
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Defining Mnemonics (Access Keys)
 Normally, keyboard users move the input focus from one control to another in a dialog box with the TAB and ARROW keys. However, you can define an access key (a mnemonic or easy-to-remember name) that allows users to choose a control by pressing a single key.  

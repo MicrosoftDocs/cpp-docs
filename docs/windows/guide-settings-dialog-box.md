@@ -4,41 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DLUs (dialog units)"
-  - "Dialog editor, snap to guides"
-  - "grid spacing"
-  - "guides, settings"
-  - "dialog units (DLUs)"
-  - "layout grid in Dialog Editor"
-  - "snap to guides (Dialog editor)"
-  - "controls [C++], snap to guides/grid"
-  - "Guide Settings dialog box (Dialog editor)"
+dev_langs: ["C++"]
+helpviewer_keywords: ["DLUs (dialog units)", "Dialog editor, snap to guides", "grid spacing", "guides, settings", "dialog units (DLUs)", "layout grid in Dialog Editor", "snap to guides (Dialog editor)", "controls [C++], snap to guides/grid", "Guide Settings dialog box (Dialog editor)"]
 ms.assetid: 55381e1c-146a-4fa7-b1b3-b1492817615f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Guide Settings Dialog Box
 ## Layout guides  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::list"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<cliext/list> header [STL/CLR]"
-  - "list class [STL/CLR]"
-  - "<list> header [STL/CLR]"
+f1_keywords: ["cliext::list"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<cliext/list> header [STL/CLR]", "list class [STL/CLR]", "<list> header [STL/CLR]"]
 ms.assetid: a70c45c8-a257-4f6b-8434-b27ff6685bac
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # list (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `list` to manage a sequence of elements as a bidirectional linked list of nodes, each storing one element.  

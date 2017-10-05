@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "commands, copying on menus"
-  - "menu items, moving"
-  - "commands, moving on menus"
-  - "menu items, copying"
+dev_langs: ["C++"]
+helpviewer_keywords: ["commands, copying on menus", "menu items, moving", "commands, moving on menus", "menu items, copying"]
 ms.assetid: 1d8df535-9922-4579-a9c2-37aeac1856eb
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Moving and Copying Menus and Menu Commands
 You can move or copy menus and menu commands using the drag-and-drop method or by using commands on the shortcut menu (right-click menu).  

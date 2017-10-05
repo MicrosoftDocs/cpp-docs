@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "256-color palette"
-  - "cursors, color"
-  - "colors, icons"
-  - "colors, cursors"
-  - "icons, color"
+dev_langs: ["C++"]
+helpviewer_keywords: ["256-color palette", "cursors, color", "colors, icons", "colors, cursors", "icons, color"]
 ms.assetid: 2738089b-4fd3-4c45-96ae-6a15e4c6b780
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Creating a 256-Color Icon or Cursor (Image Editor for Icons)
 Using the Image editor, icons and cursors can be sized large (64 × 64) with a 256-color palette to choose from. After creating the resource, a device image style is selected.  

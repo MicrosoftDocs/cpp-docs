@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.wire_marshal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wire_marshal attribute"
+f1_keywords: ["vc-attr.wire_marshal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wire_marshal attribute"]
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # wire_marshal
 Specifies a data type that will be used for transmission instead of an application-specific data type.  

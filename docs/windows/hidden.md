@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.hidden"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hidden attribute"
+f1_keywords: ["vc-attr.hidden"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["hidden attribute"]
 ms.assetid: 199c96dd-fc07-46c7-af93-92020aebebe7
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # hidden
 Indicates that the item exists but should not be displayed in a user-oriented browser.  

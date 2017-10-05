@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.dialog.insertActiveXControls"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Insert ActiveX Control dialog box"
-  - "ActiveX controls [C++], adding to dialog boxes"
+f1_keywords: ["vc.editors.dialog.insertActiveXControls"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Insert ActiveX Control dialog box", "ActiveX controls [C++], adding to dialog boxes"]
 ms.assetid: 06638ea3-0726-40da-a989-9b89292d0e3d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Insert ActiveX Control Dialog Box
 This dialog box enables you to [insert ActiveX controls into your dialog box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md) while using the [Dialog editor](../windows/dialog-editor.md).  

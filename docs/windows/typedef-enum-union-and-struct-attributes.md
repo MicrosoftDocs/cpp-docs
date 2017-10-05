@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "union attributes"
-  - "attributes [C++], reference topics"
-  - "struct attributes"
-  - "typedef attributes"
-  - "enum attributes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["union attributes", "attributes [C++], reference topics", "struct attributes", "typedef attributes", "enum attributes"]
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Typedef, Enum, Union, and Struct Attributes
 The following attributes apply to the [typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1), [struct](../cpp/struct-cpp.md), and [enum](../cpp/enumerations-cpp.md) C++ keywords.  

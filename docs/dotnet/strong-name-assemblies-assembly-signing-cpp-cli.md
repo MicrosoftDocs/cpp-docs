@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "assemblies [C++]"
-  - "signing assemblies"
-  - ".NET Framework [C++], assembly signing"
-  - "assemblies [C++], signing"
-  - "linker [C++], assembly signing"
-  - "strong-named assemblies [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["assemblies [C++]", "signing assemblies", ".NET Framework [C++], assembly signing", "assemblies [C++], signing", "linker [C++], assembly signing", "strong-named assemblies [C++]"]
 ms.assetid: c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Strong Name Assemblies (Assembly Signing) (C++/CLI)
 This topic discusses how you can sign your assembly, often referred to as giving your assembly a strong name.  

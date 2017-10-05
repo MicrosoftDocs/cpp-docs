@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.binary.F1"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "editors, Binary"
-  - "resources [Visual Studio], editing"
-  - "resource editors, Binary editor"
-  - "Binary editor"
+f1_keywords: ["vc.editors.binary.F1"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["editors, Binary", "resources [Visual Studio], editing", "resource editors, Binary editor", "Binary editor"]
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Binary Editor
 > [!WARNING]

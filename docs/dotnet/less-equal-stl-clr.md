@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::less_equal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "less_equal function [STL/CLR]"
+f1_keywords: ["cliext::less_equal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["less_equal function [STL/CLR]"]
 ms.assetid: 87d5bebc-6e5a-4d70-b15c-7260d06d50f0
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # less_equal (STL/CLR)
 The template class describes a functor that, when called, returns true only if the first argument is less than or equal to the second. You use it specify a function object in terms of its argument type.  

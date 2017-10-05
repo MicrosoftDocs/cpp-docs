@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_map::end"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "end member [STL/CLR]"
+f1_keywords: ["cliext::hash_map::end"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["end member [STL/CLR]"]
 ms.assetid: bda12a48-cc2b-426f-a4e8-992c88f61736
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # hash_map::end (STL/CLR)
 Designates the end of the controlled sequence.  

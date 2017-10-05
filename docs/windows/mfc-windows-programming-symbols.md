@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC symbols"
-  - "symbols, MFC"
-  - "Windows programming MFC symbols [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC symbols", "symbols, MFC", "Windows programming MFC symbols [C++]"]
 ms.assetid: fcc2194d-b639-4e0c-be2c-75f5579f2780
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # MFC Windows Programming Symbols
 These symbols are also part of the MFC support files, but they support standard Windows application functions and actions. These symbols are mainly used with menus. When you are working with menus in the Menu Editor, these symbols will appear in the Property Window associated with common menu commands. For instance, if your application has a File menu with an Exit command, that command will be associated with the symbol ID_APP_EXIT in the [Properties window](/visualstudio/ide/reference/properties-window).  

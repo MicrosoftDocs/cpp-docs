@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.dialog.combo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "combo boxes [C++], Data property"
-  - "controls [Visual Studio], testing values in combo boxes"
-  - "combo boxes [C++], adding values"
-  - "combo boxes [C++], previewing values"
-  - "controls [C++], testing values in combo boxes"
-  - "Data property"
-  - "combo boxes [C++], testing values"
+f1_keywords: ["vc.editors.dialog.combo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["combo boxes [C++], Data property", "controls [Visual Studio], testing values in combo boxes", "combo boxes [C++], adding values", "combo boxes [C++], previewing values", "controls [C++], testing values in combo boxes", "Data property", "combo boxes [C++], testing values"]
 ms.assetid: 22a78f98-fada-48b3-90d8-7fa0d8e4de51
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Adding Values to a Combo Box Control
 You can add values to a combo box control as long as you have the Dialog editor open.  
