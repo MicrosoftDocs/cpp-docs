@@ -4,31 +4,15 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: a05db5eb-0844-4d9d-8b92-b1b2434be0ea
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Overview of x64 Calling Conventions
 Two important differences between x86 and [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] are the 64-bit addressing capability and a flat set of 16 64-bit registers for general use. Given the expanded register set, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] uses the [__fastcall](../cpp/fastcall.md) calling convention and a RISC-based exception-handling model. The `__fastcall` convention uses registers for the first four arguments and the stack frame to pass additional arguments.  

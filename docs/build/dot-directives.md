@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NMAKE program, dot directives"
-  - "dot directives in NMAKE"
+dev_langs: ["C++"]
+helpviewer_keywords: ["NMAKE program, dot directives", "dot directives in NMAKE"]
 ms.assetid: ab35da65-30b6-48b7-87d6-61503d7faf9f
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Dot Directives
 Specify dot directives outside a description block, at the start of a line. Dot directives begin with a period ( . ) and are followed by a colon (:). Spaces and tabs are allowed. Dot directive names are case sensitive and are uppercase.  

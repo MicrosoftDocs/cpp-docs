@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NMAKE program, macro substitution"
-  - "macros, NMAKE"
-  - "substitution macros in NMAKE"
+dev_langs: ["C++"]
+helpviewer_keywords: ["NMAKE program, macro substitution", "macros, NMAKE", "substitution macros in NMAKE"]
 ms.assetid: 47465cfe-fd92-49db-aebe-7c2d7ecceb73
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Macro Substitution
 When *macroname* is invoked, each occurrence of *string1* in its definition string is replaced by *string2*.  

@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCustomBuildStep.AdditionalInputs"
-  - "VC.Project.VCCustomBuildStep.CustomBuildAfterTargets"
-  - "VC.Project.VCCustomBuildStep.CustomBuildBeforeTargets"
-  - "VC.Project.VCCustomBuildStep.Outputs"
-  - "VC.Project.VCCustomBuildStep.Message"
-  - "VC.Project.VCCustomBuildStep.Command"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "project properties, custom build step"
-  - "custom build step (general)"
+f1_keywords: ["VC.Project.VCCustomBuildStep.AdditionalInputs", "VC.Project.VCCustomBuildStep.CustomBuildAfterTargets", "VC.Project.VCCustomBuildStep.CustomBuildBeforeTargets", "VC.Project.VCCustomBuildStep.Outputs", "VC.Project.VCCustomBuildStep.Message", "VC.Project.VCCustomBuildStep.Command"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["project properties, custom build step", "custom build step (general)"]
 ms.assetid: bd319741-0491-46c4-a428-7c61b4b46a02
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Custom Build Step Property Page: General
 For each combination of project configuration and target platform in your project, you can specify a custom step to be performed when the project is built.  

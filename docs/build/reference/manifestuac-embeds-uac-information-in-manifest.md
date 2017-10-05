@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.UACUIAccess"
-  - "VC.Project.VCLinkerTool.UACExecutionLevel"
-  - "VC.Project.VCLinkerTool.EnableUAC"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/MANIFESTUAC linker option"
-  - "MANIFESTUAC linker option"
-  - "-MANIFESTUAC linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.UACUIAccess", "VC.Project.VCLinkerTool.UACExecutionLevel", "VC.Project.VCLinkerTool.EnableUAC"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/MANIFESTUAC linker option", "MANIFESTUAC linker option", "-MANIFESTUAC linker option"]
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /MANIFESTUAC (Embeds UAC information in manifest)
 Specifies whether User Account Control (UAC) information is embedded in the program manifest.  

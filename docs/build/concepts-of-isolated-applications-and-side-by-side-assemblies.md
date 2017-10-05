@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "side-by-side assemblies [C++]"
-  - "isolated assemblies [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["side-by-side assemblies [C++]", "isolated assemblies [C++]"]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Concepts of Isolated Applications and Side-by-side Assemblies
 An application is considered an [isolated application](http://msdn.microsoft.com/library/aa375190) if all of its components are [side-by-side assemblies](http://msdn.microsoft.com/library/ff951640). A side-by-side assembly is a collection of resources—a group of DLLs, windows classes, COM servers, type libraries, or interfaces—that are deployed together and made available for an application to use at run time. Typically, a side-by-side assembly is one to several DLLs.  

@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.driver"
-  - "/driver"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "kernel mode driver"
-  - "-DRIVER linker option"
-  - "DRIVER linker option"
-  - "/DRIVER linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.driver", "/driver"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["kernel mode driver", "-DRIVER linker option", "DRIVER linker option", "/DRIVER linker option"]
 ms.assetid: aeee8e28-5d97-40f5-ba16-9f370fe8a1b8
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /DRIVER (Windows NT Kernel Mode Driver)
 ```  

@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "delayed loading of DLLs, helper function"
-  - "__delayLoadHelper2 function"
-  - "delayimp.lib"
-  - "__delayLoadHelper function"
-  - "delayhlp.cpp"
-  - "delayimp.h"
-  - "helper functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["delayed loading of DLLs, helper function", "__delayLoadHelper2 function", "delayimp.lib", "__delayLoadHelper function", "delayhlp.cpp", "delayimp.h", "helper functions"]
 ms.assetid: 6279c12c-d908-4967-b0b3-cabfc3e91d3d
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Understanding the Helper Function
 The helper function for linker-supported delayed loading is what actually loads the DLL at run time. You can modify the helper function to customize its behavior by writing your own function and linking it to your program instead of using the supplied helper function in Delayimp.lib. One helper function serves all delay loaded DLLs.  

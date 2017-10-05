@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - ".SETFRAME"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".SETFRAME directive"
+f1_keywords: [".SETFRAME"]
+dev_langs: ["C++"]
+helpviewer_keywords: [".SETFRAME directive"]
 ms.assetid: eaa9b5ed-4daa-4f1e-bdb6-100758007ab3
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # .SETFRAME
 Fills in the frame register field and offset in the unwind information using the specified register (`reg`) and offset (`offset`). The offset must be a multiple of 16 and less than or equal to 240. This directive also generates a `UWOP_SET_FPREG` unwind code entry for the specified register using the current prologue offset.  

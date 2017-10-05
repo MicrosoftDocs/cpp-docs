@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.files.projectandsolution"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "project files [C++]"
-  - "file types [C++], makefiles"
-  - ".sdf, browsing database file"
-  - "Makefile projects"
-  - "browsing database file, .sdf"
-  - "file types [C++], project files"
+f1_keywords: ["vc.files.projectandsolution"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["project files [C++]", "file types [C++], makefiles", ".sdf, browsing database file", "Makefile projects", "browsing database file, .sdf", "file types [C++], project files"]
 ms.assetid: 5823b954-36cf-42d3-8fd5-25bab3ef63d9
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Project and Solution Files
 The following files are created when you create a project in Visual Studio. They are used to manage project files in the solution.  

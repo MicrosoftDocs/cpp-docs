@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Add New Item"
-  - "Add New Item templates"
-  - "Add New Item command"
-  - "templates, Add New Item"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Add New Item", "Add New Item templates", "Add New Item command", "templates, Add New Item"]
 ms.assetid: 286d1be6-0473-407f-9a51-437dff1bfab7
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using Visual C++ Add New Item Templates
 You can easily add items that are common to Visual C++ projects by using the **Add New Item** command. When you use the **Add New Item** command, the `Add New Item` dialog box appears with a list of item templates, which add the appropriate files to your project.  

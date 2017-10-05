@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/CLRUNMANAGEDCODECHECK"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-CLRUNMANAGEDCODECHECK linker option"
-  - "/CLRUNMANAGEDCODECHECK linker option"
+f1_keywords: ["/CLRUNMANAGEDCODECHECK"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-CLRUNMANAGEDCODECHECK linker option", "/CLRUNMANAGEDCODECHECK linker option"]
 ms.assetid: 73abc426-dab0-45e2-be85-0f9a14206cc2
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /CLRUNMANAGEDCODECHECK (Add SupressUnmanagedCodeSecurityAttribute)
 **/CLRUNMANAGEDCODECHECK** specifies whether the linker will apply <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> to linker-generated `PInvoke` calls from managed code into native DLLs.  

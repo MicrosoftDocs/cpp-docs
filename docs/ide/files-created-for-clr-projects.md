@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Visual C++ projects, CLR programming"
-  - ".NET applications, C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Visual C++ projects, CLR programming", ".NET applications, C++"]
 ms.assetid: 59ae9020-5f26-4ad0-bbdd-97c2e2023a20
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Files Created for CLR Projects
 When you use Visual C++ templates to create your projects, several files are created, depending on which template you use. The following table lists all the files that are created by project templates for .NET Framework projects.  

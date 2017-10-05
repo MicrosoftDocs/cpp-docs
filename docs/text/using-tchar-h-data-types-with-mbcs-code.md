@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "tchar.h"
-  - "TCHAR"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mapping generic-text"
-  - "generic-text data types [C++]"
-  - "generic-text mappings [C++]"
-  - "MBCS [C++], generic-text mappings"
-  - "TCHAR.H data types, mapping"
-  - "mappings [C++], TCHAR.H"
+f1_keywords: ["tchar.h", "TCHAR"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mapping generic-text", "generic-text data types [C++]", "generic-text mappings [C++]", "MBCS [C++], generic-text mappings", "TCHAR.H data types, mapping", "mappings [C++], TCHAR.H"]
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
 caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using TCHAR.H Data Types with _MBCS Code
 When the manifest constant **_MBCS** is defined, a given generic-text routine maps to one of the following kinds of routines:  

@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "versions [C++]"
-  - "Visual C++, versions"
-  - "editions [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["versions [C++]", "Visual C++, versions", "editions [C++]"]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 caps.latest.revision: 51
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Visual C++ Tools and Features in Visual Studio Editions
 The following tables show Visual C++ features that are available in Visual Studio. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.  

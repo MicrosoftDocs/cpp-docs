@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "xdcmake"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "xdcmake program"
+f1_keywords: ["xdcmake"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["xdcmake program"]
 ms.assetid: 14e65747-d000-4343-854b-8393bf01cbac
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XDCMake Reference
 xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc file is created by the Visual C++ compiler for each source code file when source code is compiled with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) and when the source code file contains documentation comments marked up with XML tags.  

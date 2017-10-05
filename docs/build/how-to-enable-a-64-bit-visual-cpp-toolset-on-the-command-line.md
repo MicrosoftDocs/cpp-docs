@@ -4,41 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "x64 [C++]"
-  - "64-bit compiler [C++], command line usage"
-  - "64-bit compiler [C++], toolset enabling at command line"
-  - "command line [C++], 64-bit compiler"
-  - "Itanium [C++], command-line compiler"
-  - "IPF"
-  - "Itanium [C++]"
-  - "IPF, command-line compiler"
-  - "x64 [C++], command-line compiler"
+dev_langs: ["C++"]
+helpviewer_keywords: ["x64 [C++]", "64-bit compiler [C++], command line usage", "64-bit compiler [C++], toolset enabling at command line", "command line [C++], 64-bit compiler", "Itanium [C++], command-line compiler", "IPF", "Itanium [C++]", "IPF, command-line compiler", "x64 [C++], command-line compiler"]
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
 caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Enable a 64-Bit, x64 hosted Visual C++ toolset on the command line
 

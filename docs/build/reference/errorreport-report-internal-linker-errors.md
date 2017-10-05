@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/ERRORREPORT"
-  - "VC.Project.VCLinkerTool.ErrorReporting"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/ERRORREPORT linker option"
-  - "ERRORREPORT linker option"
-  - "-ERRORREPORT linker option"
+f1_keywords: ["/ERRORREPORT", "VC.Project.VCLinkerTool.ErrorReporting"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/ERRORREPORT linker option", "ERRORREPORT linker option", "-ERRORREPORT linker option"]
 ms.assetid: f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /ERRORREPORT (Report Internal Linker Errors)
 ```  

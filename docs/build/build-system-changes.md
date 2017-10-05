@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.msbuild.changes"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Build system changes, project file (.vcxprog)"
-  - "Build system changes, custom build rules"
-  - "Build system changes, MSBuild"
-  - "MSBuild, build system changes"
-  - "Build system changes, .vsprops"
-  - "Build system changes, $(Inherit)"
-  - "Build system changes, $(NoInherit)"
+f1_keywords: ["vc.msbuild.changes"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Build system changes, project file (.vcxprog)", "Build system changes, custom build rules", "Build system changes, MSBuild", "MSBuild, build system changes", "Build system changes, .vsprops", "Build system changes, $(Inherit)", "Build system changes, $(NoInherit)"]
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Build System Changes
 The MSBuild system is used to build Visual C++ projects. However, in Visual Studio 2008 and earlier releases, the VCBuild system was used. Certain file types and concepts that depended on VCBuild either do not exist or are represented differently in the current system. This document discusses the differences in the current build system.  

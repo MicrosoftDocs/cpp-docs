@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/keyfile"
-  - "VC.Project.VCLinkerTool.KeyFile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/KEYFILE linker option"
-  - "-KEYFILE linker option"
-  - "KEYFILE linker option"
+f1_keywords: ["/keyfile", "VC.Project.VCLinkerTool.KeyFile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/KEYFILE linker option", "-KEYFILE linker option", "KEYFILE linker option"]
 ms.assetid: 9b71f8c0-541c-4fe5-a0c7-9364f42ecb06
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /KEYFILE (Specify Key or Key Pair to Sign an Assembly)
 ```  

@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "builds [C++], events"
-  - "custom build steps [C++], customizing builds"
-  - "events [C++], build"
-  - "custom build steps [C++]"
-  - "build steps [C++]"
-  - "build events [C++], order of events and build steps"
-  - "build steps [C++], build events"
-  - "builds [C++], custom build steps"
+dev_langs: ["C++"]
+helpviewer_keywords: ["builds [C++], events", "custom build steps [C++], customizing builds", "events [C++], build", "custom build steps [C++]", "build steps [C++]", "build events [C++], order of events and build steps", "build steps [C++], build events", "builds [C++], custom build steps"]
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Understanding Custom Build Steps and Build Events
 From within the Visual C++ development environment, there are three basic ways to customize the build process:  

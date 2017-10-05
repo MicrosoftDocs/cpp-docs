@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.RegisterOutput"
-  - "VC.Project.VCLinkerTool.IgnoreImportLibrary"
-  - "VC.Project.VCLinkerTool.UseLibraryDependencyInputs"
-  - "VC.Project.VCLinkerTool.LinkLibraryDependencies"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "per-user redirection"
-  - "Linker property pages"
+f1_keywords: ["VC.Project.VCLinkerTool.RegisterOutput", "VC.Project.VCLinkerTool.IgnoreImportLibrary", "VC.Project.VCLinkerTool.UseLibraryDependencyInputs", "VC.Project.VCLinkerTool.LinkLibraryDependencies"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["per-user redirection", "Linker property pages"]
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Linker Property Pages
 This topic discusses the following properties on the **General** linker property page:  

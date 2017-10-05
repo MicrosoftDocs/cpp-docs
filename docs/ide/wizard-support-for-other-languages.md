@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.EastAsianLanguages"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wizards [C++], language support"
-  - "language support for MFC projects"
-  - "projects [C++], language support"
+f1_keywords: ["vc.appwiz.EastAsianLanguages"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wizards [C++], language support", "language support for MFC projects", "projects [C++], language support"]
 ms.assetid: b653c673-0687-455c-885f-15d7e2f4149d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Wizard Support for Other Languages
 When you install Visual Studio, the setup application detects the locale listed in your system and installs the appropriate language template or templates for that locale. For example, for Western European locales, setup installs English, French, Italian, Spanish, and German. These languages appear in the **Resource language** list on the [Application Type](../mfc/reference/application-type-mfc-application-wizard.md) page of the MFC Application Wizard.  
