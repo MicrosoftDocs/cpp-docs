@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IAtlStringMgr', 'ATLSIMPSTR/ATL::IAtlStringMgr', 'ATLSIMPSTR/ATL::Allocate', 'ATLSIMPSTR/ATL::Clone', 'ATLSIMPSTR/ATL::Free', 'ATLSIMPSTR/ATL::GetNilString', 'ATLSIMPSTR/ATL::Reallocate']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "shared classes, IAtlStringMgr"
-  - "memory, managing"
-  - "IAtlStringMgr class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["shared classes, IAtlStringMgr", "memory, managing", "IAtlStringMgr class"]
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IAtlStringMgr Class
 This class represents the interface to a `CStringT` memory manager.  

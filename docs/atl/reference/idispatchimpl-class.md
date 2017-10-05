@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IDispatchImpl', 'ATLCOM/ATL::IDispatchImpl', 'ATLCOM/ATL::IDispatchImpl::IDispatchImpl', 'ATLCOM/ATL::IDispatchImpl::GetIDsOfNames', 'ATLCOM/ATL::IDispatchImpl::GetTypeInfo', 'ATLCOM/ATL::IDispatchImpl::GetTypeInfoCount', 'ATLCOM/ATL::IDispatchImpl::Invoke']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dual interfaces, classes"
-  - "IDispatchImpl class"
-  - "IDispatch class support in ATL"
+dev_langs: ["C++"]
+helpviewer_keywords: ["dual interfaces, classes", "IDispatchImpl class", "IDispatch class support in ATL"]
 ms.assetid: 8108eb36-1228-4127-a203-3ab5ba488892
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IDispatchImpl Class
 Provides a default implementation for the `IDispatch` part of a dual interface.  

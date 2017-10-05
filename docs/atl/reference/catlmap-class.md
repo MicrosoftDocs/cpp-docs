@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlMap', 'ATLCOLL/ATL::CAtlMap', 'ATLCOLL/ATL::CAtlMap::KINARGTYPE', 'ATLCOLL/ATL::CAtlMap::KOUTARGTYPE', 'ATLCOLL/ATL::CAtlMap::VINARGTYPE', 'ATLCOLL/ATL::CAtlMap::VOUTARGTYPE', 'ATLCOLL/ATL::CPair::m_key', 'ATLCOLL/ATL::CPair::m_value', 'ATLCOLL/ATL::CAtlMap::CAtlMap', 'ATLCOLL/ATL::CAtlMap::AssertValid', 'ATLCOLL/ATL::CAtlMap::DisableAutoRehash', 'ATLCOLL/ATL::CAtlMap::EnableAutoRehash', 'ATLCOLL/ATL::CAtlMap::GetAt', 'ATLCOLL/ATL::CAtlMap::GetCount', 'ATLCOLL/ATL::CAtlMap::GetHashTableSize', 'ATLCOLL/ATL::CAtlMap::GetKeyAt', 'ATLCOLL/ATL::CAtlMap::GetNext', 'ATLCOLL/ATL::CAtlMap::GetNextAssoc', 'ATLCOLL/ATL::CAtlMap::GetNextKey', 'ATLCOLL/ATL::CAtlMap::GetNextValue', 'ATLCOLL/ATL::CAtlMap::GetStartPosition', 'ATLCOLL/ATL::CAtlMap::GetValueAt', 'ATLCOLL/ATL::CAtlMap::InitHashTable', 'ATLCOLL/ATL::CAtlMap::IsEmpty', 'ATLCOLL/ATL::CAtlMap::Lookup', 'ATLCOLL/ATL::CAtlMap::Rehash', 'ATLCOLL/ATL::CAtlMap::RemoveAll', 'ATLCOLL/ATL::CAtlMap::RemoveAtPos', 'ATLCOLL/ATL::CAtlMap::RemoveKey', 'ATLCOLL/ATL::CAtlMap::SetAt', 'ATLCOLL/ATL::CAtlMap::SetOptimalLoad', 'ATLCOLL/ATL::CAtlMap::SetValueAt']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlMap class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlMap class"]
 ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAtlMap Class
 This class provides methods for creating and managing a map object.  

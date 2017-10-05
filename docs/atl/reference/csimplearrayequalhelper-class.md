@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSimpleArrayEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleArrayEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleArrayEqualHelper::IsEqual']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSimpleArrayEqualHelper class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSimpleArrayEqualHelper class"]
 ms.assetid: a2b55d89-78c9-42ef-842c-5304c6d20ad6
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CSimpleArrayEqualHelper Class
 This class is a helper for the [CSimpleArray](../../atl/reference/csimplearray-class.md) class.  

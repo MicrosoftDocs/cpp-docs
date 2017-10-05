@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAutoVectorPtr', 'ATLBASE/ATL::CAutoVectorPtr', 'ATLBASE/ATL::CAutoVectorPtr::CAutoVectorPtr', 'ATLBASE/ATL::CAutoVectorPtr::Allocate', 'ATLBASE/ATL::CAutoVectorPtr::Attach', 'ATLBASE/ATL::CAutoVectorPtr::Detach', 'ATLBASE/ATL::CAutoVectorPtr::Free', 'ATLBASE/ATL::CAutoVectorPtr::m_p']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAutoVectorPtr class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAutoVectorPtr class"]
 ms.assetid: 0030362b-6bc4-4a47-9b5b-3c3899dceab4
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAutoVectorPtr Class
 This class represents a smart pointer object using vector new and delete operators.  

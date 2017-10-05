@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ISpecifyPropertyPages"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISpecifyPropertyPages method"
-  - "property pages, specifying"
+f1_keywords: ["ISpecifyPropertyPages"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISpecifyPropertyPages method", "property pages, specifying"]
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Specifying Property Pages
 When you create an ActiveX control, you will often want to associate it with property pages that can be used to set the properties of your control. Control containers use the **ISpecifyPropertyPages** interface to find out which property pages can be used to set your control's properties. You will need to implement this interface on your control.  

@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CString objects, basic operations"
-  - "string literals, CString operations"
-  - "literal strings, CString operations"
-  - "CString objects"
-  - "string comparison, CString operations"
-  - "characters, accessing in CStrings"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CString objects, basic operations", "string literals, CString operations", "literal strings, CString operations", "CString objects", "string comparison, CString operations", "characters, accessing in CStrings"]
 ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Basic CString Operations
 This topic explains the following basic [CString](../atl-mfc-shared/reference/cstringt-class.md) operations:  

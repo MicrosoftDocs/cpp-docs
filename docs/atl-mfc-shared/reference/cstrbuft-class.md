@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStrBufT', 'ATLSIMPSTR/ATL::CStrBufT', 'ATLSIMPSTR/ATL::CStrBufT::CStrBufT', 'ATLSIMPSTR/ATL::CStrBufT::SetLength', 'ATLSIMPSTR/ATL::CStrBufT::AUTO_LENGTH', 'ATLSIMPSTR/ATL::CStrBufT::SET_LENGTH']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], custom memory management"
-  - "CStrBufT class"
-  - "shared classes, CStrBufT"
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], custom memory management", "CStrBufT class", "shared classes, CStrBufT"]
 ms.assetid: 6b50fa8f-87e8-4ed4-a229-157ce128710f
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CStrBufT Class
 This class provides automatic resource cleanup for `GetBuffer` and `ReleaseBuffer` calls on an existing `CStringT` object.  

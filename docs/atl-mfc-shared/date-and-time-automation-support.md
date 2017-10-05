@@ -4,43 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "adding dates"
-  - "calculating dates and times"
-  - "formatting [Visual Studio], dates"
-  - "dates, Automation support"
-  - "elapsed time, calculating in Automation"
-  - "COleDateTime class, Automation date/time support"
-  - "COleDateTimeSpan class, Automation date/time support"
-  - "Automation, date and time support"
-  - "formatting [Visual Studio], time"
-  - "calculations, date and time"
-  - "time [Visual Studio], Automation support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["adding dates", "calculating dates and times", "formatting [Visual Studio], dates", "dates, Automation support", "elapsed time, calculating in Automation", "COleDateTime class, Automation date/time support", "COleDateTimeSpan class, Automation date/time support", "Automation, date and time support", "formatting [Visual Studio], time", "calculations, date and time", "time [Visual Studio], Automation support"]
 ms.assetid: 6eee94c4-943d-4ffc-bf7c-bdda89337ab0
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Date and Time: Automation Support
 This article describes how to take advantage of the class library services related to date and time management. Procedures described include:  

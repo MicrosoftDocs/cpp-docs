@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlServiceModuleT', 'ATLBASE/ATL::CAtlServiceModuleT', 'ATLBASE/ATL::CAtlServiceModuleT::CAtlServiceModuleT', 'ATLBASE/ATL::CAtlServiceModuleT::Handler', 'ATLBASE/ATL::CAtlServiceModuleT::InitializeSecurity', 'ATLBASE/ATL::CAtlServiceModuleT::Install', 'ATLBASE/ATL::CAtlServiceModuleT::IsInstalled', 'ATLBASE/ATL::CAtlServiceModuleT::LogEvent', 'ATLBASE/ATL::CAtlServiceModuleT::OnContinue', 'ATLBASE/ATL::CAtlServiceModuleT::OnInterrogate', 'ATLBASE/ATL::CAtlServiceModuleT::OnPause', 'ATLBASE/ATL::CAtlServiceModuleT::OnShutdown', 'ATLBASE/ATL::CAtlServiceModuleT::OnStop', 'ATLBASE/ATL::CAtlServiceModuleT::OnUnknownRequest', 'ATLBASE/ATL::CAtlServiceModuleT::ParseCommandLine', 'ATLBASE/ATL::CAtlServiceModuleT::PreMessageLoop', 'ATLBASE/ATL::CAtlServiceModuleT::RegisterAppId', 'ATLBASE/ATL::CAtlServiceModuleT::Run', 'ATLBASE/ATL::CAtlServiceModuleT::ServiceMain', 'ATLBASE/ATL::CAtlServiceModuleT::SetServiceStatus', 'ATLBASE/ATL::CAtlServiceModuleT::Start', 'ATLBASE/ATL::CAtlServiceModuleT::Uninstall', 'ATLBASE/ATL::CAtlServiceModuleT::Unlock', 'ATLBASE/ATL::CAtlServiceModuleT::UnregisterAppId', 'ATLBASE/ATL::CAtlServiceModuleT::WinMain', 'ATLBASE/ATL::CAtlServiceModuleT::m_bService', 'ATLBASE/ATL::CAtlServiceModuleT::m_dwThreadID', 'ATLBASE/ATL::CAtlServiceModuleT::m_hServiceStatus', 'ATLBASE/ATL::CAtlServiceModuleT::m_status', 'ATLBASE/ATL::CAtlServiceModuleT::m_szServiceName']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlServiceModuleT class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlServiceModuleT class"]
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAtlServiceModuleT Class
 This class implements a service.  

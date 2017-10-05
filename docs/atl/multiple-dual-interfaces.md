@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multiple dual interfaces"
-  - "COM_INTERFACE_ENTRY2 macro"
-  - "dual interfaces, exposing multiple"
-  - "multiple dual interfaces, exposing with ATL"
-  - "IDispatchImpl class, multiple dual interfaces"
-  - "COM_INTERFACE_ENTRY_IID macro"
+dev_langs: ["C++"]
+helpviewer_keywords: ["multiple dual interfaces", "COM_INTERFACE_ENTRY2 macro", "dual interfaces, exposing multiple", "multiple dual interfaces, exposing with ATL", "IDispatchImpl class, multiple dual interfaces", "COM_INTERFACE_ENTRY_IID macro"]
 ms.assetid: 7fea86e6-247f-4063-be6e-85588a9e3719
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Multiple Dual Interfaces
 You may want to combine the advantages of a dual interface (that is, the flexibility of both vtable and late binding, thus making the class available to scripting languages as well as C++) with the techniques of multiple inheritance.  
