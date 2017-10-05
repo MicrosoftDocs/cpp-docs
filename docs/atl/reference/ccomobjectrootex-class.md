@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComObjectRootEx', 'ATLCOM/ATL::CComObjectRootEx', 'ATLCOM/ATL::CComObjectRootEx', 'ATLCOM/ATL::InternalAddRef', 'ATLCOM/ATL::InternalRelease', 'ATLCOM/ATL::Lock', 'ATLCOM/ATL::Unlock', 'ATLCOM/ATL::FinalConstruct', 'ATLCOM/ATL::FinalRelease', 'ATLCOM/ATL::OuterAddRef', 'ATLCOM/ATL::OuterQueryInterface', 'ATLCOM/ATL::OuterRelease', 'ATLCOM/ATL::InternalQueryInterface', 'ATLCOM/ATL::ObjectMain', 'ATLCOM/ATL::m_dwRef', 'ATLCOM/ATL::m_pOuterUnknown']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reference counting"
+dev_langs: ["C++"]
+helpviewer_keywords: ["reference counting"]
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComObjectRootEx Class
 This class provides methods to handle object reference count management for both nonaggregated and aggregated objects.  

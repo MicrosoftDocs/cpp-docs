@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.atl.MMC"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MMC Snap-In classes"
+f1_keywords: ["vc.atl.MMC"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MMC Snap-In classes"]
 ms.assetid: 4af1d5af-687f-48b1-b2c5-fa252241b4d6
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # MMC Snap-In Classes
 The following classes provide support for developing Microsoft Management Console (MMC) snap-in components:  

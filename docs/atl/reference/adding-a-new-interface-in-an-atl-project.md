@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.appwiz.ATL.interface"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interfaces, adding to ATL objects"
-  - "Implement Interface ATL wizard"
-  - "controls [ATL], interfaces"
-  - "ATL projects, adding interfaces"
+f1_keywords: ["vc.appwiz.ATL.interface"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["interfaces, adding to ATL objects", "Implement Interface ATL wizard", "controls [ATL], interfaces", "ATL projects, adding interfaces"]
 ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Adding a New Interface in an ATL Project
 When you add an interface to your object or control, you create stubbed-out functions for each method in that interface. In your object or control, you can add only interfaces currently found in an existing type library. Also, the class in which you add the interface must implement the [BEGIN_COM_MAP](com-map-macros.md#begin_com_map) macro or, if the project is attributed, it must have the `coclass` attribute.  

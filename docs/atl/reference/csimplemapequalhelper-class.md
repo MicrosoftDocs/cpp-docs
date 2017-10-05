@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSimpleMapEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleMapEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualKey', 'ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualValue']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSimpleMapEqualHelper class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSimpleMapEqualHelper class"]
 ms.assetid: 9bb2968a-d609-405c-8272-ff3b42df6164
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CSimpleMapEqualHelper Class
 This class is a helper for the [CSimpleMap](../../atl/reference/csimplemap-class.md) class.  

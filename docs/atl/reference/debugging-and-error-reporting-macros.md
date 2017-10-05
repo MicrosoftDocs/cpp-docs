@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["atldef/ATL::_ATL_DEBUG_INTERFACES", "atldef/ATL::_ATL_DEBUG_QI", "atldef/ATL::ATLASSERT", "afx/ATL::ATLENSURE", "atltrace/ATL::ATLTRACENOTIMPL", "atltrace/ATL::ATLTRACE"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "macros, error reporting"
+dev_langs: ["C++"]
+helpviewer_keywords: ["macros, error reporting"]
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Debugging and Error Reporting Macros
 These macros provide useful debugging and trace facilities.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "HTML controls, ATL support"
-  - "DHTML controls, ATL support"
-  - "DHTML controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["HTML controls, ATL support", "DHTML controls, ATL support", "DHTML controls"]
 ms.assetid: 4ba98098-da5d-4362-96ad-8372f816c307
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ATL Support for DHTML Controls
 Using ATL, you can create a control with Dynamic HTML (DHTML) capability. An ATL DHTML control:  

@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CStringT class, exporting strings"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStringT class, exporting strings"]
 ms.assetid: bdfc441e-8d2a-461c-9885-46178066c09f
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Exporting String Classes Using CStringT
 In the past, MFC developers have derived from `CString` to specialize their own string classes. In Microsoft Visual C++.NET (MFC 8.0), the [CString](../atl-mfc-shared/using-cstring.md) class was superseded by a template class called [CStringT](../atl-mfc-shared/reference/cstringt-class.md). This provided several benefits:  

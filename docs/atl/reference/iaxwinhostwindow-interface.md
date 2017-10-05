@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IAxWinHostWindow', 'No header/ATL::IAxWinHostWindow', 'No header/ATL::AttachControl', 'No header/ATL::CreateControl', 'No header/ATL::CreateControlEx', 'No header/ATL::QueryControl', 'No header/ATL::SetExternalDispatch', 'No header/ATL::SetExternalUIHandler']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAxWinHostWindow interface"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAxWinHostWindow interface"]
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IAxWinHostWindow Interface
 This interface provides methods for manipulating a control and its host object.  

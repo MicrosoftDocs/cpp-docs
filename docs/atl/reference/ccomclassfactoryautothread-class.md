@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComClassFactoryAutoThread', 'ATLCOM/ATL::CComClassFactoryAutoThread', 'ATLCOM/ATL::CComClassFactoryAutoThread::CreateInstance', 'ATLCOM/ATL::CComClassFactoryAutoThread::LockServer']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComClassFactoryAutoThread class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComClassFactoryAutoThread class"]
 ms.assetid: 22008042-533f-4dd9-bf7e-191ee571f9a1
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComClassFactoryAutoThread Class
 This class implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface, and allows objects to be created in multiple apartments.  

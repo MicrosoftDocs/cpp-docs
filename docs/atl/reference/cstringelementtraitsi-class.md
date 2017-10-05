@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CStringElementTraitsI', 'ATLCOLL/ATL::CStringElementTraitsI', 'ATLCOLL/ATL::CStringElementTraitsI::INARGTYPE', 'ATLCOLL/ATL::CStringElementTraitsI::OUTARGTYPE', 'ATLCOLL/ATL::CStringElementTraitsI::CompareElements', 'ATLCOLL/ATL::CStringElementTraitsI::CompareElementsOrdered', 'ATLCOLL/ATL::CStringElementTraitsI::Hash']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CStringElementTraitsI class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CStringElementTraitsI class"]
 ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CStringElementTraitsI Class
 This class provides static functions related to strings stored in collection class objects. It is similar to [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md), but performs case-insensitive comparisons.  

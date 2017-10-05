@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.codewiz.class.atl.asp.options"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL Active Server Page Component Wizard, options"
+f1_keywords: ["vc.codewiz.class.atl.asp.options"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL Active Server Page Component Wizard, options"]
 ms.assetid: 54f34e26-53c7-4456-9675-cb86e356bde0
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Options, ATL Active Server Page Component Wizard
 Use this page of the ATL Active Server Page Component Wizard to design for increased efficiency and error support for the object.  

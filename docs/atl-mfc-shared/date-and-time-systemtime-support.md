@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "SYSTEMTIME"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "system time"
-  - "FILETIME structure, with CTime class"
-  - "time [C++], formatting"
-  - "SYSTEMTIME structure"
-  - "dates [C++], MFC"
-  - "formatting [C++], time"
+f1_keywords: ["SYSTEMTIME"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["system time", "FILETIME structure, with CTime class", "time [C++], formatting", "SYSTEMTIME structure", "dates [C++], MFC", "formatting [C++], time"]
 ms.assetid: 201528e4-2ffa-48fc-af8f-203aa86d942a
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Date and Time: SYSTEMTIME Support
 The [CTime](../atl-mfc-shared/reference/ctime-class.md) class has constructors that accept system and file times from Win32. If you use `CTime` objects for these purposes, you must modify their initialization accordingly, as described in this article.  

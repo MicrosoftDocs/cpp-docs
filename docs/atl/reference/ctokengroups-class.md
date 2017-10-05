@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CTokenGroups', 'ATLSECURITY/ATL::CTokenGroups', 'ATLSECURITY/ATL::CTokenGroups::CTokenGroups', 'ATLSECURITY/ATL::CTokenGroups::Add', 'ATLSECURITY/ATL::CTokenGroups::Delete', 'ATLSECURITY/ATL::CTokenGroups::DeleteAll', 'ATLSECURITY/ATL::CTokenGroups::GetCount', 'ATLSECURITY/ATL::CTokenGroups::GetLength', 'ATLSECURITY/ATL::CTokenGroups::GetPTOKEN_GROUPS', 'ATLSECURITY/ATL::CTokenGroups::GetSidsAndAttributes', 'ATLSECURITY/ATL::CTokenGroups::LookupSid']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CTokenGroups class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CTokenGroups class"]
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CTokenGroups Class
 This class is a wrapper for the **TOKEN_GROUPS** structure.  

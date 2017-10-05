@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComClassFactory', 'ATLCOM/ATL::CComClassFactory', 'ATLCOM/ATL::CComClassFactory::CreateInstance', 'ATLCOM/ATL::CComClassFactory::LockServer']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComClassFactory class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComClassFactory class"]
 ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComClassFactory Class
 This class implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface.  

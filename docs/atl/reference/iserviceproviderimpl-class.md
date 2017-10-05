@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IServiceProviderImpl', 'ATLCOM/ATL::IServiceProviderImpl', 'ATLCOM/ATL::IServiceProviderImpl::QueryService']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IServiceProviderImpl class"
-  - "IServiceProvider interface, ATL implementation"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IServiceProviderImpl class", "IServiceProvider interface, ATL implementation"]
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IServiceProviderImpl Class
 This class provides a default implementation of the `IServiceProvider` interface.  

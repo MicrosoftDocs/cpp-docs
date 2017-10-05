@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.codewiz.class.atl.provider.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL OLE DB Provider Wizard"
-  - "ATL projects, adding ATL OLE DB providers"
+f1_keywords: ["vc.codewiz.class.atl.provider.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL OLE DB Provider Wizard", "ATL projects, adding ATL OLE DB providers"]
 ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ATL OLE DB Provider Wizard
 This wizard creates the classes that compose an OLE DB provider.  

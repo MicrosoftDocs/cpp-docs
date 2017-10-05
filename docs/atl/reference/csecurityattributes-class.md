@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CSecurityAttributes', 'ATLSECURITY/ATL::CSecurityAttributes', 'ATLSECURITY/ATL::CSecurityAttributes::CSecurityAttributes', 'ATLSECURITY/ATL::CSecurityAttributes::Set']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSecurityAttributes class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSecurityAttributes class"]
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CSecurityAttributes Class
 This class is a thin wrapper for the security attributes structure.  

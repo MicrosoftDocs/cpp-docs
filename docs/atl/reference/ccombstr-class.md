@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComBSTR', 'ATLBASE/ATL::CComBSTR', 'ATLBASE/ATL::CComBSTR::CComBSTR', 'ATLBASE/ATL::CComBSTR::Append', 'ATLBASE/ATL::CComBSTR::AppendBSTR', 'ATLBASE/ATL::CComBSTR::AppendBytes', 'ATLBASE/ATL::CComBSTR::ArrayToBSTR', 'ATLBASE/ATL::CComBSTR::AssignBSTR', 'ATLBASE/ATL::CComBSTR::Attach', 'ATLBASE/ATL::CComBSTR::BSTRToArray', 'ATLBASE/ATL::CComBSTR::ByteLength', 'ATLBASE/ATL::CComBSTR::Copy', 'ATLBASE/ATL::CComBSTR::CopyTo', 'ATLBASE/ATL::CComBSTR::Detach', 'ATLBASE/ATL::CComBSTR::Empty', 'ATLBASE/ATL::CComBSTR::Length', 'ATLBASE/ATL::CComBSTR::LoadString', 'ATLBASE/ATL::CComBSTR::ReadFromStream', 'ATLBASE/ATL::CComBSTR::ToLower', 'ATLBASE/ATL::CComBSTR::ToUpper', 'ATLBASE/ATL::CComBSTR::WriteToStream', 'ATLBASE/ATL::CComBSTR::m_str']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BSTRs, wrapper"
-  - "CComBSTR class"
-  - "CComBSTR"
+dev_langs: ["C++"]
+helpviewer_keywords: ["BSTRs, wrapper", "CComBSTR class", "CComBSTR"]
 ms.assetid: 8fea1879-a05e-47a5-a803-8dec60eaa534
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComBSTR Class
 This class is a wrapper for `BSTR`s.  

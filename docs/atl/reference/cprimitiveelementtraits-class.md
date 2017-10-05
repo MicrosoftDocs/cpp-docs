@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPrimitiveElementTraits', 'ATLCOLL/ATL::CPrimitiveElementTraits', 'ATLCOLL/ATL::CPrimitiveElementTraits::INARGTYPE', 'ATLCOLL/ATL::CPrimitiveElementTraits::OUTARGTYPE']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPrimitiveElementTraits class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPrimitiveElementTraits class"]
 ms.assetid: 21c1cea8-2c5a-486c-b65c-85490f3ed4e6
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CPrimitiveElementTraits Class
 This class provides default methods and functions for a collection class composed of primitive data types.  
