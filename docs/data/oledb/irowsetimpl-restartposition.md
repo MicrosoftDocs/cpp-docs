@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL.IRowsetImpl.RestartPosition"
-  - "IRowsetImpl::RestartPosition"
-  - "RestartPosition"
-  - "ATL::IRowsetImpl::RestartPosition"
-  - "IRowsetImpl.RestartPosition"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RestartPosition method"
+f1_keywords: ["ATL.IRowsetImpl.RestartPosition", "IRowsetImpl::RestartPosition", "RestartPosition", "ATL::IRowsetImpl::RestartPosition", "IRowsetImpl.RestartPosition"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RestartPosition method"]
 ms.assetid: 14de66ef-8d2c-4404-adb6-3f6c74ac6cf1
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IRowsetImpl::RestartPosition
 Repositions the next fetch position to its initial position; that is, its position when the rowset was first created.  

@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ODBC components, redistributing"
-  - "ODBC, distributing components"
-  - "components [C++], distributing"
-  - "ODBC Administrator"
-  - "components [C++]"
-  - "components [C++], redistributing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ODBC components, redistributing", "ODBC, distributing components", "components [C++], distributing", "ODBC Administrator", "components [C++]", "components [C++], redistributing"]
 ms.assetid: 17b065b4-a307-4b89-99ac-d05831cfab87
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Redistributing ODBC Components to Your Customers
 If you incorporate the functionality of the ODBC Administrator programs into your application, you must also distribute to your users the files that run these programs. These ODBC files reside in the \OS\System directory of the Visual C++ CD-ROM. The Redistrb.wri file and the license agreement in the same directory contain a list of ODBC files that you can redistribute.  

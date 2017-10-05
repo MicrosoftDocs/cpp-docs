@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "#ifndef"
-  - "#ifdef"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "#ifdef directive"
-  - "preprocessor, directives"
-  - "ifdef directive (#ifdef)"
-  - "ifndef directive (#ifndef)"
-  - "#ifndef directive"
+f1_keywords: ["#ifndef", "#ifdef"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["#ifdef directive", "preprocessor, directives", "ifdef directive (#ifdef)", "ifndef directive (#ifndef)", "#ifndef directive"]
 ms.assetid: 2b0be69d-9e72-45d8-8e24-e4130fb2455b
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # #ifdef and #ifndef Directives (C/C++)
 The **#ifdef** and **#ifndef** directives perform the same task as the `#if` directive when it is used with **defined**( *identifier* ).  

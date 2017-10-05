@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL.CDBErrorInfo.GetAllErrorInfo"
-  - "CDBErrorInfo::GetAllErrorInfo"
-  - "ATL::CDBErrorInfo::GetAllErrorInfo"
-  - "GetAllErrorInfo"
-  - "CDBErrorInfo.GetAllErrorInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetAllErrorInfo method"
+f1_keywords: ["ATL.CDBErrorInfo.GetAllErrorInfo", "CDBErrorInfo::GetAllErrorInfo", "ATL::CDBErrorInfo::GetAllErrorInfo", "GetAllErrorInfo", "CDBErrorInfo.GetAllErrorInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetAllErrorInfo method"]
 ms.assetid: 630049fa-d296-497a-bbf6-f5d3d71d271d
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CDBErrorInfo::GetAllErrorInfo
 Returns all the types of error information contained in an error record.  

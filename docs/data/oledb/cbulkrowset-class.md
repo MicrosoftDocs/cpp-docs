@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::CBulkRowset"
-  - "ATL.CBulkRowset"
-  - "ATL::CBulkRowset<TAccessor>"
-  - "CBulkRowset"
-  - "ATL.CBulkRowset<TAccessor>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CBulkRowset class"
+f1_keywords: ["ATL::CBulkRowset", "ATL.CBulkRowset", "ATL::CBulkRowset<TAccessor>", "CBulkRowset", "ATL.CBulkRowset<TAccessor>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CBulkRowset class"]
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CBulkRowset Class
 Fetches and manipulates rows to work on data in bulk by retrieving multiple row handles with a single call.  

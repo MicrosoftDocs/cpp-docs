@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL.AtlTraceErrorRecords"
-  - "ATL::AtlTraceErrorRecords"
-  - "AtlTraceErrorRecords"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AtlTraceErrorRecords function"
+f1_keywords: ["ATL.AtlTraceErrorRecords", "ATL::AtlTraceErrorRecords", "AtlTraceErrorRecords"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AtlTraceErrorRecords function"]
 ms.assetid: b83970b3-dc2a-445c-9142-f52218719905
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # AtlTraceErrorRecords
 Dumps OLE DB Error Record information to the dump device if an error is returned.  

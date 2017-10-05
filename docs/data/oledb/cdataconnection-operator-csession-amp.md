@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CSession&"
-  - "CDataConnection::operatorCSession&"
-  - "CDataConnection.operatorCSession&"
-  - "operatorCSession&"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator CSession&"
-  - "CSession& operator"
+f1_keywords: ["CSession&", "CDataConnection::operatorCSession&", "CDataConnection.operatorCSession&", "operatorCSession&"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator CSession&", "CSession& operator"]
 ms.assetid: fba1e498-e482-4dda-8e0f-2542163bf627
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDataConnection::operator CSession&amp;
 Returns a reference to the contained `CSession` object.  

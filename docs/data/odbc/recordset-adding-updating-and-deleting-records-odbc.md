@@ -4,47 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "records [C++], updating"
-  - "record editing [C++], in recordsets"
-  - "recordsets [C++], adding records"
-  - "records [C++], adding"
-  - "ODBC recordsets [C++], adding records"
-  - "recordsets [C++], editing records"
-  - "recordsets [C++], updating"
-  - "records [C++], deleting"
-  - "AddNew method"
-  - "ODBC recordsets [C++], deleting records"
-  - "data in recordsets [C++]"
-  - "record editing [C++]"
-  - "recordsets [C++], deleting records"
-  - "ODBC recordsets [C++], editing records"
-  - "records [C++], editing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["records [C++], updating", "record editing [C++], in recordsets", "recordsets [C++], adding records", "records [C++], adding", "ODBC recordsets [C++], adding records", "recordsets [C++], editing records", "recordsets [C++], updating", "records [C++], deleting", "AddNew method", "ODBC recordsets [C++], deleting records", "data in recordsets [C++]", "record editing [C++]", "recordsets [C++], deleting records", "ODBC recordsets [C++], editing records", "records [C++], editing"]
 ms.assetid: 760c8889-bec4-482b-a8f2-319792a6af98
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Recordset: Adding, Updating, and Deleting Records (ODBC)
 This topic applies to the MFC ODBC classes.  

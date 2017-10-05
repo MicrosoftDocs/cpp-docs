@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ICommandImpl::CreateRowset"
-  - "ICommandImpl.CreateRowset"
-  - "CreateRowset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateRowset method"
+f1_keywords: ["ICommandImpl::CreateRowset", "ICommandImpl.CreateRowset", "CreateRowset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateRowset method"]
 ms.assetid: a0890009-205e-4970-879f-01ed9d6a93f1
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ICommandImpl::CreateRowset
 Called by [Execute](../../data/oledb/icommandimpl-execute.md) to create a single rowset.  

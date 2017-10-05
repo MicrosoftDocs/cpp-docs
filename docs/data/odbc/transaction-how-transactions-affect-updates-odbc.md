@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "transactions, updating recordsets"
-  - "ODBC recordsets, transactions"
-  - "transactions, rolling back"
-  - "CommitTrans method"
-  - "Rollback method, ODBC transactions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["transactions, updating recordsets", "ODBC recordsets, transactions", "transactions, rolling back", "CommitTrans method", "Rollback method, ODBC transactions"]
 ms.assetid: 9e00bbf4-e9fb-4332-87fc-ec8ac61b3f68
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Transaction: How Transactions Affect Updates (ODBC)
 Updates to the [data source](../../data/odbc/data-source-odbc.md) are managed during transactions through the use of an edit buffer (the same method used outside of transactions). The field data members of a recordset collectively serve as an edit buffer that contains the current record, which the recordset backs up temporarily during an `AddNew` or **Edit**. During a **Delete** operation, the current record is not backed up within a transaction. For more information about the edit buffer and how updates store the current record, see [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).  

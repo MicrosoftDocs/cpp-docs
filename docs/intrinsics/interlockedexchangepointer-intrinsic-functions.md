@@ -4,49 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_InterlockedExchangePointer_cpp"
-  - "_InterlockedExchangePointer_rel"
-  - "_InterlockedExchangePointer_nf"
-  - "_InterlockedExchangePointer_HLERelease"
-  - "_InterlockedExchangePointer_acq"
-  - "_InterlockedExchangePointer"
-  - "_InterlockedExchangePointer_acq_cpp"
-  - "_InterlockedExchangePointer_HLEAcquire"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_InterlockedExchangePointer_rel intrinsic"
-  - "_InterlockedExchangePointer_HLERelease intrinsic"
-  - "_InterlockedExchangePointer intrinsic"
-  - "_InterlockedExchangePointer_nf intrinsic"
-  - "_InterlockedExchangePointer_acq intrinsic"
-  - "_InterlockedExchangePointer_HLEAcquire intrinsic"
-  - "InterlockedExchangePointer_acq intrinsic"
-  - "InterlockedExchangePointer intrinsic"
+f1_keywords: ["_InterlockedExchangePointer_cpp", "_InterlockedExchangePointer_rel", "_InterlockedExchangePointer_nf", "_InterlockedExchangePointer_HLERelease", "_InterlockedExchangePointer_acq", "_InterlockedExchangePointer", "_InterlockedExchangePointer_acq_cpp", "_InterlockedExchangePointer_HLEAcquire"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_InterlockedExchangePointer_rel intrinsic", "_InterlockedExchangePointer_HLERelease intrinsic", "_InterlockedExchangePointer intrinsic", "_InterlockedExchangePointer_nf intrinsic", "_InterlockedExchangePointer_acq intrinsic", "_InterlockedExchangePointer_HLEAcquire intrinsic", "InterlockedExchangePointer_acq intrinsic", "InterlockedExchangePointer intrinsic"]
 ms.assetid: 0eaca0b0-d79e-406b-892d-b3b462c50bbb
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _InterlockedExchangePointer Intrinsic Functions
 **Microsoft Specific**  

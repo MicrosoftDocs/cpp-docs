@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "testing, OLE DB providers"
-  - "testing providers"
-  - "OLE DB providers, testing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, testing"]
 ms.assetid: bf824fe4-81af-4ffb-beb3-4fa2928dc450
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Testing Your Provider
 Before you release a provider, you should perform the following tests, in the order indicated. These tests ensure that the provider functions properly for most potential users.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "PROVIDER_COLUMN_ENTRY_LENGTH"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PROVIDER_COLUMN_ENTRY_LENGTH macro"
+f1_keywords: ["PROVIDER_COLUMN_ENTRY_LENGTH"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["PROVIDER_COLUMN_ENTRY_LENGTH macro"]
 ms.assetid: b4a67246-c049-4622-bb65-242cc8cae4be
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # PROVIDER_COLUMN_ENTRY_LENGTH
 Represents a specific column supported by the provider.  

@@ -4,46 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__addgsdword"
-  - "__addgsqword"
-  - "__addgsword_cpp"
-  - "__addgsword"
-  - "__addgsbyte_cpp"
-  - "__addgsqword_cpp"
-  - "__addgsbyte"
-  - "__addgsdword_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__addgsword intrinsic"
-  - "__addgsqword intrinsic"
-  - "__addgsdword intrinsic"
-  - "__addgsbyte intrinsic"
+f1_keywords: ["__addgsdword", "__addgsqword", "__addgsword_cpp", "__addgsword", "__addgsbyte_cpp", "__addgsqword_cpp", "__addgsbyte", "__addgsdword_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__addgsword intrinsic", "__addgsqword intrinsic", "__addgsdword intrinsic", "__addgsbyte intrinsic"]
 ms.assetid: 4fa03e69-d849-49ed-ba37-1d3aa23c2a21
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __addgsbyte, __addgsword, __addgsdword, __addgsqword
 **Microsoft Specific**  
