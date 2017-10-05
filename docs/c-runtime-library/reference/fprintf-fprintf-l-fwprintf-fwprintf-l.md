@@ -4,65 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "fwprintf"
-  - "fprintf"
-  - "_fprintf_l"
-  - "_fwprintf_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["fwprintf", "fprintf", "_fprintf_l", "_fwprintf_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fprintf"
-  - "fwprintf"
-  - "_ftprintf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_fwprintf_l function"
-  - "fprintf function"
-  - "fprintf_l function"
-  - "_fprintf_l function"
-  - "_ftprintf function"
-  - "fwprintf function"
-  - "ftprintf_l function"
-  - "ftprintf function"
-  - "_ftprintf_l function"
-  - "print formatted data to streams"
-  - "fwprintf_l function"
+f1_keywords: ["fprintf", "fwprintf", "_ftprintf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_fwprintf_l function", "fprintf function", "fprintf_l function", "_fprintf_l function", "_ftprintf function", "fwprintf function", "ftprintf_l function", "ftprintf function", "_ftprintf_l function", "print formatted data to streams", "fwprintf_l function"]
 ms.assetid: 34a87e1c-6e4d-4d48-a611-58314dd4dc4b
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # fprintf, _fprintf_l, fwprintf, _fwprintf_l
 Print formatted data to a stream. More secure versions of these functions are available; see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  

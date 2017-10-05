@@ -4,74 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "tanhf"
-  - "tanh"
-  - "tan"
-  - "tanhl"
-  - "tanf"
-  - "tanl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["tanhf", "tanh", "tan", "tanhl", "tanf", "tanl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "tanh"
-  - "tan"
-  - "_tanl"
-  - "tanl"
-  - "_tanhl"
-  - "tanf"
-  - "tanhf"
-  - "tanhl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tanl function"
-  - "tanhl function"
-  - "_tanl function"
-  - "_tanhl function"
-  - "tan function"
-  - "calculating tangents"
-  - "tangent"
-  - "tanh function"
-  - "tanhf function"
-  - "tanf function"
-  - "trigonometric functions"
-  - "hyperbolic functions"
+f1_keywords: ["tanh", "tan", "_tanl", "tanl", "_tanhl", "tanf", "tanhf", "tanhl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tanl function", "tanhl function", "_tanl function", "_tanhl function", "tan function", "calculating tangents", "tangent", "tanh function", "tanhf function", "tanf function", "trigonometric functions", "hyperbolic functions"]
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # tan, tanf, tanl, tanh, tanhf, tanhl
 Calculates the tangent (`tan`, `tanf`, or `tanl`), or hyperbolic tangent (`tanh`, `tanhf`, or `tanhl`).  

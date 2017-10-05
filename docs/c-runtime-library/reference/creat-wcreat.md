@@ -4,62 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_creat"
-  - "_wcreat"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+apiname: ["_creat", "_wcreat"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wcreat"
-  - "_wcreat"
-  - "_creat"
-  - "tcreat"
-  - "_tcreat"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wcreat function"
-  - "_wcreat function"
-  - "files [C++], creating"
-  - "_creat function"
-  - "tcreat function"
-  - "creat function"
-  - "_tcreat function"
+f1_keywords: ["wcreat", "_wcreat", "_creat", "tcreat", "_tcreat"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wcreat function", "_wcreat function", "files [C++], creating", "_creat function", "tcreat function", "creat function", "_tcreat function"]
 ms.assetid: 3b3b795d-1620-40ec-bd2b-a4bbb0d20fe5
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _creat, _wcreat
 Creates a new file. `_creat` and `_wcreat` have been deprecated; use [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md) instead.  

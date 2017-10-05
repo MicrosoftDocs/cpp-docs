@@ -4,53 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "wcrtomb"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+apiname: ["wcrtomb"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wcrtomb"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wide characters, converting"
-  - "wcrtomb function"
-  - "multibyte characters"
-  - "characters, converting"
+f1_keywords: ["wcrtomb"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wide characters, converting", "wcrtomb function", "multibyte characters", "characters, converting"]
 ms.assetid: 717f1b21-2705-4b7f-b6d0-82adc5224340
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # wcrtomb
 Convert a wide character into its multibyte character representation. A more secure version of this function is available; see [wcrtomb_s](../../c-runtime-library/reference/wcrtomb-s.md).  

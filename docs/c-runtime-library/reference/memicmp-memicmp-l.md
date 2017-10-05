@@ -4,56 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_memicmp_l"
-  - "_memicmp"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["_memicmp_l", "_memicmp"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_memicmp"
-  - "memicmp_l"
-  - "_memicmp_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "memicmp function"
-  - "_memicmp function"
-  - "memicmp_l function"
-  - "_memicmp_l function"
+f1_keywords: ["_memicmp", "memicmp_l", "_memicmp_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["memicmp function", "_memicmp function", "memicmp_l function", "_memicmp_l function"]
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _memicmp, _memicmp_l
 Compares characters in two buffers (case-insensitive).  

@@ -4,58 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_getch"
-  - "_getwch"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-conio-l1-1-0.dll"
+apiname: ["_getch", "_getwch"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "getwch"
-  - "_getch"
-  - "_getwch"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "characters, getting from console"
-  - "getch function"
-  - "_getwch function"
-  - "console, reading from"
-  - "_getch function"
-  - "getwch function"
+f1_keywords: ["getwch", "_getch", "_getwch"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["characters, getting from console", "getch function", "_getwch function", "console, reading from", "_getch function", "getwch function"]
 ms.assetid: cc116be7-cff2-4274-970f-5e7b18ccc05c
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _getch, _getwch
 Gets a character from the console without echo.  

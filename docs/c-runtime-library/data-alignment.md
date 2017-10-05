@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "data.alignment"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data alignment [C++]"
+f1_keywords: ["data.alignment"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["data alignment [C++]"]
 ms.assetid: 35ac3d2d-a4b3-421b-954f-b7372b1f18e1
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Data Alignment
 The following C run-time functions support data alignment.  

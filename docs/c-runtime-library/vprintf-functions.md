@@ -4,44 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr110.dll"
-  - "msvcr120.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr80.dll"
+apilocation: ["msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr80.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "vprintf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vprintf function"
-  - "formatted text [C++]"
+f1_keywords: ["vprintf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["vprintf function", "formatted text [C++]"]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # vprintf Functions
 Each of the `vprintf` functions takes a pointer to an argument list, then formats and writes the given data to a particular destination. The functions differ in the parameter validation performed, whether the functions take wide or single-byte character strings, the output destination, and the support for specifying the order in which parameters are used in the format string.  

@@ -4,50 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_get_output_format"
-apilocation: 
-  - "msvcr110_clr0400.dll"
-  - "msvcr100.dll"
-  - "msvcr80.dll"
-  - "msvcrt.dll"
-  - "msvcr90.dll"
-  - "msvcr120.dll"
-  - "msvcr110.dll"
+apiname: ["_get_output_format"]
+apilocation: ["msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "get_output_format"
-  - "_get_output_format"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "output formatting"
-  - "get_output_format function"
-  - "_get_output_format function"
+f1_keywords: ["get_output_format", "_get_output_format"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["output formatting", "get_output_format function", "_get_output_format function"]
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _get_output_format
 Gets the current value of the output format flag.  

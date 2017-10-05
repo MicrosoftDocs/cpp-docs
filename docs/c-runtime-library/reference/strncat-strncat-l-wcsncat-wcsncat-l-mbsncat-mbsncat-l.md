@@ -4,86 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "strncat"
-  - "_strncat_l"
-  - "_mbsncat"
-  - "_mbsncat_l"
-  - "wcsncat"
-  - "wcsncat_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["strncat", "_strncat_l", "_mbsncat", "_mbsncat_l", "wcsncat", "wcsncat_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcsncat_l"
-  - "_wcsncat_l"
-  - "_tcsnccat_l"
-  - "_mbsncat"
-  - "_strncat_l"
-  - "strncat"
-  - "_tcsnccat"
-  - "_mbsncat_l"
-  - "_ftcsncat"
-  - "wcsncat"
-  - "_tcsncat"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "concatenating strings"
-  - "ftcsncat function"
-  - "tcsncat_l function"
-  - "_tcsnccat_l function"
-  - "_tcsncat function"
-  - "strncat function"
-  - "_ftcsncat function"
-  - "mbsncat function"
-  - "mbsncat_l function"
-  - "strings [C++], appending"
-  - "wcsncat function"
-  - "tcsnccat function"
-  - "tcsnccat_l function"
-  - "_tcsnccat function"
-  - "string concatenation [C++]"
-  - "appending strings"
-  - "characters [C++], appending to strings"
-  - "_mbsncat function"
-  - "_tcsncat_l function"
-  - "_mbsncat_l function"
-  - "tcsncat function"
+f1_keywords: ["_tcsncat_l", "_wcsncat_l", "_tcsnccat_l", "_mbsncat", "_strncat_l", "strncat", "_tcsnccat", "_mbsncat_l", "_ftcsncat", "wcsncat", "_tcsncat"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["concatenating strings", "ftcsncat function", "tcsncat_l function", "_tcsnccat_l function", "_tcsncat function", "strncat function", "_ftcsncat function", "mbsncat function", "mbsncat_l function", "strings [C++], appending", "wcsncat function", "tcsnccat function", "tcsnccat_l function", "_tcsnccat function", "string concatenation [C++]", "appending strings", "characters [C++], appending to strings", "_mbsncat function", "_tcsncat_l function", "_mbsncat_l function", "tcsncat function"]
 ms.assetid: de67363b-68c6-4ca5-91e3-478610ad8159
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 Appends characters of a string. More secure versions of these functions are available, see [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](../../c-runtime-library/reference/strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) .  

@@ -4,47 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr100.dll"
-  - "msvcr120.dll"
-  - "msvcr90.dll"
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
+apilocation: ["msvcr100.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "file names [C++], searching for"
-  - "_find function"
-  - "wfind function"
-  - "find function"
-  - "_wfind function"
+dev_langs: ["C++"]
+helpviewer_keywords: ["file names [C++], searching for", "_find function", "wfind function", "find function", "_wfind function"]
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Filename Search Functions
 These functions search for and close searches for specified file names:  

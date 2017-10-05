@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MBCS"
-  - "SBCS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SBCS and MBCS data types"
-  - "data types [C], MBCS and SBCS"
+f1_keywords: ["MBCS", "SBCS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SBCS and MBCS data types", "data types [C], MBCS and SBCS"]
 ms.assetid: 4c3ef9da-e397-48d4-800e-49dba36db171
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # SBCS and MBCS Data Types
 Any Microsoft `MBCS` run-time library routine that handles only one multibyte character or one byte of a multibyte character expects an `unsigned int` argument (where 0x00 <= character value <= 0xFFFF and 0x00 <= byte value <= 0xFF ). An `MBCS` routine that handles multibyte bytes or characters in a string context expects a multibyte-character string to be represented as an `unsigned char` pointer.  

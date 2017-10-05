@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "function return types"
-  - "return values [C++], function procedures"
-  - "function return types, syntax"
-  - "return values [C++]"
-  - "data types [C++], function return types"
-  - "return keyword [C++], function return types"
-  - "functions [C++], return types"
+dev_langs: ["C++"]
+helpviewer_keywords: ["function return types", "return values [C++], function procedures", "function return types, syntax", "return values [C++]", "data types [C++], function return types", "return keyword [C++], function return types", "functions [C++], return types"]
 ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Return Type
 The return type of a function establishes the size and type of the value returned by the function and corresponds to the type-specifier in the syntax below:  

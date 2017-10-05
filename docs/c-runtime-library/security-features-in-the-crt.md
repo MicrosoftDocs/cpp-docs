@@ -4,53 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_CRT_SECURE_NO_DEPRECATE"
-  - "_CRT_NONSTDC_NO_WARNINGS"
-  - "_CRT_SECURE_NO_WARNINGS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "security deprecation warnings [C++]"
-  - "CRT_NONSTDC_NO_DEPRECATE"
-  - "buffers [C++], buffer overruns"
-  - "deprecation warnings (security-related), disabling"
-  - "_CRT_NONSTDC_NO_WARNINGS"
-  - "security [CRT]"
-  - "_CRT_SECURE_NO_WARNINGS"
-  - "_CRT_NONSTDC_NO_DEPRECATE"
-  - "_CRT_SECURE_NO_DEPRECATE"
-  - "security-enhanced CRT"
-  - "CRT_SECURE_NO_WARNINGS"
-  - "CRT_SECURE_NO_DEPRECATE"
-  - "deprecation warnings (security-related)"
-  - "buffer overruns"
-  - "CRT_NONSTDC_NO_WARNINGS"
-  - "CRT, security enhancements"
-  - "parameters [C++], validation"
+f1_keywords: ["_CRT_SECURE_NO_DEPRECATE", "_CRT_NONSTDC_NO_WARNINGS", "_CRT_SECURE_NO_WARNINGS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["security deprecation warnings [C++]", "CRT_NONSTDC_NO_DEPRECATE", "buffers [C++], buffer overruns", "deprecation warnings (security-related), disabling", "_CRT_NONSTDC_NO_WARNINGS", "security [CRT]", "_CRT_SECURE_NO_WARNINGS", "_CRT_NONSTDC_NO_DEPRECATE", "_CRT_SECURE_NO_DEPRECATE", "security-enhanced CRT", "CRT_SECURE_NO_WARNINGS", "CRT_SECURE_NO_DEPRECATE", "deprecation warnings (security-related)", "buffer overruns", "CRT_NONSTDC_NO_WARNINGS", "CRT, security enhancements", "parameters [C++], validation"]
 ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Security Features in the CRT
 Many old CRT functions have newer, more secure versions. If a secure function exists, the older, less secure version is marked as deprecated and the new version has the `_s` ("secure") suffix.  

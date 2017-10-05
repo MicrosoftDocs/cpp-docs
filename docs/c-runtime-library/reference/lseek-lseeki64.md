@@ -4,58 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_lseeki64"
-  - "_lseek"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+apiname: ["_lseeki64", "_lseek"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_lseeki64"
-  - "_lseek"
-  - "lseeki64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lseek function"
-  - "_lseek function"
-  - "_lseeki64 function"
-  - "lseeki64 function"
-  - "file pointers [C++], moving"
-  - "seek file pointers"
+f1_keywords: ["_lseeki64", "_lseek", "lseeki64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lseek function", "_lseek function", "_lseeki64 function", "lseeki64 function", "file pointers [C++], moving", "seek file pointers"]
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _lseek, _lseeki64
 Moves a file pointer to the specified location.  

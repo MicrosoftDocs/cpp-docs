@@ -4,57 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wctomb_l"
-  - "wctomb"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+apiname: ["_wctomb_l", "wctomb"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wctomb"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "string conversion, wide characters"
-  - "wide characters, converting"
-  - "_wctomb_l function"
-  - "wctomb function"
-  - "wctomb_l function"
-  - "characters, converting"
-  - "string conversion, multibyte character strings"
+f1_keywords: ["wctomb"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["string conversion, wide characters", "wide characters, converting", "_wctomb_l function", "wctomb function", "wctomb_l function", "characters, converting", "string conversion, multibyte character strings"]
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # wctomb, _wctomb_l
 Convert a wide character to the corresponding multibyte character. More secure versions of these functions are available; see [wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md).  

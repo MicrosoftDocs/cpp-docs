@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_cputws"
-  - "_cputs"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-conio-l1-1-0.dll"
+apiname: ["_cputws", "_cputs"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "cputws"
-  - "_cputs"
-  - "_cputws"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], writing"
-  - "_cputs function"
-  - "_cputws function"
-  - "putting strings to the console"
-  - "cputs function"
-  - "console, sending strings to"
-  - "cputws function"
+f1_keywords: ["cputws", "_cputs", "_cputws"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], writing", "_cputs function", "_cputws function", "putting strings to the console", "cputs function", "console, sending strings to", "cputws function"]
 ms.assetid: ec418484-0f8d-43ec-8d8b-198a556c659e
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _cputs, _cputws
 Puts a string to the console.  

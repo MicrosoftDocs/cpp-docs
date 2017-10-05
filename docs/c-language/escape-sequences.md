@@ -4,59 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "\r escape sequence"
-  - "double backslash"
-  - "horizontal-tab \t escape sequence"
-  - "(') single quotation mark"
-  - "bell character \a escape sequence"
-  - "escape sequences"
-  - "hexadecimal escape sequence"
-  - "carriage returns"
-  - "tab \t escape sequence"
-  - "\f escape sequence"
-  - "quotation marks, single"
-  - "formfeed \f escape sequence"
-  - "\v escape sequence"
-  - "control character escape sequences"
-  - "\ symbol in escape sequences"
-  - "octal escape sequence"
-  - "escape characters"
-  - "newline character \n escape sequence"
-  - "nongraphic control characters"
-  - "question mark, literal"
-  - "\n escape sequence"
-  - "vertical tab \v escape sequence"
-  - "\a escape sequence"
-  - "? symbol"
-  - "? symbol, escape sequence character"
-  - "\t escape sequence"
-  - "backspace escape sequence"
+dev_langs: ["C++"]
+helpviewer_keywords: ["\r escape sequence", "double backslash", "horizontal-tab \t escape sequence", "(') single quotation mark", "bell character \a escape sequence", "escape sequences", "hexadecimal escape sequence", "carriage returns", "tab \t escape sequence", "\f escape sequence", "quotation marks, single", "formfeed \f escape sequence", "\v escape sequence", "control character escape sequences", "\ symbol in escape sequences", "octal escape sequence", "escape characters", "newline character \n escape sequence", "nongraphic control characters", "question mark, literal", "\n escape sequence", "vertical tab \v escape sequence", "\a escape sequence", "? symbol", "? symbol, escape sequence character", "\t escape sequence", "backspace escape sequence"]
 ms.assetid: 5aef377f-a76c-4d5c-aa04-8308758ad6a8
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Escape Sequences
 Character combinations consisting of a backslash (**\\**) followed by a letter or by a combination of digits are called "escape sequences." To represent a newline character, single quotation mark, or certain other characters in a character constant, you must use escape sequences. An escape sequence is regarded as a single character and is therefore valid as a character constant.  

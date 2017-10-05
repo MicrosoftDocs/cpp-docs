@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_TCHAR type"
-  - "mappings, TCHAR.H data types"
-  - "generic-text example [CRT]"
-  - "TCHAR type"
-  - "TCHAR.H data types, mapping"
+dev_langs: ["C++"]
+helpviewer_keywords: ["_TCHAR type", "mappings, TCHAR.H data types", "generic-text example [CRT]", "TCHAR type", "TCHAR.H data types, mapping"]
 ms.assetid: a03de0db-8118-4bd9-a03f-640e8dfc5ed3
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # A Sample Generic-Text Program
 **Microsoft Specific**  

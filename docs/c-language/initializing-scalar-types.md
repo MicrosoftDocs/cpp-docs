@@ -4,41 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "initializing scalar types"
-  - "register variables"
-  - "initialization, scalar types"
-  - "initializing variables, scalar types"
-  - "scalar types"
-  - "static variables, initializing"
-  - "automatic storage class, initializing scalar types"
-  - "automatic storage class"
-  - "types [C], initializing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["initializing scalar types", "register variables", "initialization, scalar types", "initializing variables, scalar types", "scalar types", "static variables, initializing", "automatic storage class, initializing scalar types", "automatic storage class", "types [C], initializing"]
 ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Initializing Scalar Types
 When initializing scalar types, the value of the *assignment-expression* is assigned to the variable. The conversion rules for assignment apply. (See [Type Conversions](../c-language/type-conversions-c.md) for information on conversion rules.)  

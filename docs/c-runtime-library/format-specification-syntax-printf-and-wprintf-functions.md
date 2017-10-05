@@ -4,50 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr90.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr100.dll"
-  - "msvcr110.dll"
-  - "msvcr80.dll"
-  - "msvcr120.dll"
+apilocation: ["msvcr90.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wprintf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "format specification fields for printf function"
-  - "print flag directives"
-  - "printf function, precision"
-  - "type fields, printf function"
-  - "precision fields"
-  - "printf function, format specification fields"
-  - "flag directives printf function"
-  - "type fields"
+f1_keywords: ["wprintf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["format specification fields for printf function", "print flag directives", "printf function, precision", "type fields, printf function", "precision fields", "printf function, format specification fields", "flag directives printf function", "type fields"]
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Format specification syntax: printf and wprintf functions
 The various `printf` functions take a format string and optional arguments and produce a formatted sequence of characters for output. The format string contains zero or more *directives*, which are either literal characters for output or encoded *conversion specifications* that describe how to format an argument in the output. This topic describes the syntax used to encode conversion specifications in the format string. For a listing of these functions, see [Stream I/O](../c-runtime-library/stream-i-o.md).  

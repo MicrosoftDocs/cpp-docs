@@ -4,74 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_cscanf_l"
-  - "_cscanf"
-  - "_cwscanf"
-  - "_cwscanf_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_cscanf_l", "_cscanf", "_cwscanf", "_cwscanf_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_cwscanf"
-  - "cwscanf_l"
-  - "tcscanf_l"
-  - "_tcscanf_l"
-  - "_cscanf"
-  - "_cscanf_l"
-  - "tcscanf"
-  - "cwscanf"
-  - "_cwscanf_l"
-  - "cscanf_l"
-  - "_tcscanf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_cwscanf function"
-  - "data [C++], reading from the console"
-  - "cscanf_l function"
-  - "tcscanf function"
-  - "_cscanf_l function"
-  - "cwscanf function"
-  - "_tcscanf_l function"
-  - "_cscanf function"
-  - "_tcscanf function"
-  - "cwscanf_l function"
-  - "tcscanf_l function"
-  - "reading data [C++], from the console"
-  - "_cwscanf_l function"
+f1_keywords: ["_cwscanf", "cwscanf_l", "tcscanf_l", "_tcscanf_l", "_cscanf", "_cscanf_l", "tcscanf", "cwscanf", "_cwscanf_l", "cscanf_l", "_tcscanf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_cwscanf function", "data [C++], reading from the console", "cscanf_l function", "tcscanf function", "_cscanf_l function", "cwscanf function", "_tcscanf_l function", "_cscanf function", "_tcscanf function", "cwscanf_l function", "tcscanf_l function", "reading data [C++], from the console", "_cwscanf_l function"]
 ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 Reads formatted data from the console. More secure versions of these functions are available; see [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](../../c-runtime-library/reference/cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md).  

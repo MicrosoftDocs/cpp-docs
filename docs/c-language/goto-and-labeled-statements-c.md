@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "goto"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "labeled statement"
-  - "statements, labeled"
-  - "goto keyword [C]"
+f1_keywords: ["goto"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["labeled statement", "statements, labeled", "goto keyword [C]"]
 ms.assetid: 3d0473dc-4b18-4fcc-9616-31a38499d7d7
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # goto and Labeled Statements (C)
 The `goto` statement transfers control to a label. The given label must reside in the same function and can appear before only one statement in the same function.  

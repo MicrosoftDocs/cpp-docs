@@ -4,72 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_vfprintf_p"
-  - "_vfwprintf_p"
-  - "_vfprintf_p_l"
-  - "_vfwprintf_p_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_vfprintf_p", "_vfwprintf_p", "_vfprintf_p_l", "_vfwprintf_p_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_vfwprintf_p_l"
-  - "_vfprintf_p"
-  - "vfwprintf_p_l"
-  - "vfwprintf_p"
-  - "vfprintf_p_l"
-  - "_vfwprintf_p"
-  - "_vftprintf_p"
-  - "_vfprintf_p_l"
-  - "vfprintf_p"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vfprintf_p_l function"
-  - "_vftprintf_p_l function"
-  - "_vfprintf_p function"
-  - "vfprintf_p function"
-  - "vftprintf_p_l function"
-  - "_vfprintf_p_l function"
-  - "_vftprintf_p function"
-  - "_vfwprintf_p_l function"
-  - "vfwprintf_p_l function"
-  - "_vfwprintf_p function"
-  - "vftprintf_p function"
-  - "formatted text [C++]"
-  - "vfwprintf_p function"
+f1_keywords: ["_vfwprintf_p_l", "_vfprintf_p", "vfwprintf_p_l", "vfwprintf_p", "vfprintf_p_l", "_vfwprintf_p", "_vftprintf_p", "_vfprintf_p_l", "vfprintf_p"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["vfprintf_p_l function", "_vftprintf_p_l function", "_vfprintf_p function", "vfprintf_p function", "vftprintf_p_l function", "_vfprintf_p_l function", "_vftprintf_p function", "_vfwprintf_p_l function", "vfwprintf_p_l function", "_vfwprintf_p function", "vftprintf_p function", "formatted text [C++]", "vfwprintf_p function"]
 ms.assetid: 4d4a0914-4175-4b65-9ca1-037c4ef29147
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l
 Write formatted output using a pointer to a list of arguments, with the ability to specify the order that arguments are used in the format string.  
