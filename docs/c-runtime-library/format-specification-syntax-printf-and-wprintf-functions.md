@@ -47,7 +47,8 @@ The arguments that follow the format string are interpreted according to the cor
 Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` variants, are specified by using **d**, **i**, **o**, **u**, **x**, and **X**. Floating-point types such as `float`, `double`, and `long double`, are specified by using **a**, **A**, **e**, **E**, **f**, **F**, **g**, and **G**. By default, unless they are modified by a *size* prefix, integer arguments are coerced to `int` type, and floating-point arguments are coerced to `double`. On 64-bit systems, an `int` is a 32-bit value; therefore, 64-bit integers will be truncated when they are formatted for output unless a *size* prefix of **ll** or **I64** is used. Pointer types that are specified by **p** use the default pointer size for the platform.
 
 > [!NOTE]
-> The **Z** type character, and the behavior of the **c**, **C**, **s**, and  **S** type characters when they are used with the `printf` and `wprintf` functions, are Microsoft extensions. The ISO C standard uses **c** and **s** consistently for narrow characters and strings, and **C** and **S** for wide characters and strings, in all formatting functions. 
+> **Microsoft Specific**  
+> The **Z** type character, and the behavior of the **c**, **C**, **s**, and  **S** type characters when they are used with the `printf` and `wprintf` functions, are Microsoft extensions. The ISO C standard uses **c** and **s** consistently for narrow characters and strings, and **C** and **S** for wide characters and strings, in all formatting functions.
 
 ### Type field characters
 
