@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['extent', 'AMP/extent', 'AMP/Concurrency::extent::extent', 'AMP/Concurrency::extent::contains', 'AMP/Concurrency::extent::size', 'AMP/Concurrency::extent::tile', 'AMP/Concurrency::extent::rank Constant']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "extent structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["extent structure"]
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # extent Class (C++ AMP)
 Represents a vector of *N* integer values that specify the bounds of an *N*-dimensional space that has an origin of 0. The values in the vector are ordered from most significant to least significant.  

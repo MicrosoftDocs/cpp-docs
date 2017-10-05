@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock::scoped_lock', 'CONCRT/concurrency::reader_writer_lock::scoped_lock_read', 'CONCRT/concurrency::reader_writer_lock::reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock::lock', 'CONCRT/concurrency::reader_writer_lock::lock_read', 'CONCRT/concurrency::reader_writer_lock::try_lock', 'CONCRT/concurrency::reader_writer_lock::try_lock_read', 'CONCRT/concurrency::reader_writer_lock::unlock']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reader_writer_lock class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["reader_writer_lock class"]
 ms.assetid: 91a59cd2-ca05-4b74-8398-d826d9f86736
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # reader_writer_lock Class
 A writer-preference queue-based reader-writer lock with local only spinning. The lock grants first in - first out (FIFO) access to writers and starves readers under a continuous load of writers.  

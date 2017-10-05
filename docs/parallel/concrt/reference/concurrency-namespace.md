@@ -4,49 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "concurrent_priority_queue/concurrency"
-  - "agents/concurrency"
-  - "concurrent_vector/concurrency"
-  - "concrt/concurrency"
-  - "internal_split_ordered_list/concurrency"
-  - "concurrent_queue/concurrency"
-  - "pplcancellation_token/concurrency"
-  - "pplinterface/concurrency"
-  - "ppltasks/concurrency"
-  - "ppl/concurrency"
-  - "concurrent_unordered_map/concurrency"
-  - "concrtrm/concurrency"
-  - "concurrent_unordered_set/concurrency"
-  - "pplconcrt/concurrency"
-  - "internal_concurrent_hash/concurrency"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Concurrency namespace"
+f1_keywords: ["concurrent_priority_queue/concurrency", "agents/concurrency", "concurrent_vector/concurrency", "concrt/concurrency", "internal_split_ordered_list/concurrency", "concurrent_queue/concurrency", "pplcancellation_token/concurrency", "pplinterface/concurrency", "ppltasks/concurrency", "ppl/concurrency", "concurrent_unordered_map/concurrency", "concrtrm/concurrency", "concurrent_unordered_set/concurrency", "pplconcrt/concurrency", "internal_concurrent_hash/concurrency"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Concurrency namespace"]
 ms.assetid: f1d33ca2-679b-4442-b140-22a9d9df61d1
 caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # concurrency Namespace
 The `Concurrency` namespace provides classes and functions that give you access to the Concurrency Runtime, a concurrent programming framework for C++. For more information, see [Concurrency Runtime](../../../parallel/concrt/concurrency-runtime.md).  

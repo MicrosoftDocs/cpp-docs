@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['concurrent_vector', 'CONCURRENT_VECTOR/concurrency::concurrent_vector', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::concurrent_vector', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::assign', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::at', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::back', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::begin', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::capacity', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::cbegin', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::cend', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::clear', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::crbegin', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::crend', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::empty', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::end', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::front', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::get_allocator', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::grow_by', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::grow_to_at_least', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::max_size', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::push_back', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::rbegin', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::rend', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::reserve', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::resize', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::shrink_to_fit', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::size', 'CONCURRENT_VECTOR/concurrency::concurrent_vector::swap']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "concurrent_vector class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["concurrent_vector class"]
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # concurrent_vector Class
 The `concurrent_vector` class is a sequence container class that allows random access to any element. It enables concurrency-safe append, element access, iterator access, and iterator traversal operations.  

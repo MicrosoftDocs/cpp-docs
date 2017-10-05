@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "threading [C++]"
-  - "multiple threads"
-  - "concurrent programming [C++]"
-  - "programming [C++], multithreaded"
-  - "multithreading [C++], about multithreading"
-  - "multiple concurrent threads"
-  - "multithreading [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["threading [C++]", "multiple threads", "concurrent programming [C++]", "programming [C++], multithreaded", "multithreading [C++], about multithreading", "multiple concurrent threads", "multithreading [C++]"]
 ms.assetid: 24425b1f-5031-4c6b-aac7-017115a40e7c
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Multithreading Support for Older Code (Visual C++)
 Visual C++ allows you to have multiple concurrent threads of execution running simultaneously. With multithreading, you can spin off background tasks, manage simultaneous streams of input, manage a user interface, and much more.  

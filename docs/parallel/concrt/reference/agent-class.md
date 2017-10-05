@@ -4,35 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['agent', 'AGENTS/concurrency::agent', 'AGENTS/concurrency::agent::agent', 'AGENTS/concurrency::agent::cancel', 'AGENTS/concurrency::agent::start', 'AGENTS/concurrency::agent::status', 'AGENTS/concurrency::agent::status_port', 'AGENTS/concurrency::agent::wait', 'AGENTS/concurrency::agent::wait_for_all', 'AGENTS/concurrency::agent::wait_for_one', 'AGENTS/concurrency::agent::done', 'AGENTS/concurrency::agent::run']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "agent class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["agent class"]
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # agent Class
 A class intended to be used as a base class for all independent agents. It is used to hide state from other agents and interact using message-passing.  

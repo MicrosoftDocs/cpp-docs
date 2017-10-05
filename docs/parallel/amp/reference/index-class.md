@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['AMP/index', 'AMP/Concurrency::index::index', 'AMP/Concurrency::index::rank']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "index structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["index structure"]
 ms.assetid: cbe79b08-0ba7-474c-9828-f1a71da39eb3
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # index Class
 Defines an *N*-dimensional index pographics-cpp-amp.md.  

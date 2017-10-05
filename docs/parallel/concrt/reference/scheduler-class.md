@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['Scheduler', 'CONCRT/concurrency::Scheduler', 'CONCRT/concurrency::Scheduler::Scheduler', 'CONCRT/concurrency::Scheduler::Attach', 'CONCRT/concurrency::Scheduler::Create', 'CONCRT/concurrency::Scheduler::CreateScheduleGroup', 'CONCRT/concurrency::Scheduler::GetNumberOfVirtualProcessors', 'CONCRT/concurrency::Scheduler::GetPolicy', 'CONCRT/concurrency::Scheduler::Id', 'CONCRT/concurrency::Scheduler::IsAvailableLocation', 'CONCRT/concurrency::Scheduler::Reference', 'CONCRT/concurrency::Scheduler::RegisterShutdownEvent', 'CONCRT/concurrency::Scheduler::Release', 'CONCRT/concurrency::Scheduler::ResetDefaultSchedulerPolicy', 'CONCRT/concurrency::Scheduler::ScheduleTask', 'CONCRT/concurrency::Scheduler::SetDefaultSchedulerPolicy']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Scheduler class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Scheduler class"]
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Scheduler Class
 Represents an abstraction for a Concurrency Runtime scheduler.  

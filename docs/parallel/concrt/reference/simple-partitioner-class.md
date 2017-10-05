@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['simple_partitioner', 'PPL/concurrency::simple_partitioner', 'PPL/concurrency::simple_partitioner::simple_partitioner']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "simple_partitioner class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["simple_partitioner class"]
 ms.assetid: d7e997af-54d1-43f5-abe0-def72df6edb3
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # simple_partitioner Class
 The `simple_partitioner` class represents a static partitioning of the range iterated over by `parallel_for`. The partitioner divides the range into chunks such that each chunk has at least the number of iterations specified by the chunk size.  

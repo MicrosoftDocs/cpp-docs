@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "structured task groups [Concurrency Runtime]"
-  - "structured tasks [Concurrency Runtime]"
-  - "task groups [Concurrency Runtime]"
-  - "task parallelism"
-  - "tasks [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["structured task groups [Concurrency Runtime]", "structured tasks [Concurrency Runtime]", "task groups [Concurrency Runtime]", "task parallelism", "tasks [Concurrency Runtime]"]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
 caps.latest.revision: 56
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Task Parallelism (Concurrency Runtime)
 In the Concurrency Runtime, a *task* is a unit of work that performs a specific job and typically runs in parallel with other tasks. A task can be decomposed into additional, more fine-grained tasks that are organized into a *task group*.  

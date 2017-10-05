@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ITarget', 'AGENTS/concurrency::ITarget', 'AGENTS/concurrency::ITarget::propagate', 'AGENTS/concurrency::ITarget::send', 'AGENTS/concurrency::ITarget::supports_anonymous_source', 'AGENTS/concurrency::ITarget::link_source', 'AGENTS/concurrency::ITarget::unlink_source', 'AGENTS/concurrency::ITarget::unlink_sources']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ITarget class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ITarget class"]
 ms.assetid: 5678db25-112a-4f72-be13-42e16b67c48b
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ITarget Class
 The `ITarget` class is the interface for all target blocks. Target blocks consume messages offered to them by `ISource` blocks.  

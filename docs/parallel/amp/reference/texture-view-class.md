@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['texture_view', 'AMP_GRAPHICS/texture_view', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::texture_view', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_alpha', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_blue', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_green', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::gather_red', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::get', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::sample', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::set', 'AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type']
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # texture_view Class
 Provides read access and write access to a texture. `texture_view` can only be used to read textures whose value type is `int`, `unsigned int`, or `float` that have default 32-bit bpse. To read other texture formats, use `texture_view<const value_type, _Rank>`.  

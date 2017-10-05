@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ordered_message_processor', 'AGENTS/concurrency::ordered_message_processor', 'AGENTS/concurrency::ordered_message_processor::ordered_message_processor', 'AGENTS/concurrency::ordered_message_processor::async_send', 'AGENTS/concurrency::ordered_message_processor::initialize', 'AGENTS/concurrency::ordered_message_processor::initialize_batched_processing', 'AGENTS/concurrency::ordered_message_processor::sync_send', 'AGENTS/concurrency::ordered_message_processor::wait', 'AGENTS/concurrency::ordered_message_processor::process_incoming_message']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ordered_message_processor class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ordered_message_processor class"]
 ms.assetid: 787adfb7-7f79-4a70-864a-80e3b64088cd
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ordered_message_processor Class
 An `ordered_message_processor` is a `message_processor` that allows message blocks to process messages in the order they were received.  

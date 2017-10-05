@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "converting from OpenMP to the Concurrency Runtime, parallel for loops"
-  - "converting from OpenMP to the Concurrency Runtime, parallel loops"
-  - "parallel for loops, converting from OpenMP to the Concurrency Runtime"
-  - "parallel loops, converting from OpenMP to the Concurrency Runtime"
+dev_langs: ["C++"]
+helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, parallel for loops", "converting from OpenMP to the Concurrency Runtime, parallel loops", "parallel for loops, converting from OpenMP to the Concurrency Runtime", "parallel loops, converting from OpenMP to the Concurrency Runtime"]
 ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime
 

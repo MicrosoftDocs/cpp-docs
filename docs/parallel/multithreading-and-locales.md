@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "locales [C++], multithreading"
-  - "multithreading [C++], locales"
-  - "threading [C++], locales"
-  - "per-thread locale"
+dev_langs: ["C++"]
+helpviewer_keywords: ["locales [C++], multithreading", "multithreading [C++], locales", "threading [C++], locales", "per-thread locale"]
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Multithreading and Locales
 Both the C Runtime Library and the C++ Standard Library provide support for changing the locale of your program. This topic discusses issues that arise when using the locale functionality of both libraries in a multithreaded application.  

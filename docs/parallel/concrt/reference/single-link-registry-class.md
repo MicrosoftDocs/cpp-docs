@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['single_link_registry', 'AGENTS/concurrency::single_link_registry', 'AGENTS/concurrency::single_link_registry::single_link_registry', 'AGENTS/concurrency::single_link_registry::add', 'AGENTS/concurrency::single_link_registry::begin', 'AGENTS/concurrency::single_link_registry::contains', 'AGENTS/concurrency::single_link_registry::count', 'AGENTS/concurrency::single_link_registry::remove']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "single_link_registry class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["single_link_registry class"]
 ms.assetid: 09540a4e-c34e-4ff9-af49-21b8612b6ab3
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # single_link_registry Class
 The `single_link_registry` object is a `network_link_registry` that manages only a single source or target block.  

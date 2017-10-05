@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "writing a parallel_for_each loop [Concurrency Runtime]"
-  - "parallel_for_each function, example"
+dev_langs: ["C++"]
+helpviewer_keywords: ["writing a parallel_for_each loop [Concurrency Runtime]", "parallel_for_each function, example"]
 ms.assetid: fa9c0ba6-ace0-4f88-8681-c7c1f52aff20
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Write a parallel_for_each Loop
 This example shows how to use the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm to compute the count of prime numbers in a [std::array](../../standard-library/array-class-stl.md) object in parallel.  
