@@ -4,49 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_CIexp"
-apilocation: 
-  - "msvcr120.dll"
-  - "msvcr80.dll"
-  - "msvcr110.dll"
-  - "msvcr100.dll"
-  - "msvcrt.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr90.dll"
+apiname: ["_CIexp"]
+apilocation: ["msvcr120.dll", "msvcr80.dll", "msvcr110.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "msvcr90.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CIexp"
-  - "_CIexp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CIexp intrinsic"
-  - "_CIexp intrinsic"
+f1_keywords: ["CIexp", "_CIexp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CIexp intrinsic", "_CIexp intrinsic"]
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CIexp
 Calculates the exponential of the top value on the stack.  

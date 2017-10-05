@@ -4,64 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "log10f"
-  - "logf"
-  - "log10"
-  - "log"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["log10f", "logf", "log10", "log"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "logf"
-  - "_log10l"
-  - "log"
-  - "_logl"
-  - "log10f"
-  - "log10"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "calculating logarithms"
-  - "log10f function"
-  - "log10 function"
-  - "log function"
-  - "logf function"
-  - "logarithms"
+f1_keywords: ["logf", "_log10l", "log", "_logl", "log10f", "log10"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["calculating logarithms", "log10f function", "log10 function", "log function", "logf function", "logarithms"]
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # log, logf, log10, log10f
 Calculates logarithms.  

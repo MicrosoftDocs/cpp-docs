@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "relational operators, syntax"
-  - "equality operator"
-  - "operators [C], equality"
-  - "equality operator, syntax"
-  - "operators [C], relational"
+dev_langs: ["C++"]
+helpviewer_keywords: ["relational operators, syntax", "equality operator", "operators [C], equality", "equality operator, syntax", "operators [C], relational"]
 ms.assetid: c89a3815-a65e-4e0d-8333-0e8dc7fdb30b
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C Relational and Equality Operators
 The binary relational and equality operators compare their first operand to their second operand to test the validity of the specified relationship. The result of a relational expression is 1 if the tested relationship is true and 0 if it is false. The type of the result is `int`.  

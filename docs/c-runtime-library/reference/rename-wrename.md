@@ -4,63 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "rename"
-  - "_wrename"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+apiname: ["rename", "_wrename"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wrename"
-  - "_trename"
-  - "Rename"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "trename function"
-  - "directories [C++], renaming"
-  - "renaming directories"
-  - "names [C++], changing file"
-  - "_trename function"
-  - "rename function"
-  - "wrename function"
-  - "files [C++], renaming"
-  - "_wrename function"
-  - "names [C++], changing directory"
-  - "renaming files"
+f1_keywords: ["_wrename", "_trename", "Rename"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["trename function", "directories [C++], renaming", "renaming directories", "names [C++], changing file", "_trename function", "rename function", "wrename function", "files [C++], renaming", "_wrename function", "names [C++], changing directory", "renaming files"]
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # rename, _wrename
 Rename a file or directory.  

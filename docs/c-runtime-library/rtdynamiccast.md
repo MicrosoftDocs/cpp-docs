@@ -4,47 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "__RTDynamicCast"
-apilocation: 
-  - "msvcr90.dll"
-  - "msvcr110.dll"
-  - "msvcr120.dll"
-  - "msvcrt.dll"
-  - "msvcr100.dll"
-  - "msvcr80.dll"
-  - "msvcr110_clr0400.dll"
+apiname: ["__RTDynamicCast"]
+apilocation: ["msvcr90.dll", "msvcr110.dll", "msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "__RTDynamicCast"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__RTDynamicCast"
+f1_keywords: ["__RTDynamicCast"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__RTDynamicCast"]
 ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __RTDynamicCast
 Runtime implementation of the [dynamic_cast](../cpp/dynamic-cast-operator.md) operator.  

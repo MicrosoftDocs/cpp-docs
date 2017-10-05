@@ -4,41 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "type specifiers [C++], list"
-  - "widening integers"
-  - "data types [C++], equivalents"
-  - "sign-extending integral types"
-  - "zero-extending"
-  - "identifiers, data type"
-  - "data types [C++], specifiers"
-  - "simple types, names"
-  - "type names [C++], simple"
+dev_langs: ["C++"]
+helpviewer_keywords: ["type specifiers [C++], list", "widening integers", "data types [C++], equivalents", "sign-extending integral types", "zero-extending", "identifiers, data type", "data types [C++], specifiers", "simple types, names", "type names [C++], simple"]
 ms.assetid: 0d4b515a-4f68-4786-83cf-a5d43c7cb6f3
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Data Type Specifiers and Equivalents
 This book generally uses the forms of the type specifiers listed in the following table rather than the long forms, and it assumes that the `char` type is signed by default. Therefore, throughout this book, `char` is equivalent to **signed char**.  

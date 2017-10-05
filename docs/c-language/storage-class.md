@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "linkage [C++], external"
-  - "function storage class"
-  - "function specifiers, storage class"
-  - "storage classes"
-  - "Microsoft-specific storage classes"
-  - "external linkage, storage-class specifiers"
-  - "static storage class specifiers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["linkage [C++], external", "function storage class", "function specifiers, storage class", "storage classes", "Microsoft-specific storage classes", "external linkage, storage-class specifiers", "static storage class specifiers"]
 ms.assetid: 39a79ba6-edf5-42b6-8e45-f94227603dd6
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Storage Class
 The storage-class specifier in a function definition gives the function either `extern` or **static** storage class.  

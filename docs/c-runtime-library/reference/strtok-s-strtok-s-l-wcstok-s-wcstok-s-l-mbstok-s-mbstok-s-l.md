@@ -4,76 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wcstok_s_l"
-  - "_mbstok_s_l"
-  - "_mbstok_s"
-  - "strtok_s"
-  - "wcstok_s"
-  - "_strtok_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["_wcstok_s_l", "_mbstok_s_l", "_mbstok_s", "strtok_s", "wcstok_s", "_strtok_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcstok_s_l"
-  - "_wcstok_s_l"
-  - "_tcstok_s"
-  - "_mbstok_s_l"
-  - "strtok_s"
-  - "wcstok_s"
-  - "_mbstok_s"
-  - "_strtok_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_strtok_s_l function"
-  - "_mbstok_s_l function"
-  - "strings [C++], searching"
-  - "mbstok_s_l function"
-  - "wcstok_s_l function"
-  - "_wcstok_s_l function"
-  - "_tcstok_s function"
-  - "_tcstok_s_l function"
-  - "strtok_s_l function"
-  - "wcstok_s function"
-  - "tokens, finding in strings"
-  - "mbstok_s function"
-  - "_mbstok_s function"
-  - "strtok_s function"
+f1_keywords: ["_tcstok_s_l", "_wcstok_s_l", "_tcstok_s", "_mbstok_s_l", "strtok_s", "wcstok_s", "_mbstok_s", "_strtok_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_strtok_s_l function", "_mbstok_s_l function", "strings [C++], searching", "mbstok_s_l function", "wcstok_s_l function", "_wcstok_s_l function", "_tcstok_s function", "_tcstok_s_l function", "strtok_s_l function", "wcstok_s function", "tokens, finding in strings", "mbstok_s function", "_mbstok_s function", "strtok_s function"]
 ms.assetid: 7696c972-f83b-4617-8c82-95973e9fdb46
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 

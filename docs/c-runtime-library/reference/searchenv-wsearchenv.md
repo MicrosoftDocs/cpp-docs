@@ -4,63 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_searchenv"
-  - "_wsearchenv"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-environment-l1-1-0.dll"
+apiname: ["_searchenv", "_wsearchenv"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wsearchenv"
-  - "_tsearchenv"
-  - "wsearchenv"
-  - "_searchenv"
-  - "searchenv"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wsearchenv function"
-  - "files [C++], finding"
-  - "_searchenv function"
-  - "tsearchenv function"
-  - "environment paths, searching for files"
-  - "_tsearchenv function"
-  - "wsearchenv function"
-  - "searchenv function"
-  - "environment paths"
+f1_keywords: ["_wsearchenv", "_tsearchenv", "wsearchenv", "_searchenv", "searchenv"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wsearchenv function", "files [C++], finding", "_searchenv function", "tsearchenv function", "environment paths, searching for files", "_tsearchenv function", "wsearchenv function", "searchenv function", "environment paths"]
 ms.assetid: 9c944a27-d326-409b-aee6-410e8762d9d3
 caps.latest.revision: 33
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _searchenv, _wsearchenv
 Uses environment paths to search for a file. More secure versions of these functions are available; see [_searchenv_s, _wsearchenv_s](../../c-runtime-library/reference/searchenv-s-wsearchenv-s.md).  

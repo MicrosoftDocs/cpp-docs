@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "volatile keyword [C], type qualifier"
-  - "type qualifiers"
-  - "volatile keyword [C]"
-  - "qualifiers for types"
-  - "const keyword [C]"
-  - "memory, access using volatile"
-  - "volatile keyword [C], type specifier"
+dev_langs: ["C++"]
+helpviewer_keywords: ["volatile keyword [C], type qualifier", "type qualifiers", "volatile keyword [C]", "qualifiers for types", "const keyword [C]", "memory, access using volatile", "volatile keyword [C], type specifier"]
 ms.assetid: bb4c6744-1dd7-40a8-b4eb-f5585be30908
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Type Qualifiers
 Type qualifiers give one of two properties to an identifier. The **const** type qualifier declares an object to be nonmodifiable. The `volatile` type qualifier declares an item whose value can legitimately be changed by something beyond the control of the program in which it appears, such as a concurrently executing thread.  

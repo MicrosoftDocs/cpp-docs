@@ -4,43 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr100.dll"
-  - "msvcr120.dll"
-  - "msvcr80.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr90.dll"
+apilocation: ["msvcr100.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr90.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "scanf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "scanf function, width specification"
+f1_keywords: ["scanf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["scanf function, width specification"]
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # scanf Width Specification
 This information applies to the interpretation of format strings in the `scanf` family of functions, including the secure versions such as `scanf_s`. These functions normally assume the input stream is divided into a sequence of tokens. Tokens are separated by whitespace (space, tab, or newline), or in the case of numerical types, by the natural end of a numerical data type as indicated by the first character that cannot be converted into numerical text. However, the width specification may be used to cause parsing of the input to stop before the natural end of a token.  

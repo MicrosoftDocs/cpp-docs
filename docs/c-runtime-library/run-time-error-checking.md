@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.runtime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "run-time error checking"
-  - "run-time errors, checking"
+f1_keywords: ["c.runtime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["run-time error checking", "run-time errors, checking"]
 ms.assetid: c965dd01-57ad-4a3c-b1d6-5aa04f920501
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Run-Time Error Checking
 The C run-time library contains the functions that support run-time error checks (RTC). Run-time error checking allows you to build your program such that certain kinds of run-time errors are reported. You specify how the errors are reported and which kinds of errors are reported. For more information, see [How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks).  

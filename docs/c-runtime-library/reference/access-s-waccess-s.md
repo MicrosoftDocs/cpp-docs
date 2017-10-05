@@ -4,59 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_access_s"
-  - "_waccess_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+apiname: ["_access_s", "_waccess_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "waccess_s"
-  - "access_s"
-  - "_waccess_s"
-  - "_access_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "access_s function"
-  - "taccess_s function"
-  - "_taccess_s function"
-  - "waccess_s function"
-  - "_access_s function"
-  - "_waccess_s function"
+f1_keywords: ["waccess_s", "access_s", "_waccess_s", "_access_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["access_s function", "taccess_s function", "_taccess_s function", "waccess_s function", "_access_s function", "_waccess_s function"]
 ms.assetid: fb3004fc-dcd3-4569-8b27-d817546e947e
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _access_s, _waccess_s
 Determines file read/write permissions. This is a version of [_access, _waccess](../../c-runtime-library/reference/access-waccess.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

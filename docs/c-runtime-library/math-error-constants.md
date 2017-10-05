@@ -4,52 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_PLOSS"
-  - "_UNDERFLOW"
-  - "_TLOSS"
-  - "_SING"
-  - "_DOMAIN"
-  - "_OVERFLOW"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_TLOSS constant"
-  - "_SING constant"
-  - "PLOSS constant"
-  - "UNDERFLOW constant"
-  - "_UNDERFLOW constant"
-  - "_OVERFLOW constant"
-  - "DOMAIN constant"
-  - "OVERFLOW constant"
-  - "TLOSS constant"
-  - "SING constant"
-  - "_DOMAIN constant"
-  - "_PLOSS constant"
-  - "math error constants"
+f1_keywords: ["_PLOSS", "_UNDERFLOW", "_TLOSS", "_SING", "_DOMAIN", "_OVERFLOW"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_TLOSS constant", "_SING constant", "PLOSS constant", "UNDERFLOW constant", "_UNDERFLOW constant", "_OVERFLOW constant", "DOMAIN constant", "OVERFLOW constant", "TLOSS constant", "SING constant", "_DOMAIN constant", "_PLOSS constant", "math error constants"]
 ms.assetid: 4be933a6-674e-45a5-8ac9-090023542f5b
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Math Error Constants
 ## Syntax  

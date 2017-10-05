@@ -4,59 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wspawnv"
-  - "_spawnv"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-process-l1-1-0.dll"
+apiname: ["_wspawnv", "_spawnv"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wspawnv"
-  - "_spawnv"
-  - "_wspawnv"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wspawnv function"
-  - "processes, creating"
-  - "_spawnv function"
-  - "processes, executing new"
-  - "process creation"
-  - "_wspawnv function"
-  - "spawnv function"
+f1_keywords: ["wspawnv", "_spawnv", "_wspawnv"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wspawnv function", "processes, creating", "_spawnv function", "processes, executing new", "process creation", "_wspawnv function", "spawnv function"]
 ms.assetid: 72360ef4-dfa9-44c1-88c1-b3ecb660aa7d
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _spawnv, _wspawnv
 Creates and executes a new process.  

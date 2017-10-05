@@ -4,46 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr120.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr90.dll"
-  - "msvcr80.dll"
-  - "msvcr100.dll"
-  - "msvcr110.dll"
+apilocation: ["msvcr120.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "strcoll"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "code pages, using for string comparisons"
-  - "string comparison [C++], culture-specific"
-  - "strcoll functions"
-  - "strings [C++], comparing by code page"
+f1_keywords: ["strcoll"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["code pages, using for string comparisons", "string comparison [C++], culture-specific", "strcoll functions", "strings [C++], comparing by code page"]
 ms.assetid: c09eeff3-8aba-4cfb-a524-752436d85573
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # strcoll Functions
 Each of the `strcoll` and `wcscoll` functions compares two strings according to the `LC_COLLATE` category setting of the locale code page currently in use. Each of the `_mbscoll` functions compares two strings according to the multibyte code page currently in use. Use the `coll` functions for string comparisons when there is a difference between the character set order and the lexicographic character order in the current code page and this difference is of interest for the comparison. Use the corresponding `cmp` functions to test only for string equality.  

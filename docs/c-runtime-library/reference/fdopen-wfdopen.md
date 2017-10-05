@@ -4,60 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_fdopen"
-  - "_wfdopen"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_fdopen", "_wfdopen"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tfdopen"
-  - "_fdopen"
-  - "_wfdopen"
-  - "wfdopen"
-  - "tfdopen"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wfdopen function"
-  - "_fdopen function"
-  - "_wfdopen function"
-  - "tfdopen function"
-  - "fdopen function"
-  - "_tfdopen function"
-  - "streams, associating with files"
+f1_keywords: ["_tfdopen", "_fdopen", "_wfdopen", "wfdopen", "tfdopen"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wfdopen function", "_fdopen function", "_wfdopen function", "tfdopen function", "fdopen function", "_tfdopen function", "streams, associating with files"]
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _fdopen, _wfdopen
 Associates a stream with a file that was previously opened for low-level I/O.  

@@ -4,64 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "timespec_get"
-  - "_timespec32_get"
-  - "_timespec64_get"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+apiname: ["timespec_get", "_timespec32_get", "_timespec64_get"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "timespec_get"
-  - "_timespec32_get"
-  - "_timespec64_get"
-  - "time/timespec_get"
-  - "time/_timespec32_get"
-  - "time/_timespec64_get"
-  - "timespec"
-  - "_timespec32"
-  - "_timespec64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "timespec_get function"
-  - "_timespec32_get function"
-  - "_timespec64_get function"
+f1_keywords: ["timespec_get", "_timespec32_get", "_timespec64_get", "time/timespec_get", "time/_timespec32_get", "time/_timespec64_get", "timespec", "_timespec32", "_timespec64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["timespec_get function", "_timespec32_get function", "_timespec64_get function"]
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # timespec_get, _timespec32_get, _timespec64_get
 Sets the interval pointed to by the first argument to the current calendar time, based on the specified time base.  

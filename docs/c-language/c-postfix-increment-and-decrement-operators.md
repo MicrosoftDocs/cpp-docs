@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "increment operators, syntax"
-  - "scalar operators"
-  - "types [C], scalar"
+dev_langs: ["C++"]
+helpviewer_keywords: ["increment operators, syntax", "scalar operators", "types [C], scalar"]
 ms.assetid: 56ba218d-65f9-405f-8684-caccc0ca33aa
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C Postfix Increment and Decrement Operators
 Operands of the postfix increment and decrement operators are scalar types that are modifiable l-values.  
