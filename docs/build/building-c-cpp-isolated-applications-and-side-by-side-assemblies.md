@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "isolated applications [C++]"
-  - "WinSxS [C++]"
-  - "native assembly cache [C++]"
-  - "builds [C++], isolated applications"
-  - "side-by-side applications [C++]"
-  - "builds [C++], side-by-side assemblies"
+dev_langs: ["C++"]
+helpviewer_keywords: ["isolated applications [C++]", "WinSxS [C++]", "native assembly cache [C++]", "builds [C++], isolated applications", "side-by-side applications [C++]", "builds [C++], side-by-side assemblies"]
 ms.assetid: 9465904e-76f7-48bd-bb3f-c55d8f1699b6
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Building C/C++ Isolated Applications and Side-by-side Assemblies
 Visual C++ supports a deployment model for Windows client applications based on the idea of [isolated applications](http://msdn.microsoft.com/library/aa375190) and [side-by-side assemblies](http://msdn.microsoft.com/library/ff951640). By default, Visual C++ builds all native C/C++ applications as isolated applications that use [manifests](http://msdn.microsoft.com/library/aa375365) to describe their dependencies on Visual C++ libraries.  

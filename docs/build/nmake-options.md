@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NMAKE program, options"
+dev_langs: ["C++"]
+helpviewer_keywords: ["NMAKE program, options"]
 ms.assetid: 00ba1aec-ef27-44cf-8d82-c5c095e45bae
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # NMAKE Options
 NMAKE options are described in the following table. Options are preceded by either a slash (/) or a dash (-) and are not case sensitive. Use [!CMDSWITCHES](../build/makefile-preprocessing-directives.md) to change option settings in a makefile or in Tools.ini.  

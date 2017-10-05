@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - ".SAVEREG"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".SAVEREG directive"
+f1_keywords: [".SAVEREG"]
+dev_langs: ["C++"]
+helpviewer_keywords: [".SAVEREG directive"]
 ms.assetid: 1dbc2ef6-a197-40e7-9e55-fddcae8cef29
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # .SAVEREG
 Generates either a `UWOP_SAVE_NONVOL` or a `UWOP_SAVE_NONVOL_FAR` unwind code entry for the specified register (`reg`) and offset (`offset`) using the current prologue offset. MASM will choose the most efficient encoding.  

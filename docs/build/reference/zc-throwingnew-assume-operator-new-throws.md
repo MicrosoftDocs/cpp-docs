@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "12/13/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "throwingNew"
-  - "/Zc:throwingNew"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Zc compiler options (C++)"
-  - "throwingNew"
-  - "Assume operator new Throws"
-  - "/Zc compiler options (C++)"
-  - "Zc compiler options (C++)"
+f1_keywords: ["throwingNew", "/Zc:throwingNew"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Zc compiler options (C++)", "throwingNew", "Assume operator new Throws", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 20ff0101-9677-4d83-8c7b-8ec9ca49f04f
 caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /Zc:throwingNew (Assume operator new throws)  
 When the `/Zc:throwingNew` option is specified, the compiler optimizes calls to `operator new` to skip checks for a null pointer return. This option tells the compiler to assume that all linked implementations of `operator new` and custom allocators conform to the C++ standard and throw on allocation failure. By default in Visual Studio, the compiler pessimistically generates null checks (`/Zc:throwingNew-`) for these calls, because users can link with a non-throwing implementation of `operator new` or write custom allocator routines that return null pointers.  

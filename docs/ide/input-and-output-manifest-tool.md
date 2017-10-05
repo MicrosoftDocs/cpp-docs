@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCManifestTool.OutputManifestFile"
-  - "VC.Project.VCManifestTool.InputResourceManifests"
-  - "VC.Project.VCManifestTool.EmbedManifest"
-  - "VC.Project.VCManifestTool.AdditionalManifestFiles"
-  - "VC.Project.VCManifestTool.DependencyInformationFile"
-  - "VC.Project.VCManifestTool.OutputResourceManifest"
-  - "VC.Project.VCManifestTool.GenerateCatalogFiles"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.VCManifestTool.OutputManifestFile", "VC.Project.VCManifestTool.InputResourceManifests", "VC.Project.VCManifestTool.EmbedManifest", "VC.Project.VCManifestTool.AdditionalManifestFiles", "VC.Project.VCManifestTool.DependencyInformationFile", "VC.Project.VCManifestTool.OutputResourceManifest", "VC.Project.VCManifestTool.GenerateCatalogFiles"]
+dev_langs: ["C++"]
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Input and Output, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
 Use this dialog box to specify input and output options for [Mt.exe](http://msdn.microsoft.com/library/aa375649).  

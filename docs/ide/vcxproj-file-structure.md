@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "04/27/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".vcxproj file structure"
+dev_langs: ["C++"]
+helpviewer_keywords: [".vcxproj file structure"]
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
 caps.latest.revision: 1
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 
 # .vcxproj and .props file structure

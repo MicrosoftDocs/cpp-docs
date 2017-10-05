@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.SwapRunFromNet"
-  - "/swaprun"
-  - "VC.Project.VCLinkerTool.SwapRunFromCD"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-SWAPRUN linker option"
-  - "files [C++], LINK"
-  - "LINK tool [C++], output"
-  - "linker [C++], copying output to swap file"
-  - "swap file for linker output"
-  - "output files, linker"
-  - "/SWAPRUN linker option"
-  - "SWAPRUN linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.SwapRunFromNet", "/swaprun", "VC.Project.VCLinkerTool.SwapRunFromCD"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-SWAPRUN linker option", "files [C++], LINK", "LINK tool [C++], output", "linker [C++], copying output to swap file", "swap file for linker output", "output files, linker", "/SWAPRUN linker option", "SWAPRUN linker option"]
 ms.assetid: 4a1e7f46-4399-4161-8dfc-d6a71beaf683
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /SWAPRUN (Load Linker Output to Swap File)
 ```  

@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/11/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/permissive"
-  - "VC.Project.VCCLCompilerTool.ConformanceMode"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/permissive compiler options [C++]"
-  - "-permissive compiler options [C++]"
-  - "Standards conformance compiler options"
-  - "permissive compiler options [C++]"
+f1_keywords: ["/permissive", "VC.Project.VCCLCompilerTool.ConformanceMode"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/permissive compiler options [C++]", "-permissive compiler options [C++]", "Standards conformance compiler options", "permissive compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /permissive- (Standards conformance)
 Specify standards conformance mode to the compiler. Use this option to help you identify and fix conformance issues in your code, to make it both more correct and more portable.  

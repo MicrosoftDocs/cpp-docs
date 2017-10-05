@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCNMakeTool.ReBuildCommandLine"
-  - "VC.Project.VCNMakeTool.CleanCommandLine"
-  - "VC.Project.VCNMakeTool.Output"
-  - "VC.Project.VCNMakeTool.BuildCommandLine"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NMake property page"
+f1_keywords: ["VC.Project.VCNMakeTool.ReBuildCommandLine", "VC.Project.VCNMakeTool.CleanCommandLine", "VC.Project.VCNMakeTool.Output", "VC.Project.VCNMakeTool.BuildCommandLine"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["NMake property page"]
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # NMake Property Page
 The **NMake** property page lets you specify build settings for NMake projects.  

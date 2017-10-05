@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/zg"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Zg compiler option [C++]"
-  - "/Zg compiler option [C++]"
-  - "function prototypes, generate function prototypes compiler option"
-  - "-Zg compiler option [C++]"
-  - "generate function prototypes compiler option"
+f1_keywords: ["/zg"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Zg compiler option [C++]", "/Zg compiler option [C++]", "function prototypes, generate function prototypes compiler option", "-Zg compiler option [C++]", "generate function prototypes compiler option"]
 ms.assetid: c8df1b46-24ff-46f2-8356-e0a144b21dd2
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /Zg (Generate Function Prototypes)
 Removed. Creates a function prototype for each function defined in the source file, but does not compile the source file.  

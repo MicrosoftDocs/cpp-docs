@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/gz"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-GZ compiler option [C++]"
-  - "release-build errors"
-  - "/GZ compiler option [C++]"
-  - "GZ compiler option [C++]"
-  - "debug builds, catch release-build errors"
+f1_keywords: ["/gz"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-GZ compiler option [C++]", "release-build errors", "/GZ compiler option [C++]", "GZ compiler option [C++]", "debug builds, catch release-build errors"]
 ms.assetid: b3efeeff-d5e3-4057-91c9-f6fc73d0270c
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /GZ (Enable Stack Frame Run-Time Error Checking)
 Performs the same operations as the [/RTC (Run-Time Error Checks)](../../build/reference/rtc-run-time-error-checks.md) option. Deprecated.  
