@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "SafeInt"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SafeInt class"
+f1_keywords: ["SafeInt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SafeInt class"]
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
 caps.latest.revision: 16
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # SafeInt Class
 Extends the integer primitives to help prevent integer overflow and lets you compare different types of integers.  

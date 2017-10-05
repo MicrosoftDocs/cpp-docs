@@ -15,7 +15,6 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using CListCtrl
 Use a list control to display any arrangement of icons with labels, as in File Explorer, or columnar lists of text, with or without icons. For a description of the four possible "views" (not to be confused with MFC views) you can have in a list control — icon view, small icon view, list view, and report view — see Views in the [CListCtrl](../mfc/reference/clistctrl-class.md) class overview.  

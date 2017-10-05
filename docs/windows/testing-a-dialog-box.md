@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Test Dialog command"
-  - "testing, dialog boxes"
-  - "dialog boxes, testing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Test Dialog command", "testing, dialog boxes", "dialog boxes, testing"]
 ms.assetid: 45034ee9-c554-4f4b-8c46-6ddefdee8951
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Testing a Dialog Box
 When you're designing a dialog box, you can simulate and test its run-time behavior without compiling your program. In this mode, you can:  

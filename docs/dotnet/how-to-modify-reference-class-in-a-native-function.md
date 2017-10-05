@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "platform invoke, reference class"
-  - "reference types, modifying in a C++ native function"
+dev_langs: ["C++"]
+helpviewer_keywords: ["platform invoke, reference class", "reference types, modifying in a C++ native function"]
 ms.assetid: c701145b-62a0-4c4b-b32a-db8d69a59720
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Modify Reference Class in a Native Function
 You can pass a reference class with a CLR array to a native function, and modify the class, using PInvoke services.  

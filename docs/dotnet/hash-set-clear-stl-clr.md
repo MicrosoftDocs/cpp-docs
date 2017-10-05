@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_set::clear"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "clear member [STL/CLR]"
+f1_keywords: ["cliext::hash_set::clear"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["clear member [STL/CLR]"]
 ms.assetid: 9f38b72a-5db8-485a-b41a-7d47ac57f4a9
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # hash_set::clear (STL/CLR)
 Removes all elements.  

@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "functions [C++], generic"
-  - "generic methods"
-  - "generics [C++], functions"
-  - "methods [C++], generic"
-  - "generic functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["functions [C++], generic", "generic methods", "generics [C++], functions", "methods [C++], generic", "generic functions"]
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Generic Functions (C++/CLI)
 A generic function is a function that is declared with type parameters. When called, actual types are used instead of the type parameters.  

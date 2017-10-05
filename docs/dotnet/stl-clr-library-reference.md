@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "STL/CLR Library"
-  - "STL/CLR, redistribution"
-  - "cliext directory"
+dev_langs: ["C++"]
+helpviewer_keywords: ["STL/CLR Library", "STL/CLR, redistribution", "cliext directory"]
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # STL/CLR Library Reference
 The STL/CLR Library is a packaging of a subset of the C++ Standard Library for use with C++ and the .NET Framework common language runtime (CLR). With STL/CLR, you can use all the containers, iterators, and algorithms of the standard library in a managed environment.  

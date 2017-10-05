@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Image editor [C++], editing images"
-  - "images [C++], editing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Image editor [C++], editing images", "images [C++], editing"]
 ms.assetid: ac297b51-95c2-4512-a07f-b5d1596fc61e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Editing an Image Outside of a Project (Image Editor for Icons)
 You can open and edit images in the development environment just as you would in any graphics application. The images you work with need not be part of a Visual Studio project for stand-alone editing.  

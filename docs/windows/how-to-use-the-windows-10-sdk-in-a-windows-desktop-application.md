@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Use the Windows 10 SDK in a Windows Desktop Application
 When you create a classic Windows desktop project in Visual Studio 2017, it is set up by default to build with the version of the Windows 10 SDK that was installed when the C++ Desktop workload was installed or last updated. This version of the Windows SDK is compatible with all recent Windows releases. If you want to target an earlier version of the SDK, you can open Project | Properties and choose from the other SDK versions available in the Windows SDK Version dropdown.  

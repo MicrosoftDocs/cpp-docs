@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.uuid"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "uuid attribute"
+f1_keywords: ["vc-attr.uuid"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["uuid attribute"]
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # uuid (C++ Attributes)
 Specifies the unique ID for a class or interface.  

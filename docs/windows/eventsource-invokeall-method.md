@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "event/Microsoft::WRL::EventSource::InvokeAll"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "InvokeAll method"
+f1_keywords: ["event/Microsoft::WRL::EventSource::InvokeAll"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["InvokeAll method"]
 ms.assetid: 1506618f-0421-4428-a4d0-4ea2b10a3bf6
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # EventSource::InvokeAll Method
 Calls each event handler associated with the current [EventSource](../windows/eventsource-class.md) object using the specified argument types and arguments.  

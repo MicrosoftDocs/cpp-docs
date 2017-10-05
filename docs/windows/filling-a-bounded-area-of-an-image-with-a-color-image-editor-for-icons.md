@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "colors [C++], image"
-  - "images [C++], colors"
-  - "Image editor [C++], colors"
-  - "Fill tool"
+dev_langs: ["C++"]
+helpviewer_keywords: ["colors [C++], image", "images [C++], colors", "Image editor [C++], colors", "Fill tool"]
 ms.assetid: e647ef83-421b-4818-855d-249b4c4cb5f2
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Filling a Bounded Area of an Image with a Color (Image Editor for Icons)
 The Image editor provides the **Fill** tool for filling any enclosed image area with the current drawing color or the current background color.  

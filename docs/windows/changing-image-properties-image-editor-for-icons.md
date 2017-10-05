@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "images [C++], properties"
-  - "Image editor [C++], Properties window"
-  - "Image editor [C++], image properties"
-  - "Properties window, image editor"
+dev_langs: ["C++"]
+helpviewer_keywords: ["images [C++], properties", "Image editor [C++], Properties window", "Image editor [C++], image properties", "Properties window, image editor"]
 ms.assetid: f6172bf1-08c4-4dfd-b542-dd8749e83fe6
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Changing Image Properties (Image Editor for Icons)
 You can set or modify properties of an image using the [Properties window](/visualstudio/ide/reference/properties-window).  

@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vs.resourceview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resources [Visual Studio], viewing"
-  - "rc files, viewing resources"
-  - "Resource View pane"
-  - "layouts, previewing resource"
-  - "code, viewing resources"
-  - "resource editors, viewing resources"
-  - ".rc files, viewing resources"
-  - "resources [Visual Studio], editing"
+f1_keywords: ["vs.resourceview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resources [Visual Studio], viewing", "rc files, viewing resources", "Resource View pane", "layouts, previewing resource", "code, viewing resources", "resource editors, viewing resources", ".rc files, viewing resources", "resources [Visual Studio], editing"]
 ms.assetid: ba8bdc07-3f60-43c7-aa5c-d5dd11f0966e
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Viewing and Editing Resources in a Resource Editor
 Each resource type has a Resource editor specific to that resource type. You can rearrange, resize, add controls and features, or otherwise modify aspects of a resource using the associated editor. You can also edit a resource in [text format](../windows/how-to-open-a-resource-script-file-in-text-format.md) and [binary format](../windows/opening-a-resource-for-binary-editing.md).  

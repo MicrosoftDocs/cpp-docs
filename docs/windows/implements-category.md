@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.implements_category"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "implements_category attribute"
+f1_keywords: ["vc-attr.implements_category"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["implements_category attribute"]
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # implements_category
 Specifies the component categories implemented by the target class.  

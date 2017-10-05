@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.image.editing"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".gif files, saving bitmaps as"
-  - "jpg files, saving bitmaps as"
-  - "jpeg files, saving bitmaps as"
-  - ".jpg files, saving bitmaps as"
-  - "Image editor [C++], converting image formats"
-  - "gif files, saving bitmaps as"
-  - "bitmaps [C++], converting formats"
-  - ".jpeg files, saving bitmaps as"
-  - "graphics [C++], converting formats"
-  - "images [C++], converting formats"
+f1_keywords: ["vc.editors.image.editing"]
+dev_langs: ["C++"]
+helpviewer_keywords: [".gif files, saving bitmaps as", "jpg files, saving bitmaps as", "jpeg files, saving bitmaps as", ".jpg files, saving bitmaps as", "Image editor [C++], converting image formats", "gif files, saving bitmaps as", "bitmaps [C++], converting formats", ".jpeg files, saving bitmaps as", "graphics [C++], converting formats", "images [C++], converting formats"]
 ms.assetid: 115df69f-10fb-4e6f-906b-853c1e4a54af
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Saving Bitmaps as GIFs or JPEGs (Image Editor for Icons)
 When you create a bitmap, the image is created in bitmap format (.bmp). You can, however, save the image as a GIF or JPEG or in other graphic formats.  

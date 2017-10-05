@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL"
-  - "module/Microsoft::WRL"
-  - "async/Microsoft::WRL"
-  - "internal/Microsoft::WRL"
-  - "event/Microsoft::WRL"
-  - "ftm/Microsoft::WRL"
-  - "client/Microsoft::WRL"
-  - "corewrappers/Microsoft::WRL"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "WRL namespace"
+f1_keywords: ["implements/Microsoft::WRL", "module/Microsoft::WRL", "async/Microsoft::WRL", "internal/Microsoft::WRL", "event/Microsoft::WRL", "ftm/Microsoft::WRL", "client/Microsoft::WRL", "corewrappers/Microsoft::WRL"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["WRL namespace"]
 ms.assetid: 01118a8f-f564-4859-b87e-9444848585a1
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Microsoft::WRL Namespace
 Defines the fundamental types that make up the Windows Runtime C++ Template Library.  

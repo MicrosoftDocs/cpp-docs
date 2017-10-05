@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.v1_enum"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "v1_enum attribute"
+f1_keywords: ["vc-attr.v1_enum"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["v1_enum attribute"]
 ms.assetid: 2fe92d92-81b9-4a1c-b6ce-437d0eb770ca
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # v1_enum
 Directs that the specified enumerated type be transmitted as a 32-bit entity rather than the 16-bit default.  

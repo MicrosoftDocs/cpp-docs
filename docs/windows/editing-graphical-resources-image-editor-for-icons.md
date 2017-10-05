@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.bitmap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "images [C++], editing"
-  - "graphics [C++]"
-  - "images [C++]"
-  - "Image editor [C++], about Image editor"
-  - "graphics [C++], Image editor"
-  - "graphics [C++], editing"
+f1_keywords: ["vc.editors.bitmap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["images [C++], editing", "graphics [C++]", "images [C++]", "Image editor [C++], about Image editor", "graphics [C++], Image editor", "graphics [C++], editing"]
 ms.assetid: 09e422c5-f712-4378-b973-c7a3bbc92b9c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Editing Graphical Resources (Image Editor for Icons)
 Graphical resources are the images you define for your application. You can draw freehand or draw using shapes. You can select parts of an image for editing, flipping or resizing, or you can create a custom brush from a selected part of an image and draw with that brush. You can define image properties, save images in different formats, and convert images from one format to another.  

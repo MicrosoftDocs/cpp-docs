@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.resource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resource script files, opening in text format"
-  - ".rc files, opening in text format"
-  - "rc files, opening in text format"
+f1_keywords: ["vc.editors.resource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resource script files, opening in text format", ".rc files, opening in text format", "rc files, opening in text format"]
 ms.assetid: 0bc57527-f53b-40c9-99a9-4dcbc5c9af57
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Open a Resource Script File in Text Format
 There may be times when you want to view the contents of your project's resource script (.rc) file without opening a resource, such as a dialog box, inside its specific resource editor. For example, you may want to search for a string across all dialog boxes in the resource file without having to open each one separately.  

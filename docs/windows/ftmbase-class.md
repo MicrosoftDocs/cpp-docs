@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ftm/Microsoft::WRL::FtmBase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FtmBase class"
+f1_keywords: ["ftm/Microsoft::WRL::FtmBase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FtmBase class"]
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # FtmBase Class
 Represents a free-threaded marshaler object.  

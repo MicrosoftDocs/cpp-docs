@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multiset::erase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "erase member [STL/CLR]"
+f1_keywords: ["cliext::multiset::erase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["erase member [STL/CLR]"]
 ms.assetid: 3ff9fe2d-bf43-446a-bd3f-74550313a1d2
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # multiset::erase (STL/CLR)
 Removes elements at specified positions.  

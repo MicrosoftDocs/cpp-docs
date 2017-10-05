@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "virtual functions, private"
-  - "derived classes, virtual functions"
-  - "access modifiers [C++], for class members"
-  - "member access [C++], virtual members"
+dev_langs: ["C++"]
+helpviewer_keywords: ["virtual functions, private", "derived classes, virtual functions", "access modifiers [C++], for class members", "member access [C++], virtual members"]
 ms.assetid: 04448086-bf72-44be-9c1f-dfda1744949e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Private Virtual Functions
 The way private virtual functions are handled in derived classes has changed from Managed Extensions for C++ to Visual C++.  

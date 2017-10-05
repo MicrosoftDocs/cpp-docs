@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["vector<bool>", "vector/std::vector::const_pointer", "vector/std::vector::const_reference", "vector/std::vector::pointer", "vector/std::vector::flip", "vector/std::vector::swap"]
 dev_langs: ["C++"]
-helpviewer_keywords: , "std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], pointer", "std::vector [C++], flip", "std::vector [C++], swap"]
+helpviewer_keywords: ["std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], pointer", "std::vector [C++], flip", "std::vector [C++], swap"]
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
 caps.latest.revision: 29
 author: "corob-msft"

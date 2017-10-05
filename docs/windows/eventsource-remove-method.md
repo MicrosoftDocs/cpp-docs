@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "event/Microsoft::WRL::EventSource::Remove"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Remove method"
+f1_keywords: ["event/Microsoft::WRL::EventSource::Remove"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Remove method"]
 ms.assetid: afafedf5-3665-4408-a639-fb6884f7c5f9
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # EventSource::Remove Method
 Deletes the event handler represented by the specified event registration token from the set of event handlers associated with the current EventSource object.  

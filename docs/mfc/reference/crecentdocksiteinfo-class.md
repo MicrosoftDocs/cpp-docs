@@ -15,7 +15,6 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CRecentDockSiteInfo Class
 The `CRecentDockSiteInfo` class is a helper class that stores recent state information for the [CPane Class](../../mfc/reference/cpane-class.md).  

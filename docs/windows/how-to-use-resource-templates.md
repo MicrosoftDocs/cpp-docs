@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "language-specific template files"
-  - "resource templates"
-  - "resources [Visual Studio], creating"
-  - "rct files"
-  - "templates, resource templates"
-  - "resources [Visual Studio], templates"
-  - ".rct files"
+dev_langs: ["C++"]
+helpviewer_keywords: ["language-specific template files", "resource templates", "resources [Visual Studio], creating", "rct files", "templates, resource templates", "resources [Visual Studio], templates", ".rct files"]
 ms.assetid: bdfe7060-f98e-4859-8285-9c8570360e9d
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Use Resource Templates
 A resource template is a customized resource that you have saved as an .rct file. A resource template can then serve as a starting point for creating other resources. Resource templates save time in developing additional resources or groups of resources that share features, such as standard controls and other repeated elements. For example, you might want to include a Help button and an icon of a company logo in several dialog boxes. To do so quickly, create a new dialog box template and customize it with the logo and the Help button.  

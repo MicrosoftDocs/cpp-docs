@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_mbcs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MBCS [C++], about MBCS"
-  - "character sets [C++], multibyte"
-  - "multibyte characters [C++]"
-  - "MBCS [C++]"
+f1_keywords: ["_mbcs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MBCS [C++], about MBCS", "character sets [C++], multibyte", "multibyte characters [C++]", "MBCS [C++]"]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
 caps.latest.revision: 11
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Support for Multibyte Character Sets (MBCSs)
 Multibyte character sets (MBCSs) are an older approach to the need to support character sets, like Japanese and Chinese, that cannot be represented in a single byte. If you are doing new development, you should use Unicode for all text strings except perhaps system strings that are not seen by end users. MBCS is a legacy technology and is not recommended for new development.  

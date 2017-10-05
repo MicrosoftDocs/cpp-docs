@@ -4,44 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "locales [C++], about locales"
-  - "locale IDs [C++]"
-  - "locales [C++]"
-  - "code pages [C++]"
-  - "code pages [C++], dynamically changing"
-  - "character sets [C++], code pages"
-  - "multibyte code pages [C++]"
-  - "character sets [C++], locales"
-  - "localization [C++], code pages"
-  - "localization [C++], locales"
-  - "code pages [C++], locales"
-  - "conventions [C++], international character support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["locales [C++], about locales", "locale IDs [C++]", "locales [C++]", "code pages [C++]", "code pages [C++], dynamically changing", "character sets [C++], code pages", "multibyte code pages [C++]", "character sets [C++], locales", "localization [C++], code pages", "localization [C++], locales", "code pages [C++], locales", "conventions [C++], international character support"]
 ms.assetid: bd937361-b6d3-4c98-af95-beb7c903187b
 caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Locales and Code Pages
 A locale ID reflects the local conventions and language for a particular geographical region. A given language might be spoken in more than one country/region; for example, Portuguese is spoken in Brazil as well as in Portugal. Conversely, a country/region might have more than one official language. For example, Canada has two languages: English and French. Thus, Canada has two distinct locales: Canadian-English and Canadian-French. Some locale-dependent categories include the formatting of dates and the display format for monetary values.  

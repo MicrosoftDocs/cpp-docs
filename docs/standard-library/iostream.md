@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["<iostream>", "iostream/std::cerr", "iostream/std::cin", "iostream/std::clog", "iostream/std::cout", "iostream/std::wcerr", "iostream/std::wcin", "iostream/std::wclog", "iostream/std::wcout]
+f1_keywords: ["<iostream>", "iostream/std::cerr", "iostream/std::cin", "iostream/std::clog", "iostream/std::cout", "iostream/std::wcerr", "iostream/std::wcin", "iostream/std::wclog", "iostream/std::wcout"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iostream header"]
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8

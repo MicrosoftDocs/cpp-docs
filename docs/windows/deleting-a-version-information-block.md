@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.version"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "blocks, deleting"
-  - "version information, deleting blocks"
-  - "resources [Visual Studio], deleting version information"
+f1_keywords: ["vc.editors.version"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["blocks, deleting", "version information, deleting blocks", "resources [Visual Studio], deleting version information"]
 ms.assetid: 4e1641eb-d5b2-4183-b273-bc5b51af1537
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Deleting a Version Information Block
 ### To delete a version information block  

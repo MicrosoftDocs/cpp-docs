@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Dialog editor, default control events"
-  - "controls [C++], default control events"
-  - "events [C++], controls"
-  - "dialog box controls, events"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Dialog editor, default control events", "controls [C++], default control events", "events [C++], controls", "dialog box controls, events"]
 ms.assetid: 75556b23-18f5-4390-97a4-2ecad3309741
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Default Control Events
 The following control names have the accompanying default events:  

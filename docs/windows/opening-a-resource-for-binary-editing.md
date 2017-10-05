@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.binary"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binary data, editing"
-  - "resources [Visual Studio], opening for binary editing"
+f1_keywords: ["vc.editors.binary"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["binary data, editing", "resources [Visual Studio], opening for binary editing"]
 ms.assetid: d3cdb0e4-da66-410d-8e49-b29073ff2929
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Opening a Resource for Binary Editing
 ### To open a Windows desktop resource for binary editing  

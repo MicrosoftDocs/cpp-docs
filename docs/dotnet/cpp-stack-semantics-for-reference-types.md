@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reference types, C++ stack semantics for"
+dev_langs: ["C++"]
+helpviewer_keywords: ["reference types, C++ stack semantics for"]
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C++ Stack Semantics for Reference Types
 Prior to Visual C++ 2005, an instance of a reference type could only be created using the `new` operator, which created the object on the garbage collected heap. However, you can now create an instance of a reference type using the same syntax that you would use to create an instance of a native type on the stack. So, you do not need to use [ref new, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md) to create an object of a reference type. And when the object goes out of scope, the compiler calls the object's destructor.  

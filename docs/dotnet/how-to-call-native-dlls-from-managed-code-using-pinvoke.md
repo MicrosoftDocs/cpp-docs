@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "platform invoke [C++], calling native DLLs"
-  - "interop [C++], calling native DLLs"
-  - "marshaling [C++], calling native DLLs"
-  - "data marshaling [C++], calling native DLLs"
+dev_langs: ["C++"]
+helpviewer_keywords: ["platform invoke [C++], calling native DLLs", "interop [C++], calling native DLLs", "marshaling [C++], calling native DLLs", "data marshaling [C++], calling native DLLs"]
 ms.assetid: 3273eb4b-38d1-4619-92a6-71bda542be72
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Call Native DLLs from Managed Code Using PInvoke
 Functions that are implemented in unmanaged DLLs can be called from managed code using Platform Invoke (P/Invoke) functionality. If the source code for the DLL is not available, P/Invoke is the only option for interoperating. However, unlike other .NET languages, Visual C++ provides an alternative to P/Invoke. For more information, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  

@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "globalization [C++], character sets"
-  - "portable data types [MFC]"
-  - "Unicode [C++]"
-  - "wide characters [C++], about wide characters"
-  - "character sets [C++], Unicode"
-  - "localization [C++], character sets"
-  - "Unicode [C++], installing support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["globalization [C++], character sets", "portable data types [MFC]", "Unicode [C++]", "wide characters [C++], about wide characters", "character sets [C++], Unicode", "localization [C++], character sets", "Unicode [C++], installing support"]
 ms.assetid: 180f1d10-8543-4f79-85ce-293d3cb443bb
 caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Support for Unicode
 Unicode is a specification for supporting all character sets, including those that cannot be represented in just one byte. If you are programming for an international market, we recommend that you use either Unicode or [multibyte character sets](../text/support-for-multibyte-character-sets-mbcss.md) (MBCSs), or enable your program so you can build it for either by changing a switch.  

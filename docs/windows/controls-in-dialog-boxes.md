@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [C++], dialog boxes"
-  - "dialog box controls, about dialog box controls"
-  - "dialog box controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [C++], dialog boxes", "dialog box controls, about dialog box controls", "dialog box controls"]
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Controls in Dialog Boxes
 You can add controls to a dialog box using the [Dialog Editor tab](../windows/dialog-editor-tab-toolbox.md) in the [Toolbox window](/visualstudio/ide/reference/toolbox), which enables you to choose the control you want and drag it onto the dialog box. By default, the Toolbox window is set to auto hide. It appears as a tab on the left margin of your solution when the Dialog editor is open. However, you can pin the Toolbox window into position by clicking the **Auto Hide** button in the upper right corner of the window. For more information on how to control the behavior of this window, see [Window Management](/visualstudio/ide/customizing-window-layouts-in-visual-studio).  

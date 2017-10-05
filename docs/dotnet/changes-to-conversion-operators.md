@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "conversion operators"
-  - "operators [C++], explicit type conversion"
-  - "type conversion, explicit conversions"
-  - "conversions, explicit"
-  - "explicit keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["conversion operators", "operators [C++], explicit type conversion", "type conversion, explicit conversions", "conversions, explicit", "explicit keyword [C++]"]
 ms.assetid: 9b83925c-71b7-4bd3-ac2e-843dd7c7f184
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Changes to Conversion Operators
 The syntax for conversion operators has changed from Managed Extensions for C++ to Visual C++.  

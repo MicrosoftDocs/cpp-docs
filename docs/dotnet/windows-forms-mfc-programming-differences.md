@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], Windows Forms support"
-  - "Windows Forms [C++], compared to MFC"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms [C++], compared to MFC"]
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Windows Forms/MFC Programming Differences
 The topics in [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md) describe the MFC support for Windows Forms. If you are not familiar with .NET Framework or MFC programming, this topic provides background information about programming differences between the two.  

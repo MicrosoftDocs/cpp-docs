@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.image.drawing"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Image editor [C++], selecting drawing tools"
-  - "Image editor [C++], toolbar"
-  - "drawing tools"
+f1_keywords: ["vc.editors.image.drawing"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Image editor [C++], selecting drawing tools", "Image editor [C++], toolbar", "drawing tools"]
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using a Drawing Tool (Image Editor for Icons)
 The Image editor's freehand drawing and erasing tools all work in the same way: you select the tool and, if necessary, [select foreground and background colors](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) and size and shape options. You then move the pointer to the image and click or drag to draw and erase.  

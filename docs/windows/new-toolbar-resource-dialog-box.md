@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.newtoolbarresource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "New Toolbar Resource dialog box"
+f1_keywords: ["vc.editors.newtoolbarresource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["New Toolbar Resource dialog box"]
 ms.assetid: 52dd01ad-e748-4ab2-b3eb-59f5df990ca6
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # New Toolbar Resource Dialog Box
 The New Toolbar Resource dialog box allows you to specify the width and height of the buttons you are adding to a toolbar resource. The default is 16 × 15 pixels.  

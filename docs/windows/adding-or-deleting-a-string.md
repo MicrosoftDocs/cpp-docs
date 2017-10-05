@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.string"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], adding to string tables"
-  - "string tables, deleting strings"
-  - "strings [C++], deleting in string tables"
-  - "string tables, adding strings"
+f1_keywords: ["vc.editors.string"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], adding to string tables", "string tables, deleting strings", "strings [C++], deleting in string tables", "string tables, adding strings"]
 ms.assetid: 077077b4-0f4b-4633-92d6-60b321164cab
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Adding or Deleting a String
 You can quickly insert new entries into the string table using the String editor. New strings are placed at the end of the table and are given the next available identifier. You can then edit the ID, Value, or Caption properties in the [Properties window](/visualstudio/ide/reference/properties-window) as needed.  

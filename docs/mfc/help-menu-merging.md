@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Help Menu Merging
 When an object is active within a container, the menu merging protocol of OLE Documents gives the object complete control of the **Help** menu. As a result, the container's Help topics are not available unless the user deactivates the object. The active document containment architecture expands on the rules for in-place menu merging to allow both the container and an active document that is active to share the menu. The new rules are simply additional conventions about what component owns what part of the menu and how the shared menu is constructed.  

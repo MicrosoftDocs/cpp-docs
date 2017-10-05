@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "corewrappers/Microsoft::WRL::Wrappers::Mutex"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Mutex class"
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Mutex"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Mutex class"]
 ms.assetid: 682a0963-721c-46a2-8871-000e9997505b
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Mutex Class1
 Represents a synchronization object that exclusively controls a shared resource.  

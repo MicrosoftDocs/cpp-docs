@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL::ChainInterfaces"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ChainInterfaces structure"
+f1_keywords: ["implements/Microsoft::WRL::ChainInterfaces"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ChainInterfaces structure"]
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ChainInterfaces Structure
 Specifies verification and initialization functions that can be applied to a set of interface IDs.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "SafeModulus"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SafeModulus function"
+f1_keywords: ["SafeModulus"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SafeModulus function"]
 ms.assetid: ae5c81eb-5dcf-45a5-aa76-465fdfe68654
 caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # SafeModulus
 Performs the modulus operation on two numbers.  

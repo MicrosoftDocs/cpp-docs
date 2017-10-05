@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Image editor [C++], shrinking and stretching images"
-  - "images [C++], stretching"
-  - "images [C++], shrinking"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Image editor [C++], shrinking and stretching images", "images [C++], stretching", "images [C++], shrinking"]
 ms.assetid: accdef79-c77e-493f-b8e8-a5ef033a4e9e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Shrinking or Stretching an Entire Image (Image Editor for Icons)
 ### To shrink or stretch an entire image  

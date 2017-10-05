@@ -8,7 +8,7 @@ ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["extraction operators [C++]", "\>\> operator [C++], extraction operators", "operators [C++], extraction"]
+helpviewer_keywords: ["extraction operators [C++]", "&gt;&gt; operator [C++], extraction operators", "operators [C++], extraction"]
 ms.assetid: a961e1a9-4897-41de-b210-89d5b2d051ae
 caps.latest.revision: 8
 author: "corob-msft"

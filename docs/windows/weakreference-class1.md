@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL::Details::WeakReference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "WeakReference class"
+f1_keywords: ["implements/Microsoft::WRL::Details::WeakReference"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["WeakReference class"]
 ms.assetid: 3f4c956b-dbbd-49b1-8cfa-9509a9956c97
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # WeakReference Class1
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "indexers"
-  - "default indexers"
-  - "defaults, indexers"
-  - "indexed properties, C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["indexers", "default indexers", "defaults, indexers", "indexed properties, C++"]
 ms.assetid: d898fdbc-2106-4b6a-8c5c-9f511d80fc2f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Property Index Declaration
 The syntax for declaring an indexed property has changed from Managed Extensions for C++ to Visual C++.  

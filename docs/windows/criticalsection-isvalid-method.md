@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "corewrappers/Microsoft::WRL::Wrappers::CriticalSection::IsValid"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IsValid method"
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::CriticalSection::IsValid"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IsValid method"]
 ms.assetid: 0080106c-925e-4b3b-89d4-f47668e8bce6
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CriticalSection::IsValid Method
 Indicates whether the current critical section is valid.  

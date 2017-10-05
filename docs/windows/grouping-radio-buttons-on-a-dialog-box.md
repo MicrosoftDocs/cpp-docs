@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.dialog.grouping"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "member variables, adding to radio button groups"
-  - "variables, dialog box control member variables"
-  - "dialog box controls, grouping radio buttons"
-  - "grouping controls"
-  - "radio buttons, grouping on dialog boxes"
+f1_keywords: ["vc.editors.dialog.grouping"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["member variables, adding to radio button groups", "variables, dialog box control member variables", "dialog box controls, grouping radio buttons", "grouping controls", "radio buttons, grouping on dialog boxes"]
 ms.assetid: 3cc43f9e-56c8-4faa-9930-ce81733c69de
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Grouping Radio Buttons on a Dialog Box
 When you add radio buttons to a dialog box, treat them as a group by setting a Group property in the Properties window for the first button in the group. A control ID for that radio button then appears in the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md), allowing you to add a member variable for the group of radio buttons.  
