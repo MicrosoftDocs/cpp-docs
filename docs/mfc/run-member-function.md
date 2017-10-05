@@ -8,7 +8,7 @@ ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["WinMain method [MFC], calls]
+helpviewer_keywords: ["WinMain method [MFC]"]
 ms.assetid: 24ab7597-2354-495b-9a20-2c8ccc7385b3
 caps.latest.revision: 9
 author: "mikeblome"
