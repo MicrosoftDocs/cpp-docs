@@ -15,7 +15,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Adding an MFC Message Handler
 You can [use the Properties window to add a message handler](../../mfc/reference/mapping-messages-to-functions.md) (a member function that handles Windows messages) to a class and map Windows messages to the message handler. You can also add [an event handler for any dialog box control](../../windows/adding-event-handlers-for-dialog-box-controls.md).  

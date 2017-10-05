@@ -15,7 +15,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Template Classes for Arrays, Lists, and Maps
 These collection classes are templates whose parameters determine the types of the objects stored in the aggregates. The `CArray`, `CMap`, and `CList` classes use global helper functions that must usually be customized. For more information about these helper functions, see [Collection Class Helpers](../mfc/reference/collection-class-helpers.md). The typed pointer classes are wrappers for other classes in the class library. By using these wrappers, you enlist the compiler's type-checking to help you avoid errors. For more information on using these classes, see [Collections](../mfc/collections.md).  

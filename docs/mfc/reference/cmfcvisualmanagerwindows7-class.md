@@ -15,7 +15,6 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCVisualManagerWindows7 Class
 The `CMFCVisualManagerWindows7` gives an application the appearance of a [!INCLUDE[win7](../../build/includes/win7_md.md)] application.  

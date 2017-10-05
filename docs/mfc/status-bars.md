@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Status Bars
 Status bars give your application a place to display messages and useful information to the user without interrupting the user's work. Typically displayed at the bottom of a window, status bars have "panes," which include "indicators" and a "message line." The indicators give the status of such things as SCROLL LOCK, whether macro recording is turned on, and so on. The message line on the status bar can display information about program status or about a toolbar button or menu item that the user is pointing to with the mouse.  

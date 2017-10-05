@@ -15,7 +15,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Generated Classes, MFC Application Wizard
 This topic lists the names of base classes and files that your project generates. By default, the names are based on the project name that you specified in the **New Project Dialog Box**. You can change most of these names, as described here:  
