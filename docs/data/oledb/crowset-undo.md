@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CRowset.Undo"
-  - "ATL::CRowset<TAccessor>::Undo"
-  - "CRowset<TAccessor>::Undo"
-  - "ATL.CRowset.Undo"
-  - "ATL.CRowset<TAccessor>.Undo"
-  - "CRowset<TAccessor>.Undo"
-  - "ATL::CRowset::Undo"
-  - "CRowset::Undo"
-  - "Undo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Undo method"
+f1_keywords: ["CRowset.Undo", "ATL::CRowset<TAccessor>::Undo", "CRowset<TAccessor>::Undo", "ATL.CRowset.Undo", "ATL.CRowset<TAccessor>.Undo", "CRowset<TAccessor>.Undo", "ATL::CRowset::Undo", "CRowset::Undo", "Undo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Undo method"]
 ms.assetid: 1ccd70e2-3931-41c4-893e-a05d0e295410
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CRowset::Undo
 Undoes any changes made to a row since the last fetch or [Update](../../data/oledb/crowset-update.md).  

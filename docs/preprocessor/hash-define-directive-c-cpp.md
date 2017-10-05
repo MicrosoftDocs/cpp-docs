@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "#define"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "define directive (#define), syntax"
-  - "preprocessor, directives"
-  - "define directive (#define)"
-  - "#define directive, syntax"
-  - "#define directive"
+f1_keywords: ["#define"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["define directive (#define), syntax", "preprocessor, directives", "define directive (#define)", "#define directive, syntax", "#define directive"]
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # #define Directive (C/C++)
 The `#define` creates a *macro*, which is the association of an identifier or parameterized identifier with a token string. After the macro is defined, the compiler can substitute the token string for each occurrence of the identifier in the source file.  

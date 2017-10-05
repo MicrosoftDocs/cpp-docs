@@ -4,48 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CStatistics"
-  - "m_szTableSchema"
-  - "CStatisticInfo"
-  - "m_szTableCatalog"
-  - "m_nCardinality"
-  - "m_szTableName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "m_nCardinality"
-  - "m_szTableSchema"
-  - "TABLE_CATALOG"
-  - "TABLE_NAME"
-  - "TABLE_SCHEMA"
-  - "CStatistics typedef class"
-  - "m_szTableCatalog"
-  - "m_szTableName"
-  - "CStatisticInfo parameter class"
+f1_keywords: ["CStatistics", "m_szTableSchema", "CStatisticInfo", "m_szTableCatalog", "m_nCardinality", "m_szTableName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["m_nCardinality", "m_szTableSchema", "TABLE_CATALOG", "TABLE_NAME", "TABLE_SCHEMA", "CStatistics typedef class", "m_szTableCatalog", "m_szTableName", "CStatisticInfo parameter class"]
 ms.assetid: 5822231c-6963-44a6-ae2f-29aca76e1600
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CStatistics, CStatisticInfo
 Call the typedef class **CStatistics** to implement its parameter class **CStatisticInfo**.  

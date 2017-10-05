@@ -4,51 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CSQLLanguageInfo"
-  - "m_szProgrammingLanguage"
-  - "m_szImplementation"
-  - "m_szIntegrity"
-  - "m_szBindingStyle"
-  - "m_szConformance"
-  - "m_szSource"
-  - "m_szYear"
-  - "CSQLLanguages"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "m_szBindingStyle"
-  - "m_szProgrammingLanguage"
-  - "m_szYear"
-  - "m_szImplementation"
-  - "m_szSource"
-  - "m_szConformance"
-  - "CSQLLanguages typedef class"
-  - "CSQLLanguageInfo parameter class"
-  - "m_szIntegrity"
+f1_keywords: ["CSQLLanguageInfo", "m_szProgrammingLanguage", "m_szImplementation", "m_szIntegrity", "m_szBindingStyle", "m_szConformance", "m_szSource", "m_szYear", "CSQLLanguages"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["m_szBindingStyle", "m_szProgrammingLanguage", "m_szYear", "m_szImplementation", "m_szSource", "m_szConformance", "CSQLLanguages typedef class", "CSQLLanguageInfo parameter class", "m_szIntegrity"]
 ms.assetid: 9c36c5bb-6917-49c3-9ac3-942339893f19
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CSQLLanguages, CSQLLanguageInfo
 Call the typedef class **CSQLLanguages** to implement its parameter class **CSQLLanguageInfo**.  

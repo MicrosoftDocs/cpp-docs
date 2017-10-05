@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IDBSchemaRowsetImpl::CreateSchemaRowset"
-  - "ATL::IDBSchemaRowsetImpl::CreateSchemaRowset"
-  - "CreateSchemaRowset"
-  - "IDBSchemaRowsetImpl.CreateSchemaRowset"
-  - "ATL.IDBSchemaRowsetImpl.CreateSchemaRowset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateSchemaRowset method"
+f1_keywords: ["IDBSchemaRowsetImpl::CreateSchemaRowset", "ATL::IDBSchemaRowsetImpl::CreateSchemaRowset", "CreateSchemaRowset", "IDBSchemaRowsetImpl.CreateSchemaRowset", "ATL.IDBSchemaRowsetImpl.CreateSchemaRowset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateSchemaRowset method"]
 ms.assetid: ad3e3e4d-45b9-461c-b7b8-3af6843631b1
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # IDBSchemaRowsetImpl::CreateSchemaRowset
 Implements a COM object creator function for the object specified by the template parameter.  

@@ -4,46 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__readfsword"
-  - "__readfsdword"
-  - "__readfsbyte"
-  - "__readfsqword"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__readfsword intrinsic"
-  - "readfsword intrinsic"
-  - "__readfsdword intrinsic"
-  - "readfsbyte intrinsic"
-  - "__readfsbyte intrinsic"
-  - "readfsdword intrinsic"
-  - "readfsqword intrinsic"
-  - "__readfsqword intrinsic"
+f1_keywords: ["__readfsword", "__readfsdword", "__readfsbyte", "__readfsqword"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__readfsword intrinsic", "readfsword intrinsic", "__readfsdword intrinsic", "readfsbyte intrinsic", "__readfsbyte intrinsic", "readfsdword intrinsic", "readfsqword intrinsic", "__readfsqword intrinsic"]
 ms.assetid: f6ee7203-4179-402c-a464-0746c84ce6ac
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __readfsbyte, __readfsdword, __readfsqword, __readfsword
 **Microsoft Specific**  

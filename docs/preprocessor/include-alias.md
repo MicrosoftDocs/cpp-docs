@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.include_alias"
-  - "include_alias_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pragmas, include_alias"
-  - "include_alias pragma"
+f1_keywords: ["vc-pragma.include_alias", "include_alias_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["pragmas, include_alias", "include_alias pragma"]
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # include_alias
 Specifies that *short_filename* is to be used as an alias for *long_filename*.  

@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::IRowsetUpdateImpl::Update"
-  - "IRowsetUpdateImpl::Update"
-  - "IRowsetUpdateImpl.Update"
-  - "ATL.IRowsetUpdateImpl.Update"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Update method"
+f1_keywords: ["ATL::IRowsetUpdateImpl::Update", "IRowsetUpdateImpl::Update", "IRowsetUpdateImpl.Update", "ATL.IRowsetUpdateImpl.Update"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Update method"]
 ms.assetid: 9ec6884d-aa9c-4871-a803-c048f162403c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IRowsetUpdateImpl::Update
 Transmits any changes made to the row since the last fetch or update.  

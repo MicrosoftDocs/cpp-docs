@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "myproviderds.h"
-  - "cmyprovidersource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB providers, wizard-generated files"
-  - "CMyProviderSource class in MyProviderDS.H"
+f1_keywords: ["myproviderds.h", "cmyprovidersource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB providers, wizard-generated files", "CMyProviderSource class in MyProviderDS.H"]
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CMyProviderSource (MyProviderDS.H)
 The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  

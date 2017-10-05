@@ -4,57 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CCheckConstraintInfo"
-  - "CHECK_CONSTRAINTS"
-  - "m_szCatalog"
-  - "CCheckConstraints"
-  - "CONSTRAINT_NAME"
-  - "m_szSchema"
-  - "CHECK_CLAUSE"
-  - "m_szCheckClause"
-  - "m_szName"
-  - "CONSTRAINT_CATALOG"
-  - "CONSTRAINT_SCHEMA"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DESCRIPTION class data member"
-  - "m_szSchema"
-  - "CONSTRAINT_CATALOG"
-  - "m_szCatalog"
-  - "CONSTRAINT_NAME"
-  - "CONSTRAINT_SCHEMA"
-  - "CCheckConstraints typedef class"
-  - "CHECK_CLAUSE"
-  - "m_szName"
-  - "m_szDescription"
-  - "CCheckConstraintInfo parameter class"
-  - "m_szCheckClause"
-  - "CHECK_CONSTRAINTS"
+f1_keywords: ["CCheckConstraintInfo", "CHECK_CONSTRAINTS", "m_szCatalog", "CCheckConstraints", "CONSTRAINT_NAME", "m_szSchema", "CHECK_CLAUSE", "m_szCheckClause", "m_szName", "CONSTRAINT_CATALOG", "CONSTRAINT_SCHEMA"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DESCRIPTION class data member", "m_szSchema", "CONSTRAINT_CATALOG", "m_szCatalog", "CONSTRAINT_NAME", "CONSTRAINT_SCHEMA", "CCheckConstraints typedef class", "CHECK_CLAUSE", "m_szName", "m_szDescription", "CCheckConstraintInfo parameter class", "m_szCheckClause", "CHECK_CONSTRAINTS"]
 ms.assetid: e53e79a5-01e5-42b7-aa8c-164aec94b011
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CCheckConstraints, CCheckConstraintInfo
 Call the typedef class **CCheckConstraints** to implement its parameter class **CCheckConstraintInfo**.  

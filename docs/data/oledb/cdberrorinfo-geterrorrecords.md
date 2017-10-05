@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDBErrorInfo.GetErrorRecords"
-  - "ATL.CDBErrorInfo.GetErrorRecords"
-  - "ATL::CDBErrorInfo::GetErrorRecords"
-  - "GetErrorRecords"
-  - "CDBErrorInfo::GetErrorRecords"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetErrorRecords method"
+f1_keywords: ["CDBErrorInfo.GetErrorRecords", "ATL.CDBErrorInfo.GetErrorRecords", "ATL::CDBErrorInfo::GetErrorRecords", "GetErrorRecords", "CDBErrorInfo::GetErrorRecords"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetErrorRecords method"]
 ms.assetid: 07746774-bcca-4833-8f55-a619e9777c17
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDBErrorInfo::GetErrorRecords
 Gets error records for the specified object.  

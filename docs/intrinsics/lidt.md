@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__lidt"
-  - "__lidt_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LIDT instruction"
-  - "__lidt intrinsic"
+f1_keywords: ["__lidt", "__lidt_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LIDT instruction", "__lidt intrinsic"]
 ms.assetid: 8298d25d-a19e-4900-828d-6b3b09841882
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __lidt
 **Microsoft Specific**  
