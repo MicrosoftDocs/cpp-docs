@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "_com_ptr_t.GetActiveObject"
-  - "_com_ptr_t::GetActiveObject"
-  - "GetActiveObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetActiveObject method"
+f1_keywords: ["_com_ptr_t::GetActiveObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetActiveObject method"]
 ms.assetid: 2fa94853-0410-4620-91f2-136dae923f9f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # _com_ptr_t::GetActiveObject
 **Microsoft Specific**  

@@ -4,55 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "_com_ptr_t::operatorInterface&"
-  - "operatorInterface*"
-  - "operatorInterface&"
-  - "_com_ptr_t::operatorbool"
-  - "_com_ptr_t.operator->"
-  - "_com_ptr_t.operator*"
-  - "_com_ptr_t::operator->"
-  - "_com_ptr_t::operator*"
-  - "_com_ptr_t.operatorInterface&"
-  - "_com_ptr_t.operatorbool"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator Interface&"
-  - "* operator, with specific objects"
-  - "operator&"
-  - "operator*"
-  - "-> operator, with specific objects"
-  - "& operator, with specific objects"
-  - "operator Interface*"
-  - "operator *"
-  - "operator->"
-  - "operator bool"
-  - "extractors, _com_ptr_t class"
-  - "extractors"
+f1_keywords: ["_com_ptr_t::operatorInterface&", "_com_ptr_t::operatorbool", "_com_ptr_t::operator->", "_com_ptr_t::operator*"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator Interface&", "* operator, with specific objects", "operator&", "operator*", "-> operator, with specific objects", "& operator, with specific objects", "operator Interface*", "operator *", "operator->", "operator bool", "extractors, _com_ptr_t class", "extractors"]
 ms.assetid: 194b9e0e-123c-49ff-a187-0a7fcd68145a
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # _com_ptr_t Extractors
 **Microsoft Specific**  

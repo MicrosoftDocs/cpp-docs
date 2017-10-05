@@ -7,9 +7,8 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["try_cpp", "try", "finally", "finally_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["try-catch keyword [C], try-finally keyword [C]", "__finally keyword [C], try-finally statement syntax", "try-finally keyword [C]", "__finally keyword [C]", "try-catch keyword [C]", "structured exception handling, try-finally"]
+helpviewer_keywords: ["try-finally keyword [C]", "__finally keyword [C], try-finally statement syntax", "__finally keyword [C]", "structured exception handling, try-finally"]
 ms.assetid: 514400c1-c322-4bf3-9e48-3047240b8a82
 caps.latest.revision: 7
 author: "mikeblome"

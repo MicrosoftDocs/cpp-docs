@@ -4,41 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "dllimport_cpp"
-  - "dllexport_cpp"
-  - "dllexport"
-  - "dllimport"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dllexport __declspec keyword"
-  - "__declspec keyword [C++], dllexport"
-  - "dllimport __declspec keyword"
-  - "__declspec keyword [C++], dllimport"
+f1_keywords: ["dllimport_cpp", "dllexport_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["dllexport __declspec keyword", "__declspec keyword [C++], dllexport", "dllimport __declspec keyword", "__declspec keyword [C++], dllimport"]
 ms.assetid: ff95b645-ef55-4e72-b848-df44657b3208
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # dllexport, dllimport
 **Microsoft Specific**  
