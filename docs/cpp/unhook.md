@@ -7,9 +7,9 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["__unhook"]
+f1_keywords: ["__unhook", "__unhook_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["event handlers, dissociating events", "__unhook keyword [C++]"]
+helpviewer_keywords: ["event handlers [C++], dissociating events", "__unhook keyword [C++]"]
 ms.assetid: 953a14f3-5199-459d-81e5-fcf015a19878
 caps.latest.revision: 9
 author: "mikeblome"

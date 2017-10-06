@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["bitor", "|"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["OR operator, bitwise inclusive", "bitwise operators, OR operator", "inclusive OR operator", "| operator"]
+helpviewer_keywords: ["OR operator [C++], bitwise inclusive", "bitwise operators [C++], OR operator", "inclusive OR operator", "| operator"]
 ms.assetid: 4c8a6a68-d828-447d-875a-aedb4ce3aa9a
 caps.latest.revision: 7
 author: "mikeblome"

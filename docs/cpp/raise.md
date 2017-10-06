@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["__raise"]
+f1_keywords: ["__raise", "__raise_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__raise keyword [C++]"]
 ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a

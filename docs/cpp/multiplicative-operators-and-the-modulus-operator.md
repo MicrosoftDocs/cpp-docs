@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["%", "/"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operators [C++], multiplicative", "arithmetic operators [C++], multiplicative operators", "modulus operator, C+", "* operator", "division operator, multiplicative operators", "% operator", "multiplication operator [C++], multiplicative operators", "multiplicative operators [C++]", "division operator"]
+helpviewer_keywords: ["operators [C++], multiplicative", "arithmetic operators [C++], multiplicative operators", "modulus operator [C++]", "* operator", "division operator [C++], multiplicative operators", "% operator", "multiplication operator [C++], multiplicative operators", "multiplicative operators [C++]", "division operator"]
 ms.assetid: b53ea5da-d0b4-40dc-98f3-0aa52d548293
 caps.latest.revision: 9
 author: "mikeblome"

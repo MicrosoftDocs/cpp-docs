@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__int8_cpp", "__int16_cpp", "__int32_cpp", "__int64_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["__int16 keyword [C++]", "integer data type, integer types in C++", "__int32 keyword [C++]", "integer types [C++]", "__int8 keyword [C++]", "__int64 keyword [C++]"]
+helpviewer_keywords: ["__int16 keyword [C++]", "integer data type [C++], integer types in C++", "__int32 keyword [C++]", "integer types [C++]", "__int8 keyword [C++]", "__int64 keyword [C++]"]
 ms.assetid: 8e384602-2578-4980-8cc8-da63842356b2
 caps.latest.revision: 11
 author: "mikeblome"

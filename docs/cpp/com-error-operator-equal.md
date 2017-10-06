@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_error::operator="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operator= _com_error objects", "= operator, with specific Visual C++ objects", "operator = _com_error objects"]
+helpviewer_keywords: ["operator= _com_error objects", "= operator [C++], with specific Visual C++ objects", "operator = _com_error objects"]
 ms.assetid: b9cc4094-d055-450c-b45a-0a95317488f8
 caps.latest.revision: 6
 author: "mikeblome"

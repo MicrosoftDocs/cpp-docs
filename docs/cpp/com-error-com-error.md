@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_error::_com_error"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["_com_error method"]
+helpviewer_keywords: ["_com_error method [C++]"]
 ms.assetid: 0a69e46c-caab-49ef-b091-eee401253ce6
 caps.latest.revision: 6
 author: "mikeblome"

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["--", "++"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["increment operators, syntax", "member-selection operators", "-- operator, postfix decrement operators", "postfix operators", "++ operator, postfix increment operators", "decrement operators, syntax", "operators [C++], postfix", "decrement operators"]
+helpviewer_keywords: ["increment operators [C++], syntax", "member-selection operators [C++]", "-- operator [C++], postfix decrement operators", "postfix operators [C++]", "++ operator [C++], postfix increment operators", "decrement operators [C++], syntax", "operators [C++], postfix", "decrement operators [C++]"]
 ms.assetid: 0204d5c8-51b0-4108-b8a1-074c5754d89c
 caps.latest.revision: 8
 author: "mikeblome"

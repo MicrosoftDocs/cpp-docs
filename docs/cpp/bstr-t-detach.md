@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::Detach"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Detach method"]
+helpviewer_keywords: ["Detach method [C++]"]
 ms.assetid: cc8284bd-f68b-4fff-b2e6-ce8354dabf8b
 caps.latest.revision: 6
 author: "mikeblome"

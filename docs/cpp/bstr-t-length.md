@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::length"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["length method", "BSTR object, length"]
+helpviewer_keywords: ["length method [C++]", "BSTR object [C++], length"]
 ms.assetid: 4f2e2c76-8894-4ef9-833f-4c6e796d0654
 caps.latest.revision: 8
 author: "mikeblome"

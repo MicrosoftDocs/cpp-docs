@@ -7,9 +7,9 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["_variant_t::operator==", "_variant_t::operator!=", "_variant_t::operator!=", "_variant_t::operator=="]
+f1_keywords: ["_variant_t::operator==", "_variant_t::operator!="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["!= operator", "relational operators, _variant_t class", "operator!=, variant", "operator!=, relational operators", "operator !=, variant", "operator ==, variant", "operator==, variant", "operator !=, relational operators", "== operator, with specific Visual C++ objects"]
+helpviewer_keywords: ["!= operator", "relational operators [C++], _variant_t class", "operator!= [C++], variant", "operator!= [C++], relational operators", "operator != [C++], variant", "operator == [C++], variant", "operator== [C++], variant", "operator != [C++], relational operators", "== operator [C++], with specific Visual C++ objects"]
 ms.assetid: 141bacb8-41a2-44dd-b3c0-4ad1f884f4ea
 caps.latest.revision: 6
 author: "mikeblome"

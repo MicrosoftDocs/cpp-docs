@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["namespace_cpp"]
+f1_keywords: ["namespace_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["namespaces [C++], C++", "namespaces [C++]", "namespaces [C++], global", "global namespace", "Visual C++, namespaces"]
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188

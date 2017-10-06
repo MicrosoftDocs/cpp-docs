@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_variant_t"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["_variant_t class, operators", "_variant_t class", "_variant_t class, member functions", "VARIANT object", "VARIANT object, COM encapsulation"]
+helpviewer_keywords: ["_variant_t class [C++], operators", "_variant_t class", "_variant_t class [C++], member functions", "VARIANT object", "VARIANT object [C++], COM encapsulation"]
 ms.assetid: 6a3cbd4e-0ae8-425e-b4cf-ca0df894c93f
 caps.latest.revision: 10
 author: "mikeblome"

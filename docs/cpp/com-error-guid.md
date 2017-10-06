@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_error::GUID"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GUID method"]
+helpviewer_keywords: ["GUID method [C++]"]
 ms.assetid: e84c2c23-d02e-48f8-b776-9bd6937296d2
 caps.latest.revision: 6
 author: "mikeblome"

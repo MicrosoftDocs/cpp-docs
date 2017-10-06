@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["||"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["OR operator, logical", "|| operator", "OR operator", "logical OR operator"]
+helpviewer_keywords: ["OR operator [C++], logical", "|| operator", "OR operator", "logical OR operator"]
 ms.assetid: 31837c99-2655-4bf3-8ded-f13b7a9dc533
 caps.latest.revision: 8
 author: "mikeblome"

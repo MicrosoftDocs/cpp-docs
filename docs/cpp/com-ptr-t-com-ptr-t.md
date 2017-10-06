@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t::_com_ptr_t"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["_com_ptr_t method"]
+helpviewer_keywords: ["_com_ptr_t method [C++]"]
 ms.assetid: 0c00620a-28d2-4f60-ae4a-1696be36137e
 caps.latest.revision: 9
 author: "mikeblome"

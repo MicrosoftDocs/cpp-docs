@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_variant_t::SetString"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SetString method"]
+helpviewer_keywords: ["SetString method [C++]"]
 ms.assetid: 816b08e5-6830-46ca-b3d7-7689308b3be3
 caps.latest.revision: 6
 author: "mikeblome"

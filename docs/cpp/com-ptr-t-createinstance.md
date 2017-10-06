@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t::CreateInstance"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CreateInstance method"]
+helpviewer_keywords: ["CreateInstance method [C++]"]
 ms.assetid: ab89b0e1-9da3-4784-a079-58b17340f111
 caps.latest.revision: 6
 author: "mikeblome"

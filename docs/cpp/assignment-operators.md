@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: [">>=", "xor_eq", "&=", "<<=", "-=", "and_eq", "^=", "|=", "/=", "%=", "or_eq", "+=", "*="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["or_eq operator", "&= operator", "operators [C++], assignment", "assignment operators, C++", "xor_eq operator", "+= operator", "and_eq operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "assignment operators", "-= operator", "/= operator", "<<= operator"]
+helpviewer_keywords: ["or_eq operator", "&= operator", "operators [C++], assignment", "assignment operators [C++], C++", "xor_eq operator", "+= operator", "and_eq operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "assignment operators [C++]", "-= operator", "/= operator", "<<= operator"]
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
 caps.latest.revision: 8
 author: "mikeblome"

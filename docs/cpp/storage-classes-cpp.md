@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["thread_local_cpp", "external_cpp", "static_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["storage classes, basic concepts"]
+helpviewer_keywords: ["storage classes [C++], basic concepts"]
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
 caps.latest.revision: 13
 author: "mikeblome"

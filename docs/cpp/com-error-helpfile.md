@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_error::HelpFile"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["HelpFile method"]
+helpviewer_keywords: ["HelpFile method [C++]"]
 ms.assetid: d2d3a0a1-6b62-4d52-a818-3cfae545a4af
 caps.latest.revision: 6
 author: "mikeblome"

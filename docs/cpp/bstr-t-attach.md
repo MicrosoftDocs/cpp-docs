@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::Attach"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Attach method"]
+helpviewer_keywords: ["Attach method [C++]"]
 ms.assetid: 8cad867e-40fc-435b-841f-0d412c2f58d3
 caps.latest.revision: 6
 author: "mikeblome"

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["catch_cpp", "try_cpp", "throw_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["catch keyword [C++]", "keywords [C++], exception handling", "C++ exception handling, statement syntax", "try-catch keyword [C++], about try-catch exception handling", "throw keyword [C++]", "try-catch keyword [C++]", "try-catch keyword [C++], exception handling", "throwing exceptions, throw keyword", "try-catch keyword [C++], throw keyword [C++]s", "throwing exceptions, implementing C++ exception handling", "throwing exceptions", "throw keyword [C++], throw() vs. throw(...)"]
+helpviewer_keywords: ["catch keyword [C++]", "keywords [C++], exception handling", "C++ exception handling, statement syntax", "try-catch keyword [C++], about try-catch exception handling", "throw keyword [C++]", "try-catch keyword [C++]", "try-catch keyword [C++], exception handling", "throwing exceptions [C++], throw keyword", "try-catch keyword [C++], throw keyword [C++]s", "throwing exceptions [C++], implementing C++ exception handling", "throwing exceptions [C++]", "throw keyword [C++], throw() vs. throw(...)"]
 ms.assetid: 15e6a87b-b8a5-4032-a7ef-946c644ba12a
 caps.latest.revision: 24
 author: "mikeblome"

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_error::WCodeToHRESULT"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["WCodeToHRESULT method"]
+helpviewer_keywords: ["WCodeToHRESULT method [C++]"]
 ms.assetid: 0ec43a4b-ca91-42d5-b270-3fde9c8412ea
 caps.latest.revision: 6
 author: "mikeblome"

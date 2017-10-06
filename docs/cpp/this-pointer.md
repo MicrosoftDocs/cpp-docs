@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["this_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["nonstatic member functions", "pointers, to class instance", "this pointer"]
+helpviewer_keywords: ["nonstatic member functions [C++]", "pointers, to class instance", "this pointer"]
 ms.assetid: 92e3256a-4ad9-4d46-8be1-d77fad90791f
 caps.latest.revision: 11
 author: "mikeblome"

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: [";", ",", "{", "}", "(", ")", "[", "]", "!", "%", "&#94;", "&#42;", "&#34;"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["punctuators"]
+helpviewer_keywords: ["punctuators [C++]"]
 ms.assetid: 1521564c-a977-488a-9490-068079897592
 caps.latest.revision: 6
 author: "mikeblome"

@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: [".*", "->*"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["expressions [C++], pointer", "pointer-to-member operators", ".* operator", "expressions [C++], operators", "->* operator"]
+helpviewer_keywords: ["expressions [C++], pointer", "pointer-to-member operators [C++]", ".* operator", "expressions [C++], operators", "->* operator"]
 ms.assetid: 2632be3f-1c81-4523-b56c-982a92a68688
 caps.latest.revision: 9
 author: "mikeblome"

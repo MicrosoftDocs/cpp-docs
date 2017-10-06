@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["&"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["address-of operator (&)", "& operator", "& operator, address-of operator"]
+helpviewer_keywords: ["address-of operator (&)", "& operator", "& operator [C++], address-of operator"]
 ms.assetid: 2828221a-15f6-4acc-87fe-25e34feebb88
 caps.latest.revision: 7
 author: "mikeblome"

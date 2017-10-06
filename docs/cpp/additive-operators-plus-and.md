@@ -7,9 +7,9 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["-", "+"]
+f1_keywords: ["+", "-"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operators [C++], addition", "subtraction operator, additive operators", "+ operator, additive operators", "additive operators", "arithmetic operators [C++], additive operators", "- operator, additive operators in C++"]
+helpviewer_keywords: ["operators [C++], addition", "subtraction operator [C++], additive operators", "+ operator [C++], additive operators", "additive operators [C++]", "arithmetic operators [C++], additive operators", "- operator [C++], additive operators in C++"]
 ms.assetid: d4afafe7-e201-4c69-a649-37f17756e784
 caps.latest.revision: 9
 author: "mikeblome"

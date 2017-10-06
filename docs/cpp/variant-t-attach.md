@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_variant_t::Attach", "_variant_t.Attach"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Attach method", "VARIANT object, attach", "VARIANT object"]
+helpviewer_keywords: ["Attach method [C++]", "VARIANT object [C++], attach", "VARIANT object"]
 ms.assetid: 2f02bd08-2306-4477-aa88-d2a5dee2b859
 caps.latest.revision: 6
 author: "mikeblome"

@@ -7,8 +7,9 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
+f1_keywords: ["__multiple_inheritance", "__single_inheritance_cpp", "__virtual_inheritance_cpp", "__virtual_inheritance", "__multiple_inheritance_cpp", "__single_inheritance"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["__single_inheritance keyword [C++]", "declaring derived classes", "keywords [C++], inheritance keywords", "__multiple_inheritance keyword [C++]", "__virtual_inheritance keyword [C++]", "inheritance, declaring derived classes", "derived classes, declaring", "inheritance, keywords"]
+helpviewer_keywords: ["__single_inheritance keyword [C++]", "declaring derived classes [C++]", "keywords [C++], inheritance keywords", "__multiple_inheritance keyword [C++]", "__virtual_inheritance keyword [C++]", "inheritance, declaring derived classes", "derived classes [C++], declaring", "inheritance, keywords"]
 ms.assetid: bb810f56-7720-4fea-b8b6-9499edd141df
 caps.latest.revision: 9
 author: "mikeblome"
@@ -20,8 +21,9 @@ translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", 
 **Microsoft Specific**  
   
 ```  
-  
-class [__single_inheritance] class-name;class [__multiple_inheritance] class-name;class [__virtual_inheritance] class-name;  
+class [__single_inheritance] class-name;
+class [__multiple_inheritance] class-name;
+class [__virtual_inheritance] class-name;  
 ```  
   
  where:  

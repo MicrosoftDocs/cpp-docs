@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["__event"]
+f1_keywords: ["__event_cpp", "__event"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__event keyword [C++]", "events [C++], __event"]
 ms.assetid: d3019b3e-722e-48df-8536-c05878461f9e

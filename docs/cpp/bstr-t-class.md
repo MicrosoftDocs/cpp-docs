@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["BSTR object", "_bstr_t class", "BSTR object, COM encapsulation"]
+helpviewer_keywords: ["BSTR object", "_bstr_t class", "BSTR object [C++], COM encapsulation"]
 ms.assetid: 58841fef-fe21-4a84-aab9-780262b5201f
 caps.latest.revision: 9
 author: "mikeblome"

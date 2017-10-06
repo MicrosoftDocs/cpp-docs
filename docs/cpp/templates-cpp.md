@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["template_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["templates, C++", "templates"]
+helpviewer_keywords: ["templates, C++", "templates [C++]"]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
 caps.latest.revision: 21
 author: "mikeblome"

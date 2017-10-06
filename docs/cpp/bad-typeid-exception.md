@@ -7,9 +7,9 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["bad_typeid_cpp"]
+f1_keywords: ["bad_typeid", "bad_typeid_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["bad_typeid exception", "exceptions, bad_typeid"]
+helpviewer_keywords: ["bad_typeid exception", "exceptions [C++], bad_typeid"]
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
 caps.latest.revision: 7
 author: "mikeblome"

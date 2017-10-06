@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_variant_t::_variant_t"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["_variant_t class, constructor", "_variant_t method"]
+helpviewer_keywords: ["_variant_t class [C++], constructor", "_variant_t method [C++]"]
 ms.assetid: a50e5b33-d4c6-4a26-8e7e-a0a25fd9895b
 caps.latest.revision: 7
 author: "mikeblome"

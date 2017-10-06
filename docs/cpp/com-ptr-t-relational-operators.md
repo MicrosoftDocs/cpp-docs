@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t::operator>", "_com_ptr_t::operator>=", "_com_ptr_t::operator<=", "_com_ptr_t::operator==", "_com_ptr_t::operator!=", "_com_ptr_t::operator<"]
 dev_langs: ["C++"]
-helpviewer_keywords: [">= operator, comparing specific objects", "!= operator", "operator >, pointers", "operator>=, pointers", "operator <, pointers", "operator!=, relational operators", "< operator, comparing specific objects", "operator==, pointers", "operator ==, pointers", "<= operator, with specific objects", "relational operators, _com_ptr_t class", "operator >=, pointers", "operator !=, relational operators", "operator <=, pointers", "> operator, comparing specific objects", "operator<=, pointers", "operator<, pointers", "== operator, with specific Visual C++ objects"]
+helpviewer_keywords: [">= operator [C++], comparing specific objects", "!= operator", "operator > [C++], pointers", "operator>= [C++], pointers", "operator < [C++], pointers", "operator!= [C++], relational operators", "< operator [C++], comparing specific objects", "operator== [C++], pointers", "operator == [C++], pointers", "<= operator [C++], with specific objects", "relational operators [C++], _com_ptr_t class", "operator >= [C++], pointers", "operator != [C++], relational operators", "operator <= [C++], pointers", "> operator [C++], comparing specific objects", "operator<= [C++], pointers", "operator< [C++], pointers", "== operator [C++], with specific Visual C++ objects"]
 ms.assetid: 5ae4028c-33ee-485d-bbda-88d2604d6d4b
 caps.latest.revision: 6
 author: "mikeblome"

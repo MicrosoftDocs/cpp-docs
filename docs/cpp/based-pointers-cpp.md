@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["__based_cpp"]
+f1_keywords: ["__based", "__based_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__based keyword [C++]", "based pointers", "pointers, based"]
 ms.assetid: 1e5f2e96-c52e-4738-8e14-87278681205e

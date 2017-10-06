@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::GetAddress"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GetAddress method"]
+helpviewer_keywords: ["GetAddress method [C++]"]
 ms.assetid: 09bc9180-867e-4ee5-b22a-8339dc663142
 caps.latest.revision: 7
 author: "mikeblome"

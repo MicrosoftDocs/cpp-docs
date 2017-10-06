@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__fortran", "__pascal", "__syscall"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["WINAPI", "__syscall keyword [C++]", "__pascal keyword [C++]", "__fortran keyword [C++]", "calling conventions, obsolete"]
+helpviewer_keywords: ["WINAPI [C++]", "__syscall keyword [C++]", "__pascal keyword [C++]", "__fortran keyword [C++]", "calling conventions, obsolete"]
 ms.assetid: a91fc665-034a-48ce-b6bd-d27125f308a7
 caps.latest.revision: 7
 author: "mikeblome"

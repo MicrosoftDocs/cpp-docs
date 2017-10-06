@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::wchar_t*", "_bstr_t::char*"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operator wchar_t*", "operator char*"]
+helpviewer_keywords: ["operator wchar_t* [C++]", "operator char* [C++]"]
 ms.assetid: acd9f4a7-b427-42c2-aaae-acae21cab317
 caps.latest.revision: 9
 author: "mikeblome"

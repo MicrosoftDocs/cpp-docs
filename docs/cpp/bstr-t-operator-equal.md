@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::operator="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operator =, bstr", "operator=, bstr", "= operator, with specific Visual C++ objects"]
+helpviewer_keywords: ["operator = [C++], bstr", "operator= [C++], bstr"]
 ms.assetid: fb31bb1b-ce29-4388-b5fd-8dac830cf18a
 caps.latest.revision: 6
 author: "mikeblome"

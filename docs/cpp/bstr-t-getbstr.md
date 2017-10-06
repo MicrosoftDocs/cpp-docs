@@ -9,7 +9,7 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::GetBSTR"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GetBSTR method"]
+helpviewer_keywords: ["GetBSTR method [C++]"]
 ms.assetid: 0c62ff16-4433-4183-a03c-d5a0a9b731ef
 caps.latest.revision: 6
 author: "mikeblome"
