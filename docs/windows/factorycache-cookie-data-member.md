@@ -15,7 +15,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # FactoryCache::cookie Data Member
 Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  

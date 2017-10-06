@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # FtmBase::GetMarshalSizeMax Method
 Get the upper bound on the number of bytes needed to marshal the specified interface pointer on the specified object.  

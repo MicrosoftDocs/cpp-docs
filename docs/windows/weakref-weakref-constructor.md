@@ -15,7 +15,6 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # WeakRef::WeakRef Constructor
 Initializes a new instance of the WeakRef class.  

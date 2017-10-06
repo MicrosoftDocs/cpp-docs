@@ -15,7 +15,6 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _U_MENUorID Class
 This class provides wrappers for **CreateWindow** and **CreateWindowEx**.  

@@ -14,7 +14,6 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Walkthrough: Creating Windows Desktop Applications (C++)
 This walkthrough shows how to create a traditional Windows desktop application using the C language API that has been in existence since the 1990s. This is not the modern way to create Windows programs but it is still supported and there are many applications today that still use this API. This example displays "Hello, World!" in a window. You can use the code that you develop in this walkthrough as a pattern to create other Windows desktop applications.  

@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CriticalSection::CriticalSection Constructor
 Initializes a synchronization object that is similar to a mutex object, but can be used by only the threads of a single process.  

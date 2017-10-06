@@ -15,7 +15,6 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # operator&gt;= (vector) (STL/CLR)
 Vector greater than or equal comparison.  

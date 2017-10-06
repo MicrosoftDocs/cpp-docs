@@ -15,7 +15,6 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # operator&gt;= (list) (STL/CLR)
 List greater than or equal comparison.  

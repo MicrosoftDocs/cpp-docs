@@ -18,7 +18,6 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _putchar_nolock, _putwchar_nolock
 Writes a character to **stdout** without locking the thread.  

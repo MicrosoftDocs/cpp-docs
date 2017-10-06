@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ComPtr::operator-&gt; Operator
 Retrieves a pointer to the type specified by the current template parameter.  

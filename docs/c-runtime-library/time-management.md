@@ -15,7 +15,6 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Time Management
 Use these functions to get the current time and convert, adjust, and store it as necessary. The current time is the system time.  

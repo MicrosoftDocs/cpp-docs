@@ -15,7 +15,6 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # DUMPBIN Options
 An option consists of an option specifier, which is either a dash ( - ) or a forward slash (/), followed by the name of the option. Option names cannot be abbreviated. Some options take arguments, specified after a colon (:). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments are not case sensitive. Most options apply to all binary files; a few apply only to certain types of files. By default, DUMPBIN sends information to standard output. Use the [/OUT](../../build/reference/out-dumpbin.md) option to send output to a file.  

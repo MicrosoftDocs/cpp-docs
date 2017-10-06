@@ -14,7 +14,6 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Use the Context Class to Implement a Cooperative Semaphore
 This topic shows how to use the concurrency::Context class to implement a cooperative semaphore class.  

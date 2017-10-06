@@ -14,7 +14,6 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # HString::Release Method
 Deletes the underlying string value and intializes the current HString object to an empty value.  

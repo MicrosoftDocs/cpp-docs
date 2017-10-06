@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # AsyncBase::get_Status Method
 Retrieves a value that indicates the status of the asynchronous operation.  

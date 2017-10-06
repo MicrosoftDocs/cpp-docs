@@ -14,7 +14,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Member Access Control (C++)
 Access controls enable you to separate the [public](../cpp/public-cpp.md) interface of a class from the [private](../cpp/private-cpp.md) implementation details and the [protected](../cpp/protected-cpp.md) members that are only for use by derived classes. The access specifier applies to all members declared after it until the next access specifier is encountered.  

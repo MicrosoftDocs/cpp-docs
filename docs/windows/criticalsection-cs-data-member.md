@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CriticalSection::cs_ Data Member
 Declares a critical section data member.  

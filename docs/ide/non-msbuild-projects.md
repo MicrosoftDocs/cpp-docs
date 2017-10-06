@@ -13,7 +13,6 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Open Folder projects in Visual C++
 Visual Studio 2017 introduces the "Open Folder" feature, which enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. 

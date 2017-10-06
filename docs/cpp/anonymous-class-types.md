@@ -14,7 +14,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Anonymous Class Types
 Classes can be anonymous — that is, they can be declared without an *identifier*. This is useful when you replace a class name with a `typedef` name, as in the following:  

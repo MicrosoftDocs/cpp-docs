@@ -15,7 +15,6 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /FR, /Fr (Create .Sbr File)
 Creates .sbr files.  

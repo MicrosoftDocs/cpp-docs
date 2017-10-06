@@ -14,7 +14,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # short_vector Structure
 short_vector provides metaprogramming definitions which are useful for programming short vectors generically.  

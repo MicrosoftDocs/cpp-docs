@@ -18,7 +18,6 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CrtCheckMemory
 Confirms the integrity of the memory blocks allocated in the debug heap (debug version only).  

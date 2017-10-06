@@ -15,7 +15,6 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Module::UnregisterCOMObject Method
 Unregisters one or more COM objects, which prevents other applications from connecting to them.  

@@ -18,7 +18,6 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _msize_dbg
 Calculates the size of a block of memory in the heap (debug version only).  

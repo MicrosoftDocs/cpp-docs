@@ -15,7 +15,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # deprecated (C++)
 This topic is about the Microsoft-specific deprecated declspec declaration. For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs. the Microsoft-specific declspec or pragma, see [C++ Standard Attributes](attributes2.md).

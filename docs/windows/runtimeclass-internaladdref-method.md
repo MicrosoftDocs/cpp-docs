@@ -15,7 +15,6 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # RuntimeClass::InternalAddRef Method
 Increments the reference count to the current RuntimeClass object.  

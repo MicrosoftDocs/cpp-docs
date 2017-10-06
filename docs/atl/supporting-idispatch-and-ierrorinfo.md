@@ -15,7 +15,6 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Supporting IDispatch and IErrorInfo
 You can use the template class [IDispatchImpl](../atl/reference/idispatchimpl-class.md) to provide a default implementation of the `IDispatch Interface` portion of any dual interfaces on your object.  

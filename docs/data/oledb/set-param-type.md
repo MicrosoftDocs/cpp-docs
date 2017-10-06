@@ -15,7 +15,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # SET_PARAM_TYPE
 Specifies `COLUMN_ENTRY` macros that follow the `SET_PARAM_TYPE` macro input, output, or input/output.  

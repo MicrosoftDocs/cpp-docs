@@ -15,7 +15,6 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /FS (Force Synchronous PDB Writes)
 Forces writes to the program database (PDB) file—created by [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) or [/ZI](../../build/reference/z7-zi-zi-debug-information-format.md)—to be serialized through MSPDBSRV.EXE.  

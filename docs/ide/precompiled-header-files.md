@@ -15,7 +15,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Precompiled Header Files
 These files are used to build a precompiled header file *Projname*.pch and a precompiled types file Stdafx.obj.  

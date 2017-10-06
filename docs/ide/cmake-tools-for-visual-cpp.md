@@ -13,7 +13,6 @@ ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CMake projects in Visual C++
 CMake is a cross-platform, open-source tool for defining build processes that run on multiple platforms. Until recently, Visual Studio users could use CMake to generate MSBuild project files, which the IDE then consumed for IntelliSense, browsing, and compilation. Starting in Visual Studio 2017, the **Visual C++ Tools for CMake** component uses the "Open Folder" feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. 

@@ -15,7 +15,6 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CAdapt Class
 This template is used to wrap classes that redefine the address-of operator to return something other than the address of the object.  

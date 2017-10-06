@@ -14,7 +14,6 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Define and Consume Classes and Structs (C++/CLI)
 This article shows how to define and consume user-defined reference types and value types in C++/CLI.  

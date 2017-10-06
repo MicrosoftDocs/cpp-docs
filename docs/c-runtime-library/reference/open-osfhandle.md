@@ -18,7 +18,6 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _open_osfhandle
 Associates a C run-time file descriptor with an existing operating-system file handle.  

@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Multiple Targets
 NMAKE evaluates multiple targets in a single dependency as if each were specified in a separate description block.  

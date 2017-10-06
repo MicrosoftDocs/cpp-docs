@@ -18,7 +18,6 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # mktemp
 This POSIX function is deprecated. Use the ISO C++ conformant [_mktemp](../../c-runtime-library/reference/mktemp-wmktemp.md) or security-enhanced [_mktemp_s](../../c-runtime-library/reference/mktemp-s-wmktemp-s.md) instead.

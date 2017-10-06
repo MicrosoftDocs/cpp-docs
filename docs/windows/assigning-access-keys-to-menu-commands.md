@@ -14,7 +14,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Assigning Access Keys to Menu Commands
 You can assign an access key (a mnemonic that allows the user to select the menu with the keyboard) to your menus and menu commands.  

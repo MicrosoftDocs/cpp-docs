@@ -15,7 +15,6 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # IDBSchemaRowsetImpl::CreateSchemaRowset
 Implements a COM object creator function for the object specified by the template parameter.  

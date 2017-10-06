@@ -18,7 +18,6 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CIpow
 Calculates *x* raised to the *y* power based on the top values in the stack.  

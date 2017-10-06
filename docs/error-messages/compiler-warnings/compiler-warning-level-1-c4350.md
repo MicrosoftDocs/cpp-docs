@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4350"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4350"
+f1_keywords: ["C4350"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4350"]
 ms.assetid: 4cc8ed67-64c4-4da5-a7a5-a639232baa23
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning (level 1) C4350
 behavior change: 'member1' called instead of 'member2'  

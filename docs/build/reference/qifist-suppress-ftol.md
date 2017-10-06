@@ -15,7 +15,6 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /QIfist (Suppress _ftol)
 Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required.  

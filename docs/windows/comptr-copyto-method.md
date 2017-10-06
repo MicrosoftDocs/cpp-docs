@@ -15,7 +15,6 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ComPtr::CopyTo Method
 Copies the current or specified interface associated with this ComPtr to the specified pointer.  

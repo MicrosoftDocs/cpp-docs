@@ -15,7 +15,6 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /RTC (Run-Time Error Checks)
 Used to enable and disable the run-time error checks feature, in conjunction with the [runtime_checks](../../preprocessor/runtime-checks.md) pragma.  

@@ -4,53 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2119"
-  - "C2123"
-  - "C2125"
-  - "C2126"
-  - "C2127"
-  - "C2131"
-  - "C2136"
-  - "C2176"
-  - "C2187"
-  - "C2189"
-helpviewer_keywords: 
-  - "C2119"
-  - "C2123"
-  - "C2125"
-  - "C2126"
-  - "C2127"
-  - "C2131"
-  - "C2136"
-  - "C2176"
-  - "C2187"
-  - "C2189"
-dev_langs: 
-  - "C++"
+f1_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2131", "C2136", "C2176", "C2187", "C2189"]
+helpviewer_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2131", "C2136", "C2176", "C2187", "C2189"]
+dev_langs: ["C++"]
 ms.assetid: 1ccab076-0954-4386-b959-d3112a6793ae
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Errors C2100 through C2199
 The articles in this part of the documentation contain information about a subsection of the Visual C++ compiler errors. You can access the information here or, in the **Output** window in Visual Studio, you can select an error number and then choose the F1 key.  

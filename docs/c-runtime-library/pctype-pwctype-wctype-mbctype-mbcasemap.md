@@ -15,7 +15,6 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _pctype, _pwctype, _wctype, _mbctype, _mbcasemap
 These global variables contain information used by the character classification functions. They are for internal use only.  

@@ -15,7 +15,6 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __incfsbyte, __incfsword, __incfsdword
 **Microsoft Specific**  

@@ -14,7 +14,6 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Use combinable to Combine Sets
 This topic shows how to use the [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class to compute the set of prime numbers.  

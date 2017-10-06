@@ -15,7 +15,6 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Add Resource Dialog Box
 Use this dialog box to add resources to a C++ Windows desktop application project.  

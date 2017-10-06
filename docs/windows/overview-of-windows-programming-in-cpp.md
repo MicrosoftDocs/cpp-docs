@@ -13,7 +13,6 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Overview of Windows Programming in C++
 You can use Visual C++ to write a wide variety of programs that run on a Windows PC (x86, x64 or ARM), on a Windows server, in the cloud, or on Xbox. Well-written C++ programs are fast, efficient, economical in power consumption, and able to take full advantage of multicore and many-core devices, general computing on the graphics processing unit (GPGPU), and other recent advances in hardware.  

@@ -18,7 +18,6 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # qsort
 Performs a quick sort. A more secure version of this function is available; see [qsort_s](../../c-runtime-library/reference/qsort-s.md).  

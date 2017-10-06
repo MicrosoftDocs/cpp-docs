@@ -13,7 +13,6 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /INTEGRITYCHECK (Require Signature Check)
 Specifies that the digital signature of the binary image must be checked at load time.  

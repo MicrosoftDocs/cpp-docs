@@ -15,7 +15,6 @@ caps.latest.revision: 40
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /GS (Buffer Security Check)  
   

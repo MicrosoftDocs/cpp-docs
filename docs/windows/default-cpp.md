@@ -15,7 +15,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # default (C++)
 Indicates that the custom or dispinterface defined within a coclass represents the default programmability interface.  

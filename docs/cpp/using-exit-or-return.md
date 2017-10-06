@@ -15,7 +15,6 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using exit or return
 When you call **exit** or execute a `return` statement from **main**, static objects are destroyed in the reverse order of their initialization. The following example shows how such initialization and cleanup works.  

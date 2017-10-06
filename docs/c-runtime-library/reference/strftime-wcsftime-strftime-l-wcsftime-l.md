@@ -18,7 +18,6 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # strftime, wcsftime, _strftime_l, _wcsftime_l
 Format a time string.  

@@ -15,7 +15,6 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Unicode Stream I/O in Text and Binary Modes
 When a Unicode stream I/O routine (such as `fwprintf`, `fwscanf`, `fgetwc`, `fputwc`, `fgetws`, or `fputws`) operates on a file that is open in text mode (the default), two kinds of character conversions take place:  

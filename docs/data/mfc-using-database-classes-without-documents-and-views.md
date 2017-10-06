@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # MFC: Using Database Classes Without Documents and Views
 Sometimes you might not want to use the framework's document/view architecture in your database applications. This topic explains:  

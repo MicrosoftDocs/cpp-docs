@@ -14,7 +14,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Output Parameters
 Calling a stored procedure is similar to invoking a SQL command. The main difference is that stored procedures use output parameters (or "outparameters") and return values.  

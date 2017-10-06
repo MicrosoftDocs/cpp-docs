@@ -14,7 +14,6 @@ caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # MFC Classes
 The classes in the following list are included in the Microsoft Foundation Class (MFC) Library.  

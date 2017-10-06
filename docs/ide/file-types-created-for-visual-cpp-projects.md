@@ -14,7 +14,6 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # File Types Created for Visual C++ Projects
 This topic describes all the types of files that are associated with Visual C++ projects for classic desktop applications. The actual files included in your project depend on the project type and the options you select when using a wizard.  

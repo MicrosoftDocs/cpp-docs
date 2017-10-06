@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ChainInterfaces::FillArrayWithIid Method
 Stores the interface ID defined by the `I0` template parameter into a specified location in a specified array of interface IDs.  

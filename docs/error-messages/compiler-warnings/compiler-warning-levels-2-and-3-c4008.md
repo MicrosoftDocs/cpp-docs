@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C4008"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4008"
+f1_keywords: ["C4008"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4008"]
 ms.assetid: fb45e535-cb68-4743-80e9-a6e34cfffeca
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning (levels 2 and 3) C4008
 'identifier' : 'attribute' attribute ignored  

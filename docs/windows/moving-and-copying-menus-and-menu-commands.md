@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Moving and Copying Menus and Menu Commands
 You can move or copy menus and menu commands using the drag-and-drop method or by using commands on the shortcut menu (right-click menu).  

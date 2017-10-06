@@ -15,7 +15,6 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # list::const_reverse_iterator (STL/CLR)
 The type of a constant reverse iterator for the controlled sequence..  

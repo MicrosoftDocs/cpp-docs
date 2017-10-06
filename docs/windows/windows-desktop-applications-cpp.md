@@ -15,7 +15,6 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Windows Desktop Applications (C++)
 This section discusses how to create C++ desktop applications that run in a window.  

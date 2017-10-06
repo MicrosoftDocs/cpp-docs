@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4258"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4258"
+f1_keywords: ["C4258"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4258"]
 ms.assetid: bbb75e6d-6693-4e62-8ed3-b006a0ec55e3
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning (level 1) C4258
 'variable' : definition from the for loop is ignored; the definition from the enclosing scope is used"  

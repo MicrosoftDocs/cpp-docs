@@ -4,28 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "execution_character_set"
-  - "vc-pragma.execution_character_set"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pragma execution_character_set"
+f1_keywords: ["execution_character_set", "vc-pragma.execution_character_set"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["pragma execution_character_set"]
 ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # execution_character_set
 Specifies the execution character set used for string and character literals. This directive is not needed for literals marked with the u8 prefix.  

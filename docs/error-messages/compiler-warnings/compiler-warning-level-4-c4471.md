@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "04/24/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4471"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4471"
+f1_keywords: ["C4471"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4471"]
 ms.assetid: ccfd8bd5-bc1b-4be7-a6ea-0e3a7add6607
 caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 4) C4471
 '*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)  

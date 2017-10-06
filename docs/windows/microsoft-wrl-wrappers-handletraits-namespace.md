@@ -15,7 +15,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Microsoft::WRL::Wrappers::HandleTraits Namespace
 Describes characteristics of common handle-based resource types.  

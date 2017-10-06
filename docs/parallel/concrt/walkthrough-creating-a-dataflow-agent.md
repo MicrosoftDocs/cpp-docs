@@ -14,7 +14,6 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Walkthrough: Creating a Dataflow Agent
 This document demonstrates how to create agent-based applications that are based on dataflow, instead of control flow.  

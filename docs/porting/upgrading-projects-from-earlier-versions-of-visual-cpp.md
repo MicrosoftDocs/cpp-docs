@@ -14,7 +14,6 @@ caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Upgrading Projects from Earlier Versions of Visual C++
 In most cases, you can open a project that was created in an earlier version of Visual Studio. However, to accomplish this, Visual Studio upgrades the project. If you save this upgraded project, it cannot be opened in the earlier version.  

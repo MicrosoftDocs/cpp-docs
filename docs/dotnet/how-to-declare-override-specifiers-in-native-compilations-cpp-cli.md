@@ -14,7 +14,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Declare Override Specifiers in Native Compilations (C++/CLI)
 [sealed](../windows/sealed-cpp-component-extensions.md), [abstract](../windows/abstract-cpp-component-extensions.md), and [override](../windows/override-cpp-component-extensions.md) are available in compilations that do not use **/ZW** or [/clr](../build/reference/clr-common-language-runtime-compilation.md).  

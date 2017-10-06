@@ -15,7 +15,6 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # EventSource::EventSource Constructor
 Initializes a new instance of the EventSource class.  

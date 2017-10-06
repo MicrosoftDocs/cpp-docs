@@ -4,69 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2716"
-  - "C2717"
-  - "C2727"
-  - "C2729"
-  - "C2737"
-  - "C2740"
-  - "C2741"
-  - "C2742"
-  - "C2744"
-  - "C2746"
-  - "C2747"
-  - "C2759"
-  - "C2763"
-  - "C2769"
-  - "C2772"
-  - "C2789"
-  - "C2796"
-  - "C2799"
-helpviewer_keywords: 
-  - "C2716"
-  - "C2717"
-  - "C2727"
-  - "C2729"
-  - "C2737"
-  - "C2740"
-  - "C2741"
-  - "C2742"
-  - "C2744"
-  - "C2746"
-  - "C2747"
-  - "C2759"
-  - "C2763"
-  - "C2769"
-  - "C2772"
-  - "C2789"
-  - "C2796"
-  - "C2799"
-dev_langs: 
-  - "C++"
+f1_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
+helpviewer_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
+dev_langs: ["C++"]
 ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Errors C2700 Through C2799
 The articles in this part of the documentation contain information about a subsection of the Visual C++ compiler errors. You can access the information here or, in the **Output** window in Visual Studio, you can select an error number and then choose the F1 key.  

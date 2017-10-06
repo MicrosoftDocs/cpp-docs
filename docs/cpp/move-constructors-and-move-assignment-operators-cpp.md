@@ -14,7 +14,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Move Constructors and Move Assignment Operators (C++)
 This topic describes how to write a *move constructor* and a move assignment operator for a C++ class. A move constructor enables you to implement move semantics, which can significantly improve the performance of your applications. For more information about move semantics, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  

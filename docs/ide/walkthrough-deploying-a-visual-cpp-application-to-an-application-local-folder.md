@@ -14,7 +14,6 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Walkthrough: Deploying a Visual C++ Application to an Application-local Folder
 Describes how to deploy a Visual C++ application by copying files to its folder.  

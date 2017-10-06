@@ -14,7 +14,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Override Specifiers  (C++ Component Extensions)
 *Override specifiers* modify how inherited types and members of inherited types behave in derived types.  

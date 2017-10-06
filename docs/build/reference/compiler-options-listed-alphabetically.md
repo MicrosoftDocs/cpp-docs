@@ -14,7 +14,6 @@ caps.latest.revision: 66
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Compiler Options Listed Alphabetically
 The following is a comprehensive alphabetical list of compiler options. For a categorical list, see the [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  

@@ -18,7 +18,6 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CrtReportBlockType
 Returns the block type/subtype associated with a given debug heap block pointer.  

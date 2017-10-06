@@ -14,7 +14,6 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Walkthrough: Adapting Existing Code to Use Lightweight Tasks
 This topic shows how to adapt existing code that uses the Windows API to create and execute a thread to use a lightweight task.  

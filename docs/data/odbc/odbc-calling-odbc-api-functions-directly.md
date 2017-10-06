@@ -14,7 +14,6 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ODBC: Calling ODBC API Functions Directly
 The database classes provide a simpler interface to a [data source](../../data/odbc/data-source-odbc.md) than does ODBC. As a result, the classes do not encapsulate all the ODBC API. For any functionality that falls outside the abilities of the classes, you must call ODBC API functions directly. For example, you must call the ODBC catalog functions (**::SQLColumns**, **::SQLProcedures**, **::SQLTables**, and others) directly.  

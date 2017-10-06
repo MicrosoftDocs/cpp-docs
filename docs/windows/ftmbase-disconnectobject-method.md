@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # FtmBase::DisconnectObject Method
 Forcibly releases all external connections to an object. The object's server calls the object's implementation of this method prior to shutting down.  

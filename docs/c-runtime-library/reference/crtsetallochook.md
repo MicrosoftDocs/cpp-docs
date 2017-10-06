@@ -18,7 +18,6 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CrtSetAllocHook
 Installs a client-defined allocation function by hooking it into the C run-time debug memory allocation process (debug version only).  

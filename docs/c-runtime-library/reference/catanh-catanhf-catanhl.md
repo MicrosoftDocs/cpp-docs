@@ -4,60 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "catanh"
-  - "catanhf"
-  - "catanhl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["catanh", "catanhf", "catanhl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "catanh"
-  - "catanhf"
-  - "catanhl"
-  - "complex/catanh"
-  - "complex/catanhf"
-  - "complex/catanhl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "catanh function"
-  - "catanhf function"
-  - "catanhl function"
+f1_keywords: ["catanh", "catanhf", "catanhl", "complex/catanh", "complex/catanhf", "complex/catanhl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["catanh function", "catanhf function", "catanhl function"]
 ms.assetid: 1b6021cb-647a-41b4-9d7f-919cc8b57b86
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # catanh, catanhf, catanhl
 Retrieves the inverse hyperbolic tangent of a complex number, with branch cuts outside the interval [-1; +1] along the real axis.  

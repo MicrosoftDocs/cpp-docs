@@ -15,7 +15,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # TN035: Using Multiple Resource Files and Header Files with Visual C++
 > [!NOTE]

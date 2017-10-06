@@ -14,7 +14,6 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Comparing the Concurrency Runtime to Other Concurrency Models
 This document describes the differences between the features and programming models of the Concurrency Runtime and other technologies. By understanding how the benefits of the Concurrency Runtime compare to the benefits of other programming models, you can select the technology that best satisfies the requirements of your applications.  

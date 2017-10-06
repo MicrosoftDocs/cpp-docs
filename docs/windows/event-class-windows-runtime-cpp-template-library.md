@@ -14,7 +14,6 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Event Class (Windows Runtime C++ Template Library)
 Represents an event.  

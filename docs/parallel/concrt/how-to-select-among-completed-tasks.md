@@ -14,7 +14,6 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Select Among Completed Tasks
 This example shows how to use the [concurrency::choice](../../parallel/concrt/reference/choice-class.md) and [concurrency::join](../../parallel/concrt/reference/join-class.md) classes to select the first task to complete a search algorithm.  

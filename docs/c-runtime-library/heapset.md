@@ -18,7 +18,6 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _heapset
 Checks heaps for minimal consistency and sets the free entries to a specified value.  

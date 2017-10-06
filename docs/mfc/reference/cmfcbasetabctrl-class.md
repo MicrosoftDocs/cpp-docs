@@ -15,7 +15,6 @@ caps.latest.revision: 41
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CMFCBaseTabCtrl Class
 Implements the base functionality for tabbed windows.  

@@ -15,7 +15,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Module::RegisterObjects Method
 Registers COM or Windows Runtime objects so other applications can connect to them.  

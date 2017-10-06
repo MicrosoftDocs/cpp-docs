@@ -15,7 +15,6 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Module::UnregisterObjects Method
 Unregisters the objects in the specified module so that other applications cannot connect to them.  

@@ -4,60 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "fmax"
-  - "fmaxf"
-  - "fmaxl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["fmax", "fmaxf", "fmaxl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fmax"
-  - "fmaxf"
-  - "fmaxl"
-  - "math/fmax"
-  - "math/fmaxf"
-  - "math/fmaxl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fmax function"
-  - "fmaxf function"
-  - "fmaxl function"
+f1_keywords: ["fmax", "fmaxf", "fmaxl", "math/fmax", "math/fmaxf", "math/fmaxl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["fmax function", "fmaxf function", "fmaxl function"]
 ms.assetid: a773ccf7-495e-4a9a-8c6d-dfb53e341e35
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # fmax, fmaxf, fmaxl
 Determine the larger of two specified numeric values.  

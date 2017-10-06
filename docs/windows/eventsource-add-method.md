@@ -15,7 +15,6 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # EventSource::Add Method
 Appends the event handler represented by the specified delegate interface to the set of event handlers for the current EventSource object.  

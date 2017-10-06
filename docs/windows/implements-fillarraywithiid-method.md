@@ -15,7 +15,6 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Implements::FillArrayWithIid Method
 Inserts the interface ID specified by the current zeroth template parameter into the specified array element.  

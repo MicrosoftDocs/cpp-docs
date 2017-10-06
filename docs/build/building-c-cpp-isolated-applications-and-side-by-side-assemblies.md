@@ -14,7 +14,6 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Building C/C++ Isolated Applications and Side-by-side Assemblies
 Visual C++ supports a deployment model for Windows client applications based on the idea of [isolated applications](http://msdn.microsoft.com/library/aa375190) and [side-by-side assemblies](http://msdn.microsoft.com/library/ff951640). By default, Visual C++ builds all native C/C++ applications as isolated applications that use [manifests](http://msdn.microsoft.com/library/aa375365) to describe their dependencies on Visual C++ libraries.  

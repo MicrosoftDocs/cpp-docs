@@ -15,7 +15,6 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # RuntimeClassType Enumeration
 Specifies the type of [RuntimeClass](../windows/runtimeclass-class.md) instance that is supported.  

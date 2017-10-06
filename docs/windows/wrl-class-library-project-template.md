@@ -13,7 +13,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # WRL Class Library Project Template
 If you use Visual Studio to write a Windows Runtime C++ Template Library (WRL)project, you can greatly simplify your task by downloading the WRL Class Library project template.  

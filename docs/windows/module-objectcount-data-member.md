@@ -14,7 +14,6 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Module::objectCount_ Data Member
 Keeps track of how many classes have been created with the [Make](../windows/make-function.md) function.  

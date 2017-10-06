@@ -12,20 +12,6 @@ ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-    - "cs-cz"
-    - "de-de"
-    - "es-es"
-    - "fr-fr"
-    - "it-it"
-    - "ja-jp"
-    - "ko-kr"
-    - "pl-pl"
-    - "pt-br"
-    - "ru-ru"
-    - "tr-tr"
-    - "zh-cn"
-    - "zh-tw"
 ---
    
 # C++ conformance improvements in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]

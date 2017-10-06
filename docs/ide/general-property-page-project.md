@@ -15,7 +15,6 @@ caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # General Property Page (Project)
 When you right-click on a project node in in Solution Explorer, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays two sections of properties:  

@@ -14,7 +14,6 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Optimization Best Practices
 This document describes some best practices for optimization in Visual C++. The following topics are discussed:  

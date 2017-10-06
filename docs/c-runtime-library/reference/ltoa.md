@@ -18,7 +18,6 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ltoa
 This POSIX function is deprecated. Use the ISO C++ conformant [_ltoa](../../c-runtime-library/reference/ltoa-ltow.md) or security-enhanced [_ltoa_s](../../c-runtime-library/reference/ltoa-s-ltow-s.md) instead.

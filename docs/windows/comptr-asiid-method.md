@@ -15,7 +15,6 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ComPtr::AsIID Method
 Returns a ComPtr object that represents the interface identified by the specified interface ID.  

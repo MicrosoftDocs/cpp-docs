@@ -18,7 +18,6 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ecvt
 This POSIX function is deprecated. Use the ISO C++ conformant [_ecvt](../../c-runtime-library/reference/ecvt.md) or security-enhanced [_ecvt_s](../../c-runtime-library/reference/ecvt-s.md) instead.

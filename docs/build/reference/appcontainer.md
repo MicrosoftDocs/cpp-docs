@@ -15,7 +15,6 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /APPCONTAINER
 Marks an executable that must run in an app container—for example, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] or Universal Windows app.  

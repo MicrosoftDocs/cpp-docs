@@ -18,7 +18,6 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _inp, _inpw, _inpd
 Inputs, from a port, a byte (`_inp`), a word (`_inpw`), or a double word (`_inpd`).  

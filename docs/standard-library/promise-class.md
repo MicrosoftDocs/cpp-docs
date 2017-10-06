@@ -14,7 +14,6 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 helpviewer_keywords: ["std::promise [C++]", "std::promise [C++], promise", "std::promise [C++], get_future", "std::promise [C++], set_exception", "std::promise [C++], set_exception_at_thread_exit", "std::promise [C++], set_value", "std::promise [C++], set_value_at_thread_exit", "std::promise [C++], swap"]
 ---
 # promise Class

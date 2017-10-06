@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ATL Window Classes
 ATL includes several classes that allow you to use and implement windows. These classes, like other ATL classes, provide an efficient implementation that does not impose an overhead on your code.  

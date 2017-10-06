@@ -18,7 +18,6 @@ caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _amsg_exit
 Emits a specified runtime error message and then exits your application with error code 255.  

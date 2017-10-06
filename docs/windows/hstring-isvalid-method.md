@@ -14,7 +14,6 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # HString::IsValid Method
 Indicates whether the current HString object is empty or not.  

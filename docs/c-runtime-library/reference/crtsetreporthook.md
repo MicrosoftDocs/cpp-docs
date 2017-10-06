@@ -18,7 +18,6 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CrtSetReportHook
 Installs a client-defined reporting function by hooking it into the C run-time debug reporting process (debug version only).  

@@ -18,7 +18,6 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # gcvt
 This POSIX function is deprecated. Use the ISO C++ conformant [_gcvt](../../c-runtime-library/reference/gcvt.md) or security-enhanced [_gcvt_s](../../c-runtime-library/reference/gcvt-s.md) instead.

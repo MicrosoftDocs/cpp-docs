@@ -14,7 +14,6 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # User-Defined Operators (C++/CLI)
 User-defined operators for managed types are allowed as static members or instance members, or at global scope. However, only static operators are accessible through metadata to clients that are written in a language other than Visual C++.  

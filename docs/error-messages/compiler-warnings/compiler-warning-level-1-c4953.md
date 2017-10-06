@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C4953"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4953"
+f1_keywords: ["C4953"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4953"]
 ms.assetid: 3c4f6ac6-3976-41ab-8a27-3c41d7472ea7
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning (level 1) C4953
 Inlinee 'function' has been edited since profile data was collected, profile data not used  

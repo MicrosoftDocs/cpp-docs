@@ -18,7 +18,6 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CrtIsMemoryBlock
 Verifies that a specified memory block is in the local heap and that it has a valid debug heap block type identifier (debug version only).  

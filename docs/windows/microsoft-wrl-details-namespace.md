@@ -13,7 +13,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Microsoft::WRL::Details Namespace
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

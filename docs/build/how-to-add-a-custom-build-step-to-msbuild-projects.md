@@ -15,7 +15,6 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Add a Custom Build Step to MSBuild Projects
 A custom build step is a user-defined step in a build. A custom build step behaves like any other *command tool* step, such as the standard compile or link tool step.  

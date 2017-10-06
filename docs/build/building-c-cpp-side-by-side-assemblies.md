@@ -14,7 +14,6 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Building C/C++ Side-by-side Assemblies
 A [side-by-side assembly](http://msdn.microsoft.com/library/windows/desktop/ff951640) is a collection of resources—a group of DLLs, windows classes, COM servers, type libraries, or interfaces—available for an application to use at runtime. The primary advantage of repackaging DLLs in assemblies is that multiple versions of assemblies can be used by applications at the same time and it is possible to service currently installed assemblies in case of an update release.  

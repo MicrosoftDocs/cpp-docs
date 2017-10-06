@@ -18,7 +18,6 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # tmpfile
 Creates a temporary file. This function is deprecated because a more secure version is available; see [tmpfile_s](../../c-runtime-library/reference/tmpfile-s.md).  

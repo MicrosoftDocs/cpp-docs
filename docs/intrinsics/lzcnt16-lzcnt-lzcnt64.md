@@ -15,7 +15,6 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __lzcnt16, __lzcnt, __lzcnt64
 **Microsoft Specific**  

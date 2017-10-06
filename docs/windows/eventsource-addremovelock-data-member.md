@@ -15,7 +15,6 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # EventSource::addRemoveLock_ Data Member
 Synchronizes access to the [targets_](../windows/eventsource-targets-data-member.md) array when adding, removing, or invoking event handlers.  

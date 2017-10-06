@@ -14,7 +14,6 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Best Practices in the Asynchronous Agents Library
 This document describes how to make effective use of the Asynchronous Agents Library. The Agents Library promotes an actor-based programming model and in-process message passing for coarse-grained dataflow and pipelining tasks.  

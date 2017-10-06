@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Module::MethodReleaseNotifier::object_ Data Member
 Holds a pointer to the object whose member function is the event handler for the current Module::MethodReleaseNotifier object.  

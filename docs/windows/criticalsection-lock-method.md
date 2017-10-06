@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CriticalSection::Lock Method
 Waits for ownership of the specified critical section object. The function returns when the calling thread is granted ownership.  

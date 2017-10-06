@@ -15,7 +15,6 @@ caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CRT Library Features
 This topic discusses the various .lib files that comprise the C run-time libraries as well as their associated compiler options and preprocessor directives.  

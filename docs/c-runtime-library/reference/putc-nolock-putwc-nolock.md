@@ -18,7 +18,6 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _putc_nolock, _putwc_nolock
 Writes a character to a stream without locking the thread.  

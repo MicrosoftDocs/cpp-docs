@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CriticalSectionTraits::Unlock Method
 Specializes a CriticalSection template so that it supports releasing ownership of the specified critical section object.  

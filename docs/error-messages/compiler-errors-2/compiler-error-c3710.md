@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3710"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3710"
+f1_keywords: ["C3710"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3710"]
 ms.assetid: 18bec009-5b6f-464a-a21e-5d58a6936504
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C3710
 'function': improper syntax for specifying event handler in __hook/\__unhook  

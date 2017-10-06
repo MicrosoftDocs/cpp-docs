@@ -13,7 +13,6 @@ caps.latest.revision: 13
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Cloud and Web Programming in Visual C++
 In C++, you have several options for connecting to the web and the cloud.  

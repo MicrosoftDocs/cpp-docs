@@ -15,7 +15,6 @@ caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Unicode and MBCS
 The Microsoft Foundation Classes (MFC) library, the C run-time library for Visual C++, and the Visual C++ development environment are enabled to assist your international programming. They provide:  

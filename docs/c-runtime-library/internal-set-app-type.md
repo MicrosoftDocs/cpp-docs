@@ -18,7 +18,6 @@ caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __set_app_type
 Sets the current application type.  

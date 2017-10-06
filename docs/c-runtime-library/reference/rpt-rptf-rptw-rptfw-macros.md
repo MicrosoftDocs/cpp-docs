@@ -17,7 +17,6 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _RPT, _RPTF, _RPTW, _RPTFW Macros
 Tracks an application's progress by generating a debug report (debug version only). Note that *n* specifies the number of arguments in `args` and can be 0, 1, 2, 3, 4, or 5.  

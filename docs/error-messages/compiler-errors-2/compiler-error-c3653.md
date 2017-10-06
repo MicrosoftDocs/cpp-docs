@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3653"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3653"
+f1_keywords: ["C3653"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3653"]
 ms.assetid: 316549d7-f7ef-4578-a2ba-57adc8aac527
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C3653
 'function' : cannot be used as a named override: a function being overridden not found; did you forget to name the function explicitly, using a :: operator?  

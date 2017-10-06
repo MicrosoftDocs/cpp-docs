@@ -18,7 +18,6 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # fclose, _fcloseall
 Closes a stream (`fclose`) or closes all open streams (`_fcloseall`).  

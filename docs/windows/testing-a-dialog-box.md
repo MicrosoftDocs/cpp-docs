@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Testing a Dialog Box
 When you're designing a dialog box, you can simulate and test its run-time behavior without compiling your program. In this mode, you can:  

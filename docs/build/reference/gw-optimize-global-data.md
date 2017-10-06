@@ -15,7 +15,6 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /Gw (Optimize Global Data)
 Package global data in COMDAT sections for optimization.  

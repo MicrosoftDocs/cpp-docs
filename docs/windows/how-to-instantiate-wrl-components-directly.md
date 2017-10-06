@@ -13,7 +13,6 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Instantiate WRL Components Directly
 Learn how to use the Windows Runtime C++ Template Library (WRL)[Microsoft::WRL::Make](../windows/make-function.md) and [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md) functions to instantiate a component from the module that defines it.  

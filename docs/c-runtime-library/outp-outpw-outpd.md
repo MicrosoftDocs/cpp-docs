@@ -18,7 +18,6 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _outp, _outpw, _outpd
 Outputs, at a port, a byte (`_outp`), a word (`_outpw`), or a double word (`_outpd`).  

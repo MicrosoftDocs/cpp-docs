@@ -18,7 +18,6 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # memccpy
 This POSIX function is deprecated. Use the ISO C++ conformant [_memccpy](../../c-runtime-library/reference/memccpy.md) instead.

@@ -15,7 +15,6 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Locale Names, Languages, and Country/Region Strings
 The *locale* argument to the `setlocale` and `_create_locale` functions can be set by using the locale names, languages, country/region codes, and code pages that are supported by the Windows NLS API. The *locale* argument takes the following form:  

@@ -14,7 +14,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # operator!= Operator (Microsoft::WRL)
 Inequality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../windows/comptrref-class.md) objects.  

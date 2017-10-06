@@ -18,7 +18,6 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __RTDynamicCast
 Runtime implementation of the [dynamic_cast](../cpp/dynamic-cast-operator.md) operator.  

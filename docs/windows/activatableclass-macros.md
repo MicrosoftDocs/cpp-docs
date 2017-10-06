@@ -15,7 +15,6 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ActivatableClass Macros
 Populates an internal cache that contains a factory that can create an instance of the specified class.  

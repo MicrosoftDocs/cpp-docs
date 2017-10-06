@@ -15,7 +15,6 @@ caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /favor (Optimize for Architecture Specifics)
 **/favor:** `option` produces the code that is optimized for a specific architecture or for the specifics of micro-architectures in the AMD and the Intel architectures.  

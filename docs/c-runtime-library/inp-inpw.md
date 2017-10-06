@@ -18,7 +18,6 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # inp, inpw
 These POSIX functions are deprecated. Use the ISO C++ conformant [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md) instead.  

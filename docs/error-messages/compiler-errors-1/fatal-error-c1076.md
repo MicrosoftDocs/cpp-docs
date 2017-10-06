@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C1076"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C1076"
+f1_keywords: ["C1076"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C1076"]
 ms.assetid: 84ac1180-3e8a-48e8-9f77-7f18a778b964
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Fatal Error C1076
 compiler limit : internal heap limit reached; use /Zm to specify a higher limit  

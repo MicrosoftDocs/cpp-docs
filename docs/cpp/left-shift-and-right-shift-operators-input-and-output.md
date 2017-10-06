@@ -15,7 +15,6 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)
 The bitwise shift operators are the right-shift operator (>>), which moves the bits of *shift-expression* to the right, and the left-shift operator (<<), which moves the bits of *shift-expression* to the left. <sup>1</sup>  

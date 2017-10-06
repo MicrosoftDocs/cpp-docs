@@ -14,7 +14,6 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Walkthrough: Using the Concurrency Runtime in a COM-Enabled Application
 This document demonstrates how to use the Concurrency Runtime in an application that uses the Component Object Model (COM).  

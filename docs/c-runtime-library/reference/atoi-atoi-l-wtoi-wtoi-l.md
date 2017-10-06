@@ -18,7 +18,6 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # atoi, _atoi_l, _wtoi, _wtoi_l
 Convert a string to integer.  

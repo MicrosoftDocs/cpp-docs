@@ -18,7 +18,6 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # tell
 This POSIX function is deprecated. Use the ISO C++ conformant [_tell](../../c-runtime-library/reference/tell-telli64.md) instead.

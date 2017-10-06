@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["%2C", ","]
+f1_keywords: ["%2C"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["comma operator"]
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
@@ -15,7 +15,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Comma Operator: ,
 Allows grouping two statements where one is expected.  

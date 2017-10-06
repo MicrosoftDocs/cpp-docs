@@ -14,7 +14,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using Structured Exception Handling with C++
 Structured exception handling described in these articles works with both C and C++ source files. However, it is not specifically designed for C++ and is not recommended. You can ensure that your code is more portable by using C++ exception handling. Also, the C++ exception handling mechanism is more flexible, in that it can handle exceptions of any type.  

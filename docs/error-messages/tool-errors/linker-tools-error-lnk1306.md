@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "LNK1306"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LNK1306"
+f1_keywords: ["LNK1306"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LNK1306"]
 ms.assetid: fad1df6a-0bd9-412f-b0d1-7c9bc749c584
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Linker Tools Error LNK1306  
   

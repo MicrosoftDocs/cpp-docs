@@ -15,7 +15,6 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # EventSource::targetsPointerLock_ Data Member
 Synchronizes access to internal data members even while event handlers for this EventSource are being added, removed, or invoked.  

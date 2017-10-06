@@ -18,7 +18,6 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # fputchar
 This POSIX function is deprecated. Use the ISO C++ conformant [_fputchar](../../c-runtime-library/reference/fputchar-fputwchar.md) instead.

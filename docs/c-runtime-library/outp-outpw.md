@@ -18,7 +18,6 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # outp, outpw
 These POSIX functions are deprecated. Use the ISO C++ conformant [_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md) instead.  

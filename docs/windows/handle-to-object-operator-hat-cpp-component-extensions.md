@@ -14,7 +14,6 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Handle to Object Operator (^)  (C++ Component Extensions)
 The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](../cpp/overview-of-declarators.md) to mean that the declared object should be automatically deleted when the system determines that the object is no longer accessible.  

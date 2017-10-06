@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4342"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4342"
+f1_keywords: ["C4342"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4342"]
 ms.assetid: 47d4d5ab-069f-4cdc-98c3-10d649577a37
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 1) C4342
 behavior change: '*function*' called, but a member operator was called in previous versions  

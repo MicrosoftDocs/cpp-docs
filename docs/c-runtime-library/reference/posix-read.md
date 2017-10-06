@@ -18,7 +18,6 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # read
 This POSIX function is deprecated. Use the ISO C++ conformant [_read](../../c-runtime-library/reference/read.md) instead.

@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ChainInterfaces::CastToUnknown Method
 Casts the interface pointer of the type defined by the `I0` template parameter to a pointer to IUnknown.  

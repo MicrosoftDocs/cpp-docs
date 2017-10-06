@@ -18,7 +18,6 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CrtMemDumpAllObjectsSince
 Dumps information about objects in the heap from the start of program execution or from a specified heap state (debug version only).  

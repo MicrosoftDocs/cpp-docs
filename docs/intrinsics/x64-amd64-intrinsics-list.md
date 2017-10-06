@@ -14,7 +14,6 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # x64 (amd64) Intrinsics List
 This document lists intrinsics that the Visual C++ compiler supports when x64 (also referred to as amd64) is targeted.  

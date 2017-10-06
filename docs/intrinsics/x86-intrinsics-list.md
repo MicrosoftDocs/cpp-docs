@@ -14,7 +14,6 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # x86 Intrinsics List
 This document lists intrinsics that the Visual C++ compiler supports when x86 is targeted.  

@@ -18,7 +18,6 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _initterm, _initterm_e
 Internal methods that walk a table of function pointers and initialize them.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C1208"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C1208"
+f1_keywords: ["C1208"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C1208"]
 ms.assetid: 4eefd8f0-5c2e-4a11-9e63-293e1139db65
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Fatal Error C1208
 Allocating reference classes on the stack is not supported by the version of the runtime installed  

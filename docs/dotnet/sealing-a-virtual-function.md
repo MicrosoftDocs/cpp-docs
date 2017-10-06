@@ -14,7 +14,6 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Sealing a Virtual Function
 The syntax for sealing a virtual function has changed from Managed Extensions for C++ to Visual C++.  

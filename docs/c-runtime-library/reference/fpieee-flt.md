@@ -18,7 +18,6 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _fpieee_flt
 Invokes a user-defined trap handler for IEEE floating-point exceptions.  

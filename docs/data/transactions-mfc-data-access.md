@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Transactions  (MFC Data Access)
 The concept of a transaction was developed to handle cases in which the resulting state of the database depends on the total success of a series of operations. This could come about because successive operations might modify the results of previous operations. In such cases, if any one operation fails, the resulting state could be indeterminate.  

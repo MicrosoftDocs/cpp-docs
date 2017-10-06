@@ -15,7 +15,6 @@ caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Creating and Managing MSBuild-based Visual C++ Projects
 MSBuild is the native build system for Visual C++ and is generally the best build system to use for UWP apps as well as Desktop applications that use MFC or ATL libraries. MSBuild is tightly integrated with the Visual Studio IDE and project system, but you can also use it from the command line. Starting in Visual Studio 2017, Visual C++ supports [CMake and other non-MSBuild systems through the Open Folder feature](non-msbuild-projects.md).

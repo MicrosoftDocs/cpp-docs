@@ -14,7 +14,6 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # HString::Set Method
 Sets the value of the current HString object to the specified wide-character string or HString parameter.  

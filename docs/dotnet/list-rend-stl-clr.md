@@ -15,7 +15,6 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # list::rend (STL/CLR)
 Designates the end of the reversed controlled sequence.  

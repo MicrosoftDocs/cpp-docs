@@ -15,7 +15,6 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # align (C++)
 In Visual Studio 2015 and later, use the C++11 standard `alignas` specifier to control alignment. For more information, see [Alignment](../cpp/alignment-cpp-declarations.md).  

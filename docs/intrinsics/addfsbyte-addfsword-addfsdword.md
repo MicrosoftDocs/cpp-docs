@@ -15,7 +15,6 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __addfsbyte, __addfsword, __addfsdword
 **Microsoft Specific**  

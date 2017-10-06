@@ -18,7 +18,6 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # wcsrtombs
 Convert a wide character string to its multibyte character string representation. A more secure version of this function is available; see [wcsrtombs_s](../../c-runtime-library/reference/wcsrtombs-s.md).  

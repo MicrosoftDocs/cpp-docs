@@ -14,7 +14,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Work with ODBC and Drivers
 ODBC allows you to write applications that are not dependent on just one database management system (DBMS). You can write one application that can operate on multiple DBMSs for which your users have the correct DBMS-specific ODBC driver.  

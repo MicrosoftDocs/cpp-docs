@@ -14,7 +14,6 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Structured Exception Handling (C/C++)
 Although Windows and Visual C++ support structured exception handling (SEH), we recommend that you use ISO-standard C++ exception handling because it makes code more portable and flexible. Nevertheless, in existing code or for particular kinds of programs, you still might have to use SEH.  

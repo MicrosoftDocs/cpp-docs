@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # SRWLock::TryLockShared Method
 Attempts to acquire a SRWLock object in shared mode for the current or specified SRWLock object.  

@@ -14,7 +14,6 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # .NET Programming with C++/CLI (Visual C++)
 The following topics describe how Visual C++ can target the .NET platform.  

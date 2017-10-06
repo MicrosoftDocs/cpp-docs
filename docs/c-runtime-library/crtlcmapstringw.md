@@ -18,7 +18,6 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __crtLCMapStringW
 Maps one character string to another, performing a specified locale-dependent transformation. This function can also be used to generate a sort key for the input string.  

@@ -14,7 +14,6 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # RuntimeClass::DecrementReference Method
 Decrements the reference count for the current RuntimeClass object.  

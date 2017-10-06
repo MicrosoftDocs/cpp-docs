@@ -15,7 +15,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # __restrict
 Like the **__declspec ( [restrict](../cpp/restrict.md) )** modifier, the `__restrict` keyword indicates that a symbol is not aliased in the current scope. The `__restrict` keyword differs from the `__declspec ( restrict )` modifier in the following ways:  

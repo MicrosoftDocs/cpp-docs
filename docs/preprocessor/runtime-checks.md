@@ -15,7 +15,6 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # runtime_checks
 Disables or restores the [/RTC](../build/reference/rtc-run-time-error-checks.md) settings.  

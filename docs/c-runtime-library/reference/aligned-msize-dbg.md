@@ -18,7 +18,6 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _aligned_msize_dbg
 Returns the size of a memory block allocated in the heap (debug version only).  

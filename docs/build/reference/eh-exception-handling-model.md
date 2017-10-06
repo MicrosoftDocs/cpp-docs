@@ -15,7 +15,6 @@ caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /EH (Exception Handling Model)
 Specifies the kind of exception handling used by the compiler, when to optimize away exception checks, and whether to destroy C++ objects that go out of scope because of an exception. If **/EH** is not specified, the compiler catches both asynchronous structured exceptions and C++ exceptions, but does not destroy C++ objects that go out of scope because of an asynchronous exception.  

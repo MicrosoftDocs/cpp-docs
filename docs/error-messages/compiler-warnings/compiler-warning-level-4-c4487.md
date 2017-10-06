@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4487"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4487"
+f1_keywords: ["C4487"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4487"]
 ms.assetid: 796144cf-cd3c-4edc-b6a4-96192b7eb4f0
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 4) C4487
 'derived_class_function' : matches inherited non-virtual method 'base_class_function' but is not explicitly marked 'new'  

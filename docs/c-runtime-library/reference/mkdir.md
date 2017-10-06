@@ -18,7 +18,6 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # mkdir
 This POSIX function is deprecated. Use the ISO C++ conformant [_mkdir](../../c-runtime-library/reference/mkdir-wmkdir.md) instead.

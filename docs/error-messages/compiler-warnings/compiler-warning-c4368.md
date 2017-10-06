@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4368"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4368"
+f1_keywords: ["C4368"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4368"]
 ms.assetid: cb85bcee-fd3d-4aa5-b626-2324f07a4f1b
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning C4368
 cannot define 'member' as a member of managed 'type': mixed types are not supported  

@@ -4,67 +4,17 @@ ms.custom: ""
 ms.date: "04/21/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3051"
-  - "C3061"
-  - "C3064"
-  - "C3067"
-  - "C3074"
-  - "C3078"
-  - "C3079"
-  - "C3081"
-  - "C3082"
-  - "C3086"
-  - "C3088"
-  - "C3089"
-  - "C3090"
-  - "C3091"
-  - "C3092"
-  - "C3093"
-  - "C3098"
-helpviewer_keywords: 
-  - "C3051"
-  - "C3061"
-  - "C3064"
-  - "C3067"
-  - "C3074"
-  - "C3078"
-  - "C3079"
-  - "C3081"
-  - "C3082"
-  - "C3086"
-  - "C3088"
-  - "C3089"
-  - "C3090"
-  - "C3091"
-  - "C3092"
-  - "C3093"
-  - "C3098"
-dev_langs: 
-  - "C++"
+f1_keywords: ["C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
+helpviewer_keywords: ["C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
+dev_langs: ["C++"]
 ms.assetid: 01b7b9cb-b351-4b5a-8cb0-1fcddb08d2ab
 caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Errors C3000 Through C3099
 The articles in this part of the documentation contain information about a subsection of the Visual C++ compiler errors. You can access the information here or, in the **Output** window in Visual Studio, you can select an error number and then choose the F1 key.  

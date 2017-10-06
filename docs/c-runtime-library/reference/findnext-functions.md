@@ -18,7 +18,6 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 Find the next name, if any, that matches the `filespec` argument in a previous call to [_findfirst](../../c-runtime-library/reference/findfirst-functions.md), and then alter the `fileinfo` structure contents accordingly.  

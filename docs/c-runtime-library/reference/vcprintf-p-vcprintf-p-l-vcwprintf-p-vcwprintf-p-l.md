@@ -18,7 +18,6 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
 Writes formatted output to the console by using a pointer to a list of arguments, and supports positional parameters in the format string.  

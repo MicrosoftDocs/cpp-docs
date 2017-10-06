@@ -15,7 +15,6 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Module::MethodReleaseNotifier Class
 Invokes an event handler when the last object in the current module is released. The event handler is specified by an object and its pointer-to-a-method member.  

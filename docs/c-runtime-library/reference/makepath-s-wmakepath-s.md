@@ -18,7 +18,6 @@ caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _makepath_s, _wmakepath_s
 Creates a path name from components. These are versions of [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

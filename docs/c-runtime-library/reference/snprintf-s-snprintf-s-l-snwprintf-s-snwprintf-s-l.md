@@ -4,75 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_snprintf_s"
-  - "_snprintf_s_l"
-  - "_snwprintf_s"
-  - "_snwprintf_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_snprintf_s", "_snprintf_s_l", "_snwprintf_s", "_snwprintf_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_snwprintf_s_l"
-  - "_sntprintf_s_l"
-  - "snprintf_s_l"
-  - "_snprintf_s_l"
-  - "_sntprintf_s"
-  - "_snprintf_s"
-  - "snprintf_s"
-  - "_snwprintf_s"
-  - "snwprintf_s_l"
-  - "snwprintf_s"
-  - "sntprintf_s"
-  - "sntprintf_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_snprintf_s_l function"
-  - "_snwprintf_s_l function"
-  - "_sntprintf_s_l function"
-  - "snwprintf_s_l function"
-  - "snprintf_s function"
-  - "_snprintf_s function"
-  - "snprintf_s_l function"
-  - "_sntprintf_s function"
-  - "sntprintf_s_l function"
-  - "sntprintf_s function"
-  - "snwprintf_s function"
-  - "_snwprintf_s function"
-  - "formatted text [C++]"
+f1_keywords: ["_snwprintf_s_l", "_sntprintf_s_l", "snprintf_s_l", "_snprintf_s_l", "_sntprintf_s", "_snprintf_s", "snprintf_s", "_snwprintf_s", "snwprintf_s_l", "snwprintf_s", "sntprintf_s", "sntprintf_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_snprintf_s_l function", "_snwprintf_s_l function", "_sntprintf_s_l function", "snwprintf_s_l function", "snprintf_s function", "_snprintf_s function", "snprintf_s_l function", "_sntprintf_s function", "sntprintf_s_l function", "sntprintf_s function", "snwprintf_s function", "_snwprintf_s function", "formatted text [C++]"]
 ms.assetid: 9336ab86-13e5-4a29-a3cd-074adfee6891
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 Writes formatted data to a string. These are versions of [snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

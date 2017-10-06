@@ -15,7 +15,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Module::GenericReleaseNotifier::callback_ Data Member
 Holds the lambda, functor, or pointer-to-function event handler associated with the current Module::GenericReleaseNotifier object.  

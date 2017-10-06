@@ -14,7 +14,6 @@ caps.latest.revision: 63
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Walkthrough: Compiling a Native C++ Program on the Command Line
 Visual C++ includes a command-line C++ compiler that you can use to create everything from basic console apps to Universal Windows apps, Windows Store apps, and .NET components.  

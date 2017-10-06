@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C4694"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4694"
+f1_keywords: ["C4694"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4694"]
 ms.assetid: 5ca122bb-34f3-43ee-a21f-95802cd515f7
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning C4694
 'class_1': a sealed abstract class cannot have a base-class 'base_class'  

@@ -14,7 +14,6 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Walkthrough: Building a Project (C++)
 In this walkthrough, you deliberately introduce a Visual C++ syntax error in your code to learn what a compilation error looks like and how to fix it. When you compile the project, an error message indicates what the problem is and where it occurred.  

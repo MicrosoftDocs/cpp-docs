@@ -15,7 +15,6 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # RuntimeClassFlags Structure
 Contains the type for an instance of a [RuntimeClass](../windows/runtimeclass-class.md).  

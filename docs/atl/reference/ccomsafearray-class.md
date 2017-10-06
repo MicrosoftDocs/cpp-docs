@@ -15,7 +15,6 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CComSafeArray Class
 This class is a wrapper for the **SAFEARRAY** structure.  

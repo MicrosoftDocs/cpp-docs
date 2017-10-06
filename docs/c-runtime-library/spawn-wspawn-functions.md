@@ -17,7 +17,6 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _spawn, _wspawn Functions
 Each of the `_spawn` functions creates and executes a new process:  

@@ -4,57 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2416"
-  - "C2429"
-  - "C2442"
-  - "C2453"
-  - "C2454"
-  - "C2455"
-  - "C2456"
-  - "C2468"
-  - "C2475"
-  - "C2478"
-  - "C2481"
-  - "C2497"
-helpviewer_keywords: 
-  - "C2416"
-  - "C2429"
-  - "C2442"
-  - "C2453"
-  - "C2454"
-  - "C2455"
-  - "C2456"
-  - "C2468"
-  - "C2475"
-  - "C2478"
-  - "C2481"
-  - "C2497"
-dev_langs: 
-  - "C++"
+f1_keywords: ["C2416", "C2429", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
+helpviewer_keywords: ["C2416", "C2429", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
+dev_langs: ["C++"]
 ms.assetid: f1f05572-af0b-497b-bde4-4c81ec01af3b
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Errors C2400 Through C2499
 The articles in this part of the documentation contain information about a subsection of the Visual C++ compiler errors. You can access the information here or, in the **Output** window in Visual Studio, you can select an error number and then choose the F1 key.  

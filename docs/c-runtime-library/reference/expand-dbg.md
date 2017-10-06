@@ -18,7 +18,6 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _expand_dbg
 Resizes a specified block of memory in the heap by expanding or contracting the block (debug version only).  

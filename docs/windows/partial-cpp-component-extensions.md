@@ -9,13 +9,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["partial_CPP"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["partial", "C++/CX,partial"]
+helpviewer_keywords: ["partial", "C++/CX, partial"]
 ms.assetid: 43adf1f5-10c5-44aa-a66f-7507e2bdabf8
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # partial  (C++ Component Extensions)
 The `partial` keyword enables different parts of the same ref class to be authored independently and in different files.  

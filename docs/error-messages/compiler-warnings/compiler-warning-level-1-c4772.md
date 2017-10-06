@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4772"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4772"
+f1_keywords: ["C4772"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4772"]
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 1) C4772
 \#import referenced a type from a missing type library; 'missing_type' used as a placeholder  

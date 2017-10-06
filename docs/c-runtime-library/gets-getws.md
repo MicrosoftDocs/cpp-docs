@@ -18,7 +18,6 @@ caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # gets, _getws
 Gets a line from the `stdin` stream. More secure versions of these functions are available; see [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).  

@@ -14,7 +14,6 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # GetModuleBase Function
 Retrieves a [ModuleBase](../windows/modulebase-class.md) pointer that allows for incrementing and decrementing the reference count of a [RuntimeClass](../windows/runtimeclass-class.md) object.  

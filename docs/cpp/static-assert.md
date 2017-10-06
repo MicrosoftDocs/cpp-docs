@@ -15,7 +15,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # static_assert
 Tests a software assertion at compile time. If the specified constant expression is `false`, the compiler displays the specified message, if one is provided, and the compilation fails with error C2338; otherwise, the declaration has no effect.  

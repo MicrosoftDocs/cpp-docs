@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C1107"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C1107"
+f1_keywords: ["C1107"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C1107"]
 ms.assetid: 541a4d9f-10bc-4dd8-b68e-15e548f3dc0a
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Fatal Error C1107
 could not find assembly 'file': please specify the assembly search path using /AI or by setting the LIBPATH environment variable  

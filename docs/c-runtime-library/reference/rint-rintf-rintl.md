@@ -18,7 +18,6 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # rint, rintf, rintl
 Rounds a floating-point value to the nearest integer in floating-point format.  

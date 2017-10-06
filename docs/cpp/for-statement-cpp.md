@@ -14,7 +14,6 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # for Statement (C++)
 Executes a statement repeatedly until the condition becomes false. For information on the range-based for statement, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).  

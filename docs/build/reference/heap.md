@@ -15,7 +15,6 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /HEAP
 Sets the size of the heap in bytes. This option only applies to executable files.  

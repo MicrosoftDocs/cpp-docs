@@ -15,7 +15,6 @@ caps.latest.revision: 42
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CMDIFrameWndEx Class
 Extends the functionality of [CMDIFrameWnd](../../mfc/reference/cframewnd-class.md), a Windows Multiple Document Interface (MDI) frame window.  

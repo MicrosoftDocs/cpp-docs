@@ -13,7 +13,6 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Graphics (C++ AMP)
 C++ AMP contains several APIs in the [Concurrency::graphics](../../parallel/amp/reference/concurrency-graphics-namespace.md) namespace that you can use to access the texture support on GPUs. Some common scenarios are:  

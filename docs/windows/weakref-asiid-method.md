@@ -15,7 +15,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # WeakRef::AsIID Method
 Sets the specified ComPtr pointer parameter to represent the specified interface ID.  

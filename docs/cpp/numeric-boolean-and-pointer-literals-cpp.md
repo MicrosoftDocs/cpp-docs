@@ -14,7 +14,6 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Numeric, Boolean and Pointer Literals  (C++)
 A literal is a program element that directly represents a value. This article covers literals of type integer, floating-point, boolean and pointer. For information about string and character literals, see [String and Character Literals  (C++)](../cpp/string-and-character-literals-cpp.md). You can also define your own literals based on any of these categories; for more information see [User-Defined Literals  (C++)](../cpp/user-defined-literals-cpp.md)  

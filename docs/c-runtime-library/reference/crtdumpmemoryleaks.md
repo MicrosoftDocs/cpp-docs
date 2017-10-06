@@ -18,7 +18,6 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CrtDumpMemoryLeaks
 Dumps all the memory blocks in the debug heap when a memory leak has occurred (debug version only).  

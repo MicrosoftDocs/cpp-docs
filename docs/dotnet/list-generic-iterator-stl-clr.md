@@ -15,7 +15,6 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # list::generic_iterator (STL/CLR)
 The type of an iterator for use with the generic interface for the container.  

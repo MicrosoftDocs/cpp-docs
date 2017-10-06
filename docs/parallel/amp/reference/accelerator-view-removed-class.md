@@ -15,7 +15,6 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # accelerator_view_removed Class
 The exception that is thrown when an underlying DirectX call fails due to the Windows timeout detection and recovery mechanism.  

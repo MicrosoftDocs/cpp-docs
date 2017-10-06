@@ -14,7 +14,6 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Module::ReleaseNotifier::Release
 Deletes the current Module::ReleaseNotifier object if the object was constructed with a parameter of `true`.  

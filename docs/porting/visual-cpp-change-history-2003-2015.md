@@ -14,7 +14,6 @@ caps.latest.revision: 124
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Visual C++ change history 2003 - 2015
 This article describes all the breaking changes from Visual Studio 2015 going back to Visual Studio 2003, and in this article the terms "new behavior" or "now" refer to Visual Studio 2015 and later. The terms "old behavior" and "before" refer to Visual Studio 2013 and earlier releases. 

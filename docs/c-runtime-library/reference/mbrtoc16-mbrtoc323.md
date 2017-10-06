@@ -18,7 +18,6 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # mbrtoc16, mbrtoc32
 Translates the first multibyte character in a narrow string into the equivalent UTF-16 or UTF-32 character.  

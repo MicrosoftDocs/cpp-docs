@@ -13,7 +13,6 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Porting and Upgrading: Examples and Case Studies
 You can get an idea of the kinds of issues you might encounter duration a migration from a previous version of Visual C++ to the current one by reviewing stories of successful migrations.  

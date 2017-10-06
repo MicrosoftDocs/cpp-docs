@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # ATL Support for DHTML Controls
 Using ATL, you can create a control with Dynamic HTML (DHTML) capability. An ATL DHTML control:  

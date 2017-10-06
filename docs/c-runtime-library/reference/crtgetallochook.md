@@ -18,7 +18,6 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CrtGetAllocHook
 Retrieves the current client-defined allocation function for hooking into the C run-time debug memory allocation process (debug version only).  

@@ -14,7 +14,6 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Walkthrough: Adding a CTaskDialog to an Application
 This walkthrough introduces the [CTaskDialog Class](../mfc/reference/ctaskdialog-class.md) and shows you how to add one to your application.  

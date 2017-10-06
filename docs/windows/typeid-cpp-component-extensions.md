@@ -14,7 +14,6 @@ caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # typeid  (C++ Component Extensions)
 Gets a value that indicates the type of an object.  

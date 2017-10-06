@@ -15,7 +15,6 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /Zg (Generate Function Prototypes)
 Removed. Creates a function prototype for each function defined in the source file, but does not compile the source file.  

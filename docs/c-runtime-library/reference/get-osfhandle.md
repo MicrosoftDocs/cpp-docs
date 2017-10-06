@@ -18,7 +18,6 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _get_osfhandle
 Retrieves the operating-system file handle that is associated with the specified file descriptor.  

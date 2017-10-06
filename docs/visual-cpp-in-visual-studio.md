@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "visual c++"
-  - "visual c"
-  - "vc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged code, C++"
-  - "development environment, Visual C++"
-  - "unmanaged code"
-  - "Visual C++"
-  - "Visual C++, reference"
+f1_keywords: ["visual c++", "visual c", "vc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged code, C++", "development environment, Visual C++", "unmanaged code", "Visual C++", "Visual C++, reference"]
 ms.assetid: e8dcc44c-a3e2-4ffe-887c-fd15b18dc458
 caps.latest.revision: 61
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
 ---
 # Visual C++ in Visual Studio
 The Visual Studio 2017 programming language and development tools help you develop native Universal Windows apps, native desktop and server applications, cross-platform libraries that run on Android and iOS as well as Windows, and managed apps that run on the .NET Framework.  

@@ -15,7 +15,6 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # tile_static Keyword
 The `tile_static` keyword is used to declare a variable that can be accessed by all threads in a tile of threads. The lifetime of the variable starts when execution reaches the point of declaration and ends when the kernel function returns. For more information on using tiles, see [Using Tiles](../parallel/amp/using-tiles.md).  

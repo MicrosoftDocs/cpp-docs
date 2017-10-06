@@ -16,7 +16,6 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Filename Search Functions
 These functions search for and close searches for specified file names:  

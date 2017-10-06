@@ -15,7 +15,6 @@ caps.latest.revision: 43
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # volatile (C++)
 A type qualifier that you can use to declare that an object can be modified in the program by the hardware.  

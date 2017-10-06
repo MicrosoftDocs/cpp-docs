@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Menu Command Properties
 The information below is organized according to the Menu properties that appear in the [Properties Window](/visualstudio/ide/reference/properties-window) when you select a menu command. These are listed alphabetically although the Properties window also enables you to view these properties by category.  

@@ -18,7 +18,6 @@ caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # __p__commode
 Points to the `_commode` global variable, which specifies the default *file commit mode* for file I/O operations.  

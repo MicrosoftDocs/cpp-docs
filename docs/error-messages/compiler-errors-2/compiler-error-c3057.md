@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3057"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3057"
+f1_keywords: ["C3057"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3057"]
 ms.assetid: b0b2ba88-9c74-4bec-bf60-8fc72eade34c
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3057
 'symbol' : dynamic initialization of 'threadprivate' symbols is not currently supported  

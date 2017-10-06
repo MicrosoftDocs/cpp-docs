@@ -14,7 +14,6 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # How to: Use combinable to Improve Performance
 This example shows how to use the [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class to compute the sum of the numbers in a [std::array](../../standard-library/array-class-stl.md) object that are prime. The `combinable` class improves performance by eliminating shared state.  

@@ -13,7 +13,6 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /Qsafe_fp_loads
 Requires integer move instructions for floating-point values and disables certain floating-point load optimizations.  

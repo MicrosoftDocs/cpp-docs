@@ -15,7 +15,6 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Toolbar Editor
 The Toolbar editor enables you to create toolbar resources and convert bitmaps into toolbar resources. The Toolbar editor uses a graphical display to show a toolbar and buttons that closely resemble how they will look in a finished application.  

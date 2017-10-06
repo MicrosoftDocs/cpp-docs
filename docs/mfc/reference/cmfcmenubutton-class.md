@@ -15,7 +15,6 @@ caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # CMFCMenuButton Class
 A button that displays a pop-up menu and reports on the user's menu selections.  

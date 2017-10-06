@@ -14,7 +14,6 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Comparing Synchronization Data Structures to the Windows API
 This topic compares the behavior of the synchronization data structures that are provided by the Concurrency Runtime to those provided by the Windows API.  

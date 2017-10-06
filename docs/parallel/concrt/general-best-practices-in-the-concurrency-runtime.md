@@ -14,7 +14,6 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # General Best Practices in the Concurrency Runtime
 This document describes best practices that apply to multiple areas of the Concurrency Runtime.  

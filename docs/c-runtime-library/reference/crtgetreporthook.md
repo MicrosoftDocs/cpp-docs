@@ -18,7 +18,6 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # _CrtGetReportHook
 Retrieves the client-defined reporting function for hooking it into the C run time for the debug reporting process (debug version only).  

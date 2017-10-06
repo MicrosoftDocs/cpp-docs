@@ -18,7 +18,6 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # remainder, remainderf, remainderl
 Computes the remainder of the quotient of two floating-point values, rounded to the nearest integral value.  

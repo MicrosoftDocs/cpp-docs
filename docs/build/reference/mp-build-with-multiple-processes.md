@@ -15,7 +15,6 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # /MP (Build with Multiple Processes)
 The **/MP** option can reduce the total time to compile the source files on the command line. The **/MP** option causes the compiler to create one or more copies of itself, each in a separate process. Then these copies simultaneously compile the source files. Consequently, the total time to build the source files can be significantly reduced.  

@@ -15,7 +15,6 @@ caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Running as a Member of the Users Group
 This topic explains how configuring Windows user accounts as a member of the Users Group (as opposed to the Administrators Group) increases security by reducing the chances of being infected with malicious code.  

@@ -14,7 +14,6 @@ caps.latest.revision: 50
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Redistributing Visual C++ Files
 When you deploy an application, you must also deploy the files that are required to support it. If any of these files are provided by Microsoft, check whether you are permitted to redistribute them. To review the Visual Studio license terms, see the License terms link in the About Microsoft Visual Studio dialog box in the IDE, or download the [Microsoft Software License Terms](http://go.microsoft.com/fwlink/p/?LinkId=831114) file. To view the "REDIST list" that is referenced in the "Distributable Code" section of the Microsoft Software License Terms for certain editions of Visual Studio, see [Distributable Code for Microsoft Visual Studio 2017 and Microsoft Visual Studio 2017 SDK (Includes Utilities and BuildServer Files)](http://go.microsoft.com/fwlink/p/?LinkId=823098), or for Visual Studio 2015, see [Distributable Code for Microsoft Visual Studio 2015 and Microsoft Visual Studio 2015 SDK](http://go.microsoft.com/fwlink/p/?LinkId=523763). For more information about redistributable files, see [Determining Which DLLs to Redistribute](../ide/determining-which-dlls-to-redistribute.md) and [Deployment Examples](../ide/deployment-examples.md).  

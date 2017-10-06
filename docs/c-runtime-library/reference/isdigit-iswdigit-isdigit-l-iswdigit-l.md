@@ -18,7 +18,6 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # isdigit, iswdigit, _isdigit_l, _iswdigit_l
 Determines whether an integer represents a decimal-digit character.  

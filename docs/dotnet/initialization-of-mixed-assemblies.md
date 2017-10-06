@@ -14,7 +14,6 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # Initialization of Mixed Assemblies
 In Visual C++ .NET and Visual C++ 2003, DLLs compiled with the **/clr** compiler option could non-deterministically deadlock when loaded; this issue was called the mixed DLL loading or loader lock issue. Almost all non-determinism has been removed from the mixed DLL loading process. However, there are a few remaining scenarios for which loader lock can (deterministically) occur. For more information about this issue, see "Mixed DLL Loading Problem" in the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=556).  
