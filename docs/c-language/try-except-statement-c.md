@@ -7,7 +7,6 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["__except", "try", "__try", "except", "__except_cpp", "__try_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["try-except keyword [C]", "structured exception handling, try-except", "try-catch keyword [C]", "__try keyword [C]", "__except keyword [C]", "__except keyword [C], in try-except", "try-catch keyword [C], try-except keyword [C]"]
 ms.assetid: f76db9d1-fc78-417f-b71f-18e545fc01c3

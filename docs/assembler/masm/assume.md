@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ASSUME", "_assume_cpp"]
+f1_keywords: ["ASSUME"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ASSUME directive"]
 ms.assetid: cd162070-aee9-4c65-babc-005c6cc73d7c
@@ -22,8 +22,7 @@ Enables error checking for register values.
 ## Syntax  
   
 ```  
-  
-      ASSUME segregister:name [[, segregister:name]]...  
+ASSUME segregister:name [[, segregister:name]]...  
 ASSUME dataregister:type [[, dataregister:type]]...  
 ASSUME register:ERROR [[, register:ERROR]]...  
 ASSUME [[register:]] NOTHING [[, register:NOTHING]]...  

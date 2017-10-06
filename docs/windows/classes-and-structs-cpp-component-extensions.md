@@ -7,7 +7,6 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["public", "ref struct", "value_CPP", "ref class", "value struct", "ref struct_cpp", "ref class_cpp", "value class_cpp", "value struct_cpp", "value class"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ref class keyword [C++]", "value class keyword [C++]", "value struct keyword [C++]", "ref struct keyword [C++]"]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372

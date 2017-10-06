@@ -4,42 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "<<"
-  - ">>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<< operator, with specific objects"
-  - "left shift operators"
-  - "right shift operators"
-  - "bitwise-shift operators"
-  - ">> operator"
-  - "shift operators"
-  - "operators [C++], shift"
+f1_keywords: ["<<", ">>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<< operator [C++], with specific objects", "left shift operators [C++]", "right shift operators [C++]", "bitwise-shift operators [C++]", ">> operator", "shift operators [C++]", "operators [C++], shift"]
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)
 The bitwise shift operators are the right-shift operator (>>), which moves the bits of *shift-expression* to the right, and the left-shift operator (<<), which moves the bits of *shift-expression* to the left. <sup>1</sup>  

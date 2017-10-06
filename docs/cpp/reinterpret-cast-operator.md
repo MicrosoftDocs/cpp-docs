@@ -4,36 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "reinterpret_cast"
-  - "reinterpret_cast_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reinterpret_cast keyword [C++]"
+f1_keywords: ["reinterpret_cast_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["reinterpret_cast keyword [C++]"]
 ms.assetid: eb3283c7-7f88-467e-affd-407d37b46d6c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # reinterpret_cast Operator
 Allows any pointer to be converted into any other pointer type. Also allows any integral type to be converted into any pointer type and vice versa.  

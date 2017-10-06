@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["vc-attr.public", "vc-attr.public_cpp"]
+f1_keywords: ["vc-attr.public"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["public attribute"]
 ms.assetid: c42e1fd5-6cb1-48fe-8a03-95f2a2e0137c
@@ -62,4 +62,4 @@ __interface IFireTabCtrl : IDispatch
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   

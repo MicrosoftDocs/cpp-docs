@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "_com_error::ErrorMessage"
-  - "_com_error.ErrorMessage"
-  - "ErrorMessage"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ErrorMessage method"
+f1_keywords: ["_com_error::ErrorMessage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ErrorMessage method [C++]"]
 ms.assetid: e47335b6-01af-4975-a841-121597479eb7
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # _com_error::ErrorMessage
 **Microsoft Specific**  

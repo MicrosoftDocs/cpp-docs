@@ -16,7 +16,7 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # HString Class
-Provides support for manipulating HSTRING handles.  
+A helper class for managing the lifetime of an HSTRING using the RAII pattern.
   
 ## Syntax  
   
@@ -25,7 +25,7 @@ class HString;
 ```  
   
 ## Remarks  
- The Windows Runtime provides access to strings through HSTRING handles. The HString class provides convenience functions and operators to simplify using HSTRING handles.  
+ The Windows Runtime provides access to strings through HSTRING handles. The HString class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern. 
   
 ## Members  
   

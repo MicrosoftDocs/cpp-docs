@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "decltype"
-  - "decltype_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C++], decltype"
-  - "decltype operator"
-  - "operators [C++], type of an expression"
-  - "operators [C++], deduce expression type"
+f1_keywords: ["decltype_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C++], decltype", "decltype operator", "operators [C++], type of an expression", "operators [C++], deduce expression type"]
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # decltype  (C++)
 The `decltype` type specifier yields the type of a specified expression. The `decltype` type specifier, together with the [auto keyword](../cpp/auto-cpp.md), is useful primarily to developers who write template libraries. Use `auto` and `decltype` to declare a template function whose return type depends on the types of its template arguments. Or, use `auto` and `decltype` to declare a template function that wraps a call to another function, and then returns the return type of the wrapped function.  

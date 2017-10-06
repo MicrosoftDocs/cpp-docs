@@ -4,39 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "~"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tilde (~) one's complement operator"
-  - "one's complement operator"
-  - "bitwise-complement operator"
-  - "compl operator"
-  - "~ operator, syntax"
+f1_keywords: ["~"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tilde (~) one's complement operator", "one's complement operator", "bitwise-complement operator", "compl operator", "~ operator [C++], syntax"]
 ms.assetid: 4bf81967-34f7-4b4b-aade-fd03d5da0174
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
+translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # One&#39;s Complement Operator: ~
 ## Syntax  
