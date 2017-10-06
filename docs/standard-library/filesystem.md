@@ -17,7 +17,7 @@ manager: "ghogen"
 translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;filesystem&gt;
-Include the header &gt;filesystem> for access to classes and functions that manipulate and retrieve information about paths, files and directories.  
+Include the header &lt;filesystem> for access to classes and functions that manipulate and retrieve information about paths, files and directories.  
   
 ## Syntax  
   
