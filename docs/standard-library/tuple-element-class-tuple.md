@@ -7,9 +7,9 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["tuple_element", "std::tuple_element", "utility/std::tuple_element"]
+f1_keywords: ["utility/std::tuple_element"]
 dev_langs: ["C++"]
-helpviewer_keywords: [", "]
+helpviewer_keywords: ["std::tuple_element"]
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
 caps.latest.revision: 23
 author: "corob-msft"
