@@ -70,11 +70,11 @@ For the complete list of conformance improvements up through Visual Studio 2015,
 
 **std::tr1 deprecated** The non-standard std::tr1 namespace is now marked as deprecated (in both C++14 and C++17 modes). For more information, see [std::tr1 namespace is deprecated](#tr1).
 
-**Annex D features deprecated** When the std:C++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
+**Annex D features deprecated** When the /std:c++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
 
 **New compiler switch for extern constexpr** In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, a new compiler switch, [/Zc:externConstexpr](build/reference/zc-externconstexpr.md), enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
 
-## Bug fixes in Visual Studio version 15.0
+## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), and [15.5](#update_155)
 ### Copy-list-initialization
 Visual Studio 2017 correctly raises compiler errors related to object creation using initializer lists that were not caught in Visual Studio 2015 and could lead to crashes or undefined runtime behavior. As per N4594 13.3.1.7p1, in copy-list-initialization, the compiler is required to consider an explicit constructor for overload resolution, but must raise an error if that overload is actually chosen. 
 
@@ -834,7 +834,7 @@ int main() {
 
 
 ### <a name="annex_d"></a>Standard Library features in Annex D are marked as deprecated.
-When the std:C++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated.
+When the /std:c++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated.
 
 In Visual Studio version 15.5, the following code raises C4996:
 
@@ -923,7 +923,7 @@ If the code does not need to be backwards compatible, you can avoid the warning 
 
 ### __declspec attributes with extern "C" linkage 
 
-In earlier versions of Visual Studio, the compiler ignored `__declspec(…)` attributes when `__declspec(…)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that user didn't intend, with possible runtime implications. The warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio version 15.5, the warning on by default.
+In earlier versions of Visual Studio, the compiler ignored `__declspec(…)` attributes when `__declspec(…)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that user didn't intend, with possible runtime implications. The warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio version 15.5, the warning is enabled by default.
 
 ```cpp
 __declspec(noinline) extern "C" HRESULT __stdcall //C4768
@@ -938,6 +938,9 @@ To fix the error, place the linkage specification before the __declspec attribut
 ```cpp
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
+This new warning C4768 will be given on some Windows SDK headers that were shipped with Visual Studio 2017 15.3 or older (for example: version1 0.0.15063.0, also known as RS2 SDK). However, later versions of Windows SDK headers have been fixed for this warning. Specifically, the headers that would have this warning are ShlObj.h and ShlObj_core.h. When you see this warning coming from Windows SDK headers, you can take these actions:
+1)	Switch to the latest Windows SDK that came with Visual Studio 2017 15.5 release.
+2)	Turn off the warning with #pragma warning(disable:4768, push) and pop around the #include of the Windows SDK header statement.
 
 ### <a name="extern_linkage"></a>Extern constexpr linkage 
 
