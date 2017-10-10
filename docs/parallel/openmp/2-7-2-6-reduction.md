@@ -47,10 +47,13 @@ variable-list
   
 ```  
   
-      x     =  xopexprxbinop=  exprx     =  expropx            (except for subtraction)  
-x++  
-++xx--  
---x  
+x = x op expr
+x binop= expr
+x = expr op x  (except for subtraction)  
+x++
+++x
+x--
+--x
 ```  
   
  where:  
