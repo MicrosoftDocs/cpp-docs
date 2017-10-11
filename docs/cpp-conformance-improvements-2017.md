@@ -934,10 +934,10 @@ This new warning C4768 will be given on some Windows SDK headers that were shipp
 1)	Switch to the latest Windows SDK that came with Visual Studio 2017 15.5 release.
 2)	Turn off the warning around the #include of the Windows SDK header statement:
 ```cpp
+#pragma warning (push) 
 #pragma warning(disable:4768)
-#pragma warning (push)
 #include <shlobj.h>
-#pragma warning (pop)
+#pragma warning (pop) 
 ```
 
 ### <a name="extern_linkage"></a>Extern constexpr linkage 
