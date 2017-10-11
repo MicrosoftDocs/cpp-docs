@@ -70,7 +70,7 @@ For the complete list of conformance improvements up through Visual Studio 2015,
 
 **std::tr1 deprecated** The non-standard std::tr1 namespace is now marked as deprecated (in both C++14 and C++17 modes). For more information, see [std::tr1 namespace is deprecated](#tr1).
 
-**Annex D features deprecated** When the /std:c++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
+**Annex D features deprecated** Annex D of the C++ standard contains all the features that have been deprecated. When the /std:c++17 compiler switch is set, almost all the Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
 
 **New compiler switch for extern constexpr** In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, a new compiler switch, [/Zc:externConstexpr](build/reference/zc-externconstexpr.md), enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
 
@@ -765,7 +765,7 @@ int main()
 
 
 ### Exception handlers
-Handlers of reference to array or function type are never a match for any exception object. The compiler now correctly honors this rule. It also no longer matches a handler of 'char*' or 'wchar_t*' to a string literal when **/Zc:strictStrings** is used.
+Handlers of reference to array or function type are never a match for any exception object. The compiler now correctly honors this rule and raises a level 4 warning. It also no longer matches a handler of `char*` or `wchar_t*` to a string literal when **/Zc:strictStrings** is used.
 
 ```cpp
 int main()
@@ -786,15 +786,7 @@ warning C4843: 'void (__cdecl &)(void)': An exception handler of reference to ar
 The following code avoids the error:
 
 ```cpp
-int main()
-{
-	try {
-		throw "";
-	}
-	catch (int (*)[1]) {}
-	catch (void (*)()) {}
-	catch (const char*) {}
-}
+catch (int (*)[1]) {}
 ```
 
 ### <a name="tr1"></a>std::tr1 namespace is deprecated
@@ -893,12 +885,12 @@ warning C4189: 's': local variable is initialized but not referenced
 The fix the error, remove the unused variable.
 
 ### Single line comments 
-In Visual Studio version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the **/Za** compiler switch.  The warnings are no longer needed because single line comments have been part of the C standard for several years. 
+In Visual Studio version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the **/Za** compiler switch.  The warnings are no longer needed because single line comments have been part of the C standard since C99. 
 
 ```cpp
 /* C only */
-#pragma warning(disable:C4001) //C4619
-#pragma warning(disable:C4179)
+#pragma warning(disable:4001) //C4619
+#pragma warning(disable:4179)
 // single line comment
 //* single line comment */
 ```
@@ -912,9 +904,9 @@ If the code does not need to be backwards compatible, you can avoid the warning 
 ```cpp
 /* C only */
 
-#pragma warning(disable:C4619)
-#pragma warning(disable:C4001)
-#pragma warning(disable:C4179)
+#pragma warning(disable:4619)
+#pragma warning(disable:4001)
+#pragma warning(disable:4179)
 
 // single line comment
 /* single line comment */
@@ -938,9 +930,15 @@ To fix the error, place the linkage specification before the __declspec attribut
 ```cpp
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
-This new warning C4768 will be given on some Windows SDK headers that were shipped with Visual Studio 2017 15.3 or older (for example: version1 0.0.15063.0, also known as RS2 SDK). However, later versions of Windows SDK headers have been fixed for this warning. Specifically, the headers that would have this warning are ShlObj.h and ShlObj_core.h. When you see this warning coming from Windows SDK headers, you can take these actions:
+This new warning C4768 will be given on some Windows SDK headers that were shipped with Visual Studio 2017 15.3 or older (for example: version 10.0.15063.0, also known as RS2 SDK). However, later versions of Windows SDK headers (specifically, ShlObj.h and ShlObj_core.h) have been fixed so that they do not produce this warning. When you see this warning coming from Windows SDK headers, you can take these actions:
 1)	Switch to the latest Windows SDK that came with Visual Studio 2017 15.5 release.
-2)	Turn off the warning with #pragma warning(disable:4768, push) and pop around the #include of the Windows SDK header statement.
+2)	Turn off the warning around the #include of the Windows SDK header statement:
+```cpp
+#pragma warning(disable:4768)
+#pragma warning (push)
+#include <shlobj.h>
+#pragma warning (pop)
+```
 
 ### <a name="extern_linkage"></a>Extern constexpr linkage 
 
@@ -966,7 +964,7 @@ In earlier versions of Visual Studio, the compiler incorrectly allowed the follo
 ```cpp
 #include <typeinfo>
 
-struct S {};
+struct S;
 
 void f() { typeid(S); } //C2027 in 15.5
 ```
