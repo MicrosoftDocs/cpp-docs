@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "user-defined operators under /clr"
+dev_langs: ["C++"]
+helpviewer_keywords: ["user-defined operators under /clr"]
 ms.assetid: 42f93b4a-6de4-4e34-b07b-5a62ac014f2c
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # User-Defined Operators (C++/CLI)
 User-defined operators for managed types are allowed as static members or instance members, or at global scope. However, only static operators are accessible through metadata to clients that are written in a language other than Visual C++.  

@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "09/21/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "redistributing DLLs"
-  - "DLLs [C++], redistributing"
-  - "dependencies [C++], application deployment and"
-  - "application deployment [C++], DLL redistribution"
-  - "deploying applications [C++], DLL redistribution"
+dev_langs: ["C++"]
+helpviewer_keywords: ["redistributing DLLs", "DLLs [C++], redistributing", "dependencies [C++], application deployment and", "application deployment [C++], DLL redistribution", "deploying applications [C++], DLL redistribution"]
 ms.assetid: f7a2cb42-fb48-42ab-abd2-b35e2fd5601a
 caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Determining Which DLLs to Redistribute
 

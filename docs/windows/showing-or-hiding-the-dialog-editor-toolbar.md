@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [C++], showing or hiding Dialog editor toolbar"
-  - "toolbars [C++], showing"
-  - "toolbars [C++], hiding"
-  - "Dialog editor, showing or hiding toolbar"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [C++], showing or hiding Dialog editor toolbar", "toolbars [C++], showing", "toolbars [C++], hiding", "Dialog editor, showing or hiding toolbar"]
 ms.assetid: 93c255e1-90eb-48b6-8602-450acda75bed
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Showing or Hiding the Dialog Editor Toolbar
 When you open the Dialog editor, the Dialog Editor toolbar automatically appears at the top of your solution.  

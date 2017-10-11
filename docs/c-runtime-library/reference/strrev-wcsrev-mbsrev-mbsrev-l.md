@@ -4,75 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wcsrev"
-  - "_mbsrev"
-  - "_strrev"
-  - "_mbsrev_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["_wcsrev", "_mbsrev", "_strrev", "_mbsrev_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_strrev"
-  - "_ftcsrev"
-  - "_tcsrev"
-  - "mbsrev"
-  - "mbsrev_l"
-  - "_wcsrev_fstrrev"
-  - "_mbsrev"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbsrev_l function"
-  - "characters [C++], switching"
-  - "_mbsrev function"
-  - "strrev function"
-  - "_ftcsrev function"
-  - "strings [C++], reversing"
-  - "wcsrev function"
-  - "_strrev function"
-  - "mbsrev_l function"
-  - "reversing characters in strings"
-  - "ftcsrev function"
-  - "characters [C++], reversing order"
-  - "_wcsrev function"
-  - "mbsrev function"
-  - "tcsrev function"
-  - "_tcsrev function"
+f1_keywords: ["_strrev", "_ftcsrev", "_tcsrev", "mbsrev", "mbsrev_l", "_wcsrev_fstrrev", "_mbsrev"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbsrev_l function", "characters [C++], switching", "_mbsrev function", "strrev function", "_ftcsrev function", "strings [C++], reversing", "wcsrev function", "_strrev function", "mbsrev_l function", "reversing characters in strings", "ftcsrev function", "characters [C++], reversing order", "_wcsrev function", "mbsrev function", "tcsrev function", "_tcsrev function"]
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _strrev, _wcsrev, _mbsrev, _mbsrev_l
 Reverses the characters of a string.  

@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "best practices, Asynchronous Agents Library"
-  - "Asynchronous Agents Library, best practices"
-  - "Asynchronous Agents Library, practices to avoid"
-  - "practices to avoid, Asynchronous Agents Library"
+dev_langs: ["C++"]
+helpviewer_keywords: ["best practices, Asynchronous Agents Library", "Asynchronous Agents Library, best practices", "Asynchronous Agents Library, practices to avoid", "practices to avoid, Asynchronous Agents Library"]
 ms.assetid: 85f52354-41eb-4b0d-98c5-f7344ee8a8cf
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Best Practices in the Asynchronous Agents Library
 This document describes how to make effective use of the Asynchronous Agents Library. The Agents Library promotes an actor-based programming model and in-process message passing for coarse-grained dataflow and pipelining tasks.  

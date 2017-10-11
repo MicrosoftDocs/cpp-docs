@@ -15,7 +15,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # File and Database Classes
 These classes allow you to store information to a database or a disk file. There are three sets of database classes — OLE DB, ODBC, and DAO — that provide similar functionality. The OLE DB group is implemented using OLE DB and works with the OLE DB consumer templates, the DAO group is implemented using the Data Access Object, and the ODBC group is implemented using Open Database Connectivity. There are also a set of classes for manipulating standard files, Active streams, and HTML streams.  

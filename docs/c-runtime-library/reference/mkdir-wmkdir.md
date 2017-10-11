@@ -4,62 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wmkdir"
-  - "_mkdir"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+apiname: ["_wmkdir", "_mkdir"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mkdir"
-  - "tmkdir"
-  - "_tmkdir"
-  - "wmkdir"
-  - "_wmkdir"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wmkdir function"
-  - "folders [C++], creating"
-  - "wmkdir function"
-  - "directories [C++], creating"
-  - "mkdir function"
-  - "tmkdir function"
-  - "_mkdir function"
-  - "_tmkdir function"
+f1_keywords: ["_mkdir", "tmkdir", "_tmkdir", "wmkdir", "_wmkdir"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wmkdir function", "folders [C++], creating", "wmkdir function", "directories [C++], creating", "mkdir function", "tmkdir function", "_mkdir function", "_tmkdir function"]
 ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _mkdir, _wmkdir
 Creates a new directory.  

@@ -4,65 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2000"
-  - "C2016"
-  - "C2023"
-  - "C2024"
-  - "C2025"
-  - "C2029"
-  - "C2031"
-  - "C2035"
-  - "C2037"
-  - "C2038"
-  - "C2049"
-  - "C2068"
-  - "C2076"
-  - "C2080"
-  - "C2096"
-  - "C2098"
-helpviewer_keywords: 
-  - "C2000"
-  - "C2016"
-  - "C2023"
-  - "C2024"
-  - "C2025"
-  - "C2029"
-  - "C2031"
-  - "C2035"
-  - "C2037"
-  - "C2038"
-  - "C2049"
-  - "C2068"
-  - "C2076"
-  - "C2080"
-  - "C2096"
-  - "C2098"
-dev_langs: 
-  - "C++"
+f1_keywords: ["C2000", "C2016", "C2023", "C2024", "C2025", "C2029", "C2031", "C2035", "C2037", "C2038", "C2049", "C2068", "C2076", "C2080", "C2096", "C2098"]
+helpviewer_keywords: ["C2000", "C2016", "C2023", "C2024", "C2025", "C2029", "C2031", "C2035", "C2037", "C2038", "C2049", "C2068", "C2076", "C2080", "C2096", "C2098"]
+dev_langs: ["C++"]
 ms.assetid: d99a19eb-eeeb-4181-9b33-9cbe4459767b
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Errors C2000 through C2099
 The articles in this part of the documentation contain information about a subsection of the Visual C++ compiler errors. You can access the information here or, in the **Output** window in Visual Studio, you can select an error number and then choose the F1 key.  

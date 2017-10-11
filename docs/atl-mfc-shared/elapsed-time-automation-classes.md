@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "adding dates"
-  - "calculating dates and times"
-  - "dates, calculating intervals"
-  - "elapsed time, calculating in Automation"
-  - "Automation classes, elapsed time"
-  - "time, elapsed"
-  - "intervals, date and time"
-  - "calculations, date and time"
+dev_langs: ["C++"]
+helpviewer_keywords: ["adding dates", "calculating dates and times", "dates, calculating intervals", "elapsed time, calculating in Automation", "Automation classes, elapsed time", "time, elapsed", "intervals, date and time", "calculations, date and time"]
 ms.assetid: 26b34b37-c10e-4b91-82c3-1dc5ffb5361f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Elapsed Time: Automation Classes
 This procedure shows how to calculate the difference between two `CTime` objects and get a `CTimeSpan` result.  

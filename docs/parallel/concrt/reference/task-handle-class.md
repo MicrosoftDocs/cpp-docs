@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['task_handle', 'PPL/concurrency::task_handle', 'PPL/concurrency::task_handle::task_handle']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "task_handle class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["task_handle class"]
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # task_handle Class
 The `task_handle` class represents an individual parallel work item. It encapsulates the instructions and the data required to execute a piece of work.  

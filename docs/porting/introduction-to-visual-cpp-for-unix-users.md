@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "09/01/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UNIX [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["UNIX [C++]"]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Introduction to Visual C++ for UNIX Users
 

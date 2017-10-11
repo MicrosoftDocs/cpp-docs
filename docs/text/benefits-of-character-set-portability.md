@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "character sets [C++], benefits"
-  - "portability [C++], character sets"
+dev_langs: ["C++"]
+helpviewer_keywords: ["character sets [C++], benefits", "portability [C++], character sets"]
 ms.assetid: bd60b925-1498-4e4f-897b-4c8ce66edcf7
 caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Benefits of Character Set Portability
 You can benefit from using MFC and C run-time portability features even if you do not currently intend to internationalize your application:  

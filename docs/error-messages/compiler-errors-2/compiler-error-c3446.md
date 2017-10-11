@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "07/21/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3446"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3445"
+f1_keywords: ["C3446"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3445"]
 ms.assetid: 33064548-24e4-46f1-beb1-476e3c3b3fbf
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3446  
   

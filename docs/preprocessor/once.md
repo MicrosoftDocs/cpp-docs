@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.once"
-  - "once_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "once pragma"
-  - "pragmas, once"
+f1_keywords: ["vc-pragma.once", "once_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["once pragma", "pragmas, once"]
 ms.assetid: c7517556-6403-4b16-8898-f2aa0a6f685f
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # once
 Specifies that the file will be included (opened) only once by the compiler when compiling a source code file.  

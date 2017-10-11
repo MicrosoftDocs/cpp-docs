@@ -15,8 +15,6 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["de-de", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
-translation.priority.mt: ["cs-cz", "es-es", "pl-pl", "pt-br", "tr-tr"]
 ---
 # is_destructible Class
 Tests whether the type is destructible.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.symbol.creating"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "New Symbol dialog box"
-  - "symbols, creating"
+f1_keywords: ["vc.editors.symbol.creating"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["New Symbol dialog box", "symbols, creating"]
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Creating New Symbols
 When you are beginning a new project, you may find it convenient to map out the symbol names you need before creating the resources to which they will be assigned.  

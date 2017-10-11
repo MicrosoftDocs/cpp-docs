@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C1047"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C1047"
+f1_keywords: ["C1047"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C1047"]
 ms.assetid: e1bbbc6b-a5bc-4c23-8203-488120a0ec78
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Fatal Error C1047
 The object or library file 'file' was created with an older compiler than other objects; rebuild old objects and libraries  

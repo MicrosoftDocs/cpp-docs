@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlTemporaryFile', 'ATLFILE/ATL::CAtlTemporaryFile', 'ATLFILE/ATL::CAtlTemporaryFile::CAtlTemporaryFile', 'ATLFILE/ATL::CAtlTemporaryFile::Close', 'ATLFILE/ATL::CAtlTemporaryFile::Create', 'ATLFILE/ATL::CAtlTemporaryFile::Flush', 'ATLFILE/ATL::CAtlTemporaryFile::GetPosition', 'ATLFILE/ATL::CAtlTemporaryFile::GetSize', 'ATLFILE/ATL::CAtlTemporaryFile::HandsOff', 'ATLFILE/ATL::CAtlTemporaryFile::HandsOn', 'ATLFILE/ATL::CAtlTemporaryFile::LockRange', 'ATLFILE/ATL::CAtlTemporaryFile::Read', 'ATLFILE/ATL::CAtlTemporaryFile::Seek', 'ATLFILE/ATL::CAtlTemporaryFile::SetSize', 'ATLFILE/ATL::CAtlTemporaryFile::TempFileName', 'ATLFILE/ATL::CAtlTemporaryFile::UnlockRange', 'ATLFILE/ATL::CAtlTemporaryFile::Write']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlTemporaryFile class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlTemporaryFile class"]
 ms.assetid: 05f0f2a5-94f6-4594-8dae-b114292ff5f9
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAtlTemporaryFile Class
 This class provides methods for the creation and use of a temporary file.  

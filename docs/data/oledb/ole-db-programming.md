@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB [C++]"
-  - "data access [C++], OLE DB programming"
-  - "OLE DB [C++], about OLE DB"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB [C++]", "data access [C++], OLE DB programming", "OLE DB [C++], about OLE DB"]
 ms.assetid: 52a80d66-17a9-43a1-9b90-392ae43cea2b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # OLE DB Programming
 Microsoft OLE DB is a legacy technology; for new applications it is the required data access API for linked SQL Servers. All other new applications should use ODBC. The current OLE DB provider for SQL Server is SQLNCLI11.DLL. The provider is still shipping in SQL Server 2016. This documentation is intended for developers who are maintaining existing applications that already use OLE DB.

@@ -4,86 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_ismbcpunct_l"
-  - "_ismbcblank"
-  - "_ismbcprint"
-  - "_ismbcgraph_l"
-  - "_ismbcblank_l"
-  - "_ismbcpunct"
-  - "_ismbcprint_l"
-  - "_ismbcspace_l"
-  - "_ismbcspace"
-  - "_ismbcgraph"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_ismbcpunct_l", "_ismbcblank", "_ismbcprint", "_ismbcgraph_l", "_ismbcblank_l", "_ismbcpunct", "_ismbcprint_l", "_ismbcspace_l", "_ismbcspace", "_ismbcgraph"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ismbcspace"
-  - "_ismbcgraph"
-  - "_ismbcpunct"
-  - "ismbcspace_l"
-  - "ismbcgraph"
-  - "_ismbcgraph_l"
-  - "_ismbcprint"
-  - "_ismbcspace_l"
-  - "ismbcprint"
-  - "ismbcgraph_l"
-  - "ismbcspace"
-  - "ismbcpunct"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ismbcspace_l function"
-  - "_ismbcprint_l function"
-  - "ismbcspace function"
-  - "ismbcpunct function"
-  - "_ismbcspace_l function"
-  - "_ismbcprint function"
-  - "ismbcprint function"
-  - "_ismbcgraph function"
-  - "ismbcgraph_l function"
-  - "_ismbcpunct_l function"
-  - "ismbcpunct_l function"
-  - "ismbcprint_l function"
-  - "_ismbcpunct function"
-  - "ismbcgraph function"
-  - "_ismbcgraph_l function"
-  - "_ismbcspace function"
+f1_keywords: ["_ismbcspace", "_ismbcgraph", "_ismbcpunct", "ismbcspace_l", "ismbcgraph", "_ismbcgraph_l", "_ismbcprint", "_ismbcspace_l", "ismbcprint", "ismbcgraph_l", "ismbcspace", "ismbcpunct"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ismbcspace_l function", "_ismbcprint_l function", "ismbcspace function", "ismbcpunct function", "_ismbcspace_l function", "_ismbcprint function", "ismbcprint function", "_ismbcgraph function", "ismbcgraph_l function", "_ismbcpunct_l function", "ismbcpunct_l function", "ismbcprint_l function", "_ismbcpunct function", "ismbcgraph function", "_ismbcgraph_l function", "_ismbcspace function"]
 ms.assetid: 8e0a5f47-ba64-4411-92a3-3c525d16e3be
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
 Determines whether character is a graphical character, a display character, a punctuation character, or a space character.  

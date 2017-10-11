@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['CurrentScheduler', 'CONCRT/concurrency::CurrentScheduler', 'CONCRT/concurrency::CurrentScheduler::Create', 'CONCRT/concurrency::CurrentScheduler::CreateScheduleGroup', 'CONCRT/concurrency::CurrentScheduler::Detach', 'CONCRT/concurrency::CurrentScheduler::Get', 'CONCRT/concurrency::CurrentScheduler::GetNumberOfVirtualProcessors', 'CONCRT/concurrency::CurrentScheduler::GetPolicy', 'CONCRT/concurrency::CurrentScheduler::Id', 'CONCRT/concurrency::CurrentScheduler::IsAvailableLocation', 'CONCRT/concurrency::CurrentScheduler::RegisterShutdownEvent', 'CONCRT/concurrency::CurrentScheduler::ScheduleTask']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CurrentScheduler class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CurrentScheduler class"]
 ms.assetid: 31c20e0e-4cdf-49b4-8220-d726130aad2b
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CurrentScheduler Class
 Represents an abstraction for the current scheduler associated with the calling context.  

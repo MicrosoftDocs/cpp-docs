@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "client/Microsoft::WRL::WeakRef::As"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "As method"
+f1_keywords: ["client/Microsoft::WRL::WeakRef::As"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["As method"]
 ms.assetid: 7173da62-b3fe-44d6-aea4-1aa97e69b221
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # WeakRef::As Method
 Sets the specified ComPtr pointer parameter to represent the specified interface.  

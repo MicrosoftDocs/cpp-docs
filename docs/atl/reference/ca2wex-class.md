@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CA2WEX', 'ATLCONV/ATL::CA2WEX', 'ATLCONV/ATL::CA2WEX::CA2WEX', 'ATLCONV/ATL::CA2WEX::m_psz', 'ATLCONV/ATL::CA2WEX::m_szBuffer']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CA2WEX class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CA2WEX class"]
 ms.assetid: 317d9ffb-e84f-47e8-beda-57e28fb19124
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # CA2WEX Class
 This class is used by the string conversion macros `CA2TEX`, `CA2CTEX`, `CT2WEX`, and `CT2CWEX`, and the typedef **CA2W**.  

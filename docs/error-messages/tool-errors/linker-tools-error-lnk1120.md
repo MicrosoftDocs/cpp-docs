@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "05/17/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "LNK1120"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LNK1120"
+f1_keywords: ["LNK1120"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LNK1120"]
 ms.assetid: 56aa7d36-921f-4daf-b44d-cca0d4fb1b51
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Linker Tools Error LNK1120
 *number* unresolved externals  

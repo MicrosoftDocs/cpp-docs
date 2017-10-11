@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.dialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Dialog editor, shortcut keys"
+f1_keywords: ["vc.editors.dialog"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Dialog editor, shortcut keys"]
 ms.assetid: 940270e9-a974-425b-a681-dfeaba0adf66
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Accelerator Keys for the Dialog Editor
 Below are the default accelerator keys for the Dialog editor commands. To change shortcut keys, click **Options** on the **Tools** menu, then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  

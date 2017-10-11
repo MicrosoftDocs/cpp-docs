@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "troubleshooting side-by-side assemblies"
-  - "troubleshooting isolated applications"
-  - "troubleshooting Visual C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["troubleshooting side-by-side assemblies", "troubleshooting isolated applications", "troubleshooting Visual C++"]
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies
 Loading a C/C++ application can fail if dependent libraries cannot be found. This article describes some common reasons why a C/C++ application fails to load, and suggests steps to resolve the problems.  

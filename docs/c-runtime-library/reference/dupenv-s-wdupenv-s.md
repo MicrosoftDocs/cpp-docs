@@ -4,62 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_dupenv_s"
-  - "_wdupenv_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-environment-l1-1-0.dll"
+apiname: ["_dupenv_s", "_wdupenv_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "tdupenv_s"
-  - "_dupenv_s"
-  - "wdupenv_s"
-  - "dupenv_s"
-  - "_tdupenv_s"
-  - "_wdupenv_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_dupenv_s function"
-  - "_tdupenv_s function"
-  - "_wdupenv_s function"
-  - "environment variables"
-  - "wdupenv_s function"
-  - "dupenv_s function"
-  - "tdupenv_s function"
+f1_keywords: ["tdupenv_s", "_dupenv_s", "wdupenv_s", "dupenv_s", "_tdupenv_s", "_wdupenv_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_dupenv_s function", "_tdupenv_s function", "_wdupenv_s function", "environment variables", "wdupenv_s function", "dupenv_s function", "tdupenv_s function"]
 ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _dupenv_s, _wdupenv_s
 Gets a value from the current environment.  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__vmx_on"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "VMXON instruction"
-  - "__vmx_on intrinsic"
+f1_keywords: ["__vmx_on"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["VMXON instruction", "__vmx_on intrinsic"]
 ms.assetid: 16804991-6a75-4adf-8ec2-bc95acfa4801
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __vmx_on
 **Microsoft Specific**  

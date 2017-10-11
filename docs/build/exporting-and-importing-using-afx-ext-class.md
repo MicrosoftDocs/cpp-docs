@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "afx_ext_class"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AFX_EXT_CLASS macro"
-  - "exporting classes [C++]"
-  - "importing DLLs [C++]"
-  - "extension DLLs [C++], exporting classes"
-  - "executable files [C++], importing classes"
-  - "exporting DLLs [C++], AFX_EXT_CLASS macro"
+f1_keywords: ["afx_ext_class"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AFX_EXT_CLASS macro", "exporting classes [C++]", "importing DLLs [C++]", "extension DLLs [C++], exporting classes", "executable files [C++], importing classes", "exporting DLLs [C++], AFX_EXT_CLASS macro"]
 ms.assetid: 6b72cb2b-e92e-4ecd-bcab-c335e1d1cfde
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Exporting and Importing Using AFX_EXT_CLASS  
   

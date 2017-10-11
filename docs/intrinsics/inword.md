@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__indword_cpp"
-  - "__indword"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "in instruction"
-  - "__inword intrinsic"
+f1_keywords: ["__indword_cpp", "__indword"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["in instruction", "__inword intrinsic"]
 ms.assetid: 5c617edd-6709-40a1-aad2-40d5e39283c6
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __inword
 **Microsoft Specific**  

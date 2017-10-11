@@ -4,57 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_getws"
-  - "gets"
-apilocation: 
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr120.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcrt.dll"
-  - "msvcr100.dll"
+apiname: ["_getws", "gets"]
+apilocation: ["msvcr80.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr100.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_getts"
-  - "gets"
-  - "_getws"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "getws function"
-  - "getts function"
-  - "_getws function"
-  - "lines, getting"
-  - "streams, getting lines"
-  - "_getts function"
-  - "gets function"
-  - "standard input, reading from"
+f1_keywords: ["_getts", "gets", "_getws"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["getws function", "getts function", "_getws function", "lines, getting", "streams, getting lines", "_getts function", "gets function", "standard input, reading from"]
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # gets, _getws
 Gets a line from the `stdin` stream. More secure versions of these functions are available; see [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).  

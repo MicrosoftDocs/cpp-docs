@@ -4,31 +4,15 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 356d6d8d-76ee-4181-9ad0-6f24b2fede38
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Windows Store Apps, the Windows Runtime, and the C Run-Time
 [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps are programs that run in the Windows Runtime that executes on [!INCLUDE[win8](../build/reference/includes/win8_md.md)].  The Windows Runtime is a trustworthy environment that controls the functions, variables, and resources that are available to a [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] app. However, by design, Windows Runtime restrictions prevent the use of most C Run-Time Library (CRT) features in [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps.  

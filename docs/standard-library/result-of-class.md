@@ -9,13 +9,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["type_traits/std::result_of", "type_traits/std::result_of_t", "type_traits/std::result_of::type"]
 dev_langs: ["C++"]
-helpviewer_keywords: [", "]
+helpviewer_keywords: ["std::result_of", "std::result_of_t", "std::result_of::type"]
 ms.assetid: 5374a096-4b4a-4712-aa97-6852c5cdd6be
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # result_of Class
 Determines the return type of the callable type that takes the specified argument types.  

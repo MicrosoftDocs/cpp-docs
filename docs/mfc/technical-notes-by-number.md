@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.tables.mfc.technotes"
-dev_langs: 
-  - "C++"
+f1_keywords: ["vc.tables.mfc.technotes"]
+dev_langs: ["C++"]
 ms.assetid: aaa449be-9167-4510-a490-af872c4f60a2
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Technical Notes by Number
 The technical notes below are listed numerically, with the most recently written technical note first. For a listing by category, see [Technical Notes by Category](../mfc/technical-notes-by-category.md).  

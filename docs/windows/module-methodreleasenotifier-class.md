@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::Module::MethodReleaseNotifier"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MethodReleaseNotifier class"
+f1_keywords: ["module/Microsoft::WRL::Module::MethodReleaseNotifier"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MethodReleaseNotifier class"]
 ms.assetid: 5c2902be-964b-488f-9f1c-adf504995cbc
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Module::MethodReleaseNotifier Class
 Invokes an event handler when the last object in the current module is released. The event handler is specified by an object and its pointer-to-a-method member.  

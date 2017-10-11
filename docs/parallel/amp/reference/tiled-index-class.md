@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['tiled_index', 'AMP/tiled_index', 'AMP/Concurrency::tiled_index::tiled_index', 'AMP/Concurrency::tiled_index::get_tile_extent', 'AMP/Concurrency::tiled_index::barrier', 'AMP/Concurrency::tiled_index::global', 'AMP/Concurrency::tiled_index::local', 'AMP/Concurrency::tiled_index::rank', 'AMP/Concurrency::tiled_index::tile', 'AMP/Concurrency::tiled_index::tile_dim0', 'AMP/Concurrency::tiled_index::tile_dim1', 'AMP/Concurrency::tiled_index::tile_dim2', 'AMP/Concurrency::tiled_index::tile_origin', 'AMP/Concurrency::tiled_index::tile_extent']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tiled_index class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["tiled_index class"]
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # tiled_index Class
 Provides an index into a [tiled_extent](tiled-extent-class.md) object. This class has properties to access elements relative to the local tile origin and relative to the global origin. For more information about tiled spaces, see [Using Tiles](../../../parallel/amp/using-tiles.md).  

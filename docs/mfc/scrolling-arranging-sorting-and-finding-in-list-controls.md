@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Scrolling, Arranging, Sorting, and Finding in List Controls
 List controls ([CListCtrl](../mfc/reference/clistctrl-class.md)) are scrollable by default. For more information, see [Scroll Position](http://msdn.microsoft.com/library/windows/desktop/bb774736) in the Windows SDK and the [Scroll](../mfc/reference/clistctrl-class.md#scroll) member function.  

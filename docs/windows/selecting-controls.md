@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Dialog editor, selecting controls"
-  - "dominant controls"
-  - "dialog box controls, selecting in editor"
-  - "controls [C++], selecting"
-  - "size, controls"
-  - "controls [C++], dominant"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Dialog editor, selecting controls", "dominant controls", "dialog box controls, selecting in editor", "controls [C++], selecting", "size, controls", "controls [C++], dominant"]
 ms.assetid: 27f05450-4550-4229-9f4c-2c9e06365596
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Selecting Controls
 Select controls to size, align, move, copy, or delete them, and then perform the operation you want. In most cases, you need to select more than one control to use the sizing and alignment tools on the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  

@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "conditional operators"
-  - "operators [C++], conditional"
-  - "expressions [C++], conditional"
+dev_langs: ["C++"]
+helpviewer_keywords: ["conditional operators", "operators [C++], conditional", "expressions [C++], conditional"]
 ms.assetid: c4f1a5ca-0844-44a7-a384-eca584d4e3dd
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Conditional-Expression Operator
 C has one ternary operator: the conditional-expression operator (**? :**).  

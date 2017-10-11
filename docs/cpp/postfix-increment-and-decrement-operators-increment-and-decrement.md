@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "--"
-  - "++"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "increment operators, syntax"
-  - "member-selection operators"
-  - "-- operator, postfix decrement operators"
-  - "postfix operators"
-  - "++ operator, postfix increment operators"
-  - "decrement operators, syntax"
-  - "operators [C++], postfix"
-  - "decrement operators"
+f1_keywords: ["--", "++"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["increment operators [C++], syntax", "member-selection operators [C++]", "-- operator [C++], postfix decrement operators", "postfix operators [C++]", "++ operator [C++], postfix increment operators", "decrement operators [C++], syntax", "operators [C++], postfix", "decrement operators [C++]"]
 ms.assetid: 0204d5c8-51b0-4108-b8a1-074c5754d89c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Postfix Increment and Decrement Operators: ++ and --
 ## Syntax  

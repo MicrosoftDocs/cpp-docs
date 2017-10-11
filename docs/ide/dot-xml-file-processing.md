@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "XML documentation, processing XML file"
+dev_langs: ["C++"]
+helpviewer_keywords: ["XML documentation, processing XML file"]
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # .Xml File Processing
 The compiler generates an ID string for each construct in your code that is tagged to generate documentation. For more information, see [Recommended Tags Documentation Comments](../ide/recommended-tags-for-documentation-comments-visual-cpp.md). The ID string uniquely identifies the construct. Programs that process the .xml file can use the ID string to identify the corresponding .NET Framework metadata or reflection item to which the documentation applies.  

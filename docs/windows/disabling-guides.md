@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "guides, disabling snapping"
-  - "Dialog editor, snap to guides"
-  - "snap to guides (Dialog editor)"
-  - "controls [C++], snap to guides/grid"
+dev_langs: ["C++"]
+helpviewer_keywords: ["guides, disabling snapping", "Dialog editor, snap to guides", "snap to guides (Dialog editor)", "controls [C++], snap to guides/grid"]
 ms.assetid: 51efa07b-8684-474e-a0b4-191ec5d91d1a
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Disabling Guides
 You can use special keys in conjunction with the mouse to disable the snapping effect of the guides. Using the ALT key disables the snapping effects of the guide selected. Moving a guide with the SHIFT key prevents snapped controls from moving with the guide.  

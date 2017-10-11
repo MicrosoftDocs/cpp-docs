@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.variables"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "global variables"
-  - "variables, global"
-  - "global variables, Microsoft run-time library"
+f1_keywords: ["c.variables"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["global variables", "variables, global", "global variables, Microsoft run-time library"]
 ms.assetid: 01d1551c-2f0c-4f72-935c-6442caccf84f
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Global Variables
 The Microsoft C run-time library provides the following global variables or macros. Several of these global variables or macros have been deprecated in favor of more-secure functional versions, which we recommend you use instead of the global variables.  

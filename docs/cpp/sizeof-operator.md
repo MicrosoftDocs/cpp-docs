@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "sizeof_cpp"
-  - "sizeof"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sizeof operator"
+f1_keywords: ["sizeof_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["sizeof operator"]
 ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # sizeof Operator
 Yields the size of its operand with respect to the size of type `char`.  

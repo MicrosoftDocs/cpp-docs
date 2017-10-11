@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['accelerator_view_removed', 'AMPRT/accelerator_view_removed', 'AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed', 'AMPRT/Concurrency::accelerator_view_removed:get_view_removed_reason']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed Class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed Class"]
 ms.assetid: 262446de-311c-454e-a5ed-e2aaced0d88a
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # accelerator_view_removed Class
 The exception that is thrown when an underlying DirectX call fails due to the Windows timeout detection and recovery mechanism.  

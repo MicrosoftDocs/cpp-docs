@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/clr compiler option [C++], migrating to /clr:pure"
-  - "migration [C++], pure MSIL"
-  - "pure MSIL [C++], porting to"
+dev_langs: ["C++"]
+helpviewer_keywords: ["/clr compiler option [C++], migrating to /clr:pure", "migration [C++], pure MSIL", "pure MSIL [C++], porting to"]
 ms.assetid: 5ffb1184-2095-4ade-84aa-4fa6324bc764
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Migrate to /clr:pure (C++/CLI)
 This topic discusses issues likely to arise when migrating to pure MSIL using **/clr:pure** (see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information). This topic assumes that the code being migrated is currently complied as mixed assembly using the **/clr** option, as the migration path from unmanaged code to pure MSIL is not a direct one. For unmanaged code, see [How to: Migrate to /clr](../dotnet/how-to-migrate-to-clr.md) before attempting to migrate to pure MSIL.  

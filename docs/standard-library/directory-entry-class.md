@@ -14,7 +14,6 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 helpviewer_keywords: ["std::experimental::filesystem::directory_entry", "std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &", "std::experimental::filesystem::directory_entry::directory_entry", "std::experimental::filesystem::directory_entry::operator=", "std::experimental::filesystem::directory_entry::assign", "std::experimental::filesystem::directory_entry::replace_filename", "std::experimental::filesystem::directory_entry::path", "std::experimental::filesystem::directory_entry::status", "std::experimental::filesystem::directory_entry::symlink_status", "std::experimental::filesystem::directory_entry::operator&lt;", "std::experimental::filesystem::directory_entry::operator==", "std::experimental::filesystem::directory_entry::operator!=", "std::experimental::filesystem::directory_entry::operator&lt;=", "std::experimental::filesystem::directory_entry::operator&gt;", "std::experimental::filesystem::directory_entry::operator&gt;="]
 ---
 # directory_entry Class

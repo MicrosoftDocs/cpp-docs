@@ -14,7 +14,6 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # try_to_lock_t Structure
 Represents a `struct` that defines a [try_to_lock](../standard-library/mutex-functions.md#try_to_lock) object. Used to select one of the overloaded constructors of [unique_lock](../standard-library/unique-lock-class.md).  

@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ErrLook tool"
-  - "Error lookup tool"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ErrLook tool", "Error lookup tool"]
 ms.assetid: 6040ffc1-2355-4a45-8998-84cbcba4ca91
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ERRLOOK Reference
 The ERRLOOK utility, which is available from the Tools menu as **Error Lookup**, retrieves a system error message or module error message based on the value entered. ERRLOOK retrieves the error message text automatically if you drag and drop a hexadecimal or decimal value from the Visual Studio debugger into the **Value** edit control. You can also enter a value either by typing it in the **Value** edit control or by pasting it from the Clipboard and clicking **Look Up**.  

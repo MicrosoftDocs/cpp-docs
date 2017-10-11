@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['IUMSScheduler', 'CONCRTRM/concurrency::IUMSScheduler', 'CONCRTRM/concurrency::IUMSScheduler::IUMSScheduler::SetCompletionList']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IUMSScheduler structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IUMSScheduler structure"]
 ms.assetid: 3a500225-4e02-4849-bb56-d744865f5870
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IUMSScheduler Structure
 An interface to an abstraction of a work scheduler that wants the Concurrency Runtime's Resource Manager to hand it user-mode schedulable (UMS) threads. The Resource Manager uses this interface to communicate with UMS thread schedulers. The `IUMSScheduler` interface inherits from the `IScheduler` interface.  

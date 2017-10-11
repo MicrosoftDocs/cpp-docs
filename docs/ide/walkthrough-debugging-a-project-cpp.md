@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "projects [C++], debugging"
-  - "project debugging [C++]"
-  - "debugging projects"
+dev_langs: ["C++"]
+helpviewer_keywords: ["projects [C++], debugging", "project debugging [C++]", "debugging projects"]
 ms.assetid: a5cade77-ba51-4b03-a7a0-6897e3cd6a59
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Debugging a Project (C++)
 In this walkthrough, you modify the program to fix the problem that you discovered when you tested the project.  

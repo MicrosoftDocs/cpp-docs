@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3045"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3045"
+f1_keywords: ["C3045"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3045"]
 ms.assetid: 9351ba3e-3d3f-455f-ac90-a810fa9fd947
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3045
 Expected a compound statement following OpenMP 'sections' directive. Missing '{'  

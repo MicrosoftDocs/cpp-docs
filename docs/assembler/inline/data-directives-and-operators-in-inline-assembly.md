@@ -4,42 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data directives [C++]"
-  - "__asm keyword [C++], referencing limitations"
-  - "MASM (Microsoft Macro Assembler), directives"
-  - "directives [C++], MASM"
-  - "MASM (Microsoft Macro Assembler), structures"
-  - "operators [MASM]"
-  - "inline assembly, operators"
-  - "inline assembly, data directives"
-  - "MASM (Microsoft Macro Assembler), operators"
-  - "structures [C++], MASM"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data directives [C++]", "__asm keyword [C++], referencing limitations", "MASM (Microsoft Macro Assembler), directives", "directives [C++], MASM", "MASM (Microsoft Macro Assembler), structures", "operators [MASM]", "inline assembly, operators", "inline assembly, data directives", "MASM (Microsoft Macro Assembler), operators", "structures [C++], MASM"]
 ms.assetid: fb7410c7-156a-4131-bcfc-211aa70533e3
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Data Directives and Operators in Inline Assembly
 ## Microsoft Specific  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4754"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4754"
+f1_keywords: ["C4754"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4754"]
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning (level 4) C4754
 Conversion rules for arithmetic operations in a comparison mean that one branch cannot be executed.  

@@ -4,64 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4203"
-  - "C4274"
-  - "C4277"
-  - "C4279"
-  - "C4298"
-  - "C4299"
-  - "C4301"
-  - "C4303"
-  - "C4314"
-  - "C4315"
-  - "C4316"
-  - "C4317"
-  - "C4318"
-  - "C4321"
-  - "C4322"
-  - "C4323"
-  - "C4327"
-  - "C4328"
-  - "C4330"
-  - "C4338"
-  - "C4343"
-  - "C4352"
-  - "C4362"
-  - "C4367"
-  - "C4370"
-  - "C4371"
-  - "C4373"
-  - "C4380"
-  - "C4387"
-  - "C4388"
-  - "C4396"
-dev_langs: 
-  - "C++"
+f1_keywords: ["C4203", "C4274", "C4277", "C4279", "C4298", "C4299", "C4301", "C4303", "C4314", "C4315", "C4316", "C4317", "C4318", "C4321", "C4322", "C4323", "C4327", "C4328", "C4330", "C4338", "C4343", "C4352", "C4362", "C4367", "C4370", "C4371", "C4373", "C4380", "C4387", "C4388", "C4396"]
+dev_langs: ["C++"]
 ms.assetid: 170248db-7bf2-4823-92d9-437b04c1290d
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warnings C4200 Through C4399
 The articles in this part of the documentation contain information about a subset of the Visual C++ compiler warnings. You can access the information here or, in the **Output** window in Visual Studio, you can select a warning number and then choose the F1 key.  

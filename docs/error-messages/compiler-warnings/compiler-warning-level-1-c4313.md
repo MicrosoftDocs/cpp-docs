@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4313"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4313"
+f1_keywords: ["C4313"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4313"]
 ms.assetid: bcf64191-e2cf-452e-97b4-423fcec2d07c
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 1) C4313
 'function' : 'format specifier' in format string conflicts with argument number of type 'type'  

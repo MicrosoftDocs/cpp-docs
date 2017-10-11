@@ -6,18 +6,12 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4868"
+f1_keywords: ["C4868"]
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning C4868
 'file(line_number)' compiler may not enforce left-to-right evaluation order in braced initializer list  

@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "stdafx.h"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "stdafx.h"
-  - "PCH files, file descriptions"
-  - ".pch files, file descriptions"
-  - "precompiled header files, file descriptions"
-  - "stdafx.cpp"
+f1_keywords: ["stdafx.h"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stdafx.h", "PCH files, file descriptions", ".pch files, file descriptions", "precompiled header files, file descriptions", "stdafx.cpp"]
 ms.assetid: 8228d87a-5609-41f3-9697-b16094c000e5
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Precompiled Header Files
 These files are used to build a precompiled header file *Projname*.pch and a precompiled types file Stdafx.obj.  

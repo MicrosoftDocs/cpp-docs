@@ -4,57 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "amp_short_vectors/Concurrency::graphics::float_2::yx"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator-="
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator++"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator-"
-  - "amp_short_vectors/Concurrency::graphics::float_2::r"
-  - "amp_short_vectors/Concurrency::graphics::float_2::get_yx"
-  - "amp_short_vectors/Concurrency::graphics::float_2::get_xy"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator/="
-  - "amp_short_vectors/Concurrency::graphics::float_2::set_yx"
-  - "amp_short_vectors/Concurrency::graphics::float_2::x"
-  - "amp_short_vectors/Concurrency::graphics::float_2::get_y"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator+="
-  - "amp_short_vectors/Concurrency::graphics::float_2::gr"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator="
-  - "amp_short_vectors/Concurrency::graphics::float_2::set_x"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator--"
-  - "amp_short_vectors/Concurrency::graphics::float_2::get_x"
-  - "amp_short_vectors/Concurrency::graphics::float_2::operator*="
-  - "amp_short_vectors/Concurrency::graphics::float_2::rg"
-  - "amp_short_vectors/Concurrency::graphics::float_2::set_xy"
-  - "amp_short_vectors/Concurrency::graphics::float_2::xy"
-  - "amp_short_vectors/Concurrency::graphics::float_2"
-  - "amp_short_vectors/Concurrency::graphics::float_2::set_y"
-  - "amp_short_vectors/Concurrency::graphics::float_2::y"
-  - "amp_short_vectors/Concurrency::graphics::float_2::g"
-dev_langs: 
-  - "C++"
+f1_keywords: ["amp_short_vectors/Concurrency::graphics::float_2::yx", "amp_short_vectors/Concurrency::graphics::float_2::operator-=", "amp_short_vectors/Concurrency::graphics::float_2::operator++", "amp_short_vectors/Concurrency::graphics::float_2::operator-", "amp_short_vectors/Concurrency::graphics::float_2::r", "amp_short_vectors/Concurrency::graphics::float_2::get_yx", "amp_short_vectors/Concurrency::graphics::float_2::get_xy", "amp_short_vectors/Concurrency::graphics::float_2::operator/=", "amp_short_vectors/Concurrency::graphics::float_2::set_yx", "amp_short_vectors/Concurrency::graphics::float_2::x", "amp_short_vectors/Concurrency::graphics::float_2::get_y", "amp_short_vectors/Concurrency::graphics::float_2::operator+=", "amp_short_vectors/Concurrency::graphics::float_2::gr", "amp_short_vectors/Concurrency::graphics::float_2::operator=", "amp_short_vectors/Concurrency::graphics::float_2::set_x", "amp_short_vectors/Concurrency::graphics::float_2::operator--", "amp_short_vectors/Concurrency::graphics::float_2::get_x", "amp_short_vectors/Concurrency::graphics::float_2::operator*=", "amp_short_vectors/Concurrency::graphics::float_2::rg", "amp_short_vectors/Concurrency::graphics::float_2::set_xy", "amp_short_vectors/Concurrency::graphics::float_2::xy", "amp_short_vectors/Concurrency::graphics::float_2", "amp_short_vectors/Concurrency::graphics::float_2::set_y", "amp_short_vectors/Concurrency::graphics::float_2::y", "amp_short_vectors/Concurrency::graphics::float_2::g"]
+dev_langs: ["C++"]
 ms.assetid: b3ebd48e-f8c8-4f00-a640-357f702f0cae
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # float_2 Class
 Represents a short vector of two floats.  

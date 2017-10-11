@@ -4,42 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exporting classes"
-  - "declarations [C++], class"
-  - "exportable classes [C++]"
-  - "classes [C++], declaring"
-  - "classes [C++], exportable and inheritance"
-  - "inheritance [C++], exportable classes"
-  - "dllimport attribute [C++], classes"
-  - "declaring classes"
-  - "dllexport attribute [C++]"
-  - "dllexport attribute [C++], classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["exporting classes [C++]", "declarations [C++], class", "exportable classes [C++]", "classes [C++], declaring", "classes [C++], exportable and inheritance", "inheritance [C++], exportable classes [C++]", "dllimport attribute [C++], classes", "declaring classes [C++]", "dllexport attribute [C++]", "dllexport attribute [C++], classes [C++]"]
 ms.assetid: 8d7d1303-b9e9-47ca-96cc-67bf444a08a9
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using dllimport and dllexport in C++ Classes
 ## Microsoft Specific  

@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.FXCompilerTool.AssemblerOutput"
-  - "VC.Project.FXCompilerTool.ObjectFileOutput"
-  - "VC.Project.FXCompilerTool.HeaderFileOutput"
-  - "VC.Project.FXCompilerTool.VariableName"
-  - "VC.Project.FXCompilerTool.AssemblerOutputFile"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.FXCompilerTool.AssemblerOutput", "VC.Project.FXCompilerTool.ObjectFileOutput", "VC.Project.FXCompilerTool.HeaderFileOutput", "VC.Project.FXCompilerTool.VariableName", "VC.Project.FXCompilerTool.AssemblerOutputFile"]
+dev_langs: ["C++"]
 ms.assetid: c5ba1e72-30de-43eb-a15a-5b0ae58e55c2
 caps.latest.revision: 5
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # HLSL Property Pages: Output Files
 To configure the following properties of the HLSL compiler (fxc.exe), use its **Output Files** property. For information about how to access the **Output Files** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).  

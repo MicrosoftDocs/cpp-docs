@@ -4,45 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cursor library [ODBC]"
-  - "snapshots, support in ODBC"
-  - "timestamps, ODBC timestamp columns"
-  - "ODBC cursor library [ODBC]"
-  - "static cursors"
-  - "ODBC drivers, Level 1"
-  - "ODBC drivers, cursor support"
-  - "positioned updates"
-  - "cursors, ODBC cursor library"
-  - "Level 1 ODBC drivers"
-  - "cursor library [ODBC], snapshots"
-  - "ODBC, timestamp"
-  - "positioning cursors"
+dev_langs: ["C++"]
+helpviewer_keywords: ["cursor library [ODBC]", "snapshots, support in ODBC", "timestamps, ODBC timestamp columns", "ODBC cursor library [ODBC]", "static cursors", "ODBC drivers, Level 1", "ODBC drivers, cursor support", "positioned updates", "cursors, ODBC cursor library", "Level 1 ODBC drivers", "cursor library [ODBC], snapshots", "ODBC, timestamp", "positioning cursors"]
 ms.assetid: 6608db92-82b1-4164-bb08-78153c227be3
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ODBC: The ODBC Cursor Library
 This topic describes the ODBC Cursor Library and explains how to use it. For more information, see:  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc-pragma.optimize"
-  - "optimize_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pragmas, optimize"
-  - "optimize pragma"
+f1_keywords: ["vc-pragma.optimize", "optimize_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["pragmas, optimize", "optimize pragma"]
 ms.assetid: cb13c1cc-186a-45bc-bee7-95a8de7381cc
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # optimize
 Specifies optimizations to be performed on a function-by-function basis.  

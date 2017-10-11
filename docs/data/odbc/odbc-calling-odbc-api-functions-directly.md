@@ -4,42 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ODBC API functions [C++], calling"
-  - "ODBC [C++], catalog functions"
-  - "ODBC API functions [C++]"
-  - "APIs [C++], calling"
-  - "ODBC classes [C++], vs. ODBC API"
-  - "direct ODBC API calls"
-  - "catalog functions (ODBC)"
-  - "catalog functions (ODBC), calling"
-  - "ODBC [C++], API functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ODBC API functions [C++], calling", "ODBC [C++], catalog functions", "ODBC API functions [C++]", "APIs [C++], calling", "ODBC classes [C++], vs. ODBC API", "direct ODBC API calls", "catalog functions (ODBC)", "catalog functions (ODBC), calling", "ODBC [C++], API functions"]
 ms.assetid: 4295f1d9-4528-4d2e-bd6a-c7569953c7fa
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ODBC: Calling ODBC API Functions Directly
 The database classes provide a simpler interface to a [data source](../../data/odbc/data-source-odbc.md) than does ODBC. As a result, the classes do not encapsulate all the ODBC API. For any functionality that falls outside the abilities of the classes, you must call ODBC API functions directly. For example, you must call the ODBC catalog functions (**::SQLColumns**, **::SQLProcedures**, **::SQLTables**, and others) directly.  

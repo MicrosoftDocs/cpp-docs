@@ -4,60 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "lgamma"
-  - "lgammaf"
-  - "lgammal"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["lgamma", "lgammaf", "lgammal"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "lgamma"
-  - "lgammaf"
-  - "lgammal"
-  - "math/lgamma"
-  - "math/lgammaf"
-  - "math/lgammal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lgamma function"
-  - "lgammal function"
-  - "lgammaf function"
+f1_keywords: ["lgamma", "lgammaf", "lgammal", "math/lgamma", "math/lgammaf", "math/lgammal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lgamma function", "lgammal function", "lgammaf function"]
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # lgamma, lgammaf, lgammal
 Determines the natural logarithm of the absolute value of the gamma function of the specified value.  

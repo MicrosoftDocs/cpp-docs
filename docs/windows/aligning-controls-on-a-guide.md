@@ -4,43 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DLUs (dialog units)"
-  - "controls [C++], aligning"
-  - "Dialog editor, snap to guides"
-  - "guides, tick mark interval"
-  - "dialog box controls, placement"
-  - "guides, aligning controls"
-  - "dialog units (DLUs)"
-  - "snap to guides (Dialog editor)"
-  - "controls [C++], sizing"
-  - "tick mark interval in Dialog editor"
-  - "controls [C++], snap to guides/grid"
+dev_langs: ["C++"]
+helpviewer_keywords: ["DLUs (dialog units)", "controls [C++], aligning", "Dialog editor, snap to guides", "guides, tick mark interval", "dialog box controls, placement", "guides, aligning controls", "dialog units (DLUs)", "snap to guides (Dialog editor)", "controls [C++], sizing", "tick mark interval in Dialog editor", "controls [C++], snap to guides/grid"]
 ms.assetid: 17db84ba-5288-4478-be57-afa748aa6447
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Aligning Controls on a Guide
 The sizing handles of controls snap to guides when the controls are moved, and guides snap to controls (if there are no controls previously snapped to the guide). When a guide is moved, controls that are snapped to it move as well. Controls snapped to more than one guide are resized when one of the guides is moved.  

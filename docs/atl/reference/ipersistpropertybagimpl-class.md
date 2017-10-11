@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IPersistPropertyBagImpl', 'ATLCOM/ATL::IPersistPropertyBagImpl', 'ATLCOM/ATL::IPersistPropertyBagImpl::GetClassID', 'ATLCOM/ATL::IPersistPropertyBagImpl::InitNew', 'ATLCOM/ATL::IPersistPropertyBagImpl::Load', 'ATLCOM/ATL::IPersistPropertyBagImpl::Save']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IPersistPropertyBagImpl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IPersistPropertyBagImpl class"]
 ms.assetid: 712af24d-99f8-40f2-9811-53b3ff6e5b19
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IPersistPropertyBagImpl Class
 This class implements **IUnknown** and allows an object to save its properties to a client-supplied property bag.  

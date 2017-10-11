@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.classes.member.function"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "member functions, adding to classes"
-  - "classes [C++], adding members"
+f1_keywords: ["vc.codewiz.classes.member.function"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["member functions, adding to classes", "classes [C++], adding members"]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Adding a Member Function (Visual C++)
 In **Class View**, you can add a member function to any class. When you do this, a declaration is added to the header file, and a stub member-function body is added to the class's implementation file, which you can then modify.  

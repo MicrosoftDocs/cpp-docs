@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4394"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4394"
+f1_keywords: ["C4394"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4394"]
 ms.assetid: 5de94de0-17e3-4e7c-92f4-5c3c1b825120
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning C4394
 'function' : per-appdomain symbol should not be marked with __declspec(dllexport)  

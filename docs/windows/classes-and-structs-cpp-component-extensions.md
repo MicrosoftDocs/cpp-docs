@@ -4,47 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "public"
-  - "ref struct"
-  - "value_CPP"
-  - "ref class"
-  - "value struct"
-  - "ref struct_cpp"
-  - "ref class_cpp"
-  - "value class_cpp"
-  - "value struct_cpp"
-  - "value class"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ref class keyword [C++]"
-  - "value class keyword [C++]"
-  - "value struct keyword [C++]"
-  - "ref struct keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ref class keyword [C++]", "value class keyword [C++]", "value struct keyword [C++]", "ref struct keyword [C++]"]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
 caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Classes and Structs  (C++ Component Extensions)
 Declares a class or struct whose *object lifetime* is administered automatically. When the object is no longer accessible or goes out of scope, Visual C++ automatically discards the memory that is allocated to the object.  

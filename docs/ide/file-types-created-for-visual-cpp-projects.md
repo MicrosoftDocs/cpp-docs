@@ -4,44 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "header files [C++], Visual C++ projects"
-  - "ActiveX controls [C++], Help files"
-  - "def files"
-  - "project items [C++], files"
-  - "Visual C++ projects, files and directories"
-  - "resource files, created by wizard"
-  - "files [C++], extensions"
-  - "Help files, for ActiveX controls"
-  - "Web projects [C++], adding items"
-  - ".def files"
-  - "licensing ActiveX controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["header files [C++], Visual C++ projects", "ActiveX controls [C++], Help files", "def files", "project items [C++], files", "Visual C++ projects, files and directories", "resource files, created by wizard", "files [C++], extensions", "Help files, for ActiveX controls", "Web projects [C++], adding items", ".def files", "licensing ActiveX controls"]
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # File Types Created for Visual C++ Projects
 This topic describes all the types of files that are associated with Visual C++ projects for classic desktop applications. The actual files included in your project depend on the project type and the options you select when using a wizard.  

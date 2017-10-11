@@ -4,57 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "assert"
-  - "_assert"
-  - "_wassert"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+apiname: ["assert", "_assert", "_wassert"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "assert"
-  - "_assert"
-  - "_wassert"
-  - "assert/_wassert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "aborting programs"
-  - "assert function"
-  - "assert macro"
+f1_keywords: ["assert", "_assert", "_wassert", "assert/_wassert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["aborting programs", "assert function", "assert macro"]
 ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # assert Macro, _assert, _wassert
 Evaluates an expression and, when the result is `false`, prints a diagnostic message and aborts the program.  

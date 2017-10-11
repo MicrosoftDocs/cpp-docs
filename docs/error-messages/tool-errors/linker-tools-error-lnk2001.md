@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "05/17/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "LNK2001"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LNK2001"
+f1_keywords: ["LNK2001"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LNK2001"]
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Linker Tools Error LNK2001
 unresolved external symbol "*symbol*"  

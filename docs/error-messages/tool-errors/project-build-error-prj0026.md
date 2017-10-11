@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "PRJ0026"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PRJ0026"
+f1_keywords: ["PRJ0026"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["PRJ0026"]
 ms.assetid: c52bc9b5-8b22-4015-b477-8645ae56c489
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Project Build Error PRJ0026
 Response file 'file' contains Unicode contents that could not be translated to user's ANSI code page.  

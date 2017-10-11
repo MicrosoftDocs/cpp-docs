@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "clients, creating"
-  - "OLE DB consumers, implementing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["clients, creating", "OLE DB consumers, implementing"]
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Implementing a Simple Consumer
 The following topics show how to edit the files created by the MFC Application Wizard and ATL OLE DB Consumer Wizard to create a simple consumer. This example has the following parts:  

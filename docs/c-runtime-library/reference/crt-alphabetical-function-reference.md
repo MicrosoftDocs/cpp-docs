@@ -4,32 +4,15 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.tables.runtime"
-dev_langs: 
-  - "C++"
+f1_keywords: ["vc.tables.runtime"]
+dev_langs: ["C++"]
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CRT Alphabetical Function Reference
 The C Run-Time (CRT) Library reference documentation is arranged alphabetically by routine. To find a CRT routine based on functionality, see [Run-Time Routines by Category](../../c-runtime-library/run-time-routines-by-category.md).  

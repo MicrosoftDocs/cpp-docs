@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['task_completion_event', 'PPLTASKS/concurrency::task_completion_event', 'PPLTASKS/concurrency::task_completion_event::task_completion_event', 'PPLTASKS/concurrency::task_completion_event::set', 'PPLTASKS/concurrency::task_completion_event::set_exception']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "task_completion_event class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["task_completion_event class"]
 ms.assetid: fb19ed98-f245-48dc-9ba5-487ba879b28a
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # task_completion_event Class
 The `task_completion_event` class allows you to delay the execution of a task until a condition is satisfied, or start a task in response to an external event.  

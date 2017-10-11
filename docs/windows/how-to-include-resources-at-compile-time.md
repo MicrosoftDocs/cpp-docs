@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vs.resvw.resource.including"
-  - "vc.resvw.resource.including"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "compiling source code, including resources"
-  - "comments [C++], compiled files"
-  - "resources [Visual Studio], including at compile time"
-  - "projects [C++], including resources"
-  - "#include directive"
-  - "include directive (#include)"
+f1_keywords: ["vs.resvw.resource.including", "vc.resvw.resource.including"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["compiling source code, including resources", "comments [C++], compiled files", "resources [Visual Studio], including at compile time", "projects [C++], including resources", "#include directive", "include directive (#include)"]
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Include Resources at Compile Time
 Normally it is easy and convenient to work with the default arrangement of all resources in one resource script (.rc) file. However, you can add resources in other files to your current project at compile time by listing them in the **Compile-time directives** box in the [Resource Includes dialog box](../windows/resource-includes-dialog-box.md).  

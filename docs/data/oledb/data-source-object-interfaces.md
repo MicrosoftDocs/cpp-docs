@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data source objects [C++], interfaces"
-  - "data source objects [C++]"
-  - "interfaces [C++], OLE DB"
-  - "interfaces [C++], list of"
-  - "OLE DB provider templates [C++], object interfaces"
-  - "OLE DB [C++], interfaces"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data source objects [C++], interfaces", "data source objects [C++]", "interfaces [C++], OLE DB", "interfaces [C++], list of", "OLE DB provider templates [C++], object interfaces", "OLE DB [C++], interfaces"]
 ms.assetid: 929e100c-c08c-4b64-8437-d8d1357226f6
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Data Source Object Interfaces
 The following table shows the mandatory and optional interfaces defined by OLE DB for a data source object.  

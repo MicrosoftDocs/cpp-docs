@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COM interfaces, COM map macros"
+f1_keywords: ["atlcom/ATL::BEGIN_COM_MAP", "atlcom/ATL::END_COM_MAP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COM interfaces, COM map macros"]
 ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # COM Map Macros
 These macros define COM interface maps.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.custom"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "custom attributes, defining"
+f1_keywords: ["vc-attr.custom"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["custom attributes, defining"]
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # custom (C++)
 Defines metadata for an object in the type library.  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__event_cpp"
-  - "__event"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__event keyword [C++]"
-  - "events [C++], __event"
+f1_keywords: ["__event_cpp", "__event"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__event keyword [C++]", "events [C++], __event"]
 ms.assetid: d3019b3e-722e-48df-8536-c05878461f9e
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # __event
 Declares an event.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::ClassFactory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ClassFactory class"
+f1_keywords: ["module/Microsoft::WRL::ClassFactory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ClassFactory class"]
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ClassFactory Class
 Implements the basic functionality of the IClassFactory interface.  

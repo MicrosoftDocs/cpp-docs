@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__svm_invlpga"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__svm_invlpga intrinsic"
-  - "INVLPGA instruction"
+f1_keywords: ["__svm_invlpga"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__svm_invlpga intrinsic", "INVLPGA instruction"]
 ms.assetid: aa6578ce-8278-464b-8815-a0fc45330915
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __svm_invlpga
 **Microsoft Specific**  

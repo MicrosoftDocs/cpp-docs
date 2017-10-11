@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pop-up menus, connecting to applications"
-  - "context menus, connecting to applications"
-  - "menus, pop-up"
-  - "shortcut menus, connecting to applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["pop-up menus, connecting to applications", "context menus, connecting to applications", "menus, pop-up", "shortcut menus, connecting to applications"]
 ms.assetid: 295cbf0e-6416-478e-bc3d-472fb98e0e52
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Connecting a Pop-up Menu to Your Application
 ### To connect a pop-up menu to your application  

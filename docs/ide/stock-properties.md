@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "stock properties, about stock properties"
-  - "stock properties"
+dev_langs: ["C++"]
+helpviewer_keywords: ["stock properties, about stock properties", "stock properties"]
 ms.assetid: a89fc454-0b8e-447a-9033-4c8af46a24d9
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Stock Properties
 If you are adding a property to an MFC dispinterface using the [Add Property Wizard](../ide/idl-attributes-add-property-wizard.md), you can choose a stock property from the **Property name** list in the [Names](../ide/names-add-property-wizard.md) page of the wizard. These properties are as follows:  

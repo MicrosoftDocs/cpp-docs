@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.bitmap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "bitmaps [C++]"
-  - "images [C++], creating"
-  - "resource toolbars"
-  - "resources [Visual Studio], creating images"
-  - "bitmaps [C++], creating"
-  - "graphics [C++], creating"
-  - "Image editor [C++], creating images"
+f1_keywords: ["vc.editors.bitmap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["bitmaps [C++]", "images [C++], creating", "resource toolbars", "resources [Visual Studio], creating images", "bitmaps [C++], creating", "graphics [C++], creating", "Image editor [C++], creating images"]
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Creating an Icon or Other Image (Image Editor for Icons)
 You can create a new image (bitmap, icon, cursor, or toolbar), then use the Image editor to customize its appearance. You can also create a new bitmap patterned after a [template](../windows/how-to-use-resource-templates.md).  

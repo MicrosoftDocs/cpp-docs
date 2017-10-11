@@ -4,68 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_isdigit_l"
-  - "iswdigit"
-  - "_iswdigit_l"
-  - "isdigit"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["_isdigit_l", "iswdigit", "_iswdigit_l", "isdigit"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_iswdigit_l"
-  - "_isdigit_l"
-  - "iswdigit"
-  - "isdigit"
-  - "_istdigit"
-  - "_istdigit_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "iswdigit function"
-  - "iswdigit_l function"
-  - "_iswdigit_l function"
-  - "_istdigit_l function"
-  - "_istdigit function"
-  - "istdigit function"
-  - "isdigit function"
-  - "isdigit_l function"
-  - "_ismbcdigit_l function"
-  - "_isdigit_l function"
+f1_keywords: ["_iswdigit_l", "_isdigit_l", "iswdigit", "isdigit", "_istdigit", "_istdigit_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["iswdigit function", "iswdigit_l function", "_iswdigit_l function", "_istdigit_l function", "_istdigit function", "istdigit function", "isdigit function", "isdigit_l function", "_ismbcdigit_l function", "_isdigit_l function"]
 ms.assetid: 350b0093-843a-47b0-954e-c1776e8a3853
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # isdigit, iswdigit, _isdigit_l, _iswdigit_l
 Determines whether an integer represents a decimal-digit character.  

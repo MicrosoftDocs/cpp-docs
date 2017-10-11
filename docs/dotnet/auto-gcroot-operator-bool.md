@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "auto_gcroot.operator bool"
-  - "auto_gcroot::operator bool"
-  - "msclr.auto_gcroot.operator bool"
-  - "msclr::auto_gcroot::operator bool"
-  - "operator bool"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "bool operator"
+f1_keywords: ["auto_gcroot.operator bool", "auto_gcroot::operator bool", "msclr.auto_gcroot.operator bool", "msclr::auto_gcroot::operator bool", "operator bool"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["bool operator"]
 ms.assetid: 87d38498-4221-4de8-8d02-c2dd2e6274ec
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # auto_gcroot::operator bool
 Operator for using `auto_gcroot` in a conditional expression.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C1016"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C1016"
+f1_keywords: ["C1016"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C1016"]
 ms.assetid: 33f45c3e-2d8f-43ad-a445-c412d1d54ce1
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Fatal Error C1016
 \#ifdef expected an identifier#ifndef expected an identifier  

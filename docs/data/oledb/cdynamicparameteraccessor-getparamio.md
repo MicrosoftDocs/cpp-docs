@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "GetParamIO"
-  - "CDynamicParameterAccessor::GetParamIO"
-  - "ATL.CDynamicParameterAccessor.GetParamIO"
-  - "CDynamicParameterAccessor.GetParamIO"
-  - "ATL::CDynamicParameterAccessor::GetParamIO"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetParamIO method"
+f1_keywords: ["GetParamIO", "CDynamicParameterAccessor::GetParamIO", "ATL.CDynamicParameterAccessor.GetParamIO", "CDynamicParameterAccessor.GetParamIO", "ATL::CDynamicParameterAccessor::GetParamIO"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetParamIO method"]
 ms.assetid: 9c485e39-c67e-4df7-a707-c773019c4d1e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDynamicParameterAccessor::GetParamIO
 Determines whether the specified parameter is an input or output parameter.  

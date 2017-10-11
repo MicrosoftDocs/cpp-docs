@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "value"
-  - "<value>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "value C++ XML tag"
-  - "<value> C++ XML tag"
+f1_keywords: ["value", "<value>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["value C++ XML tag", "<value> C++ XML tag"]
 ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;value&gt; (Visual C++)
 The \<value> tag lets you describe a property and property accessor methods. Note that when you add a property with a code wizard in the Visual Studio integrated development environment, it will add a [\<summary>](../ide/summary-visual-cpp.md) tag for the new property. You should then manually add a \<value> tag to describe the value that the property represents.  

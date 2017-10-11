@@ -4,52 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_aligned_offset_malloc_dbg"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_aligned_offset_malloc_dbg"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_aligned_offset_malloc_dbg"
-  - "aligned_offset_malloc_dbg"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_aligned_offset_malloc_dbg function"
-  - "aligned_offset_malloc_dbg function"
+f1_keywords: ["_aligned_offset_malloc_dbg", "aligned_offset_malloc_dbg"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_aligned_offset_malloc_dbg function", "aligned_offset_malloc_dbg function"]
 ms.assetid: 6c242307-c59e-4d63-aae5-d8cbec8e021c
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # _aligned_offset_malloc_dbg
 Allocates memory on a specified alignment boundary (debug version only).  

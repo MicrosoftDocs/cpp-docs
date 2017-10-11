@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "header files, C++ Standard Library"
-  - "wrappers"
-  - "headers, C++ Standard Library"
-  - "libraries, C++ header files"
-  - "C++ Standard Library, header files"
-  - "Visual C++, header files"
+dev_langs: ["C++"]
+helpviewer_keywords: ["header files, C++ Standard Library", "wrappers", "headers, C++ Standard Library", "libraries, C++ header files", "C++ Standard Library, header files", "Visual C++, header files"]
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
 caps.latest.revision: 36
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C++ Standard Library Header Files
 Header files for the C++ Standard Library and extensions, by category.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2675"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2675"
+f1_keywords: ["C2675"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2675"]
 ms.assetid: 4b92a12b-bff8-4dd5-a109-620065fc146c
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C2675
 unary 'operator' : 'type' does not define this operator or a conversion to a type acceptable to the predefined operator  

@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__incfsword"
-  - "__incfsbyte_cpp"
-  - "__incfsbyte"
-  - "__incfsdword"
-  - "__incfsword_cpp"
-  - "__incfsdword_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__incfsword intrinsic"
-  - "__incfsdword intrinsic"
-  - "__incfsbyte intrinsic"
+f1_keywords: ["__incfsword", "__incfsbyte_cpp", "__incfsbyte", "__incfsdword", "__incfsword_cpp", "__incfsdword_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__incfsword intrinsic", "__incfsdword intrinsic", "__incfsbyte intrinsic"]
 ms.assetid: 820457fb-e35e-42d3-bcb6-725da3281c64
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __incfsbyte, __incfsword, __incfsdword
 **Microsoft Specific**  

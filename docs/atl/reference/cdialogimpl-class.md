@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDialogImpl', 'ATLWIN/ATL::CDialogImpl', 'ATLWIN/ATL::Create', 'ATLWIN/ATL::DestroyWindow', 'ATLWIN/ATL::DoModal', 'ATLWIN/ATL::EndDialog', 'ATLWIN/ATL::GetDialogProc', 'ATLWIN/ATL::MapDialogRect', 'ATLWIN/ATL::OnFinalMessage', 'ATLWIN/ATL::DialogProc', 'ATLWIN/ATL::StartDialogProc']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog boxes, ATL"
-  - "CDialogImpl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["dialog boxes, ATL", "CDialogImpl class"]
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDialogImpl Class
 This class provides methods for creating a modal or modeless dialog box.  

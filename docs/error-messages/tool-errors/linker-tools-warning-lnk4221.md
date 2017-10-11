@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "LNK4221"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LNK4221"
+f1_keywords: ["LNK4221"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LNK4221"]
 ms.assetid: 8e2eb2de-9532-4b85-908a-8c9ff5c4cccb
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Linker Tools Warning LNK4221
 This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library  

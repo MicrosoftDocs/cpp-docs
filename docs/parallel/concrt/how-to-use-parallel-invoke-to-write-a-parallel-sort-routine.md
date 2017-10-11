@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "task_handle class, example"
-  - "task_group class, example"
-  - "make_task function, example"
-  - "structured_task_group class, example"
-  - "improving parallel performance with task groups [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["task_handle class, example", "task_group class, example", "make_task function, example", "structured_task_group class, example", "improving parallel performance with task groups [Concurrency Runtime]"]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Use parallel_invoke to Write a Parallel Sort Routine
 This document describes how to use the [parallel_invoke](../../parallel/concrt/parallel-algorithms.md#parallel_invoke) algorithm to improve the performance of the bitonic sort algorithm. The bitonic sort algorithm recursively divides the input sequence into smaller sorted partitions. The bitonic sort algorithm can run in parallel because each partition operation is independent of all other operations.  

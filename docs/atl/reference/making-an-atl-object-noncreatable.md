@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.appwiz.ATL.objects"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "noncreatable ATL objects"
-  - "ATL projects, noncreatable objects"
+f1_keywords: ["vc.appwiz.ATL.objects"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["noncreatable ATL objects", "ATL projects, noncreatable objects"]
 ms.assetid: 80d0bca2-dea0-4801-9a85-6243124437f6
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Making an ATL Object Noncreatable
 You can change the attributes of an ATL-based COM object so that a client cannot directly create the object. In this case, the object would be returned through a method call on another object rather than created directly.  

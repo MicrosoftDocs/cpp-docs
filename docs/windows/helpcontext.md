@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.helpcontext"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "helpcontext attribute"
+f1_keywords: ["vc-attr.helpcontext"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["helpcontext attribute"]
 ms.assetid: 6fbb022d-a4b7-4989-a02f-7f18a9b0ad96
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # helpcontext
 Specifies a context ID that lets the user view information about this element in the Help file.  

@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CTimeSpan', 'ATLTIME/ATL::CTimeSpan', 'ATLTIME/ATL::CTimeSpan::CTimeSpan', 'ATLTIME/ATL::CTimeSpan::Format', 'ATLTIME/ATL::CTimeSpan::GetDays', 'ATLTIME/ATL::CTimeSpan::GetHours', 'ATLTIME/ATL::CTimeSpan::GetMinutes', 'ATLTIME/ATL::CTimeSpan::GetSeconds', 'ATLTIME/ATL::CTimeSpan::GetTimeSpan', 'ATLTIME/ATL::CTimeSpan::GetTotalHours', 'ATLTIME/ATL::CTimeSpan::GetTotalMinutes', 'ATLTIME/ATL::CTimeSpan::GetTotalSeconds', 'ATLTIME/ATL::CTimeSpan::Serialize64']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "elapsed time, CTimeSpan object"
-  - "timespan"
-  - "time span"
-  - "CTimeSpan class"
-  - "shared classes, CTimeSpan"
-  - "time, elapsed"
+dev_langs: ["C++"]
+helpviewer_keywords: ["elapsed time, CTimeSpan object", "timespan", "time span", "CTimeSpan class", "shared classes, CTimeSpan", "time, elapsed"]
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CTimeSpan Class
 An amount of time, which is internally stored as the number of seconds in the time span.  

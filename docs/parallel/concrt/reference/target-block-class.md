@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['target_block', 'AGENTS/concurrency::target_block', 'AGENTS/concurrency::target_block::target_block', 'AGENTS/concurrency::target_block::propagate', 'AGENTS/concurrency::target_block::send', 'AGENTS/concurrency::target_block::async_send', 'AGENTS/concurrency::target_block::decline_incoming_messages', 'AGENTS/concurrency::target_block::enable_batched_processing', 'AGENTS/concurrency::target_block::initialize_target', 'AGENTS/concurrency::target_block::link_source', 'AGENTS/concurrency::target_block::process_input_messages', 'AGENTS/concurrency::target_block::process_message', 'AGENTS/concurrency::target_block::propagate_message', 'AGENTS/concurrency::target_block::register_filter', 'AGENTS/concurrency::target_block::remove_sources', 'AGENTS/concurrency::target_block::send_message', 'AGENTS/concurrency::target_block::sync_send', 'AGENTS/concurrency::target_block::unlink_source', 'AGENTS/concurrency::target_block::unlink_sources', 'AGENTS/concurrency::target_block::wait_for_async_sends']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "target_block class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["target_block class"]
 ms.assetid: 3ce181b4-b94a-4894-bf7b-64fc09821f9f
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # target_block Class
 The `target_block` class is an abstract base class that provides basic link management functionality and error checking for target only blocks.  

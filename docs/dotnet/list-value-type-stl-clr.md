@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::list::value_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "value_type member [STL/CLR]"
+f1_keywords: ["cliext::list::value_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["value_type member [STL/CLR]"]
 ms.assetid: 7013f92e-8ceb-4c99-bb44-6ba13b0d3ef3
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # list::value_type (STL/CLR)
 The type of an element.  

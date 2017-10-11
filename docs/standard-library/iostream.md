@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["<iostream>", "iostream/std::cerr", "iostream/std::cin", "iostream/std::clog", "iostream/std::cout", "iostream/std::wcerr", "iostream/std::wcin", "iostream/std::wclog", "iostream/std::wcout]
+f1_keywords: ["<iostream>", "iostream/std::cerr", "iostream/std::cin", "iostream/std::clog", "iostream/std::cout", "iostream/std::wcerr", "iostream/std::wcin", "iostream/std::wclog", "iostream/std::wcout"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["iostream header"]
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
@@ -15,7 +15,6 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;iostream&gt;
 Declares objects that control reading from and writing to the standard streams. This is often the only header you need to include to perform input and output from a C++ program.  

@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [C++], troubleshooting"
-  - "troubleshooting controls"
-  - "Dialog editor, troubleshooting"
-  - "troubleshooting Dialog editor"
-  - "dialog boxes, troubleshooting"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [C++], troubleshooting", "troubleshooting controls", "Dialog editor, troubleshooting", "troubleshooting Dialog editor", "dialog boxes, troubleshooting"]
 ms.assetid: 21882868-5ac4-4a41-a4a6-eaaa059402ea
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Troubleshooting the Dialog Editor
 Below are a few issues of which you should be aware when working in the Dialog editor.  

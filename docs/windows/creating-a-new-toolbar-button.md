@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.toolbar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Toolbar editor, creating buttons"
-  - "toolbar buttons (in Toolbar editor), button image"
-  - "toolbar buttons (in Toolbar editor), creating"
-  - "toolbar buttons (in Toolbar editor)"
+f1_keywords: ["vc.editors.toolbar"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Toolbar editor, creating buttons", "toolbar buttons (in Toolbar editor), button image", "toolbar buttons (in Toolbar editor), creating", "toolbar buttons (in Toolbar editor)"]
 ms.assetid: 46c120fe-4f2a-4887-a08f-bd1fea04b3f4
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Creating a New Toolbar Button
 ### To create a new toolbar button  

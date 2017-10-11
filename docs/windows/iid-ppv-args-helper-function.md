@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "client/IID_PPV_ARGS_Helper"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IID_PPV_ARGS_Helper function"
+f1_keywords: ["client/IID_PPV_ARGS_Helper"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IID_PPV_ARGS_Helper function"]
 ms.assetid: afee9b23-8df1-4575-903f-e9ba748418f0
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # IID_PPV_ARGS_Helper Function
 Verifies that the type of the specified argument derives from the `IUnknown` interface.  

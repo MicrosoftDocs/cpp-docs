@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CRBTree', 'ATLCOLL/ATL::CRBTree', 'ATLCOLL/ATL::CRBTree::KINARGTYPE', 'ATLCOLL/ATL::CRBTree::KOUTARGTYPE', 'ATLCOLL/ATL::CRBTree::VINARGTYPE', 'ATLCOLL/ATL::CRBTree::VOUTARGTYPE', 'ATLCOLL/ATL::CRBTree::FindFirstKeyAfter', 'ATLCOLL/ATL::CRBTree::GetAt', 'ATLCOLL/ATL::CRBTree::GetCount', 'ATLCOLL/ATL::CRBTree::GetHeadPosition', 'ATLCOLL/ATL::CRBTree::GetKeyAt', 'ATLCOLL/ATL::CRBTree::GetNext', 'ATLCOLL/ATL::CRBTree::GetNextAssoc', 'ATLCOLL/ATL::CRBTree::GetNextKey', 'ATLCOLL/ATL::CRBTree::GetNextValue', 'ATLCOLL/ATL::CRBTree::GetPrev', 'ATLCOLL/ATL::CRBTree::GetTailPosition', 'ATLCOLL/ATL::CRBTree::GetValueAt', 'ATLCOLL/ATL::CRBTree::IsEmpty', 'ATLCOLL/ATL::CRBTree::RemoveAll', 'ATLCOLL/ATL::CRBTree::RemoveAt', 'ATLCOLL/ATL::CRBTree::SetValueAt']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRBTree class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRBTree class"]
 ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CRBTree Class
 This class provides methods for creating and utilizing a Red-Black tree.  

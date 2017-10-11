@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "redistributing database support files"
-  - "database support files [C++], redistributing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["redistributing database support files", "database support files [C++], redistributing"]
 ms.assetid: d80cffe0-177c-4515-9de7-fbf0517eb8d6
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Redistributing Database Support Files
 You can redistribute support files for Data Access Objects (DAO) and for the database technologies in the Microsoft Data Access SDK.  

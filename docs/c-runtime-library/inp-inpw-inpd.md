@@ -4,59 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_inp"
-  - "_inpw"
-  - "_inpd"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr120.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr80.dll"
-  - "msvcr100.dll"
-  - "msvcr90.dll"
+apiname: ["_inp", "_inpw", "_inpd"]
+apilocation: ["msvcrt.dll", "msvcr120.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "inpd"
-  - "_inp"
-  - "_inpw"
-  - "_inpd"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "inp function"
-  - "inpw function"
-  - "ports, I/O routines"
-  - "inpd function"
-  - "_inp function"
-  - "_inpd function"
-  - "I/O [CRT], port"
-  - "_inpw function"
+f1_keywords: ["inpd", "_inp", "_inpw", "_inpd"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["inp function", "inpw function", "ports, I/O routines", "inpd function", "_inp function", "_inpd function", "I/O [CRT], port", "_inpw function"]
 ms.assetid: 5d9c2e38-fc85-4294-86d5-7282cc02d1b3
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # _inp, _inpw, _inpd
 Inputs, from a port, a byte (`_inp`), a word (`_inpw`), or a double word (`_inpd`).  

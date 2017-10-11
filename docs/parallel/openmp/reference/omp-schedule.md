@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "OMP_SCHEDULE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OMP_SCHEDULE OpenMP environment variable"
+f1_keywords: ["OMP_SCHEDULE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OMP_SCHEDULE OpenMP environment variable"]
 ms.assetid: 2295a801-e584-4d2f-826f-7ca4c88846a6
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # OMP_SCHEDULE
 Modifies the behavior of the [schedule](../../../parallel/openmp/reference/schedule.md) clause when `schedule(runtime)` is specified in a `for` or `parallel for` directive.  

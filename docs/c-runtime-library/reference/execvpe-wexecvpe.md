@@ -4,57 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_execvpe"
-  - "_wexecvpe"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-process-l1-1-0.dll"
+apiname: ["_execvpe", "_wexecvpe"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wexecvpe"
-  - "execvpe"
-  - "_wexecvpe"
-  - "_execvpe"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wexecvpe function"
-  - "execvpe function"
-  - "_wexecvpe function"
-  - "_execvpe function"
+f1_keywords: ["wexecvpe", "execvpe", "_wexecvpe", "_execvpe"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wexecvpe function", "execvpe function", "_wexecvpe function", "_execvpe function"]
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _execvpe, _wexecvpe
 Loads and runs new child processes.  

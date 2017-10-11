@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__alignof"
-  - "alignof"
-  - "alignas"
-  - "__alignof_cpp"
-  - "alignof_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "alignas"
-  - "alignment of structures"
-  - "__alignof keyword [C++]"
-  - "alignof"
-  - "types [C++], alignment requirements"
+f1_keywords: ["alignas_cpp", "__alignof_cpp", "alignof_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["alignas [C++]", "alignment of structures", "__alignof keyword [C++]", "alignof [C++]", "types [C++], alignment requirements"]
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # __alignof Operator
 C++11 introduces the `alignof` operator that returns the alignment, in bytes, of the specified type. For maximum portability, you should use the alignof operator instead of the Microsoft-specific __alignof operator.  

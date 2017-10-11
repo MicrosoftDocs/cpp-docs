@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB consumer templates, table support"
-  - "CCommand class, OLE DB consumer templates"
-  - "commands [C++], OLE DB Consumer Templates"
-  - "CTable class"
-  - "CAccessorRowset class, command and table classes"
-  - "rowsets, accessing"
-  - "tables [C++], OLE DB Consumer Templates"
-  - "OLE DB consumer templates, command support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB consumer templates, table support", "CCommand class, OLE DB consumer templates", "commands [C++], OLE DB Consumer Templates", "CTable class", "CAccessorRowset class, command and table classes", "rowsets, accessing", "tables [C++], OLE DB Consumer Templates", "OLE DB consumer templates, command support"]
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Commands and Tables
 Commands and tables allow you to access rowsets; that is, open rowsets, execute commands, and bind columns. The [CCommand](../../data/oledb/ccommand-class.md) and [CTable](../../data/oledb/ctable-class.md) classes instantiate the command and table objects, respectively. These classes derive from [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) as shown in the following figure.  

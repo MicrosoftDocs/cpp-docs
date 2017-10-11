@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "09/15/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2482"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2482"
+f1_keywords: ["C2482"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2482"]
 ms.assetid: 98c87da2-625c-4cc2-9bf7-78d15921e779
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C2482
 

@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.default"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "default attribute"
-  - "attributes [C#], default attribute"
-  - "defaults, default attribute"
+f1_keywords: ["vc-attr.default"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["default attribute", "attributes [C#], default attribute", "defaults, default attribute"]
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # default (C++)
 Indicates that the custom or dispinterface defined within a coclass represents the default programmability interface.  

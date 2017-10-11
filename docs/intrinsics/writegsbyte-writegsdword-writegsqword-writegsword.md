@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__writegsbyte"
-  - "__writegsqword"
-  - "__writegsdword"
-  - "__writegsword"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__writegsqword intrinsic"
-  - "__writegsbyte intrinsic"
-  - "__writegsword intrinsic"
-  - "__writegsdword intrinsic"
+f1_keywords: ["__writegsbyte", "__writegsqword", "__writegsdword", "__writegsword"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__writegsqword intrinsic", "__writegsbyte intrinsic", "__writegsword intrinsic", "__writegsdword intrinsic"]
 ms.assetid: 7746cf6d-2259-4139-9aab-c07dd75c8037
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __writegsbyte, __writegsdword, __writegsqword, __writegsword
 **Microsoft Specific**  

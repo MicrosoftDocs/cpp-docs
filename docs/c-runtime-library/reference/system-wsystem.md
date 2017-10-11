@@ -4,58 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "system"
-  - "_wsystem"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+apiname: ["system", "_wsystem"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tsystem"
-  - "_wsystem"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wsystem function"
-  - "wsystem function"
-  - "tsystem function"
-  - "_tsystem function"
-  - "system function"
-  - "commands, executing"
-  - "command interpreter"
+f1_keywords: ["_tsystem", "_wsystem"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wsystem function", "wsystem function", "tsystem function", "_tsystem function", "system function", "commands, executing", "command interpreter"]
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # system, _wsystem
 Executes a command.  

@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IRowsetImpl::AddRefRows"
-  - "AddRefRows"
-  - "IRowsetImpl.AddRefRows"
-  - "ATL::IRowsetImpl::AddRefRows"
-  - "ATL.IRowsetImpl.AddRefRows"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "AddRefRows method"
+f1_keywords: ["IRowsetImpl::AddRefRows", "AddRefRows", "IRowsetImpl.AddRefRows", "ATL::IRowsetImpl::AddRefRows", "ATL.IRowsetImpl.AddRefRows"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["AddRefRows method"]
 ms.assetid: adc0989b-7592-432e-82d9-df4445431531
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IRowsetImpl::AddRefRows
 Adds a reference count to an existing row handle.  

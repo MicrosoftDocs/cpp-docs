@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3421"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3421"
+f1_keywords: ["C3421"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3421"]
 ms.assetid: b52050c6-17a4-424a-8894-337b0cec7010
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3421
 'type' : you cannot call the finalizer for this class as it is either inaccessible or it does not exist  

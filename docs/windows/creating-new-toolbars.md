@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.toolbar"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "toolbars [C++], creating"
-  - "Toolbar editor, creating new toolbars"
-  - "Insert Resource"
+f1_keywords: ["vc.editors.toolbar"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["toolbars [C++], creating", "Toolbar editor, creating new toolbars", "Insert Resource"]
 ms.assetid: 1b28264b-0718-4df8-9f65-979805d2efef
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Creating New Toolbars
 ### To create a new toolbar  

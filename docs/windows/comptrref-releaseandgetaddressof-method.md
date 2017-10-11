@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "client/Microsoft::WRL::Details::ComPtrRef::ReleaseAndGetAddressOf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ReleaseAndGetAddressOf method"
+f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef::ReleaseAndGetAddressOf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ReleaseAndGetAddressOf method"]
 ms.assetid: 004aac42-e135-41ce-8d1d-4c5969d55004
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ComPtrRef::ReleaseAndGetAddressOf Method
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

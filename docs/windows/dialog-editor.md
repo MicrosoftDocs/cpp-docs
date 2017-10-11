@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.dialog.dialog"
-  - "vc.editors.dialog.F1"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resource editors, Dialog editor"
-  - "editors, dialog boxes"
-  - "Dialog editor"
-  - "dialog boxes, editing"
+f1_keywords: ["vc.editors.dialog.dialog", "vc.editors.dialog.F1"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resource editors, Dialog editor", "editors, dialog boxes", "Dialog editor", "dialog boxes, editing"]
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Dialog Editor
 The Dialog editor allows you to create or edit dialog box resources. You open the dialog editor by double-clicking on a dialog’s .rc file in the Resource View window (**View &#124; Resource View**). Note that Resource View is not available in Express editions.  

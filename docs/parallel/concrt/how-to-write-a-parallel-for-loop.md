@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "writing a parallel_for loop [Concurrency Runtime]"
-  - "parallel_for function, example"
+dev_langs: ["C++"]
+helpviewer_keywords: ["writing a parallel_for loop [Concurrency Runtime]", "parallel_for function, example"]
 ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Write a parallel_for Loop
 This example demonstrates how to use [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) to compute the product of two matrices.  

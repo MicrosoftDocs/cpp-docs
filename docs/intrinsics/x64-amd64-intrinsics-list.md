@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cl-exe compiler, intrinsics"
-  - "intrinsics, x64"
-  - "intrinsics, amd64"
+dev_langs: ["C++"]
+helpviewer_keywords: ["cl-exe compiler, intrinsics", "intrinsics, x64", "intrinsics, amd64"]
 ms.assetid: a2b65471-f1db-426c-8464-eff4a3761dee
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # x64 (amd64) Intrinsics List
 This document lists intrinsics that the Visual C++ compiler supports when x64 (also referred to as amd64) is targeted.  

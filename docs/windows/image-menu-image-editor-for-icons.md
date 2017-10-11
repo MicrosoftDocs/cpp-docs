@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.bitmap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Image menu"
+f1_keywords: ["vc.editors.bitmap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Image menu"]
 ms.assetid: ac2b4d53-1919-4fd1-a0af-d3c085c45af2
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Image Menu (Image Editor for Icons)
 The Image menu, which appears only when the Image editor is active, has commands for editing images, managing color palettes, and setting Image Editor window options. In addition, commands for using device images are available when working with icons and cursors.  

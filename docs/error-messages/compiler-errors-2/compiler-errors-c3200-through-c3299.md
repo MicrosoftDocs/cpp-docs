@@ -4,63 +4,17 @@ ms.custom: ""
 ms.date: "04/21/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3220"
-  - "C3221"
-  - "C3245"
-  - "C3249"
-  - "C3250"
-  - "C3256"
-  - "C3257"
-  - "C3258"
-  - "C3259"
-  - "C3260"
-  - "C3261"
-  - "C3263"
-  - "C3267"
-  - "C3281"
-  - "C3294"
-helpviewer_keywords: 
-  - "C3220"
-  - "C3221"
-  - "C3245"
-  - "C3249"
-  - "C3250"
-  - "C3256"
-  - "C3257"
-  - "C3258"
-  - "C3259"
-  - "C3260"
-  - "C3261"
-  - "C3263"
-  - "C3267"
-  - "C3281"
-  - "C3294"
-dev_langs: 
-  - "C++"
+f1_keywords: ["C3220", "C3221", "C3245", "C3249", "C3250", "C3256", "C3257", "C3258", "C3259", "C3260", "C3261", "C3263", "C3267", "C3281", "C3294"]
+helpviewer_keywords: ["C3220", "C3221", "C3245", "C3249", "C3250", "C3256", "C3257", "C3258", "C3259", "C3260", "C3261", "C3263", "C3267", "C3281", "C3294"]
+dev_langs: ["C++"]
 ms.assetid: 6b3104f6-63bc-4823-b6f3-b8a16be4b87f
 caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Errors C3200 Through C3299
 The articles in this part of the documentation contain information about a subsection of the Visual C++ compiler errors. You can access the information here or, in the **Output** window in Visual Studio, you can select an error number and then choose the F1 key.  

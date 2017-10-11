@@ -4,60 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mktime32"
-  - "mktime"
-  - "_mktime64"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+apiname: ["_mktime32", "mktime", "_mktime64"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mktime"
-  - "_mktime64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mktime32 function"
-  - "mktime function"
-  - "time functions"
-  - "mktime64 function"
-  - "converting times"
-  - "mktime32 function"
-  - "_mktime64 function"
-  - "time, converting"
+f1_keywords: ["mktime", "_mktime64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mktime32 function", "mktime function", "time functions", "mktime64 function", "converting times", "mktime32 function", "_mktime64 function", "time, converting"]
 ms.assetid: 284ed5d4-7064-48a2-bd50-15effdae32cf
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # mktime, _mktime32, _mktime64
 Convert the local time to a calendar value.  

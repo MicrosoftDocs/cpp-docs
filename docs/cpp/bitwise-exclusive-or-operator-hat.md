@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C++], bitwise"
-  - "exclusive OR operator"
-  - "XOR operator"
-  - "bitwise operators, OR operator"
-  - "^ operator"
-  - "OR operator, bitwise exclusive"
-  - "operators [C++], logical"
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C++], bitwise", "exclusive OR operator", "XOR operator", "bitwise operators [C++], OR operator", "^ operator", "OR operator [C++], bitwise exclusive", "operators [C++], logical"]
 ms.assetid: f9185d85-65d5-4f64-a6d6-679758d52217
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Bitwise Exclusive OR Operator: ^
 ## Syntax  

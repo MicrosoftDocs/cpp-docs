@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C2251"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2251"
+f1_keywords: ["C2251"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2251"]
 ms.assetid: fefe050c-f8d3-4316-b237-8007dbcdd3bf
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C2251
 namespace 'namespace' does not have a member 'member' - Did you mean 'member'?  

@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CA2CAEX', 'ATLCONV/ATL::CA2CAEX', 'ATLCONV/ATL::CA2CAEX::CA2CAEX', 'ATLCONV/ATL::CA2CAEX::m_psz']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CA2CAEX class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CA2CAEX class"]
 ms.assetid: 388e7c1d-a144-474c-a182-b15f69a74bd8
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CA2CAEX Class
 This class is used by string conversion macros `CA2CTEX` and `CT2CAEX`, and the typedef **CA2CA**.  

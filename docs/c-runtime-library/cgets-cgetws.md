@@ -4,55 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_cgetws"
-  - "_cgets"
-apilocation: 
-  - "msvcr100.dll"
-  - "msvcr110.dll"
-  - "msvcr80.dll"
-  - "msvcr120.dll"
-  - "msvcr90.dll"
-  - "msvcrt.dll"
-  - "msvcr110_clr0400.dll"
+apiname: ["_cgetws", "_cgets"]
+apilocation: ["msvcr100.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "cgetws"
-  - "_cgetws"
-  - "_cgets"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_cgetws function"
-  - "strings [C++], getting from console"
-  - "console, getting strings from"
-  - "_cgets function"
-  - "cgetws function"
-  - "cgets function"
+f1_keywords: ["cgetws", "_cgetws", "_cgets"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_cgetws function", "strings [C++], getting from console", "console, getting strings from", "_cgets function", "cgetws function", "cgets function"]
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # _cgets, _cgetws
 Gets a character string from the console. More secure versions of these functions are available; see [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md).  

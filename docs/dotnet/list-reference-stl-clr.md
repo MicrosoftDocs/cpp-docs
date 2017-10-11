@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::list::reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reference member [STL/CLR]"
+f1_keywords: ["cliext::list::reference"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["reference member [STL/CLR]"]
 ms.assetid: 318a4566-63f2-4744-8e06-14f7c5608d82
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # list::reference (STL/CLR)
 The type of a reference to an element.  

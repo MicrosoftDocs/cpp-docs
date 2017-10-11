@@ -9,13 +9,12 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["vector<bool>", "vector/std::vector::const_pointer", "vector/std::vector::const_reference", "vector/std::vector::pointer", "vector/std::vector::flip", "vector/std::vector::swap"]
 dev_langs: ["C++"]
-helpviewer_keywords: , "std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], pointer", "std::vector [C++], flip", "std::vector [C++], swap"]
+helpviewer_keywords: ["std::vector [C++], const_pointer", "std::vector [C++], const_reference", "std::vector [C++], pointer", "std::vector [C++], flip", "std::vector [C++], swap"]
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # vector&lt;bool&gt; Class
 The `vector<bool>` class is a partial specialization of [vector](../standard-library/vector-class.md) for elements of type `bool`. It has an allocator for the underlying type that's used by the specialization, which provides space optimization by storing one `bool` value per bit.  

@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Dialog editor, selecting controls"
-  - "dialog box controls, selecting in editor"
-  - "controls [C++], selecting"
-  - "controls [C++], removing from groups"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Dialog editor, selecting controls", "dialog box controls, selecting in editor", "controls [C++], selecting", "controls [C++], removing from groups"]
 ms.assetid: efbdbade-0a3a-4328-b36e-a6376c06e8de
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Selecting Multiple Controls
 ### To select multiple controls  

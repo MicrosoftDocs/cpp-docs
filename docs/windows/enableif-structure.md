@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "internal/Microsoft::WRL::Details::EnableIf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EnableIf structure"
+f1_keywords: ["internal/Microsoft::WRL::Details::EnableIf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EnableIf structure"]
 ms.assetid: 7825b283-e6b2-4f39-a4b9-c03bcd431b8e
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # EnableIf Structure
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

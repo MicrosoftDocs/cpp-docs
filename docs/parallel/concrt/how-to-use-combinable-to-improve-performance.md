@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "combinable class, example"
-  - "improving parallel performance with combinable [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["combinable class, example", "improving parallel performance with combinable [Concurrency Runtime]"]
 ms.assetid: fa730580-1c94-4b2d-8aec-57c91dc0497e
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Use combinable to Improve Performance
 This example shows how to use the [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class to compute the sum of the numbers in a [std::array](../../standard-library/array-class-stl.md) object that are prime. The `combinable` class improves performance by eliminating shared state.  

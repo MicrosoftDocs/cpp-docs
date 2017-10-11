@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ODBC recordsets, dynasets"
-  - "ODBC cursor library [ODBC], dynasets"
-  - "keyset-driven cursors in dynasets"
-  - "cursors [ODBC], keyset-driven cursors in dynasets"
-  - "cursor library [ODBC], dynaset availability"
-  - "recordsets [C++], dynasets"
-  - "dynasets"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ODBC recordsets, dynasets", "ODBC cursor library [ODBC], dynasets", "keyset-driven cursors in dynasets", "cursors [ODBC], keyset-driven cursors in dynasets", "cursor library [ODBC], dynaset availability", "recordsets [C++], dynasets", "dynasets"]
 ms.assetid: 2867e6be-208e-4fe7-8bbe-b8697cb1045c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Dynaset
 This topic describes dynasets and discusses their [availability](#_core_availability_of_dynasets).  

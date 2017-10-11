@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C1206"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C1206"
+f1_keywords: ["C1206"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C1206"]
 ms.assetid: 2211428f-ad86-4f7b-82eb-f1ba89b0510e
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Fatal Error C1206
 Per-appdomain data is not supported by the version of the runtime installed  

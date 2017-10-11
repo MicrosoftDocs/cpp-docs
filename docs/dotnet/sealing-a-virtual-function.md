@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sealed keyword [C++]"
-  - "derived classes, virtual functions"
-  - "virtual functions, sealing"
-  - "__sealed keyword"
+dev_langs: ["C++"]
+helpviewer_keywords: ["sealed keyword [C++]", "derived classes, virtual functions", "virtual functions, sealing", "__sealed keyword"]
 ms.assetid: 0e9fae03-6425-4512-9a24-8ccb6dc8a0d4
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Sealing a Virtual Function
 The syntax for sealing a virtual function has changed from Managed Extensions for C++ to Visual C++.  

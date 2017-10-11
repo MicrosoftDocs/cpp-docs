@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.dialog.dialog"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dialog boxes, adding controls to"
-  - "dialog box controls, adding to dialog boxes"
-  - "controls [C++], adding to dialog boxes"
+f1_keywords: ["vc.editors.dialog.dialog"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["dialog boxes, adding controls to", "dialog box controls, adding to dialog boxes", "controls [C++], adding to dialog boxes"]
 ms.assetid: b2a26d19-093f-49ca-93da-fef00dfbb381
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Adding a Control to a Dialog Box
 ### To add a control to a dialog box  

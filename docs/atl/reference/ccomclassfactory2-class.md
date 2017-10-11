@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComClassFactory2', 'ATLCOM/ATL::CComClassFactory2', 'ATLCOM/ATL::CComClassFactory2::CreateInstance', 'ATLCOM/ATL::CComClassFactory2::CreateInstanceLic', 'ATLCOM/ATL::CComClassFactory2::GetLicInfo', 'ATLCOM/ATL::CComClassFactory2::LockServer', 'ATLCOM/ATL::CComClassFactory2::RequestLicKey']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComClassFactory2 class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComClassFactory2 class"]
 ms.assetid: 19b66fd6-b9ed-47a0-822c-8132184f5a3e
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComClassFactory2 Class
 This class implements the [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) interface.  

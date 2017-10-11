@@ -4,67 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "logb"
-  - "_logb"
-  - "_logbl"
-  - "logbf"
-  - "logbl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["logb", "_logb", "_logbl", "logbf", "logbl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "logb"
-  - "logbl"
-  - "_logb"
-  - "_logbf"
-  - "logbf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_logbf function"
-  - "mantissas, floating-point variables"
-  - "logbf function"
-  - "_logb function"
-  - "exponent, floating-point numbers"
-  - "logbl function"
-  - "logb function"
-  - "floating-point functions"
-  - "floating-point functions, mantissa and exponent"
-  - "exponents and mantissas"
+f1_keywords: ["logb", "logbl", "_logb", "_logbf", "logbf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_logbf function", "mantissas, floating-point variables", "logbf function", "_logb function", "exponent, floating-point numbers", "logbl function", "logb function", "floating-point functions", "floating-point functions, mantissa and exponent", "exponents and mantissas"]
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # logb, logbf, logbl, _logb, _logbf
 Extracts the exponent value of a floating-point argument.  

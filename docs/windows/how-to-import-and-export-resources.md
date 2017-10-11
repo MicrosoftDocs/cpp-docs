@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vs.resvw.resource.importing"
-  - "vc.resvw.resource.importing"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resources [Visual Studio], exporting"
-  - "graphics [C++], exporting"
-  - "graphics [C++], importing"
-  - "resources [Visual Studio], importing"
-  - "bitmaps [C++], importing and exporting"
-  - "toolbars [C++], importing"
-  - "images [C++], importing"
-  - "toolbars [C++], exporting"
-  - "cursors [C++], importing and exporting"
-  - "images [C++], exporting"
+f1_keywords: ["vs.resvw.resource.importing", "vc.resvw.resource.importing"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resources [Visual Studio], exporting", "graphics [C++], exporting", "graphics [C++], importing", "resources [Visual Studio], importing", "bitmaps [C++], importing and exporting", "toolbars [C++], importing", "images [C++], importing", "toolbars [C++], exporting", "cursors [C++], importing and exporting", "images [C++], exporting"]
 ms.assetid: 3c9329dc-dcb8-4edd-a600-78e3e572bd89
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Import and Export Resources
 You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML files, and custom resources for use in Visual C++. You can export the same types of files from a Visual C++ project to separate files that can be used outside the development environment.  

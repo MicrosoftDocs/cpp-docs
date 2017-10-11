@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::ModuleType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ModuleType enumeration"
+f1_keywords: ["module/Microsoft::WRL::ModuleType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ModuleType enumeration"]
 ms.assetid: 61a763af-a5a4-451d-8b40-815af507fcde
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ModuleType Enumeration
 Specifies whether a module should support an in-process server or an out-of-process server.  

@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/e"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-E compiler option [C++]"
-  - "/E compiler option [C++]"
-  - "preprocessor output, copy to stdout"
-  - "preprocessor output"
+f1_keywords: ["/e"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-E compiler option [C++]", "/E compiler option [C++]", "preprocessor output, copy to stdout", "preprocessor output"]
 ms.assetid: ddbb1725-d950-4978-ab2f-30a5cd7b778c
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /E (Preprocess to stdout)
 Preprocesses C and C++ source files and copies the preprocessed files to the standard output device.  

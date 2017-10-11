@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C1197"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C1197"
+f1_keywords: ["C1197"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C1197"]
 ms.assetid: 22b801b7-e792-41f6-a461-973c03c69f25
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Fatal Error C1197
 cannot reference 'mscorlib.dll_1' as the program has already referenced 'mscorlib.dll_2'  

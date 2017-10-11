@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "align"
-  - "align_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "align __declspec keyword"
-  - "__declspec keyword [C++], align"
+f1_keywords: ["align_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["align __declspec keyword", "__declspec keyword [C++], align"]
 ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # align (C++)
 In Visual Studio 2015 and later, use the C++11 standard `alignas` specifier to control alignment. For more information, see [Alignment](../cpp/alignment-cpp-declarations.md).  

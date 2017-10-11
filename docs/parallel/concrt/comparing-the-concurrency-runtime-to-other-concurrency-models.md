@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Concurrency Runtime, compared to other models"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Concurrency Runtime, compared to other models"]
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Comparing the Concurrency Runtime to Other Concurrency Models
 This document describes the differences between the features and programming models of the Concurrency Runtime and other technologies. By understanding how the benefits of the Concurrency Runtime compare to the benefits of other programming models, you can select the technology that best satisfies the requirements of your applications.  

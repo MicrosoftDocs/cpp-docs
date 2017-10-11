@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4608"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4608"
+f1_keywords: ["C4608"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4608"]
 ms.assetid: 8b8f5f28-8ce9-457e-9d3d-a8c0efce9b6a
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 3) C4608
 'union_member' has already been initialized by another union member in the initializer list, 'union_member'  

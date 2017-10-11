@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__asm keyword [C++], syntax"
-  - "symbols, in __asm blocks"
-  - "Visual C, symbols in __asm blocks"
-  - "__asm keyword [C++], C/C++ elements in"
-  - "Visual C++, in __asm blocks"
+dev_langs: ["C++"]
+helpviewer_keywords: ["__asm keyword [C++], syntax", "symbols, in __asm blocks", "Visual C, symbols in __asm blocks", "__asm keyword [C++], C/C++ elements in", "Visual C++, in __asm blocks"]
 ms.assetid: 0758ffdc-dfe9-41c8-a5e1-fd395bcac328
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using C or C++ Symbols in __asm Blocks
 ## Microsoft Specific  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.codewiz.class.atl.control.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL projects, adding controls"
-  - "controls [ATL], adding to projects"
-  - "ATL Control Wizard"
+f1_keywords: ["vc.codewiz.class.atl.control.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL projects, adding controls", "controls [ATL], adding to projects", "ATL Control Wizard"]
 ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ATL Control Wizard
 Inserts into an ATL project (or an MFC project with ATL support) an ATL control. You can use this wizard to insert one of three kinds of controls:  

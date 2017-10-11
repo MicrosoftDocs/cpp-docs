@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Make Same Size command"
-  - "controls [C++], sizing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Make Same Size command", "controls [C++], sizing"]
 ms.assetid: 94b50613-67e2-497b-a2b6-6d98dccfd345
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Making Controls the Same Width, Height, or Size
 You can resize a group of controls based on the size of the dominant control. You can also [resize a control based on the dimensions of its caption text](../windows/sizing-individual-controls.md).  

@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.Alignment"
-  - "/align"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sections, specifying alignment"
-  - "ALIGN linker option"
-  - "/ALIGN linker option"
-  - "-ALIGN linker option"
-  - "section alignment"
-  - "sections"
+f1_keywords: ["VC.Project.VCLinkerTool.Alignment", "/align"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["sections, specifying alignment", "ALIGN linker option", "/ALIGN linker option", "-ALIGN linker option", "section alignment", "sections"]
 ms.assetid: f2f8ac24-e90e-4bea-8205-f2960a3b1740
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /ALIGN (Section Alignment)
 ```  

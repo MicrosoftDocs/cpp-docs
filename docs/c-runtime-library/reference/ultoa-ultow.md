@@ -4,62 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_ultoa"
-  - "_ultow"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+apiname: ["_ultoa", "_ultow"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "ultot"
-  - "ultow"
-  - "_ultoa"
-  - "_ultow"
-  - "_ultot"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ultot function"
-  - "converting integers"
-  - "_ultot function"
-  - "ultow function"
-  - "integers, converting"
-  - "_ultow function"
-  - "_ultoa function"
-  - "converting numbers, to strings"
+f1_keywords: ["ultot", "ultow", "_ultoa", "_ultow", "_ultot"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ultot function", "converting integers", "_ultot function", "ultow function", "integers, converting", "_ultow function", "_ultoa function", "converting numbers, to strings"]
 ms.assetid: 7a472dc4-5652-4513-93c3-3358522c23be
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _ultoa, _ultow
 Convert an unsigned long integer to a string. More secure versions of these functions are available; see [_ultoa_s, _ultow_s](../../c-runtime-library/reference/ultoa-s-ultow-s.md).  

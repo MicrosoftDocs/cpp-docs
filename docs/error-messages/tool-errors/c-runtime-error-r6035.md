@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "R6035"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "R6035"
+f1_keywords: ["R6035"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["R6035"]
 ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # C Runtime Error R6035
 Microsoft Visual C++ Runtime Library, Error R6035 - A module in this application is initializing the module's global security cookie while a function relying on that security cookie is active.  Call __security_init_cookie earlier.  

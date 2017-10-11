@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "05/17/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "LNK1104"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LNK1104"
+f1_keywords: ["LNK1104"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LNK1104"]
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Linker Tools Error LNK1104
 cannot open file '*filename*'  

@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "XML documentation"
-  - "XML, documentation comments in source code"
-  - "comments, C++ source code files"
-  - "/// delimiter for C++ documentation"
+dev_langs: ["C++"]
+helpviewer_keywords: ["XML documentation", "XML, documentation comments in source code", "comments, C++ source code files", "/// delimiter for C++ documentation"]
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # XML Documentation (Visual C++)
 In Visual C++, you can add comments to your source code that will be processed to an .xml file. This file can then be the input to a process that creates documentation for the classes in your code.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::Details::FactoryCache"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "FactoryCache structure"
+f1_keywords: ["module/Microsoft::WRL::Details::FactoryCache"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["FactoryCache structure"]
 ms.assetid: 624544e6-0989-47f6-a3e9-edb60e1ee6d4
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # FactoryCache Structure
 Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  

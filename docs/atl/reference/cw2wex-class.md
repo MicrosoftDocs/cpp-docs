@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CW2WEX', 'ATLCONV/ATL::CW2WEX', 'ATLCONV/ATL::CW2WEX::CW2WEX', 'ATLCONV/ATL::CW2WEX::m_psz', 'ATLCONV/ATL::CW2WEX::m_szBuffer']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CW2WEX class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CW2WEX class"]
 ms.assetid: 46262e56-e0d2-41fe-855b-0b67ecc8fcd7
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CW2WEX Class
 This class is used by the string conversion macros `CW2TEX` and `CT2WEX`, and the typedef `CW2W`.  

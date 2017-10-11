@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.accelerator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "accelerator keys"
-  - "keyboard shortcuts"
-  - "keyboard shortcuts, predefined"
+f1_keywords: ["vc.editors.accelerator"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["accelerator keys", "keyboard shortcuts", "keyboard shortcuts, predefined"]
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Predefined Accelerator Keys
 There are a number of predefined accelerator keys that may be part of a Windows application project. Some of these virtual keys are for the Windows environment. Other support browsers or Unicode applications. You can use any of these keys in any accelerator.  

@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.EnableIntrinsicFunctions"
-  - "/oi"
-  - "VC.Project.VCCLWCECompilerTool.EnableIntrinsicFunctions"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Oi compiler option [C++]"
-  - "intrinsic functions, generate"
-  - "/Oi compiler option [C++]"
-  - "-Oi compiler option [C++]"
-  - "generate intrinsic functions compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.EnableIntrinsicFunctions", "/oi", "VC.Project.VCCLWCECompilerTool.EnableIntrinsicFunctions"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Oi compiler option [C++]", "intrinsic functions, generate", "/Oi compiler option [C++]", "-Oi compiler option [C++]", "generate intrinsic functions compiler option [C++]"]
 ms.assetid: fa4a3bf6-0ed8-481b-91c0-add7636132b4
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /Oi (Generate Intrinsic Functions)
 Replaces some function calls with intrinsic or otherwise special forms of the function that help your application run faster.  

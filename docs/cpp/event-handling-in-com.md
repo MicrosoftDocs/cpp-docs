@@ -4,45 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event handling, COM"
-  - "event handling, about event handling"
-  - "declaring events"
-  - "event handlers, COM"
-  - "event handlers"
-  - "COM, events"
-  - "event receivers, in event handling"
-  - "event handling"
-  - "hooking events"
-  - "event receivers, name and signature matching"
-  - "event sources, in event handling"
-  - "declaring events, in COM"
-  - "declaring events, event handling in COM"
+dev_langs: ["C++"]
+helpviewer_keywords: ["event handling [C++], COM", "event handling [C++], about event handling", "declaring events", "event handlers [C++], COM", "event handlers", "COM, events", "event receivers, in event handling", "event handling [C++]", "hooking events", "event receivers, name and signature matching", "event sources, in event handling", "declaring events, in COM", "declaring events, event handling in COM"]
 ms.assetid: 6b4617d4-a58e-440c-a8a6-1ad1c715b2bb
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Event Handling in COM
 In COM event handling, you set up an event source and event receiver using the [event_source](../windows/event-source.md) and [event_receiver](../windows/event-receiver.md) attributes, respectively, specifying `type`=**com**. These attributes inject the appropriate code for custom, dispatch, and dual interfaces to allow the classes to which they are applied to fire events and handle events through COM connection points.  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/yi"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Yl compiler option [C++]"
-  - "Yl compiler option [C++]"
-  - "/Yl compiler option [C++]"
+f1_keywords: ["/yi"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Yl compiler option [C++]", "Yl compiler option [C++]", "/Yl compiler option [C++]"]
 ms.assetid: 8e4a396a-6790-4a9f-8387-df015a3220e7
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /Yl (Inject PCH Reference for Debug Library)
 Used if creating a debugging library that uses precompiled headers and the build fails.  

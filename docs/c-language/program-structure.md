@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "program structure [C++], C"
-  - "programs [C++], structure"
-  - "C, program structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["program structure [C++], C", "programs [C++], structure", "C, program structure"]
 ms.assetid: b713b5a1-21a2-4e6f-9481-5f8594f1859e
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Program Structure
 This section gives an overview of C programs and program execution. Terms and features important to understanding C programs and components are also introduced. Topics discussed include:  

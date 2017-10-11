@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "D9041"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "D9041"
+f1_keywords: ["D9041"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["D9041"]
 ms.assetid: ada8815f-4246-4e25-b57d-a7f16fa107cc
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Command-Line Warning D9041
 invalid value 'value' for '/option'; assuming 'value'; add '/analyze' to command-line options when specifying this warning  

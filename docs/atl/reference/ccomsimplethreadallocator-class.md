@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComSimpleThreadAllocator', 'ATLBASE/ATL::CComSimpleThreadAllocator', 'ATLBASE/ATL::CComSimpleThreadAllocator::GetThread']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "threading [ATL], selecting threads"
-  - "ATL threads"
-  - "CComSimpleThreadAllocator class"
-  - "ATL threads, allocating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["threading [ATL], selecting threads", "ATL threads", "CComSimpleThreadAllocator class", "ATL threads, allocating"]
 ms.assetid: 66b2166a-8c50-49fd-b8e4-7f293470327d
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComSimpleThreadAllocator Class
 This class manages thread selection for the class `CComAutoThreadModule`.  

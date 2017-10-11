@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::CRowset::GetApproximatePosition"
-  - "ATL::CRowset<TAccessor>::GetApproximatePosition"
-  - "CRowset.GetApproximatePosition"
-  - "CRowset::GetApproximatePosition"
-  - "GetApproximatePosition"
-  - "ATL.CRowset.GetApproximatePosition"
-  - "CRowset<TAccessor>::GetApproximatePosition"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetApproximatePosition method"
+f1_keywords: ["ATL::CRowset::GetApproximatePosition", "ATL::CRowset<TAccessor>::GetApproximatePosition", "CRowset.GetApproximatePosition", "CRowset::GetApproximatePosition", "GetApproximatePosition", "ATL.CRowset.GetApproximatePosition", "CRowset<TAccessor>::GetApproximatePosition"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetApproximatePosition method"]
 ms.assetid: 8f9ccd41-0590-468e-b202-6731d0f99d21
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CRowset::GetApproximatePosition
 Returns the approximate position of a row corresponding to a bookmark.  

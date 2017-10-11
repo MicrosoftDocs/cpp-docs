@@ -4,56 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCConfiguration.IntermediateDirectory"
-  - "VC.Project.VCConfiguration.ConfigurationType"
-  - "VC.Project.VCConfiguration.ManagedExtensions"
-  - "VC.Project.VCConfiguration.BuildBrowserInformation"
-  - "VC.Project.VCConfiguration.BuildLogFile"
-  - "VC.Project.VCConfiguration.PlatformToolset"
-  - "VC.Project.VCConfiguration.TargetName"
-  - "VC.Project.VCConfiguration."
-  - "VC.Project.VCConfiguration.TargetExt"
-  - "VC.Project.VCConfiguration.ATLMinimizesCRunTimeLibraryUsage"
-  - "VC.Project.VCConfiguration.ReferencesPath"
-  - "VC.Project.VCConfiguration.DeleteExtensionsOnClean"
-  - "VC.Project.VCConfiguration.useOfMfc"
-  - "VC.Project.VCConfiguration.CharacterSet"
-  - "VC.Project.VCGeneralMakefileSettings.ConfigurationType"
-  - "VC.Project.VCConfiguration.OutputDirectory"
-  - "VC.Project.VCConfiguration.AppSupport"
-  - "VC.Project.VCConfiguration.ToolFiles"
-  - "VC.Project.VCConfiguration.useOfATL"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Clean Build option"
-  - "output files, setting directory"
-  - "Unicode, creating C++ build configuration"
+f1_keywords: ["VC.Project.VCConfiguration.IntermediateDirectory", "VC.Project.VCConfiguration.ConfigurationType", "VC.Project.VCConfiguration.ManagedExtensions", "VC.Project.VCConfiguration.BuildBrowserInformation", "VC.Project.VCConfiguration.BuildLogFile", "VC.Project.VCConfiguration.PlatformToolset", "VC.Project.VCConfiguration.TargetName", "VC.Project.VCConfiguration.", "VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguration.ATLMinimizesCRunTimeLibraryUsage", "VC.Project.VCConfiguration.ReferencesPath", "VC.Project.VCConfiguration.DeleteExtensionsOnClean", "VC.Project.VCConfiguration.useOfMfc", "VC.Project.VCConfiguration.CharacterSet", "VC.Project.VCGeneralMakefileSettings.ConfigurationType", "VC.Project.VCConfiguration.OutputDirectory", "VC.Project.VCConfiguration.AppSupport", "VC.Project.VCConfiguration.ToolFiles", "VC.Project.VCConfiguration.useOfATL"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Clean Build option", "output files, setting directory", "Unicode, creating C++ build configuration"]
 ms.assetid: 593b383c-cd0f-4dcd-ad65-9ec9b4b19c45
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # General Property Page (Project)
 When you right-click on a project node in in Solution Explorer, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays two sections of properties:  

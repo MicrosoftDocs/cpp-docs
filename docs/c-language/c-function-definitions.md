@@ -4,41 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "function declarators"
-  - "function definitions"
-  - "declaring functions, about function declarations"
-  - "declaring functions, declarators"
-  - "functions [C], parameters"
-  - "declarators, functions"
-  - "function parameters, function definitions"
-  - "function body"
-  - "declaring functions, variables"
+dev_langs: ["C++"]
+helpviewer_keywords: ["function declarators", "function definitions", "declaring functions, about function declarations", "declaring functions, declarators", "functions [C], parameters", "declarators, functions", "function parameters, function definitions", "function body", "declaring functions, variables"]
 ms.assetid: ebab23c8-6eb8-46f3-b21d-570cd8457a80
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C Function Definitions
 A function definition specifies the name of the function, the types and number of parameters it expects to receive, and its return type. A function definition also includes a function body with the declarations of its local variables, and the statements that determine what the function does.  

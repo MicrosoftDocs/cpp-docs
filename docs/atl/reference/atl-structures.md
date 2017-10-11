@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "index-page "
-f1_keywords: 
-  - "vc.atl.structures"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL, structures"
-  - "structures, ATL"
+f1_keywords: ["vc.atl.structures"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL, structures", "structures, ATL"]
 ms.assetid: 622173c8-6f2e-457c-8fae-28d4e80ecdb5
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ATL Structures
 

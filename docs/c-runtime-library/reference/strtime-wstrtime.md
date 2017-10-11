@@ -4,62 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wstrtime"
-  - "_strtime"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+apiname: ["_wstrtime", "_strtime"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wstrtime"
-  - "_strtime"
-  - "wstrtime"
-  - "strtime"
-  - "_tstrtime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strtime function"
-  - "_strtime function"
-  - "_wstrtime function"
-  - "copying time to buffers"
-  - "wstrtime function"
-  - "tstrtime function"
-  - "_tstrtime function"
-  - "time, copying"
+f1_keywords: ["_wstrtime", "_strtime", "wstrtime", "strtime", "_tstrtime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strtime function", "_strtime function", "_wstrtime function", "copying time to buffers", "wstrtime function", "tstrtime function", "_tstrtime function", "time, copying"]
 ms.assetid: 9e538161-cf49-44ec-bca5-c0ab0b9e4ca3
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _strtime, _wstrtime
 Copy the time to a buffer. More secure versions of these functions are available; see [_strtime_s, _wstrtime_s](../../c-runtime-library/reference/strtime-s-wstrtime-s.md).  

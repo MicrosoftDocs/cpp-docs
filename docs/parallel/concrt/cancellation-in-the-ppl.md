@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "parallel algorithms, canceling [Concurrency Runtime]"
-  - "canceling parallel algorithms [Concurrency Runtime]"
-  - "parallel tasks, canceling [Concurrency Runtime]"
-  - "cancellation in the PPL"
-  - "parallel work trees [Concurrency Runtime]"
-  - "canceling parallel tasks [Concurrency Runtime]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["parallel algorithms, canceling [Concurrency Runtime]", "canceling parallel algorithms [Concurrency Runtime]", "parallel tasks, canceling [Concurrency Runtime]", "cancellation in the PPL", "parallel work trees [Concurrency Runtime]", "canceling parallel tasks [Concurrency Runtime]"]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
 caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Cancellation in the PPL
 This document explains the role of cancellation in the Parallel Patterns Library (PPL), how to cancel parallel work, and how to determine when parallel work is canceled.  

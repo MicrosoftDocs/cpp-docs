@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "regular MFC DLLs [C++], dynamically linked to MFC"
-  - "module states [C++]"
-  - "MFC DLLs [C++], regular MFC DLLs"
-  - "module states [C++], regular MFC DLLs dynamically linked to"
-  - "DLLs [C++], module states"
+dev_langs: ["C++"]
+helpviewer_keywords: ["regular MFC DLLs [C++], dynamically linked to MFC", "module states [C++]", "MFC DLLs [C++], regular MFC DLLs", "module states [C++], regular MFC DLLs dynamically linked to", "DLLs [C++], module states"]
 ms.assetid: b4493e79-d25e-4b7f-a565-60de5b32c723
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Module States of a Regular MFC DLL Dynamically Linked to MFC
 The ability to dynamically link a regular MFC DLL to the MFC DLL allows some configurations that are very complicated. For example, a regular MFC DLL and the executable that uses it can both dynamically link to the MFC DLL and to any MFC extension DLLs.  

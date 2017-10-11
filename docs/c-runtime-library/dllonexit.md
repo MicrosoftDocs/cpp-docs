@@ -4,48 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "__dllonexit"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr100.dll"
-  - "msvcr80.dll"
-  - "msvcr120.dll"
-  - "msvcr90.dll"
-  - "msvcr120_clr0400.dll"
+apiname: ["__dllonexit"]
+apilocation: ["msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcr120_clr0400.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "__dllonexit"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__dllonexit"
+f1_keywords: ["__dllonexit"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__dllonexit"]
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __dllonexit
 Registers a routine to be called at exit time.  

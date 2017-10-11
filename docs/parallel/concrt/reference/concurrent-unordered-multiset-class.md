@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['concurrent_unordered_multiset', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::concurrent_unordered_multiset', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::hash_function', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::insert', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::key_eq', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::swap', 'CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_multiset::unsafe_erase']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "concurrent_unordered_multiset class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["concurrent_unordered_multiset class"]
 ms.assetid: 219d7d67-1ff0-45f4-9400-e9cc272991a4
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # concurrent_unordered_multiset Class
 The `concurrent_unordered_multiset` class is an concurrency-safe container that controls a varying-length sequence of elements of type K. The sequence is represented in a way that enables concurrency-safe append, element access, iterator access and iterator traversal operations.  

@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 helpviewer_keywords: ["std::mutex [C++]", "std::mutex [C++], mutex", "std::mutex [C++], lock", "std::mutex [C++], native_handle", "std::mutex [C++], try_lock", "std::mutex [C++], unlock"]
 ---
 # mutex Class (C++ Standard Library)

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2492"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2492"
+f1_keywords: ["C2492"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2492"]
 ms.assetid: 8c44c9bb-c366-4fe5-a0ab-882e38608aaa
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C2492
 '*variable*': data with thread storage duration may not have dll interface    

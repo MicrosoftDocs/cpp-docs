@@ -4,61 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wchdir"
-  - "_chdir"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+apiname: ["_wchdir", "_chdir"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "tchdir"
-  - "_chdir"
-  - "_wchdir"
-  - "_tchdir"
-  - "wchdir"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_tchdir function"
-  - "_chdir function"
-  - "_wchdir function"
-  - "tchdir function"
-  - "wchdir function"
-  - "chdir function"
-  - "directories [C++], changing"
+f1_keywords: ["tchdir", "_chdir", "_wchdir", "_tchdir", "wchdir"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_tchdir function", "_chdir function", "_wchdir function", "tchdir function", "wchdir function", "chdir function", "directories [C++], changing"]
 ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _chdir, _wchdir
 Changes the current working directory.  

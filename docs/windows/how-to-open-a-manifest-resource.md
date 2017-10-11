@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "manifest resources"
-  - "resources [Visual Studio], opening"
+dev_langs: ["C++"]
+helpviewer_keywords: ["manifest resources", "resources [Visual Studio], opening"]
 ms.assetid: bd6f9c47-2a1e-417d-9d2a-c1ad7d3b9635
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Open a Manifest Resource
 If you open a manifest resource from [Resource View](../windows/resource-view-window.md), the resource will open in binary format. To view the contents of a manifest resource in a more viewable format, you must open the resource from Solution Explorer.  

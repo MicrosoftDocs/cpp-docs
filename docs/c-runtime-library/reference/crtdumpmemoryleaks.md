@@ -4,60 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_CrtDumpMemoryLeaks"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_CrtDumpMemoryLeaks"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CRTDBG_LEAK_CHECK_DF"
-  - "CRTDBG_CHECK_CRT_DF"
-  - "_CRTDBG_LEAK_CHECK_DF"
-  - "CrtDumpMemoryLeaks"
-  - "_CrtDumpMemoryLeaks"
-  - "_CRTDBG_CHECK_CRT_DF"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CrtDumpMemoryLeaks function"
-  - "CRTDBG_LEAK_CHECK_DF macro"
-  - "_CRTDBG_LEAK_CHECK_DF macro"
-  - "_CrtDumpMemoryLeaks function"
-  - "CRTDBG_CHECK_CRT_DF macro"
-  - "_CRTDBG_CHECK_CRT_DF macro"
+f1_keywords: ["CRTDBG_LEAK_CHECK_DF", "CRTDBG_CHECK_CRT_DF", "_CRTDBG_LEAK_CHECK_DF", "CrtDumpMemoryLeaks", "_CrtDumpMemoryLeaks", "_CRTDBG_CHECK_CRT_DF"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CrtDumpMemoryLeaks function", "CRTDBG_LEAK_CHECK_DF macro", "_CRTDBG_LEAK_CHECK_DF macro", "_CrtDumpMemoryLeaks function", "CRTDBG_CHECK_CRT_DF macro", "_CRTDBG_CHECK_CRT_DF macro"]
 ms.assetid: 71b2eab4-7f55-44e8-a55a-bfea4f32d34c
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # _CrtDumpMemoryLeaks
 Dumps all the memory blocks in the debug heap when a memory leak has occurred (debug version only).  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::logical_and"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "logical_and function [STL/CLR]"
+f1_keywords: ["cliext::logical_and"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["logical_and function [STL/CLR]"]
 ms.assetid: ae103802-11e0-4060-a4f3-4f6fdc209e7c
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # logical_and (STL/CLR)
 The template class describes a functor that, when called, returns true only if both the first argument and the second test as true. You use it specify a function object in terms of its argument type.  

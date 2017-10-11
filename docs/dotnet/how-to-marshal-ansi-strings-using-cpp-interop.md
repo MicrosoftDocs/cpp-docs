@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interop [C++], strings"
-  - "ANSI [C++], marshaling strings"
-  - "marshaling [C++], strings"
-  - "C++ Interop, strings"
-  - "data marshaling [C++], strings"
+dev_langs: ["C++"]
+helpviewer_keywords: ["interop [C++], strings", "ANSI [C++], marshaling strings", "marshaling [C++], strings", "C++ Interop, strings", "data marshaling [C++], strings"]
 ms.assetid: 5eda2eb6-5140-40f0-82cf-7ce171fffb45
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Marshal ANSI Strings Using C++ Interop
 This topic demonstrates how ANSI strings can be passed using C++ Interop, but the .NET Framework <xref:System.String> represents strings in Unicode format, so conversion to ANSI is an extra step. For interoperating with other string types, see the following topics:  

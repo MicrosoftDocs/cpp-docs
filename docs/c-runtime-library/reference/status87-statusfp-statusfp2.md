@@ -4,68 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_statusfp2"
-  - "_statusfp"
-  - "_status87"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+apiname: ["_statusfp2", "_statusfp", "_status87"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_statusfp2"
-  - "_statusfp"
-  - "statusfp2"
-  - "_status87"
-  - "status87"
-  - "statusfp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "floating-point functions, getting status word"
-  - "floating-point numbers, status word"
-  - "status87 function"
-  - "status word, getting floating point"
-  - "statusfp function"
-  - "_statusfp function"
-  - "_statusfp2 function"
-  - "statusfp2 function"
-  - "_status87 function"
-  - "floating-point functions"
-  - "status word"
+f1_keywords: ["_statusfp2", "_statusfp", "statusfp2", "_status87", "status87", "statusfp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["floating-point functions, getting status word", "floating-point numbers, status word", "status87 function", "status word, getting floating point", "statusfp function", "_statusfp function", "_statusfp2 function", "statusfp2 function", "_status87 function", "floating-point functions", "status word"]
 ms.assetid: 7ef963fa-b1fb-429d-94d6-fbf282ab7432
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # _status87, _statusfp, _statusfp2
 Gets the floating-point status word.  

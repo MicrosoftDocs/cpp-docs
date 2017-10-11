@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "inline_depth_CPP"
-  - "vc-pragma.inline_depth"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pragmas, inline_depth"
-  - "inline_depth pragma"
+f1_keywords: ["inline_depth_CPP", "vc-pragma.inline_depth"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["pragmas, inline_depth", "inline_depth pragma"]
 ms.assetid: 2bba60fe-43ea-4d09-90f7-aafaba3bad07
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # inline_depth
 Specifies the inline heuristic search depth, such that, no function will be inlined if it is at a depth (in the call graph) greater than `n`.  

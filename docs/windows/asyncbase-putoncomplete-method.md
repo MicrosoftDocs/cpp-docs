@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "async/Microsoft::WRL::AsyncBase::PutOnComplete"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PutOnComplete method"
+f1_keywords: ["async/Microsoft::WRL::AsyncBase::PutOnComplete"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["PutOnComplete method"]
 ms.assetid: 1c469ff9-b2df-4637-bf05-01a617043149
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # AsyncBase::PutOnComplete Method
 Sets the address of the completion event handler to the specified value.  

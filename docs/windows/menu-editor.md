@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.menu.F1"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resource editors, Menu editor"
-  - "editors, menus"
-  - "Menu editor"
-  - "menus, Menu editor"
+f1_keywords: ["vc.editors.menu.F1"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resource editors, Menu editor", "editors, menus", "Menu editor", "menus, Menu editor"]
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Menu Editor
 Menus allow you to arrange commands in a logical and easy-to-find fashion. With the Menu editor, you can create and edit menus by working directly with a menu bar that closely resembles the one in your finished application.  

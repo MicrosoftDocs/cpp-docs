@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__outwordstring"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rep outsw instruction"
-  - "__outwordstring intrinsic"
-  - "outsw instruction"
+f1_keywords: ["__outwordstring"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["rep outsw instruction", "__outwordstring intrinsic", "outsw instruction"]
 ms.assetid: b470c7a0-1de9-4370-886a-b2c3a1f842f4
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __outwordstring
 **Microsoft Specific**  

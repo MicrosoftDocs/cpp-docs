@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "05/16/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "devlang-cpp"
+ms.technology: ["devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "warnings, by compiler version"
-  - "cl.exe compiler, setting warning options"
+dev_langs: ["C++"]
+helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ms.assetid: 886c5a66-088c-4a4b-908b-aa3ec189e595
 caps.latest.revision: 0
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warnings by compiler version  
   

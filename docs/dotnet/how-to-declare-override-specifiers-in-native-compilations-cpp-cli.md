@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "override specifiers in native compilation, overriding"
+dev_langs: ["C++"]
+helpviewer_keywords: ["override specifiers in native compilation, overriding"]
 ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Declare Override Specifiers in Native Compilations (C++/CLI)
 [sealed](../windows/sealed-cpp-component-extensions.md), [abstract](../windows/abstract-cpp-component-extensions.md), and [override](../windows/override-cpp-component-extensions.md) are available in compilations that do not use **/ZW** or [/clr](../build/reference/clr-common-language-runtime-compilation.md).  

@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Month Calendar Control Examples
 The [CMNCTRL1](../visual-cpp-samples.md) sample application demonstrates the various attributes of the `CMonthCalCtrl` class. The control, found on a separate tab in the sample, demonstrates basic functionality and allows the user to dynamically modify certain attributes.  

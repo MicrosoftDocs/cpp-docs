@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4289"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4289"
+f1_keywords: ["C4289"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4289"]
 ms.assetid: 0dbd2863-4cde-4e16-894b-104a2d5fa724
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 4) C4289
 nonstandard extension used : 'var' : loop control variable declared in the for-loop is used outside the for-loop scope  

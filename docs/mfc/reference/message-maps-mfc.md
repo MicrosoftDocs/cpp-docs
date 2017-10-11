@@ -15,7 +15,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Message Maps (MFC)
 This section of the reference lists all [message mapping macros](../../mfc/reference/message-map-macros-mfc.md) and all [CWnd](../../mfc/reference/cwnd-class.md) message-map entries along with the corresponding member function prototypes:  

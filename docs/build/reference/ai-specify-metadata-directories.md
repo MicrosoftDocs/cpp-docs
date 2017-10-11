@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.AdditionalUsingDirectories"
-  - "VC.Project.VCNMakeTool.AssemblySearchPath"
-  - "/AI"
-  - "VC.Project.VCCLWCECompilerTool.AdditionalUsingDirectories"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/AI compiler option [C++]"
-  - "AI compiler option [C++]"
-  - "-AI compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalUsingDirectories", "VC.Project.VCNMakeTool.AssemblySearchPath", "/AI", "VC.Project.VCCLWCECompilerTool.AdditionalUsingDirectories"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/AI compiler option [C++]", "AI compiler option [C++]", "-AI compiler option [C++]"]
 ms.assetid: fb9c1846-504c-4a3b-bb39-c8696de32f6f
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /AI (Specify Metadata Directories)
 Specifies a directory that the compiler will search to resolve file references passed to the `#using` directive.  

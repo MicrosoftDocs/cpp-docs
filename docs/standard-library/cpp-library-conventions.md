@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C++ Standard Library, conventions"
-  - "classes [C++]"
-  - "functions [C++], library naming conventions"
-  - "naming conventions [C++], C++ Standard Library"
-  - "conventions [C++], C++ Standard Library"
-  - "function names [C++]"
-  - "coding conventions, C++ Standard Library"
-  - "naming conventions [C++], C++ library"
+dev_langs: ["C++"]
+helpviewer_keywords: ["C++ Standard Library, conventions", "classes [C++]", "functions [C++], library naming conventions", "naming conventions [C++], C++ Standard Library", "conventions [C++], C++ Standard Library", "function names [C++]", "coding conventions, C++ Standard Library", "naming conventions [C++], C++ library"]
 ms.assetid: bf41b79a-2d53-4f46-8d05-779358335146
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C++ Library Conventions
 The C++ library obeys much the same conventions as the Standard C Library, plus a few more outlined here.  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "07/21/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3293"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3293"
+f1_keywords: ["C3293"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3293"]
 ms.assetid: b772cf98-52e0-4e24-be23-1f5d87d999ac
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3293
 'accessor': use 'default' to access the default property (indexer) for class 'type'  

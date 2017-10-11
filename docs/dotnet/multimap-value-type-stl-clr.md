@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multimap::value_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "value_type member [STL/CLR]"
+f1_keywords: ["cliext::multimap::value_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["value_type member [STL/CLR]"]
 ms.assetid: c10d75f9-2efe-41f7-babc-655c68c14a4f
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # multimap::value_type (STL/CLR)
 The type of an element.  

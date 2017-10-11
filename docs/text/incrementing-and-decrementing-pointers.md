@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "incrementing pointers"
-  - "MBCS [C++], pointers"
-  - "pointers [C++], multibyte characters"
-  - "decrementing pointers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["incrementing pointers", "MBCS [C++], pointers", "pointers [C++], multibyte characters", "decrementing pointers"]
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
 caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Incrementing and Decrementing Pointers
 Use the following tips:  

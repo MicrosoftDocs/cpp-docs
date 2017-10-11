@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "event/Microsoft::WRL::Details::EventTargetArray"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "EventTargetArray class"
+f1_keywords: ["event/Microsoft::WRL::Details::EventTargetArray"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["EventTargetArray class"]
 ms.assetid: e3cadb7c-2160-4cbb-a2f8-c28733d1e96d
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # EventTargetArray Class
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data [MFC], filtering"
-  - "recordsets [C++], filtering"
-  - "filtering recordsets"
-  - "ODBC recordsets [C++], filtering records"
-  - "filters [C++], recordset object"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data [MFC], filtering", "recordsets [C++], filtering", "filtering recordsets", "ODBC recordsets [C++], filtering records", "filters [C++], recordset object"]
 ms.assetid: 5c075f37-c837-464d-90c1-d028a9d1c175
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Recordset: Filtering Records (ODBC)
 This topic applies to the MFC ODBC classes.  
