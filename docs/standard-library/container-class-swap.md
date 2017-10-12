@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "swap method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["swap method"]
 ms.assetid: 898c219c-bc8e-4d14-a149-6240426c693f
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Container Class::swap
 > [!NOTE]

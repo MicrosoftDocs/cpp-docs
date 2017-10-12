@@ -4,31 +4,15 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 098e51f2-eda6-40d0-b149-0b618aa48b47
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Stack Allocation
 A function's prolog is responsible for allocating stack space for local variables, saved registers, stack parameters, and register parameters.  

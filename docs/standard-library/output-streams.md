@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "output streams"
+dev_langs: ["C++"]
+helpviewer_keywords: ["output streams"]
 ms.assetid: b49410e3-5caa-4153-9d0d-c4266408dc83
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Output Streams
 An output stream object is a destination for bytes. The three most important output stream classes are `ostream`, `ofstream`, and `ostringstream`.  

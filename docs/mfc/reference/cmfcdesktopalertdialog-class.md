@@ -15,7 +15,6 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCDesktopAlertDialog Class
 The `CMFCDesktopAlertDialog` class is used together with the [CMFCDesktopAlertWnd Class](../../mfc/reference/cmfcdesktopalertwnd-class.md) to display a custom dialog in a popup window.  

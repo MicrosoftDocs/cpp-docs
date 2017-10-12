@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "termination handlers, handling exceptions in C++"
-  - "structured exception handling"
-  - "try-catch keyword [C++], exception handlers"
-  - "C++ exception handling, termination handlers"
-  - "try-catch keyword [C++], termination handlers"
-  - "C++ exception handling, exception handlers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["termination handlers [C++], handling exceptions in C++", "structured exception handling [C++]", "try-catch keyword [C++], exception handlers", "C++ exception handling, termination handlers", "try-catch keyword [C++], termination handlers", "C++ exception handling, exception handlers"]
 ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Structured Exception Handling (C/C++)
 Although Windows and Visual C++ support structured exception handling (SEH), we recommend that you use ISO-standard C++ exception handling because it makes code more portable and flexible. Nevertheless, in existing code or for particular kinds of programs, you still might have to use SEH.  

@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "what's new [C++], keywords"
-  - "what's new [C++], language features"
-  - "Visual C++, keywords"
-  - "keywords [C++]"
-  - "Managed Extensions for C++, replacement syntax"
+dev_langs: ["C++"]
+helpviewer_keywords: ["what's new [C++], keywords", "what's new [C++], language features", "Visual C++, keywords", "keywords [C++]", "Managed Extensions for C++, replacement syntax"]
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
 caps.latest.revision: 77
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Component Extensions for Runtime Platforms
 Visual C++ provides language extensions to help you program against runtime platforms. By using C++/CX, you can program Universal Windows Platform apps and components that compile to native code. Although you can create Universal Windows Platform apps by programming directly against the Windows Runtime COM interfaces, by using C++/CX, you can work with constructors, exceptions, and other modern C++ programming idioms. To enable C++ programming in a managed execution environment on the .NET platform, you can use C++/CLI.  

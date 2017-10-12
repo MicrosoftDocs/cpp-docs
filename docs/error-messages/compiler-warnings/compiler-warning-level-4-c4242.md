@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4242"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4242"
+f1_keywords: ["C4242"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4242"]
 ms.assetid: 8df742e1-fbf1-42f3-8e93-c0e1c222dc7e
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 4) C4242
 'identifier' : conversion from 'type1' to 'type2', possible loss of data  

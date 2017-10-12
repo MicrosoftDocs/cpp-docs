@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
 caps.latest.revision: 22
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
+translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
 ---
 # Visual C++ Samples
 The Visual C++ samples listed below demonstrate different functionalities across multiple technologies.  

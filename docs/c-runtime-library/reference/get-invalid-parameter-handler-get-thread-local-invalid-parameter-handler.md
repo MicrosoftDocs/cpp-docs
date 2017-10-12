@@ -4,55 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_get_invalid_parameter_handler"
-  - "_get_thread_local_invalid_parameter_handler"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+apiname: ["_get_invalid_parameter_handler", "_get_thread_local_invalid_parameter_handler"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_get_invalid_parameter_handler"
-  - "stdlib/_get_invalid_parameter_handler"
-  - "_get_thread_local_invalid_parameter_handler"
-  - "stdlib/_get_thread_local_invalid_parameter_handler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_get_thread_local_invalid_parameter_handler function"
-  - "_get_invalid_parameter_handler function"
+f1_keywords: ["_get_invalid_parameter_handler", "stdlib/_get_invalid_parameter_handler", "_get_thread_local_invalid_parameter_handler", "stdlib/_get_thread_local_invalid_parameter_handler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_get_thread_local_invalid_parameter_handler function", "_get_invalid_parameter_handler function"]
 ms.assetid: a176da0e-38ca-4d99-92bb-b0e2b8072f53
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
 Gets the function that is called when the CRT detects an invalid argument.  

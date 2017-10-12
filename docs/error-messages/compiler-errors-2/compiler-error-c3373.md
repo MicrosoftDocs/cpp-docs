@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3373"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3373"
+f1_keywords: ["C3373"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3373"]
 ms.assetid: 6e7586c3-1a15-4773-ad20-f90090a400dc
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3373
 attribute 'attribute' takes no arguments except on a coclass  

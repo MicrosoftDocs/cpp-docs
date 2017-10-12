@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "D8022"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "D8022"
+f1_keywords: ["D8022"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["D8022"]
 ms.assetid: eb18ec34-d32d-4636-a852-abf2063e886b
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Command-Line Error D8022
 cannot open 'messagefile'  

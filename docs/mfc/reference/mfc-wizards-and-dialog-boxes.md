@@ -4,31 +4,15 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 2fae0a2c-d147-4468-a547-f7b85df767a1
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # MFC Wizards and Dialog Boxes
 The Microsoft Foundation Class (MFC) wizards generate boilerplate code for various kinds of components and objects. You can run the wizards by opening the shortcut menu for a project in **Solution Explorer** and choosing **Add**, **Class**.  

@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MASM (Microsoft Macro Assembler), reference"
-  - "MASM (Microsoft Macro Assembler), overview"
-  - "MASM (Microsoft Macro Assembler)"
-  - "MASM (Microsoft Macro Assembler), documentation overview"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MASM (Microsoft Macro Assembler), reference", "MASM (Microsoft Macro Assembler), overview", "MASM (Microsoft Macro Assembler)", "MASM (Microsoft Macro Assembler), documentation overview"]
 ms.assetid: 1446d55f-e2e7-4fd1-a9b8-b15cf7d4e47c
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Microsoft Macro Assembler Reference
 The Microsoft Macro Assembler (MASM) provides several advantages over inline assembly. MASM contains a macro language that has features such as looping, arithmetic, and text string processing. MASM also gives you greater control over the hardware because it supports the instruction sets of the 386, 486, and Pentium processors. By using MASM, you also can reduce time and memory overhead.  

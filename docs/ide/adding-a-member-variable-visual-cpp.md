@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.classes.member.variable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "member variables, adding"
-  - "member variables"
+f1_keywords: ["vc.codewiz.classes.member.variable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["member variables, adding", "member variables"]
 ms.assetid: 437783bd-8eb4-4508-8b73-7380116e9d71
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Adding a Member Variable  (Visual C++)
 You can add a member variable to a class using Class View. Member variables can be either for [data exchange and data validation](../mfc/dialog-data-exchange-and-validation.md), or they can be generic. The data member variable wizard is specifically designed to take the relevant information and use it to insert elements in your source files at the appropriate locations. You can add a member variable from the [Dialog editor](../windows/dialog-editor.md) in [Resource View](../windows/resource-view-window.md), or from [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  

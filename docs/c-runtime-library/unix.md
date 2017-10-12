@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "unix"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UNIX"
-  - "POSIX compatibility"
-  - "POSIX file names"
-  - "UNIX, compatibility"
+f1_keywords: ["unix"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["UNIX", "POSIX compatibility", "POSIX file names", "UNIX, compatibility"]
 ms.assetid: 40792414-7a5b-415d-bfa8-2bfb1ebb3731
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # UNIX
 If you plan to port your programs to UNIX, follow these guidelines:  

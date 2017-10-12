@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-f1_keywords: 
-  - "msbuild.cpp.howto.modifytargetframeworkandplatformtoolset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "msbuild (c++), howto: modify target framework and platform toolset"
+f1_keywords: ["msbuild.cpp.howto.modifytargetframeworkandplatformtoolset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["msbuild (c++), howto: modify target framework and platform toolset"]
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Modify the Target Framework and Platform Toolset
 You can change Visual C++ project settings to target different versions of the .NET Framework and to use different platform toolsets. By default, the project system uses the .NET Framework version and the toolset version that correspond to the version of Visual Studio that you use to create the project. You can change the target platform toolset by modifying the project properties. You can change the target Framework by modifying the project (.vcxproj) file. You do not have to maintain a separate code base for every compilation target.  

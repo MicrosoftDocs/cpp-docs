@@ -4,74 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "__swprintf_l"
-  - "sprintf"
-  - "_sprintf_l"
-  - "_swprintf_l"
-  - "swprintf"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntdll.dll"
-  - "ucrtbase.dll"
+apiname: ["__swprintf_l", "sprintf", "_sprintf_l", "_swprintf_l", "swprintf"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_stprintf_l"
-  - "__swprintf_l"
-  - "sprintf_l"
-  - "swprintf"
-  - "_sprintf_l"
-  - "sprintf"
-  - "_stprintf"
-  - "stprintf_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_swprintf_l function"
-  - "_stprintf function"
-  - "__swprintf_l function"
-  - "stprintf function"
-  - "sprintf function"
-  - "_sprintf_l function"
-  - "_stprintf_l function"
-  - "swprintf function"
-  - "strings [C++], writing to"
-  - "_CRT_NON_CONFORMING_SWPRINTFS"
-  - "swprintf_l function"
-  - "stprintf_l function"
-  - "sprintf_l function"
-  - "formatted text [C++]"
+f1_keywords: ["_stprintf_l", "__swprintf_l", "sprintf_l", "swprintf", "_sprintf_l", "sprintf", "_stprintf", "stprintf_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_swprintf_l function", "_stprintf function", "__swprintf_l function", "stprintf function", "sprintf function", "_sprintf_l function", "_stprintf_l function", "swprintf function", "strings [C++], writing to", "_CRT_NON_CONFORMING_SWPRINTFS", "swprintf_l function", "stprintf_l function", "sprintf_l function", "formatted text [C++]"]
 ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
 caps.latest.revision: 36
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 Write formatted data to a string. More secure versions of some of these functions are available; see [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of `swprintf` and `_swprintf_l` do not take a `count` parameter.  

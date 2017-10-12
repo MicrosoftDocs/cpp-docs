@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C4087"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4087"
+f1_keywords: ["C4087"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4087"]
 ms.assetid: 546e4d57-5c8e-422c-8ef1-92657336dad5
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning (level 1) C4087
 'function' : declared with 'void' parameter list  

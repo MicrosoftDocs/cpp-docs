@@ -15,7 +15,6 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # sync_shared Class
 Describes a [synchronization filter](../standard-library/allocators-header.md) that uses a mutex to control access to a cache object that is shared by all allocators.  

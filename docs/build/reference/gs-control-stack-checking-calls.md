@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/GS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "disabling stack probes"
-  - "GS compiler option [C++]"
-  - "/GS compiler option [C++]"
-  - "stack, stack probes"
-  - "stack probes"
-  - "-GS compiler option [C++]"
-  - "stack checking calls"
+f1_keywords: ["/GS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["disabling stack probes", "GS compiler option [C++]", "/GS compiler option [C++]", "stack, stack probes", "stack probes", "-GS compiler option [C++]", "stack checking calls"]
 ms.assetid: 40daed7c-f942-4085-b872-01e12b37729e
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /Gs (Control Stack Checking Calls)
 Controls stack probes.  

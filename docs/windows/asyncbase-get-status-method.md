@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "async/Microsoft::WRL::AsyncBase::get_Status"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "get_Status method"
+f1_keywords: ["async/Microsoft::WRL::AsyncBase::get_Status"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["get_Status method"]
 ms.assetid: 9823ecb9-212e-471d-b76f-7b8f21208905
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # AsyncBase::get_Status Method
 Retrieves a value that indicates the status of the asynchronous operation.  

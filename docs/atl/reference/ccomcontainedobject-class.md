@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComContainedObject', 'ATLCOM/ATL::CComContainedObject', 'ATLCOM/ATL::CComContainedObject::CComContainedObject', 'ATLCOM/ATL::CComContainedObject::AddRef', 'ATLCOM/ATL::CComContainedObject::GetControllingUnknown', 'ATLCOM/ATL::CComContainedObject::QueryInterface', 'ATLCOM/ATL::CComContainedObject::Release']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "aggregate objects [C++], in ATL"
-  - "aggregation [C++], ATL objects"
-  - "CComContainedObject class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["aggregate objects [C++], in ATL", "aggregation [C++], ATL objects", "CComContainedObject class"]
 ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComContainedObject Class
 This class implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) by delegating to the owner object's **IUnknown**.  

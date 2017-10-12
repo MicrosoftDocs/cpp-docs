@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "04/25/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C2280"
-helpviewer_keywords: 
-  - "C2280"
-dev_langs: 
-  - "C++"
+f1_keywords: ["C2280"]
+helpviewer_keywords: ["C2280"]
+dev_langs: ["C++"]
 ms.assetid: e6c5b1fb-2b9b-4554-8ff9-775eeb37161b
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C2280  
   

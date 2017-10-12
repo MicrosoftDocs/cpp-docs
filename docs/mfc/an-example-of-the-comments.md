@@ -14,7 +14,6 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # An Example of the Comments
 The following partial listing of class `CChildFrame` uses most of the standard comments that MFC employs in its classes to divide class members by the ways they are used:  

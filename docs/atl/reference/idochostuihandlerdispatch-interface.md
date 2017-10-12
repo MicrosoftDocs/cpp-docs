@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords:
- - "IDocHostUIHandlerDispatch"
- - "atlbase/ATL::IDocHostUIHandlerDispatch"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDocHostUIHandlerDispatch interface"
+f1_keywords: ["IDocHostUIHandlerDispatch", "atlbase/ATL::IDocHostUIHandlerDispatch"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDocHostUIHandlerDispatch interface"]
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IDocHostUIHandlerDispatch Interface
 An interface to the Microsoft HTML parsing and rendering engine.  

@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "walkthrough, deploying a Visual C++ application by using the redistributable package"
+dev_langs: ["C++"]
+helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package
 This step-by-step article describes how to use the Visual C++ Redistributable Package to deploy a Visual C++ application.  

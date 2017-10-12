@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::CDynamicParameterAccessor::SetParam"
-  - "ATL::CDynamicParameterAccessor::SetParam<ctype>"
-  - "CDynamicParameterAccessor.SetParam"
-  - "ATL.CDynamicParameterAccessor.SetParam"
-  - "SetParam"
-  - "CDynamicParameterAccessor:SetParam"
-  - "CDynamicParameterAccessor::SetParam<ctype>"
-  - "CDynamicParameterAccessor::SetParam"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetParam method"
+f1_keywords: ["ATL::CDynamicParameterAccessor::SetParam", "ATL::CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor.SetParam", "ATL.CDynamicParameterAccessor.SetParam", "SetParam", "CDynamicParameterAccessor:SetParam", "CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor::SetParam"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetParam method"]
 ms.assetid: e2349220-545c-46ad-90da-9113ac52551a
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDynamicParameterAccessor::SetParam
 Sets the parameter buffer using the specified (non-string) data.  

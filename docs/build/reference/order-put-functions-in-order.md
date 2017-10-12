@@ -25,69 +25,60 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /ORDER (Put Functions in Order)
-```  
-/ORDER:@filename  
-```  
-  
-## Parameters  
- *filename*  
- A text file specifying the linking order for COMDAT functions.  
-  
-## Remarks  
- The /ORDER option tells LINK to optimize your program by placing certain COMDATs into the image in a predetermined order. LINK places the functions in the specified order within each section in the image.  
-  
- Specify the order in *filename*, which is a text file (response file) that lists the COMDATs in the order you want to link them. Each line in *filename* contains the name of one COMDAT. An object contains COMDATs if it has been compiled with the /Gy option. Function names are case sensitive.  
-  
- LINK uses decorated forms of identifiers. The compiler decorates an identifier when it creates the .obj file. Use the [DUMPBIN](../../build/reference/dumpbin-reference.md) tool to get the decorated form of an identifier when you need to specify it to the linker. For more information on decorated names, see [Decorated Names](../../build/reference/decorated-names.md).  
-  
- If more than one /ORDER specification is used, the last one specified takes effect.  
-  
- Ordering allows you to optimize your program's paging behavior through swap tuning by grouping a function with the functions it calls. You can also group frequently called functions together. These techniques increase the probability that a called function is in memory when it is needed and will not have to be paged from disk.  
-  
- The linker will prepend an underscore (_) to every decorated name in *filename* unless the name starts with a question mark (?) or at sign (@). For example, if an object file contains `extern "C" int func(int)` and `int main(void)`, DUMPBIN [/SYMBOLS](../../build/reference/symbols.md) will list these decorated names:  
-  
-```  
-009 00000000 SECT3  notype ()    External     | _func  
-00A 00000008 SECT3  notype ()    External     | _main  
-```  
-  
- However, the name specified in the order file should be `func` and `main`.  
-  
- The /ORDER option disables incremental linking.  
-  
+
+Specify the link order for separately packaged (COMDAT) functions.
+
+## Syntax
+
+>/ORDER:@*filename*
+
+### Parameters
+
+*filename*  
+A text file that specifies the link order for COMDAT functions.
+
+## Remarks
+
+The **/ORDER** compiler option allows you to optimize your program's paging behavior by grouping a function together with the functions it calls. You can also group frequently called functions together. These techniques, known as *swap tuning* or *paging optimization*, increase the probability that a called function is in memory when it is needed and does not have to be paged from disk.
+
+When you compile your source code into an object file, you can tell the compiler to put each function into its own section, called a *COMDAT*, by using the [/Gy (Enable function-level linking)](../../build/reference/gy-enable-function-level-linking.md) compiler option. The **/ORDER** linker option tells the linker to place COMDATs into the executable image in the order you specify.
+
+To specify the COMDAT order, create a *response file*, a text file that lists each COMDAT by name, one per line, in the order you want them to be placed by the linker. Pass the name of this file as the *filename* parameter of the **/ORDER** option. For C++ functions, the name of a COMDAT is the decorated form of the function name. Use the undecorated name for C functions, `main`, and for C++ functions declared as `extern "C"`. Function names and decorated names are case sensitive. For more information on decorated names, see [Decorated Names](../../build/reference/decorated-names.md). 
+
+To find the decorated names of your COMDATs, use the [DUMPBIN](../../build/reference/dumpbin-reference.md) tool's [/SYMBOLS](../../build/reference/symbols.md) option on the object file. The linker automatically prepends an underscore (\_) to function names in the response file unless the name starts with a question mark (?) or at sign (@). For example, if a source file, example.cpp, contains functions `int cpp_func(int)`, `extern "C" int c_func(int)` and `int main(void)`, the command `DUMPBIN /SYMBOLS example.obj` lists these decorated names:
+
+```Output
+...
+088 00000000 SECT1A notype ()    External     | ?cpp_func@@YAHH@Z (int __cdecl cpp_func(int))
+089 00000000 SECT22 notype ()    External     | _c_func
+08A 00000000 SECT24 notype ()    External     | _main
+...
+```
+
+In this case, specify the names as `?cpp_func@@YAHH@Z`, `c_func`, and `main` in your response file.
+
+If more than one **/ORDER** option appears in the linker options, the last one specified takes effect.
+
+The **/ORDER** option disables incremental linking. You may see linker warning [LNK4075](../../error-messages/tool-errors/linker-tools-warning-lnk4075.md) when you specify this option if incremental linking is enabled, or if you have specified the [/ZI (Incremental PDB)](../../build/reference/z7-zi-zi-debug-information-format.md) compiler option. To silence this warning, you can use the [/INCREMENTAL:NO](../../build/reference/incremental-link-incrementally.md) linker option to turn off incremental linking, and use the [/Zi (Generate PDB)](../../build/reference/z7-zi-zi-debug-information-format.md) compiler option to generate a PDB without incremental linking.
+
 > [!NOTE]
->  LINK cannot order static functions because static function names are not public symbol names. When /ORDER is specified, linker warning LNK4037 is generated for each symbol, in the order file, that is either static or not found.  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **Linker** folder.  
-  
-3.  Click the **Optimization** property page.  
-  
-4.  Modify the **Function Order** property.  
-  
-### To set this linker option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.FunctionOrder%2A>.  
-  
-## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+> LINK cannot order static functions because static function names are not public symbol names. When **/ORDER** is specified, linker warning [LNK4037](../../error-messages/tool-errors/linker-tools-warning-lnk4037.md) is generated for each symbol in the order response file that is either static or not found.
+
+### To set this linker option in the Visual Studio development environment
+
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
+
+1. Under **Configuration Properties**, open **Linker** and then choose the **Optimization** property page.
+
+1. Modify the **Function Order** property to contain the name of your response file.
+
+### To set this linker option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.FunctionOrder%2A>.
+
+## See Also
+
+[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[Linker Options](../../build/reference/linker-options.md)

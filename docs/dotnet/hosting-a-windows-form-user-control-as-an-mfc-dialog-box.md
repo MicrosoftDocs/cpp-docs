@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], Windows Forms support"
-  - "Windows Forms [C++], hosting as MFC Dialog"
-  - "hosting Windows Forms control [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms [C++], hosting as MFC Dialog", "hosting Windows Forms control [C++]"]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Hosting a Windows Form User Control as an MFC Dialog Box
 MFC provides the template class [CWinFormsDialog](../mfc/reference/cwinformsdialog-class.md) so that you can host a Windows Forms user control (<xref:System.Windows.Forms.UserControl>) in a modal or modeless MFC dialog box. `CWinFormsDialog` is derived from the MFC class [CDialog](../mfc/reference/cdialog-class.md), so the dialog box can be launched as modal or modeless.  

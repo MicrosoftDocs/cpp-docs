@@ -15,7 +15,6 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # time_get_byname Class
 The derived template class describes an object that can serve as a locale facet of type `time_get`\<CharType, InputIterator>.  

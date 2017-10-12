@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL, windows"
-  - "windows [C++], ATL"
-  - "contained windows in ATL"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL, windows", "windows [C++], ATL", "contained windows in ATL"]
 ms.assetid: 7b3d79e5-b569-413f-9b98-df4f14efbe2b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using Contained Windows
 ATL implements contained windows with [CContainedWindowT](../atl/reference/ccontainedwindowt-class.md). A contained window represents a window that delegates its messages to a container object instead of handling them in its own class.  

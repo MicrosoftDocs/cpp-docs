@@ -56,6 +56,8 @@ Enable up to 30% faster incremental link times (vs. Visual Studio 2015) by not c
 
 [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] allows using /sdl with /await. We removed the /RTC limitation with Coroutines. 
 
+**Visual Studio 2017 version 15.3**: The Visual C++ compiler supports about 75% of C++17 features, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the /std:c++17 switch. The /permissive- conformance mode includes partial support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md). 
+
 ### Codegen, security, diagnostics and versioning
 This release brings several improvements in optimization, code generation, toolset versioning, and diagnostics. Some notable improvements include:  
 
@@ -67,6 +69,9 @@ This release brings several improvements in optimization, code generation, tools
 - When using co-routines, the experimental keyword "yield" (available under the /await switch) has been removed. Your code should be updated to use `co_yield` instead. For more information, see the [Visual C++ Team blog](https://blogs.msdn.microsoft.com/vcblog/). 
 
 **Visual Studio 2017 version 15.3**: Additional improvements to diagnostics in the compiler. For more information, see [Diagnostic Improvements in Visual Studio 2017 15.3.0](https://blogs.msdn.microsoft.com/vcblog/2017/07/21/diagnostic-improvements-in-vs2017-15-3-0/).
+
+**Visual Studio 2017 version 15.5**:
+Visual C++ runtime performance continues to improve due to better generated code quality. This means that you can simply recompile your code, and your app just runs faster. Some of the compiler optimizations are brand new, such as the vectorization of conditional scalar stores, the combining of calls sin(x) and cos(x) into a new sincos(x), and the elimination of redundant instructions from the SSA Optimizer. Other compiler optimizations are improvements to existing functionality such as vectorizer heuristics for conditional expressions, better loop optimizations, and float min/max codegen. The linker has a new and faster /OPT:ICF implementation which can result in up to 9% link time speedups, and there are other perf fixes in "incremental linking". For more information, see [/OPT (Optimizations)](https://docs.microsoft.com/en-us/cpp/build/reference/opt-optimizations) and [/INCREMENTAL (Link Incrementally)](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally).
 
 ## C++ Libraries
 
@@ -185,6 +190,19 @@ The CPPRestSDK, a cross-platform web API for C++, has been updated to version 2.
 * Win32 projects are now under the Windows Desktop category in the **New Project** dialog.
 * The Windows Console and Desktop Application templates now create the projects without displaying a wizard. There's a new Windows Desktop Wizard now under the same category that displays the same options as before.
 
+**Visual Studio 2017 version 15.5**:
+Several C++ operations that use the IntelliSense engine for refactoring and code navigation run much faster. The following numbers are based on the Visual Studio Chromium solution with 3500 projects: 
+|||
+|-|-|
+|Feature|Performance Improvement| 
+|Rename|5.3x| 
+|Change Signature |4.5x| 
+|Find All References|4.7x| 
+
+ 
+ 
+C++ now supports Ctrl+Click GoTo Definition, making mouse navigation to definitions easy. The Structure Visualizer from the Productivity Power Tools pack is now also included in the product by default.
+
 ### Intellisense  
 * The new SQLite-based database engine is now being used by default. This will speed up database operations like Go To Definition and Find All References, and will significantly improve initial solution parse time. The setting has been moved to Tools > Options > Text Editor > C/C++ > Advanced (it was formerly under ...C/C++ > Experimental).
 
@@ -249,6 +267,9 @@ The popular extension [Visual C++ for Linux Development](https://visualstudiogal
 
 **Visual Studio 2017 version 15.2**: Improvements for cross-platform code sharing and type visualization. For more information, see [Linux C++ improvements for cross-platform code sharing and type visualization](https://blogs.msdn.microsoft.com/vcblog/2017/05/10/linux-cross-platform-and-type-visualization/).
 
+**Visual Studio 2017 version 15.5**:
+The Linux workload has added support for rsync as an alternative to sftp for synchronizing files to remote Linux machines.  
+
 ### Game Development with C++:  
 Use the full power of C++ to build professional games powered by DirectX or Cocos2d.  
 
@@ -275,6 +296,9 @@ The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com
 ![CppCoreCheck](media/CppCoreCheck.png "CppCoreCheck properties page") 
 
 **Visual Studio 2017 version 15.3**: Support added for rules related to resource management. For more information, see [Using the C++ Core Guidelines checkers](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).
+
+**Visual Studio 2017 version 15.5**:
+New C++ Core Guidelines checks cover smart pointer correctness, correct use of global initializers, and flagging uses of constructs like `goto` and bad casts. 
 
 ## Unit Testing
 

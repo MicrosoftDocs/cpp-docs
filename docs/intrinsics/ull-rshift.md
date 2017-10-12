@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__ull_rshift"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ull_rshift intrinsic"
-  - "__ull_rshift intrinsic"
+f1_keywords: ["__ull_rshift"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ull_rshift intrinsic", "__ull_rshift intrinsic"]
 ms.assetid: b7ff5254-3540-4e6e-b57c-a6c4beb7dca2
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __ull_rshift
 **Microsoft Specific**  

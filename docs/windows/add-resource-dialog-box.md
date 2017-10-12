@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.insertresource"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resources [Visual Studio], adding"
-  - "Add Resource dialog box"
+f1_keywords: ["vc.editors.insertresource"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resources [Visual Studio], adding", "Add Resource dialog box"]
 ms.assetid: e9fb6967-738f-47e8-ab58-728cf35b3af0
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Add Resource Dialog Box
 Use this dialog box to add resources to a C++ Windows desktop application project.  

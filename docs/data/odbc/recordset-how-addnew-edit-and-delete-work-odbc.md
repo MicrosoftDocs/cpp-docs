@@ -4,46 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "records [C++], updating"
-  - "record editing [C++], in recordsets"
-  - "recordsets [C++], adding records"
-  - "records [C++], adding"
-  - "ODBC recordsets [C++], adding records"
-  - "recordsets [C++], editing records"
-  - "recordsets [C++], updating"
-  - "AddNew method"
-  - "ODBC recordsets [C++], deleting records"
-  - "records [C++], deleting in recordsets"
-  - "data in recordsets [C++]"
-  - "recordsets [C++], deleting records"
-  - "ODBC recordsets [C++], editing records"
-  - "records [C++], editing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["records [C++], updating", "record editing [C++], in recordsets", "recordsets [C++], adding records", "records [C++], adding", "ODBC recordsets [C++], adding records", "recordsets [C++], editing records", "recordsets [C++], updating", "AddNew method", "ODBC recordsets [C++], deleting records", "records [C++], deleting in recordsets", "data in recordsets [C++]", "recordsets [C++], deleting records", "ODBC recordsets [C++], editing records", "records [C++], editing"]
 ms.assetid: cab43d43-235a-4bed-ac05-67d10e94f34e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Recordset: How AddNew, Edit, and Delete Work (ODBC)
 This topic applies to the MFC ODBC classes.  

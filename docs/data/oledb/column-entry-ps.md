@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "COLUMN_ENTRY_PS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COLUMN_ENTRY_PS macro"
+f1_keywords: ["COLUMN_ENTRY_PS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COLUMN_ENTRY_PS macro"]
 ms.assetid: 563c12b0-3376-49d5-a14f-aa68d1e63a7a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # COLUMN_ENTRY_PS
 Represents a binding on the rowset to the specific column in the rowset.  

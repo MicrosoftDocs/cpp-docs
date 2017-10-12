@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4526"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4526"
+f1_keywords: ["C4526"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4526"]
 ms.assetid: 490f8916-5fdc-4cad-b412-76c3382a5976
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 1) C4526
 'function' : static member function cannot override virtual function 'virtual function'override ignored, virtual function will be hidden  

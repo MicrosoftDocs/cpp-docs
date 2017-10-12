@@ -15,7 +15,6 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # is_nothrow_constructible Class
 Tests whether a type is constructible and is known not to throw when the specified argument types are used.  

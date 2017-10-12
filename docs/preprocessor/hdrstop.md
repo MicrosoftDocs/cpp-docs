@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "hdrstop_CPP"
-  - "vc-pragma.hdrstop"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hdrstop pragma"
-  - "pragmas, hdrstop"
+f1_keywords: ["hdrstop_CPP", "vc-pragma.hdrstop"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["hdrstop pragma", "pragmas, hdrstop"]
 ms.assetid: 5ea8370a-10d1-4538-ade6-4c841185da0e
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # hdrstop
 Gives you additional control over precompilation file names and over the location at which the compilation state is saved.  

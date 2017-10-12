@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "errors [C++]"
-  - "linker [C++], errors and warnings"
-  - "errors [C++], linker"
+dev_langs: ["C++"]
+helpviewer_keywords: ["errors [C++]", "linker [C++], errors and warnings", "errors [C++], linker"]
 ms.assetid: d4b12c0f-4dae-48b2-9b9e-fedf94c94cb0
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Linker Tools Errors and Warnings
 LINK, LIB, DUMPBIN, and EDITBIN generate these errors and warnings. To get help on a particular error message, either click the mouse on an error number in the Output window and press F1, type the error number in the **Look for** box in the Index, or click a link below.  

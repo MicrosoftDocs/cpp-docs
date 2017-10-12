@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3206"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3206"
+f1_keywords: ["C3206"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3206"]
 ms.assetid: d62995b5-e349-4418-bbe8-8a5e776ca7b0
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3206
 'function' : invalid type argument for 'param', missing type argument list on class type 'typename'  

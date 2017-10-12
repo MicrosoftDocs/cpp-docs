@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3299"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3299"
+f1_keywords: ["C3299"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3299"]
 ms.assetid: 7cabdf01-bceb-404f-9401-cdd9c7fc1641
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3299
 'member_function' : cannot specify constraints, they are inherited from the base method  

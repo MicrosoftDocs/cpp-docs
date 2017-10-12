@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4668"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4668"
+f1_keywords: ["C4668"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4668"]
 ms.assetid: c6585460-bc4a-4a15-9242-4cbfce53c961
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 4) C4668
 'symbol' is not defined as a preprocessor macro, replacing with '0' for 'directives'  

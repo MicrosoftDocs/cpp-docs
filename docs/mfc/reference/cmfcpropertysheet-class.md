@@ -15,7 +15,6 @@ caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCPropertySheet Class
 The `CMFCPropertySheet` class supports a property sheet where each property page is denoted by a page tab, a toolbar button, a tree control node, or a list item.  

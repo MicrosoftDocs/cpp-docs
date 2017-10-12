@@ -15,7 +15,6 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # fpos Class
 The template class describes an object that can store all the information needed to restore an arbitrary file-position indicator within any stream. An object of class fpos\< **St**> effectively stores at least two member objects:  

@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "LNK2038"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LNK2038"
+f1_keywords: ["LNK2038"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LNK2038"]
 ms.assetid: b8d0fb35-eee6-4f52-b3c4-239cb4f65656
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Linker Tools Error LNK2038
 mismatch detected for '\<name>': value '\<value 1>' doesn't match value '\<value 2>' in \<filename.obj>  

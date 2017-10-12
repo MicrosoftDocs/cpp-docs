@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "event/Microsoft::WRL::Details::InvokeHelper::Invoke"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Invoke method"
+f1_keywords: ["event/Microsoft::WRL::Details::InvokeHelper::Invoke"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Invoke method"]
 ms.assetid: 98618815-c30e-4699-b3dd-203c91b1bf3b
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # InvokeHelper::Invoke Method
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CCRTAllocator', 'ATLCORE/ATL::CCRTAllocator', 'ATLCORE/ATL::CCRTAllocator::Allocate', 'ATLCORE/ATL::CCRTAllocator::Free', 'ATLCORE/ATL::CCRTAllocator::Reallocate']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CCRTAllocator class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCRTAllocator class"]
 ms.assetid: 3e1b8cb0-859a-41ab-8e93-6f0b5ceca49d
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CCRTAllocator Class
 This class provides methods for managing memory using CRT memory routines.  

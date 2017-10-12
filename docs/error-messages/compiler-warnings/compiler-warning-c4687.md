@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4687"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4687"
+f1_keywords: ["C4687"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4687"]
 ms.assetid: 2f28e0b1-7358-4c88-bd70-aad8f0aa004c
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning C4687
 'class': a sealed abstract class cannot implement an interface 'interface'  

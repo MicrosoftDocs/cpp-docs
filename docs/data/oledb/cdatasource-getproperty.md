@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::CDataSource::GetProperty"
-  - "ATL.CDataSource.GetProperty"
-  - "CDataSource.GetProperty"
-  - "CDataSource::GetProperty"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetProperty method"
+f1_keywords: ["ATL::CDataSource::GetProperty", "ATL.CDataSource.GetProperty", "CDataSource.GetProperty", "CDataSource::GetProperty"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetProperty method"]
 ms.assetid: 6531147c-b164-4ab5-a4a7-509634b85b4d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDataSource::GetProperty
 Returns the value of a specified property for the connected data source object.  

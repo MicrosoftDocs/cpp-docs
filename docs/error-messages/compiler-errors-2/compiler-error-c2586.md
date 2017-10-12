@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2586"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2586"
+f1_keywords: ["C2586"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2586"]
 ms.assetid: dae703c7-5c38-4db6-8411-4d1b22713eb5
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C2586
 incorrect user-defined conversion syntax : illegal indirections  

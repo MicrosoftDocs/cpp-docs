@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.appwiz.makefile.project"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Makefile projects, creating"
-  - "project files [C++], Makefile projects"
+f1_keywords: ["vc.appwiz.makefile.project"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Makefile projects, creating", "project files [C++], Makefile projects"]
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Creating a Makefile Project
 If you have a project that you build from the command line with a makefile, then the Visual Studio development environment will not recognize your project. To open and build your project using [!INCLUDE[vsUltShort](../ide/includes/vsultshort_md.md)], Visual Studio Professional, or Visual Studio Express for Windows Desktop, first create an empty project by selecting the MakeFile project template. You can then use this project to build your project from the Visual Studio development environment.  

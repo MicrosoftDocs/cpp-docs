@@ -14,7 +14,6 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 helpviewer_keywords: ["std::allocator_traits [C++]", "std::allocator_traits [C++], propagate_on_container_move_assignment", "std::allocator_traits [C++], const_pointer", "std::allocator_traits [C++], propagate_on_container_swap", "std::allocator_traits [C++], propagate_on_container_copy_assignment", "std::allocator_traits [C++], difference_type", "std::allocator_traits [C++], allocator_type", "std::allocator_traits [C++], value_type", "std::allocator_traits [C++], pointer", "std::allocator_traits [C++], size_type", "std::allocator_traits [C++], const_void_pointer", "std::allocator_traits [C++], void_pointer", "std::allocator_traits [C++], allocate", "std::allocator_traits [C++], construct", "std::allocator_traits [C++], deallocate", "std::allocator_traits [C++], destroy", "std::allocator_traits [C++], max_size", "std::allocator_traits [C++], select_on_container_copy_construction"]
 ---
 # allocator_traits Class

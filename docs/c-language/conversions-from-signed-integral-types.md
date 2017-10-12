@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "integral conversions, from signed"
-  - "integers, converting"
-  - "conversions [C++], integral"
-  - "data type conversion [C++], signed and unsigned integers"
-  - "type conversion [C++], signed and unsigned integers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["integral conversions, from signed", "integers, converting", "conversions [C++], integral", "data type conversion [C++], signed and unsigned integers", "type conversion [C++], signed and unsigned integers"]
 ms.assetid: 5eea32f8-8b14-413d-acac-c063b3d118d7
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Conversions from Signed Integral Types
 When a signed integer is converted to an unsigned integer with equal or greater size and the value of the signed integer is not negative, the value is unchanged. The conversion is made by sign-extending the signed integer. A signed integer is converted to a shorter signed integer by truncating the high-order bits. The result is interpreted as an unsigned value, as shown in this example.  

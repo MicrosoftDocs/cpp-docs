@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Where Does Remote Automation Fit In?
 DCOM was released in 1996 and is available with 32-bit and 64-bit platforms only. The Visual Basic team at Microsoft has always seen Visual Basic as using Automation to allow its components to communicate. The lack of a distributed version severely limited the use of these capabilities in enterprise environments, so the team developing Visual Basic 4.0 Enterprise Edition decided to investigate the creation of its own set of remoting components for the Automation parts of OLE and COM. Clearly, a major goal was to ensure that the result would be compatible with and could be replaced by DCOM when it became available. They then proceeded to implement Remote Automation (RA) for both 16-bit and 32-bit Windows platforms.  

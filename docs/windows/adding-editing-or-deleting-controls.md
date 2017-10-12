@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Dialog editor, creating controls"
-  - "dialog box controls, adding to dialog boxes"
-  - "controls [C++], adding to dialog boxes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Dialog editor, creating controls", "dialog box controls, adding to dialog boxes", "controls [C++], adding to dialog boxes"]
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Adding, Editing, or Deleting Controls
 Using the Dialog editor, you can add, resize, edit, and delete controls in dialog boxes. You can also edit the properties of a control, such as its ID, or whether it is initially visible at run time.  

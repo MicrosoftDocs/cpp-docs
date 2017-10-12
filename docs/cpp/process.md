@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "Process"
-  - "process_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__declspec keyword [C++], process"
-  - "process __declspec keyword"
+f1_keywords: ["process_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__declspec keyword [C++], process", "process __declspec keyword"]
 ms.assetid: 60eecc2f-4eef-4567-b9db-aaed34733023
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # process
 Specifies that your managed application process should have a single copy of a particular global variable, static member variable, or static local variable shared across all application domains in the process. This is primarily intended to be used when compiling with **/clr:pure**, because under **/clr:pure** global and static variables are per application domain, by default. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015. When compiling with **/clr**, global and static variables are per process by default (do not need to use `__declspec(process)`.  

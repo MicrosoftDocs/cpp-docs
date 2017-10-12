@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interfaces, adding properties"
-  - "properties [C++], adding to interfaces"
+dev_langs: ["C++"]
+helpviewer_keywords: ["interfaces, adding properties", "properties [C++], adding to interfaces"]
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Adding a Property (Visual C++)
 You can use the [Add Property Wizard](../ide/names-add-property-wizard.md) to add a method to an interface in your project.  

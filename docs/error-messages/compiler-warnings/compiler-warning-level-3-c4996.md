@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "06/07/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4996"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4996"
+f1_keywords: ["C4996"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4996"]
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
 caps.latest.revision: 34
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Warning (level 3) C4996
 

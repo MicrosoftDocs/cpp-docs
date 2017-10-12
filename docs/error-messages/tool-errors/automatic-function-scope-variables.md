@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "automatic variables"
-  - "variables, automatic"
-  - "functions [C++], scope"
-  - "scope, declared within functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["automatic variables", "variables, automatic", "functions [C++], scope", "scope, declared within functions"]
 ms.assetid: 6e1a14c2-1fb0-4937-8628-8d963cc35ed4
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Automatic (Function Scope) Variables
 A variable declared within a function can only be used within the scope of that function.  

@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "limits, integer"
-  - "limits, integer constants"
-  - "integer limits"
+dev_langs: ["C++"]
+helpviewer_keywords: ["limits, integer", "limits, integer constants", "integer limits"]
 ms.assetid: 0c23cbd6-29fb-4d9c-b689-5984e19748de
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C++ Integer Limits
 **Microsoft Specific**  

@@ -7,7 +7,8 @@ ms.suite: ""
 ms.technology:  
   - "cpp-windows"
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "reference"
+f1_keywords: ["atlcore/ATL::_ATL_BASE_MODULE", "atlbase/ATL::_ATL_COM_MODULE", "atlbase/ATL::_ATL_MODULE", "atlbase/ATL::_ATL_WIN_MODULE", "atlutil/ATL::ATL_URL_PORT", "atlbase/ATL::CComDispatchDriver", "atlbase/ATL::CComGlobalsThreadModel", "atlbase/ATL::CComObjectThreadModel", "atlwin/ATL::CContainedWindow", "atlpath/ATL::CPath", "atlpath/ATL::CPathA", "atlpath/ATL::CPathW", " atlsimpcoll/ATL::CSimpleValArray", " atlutil/ATL::LPCURL", "atlbase/ATL::DefaultThreadTraits", "atlutil/ATL::LPURL"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -19,20 +20,6 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ATL Typedefs
 The Active Template Library includes the following typedefs.  
@@ -67,7 +54,10 @@ typedef ATL::_ATL_BASE_MODULE70 _ATL_BASE_MODULE;
  Used in every ATL project. Based on [_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md).  
   
  Classes that are part of the ATL 7.0 Module Classes derive from the _ATL_BASE_MODULE structure.  For more information on ATL Module Classes, refer to [COM Modules Classes](../../atl/com-modules-classes.md).  
-  
+
+## Requirements
+**Header:** atlcore.h
+
 ##  <a name="_atl_com_module"></a>  _ATL_COM_MODULE  
  Defined as a typedef based on _ATL_COM_MODULE70.  
   
@@ -77,6 +67,9 @@ typedef ATL::_ATL_COM_MODULE70 _ATL_COM_MODULE;
   
 ### Remarks  
  Used by ATL projects which use COM features. Based on [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md).  
+
+## Requirements
+**Header:** atlbase.h
   
 ##  <a name="_atl_module"></a>  _ATL_MODULE  
  Defined as a typedef based on _ATL_MODULE70.  
@@ -84,6 +77,8 @@ typedef ATL::_ATL_COM_MODULE70 _ATL_COM_MODULE;
 ```   
 typedef ATL::_ATL_MODULE70 _ATL_MODULE;   
 ```  
+## Requirements
+**Header:** 
   
 ### Remarks  
  Based on [_ATL_MODULE70](../../atl/reference/atl-module70-structure.md).  
@@ -98,6 +93,9 @@ typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
   
 ### Remarks  
  Used by any ATL projects which use windowing features. Based on [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md).  
+
+## Requirements
+**Header:** atlbase.h 
   
 ##  <a name="atl_url_port"></a>  ATL_URL_PORT 
   The type used by [CUrl](curl-class.md) for specifying a port number.
@@ -105,12 +103,17 @@ typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
 typedef WORD ATL_URL_PORT;
 ```  
 
+## Requirements
+**Header:** atlutil.h
+
 ##  <a name="ccomdispatchdriver"></a>  CComDispatchDriver  
  This class manages COM interface pointers.  
   
 ```   
 typedef CComQIPtr<IDispatch, &__uuidof(IDispatch)> CComDispatchDriver;   
 ```  
+## Requirements
+**Header:** atlbase.h
   
 ##  <a name="ccomglobalsthreadmodel"></a>  CComGlobalsThreadModel  
  Calls the appropriate thread model methods, regardless of the threading model being used.  
@@ -145,6 +148,9 @@ typedef CComMultiThreadModel CComGlobalsThreadModel;
  S= `CComSingleThreadModel`; M= `CComMultiThreadModel`  
   
  Use `CComObjectThreadModel` within a single object class. Use `CComGlobalsThreadModel` in an object that is globally available to your program, or when you want to protect module resources across multiple threads.  
+
+## Requirements
+**Header:** atlbase.h
   
 ##  <a name="ccomobjectthreadmodel"></a>  CComObjectThreadModel  
  Calls the appropriate thread model methods, regardless of the threading model being used.  
@@ -179,6 +185,9 @@ typedef CComMultiThreadModel CComObjectThreadModel;
  S= `CComSingleThreadModel`; M= `CComMultiThreadModel`  
   
  Use `CComObjectThreadModel` within a single object class. Use `CComGlobalsThreadModel` in an object that is either globally available to your program, or when you want to protect module resources across multiple threads.  
+
+## Requirements
+**Header:** atlbase.h
   
 ##  <a name="ccontainedwindow"></a>  CContainedWindow  
  This class is a specialization of **CContainedWindowT.**  
@@ -186,6 +195,9 @@ typedef CComMultiThreadModel CComObjectThreadModel;
 ```   
 typedef CContainedWindowT<CWindow> CContainedWindow;   
 ```  
+
+## Requirements
+**Header:** atlwin.h
   
 ### Remarks  
  `CContainedWindow` is a specialization of [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md). If you want to change the base class or traits, use `CContainedWindowT` directly.  
@@ -196,13 +208,19 @@ typedef CContainedWindowT<CWindow> CContainedWindow;
 ```   
 typedef CPathT<CString> CPath;   
 ```  
+
+## Requirements
+**Header:** atlpath.h
   
 ##  <a name="cpatha"></a>  CPathA  
  A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringA`.  
   
 ```   
 typedef CPathT<CStringA> CPathA;   
-```  
+```
+
+## Requirements
+**Header:** atlpath.h  
   
 ##  <a name="cpathw"></a>  CPathW  
  A specialization of [CPathT](../../atl/reference/cpatht-class.md) using `CStringW`.  
@@ -210,6 +228,8 @@ typedef CPathT<CStringA> CPathA;
 ```   
 typedef ATL::CPathT<CStringW> CPathW;   
 ```  
+## Requirements
+**Header:** atlpath.h
   
 ##  <a name="csimplevalarray"></a>  CSimpleValArray  
  Represents an array for storing simple types.  
@@ -217,9 +237,14 @@ typedef ATL::CPathT<CStringW> CPathW;
 ```   
 #define CSimpleValArray CSimpleArray   
 ```  
+
   
 ### Remarks  
  `CSimpleValArray` is provided for creating and managing arrays containing simple data types. It is a simple #define of [CSimpleArray](../../atl/reference/csimplearray-class.md).  
+
+
+## Requirements
+**Header:** atlsimpcoll.h
   
 ##  <a name="lpcurl"></a>  LPCURL  
  A pointer to a constant [CUrl](../../atl/reference/curl-class.md) object.  
@@ -227,6 +252,9 @@ typedef ATL::CPathT<CStringW> CPathW;
 ```   
 typedef const CUrl* LPCURL;   
 ```  
+
+## Requirements
+**Header:** atlutil.h
 
 ##  <a name="defaultthreadtraits"></a>  DefaultThreadTraits
 The default thread traits class.
@@ -242,6 +270,10 @@ The default thread traits class.
 
 ## Remarks
 If the current project uses the multithreaded CRT, DefaultThreadTraits is defined as CRTThreadTraits. Otherwise, Win32ThreadTraits is used.
+
+
+## Requirements
+**Header:** atlbase.h
   
 ##  <a name="lpurl"></a>  LPURL  
  A pointer to a [CUrl](../../atl/reference/curl-class.md) object.  
@@ -249,7 +281,11 @@ If the current project uses the multithreaded CRT, DefaultThreadTraits is define
 ```   
 typedef CUrl* LPURL;   
 ```  
-  
+
+## Requirements
+**Header:** atlutil.h
+
+
 ## See Also  
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
  [Functions](../../atl/reference/atl-functions.md)   

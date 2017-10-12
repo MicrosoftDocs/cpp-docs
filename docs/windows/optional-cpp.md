@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.optional"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "optional attribute"
+f1_keywords: ["vc-attr.optional"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["optional attribute"]
 ms.assetid: 86656a66-8e11-4589-8e30-9b0f34eeed03
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # optional (C++)
 Specifies an optional parameter for a member function.  

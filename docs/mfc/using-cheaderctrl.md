@@ -15,7 +15,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Using CHeaderCtrl
 Use a header control, represented by class [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md), to display column headers for a columnar list. For example, a header control would be useful for implementing column controls in a spreadsheet.  

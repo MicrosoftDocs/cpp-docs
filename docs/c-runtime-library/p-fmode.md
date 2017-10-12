@@ -4,47 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "__p__fmode"
-apilocation: 
-  - "msvcr80.dll"
-  - "msvcr120.dll"
-  - "msvcr90.dll"
-  - "msvcrt.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr100.dll"
+apiname: ["__p__fmode"]
+apilocation: ["msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "__p__fmode"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__p__fmode"
+f1_keywords: ["__p__fmode"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__p__fmode"]
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __p__fmode
 Points to the `_fmode` global variable, which specifies the default *file translation mode* for file I/O operations.  

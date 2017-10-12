@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3365"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3365"
+f1_keywords: ["C3365"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3365"]
 ms.assetid: 875ec3a4-522c-4e3d-9b67-48808b857f6d
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3365
 operator 'operator' : differing operands of type 'type1' and 'type2'  

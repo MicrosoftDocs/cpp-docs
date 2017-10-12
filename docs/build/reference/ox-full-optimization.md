@@ -26,7 +26,7 @@ manager: "ghogen"
 ---
 # /Ox (Enable Most Speed Optimizations)
 
-The **/Ox** compiler option enables a combination of optimizations that favor speed. In both the Visual Studio IDE and the compiler help message, this is called full optimization, but the **/Ox** compiler option enables only a subset of the speed optimization options enabled by **/O2**.
+The **/Ox** compiler option enables a combination of optimizations that favor speed. In some versions of the Visual Studio IDE and the compiler help message, this is called *full optimization*, but the **/Ox** compiler option enables only a subset of the speed optimization options enabled by **/O2**.
 
 ## Syntax
 
@@ -34,7 +34,9 @@ The **/Ox** compiler option enables a combination of optimizations that favor sp
 
 ## Remarks
 
-The **/Ox** compiler option enables the **/O** compiler options that favor speed. The **/Ox** compiler option does not include the additional [/GF (Eliminate Duplicate Strings)](../../build/reference/gf-eliminate-duplicate-strings.md) and [/Gy (Enable Function-Level Linking)](../../build/reference/gy-enable-function-level-linking.md) options enabled by [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md). The **/Ox** compiler option is the same as using the following options in combination:
+The **/Ox** compiler option enables the **/O** compiler options that favor speed. The **/Ox** compiler option does not include the additional [/GF (Eliminate Duplicate Strings)](../../build/reference/gf-eliminate-duplicate-strings.md) and [/Gy (Enable Function-Level Linking)](../../build/reference/gy-enable-function-level-linking.md) options enabled by [/O1 or /O2 (Minimize Size, Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md). The additional options applied by **/O1** and **/O2** can cause pointers to strings or to functions to share a target address, which can affect debugging and strict language conformance. The **/Ox** option is an easy way to enable most optimizations without including **/GF** and **/Gy**. For more information, see the descriptions of the [/GF](../../build/reference/gf-eliminate-duplicate-strings.md) and [/Gy](../../build/reference/gy-enable-function-level-linking.md) options.
+
+The **/Ox** compiler option is the same as using the following options in combination:
 
 - [/Ob (Inline Function Expansion)](../../build/reference/ob-inline-function-expansion.md), where the option parameter is 2 (**/Ob2**)
 
@@ -50,11 +52,13 @@ The **/Ox** compiler option enables the **/O** compiler options that favor speed
 
 - [/O1 (Minimize Size)](../../build/reference/o1-o2-minimize-size-maximize-speed.md)
 
+- [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md)
+
 - [/Od (Disable (Debug))](../../build/reference/od-disable-debug.md)
 
 You can cancel the bias toward speed of the **/Ox** compiler option if you specify **/Oxs**, which combines the **/Ox** compiler option with [/Os (Favor Small Code)](../../build/reference/os-ot-favor-small-code-favor-fast-code.md). The combined options favor smaller code size.
 
-We recommend you specify [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Ox**, and [/O1 (Minimize Size)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Oxs**.
+To apply all available file-level optimizations for release builds, we recommend you specify [/O2 (Maximize Speed)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Ox**, and [/O1 (Minimize Size)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) instead of **/Oxs**. For even more optimization in release builds, also consider the [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md) compiler option and [/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md) linker option.
 
 ### To set this compiler option in the Visual Studio development environment
 

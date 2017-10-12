@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C3367"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3367"
+f1_keywords: ["C3367"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3367"]
 ms.assetid: e675d42b-f5b0-4d43-aab1-1f5024233102
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Compiler Error C3367
 'static_member_function' : cannot use static function to create an unbound delegate  

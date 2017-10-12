@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows Installer [C++]"
-  - "dependencies [C++], application deployment and"
-  - "application deployment [C++], about application deployment"
-  - "deploying applications [C++], about deploying applications"
-  - "libraries [C++], application deployment issues"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Windows Installer [C++]", "dependencies [C++], application deployment and", "application deployment [C++], about application deployment", "deploying applications [C++], about deploying applications", "libraries [C++], application deployment issues"]
 ms.assetid: ebd7f246-ab54-40e8-87fa-dac02c0047b3
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Deployment Concepts
 This section discusses the main considerations for deploying C++ applications.  

@@ -14,7 +14,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Setting the Dialog Box’s Background Color
 You can set the background color of your dialog boxes by handling `WM_CTLCOLOR` messages for the dialog box window. The color you set is used for only the specified dialog box.  

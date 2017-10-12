@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CRowset<TAccessor>::GetDataHere"
-  - "CRowset<TAccessor>.GetDataHere"
-  - "CRowset.GetDataHere"
-  - "GetDataHere"
-  - "CRowset::GetDataHere"
-  - "ATL::CRowset::GetDataHere"
-  - "ATL::CRowset<TAccessor>::GetDataHere"
-  - "ATL.CRowset<TAccessor>.GetDataHere"
-  - "ATL.CRowset.GetDataHere"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetDataHere method"
+f1_keywords: ["CRowset<TAccessor>::GetDataHere", "CRowset<TAccessor>.GetDataHere", "CRowset.GetDataHere", "GetDataHere", "CRowset::GetDataHere", "ATL::CRowset::GetDataHere", "ATL::CRowset<TAccessor>::GetDataHere", "ATL.CRowset<TAccessor>.GetDataHere", "ATL.CRowset.GetDataHere"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetDataHere method"]
 ms.assetid: 2fe2a987-1c4c-4299-876e-0591caf63af4
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CRowset::GetDataHere
 Retrieves data from the current row and places it into the specified buffer.  

@@ -4,51 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_fread_nolock_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+apiname: ["_fread_nolock_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fread_nolock_s"
-  - "stdio/_fread_nolock_s"
-dev_langs: 
-  - "C++"
+f1_keywords: ["_fread_nolock_s", "stdio/_fread_nolock_s"]
+dev_langs: ["C++"]
 ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # _fread_nolock_s
 Reads data from a stream, without locking other threads. This version of [fread_nolock](../../c-runtime-library/reference/fread-nolock.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

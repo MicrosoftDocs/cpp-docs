@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.range"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "range attribute"
+f1_keywords: ["vc-attr.range"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["range attribute"]
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # range (C++)
 Specifies a range of allowable values for arguments or fields whose values are set at run time.  

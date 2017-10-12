@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CFirePropNotifyEvent class, connection point classes"
-  - "connection points [C++], ATL classes"
-  - "ATL, connection points"
-  - "CComDynamicUnkArray class, connection point classes"
-  - "CFirePropNotifyEvent class"
-  - "CComUnkArray class, connection point classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CFirePropNotifyEvent class, connection point classes", "connection points [C++], ATL classes", "ATL, connection points", "CComDynamicUnkArray class, connection point classes", "CFirePropNotifyEvent class", "CComUnkArray class, connection point classes"]
 ms.assetid: 9582ba71-7ace-4df4-9c9b-1b0636953efc
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ATL Connection Point Classes
 ATL uses the following classes to support connection points:  

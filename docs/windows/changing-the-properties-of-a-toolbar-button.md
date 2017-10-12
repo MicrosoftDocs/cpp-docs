@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "toolbar controls [MFC], command ID"
-  - "toolbar buttons (in Toolbar editor), setting properties"
-  - "Toolbar editor, toolbar button properties"
-  - "command IDs, toolbar buttons"
+dev_langs: ["C++"]
+helpviewer_keywords: ["toolbar controls [MFC], command ID", "toolbar buttons (in Toolbar editor), setting properties", "Toolbar editor, toolbar button properties", "command IDs, toolbar buttons"]
 ms.assetid: b16a0635-e703-4156-acea-a54df279295a
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Changing the Properties of a Toolbar Button
 ### To change the properties of a toolbar button  

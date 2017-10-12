@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], as function input/output"
-  - "argument passing [C++]"
-  - "arguments [C++], passing"
-  - "functions [C++], strings as input/output"
-  - "argument passing [C++], C strings"
-  - "passing arguments, C strings"
-  - "CString objects, passing arguments"
-  - "string arguments"
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], as function input/output", "argument passing [C++]", "arguments [C++], passing", "functions [C++], strings as input/output", "argument passing [C++], C strings", "passing arguments, C strings", "CString objects, passing arguments", "string arguments"]
 ms.assetid: a67bebff-edf1-4cf4-bbff-d1cc6a901099
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CString Argument Passing
 This article explains how to pass [CString](../atl-mfc-shared/reference/cstringt-class.md) objects to functions and how to return `CString` objects from functions.  

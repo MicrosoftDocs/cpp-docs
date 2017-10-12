@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAutoPtrArray', 'ATLCOLL/ATL::CAutoPtrArray', 'ATLCOLL/ATL::CAutoPtrArray::CAutoPtrArray']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAutoPtrArray class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAutoPtrArray class"]
 ms.assetid: 880a70da-8c81-4427-8ac6-49aa8d424244
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAutoPtrArray Class
 This class provides methods useful when constructing an array of smart pointers.  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::deque"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "deque class [STL/CLR]"
-  - "<deque> header [STL/CLR]"
-  - "<cliext/deque> header [STL/CLR]"
+f1_keywords: ["cliext::deque"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["deque class [STL/CLR]", "<deque> header [STL/CLR]", "<cliext/deque> header [STL/CLR]"]
 ms.assetid: dd669da3-3c0e-45e9-8596-f6b483720941
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # deque (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has random access. You use the container `deque` to manage a sequence of elements that looks like a contiguous block of storage, but which can grow or shrink at either end without the need to copy any remaining elements. Thus it can implement efficiently a `double-ended queue`. (Hence the name.)  

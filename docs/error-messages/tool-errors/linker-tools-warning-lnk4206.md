@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "LNK4206"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LNK4206"
+f1_keywords: ["LNK4206"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LNK4206"]
 ms.assetid: 6c108e33-00cf-4c5a-830d-d65d470930a7
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Linker Tools Warning LNK4206
 precompiled type information not found; 'filename' not linked or overwritten; linking object as if no debug info  

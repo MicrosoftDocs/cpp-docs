@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multimap::erase"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "erase member [STL/CLR]"
+f1_keywords: ["cliext::multimap::erase"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["erase member [STL/CLR]"]
 ms.assetid: 94623cfc-4464-44a6-afd4-90a36828ac2b
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # multimap::erase (STL/CLR)
 Removes elements at specified positions.  

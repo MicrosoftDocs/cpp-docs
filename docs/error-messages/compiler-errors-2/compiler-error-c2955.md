@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2955"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2955"
+f1_keywords: ["C2955"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2955"]
 ms.assetid: 77709fb6-d69b-46fd-a62f-e8564563d01b
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C2955
 'identifier' : use of class template or alias generic requires template or generic argument list  

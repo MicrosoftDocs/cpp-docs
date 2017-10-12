@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "interface_CPP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interface class keyword"
-  - "interface struct keyword"
+f1_keywords: ["interface_CPP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["interface class keyword", "interface struct keyword"]
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
 caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # interface class  (C++ Component Extensions)
 Declares an interface.  For information on native interfaces, see [__interface](../cpp/interface.md).  

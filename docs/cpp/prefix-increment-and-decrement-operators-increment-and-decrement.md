@@ -4,42 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "--"
-  - "++"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "increment operators, syntax"
-  - "++ operator, prefix increment operators"
-  - "operators [C++], decrement"
-  - "-- operator, prefix decrement operators"
-  - "operators [C++], increment"
-  - "decrement operators, syntax"
-  - "decrement operators"
+f1_keywords: ["--", "++"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["increment operators [C++], syntax", "++ operator [C++], prefix increment operators", "operators [C++], decrement", "-- operator [C++], prefix decrement operators [C++]", "operators [C++], increment", "decrement operators [C++], syntax", "decrement operators [C++]"]
 ms.assetid: 45ea7fc7-f279-4be9-a216-1d9a0ef9eb7b
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Prefix Increment and Decrement Operators: ++ and --
 ## Syntax  

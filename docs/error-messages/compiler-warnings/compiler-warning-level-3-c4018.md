@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4018"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4018"
+f1_keywords: ["C4018"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4018"]
 ms.assetid: 6e8cbb04-d914-4319-b431-cbc2fbe40eb1
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 3) C4018
 'expression' : signed/unsigned mismatch  

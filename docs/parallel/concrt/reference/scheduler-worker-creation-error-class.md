@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['scheduler_worker_creation_error', 'CONCRT/concurrency::scheduler_worker_creation_error', 'CONCRT/concurrency::scheduler_worker_creation_error::scheduler_worker_creation_error']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "scheduler_worker_creation_error class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["scheduler_worker_creation_error class"]
 ms.assetid: 4aec1c3e-c32a-41b2-899d-2d898f23b3c7
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # scheduler_worker_creation_error Class
 This class describes an exception thrown because of a failure to create a worker execution context in the Concurrency Runtime.  

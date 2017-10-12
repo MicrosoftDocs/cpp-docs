@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DCOMCNFG"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DCOMCNFG utility"
-  - "DCOM, configuring in ATL"
+f1_keywords: ["DCOMCNFG"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DCOMCNFG utility", "DCOM, configuring in ATL"]
 ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # DCOMCNFG
 **DCOMCNFG** is a Windows NT 4.0 utility that allows you to configure various DCOM-specific settings in the registry. The **DCOMCNFG** window has three pages: Default Security, Default Properties, and Applications. Under Windows 2000 a fourth page, Default Protocols, is present.  

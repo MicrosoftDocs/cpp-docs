@@ -15,7 +15,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Standard Command and Window IDs
 The Microsoft Foundation Class Library defines a number of standard command and window IDs in Afxres.h. These IDs are most commonly used within the resource editors and the Properties window to map messages to your handler functions. All standard commands have an             **ID_** prefix. For example, when you use the menu editor, you normally bind the File Open menu item to the standard             `ID_FILE_OPEN` command ID.  

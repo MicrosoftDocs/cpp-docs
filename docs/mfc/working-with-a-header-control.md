@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Working with a Header Control
 The easy way to use a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) is in conjunction with a list control; see [Using CListCtrl](../mfc/using-clistctrl.md) later in this topic family. You can also use a header control by itself. MFC calls **InitCommonControls** for you. The key tasks are as follows:  

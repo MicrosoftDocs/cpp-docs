@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "programs [C++], projects"
-  - "project templates [Visual Studio], C++"
-  - "TODO comments [C++]"
-  - "projects [C++], types"
-  - "templates [C++], projects"
-  - "applications [C++], projects"
-  - "Visual C++ projects, types"
+dev_langs: ["C++"]
+helpviewer_keywords: ["programs [C++], projects", "project templates [Visual Studio], C++", "TODO comments [C++]", "projects [C++], types", "templates [C++], projects", "applications [C++], projects", "Visual C++ projects, types"]
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Visual C++ Project Types
 You can use a project template to create the basic program structure, menus, toolbars, icons, references, and `#include` statements that are appropriate for the kind of project you want to create. Visual Studio includes several kinds of Visual C++ project templates and provides wizards for many of them so that you can customize your projects as you create them. Immediately after you create a project, you can build it and run the application—it's good practice to build intermittently as you develop your application.  

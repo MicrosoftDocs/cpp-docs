@@ -15,8 +15,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
-translation.priority.mt: ["cs-cz", "pl-pl", "pt-br", "tr-tr"]
 ---
 # TN049: MFC/OLE MBCS to Unicode Translation Layer (MFCANS32)
 This note originally described how MFCANS32.DLL provides ANSI interfaces in the primarily Unicode world of 32-bit OLE. This DLL is no longer used by MFC.  

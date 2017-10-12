@@ -4,48 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__try"
-  - "__leave_cpp"
-  - "__leave"
-  - "__finally_cpp"
-  - "__try_cpp"
-  - "__finally"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__try keyword [C++]"
-  - "__finally keyword [C++]"
-  - "__leave keyword [C++]"
-  - "try-catch keyword [C++], try-finally keyword"
-  - "try-finally keyword [C++]"
-  - "__finally keyword [C++], try-finally statement syntax"
-  - "__leave keyword [C++], try-finally statement"
-  - "structured exception handling, try-finally"
+f1_keywords: ["__try", "__leave_cpp", "__leave", "__finally_cpp", "__try_cpp", "__finally"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__try keyword [C++]", "__finally keyword [C++]", "__leave keyword [C++]", "try-catch keyword [C++], try-finally keyword", "try-finally keyword [C++]", "__finally keyword [C++], try-finally statement syntax", "__leave keyword [C++], try-finally statement", "structured exception handling [C++], try-finally"]
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # try-finally Statement
 **Microsoft Specific**  

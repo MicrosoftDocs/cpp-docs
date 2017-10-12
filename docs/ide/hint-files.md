@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "cpp.hint"
-  - "vc.hint.file"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "stop file"
-  - "cpp.hint"
-  - "hint file"
-  - "cpp.stop"
-  - "Class View, hint file"
+f1_keywords: ["cpp.hint", "vc.hint.file"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stop file", "cpp.hint", "hint file", "cpp.stop", "Class View, hint file"]
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
 caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Hint Files
 A *hint file* helps the Visual Studio integrated development environment (IDE) interpret Visual C++ identifiers, such as the names of functions and macros. When you open a Visual C++ project, the IDE's *parsing system* analyzes the code in each source file in the project and gathers information about every identifier. Then the IDE uses that information to support features such as the **Class View** browser and the **Navigation Bar**.  

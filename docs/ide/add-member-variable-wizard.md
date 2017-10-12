@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.codewiz.variable.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Add Member Variable Wizard [C++]"
+f1_keywords: ["vc.codewiz.variable.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Add Member Variable Wizard [C++]"]
 ms.assetid: 73e8fa99-ac1a-42e2-8fc2-4684b9eb6d4d
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Add Member Variable Wizard
 This wizard adds a member variable declaration to the header file and, depending on the options, it can add code to the .cpp file. Once you have added the member variable using the wizard, you can edit the code in the development environment.  

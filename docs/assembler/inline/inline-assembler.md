@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "assembler [C++]"
-  - "assembler [C++], inline"
-  - "assembly language [C++], inline"
-  - "inline assembler [C++]"
-  - "inline assembly [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["assembler [C++]", "assembler [C++], inline", "assembly language [C++], inline", "inline assembler [C++]", "inline assembly [C++]"]
 ms.assetid: 7e13f18f-3628-4306-8b81-4a6d09c043fe
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Inline Assembler
 **Microsoft Specific**  

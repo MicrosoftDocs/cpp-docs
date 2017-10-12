@@ -15,7 +15,6 @@ caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCRibbonBaseElement Class
 The `CMFCRibbonBaseElement` class is the base class for all elements that you can add to a [ribbon bar](../../mfc/reference/cmfcribbonbar-class.md). Examples of ribbon elements are ribbon buttons, ribbon check boxes, and ribbon combo boxes.  

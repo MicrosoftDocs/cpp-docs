@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Windows applications [C++], Win32"
-  - "WinMain"
-  - "Win32 applications [C++]"
-  - "Windows API [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Windows applications [C++], Win32", "WinMain", "Win32 applications [C++]", "Windows API [C++]"]
 ms.assetid: a247a9af-aff1-4899-9577-5f8104a0afbb
 caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Walkthrough: Creating Windows Desktop Applications (C++)
 This walkthrough shows how to create a traditional Windows desktop application using the C language API that has been in existence since the 1990s. This is not the modern way to create Windows programs but it is still supported and there are many applications today that still use this API. This example displays "Hello, World!" in a window. You can use the code that you develop in this walkthrough as a pattern to create other Windows desktop applications.  

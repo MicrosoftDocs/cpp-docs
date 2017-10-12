@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.IVCEventTool.CommandLine"
-  - "VC.Project.IVCEventTool.ExcludedFromBuild"
-  - "VC.Project.IVCEventTool.Description"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Pre-Link event"
-  - "build events [C++], specifying"
-  - "custom build steps [C++], build events"
-  - "builds [C++], events"
-  - "events [C++], build"
-  - "builds [C++], customizing C++"
-  - "build events [C++]"
-  - "post-build events"
+f1_keywords: ["VC.Project.IVCEventTool.CommandLine", "VC.Project.IVCEventTool.ExcludedFromBuild", "VC.Project.IVCEventTool.Description"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Pre-Link event", "build events [C++], specifying", "custom build steps [C++], build events", "builds [C++], events", "events [C++], build", "builds [C++], customizing C++", "build events [C++]", "post-build events"]
 ms.assetid: 788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Specifying Build Events
 You can use build events to specify commands that run before the build starts, before the link process, or after the build finishes.  

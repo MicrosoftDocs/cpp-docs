@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "bstr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BSTRs, memory allocation"
-  - "memory deallocation, string memory"
-  - "memory [C++], releasing"
-  - "memory allocation, BSTRs"
-  - "memory deallocation, BSTR memory"
-  - "strings [C++], releasing"
+f1_keywords: ["bstr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BSTRs, memory allocation", "memory deallocation, string memory", "memory [C++], releasing", "memory allocation, BSTRs", "memory deallocation, BSTR memory", "strings [C++], releasing"]
 ms.assetid: 98041e29-3442-4a02-b425-7a4a13e9cc84
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Allocating and Releasing Memory for a BSTR
 When you create `BSTR`s and pass them between COM objects, you must take care in treating the memory they use in order to avoid memory leaks. When a `BSTR` stays within an interface, you must free its memory when you are done with it. However, when a `BSTR` passes out of an interface, the receiving object takes responsibility for its memory management.  

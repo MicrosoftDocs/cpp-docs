@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "HTML controls, ATL support"
-  - "DHTML controls, ATL support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["HTML controls, ATL support", "DHTML controls, ATL support"]
 ms.assetid: b627547a-3768-4346-9900-4b7a21fb8e27
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Identifying the Elements of the DHTML Control Project
 Most DHTML control code is exactly like that created for any ATL control. For a basic understanding of the generic code, work through the [ATL tutorial](../atl/active-template-library-atl-tutorial.md), and read the sections [Creating an ATL Project](../atl/reference/creating-an-atl-project.md) and [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md).  

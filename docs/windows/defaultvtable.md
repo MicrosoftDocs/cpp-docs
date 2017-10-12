@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.defaultvtable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "defaultvtable attribute"
+f1_keywords: ["vc-attr.defaultvtable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["defaultvtable attribute"]
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # defaultvtable
 Defines an interface as the default vtable interface for a COM object.  

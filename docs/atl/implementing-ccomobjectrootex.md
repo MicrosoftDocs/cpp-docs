@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CComObjectRootEx"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComObjectRoot class, implementing"
-  - "CComObjectRootEx class"
+f1_keywords: ["CComObjectRootEx"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComObjectRoot class, implementing", "CComObjectRootEx class"]
 ms.assetid: 79630c44-f2df-4e9e-b730-400a0ebfbd2b
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Implementing CComObjectRootEx
 [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) is essential; all ATL objects must have one instance of `CComObjectRootEx` or [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) in their inheritance. `CComObjectRootEx` provides the default `QueryInterface` mechanism based on COM map entries.  

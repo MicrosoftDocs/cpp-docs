@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "COLUMN_NAME_TYPE_SIZE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COLUMN_NAME_TYPE_SIZE macro"
+f1_keywords: ["COLUMN_NAME_TYPE_SIZE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COLUMN_NAME_TYPE_SIZE macro"]
 ms.assetid: b10f8ef9-78ce-4ec9-b4cc-4278271a46dd
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # COLUMN_NAME_TYPE_SIZE
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes data type and size.  

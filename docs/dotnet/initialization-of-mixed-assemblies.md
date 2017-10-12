@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mixed assemblies [C++], loader lock"
-  - "loader lock [C++]"
-  - "initializing mixed assemblies"
-  - "deadlocks [C++]"
-  - ".cctor [C++]"
-  - "custom locales [C++]"
-  - "mixed assemblies [C++], initilizing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["mixed assemblies [C++], loader lock", "loader lock [C++]", "initializing mixed assemblies", "deadlocks [C++]", ".cctor [C++]", "custom locales [C++]", "mixed assemblies [C++], initilizing"]
 ms.assetid: bfab7d9e-f323-4404-bcb8-712b15f831eb
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Initialization of Mixed Assemblies
 In Visual C++ .NET and Visual C++ 2003, DLLs compiled with the **/clr** compiler option could non-deterministically deadlock when loaded; this issue was called the mixed DLL loading or loader lock issue. Almost all non-determinism has been removed from the mixed DLL loading process. However, there are a few remaining scenarios for which loader lock can (deterministically) occur. For more information about this issue, see "Mixed DLL Loading Problem" in the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=556).  

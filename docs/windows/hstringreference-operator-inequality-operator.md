@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator!="
-dev_langs: 
-  - "C++"
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator!="]
+dev_langs: ["C++"]
 ms.assetid: 01ab6691-1fc7-4feb-85f0-fe795593a160
 caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # HStringReference::Operator!= Operator
 Indicates whether the two parameters are not equal.  

@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.UseFullPaths"
-  - "/FC"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/FC compiler option [C++]"
-  - "-FC compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.UseFullPaths", "/FC"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/FC compiler option [C++]", "-FC compiler option [C++]"]
 ms.assetid: 1f11414e-cb42-421b-be68-9d369aab036b
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /FC (Full Path of Source Code File in Diagnostics)
 Causes the compiler to display the full path of source code files passed to the compiler in diagnostics.  

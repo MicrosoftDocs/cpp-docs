@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Toolbar editor, spacing toolbar buttons"
-  - "toolbar buttons (in Toolbar editor), space between buttons"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Toolbar editor, spacing toolbar buttons", "toolbar buttons (in Toolbar editor), space between buttons"]
 ms.assetid: 4925ea6b-5d3a-4949-a920-bf371a37e529
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Inserting a Space Between Buttons on a Toolbar
 In general, to insert a space between buttons, simply drag them away from one another on the toolbar. To remove space, drag them towards each other.  

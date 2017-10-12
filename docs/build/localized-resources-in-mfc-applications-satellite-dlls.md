@@ -4,41 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multiple language support [C++]"
-  - "localization [C++], MFC resources"
-  - "localized resources [C++]"
-  - "MFC DLLs [C++], localizing"
-  - "DLLs [C++], localizing MFC"
-  - "resources [MFC], localizing"
-  - "resource-only DLLs [C++]"
-  - "resource-only DLLs [C++], MFC applications"
-  - "satellite DLLs [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["multiple language support [C++]", "localization [C++], MFC resources", "localized resources [C++]", "MFC DLLs [C++], localizing", "DLLs [C++], localizing MFC", "resources [MFC], localizing", "resource-only DLLs [C++]", "resource-only DLLs [C++], MFC applications", "satellite DLLs [C++]"]
 ms.assetid: 3a1100ae-a9c8-47b5-adbd-cbedef5992ef
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Localized Resources in MFC Applications: Satellite DLLs
 MFC version 7.0 and later provides enhanced support for satellite DLLs, a feature that helps in creating applications localized for multiple languages. A satellite DLL is a [resource-only DLL](../build/creating-a-resource-only-dll.md) that contains an application's resources localized for a particular language. When the application begins executing, MFC automatically loads the localized resource most appropriate for the environment. For example, you could have an application with English language resources with two satellite DLLs, one containing a French translation of your resources and the other containing a German translation. When the application is run on an English language system, it uses the English resources. If run on a French system, it uses the French resources; if run on a German system, it uses the German resources.  

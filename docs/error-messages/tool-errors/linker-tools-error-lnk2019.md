@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "05/17/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "LNK2019"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "nochkclr.obj"
-  - "LNK2019"
-  - "_check_commonlanguageruntime_version"
+f1_keywords: ["LNK2019"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["nochkclr.obj", "LNK2019", "_check_commonlanguageruntime_version"]
 ms.assetid: 4392be92-195c-4eb2-bd4d-49cfac3ca291
 caps.latest.revision: 39
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Linker Tools Error LNK2019
 unresolved external symbol '*symbol*' referenced in function '*function*'  

@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Running Remote Automation Using AUTOCLIK and AUTODRIV
 AUTOCLIK is a simple Automation server sample application that you can use as a base from which to learn more about Remote Automation. AUTODRIV is a simple Automation client application that drives AUTOCLIK. You can use them to demonstrate Remote Automation.  

@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.symbol.identifiers"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "symbols, resource identifiers"
-  - "symbols, creating"
-  - "resource symbols"
-  - "symbols, editing"
-  - "resource editors, resource symbols"
+f1_keywords: ["vc.editors.symbol.identifiers"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["symbols, resource identifiers", "symbols, creating", "resource symbols", "symbols, editing", "resource editors, resource symbols"]
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Symbols: Resource Identifiers
 A symbol is a resource identifier (ID) that consists of two parts: a text string (symbol name) mapped to an integer value (symbol value). For example:  

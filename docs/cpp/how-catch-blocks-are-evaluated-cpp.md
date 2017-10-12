@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "try-catch keyword [C++], catchable types"
-  - "catch keyword [C++], types of catch handlers"
-  - "C++ exception handling, catch handlers"
-  - "exception handling, catching and deleting exceptions"
-  - "types [C++], exception handling"
+dev_langs: ["C++"]
+helpviewer_keywords: ["try-catch keyword [C++], catchable types", "catch keyword [C++], types of catch handlers", "C++ exception handling, catch handlers", "exception handling, catching and deleting exceptions", "types [C++], exception handling"]
 ms.assetid: 202dbf07-8ace-4b3b-b3ae-4b45c275e0b4
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How Catch Blocks are Evaluated (C++)
 C++ enables you to throw exceptions of any type, although in general it is recommended to throw types that are derived from std::exception. A C++ exception can be caught by a **catch** handler that specifies the same type as the thrown exception, or by a handler that can catch any type of exception.  

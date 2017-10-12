@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::Module::UnregisterWinRTObject"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UnregisterWinRTObject method"
+f1_keywords: ["module/Microsoft::WRL::Module::UnregisterWinRTObject"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["UnregisterWinRTObject method"]
 ms.assetid: 32334aa7-2293-40d2-9a89-4b02e2e31f3c
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Module::UnregisterWinRTObject Method
 Unregisters one or more Windows Runtime objects so that other applications cannot connect to them.  

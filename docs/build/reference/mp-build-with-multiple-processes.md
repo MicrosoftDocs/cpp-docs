@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.MultiProcessorCompilation"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-MP compiler option (C++)"
-  - "/MP compiler option (C++)"
-  - "MP compiler option (C++)"
-  - "cl.exe compiler, multi-process build"
+f1_keywords: ["VC.Project.VCCLCompilerTool.MultiProcessorCompilation"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-MP compiler option (C++)", "/MP compiler option (C++)", "MP compiler option (C++)", "cl.exe compiler, multi-process build"]
 ms.assetid: a932b14a-74fe-4b45-84e4-6bf53f0f5e07
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # /MP (Build with Multiple Processes)
 The **/MP** option can reduce the total time to compile the source files on the command line. The **/MP** option causes the compiler to create one or more copies of itself, each in a separate process. Then these copies simultaneously compile the source files. Consequently, the total time to build the source files can be significantly reduced.  

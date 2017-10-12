@@ -14,7 +14,6 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 helpviewer_keywords: ["std::thread [C++]", "std::thread [C++], thread", "std::thread [C++], detach", "std::thread [C++], get_id", "std::thread [C++], hardware_concurrency", "std::thread [C++], join", "std::thread [C++], joinable", "std::thread [C++], native_handle", "std::thread [C++], swap"]
 ---
 # thread Class

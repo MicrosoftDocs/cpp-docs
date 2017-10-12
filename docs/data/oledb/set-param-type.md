@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "SET_PARAM_TYPE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SET_PARAM_TYPE macro"
+f1_keywords: ["SET_PARAM_TYPE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SET_PARAM_TYPE macro"]
 ms.assetid: 85979070-2d55-4c67-94b1-9b9058babc59
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # SET_PARAM_TYPE
 Specifies `COLUMN_ENTRY` macros that follow the `SET_PARAM_TYPE` macro input, output, or input/output.  

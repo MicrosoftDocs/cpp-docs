@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "BLOB_NAME_STATUS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BLOB_NAME_STATUS macro"
+f1_keywords: ["BLOB_NAME_STATUS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BLOB_NAME_STATUS macro"]
 ms.assetid: 4564e4a0-8e5e-436a-bd1e-012d2a1b8642
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # BLOB_NAME_STATUS
 Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object ([BLOB](https://msdn.microsoft.com/en-us/library/ms711511.aspx)). Similar to [BLOB_NAME](../../data/oledb/blob-name.md), except that this macro also gets the status of the BLOB data column.  

@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "libraries [C++], C++ algorithm conventions"
-  - "algorithms [C++], C++"
-  - "C++ Standard Library, algorithms"
-  - "algorithm template function C++ library conventions"
-  - "conventions [C++], C++ algorithm"
+dev_langs: ["C++"]
+helpviewer_keywords: ["libraries [C++], C++ algorithm conventions", "algorithms [C++], C++", "C++ Standard Library, algorithms", "algorithm template function C++ library conventions", "conventions [C++], C++ algorithm"]
 ms.assetid: dec9b373-7d5c-46cc-b7d2-21a938ecd0a6
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Algorithms
 Algorithms are a fundamental part of the C++ Standard Library. Algorithms do not work with containers themselves but rather with iterators. Therefore, the same algorithm can be used by most if not all of the C++ Standard Library containers. This section discusses the conventions and terminology of the C++ Standard Library algorithms.  

@@ -4,32 +4,15 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 1a9fa011-0cee-4abf-bf83-49adf53ff906
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How to: Instantiate WRL Components Directly
 Learn how to use the Windows Runtime C++ Template Library (WRL)[Microsoft::WRL::Make](../windows/make-function.md) and [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md) functions to instantiate a component from the module that defines it.  

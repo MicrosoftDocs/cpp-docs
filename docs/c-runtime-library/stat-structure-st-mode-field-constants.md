@@ -4,64 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "S_IFCHR"
-  - "S_IFDIR"
-  - "_S_IWRITE"
-  - "S_IFMT"
-  - "_S_IFDIR"
-  - "_S_IREAD"
-  - "S_IEXEC"
-  - "_S_IEXEC"
-  - "_S_IFMT"
-  - "S_IWRITE"
-  - "S_IFREG"
-  - "S_IREAD"
-  - "_S_IFCHR"
-  - "_S_IFREG"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "S_IFDIR constant"
-  - "stat structure"
-  - "S_IWRITE constant"
-  - "S_IEXEC constant"
-  - "_S_IFREG constant"
-  - "S_IREAD constant"
-  - "stat structure, constants"
-  - "_S_IFMT constant"
-  - "st_mode field constants"
-  - "S_IFMT constant"
-  - "_S_IEXEC constant"
-  - "_S_IWRITE constant"
-  - "_S_IFDIR constant"
-  - "S_IFREG constant"
-  - "S_IFCHR constant"
-  - "_S_IREAD constant"
-  - "_S_IFCHR constant"
+f1_keywords: ["S_IFCHR", "S_IFDIR", "_S_IWRITE", "S_IFMT", "_S_IFDIR", "_S_IREAD", "S_IEXEC", "_S_IEXEC", "_S_IFMT", "S_IWRITE", "S_IFREG", "S_IREAD", "_S_IFCHR", "_S_IFREG"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["S_IFDIR constant", "stat structure", "S_IWRITE constant", "S_IEXEC constant", "_S_IFREG constant", "S_IREAD constant", "stat structure, constants", "_S_IFMT constant", "st_mode field constants", "S_IFMT constant", "_S_IEXEC constant", "_S_IWRITE constant", "_S_IFDIR constant", "S_IFREG constant", "S_IFCHR constant", "_S_IREAD constant", "_S_IFCHR constant"]
 ms.assetid: fd462004-7563-4766-8443-30b0a86174b6
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _stat Structure st_mode Field Constants
 ## Syntax  

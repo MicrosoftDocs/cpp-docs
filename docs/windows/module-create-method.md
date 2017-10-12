@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "module/Microsoft::WRL::Module::Create"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Create method"
+f1_keywords: ["module/Microsoft::WRL::Module::Create"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Create method"]
 ms.assetid: bfa97fd7-5226-4604-92a5-3b9697053e64
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Module::Create Method
 Creates an instance of a module.  

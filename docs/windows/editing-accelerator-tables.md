@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.accelerator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "accelerator tables [C++], editing"
-  - "keyboard shortcuts [C++], editing in an accelerator table"
+f1_keywords: ["vc.editors.accelerator"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["accelerator tables [C++], editing", "keyboard shortcuts [C++], editing in an accelerator table"]
 ms.assetid: 56e24efb-d06b-4ed9-8915-1f99f725e247
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Editing Accelerator Tables
 In Visual C++, you can edit an accelerator table directly with in-place editing in the Accelerator editor.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3538"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3538"
+f1_keywords: ["C3538"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3538"]
 ms.assetid: ef3698a5-7356-4c62-b9af-5d3a4baed958
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C3538
 in a declarator-list 'auto' must always deduce to the same type  

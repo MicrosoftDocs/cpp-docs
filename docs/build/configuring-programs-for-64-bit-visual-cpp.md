@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "64-bit compiler [C++], options"
-  - "64-bit compiler [C++]"
-  - "64-bit programming [C++], about 64-bit programming"
-  - "programming [C++], 64-bit"
-  - "Visual C++, 64-bit hardware"
+dev_langs: ["C++"]
+helpviewer_keywords: ["64-bit compiler [C++], options", "64-bit compiler [C++]", "64-bit programming [C++], about 64-bit programming", "programming [C++], 64-bit", "Visual C++, 64-bit hardware"]
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Configure Visual C++ for 64-bit, x64 targets
 

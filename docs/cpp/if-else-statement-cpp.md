@@ -4,21 +4,12 @@ ms.custom: ""
 ms.date: "07/17/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "else_cpp"
-  - "else"
-  - "if_cpp"
-  - "if"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "if keyword [C++]"
-  - "else keyword [C++]"
-  - "if keyword [C++], if-else"
+f1_keywords: ["else_cpp", "if_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["if keyword [C++]", "else keyword [C++]", "if keyword [C++], if-else"]
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
 caps.latest.revision: 13
 author: "mikeblome"

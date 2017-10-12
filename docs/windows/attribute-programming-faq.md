@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "attributed programming"
-  - "attributes [C++], frequently asked questions"
-  - "FAQs (frequently asked questions), attributed programming [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["attributed programming", "attributes [C++], frequently asked questions", "FAQs (frequently asked questions), attributed programming [C++]"]
 ms.assetid: a1b8349f-7f51-43c4-95ea-4edb6e5f243f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Attribute Programming FAQ
 This topic answers the following frequently asked questions:  

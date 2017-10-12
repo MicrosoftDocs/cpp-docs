@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/q"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Q compiler option [C++]"
-  - "-Q compiler option [C++]"
-  - "/Q compiler option [C++]"
+f1_keywords: ["/q"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Q compiler option [C++]", "-Q compiler option [C++]", "/Q compiler option [C++]"]
 ms.assetid: 9fa738b9-630a-4bde-bc87-bdfa30552be4
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # /Q Options (Low-Level Operations)
 You can use the **/Q** compiler options to perform the following low-level compiler operations:  

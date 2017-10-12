@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "naked keyword [C], storage-class attribute"
-  - "naked keyword [C]"
-  - "prolog code"
-  - "epilog code"
+dev_langs: ["C++"]
+helpviewer_keywords: ["naked keyword [C], storage-class attribute", "naked keyword [C]", "prolog code", "epilog code"]
 ms.assetid: 23b1209b-93ba-46ad-a60f-2327c1933eaf
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Naked (C)
 **Microsoft Specific**  

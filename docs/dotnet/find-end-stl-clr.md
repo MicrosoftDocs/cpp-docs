@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::find_end"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "find_end function [STL/CLR]"
+f1_keywords: ["cliext::find_end"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["find_end function [STL/CLR]"]
 ms.assetid: a2008414-163a-4da2-9ac6-4e3c85a02d38
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # find_end (STL/CLR)
 Looks in a range for the last subsequence that is identical to a specified sequence or that is equivalent in a sense specified by a binary predicate.  

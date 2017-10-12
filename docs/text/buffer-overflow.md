@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "buffers [C++], character sizes"
-  - "buffer overflows [C++]"
-  - "MBCS [C++], buffer overflow"
+dev_langs: ["C++"]
+helpviewer_keywords: ["buffers [C++], character sizes", "buffer overflows [C++]", "MBCS [C++], buffer overflow"]
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
 caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Buffer Overflow
 Varying character sizes can cause problems when you put characters into a buffer. Consider the following code, which copies characters from a string, `sz`, into a buffer, `rgch`:  

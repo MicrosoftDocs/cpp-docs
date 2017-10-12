@@ -4,63 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_strdate_s"
-  - "_wstrdate_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+apiname: ["_strdate_s", "_wstrdate_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_strdate_s"
-  - "wstrdate_s"
-  - "_wstrdate_s"
-  - "strdate_s"
-  - "_tstrdate_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dates, copying"
-  - "tstrdate_s function"
-  - "wstrdate_s function"
-  - "_tstrdate_s function"
-  - "strdate_s function"
-  - "copying dates"
-  - "_strdate_s function"
-  - "_wstrdate_s function"
+f1_keywords: ["_strdate_s", "wstrdate_s", "_wstrdate_s", "strdate_s", "_tstrdate_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["dates, copying", "tstrdate_s function", "wstrdate_s function", "_tstrdate_s function", "strdate_s function", "copying dates", "_strdate_s function", "_wstrdate_s function"]
 ms.assetid: d41d8ea9-e5ce-40d4-864e-1ac29b455991
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # _strdate_s, _wstrdate_s
 Copy the current system date to a buffer. These are versions of [_strdate, _wstrdate](../../c-runtime-library/reference/strdate-wstrdate.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

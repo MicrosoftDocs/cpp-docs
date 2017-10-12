@@ -4,39 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDataSource.OpenWithPromptFileName"
-  - "OpenWithPromptFileName"
-  - "ATL::CDataSource::OpenWithPromptFileName"
-  - "ATL.CDataSource.OpenWithPromptFileName"
-  - "CDataSource::OpenWithPromptFileName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OpenWithPromptFileName method"
+f1_keywords: ["CDataSource.OpenWithPromptFileName", "OpenWithPromptFileName", "ATL::CDataSource::OpenWithPromptFileName", "ATL.CDataSource.OpenWithPromptFileName", "CDataSource::OpenWithPromptFileName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OpenWithPromptFileName method"]
 ms.assetid: 89460504-1aaf-4412-aa7b-fa5a4b39ada3
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDataSource::OpenWithPromptFileName
 This method prompts the user with a dialog box, then opens a data source using the file specified by the user.  

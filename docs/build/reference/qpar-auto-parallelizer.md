@@ -4,33 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration"]
+dev_langs: ["C++"]
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /Qpar (Auto-Parallelizer)
 Enables the [Auto-Parallelizer](../../parallel/auto-parallelization-and-auto-vectorization.md) feature of the compiler to automatically parallelize loops in your code.  

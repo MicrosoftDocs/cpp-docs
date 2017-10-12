@@ -15,7 +15,6 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # sync_per_container Class
 Describes a [synchronization filter](../standard-library/allocators-header.md) that provides a separate cache object for each allocator object.  

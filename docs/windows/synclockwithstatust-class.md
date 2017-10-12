@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SyncLockWithStatusT class"
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SyncLockWithStatusT class"]
 ms.assetid: 4832fd93-0ac8-4168-9404-b43fefea7476
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # SyncLockWithStatusT Class
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

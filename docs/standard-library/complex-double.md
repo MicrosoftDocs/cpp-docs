@@ -15,7 +15,6 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # complex&lt;double&gt;
 Describes an object that stores an ordered pair of objects both of type **double***,* the first representing the real part of a complex number and the second representing the imaginary part.  

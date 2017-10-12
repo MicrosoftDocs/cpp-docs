@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::deque::front_item"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "front_item member [STL/CLR]"
+f1_keywords: ["cliext::deque::front_item"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["front_item member [STL/CLR]"]
 ms.assetid: 6243e52d-47fb-45d8-ade8-70debd97887d
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # deque::front_item (STL/CLR)
 Accesses the first element.  

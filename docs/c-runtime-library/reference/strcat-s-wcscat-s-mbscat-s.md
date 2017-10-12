@@ -4,60 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "strcat_s"
-  - "_mbscat_s"
-  - "wcscat_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["strcat_s", "_mbscat_s", "wcscat_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "strcat_s"
-  - "wcscat_s"
-  - "_mbscat_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wcscat_s function"
-  - "strcat_s function"
-  - "mbscat_s function"
-  - "strings [C++], appending"
-  - "_mbscat_s function"
-  - "appending strings"
+f1_keywords: ["strcat_s", "wcscat_s", "_mbscat_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wcscat_s function", "strcat_s function", "mbscat_s function", "strings [C++], appending", "_mbscat_s function", "appending strings"]
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
 caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # strcat_s, wcscat_s, _mbscat_s
 Appends a string. These versions of [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

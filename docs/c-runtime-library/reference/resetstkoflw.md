@@ -4,53 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_resetstkoflw"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_resetstkoflw"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "resetstkoflw"
-  - "_resetstkoflw"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resetstkoflw function"
-  - "stack overflow"
-  - "stack, recovering"
-  - "_resetstkoflw function"
+f1_keywords: ["resetstkoflw", "_resetstkoflw"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["resetstkoflw function", "stack overflow", "stack, recovering", "_resetstkoflw function"]
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _resetstkoflw
 Recovers from stack overflow.  

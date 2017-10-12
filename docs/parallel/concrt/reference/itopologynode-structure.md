@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['ITopologyNode', 'CONCRTRM/concurrency::ITopologyNode', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetExecutionResourceCount', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetFirstExecutionResource', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetId', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNext', 'CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNumaNode']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ITopologyNode structure"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ITopologyNode structure"]
 ms.assetid: 92e7e032-04f6-4c7c-be36-8f9a35fc4734
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ITopologyNode Structure
 An interface to a topology node as defined by the Resource Manager. A node contains one or more execution resources.  

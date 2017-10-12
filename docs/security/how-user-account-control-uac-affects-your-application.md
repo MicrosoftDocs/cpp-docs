@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "UAC [C++]"
-  - "security [C++], User Account Control"
-  - "user accounts [C++]"
-  - "User Account Control [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["UAC [C++]", "security [C++], User Account Control", "user accounts [C++]", "User Account Control [C++]"]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
 caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # How User Account Control (UAC) Affects Your Application
 User Account Control (UAC) is a feature of Windows Vista in which user accounts have limited privileges. You can find detailed information about UAC at these sites:  

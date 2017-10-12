@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "generics [C++], vs. templates"
-  - "templates, C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["generics [C++], vs. templates", "templates, C++"]
 ms.assetid: 63adec79-b1dc-4a1a-a21d-b8a72a8fce31
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Generics and Templates (Visual C++)
 Generics and templates are both language features that provide support for parameterized types. However, they are different and have different uses. This topic provides an overview of the many differences.  

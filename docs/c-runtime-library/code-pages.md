@@ -4,41 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.international"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "character sets [C++], code pages"
-  - "ANSI [C++], code pages"
-  - "system-default code page"
-  - "multibyte code pages [C++]"
-  - "localization [C++], code pages"
-  - "code pages [C++], types of"
-  - "locale code pages [C++]"
+f1_keywords: ["c.international"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["character sets [C++], code pages", "ANSI [C++], code pages", "system-default code page", "multibyte code pages [C++]", "localization [C++], code pages", "code pages [C++], types of", "locale code pages [C++]"]
 ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Code Pages
 A `code page` is a character set, which can include numbers, punctuation marks, and other glyphs. Different languages and locales may use different code pages. For example, ANSI code page 1252 is used for English and most European languages; OEM code page 932 is used for Japanese Kanji.  

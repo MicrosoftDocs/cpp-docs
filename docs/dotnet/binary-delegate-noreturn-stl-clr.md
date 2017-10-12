@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::binary_delegate_noreturn"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binary_delegate_noreturn function [STL/CLR]"
+f1_keywords: ["cliext::binary_delegate_noreturn"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["binary_delegate_noreturn function [STL/CLR]"]
 ms.assetid: 055c7e9d-e5c3-48fe-9327-3f6316e8a51e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # binary_delegate_noreturn (STL/CLR)
 The genereic class describes a two-argument delegate that returns `void`. You use it specify a delegate in terms of its argument.  

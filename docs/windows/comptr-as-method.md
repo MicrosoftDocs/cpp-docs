@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "client/Microsoft::WRL::ComPtr::As"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "As method"
+f1_keywords: ["client/Microsoft::WRL::ComPtr::As"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["As method"]
 ms.assetid: 2ad6c262-9bdb-4c59-a330-1af8bcd445cc
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ComPtr::As Method
 Returns a ComPtr object that represents the interface identified by the specified template parameter.  

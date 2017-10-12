@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4336"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4336"
+f1_keywords: ["C4336"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4336"]
 ms.assetid: 93f199dd-d6dd-42c0-82d8-c12d101a7235
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 4) C4336
 import cross-referenced type library 'type_lib1' before importing 'type_lib2'  

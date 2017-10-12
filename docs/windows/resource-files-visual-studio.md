@@ -4,46 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "resources [Visual Studio]"
-  - ".rc files"
-  - "resource files"
-  - "resource script files"
-  - "resource script files, Win-32 based applications"
-  - "resource script files, files updated when editing resources"
-  - "resources [Visual Studio], types of resource files"
-  - "rct files"
-  - "resources [C++]"
-  - "rc files"
-  - "resource files, types of"
-  - ".rct files"
-  - "resource script files, unsupported types"
+dev_langs: ["C++"]
+helpviewer_keywords: ["resources [Visual Studio]", ".rc files", "resource files", "resource script files", "resource script files, Win-32 based applications", "resource script files, files updated when editing resources", "resources [Visual Studio], types of resource files", "rct files", "resources [C++]", "rc files", "resource files, types of", ".rct files", "resource script files, unsupported types"]
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Resource Files (Visual Studio)
 > [!NOTE]

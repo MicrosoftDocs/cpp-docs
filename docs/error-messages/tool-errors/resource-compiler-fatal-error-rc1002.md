@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "RC1002"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RC1002"
+f1_keywords: ["RC1002"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RC1002"]
 ms.assetid: b43dfece-0dc3-4d0b-9d8f-509699b9ae80
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Resource Compiler Fatal Error RC1002
 out of heap space  

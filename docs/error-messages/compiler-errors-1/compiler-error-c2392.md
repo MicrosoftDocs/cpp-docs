@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2392"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2392"
+f1_keywords: ["C2392"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2392"]
 ms.assetid: 98ced473-6383-46ed-b79c-21857d65dcb2
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C2392
 'method1' : covariant returns types are not supported in managed or WinRTtypes, otherwise 'method2' would be overridden  

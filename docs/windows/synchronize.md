@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.synchronize"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "synchronize attribute"
+f1_keywords: ["vc-attr.synchronize"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["synchronize attribute"]
 ms.assetid: 15fc8544-955d-4765-b3d5-0f619c8b3f40
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # synchronize
 Synchronizes access to the target method.  

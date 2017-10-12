@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/zp"
-  - "VC.Project.VCCLCompilerTool.StructMemberAlignment"
-  - "VC.Project.VCCLWCECompilerTool.StructMemberAlignment"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Struct Member Alignment compiler option"
-  - "Zp compiler option"
-  - "/Zp compiler option [C++]"
-  - "-Zp compiler option [C++]"
+f1_keywords: ["/zp", "VC.Project.VCCLCompilerTool.StructMemberAlignment", "VC.Project.VCCLWCECompilerTool.StructMemberAlignment"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Struct Member Alignment compiler option", "Zp compiler option", "/Zp compiler option [C++]", "-Zp compiler option [C++]"]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /Zp (Struct Member Alignment)
 Controls how the members of a structure are packed into memory and specifies the same packing for all structures in a module.  

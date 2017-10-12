@@ -4,62 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "strftime"
-  - "_wcsftime_l"
-  - "_strftime_l"
-  - "wcsftime"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+apiname: ["strftime", "_wcsftime_l", "_strftime_l", "wcsftime"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcsftime"
-  - "strftime"
-  - "wcsftime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_strftime_l function"
-  - "strftime function"
-  - "tcsftime function"
-  - "_wcsftime_l function"
-  - "wcsftime function"
-  - "_tcsftime function"
-  - "time strings"
+f1_keywords: ["_tcsftime", "strftime", "wcsftime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_strftime_l function", "strftime function", "tcsftime function", "_wcsftime_l function", "wcsftime function", "_tcsftime function", "time strings"]
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # strftime, wcsftime, _strftime_l, _wcsftime_l
 Format a time string.  

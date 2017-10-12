@@ -14,7 +14,6 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ActiveX Controls on the Internet
 ActiveX controls are the updated version of the OLE control specification. Controls are a primary architecture for developing programmable software components that can be used in a variety of different containers, including COM-aware Web browsers on the Internet. Any ActiveX control can be an Internet control and can add its functionality to an Active document or be part of a Web page. Controls on a Web page can communicate with each other using scripting.  

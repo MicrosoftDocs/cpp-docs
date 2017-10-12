@@ -15,7 +15,6 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ostreambuf_iterator Class
 The template class ostreambuf_iterator describes an output iterator object that writes successive character elements onto the output stream with the extraction **operator>>**. The `ostreambuf_iterator`s differ from those of the [ostream_iterator Class](../standard-library/ostream-iterator-class.md) in having characters instead of a generic type at the type of object being inserted into the output stream.  

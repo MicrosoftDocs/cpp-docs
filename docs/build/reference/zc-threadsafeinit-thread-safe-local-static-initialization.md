@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "12/13/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "threadSafeInit"
-  - "/Zc:threadSafeInit"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Zc compiler options (C++)"
-  - "threadSafeInit"
-  - "Thread-safe Local Static Initialization"
-  - "/Zc compiler options (C++)"
-  - "Zc compiler options (C++)"
+f1_keywords: ["threadSafeInit", "/Zc:threadSafeInit"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Zc compiler options (C++)", "threadSafeInit", "Thread-safe Local Static Initialization", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: a0fc4b34-2cf0-45a7-a642-b8afc4ca19f2
 caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /Zc:threadSafeInit (Thread-safe Local Static Initialization)  
 The `/Zc:threadSafeInit` compiler option tells the compiler to initialize static local (function scope) variables in a thread-safe way, eliminating the need for manual synchronization. Only initialization is thread-safe. Use and modification of static local variables by multiple threads must still be manually synchronized. This option is available starting in Visual Studio 2015. By default, Visual Studio enables this option.  

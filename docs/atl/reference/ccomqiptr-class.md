@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CComQIPtr', 'ATLCOMCLI/ATL::CComQIPtr', 'ATLCOMCLI/ATL::CComQIPtr::CComQIPtr']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComQIPtr class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComQIPtr class"]
 ms.assetid: 969cacb5-05b6-4af4-b683-24911d70242d
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CComQIPtr Class
 A smart pointer class for managing COM interface pointers.  

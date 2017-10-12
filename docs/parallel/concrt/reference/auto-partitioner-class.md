@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['auto_partitioner', 'PPL/concurrency::auto_partitioner', 'PPL/concurrency::auto_partitioner::auto_partitioner']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "auto_partitioner class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["auto_partitioner class"]
 ms.assetid: 7cc08e5d-20b4-47a4-b4b5-c214a78f5a9e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # auto_partitioner Class
 The `auto_partitioner` class represents the default method `parallel_for`, `parallel_for_each` and `parallel_transform` use to partition the range they iterates over. This method of partitioning employes range stealing for load balancing as well as per-iterate cancellation.  

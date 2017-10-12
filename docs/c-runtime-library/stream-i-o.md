@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.io"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "I/O routines, stream I/O"
-  - "I/O [CRT], stream"
-  - "stream I/O"
+f1_keywords: ["c.io"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["I/O routines, stream I/O", "I/O [CRT], stream", "stream I/O"]
 ms.assetid: dc7874d3-a91b-456a-9015-4748bb358217
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Stream I/O
 These functions process data in different sizes and formats, from single characters to large data structures. They also provide buffering, which can improve performance. The default size of a stream buffer is 4K. These routines affect only buffers created by the run-time library routines, and have no effect on buffers created by the operating system.  

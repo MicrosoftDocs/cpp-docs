@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.implements"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "implements attribute"
+f1_keywords: ["vc-attr.implements"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["implements attribute"]
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # implements (C++)
 Specifies dispatch interfaces that are forced to be members of the IDL coclass.  

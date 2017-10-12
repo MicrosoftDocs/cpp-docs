@@ -15,7 +15,6 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # vector&lt;bool&gt;::reference::flip
 Inverts the Boolean value of a referenced [vector\<bool>](../standard-library/vector-bool-class.md) element.  

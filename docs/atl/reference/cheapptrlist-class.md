@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CHeapPtrList', 'ATLCOLL/ATL::CHeapPtrList', 'ATLCOLL/ATL::CHeapPtrList::CHeapPtrList']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CHeapPtrList class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CHeapPtrList class"]
 ms.assetid: cc70e585-362a-4007-81db-c705eb181226
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CHeapPtrList Class
 This class provides methods useful when constructing a list of heap pointers.  

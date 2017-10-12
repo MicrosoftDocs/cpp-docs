@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C1094"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C1094"
+f1_keywords: ["C1094"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C1094"]
 ms.assetid: 9e1193b2-cb95-44f9-bf6f-019e0d41dd97
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Fatal Error C1094
 '-Zmval1' : command line option is inconsistent with value used to build precompiled header ('-Zmval2')  

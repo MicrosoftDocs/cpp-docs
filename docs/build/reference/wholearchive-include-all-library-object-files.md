@@ -6,18 +6,12 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # /WHOLEARCHIVE (Include All Library Object Files)
 Force the linker to include all object files in the static library in the linked executable.  

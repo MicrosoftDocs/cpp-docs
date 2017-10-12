@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CLR empty projects"
-  - "CLR empty projects, creating"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CLR empty projects", "CLR empty projects, creating"]
 ms.assetid: edb4574f-fea7-426d-9b5c-fa4ecad2befb
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Create CLR Empty Projects
 To create a CLR empty project, use the **CLR Empty Project** template, which is available from the **New Project** dialog box.  

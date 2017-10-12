@@ -15,7 +15,6 @@ caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CMFCToolBarFontComboBox Class
 A toolbar button that contains a combo box control that enables the user to select a font from a list of system fonts.  

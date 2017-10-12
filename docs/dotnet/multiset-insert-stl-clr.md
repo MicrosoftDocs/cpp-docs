@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multiset::insert"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "insert member [STL/CLR]"
+f1_keywords: ["cliext::multiset::insert"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["insert member [STL/CLR]"]
 ms.assetid: 7a3b1cc8-ec60-4ed0-ace5-46cb5872e6e7
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # multiset::insert (STL/CLR)
 Adds elements.  

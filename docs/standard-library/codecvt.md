@@ -15,7 +15,6 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;codecvt&gt;
 Defines several template classes that describe objects based on template class [codecvt](../standard-library/codecvt-class.md). These objects can serve as [locale facets](../standard-library/locale-class.md#facet_class) that control conversions between a sequence of values of type `Elem` and a sequence of values of type `char`.  

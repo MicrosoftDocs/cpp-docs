@@ -14,7 +14,6 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Header Control Examples
 For examples of header controls, see the [Header Controls](http://msdn.microsoft.com/library/windows/desktop/bb775238) in the Windows SDK.  

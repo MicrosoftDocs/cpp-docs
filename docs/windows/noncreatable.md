@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.noncreatable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "noncreatable attribute"
+f1_keywords: ["vc-attr.noncreatable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["noncreatable attribute"]
 ms.assetid: 4d17937b-0bff-41af-ba57-53e18b7ab5a9
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # noncreatable
 Defines an object that cannot be instantiated by itself.  

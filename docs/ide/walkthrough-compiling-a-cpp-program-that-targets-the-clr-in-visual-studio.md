@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "command-line applications [C++], managed code"
-  - "compiling programs [C++]"
-  - "Visual C++, managed code"
-  - "managed code [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["command-line applications [C++], managed code", "compiling programs [C++]", "Visual C++, managed code", "managed code [C++]"]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
 caps.latest.revision: 40
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio
 You can create Visual C++ programs that use .NET classes and compile them by using the Visual Studio Development Environment.  

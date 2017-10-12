@@ -4,44 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4793"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C6634"
-  - "C6635"
-  - "C6640"
-  - "C6630"
-  - "C6639"
-  - "C6636"
-  - "C6638"
-  - "C6631"
-  - "C6637"
-  - "C4793"
+f1_keywords: ["C4793"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C6634", "C6635", "C6640", "C6630", "C6639", "C6636", "C6638", "C6631", "C6637", "C4793"]
 ms.assetid: 819ada53-1d9c-49b8-a629-baf8c12314e6
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 1 and 3) C4793
 'function' : function is compiled as native code: 'reason'  

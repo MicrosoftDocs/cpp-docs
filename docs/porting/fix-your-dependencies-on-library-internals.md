@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "05/24/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "library internals in an upgraded Visual C++ project"
-  - "_Hash_seq in an upgraded Visual C++ project"
+dev_langs: ["C++"]
+helpviewer_keywords: ["library internals in an upgraded Visual C++ project", "_Hash_seq in an upgraded Visual C++ project"]
 ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
 caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Fix your dependencies on library internals
 

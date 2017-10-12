@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4412"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4412"
+f1_keywords: ["C4412"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4412"]
 ms.assetid: f28dc531-1a98-497b-a366-0a13e1bc81c7
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Warning (level 2) C4412
 'function' : function signature contains type 'type'; C++ objects are unsafe to pass between pure code and mixed or native.  

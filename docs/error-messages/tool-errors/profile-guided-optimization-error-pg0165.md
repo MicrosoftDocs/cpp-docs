@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "PG0165"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PG0165"
+f1_keywords: ["PG0165"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["PG0165"]
 ms.assetid: e98122e7-ddee-4a2c-96b2-d232e4c65f3e
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Profile-Guided Optimization Error PG0165
 Reading 'Filename.pgd' : 'PGD version is not supported (version mismatch)'.  

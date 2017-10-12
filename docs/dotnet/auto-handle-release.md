@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "msclr::auto_handle::release"
-  - "auto_handle.release"
-  - "msclr.auto_handle.release"
-  - "auto_handle::release"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "auto_handle::release"
+f1_keywords: ["msclr::auto_handle::release", "auto_handle.release", "msclr.auto_handle.release", "auto_handle::release"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["auto_handle::release"]
 ms.assetid: d4848150-859e-4c61-a946-09d24d3d6577
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # auto_handle::release
 Releases the object from `auto_handle` management.  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multiset::multiset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multiset member [STL/CLR]"
+f1_keywords: ["cliext::multiset::multiset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["multiset member [STL/CLR]"]
 ms.assetid: a6ddb2df-d7cd-4b12-aee7-81da1f67f57f
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # multiset::multiset (STL/CLR)
 Constructs a container object.  

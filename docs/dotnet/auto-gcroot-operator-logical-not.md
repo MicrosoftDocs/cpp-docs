@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "msclr.auto_gcroot.operator!"
-  - "auto_gcroot.operator!"
-  - "msclr::auto_gcroot::operator!"
-  - "auto_gcroot::operator!"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "auto_gcroot::operator!"
+f1_keywords: ["msclr.auto_gcroot.operator!", "auto_gcroot.operator!", "msclr::auto_gcroot::operator!", "auto_gcroot::operator!"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["auto_gcroot::operator!"]
 ms.assetid: f9728be3-2e09-4c01-a594-43e0d59d40d3
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # auto_gcroot::operator!
 Operator for using `auto_gcroot` in a conditional expression.  

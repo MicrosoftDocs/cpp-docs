@@ -4,56 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_ftelli64"
-  - "ftell"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+apiname: ["_ftelli64", "ftell"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ftelli64"
-  - "ftell"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ftell function"
-  - "ftelli64 function"
-  - "_ftelli64 function"
-  - "file pointers [C++], getting current position"
-  - "file pointers [C++]"
+f1_keywords: ["_ftelli64", "ftell"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ftell function", "ftelli64 function", "_ftelli64 function", "file pointers [C++], getting current position", "file pointers [C++]"]
 ms.assetid: 40149cd8-65f2-42ff-b70c-68e3e918cdd7
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # ftell, _ftelli64
 Gets the current position of a file pointer.  

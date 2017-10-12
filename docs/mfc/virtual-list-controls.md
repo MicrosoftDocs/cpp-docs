@@ -14,7 +14,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Virtual List Controls
 A virtual list control is a list view control that has the **LVS_OWNERDATA** style. This style enables the control to support an item count up to a `DWORD` (the default item count only extends to an `int`). However, the biggest advantage provided by this style is the ability to only have a subset of data items in memory at any one time. This allows the virtual list view control to lend itself for use with large databases of information, where specific methods of accessing data are already in place.  

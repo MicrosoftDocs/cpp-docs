@@ -4,43 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "address-of"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "address-of operator (&)"
-  - "& operator"
-  - "& operator, address-of operator"
+f1_keywords: ["&"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["address-of operator (&)", "& operator", "& operator [C++], address-of operator"]
 ms.assetid: 2828221a-15f6-4acc-87fe-25e34feebb88
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Address-of Operator: &amp;
 ## Syntax  
   
 ```  
-  
 & cast-expression  
 ```  
   

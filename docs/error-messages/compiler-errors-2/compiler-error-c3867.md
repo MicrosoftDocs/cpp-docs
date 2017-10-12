@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3867"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3867"
+f1_keywords: ["C3867"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3867"]
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C3867
 'func': function call missing argument list; use '&func' to create a pointer to member  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IDispEventSimpleImpl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDispEventSimpleImpl class, using"
+f1_keywords: ["IDispEventSimpleImpl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDispEventSimpleImpl class, using"]
 ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Using IDispEventSimpleImpl
 When using `IDispEventSimpleImpl` to handle events, you will need to:  

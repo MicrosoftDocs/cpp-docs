@@ -4,41 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "redistributing DLLs"
-  - "manifests [C++]"
-  - "DLLs [C++], redistributing"
-  - "side-by-side assemblies [C++]"
-  - "dynamic linking [C++]"
-  - "application deployment [C++], methods"
-  - "deploying applications [C++], methods"
-  - "static linking [C++]"
-  - "libraries [C++], application deployment issues"
+dev_langs: ["C++"]
+helpviewer_keywords: ["redistributing DLLs", "manifests [C++]", "DLLs [C++], redistributing", "side-by-side assemblies [C++]", "dynamic linking [C++]", "application deployment [C++], methods", "deploying applications [C++], methods", "static linking [C++]", "libraries [C++], application deployment issues"]
 ms.assetid: fd8eb956-f4a0-4ffb-b401-328c73e66986
 caps.latest.revision: 35
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Choosing a Deployment Method
 Unless your Visual C++ application is self-contained and can be deployed by using a copy command, we recommend that you use Windows Installer for deployment. Windows Installer supports installation, repair, and uninstallation, and also supports atomic updating of application files, dependencies, and registry entries.  

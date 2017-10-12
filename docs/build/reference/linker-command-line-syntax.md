@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "linker [C++], syntax"
-  - "linker command line [C++]"
-  - "LINK tool [C++], command-line syntax"
+dev_langs: ["C++"]
+helpviewer_keywords: ["linker [C++], syntax", "linker command line [C++]", "LINK tool [C++], command-line syntax"]
 ms.assetid: e2a31e17-77bd-4e74-9305-75b105b26539
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Linker Command-Line Syntax
 To run LINK.EXE, use the following command syntax:  

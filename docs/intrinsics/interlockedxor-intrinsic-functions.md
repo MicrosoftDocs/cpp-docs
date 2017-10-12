@@ -4,63 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_InterlockedXor_nf"
-  - "_InterlockedXor_np"
-  - "_InterlockedXor64_HLERelease"
-  - "_InterlockedXor8_acq"
-  - "_InterlockedXor64_acq"
-  - "_InterlockedXor64_rel"
-  - "_InterlockedXor64_nf"
-  - "_InterlockedXor_acq"
-  - "_InterlockedXor16"
-  - "_InterlockedXor64_np"
-  - "_InterlockedXor64"
-  - "_InterlockedXor_HLEAcquire"
-  - "_InterlockedXor_HLERelease"
-  - "_InterlockedXor_cpp"
-  - "_InterlockedXor16_rel"
-  - "_InterlockedXor8_rel"
-  - "_InterlockedXor8"
-  - "_InterlockedXor64_HLEAcquire"
-  - "_InterlockedXor16_nf"
-  - "_InterlockedXor16_acq"
-  - "_InterlockedXor16_np"
-  - "_InterlockedXor8_fn"
-  - "_InterlockedXor8_np"
-  - "_InterlockedXor64_cpp"
-  - "_InterlockedXor_rel"
-  - "_InterlockedXor"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "InterlockedXor intrinsic"
-  - "_InterlockedXor64 intrinsic"
-  - "InterlockedXor64 intrinsic"
-  - "_InterlockedXor intrinsic"
+f1_keywords: ["_InterlockedXor_nf", "_InterlockedXor_np", "_InterlockedXor64_HLERelease", "_InterlockedXor8_acq", "_InterlockedXor64_acq", "_InterlockedXor64_rel", "_InterlockedXor64_nf", "_InterlockedXor_acq", "_InterlockedXor16", "_InterlockedXor64_np", "_InterlockedXor64", "_InterlockedXor_HLEAcquire", "_InterlockedXor_HLERelease", "_InterlockedXor_cpp", "_InterlockedXor16_rel", "_InterlockedXor8_rel", "_InterlockedXor8", "_InterlockedXor64_HLEAcquire", "_InterlockedXor16_nf", "_InterlockedXor16_acq", "_InterlockedXor16_np", "_InterlockedXor8_fn", "_InterlockedXor8_np", "_InterlockedXor64_cpp", "_InterlockedXor_rel", "_InterlockedXor"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["InterlockedXor intrinsic", "_InterlockedXor64 intrinsic", "InterlockedXor64 intrinsic", "_InterlockedXor intrinsic"]
 ms.assetid: faef1796-cb5a-4430-b1e2-9d5eaf9b4a91
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _InterlockedXor Intrinsic Functions
 **Microsoft Specific**  

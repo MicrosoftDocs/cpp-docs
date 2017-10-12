@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data types [C++], function return types"
-  - "function return types, return statement"
-  - "return keyword [C++], syntax"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data types [C++], function return types", "function return types [C++], return statement", "return keyword [C++], syntax"]
 ms.assetid: 66d002ab-5625-4b68-8446-71e1b8fcdbd8
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # return Statement in Program Termination (C++)
 Issuing a `return` statement from **main** is functionally equivalent to calling the **exit** function. Consider the following example:  

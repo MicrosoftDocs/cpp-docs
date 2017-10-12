@@ -14,7 +14,6 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 helpviewer_keywords: ["std::shared_future [C++]", "std::shared_future [C++], shared_future", "std::shared_future [C++], get", "std::shared_future [C++], valid", "std::shared_future [C++], wait", "std::shared_future [C++], wait_for", "std::shared_future [C++], wait_until"]
 ---
 # shared_future Class

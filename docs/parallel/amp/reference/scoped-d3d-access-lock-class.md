@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['scoped_d3d_access_lock', 'AMPRT/scoped_d3d_access_lock', 'AMPRT/concurrency::direct3d::scoped_d3d_access_lock::scoped_d3d_access_lock']
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 0ad333e6-9839-4736-a722-16d95d70c4b1
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # scoped_d3d_access_lock Class
 RAII wrapper for a D3D access lock on an accelerator_view object.  

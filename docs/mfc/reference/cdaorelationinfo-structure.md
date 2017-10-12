@@ -15,7 +15,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDaoRelationInfo Structure
 The `CDaoRelationInfo` structure contains information about a relation defined between fields of two tables in a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object.  

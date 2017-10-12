@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CDacl', 'ATLSECURITY/ATL::CDacl', 'ATLSECURITY/ATL::CDacl::CDacl', 'ATLSECURITY/ATL::CDacl::AddAllowedAce', 'ATLSECURITY/ATL::CDacl::AddDeniedAce', 'ATLSECURITY/ATL::CDacl::GetAceCount', 'ATLSECURITY/ATL::CDacl::RemoveAce', 'ATLSECURITY/ATL::CDacl::RemoveAllAces']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDacl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDacl class"]
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CDacl Class
 This class is a wrapper for a DACL (discretionary access-control list) structure.  

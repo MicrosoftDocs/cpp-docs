@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CWindowImpl', 'ATLWIN/ATL::CWindowImpl', 'ATLWIN/ATL::CWindowImpl::Create', 'ATLWIN/ATL::DefWindowProc', 'ATLWIN/ATL::GetCurrentMessage', 'ATLWIN/ATL::GetWindowProc', 'ATLWIN/ATL::OnFinalMessage', 'ATLWIN/ATL::SubclassWindow', 'ATLWIN/ATL::UnsubclassWindow', 'ATLWIN/ATL::GetWndClassInfo', 'ATLWIN/ATL::WindowProc', 'ATLWIN/ATL::m_pfnSuperWindowProc']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CWindowImpl class"
-  - "subclassing windows, ATL"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWindowImpl class", "subclassing windows, ATL"]
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CWindowImpl Class
 Provides methods for creating or subclassing a window.  

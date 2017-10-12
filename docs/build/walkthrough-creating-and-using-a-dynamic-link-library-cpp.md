@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "libraries [C++], DLLs"
-  - "DLLs [C++], walkthroughs"
+dev_langs: ["C++"]
+helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
 caps.latest.revision: 36
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Walkthrough: Create and use your own Dynamic Link Library (C++)  
   

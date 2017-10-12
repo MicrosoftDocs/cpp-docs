@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Concurrency Runtime, use with COM"
-  - "COM, use with the Concurrency Runtime"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Concurrency Runtime, use with COM", "COM, use with the Concurrency Runtime"]
 ms.assetid: a7c798b8-0fc8-4bee-972f-22ef158f7f48
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Walkthrough: Using the Concurrency Runtime in a COM-Enabled Application
 This document demonstrates how to use the Concurrency Runtime in an application that uses the Component Object Model (COM).  

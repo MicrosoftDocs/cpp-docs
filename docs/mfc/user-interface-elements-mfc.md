@@ -14,7 +14,6 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # User Interface Elements (MFC)
 For information about how to create the user interface for your application by using the Microsoft Foundation Class (MFC) Library, see the following topics.  

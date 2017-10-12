@@ -4,69 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mbsinc"
-  - "_wcsinc"
-  - "_mbsinc_l"
-  - "_strinc"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_mbsinc", "_wcsinc", "_mbsinc_l", "_strinc"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsinc_l"
-  - "_strinc"
-  - "strinc"
-  - "_mbsinc"
-  - "_wcsinc"
-  - "wcsinc"
-  - "mbsinc"
-  - "_mbsinc_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbsinc function"
-  - "wcsinc function"
-  - "mbsinc_l function"
-  - "_strinc function"
-  - "strinc function"
-  - "_mbsinc_l function"
-  - "mbsinc function"
-  - "_wcsinc function"
-  - "_tcsinc function"
-  - "tcsinc function"
+f1_keywords: ["mbsinc_l", "_strinc", "strinc", "_mbsinc", "_wcsinc", "wcsinc", "mbsinc", "_mbsinc_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbsinc function", "wcsinc function", "mbsinc_l function", "_strinc function", "strinc function", "_mbsinc_l function", "mbsinc function", "_wcsinc function", "_tcsinc function", "tcsinc function"]
 ms.assetid: 54685943-8e2c-45e9-a559-2d94930dc6b4
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _strinc, _wcsinc, _mbsinc, _mbsinc_l
 Advances a string pointer by one character.  

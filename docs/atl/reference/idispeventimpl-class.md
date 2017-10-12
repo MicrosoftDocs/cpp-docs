@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IDispEventImpl', 'ATLCOM/ATL::IDispEventImpl', 'ATLCOM/ATL::IDispEventImpl::IDispEventImpl', 'ATLCOM/ATL::IDispEventImpl::GetFuncInfoFromId', 'ATLCOM/ATL::IDispEventImpl::GetIDsOfNames', 'ATLCOM/ATL::IDispEventImpl::GetTypeInfo', 'ATLCOM/ATL::IDispEventImpl::GetTypeInfoCount', 'ATLCOM/ATL::IDispEventImpl::GetUserDefinedType']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDispEventImpl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IDispEventImpl class"]
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IDispEventImpl Class
 This class provides implementations of the `IDispatch` methods.  

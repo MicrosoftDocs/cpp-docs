@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "vc-attr.iid_is"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "iid_is attribute"
+f1_keywords: ["vc-attr.iid_is"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["iid_is attribute"]
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # iid_is
 Specifies the IID of the COM interface pointed to by an interface pointer.  

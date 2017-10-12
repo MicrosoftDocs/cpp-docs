@@ -4,59 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wputenv_s"
-  - "_putenv_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_wputenv_s", "_putenv_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "putenv_s"
-  - "wputenv_s"
-  - "_wputenv_s"
-  - "_putenv_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "wputenv_s function"
-  - "_putenv_s function"
-  - "environment variables, deleting"
-  - "putenv_s function"
-  - "_wputenv_s function"
-  - "environment variables, creating"
-  - "environment variables, modifying"
+f1_keywords: ["putenv_s", "wputenv_s", "_wputenv_s", "_putenv_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["wputenv_s function", "_putenv_s function", "environment variables, deleting", "putenv_s function", "_wputenv_s function", "environment variables, creating", "environment variables, modifying"]
 ms.assetid: fbf51225-a8da-4b9b-9d7c-0b84ef72df18
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _putenv_s, _wputenv_s
 Creates, modifies, or removes environment variables. These are versions of [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md) but have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

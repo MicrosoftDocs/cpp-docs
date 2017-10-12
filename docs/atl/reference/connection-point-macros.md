@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "connection points [C++], macros"
+f1_keywords: ["atlcom/ATL::BEGIN_CONNECTION_POINT_MAP", "atlcom/ATL::END_CONNECTION_POINT_MAP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["connection points [C++], macros"]
 ms.assetid: cc3a6dd3-5538-45df-b027-1f34963c31e5
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Connection Point Macros
 These macros define connection point maps and entries.  

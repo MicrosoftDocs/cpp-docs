@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.References"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Add References Dialog Box (C++)"
-  - ".NET Framework (C++), Add References Dialog Box"
+f1_keywords: ["VC.Project.References"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Add References Dialog Box (C++)", ".NET Framework (C++), Add References Dialog Box"]
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
 caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Adding references in Visual C++ projects
 It is very common for programs to call into APIs in other binaries such as DLLs, Windows Runtime components, extension SDKs, COM components, and .NET assemblies. The way that your program finds those other binaries depends both on the type of your project, and the type of the binary.  

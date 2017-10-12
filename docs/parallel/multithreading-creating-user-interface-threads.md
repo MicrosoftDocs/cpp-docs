@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CREATE_SUSPENDED"
-  - "SECURITY_ATTRIBUTES"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "multithreading [C++], user interface threads"
-  - "threading [C++], creating threads"
-  - "threading [C++], user interface threads"
-  - "user interface threads [C++]"
-  - "threading [MFC], user interface threads"
+f1_keywords: ["CREATE_SUSPENDED", "SECURITY_ATTRIBUTES"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["multithreading [C++], user interface threads", "threading [C++], creating threads", "threading [C++], user interface threads", "user interface threads [C++]", "threading [MFC], user interface threads"]
 ms.assetid: 446925c1-db59-46ea-ae5b-d5ae5d5b91d8
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Multithreading: Creating User-Interface Threads
 A user-interface thread is commonly used to handle user input and respond to user events independently of threads executing other portions of the application. The main application thread (provided in your `CWinApp`-derived class) is already created and started for you. This topic describes the steps necessary to create additional user-interface threads.  

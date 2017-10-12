@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications [C++], ClickOnce"
-  - "application deployment [C++], ClickOnce"
-  - "ClickOnce deployment [C++], C++ applications"
+dev_langs: ["C++"]
+helpviewer_keywords: ["deploying applications [C++], ClickOnce", "application deployment [C++], ClickOnce", "ClickOnce deployment [C++], C++ applications"]
 ms.assetid: 9988c546-0936-452c-932f-9c76daa42157
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # ClickOnce Deployment for Visual C++ Applications
 Visual Studio provides two different technologies for deploying Windows applications: ClickOnce deployment or [Windows Installer](http://msdn.microsoft.com/library/cc185688) deployment.  

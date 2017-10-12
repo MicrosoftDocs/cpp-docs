@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['array_view', 'AMP/array_view', 'AMP/Concurrency::array_view::array_view', 'AMP/Concurrency::array_view::copy_to', 'AMP/Concurrency::array_view::data', 'AMP/Concurrency::array_view::discard_data', 'AMP/Concurrency::array_view::get_extent', 'AMP/Concurrency::array_view::get_ref', 'AMP/Concurrency::array_view::get_source_accelerator_view', 'AMP/Concurrency::array_view::refresh', 'AMP/Concurrency::array_view::reinterpret_as', 'AMP/Concurrency::array_view::section', 'AMP/Concurrency::array_view::synchronize', 'AMP/Concurrency::array_view::synchronize_async', 'AMP/Concurrency::array_view::synchronize_to', 'AMP/Concurrency::array_view::synchronize_to_async', 'AMP/Concurrency::array_view::view_as', 'AMP/Concurrency::array_view::rank', 'AMP/Concurrency::array_view::extent', 'AMP/Concurrency::array_view::source_accelerator_view', 'AMP/Concurrency::array_view::value_type']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "array_view class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["array_view class"]
 ms.assetid: 7e7ec9bc-05a2-4372-b05d-752b50006c5a
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # array_view Class
 Represents an N-dimensional view over the data held in another container.  

@@ -4,56 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_lfind"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-utility-l1-1-0.dll"
+apiname: ["_lfind"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "lfind"
-  - "_lfind"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "linear searching"
-  - "lfind function"
-  - "arrays [CRT], searching"
-  - "searching, linear"
-  - "finding keys in arrays"
-  - "_lfind function"
+f1_keywords: ["lfind", "_lfind"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["linear searching", "lfind function", "arrays [CRT], searching", "searching, linear", "finding keys in arrays", "_lfind function"]
 ms.assetid: a40ece70-1674-4b75-94bd-9f57cfff18f2
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _lfind
 Performs a linear search for the specified key. A more secure version of this function is available; see [_lfind_s](../../c-runtime-library/reference/lfind-s.md).  

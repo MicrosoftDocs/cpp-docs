@@ -4,63 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_set_purecall_handler"
-  - "_set_purecall_handler_m"
-  - "_get_purecall_handler"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_set_purecall_handler", "_set_purecall_handler_m", "_get_purecall_handler"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_set_purecall_handler"
-  - "_set_purecall_handler_m"
-  - "set_purecall_handler_m"
-  - "set_purecall_handler"
-  - "stdlib/_set_purecall_handler"
-  - "stdlib/_get_purecall_handler"
-  - "_get_purecall_handler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_set_purecall_handler function"
-  - "set_purecall_handler function"
-  - "purecall_handler"
-  - "set_purecall_handler_m function"
-  - "_purecall_handler"
-  - "_set_purecall_handler_m function"
-  - "_get_purecall_handler function"
+f1_keywords: ["_set_purecall_handler", "_set_purecall_handler_m", "set_purecall_handler_m", "set_purecall_handler", "stdlib/_set_purecall_handler", "stdlib/_get_purecall_handler", "_get_purecall_handler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_set_purecall_handler function", "set_purecall_handler function", "purecall_handler", "set_purecall_handler_m function", "_purecall_handler", "_set_purecall_handler_m function", "_get_purecall_handler function"]
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _get_purecall_handler, _set_purecall_handler
 Gets or sets the error handler for a pure virtual function call.  

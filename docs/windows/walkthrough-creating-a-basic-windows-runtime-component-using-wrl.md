@@ -4,31 +4,15 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 6e3f0986-7905-4f94-90e5-22c2ebfc8cd0
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Walkthrough: Creating a Basic Windows Runtime Component Using WRL
 This document shows how to use the Windows Runtime C++ Template Library (WRL)to create a basic Windows Runtime component. The component adds two numbers and raises an event when the result is prime. This document also demonstrates how to use the component from a Universal Windows Platform app that uses JavaScript.  

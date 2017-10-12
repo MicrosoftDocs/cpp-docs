@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multimap::lower_bound"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lower_bound member [STL/CLR]"
+f1_keywords: ["cliext::multimap::lower_bound"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lower_bound member [STL/CLR]"]
 ms.assetid: b8f9b2c2-ebcd-4553-b410-75fd8d472a49
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # multimap::lower_bound (STL/CLR)
 Finds beginning of range that matches a specified key.  

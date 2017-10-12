@@ -4,32 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ['completion_future', 'AMPRT/completion_future', 'AMPRT/Concurrency::completion_future::completion_future', 'AMPRT/Concurrency::completion_future::get', 'AMPRT/Concurrency::completion_future::then', 'AMPRT/Concurrency::completion_future::to_task', 'AMPRT/Concurrency::completion_future::valid', 'AMPRT/Concurrency::completion_future::wait', 'AMPRT/Concurrency::completion_future::wait_for', 'AMPRT/Concurrency::completion_future::wait_until']
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 ms.assetid: 1303c62e-546d-4b02-a578-251ed3fc0b6b
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # completion_future Class
 Represents a future corresponding to a C++ AMP asynchronous operation.  

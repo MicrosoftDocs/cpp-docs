@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "service providers [OLE DB]"
-  - "OLE DB services [OLE DB], overriding defaults"
+dev_langs: ["C++"]
+helpviewer_keywords: ["service providers [OLE DB]", "OLE DB services [OLE DB], overriding defaults"]
 ms.assetid: 08e366c0-74d8-463b-93a6-d58a8dc195f8
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Overriding Provider Service Defaults
 The provider's registry value for **OLEDB_SERVICES** is returned as the default value for the [DBPROP_INIT_OLEDBSERVICES](https://msdn.microsoft.com/en-us/library/ms716898.aspx) initialization property on the data source object.  

@@ -4,39 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "locks [C++], recordsets"
-  - "optimistic locking"
-  - "pessimistic locking in ODBC"
-  - "recordsets [C++], locking records"
-  - "optimistic locking, ODBC"
-  - "ODBC recordsets [C++], locking records"
-  - "data [C++], locking"
+dev_langs: ["C++"]
+helpviewer_keywords: ["locks [C++], recordsets", "optimistic locking", "pessimistic locking in ODBC", "recordsets [C++], locking records", "optimistic locking, ODBC", "ODBC recordsets [C++], locking records", "data [C++], locking"]
 ms.assetid: 8fe8fcfe-b55a-41a8-9136-94a7cd1e4806
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Recordset: Locking Records (ODBC)
 This topic applies to the MFC ODBC classes.  

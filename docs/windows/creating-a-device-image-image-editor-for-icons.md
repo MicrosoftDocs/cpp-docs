@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.icon"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cursors [C++], creating"
-  - "icons [C++], creating"
-  - "display devices"
-  - "display devices, creating image"
-  - "images [C++], creating for display devices"
-  - "icons [C++], inserting"
+f1_keywords: ["vc.editors.icon"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["cursors [C++], creating", "icons [C++], creating", "display devices", "display devices, creating image", "images [C++], creating for display devices", "icons [C++], inserting"]
 ms.assetid: 5a536928-32df-4ace-beb1-1521ce3b871f
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Creating a Device Image (Image Editor for Icons)
 When you create a new icon or cursor resource, the Image editor first creates an image in a specific style (32 × 32, 16 colors for icons and 32 × 32, Monochrome for cursors). You can then add images in different sizes and styles to the initial icon or cursor and edit each additional image, as needed, for the different display devices. You can also edit an image by performing a cut-and-paste operation from an existing image type or from a bitmap created in a graphics program.  

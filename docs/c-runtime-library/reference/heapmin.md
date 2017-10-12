@@ -4,56 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_heapmin"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-heap-l1-1-0.dll"
+apiname: ["_heapmin"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_heapmin"
-  - "heapmin"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "heap memory"
-  - "minimizing heaps"
-  - "memory, releasing"
-  - "heaps, releasing unused memory"
-  - "_heapmin function"
-  - "heapmin function"
+f1_keywords: ["_heapmin", "heapmin"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["heap memory", "minimizing heaps", "memory, releasing", "heaps, releasing unused memory", "_heapmin function", "heapmin function"]
 ms.assetid: c0bccdf6-2d14-4d7b-a7ff-d6a17bdb410f
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _heapmin
 Releases unused heap memory to the operating system.  

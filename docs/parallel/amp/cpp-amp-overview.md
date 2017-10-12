@@ -4,37 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C++ Accelerated Massive Parallelism, requirements"
-  - "C++ Accelerated Massive Parallelism, architecture"
-  - "C++ AMP"
-  - "C++ Accelerated Massive Parallelism, overview"
-  - "C++ Accelerated Massive Parallelism"
+dev_langs: ["C++"]
+helpviewer_keywords: ["C++ Accelerated Massive Parallelism, requirements", "C++ Accelerated Massive Parallelism, architecture", "C++ AMP", "C++ Accelerated Massive Parallelism, overview", "C++ Accelerated Massive Parallelism"]
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
 caps.latest.revision: 60
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # C++ AMP Overview
 C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code by taking advantage of data-parallel hardware such as a graphics processing unit (GPU) on a discrete graphics card. By using C++ AMP, you can code multi-dimensional data algorithms so that execution can be accelerated by using parallelism on heterogeneous hardware. The C++ AMP programming model includes multidimensional arrays, indexing, memory transfer, tiling, and a mathematical function library. You can use C++ AMP language extensions to control how data is moved from the CPU to the GPU and back, so that you can improve performance.  

@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComBSTR class, programming with"
-  - "Unicode, using CComBSTR [ATL]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComBSTR class, programming with", "Unicode, using CComBSTR [ATL]"]
 ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Programming with CComBSTR (ATL)
 The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper around the `BSTR` data type. While `CComBSTR` is a useful tool, there are several situations that require caution.  

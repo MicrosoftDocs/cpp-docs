@@ -15,7 +15,6 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # CDockState Class
 A serialized `CObject` class that loads, unloads, or clears the state of one or more docking control bars in persistent memory (a file).  

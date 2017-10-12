@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['IPropertyPageImpl', 'ATLCTL/ATL::IPropertyPageImpl', 'ATLCTL/ATL::IPropertyPageImpl::IPropertyPageImpl', 'ATLCTL/ATL::IPropertyPageImpl::Activate', 'ATLCTL/ATL::IPropertyPageImpl::Apply', 'ATLCTL/ATL::IPropertyPageImpl::Deactivate', 'ATLCTL/ATL::IPropertyPageImpl::GetPageInfo', 'ATLCTL/ATL::IPropertyPageImpl::Help', 'ATLCTL/ATL::IPropertyPageImpl::IsPageDirty', 'ATLCTL/ATL::IPropertyPageImpl::Move', 'ATLCTL/ATL::IPropertyPageImpl::SetDirty', 'ATLCTL/ATL::IPropertyPageImpl::SetObjects', 'ATLCTL/ATL::IPropertyPageImpl::SetPageSite', 'ATLCTL/ATL::IPropertyPageImpl::Show', 'ATLCTL/ATL::IPropertyPageImpl::TranslateAccelerator', 'ATLCTL/ATL::IPropertyPageImpl::m_bDirty', 'ATLCTL/ATL::IPropertyPageImpl::m_dwDocString', 'ATLCTL/ATL::IPropertyPageImpl::m_dwHelpContext', 'ATLCTL/ATL::IPropertyPageImpl::m_dwHelpFile', 'ATLCTL/ATL::IPropertyPageImpl::m_dwTitle', 'ATLCTL/ATL::IPropertyPageImpl::m_nObjects', 'ATLCTL/ATL::IPropertyPageImpl::m_pPageSite', 'ATLCTL/ATL::IPropertyPageImpl::m_ppUnk', 'ATLCTL/ATL::IPropertyPageImpl::m_size']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property pages"
-  - "IPropertyPage ATL implementation"
-  - "IPropertyPageImpl class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["property pages", "IPropertyPage ATL implementation", "IPropertyPageImpl class"]
 ms.assetid: f9b7c8b1-7a04-4eab-aa63-63efddb740fa
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # IPropertyPageImpl Class
 This class implements **IUnknown** and provides a default implementation of the [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface.  

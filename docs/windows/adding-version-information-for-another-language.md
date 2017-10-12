@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.version"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "languages, version information"
-  - "New Version Info Block"
-  - "blocks, adding"
-  - "resources [Visual Studio], adding version information"
-  - "version information, adding for languages"
+f1_keywords: ["vc.editors.version"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["languages, version information", "New Version Info Block", "blocks, adding", "resources [Visual Studio], adding version information", "version information, adding for languages"]
 ms.assetid: 17f6273c-e1cc-441a-a3d8-f564341cbf20
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Adding Version Information for Another Language
 ### To add version information for another language (new info block)  

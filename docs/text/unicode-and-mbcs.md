@@ -4,43 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_mbcs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MBCS [C++], Unicode"
-  - "MFC [C++], character sets"
-  - "character sets [C++], multibyte"
-  - "run-time libraries [C++], language portability"
-  - "character sets [C++], Unicode"
-  - "Unicode [C++], MFC and C run-time functions"
-  - "multibyte characters [C++]"
-  - "runtime [C++], language portability"
+f1_keywords: ["_mbcs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MBCS [C++], Unicode", "MFC [C++], character sets", "character sets [C++], multibyte", "run-time libraries [C++], language portability", "character sets [C++], Unicode", "Unicode [C++], MFC and C run-time functions", "multibyte characters [C++]", "runtime [C++], language portability"]
 ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
 caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Unicode and MBCS
 The Microsoft Foundation Classes (MFC) library, the C run-time library for Visual C++, and the Visual C++ development environment are enabled to assist your international programming. They provide:  

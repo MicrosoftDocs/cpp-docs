@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "best practices [Concurrency Runtime]"
-  - "Concurrency Runtime, practices to avoid"
-  - "practices to avoid [Concurrency Runtime]"
-  - "Concurrency Runtime, best practices"
+dev_langs: ["C++"]
+helpviewer_keywords: ["best practices [Concurrency Runtime]", "Concurrency Runtime, practices to avoid", "practices to avoid [Concurrency Runtime]", "Concurrency Runtime, best practices"]
 ms.assetid: 7231d4be-d1e3-401d-8b66-94fd51b587c9
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Concurrency Runtime Best Practices
 This section describes best practices that can help you make effective use of the Concurrency Runtime. These best practices apply to the [Parallel Patterns Library](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL), the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md), and the [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::pair::swap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "swap member [STL/CLR]"
+f1_keywords: ["cliext::pair::swap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["swap member [STL/CLR]"]
 ms.assetid: 7f5cbfa0-3702-40ab-a3f4-ffde02126095
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # pair::swap (STL/CLR)
 Swaps the contents of two pairs.  

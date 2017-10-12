@@ -14,7 +14,6 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Handling Windows Messages in Your Dialog Box
 Dialog boxes are windows, so they can handle Windows messages if you supply the appropriate handler functions. When you create your dialog class with the Add Class Wizard, the wizard adds an empty message map to the class. Use the Properties window to map any Windows messages or commands you want your class to handle.  

@@ -15,7 +15,6 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # _ITERATOR_DEBUG_LEVEL
 The `_ITERATOR_DEBUG_LEVEL` macro controls whether [checked iterators](../standard-library/checked-iterators.md) and [debug iterator support](../standard-library/debug-iterator-support.md) are enabled. This macro supersedes and combines the functionality of the older `_SECURE_SCL` and `_HAS_ITERATOR_DEBUGGING` macros.  

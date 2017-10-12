@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CPrivateObjectSecurityDesc', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::ConvertToAutoInherit', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get', 'ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CPrivateObjectSecurityDesc class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CPrivateObjectSecurityDesc class"]
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CPrivateObjectSecurityDesc Class
 This class represents a private object security descriptor object.  

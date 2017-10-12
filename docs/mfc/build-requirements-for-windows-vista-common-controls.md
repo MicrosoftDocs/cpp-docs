@@ -14,7 +14,6 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Build Requirements for Windows Vista Common Controls
 The Microsoft Foundation Class (MFC) library supports Windows Common Controls version 6.1. The common controls are included in [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] and the library is included in the [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)]. The library provides new methods that enhance existing classes, and new classes and methods that support [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] common controls. When you build your application, you should follow the compilation and migration requirements that are described in the following sections.  

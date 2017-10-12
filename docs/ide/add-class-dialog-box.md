@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.addclass"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Add Class dialog box"
+f1_keywords: ["vc.addclass"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Add Class dialog box"]
 ms.assetid: 916259b8-8e5f-4267-bd10-313483beba67
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Add Class Dialog Box
 The **Add Class** dialog box contains templates that allow you to:  

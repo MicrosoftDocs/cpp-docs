@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "implements/Microsoft::WRL::MixIn"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MixIn structure"
+f1_keywords: ["implements/Microsoft::WRL::MixIn"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MixIn structure"]
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # MixIn Structure
 Ensures that a runtime class derives from Windows Runtime interfaces, if any, and then classic COM interfaces.  

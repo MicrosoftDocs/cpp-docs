@@ -4,40 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "generics [C++], about generics"
-  - "default initializers [C++]"
-  - "type parameters [C++]"
-  - "constructed types"
-  - "type arguments [C++]"
-  - "constructed types, open [C++]"
-  - "open constructed types [C++]"
-  - "constructed types, closed [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["generics [C++], about generics", "default initializers [C++]", "type parameters [C++]", "constructed types", "type arguments [C++]", "constructed types, open [C++]", "open constructed types [C++]", "constructed types, closed [C++]"]
 ms.assetid: 21f10637-0fce-4916-b925-6c86a126d3aa
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Overview of Generics in Visual C++
 Generics are parameterized types supported by the common language runtime. A parameterized type is a type that is defined with an unknown type parameter that is specified when the generic is used.  

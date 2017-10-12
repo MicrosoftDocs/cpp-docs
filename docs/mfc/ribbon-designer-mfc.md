@@ -15,7 +15,6 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Ribbon Designer (MFC)
 The Ribbon Designer lets you create and customize ribbons in MFC applications. A ribbon is a user interface (UI) element that organizes commands into logical groups. These groups appear on separate tabs in a strip across the top of the window. The ribbon replaces the menu bar and toolbars. A ribbon can significantly improve application usability. For more information, see [Ribbons](http://go.microsoft.com/fwlink/linkid=129233). The following illustration shows a ribbon.  

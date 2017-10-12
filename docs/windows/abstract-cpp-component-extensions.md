@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "abstract"
-  - "abstract_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "abstract keyword [C++]"
+f1_keywords: ["abstract", "abstract_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["abstract keyword [C++]"]
 ms.assetid: cbae3408-0378-4ac8-b70d-c016b381a6d5
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # abstract  (C++ Component Extensions)
 The `abstract` keyword declares either:  

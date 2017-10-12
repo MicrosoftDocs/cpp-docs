@@ -4,57 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_cabs"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["_cabs"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "cabsl"
-  - "_cabs"
-  - "_cabsl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cabs function"
-  - "cabsl function"
-  - "absolute values"
-  - "_cabsl function"
-  - "_cabs function"
-  - "calculating absolute values"
+f1_keywords: ["cabsl", "_cabs", "_cabsl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["cabs function", "cabsl function", "absolute values", "_cabsl function", "_cabs function", "calculating absolute values"]
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _cabs
 Calculates the absolute value of a complex number.  

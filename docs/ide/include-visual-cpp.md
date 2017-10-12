@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "include"
-  - "<include>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "include C++ XML tag"
-  - "<include> C++ XML tag"
+f1_keywords: ["include", "<include>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["include C++ XML tag", "<include> C++ XML tag"]
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # &lt;include&gt; (Visual C++)
 The \<include> tag lets you refer to comments in another file that describe the types and members in your source code. This is an alternative to placing documentation comments directly in your source code file.  For example, you can use \<include> to insert standard "boilerplate" comments that are used throughout your team or company.  

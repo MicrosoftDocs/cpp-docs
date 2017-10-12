@@ -4,42 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "single inheritance_cpp"
-  - "single inheritance"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "single inheritance"
-  - "base classes, indirect"
-  - "scope, scope resolution operator"
-  - "operators [C++], scope resolution"
-  - "scope resolution operator"
-  - "derived classes, single base class"
-  - "inheritance, single"
+dev_langs: ["C++"]
+helpviewer_keywords: ["single inheritance", "base classes [C++], indirect", "scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", "derived classes [C++], single base class", "inheritance, single"]
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Single Inheritance
 In "single inheritance," a common form of inheritance, classes have only one base class. Consider the relationship illustrated in the following figure.  

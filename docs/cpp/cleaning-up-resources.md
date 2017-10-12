@@ -4,38 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "termination handlers, cleaning up resources"
-  - "exception handling, cleaning up resources"
-  - "C++ exception handling, termination handlers"
-  - "resources [C++], cleaning up"
-  - "exception handling, cleanup code"
-  - "try-catch keyword [C++], termination handlers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["termination handlers [C++], cleaning up resources", "exception handling [C++], cleaning up resources", "C++ exception handling, termination handlers", "resources [C++], cleaning up", "exception handling [C++], cleanup code", "try-catch keyword [C++], termination handlers"]
 ms.assetid: 65753efe-6a27-4750-b90c-50635775c1b6
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Cleaning up Resources
 During termination-handler execution, you may not know which resources are actually allocated before the termination handler was called. It is possible that the `__try` statement block was interrupted before all resources were allocated, so that not all resources were opened.  

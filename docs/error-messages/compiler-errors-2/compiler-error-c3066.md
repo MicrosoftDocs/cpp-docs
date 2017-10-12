@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "03/28/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C3066"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C3066"
+f1_keywords: ["C3066"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C3066"]
 ms.assetid: 226f6de5-c4c5-41e2-b31a-2e30a37fbbeb
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C3066
 there are multiple ways that an object of this type can be called with these arguments  

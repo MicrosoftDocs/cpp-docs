@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.OutputFile"
-  - "/out"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "output files, name linker option"
-  - "-OUT linker option"
-  - "OUT linker option"
-  - "/OUT C++ linker option"
-  - "linker [C++], output files"
+f1_keywords: ["VC.Project.VCLinkerTool.OutputFile", "/out"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["output files, name linker option", "-OUT linker option", "OUT linker option", "/OUT C++ linker option", "linker [C++], output files"]
 ms.assetid: 976210a4-e51f-4cfb-af5e-c16344455834
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # /OUT (Output File Name)
 ```  

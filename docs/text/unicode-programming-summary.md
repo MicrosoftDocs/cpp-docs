@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Unicode [C++], programming with"
-  - "Unicode [C++], MFC and C run-time functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Unicode [C++], programming with", "Unicode [C++], MFC and C run-time functions"]
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
 caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Unicode Programming Summary
 To take advantage of the MFC and C run-time support for Unicode, you need to:  

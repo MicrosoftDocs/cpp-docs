@@ -4,40 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "cl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "syntax, compiler filename"
-  - "paths, CL compiler filename syntax"
-  - "cl.exe compiler, filename syntax"
-  - "extensions, specifying to compiler"
-  - "file names [C++], CL compiler"
-  - "file names [C++]"
+f1_keywords: ["cl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["syntax, compiler filename", "paths, CL compiler filename syntax", "cl.exe compiler, filename syntax", "extensions, specifying to compiler", "file names [C++], CL compiler", "file names [C++]"]
 ms.assetid: 3ca72586-75be-4477-b323-a1be232e80d4
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CL Filename Syntax
 CL accepts files with names that follow FAT, HPFS, or NTFS naming conventions. Any filename can include a full or partial path. A full path includes a drive name and one or more directory names. CL accepts filenames separated either by backslashes (\\) or forward slashes (/). Filenames that contain spaces must be surrounded by double quote characters. A partial path omits the drive name, which CL assumes to be the current drive. If you don't specify a path, CL assumes the file is in the current directory.  

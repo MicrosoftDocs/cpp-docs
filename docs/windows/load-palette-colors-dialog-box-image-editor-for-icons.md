@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.loadcolorpalette"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "color palettes"
-  - "Load Palette Colors dialog box"
+f1_keywords: ["vc.editors.loadcolorpalette"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["color palettes", "Load Palette Colors dialog box"]
 ms.assetid: a1b17203-3e02-4498-91de-4ed089156df1
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Load Palette Colors Dialog Box (Image Editor for Icons)
 Use this dialog box to load special color palettes to use in your project. For more information, see [Saving and Loading Different Color Palettes](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  

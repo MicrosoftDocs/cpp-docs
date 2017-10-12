@@ -4,64 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_putc_nolock"
-  - "_putwc_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+apiname: ["_putc_nolock", "_putwc_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_puttc_nolock"
-  - "puttc_nolock"
-  - "putwc_nolock"
-  - "_putwc_nolock"
-  - "_putc_nolock"
-  - "putc_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "puttc_nolock function"
-  - "putc_nolock function"
-  - "_putc_nolock function"
-  - "streams, writing characters to"
-  - "characters, writing"
-  - "putwc_nolock function"
-  - "_puttc_nolock function"
-  - "_putwc_nolock function"
+f1_keywords: ["_puttc_nolock", "puttc_nolock", "putwc_nolock", "_putwc_nolock", "_putc_nolock", "putc_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["puttc_nolock function", "putc_nolock function", "_putc_nolock function", "streams, writing characters to", "characters, writing", "putwc_nolock function", "_puttc_nolock function", "_putwc_nolock function"]
 ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # _putc_nolock, _putwc_nolock
 Writes a character to a stream without locking the thread.  

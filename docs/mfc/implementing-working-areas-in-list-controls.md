@@ -14,7 +14,6 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Implementing Working Areas in List Controls
 By default, a list control arranges all items in a standard grid fashion. However, another method is supported, working areas, that arranges the list items into rectangular groups. For an image of a list control that implements working areas, see Using List-View Controls in the Windows SDK.  

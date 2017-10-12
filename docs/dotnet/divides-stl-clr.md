@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::divides"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "divides function [STL/CLR]"
+f1_keywords: ["cliext::divides"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["divides function [STL/CLR]"]
 ms.assetid: 4c36026a-02ba-475d-af68-854599647f4b
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # divides (STL/CLR)
 The template class describes a functor that, when called, returns the first argument divided by the second. You use it specify a function object in terms of its argument type.  

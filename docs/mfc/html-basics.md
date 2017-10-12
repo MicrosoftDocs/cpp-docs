@@ -14,7 +14,6 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # HTML Basics
 Most browsers have the capability of examining the HTML source of the pages you browse. When you view the source you will see a number of HTML (Hypertext markup language) tags, surrounded by angle brackets(<>), interspersed with text.  

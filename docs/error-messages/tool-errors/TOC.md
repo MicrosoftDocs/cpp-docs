@@ -186,6 +186,7 @@
 ## [Linker Tools Warning LNK4010](linker-tools-warning-lnk4010.md)
 ## [Linker Tools Warning LNK4014](linker-tools-warning-lnk4014.md)
 ## [Linker Tools Warning LNK4022](linker-tools-warning-lnk4022.md)
+## [Linker Tools Warning LNK4037](linker-tools-warning-lnk4037.md)
 ## [Linker Tools Warning LNK4039](linker-tools-warning-lnk4039.md)
 ## [Linker Tools Warning LNK4044](linker-tools-warning-lnk4044.md)
 ## [Linker Tools Warning LNK4049](linker-tools-warning-lnk4049.md)

@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2584"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2584"
+f1_keywords: ["C2584"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2584"]
 ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Compiler Error C2584
 'Class' : direct base 'Base2' is inaccessible; already a base of 'Base1'  

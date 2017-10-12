@@ -4,37 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "safebuffers"
-  - "safebuffers_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__declspec keyword (C++), safebuffers"
-  - "safebuffers __declspec keyword"
+f1_keywords: ["safebuffers_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__declspec keyword (C++), safebuffers", "safebuffers __declspec keyword"]
 ms.assetid: 0b0dce14-4523-44d2-8070-5dd0fdabc618
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # safebuffers
 **Microsoft Specific**  

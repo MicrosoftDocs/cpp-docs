@@ -4,36 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Size to Content command"
-  - "size, controls"
-  - "text, autosizing controls to fit text"
-  - "controls [C++], sizing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Size to Content command", "size, controls", "text, autosizing controls to fit text", "controls [C++], sizing"]
 ms.assetid: 14ccba02-7171-463a-a121-7018cf1e2e5a
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Sizing Individual Controls
 Use the sizing handles to resize a control. When the pointer is positioned on a sizing handle, it changes shape to indicate the directions in which the control can be resized. Active sizing handles are solid; if a sizing handle is hollow, the control cannot be resized along that axis.  

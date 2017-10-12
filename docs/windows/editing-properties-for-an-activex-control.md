@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [C++], editing properties"
-  - "ActiveX controls [C++], properties"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [C++], editing properties", "ActiveX controls [C++], properties"]
 ms.assetid: e5880c62-36c7-4701-bc99-97a82974c22a
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # Editing Properties for an ActiveX Control
 ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. Properties for ActiveX controls are displayed in the Properties window. In addition, any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box (to view the Property Page for a specific ActiveX control, click the Property Page button in the [Properties Window](/visualstudio/ide/reference/properties-window)).  

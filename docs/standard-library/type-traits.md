@@ -15,7 +15,6 @@ caps.latest.revision: 35
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.mt: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # &lt;type_traits&gt;
 Defines templates that provide compile-time constants that give information about the properties of their type arguments or produce transformed types.  

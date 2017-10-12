@@ -4,45 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr80.dll"
-  - "msvcr110.dll"
-  - "msvcr120.dll"
-  - "msvcr100.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr90.dll"
+apilocation: ["msvcr80.dll", "msvcr110.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcstoui64"
-  - "_tcstoi64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "parsing, numeric strings"
-  - "string conversion, to numeric values"
+f1_keywords: ["_tcstoui64", "_tcstoi64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["parsing, numeric strings", "string conversion, to numeric values"]
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # String to Numeric Value Functions
 -   [strtod, _strtod_l, wcstod, _wcstod_l](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)  

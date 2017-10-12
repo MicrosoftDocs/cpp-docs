@@ -15,7 +15,6 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # uniform_real_distribution Class
 Generates a uniform (every value is equally probable) floating-point distribution within an output range that is inclusive-exclusive.  

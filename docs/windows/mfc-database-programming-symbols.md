@@ -4,35 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC database programming symbols"
-  - "symbols [C++], MFC"
-  - "databases [C++], MFC programming model"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC database programming symbols", "symbols [C++], MFC", "databases [C++], MFC programming model"]
 ms.assetid: 3f676a2c-cf07-415e-a336-680abdc42a5e
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # MFC Database Programming Symbols
 The symbols in this table only appear in an MFC project when database support has been added. They support the MFC connection to SQL servers and database programming.  

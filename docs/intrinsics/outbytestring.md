@@ -4,38 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "__outbytestring"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rep outsb instruction"
-  - "__outbytestring intrinsic"
-  - "outsb instruction"
+f1_keywords: ["__outbytestring"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["rep outsb instruction", "__outbytestring intrinsic", "outsb instruction"]
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # __outbytestring
 **Microsoft Specific**  

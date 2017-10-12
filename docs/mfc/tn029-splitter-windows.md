@@ -15,7 +15,6 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # TN029: Splitter Windows
 This note describes the MFC [CSplitterWnd Class](../mfc/reference/csplitterwnd-class.md), which provides window splits and manages the resizing of other pane windows.  

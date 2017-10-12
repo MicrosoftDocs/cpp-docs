@@ -4,34 +4,16 @@ ms.custom: ""
 ms.date: "07/21/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "simple properties"
-  - "properties [C++], simple"
+dev_langs: ["C++"]
+helpviewer_keywords: ["simple properties", "properties [C++], simple"]
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # How to: Use Properties in C++/CLI
 This article shows how to use properties in C++/CLI.  

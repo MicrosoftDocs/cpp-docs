@@ -4,47 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-f1_keywords: 
-  - "include"
-  - "Lib"
-  - "Path"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "environment variables [C++]"
-  - "VCVARS32.bat file"
-  - "cl.exe compiler [C++], environment variables"
-  - "LINK tool [C++], environment variables"
-  - "PATH reserved word"
-  - "INCLUDE reserved word"
-  - "LINK tool [C++], path"
-  - "LIB environment variable"
-  - "compiling source code [C++], from command line"
-  - "environment variables [C++], CL compiler"
+f1_keywords: ["include", "Lib", "Path"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["environment variables [C++]", "VCVARS32.bat file", "cl.exe compiler [C++], environment variables", "LINK tool [C++], environment variables", "PATH reserved word", "INCLUDE reserved word", "LINK tool [C++], path", "LIB environment variable", "compiling source code [C++], from command line", "environment variables [C++], CL compiler"]
 ms.assetid: 99389528-deb5-43b9-b99a-03c8773ebaf4
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Set the Path and Environment Variables for Command-Line Builds
 

@@ -15,7 +15,6 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # ostream_iterator Class
 The template class ostream_iterator describes an output iterator object that writes successive elements onto the output stream with the extraction **operator <<**.  

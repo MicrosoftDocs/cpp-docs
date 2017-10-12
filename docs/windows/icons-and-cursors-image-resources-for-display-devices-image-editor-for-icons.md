@@ -4,45 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "vc.editors.icon"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cursors [C++], creating"
-  - "image resources, display devices"
-  - "icons [C++], creating"
-  - "cursors [C++], types"
-  - "icons [C++]"
-  - "Image editor [C++], icons and cursors"
-  - "cursors [C++]"
-  - "display devices, creating icons for"
-  - "cursors [C++], hot spots"
-  - "icons [C++], types"
+f1_keywords: ["vc.editors.icon"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["cursors [C++], creating", "image resources, display devices", "icons [C++], creating", "cursors [C++], types", "icons [C++]", "Image editor [C++], icons and cursors", "cursors [C++]", "display devices, creating icons for", "cursors [C++], hot spots", "icons [C++], types"]
 ms.assetid: 8f0809a8-0cf0-4da9-b23d-51f28bf15f5b
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Icons and Cursors: Image Resources for Display Devices (Image Editor for Icons)
 Icons and cursors are graphical resources that can contain multiple images in different sizes and color schemes for different types of display devices. In addition, a cursor has a "hot spot," the location Windows uses to track its position. Both icons and cursors are created and edited using the Image editor, as are bitmaps and other images.  

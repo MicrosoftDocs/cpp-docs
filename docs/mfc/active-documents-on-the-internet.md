@@ -14,7 +14,6 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: ["cs-cz", "de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "pl-pl", "pt-br", "ru-ru", "tr-tr", "zh-cn", "zh-tw"]
 ---
 # Active Documents on the Internet
 Active documents provide an extension to traditional embedded objects. The Active documents may be multipage and are displayed in the entire client area. They do traditional menu negotiation, and can be edited in-place as well as in an open window in the server application. Instead of displaying as a small rectangle surrounded by a hatched border, Active documents are full frame and always in-place active.  

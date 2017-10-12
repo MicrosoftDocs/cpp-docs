@@ -4,60 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mbsnbcmp"
-  - "_mbsnbcmp_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_mbsnbcmp", "_mbsnbcmp_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsnbcmp"
-  - "tcsnbmp"
-  - "_mbsnbcmp_l"
-  - "mbsnbcmp_l"
-  - "_mbsnbcmp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mbsnbcmp_l function"
-  - "mbsnbcmp function"
-  - "tcsncmp function"
-  - "_mbsnbcmp_l function"
-  - "_tcsncmp function"
-  - "_mbsnbcmp function"
+f1_keywords: ["mbsnbcmp", "tcsnbmp", "_mbsnbcmp_l", "mbsnbcmp_l", "_mbsnbcmp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mbsnbcmp_l function", "mbsnbcmp function", "tcsncmp function", "_mbsnbcmp_l function", "_tcsncmp function", "_mbsnbcmp function"]
 ms.assetid: dbc99e50-cf85-4e57-a13f-067591f18ac8
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # _mbsnbcmp, _mbsnbcmp_l
 Compares the first `n` bytes of two multibyte-character strings.  

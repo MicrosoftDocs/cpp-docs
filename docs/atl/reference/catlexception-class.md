@@ -4,34 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ['CAtlException', 'ATLEXCEPT/ATL::CAtlException', 'ATLEXCEPT/ATL::CAtlException::CAtlException', 'ATLEXCEPT/ATL::CAtlException::m_hr']
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlException class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlException class"]
 ms.assetid: 3fd7b041-f70d-4292-b947-0d70781d95a8
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-translation.priority.ht: 
-  - "cs-cz"
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "pl-pl"
-  - "pt-br"
-  - "ru-ru"
-  - "tr-tr"
-  - "zh-cn"
-  - "zh-tw"
 ---
 # CAtlException Class
 This class defines an ATL exception.  
