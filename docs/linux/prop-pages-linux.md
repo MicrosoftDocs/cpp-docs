@@ -16,13 +16,13 @@ manager: "ghogen"
 # Linux Project Property Page Reference
 This section contains reference content for property pages in a Visual C++ Linux project.
 
-## [Visual C++ Directories (Linux)](prop-pages/directories-linux.md)
-## [C++ General Properties (Linux)](prop-pages/general-linux.md)
-## [C++ Makefile Project (Linux)](prop-pages/general-linux-makefile.md)
-## [C++ Makefile Intellisense Properties (Linux)](prop-pages/isense-linux-makefile.md)
-## [C++ Remote Archive Properties (Linux)(prop-pages/remote-ar-linux.md)
-## [C++ Remote Debugging Properties (Linux)](prop-pages/remote-debugger-linux.md)
-## [C++ Remote Debugging Properties (Linux/gcc)](prop-pages/remote-gcc-linux.md)
-## [C++ Linker Properties (Linux)](prop-pages/remote-ld-linux.md)
+-  [Visual C++ Directories (Linux)](prop-pages/directories-linux.md)
+-  [C++ General Properties (Linux)](prop-pages/general-linux.md)
+-  [C++ Makefile Project (Linux)](prop-pages/general-linux-makefile.md)
+-  [C++ Makefile Intellisense Properties (Linux)](prop-pages/isense-linux-makefile.md)
+-  [C++ Remote Archive Properties (Linux)(prop-pages/remote-ar-linux.md)
+-  [C++ Remote Debugging Properties (Linux)](prop-pages/remote-debugger-linux.md)
+-  [C++ Remote Debugging Properties (Linux/gcc)](prop-pages/remote-gcc-linux.md)
+-  [C++ Linker Properties (Linux)](prop-pages/remote-ld-linux.md)
 
 
