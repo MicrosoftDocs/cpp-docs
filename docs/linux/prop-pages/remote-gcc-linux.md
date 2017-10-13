@@ -1,5 +1,5 @@
 ---
-title: "C/C++ | Microsoft Docs"
+title: "Remote GCC Configuration Properties (Linux C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -19,11 +19,7 @@ f1_keywords:
   - VC.Project.VCClangCompilerTool.WarningLevel
   - VC.Project.VCClangCompilerTool.WarnAsError
   - VC.Project.VCClangCompilerTool.AdditionalWarning
-  - VC.Project.VCClangCompilerTool.AdditionalWarning
   - VC.Project.VCClangCompilerTool.Verbose
-  - VC.Project.VCConfiguration.BuildLogFile
-  - VC.Project.VCConfiguration.BuildLogFile
-  - VC.Project.VCConfiguration.BuildLogFile
   - VC.Project.VCConfiguration.BuildLogFile
   - VC.Project.VCClangCompilerTool.Optimization
   - VC.Project.VCClangCompilerTool.StrictAliasing
@@ -49,7 +45,7 @@ f1_keywords:
   - vc.project.AdditionalOptionsPage
 ---
 
-# C/C++
+# Remote GCC Configuration Properties (Linux C++)
 
 Property | Description | Choices
 --- | ---| ---

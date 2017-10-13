@@ -22,7 +22,11 @@ This section contains reference content for property pages in a Visual C++ Linux
 -  [C++ Makefile Intellisense Properties (Linux)](prop-pages/isense-linux-makefile.md)
 -  [C++ Remote Archive Properties (Linux)](prop-pages/remote-ar-linux.md)
 -  [C++ Remote Debugging Properties (Linux)](prop-pages/remote-debugger-linux.md)
--  [C++ Remote Debugging Properties (Linux/gcc)](prop-pages/remote-gcc-linux.md)
+-  [C++ Remote Configuration Properties (Linux/gcc)](prop-pages/remote-gcc-linux.md)
 -  [C++ Linker Properties (Linux)](prop-pages/remote-ld-linux.md)
+-  [C++ Remote Copy Sources Properties (Linux)](prop-pages/remote-copy-sources.md)
+-  [C++ Remote Copy Sources Properties (Linux Makefile Project)](prop-pages/remote-copy-sources-makefile.md)
+- [C++ Remote Build Event Properties (Linux)](prop-pages/remote-build-events.md)
+-  [C++ Remote Build Event File-level Properties (Linux)](prop-pages/remote-build-events-file.md)
 
 

@@ -1,5 +1,5 @@
 ---
-title: "General | Microsoft Docs"
+title: "General Properties (Linux C++ Makefile Project)| Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -15,14 +15,11 @@ manager: "ghogen"
 f1_keywords:
   - VC.Project.VCConfiguration.OutputDirectory
   - VC.Project.VCConfiguration.IntermediateDirectory
-  - VC.Project.VCConfiguration.BuildLogFile
   - VC.Project.VCConfiguration.ConfigurationType
-  - VC.Project.VCConfiguration.BuildLogFile
-  - VC.Project.VCConfiguration.BuildLogFile
   - VC.Project.VCConfiguration.BuildLogFile
 ---
 
-# General
+# General Properties (Linux C++ Makefile Project)
 
 Property | Description | Choices
 --- | ---| ---

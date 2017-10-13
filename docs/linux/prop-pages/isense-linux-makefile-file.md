@@ -1,5 +1,5 @@
 ---
-title: "C/C++ | Microsoft Docs"
+title: "Intellisense Properties (Linux Makefile Project) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -19,7 +19,7 @@ f1_keywords:
   - VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions
 ---
 
-# C/C++
+# Intellisense Properties (Linux C++ Makefile Project)
 
 Property | Description
 --- | ---

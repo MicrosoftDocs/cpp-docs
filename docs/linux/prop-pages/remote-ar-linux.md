@@ -1,5 +1,5 @@
 ---
-title: "Librarian | Microsoft Docs"
+title: "Remote Archive Properties (C++ Linux) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -22,11 +22,9 @@ f1_keywords:
   - vc.project.AdditionalOptionsPage
   - VC.Project.Ar.OutputFile
   - VC.Project.VCConfiguration.BuildLogFile
-  - VC.Project.VCConfiguration.BuildLogFile
-  - VC.Project.VCConfiguration.BuildLogFile
 ---
 
-# Librarian
+# Remote Archive Properties (C++ Linux)
 
 Property | Description
 --- | ---

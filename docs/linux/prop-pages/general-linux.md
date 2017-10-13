@@ -1,5 +1,5 @@
 ---
-title: "General | Microsoft Docs"
+title: "General Properties (Linux C++ Project)| Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -18,10 +18,7 @@ f1_keywords:
   - VC.Project.VCConfiguration.TargetName
   - VC.Project.VCConfiguration.TargetExt
   - VC.Project.VCConfiguration.DeleteExtensionsOnClean
-  - VC.Project.VCConfiguration.BuildLogFile
   - VC.Project.VCConfiguration.PlatformToolset
-  - VC.Project.VCConfiguration.BuildLogFile
-  - VC.Project.VCConfiguration.BuildLogFile
   - VC.Project.VCConfiguration.BuildLogFile
   - VC.Project.VCConfiguration.ConfigurationType
   - VC.Project.VCConfiguration.UseOfSTL

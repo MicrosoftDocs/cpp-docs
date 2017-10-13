@@ -1,5 +1,5 @@
 ---
-title: "Remote GDB Debugger | Microsoft Docs"
+title: "Remote GDB Debugger Properties (Linux)| Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -14,19 +14,13 @@ ms.author: "mblome"
 manager: "ghogen"
 f1_keywords:
   - VC.Project.RaspberryDebugger.DebuggerType
-  - VC.Project.RaspberryDebugger.LaunchActivity
-  - VC.Project.IVCLocalDebugPageObject.CommandArguments
   - VC.Project.IVCLocalDebugPageObject.CommandArguments
   - VC.Project.IVCLocalDebugPageObject.WorkingDirectory
-  - VC.Project.RaspberryDebugger.LaunchActivity
-  - VC.Project.RaspberryDebugger.LaunchActivity
-  - VC.Project.RaspberryDebugger.LaunchActivity
-  - VC.Project.RaspberryDebugger.DebuggerType
   - VC.Project.RaspberryDebugger.LaunchActivity
   - VC.Project.LinuxDebugger.DebugChildProcesses
 ---
 
-# Remote GDB Debugger
+# Remote GDB Debugger Properties (Linux)
 
 Property | Description | Choices
 --- | ---| ---
