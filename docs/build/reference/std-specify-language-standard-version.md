@@ -43,7 +43,7 @@ The default **/std:c++14** option enables the set of C++14 features implemented 
   
 -   [u8 character literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)  
   
-For additional information on which C++17 features are enabled when **/std:c++14** is specified, see the notes in [Visual C++ Language Conformance](../../visual-cpp-language-conformance.md).
+For additional information on which C++14 features are enabled when **/std:c++14** is specified, see the notes in [Visual C++ Language Conformance](../../visual-cpp-language-conformance.md).
   
 The **/std:c++17** option enables the set of C++17 features implemented by the Visual C++ compiler. This option disables compiler and standard library support for features that are changed or new in more recent versions of the Working Draft and defect updates of the C++ Standard.  
   
