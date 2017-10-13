@@ -43,7 +43,7 @@ __declspec( dllexport ) int i = 10;  // Okay--export definition
 #define DllImport   __declspec( dllimport )
 #define DllExport   __declspec( dllexport )
 
-extern DllImport int k; // These are both correct and imply a
+extern DllExport int k; // These are both correct and imply a
 DllImport int j;        // declaration.
 ```
 
