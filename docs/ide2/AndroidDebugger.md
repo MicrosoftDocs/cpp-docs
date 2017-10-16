@@ -1,5 +1,5 @@
 ---
-title: "Android Debugger | Microsoft Docs"
+title: "Android Debugger Properties (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -17,11 +17,9 @@ f1_keywords:
   - VC.Project.AndroidDebugger.AndroidDeviceID
   - VC.Project.AndroidDebugger.PackagePath
   - VC.Project.AndroidDebugger.LaunchActivity
-  - VC.Project.AndroidDebugger.LaunchActivity
-  - VC.Project.AndroidDebugger.LaunchActivity
 ---
 
-# Android Debugger
+# Android Debugger Properties
 
 Property | Description | Choices
 --- | ---| ---

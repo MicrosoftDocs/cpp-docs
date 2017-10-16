@@ -1,5 +1,5 @@
 ---
-title: "Linker | Microsoft Docs"
+title: "Clang Linker Properties (Android C++)| Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -36,7 +36,7 @@ f1_keywords:
   - VC.Project.VCLinkerTool.LibraryDependencies
 ---
 
-# Linker
+# Clang Linker Properties (Android C++)
 
 Property | Description | Choices
 --- | ---| ---

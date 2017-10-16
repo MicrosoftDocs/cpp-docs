@@ -1,5 +1,5 @@
 ---
-title: "C/C++ | Microsoft Docs"
+title: "Clang Project Properties (Android C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -47,7 +47,7 @@ f1_keywords:
   - vc.project.AdditionalOptionsPage
 ---
 
-# C/C++
+# Clang Project Properties (Android C++)
 
 Property | Description | Choices
 --- | ---| ---

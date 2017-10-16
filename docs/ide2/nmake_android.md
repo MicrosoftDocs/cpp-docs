@@ -1,5 +1,5 @@
 ---
-title: "NMake | Microsoft Docs"
+title: "NMake Properties (Android C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -22,7 +22,7 @@ f1_keywords:
   - VC.Project.VCNMakeTool.ForcedIncludes
 ---
 
-# NMake
+# NMake Properties (Android C++) 
 
 Property | Description
 --- | ---

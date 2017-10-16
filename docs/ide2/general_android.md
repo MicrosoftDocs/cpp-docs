@@ -1,5 +1,5 @@
 ---
-title: "General | Microsoft Docs"
+title: "General Project Properties (Android C++)| Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -26,7 +26,7 @@ f1_keywords:
   - VC.Project.VCConfiguration.ThumbMode
 ---
 
-# General
+# General Project Properties (Android C++)
 
 Property | Description | Choices
 --- | ---| ---
