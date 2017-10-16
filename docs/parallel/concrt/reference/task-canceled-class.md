@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['task_canceled', 'CONCRT/concurrency::task_canceled', 'CONCRT/concurrency::task_canceled::task_canceled']
+f1_keywords: ["task_canceled", "CONCRT/concurrency::task_canceled", "CONCRT/concurrency::task_canceled::task_canceled"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_canceled class"]
 ms.assetid: c3f0b234-2cc1-435f-a48e-995f45b190be

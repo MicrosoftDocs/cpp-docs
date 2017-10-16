@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['IScheduler', 'CONCRTRM/concurrency::IScheduler', 'CONCRTRM/concurrency::IScheduler::IScheduler::AddVirtualProcessors', 'CONCRTRM/concurrency::IScheduler::IScheduler::GetId', 'CONCRTRM/concurrency::IScheduler::IScheduler::GetPolicy', 'CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyBusy', 'CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle', 'CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors', 'CONCRTRM/concurrency::IScheduler::IScheduler::Statistics']
+f1_keywords: ["IScheduler", "CONCRTRM/concurrency::IScheduler", "CONCRTRM/concurrency::IScheduler::IScheduler::AddVirtualProcessors", "CONCRTRM/concurrency::IScheduler::IScheduler::GetId", "CONCRTRM/concurrency::IScheduler::IScheduler::GetPolicy", "CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyBusy", "CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle", "CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors", "CONCRTRM/concurrency::IScheduler::IScheduler::Statistics"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IScheduler structure"]
 ms.assetid: 471de85a-2b1a-4b6d-ab81-2eff2737161e

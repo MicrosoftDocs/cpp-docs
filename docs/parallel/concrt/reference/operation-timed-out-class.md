@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['operation_timed_out', 'CONCRT/concurrency::operation_timed_out', 'CONCRT/concurrency::operation_timed_out::operation_timed_out']
+f1_keywords: ["operation_timed_out", "CONCRT/concurrency::operation_timed_out", "CONCRT/concurrency::operation_timed_out::operation_timed_out"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operation_timed_out class"]
 ms.assetid: 963efe1d-a6e0-477c-9a70-d93d8412c897

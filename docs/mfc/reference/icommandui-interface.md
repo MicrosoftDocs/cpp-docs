@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['ICommandUI', 'AFXWINFORMS/ICommandUI', 'AFXWINFORMS/icommandui__Check', 'AFXWINFORMS/ICommandUI::ContinueRouting', 'AFXWINFORMS/ICommandUI::Enabled', 'AFXWINFORMS/ICommandUI::ID', 'AFXWINFORMS/ICommandUI::Index', 'AFXWINFORMS/ICommandUI::Radio', 'AFXWINFORMS/ICommandUI::Text']
+f1_keywords: ["ICommandUI", "AFXWINFORMS/ICommandUI", "AFXWINFORMS/icommandui__Check", "AFXWINFORMS/ICommandUI::ContinueRouting", "AFXWINFORMS/ICommandUI::Enabled", "AFXWINFORMS/ICommandUI::ID", "AFXWINFORMS/ICommandUI::Index", "AFXWINFORMS/ICommandUI::Radio", "AFXWINFORMS/ICommandUI::Text"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandUI interface [MFC]"]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['task', 'PPLTASKS/concurrency::task', 'PPLTASKS/concurrency::task::task', 'PPLTASKS/concurrency::task::get', 'PPLTASKS/concurrency::task::is_apartment_aware', 'PPLTASKS/concurrency::task::is_done', 'PPLTASKS/concurrency::task::scheduler', 'PPLTASKS/concurrency::task::then', 'PPLTASKS/concurrency::task::wait']
+f1_keywords: ["task", "PPLTASKS/concurrency::task", "PPLTASKS/concurrency::task::task", "PPLTASKS/concurrency::task::get", "PPLTASKS/concurrency::task::is_apartment_aware", "PPLTASKS/concurrency::task::is_done", "PPLTASKS/concurrency::task::scheduler", "PPLTASKS/concurrency::task::then", "PPLTASKS/concurrency::task::wait"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task class"]
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a

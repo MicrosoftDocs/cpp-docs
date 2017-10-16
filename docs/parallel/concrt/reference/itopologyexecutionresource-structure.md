@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['ITopologyExecutionResource', 'CONCRTRM/concurrency::ITopologyExecutionResource', 'CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetId', 'CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetNext']
+f1_keywords: ["ITopologyExecutionResource", "CONCRTRM/concurrency::ITopologyExecutionResource", "CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetId", "CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetNext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ITopologyExecutionResource structure"]
 ms.assetid: e36756f7-4cd9-4fa6-ba60-23fea58ef2bf

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComAutoCriticalSection', 'ATLCORE/ATL::CComAutoCriticalSection', 'ATLCORE/ATL::CComAutoCriticalSection::CComAutoCriticalSection']
+f1_keywords: ["CComAutoCriticalSection", "ATLCORE/ATL::CComAutoCriticalSection", "ATLCORE/ATL::CComAutoCriticalSection::CComAutoCriticalSection"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComAutoCriticalSection class"]
 ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CArchiveException', 'AFX/CArchiveException', 'AFX/CArchiveException::CArchiveException', 'AFX/CArchiveException::m_cause', 'AFX/CArchiveException::m_strFileName']
+f1_keywords: ["CArchiveException", "AFX/CArchiveException", "AFX/CArchiveException::CArchiveException", "AFX/CArchiveException::m_cause", "AFX/CArchiveException::m_strFileName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CArchiveException [MFC], CArchiveException", "CArchiveException [MFC], m_cause", "CArchiveException [MFC], m_strFileName"]
 ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49

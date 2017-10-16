@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["random/std::poisson_distribution", "random/std::poisson_distribution::reset", "random/std::poisson_distribution::mean", "random/std::poisson_distribution::param", "random/std::poisson_distribution::min", "random/std::poisson_distribution::max", "random/std::poisson_distribution::operator()", "random/std::poisson_distribution::param_type", "random/std::poisson_distribution::param_type::mean", "random/std::poisson_distribution::param_type::operator==", "random/std::poisson_distribution::param_type::operator!=", "random/std::poisson_distribution::param_type"]
+f1_keywords: ["random/std::poisson_distribution", "random/std::poisson_distribution::reset", "random/std::poisson_distribution::mean", "random/std::poisson_distribution::param", "random/std::poisson_distribution::min", "random/std::poisson_distribution::max", "random/std::poisson_distribution::operator()", "random/std::poisson_distribution::param_type", "random/std::poisson_distribution::param_type::mean", "random/std::poisson_distribution::param_type::operator==", "random/std::poisson_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::poisson_distribution [C++]", "std::poisson_distribution [C++], reset", "std::poisson_distribution [C++], mean", "std::poisson_distribution [C++], param", "std::poisson_distribution [C++], min", "std::poisson_distribution [C++], max", "std::poisson_distribution [C++], param_type", "std::poisson_distribution [C++], param_type"]
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937

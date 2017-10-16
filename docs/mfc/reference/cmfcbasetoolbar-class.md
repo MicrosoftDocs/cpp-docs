@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCBaseToolBar', 'AFXBASETOOLBAR/CMFCBaseToolBar', 'AFXBASETOOLBAR/CMFCBaseToolBar::GetDockingMode', 'AFXBASETOOLBAR/CMFCBaseToolBar::GetMinSize', 'AFXBASETOOLBAR/CMFCBaseToolBar::OnAfterChangeParent']
+f1_keywords: ["CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar::GetDockingMode", "AFXBASETOOLBAR/CMFCBaseToolBar::GetMinSize", "AFXBASETOOLBAR/CMFCBaseToolBar::OnAfterChangeParent"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCBaseToolBar [MFC], GetDockingMode", "CMFCBaseToolBar [MFC], GetMinSize", "CMFCBaseToolBar [MFC], OnAfterChangeParent"]
 ms.assetid: 5d79206d-55e4-46f8-b1b8-042e34d7f9da

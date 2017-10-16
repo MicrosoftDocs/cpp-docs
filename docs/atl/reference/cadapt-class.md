@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAdapt', 'ATLCOMCLI/ATL::CAdapt', 'ATLCOMCLI/ATL::CAdapt::CAdapt', 'ATLCOMCLI/ATL::CAdapt::m_T']
+f1_keywords: ["CAdapt", "ATLCOMCLI/ATL::CAdapt", "ATLCOMCLI/ATL::CAdapt::CAdapt", "ATLCOMCLI/ATL::CAdapt::m_T"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["address-of operator", "adapter objects", "& operator, address-of operator", "CAdapt class"]
 ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['uninitialized_object', 'AMPRT/uninitialized_object', 'AMPRT/Concurrency::uninitialized_object']
+f1_keywords: ["uninitialized_object", "AMPRT/uninitialized_object", "AMPRT/Concurrency::uninitialized_object"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["uninitialized_object class"]
 ms.assetid: 6ae3c4e8-64a6-4511-a158-03be197b63af

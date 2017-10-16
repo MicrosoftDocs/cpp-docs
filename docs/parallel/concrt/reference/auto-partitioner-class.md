@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['auto_partitioner', 'PPL/concurrency::auto_partitioner', 'PPL/concurrency::auto_partitioner::auto_partitioner']
+f1_keywords: ["auto_partitioner", "PPL/concurrency::auto_partitioner", "PPL/concurrency::auto_partitioner::auto_partitioner"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["auto_partitioner class"]
 ms.assetid: 7cc08e5d-20b4-47a4-b4b5-c214a78f5a9e

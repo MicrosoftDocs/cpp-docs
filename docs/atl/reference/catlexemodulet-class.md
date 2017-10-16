@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAtlExeModuleT', 'ATLBASE/ATL::CAtlExeModuleT', 'ATLBASE/ATL::CAtlExeModuleT::CAtlExeModuleT', 'ATLBASE/ATL::CAtlExeModuleT::InitializeCom', 'ATLBASE/ATL::CAtlExeModuleT::ParseCommandLine', 'ATLBASE/ATL::CAtlExeModuleT::PostMessageLoop', 'ATLBASE/ATL::CAtlExeModuleT::PreMessageLoop', 'ATLBASE/ATL::CAtlExeModuleT::RegisterClassObjects', 'ATLBASE/ATL::CAtlExeModuleT::RevokeClassObjects', 'ATLBASE/ATL::CAtlExeModuleT::Run', 'ATLBASE/ATL::CAtlExeModuleT::RunMessageLoop', 'ATLBASE/ATL::CAtlExeModuleT::UninitializeCom', 'ATLBASE/ATL::CAtlExeModuleT::Unlock', 'ATLBASE/ATL::CAtlExeModuleT::WinMain', 'ATLBASE/ATL::CAtlExeModuleT::m_bDelayShutdown', 'ATLBASE/ATL::CAtlExeModuleT::m_dwPause', 'ATLBASE/ATL::CAtlExeModuleT::m_dwTimeOut']
+f1_keywords: ["CAtlExeModuleT", "ATLBASE/ATL::CAtlExeModuleT", "ATLBASE/ATL::CAtlExeModuleT::CAtlExeModuleT", "ATLBASE/ATL::CAtlExeModuleT::InitializeCom", "ATLBASE/ATL::CAtlExeModuleT::ParseCommandLine", "ATLBASE/ATL::CAtlExeModuleT::PostMessageLoop", "ATLBASE/ATL::CAtlExeModuleT::PreMessageLoop", "ATLBASE/ATL::CAtlExeModuleT::RegisterClassObjects", "ATLBASE/ATL::CAtlExeModuleT::RevokeClassObjects", "ATLBASE/ATL::CAtlExeModuleT::Run", "ATLBASE/ATL::CAtlExeModuleT::RunMessageLoop", "ATLBASE/ATL::CAtlExeModuleT::UninitializeCom", "ATLBASE/ATL::CAtlExeModuleT::Unlock", "ATLBASE/ATL::CAtlExeModuleT::WinMain", "ATLBASE/ATL::CAtlExeModuleT::m_bDelayShutdown", "ATLBASE/ATL::CAtlExeModuleT::m_dwPause", "ATLBASE/ATL::CAtlExeModuleT::m_dwTimeOut"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlExeModuleT class"]
 ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9

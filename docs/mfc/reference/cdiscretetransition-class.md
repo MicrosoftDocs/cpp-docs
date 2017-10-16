@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDiscreteTransition', 'AFXANIMATIONCONTROLLER/CDiscreteTransition', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::CDiscreteTransition', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::Create', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::m_delay', 'AFXANIMATIONCONTROLLER/CDiscreteTransition::m_hold']
+f1_keywords: ["CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::Create", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_delay", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_hold"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDiscreteTransition [MFC], CDiscreteTransition", "CDiscreteTransition [MFC], Create", "CDiscreteTransition [MFC], m_dblFinalValue", "CDiscreteTransition [MFC], m_delay", "CDiscreteTransition [MFC], m_hold"]
 ms.assetid: b4d84fb3-ccaa-451c-a69b-6b50dcb9b9c8

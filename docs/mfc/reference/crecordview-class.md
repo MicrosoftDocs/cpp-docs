@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CRecordView', 'AFXDB/CRecordView', 'AFXDB/CRecordView::CRecordView', 'AFXDB/CRecordView::IsOnFirstRecord', 'AFXDB/CRecordView::IsOnLastRecord', 'AFXDB/CRecordView::OnGetRecordset', 'AFXDB/CRecordView::OnMove', 'AFXDB/CRecordView::OnMove']
+f1_keywords: ["CRecordView", "AFXDB/CRecordView", "AFXDB/CRecordView::CRecordView", "AFXDB/CRecordView::IsOnFirstRecord", "AFXDB/CRecordView::IsOnLastRecord", "AFXDB/CRecordView::OnGetRecordset", "AFXDB/CRecordView::OnMove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRecordView [MFC], CRecordView", "CRecordView [MFC], IsOnFirstRecord", "CRecordView [MFC], IsOnLastRecord", "CRecordView [MFC], OnGetRecordset", "CRecordView [MFC], OnMove", "CRecordView [MFC], OnMove"]
 ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55

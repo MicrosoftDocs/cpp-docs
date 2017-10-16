@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['norm', 'AMP_SHORT_VECTORS/norm', 'AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor']
+f1_keywords: ["norm", "AMP_SHORT_VECTORS/norm", "AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor"]
 dev_langs: ["C++"]
 ms.assetid: 73002f3d-c25e-4119-bcd3-4c46c9b6abf1
 caps.latest.revision: 8

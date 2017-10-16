@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CWinTraitsOR', 'ATLWIN/ATL::CWinTraitsOR', 'ATLWIN/ATL::CWinTraitsOR::GetWndExStyle', 'ATLWIN/ATL::CWinTraitsOR::GetWndStyle']
+f1_keywords: ["CWinTraitsOR", "ATLWIN/ATL::CWinTraitsOR", "ATLWIN/ATL::CWinTraitsOR::GetWndExStyle", "ATLWIN/ATL::CWinTraitsOR::GetWndStyle"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CWinTraitsOR class", "window styles, default values for ATL"]
 ms.assetid: 1eb7b1e8-a9bd-411b-a30a-35a8a10af989

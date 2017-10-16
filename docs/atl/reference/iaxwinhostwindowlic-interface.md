@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IAxWinHostWindowLic', 'No header/ATL::IAxWinHostWindowLic', 'No header/ATL::CreateControlLic', 'No header/ATL::CreateControlLicEx']
+f1_keywords: ["IAxWinHostWindowLic", "No header/ATL::IAxWinHostWindowLic", "No header/ATL::CreateControlLic", "No header/ATL::CreateControlLicEx"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IAxWinHostWindowLic interface"]
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7

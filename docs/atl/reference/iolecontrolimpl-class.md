@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IOleControlImpl', 'ATLCTL/ATL::IOleControlImpl', 'ATLCTL/ATL::IOleControlImpl::FreezeEvents', 'ATLCTL/ATL::IOleControlImpl::GetControlInfo', 'ATLCTL/ATL::IOleControlImpl::OnAmbientPropertyChange', 'ATLCTL/ATL::IOleControlImpl::OnMnemonic']
+f1_keywords: ["IOleControlImpl", "ATLCTL/ATL::IOleControlImpl", "ATLCTL/ATL::IOleControlImpl::FreezeEvents", "ATLCTL/ATL::IOleControlImpl::GetControlInfo", "ATLCTL/ATL::IOleControlImpl::OnAmbientPropertyChange", "ATLCTL/ATL::IOleControlImpl::OnMnemonic"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IOleControlImpl class"]
 ms.assetid: 5a4255ad-ede4-49ca-ba9a-07c2e919fa85

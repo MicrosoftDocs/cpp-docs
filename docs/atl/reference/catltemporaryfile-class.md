@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAtlTemporaryFile', 'ATLFILE/ATL::CAtlTemporaryFile', 'ATLFILE/ATL::CAtlTemporaryFile::CAtlTemporaryFile', 'ATLFILE/ATL::CAtlTemporaryFile::Close', 'ATLFILE/ATL::CAtlTemporaryFile::Create', 'ATLFILE/ATL::CAtlTemporaryFile::Flush', 'ATLFILE/ATL::CAtlTemporaryFile::GetPosition', 'ATLFILE/ATL::CAtlTemporaryFile::GetSize', 'ATLFILE/ATL::CAtlTemporaryFile::HandsOff', 'ATLFILE/ATL::CAtlTemporaryFile::HandsOn', 'ATLFILE/ATL::CAtlTemporaryFile::LockRange', 'ATLFILE/ATL::CAtlTemporaryFile::Read', 'ATLFILE/ATL::CAtlTemporaryFile::Seek', 'ATLFILE/ATL::CAtlTemporaryFile::SetSize', 'ATLFILE/ATL::CAtlTemporaryFile::TempFileName', 'ATLFILE/ATL::CAtlTemporaryFile::UnlockRange', 'ATLFILE/ATL::CAtlTemporaryFile::Write']
+f1_keywords: ["CAtlTemporaryFile", "ATLFILE/ATL::CAtlTemporaryFile", "ATLFILE/ATL::CAtlTemporaryFile::CAtlTemporaryFile", "ATLFILE/ATL::CAtlTemporaryFile::Close", "ATLFILE/ATL::CAtlTemporaryFile::Create", "ATLFILE/ATL::CAtlTemporaryFile::Flush", "ATLFILE/ATL::CAtlTemporaryFile::GetPosition", "ATLFILE/ATL::CAtlTemporaryFile::GetSize", "ATLFILE/ATL::CAtlTemporaryFile::HandsOff", "ATLFILE/ATL::CAtlTemporaryFile::HandsOn", "ATLFILE/ATL::CAtlTemporaryFile::LockRange", "ATLFILE/ATL::CAtlTemporaryFile::Read", "ATLFILE/ATL::CAtlTemporaryFile::Seek", "ATLFILE/ATL::CAtlTemporaryFile::SetSize", "ATLFILE/ATL::CAtlTemporaryFile::TempFileName", "ATLFILE/ATL::CAtlTemporaryFile::UnlockRange", "ATLFILE/ATL::CAtlTemporaryFile::Write"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlTemporaryFile class"]
 ms.assetid: 05f0f2a5-94f6-4594-8dae-b114292ff5f9

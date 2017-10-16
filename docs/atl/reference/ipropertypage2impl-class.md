@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IPropertyPage2Impl', 'ATLCTL/ATL::IPropertyPage2Impl', 'ATLCTL/ATL::IPropertyPage2Impl::EditProperty']
+f1_keywords: ["IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl::EditProperty"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["property pages", "IPropertyPage2 ATL implementation", "IPropertyPage2Impl class"]
 ms.assetid: e89fbe90-203a-47f0-a5de-23616697e1ce

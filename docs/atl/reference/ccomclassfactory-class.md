@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComClassFactory', 'ATLCOM/ATL::CComClassFactory', 'ATLCOM/ATL::CComClassFactory::CreateInstance', 'ATLCOM/ATL::CComClassFactory::LockServer']
+f1_keywords: ["CComClassFactory", "ATLCOM/ATL::CComClassFactory", "ATLCOM/ATL::CComClassFactory::CreateInstance", "ATLCOM/ATL::CComClassFactory::LockServer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComClassFactory class"]
 ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b

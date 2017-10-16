@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CFontHolder', 'AFXCTL/CFontHolder', 'AFXCTL/CFontHolder::CFontHolder', 'AFXCTL/CFontHolder::GetDisplayString', 'AFXCTL/CFontHolder::GetFontDispatch', 'AFXCTL/CFontHolder::GetFontHandle', 'AFXCTL/CFontHolder::InitializeFont', 'AFXCTL/CFontHolder::QueryTextMetrics', 'AFXCTL/CFontHolder::ReleaseFont', 'AFXCTL/CFontHolder::Select', 'AFXCTL/CFontHolder::SetFont', 'AFXCTL/CFontHolder::m_pFont']
+f1_keywords: ["CFontHolder", "AFXCTL/CFontHolder", "AFXCTL/CFontHolder::CFontHolder", "AFXCTL/CFontHolder::GetDisplayString", "AFXCTL/CFontHolder::GetFontDispatch", "AFXCTL/CFontHolder::GetFontHandle", "AFXCTL/CFontHolder::InitializeFont", "AFXCTL/CFontHolder::QueryTextMetrics", "AFXCTL/CFontHolder::ReleaseFont", "AFXCTL/CFontHolder::Select", "AFXCTL/CFontHolder::SetFont", "AFXCTL/CFontHolder::m_pFont"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFontHolder [MFC], CFontHolder", "CFontHolder [MFC], GetDisplayString", "CFontHolder [MFC], GetFontDispatch", "CFontHolder [MFC], GetFontHandle", "CFontHolder [MFC], InitializeFont", "CFontHolder [MFC], QueryTextMetrics", "CFontHolder [MFC], ReleaseFont", "CFontHolder [MFC], Select", "CFontHolder [MFC], SetFont", "CFontHolder [MFC], m_pFont"]
 ms.assetid: 728ab472-0c97-440d-889f-1324c6e1b6b8

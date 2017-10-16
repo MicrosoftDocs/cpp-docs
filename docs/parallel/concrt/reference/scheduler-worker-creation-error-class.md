@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['scheduler_worker_creation_error', 'CONCRT/concurrency::scheduler_worker_creation_error', 'CONCRT/concurrency::scheduler_worker_creation_error::scheduler_worker_creation_error']
+f1_keywords: ["scheduler_worker_creation_error", "CONCRT/concurrency::scheduler_worker_creation_error", "CONCRT/concurrency::scheduler_worker_creation_error::scheduler_worker_creation_error"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler_worker_creation_error class"]
 ms.assetid: 4aec1c3e-c32a-41b2-899d-2d898f23b3c7

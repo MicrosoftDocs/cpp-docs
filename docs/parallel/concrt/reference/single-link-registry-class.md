@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['single_link_registry', 'AGENTS/concurrency::single_link_registry', 'AGENTS/concurrency::single_link_registry::single_link_registry', 'AGENTS/concurrency::single_link_registry::add', 'AGENTS/concurrency::single_link_registry::begin', 'AGENTS/concurrency::single_link_registry::contains', 'AGENTS/concurrency::single_link_registry::count', 'AGENTS/concurrency::single_link_registry::remove']
+f1_keywords: ["single_link_registry", "AGENTS/concurrency::single_link_registry", "AGENTS/concurrency::single_link_registry::single_link_registry", "AGENTS/concurrency::single_link_registry::add", "AGENTS/concurrency::single_link_registry::begin", "AGENTS/concurrency::single_link_registry::contains", "AGENTS/concurrency::single_link_registry::count", "AGENTS/concurrency::single_link_registry::remove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["single_link_registry class"]
 ms.assetid: 09540a4e-c34e-4ff9-af49-21b8612b6ab3

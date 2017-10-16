@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFromVelocity', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::Create', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_duration', 'AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_period']
+f1_keywords: ["CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::Create", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_duration", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_period"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSinusoidalTransitionFromVelocity [MFC], CSinusoidalTransitionFromVelocity", "CSinusoidalTransitionFromVelocity [MFC], Create", "CSinusoidalTransitionFromVelocity [MFC], m_duration", "CSinusoidalTransitionFromVelocity [MFC], m_period"]
 ms.assetid: cc885f17-b84b-45ee-8f1f-36a8bbb7adad

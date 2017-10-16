@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CStringElementTraitsI', 'ATLCOLL/ATL::CStringElementTraitsI', 'ATLCOLL/ATL::CStringElementTraitsI::INARGTYPE', 'ATLCOLL/ATL::CStringElementTraitsI::OUTARGTYPE', 'ATLCOLL/ATL::CStringElementTraitsI::CompareElements', 'ATLCOLL/ATL::CStringElementTraitsI::CompareElementsOrdered', 'ATLCOLL/ATL::CStringElementTraitsI::Hash']
+f1_keywords: ["CStringElementTraitsI", "ATLCOLL/ATL::CStringElementTraitsI", "ATLCOLL/ATL::CStringElementTraitsI::INARGTYPE", "ATLCOLL/ATL::CStringElementTraitsI::OUTARGTYPE", "ATLCOLL/ATL::CStringElementTraitsI::CompareElements", "ATLCOLL/ATL::CStringElementTraitsI::CompareElementsOrdered", "ATLCOLL/ATL::CStringElementTraitsI::Hash"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CStringElementTraitsI class"]
 ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a

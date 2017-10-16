@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAnimationVariableChangeHandler', 'AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler', 'AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::OnValueChanged', 'AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::SetAnimationController']
+f1_keywords: ["CAnimationVariableChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::OnValueChanged", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::SetAnimationController"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationVariableChangeHandler [MFC], OnValueChanged", "CAnimationVariableChangeHandler [MFC], SetAnimationController"]
 ms.assetid: 2ea4996d-5c04-4dfc-be79-d42d55050795

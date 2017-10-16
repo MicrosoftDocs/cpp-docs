@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['message_processor', 'AGENTS/concurrency::message_processor', 'AGENTS/concurrency::message_processor::async_send', 'AGENTS/concurrency::message_processor::sync_send', 'AGENTS/concurrency::message_processor::wait', 'AGENTS/concurrency::message_processor::process_incoming_message']
+f1_keywords: ["message_processor", "AGENTS/concurrency::message_processor", "AGENTS/concurrency::message_processor::async_send", "AGENTS/concurrency::message_processor::sync_send", "AGENTS/concurrency::message_processor::wait", "AGENTS/concurrency::message_processor::process_incoming_message"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message_processor class"]
 ms.assetid: 23afb052-daa7-44ed-bf24-d2513db748da

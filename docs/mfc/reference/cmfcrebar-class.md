@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCReBar', 'AFXREBAR/CMFCReBar', 'AFXREBAR/CMFCReBar::AddBar', 'AFXREBAR/CMFCReBar::CalcFixedLayout', 'AFXREBAR/CMFCReBar::CanFloat', 'AFXREBAR/CMFCReBar::Create', 'AFXREBAR/CMFCReBar::EnableDocking', 'AFXREBAR/CMFCReBar::GetReBarBandInfoSize', 'AFXREBAR/CMFCReBar::GetReBarCtrl', 'AFXREBAR/CMFCReBar::OnShowControlBarMenu', 'AFXREBAR/CMFCReBar::OnToolHitTest', 'AFXREBAR/CMFCReBar::OnUpdateCmdUI', 'AFXREBAR/CMFCReBar::SetPaneAlignment']
+f1_keywords: ["CMFCReBar", "AFXREBAR/CMFCReBar", "AFXREBAR/CMFCReBar::AddBar", "AFXREBAR/CMFCReBar::CalcFixedLayout", "AFXREBAR/CMFCReBar::CanFloat", "AFXREBAR/CMFCReBar::Create", "AFXREBAR/CMFCReBar::EnableDocking", "AFXREBAR/CMFCReBar::GetReBarBandInfoSize", "AFXREBAR/CMFCReBar::GetReBarCtrl", "AFXREBAR/CMFCReBar::OnShowControlBarMenu", "AFXREBAR/CMFCReBar::OnToolHitTest", "AFXREBAR/CMFCReBar::OnUpdateCmdUI", "AFXREBAR/CMFCReBar::SetPaneAlignment"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCReBar [MFC], AddBar", "CMFCReBar [MFC], CalcFixedLayout", "CMFCReBar [MFC], CanFloat", "CMFCReBar [MFC], Create", "CMFCReBar [MFC], EnableDocking", "CMFCReBar [MFC], GetReBarBandInfoSize", "CMFCReBar [MFC], GetReBarCtrl", "CMFCReBar [MFC], OnShowControlBarMenu", "CMFCReBar [MFC], OnToolHitTest", "CMFCReBar [MFC], OnUpdateCmdUI", "CMFCReBar [MFC], SetPaneAlignment"]
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023

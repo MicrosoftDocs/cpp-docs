@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CWindowDC', 'AFXWIN/CWindowDC', 'AFXWIN/CWindowDC::CWindowDC', 'AFXWIN/CWindowDC::m_hWnd']
+f1_keywords: ["CWindowDC", "AFXWIN/CWindowDC", "AFXWIN/CWindowDC::CWindowDC", "AFXWIN/CWindowDC::m_hWnd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CWindowDC [MFC], CWindowDC", "CWindowDC [MFC], m_hWnd"]
 ms.assetid: 876a3641-4cde-471c-b0d1-fe58b32af79c

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDialogImpl', 'ATLWIN/ATL::CDialogImpl', 'ATLWIN/ATL::Create', 'ATLWIN/ATL::DestroyWindow', 'ATLWIN/ATL::DoModal', 'ATLWIN/ATL::EndDialog', 'ATLWIN/ATL::GetDialogProc', 'ATLWIN/ATL::MapDialogRect', 'ATLWIN/ATL::OnFinalMessage', 'ATLWIN/ATL::DialogProc', 'ATLWIN/ATL::StartDialogProc']
+f1_keywords: ["CDialogImpl", "ATLWIN/ATL::CDialogImpl", "ATLWIN/ATL::Create", "ATLWIN/ATL::DestroyWindow", "ATLWIN/ATL::DoModal", "ATLWIN/ATL::EndDialog", "ATLWIN/ATL::GetDialogProc", "ATLWIN/ATL::MapDialogRect", "ATLWIN/ATL::OnFinalMessage", "ATLWIN/ATL::DialogProc", "ATLWIN/ATL::StartDialogProc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes, ATL", "CDialogImpl class"]
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e

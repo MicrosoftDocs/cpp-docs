@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDataPathProperty', 'AFXCTL/CDataPathProperty', 'AFXCTL/CDataPathProperty::CDataPathProperty', 'AFXCTL/CDataPathProperty::GetControl', 'AFXCTL/CDataPathProperty::GetPath', 'AFXCTL/CDataPathProperty::Open', 'AFXCTL/CDataPathProperty::ResetData', 'AFXCTL/CDataPathProperty::SetControl', 'AFXCTL/CDataPathProperty::SetPath']
+f1_keywords: ["CDataPathProperty", "AFXCTL/CDataPathProperty", "AFXCTL/CDataPathProperty::CDataPathProperty", "AFXCTL/CDataPathProperty::GetControl", "AFXCTL/CDataPathProperty::GetPath", "AFXCTL/CDataPathProperty::Open", "AFXCTL/CDataPathProperty::ResetData", "AFXCTL/CDataPathProperty::SetControl", "AFXCTL/CDataPathProperty::SetPath"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDataPathProperty [MFC], CDataPathProperty", "CDataPathProperty [MFC], GetControl", "CDataPathProperty [MFC], GetPath", "CDataPathProperty [MFC], Open", "CDataPathProperty [MFC], ResetData", "CDataPathProperty [MFC], SetControl", "CDataPathProperty [MFC], SetPath"]
 ms.assetid: 1f96efdb-54e4-460b-862c-eba5d4103488

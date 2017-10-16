@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCResourceCompilerTool.ShowProgress", "VC.Project.VCResourceCompilerTool.AdditionalIncludeDirectories", "VC.Project.VCResourceCompilerTool.PreprocessorDefinitions", "VC.Project.VCResourceCompilerTool.IgnoreStandardIncludePath", "VC.Project.VCResourceCompilerTool.Culture", "VC.Project.VCResourceCompilerTool.ResourceOutputFileName"]
+f1_keywords: ["VC.Project.VCResourceCompilerTool.ShowProgress", "VC.Project.VCResourceCompilerTool.AdditionalIncludeDirectories", "VC.Project.VCResourceCompilerTool.PreprocessorDefinitions", "VC.Project.VCResourceCompilerTool.OVERWRITEStandardIncludePath", "VC.Project.VCResourceCompilerTool.Culture", "VC.Project.VCResourceCompilerTool.ResourceOutputFileName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Resources property pages"]
 ms.assetid: dade2f6b-c51f-4c33-9023-41956ae4b5f6

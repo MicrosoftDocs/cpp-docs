@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['ScheduleGroup', 'CONCRT/concurrency::ScheduleGroup', 'CONCRT/concurrency::ScheduleGroup::Id', 'CONCRT/concurrency::ScheduleGroup::Reference', 'CONCRT/concurrency::ScheduleGroup::Release', 'CONCRT/concurrency::ScheduleGroup::ScheduleTask']
+f1_keywords: ["ScheduleGroup", "CONCRT/concurrency::ScheduleGroup", "CONCRT/concurrency::ScheduleGroup::Id", "CONCRT/concurrency::ScheduleGroup::Reference", "CONCRT/concurrency::ScheduleGroup::Release", "CONCRT/concurrency::ScheduleGroup::ScheduleTask"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ScheduleGroup class"]
 ms.assetid: 86d380ff-f2e8-411c-b1a8-22bd3079824a

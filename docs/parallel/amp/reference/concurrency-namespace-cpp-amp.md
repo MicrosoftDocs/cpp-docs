@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['AMP/Concurrency']
+f1_keywords: ["AMP/Concurrency"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency namespace"]
 ms.assetid: b5aab265-3bac-42c5-8ead-f92ce05ef267

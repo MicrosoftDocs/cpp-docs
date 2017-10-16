@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CFormView', 'AFXEXT/CFormView', 'AFXEXT/CFormView::CFormView', 'AFXEXT/CFormView::IsInitDlgCompleted']
+f1_keywords: ["CFormView", "AFXEXT/CFormView", "AFXEXT/CFormView::CFormView", "AFXEXT/CFormView::IsInitDlgCompleted"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFormView [MFC], CFormView", "CFormView [MFC], IsInitDlgCompleted"]
 ms.assetid: a99ec313-36f0-4f28-9d2b-de11de14ac19

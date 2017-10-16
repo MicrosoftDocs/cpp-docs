@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSmoothStopTransition', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::CSmoothStopTransition', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::Create', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_maximumDuration']
+f1_keywords: ["CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::Create", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_maximumDuration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSmoothStopTransition [MFC], CSmoothStopTransition", "CSmoothStopTransition [MFC], Create", "CSmoothStopTransition [MFC], m_dblFinalValue", "CSmoothStopTransition [MFC], m_maximumDuration"]
 ms.assetid: e1a4b476-6f96-43dd-90db-870a64406b85

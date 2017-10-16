@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDialogEx', 'AFXDIALOGEX/CDialogEx', 'AFXDIALOGEX/CDialogEx::CDialogEx', 'AFXDIALOGEX/CDialogEx::SetBackgroundColor', 'AFXDIALOGEX/CDialogEx::SetBackgroundImage']
+f1_keywords: ["CDialogEx", "AFXDIALOGEX/CDialogEx", "AFXDIALOGEX/CDialogEx::CDialogEx", "AFXDIALOGEX/CDialogEx::SetBackgroundColor", "AFXDIALOGEX/CDialogEx::SetBackgroundImage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDialogEx [MFC], CDialogEx", "CDialogEx [MFC], SetBackgroundColor", "CDialogEx [MFC], SetBackgroundImage"]
 ms.assetid: a6ed3b1f-aef8-4b66-ac78-2160faf63c13

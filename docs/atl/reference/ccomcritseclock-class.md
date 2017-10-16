@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComCritSecLock', 'ATLBASE/ATL::CComCritSecLock', 'ATLBASE/ATL::CComCritSecLock::CComCritSecLock', 'ATLBASE/ATL::CComCritSecLock::Lock', 'ATLBASE/ATL::CComCritSecLock::Unlock']
+f1_keywords: ["CComCritSecLock", "ATLBASE/ATL::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::Lock", "ATLBASE/ATL::CComCritSecLock::Unlock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComCritSecLock class"]
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e

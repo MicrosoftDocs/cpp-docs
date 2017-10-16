@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['join', 'AGENTS/concurrency::join', 'AGENTS/concurrency::join::join', 'AGENTS/concurrency::join::accept_message', 'AGENTS/concurrency::join::consume_message', 'AGENTS/concurrency::join::link_target_notification', 'AGENTS/concurrency::join::propagate_message', 'AGENTS/concurrency::join::propagate_to_any_targets', 'AGENTS/concurrency::join::release_message', 'AGENTS/concurrency::join::reserve_message', 'AGENTS/concurrency::join::resume_propagation']
+f1_keywords: ["join", "AGENTS/concurrency::join", "AGENTS/concurrency::join::join", "AGENTS/concurrency::join::accept_message", "AGENTS/concurrency::join::consume_message", "AGENTS/concurrency::join::link_target_notification", "AGENTS/concurrency::join::propagate_message", "AGENTS/concurrency::join::propagate_to_any_targets", "AGENTS/concurrency::join::release_message", "AGENTS/concurrency::join::reserve_message", "AGENTS/concurrency::join::resume_propagation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["join class"]
 ms.assetid: d2217119-70a1-40b6-809f-c1c13a571c3f

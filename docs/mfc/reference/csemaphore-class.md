@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSemaphore', 'AFXMT/CSemaphore', 'AFXMT/CSemaphore::CSemaphore']
+f1_keywords: ["CSemaphore", "AFXMT/CSemaphore", "AFXMT/CSemaphore::CSemaphore"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSemaphore [MFC], CSemaphore"]
 ms.assetid: 385fc7e4-8f86-4be2-85e1-d23b38c12f7f

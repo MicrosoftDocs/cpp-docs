@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IDispEventSimpleImpl', 'ATLCOM/ATL::IDispEventSimpleImpl', 'ATLCOM/ATL::IDispEventSimpleImpl::Advise', 'ATLCOM/ATL::IDispEventSimpleImpl::DispEventAdvise', 'ATLCOM/ATL::IDispEventSimpleImpl::DispEventUnadvise', 'ATLCOM/ATL::IDispEventSimpleImpl::GetIDsOfNames', 'ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfo', 'ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfoCount', 'ATLCOM/ATL::IDispEventSimpleImpl::Invoke', 'ATLCOM/ATL::IDispEventSimpleImpl::Unadvise']
+f1_keywords: ["IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl::Advise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventAdvise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventUnadvise", "ATLCOM/ATL::IDispEventSimpleImpl::GetIDsOfNames", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfo", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispEventSimpleImpl::Invoke", "ATLCOM/ATL::IDispEventSimpleImpl::Unadvise"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDispEventSimpleImpl class"]
 ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0

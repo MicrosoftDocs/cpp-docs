@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComClassFactoryAutoThread', 'ATLCOM/ATL::CComClassFactoryAutoThread', 'ATLCOM/ATL::CComClassFactoryAutoThread::CreateInstance', 'ATLCOM/ATL::CComClassFactoryAutoThread::LockServer']
+f1_keywords: ["CComClassFactoryAutoThread", "ATLCOM/ATL::CComClassFactoryAutoThread", "ATLCOM/ATL::CComClassFactoryAutoThread::CreateInstance", "ATLCOM/ATL::CComClassFactoryAutoThread::LockServer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComClassFactoryAutoThread class"]
 ms.assetid: 22008042-533f-4dd9-bf7e-191ee571f9a1

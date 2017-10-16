@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CD2DBrushProperties', 'AFXRENDERTARGET/CD2DBrushProperties', 'AFXRENDERTARGET/CD2DBrushProperties::CD2DBrushProperties', 'AFXRENDERTARGET/CD2DBrushProperties::CommonInit']
+f1_keywords: ["CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties::CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties::CommonInit"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DBrushProperties [MFC], CD2DBrushProperties", "CD2DBrushProperties [MFC], CommonInit"]
 ms.assetid: c77d717f-0a16-4d74-b2ce-0ae1766ed6f9

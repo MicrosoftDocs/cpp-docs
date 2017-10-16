@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['extent', 'AMP/extent', 'AMP/Concurrency::extent::extent', 'AMP/Concurrency::extent::contains', 'AMP/Concurrency::extent::size', 'AMP/Concurrency::extent::tile', 'AMP/Concurrency::extent::rank Constant']
+f1_keywords: ["extent", "AMP/extent", "AMP/Concurrency::extent::extent", "AMP/Concurrency::extent::contains", "AMP/Concurrency::extent::size", "AMP/Concurrency::extent::tile", "AMP/Concurrency::extent::rank Constant"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["extent structure"]
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269

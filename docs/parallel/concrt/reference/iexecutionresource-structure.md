@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['IExecutionResource', 'CONCRTRM/concurrency::IExecutionResource', 'CONCRTRM/concurrency::IExecutionResource::IExecutionResource::CurrentSubscriptionLevel', 'CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetExecutionResourceId', 'CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetNodeId', 'CONCRTRM/concurrency::IExecutionResource::IExecutionResource::Remove']
+f1_keywords: ["IExecutionResource", "CONCRTRM/concurrency::IExecutionResource", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::CurrentSubscriptionLevel", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetExecutionResourceId", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetNodeId", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::Remove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IExecutionResource structure"]
 ms.assetid: 6b27042b-b98c-4f7f-b831-566950af84cd

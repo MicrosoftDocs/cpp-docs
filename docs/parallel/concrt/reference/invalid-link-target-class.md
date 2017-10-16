@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['invalid_link_target', 'CONCRT/concurrency::invalid_link_target', 'CONCRT/concurrency::invalid_link_target::invalid_link_target']
+f1_keywords: ["invalid_link_target", "CONCRT/concurrency::invalid_link_target", "CONCRT/concurrency::invalid_link_target::invalid_link_target"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_link_target class"]
 ms.assetid: 33b64885-34d8-4d4e-a893-02e9f19c958e

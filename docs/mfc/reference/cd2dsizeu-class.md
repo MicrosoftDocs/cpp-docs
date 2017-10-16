@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CD2DSizeU', 'AFXRENDERTARGET/CD2DSizeU', 'AFXRENDERTARGET/CD2DSizeU::CD2DSizeU', 'AFXRENDERTARGET/CD2DSizeU::IsNull']
+f1_keywords: ["CD2DSizeU", "AFXRENDERTARGET/CD2DSizeU", "AFXRENDERTARGET/CD2DSizeU::CD2DSizeU", "AFXRENDERTARGET/CD2DSizeU::IsNull"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DSizeU [MFC], CD2DSizeU", "CD2DSizeU [MFC], IsNull"]
 ms.assetid: 6e679ba8-2112-43c3-8275-70b660856f02

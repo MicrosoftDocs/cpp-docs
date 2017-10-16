@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CHeapPtr', 'ATLCORE/ATL::CHeapPtr', 'ATLCORE/ATL::CHeapPtr::CHeapPtr', 'ATLCORE/ATL::CHeapPtr::Allocate', 'ATLCORE/ATL::CHeapPtr::Reallocate']
+f1_keywords: ["CHeapPtr", "ATLCORE/ATL::CHeapPtr", "ATLCORE/ATL::CHeapPtr::CHeapPtr", "ATLCORE/ATL::CHeapPtr::Allocate", "ATLCORE/ATL::CHeapPtr::Reallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CHeapPtr class"]
 ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454

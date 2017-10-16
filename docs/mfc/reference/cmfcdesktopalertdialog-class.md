@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCDesktopAlertDialog', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::CreateFromParams', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::GetDlgSize', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::HasFocus', 'AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::PreTranslateMessage']
+f1_keywords: ["CMFCDesktopAlertDialog", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::CreateFromParams", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::GetDlgSize", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::HasFocus", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::PreTranslateMessage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDesktopAlertDialog [MFC], CreateFromParams", "CMFCDesktopAlertDialog [MFC], GetDlgSize", "CMFCDesktopAlertDialog [MFC], HasFocus", "CMFCDesktopAlertDialog [MFC], PreTranslateMessage"]
 ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
