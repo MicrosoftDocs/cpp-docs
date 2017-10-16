@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['sampler', 'AMP_GRAPHICS/sampler', 'AMP_GRAPHICS/concurrency::sampler::graphics::sampler', 'AMP_GRAPHICS/concurrency::sampler::graphics::get_address_mode', 'AMP_GRAPHICS/concurrency::sampler::graphics::get_border_color', 'AMP_GRAPHICS/concurrency::sampler::graphics::get_filter_mode', 'AMP_GRAPHICS/concurrency::sampler::graphics::address_mode', 'AMP_GRAPHICS/concurrency::sampler::graphics::border_color', 'AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode']
+f1_keywords: ["sampler", "AMP_GRAPHICS/sampler", "AMP_GRAPHICS/concurrency::sampler::graphics::sampler", "AMP_GRAPHICS/concurrency::sampler::graphics::get_address_mode", "AMP_GRAPHICS/concurrency::sampler::graphics::get_border_color", "AMP_GRAPHICS/concurrency::sampler::graphics::get_filter_mode", "AMP_GRAPHICS/concurrency::sampler::graphics::address_mode", "AMP_GRAPHICS/concurrency::sampler::graphics::border_color", "AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode"]
 dev_langs: ["C++"]
 ms.assetid: 9a6a9807-497d-402d-b092-8c4d86275b80
 caps.latest.revision: 7

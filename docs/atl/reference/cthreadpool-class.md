@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CThreadPool', 'ATLUTIL/ATL::CThreadPool', 'ATLUTIL/ATL::CThreadPool::CThreadPool', 'ATLUTIL/ATL::CThreadPool::AddRef', 'ATLUTIL/ATL::CThreadPool::GetNumThreads', 'ATLUTIL/ATL::CThreadPool::GetQueueHandle', 'ATLUTIL/ATL::CThreadPool::GetSize', 'ATLUTIL/ATL::CThreadPool::GetTimeout', 'ATLUTIL/ATL::CThreadPool::Initialize', 'ATLUTIL/ATL::CThreadPool::QueryInterface', 'ATLUTIL/ATL::CThreadPool::QueueRequest', 'ATLUTIL/ATL::CThreadPool::Release', 'ATLUTIL/ATL::CThreadPool::SetSize', 'ATLUTIL/ATL::CThreadPool::SetTimeout', 'ATLUTIL/ATL::CThreadPool::Shutdown']
+f1_keywords: ["CThreadPool", "ATLUTIL/ATL::CThreadPool", "ATLUTIL/ATL::CThreadPool::CThreadPool", "ATLUTIL/ATL::CThreadPool::AddRef", "ATLUTIL/ATL::CThreadPool::GetNumThreads", "ATLUTIL/ATL::CThreadPool::GetQueueHandle", "ATLUTIL/ATL::CThreadPool::GetSize", "ATLUTIL/ATL::CThreadPool::GetTimeout", "ATLUTIL/ATL::CThreadPool::Initialize", "ATLUTIL/ATL::CThreadPool::QueryInterface", "ATLUTIL/ATL::CThreadPool::QueueRequest", "ATLUTIL/ATL::CThreadPool::Release", "ATLUTIL/ATL::CThreadPool::SetSize", "ATLUTIL/ATL::CThreadPool::SetTimeout", "ATLUTIL/ATL::CThreadPool::Shutdown"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CThreadPool class"]
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f

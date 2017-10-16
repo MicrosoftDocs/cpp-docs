@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComQIPtrElementTraits', 'ATLCOLL/ATL::CComQIPtrElementTraits', 'ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE']
+f1_keywords: ["CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComQIPtrElementTraits class"]
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4

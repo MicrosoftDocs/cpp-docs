@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['combinable', 'PPL/concurrency::combinable', 'PPL/concurrency::combinable::combinable', 'PPL/concurrency::combinable::clear', 'PPL/concurrency::combinable::combine', 'PPL/concurrency::combinable::combine_each', 'PPL/concurrency::combinable::local']
+f1_keywords: ["combinable", "PPL/concurrency::combinable", "PPL/concurrency::combinable::combinable", "PPL/concurrency::combinable::clear", "PPL/concurrency::combinable::combine", "PPL/concurrency::combinable::combine_each", "PPL/concurrency::combinable::local"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["combinable class"]
 ms.assetid: fe0bfbf6-6250-47da-b8d0-f75369f0b5be

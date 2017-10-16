@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSimpleException', 'AFX/CSimpleException', 'AFX/CSimpleException::CSimpleException', 'AFX/CSimpleException::GetErrorMessage']
+f1_keywords: ["CSimpleException", "AFX/CSimpleException", "AFX/CSimpleException::CSimpleException", "AFX/CSimpleException::GetErrorMessage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleException [MFC], CSimpleException", "CSimpleException [MFC], GetErrorMessage"]
 ms.assetid: be0eb8ef-e5b9-47d6-b0fb-efaff2d1e666

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CHtmlEditCtrl', 'AFXHTML/CHtmlEditCtrl', 'AFXHTML/CHtmlEditCtrl::CHtmlEditCtrl', 'AFXHTML/CHtmlEditCtrl::Create', 'AFXHTML/CHtmlEditCtrl::GetDHtmlDocument', 'AFXHTML/CHtmlEditCtrl::GetStartDocument']
+f1_keywords: ["CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl::CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl::Create", "AFXHTML/CHtmlEditCtrl::GetDHtmlDocument", "AFXHTML/CHtmlEditCtrl::GetStartDocument"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CHtmlEditCtrl [MFC], CHtmlEditCtrl", "CHtmlEditCtrl [MFC], Create", "CHtmlEditCtrl [MFC], GetDHtmlDocument", "CHtmlEditCtrl [MFC], GetStartDocument"]
 ms.assetid: 0fc4a238-b05f-4874-9edc-6a6701f064d9

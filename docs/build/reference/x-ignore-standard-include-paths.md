@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/x", "VC.Project.VCCLCompilerTool.IgnoreStandardIncludePath", "VC.Project.VCCLWCECompilerTool.IgnoreStandardIncludePath"]
+f1_keywords: ["/x", "VC.Project.VCCLCompilerTool.OVERWRITEStandardIncludePath", "VC.Project.VCCLWCECompilerTool.OVERWRITEStandardIncludePath"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/X compiler option [C++]", "include files, ignore standard path", "-X compiler option [C++]", "include directories, ignore standard", "X compiler option", "Ignore Standard Include Paths compiler option"]
 ms.assetid: 16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef

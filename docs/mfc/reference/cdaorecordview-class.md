@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDaoRecordView', 'AFXDAO/CDaoRecordView', 'AFXDAO/CDaoRecordView::CDaoRecordView', 'AFXDAO/CDaoRecordView::IsOnFirstRecord', 'AFXDAO/CDaoRecordView::IsOnLastRecord', 'AFXDAO/CDaoRecordView::OnGetRecordset', 'AFXDAO/CDaoRecordView::OnMove']
+f1_keywords: ["CDaoRecordView", "AFXDAO/CDaoRecordView", "AFXDAO/CDaoRecordView::CDaoRecordView", "AFXDAO/CDaoRecordView::IsOnFirstRecord", "AFXDAO/CDaoRecordView::IsOnLastRecord", "AFXDAO/CDaoRecordView::OnGetRecordset", "AFXDAO/CDaoRecordView::OnMove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoRecordView [MFC], CDaoRecordView", "CDaoRecordView [MFC], IsOnFirstRecord", "CDaoRecordView [MFC], IsOnLastRecord", "CDaoRecordView [MFC], OnGetRecordset", "CDaoRecordView [MFC], OnMove"]
 ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac

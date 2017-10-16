@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComHeapPtr', 'ATLBASE/ATL::CComHeapPtr', 'ATLBASE/ATL::CComHeapPtr::CComHeapPtr']
+f1_keywords: ["CComHeapPtr", "ATLBASE/ATL::CComHeapPtr", "ATLBASE/ATL::CComHeapPtr::CComHeapPtr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComHeapPtr class"]
 ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994

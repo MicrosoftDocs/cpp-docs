@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['AMP_GRAPHICS/Concurrency']
+f1_keywords: ["AMP_GRAPHICS/Concurrency"]
 dev_langs: ["C++"]
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e
 caps.latest.revision: 14

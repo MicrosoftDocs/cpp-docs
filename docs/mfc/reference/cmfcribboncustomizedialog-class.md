@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCRibbonCustomizeDialog', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog', 'AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog']
+f1_keywords: ["CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonCustomizeDialog [MFC], CMFCRibbonCustomizeDialog"]
 ms.assetid: ce67de7f-5eaa-4c75-9b94-f290f36df073

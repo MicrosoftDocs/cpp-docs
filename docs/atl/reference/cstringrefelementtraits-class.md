@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CStringRefElementTraits', 'ATLCOLL/ATL::CStringRefElementTraits', 'ATLCOLL/ATL::CStringRefElementTraits::CompareElements', 'ATLCOLL/ATL::CStringRefElementTraits::CompareElementsOrdered', 'ATLCOLL/ATL::CStringRefElementTraits::Hash']
+f1_keywords: ["CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits::CompareElements", "ATLCOLL/ATL::CStringRefElementTraits::CompareElementsOrdered", "ATLCOLL/ATL::CStringRefElementTraits::Hash"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CStringRefElementTraits class"]
 ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd

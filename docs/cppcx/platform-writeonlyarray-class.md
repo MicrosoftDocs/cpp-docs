@@ -7,7 +7,7 @@ ms.reviewer: ""
 s.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['VCCORLIB/Platform::WriteOnlyArray::begin', 'VCCORLIB/Platform::WriteOnlyArray::Data', 'VCCORLIB/Platform::WriteOnlyArray::end', 'VCCORLIB/Platform::WriteOnlyArray::FastPass', 'VCCORLIB/Platform::WriteOnlyArray::Length', 'VCCORLIB/Platform::WriteOnlyArray::set']
+f1_keywords: ["VCCORLIB/Platform::WriteOnlyArray::begin", "VCCORLIB/Platform::WriteOnlyArray::Data", "VCCORLIB/Platform::WriteOnlyArray::end", "VCCORLIB/Platform::WriteOnlyArray::FastPass", "VCCORLIB/Platform::WriteOnlyArray::Length", "VCCORLIB/Platform::WriteOnlyArray::set"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

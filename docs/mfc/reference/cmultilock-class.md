@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMultiLock', 'AFXMT/CMultiLock', 'AFXMT/CMultiLock::CMultiLock', 'AFXMT/CMultiLock::IsLocked', 'AFXMT/CMultiLock::Lock', 'AFXMT/CMultiLock::Unlock']
+f1_keywords: ["CMultiLock", "AFXMT/CMultiLock", "AFXMT/CMultiLock::CMultiLock", "AFXMT/CMultiLock::IsLocked", "AFXMT/CMultiLock::Lock", "AFXMT/CMultiLock::Unlock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMultiLock [MFC], CMultiLock", "CMultiLock [MFC], IsLocked", "CMultiLock [MFC], Lock", "CMultiLock [MFC], Unlock"]
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61

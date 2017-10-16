@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAtlWinModule', 'ATLBASE/ATL::CAtlWinModule', 'ATLBASE/ATL::CAtlWinModule::CAtlWinModule', 'ATLBASE/ATL::CAtlWinModule::AddCreateWndData', 'ATLBASE/ATL::CAtlWinModule::ExtractCreateWndData']
+f1_keywords: ["CAtlWinModule", "ATLBASE/ATL::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::AddCreateWndData", "ATLBASE/ATL::CAtlWinModule::ExtractCreateWndData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlWinModule class"]
 ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CFolderPickerDialog', 'AFXDLGS/CFolderPickerDialog', 'AFXDLGS/CFolderPickerDialog::CFolderPickerDialog']
+f1_keywords: ["CFolderPickerDialog", "AFXDLGS/CFolderPickerDialog", "AFXDLGS/CFolderPickerDialog::CFolderPickerDialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFolderPickerDialog [MFC], CFolderPickerDialog"]
 ms.assetid: 8db01684-dd1d-4e9c-989e-07a2318a8156

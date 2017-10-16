@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['scheduler_not_attached', 'CONCRT/concurrency::scheduler_not_attached', 'CONCRT/concurrency::scheduler_not_attached::scheduler_not_attached']
+f1_keywords: ["scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached::scheduler_not_attached"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler_not_attached class"]
 ms.assetid: 26001970-b400-463b-be3d-8623359c399a

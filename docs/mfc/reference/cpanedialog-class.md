@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CPaneDialog', 'AFXPANEDIALOG/CPaneDialog', 'AFXPANEDIALOG/CPaneDialog::Create', 'AFXPANEDIALOG/CPaneDialog::HandleInitDialog', 'AFXPANEDIALOG/CPaneDialog::SetOccDialogInfo']
+f1_keywords: ["CPaneDialog", "AFXPANEDIALOG/CPaneDialog", "AFXPANEDIALOG/CPaneDialog::Create", "AFXPANEDIALOG/CPaneDialog::HandleInitDialog", "AFXPANEDIALOG/CPaneDialog::SetOccDialogInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CPaneDialog [MFC], Create", "CPaneDialog [MFC], HandleInitDialog", "CPaneDialog [MFC], SetOccDialogInfo"]
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6

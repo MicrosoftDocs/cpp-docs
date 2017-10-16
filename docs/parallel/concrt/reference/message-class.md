@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['message', 'AGENTS/concurrency::message', 'AGENTS/concurrency::message::message', 'AGENTS/concurrency::message::add_ref', 'AGENTS/concurrency::message::msg_id', 'AGENTS/concurrency::message::remove_ref', 'AGENTS/concurrency::message::payload']
+f1_keywords: ["message", "AGENTS/concurrency::message", "AGENTS/concurrency::message::message", "AGENTS/concurrency::message::add_ref", "AGENTS/concurrency::message::msg_id", "AGENTS/concurrency::message::remove_ref", "AGENTS/concurrency::message::payload"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message class"]
 ms.assetid: 3e1f3505-6c0c-486c-8191-666d0880ec62

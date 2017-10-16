@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['Context', 'CONCRT/concurrency::Context', 'CONCRT/concurrency::Context::Block', 'CONCRT/concurrency::Context::CurrentContext', 'CONCRT/concurrency::Context::GetId', 'CONCRT/concurrency::Context::GetScheduleGroupId', 'CONCRT/concurrency::Context::GetVirtualProcessorId', 'CONCRT/concurrency::Context::Id', 'CONCRT/concurrency::Context::IsCurrentTaskCollectionCanceling', 'CONCRT/concurrency::Context::IsSynchronouslyBlocked', 'CONCRT/concurrency::Context::Oversubscribe', 'CONCRT/concurrency::Context::ScheduleGroupId', 'CONCRT/concurrency::Context::Unblock', 'CONCRT/concurrency::Context::VirtualProcessorId', 'CONCRT/concurrency::Context::Yield']
+f1_keywords: ["Context", "CONCRT/concurrency::Context", "CONCRT/concurrency::Context::Block", "CONCRT/concurrency::Context::CurrentContext", "CONCRT/concurrency::Context::GetId", "CONCRT/concurrency::Context::GetScheduleGroupId", "CONCRT/concurrency::Context::GetVirtualProcessorId", "CONCRT/concurrency::Context::Id", "CONCRT/concurrency::Context::IsCurrentTaskCollectionCanceling", "CONCRT/concurrency::Context::IsSynchronouslyBlocked", "CONCRT/concurrency::Context::Oversubscribe", "CONCRT/concurrency::Context::ScheduleGroupId", "CONCRT/concurrency::Context::Unblock", "CONCRT/concurrency::Context::VirtualProcessorId", "CONCRT/concurrency::Context::Yield"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Context class"]
 ms.assetid: c0d553f3-961d-4ecd-9a29-4fa4351673b8

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CWinFormsView', 'AFXWINFORMS/CWinFormsView', 'AFXWINFORMS/CWinFormsView::CWinFormsView', 'AFXWINFORMS/CWinFormsView::GetControl']
+f1_keywords: ["CWinFormsView", "AFXWINFORMS/CWinFormsView", "AFXWINFORMS/CWinFormsView::CWinFormsView", "AFXWINFORMS/CWinFormsView::GetControl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CWinFormsView [MFC], CWinFormsView", "CWinFormsView [MFC], GetControl"]
 ms.assetid: d597e397-6529-469b-88f5-7f65a6b9e895

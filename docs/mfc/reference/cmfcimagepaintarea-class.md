@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCImagePaintArea', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::CMFCImagePaintArea', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::GetMode', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetBitmap', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetColor', 'AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetMode']
+f1_keywords: ["CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::GetMode", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetBitmap", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetColor", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetMode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCImagePaintArea [MFC], CMFCImagePaintArea", "CMFCImagePaintArea [MFC], GetMode", "CMFCImagePaintArea [MFC], SetBitmap", "CMFCImagePaintArea [MFC], SetColor", "CMFCImagePaintArea [MFC], SetMode"]
 ms.assetid: c59eec22-f15a-4e58-8c4d-4a18a41f4452

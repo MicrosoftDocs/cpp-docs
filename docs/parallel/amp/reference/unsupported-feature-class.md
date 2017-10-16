@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['unsupported_feature', 'AMPRT/unsupported_feature', 'AMPRT/Concurrency::unsupported_feature']
+f1_keywords: ["unsupported_feature", "AMPRT/unsupported_feature", "AMPRT/Concurrency::unsupported_feature"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unsupported_feature class"]
 ms.assetid: 6b1ab917-df13-48c7-9648-7cb2465a0ff5

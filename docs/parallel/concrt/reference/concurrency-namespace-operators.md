@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['concrt/concurrency::operator!=', 'concrt/concurrency:[operator&amp;&amp', 'concrt/concurrency:[operator&amp;&amp']
+f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency:[operator&amp;&amp"]
 dev_langs: 
   - "C++"
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8

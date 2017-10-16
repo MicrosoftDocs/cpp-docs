@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleChangeIconDialog', 'AFXODLGS/COleChangeIconDialog', 'AFXODLGS/COleChangeIconDialog::COleChangeIconDialog', 'AFXODLGS/COleChangeIconDialog::DoChangeIcon', 'AFXODLGS/COleChangeIconDialog::DoModal', 'AFXODLGS/COleChangeIconDialog::GetIconicMetafile', 'AFXODLGS/COleChangeIconDialog::m_ci']
+f1_keywords: ["COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog::COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog::DoChangeIcon", "AFXODLGS/COleChangeIconDialog::DoModal", "AFXODLGS/COleChangeIconDialog::GetIconicMetafile", "AFXODLGS/COleChangeIconDialog::m_ci"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleChangeIconDialog [MFC], COleChangeIconDialog", "COleChangeIconDialog [MFC], DoChangeIcon", "COleChangeIconDialog [MFC], DoModal", "COleChangeIconDialog [MFC], GetIconicMetafile", "COleChangeIconDialog [MFC], m_ci"]
 ms.assetid: 8d6e131b-ddbb-4dff-a432-f239efda8e3d

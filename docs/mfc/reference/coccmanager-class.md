@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COccManager', 'AFXOCC/COccManager', 'AFXOCC/COccManager::CreateContainer', 'AFXOCC/COccManager::CreateDlgControls', 'AFXOCC/COccManager::CreateSite', 'AFXOCC/COccManager::GetDefBtnCode', 'AFXOCC/COccManager::IsDialogMessage', 'AFXOCC/COccManager::IsLabelControl', 'AFXOCC/COccManager::IsMatchingMnemonic', 'AFXOCC/COccManager::OnEvent', 'AFXOCC/COccManager::PostCreateDialog', 'AFXOCC/COccManager::PreCreateDialog', 'AFXOCC/COccManager::SetDefaultButton', 'AFXOCC/COccManager::SplitDialogTemplate']
+f1_keywords: ["COccManager", "AFXOCC/COccManager", "AFXOCC/COccManager::CreateContainer", "AFXOCC/COccManager::CreateDlgControls", "AFXOCC/COccManager::CreateSite", "AFXOCC/COccManager::GetDefBtnCode", "AFXOCC/COccManager::IsDialogMessage", "AFXOCC/COccManager::IsLabelControl", "AFXOCC/COccManager::IsMatchingMnemonic", "AFXOCC/COccManager::OnEvent", "AFXOCC/COccManager::PostCreateDialog", "AFXOCC/COccManager::PreCreateDialog", "AFXOCC/COccManager::SetDefaultButton", "AFXOCC/COccManager::SplitDialogTemplate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COccManager [MFC], CreateContainer", "COccManager [MFC], CreateDlgControls", "COccManager [MFC], CreateSite", "COccManager [MFC], GetDefBtnCode", "COccManager [MFC], IsDialogMessage", "COccManager [MFC], IsLabelControl", "COccManager [MFC], IsMatchingMnemonic", "COccManager [MFC], OnEvent", "COccManager [MFC], PostCreateDialog", "COccManager [MFC], PreCreateDialog", "COccManager [MFC], SetDefaultButton", "COccManager [MFC], SplitDialogTemplate"]
 ms.assetid: 7d47aeed-d1ab-48e3-b4cf-d429718e370a

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCPropertyPage', 'AFXPROPERTYPAGE/CMFCPropertyPage', 'AFXPROPERTYPAGE/CMFCPropertyPage::CMFCPropertyPage']
+f1_keywords: ["CMFCPropertyPage", "AFXPROPERTYPAGE/CMFCPropertyPage", "AFXPROPERTYPAGE/CMFCPropertyPage::CMFCPropertyPage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertyPage [MFC], CMFCPropertyPage"]
 ms.assetid: d279d7f2-2d81-418d-9f23-6147d6e8df09

@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['VCCORLIB/Platform::MTAThreadAttribute::Equals', 'VCCORLIB/Platform::MTAThreadAttribute::GetHashCode', 'VCCORLIB/Platform::MTAThreadAttribute::ToString']
+f1_keywords: ["VCCORLIB/Platform::MTAThreadAttribute::Equals", "VCCORLIB/Platform::MTAThreadAttribute::GetHashCode", "VCCORLIB/Platform::MTAThreadAttribute::ToString"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CInterfaceArray', 'ATLCOLL/ATL::CInterfaceArray', 'ATLCOLL/ATL::CInterfaceArray::CInterfaceArray']
+f1_keywords: ["CInterfaceArray", "ATLCOLL/ATL::CInterfaceArray", "ATLCOLL/ATL::CInterfaceArray::CInterfaceArray"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CInterfaceArray class"]
 ms.assetid: 1f29cf66-a086-4a7b-b6a8-64f73da39f79

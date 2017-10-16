@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['writeonly_texture_view', 'AMP_GRAPHICS/writeonly_texture_view', 'AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view', 'AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set', 'AMP_GRAPHICS/Concurrency::graphics::rank Constant']
+f1_keywords: ["writeonly_texture_view", "AMP_GRAPHICS/writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set", "AMP_GRAPHICS/Concurrency::graphics::rank Constant"]
 dev_langs: ["C++"]
 ms.assetid: 8d117ad3-0a1c-41ae-b29c-7c95fdd4d04d
 caps.latest.revision: 9

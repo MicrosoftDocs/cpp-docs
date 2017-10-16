@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCDisableMenuAnimation', 'AFXPOPUPMENU/CMFCDisableMenuAnimation', 'AFXPOPUPMENU/CMFCDisableMenuAnimation::Restore']
+f1_keywords: ["CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation::Restore"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDisableMenuAnimation [MFC], Restore"]
 ms.assetid: c6eb07da-c382-43d6-8028-007f2320e50e

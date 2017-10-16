@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComSafeDeleteCriticalSection', 'ATLCORE/ATL::CComSafeDeleteCriticalSection', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::Init', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock', 'ATLCORE/ATL::CComSafeDeleteCriticalSection::Term', 'ATLCORE/ATL::m_bInitialized']
+f1_keywords: ["CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Init", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Term", "ATLCORE/ATL::m_bInitialized"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComSafeDeleteCriticalSection class"]
 ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314

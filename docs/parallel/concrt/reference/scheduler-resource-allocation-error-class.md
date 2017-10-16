@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['scheduler_resource_allocation_error', 'CONCRT/concurrency::scheduler_resource_allocation_error', 'CONCRT/concurrency::scheduler_resource_allocation_error::scheduler_resource_allocation_error', 'CONCRT/concurrency::scheduler_resource_allocation_error::get_error_code']
+f1_keywords: ["scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error::scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error::get_error_code"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler_resource_allocation_error class"]
 ms.assetid: 8b40449a-7abb-4d0a-bb85-c0e9a495ae97

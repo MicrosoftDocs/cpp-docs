@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMutex', 'AFXMT/CMutex', 'AFXMT/CMutex::CMutex']
+f1_keywords: ["CMutex", "AFXMT/CMutex", "AFXMT/CMutex::CMutex"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMutex [MFC], CMutex"]
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1

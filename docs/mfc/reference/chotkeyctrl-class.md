@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CHotKeyCtrl', 'AFXCMN/CHotKeyCtrl', 'AFXCMN/CHotKeyCtrl::CHotKeyCtrl', 'AFXCMN/CHotKeyCtrl::Create', 'AFXCMN/CHotKeyCtrl::CreateEx', 'AFXCMN/CHotKeyCtrl::GetHotKey', 'AFXCMN/CHotKeyCtrl::GetHotKeyName', 'AFXCMN/CHotKeyCtrl::GetKeyName', 'AFXCMN/CHotKeyCtrl::SetHotKey', 'AFXCMN/CHotKeyCtrl::SetRules']
+f1_keywords: ["CHotKeyCtrl", "AFXCMN/CHotKeyCtrl", "AFXCMN/CHotKeyCtrl::CHotKeyCtrl", "AFXCMN/CHotKeyCtrl::Create", "AFXCMN/CHotKeyCtrl::CreateEx", "AFXCMN/CHotKeyCtrl::GetHotKey", "AFXCMN/CHotKeyCtrl::GetHotKeyName", "AFXCMN/CHotKeyCtrl::GetKeyName", "AFXCMN/CHotKeyCtrl::SetHotKey", "AFXCMN/CHotKeyCtrl::SetRules"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CHotKeyCtrl [MFC], CHotKeyCtrl", "CHotKeyCtrl [MFC], Create", "CHotKeyCtrl [MFC], CreateEx", "CHotKeyCtrl [MFC], GetHotKey", "CHotKeyCtrl [MFC], GetHotKeyName", "CHotKeyCtrl [MFC], GetKeyName", "CHotKeyCtrl [MFC], SetHotKey", "CHotKeyCtrl [MFC], SetRules"]
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6

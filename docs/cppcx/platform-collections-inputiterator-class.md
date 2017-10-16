@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['COLLECTION/Platform::Collections::InputIterator::InputIterator']
+f1_keywords: ["COLLECTION/Platform::Collections::InputIterator::InputIterator"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

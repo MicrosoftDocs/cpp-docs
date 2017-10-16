@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CFontDialog', 'AFXDLGS/CFontDialog', 'AFXDLGS/CFontDialog::CFontDialog', 'AFXDLGS/CFontDialog::DoModal', 'AFXDLGS/CFontDialog::GetCharFormat', 'AFXDLGS/CFontDialog::GetColor', 'AFXDLGS/CFontDialog::GetCurrentFont', 'AFXDLGS/CFontDialog::GetFaceName', 'AFXDLGS/CFontDialog::GetSize', 'AFXDLGS/CFontDialog::GetStyleName', 'AFXDLGS/CFontDialog::GetWeight', 'AFXDLGS/CFontDialog::IsBold', 'AFXDLGS/CFontDialog::IsItalic', 'AFXDLGS/CFontDialog::IsStrikeOut', 'AFXDLGS/CFontDialog::IsUnderline', 'AFXDLGS/CFontDialog::m_cf']
+f1_keywords: ["CFontDialog", "AFXDLGS/CFontDialog", "AFXDLGS/CFontDialog::CFontDialog", "AFXDLGS/CFontDialog::DoModal", "AFXDLGS/CFontDialog::GetCharFormat", "AFXDLGS/CFontDialog::GetColor", "AFXDLGS/CFontDialog::GetCurrentFont", "AFXDLGS/CFontDialog::GetFaceName", "AFXDLGS/CFontDialog::GetSize", "AFXDLGS/CFontDialog::GetStyleName", "AFXDLGS/CFontDialog::GetWeight", "AFXDLGS/CFontDialog::IsBold", "AFXDLGS/CFontDialog::IsItalic", "AFXDLGS/CFontDialog::IsStrikeOut", "AFXDLGS/CFontDialog::IsUnderline", "AFXDLGS/CFontDialog::m_cf"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFontDialog [MFC], CFontDialog", "CFontDialog [MFC], DoModal", "CFontDialog [MFC], GetCharFormat", "CFontDialog [MFC], GetColor", "CFontDialog [MFC], GetCurrentFont", "CFontDialog [MFC], GetFaceName", "CFontDialog [MFC], GetSize", "CFontDialog [MFC], GetStyleName", "CFontDialog [MFC], GetWeight", "CFontDialog [MFC], IsBold", "CFontDialog [MFC], IsItalic", "CFontDialog [MFC], IsStrikeOut", "CFontDialog [MFC], IsUnderline", "CFontDialog [MFC], m_cf"]
 ms.assetid: 6228d500-ed0f-4156-81e5-ab0d57d1dcf4

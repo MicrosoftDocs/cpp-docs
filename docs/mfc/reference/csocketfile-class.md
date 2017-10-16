@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSocketFile', 'AFXSOCK/CSocketFile', 'AFXSOCK/CSocketFile::CSocketFile']
+f1_keywords: ["CSocketFile", "AFXSOCK/CSocketFile", "AFXSOCK/CSocketFile::CSocketFile"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSocketFile [MFC], CSocketFile"]
 ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f

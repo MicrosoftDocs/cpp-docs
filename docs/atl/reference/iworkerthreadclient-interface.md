@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IWorkerThreadClient', 'ATLUTIL/ATL::IWorkerThreadClient', 'ATLUTIL/ATL::CloseHandle', 'ATLUTIL/ATL::Execute']
+f1_keywords: ["IWorkerThreadClient", "ATLUTIL/ATL::IWorkerThreadClient", "ATLUTIL/ATL::CloseHandle", "ATLUTIL/ATL::Execute"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IWorkerThreadClient interface"]
 ms.assetid: 56f4a2f5-007e-4a33-9e20-05187629f715

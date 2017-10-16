@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CWaitCursor', 'AFXWIN/CWaitCursor', 'AFXWIN/CWaitCursor::CWaitCursor', 'AFXWIN/CWaitCursor::Restore']
+f1_keywords: ["CWaitCursor", "AFXWIN/CWaitCursor", "AFXWIN/CWaitCursor::CWaitCursor", "AFXWIN/CWaitCursor::Restore"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CWaitCursor [MFC], CWaitCursor", "CWaitCursor [MFC], Restore"]
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3

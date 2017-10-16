@@ -5,10 +5,10 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"  
-f1_keywords: ['amp_graphics/Concurrency::graphics::direct3d::get_sampler', 'amp_graphics/Concurrency::graphics::direct3d::make_sampler', 'amp_graphics/Concurrency::graphics::direct3d::make_texture']
+ms.topic: "article"
+f1_keywords: ["amp_graphics/Concurrency::graphics::direct3d::get_sampler", "amp_graphics/Concurrency::graphics::direct3d::make_sampler", "amp_graphics/Concurrency::graphics::direct3d::make_texture"]
 dev_langs: 
-  - "C++"  
+  - "C++"
 ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
 caps.latest.revision: 6
 author: "mikeblome"

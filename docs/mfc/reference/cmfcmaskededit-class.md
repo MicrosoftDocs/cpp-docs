@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCMaskedEdit', 'AFXMASKEDEDIT/CMFCMaskedEdit', 'AFXMASKEDEDIT/CMFCMaskedEdit::DisableMask', 'AFXMASKEDEDIT/CMFCMaskedEdit::EnableGetMaskedCharsOnly', 'AFXMASKEDEDIT/CMFCMaskedEdit::EnableMask', 'AFXMASKEDEDIT/CMFCMaskedEdit::EnableSelectByGroup', 'AFXMASKEDEDIT/CMFCMaskedEdit::EnableSetMaskedCharsOnly', 'AFXMASKEDEDIT/CMFCMaskedEdit::GetWindowText', 'AFXMASKEDEDIT/CMFCMaskedEdit::SetValidChars', 'AFXMASKEDEDIT/CMFCMaskedEdit::SetWindowText', 'AFXMASKEDEDIT/CMFCMaskedEdit::IsMaskedChar']
+f1_keywords: ["CMFCMaskedEdit", "AFXMASKEDEDIT/CMFCMaskedEdit", "AFXMASKEDEDIT/CMFCMaskedEdit::DisableMask", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableGetMaskedCharsOnly", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableMask", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableSelectByGroup", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableSetMaskedCharsOnly", "AFXMASKEDEDIT/CMFCMaskedEdit::GetWindowText", "AFXMASKEDEDIT/CMFCMaskedEdit::SetValidChars", "AFXMASKEDEDIT/CMFCMaskedEdit::SetWindowText", "AFXMASKEDEDIT/CMFCMaskedEdit::IsMaskedChar"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCMaskedEdit [MFC], DisableMask", "CMFCMaskedEdit [MFC], EnableGetMaskedCharsOnly", "CMFCMaskedEdit [MFC], EnableMask", "CMFCMaskedEdit [MFC], EnableSelectByGroup", "CMFCMaskedEdit [MFC], EnableSetMaskedCharsOnly", "CMFCMaskedEdit [MFC], GetWindowText", "CMFCMaskedEdit [MFC], SetValidChars", "CMFCMaskedEdit [MFC], SetWindowText", "CMFCMaskedEdit [MFC], IsMaskedChar"]
 ms.assetid: 13b1a645-2d5d-4c37-8599-16d5003f23a5
