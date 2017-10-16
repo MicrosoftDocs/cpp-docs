@@ -176,7 +176,7 @@ Use the `output` property to specify the executable that will launch when you pr
 |`${file}`| the full path of the file or folder selected to run this task against (for example,  "C:\sources\hello\src\hello.cpp")|
 |`${relativeFile}`| the relative path to the file or folder (for example,   "src\hello.cpp")|
 |`${fileBasename}`| the name of the file without path or extension (for example,  "hello")|
-|`${fileDirname}`| the the full path to the file, excluding the filename (for example,  "C:\sources\hello\src")|
+|`${fileDirname}`| the full path to the file, excluding the filename (for example,  "C:\sources\hello\src")|
 |`${fileExtname}`| the extension of the selected file (for example,  ".cpp")|
 
 #### Custom macros
