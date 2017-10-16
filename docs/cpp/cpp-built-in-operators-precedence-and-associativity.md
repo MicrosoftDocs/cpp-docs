@@ -75,11 +75,11 @@ The C++ language includes all C operators and adds several new operators. Operat
 |`Group 11 precedence, left to right associativity`|  
 |[Bitwise exclusive OR](../cpp/bitwise-exclusive-or-operator-hat.md)|`^`|  
 |`Group 12 precedence, left to right associativity`|  
-|[Bitwise inclusive OR](../cpp/bitwise-inclusive-or-operator-pipe.md)|`&#124;`|  
+|[Bitwise inclusive OR](../cpp/bitwise-inclusive-or-operator-pipe.md)|`\|`|  
 |`Group 13 precedence, left to right associativity`|  
 |[Logical AND](../cpp/logical-and-operator-amp-amp.md)|`&&`|  
 |`Group 14 precedence, left to right associativity`|  
-|[Logical OR](../cpp/logical-or-operator-pipe-pipe.md)|`&#124;&#124;`|  
+|[Logical OR](../cpp/logical-or-operator-pipe-pipe.md)|`\|\|`|  
 |`Group 15 precedence, right to left associativity`|  
 |[Conditional](../cpp/conditional-operator-q.md)|`? :`|  
 |`Group 16 precedence, right to left associativity`|  
@@ -92,7 +92,7 @@ The C++ language includes all C operators and adds several new operators. Operat
 |[Left-shift assignment](../cpp/assignment-operators.md)|`<<=`|  
 |[Right-shift assignment](../cpp/assignment-operators.md)|`>>=`|  
 |[Bitwise AND assignment](../cpp/assignment-operators.md)|`&=`|  
-|[Bitwise inclusive OR assignment](../cpp/assignment-operators.md)|`&#124;=`|  
+|[Bitwise inclusive OR assignment](../cpp/assignment-operators.md)|`\|=`|  
 |[Bitwise exclusive OR assignment](../cpp/assignment-operators.md)|`^=`|  
 |`Group 17 precedence, right to left associativity`|  
 |[throw expression](../cpp/try-throw-and-catch-statements-cpp.md)|`throw`|  
