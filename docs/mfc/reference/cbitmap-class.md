@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CBitmap', 'AFXWIN/CBitmap', 'AFXWIN/CBitmap::CBitmap', 'AFXWIN/CBitmap::CreateBitmap', 'AFXWIN/CBitmap::CreateBitmapIndirect', 'AFXWIN/CBitmap::CreateCompatibleBitmap', 'AFXWIN/CBitmap::CreateDiscardableBitmap', 'AFXWIN/CBitmap::FromHandle', 'AFXWIN/CBitmap::GetBitmap', 'AFXWIN/CBitmap::GetBitmapBits', 'AFXWIN/CBitmap::GetBitmapDimension', 'AFXWIN/CBitmap::LoadBitmap', 'AFXWIN/CBitmap::LoadMappedBitmap', 'AFXWIN/CBitmap::LoadOEMBitmap', 'AFXWIN/CBitmap::SetBitmapBits', 'AFXWIN/CBitmap::SetBitmapDimension']
+f1_keywords: ["CBitmap", "AFXWIN/CBitmap", "AFXWIN/CBitmap::CBitmap", "AFXWIN/CBitmap::CreateBitmap", "AFXWIN/CBitmap::CreateBitmapIndirect", "AFXWIN/CBitmap::CreateCompatibleBitmap", "AFXWIN/CBitmap::CreateDiscardableBitmap", "AFXWIN/CBitmap::FromHandle", "AFXWIN/CBitmap::GetBitmap", "AFXWIN/CBitmap::GetBitmapBits", "AFXWIN/CBitmap::GetBitmapDimension", "AFXWIN/CBitmap::LoadBitmap", "AFXWIN/CBitmap::LoadMappedBitmap", "AFXWIN/CBitmap::LoadOEMBitmap", "AFXWIN/CBitmap::SetBitmapBits", "AFXWIN/CBitmap::SetBitmapDimension"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBitmap [MFC], CBitmap", "CBitmap [MFC], CreateBitmap", "CBitmap [MFC], CreateBitmapIndirect", "CBitmap [MFC], CreateCompatibleBitmap", "CBitmap [MFC], CreateDiscardableBitmap", "CBitmap [MFC], FromHandle", "CBitmap [MFC], GetBitmap", "CBitmap [MFC], GetBitmapBits", "CBitmap [MFC], GetBitmapDimension", "CBitmap [MFC], LoadBitmap", "CBitmap [MFC], LoadMappedBitmap", "CBitmap [MFC], LoadOEMBitmap", "CBitmap [MFC], SetBitmapBits", "CBitmap [MFC], SetBitmapDimension"]
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c

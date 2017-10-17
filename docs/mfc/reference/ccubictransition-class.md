@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CCubicTransition', 'AFXANIMATIONCONTROLLER/CCubicTransition', 'AFXANIMATIONCONTROLLER/CCubicTransition::CCubicTransition', 'AFXANIMATIONCONTROLLER/CCubicTransition::Create', 'AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalVelocity', 'AFXANIMATIONCONTROLLER/CCubicTransition::m_duration']
+f1_keywords: ["CCubicTransition", "AFXANIMATIONCONTROLLER/CCubicTransition", "AFXANIMATIONCONTROLLER/CCubicTransition::CCubicTransition", "AFXANIMATIONCONTROLLER/CCubicTransition::Create", "AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalVelocity", "AFXANIMATIONCONTROLLER/CCubicTransition::m_duration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CCubicTransition [MFC], CCubicTransition", "CCubicTransition [MFC], Create", "CCubicTransition [MFC], m_dblFinalValue", "CCubicTransition [MFC], m_dblFinalVelocity", "CCubicTransition [MFC], m_duration"]
 ms.assetid: 4fc30e9c-160c-45e1-bdbe-51adf8fee9c5

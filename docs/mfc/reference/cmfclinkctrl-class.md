@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCLinkCtrl', 'AFXLINKCTRL/CMFCLinkCtrl', 'AFXLINKCTRL/CMFCLinkCtrl::SetURL', 'AFXLINKCTRL/CMFCLinkCtrl::SetURLPrefix', 'AFXLINKCTRL/CMFCLinkCtrl::SizeToContent', 'AFXLINKCTRL/CMFCLinkCtrl::OnDrawFocusRect']
+f1_keywords: ["CMFCLinkCtrl", "AFXLINKCTRL/CMFCLinkCtrl", "AFXLINKCTRL/CMFCLinkCtrl::SetURL", "AFXLINKCTRL/CMFCLinkCtrl::SetURLPrefix", "AFXLINKCTRL/CMFCLinkCtrl::SizeToContent", "AFXLINKCTRL/CMFCLinkCtrl::OnDrawFocusRect"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCLinkCtrl [MFC], SetURL", "CMFCLinkCtrl [MFC], SetURLPrefix", "CMFCLinkCtrl [MFC], SizeToContent", "CMFCLinkCtrl [MFC], OnDrawFocusRect"]
 ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b

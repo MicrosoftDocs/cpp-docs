@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComSafeArrayBound', 'ATLSAFE/ATL::CComSafeArrayBound', 'ATLSAFE/ATL::CComSafeArrayBound', 'ATLSAFE/ATL::GetCount', 'ATLSAFE/ATL::GetLowerBound', 'ATLSAFE/ATL::GetUpperBound', 'ATLSAFE/ATL::SetCount', 'ATLSAFE/ATL::SetLowerBound']
+f1_keywords: ["CComSafeArrayBound", "ATLSAFE/ATL::CComSafeArrayBound", "ATLSAFE/ATL::GetCount", "ATLSAFE/ATL::GetLowerBound", "ATLSAFE/ATL::GetUpperBound", "ATLSAFE/ATL::SetCount", "ATLSAFE/ATL::SetLowerBound"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComSafeArrayBound class"]
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437

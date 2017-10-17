@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCDynamicLayout', 'AFXLAYOUT/CMFCDynamicLayout', 'AFXLAYOUT/CMFCDynamicLayout::AddItem', 'AFXLAYOUT/CMFCDynamicLayout::Adjust', 'AFXLAYOUT/CMFCDynamicLayout::Create', 'AFXLAYOUT/CMFCDynamicLayout::GetHostWnd', 'AFXLAYOUT/CMFCDynamicLayout::GetMinSize', 'AFXLAYOUT/CMFCDynamicLayout::GetWindowRect', 'AFXLAYOUT/CMFCDynamicLayout::HasItem', 'AFXLAYOUT/CMFCDynamicLayout::IsEmpty', 'AFXLAYOUT/CMFCDynamicLayout::LoadResource', 'AFXLAYOUT/CMFCDynamicLayout::SetMinSize']
+f1_keywords: ["CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout::AddItem", "AFXLAYOUT/CMFCDynamicLayout::Adjust", "AFXLAYOUT/CMFCDynamicLayout::Create", "AFXLAYOUT/CMFCDynamicLayout::GetHostWnd", "AFXLAYOUT/CMFCDynamicLayout::GetMinSize", "AFXLAYOUT/CMFCDynamicLayout::GetWindowRect", "AFXLAYOUT/CMFCDynamicLayout::HasItem", "AFXLAYOUT/CMFCDynamicLayout::IsEmpty", "AFXLAYOUT/CMFCDynamicLayout::LoadResource", "AFXLAYOUT/CMFCDynamicLayout::SetMinSize"]
 dev_langs: ["C++"]
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
 caps.latest.revision: 16

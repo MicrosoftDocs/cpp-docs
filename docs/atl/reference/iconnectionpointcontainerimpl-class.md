@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IConnectionPointContainerImpl', 'ATLCOM/ATL::IConnectionPointContainerImpl', 'ATLCOM/ATL::IConnectionPointContainerImpl::EnumConnectionPoints', 'ATLCOM/ATL::IConnectionPointContainerImpl::FindConnectionPoint']
+f1_keywords: ["IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl::EnumConnectionPoints", "ATLCOM/ATL::IConnectionPointContainerImpl::FindConnectionPoint"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["connectable objects", "connection points [C++], container", "IConnectionPointContainerImpl class"]
 ms.assetid: 10db5a8d-8be9-4d9d-8a82-8ab9ffe3e9d6

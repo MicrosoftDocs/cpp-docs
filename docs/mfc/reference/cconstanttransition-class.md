@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CConstantTransition', 'AFXANIMATIONCONTROLLER/CConstantTransition', 'AFXANIMATIONCONTROLLER/CConstantTransition::CConstantTransition', 'AFXANIMATIONCONTROLLER/CConstantTransition::Create', 'AFXANIMATIONCONTROLLER/CConstantTransition::m_duration']
+f1_keywords: ["CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::Create", "AFXANIMATIONCONTROLLER/CConstantTransition::m_duration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CConstantTransition [MFC], CConstantTransition", "CConstantTransition [MFC], Create", "CConstantTransition [MFC], m_duration"]
 ms.assetid: f6fa4780-a71b-4cd6-80aa-d4792ace36c2

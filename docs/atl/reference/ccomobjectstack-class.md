@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComObjectStack', 'ATLCOM/ATL::CComObjectStack', 'ATLCOM/ATL::CComObjectStack::CComObjectStack', 'ATLCOM/ATL::CComObjectStack::AddRef', 'ATLCOM/ATL::CComObjectStack::QueryInterface', 'ATLCOM/ATL::CComObjectStack::Release', 'ATLCOM/ATL::CComObjectStack::m_hResFinalConstruct']
+f1_keywords: ["CComObjectStack", "ATLCOM/ATL::CComObjectStack", "ATLCOM/ATL::CComObjectStack::CComObjectStack", "ATLCOM/ATL::CComObjectStack::AddRef", "ATLCOM/ATL::CComObjectStack::QueryInterface", "ATLCOM/ATL::CComObjectStack::Release", "ATLCOM/ATL::CComObjectStack::m_hResFinalConstruct"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComObjectStack class"]
 ms.assetid: 3da72c40-c834-45f6-bb76-6ac204028d80

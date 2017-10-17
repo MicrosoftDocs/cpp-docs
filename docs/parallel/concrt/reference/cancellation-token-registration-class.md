@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['cancellation_token_registration', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration::cancellation_token_registration']
+f1_keywords: ["cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration::cancellation_token_registration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cancellation_token_registration class"]
 ms.assetid: 823d63f4-7233-4d65-8976-6152ccf12d0e

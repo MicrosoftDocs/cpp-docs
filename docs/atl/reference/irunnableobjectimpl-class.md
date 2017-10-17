@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IRunnableObjectImpl', 'ATLCTL/ATL::IRunnableObjectImpl', 'ATLCTL/ATL::IRunnableObjectImpl::GetRunningClass', 'ATLCTL/ATL::IRunnableObjectImpl::IsRunning', 'ATLCTL/ATL::IRunnableObjectImpl::LockRunning', 'ATLCTL/ATL::IRunnableObjectImpl::Run', 'ATLCTL/ATL::IRunnableObjectImpl::SetContainedObject']
+f1_keywords: ["IRunnableObjectImpl", "ATLCTL/ATL::IRunnableObjectImpl", "ATLCTL/ATL::IRunnableObjectImpl::GetRunningClass", "ATLCTL/ATL::IRunnableObjectImpl::IsRunning", "ATLCTL/ATL::IRunnableObjectImpl::LockRunning", "ATLCTL/ATL::IRunnableObjectImpl::Run", "ATLCTL/ATL::IRunnableObjectImpl::SetContainedObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["containers, running controls", "IRunnableObjectImpl class", "IRunnableObject, ATL implementation", "controls [ATL], running", "controls [C++], container running in ATL"]
 ms.assetid: 305c7c3b-889e-49dd-aca1-34379c1b9931

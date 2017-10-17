@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['task_continuation_context', 'PPLTASKS/concurrency::task_continuation_context', 'PPLTASKS/concurrency::task_continuation_context::get_current_winrt_context', 'PPLTASKS/concurrency::task_continuation_context::use_arbitrary', 'PPLTASKS/concurrency::task_continuation_context::use_current', 'PPLTASKS/concurrency::task_continuation_context::use_default', 'PPLTASKS/concurrency::task_continuation_context::use_synchronous_execution']
+f1_keywords: ["task_continuation_context", "PPLTASKS/concurrency::task_continuation_context", "PPLTASKS/concurrency::task_continuation_context::get_current_winrt_context", "PPLTASKS/concurrency::task_continuation_context::use_arbitrary", "PPLTASKS/concurrency::task_continuation_context::use_current", "PPLTASKS/concurrency::task_continuation_context::use_default", "PPLTASKS/concurrency::task_continuation_context::use_synchronous_execution"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_continuation_context class"]
 ms.assetid: 1fb5a76a-3682-45c2-a615-8b6b527741f0

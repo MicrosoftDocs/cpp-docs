@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IServiceProviderImpl', 'ATLCOM/ATL::IServiceProviderImpl', 'ATLCOM/ATL::IServiceProviderImpl::QueryService']
+f1_keywords: ["IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl::QueryService"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IServiceProviderImpl class", "IServiceProvider interface, ATL implementation"]
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2

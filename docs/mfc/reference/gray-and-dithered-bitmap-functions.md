@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['AFXWIN/AfxDrawGrayBitmap', 'AFXWIN/AfxGetGrayBitmap', 'AFXWIN/AfxDrawDitheredBitmap', 'AFXWIN/AfxGetDitheredBitmap']
+f1_keywords: ["AFXWIN/AfxDrawGrayBitmap", "AFXWIN/AfxGetGrayBitmap", "AFXWIN/AfxDrawDitheredBitmap", "AFXWIN/AfxGetDitheredBitmap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["gray and dithered bitmap functions [MFC]"]
 ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41

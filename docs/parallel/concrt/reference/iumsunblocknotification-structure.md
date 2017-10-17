@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['IUMSUnblockNotification', 'CONCRTRM/concurrency::IUMSUnblockNotification', 'CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetContext', 'CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetNextUnblockNotification']
+f1_keywords: ["IUMSUnblockNotification", "CONCRTRM/concurrency::IUMSUnblockNotification", "CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetContext", "CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetNextUnblockNotification"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IUMSUnblockNotification structure"]
 ms.assetid: eaca9529-c1cc-472b-8ec6-722a1ff0fa2a

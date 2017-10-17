@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCRibbonApplicationButton', 'AFXRIBBONBAR/CMFCRibbonApplicationButton', 'AFXRIBBONBAR/CMFCRibbonApplicationButton::CMFCRibbonApplicationButton', 'AFXRIBBONBAR/CMFCRibbonApplicationButton::SetImage']
+f1_keywords: ["CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::SetImage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonApplicationButton [MFC], CMFCRibbonApplicationButton", "CMFCRibbonApplicationButton [MFC], SetImage"]
 ms.assetid: beb81757-fabd-4641-9130-876ba8505b78

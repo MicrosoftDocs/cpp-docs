@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CVSListBox', 'AFXVSLISTBOX/CVSListBox', 'AFXVSLISTBOX/CVSListBox::CVSListBox', 'AFXVSLISTBOX/CVSListBox::AddItem', 'AFXVSLISTBOX/CVSListBox::EditItem', 'AFXVSLISTBOX/CVSListBox::GetCount', 'AFXVSLISTBOX/CVSListBox::GetItemData', 'AFXVSLISTBOX/CVSListBox::GetItemText', 'AFXVSLISTBOX/CVSListBox::GetSelItem', 'AFXVSLISTBOX/CVSListBox::RemoveItem', 'AFXVSLISTBOX/CVSListBox::SelectItem', 'AFXVSLISTBOX/CVSListBox::SetItemData', 'AFXVSLISTBOX/CVSListBox::GetListHwnd']
+f1_keywords: ["CVSListBox", "AFXVSLISTBOX/CVSListBox", "AFXVSLISTBOX/CVSListBox::CVSListBox", "AFXVSLISTBOX/CVSListBox::AddItem", "AFXVSLISTBOX/CVSListBox::EditItem", "AFXVSLISTBOX/CVSListBox::GetCount", "AFXVSLISTBOX/CVSListBox::GetItemData", "AFXVSLISTBOX/CVSListBox::GetItemText", "AFXVSLISTBOX/CVSListBox::GetSelItem", "AFXVSLISTBOX/CVSListBox::RemoveItem", "AFXVSLISTBOX/CVSListBox::SelectItem", "AFXVSLISTBOX/CVSListBox::SetItemData", "AFXVSLISTBOX/CVSListBox::GetListHwnd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CVSListBox [MFC], CVSListBox", "CVSListBox [MFC], AddItem", "CVSListBox [MFC], EditItem", "CVSListBox [MFC], GetCount", "CVSListBox [MFC], GetItemData", "CVSListBox [MFC], GetItemText", "CVSListBox [MFC], GetSelItem", "CVSListBox [MFC], RemoveItem", "CVSListBox [MFC], SelectItem", "CVSListBox [MFC], SetItemData", "CVSListBox [MFC], GetListHwnd"]
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef

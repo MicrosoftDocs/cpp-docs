@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/ignore"]
+f1_keywords: ["/OVERWRITE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/IGNORE linker option"]
 ms.assetid: 37e77387-8838-4697-898f-d376ac641124

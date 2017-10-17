@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['AFXDAO/DDX_FieldCBIndex', 'AFXDAO/DDX_FieldCBString', 'AFXDAO/DDX_FieldCBStringExact', 'AFXDAO/DDX_FieldCheck', 'AFXDAO/DDX_FieldLBIndex', 'AFXDAO/DDX_FieldLBString', 'AFXDAO/DDX_FieldLBStringExact', 'AFXDAO/DDX_FieldRadio', 'AFXDAO/DDX_FieldScroll', 'AFXDAO/DDX_FieldText']
+f1_keywords: ["AFXDAO/DDX_FieldCBIndex", "AFXDAO/DDX_FieldCBString", "AFXDAO/DDX_FieldCBStringExact", "AFXDAO/DDX_FieldCheck", "AFXDAO/DDX_FieldLBIndex", "AFXDAO/DDX_FieldLBString", "AFXDAO/DDX_FieldLBStringExact", "AFXDAO/DDX_FieldRadio", "AFXDAO/DDX_FieldScroll", "AFXDAO/DDX_FieldText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DDX_Field functions [MFC]", "ODBC [MFC], dialog data exchange (DDX) support", "DDX (dialog data exchange) [MFC], database support", "DDX (dialog data exchange) [MFC], functions", "databases [MFC], dialog data exchange (DDX) support", "DAO [MFC], dialog data exchange (DDX) support"]
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91

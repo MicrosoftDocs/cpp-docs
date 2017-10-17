@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComTearOffObject', 'ATLCOM/ATL::CComTearOffObject', 'ATLCOM/ATL::CComTearOffObject::CComTearOffObject', 'ATLCOM/ATL::CComTearOffObject::AddRef', 'ATLCOM/ATL::CComTearOffObject::QueryInterface', 'ATLCOM/ATL::CComTearOffObject::Release', 'ATLCOM/ATL::CComTearOffObjectBase', 'ATLCOM/ATL::m_pOwner']
+f1_keywords: ["CComTearOffObject", "ATLCOM/ATL::CComTearOffObject", "ATLCOM/ATL::CComTearOffObject::CComTearOffObject", "ATLCOM/ATL::CComTearOffObject::AddRef", "ATLCOM/ATL::CComTearOffObject::QueryInterface", "ATLCOM/ATL::CComTearOffObject::Release", "ATLCOM/ATL::CComTearOffObjectBase", "ATLCOM/ATL::m_pOwner"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tear-off interfaces, ATL", "tear-off interfaces", "CComTearOffObject class"]
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3

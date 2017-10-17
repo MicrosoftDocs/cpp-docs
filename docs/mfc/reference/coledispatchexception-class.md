@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleDispatchException', 'AFXDISP/COleDispatchException', 'AFXDISP/COleDispatchException::m_dwHelpContext', 'AFXDISP/COleDispatchException::m_strDescription', 'AFXDISP/COleDispatchException::m_strHelpFile', 'AFXDISP/COleDispatchException::m_strSource', 'AFXDISP/COleDispatchException::m_wCode']
+f1_keywords: ["COleDispatchException", "AFXDISP/COleDispatchException", "AFXDISP/COleDispatchException::m_dwHelpContext", "AFXDISP/COleDispatchException::m_strDescription", "AFXDISP/COleDispatchException::m_strHelpFile", "AFXDISP/COleDispatchException::m_strSource", "AFXDISP/COleDispatchException::m_wCode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleDispatchException [MFC], m_dwHelpContext", "COleDispatchException [MFC], m_strDescription", "COleDispatchException [MFC], m_strHelpFile", "COleDispatchException [MFC], m_strSource", "COleDispatchException [MFC], m_wCode"]
 ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0

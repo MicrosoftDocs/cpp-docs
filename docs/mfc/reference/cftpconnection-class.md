@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CFtpConnection', 'AFXINET/CFtpConnection', 'AFXINET/CFtpConnection::CFtpConnection', 'AFXINET/CFtpConnection::Command', 'AFXINET/CFtpConnection::CreateDirectory', 'AFXINET/CFtpConnection::GetCurrentDirectory', 'AFXINET/CFtpConnection::GetCurrentDirectoryAsURL', 'AFXINET/CFtpConnection::GetFile', 'AFXINET/CFtpConnection::OpenFile', 'AFXINET/CFtpConnection::PutFile', 'AFXINET/CFtpConnection::Remove', 'AFXINET/CFtpConnection::RemoveDirectory', 'AFXINET/CFtpConnection::Rename', 'AFXINET/CFtpConnection::SetCurrentDirectory']
+f1_keywords: ["CFtpConnection", "AFXINET/CFtpConnection", "AFXINET/CFtpConnection::CFtpConnection", "AFXINET/CFtpConnection::Command", "AFXINET/CFtpConnection::CreateDirectory", "AFXINET/CFtpConnection::GetCurrentDirectory", "AFXINET/CFtpConnection::GetCurrentDirectoryAsURL", "AFXINET/CFtpConnection::GetFile", "AFXINET/CFtpConnection::OpenFile", "AFXINET/CFtpConnection::PutFile", "AFXINET/CFtpConnection::Remove", "AFXINET/CFtpConnection::RemoveDirectory", "AFXINET/CFtpConnection::Rename", "AFXINET/CFtpConnection::SetCurrentDirectory"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFtpConnection [MFC], CFtpConnection", "CFtpConnection [MFC], Command", "CFtpConnection [MFC], CreateDirectory", "CFtpConnection [MFC], GetCurrentDirectory", "CFtpConnection [MFC], GetCurrentDirectoryAsURL", "CFtpConnection [MFC], GetFile", "CFtpConnection [MFC], OpenFile", "CFtpConnection [MFC], PutFile", "CFtpConnection [MFC], Remove", "CFtpConnection [MFC], RemoveDirectory", "CFtpConnection [MFC], Rename", "CFtpConnection [MFC], SetCurrentDirectory"]
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936

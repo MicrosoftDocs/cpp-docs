@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleDropTarget', 'AFXOLE/COleDropTarget', 'AFXOLE/COleDropTarget::COleDropTarget', 'AFXOLE/COleDropTarget::OnDragEnter', 'AFXOLE/COleDropTarget::OnDragLeave', 'AFXOLE/COleDropTarget::OnDragOver', 'AFXOLE/COleDropTarget::OnDragScroll', 'AFXOLE/COleDropTarget::OnDrop', 'AFXOLE/COleDropTarget::OnDropEx', 'AFXOLE/COleDropTarget::Register', 'AFXOLE/COleDropTarget::Revoke']
+f1_keywords: ["COleDropTarget", "AFXOLE/COleDropTarget", "AFXOLE/COleDropTarget::COleDropTarget", "AFXOLE/COleDropTarget::OnDragEnter", "AFXOLE/COleDropTarget::OnDragLeave", "AFXOLE/COleDropTarget::OnDragOver", "AFXOLE/COleDropTarget::OnDragScroll", "AFXOLE/COleDropTarget::OnDrop", "AFXOLE/COleDropTarget::OnDropEx", "AFXOLE/COleDropTarget::Register", "AFXOLE/COleDropTarget::Revoke"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleDropTarget [MFC], COleDropTarget", "COleDropTarget [MFC], OnDragEnter", "COleDropTarget [MFC], OnDragLeave", "COleDropTarget [MFC], OnDragOver", "COleDropTarget [MFC], OnDragScroll", "COleDropTarget [MFC], OnDrop", "COleDropTarget [MFC], OnDropEx", "COleDropTarget [MFC], Register", "COleDropTarget [MFC], Revoke"]
 ms.assetid: a58c9a48-6a93-4357-b078-4594df258311

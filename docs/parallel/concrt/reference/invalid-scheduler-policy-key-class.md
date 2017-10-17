@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['invalid_scheduler_policy_key', 'CONCRT/concurrency::invalid_scheduler_policy_key', 'CONCRT/concurrency::invalid_scheduler_policy_key::invalid_scheduler_policy_key']
+f1_keywords: ["invalid_scheduler_policy_key", "CONCRT/concurrency::invalid_scheduler_policy_key", "CONCRT/concurrency::invalid_scheduler_policy_key::invalid_scheduler_policy_key"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_scheduler_policy_key class"]
 ms.assetid: 6a7c42fe-9bc4-4a02-bebb-99fe9ef9817d

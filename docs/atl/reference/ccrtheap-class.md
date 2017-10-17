@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CCRTHeap', 'ATLMEM/ATL::CCRTHeap', 'ATLMEM/ATL::CCRTHeap::Allocate', 'ATLMEM/ATL::CCRTHeap::Free', 'ATLMEM/ATL::CCRTHeap::GetSize', 'ATLMEM/ATL::CCRTHeap::Reallocate']
+f1_keywords: ["CCRTHeap", "ATLMEM/ATL::CCRTHeap", "ATLMEM/ATL::CCRTHeap::Allocate", "ATLMEM/ATL::CCRTHeap::Free", "ATLMEM/ATL::CCRTHeap::GetSize", "ATLMEM/ATL::CCRTHeap::Reallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CCRTHeap class"]
 ms.assetid: 321bd6c5-1856-4ff7-8590-95044a1209f7

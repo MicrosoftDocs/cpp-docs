@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IAtlStringMgr', 'ATLSIMPSTR/ATL::IAtlStringMgr', 'ATLSIMPSTR/ATL::Allocate', 'ATLSIMPSTR/ATL::Clone', 'ATLSIMPSTR/ATL::Free', 'ATLSIMPSTR/ATL::GetNilString', 'ATLSIMPSTR/ATL::Reallocate']
+f1_keywords: ["IAtlStringMgr", "ATLSIMPSTR/ATL::IAtlStringMgr", "ATLSIMPSTR/ATL::Allocate", "ATLSIMPSTR/ATL::Clone", "ATLSIMPSTR/ATL::Free", "ATLSIMPSTR/ATL::GetNilString", "ATLSIMPSTR/ATL::Reallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["shared classes, IAtlStringMgr", "memory, managing", "IAtlStringMgr class"]
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823

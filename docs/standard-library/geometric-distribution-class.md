@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["random/std::geometric_distribution", "random/std::geometric_distribution::reset", "random/std::geometric_distribution::p", "random/std::geometric_distribution::param", "random/std::geometric_distribution::min", "random/std::geometric_distribution::max", "random/std::geometric_distribution::operator()", "random/std::geometric_distribution::param_type", "random/std::geometric_distribution::param_type::p", "random/std::geometric_distribution::param_type::operator==", "random/std::geometric_distribution::param_type::operator!=", "random/std::geometric_distribution::param_type"]
+f1_keywords: ["random/std::geometric_distribution", "random/std::geometric_distribution::reset", "random/std::geometric_distribution::p", "random/std::geometric_distribution::param", "random/std::geometric_distribution::min", "random/std::geometric_distribution::max", "random/std::geometric_distribution::operator()", "random/std::geometric_distribution::param_type", "random/std::geometric_distribution::param_type::p", "random/std::geometric_distribution::param_type::operator==", "random/std::geometric_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::geometric_distribution [C++]", "std::geometric_distribution [C++], reset", "std::geometric_distribution [C++], p", "std::geometric_distribution [C++], param", "std::geometric_distribution [C++], min", "std::geometric_distribution [C++], max", "std::geometric_distribution [C++], param_type", "std::geometric_distribution [C++], param_type"]
 ms.assetid: 38f933af-3b49-492e-9d26-b6b272a60013

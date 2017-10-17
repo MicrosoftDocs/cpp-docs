@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['COLLECTION/Platform::Collections::VectorViewIterator::VectorViewIterator']
+f1_keywords: ["COLLECTION/Platform::Collections::VectorViewIterator::VectorViewIterator"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

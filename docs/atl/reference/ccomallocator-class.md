@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComAllocator', 'ATLBASE/ATL::CComAllocator', 'ATLBASE/ATL::CComAllocator::Allocate', 'ATLBASE/ATL::CComAllocator::Free', 'ATLBASE/ATL::CComAllocator::Reallocate']
+f1_keywords: ["CComAllocator", "ATLBASE/ATL::CComAllocator", "ATLBASE/ATL::CComAllocator::Allocate", "ATLBASE/ATL::CComAllocator::Free", "ATLBASE/ATL::CComAllocator::Reallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComAllocator class"]
 ms.assetid: 0cd706fd-0c7b-42d3-9054-febe2966fc8e

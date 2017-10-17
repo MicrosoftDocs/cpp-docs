@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CLinearTransition', 'AFXANIMATIONCONTROLLER/CLinearTransition', 'AFXANIMATIONCONTROLLER/CLinearTransition::CLinearTransition', 'AFXANIMATIONCONTROLLER/CLinearTransition::Create', 'AFXANIMATIONCONTROLLER/CLinearTransition::m_dblFinalValue', 'AFXANIMATIONCONTROLLER/CLinearTransition::m_duration']
+f1_keywords: ["CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::Create", "AFXANIMATIONCONTROLLER/CLinearTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CLinearTransition::m_duration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CLinearTransition [MFC], CLinearTransition", "CLinearTransition [MFC], Create", "CLinearTransition [MFC], m_dblFinalValue", "CLinearTransition [MFC], m_duration"]
 ms.assetid: 7fcb2dba-beb8-4933-9f5d-3b7fb1585ef0

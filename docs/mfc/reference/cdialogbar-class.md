@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDialogBar', 'AFXEXT/CDialogBar', 'AFXEXT/CDialogBar::CDialogBar', 'AFXEXT/CDialogBar::Create']
+f1_keywords: ["CDialogBar", "AFXEXT/CDialogBar", "AFXEXT/CDialogBar::CDialogBar", "AFXEXT/CDialogBar::Create"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDialogBar [MFC], CDialogBar", "CDialogBar [MFC], Create"]
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab

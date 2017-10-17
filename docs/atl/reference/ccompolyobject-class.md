@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComPolyObject', 'ATLCOM/ATL::CComPolyObject', 'ATLCOM/ATL::CComPolyObject::CComPolyObject', 'ATLCOM/ATL::CComPolyObject::AddRef', 'ATLCOM/ATL::CComPolyObject::CreateInstance', 'ATLCOM/ATL::CComPolyObject::FinalConstruct', 'ATLCOM/ATL::CComPolyObject::FinalRelease', 'ATLCOM/ATL::CComPolyObject::QueryInterface', 'ATLCOM/ATL::CComPolyObject::Release', 'ATLCOM/ATL::CComPolyObject::m_contained']
+f1_keywords: ["CComPolyObject", "ATLCOM/ATL::CComPolyObject", "ATLCOM/ATL::CComPolyObject::CComPolyObject", "ATLCOM/ATL::CComPolyObject::AddRef", "ATLCOM/ATL::CComPolyObject::CreateInstance", "ATLCOM/ATL::CComPolyObject::FinalConstruct", "ATLCOM/ATL::CComPolyObject::FinalRelease", "ATLCOM/ATL::CComPolyObject::QueryInterface", "ATLCOM/ATL::CComPolyObject::Release", "ATLCOM/ATL::CComPolyObject::m_contained"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["aggregate objects [C++], in ATL", "aggregation [C++], ATL objects", "CComPolyObject class"]
 ms.assetid: eaf67c18-e855-48ca-9b15-f1df3106121b

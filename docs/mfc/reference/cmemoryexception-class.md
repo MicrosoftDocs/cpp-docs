@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMemoryException', 'AFX/CMemoryException', 'AFX/CMemoryException::CMemoryException']
+f1_keywords: ["CMemoryException", "AFX/CMemoryException", "AFX/CMemoryException::CMemoryException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMemoryException [MFC], CMemoryException"]
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget::CHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget::Attach', 'AFXRENDERTARGET/CHwndRenderTarget::CheckWindowState', 'AFXRENDERTARGET/CHwndRenderTarget::Create', 'AFXRENDERTARGET/CHwndRenderTarget::Detach', 'AFXRENDERTARGET/CHwndRenderTarget::GetHwnd', 'AFXRENDERTARGET/CHwndRenderTarget::GetHwndRenderTarget', 'AFXRENDERTARGET/CHwndRenderTarget::ReCreate', 'AFXRENDERTARGET/CHwndRenderTarget::Resize', 'AFXRENDERTARGET/CHwndRenderTarget::m_pHwndRenderTarget']
+f1_keywords: ["CHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget::CHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget::Attach", "AFXRENDERTARGET/CHwndRenderTarget::CheckWindowState", "AFXRENDERTARGET/CHwndRenderTarget::Create", "AFXRENDERTARGET/CHwndRenderTarget::Detach", "AFXRENDERTARGET/CHwndRenderTarget::GetHwnd", "AFXRENDERTARGET/CHwndRenderTarget::GetHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget::ReCreate", "AFXRENDERTARGET/CHwndRenderTarget::Resize", "AFXRENDERTARGET/CHwndRenderTarget::m_pHwndRenderTarget"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CHwndRenderTarget [MFC], CHwndRenderTarget", "CHwndRenderTarget [MFC], Attach", "CHwndRenderTarget [MFC], CheckWindowState", "CHwndRenderTarget [MFC], Create", "CHwndRenderTarget [MFC], Detach", "CHwndRenderTarget [MFC], GetHwnd", "CHwndRenderTarget [MFC], GetHwndRenderTarget", "CHwndRenderTarget [MFC], ReCreate", "CHwndRenderTarget [MFC], Resize", "CHwndRenderTarget [MFC], m_pHwndRenderTarget"]
 ms.assetid: aa65b69f-7202-46ea-af81-ef325da0b840

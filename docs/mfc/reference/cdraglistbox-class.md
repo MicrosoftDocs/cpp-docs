@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDragListBox', 'AFXCMN/CDragListBox', 'AFXCMN/CDragListBox::CDragListBox', 'AFXCMN/CDragListBox::BeginDrag', 'AFXCMN/CDragListBox::CancelDrag', 'AFXCMN/CDragListBox::Dragging', 'AFXCMN/CDragListBox::DrawInsert', 'AFXCMN/CDragListBox::Dropped', 'AFXCMN/CDragListBox::ItemFromPt']
+f1_keywords: ["CDragListBox", "AFXCMN/CDragListBox", "AFXCMN/CDragListBox::CDragListBox", "AFXCMN/CDragListBox::BeginDrag", "AFXCMN/CDragListBox::CancelDrag", "AFXCMN/CDragListBox::Dragging", "AFXCMN/CDragListBox::DrawInsert", "AFXCMN/CDragListBox::Dropped", "AFXCMN/CDragListBox::ItemFromPt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDragListBox [MFC], CDragListBox", "CDragListBox [MFC], BeginDrag", "CDragListBox [MFC], CancelDrag", "CDragListBox [MFC], Dragging", "CDragListBox [MFC], DrawInsert", "CDragListBox [MFC], Dropped", "CDragListBox [MFC], ItemFromPt"]
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['affinity_partitioner', 'PPL/concurrency::affinity_partitioner', 'PPL/concurrency::affinity_partitioner::affinity_partitioner']
+f1_keywords: ["affinity_partitioner", "PPL/concurrency::affinity_partitioner", "PPL/concurrency::affinity_partitioner::affinity_partitioner"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["affinity_partitioner class"]
 ms.assetid: 31bf7bb1-bd01-491c-9760-d9d60edfccad

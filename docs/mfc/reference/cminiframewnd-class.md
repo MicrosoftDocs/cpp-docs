@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMiniFrameWnd', 'AFXWIN/CMiniFrameWnd', 'AFXWIN/CMiniFrameWnd::CMiniFrameWnd', 'AFXWIN/CMiniFrameWnd::Create', 'AFXWIN/CMiniFrameWnd::CreateEx']
+f1_keywords: ["CMiniFrameWnd", "AFXWIN/CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::Create", "AFXWIN/CMiniFrameWnd::CreateEx"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMiniFrameWnd [MFC], CMiniFrameWnd", "CMiniFrameWnd [MFC], Create", "CMiniFrameWnd [MFC], CreateEx"]
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749

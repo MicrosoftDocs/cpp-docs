@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CTimeSpan', 'ATLTIME/ATL::CTimeSpan', 'ATLTIME/ATL::CTimeSpan::CTimeSpan', 'ATLTIME/ATL::CTimeSpan::Format', 'ATLTIME/ATL::CTimeSpan::GetDays', 'ATLTIME/ATL::CTimeSpan::GetHours', 'ATLTIME/ATL::CTimeSpan::GetMinutes', 'ATLTIME/ATL::CTimeSpan::GetSeconds', 'ATLTIME/ATL::CTimeSpan::GetTimeSpan', 'ATLTIME/ATL::CTimeSpan::GetTotalHours', 'ATLTIME/ATL::CTimeSpan::GetTotalMinutes', 'ATLTIME/ATL::CTimeSpan::GetTotalSeconds', 'ATLTIME/ATL::CTimeSpan::Serialize64']
+f1_keywords: ["CTimeSpan", "ATLTIME/ATL::CTimeSpan", "ATLTIME/ATL::CTimeSpan::CTimeSpan", "ATLTIME/ATL::CTimeSpan::Format", "ATLTIME/ATL::CTimeSpan::GetDays", "ATLTIME/ATL::CTimeSpan::GetHours", "ATLTIME/ATL::CTimeSpan::GetMinutes", "ATLTIME/ATL::CTimeSpan::GetSeconds", "ATLTIME/ATL::CTimeSpan::GetTimeSpan", "ATLTIME/ATL::CTimeSpan::GetTotalHours", "ATLTIME/ATL::CTimeSpan::GetTotalMinutes", "ATLTIME/ATL::CTimeSpan::GetTotalSeconds", "ATLTIME/ATL::CTimeSpan::Serialize64"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["elapsed time, CTimeSpan object", "timespan", "time span", "CTimeSpan class", "shared classes, CTimeSpan", "time, elapsed"]
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140

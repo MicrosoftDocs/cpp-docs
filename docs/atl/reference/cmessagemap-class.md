@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMessageMap', 'ATLWIN/ATL::CMessageMap', 'ATLWIN/ATL::CMessageMap::ProcessWindowMessage']
+f1_keywords: ["CMessageMap", "ATLWIN/ATL::CMessageMap", "ATLWIN/ATL::CMessageMap::ProcessWindowMessage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMessageMap class", "message maps, ATL", "ATL, message handlers"]
 ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e

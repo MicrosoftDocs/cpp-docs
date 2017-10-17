@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CTooltipManager', 'AFXTOOLTIPMANAGER/CTooltipManager', 'AFXTOOLTIPMANAGER/CTooltipManager::CreateToolTip', 'AFXTOOLTIPMANAGER/CTooltipManager::DeleteToolTip', 'AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipParams', 'AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipText', 'AFXTOOLTIPMANAGER/CTooltipManager::UpdateTooltips']
+f1_keywords: ["CTooltipManager", "AFXTOOLTIPMANAGER/CTooltipManager", "AFXTOOLTIPMANAGER/CTooltipManager::CreateToolTip", "AFXTOOLTIPMANAGER/CTooltipManager::DeleteToolTip", "AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipParams", "AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipText", "AFXTOOLTIPMANAGER/CTooltipManager::UpdateTooltips"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CTooltipManager [MFC], CreateToolTip", "CTooltipManager [MFC], DeleteToolTip", "CTooltipManager [MFC], SetTooltipParams", "CTooltipManager [MFC], SetTooltipText", "CTooltipManager [MFC], UpdateTooltips"]
 ms.assetid: c71779d7-8b6e-47ef-8500-d4552731fe86

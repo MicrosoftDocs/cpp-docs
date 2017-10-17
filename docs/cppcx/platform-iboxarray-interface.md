@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['VCCORLIB/Namespace not found::Platform', 'VCCORLIB/Namespace not found::Platform::Value']
+f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Value"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

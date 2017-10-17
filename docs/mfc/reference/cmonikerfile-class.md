@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMonikerFile', 'AFXOLE/CMonikerFile', 'AFXOLE/CMonikerFile::CMonikerFile', 'AFXOLE/CMonikerFile::Close', 'AFXOLE/CMonikerFile::Detach', 'AFXOLE/CMonikerFile::GetMoniker', 'AFXOLE/CMonikerFile::Open', 'AFXOLE/CMonikerFile::CreateBindContext']
+f1_keywords: ["CMonikerFile", "AFXOLE/CMonikerFile", "AFXOLE/CMonikerFile::CMonikerFile", "AFXOLE/CMonikerFile::Close", "AFXOLE/CMonikerFile::Detach", "AFXOLE/CMonikerFile::GetMoniker", "AFXOLE/CMonikerFile::Open", "AFXOLE/CMonikerFile::CreateBindContext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMonikerFile [MFC], CMonikerFile", "CMonikerFile [MFC], Close", "CMonikerFile [MFC], Detach", "CMonikerFile [MFC], GetMoniker", "CMonikerFile [MFC], Open", "CMonikerFile [MFC], CreateBindContext"]
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['afxdisp/AfxOleInit', 'afxdisp/AfxEnableControlContainer']
+f1_keywords: ["afxdisp/AfxOleInit", "afxdisp/AfxEnableControlContainer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE initialization"]
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31

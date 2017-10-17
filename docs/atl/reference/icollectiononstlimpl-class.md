@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['ICollectionOnSTLImpl', 'ATLCOM/ATL::ICollectionOnSTLImpl', 'ATLCOM/ATL::ICollectionOnSTLImpl::get__NewEnum', 'ATLCOM/ATL::ICollectionOnSTLImpl::getcount', 'ATLCOM/ATL::ICollectionOnSTLImpl::get_Item', 'ATLCOM/ATL::ICollectionOnSTLImpl::m_coll']
+f1_keywords: ["ICollectionOnSTLImpl", "ATLCOM/ATL::ICollectionOnSTLImpl", "ATLCOM/ATL::ICollectionOnSTLImpl::get__NewEnum", "ATLCOM/ATL::ICollectionOnSTLImpl::getcount", "ATLCOM/ATL::ICollectionOnSTLImpl::get_Item", "ATLCOM/ATL::ICollectionOnSTLImpl::m_coll"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICollectionOnSTLImpl class"]
 ms.assetid: 683c88b0-0d97-4779-a762-e493334ba7f9

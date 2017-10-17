@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAtlComModule', 'ATLBASE/ATL::CAtlComModule', 'ATLBASE/ATL::CAtlComModule::CAtlComModule', 'ATLBASE/ATL::CAtlComModule::RegisterServer', 'ATLBASE/ATL::CAtlComModule::RegisterTypeLib', 'ATLBASE/ATL::CAtlComModule::UnregisterServer', 'ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib']
+f1_keywords: ["CAtlComModule", "ATLBASE/ATL::CAtlComModule", "ATLBASE/ATL::CAtlComModule::CAtlComModule", "ATLBASE/ATL::CAtlComModule::RegisterServer", "ATLBASE/ATL::CAtlComModule::RegisterTypeLib", "ATLBASE/ATL::CAtlComModule::UnregisterServer", "ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlComModule class"]
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75

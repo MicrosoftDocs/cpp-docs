@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleException', 'AFXDISP/COleException', 'AFXDISP/COleException::Process', 'AFXDISP/COleException::m_sc']
+f1_keywords: ["COleException", "AFXDISP/COleException", "AFXDISP/COleException::Process", "AFXDISP/COleException::m_sc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleException [MFC], Process", "COleException [MFC], m_sc"]
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['progress_reporter', 'PPLTASKS/concurrency::progress_reporter', 'PPLTASKS/concurrency::progress_reporter::progress_reporter', 'PPLTASKS/concurrency::progress_reporter::report']
+f1_keywords: ["progress_reporter", "PPLTASKS/concurrency::progress_reporter", "PPLTASKS/concurrency::progress_reporter::progress_reporter", "PPLTASKS/concurrency::progress_reporter::report"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["progress_reporter class"]
 ms.assetid: b836efab-2d05-4649-b6fa-d15236f1f813

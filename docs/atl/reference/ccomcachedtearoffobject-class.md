@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject::CComCachedTearOffObject', 'ATLCOM/ATL::CComCachedTearOffObject::AddRef', 'ATLCOM/ATL::CComCachedTearOffObject::FinalConstruct', 'ATLCOM/ATL::CComCachedTearOffObject::FinalRelease', 'ATLCOM/ATL::CComCachedTearOffObject::QueryInterface', 'ATLCOM/ATL::CComCachedTearOffObject::Release', 'ATLCOM/ATL::CComCachedTearOffObject::m_contained']
+f1_keywords: ["CComCachedTearOffObject", "ATLCOM/ATL::CComCachedTearOffObject", "ATLCOM/ATL::CComCachedTearOffObject::CComCachedTearOffObject", "ATLCOM/ATL::CComCachedTearOffObject::AddRef", "ATLCOM/ATL::CComCachedTearOffObject::FinalConstruct", "ATLCOM/ATL::CComCachedTearOffObject::FinalRelease", "ATLCOM/ATL::CComCachedTearOffObject::QueryInterface", "ATLCOM/ATL::CComCachedTearOffObject::Release", "ATLCOM/ATL::CComCachedTearOffObject::m_contained"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cache, ATL cached tear-off objects", "CComCachedTearOffObject class"]
 ms.assetid: ae19507d-a1de-4dbc-a988-da9f75a50c95

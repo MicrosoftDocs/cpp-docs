@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSyncObject', 'AFXMT/CSyncObject', 'AFXMT/CSyncObject::CSyncObject', 'AFXMT/CSyncObject::Lock', 'AFXMT/CSyncObject::Unlock', 'AFXMT/CSyncObject::m_hObject']
+f1_keywords: ["CSyncObject", "AFXMT/CSyncObject", "AFXMT/CSyncObject::CSyncObject", "AFXMT/CSyncObject::Lock", "AFXMT/CSyncObject::Unlock", "AFXMT/CSyncObject::m_hObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSyncObject [MFC], CSyncObject", "CSyncObject [MFC], Lock", "CSyncObject [MFC], Unlock", "CSyncObject [MFC], m_hObject"]
 ms.assetid: c62ea6eb-a17b-4e01-aed4-321fc435a5f4

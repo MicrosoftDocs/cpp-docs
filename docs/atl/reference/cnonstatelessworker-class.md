@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CNonStatelessWorker', 'ATLUTIL/ATL::CNonStatelessWorker', 'ATLUTIL/ATL::CNonStatelessWorker::RequestType', 'ATLUTIL/ATL::CNonStatelessWorker::Execute', 'ATLUTIL/ATL::CNonStatelessWorker::Initialize', 'ATLUTIL/ATL::CNonStatelessWorker::Terminate']
+f1_keywords: ["CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker::RequestType", "ATLUTIL/ATL::CNonStatelessWorker::Execute", "ATLUTIL/ATL::CNonStatelessWorker::Initialize", "ATLUTIL/ATL::CNonStatelessWorker::Terminate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CNonStatelessWorker class"]
 ms.assetid: d00936c6-9e7d-49fb-b87d-417b963367d1

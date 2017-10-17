@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CInvalidArgException', 'AFX/CInvalidArgException', 'AFX/CInvalidArgException::CInvalidArgException']
+f1_keywords: ["CInvalidArgException", "AFX/CInvalidArgException", "AFX/CInvalidArgException::CInvalidArgException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CInvalidArgException [MFC], CInvalidArgException"]
 ms.assetid: e43d7c67-1157-47f8-817a-804083e8186e

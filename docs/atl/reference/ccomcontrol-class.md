@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComControl', 'ATLCTL/ATL::CComControl', 'ATLCTL/ATL::CComControl::CComControl', 'ATLCTL/ATL::CComControl::ControlQueryInterface', 'ATLCTL/ATL::CComControl::CreateControlWindow', 'ATLCTL/ATL::CComControl::FireOnChanged', 'ATLCTL/ATL::CComControl::FireOnRequestEdit', 'ATLCTL/ATL::CComControl::MessageBox']
+f1_keywords: ["CComControl", "ATLCTL/ATL::CComControl", "ATLCTL/ATL::CComControl::CComControl", "ATLCTL/ATL::CComControl::ControlQueryInterface", "ATLCTL/ATL::CComControl::CreateControlWindow", "ATLCTL/ATL::CComControl::FireOnChanged", "ATLCTL/ATL::CComControl::FireOnRequestEdit", "ATLCTL/ATL::CComControl::MessageBox"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["control flags", "CComControlBase class, CComControl class", "stock properties, ATL", "CComControl class", "controls [ATL], control helper functions", "ambient properties", "controls [ATL], properties"]
 ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
