@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMDIChildWnd', 'AFXWIN/CMDIChildWnd', 'AFXWIN/CMDIChildWnd::CMDIChildWnd', 'AFXWIN/CMDIChildWnd::Create', 'AFXWIN/CMDIChildWnd::GetMDIFrame', 'AFXWIN/CMDIChildWnd::MDIActivate', 'AFXWIN/CMDIChildWnd::MDIDestroy', 'AFXWIN/CMDIChildWnd::MDIMaximize', 'AFXWIN/CMDIChildWnd::MDIRestore', 'AFXWIN/CMDIChildWnd::SetHandles']
+f1_keywords: ["CMDIChildWnd", "AFXWIN/CMDIChildWnd", "AFXWIN/CMDIChildWnd::CMDIChildWnd", "AFXWIN/CMDIChildWnd::Create", "AFXWIN/CMDIChildWnd::GetMDIFrame", "AFXWIN/CMDIChildWnd::MDIActivate", "AFXWIN/CMDIChildWnd::MDIDestroy", "AFXWIN/CMDIChildWnd::MDIMaximize", "AFXWIN/CMDIChildWnd::MDIRestore", "AFXWIN/CMDIChildWnd::SetHandles"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMDIChildWnd [MFC], CMDIChildWnd", "CMDIChildWnd [MFC], Create", "CMDIChildWnd [MFC], GetMDIFrame", "CMDIChildWnd [MFC], MDIActivate", "CMDIChildWnd [MFC], MDIDestroy", "CMDIChildWnd [MFC], MDIMaximize", "CMDIChildWnd [MFC], MDIRestore", "CMDIChildWnd [MFC], SetHandles"]
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5

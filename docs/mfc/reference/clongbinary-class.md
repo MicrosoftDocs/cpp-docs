@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CLongBinary', 'AFXDB_/CLongBinary', 'AFXDB_/CLongBinary::CLongBinary', 'AFXDB_/CLongBinary::m_dwDataLength', 'AFXDB_/CLongBinary::m_hData']
+f1_keywords: ["CLongBinary", "AFXDB_/CLongBinary", "AFXDB_/CLongBinary::CLongBinary", "AFXDB_/CLongBinary::m_dwDataLength", "AFXDB_/CLongBinary::m_hData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CLongBinary class [MFC]"]
 ms.assetid: f4320059-aeb4-4ee5-bc2b-25f19d898ef5

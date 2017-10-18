@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['ISpecifyPropertyPagesImpl', 'ATLCOM/ATL::ISpecifyPropertyPagesImpl', 'ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages']
+f1_keywords: ["ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["property pages, CLSIDs associated with", "ISpecifyPropertyPages", "ISpecifyPropertyPagesImpl class"]
 ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9

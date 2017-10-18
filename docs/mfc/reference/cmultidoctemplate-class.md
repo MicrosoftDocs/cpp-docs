@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMultiDocTemplate', 'AFXWIN/CMultiDocTemplate', 'AFXWIN/CMultiDocTemplate::CMultiDocTemplate']
+f1_keywords: ["CMultiDocTemplate", "AFXWIN/CMultiDocTemplate", "AFXWIN/CMultiDocTemplate::CMultiDocTemplate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMultiDocTemplate [MFC], CMultiDocTemplate"]
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119

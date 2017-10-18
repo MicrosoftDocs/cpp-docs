@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComAutoThreadModule', 'ATLBASE/ATL::CComAutoThreadModule', 'ATLBASE/ATL::CreateInstance', 'ATLBASE/ATL::GetDefaultThreads', 'ATLBASE/ATL::Init', 'ATLBASE/ATL::Lock', 'ATLBASE/ATL::Unlock', 'ATLBASE/ATL::dwThreadID', 'ATLBASE/ATL::m_Allocator', 'ATLBASE/ATL::m_nThreads', 'ATLBASE/ATL::m_pApartments']
+f1_keywords: ["CComAutoThreadModule", "ATLBASE/ATL::CComAutoThreadModule", "ATLBASE/ATL::CreateInstance", "ATLBASE/ATL::GetDefaultThreads", "ATLBASE/ATL::Init", "ATLBASE/ATL::Lock", "ATLBASE/ATL::Unlock", "ATLBASE/ATL::dwThreadID", "ATLBASE/ATL::m_Allocator", "ATLBASE/ATL::m_nThreads", "ATLBASE/ATL::m_pApartments"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComAutoThreadModule class", "apartment model modules"]
 ms.assetid: 13063ea5-a57e-4aac-97d3-227137262811

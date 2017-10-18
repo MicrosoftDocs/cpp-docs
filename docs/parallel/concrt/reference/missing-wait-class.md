@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['missing_wait', 'CONCRT/concurrency::missing_wait', 'CONCRT/concurrency::missing_wait::missing_wait']
+f1_keywords: ["missing_wait", "CONCRT/concurrency::missing_wait", "CONCRT/concurrency::missing_wait::missing_wait"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["missing_wait class"]
 ms.assetid: ff981875-bd43-47e3-806f-b03c9f418b18

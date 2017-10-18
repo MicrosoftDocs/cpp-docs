@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::CMFCRibbonFontComboBox', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::BuildFonts', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetCharSet', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontDesc', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontType', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts', 'AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont']
+f1_keywords: ["CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::BuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetCharSet", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontDesc", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontType", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonFontComboBox [MFC], CMFCRibbonFontComboBox", "CMFCRibbonFontComboBox [MFC], BuildFonts", "CMFCRibbonFontComboBox [MFC], GetCharSet", "CMFCRibbonFontComboBox [MFC], GetFontDesc", "CMFCRibbonFontComboBox [MFC], GetFontType", "CMFCRibbonFontComboBox [MFC], GetPitchAndFamily", "CMFCRibbonFontComboBox [MFC], RebuildFonts", "CMFCRibbonFontComboBox [MFC], SetFont"]
 ms.assetid: 33b4db50-df4f-45fa-8f05-2e6e73c31435

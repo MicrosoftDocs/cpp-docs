@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCRibbonMiniToolBar', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsContextMenuMode', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsRibbonMiniToolBar', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::SetCommands', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::Show', 'AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::ShowWithContextMenu']
+f1_keywords: ["CMFCRibbonMiniToolBar", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsContextMenuMode", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsRibbonMiniToolBar", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::SetCommands", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::Show", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::ShowWithContextMenu"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonMiniToolBar [MFC], IsContextMenuMode", "CMFCRibbonMiniToolBar [MFC], IsRibbonMiniToolBar", "CMFCRibbonMiniToolBar [MFC], SetCommands", "CMFCRibbonMiniToolBar [MFC], Show", "CMFCRibbonMiniToolBar [MFC], ShowWithContextMenu"]
 ms.assetid: 7017e963-aeaf-4fe9-b540-e15a7ed41e94

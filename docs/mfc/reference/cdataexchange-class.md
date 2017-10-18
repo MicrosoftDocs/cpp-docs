@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDataExchange', 'AFXWIN/CDataExchange', 'AFXWIN/CDataExchange::CDataExchange', 'AFXWIN/CDataExchange::Fail', 'AFXWIN/CDataExchange::PrepareCtrl', 'AFXWIN/CDataExchange::PrepareEditCtrl', 'AFXWIN/CDataExchange::PrepareOleCtrl', 'AFXWIN/CDataExchange::m_bSaveAndValidate', 'AFXWIN/CDataExchange::m_pDlgWnd']
+f1_keywords: ["CDataExchange", "AFXWIN/CDataExchange", "AFXWIN/CDataExchange::CDataExchange", "AFXWIN/CDataExchange::Fail", "AFXWIN/CDataExchange::PrepareCtrl", "AFXWIN/CDataExchange::PrepareEditCtrl", "AFXWIN/CDataExchange::PrepareOleCtrl", "AFXWIN/CDataExchange::m_bSaveAndValidate", "AFXWIN/CDataExchange::m_pDlgWnd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDataExchange [MFC], CDataExchange", "CDataExchange [MFC], Fail", "CDataExchange [MFC], PrepareCtrl", "CDataExchange [MFC], PrepareEditCtrl", "CDataExchange [MFC], PrepareOleCtrl", "CDataExchange [MFC], m_bSaveAndValidate", "CDataExchange [MFC], m_pDlgWnd"]
 ms.assetid: 84ed6113-325d-493e-a75d-223f03a992b8

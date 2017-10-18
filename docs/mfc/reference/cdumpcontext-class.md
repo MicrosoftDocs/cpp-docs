@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDumpContext', 'AFX/CDumpContext', 'AFX/CDumpContext::CDumpContext', 'AFX/CDumpContext::DumpAsHex', 'AFX/CDumpContext::Flush', 'AFX/CDumpContext::GetDepth', 'AFX/CDumpContext::HexDump', 'AFX/CDumpContext::SetDepth']
+f1_keywords: ["CDumpContext", "AFX/CDumpContext", "AFX/CDumpContext::CDumpContext", "AFX/CDumpContext::DumpAsHex", "AFX/CDumpContext::Flush", "AFX/CDumpContext::GetDepth", "AFX/CDumpContext::HexDump", "AFX/CDumpContext::SetDepth"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDumpContext [MFC], CDumpContext", "CDumpContext [MFC], DumpAsHex", "CDumpContext [MFC], Flush", "CDumpContext [MFC], GetDepth", "CDumpContext [MFC], HexDump", "CDumpContext [MFC], SetDepth"]
 ms.assetid: 98c52b2d-14b5-48ed-b423-479a4d1c60fa

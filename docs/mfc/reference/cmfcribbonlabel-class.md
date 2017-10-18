@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCRibbonLabel', 'AFXRIBBONLABEL/CMFCRibbonLabel', 'AFXRIBBONLABEL/CMFCRibbonLabel::CMFCRibbonLabel', 'AFXRIBBONLABEL/CMFCRibbonLabel::SetACCData']
+f1_keywords: ["CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::SetACCData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonLabel [MFC], CMFCRibbonLabel", "CMFCRibbonLabel [MFC], SetACCData"]
 ms.assetid: 0346c891-83bf-4f20-b8a1-c84cf2aadced

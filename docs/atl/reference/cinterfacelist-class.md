@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CInterfaceList', 'ATLCOLL/ATL::CInterfaceList', 'ATLCOLL/ATL::CInterfaceList::CInterfaceList']
+f1_keywords: ["CInterfaceList", "ATLCOLL/ATL::CInterfaceList", "ATLCOLL/ATL::CInterfaceList::CInterfaceList"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CInterfaceList class"]
 ms.assetid: 2077764d-25e5-4b3d-96c8-08a287bbcd25

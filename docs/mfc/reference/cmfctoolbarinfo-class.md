@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCToolBarInfo', 'AFXTOOLBAR/CMFCToolBarInfo', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiColdResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiDisabledResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiHotResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeColdResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeDisabledResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeHotResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuDisabledResID', 'AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuResID']
+f1_keywords: ["CMFCToolBarInfo", "AFXTOOLBAR/CMFCToolBarInfo", "AFXTOOLBAR/CMFCToolBarInfo::m_uiColdResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiDisabledResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiHotResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeColdResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeDisabledResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeHotResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuDisabledResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuResID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarInfo [MFC], m_uiColdResID", "CMFCToolBarInfo [MFC], m_uiDisabledResID", "CMFCToolBarInfo [MFC], m_uiHotResID", "CMFCToolBarInfo [MFC], m_uiLargeColdResID", "CMFCToolBarInfo [MFC], m_uiLargeDisabledResID", "CMFCToolBarInfo [MFC], m_uiLargeHotResID", "CMFCToolBarInfo [MFC], m_uiMenuDisabledResID", "CMFCToolBarInfo [MFC], m_uiMenuResID"]
 ms.assetid: 6dc84482-eaaa-491f-aa5d-dd7a57886b46

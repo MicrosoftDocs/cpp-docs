@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleIPFrameWnd', 'AFXOLE/COleIPFrameWnd', 'AFXOLE/COleIPFrameWnd::COleIPFrameWnd', 'AFXOLE/COleIPFrameWnd::OnCreateControlBars', 'AFXOLE/COleIPFrameWnd::RepositionFrame']
+f1_keywords: ["COleIPFrameWnd", "AFXOLE/COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::OnCreateControlBars", "AFXOLE/COleIPFrameWnd::RepositionFrame"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleIPFrameWnd [MFC], COleIPFrameWnd", "COleIPFrameWnd [MFC], OnCreateControlBars", "COleIPFrameWnd [MFC], RepositionFrame"]
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763

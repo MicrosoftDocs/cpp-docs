@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['AFXDISP/DDX_OCBool', 'AFXDISP/DDX_OCBoolRO', 'AFXDISP/DDX_OCColor', 'AFXDISP/DDX_OCColorRO', 'AFXDISP/DDX_OCFloat', 'AFXDISP/DDX_OCFloatRO', 'AFXDISP/DDX_OCInt', 'AFXDISP/DDX_OCIntRO', 'AFXDISP/DDX_OCShort', 'AFXDISP/DDX_OCShortRO', 'AFXDISP/DDX_OCText', 'AFXDISP/DDX_OCTextRO']
+f1_keywords: ["AFXDISP/DDX_OCBool", "AFXDISP/DDX_OCBoolRO", "AFXDISP/DDX_OCColor", "AFXDISP/DDX_OCColorRO", "AFXDISP/DDX_OCFloat", "AFXDISP/DDX_OCFloatRO", "AFXDISP/DDX_OCInt", "AFXDISP/DDX_OCIntRO", "AFXDISP/DDX_OCShort", "AFXDISP/DDX_OCShortRO", "AFXDISP/DDX_OCText", "AFXDISP/DDX_OCTextRO"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE controls [MFC], DDX functions", "DDX (dialog data exchange), OLE support"]
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27

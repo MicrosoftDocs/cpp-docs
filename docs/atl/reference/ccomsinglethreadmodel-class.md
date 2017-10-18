@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComSingleThreadModel', 'ATLBASE/ATL::CComSingleThreadModel', 'ATLBASE/ATL::CComSingleThreadModel::AutoCriticalSection', 'ATLBASE/ATL::CComSingleThreadModel::CriticalSection', 'ATLBASE/ATL::CComSingleThreadModel::ThreadModelNoCS', 'ATLBASE/ATL::CComSingleThreadModel::Decrement', 'ATLBASE/ATL::CComSingleThreadModel::Increment']
+f1_keywords: ["CComSingleThreadModel", "ATLBASE/ATL::CComSingleThreadModel", "ATLBASE/ATL::CComSingleThreadModel::AutoCriticalSection", "ATLBASE/ATL::CComSingleThreadModel::CriticalSection", "ATLBASE/ATL::CComSingleThreadModel::ThreadModelNoCS", "ATLBASE/ATL::CComSingleThreadModel::Decrement", "ATLBASE/ATL::CComSingleThreadModel::Increment"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["single-threaded applications", "CComSingleThreadModel class", "single-threaded applications, ATL"]
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['IUMSCompletionList', 'CONCRTRM/concurrency::IUMSCompletionList', 'CONCRTRM/concurrency::IUMSCompletionList::IUMSCompletionList::GetUnblockNotifications']
+f1_keywords: ["IUMSCompletionList", "CONCRTRM/concurrency::IUMSCompletionList", "CONCRTRM/concurrency::IUMSCompletionList::IUMSCompletionList::GetUnblockNotifications"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IUMSCompletionList structure"]
 ms.assetid: 81b5250e-3065-492c-b20d-2cdabf12271a

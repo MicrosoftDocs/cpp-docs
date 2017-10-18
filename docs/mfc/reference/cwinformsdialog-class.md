@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog::CWinFormsDialog', 'AFXWINFORMS/CWinFormsDialog::GetControl', 'AFXWINFORMS/CWinFormsDialog::GetControlHandle', 'AFXWINFORMS/CWinFormsDialog::OnInitDialog']
+f1_keywords: ["CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::GetControl", "AFXWINFORMS/CWinFormsDialog::GetControlHandle", "AFXWINFORMS/CWinFormsDialog::OnInitDialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CWinFormsDialog [MFC], CWinFormsDialog", "CWinFormsDialog [MFC], GetControl", "CWinFormsDialog [MFC], GetControlHandle", "CWinFormsDialog [MFC], OnInitDialog"]
 ms.assetid: e3cec000-a578-448e-b06a-8af256312f61

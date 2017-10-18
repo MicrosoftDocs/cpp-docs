@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['invalid_oversubscribe_operation', 'CONCRT/concurrency::invalid_oversubscribe_operation', 'CONCRT/concurrency::invalid_oversubscribe_operation::invalid_oversubscribe_operation']
+f1_keywords: ["invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation::invalid_oversubscribe_operation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_oversubscribe_operation class"]
 ms.assetid: 0a9c5f08-d5e6-4ad0-90a9-517472b3ac28

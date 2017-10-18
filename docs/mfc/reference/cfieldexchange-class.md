@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CFieldExchange', 'AFXDB/CFieldExchange', 'AFXDB/CFieldExchange::IsFieldType', 'AFXDB/CFieldExchange::SetFieldType']
+f1_keywords: ["CFieldExchange", "AFXDB/CFieldExchange", "AFXDB/CFieldExchange::IsFieldType", "AFXDB/CFieldExchange::SetFieldType"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFieldExchange [MFC], IsFieldType", "CFieldExchange [MFC], SetFieldType"]
 ms.assetid: 24c5c0b3-06a6-430e-9b6f-005a2c65e29f

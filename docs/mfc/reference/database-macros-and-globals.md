@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['AFXDB/AFX_ODBC_CALL', 'AFXDB/AFX_SQL_ASYNC', 'AFXDB/AFX_SQL_SYNC', 'AFXDB/AfxGetHENV']
+f1_keywords: ["AFXDB/AFX_ODBC_CALL", "AFXDB/AFX_SQL_ASYNC", "AFXDB/AFX_SQL_SYNC", "AFXDB/AfxGetHENV"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["global database functions [MFC]", "database macros [MFC]", "database globals [MFC]", "global functions [MFC], database functions", "macros [MFC], MFC database"]
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488

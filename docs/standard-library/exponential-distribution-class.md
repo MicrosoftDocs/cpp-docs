@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["random/std::exponential_distribution", "random/std::exponential_distribution::reset", "random/std::exponential_distribution::lambda", "random/std::exponential_distribution::param", "random/std::exponential_distribution::min", "random/std::exponential_distribution::max", "random/std::exponential_distribution::operator()", "random/std::exponential_distribution::param_type", "random/std::exponential_distribution::param_type::lambda", "random/std::exponential_distribution::param_type::operator==", "random/std::exponential_distribution::param_type::operator!=", "random/std::exponential_distribution::param_type"]
+f1_keywords: ["random/std::exponential_distribution", "random/std::exponential_distribution::reset", "random/std::exponential_distribution::lambda", "random/std::exponential_distribution::param", "random/std::exponential_distribution::min", "random/std::exponential_distribution::max", "random/std::exponential_distribution::operator()", "random/std::exponential_distribution::param_type", "random/std::exponential_distribution::param_type::lambda", "random/std::exponential_distribution::param_type::operator==", "random/std::exponential_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::exponential_distribution [C++]", "std::exponential_distribution [C++], reset", "std::exponential_distribution [C++], lambda", "std::exponential_distribution [C++], param", "std::exponential_distribution [C++], min", "std::exponential_distribution [C++], max", "std::exponential_distribution [C++], param_type", "std::exponential_distribution [C++], param_type"]
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9

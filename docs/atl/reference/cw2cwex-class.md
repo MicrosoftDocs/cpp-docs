@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CW2CWEX', 'ATLCONV/ATL::CW2CWEX', 'ATLCONV/ATL::CW2CWEX::CW2CWEX', 'ATLCONV/ATL::CW2CWEX::m_psz']
+f1_keywords: ["CW2CWEX", "ATLCONV/ATL::CW2CWEX", "ATLCONV/ATL::CW2CWEX::CW2CWEX", "ATLCONV/ATL::CW2CWEX::m_psz"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CW2CWEX class"]
 ms.assetid: d654b22b-05a6-410f-a0ec-9a2cbbb4cca7

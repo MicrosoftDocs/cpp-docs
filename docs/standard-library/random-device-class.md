@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["random/std::random_device", "random/std::random_device::min", "random/std::random_device::max", "random/std::random_device::entropy", "random/std::random_device::operator()", "random/std::random_device::entropy", "random/std::random_device::operator()"]
+f1_keywords: ["random/std::random_device", "random/std::random_device::min", "random/std::random_device::max", "random/std::random_device::entropy", "random/std::random_device::operator()"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::random_device [C++]", "std::random_device [C++], min", "std::random_device [C++], max", "std::random_device [C++], entropy", "std::random_device [C++], entropy"]
 ms.assetid: 4393d515-0cb6-4e0d-a2ba-c780f05dc1bf

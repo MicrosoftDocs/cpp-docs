@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDynamicChain', 'ATLWIN/ATL::CDynamicChain', 'ATLWIN/ATL::CDynamicChain::CDynamicChain', 'ATLWIN/ATL::CDynamicChain::CallChain', 'ATLWIN/ATL::CDynamicChain::RemoveChainEntry', 'ATLWIN/ATL::CDynamicChain::SetChainEntry']
+f1_keywords: ["CDynamicChain", "ATLWIN/ATL::CDynamicChain", "ATLWIN/ATL::CDynamicChain::CDynamicChain", "ATLWIN/ATL::CDynamicChain::CallChain", "ATLWIN/ATL::CDynamicChain::RemoveChainEntry", "ATLWIN/ATL::CDynamicChain::SetChainEntry"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message maps, chaining", "chaining message maps", "CDynamicChain class"]
 ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8

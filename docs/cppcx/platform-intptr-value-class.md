@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['VCCORLIB/PlatformIntPtr::IntPtr', 'VCCORLIB/PlatformIntPtr::op_explicit Operator', 'VCCORLIB/PlatformIntPtr::ToInt32']
+f1_keywords: ["VCCORLIB/PlatformIntPtr::IntPtr", "VCCORLIB/PlatformIntPtr::op_explicit Operator", "VCCORLIB/PlatformIntPtr::ToInt32"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

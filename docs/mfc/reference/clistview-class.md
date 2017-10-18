@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CListView', 'AFXCVIEW/CListView', 'AFXCVIEW/CListView::CListView', 'AFXCVIEW/CListView::GetListCtrl', 'AFXCVIEW/CListView::RemoveImageList']
+f1_keywords: ["CListView", "AFXCVIEW/CListView", "AFXCVIEW/CListView::CListView", "AFXCVIEW/CListView::GetListCtrl", "AFXCVIEW/CListView::RemoveImageList"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CListView [MFC], CListView", "CListView [MFC], GetListCtrl", "CListView [MFC], RemoveImageList"]
 ms.assetid: 7626bdb2-a1b8-4eab-b631-6743710a8432

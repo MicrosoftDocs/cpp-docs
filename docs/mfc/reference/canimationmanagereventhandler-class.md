@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CAnimationManagerEventHandler', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged', 'AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController']
+f1_keywords: ["CAnimationManagerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CAnimationManagerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationManagerEventHandler [MFC], CAnimationManagerEventHandler", "CAnimationManagerEventHandler [MFC], CreateInstance", "CAnimationManagerEventHandler [MFC], OnManagerStatusChanged", "CAnimationManagerEventHandler [MFC], SetAnimationController"]
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade

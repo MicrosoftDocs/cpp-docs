@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CFileException', 'AFX/CFileException', 'AFX/CFileException::CFileException', 'AFX/CFileException::ErrnoToException', 'AFX/CFileException::GetErrorMessage', 'AFX/CFileException::OsErrorToException', 'AFX/CFileException::ThrowErrno', 'AFX/CFileException::ThrowOsError', 'AFX/CFileException::m_cause', 'AFX/CFileException::m_lOsError', 'AFX/CFileException::m_strFileName']
+f1_keywords: ["CFileException", "AFX/CFileException", "AFX/CFileException::CFileException", "AFX/CFileException::ErrnoToException", "AFX/CFileException::GetErrorMessage", "AFX/CFileException::OsErrorToException", "AFX/CFileException::ThrowErrno", "AFX/CFileException::ThrowOsError", "AFX/CFileException::m_cause", "AFX/CFileException::m_lOsError", "AFX/CFileException::m_strFileName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFileException [MFC], CFileException", "CFileException [MFC], ErrnoToException", "CFileException [MFC], GetErrorMessage", "CFileException [MFC], OsErrorToException", "CFileException [MFC], ThrowErrno", "CFileException [MFC], ThrowOsError", "CFileException [MFC], m_cause", "CFileException [MFC], m_lOsError", "CFileException [MFC], m_strFileName"]
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f

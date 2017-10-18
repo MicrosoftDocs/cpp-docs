@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CStatic', 'AFXWIN/CStatic', 'AFXWIN/CStatic::CStatic', 'AFXWIN/CStatic::Create', 'AFXWIN/CStatic::DrawItem', 'AFXWIN/CStatic::GetBitmap', 'AFXWIN/CStatic::GetCursor', 'AFXWIN/CStatic::GetEnhMetaFile', 'AFXWIN/CStatic::GetIcon', 'AFXWIN/CStatic::SetBitmap', 'AFXWIN/CStatic::SetCursor', 'AFXWIN/CStatic::SetEnhMetaFile', 'AFXWIN/CStatic::SetIcon']
+f1_keywords: ["CStatic", "AFXWIN/CStatic", "AFXWIN/CStatic::CStatic", "AFXWIN/CStatic::Create", "AFXWIN/CStatic::DrawItem", "AFXWIN/CStatic::GetBitmap", "AFXWIN/CStatic::GetCursor", "AFXWIN/CStatic::GetEnhMetaFile", "AFXWIN/CStatic::GetIcon", "AFXWIN/CStatic::SetBitmap", "AFXWIN/CStatic::SetCursor", "AFXWIN/CStatic::SetEnhMetaFile", "AFXWIN/CStatic::SetIcon"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CStatic [MFC], CStatic", "CStatic [MFC], Create", "CStatic [MFC], DrawItem", "CStatic [MFC], GetBitmap", "CStatic [MFC], GetCursor", "CStatic [MFC], GetEnhMetaFile", "CStatic [MFC], GetIcon", "CStatic [MFC], SetBitmap", "CStatic [MFC], SetCursor", "CStatic [MFC], SetEnhMetaFile", "CStatic [MFC], SetIcon"]
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95

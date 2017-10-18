@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CRichEditCntrItem', 'AFXRICH/CRichEditCntrItem', 'AFXRICH/CRichEditCntrItem::CRichEditCntrItem', 'AFXRICH/CRichEditCntrItem::SyncToRichEditObject']
+f1_keywords: ["CRichEditCntrItem", "AFXRICH/CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::SyncToRichEditObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRichEditCntrItem [MFC], CRichEditCntrItem", "CRichEditCntrItem [MFC], SyncToRichEditObject"]
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b

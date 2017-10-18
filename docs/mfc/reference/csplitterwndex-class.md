@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSplitterWndEx', 'AFXSPLITTERWNDEX/CSplitterWndEx', 'AFXSPLITTERWNDEX/CSplitterWndEx::OnDrawSplitter']
+f1_keywords: ["CSplitterWndEx", "AFXSPLITTERWNDEX/CSplitterWndEx", "AFXSPLITTERWNDEX/CSplitterWndEx::OnDrawSplitter"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSplitterWndEx [MFC], OnDrawSplitter"]
 ms.assetid: 33e5eef3-05e1-4a07-a968-bf9207ce8598

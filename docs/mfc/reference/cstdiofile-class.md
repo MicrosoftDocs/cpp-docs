@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CStdioFile', 'AFX/CStdioFile', 'AFX/CStdioFile::CStdioFile', 'AFX/CStdioFile::Open', 'AFX/CStdioFile::ReadString', 'AFX/CStdioFile::Seek', 'AFX/CStdioFile::WriteString', 'AFX/CStdioFile::m_pStream']
+f1_keywords: ["CStdioFile", "AFX/CStdioFile", "AFX/CStdioFile::CStdioFile", "AFX/CStdioFile::Open", "AFX/CStdioFile::ReadString", "AFX/CStdioFile::Seek", "AFX/CStdioFile::WriteString", "AFX/CStdioFile::m_pStream"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CStdioFile [MFC], CStdioFile", "CStdioFile [MFC], Open", "CStdioFile [MFC], ReadString", "CStdioFile [MFC], Seek", "CStdioFile [MFC], WriteString", "CStdioFile [MFC], m_pStream"]
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15

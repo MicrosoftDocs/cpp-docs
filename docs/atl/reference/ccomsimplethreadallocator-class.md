@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComSimpleThreadAllocator', 'ATLBASE/ATL::CComSimpleThreadAllocator', 'ATLBASE/ATL::CComSimpleThreadAllocator::GetThread']
+f1_keywords: ["CComSimpleThreadAllocator", "ATLBASE/ATL::CComSimpleThreadAllocator", "ATLBASE/ATL::CComSimpleThreadAllocator::GetThread"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["threading [ATL], selecting threads", "ATL threads", "CComSimpleThreadAllocator class", "ATL threads, allocating"]
 ms.assetid: 66b2166a-8c50-49fd-b8e4-7f293470327d

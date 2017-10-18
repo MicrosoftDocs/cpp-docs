@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CException', 'AFX/CException', 'AFX/CException::CException', 'AFX/CException::Delete', 'AFX/CException::ReportError']
+f1_keywords: ["CException", "AFX/CException", "AFX/CException::CException", "AFX/CException::Delete", "AFX/CException::ReportError"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CException [MFC], CException", "CException [MFC], Delete", "CException [MFC], ReportError"]
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920

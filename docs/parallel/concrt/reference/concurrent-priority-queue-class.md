@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['concurrent_priority_queue', 'CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue', 'CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::concurrent_priority_queue', 'CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::clear', 'CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::empty', 'CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::get_allocator', 'CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::push', 'CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::size', 'CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::swap', 'CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::try_pop']
+f1_keywords: ["concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::concurrent_priority_queue", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::clear", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::empty", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::get_allocator", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::push", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::size", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::swap", "CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::try_pop"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_priority_queue class"]
 ms.assetid: 3e740381-0f4e-41fc-8b66-ad0bb55f17a3

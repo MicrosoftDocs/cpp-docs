@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock::scoped_lock', 'CONCRT/concurrency::reader_writer_lock::scoped_lock_read', 'CONCRT/concurrency::reader_writer_lock::reader_writer_lock', 'CONCRT/concurrency::reader_writer_lock::lock', 'CONCRT/concurrency::reader_writer_lock::lock_read', 'CONCRT/concurrency::reader_writer_lock::try_lock', 'CONCRT/concurrency::reader_writer_lock::try_lock_read', 'CONCRT/concurrency::reader_writer_lock::unlock']
+f1_keywords: ["reader_writer_lock", "CONCRT/concurrency::reader_writer_lock", "CONCRT/concurrency::reader_writer_lock::scoped_lock", "CONCRT/concurrency::reader_writer_lock::scoped_lock_read", "CONCRT/concurrency::reader_writer_lock::reader_writer_lock", "CONCRT/concurrency::reader_writer_lock::lock", "CONCRT/concurrency::reader_writer_lock::lock_read", "CONCRT/concurrency::reader_writer_lock::try_lock", "CONCRT/concurrency::reader_writer_lock::try_lock_read", "CONCRT/concurrency::reader_writer_lock::unlock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reader_writer_lock class"]
 ms.assetid: 91a59cd2-ca05-4b74-8398-d826d9f86736

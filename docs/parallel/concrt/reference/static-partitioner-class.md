@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['static_partitioner', 'PPL/concurrency::static_partitioner', 'PPL/concurrency::static_partitioner::static_partitioner']
+f1_keywords: ["static_partitioner", "PPL/concurrency::static_partitioner", "PPL/concurrency::static_partitioner::static_partitioner"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["static_partitioner class"]
 ms.assetid: 2b3dbdf0-6eb9-49f6-8639-03df1d974143

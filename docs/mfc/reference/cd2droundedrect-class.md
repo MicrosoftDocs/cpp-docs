@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CD2DRoundedRect', 'AFXRENDERTARGET/CD2DRoundedRect', 'AFXRENDERTARGET/CD2DRoundedRect::CD2DRoundedRect']
+f1_keywords: ["CD2DRoundedRect", "AFXRENDERTARGET/CD2DRoundedRect", "AFXRENDERTARGET/CD2DRoundedRect::CD2DRoundedRect"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DRoundedRect [MFC], CD2DRoundedRect"]
 ms.assetid: 06207fb5-e92b-41c0-bceb-b45d8f466531

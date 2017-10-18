@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComCoClass', 'ATLCOM/ATL::CComCoClass', 'ATLCOM/ATL::CComCoClass::CreateInstance', 'ATLCOM/ATL::CComCoClass::Error', 'ATLCOM/ATL::CComCoClass::GetObjectCLSID', 'ATLCOM/ATL::CComCoClass::GetObjectDescription']
+f1_keywords: ["CComCoClass", "ATLCOM/ATL::CComCoClass", "ATLCOM/ATL::CComCoClass::CreateInstance", "ATLCOM/ATL::CComCoClass::Error", "ATLCOM/ATL::CComCoClass::GetObjectCLSID", "ATLCOM/ATL::CComCoClass::GetObjectDescription"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComCoClass class", "aggregation [C++], aggregation models"]
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762

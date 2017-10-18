@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CTypedPtrArray', 'AFXTEMPL/CTypedPtrArray', 'AFXTEMPL/CTypedPtrArray::Add', 'AFXTEMPL/CTypedPtrArray::Append', 'AFXTEMPL/CTypedPtrArray::Copy', 'AFXTEMPL/CTypedPtrArray::ElementAt', 'AFXTEMPL/CTypedPtrArray::GetAt', 'AFXTEMPL/CTypedPtrArray::InsertAt', 'AFXTEMPL/CTypedPtrArray::SetAt', 'AFXTEMPL/CTypedPtrArray::SetAtGrow']
+f1_keywords: ["CTypedPtrArray", "AFXTEMPL/CTypedPtrArray", "AFXTEMPL/CTypedPtrArray::Add", "AFXTEMPL/CTypedPtrArray::Append", "AFXTEMPL/CTypedPtrArray::Copy", "AFXTEMPL/CTypedPtrArray::ElementAt", "AFXTEMPL/CTypedPtrArray::GetAt", "AFXTEMPL/CTypedPtrArray::InsertAt", "AFXTEMPL/CTypedPtrArray::SetAt", "AFXTEMPL/CTypedPtrArray::SetAtGrow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CTypedPtrArray [MFC], Add", "CTypedPtrArray [MFC], Append", "CTypedPtrArray [MFC], Copy", "CTypedPtrArray [MFC], ElementAt", "CTypedPtrArray [MFC], GetAt", "CTypedPtrArray [MFC], InsertAt", "CTypedPtrArray [MFC], SetAt", "CTypedPtrArray [MFC], SetAtGrow"]
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919

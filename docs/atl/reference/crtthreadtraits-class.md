@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CRTThreadTraits', 'ATLBASE/ATL::CRTThreadTraits', 'ATLBASE/ATL::CRTThreadTraits::CreateThread']
+f1_keywords: ["CRTThreadTraits", "ATLBASE/ATL::CRTThreadTraits", "ATLBASE/ATL::CRTThreadTraits::CreateThread"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRTThreadTraits class", "threading [ATL], creation functions", "threading [ATL], CRT threads"]
 ms.assetid: eb6e20b0-c2aa-4170-8e34-aaeeacc86343

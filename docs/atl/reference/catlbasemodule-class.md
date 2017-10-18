@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAtlBaseModule', 'ATLCORE/ATL::CAtlBaseModule', 'ATLCORE/ATL::CAtlBaseModule::CAtlBaseModule', 'ATLCORE/ATL::CAtlBaseModule::AddResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::GetHInstanceAt', 'ATLCORE/ATL::CAtlBaseModule::GetModuleInstance', 'ATLCORE/ATL::CAtlBaseModule::GetResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::RemoveResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::SetResourceInstance', 'ATLCORE/ATL::CAtlBaseModule::m_bInitFailed']
+f1_keywords: ["CAtlBaseModule", "ATLCORE/ATL::CAtlBaseModule", "ATLCORE/ATL::CAtlBaseModule::CAtlBaseModule", "ATLCORE/ATL::CAtlBaseModule::AddResourceInstance", "ATLCORE/ATL::CAtlBaseModule::GetHInstanceAt", "ATLCORE/ATL::CAtlBaseModule::GetModuleInstance", "ATLCORE/ATL::CAtlBaseModule::GetResourceInstance", "ATLCORE/ATL::CAtlBaseModule::RemoveResourceInstance", "ATLCORE/ATL::CAtlBaseModule::SetResourceInstance", "ATLCORE/ATL::CAtlBaseModule::m_bInitFailed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlBaseModule class"]
 ms.assetid: 55ade80c-9b0c-4c51-933e-2158436c1096

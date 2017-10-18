@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSettingsStoreSP', 'AFXSETTINGSSTORE/CSettingsStoreSP', 'AFXSETTINGSSTORE/CSettingsStoreSP::CSettingsStoreSP', 'AFXSETTINGSSTORE/CSettingsStoreSP::Create', 'AFXSETTINGSSTORE/CSettingsStoreSP::SetRuntimeClass']
+f1_keywords: ["CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP::CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP::Create", "AFXSETTINGSSTORE/CSettingsStoreSP::SetRuntimeClass"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSettingsStoreSP [MFC], CSettingsStoreSP", "CSettingsStoreSP [MFC], Create", "CSettingsStoreSP [MFC], SetRuntimeClass"]
 ms.assetid: bcd37f40-cfd4-4d17-a5ce-3bfabe995dcc

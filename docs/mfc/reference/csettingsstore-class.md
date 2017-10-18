@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSettingsStore', 'AFXSETTINGSSTORE/CSettingsStore', 'AFXSETTINGSSTORE/CSettingsStore::CSettingsStore', 'AFXSETTINGSSTORE/CSettingsStore::Close', 'AFXSETTINGSSTORE/CSettingsStore::CreateKey', 'AFXSETTINGSSTORE/CSettingsStore::DeleteKey', 'AFXSETTINGSSTORE/CSettingsStore::DeleteValue', 'AFXSETTINGSSTORE/CSettingsStore::Open', 'AFXSETTINGSSTORE/CSettingsStore::Read', 'AFXSETTINGSSTORE/CSettingsStore::Write']
+f1_keywords: ["CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore::CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore::Close", "AFXSETTINGSSTORE/CSettingsStore::CreateKey", "AFXSETTINGSSTORE/CSettingsStore::DeleteKey", "AFXSETTINGSSTORE/CSettingsStore::DeleteValue", "AFXSETTINGSSTORE/CSettingsStore::Open", "AFXSETTINGSSTORE/CSettingsStore::Read", "AFXSETTINGSSTORE/CSettingsStore::Write"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSettingsStore [MFC], CSettingsStore", "CSettingsStore [MFC], Close", "CSettingsStore [MFC], CreateKey", "CSettingsStore [MFC], DeleteKey", "CSettingsStore [MFC], DeleteValue", "CSettingsStore [MFC], Open", "CSettingsStore [MFC], Read", "CSettingsStore [MFC], Write"]
 ms.assetid: 0ea181de-a13e-4b29-b560-7c43838223ff
