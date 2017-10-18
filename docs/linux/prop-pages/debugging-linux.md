@@ -1,5 +1,5 @@
 ---
-title: "Remote GDB Debugger Properties (Linux)| Microsoft Docs"
+title: "Debugger Properties (Linux)| Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -20,10 +20,11 @@ f1_keywords:
   - VC.Project.LinuxDebugger.DebugChildProcesses
 ---
 
-# Remote GDB Debugger Properties (Linux)
+# C++ Debugging Properties (Linux)
 
 Property | Description | Choices
 --- | ---| ---
+Pre-Launch Command (MakeFile projects) | A command that is run on the shell before the debugging starts and before the debugger is running, and can be used to affect the debugging environment.
 Debugger Type | Specifies which code type to debug. | **Native Only**<br>
 Pre-Launch Command | A command that is run on the shell before the debugging starts and before the debugger is running, and can be used to affect the debugging environment.
 Program | The full path to the program to debug on the remote system. This is a path on the remote system. If left empty or unchanged it defaults to the current project output.
@@ -35,3 +36,6 @@ Remote Debugger Port Number | The port number on which the remote debugger serve
 Debugging Mode | Specifies how the debugger interfaces with gdb. In the gdb mode the debugger drives gdb over the shell on the remote system. In the gdbserver mode, gdb is running locally and connects to gdbserver running remotely. | **gdbserver**<br>**gdb**<br>
 Additional Symbol Search Paths | Additional search path for debug symbols (solib-search-path).
 Debug Child Processes | Specifies whether to enable debugging of child processes.
+Enable Python Pretty Printing | Enable pretty printing of expression values. Only supported in gdb debugging mode.
+Visualization File | Default native visualization file (.natvis) containing visualization directives for SLT types. Other .natvis files that belong to the current solution will be loaded automatically.
+Additional Sources File Path Map (MakFile projects) | Additional path equivalences for the debugger to use to map Windows source file names to Linux source file names. The format is "\<windows-path>=\<linux-path>;...". A source file name found under the Windows path will be referenced as if is has been found in the same relative position under the Linux path. Files found in the local project do not require additional mapping.

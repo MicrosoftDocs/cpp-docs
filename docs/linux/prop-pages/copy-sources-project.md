@@ -1,5 +1,5 @@
 ---
-title: "Remote Copy Sources Project Properties (Linux C++) | Microsoft Docs"
+title: "Copy Sources Project Properties (Linux C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -16,7 +16,7 @@ f1_keywords:
   - VC.Project.VCConfiguration.BuildLogFile
 ---
 
-# Remote Copy Sources Project Properties (Linux C++)
+# Copy Sources Project Properties (Linux C++)
 The properties set on this property page apply to all files in the project except whose file-level properties are set.
 
 Property | Description
