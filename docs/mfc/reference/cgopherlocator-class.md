@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CGopherLocator', 'AFXINET/CGopherLocator', 'AFXINET/CGopherLocator::CGopherLocator', 'AFXINET/CGopherLocator::GetLocatorType']
+f1_keywords: ["CGopherLocator", "AFXINET/CGopherLocator", "AFXINET/CGopherLocator::CGopherLocator", "AFXINET/CGopherLocator::GetLocatorType"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CGopherLocator [MFC], CGopherLocator", "CGopherLocator [MFC], GetLocatorType"]
 ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019

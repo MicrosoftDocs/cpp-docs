@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['ICommandTarget', 'AFXWINFORMS/ICommandTarget', 'AFXWINFORMS/ICommandTarget::Initialize']
+f1_keywords: ["ICommandTarget", "AFXWINFORMS/ICommandTarget", "AFXWINFORMS/ICommandTarget::Initialize"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandTarget interface [MFC]"]
 ms.assetid: dd9927f6-3479-4e7c-8ef9-13206cf901f3

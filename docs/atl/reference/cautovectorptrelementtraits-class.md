@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAutoVectorPtrElementTraits', 'ATLCOLL/ATL::CAutoVectorPtrElementTraits', 'ATLCOLL/ATL::CAutoVectorPtrElementTraits::INARGTYPE', 'ATLCOLL/ATL::CAutoVectorPtrElementTraits::OUTARGTYPE']
+f1_keywords: ["CAutoVectorPtrElementTraits", "ATLCOLL/ATL::CAutoVectorPtrElementTraits", "ATLCOLL/ATL::CAutoVectorPtrElementTraits::INARGTYPE", "ATLCOLL/ATL::CAutoVectorPtrElementTraits::OUTARGTYPE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoVectorPtrElementTraits class"]
 ms.assetid: 16b81a56-55fb-46ca-b376-66a1884231a6

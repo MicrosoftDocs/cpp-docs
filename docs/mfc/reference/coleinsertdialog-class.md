@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleInsertDialog', 'AFXODLGS/COleInsertDialog', 'AFXODLGS/COleInsertDialog::COleInsertDialog', 'AFXODLGS/COleInsertDialog::CreateItem', 'AFXODLGS/COleInsertDialog::DoModal', 'AFXODLGS/COleInsertDialog::GetClassID', 'AFXODLGS/COleInsertDialog::GetDrawAspect', 'AFXODLGS/COleInsertDialog::GetIconicMetafile', 'AFXODLGS/COleInsertDialog::GetPathName', 'AFXODLGS/COleInsertDialog::GetSelectionType', 'AFXODLGS/COleInsertDialog::m_io']
+f1_keywords: ["COleInsertDialog", "AFXODLGS/COleInsertDialog", "AFXODLGS/COleInsertDialog::COleInsertDialog", "AFXODLGS/COleInsertDialog::CreateItem", "AFXODLGS/COleInsertDialog::DoModal", "AFXODLGS/COleInsertDialog::GetClassID", "AFXODLGS/COleInsertDialog::GetDrawAspect", "AFXODLGS/COleInsertDialog::GetIconicMetafile", "AFXODLGS/COleInsertDialog::GetPathName", "AFXODLGS/COleInsertDialog::GetSelectionType", "AFXODLGS/COleInsertDialog::m_io"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleInsertDialog [MFC], COleInsertDialog", "COleInsertDialog [MFC], CreateItem", "COleInsertDialog [MFC], DoModal", "COleInsertDialog [MFC], GetClassID", "COleInsertDialog [MFC], GetDrawAspect", "COleInsertDialog [MFC], GetIconicMetafile", "COleInsertDialog [MFC], GetPathName", "COleInsertDialog [MFC], GetSelectionType", "COleInsertDialog [MFC], m_io"]
 ms.assetid: a9ec610b-abde-431e-bd01-c40159a66dbb

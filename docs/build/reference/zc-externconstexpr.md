@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "9/29/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
+ms.technology: 
   - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComObject', 'ATLCOM/ATL::CComObject', 'ATLCOM/ATL::CComObject::CComObject', 'ATLCOM/ATL::CComObject::AddRef', 'ATLCOM/ATL::CComObject::CreateInstance', 'ATLCOM/ATL::CComObject::QueryInterface', 'ATLCOM/ATL::CComObject::Release']
+f1_keywords: ["CComObject", "ATLCOM/ATL::CComObject", "ATLCOM/ATL::CComObject::CComObject", "ATLCOM/ATL::CComObject::AddRef", "ATLCOM/ATL::CComObject::CreateInstance", "ATLCOM/ATL::CComObject::QueryInterface", "ATLCOM/ATL::CComObject::Release"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComObject class"]
 ms.assetid: e2b6433b-6349-4749-b4bc-acbd7a22c8b0

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCSpinButtonCtrl', 'AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl', 'AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl::OnDraw']
+f1_keywords: ["CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl::OnDraw"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCSpinButtonCtrl [MFC], OnDraw"]
 ms.assetid: 8773f259-4d3f-4bca-a71c-09e0c71bc843

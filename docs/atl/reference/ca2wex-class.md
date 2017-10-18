@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CA2WEX', 'ATLCONV/ATL::CA2WEX', 'ATLCONV/ATL::CA2WEX::CA2WEX', 'ATLCONV/ATL::CA2WEX::m_psz', 'ATLCONV/ATL::CA2WEX::m_szBuffer']
+f1_keywords: ["CA2WEX", "ATLCONV/ATL::CA2WEX", "ATLCONV/ATL::CA2WEX::CA2WEX", "ATLCONV/ATL::CA2WEX::m_psz", "ATLCONV/ATL::CA2WEX::m_szBuffer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CA2WEX class"]
 ms.assetid: 317d9ffb-e84f-47e8-beda-57e28fb19124

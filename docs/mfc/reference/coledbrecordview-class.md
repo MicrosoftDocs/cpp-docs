@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleDBRecordView', 'AFXOLEDB/COleDBRecordView', 'AFXOLEDB/COleDBRecordView::COleDBRecordView', 'AFXOLEDB/COleDBRecordView::OnGetRowset', 'AFXOLEDB/COleDBRecordView::OnMove']
+f1_keywords: ["COleDBRecordView", "AFXOLEDB/COleDBRecordView", "AFXOLEDB/COleDBRecordView::COleDBRecordView", "AFXOLEDB/COleDBRecordView::OnGetRowset", "AFXOLEDB/COleDBRecordView::OnMove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleDBRecordView [MFC], COleDBRecordView", "COleDBRecordView [MFC], OnGetRowset", "COleDBRecordView [MFC], OnMove"]
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9

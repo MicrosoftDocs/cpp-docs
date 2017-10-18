@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSimpleArray', 'ATLSIMPCOLL/ATL::CSimpleArray', 'ATLSIMPCOLL/ATL::CSimpleArray::CSimpleArray', 'ATLSIMPCOLL/ATL::CSimpleArray::Add', 'ATLSIMPCOLL/ATL::CSimpleArray::Find', 'ATLSIMPCOLL/ATL::CSimpleArray::GetData', 'ATLSIMPCOLL/ATL::CSimpleArray::GetSize', 'ATLSIMPCOLL/ATL::CSimpleArray::Remove', 'ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll', 'ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt', 'ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex']
+f1_keywords: ["CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::Add", "ATLSIMPCOLL/ATL::CSimpleArray::Find", "ATLSIMPCOLL/ATL::CSimpleArray::GetData", "ATLSIMPCOLL/ATL::CSimpleArray::GetSize", "ATLSIMPCOLL/ATL::CSimpleArray::Remove", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt", "ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleArray class"]
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a

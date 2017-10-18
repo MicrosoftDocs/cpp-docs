@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCImageEditorDialog', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog::CMFCImageEditorDialog']
+f1_keywords: ["CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog::CMFCImageEditorDialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCImageEditorDialog [MFC], CMFCImageEditorDialog"]
 ms.assetid: 6a7d08f3-1ec2-4062-9b79-a0c2776b58d1

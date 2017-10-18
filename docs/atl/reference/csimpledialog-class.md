@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSimpleDialog', 'ATLWIN/ATL::CSimpleDialog', 'ATLWIN/ATL::CSimpleDialog::DoModal']
+f1_keywords: ["CSimpleDialog", "ATLWIN/ATL::CSimpleDialog", "ATLWIN/ATL::CSimpleDialog::DoModal"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleDialog class", "CSimpleDialog class, modal dialog boxes in ATL", "dialog boxes, modal", "modal dialog boxes, ATL"]
 ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf

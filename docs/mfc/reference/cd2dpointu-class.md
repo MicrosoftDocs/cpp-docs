@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CD2DPointU', 'AFXRENDERTARGET/CD2DPointU', 'AFXRENDERTARGET/CD2DPointU::CD2DPointU']
+f1_keywords: ["CD2DPointU", "AFXRENDERTARGET/CD2DPointU", "AFXRENDERTARGET/CD2DPointU::CD2DPointU"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DPointU [MFC], CD2DPointU"]
 ms.assetid: 04733f96-b6de-4a89-82e3-caad1e8087a9

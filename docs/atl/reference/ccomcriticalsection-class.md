@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComCriticalSection', 'ATLCORE/ATL::CComCriticalSection', 'ATLCORE/ATL::CComCriticalSection::CComCriticalSection', 'ATLCORE/ATL::CComCriticalSection::Init', 'ATLCORE/ATL::CComCriticalSection::Lock', 'ATLCORE/ATL::CComCriticalSection::Term', 'ATLCORE/ATL::CComCriticalSection::Unlock', 'ATLCORE/ATL::CComCriticalSection::m_sec']
+f1_keywords: ["CComCriticalSection", "ATLCORE/ATL::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::Init", "ATLCORE/ATL::CComCriticalSection::Lock", "ATLCORE/ATL::CComCriticalSection::Term", "ATLCORE/ATL::CComCriticalSection::Unlock", "ATLCORE/ATL::CComCriticalSection::m_sec"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComCriticalSection class"]
 ms.assetid: 44e1edd2-90be-4bfe-9739-58e8b419e7d1

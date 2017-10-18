@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSpinButtonCtrl', 'AFXCMN/CSpinButtonCtrl', 'AFXCMN/CSpinButtonCtrl::CSpinButtonCtrl', 'AFXCMN/CSpinButtonCtrl::Create', 'AFXCMN/CSpinButtonCtrl::CreateEx', 'AFXCMN/CSpinButtonCtrl::GetAccel', 'AFXCMN/CSpinButtonCtrl::GetBase', 'AFXCMN/CSpinButtonCtrl::GetBuddy', 'AFXCMN/CSpinButtonCtrl::GetPos', 'AFXCMN/CSpinButtonCtrl::GetRange', 'AFXCMN/CSpinButtonCtrl::SetAccel', 'AFXCMN/CSpinButtonCtrl::SetBase', 'AFXCMN/CSpinButtonCtrl::SetBuddy', 'AFXCMN/CSpinButtonCtrl::SetPos', 'AFXCMN/CSpinButtonCtrl::SetRange']
+f1_keywords: ["CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl::CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl::Create", "AFXCMN/CSpinButtonCtrl::CreateEx", "AFXCMN/CSpinButtonCtrl::GetAccel", "AFXCMN/CSpinButtonCtrl::GetBase", "AFXCMN/CSpinButtonCtrl::GetBuddy", "AFXCMN/CSpinButtonCtrl::GetPos", "AFXCMN/CSpinButtonCtrl::GetRange", "AFXCMN/CSpinButtonCtrl::SetAccel", "AFXCMN/CSpinButtonCtrl::SetBase", "AFXCMN/CSpinButtonCtrl::SetBuddy", "AFXCMN/CSpinButtonCtrl::SetPos", "AFXCMN/CSpinButtonCtrl::SetRange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSpinButtonCtrl [MFC], CSpinButtonCtrl", "CSpinButtonCtrl [MFC], Create", "CSpinButtonCtrl [MFC], CreateEx", "CSpinButtonCtrl [MFC], GetAccel", "CSpinButtonCtrl [MFC], GetBase", "CSpinButtonCtrl [MFC], GetBuddy", "CSpinButtonCtrl [MFC], GetPos", "CSpinButtonCtrl [MFC], GetRange", "CSpinButtonCtrl [MFC], SetAccel", "CSpinButtonCtrl [MFC], SetBase", "CSpinButtonCtrl [MFC], SetBuddy", "CSpinButtonCtrl [MFC], SetPos", "CSpinButtonCtrl [MFC], SetRange"]
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSimpleArrayEqualHelperFalse', 'ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse', 'ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse::IsEqual']
+f1_keywords: ["CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse::IsEqual"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleArrayEqualHelperFalse class"]
 ms.assetid: 6918af6f-d23d-49eb-8482-c44272f5ffeb

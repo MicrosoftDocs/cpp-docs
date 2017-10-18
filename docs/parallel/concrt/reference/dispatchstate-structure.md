@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['DispatchState', 'CONCRTRM/concurrency::DispatchState', 'CONCRTRM/concurrency::DispatchState::DispatchState::DispatchState', 'CONCRTRM/concurrency::DispatchState::DispatchState::m_dispatchStateSize', 'CONCRTRM/concurrency::DispatchState::DispatchState::m_fIsPreviousContextAsynchronouslyBlocked', 'CONCRTRM/concurrency::DispatchState::DispatchState::m_reserved']
+f1_keywords: ["DispatchState", "CONCRTRM/concurrency::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::m_dispatchStateSize", "CONCRTRM/concurrency::DispatchState::DispatchState::m_fIsPreviousContextAsynchronouslyBlocked", "CONCRTRM/concurrency::DispatchState::DispatchState::m_reserved"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DispatchState structure"]
 ms.assetid: 8c52546e-1650-48a0-985f-7e4a0fc26a90

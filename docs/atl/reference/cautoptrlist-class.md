@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAutoPtrList', 'ATLCOLL/ATL::CAutoPtrList', 'ATLCOLL/ATL::CAutoPtrList::CAutoPtrList']
+f1_keywords: ["CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList::CAutoPtrList"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoPtrList class"]
 ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd

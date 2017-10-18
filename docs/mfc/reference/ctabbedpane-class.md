@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CTabbedPane', 'AFXTABBEDPANE/CTabbedPane', 'AFXTABBEDPANE/CTabbedPane::DetachPane', 'AFXTABBEDPANE/CTabbedPane::EnableTabAutoColor', 'AFXTABBEDPANE/CTabbedPane::FloatTab', 'AFXTABBEDPANE/CTabbedPane::GetTabArea', 'AFXTABBEDPANE/CTabbedPane::GetTabWnd', 'AFXTABBEDPANE/CTabbedPane::HasAutoHideMode', 'AFXTABBEDPANE/CTabbedPane::IsTabLocationBottom', 'AFXTABBEDPANE/CTabbedPane::ResetTabs', 'AFXTABBEDPANE/CTabbedPane::SetTabAutoColors', 'AFXTABBEDPANE/CTabbedPane::m_bTabsAlwaysTop', 'AFXTABBEDPANE/CTabbedPane::m_pTabWndRTC']
+f1_keywords: ["CTabbedPane", "AFXTABBEDPANE/CTabbedPane", "AFXTABBEDPANE/CTabbedPane::DetachPane", "AFXTABBEDPANE/CTabbedPane::EnableTabAutoColor", "AFXTABBEDPANE/CTabbedPane::FloatTab", "AFXTABBEDPANE/CTabbedPane::GetTabArea", "AFXTABBEDPANE/CTabbedPane::GetTabWnd", "AFXTABBEDPANE/CTabbedPane::HasAutoHideMode", "AFXTABBEDPANE/CTabbedPane::IsTabLocationBottom", "AFXTABBEDPANE/CTabbedPane::ResetTabs", "AFXTABBEDPANE/CTabbedPane::SetTabAutoColors", "AFXTABBEDPANE/CTabbedPane::m_bTabsAlwaysTop", "AFXTABBEDPANE/CTabbedPane::m_pTabWndRTC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CTabbedPane [MFC], DetachPane", "CTabbedPane [MFC], EnableTabAutoColor", "CTabbedPane [MFC], FloatTab", "CTabbedPane [MFC], GetTabArea", "CTabbedPane [MFC], GetTabWnd", "CTabbedPane [MFC], HasAutoHideMode", "CTabbedPane [MFC], IsTabLocationBottom", "CTabbedPane [MFC], ResetTabs", "CTabbedPane [MFC], SetTabAutoColors", "CTabbedPane [MFC], m_bTabsAlwaysTop", "CTabbedPane [MFC], m_pTabWndRTC"]
 ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578

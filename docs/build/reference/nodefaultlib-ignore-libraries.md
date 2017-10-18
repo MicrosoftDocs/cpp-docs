@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCLinkerTool.IgnoreAllDefaultLibraries", "VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames", "/nodefaultlib"]
+f1_keywords: ["VC.Project.VCLinkerTool.OVERWRITEAllDefaultLibraries", "VC.Project.VCLinkerTool.OVERWRITEDefaultLibraryNames", "/nodefaultlib"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["default libraries, removing", "-NODEFAULTLIB linker option", "libraries, ignore", "NODEFAULTLIB linker option", "/NODEFAULTLIB linker option", "ignore libraries linker option"]
 ms.assetid: 7270b673-6711-468e-97a7-c2925ac2be6e

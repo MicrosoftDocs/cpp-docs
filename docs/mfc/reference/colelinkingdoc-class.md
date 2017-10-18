@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleLinkingDoc', 'AFXOLE/COleLinkingDoc', 'AFXOLE/COleLinkingDoc::COleLinkingDoc', 'AFXOLE/COleLinkingDoc::Register', 'AFXOLE/COleLinkingDoc::Revoke', 'AFXOLE/COleLinkingDoc::OnFindEmbeddedItem', 'AFXOLE/COleLinkingDoc::OnGetLinkedItem']
+f1_keywords: ["COleLinkingDoc", "AFXOLE/COleLinkingDoc", "AFXOLE/COleLinkingDoc::COleLinkingDoc", "AFXOLE/COleLinkingDoc::Register", "AFXOLE/COleLinkingDoc::Revoke", "AFXOLE/COleLinkingDoc::OnFindEmbeddedItem", "AFXOLE/COleLinkingDoc::OnGetLinkedItem"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleLinkingDoc [MFC], COleLinkingDoc", "COleLinkingDoc [MFC], Register", "COleLinkingDoc [MFC], Revoke", "COleLinkingDoc [MFC], OnFindEmbeddedItem", "COleLinkingDoc [MFC], OnGetLinkedItem"]
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b

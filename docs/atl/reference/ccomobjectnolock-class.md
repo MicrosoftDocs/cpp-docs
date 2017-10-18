@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComObjectNoLock', 'ATLCOM/ATL::CComObjectNoLock', 'ATLCOM/ATL::CComObjectNoLock::CComObjectNoLock', 'ATLCOM/ATL::CComObjectNoLock::AddRef', 'ATLCOM/ATL::CComObjectNoLock::QueryInterface', 'ATLCOM/ATL::CComObjectNoLock::Release']
+f1_keywords: ["CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock::CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock::AddRef", "ATLCOM/ATL::CComObjectNoLock::QueryInterface", "ATLCOM/ATL::CComObjectNoLock::Release"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CComObjectNoLock class"]
 ms.assetid: 288c6506-7da8-4127-8d58-7f4bd779539a

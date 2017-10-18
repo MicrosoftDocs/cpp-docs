@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['short_vector', 'AMP_SHORT_VECTORS/short_vector', 'AMP_SHORT_VECTORS/Concurrency::graphics::short_vector::short_vector Constructor']
+f1_keywords: ["short_vector", "AMP_SHORT_VECTORS/short_vector", "AMP_SHORT_VECTORS/Concurrency::graphics::short_vector::short_vector Constructor"]
 dev_langs: ["C++"]
 ms.assetid: e4f50b8f-1150-437d-b58c-79c5fb883708
 caps.latest.revision: 7

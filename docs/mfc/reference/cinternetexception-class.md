@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CInternetException', 'AFXINET/CInternetException', 'AFXINET/CInternetException::CInternetException', 'AFXINET/CInternetException::m_dwContext', 'AFXINET/CInternetException::m_dwError']
+f1_keywords: ["CInternetException", "AFXINET/CInternetException", "AFXINET/CInternetException::CInternetException", "AFXINET/CInternetException::m_dwContext", "AFXINET/CInternetException::m_dwError"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CInternetException [MFC], CInternetException", "CInternetException [MFC], m_dwContext", "CInternetException [MFC], m_dwError"]
 ms.assetid: 44fb3cbe-523e-4754-8843-a77909990b14

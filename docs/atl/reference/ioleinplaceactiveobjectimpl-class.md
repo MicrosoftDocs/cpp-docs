@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IOleInPlaceActiveObjectImpl', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ContextSensitiveHelp', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::EnableModeless', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::GetWindow', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnDocWindowActivate', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnFrameWindowActivate', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ResizeBorder', 'ATLCTL/ATL::IOleInPlaceActiveObjectImpl::TranslateAccelerator']
+f1_keywords: ["IOleInPlaceActiveObjectImpl", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ContextSensitiveHelp", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::EnableModeless", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::GetWindow", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnDocWindowActivate", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnFrameWindowActivate", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ResizeBorder", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::TranslateAccelerator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IOleInPlaceActiveObjectImpl class", "ActiveX controls [C++], communication between container and control", "IOleInPlaceActiveObject, ATL implementation"]
 ms.assetid: 44e6cc6d-a2dc-4187-98e3-73cf0320dea9

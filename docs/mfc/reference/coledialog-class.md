@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleDialog', 'AFXODLGS/COleDialog', 'AFXODLGS/COleDialog::GetLastError']
+f1_keywords: ["COleDialog", "AFXODLGS/COleDialog", "AFXODLGS/COleDialog::GetLastError"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleDialog [MFC], GetLastError"]
 ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7

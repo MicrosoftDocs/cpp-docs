@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CCRTAllocator', 'ATLCORE/ATL::CCRTAllocator', 'ATLCORE/ATL::CCRTAllocator::Allocate', 'ATLCORE/ATL::CCRTAllocator::Free', 'ATLCORE/ATL::CCRTAllocator::Reallocate']
+f1_keywords: ["CCRTAllocator", "ATLCORE/ATL::CCRTAllocator", "ATLCORE/ATL::CCRTAllocator::Allocate", "ATLCORE/ATL::CCRTAllocator::Free", "ATLCORE/ATL::CCRTAllocator::Reallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CCRTAllocator class"]
 ms.assetid: 3e1b8cb0-859a-41ab-8e93-6f0b5ceca49d

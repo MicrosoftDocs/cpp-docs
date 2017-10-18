@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CLocalHeap', 'ATLMEM/ATL::CLocalHeap', 'ATLMEM/ATL::CLocalHeap::Allocate', 'ATLMEM/ATL::CLocalHeap::Free', 'ATLMEM/ATL::CLocalHeap::GetSize', 'ATLMEM/ATL::CLocalHeap::Reallocate']
+f1_keywords: ["CLocalHeap", "ATLMEM/ATL::CLocalHeap", "ATLMEM/ATL::CLocalHeap::Allocate", "ATLMEM/ATL::CLocalHeap::Free", "ATLMEM/ATL::CLocalHeap::GetSize", "ATLMEM/ATL::CLocalHeap::Reallocate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CLocalHeap class"]
 ms.assetid: 1ffa87a5-5fc8-4f8d-8809-58e87e963bd2

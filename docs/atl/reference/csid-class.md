@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSid', 'ATLSECURITY/ATL::CSid', 'ATLSECURITY/ATL::CSid::CSidArray', 'ATLSECURITY/ATL::CSid::CSid', 'ATLSECURITY/ATL::CSid::AccountName', 'ATLSECURITY/ATL::CSid::Domain', 'ATLSECURITY/ATL::CSid::EqualPrefix', 'ATLSECURITY/ATL::CSid::GetLength', 'ATLSECURITY/ATL::CSid::GetPSID', 'ATLSECURITY/ATL::CSid::GetPSID_IDENTIFIER_AUTHORITY', 'ATLSECURITY/ATL::CSid::GetSubAuthority', 'ATLSECURITY/ATL::CSid::GetSubAuthorityCount', 'ATLSECURITY/ATL::CSid::IsValid', 'ATLSECURITY/ATL::CSid::LoadAccount', 'ATLSECURITY/ATL::CSid::Sid', 'ATLSECURITY/ATL::CSid::SidNameUse']
+f1_keywords: ["CSid", "ATLSECURITY/ATL::CSid", "ATLSECURITY/ATL::CSid::CSidArray", "ATLSECURITY/ATL::CSid::CSid", "ATLSECURITY/ATL::CSid::AccountName", "ATLSECURITY/ATL::CSid::Domain", "ATLSECURITY/ATL::CSid::EqualPrefix", "ATLSECURITY/ATL::CSid::GetLength", "ATLSECURITY/ATL::CSid::GetPSID", "ATLSECURITY/ATL::CSid::GetPSID_IDENTIFIER_AUTHORITY", "ATLSECURITY/ATL::CSid::GetSubAuthority", "ATLSECURITY/ATL::CSid::GetSubAuthorityCount", "ATLSECURITY/ATL::CSid::IsValid", "ATLSECURITY/ATL::CSid::LoadAccount", "ATLSECURITY/ATL::CSid::Sid", "ATLSECURITY/ATL::CSid::SidNameUse"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSid class"]
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753

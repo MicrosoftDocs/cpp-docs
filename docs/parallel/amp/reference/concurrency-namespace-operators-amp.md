@@ -5,10 +5,9 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"  
-f1_keywords:  
+ms.topic: "article"
 dev_langs: 
-  - "C++"  
+  - "C++"
 ms.assetid: 77f1ae17-1eb2-480d-8fe5-66d4c24bb91e
 caps.latest.revision: 9
 author: "mikeblome"

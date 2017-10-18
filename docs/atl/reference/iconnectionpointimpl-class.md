@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IConnectionPointImpl', 'ATLCOM/ATL::IConnectionPointImpl', 'ATLCOM/ATL::IConnectionPointImpl::Advise', 'ATLCOM/ATL::IConnectionPointImpl::EnumConnections', 'ATLCOM/ATL::IConnectionPointImpl::GetConnectionInterface', 'ATLCOM/ATL::IConnectionPointImpl::GetConnectionPointContainer', 'ATLCOM/ATL::IConnectionPointImpl::Unadvise', 'ATLCOM/ATL::IConnectionPointImpl::m_vec']
+f1_keywords: ["IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl::Advise", "ATLCOM/ATL::IConnectionPointImpl::EnumConnections", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionInterface", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionPointContainer", "ATLCOM/ATL::IConnectionPointImpl::Unadvise", "ATLCOM/ATL::IConnectionPointImpl::m_vec"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["connection points [C++], implementing", "IConnectionPointImpl class"]
 ms.assetid: 27992115-3b86-45dd-bc9e-54f32876c557

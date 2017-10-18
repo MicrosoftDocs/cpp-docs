@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['VCCORLIB/Platform::Type::GetTypeCode', 'VCCORLIB/Platform::Type::FullName']
+f1_keywords: ["VCCORLIB/Platform::Type::GetTypeCode", "VCCORLIB/Platform::Type::FullName"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

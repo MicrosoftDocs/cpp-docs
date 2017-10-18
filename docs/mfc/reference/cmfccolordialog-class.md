@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCColorDialog', 'AFXCOLORDIALOG/CMFCColorDialog', 'AFXCOLORDIALOG/CMFCColorDialog::CMFCColorDialog', 'AFXCOLORDIALOG/CMFCColorDialog::GetColor', 'AFXCOLORDIALOG/CMFCColorDialog::GetPalette', 'AFXCOLORDIALOG/CMFCColorDialog::RebuildPalette', 'AFXCOLORDIALOG/CMFCColorDialog::SetCurrentColor', 'AFXCOLORDIALOG/CMFCColorDialog::SetNewColor', 'AFXCOLORDIALOG/CMFCColorDialog::SetPageOne', 'AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo']
+f1_keywords: ["CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::GetColor", "AFXCOLORDIALOG/CMFCColorDialog::GetPalette", "AFXCOLORDIALOG/CMFCColorDialog::RebuildPalette", "AFXCOLORDIALOG/CMFCColorDialog::SetCurrentColor", "AFXCOLORDIALOG/CMFCColorDialog::SetNewColor", "AFXCOLORDIALOG/CMFCColorDialog::SetPageOne", "AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCColorDialog [MFC], CMFCColorDialog", "CMFCColorDialog [MFC], GetColor", "CMFCColorDialog [MFC], GetPalette", "CMFCColorDialog [MFC], RebuildPalette", "CMFCColorDialog [MFC], SetCurrentColor", "CMFCColorDialog [MFC], SetNewColor", "CMFCColorDialog [MFC], SetPageOne", "CMFCColorDialog [MFC], SetPageTwo"]
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579

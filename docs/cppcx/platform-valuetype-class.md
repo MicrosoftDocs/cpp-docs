@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['VCCORLIB/Platform::ValueType::ToString']
+f1_keywords: ["VCCORLIB/Platform::ValueType::ToString"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

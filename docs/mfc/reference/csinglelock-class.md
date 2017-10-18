@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSingleLock', 'AFXMT/CSingleLock', 'AFXMT/CSingleLock::CSingleLock', 'AFXMT/CSingleLock::IsLocked', 'AFXMT/CSingleLock::Lock', 'AFXMT/CSingleLock::Unlock']
+f1_keywords: ["CSingleLock", "AFXMT/CSingleLock", "AFXMT/CSingleLock::CSingleLock", "AFXMT/CSingleLock::IsLocked", "AFXMT/CSingleLock::Lock", "AFXMT/CSingleLock::Unlock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSingleLock [MFC], CSingleLock", "CSingleLock [MFC], IsLocked", "CSingleLock [MFC], Lock", "CSingleLock [MFC], Unlock"]
 ms.assetid: 7dae7288-8066-4a3e-85e0-78d28bfc6bc8

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['AMP/index', 'AMP/Concurrency::index::index', 'AMP/Concurrency::index::rank']
+f1_keywords: ["AMP/index", "AMP/Concurrency::index::index", "AMP/Concurrency::index::rank"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["index structure"]
 ms.assetid: cbe79b08-0ba7-474c-9828-f1a71da39eb3

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['improper_lock', 'CONCRT/concurrency::improper_lock', 'CONCRT/concurrency::improper_lock::improper_lock']
+f1_keywords: ["improper_lock", "CONCRT/concurrency::improper_lock", "CONCRT/concurrency::improper_lock::improper_lock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["improper_lock class"]
 ms.assetid: 8f494942-7748-4a2a-8de2-23414bfe6346

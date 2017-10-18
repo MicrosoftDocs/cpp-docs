@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCRibbonContextCaption', 'AFXRIBBONBAR/CMFCRibbonContextCaption', 'AFXRIBBONBAR/CMFCRibbonContextCaption::GetColor', 'AFXRIBBONBAR/CMFCRibbonContextCaption::GetRightTabX']
+f1_keywords: ["CMFCRibbonContextCaption", "AFXRIBBONBAR/CMFCRibbonContextCaption", "AFXRIBBONBAR/CMFCRibbonContextCaption::GetColor", "AFXRIBBONBAR/CMFCRibbonContextCaption::GetRightTabX"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonContextCaption [MFC], GetColor", "CMFCRibbonContextCaption [MFC], GetRightTabX"]
 ms.assetid: cce2c0a2-8370-4266-997e-f8d0eeb3d616

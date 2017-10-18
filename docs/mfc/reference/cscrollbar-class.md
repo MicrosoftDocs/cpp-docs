@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CScrollBar', 'AFXWIN/CScrollBar', 'AFXWIN/CScrollBar::CScrollBar', 'AFXWIN/CScrollBar::Create', 'AFXWIN/CScrollBar::EnableScrollBar', 'AFXWIN/CScrollBar::GetScrollBarInfo', 'AFXWIN/CScrollBar::GetScrollInfo', 'AFXWIN/CScrollBar::GetScrollLimit', 'AFXWIN/CScrollBar::GetScrollPos', 'AFXWIN/CScrollBar::GetScrollRange', 'AFXWIN/CScrollBar::SetScrollInfo', 'AFXWIN/CScrollBar::SetScrollPos', 'AFXWIN/CScrollBar::SetScrollRange', 'AFXWIN/CScrollBar::ShowScrollBar']
+f1_keywords: ["CScrollBar", "AFXWIN/CScrollBar", "AFXWIN/CScrollBar::CScrollBar", "AFXWIN/CScrollBar::Create", "AFXWIN/CScrollBar::EnableScrollBar", "AFXWIN/CScrollBar::GetScrollBarInfo", "AFXWIN/CScrollBar::GetScrollInfo", "AFXWIN/CScrollBar::GetScrollLimit", "AFXWIN/CScrollBar::GetScrollPos", "AFXWIN/CScrollBar::GetScrollRange", "AFXWIN/CScrollBar::SetScrollInfo", "AFXWIN/CScrollBar::SetScrollPos", "AFXWIN/CScrollBar::SetScrollRange", "AFXWIN/CScrollBar::ShowScrollBar"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CScrollBar [MFC], CScrollBar", "CScrollBar [MFC], Create", "CScrollBar [MFC], EnableScrollBar", "CScrollBar [MFC], GetScrollBarInfo", "CScrollBar [MFC], GetScrollInfo", "CScrollBar [MFC], GetScrollLimit", "CScrollBar [MFC], GetScrollPos", "CScrollBar [MFC], GetScrollRange", "CScrollBar [MFC], SetScrollInfo", "CScrollBar [MFC], SetScrollPos", "CScrollBar [MFC], SetScrollRange", "CScrollBar [MFC], ShowScrollBar"]
 ms.assetid: f3735ca5-73ea-46dc-918b-4d824c9fe47f

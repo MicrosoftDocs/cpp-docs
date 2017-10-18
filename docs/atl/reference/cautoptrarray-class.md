@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAutoPtrArray', 'ATLCOLL/ATL::CAutoPtrArray', 'ATLCOLL/ATL::CAutoPtrArray::CAutoPtrArray']
+f1_keywords: ["CAutoPtrArray", "ATLCOLL/ATL::CAutoPtrArray", "ATLCOLL/ATL::CAutoPtrArray::CAutoPtrArray"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoPtrArray class"]
 ms.assetid: 880a70da-8c81-4427-8ac6-49aa8d424244

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCListCtrl', 'AFXLISTCTRL/CMFCListCtrl', 'AFXLISTCTRL/CMFCListCtrl::EnableMarkSortedColumn', 'AFXLISTCTRL/CMFCListCtrl::EnableMultipleSort', 'AFXLISTCTRL/CMFCListCtrl::GetHeaderCtrl', 'AFXLISTCTRL/CMFCListCtrl::IsMultipleSort', 'AFXLISTCTRL/CMFCListCtrl::OnCompareItems', 'AFXLISTCTRL/CMFCListCtrl::OnGetCellBkColor', 'AFXLISTCTRL/CMFCListCtrl::OnGetCellFont', 'AFXLISTCTRL/CMFCListCtrl::OnGetCellTextColor', 'AFXLISTCTRL/CMFCListCtrl::RemoveSortColumn', 'AFXLISTCTRL/CMFCListCtrl::SetSortColumn', 'AFXLISTCTRL/CMFCListCtrl::Sort']
+f1_keywords: ["CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl::EnableMarkSortedColumn", "AFXLISTCTRL/CMFCListCtrl::EnableMultipleSort", "AFXLISTCTRL/CMFCListCtrl::GetHeaderCtrl", "AFXLISTCTRL/CMFCListCtrl::IsMultipleSort", "AFXLISTCTRL/CMFCListCtrl::OnCompareItems", "AFXLISTCTRL/CMFCListCtrl::OnGetCellBkColor", "AFXLISTCTRL/CMFCListCtrl::OnGetCellFont", "AFXLISTCTRL/CMFCListCtrl::OnGetCellTextColor", "AFXLISTCTRL/CMFCListCtrl::RemoveSortColumn", "AFXLISTCTRL/CMFCListCtrl::SetSortColumn", "AFXLISTCTRL/CMFCListCtrl::Sort"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCListCtrl [MFC], EnableMarkSortedColumn", "CMFCListCtrl [MFC], EnableMultipleSort", "CMFCListCtrl [MFC], GetHeaderCtrl", "CMFCListCtrl [MFC], IsMultipleSort", "CMFCListCtrl [MFC], OnCompareItems", "CMFCListCtrl [MFC], OnGetCellBkColor", "CMFCListCtrl [MFC], OnGetCellFont", "CMFCListCtrl [MFC], OnGetCellTextColor", "CMFCListCtrl [MFC], RemoveSortColumn", "CMFCListCtrl [MFC], SetSortColumn", "CMFCListCtrl [MFC], Sort"]
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['out_of_memory', 'AMPRT/out_of_memory', 'AMPRT/Concurrency::out_of_memory::out_of_memory']
+f1_keywords: ["out_of_memory", "AMPRT/out_of_memory", "AMPRT/Concurrency::out_of_memory::out_of_memory"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["out_of_memory class"]
 ms.assetid: 3aa7e682-8f13-4ae6-9188-31fb423956e4

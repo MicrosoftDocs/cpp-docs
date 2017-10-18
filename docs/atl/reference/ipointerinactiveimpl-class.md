@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['IPointerInactiveImpl', 'ATLCTL/ATL::IPointerInactiveImpl', 'ATLCTL/ATL::IPointerInactiveImpl::GetActivationPolicy', 'ATLCTL/ATL::IPointerInactiveImpl::OnInactiveMouseMove', 'ATLCTL/ATL::IPointerInactiveImpl::OnInactiveSetCursor']
+f1_keywords: ["IPointerInactiveImpl", "ATLCTL/ATL::IPointerInactiveImpl", "ATLCTL/ATL::IPointerInactiveImpl::GetActivationPolicy", "ATLCTL/ATL::IPointerInactiveImpl::OnInactiveMouseMove", "ATLCTL/ATL::IPointerInactiveImpl::OnInactiveSetCursor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IPointerInactive ATL implementation", "inactive objects", "IPointerInactiveImpl class"]
 ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7

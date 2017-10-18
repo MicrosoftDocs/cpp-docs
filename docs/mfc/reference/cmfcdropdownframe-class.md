@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCDropDownFrame', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::Create', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentMenuBar', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentPopupMenu', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::RecalcLayout', 'AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::SetAutoDestroy']
+f1_keywords: ["CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::Create", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentMenuBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentPopupMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::RecalcLayout", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::SetAutoDestroy"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDropDownFrame [MFC], Create", "CMFCDropDownFrame [MFC], GetParentMenuBar", "CMFCDropDownFrame [MFC], GetParentPopupMenu", "CMFCDropDownFrame [MFC], RecalcLayout", "CMFCDropDownFrame [MFC], SetAutoDestroy"]
 ms.assetid: 09ff81a9-de00-43ec-9df9-b626f7728c4b

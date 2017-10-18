@@ -2,7 +2,7 @@
 title: "-NATVIS (Add Natvis to PDB) | Microsoft Docs"
 ms.date: "08/10/2017"
 ms.tgt_pltfrm: ""
-ms.technology:  
+ms.technology: 
   - "cpp-tools"
 ms.topic: "article"
 f1_keywords: 

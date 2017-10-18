@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDaoFieldExchange', 'AFXDAO/CDaoFieldExchange', 'AFXDAO/CDaoFieldExchange::IsValidOperation', 'AFXDAO/CDaoFieldExchange::SetFieldType', 'AFXDAO/CDaoFieldExchange::m_nOperation', 'AFXDAO/CDaoFieldExchange::m_prs']
+f1_keywords: ["CDaoFieldExchange", "AFXDAO/CDaoFieldExchange", "AFXDAO/CDaoFieldExchange::IsValidOperation", "AFXDAO/CDaoFieldExchange::SetFieldType", "AFXDAO/CDaoFieldExchange::m_nOperation", "AFXDAO/CDaoFieldExchange::m_prs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoFieldExchange [MFC], IsValidOperation", "CDaoFieldExchange [MFC], SetFieldType", "CDaoFieldExchange [MFC], m_nOperation", "CDaoFieldExchange [MFC], m_prs"]
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
