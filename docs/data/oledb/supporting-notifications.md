@@ -92,7 +92,7 @@ END_CONNECTION_POINT_MAP()
 |**DBPROP_NOTIFYROWUNDOINSERT**|`IRowsetUpdate`|  
 |**DBPROP_NOTIFYROWUPDATE**|`IRowsetUpdate`|  
   
- Most of the implementation for the notifications is already embedded in the OLE DB Provider Templates. Due to a compiler feature in Visual C++ .NET, if you do not add `IRowsetNotifyCP` to your inheritance chain, the compiler removes all that code from your compilation stream, thus making your code size smaller.  
+ Most of the implementation for the notifications is already embedded in the OLE DB Provider Templates. If you do not add `IRowsetNotifyCP` to your inheritance chain, the compiler removes all that code from your compilation stream, thus making your code size smaller.  
   
 ## See Also  
  [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

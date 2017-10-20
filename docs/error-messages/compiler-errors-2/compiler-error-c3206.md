@@ -86,11 +86,8 @@ int main() {
 }  
 ```  
   
- This error can also be generated as a result of compiler conformance work for Visual C++ .NET 2003, where class templates are not allowed as template type argument.  
-  
- A class template is not allowed as a template type argument. This worked in Visual C++ .NET 2003, but it is invalid C++.  
-  
- The following sample compiles in Visual C++ .NET 2002 but will fail in Visual C++ .NET 2003:  
+ 
+ A class template is not allowed as a template type argument. The following sample raises C3206:  
   
 ```  
 // C3206e.cpp  
@@ -124,7 +121,7 @@ int main() {
 }  
 ```  
   
- If a template template parameter is necessary, then the resolution for the error that is valid in both the Visual C++ .NET 2003 and Visual C++ .NET 2002 versions require you to wrap the function in a template class that takes a template template parameter:  
+ If a template template parameter is necessary, then you have to wrap the function in a template class that takes a template template parameter:  
   
 ```  
 // C3206g.cpp  

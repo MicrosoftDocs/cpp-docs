@@ -55,7 +55,7 @@ The following classes encapsulate drawing coordinates, character strings, and ti
  Wrapper for the OLE automation type **CURRENCY**, a fixed-point arithmetic type, with 15 digits before the decimal point and 4 digits after.  
   
 > [!NOTE]
->  Beginning with Visual C++ .NET, `CRect`, `CSize`, and `CPoint` have been modified to be usable in either ATL or MFC applications. In addition, `CStringT` has been added to provide an MFC-independent `CString`-like class. For more information on shared utility classes, see [Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md).  
+>  `CRect`, `CSize`, and `CPoint` are usable in either ATL or MFC applications. In addition, `CStringT` provides an MFC-independent `CString`-like class. For more information on shared utility classes, see [Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md).  
   
 ## See Also  
  [Class Overview](../mfc/class-library-overview.md)

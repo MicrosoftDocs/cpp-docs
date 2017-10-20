@@ -62,8 +62,6 @@ int main()
 ```  
   
 ## Example
-
- Additionally, in Visual Studio .NET 2003 and later, member templates can also be defined outside of a class.  
   
 ```cpp
 // defining_member_templates_outside_class.cpp  
@@ -91,7 +89,7 @@ int main()
   
  Member template functions cannot be virtual functions and cannot override virtual functions from a base class when they are declared with the same name as a base class virtual function.  
   
- Visual C++ .NET 2003 introduced support for templated user-defined conversions. The following sample works in Visual C++ .NET 2003 as specified in the standard.  
+The following example shows a templated user-defined conversion:  
   
 ```cpp
 // templated_user_defined_conversions.cpp  
