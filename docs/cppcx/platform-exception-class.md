@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['VCCORLIB/Platform::Exception::Exception', 'VCCORLIB/Platform::Exception::CreateException', 'VCCORLIB/Platform::Exception::HResult', 'VCCORLIB/Platform::Exception::Message']
+f1_keywords: ["VCCORLIB/Platform::Exception::Exception", "VCCORLIB/Platform::Exception::CreateException", "VCCORLIB/Platform::Exception::HResult", "VCCORLIB/Platform::Exception::Message"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

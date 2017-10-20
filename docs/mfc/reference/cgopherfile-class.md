@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CGopherFile', 'AFXINET/CGopherFile', 'AFXINET/CGopherFile::CGopherFile']
+f1_keywords: ["CGopherFile", "AFXINET/CGopherFile", "AFXINET/CGopherFile::CGopherFile"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CGopherFile [MFC], CGopherFile"]
 ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['COleTemplateServer', 'AFXDISP/COleTemplateServer', 'AFXDISP/COleTemplateServer::COleTemplateServer', 'AFXDISP/COleTemplateServer::ConnectTemplate', 'AFXDISP/COleTemplateServer::Unregister', 'AFXDISP/COleTemplateServer::UpdateRegistry']
+f1_keywords: ["COleTemplateServer", "AFXDISP/COleTemplateServer", "AFXDISP/COleTemplateServer::COleTemplateServer", "AFXDISP/COleTemplateServer::ConnectTemplate", "AFXDISP/COleTemplateServer::Unregister", "AFXDISP/COleTemplateServer::UpdateRegistry"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleTemplateServer [MFC], COleTemplateServer", "COleTemplateServer [MFC], ConnectTemplate", "COleTemplateServer [MFC], Unregister", "COleTemplateServer [MFC], UpdateRegistry"]
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c

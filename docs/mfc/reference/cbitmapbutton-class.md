@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CBitmapButton', 'AFXEXT/CBitmapButton', 'AFXEXT/CBitmapButton::CBitmapButton', 'AFXEXT/CBitmapButton::AutoLoad', 'AFXEXT/CBitmapButton::LoadBitmaps', 'AFXEXT/CBitmapButton::SizeToContent']
+f1_keywords: ["CBitmapButton", "AFXEXT/CBitmapButton", "AFXEXT/CBitmapButton::CBitmapButton", "AFXEXT/CBitmapButton::AutoLoad", "AFXEXT/CBitmapButton::LoadBitmaps", "AFXEXT/CBitmapButton::SizeToContent"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBitmapButton [MFC], CBitmapButton", "CBitmapButton [MFC], AutoLoad", "CBitmapButton [MFC], LoadBitmaps", "CBitmapButton [MFC], SizeToContent"]
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc

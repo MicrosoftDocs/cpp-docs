@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CResourceException', 'AFXWIN/CResourceException', 'AFXWIN/CResourceException::CResourceException']
+f1_keywords: ["CResourceException", "AFXWIN/CResourceException", "AFXWIN/CResourceException::CResourceException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CResourceException [MFC], CResourceException"]
 ms.assetid: af6ae043-d124-4bfd-b35e-7bb0db67d289

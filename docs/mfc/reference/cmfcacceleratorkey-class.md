@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCAcceleratorKey', 'AFXACCELERATORKEY/CMFCAcceleratorKey', 'AFXACCELERATORKEY/CMFCAcceleratorKey::CMFCAcceleratorKey', 'AFXACCELERATORKEY/CMFCAcceleratorKey::Format', 'AFXACCELERATORKEY/CMFCAcceleratorKey::SetAccelerator']
+f1_keywords: ["CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::Format", "AFXACCELERATORKEY/CMFCAcceleratorKey::SetAccelerator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCAcceleratorKey [MFC], CMFCAcceleratorKey", "CMFCAcceleratorKey [MFC], Format", "CMFCAcceleratorKey [MFC], SetAccelerator"]
 ms.assetid: d140fbf7-23db-45ea-a63e-414a5ec7b3d5

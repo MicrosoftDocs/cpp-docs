@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSacl', 'ATLSECURITY/ATL::CSacl', 'ATLSECURITY/ATL::CSacl::CSacl', 'ATLSECURITY/ATL::CSacl::AddAuditAce', 'ATLSECURITY/ATL::CSacl::GetAceCount', 'ATLSECURITY/ATL::CSacl::RemoveAce', 'ATLSECURITY/ATL::CSacl::RemoveAllAces']
+f1_keywords: ["CSacl", "ATLSECURITY/ATL::CSacl", "ATLSECURITY/ATL::CSacl::CSacl", "ATLSECURITY/ATL::CSacl::AddAuditAce", "ATLSECURITY/ATL::CSacl::GetAceCount", "ATLSECURITY/ATL::CSacl::RemoveAce", "ATLSECURITY/ATL::CSacl::RemoveAllAces"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSacl class"]
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05

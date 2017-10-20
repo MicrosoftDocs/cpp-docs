@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CTreeView', 'AFXCVIEW/CTreeView', 'AFXCVIEW/CTreeView::CTreeView', 'AFXCVIEW/CTreeView::GetTreeCtrl']
+f1_keywords: ["CTreeView", "AFXCVIEW/CTreeView", "AFXCVIEW/CTreeView::CTreeView", "AFXCVIEW/CTreeView::GetTreeCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CTreeView [MFC], CTreeView", "CTreeView [MFC], GetTreeCtrl"]
 ms.assetid: 5df583a6-d69f-42ca-9d8d-57e04558afff

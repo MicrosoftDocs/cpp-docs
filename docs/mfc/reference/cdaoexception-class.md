@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDaoException', 'AFXDAO/CDaoException', 'AFXDAO/CDaoException::CDaoException', 'AFXDAO/CDaoException::GetErrorCount', 'AFXDAO/CDaoException::GetErrorInfo', 'AFXDAO/CDaoException::m_nAfxDaoError', 'AFXDAO/CDaoException::m_pErrorInfo', 'AFXDAO/CDaoException::m_scode']
+f1_keywords: ["CDaoException", "AFXDAO/CDaoException", "AFXDAO/CDaoException::CDaoException", "AFXDAO/CDaoException::GetErrorCount", "AFXDAO/CDaoException::GetErrorInfo", "AFXDAO/CDaoException::m_nAfxDaoError", "AFXDAO/CDaoException::m_pErrorInfo", "AFXDAO/CDaoException::m_scode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoException [MFC], CDaoException", "CDaoException [MFC], GetErrorCount", "CDaoException [MFC], GetErrorInfo", "CDaoException [MFC], m_nAfxDaoError", "CDaoException [MFC], m_pErrorInfo", "CDaoException [MFC], m_scode"]
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4

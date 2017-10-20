@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CRBMultiMap', 'ATLCOLL/ATL::CRBMultiMap', 'ATLCOLL/ATL::CRBMultiMap::CRBMultiMap', 'ATLCOLL/ATL::CRBMultiMap::FindFirstWithKey', 'ATLCOLL/ATL::CRBMultiMap::GetNextValueWithKey', 'ATLCOLL/ATL::CRBMultiMap::GetNextWithKey', 'ATLCOLL/ATL::CRBMultiMap::Insert', 'ATLCOLL/ATL::CRBMultiMap::RemoveKey']
+f1_keywords: ["CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap::CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap::FindFirstWithKey", "ATLCOLL/ATL::CRBMultiMap::GetNextValueWithKey", "ATLCOLL/ATL::CRBMultiMap::GetNextWithKey", "ATLCOLL/ATL::CRBMultiMap::Insert", "ATLCOLL/ATL::CRBMultiMap::RemoveKey"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRBMultiMap class"]
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3

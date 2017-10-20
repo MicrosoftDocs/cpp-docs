@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAxWindow2T', 'ATLWIN/ATL::CAxWindow2T', 'ATLWIN/ATL::CAxWindow2T::CAxWindow2T', 'ATLWIN/ATL::CAxWindow2T::Create', 'ATLWIN/ATL::CAxWindow2T::CreateControlLic', 'ATLWIN/ATL::CAxWindow2T::CreateControlLicEx', 'ATLWIN/ATL::CAxWindow2T::GetWndClassName']
+f1_keywords: ["CAxWindow2T", "ATLWIN/ATL::CAxWindow2T", "ATLWIN/ATL::CAxWindow2T::CAxWindow2T", "ATLWIN/ATL::CAxWindow2T::Create", "ATLWIN/ATL::CAxWindow2T::CreateControlLic", "ATLWIN/ATL::CAxWindow2T::CreateControlLicEx", "ATLWIN/ATL::CAxWindow2T::GetWndClassName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAxWindow2 class"]
 ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837

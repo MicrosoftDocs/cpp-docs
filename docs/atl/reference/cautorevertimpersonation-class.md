@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAutoRevertImpersonation', 'ATLSECURITY/ATL::CAutoRevertImpersonation', 'ATLSECURITY/ATL::CAutoRevertImpersonation::CAutoRevertImpersonation', 'ATLSECURITY/ATL::CAutoRevertImpersonation::Attach', 'ATLSECURITY/ATL::CAutoRevertImpersonation::Detach', 'ATLSECURITY/ATL::CAutoRevertImpersonation::GetAccessToken']
+f1_keywords: ["CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::Attach", "ATLSECURITY/ATL::CAutoRevertImpersonation::Detach", "ATLSECURITY/ATL::CAutoRevertImpersonation::GetAccessToken"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoRevertImpersonation class"]
 ms.assetid: 43732849-1940-4bd4-9d52-7a5698bb8838

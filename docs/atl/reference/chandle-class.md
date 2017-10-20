@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CHandle', 'ATLBASE/ATL::CHandle', 'ATLBASE/ATL::CHandle::CHandle', 'ATLBASE/ATL::CHandle::Attach', 'ATLBASE/ATL::CHandle::Close', 'ATLBASE/ATL::CHandle::Detach', 'ATLBASE/ATL::CHandle::m_h']
+f1_keywords: ["CHandle", "ATLBASE/ATL::CHandle", "ATLBASE/ATL::CHandle::CHandle", "ATLBASE/ATL::CHandle::Attach", "ATLBASE/ATL::CHandle::Close", "ATLBASE/ATL::CHandle::Detach", "ATLBASE/ATL::CHandle::m_h"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CHandle class"]
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d

@@ -1,5 +1,5 @@
 ---
-title: "Creating Asynchronous Operations in C++ for Windows Store Apps | Microsoft Docs"
+title: "Creating Asynchronous Operations in C++ for Windows 8.x Apps | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -8,14 +8,14 @@ ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Windows Store apps, creating C++ async operations", "Creating C++ async operations"]
+helpviewer_keywords: ["Windows 8.x apps, creating C++ async operations", "Creating C++ async operations"]
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
 caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 ---
-# Creating Asynchronous Operations in C++ for Windows Store Apps
+# Creating Asynchronous Operations in C++ for Windows 8.x Apps
 This document describes some of the key points to keep in mind when you use the task class to produce Windows ThreadPool-based asynchronous operations in a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app.  
   
  The use of asynchronous programming is a key component in the [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app model because it enables apps to remain responsive to user input. You can start a long-running task without blocking the UI thread, and you can receive the results of the task later. You can also cancel tasks and receive progress notifications as tasks run in the background. The document [Asynchronous programming in C++](http://msdn.microsoft.com/library/windows/apps/hh780559.aspx) provides an overview of the asynchronous pattern that's available in Visual C++ to create [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. That document teaches how to both consume and create chains of asynchronous Windows Runtime operations. This section describes how to use the types in ppltasks.h to produce asynchronous operations that can be consumed by another Windows Runtime component and how to control how asynchronous work is executed. Also consider reading [Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx) to learn how we used the task class to implement asynchronous operations in Hilo, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app using C++ and XAML.  

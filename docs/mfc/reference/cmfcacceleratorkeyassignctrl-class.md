@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCAcceleratorKeyAssignCtrl', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::GetAccel', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsFocused', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsKeyDefined', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage', 'AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::ResetKey']
+f1_keywords: ["CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::GetAccel", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsFocused", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsKeyDefined", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::ResetKey"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCAcceleratorKeyAssignCtrl [MFC], CMFCAcceleratorKeyAssignCtrl", "CMFCAcceleratorKeyAssignCtrl [MFC], GetAccel", "CMFCAcceleratorKeyAssignCtrl [MFC], IsFocused", "CMFCAcceleratorKeyAssignCtrl [MFC], IsKeyDefined", "CMFCAcceleratorKeyAssignCtrl [MFC], PreTranslateMessage", "CMFCAcceleratorKeyAssignCtrl [MFC], ResetKey"]
 ms.assetid: 89fb8e62-596e-4e71-8c9a-32740347aaab

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCPropertyGridFontProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetColor', 'AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetLogFont']
+f1_keywords: ["CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetLogFont"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertyGridFontProperty [MFC], CMFCPropertyGridFontProperty", "CMFCPropertyGridFontProperty [MFC], GetColor", "CMFCPropertyGridFontProperty [MFC], GetLogFont"]
 ms.assetid: 83693f33-bbd3-4fcb-a9ad-fa79fcf2ca24

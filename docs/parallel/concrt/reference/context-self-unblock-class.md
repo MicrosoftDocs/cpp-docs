@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['context_self_unblock', 'CONCRT/concurrency::context_self_unblock', 'CONCRT/concurrency::context_self_unblock::context_self_unblock']
+f1_keywords: ["context_self_unblock", "CONCRT/concurrency::context_self_unblock", "CONCRT/concurrency::context_self_unblock::context_self_unblock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["context_self_unblock class"]
 ms.assetid: 9601cd28-4f40-4c2e-89ab-747068956331

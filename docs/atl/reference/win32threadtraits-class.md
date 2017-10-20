@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['Win32ThreadTraits', 'ATLBASE/ATL::Win32ThreadTraits', 'ATLBASE/ATL::Win32ThreadTraits::CreateThread']
+f1_keywords: ["Win32ThreadTraits", "ATLBASE/ATL::Win32ThreadTraits", "ATLBASE/ATL::Win32ThreadTraits::CreateThread"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["threading [ATL], Windows threads", "threading [ATL], creation functions", "Win32ThreadTraits class"]
 ms.assetid: 50279c38-eae1-4301-9ea6-97ccea580f3e

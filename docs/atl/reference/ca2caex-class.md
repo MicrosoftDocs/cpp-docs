@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CA2CAEX', 'ATLCONV/ATL::CA2CAEX', 'ATLCONV/ATL::CA2CAEX::CA2CAEX', 'ATLCONV/ATL::CA2CAEX::m_psz']
+f1_keywords: ["CA2CAEX", "ATLCONV/ATL::CA2CAEX", "ATLCONV/ATL::CA2CAEX::CA2CAEX", "ATLCONV/ATL::CA2CAEX::m_psz"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CA2CAEX class"]
 ms.assetid: 388e7c1d-a144-474c-a182-b15f69a74bd8

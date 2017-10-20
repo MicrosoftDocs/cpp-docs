@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CEvent', 'AFXMT/CEvent', 'AFXMT/CEvent::CEvent', 'AFXMT/CEvent::PulseEvent', 'AFXMT/CEvent::ResetEvent', 'AFXMT/CEvent::SetEvent', 'AFXMT/CEvent::Unlock']
+f1_keywords: ["CEvent", "AFXMT/CEvent", "AFXMT/CEvent::CEvent", "AFXMT/CEvent::PulseEvent", "AFXMT/CEvent::ResetEvent", "AFXMT/CEvent::SetEvent", "AFXMT/CEvent::Unlock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CEvent [MFC], CEvent", "CEvent [MFC], PulseEvent", "CEvent [MFC], ResetEvent", "CEvent [MFC], SetEvent", "CEvent [MFC], Unlock"]
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395

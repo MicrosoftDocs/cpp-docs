@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CReversalTransition', 'AFXANIMATIONCONTROLLER/CReversalTransition', 'AFXANIMATIONCONTROLLER/CReversalTransition::CReversalTransition', 'AFXANIMATIONCONTROLLER/CReversalTransition::Create', 'AFXANIMATIONCONTROLLER/CReversalTransition::m_duration']
+f1_keywords: ["CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition::CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition::Create", "AFXANIMATIONCONTROLLER/CReversalTransition::m_duration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CReversalTransition [MFC], CReversalTransition", "CReversalTransition [MFC], Create", "CReversalTransition [MFC], m_duration"]
 ms.assetid: e89516be-2d07-4885-95a8-fc278f46e3ad

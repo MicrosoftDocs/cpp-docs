@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCPropertyGridToolTipCtrl', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Create', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Deactivate', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::GetLastRect', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Hide', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::SetTextMargin', 'AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Track']
+f1_keywords: ["CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Create", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Deactivate", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::GetLastRect", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Hide", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::SetTextMargin", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Track"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertyGridToolTipCtrl [MFC], CMFCPropertyGridToolTipCtrl", "CMFCPropertyGridToolTipCtrl [MFC], Create", "CMFCPropertyGridToolTipCtrl [MFC], Deactivate", "CMFCPropertyGridToolTipCtrl [MFC], GetLastRect", "CMFCPropertyGridToolTipCtrl [MFC], Hide", "CMFCPropertyGridToolTipCtrl [MFC], SetTextMargin", "CMFCPropertyGridToolTipCtrl [MFC], Track"]
 ms.assetid: 84b436e5-6695-4da0-9569-1a875e087711

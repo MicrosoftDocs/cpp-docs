@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['tiled_index', 'AMP/tiled_index', 'AMP/Concurrency::tiled_index::tiled_index', 'AMP/Concurrency::tiled_index::get_tile_extent', 'AMP/Concurrency::tiled_index::barrier', 'AMP/Concurrency::tiled_index::global', 'AMP/Concurrency::tiled_index::local', 'AMP/Concurrency::tiled_index::rank', 'AMP/Concurrency::tiled_index::tile', 'AMP/Concurrency::tiled_index::tile_dim0', 'AMP/Concurrency::tiled_index::tile_dim1', 'AMP/Concurrency::tiled_index::tile_dim2', 'AMP/Concurrency::tiled_index::tile_origin', 'AMP/Concurrency::tiled_index::tile_extent']
+f1_keywords: ["tiled_index", "AMP/tiled_index", "AMP/Concurrency::tiled_index::tiled_index", "AMP/Concurrency::tiled_index::get_tile_extent", "AMP/Concurrency::tiled_index::barrier", "AMP/Concurrency::tiled_index::global", "AMP/Concurrency::tiled_index::local", "AMP/Concurrency::tiled_index::rank", "AMP/Concurrency::tiled_index::tile", "AMP/Concurrency::tiled_index::tile_dim0", "AMP/Concurrency::tiled_index::tile_dim1", "AMP/Concurrency::tiled_index::tile_dim2", "AMP/Concurrency::tiled_index::tile_origin", "AMP/Concurrency::tiled_index::tile_extent"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tiled_index class"]
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38

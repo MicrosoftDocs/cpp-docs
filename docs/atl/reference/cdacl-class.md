@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDacl', 'ATLSECURITY/ATL::CDacl', 'ATLSECURITY/ATL::CDacl::CDacl', 'ATLSECURITY/ATL::CDacl::AddAllowedAce', 'ATLSECURITY/ATL::CDacl::AddDeniedAce', 'ATLSECURITY/ATL::CDacl::GetAceCount', 'ATLSECURITY/ATL::CDacl::RemoveAce', 'ATLSECURITY/ATL::CDacl::RemoveAllAces']
+f1_keywords: ["CDacl", "ATLSECURITY/ATL::CDacl", "ATLSECURITY/ATL::CDacl::CDacl", "ATLSECURITY/ATL::CDacl::AddAllowedAce", "ATLSECURITY/ATL::CDacl::AddDeniedAce", "ATLSECURITY/ATL::CDacl::GetAceCount", "ATLSECURITY/ATL::CDacl::RemoveAce", "ATLSECURITY/ATL::CDacl::RemoveAllAces"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDacl class"]
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd

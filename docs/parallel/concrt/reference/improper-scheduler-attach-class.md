@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['improper_scheduler_attach', 'CONCRT/concurrency::improper_scheduler_attach', 'CONCRT/concurrency::improper_scheduler_attach::improper_scheduler_attach']
+f1_keywords: ["improper_scheduler_attach", "CONCRT/concurrency::improper_scheduler_attach", "CONCRT/concurrency::improper_scheduler_attach::improper_scheduler_attach"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["improper_scheduler_attach class"]
 ms.assetid: 5a76da0a-091b-4748-8f62-b3a28f674f9e

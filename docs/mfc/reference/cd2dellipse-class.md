@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CD2DEllipse', 'AFXRENDERTARGET/CD2DEllipse', 'AFXRENDERTARGET/CD2DEllipse::CD2DEllipse']
+f1_keywords: ["CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse::CD2DEllipse"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DEllipse [MFC], CD2DEllipse"]
 ms.assetid: e9f02f54-acf2-427e-b349-db50cd9a77df

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['ISupportErrorInfoImpl', 'ATLCOM/ATL::ISupportErrorInfoImpl', 'ATLCOM/ATL::ISupportErrorInfoImpl::InterfaceSupportsErrorInfo']
+f1_keywords: ["ISupportErrorInfoImpl", "ATLCOM/ATL::ISupportErrorInfoImpl", "ATLCOM/ATL::ISupportErrorInfoImpl::InterfaceSupportsErrorInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ISupportErrorInfo ATL implementation", "ISupportErrorInfoImpl class", "error information, ATL"]
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af

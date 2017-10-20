@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CLinkCtrl', 'AFXCMN/CLinkCtrl', 'AFXCMN/CLinkCtrl::CLinkCtrl', 'AFXCMN/CLinkCtrl::Create', 'AFXCMN/CLinkCtrl::CreateEx', 'AFXCMN/CLinkCtrl::GetIdealHeight', 'AFXCMN/CLinkCtrl::GetIdealSize', 'AFXCMN/CLinkCtrl::GetItem', 'AFXCMN/CLinkCtrl::GetItemID', 'AFXCMN/CLinkCtrl::GetItemState', 'AFXCMN/CLinkCtrl::GetItemUrl', 'AFXCMN/CLinkCtrl::HitTest', 'AFXCMN/CLinkCtrl::SetItem', 'AFXCMN/CLinkCtrl::SetItemID', 'AFXCMN/CLinkCtrl::SetItemState', 'AFXCMN/CLinkCtrl::SetItemUrl']
+f1_keywords: ["CLinkCtrl", "AFXCMN/CLinkCtrl", "AFXCMN/CLinkCtrl::CLinkCtrl", "AFXCMN/CLinkCtrl::Create", "AFXCMN/CLinkCtrl::CreateEx", "AFXCMN/CLinkCtrl::GetIdealHeight", "AFXCMN/CLinkCtrl::GetIdealSize", "AFXCMN/CLinkCtrl::GetItem", "AFXCMN/CLinkCtrl::GetItemID", "AFXCMN/CLinkCtrl::GetItemState", "AFXCMN/CLinkCtrl::GetItemUrl", "AFXCMN/CLinkCtrl::HitTest", "AFXCMN/CLinkCtrl::SetItem", "AFXCMN/CLinkCtrl::SetItemID", "AFXCMN/CLinkCtrl::SetItemState", "AFXCMN/CLinkCtrl::SetItemUrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CLinkCtrl [MFC], CLinkCtrl", "CLinkCtrl [MFC], Create", "CLinkCtrl [MFC], CreateEx", "CLinkCtrl [MFC], GetIdealHeight", "CLinkCtrl [MFC], GetIdealSize", "CLinkCtrl [MFC], GetItem", "CLinkCtrl [MFC], GetItemID", "CLinkCtrl [MFC], GetItemState", "CLinkCtrl [MFC], GetItemUrl", "CLinkCtrl [MFC], HitTest", "CLinkCtrl [MFC], SetItem", "CLinkCtrl [MFC], SetItemID", "CLinkCtrl [MFC], SetItemState", "CLinkCtrl [MFC], SetItemUrl"]
 ms.assetid: d1cd876a-ecca-42db-8ac4-9cd327df0cd4

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['unsupported_os', 'CONCRT/concurrency::unsupported_os', 'CONCRT/concurrency::unsupported_os::unsupported_os']
+f1_keywords: ["unsupported_os", "CONCRT/concurrency::unsupported_os", "CONCRT/concurrency::unsupported_os::unsupported_os"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unsupported_os class"]
 ms.assetid: 6fa57636-341b-4b51-84cc-261d283ff736

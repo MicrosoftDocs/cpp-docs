@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CAnimateCtrl', 'AFXCMN/CAnimateCtrl', 'AFXCMN/CAnimateCtrl::CAnimateCtrl', 'AFXCMN/CAnimateCtrl::Close', 'AFXCMN/CAnimateCtrl::Create', 'AFXCMN/CAnimateCtrl::CreateEx', 'AFXCMN/CAnimateCtrl::IsPlaying', 'AFXCMN/CAnimateCtrl::Open', 'AFXCMN/CAnimateCtrl::Play', 'AFXCMN/CAnimateCtrl::Seek', 'AFXCMN/CAnimateCtrl::Stop']
+f1_keywords: ["CAnimateCtrl", "AFXCMN/CAnimateCtrl", "AFXCMN/CAnimateCtrl::CAnimateCtrl", "AFXCMN/CAnimateCtrl::Close", "AFXCMN/CAnimateCtrl::Create", "AFXCMN/CAnimateCtrl::CreateEx", "AFXCMN/CAnimateCtrl::IsPlaying", "AFXCMN/CAnimateCtrl::Open", "AFXCMN/CAnimateCtrl::Play", "AFXCMN/CAnimateCtrl::Seek", "AFXCMN/CAnimateCtrl::Stop"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimateCtrl [MFC], CAnimateCtrl", "CAnimateCtrl [MFC], Close", "CAnimateCtrl [MFC], Create", "CAnimateCtrl [MFC], CreateEx", "CAnimateCtrl [MFC], IsPlaying", "CAnimateCtrl [MFC], Open", "CAnimateCtrl [MFC], Play", "CAnimateCtrl [MFC], Seek", "CAnimateCtrl [MFC], Stop"]
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b

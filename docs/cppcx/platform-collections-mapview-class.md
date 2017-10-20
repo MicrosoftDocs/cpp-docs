@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ['COLLECTION/Platform::Collections::MapView::MapView', 'COLLECTION/Platform::Collections::MapView::First', 'COLLECTION/Platform::Collections::MapView::HasKey', 'COLLECTION/Platform::Collections::MapView::Lookup', 'COLLECTION/Platform::Collections::MapView::Size', 'COLLECTION/Platform::Collections::MapView::Split']
+f1_keywords: ["COLLECTION/Platform::Collections::MapView::MapView", "COLLECTION/Platform::Collections::MapView::First", "COLLECTION/Platform::Collections::MapView::HasKey", "COLLECTION/Platform::Collections::MapView::Lookup", "COLLECTION/Platform::Collections::MapView::Size", "COLLECTION/Platform::Collections::MapView::Split"]
 dev_langs: 
   - "C++"
 helpviewer_keywords: 

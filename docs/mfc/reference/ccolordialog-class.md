@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CColorDialog', 'AFXDLGS/CColorDialog', 'AFXDLGS/CColorDialog::CColorDialog', 'AFXDLGS/CColorDialog::DoModal', 'AFXDLGS/CColorDialog::GetColor', 'AFXDLGS/CColorDialog::GetSavedCustomColors', 'AFXDLGS/CColorDialog::SetCurrentColor', 'AFXDLGS/CColorDialog::OnColorOK', 'AFXDLGS/CColorDialog::m_cc']
+f1_keywords: ["CColorDialog", "AFXDLGS/CColorDialog", "AFXDLGS/CColorDialog::CColorDialog", "AFXDLGS/CColorDialog::DoModal", "AFXDLGS/CColorDialog::GetColor", "AFXDLGS/CColorDialog::GetSavedCustomColors", "AFXDLGS/CColorDialog::SetCurrentColor", "AFXDLGS/CColorDialog::OnColorOK", "AFXDLGS/CColorDialog::m_cc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CColorDialog [MFC], CColorDialog", "CColorDialog [MFC], DoModal", "CColorDialog [MFC], GetColor", "CColorDialog [MFC], GetSavedCustomColors", "CColorDialog [MFC], SetCurrentColor", "CColorDialog [MFC], OnColorOK", "CColorDialog [MFC], m_cc"]
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CNotSupportedException', 'AFX/CNotSupportedException', 'AFX/CNotSupportedException::CNotSupportedException']
+f1_keywords: ["CNotSupportedException", "AFX/CNotSupportedException", "AFX/CNotSupportedException::CNotSupportedException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CNotSupportedException [MFC], CNotSupportedException"]
 ms.assetid: e517391b-eb94-4c39-ae32-87b45bf7d624

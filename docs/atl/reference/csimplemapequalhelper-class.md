@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CSimpleMapEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleMapEqualHelper', 'ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualKey', 'ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualValue']
+f1_keywords: ["CSimpleMapEqualHelper", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelper", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualKey", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleMapEqualHelper class"]
 ms.assetid: 9bb2968a-d609-405c-8272-ff3b42df6164

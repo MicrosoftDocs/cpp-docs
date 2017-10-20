@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDefaultHashTraits', 'ATLCOLL/ATL::CDefaultHashTraits', 'ATLCOLL/ATL::CDefaultHashTraits::Hash']
+f1_keywords: ["CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits::Hash"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDefaultHashTraits class"]
 ms.assetid: d8ec4b37-6d58-447b-a0c1-8580c5b1ab85

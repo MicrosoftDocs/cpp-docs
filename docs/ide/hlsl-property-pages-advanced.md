@@ -11,8 +11,8 @@ f1_keywords: ["VC.Project.FXCompilerTool.SuppressStartupBanner", "VC.Project.FXC
 dev_langs: ["C++"]
 ms.assetid: a4f05aed-2c0e-4e7d-b7a4-bc2f228112c5
 caps.latest.revision: 6
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 ---
 # HLSL Property Pages: Advanced

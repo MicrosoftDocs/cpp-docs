@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CComMultiThreadModelNoCS', 'ATLBASE/ATL::CComMultiThreadModelNoCS', 'ATLBASE/ATL::CComMultiThreadModelNoCS::AutoCriticalSection', 'ATLBASE/ATL::CComMultiThreadModelNoCS::CriticalSection', 'ATLBASE/ATL::CComMultiThreadModelNoCS::ThreadModelNoCS', 'ATLBASE/ATL::CComMultiThreadModelNoCS::Decrement', 'ATLBASE/ATL::CComMultiThreadModelNoCS::Increment']
+f1_keywords: ["CComMultiThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS::AutoCriticalSection", "ATLBASE/ATL::CComMultiThreadModelNoCS::CriticalSection", "ATLBASE/ATL::CComMultiThreadModelNoCS::ThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS::Decrement", "ATLBASE/ATL::CComMultiThreadModelNoCS::Increment"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, multithreading", "CComMultiThreadModelNoCS class", "threading [ATL]"]
 ms.assetid: 2b3f7a45-fd72-452c-aaf3-ccdaa621c821

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CFtpFileFind', 'AFXINET/CFtpFileFind', 'AFXINET/CFtpFileFind::CFtpFileFind', 'AFXINET/CFtpFileFind::FindFile', 'AFXINET/CFtpFileFind::FindNextFile', 'AFXINET/CFtpFileFind::GetFileURL']
+f1_keywords: ["CFtpFileFind", "AFXINET/CFtpFileFind", "AFXINET/CFtpFileFind::CFtpFileFind", "AFXINET/CFtpFileFind::FindFile", "AFXINET/CFtpFileFind::FindNextFile", "AFXINET/CFtpFileFind::GetFileURL"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFtpFileFind [MFC], CFtpFileFind", "CFtpFileFind [MFC], FindFile", "CFtpFileFind [MFC], FindNextFile", "CFtpFileFind [MFC], GetFileURL"]
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c

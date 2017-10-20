@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CDCRenderTarget', 'AFXRENDERTARGET/CDCRenderTarget', 'AFXRENDERTARGET/CDCRenderTarget::CDCRenderTarget', 'AFXRENDERTARGET/CDCRenderTarget::Attach', 'AFXRENDERTARGET/CDCRenderTarget::BindDC', 'AFXRENDERTARGET/CDCRenderTarget::Create', 'AFXRENDERTARGET/CDCRenderTarget::Detach', 'AFXRENDERTARGET/CDCRenderTarget::GetDCRenderTarget', 'AFXRENDERTARGET/CDCRenderTarget::m_pDCRenderTarget']
+f1_keywords: ["CDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget::CDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget::Attach", "AFXRENDERTARGET/CDCRenderTarget::BindDC", "AFXRENDERTARGET/CDCRenderTarget::Create", "AFXRENDERTARGET/CDCRenderTarget::Detach", "AFXRENDERTARGET/CDCRenderTarget::GetDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget::m_pDCRenderTarget"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDCRenderTarget [MFC], CDCRenderTarget", "CDCRenderTarget [MFC], Attach", "CDCRenderTarget [MFC], BindDC", "CDCRenderTarget [MFC], Create", "CDCRenderTarget [MFC], Detach", "CDCRenderTarget [MFC], GetDCRenderTarget", "CDCRenderTarget [MFC], m_pDCRenderTarget"]
 ms.assetid: aa8059c9-08e6-49e4-9b8c-00fa54077a61

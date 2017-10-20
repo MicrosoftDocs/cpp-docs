@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CRBMap', 'ATLCOLL/ATL::CRBMap', 'ATLCOLL/ATL::CRBMap::CRBMap', 'ATLCOLL/ATL::CRBMap::Lookup', 'ATLCOLL/ATL::CRBMap::RemoveKey', 'ATLCOLL/ATL::CRBMap::SetAt']
+f1_keywords: ["CRBMap", "ATLCOLL/ATL::CRBMap", "ATLCOLL/ATL::CRBMap::CRBMap", "ATLCOLL/ATL::CRBMap::Lookup", "ATLCOLL/ATL::CRBMap::RemoveKey", "ATLCOLL/ATL::CRBMap::SetAt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRBMap class"]
 ms.assetid: 658e94dc-e835-4356-aed1-1513e1f66969

@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCToolBarComboBoxEdit', 'AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit', 'AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit']
+f1_keywords: ["CMFCToolBarComboBoxEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarComboBoxEdit [MFC], CMFCToolBarComboBoxEdit"]
 ms.assetid: 4789c34a-ce58-48ba-a26f-38748b601352

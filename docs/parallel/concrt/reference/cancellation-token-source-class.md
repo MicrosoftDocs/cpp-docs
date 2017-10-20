@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['cancellation_token_source', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancellation_token_source', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancel', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::create_linked_source', 'PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::get_token']
+f1_keywords: ["cancellation_token_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancellation_token_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancel", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::create_linked_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::get_token"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cancellation_token_source class"]
 ms.assetid: 3548b1a0-12b0-4334-95db-4bf57141c066

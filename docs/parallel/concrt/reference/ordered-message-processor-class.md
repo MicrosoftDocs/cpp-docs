@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ['ordered_message_processor', 'AGENTS/concurrency::ordered_message_processor', 'AGENTS/concurrency::ordered_message_processor::ordered_message_processor', 'AGENTS/concurrency::ordered_message_processor::async_send', 'AGENTS/concurrency::ordered_message_processor::initialize', 'AGENTS/concurrency::ordered_message_processor::initialize_batched_processing', 'AGENTS/concurrency::ordered_message_processor::sync_send', 'AGENTS/concurrency::ordered_message_processor::wait', 'AGENTS/concurrency::ordered_message_processor::process_incoming_message']
+f1_keywords: ["ordered_message_processor", "AGENTS/concurrency::ordered_message_processor", "AGENTS/concurrency::ordered_message_processor::ordered_message_processor", "AGENTS/concurrency::ordered_message_processor::async_send", "AGENTS/concurrency::ordered_message_processor::initialize", "AGENTS/concurrency::ordered_message_processor::initialize_batched_processing", "AGENTS/concurrency::ordered_message_processor::sync_send", "AGENTS/concurrency::ordered_message_processor::wait", "AGENTS/concurrency::ordered_message_processor::process_incoming_message"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ordered_message_processor class"]
 ms.assetid: 787adfb7-7f79-4a70-864a-80e3b64088cd

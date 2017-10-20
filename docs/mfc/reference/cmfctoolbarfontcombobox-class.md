@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCToolBarFontComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::CMFCToolBarFontComboBox', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::GetFontDesc', 'AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::SetFont']
+f1_keywords: ["CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::GetFontDesc", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::SetFont"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarFontComboBox [MFC], CMFCToolBarFontComboBox", "CMFCToolBarFontComboBox [MFC], GetFontDesc", "CMFCToolBarFontComboBox [MFC], SetFont"]
 ms.assetid: 25f8e08c-aadd-4cb5-9581-a99d49d444b1

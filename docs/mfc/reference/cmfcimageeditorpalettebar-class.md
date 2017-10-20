@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ['CMFCImageEditorPaletteBar', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::GetRowHeight', 'AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable']
+f1_keywords: ["CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::GetRowHeight", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCImageEditorPaletteBar [MFC], GetRowHeight", "CMFCImageEditorPaletteBar [MFC], IsButtonExtraSizeAvailable"]
 ms.assetid: 3fb7ba8e-f254-4d56-b913-9941b4ed8138
