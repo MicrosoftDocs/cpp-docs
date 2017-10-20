@@ -11,8 +11,8 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["games [C++]", "Windows applications [C++], games", "DirectX [C++]"]
 ms.assetid: 863090ed-6091-45db-aabb-7fd02f76c1df
 caps.latest.revision: 14
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
 ---
 # Resources for Creating a Game Using DirectX

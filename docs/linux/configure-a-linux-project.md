@@ -8,8 +8,8 @@ ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "corob-msft"
+ms.author: "corob"
 manager: "ghogen"
 ---
 
