@@ -11,8 +11,8 @@ f1_keywords: ["VC.Project.FXCompilerTool.AssemblerOutput", "VC.Project.FXCompile
 dev_langs: ["C++"]
 ms.assetid: c5ba1e72-30de-43eb-a15a-5b0ae58e55c2
 caps.latest.revision: 5
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 ---
 # HLSL Property Pages: Output Files
