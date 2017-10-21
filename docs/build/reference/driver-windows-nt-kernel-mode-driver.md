@@ -18,8 +18,8 @@ manager: "ghogen"
 ---
 # /DRIVER (Windows NT Kernel Mode Driver)
 
->/DRIVER[:UPONLY |:WDM]  
-  
+>/DRIVER[:UPONLY |:WDM]
+
 ## Remarks
 
 Use the **/DRIVER** linker option to build a Windows NT kernel mode driver.
@@ -38,17 +38,17 @@ If **/DRIVER** is specified:
 
 ### To set this linker option in the Visual Studio development environment
 
-1.  Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
 
-2.  Click the **Linker** folder.
+1. Click the **Linker** folder.
 
-3.  Click the **System** property page.
+1. Click the **System** property page.
 
-4.  Modify the **Driver** property.
+1. Modify the **Driver** property.
 
 ### To set this linker option programmatically
 
-1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.driver>.
+- See [VCLinkerTool.driver Property](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.driver?view=visualstudiosdk-2017#Microsoft_VisualStudio_VCProjectEngine_VCLinkerTool_driver).
 
 ## See Also
 
