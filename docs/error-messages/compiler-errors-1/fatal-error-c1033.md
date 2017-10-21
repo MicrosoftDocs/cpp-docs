@@ -21,6 +21,5 @@ cannot open program database pdb
   
  This error can be caused by disk error.  
   
- In Visual C++ .NET 2002, the user locale must be set correctly when the file name (or directory path to the file name) contains MBCS characters. Setting the system locale is not sufficient; the user locale must be set to process MBCS characters.  
   
  For more information, see [http://support.microsoft.com/default.aspx?scid=kb;en-us;246007](http://support.microsoft.com/default.aspx?scid=kb;en-us;246007).

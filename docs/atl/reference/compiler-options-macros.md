@@ -64,7 +64,7 @@ These macros control specific compiler features.
   
  If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they are not disabled globally (or if the user explicitly disables individual warnings, not to enable them).  
   
- New projects generated with Visual C++ .NET 2002 will have this `#define` set in stdafx.h by default.  
+ New projects have this `#define` set in stdafx.h by default.  
   
 ##  <a name="_atl_apartment_threaded"></a>  _ATL_APARTMENT_THREADED  
  Define if one or more of your objects use apartment threading.  

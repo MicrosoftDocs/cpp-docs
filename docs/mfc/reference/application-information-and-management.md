@@ -351,7 +351,7 @@ CWinThread* AfxGetThread();
  Must be called from within the desired thread.  
   
 > [!NOTE]
->  If you are porting an MFC project calling `AfxGetThread` from Visual C++ versions 4.2, 5.0, or 6.0, `AfxGetThread` calls [AfxGetApp](#afxgetapp) if no thread is found. In Visual C+ .NET and later, `AfxGetThread` returns **NULL** if no thread was found. If you want the application thread, you must call `AfxGetApp`.  
+>  If you are porting an MFC project calling `AfxGetThread` from Visual C++ versions 4.2, 5.0, or 6.0, `AfxGetThread` calls [AfxGetApp](#afxgetapp) if no thread is found. In more recent versions of the compiler, `AfxGetThread` returns **NULL** if no thread was found. If you want the application thread, you must call `AfxGetApp`.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#132](../../mfc/reference/codesnippet/cpp/application-information-and-management_6.cpp)]  
@@ -367,9 +367,9 @@ BOOL AFXAPI AfxInitRichEdit();
 ```  
   
 ### Remarks  
- This function is provided for backward compatibility. Applications created with Visual C++ .NET and later use [AfxInitRichEdit2](#afxinitrichedit2).  
+ This function is provided for backward compatibility. New applications should use [AfxInitRichEdit2](#afxinitrichedit2).  
   
- `AfxInitRichEdit` loads RICHED32.DLL to initialize version 1.0 of the rich edit control. To use version 2.0 and 3.0 of the rich edit control, RICHED20.DLL needs to be loaded. This is accomplished with a call to [AfxInitRichEdit2](#afxinitrichedit2). If you have dialog resources with the rich edit control created prior to Visual C++ .NET, the rich edit controls are automatically version 1.0. Rich edit controls inserted using the Visual C++ .NET Resource Editor are version 2.0.  
+ `AfxInitRichEdit` loads RICHED32.DLL to initialize version 1.0 of the rich edit control. To use version 2.0 and 3.0 of the rich edit control, RICHED20.DLL needs to be loaded. This is accomplished with a call to [AfxInitRichEdit2](#afxinitrichedit2).  
   
  To update rich edit controls in existing Visual C++ applications to version 2.0, open the .RC file as text, change the class name of each rich edit control from "RICHEDIT" to "RichEdit20a". Then replace the call to `AfxInitRichEdit` with `AfxInitRichEdit2`.  
   

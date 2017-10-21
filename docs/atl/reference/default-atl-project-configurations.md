@@ -1,7 +1,7 @@
 ---
 title: "Default ATL Project Configurations | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/20/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
@@ -16,12 +16,7 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # Default ATL Project Configurations
-This topic compares the default ATL project configurations in Visual C++ .NET with the default project configurations in Visual C++ 6.0.  
-  
-## Visual C++ .NET Default Configurations  
- In Visual C++ .NET, the ATL Project Wizard creates two project configurations by default.  
-  
-### Visual C++ .NET Configurations  
+The ATL Project Wizard creates two project configurations by default:  
   
 |Configuration|Character set|Use of ATL|  
 |-------------------|-------------------|----------------|  
@@ -30,20 +25,7 @@ This topic compares the default ATL project configurations in Visual C++ .NET wi
   
  **Character set**, **Use of ATL** and can all be changed in the **Project Settings** dialog under the **General** tab. You can also add your own configurations using the Configuration Manager. For details, see [Build Configurations](/visualstudio/ide/understanding-build-configurations).  
   
-## Version 6.0 Default Configurations  
- In Visual C++ version 6.0, the ATL COM AppWizard (now called the ATL Project Wizard) created six project configurations by default. The configurations were variations on Release, Debug, Unicode, and use of CRT and ATL settings. All these configurations can be duplicated in Visual C++ .NET using the Configuration Manager, if so desired.  
-  
-### Version 6.0 Configurations  
-  
-|Configuration|Character set|Use of ATL|  
-|-------------------|-------------------|----------------|  
-|Debug|MBCS|Static|  
-|Debug Unicode|UNICODE|Static|  
-|Release Min Dependency|MBCS|Static|  
-|Release Min Dependency Unicode|UNICODE|Static|  
-|Release Min Size|MBCS|DLL|  
-|Release Min Size Unicode|UNICODE|DLL|  
-  
+
 ## See Also  
  [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)   
  [Working with Project Properties](../../ide/working-with-project-properties.md)   

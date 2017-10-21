@@ -43,7 +43,7 @@ This topic discusses issues that arise when compiling native code with **/clr** 
  Projects previous built with Visual C++ 2003 should also first be compiled without **/clr** as Visual Studio now has increased ANSI/ISO compliance and some breaking changes. The change that is likely to require the most attention is [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md). Code that uses the CRT is very likely to produce deprecation warnings. These warnings can be suppressed, but migrating to the new [Security-Enhanced Versions of CRT Functions](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) is preferred, as they provide better security and may reveal security issues in your code.  
   
 ### Upgrading from Managed Extensions for C++  
- Projects built with Visual C++ .NET or Visual C++ 2003 that used Managed Extensions for C++ must be rewritten to use the new syntax, as these extensions are no longer supported. Code written with Managed Extensions for C++ won't compile under **/clr**.  
+ Starting in Visual Studio 2005, code written with Managed Extensions for C++ won't compile under **/clr**.  
   
 ## Convert C Code to C++  
  Although Visual Studio will compile C files, it is necessary to convert them to C++ for a **/clr** compilation. The actual filename doesn't have to be changed; you can use **/Tp** (see [/Tc, /Tp, /TC, /TP (Specify Source File Type)](../build/reference/tc-tp-tc-tp-specify-source-file-type.md).) Note that although C++ source code files are required for **/clr**, it is not necessary to re-factor your code to use object-oriented paradigms.  
@@ -106,13 +106,13 @@ COMObj2->Method(args);  // C++ equivalent
  Differing versions of data types can cause the linker to fail because the metadata generated for the two types doesn't match. (This is usually caused when members of a type are conditionally defined, but the conditions are not the same for all CPP files that use the type.) In this case the linker fails, reporting only the symbol name and the name of the second OBJ file where the type was defined. It is often useful to rotate the order that OBJ files are sent to the linker to discover the location of the other version of the data type.  
   
 ### Loader Lock Deadlock  
- In Visual C++ .NET and Visual C++ 2003, initialization under **/clr** was susceptible to non-deterministic deadlock. This issue is known as "loader lock deadlock". In Visual Studio 2010, this deadlock is easier to avoid, it is detected and reported at runtime, and is no longer non-deterministic. Encountering the loader lock problem is still possible, but now it's much easier to avoid and fix. See [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md) for detailed background, guidance, and solutions.  
+ In Visual Studio 2010 and later, the "loader lock deadlock" can still occur as in earlier versions, but is deterministic and is detected and reported at runtime. See [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md) for detailed background, guidance, and solutions.  
   
 ### Data Exports  
  Exporting DLL data is error-prone, and not recommended. This is because the data section of a DLL is not guaranteed to be initialized until some managed portion of the DLL has been executed. Reference metadata with [#using Directive](../preprocessor/hash-using-directive-cpp.md).  
   
 ### Type Visibility  
- Native types are now private by default. In Visual C++ .NET 2002 and Visual C++ 2003, native types were public by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding `public` to these types.  
+ Native types are private by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding `public` to these types.  
   
 ### Floating Point and Alignment Issues  
  `__controlfp` is not supported on the common language runtime (see [_control87, _controlfp, \__control87_2](../c-runtime-library/reference/control87-controlfp-control87-2.md) for more information). The CLR will also not respect [align](../cpp/align-cpp.md).  

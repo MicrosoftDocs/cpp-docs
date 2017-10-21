@@ -73,7 +73,7 @@ In the Visual Studio integrated development environment (IDE), there are several
  Provides links to an overview of building programs in C++, compiler and linker options, and additional build tools.  
   
  [Upgrading Projects from Earlier Versions of Visual C++](../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
- Provides links to topics covering issues on upgrading Visual C++ 6.0 and later projects to Visual C++ .NET.  
+ Provides links to topics covering issues on upgrading your C++ project to more recent versions of the compiler toolset.  
   
 [Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)  
   Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.  

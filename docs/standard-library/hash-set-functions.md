@@ -43,7 +43,7 @@ void swap(
   
  in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See the code example for the member class [hash_set::swap](../standard-library/hash-set-class.md#swap) for an example that uses the template version of `swap`.  
@@ -73,7 +73,7 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
   
  in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See the code example for the member class [hash_multiset::swap](../standard-library/hash-multiset-class.md#swap) for an example that uses the template version of `swap`.  

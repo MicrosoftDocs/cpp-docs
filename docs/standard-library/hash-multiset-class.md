@@ -66,8 +66,6 @@ class hash_multiset
   
  The iterator provided by the hash_multiset class is a bidirectional iterator, but the class member functions insert and hash_multiset have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own hash_multiset of requirements, and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal hash_multiset of functionality, but it is enough to be able to talk meaningfully about a range of iterators [ `first`, `last`) in the context of the class member functions.  
   
- In Visual C++ .NET 2003, members of the <hash_map> and <hash_set> header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
-  
 ### Constructors  
   
 |||  
@@ -168,7 +166,7 @@ iterator begin();
 ### Remarks  
  If the return value of **begin** is assigned to a `const_iterator`, the elements in the hash_multiset object cannot be modified. If the return value of **begin** is assigned to an **iterator**, the elements in the hash_multiset object can be modified.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -227,7 +225,7 @@ const_iterator cbegin() const;
 ### Remarks  
  With the return value of `cbegin`, the elements in the `hash_multiset` object cannot be modified.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -274,7 +272,7 @@ const_iterator cend() const;
 ### Remarks  
  `cend` is used to test whether an iterator has reached the end of its `hash_multiset`. The value returned by `cend` should not be dereferenced.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -317,7 +315,7 @@ void clear();
 ```  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -364,7 +362,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 ### Remarks  
  A type `const_iterator` cannot be used to modify the value of an element.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See example for [begin](#begin) for an example using `const_iterator`.  
@@ -385,7 +383,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
   
  In most cases, a [const_iterator](#const_iterator) should be used to access the elements in a **const** hash_multiset object.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ##  <a name="const_reference"></a>  hash_multiset::const_reference  
   
@@ -399,7 +397,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
 ```  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -449,7 +447,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 ### Remarks  
  A type `const_reverse_iterator` cannot modify the value of an element and is use to iterate through the hash_multiset in reverse.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See the example for [rend](#rend) for an example of how to declare and use the `const_reverse_iterator`.  
@@ -477,7 +475,7 @@ size_type count(const Key& key) const;
   
  [ `lower_bound` (_ `Key` ), `upper_bound` (\_ `Key` ) ).  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   The following example demonstrates the use of the hash_multiset::count member function.  
@@ -536,7 +534,7 @@ const_reverse_iterator crbegin() const;
   
  `crbegin` can be used to iterate through a `hash_multiset` backwards.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -588,7 +586,7 @@ const_reverse_iterator crend() const;
   
  `crend` can be used to test to whether a reverse iterator has reached the end of its hash_multiset.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -636,7 +634,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::di
   
  Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers such as set. Subtraction between iterators is only supported by random-access iterators provided by a random-access container such as vector or deque.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -724,7 +722,7 @@ iterator insert(ValTy&& val);
  The `emplace` member function returns an iterator that points to the position where the new element was inserted.  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -780,7 +778,7 @@ iterator insert(
 ### Remarks  
  Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -823,7 +821,7 @@ bool empty() const;
  **true** if the hash_multiset is empty; **false** if the hash_multiset is nonempty.  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -876,7 +874,7 @@ iterator end();
 ### Remarks  
  **end** is used to test whether an iterator has reached the end of its hash_multiset. The value returned by **end** should not be dereferenced.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -942,7 +940,7 @@ pair <iterator, iterator> equal_range (const Key& key);
   
  To access the first iterator of a pair `pr` returned by the member function, use `pr`. **first** and to dereference the lower bound iterator, use \*( `pr`. **first**). To access the second iterator of a pair `pr` returned by the member function, use `pr`. **second** and to dereference the upper bound iterator, use \*( `pr`. **second**).  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -1041,7 +1039,7 @@ size_type erase(const key_type& key);
 ### Remarks  
  The member functions never throw an exception.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   The following example demonstrates the use of the hash_multiset::erase member function.  
@@ -1153,7 +1151,7 @@ const_iterator find(const Key& key) const;
   
  If the return value of **find** is assigned to a `const_iterator`, the hash_multiset object cannot be modified. If the return value of **find** is assigned to an **iterator**, the hash_multiset object can be modified.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -1224,7 +1222,7 @@ Allocator get_allocator() const;
 ### Remarks  
  Allocators for the hash_multiset class specify how the class manages storage. The default allocators supplied with C++ Standard Library container classes are sufficient for most programming needs. Writing and using your own allocator class is an advanced C++ topic.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -1434,7 +1432,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 ### Remarks  
  A type **iterator** can be used to modify the value of an element.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See example for [begin](#begin) for an example of how to declare and use **iterator**.  
@@ -1464,7 +1462,7 @@ key_compare key_comp() const;
   
  Note that both [key_compare](#key_compare) and [value_compare](#value_compare) are synonyms for the template parameter **Traits**. Both types are provided for the hash_multiset and hash_multiset classes, where they are identical, for compatibility with the hash_map and hash_multimap classes, where they are distinct.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -1533,7 +1531,7 @@ typedef Traits key_compare;
   
  Note that both `key_compare` and value_compare are synonyms for the template parameter **Traits**. Both types are provided for the hash_set and hash_multiset classes, where they are identical, for compatibility with the hash_map and hash_multimap classes, where they are distinct.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See example for [key_comp](#key_comp) for an example of how to declare and use `key_compare`.  
@@ -1556,7 +1554,7 @@ typedef Key key_type;
   
  For more information on `Key`, see the Remarks section of the [hash_multiset Class](../standard-library/hash-multiset-class.md) topic.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See example for [value_type](#value_type) for an example of how to declare and use `key_type`.  
@@ -1582,7 +1580,7 @@ iterator lower_bound(const Key& key);
  An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of the first element in a hash_multiset with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the hash_multiset if no match is found for the key.  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -1642,7 +1640,7 @@ size_type max_size() const;
  The maximum possible length of the hash_multiset.  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -1742,7 +1740,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::po
   
  In most cases, an [iterator](#iterator) should be used to access the elements in a multiset object.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ##  <a name="rbegin"></a>  hash_multiset::rbegin  
   
@@ -1767,7 +1765,7 @@ reverse_iterator rbegin();
   
  `rbegin` can be used to iterate through a hash_multiset backwards.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -1839,7 +1837,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::re
 ```  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -1901,7 +1899,7 @@ reverse_iterator rend();
   
  `rend` can be used to test to whether a reverse iterator has reached the end of its hash_multiset.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -1978,7 +1976,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::reve
 ### Remarks  
  A type `reverse_iterator` is use to iterate through the hash_multiset in reverse.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See example for [rbegin](#rbegin) for an example of how to declare and use `reverse_iterator`.  
@@ -1998,7 +1996,7 @@ size_type size() const;
  The current length of the hash_multiset.  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -2042,7 +2040,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::si
 ```  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See example for [size](#size) for an example of how to declare and use `size_type`  
@@ -2065,7 +2063,7 @@ void swap(hash_multiset& right);
 ### Remarks  
  The member function invalidates no references, pointers, or iterators that designate elements in the two hash_multisets whose elements are being exchanged.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -2142,7 +2140,7 @@ iterator upper_bound(const Key& key);
  An [iterator](#iterator) or [const_iterator](#const_iterator) that addresses the location of the first element in a hash_multiset with a key greater than the argument key, or that addresses the location succeeding the last element in the hash_multiset if no match is found for the key.  
   
 ### Remarks  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -2224,7 +2222,7 @@ value_compare value_comp() const;
   
  Note that both [key_compare](#key_compare) and [value_compare](#value_compare) are synonyms for the template parameter **Traits**. Both types are provided for the hash_multiset and hash_multiset classes, where they are identical, for compatibility with the hash_map and hash_multimap classes, where they are distinct.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -2298,7 +2296,7 @@ typedef key_compare value_compare;
   
  Note that both [key_compare](#key_compare) and **value_compare** are synonyms for the template parameter **Traits**. Both types are provided for the classes set and multiset, where they are identical, for compatibility with the classes map and multimap, where they are distinct.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   See example for [value_comp](#value_comp) for an example of how to declare and use `value_compare`.  

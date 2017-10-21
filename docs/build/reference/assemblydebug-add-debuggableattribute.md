@@ -42,7 +42,7 @@ manager: "ghogen"
 ```  
   
 ## Remarks  
- In Visual C++ .NET 2003 and later, it is necessary to explicitly specify that a managed image be debuggable. Using [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) alone is not sufficient.  
+ It is necessary to explicitly specify that a managed image be debuggable. Using [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) alone is not sufficient.  
   
  Other linker options that affect assembly generation are:  
   

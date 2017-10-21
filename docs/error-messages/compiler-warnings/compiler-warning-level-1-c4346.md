@@ -19,9 +19,7 @@ manager: "ghogen"
 # Compiler Warning (level 1) C4346
 'name' : dependent name is not a type  
   
- The [typename](../../cpp/typename.md) keyword is required if a dependent name is to be treated as a type. This is a breaking change in the Visual C++ .NET 2003 compiler, made in order to conform to the ISO C++ standard.  
-  
- For code that works the same in all versions of Visual C++, add `typename` to the declaration.  
+ The [typename](../../cpp/typename.md) keyword is required if a dependent name is to be treated as a type. For code that works the same in all versions of Visual C++, add `typename` to the declaration.  
   
  The following sample generates C4346:  
   
