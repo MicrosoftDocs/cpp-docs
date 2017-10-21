@@ -107,7 +107,7 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 ### Remarks  
  The comparison between hash_set objects is based on a pairwise comparison of their elements. Two hash_sets are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -172,7 +172,7 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
 ### Remarks  
  The comparison between hash_multiset objects is based on a pairwise comparison between their elements. Two hash_multisets are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
   
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext Namespace](../standard-library/stdext-namespace.md) for more information.  
+   
   
 ### Example  
   
@@ -236,8 +236,6 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
   
 ### Remarks  
  The comparison between hash_multiset objects is based on a pairwise comparison of their elements. Two hash_multisets are equal if they have the same number of elements and their respective elements have the same values. Otherwise, they are unequal.  
-  
- In Visual C++ .NET 2003, members of the [<hash_map>](../standard-library/hash-map.md) and [<hash_set>](../standard-library/hash-set.md) header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [The stdext namespace](../standard-library/stdext-namespace.md) for more information.  
   
 ### Example  
   

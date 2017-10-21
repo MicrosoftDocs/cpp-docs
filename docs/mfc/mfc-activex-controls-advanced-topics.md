@@ -34,7 +34,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
  For a general overview of the MFC database classes, see [MFC Database Classes (DAO and ODBC)](../data/mfc-database-classes-odbc-and-dao.md). The article introduces both the MFC ODBC classes and the MFC DAO classes and directs you to more details on either.  
   
 > [!NOTE]
->  As of Visual C++ .NET, the Visual C++ environment and wizards no longer support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-programming.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.  
+>  The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-programming.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.  
   
 ##  <a name="_core_implementing_a_parameterized_property"></a> Implementing a Parameterized Property  
  A parameterized property (sometimes called a property array) is a method for exposing a homogeneous collection of values as a single property of the control. For example, you can use a parameterized property to expose an array or a dictionary as a property. In Visual Basic, such a property is accessed using array notation:  

@@ -31,4 +31,3 @@ cannot open object file filename
   
 4.  A read-only file has the same name.  
   
- In Visual C++ .NET (version 1300 of the compiler), there is a bug that requires the user locale to be set correctly when the file name (or directory path to the file name) contains MBCS characters. Setting the system locale is not sufficient; the user locale must be set to process MBCS characters.

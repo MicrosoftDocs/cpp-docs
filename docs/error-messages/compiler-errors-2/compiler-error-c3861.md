@@ -100,3 +100,37 @@ int main() {
    printf( "The line entered was: %s\n", line );  
 }  
 ```
+The following sample generates C3767 because the compiler cannot use argument dependent lookup for FriendFunc:  
+  
+```  
+namespace N {  
+   class C {  
+      friend void FriendFunc() {}  
+      friend void AnotherFriendFunc(C* c) {}  
+   };  
+}  
+  
+int main() {  
+   using namespace N;  
+   FriendFunc();   // C3861 error  
+   C* pC = new C();  
+   AnotherFriendFunc(pC);   // found via argument-dependent lookup  
+}  
+```  
+  
+To fix the error, declare the friend in class scope and define it in namespace scope:  
+  
+
+class MyClass {  
+   int m_private;  
+   friend void func();  
+};  
+  
+void func() {  
+   MyClass s;  
+   s.m_private = 0;  
+}  
+  
+int main() {  
+   func();  
+}  

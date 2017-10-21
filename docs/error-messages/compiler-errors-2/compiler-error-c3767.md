@@ -77,42 +77,4 @@ ref class Der : public Base {
 };  
 ```  
   
- In Visual C++ .NET 2002, the compiler changed the way it looked up symbols. In some cases, it would have automatically looked for symbols in a specified namespace. Now, it uses argument-dependent lookup.  
-  
- The following sample generates C3767:  
-  
-```  
-// C3767e.cpp  
-namespace N {  
-   class C {  
-      friend void FriendFunc() {}  
-      friend void AnotherFriendFunc(C* c) {}  
-   };  
-}  
-  
-int main() {  
-   using namespace N;  
-   FriendFunc();   // C3767 error  
-   C* pC = new C();  
-   AnotherFriendFunc(pC);   // found via argument-dependent lookup  
-}  
-```  
-  
- For code that is valid in Visual C++ .NET 2003 and Visual C++ .NET 2002, declare the friend in class scope and define it in namespace scope:  
-  
-```  
-// C3767f.cpp  
-class MyClass {  
-   int m_private;  
-   friend void func();  
-};  
-  
-void func() {  
-   MyClass s;  
-   s.m_private = 0;  
-}  
-  
-int main() {  
-   func();  
-}  
-```
+ 
