@@ -70,7 +70,7 @@ Here are some common problems that cause LNK2019:
   
 -   **You build a console application by using settings for a Windows application**. If the error message is similar to **unresolved external symbol WinMain referenced in function**`function_name`, link by using **/SUBSYSTEM:CONSOLE** instead of **/SUBSYSTEM:WINDOWS**. For more information about this setting, and for instructions on how to set this property in Visual Studio, see [/SUBSYSTEM (Specify Subsystem)](../../build/reference/subsystem-specify-subsystem.md).  
   
--   **Try to import 64-bit symbol into 32-bit code**.
+-   **You attempt to link 64-bit libraries to 32-bit code, or 32-bit libraries to 64-bit code.** Libraries and object files linked to your code must be compiled for the same architecture as your code. Verify that the libraries your project references are compiled for the same architecture as your project. Make sure the [/LIBPATH](../../build/reference/libpath-additional-libpath.md) or **Additional Library Directories** path option used by the linker points to libraries built for the correct architecture.
 
 -   **You use different compiler options for function inlining in different source files.** Using inlined functions defined in .cpp files and mixing function inlining compiler options in different source files can cause LNK2019. For more information, see [Function Inlining Problems](../../error-messages/tool-errors/function-inlining-problems.md).  
   
