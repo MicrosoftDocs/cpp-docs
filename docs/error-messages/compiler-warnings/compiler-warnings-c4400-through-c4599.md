@@ -157,7 +157,7 @@ You may find additional assistance for errors and warnings on the MSDN public fo
 |[Compiler Warning (level 3) C4557](../../error-messages/compiler-warnings/compiler-warning-level-3-c4557.md)|'__assume' contains effect '*effect*'|  
 |[Compiler Warning (level 1) C4558](../../error-messages/compiler-warnings/compiler-warning-level-1-c4558.md)|value of operand '*value*' is out of range '*lower_bound* - *upper_bound*'|  
 |[Compiler Warning (level 4) C4559](../../error-messages/compiler-warnings/compiler-warning-level-4-c4559.md)|'*function*': redefinition; the function gains __declspec(modifier)|  
-|[Compiler Warning (level 1) C4561](../../error-messages/compiler-warnings/compiler-warning-level-1-c4561.md)|'\_\_fastcall' incompatible with the '/clr' option: converting to '\__stdcall'|  
+|[Compiler Warning (level 1) C4561](../../error-messages/compiler-warnings/compiler-warning-level-1-c4561.md)|'__fastcall' incompatible with the '/clr' option: converting to '__stdcall'|  
 |Compiler warning (level 4) C4562|fully prototyped functions are required with the '/clr' option: converting '()' to '(void)'|  
 |[Compiler Warning (level 4) C4564](../../error-messages/compiler-warnings/compiler-warning-level-4-c4564.md)|method '*method*' of 'class' '*classname*' defines unsupported default parameter '*parameter*'|  
 |[Compiler Warning (level 4) C4565](../../error-messages/compiler-warnings/compiler-warning-level-4-c4565.md)|'*function*': redefinition; the symbol was previously declared with __declspec(modifier)|  
@@ -169,7 +169,7 @@ You may find additional assistance for errors and warnings on the MSDN public fo
 |[Compiler Warning (level 1) C4572](../../error-messages/compiler-warnings/compiler-warning-level-1-c4572.md)|[ParamArray] attribute is deprecated under /clr, use '...' instead|  
 |Compiler warning (level 1) C4573|the usage of '*lambda function*' requires the compiler to capture 'this' but the current default capture mode does not allow it|  
 |Compiler warning (level 4) C4574|'*Identifier*' is defined to be '0': did you mean to use '#if identifier'?|  
-|Compiler warning (level 1) C4575|'\_\_vectorcall' incompatible with the '/clr' option: converting to '\__stdcall'|  
+|Compiler warning (level 1) C4575|'__vectorcall' incompatible with the '/clr' option: converting to '__stdcall'|  
 |[Compiler Warning (level 3) C4580](../../error-messages/compiler-warnings/compiler-warning-level-3-c4580.md)|[attribute] is deprecated; instead specify System::Attribute or Platform::Metadata as a base class|  
 |[Compiler Warning (level 1) C4581](../../error-messages/compiler-warnings/compiler-warning-level-1-c4581.md)|deprecated behavior: '"*string*"' replaced with '*string*' to process attribute|  
 |Compiler warning (level 4) C4582|'*type*': constructor is not implicitly called|  

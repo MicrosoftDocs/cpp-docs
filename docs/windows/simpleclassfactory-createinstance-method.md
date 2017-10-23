@@ -17,42 +17,46 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # SimpleClassFactory::CreateInstance Method
-Creates an instance of the specified interface.  
-  
-## Syntax  
-  
-```  
-  
-STDMETHOD(  
-   CreateInstance  
-)  
-   (_Inout_opt_ IUnknown* pUnkOuter,   
-   REFIID riid,   
-   _Deref_out_ void** ppvObject);  
-```  
-  
-#### Parameters  
- `pUnkOuter`  
- Must be `nullptr`; otherwise, the return value is CLASS_E_NOAGGREGATION.  
-  
- SimpleClassFactory doesn't support aggregation. If aggregation were supported and the object being created was part of an aggregate, `pUnkOuter` would be a pointer to the controlling IUnknown interface of the aggregate.  
-  
- `riid`  
- Interface ID of the object to create.  
-  
- `ppvObject`  
- When this operation completes, pointer to an instance of the object specified by the `riid` parameter.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Remarks  
- If __WRL_STRICT\_\_ is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the ClassicCom or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [SimpleClassFactory Class](../windows/simpleclassfactory-class.md)
+
+Creates an instance of the specified interface.
+
+## Syntax
+
+```cpp
+STDMETHOD( CreateInstance )(
+   _Inout_opt_ IUnknown* pUnkOuter,
+   REFIID riid,
+   _Deref_out_ void** ppvObject
+);
+```
+
+### Parameters
+
+*pUnkOuter*  
+Must be `nullptr`; otherwise, the return value is CLASS_E_NOAGGREGATION.
+
+SimpleClassFactory doesn't support aggregation. If aggregation were supported and the object being created was part of an aggregate, `pUnkOuter` would be a pointer to the controlling IUnknown interface of the aggregate.
+
+*riid*  
+Interface ID of the object to create.
+
+*ppvObject*  
+When this operation completes, pointer to an instance of the object specified by the `riid` parameter.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Remarks
+
+If &#95;&#95;WRL_STRICT&#95;&#95; is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the ClassicCom or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[SimpleClassFactory Class](../windows/simpleclassfactory-class.md)

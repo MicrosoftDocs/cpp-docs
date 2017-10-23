@@ -17,26 +17,30 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # ComPtrRefBase::operator IInspectable** Operator
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-operator IInspectable**() const;  
-```  
-  
-## Remarks  
- Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IInspectable interface.  
-  
- An error is emitted if the current ComPtrRefBase doesn't derive from IInspectable.  
-  
- This cast is available only if **__WRL_CLASSIC_COM\_\_** is defined.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ComPtrRefBase Class](../windows/comptrrefbase-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+operator IInspectable**() const;
+```
+
+## Remarks
+
+Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IInspectable interface.
+
+An error is emitted if the current ComPtrRefBase doesn't derive from IInspectable.
+
+This cast is available only if **&#95;&#95;WRL_CLASSIC_COM&#95;&#95;** is defined.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ComPtrRefBase Class](../windows/comptrrefbase-class.md)   
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

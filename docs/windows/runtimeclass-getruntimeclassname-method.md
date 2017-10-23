@@ -17,30 +17,36 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # RuntimeClass::GetRuntimeClassName Method
-Gets the runtime class name of the current RuntimeClass object.  
-  
-## Syntax  
-  
-```  
-STDMETHOD(  
-   GetRuntimeClassName  
-)(_Out_ HSTRING* runtimeName);  
-```  
-  
-## Parameters  
- `runtimeName`  
- When this operation completes, the runtime class name.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Remarks  
- An assert error is emitted if __WRL_STRICT\__or \__WRL_FORCE_INSPECTABLE_CLASS_MACRO\_\_ isn't defined.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [RuntimeClass Class](../windows/runtimeclass-class.md)
+
+Gets the runtime class name of the current RuntimeClass object.
+
+## Syntax
+
+```cpp
+STDMETHOD( GetRuntimeClassName )(
+    _Out_ HSTRING* runtimeName
+);
+```
+
+### Parameters
+
+*runtimeName*  
+When this operation completes, the runtime class name.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Remarks
+
+An assert error is emitted if &#95;&#95;WRL_STRICT&#95;&#95; or &#95;&#95;WRL_FORCE_INSPECTABLE_CLASS_MACRO&#95;&#95; isn't defined.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[RuntimeClass Class](../windows/runtimeclass-class.md)

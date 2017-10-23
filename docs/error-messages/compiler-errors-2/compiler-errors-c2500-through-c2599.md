@@ -34,7 +34,7 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Error C2505](compiler-error-C2505.md)|'*symbol*': '__declspec(*specifier*)' can only be applied to declarations or definitions of global objects or static data members|  
 |[Compiler Error C2506](compiler-error-C2506.md)|'*member*': '__declspec(*specifier*)' cannot be applied to this symbol|  
 |[Compiler Error C2507](compiler-error-C2507.md)|'*identifier*': too many virtual modifiers on the base class|  
-|Compiler Error C2508|'*identifier*': '\_\_declspec(*specifier1*)' cannot be combined with '\_\_declspec(*specifier2*)'|  
+|Compiler Error C2508|'*identifier*': '__declspec(*specifier1*)' cannot be combined with '__declspec(*specifier2*)'|  
 |[Compiler Error C2509](compiler-error-C2509.md)|'*identifier*': member function not declared in '*class*'|  
 |[Compiler Error C2510](compiler-error-C2510.md)|'*identifier*': left of '::' must be a class/struct/union|  
 |[Compiler Error C2511](compiler-error-C2511.md)|'*identifier*': overloaded member function not found in '*class*'|  

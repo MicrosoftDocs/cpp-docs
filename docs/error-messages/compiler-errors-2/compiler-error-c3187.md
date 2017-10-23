@@ -17,8 +17,9 @@ ms.author: "corob"
 manager: "ghogen"
 ---
 # Compiler Error C3187
-'__func\_\_' : is only available within the body of a function  
-  
- The predefined macro is not available outside the body of a function.  
-  
- To correct this error, move the macro inside the body of a function.
+
+> '&#95;&#95;func&#95;&#95;' : is only available within the body of a function
+
+The predefined macro is not available outside the body of a function.
+
+To correct this error, move the macro inside the body of a function.
