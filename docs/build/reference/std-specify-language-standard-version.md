@@ -54,7 +54,7 @@ The **/std** option in effect during a C++ compilation can be detected by use of
 
 The **/std:c++14** and **/std:c++latest** options are available beginning in Visual C++ 2015 Update 3. The **/std:c++17** option is available beginning in Visual C++ 2017 Update Version 15.3.  
   
- [!NOTE]
+> [!NOTE]
 > Depending on the Visual C++ compiler version or update level, certain C++14 features may not be fully implemented or fully conformant when you specify the **/std:c++14** option. For example, the Visual C++ 2017 RTM compiler does not fully support C++14-conformant `constexpr`, expression SFINAE, or 2-phase name lookup. For an overview of C++ language conformance in Visual C++, see [Visual C++ Language Conformance](../../visual-cpp-language-conformance.md). 
   
 ### To set this compiler option in the Visual Studio development environment  
