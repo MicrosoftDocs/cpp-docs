@@ -24,7 +24,7 @@ f1_keywords:
   - VC.Project.VCConfiguration.UseOfSTL
 ---
 
-# General Properties (Linux)
+# General Properties (Linux C++)
 
 Property | Description | Choices
 --- | ---| ---

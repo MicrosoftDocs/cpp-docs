@@ -1,5 +1,5 @@
 ---
-title: "VC++ Directories (Linux) | Microsoft Docs"
+title: "VC++ Directories (Linux C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -19,7 +19,7 @@ f1_keywords:
   - VC.Project.VCDirectories.ExcludePath
 ---
 
-# VC++ Directories (Linux)
+# VC++ Directories (Linux C++)
 
 Property | Description
 --- | ---

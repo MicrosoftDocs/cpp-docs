@@ -1,5 +1,5 @@
 ---
-title: "Debugger Properties (Linux)| Microsoft Docs"
+title: "Debugger Properties (Linux C++)| Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
@@ -20,7 +20,7 @@ f1_keywords:
   - VC.Project.LinuxDebugger.DebugChildProcesses
 ---
 
-# C++ Debugging Properties (Linux)
+# C++ Debugging Properties (Linux C++)
 
 Property | Description | Choices
 --- | ---| ---

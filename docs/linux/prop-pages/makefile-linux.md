@@ -19,7 +19,7 @@ f1_keywords:
   - VC.Project.VCConfiguration.BuildLogFile
 ---
 
-# MakeFile Project Properties (Linux)
+# MakeFile Project Properties (Linux C++)
 This is a partial list of the properties available in a Linux Makefile project. Many MakeFile project properties are identical to the 
 
 ## General
@@ -34,7 +34,7 @@ Remote Build Root Directory | Specifies a path to a directory on the remote mach
 Remote Build Project Directory | Specifies a path to a directory on the remote machine or device for the project.
 
 ## Debugging
-See [Debugger Properties (Linux)](debuggin-linux.md)
+See [Debugger Properties (Linux C++)](debuggin-linux.md)
 
 ## Copy Sources
 See [Copy Sources Project Properties (Linux C++)](copy-sources-project.md).

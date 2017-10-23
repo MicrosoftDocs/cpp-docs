@@ -19,7 +19,7 @@ f1_keywords:
   - VC.Project.VCConfiguration.BuildLogFile
 ---
 
-# Custom Build Step Properties (Linux)
+# Custom Build Step Properties (Linux C++)
 
 
 Property | Description
