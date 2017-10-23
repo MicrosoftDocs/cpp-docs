@@ -16,30 +16,36 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # SimpleActivationFactory::GetRuntimeClassName Method
-Gets the runtime class name of an instance of the class specified by the `Base` class template parameter.  
-  
-## Syntax  
-  
-```  
-STDMETHOD(  
-   GetRuntimeClassName  
-)(_Out_ HSTRING* runtimeName);  
-```  
-  
-#### Parameters  
- `runtimeName`  
- When this operation completes, the runtime class name.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Remarks  
- If __WRL_STRICT\_\_ is defined, an assert error is emitted if the class specified by the `Base` class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)
+
+Gets the runtime class name of an instance of the class specified by the `Base` class template parameter.
+
+## Syntax
+
+```cpp
+STDMETHOD( GetRuntimeClassName )(
+    _Out_ HSTRING* runtimeName
+);
+```
+
+### Parameters
+
+*runtimeName*  
+When this operation completes, the runtime class name.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Remarks
+
+If &#95;&#95;WRL_STRICT&#95;&#95; is defined, an assert error is emitted if the class specified by the `Base` class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)

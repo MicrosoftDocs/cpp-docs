@@ -17,30 +17,36 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # SimpleActivationFactory::ActivateInstance Method
-Creates an instance of the specified interface.  
-  
-## Syntax  
-  
-```  
-STDMETHOD(  
-   ActivateInstance  
-)(_Deref_out_ IInspectable **ppvObject);  
-```  
-  
-#### Parameters  
- `ppvObject`  
- When this operation completes, pointer to an instance of the object specified by the `Base` class template parameter.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Remarks  
- If __WRL_STRICT\_\_ is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)
+
+Creates an instance of the specified interface.
+
+## Syntax
+
+```cpp
+STDMETHOD( ActivateInstance )(
+    _Deref_out_ IInspectable **ppvObject
+);
+```
+
+### Parameters
+
+*ppvObject*  
+When this operation completes, pointer to an instance of the object specified by the `Base` class template parameter.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Remarks
+
+If &#95;&#95;WRL_STRICT&#95;&#95; is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)
