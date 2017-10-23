@@ -100,9 +100,9 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Error C3271](compiler-error-c3271.md)|'*field*': invalid value '*number*' for the FieldOffset attribute|  
 |[Compiler Error C3272](compiler-error-c3272.md)|'*symbol*': symbol requires FieldOffset, as it is a member of struct/class *type_name* defined with StructLayout(LayoutKind::Explicit)|  
 |[Compiler Error C3273](compiler-error-c3273.md)|'*keyword*': not allowed on C++ try block|  
-|[Compiler Error C3274](compiler-error-c3274.md)|finally/\_\_finally without matching try|  
+|[Compiler Error C3274](compiler-error-c3274.md)|finally/&#95;&#95;finally without matching try|  
 |[Compiler Error C3275](compiler-error-c3275.md)|'*identifier*': cannot use this symbol without qualifier|  
-|[Compiler Error C3276](compiler-error-c3276.md)|'*keyword*': jump out of finally/\_\_finally block has undefined behavior during termination handling|  
+|[Compiler Error C3276](compiler-error-c3276.md)|'*keyword*': jump out of finally/&#95;&#95;finally block has undefined behavior during termination handling|  
 |[Compiler Error C3277](compiler-error-c3277.md)|cannot define an unmanaged enum '*enumeration*' inside managed '*type*'|  
 |[Compiler Error C3278](compiler-error-c3278.md)|direct call of interface or pure method '*function*' will fail at runtime|  
 |[Compiler Error C3279](compiler-error-c3279.md)|partial and explicit specializations as well as explicit instantiations of class templates declared in the cli namespace are disallowed|  
