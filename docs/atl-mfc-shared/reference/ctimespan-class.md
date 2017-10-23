@@ -114,7 +114,7 @@ CTimeSpan(
  A `CTimeSpan` object that already exists.  
   
  `time`  
- A **__time64_t** time value, which is the number of seconds in the time span. In Visual C++ versions 6.0 and earlier, `time` was a value of `time_t`. Visual C++ .NET or later silently converts a `time_t` parameter to **__time64_t**.  
+ A **__time64_t** time value, which is the number of seconds in the time span.  
   
  `lDays`, `nHours`, `nMins`, `nSecs`  
  Days, hours, minutes, and seconds, respectively.  

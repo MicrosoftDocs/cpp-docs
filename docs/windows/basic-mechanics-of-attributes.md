@@ -18,8 +18,6 @@ manager: "ghogen"
 # Basic Mechanics of Attributes
 There are three ways to insert attributes into your project. First, you can insert them manually into your source code. Second, you can insert them using the property grid of an object in your project. Finally, you can insert them using the various wizards. For more information on using the Properties window and the various wizards, see [Creating and Managing Visual C++ Projects](../ide/creating-and-managing-visual-cpp-projects.md).  
   
- Starting with Visual C++ .NET, the compiler recognizes the presence of attributes in a source file and is able to dynamically parse and verify them during compilation.  
-  
  As before, when the project is built, the compiler parses each C++ source file, producing an object file. However, when the compiler encounters an attribute, it is parsed and syntactically verified. The compiler then dynamically calls an attribute provider to insert code or make other modifications at compile time. The implementation of the provider differs depending on the type of attribute. For example, ATL-related attributes are implemented by Atlprov.dll.  
   
  The following figure demonstrates the relationship between the compiler and the attribute provider.  

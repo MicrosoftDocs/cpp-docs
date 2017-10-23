@@ -11,8 +11,8 @@ f1_keywords: ["VC.Project.FXCompilerTool.AdditionalOptionsPage"]
 dev_langs: ["C++"]
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
 caps.latest.revision: 8
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 ---
 # HLSL Property Pages

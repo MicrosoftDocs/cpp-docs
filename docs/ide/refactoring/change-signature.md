@@ -8,8 +8,8 @@ ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 ---
 

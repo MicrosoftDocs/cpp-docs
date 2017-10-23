@@ -21,8 +21,7 @@ manager: "ghogen"
 >  This header is obsolete. The alternative is [\<unordered_map>](unordered-map.md).  
   
  Defines the container template classes hash_map and hash_multimap and their supporting templates.  
-  
- In Visual C++ .NET 2003, members of the \<hash_map> and \<hash_set> header files are no longer in the std namespace, but rather have been moved into the stdext namespace. See [stdext Namespace](stdext-namespace.md) for more information.  
+ 
   
 ## Syntax  
   

@@ -16,7 +16,7 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # Creating an Updatable Provider
-Visual C++ 6.0 supported only read-only providers. Visual C++ .NET supports updatable providers or providers that can update (write to) the data store. This topic discusses how to create updatable providers using OLE DB templates.  
+Visual C++ supports updatable providers or providers that can update (write to) the data store. This topic discusses how to create updatable providers using OLE DB templates.  
   
  This topic assumes that you are starting with a workable provider. There are two steps to creating an updatable provider. You must first decide how the provider will make changes to the data store; specifically, whether changes are to be done immediately or deferred until an update command is issued. The section "[Making Providers Updatable](#vchowmakingprovidersupdatable)" describes the changes and settings you need to do in the provider code.  
   

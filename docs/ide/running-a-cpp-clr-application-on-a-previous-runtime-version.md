@@ -16,7 +16,7 @@ ms.author: "corob"
 manager: "ghogen"
 ---
 # Running a C++ /clr Application on a Previous Runtime Version
-Unless otherwise specified, a Visual C++ .NET Framework application is built to run on the common language runtime (CLR) version that the compiler uses to build the application. However, it is possible for an .exe application that is built for one version of the runtime to run on any other version that provides the required functionality.  
+Unless otherwise specified, a C++ .NET Framework application is built to run on the common language runtime (CLR) version that the compiler uses to build the application. However, it is possible for an .exe application that is built for one version of the runtime to run on any other version that provides the required functionality.  
   
  To accomplish this, provide an app.config file that contains runtime version information in the `supportedRuntime` tag.  
   

@@ -11,8 +11,8 @@ f1_keywords: ["VC.Project.FXCompilerTool.ShaderModel", "VC.Project.FXCompilerToo
 dev_langs: ["C++"]
 ms.assetid: 0e02f2a6-f123-43da-b04b-a0719a7c2b03
 caps.latest.revision: 8
-author: "BrianPeek"
-ms.author: "brpeek"
+author: "mikeblome"
+ms.author: "mblome"
 manager: "ghogen"
 ---
 # HLSL Property Pages: General
