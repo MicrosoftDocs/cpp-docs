@@ -11,5 +11,5 @@
 ## [C/C++ Properties (Linux)](prop-pages/c-cpp-linux.md)
 ## [Linker Properties (Linux)](prop-pages/linker-linux.md)
 ## [Build Event Properties (Linux)](prop-pages/build-events-linux.md)
-## [Custom Build Step Properties (Linux)](prop-pages/custom-build-step-linux.md)- 
+## [Custom Build Step Properties (Linux)](prop-pages/custom-build-step-linux.md) 
 ## [Makefile Project Properties (Linux)](prop-pages/makefile-linux.md)
