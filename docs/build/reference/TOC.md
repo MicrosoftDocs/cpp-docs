@@ -202,6 +202,7 @@
 ### [-ENTRY (Entry-Point Symbol)](entry-entry-point-symbol.md)
 ### [-ERRORREPORT (Report Internal Linker Errors)](errorreport-report-internal-linker-errors.md)
 ### [-EXPORT (Exports a Function)](export-exports-a-function.md)
+### [-FILEALIGN (Align sections in files)](filealign.md)
 ### [-FIXED (Fixed Base Address)](fixed-fixed-base-address.md)
 ### [-FORCE (Force File Output)](force-force-file-output.md)
 ### [-FUNCTIONPADMIN (Create Hotpatchable Image)](functionpadmin-create-hotpatchable-image.md)
