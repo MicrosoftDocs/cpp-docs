@@ -34,7 +34,7 @@ Remote Build Root Directory | Specifies a path to a directory on the remote mach
 Remote Build Project Directory | Specifies a path to a directory on the remote machine or device for the project.
 
 ## Debugging
-See [Debugger Properties (Linux C++)](debuggin-linux.md)
+See [Debugger Properties (Linux C++)](debugging-linux.md)
 
 ## Copy Sources
 See [Copy Sources Project Properties (Linux C++)](copy-sources-project.md).
