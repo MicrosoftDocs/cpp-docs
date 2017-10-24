@@ -65,13 +65,6 @@
 ##### [HLSL Property Pages: Output Files](hlsl-property-pages-output-files.md)
 ## [Adding references in Visual C++ projects](adding-references-in-visual-cpp-projects.md)
 ## [How to: Organize Project Output Files for Builds](how-to-organize-project-output-files-for-builds.md)
-# [Android Property Page Topics]
-## [Android Debugger](../ide2/AndroidDebugger.md)
-## [Clang Linker Properties (Android C++)](../ide2/clanglink.md)
-## [Clang Project Properties (Android C++)](../ide2/clang_android.md)
-## [General Project Properties (Android C++)](../ide2/general_android.md)
-## [General Project Properties (Android C++ Makefile)](../ide2/general_makefile_android.md)
-## [Android NMake](../ide2/nmake_android.md)
 # [Deploying Native Desktop Applications (Visual C++)](deploying-native-desktop-applications-visual-cpp.md)
 ## [Deployment in Visual C++](deployment-in-visual-cpp.md)
 ## [Deployment Concepts](deployment-concepts.md)
