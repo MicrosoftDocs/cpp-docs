@@ -23,15 +23,17 @@ A *function object*, or *functor*, is any type that implements operator(). This 
 ## Creating a Function Object  
  To create a function object, create a type and implement operator(), such as:  
   
+```
 class Functor  
-   {  
-   public:  
-   int operator()(int a, int b)  
-   {  
-   return a <b;  
-   }  
-   };  
-  
+{  
+public:  
+    int operator()(int a, int b)  
+    {  
+        return a < b;  
+    }  
+};  
+```
+
  The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it is actually calling operator() of the Functor type. This similarity between calling a function object and a function is how the term function object came about.  
   
 ## Function Objects and Containers  
