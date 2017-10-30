@@ -24,7 +24,7 @@ You can use a project template to create the basic program structure, menus, too
 >  You can create a C-language project by using C++ project templates. In the generated project, locate files that have a .cpp file name extension and change it to .c. Then, on the **Project Properties** page for the project (not for the solution), expand **Configuration Properties**, **C/C++** and select **Advanced**. Change the **Compile As** setting to **Compile as C Code (/TC)**.  
   
 ## Project Templates  
- Visual Studio the following Visual C++ project templates.  
+ Visual Studio has the following Visual C++ project templates.  
   
 ### Store Apps  
 [C#, VB, and C++ project templates for  Store apps](http://go.microsoft.com/fwlink/p/?LinkID=262279)
