@@ -22,8 +22,6 @@ manager: "ghogen"
   
  A class template specialization was not is defined before it was used in a return type. Anything that instantiates the class will resolve C4686; declaring an instance or accessing a member (C\<int>::anything) are also options.  
   
- This warning is the result of work to make the Visual C++ .NET 2003 compiler conform to the ISO C++ standard.  
-  
  This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.  
   
  Try the following instead,  

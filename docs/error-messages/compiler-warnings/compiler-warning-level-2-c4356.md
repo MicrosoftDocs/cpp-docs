@@ -19,11 +19,7 @@ manager: "ghogen"
 # Compiler Warning (level 2) C4356
 'member' : static data member cannot be initialized via derived class  
   
- The initialization of a static data member was ill formed. The compiler accepted the initialization.  
-  
- This is a breaking change in the Visual C++ .NET 2003 compiler.  
-  
- For code that works the same in all versions of Visual C++, initialize the member through the base class.  
+ The initialization of a static data member was ill formed. The compiler accepted the initialization. To avoid the warning, initialize the member through the base class.  
   
  Use the [warning](../../preprocessor/warning.md) pragma to suppress this warning.  
   

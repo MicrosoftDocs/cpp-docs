@@ -116,7 +116,7 @@ The articles in this part of the documentation contain information about a subse
 |[Compiler Error C2491](compiler-error-c2491.md)|'*identifier*': definition of dllimport *function* not allowed|  
 |[Compiler Error C2492](compiler-error-c2492.md)|'*variable*': data with thread storage duration may not have dll interface|  
 |[Compiler Error C2493](compiler-error-c2493.md)|illegal form of __based|  
-|[Compiler Error C2494](compiler-error-c2494.md)|'*keyword*' cannot be called from within a filter expression or \_\_finally/finally block|  
+|[Compiler Error C2494](compiler-error-c2494.md)|'*keyword*' cannot be called from within a filter expression or &#95;&#95;finally/finally block|  
 |[Compiler Error C2495](compiler-error-c2495.md)|'*identifier*': '__declspec(noexcept)' can only be applied to function declarations or definitions|  
 |[Compiler Error C2496](compiler-error-c2496.md)|'*identifier*': 'selectany' can only be applied to data items with external linkage|  
 |Compiler Error C2497|'*identifier*': 'implementation_key' can only be applied to function declarations|  

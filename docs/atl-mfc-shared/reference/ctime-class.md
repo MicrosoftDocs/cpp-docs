@@ -127,8 +127,7 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
   
  `time`  
  A **__time64_t** time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.  
-  
- In Visual C++ versions 6.0 and earlier, `time` was a value of `time_t`. Visual C++ .NET and later converts a `time_t` parameter to **__time64_t**.  
+
   
  `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec`  
  Indicates the date and time values to be copied into the new `CTime` object.  

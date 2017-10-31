@@ -17,7 +17,7 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # ATL/MFC Shared Classes
-Beginning with Visual C++ .NET 2002, several existing MFC utility classes were rewritten or revised to reduce their dependencies on other MFC classes. These utility classes can now be used in any native C++ project. This section only includes classes that were previously available to MFC projects and have now been shared, plus a few new classes related to the changes in `CString`. It does not include the ATL classes, which can be used in any native C++ project type by inclusion of the appropriate header.  
+These utility classes can be used in any native C++ project without requiring any MFC DLL.  
   
 ## In This Section  
  [Classes Shared Between MFC and ATL](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)  

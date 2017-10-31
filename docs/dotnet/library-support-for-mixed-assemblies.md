@@ -34,7 +34,7 @@ Visual C++ supports the use of the C++ Standard Library, the Common RunTime libr
   
 -   Support for per-AppDomain and per-process variables in managed code.  
   
--   Resolves the loader lock issues that applied to mixed DLLs in Visual C++ .NET and Visual C++ .NET 2003.  
+-   Resolves the loader lock issues that applied to mixed DLLs compiled in Visual Studio 2003 and earlier.  
   
  In addition, this support presents the following limitations:  
   

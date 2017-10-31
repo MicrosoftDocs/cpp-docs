@@ -17,45 +17,49 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # ActivatableClass Macros
-Populates an internal cache that contains a factory that can create an instance of the specified class.  
-  
-## Syntax  
-  
-```cpp  
-ActivatableClass(  
-   className  
-);  
-  
-ActivatableClassWithFactory(  
-   className,   
-   factory  
-);  
-  
-ActivatableClassWithFactoryEx(  
-   className,   
-   factory,   
-   serverName  
-);  
-  
-```  
-  
-#### Parameters  
- `className`  
- Name of the class to create.  
-  
- `factory`  
- Factory that will create an instance of the specified class.  
-  
- `serverName`  
- A name that specifies a subset of factories in the module.  
-  
-## Remarks  
- Do not use these macros with classic COM unless you use the `#undef` directive to ensure that the **__WRL_WINRT_STRICT\_\_** macro definition is removed.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## See Also
- [Module Class](../windows/module-class.md)
+
+Populates an internal cache that contains a factory that can create an instance of the specified class.
+
+## Syntax
+
+```cpp
+ActivatableClass(
+   className
+);
+
+ActivatableClassWithFactory(
+   className,
+   factory
+);
+
+ActivatableClassWithFactoryEx(
+   className,
+   factory,
+   serverName
+);
+```
+
+### Parameters
+
+*className*  
+Name of the class to create.  
+
+*factory*  
+Factory that will create an instance of the specified class.
+
+*serverName*  
+A name that specifies a subset of factories in the module.
+
+## Remarks
+
+Do not use these macros with classic COM unless you use the `#undef` directive to ensure that the **&#95;&#95;WRL_WINRT_STRICT&#95;&#95;** macro definition is removed.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module Class](../windows/module-class.md)

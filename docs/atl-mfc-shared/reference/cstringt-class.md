@@ -140,7 +140,7 @@ public CSimpleStringT<BaseType,
  `CString`, `CStringA`, and `CStringW` are exported from the MFC DLL (MFC90.DLL), never from user DLLs. This is done to prevent `CStringT` from being multiply defined.  
   
 > [!NOTE]
->  If you encountered linker errors when exporting a `CString`-derived class from an MFC extension DLL in Visual C++ .NET 2002 and have applied the workaround as described in the Knowledge Base article, "Linking Errors When You Import CString-Derived Classes" (Q309801), you should remove the workaround code, because this has been fixed in Visual C++ .NET 2003. You can find Knowledge Base articles at [http://support.microsoft.com/support](http://support.microsoft.com/support).  
+>  If your code contains the workaround for linker errors that is described in [Linking Errors When You Import CString-Derived Classes" (Q309801)](https://support.microsoft.com/help/309801/you-may-receive-an-lnk2019-error-message-when-you-build-a-visual-c-200), you should remove that code. It is no longer needed.  
   
  The following string types are available within MFC-based applications:  
   
