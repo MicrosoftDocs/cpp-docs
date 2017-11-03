@@ -21,31 +21,21 @@ In versions of MFC before version 3.0 (before Visual C++ version 2.0), you had t
   
  For example, the following code fragment from the AFX.H header file instructs the linker to link in either the NAFXCWD.LIB or NAFXCW.LIB version of MFC, depending on whether you are using the debug version of MFC:  
   
- `#ifndef _UNICODE`  
-  
- `#ifdef _DEBUG`  
-  
- `#pragma comment(lib, "nafxcwd.lib")`  
-  
- `#else`  
-  
- `#pragma comment(lib, "nafxcw.lib")`  
-  
- `#endif`  
-  
- `#else`  
-  
- `#ifdef _DEBUG`  
-  
- `#pragma comment(lib, "uafxcwd.lib")`  
-  
- `#else`  
-  
- `#pragma comment(lib, "uafxcw.lib")`  
-  
- `#endif`  
-  
- `#endif`  
+```c++
+#ifndef _UNICODE 
+#ifdef _DEBUG
+#pragma comment(lib, "nafxcwd.lib")
+#else
+#pragma comment(lib, "nafxcw.lib")
+#endif
+#else
+#ifdef _DEBUG
+#pragma comment(lib, "uafxcwd.lib")
+#else
+#pragma comment(lib, "uafxcw.lib")
+#endif
+#endif
+```  
   
  MFC header files also link in all required libraries, including MFC libraries, Win32 libraries, OLE libraries, OLE libraries built from samples, ODBC libraries, and so on. The Win32 libraries include Kernel32.Lib, User32.Lib, and GDI32.Lib.  
   
