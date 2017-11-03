@@ -1837,7 +1837,7 @@ int main( )
 ```  
 Type& operator[](const Key& key);
 
-Type& operator 0-(Key&& key);
+Type& operator[](Key&& key);
 ```  
   
 ### Parameters  
