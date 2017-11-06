@@ -105,14 +105,16 @@ Requiring everyone on a team to download and build libraries can be inefficient.
 The public catalog is kept up-to-date with the latest versions of the libraries. To determine which of your local libraries are out-of-date, use `vcpkg update`. When you're ready to update your ports collection to the latest version of the public catalog, just do a git pull operation against the github repo, or create a new clone and keep the old one if it is still needed.
 
 ### Contribute new libraries
-You can include any libraries you like in your private ports collection. To suggest a new library for the public catalog, 
-
+You can include any libraries you like in your private ports collection. To suggest a new library for the public catalog, open an issue on the [GitHub vcpkg issue page](https://github.com/Microsoft/vcpkg/issues).
 
 ### Remove a library
 Type `vcpkg remove` to remove an installed library. If any other libraries depend on it, you'll be asked to re-run the command with `--recurse`, which will cause all downstream libraries to be removed.
 
 ### Customize vcpkg
 You can modify your clone of vcpkg in any way you like. You can create multiple vcpkg clones and modify the portfiles in each one to obtain specific versions of libraries or specify command-line parameters. For example, in an enterprise, one group of developers might be working on software that has one set of dependencies, and another group might have a different set. You can set up two clones of vcpkg, and modify each one to download the versions of the libraries and the compilation switches, etc, according to your needs. 
+
+### Uninstall vcpkg
+Just delete the directory. 
 
 ## The vcpkg folder hierarchy
 All vcpkg functionality and data is completely self-contained in a single directory hierarchy; this is called an "instance". There are no registry settings or environment variables. You can have any number of instances of vcpkg on a machine and they will not interfere with each other. 
