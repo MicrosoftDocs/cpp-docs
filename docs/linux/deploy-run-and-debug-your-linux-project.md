@@ -19,8 +19,8 @@ Once you have created a Linux project and you have connected to the project usin
 
 There are several ways to interact with and debug your Linux project.
 
-* Debug using traditional Visual Studio features, such as breakpoints, watch windows, and hovering over a variable, so you may debug as you normally would in other project types.
-* View output from the target computer in a special Linux Console window, which you can also use to send input to the target computer.
+* Debug using traditional Visual Studio features, such as breakpoints, watch windows, and hovering over a variable. Using these methods, you may debug as you normally would for other project types.
+* View output from the target computer in a special Linux Console window. You can also use the console to send input to the target computer.
 
 ## Debug your Linux project
 
@@ -47,7 +47,7 @@ There are several ways to interact with and debug your Linux project.
 
     ![Remote Architecture](media/architecture.png)
 
-3. Set a breakpoint by clicking in the left gutter of some code that you know will execut. A red circle appears.
+3. Set a breakpoint by clicking in the left gutter of some code that you know will execute. A red circle appears.
 
 4. Press **F5** (or **Debug > Start Debugging**) to start debugging.
 
