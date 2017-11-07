@@ -64,4 +64,8 @@ Since all compilation is happening on a remote computer, several additional Buil
 ![Build Events](media/settings_buildevents.png)
 
 ## See Also
-[Working with Project Properties](../ide/working-with-project-properties.md)
+[Working with Project Properties](../ide/working-with-project-properties.md)  
+[C++ General Properties (Linux C++)](../linux/prop-pages/general-linux.md)  
+[VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md)  
+[Copy Sources Project Properties (Linux C++)](../linux/prop-pages/copy-sources-project.md)  
+[Build Event Properties (Linux C++)](../linux/prop-pages/build-events-linux.md)

@@ -47,11 +47,13 @@ There are several ways to interact with and debug your Linux project.
 
     ![Remote Architecture](media/architecture.png)
 
-3. Set a breakpoint by clicking in the left gutter of some code that you know will execute. A red circle appears.
+3. Set a breakpoint by clicking in the left gutter of some code that you know will execute.
+
+    A red dot appears on the line of code where you set the breakpoint.
 
 4. Press **F5** (or **Debug > Start Debugging**) to start debugging.
 
-    When you start debugging the application first will be compiled on the remote target. Any compilation errors will appear in the **Error List** window.
+    When you start debugging, the application is compiled on the remote target before it starts. Any compilation errors will appear in the **Error List** window.
 
     If there are no errors, the app will start and the debugger will pause at the breakpoint.
 
@@ -76,3 +78,6 @@ There are several ways to interact with and debug your Linux project.
 * Specific debugger options can be passed to GDB using the **Additional Debugger Commands** entry.  For example, you might want to ignore SIGILL (illegal instruction) signals.  You could use the **handle** command to achieve this.  by adding the following to the **Additional Debugger Commands** entry as shown above:
 
   ```handle SIGILL nostop noprint```
+
+## See also
+[C++ Debugging Properties (Linux C++)](../linux/prop-pages/debugging-linux.md).
