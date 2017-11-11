@@ -1,5 +1,5 @@
 ---
-title: "Download, Install and Setup the Linux Workload | Microsoft Docs"
+title: "Download, install, and setup the Linux workload | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
 ms.reviewer: ""
@@ -13,16 +13,16 @@ ms.author: "corob"
 manager: "ghogen"
 ---
 
-# Download, Install and Setup the Linux Workload
+# Download, install, and setup the Linux workload
 
-## Visual Studio Setup
+## Visual Studio setup
 1. Start the Visual Studio installer and select the **Linux development with C++** workload.
 
    ![Visual C++ for Linux Development extension](media/linuxworkload.png)
 
 2. Click **Install** to continue with the installation.
 
-## Linux Setup
+## Linux setup
 The target Linux computer must have **openssh-server**, **g++**, **gdb**, and **gdbserver** installed, and the ssh daemon must be running.  If these are not already present, you can install them as follows:
  
 1. At a shell prompt on your Linux computer, run:

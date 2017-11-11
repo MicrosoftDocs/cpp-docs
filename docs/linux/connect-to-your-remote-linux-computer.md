@@ -1,7 +1,7 @@
 ---
-title: "Connect to Your Remote Linux Computer | Microsoft Docs"
+title: "Connect to your remote Linux computer | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/16/2016"
+ms.date: "11/06/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]
@@ -13,7 +13,7 @@ ms.author: "corob"
 manager: "ghogen"
 ---
 
-# Connect to Your Remote Linux Computer
+# Connect to Your remote Linux computer
 
 When building, Linux code is copied to your remote Linux computer and then compiled on that system according to the settings chosen in Visual Studio.  To setup this remote connection:
 

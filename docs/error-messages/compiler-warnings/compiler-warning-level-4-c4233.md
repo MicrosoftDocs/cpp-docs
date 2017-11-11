@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 4) C4233 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "10/25/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
@@ -17,14 +17,13 @@ ms.author: "corob"
 manager: "ghogen"
 ---
 # Compiler Warning (level 4) C4233
-nonstandard extension used : 'keyword' keyword only supported in C++, not C  
-  
- The compiler compiled your source code as C rather than C++, and you used a keyword that is only valid in C++. The compiler compiles your source file as C if the extension of the source file is .c or you use [/Tc](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md).  
-  
- This warning is automatically promoted to an error. If you wish to modify this behavior, use [#pragma warning](../../preprocessor/warning.md). For example, to make C4233 into a level 4 warning issue,  
-  
-```  
-#pragma warning(2:4233)  
-```  
-  
- in your source code file.
+
+> nonstandard extension used : '*keyword*' keyword only supported in C++, not C
+
+The compiler compiled your source code as C rather than C++, and you used a keyword that is only valid in C++. The compiler compiles your source file as C if the extension of the source file is .c or you use [/Tc](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md).
+
+This warning is automatically promoted to an error. If you wish to modify this behavior, use [#pragma warning](../../preprocessor/warning.md). For example, to make C4233 into a level 4 warning issue, add this line to your source code file:
+
+```cpp
+#pragma warning(4:4233)
+```

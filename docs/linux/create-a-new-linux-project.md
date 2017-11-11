@@ -1,5 +1,5 @@
 ---
-title: "Create a New Linux Project | Microsoft Docs"
+title: "Create a new Linux project | Microsoft Docs"
 ms.custom: ""
 ms.date: "08/16/2017"
 ms.reviewer: ""
@@ -13,7 +13,7 @@ ms.author: "corob"
 manager: "ghogen"
 ---
 
-# Create a New Linux Project
+# Create a new Linux project
 
 To create a new Linux project in Visual Studio, do the following:
 
