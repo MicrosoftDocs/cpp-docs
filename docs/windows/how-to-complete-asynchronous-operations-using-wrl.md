@@ -19,7 +19,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
   
  This document shows two examples. The first example starts an asynchronous timer and waits for the timer to expire. In this example, you specify the asynchronous action when you create the timer object. The second example runs a background worker thread. This example shows how to work with a Windows Runtime method that returns an `IAsyncInfo` interface. The [Callback](../windows/callback-function-windows-runtime-cpp-template-library.md) function is an important part of both examples because it enables them to specify an event handler to process the results of the asynchronous operations.  
   
- For a more basic example that creates an instance of that component and retrieves a property value, see [How to: Activate and Use a Windows Runtime Component](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md).  
+ For a more basic example that creates an instance of a component and retrieves a property value, see [How to: Activate and Use a Windows Runtime Component](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md).  
   
 > [!TIP]
 >  These examples use lambda expressions to define the callbacks. You can also use function objects (functors), function pointers, or [std::function](../standard-library/function-class.md) objects. For more information about C++ lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md).  
