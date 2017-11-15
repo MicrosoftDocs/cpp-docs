@@ -1,7 +1,7 @@
 ---
 title: "Linux Project Property Pages| Microsoft Docs"
 ms.custom: ""
-ms.date: "10/10/2016"
+ms.date: "10/26/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]

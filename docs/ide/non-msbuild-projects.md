@@ -66,13 +66,17 @@ A configuration may have any of the following properties:
 |`compilerSwitches`|one or more additional switches that can influence IntelliSense behavior|
 |`forcedInclude`|header to be automatically included in every compilation unit (maps to /FI for MSVC or -include for clang)|
 |`undefines`|the list of macros to be undefined (maps to /U for MSVC)|
-|`intelliSenseMode`|the IntelliSense engine to be used. You can specify the architecture specific variants for either MSVC or Clang:
+|`intelliSenseMode`|the IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:
 - msvc-x86 (default)
 - msvc-x64
 - msvc-arm
 - windows-clang-x86
 - windows-clang-x64
 - windows-clang-arm
+- Linux-x64
+- Linux-x86
+- Linux-arm
+- gccarm
 
 CppProperties.json supports environment variable expansion for include paths and other property values. The syntax is `${env.FOODIR}` to expand an environment variable `%FOODIR%`.
 

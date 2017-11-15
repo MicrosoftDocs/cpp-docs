@@ -1,7 +1,7 @@
 ---
-title: "Configure a Linux project | Microsoft Docs"
+title: "Configure a C++ Linux project in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/06/2017"
+ms.date: "11/15/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-linux"]
@@ -13,7 +13,8 @@ ms.author: "corob"
 manager: "ghogen"
 ---
 
-# Configure a Linux project
+# Configure a Linux Project
+This topic describes how to configure a Visual Studio Linux project. For information about CMake Linux Projects, see [Configure a Linux CMake Project ](cmake-linux-project.md).
 
 ## General settings
 A variety of options can be configured for a Linux project with Visual Studio.  To view these options, select the **Project > Properties** menu, or right click on the project in **Solution Explorer** and select **Properties** from the context menu. The **General** settings appear.
