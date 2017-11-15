@@ -1,7 +1,7 @@
 ---
 title: "What's New for Visual C++ in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "8/2/2017"
+ms.date: "11/15/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
