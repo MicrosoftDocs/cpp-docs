@@ -1,47 +1,28 @@
 ---
-title: "Visual C++ Language Conformance | Microsoft Docs"  
-ms.custom: ""  
-ms.date: "3/1/2017"  
-ms.reviewer: ""  
-ms.suite: ""  
-ms.technology:  
-  - "cpp-language"  
-ms.tgt_pltfrm: ""  
-ms.topic: "article"  
-dev_langs: 
-  - "C++"  
-ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe  
-caps.latest.revision: 11  
-author: "corob-msft"  
-ms.author: "corob"  
-manager: "ghogen"  
-translation.priority.ht: 
-  - "cs-cz"  
-  - "de-de"  
-  - "es-es"  
-  - "fr-fr"   
-  - "it-it"  
-  - "ja-jp"  
-  - "ko-kr"  
-  - "pl-pl"  
-  - "pt-br"  
-  - "ru-ru"  
-  - "tr-tr"  
-  - "zh-cn"  
-  - "zh-tw"  
+title: "Visual C++ Language Conformance | Microsoft Docs"
+ms.date: "11/15/2017"
+ms.technology: ["cpp-language"]
+ms.topic: "article"
+dev_langs: ["C++"]
+ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
+caps.latest.revision: 11
+author: "corob-msft"
+ms.author: "corob"
+manager: "ghogen"
 ---
-# Visual C++ Language Conformance 
-This topic summarizes the ISO C++03, C++11, C++14, C++17, and Draft C++20 language standards conformance of compiler features and Standard Library features for Visual C++ in Visual Studio 2017 and earlier versions. Each compiler and standard library feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time. The Supported column lists the Visual Studio version in which support for the feature first appeared.  
-  
+# Visual C++ Language Conformance
+
+This topic summarizes the ISO C++03, C++11, C++14, C++17, and Draft C++20 language standards conformance of compiler features and Standard Library features for Visual C++ in Visual Studio 2017 and earlier versions. Each compiler and standard library feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time. The Supported column lists the Visual Studio version in which support for the feature first appeared.
+
 For details on conformance improvements and other changes in Visual Studio 2017, see [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md) and [What's New for Visual C++ in Visual Studio 2017](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [Visual C++ team blog](https://blogs.msdn.microsoft.com/vcblog/).  
 
  > [!NOTE]
  > There are no binary breaking changes between Visual Studio 2015 and Visual Studio 2017.
-  
-## Compiler Features  
-  
-|Feature Area| |  
-|----|---|  
+
+## Compiler Features
+
+|Feature Area| |
+|----|---|
 |__C++03/11 Core Language Features__|__Supported__|
 |&nbsp;&nbsp;Everything else|VS 2015 <sup>[A](#note_A)</sup>|
 |&nbsp;&nbsp;Two-phase name lookup|Partial <sup>[B](#note_B)</sup>|
@@ -83,15 +64,17 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |&nbsp;&nbsp;[P0217R3 Structured bindings](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0217r3.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0292R2 constexpr if-statements](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0292r2.html)|VS 2017 15.3 <sup>[G](#note_G)</sup>|
 |&nbsp;&nbsp;[P0305R1 Selection statements with initializers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0305r1.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0245R1 Hexfloat literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0245r1.html)|No|
+|&nbsp;&nbsp;[P0245R1 Hexfloat literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0245r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[N4268 Allowing more non-type template args](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4268.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[N4295 Fold expressions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4295.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0003R5 Removing dynamic-exception-specifications](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0012R1 Adding noexcept to the type system](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0012r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0035R4 Over-aligned dynamic memory allocation](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0035r4.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0386R2 Inline variables](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0386r2.pdf)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0522R0 Matching template template-parameters to compatible arguments](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0522r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0036R0 Removing some empty unary folds](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0036r0.pdf)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[N4261 Fixing qualification conversions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4261.html)|No|
-|&nbsp;&nbsp;[N4268 Allowing more non-type template args](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4268.html)|No|
-|&nbsp;&nbsp;[N4295 Fold expressions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4295.html)|No|
-|&nbsp;&nbsp;[P0003R5 Removing dynamic-exception-specifications](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html)|No|
-|&nbsp;&nbsp;[P0012R1 Adding noexcept to the type system](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0012r1.html)|No|
 |&nbsp;&nbsp;[P0017R1 Extended aggregate initialization](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0017r1.html)|No|
-|&nbsp;&nbsp;[P0035R4 Over-aligned dynamic memory allocation](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0035r4.html)|No|
-|&nbsp;&nbsp;[P0036R0 Removing some empty unary folds](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0036r0.pdf)|No|
 |&nbsp;&nbsp;[P0091R3 Template argument deduction for class templates](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0091r3.html)<br />&nbsp;&nbsp;[P0512R0 Class template argument deduction issues](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0512r0.pdf)|No|
 |&nbsp;&nbsp;[P0127R2 Declaring non-type template parameters with auto](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0127r2.html)|No|
 |&nbsp;&nbsp;[P0135R1 Guaranteed copy elision](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0135r1.html)|No <sup>[H](#note_H)</sup>|
@@ -99,8 +82,6 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |&nbsp;&nbsp;[P0145R3 Refining expression evaluation order](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0145r3.pdf)<br />&nbsp;&nbsp;[P0400R0 Order of evaluation of function arguments](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0400r0.html)|No|
 |&nbsp;&nbsp;[P0195R2 Pack expansions in using-declarations](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0195r2.html)|No|
 |&nbsp;&nbsp;[P0283R2 Ignoring unrecognized attributes](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0283r2.html)|No|
-|&nbsp;&nbsp;[P0386R2 Inline variables](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0386r2.pdf)|No|
-|&nbsp;&nbsp;[P0522R0 Matching template template-parameters to compatible arguments](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0522r0.html)|No|
 |&nbsp;&nbsp;[P0702R1 Fixing class template argument deduction for initializer-list ctors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0702r1.html)|No|
 |__C++20 Core Language Features__|__Supported__|
 |&nbsp;&nbsp;[P0306R4 Adding &#95;&#95;VA_OPT&#95;&#95; for comma omission and comma deletion](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0306r4.pdf)|No|
@@ -121,24 +102,24 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |&nbsp;&nbsp;[P0674R1 make_shared() For Arrays](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0674r1.html)|No|
 |__C++17 Standard Library Features__|__Supported__|
 |&nbsp;&nbsp;[P0433R2 Integrating template deduction for class templates into the standard library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html)<br />&nbsp;&nbsp;[P0739R0 Improving class template argument deduction integration into the standard library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html)|No|
-|&nbsp;&nbsp;[P0607R0 Inline Variables for the Standard Library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0607r0.html)|No|
 |&nbsp;&nbsp;[P0426R1 constexpr For char_traits](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html)|No|
 |&nbsp;&nbsp;[P0030R1 hypot(x, y, z)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0030r1.pdf)|No|
-|&nbsp;&nbsp;[P0033R1 Rewording enable_shared_from_this](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html)|No|
 |&nbsp;&nbsp;[P0220R1 Library Fundamentals V1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0220r1.html)|Partial <sup>[J](#note_J)</sup>|
-|&nbsp;&nbsp;[P0414R2 shared_ptr\<T[]>, shared_ptr\<T[N]>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html)<br />&nbsp;&nbsp;[P0497R0 Fixing shared_ptr For Arrays](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html)|No|
-|&nbsp;&nbsp;[P0083R3 Splicing Maps And Sets](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf)<br />&nbsp;&nbsp;[P0508R0 Clarifying insert_return_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0508r0.html)|No|
-|&nbsp;&nbsp;[P0005R4 not_fn()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0005r4.html)<br />&nbsp;&nbsp;[P0358R1 Fixes For not_fn()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html)|No|
 |&nbsp;&nbsp;[P0067R5 Elementary String Conversions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html)|No|
-|&nbsp;&nbsp;[P0618R0 Deprecating \<codecvt>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0618r0.html)|No|
-|&nbsp;&nbsp;[P0521R0 Deprecating shared_ptr::unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0521r0.html)|No|
-|&nbsp;&nbsp;[P0174R2 Deprecating Vestigial Library Parts](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html)|No|
-|&nbsp;&nbsp;[P0003R5 Removing Dynamic Exception Specifications](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html)|No|
-|&nbsp;&nbsp;[P0302R1 Removing Allocator Support In std::function](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html)|No|
 |&nbsp;&nbsp;[N4562 Library Fundamentals: \<memory_resource>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#memory.resource.synop)<br />&nbsp;&nbsp;[P0337R0 Deleting polymorphic_allocator Assignment](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0337r0.html)|No|
 |&nbsp;&nbsp;[P0024R2 Parallel Algorithms](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0024r2.html)<br />&nbsp;&nbsp;[P0336R1 Renaming Parallel Execution Policies](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0336r1.pdf)<br />&nbsp;&nbsp;[P0394R4 Parallel Algorithms Should terminate() For Exceptions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0394r4.html)<br />&nbsp;&nbsp;[P0452R1 Unifying \<numeric> Parallel Algorithms](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0452r1.html)|No|
 |&nbsp;&nbsp;[P0226R1 Mathematical Special Functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0226r1.pdf)|No|
 |&nbsp;&nbsp;[P0218R1 \<filesystem>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0218r1.html)<br />&nbsp;&nbsp;[P0219R1 Relative Paths For Filesystem](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0219r1.html)<br />&nbsp;&nbsp;[P0317R1 Directory Entry Caching For Filesystem](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p03179r1.html)<br />&nbsp;&nbsp;[P0392R0 Supporting string_view In Filesystem Paths](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0392r0.pdf)<br />&nbsp;&nbsp;[P0430R2 Supporting Non-POSIX Filesystems](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0430r2.pdf)<br />&nbsp;&nbsp;[P0492R2 Resolving NB Comments for Filesystem](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0492r2.html)|No <sup>[K](#note_K)</sup>|
+|&nbsp;&nbsp;[P0003R5 Removing Dynamic Exception Specifications](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0005R4 not_fn()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0005r4.html)<br />&nbsp;&nbsp;[P0358R1 Fixes For not_fn()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0033R1 Rewording enable_shared_from_this](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0083R3 Splicing Maps And Sets](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf)<br />&nbsp;&nbsp;[P0508R0 Clarifying insert_return_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0508r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0174R2 Deprecating Vestigial Library Parts](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0302R1 Removing Allocator Support In std::function](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0414R2 shared_ptr\<T[]>, shared_ptr\<T[N]>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html)<br />&nbsp;&nbsp;[P0497R0 Fixing shared_ptr For Arrays](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0521R0 Deprecating shared_ptr::unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0521r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0607R0 Inline Variables for the Standard Library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0607r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P0618R0 Deprecating \<codecvt>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0618r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[N4562 Library Fundamentals: Boyer-Moore search()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4562.html#func.searchers.boyer_moore)<br/>&nbsp;&nbsp;[P0253R1 Fixing Searcher Return Types](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0253r1.pdf)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0031R0 constexpr For \<array> (Again) And \<iterator>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0031r0.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0040R3 Extending Memory Management Tools](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0040r3.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
@@ -224,11 +205,12 @@ For details on conformance improvements and other changes in Visual Studio 2017,
 |&nbsp;&nbsp;[N3421 Transparent Operator Functors (less\<>, etc.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3421.htm)|VS 2013|
 |&nbsp;&nbsp;[N3655 Alias Templates For \<type_traits> (decay_t, etc.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3655.pdf)|VS 2013|
 |&nbsp;&nbsp;[N3656 make_unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3656.htm)|VS 2013|
-|&nbsp;&nbsp;[N3924 Discouraging rand()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3924.pdf)|N/A|  
-  
-A group of papers listed together indicates that a feature was voted into the Standard, and then one or more papers to improve or expand that feature were also voted in. These features are implemented together.  
-  
-### Supported values  
+|&nbsp;&nbsp;[N3924 Discouraging rand()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3924.pdf)|N/A|
+
+A group of papers listed together indicates that a feature was voted into the Standard, and then one or more papers to improve or expand that feature were also voted in. These features are implemented together.
+
+### Supported values
+
 __No__ means not yet implemented.  
 __Partial__ means the implementation in Visual Studio 2017 is incomplete. For more details, see the Notes section.  
 __N/A__ means the proposal papers do not describe features. These papers altered the language of the standard, but didn’t create any work for implementers. They’re listed here for completeness.  
@@ -238,8 +220,10 @@ __VS 2015__ indicates features that are supported in Visual Studio 2015 RTM.
 __VS 2015.2__ and __VS 2015.3__ indicate features that are supported in Visual Studio 2015 Update 2 and Visual Studio 2015 Update 3, respectively.  
 __VS 2017__ indicates features that are supported in Visual Studio 2017 RTM.  
 __VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 version 15.3.  
-  
-### Notes  
+__VS 2017 15.5__ indicates features that are supported in Visual Studio 2017 version 15.5.
+
+### Notes
+
 <a name="note_A"></a>__A__ This ignores C++03’s dynamic exception specifications, which were deprecated in C++11. There is no plan to implement them, in expectation they’ll be removed from a future C++ Standard.  
 <a name="note_B"></a>__B__ The compiler’s support for two-phase name lookup is improved but remains incomplete.  
 <a name="note_C"></a>__C__ The compiler’s support for Expression SFINAE has been sufficient for the Standard Library since Visual Studio 2015 Update 2, but support remains incomplete.  
@@ -257,7 +241,8 @@ __VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 ver
 <a name="note_C11"></a>__C11__ The Universal CRT implemented the parts of the C11 Standard Library that are required by C++17, with the exception of C99 `strftime()` E/O alternative conversion specifiers, C11 `fopen()` exclusive mode, and C11 `aligned_alloc()`. The latter is unlikely to be implemented, because C11 specified `aligned_alloc()` in a way that's incompatible with the Microsoft implementation of `free()`, namely, that `free()` must be able to handle highly aligned allocations.  
 <a name="note_rem"></a>__rem__ Features removed when the [/std:c++17](./build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) compiler option is specified. These features have opt-out macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
   
-## See Also  
+## See also
+
 [C++ Language Reference](cpp/cpp-language-reference.md)  
 [C++ Standard Library](standard-library/cpp-standard-library-reference.md)   
 [C++ conformance improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)  
