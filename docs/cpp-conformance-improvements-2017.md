@@ -1,7 +1,7 @@
 ---
-title: "C++ compiler conformance improvements | Microsoft Docs"
+title: "C++ conformance improvements | Microsoft Docs"
 ms.custom: ""
-ms.date: "08/13/2017"
+ms.date: "11/15/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,7 +14,7 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
    
-# C++ conformance improvements in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
+# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153) and [15.5](#improvements_155).
 
 
 With support for generalized constexpr and NSDMI for aggregates, the compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
@@ -39,9 +39,9 @@ In C++17 the message parameter for static_assert is optional. For more informati
 The [[fallthrough]] attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This prevents the compiler from issuing warnings in such cases. For more information, see [Wording for [[fallthrough]] attribute](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0188r0.pdf). 
 
 **Generalized range-based for loops** (no compiler switch required)
-Range-based for loops no longer require that begin() and end() return objects of the same type. This enables end() to return a sentinel object such as used by ranges as defined in the Ranges-V3 proposal. For more information, see [Generalizing the Range-Based For Loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html) and the [range-v3 library on GitHub](https://github.com/ericniebler/range-v3). 
+Range-based for loops no longer require that begin() and end() return objects of the same type. This enables end() to return a sentinel as used by ranges in [range-v3](https://github.com/ericniebler/range-v3) and the completed-but-not-quite-published Ranges Technical Specification. For more information, see [Generalizing the Range-Based For Loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html). 
 
-## Improvements in Visual Studio 2017 version 15.3
+## <a name="improvements_153"></a> Improvements in Visual Studio 2017 version 15.3
 
 **constexpr lambdas** Lambda expressions may now be used in constant expressions. For more information, see [Constexpr Lambda](http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4487.pdf).
 
@@ -66,13 +66,42 @@ For more information, see [Construction Rules for enum class Values ](http://www
 
 For the complete list of conformance improvements up through Visual Studio 2015, Update 3, see [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/en-us/library/mt723604.aspx).
 
-## Improvements in Visual Studio 2017 version 15.5
+## <a name="improvements_155"></a>  Improvements in Visual Studio 2017 version 15.5
+Features marked with [14] are available unconditionally even in /std:c++14 mode.
 
-**std::tr1 deprecated** The non-standard std::tr1 namespace is now marked as deprecated (in both C++14 and C++17 modes). For more information, see [std::tr1 namespace is deprecated](#tr1).
+**New compiler switch for extern constexpr** In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio 2017 version 15.5, a new compiler switch, [/Zc:externConstexpr](build/reference/zc-externconstexpr.md), enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
 
-**Annex D features deprecated** Annex D of the C++ standard contains all the features that have been deprecated. When the /std:c++17 compiler switch is set, almost all the Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
+**Removing Dynamic Exception Specifications**: [P0003R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html). Dynamic exception specifications were deprecated in C++11. the feature is removed from C++17, but the (still) deprecated `throw()` specification is retained strictly as an alias for `noexcept(true)`. For more information, see [Dynamic exception specification removal and noexcept](#noexcept_removal). 
 
-**New compiler switch for extern constexpr** In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, a new compiler switch, [/Zc:externConstexpr](build/reference/zc-externconstexpr.md), enables correct standards-conforming behavior. For more information, see [extern constexpr linkage](#extern_linkage).
+**not_fn()** : [P0005R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0005r4.html) is a replacement of not1 and not2.
+
+**Rewording enable_shared_from_this**: [P0033R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html) `enable_shared_from_this` was added in C++11. The C++17 Standard updates the specification to better handle certain corner cases. [14]
+
+**Splicing Maps And Sets**: [P0083R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf). This feature enables extraction of nodes from associative containers (e.g., map, set, unordered_map, unordered_set) which can then be modified and inserted back into the same container or a different container that uses the same node type. (A common use case is to extract a node from a std::map, change the key, and reinsert.)
+
+**Deprecating Vestigial Library Parts**: [P0174R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0174r2.html). Several features of the C++ Standard library have been superceded by newer features over the years, or else have been found to be not very useful or to be problematic. These features are officially deprecated in C++17. 
+
+**Removing Allocator Support In std::function**: [P0302R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0302r1.html). Prior to C++17 the class template `std::function` had several constructors that took an allocator argument. However, the use of allocators in this context was problematic, and the semantics were unclear. Therefore these contructors were removed.
+
+**Fixes for not_fn()**: [P0358R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0358r1.html). New wording for `std::not_fn` provides support of propagation of value category in case of wrapper invocation.
+
+**shared_ptr<T[]>, shared_ptr<T[N]>**: [P0414R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0414r2.html). Merging shared_ptr changes from Library Fundamentals to C++17. [14]
+
+**Fixing shared_ptr for Arrays**: [P0497R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0497r0.html). Fixes to shared_ptr support for arrays. [14]
+
+**Clarifying insert_return_type**: [P0508R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0508r0.html). The associative containers with unique keys, and the unordered containers with unique keys have a member function `insert` that returns a nested type `insert_return_type`. That return type is now defined as a specialization of a type that is parameterized on the Iterator and NodeType of the container. 
+
+**Inline Variables For The STL**: [P0607R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0607r0.html). 
+
+**Annex D features deprecated** Annex D of the C++ standard contains all the features that have been deprecated, including `shared_ptr::unique()`, `<codecvt>`, and `namespace std::tr1`. When the /std:c++17 compiler switch is set, almost all the Standard Library features in Annex D are marked as deprecated. For more information, see [Standard Library features in Annex D are marked as deprecated](#annex_d).
+
+The `std::tr2::sys` namespace in `<experimental/filesystem>` now emits a deprecation warning under /std:c++14 by default, and is now removed under /std:c++17 by default.
+
+Improved conformance in iostreams by avoiding a non-Standard extension (in-class explicit specializations).
+
+The Standard Library now uses variable templates internally.
+
+The Standard Library has been updated in response to C++17 compiler changes, including the addition of noexcept in the type system and the removal of dynamic-exception-specifications.
 
 ## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), and [15.5](#update_155)
 ### Copy-list-initialization
@@ -382,7 +411,7 @@ void g()
 To fix the error, declare i as `int`.
 
 ### Pre-condition checks for type traits
-Visual Studio 2017 version 15.3 improves pre-condition checks for type-traits to more strictly follow the standard. One such check is for assignable. The following code produces C2139 in Update Version 15.3:
+Visual Studio 2017 version 15.3 improves pre-condition checks for type-traits to more strictly follow the standard. One such check is for assignable. The following code produces C2139 in Visual Studio 2017 version 15.3:
 
 ```cpp
 struct S; 
@@ -395,7 +424,7 @@ static_assert(__is_convertible_to(E, E), "fail"); // C2139 in 15.3
 ### New compiler warning and runtime checks on native-to-managed marshaling
 Calling from managed functions to native functions requires marshalling. The CLR performs the marshaling but it doesn't understand C++ semantics. If you pass a native object by value, CLR will either call the object's copy-constructor or use BitBlt, which may cause undefined behavior at runtime. 
  
-Now the compiler will emit a warning if it can know at compile time that a native object with deleted copy ctor is passed between native and managed boundary by value. For those cases in which the compiler doesn't know at compile time, it will inject a runtime check so that the program will call std::terminate immediately when an ill-formed marshalling occurs. In Update Version 15.3, the following code produces C4606 "
+Now the compiler will emit a warning if it can know at compile time that a native object with deleted copy ctor is passed between native and managed boundary by value. For those cases in which the compiler doesn't know at compile time, it will inject a runtime check so that the program will call std::terminate immediately when an ill-formed marshalling occurs. In Visual Studio 2017 version 15.3, the following code produces C4606 "
 'A': passing argument by value across native and managed boundary requires valid copy constructor. Otherwise the runtime behavior is undefined".
 ```cpp
 class A 
@@ -446,7 +475,7 @@ Windows::Storage::IApplicationDataStatics2::GetForUserAsync()
 #pragma warning(pop)
 ```
 ### Out-of-line definition of a template member function 
-Visual Studio 2017 version 15.3 produces an error when it encounters an out-of-line definition of a template member function that was not declared in the class. The following code now produces error C2039: 'f': is not a member of 'S':
+**Visual Studio 2017 version 15.3** produces an error when it encounters an out-of-line definition of a template member function that was not declared in the class. The following code now produces error C2039: 'f': is not a member of 'S':
 
 ```cpp
 struct S {}; 
@@ -470,7 +499,7 @@ void S::f(T t) {}
 In C++ 'this' is an prvalue of type pointer to X. You cannot take the address of 'this' or bind it to an lvalue reference. In previous versions of Visual Studio, the compiler would allow you to circumvent this restriction by performing a cast. In Visual Studio 2017 version 15.3, the compiler produces error C2664.
 
 ### Conversion to an inaccessible base class
-Visual Studio 2017 version 15.3 produces an error when you attempt to convert a type to a base class which is inaccessible. The compiler now raises "error C2243: 'type cast': conversion from 'D *' to 'B *' exists, but is inaccessible". The following code is ill-formed and can potentially cause a crash at runtime. The compiler now produces C2243 when it encounters code like this:
+**Visual Studio 2017 version 15.3** produces an error when you attempt to convert a type to a base class which is inaccessible. The compiler now raises "error C2243: 'type cast': conversion from 'D *' to 'B *' exists, but is inaccessible". The following code is ill-formed and can potentially cause a crash at runtime. The compiler now produces C2243 when it encounters code like this:
 
 ```cpp
 #include <memory> 
@@ -540,7 +569,7 @@ Constexpr auto off2 = offsetof(A, bar);
  
 This code is ill-formed and could potentially cause a crash at runtime. To fix the error, change the code to no longer invoke undefined behavior. This is non-portable code that is disallowed by the C++ standard.
 
-### New warning on declspec attributes
+### <a name="declspec"></a> New warning on declspec attributes
 In Visual Studio 2017 version 15.3, the compiler no longer ignores attributes if __declspec(…) is applied before extern "C" linkage specification. Previously, the compiler would ignore the attritbute, which could have runtime implications. When the `/Wall /WX` option is set, the following code produces "warning C4768: __declspec attributes before linkage specification are ignored":
 
 ```cpp
@@ -553,7 +582,7 @@ To fix the warning, put extern "C" first:
 ```cpp
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
-This warning is off-by-default and only impacts code compiled with  `/Wall /WX`.
+This warning is off-by-default (on by default in 15.5) and only impacts code compiled with  `/Wall /WX`.
 
 ### decltype and calls to deleted destructors
 In previous versions of Visual Studio, the compiler did not detect when a call to a deleted destructor occurred in the context of the expression associated with 'decltype'. In Visual Studio 2017 version 15.3, the following code produces  "error C2280: 'A<T>::~A(void)': attempting to reference a deleted function":
@@ -585,7 +614,7 @@ const int Value; //C4132
 To fix the error, assign a value to `Value`.
 
 ### Empty declarations
-Visual Studio 2017 version 15.3 now warns on empty declarations for all types, not just built-in types. The following code now produces a level 2 C4091 warning for all four declarations:
+**Visual Studio 2017 version 15.3** now warns on empty declarations for all types, not just built-in types. The following code now produces a level 2 C4091 warning for all four declarations:
 
 ```cpp
 struct A {};
@@ -705,7 +734,7 @@ To fix the problem arrange the intializer list to have the same order as the dec
 
 Note that the warning is off-by-default and only affects code compiled with /Wall.
 
-## <a name="update_155"></a> Bug fixes in Visual Studio 2017 version 15.5
+## <a name="update_155"></a> Bug fixes and other behavior changes in Visual Studio 2017 version 15.5
 ### Partial Ordering Change
 
 The compiler now correctly rejects the following code and gives the correct error message:
@@ -790,7 +819,7 @@ catch (int (*)[1]) {}
 ```
 
 ### <a name="tr1"></a>std::tr1 namespace is deprecated
-The non-Standard std::tr1 namespace is now marked as deprecated in both C++14 and C++17 modes. In Visual Studio version 15.5, the following code raises C4996:
+The non-Standard std::tr1 namespace is now marked as deprecated in both C++14 and C++17 modes. In Visual Studio 2017 version 15.5, the following code raises C4996:
 
 ```cpp
 #include <functional>
@@ -828,7 +857,7 @@ int main() {
 ### <a name="annex_d"></a>Standard Library features in Annex D are marked as deprecated.
 When the /std:c++17 mode compiler switch is set, almost all Standard Library features in Annex D are marked as deprecated.
 
-In Visual Studio version 15.5, the following code raises C4996:
+In Visual Studio 2017 version 15.5, the following code raises C4996:
 
 ```cpp
 #include <iterator>
@@ -882,10 +911,10 @@ void f() {
 warning C4189: 's': local variable is initialized but not referenced
 ```
 
-The fix the error, remove the unused variable.
+To fix the error, remove the unused variable.
 
 ### Single line comments 
-In Visual Studio version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the **/Za** compiler switch.  The warnings are no longer needed because single line comments have been part of the C standard since C99. 
+In Visual Studio 2017 version 15.5, warnings C4001 and C4179 are no longer emitted by the C compiler. Previously, they were only emitted under the **/Za** compiler switch.  The warnings are no longer needed because single line comments have been part of the C standard since C99. 
 
 ```cpp
 /* C only */
@@ -915,7 +944,7 @@ If the code does not need to be backwards compatible, you can avoid the warning 
 
 ### __declspec attributes with extern "C" linkage 
 
-In earlier versions of Visual Studio, the compiler ignored `__declspec(…)` attributes when `__declspec(…)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that user didn't intend, with possible runtime implications. The warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio version 15.5, the warning is enabled by default.
+In earlier versions of Visual Studio, the compiler ignored `__declspec(…)` attributes when `__declspec(…)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that user didn't intend, with possible runtime implications. The warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio 2017 version 15.5, the warning is enabled by default.
 
 ```cpp
 __declspec(noinline) extern "C" HRESULT __stdcall //C4768
@@ -942,7 +971,7 @@ This new warning C4768 will be given on some Windows SDK headers that were shipp
 
 ### <a name="extern_linkage"></a>Extern constexpr linkage 
 
-In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio version 15.5, a new compiler switch (/Zc:externConstexpr) enables correct standards-conforming behavior. Eventually this will become the default.
+In earlier versions of Visual Studio, the compiler always gave a `constexpr` variable internal linkage even when the variable was marked `extern`. In Visual Studio 2017 version 15.5, a new compiler switch (/Zc:externConstexpr) enables correct standards-conforming behavior. Eventually this will become the default.
 
 ```cpp
 extern constexpr int x = 10; 
@@ -959,7 +988,7 @@ extern constexpr __declspec(selectany) int x = 10;
 ```
 
 ### typeid can't be used on incomplete class type.
-In earlier versions of Visual Studio, the compiler incorrectly allowed the following code, resulting in potentially incorrect type information. In Visual Studio version 15.5, the compiler correctly raises an error:
+In earlier versions of Visual Studio, the compiler incorrectly allowed the following code, resulting in potentially incorrect type information. In Visual Studio 2017 version 15.5, the compiler correctly raises an error:
 
 ```cpp
 #include <typeinfo>
@@ -998,7 +1027,154 @@ struct D : public B { virtual ~D(); };
 static_assert(std::is_convertible<D *, B *>::value, "fail");
 
 ```
+### <a name="noexcept_removal"></a> Dynamic exception specification removal and noexcept
+In C++17, `throw()` is an alias for `noexcept`, `throw(<type list>)` and `throw(…)` are removed, and certain types may include `noexcept`. This can cause source compatibility issues with code that conforms to C++14 or earlier. The **/Zc:noexceptTypes-** switch can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. This enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time.
 
+The compiler also now diagnoses more mismatched exception specifications in declarations in C++17 mode or with **/permissive-** with the new warning C5043.
+
+The following code generates C5043 and C5040 in Visual Studio 2017 version 15.5 when the /std:c++17 switch is applied:
+
+```cpp
+void f() throw(); // equivalent to void f() noexcept;
+void f() {} // warning C5043
+void g() throw(); // warning C5040
+
+struct A {
+	virtual void f() throw();
+};
+
+struct B : A {
+	virtual void f() { } // error C2694
+};
+```
+To remove the errors while still using **/std:c++17**, either add the **/Zc:noexceptTypes-** switch to the command line, or else update your code to use `noexcept`, as shown in the following example:
+
+```cpp
+void f() noexcept;
+void f() noexcept { }
+void g() noexcept(false);
+
+struct A {
+	virtual void f() noexcept;
+};
+
+struct B : A {
+	virtual void f() noexcept { }
+};
+```
+### Inline variables
+Static constexpr data members are now implicitly inline, which means that their declaration within a class is now their definition. Using an out-of-line definition for a static constexpr data member is redundant, and now deprecated. In Visual Studio 2017 version 15.5 when the /std:c++17 switch is applied, the following code now produces warning C5041 *'size': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17*:
+
+```cpp
+struct X {
+    static constexpr int size = 3;
+};
+const int X::size; // C5041
+```
+### extern "C" __declspec(...) warning C4768 now on by default
+The warning was added in Visual Studio 2017 version 15.3 but was off by default. In Visual Studio 2017 version 15.5 it is on by default. See [New warning on declspec attributes](#declspec) for more information.
+
+### Defaulted functions and __declspec(nothrow)
+The compiler previously allowed defaulted functions to be declared with `__declspec(nothrow)` when the corresponding base/member functions permitted exceptions. This behavior is contrary to the C++ Standard and can cause undefined behavior at runtime. The standard requires such functions to be defined as deleted if there is an exception specification mismatch.  Under /std:c++17, the following code raises C2280 *attempting to reference a deleted function. Function was implicitly deleted because the explicit exception specification is incompatible with that of the implicit declaration.*:
+
+
+```cpp
+struct A {
+	A& operator=(const A& other) { // No exception specification; this function may throw.
+        ...
+	}
+};
+
+struct B : public A {
+	__declspec(nothrow) B& operator=(const B& other) = default;
+};
+
+int main()
+{
+	B b1, b2;
+	b2 = b1; // error C2280
+}
+```
+
+To correct this code, either remove __declspec(nothrow) from the defaulted function, or remove `= default` and provide a definition for the function along with any required exception handling:
+
+```cpp
+struct A {
+	A& operator=(const A& other) {
+		...
+	}
+};
+
+struct B : public A {
+	B& operator=(const B& other) = default;
+};
+
+int main()
+{
+	B b1, b2;
+	b2 = b1;
+}
+```
+### noexcept and partial specializations
+With noexcept in the type system, partial specializations for matching particular "callable" types may fail to compile or choose the primary template due to a missing partial specialization for pointers-to-noexcept-functions.
+
+In such cases, you may need to add additional partial specializations to handle the noexcept function pointers and noexcept pointers to member functions. These overloads are only legal in /std:c++17 mode. If backwards-compatibility with C++14 must be maintained, and you are writing code that others will consume, then you should guard these new overloads inside `#ifdef` directives. If you are working in a self-contained module, then instead of using `#ifdef` guards you can just compile with the **/Zc:noexceptTypes-** switch. 
+
+The following code compiles under /std:c++14 but fails under /std:c++17 with error C2027:*use of undefined type 'A<T>'*:
+
+```cpp
+template <typename T> struct A;
+
+template <>
+struct A<void(*)()>
+{
+	static const bool value = true;
+};
+
+template <typename T>
+bool g(T t)
+{
+	return A<T>::value;
+}
+
+void f() noexcept {}
+
+int main()
+{
+	return g(&f) ? 0 : 1; // C2027
+}
+```
+
+The following code succeeds under /std:c++17 because the compiler chooses the new partial specialization `A<void (*)() noexcept>`:
+
+```cpp
+template <typename T> struct A;
+
+template <>
+struct A<void(*)()>
+{
+	static const bool value = true;
+};
+
+template <>
+struct A<void(*)() noexcept>
+{
+	static const bool value = true;
+};
+
+template <typename T>
+bool g(T t)
+{
+	return A<T>::value;
+}
+
+void f() noexcept {}
+
+int main()
+{
+	return g(&f) ? 0 : 1; // OK
+}
+```
 
 ## See Also  
 [Visual C++ Language Conformance](visual-cpp-language-conformance.md)  

@@ -136,6 +136,7 @@
 ##### [-Zc:forScope (Force Conformance in for Loop Scope)](zc-forscope-force-conformance-in-for-loop-scope.md)
 ##### [-Zc:implicitNoexcept (Implicit Exception Specifiers)](zc-implicitnoexcept-implicit-exception-specifiers.md)
 ##### [-Zc:inline (Remove unreferenced COMDAT)](zc-inline-remove-unreferenced-comdat.md)
+##### [-Zc:noexceptTypes (C++17 noexcept rules)](zc-noexcepttypes.md)
 ##### [-Zc:referenceBinding (Enforce reference binding rules)](zc-referencebinding-enforce-reference-binding-rules.md)
 ##### [-Zc:rvalueCast (Enforce type conversion rules)](zc-rvaluecast-enforce-type-conversion-rules.md)
 ##### [-Zc:sizedDealloc (Enable Global Sized Deallocation Functions)](zc-sizeddealloc-enable-global-sized-dealloc-functions.md)

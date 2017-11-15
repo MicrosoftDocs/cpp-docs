@@ -37,6 +37,7 @@ These are the `/Zc` compiler options:
 |[forScope\[-\]](zc-forscope-force-conformance-in-for-loop-scope.md)|Enforce Standard C++ `for` scoping rules (on by default).|
 |[implicitNoexcept\[-\]](zc-implicitnoexcept-implicit-exception-specifiers.md)|Enable implicit `noexcept` on required functions (on by default).|
 |[inline\[-\]](zc-inline-remove-unreferenced-comdat.md)|Remove unreferenced function or data if it is COMDAT or has internal linkage only (off by default).|
+|[noexceptTypes\[-\]](zc-noexcepttypes.md)|Enforce C++17 noexcept rules (on by default in C++17 or later).|
 |[referenceBinding\[-\]](zc-referencebinding-enforce-reference-binding-rules.md)|A UDT temporary will not bind to an non-const lvalue reference (off by default).|
 |[rvalueCast\[-\]](zc-rvaluecast-enforce-type-conversion-rules.md)|Enforce Standard C++ explicit type conversion rules (off by default).|
 |[sizedDealloc\[-\]](zc-sizeddealloc-enable-global-sized-dealloc-functions.md)|Enable C++14 global sized deallocation functions (on by default).|
