@@ -32,10 +32,10 @@ An aggregate is an array or a class with no user-provided constructor, no privat
 Expressions declared as constexpr are now allowed to contain certain kinds of declarations, if and switch statements, loop statements, and mutation of objects whose lifetime began within the constexpr expression evaluation. Also, there is no longer a requirement that a constexpr non-static member function be implicitly const. For more information, see [Relaxing constraints on constexpr functions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3652.html). 
 
 ## C++17
-**Terse static_assert**  (available with /std:c++latest)
+**Terse static_assert**  (available with /std:c++17)
 In C++17 the message parameter for static_assert is optional. For more information, see [Extending static_assert, v2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3928.pdf). 
 
-**[[fallthrough]] attribute**  (available with /std:c++latest)
+**[[fallthrough]] attribute**  (available with /std:c++17)
 The [[fallthrough]] attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This prevents the compiler from issuing warnings in such cases. For more information, see [Wording for [[fallthrough]] attribute](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0188r0.pdf). 
 
 **Generalized range-based for loops** (no compiler switch required)
