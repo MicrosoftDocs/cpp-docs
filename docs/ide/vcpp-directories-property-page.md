@@ -28,7 +28,7 @@ For Linux projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/direc
   
  When you use Visual Studio to create a project, it inherits certain directories from the default values for the project type. You can override those defaults by adding a new path in the dialog. The following illustration shows the dialog for the Library paths:
 
- ![Show Library Directories](media/vcppdir_libdir_small.png "Dialog to add or remove library paths")
+ ![Show Library Directories](media/vcppdir_libdir.png "Dialog to add or remove library paths")
 
 Use this dialog to add, remove or change the search order of the paths in the currenct project. Don't try to manually set these in the project file.
 
