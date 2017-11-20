@@ -17,9 +17,33 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # VC++ Directories Property Page
-Specifies the directories that you want Visual Studio to use to build a project. To access this property page, in **Solution Explorer**, open the shortcut menu for the project and choose **Properties**, and then in the left pane of the **Property Pages** dialog box, expand **Configuration Properties** and select **VC++ Directories**.  
+Specifies the directories that you want Visual Studio to use to build a project. To access this property page, in **Solution Explorer**, open the shortcut menu for the project (not the solution) and choose **Properties**, and then in the left pane of the **Property Pages** dialog box, expand **Configuration Properties** and select **VC++ Directories**.  
+
+VC++ Directories properties apply to a project, not the top-level solution node:
+
+ ![Select the project node](media/vcppdir.png "Select the project node to see the VC++ Directories properties")
+
+For Linux projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md).
+
   
- When you use Visual Studio to create a project, it inherits certain directories. Many of these are given as macros. To examine the current value of a macro, in the right pane of the **VC++ Directories** page, select a row—for example, **Include Directories**—choose the down-arrow button on the right, choose **Edit**, and then in the dialog box that appears, choose the **Macros** button. For more information, see these blog posts: [VC++ Directories](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [Inherited Properties and Property Sheets](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), and [Visual Studio 2010 C++ Project Upgrade Guide](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).  
+ When you use Visual Studio to create a project, it inherits certain directories from the default values for the project type. You can override those defaults by adding a new path in the dialog. The following illustration shows the dialog for the Library paths:
+
+ ![Show Library Directories](media/vcppdir_libdir_small.png "Dialog to add or remove library paths")
+
+Use this dialog to add, remove or change the search order of the paths in the currenct project. Don't try to manually set these in the project file.
+
+
+As shown above, many of the inherited paths are given as macros. To examine the current value of a macro, in the right pane of the **VC++ Directories** page, select a row—for example, **Library Directories**—choose the down-arrow button on the right, choose **Edit**.
+
+ ![Edit Library Directories](media/vcppdir_libdir_edit.png "Dialog to edit library paths")
+
+In the dialog box that appears, choose the **Macros** button to see the current values of the macros. You can search for partial or complete matches in the edit box. The following illustration shows all the macros that contain the string "WindowsSDK" and it also shows the current path that the macro evaluates to:
+
+![See macro values](media/vcppdir_libdir_macros.png "Dialog to edit macros")
+
+Many macros depend on the configuration type. A debug build might have different macros in effect than a release build.
+
+For more information, see these blog posts: [VC++ Directories](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [Inherited Properties and Property Sheets](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), and [Visual Studio 2010 C++ Project Upgrade Guide](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).  
   
 ## Directory Types  
  You can also specify other directories, as follows.  
