@@ -17,35 +17,44 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # VC++ Directories Property Page
-Specifies the directories that you want Visual Studio to use to build a project. To access this property page, in **Solution Explorer**, open the shortcut menu for the project (not the solution) and choose **Properties**, and then in the left pane of the **Property Pages** dialog box, expand **Configuration Properties** and select **VC++ Directories**.  
+Use this property page to tell Visual Studio which directories to use when building the currently-selected project. To set directories for multiple projects in a solution, use a custom property sheet as described in [Creating reusable property configurations](working-with-project-properties.md#bkmkPropertySheets).   
+
+To access the **VC++ Directories** property page:
+1) from the main menu choose **View | Solution Explorer**
+2) right-click on the project node (not the top-level solution) and choose **Properties**
+3) in the left pane of the **Property Pages** dialog box, expand **Configuration Properties** and select **VC++ Directories**.  
 
 VC++ Directories properties apply to a project, not the top-level solution node:
 
  ![Select the project node](media/vcppdir.png "Select the project node to see the VC++ Directories properties")
 
-For Linux projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md).
-
+If you don't see the property page, make sure you have the property node selected in **Solution Explorer**. Note that a **VC++ Directories** property page for cross-platform projects looks different. For Linux projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md). 
  
 If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Working with project properties](working-with-project-properties.md). 
  
-When you use Visual Studio to create a project, it inherits certain directories from the default values for the project type. These values come from some place other than your project file, such as [MSBuild](../build/msbuild-visual-cpp-overview.md) shared properties or system defaults. You can override those defaults by adding a new path in the dialog. The following illustration shows the dialog for the Library paths:
+When you use Visual Studio to create a project, it sets default directories depending on the project type and the configuration (Debug or Release). To view the values for any of the directories:
 
- ![Show Library Directories](media/vcppdir_libdir.png "Dialog to add or remove library paths")
-
-Use this dialog to add, remove or change the search order of the paths in the currenct project. Don't try to manually set these in the project file.
-
-
-As shown above, many of the inherited paths are given as macros.  To examine the current value of a macro, in the right pane of the **VC++ Directories** page, select a row—for example, **Library Directories**—choose the down-arrow button on the right, choose **Edit**.
+1) in the right pane of the **VC++ Directories** page, select a row. For example, **Library Directories**
+2) choose the down-arrow button on the right
+3) choose **Edit**.
 
  ![Edit Library Directories](media/vcppdir_libdir_edit.png "Dialog to edit library paths")
 
-In the dialog box that appears, choose the **Macros** button to see the current values of the macros. You can search for partial or complete matches in the edit box. The following illustration shows all the macros that contain the string "WindowsSDK" and it also shows the current path that the macro evaluates to:
+You now see a dialog box like this: 
+
+ ![Show Library Directories](media/vcppdir_libdir.png "Dialog to add or remove library paths")
+
+Use this dialog to view the current directories. However, if you want to change or add a directory, it is better to use **Property Manager** to create a property sheet or modify the default user property sheet. For more information, see as described in [Creating reusable property configurations](working-with-project-properties.md#bkmkPropertySheets).
+
+As shown above, many of the inherited paths are given as macros.  To examine the current value of a macro, choose the **Macros** button in the lower right corner of the dialog box. Note that many macros depend on the configuration type. A macro in a debug build might evaluate to a different path than the same macro in a release build. 
+
+You can search for partial or complete matches in the edit box. The following illustration shows all the macros that contain the string "WindowsSDK" and it also shows the current path that the macro evaluates to:
 
 ![See macro values](media/vcppdir_libdir_macros.png "Dialog to edit macros")
 
 Note: The list will populate as you type. Don't press **Enter**.
 
-For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros). Many macros depend on the configuration type. A macro in a debug build might evaluate to a different path than the same macro in a release build.
+For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros). 
 
 For more information, see these blog posts: [VC++ Directories](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [Inherited Properties and Property Sheets](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), and [Visual Studio 2010 C++ Project Upgrade Guide](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).  
   
@@ -69,16 +78,6 @@ For more information, see these blog posts: [VC++ Directories](http://blogs.msdn
   
  **Exclude Directories**  
  Directories not to search when checking for build dependencies.  
-  
-#### To specify or modify directory settings  
-  
-1.  In **Solution Explorer**, open the shortcut menu for the project you want to change and then choose **Properties**.  
-  
-2.  In the left pane of the **Property Pages** dialog box, expand **Configuration Properties** and then select **VC++ Directories**.  
-  
-3.  To modify one of the directory lists, select it, choose the down-arrow button on the right, and then choose **Edit**.  
-  
-     In the box in the dialog box that appears, you can add or remove values, and you can rearrange the order in which the values appear. You can also change whether the project inherits any settings by selecting or clearing **Inherit from parent or project defaults**.  
   
 ## Sharing the Settings  
  You can share project properties with other users or across multiple computers. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md). 
