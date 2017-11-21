@@ -47,7 +47,7 @@ The articles in this part of the documentation contain information about a subse
 |Compiler warning (level 1) C4025|'function': based pointer passed to function with variable arguments: parameter 'parameter_number'|  
 |Compiler warning (level 1) C4026|function declared with formal parameter list|  
 |Compiler warning (level 1) C4027|function declared without formal parameter list|  
-|[Compiler Warning (level 1) C4028](../../error-messages/compiler-warnings/compiler-warning-level-1-c4028.md)8|formal parameter 'parameter_number' different from declaration|  
+|[Compiler Warning (level 1) C4028](../../error-messages/compiler-warnings/compiler-warning-level-1-c4028.md)|formal parameter 'parameter_number' different from declaration|  
 |[Compiler Warning (level 1) C4029](../../error-messages/compiler-warnings/compiler-warning-level-1-c4029.md)|declared formal parameter list different from definition|  
 |Compiler warning (level 1) C4030|first formal parameter list longer than the second list|  
 |[Compiler Warning (level 1) C4031](../../error-messages/compiler-warnings/compiler-warning-level-1-c4031.md)|second formal parameter list longer than the first list|  
