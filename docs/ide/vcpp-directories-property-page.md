@@ -28,11 +28,11 @@ VC++ Directories properties apply to a project, not the top-level solution node:
 
  ![Select the project node](media/vcppdir.png "Select the project node to see the VC++ Directories properties")
 
-If you don't see the property page, make sure you have the property node selected in **Solution Explorer**. Note that a **VC++ Directories** property page for cross-platform projects looks different. For Linux projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md). 
+If you don't see the property page, make sure you have the project node selected in **Solution Explorer**. Note that a **VC++ Directories** property page for cross-platform projects looks different. For Linux projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md). 
  
 If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Working with project properties](working-with-project-properties.md). 
  
-When you use Visual Studio to create a project, it sets default directories depending on the project type and the configuration (Debug or Release). To view the values for any of the directories:
+The default settings for VC++ directories depend on project type. For desktop projects they include the VC++ tools locations for a particular Platform Toolset and the Windows SDK location. You can change the **Platform Toolset** and **Windows SDK version** on the **Configuration Properties – General** page. To view the values for any of the directories:
 
 1) in the right pane of the **VC++ Directories** page, select a row. For example, **Library Directories**
 2) choose the down-arrow button on the right
@@ -44,8 +44,6 @@ You now see a dialog box like this:
 
  ![Show Library Directories](media/vcppdir_libdir.png "Dialog to add or remove library paths")
 
-Use this dialog to view the current directories. However, if you want to change or add a directory, it is better to use **Property Manager** to create a property sheet or modify the default user property sheet. For more information, see as described in [Creating reusable property configurations](working-with-project-properties.md#bkmkPropertySheets).
-
 As shown above, many of the inherited paths are given as macros.  To examine the current value of a macro, choose the **Macros** button in the lower right corner of the dialog box. Note that many macros depend on the configuration type. A macro in a debug build might evaluate to a different path than the same macro in a release build. 
 
 You can search for partial or complete matches in the edit box. The following illustration shows all the macros that contain the string "WindowsSDK" and it also shows the current path that the macro evaluates to:
@@ -55,6 +53,13 @@ You can search for partial or complete matches in the edit box. The following il
 Note: The list will populate as you type. Don't press **Enter**.
 
 For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros). 
+
+For a list of commonly used macros, see [Common Macros for Build Commands and Properties](https://docs.microsoft.com/en-us/cpp/ide/common-macros-for-build-commands-and-properties).
+
+You can define your own macros in two ways:
+ -	Set environment variables in a developer command prompt. All environment variables are treated as MSBuild properties/macros.
+ -	Define user macros in a .props file. For more information, see [Property page macros](working-with-project-properties.md#bkmkPropertiesVersusMacros). 
+
 
 For more information, see these blog posts: [VC++ Directories](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [Inherited Properties and Property Sheets](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), and [Visual Studio 2010 C++ Project Upgrade Guide](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).  
   
