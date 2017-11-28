@@ -1,5 +1,3 @@
----
----
 # Compiler Warning (level 1) C4055  
   
 'conversion' : from data pointer 'type1' to function pointer 'type2'  

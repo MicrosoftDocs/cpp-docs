@@ -1,5 +1,3 @@
----
----
 The Visual Studio compilers and build tools can report many kinds of errors and warnings. After an error or warning is found, the build tools may make assumptions about code intent and attempt to continue, so that more issues can be reported at the same time. If the tools make the wrong assumption, later errors or warnings may not apply to your project. When you correct issues in your project, always start with the first error or warning that's reported, and rebuild often. One fix may make many subsequent errors go away.
 
 To get help on a particular diagnostic message in Visual Studio, select it in the **Output** window and press the **F1** key to open the documentation page for that error, if one exists. You can also use the search tool above to find articles about specific errors or warnings, or browse the list of errors and warnings by tool and type in the navigation pane.
