@@ -1,7 +1,7 @@
 ---
 title: "VC++ Directories Property Page | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/21/2017"
+ms.date: "11/28/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
@@ -16,52 +16,77 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 ---
-# VC++ Directories property page
+# VC++ Directories Property Page
+Use this property page to tell Visual Studio which directories to use when building the currently-selected project. To set directories for multiple projects in a solution, use a custom property sheet as described in [Creating reusable property configurations](working-with-project-properties.md#bkmkPropertySheets).   
 
-The VC++ Directories property page specifies the directories that Visual Studio uses to build a project.
+To access the **VC++ Directories** property page:
+1) from the main menu choose **View | Solution Explorer**
+2) right-click on the project node (not the top-level solution) and choose **Properties**
+3) in the left pane of the **Property Pages** dialog box, expand **Configuration Properties** and select **VC++ Directories**.  
 
-To access this property page, in **Solution Explorer**, select the project (not the solution), then on the menu bar, choose **Project > Properties** to open the **Property Pages** dialog box. In the left pane of the **Property Pages** dialog box, select **Configuration Properties > VC++ Directories**.
+VC++ Directories properties apply to a project, not the top-level solution node:
 
-When you use Visual Studio to create a project, it inherits certain directories from the default build environment. Many of these directories are given as macros. To examine the current value of a macro, in the right pane of the **VC++ Directories** page, select a property such as **Include Directories** then choose the down-arrow button on the right, and then choose **Edit**. In the dialog box that appears, choose the **Macros>>** button. The dialog expands to show the available macros and their current values. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).
+ ![Select the project node](media/vcppdir.png "Select the project node to see the VC++ Directories properties")
 
-## Directory property types
+If you don't see the property page, make sure you have the project node selected in **Solution Explorer**. Note that a **VC++ Directories** property page for cross-platform projects looks different. For Linux projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md). 
+ 
+If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Working with project properties](working-with-project-properties.md). 
+ 
+The default settings for VC++ directories depend on project type. For desktop projects they include the VC++ tools locations for a particular Platform Toolset and the Windows SDK location. You can change the **Platform Toolset** and **Windows SDK version** on the **Configuration Properties – General** page. To view the values for any of the directories:
 
-You can specify the directories used by Visual Studio when it searches for specific types of files.
+1) in the right pane of the **VC++ Directories** page, select a row. For example, **Library Directories**
+2) choose the down-arrow button on the right
+3) choose **Edit**.
 
-### Executable Directories
+ ![Edit Library Directories](media/vcppdir_libdir_edit.png "Dialog to edit library paths")
 
-Specifies the directories to search for executable files. Corresponds to the **PATH** environment variable.
+You now see a dialog box like this: 
 
-### Include Directories
+ ![Show Library Directories](media/vcppdir_libdir.png "Dialog to add or remove library paths")
 
-Specifies the directories to search for include files that are referenced in the source code. Corresponds to the **INCLUDE** environment variable.
+Use this dialog to view the current directories. However, if you want to change or add a directory, it is better to use **Property Manager** to create a property sheet or modify the default user property sheet. For more information, see [Creating reusable property configurations](working-with-project-properties.md#bkmkPropertySheets).
 
-### Reference Directories
+As shown above, many of the inherited paths are given as macros.  To examine the current value of a macro, choose the **Macros** button in the lower right corner of the dialog box. Note that many macros depend on the configuration type. A macro in a debug build might evaluate to a different path than the same macro in a release build. 
 
-Specifies the directories to search for assembly and module (metadata) files that are referenced in the source code by the [#using](../preprocessor/hash-using-directive-cpp.md) directive. Corresponds to the **LIBPATH** environment variable.
+You can search for partial or complete matches in the edit box. The following illustration shows all the macros that contain the string "WindowsSDK" and it also shows the current path that the macro evaluates to:
 
-### Library Directories
+![See macro values](media/vcppdir_libdir_macros.png "Dialog to edit macros")
 
-Specifies the directories to search for libraries (.lib) files; this includes run-time libraries. Corresponds to the **LIB** environment variable. This setting does not apply to .obj files; to link to an .obj file, on the [Linker > General](../ide/linker-property-pages.md) property page, select **Additional Library Dependencies** and then specify the relative path of the file.
+Note: The list will populate as you type. Don't press **Enter**.
 
-### Source Directories
+For more information about macros and why you should use them instead of hard-coded paths whenever possible, see [Working with Project Properties](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros). 
 
-Specifies the directories to search for source files to use for IntelliSense.
+For a list of commonly used macros, see [Common Macros for Build Commands and Properties](https://docs.microsoft.com/en-us/cpp/ide/common-macros-for-build-commands-and-properties).
 
-### Exclude Directories
+You can define your own macros in two ways:
+ -	Set environment variables in a developer command prompt. All environment variables are treated as MSBuild properties/macros.
+ -	Define user macros in a .props file. For more information, see [Property page macros](working-with-project-properties.md#bkmkPropertiesVersusMacros). 
 
-Specifies the directories not to search when checking for build dependencies.
 
-### To specify or modify directory settings
+For more information, see these blog posts: [VC++ Directories](http://blogs.msdn.com/b/vsproject/archive/2009/07/07/vc-directories.aspx), [Inherited Properties and Property Sheets](http://blogs.msdn.com/b/vsproject/archive/2009/06/23/inherited-properties-and-property-sheets.aspx), and [Visual Studio 2010 C++ Project Upgrade Guide](http://blogs.msdn.com/b/vcblog/archive/2010/03/02/visual-studio-2010-c-project-upgrade-guide.aspx).  
+  
+## Directory Types  
+ You can also specify other directories, as follows.  
+  
+ **Executable Directories**  
+ Directories in which to search for executable files. Corresponds to the **PATH** environment variable.  
+  
+ **Include Directories**  
+ Directories in which to search for include files that are referenced in the source code. Corresponds to the **INCLUDE** environment variable.  
+  
+ **Reference Directories**  
+ Directories in which to search for assembly and module (metadata) files that are referenced in the source code by the [#using](../preprocessor/hash-using-directive-cpp.md) directive. Corresponds to the **LIBPATH** environment variable.  
+  
+ **Library Directories**  
+ Directories in which to search for libraries (.lib) files; this includes run-time libraries. Corresponds to the **LIB** environment variable. This setting does not apply to .obj files; to link to an .obj file, on the [Linker](../ide/linker-property-pages.md)**General** property page, select **Additional Library Dependencies** and then specify the relative path of the file.  
+  
+ **Source Directories**  
+ Directories in which to search for source files to use for IntelliSense.  
+  
+ **Exclude Directories**  
+ Directories not to search when checking for build dependencies.  
+  
+## Sharing the Settings  
+ You can share project properties with other users or across multiple computers. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md). 
 
-1. In **Solution Explorer**, select the project (not the solution) you want to change, and then on the menu bar, choose **Project > Properties** to open the **Property Pages** dialog box.
-
-1. In the left pane of the **Property Pages** dialog box, select **Configuration Properties > VC++ Directories**.
-
-1. To modify one of the directory list properties, select it, choose the down-arrow button on the right, and then choose **Edit**.
-
-   In the top edit control in the dialog box that appears, you can add or remove values, and you can rearrange the order in which the values appear. You can also change whether the project inherits any settings by selecting or clearing the **Inherit from parent or project defaults** check box.
-
-## Share the settings
-
-You can share project properties with other users or across multiple computers. For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).
+ 
