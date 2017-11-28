@@ -26,7 +26,7 @@ The Microsoft run-time library defines the following standard types and typedefs
 |int8\_t, uint8\_t|signed char, unsigned char|  
 |int16\_t, uint16\_t|short, unsigned short|  
 |int32\_t, uint32\_t|int, unsigned int|  
-|int64\_t, int64\_t|long long, unsigned long long|  
+|int64\_t, uint64\_t|long long, unsigned long long|  
 |int_least8_t, uint_least8_t|signed char, unsigned char|  
 |int_least16_t, uint_least16_t|short, unsigned short|  
 |int_least32_t, uint_least32_t|int, unsigned int|  
