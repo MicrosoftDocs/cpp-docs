@@ -98,7 +98,7 @@ Right click on any function call and view a resursive list of all the functions 
 
 ### Toggle Header / Code File
 
-Right-click and choose Toggle Header / Code File to switch back and forth between a header file and its associated code file.
+Right-click and choose **Toggle Header / Code File** to switch back and forth between a header file and its associated code file.
 
 ### Outlining
 
