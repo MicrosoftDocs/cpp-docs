@@ -23,7 +23,7 @@ You can use Visual C++ to write many kinds of programs that run on a Windows PC 
 - able to do general computing on the graphics processing unit (GPGPU)   
 - able to take advantage of other recent advances in hardware.
 
-There are several broad categories of Windows apps that you can develop with Visual C++. These categories have different programming models, or app models, which have been introduced over the years. Each model uses different libraries and APIs to provide access to the platform and create user interfaces such as windows and dialog boxes.
+There are several broad categories of Windows apps that you can develop with Visual C++. These categories have different programming models, or app models, which have been introduced over the years. Each model uses different libraries and APIs to provide access to the platform and create user interfaces such as windows and dialog boxes. The C++ standard library as well as third-party libraries can be used in any of these categories, with a few restrictions for UWP.
 
 ##  <a name="BK_WindowsUniversal"></a> Universal Windows Platform (UWP)
 
