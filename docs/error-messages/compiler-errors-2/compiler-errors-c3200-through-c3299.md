@@ -1,7 +1,7 @@
 ---
 title: "Compiler Errors C3200 Through C3299 | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/21/2017"
+ms.date: "11/17/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
@@ -17,112 +17,112 @@ ms.author: "corob"
 manager: "ghogen"
 ---
 # Compiler Errors C3200 Through C3299
-The articles in this part of the documentation contain information about a subsection of the Visual C++ compiler errors. You can access the information here or, in the **Output** window in Visual Studio, you can select an error number and then choose the F1 key.  
-  
-> [!NOTE]
->  Not every [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] error is documented in MSDN. In many cases, the diagnostic message provides all of the information that's available. If you think an error message needs additional explanation, you can let us know. You can use the feedback form on this page, or go to the menu bar in Visual Studio and choose **Help**, **Report a Bug**, or you can submit a suggestion or bug report on [Microsoft Connect](http://connect.microsoft.com/VisualStudio).  
-  
- You may find additional assistance for errors and warnings on the MSDN public forums. The [Visual C++ Language](http://go.microsoft.com/fwlink/?LinkId=158195) forum is for questions and discussions about the [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] language syntax and compiler. The [Visual C++ General](http://go.microsoft.com/fwlink/?LinkId=158194) forum is for questions about [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] that are not discussed in other forums. You may also find help about errors and warnings on [Stack Overflow](http://stackoverflow.com/).  
-  
-|Error|Message|  
-|-----------|-------------|  
-|[Compiler Error C3200](compiler-error-c3200.md)|'*type*': invalid template argument for template parameter '*parameter*', expected a class template|  
-|[Compiler Error C3201](compiler-error-c3201.md)|the template parameter list for class template '*template*' does not match the template parameter list for template parameter '*parameter*'|  
-|[Compiler Error C3202](compiler-error-c3202.md)|'*identifier*': invalid default argument, expected a class template|  
-|[Compiler Error C3203](compiler-error-c3203.md)|'*identifier*': unspecialized class template/generic can't be used as a template/generic argument for template/generic parameter '*parameter*', expected a real type|  
-|[Compiler Error C3204](compiler-error-c3204.md)|'*function*' cannot be called from within a catch block|  
-|[Compiler Error C3205](compiler-error-c3205.md)|argument list for template template parameter '*identifier*' is missing|  
-|[Compiler Error C3206](compiler-error-c3206.md)|'*function*': invalid template/generic argument for '*template*', missing template/generic argument list on class template/generic '*type*'|  
-|[Compiler Error C3207](compiler-error-c3207.md)|'*function*': invalid template argument for '*parameter*', class template expected|  
-|[Compiler Error C3208](compiler-error-c3208.md)|'*function*': template parameter list for class template '*template*' does not match template parameter list for template template parameter '*parameter*'|  
-|[Compiler Error C3209](compiler-error-c3209.md)|'*type*': generic class must be a managed/WinRT class|  
-|[Compiler Error C3210](compiler-error-c3210.md)|'*identifier*': access declaration can only be applied to a base class member|  
-|[Compiler Error C3211](compiler-error-c3211.md)|'*function*': explicit specialization is using partial specialization syntax, use template <> instead|  
-|[Compiler Error C3212](compiler-error-c3212.md)|'*function*': an explicit specialization of a template member must be a member of an explicit specialization|  
-|[Compiler Error C3213](compiler-error-c3213.md)|base class '*class*' is less accessible than '*derived_class*'|  
-|[Compiler Error C3214](compiler-error-c3214.md)|'*argument*': invalid type argument for generic parameter '*parameter*' of generic '*type*', does not meet constraint '*constraint*'|  
-|[Compiler Error C3215](compiler-error-c3215.md)|'*constraint1*': generic type parameter already constrained by '*constraint2*'|  
-|[Compiler Error C3216](compiler-error-c3216.md)|constraint must be a generic parameter, not '*type*'|  
-|[Compiler Error C3217](compiler-error-c3217.md)|'*parameter*': generic parameter cannot be constrained in this declaration|  
-|[Compiler Error C3218](compiler-error-c3218.md)|'*type*': type not allowed as a constraint|  
-|[Compiler Error C3219](compiler-error-c3219.md)|'*parameter*': generic parameter cannot be constrained by multiple non-interfaces: '*type*'|  
-|Compiler Error C3220|'*interface*': interface cannot have progid|  
-|Compiler Error C3221|'*member*': multiple 'default' and 'case' attributes not allowed on a member|  
-|[Compiler Error C3222](compiler-error-c3222.md)|'*function*': cannot declare default arguments for member functions of a managed/WinRT type or generic functions|  
-|[Compiler Error C3223](compiler-error-c3223.md)|'*property*': you cannot apply 'typeid' to a property|  
-|[Compiler Error C3224](compiler-error-c3224.md)|'*type*': no overloaded generic class takes '*number*' generic type arguments|  
-|[Compiler Error C3225](compiler-error-c3225.md)|generic type argument for '*argument*' cannot be '*type*', it must be a value type or a handle to a reference type|  
-|[Compiler Error C3226](compiler-error-c3226.md)|A template declaration is not allowed inside a generic declaration|  
-|[Compiler Error C3227](compiler-error-c3227.md)|'*type*': cannot use '*operator*' to allocate a generic type|  
-|[Compiler Error C3228](compiler-error-c3228.md)|'*function*': generic type argument for '*argument*' cannot be '*type*', it must be a value type or handle type|  
-|[Compiler Error C3229](compiler-error-c3229.md)|'*type*': indirections on a generic type parameter are not allowed|  
-|[Compiler Error C3230](compiler-error-c3230.md)|'*function*': template type argument for '*argument*' cannot contain a generic type parameter: '*type*'|  
-|[Compiler Error C3231](compiler-error-c3231.md)|'*type*': template type argument cannot use a generic type parameter|  
-|[Compiler Error C3232](compiler-error-c3232.md)|'*parameter*': a generic type parameter cannot be used in a qualified name|  
-|[Compiler Error C3233](compiler-error-c3233.md)|'*type*': generic type parameter already constrained|  
-|[Compiler Error C3234](compiler-error-c3234.md)|a generic class may not derive from a generic type parameter|  
-|[Compiler Error C3235](compiler-error-c3235.md)|'*specialization*': explicit or partial specialization of a generic class is not allowed|  
-|[Compiler Error C3236](compiler-error-c3236.md)|explicit instantiation of a generic is not allowed|  
-|[Compiler Error C3237](compiler-error-c3237.md)|'*class*': a generic class cannot be a custom attribute|  
-|[Compiler Error C3238](compiler-error-c3238.md)|'*type*': a type with this name has already been forwarded to assembly '*assembly*'|  
-|[Compiler Error C3239](compiler-error-c3239.md)|'*type*': pointer to interior/pin pointer is disallowed by the common language runtime|  
-|[Compiler Error C3240](compiler-error-c3240.md)|'*identifier*': must be a non-overloaded abstract member function of '*type*'|  
-|[Compiler Error C3241](compiler-error-c3241.md)|'*member*': this method was not introduced by '*interface*'|  
-|[Compiler Error C3242](compiler-error-c3242.md)|'*function*': you can only explicitly override virtual functions|  
-|[Compiler Error C3243](compiler-error-c3243.md)|none of the overload functions were introduced by '*interface*'|  
-|[Compiler Error C3244](compiler-error-c3244.md)|'*member*': this method was introduced by '*interface1*' not by '*interface2*'|  
-|Compiler Error C3245|'*function*': use of a variable template requires template argument list|  
-|[Compiler Error C3246](compiler-error-c3246.md)|'*class*': cannot inherit from '*base_class*' as it has been declared as '*inheritance*'|  
-|[Compiler Error C3247](compiler-error-c3247.md)|'*coclass*': a coclass cannot inherit from another coclass '*base_class*'|  
-|[Compiler Error C3248](compiler-error-c3248.md)|Obsolete. '*function*': function declared as 'sealed' cannot be overridden by '*function*'|  
-|Compiler Error C3249|illegal statement or sub-expression for 'constexpr' function|  
-|Compiler Error C3250|'*declaration*': declaration is not allowed in 'constexpr' function body|  
-|[Compiler Error C3251](compiler-error-c3251.md)|cannot invoke base class method on a value type instance|  
-|[Compiler Error C3252](compiler-error-c3252.md)|'*function*': cannot reduce accessibility of a virtual method in a managed/WinRT type|  
-|[Compiler Error C3253](compiler-error-c3253.md)|'*function*': error with explicit override|  
-|[Compiler Error C3254](compiler-error-c3254.md)|'*function*': class contains explicit override '*function*' but does not derive from an interface that contains the function declaration|  
-|[Compiler Error C3255](compiler-error-c3255.md)|'*type*': cannot dynamically allocate this value type object on native heap|  
-|Compiler Error C3256|'*function*': variable use does not produce a constant expression|  
-|Compiler Error C3257|Obsolete.|  
-|Compiler Error C3258|Obsolete.|  
-|Compiler Error C3259|'constexpr' functions can only have one return statement|  
-|Compiler Error C3260|'*token*': skipping unexpected token(s) before lambda body|  
-|Compiler Error C3261|a function returning a managed/WinRT array must have array brackets at the end of the declaration: '*identifier*(...) []'|  
-|[Compiler Error C3262](compiler-error-c3262.md)|invalid array indexing: *number* dimension(s) specified for *number*-dimensional '*type*'|  
-|Compiler Error C3263|Obsolete.|  
-|[Compiler Error C3264](compiler-error-c3264.md)|'*identifier*': a class-constructor cannot have a return type|  
-|[Compiler Error C3265](compiler-error-c3265.md)|cannot declare a managed '*managed_construct*' in an unmanaged '*unmanaged_construct*'|  
-|[Compiler Error C3266](compiler-error-c3266.md)|'*function*': a class-constructor must have a 'void' parameter list|  
-|Compiler Error C3267|Obsolete.|  
-|[Compiler Error C3268](compiler-error-c3268.md)|'*function*': a generic function or a member-function of a generic class cannot have a variable parameter list|  
-|[Compiler Error C3269](compiler-error-c3269.md)|'*function*': a member-function of a managed/WinRT type cannot be declared with '...'|  
-|[Compiler Error C3270](compiler-error-c3270.md)|'*field*': the FieldOffset attribute can only be used in the context of StructLayout(LayoutKind::Explicit)|  
-|[Compiler Error C3271](compiler-error-c3271.md)|'*field*': invalid value '*number*' for the FieldOffset attribute|  
-|[Compiler Error C3272](compiler-error-c3272.md)|'*symbol*': symbol requires FieldOffset, as it is a member of struct/class *type_name* defined with StructLayout(LayoutKind::Explicit)|  
-|[Compiler Error C3273](compiler-error-c3273.md)|'*keyword*': not allowed on C++ try block|  
-|[Compiler Error C3274](compiler-error-c3274.md)|finally/&#95;&#95;finally without matching try|  
-|[Compiler Error C3275](compiler-error-c3275.md)|'*identifier*': cannot use this symbol without qualifier|  
-|[Compiler Error C3276](compiler-error-c3276.md)|'*keyword*': jump out of finally/&#95;&#95;finally block has undefined behavior during termination handling|  
-|[Compiler Error C3277](compiler-error-c3277.md)|cannot define an unmanaged enum '*enumeration*' inside managed '*type*'|  
-|[Compiler Error C3278](compiler-error-c3278.md)|direct call of interface or pure method '*function*' will fail at runtime|  
-|[Compiler Error C3279](compiler-error-c3279.md)|partial and explicit specializations as well as explicit instantiations of class templates declared in the cli namespace are disallowed|  
-|[Compiler Error C3280](compiler-error-c3280.md)|'*function*': a member-function of a managed type cannot be compiled as an unmanaged function|  
-|Compiler Error C3281|'*function*': global operator cannot have managed/WinRT type '*type*' in signature|  
-|[Compiler Error C3282](compiler-error-c3282.md)|generic parameter lists can only appear on managed/WinRT classes, structs, or functions|  
-|[Compiler Error C3283](compiler-error-c3283.md)|'*interface*': an interface cannot have an instance constructor|  
-|[Compiler Error C3284](compiler-error-c3284.md)|the constraints for generic parameter '*parameter*' of function '*declarator*' must match the constraints for generic parameter '*parameter*' of function '*declarator*'|  
-|[Compiler Error C3285](compiler-error-c3285.md)|for each statement cannot operate on variables of type '*type*'|  
-|[Compiler Error C3286](compiler-error-c3286.md)|'*specifier*': an iteration variable cannot have any storage-class specifiers|  
-|[Compiler Error C3287](compiler-error-c3287.md)|the type '*type*' (return type of GetEnumerator) must have a suitable public MoveNext member function and public Current property|  
-|[Compiler Error C3288](compiler-error-c3288.md)|'*type*': illegal dereference of a handle type|  
-|[Compiler Error C3289](compiler-error-c3289.md)|'*identifier*': a trivial property cannot be indexed|  
-|[Compiler Error C3290](compiler-error-c3290.md)|'*type*': a trivial property cannot have reference type|  
-|[Compiler Error C3291](compiler-error-c3291.md)|'default': cannot be the name of a trivial property|  
-|[Compiler Error C3292](compiler-error-c3292.md)|the cli namespace cannot be reopened|  
-|[Compiler Error C3293](compiler-error-c3293.md)|'*identifier*': use 'default' to access the default property (indexer) for class '*class*'|  
-|Compiler Error C3294|Obsolete.|  
-|[Compiler Error C3295](compiler-error-c3295.md)|'#pragma *specifier*' can only be used at global or namespace scope|  
-|[Compiler Error C3296](compiler-error-c3296.md)|'*identifier*': a property with this name already exists|  
-|[Compiler Error C3297](compiler-error-c3297.md)|' *constraint2*': cannot use ' *constraint1*' as a constraint because ' *constraint1*' has the value constraint|  
-|[Compiler Error C3298](compiler-error-c3298.md)|' *constraint1*': cannot use ' *constraint2*' as a constraint because ' *constraint2*' has the ref constraint and ' *constraint1*' has the value constraint|  
-|[Compiler Error C3299](compiler-error-c3299.md)|' *function*': cannot specify constraints, they are inherited from the base method|  
+
+The articles in this section of the documentation explain a subset of the error messages that are generated by the compiler.
+
+[!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
+
+## Error messages
+
+|Error|Message|
+|-----------|-------------|
+|[Compiler Error C3200](compiler-error-c3200.md)|'*type*': invalid template argument for template parameter '*parameter*', expected a class template|
+|[Compiler Error C3201](compiler-error-c3201.md)|the template parameter list for class template '*template*' does not match the template parameter list for template parameter '*parameter*'|
+|[Compiler Error C3202](compiler-error-c3202.md)|'*identifier*': invalid default argument, expected a class template|
+|[Compiler Error C3203](compiler-error-c3203.md)|'*identifier*': unspecialized class template/generic can't be used as a template/generic argument for template/generic parameter '*parameter*', expected a real type|
+|[Compiler Error C3204](compiler-error-c3204.md)|'*function*' cannot be called from within a catch block|
+|[Compiler Error C3205](compiler-error-c3205.md)|argument list for template template parameter '*identifier*' is missing|
+|[Compiler Error C3206](compiler-error-c3206.md)|'*function*': invalid template/generic argument for '*template*', missing template/generic argument list on class template/generic '*type*'|
+|[Compiler Error C3207](compiler-error-c3207.md)|'*function*': invalid template argument for '*parameter*', class template expected|
+|[Compiler Error C3208](compiler-error-c3208.md)|'*function*': template parameter list for class template '*template*' does not match template parameter list for template template parameter '*parameter*'|
+|[Compiler Error C3209](compiler-error-c3209.md)|'*type*': generic class must be a managed/WinRT class|
+|[Compiler Error C3210](compiler-error-c3210.md)|'*identifier*': access declaration can only be applied to a base class member|
+|[Compiler Error C3211](compiler-error-c3211.md)|'*function*': explicit specialization is using partial specialization syntax, use template <> instead|
+|[Compiler Error C3212](compiler-error-c3212.md)|'*function*': an explicit specialization of a template member must be a member of an explicit specialization|
+|[Compiler Error C3213](compiler-error-c3213.md)|base class '*class*' is less accessible than '*derived_class*'|
+|[Compiler Error C3214](compiler-error-c3214.md)|'*argument*': invalid type argument for generic parameter '*parameter*' of generic '*type*', does not meet constraint '*constraint*'|
+|[Compiler Error C3215](compiler-error-c3215.md)|'*constraint1*': generic type parameter already constrained by '*constraint2*'|
+|[Compiler Error C3216](compiler-error-c3216.md)|constraint must be a generic parameter, not '*type*'|
+|[Compiler Error C3217](compiler-error-c3217.md)|'*parameter*': generic parameter cannot be constrained in this declaration|
+|[Compiler Error C3218](compiler-error-c3218.md)|'*type*': type not allowed as a constraint|
+|[Compiler Error C3219](compiler-error-c3219.md)|'*parameter*': generic parameter cannot be constrained by multiple non-interfaces: '*type*'|
+|Compiler Error C3220|'*interface*': interface cannot have progid|
+|Compiler Error C3221|'*member*': multiple 'default' and 'case' attributes not allowed on a member|
+|[Compiler Error C3222](compiler-error-c3222.md)|'*function*': cannot declare default arguments for member functions of a managed/WinRT type or generic functions|
+|[Compiler Error C3223](compiler-error-c3223.md)|'*property*': you cannot apply 'typeid' to a property|
+|[Compiler Error C3224](compiler-error-c3224.md)|'*type*': no overloaded generic class takes '*number*' generic type arguments|
+|[Compiler Error C3225](compiler-error-c3225.md)|generic type argument for '*argument*' cannot be '*type*', it must be a value type or a handle to a reference type|
+|[Compiler Error C3226](compiler-error-c3226.md)|A template declaration is not allowed inside a generic declaration|
+|[Compiler Error C3227](compiler-error-c3227.md)|'*type*': cannot use '*operator*' to allocate a generic type|
+|[Compiler Error C3228](compiler-error-c3228.md)|'*function*': generic type argument for '*argument*' cannot be '*type*', it must be a value type or handle type|
+|[Compiler Error C3229](compiler-error-c3229.md)|'*type*': indirections on a generic type parameter are not allowed|
+|[Compiler Error C3230](compiler-error-c3230.md)|'*function*': template type argument for '*argument*' cannot contain a generic type parameter: '*type*'|
+|[Compiler Error C3231](compiler-error-c3231.md)|'*type*': template type argument cannot use a generic type parameter|
+|[Compiler Error C3232](compiler-error-c3232.md)|'*parameter*': a generic type parameter cannot be used in a qualified name|
+|[Compiler Error C3233](compiler-error-c3233.md)|'*type*': generic type parameter already constrained|
+|[Compiler Error C3234](compiler-error-c3234.md)|a generic class may not derive from a generic type parameter|
+|[Compiler Error C3235](compiler-error-c3235.md)|'*specialization*': explicit or partial specialization of a generic class is not allowed|
+|[Compiler Error C3236](compiler-error-c3236.md)|explicit instantiation of a generic is not allowed|
+|[Compiler Error C3237](compiler-error-c3237.md)|'*class*': a generic class cannot be a custom attribute|
+|[Compiler Error C3238](compiler-error-c3238.md)|'*type*': a type with this name has already been forwarded to assembly '*assembly*'|
+|[Compiler Error C3239](compiler-error-c3239.md)|'*type*': pointer to interior/pin pointer is disallowed by the common language runtime|
+|[Compiler Error C3240](compiler-error-c3240.md)|'*identifier*': must be a non-overloaded abstract member function of '*type*'|
+|[Compiler Error C3241](compiler-error-c3241.md)|'*member*': this method was not introduced by '*interface*'|
+|[Compiler Error C3242](compiler-error-c3242.md)|'*function*': you can only explicitly override virtual functions|
+|[Compiler Error C3243](compiler-error-c3243.md)|none of the overload functions were introduced by '*interface*'|
+|[Compiler Error C3244](compiler-error-c3244.md)|'*member*': this method was introduced by '*interface1*' not by '*interface2*'|
+|Compiler Error C3245|'*function*': use of a variable template requires template argument list|
+|[Compiler Error C3246](compiler-error-c3246.md)|'*class*': cannot inherit from '*base_class*' as it has been declared as '*inheritance*'|
+|[Compiler Error C3247](compiler-error-c3247.md)|'*coclass*': a coclass cannot inherit from another coclass '*base_class*'|
+|[Compiler Error C3248](compiler-error-c3248.md)|Obsolete. '*function*': function declared as 'sealed' cannot be overridden by '*function*'|
+|Compiler Error C3249|illegal statement or sub-expression for 'constexpr' function|
+|Compiler Error C3250|'*declaration*': declaration is not allowed in 'constexpr' function body|
+|[Compiler Error C3251](compiler-error-c3251.md)|cannot invoke base class method on a value type instance|
+|[Compiler Error C3252](compiler-error-c3252.md)|'*function*': cannot reduce accessibility of a virtual method in a managed/WinRT type|
+|[Compiler Error C3253](compiler-error-c3253.md)|'*function*': error with explicit override|
+|[Compiler Error C3254](compiler-error-c3254.md)|'*function*': class contains explicit override '*function*' but does not derive from an interface that contains the function declaration|
+|[Compiler Error C3255](compiler-error-c3255.md)|'*type*': cannot dynamically allocate this value type object on native heap|
+|Compiler Error C3256|'*function*': variable use does not produce a constant expression|
+|Compiler Error C3257|Obsolete.|
+|Compiler Error C3258|Obsolete.|
+|Compiler Error C3259|'constexpr' functions can only have one return statement|
+|Compiler Error C3260|'*token*': skipping unexpected token(s) before lambda body|
+|Compiler Error C3261|a function returning a managed/WinRT array must have array brackets at the end of the declaration: '*identifier*(...) []'|
+|[Compiler Error C3262](compiler-error-c3262.md)|invalid array indexing: *number* dimension(s) specified for *number*-dimensional '*type*'|
+|Compiler Error C3263|Obsolete.|
+|[Compiler Error C3264](compiler-error-c3264.md)|'*identifier*': a class-constructor cannot have a return type|
+|[Compiler Error C3265](compiler-error-c3265.md)|cannot declare a managed '*managed_construct*' in an unmanaged '*unmanaged_construct*'|
+|[Compiler Error C3266](compiler-error-c3266.md)|'*function*': a class-constructor must have a 'void' parameter list|
+|Compiler Error C3267|Obsolete.|
+|[Compiler Error C3268](compiler-error-c3268.md)|'*function*': a generic function or a member-function of a generic class cannot have a variable parameter list|
+|[Compiler Error C3269](compiler-error-c3269.md)|'*function*': a member-function of a managed/WinRT type cannot be declared with '...'|
+|[Compiler Error C3270](compiler-error-c3270.md)|'*field*': the FieldOffset attribute can only be used in the context of StructLayout(LayoutKind::Explicit)|
+|[Compiler Error C3271](compiler-error-c3271.md)|'*field*': invalid value '*number*' for the FieldOffset attribute|
+|[Compiler Error C3272](compiler-error-c3272.md)|'*symbol*': symbol requires FieldOffset, as it is a member of struct/class *type_name* defined with StructLayout(LayoutKind::Explicit)|
+|[Compiler Error C3273](compiler-error-c3273.md)|'*keyword*': not allowed on C++ try block|
+|[Compiler Error C3274](compiler-error-c3274.md)|finally/&#95;&#95;finally without matching try|
+|[Compiler Error C3275](compiler-error-c3275.md)|'*identifier*': cannot use this symbol without qualifier|
+|[Compiler Error C3276](compiler-error-c3276.md)|'*keyword*': jump out of finally/&#95;&#95;finally block has undefined behavior during termination handling|
+|[Compiler Error C3277](compiler-error-c3277.md)|cannot define an unmanaged enum '*enumeration*' inside managed '*type*'|
+|[Compiler Error C3278](compiler-error-c3278.md)|direct call of interface or pure method '*function*' will fail at runtime|
+|[Compiler Error C3279](compiler-error-c3279.md)|partial and explicit specializations as well as explicit instantiations of class templates declared in the cli namespace are disallowed|
+|[Compiler Error C3280](compiler-error-c3280.md)|'*function*': a member-function of a managed type cannot be compiled as an unmanaged function|
+|Compiler Error C3281|'*function*': global operator cannot have managed/WinRT type '*type*' in signature|
+|[Compiler Error C3282](compiler-error-c3282.md)|generic parameter lists can only appear on managed/WinRT classes, structs, or functions|
+|[Compiler Error C3283](compiler-error-c3283.md)|'*interface*': an interface cannot have an instance constructor|
+|[Compiler Error C3284](compiler-error-c3284.md)|the constraints for generic parameter '*parameter*' of function '*declarator*' must match the constraints for generic parameter '*parameter*' of function '*declarator*'|
+|[Compiler Error C3285](compiler-error-c3285.md)|for each statement cannot operate on variables of type '*type*'|
+|[Compiler Error C3286](compiler-error-c3286.md)|'*specifier*': an iteration variable cannot have any storage-class specifiers|
+|[Compiler Error C3287](compiler-error-c3287.md)|the type '*type*' (return type of GetEnumerator) must have a suitable public MoveNext member function and public Current property|
+|[Compiler Error C3288](compiler-error-c3288.md)|'*type*': illegal dereference of a handle type|
+|[Compiler Error C3289](compiler-error-c3289.md)|'*identifier*': a trivial property cannot be indexed|
+|[Compiler Error C3290](compiler-error-c3290.md)|'*type*': a trivial property cannot have reference type|
+|[Compiler Error C3291](compiler-error-c3291.md)|'default': cannot be the name of a trivial property|
+|[Compiler Error C3292](compiler-error-c3292.md)|the cli namespace cannot be reopened|
+|[Compiler Error C3293](compiler-error-c3293.md)|'*identifier*': use 'default' to access the default property (indexer) for class '*class*'|
+|Compiler Error C3294|Obsolete.|
+|[Compiler Error C3295](compiler-error-c3295.md)|'#pragma *specifier*' can only be used at global or namespace scope|
+|[Compiler Error C3296](compiler-error-c3296.md)|'*identifier*': a property with this name already exists|
+|[Compiler Error C3297](compiler-error-c3297.md)|' *constraint2*': cannot use ' *constraint1*' as a constraint because ' *constraint1*' has the value constraint|
+|[Compiler Error C3298](compiler-error-c3298.md)|' *constraint1*': cannot use ' *constraint2*' as a constraint because ' *constraint2*' has the ref constraint and ' *constraint1*' has the value constraint|
+|[Compiler Error C3299](compiler-error-c3299.md)|' *function*': cannot specify constraints, they are inherited from the base method|
