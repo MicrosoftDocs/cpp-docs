@@ -61,7 +61,7 @@ int main() {
   
  In the preceding example, the destructor `String::~String` uses the `delete` operator to deallocate the space dynamically allocated for text storage.  
   
-## Delcaring destructors  
+## Declaring destructors  
  Destructors are functions with the same name as the class but preceded by a tilde (`~`)  
   
  Several rules govern the declaration of destructors. Destructors:  
