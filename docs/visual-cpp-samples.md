@@ -1,7 +1,7 @@
 ---
 title: "Visual C++ Samples | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "11/30/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
@@ -13,30 +13,29 @@ caps.latest.revision: 22
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-translation.priority.ht: ["de-de", "es-es", "fr-fr", "it-it", "ja-jp", "ko-kr", "ru-ru", "zh-cn", "zh-tw"]
 ---
 # Visual C++ Samples
-The Visual C++ samples listed below demonstrate different functionalities across multiple technologies.  
-  
- [Visual Studio samples](http://code.msdn.microsoft.com/vstudio/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)  
-  
- [Windows Store app samples](http://code.msdn.microsoft.com/windowsapps/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B&f%5B0%5D.Text=C%2B%2B)  
-  
- [The All-In-One code framework](http://1code.codeplex.com/)  
-  
- [Windows Desktop code samples](http://code.msdn.microsoft.com/windowsdesktop/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B&f%5B0%5D.Text=C%2B%2B)  
-  
- [MFC samples](http://code.msdn.microsoft.com/site/search?query=mfc&f%5B0%5D.Value=mfc&f%5B0%5D.Type=SearchText&ac=4)  
-  
- [CodePlex samples](http://www.codeplex.com/site/search?query=C%2B%2B&ac=4)  
-  
- [MFC samples on CodePlex](http://www.codeplex.com/site/search?query=mfc&ac=4)  
-  
- [ADO code samples](http://msdn.microsoft.com/library/windows/desktop/ms677563\(v=vs.85\).aspx)  
-  
- [Windows Hardware development samples](http://code.msdn.microsoft.com/windowshardware/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B&f%5B0%5D.Text=C%2B%2B)  
-  
- [!INCLUDE[note_security_samplecode](includes/note_security_samplecode_md.md)]  
-  
-## See Also  
- [Visual C++ Reference](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)
+
+The Visual C++ samples listed below demonstrate different functionalities across multiple technologies.
+
+[Visual Studio samples](http://code.msdn.microsoft.com/vstudio/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)
+
+[Windows on GitHub](http://microsoft.github.io/windows/)
+
+[Universal Windows app samples](https://code.msdn.microsoft.com/windowsapps/Universal-Windows-app-cb3248c3)
+
+[The All-In-One code framework](http://1code.codeplex.com/)
+
+[Windows Desktop code samples](http://code.msdn.microsoft.com/windowsdesktop/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B&f%5B0%5D.Text=C%2B%2B)
+
+[MFC samples](http://code.msdn.microsoft.com/site/search?query=mfc&f%5B0%5D.Value=mfc&f%5B0%5D.Type=SearchText&ac=4)
+
+[CodePlex samples](http://www.codeplex.com/site/search?query=C%2B%2B&ac=4)
+
+[MFC samples on CodePlex](http://www.codeplex.com/site/search?query=mfc&ac=4)
+
+[ADO code samples](https://msdn.microsoft.com/library/jj249212.aspx)
+
+[Windows Hardware development samples](https://code.msdn.microsoft.com/windowshardware/)
+
+[!INCLUDE[note_security_samplecode](includes/note_security_samplecode_md.md)]
