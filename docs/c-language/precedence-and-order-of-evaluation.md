@@ -63,9 +63,9 @@ x && y++
   
 |Expression|Automatic Binding|  
 |----------------|-----------------------|  
-|`a & b &#124;&#124; c`|`(a & b) &#124;&#124; c`|  
-|`a = b &#124;&#124; c`|`a = (b &#124;&#124; c)`|  
-|`q && r &#124;&#124; s--`|`(q && r) &#124;&#124; s--`|  
+|<code>a & b &#124;&#124; c</code>|<code>(a & b) &#124;&#124; c</code>|  
+|<code>a = b &#124;&#124; c</code>|<code>a = (b &#124;&#124; c)</code>|  
+|<code>q && r &#124;&#124; s--</code>|<code>(q && r) &#124;&#124; s--</code>|  
   
  In the first expression, the bitwise-AND operator (`&`) has higher precedence than the logical-OR operator (`||`), so `a & b` forms the first operand of the logical-OR operation.  
   
