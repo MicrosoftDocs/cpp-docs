@@ -60,13 +60,13 @@ x && y++
  **Examples**  
   
  The following list shows how the compiler automatically binds several sample expressions:  
-  
+
 |Expression|Automatic Binding|  
 |----------------|-----------------------|  
-|`a & b &#124;&#124; c`|`(a & b) &#124;&#124; c`|  
-|`a = b &#124;&#124; c`|`a = (b &#124;&#124; c)`|  
-|`q && r &#124;&#124; s--`|`(q && r) &#124;&#124; s--`|  
-  
+|<code>a & b &#124;&#124; c</code>|<code>(a & b) &#124;&#124; c</code>|  
+|<code>a = b &#124;&#124; c</code>|<code>a = (b &#124;&#124; c)</code>|  
+|<code>q && r &#124;&#124; s--</code>|<code>(q && r) &#124;&#124; s--</code>|  
+
  In the first expression, the bitwise-AND operator (`&`) has higher precedence than the logical-OR operator (`||`), so `a & b` forms the first operand of the logical-OR operation.  
   
  In the second expression, the logical-OR operator (`||`) has higher precedence than the simple-assignment operator (`=`), so `b || c` is grouped as the right-hand operand in the assignment. Note that the value assigned to `a` is either 0 or 1.  
