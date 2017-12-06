@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["IView", "No header/IView", "No header/IView::OnActivateView", "No header/IView::OnInitialUpdate", "No header/IView::OnUpdate"]
+f1_keywords: ["IView", "AFXWINFORMS/IView", "AFXWINFORMS/IView::OnActivateView", "AFXWINFORMS/IView::OnInitialUpdate", "AFXWINFORMS/IView::OnUpdate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["views [MFC]", "IView class [MFC]", "views [MFC], classes"]
 ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
