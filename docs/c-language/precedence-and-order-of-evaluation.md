@@ -36,7 +36,7 @@ The precedence and associativity of C operators affect the grouping and evaluati
 |**^**|Bitwise-exclusive-OR|Left to right|  
 |**&#124;**|Bitwise-inclusive-OR|Left to right|  
 |**&&**|Logical-AND|Left to right|  
-|`&#124;&#124;`|Logical-OR|Left to right|  
+|**&#124;&#124;**|Logical-OR|Left to right|  
 |**? :**|Conditional-expression|Right to left|  
 |**= \*= /= %=**<br /><br /> **+= -= <\<= >>=&=**<br /><br /> **^= &#124;=**|Simple and compound assignment2|Right to left|  
 |**,**|Sequential evaluation|Left to right|  
