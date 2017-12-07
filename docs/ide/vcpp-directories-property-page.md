@@ -16,9 +16,11 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 ---
-# VC++ Directories Property Page
+# VC++ Directories Property Page (Windows)
 
-Use this property page to tell Visual Studio which directories to use when building the currently-selected project. To set directories for multiple projects in a solution, use a custom property sheet as described in [Creating reusable property configurations](working-with-project-properties.md#bkmkPropertySheets).   
+Use this property page to tell Visual Studio which directories to use when building the currently-selected project. To set directories for multiple projects in a solution, use a custom property sheet as described in [Creating reusable property configurations](working-with-project-properties.md#bkmkPropertySheets).
+
+For the Linux version of this page, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md).   
 
 To access the **VC++ Directories** property page:
 
@@ -30,7 +32,7 @@ VC++ Directories properties apply to a project, not the top-level solution node:
 
 ![Select the project node](media/vcppdir.png "Select the project node to see the VC++ Directories properties")
 
-If you don't see the property page, make sure you have the project node selected in **Solution Explorer**. Note that a **VC++ Directories** property page for cross-platform projects looks different. For Linux projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md). 
+If you don't see the property page, make sure you have the project node selected in **Solution Explorer**. Note that a **VC++ Directories** property page for cross-platform projects looks different. For non-Windows projects, see [VC++ Directories (Linux C++)](../linux/prop-pages/directories-linux.md) or . 
  
 If you are not familiar with *project properties* in Visual Studio, you might find it helpful to first read [Working with project properties](working-with-project-properties.md). 
  
