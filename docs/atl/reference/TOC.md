@@ -243,7 +243,6 @@
 ## [Window Class Macros](window-class-macros.md)
 ## [Windows Messages Macros](windows-messages-macros.md)
 # [ATL Global Variables](atl-global-variables.md)
-## [_pAtlModule](patlmodule.md)
 # [ATL Wizards and Dialog Boxes](atl-wizards-and-dialog-boxes.md)
 ## [Application Settings, ATL Project Wizard](application-settings-atl-project-wizard.md)
 ## [ATL Active Server Page Component Wizard, ASP](asp-atl-active-server-page-component-wizard.md)

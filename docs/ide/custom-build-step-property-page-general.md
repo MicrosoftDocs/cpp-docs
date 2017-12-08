@@ -18,6 +18,8 @@ manager: "ghogen"
 ---
 # Custom Build Step Property Page: General
 For each combination of project configuration and target platform in your project, you can specify a custom step to be performed when the project is built.  
+
+For the Linux version of this page, see [Custom Build Step Properties (Linux C++)](../linux/prop-pages/custom-build-step-linux.md).
   
 ## UIElement List  
  **Command Line**  

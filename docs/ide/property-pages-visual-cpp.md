@@ -24,6 +24,8 @@ By using property pages, you can specify settings for Visual Studio projects. To
  Not all available pages are necessarily displayed in the **Property Pages** dialog box. Which pages are displayed depends on the file types in the project.  
   
  For more information, see [Working with Project Properties](../ide/working-with-project-properties.md).  
+
+ For non-Windows projects, see [Linux C++ Property Page Reference](../linux/prop-pages-linux.md) or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md).
   
 ## Default Properties vs. Modified Properties  
  When you use the **New Project** dialog box to create a project, Visual Studio uses the specified project template to initialize the project properties. Therefore, the property values in the template can be thought of as default values for that project type. In other project types, the properties may have different default values.  

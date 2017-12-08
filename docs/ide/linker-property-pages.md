@@ -18,7 +18,7 @@ manager: "ghogen"
 ---
 # Linker Property Pages
 
-This topic discusses the following properties on the **General** linker property page:
+This topic discusses the following properties on the **General** linker property page. For the Linux version of this page, see [Linker Properties (Linux C++)](../linux/prop-pages/linker-linux.md).
 
 ## General page properties
 

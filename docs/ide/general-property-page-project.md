@@ -22,6 +22,8 @@ When you right-click on a project node in in Solution Explorer, and select **Pro
 -   General  
   
 -   Project Defaults  
+
+For non-Windows projects, see [Linux C++ Property Page Reference](../linux/prop-pages-linux.md) or [C++ Cross Platform Property Page Reference](../linux/prop-pages-linux.md).
   
 ## General  
  The properties in the General section affect the location of files that are created in the build process and which files to delete when the **Clean** option (**Build** menu) is selected.  
