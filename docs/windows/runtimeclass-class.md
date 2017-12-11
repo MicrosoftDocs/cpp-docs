@@ -33,11 +33,11 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
  Optional paramater. A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.  The `__WRL_CONFIGURATION_LEGACY__` macro can be defined to change the default value of classFlags for all runtime classes in the project. If defined, RuntimeClass instances are non-agile dy default. When not defined, RuntimeClass instances are agile by default. To avoid ambiguity always specify the RuntimeClassType::FtmBase or RuntimeClassType::InhibitFtmBase. Note, if InhibitFtmBase and FtmBase are both used the object will be agile.
  
  `...TInterfaces`  
- The list of interfaces the object implements beyond IUnknown, IInspectable or other interfaces controled by [RuntimeClassType](../windows/runtimeclasstype-enumeration.md).
+ The list of interfaces the object implements beyond IUnknown, IInspectable or other interfaces controlled by [RuntimeClassType](../windows/runtimeclasstype-enumeration.md).
   
 ## Members  
 `RuntimeClassInitialize`
-A function that is called when MakeAndInitialize() is used to construct the object that contains initialization code that can return an HRESULT to indicate failure (S_OK otherwise).
+A function which initializes the object if the MakeAndInitialize template function is used to construct the object. It returns S_OK if the object was successfully initialized, or a COM error code if initialization failed. The COM error code is propagated as the return value of MakeAndInitialize. Note that the RuntimeClassInitialize method is not called if the Make template function is used to construct the object.
 
 ### Public Constructors  
   
@@ -47,7 +47,7 @@ A function that is called when MakeAndInitialize() is used to construct the obje
 |[RuntimeClass::~RuntimeClass Destructor](../windows/runtimeclass-tilde-runtimeclass-destructor.md)|Deinitializes the current instance of the RuntimeClass class.|  
   
 ## Inheritance Hierarchy  
- This is an implementaiton detail.
+ This is an implementation detail.
   
 ## Requirements  
  **Header:** implements.h  
