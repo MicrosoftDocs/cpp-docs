@@ -82,7 +82,7 @@ The following warnings are turned off by default.
 |C4647 (level 3)|behavior change: __is_pod(*type*) has different value in previous versions|
 |C4654 (level 4)|Code placed before include of precompiled header line will be ignored. Add code to precompiled header.|
 |[C4668](../error-messages/compiler-warnings/compiler-warning-level-4-c4668.md) (level 4)|'*symbol*' is not defined as a preprocessor macro, replacing with '0' for '*directives*'|
-|C4682 (level 4)|'*symbol*' : no directional parameter attribute specified, defaulting to [in]|
+|[C4682](../error-messages/compiler-warnings/compiler-warning-level-4-c4682.md) (level 4)|'*symbol*' : no directional parameter attribute specified, defaulting to [in]|
 |[C4686](../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md) (level 3)|'*user-defined type*': possible change in behavior, change in UDT return calling convention|
 |[C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) (level 1)|'*function*': signature of non-private member contains assembly private native type 'native_type'|
 |[C4710](../error-messages/compiler-warnings/compiler-warning-level-4-c4710.md) (level 4)|'*function*': function not inlined|
