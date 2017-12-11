@@ -17,78 +17,28 @@ ms.author: "mblome"
 manager: "ghogen"
 ---
 # RuntimeClass Class
-Represents an instantiated class that inherits the specified number of interfaces, and provides the specified Windows Runtime, classic COM, and weak reference support.  
+Represents a WinRT or COM class that inherits the specified interfaces and provides the specified Windows Runtime, classic COM, and weak reference support.  
   
- You typically derive your WRL types from `RuntimeClass` because this class implements `AddRef`, `Release`, and `QueryInterface`, and helps manage the overall reference count of the module.  
+This class provides the boilerplate implementation of WinRT and COM classes, providing the implementation of `QueryInterface`, `AddRef`, `Release` etc., manages the reference count of the module and has support for providing the class factory for activatable objects.
   
 ## Syntax  
   
-```  
-template <  
-   typename I0,  
-   typename I1 = Details::Nil,  
-   typename I2 = Details::Nil,  
-   typename I3 = Details::Nil,  
-   typename I4 = Details::Nil,  
-   typename I5 = Details::Nil,  
-   typename I6 = Details::Nil,  
-   typename I7 = Details::Nil,  
-   typename I8 = Details::Nil,  
-   typename I9 = Details::Nil  
->  
-class RuntimeClass : public Details::RuntimeClass<typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8, I9>::TypeT, RuntimeClassFlags<WinRt>>;  
-  
-template <  
-   unsigned int classFlags,  
-   typename I0,  
-   typename I1,  
-   typename I2,  
-   typename I3,  
-   typename I4,  
-   typename I5,  
-   typename I6,  
-   typename I7,  
-   typename I8  
->  
-class RuntimeClass<RuntimeClassFlags<classFlags>, I0, I1, I2, I3, I4, I5, I6, I7, I8> : public Details::RuntimeClass<typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8>::TypeT, RuntimeClassFlags<classFlags> >;  
-```  
+```
+template <typename ...TInterfaces> class RuntimeClass
+template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
+```
   
 #### Parameters  
- `I0`  
- The zeroth interface ID. (Mandatory)  
-  
- `I1`  
- The first interface ID. (Optional)  
-  
- `I2`  
- The second interface ID. (Optional)  
-  
- `I3`  
- The third interface ID. (Optional)  
-  
- `I4`  
- The fourth interface ID. (Optional)  
-  
- `I5`  
- The fifth interface ID. (Optional)  
-  
- `I6`  
- The sixth interface ID. (Optional)  
-  
- `I7`  
- The seventh interface ID. (Optional)  
-  
- `I8`  
- The eigth interface ID. (Optional)  
-  
- `I9`  
- The ninth interface ID. (Optional)  
-  
  `classFlags`  
- A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.  The   `__WRL_CONFIGURATION_LEGACY__` macro can be defined to change the default value of classFlags for all runtime classes in the project. If defined, RuntimeClass instances are non-agile dy default. When not defined, RuntimeClass instances are agile by default. To avoid ambiguity always specify the RuntimeClassType::FtmBase or RuntimeClassType::InhibitFtmBase.
+Optional paramater. A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.  The `__WRL_CONFIGURATION_LEGACY__` macro can be defined to change the default value of classFlags for all runtime classes in the project. If defined, RuntimeClass instances are non-agile by default. When not defined, RuntimeClass instances are agile by default. To avoid ambiguity always specify the Microsoft::WRL::FtmBase in `TInterfaces` or RuntimeClassType::InhibitFtmBase. Note, if InhibitFtmBase and FtmBase are both used the object will be agile.
+ 
+ `TInterfaces`  
+The list of interfaces the object implements beyond IUnknown, IInspectable or other interfaces controlled by [RuntimeClassType](../windows/runtimeclasstype-enumeration.md). It also may list other classes to be derived from, notably Microsoft::WRL::FtmBase to make the object agile and cause it to implement IMarshal.
   
 ## Members  
-  
+`RuntimeClassInitialize`
+A function which initializes the object if the MakeAndInitialize template function is used to construct the object. It returns S_OK if the object was successfully initialized, or a COM error code if initialization failed. The COM error code is propagated as the return value of MakeAndInitialize. Note that the RuntimeClassInitialize method is not called if the Make template function is used to construct the object.
+
 ### Public Constructors  
   
 |Name|Description|  
@@ -97,30 +47,12 @@ class RuntimeClass<RuntimeClassFlags<classFlags>, I0, I1, I2, I3, I4, I5, I6, I7
 |[RuntimeClass::~RuntimeClass Destructor](../windows/runtimeclass-tilde-runtimeclass-destructor.md)|Deinitializes the current instance of the RuntimeClass class.|  
   
 ## Inheritance Hierarchy  
- `I0`  
-  
- `ChainInterfaces`  
-  
- `I0`  
-  
- `RuntimeClassBase`  
-  
- `ImplementsHelper`  
-  
- `DontUseNewUseMake`  
-  
- `RuntimeClassFlags`  
-  
- `RuntimeClassBaseT`  
-  
- `RuntimeClass`  
-  
- `RuntimeClass`  
+This is an implementation detail.
   
 ## Requirements  
- **Header:** implements.h  
+**Header:** implements.h  
   
- **Namespace:** Microsoft::WRL  
+**Namespace:** Microsoft::WRL  
   
 ## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
