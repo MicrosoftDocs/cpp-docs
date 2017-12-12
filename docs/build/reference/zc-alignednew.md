@@ -53,25 +53,26 @@ void operator delete(void* ptr) {
 }
 
 // "new" over-aligned overloads
-// std::align_val_t requires /std:c++17
 void* operator new(std::size_t size, std::align_val_t align) {
     auto ptr = _aligned_malloc(size, static_cast<std::size_t>(align));
-    std::cout << "aligned new(" << size << ", " << 
+    std::cout << "aligned new(" << size << ", " <<
         static_cast<std::size_t>(align) << ") = " << ptr << '\n';
     return ptr ? ptr : throw std::bad_alloc{};
 }
 
 void operator delete(void* ptr, std::size_t size, std::align_val_t align) {
-    std::cout << "aligned sized delete(" << ptr << ", " << size << ", " << static_cast<std::size_t>(align) << ")\n";
+    std::cout << "aligned sized delete(" << ptr << ", " << size << 
+        ", " << static_cast<std::size_t>(align) << ")\n";
     _aligned_free(ptr);
 }
 
 void operator delete(void* ptr, std::align_val_t align) {
-    std::cout << "aligned unsized delete(" << ptr << ", " << static_cast<std::size_t>(align) << ")\n";
+    std::cout << "aligned unsized delete(" << ptr << 
+        ", " << static_cast<std::size_t>(align) << ")\n";
     _aligned_free(ptr);
 }
 
-struct alignas(256) OverAligned {};
+struct alignas(256) OverAligned {}; // warning C4324, structure is padded
 
 int main() {
     delete new int;
