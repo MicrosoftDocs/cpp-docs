@@ -1,5 +1,5 @@
 ---
-title: "-Zc:alignedNew (C++17 over-aligned allocation) | Microsoft Docs"
+title: "/Zc:alignedNew (C++17 over-aligned allocation) | Microsoft Docs"
 ms.date: "12/14/2017"
 ms.technology: ["cpp-tools"]
 ms.topic: "article"
