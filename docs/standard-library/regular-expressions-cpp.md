@@ -26,7 +26,7 @@ The regular expression grammar to use is by specified by the use of one of the `
 -   `extended`: The POSIX extended regular expressions or ERE.
 -   `awk`: This is `extended`, but it has additional escapes for non-printing characters.
 -   `grep`: This is `basic`, but it also allows newline ('\n') characters to separate alternations.
--   `egrep`: This is `extended`, but it also allows newline characters to separate alternatios.
+-   `egrep`: This is `extended`, but it also allows newline characters to separate alternations.
 
 By default, if no grammar is specified, `ECMAScript` is assumed. Only one grammar may be specified.  
   
