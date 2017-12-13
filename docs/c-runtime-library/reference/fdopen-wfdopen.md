@@ -106,14 +106,14 @@ Valid characters for the *mode* string used in `fopen` and `_fdopen` correspond 
 
 |Characters in *mode* string|Equivalent *oflag* value for `_open` and `_sopen`|
 |---------------------------------|---------------------------------------------------|
-|`a`|`_O_WRONLY &#124; _O_APPEND` (usually `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|
-|`a+`|`_O_RDWR &#124; _O_APPEND` (usually `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|
-|`r`|`_O_RDONLY`|
-|`r+`|`_O_RDWR`|
-|`w`|`_O_WRONLY` (usually `_O_WRONLY &#124; _O_CREAT &#124; _O_TRUNC`)|
-|`w+`|`_O_RDWR` (usually `_O_RDWR &#124; _O_CREAT &#124; _O_TRUNC`)|
-|`b`|`_O_BINARY`|
-|`t`|`_O_TEXT`|
+|`a`|**\_O\_WRONLY &#124; \_O\_APPEND** (usually **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_APPEND**)|
+|`a+`|**\_O\_RDWR &#124; \_O\_APPEND** (usually **\_O\_RDWR &#124; \_O\_APPEND &#124; \_O\_CREAT** )|
+|`r`|**\_O\_RDONLY**|
+|`r+`|**\_O\_RDWR**|
+|`w`|**\_O\_WRONLY** (usually **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
+|`w+`|**\_O\_RDWR** (usually **\_O\_RDWR &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
+|`b`|**\_O\_BINARY**|
+|`t`|**\_O\_TEXT**|
 |`c`|None|
 |`n`|None|
 
