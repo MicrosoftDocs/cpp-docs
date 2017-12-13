@@ -20,16 +20,16 @@ The precedence and associativity of C operators affect the grouping and evaluati
   
  The following table summarizes the precedence and associativity (the order in which the operands are evaluated) of C operators, listing them in order of precedence from highest to lowest. Where several operators appear together, they have equal precedence and are evaluated according to their associativity. The operators in the table are described in the sections beginning with [Postfix Operators](../c-language/postfix-operators.md). The rest of this section gives general information about precedence and associativity.  
   
-### Precedence and Associativity of C Operators  
+## Precedence and Associativity of C Operators  
   
-|Symbol1|Type of Operation|Associativity|  
+|Symbol <sup>1</sup>|Type of Operation|Associativity|  
 |-------------|-----------------------|-------------------|  
-|**[ ] ( ) . ->** postfix `++` and postfix **--**|Expression|Left to right|  
-|prefix `++` and prefix **-- sizeof &   \*   + - ~ !**|Unary|Right to left|  
+|**\[ ] ( ) . ->**<br /><br />**++** **--** (postfix)|Expression|Left to right|  
+**sizeof & \* + - ~ !**<br /><br />**++ --** (prefix)|Unary|Right to left|  
 |*typecasts*|Unary|Right to left|  
 |**\* / %**|Multiplicative|Left to right|  
 |**+ -**|Additive|Left to right|  
-|**<\< >>**|Bitwise shift|Left to right|  
+|**\<\< >>**|Bitwise shift|Left to right|  
 |**\< > \<= >=**|Relational|Left to right|  
 |**== !=**|Equality|Left to right|  
 |**&**|Bitwise-AND|Left to right|  
@@ -38,7 +38,7 @@ The precedence and associativity of C operators affect the grouping and evaluati
 |**&&**|Logical-AND|Left to right|  
 |**&#124;&#124;**|Logical-OR|Left to right|  
 |**? :**|Conditional-expression|Right to left|  
-|**= \*= /= %=**<br /><br /> **+= -= <\<= >>=&=**<br /><br /> **^= &#124;=**|Simple and compound assignment2|Right to left|  
+|**= \*= /= %=**<br /><br /> **+= -= \<\<= >>= &=**<br /><br /> **^= &#124;=**|Simple and compound assignment <sup>2</sup>|Right to left|  
 |**,**|Sequential evaluation|Left to right|  
   
  1. Operators are listed in descending order of precedence. If several operators appear on the same line or in a group, they have equal precedence.  
@@ -51,21 +51,19 @@ The precedence and associativity of C operators affect the grouping and evaluati
   
  Logical operators also guarantee evaluation of their operands from left to right. However, they evaluate the smallest number of operands needed to determine the result of the expression. This is called "short-circuit" evaluation. Thus, some operands of the expression may not be evaluated. For example, in the expression  
   
-```  
-x && y++  
-```  
+`x && y++`  
   
  the second operand, `y++`, is evaluated only if `x` is true (nonzero). Thus, `y` is not incremented if `x` is false (0).  
   
- **Examples**  
+## Examples
   
  The following list shows how the compiler automatically binds several sample expressions:  
 
 |Expression|Automatic Binding|  
 |----------------|-----------------------|  
-|<code>a & b &#124;&#124; c</code>|<code>(a & b) &#124;&#124; c</code>|  
-|<code>a = b &#124;&#124; c</code>|<code>a = (b &#124;&#124; c)</code>|  
-|<code>q && r &#124;&#124; s--</code>|<code>(q && r) &#124;&#124; s--</code>|  
+|a & b &#124;&#124; c|(a & b) &#124;&#124; c|  
+|a = b &#124;&#124; c|a = (b &#124;&#124; c)|  
+|q && r &#124;&#124; s--|(q && r) &#124;&#124; s--|  
 
  In the first expression, the bitwise-AND operator (`&`) has higher precedence than the logical-OR operator (`||`), so `a & b` forms the first operand of the logical-OR operation.  
   
@@ -77,13 +75,11 @@ x && y++
   
 |Illegal Expression|Default Grouping|  
 |------------------------|----------------------|  
-|`p == 0 ? p += 1: p += 2`|`( p == 0 ? p += 1 : p ) += 2`|  
+|p == 0 ? p += 1: p += 2|( p == 0 ? p += 1 : p ) += 2|  
   
  In this expression, the equality operator (`==`) has the highest precedence, so `p == 0` is grouped as an operand. The conditional-expression operator (`? :`) has the next-highest precedence. Its first operand is `p == 0`, and its second operand is `p += 1`. However, the last operand of the conditional-expression operator is considered to be `p` rather than `p += 2`, since this occurrence of `p` binds more closely to the conditional-expression operator than it does to the compound-assignment operator. A syntax error occurs because `+= 2` does not have a left-hand operand. You should use parentheses to prevent errors of this kind and produce more readable code. For example, you could use parentheses as shown below to correct and clarify the preceding example:  
   
-```  
-( p == 0 ) ? ( p += 1 ) : ( p += 2 )  
-```  
+`( p == 0 ) ? ( p += 1 ) : ( p += 2 )`  
   
 ## See Also  
  [C Operators](../c-language/c-operators.md)
