@@ -62,7 +62,7 @@ Opens the file in text (translated) mode.
 **\_O\_WTEXT**  
 Opens the file in Unicode (translated UTF-16) mode.
 
-To close a file opened with `_open_osfhandle`, call [\_close](../../c-runtime-library/reference/close.md). The underlying OS file handle is also closed by a call to `_close`, so it is not necessary to call the Win32 function `CloseHandle` on the original handle. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) on that `FILE *` stream also closes both the file descriptor and the underlying handle. In this case, `_close` does not need to be called.
+To close a file opened with `_open_osfhandle`, call [\_close](../../c-runtime-library/reference/close.md). The underlying OS file handle is also closed by a call to `_close`, so it is not necessary to call the Win32 function `CloseHandle` on the original handle. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) on that `FILE *` stream also closes both the file descriptor and the underlying handle. In this case, do not call `_close` on the file descriptor.
 
 ## Requirements
 
