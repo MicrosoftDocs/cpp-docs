@@ -42,7 +42,7 @@ Returns an operating-system file handle if *fd* is valid. Otherwise, the invalid
   
 ## Remarks
 
-To close a file whose operating system (OS) file handle is obtained by `_get_osfhandle`, call [\_close](../../c-runtime-library/reference/close.md) on the file descriptor *fd*. Do not call `CloseHandle` on the return value of this function. The underlying OS file handle is owned by the *fd* file descriptor, and is closed when `_close` is called on *fd*. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) on that `FILE *` stream closes both the file descriptor and the underlying OS file handle. In this case, you do not need to call `_close` on the file descriptor.  
+To close a file whose operating system (OS) file handle is obtained by `_get_osfhandle`, call [\_close](../../c-runtime-library/reference/close.md) on the file descriptor *fd*. Do not call `CloseHandle` on the return value of this function. The underlying OS file handle is owned by the *fd* file descriptor, and is closed when `_close` is called on *fd*. If the file descriptor is owned by a `FILE *` stream, then calling [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) on that `FILE *` stream closes both the file descriptor and the underlying OS file handle. In this case, do not call `_close` on the file descriptor.
   
 ## Requirements  
   
