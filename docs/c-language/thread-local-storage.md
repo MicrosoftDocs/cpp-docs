@@ -28,7 +28,7 @@ __declspec( thread ) int tls_i = 1;
   
  These guidelines must be observed when you are declaring statically bound thread local variables:  
   
--   The use of **__declspec(thread)** may interfere with [delay loading](../build/reference/linker-support-for-delay-loaded-dlls.md) of DLL imports**.**  
+-   Thread-local variables that have dynamic initialization are only initialized on the thread that causes the DLL to load, and threads that are already running in the process. For more information, see [thread](../cpp/thread.md).  
   
 -   You can apply the thread attribute only to data declarations and definitions. It cannot be used on function declarations or definitions. For example, the following code generates a compiler error:  
   
