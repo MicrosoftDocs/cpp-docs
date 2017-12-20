@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CRBMultiMap"
-  - "ATLCOLL/ATL::CRBMultiMap"
-  - "ATLCOLL/ATL::CRBMultiMap::CRBMultiMap"
-  - "ATLCOLL/ATL::CRBMultiMap::FindFirstWithKey"
-  - "ATLCOLL/ATL::CRBMultiMap::GetNextValueWithKey"
-  - "ATLCOLL/ATL::CRBMultiMap::GetNextWithKey"
-  - "ATLCOLL/ATL::CRBMultiMap::Insert"
-  - "ATLCOLL/ATL::CRBMultiMap::RemoveKey"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRBMultiMap class"
+f1_keywords: ["CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap::CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap::FindFirstWithKey", "ATLCOLL/ATL::CRBMultiMap::GetNextValueWithKey", "ATLCOLL/ATL::CRBMultiMap::GetNextWithKey", "ATLCOLL/ATL::CRBMultiMap::Insert", "ATLCOLL/ATL::CRBMultiMap::RemoveKey"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRBMultiMap class"]
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CRBMultiMap Class
 This class represents a mapping structure that allows each key can be associated with more than one value, using a Red-Black binary tree.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::stack::get_container"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "get_container member [STL/CLR]"
+f1_keywords: ["cliext::stack::get_container"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["get_container member [STL/CLR]"]
 ms.assetid: ba6fc541-fc18-4d1c-8e3f-6baaed427cbb
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # stack::get_container (STL/CLR)
 Accesses the underlying container.  

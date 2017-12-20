@@ -7,18 +7,14 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Namespace not found::Platform"
-  - "VCCORLIB/Namespace not found::Platform::Value"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Value"]
+dev_langs: ["C++"]
 ms.assetid: 774df45d-f8a7-45a3-ae24-eecc3c681040
 caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::IBox Interface
 The [Platform::IBox](../cppcx/platform-ibox-interface.md) interface is the C++ name for the `Windows::Foundation::IReference` interface.  

@@ -4,21 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "naked functions [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["naked functions [C++]"]
 ms.assetid: ff203858-2dd3-4a76-8a57-d0d06817adef
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Rules and Limitations for Naked Functions
 ## Microsoft Specific  

@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IPerPropertyBrowsingImpl"
-  - "ATLCTL/ATL::IPerPropertyBrowsingImpl"
-  - "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetDisplayString"
-  - "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedStrings"
-  - "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedValue"
-  - "ATLCTL/ATL::IPerPropertyBrowsingImpl::MapPropertyToPage"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IPerPropertyBrowsingImpl class"
-  - "property pages, accessing information"
-  - "IPerPropertyBrowsing, ATL implementation"
+f1_keywords: ["IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetDisplayString", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedStrings", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedValue", "ATLCTL/ATL::IPerPropertyBrowsingImpl::MapPropertyToPage"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IPerPropertyBrowsingImpl class", "property pages, accessing information", "IPerPropertyBrowsing, ATL implementation"]
 ms.assetid: 0b1a9be3-d242-4767-be69-663a21e4b728
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # IPerPropertyBrowsingImpl Class
 This class implements **IUnknown** and allows a client to access the information in an object's property pages.  

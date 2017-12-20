@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vector class [STL/CLR]"
-  - "<cliext/vector> header [STL/CLR]"
-  - "<vector> header [STL/CLR]"
+f1_keywords: ["cliext::vector"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["vector class [STL/CLR]", "<cliext/vector> header [STL/CLR]", "<vector> header [STL/CLR]"]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has random access. You use the container `vector` to manage a sequence of elements as a contiguous block of storage. The block is implemented as an array that grows on demand.  

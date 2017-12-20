@@ -12,8 +12,7 @@ caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CLR integration (C++/CX)
 Some Windows Runtime types receive special handling in C++/CX and the languages that are based on the common language runtime (CLR). This article discusses how several types in one language map to another language. For example, the CLR maps Windows.Foundation.IVector to System.Collections.IList, Windows.Foundation.IMap to System.Collections.IDictionary, and so on. Similarly, C++/CX specially maps types such as Platform::Delegate and Platform::String.  

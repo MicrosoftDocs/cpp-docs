@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IRowsetNotifyCP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IRowsetNotifyCP class"
+f1_keywords: ["IRowsetNotifyCP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IRowsetNotifyCP class"]
 ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyCP Class
 Implements the provider site for the connection point interface [IRowsetNotify](https://msdn.microsoft.com/en-us/library/ms712959.aspx).  

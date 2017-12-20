@@ -4,23 +4,17 @@ ms.custom: ""
 ms.date: "10/16/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fast code"
-  - "inline functions, __inline keyword"
-  - "functions [C++], inline functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["fast code", "inline functions, __inline keyword", "functions [C++], inline functions"]
 ms.assetid: 00f4b2ff-8ad0-4165-9f4c-2ef157d03f31
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Inline Functions
 

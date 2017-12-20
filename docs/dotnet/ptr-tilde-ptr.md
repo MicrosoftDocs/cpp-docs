@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "msclr.com.ptr.~ptr"
-  - "ptr.~ptr"
-  - "msclr::com.ptr::~ptr"
-  - "~ptr"
-  - "ptr::~ptr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ptr::~ptr"
+f1_keywords: ["msclr.com.ptr.~ptr", "ptr.~ptr", "msclr::com.ptr::~ptr", "~ptr", "ptr::~ptr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ptr::~ptr"]
 ms.assetid: 5f644aa5-fe66-4992-a5f8-13ec1292c949
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # ptr::~ptr
 Destructs a `com::ptr`.  

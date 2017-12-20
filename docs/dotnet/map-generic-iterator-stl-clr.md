@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::map::generic_iterator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "generic_iterator member [STL/CLR]"
+f1_keywords: ["cliext::map::generic_iterator"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["generic_iterator member [STL/CLR]"]
 ms.assetid: 1488d13a-692f-4578-a5bd-8e725ce8e3fa
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::generic_iterator (STL/CLR)
 The type of an iterator for use with the generic interface for the container.  

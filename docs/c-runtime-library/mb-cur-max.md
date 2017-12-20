@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "10/18/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MB_CUR_MAX"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MB_CUR_MAX constant"
+f1_keywords: ["MB_CUR_MAX"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MB_CUR_MAX constant"]
 ms.assetid: fab22609-c14d-4c19-991c-bd09ff30e604
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # MB_CUR_MAX
 

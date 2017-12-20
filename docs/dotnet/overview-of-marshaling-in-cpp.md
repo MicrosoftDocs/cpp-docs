@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "marshaling"
-  - "marshalling"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Visual C++, marshaling"
-  - "C++ Support Library, marshaling"
-  - "marshaling, about marshaling"
+f1_keywords: ["marshaling", "marshalling"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Visual C++, marshaling", "C++ Support Library, marshaling", "marshaling, about marshaling"]
 ms.assetid: 997dd4bc-5f98-408f-b890-f35de9ce3bb8
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Overview of Marshaling in C++
 In mixed mode, you sometimes must marshal your data between native and managed types. [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] introduced the marshaling library to help you marshal and convert data in a simple way.  

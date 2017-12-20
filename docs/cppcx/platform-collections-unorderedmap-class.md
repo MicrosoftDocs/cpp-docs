@@ -7,15 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::UnorderedMap"
+f1_keywords: ["collection/Platform::Collections::UnorderedMap"]
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
 caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::UnorderedMap Class
 Represents an unordered *map*, which is a collection of key-value pairs.  

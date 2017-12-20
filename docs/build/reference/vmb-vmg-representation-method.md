@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/vmb"
-  - "/vmg"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "vmb compiler option [C++]"
-  - "-vmg compiler option [C++]"
-  - "vmg compiler option [C++]"
-  - "-vmb compiler option [C++]"
-  - "/vmb compiler option [C++]"
-  - "representation method compiler options [C++]"
-  - "/vmg compiler option [C++]"
+f1_keywords: ["/vmb", "/vmg"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["vmb compiler option [C++]", "-vmg compiler option [C++]", "vmg compiler option [C++]", "-vmb compiler option [C++]", "/vmb compiler option [C++]", "representation method compiler options [C++]", "/vmg compiler option [C++]"]
 ms.assetid: ecdb391c-7dab-40b1-916b-673d10889fd4
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /vmb, /vmg (Representation Method)
 Select the method that the compiler uses to represent pointers to class members.  

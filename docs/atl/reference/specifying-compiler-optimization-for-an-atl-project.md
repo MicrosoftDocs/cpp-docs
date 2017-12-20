@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.appwiz.ATL.optimization"
-  - "vc.appwiz.ATL.vtable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL_DISABLE_NO_VTABLE macro"
-  - "ATL projects, compiler optimization"
-  - "ATL_NO_VTABLE macro"
+f1_keywords: ["vc.appwiz.ATL.optimization", "vc.appwiz.ATL.vtable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL_DISABLE_NO_VTABLE macro", "ATL projects, compiler optimization", "ATL_NO_VTABLE macro"]
 ms.assetid: 7f379318-66d5-43dd-a53d-530758d3a228
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Specifying Compiler Optimization for an ATL Project
 By default, the [ATL Control Wizard](../../atl/reference/atl-control-wizard.md) generates new classes with the ATL_NO_VTABLE macro, as follows:  

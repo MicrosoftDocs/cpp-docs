@@ -4,44 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "c16rtomb"
-  - "c32rtomb"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+apiname: ["c16rtomb", "c32rtomb"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "c16rtomb"
-  - "c32rtomb"
-  - "uchar/c16rtomb"
-  - "uchar/c32rtomb"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "c16rtomb function"
-  - "c32rtomb function"
+f1_keywords: ["c16rtomb", "c32rtomb", "uchar/c16rtomb", "uchar/c32rtomb"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["c16rtomb function", "c32rtomb function"]
 ms.assetid: 7f5743ca-a90e-4e3f-a310-c73e16f4e14d
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # c16rtomb, c32rtomb
 Convert a UTF-16 or UTF-32 wide character into a multibyte character in the current locale.  

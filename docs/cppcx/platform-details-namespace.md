@@ -7,19 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::Details"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Details Namespace"
+f1_keywords: ["VCCORLIB/Platform::Details"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Details Namespace"]
 ms.assetid: e13c1f93-c823-4f0f-a3ee-2429bfd184db
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Details Namespace
 This namespace is intended for internal use only, and is not intended to be used for development.  

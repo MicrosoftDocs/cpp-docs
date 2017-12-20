@@ -4,25 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OLE DB providers [C++], about providers"
-  - "databases [C++], OLE DB templates"
-  - "OLE DB provider templates [C++], about OLE DB provider templates"
-  - "templates [C++], OLE DB"
+dev_langs: ["C++"]
+helpviewer_keywords: ["OLE DB providers [C++], about providers", "databases [C++], OLE DB templates", "OLE DB provider templates [C++], about OLE DB provider templates", "templates [C++], OLE DB"]
 ms.assetid: fccff85f-2af8-4500-82bd-6312d28a74b8
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Provider Templates (C++)
 OLE DB is an important part of the Microsoft Universal Data Access strategy. The OLE DB design allows high-performance data access from any data source. Any tabular data is viewable through OLE DB regardless of whether it came from a database. The flexibility gives you a tremendous amount of power.  

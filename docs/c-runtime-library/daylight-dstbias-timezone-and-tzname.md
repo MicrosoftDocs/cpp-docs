@@ -4,38 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "tzname"
-  - "_timezone"
-  - "timezone"
-  - "_daylight"
-  - "_tzname"
-  - "daylight"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "time zones"
-  - "time adjustments"
-  - "timezone variables"
-  - "_tzname function"
-  - "_daylight function"
-  - "_timezone function"
-  - "daylight function"
-  - "local time adjustments"
-  - "timezone function"
-  - "tzname function"
-  - "time-zone variables"
+f1_keywords: ["tzname", "_timezone", "timezone", "_daylight", "_tzname", "daylight"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["time zones", "time adjustments", "timezone variables", "_tzname function", "_daylight function", "_timezone function", "daylight function", "local time adjustments", "timezone function", "tzname function", "time-zone variables"]
 ms.assetid: d06c7292-6b99-4aba-b284-16a96570c856
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _daylight, _dstbias, _timezone, and _tzname
 `_daylight`, `_dstbias`, `_timezone`, and `_tzname` are used in some time and date routines to make local-time adjustments. These global variables have been deprecated for the more secure functional versions, which should be used in place of the global variables.  

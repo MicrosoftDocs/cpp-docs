@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::map::rbegin"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rbegin member [STL/CLR]"
+f1_keywords: ["cliext::map::rbegin"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["rbegin member [STL/CLR]"]
 ms.assetid: bd7165a3-561f-48d4-9791-7aaafc2cf3a5
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::rbegin (STL/CLR)
 Designates the beginning of the reversed controlled sequence.  

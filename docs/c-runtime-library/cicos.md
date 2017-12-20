@@ -4,36 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_CIcos"
-apilocation: 
-  - "msvcr90.dll"
-  - "msvcrt.dll"
-  - "msvcr120.dll"
-  - "msvcr100.dll"
-  - "msvcr80.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr110.dll"
+apiname: ["_CIcos"]
+apilocation: ["msvcr90.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CIcos"
-  - "_CIcos"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_CIcos intrinsic"
-  - "CIcos intrinsic"
+f1_keywords: ["CIcos", "_CIcos"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_CIcos intrinsic", "CIcos intrinsic"]
 ms.assetid: 6fc203fb-66f3-4ead-9784-f85833c26f1b
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _CIcos
 Calculates the cosine of the top value in the stack.  

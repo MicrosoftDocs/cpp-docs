@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "auto_handle.reset"
-  - "msclr::auto_handle::reset"
-  - "auto_handle::reset"
-  - "msclr.auto_handle.reset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "auto_handle::reset"
+f1_keywords: ["auto_handle.reset", "msclr::auto_handle::reset", "auto_handle::reset", "msclr.auto_handle.reset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["auto_handle::reset"]
 ms.assetid: 32dc3a83-80fd-45c9-8f79-8c4096c30f57
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle::reset
 Destroy the current owned object and optionally take possession of a new object.  

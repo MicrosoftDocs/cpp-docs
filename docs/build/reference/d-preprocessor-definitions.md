@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCNMakeTool.PreprocessorDefinitions"
-  - "VC.Project.VCCLCompilerTool.PreprocessorDefinitions"
-  - "/d"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "preprocessor definition symbols"
-  - "constants, defining"
-  - "macros, compiling"
-  - "/D compiler option [C++]"
-  - "-D compiler option [C++]"
-  - "D compiler option [C++]"
+f1_keywords: ["VC.Project.VCNMakeTool.PreprocessorDefinitions", "VC.Project.VCCLCompilerTool.PreprocessorDefinitions", "/d"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["preprocessor definition symbols", "constants, defining", "macros, compiling", "/D compiler option [C++]", "-D compiler option [C++]", "D compiler option [C++]"]
 ms.assetid: b53fdda7-8da1-474f-8811-ba7cdcc66dba
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /D (Preprocessor Definitions)
 Defines a preprocessing symbol for a source file.  

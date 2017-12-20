@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_multiset::end"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "end member [STL/CLR]"
+f1_keywords: ["cliext::hash_multiset::end"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["end member [STL/CLR]"]
 ms.assetid: 6f4b222c-2f82-445e-80e5-6e2afd233d4b
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multiset::end (STL/CLR)
 Designates the end of the controlled sequence.  

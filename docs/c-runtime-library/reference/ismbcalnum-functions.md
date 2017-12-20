@@ -4,63 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_ismbcalpha"
-  - "_ismbcalnum"
-  - "_ismbcdigit"
-  - "_ismbcalnum_l"
-  - "_ismbcdigit_l"
-  - "_ismbcalpha_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_ismbcalpha", "_ismbcalnum", "_ismbcdigit", "_ismbcalnum_l", "_ismbcdigit_l", "_ismbcalpha_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ismbcdigit"
-  - "ismbcalnum_l"
-  - "_ismbcdigit_l"
-  - "_ismbcalpha"
-  - "ismbcalnum"
-  - "ismbcdigit"
-  - "ismbcalpha"
-  - "_ismbcalnum_l"
-  - "_ismbcalnum"
-  - "ismbcdigit_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ismbcalpha function"
-  - "_ismbcalnum function"
-  - "ismbcdigit_l function"
-  - "_ismbcalnum_l function"
-  - "_ismbcdigit function"
-  - "ismbcalnum function"
-  - "_ismbcalpha_l function"
-  - "ismbcdigit function"
-  - "_ismbcalpha function"
-  - "_ismbcdigit_l function"
-  - "ismbcalnum_l function"
-  - "ismbcalpha_l function"
+f1_keywords: ["_ismbcdigit", "ismbcalnum_l", "_ismbcdigit_l", "_ismbcalpha", "ismbcalnum", "ismbcdigit", "ismbcalpha", "_ismbcalnum_l", "_ismbcalnum", "ismbcdigit_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ismbcalpha function", "_ismbcalnum function", "ismbcdigit_l function", "_ismbcalnum_l function", "_ismbcdigit function", "ismbcalnum function", "_ismbcalpha_l function", "ismbcdigit function", "_ismbcalpha function", "_ismbcdigit_l function", "ismbcalnum_l function", "ismbcalpha_l function"]
 ms.assetid: 12d57925-aebe-46e0-80b0-82b84c4c31ec
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 Checks whether a multibyte character is an alphanumeric, alpha, or digit character.  

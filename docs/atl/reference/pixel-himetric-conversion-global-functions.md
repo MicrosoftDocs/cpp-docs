@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "atlwin/ATL::AtlHiMetricToPixel"
-  - "atlwin/ATL::AtlPixelToHiMetric"
-dev_langs: 
-  - "C++"
+f1_keywords: ["atlwin/ATL::AtlHiMetricToPixel", "atlwin/ATL::AtlPixelToHiMetric"]
+dev_langs: ["C++"]
 ms.assetid: ecb1b1b2-7e9d-4fbc-a855-16252d2d794c
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Pixel/HIMETRIC Conversion Global Functions
 These functions provide support for converting to and from pixel and HIMETRIC units.  

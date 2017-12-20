@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multiset::difference_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "difference_type member [STL/CLR]"
+f1_keywords: ["cliext::multiset::difference_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["difference_type member [STL/CLR]"]
 ms.assetid: 841633e9-6b05-42e8-aced-f72962dba9b2
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiset::difference_type (STL/CLR)
 The types of a signed distance between two elements.  

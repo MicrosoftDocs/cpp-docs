@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::map::end"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "end member [STL/CLR]"
+f1_keywords: ["cliext::map::end"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["end member [STL/CLR]"]
 ms.assetid: 547a34f0-af66-45be-9b55-1e60ab3a1d6e
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::end (STL/CLR)
 Designates the end of the controlled sequence.  

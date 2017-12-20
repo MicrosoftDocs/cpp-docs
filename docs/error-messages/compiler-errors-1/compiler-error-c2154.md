@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2154"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2154"
+f1_keywords: ["C2154"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2154"]
 ms.assetid: 98d6b044-5a3a-43ad-95fa-9b916b22468a
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2154
 'type' : only enumeration type is allowed as an argument to compiler intrinsic type trait '__underlying_type'  

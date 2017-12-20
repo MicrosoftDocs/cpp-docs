@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "END_ACCESSOR_MAP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "END_ACCESSOR_MAP macro"
+f1_keywords: ["END_ACCESSOR_MAP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["END_ACCESSOR_MAP macro"]
 ms.assetid: ede813c7-46c9-48a6-aa1a-8ebf38e92023
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # END_ACCESSOR_MAP
 Marks the end of the accessor map entries.  

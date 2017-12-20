@@ -4,21 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "domain errors"
+dev_langs: ["C++"]
+helpviewer_keywords: ["domain errors"]
 ms.assetid: 67faa973-c872-40bc-a25f-2ef5559db96c
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Domain Errors
 **ANSI 4.5.1** The values returned by the mathematics functions on domain errors  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::map::reverse_iterator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reverse_iterator member [STL/CLR]"
+f1_keywords: ["cliext::map::reverse_iterator"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["reverse_iterator member [STL/CLR]"]
 ms.assetid: 50e461a5-61d1-455f-9c66-e0a8d88d54db
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::reverse_iterator (STL/CLR)
 The type of a reverse iterator for the controlled sequence.  

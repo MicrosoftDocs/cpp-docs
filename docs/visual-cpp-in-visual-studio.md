@@ -4,29 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "visual c++"
-  - "visual c"
-  - "vc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "unmanaged code, C++"
-  - "development environment, Visual C++"
-  - "unmanaged code"
-  - "Visual C++"
-  - "Visual C++, reference"
+f1_keywords: ["visual c++", "visual c", "vc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["unmanaged code, C++", "development environment, Visual C++", "unmanaged code", "Visual C++", "Visual C++, reference"]
 ms.assetid: e8dcc44c-a3e2-4ffe-887c-fd15b18dc458
 caps.latest.revision: 61
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Visual C++ in Visual Studio
 

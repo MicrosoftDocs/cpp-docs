@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__property keyword"
-  - "declaring properties, C++"
-  - "property keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["__property keyword", "declaring properties, C++", "property keyword [C++]"]
 ms.assetid: de169378-a8b8-49f4-a586-76bffc9b5c9f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Property Declaration
 The way to declare a property in a managed class has changed from Managed Extensions for C++ to Visual C++.  

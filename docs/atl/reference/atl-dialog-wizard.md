@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.codewiz.class.atl.dlg.overview"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL projects, adding dialog resources"
-  - "ATL Dialog Wizard"
+f1_keywords: ["vc.codewiz.class.atl.dlg.overview"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL projects, adding dialog resources", "ATL Dialog Wizard"]
 ms.assetid: b0b9ace5-83c9-40d3-82c3-eb6293f10583
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # ATL Dialog Wizard
 This wizard inserts into the project an ATL dialog box object, derived from [CAxDialogImpl](../../atl/reference/caxdialogimpl-class.md). A dialog box derived from `CAxDialogImpl` can host ActiveX controls.  

@@ -4,23 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "APIs [C++], hosting"
-  - "control-hosting API"
-  - "controls [ATL], hosting APIs"
+dev_langs: ["C++"]
+helpviewer_keywords: ["APIs [C++], hosting", "control-hosting API", "controls [ATL], hosting APIs"]
 ms.assetid: 75b27e45-cfba-4950-aa35-96cc7d8da753
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # What Is the ATL Control-Hosting API?
 ATL's control-hosting API is the set of functions that allows any window to act as an ActiveX control container. These functions can be statically or dynamically linked into your project since they are available as source code and exposed by ATL90.dll. The control-hosting functions are listed in the table below.  

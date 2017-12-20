@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLWCECompilerTool.SuppressStartupBanner"
-  - "VC.Project.VCCLCompilerTool.SuppressStartupBanner"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-nologo compiler option [C++]"
-  - "/nologo compiler option [C++]"
-  - "nologo compiler option [C++]"
-  - "banners, suppressing startup"
+f1_keywords: ["VC.Project.VCCLWCECompilerTool.SuppressStartupBanner", "VC.Project.VCCLCompilerTool.SuppressStartupBanner"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-nologo compiler option [C++]", "/nologo compiler option [C++]", "nologo compiler option [C++]", "banners, suppressing startup"]
 ms.assetid: 75930d8b-b11c-4db8-99e5-b52f97da0693
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /nologo (Suppress Startup Banner) (C/C++)
 Suppresses the display of the copyright banner when the compiler starts up and display of informational messages during compiling.  

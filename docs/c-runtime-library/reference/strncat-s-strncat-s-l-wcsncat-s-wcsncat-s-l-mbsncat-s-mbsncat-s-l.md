@@ -4,64 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wcsncat_s_l"
-  - "wcsncat_s"
-  - "_mbsncat_s_l"
-  - "_mbsncat_s"
-  - "strncat_s"
-  - "_strncat_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["_wcsncat_s_l", "wcsncat_s", "_mbsncat_s_l", "_mbsncat_s", "strncat_s", "_strncat_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "strncat_s_l"
-  - "_mbsncat_s_l"
-  - "_tcsncat_s"
-  - "wcsncat_s"
-  - "wcsncat_s_l"
-  - "strncat_s"
-  - "_mbsncat_s"
-  - "_tcsncat_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "concatenating strings"
-  - "_mbsncat_s function"
-  - "mbsncat_s_l function"
-  - "_tcsncat_s function"
-  - "_mbsncat_s_l function"
-  - "strncat_s function"
-  - "strings [C++], appending"
-  - "strncat_s_l function"
-  - "string concatenation [C++]"
-  - "_tcsncat_s_l function"
-  - "wcsncat_s function"
-  - "appending strings"
-  - "wcsncat_s_l function"
-  - "mbsncat_s function"
+f1_keywords: ["strncat_s_l", "_mbsncat_s_l", "_tcsncat_s", "wcsncat_s", "wcsncat_s_l", "strncat_s", "_mbsncat_s", "_tcsncat_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["concatenating strings", "_mbsncat_s function", "mbsncat_s_l function", "_tcsncat_s function", "_mbsncat_s_l function", "strncat_s function", "strings [C++], appending", "strncat_s_l function", "string concatenation [C++]", "_tcsncat_s_l function", "wcsncat_s function", "appending strings", "wcsncat_s_l function", "mbsncat_s function"]
 ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
 caps.latest.revision: 42
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 Appends characters to a string. These versions of [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

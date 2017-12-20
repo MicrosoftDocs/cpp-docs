@@ -4,51 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_strtoull_l"
-  - "_wcstoull_l"
-  - "strtoull"
-  - "wcstoull"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+apiname: ["_strtoull_l", "_wcstoull_l", "strtoull", "wcstoull"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wcstoull_l"
-  - "_tcstoull"
-  - "_tcstoull_l"
-  - "wcstoull"
-  - "_strtoull_l"
-  - "strtoull"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strtoull function"
-  - "_tcstoull_l function"
-  - "_tcstoull function"
-  - "_wcstoull_l function"
-  - "_strtoull_l function"
-  - "wcstoull function"
+f1_keywords: ["_wcstoull_l", "_tcstoull", "_tcstoull_l", "wcstoull", "_strtoull_l", "strtoull"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strtoull function", "_tcstoull_l function", "_tcstoull function", "_wcstoull_l function", "_strtoull_l function", "wcstoull function"]
 ms.assetid: 36dac1cc-e901-40a0-8802-63562d6d01df
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # strtoull, _strtoull_l, wcstoull, _wcstoull_l
 Converts strings to an unsigned long long-integer value.  

@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IObjectWithSiteImpl"
-  - "ATLCOM/ATL::IObjectWithSiteImpl"
-  - "ATLCOM/ATL::IObjectWithSiteImpl::GetSite"
-  - "ATLCOM/ATL::IObjectWithSiteImpl::SetChildSite"
-  - "ATLCOM/ATL::IObjectWithSiteImpl::SetSite"
-  - "ATLCOM/ATL::IObjectWithSiteImpl::m_spUnkSite"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IObjectWithSiteImpl class"
+f1_keywords: ["IObjectWithSiteImpl", "ATLCOM/ATL::IObjectWithSiteImpl", "ATLCOM/ATL::IObjectWithSiteImpl::GetSite", "ATLCOM/ATL::IObjectWithSiteImpl::SetChildSite", "ATLCOM/ATL::IObjectWithSiteImpl::SetSite", "ATLCOM/ATL::IObjectWithSiteImpl::m_spUnkSite"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IObjectWithSiteImpl class"]
 ms.assetid: 4e1f774f-bc3d-45ee-9a1c-c3533a511588
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # IObjectWithSiteImpl Class
 This class provides methods allowing an object to communicate with its site.  

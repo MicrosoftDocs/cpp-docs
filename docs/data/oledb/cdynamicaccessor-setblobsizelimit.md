@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDynamicAccessor::SetBlobSizeLimit"
-  - "SetBlobSizeLimit"
-  - "CDynamicAccessor.SetBlobSizeLimit"
-  - "ATL.CDynamicAccessor.SetBlobSizeLimit"
-  - "ATL::CDynamicAccessor::SetBlobSizeLimit"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetBlobSizeLimit method"
+f1_keywords: ["CDynamicAccessor::SetBlobSizeLimit", "SetBlobSizeLimit", "CDynamicAccessor.SetBlobSizeLimit", "ATL.CDynamicAccessor.SetBlobSizeLimit", "ATL::CDynamicAccessor::SetBlobSizeLimit"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetBlobSizeLimit method"]
 ms.assetid: fb8cb85d-f841-408e-a344-37895b10993f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::SetBlobSizeLimit
 Sets the maximum BLOB size in bytes.  

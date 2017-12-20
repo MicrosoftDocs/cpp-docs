@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ICommandTextImpl.SetCommandText"
-  - "ICommandTextImpl::SetCommandText"
-  - "SetCommandText"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetCommandText method"
+f1_keywords: ["ICommandTextImpl.SetCommandText", "ICommandTextImpl::SetCommandText", "SetCommandText"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetCommandText method"]
 ms.assetid: 7271bfb0-7a8b-4281-b3e8-7c80b9fe79d4
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandTextImpl::SetCommandText
 Sets the command text, replacing the existing command text.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::greater_equal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "greater_equal function [STL/CLR]"
+f1_keywords: ["cliext::greater_equal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["greater_equal function [STL/CLR]"]
 ms.assetid: 4d4d8301-72dd-4a06-a652-5237e1e72a88
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # greater_equal (STL/CLR)
 The template class describes a functor that, when called, returns true only if the first argument is greater than or equal to the second. You use it specify a function object in terms of its argument type.  

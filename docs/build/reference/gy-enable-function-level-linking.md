@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking"
-  - "/gy"
-  - "VC.Project.VCCLWCECompilerTool.EnableFunctionLevelLinking"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "enable function-level linking compiler option [C++]"
-  - "COMDAT function"
-  - "Gy compiler option [C++]"
-  - "-Gy compiler option [C++]"
-  - "/Gy compiler option [C++]"
-  - "packaged functions"
+f1_keywords: ["VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking", "/gy", "VC.Project.VCCLWCECompilerTool.EnableFunctionLevelLinking"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["enable function-level linking compiler option [C++]", "COMDAT function", "Gy compiler option [C++]", "-Gy compiler option [C++]", "/Gy compiler option [C++]", "packaged functions"]
 ms.assetid: 0d3cf14c-ed7d-4ad3-b4b6-104e56f61046
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Gy (Enable Function-Level Linking)
 Allows the compiler to package individual functions in the form of packaged functions (COMDATs).  

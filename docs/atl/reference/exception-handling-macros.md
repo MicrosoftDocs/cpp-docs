@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "atldef/ATL::_ATLCATCH"
-  - "atldef/ATL::_ATLCATCHALL"
-  - "atldef/ATL::_ATLTRY"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exception handling, macros"
-  - "C++ exception handling, macros"
+f1_keywords: ["atldef/ATL::_ATLCATCH", "atldef/ATL::_ATLCATCHALL", "atldef/ATL::_ATLTRY"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["exception handling, macros", "C++ exception handling, macros"]
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Exception Handling Macros
 These macros provide support for exception handling.  

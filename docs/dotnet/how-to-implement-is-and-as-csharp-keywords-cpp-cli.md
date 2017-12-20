@@ -4,23 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "as C# keyword [C++]"
-  - "is C# keyword [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["as C# keyword [C++]", "is C# keyword [C++]"]
 ms.assetid: bc66c0d1-696b-480d-977c-5d9d1ad1ece6
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Implement is and as C# Keywords (C++/CLI)
 This topic shows how to implement the functionality of the `is` and `as` C# keywords in Visual C++.  

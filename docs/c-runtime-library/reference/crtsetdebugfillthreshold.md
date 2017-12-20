@@ -4,42 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_CrtSetDebugFillThreshold"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_CrtSetDebugFillThreshold"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_CrtSetDebugFillThreshold"
-  - "CrtSetDebugFillThreshold"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "debug, buffer-filling behavior"
-  - "CrtSetDebugFillThreshold function"
-  - "_CrtSetDebugFillThreshold function"
-  - "buffer-filling behavior"
-  - "0xFD"
+f1_keywords: ["_CrtSetDebugFillThreshold", "CrtSetDebugFillThreshold"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["debug, buffer-filling behavior", "CrtSetDebugFillThreshold function", "_CrtSetDebugFillThreshold function", "buffer-filling behavior", "0xFD"]
 ms.assetid: 6cb360e8-56ae-4248-b17f-e28aee3e0ed7
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetDebugFillThreshold
 Retrieves or modifies the threshold controlling buffer-filling behavior in debug functions.  

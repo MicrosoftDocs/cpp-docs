@@ -4,30 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interop [C++], mixed assemblies"
-  - "/clr compiler option [C++], mixed assemblies"
-  - "managed code [C++], interoperability"
-  - "interoperability [C++], mixed assemblies"
-  - "mixed DLL loading [C++]"
-  - "mixed assemblies [C++], about mixed assemblies"
-  - "assemblies [C++], mixed"
-  - "mixed assemblies [C++]"
-  - "native code [C++], .NET interoperatibility"
+dev_langs: ["C++"]
+helpviewer_keywords: ["interop [C++], mixed assemblies", "/clr compiler option [C++], mixed assemblies", "managed code [C++], interoperability", "interoperability [C++], mixed assemblies", "mixed DLL loading [C++]", "mixed assemblies [C++], about mixed assemblies", "assemblies [C++], mixed", "mixed assemblies [C++]", "native code [C++], .NET interoperatibility"]
 ms.assetid: 4299dfce-392f-4933-8bf0-5da2f0d1c282
 caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Mixed (Native and Managed) Assemblies
 Mixed assemblies are capable of containing both unmanaged machine instructions and MSIL instructions. This allows them to call and be called by .NET components, while retaining compatibility with components that are entirely unmanaged. Using mixed assemblies, developers can author applications using a mixture of managed and unmanaged functionality. This makes mixed assemblies ideal for migrating existing Visual C++ applications to the .NET Platform.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::value_comp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "value_comp member [STL/CLR]"
+f1_keywords: ["cliext::set::value_comp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["value_comp member [STL/CLR]"]
 ms.assetid: 3b7e469d-ca73-415b-bd20-24968c51107c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::value_comp (STL/CLR)
 Copies the ordering delegate for two element values.  

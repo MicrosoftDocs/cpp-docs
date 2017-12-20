@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.TargetMachine"
-  - "/machine"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mapfiles, creating linker"
-  - "target platform"
-  - "-MACHINE linker option"
-  - "/MACHINE linker option"
-  - "MACHINE linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.TargetMachine", "/machine"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mapfiles, creating linker", "target platform", "-MACHINE linker option", "/MACHINE linker option", "MACHINE linker option"]
 ms.assetid: 8d41bf4b-7e53-4ab9-9085-d852b08d31c2
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /MACHINE (Specify Target Platform)
 ```  

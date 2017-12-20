@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::list::remove"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "remove member [STL/CLR]"
+f1_keywords: ["cliext::list::remove"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["remove member [STL/CLR]"]
 ms.assetid: eaf598ee-e8fd-4cc0-be69-ca81a80e1d51
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::remove (STL/CLR)
 Removes an element with a specified value.  

@@ -4,23 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DLLs [C++], initializing"
-  - "DLLs [C++], extension"
-  - "DLLs [C++], regular"
+dev_langs: ["C++"]
+helpviewer_keywords: ["DLLs [C++], initializing", "DLLs [C++], extension", "DLLs [C++], regular"]
 ms.assetid: 9f1d14a7-9e2a-4760-b3b6-db014fcdb7ff
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs
 When using an MFC extension DLL from a regular MFC DLL, if the MFC extension DLL is not wired into the **CDynLinkLibrary** object chain of the regular MFC DLL, you might run into one or more of a set of related problems. Because the debug versions of the MFC Database, OLE, and Sockets support DLLs are implemented as MFC extension DLLs, you might see similar problems if you are using these MFC features, even if you are not explicitly using any of your own MFC extension DLLs. Some symptoms are:  

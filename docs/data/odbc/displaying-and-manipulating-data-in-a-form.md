@@ -4,27 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "forms [C++], displaying data"
-  - "displaying data [C++], forms"
-  - "ODBC [C++], forms"
-  - "record views [C++], displaying data"
-  - "data [MFC]"
-  - "data [MFC], displaying in a form"
+dev_langs: ["C++"]
+helpviewer_keywords: ["forms [C++], displaying data", "displaying data [C++], forms", "ODBC [C++], forms", "record views [C++], displaying data", "data [MFC]", "data [MFC], displaying in a form"]
 ms.assetid: c56185c4-12cb-40b1-b499-02b29ea83e3a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Displaying and Manipulating Data in a Form
 Many data-access applications select data and display it in fields in a form. The database class [CRecordView](../../mfc/reference/crecordview-class.md) gives you a [CFormView](../../mfc/reference/cformview-class.md) object directly connected to a recordset object. The record view uses [dialog data exchange (DDX)](../../mfc/dialog-data-exchange-and-validation.md) to move the values of the fields of the current record from the recordset to the controls on the form and to move updated information back to the recordset. The recordset, in turn, uses record field exchange (RFX) to move data between its field data members and the corresponding columns in a table on the data source.  

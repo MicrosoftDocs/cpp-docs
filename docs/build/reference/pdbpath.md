@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/pdbpath"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".pdb files, path"
-  - "-PDBPATH dumpbin option"
-  - "/PDBPATH dumpbin option"
-  - "PDBPATH dumpbin option"
-  - "PDB files, path"
+f1_keywords: ["/pdbpath"]
+dev_langs: ["C++"]
+helpviewer_keywords: [".pdb files, path", "-PDBPATH dumpbin option", "/PDBPATH dumpbin option", "PDBPATH dumpbin option", "PDB files, path"]
 ms.assetid: ccf67dcd-0b23-4250-ad47-06c48acbe82b
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /PDBPATH
 ```  

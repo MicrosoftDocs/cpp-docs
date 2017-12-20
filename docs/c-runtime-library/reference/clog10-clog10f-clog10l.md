@@ -4,48 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "clog10"
-  - "clog10f"
-  - "clog10l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["clog10", "clog10f", "clog10l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "clog10"
-  - "clog10f"
-  - "clog10l"
-  - "complex/clog10"
-  - "complex/clog10f"
-  - "complex/clog10l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "clog10 function"
-  - "clog10f function"
-  - "clog10l function"
+f1_keywords: ["clog10", "clog10f", "clog10l", "complex/clog10", "complex/clog10f", "complex/clog10l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["clog10 function", "clog10f function", "clog10l function"]
 ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # clog10, clog10f, clog10l
 Retrieves the base 10 logarithm of a complex number.  

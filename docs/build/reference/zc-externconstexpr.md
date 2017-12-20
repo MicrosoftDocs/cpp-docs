@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "9/29/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/Zc:externConstexpr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Zc:externConstexpr compiler option (C++)"
-  - "extern constexpr variables (C++)"
+f1_keywords: ["/Zc:externConstexpr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Zc:externConstexpr compiler option (C++)", "extern constexpr variables (C++)"]
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:externConstexpr (Enable extern constexpr variables)
 

@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_set"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<cliext/hash_set> header [STL/CLR]"
-  - "hash_set class [STL/CLR]"
-  - "<hash_set> header [STL/CLR]"
+f1_keywords: ["cliext::hash_set"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<cliext/hash_set> header [STL/CLR]", "hash_set class [STL/CLR]", "<hash_set> header [STL/CLR]"]
 ms.assetid: d110e356-ba3e-4e52-9e2d-d997bf975c96
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `hash_set` to manage a sequence of elements as a hash table, each table entry storing a bidirectional linked list of nodes, and each node storing one element. The value of each element is used as a key, for ordering the sequence.  

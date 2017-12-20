@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/TLS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/TLS dumpbin option"
-  - "-TLS dumpbin option"
+f1_keywords: ["/TLS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/TLS dumpbin option", "-TLS dumpbin option"]
 ms.assetid: 2b3f48f9-cac4-4351-b15c-2833b43bc709
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /TLS
 Displays the IMAGE_TLS_DIRECTORY structure from an executable.  

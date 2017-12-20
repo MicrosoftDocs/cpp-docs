@@ -4,47 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wsplitpath_s"
-  - "_splitpath_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-filesystem-l1-1-0.dll"
+apiname: ["_wsplitpath_s", "_splitpath_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_wsplitpath_s"
-  - "splitpath_s"
-  - "_splitpath_s"
-  - "wsplitpath_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "splitpath_s function"
-  - "pathnames"
-  - "_splitpath_s function"
-  - "_wsplitpath_s function"
-  - "path names"
-  - "wsplitpath_s function"
+f1_keywords: ["_wsplitpath_s", "splitpath_s", "_splitpath_s", "wsplitpath_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["splitpath_s function", "pathnames", "_splitpath_s function", "_wsplitpath_s function", "path names", "wsplitpath_s function"]
 ms.assetid: 30fff3e2-cd00-4eb6-b5a2-65db79cb688b
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _splitpath_s, _wsplitpath_s
 Breaks a path name into components. These are versions of [_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

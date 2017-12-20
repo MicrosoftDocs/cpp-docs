@@ -7,21 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Namespace not found::Platform"
-  - "VCCORLIB/Namespace not found::Platform::Array Constructors"
-  - "VCCORLIB/Namespace not found::Platform::Array::Value"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Array Class"
+f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Array Constructors", "VCCORLIB/Namespace not found::Platform::Array::Value"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Array Class"]
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
 caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Array Class
 Represents a one-dimensional, modifiable array that can be received and passed across the application binary interface (ABI).  

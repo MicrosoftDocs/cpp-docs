@@ -4,65 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_ismbcl2"
-  - "_ismbcl1"
-  - "_ismbcl0"
-  - "_ismbcl2_l"
-  - "_ismbcl1_l"
-  - "_ismbcl0_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_ismbcl2", "_ismbcl1", "_ismbcl0", "_ismbcl2_l", "_ismbcl1_l", "_ismbcl0_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "ismbcl0"
-  - "_ismbcl1_l"
-  - "_ismbcl0"
-  - "ismbcl1"
-  - "ismbcl0_l"
-  - "_ismbcl2_l"
-  - "ismbcl2"
-  - "ismbcl1_l"
-  - "_ismbcl1"
-  - "_ismbcl0_l"
-  - "_ismbcl2"
-  - "ismbcl2_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_ismbcl0_l function"
-  - "_ismbcl2 function"
-  - "_ismbcl1_l function"
-  - "ismbcl2 function"
-  - "_ismbcl1 function"
-  - "ismbcl0_l function"
-  - "ismbcl2_l function"
-  - "ismbcl1_l function"
-  - "ismbcl0 function"
-  - "ismbcl1 function"
-  - "_ismbcl2_l function"
-  - "_ismbcl0 function"
+f1_keywords: ["ismbcl0", "_ismbcl1_l", "_ismbcl0", "ismbcl1", "ismbcl0_l", "_ismbcl2_l", "ismbcl2", "ismbcl1_l", "_ismbcl1", "_ismbcl0_l", "_ismbcl2", "ismbcl2_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_ismbcl0_l function", "_ismbcl2 function", "_ismbcl1_l function", "ismbcl2 function", "_ismbcl1 function", "ismbcl0_l function", "ismbcl2_l function", "ismbcl1_l function", "ismbcl0 function", "ismbcl1 function", "_ismbcl2_l function", "_ismbcl0 function"]
 ms.assetid: ee15ebd1-462c-4a43-95f3-6735836d626a
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l
 **Code Page 932 Specific functions**, using the current locale or a specified LC_CTYPE conversion state category.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::deque::size_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "size_type member [STL/CLR]"
+f1_keywords: ["cliext::deque::size_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["size_type member [STL/CLR]"]
 ms.assetid: c598871c-0ce8-4599-ab4c-2d0ea5f3f8e4
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque::size_type (STL/CLR)
 The type of a signed distance between two element.  

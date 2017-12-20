@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dates, calculating intervals"
-  - "elapsed time, string representation"
-  - "time [C++], formatting"
-  - "formatting [C++], time"
+dev_langs: ["C++"]
+helpviewer_keywords: ["dates, calculating intervals", "elapsed time, string representation", "time [C++], formatting", "formatting [C++], time"]
 ms.assetid: 7fcfee24-f874-4a4d-95b3-adc19a0f2df0
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Formatting Time Values: General-Purpose Classes
 The following procedure shows how to format time values.  

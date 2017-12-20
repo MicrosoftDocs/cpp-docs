@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::operator<="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator<= member [STL/CLR]"
+f1_keywords: ["cliext::vector::operator<="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator<= member [STL/CLR]"]
 ms.assetid: d4f9d0ba-1fa3-4895-aef4-c9f9a06dbe05
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator&lt;= (vector) (STL/CLR)
 Vector less than or equal comparison.  

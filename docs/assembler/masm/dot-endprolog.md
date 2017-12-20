@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - ".ENDPROLOG"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".ENDPROLOG directive"
+f1_keywords: [".ENDPROLOG"]
+dev_langs: ["C++"]
+helpviewer_keywords: [".ENDPROLOG directive"]
 ms.assetid: 61a2474c-9527-46e6-9f9d-bc4b42c10f35
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # .ENDPROLOG
 Signals the end of the prologue declarations.  

@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mbsnbicmp_l"
-  - "_mbsnbicmp"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_mbsnbicmp_l", "_mbsnbicmp"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_strnicmp"
-  - "_wcsnicmp_l"
-  - "_mbsnbicmp"
-  - "mbsnbicmp"
-  - "mbsnbicmp_l"
-  - "_tcsnicmp"
-  - "_strnicmp_l"
-  - "_tcsnicmp_l"
-  - "_wcsnicmp"
-  - "_mbsnbicmp_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_tcsnicmp_l function"
-  - "_strnicmp function"
-  - "mbsnbicmp_l function"
-  - "_wcsnicmp_l function"
-  - "_mbsnbicmp function"
-  - "_mbsnbicmp_l function"
-  - "_tcsnicmp function"
-  - "_strnicmp_l function"
-  - "mbsnbicmp function"
-  - "_wcsnicmp function"
+f1_keywords: ["_strnicmp", "_wcsnicmp_l", "_mbsnbicmp", "mbsnbicmp", "mbsnbicmp_l", "_tcsnicmp", "_strnicmp_l", "_tcsnicmp_l", "_wcsnicmp", "_mbsnbicmp_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_tcsnicmp_l function", "_strnicmp function", "mbsnbicmp_l function", "_wcsnicmp_l function", "_mbsnbicmp function", "_mbsnbicmp_l function", "_tcsnicmp function", "_strnicmp_l function", "mbsnbicmp function", "_wcsnicmp function"]
 ms.assetid: ddb44974-8b0c-42f0-90d0-56c9350bae0c
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbicmp, _mbsnbicmp_l
 Compares `n` bytes of two multibyte-character strings, and ignores case.  

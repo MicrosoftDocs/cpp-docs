@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::list::push_back"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "push_back member [STL/CLR]"
+f1_keywords: ["cliext::list::push_back"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["push_back member [STL/CLR]"]
 ms.assetid: f2c70470-a899-4e5f-8f3e-b55d6a8bff0e
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # list::push_back (STL/CLR)
 Adds a new last element.  

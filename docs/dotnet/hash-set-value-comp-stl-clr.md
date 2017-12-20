@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_set::value_comp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "value_comp member [STL/CLR]"
+f1_keywords: ["cliext::hash_set::value_comp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["value_comp member [STL/CLR]"]
 ms.assetid: 7ef381ea-438b-48ce-b0cb-96d844ea5df7
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set::value_comp (STL/CLR)
 Copies the ordering delegate for two element values.  

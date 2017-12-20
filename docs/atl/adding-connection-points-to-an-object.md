@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "connection points [C++], adding to ATL objects"
-  - "Implement Connection Point ATL wizard"
+dev_langs: ["C++"]
+helpviewer_keywords: ["connection points [C++], adding to ATL objects", "Implement Connection Point ATL wizard"]
 ms.assetid: 843531be-4a36-4db0-9d54-e029b1a72a8b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Adding Connection Points to an Object
 The [ATL Tutorial](../atl/active-template-library-atl-tutorial.md) demonstrates how to create a control with support for connection points, how to add events, and then how to implement the connection point. ATL implements connection points with the [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) class.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::remove_copy"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "remove_copy function [STL/CLR]"
+f1_keywords: ["cliext::remove_copy"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["remove_copy function [STL/CLR]"]
 ms.assetid: 602fd8e3-26f7-491f-bf2c-cddf269f9807
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # remove_copy (STL/CLR)
 Copies elements from a source range to a destination range, except that elements of a specified value are not copied, without disturbing the order of the remaining elements and returning the end of a new destination range.  

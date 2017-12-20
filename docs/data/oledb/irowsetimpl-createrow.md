@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IRowsetImpl.CreateRow"
-  - "ATL.IRowsetImpl.CreateRow"
-  - "ATL::IRowsetImpl::CreateRow"
-  - "CreateRow"
-  - "IRowsetImpl::CreateRow"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CreateRow method"
+f1_keywords: ["IRowsetImpl.CreateRow", "ATL.IRowsetImpl.CreateRow", "ATL::IRowsetImpl::CreateRow", "CreateRow", "IRowsetImpl::CreateRow"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CreateRow method"]
 ms.assetid: b01c430c-9484-4fef-a6cf-a2e8d9d99130
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::CreateRow
 A helper method called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new **HROW**.  

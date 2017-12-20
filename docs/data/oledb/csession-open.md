@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::CSession::Open"
-  - "CSession::Open"
-  - "CSession.Open"
-  - "ATL.CSession.Open"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Open method"
+f1_keywords: ["ATL::CSession::Open", "CSession::Open", "CSession.Open", "ATL.CSession.Open"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Open method"]
 ms.assetid: c2050c2c-9817-4857-be49-189f346968f6
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSession::Open
 Opens a new session for the data source object.  

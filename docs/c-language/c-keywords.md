@@ -4,23 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "keywords [C]"
-  - "redefining keywords"
-  - "Microsoft-specific keywords"
+dev_langs: ["C++"]
+helpviewer_keywords: ["keywords [C]", "redefining keywords", "Microsoft-specific keywords"]
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # C Keywords
 "Keywords" are words that have special meaning to the C compiler. In translation phases 7 and 8, an identifier cannot have the same spelling and case as a C keyword. (See a description of [translation phases](../preprocessor/phases-of-translation.md) in the *Preprocessor Reference*; for information on identifiers, see [Identifiers](../c-language/c-identifiers.md).) The C language uses the following keywords:  

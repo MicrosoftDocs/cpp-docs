@@ -4,26 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SQL, direct calls from ODBC"
-  - "SQL, calling directly from ODBC"
-  - "ODBC, SQL calls"
-  - "SQL calls"
-  - "direct SQL calls from ODBC"
+dev_langs: ["C++"]
+helpviewer_keywords: ["SQL, direct calls from ODBC", "SQL, calling directly from ODBC", "ODBC, SQL calls", "SQL calls", "direct SQL calls from ODBC"]
 ms.assetid: 091988d2-f5a5-4c2d-aa09-8779a9fb9607
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # SQL: Making Direct SQL Calls (ODBC)
 This topic explains:  

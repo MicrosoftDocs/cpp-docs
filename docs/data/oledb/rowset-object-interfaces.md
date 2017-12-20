@@ -4,26 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "interfaces, OLE DB"
-  - "OLE DB, interfaces"
-  - "rowset objects [OLE DB]"
-  - "OLE DB provider templates, object interfaces"
-  - "interfaces, list of"
+dev_langs: ["C++"]
+helpviewer_keywords: ["interfaces, OLE DB", "OLE DB, interfaces", "rowset objects [OLE DB]", "OLE DB provider templates, object interfaces", "interfaces, list of"]
 ms.assetid: 0d7a5d48-2fe4-434f-a84b-157c1fdc3494
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Rowset Object Interfaces
 The following table shows the mandatory and optional interfaces defined by OLE DB for a rowset object.  

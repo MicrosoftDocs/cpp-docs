@@ -4,32 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "address-of operator (&)"
-  - "* operator"
-  - "operators [C++], address-of"
-  - "ampersand operator (&)"
-  - "* operator, indirection operator"
-  - "addresses [C++], indirection"
-  - "addresses [C++]"
-  - "indirection operator"
-  - "& operator, address-of operator"
-  - "null pointers [C++]"
-  - "* operator, address-of operator"
-  - "operators [C++], indirection"
+dev_langs: ["C++"]
+helpviewer_keywords: ["address-of operator (&)", "* operator", "operators [C++], address-of", "ampersand operator (&)", "* operator, indirection operator", "addresses [C++], indirection", "addresses [C++]", "indirection operator", "& operator, address-of operator", "null pointers [C++]", "* operator, address-of operator", "operators [C++], indirection"]
 ms.assetid: 10d62b00-12ba-4ea9-a2d5-09ac29ca2232
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Indirection and Address-of Operators
 The indirection operator (**\***) accesses a value indirectly, through a pointer. The operand must be a pointer value. The result of the operation is the value addressed by the operand; that is, the value at the address to which its operand points. The type of the result is the type that the operand addresses.  

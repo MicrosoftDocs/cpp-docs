@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLWCECompilerTool.CompileAs"
-  - "VC.Project.VCCLCompilerTool.CompileAs"
-  - "/Tp"
-  - "/tc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Tp compiler option [C++]"
-  - "/Tc compiler option [C++]"
-  - "-Tc compiler option [C++]"
-  - "source files, specifying to compiler"
-  - "Tc compiler option [C++]"
-  - "/Tp compiler option [C++]"
-  - "-Tp compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLWCECompilerTool.CompileAs", "VC.Project.VCCLCompilerTool.CompileAs", "/Tp", "/tc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Tp compiler option [C++]", "/Tc compiler option [C++]", "-Tc compiler option [C++]", "source files, specifying to compiler", "Tc compiler option [C++]", "/Tp compiler option [C++]", "-Tp compiler option [C++]"]
 ms.assetid: 7d9d0a65-338b-427c-8b48-fff30e2f9d2b
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Tc, /Tp, /TC, /TP (Specify Source File Type)
 The **/Tc** option specifies that `filename` is a C source file, even if it does not have a .c extension. The **/Tp** option specifies that `filename` is a C++ source file, even if it doesn't have a .cpp or .cxx extension. A space between the option and `filename` is optional. Each option specifies one file; to specify additional files, repeat the option.  

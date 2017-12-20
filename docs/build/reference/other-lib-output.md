@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "Lib"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "output files, LIB"
+f1_keywords: ["Lib"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["output files, LIB"]
 ms.assetid: 656864a6-0b7a-4633-8dc6-ee3b1766d836
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Other LIB Output
 In the default mode, you can use the /LIST option to display information about the resulting library. You can redirect this output to a file.  

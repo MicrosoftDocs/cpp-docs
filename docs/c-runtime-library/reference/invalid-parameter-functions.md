@@ -6,30 +6,16 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_invalid_parameter"
-  - "_invalid_parameter_noinfo"
-  - "_invalid_parameter_noinfo_noreturn"
-  - "_invoke_watson"
-apilocation: 
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+apiname: ["_invalid_parameter", "_invalid_parameter_noinfo", "_invalid_parameter_noinfo_noreturn", "_invoke_watson"]
+apilocation: ["api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CORECRT/_invalid_parameter"
-  - "_invalid_parameter"
-  - "CORECRT/_invalid_parameter_noinfo"
-  - "_invalid_parameter_noinfo"
-  - "CORECRT/_invalid_parameter_noinfo_noreturn"
-  - "_invalid_parameter_noinfo_noreturn"
-  - "CORECRT/_invoke_watson"
-  - "_invoke_watson"
+f1_keywords: ["CORECRT/_invalid_parameter", "_invalid_parameter", "CORECRT/_invalid_parameter_noinfo", "_invalid_parameter_noinfo", "CORECRT/_invalid_parameter_noinfo_noreturn", "_invalid_parameter_noinfo_noreturn", "CORECRT/_invoke_watson", "_invoke_watson"]
 ms.assetid: a4d6f1fd-ce56-4783-8719-927151a7a814
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson
 These functions are used by the C Runtime Library to handle non-valid parameters passed to CRT Library functions. Your code may also use these functions to support default or customizable handling of non-valid parameters.

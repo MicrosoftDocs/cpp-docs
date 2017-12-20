@@ -4,29 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "DllMainCRTStartup"
-  - "wWinMainCRTStartup"
-  - "WinMainCRTStartup"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRT, linking with ATL"
-  - "WinMainCRTStartup method"
-  - "DllMainCRTStartup method"
-  - "wWinMainCRTStartup method"
-  - "ATL, C Run-Time library (CRT)"
+f1_keywords: ["DllMainCRTStartup", "wWinMainCRTStartup", "WinMainCRTStartup"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRT, linking with ATL", "WinMainCRTStartup method", "DllMainCRTStartup method", "wWinMainCRTStartup method", "ATL, C Run-Time library (CRT)"]
 ms.assetid: 650957ae-362c-4ecf-8b03-5d49138e8b5b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Linking to the CRT in Your ATL Project
 The [C Run-Time Libraries](../c-runtime-library/crt-library-features.md) (CRT) provide many useful functions that can make programming much easier during ATL development. All ATL projects link to the CRT library. You can see the advantages and disadvantages of linking method in [Benefits and Tradeoffs of the Method Used to Link to the CRT](../atl/benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md).  

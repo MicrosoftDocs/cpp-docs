@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.TypeLibraryFile"
-  - "/tlbout"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tlb files, renaming"
-  - "TLBOUT linker option"
-  - "/TLBOUT linker option"
-  - ".tlb files, renaming"
-  - "-TLBOUT linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.TypeLibraryFile", "/tlbout"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tlb files, renaming", "TLBOUT linker option", "/TLBOUT linker option", ".tlb files, renaming", "-TLBOUT linker option"]
 ms.assetid: 0df6d078-2e48-46c9-a1a5-02674d85dce8
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /TLBOUT (Name .TLB File)
 ```  

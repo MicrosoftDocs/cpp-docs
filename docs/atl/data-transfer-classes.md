@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_U_STRINGorID"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data transfer [C++]"
-  - "data transfer [C++], classes"
-  - "data transfer classes [C++]"
+f1_keywords: ["_U_STRINGorID"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["data transfer [C++]", "data transfer [C++], classes", "data transfer classes [C++]"]
 ms.assetid: c10bcdc8-b90c-4c2a-9179-fd3de80461da
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Data Transfer Classes
 The following classes support various types of data transfer:  

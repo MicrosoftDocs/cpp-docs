@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "user-supplied messages [C++], run time"
-  - "user-supplied messages [C++], preprocessor time"
-  - "#error%2C assert%2C static_assert [C++]"
-  - "user-supplied messages [C++], compile time"
+dev_langs: ["C++"]
+helpviewer_keywords: ["user-supplied messages [C++], run time", "user-supplied messages [C++], preprocessor time", "#error%2C assert%2C static_assert [C++]", "user-supplied messages [C++], compile time"]
 ms.assetid: ebf7d885-61c8-4233-b0ae-1c9a38e0f385
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Assertion and User-Supplied Messages (C++)
 The C++ language supports three error handling mechanisms that help you debug your application: the [#error directive](../preprocessor/hash-error-directive-c-cpp.md), the [static_assert](../cpp/static-assert.md) keyword, and the [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) macro. All three mechanisms issue error messages, and two also test software assertions. A software assertion specifies a condition that you expect to be true at a particular point in your program. If a compile time assertion fails, the compiler issues a diagnostic message and a compilation error. If a run-time assertion fails, the operating system issues a diagnostic message and closes your application.  

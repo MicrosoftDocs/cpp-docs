@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_multimap::key_compare"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "key_compare member [STL/CLR]"
+f1_keywords: ["cliext::hash_multimap::key_compare"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["key_compare member [STL/CLR]"]
 ms.assetid: 011f5bc3-0e40-48fe-9d6f-f6960210a27a
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multimap::key_compare (STL/CLR)
 The ordering delegate for two keys.  

@@ -4,31 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLWCECompilerTool.BufferSecurityCheck"
-  - "VC.Project.VCCLCompilerTool.BufferSecurityCheck"
-  - "/GS"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "buffers [C++], buffer overruns"
-  - "buffer overruns, compiler /GS switch"
-  - "GS compiler option [C++]"
-  - "/GS compiler option [C++]"
-  - "security check compiler option [C++]"
-  - "-GS compiler option [C++]"
-  - "buffers [C++], avoiding overruns"
+f1_keywords: ["VC.Project.VCCLWCECompilerTool.BufferSecurityCheck", "VC.Project.VCCLCompilerTool.BufferSecurityCheck", "/GS"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["buffers [C++], buffer overruns", "buffer overruns, compiler /GS switch", "GS compiler option [C++]", "/GS compiler option [C++]", "security check compiler option [C++]", "-GS compiler option [C++]", "buffers [C++], avoiding overruns"]
 ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
 caps.latest.revision: 40
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /GS (Buffer Security Check)  
   

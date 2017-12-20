@@ -4,28 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "try-catch exception handling, managed applications"
-  - "__finally keyword, managed exceptions"
-  - "exceptions, managed"
-  - "try-catch exception handling"
-  - "catch blocks"
-  - "throwing exceptions, managed exceptions"
-  - "Visual C++, handling managed exceptions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["try-catch exception handling, managed applications", "__finally keyword, managed exceptions", "exceptions, managed", "try-catch exception handling", "catch blocks", "throwing exceptions, managed exceptions", "Visual C++, handling managed exceptions"]
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Basic Concepts in Using Managed Exceptions
 This topic discusses exception handling in managed applications. That is, an application that is compiled with the **/clr** compiler option.  

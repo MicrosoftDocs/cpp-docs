@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data members [C++], in __asm blocks"
-  - "data access [C++], in __asm blocks"
-  - "__asm keyword [C++], data members"
-  - "structure types in __asm blocks"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data members [C++], in __asm blocks", "data access [C++], in __asm blocks", "__asm keyword [C++], data members", "structure types in __asm blocks"]
 ms.assetid: e99f5a28-0381-4090-8ece-6af8f2436a49
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Accessing C or C++ Data in __asm Blocks
 ## Microsoft Specific  

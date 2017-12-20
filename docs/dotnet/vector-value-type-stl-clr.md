@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::value_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "value_type member [STL/CLR]"
+f1_keywords: ["cliext::vector::value_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["value_type member [STL/CLR]"]
 ms.assetid: d8777470-5e7f-40d5-966c-a3c518d1f54c
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::value_type (STL/CLR)
 The type of an element.  

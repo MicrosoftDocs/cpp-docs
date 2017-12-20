@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "A2119"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "A2119"
+f1_keywords: ["A2119"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["A2119"]
 ms.assetid: 4d4ee6da-3a58-495c-a1da-c3a405c4c18d
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2119
 **language type must be specified**  

@@ -7,17 +7,14 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::Object::GetHashCode"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VCCORLIB/Platform::Object::GetHashCode"]
+dev_langs: ["C++"]
 ms.assetid: 58ea60f8-f820-4103-9b9b-b6635ada3fa5
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # default::(type_name)::GetHashCode Method
 Returns the hash code for this instance.  

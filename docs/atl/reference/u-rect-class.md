@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ATL::_U_RECT"
-  - "_U_RECT"
-  - "ATL._U_RECT"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "U_RECT class"
-  - "_U_RECT class"
+f1_keywords: ["ATL::_U_RECT", "_U_RECT", "ATL._U_RECT"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["U_RECT class", "_U_RECT class"]
 ms.assetid: 5f880a2d-09cf-4327-bf32-a3519c4dcd63
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _U_RECT Class
 This argument adapter class allows either `RECT` pointers or references to be passed to a function that is implemented in terms of pointers.  

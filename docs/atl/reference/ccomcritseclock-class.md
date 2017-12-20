@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComCritSecLock"
-  - "ATLBASE/ATL::CComCritSecLock"
-  - "ATLBASE/ATL::CComCritSecLock::CComCritSecLock"
-  - "ATLBASE/ATL::CComCritSecLock::Lock"
-  - "ATLBASE/ATL::CComCritSecLock::Unlock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComCritSecLock class"
+f1_keywords: ["CComCritSecLock", "ATLBASE/ATL::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::Lock", "ATLBASE/ATL::CComCritSecLock::Unlock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComCritSecLock class"]
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CComCritSecLock Class
 This class provides methods for locking and unlocking a critical section object.  

@@ -4,37 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_MAX_EXT"
-  - "_MAX_DIR"
-  - "_MAX_PATH"
-  - "_MAX_FNAME"
-  - "_MAX_DRIVE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "path field constants"
-  - "MAX_FNAME constant"
-  - "_MAX_DIR constant"
-  - "_MAX_DRIVE constant"
-  - "paths, maximum limit"
-  - "_MAX_PATH constant"
-  - "MAX_DRIVE constant"
-  - "_MAX_FNAME constant"
-  - "_MAX_EXT constant"
-  - "MAX_DIR constant"
-  - "MAX_EXT constant"
+f1_keywords: ["_MAX_EXT", "_MAX_DIR", "_MAX_PATH", "_MAX_FNAME", "_MAX_DRIVE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["path field constants", "MAX_FNAME constant", "_MAX_DIR constant", "_MAX_DRIVE constant", "paths, maximum limit", "_MAX_PATH constant", "MAX_DRIVE constant", "_MAX_FNAME constant", "_MAX_EXT constant", "MAX_DIR constant", "MAX_EXT constant"]
 ms.assetid: 2b5d0e43-1347-45b4-8397-24a8a45c444e
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Path Field Limits
 ## Syntax  

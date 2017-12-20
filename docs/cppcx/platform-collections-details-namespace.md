@@ -7,17 +7,14 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::Details"
-dev_langs: 
-  - "C++"
+f1_keywords: ["collection/Platform::Collections::Details"]
+dev_langs: ["C++"]
 ms.assetid: d5ac76ee-b568-4841-882f-738ed6fa4f1e
 caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Details Namespace
 This namespace supports the `Platform` infrastructure and is not intended to be used directly from your code.  

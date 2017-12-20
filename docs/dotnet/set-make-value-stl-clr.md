@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::make_value"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "make_value member [STL/CLR]"
+f1_keywords: ["cliext::set::make_value"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["make_value member [STL/CLR]"]
 ms.assetid: 2f71515e-7de1-4139-a68e-72ff2a96aa4a
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::make_value (STL/CLR)
 Constructs a value object.  

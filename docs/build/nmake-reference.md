@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Microsoft program maintenance utility"
-  - "preprocessing NMAKE"
-  - "program execution [C++]"
-  - "NMAKE program"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Microsoft program maintenance utility", "preprocessing NMAKE", "program execution [C++]", "NMAKE program"]
 ms.assetid: 24fab6e3-7e43-4da4-957a-88afbbcf8661
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # NMAKE Reference
 The Microsoft Program Maintenance Utility (NMAKE.EXE) is a command-line tool included with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] that builds projects based on commands that are contained in a description file.  

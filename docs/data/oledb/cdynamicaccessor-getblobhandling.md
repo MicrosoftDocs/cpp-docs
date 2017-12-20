@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL.CDynamicAccessor.GetBlobHandling"
-  - "CDynamicAccessor::GetBlobHandling"
-  - "ATL::CDynamicAccessor::GetBlobHandling"
-  - "GetBlobHandling"
-  - "CDynamicAccessor.GetBlobHandling"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetBlobHandling method"
+f1_keywords: ["ATL.CDynamicAccessor.GetBlobHandling", "CDynamicAccessor::GetBlobHandling", "ATL::CDynamicAccessor::GetBlobHandling", "GetBlobHandling", "CDynamicAccessor.GetBlobHandling"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetBlobHandling method"]
 ms.assetid: bbc6dda6-e132-42a3-980d-24e455cbe456
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetBlobHandling
 Retrieves the BLOB handling value for the current row.  

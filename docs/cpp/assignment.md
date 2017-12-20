@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C++], assignment"
-  - "assignment operators [C++], overloaded"
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C++], assignment", "assignment operators [C++], overloaded"]
 ms.assetid: d87e4f89-f8f5-42c1-9d3c-184bca9d0e15
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Assignment
 The assignment operator (**=**) is, strictly speaking, a binary operator. Its declaration is identical to any other binary operator, with the following exceptions:  

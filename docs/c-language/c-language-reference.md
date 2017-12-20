@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "index-page "
-f1_keywords: 
-  - "c"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Visual C"
-  - "C, language reference"
-  - "Visual C, language reference"
-  - "language reference, C"
+f1_keywords: ["c"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Visual C", "C, language reference", "Visual C, language reference", "language reference, C"]
 ms.assetid: 3a306c30-8dd2-435b-bd1c-c143b02c0872
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # C Language Reference
 The *C Language Reference* describes the C programming language as implemented in Microsoft C. The book's organization is based on the ANSI C standard (sometimes referred to as C89) with additional material on the Microsoft extensions to the ANSI C standard.  

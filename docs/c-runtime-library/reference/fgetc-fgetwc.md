@@ -4,47 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "fgetwc"
-  - "fgetc"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+apiname: ["fgetwc", "fgetc"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fgettc"
-  - "fgetwc"
-  - "fgetc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fgettc function"
-  - "characters, reading"
-  - "_fgettc function"
-  - "fgetc function"
-  - "streams, reading characters from"
-  - "reading characters from streams"
-  - "fgetwc function"
+f1_keywords: ["_fgettc", "fgetwc", "fgetc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["fgettc function", "characters, reading", "_fgettc function", "fgetc function", "streams, reading characters from", "reading characters from streams", "fgetwc function"]
 ms.assetid: 13348b7b-dc86-421c-9d6c-611ca79c8338
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # fgetc, fgetwc
 Read a character from a stream.  

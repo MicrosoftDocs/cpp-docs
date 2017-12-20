@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::stack::operator!="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator!= member [STL/CLR]"
+f1_keywords: ["cliext::stack::operator!="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator!= member [STL/CLR]"]
 ms.assetid: d28aca6a-685c-4d3d-bc97-de80d75ccd60
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator!= (stack) (STL/CLR)
 Stack not equal comparison.  

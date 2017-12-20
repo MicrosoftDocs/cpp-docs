@@ -4,26 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAxWindow2T class"
-  - "Calendar control (ActiveX), hosting with ATL AXHost"
-  - "Calendar control (ActiveX)"
-  - "ActiveX controls [C++], hosting"
-  - "hosting ActiveX controls"
-  - "AXHost method"
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAxWindow2T class", "Calendar control (ActiveX), hosting with ATL AXHost", "Calendar control (ActiveX)", "ActiveX controls [C++], hosting", "hosting ActiveX controls", "AXHost method"]
 ms.assetid: 2c1200ec-effb-4814-820a-509519699468
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Hosting ActiveX Controls Using ATL AXHost
 The sample in this topic shows how to create AXHost and how to host an ActiveX control using various ATL functions. It also shows how to access the control and sink events (using [IDispEventImpl](../atl/reference/idispeventimpl-class.md)) from the control that is hosted. The sample hosts the Calendar control in a main window or in a child window.  

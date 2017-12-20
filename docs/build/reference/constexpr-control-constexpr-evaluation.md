@@ -4,25 +4,17 @@ ms.custom: ""
 ms.date: "08/15/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/constexpr"
-  - "-constexpr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/constexpr control constexpr evaluation [C++]"
-  - "-constexpr control constexpr evaluation [C++]"
-  - "constexpr control constexpr evaluation [C++]"
+f1_keywords: ["/constexpr", "-constexpr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/constexpr control constexpr evaluation [C++]", "-constexpr control constexpr evaluation [C++]", "constexpr control constexpr evaluation [C++]"]
 ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /constexpr (Control constexpr evaluation)  
   

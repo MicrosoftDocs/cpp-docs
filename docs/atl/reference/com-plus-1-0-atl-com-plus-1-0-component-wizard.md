@@ -4,21 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "vc.codewiz.class.atl.mts.options"
-dev_langs: 
-  - "C++"
+f1_keywords: ["vc.codewiz.class.atl.mts.options"]
+dev_langs: ["C++"]
 ms.assetid: 2fbe259c-6be1-4d0e-9cfe-721c75c97cb1
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # COM+ 1.0, ATL COM+ 1.0 Component Wizard
 Use this page of the ATL COM+ 1.0 Component Wizard to specify interface type and additional interfaces to be supported.  

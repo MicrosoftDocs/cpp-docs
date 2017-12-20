@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL.CEnumerator.Open"
-  - "CEnumerator::Open"
-  - "ATL::CEnumerator::Open"
-  - "CEnumerator.Open"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Open method"
+f1_keywords: ["ATL.CEnumerator.Open", "CEnumerator::Open", "ATL::CEnumerator::Open", "CEnumerator.Open"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Open method"]
 ms.assetid: b22821a0-257a-4543-ad0c-2649d4ac092e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumerator::Open
 Binds the moniker for the enumerator, if one is specified, then retrieves the rowset for the enumerator by calling [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/en-us/library/ms711200.aspx).  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.arguments"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "argument access macros [C++]"
-  - "variable-length argument lists"
+f1_keywords: ["c.arguments"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["argument access macros [C++]", "variable-length argument lists"]
 ms.assetid: 7046ae34-a0ec-44f0-815d-3209492a3e19
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Argument Access
 The `va_arg`, `va_end`, and `va_start` macros provide access to function arguments when the number of arguments is variable. These macros are defined in STDARG.H for ANSI C compatibility and in VARARGS.H for compatibility with UNIX System V.  

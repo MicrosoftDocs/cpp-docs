@@ -4,24 +4,14 @@ ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
+ms.technology: ["vs-ide-general"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-f1_keywords:
-  - VC.Project.VCConfiguration.OutputDirectory
-  - VC.Project.VCConfiguration.IntermediateDirectory
-  - VC.Project.VCConfiguration.TargetName
-  - VC.Project.VCConfiguration.TargetExt
-  - VC.Project.VCConfiguration.DeleteExtensionsOnClean
-  - VC.Project.VCConfiguration.PlatformToolset
-  - VC.Project.VCConfiguration.BuildLogFile
-  - VC.Project.VCConfiguration.ConfigurationType
-  - VC.Project.VCConfiguration.UseOfSTL
+f1_keywords: [VC.Project.VCConfiguration.OutputDirectory, VC.Project.VCConfiguration.IntermediateDirectory, VC.Project.VCConfiguration.TargetName, VC.Project.VCConfiguration.TargetExt, VC.Project.VCConfiguration.DeleteExtensionsOnClean, VC.Project.VCConfiguration.PlatformToolset, VC.Project.VCConfiguration.BuildLogFile, VC.Project.VCConfiguration.ConfigurationType, VC.Project.VCConfiguration.UseOfSTL]
 ---
 
 # General Properties (Linux C++)

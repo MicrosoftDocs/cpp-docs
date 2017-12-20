@@ -10,8 +10,7 @@ ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # ATL HTTP Utility Functions
 

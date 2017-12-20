@@ -4,21 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "isolated applications [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["isolated applications [C++]"]
 ms.assetid: 04587547-1174-44ab-bd99-1292358fba20
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # How to: Build Isolated Applications to Consume COM Components
 Isolated applications are applications that have manifests built into the program. You can create isolated applications to consume COM components.  

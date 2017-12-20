@@ -7,33 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "COLLECTION/Platform::Collections::Vector::Vector"
-  - "COLLECTION/Platform::Collections::Vector::Append"
-  - "COLLECTION/Platform::Collections::Vector::Clear"
-  - "COLLECTION/Platform::Collections::Vector::First"
-  - "COLLECTION/Platform::Collections::Vector::GetAt"
-  - "COLLECTION/Platform::Collections::Vector::GetMany"
-  - "COLLECTION/Platform::Collections::Vector::GetView"
-  - "COLLECTION/Platform::Collections::Vector::IndexOf"
-  - "COLLECTION/Platform::Collections::Vector::InsertAt"
-  - "COLLECTION/Platform::Collections::Vector::ReplaceAll"
-  - "COLLECTION/Platform::Collections::Vector::RemoveAt"
-  - "COLLECTION/Platform::Collections::Vector::RemoveAtEnd"
-  - "COLLECTION/Platform::Collections::Vector::SetAt"
-  - "COLLECTION/Platform::Collections::Vector::Size"
-  - "COLLECTION/Platform::Collections::Vector::VectorChanged"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Vector Class (C++/Cx)"
+f1_keywords: ["COLLECTION/Platform::Collections::Vector::Vector", "COLLECTION/Platform::Collections::Vector::Append", "COLLECTION/Platform::Collections::Vector::Clear", "COLLECTION/Platform::Collections::Vector::First", "COLLECTION/Platform::Collections::Vector::GetAt", "COLLECTION/Platform::Collections::Vector::GetMany", "COLLECTION/Platform::Collections::Vector::GetView", "COLLECTION/Platform::Collections::Vector::IndexOf", "COLLECTION/Platform::Collections::Vector::InsertAt", "COLLECTION/Platform::Collections::Vector::ReplaceAll", "COLLECTION/Platform::Collections::Vector::RemoveAt", "COLLECTION/Platform::Collections::Vector::RemoveAtEnd", "COLLECTION/Platform::Collections::Vector::SetAt", "COLLECTION/Platform::Collections::Vector::Size", "COLLECTION/Platform::Collections::Vector::VectorChanged"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Vector Class (C++/Cx)"]
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
 caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Vector Class
 Represents a sequential collection of objects that can be individually accessed by index.  

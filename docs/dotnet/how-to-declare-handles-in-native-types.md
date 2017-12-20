@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-f1_keywords: 
-  - "gcroot"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "handles, declaring"
-  - "gcroot keyword [C++]"
-  - "types [C++], declaring handles in"
+f1_keywords: ["gcroot"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["handles, declaring", "gcroot keyword [C++]", "types [C++], declaring handles in"]
 ms.assetid: b8c0eead-17e5-4003-b21f-b673f997d79f
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Declare Handles in Native Types
 You cannot declare a handle type in a native type. vcclr.h provides the type-safe wrapper template `gcroot` to refer to a CLR object from the C++ heap. This template lets you embed a virtual handle in a native type and treat it as if it were the underlying type. In most cases, you can use the `gcroot` object as the embedded type without any casting. However, with [for each, in](../dotnet/for-each-in.md), you have to use `static_cast` to retrieve the underlying managed reference.  

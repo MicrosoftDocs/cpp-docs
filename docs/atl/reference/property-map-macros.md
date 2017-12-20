@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "atlcom/ATL::BEGIN_PROP_MAP"
-  - "atlcom/ATL::PROP_DATA_ENTRY"
-  - "atlcom/ATL::PROP_ENTRY_TYPE"
-  - "atlcom/ATL::PROP_ENTRY_TYPE_EX"
-  - "atlcom/ATL::PROP_PAGE"
-  - "atlcom/ATL::END_PROP_MAP"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property maps"
+f1_keywords: ["atlcom/ATL::BEGIN_PROP_MAP", "atlcom/ATL::PROP_DATA_ENTRY", "atlcom/ATL::PROP_ENTRY_TYPE", "atlcom/ATL::PROP_ENTRY_TYPE_EX", "atlcom/ATL::PROP_PAGE", "atlcom/ATL::END_PROP_MAP"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["property maps"]
 ms.assetid: 128bc742-2b98-4b97-a243-684dbb83db77
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Property Map Macros
 These macros define property maps and entries.  

@@ -4,26 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IRowsetLocate class, provider support for bookmarks"
-  - "OLE DB provider templates, bookmarks"
-  - "bookmarks, OLE DB"
-  - "IRowsetLocate class"
-  - "OLE DB providers, bookmark support"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IRowsetLocate class, provider support for bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "IRowsetLocate class", "OLE DB providers, bookmark support"]
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Provider Support for Bookmarks
 The example in this topic adds the `IRowsetLocate` interface to the `CMyProviderRowset` class. In almost all cases, you start by adding an interface to an existing COM object. You can then test it by adding more calls from the consumer templates. The example demonstrates how to:  

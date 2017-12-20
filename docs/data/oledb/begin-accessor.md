@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "BEGIN_ACCESSOR"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BEGIN_ACCESSOR macro, syntax"
-  - "BEGIN_ACCESSOR macro"
+f1_keywords: ["BEGIN_ACCESSOR"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["BEGIN_ACCESSOR macro, syntax", "BEGIN_ACCESSOR macro"]
 ms.assetid: 59d0ff3e-7cfd-4ce8-9a1c-d664c0892a52
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # BEGIN_ACCESSOR
 Marks the beginning of an accessor entry.  

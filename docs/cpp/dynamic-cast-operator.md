@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "dynamic_cast_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dynamic_cast keyword [C++]"
+f1_keywords: ["dynamic_cast_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["dynamic_cast keyword [C++]"]
 ms.assetid: f380ada8-6a18-4547-93c9-63407f19856b
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # dynamic_cast Operator
 Converts the operand `expression` to an object of type `type-id`.  

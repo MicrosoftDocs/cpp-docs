@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++], source"
-  - "programs [C++], source"
-  - "source files, specifying in compiler"
-  - "source programs"
+dev_langs: ["C++"]
+helpviewer_keywords: ["files [C++], source", "programs [C++], source", "source files, specifying in compiler", "source programs"]
 ms.assetid: 18bb2826-17da-48e5-92a2-10e649f1bc9f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Source Files and Source Programs
 A source program can be divided into one or more "source files," or "translation units." The input to the compiler is called a "translation unit."  

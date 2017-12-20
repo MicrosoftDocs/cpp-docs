@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "GetNextRows"
-  - "ATL.IRowsetImpl.GetNextRows"
-  - "ATL::IRowsetImpl::GetNextRows"
-  - "IRowsetImpl::GetNextRows"
-  - "IRowsetImpl.GetNextRows"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetNextRows method"
+f1_keywords: ["GetNextRows", "ATL.IRowsetImpl.GetNextRows", "ATL::IRowsetImpl::GetNextRows", "IRowsetImpl::GetNextRows", "IRowsetImpl.GetNextRows"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetNextRows method"]
 ms.assetid: 1c0975d6-d770-4884-830b-6986c6fa8e65
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::GetNextRows
 Fetches rows sequentially, remembering the previous position.  

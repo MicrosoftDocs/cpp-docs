@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.strings"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "country/region strings"
-  - "localization, locale"
-  - "locales"
-  - "setlocale function"
-  - "language strings"
+f1_keywords: ["c.strings"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["country/region strings", "localization, locale", "locales", "setlocale function", "language strings"]
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Locale Names, Languages, and Country/Region Strings
 The *locale* argument to the `setlocale` and `_create_locale` functions can be set by using the locale names, languages, country/region codes, and code pages that are supported by the Windows NLS API. The *locale* argument takes the following form:  

@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "IErrorInfo"
-  - "IDispatch"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ISupportErrorInfoImpl method"
-  - "IErrorInfo class suppor in ATL"
-  - "IDispatchImpl class"
-  - "IDispatch class support in ATL"
+f1_keywords: ["IErrorInfo", "IDispatch"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ISupportErrorInfoImpl method", "IErrorInfo class suppor in ATL", "IDispatchImpl class", "IDispatch class support in ATL"]
 ms.assetid: 7db2220f-319d-4ce9-9382-d340019f14f7
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Supporting IDispatch and IErrorInfo
 You can use the template class [IDispatchImpl](../atl/reference/idispatchimpl-class.md) to provide a default implementation of the `IDispatch Interface` portion of any dual interfaces on your object.  

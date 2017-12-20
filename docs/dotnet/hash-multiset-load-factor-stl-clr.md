@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_multiset::load_factor"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "load_factor member [STL/CLR]"
+f1_keywords: ["cliext::hash_multiset::load_factor"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["load_factor member [STL/CLR]"]
 ms.assetid: 67125c97-1018-4d0f-858f-b4c09e7f0b09
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multiset::load_factor (STL/CLR)
 Counts the average elements per bucket.  

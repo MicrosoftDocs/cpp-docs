@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComCompositeControl"
-  - "ATLCTL/ATL::CComCompositeControl"
-  - "ATLCTL/ATL::CComCompositeControl::CComCompositeControl"
-  - "ATLCTL/ATL::CComCompositeControl::AdviseSinkMap"
-  - "ATLCTL/ATL::CComCompositeControl::CalcExtent"
-  - "ATLCTL/ATL::CComCompositeControl::Create"
-  - "ATLCTL/ATL::CComCompositeControl::CreateControlWindow"
-  - "ATLCTL/ATL::CComCompositeControl::SetBackgroundColorFromAmbient"
-  - "ATLCTL/ATL::CComCompositeControl::m_hbrBackground"
-  - "ATLCTL/ATL::CComCompositeControl::m_hWndFocus"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComCompositeControl class"
-  - "composite controls, CComCompositeControl class"
+f1_keywords: ["CComCompositeControl", "ATLCTL/ATL::CComCompositeControl", "ATLCTL/ATL::CComCompositeControl::CComCompositeControl", "ATLCTL/ATL::CComCompositeControl::AdviseSinkMap", "ATLCTL/ATL::CComCompositeControl::CalcExtent", "ATLCTL/ATL::CComCompositeControl::Create", "ATLCTL/ATL::CComCompositeControl::CreateControlWindow", "ATLCTL/ATL::CComCompositeControl::SetBackgroundColorFromAmbient", "ATLCTL/ATL::CComCompositeControl::m_hbrBackground", "ATLCTL/ATL::CComCompositeControl::m_hWndFocus"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComCompositeControl class", "composite controls, CComCompositeControl class"]
 ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CComCompositeControl Class
 This class provides the methods required to implement a composite control.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComObjectRoot"
-  - "atlcom/ATL::CComObjectRoot"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComObjectRoot class"
+f1_keywords: ["CComObjectRoot", "atlcom/ATL::CComObjectRoot"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComObjectRoot class"]
 ms.assetid: f8797c38-6e73-4f67-85c2-71654cffa8eb
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CComObjectRoot Class
 This typedef of [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) is templatized on the default threading model of the server.  

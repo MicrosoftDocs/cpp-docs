@@ -13,8 +13,7 @@ caps.latest.revision: 21
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # DLLs (C++/CX)
 You can use Visual Studio to create either a standard Win32 DLL or a Windows Runtime component DLL that can be consumed by Universal Windows Platform apps. A standard DLL that was created by using a version of Visual Studio or the Visual C++ compiler that's earlier than Visual Studio 2012 may not load correctly in a Universal Windows Platform app and may not pass the app verification test in the [!INCLUDE[win8_appstore_long](../cppcx/includes/win8-appstore-long-md.md)].  

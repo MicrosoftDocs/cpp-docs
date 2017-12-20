@@ -4,48 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "trunc"
-  - "truncf"
-  - "truncl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["trunc", "truncf", "truncl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "trunc"
-  - "truncf"
-  - "truncl"
-  - "math/trunc"
-  - "math/truncf"
-  - "math/truncl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "trunc function"
-  - "truncf function"
-  - "truncl function"
+f1_keywords: ["trunc", "truncf", "truncl", "math/trunc", "math/truncf", "math/truncl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["trunc function", "truncf function", "truncl function"]
 ms.assetid: de2038ac-ac0b-483e-870c-e8992dcd4fd0
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # trunc, truncf, truncl
 Determines the nearest integer that is less than or equal to the specified floating-point value.  

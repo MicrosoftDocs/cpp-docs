@@ -7,20 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::InvalidArgumentException"
-  - "VCCORLIB/Platform::InvalidArgumentException::InvalidArgumentException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::InvalidArgumentException"
+f1_keywords: ["VCCORLIB/Platform::InvalidArgumentException", "VCCORLIB/Platform::InvalidArgumentException::InvalidArgumentException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::InvalidArgumentException"]
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::InvalidArgumentException Class
 Thrown when one of the arguments provided to a method is not valid.  

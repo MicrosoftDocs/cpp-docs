@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::pair::operator<="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator<= member [STL/CLR]"
+f1_keywords: ["cliext::pair::operator<="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator<= member [STL/CLR]"]
 ms.assetid: 94a4cc0a-cef4-4050-bd59-f826bd318e7b
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator&lt;= (pair) (STL/CLR)
 Pair less than or equal comparison.  

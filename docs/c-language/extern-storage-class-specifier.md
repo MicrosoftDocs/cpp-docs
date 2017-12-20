@@ -4,25 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "extern keyword [C]"
-  - "storage class specifiers, extern"
-  - "extern keyword [C], storage class specifier"
-  - "external linkage, storage-class specifiers"
-  - "external linkage, extern modifier"
+dev_langs: ["C++"]
+helpviewer_keywords: ["extern keyword [C]", "storage class specifiers, extern", "extern keyword [C], storage class specifier", "external linkage, storage-class specifiers", "external linkage, extern modifier"]
 ms.assetid: 6e16d927-291f-49e4-986c-9d91a482a441
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # extern Storage-Class Specifier
 A variable declared with the `extern` storage-class specifier is a reference to a variable with the same name defined at the external level in any of the source files of the program. The internal `extern` declaration is used to make the external-level variable definition visible within the block. Unless otherwise declared at the external level, a variable declared with the `extern` keyword is visible only in the block in which it is declared.  

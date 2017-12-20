@@ -4,43 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_fread_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+apiname: ["_fread_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fread_nolock"
-  - "fread_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reading data [C++], from input streams"
-  - "data [C++], reading from input stream"
-  - "fread_nolock function"
-  - "_fread_nolock function"
-  - "streams [C++], reading data from"
+f1_keywords: ["_fread_nolock", "fread_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["reading data [C++], from input streams", "data [C++], reading from input stream", "fread_nolock function", "_fread_nolock function", "streams [C++], reading data from"]
 ms.assetid: 60e4958b-1097-46f5-a77b-94af5e7dba40
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _fread_nolock
 Reads data from a stream, without locking other threads.  

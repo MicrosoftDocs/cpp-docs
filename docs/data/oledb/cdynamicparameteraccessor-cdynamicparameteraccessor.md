@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDynamicParameterAccessor::CDynamicParameterAccessor"
-  - "CDynamicParameterAccessor.CDynamicParameterAccessor"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDynamicParameterAccessor class, constructor"
-  - "CDynamicParameterAccessor method"
+f1_keywords: ["CDynamicParameterAccessor::CDynamicParameterAccessor", "CDynamicParameterAccessor.CDynamicParameterAccessor"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDynamicParameterAccessor class, constructor", "CDynamicParameterAccessor method"]
 ms.assetid: a1cce5e4-dfb9-43a2-bfb8-0435c653674a
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicParameterAccessor::CDynamicParameterAccessor
 The constructor.  

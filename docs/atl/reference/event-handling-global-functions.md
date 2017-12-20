@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "atlbase/ATL::AtlWaitWithMessageLoop"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "event handling, global functions"
-  - "global functions, event handling"
+f1_keywords: ["atlbase/ATL::AtlWaitWithMessageLoop"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["event handling, global functions", "global functions, event handling"]
 ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Event Handling Global Functions
 This function provides an event handler.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::priority_queue::value_compare"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "value_compare member [STL/CLR]"
+f1_keywords: ["cliext::priority_queue::value_compare"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["value_compare member [STL/CLR]"]
 ms.assetid: 40832c80-426f-42af-b4a3-bab27d2abd7e
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # priority_queue::value_compare (STL/CLR)
 The ordering delegate for two values.  

@@ -4,36 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_CIsin"
-apilocation: 
-  - "msvcr80.dll"
-  - "msvcr100.dll"
-  - "msvcrt.dll"
-  - "msvcr110.dll"
-  - "msvcr120.dll"
-  - "msvcr90.dll"
-  - "msvcr110_clr0400.dll"
+apiname: ["_CIsin"]
+apilocation: ["msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "CIsin"
-  - "_CIsin"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_CIsin intrinsic"
-  - "CIsin intrinsic"
+f1_keywords: ["CIsin", "_CIsin"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_CIsin intrinsic", "CIsin intrinsic"]
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _CIsin
 Calculates the sine of the top value in the stack.  

@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "msbuild.cpp.howto.addcustombuildtools"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "msbuild (c++), howto: add custom build tools"
+f1_keywords: ["msbuild.cpp.howto.addcustombuildtools"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["msbuild (c++), howto: add custom build tools"]
 ms.assetid: de03899a-371d-4396-9bf9-34f45a65e909
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # How to: Add Custom Build Tools to MSBuild Projects
 A custom build tool is a user-defined, command-line tool that is associated with a particular file.  

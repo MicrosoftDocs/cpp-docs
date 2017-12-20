@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wtoi"
-  - "_wtoi_l"
-  - "atoi"
-  - "_atoi_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+apiname: ["_wtoi", "_wtoi_l", "atoi", "_atoi_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tstoi"
-  - "_wtoi"
-  - "_ttoi"
-  - "atoi"
-  - "_atoi_l"
-  - "_wtoi_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_atoi_l function"
-  - "ttoi function"
-  - "atoi_l function"
-  - "string conversion, to integers"
-  - "_wtoi function"
-  - "wtoi_l function"
-  - "tstoi function"
-  - "_ttoi function"
-  - "_tstoi function"
-  - "_wtoi_l function"
-  - "atoi function"
-  - "wtoi function"
+f1_keywords: ["_tstoi", "_wtoi", "_ttoi", "atoi", "_atoi_l", "_wtoi_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_atoi_l function", "ttoi function", "atoi_l function", "string conversion, to integers", "_wtoi function", "wtoi_l function", "tstoi function", "_ttoi function", "_tstoi function", "_wtoi_l function", "atoi function", "wtoi function"]
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # atoi, _atoi_l, _wtoi, _wtoi_l
 Convert a string to integer.  

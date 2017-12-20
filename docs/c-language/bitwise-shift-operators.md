@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C++], bitwise"
-  - "shift operators, bitwise"
-  - "bitwise-shift operators"
-  - "operators [C++], shift"
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C++], bitwise", "shift operators, bitwise", "bitwise-shift operators", "operators [C++], shift"]
 ms.assetid: d0485785-5c72-47e1-a7c0-0adde03ade23
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Bitwise Shift Operators
 The shift operators shift their first operand left (`<<`) or right (`>>`) by the number of positions the second operand specifies.  

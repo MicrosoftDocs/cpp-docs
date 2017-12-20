@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::CEnumeratorAccessor::m_szDescription"
-  - "CEnumeratorAccessor.m_szDescription"
-  - "CEnumeratorAccessor::m_szDescription"
-  - "ATL.CEnumeratorAccessor.m_szDescription"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "m_szDescription"
+f1_keywords: ["ATL::CEnumeratorAccessor::m_szDescription", "CEnumeratorAccessor.m_szDescription", "CEnumeratorAccessor::m_szDescription", "ATL.CEnumeratorAccessor.m_szDescription"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["m_szDescription"]
 ms.assetid: 9816fa64-f506-4a56-b5fc-8ed84c52f772
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumeratorAccessor::m_szDescription
 The description of the data source or enumerator.  

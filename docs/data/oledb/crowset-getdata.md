@@ -4,31 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CRowset<TAccessor>::GetData"
-  - "ATL::CRowset<TAccessor>::GetData"
-  - "ATL::CRowset::GetData"
-  - "ATL.CRowset<TAccessor>.GetData"
-  - "CRowset<TAccessor>.GetData"
-  - "CRowset::GetData"
-  - "CRowset.GetData"
-  - "ATL.CRowset.GetData"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetData method [OLE DB]"
+f1_keywords: ["CRowset<TAccessor>::GetData", "ATL::CRowset<TAccessor>::GetData", "ATL::CRowset::GetData", "ATL.CRowset<TAccessor>.GetData", "CRowset<TAccessor>.GetData", "CRowset::GetData", "CRowset.GetData", "ATL.CRowset.GetData"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetData method [OLE DB]"]
 ms.assetid: 1e0347b5-3e24-4ff8-a790-839616c1522f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::GetData
 Retrieves data from the rowset's copy of the row.  

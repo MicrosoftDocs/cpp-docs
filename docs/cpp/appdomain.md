@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "appdomain_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "appdomain __declspec keyword"
-  - "__declspec keyword [C++], appdomain"
+f1_keywords: ["appdomain_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["appdomain __declspec keyword", "__declspec keyword [C++], appdomain"]
 ms.assetid: 29d843cb-cb6b-4d1b-a48d-d928a877234d
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # appdomain
 Specifies that each application domain of your managed application should have its own copy of a particular global variable or static member variable. See [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md) for more information.  

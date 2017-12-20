@@ -4,50 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_getche_nolock"
-  - "_getwche_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_getche_nolock", "_getwche_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_getche_nolock"
-  - "_gettche_nolock"
-  - "_getwche_nolock"
-  - "getche_nolock"
-  - "getwche_nolock"
-  - "gettche_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "characters, getting from console"
-  - "_gettche_nolock function"
-  - "getwche_nolock function"
-  - "_getche_nolock function"
-  - "getche_nolock function"
-  - "console, reading from"
-  - "_getwche_nolock function"
-  - "gettche_nolock function"
+f1_keywords: ["_getche_nolock", "_gettche_nolock", "_getwche_nolock", "getche_nolock", "getwche_nolock", "gettche_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["characters, getting from console", "_gettche_nolock function", "getwche_nolock function", "_getche_nolock function", "getche_nolock function", "console, reading from", "_getwche_nolock function", "gettche_nolock function"]
 ms.assetid: 9e853ad4-4d8a-4442-9ae5-da4b434f0b8c
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _getche_nolock, _getwche_nolock
 Gets a character from the console, with echo and without locking the thread.  

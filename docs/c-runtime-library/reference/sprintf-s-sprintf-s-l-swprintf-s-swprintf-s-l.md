@@ -4,57 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_swprintf_s_l"
-  - "_sprintf_s_l"
-  - "swprintf_s"
-  - "sprintf_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_swprintf_s_l", "_sprintf_s_l", "swprintf_s", "sprintf_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "swprintf_s"
-  - "sprintf_s"
-  - "stdio/sprintf_s"
-  - "stdio/swprintf_s"
-  - "stdio/_sprintf_s_l"
-  - "stdio/_swprintf_s_l"
-  - "_sprintf_s_l"
-  - "_swprintf_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "stprintf_s function"
-  - "stprintf_s_l function"
-  - "swprintf_s_l function"
-  - "sprintf_s function"
-  - "swprintf_s function"
-  - "_swprintf_s_l function"
-  - "sprintf_s_l function"
-  - "_stprintf_s_l function"
-  - "_stprintf_s function"
-  - "_sprintf_s_l function"
-  - "formatted text [C++]"
+f1_keywords: ["swprintf_s", "sprintf_s", "stdio/sprintf_s", "stdio/swprintf_s", "stdio/_sprintf_s_l", "stdio/_swprintf_s_l", "_sprintf_s_l", "_swprintf_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["stprintf_s function", "stprintf_s_l function", "swprintf_s_l function", "sprintf_s function", "swprintf_s function", "_swprintf_s_l function", "sprintf_s_l function", "_stprintf_s_l function", "_stprintf_s function", "_sprintf_s_l function", "formatted text [C++]"]
 ms.assetid: 424f0a29-22ef-40e8-b565-969f5f57782f
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
 Write formatted data to a string. These are versions of [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

@@ -4,48 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "fma"
-  - "fmaf"
-  - "fmal"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["fma", "fmaf", "fmal"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fma"
-  - "fmaf"
-  - "fmal"
-  - "math/fma"
-  - "math/fmaf"
-  - "math/fmal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "fma function"
-  - "fmaf function"
-  - "fmal function"
+f1_keywords: ["fma", "fmaf", "fmal", "math/fma", "math/fmaf", "math/fmal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["fma function", "fmaf function", "fmal function"]
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # fma, fmaf, fmal
 Multiplies two values together,  adds a third value, and then rounds the result, without losing any precision due to intermediary rounding.  

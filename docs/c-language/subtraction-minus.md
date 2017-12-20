@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C], subtraction"
-  - "subtraction operator, syntax"
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C], subtraction", "subtraction operator, syntax"]
 ms.assetid: 9cacba7d-20b3-4372-8a63-ba5d8ee64177
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Subtraction (-)
 The subtraction operator (**-**) subtracts the second operand from the first. Both operands can be either integral or floating types, or one operand can be a pointer and the other an integer.  

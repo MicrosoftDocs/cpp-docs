@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL COM+ 1.0"
-  - "ATL projects, adding components"
-  - "components [C++], adding ATL COM+ 1.0"
-  - "objects [C++], supporting ATL COM+ 1.0"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL COM+ 1.0", "ATL projects, adding components", "components [C++], adding ATL COM+ 1.0", "objects [C++], supporting ATL COM+ 1.0"]
 ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Adding an ATL COM+ 1.0 Component
 This wizard adds an object to your project that supports COM+ 1.0 services, including transactions.  

@@ -4,71 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_itow"
-  - "_i64tow"
-  - "_itoa"
-  - "_i64toa"
-  - "_ui64toa"
-  - "_ui64tow"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+apiname: ["_itow", "_i64tow", "_itoa", "_i64toa", "_ui64toa", "_ui64tow"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_i64tow"
-  - "ui64toa"
-  - "ui64tow"
-  - "itot"
-  - "_itot"
-  - "_i64toa"
-  - "_itoa"
-  - "_itow"
-  - "_ui64tow"
-  - "i64toa"
-  - "i64tow"
-  - "itow"
-  - "_ui64toa"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_itot function"
-  - "ui64toa function"
-  - "_ui64toa function"
-  - "converting integers"
-  - "itot function"
-  - "_i64tow function"
-  - "_i64toa function"
-  - "_itow function"
-  - "ui64tow function"
-  - "integers, converting"
-  - "itoa function"
-  - "_ui64tow function"
-  - "i64tow function"
-  - "itow function"
-  - "i64toa function"
-  - "converting numbers, to strings"
-  - "_itoa function"
+f1_keywords: ["_i64tow", "ui64toa", "ui64tow", "itot", "_itot", "_i64toa", "_itoa", "_itow", "_ui64tow", "i64toa", "i64tow", "itow", "_ui64toa"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_itot function", "ui64toa function", "_ui64toa function", "converting integers", "itot function", "_i64tow function", "_i64toa function", "_itow function", "ui64tow function", "integers, converting", "itoa function", "_ui64tow function", "i64tow function", "itow function", "i64toa function", "converting numbers, to strings", "_itoa function"]
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
 caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _itoa, _i64toa, _ui64toa, _itow, _i64tow, _ui64tow
 Converts an integer to a string. More secure versions of these functions are available; see [_itoa_s, _i64toa_s, _ui64toa_s, _itow_s, _i64tow_s, _ui64tow_s](../../c-runtime-library/reference/itoa-s-i64toa-s-ui64toa-s-itow-s-i64tow-s-ui64tow-s.md).  

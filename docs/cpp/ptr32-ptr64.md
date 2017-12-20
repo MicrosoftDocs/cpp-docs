@@ -4,29 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__ptr32_cpp"
-  - "__ptr64_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__ptr64 keyword [C++]"
-  - "_ptr32 keyword [C++]"
-  - "ptr32 keyword [C++]"
-  - "ptr64 keyword [C++]"
-  - "_ptr64 keyword [C++]"
-  - "__ptr32 keyword [C++]"
+f1_keywords: ["__ptr32_cpp", "__ptr64_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__ptr64 keyword [C++]", "_ptr32 keyword [C++]", "ptr32 keyword [C++]", "ptr64 keyword [C++]", "_ptr64 keyword [C++]", "__ptr32 keyword [C++]"]
 ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # __ptr32, __ptr64
 ## Microsoft Specific  

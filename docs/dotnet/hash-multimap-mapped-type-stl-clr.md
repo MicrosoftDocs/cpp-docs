@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_multimap::mapped_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mapped_type member [STL/CLR]"
+f1_keywords: ["cliext::hash_multimap::mapped_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mapped_type member [STL/CLR]"]
 ms.assetid: b97db6a7-9d4e-42f0-a725-ac309f5374bf
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multimap::mapped_type (STL/CLR)
 The type of a mapped value associated with each key.  

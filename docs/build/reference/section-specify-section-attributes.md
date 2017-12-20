@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/section"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SECTION linker option"
-  - "-SECTION linker option"
-  - "section attributes"
-  - "/SECTION linker option"
+f1_keywords: ["/section"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SECTION linker option", "-SECTION linker option", "section attributes", "/SECTION linker option"]
 ms.assetid: 92b69d81-e421-462e-b46f-7d0dff9b9d16
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /SECTION (Specify Section Attributes)
 ```  

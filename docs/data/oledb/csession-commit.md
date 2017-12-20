@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CSession.Commit"
-  - "ATL.CSession.Commit"
-  - "ATL::CSession::Commit"
-  - "CSession::Commit"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Commit method"
+f1_keywords: ["CSession.Commit", "ATL.CSession.Commit", "ATL::CSession::Commit", "CSession::Commit"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Commit method"]
 ms.assetid: 1d5f56b9-000c-4bae-a975-89d3452f499f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSession::Commit
 Commits the transaction.  

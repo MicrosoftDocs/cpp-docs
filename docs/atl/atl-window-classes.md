@@ -4,27 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL, windows"
-  - "windows [C++], subclassing"
-  - "windows [C++], superclassing"
-  - "windows [C++], ATL"
-  - "subclassing ATL window classes"
-  - "superclassing"
-  - "superclassing, ATL"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL, windows", "windows [C++], subclassing", "windows [C++], superclassing", "windows [C++], ATL", "subclassing ATL window classes", "superclassing", "superclassing, ATL"]
 ms.assetid: 1d12b708-de3e-49d5-9e41-42fe4769fa62
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # ATL Window Classes
 ATL includes several classes that allow you to use and implement windows. These classes, like other ATL classes, provide an efficient implementation that does not impose an overhead on your code.  

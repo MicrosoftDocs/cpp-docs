@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDynamicParameterAccessor::GetParam"
-  - "ATL.CDynamicParameterAccessor.GetParam"
-  - "CDynamicParameterAccessor::GetParam<ctype>"
-  - "CDynamicParameterAccessor.GetParam"
-  - "GetParam"
-  - "ATL::CDynamicParameterAccessor::GetParam<ctype>"
-  - "ATL::CDynamicParameterAccessor::GetParam"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetParam method"
+f1_keywords: ["CDynamicParameterAccessor::GetParam", "ATL.CDynamicParameterAccessor.GetParam", "CDynamicParameterAccessor::GetParam<ctype>", "CDynamicParameterAccessor.GetParam", "GetParam", "ATL::CDynamicParameterAccessor::GetParam<ctype>", "ATL::CDynamicParameterAccessor::GetParam"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetParam method"]
 ms.assetid: 893a6bf8-7b55-4f6d-8a10-a43b13be7f56
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicParameterAccessor::GetParam
 Retrieves the nonstring data for a specified parameter from the parameter buffer.  

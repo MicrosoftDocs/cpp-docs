@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.RandomizedBaseAddress"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-DYNAMICBASE linker option"
-  - "/DYNAMICBASE linker option"
-  - "DYNAMICBASE linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.RandomizedBaseAddress"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-DYNAMICBASE linker option", "/DYNAMICBASE linker option", "DYNAMICBASE linker option"]
 ms.assetid: 6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /DYNAMICBASE (Use address space layout randomization)
 Specifies whether to generate an executable image that can be randomly rebased at load time by using the address space layout randomization (ASLR) feature of [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)].  

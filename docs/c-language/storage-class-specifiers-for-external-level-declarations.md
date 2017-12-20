@@ -4,33 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "external definitions"
-  - "linkage [C++], external"
-  - "external linkage, variable declarations"
-  - "declaring variables, external variables"
-  - "declarations [C++], external"
-  - "declarations [C++], specifiers"
-  - "external declarations"
-  - "static variables, external declarations"
-  - "variables, visibility"
-  - "external linkage, storage-class specifiers"
-  - "referencing declarations"
-  - "visibility, variables"
-  - "static storage class specifiers"
+dev_langs: ["C++"]
+helpviewer_keywords: ["external definitions", "linkage [C++], external", "external linkage, variable declarations", "declaring variables, external variables", "declarations [C++], external", "declarations [C++], specifiers", "external declarations", "static variables, external declarations", "variables, visibility", "external linkage, storage-class specifiers", "referencing declarations", "visibility, variables", "static storage class specifiers"]
 ms.assetid: b76b623a-80ec-4d5d-859b-6cef422657ee
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Storage-Class Specifiers for External-Level Declarations
 External variables are variables at file scope. They are defined outside any function, and they are potentially available to many functions. Functions can only be defined at the external level and, therefore, cannot be nested. By default, all references to external variables and functions of the same name are references to the same object, which means they have "external linkage." (You can use the **static** keyword to override this. See information later in this section for more details on **static**.)  

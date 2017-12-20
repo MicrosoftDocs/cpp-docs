@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::stack::to_array"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "to_array member [STL/CLR]"
+f1_keywords: ["cliext::stack::to_array"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["to_array member [STL/CLR]"]
 ms.assetid: e83bd7c4-ffdb-4151-bd2b-c36ca828e12f
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # stack::to_array (STL/CLR)
 Copies the controlled sequence to a new array.  

@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CPoint"
-  - "ATLTYPES/ATL::CPoint"
-  - "ATLTYPES/ATL::CPoint::CPoint"
-  - "ATLTYPES/ATL::CPoint::Offset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LPPOINT structure"
-  - "POINT structure"
-  - "CPoint class"
+f1_keywords: ["CPoint", "ATLTYPES/ATL::CPoint", "ATLTYPES/ATL::CPoint::CPoint", "ATLTYPES/ATL::CPoint::Offset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LPPOINT structure", "POINT structure", "CPoint class"]
 ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CPoint Class
 Similar to the Windows `POINT` structure.  

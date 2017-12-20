@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "09/22/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.OmitFramePointers"
-  - "/oy"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "omit frame pointer"
-  - "Oy compiler option [C++]"
-  - "stack frame pointer compiler option [C++]"
-  - "-Oy compiler option [C++]"
-  - "frame pointer omission compiler option [C++]"
-  - "suppress frame pointer creation"
-  - "/Oy compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.OmitFramePointers", "/oy"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["omit frame pointer", "Oy compiler option [C++]", "stack frame pointer compiler option [C++]", "-Oy compiler option [C++]", "frame pointer omission compiler option [C++]", "suppress frame pointer creation", "/Oy compiler option [C++]"]
 ms.assetid: c451da86-5297-4c5a-92bc-561d41379853
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Oy (Frame-Pointer Omission)
 

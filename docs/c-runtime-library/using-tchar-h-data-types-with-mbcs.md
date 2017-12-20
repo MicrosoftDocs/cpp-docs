@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_mbcs"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "TCHAR.H data types"
-  - "MBCS data type"
-  - "_MBCS data type"
+f1_keywords: ["_mbcs"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["TCHAR.H data types", "MBCS data type", "_MBCS data type"]
 ms.assetid: 48f471e7-9d2b-4a39-b841-16a0e15c0a18
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Using TCHAR.H Data Types with _MBCS
 **Microsoft Specific**  

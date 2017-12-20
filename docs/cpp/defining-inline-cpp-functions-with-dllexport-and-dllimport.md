@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "inline functions [C++], defining"
-  - "functions [C++], defining inline"
-  - "dllimport attribute [C++], inline functions"
-  - "dllexport attribute [C++], inline functions"
+dev_langs: ["C++"]
+helpviewer_keywords: ["inline functions [C++], defining", "functions [C++], defining inline", "dllimport attribute [C++], inline functions", "dllexport attribute [C++], inline functions"]
 ms.assetid: 3b48678b-e7b8-4eda-bb46-b5d34dcf7817
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Defining Inline C++ Functions with dllexport and dllimport
 ## Microsoft Specific  

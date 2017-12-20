@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "<cliext/utility>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<utility> header [STL/CLR]"
-  - "utility header [STL/CLR]"
-  - "<cliext/utility> header [STL/CLR]"
+f1_keywords: ["<cliext/utility>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<utility> header [STL/CLR]", "utility header [STL/CLR]", "<cliext/utility> header [STL/CLR]"]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # utility (STL/CLR)
 Include the STL/CLR header `<cliext/utility>` to define the template class `pair` and several supporting template functions.  

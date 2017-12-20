@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::partial_sort_copy"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "partial_sort_copy function [STL/CLR]"
+f1_keywords: ["cliext::partial_sort_copy"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["partial_sort_copy function [STL/CLR]"]
 ms.assetid: ed4af83e-7554-4f6d-bf54-c56fa6210fe8
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # partial_sort_copy (STL/CLR)
 Copies elements from a source range into a destination range where the source elements are ordered by either less than or another specified binary predicate.  

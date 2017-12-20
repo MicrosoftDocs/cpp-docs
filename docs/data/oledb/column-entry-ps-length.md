@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "COLUMN_ENTRY_PS_LENGTH"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COLUMN_ENTRY_PS_LENGTH macro"
+f1_keywords: ["COLUMN_ENTRY_PS_LENGTH"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COLUMN_ENTRY_PS_LENGTH macro"]
 ms.assetid: d63ab895-a4df-4183-ac09-cf2311222408
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_ENTRY_PS_LENGTH
 Represents a binding on the rowset to the specific column in the database.  

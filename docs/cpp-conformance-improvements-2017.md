@@ -4,16 +4,14 @@ ms.custom: ""
 ms.date: "11/16/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
+ms.technology: ["vs-ide-general"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
    
 # C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153) and [15.5](#improvements_155).

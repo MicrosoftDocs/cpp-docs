@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_map::make_value"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "make_value member [STL/CLR]"
+f1_keywords: ["cliext::hash_map::make_value"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["make_value member [STL/CLR]"]
 ms.assetid: 1fcdcacc-5edf-46b7-9481-9a4aef32b025
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_map::make_value (STL/CLR)
 Constructs a value object.  

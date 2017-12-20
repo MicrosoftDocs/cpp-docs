@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C2048"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2048"
+f1_keywords: ["C2048"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2048"]
 ms.assetid: 44704726-85fc-42f0-afb9-194df8c4ca7c
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2048
 more than one default  

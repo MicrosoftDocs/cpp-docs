@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "atlcore/ATL::_ATL_BASE_MODULE"
-  - "atlbase/ATL::_ATL_COM_MODULE"
-  - "atlbase/ATL::_ATL_MODULE"
-  - "atlbase/ATL::_ATL_WIN_MODULE"
-  - "atlutil/ATL::ATL_URL_PORT"
-  - "atlbase/ATL::CComDispatchDriver"
-  - "atlbase/ATL::CComGlobalsThreadModel"
-  - "atlbase/ATL::CComObjectThreadModel"
-  - "atlwin/ATL::CContainedWindow"
-  - "atlpath/ATL::CPath"
-  - "atlpath/ATL::CPathA"
-  - "atlpath/ATL::CPathW"
-  - " atlsimpcoll/ATL::CSimpleValArray"
-  - " atlutil/ATL::LPCURL"
-  - "atlbase/ATL::DefaultThreadTraits"
-  - "atlutil/ATL::LPURL"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "typedefs, ATL"
-  - "typedefs"
-  - "ATL, typedefs"
+f1_keywords: ["atlcore/ATL::_ATL_BASE_MODULE", "atlbase/ATL::_ATL_COM_MODULE", "atlbase/ATL::_ATL_MODULE", "atlbase/ATL::_ATL_WIN_MODULE", "atlutil/ATL::ATL_URL_PORT", "atlbase/ATL::CComDispatchDriver", "atlbase/ATL::CComGlobalsThreadModel", "atlbase/ATL::CComObjectThreadModel", "atlwin/ATL::CContainedWindow", "atlpath/ATL::CPath", "atlpath/ATL::CPathA", "atlpath/ATL::CPathW", " atlsimpcoll/ATL::CSimpleValArray", " atlutil/ATL::LPCURL", "atlbase/ATL::DefaultThreadTraits", "atlutil/ATL::LPURL"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["typedefs, ATL", "typedefs", "ATL, typedefs"]
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # ATL Typedefs
 The Active Template Library includes the following typedefs.  

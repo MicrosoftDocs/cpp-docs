@@ -4,49 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mbsnbcat_s_l"
-  - "_mbsnbcat_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_mbsnbcat_s_l", "_mbsnbcat_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mbsnbcat_s"
-  - "mbsnbcat_s"
-  - "_mbsnbcat_s_l"
-  - "mbsnbcat_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_tcsncat function"
-  - "mbsnbcat_s function"
-  - "_mbsnbcat_s function"
-  - "_mbsnbcat_s_l function"
-  - "_tcsncat_s_l function"
-  - "tcsncat_s_l function"
-  - "mbsnbcat_s_l function"
-  - "tcsncat function"
+f1_keywords: ["_mbsnbcat_s", "mbsnbcat_s", "_mbsnbcat_s_l", "mbsnbcat_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_tcsncat function", "mbsnbcat_s function", "_mbsnbcat_s function", "_mbsnbcat_s_l function", "_tcsncat_s_l function", "tcsncat_s_l function", "mbsnbcat_s_l function", "tcsncat function"]
 ms.assetid: 2c9e9be7-d979-4a54-8ada-23428b6648a9
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbcat_s, _mbsnbcat_s_l
 Appends to a multibyte character string, at most, the first `n` bytes of another multibyte-character string. These are versions of [_mbsnbcat, _mbsnbcat_l](../../c-runtime-library/reference/mbsnbcat-mbsnbcat-l.md) that have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

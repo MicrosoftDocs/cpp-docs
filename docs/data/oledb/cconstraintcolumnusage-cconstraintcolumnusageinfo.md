@@ -4,60 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "m_szTableSchema"
-  - "m_szConstraintCatalog"
-  - "CConstraintColumnUsage"
-  - "m_nColumnPropID"
-  - "COLUMN_GUID"
-  - "CONSTRAINT_NAME"
-  - "m_szColumnName"
-  - "m_szTableCatalog"
-  - "m_szConstraintSchema"
-  - "COLUMN_PROPID"
-  - "m_guidColumn"
-  - "CONSTRAINT_COLUMN_USAGE"
-  - "m_szTableName"
-  - "CONSTRAINT_CATALOG"
-  - "CONSTRAINT_SCHEMA"
-  - "CConstraintColumnUsageInfo"
-  - "m_szConstraintName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "COLUMN_PROPID"
-  - "m_szConstraintCatalog"
-  - "CONSTRAINT_COLUMN_USAGE"
-  - "CONSTRAINT_CATALOG"
-  - "CConstraintColumnUsageInfo parameter class"
-  - "m_szTableSchema"
-  - "TABLE_CATALOG"
-  - "TABLE_NAME"
-  - "CONSTRAINT_NAME"
-  - "CConstraintColumnUsage typedef class"
-  - "m_nColumnPropID"
-  - "CONSTRAINT_SCHEMA"
-  - "TABLE_SCHEMA"
-  - "m_szColumnName"
-  - "COLUMN_NAME"
-  - "m_szTableCatalog"
-  - "m_szConstraintName"
-  - "m_szTableName"
-  - "m_szConstraintSchema"
-  - "COLUMN_GUID"
-  - "m_guidColumn"
+f1_keywords: ["m_szTableSchema", "m_szConstraintCatalog", "CConstraintColumnUsage", "m_nColumnPropID", "COLUMN_GUID", "CONSTRAINT_NAME", "m_szColumnName", "m_szTableCatalog", "m_szConstraintSchema", "COLUMN_PROPID", "m_guidColumn", "CONSTRAINT_COLUMN_USAGE", "m_szTableName", "CONSTRAINT_CATALOG", "CONSTRAINT_SCHEMA", "CConstraintColumnUsageInfo", "m_szConstraintName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["COLUMN_PROPID", "m_szConstraintCatalog", "CONSTRAINT_COLUMN_USAGE", "CONSTRAINT_CATALOG", "CConstraintColumnUsageInfo parameter class", "m_szTableSchema", "TABLE_CATALOG", "TABLE_NAME", "CONSTRAINT_NAME", "CConstraintColumnUsage typedef class", "m_nColumnPropID", "CONSTRAINT_SCHEMA", "TABLE_SCHEMA", "m_szColumnName", "COLUMN_NAME", "m_szTableCatalog", "m_szConstraintName", "m_szTableName", "m_szConstraintSchema", "COLUMN_GUID", "m_guidColumn"]
 ms.assetid: 7d4d94e8-2025-4fcc-a176-c9b231eca77b
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CConstraintColumnUsage, CConstraintColumnUsageInfo
 Call the typedef class **CConstraintColumnUsage** to implement its parameter class **CConstraintColumnUsageInfo**.  

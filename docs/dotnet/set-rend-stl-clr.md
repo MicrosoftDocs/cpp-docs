@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::rend"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "rend member [STL/CLR]"
+f1_keywords: ["cliext::set::rend"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["rend member [STL/CLR]"]
 ms.assetid: 4a98d138-ad89-4dee-b757-e798da2e0c0e
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::rend (STL/CLR)
 Designates the end of the reversed controlled sequence.  

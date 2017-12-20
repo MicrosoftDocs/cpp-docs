@@ -4,56 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mbscspn_l"
-  - "wcscspn"
-  - "_mbscspn"
-  - "strcspn"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["_mbscspn_l", "wcscspn", "_mbscspn", "strcspn"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "strcspn"
-  - "_mbscspn"
-  - "wcscspn"
-  - "_ftcscspn"
-  - "_tcscspn"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], searching"
-  - "ftcscspn function"
-  - "strcspn function"
-  - "_mbscspn function"
-  - "mbscspn_l function"
-  - "wcscspn function"
-  - "tcscspn function"
-  - "_ftcscspn function"
-  - "_mbscspn_l function"
-  - "mbscspn function"
-  - "_tcscspn function"
+f1_keywords: ["strcspn", "_mbscspn", "wcscspn", "_ftcscspn", "_tcscspn"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], searching", "ftcscspn function", "strcspn function", "_mbscspn function", "mbscspn_l function", "wcscspn function", "tcscspn function", "_ftcscspn function", "_mbscspn_l function", "mbscspn function", "_tcscspn function"]
 ms.assetid: f73f51dd-b533-4e46-ba29-d05c553708a6
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # strcspn, wcscspn, _mbscspn, _mbscspn_l
 Returns the index of the first occurrence in a string, of a character that belongs to a set of characters.  

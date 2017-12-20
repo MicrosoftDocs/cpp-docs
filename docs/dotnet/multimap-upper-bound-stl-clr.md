@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multimap::upper_bound"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "upper_bound member [STL/CLR]"
+f1_keywords: ["cliext::multimap::upper_bound"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["upper_bound member [STL/CLR]"]
 ms.assetid: bfb8cf64-cecf-4685-8ac9-e7228ecee809
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::upper_bound (STL/CLR)
 Finds end of range that matches a specified key.  

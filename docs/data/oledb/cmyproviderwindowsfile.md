@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "cmyproviderwindowsfile"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CMyProviderWindowsFile class"
-  - "OLE DB providers, wizard-generated files"
+f1_keywords: ["cmyproviderwindowsfile"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CMyProviderWindowsFile class", "OLE DB providers, wizard-generated files"]
 ms.assetid: 0e9e72ac-1e1e-445f-a7ac-690c20031f9d
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMyProviderWindowsFile
 The wizard creates a class to contain one row of data; in this case, it is called `CMyProviderWindowsFile`. The following code for `CMyProviderWindowsFile` is wizard generated and lists all the files in a directory by using the **WIN32_FIND_DATA** structure. `CMyProviderWindowsFile` inherits from the **WIN32_FIND_DATA** structure:  

@@ -4,44 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_set_invalid_parameter_handler"
-  - "_set_thread_local_invalid_parameter_handler"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+apiname: ["_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "set_invalid_parameter_handler"
-  - "_set_invalid_parameter_handler"
-  - "_set_thread_local_invalid_parameter_handler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "invalid parameter handler"
-  - "set_invalid_parameter_handler function"
-  - "_set_invalid_parameter_handler function"
-  - "_set_thread_local_invalid_parameter_handler function"
+f1_keywords: ["set_invalid_parameter_handler", "_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["invalid parameter handler", "set_invalid_parameter_handler function", "_set_invalid_parameter_handler function", "_set_thread_local_invalid_parameter_handler function"]
 ms.assetid: c0e67934-1a41-4016-ad8e-972828f3ac11
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
 Sets a function to be called when the CRT detects an invalid argument.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::key_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "key_type member [STL/CLR]"
+f1_keywords: ["cliext::set::key_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["key_type member [STL/CLR]"]
 ms.assetid: 2c057cf7-ac3d-40a6-b7fc-eb1c0a317381
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::key_type (STL/CLR)
 The type of an ordering key.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_multiset::swap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "swap member [STL/CLR]"
+f1_keywords: ["cliext::hash_multiset::swap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["swap member [STL/CLR]"]
 ms.assetid: b79372ab-ca51-494a-89cf-4e2da3ee3ff7
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multiset::swap (STL/CLR)
 Swaps the contents of two containers.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComAutoDeleteCriticalSection"
-  - "atlcore/ATL::CComAutoDeleteCriticalSection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComAutoDeleteCriticalSection class"
+f1_keywords: ["CComAutoDeleteCriticalSection", "atlcore/ATL::CComAutoDeleteCriticalSection"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComAutoDeleteCriticalSection class"]
 ms.assetid: 2396dbea-1c60-4841-b50e-c4e18af311a3
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CComAutoDeleteCriticalSection Class
 This class provides methods for obtaining and releasing ownership of a critical section object.  

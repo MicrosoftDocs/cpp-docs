@@ -4,44 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_wexecv"
-  - "_execv"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-process-l1-1-0.dll"
+apiname: ["_wexecv", "_execv"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_execv"
-  - "_wexecv"
-  - "wexecv"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_wexecv function"
-  - "_execv function"
-  - "wexecv function"
-  - "execv function"
+f1_keywords: ["_execv", "_wexecv", "wexecv"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_wexecv function", "_execv function", "wexecv function", "execv function"]
 ms.assetid: 8dbaf7bc-9040-4316-a0c1-db7e866b52af
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _execv, _wexecv
 Loads and executes new child processes.  

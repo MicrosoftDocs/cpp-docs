@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDynamicStringAccessorW"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CDynamicStringAccessorW class"
+f1_keywords: ["CDynamicStringAccessorW"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CDynamicStringAccessorW class"]
 ms.assetid: 9b7fd5cc-3a9b-4b57-b907-f1e35de2c98f
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessorW Class
 Allows you to access a data source when you have no knowledge of the database schema (underlying structure).  

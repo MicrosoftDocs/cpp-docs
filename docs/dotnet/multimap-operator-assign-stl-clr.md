@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multimap::operator="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator= member [STL/CLR]"
+f1_keywords: ["cliext::multimap::operator="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator= member [STL/CLR]"]
 ms.assetid: 9bef7dc5-591d-443b-88b1-e68286422fe6
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::operator= (STL/CLR)
 Replaces the controlled sequence.  

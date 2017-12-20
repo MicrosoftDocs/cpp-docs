@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "schema rowsets, defined"
+dev_langs: ["C++"]
+helpviewer_keywords: ["schema rowsets, defined"]
 ms.assetid: 0716a065-230c-4c20-bb53-98870e79ea29
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Schema Rowsets
 Schema (or metadata) is any information about a database's structure or organization, such as information on the provider, rowset, table, columns, or other information aside from the actual database content. OLE DB allows you to obtain such information without opening the rowset by using schema rowsets.  

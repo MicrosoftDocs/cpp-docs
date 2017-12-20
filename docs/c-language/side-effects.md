@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "expression evaluation, side effects"
-  - "side effects in expression evaluation"
+dev_langs: ["C++"]
+helpviewer_keywords: ["expression evaluation, side effects", "side effects in expression evaluation"]
 ms.assetid: d9b3004a-830e-43a0-bea5-8989d501d670
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Side Effects
 The order of evaluation of expressions is defined by the specific implementation, except when the language guarantees a particular order of evaluation (as outlined in [Precedence and Order of Evaluation](../c-language/precedence-and-order-of-evaluation.md)). For example, side effects occur in the following function calls:  

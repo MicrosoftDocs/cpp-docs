@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::CCommand"
-  - "CCommand"
-  - "ATL.CCommand"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CCommand class"
+f1_keywords: ["ATL::CCommand", "CCommand", "ATL.CCommand"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CCommand class"]
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCommand Class
 Provides methods to set and execute a command.  

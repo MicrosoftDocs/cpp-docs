@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mbsstr"
-  - "wcsstr"
-  - "_mbsstr_l"
-  - "strstr"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntdll.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_mbsstr", "wcsstr", "_mbsstr_l", "strstr"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fstrstr"
-  - "_ftcsstr"
-  - "strstr"
-  - "wcsstr"
-  - "_mbsstr"
-  - "_tcsstr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strings [C++], searching"
-  - "mbsstr function"
-  - "_ftcsstr function"
-  - "ftcsstr function"
-  - "fstrstr function"
-  - "_tcsstr function"
-  - "substrings, finding"
-  - "mbsstr_l function"
-  - "tcsstr function"
-  - "_mbsstr function"
-  - "wcsstr function"
-  - "_fstrstr function"
-  - "_mbsstr_l function"
-  - "strstr function"
+f1_keywords: ["_fstrstr", "_ftcsstr", "strstr", "wcsstr", "_mbsstr", "_tcsstr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strings [C++], searching", "mbsstr function", "_ftcsstr function", "ftcsstr function", "fstrstr function", "_tcsstr function", "substrings, finding", "mbsstr_l function", "tcsstr function", "_mbsstr function", "wcsstr function", "_fstrstr function", "_mbsstr_l function", "strstr function"]
 ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # strstr, wcsstr, _mbsstr, _mbsstr_l
 Returns a pointer to the first occurrence of a search string in a string.  

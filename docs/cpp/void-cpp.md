@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "void_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "void keyword [C++]"
-  - "functions [C++], void"
-  - "pointers, void"
+f1_keywords: ["void_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["void keyword [C++]", "functions [C++], void", "pointers, void"]
 ms.assetid: d203edba-38e6-4056-8b89-011437351057
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # void (C++)
 When used as a function return type, the `void` keyword specifies that the function does not return a value. When used for a function's parameter list, void specifies that the function takes no parameters. When used in the declaration of a pointer, void specifies that the pointer is "universal."  

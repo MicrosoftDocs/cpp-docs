@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::set::operator<"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator< member [STL/CLR]"
+f1_keywords: ["cliext::set::operator<"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator< member [STL/CLR]"]
 ms.assetid: bd6b351d-3f33-4f66-97fa-b7e8f36ce9fd
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator&lt; (set) (STL/CLR)
 List less than comparison.  

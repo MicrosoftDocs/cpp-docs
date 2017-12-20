@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/RANGE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/RANGE dumpbin option"
-  - "-RANGE dumpbin option"
+f1_keywords: ["/RANGE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/RANGE dumpbin option", "-RANGE dumpbin option"]
 ms.assetid: 7eeba266-32be-49cc-a350-96bdf541f98a
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /RANGE
 Modifies the output of dumpbin when used with other dumpbin options, such as /RAWDATA or /DISASM.  

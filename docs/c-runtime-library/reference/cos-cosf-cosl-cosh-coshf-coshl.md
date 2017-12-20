@@ -4,58 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "coshl"
-  - "cosh"
-  - "cos"
-  - "cosl"
-  - "cosf"
-  - "coshf"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["coshl", "cosh", "cos", "cosl", "cosf", "coshf"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "coshl"
-  - "cos"
-  - "cosf"
-  - "cosh"
-  - "cosl"
-  - "coshf"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "cosines"
-  - "cosl function"
-  - "calculating cosine"
-  - "cosf function"
-  - "cos function"
-  - "cosh function"
-  - "coshf function"
-  - "trigonometric functions"
-  - "cosines, calculating"
-  - "coshl function"
-  - "hyperbolic functions"
+f1_keywords: ["coshl", "cos", "cosf", "cosh", "cosl", "coshf"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["cosines", "cosl function", "calculating cosine", "cosf function", "cos function", "cosh function", "coshf function", "trigonometric functions", "cosines, calculating", "coshl function", "hyperbolic functions"]
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # cos, cosf, cosl, cosh, coshf, coshl
 Calculates the cosine (`cos`, `cosf`, or `cosl`), or hyperbolic cosine (`cosh`, `coshf`, or `coshl`).  

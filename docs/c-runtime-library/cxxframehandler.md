@@ -4,34 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "__CxxFrameHandler"
-apilocation: 
-  - "msvcr110.dll"
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr100.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr90.dll"
-  - "msvcr120.dll"
+apiname: ["__CxxFrameHandler"]
+apilocation: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr120.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "__CxxFrameHandler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__CxxFrameHandler"
+f1_keywords: ["__CxxFrameHandler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__CxxFrameHandler"]
 ms.assetid: b79ac97f-425a-42ae-9b91-8beaef935333
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # __CxxFrameHandler
 Internal CRT function. Used by the CRT to handle structured exception frames.  

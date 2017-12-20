@@ -4,36 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ODBC data sources [C++], multiuser environments"
-  - "generalizing connection strings"
-  - "ODBC [C++], disconnecting from data sources"
-  - "connection strings [C++], generalizing"
-  - "database connections [C++], creating"
-  - "GetDefaultConnect method"
-  - "connections [C++], data source"
-  - "ODBC connections [C++], configuring"
-  - "disconnecting from data sources"
-  - "databases [C++], connecting to"
-  - "ODBC connections [C++], disconnecting"
-  - "data sources [C++], connecting to"
-  - "ODBC connections [C++], connecting to data source"
-  - "ODBC data sources [C++], connections"
-  - "database connections [C++], MFC ODBC classes"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ODBC data sources [C++], multiuser environments", "generalizing connection strings", "ODBC [C++], disconnecting from data sources", "connection strings [C++], generalizing", "database connections [C++], creating", "GetDefaultConnect method", "connections [C++], data source", "ODBC connections [C++], configuring", "disconnecting from data sources", "databases [C++], connecting to", "ODBC connections [C++], disconnecting", "data sources [C++], connecting to", "ODBC connections [C++], connecting to data source", "ODBC data sources [C++], connections", "database connections [C++], MFC ODBC classes"]
 ms.assetid: c0adbcdd-c000-40c6-b199-09ffdc7b6ef2
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Managing Connections (ODBC)
 This topic applies to the MFC ODBC classes.  

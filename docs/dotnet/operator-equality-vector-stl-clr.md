@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::operator=="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator== member [STL/CLR]"
+f1_keywords: ["cliext::vector::operator=="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator== member [STL/CLR]"]
 ms.assetid: b552c9a1-8d06-4090-b394-d08a84947594
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator== (vector) (STL/CLR)
 Vector equal comparison.  

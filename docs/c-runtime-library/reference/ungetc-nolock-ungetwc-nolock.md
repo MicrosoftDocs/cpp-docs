@@ -4,49 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_ungetwc_nolock"
-  - "_ungetc_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-stdio-l1-1-0.dll"
+apiname: ["_ungetwc_nolock", "_ungetc_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ungettc_nolock"
-  - "ungetwc_nolock"
-  - "ungetc_nolock"
-  - "_ungetc_nolock"
-  - "_ungetwc_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_ungettc_nolock function"
-  - "_ungetwc_nolock function"
-  - "characters, pushing back onto stream"
-  - "_ungetc_nolock function"
-  - "ungetwc_nolock function"
-  - "ungettc_nolock function"
-  - "ungetc_nolock function"
+f1_keywords: ["_ungettc_nolock", "ungetwc_nolock", "ungetc_nolock", "_ungetc_nolock", "_ungetwc_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_ungettc_nolock function", "_ungetwc_nolock function", "characters, pushing back onto stream", "_ungetc_nolock function", "ungetwc_nolock function", "ungettc_nolock function", "ungetc_nolock function"]
 ms.assetid: aa02d5c2-1be1-46d2-a8c4-b61269e9d465
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _ungetc_nolock, _ungetwc_nolock
 Pushes a character back onto the stream.  

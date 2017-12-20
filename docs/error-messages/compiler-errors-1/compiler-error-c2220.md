@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2220"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2220"
+f1_keywords: ["C2220"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2220"]
 ms.assetid: d610802c-64d7-40ad-a2a6-0ed0b6815a6c
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2220
 warning treated as error - no object file generated  

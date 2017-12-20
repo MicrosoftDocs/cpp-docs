@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.flags"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "flags, control"
-  - "heap allocation, control flags"
-  - "debug heap, control flags"
+f1_keywords: ["c.flags"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["flags, control", "heap allocation, control flags", "debug heap, control flags"]
 ms.assetid: 8dbd24a5-0633-42d1-9771-776db338465f
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Control Flags
 The debug version of the Microsoft C run-time library uses the following flags to control the heap allocation and reporting process. For more information, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).  

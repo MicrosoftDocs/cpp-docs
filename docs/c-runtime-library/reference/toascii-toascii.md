@@ -4,44 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "__toascii"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+apiname: ["__toascii"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "__toascii"
-  - "toascii"
-  - "ctype/toascii"
-  - "ctype/__toascii"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "toascii function"
-  - "string conversion, to ASCII characters"
-  - "__toascii function"
-  - "ASCII characters, converting to"
+f1_keywords: ["__toascii", "toascii", "ctype/toascii", "ctype/__toascii"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["toascii function", "string conversion, to ASCII characters", "__toascii function", "ASCII characters, converting to"]
 ms.assetid: a07c0608-b0e2-4da2-a20c-7b64d6a9b77c
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # toascii, __toascii
 

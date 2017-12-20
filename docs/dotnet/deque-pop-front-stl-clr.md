@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::deque::pop_front"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pop_front member [STL/CLR]"
+f1_keywords: ["cliext::deque::pop_front"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["pop_front member [STL/CLR]"]
 ms.assetid: 5042df47-b226-4b16-982e-6a4543b8e00b
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque::pop_front (STL/CLR)
 Removes the first element.  

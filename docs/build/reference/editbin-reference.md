@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "editbin"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binary data, editing"
-  - "object files, modifying"
-  - "EDITBIN program"
-  - "COFF files, editing"
+f1_keywords: ["editbin"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["binary data, editing", "object files, modifying", "EDITBIN program", "COFF files, editing"]
 ms.assetid: efdda03b-3dfc-4d31-90e6-caf5b3977914
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # EDITBIN Reference
 The Microsoft COFF Binary File Editor (EDITBIN.EXE) modifies Common Object File Format (COFF) binary files. You can use EDITBIN to modify object files, executable files, and dynamic-link libraries (DLL).  

@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "option"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "OPTION directive"
+f1_keywords: ["option"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["OPTION directive"]
 ms.assetid: 8e10dabd-e36f-4586-ab01-ada96736b0bd
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # OPTION (MASM)
 Enables and disables features of the assembler.  

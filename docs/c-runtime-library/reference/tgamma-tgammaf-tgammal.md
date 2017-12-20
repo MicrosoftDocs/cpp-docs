@@ -4,48 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "tgamma"
-  - "tgammaf"
-  - "tgammal"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["tgamma", "tgammaf", "tgammal"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "tgamma"
-  - "tgammaf"
-  - "tgammal"
-  - "math/tgamma"
-  - "math/tgammaf"
-  - "math/tgammal"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tgamma function"
-  - "tgammaf function"
-  - "tgammal function"
+f1_keywords: ["tgamma", "tgammaf", "tgammal", "math/tgamma", "math/tgammaf", "math/tgammal"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tgamma function", "tgammaf function", "tgammal function"]
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # tgamma, tgammaf, tgammal
 Determines the gamma function of the specified value.  

@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/kernel"
-  - "/kernel-"
-dev_langs: 
-  - "C++"
+f1_keywords: ["/kernel", "/kernel-"]
+dev_langs: ["C++"]
 ms.assetid: 6d7fdff0-c3d1-4b78-9367-4da588ce8b05
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /kernel (Create Kernel Mode Binary)
 Creates a binary that can be executed in the Windows kernel.  

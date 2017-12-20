@@ -4,25 +4,17 @@ ms.custom: ""
 ms.date: "08/15/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/await"
-  - "-await"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/await enable coroutine support [C++]"
-  - "-await enable coroutine support [C++]"
-  - "await enable coroutine support [C++]"
+f1_keywords: ["/await", "-await"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/await enable coroutine support [C++]", "-await enable coroutine support [C++]", "await enable coroutine support [C++]"]
 ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /await (Enable coroutine support)  
   

@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWin32Heap"
-  - "ATLMEM/ATL::CWin32Heap"
-  - "ATLMEM/ATL::CWin32Heap::CWin32Heap"
-  - "ATLMEM/ATL::CWin32Heap::Allocate"
-  - "ATLMEM/ATL::CWin32Heap::Attach"
-  - "ATLMEM/ATL::CWin32Heap::Detach"
-  - "ATLMEM/ATL::CWin32Heap::Free"
-  - "ATLMEM/ATL::CWin32Heap::GetSize"
-  - "ATLMEM/ATL::CWin32Heap::Reallocate"
-  - "ATLMEM/ATL::CWin32Heap::m_bOwnHeap"
-  - "ATLMEM/ATL::CWin32Heap::m_hHeap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CWin32Heap class"
+f1_keywords: ["CWin32Heap", "ATLMEM/ATL::CWin32Heap", "ATLMEM/ATL::CWin32Heap::CWin32Heap", "ATLMEM/ATL::CWin32Heap::Allocate", "ATLMEM/ATL::CWin32Heap::Attach", "ATLMEM/ATL::CWin32Heap::Detach", "ATLMEM/ATL::CWin32Heap::Free", "ATLMEM/ATL::CWin32Heap::GetSize", "ATLMEM/ATL::CWin32Heap::Reallocate", "ATLMEM/ATL::CWin32Heap::m_bOwnHeap", "ATLMEM/ATL::CWin32Heap::m_hHeap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWin32Heap class"]
 ms.assetid: 69176022-ed98-4e3b-96d8-116b0c58ac95
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CWin32Heap Class
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the Win32 heap allocation functions.  

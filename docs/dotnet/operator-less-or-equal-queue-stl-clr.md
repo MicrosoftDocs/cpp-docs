@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::queue::operator<="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator<= member [STL/CLR]"
+f1_keywords: ["cliext::queue::operator<="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator<= member [STL/CLR]"]
 ms.assetid: 63b7f908-4f6b-40d6-bcc6-22970760789d
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator&lt;= (queue) (STL/CLR)
 Queue less than or equal comparison.  

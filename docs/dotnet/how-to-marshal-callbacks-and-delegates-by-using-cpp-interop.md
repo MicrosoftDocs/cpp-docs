@@ -4,27 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "data marshaling [C++], callbacks and delegates"
-  - "C++ Interop, callbacks and delegates"
-  - "interop [C++], callbacks and delegates"
-  - "delegates [C++], marshaling"
-  - "marshaling [C++], callbacks and delegates"
-  - "callbacks [C++], marshaling"
+dev_langs: ["C++"]
+helpviewer_keywords: ["data marshaling [C++], callbacks and delegates", "C++ Interop, callbacks and delegates", "interop [C++], callbacks and delegates", "delegates [C++], marshaling", "marshaling [C++], callbacks and delegates", "callbacks [C++], marshaling"]
 ms.assetid: 2313e9eb-5df9-4367-be0f-14b4712d8d2d
 caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Callbacks and Delegates By Using C++ Interop
 This topic demonstrates the marshalling of callbacks and delegates (the managed version of a callback) between managed and unmanaged code using Visual C++.  

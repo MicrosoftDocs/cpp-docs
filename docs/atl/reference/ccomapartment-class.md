@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComApartment"
-  - "ATLBASE/ATL::CComApartment"
-  - "ATLBASE/ATL::CComApartment::CComApartment"
-  - "ATLBASE/ATL::CComApartment::Apartment"
-  - "ATLBASE/ATL::CComApartment::GetLockCount"
-  - "ATLBASE/ATL::CComApartment::Lock"
-  - "ATLBASE/ATL::CComApartment::Unlock"
-  - "ATLBASE/ATL::CComApartment::m_dwThreadID"
-  - "ATLBASE/ATL::CComApartment::m_hThread"
-  - "ATLBASE/ATL::CComApartment::m_nLockCnt"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "apartments in ATL EXE modules"
-  - "CComApartment class"
+f1_keywords: ["CComApartment", "ATLBASE/ATL::CComApartment", "ATLBASE/ATL::CComApartment::CComApartment", "ATLBASE/ATL::CComApartment::Apartment", "ATLBASE/ATL::CComApartment::GetLockCount", "ATLBASE/ATL::CComApartment::Lock", "ATLBASE/ATL::CComApartment::Unlock", "ATLBASE/ATL::CComApartment::m_dwThreadID", "ATLBASE/ATL::CComApartment::m_hThread", "ATLBASE/ATL::CComApartment::m_nLockCnt"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["apartments in ATL EXE modules", "CComApartment class"]
 ms.assetid: dbc177d7-7ee4-45f2-b563-d578a467ca93
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CComApartment Class
 This class provides support for managing an appartment in a thread-pooled EXE module.  

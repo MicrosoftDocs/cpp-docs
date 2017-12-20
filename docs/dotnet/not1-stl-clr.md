@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::not1"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "not1 function [STL/CLR]"
+f1_keywords: ["cliext::not1"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["not1 function [STL/CLR]"]
 ms.assetid: a50cd819-10de-4d81-84da-8a34c5414a43
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # not1 (STL/CLR)
 Generates a `unary_negate` for a functor.  

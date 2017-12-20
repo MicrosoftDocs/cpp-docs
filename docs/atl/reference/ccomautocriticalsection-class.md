@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComAutoCriticalSection"
-  - "ATLCORE/ATL::CComAutoCriticalSection"
-  - "ATLCORE/ATL::CComAutoCriticalSection::CComAutoCriticalSection"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComAutoCriticalSection class"
+f1_keywords: ["CComAutoCriticalSection", "ATLCORE/ATL::CComAutoCriticalSection", "ATLCORE/ATL::CComAutoCriticalSection::CComAutoCriticalSection"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComAutoCriticalSection class"]
 ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CComAutoCriticalSection Class
 `CComAutoCriticalSection` provides methods for obtaining and releasing ownership of a critical section object.  

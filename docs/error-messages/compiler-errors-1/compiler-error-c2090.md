@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2090"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2090"
+f1_keywords: ["C2090"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2090"]
 ms.assetid: e8176e55-382b-453d-aa27-6597f0274afd
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2090
 function returns array  

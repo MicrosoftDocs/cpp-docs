@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "9/29/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/zc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/Zc compiler options [C++]"
-  - "-Zc compiler options [C++]"
-  - "Conformance compiler options"
-  - "Zc compiler options [C++]"
+f1_keywords: ["/zc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Zc (Conformance)
 

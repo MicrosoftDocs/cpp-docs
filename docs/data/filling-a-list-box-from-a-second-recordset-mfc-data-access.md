@@ -4,28 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "record views, filling list boxes"
-  - "list boxes, filling from second recordset"
-  - "recordsets [C++], filling list boxes or combo boxes"
-  - "CComboBox class, filling object from second rowset"
-  - "ODBC recordsets [C++], filling list boxes or combo boxes"
-  - "combo boxes [C++], filling from second recordset"
-  - "CListCtrl class, filling from second recordset"
+dev_langs: ["C++"]
+helpviewer_keywords: ["record views, filling list boxes", "list boxes, filling from second recordset", "recordsets [C++], filling list boxes or combo boxes", "CComboBox class, filling object from second rowset", "ODBC recordsets [C++], filling list boxes or combo boxes", "combo boxes [C++], filling from second recordset", "CListCtrl class, filling from second recordset"]
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Filling a List Box from a Second Recordset  (MFC Data Access)
 By default, a record view is associated with a single recordset object, whose fields are mapped to the record view's controls. Sometimes you might want to put a list box or combo box control in your record view and fill it with values from a second recordset object. The user can use the list box to select a new category of information to display in the record view. This topic explains how and when to do that.  

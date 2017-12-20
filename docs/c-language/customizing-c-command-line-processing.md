@@ -4,29 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_spawn functions"
-  - "command line, processing"
-  - "command-line processing"
-  - "startup code, customizing command-line processing"
-  - "environment, environment-processing routine"
-  - "_setargv function"
-  - "command line, processing arguments"
-  - "suppressing environment processing"
-  - "_exec function"
+dev_langs: ["C++"]
+helpviewer_keywords: ["_spawn functions", "command line, processing", "command-line processing", "startup code, customizing command-line processing", "environment, environment-processing routine", "_setargv function", "command line, processing arguments", "suppressing environment processing", "_exec function"]
 ms.assetid: c20fa11d-b35b-4f3e-93b6-2cd5a1c3c993
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Customizing C Command-Line Processing
 If your program does not take command-line arguments, you can save a small amount of space by suppressing use of the library routine that performs command-line processing. This routine is called **_setargv** (or **_wsetargv** in the wide-character environment), as described in [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md). To suppress its use, define a routine that does nothing in the file containing the **main** function and name it **_setargv** (or **_wsetargv** in the wide-character environment). The call to **_setargv** or **_wsetargv** is then satisfied by your definition of **_setargv** or **_wsetargv** , and the library version is not loaded.  

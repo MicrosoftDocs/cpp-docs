@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "A2050"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "A2050"
+f1_keywords: ["A2050"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["A2050"]
 ms.assetid: 16f3a58f-4bde-48f1-b0e3-2ed9612780a5
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2050
 **real or BCD number not allowed**  

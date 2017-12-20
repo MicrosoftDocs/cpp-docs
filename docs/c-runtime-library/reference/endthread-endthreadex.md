@@ -4,47 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_endthread"
-  - "_endthreadex"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+apiname: ["_endthread", "_endthreadex"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_endthread"
-  - "endthreadex"
-  - "_endthreadex"
-  - "endthread"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_endthread function"
-  - "endthread function"
-  - "terminating threads"
-  - "endthreadex function"
-  - "_endthreadex function"
-  - "threading [C++], terminating threads"
+f1_keywords: ["_endthread", "endthreadex", "_endthreadex", "endthread"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_endthread function", "endthread function", "terminating threads", "endthreadex function", "_endthreadex function", "threading [C++], terminating threads"]
 ms.assetid: 18a91f2f-659e-40b4-b266-ec12dcf2abf5
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _endthread, _endthreadex
 Terminates a thread; `_endthread` terminates a thread that's created by `_beginthread` and  `_endthreadex` terminates a thread that's created by `_beginthreadex`.  

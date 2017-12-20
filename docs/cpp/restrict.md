@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "restrict_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__declspec keyword [C++], restrict"
-  - "restrict __declspec keyword"
+f1_keywords: ["restrict_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__declspec keyword [C++], restrict", "restrict __declspec keyword"]
 ms.assetid: f39cf632-68d8-4362-a497-2d4c15693689
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # restrict
 **Microsoft Specific**  

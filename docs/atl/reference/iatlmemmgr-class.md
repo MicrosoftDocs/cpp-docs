@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IAtlMemMgr"
-  - "ATLMEM/ATL::IAtlMemMgr"
-  - "ATLMEM/ATL::Allocate"
-  - "ATLMEM/ATL::Free"
-  - "ATLMEM/ATL::GetSize"
-  - "ATLMEM/ATL::Reallocate"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAtlMemMgr class"
-  - "memory, managing"
-  - "memory, memory manager"
+f1_keywords: ["IAtlMemMgr", "ATLMEM/ATL::IAtlMemMgr", "ATLMEM/ATL::Allocate", "ATLMEM/ATL::Free", "ATLMEM/ATL::GetSize", "ATLMEM/ATL::Reallocate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAtlMemMgr class", "memory, managing", "memory, memory manager"]
 ms.assetid: 18b2c569-25fe-4464-bdb6-3b1abef7154a
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # IAtlMemMgr Class
 This class represents the interface to a memory manager.  

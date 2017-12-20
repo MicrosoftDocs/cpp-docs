@@ -4,26 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], record views"
-  - "ODBC recordsets [C++], record views"
-  - "databases [C++], record views"
-  - "record views [C++]"
-  - "forms [C++], data access tasks"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC [C++], record views", "ODBC recordsets [C++], record views", "databases [C++], record views", "record views [C++]", "forms [C++], data access tasks"]
 ms.assetid: 562122d9-01d8-4284-acf6-ea109ab0408d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Views  (MFC Data Access)
 This section applies only to the MFC ODBC classes. For information about OLE DB record views, see [COleDBRecordView](../mfc/reference/coledbrecordview-class.md) and [Using OLE DB Record Views](../data/oledb/using-ole-db-record-views.md).  

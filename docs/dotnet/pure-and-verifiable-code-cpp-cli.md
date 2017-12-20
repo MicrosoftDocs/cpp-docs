@@ -4,35 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/clr compiler option [C++], verifiable assemblies"
-  - "/clr compiler option [C++], mixed assemblies"
-  - "pure MSIL [C++]"
-  - "verifiable assemblies [C++]"
-  - "verifiably type-safe code [C++]"
-  - "/clr compiler option [C++], pure assemblies"
-  - ".NET Framework [C++], pure and verifiable code"
-  - "assemblies [C++], mixed code"
-  - "verifiable assemblies [C++], about verifiable assemblies"
-  - "mixed assemblies [C++], about mixed assemblies"
-  - "pure MSIL [C++], about pure code"
-  - "assemblies [C++], verifiable code"
-  - "mixed assemblies [C++]"
-  - "assemblies [C++], pure code"
+dev_langs: ["C++"]
+helpviewer_keywords: ["/clr compiler option [C++], verifiable assemblies", "/clr compiler option [C++], mixed assemblies", "pure MSIL [C++]", "verifiable assemblies [C++]", "verifiably type-safe code [C++]", "/clr compiler option [C++], pure assemblies", ".NET Framework [C++], pure and verifiable code", "assemblies [C++], mixed code", "verifiable assemblies [C++], about verifiable assemblies", "mixed assemblies [C++], about mixed assemblies", "pure MSIL [C++], about pure code", "assemblies [C++], verifiable code", "mixed assemblies [C++]", "assemblies [C++], pure code"]
 ms.assetid: 9050e110-fa11-4356-b56c-665187ff871c
 caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Pure and Verifiable Code (C++/CLI)
 For .NET Programming, Visual C++ supports the creation of three distinct types of components and applications: mixed, pure, and verifiable. All three are available through the [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) compiler option.  

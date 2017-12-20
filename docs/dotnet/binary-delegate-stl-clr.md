@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::binary_delegate"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "binary_delegate function [STL/CLR]"
+f1_keywords: ["cliext::binary_delegate"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["binary_delegate function [STL/CLR]"]
 ms.assetid: 52a9291a-e354-4b9e-a035-78dac1179ec5
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # binary_delegate (STL/CLR)
 The genereic class describes a two-argument delegate. You use it specify a delegate in terms of its argument and return types.  

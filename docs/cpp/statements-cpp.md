@@ -4,21 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "index-page "
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "statements [C++], C++"
+dev_langs: ["C++"]
+helpviewer_keywords: ["statements [C++], C++"]
 ms.assetid: 7028fddf-0d47-469a-a7df-f8576423e066
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Statements (C++)
 C++ statements are the program elements that control how and in what order objects are manipulated. This section includes:  

@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.memory"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "dates, run-time library members"
-  - "time, time management"
-  - "date functions"
-  - "time functions"
+f1_keywords: ["c.memory"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["dates, run-time library members", "time, time management", "date functions", "time functions"]
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Time Management
 Use these functions to get the current time and convert, adjust, and store it as necessary. The current time is the system time.  

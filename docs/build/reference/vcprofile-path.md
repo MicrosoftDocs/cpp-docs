@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VCPROFILE_PATH"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "VCPROFILE_PATH environment variable"
+f1_keywords: ["VCPROFILE_PATH"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["VCPROFILE_PATH environment variable"]
 ms.assetid: 25217aa4-7e86-4eba-854d-10b3c457e4df
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # VCPROFILE_PATH
 Specify the directory to create .pgc files.  

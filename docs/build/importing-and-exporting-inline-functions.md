@@ -4,29 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "exporting functions [C++], inline functions"
-  - "inline functions [C++], importing"
-  - "DLLs [C++], importing"
-  - "importing functions [C++]"
-  - "DLLs [C++], exporting from"
-  - "importing inline functions [C++]"
-  - "inline functions [C++], exporting"
-  - "functions [C++], importing"
-  - "functions [C++], exporting"
+dev_langs: ["C++"]
+helpviewer_keywords: ["exporting functions [C++], inline functions", "inline functions [C++], importing", "DLLs [C++], importing", "importing functions [C++]", "DLLs [C++], exporting from", "importing inline functions [C++]", "inline functions [C++], exporting", "functions [C++], importing", "functions [C++], exporting"]
 ms.assetid: 89f488f8-b078-40fe-afd7-80bd7840057b
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Importing and Exporting Inline Functions
 Imported functions can be defined as inline. The effect is roughly the same as defining a standard function inline; calls to the function are expanded into inline code, much like a macro. This is principally useful as a way of supporting C++ classes in a DLL that might inline some of their member functions for efficiency.  

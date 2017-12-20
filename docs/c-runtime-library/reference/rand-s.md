@@ -4,45 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "rand_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-utility-l1-1-0.dll"
+apiname: ["rand_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "rand_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "generating pseudorandom numbers"
-  - "random numbers, cryptographically secure"
-  - "random numbers, generating"
-  - "rand_s function"
-  - "numbers, pseudorandom"
-  - "cryptographically secure random numbers"
-  - "pseudorandom numbers"
-  - "numbers, generating pseudorandom"
+f1_keywords: ["rand_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["generating pseudorandom numbers", "random numbers, cryptographically secure", "random numbers, generating", "rand_s function", "numbers, pseudorandom", "cryptographically secure random numbers", "pseudorandom numbers", "numbers, generating pseudorandom"]
 ms.assetid: d6a0be60-997d-4904-8411-8aea6839cc94
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # rand_s
 Generates a pseudorandom number. A version of [rand](../../c-runtime-library/reference/rand.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

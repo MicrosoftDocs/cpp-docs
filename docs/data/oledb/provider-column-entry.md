@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "PROVIDER_COLUMN_ENTRY"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "PROVIDER_COLUMN_ENTRY macro"
+f1_keywords: ["PROVIDER_COLUMN_ENTRY"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["PROVIDER_COLUMN_ENTRY macro"]
 ms.assetid: 7921cfc1-aa9c-493e-8fc4-9d4294cafe72
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # PROVIDER_COLUMN_ENTRY
 Represents a specific column supported by the provider.  

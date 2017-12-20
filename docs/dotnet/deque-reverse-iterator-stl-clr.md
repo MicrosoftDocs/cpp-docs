@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::deque::reverse_iterator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reverse_iterator member [STL/CLR]"
+f1_keywords: ["cliext::deque::reverse_iterator"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["reverse_iterator member [STL/CLR]"]
 ms.assetid: 82bdfda7-496d-4f8a-8eb8-96bee83b5708
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque::reverse_iterator (STL/CLR)
 The type of a reverse iterator for the controlled sequence.  

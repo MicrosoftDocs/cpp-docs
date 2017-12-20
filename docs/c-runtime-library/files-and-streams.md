@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++]"
-  - "streams"
+dev_langs: ["C++"]
+helpviewer_keywords: ["files [C++]", "streams"]
 ms.assetid: f61e712b-eac9-4c28-bb18-97c3786ef387
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Files and Streams
 A program communicates with the target environment by reading and writing files. A file can be:  

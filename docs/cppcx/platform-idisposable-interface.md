@@ -7,19 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::IDisposable"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::IDisposable Interface"
+f1_keywords: ["VCCORLIB/Platform::IDisposable"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::IDisposable Interface"]
 ms.assetid: f4344056-7030-42ed-bc98-b140edffddcd
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::IDisposable Interface
 Used to release unmanaged resources.  

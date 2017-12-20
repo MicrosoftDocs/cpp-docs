@@ -4,50 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "ispunct"
-  - "_iswpunct_l"
-  - "iswpunct"
-  - "_ispunct_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["ispunct", "_iswpunct_l", "iswpunct", "_ispunct_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "iswpunct"
-  - "_istpunct"
-  - "ispunct"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_istpunct function"
-  - "_ispunct_l function"
-  - "iswpunct function"
-  - "ispunct function"
-  - "istpunct function"
-  - "ispunct_l function"
-  - "_iswpunct_l function"
-  - "iswpunct_l function"
+f1_keywords: ["iswpunct", "_istpunct", "ispunct"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_istpunct function", "_ispunct_l function", "iswpunct function", "ispunct function", "istpunct function", "ispunct_l function", "_iswpunct_l function", "iswpunct_l function"]
 ms.assetid: 94403240-85c8-40a4-9c2b-e3e95c729c76
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # ispunct, iswpunct, _ispunct_l, _iswpunct_l
 Determines whether an integer represents a punctuation character.  

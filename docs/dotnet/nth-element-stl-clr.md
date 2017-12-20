@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::nth_element"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "nth_element function [STL/CLR]"
+f1_keywords: ["cliext::nth_element"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["nth_element function [STL/CLR]"]
 ms.assetid: 19fc1695-62a9-4f85-9920-d153c1c6481f
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # nth_element (STL/CLR)
 Partitions a range of elements, correctly locating the `n`th element of the sequence in the range so that all the elements in front of it are less than or equal to it and all the elements that follow it in the sequence are greater than or equal to it.  

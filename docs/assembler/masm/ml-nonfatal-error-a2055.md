@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "A2055"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "A2055"
+f1_keywords: ["A2055"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["A2055"]
 ms.assetid: b4c3585f-6e55-4127-ba84-e68a41f1ada8
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2055
 **forced error : symbol not defined**  

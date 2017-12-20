@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IThreadPoolConfig"
-  - "ATLUTIL/ATL::IThreadPoolConfig"
-  - "ATLUTIL/ATL::GetSize"
-  - "ATLUTIL/ATL::GetTimeout"
-  - "ATLUTIL/ATL::SetSize"
-  - "ATLUTIL/ATL::SetTimeout"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IThreadPoolConfig interface"
+f1_keywords: ["IThreadPoolConfig", "ATLUTIL/ATL::IThreadPoolConfig", "ATLUTIL/ATL::GetSize", "ATLUTIL/ATL::GetTimeout", "ATLUTIL/ATL::SetSize", "ATLUTIL/ATL::SetTimeout"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IThreadPoolConfig interface"]
 ms.assetid: 69e642bf-6925-46e6-9a37-cce52231b1cc
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # IThreadPoolConfig Interface
 This interface provides methods for configuring a thread pool.  

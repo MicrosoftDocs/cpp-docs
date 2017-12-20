@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDynamicAccessor.GetLength"
-  - "ATL.CDynamicAccessor.GetLength"
-  - "CDynamicAccessor::GetLength"
-  - "ATL::CDynamicAccessor::GetLength"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetLength method"
+f1_keywords: ["CDynamicAccessor.GetLength", "ATL.CDynamicAccessor.GetLength", "CDynamicAccessor::GetLength", "ATL::CDynamicAccessor::GetLength"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetLength method"]
 ms.assetid: 3ae8983b-b267-4cf9-bfc0-3e191f79e646
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetLength
 Retrieves the length of the specified column.  

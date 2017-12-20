@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::search"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "search function [STL/CLR]"
+f1_keywords: ["cliext::search"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["search function [STL/CLR]"]
 ms.assetid: 3317c7f4-9f47-44b8-a7c7-73948a2f83e1
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # search (STL/CLR)
 Searches for the first occurrence of a sequence within a target range whose elements are equal to those in a given sequence of elements or whose elements are equivalent in a sense specified by a binary predicate to the elements in the given sequence.  

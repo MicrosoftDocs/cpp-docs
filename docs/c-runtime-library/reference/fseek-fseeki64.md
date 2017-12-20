@@ -4,44 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_fseeki64"
-  - "fseek"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_fseeki64", "fseek"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "fseek"
-  - "_fseeki64"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_fseeki64 function"
-  - "fseeki64 function"
-  - "fseek function"
-  - "file pointers [C++], moving"
-  - "file pointers [C++]"
-  - "seek file pointers"
+f1_keywords: ["fseek", "_fseeki64"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_fseeki64 function", "fseeki64 function", "fseek function", "file pointers [C++], moving", "file pointers [C++]", "seek file pointers"]
 ms.assetid: f6bb1f8b-891c-426e-9e14-0e7e5c62df70
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # fseek, _fseeki64
 Moves the file pointer to a specified location.  

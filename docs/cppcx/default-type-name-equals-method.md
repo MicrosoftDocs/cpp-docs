@@ -7,17 +7,14 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::Object::Equals"
-dev_langs: 
-  - "C++"
+f1_keywords: ["VCCORLIB/Platform::Object::Equals"]
+dev_langs: ["C++"]
 ms.assetid: 4450f835-06fc-4758-8d0a-72cf00007873
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # default::(type_name)::Equals Method
 Determines whether the specified object is equal to the current object.  

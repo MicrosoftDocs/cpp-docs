@@ -4,21 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IAtlStringMgr class, using"
+dev_langs: ["C++"]
+helpviewer_keywords: ["IAtlStringMgr class, using"]
 ms.assetid: 64ab7da9-47c1-4c4a-9cd7-4cc37e7f3f57
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Implementation of a Custom String Manager (Advanced Method)
 In specialized situations, you might want to implement a custom string manager that does more than just change which heap is used to allocate memory. In this situation, you must manually implement the [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) interface as your custom string manager.  

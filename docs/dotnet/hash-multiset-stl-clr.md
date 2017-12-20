@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_multiset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "<cliext/hash_set> header [STL/CLR]"
-  - "hash_multiset class [STL/CLR]"
-  - "<hash_set> header [STL/CLR]"
+f1_keywords: ["cliext::hash_multiset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["<cliext/hash_set> header [STL/CLR]", "hash_multiset class [STL/CLR]", "<hash_set> header [STL/CLR]"]
 ms.assetid: 8462bd21-6829-4dd3-ac81-c42d6fdf92f0
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multiset (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `hash_multiset` to manage a sequence of elements as a hash table, each table entry storing a bidirectional linked list of nodes, and each node storing one element. The value of each element is used as a key, for ordering the sequence.  

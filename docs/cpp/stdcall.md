@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__stdcall_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__stdcall keyword [C++]"
+f1_keywords: ["__stdcall_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__stdcall keyword [C++]"]
 ms.assetid: e212594b-1827-4d07-9527-7d412b300df8
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # __stdcall
 **Microsoft Specific**  

@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/Fi"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Fi compiler option (C++)"
-  - "-Fi compiler option (C++)"
-  - "/Fi compiler option (C++)"
-  - "preprocessing output files, file name"
+f1_keywords: ["/Fi"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Fi compiler option (C++)", "-Fi compiler option (C++)", "/Fi compiler option (C++)", "preprocessing output files, file name"]
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Fi (Preprocess Output File Name)
 Specifies the name of the output file to which the [/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md) compiler option writes preprocessed output.  

@@ -7,21 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::MTAThreadAttribute::Equals"
-  - "VCCORLIB/Platform::MTAThreadAttribute::GetHashCode"
-  - "VCCORLIB/Platform::MTAThreadAttribute::ToString"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::MTAThreadAttribute Class"
+f1_keywords: ["VCCORLIB/Platform::MTAThreadAttribute::Equals", "VCCORLIB/Platform::MTAThreadAttribute::GetHashCode", "VCCORLIB/Platform::MTAThreadAttribute::ToString"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::MTAThreadAttribute Class"]
 ms.assetid: bfc546a7-4333-4407-85b4-4721565e1f44
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::MTAThreadAttribute Class
 Indicates that the threading model for an application is multi-threaded apartment (MTA).  

@@ -4,49 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_localtime64_s"
-  - "_localtime32_s"
-  - "localtime_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+apiname: ["_localtime64_s", "_localtime32_s", "localtime_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_localtime32_s"
-  - "localtime32_s"
-  - "localtime_s"
-  - "localtime64_s"
-  - "_localtime64_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_localtime64_s function"
-  - "localtime32_s function"
-  - "_localtime32_s function"
-  - "localtime64_s function"
-  - "time, converting values"
-  - "localtime_s function"
+f1_keywords: ["_localtime32_s", "localtime32_s", "localtime_s", "localtime64_s", "_localtime64_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_localtime64_s function", "localtime32_s function", "_localtime32_s function", "localtime64_s function", "time, converting values", "localtime_s function"]
 ms.assetid: 842d1dc7-d6f8-41d3-b340-108d4b90df54
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # localtime_s, _localtime32_s, _localtime64_s
 Converts a time value and corrects for the local time zone. These are versions of [localtime, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

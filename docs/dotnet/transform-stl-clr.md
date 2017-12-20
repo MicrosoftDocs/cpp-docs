@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::transform"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "transform function [STL/CLR]"
+f1_keywords: ["cliext::transform"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["transform function [STL/CLR]"]
 ms.assetid: 08940969-6d10-40e4-a35b-68dd801b3949
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # transform (STL/CLR)
 Applies a specified function object to each element in a source range or to a pair of elements from two source ranges and copies the return values of the function object into a destination range.  

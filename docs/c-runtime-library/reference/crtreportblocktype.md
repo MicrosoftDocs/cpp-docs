@@ -4,43 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_CrtReportBlockType"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_CrtReportBlockType"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_CrtReportBlockType"
-  - "CrtReportBlockType"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CrtReportBlockType function"
-  - "BLOCK_SUBTYPE macro"
-  - "_CrtReportBlockType function"
-  - "_BLOCK_TYPE macro"
-  - "_BLOCK_SUBTYPE macro"
-  - "BLOCK_TYPE macro"
+f1_keywords: ["_CrtReportBlockType", "CrtReportBlockType"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CrtReportBlockType function", "BLOCK_SUBTYPE macro", "_CrtReportBlockType function", "_BLOCK_TYPE macro", "_BLOCK_SUBTYPE macro", "BLOCK_TYPE macro"]
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _CrtReportBlockType
 Returns the block type/subtype associated with a given debug heap block pointer.  

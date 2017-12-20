@@ -4,31 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "link"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "files [C++], LINK"
-  - "module definition files"
-  - "resources [C++], linker files"
-  - "LINK tool [C++], input files"
-  - "module definition files, linker files"
-  - "input files [C++], LINK"
-  - "linker [C++], input files"
-  - "import libraries [C++], linker files"
-  - "command input to linker files [C++]"
+f1_keywords: ["link"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["files [C++], LINK", "module definition files", "resources [C++], linker files", "LINK tool [C++], input files", "module definition files, linker files", "input files [C++], LINK", "linker [C++], input files", "import libraries [C++], linker files", "command input to linker files [C++]"]
 ms.assetid: bb26fcc5-509a-4620-bc3e-b6c6e603a412
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # LINK Input Files
 You provide the linker with files that contain objects, import and standard libraries, resources, module definitions, and command input. LINK does not use file extensions to make assumptions about the contents of a file. Instead, LINK examines each input file to determine what kind of file it is.  

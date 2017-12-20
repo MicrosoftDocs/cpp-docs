@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSimpleMap"
-  - "ATLSIMPCOLL/ATL::CSimpleMap"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::_ArrayElementType"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::_ArrayKeyType"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::CSimpleMap"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::Add"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::FindKey"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::FindVal"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::GetKeyAt"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::GetSize"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::GetValueAt"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::Lookup"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::Remove"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::RemoveAll"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::RemoveAt"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::ReverseLookup"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::SetAt"
-  - "ATLSIMPCOLL/ATL::CSimpleMap::SetAtIndex"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSimpleMap class"
+f1_keywords: ["CSimpleMap", "ATLSIMPCOLL/ATL::CSimpleMap", "ATLSIMPCOLL/ATL::CSimpleMap::_ArrayElementType", "ATLSIMPCOLL/ATL::CSimpleMap::_ArrayKeyType", "ATLSIMPCOLL/ATL::CSimpleMap::CSimpleMap", "ATLSIMPCOLL/ATL::CSimpleMap::Add", "ATLSIMPCOLL/ATL::CSimpleMap::FindKey", "ATLSIMPCOLL/ATL::CSimpleMap::FindVal", "ATLSIMPCOLL/ATL::CSimpleMap::GetKeyAt", "ATLSIMPCOLL/ATL::CSimpleMap::GetSize", "ATLSIMPCOLL/ATL::CSimpleMap::GetValueAt", "ATLSIMPCOLL/ATL::CSimpleMap::Lookup", "ATLSIMPCOLL/ATL::CSimpleMap::Remove", "ATLSIMPCOLL/ATL::CSimpleMap::RemoveAll", "ATLSIMPCOLL/ATL::CSimpleMap::RemoveAt", "ATLSIMPCOLL/ATL::CSimpleMap::ReverseLookup", "ATLSIMPCOLL/ATL::CSimpleMap::SetAt", "ATLSIMPCOLL/ATL::CSimpleMap::SetAtIndex"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSimpleMap class"]
 ms.assetid: 61b06eb4-ae73-44b0-a305-0afb5a33e8b1
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CSimpleMap Class
 This class provides support for a simple mapping array.  

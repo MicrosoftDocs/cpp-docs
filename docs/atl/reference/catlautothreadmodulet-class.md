@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAtlAutoThreadModuleT"
-  - "ATLBASE/ATL::CAtlAutoThreadModuleT"
-  - "ATLBASE/ATL::CAtlAutoThreadModuleT::GetDefaultThreads"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlAutoThreadModuleT class"
+f1_keywords: ["CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT::GetDefaultThreads"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlAutoThreadModuleT class"]
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CAtlAutoThreadModuleT Class
 This class provides methods for implementing a thread-pooled, apartment-model COM server.  

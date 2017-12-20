@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "c.io"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "I/O [CRT], low-level"
-  - "I/O [CRT], functions"
-  - "low-level I/O routines"
-  - "file handles [C++]"
-  - "file handles [C++], I/O functions"
+f1_keywords: ["c.io"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["I/O [CRT], low-level", "I/O [CRT], functions", "low-level I/O routines", "file handles [C++]", "file handles [C++], I/O functions"]
 ms.assetid: 53e11bdd-6720-481c-8b2b-3a3a569ed534
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Low-Level I/O
 These functions invoke the operating system directly for lower-level operation than that provided by stream I/O. Low-level input and output calls do not buffer or format data.  

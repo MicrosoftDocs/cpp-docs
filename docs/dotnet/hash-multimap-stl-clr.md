@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_multimap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "hash_multimap class [STL/CLR]"
-  - "<cliext/hash_map> header [STL/CLR]"
-  - "<hash_map> header [STL/CLR]"
+f1_keywords: ["cliext::hash_multimap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["hash_multimap class [STL/CLR]", "<cliext/hash_map> header [STL/CLR]", "<hash_map> header [STL/CLR]"]
 ms.assetid: cd78687b-8a05-48e0-9d22-8b8194ae3b0b
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multimap (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `hash_multimap` to manage a sequence of elements as a hash table, each table entry storing a bidirectional linked list of nodes, and each node storing one element. An element consists of a key, for ordering the sequence, and a mapped value, which goes along for the ride.  

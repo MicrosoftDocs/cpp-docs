@@ -4,44 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "mbrtoc16"
-  - "mbrtoc32"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-convert-l1-1-0.dll"
+apiname: ["mbrtoc16", "mbrtoc32"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbrtoc16"
-  - "mbrtoc32"
-  - "uchar/mbrtoc16"
-  - "uchar/mbrtoc32"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "mbrtoc16 function"
-  - "mbrtoc32 function"
+f1_keywords: ["mbrtoc16", "mbrtoc32", "uchar/mbrtoc16", "uchar/mbrtoc32"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["mbrtoc16 function", "mbrtoc32 function"]
 ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # mbrtoc16, mbrtoc32
 Translates the first multibyte character in a narrow string into the equivalent UTF-16 or UTF-32 character.  

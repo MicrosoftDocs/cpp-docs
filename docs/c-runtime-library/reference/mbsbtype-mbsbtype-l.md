@@ -4,45 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mbsbtype_l"
-  - "_mbsbtype"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_mbsbtype_l", "_mbsbtype"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsbtype"
-  - "mbsbtype_l"
-  - "_mbsbtype_l"
-  - "_mbsbtype"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbsbtype function"
-  - "mbsbtype function"
-  - "_mbsbtype_l function"
-  - "mbsbtype_l function"
+f1_keywords: ["mbsbtype", "mbsbtype_l", "_mbsbtype_l", "_mbsbtype"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbsbtype function", "mbsbtype function", "_mbsbtype_l function", "mbsbtype_l function"]
 ms.assetid: 0d5dd91a-d32d-4f98-ac57-98dfc9e98eac
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _mbsbtype, _mbsbtype_l
 Returns the type of byte within a string.  

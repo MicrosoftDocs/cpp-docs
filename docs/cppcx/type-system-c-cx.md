@@ -12,8 +12,7 @@ caps.latest.revision: 28
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Type System (C++/CX)
 By using the Windows Runtime architecture, you can use C++/CX, Visual Basic, Visual C# and JavaScript to write apps and components that directly access the Windows API and interoperate with other Windows Runtime apps and components. Universal Windows Platform apps that are written in C++ compile to native code that executes directly in the CPU. Universal Windows Platform apps that are written in C# or Visual Basic compile to Microsoft intermediate language (MSIL) and execute in the common language runtime (CLR). Universal Windows Platform apps that are written in JavaScript execute in a run-time environment. The Windows Runtime operating system components themselves are written in C++ and run as native code. All of these components and Universal Windows Platform apps communicate directly through the Windows Runtime application binary interface (ABI).  

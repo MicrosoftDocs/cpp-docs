@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Koenig lookup"
-  - "argument-dependent lookup [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Koenig lookup", "argument-dependent lookup [C++]"]
 ms.assetid: c0928401-da2c-4658-942d-9ba4df149c35
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Argument-Dependent Name (Koenig) Lookup on Functions
 The compiler can use argument-dependent name lookup to find the definition of an unqualified function call. Argument-dependent name lookup is also called Koenig lookup. The type of every argument in a function call is defined within a hierarchy of namespaces, classes, structures, unions, or templates. When you specify an unqualified [postfix](../cpp/postfix-expressions.md) function call, the compiler searches for the function definition in the hierarchy associated with each argument type.  

@@ -4,40 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_HEAPBADPTR"
-  - "_HEAPEMPTY"
-  - "_HEAPBADBEGIN"
-  - "_HEAPOK"
-  - "_HEAPBADNODE"
-  - "_HEAPEND"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_HEAPOK constants"
-  - "_HEAPEND constants"
-  - "HEAPBADBEGIN constants"
-  - "_HEAPBADNODE constants"
-  - "HEAPBADNODE constants"
-  - "HEAPBADPTR constants"
-  - "_HEAPEMPTY constants"
-  - "HEAPEND constants"
-  - "HEAPOK constants"
-  - "HEAPEMPTY constants"
-  - "_HEAPBADBEGIN constants"
-  - "_HEAPBADPTR constants"
-  - "heap constants"
+f1_keywords: ["_HEAPBADPTR", "_HEAPEMPTY", "_HEAPBADBEGIN", "_HEAPOK", "_HEAPBADNODE", "_HEAPEND"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_HEAPOK constants", "_HEAPEND constants", "HEAPBADBEGIN constants", "_HEAPBADNODE constants", "HEAPBADNODE constants", "HEAPBADPTR constants", "_HEAPEMPTY constants", "HEAPEND constants", "HEAPOK constants", "HEAPEMPTY constants", "_HEAPBADBEGIN constants", "_HEAPBADPTR constants", "heap constants"]
 ms.assetid: 3f751bb9-2dc4-486f-b5f5-9061c96d3754
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Heap Constants
 ## Syntax  

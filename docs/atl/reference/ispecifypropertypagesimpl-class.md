@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "ISpecifyPropertyPagesImpl"
-  - "ATLCOM/ATL::ISpecifyPropertyPagesImpl"
-  - "ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "property pages, CLSIDs associated with"
-  - "ISpecifyPropertyPages"
-  - "ISpecifyPropertyPagesImpl class"
+f1_keywords: ["ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["property pages, CLSIDs associated with", "ISpecifyPropertyPages", "ISpecifyPropertyPagesImpl class"]
 ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # ISpecifyPropertyPagesImpl Class
 This class implements **IUnknown** and provides a default implementation of the [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) interface.  

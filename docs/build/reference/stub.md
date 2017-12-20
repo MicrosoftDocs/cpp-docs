@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "STUB"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "STUB .def file statement"
+f1_keywords: ["STUB"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["STUB .def file statement"]
 ms.assetid: 0a3b9643-19ed-47e9-8173-ee16bc8ed056
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # STUB
 When used in a module definition file that builds a virtual device driver (VxD), allows you to specify a file name that contains an IMAGE_DOS_HEADER structure (defined in WINNT.H) to be used in the virtual device driver (VxD), rather than the default header.  

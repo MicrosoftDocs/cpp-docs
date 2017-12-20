@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "msclr::lock"
-  - "msclr.lock"
-  - "lock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lock class"
+f1_keywords: ["msclr::lock", "msclr.lock", "lock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lock class"]
 ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock Class
 This class automates taking a lock for synchronizing access to an object from multiple threads.  When constructed it acquires the lock and when destroyed it releases the lock.  

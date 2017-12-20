@@ -4,26 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ODBC recordsets, queries"
-  - "predefined queries and recordsets"
-  - "stored procedures, and recordsets"
-  - "recordsets, predefined queries"
-  - "recordsets, stored procedures"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ODBC recordsets, queries", "predefined queries and recordsets", "stored procedures, and recordsets", "recordsets, predefined queries", "recordsets, stored procedures"]
 ms.assetid: d27c4df9-dad2-4484-ba72-92ab0c8ff928
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Declaring a Class for a Predefined Query (ODBC)
 This topic applies to the MFC ODBC classes.  

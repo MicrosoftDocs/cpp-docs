@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSimpleArray"
-  - "ATLSIMPCOLL/ATL::CSimpleArray"
-  - "ATLSIMPCOLL/ATL::CSimpleArray::CSimpleArray"
-  - "ATLSIMPCOLL/ATL::CSimpleArray::Add"
-  - "ATLSIMPCOLL/ATL::CSimpleArray::Find"
-  - "ATLSIMPCOLL/ATL::CSimpleArray::GetData"
-  - "ATLSIMPCOLL/ATL::CSimpleArray::GetSize"
-  - "ATLSIMPCOLL/ATL::CSimpleArray::Remove"
-  - "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll"
-  - "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt"
-  - "ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSimpleArray class"
+f1_keywords: ["CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::Add", "ATLSIMPCOLL/ATL::CSimpleArray::Find", "ATLSIMPCOLL/ATL::CSimpleArray::GetData", "ATLSIMPCOLL/ATL::CSimpleArray::GetSize", "ATLSIMPCOLL/ATL::CSimpleArray::Remove", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt", "ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSimpleArray class"]
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CSimpleArray Class
 This class provides methods for managing a simple array.  

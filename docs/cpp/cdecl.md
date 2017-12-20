@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__cdecl_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__cdecl keyword [C++]"
+f1_keywords: ["__cdecl_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__cdecl keyword [C++]"]
 ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # __cdecl
 **Microsoft Specific**  

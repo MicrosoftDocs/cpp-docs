@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "Win32ThreadTraits"
-  - "ATLBASE/ATL::Win32ThreadTraits"
-  - "ATLBASE/ATL::Win32ThreadTraits::CreateThread"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "threading [ATL], Windows threads"
-  - "threading [ATL], creation functions"
-  - "Win32ThreadTraits class"
+f1_keywords: ["Win32ThreadTraits", "ATLBASE/ATL::Win32ThreadTraits", "ATLBASE/ATL::Win32ThreadTraits::CreateThread"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["threading [ATL], Windows threads", "threading [ATL], creation functions", "Win32ThreadTraits class"]
 ms.assetid: 50279c38-eae1-4301-9ea6-97ccea580f3e
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Win32ThreadTraits Class
 This class provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.  

@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL.CDynamicAccessor.SetValue"
-  - "ATL::CDynamicAccessor::SetValue"
-  - "ATL::CDynamicAccessor::SetValue<ctype>"
-  - "CDynamicAccessor.SetValue"
-  - "ATL.CDynamicAccessor.SetValue<ctype>"
-  - "CDynamicAccessor::SetValue"
-  - "CDynamicAccessor::SetValue<ctype>"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetValue method"
+f1_keywords: ["ATL.CDynamicAccessor.SetValue", "ATL::CDynamicAccessor::SetValue", "ATL::CDynamicAccessor::SetValue<ctype>", "CDynamicAccessor.SetValue", "ATL.CDynamicAccessor.SetValue<ctype>", "CDynamicAccessor::SetValue", "CDynamicAccessor::SetValue<ctype>"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetValue method"]
 ms.assetid: ecc18850-96e5-4845-abe5-ab34ad467238
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::SetValue
 Stores data to a specified column.  

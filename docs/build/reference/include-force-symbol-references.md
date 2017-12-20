@@ -4,29 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/include"
-  - "VC.Project.VCLinkerTool.ForceSymbolReferences"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "INCLUDE linker option"
-  - "force symbol references linker option"
-  - "symbol references linker force"
-  - "/INCLUDE linker option"
-  - "symbols, add to symbol table"
-  - "-INCLUDE linker option"
+f1_keywords: ["/include", "VC.Project.VCLinkerTool.ForceSymbolReferences"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["INCLUDE linker option", "force symbol references linker option", "symbol references linker force", "/INCLUDE linker option", "symbols, add to symbol table", "-INCLUDE linker option"]
 ms.assetid: 4a039677-360a-480f-bd0b-448e239b449c
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /INCLUDE (Force Symbol References)
 ```  

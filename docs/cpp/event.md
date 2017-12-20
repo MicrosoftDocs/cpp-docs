@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "__event_cpp"
-  - "__event"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__event keyword [C++]"
-  - "events [C++], __event"
+f1_keywords: ["__event_cpp", "__event"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__event keyword [C++]", "events [C++], __event"]
 ms.assetid: d3019b3e-722e-48df-8536-c05878461f9e
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # __event
 Declares an event.  

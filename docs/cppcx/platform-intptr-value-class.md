@@ -7,21 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/PlatformIntPtr::IntPtr"
-  - "VCCORLIB/PlatformIntPtr::op_explicit Operator"
-  - "VCCORLIB/PlatformIntPtr::ToInt32"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::IntPtr Struct"
+f1_keywords: ["VCCORLIB/PlatformIntPtr::IntPtr", "VCCORLIB/PlatformIntPtr::op_explicit Operator", "VCCORLIB/PlatformIntPtr::ToInt32"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::IntPtr Struct"]
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::IntPtr value class
 Represents an signed pointer or handle, and whose size is platform-specific (32-bit or 64-bit).  

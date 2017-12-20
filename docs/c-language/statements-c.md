@@ -4,23 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "statements, C"
-  - "Visual C, statements"
-  - "statements"
+dev_langs: ["C++"]
+helpviewer_keywords: ["statements, C", "Visual C, statements", "statements"]
 ms.assetid: df3891cd-6195-4663-aecf-7fe7dc3ed9c3
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Statements (C)
 The statements of a C program control the flow of program execution. In C, as in other programming languages, several kinds of statements are available to perform loops, to select other statements to be executed, and to transfer control. Following a brief [overview of statement syntax](../c-language/overview-of-c-statements.md), this section describes the C statements in alphabetical order:  

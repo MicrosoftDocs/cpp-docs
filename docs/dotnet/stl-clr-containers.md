@@ -4,23 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "STL/CLR, containers"
-  - "containers, STL/CLR"
+dev_langs: ["C++"]
+helpviewer_keywords: ["STL/CLR, containers", "containers, STL/CLR"]
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # STL/CLR Containers
 The STL/CLR Library has the same containers that are found in the C++ Standard Library, but it runs within the managed environment of the .NET Framework. If you are already familiar with the C++ Standard Library, STL/CLR is the best way to continue to use the skills that you have already developed while upgrading your code to target the common language runtime (CLR).  

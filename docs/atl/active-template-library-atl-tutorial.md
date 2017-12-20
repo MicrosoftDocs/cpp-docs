@@ -4,25 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ATL projects, tutorials"
-  - "controls [ATL], tutorials"
-  - "ATL tutorial"
-  - "tutorials [ATL]"
-  - "ATL, tutorials"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ATL projects, tutorials", "controls [ATL], tutorials", "ATL tutorial", "tutorials [ATL]", "ATL, tutorials"]
 ms.assetid: f921a121-09c8-4812-9317-e15b2f1471fa
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Active Template Library (ATL) Tutorial
 ATL is designed to simplify the process of creating efficient, flexible, lightweight controls. This tutorial leads you through the creation of an ActiveX control, demonstrating many ATL and COM fundamentals.  

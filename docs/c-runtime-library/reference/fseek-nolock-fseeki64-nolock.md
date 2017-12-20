@@ -4,46 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_fseek_nolock"
-  - "_fseeki64_nolock"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_fseek_nolock", "_fseeki64_nolock"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_fseek_nolock"
-  - "_fseeki64_nolock"
-  - "fseek_nolock"
-  - "fseeki64_nolock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_fseek_nolock function"
-  - "fseeki64_nolock function"
-  - "file pointers [C++], moving"
-  - "fseek_nolock function"
-  - "_fseeki64_nolock function"
-  - "seek file pointers"
+f1_keywords: ["_fseek_nolock", "_fseeki64_nolock", "fseek_nolock", "fseeki64_nolock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_fseek_nolock function", "fseeki64_nolock function", "file pointers [C++], moving", "fseek_nolock function", "_fseeki64_nolock function", "seek file pointers"]
 ms.assetid: 2dd4022e-b715-462b-b935-837561605a02
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _fseek_nolock, _fseeki64_nolock
 Moves the file pointer to a specified location.  

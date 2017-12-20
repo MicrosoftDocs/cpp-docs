@@ -13,8 +13,7 @@ caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Static libraries (C++/CX)
 A static library that's used in a Universal Windows Platform app can contain ISO-standard C++ code, including STL types, and also calls to Win32 APIs that are not excluded from the Universal Windows Platform app platform. A static library consumes Windows Runtime components and may create Windows Runtime components with certain restrictions.  

@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/fm"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-Fm compiler option [C++]"
-  - "mapfiles [C++], creating linker"
-  - "files [C++], creating map"
-  - "Fm compiler option [C++]"
-  - "/Fm compiler option [C++]"
+f1_keywords: ["/fm"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-Fm compiler option [C++]", "mapfiles [C++], creating linker", "files [C++], creating map", "Fm compiler option [C++]", "/Fm compiler option [C++]"]
 ms.assetid: 8154448a-93a7-4546-8e4c-5c44d0aff45d
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Fm (Name Mapfile)
 Tells the linker to produce a mapfile containing a list of segments in the order in which they appear in the corresponding .exe file or DLL.  

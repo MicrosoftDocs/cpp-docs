@@ -7,24 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "AGILE/Platform::Platform"
-  - "AGILE/Platform::Platform::Agile::Agile"
-  - "AGILE/Platform::Platform::Agile::Get"
-  - "AGILE/Platform::Platform::Agile::GetAddressOf"
-  - "AGILE/Platform::Platform::Agile::GetAddressOfForInOut"
-  - "AGILE/Platform::Platform::Agile::Release"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Agile"
+f1_keywords: ["AGILE/Platform::Platform", "AGILE/Platform::Platform::Agile::Agile", "AGILE/Platform::Platform::Agile::Get", "AGILE/Platform::Platform::Agile::GetAddressOf", "AGILE/Platform::Platform::Agile::GetAddressOfForInOut", "AGILE/Platform::Platform::Agile::Release"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Agile"]
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Agile Class
 Represents an object that has a MashalingBehavior=Standard as an agile object, which greatly reduces the chances for runtime threading exceptions. The `Agile<T>` enables the non-agile object to call, or be called from, the same or a different thread. For more information, see [Threading and Marshaling](../cppcx/threading-and-marshaling-c-cx.md).  

@@ -4,29 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ODBC cursor library [ODBC], snapshots"
-  - "cursors [ODBC], static"
-  - "recordsets, snapshots"
-  - "snapshots, support in ODBC"
-  - "static cursors"
-  - "ODBC recordsets, snapshots"
-  - "cursor library [ODBC], snapshots"
-  - "snapshots"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ODBC cursor library [ODBC], snapshots", "cursors [ODBC], static", "recordsets, snapshots", "snapshots, support in ODBC", "static cursors", "ODBC recordsets, snapshots", "cursor library [ODBC], snapshots", "snapshots"]
 ms.assetid: b5293a52-0657-43e9-bd71-fe3785b21c7e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Snapshot
 A snapshot is a recordset that reflects a static view of the data as it existed at the time the snapshot was created. When you open the snapshot and move to all the records, the set of records it contains and their values do not change until you rebuild the snapshot by calling **Requery**.  

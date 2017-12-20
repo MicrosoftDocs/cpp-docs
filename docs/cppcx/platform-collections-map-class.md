@@ -7,27 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "COLLECTION/Platform::Collections::Map::Map"
-  - "COLLECTION/Platform::Collections::Map::Clear"
-  - "COLLECTION/Platform::Collections::Map::First"
-  - "COLLECTION/Platform::Collections::Map::GetView"
-  - "COLLECTION/Platform::Collections::Map::HasKey"
-  - "COLLECTION/Platform::Collections::Map::Insert"
-  - "COLLECTION/Platform::Collections::Map::Lookup"
-  - "COLLECTION/Platform::Collections::Map::Remove"
-  - "COLLECTION/Platform::Collections::Map::Size"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Map Class (C++/Cx)"
+f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform::Collections::Map::Clear", "COLLECTION/Platform::Collections::Map::First", "COLLECTION/Platform::Collections::Map::GetView", "COLLECTION/Platform::Collections::Map::HasKey", "COLLECTION/Platform::Collections::Map::Insert", "COLLECTION/Platform::Collections::Map::Lookup", "COLLECTION/Platform::Collections::Map::Remove", "COLLECTION/Platform::Collections::Map::Size"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Map Class (C++/Cx)"]
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
 caps.latest.revision: 19
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Map Class
 Represents a *map*, which is a collection of key-value pairs.  

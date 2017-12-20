@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "_penter"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/Gh compiler option [C++]"
-  - "Gh compiler option [C++]"
-  - "_penter function"
-  - "-Gh compiler option [C++]"
+f1_keywords: ["_penter"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/Gh compiler option [C++]", "Gh compiler option [C++]", "_penter function", "-Gh compiler option [C++]"]
 ms.assetid: 1510a082-8a0e-486e-a309-6add814b494f
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Gh (Enable _penter Hook Function)
 Causes a call to the `_penter` function at the start of every method or function.  

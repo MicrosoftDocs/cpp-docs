@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "GetColumnInfo"
-  - "ATL.CDynamicAccessor.GetColumnInfo"
-  - "ATL::CDynamicAccessor::GetColumnInfo"
-  - "CDynamicAccessor.GetColumnInfo"
-  - "CDynamicAccessor::GetColumnInfo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetColumnInfo method"
+f1_keywords: ["GetColumnInfo", "ATL.CDynamicAccessor.GetColumnInfo", "ATL::CDynamicAccessor::GetColumnInfo", "CDynamicAccessor.GetColumnInfo", "CDynamicAccessor::GetColumnInfo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetColumnInfo method"]
 ms.assetid: 7f2102ea-b7cc-4714-812f-3ca2857f4b9a
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetColumnInfo
 Returns the column metadata needed by most consumers.  

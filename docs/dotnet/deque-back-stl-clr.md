@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::deque::back"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "back member [STL/CLR]"
+f1_keywords: ["cliext::deque::back"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["back member [STL/CLR]"]
 ms.assetid: 5608cdda-212d-42f6-866b-b04aec04ef8e
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # deque::back (STL/CLR)
 Accesses the last element.  

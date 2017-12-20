@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL::CEnumeratorAccessor"
-  - "CEnumeratorAccessor"
-  - "ATL.CEnumeratorAccessor"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CEnumeratorAccessor class"
+f1_keywords: ["ATL::CEnumeratorAccessor", "CEnumeratorAccessor", "ATL.CEnumeratorAccessor"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CEnumeratorAccessor class"]
 ms.assetid: 21e8e7ea-3511-4afe-b33f-d520f4ff82bb
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumeratorAccessor Class
 Used by [CEnumerator](../../data/oledb/cenumerator-class.md) to access the data from the enumerator rowset.  

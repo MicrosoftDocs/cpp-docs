@@ -4,26 +4,17 @@ ms.custom: ""
 ms.date: "12/06/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "special member functions [C++]"
-  - "constructors [C++]"
-  - "destructors [C++]"
-  - "copy operators [C++]"
-  - "move operators [C++]"
-  - "assignment operators [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["special member functions [C++]", "constructors [C++]", "destructors [C++]", "copy operators [C++]", "move operators [C++]", "assignment operators [C++]"]
 ms.assetid: 017d6817-b012-44f0-b153-f3076c251ea7
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Special member functions  
   

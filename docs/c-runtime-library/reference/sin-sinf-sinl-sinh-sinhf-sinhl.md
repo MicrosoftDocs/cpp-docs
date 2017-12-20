@@ -4,59 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "sinl"
-  - "sinf"
-  - "sinhf"
-  - "sinh"
-  - "sin"
-  - "sinhl"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-math-l1-1-0.dll"
+apiname: ["sinl", "sinf", "sinhf", "sinh", "sin", "sinhl"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_sinl"
-  - "sinf"
-  - "sinhl"
-  - "sinl"
-  - "sin"
-  - "sinhf"
-  - "_sinhl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sinh function"
-  - "_sinl function"
-  - "_sinhl function"
-  - "sinhf function"
-  - "sinl function"
-  - "calculating sines"
-  - "sin function"
-  - "trigonometric functions"
-  - "sinf function"
-  - "sinhl function"
-  - "hyperbolic functions"
+f1_keywords: ["_sinl", "sinf", "sinhl", "sinl", "sin", "sinhf", "_sinhl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["sinh function", "_sinl function", "_sinhl function", "sinhf function", "sinl function", "calculating sines", "sin function", "trigonometric functions", "sinf function", "sinhl function", "hyperbolic functions"]
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # sin, sinf, sinl, sinh, sinhf, sinhl
 Calculates sines and hyperbolic sines.  

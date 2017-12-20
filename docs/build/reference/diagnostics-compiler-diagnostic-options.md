@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/11/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/diagnostics"
-  - "VC.Project.VCCLCompilerTool.DiagnosticsFormat"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/diagnostics compiler diagnostic options [C++]"
-  - "-diagnostics compiler diagnostic options [C++]"
-  - "diagnostics compiler diagnostic options [C++]"
+f1_keywords: ["/diagnostics", "VC.Project.VCCLCompilerTool.DiagnosticsFormat"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/diagnostics compiler diagnostic options [C++]", "-diagnostics compiler diagnostic options [C++]", "diagnostics compiler diagnostic options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /diagnostics (Compiler diagnostic options)  
   

@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "-Zo"
-  - "/Zo"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Zo compiler option [C++]"
-  - "/Zo compiler option [C++]"
-  - "-Zo compiler option [C++]"
+f1_keywords: ["-Zo", "/Zo"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Zo compiler option [C++]", "/Zo compiler option [C++]", "-Zo compiler option [C++]"]
 ms.assetid: eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Zo (Enhance Optimized Debugging)
 Generate enhanced debugging information for optimized code in non-debug builds.  

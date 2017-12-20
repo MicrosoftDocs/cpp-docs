@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.ForcedUsingFiles"
-  - "/FU"
-  - "VC.Project.VCNMakeTool.ForcedUsingAssemblies"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-FU compiler option [C++]"
-  - "FU compiler option [C++]"
-  - "/FU compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.ForcedUsingFiles", "/FU", "VC.Project.VCNMakeTool.ForcedUsingAssemblies"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-FU compiler option [C++]", "FU compiler option [C++]", "/FU compiler option [C++]"]
 ms.assetid: 698f8603-457f-435a-baff-5ac9243d6ca1
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /FU (Name Forced #using File)
 A compiler option that you can use as an alternative to passing a file name to [#using Directive](../../preprocessor/hash-using-directive-cpp.md) in source code.  

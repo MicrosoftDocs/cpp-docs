@@ -4,27 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "recordsets, selecting records"
-  - "record selection, ODBC recordsets"
-  - "SQL statements, recordset"
-  - "records, selecting"
-  - "recordsets, constructing SQL statements"
-  - "ODBC recordsets, selecting records"
+dev_langs: ["C++"]
+helpviewer_keywords: ["recordsets, selecting records", "record selection, ODBC recordsets", "SQL statements, recordset", "records, selecting", "recordsets, constructing SQL statements", "ODBC recordsets, selecting records"]
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: How Recordsets Select Records (ODBC)
 This topic applies to the MFC ODBC classes.  

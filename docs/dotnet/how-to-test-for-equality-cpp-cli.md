@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "equality, testing for"
+dev_langs: ["C++"]
+helpviewer_keywords: ["equality, testing for"]
 ms.assetid: 9115e298-9f75-452d-bdfb-6eeb0fa0b3c6
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Test for Equality (C++/CLI)
 In the following sample, a test for equality that uses Managed Extensions for C++ is based on what the handles refer to.  

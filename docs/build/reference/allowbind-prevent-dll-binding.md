@@ -4,29 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.PreventDLLBinding"
-  - "/allowbind"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/ALLOWBIND linker option"
-  - "binding DLLs"
-  - "preventing DLL binding"
-  - "ALLOWBIND linker option"
-  - "-ALLOWBIND linker option"
-  - "DLLs [C++], preventing binding"
+f1_keywords: ["VC.Project.VCLinkerTool.PreventDLLBinding", "/allowbind"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/ALLOWBIND linker option", "binding DLLs", "preventing DLL binding", "ALLOWBIND linker option", "-ALLOWBIND linker option", "DLLs [C++], preventing binding"]
 ms.assetid: 30e37e24-12e4-407e-988a-39d357403598
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /ALLOWBIND (Prevent DLL Binding)
 ```  

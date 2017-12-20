@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::hash_map::key_comp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "key_comp member [STL/CLR]"
+f1_keywords: ["cliext::hash_map::key_comp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["key_comp member [STL/CLR]"]
 ms.assetid: 08bd31cc-3a7c-49a3-ac48-089262b3bd44
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_map::key_comp (STL/CLR)
 Copies the ordering delegate for two keys.  

@@ -7,24 +7,15 @@ ms.reviewer: ""
 s.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::WriteOnlyArray::begin"
-  - "VCCORLIB/Platform::WriteOnlyArray::Data"
-  - "VCCORLIB/Platform::WriteOnlyArray::end"
-  - "VCCORLIB/Platform::WriteOnlyArray::FastPass"
-  - "VCCORLIB/Platform::WriteOnlyArray::Length"
-  - "VCCORLIB/Platform::WriteOnlyArray::set"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::WriteOnlyArray Class"
+f1_keywords: ["VCCORLIB/Platform::WriteOnlyArray::begin", "VCCORLIB/Platform::WriteOnlyArray::Data", "VCCORLIB/Platform::WriteOnlyArray::end", "VCCORLIB/Platform::WriteOnlyArray::FastPass", "VCCORLIB/Platform::WriteOnlyArray::Length", "VCCORLIB/Platform::WriteOnlyArray::set"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::WriteOnlyArray Class"]
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
 caps.latest.revision: 11
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::WriteOnlyArray Class
 Represents a one-dimensional array that's used as an input parameter when the caller passes an array for the method to fill.  

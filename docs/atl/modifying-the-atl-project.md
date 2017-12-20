@@ -4,23 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "controls [ATL], adding to composite controls"
-  - "Dialog editor, working with composite controls"
-  - "composite controls, adding controls"
+dev_langs: ["C++"]
+helpviewer_keywords: ["controls [ATL], adding to composite controls", "Dialog editor, working with composite controls", "composite controls, adding controls"]
 ms.assetid: 59984518-748f-4b8b-875f-3e97d22d0b0f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Modifying the ATL Project
 At this point, your composite control project implements the necessary objects for your composite control. The next step is to add any controls that the composite control will contain and handle any necessary events.  

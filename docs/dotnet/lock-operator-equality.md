@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "lock::operator=="
-  - "msclr.lock.operator=="
-  - "msclr::lock::operator=="
-  - "lock.operator=="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lock::operator=="
+f1_keywords: ["lock::operator==", "msclr.lock.operator==", "msclr::lock::operator==", "lock.operator=="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lock::operator=="]
 ms.assetid: 3dcf1e5a-53fc-495d-9df5-d7849a41c36c
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock::operator==
 Equality operator.  

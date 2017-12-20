@@ -7,24 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "COLLECTION/Platform::Collections::VectorView::VectorView"
-  - "COLLECTION/Platform::Collections::VectorView::First"
-  - "COLLECTION/Platform::Collections::VectorView::GetAt"
-  - "COLLECTION/Platform::Collections::VectorView::GetMany"
-  - "COLLECTION/Platform::Collections::VectorView::IndexOf"
-  - "COLLECTION/Platform::Collections::VectorView::Size"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "VectorView Class"
+f1_keywords: ["COLLECTION/Platform::Collections::VectorView::VectorView", "COLLECTION/Platform::Collections::VectorView::First", "COLLECTION/Platform::Collections::VectorView::GetAt", "COLLECTION/Platform::Collections::VectorView::GetMany", "COLLECTION/Platform::Collections::VectorView::IndexOf", "COLLECTION/Platform::Collections::VectorView::Size"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["VectorView Class"]
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
 caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorView Class
 Represents a read-only view of a sequential collection of objects that can be individually accessed by index. The type of each object in the collection is specified by the template parameter.  

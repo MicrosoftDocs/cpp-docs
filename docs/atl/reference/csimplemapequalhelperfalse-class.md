@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CSimpleMapEqualHelperFalse"
-  - "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse"
-  - "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualKey"
-  - "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualValue"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CSimpleMapEqualHelperFalse class"
+f1_keywords: ["CSimpleMapEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualKey", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualValue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CSimpleMapEqualHelperFalse class"]
 ms.assetid: a873eea3-e130-45cc-a476-61ee79511c3b
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CSimpleMapEqualHelperFalse Class
 This class is a helper for the [CSimpleMap](../../atl/reference/csimplemap-class.md) class.  

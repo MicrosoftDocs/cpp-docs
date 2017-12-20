@@ -4,23 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ml64"
-  - "ml64.exe"
-  - "masm for x64"
+dev_langs: ["C++"]
+helpviewer_keywords: ["ml64", "ml64.exe", "masm for x64"]
 ms.assetid: 89059103-f372-4968-80ea-0c7f90bb9c91
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # MASM for x64 (ml64.exe)
 

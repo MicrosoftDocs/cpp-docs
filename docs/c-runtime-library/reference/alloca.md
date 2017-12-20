@@ -4,40 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_alloca"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_alloca"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_alloca"
-  - "alloca"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "memory allocation, stack"
-  - "alloca function"
-  - "_alloca function"
+f1_keywords: ["_alloca", "alloca"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["memory allocation, stack", "alloca function", "_alloca function"]
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _alloca
 Allocates memory on the stack. This function is deprecated because a more secure version is available; see [_malloca](../../c-runtime-library/reference/malloca.md).  

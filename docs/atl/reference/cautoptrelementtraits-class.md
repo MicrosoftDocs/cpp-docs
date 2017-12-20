@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAutoPtrElementTraits"
-  - "ATLCOLL/ATL::CAutoPtrElementTraits"
-  - "ATLCOLL/ATL::CAutoPtrElementTraits::INARGTYPE"
-  - "ATLCOLL/ATL::CAutoPtrElementTraits::OUTARGTYPE"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAutoPtrElementTraits class"
+f1_keywords: ["CAutoPtrElementTraits", "ATLCOLL/ATL::CAutoPtrElementTraits", "ATLCOLL/ATL::CAutoPtrElementTraits::INARGTYPE", "ATLCOLL/ATL::CAutoPtrElementTraits::OUTARGTYPE"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAutoPtrElementTraits class"]
 ms.assetid: 777c1b14-6ab7-491f-b9a5-be149e71d4a2
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CAutoPtrElementTraits Class
 This class provides methods, static functions, and typedefs useful when creating collections of smart pointers.  

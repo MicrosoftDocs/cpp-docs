@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multimap::difference_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "difference_type member [STL/CLR]"
+f1_keywords: ["cliext::multimap::difference_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["difference_type member [STL/CLR]"]
 ms.assetid: 4175df3b-a079-4da2-8389-51e0282b836c
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::difference_type (STL/CLR)
 The types of a signed distance between two elements.  

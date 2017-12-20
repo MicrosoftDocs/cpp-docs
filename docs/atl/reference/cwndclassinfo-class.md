@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CWndClassInfo"
-  - "ATLWIN/ATL::CWndClassInfo"
-  - "ATLWIN/ATL::Register"
-  - "ATLWIN/ATL::m_atom"
-  - "ATLWIN/ATL::m_bSystemCursor"
-  - "ATLWIN/ATL::m_lpszCursorID"
-  - "ATLWIN/ATL::m_lpszOrigName"
-  - "ATLWIN/ATL::m_szAutoName"
-  - "ATLWIN/ATL::m_wc"
-  - "ATLWIN/ATL::pWndProc"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CWndClassInfo class"
+f1_keywords: ["CWndClassInfo", "ATLWIN/ATL::CWndClassInfo", "ATLWIN/ATL::Register", "ATLWIN/ATL::m_atom", "ATLWIN/ATL::m_bSystemCursor", "ATLWIN/ATL::m_lpszCursorID", "ATLWIN/ATL::m_lpszOrigName", "ATLWIN/ATL::m_szAutoName", "ATLWIN/ATL::m_wc", "ATLWIN/ATL::pWndProc"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CWndClassInfo class"]
 ms.assetid: c36fe7e1-75f1-4cf5-a06f-9f59c43fe6fb
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CWndClassInfo Class
 This class provides methods for registering information for a window class.  

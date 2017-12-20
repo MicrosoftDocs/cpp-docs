@@ -4,43 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp"
-  - "devlang-cpp"
+ms.technology: ["cpp", "devlang-cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "is_wctype"
-  - "_loaddll"
-  - "_unloaddll"
-  - "_getdllprocaddr"
-  - "_seterrormode"
-  - "_beep"
-  - "_sleep"
-  - "_getsystime"
-  - "corecrt_wctype/is_wctype"
-  - "process/_loaddll"
-  - "process/_unloaddll"
-  - "process/_getdllprocaddr"
-  - "stdlib/_seterrormode"
-  - "stdlib/_beep"
-  - "stdlib/_sleep"
-  - "time/_getsystime"
-  - "time/_setsystime"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "obsolete functions"
-  - "_beep function"
-  - "_sleep function"
-  - "_seterrormode function"
+f1_keywords: ["is_wctype", "_loaddll", "_unloaddll", "_getdllprocaddr", "_seterrormode", "_beep", "_sleep", "_getsystime", "corecrt_wctype/is_wctype", "process/_loaddll", "process/_unloaddll", "process/_getdllprocaddr", "stdlib/_seterrormode", "stdlib/_beep", "stdlib/_sleep", "time/_getsystime", "time/_setsystime"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["obsolete functions", "_beep function", "_sleep function", "_seterrormode function"]
 ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Obsolete Functions
 Certain library functions are obsolete and have more recent equivalents. We recommend you change these to the updated versions. Other obsolete functions have been removed from the CRT. This topic lists the functions deprecated as obsolete, and the functions removed in a particular version of Visual Studio.  

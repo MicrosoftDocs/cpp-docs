@@ -6,10 +6,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2397"
-dev_langs: 
-  - "C++"
+f1_keywords: ["C2397"]
+dev_langs: ["C++"]
 ms.assetid: b418cf5a-d50d-4a6c-98a7-994ae35046d1
 caps.latest.revision: 5
 author: "corob-msft"

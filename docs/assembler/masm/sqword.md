@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "SQWORD"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SQWORD directive"
+f1_keywords: ["SQWORD"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SQWORD directive"]
 ms.assetid: 329245f1-af34-4540-a912-73e9045c47fa
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # SQWORD
 Allocates and optionally initializes 8 signed bytes of storage for each `initializer`. Also can be used as a type specifier anywhere a type is legal.  

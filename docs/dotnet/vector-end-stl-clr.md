@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::end"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "end member [STL/CLR]"
+f1_keywords: ["cliext::vector::end"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["end member [STL/CLR]"]
 ms.assetid: 21fcaf1b-7f14-4dc4-a312-fa30e631ea0d
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::end (STL/CLR)
 Designates the end of the controlled sequence.  

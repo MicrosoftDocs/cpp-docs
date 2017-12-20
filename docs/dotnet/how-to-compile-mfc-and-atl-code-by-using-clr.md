@@ -4,30 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MFC [C++], interoperability"
-  - "ATL [C++], interoperability"
-  - "mixed assemblies [C++], MFC code"
-  - "mixed assemblies [C++], ATL code"
-  - "/clr compiler option [C++], compiling ATL and MFC code"
-  - "interoperability [C++], /clr compiler option"
-  - "regular MFC DLLs [C++], /clr compiler option"
-  - "interop [C++], /clr compiler option"
-  - "extension DLLs [C++], /clr compiler option"
+dev_langs: ["C++"]
+helpviewer_keywords: ["MFC [C++], interoperability", "ATL [C++], interoperability", "mixed assemblies [C++], MFC code", "mixed assemblies [C++], ATL code", "/clr compiler option [C++], compiling ATL and MFC code", "interoperability [C++], /clr compiler option", "regular MFC DLLs [C++], /clr compiler option", "interop [C++], /clr compiler option", "extension DLLs [C++], /clr compiler option"]
 ms.assetid: 12464bec-33a4-482c-880a-c078de7f6ea5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Compile MFC and ATL Code By Using /clr
 This topic discusses how to compile existing MFC and ATL programs to target the Common Language Runtime.  

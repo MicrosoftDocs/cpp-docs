@@ -4,28 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "record editing [C++], using RFX"
-  - "RFX (ODBC) [C++], updating data in recordsets"
-  - "scrolling [C++]"
-  - "ODBC [C++], RFX"
-  - "data binding [C++], DFX"
-  - "scrolling [C++], RFX"
-  - "RFX (ODBC) [C++], binding fields and parameters"
+dev_langs: ["C++"]
+helpviewer_keywords: ["record editing [C++], using RFX", "RFX (ODBC) [C++], updating data in recordsets", "scrolling [C++]", "ODBC [C++], RFX", "data binding [C++], DFX", "scrolling [C++], RFX", "RFX (ODBC) [C++], binding fields and parameters"]
 ms.assetid: e647cacd-62b0-4b80-9e20-b392deca5a88
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: How RFX Works
 This topic explains the RFX process. This is an advanced topic covering:  

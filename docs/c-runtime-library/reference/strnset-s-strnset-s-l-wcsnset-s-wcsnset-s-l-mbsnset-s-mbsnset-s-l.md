@@ -4,71 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mbsnset_s_l"
-  - "_strnset_s"
-  - "_mbsnset_s"
-  - "_strnset_s_l"
-  - "_wcsnset_s_l"
-  - "_wcsnset_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["_mbsnset_s_l", "_strnset_s", "_mbsnset_s", "_strnset_s_l", "_wcsnset_s_l", "_wcsnset_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_mbsnset_s_l"
-  - "wcsnset_s"
-  - "_tcsnset_s_l"
-  - "_wcsnset_s"
-  - "_mbsnset_s"
-  - "_wcsnset_s_l"
-  - "_strnset_s_l"
-  - "strnset_s_l"
-  - "_tcsnset_s"
-  - "_strnset_s"
-  - "strnset_s"
-  - "mbsnset_s_l"
-  - "mbsnset_s"
-  - "wcsnset_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tcsnset_s function"
-  - "mbsnset_s_l function"
-  - "initializing characters"
-  - "wcsnset_s function"
-  - "mbsnset_s function"
-  - "_tcsnset_s_l function"
-  - "_strnset_s_l function"
-  - "_mbsnset_s function"
-  - "strnset_s_l function"
-  - "_tcsnset_s function"
-  - "_strnset_s function"
-  - "tcsnset_s_l function"
-  - "_mbsnset_s_l function"
-  - "strnset_s function"
-  - "_wcsnset_s function"
+f1_keywords: ["_mbsnset_s_l", "wcsnset_s", "_tcsnset_s_l", "_wcsnset_s", "_mbsnset_s", "_wcsnset_s_l", "_strnset_s_l", "strnset_s_l", "_tcsnset_s", "_strnset_s", "strnset_s", "mbsnset_s_l", "mbsnset_s", "wcsnset_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tcsnset_s function", "mbsnset_s_l function", "initializing characters", "wcsnset_s function", "mbsnset_s function", "_tcsnset_s_l function", "_strnset_s_l function", "_mbsnset_s function", "strnset_s_l function", "_tcsnset_s function", "_strnset_s function", "tcsnset_s_l function", "_mbsnset_s_l function", "strnset_s function", "_wcsnset_s function"]
 ms.assetid: 9cf1b321-b5cb-4469-b285-4c07cfbd8813
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 Initializes characters of a string to a given character. These versions of [_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l](../../c-runtime-library/reference/strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

@@ -4,27 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "= operator [C++], copying objects"
-  - "assignment statements [C++], copying objects"
-  - "assignment operators [C++], for copying objects"
-  - "objects [C++], copying"
-  - "initializing objects, by copying objects"
-  - "copying objects"
-  - "assigning values to copy objects"
+dev_langs: ["C++"]
+helpviewer_keywords: ["= operator [C++], copying objects", "assignment statements [C++], copying objects", "assignment operators [C++], for copying objects", "objects [C++], copying", "initializing objects, by copying objects", "copying objects", "assigning values to copy objects"]
 ms.assetid: a94fe1f9-0289-4fb9-8633-77c654002c0d
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Copy Constructors and Copy Assignment Operators (C++)
 > [!NOTE]

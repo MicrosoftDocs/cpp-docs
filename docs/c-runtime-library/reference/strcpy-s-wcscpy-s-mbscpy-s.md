@@ -4,50 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "wcscpy_s"
-  - "_mbscpy_s"
-  - "strcpy_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["wcscpy_s", "_mbscpy_s", "strcpy_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "strcpy_s"
-  - "_mbscpy_s"
-  - "_tcscpy_s"
-  - "wcscpy_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "strcpy_s function"
-  - "_tcscpy_s function"
-  - "_mbscpy_s function"
-  - "copying strings"
-  - "strings [C++], copying"
-  - "tcscpy_s function"
-  - "wcscpy_s function"
+f1_keywords: ["strcpy_s", "_mbscpy_s", "_tcscpy_s", "wcscpy_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["strcpy_s function", "_tcscpy_s function", "_mbscpy_s function", "copying strings", "strings [C++], copying", "tcscpy_s function", "wcscpy_s function"]
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
 caps.latest.revision: 41
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # strcpy_s, wcscpy_s, _mbscpy_s
 Copies a string. These versions of [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

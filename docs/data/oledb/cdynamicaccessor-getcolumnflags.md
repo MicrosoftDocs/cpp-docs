@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CDynamicAccessor.GetColumnFlags"
-  - "ATL::CDynamicAccessor::GetColumnFlags"
-  - "ATL.CDynamicAccessor.GetColumnFlags"
-  - "CDynamicAccessor::GetColumnFlags"
-  - "GetColumnFlags"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetColumnFlags method"
+f1_keywords: ["CDynamicAccessor.GetColumnFlags", "ATL::CDynamicAccessor::GetColumnFlags", "ATL.CDynamicAccessor.GetColumnFlags", "CDynamicAccessor::GetColumnFlags", "GetColumnFlags"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetColumnFlags method"]
 ms.assetid: b2ba2f3a-2c61-4a49-abfb-75823908ccf4
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor::GetColumnFlags
 Retrieves the column characteristics.  

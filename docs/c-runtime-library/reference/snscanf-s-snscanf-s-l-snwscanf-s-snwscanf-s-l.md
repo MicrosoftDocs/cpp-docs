@@ -4,65 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_snwscanf_s_l"
-  - "_snwscanf_s"
-  - "_snscanf_s"
-  - "_snscanf_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_snwscanf_s_l", "_snwscanf_s", "_snscanf_s", "_snscanf_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_sntscanf_s"
-  - "snscanf_s"
-  - "_snwscanf_s_l"
-  - "sntscanf_s_l"
-  - "snwscanf_s_l"
-  - "snwscanf_s"
-  - "_snscanf_s"
-  - "_snwscanf_s"
-  - "snscanf_s_l"
-  - "_sntscanf_s_l"
-  - "_snscanf_s_l"
-  - "sntscanf_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_snscanf_s_l function"
-  - "snwscanf_s function"
-  - "_snwscanf_s function"
-  - "sntscanf_s_l function"
-  - "sntscanf_s function"
-  - "_snwscanf_s_l function"
-  - "_snscanf_s function"
-  - "snscanf_s_l function"
-  - "strings [C++], reading data from"
-  - "_sntscanf_s_l function"
-  - "reading data, strings"
-  - "snscanf_s function"
-  - "strings [C++], reading"
-  - "_sntscanf_s function"
-  - "snwscanf_s_l function"
+f1_keywords: ["_sntscanf_s", "snscanf_s", "_snwscanf_s_l", "sntscanf_s_l", "snwscanf_s_l", "snwscanf_s", "_snscanf_s", "_snwscanf_s", "snscanf_s_l", "_sntscanf_s_l", "_snscanf_s_l", "sntscanf_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_snscanf_s_l function", "snwscanf_s function", "_snwscanf_s function", "sntscanf_s_l function", "sntscanf_s function", "_snwscanf_s_l function", "_snscanf_s function", "snscanf_s_l function", "strings [C++], reading data from", "_sntscanf_s_l function", "reading data, strings", "snscanf_s function", "strings [C++], reading", "_sntscanf_s function", "snwscanf_s_l function"]
 ms.assetid: 72356653-7362-461a-af73-597b9c0a8094
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
 Reads formatted data of a specified length from a string. These are versions of [_snscanf, _snscanf_l, _snwscanf, _snwscanf_l](../../c-runtime-library/reference/snscanf-snscanf-l-snwscanf-snwscanf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

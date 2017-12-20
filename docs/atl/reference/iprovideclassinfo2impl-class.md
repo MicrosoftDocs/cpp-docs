@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IProvideClassInfo2Impl"
-  - "ATLCOM/ATL::IProvideClassInfo2Impl"
-  - "ATLCOM/ATL::IProvideClassInfo2Impl::IProvideClassInfo2Impl"
-  - "ATLCOM/ATL::IProvideClassInfo2Impl::GetClassInfo"
-  - "ATLCOM/ATL::IProvideClassInfo2Impl::GetGUID"
-  - "ATLCOM/ATL::IProvideClassInfo2Impl::_tih"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IProvideClassInfo2Impl class"
-  - "IProvideClassInfo2 ATL implementation"
-  - "class information, ATL"
+f1_keywords: ["IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::GetClassInfo", "ATLCOM/ATL::IProvideClassInfo2Impl::GetGUID", "ATLCOM/ATL::IProvideClassInfo2Impl::_tih"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["IProvideClassInfo2Impl class", "IProvideClassInfo2 ATL implementation", "class information, ATL"]
 ms.assetid: d74956e8-9c69-4cba-b99d-ca1ac031bb9d
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # IProvideClassInfo2Impl Class
 This class provides a default implementation of the [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) and [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) methods.  

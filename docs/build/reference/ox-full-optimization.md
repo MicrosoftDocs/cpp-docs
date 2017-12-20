@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "09/25/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.ToolOptimization"
-  - "/ox"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Ox compiler option [C++]"
-  - "fast code [C++]"
-  - "/Ox compiler option [C++]"
-  - "-Ox compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.ToolOptimization", "/ox"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Ox compiler option [C++]", "fast code [C++]", "/Ox compiler option [C++]", "-Ox compiler option [C++]"]
 ms.assetid: 3ad7c30b-c615-428c-b1d0-2e024f81c760
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Ox (Enable Most Speed Optimizations)
 

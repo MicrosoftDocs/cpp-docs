@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IQuickActivateImpl"
-  - "ATLCTL/ATL::IQuickActivateImpl"
-  - "ATLCTL/ATL::IQuickActivateImpl::GetContentExtent"
-  - "ATLCTL/ATL::IQuickActivateImpl::QuickActivate"
-  - "ATLCTL/ATL::IQuickActivateImpl::SetContentExtent"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "activating ATL controls"
-  - "controls [ATL], activating"
-  - "IQuickActivateImpl class"
-  - "IQuickActivate ATL implementation"
+f1_keywords: ["IQuickActivateImpl", "ATLCTL/ATL::IQuickActivateImpl", "ATLCTL/ATL::IQuickActivateImpl::GetContentExtent", "ATLCTL/ATL::IQuickActivateImpl::QuickActivate", "ATLCTL/ATL::IQuickActivateImpl::SetContentExtent"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["activating ATL controls", "controls [ATL], activating", "IQuickActivateImpl class", "IQuickActivate ATL implementation"]
 ms.assetid: aa80c056-1041-494e-b21d-2acca7dc27ea
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # IQuickActivateImpl Class
 This class combines containers' control initialization into a single call.  

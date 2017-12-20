@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.HeapCommitSize"
-  - "/heap"
-  - "VC.Project.VCLinkerTool.HeapReserveSize"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "-HEAP linker option"
-  - "heap allocation, setting heap size"
-  - "/HEAP linker option"
-  - "HEAP linker option"
+f1_keywords: ["VC.Project.VCLinkerTool.HeapCommitSize", "/heap", "VC.Project.VCLinkerTool.HeapReserveSize"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["-HEAP linker option", "heap allocation, setting heap size", "/HEAP linker option", "HEAP linker option"]
 ms.assetid: a3f71927-7f1d-492c-9fdb-dfccb1a043da
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /HEAP (Set Heap Size)
 ```  

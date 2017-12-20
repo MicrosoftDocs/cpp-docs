@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "sorting data, recordset data"
-  - "ODBC recordsets, sorting"
-  - "recordsets, sorting"
+dev_langs: ["C++"]
+helpviewer_keywords: ["sorting data, recordset data", "ODBC recordsets, sorting", "recordsets, sorting"]
 ms.assetid: b40b152e-0a91-452e-be7b-e5bc27f744c7
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Sorting Records (ODBC)
 This topic applies to the MFC ODBC classes.  

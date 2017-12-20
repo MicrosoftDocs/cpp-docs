@@ -4,52 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_fprintf_s_l"
-  - "fwprintf_s"
-  - "fprintf_s"
-  - "_fwprintf_s_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_fprintf_s_l", "fwprintf_s", "fprintf_s", "_fwprintf_s_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ftprintf_s"
-  - "fprintf_s"
-  - "fwprintf_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ftprintf_s_l function"
-  - "ftprintf_s function"
-  - "_fprintf_s_l function"
-  - "_ftprintf_s function"
-  - "_ftprintf_s_l function"
-  - "fwprintf_s_l function"
-  - "fwprintf_s function"
-  - "fprintf_s_l function"
-  - "fprintf_s function"
-  - "_fwprintf_s_l function"
-  - "print formatted data to streams"
+f1_keywords: ["_ftprintf_s", "fprintf_s", "fwprintf_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ftprintf_s_l function", "ftprintf_s function", "_fprintf_s_l function", "_ftprintf_s function", "_ftprintf_s_l function", "fwprintf_s_l function", "fwprintf_s function", "fprintf_s_l function", "fprintf_s function", "_fwprintf_s_l function", "print formatted data to streams"]
 ms.assetid: 16067c3c-69ce-472a-8272-9aadf1f5beed
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
 Print formatted data to a stream. These are versions of [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

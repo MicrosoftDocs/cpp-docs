@@ -4,48 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_lrotl"
-  - "_lrotr"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-utility-l1-1-0.dll"
+apiname: ["_lrotl", "_lrotr"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "lrotr"
-  - "lrotl"
-  - "_lrotr"
-  - "_lrotl"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lrotl function"
-  - "bits"
-  - "_lrotr function"
-  - "lrotr function"
-  - "rotating bits"
-  - "_lrotl function"
-  - "bits, rotating"
+f1_keywords: ["lrotr", "lrotl", "_lrotr", "_lrotl"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lrotl function", "bits", "_lrotr function", "lrotr function", "rotating bits", "_lrotl function", "bits, rotating"]
 ms.assetid: d42f295b-35f9-49d2-9ee4-c66896ffe68e
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _lrotl, _lrotr
 Rotates bits to the left (`_lrotl`) or right (`_lrotr`).  

@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "link"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "LINK tool [C++], compiler-controlled options"
-  - "linker [C++], CL compiler control"
-  - "linking [C++], affected by CL features"
-  - "cl.exe compiler [C++], features that affect linking"
-  - "cl.exe compiler [C++], controlling linker"
+f1_keywords: ["link"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["LINK tool [C++], compiler-controlled options", "linker [C++], CL compiler control", "linking [C++], affected by CL features", "cl.exe compiler [C++], features that affect linking", "cl.exe compiler [C++], controlling linker"]
 ms.assetid: e4c03896-c99c-4599-8502-e0f4bebe69d0
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Compiler-Controlled LINK Options
 The CL compiler automatically calls LINK unless you specify the /c option. CL provides some control over the linker through command-line options and arguments. The following table summarizes the features in CL that affect linking.  

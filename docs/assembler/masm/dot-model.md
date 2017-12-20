@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - ".MODEL"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - ".MODEL directive"
+f1_keywords: [".MODEL"]
+dev_langs: ["C++"]
+helpviewer_keywords: [".MODEL directive"]
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # .MODEL
 Initializes the program memory model.  

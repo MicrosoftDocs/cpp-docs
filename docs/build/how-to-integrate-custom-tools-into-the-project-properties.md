@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "04/27/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "msbuild.cpp.howto.integratecustomtools"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "msbuild (c++), howto: integrate custom tools"
+f1_keywords: ["msbuild.cpp.howto.integratecustomtools"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["msbuild (c++), howto: integrate custom tools"]
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # How to: Integrate Custom Tools into the Project Properties
 You can add custom tool options to the Visual Studio **Property Pages** window by creating an underlying XML schema file.  

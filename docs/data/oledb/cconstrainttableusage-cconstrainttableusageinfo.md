@@ -4,49 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CConstraintTableUsageInfo"
-  - "CONSTRAINT_TABLE_USAGE"
-  - "m_szTableSchema"
-  - "m_szConstraintCatalog"
-  - "CONSTRAINT_NAME"
-  - "m_szTableCatalog"
-  - "m_szConstraintSchema"
-  - "m_szTableName"
-  - "CONSTRAINT_CATALOG"
-  - "CONSTRAINT_SCHEMA"
-  - "CConstraintTableUsage"
-  - "m_szConstraintName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CConstraintTableUsage typedef class"
-  - "m_szConstraintCatalog"
-  - "CONSTRAINT_CATALOG"
-  - "m_szTableSchema"
-  - "CConstraintTableUsageInfo parameter class"
-  - "TABLE_CATALOG"
-  - "CONSTRAINT_TABLE_USAGE"
-  - "TABLE_NAME"
-  - "CONSTRAINT_NAME"
-  - "CONSTRAINT_SCHEMA"
-  - "TABLE_SCHEMA"
-  - "m_szTableCatalog"
-  - "m_szConstraintName"
-  - "m_szTableName"
-  - "m_szConstraintSchema"
+f1_keywords: ["CConstraintTableUsageInfo", "CONSTRAINT_TABLE_USAGE", "m_szTableSchema", "m_szConstraintCatalog", "CONSTRAINT_NAME", "m_szTableCatalog", "m_szConstraintSchema", "m_szTableName", "CONSTRAINT_CATALOG", "CONSTRAINT_SCHEMA", "CConstraintTableUsage", "m_szConstraintName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CConstraintTableUsage typedef class", "m_szConstraintCatalog", "CONSTRAINT_CATALOG", "m_szTableSchema", "CConstraintTableUsageInfo parameter class", "TABLE_CATALOG", "CONSTRAINT_TABLE_USAGE", "TABLE_NAME", "CONSTRAINT_NAME", "CONSTRAINT_SCHEMA", "TABLE_SCHEMA", "m_szTableCatalog", "m_szConstraintName", "m_szTableName", "m_szConstraintSchema"]
 ms.assetid: 666b44de-3922-4c5e-ad17-d5ea27120174
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CConstraintTableUsage, CConstraintTableUsageInfo
 Call the typedef class **CConstraintTableUsage** to implement its parameter class **CConstraintTableUsageInfo**.  

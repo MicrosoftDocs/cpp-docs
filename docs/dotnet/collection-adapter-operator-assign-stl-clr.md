@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::collection_adapter::operator="
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operator= member [STL/CLR]"
+f1_keywords: ["cliext::collection_adapter::operator="]
+dev_langs: ["C++"]
+helpviewer_keywords: ["operator= member [STL/CLR]"]
 ms.assetid: 45365a33-3b56-4cb7-962f-81c20d8901d3
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # collection_adapter::operator= (STL/CLR)
 Replaces the stored BCL handle.  

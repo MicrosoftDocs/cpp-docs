@@ -4,58 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "strrchr"
-  - "wcsrchr"
-  - "_mbsrchr"
-  - "_mbsrchr_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ntdll.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["strrchr", "wcsrchr", "_mbsrchr", "_mbsrchr_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tcsrchr"
-  - "_ftcsrchr"
-  - "strrchr"
-  - "wcsrchr"
-  - "_mbsrchr"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_mbsrchr function"
-  - "tcsrchr function"
-  - "mbsrchr_l function"
-  - "characters [C++], scanning for"
-  - "ftcsrchr function"
-  - "_tcsrchr function"
-  - "strings [C++], scanning"
-  - "mbsrchr function"
-  - "strrchr function"
-  - "scanning strings"
-  - "wcsrchr function"
-  - "_ftcsrchr function"
-  - "_mbsrchr_l function"
+f1_keywords: ["_tcsrchr", "_ftcsrchr", "strrchr", "wcsrchr", "_mbsrchr"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_mbsrchr function", "tcsrchr function", "mbsrchr_l function", "characters [C++], scanning for", "ftcsrchr function", "_tcsrchr function", "strings [C++], scanning", "mbsrchr function", "strrchr function", "scanning strings", "wcsrchr function", "_ftcsrchr function", "_mbsrchr_l function"]
 ms.assetid: 75cf2664-758e-49bb-bf6b-8a139cd474d2
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 Scans a string for the last occurrence of a character.  

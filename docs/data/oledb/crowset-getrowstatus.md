@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CRowset.GetRowStatus"
-  - "ATL.CRowset<TAccessor>.GetRowStatus"
-  - "ATL::CRowset<TAccessor>::GetRowStatus"
-  - "CRowset::GetRowStatus"
-  - "ATL::CRowset::GetRowStatus"
-  - "CRowset<TAccessor>::GetRowStatus"
-  - "ATL.CRowset.GetRowStatus"
-  - "CRowset<TAccessor>.GetRowStatus"
-  - "GetRowStatus"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetRowStatus method"
+f1_keywords: ["CRowset.GetRowStatus", "ATL.CRowset<TAccessor>.GetRowStatus", "ATL::CRowset<TAccessor>::GetRowStatus", "CRowset::GetRowStatus", "ATL::CRowset::GetRowStatus", "CRowset<TAccessor>::GetRowStatus", "ATL.CRowset.GetRowStatus", "CRowset<TAccessor>.GetRowStatus", "GetRowStatus"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetRowStatus method"]
 ms.assetid: 7a29a235-cb7e-40c1-92ce-5441751febee
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::GetRowStatus
 Returns the status of all rows.  

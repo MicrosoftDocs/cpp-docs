@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "RECORD"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RECORD directive"
+f1_keywords: ["RECORD"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["RECORD directive"]
 ms.assetid: c83db394-0fe3-468f-813f-13302cdc862d
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # RECORD (MASM)
 Declares a record type consisting of the specified fields. *fieldname* names the field, *width* specifies the number of bits, and *expression* gives its initial value.  

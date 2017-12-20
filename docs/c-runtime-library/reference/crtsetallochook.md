@@ -4,39 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_CrtSetAllocHook"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_CrtSetAllocHook"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_CrtSetAllocHook"
-  - "CrtSetAllocHook"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "_CrtSetAllocHook function"
-  - "CrtSetAllocHook function"
+f1_keywords: ["_CrtSetAllocHook", "CrtSetAllocHook"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["_CrtSetAllocHook function", "CrtSetAllocHook function"]
 ms.assetid: 405df37b-2fd1-42c8-83bc-90887f17f29d
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetAllocHook
 Installs a client-defined allocation function by hooking it into the C run-time debug memory allocation process (debug version only).  

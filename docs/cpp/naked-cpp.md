@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "naked_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "__declspec keyword [C++], naked"
-  - "naked __declspec keyword"
+f1_keywords: ["naked_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["__declspec keyword [C++], naked", "naked __declspec keyword"]
 ms.assetid: 69723241-05e1-439b-868e-20a83a16ab6d
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # naked (C++)
 **Microsoft Specific**  

@@ -7,15 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections::UnorderedMapView"
+f1_keywords: ["collection/Platform::Collections::UnorderedMapView"]
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
 caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::UnorderedMapView Class
 Represents a read-only view into a *map*, which is a collection of key-value pairs.  

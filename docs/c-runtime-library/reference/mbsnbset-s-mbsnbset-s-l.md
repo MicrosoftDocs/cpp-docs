@@ -4,49 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_mbsnbset_s_l"
-  - "_mbsnbset_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+apiname: ["_mbsnbset_s_l", "_mbsnbset_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "mbsnbset_s"
-  - "_mbsnbset_s_l"
-  - "_mbsnbset_s"
-  - "mbsnbset_s_l"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tcsnset_s function"
-  - "mbsnbset_s function"
-  - "mbsnbset_s_l function"
-  - "_mbsnbset_s_l function"
-  - "_tcsnset_s_l function"
-  - "_mbsnbset_s function"
-  - "_tcsnset_s function"
-  - "tcsnset_s_l function"
+f1_keywords: ["mbsnbset_s", "_mbsnbset_s_l", "_mbsnbset_s", "mbsnbset_s_l"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tcsnset_s function", "mbsnbset_s function", "mbsnbset_s_l function", "_mbsnbset_s_l function", "_tcsnset_s_l function", "_mbsnbset_s function", "_tcsnset_s function", "tcsnset_s_l function"]
 ms.assetid: 811f92c9-cc31-4bbd-8017-2d1bfc6fb96f
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbset_s, _mbsnbset_s_l
 Sets the first `n` bytes of a multibyte-character string to a specified character. These versions of [_mbsnbset, _mbsnbset_l](../../c-runtime-library/reference/mbsnbset-mbsnbset-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

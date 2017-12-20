@@ -4,60 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "wcscoll"
-  - "_mbscoll"
-  - "_mbscoll_l"
-  - "strcoll"
-  - "_strcoll_l"
-  - "_wcscoll_l"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-multibyte-l1-1-0.dll"
-  - "api-ms-win-crt-string-l1-1-0.dll"
+apiname: ["wcscoll", "_mbscoll", "_mbscoll_l", "strcoll", "_strcoll_l", "_wcscoll_l"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "wcscoll"
-  - "_mbscoll"
-  - "_tcscoll"
-  - "_ftcscoll"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "code pages, using for string comparisons"
-  - "mbscoll function"
-  - "wcscoll_l function"
-  - "ftcscoll function"
-  - "wcscoll function"
-  - "_strcoll_l function"
-  - "tcscoll function"
-  - "_ftcscoll function"
-  - "_tcscoll function"
-  - "_wcscoll_l function"
-  - "_mbscoll function"
-  - "strcoll_l function"
-  - "strcoll functions"
-  - "strings [C++], comparing by code page"
+f1_keywords: ["wcscoll", "_mbscoll", "_tcscoll", "_ftcscoll"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["code pages, using for string comparisons", "mbscoll function", "wcscoll_l function", "ftcscoll function", "wcscoll function", "_strcoll_l function", "tcscoll function", "_ftcscoll function", "_tcscoll function", "_wcscoll_l function", "_mbscoll function", "strcoll_l function", "strcoll functions", "strings [C++], comparing by code page"]
 ms.assetid: 900a7540-c7ec-4c2f-b292-7a85f63e3fe8
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
 Compares strings by using the current locale or a specified LC_COLLATE conversion-state category.  

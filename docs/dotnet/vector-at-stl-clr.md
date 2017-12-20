@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::at"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "at member [STL/CLR]"
+f1_keywords: ["cliext::vector::at"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["at member [STL/CLR]"]
 ms.assetid: 9af9f829-48b8-4906-ba4a-b43454acb2c7
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::at (STL/CLR)
 Accesses an element at a specified position.  

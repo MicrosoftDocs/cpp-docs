@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::stack::value_type"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "value_type member [STL/CLR]"
+f1_keywords: ["cliext::stack::value_type"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["value_type member [STL/CLR]"]
 ms.assetid: 867ff1a7-c91c-4168-9b85-21fd0dcf4806
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # stack::value_type (STL/CLR)
 The type of an element.  

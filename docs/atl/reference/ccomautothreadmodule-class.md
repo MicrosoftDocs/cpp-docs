@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CComAutoThreadModule"
-  - "ATLBASE/ATL::CComAutoThreadModule"
-  - "ATLBASE/ATL::CreateInstance"
-  - "ATLBASE/ATL::GetDefaultThreads"
-  - "ATLBASE/ATL::Init"
-  - "ATLBASE/ATL::Lock"
-  - "ATLBASE/ATL::Unlock"
-  - "ATLBASE/ATL::dwThreadID"
-  - "ATLBASE/ATL::m_Allocator"
-  - "ATLBASE/ATL::m_nThreads"
-  - "ATLBASE/ATL::m_pApartments"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CComAutoThreadModule class"
-  - "apartment model modules"
+f1_keywords: ["CComAutoThreadModule", "ATLBASE/ATL::CComAutoThreadModule", "ATLBASE/ATL::CreateInstance", "ATLBASE/ATL::GetDefaultThreads", "ATLBASE/ATL::Init", "ATLBASE/ATL::Lock", "ATLBASE/ATL::Unlock", "ATLBASE/ATL::dwThreadID", "ATLBASE/ATL::m_Allocator", "ATLBASE/ATL::m_nThreads", "ATLBASE/ATL::m_pApartments"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CComAutoThreadModule class", "apartment model modules"]
 ms.assetid: 13063ea5-a57e-4aac-97d3-227137262811
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CComAutoThreadModule Class
 As of ATL 7.0, `CComAutoThreadModule` is obsolete: see [ATL Module Classes](../../atl/atl-module-classes.md) for more details.  

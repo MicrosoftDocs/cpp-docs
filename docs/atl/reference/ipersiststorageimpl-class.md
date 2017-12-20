@@ -4,32 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "IPersistStorageImpl"
-  - "ATLCOM/ATL::IPersistStorageImpl"
-  - "ATLCOM/ATL::IPersistStorageImpl::GetClassID"
-  - "ATLCOM/ATL::IPersistStorageImpl::HandsOffStorage"
-  - "ATLCOM/ATL::IPersistStorageImpl::InitNew"
-  - "ATLCOM/ATL::IPersistStorageImpl::IsDirty"
-  - "ATLCOM/ATL::IPersistStorageImpl::Load"
-  - "ATLCOM/ATL::IPersistStorageImpl::Save"
-  - "ATLCOM/ATL::IPersistStorageImpl::SaveCompleted"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "storage, ATL"
-  - "IPersistStorageImpl class"
+f1_keywords: ["IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl", "ATLCOM/ATL::IPersistStorageImpl::GetClassID", "ATLCOM/ATL::IPersistStorageImpl::HandsOffStorage", "ATLCOM/ATL::IPersistStorageImpl::InitNew", "ATLCOM/ATL::IPersistStorageImpl::IsDirty", "ATLCOM/ATL::IPersistStorageImpl::Load", "ATLCOM/ATL::IPersistStorageImpl::Save", "ATLCOM/ATL::IPersistStorageImpl::SaveCompleted"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["storage, ATL", "IPersistStorageImpl class"]
 ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # IPersistStorageImpl Class
 This class implements the [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) interface.  

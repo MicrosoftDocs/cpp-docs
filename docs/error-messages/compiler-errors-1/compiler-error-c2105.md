@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C2105"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C2105"
+f1_keywords: ["C2105"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C2105"]
 ms.assetid: 19b7f7bc-a9da-4d23-8193-005b6d09274f
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2105
 'operator' needs l-value  

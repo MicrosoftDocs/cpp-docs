@@ -4,30 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLCompilerTool.MinimalRebuild"
-  - "/Gm"
-  - "/FD"
-  - "VC.Project.VCCLWCECompilerTool.MinimalRebuild"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/Gm compiler option [C++]"
-  - "minimal rebuild"
-  - "enable minimal rebuild compiler option [C++]"
-  - "Gm compiler option [C++]"
-  - "-Gm compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLCompilerTool.MinimalRebuild", "/Gm", "/FD", "VC.Project.VCCLWCECompilerTool.MinimalRebuild"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/Gm compiler option [C++]", "minimal rebuild", "enable minimal rebuild compiler option [C++]", "Gm compiler option [C++]", "-Gm compiler option [C++]"]
 ms.assetid: d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Gm (Enable Minimal Rebuild)
 Enables minimal rebuild, which determines whether C++ source files that include changed C++ class definitions (stored in header (.h) files) need to be recompiled.  

@@ -4,51 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "COleDateTime"
-  - "ATLCOMTIME/ATL::COleDateTime"
-  - "ATLCOMTIME/ATL::COleDateTime::COleDateTime"
-  - "ATLCOMTIME/ATL::COleDateTime::Format"
-  - "ATLCOMTIME/ATL::COleDateTime::GetAsDBTIMESTAMP"
-  - "ATLCOMTIME/ATL::COleDateTime::GetAsSystemTime"
-  - "ATLCOMTIME/ATL::COleDateTime::GetAsUDATE"
-  - "ATLCOMTIME/ATL::COleDateTime::GetCurrentTime"
-  - "ATLCOMTIME/ATL::COleDateTime::GetDay"
-  - "ATLCOMTIME/ATL::COleDateTime::GetDayOfWeek"
-  - "ATLCOMTIME/ATL::COleDateTime::GetDayOfYear"
-  - "ATLCOMTIME/ATL::COleDateTime::GetHour"
-  - "ATLCOMTIME/ATL::COleDateTime::GetMinute"
-  - "ATLCOMTIME/ATL::COleDateTime::GetMonth"
-  - "ATLCOMTIME/ATL::COleDateTime::GetSecond"
-  - "ATLCOMTIME/ATL::COleDateTime::GetStatus"
-  - "ATLCOMTIME/ATL::COleDateTime::GetYear"
-  - "ATLCOMTIME/ATL::COleDateTime::ParseDateTime"
-  - "ATLCOMTIME/ATL::COleDateTime::SetDate"
-  - "ATLCOMTIME/ATL::COleDateTime::SetDateTime"
-  - "ATLCOMTIME/ATL::COleDateTime::SetStatus"
-  - "ATLCOMTIME/ATL::COleDateTime::SetTime"
-  - "ATLCOMTIME/ATL::COleDateTime::m_dt"
-  - "ATLCOMTIME/ATL::COleDateTime::m_status"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "shared classes, COleDateTime"
-  - "time-only values"
-  - "Date data type, MFC encapsulation of"
-  - "COleDateTime class"
-  - "dates, handling in MFC"
-  - "time, handling in MFC"
+f1_keywords: ["COleDateTime", "ATLCOMTIME/ATL::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::Format", "ATLCOMTIME/ATL::COleDateTime::GetAsDBTIMESTAMP", "ATLCOMTIME/ATL::COleDateTime::GetAsSystemTime", "ATLCOMTIME/ATL::COleDateTime::GetAsUDATE", "ATLCOMTIME/ATL::COleDateTime::GetCurrentTime", "ATLCOMTIME/ATL::COleDateTime::GetDay", "ATLCOMTIME/ATL::COleDateTime::GetDayOfWeek", "ATLCOMTIME/ATL::COleDateTime::GetDayOfYear", "ATLCOMTIME/ATL::COleDateTime::GetHour", "ATLCOMTIME/ATL::COleDateTime::GetMinute", "ATLCOMTIME/ATL::COleDateTime::GetMonth", "ATLCOMTIME/ATL::COleDateTime::GetSecond", "ATLCOMTIME/ATL::COleDateTime::GetStatus", "ATLCOMTIME/ATL::COleDateTime::GetYear", "ATLCOMTIME/ATL::COleDateTime::ParseDateTime", "ATLCOMTIME/ATL::COleDateTime::SetDate", "ATLCOMTIME/ATL::COleDateTime::SetDateTime", "ATLCOMTIME/ATL::COleDateTime::SetStatus", "ATLCOMTIME/ATL::COleDateTime::SetTime", "ATLCOMTIME/ATL::COleDateTime::m_dt", "ATLCOMTIME/ATL::COleDateTime::m_status"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["shared classes, COleDateTime", "time-only values", "Date data type, MFC encapsulation of", "COleDateTime class", "dates, handling in MFC", "time, handling in MFC"]
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
 caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # COleDateTime Class
 Encapsulates the `DATE` data type that is used in OLE automation.  

@@ -4,34 +4,20 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apilocation: 
-  - "msvcr110.dll"
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
+apilocation: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ismbb"
-  - "ismbb"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "ismbb routines"
-  - "_ismbb routines"
+f1_keywords: ["_ismbb", "ismbb"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["ismbb routines", "_ismbb routines"]
 ms.assetid: d63c232e-3fe4-4844-aafd-2133846ece4b
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _ismbb Routines
 Tests the given integer value `c` for a particular condition, by using the current locale or a specified LC_CTYPE conversion state category.  

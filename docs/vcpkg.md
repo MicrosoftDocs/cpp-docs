@@ -5,16 +5,13 @@ keywords: vcpkg
 author: mikeblome
 ms.author: mblome
 ms.date: 05/30/2017
-ms.technology: 
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: "windows"
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 manager: ghogen
-ms.workload: 
-  - cplusplus
+ms.workload: [cplusplus]
 ---
 
 # vcpkg: C++ Package Manager for Windows 

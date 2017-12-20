@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "operators [C], postfix"
-  - "postfix operators"
+dev_langs: ["C++"]
+helpviewer_keywords: ["operators [C], postfix", "postfix operators"]
 ms.assetid: 76260011-1624-484e-8bef-72ae7ab556cc
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Postfix Operators
 The postfix operators have the highest precedence (the tightest binding) in expression evaluation.  

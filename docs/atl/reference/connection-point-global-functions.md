@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "atlbase/ATL::AtlAdvise"
-  - "atlbase/ATL::AtlUnadvise"
-  - "atlbase/ATL::AtlAdviseSinkMap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "connection points [C++], global functions"
+f1_keywords: ["atlbase/ATL::AtlAdvise", "atlbase/ATL::AtlUnadvise", "atlbase/ATL::AtlAdviseSinkMap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["connection points [C++], global functions"]
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Connection Point Global Functions
 These functions provide support for connection points and sink maps.  

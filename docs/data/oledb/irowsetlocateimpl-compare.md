@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL.IRowsetLocateImpl.Compare"
-  - "IRowsetLocateImpl::Compare"
-  - "IRowsetLocateImpl.Compare"
-  - "ATL::IRowsetLocateImpl::Compare"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Compare method"
+f1_keywords: ["ATL.IRowsetLocateImpl.Compare", "IRowsetLocateImpl::Compare", "IRowsetLocateImpl.Compare", "ATL::IRowsetLocateImpl::Compare"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Compare method"]
 ms.assetid: 6f84052c-c68c-480a-982f-03748faa7d5d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetLocateImpl::Compare
 Compares two bookmarks.  

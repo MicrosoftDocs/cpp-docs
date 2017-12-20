@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CEnumeratorAccessor::m_szParseName"
-  - "ATL::CEnumeratorAccessor::m_szParseName"
-  - "m_szParseName"
-  - "CEnumeratorAccessor.m_szParseName"
-  - "ATL.CEnumeratorAccessor.m_szParseName"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "m_szParseName"
+f1_keywords: ["CEnumeratorAccessor::m_szParseName", "ATL::CEnumeratorAccessor::m_szParseName", "m_szParseName", "CEnumeratorAccessor.m_szParseName", "ATL.CEnumeratorAccessor.m_szParseName"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["m_szParseName"]
 ms.assetid: 32e826b6-0890-4db4-aa92-fc1ea3f528b2
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumeratorAccessor::m_szParseName
 String to pass to [IParseDisplayName](http://msdn.microsoft.com/library/windows/desktop/ms680604) to obtain a moniker for the data source or enumerator.  

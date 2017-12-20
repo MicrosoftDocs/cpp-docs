@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "MessageHandler"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "MessageHandler function"
+f1_keywords: ["MessageHandler"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["MessageHandler function"]
 ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # MessageHandler
 **MessageHandler** is the name of the function identified by the second parameter of the `MESSAGE_HANDLER` macro in your message map.  

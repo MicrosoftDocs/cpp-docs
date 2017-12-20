@@ -4,34 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCCLWCECompilerTool.FavorSizeOrSpeed"
-  - "/os"
-  - "VC.Project.VCCLCompilerTool.FavorSizeOrSpeed"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "favor fast code compiler option [C++]"
-  - "/Os compiler option [C++]"
-  - "Ot compiler option [C++]"
-  - "/Ot compiler option [C++]"
-  - "small machine code"
-  - "-Ot compiler option [C++]"
-  - "fast code"
-  - "favor small code compiler option [C++]"
-  - "Os compiler option [C++]"
-  - "-Os compiler option [C++]"
+f1_keywords: ["VC.Project.VCCLWCECompilerTool.FavorSizeOrSpeed", "/os", "VC.Project.VCCLCompilerTool.FavorSizeOrSpeed"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["favor fast code compiler option [C++]", "/Os compiler option [C++]", "Ot compiler option [C++]", "/Ot compiler option [C++]", "small machine code", "-Ot compiler option [C++]", "fast code", "favor small code compiler option [C++]", "Os compiler option [C++]", "-Os compiler option [C++]"]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /Os, /Ot (Favor Small Code, Favor Fast Code)
 Minimizes or maximizes the size of EXEs and DLLs.  

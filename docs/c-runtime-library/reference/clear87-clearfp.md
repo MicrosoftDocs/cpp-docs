@@ -4,46 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_clearfp"
-  - "_clear87"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-runtime-l1-1-0.dll"
+apiname: ["_clearfp", "_clear87"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "clearfp"
-  - "_clearfp"
-  - "_clear87"
-  - "clear87"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "clearing floating point status word"
-  - "clearfp function"
-  - "_clear87 function"
-  - "_clearfp function"
-  - "clear87 function"
+f1_keywords: ["clearfp", "_clearfp", "_clear87", "clear87"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["clearing floating point status word", "clearfp function", "_clear87 function", "_clearfp function", "clear87 function"]
 ms.assetid: 72d24a70-7688-4793-ae09-c96d33fcca52
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _clear87, _clearfp
 Gets and clears the floating-point status word.  

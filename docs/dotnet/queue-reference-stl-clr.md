@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::queue::reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reference member [STL/CLR]"
+f1_keywords: ["cliext::queue::reference"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["reference member [STL/CLR]"]
 ms.assetid: cca05237-5b95-4cca-ac21-b786aa8a3c96
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # queue::reference (STL/CLR)
 The type of a reference to an element.  

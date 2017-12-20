@@ -7,19 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::Metadata::FlagsAttribute"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Metadata::FlagsAttribute Attribute"
+f1_keywords: ["VCCORLIB/Platform::Metadata::FlagsAttribute"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Metadata::FlagsAttribute Attribute"]
 ms.assetid: 56f4a191-cc81-4742-aff8-bd2219c0735c
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::FlagsAttribute Attribute
 Indicates that an enumeration can be treated as a bit field; that is, a set of flags.  

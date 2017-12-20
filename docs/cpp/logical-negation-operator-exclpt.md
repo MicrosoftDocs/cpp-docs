@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "!"
-  - "Not"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "! operator"
-  - "NOT operator"
-  - "logical negation"
+f1_keywords: ["!", "Not"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["! operator", "NOT operator", "logical negation"]
 ms.assetid: 650add9f-a7bc-426c-b01d-5fc6a81c8b62
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Logical Negation Operator: !
 ## Syntax  

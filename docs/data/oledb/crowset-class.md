@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "ATL.CRowset<TAccessor>"
-  - "CRowset"
-  - "ATL::CRowset"
-  - "ATL::CRowset<TAccessor>"
-  - "ATL.CRowset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CRowset class"
+f1_keywords: ["ATL.CRowset<TAccessor>", "CRowset", "ATL::CRowset", "ATL::CRowset<TAccessor>", "ATL.CRowset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CRowset class"]
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset Class
 Encapsulates an OLE DB rowset object and several related interfaces and provides manipulation methods for rowset data.  

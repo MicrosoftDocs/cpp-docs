@@ -4,28 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "SetData"
-  - "IRowsetUpdateImpl::SetData"
-  - "IRowsetUpdateImpl.SetData"
-  - "ATL::IRowsetUpdateImpl::SetData"
-  - "ATL.IRowsetUpdateImpl.SetData"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "SetData method"
+f1_keywords: ["SetData", "IRowsetUpdateImpl::SetData", "IRowsetUpdateImpl.SetData", "ATL::IRowsetUpdateImpl::SetData", "ATL.IRowsetUpdateImpl.SetData"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["SetData method"]
 ms.assetid: 7288a8d1-a7cf-4957-b832-0f3b18fd0da4
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetUpdateImpl::SetData
 Sets data values in one or more columns.  

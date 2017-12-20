@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "/linkermember"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "/LINKERMEMBER dumpbin option"
-  - "LINKERMEMBER dumpbin option"
-  - "-LINKERMEMBER dumpbin option"
+f1_keywords: ["/linkermember"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["/LINKERMEMBER dumpbin option", "LINKERMEMBER dumpbin option", "-LINKERMEMBER dumpbin option"]
 ms.assetid: c96868c1-d70e-4651-ae36-c55b58b16406
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # /LINKERMEMBER
 ```  

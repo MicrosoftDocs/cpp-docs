@@ -4,26 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "CUtlProps::GetPropValue"
-  - "CUtlProps.GetPropValue"
-  - "GetPropValue"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "GetPropValue method"
+f1_keywords: ["CUtlProps::GetPropValue", "CUtlProps.GetPropValue", "GetPropValue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["GetPropValue method"]
 ms.assetid: 9a3fbadb-7814-48f7-96a4-b960fc4ecf2e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CUtlProps::GetPropValue
 Gets a property from a property set.  

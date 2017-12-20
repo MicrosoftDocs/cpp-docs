@@ -4,22 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "RFX (ODBC), implementing"
+dev_langs: ["C++"]
+helpviewer_keywords: ["RFX (ODBC), implementing"]
 ms.assetid: ada8f043-37e6-4d41-9db3-92c997a61957
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Using RFX
 This topic explains what you do to use RFX in relation to what the framework does.  

@@ -4,27 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "msclr::auto_gcroot::reset"
-  - "auto_gcroot::reset"
-  - "msclr.auto_gcroot.reset"
-  - "auto_gcroot.reset"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "reset method"
+f1_keywords: ["msclr::auto_gcroot::reset", "auto_gcroot::reset", "msclr.auto_gcroot.reset", "auto_gcroot.reset"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["reset method"]
 ms.assetid: dd58467f-3885-4a15-99fb-ed6dd5d19622
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::reset
 Destroy the current owned object and optionally take possession of a new object.  

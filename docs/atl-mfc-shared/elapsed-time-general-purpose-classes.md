@@ -4,28 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "adding dates"
-  - "calculating dates and times"
-  - "dates, calculating intervals"
-  - "elapsed time, calculating"
-  - "elapsed time"
-  - "time, elapsed"
-  - "intervals, date and time"
-  - "calculations, date and time"
+dev_langs: ["C++"]
+helpviewer_keywords: ["adding dates", "calculating dates and times", "dates, calculating intervals", "elapsed time, calculating", "elapsed time", "time, elapsed", "intervals, date and time", "calculations, date and time"]
 ms.assetid: e5c5d3d2-ce1d-409e-875c-98848434e716
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Elapsed Time: General-Purpose Classes
 The following procedure shows how to calculate the difference between two `CTime` objects and get a `CTimeSpan` result.  

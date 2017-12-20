@@ -7,16 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "value struct"
-  - "value class"
+helpviewer_keywords: ["value struct", "value class"]
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
 caps.latest.revision: 12
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Value classes and structs (C++/CX)
 A *value struct* or *value class* is a Windows Runtime-compatible POD ("plain old data structure"). It has a fixed size and consists of fields only; unlike a ref class, it has no properties.  

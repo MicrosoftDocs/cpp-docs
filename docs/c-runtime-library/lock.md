@@ -4,37 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_lock"
-apilocation: 
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr100.dll"
-  - "msvcr90.dll"
-  - "msvcr80.dll"
-  - "msvcr110.dll"
-  - "msvcrt.dll"
-  - "msvcr120_clr0400.dll"
+apiname: ["_lock"]
+apilocation: ["msvcr110_clr0400.dll", "msvcr120.dll", "msvcr100.dll", "msvcr90.dll", "msvcr80.dll", "msvcr110.dll", "msvcrt.dll", "msvcr120_clr0400.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "lock"
-  - "_lock"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lock function"
-  - "_lock function"
+f1_keywords: ["lock", "_lock"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lock function", "_lock function"]
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _lock
 Acquires a multi-thread lock.  

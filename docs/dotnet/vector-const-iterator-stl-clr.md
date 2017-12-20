@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::vector::const_iterator"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "const_iterator member [STL/CLR]"
+f1_keywords: ["cliext::vector::const_iterator"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["const_iterator member [STL/CLR]"]
 ms.assetid: 09c0ae0b-248b-463c-8f57-59c77eba1eaa
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::const_iterator (STL/CLR)
 The type of a constant iterator for the controlled sequence.  

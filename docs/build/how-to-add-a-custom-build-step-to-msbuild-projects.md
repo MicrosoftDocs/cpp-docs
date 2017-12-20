@@ -4,23 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "msbuild.cpp.howto.addcustombuildstep"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "msbuild (c++), howto: add a custom build step"
+f1_keywords: ["msbuild.cpp.howto.addcustombuildstep"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["msbuild (c++), howto: add a custom build step"]
 ms.assetid: a20a0c47-4df4-4754-a1f0-a94a99958916
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # How to: Add a Custom Build Step to MSBuild Projects
 A custom build step is a user-defined step in a build. A custom build step behaves like any other *command tool* step, such as the standard compile or link tool step.  

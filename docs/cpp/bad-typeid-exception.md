@@ -4,25 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "bad_typeid"
-  - "bad_typeid_cpp"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "bad_typeid exception"
-  - "exceptions [C++], bad_typeid"
+f1_keywords: ["bad_typeid", "bad_typeid_cpp"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["bad_typeid exception", "exceptions [C++], bad_typeid"]
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # bad_typeid Exception
 The `bad_typeid` exception is thrown by the [typeid operator](../cpp/typeid-operator.md) when the operand for `typeid` is a NULL pointer.  

@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::multimap::clear"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "clear member [STL/CLR]"
+f1_keywords: ["cliext::multimap::clear"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["clear member [STL/CLR]"]
 ms.assetid: 2c4aae4b-0aac-42ba-abf4-eaf2d5734817
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::clear (STL/CLR)
 Removes all elements.  

@@ -4,21 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "BSCMAKE, command line"
+dev_langs: ["C++"]
+helpviewer_keywords: ["BSCMAKE, command line"]
 ms.assetid: 8006e8cf-8bfe-4c23-868a-b0a25e6bbf0f
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Command Line
 To run BSCMAKE, use the following command line syntax:  

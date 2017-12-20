@@ -4,33 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "CAtlFileMappingBase"
-  - "ATLFILE/ATL::CAtlFileMappingBase"
-  - "ATLFILE/ATL::CAtlFileMappingBase::CAtlFileMappingBase"
-  - "ATLFILE/ATL::CAtlFileMappingBase::CopyFrom"
-  - "ATLFILE/ATL::CAtlFileMappingBase::GetData"
-  - "ATLFILE/ATL::CAtlFileMappingBase::GetHandle"
-  - "ATLFILE/ATL::CAtlFileMappingBase::GetMappingSize"
-  - "ATLFILE/ATL::CAtlFileMappingBase::MapFile"
-  - "ATLFILE/ATL::CAtlFileMappingBase::MapSharedMem"
-  - "ATLFILE/ATL::CAtlFileMappingBase::OpenMapping"
-  - "ATLFILE/ATL::CAtlFileMappingBase::Unmap"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "CAtlFileMappingBase class"
+f1_keywords: ["CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase::CAtlFileMappingBase", "ATLFILE/ATL::CAtlFileMappingBase::CopyFrom", "ATLFILE/ATL::CAtlFileMappingBase::GetData", "ATLFILE/ATL::CAtlFileMappingBase::GetHandle", "ATLFILE/ATL::CAtlFileMappingBase::GetMappingSize", "ATLFILE/ATL::CAtlFileMappingBase::MapFile", "ATLFILE/ATL::CAtlFileMappingBase::MapSharedMem", "ATLFILE/ATL::CAtlFileMappingBase::OpenMapping", "ATLFILE/ATL::CAtlFileMappingBase::Unmap"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["CAtlFileMappingBase class"]
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # CAtlFileMappingBase Class
 This class represents a memory-mapped file.  

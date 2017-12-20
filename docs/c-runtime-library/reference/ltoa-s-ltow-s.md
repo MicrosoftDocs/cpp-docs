@@ -4,47 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_ltoa_s"
-  - "_ltow_s"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
+apiname: ["_ltoa_s", "_ltow_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_ltow_s"
-  - "_ltoa_s"
-  - "ltoa_s"
-  - "ltow_s"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "converting integers"
-  - "_ltoa_s function"
-  - "ltow_s function"
-  - "long integer conversion to string"
-  - "converting numbers, to strings"
-  - "ltoa_s function"
-  - "_ltow_s function"
+f1_keywords: ["_ltow_s", "_ltoa_s", "ltoa_s", "ltow_s"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["converting integers", "_ltoa_s function", "ltow_s function", "long integer conversion to string", "converting numbers, to strings", "ltoa_s function", "_ltow_s function"]
 ms.assetid: d7dc61ea-1ccd-412d-b262-555a58647386
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _ltoa_s, _ltow_s
 Converts a long integer to a string. These are versions of [_ltoa, _ltow](../../c-runtime-library/reference/ltoa-ltow.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

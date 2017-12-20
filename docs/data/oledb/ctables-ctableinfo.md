@@ -4,46 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "m_szCatalog"
-  - "TABLE_SCHEMA"
-  - "CTables"
-  - "TABLE_NAME"
-  - "TABLE_CATALOG"
-  - "CTableInfo"
-  - "m_guidTable"
-  - "m_szType"
-  - "m_szSchema"
-  - "m_szName"
-  - "TABLE_GUID"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "DESCRIPTION class data member"
-  - "m_szSchema"
-  - "TABLE_CATALOG"
-  - "m_szType"
-  - "m_szCatalog"
-  - "TABLE_NAME"
-  - "TABLE_SCHEMA"
-  - "TABLE_GUID"
-  - "m_szName"
-  - "m_szDescription"
-  - "CTables typedef class"
-  - "m_guidTable"
-  - "CTableInfo parameter class"
+f1_keywords: ["m_szCatalog", "TABLE_SCHEMA", "CTables", "TABLE_NAME", "TABLE_CATALOG", "CTableInfo", "m_guidTable", "m_szType", "m_szSchema", "m_szName", "TABLE_GUID"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["DESCRIPTION class data member", "m_szSchema", "TABLE_CATALOG", "m_szType", "m_szCatalog", "TABLE_NAME", "TABLE_SCHEMA", "TABLE_GUID", "m_szName", "m_szDescription", "CTables typedef class", "m_guidTable", "CTableInfo parameter class"]
 ms.assetid: 57670f1b-ba99-43b0-b406-4c75b44f14f6
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "data-storage"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CTables, CTableInfo
 Call the typedef class **CTables** to implement its parameter class **CTableInfo**.  

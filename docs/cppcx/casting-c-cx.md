@@ -12,8 +12,7 @@ caps.latest.revision: 15
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Casting (C++/CX)
 Four different cast operators apply to Windows Runtime types: [static_cast Operator](../cpp/static-cast-operator.md), [dynamic_cast Operator](../cpp/dynamic-cast-operator.md), **safe_cast Operator**, and [reinterpret_cast Operator](../cpp/reinterpret-cast-operator.md). `safe_cast` and `static_cast` throw an exception when the conversion can't be performed; [static_cast Operator](../cpp/static-cast-operator.md) also performs compile-time type checking. `dynamic_cast` returns `nullptr` if it fails to convert the type. Although `reinterpret_cast` returns a non-null value, it might be invalid. For this reason, we recommend that you not use `reinterpret_cast` unless you know that the cast will succeed. In addition, we recommend that you not use C-style casts in your C++/CX code because they are identical to `reinterpret_cast`.  

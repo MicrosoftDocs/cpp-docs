@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-tools"
+ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "throughput, C++ compiler"
-  - "cl.exe compiler, performance"
-  - "performance, compiler"
-  - "cl.exe compiler, throughput"
+dev_langs: ["C++"]
+helpviewer_keywords: ["throughput, C++ compiler", "cl.exe compiler, performance", "performance, compiler", "cl.exe compiler, throughput"]
 ms.assetid: ba5f884e-9037-4a92-b10e-fc2a3836c5bf
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Improving Compiler Throughput
 Use precompiled header files to build your project faster. This is important if you are using ATL, MFC, or the Windows SDK header files.  

@@ -4,24 +4,17 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "pointer declarations"
-  - "declarations, pointers"
-  - "const keyword [C]"
-  - "pointers, declarations"
+dev_langs: ["C++"]
+helpviewer_keywords: ["pointer declarations", "declarations, pointers", "const keyword [C]", "pointers, declarations"]
 ms.assetid: 8b3b7fc7-f44d-480d-b6f9-cebe4e5462a6
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # Pointer Declarations
 A "pointer declaration" names a pointer variable and specifies the type of the object to which the variable points. A variable declared as a pointer holds a memory address.  

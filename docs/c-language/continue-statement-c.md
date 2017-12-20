@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-language"
+ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "continue"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "loop structures, continue keyword"
-  - "continue keyword [C]"
+f1_keywords: ["continue"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["loop structures, continue keyword", "continue keyword [C]"]
 ms.assetid: 969f293a-45fe-48a7-b4c6-287ba27a631d
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # continue Statement (C)
 The `continue` statement passes control to the next iteration of the nearest enclosing `do`, `for`, or `while` statement in which it appears, bypassing any remaining statements in the `do`, `for`, or `while` statement body.  

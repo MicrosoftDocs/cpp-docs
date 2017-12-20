@@ -4,24 +4,18 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-windows"
+ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: 
-  - "cliext::map::lower_bound"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "lower_bound member [STL/CLR]"
+f1_keywords: ["cliext::map::lower_bound"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["lower_bound member [STL/CLR]"]
 ms.assetid: 959651a0-f949-4cc1-859b-248b6930f16c
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
-  - "dotnet"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::lower_bound (STL/CLR)
 Finds beginning of range that matches a specified key.  

@@ -4,75 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "cpp-standard-libraries"
+ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
-  - "_utime64"
-  - "_utime"
-  - "_wutime"
-  - "_wutime64"
-  - "_wutime32"
-  - "_utime32"
-apilocation: 
-  - "msvcrt.dll"
-  - "msvcr80.dll"
-  - "msvcr90.dll"
-  - "msvcr100.dll"
-  - "msvcr100_clr0400.dll"
-  - "msvcr110.dll"
-  - "msvcr110_clr0400.dll"
-  - "msvcr120.dll"
-  - "msvcr120_clr0400.dll"
-  - "ucrtbase.dll"
-  - "api-ms-win-crt-time-l1-1-0.dll"
+apiname: ["_utime64", "_utime", "_wutime", "_wutime64", "_wutime32", "_utime32"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: 
-  - "_tutime"
-  - "_utime64"
-  - "wutime"
-  - "utime32"
-  - "wutime64"
-  - "_utime"
-  - "wutime32"
-  - "_wutime"
-  - "utime"
-  - "utime64"
-  - "_wutime64"
-  - "_utime32"
-  - "_tutime64"
-  - "_wutime32"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "tutime function"
-  - "utime32 function"
-  - "utime64 function"
-  - "_utime function"
-  - "_tutime32 function"
-  - "time [C++], file modification"
-  - "wutime function"
-  - "_wutime function"
-  - "_wutime32 function"
-  - "_tutime64 function"
-  - "_tutime function"
-  - "files [C++], modification time"
-  - "_wutime64 function"
-  - "_utime32 function"
-  - "utime function"
-  - "_utime64 function"
-  - "wutime64 function"
-  - "wutime32 function"
-  - "tutime64 function"
-  - "tutime32 function"
+f1_keywords: ["_tutime", "_utime64", "wutime", "utime32", "wutime64", "_utime", "wutime32", "_wutime", "utime", "utime64", "_wutime64", "_utime32", "_tutime64", "_wutime32"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["tutime function", "utime32 function", "utime64 function", "_utime function", "_tutime32 function", "time [C++], file modification", "wutime function", "_wutime function", "_wutime32 function", "_tutime64 function", "_tutime function", "files [C++], modification time", "_wutime64 function", "_utime32 function", "utime function", "_utime64 function", "wutime64 function", "wutime32 function", "tutime64 function", "tutime32 function"]
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
-ms.workload: 
-  - "cplusplus"
+ms.workload: ["cplusplus"]
 ---
 # _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 Set the file modification time.  
