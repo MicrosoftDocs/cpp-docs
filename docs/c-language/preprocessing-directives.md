@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["preprocessing directives, C", "preprocessing directives"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "preprocessing directives, C"
+  - "preprocessing directives"
 ms.assetid: b27d7444-8f84-4c31-b2fa-03335412d5e6
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Preprocessing Directives
 -   [Character Constants and Conditional Inclusion](../c-language/character-constants-and-conditional-inclusion.md)  

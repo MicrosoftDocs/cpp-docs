@@ -19,6 +19,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::InvalidCastException Class
 Thrown when a cast or explicit conversion is invalid.  

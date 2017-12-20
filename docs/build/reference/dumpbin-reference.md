@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["dumpbin"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["binary data, binary file dumper", "DUMPBIN program", "Microsoft COFF binary file dumper", "COFF files, displaying information about", "binary file dumper"]
+f1_keywords: 
+  - "dumpbin"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "binary data, binary file dumper"
+  - "DUMPBIN program"
+  - "Microsoft COFF binary file dumper"
+  - "COFF files, displaying information about"
+  - "binary file dumper"
 ms.assetid: 4bc06822-5330-44b4-8a3f-6180dfd41dfb
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # DUMPBIN Reference
 The Microsoft COFF Binary File Dumper (DUMPBIN.EXE) displays information about Common Object File Format (COFF) binary files. You can use DUMPBIN to examine COFF object files, standard libraries of COFF objects, executable files, and dynamic-link libraries (DLLs).  

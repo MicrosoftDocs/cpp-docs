@@ -4,20 +4,58 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_vscprintf_p_l", "_vscprintf_p", "_vscwprintf_p_l", "_vscwprintf_p"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_vscprintf_p_l"
+  - "_vscprintf_p"
+  - "_vscwprintf_p_l"
+  - "_vscwprintf_p"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["_vscprintf_p", "_vscprintf_p_l", "vscwprintf_p", "vscprintf_p", "vscwprintf_p_l", "_vscwprintf_p_l", "vscprintf_p_l", "_vscwprintf_p"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["vscprintf_p function", "_vsctprintf_p_l function", "vscwprintf_p_l function", "_vscwprintf_p_l function", "_vscprintf_p function", "vsctprintf_p function", "_vscprintf_p_l function", "_vscwprintf_p function", "vscwprintf_p function", "vsctprintf_p_l function", "_vsctprintf_p function", "vscprintf_p_l function"]
+f1_keywords: 
+  - "_vscprintf_p"
+  - "_vscprintf_p_l"
+  - "vscwprintf_p"
+  - "vscprintf_p"
+  - "vscwprintf_p_l"
+  - "_vscwprintf_p_l"
+  - "vscprintf_p_l"
+  - "_vscwprintf_p"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "vscprintf_p function"
+  - "_vsctprintf_p_l function"
+  - "vscwprintf_p_l function"
+  - "_vscwprintf_p_l function"
+  - "_vscprintf_p function"
+  - "vsctprintf_p function"
+  - "_vscprintf_p_l function"
+  - "_vscwprintf_p function"
+  - "vscwprintf_p function"
+  - "vsctprintf_p_l function"
+  - "_vsctprintf_p function"
+  - "vscprintf_p_l function"
 ms.assetid: 5da920b3-8652-4ee9-b19e-5aac3ace9d03
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
 Returns the number of characters in the formatted string using a pointer to a list of arguments, with the ability to specify the order in which the arguments are used.  

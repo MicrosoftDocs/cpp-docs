@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLWCECompilerTool.Detect64BitPortabilityProblems", "VC.Project.VCCLCompilerTool.Detect64BitPortabilityProblems", "/wp64"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["64-bit compiler [C++], detecting portability problems", "/Wp64 compiler option [C++]", "-Wp64 compiler option [C++]", "Wp64 compiler option [C++]"]
+f1_keywords: 
+  - "VC.Project.VCCLWCECompilerTool.Detect64BitPortabilityProblems"
+  - "VC.Project.VCCLCompilerTool.Detect64BitPortabilityProblems"
+  - "/wp64"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "64-bit compiler [C++], detecting portability problems"
+  - "/Wp64 compiler option [C++]"
+  - "-Wp64 compiler option [C++]"
+  - "Wp64 compiler option [C++]"
 ms.assetid: 331ae5aa-e627-4d03-8f63-dd2c2d76dadd
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Wp64 (Detect 64-Bit Portability Issues)
 

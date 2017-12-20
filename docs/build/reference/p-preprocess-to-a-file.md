@@ -4,17 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLCompilerTool.GeneratePreprocessedFile", "/p", "VC.Project.VCCLWCECompilerTool.GeneratePreprocessedFile"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/P compiler option [C++]", "-P compiler option [C++]", "P compiler option [C++]", "output files, preprocessor", "preprocessing output files"]
+f1_keywords: 
+  - "VC.Project.VCCLCompilerTool.GeneratePreprocessedFile"
+  - "/p"
+  - "VC.Project.VCCLWCECompilerTool.GeneratePreprocessedFile"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/P compiler option [C++]"
+  - "-P compiler option [C++]"
+  - "P compiler option [C++]"
+  - "output files, preprocessor"
+  - "preprocessing output files"
 ms.assetid: 123ee54f-8219-4a6f-9876-4227023d83fc
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /P (Preprocess to a File)
 Preprocesses C and C++ source files and writes the preprocessed output to a file.  

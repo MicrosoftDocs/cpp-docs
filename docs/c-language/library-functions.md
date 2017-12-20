@@ -4,15 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
+dev_langs: 
+  - "C++"
 ms.assetid: 90c096ab-31df-479e-91d8-289900dc0bff
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Library Functions
 -   [NULL Macro](../c-language/null-macro.md)  

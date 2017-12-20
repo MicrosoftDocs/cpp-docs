@@ -4,15 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
+dev_langs: 
+  - "C++"
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # String and I/O Formatting (Modern C++)
 C++ [iostreams](../standard-library/iostream.md) are capable of formatted string I/O. For example, the following code shows how to set cout to format an integer to output in hexadecimal, first saving off the current state and re-setting afterwards, because once state formatting is passed to cout, it stays that way until changed, not just for the one line of code.  

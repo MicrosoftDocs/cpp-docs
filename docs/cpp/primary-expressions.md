@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["primary expressions", "expressions [C++], name", "expressions [C++], literal", "expressions [C++], primary", "expressions [C++], qualified names"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "primary expressions"
+  - "expressions [C++], name"
+  - "expressions [C++], literal"
+  - "expressions [C++], primary"
+  - "expressions [C++], qualified names"
 ms.assetid: 8ef9a814-6058-4b93-9b6e-e8eb8350b1ca
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Primary Expressions
 Primary expressions are the building blocks of more complex expressions. They are literals, names, and names qualified by the scope-resolution operator (`::`).  A primary expression may have any of the following forms:  

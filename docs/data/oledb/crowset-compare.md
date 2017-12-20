@@ -4,17 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CRowset<TAccessor>.Compare", "CRowset<TAccessor>::Compare", "ATL.CRowset<TAccessor>.Compare", "ATL::CRowset<TAccessor>::Compare", "CRowset.Compare", "ATL::CRowset::Compare", "ATL.CRowset.Compare", "CRowset::Compare"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Compare method"]
+f1_keywords: 
+  - "CRowset<TAccessor>.Compare"
+  - "CRowset<TAccessor>::Compare"
+  - "ATL.CRowset<TAccessor>.Compare"
+  - "ATL::CRowset<TAccessor>::Compare"
+  - "CRowset.Compare"
+  - "ATL::CRowset::Compare"
+  - "ATL.CRowset.Compare"
+  - "CRowset::Compare"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Compare method"
 ms.assetid: a8117b40-7abd-4867-b0ba-eb9e9808204e
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CRowset::Compare
 Compares two bookmarks using [IRowsetLocate::Compare](https://msdn.microsoft.com/en-us/library/ms709539.aspx).  

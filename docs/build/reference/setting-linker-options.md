@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["files [C++], LINK", "input files [C++], linker", "linker [C++], ways to set options", "linker [C++], switches", "input files [C++]", "object/library modules"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "files [C++], LINK"
+  - "input files [C++], linker"
+  - "linker [C++], ways to set options"
+  - "linker [C++], switches"
+  - "input files [C++]"
+  - "object/library modules"
 ms.assetid: e08fb487-0f2e-4f24-87db-232dbc8bd2e2
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Setting Linker Options
 Linker options can be set inside or outside of the development environment. The topic for each linker option discusses how it can be set in the development environment. See [Linker Options](../../build/reference/linker-options.md) for a complete list.  

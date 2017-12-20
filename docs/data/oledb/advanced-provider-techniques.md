@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["OLE DB providers, using"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "OLE DB providers, using"
 ms.assetid: 002a9731-7e06-49ac-be50-3cc26aa43759
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Advanced Provider Techniques
 For more information about advanced provider techniques, see the following topics:  

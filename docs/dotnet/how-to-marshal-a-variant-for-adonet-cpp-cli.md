@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["VARIANT, marshaling", "ADO.NET [C++], marshaling VARIANT types", "VARIANT"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "VARIANT, marshaling"
+  - "ADO.NET [C++], marshaling VARIANT types"
+  - "VARIANT"
 ms.assetid: 67a180a7-5691-48ab-8d85-7f75a68dde91
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Marshal a VARIANT for ADO.NET (C++/CLI)
 Demonstrates how to add a native `VARIANT` to a database and how to marshal a <xref:System.Object?displayProperty=fullName> from a database to a native `VARIANT`.  

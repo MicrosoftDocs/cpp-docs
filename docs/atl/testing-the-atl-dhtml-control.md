@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["HTML controls, testing", "testing controls", "DHTML controls", "DHTML controls, testing"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "HTML controls, testing"
+  - "testing controls"
+  - "DHTML controls"
+  - "DHTML controls, testing"
 ms.assetid: 0e4b4358-80ce-4505-8b06-ef4f30b1d1f0
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Testing the ATL DHTML Control
 Once you have created your project, you can build and test the sample control. Before you do this, use Class View and Solution Explorer to examine the project. The elements of your project are described in greater detail in [Identifying the Elements of the DHTML Control Project](../atl/identifying-the-elements-of-the-dhtml-control-project.md).  

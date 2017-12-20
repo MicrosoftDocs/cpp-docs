@@ -7,7 +7,11 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["VCCORLIB/Platform::Exception::Exception", "VCCORLIB/Platform::Exception::CreateException", "VCCORLIB/Platform::Exception::HResult", "VCCORLIB/Platform::Exception::Message"]
+f1_keywords: 
+  - "VCCORLIB/Platform::Exception::Exception"
+  - "VCCORLIB/Platform::Exception::CreateException"
+  - "VCCORLIB/Platform::Exception::HResult"
+  - "VCCORLIB/Platform::Exception::Message"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -17,6 +21,8 @@ caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Exception Class
 Represents errors that occur during application execution. Custom exception classes can't be derived from `Platform::Exception`. If you require a custom exception, you can use `Platform::COMException` and specify an app-specific HRESULT.  

@@ -4,16 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["typeid keyword [C++]", "reflection [C++}, about reflection", "metadata, reflection", "GetType method", ".NET Framework [C++], reflection", "data types [C++], reflection", "reflection [C++}"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "typeid keyword [C++]"
+  - "reflection [C++}, about reflection"
+  - "metadata, reflection"
+  - "GetType method"
+  - ".NET Framework [C++], reflection"
+  - "data types [C++], reflection"
+  - "reflection [C++}"
 ms.assetid: 46b6ff4a-e441-4022-8892-78e69422f230
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # Reflection (C++/CLI)
 Reflection allows known data types to be inspected at runtime. Reflection allows the enumeration of data types in a given assembly, and the members of a given class or value type can be discovered. This is true regardless of whether the type was known or referenced at compile time. This makes reflection a useful feature for development and code management tools.  

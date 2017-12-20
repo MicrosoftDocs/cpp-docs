@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["MFC [C++], Windows Forms Controls", "Windows Forms [C++], MFC support"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "MFC [C++], Windows Forms Controls"
+  - "Windows Forms [C++], MFC support"
 ms.assetid: 625b5821-f923-4701-aca0-c1a4ceca4f63
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Create the User Control and Host MDI View
 The following steps show how to create a .NET Framework user control, author the user control in a control class library (specifically, a Windows Control Library project), and then compile the project into an assembly. The control can then be consumed from an MFC application that uses classes derived from [CView Class](../mfc/reference/cview-class.md) and [CWinFormsView Class](../mfc/reference/cwinformsview-class.md).  

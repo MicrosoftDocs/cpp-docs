@@ -4,20 +4,57 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_ismbckata", "_ismbchira_l", "_ismbchira", "_ismbckata_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+apiname: 
+  - "_ismbckata"
+  - "_ismbchira_l"
+  - "_ismbchira"
+  - "_ismbckata_l"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-multibyte-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["ismbckata_l", "_ismbckata_l", "ismbckata", "ismbchira", "_ismbckata", "ismbchira_l", "_ismbchira_l", "_ismbchira"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_ismbckata function", "_ismbchira function", "_ismbckata_l function", "Katakana", "ismbchira function", "_ismbchira_l function", "ismbchira_l function", "ismbdkata_l function", "Hiragana", "ismbckata function"]
+f1_keywords: 
+  - "ismbckata_l"
+  - "_ismbckata_l"
+  - "ismbckata"
+  - "ismbchira"
+  - "_ismbckata"
+  - "ismbchira_l"
+  - "_ismbchira_l"
+  - "_ismbchira"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_ismbckata function"
+  - "_ismbchira function"
+  - "_ismbckata_l function"
+  - "Katakana"
+  - "ismbchira function"
+  - "_ismbchira_l function"
+  - "ismbchira_l function"
+  - "ismbdkata_l function"
+  - "Hiragana"
+  - "ismbckata function"
 ms.assetid: 2db388a2-be31-489b-81c8-f6bf3f0582d3
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l
 **Code Page 932 Specific functions**  

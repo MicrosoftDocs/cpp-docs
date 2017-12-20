@@ -4,16 +4,32 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["OpenAll method", "attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "methods [C++], OLE DB Consumer Wizard-generated", "CloseDataSource method", "consumer wizard-generated classes and methods", "OpenDataSource method", "CloseAll method", "OpenRowset method", "GetRowsetProperties method"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "OpenAll method"
+  - "attribute-injected classes and methods"
+  - "wizard-generated classes and methods"
+  - "OLE DB consumers, wizard-generated classes and methods"
+  - "methods [C++], OLE DB Consumer Wizard-generated"
+  - "CloseDataSource method"
+  - "consumer wizard-generated classes and methods"
+  - "OpenDataSource method"
+  - "CloseAll method"
+  - "OpenRowset method"
+  - "GetRowsetProperties method"
 ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Consumer Wizard-Generated Methods
 The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain functions of which you should be aware. Note that some methods are implemented differently in attributed projects, so there are a few caveats; each case is covered below. For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).  

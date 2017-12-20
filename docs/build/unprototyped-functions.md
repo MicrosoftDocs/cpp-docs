@@ -4,15 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
+dev_langs: 
+  - "C++"
 ms.assetid: 34200b8c-5b52-4f0d-aff8-9f70d82868ed
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Unprototyped Functions
 For functions not fully prototyped, the caller will pass integer values as integers and floating-point values as double precision. For floating-point values only, both the integer register and the floating-point register will contain the float value in case the callee expects the value in the integer registers.  

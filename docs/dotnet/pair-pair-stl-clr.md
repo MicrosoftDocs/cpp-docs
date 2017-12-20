@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::pair::pair"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["pair member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::pair::pair"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "pair member [STL/CLR]"
 ms.assetid: 188035f3-bd37-4b46-96dd-5ceb9a16df79
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # pair::pair (STL/CLR)
 Constructs a pair object.  

@@ -18,6 +18,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # back_inserter Function
 Returns an iterator that is used to insert elements at the end of the specified collection.  

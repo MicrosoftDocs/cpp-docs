@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "index-page "
-dev_langs: ["C++"]
-helpviewer_keywords: ["expressions [C++]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "expressions [C++]"
 ms.assetid: aaa1f250-7185-4113-b682-3f5e995943d1
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Expressions (C++)
 This section describes C++ expressions. Expressions are sequences of operators and operands that are used for one or more of these purposes:  

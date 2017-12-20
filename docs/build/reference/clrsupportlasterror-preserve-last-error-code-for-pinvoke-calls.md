@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/CLRSUPPORTLASTERROR"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/CLRSUPPORTLASTERROR linker option", "-CLRSUPPORTLASTERROR linker option"]
+f1_keywords: 
+  - "/CLRSUPPORTLASTERROR"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/CLRSUPPORTLASTERROR linker option"
+  - "-CLRSUPPORTLASTERROR linker option"
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)
 **/CLRSUPPORTLASTERROR**, which is on by default, preserves the last error code of functions called through the P/Invoke mechanism, which allows you to call native functions in DLLS, from code compiled with **/clr**.  

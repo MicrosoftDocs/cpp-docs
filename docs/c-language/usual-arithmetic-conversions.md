@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["arithmetic conversions [C++]", "type conversion [C++], arithmetic", "operators [C], arithmetic conversions", "data type conversion [C++], arithmetic", "conversions [C++], arithmetic", "arithmetic operators [C++], type conversions"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "arithmetic conversions [C++]"
+  - "type conversion [C++], arithmetic"
+  - "operators [C], arithmetic conversions"
+  - "data type conversion [C++], arithmetic"
+  - "conversions [C++], arithmetic"
+  - "arithmetic operators [C++], type conversions"
 ms.assetid: bfa49803-0efd-45d0-b987-111412a140d7
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Usual Arithmetic Conversions
 Most C operators perform type conversions to bring the operands of an expression to a common type or to extend short values to the integer size used in machine operations. The conversions performed by C operators depend on the specific operator and the type of the operand or operands. However, many operators perform similar conversions on operands of integral and floating types. These conversions are known as "arithmetic conversions." Conversion of an operand value to a compatible type causes no change to its value.  

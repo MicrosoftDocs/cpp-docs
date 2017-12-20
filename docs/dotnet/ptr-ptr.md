@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["ptr::ptr", "ptr.ptr", "msclr.com.ptr.ptr", "msclr::com::ptr::ptr"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ptr::ptr"]
+f1_keywords: 
+  - "ptr::ptr"
+  - "ptr.ptr"
+  - "msclr.com.ptr.ptr"
+  - "msclr::com::ptr::ptr"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ptr::ptr"
 ms.assetid: 4f5883b4-7c0a-46c6-aa9f-4e49eed463eb
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # ptr::ptr
 Constructs a `com::ptr` to wrap a COM object.  

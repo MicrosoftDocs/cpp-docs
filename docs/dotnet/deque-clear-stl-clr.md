@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::deque::clear"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["clear member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::deque::clear"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "clear member [STL/CLR]"
 ms.assetid: 1d9a3d11-b3fa-43a7-a508-7a05cbcd91bf
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # deque::clear (STL/CLR)
 Removes all elements.  

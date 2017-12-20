@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["name"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["NAME .def file statement"]
+f1_keywords: 
+  - "name"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "NAME .def file statement"
 ms.assetid: 5c9b6bd8-9275-46a5-afba-f17a5936dc26
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # NAME (C/C++)
 Specifies a name for the main output file.  

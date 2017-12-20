@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["new keyword [C++]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "new keyword [C++]"
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # new Operator (C++)
 Allocates memory for an object or array of objects of *type-name* from the free store and returns a suitably typed, nonzero pointer to the object.  

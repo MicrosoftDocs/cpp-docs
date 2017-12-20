@@ -7,7 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Value"]
+f1_keywords: 
+  - "VCCORLIB/Namespace not found::Platform"
+  - "VCCORLIB/Namespace not found::Platform::Value"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -17,6 +19,8 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::IBoxArray Interface
 `IBoxArray` is the wrapper for arrays of value types that are passed across the application binary interface (ABI) or stored in collections of `Platform::Object^` elements such as those in XAML controls.  

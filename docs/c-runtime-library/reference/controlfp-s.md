@@ -4,20 +4,43 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_controlfp_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+apiname: 
+  - "_controlfp_s"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-runtime-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["controlfp_s", "_controlfp_s"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["floating-point numbers, control word", "controlfp_s function", "floating-point functions, setting control word", "EM_AMBIGUOUS", "_controlfp_s function"]
+f1_keywords: 
+  - "controlfp_s"
+  - "_controlfp_s"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "floating-point numbers, control word"
+  - "controlfp_s function"
+  - "floating-point functions, setting control word"
+  - "EM_AMBIGUOUS"
+  - "_controlfp_s function"
 ms.assetid: a51fc3f6-ab13-41f0-b227-6bf02d98e987
 caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _controlfp_s
 Gets and sets the floating-point control word. This version of [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md) has security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

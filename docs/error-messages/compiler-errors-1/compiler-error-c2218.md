@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: ["C2218"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["C2218"]
+f1_keywords: 
+  - "C2218"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2218"
 ms.assetid: b0f55da4-8edb-4b45-b298-1a091981bd7b
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Compiler Error C2218
 '__vectorcall' cannot be used with '/arch:IA32'  

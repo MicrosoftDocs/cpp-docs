@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["lock statement", "lock C# keyword [C++]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "lock statement"
+  - "lock C# keyword [C++]"
 ms.assetid: 436fe544-ffb7-49b9-9798-90794e9974de
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Implement the lock C# Keyword (C++/CLI)
 This topic shows how to implement the C# `lock` keyword in Visual C++. 

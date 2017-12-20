@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["Trace class, Visual C++", ".NET Framework [C++], Debug class", "Debug class"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Trace class, Visual C++"
+  - ".NET Framework [C++], Debug class"
+  - "Debug class"
 ms.assetid: 076bd528-1b6f-4e8a-a372-eb5849cf969a
 caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # Debug Class (C++/CLI)
 When using <xref:System.Diagnostics.Debug> in a Visual C++ application, the behavior does not change between a debug and a release build.  

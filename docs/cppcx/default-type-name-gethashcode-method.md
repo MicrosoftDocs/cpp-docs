@@ -16,6 +16,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # default::(type_name)::GetHashCode Method
 Returns the hash code for this instance.  

@@ -16,6 +16,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::IValueType Interface
 `Platform::IValueType` is an infrastructure interface that is implemented by value classes and value structs. Not to be used explicitly in your code.  

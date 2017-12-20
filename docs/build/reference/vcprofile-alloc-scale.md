@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VCPROFILE_ALLOC_SCALE"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["VCPROFILE_ALLOC_SCALE environment variable"]
+f1_keywords: 
+  - "VCPROFILE_ALLOC_SCALE"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "VCPROFILE_ALLOC_SCALE environment variable"
 ms.assetid: 5cb5ce27-f9b8-489b-b46c-d6e9bcab2d34
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # VCPROFILE_ALLOC_SCALE
 Modify the amount of memory allocated to hold the profile data.  

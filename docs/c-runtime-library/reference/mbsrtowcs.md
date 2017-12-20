@@ -4,20 +4,38 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["mbsrtowcs"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+apiname: 
+  - "mbsrtowcs"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-convert-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["mbsrtowcs"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["mbsrtowcs function"]
+f1_keywords: 
+  - "mbsrtowcs"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "mbsrtowcs function"
 ms.assetid: f3a29de8-e36e-425b-a7fa-a258e6d7909d
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # mbsrtowcs
 Converts a multibyte character string in the current locale to a corresponding wide character string, with the capability of restarting in the middle of a multibyte character. A more secure version of this function is available; see [mbsrtowcs_s](../../c-runtime-library/reference/mbsrtowcs-s.md).  

@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["upgrading Visual C++ applications, /clr compiler option", "compiling native code [C++]", "interoperability [C++], /clr compiler option", "interop [C++], /clr compiler option", "migration [C++], /clr compiler option", "/clr compiler option [C++], porting to"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "upgrading Visual C++ applications, /clr compiler option"
+  - "compiling native code [C++]"
+  - "interoperability [C++], /clr compiler option"
+  - "interop [C++], /clr compiler option"
+  - "migration [C++], /clr compiler option"
+  - "/clr compiler option [C++], porting to"
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
 caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Migrate to /clr
 This topic discusses issues that arise when compiling native code with **/clr** (see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information). **/clr** allows Visual C++ modules to invoke and be invoked from .NET assemblies while retaining compatibility with unmanaged modules. See [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md) and [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md) for more information on the advantages of compiling with **/clr**.  

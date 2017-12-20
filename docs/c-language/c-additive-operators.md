@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["usual arithmetic conversions", "operators [C], addition", "+ operator, additive operators", "additive operators", "arithmetic operators [C++], additive operators"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "usual arithmetic conversions"
+  - "operators [C], addition"
+  - "+ operator, additive operators"
+  - "additive operators"
+  - "arithmetic operators [C++], additive operators"
 ms.assetid: bb8ac205-b061-41fc-8dd4-dab87c8b900c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # C Additive Operators
 The additive operators perform addition (**+**) and subtraction (**-**).  

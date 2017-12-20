@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["final_CPP"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["final Identifier"]
+f1_keywords: 
+  - "final_CPP"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "final Identifier"
 ms.assetid: 649866d0-79d4-449f-ab74-f84b911b79a3
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # final Specifier
 You can use the `final` keyword to designate virtual functions that cannot be overridden in a derived class. You can also use it to designate classes that cannot be inherited.  

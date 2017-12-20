@@ -7,7 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["VCCORLIB/Platform::Object::Object", "VCCORLIB/Platform::Object::Equals", "VCCORLIB/Platform::Object::GetHashCode", "VCCORLIB/Platform::Object::ReferenceEquals", "VCCORLIB/Platform::ToString", "VCCORLIB/Platform::GetType"]
+f1_keywords: 
+  - "VCCORLIB/Platform::Object::Object"
+  - "VCCORLIB/Platform::Object::Equals"
+  - "VCCORLIB/Platform::Object::GetHashCode"
+  - "VCCORLIB/Platform::Object::ReferenceEquals"
+  - "VCCORLIB/Platform::ToString"
+  - "VCCORLIB/Platform::GetType"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -17,6 +23,8 @@ caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Object Class
 Provides common behavior for ref classes and ref structs in Windows Store apps. All ref class and ref struct instances are implicitly convertible to Platform::Object^ and can override its virtual ToString method.  

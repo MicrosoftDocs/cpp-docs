@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["boxing, Visual C++", "__box keyword", "boxing", "boxing, __box keyword", "value types, boxed"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "boxing, Visual C++"
+  - "__box keyword"
+  - "boxing"
+  - "boxing, __box keyword"
+  - "value types, boxed"
 ms.assetid: 9597c92f-a3fe-44af-ad80-f9d656847a35
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # Implicit Boxing of Value Types
 The boxing of value types has changed from Managed Extensions for C++ to Visual C++.  

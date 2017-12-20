@@ -18,6 +18,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # begin Function
 Returns an iterator that points to the beginning of a collection that is accessed by the specified interface parameter.  

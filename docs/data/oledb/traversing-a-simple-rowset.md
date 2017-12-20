@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["data access [C++], rowsets", "rowsets [C++], accessing", "simple rowsets", "OLE DB consumers [C++], database attributes", "accessors [C++], rowsets"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "data access [C++], rowsets"
+  - "rowsets [C++], accessing"
+  - "simple rowsets"
+  - "OLE DB consumers [C++], database attributes"
+  - "accessors [C++], rowsets"
 ms.assetid: b45acf16-4029-429d-ab8d-b7fba98b9740
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Traversing a Simple Rowset
 The following example shows a quick and easy database access that does not involve commands. The following consumer code, in an ATL project, retrieves records from a table called *Artists* in a Microsoft Access database using the Microsoft OLE DB Provider for ODBC. The code creates a [CTable](../../data/oledb/ctable-class.md) table object with an accessor based on the user record class `CArtists`. It opens a connection, opens a session on the connection, and opens the table on the session.  

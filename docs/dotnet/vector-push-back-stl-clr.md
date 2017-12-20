@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::vector::push_back"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["push_back member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::vector::push_back"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "push_back member [STL/CLR]"
 ms.assetid: 4a4c302b-e29f-4b68-b759-2f831814d896
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # vector::push_back (STL/CLR)
 Adds a new last element.  

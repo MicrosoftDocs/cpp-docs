@@ -19,6 +19,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::InvalidArgumentException Class
 Thrown when one of the arguments provided to a method is not valid.  

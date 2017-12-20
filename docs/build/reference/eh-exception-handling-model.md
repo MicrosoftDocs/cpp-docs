@@ -4,17 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLWCECompilerTool.ExceptionHandling", "/eh", "VC.Project.VCCLCompilerTool.ExceptionHandling"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["exception handling, compiler model", "cl.exe compiler, exception handling", "EH compiler option [C++]", "-EH compiler option [C++]", "/EH compiler option [C++]"]
+f1_keywords: 
+  - "VC.Project.VCCLWCECompilerTool.ExceptionHandling"
+  - "/eh"
+  - "VC.Project.VCCLCompilerTool.ExceptionHandling"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "exception handling, compiler model"
+  - "cl.exe compiler, exception handling"
+  - "EH compiler option [C++]"
+  - "-EH compiler option [C++]"
+  - "/EH compiler option [C++]"
 ms.assetid: 754b916f-d206-4472-b55a-b6f1b0f2cb4d
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /EH (Exception Handling Model)
 Specifies the kind of exception handling used by the compiler, when to optimize away exception checks, and whether to destroy C++ objects that go out of scope because of an exception. If **/EH** is not specified, the compiler catches both asynchronous structured exceptions and C++ exceptions, but does not destroy C++ objects that go out of scope because of an asynchronous exception.  

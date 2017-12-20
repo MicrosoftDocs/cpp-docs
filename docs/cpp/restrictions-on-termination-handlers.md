@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["termination handlers [C++], limitations", "restrictions, termination handlers", "try-catch keyword [C++], termination handlers"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "termination handlers [C++], limitations"
+  - "restrictions, termination handlers"
+  - "try-catch keyword [C++], termination handlers"
 ms.assetid: 8b1cb481-303f-4e79-b409-57a002a9fa9e
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Restrictions on Termination Handlers
 You cannot use a `goto` statement to jump into a `__try` statement block or a `__finally` statement block. Instead, you must enter the statement block through normal flow of control. (You can, however, jump out of a `__try` statement block.) Also, you cannot nest an exception handler or termination handler inside a `__finally` block.  

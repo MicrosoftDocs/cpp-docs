@@ -7,7 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["COLLECTION/Platform::Collections::BackInsertIterator::BackInsertIterator"]
+f1_keywords: 
+  - "COLLECTION/Platform::Collections::BackInsertIterator::BackInsertIterator"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -17,6 +18,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Collections::BackInsertIterator Class
 Represents an iterator that inserts, rather than overwrites, elements into the back end of a sequential collection.  

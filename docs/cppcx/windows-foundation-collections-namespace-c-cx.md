@@ -18,6 +18,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Windows::Foundation::Collections Namespace (C++/CX)
 C++/CX supplements the Windows::Foundation::Collections namespace with functions that simplify using the Vector, VectorView, Map, and MapView collection classes.  

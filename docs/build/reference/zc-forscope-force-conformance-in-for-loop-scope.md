@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLCompilerTool.ForceConformanceInForLoopScope", "VC.Project.VCCLWCECompilerTool.ForceConformanceInForLoopScope", "/zc:forScope"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
+f1_keywords: 
+  - "VC.Project.VCCLCompilerTool.ForceConformanceInForLoopScope"
+  - "VC.Project.VCCLWCECompilerTool.ForceConformanceInForLoopScope"
+  - "/zc:forScope"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/Zc compiler options [C++]"
+  - "-Zc compiler options [C++]"
+  - "Conformance compiler options"
+  - "Zc compiler options [C++]"
 ms.assetid: 3031f02d-3b14-4ad0-869e-22b0110c3aed
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Zc:forScope (Force Conformance in for Loop Scope)
 Used to implement standard C++ behavior for [for](../../cpp/for-statement-cpp.md) loops with Microsoft extensions ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).  **/Zc:forScope** is on by default.  

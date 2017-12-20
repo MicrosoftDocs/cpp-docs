@@ -4,17 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["not_eq", "!=", "=="]
-dev_langs: ["C++"]
-helpviewer_keywords: ["!= operator", "equality operator", "not equal to comparison operator", "equality operator [C++], syntax", "== operator", "not_eq operator", "equal to operator"]
+f1_keywords: 
+  - "not_eq"
+  - "!="
+  - "=="
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "!= operator"
+  - "equality operator"
+  - "not equal to comparison operator"
+  - "equality operator [C++], syntax"
+  - "== operator"
+  - "not_eq operator"
+  - "equal to operator"
 ms.assetid: ba4e9659-2392-4fb4-be5a-910a2a6df45a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Equality Operators: == and !=
 ## Syntax  

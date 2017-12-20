@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: 
+  - "cpp"
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/validate-charset", "validate-charset"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/validate-charset compiler option"]
+f1_keywords: 
+  - "/validate-charset"
+  - "validate-charset"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/validate-charset compiler option"
 ms.assetid: 50360fd0-4d32-4a4f-95d0-53d38c12ad4c
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /validate-charset (Validate for compatible characters)
 Validates that the source file text contains only characters representable as UTF-8.  

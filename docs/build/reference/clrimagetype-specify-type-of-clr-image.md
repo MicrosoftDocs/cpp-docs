@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/CLRIMAGETYPE", "VC.Project.VCLinkerTool.CLRImageType"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/CLRIMAGETYPE linker option", "-CLRIMAGETYPE linker option"]
+f1_keywords: 
+  - "/CLRIMAGETYPE"
+  - "VC.Project.VCLinkerTool.CLRImageType"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/CLRIMAGETYPE linker option"
+  - "-CLRIMAGETYPE linker option"
 ms.assetid: 04c60ee6-9dd7-4391-bc03-6926ad0fa116
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /CLRIMAGETYPE (Specify Type of CLR Image)
 ```  

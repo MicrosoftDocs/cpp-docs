@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_map"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["<cliext/hash_map> header [STL/CLR]", "<hash_map> header [STL/CLR]", "hash_map class [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_map"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "<cliext/hash_map> header [STL/CLR]"
+  - "<hash_map> header [STL/CLR]"
+  - "hash_map class [STL/CLR]"
 ms.assetid: c3cfc69b-04c6-42ae-a30e-0eda953fe883
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_map (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `hash_map` to manage a sequence of elements as a hash table, each table entry storing a bidirectional linked list of nodes, and each node storing one element. An element consists of a key, for ordering the sequence, and a mapped value, which goes along for the ride.  

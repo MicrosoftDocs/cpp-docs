@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["msclr::interop::marshal_context::marshal_context", "marshal_context::marshal_context", "msclr.interop.marshal_context.marshal_context", "marshal_context.marshal_context"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["marshal_context class [C++], operations"]
+f1_keywords: 
+  - "msclr::interop::marshal_context::marshal_context"
+  - "marshal_context::marshal_context"
+  - "msclr.interop.marshal_context.marshal_context"
+  - "marshal_context.marshal_context"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "marshal_context class [C++], operations"
 ms.assetid: 5f08c895-60b0-4f72-97ff-7ae37c68e853
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # marshal_context::marshal_context
 Constructs a `marshal_context` object to use for data conversion between managed and native data types.  

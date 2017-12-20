@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["characters [C++], accessing in System::String", "examples [C++], strings", "strings [C++], accessing characters"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "characters [C++], accessing in System::String"
+  - "examples [C++], strings"
+  - "strings [C++], accessing characters"
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Access Characters in a System::String
 You can access characters of a <xref:System.String> object for high-performance calls to unmanaged functions that take `wchar_t*` strings. The method yields an interior pointer to the first character of the <xref:System.String> object. This pointer can be manipulated directly or pinned and passed to a function expecting an ordinary `wchar_t` string.  

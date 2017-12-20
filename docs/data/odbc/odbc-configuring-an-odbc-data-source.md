@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["ODBC data sources, configuring", "ODBC connections, configuring", "configuring ODBC data sources"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ODBC data sources, configuring"
+  - "ODBC connections, configuring"
+  - "configuring ODBC data sources"
 ms.assetid: 1cd03e6a-8d59-4eca-a8c6-1010582d5e67
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # ODBC: Configuring an ODBC Data Source
 To use a [data source](../../data/odbc/data-source-odbc.md) with an application you have developed, you must use ODBC Administrator to configure it. ODBC Administrator keeps track of available data sources and their connection information in the Windows registry. Use ODBC Administrator to add, modify, and delete data sources in the **Data Sources** dialog box and to add and delete ODBC drivers.  

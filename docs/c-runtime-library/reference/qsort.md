@@ -4,20 +4,42 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["qsort"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
+apiname: 
+  - "qsort"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ntdll.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-utility-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["qsort"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["qsort function", "quick-sort algorithm", "sorting arrays", "arrays [CRT], sorting"]
+f1_keywords: 
+  - "qsort"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "qsort function"
+  - "quick-sort algorithm"
+  - "sorting arrays"
+  - "arrays [CRT], sorting"
 ms.assetid: d6cb33eb-d209-485f-8d41-229eb743c027
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # qsort
 Performs a quick sort. A more secure version of this function is available; see [qsort_s](../../c-runtime-library/reference/qsort-s.md).  

@@ -4,20 +4,40 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_CrtDoForAllClientObjects"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_CrtDoForAllClientObjects"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["_CrtDoForAllClientObjects", "CrtDoForAllClientObjects", "crtdbg/_CrdDoForAllClientObjects"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_CrtDoForAllClientObjects function", "CrtDoForAllClientObjects function"]
+f1_keywords: 
+  - "_CrtDoForAllClientObjects"
+  - "CrtDoForAllClientObjects"
+  - "crtdbg/_CrdDoForAllClientObjects"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_CrtDoForAllClientObjects function"
+  - "CrtDoForAllClientObjects function"
 ms.assetid: d0fdb835-3cdc-45f1-9a21-54208e8df248
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _CrtDoForAllClientObjects
 Calls an application-supplied function for all `_CLIENT_BLOCK` types in the heap (debug version only).  

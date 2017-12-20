@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["operators [C++], sequential-evaluation", "sequential-evaluation operator", "comma operator"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operators [C++], sequential-evaluation"
+  - "sequential-evaluation operator"
+  - "comma operator"
 ms.assetid: 587514f4-c8e2-44e9-81a8-7a553ce1453a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Sequential-Evaluation Operator
 The sequential-evaluation operator, also called the "comma operator," evaluates its two operands sequentially from left to right.  

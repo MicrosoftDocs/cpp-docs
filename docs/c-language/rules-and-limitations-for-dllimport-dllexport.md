@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["dllexport attribute [C++], limitations and rules", "dllimport attribute [C++], limitations and rules", "dllexport attribute [C++]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "dllexport attribute [C++], limitations and rules"
+  - "dllimport attribute [C++], limitations and rules"
+  - "dllexport attribute [C++]"
 ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Rules and Limitations for dllimport/dllexport
 **Microsoft Specific**  

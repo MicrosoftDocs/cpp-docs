@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["GetDBStatus", "IRowsetImpl.GetDBStatus", "IRowsetImpl::GetDBStatus"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetDBStatus method"]
+f1_keywords: 
+  - "GetDBStatus"
+  - "IRowsetImpl.GetDBStatus"
+  - "IRowsetImpl::GetDBStatus"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetDBStatus method"
 ms.assetid: e51d8ee2-fc0c-4909-861c-026c94fb0dfc
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # IRowsetImpl::GetDBStatus
 Returns the `DBSTATUS` status flags for the specified field.  

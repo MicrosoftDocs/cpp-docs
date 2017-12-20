@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["__restrict_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["__restrict keyword [C++]"]
+f1_keywords: 
+  - "__restrict_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "__restrict keyword [C++]"
 ms.assetid: 2d151b4d-f930-49df-bd16-d8757ec7fa83
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # __restrict
 Like the **__declspec ( [restrict](../cpp/restrict.md) )** modifier, the `__restrict` keyword indicates that a symbol is not aliased in the current scope. The `__restrict` keyword differs from the `__declspec ( restrict )` modifier in the following ways:  

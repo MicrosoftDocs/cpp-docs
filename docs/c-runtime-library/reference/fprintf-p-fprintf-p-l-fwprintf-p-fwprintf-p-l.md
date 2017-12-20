@@ -4,20 +4,58 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_fwprintf_p", "_fprintf_p_l", "_fwprintf_p_l", "_fprintf_p"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_fwprintf_p"
+  - "_fprintf_p_l"
+  - "_fwprintf_p_l"
+  - "_fprintf_p"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["_fprintf_p", "_ftprintf_p", "fwprintf_p", "_fwprintf_p", "fprintf_p", "ftprintf_p"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["fprintf_p_l function", "fprintf_p function", "_fprintf_p_l function", "_fprintf_p function", "_ftprintf_p_l function", "streams, printing formatted data to", "_fwprintf_p function", "fwprintf_p function", "_ftprintf_p function", "_fwprintf_p_l function", "ftprintf_p function", "printing [C++], formatted data to streams", "ftprintf_p_l function", "fwprintf_p_l function"]
+f1_keywords: 
+  - "_fprintf_p"
+  - "_ftprintf_p"
+  - "fwprintf_p"
+  - "_fwprintf_p"
+  - "fprintf_p"
+  - "ftprintf_p"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "fprintf_p_l function"
+  - "fprintf_p function"
+  - "_fprintf_p_l function"
+  - "_fprintf_p function"
+  - "_ftprintf_p_l function"
+  - "streams, printing formatted data to"
+  - "_fwprintf_p function"
+  - "fwprintf_p function"
+  - "_ftprintf_p function"
+  - "_fwprintf_p_l function"
+  - "ftprintf_p function"
+  - "printing [C++], formatted data to streams"
+  - "ftprintf_p_l function"
+  - "fwprintf_p_l function"
 ms.assetid: 46b082e1-45ba-4383-9ee4-97015aa50bc6
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
 Prints formatted data to a stream.  

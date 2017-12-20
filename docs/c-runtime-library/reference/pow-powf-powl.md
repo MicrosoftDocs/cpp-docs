@@ -4,20 +4,50 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["powl", "pow", "powf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+apiname: 
+  - "powl"
+  - "pow"
+  - "powf"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-math-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["powl", "pow", "_powl", "powf"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["exponential calculations", "powl function", "_powl function", "exponentiation", "powers, calculating", "calculating exponentials", "powf function", "pow function"]
+f1_keywords: 
+  - "powl"
+  - "pow"
+  - "_powl"
+  - "powf"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "exponential calculations"
+  - "powl function"
+  - "_powl function"
+  - "exponentiation"
+  - "powers, calculating"
+  - "calculating exponentials"
+  - "powf function"
+  - "pow function"
 ms.assetid: e75c33ed-2e59-48b1-be40-81da917324f1
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # pow, powf, powl
 Calculates `x` raised to the power of `y`.  

@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "index-page "
-dev_langs: ["C++"]
-helpviewer_keywords: ["Visual C++, keywords", "keywords [C++]", "__identifer keyword [C++], naming", "Microsoft-specific keywords", "__identifer keyword [C++]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Visual C++, keywords"
+  - "keywords [C++]"
+  - "__identifer keyword [C++], naming"
+  - "Microsoft-specific keywords"
+  - "__identifer keyword [C++]"
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Keywords (C++)
 Keywords are predefined reserved identifiers that have special meanings. They cannot be used as identifiers in your program. The following keywords are reserved for Microsoft C++. Names with leading underscores are Microsoft extensions.  

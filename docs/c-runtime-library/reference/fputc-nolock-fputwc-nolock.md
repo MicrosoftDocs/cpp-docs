@@ -4,20 +4,50 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_fputwc_nolock", "_fputc_nolock"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+apiname: 
+  - "_fputwc_nolock"
+  - "_fputc_nolock"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-stdio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_fputc_nolock", "fputwc_nolock", "fputc_nolock", "fputtc_nolock", "_fputwc_nolock", "_fputtc_nolock"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["streams, writing characters to", "fputwc_nolock function", "fputtc_nolock function", "_fputc_nolock function", "fputc_nolock function", "_fputtc_nolock function", "_fputwc_nolock function"]
+f1_keywords: 
+  - "_fputc_nolock"
+  - "fputwc_nolock"
+  - "fputc_nolock"
+  - "fputtc_nolock"
+  - "_fputwc_nolock"
+  - "_fputtc_nolock"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "streams, writing characters to"
+  - "fputwc_nolock function"
+  - "fputtc_nolock function"
+  - "_fputc_nolock function"
+  - "fputc_nolock function"
+  - "_fputtc_nolock function"
+  - "_fputwc_nolock function"
 ms.assetid: c63eb3ad-58fa-46d0-9249-9c25f815eab9
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _fputc_nolock, _fputwc_nolock
 Writes a character to a stream without locking the thread.  

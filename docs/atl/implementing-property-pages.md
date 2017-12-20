@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["IPropertyPage2 class", "IPropertyPage class", "property pages, implementing"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IPropertyPage2 class"
+  - "IPropertyPage class"
+  - "property pages, implementing"
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Implementing Property Pages
 Property pages are COM objects that implement the `IPropertyPage` or **IPropertyPage2** interface. ATL provides support for implementing property pages through the [ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md) in the [Add Class dialog box](../ide/add-class-dialog-box.md).  

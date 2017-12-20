@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["IRowsetImpl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["IRowsetImpl class"]
+f1_keywords: 
+  - "IRowsetImpl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IRowsetImpl class"
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # IRowsetImpl Class
 Provides an implementation of the `IRowset` interface.  

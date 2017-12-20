@@ -18,6 +18,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Metadata::DefaultMemberAttribute Attribute
 Indicates the preferred function to invoke among several possible overloaded functions.  

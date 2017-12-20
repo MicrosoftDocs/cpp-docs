@@ -4,20 +4,40 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["memcpy", "wmemcpy"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "memcpy"
+  - "wmemcpy"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["wmemcpy", "memcpy"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["wmemcpy function", "memcpy function"]
+f1_keywords: 
+  - "wmemcpy"
+  - "memcpy"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "wmemcpy function"
+  - "memcpy function"
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # memcpy, wmemcpy
 Copies bytes between buffers. More secure versions of these functions are available; see [memcpy_s, wmemcpy_s](../../c-runtime-library/reference/memcpy-s-wmemcpy-s.md).  

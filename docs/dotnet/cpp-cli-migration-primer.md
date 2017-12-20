@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["C++/CLI Version 2", "upgrading Visual C++ applications, Managed Extensions for C++ to Visual C++ 2005 syntax", "migration [C++], C++/CLI Version 2", "Managed Extensions for C++, upgrading syntax", "C++/CLI Version 2, managed extensions"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C++/CLI Version 2"
+  - "upgrading Visual C++ applications, Managed Extensions for C++ to Visual C++ 2005 syntax"
+  - "migration [C++], C++/CLI Version 2"
+  - "Managed Extensions for C++, upgrading syntax"
+  - "C++/CLI Version 2, managed extensions"
 ms.assetid: 8ec926b5-73f6-4f0c-bcdf-5203d293849a
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # C++/CLI Migration Primer
 This is a guide to moving your Visual C++ programs from Managed Extensions for C++ to Visual C++. For a checklist summary of syntactic changes, see [(NOTINBUILD)Managed Extensions for C++ Syntax Upgrade Checklist](http://msdn.microsoft.com/en-us/edbded88-7ef3-4757-bd9d-b8f48ac2aada).  

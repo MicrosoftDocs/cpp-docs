@@ -4,20 +4,62 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_vswprintf_l", "_vsprintf_l", "vsprintf", "vswprintf", "__vswprintf_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_vswprintf_l"
+  - "_vsprintf_l"
+  - "vsprintf"
+  - "vswprintf"
+  - "__vswprintf_l"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["vstprintf", "vswprintf", "_vstprintf", "vsprintf", "__vswprintf_l", "_vsprintf_l", "_vswprintf_l", "vswprintf_l"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["__vswprintf_l function", "_vstprintf_l function", "formatted text", "vstprintf_l function", "_vswprintf_l function", "vsprintf_l function", "buffers, avoiding overruns", "buffer overruns", "vswprintf_l function", "buffers, buffer overruns", "vstprintf function", "_vsprintf_l function", "vswprintf function", "vsprintf function", "_vstprintf function"]
+f1_keywords: 
+  - "vstprintf"
+  - "vswprintf"
+  - "_vstprintf"
+  - "vsprintf"
+  - "__vswprintf_l"
+  - "_vsprintf_l"
+  - "_vswprintf_l"
+  - "vswprintf_l"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "__vswprintf_l function"
+  - "_vstprintf_l function"
+  - "formatted text"
+  - "vstprintf_l function"
+  - "_vswprintf_l function"
+  - "vsprintf_l function"
+  - "buffers, avoiding overruns"
+  - "buffer overruns"
+  - "vswprintf_l function"
+  - "buffers, buffer overruns"
+  - "vstprintf function"
+  - "_vsprintf_l function"
+  - "vswprintf function"
+  - "vsprintf function"
+  - "_vstprintf function"
 ms.assetid: b8ef1c0d-58f9-4a18-841a-f1a989e1c29b
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 Write formatted output using a pointer to a list of arguments. More secure versions of these functions are available; see [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](../../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md).  

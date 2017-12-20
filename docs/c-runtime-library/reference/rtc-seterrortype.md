@@ -4,20 +4,40 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_RTC_SetErrorType"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_RTC_SetErrorType"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["RTC_SetErrorType", "_RTC_SetErrorType"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["run-time errors", "RTC_SetErrorType function", "_RTC_SetErrorType function"]
+f1_keywords: 
+  - "RTC_SetErrorType"
+  - "_RTC_SetErrorType"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "run-time errors"
+  - "RTC_SetErrorType function"
+  - "_RTC_SetErrorType function"
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _RTC_SetErrorType
 Associates an error that is detected by run-time error checks (RTCs) with a type. Your error handler processes how to output errors of the specified type.  

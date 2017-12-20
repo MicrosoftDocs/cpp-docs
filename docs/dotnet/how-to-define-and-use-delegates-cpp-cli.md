@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["delegates"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "delegates"
 ms.assetid: 1cdf3420-89c1-47c0-b796-aa984020e0f8
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Define and Use Delegates (C++/CLI)
 This article shows how to define and consume delegates in C++/CLI.  

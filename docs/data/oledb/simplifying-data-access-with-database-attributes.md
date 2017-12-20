@@ -4,17 +4,36 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["vc-attr.db_param", "vc-attr.db_column", "vc-attr.db_accessor", "vc-attr.db_command", "vc-attr.db_table", "vc-attr.db_source"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["attributes [C++], database", "attributes [C++], data access", "databases [C++], attributes", "data [C++], simplifying access", "data access [C++], database attributes", "database attributes [C++]", "OLE DB consumers [C++], database attributes", "attributes [C++], OLE DB consumer"]
+f1_keywords: 
+  - "vc-attr.db_param"
+  - "vc-attr.db_column"
+  - "vc-attr.db_accessor"
+  - "vc-attr.db_command"
+  - "vc-attr.db_table"
+  - "vc-attr.db_source"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "attributes [C++], database"
+  - "attributes [C++], data access"
+  - "databases [C++], attributes"
+  - "data [C++], simplifying access"
+  - "data access [C++], database attributes"
+  - "database attributes [C++]"
+  - "OLE DB consumers [C++], database attributes"
+  - "attributes [C++], OLE DB consumer"
 ms.assetid: 560d2456-e307-4cb7-ba7b-4d0ed674697f
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Simplifying Data Access with Database Attributes
 This topic demonstrates the use of database attributes to simplify database operations.  

@@ -7,7 +7,13 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["COLLECTION/Platform::Collections::VectorView::VectorView", "COLLECTION/Platform::Collections::VectorView::First", "COLLECTION/Platform::Collections::VectorView::GetAt", "COLLECTION/Platform::Collections::VectorView::GetMany", "COLLECTION/Platform::Collections::VectorView::IndexOf", "COLLECTION/Platform::Collections::VectorView::Size"]
+f1_keywords: 
+  - "COLLECTION/Platform::Collections::VectorView::VectorView"
+  - "COLLECTION/Platform::Collections::VectorView::First"
+  - "COLLECTION/Platform::Collections::VectorView::GetAt"
+  - "COLLECTION/Platform::Collections::VectorView::GetMany"
+  - "COLLECTION/Platform::Collections::VectorView::IndexOf"
+  - "COLLECTION/Platform::Collections::VectorView::Size"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -17,6 +23,8 @@ caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Collections::VectorView Class
 Represents a read-only view of a sequential collection of objects that can be individually accessed by index. The type of each object in the collection is specified by the template parameter.  

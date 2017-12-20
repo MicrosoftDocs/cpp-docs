@@ -8,7 +8,15 @@ ms.technology:
   - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["atlconv/ATL::DEVMODEA2W", "atlconv/ATL::TEXTMETRICA2W", "atlconv/ATL::DEVMODEOLE2T", "atlconv/ATL::TEXTMETRICOLE2T", "atlconv/ATL::DEVMODET2OLE", "atlconv/ATL::TEXTMETRICT2OLE", "atlconv/ATL::DEVMODEW2A", "atlconv/ATL::TEXTMETRICW2A"]
+f1_keywords: 
+  - "atlconv/ATL::DEVMODEA2W"
+  - "atlconv/ATL::TEXTMETRICA2W"
+  - "atlconv/ATL::DEVMODEOLE2T"
+  - "atlconv/ATL::TEXTMETRICOLE2T"
+  - "atlconv/ATL::DEVMODET2OLE"
+  - "atlconv/ATL::TEXTMETRICT2OLE"
+  - "atlconv/ATL::DEVMODEW2A"
+  - "atlconv/ATL::TEXTMETRICW2A"
 dev_langs: 
   - "C++"
 ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
@@ -16,6 +24,8 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # String Conversion Macros
 

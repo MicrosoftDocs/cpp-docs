@@ -4,20 +4,40 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_malloc_dbg"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_malloc_dbg"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["malloc_dbg", "_malloc_dbg"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["malloc_dbg function", "memory allocation", "_malloc_dbg function"]
+f1_keywords: 
+  - "malloc_dbg"
+  - "_malloc_dbg"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "malloc_dbg function"
+  - "memory allocation"
+  - "_malloc_dbg function"
 ms.assetid: c97eca51-140b-4461-8bd2-28965b49ecdb
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _malloc_dbg
 Allocates a block of memory in the heap with additional space for a debugging header and overwrite buffers (debug version only).  

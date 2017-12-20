@@ -4,20 +4,40 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: 
+  - "cpp"
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["feclearexcept"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+apiname: 
+  - "feclearexcept"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-runtime-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["feclearexcept", "fenv/feclearexcept"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["feclearexcept function"]
+f1_keywords: 
+  - "feclearexcept"
+  - "fenv/feclearexcept"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "feclearexcept function"
 ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533
 caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # feclearexcept
 Attempts to clear the floating-point exception flags        specified by the argument.  

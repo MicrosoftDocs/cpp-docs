@@ -4,20 +4,57 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["swscanf", "sscanf", "_sscanf_l", "_swscanf_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "swscanf"
+  - "sscanf"
+  - "_sscanf_l"
+  - "_swscanf_l"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["_sscanf_l", "_stscanf", "swscanf", "_stscanf_l", "sscanf", "_swscanf_l"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["swscanf function", "_stscanf function", "sscanf function", "_stscanf_l function", "_sscanf_l function", "_swscanf_l function", "swscanf_l function", "strings [C++], reading data from", "stscanf function", "reading data, strings", "strings [C++], reading", "sscanf_l function", "stscanf_l function"]
+f1_keywords: 
+  - "_sscanf_l"
+  - "_stscanf"
+  - "swscanf"
+  - "_stscanf_l"
+  - "sscanf"
+  - "_swscanf_l"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "swscanf function"
+  - "_stscanf function"
+  - "sscanf function"
+  - "_stscanf_l function"
+  - "_sscanf_l function"
+  - "_swscanf_l function"
+  - "swscanf_l function"
+  - "strings [C++], reading data from"
+  - "stscanf function"
+  - "reading data, strings"
+  - "strings [C++], reading"
+  - "sscanf_l function"
+  - "stscanf_l function"
 ms.assetid: c2dcf0d2-9798-499f-a4a8-06f7e2b9a80c
 caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # sscanf, _sscanf_l, swscanf, _swscanf_l
 Read formatted data from a string. More secure versions of these functions are available; see [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).  

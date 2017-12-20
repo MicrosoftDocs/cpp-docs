@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["parameter queries, running using CCommand class"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "parameter queries, running using CCommand class"
 ms.assetid: aedb0fce-52a4-4c97-a5c9-b2114be6c3b0
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Issuing a Parameterized Query
 The following example issues a simple parameterized query that retrieves records with an age field (that is greater than 30) from a table in a Microsoft Access database. To support the parameter, the user record must have an additional map. The following code, in an ATL project, uses the `CCommand` class instead of the `CTable` class used in the previous example, [Traversing a Simple Rowset](../../data/oledb/traversing-a-simple-rowset.md).  

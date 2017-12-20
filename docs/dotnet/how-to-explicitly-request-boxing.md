@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["boxing, explicitly requesting"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "boxing, explicitly requesting"
 ms.assetid: 1359e6e5-162d-4f5d-9b6a-1690d93df3ee
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Explicitly Request Boxing
 You can explicitly request boxing by assigning a variable to a variable of type `Object`.  

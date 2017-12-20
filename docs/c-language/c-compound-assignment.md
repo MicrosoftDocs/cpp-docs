@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["operators [C], assignment", "compound assignment operators", "assignment operators, compound"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operators [C], assignment"
+  - "compound assignment operators"
+  - "assignment operators, compound"
 ms.assetid: db7b5893-cd56-4f1c-9981-5a024200ab63
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # C Compound Assignment
 The compound-assignment operators combine the simple-assignment operator with another binary operator. Compound-assignment operators perform the operation specified by the additional operator, then assign the result to the left operand. For example, a compound-assignment expression such as  

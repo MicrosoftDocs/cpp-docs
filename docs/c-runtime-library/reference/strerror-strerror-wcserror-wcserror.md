@@ -4,20 +4,60 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["strerror", "_strerror", "_wcserror", "__wcserror"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+apiname: 
+  - "strerror"
+  - "_strerror"
+  - "_wcserror"
+  - "__wcserror"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-runtime-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["__sys_errlist", "wcserror", "_strerror", "__wcserror", "strerror", "__sys_nerr", "_tcserror", "_wcserror", "tcserror"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["strerror function", "_strerror function", "__sys_errlist", "wcserror function", "error messages, printing", "__sys_nerr", "tcserror function", "printing error messages", "_wcserror function", "_tcserror function", "__wcserror function", "error messages, getting"]
+f1_keywords: 
+  - "__sys_errlist"
+  - "wcserror"
+  - "_strerror"
+  - "__wcserror"
+  - "strerror"
+  - "__sys_nerr"
+  - "_tcserror"
+  - "_wcserror"
+  - "tcserror"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "strerror function"
+  - "_strerror function"
+  - "__sys_errlist"
+  - "wcserror function"
+  - "error messages, printing"
+  - "__sys_nerr"
+  - "tcserror function"
+  - "printing error messages"
+  - "_wcserror function"
+  - "_tcserror function"
+  - "__wcserror function"
+  - "error messages, getting"
 ms.assetid: 27b72255-f627-43c0-8836-bcda8b003e14
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # strerror, _strerror, _wcserror, __wcserror
 Gets a system error message string (`strerror`, `_wcserror`) or formats a user-supplied error message string (`_strerror`, `__wcserror`). More secure versions of these functions are available; see [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md).  

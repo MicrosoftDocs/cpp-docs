@@ -4,20 +4,44 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["remquof", "remquo", "remquol"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+apiname: 
+  - "remquof"
+  - "remquo"
+  - "remquol"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-math-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["remquof", "remquol", "remquo"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["remquol function", "remquof function", "remquo function"]
+f1_keywords: 
+  - "remquof"
+  - "remquol"
+  - "remquo"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "remquol function"
+  - "remquof function"
+  - "remquo function"
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # remquo, remquof, remquol
 Computes the remainder of two integer values, and stores an integer value with the sign and approximate magnitude of the quotient in a location that's specified in a parameter.  

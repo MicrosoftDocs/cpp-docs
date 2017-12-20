@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["C++, indexers", "indexers, consuming C#"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C++, indexers"
+  - "indexers, consuming C#"
 ms.assetid: 5a11850c-a1a2-4a0a-b95e-f6dc5a87f439
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Consume a C# Indexer (C++/CLI)
 Visual C++ does not contain indexers; it has indexed properties. To consume a C# indexer, access the indexer as if it were an indexed property.  

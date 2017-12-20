@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["BEGIN_ACCESSOR_MAP"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["BEGIN_ACCESSOR_MAP macro"]
+f1_keywords: 
+  - "BEGIN_ACCESSOR_MAP"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "BEGIN_ACCESSOR_MAP macro"
 ms.assetid: e6d6e3a4-62fa-4e49-8c53-caf8c9d20091
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # BEGIN_ACCESSOR_MAP
 Marks the beginning of the accessor map entries.  

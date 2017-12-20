@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["SetParameterInfo", "CCommand.SetParameterInfo", "CCommand::SetParameterInfo"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["SetParameterInfo method"]
+f1_keywords: 
+  - "SetParameterInfo"
+  - "CCommand.SetParameterInfo"
+  - "CCommand::SetParameterInfo"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "SetParameterInfo method"
 ms.assetid: a70e92f4-1e73-41d7-a5b7-c6ebb45a6477
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CCommand::SetParameterInfo
 Specifies the native type of each command parameter.  

@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::less"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["less function [STL/CLR]"]
+f1_keywords: 
+  - "cliext::less"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "less function [STL/CLR]"
 ms.assetid: fae56216-af66-4cb9-a688-be58a7c7edbb
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # less (STL/CLR)
 The template class describes a functor that, when called, returns true only if the first argument is less than the second. You use it specify a function object in terms of its argument type.  

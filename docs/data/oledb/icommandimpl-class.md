@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ICommandImpl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ICommandImpl class"]
+f1_keywords: 
+  - "ICommandImpl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ICommandImpl class"
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # ICommandImpl Class
 Provides implementation for the [ICommand](https://msdn.microsoft.com/en-us/library/ms709737.aspx) interface.  

@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker::RequestType", "ATLUTIL/ATL::CNonStatelessWorker::Execute", "ATLUTIL/ATL::CNonStatelessWorker::Initialize", "ATLUTIL/ATL::CNonStatelessWorker::Terminate"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CNonStatelessWorker class"]
+f1_keywords: 
+  - "CNonStatelessWorker"
+  - "ATLUTIL/ATL::CNonStatelessWorker"
+  - "ATLUTIL/ATL::CNonStatelessWorker::RequestType"
+  - "ATLUTIL/ATL::CNonStatelessWorker::Execute"
+  - "ATLUTIL/ATL::CNonStatelessWorker::Initialize"
+  - "ATLUTIL/ATL::CNonStatelessWorker::Terminate"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CNonStatelessWorker class"
 ms.assetid: d00936c6-9e7d-49fb-b87d-417b963367d1
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CNonStatelessWorker Class
 Receives requests from a thread pool and passes them on to a worker object that is created and destroyed on each request.  

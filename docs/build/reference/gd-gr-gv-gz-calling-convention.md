@@ -4,17 +4,38 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/gr", "/Gv", "/gz", "/Gd", "VC.Project.VCCLCompilerTool.CallingConvention"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["-Gd compiler option [C++]", "-Gv compiler option [C++]", "/Gv compiler option [C++]", "-Gr compiler option [C++]", "Gd compiler option [C++]", "Gr compiler option [C++]", "/Gz compiler option [C++]", "-Gz compiler option [C++]", "/Gd compiler option [C++]", "Gz compiler option [C++]", "Gv compiler option [C++]", "/Gr compiler option [C++]"]
+f1_keywords: 
+  - "/gr"
+  - "/Gv"
+  - "/gz"
+  - "/Gd"
+  - "VC.Project.VCCLCompilerTool.CallingConvention"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "-Gd compiler option [C++]"
+  - "-Gv compiler option [C++]"
+  - "/Gv compiler option [C++]"
+  - "-Gr compiler option [C++]"
+  - "Gd compiler option [C++]"
+  - "Gr compiler option [C++]"
+  - "/Gz compiler option [C++]"
+  - "-Gz compiler option [C++]"
+  - "/Gd compiler option [C++]"
+  - "Gz compiler option [C++]"
+  - "Gv compiler option [C++]"
+  - "/Gr compiler option [C++]"
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Gd, /Gr, /Gv, /Gz (Calling Convention)
 These options determine the order in which function arguments are pushed onto the stack, whether the caller function or called function removes the arguments from the stack at the end of the call, and the name-decorating convention that the compiler uses to identify individual functions.  

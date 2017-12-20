@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["( ) function call operator", "function calls, C++ functions", "() function call operator", "postfix operators [C++]", "function calls, operator", "functions [C++], function-call operator", "function call operator ()"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "( ) function call operator"
+  - "function calls, C++ functions"
+  - "() function call operator"
+  - "postfix operators [C++]"
+  - "function calls, operator"
+  - "functions [C++], function-call operator"
+  - "function call operator ()"
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Function Call Operator: ()
 A postfix-expression followed by the function-call operator, **( )**, specifies a function call.  

@@ -4,16 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["member-selection operators", "structure members, referencing", "-> operator, structure and union members", "dot operator (.)", "referencing structure members", ". operator", "operators [C], member selection", "structure member selection"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "member-selection operators"
+  - "structure members, referencing"
+  - "-> operator, structure and union members"
+  - "dot operator (.)"
+  - "referencing structure members"
+  - ". operator"
+  - "operators [C], member selection"
+  - "structure member selection"
 ms.assetid: bb1fe304-af49-4f98-808d-afdc99b3e319
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Structure and Union Members
 A "member-selection expression" refers to members of structures and unions. Such an expression has the value and type of the selected member.  

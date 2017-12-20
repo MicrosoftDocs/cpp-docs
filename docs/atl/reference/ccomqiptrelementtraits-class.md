@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CComQIPtrElementTraits class"]
+f1_keywords: 
+  - "CComQIPtrElementTraits"
+  - "ATLCOLL/ATL::CComQIPtrElementTraits"
+  - "ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CComQIPtrElementTraits class"
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CComQIPtrElementTraits Class
 This class provides methods, static functions, and typedefs useful when creating collections of COM interface pointers.  

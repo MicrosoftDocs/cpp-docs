@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/hotpatch", "VC.Project.VCCLCompilerTool.CreateHotpatchableImage"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["hot patching", "-hotpatch compiler option [C++]", "/hotpatch compiler option [C++]", "hotpatching"]
+f1_keywords: 
+  - "/hotpatch"
+  - "VC.Project.VCCLCompilerTool.CreateHotpatchableImage"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "hot patching"
+  - "-hotpatch compiler option [C++]"
+  - "/hotpatch compiler option [C++]"
+  - "hotpatching"
 ms.assetid: aad539b6-c053-4c78-8682-853d98327798
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /hotpatch (Create Hotpatchable Image)
 Prepares an image for hot patching.  

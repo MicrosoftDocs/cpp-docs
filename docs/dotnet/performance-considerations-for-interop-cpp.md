@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["/clr compiler option [C++], interop performance considerations", "platform invoke [C++], interoperability", "interop [C++], performance consideraitons", "mixed assemblies [C++], performance considerations", "interoperability [C++], performance considerations"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/clr compiler option [C++], interop performance considerations"
+  - "platform invoke [C++], interoperability"
+  - "interop [C++], performance consideraitons"
+  - "mixed assemblies [C++], performance considerations"
+  - "interoperability [C++], performance considerations"
 ms.assetid: bb9a282e-c3f8-40eb-a2fa-45d80d578932
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # Performance Considerations for Interop (C++)
 This topic provides guidelines for reducing the effect of managed/unmanaged interop transitions on run-time performance.  

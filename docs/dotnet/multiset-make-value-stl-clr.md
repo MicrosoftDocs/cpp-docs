@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::multiset::make_value"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["make_value member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::multiset::make_value"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "make_value member [STL/CLR]"
 ms.assetid: 385ded5b-65bf-4806-8c3d-a4129a05f612
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # multiset::make_value (STL/CLR)
 Constructs a value object.  

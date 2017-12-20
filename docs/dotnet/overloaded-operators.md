@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["operator overloading, in a CLR class", "operators [C++], overloading"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator overloading, in a CLR class"
+  - "operators [C++], overloading"
 ms.assetid: 30391426-afe7-4497-bf22-e4816c1e48c8
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # Overloaded Operators
 Operator overloading has changed significantly from Managed Extensions for C++ to Visual C++.  

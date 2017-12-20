@@ -16,6 +16,8 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # default::(type_name)::GetType Method
 Returns a Platform::Type^ that represents the current type.  

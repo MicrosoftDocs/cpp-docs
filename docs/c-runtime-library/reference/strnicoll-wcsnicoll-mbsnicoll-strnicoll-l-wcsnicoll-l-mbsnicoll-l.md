@@ -4,20 +4,77 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_mbsnicoll_l", "_mbsnicoll", "_wcsnicoll_l", "_strnicoll", "_strnicoll_l", "_wcsnicoll"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apiname: 
+  - "_mbsnicoll_l"
+  - "_mbsnicoll"
+  - "_wcsnicoll_l"
+  - "_strnicoll"
+  - "_strnicoll_l"
+  - "_wcsnicoll"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-multibyte-l1-1-0.dll"
+  - "api-ms-win-crt-string-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["wcshicoll_l", "_ftcsncicoll", "strnicoll_l", "_wcsnicoll", "mbsnicoll_l", "_strnicoll", "mbsnicoll", "_ftcsnicoll", "wcsnicoll", "_tcsnicoll", "_mbsnicoll", "strinicoll", "_tcsncicoll"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["code pages, using for string comparisons", "ftcsncicoll function", "mbsnicoll_l function", "_ftcsnicoll function", "mbsnicoll function", "_tcsnicoll function", "_wcsnicoll_l function", "_mbsnicoll function", "tcsncicoll function", "strnicoll function", "_ftcsncicoll function", "wcsnicoll_l function", "_mbsnicoll_l function", "_tcsncicoll function", "strnicoll_l function", "wcsnicoll function", "_strnicoll_l function", "_wcsnicoll function", "ftcsnicoll function", "strings [C++], comparing by code page", "tcsnicoll function", "_strnicoll function"]
+f1_keywords: 
+  - "wcshicoll_l"
+  - "_ftcsncicoll"
+  - "strnicoll_l"
+  - "_wcsnicoll"
+  - "mbsnicoll_l"
+  - "_strnicoll"
+  - "mbsnicoll"
+  - "_ftcsnicoll"
+  - "wcsnicoll"
+  - "_tcsnicoll"
+  - "_mbsnicoll"
+  - "strinicoll"
+  - "_tcsncicoll"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "code pages, using for string comparisons"
+  - "ftcsncicoll function"
+  - "mbsnicoll_l function"
+  - "_ftcsnicoll function"
+  - "mbsnicoll function"
+  - "_tcsnicoll function"
+  - "_wcsnicoll_l function"
+  - "_mbsnicoll function"
+  - "tcsncicoll function"
+  - "strnicoll function"
+  - "_ftcsncicoll function"
+  - "wcsnicoll_l function"
+  - "_mbsnicoll_l function"
+  - "_tcsncicoll function"
+  - "strnicoll_l function"
+  - "wcsnicoll function"
+  - "_strnicoll_l function"
+  - "_wcsnicoll function"
+  - "ftcsnicoll function"
+  - "strings [C++], comparing by code page"
+  - "tcsnicoll function"
+  - "_strnicoll function"
 ms.assetid: abf0c569-725b-428d-9ff2-924f430104b4
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
 Compares strings by using locale-specific information.  

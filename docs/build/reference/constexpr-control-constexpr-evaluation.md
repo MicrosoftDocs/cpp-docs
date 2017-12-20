@@ -21,6 +21,8 @@ ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /constexpr (Control constexpr evaluation)  
   

@@ -4,20 +4,39 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: 
+  - "cpp"
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["feupdateenv"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "feupdateenv"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "HeaderDef"
-f1_keywords: ["feupdateenv", "fenv/feupdateenv"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["feupdateenv function"]
+f1_keywords: 
+  - "feupdateenv"
+  - "fenv/feupdateenv"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "feupdateenv function"
 ms.assetid: 3d170042-dfd5-4e4f-a55f-038cf2296cc9
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # feupdateenv
 Saves the currently raised floating-point exceptions, restores the specified floating-point environment state, and then raises the saved floating-point exceptions.  

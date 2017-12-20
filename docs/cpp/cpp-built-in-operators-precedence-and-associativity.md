@@ -4,16 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["operators (C++), hierarchy", "operator precedence", "precedence, operators", "operators (C++), associativity", "multiple operators [C++]", "associativity of operators [C++]", "operators [C++], precedence", "evaluation order", "hierarchy, operator"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operators (C++), hierarchy"
+  - "operator precedence"
+  - "precedence, operators"
+  - "operators (C++), associativity"
+  - "multiple operators [C++]"
+  - "associativity of operators [C++]"
+  - "operators [C++], precedence"
+  - "evaluation order"
+  - "hierarchy, operator"
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # C++ Built-in Operators, Precedence and Associativity
 

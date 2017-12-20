@@ -4,20 +4,48 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_getws_s", "gets_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+apiname: 
+  - "_getws_s"
+  - "gets_s"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-stdio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_getws_s", "gets_s"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["getws_s function", "_getws_s function", "lines, getting", "streams, getting lines", "buffers, avoiding overruns", "buffer overruns", "buffers, buffer overruns", "gets_s function", "standard input, reading from"]
+f1_keywords: 
+  - "_getws_s"
+  - "gets_s"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "getws_s function"
+  - "_getws_s function"
+  - "lines, getting"
+  - "streams, getting lines"
+  - "buffers, avoiding overruns"
+  - "buffer overruns"
+  - "buffers, buffer overruns"
+  - "gets_s function"
+  - "standard input, reading from"
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # gets_s, _getws_s
 Gets a line from the `stdin` stream. These versions of [gets, _getws](../../c-runtime-library/gets-getws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

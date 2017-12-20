@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::set::const_reverse_iterator"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["const_reverse_iterator member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::set::const_reverse_iterator"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "const_reverse_iterator member [STL/CLR]"
 ms.assetid: 60171be5-c4a8-4fce-89a9-6642d805bb57
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # set::const_reverse_iterator (STL/CLR)
 The type of a constant reverse iterator for the controlled sequence..  

@@ -4,20 +4,52 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["iscntrl", "_iswcntrl_l", "_iscntrl_l", "iswcntrl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apiname: 
+  - "iscntrl"
+  - "_iswcntrl_l"
+  - "_iscntrl_l"
+  - "iswcntrl"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-string-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_istcntrl_l", "_iswcntrl_l", "iswcntrl", "_iscntrl_l", "iscntrl", "_istcntrl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["iscntrl function", "_iscntrl_l function", "_iswcntrl_l function", "_istcntrl function", "istcntrl function", "iswcntrl function", "_istcntrl_l function"]
+f1_keywords: 
+  - "_istcntrl_l"
+  - "_iswcntrl_l"
+  - "iswcntrl"
+  - "_iscntrl_l"
+  - "iscntrl"
+  - "_istcntrl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "iscntrl function"
+  - "_iscntrl_l function"
+  - "_iswcntrl_l function"
+  - "_istcntrl function"
+  - "istcntrl function"
+  - "iswcntrl function"
+  - "_istcntrl_l function"
 ms.assetid: 616eebf9-aed4-49ba-ba2c-8677c8fe6fb5
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
 Determines whether an integer represents a control character.  

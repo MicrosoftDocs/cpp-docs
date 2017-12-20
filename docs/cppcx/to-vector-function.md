@@ -18,6 +18,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # to_vector Function
 Returns a `std::vector` whose value is the same as the collection underlying the specified IVector or IVectorView parameter.  

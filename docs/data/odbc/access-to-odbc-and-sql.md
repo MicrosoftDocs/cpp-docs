@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["API calls [C++], calling DAO or ODBC directly", "Windows API [C++], calling from MFC", "ODBC API functions [C++]", "ODBC API functions [C++], calling from MFC", "SQL [C++], calling ODBC API functions", "ODBC [C++], API functions"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "API calls [C++], calling DAO or ODBC directly"
+  - "Windows API [C++], calling from MFC"
+  - "ODBC API functions [C++]"
+  - "ODBC API functions [C++], calling from MFC"
+  - "SQL [C++], calling ODBC API functions"
+  - "ODBC [C++], API functions"
 ms.assetid: 5613d7dc-00b7-4646-99ae-1116c05c52b4
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Access to ODBC and SQL
 The Microsoft Foundation Class Library encapsulates many Windows API calls and still lets you call any Windows API function directly. The database classes give you the same flexibility with regard to the ODBC API. While the database classes shield you from much of the complexity of ODBC, you can call ODBC API functions directly from anywhere in your program.  

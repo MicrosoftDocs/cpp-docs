@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CUtlProps"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["OnInterfaceRequested method"]
+f1_keywords: 
+  - "CUtlProps"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "OnInterfaceRequested method"
 ms.assetid: a5e1a879-cff3-4e01-b902-2249a152984f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CUtlProps::OnInterfaceRequested
 Handles requests for an optional interface when a consumer calls a method on one of the object creation interfaces.  

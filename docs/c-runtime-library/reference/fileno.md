@@ -4,20 +4,41 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_fileno"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+apiname: 
+  - "_fileno"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-stdio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_fileno"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["file handles [C++], getting from streams", "fileno function", "_fileno function", "streams, getting file handles"]
+f1_keywords: 
+  - "_fileno"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "file handles [C++], getting from streams"
+  - "fileno function"
+  - "_fileno function"
+  - "streams, getting file handles"
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _fileno
 Gets the file descriptor associated with a stream.  

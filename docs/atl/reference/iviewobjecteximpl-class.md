@@ -4,17 +4,39 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["IViewObjectExImpl", "ATLCTL/ATL::IViewObjectExImpl", "ATLCTL/ATL::IViewObjectExImpl::Draw", "ATLCTL/ATL::IViewObjectExImpl::Freeze", "ATLCTL/ATL::IViewObjectExImpl::GetAdvise", "ATLCTL/ATL::IViewObjectExImpl::GetColorSet", "ATLCTL/ATL::IViewObjectExImpl::GetExtent", "ATLCTL/ATL::IViewObjectExImpl::GetNaturalExtent", "ATLCTL/ATL::IViewObjectExImpl::GetRect", "ATLCTL/ATL::IViewObjectExImpl::GetViewStatus", "ATLCTL/ATL::IViewObjectExImpl::QueryHitPoint", "ATLCTL/ATL::IViewObjectExImpl::QueryHitRect", "ATLCTL/ATL::IViewObjectExImpl::SetAdvise", "ATLCTL/ATL::IViewObjectExImpl::Unfreeze"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ActiveX controls [C++], drawing", "IViewObjectEx ATL implementation", "advise sinks", "IViewObjectExImpl class"]
+f1_keywords: 
+  - "IViewObjectExImpl"
+  - "ATLCTL/ATL::IViewObjectExImpl"
+  - "ATLCTL/ATL::IViewObjectExImpl::Draw"
+  - "ATLCTL/ATL::IViewObjectExImpl::Freeze"
+  - "ATLCTL/ATL::IViewObjectExImpl::GetAdvise"
+  - "ATLCTL/ATL::IViewObjectExImpl::GetColorSet"
+  - "ATLCTL/ATL::IViewObjectExImpl::GetExtent"
+  - "ATLCTL/ATL::IViewObjectExImpl::GetNaturalExtent"
+  - "ATLCTL/ATL::IViewObjectExImpl::GetRect"
+  - "ATLCTL/ATL::IViewObjectExImpl::GetViewStatus"
+  - "ATLCTL/ATL::IViewObjectExImpl::QueryHitPoint"
+  - "ATLCTL/ATL::IViewObjectExImpl::QueryHitRect"
+  - "ATLCTL/ATL::IViewObjectExImpl::SetAdvise"
+  - "ATLCTL/ATL::IViewObjectExImpl::Unfreeze"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ActiveX controls [C++], drawing"
+  - "IViewObjectEx ATL implementation"
+  - "advise sinks"
+  - "IViewObjectExImpl class"
 ms.assetid: ad6de760-1ee5-4883-b033-ae57beffc369
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # IViewObjectExImpl Class
 This class implements **IUnknown** and provides default implementations of the [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), and [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) interfaces.  

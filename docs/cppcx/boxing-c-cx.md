@@ -12,6 +12,8 @@ caps.latest.revision: 12
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Boxing (C++/CX)
 *Boxing* is wrapping a value type variable such as [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)—or a fundamental scalar type such as `int`—in a ref class when the variable is passed to a method that takes [Platform::Object^](../cppcx/platform-object-class.md) as its input type.  

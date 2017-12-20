@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["ATL, reference", "ATL, about ATL"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ATL, reference"
+  - "ATL, about ATL"
 ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # ATL COM Desktop Components
 The ATL Reference documents the Active Template Library (ATL), a set of template-based C++ classes that simplify the programming of Component Object Model (COM) objects. To fully take advantage of ATL, a working familiarity with COM is highly recommended.  

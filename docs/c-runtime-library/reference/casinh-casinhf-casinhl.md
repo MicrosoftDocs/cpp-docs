@@ -4,20 +4,48 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: 
+  - "cpp"
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["casinh", "casinhl", "casinhf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+apiname: 
+  - "casinh"
+  - "casinhl"
+  - "casinhf"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-math-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["casinh", "casinhf", "casinhl", "complex/casinh", "complex/casinhf", "complex/casinhl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["casinh function", "casinhf function", "casinhl function"]
+f1_keywords: 
+  - "casinh"
+  - "casinhf"
+  - "casinhl"
+  - "complex/casinh"
+  - "complex/casinhf"
+  - "complex/casinhl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "casinh function"
+  - "casinhf function"
+  - "casinhl function"
 ms.assetid: bd18340b-21dd-4c86-a14e-e8e15dd97e3b
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # casinh, casinhf, casinhl
 Retrieves the inverse hyperbolic sine of a complex number, with branch cuts outside the interval [-i, +i] along the imaginary axis.  

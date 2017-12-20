@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::deque::to_array"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["to_array member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::deque::to_array"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "to_array member [STL/CLR]"
 ms.assetid: ecd34f30-2ad8-47b5-8c5e-2466df46fe6d
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # deque::to_array (STL/CLR)
 Copies the controlled sequence to a new array.  

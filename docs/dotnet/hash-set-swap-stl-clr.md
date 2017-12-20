@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_set::swap"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["swap member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_set::swap"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "swap member [STL/CLR]"
 ms.assetid: 6476e48f-4744-486d-b028-cf0a048acd4d
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_set::swap (STL/CLR)
 Swaps the contents of two containers.  

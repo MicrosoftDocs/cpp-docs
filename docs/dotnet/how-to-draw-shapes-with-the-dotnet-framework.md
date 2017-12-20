@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["GDI+, drawing shapes", "drawing, shapes", "shapes", "shapes, drawing"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GDI+, drawing shapes"
+  - "drawing, shapes"
+  - "shapes"
+  - "shapes, drawing"
 ms.assetid: ffad5ae7-6ef4-4550-8940-be3f209a101d
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Draw Shapes with the .NET Framework
 The following code example uses the <xref:System.Drawing.Graphics> class to modify the <xref:System.Windows.Forms.Form.OnPaint%2A> event handler to retrieve a pointer to the <xref:System.Drawing.Graphics> object for the main form. This pointer is then used to set the background color of the form and draw a line and an arc using the <xref:System.Drawing.Graphics.DrawLine%2A?displayProperty=fullName> and <xref:System.Drawing.Graphics.DrawArc%2A> methods.  

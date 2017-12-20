@@ -4,20 +4,46 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_finite", "_finitef"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+apiname: 
+  - "_finite"
+  - "_finitef"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-math-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["finite", "_finite", "_finitef", "math/_finite", "math/_finitef", "float/_finite"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["finite function", "_finite function", "_finitef function"]
+f1_keywords: 
+  - "finite"
+  - "_finite"
+  - "_finitef"
+  - "math/_finite"
+  - "math/_finitef"
+  - "float/_finite"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "finite function"
+  - "_finite function"
+  - "_finitef function"
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _finite, _finitef
 Determines whether a floating-point value is finite.  

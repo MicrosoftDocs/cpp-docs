@@ -19,6 +19,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::NullReferenceException Class
 Thrown when there is an attempt to dereference a null object reference.  

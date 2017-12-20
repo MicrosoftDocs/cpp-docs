@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["atlbase/ATL::AtlFreeMarshalStream", "atlbase/ATL::AtlMarshalPtrInProc", "atlbase/ATL::AtlUnmarshalPtr"]
-dev_langs: ["C++"]
+f1_keywords: 
+  - "atlbase/ATL::AtlFreeMarshalStream"
+  - "atlbase/ATL::AtlMarshalPtrInProc"
+  - "atlbase/ATL::AtlUnmarshalPtr"
+dev_langs: 
+  - "C++"
 ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Marshaling Global Functions
 These functions provide support for marshaling and converting marshaling data into interface pointers.  

@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["hosting controls using ATL", "ActiveX control containers [C++], ATL control hosting"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "hosting controls using ATL"
+  - "ActiveX control containers [C++], ATL control hosting"
 ms.assetid: 803a4605-7f4c-4139-8638-49d8783d31b0
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Which ATL Classes Facilitate ActiveX Control Containment?
 ATL's control-hosting code doesn't require you to use any ATL classes; you can simply create an **"AtlAxWin80"** window and use the control-hosting API if necessary (for more information, see **What Is the ATL Control-Hosting API**. However, the following classes make the containment features easier to use.  

@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "index-page "
-dev_langs: ["C++"]
-helpviewer_keywords: ["COM"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "COM"
 ms.assetid: 120735d9-db71-4ad3-a730-ce576ea2354e
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Introduction to COM
 COM is the fundamental "object model" on which ActiveX Controls and OLE are built. COM allows an object to expose its functionality to other components and to host applications. It defines both how the object exposes itself and how this exposure works across processes and across networks. COM also defines the object's life cycle.  

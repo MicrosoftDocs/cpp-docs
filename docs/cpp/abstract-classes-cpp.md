@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["classes [C++], abstract", "base classes [C++], abstract classes [C++]", "abstract classes [C++]", "derived classes [C++], abstract classes [C++]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "classes [C++], abstract"
+  - "base classes [C++], abstract classes [C++]"
+  - "abstract classes [C++]"
+  - "derived classes [C++], abstract classes [C++]"
 ms.assetid: f0c5975b-39de-4d68-9640-6ce57f4632e6
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Abstract Classes (C++)
 Abstract classes act as expressions of general concepts from which more specific classes can be derived. You cannot create an object of an abstract class type; however, you can use pointers and references to abstract class types.  

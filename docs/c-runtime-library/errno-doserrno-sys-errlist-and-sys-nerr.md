@@ -4,20 +4,38 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_errno"]
-apilocation: ["msvcrt.dll"]
+apiname: 
+  - "_errno"
+apilocation: 
+  - "msvcrt.dll"
 apitype: "DLLExport"
-f1_keywords: ["_sys_errlist", "errno", "_sys_nerr", "_doserrno"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["error codes, printing", "sys_errlist global variable", "doserrno global variable", "errno global variable", "_doserrno global variable", "_sys_errlist global variable", "_sys_nerr global variable", "sys_nerr global variable"]
+f1_keywords: 
+  - "_sys_errlist"
+  - "errno"
+  - "_sys_nerr"
+  - "_doserrno"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "error codes, printing"
+  - "sys_errlist global variable"
+  - "doserrno global variable"
+  - "errno global variable"
+  - "_doserrno global variable"
+  - "_sys_errlist global variable"
+  - "_sys_nerr global variable"
+  - "sys_nerr global variable"
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # errno, _doserrno, _sys_errlist, and _sys_nerr
 Global macros that hold error codes that are set during program execution, and string equivalents of the error codes for display.  

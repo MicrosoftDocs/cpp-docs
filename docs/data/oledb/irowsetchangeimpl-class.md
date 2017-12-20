@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL::IRowsetChangeImpl", "IRowsetChangeImpl", "ATL.IRowsetChangeImpl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["providers, updatable", "updatable providers, immediate update", "IRowsetChangeImpl class"]
+f1_keywords: 
+  - "ATL::IRowsetChangeImpl"
+  - "IRowsetChangeImpl"
+  - "ATL.IRowsetChangeImpl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "providers, updatable"
+  - "updatable providers, immediate update"
+  - "IRowsetChangeImpl class"
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # IRowsetChangeImpl Class
 The OLE DB Templates implementation of the [IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx) interface in the OLE DB specification.  

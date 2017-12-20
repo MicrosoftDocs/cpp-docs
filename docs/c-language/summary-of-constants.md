@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["constants, C"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "constants, C"
 ms.assetid: 4158234c-e189-4e25-970f-52a04bc6380a
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Summary of Constants
 `constant`:  

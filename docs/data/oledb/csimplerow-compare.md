@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CSimpleRow.Compare", "CSimpleRow::Compare"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Compare method"]
+f1_keywords: 
+  - "CSimpleRow.Compare"
+  - "CSimpleRow::Compare"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Compare method"
 ms.assetid: 0bb65f09-c7bc-449b-aa4e-c828cac13510
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CSimpleRow::Compare
 Compares two rows to see if they refer to the same row instance.  

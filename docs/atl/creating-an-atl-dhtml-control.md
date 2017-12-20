@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["HTML controls, creating", "DHTML controls", "DHTML controls, creating"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "HTML controls, creating"
+  - "DHTML controls"
+  - "DHTML controls, creating"
 ms.assetid: 1d8f0ede-7d8b-4959-976e-b4d0e2a87f5a
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Creating an ATL DHTML Control
 The ATL Control Wizard automates the process of creating a DHTML control. It generates the necessary resource files, including an HTML file containing sample code.  

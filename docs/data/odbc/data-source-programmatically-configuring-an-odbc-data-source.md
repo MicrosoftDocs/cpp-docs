@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["SQLConfigDataSource"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ODBC data sources, configuring", "SQLConfigDataSource method example", "ODBC connections, configuring", "configuring ODBC data sources"]
+f1_keywords: 
+  - "SQLConfigDataSource"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ODBC data sources, configuring"
+  - "SQLConfigDataSource method example"
+  - "ODBC connections, configuring"
+  - "configuring ODBC data sources"
 ms.assetid: b8cabe9b-9e12-4d73-ae36-7cb12dee3213
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Data Source: Programmatically Configuring an ODBC Data Source
 This topic explains how you can configure Open Database Connectivity (ODBC) data source names programmatically. This gives you flexibility to access data without forcing the user to explicitly use the ODBC Administrator or other programs to specify the names of data sources.  

@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::list::const_reference"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["const_reference member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::list::const_reference"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "const_reference member [STL/CLR]"
 ms.assetid: bd8f6411-b8e4-4597-abd5-c0eabdf36f64
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # list::const_reference (STL/CLR)
 The type of a constant reference to an element.  

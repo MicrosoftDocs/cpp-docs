@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["c.international"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["localization, locale", "country information", "language information routines", "setlocale function", "locale routines"]
+f1_keywords: 
+  - "c.international"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "localization, locale"
+  - "country information"
+  - "language information routines"
+  - "setlocale function"
+  - "locale routines"
 ms.assetid: 442f8112-9288-44d7-be3c-15d22652093a
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Locale
 *Locale* refers to country/region and language settings that you can use to customize your program. Some locale-dependent categories include the display formats for dates and monetary values. For more information, see [Locale Categories](../c-runtime-library/locale-categories.md).  

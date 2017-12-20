@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CRestrictions.Open", "ATL::CRestrictions::Open", "ATL.CRestrictions.Open", "CRestrictions::Open"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Open method"]
+f1_keywords: 
+  - "CRestrictions.Open"
+  - "ATL::CRestrictions::Open"
+  - "ATL.CRestrictions.Open"
+  - "CRestrictions::Open"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Open method"
 ms.assetid: 0aff0cc3-543a-47d2-8d6b-ebb36926b6db
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CRestrictions::Open
 Returns a result set according to the user-supplied restrictions.  

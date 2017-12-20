@@ -4,20 +4,39 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_set_output_format"]
-apilocation: ["msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr110.dll", "msvcr80.dll"]
+apiname: 
+  - "_set_output_format"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr120.dll"
+  - "msvcr100.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr90.dll"
+  - "msvcr110.dll"
+  - "msvcr80.dll"
 apitype: "DLLExport"
-f1_keywords: ["set_output_format", "_set_output_format"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_TWO_DIGIT_EXPONENT constant", "output formatting", "TWO_DIGIT_EXPONENT constant", "_set_output_format function", "set_output_format function"]
+f1_keywords: 
+  - "set_output_format"
+  - "_set_output_format"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_TWO_DIGIT_EXPONENT constant"
+  - "output formatting"
+  - "TWO_DIGIT_EXPONENT constant"
+  - "_set_output_format function"
+  - "set_output_format function"
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _set_output_format
 Customizes output formats used by formatted I/O functions.  

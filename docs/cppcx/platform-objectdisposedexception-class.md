@@ -19,6 +19,8 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::ObjectDisposedException Class
 Thrown when an operation is performed on a disposed object.  

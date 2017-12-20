@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["vc.atl.controls"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["controls [ATL]", "general support classes"]
+f1_keywords: 
+  - "vc.atl.controls"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "controls [ATL]"
+  - "general support classes"
 ms.assetid: cf73f1d2-7542-48e3-b8c8-9d3abf29f85b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Controls: General Support Classes
 The following classes provide general support for ATL controls:  

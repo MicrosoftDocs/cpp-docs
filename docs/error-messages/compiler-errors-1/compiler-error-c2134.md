@@ -17,6 +17,8 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Compiler Error C2134
 'function' : call does not result in a constant expression  

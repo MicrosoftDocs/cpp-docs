@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "command-line builds [C++]"
+  - "compiling source code [C++], command line"
+  - "builds [C++], command-line"
+  - "command line [C++], building from"
+  - "command line [C++], compilers"
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Build C/C++ code on the command line
 

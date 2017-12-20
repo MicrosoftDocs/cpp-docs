@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["cl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["cl.exe compiler, command files", "command files", "command files, CL compiler"]
+f1_keywords: 
+  - "cl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "cl.exe compiler, command files"
+  - "command files"
+  - "command files, CL compiler"
 ms.assetid: ec3cea06-2af0-4fe9-a94c-119c9d31b3a9
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CL Command Files
 A command file is a text file that contains options and filenames you would otherwise type on the [command line](../../build/reference/compiler-command-line-syntax.md) or specify using the [CL environment variable](../../build/reference/cl-environment-variables.md). CL accepts a compiler command file as an argument in the CL environment variable or on the command line. Unlike either the command line or the CL environment variable, a command file allows you to use multiple lines of options and filenames.  

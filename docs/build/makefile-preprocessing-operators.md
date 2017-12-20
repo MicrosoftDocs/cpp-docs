@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["operators [C++], makefile preprocessing", "EXIST operator", "preprocessing NMAKE makefile operators", "NMAKE program, operators", "DEFINED operator", "makefiles, preprocessing operators"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operators [C++], makefile preprocessing"
+  - "EXIST operator"
+  - "preprocessing NMAKE makefile operators"
+  - "NMAKE program, operators"
+  - "DEFINED operator"
+  - "makefiles, preprocessing operators"
 ms.assetid: a46e4d39-afdb-43c1-ac3b-025d33e6ebdb
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Makefile Preprocessing Operators
 Makefile preprocessing expressions can use operators that act on constant values, exit codes from commands, strings, macros, and file-system paths. To evaluate the expression, the preprocessor first expands macros, and then executes commands, and then performs the operations. Operations are evaluated in the order of explicit grouping in parentheses, and then in the order of operator precedence. The result is a constant value.  

@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["linker [C++], OBJ files as input", "object files, linker output", "OMF object files", "LINK tool [C++], .obj files", "COFF files", "OBJ files as linker input", ".obj files as linker input"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "linker [C++], OBJ files as input"
+  - "object files, linker output"
+  - "OMF object files"
+  - "LINK tool [C++], .obj files"
+  - "COFF files"
+  - "OBJ files as linker input"
+  - ".obj files as linker input"
 ms.assetid: 3028e423-8b10-4972-8eb4-6e9ae58f0a26
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # .Obj Files as Linker Input
 The linker tool (LINK.EXE) accepts .obj files that are in Common Object File Format (COFF).  

@@ -17,6 +17,8 @@ caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Box Class
 Enables a value type such as `Windows::Foundation::DateTime` or a scalar type such as `int` to be stored in a `Platform::Object` type. It is usually not necessary to use `Box` explicitly because boxing happens implicitly when you cast a value type to `Object^`.  

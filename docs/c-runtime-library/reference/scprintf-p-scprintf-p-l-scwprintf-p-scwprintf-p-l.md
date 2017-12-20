@@ -4,20 +4,60 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_scwprintf_p", "_scprintf_p_l", "_scwprintf_p_l", "_scprintf_p"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_scwprintf_p"
+  - "_scprintf_p_l"
+  - "_scwprintf_p_l"
+  - "_scprintf_p"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["_scwprintf_p_l", "_sctprintf_p", "scprintf_p_l", "scprintf_p", "_sctprintf_p_l", "scwprintf_p", "_scprintf_p_l", "scwprintf_p_l", "_scprintf_p", "_scwprintf_p"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["sctprintf_p_l function", "_scwprintf_p_l function", "scprintf_p_l function", "_scprintf_p function", "_scprintf_p_l function", "scprintf_p function", "sctprintf_p function", "_scwprintf_p function", "_sctprintf_p function", "scwprintf_p function", "scwprintf_p_l function", "_sctprintf_p_l function"]
+f1_keywords: 
+  - "_scwprintf_p_l"
+  - "_sctprintf_p"
+  - "scprintf_p_l"
+  - "scprintf_p"
+  - "_sctprintf_p_l"
+  - "scwprintf_p"
+  - "_scprintf_p_l"
+  - "scwprintf_p_l"
+  - "_scprintf_p"
+  - "_scwprintf_p"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "sctprintf_p_l function"
+  - "_scwprintf_p_l function"
+  - "scprintf_p_l function"
+  - "_scprintf_p function"
+  - "_scprintf_p_l function"
+  - "scprintf_p function"
+  - "sctprintf_p function"
+  - "_scwprintf_p function"
+  - "_sctprintf_p function"
+  - "scwprintf_p function"
+  - "scwprintf_p_l function"
+  - "_sctprintf_p_l function"
 ms.assetid: 8390d1e1-2826-47a4-851f-6635a88087cc
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
 Returns the number of characters in the formatted string, with the ability to specify the order in which parameters are used in the format string.  

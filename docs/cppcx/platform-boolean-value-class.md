@@ -18,6 +18,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Boolean value class
 Represents a Boolean value. The equivalent of `bool`.  

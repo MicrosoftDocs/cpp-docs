@@ -4,20 +4,62 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_cwprintf_l", "_cprintf_l", "_cwprintf", "_cprintf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_cwprintf_l"
+  - "_cprintf_l"
+  - "_cwprintf"
+  - "_cprintf"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["_cwprintf", "cwprintf", "tcprintf", "_tcprintf", "_cprintf", "cwprintf_l", "tcprintf_l", "_tcprintf_l", "cprintf_l", "_cprintf_l", "_cwprintf_l"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_cprintf_l function", "_cwprintf_l function", "cwprintf function", "cprintf_l function", "characters, printing to console", "printing characters to console", "_tcprintf_l function", "tcprintf function", "_tcprintf function", "tcprintf_l function", "_cwprintf function", "cwprintf_l function", "_cprintf function"]
+f1_keywords: 
+  - "_cwprintf"
+  - "cwprintf"
+  - "tcprintf"
+  - "_tcprintf"
+  - "_cprintf"
+  - "cwprintf_l"
+  - "tcprintf_l"
+  - "_tcprintf_l"
+  - "cprintf_l"
+  - "_cprintf_l"
+  - "_cwprintf_l"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_cprintf_l function"
+  - "_cwprintf_l function"
+  - "cwprintf function"
+  - "cprintf_l function"
+  - "characters, printing to console"
+  - "printing characters to console"
+  - "_tcprintf_l function"
+  - "tcprintf function"
+  - "_tcprintf function"
+  - "tcprintf_l function"
+  - "_cwprintf function"
+  - "cwprintf_l function"
+  - "_cprintf function"
 ms.assetid: 67ffefd4-45b3-4be0-9833-d8d26ac7c4e2
 caps.latest.revision: 34
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 Formats and prints to the console. More-secure versions are available; see [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](../../c-runtime-library/reference/cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md).  

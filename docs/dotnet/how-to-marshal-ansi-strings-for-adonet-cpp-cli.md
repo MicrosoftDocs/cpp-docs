@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["native strings [C++]", "ADO.NET [C++], marshaling ANSI strings", "strings [C++], ADO.NET"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "native strings [C++]"
+  - "ADO.NET [C++], marshaling ANSI strings"
+  - "strings [C++], ADO.NET"
 ms.assetid: 6759d5a2-515f-4079-856b-73b1c1e68f2d
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Marshal ANSI Strings for ADO.NET (C++/CLI)
 Demonstrates how to add a native string (`char *`) to a database and how to marshal a <xref:System.String?displayProperty=fullName> from a database to a native string.  

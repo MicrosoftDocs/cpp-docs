@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::multimap::multimap"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["multimap member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::multimap::multimap"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "multimap member [STL/CLR]"
 ms.assetid: cdf9c5dc-774c-424e-aeea-7554643e401c
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # multimap::multimap (STL/CLR)
 Constructs a container object.  

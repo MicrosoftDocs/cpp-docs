@@ -11,6 +11,8 @@ caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Function Family Overviews
 Insert introduction here.  

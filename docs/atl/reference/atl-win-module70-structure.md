@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["_ATL_WIN_MODULE70", "ATL::_ATL_WIN_MODULE70", "ATL._ATL_WIN_MODULE70"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_ATL_WIN_MODULE70 structure", "ATL_WIN_MODULE70 structure"]
+f1_keywords: 
+  - "_ATL_WIN_MODULE70"
+  - "ATL::_ATL_WIN_MODULE70"
+  - "ATL._ATL_WIN_MODULE70"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_ATL_WIN_MODULE70 structure"
+  - "ATL_WIN_MODULE70 structure"
 ms.assetid: a0aaf3ea-ca77-46ec-bd53-4dfb61dffbea
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _ATL_WIN_MODULE70 Structure
 Used by windowing code in ATL.  

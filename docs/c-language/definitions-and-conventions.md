@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["nonterminals definition"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "nonterminals definition"
 ms.assetid: f9b3cf5f-6a7c-4a10-9b18-9d4a43efdaeb
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Definitions and Conventions
 Terminals are endpoints in a syntax definition. No other resolution is possible. Terminals include the set of reserved words and user-defined identifiers.  

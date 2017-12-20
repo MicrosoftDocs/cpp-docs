@@ -4,17 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLWCECompilerTool.BrowseInformation", "VC.Project.VCCLCompilerTool.BrowseInformation", "/fr", "VC.Project.VCCLCompilerTool.BrowseInformationFile", "VC.Project.VCCLWCECompilerTool.BrowseInformationFile"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/FR compiler option [C++]", "-FR compiler option [C++]", "FR compiler option [C++]", "symbolic browser information"]
+f1_keywords: 
+  - "VC.Project.VCCLWCECompilerTool.BrowseInformation"
+  - "VC.Project.VCCLCompilerTool.BrowseInformation"
+  - "/fr"
+  - "VC.Project.VCCLCompilerTool.BrowseInformationFile"
+  - "VC.Project.VCCLWCECompilerTool.BrowseInformationFile"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/FR compiler option [C++]"
+  - "-FR compiler option [C++]"
+  - "FR compiler option [C++]"
+  - "symbolic browser information"
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /FR, /Fr (Create .Sbr File)
 Creates .sbr files.  

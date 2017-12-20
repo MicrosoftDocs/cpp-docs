@@ -4,16 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["scope [C++], linkage rules", "linkage [C++], scope linkage rules", "names [C++], scope linkage rules", "static modifier, file scope", "static names and file scope", "file scope [C++]", "declarations [C++], external", "external linkage, scope linkage rules", "static variables, external declarations"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "scope [C++], linkage rules"
+  - "linkage [C++], scope linkage rules"
+  - "names [C++], scope linkage rules"
+  - "static modifier, file scope"
+  - "static names and file scope"
+  - "file scope [C++]"
+  - "declarations [C++], external"
+  - "external linkage, scope linkage rules"
+  - "static variables, external declarations"
 ms.assetid: 38d3fa5e-1861-466e-a590-84b86f7b184e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Linkage in Names with File Scope
 The following linkage rules apply to names (other than `typedef` and enumerator names) with file scope:  

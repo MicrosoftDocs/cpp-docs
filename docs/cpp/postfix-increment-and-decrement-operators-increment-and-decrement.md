@@ -4,17 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["--", "++"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["increment operators [C++], syntax", "member-selection operators [C++]", "-- operator [C++], postfix decrement operators", "postfix operators [C++]", "++ operator [C++], postfix increment operators", "decrement operators [C++], syntax", "operators [C++], postfix", "decrement operators [C++]"]
+f1_keywords: 
+  - "--"
+  - "++"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "increment operators [C++], syntax"
+  - "member-selection operators [C++]"
+  - "-- operator [C++], postfix decrement operators"
+  - "postfix operators [C++]"
+  - "++ operator [C++], postfix increment operators"
+  - "decrement operators [C++], syntax"
+  - "operators [C++], postfix"
+  - "decrement operators [C++]"
 ms.assetid: 0204d5c8-51b0-4108-b8a1-074c5754d89c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Postfix Increment and Decrement Operators: ++ and --
 ## Syntax  

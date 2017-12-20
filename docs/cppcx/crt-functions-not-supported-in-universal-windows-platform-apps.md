@@ -12,6 +12,8 @@ caps.latest.revision: 15
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CRT functions not supported in Universal Windows Platform apps
 Many C runtime (CRT) functions are not available when you build Universal Windows Platform (UWP) apps. In some cases, workarounds are available—-for example, you can use Windows Runtime or Win32 APIs. However, in other cases, CRT functions have been banned because the features that correspond to them or the supporting APIs are not applicable to UWP apps.  

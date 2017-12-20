@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["overriding, functions", "function templates, specialization", "explicit specialization of function templates", "declaring functions [C++], specialization of function template", "specialization of function templates"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "overriding, functions"
+  - "function templates, specialization"
+  - "explicit specialization of function templates"
+  - "declaring functions [C++], specialization of function template"
+  - "specialization of function templates"
 ms.assetid: eb0fcb73-eaed-42a1-9b83-14b055a34bf8
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Explicit Specialization of Function Templates
 With a function template, you can define special behavior for a specific type by providing an explicit specialization (override) of the function template for that type. For example:  

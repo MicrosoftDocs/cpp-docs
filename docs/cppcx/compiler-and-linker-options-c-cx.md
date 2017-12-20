@@ -12,6 +12,8 @@ caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Compiler and Linker options (C++/CX)
 An environment variable, C++/CX compiler options, and linker options support the building of apps for the Windows Runtime.  

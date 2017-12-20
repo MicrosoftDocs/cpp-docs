@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["rules, inferred", "inferred dependents in NMAKE", "inferred rules in NMAKE", "dependents, inferred"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "rules, inferred"
+  - "inferred dependents in NMAKE"
+  - "inferred rules in NMAKE"
+  - "dependents, inferred"
 ms.assetid: 9381e74a-53d9-445c-836d-0ff7ef6112d9
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Inferred Dependents and Rules
 NMAKE assumes an inferred dependent for a target if an applicable inference rule exists. A rule applies if:  

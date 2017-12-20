@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["delete_cpp", "new"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["new keyword [C++], dynamic allocation of objects", "nothrownew.obj", "delete keyword [C++], syntax"]
+f1_keywords: 
+  - "delete_cpp"
+  - "new"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "new keyword [C++], dynamic allocation of objects"
+  - "nothrownew.obj"
+  - "delete keyword [C++], syntax"
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # new and delete Operators
 

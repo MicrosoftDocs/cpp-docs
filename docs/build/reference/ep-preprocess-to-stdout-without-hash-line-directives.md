@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/ep", "VC.Project.VCCLCompilerTool.GeneratePreprocessedFileNoLines"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["copy preprocessor output to stdout", "preprocessor output, copy to stdout", "-EP compiler option [C++]", "EP compiler option [C++]", "/EP compiler option [C++]"]
+f1_keywords: 
+  - "/ep"
+  - "VC.Project.VCCLCompilerTool.GeneratePreprocessedFileNoLines"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "copy preprocessor output to stdout"
+  - "preprocessor output, copy to stdout"
+  - "-EP compiler option [C++]"
+  - "EP compiler option [C++]"
+  - "/EP compiler option [C++]"
 ms.assetid: 6ec411ae-e33d-4ef5-956e-0054635eabea
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /EP (Preprocess to stdout Without #line Directives)
 Preprocesses C and C++ source files and copies the preprocessed files to the standard output device.  

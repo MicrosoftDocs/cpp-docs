@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::multimap"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["<map> header [STL/CLR]", "<cliext/map> header [STL/CLR]", "multimap class [STL/CLR]"]
+f1_keywords: 
+  - "cliext::multimap"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "<map> header [STL/CLR]"
+  - "<cliext/map> header [STL/CLR]"
+  - "multimap class [STL/CLR]"
 ms.assetid: 3dfe329d-a078-462a-b050-7999ce6110ad
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # multimap (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `multimap` to manage a sequence of elements as a (nearly) balanced ordered tree of nodes, each storing one element. An element consists of a key, for ordering the sequence, and a mapped value, which goes along for the ride.  

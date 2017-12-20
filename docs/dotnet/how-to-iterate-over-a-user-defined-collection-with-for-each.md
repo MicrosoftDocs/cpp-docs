@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["collections, iterating over"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "collections, iterating over"
 ms.assetid: 0efd9e3c-d7bb-4f6c-9938-e0e65d191433
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Iterate Over a User-Defined Collection with for each
 For a class to be a managed collection, it needs a non-private GetEnumerator function that returns a handle to an Enumerator class or an interface.  An enumerator class must contain the declaration for non-static MoveNext function and Current property.  

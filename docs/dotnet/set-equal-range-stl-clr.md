@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::set::equal_range"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["equal_range member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::set::equal_range"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "equal_range member [STL/CLR]"
 ms.assetid: f0b20a65-f37a-44b1-a291-09c33c10c355
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # set::equal_range (STL/CLR)
 Finds range that matches a specified key.  

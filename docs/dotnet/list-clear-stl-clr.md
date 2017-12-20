@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::list::clear"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["clear member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::list::clear"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "clear member [STL/CLR]"
 ms.assetid: 5aac9a64-52f6-4a73-8b24-e30ceedcbc20
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # list::clear (STL/CLR)
 Removes all elements.  

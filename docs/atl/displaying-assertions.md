@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["debugging [ATL], displaying assertions", "assertions, displaying", "debugging assertions", "assertions, debugging"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "debugging [ATL], displaying assertions"
+  - "assertions, displaying"
+  - "debugging assertions"
+  - "assertions, debugging"
 ms.assetid: fa353fe8-4656-4384-a5d2-8866bc977f06
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Displaying Assertions
 If the client connected to your service appears to stop responding, the service may have asserted and displayed a message box that you are not able to see. You can confirm this by using Visual C++'s debugger to debug your code (see [Using Task Manager](../atl/using-task-manager.md) earlier in this section).  

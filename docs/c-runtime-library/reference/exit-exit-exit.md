@@ -4,20 +4,48 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_exit", "exit"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+apiname: 
+  - "_exit"
+  - "exit"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-runtime-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["Exit", "_exit", "process/exit", "process/_Exit", "stdlib/exit", "stdlib/_Exit"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["exit function", "_exit function", "processes, terminating", "function calls, terminating", "process termination, calling"]
+f1_keywords: 
+  - "Exit"
+  - "_exit"
+  - "process/exit"
+  - "process/_Exit"
+  - "stdlib/exit"
+  - "stdlib/_Exit"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "exit function"
+  - "_exit function"
+  - "processes, terminating"
+  - "function calls, terminating"
+  - "process termination, calling"
 ms.assetid: b1501fa6-27c2-478c-9e93-cc4fd802a01f
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # exit, _Exit, _exit
 Terminates the calling process. The `exit` function terminates it after cleanup; `_exit` and `_Exit` terminate it immediately.  

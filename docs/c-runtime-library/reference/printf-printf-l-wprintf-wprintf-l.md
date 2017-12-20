@@ -4,20 +4,55 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_printf_l", "wprintf", "_wprintf_l", "printf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_printf_l"
+  - "wprintf"
+  - "_wprintf_l"
+  - "printf"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["printf", "_tprintf", "wprintf"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["printf function", "printf_l function", "tprintf_l function", "tprintf function", "_printf_l function", "wprintf function", "writing to console", "wprintf_l function", "_tprintf_l function", "_wprintf_l function", "_tprintf function", "printf function, format specification fields", "printf function, using", "formatted text [C++]"]
+f1_keywords: 
+  - "printf"
+  - "_tprintf"
+  - "wprintf"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "printf function"
+  - "printf_l function"
+  - "tprintf_l function"
+  - "tprintf function"
+  - "_printf_l function"
+  - "wprintf function"
+  - "writing to console"
+  - "wprintf_l function"
+  - "_tprintf_l function"
+  - "_wprintf_l function"
+  - "_tprintf function"
+  - "printf function, format specification fields"
+  - "printf function, using"
+  - "formatted text [C++]"
 ms.assetid: 77a854ae-5b48-4865-89f4-f2dc5cf80f52
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # printf, _printf_l, wprintf, _wprintf_l
 Prints formatted output to the standard output stream. More secure versions of these functions are available; see [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md).  

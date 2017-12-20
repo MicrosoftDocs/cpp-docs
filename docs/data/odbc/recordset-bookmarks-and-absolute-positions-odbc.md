@@ -4,17 +4,39 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["SetAbsolutePosition"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CDBVariant class, bookmarks", "absolute positions, ODBC recordsets", "bookmarks, CDBVariant", "bookmarks, ODBC recordsets", "ODBC recordsets, absolute positions", "ODBC recordsets, bookmarks", "cursors [ODBC], absolute position in recordsets", "recordsets, bookmarks", "bookmarks", "SetAbsolutePosition method", "recordsets, absolute positions", "positioning records", "SetBookmark method", "record positioning", "GetBookmark method", "SetAbsolutePosition method, bookmarks"]
+f1_keywords: 
+  - "SetAbsolutePosition"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CDBVariant class, bookmarks"
+  - "absolute positions, ODBC recordsets"
+  - "bookmarks, CDBVariant"
+  - "bookmarks, ODBC recordsets"
+  - "ODBC recordsets, absolute positions"
+  - "ODBC recordsets, bookmarks"
+  - "cursors [ODBC], absolute position in recordsets"
+  - "recordsets, bookmarks"
+  - "bookmarks"
+  - "SetAbsolutePosition method"
+  - "recordsets, absolute positions"
+  - "positioning records"
+  - "SetBookmark method"
+  - "record positioning"
+  - "GetBookmark method"
+  - "SetAbsolutePosition method, bookmarks"
 ms.assetid: 189788d6-33c1-41c5-9265-97db2a5d43cc
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Recordset: Bookmarks and Absolute Positions (ODBC)
 This topic applies to the MFC ODBC classes.  

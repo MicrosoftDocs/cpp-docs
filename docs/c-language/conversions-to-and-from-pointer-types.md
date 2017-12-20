@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["pointers, converting", "conversions, pointer", "type casts, involving pointers", "void pointers"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "pointers, converting"
+  - "conversions, pointer"
+  - "type casts, involving pointers"
+  - "void pointers"
 ms.assetid: 3facc56f-06d3-4570-b1a2-7d4927b83086
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Conversions to and from Pointer Types
 A pointer to one type of value can be converted to a pointer to a different type. However, the result may be undefined because of the alignment requirements and sizes of different types in storage. A pointer to an object can be converted to a pointer to an object whose type requires less or equally strict storage alignment, and back again without change.  

@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["structured exception handling [C++], vs. C++ exception handling", "structured exception handling [C++], vs. unstructured", "exceptions [C++], wrapper class", "C++ exception handling [C++], vs. structured exception handling", "wrapper classes [C++], C exception"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "structured exception handling [C++], vs. C++ exception handling"
+  - "structured exception handling [C++], vs. unstructured"
+  - "exceptions [C++], wrapper class"
+  - "C++ exception handling [C++], vs. structured exception handling"
+  - "wrapper classes [C++], C exception"
 ms.assetid: f21d1944-4810-468e-b02a-9f77da4138c9
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Exception Handling Differences
 The major difference between structured exception handling and C++ exception handling is that the C++ exception handling model deals in types, while the C structured exception handling model deals with exceptions of one type — specifically, `unsigned int`. That is, C exceptions are identified by an unsigned integer value, whereas C++ exceptions are identified by data type. When an exception is raised in C, each possible handler executes a filter that examines the C exception context and determines whether to accept the exception, pass it to some other handler, or ignore it. When an exception is thrown in C++, it may be of any type.  

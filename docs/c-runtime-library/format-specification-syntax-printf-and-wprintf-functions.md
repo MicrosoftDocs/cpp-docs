@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["format specification fields for printf function", "printf function format specification fields", "flag directives, printf function", "type fields, printf function", "width fields, printf function", "precision fields, printf function"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "format specification fields for printf function"
+  - "printf function format specification fields"
+  - "flag directives, printf function"
+  - "type fields, printf function"
+  - "width fields, printf function"
+  - "precision fields, printf function"
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Format specification syntax: printf and wprintf functions
 

@@ -4,17 +4,42 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CAtlArray", "ATLCOLL/ATL::CAtlArray", "ATLCOLL/ATL::Add", "ATLCOLL/ATL::Append", "ATLCOLL/ATL::AssertValid", "ATLCOLL/ATL::Copy", "ATLCOLL/ATL::FreeExtra", "ATLCOLL/ATL::GetAt", "ATLCOLL/ATL::GetCount", "ATLCOLL/ATL::GetData", "ATLCOLL/ATL::InsertArrayAt", "ATLCOLL/ATL::InsertAt", "ATLCOLL/ATL::IsEmpty", "ATLCOLL/ATL::RemoveAll", "ATLCOLL/ATL::RemoveAt", "ATLCOLL/ATL::SetAt", "ATLCOLL/ATL::SetAtGrow", "ATLCOLL/ATL::SetCount", "ATLCOLL/ATL::INARGTYPE", "ATLCOLL/ATL::OUTARGTYPE"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CAtlArray class"]
+f1_keywords: 
+  - "CAtlArray"
+  - "ATLCOLL/ATL::CAtlArray"
+  - "ATLCOLL/ATL::Add"
+  - "ATLCOLL/ATL::Append"
+  - "ATLCOLL/ATL::AssertValid"
+  - "ATLCOLL/ATL::Copy"
+  - "ATLCOLL/ATL::FreeExtra"
+  - "ATLCOLL/ATL::GetAt"
+  - "ATLCOLL/ATL::GetCount"
+  - "ATLCOLL/ATL::GetData"
+  - "ATLCOLL/ATL::InsertArrayAt"
+  - "ATLCOLL/ATL::InsertAt"
+  - "ATLCOLL/ATL::IsEmpty"
+  - "ATLCOLL/ATL::RemoveAll"
+  - "ATLCOLL/ATL::RemoveAt"
+  - "ATLCOLL/ATL::SetAt"
+  - "ATLCOLL/ATL::SetAtGrow"
+  - "ATLCOLL/ATL::SetCount"
+  - "ATLCOLL/ATL::INARGTYPE"
+  - "ATLCOLL/ATL::OUTARGTYPE"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CAtlArray class"
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CAtlArray Class
 This class implements an array object.  

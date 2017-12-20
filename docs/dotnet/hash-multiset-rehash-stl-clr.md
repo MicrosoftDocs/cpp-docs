@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_multiset::rehash"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["rehash member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_multiset::rehash"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "rehash member [STL/CLR]"
 ms.assetid: 1208cffc-acee-4c75-87b5-ce9ec641c3b6
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_multiset::rehash (STL/CLR)
 Rebuilds the hash table.  

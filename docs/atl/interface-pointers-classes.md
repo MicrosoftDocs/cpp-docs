@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["vc.atl.pointers.interface"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["pointers, to interfaces", "interfaces, pointers classes", "interface pointers classes"]
+f1_keywords: 
+  - "vc.atl.pointers.interface"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "pointers, to interfaces"
+  - "interfaces, pointers classes"
+  - "interface pointers classes"
 ms.assetid: 712617a1-17ae-4b5c-a32c-a48b758df7a6
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Interface Pointers Classes
 The following classes manage a given interface pointer:  

@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["link"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
+f1_keywords: 
+  - "link"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "linker [C++]"
+  - "linker [C++], options listed"
+  - "libraries [C++], linking to COFF"
+  - "LINK tool [C++], linker options"
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
 caps.latest.revision: 37
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Linker Options
 

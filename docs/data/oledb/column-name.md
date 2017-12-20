@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["COLUMN_NAME"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["COLUMN_NAME macro"]
+f1_keywords: 
+  - "COLUMN_NAME"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "COLUMN_NAME macro"
 ms.assetid: a213b9a0-2148-4a08-9111-d9fa8fdec462
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # COLUMN_NAME
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_ENTRY](../../data/oledb/column-entry.md), except that this macro takes the column name instead of the column number.  

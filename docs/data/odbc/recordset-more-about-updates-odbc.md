@@ -4,16 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["records, updating", "transactions, updating recordsets", "ODBC recordsets, updating", "multiuser environments, updates to recordsets", "scrolling, updates to recordsets", "updating recordsets", "recordsets, updating"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "records, updating"
+  - "transactions, updating recordsets"
+  - "ODBC recordsets, updating"
+  - "multiuser environments, updates to recordsets"
+  - "scrolling, updates to recordsets"
+  - "updating recordsets"
+  - "recordsets, updating"
 ms.assetid: 0353a742-d226-4fe2-8881-a7daeffe86cd
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Recordset: More About Updates (ODBC)
 This topic applies to the MFC ODBC classes.  

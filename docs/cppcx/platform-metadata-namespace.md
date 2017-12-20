@@ -18,6 +18,8 @@ caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Metadata Namespace
 This namespace contains attributes that modify the declarations of types.  

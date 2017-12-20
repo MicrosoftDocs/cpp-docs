@@ -21,6 +21,8 @@ ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /await (Enable coroutine support)  
   

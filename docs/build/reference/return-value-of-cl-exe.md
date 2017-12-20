@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["cl.exe compiler, return value"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "cl.exe compiler, return value"
 ms.assetid: 7c2d7f33-ee0d-4199-8ef4-75fe2b007670
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Return Value of cl.exe
 cl.exe returns zero for success (no errors) and non-zero otherwise.  

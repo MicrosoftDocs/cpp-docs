@@ -19,6 +19,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::DisconnectedException Class
 Thrown when a COM proxy object attempts to reference a COM server that no longer exists  

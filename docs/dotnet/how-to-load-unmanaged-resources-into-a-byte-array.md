@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["native resources, loading into Byte array", "unmanaged resources, loading into Byte array", "native resources"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "native resources, loading into Byte array"
+  - "unmanaged resources, loading into Byte array"
+  - "native resources"
 ms.assetid: cdada6cd-6d42-437a-a90f-44a0b18d6a93
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Load Unmanaged Resources into a Byte Array
 This topic discusses several ways to load unmanaged resources into a <xref:System.Byte> array.  

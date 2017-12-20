@@ -7,7 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["VCCORLIB/Platform::ValueType::ToString"]
+f1_keywords: 
+  - "VCCORLIB/Platform::ValueType::ToString"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -17,6 +18,8 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::ValueType Class
 The base class for instances of value types.  

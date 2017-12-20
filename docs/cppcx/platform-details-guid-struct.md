@@ -18,6 +18,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Details::__GUID Struct
 This struct is intended for internal use only, and is not intended to be used for development.  

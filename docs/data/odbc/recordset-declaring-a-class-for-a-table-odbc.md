@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["ODBC recordsets, declaring class for tables", "recordsets, declaring classes for tables"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ODBC recordsets, declaring class for tables"
+  - "recordsets, declaring classes for tables"
 ms.assetid: 3fe286c2-3f3d-493d-9d8c-762310939d08
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Recordset: Declaring a Class for a Table (ODBC)
 This topic applies to the MFC ODBC classes.  

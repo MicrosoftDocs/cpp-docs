@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["atlcom/ATL::BEGIN_SINK_MAP", "atlcom/ATL::END_SINK_MAP", "atlcom/ATL::SINK_ENTRY"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["composite controls, macros"]
+f1_keywords: 
+  - "atlcom/ATL::BEGIN_SINK_MAP"
+  - "atlcom/ATL::END_SINK_MAP"
+  - "atlcom/ATL::SINK_ENTRY"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "composite controls, macros"
 ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Composite Control Macros
 These macros define event sink maps and entries.  

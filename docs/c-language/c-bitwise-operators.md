@@ -4,16 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["| operator, bitwise operators", "bitwise operators, Visual C", "bitwise operators", "operators [C], bitwise", "^ operator, bitwise operators", "AND operator", "ampersand operator (&)", "^ operator", "& operator, bitwise operators"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "| operator, bitwise operators"
+  - "bitwise operators, Visual C"
+  - "bitwise operators"
+  - "operators [C], bitwise"
+  - "^ operator, bitwise operators"
+  - "AND operator"
+  - "ampersand operator (&)"
+  - "^ operator"
+  - "& operator, bitwise operators"
 ms.assetid: e22127b1-9a2d-4876-b01d-c8f72cec3317
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # C Bitwise Operators
 The bitwise operators perform bitwise-AND (**&**), bitwise-exclusive-OR (**^**), and bitwise-inclusive-OR (**&#124;**) operations.  

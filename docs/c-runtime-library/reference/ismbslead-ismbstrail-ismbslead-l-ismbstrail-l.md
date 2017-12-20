@@ -4,20 +4,57 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_ismbstrail", "_ismbslead_l", "_ismbslead", "_ismbstrail_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+apiname: 
+  - "_ismbstrail"
+  - "_ismbslead_l"
+  - "_ismbslead"
+  - "_ismbstrail_l"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-multibyte-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_ismbslead", "ismbs", "ismbslead_l", "_ismbs", "ismbstrail_l", "ismbslead", "_ismbstrail", "_ismbstrail_l", "ismbstrail", "_ismbslead_l"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ismbstrail function", "_ismbslead function", "ismbslead function", "ismbslead_l function", "_ismbstrail function", "_ismbslead_l function", "ismbstrail_l function", "_ismbstrail_l function"]
+f1_keywords: 
+  - "_ismbslead"
+  - "ismbs"
+  - "ismbslead_l"
+  - "_ismbs"
+  - "ismbstrail_l"
+  - "ismbslead"
+  - "_ismbstrail"
+  - "_ismbstrail_l"
+  - "ismbstrail"
+  - "_ismbslead_l"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ismbstrail function"
+  - "_ismbslead function"
+  - "ismbslead function"
+  - "ismbslead_l function"
+  - "_ismbstrail function"
+  - "_ismbslead_l function"
+  - "ismbstrail_l function"
+  - "_ismbstrail_l function"
 ms.assetid: 86d2cd7a-3cff-443a-b713-14cc17a231e9
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 Performs context-sensitive tests for multibyte-character-string lead bytes and trail bytes and determines whether a given substring pointer points to a lead byte or a trail byte.  

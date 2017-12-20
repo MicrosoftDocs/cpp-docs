@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["schema rowsets", "OLE DB consumer templates, schema rowsets", "OLE DB providers, schema rowsets", "OLE DB, schema rowsets"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "schema rowsets"
+  - "OLE DB consumer templates, schema rowsets"
+  - "OLE DB providers, schema rowsets"
+  - "OLE DB, schema rowsets"
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Supporting Schema Rowsets
 Schema rowsets allow consumers to obtain information about a data store without knowing its underlying structure, or schema. For example, a data store might have tables organized into a user-defined hierarchy, so there would be no way to ensure knowledge of the schema except by reading it. (As another example, note that the Visual C++ wizards use schema rowsets to generate accessors for the consumer.) To allow the consumer to do this, the provider's session object exposes methods on the [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) interface. In Visual C++ applications, you use the [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) class to implement **IDBSchemaRowset**.  

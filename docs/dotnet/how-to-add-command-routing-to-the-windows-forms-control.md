@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["command routing [C++], adding to Windows Forms controls", "Windows Forms controls [C++], command routing"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "command routing [C++], adding to Windows Forms controls"
+  - "Windows Forms controls [C++], command routing"
 ms.assetid: bf138ece-b463-442a-b0a0-de7063a760c0
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Add Command Routing to the Windows Forms Control
 [CWinFormsView](../mfc/reference/cwinformsview-class.md) routes commands and update-command UI messages to the user control to allow it to handle MFC commands (for example, frame menu items and toolbar buttons).  

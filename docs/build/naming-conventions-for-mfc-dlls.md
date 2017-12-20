@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["MFC libraries [C++], naming conventions", "naming conventions [C++], MFC DLLs", "MFC DLLs [C++], naming conventions", "libraries [C++], MFC DLL names", "shared DLL versions [C++]", "DLLs [C++], naming conventions", "DLLs [C++], library names"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "MFC libraries [C++], naming conventions"
+  - "naming conventions [C++], MFC DLLs"
+  - "MFC DLLs [C++], naming conventions"
+  - "libraries [C++], MFC DLL names"
+  - "shared DLL versions [C++]"
+  - "DLLs [C++], naming conventions"
+  - "DLLs [C++], library names"
 ms.assetid: 0db9c3f3-87d3-40e8-8964-250f9d2a2209
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Naming Conventions for MFC DLLs
 The DLLs and libraries included in MFC follow a structured naming convention. This makes it easier to know which DLL or library you should be using for which purpose.  

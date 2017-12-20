@@ -4,20 +4,43 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["rand"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
+apiname: 
+  - "rand"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-utility-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["rand"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["generating pseudorandom numbers", "random numbers, generating", "numbers, pseudorandom", "rand function", "pseudorandom numbers", "numbers, generating pseudorandom"]
+f1_keywords: 
+  - "rand"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "generating pseudorandom numbers"
+  - "random numbers, generating"
+  - "numbers, pseudorandom"
+  - "rand function"
+  - "pseudorandom numbers"
+  - "numbers, generating pseudorandom"
 ms.assetid: 75d9df25-7aaf-4a88-b940-2775559634e8
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # rand
 Generates a pseudorandom number. A more secure version of this function is available, see [rand_s](../../c-runtime-library/reference/rand-s.md).  

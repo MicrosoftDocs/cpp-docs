@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::negate"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["negate function [STL/CLR]"]
+f1_keywords: 
+  - "cliext::negate"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "negate function [STL/CLR]"
 ms.assetid: 58e4c339-0dee-4db8-b2cc-de8920977039
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # negate (STL/CLR)
 The template class describes a functor that, when called, returns its argument negated. You use it specify a function object in terms of its argument type.  

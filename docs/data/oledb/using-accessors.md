@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["accessors [C++], OLE DB Templates", "OLE DB consumer templates, accessors", "rowsets [C++], accessors"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "accessors [C++], OLE DB Templates"
+  - "OLE DB consumer templates, accessors"
+  - "rowsets [C++], accessors"
 ms.assetid: 6ce484a6-fbbe-40de-8ff9-5cddcd78d283
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Using Accessors
 The following topics explain how to determine which type of accessor is best for your data application and then how to use the different types of accessors available:  

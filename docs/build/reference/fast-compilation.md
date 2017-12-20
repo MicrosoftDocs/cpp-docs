@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["performance, cle.exe compiler", "compilation, performance", "cl.exe compiler, performance", "fast compiling"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "performance, cle.exe compiler"
+  - "compilation, performance"
+  - "cl.exe compiler, performance"
+  - "fast compiling"
 ms.assetid: 5fead136-ba69-40c8-8e25-236f89d5990a
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Fast Compilation
 To increase the speed of your compiles:  

@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CComAllocator", "ATLBASE/ATL::CComAllocator", "ATLBASE/ATL::CComAllocator::Allocate", "ATLBASE/ATL::CComAllocator::Free", "ATLBASE/ATL::CComAllocator::Reallocate"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CComAllocator class"]
+f1_keywords: 
+  - "CComAllocator"
+  - "ATLBASE/ATL::CComAllocator"
+  - "ATLBASE/ATL::CComAllocator::Allocate"
+  - "ATLBASE/ATL::CComAllocator::Free"
+  - "ATLBASE/ATL::CComAllocator::Reallocate"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CComAllocator class"
 ms.assetid: 0cd706fd-0c7b-42d3-9054-febe2966fc8e
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CComAllocator Class
 This class provides methods for managing memory using COM memory routines.  

@@ -4,20 +4,47 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_wasctime", "asctime"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+apiname: 
+  - "_wasctime"
+  - "asctime"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-time-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_tasctime", "asctime", "_wasctime"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["asctime function", "tasctime function", "wasctime function", "_tasctime function", "_wasctime function", "time structure conversion", "time, converting"]
+f1_keywords: 
+  - "_tasctime"
+  - "asctime"
+  - "_wasctime"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "asctime function"
+  - "tasctime function"
+  - "wasctime function"
+  - "_tasctime function"
+  - "_wasctime function"
+  - "time structure conversion"
+  - "time, converting"
 ms.assetid: 974f1727-10ff-4ed4-8cac-2eb2d681f576
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # asctime, _wasctime
 Convert a `tm` time structure to a character string. More secure versions of these functions are available; see [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md).  

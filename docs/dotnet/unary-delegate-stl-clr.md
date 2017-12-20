@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::unary_delegate"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["unary_delegate function [STL/CLR]"]
+f1_keywords: 
+  - "cliext::unary_delegate"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "unary_delegate function [STL/CLR]"
 ms.assetid: b3ee253c-98e8-466e-a272-505e47aed061
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # unary_delegate (STL/CLR)
 The genereic class describes a one-argument delegate. You use it specify a delegate in terms of its argument and return types.  

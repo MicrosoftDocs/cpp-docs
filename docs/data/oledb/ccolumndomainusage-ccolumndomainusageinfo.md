@@ -4,17 +4,60 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["m_szTableSchema", "m_szCatalog", "m_nColumnPropID", "CColumnDomainUsageInfo", "COLUMN_GUID", "DOMAIN_NAME", "m_szColumnName", "DOMAIN_SCHEMA", "DOMAIN_CATALOG", "m_szTableCatalog", "m_szSchema", "COLUMN_PROPID", "m_guidColumn", "CColumnDomainUsage", "m_szTableName", "m_szName", "COLUMN_DOMAIN_USAGE"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["COLUMN_PROPID", "m_szSchema", "DOMAIN_NAME", "DOMAIN_SCHEMA", "m_szTableSchema", "TABLE_CATALOG", "m_szCatalog", "TABLE_NAME", "m_nColumnPropID", "CColumnDomainUsageInfo parameter class", "TABLE_SCHEMA", "m_szColumnName", "COLUMN_NAME", "m_szName", "m_szTableCatalog", "m_szTableName", "COLUMN_DOMAIN_USAGE", "COLUMN_GUID", "CColumnDomainUsage typedef class", "m_guidColumn", "DOMAIN_CATALOG"]
+f1_keywords: 
+  - "m_szTableSchema"
+  - "m_szCatalog"
+  - "m_nColumnPropID"
+  - "CColumnDomainUsageInfo"
+  - "COLUMN_GUID"
+  - "DOMAIN_NAME"
+  - "m_szColumnName"
+  - "DOMAIN_SCHEMA"
+  - "DOMAIN_CATALOG"
+  - "m_szTableCatalog"
+  - "m_szSchema"
+  - "COLUMN_PROPID"
+  - "m_guidColumn"
+  - "CColumnDomainUsage"
+  - "m_szTableName"
+  - "m_szName"
+  - "COLUMN_DOMAIN_USAGE"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "COLUMN_PROPID"
+  - "m_szSchema"
+  - "DOMAIN_NAME"
+  - "DOMAIN_SCHEMA"
+  - "m_szTableSchema"
+  - "TABLE_CATALOG"
+  - "m_szCatalog"
+  - "TABLE_NAME"
+  - "m_nColumnPropID"
+  - "CColumnDomainUsageInfo parameter class"
+  - "TABLE_SCHEMA"
+  - "m_szColumnName"
+  - "COLUMN_NAME"
+  - "m_szName"
+  - "m_szTableCatalog"
+  - "m_szTableName"
+  - "COLUMN_DOMAIN_USAGE"
+  - "COLUMN_GUID"
+  - "CColumnDomainUsage typedef class"
+  - "m_guidColumn"
+  - "DOMAIN_CATALOG"
 ms.assetid: 5ff331f1-b99c-4002-9e04-367708c5759f
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CColumnDomainUsage, CColumnDomainUsageInfo
 Call the typedef class **CColumnDomainUsage** to implement its parameter class **CColumnDomainUsageInfo**.  

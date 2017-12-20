@@ -18,6 +18,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Metadata::FlagsAttribute Attribute
 Indicates that an enumeration can be treated as a bit field; that is, a set of flags.  

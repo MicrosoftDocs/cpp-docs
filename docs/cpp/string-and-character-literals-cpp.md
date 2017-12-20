@@ -4,17 +4,33 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["R"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["L constant", "escape sequences", "Null strings, null-terminated strings", "literal strings, C++", "Null strings", "string literals, syntax", "string literals", "literal strings", "strings [C++], string literals", "NULL, character constant", "wide characters, strings"]
+f1_keywords: 
+  - "R"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "L constant"
+  - "escape sequences"
+  - "Null strings, null-terminated strings"
+  - "literal strings, C++"
+  - "Null strings"
+  - "string literals, syntax"
+  - "string literals"
+  - "literal strings"
+  - "strings [C++], string literals"
+  - "NULL, character constant"
+  - "wide characters, strings"
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # String and Character Literals  (C++)
 C++ supports various string and character types, and provides ways to express literal values of each of these types. In your source code, you express the content of your character and string literals using a character set. Universal character names and escape characters allow you to express any string using only the basic source character set. A raw string literal enables you to avoid using escape characters, and can be used to express all types of string literals. You can also create std::string literals without having to perform extra construction or conversion steps.  

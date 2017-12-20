@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["enumerator interfaces", "collection interfaces"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "enumerator interfaces"
+  - "collection interfaces"
 ms.assetid: ea19a39e-6333-41a1-be62-5435c236640e
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Design Principles for Collection and Enumerator Interfaces
 There are different design principles behind each type of interface:  

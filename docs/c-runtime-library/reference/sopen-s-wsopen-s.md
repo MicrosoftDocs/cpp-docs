@@ -4,20 +4,48 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_sopen_s", "_wsopen_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+apiname: 
+  - "_sopen_s"
+  - "_wsopen_s"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-stdio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_sopen_s", "wsopen_s", "_wsopen_s", "sopen_s"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["sopen_s function", "_wsopen_s function", "wsopen_s function", "opening files, for sharing", "files [C++], opening", "_sopen_s function", "files [C++], sharing"]
+f1_keywords: 
+  - "_sopen_s"
+  - "wsopen_s"
+  - "_wsopen_s"
+  - "sopen_s"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "sopen_s function"
+  - "_wsopen_s function"
+  - "wsopen_s function"
+  - "opening files, for sharing"
+  - "files [C++], opening"
+  - "_sopen_s function"
+  - "files [C++], sharing"
 ms.assetid: 059a0084-d08c-4973-9174-55e391b72aa2
 caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _sopen_s, _wsopen_s
 Opens a file for sharing. These versions of [_sopen and _wsopen](../../c-runtime-library/reference/sopen-wsopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

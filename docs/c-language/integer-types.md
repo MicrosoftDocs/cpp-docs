@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["integer data type, integer types in C++", "integer constants", "integer types", "integers, types"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "integer data type, integer types in C++"
+  - "integer constants"
+  - "integer types"
+  - "integers, types"
 ms.assetid: c8926a5e-0e98-4e37-9b05-ce97961379bd
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Integer Types
 Every integer constant is given a type based on its value and the way it is expressed. You can force any integer constant to type **long** by appending the letter **l** or **L** to the end of the constant; you can force it to be type `unsigned` by appending **u** or **U** to the value. The lowercase letter **l** can be confused with the digit 1 and should be avoided. Some forms of **long** integer constants follow:  

@@ -19,6 +19,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::NotImplementedException Class
 Thrown when an interface member is not been implemented in a derived type.  

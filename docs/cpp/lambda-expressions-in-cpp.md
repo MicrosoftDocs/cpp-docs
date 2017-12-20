@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "07/19/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["lambda expressions [C++]", "lambda expressions [C++], overview", "lambda expressions [C++], vs. function objects"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "lambda expressions [C++]"
+  - "lambda expressions [C++], overview"
+  - "lambda expressions [C++], vs. function objects"
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
 caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Lambda Expressions in C++
 In C++11 and later, a lambda expression—often called a *lambda*—is a convenient way of defining an anonymous function object (a *closure*) right at the location where it is invoked or passed as an argument to a function. Typically lambdas are used to encapsulate a few lines of code that are passed to algorithms or asynchronous methods. This article defines what lambdas are, compares them to other programming techniques, describes their advantages, and provides a basic example.  

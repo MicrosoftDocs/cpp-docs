@@ -4,17 +4,42 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CAtlTransactionManager", "ATLTRANSACTIONMANAGER/ATL::CAtlTransactionManager", "ATLTRANSACTIONMANAGER/ATL::Close", "ATLTRANSACTIONMANAGER/ATL::Commit", "ATLTRANSACTIONMANAGER/ATL::Create", "ATLTRANSACTIONMANAGER/ATL::CreateFile", "ATLTRANSACTIONMANAGER/ATL::DeleteFile", "ATLTRANSACTIONMANAGER/ATL::FindFirstFile", "ATLTRANSACTIONMANAGER/ATL::GetFileAttributes", "ATLTRANSACTIONMANAGER/ATL::GetFileAttributesEx", "ATLTRANSACTIONMANAGER/ATL::GetHandle", "ATLTRANSACTIONMANAGER/ATL::IsFallback", "ATLTRANSACTIONMANAGER/ATL::MoveFile", "ATLTRANSACTIONMANAGER/ATL::RegCreateKeyEx", "ATLTRANSACTIONMANAGER/ATL::RegDeleteKey", "ATLTRANSACTIONMANAGER/ATL::RegOpenKeyEx", "ATLTRANSACTIONMANAGER/ATL::Rollback", "ATLTRANSACTIONMANAGER/ATL::SetFileAttributes", "ATLTRANSACTIONMANAGER/ATL::m_bFallback", "ATLTRANSACTIONMANAGER/ATL::m_hTransaction"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CAtlTransactionManager class"]
+f1_keywords: 
+  - "CAtlTransactionManager"
+  - "ATLTRANSACTIONMANAGER/ATL::CAtlTransactionManager"
+  - "ATLTRANSACTIONMANAGER/ATL::Close"
+  - "ATLTRANSACTIONMANAGER/ATL::Commit"
+  - "ATLTRANSACTIONMANAGER/ATL::Create"
+  - "ATLTRANSACTIONMANAGER/ATL::CreateFile"
+  - "ATLTRANSACTIONMANAGER/ATL::DeleteFile"
+  - "ATLTRANSACTIONMANAGER/ATL::FindFirstFile"
+  - "ATLTRANSACTIONMANAGER/ATL::GetFileAttributes"
+  - "ATLTRANSACTIONMANAGER/ATL::GetFileAttributesEx"
+  - "ATLTRANSACTIONMANAGER/ATL::GetHandle"
+  - "ATLTRANSACTIONMANAGER/ATL::IsFallback"
+  - "ATLTRANSACTIONMANAGER/ATL::MoveFile"
+  - "ATLTRANSACTIONMANAGER/ATL::RegCreateKeyEx"
+  - "ATLTRANSACTIONMANAGER/ATL::RegDeleteKey"
+  - "ATLTRANSACTIONMANAGER/ATL::RegOpenKeyEx"
+  - "ATLTRANSACTIONMANAGER/ATL::Rollback"
+  - "ATLTRANSACTIONMANAGER/ATL::SetFileAttributes"
+  - "ATLTRANSACTIONMANAGER/ATL::m_bFallback"
+  - "ATLTRANSACTIONMANAGER/ATL::m_hTransaction"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CAtlTransactionManager class"
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
 caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CAtlTransactionManager Class
 CAtlTransactionManager class provides a wrapper to Kernel Transaction Manager (KTM) functions.  

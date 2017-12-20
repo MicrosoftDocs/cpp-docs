@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["wmain"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["main function, vs. wmain", "wmain function"]
+f1_keywords: 
+  - "wmain"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "main function, vs. wmain"
+  - "wmain function"
 ms.assetid: 7abb1257-b85c-413a-b913-d45b1582a71d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Using wmain Instead of main
 ## Microsoft Specific  

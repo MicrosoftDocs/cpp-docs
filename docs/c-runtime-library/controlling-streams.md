@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["Controlling Streams"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["streams, controlling", "controlling streams", "streams"]
+f1_keywords: 
+  - "Controlling Streams"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "streams, controlling"
+  - "controlling streams"
+  - "streams"
 ms.assetid: 267e9013-9afc-45f6-91e3-ca093230d9d9
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Controlling Streams
 [fopen](../c-runtime-library/reference/fopen-wfopen.md) returns the address of an object of type `FILE`. You use this address as the `stream` argument to several library functions to perform various operations on an open file. For a byte stream, all input takes place as if each character is read by calling [fgetc](../c-runtime-library/reference/fgetc-fgetwc.md), and all output takes place as if each character is written by calling [fputc](../c-runtime-library/reference/fputc-fputwc.md). For a wide stream, all input takes place as if each character is read by calling [fgetwc](../c-runtime-library/reference/fgetc-fgetwc.md), and all output takes place as if each character is written by calling [fputwc](../c-runtime-library/reference/fputc-fputwc.md).  

@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["initializer lists"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "initializer lists"
 ms.assetid: b3e53442-9809-4105-9226-ae845bd20cae
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # Initializer Lists
 Initializer lists in constructors are now called before the base class constructor.  

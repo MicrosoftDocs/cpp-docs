@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["GetColumnInfo", "CRowsetImpl.GetColumnInfo", "CRowsetImpl::GetColumnInfo"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetColumnInfo method"]
+f1_keywords: 
+  - "GetColumnInfo"
+  - "CRowsetImpl.GetColumnInfo"
+  - "CRowsetImpl::GetColumnInfo"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetColumnInfo method"
 ms.assetid: 9ef76525-f996-4c6f-81b9-68eb260350ef
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CRowsetImpl::GetColumnInfo
 Retrieves column information for a particular client request.  

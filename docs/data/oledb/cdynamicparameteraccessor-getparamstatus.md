@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CDynamicParameterAccessor::GetParamStatus", "CDynamicParameterAccessor.GetParamStatus", "ATL.CDynamicParameterAccessor.GetParamStatus", "ATL::CDynamicParameterAccessor::GetParamStatus", "GetParamStatus"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetParamStatus method"]
+f1_keywords: 
+  - "CDynamicParameterAccessor::GetParamStatus"
+  - "CDynamicParameterAccessor.GetParamStatus"
+  - "ATL.CDynamicParameterAccessor.GetParamStatus"
+  - "ATL::CDynamicParameterAccessor::GetParamStatus"
+  - "GetParamStatus"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetParamStatus method"
 ms.assetid: 9300225a-616c-4a7d-82d0-8c2ecd4d8185
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CDynamicParameterAccessor::GetParamStatus
 Retrieves the status of the specified parameter stored in the buffer.  

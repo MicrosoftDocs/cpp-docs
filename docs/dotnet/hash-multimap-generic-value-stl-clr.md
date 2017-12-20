@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_multimap::generic_value"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["generic_value member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_multimap::generic_value"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "generic_value member [STL/CLR]"
 ms.assetid: b0a6dcf0-dc38-4b31-b1f0-8ce43e6043ef
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_multimap::generic_value (STL/CLR)
 The type of an element for use with the generic interface for the container.  

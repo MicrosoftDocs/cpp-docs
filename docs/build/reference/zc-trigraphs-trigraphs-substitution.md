@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/Zc"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["-Zc compiler options (C++)", "/Zc compiler options (C++)", "Conformance compiler options", "Zc compiler options (C++)"]
+f1_keywords: 
+  - "/Zc"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "-Zc compiler options (C++)"
+  - "/Zc compiler options (C++)"
+  - "Conformance compiler options"
+  - "Zc compiler options (C++)"
 ms.assetid: e3d6058f-400d-4966-a3aa-800cfdf69cbf
 caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Zc:trigraphs (Trigraphs Substitution)
 When **/Zc:trigraphs** is specified, the compiler replaces a trigraph character sequence by using a corresponding punctuation character. To turn off trigraph substitution, specify **/Zc:trigraphs-**. By default, **/Zc:trigraphs** is off.  

@@ -16,6 +16,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # default::(type_name)::Equals Method
 Determines whether the specified object is equal to the current object.  

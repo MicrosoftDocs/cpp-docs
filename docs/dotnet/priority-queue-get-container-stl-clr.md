@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::priority_queue::get_container"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["get_container member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::priority_queue::get_container"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "get_container member [STL/CLR]"
 ms.assetid: bd3cc63b-776f-495c-bf81-a9e8ba189a56
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # priority_queue::get_container (STL/CLR)
 Accesses the underlying container.  

@@ -4,15 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
+dev_langs: 
+  - "C++"
 ms.assetid: df80d255-e7ea-49d9-b940-3f012e90cf9b
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Adding a Property Page (ATL Tutorial, Part 6)
 Property pages are implemented as separate COM objects, which allow them to be shared if required. In this step, you will do the following tasks to add a property page to the control:  

@@ -4,20 +4,40 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: 
+  - "cpp"
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["fegetexceptflag"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+apiname: 
+  - "fegetexceptflag"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-runtime-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["fegetexceptflag", "fenv/fegetexceptflag"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["fegetexceptflag function"]
+f1_keywords: 
+  - "fegetexceptflag"
+  - "fenv/fegetexceptflag"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "fegetexceptflag function"
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # fegetexceptflag
 Stores the current state of the specified floating-point exception flags.  

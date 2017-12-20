@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::inner_product"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["inner_product function [STL/CLR]"]
+f1_keywords: 
+  - "cliext::inner_product"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "inner_product function [STL/CLR]"
 ms.assetid: 97d7a507-7494-4216-aedf-0546ed0edb3f
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # inner_product (STL/CLR)
 Computes the sum of the element-wise product of two ranges and adds it to a specified initial value or computes the result of a generalized procedure where the sum and product binary operations are replaced by other specified binary operations.  

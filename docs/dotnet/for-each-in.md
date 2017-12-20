@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::foreach", "for", "each", "in"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["for each keyword [C++]"]
+f1_keywords: 
+  - "cliext::foreach"
+  - "for"
+  - "each"
+  - "in"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "for each keyword [C++]"
 ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # for each, in
 Iterates through an array or collection. This non-standard keyword is available in both C++/CLI and native C++ projects. However, its use is not recommended. Consider using a standard [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) instead.  

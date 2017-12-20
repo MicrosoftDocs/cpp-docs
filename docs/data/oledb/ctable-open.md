@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL.CTable.Open", "ATL::CTable::Open", "CTable::Open", "CTable.Open"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Open method"]
+f1_keywords: 
+  - "ATL.CTable.Open"
+  - "ATL::CTable::Open"
+  - "CTable::Open"
+  - "CTable.Open"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Open method"
 ms.assetid: 5d006d95-74d7-4e2b-b243-a33bc53b5455
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CTable::Open
 Opens the table.  

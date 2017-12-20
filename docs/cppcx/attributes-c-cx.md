@@ -12,6 +12,8 @@ caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Attributes (C++/CX)
 An attribute is a special kind of ref class that can be prepended in square brackets to Windows Runtime types and methods to specify certain behaviors in metadata creation. Several predefined attributes—for example,  [Windows::Foundation::Metadata::WebHostHidden](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.webhosthiddenattribute.aspx)—are commonly used in C++/CX code. This example shows how the attribute is applied to a class:  

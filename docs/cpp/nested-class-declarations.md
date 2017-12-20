@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["classes [C++], declaring", "declarations, class", "nested classes [C++]", "nested classes [C++], declaring", "declaring classes [C++]", "declarations, nested classes"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "classes [C++], declaring"
+  - "declarations, class"
+  - "nested classes [C++]"
+  - "nested classes [C++], declaring"
+  - "declaring classes [C++]"
+  - "declarations, nested classes"
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Nested Class Declarations
 A class can be declared within the scope of another class. Such a class is called a "nested class." Nested classes are considered to be within the scope of the enclosing class and are available for use within that scope. To refer to a nested class from a scope other than its immediate enclosing scope, you must use a fully qualified name.  

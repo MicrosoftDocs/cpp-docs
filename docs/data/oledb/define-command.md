@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["DEFINE_COMMAND"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["DEFINE_COMMAND macro"]
+f1_keywords: 
+  - "DEFINE_COMMAND"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "DEFINE_COMMAND macro"
 ms.assetid: 9d724968-e242-413c-9a13-e7175fccf9b1
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # DEFINE_COMMAND
 Specifies the command that will be used to create the rowset when using the [CCommand](../../data/oledb/ccommand-class.md) class. Accepts only string types matching the specified application type (ANSI or Unicode).  

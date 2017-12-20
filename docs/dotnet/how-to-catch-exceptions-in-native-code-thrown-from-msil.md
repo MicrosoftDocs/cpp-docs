@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["exceptions, catching", "catching exceptions, thrown from MSIL", "MSIL, catching exceptions in native code"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "exceptions, catching"
+  - "catching exceptions, thrown from MSIL"
+  - "MSIL, catching exceptions in native code"
 ms.assetid: c15afd2b-8505-43bf-8a4a-f1d41532a124
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Catch Exceptions in Native Code Thrown from MSIL
 In native code, you can catch native C++ exception from MSIL.  You can catch CLR exceptions with `__try` and `__except`.  

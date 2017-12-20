@@ -4,20 +4,43 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_eof"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+apiname: 
+  - "_eof"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-stdio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_eof"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["eof function", "end of file, testing for", "_eof function", "files [C++], end of", "testing, for end-of-file", "end of file"]
+f1_keywords: 
+  - "_eof"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "eof function"
+  - "end of file, testing for"
+  - "_eof function"
+  - "files [C++], end of"
+  - "testing, for end-of-file"
+  - "end of file"
 ms.assetid: 265703f4-d07e-4005-abf3-b1d0cdd9e0b0
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _eof
 Tests for end of file (EOF).  

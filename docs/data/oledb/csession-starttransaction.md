@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CSession::StartTransaction", "StartTransaction", "ATL.CSession.StartTransaction", "CSession.StartTransaction", "ATL::CSession::StartTransaction"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["StartTransaction method"]
+f1_keywords: 
+  - "CSession::StartTransaction"
+  - "StartTransaction"
+  - "ATL.CSession.StartTransaction"
+  - "CSession.StartTransaction"
+  - "ATL::CSession::StartTransaction"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "StartTransaction method"
 ms.assetid: cd7bd2be-fad1-4e2b-932b-79d308efb8fb
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CSession::StartTransaction
 Begins a new transaction for this session.  

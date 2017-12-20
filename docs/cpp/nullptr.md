@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["nullptr_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["nullptr keyword [C++]"]
+f1_keywords: 
+  - "nullptr_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "nullptr keyword [C++]"
 ms.assetid: e9d80ea6-2506-4eb5-b47b-2349df085832
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # nullptr
 Designates a null pointer constant of type `std::nullptr_t`, which is convertible to any raw pointer type.  Although you can use the keyword `nullptr` without including any headers, if your code uses the type `std::nullptr_t`, then you must define it by including the header `<cstddef>`.  

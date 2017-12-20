@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["brackets [ ]", "brackets [ ], arrays", "one-dimensional arrays", "arrays [C++], one-dimensional", "square brackets [ ]", "square brackets [ ], arrays", "subscript expressions"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "brackets [ ]"
+  - "brackets [ ], arrays"
+  - "one-dimensional arrays"
+  - "arrays [C++], one-dimensional"
+  - "square brackets [ ]"
+  - "square brackets [ ], arrays"
+  - "subscript expressions"
 ms.assetid: e28536e5-3b77-46b5-97fd-9b938c771816
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # One-Dimensional Arrays
 A postfix expression followed by an expression in square brackets (**[ ]**) is a subscripted representation of an element of an array object. A subscript expression represents the value at the address that is *expression* positions beyond *postfix-expression* when expressed as  

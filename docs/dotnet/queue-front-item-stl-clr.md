@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::queue::front_item"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["front_item member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::queue::front_item"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "front_item member [STL/CLR]"
 ms.assetid: 389ab030-4351-48e6-9b03-417f1d3fcb86
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # queue::front_item (STL/CLR)
 Accesses the first element.  

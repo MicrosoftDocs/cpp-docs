@@ -18,6 +18,8 @@ caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform namespace (C++/CX)
 Contains built-in types that are compatible with the Windows Runtime.  

@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["c.math"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["floating-point numbers, math routines", "math routines", "floating-point numbers"]
+f1_keywords: 
+  - "c.math"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "floating-point numbers, math routines"
+  - "math routines"
+  - "floating-point numbers"
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Floating-Point Support
 The Microsoft C Runtime library (CRT) provides many floating point math library functions, including all of those required by ISO C99. These functions are implemented to balance performance with correctness. Because producing the correctly rounded result may be prohibitively expensive, these functions are designed to efficiently produce a close approximation to the correctly rounded result. In most cases, the result produced is within +/-1 ulp of the correctly rounded result, though there may be cases where there is greater inaccuracy.  

@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["rowsets, updating data", "updating data, rowsets", "updating rowsets", "rowsets"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "rowsets, updating data"
+  - "updating data, rowsets"
+  - "updating rowsets"
+  - "rowsets"
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Updating Rowsets
 A very basic database operation is to update, or write data to, the data store. In OLE DB, the update mechanism is simple: your consumer application sets the values of bound data members and then writes those values to the rowset; the consumer then requests that the provider update the data store.  

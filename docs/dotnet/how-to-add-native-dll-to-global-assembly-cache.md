@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["DLLs [C++], native", "GAC (global assembly cache), loading native DLLs", "native DLLs [C++]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "DLLs [C++], native"
+  - "GAC (global assembly cache), loading native DLLs"
+  - "native DLLs [C++]"
 ms.assetid: 25e8d78a-b197-4269-b4e9-237a544ab3c8
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Add Native DLL to Global Assembly Cache
 You can put a native DLL (not COM) into the Global Assembly Cache.  

@@ -19,6 +19,8 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::WrongThreadException Class
 Thrown when a thread calls by way of an interface pointer for a proxy object that doesn't belong to the thread's apartment.  

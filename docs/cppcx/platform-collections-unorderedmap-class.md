@@ -14,6 +14,8 @@ caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Collections::UnorderedMap Class
 Represents an unordered *map*, which is a collection of key-value pairs.  

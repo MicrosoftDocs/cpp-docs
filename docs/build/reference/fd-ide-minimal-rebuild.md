@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/FD"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/FD compiler option [C++]", "-FD compiler option [C++]", "FD compiler option [C++]"]
+f1_keywords: 
+  - "/FD"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/FD compiler option [C++]"
+  - "-FD compiler option [C++]"
+  - "FD compiler option [C++]"
 ms.assetid: 7ef21b8c-a448-4bb4-9585-a2a870028e17
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /FD (IDE Minimal Rebuild)
 **/FD** is not exposed to users except in the [Command Line](../../ide/command-line-property-pages.md) property page of a C++ project's **Property Pages** dialog box, if and only if [/Gm (Enable Minimal Rebuild)](../../build/reference/gm-enable-minimal-rebuild.md) is not also selected. **/FD** has no effect other than from the development environment. **/FD** is not exposed in the output of **cl /?**.  

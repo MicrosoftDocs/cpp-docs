@@ -4,20 +4,48 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: 
+  - "cpp"
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["cexp", "cexpf", "cexpl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+apiname: 
+  - "cexp"
+  - "cexpf"
+  - "cexpl"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-math-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["cexp", "cexpf", "cexpl", "complex/cepx", "complex/cexpf", "complex/cexpl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["cexp function", "cexpl function", "cexpf function"]
+f1_keywords: 
+  - "cexp"
+  - "cexpf"
+  - "cexpl"
+  - "complex/cepx"
+  - "complex/cexpf"
+  - "complex/cexpl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "cexp function"
+  - "cexpl function"
+  - "cexpf function"
 ms.assetid: f27fd5a9-70c7-4957-a7ee-5256d19bd1da
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # cexp, cexpf, cexpl
 Compute the base-e exponential of a complex number.  

@@ -4,20 +4,47 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["tmpnam_s", "_wtmpnam_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+apiname: 
+  - "tmpnam_s"
+  - "_wtmpnam_s"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-stdio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["tmpnam_s", "_wtmpnam_s", "L_tmpnam_s"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["tmpnam_s function", "file names [C++], creating temporary", "_wtmpnam_s function", "L_tmpnam_s constant", "temporary files, creating", "file names [C++], temporary", "wtmpnam_s function"]
+f1_keywords: 
+  - "tmpnam_s"
+  - "_wtmpnam_s"
+  - "L_tmpnam_s"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "tmpnam_s function"
+  - "file names [C++], creating temporary"
+  - "_wtmpnam_s function"
+  - "L_tmpnam_s constant"
+  - "temporary files, creating"
+  - "file names [C++], temporary"
+  - "wtmpnam_s function"
 ms.assetid: e70d76dc-49f5-4aee-bfa2-f1baa2bcd29f
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # tmpnam_s, _wtmpnam_s
 Generate names you can use to create temporary files. These are versions of [tmpnam and _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["marshaling [C++], platform invoke", "C++ Interop, platform invoke", "interop [C++], platform invoke", "platform invoke [C++], marshaling in C++", "data marshaling [C++], platform invoke"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "marshaling [C++], platform invoke"
+  - "C++ Interop, platform invoke"
+  - "interop [C++], platform invoke"
+  - "platform invoke [C++], marshaling in C++"
+  - "data marshaling [C++], platform invoke"
 ms.assetid: 18e5218c-6916-48a1-a127-f66e22ef15fc
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # Using Explicit PInvoke in C++ (DllImport Attribute)
 The .NET Framework provides explicit Platform Invoke (or PInvoke) features with the `Dllimport` attribute to allow managed applications to call unmanaged functions packaged inside DLLs. Explicit PInvoke is required for situations where unmanaged APIs are packaged as DLLs and the source code is not available. Calling Win32 functions, for example, requires PInvoke. Otherwise, use implicit P{Invoke; see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) for more information.  

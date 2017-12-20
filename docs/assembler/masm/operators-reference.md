@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["MASM (Microsoft Macro Assembler), operators reference", "operators [MASM]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "MASM (Microsoft Macro Assembler), operators reference"
+  - "operators [MASM]"
 ms.assetid: c069cab7-d6b0-4f82-a6ce-0ca3fc7e6428
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # MASM Operators Reference
 

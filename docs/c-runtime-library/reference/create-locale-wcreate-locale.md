@@ -4,20 +4,45 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_create_locale", "__create_locale", "_wcreate_locale"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
+apiname: 
+  - "_create_locale"
+  - "__create_locale"
+  - "_wcreate_locale"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-locale-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["create_locale", "_create_locale", "__create_locale"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["locales, creating", "_create_locale function", "create_locale function", "__create_locale function"]
+f1_keywords: 
+  - "create_locale"
+  - "_create_locale"
+  - "__create_locale"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "locales, creating"
+  - "_create_locale function"
+  - "create_locale function"
+  - "__create_locale function"
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _create_locale, _wcreate_locale
 Creates a locale object.  

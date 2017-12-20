@@ -4,16 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["CComClassFactory class, making the default", "aggregation [C++], using ATL", "aggregation [C++], aggregation models", "defaults [C++], aggregation model in ATL", "default class factory", "class factories, changing default", "CComCoClass class, default class factory and aggregation model", "default class factory, ATL", "defaults [C++], class factory"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CComClassFactory class, making the default"
+  - "aggregation [C++], using ATL"
+  - "aggregation [C++], aggregation models"
+  - "defaults [C++], aggregation model in ATL"
+  - "default class factory"
+  - "class factories, changing default"
+  - "CComCoClass class, default class factory and aggregation model"
+  - "default class factory, ATL"
+  - "defaults [C++], class factory"
 ms.assetid: 6e040e95-0f38-4839-8a8b-c9800dd47e8c
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Changing the Default Class Factory and Aggregation Model
 ATL uses [CComCoClass](../atl/reference/ccomcoclass-class.md) to define the default class factory and aggregation model for your object. `CComCoClass` specifies the following two macros:  

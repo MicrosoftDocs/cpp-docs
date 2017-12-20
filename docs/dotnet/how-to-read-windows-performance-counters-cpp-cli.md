@@ -4,16 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["performance counters", "performance counters, reading Windows performance counters", "performance monitoring, Windows performance counters", "performance, counters", "counters, reading Windows performance counters", "performance", "performance monitoring"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "performance counters"
+  - "performance counters, reading Windows performance counters"
+  - "performance monitoring, Windows performance counters"
+  - "performance, counters"
+  - "counters, reading Windows performance counters"
+  - "performance"
+  - "performance monitoring"
 ms.assetid: 9e1c836c-cb0f-4f37-9a93-3dca6412d6b1
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Read Windows Performance Counters (C++/CLI)
 Some applications and Windows subsystems expose performance data through the Windows performance system. These counters can be accessed using the <xref:System.Diagnostics.PerformanceCounterCategory> and <xref:System.Diagnostics.PerformanceCounter> classes, which reside in the <xref:System.Diagnostics?displayProperty=fullName> namespace.  

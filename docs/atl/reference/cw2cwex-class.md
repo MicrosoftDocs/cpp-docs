@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CW2CWEX", "ATLCONV/ATL::CW2CWEX", "ATLCONV/ATL::CW2CWEX::CW2CWEX", "ATLCONV/ATL::CW2CWEX::m_psz"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CW2CWEX class"]
+f1_keywords: 
+  - "CW2CWEX"
+  - "ATLCONV/ATL::CW2CWEX"
+  - "ATLCONV/ATL::CW2CWEX::CW2CWEX"
+  - "ATLCONV/ATL::CW2CWEX::m_psz"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CW2CWEX class"
 ms.assetid: d654b22b-05a6-410f-a0ec-9a2cbbb4cca7
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CW2CWEX Class
 This class is used by the string conversion macros `CW2CTEX` and `CT2CWEX`, and the typedef `CW2W`.  

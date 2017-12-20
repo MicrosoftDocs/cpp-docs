@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::vector::size_type"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["size_type member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::vector::size_type"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "size_type member [STL/CLR]"
 ms.assetid: 0789e887-e79a-42f9-a162-fc27f1341900
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # vector::size_type (STL/CLR)
 The type of a signed distance between two elements.  

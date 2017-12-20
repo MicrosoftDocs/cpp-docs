@@ -4,20 +4,57 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["fscanf", "_fwscanf_l", "_fscanf_l", "fwscanf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "fscanf"
+  - "_fwscanf_l"
+  - "_fscanf_l"
+  - "fwscanf"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["fscanf", "fwscanf", "_ftscanf_l", "_fwscanf_l", "_ftscanf", "_fscanf_l"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["fscanf function", "fwscanf function", "formatted data [C++], reading from streams", "ftscanf_l function", "_ftscanf_l function", "_fwscanf_l function", "data [CRT], reading from streams", "_fscanf_l function", "ftscanf function", "fscanf_l function", "streams [C++], reading formatted data from", "_ftscanf function", "fwscanf_l function"]
+f1_keywords: 
+  - "fscanf"
+  - "fwscanf"
+  - "_ftscanf_l"
+  - "_fwscanf_l"
+  - "_ftscanf"
+  - "_fscanf_l"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "fscanf function"
+  - "fwscanf function"
+  - "formatted data [C++], reading from streams"
+  - "ftscanf_l function"
+  - "_ftscanf_l function"
+  - "_fwscanf_l function"
+  - "data [CRT], reading from streams"
+  - "_fscanf_l function"
+  - "ftscanf function"
+  - "fscanf_l function"
+  - "streams [C++], reading formatted data from"
+  - "_ftscanf function"
+  - "fwscanf_l function"
 ms.assetid: 9004e978-6c5f-4bb2-98fd-51e5948933f2
 caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # fscanf, _fscanf_l, fwscanf, _fwscanf_l
 Read formatted data from a stream. More secure versions of these functions are available; see [fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](../../c-runtime-library/reference/fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md).  

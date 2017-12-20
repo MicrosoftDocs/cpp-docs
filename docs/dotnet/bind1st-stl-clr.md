@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::bind1st"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["bind1st function [STL/CLR]"]
+f1_keywords: 
+  - "cliext::bind1st"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "bind1st function [STL/CLR]"
 ms.assetid: 03a04cef-60fb-4667-b22a-22a387adb028
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # bind1st (STL/CLR)
 Generates a `binder1st` for an argument and functor.  

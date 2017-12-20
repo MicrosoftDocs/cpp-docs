@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CColumnAccessor", "ATL::CColumnAccessor", "ATL.CColumnAccessor"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CColumnAccessor class"]
+f1_keywords: 
+  - "CColumnAccessor"
+  - "ATL::CColumnAccessor"
+  - "ATL.CColumnAccessor"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CColumnAccessor class"
 ms.assetid: 6ce1e67f-6a20-490d-9326-c168b43eee7e
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CColumnAccessor Class
 Generates injected consumer code.  

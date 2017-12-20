@@ -4,20 +4,48 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp", "devlang-cpp"]
+ms.technology: 
+  - "cpp"
+  - "devlang-cpp"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["fdim", "fdimf", "fdiml"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+apiname: 
+  - "fdim"
+  - "fdimf"
+  - "fdiml"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-math-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["fdim", "fdimf", "fdiml", "math/fdim", "math/fdimf", "math/fdiml"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["fdim function", "fdimf function", "fdiml function"]
+f1_keywords: 
+  - "fdim"
+  - "fdimf"
+  - "fdiml"
+  - "math/fdim"
+  - "math/fdimf"
+  - "math/fdiml"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "fdim function"
+  - "fdimf function"
+  - "fdiml function"
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # fdim, fdimf, fdiml
 Determines the positive difference between the first and second values.  

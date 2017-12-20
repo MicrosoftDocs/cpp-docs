@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["PROPERTY_INFO_ENTRY_VALUE"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["PROPERTY_INFO_ENTRY_VALUE macro"]
+f1_keywords: 
+  - "PROPERTY_INFO_ENTRY_VALUE"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "PROPERTY_INFO_ENTRY_VALUE macro"
 ms.assetid: 9690f7f3-fb20-4a7e-a75f-8a3a1cb1ce0d
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # PROPERTY_INFO_ENTRY_VALUE
 Represents a specific property in a property set.  

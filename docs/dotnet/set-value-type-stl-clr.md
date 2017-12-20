@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::set::value_type"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["value_type member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::set::value_type"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "value_type member [STL/CLR]"
 ms.assetid: 9af2fe12-9a8e-4919-9619-7a2f80988951
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # set::value_type (STL/CLR)
 The type of an element.  

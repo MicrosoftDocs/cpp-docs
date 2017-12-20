@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["_com_error::Error", "Error"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Error method [C++]"]
+f1_keywords: 
+  - "_com_error::Error"
+  - "Error"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Error method [C++]"
 ms.assetid: b53a15fd-198e-4276-afcd-13439c4807f7
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _com_error::Error
 **Microsoft Specific**  

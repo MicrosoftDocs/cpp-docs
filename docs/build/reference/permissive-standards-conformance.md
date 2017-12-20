@@ -1,16 +1,26 @@
 ---
 title: "-permissive- (Standards conformance) | Microsoft Docs"
 ms.date: "11/11/2016"
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.topic: "article"
-f1_keywords: ["/permissive", "VC.Project.VCCLCompilerTool.ConformanceMode"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/permissive compiler options [C++]", "-permissive compiler options [C++]", "Standards conformance compiler options", "permissive compiler options [C++]"]
+f1_keywords: 
+  - "/permissive"
+  - "VC.Project.VCCLCompilerTool.ConformanceMode"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/permissive compiler options [C++]"
+  - "-permissive compiler options [C++]"
+  - "Standards conformance compiler options"
+  - "permissive compiler options [C++]"
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /permissive- (Standards conformance)
 

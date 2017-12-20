@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["types [C], constants", "floating-point numbers, floating-point constants", "constants, floating-point", "floating-point constants", "floating-point constants, about floating-point constants", "double data type, floating-point constants"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "types [C], constants"
+  - "floating-point numbers, floating-point constants"
+  - "constants, floating-point"
+  - "floating-point constants"
+  - "floating-point constants, about floating-point constants"
+  - "double data type, floating-point constants"
 ms.assetid: e1bd9b44-d6ab-470c-93e5-07142c7a2062
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # C Floating-Point Constants
 A "floating-point constant" is a decimal number that represents a signed real number. The representation of a signed real number includes an integer portion, a fractional portion, and an exponent. Use floating-point constants to represent floating-point values that cannot be changed.  

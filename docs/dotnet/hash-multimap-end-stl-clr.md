@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_multimap::end"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["end member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_multimap::end"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "end member [STL/CLR]"
 ms.assetid: e9354c40-6d48-4882-aaed-ccd9987f24a9
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_multimap::end (STL/CLR)
 Designates the end of the controlled sequence.  

@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["declarations, typedef", "typedef declarations", "types [C], declarations"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "declarations, typedef"
+  - "typedef declarations"
+  - "types [C], declarations"
 ms.assetid: e92a3b82-9269-4bc6-834a-6f431ccac83e
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Typedef Declarations
 A typedef declaration is a declaration with typedef as the storage class. The declarator becomes a new type. You can use typedef declarations to construct shorter or more meaningful names for types already defined by C or for types that you have declared. Typedef names allow you to encapsulate implementation details that may change.  

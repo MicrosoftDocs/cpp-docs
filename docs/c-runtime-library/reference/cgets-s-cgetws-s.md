@@ -4,20 +4,47 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_cgetws_s", "_cgets_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
+apiname: 
+  - "_cgetws_s"
+  - "_cgets_s"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-conio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_cgets_s", "cgets_s", "cgetws_s", "_cgetws_s"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["strings [C++], getting from console", "console, getting strings from", "_cgets_s function", "cget_s function", "_cgetws_s function", "cgetws_s function"]
+f1_keywords: 
+  - "_cgets_s"
+  - "cgets_s"
+  - "cgetws_s"
+  - "_cgetws_s"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "strings [C++], getting from console"
+  - "console, getting strings from"
+  - "_cgets_s function"
+  - "cget_s function"
+  - "_cgetws_s function"
+  - "cgetws_s function"
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
 caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _cgets_s, _cgetws_s
 Gets a character string from the console. These versions of [_cgets and _cgetws](../../c-runtime-library/cgets-cgetws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

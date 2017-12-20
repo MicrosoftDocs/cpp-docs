@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["point of declaration"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "point of declaration"
 ms.assetid: 92ea8707-80cb-497c-b479-f907b8401859
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Point of declaration in C++
 A name is considered to be declared immediately after its declarator but before its (optional) initializer. (For more information on declarators, see [Declarations and definitions](declarations-and-definitions-cpp.md).)  

@@ -4,20 +4,53 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_wsearchenv_s", "_searchenv_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
+apiname: 
+  - "_wsearchenv_s"
+  - "_searchenv_s"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-environment-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_searchenv_s", "_wsearchenv_s", "wsearchenv_s", "searchenv_s"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["tsearchenv_s function", "files [C++], finding", "buffers [C++], buffer overruns", "environment paths, searching for files", "wsearchenv_s function", "searchenv_s function", "_tsearchenv_s function", "buffer overruns", "buffers [C++], avoiding overruns", "_wsearchenv_s function", "_searchenv_s function", "environment paths"]
+f1_keywords: 
+  - "_searchenv_s"
+  - "_wsearchenv_s"
+  - "wsearchenv_s"
+  - "searchenv_s"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "tsearchenv_s function"
+  - "files [C++], finding"
+  - "buffers [C++], buffer overruns"
+  - "environment paths, searching for files"
+  - "wsearchenv_s function"
+  - "searchenv_s function"
+  - "_tsearchenv_s function"
+  - "buffer overruns"
+  - "buffers [C++], avoiding overruns"
+  - "_wsearchenv_s function"
+  - "_searchenv_s function"
+  - "environment paths"
 ms.assetid: 47f9fc29-250e-4c09-b52e-9e9f0ef395ca
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _searchenv_s, _wsearchenv_s
 Searches for a file by using environment paths. These versions of [_searchenv, _wsearchenv](../../c-runtime-library/reference/searchenv-wsearchenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

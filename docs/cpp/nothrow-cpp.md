@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["nothrow_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["__declspec keyword [C++], nothrow", "nothrow __declspec keyword"]
+f1_keywords: 
+  - "nothrow_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "__declspec keyword [C++], nothrow"
+  - "nothrow __declspec keyword"
 ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # nothrow (C++)
 **Microsoft Specific**  

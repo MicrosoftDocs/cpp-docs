@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: ["C2133"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["C2133"]
+f1_keywords: 
+  - "C2133"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2133"
 ms.assetid: 8942f9e8-9818-468f-97db-09dbd124fcae
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Compiler Error C2133
 'identifier' : unknown size  

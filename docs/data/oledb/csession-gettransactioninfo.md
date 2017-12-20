@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["GetTransactionInfo", "CSession.GetTransactionInfo", "ATL.CSession.GetTransactionInfo", "CSession::GetTransactionInfo", "ATL::CSession::GetTransactionInfo"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetTransactionInfo method"]
+f1_keywords: 
+  - "GetTransactionInfo"
+  - "CSession.GetTransactionInfo"
+  - "ATL.CSession.GetTransactionInfo"
+  - "CSession::GetTransactionInfo"
+  - "ATL::CSession::GetTransactionInfo"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetTransactionInfo method"
 ms.assetid: 9fa62808-3162-4b5a-8610-e1abb8cf9a71
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CSession::GetTransactionInfo
 Returns information regarding a transaction.  

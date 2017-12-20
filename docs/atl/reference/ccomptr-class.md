@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CComPtr", "ATLBASE/ATL::CComPtr", "ATLBASE/ATL::CComPtr::CComPtr"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CComPtr class"]
+f1_keywords: 
+  - "CComPtr"
+  - "ATLBASE/ATL::CComPtr"
+  - "ATLBASE/ATL::CComPtr::CComPtr"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CComPtr class"
 ms.assetid: 22d9ea8d-ed66-4c34-940f-141db11e83bd
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CComPtr Class
 A smart pointer class for managing COM interface pointers.  

@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["types [C++], reference types", "reference types, CLR"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "types [C++], reference types"
+  - "reference types, CLR"
 ms.assetid: 6d64f746-3715-4948-ada3-88859f4150e4
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # Declaration of a CLR Reference Class Object
 The syntax to declare and instantiate an object of a reference class type has changed from Managed Extensions for C++ to Visual C++.  

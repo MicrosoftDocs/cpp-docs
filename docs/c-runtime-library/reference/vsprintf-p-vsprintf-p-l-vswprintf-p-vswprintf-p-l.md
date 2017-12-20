@@ -4,20 +4,57 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_vsprintf_p", "_vswprintf_p", "_vsprintf_p_l", "_vswprintf_p_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_vsprintf_p"
+  - "_vswprintf_p"
+  - "_vsprintf_p_l"
+  - "_vswprintf_p_l"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["vsprintf_p", "_vswprintf_p", "_vstprintf_p", "vswprintf_p", "_vsprintf_p", "vstprintf_p"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["vstprintf_p_l function", "_vsprintf_p_l function", "_vstprintf_p function", "vsprintf_p_l function", "_vswprintf_p function", "vswprintf_p function", "vsprintf_p function", "vswprintf_p_l function", "_vswprintf_p_l function", "vstprintf_p function", "formatted text [C++]", "_vsprintf_p function", "_vstprintf_p_l function"]
+f1_keywords: 
+  - "vsprintf_p"
+  - "_vswprintf_p"
+  - "_vstprintf_p"
+  - "vswprintf_p"
+  - "_vsprintf_p"
+  - "vstprintf_p"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "vstprintf_p_l function"
+  - "_vsprintf_p_l function"
+  - "_vstprintf_p function"
+  - "vsprintf_p_l function"
+  - "_vswprintf_p function"
+  - "vswprintf_p function"
+  - "vsprintf_p function"
+  - "vswprintf_p_l function"
+  - "_vswprintf_p_l function"
+  - "vstprintf_p function"
+  - "formatted text [C++]"
+  - "_vsprintf_p function"
+  - "_vstprintf_p_l function"
 ms.assetid: 00821c0d-9fee-4d8a-836c-0669cfb11317
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 Write formatted output using a pointer to a list of arguments, with the ability to specify the order in which the arguments are used.  

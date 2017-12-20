@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::map::value_compare"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["value_compare member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::map::value_compare"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "value_compare member [STL/CLR]"
 ms.assetid: 04fab34b-c68a-4f61-97e8-a7d629b1ffed
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # map::value_compare (STL/CLR)
 The ordering delegate for two element values.  

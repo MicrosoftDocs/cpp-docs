@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::multimap::generic_container"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["generic_container member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::multimap::generic_container"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "generic_container member [STL/CLR]"
 ms.assetid: fc7ef7a4-80b4-472f-8911-6b9950b81d6c
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # multimap::generic_container (STL/CLR)
 The type of the generic interface for the container.  

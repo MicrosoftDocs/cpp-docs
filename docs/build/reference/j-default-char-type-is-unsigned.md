@@ -4,17 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLCompilerTool.DefaultCharIsUnsigned", "VC.Project.VCCLWCECompilerTool.DefaultCharIsUnsigned", "/j"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["defaults, char type", "char data type", "-J compiler option [C++]", "/J compiler option [C++]", "J compiler option [C++]", "default char type is unsigned"]
+f1_keywords: 
+  - "VC.Project.VCCLCompilerTool.DefaultCharIsUnsigned"
+  - "VC.Project.VCCLWCECompilerTool.DefaultCharIsUnsigned"
+  - "/j"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "defaults, char type"
+  - "char data type"
+  - "-J compiler option [C++]"
+  - "/J compiler option [C++]"
+  - "J compiler option [C++]"
+  - "default char type is unsigned"
 ms.assetid: 50973667-6638-491e-9c41-bff73acae19f
 caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /J (Default char Type Is unsigned)
 Changes the default `char` type from `signed char` to `unsigned char`, and the `char` type is zero-extended when it is widened to an `int` type.  

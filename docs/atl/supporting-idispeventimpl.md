@@ -4,17 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["IDispEventImpl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["event sink maps, declaring", "IDispEventImpl class, advising and unadvising", "SINK_ENTRY macro", "type libraries, importing", "ATL, IDispEventImpl support in COM objects", "BEGIN_SINK_MAP macro", "IDispEventImpl class, declaring"]
+f1_keywords: 
+  - "IDispEventImpl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "event sink maps, declaring"
+  - "IDispEventImpl class, advising and unadvising"
+  - "SINK_ENTRY macro"
+  - "type libraries, importing"
+  - "ATL, IDispEventImpl support in COM objects"
+  - "BEGIN_SINK_MAP macro"
+  - "IDispEventImpl class, declaring"
 ms.assetid: b957f930-6a5b-4598-8e4d-8027759957e7
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Supporting IDispEventImpl
 The template class [IDispEventImpl](../atl/reference/idispeventimpl-class.md) can be used to provide support for connection point sinks in your ATL class. A connection point sink allows your class to handle events fired from external COM objects. These connection point sinks are mapped with an event sink map, provided by your class.  

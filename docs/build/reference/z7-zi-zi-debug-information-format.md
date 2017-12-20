@@ -4,17 +4,42 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLCompilerTool.DebugInformationFormat", "/zi", "/z7", "VC.Project.VCCLWCECompilerTool.DebugInformationFormat"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["C7 compatible compiler option [C++]", "-Zl compiler option [C++]", "Debug Information Format compiler option", "ZI compiler option", "-Zi compiler option [C++]", "/ZI compiler option [C++]", "Z7 compiler option [C++]", "debugging [C++], debug information files", "Zi compiler option [C++]", "none compiler option [C++]", "/Zi compiler option [C++]", "program database compiler option [C++]", "full symbolic debugging information", "/Z7 compiler option [C++]", "line numbers only compiler option [C++]", "cl.exe compiler, debugging options", "-Z7 compiler option [C++]"]
+f1_keywords: 
+  - "VC.Project.VCCLCompilerTool.DebugInformationFormat"
+  - "/zi"
+  - "/z7"
+  - "VC.Project.VCCLWCECompilerTool.DebugInformationFormat"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C7 compatible compiler option [C++]"
+  - "-Zl compiler option [C++]"
+  - "Debug Information Format compiler option"
+  - "ZI compiler option"
+  - "-Zi compiler option [C++]"
+  - "/ZI compiler option [C++]"
+  - "Z7 compiler option [C++]"
+  - "debugging [C++], debug information files"
+  - "Zi compiler option [C++]"
+  - "none compiler option [C++]"
+  - "/Zi compiler option [C++]"
+  - "program database compiler option [C++]"
+  - "full symbolic debugging information"
+  - "/Z7 compiler option [C++]"
+  - "line numbers only compiler option [C++]"
+  - "cl.exe compiler, debugging options"
+  - "-Z7 compiler option [C++]"
 ms.assetid: ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Z7, /Zi, /ZI (Debug Information Format)
 Select the type of debugging information created for your program and whether this information is kept in object (.obj) files or in a program database (PDB).  

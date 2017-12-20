@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/favor"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["-favor compiler option [C++]", "/favor compiler option [C++]"]
+f1_keywords: 
+  - "/favor"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "-favor compiler option [C++]"
+  - "/favor compiler option [C++]"
 ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
 caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /favor (Optimize for Architecture Specifics)
 **/favor:** `option` produces the code that is optimized for a specific architecture or for the specifics of micro-architectures in the AMD and the Intel architectures.  

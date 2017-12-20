@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["files [C++], listing files", "directories [C++], listing files"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "files [C++], listing files"
+  - "directories [C++], listing files"
 ms.assetid: ebfc2666-229f-4b94-a9a1-e8f1b5d946d6
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Enumerate Files in a Directory (C++/CLI)
 The following code example demonstrates how to retrieve a list of the files in a directory. Additionally, the subdirectories are enumerated. The following code example uses the <xref:System.IO.Directory.GetFiles%2A><xref:System.IO.Directory.GetFiles%2A> and <xref:System.IO.Directory.GetDirectories%2A> methods to display the contents of the C:\Windows directory.  

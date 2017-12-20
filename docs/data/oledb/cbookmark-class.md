@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL.CBookmark", "ATL::CBookmark<nSize>", "CBookmark", "ATL.CBookmark<nSize>", "ATL::CBookmark"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CBookmark class"]
+f1_keywords: 
+  - "ATL.CBookmark"
+  - "ATL::CBookmark<nSize>"
+  - "CBookmark"
+  - "ATL.CBookmark<nSize>"
+  - "ATL::CBookmark"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CBookmark class"
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CBookmark Class
 Holds a bookmark value in its buffer.  

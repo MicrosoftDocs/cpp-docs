@@ -4,20 +4,49 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_unlink", "_wunlink"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+apiname: 
+  - "_unlink"
+  - "_wunlink"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-filesystem-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_tunlink", "_unlink", "wunlink", "_wunlink"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["files [C++], deleting", "_wunlink function", "wunlink function", "unlink function", "_unlink function", "tunlink function", "files [C++], removing", "_tunlink function"]
+f1_keywords: 
+  - "_tunlink"
+  - "_unlink"
+  - "wunlink"
+  - "_wunlink"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "files [C++], deleting"
+  - "_wunlink function"
+  - "wunlink function"
+  - "unlink function"
+  - "_unlink function"
+  - "tunlink function"
+  - "files [C++], removing"
+  - "_tunlink function"
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _unlink, _wunlink
 Delete a file.  

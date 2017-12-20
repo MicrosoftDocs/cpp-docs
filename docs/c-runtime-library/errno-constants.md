@@ -4,17 +4,58 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ENOEXEC", "ENOMEM", "E2BIG", "STRUNCATE", "ENOENT", "EMFILE", "EBADF", "EDEADLOCK", "EXDEV", "EILSEQ", "EINVAL", "EDOM", "EACCES", "ERANGE", "ENOSPC", "EAGAIN", "EEXIST", "ECHILD"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ENOEXEC constant", "EBADF constant", "EAGAIN constant", "EINVAL constant", "ENOENT constant", "errno constants", "E2BIG constant", "EMFILE constant", "EDEADLOCK constant", "ENOSPC constant", "EDOM constant", "ENOMEM constant", "EACCES constant", "EEXIST constant", "STRUNCATE constant", "ERANGE constant", "ECHILD constant", "EXDEV constant", "EILSEQ constant"]
+f1_keywords: 
+  - "ENOEXEC"
+  - "ENOMEM"
+  - "E2BIG"
+  - "STRUNCATE"
+  - "ENOENT"
+  - "EMFILE"
+  - "EBADF"
+  - "EDEADLOCK"
+  - "EXDEV"
+  - "EILSEQ"
+  - "EINVAL"
+  - "EDOM"
+  - "EACCES"
+  - "ERANGE"
+  - "ENOSPC"
+  - "EAGAIN"
+  - "EEXIST"
+  - "ECHILD"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ENOEXEC constant"
+  - "EBADF constant"
+  - "EAGAIN constant"
+  - "EINVAL constant"
+  - "ENOENT constant"
+  - "errno constants"
+  - "E2BIG constant"
+  - "EMFILE constant"
+  - "EDEADLOCK constant"
+  - "ENOSPC constant"
+  - "EDOM constant"
+  - "ENOMEM constant"
+  - "EACCES constant"
+  - "EEXIST constant"
+  - "STRUNCATE constant"
+  - "ERANGE constant"
+  - "ECHILD constant"
+  - "EXDEV constant"
+  - "EILSEQ constant"
 ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # errno Constants
 ## Syntax  

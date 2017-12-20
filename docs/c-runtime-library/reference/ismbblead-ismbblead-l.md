@@ -4,20 +4,49 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_ismbblead_l", "_ismbblead"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+apiname: 
+  - "_ismbblead_l"
+  - "_ismbblead"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-multibyte-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["ismbblead_l", "istlead", "_ismbblead", "_ismbblead_l", "ismbblead", "_istlead"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_ismbblead_l function", "ismbblead function", "_ismbblead function", "istlead function", "ismbblead_l function", "_istlead function"]
+f1_keywords: 
+  - "ismbblead_l"
+  - "istlead"
+  - "_ismbblead"
+  - "_ismbblead_l"
+  - "ismbblead"
+  - "_istlead"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_ismbblead_l function"
+  - "ismbblead function"
+  - "_ismbblead function"
+  - "istlead function"
+  - "ismbblead_l function"
+  - "_istlead function"
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _ismbblead, _ismbblead_l
 Tests a character to determine whether it is a lead byte of a multibyte character.  

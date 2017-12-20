@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::vector::resize"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["resize member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::vector::resize"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "resize member [STL/CLR]"
 ms.assetid: a3556fbc-67d9-463a-9ffc-cb43ee15657f
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # vector::resize (STL/CLR)
 Changes the number of elements.  

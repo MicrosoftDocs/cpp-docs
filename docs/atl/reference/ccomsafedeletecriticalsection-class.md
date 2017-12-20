@@ -4,17 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Init", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Term", "ATLCORE/ATL::m_bInitialized"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CComSafeDeleteCriticalSection class"]
+f1_keywords: 
+  - "CComSafeDeleteCriticalSection"
+  - "ATLCORE/ATL::CComSafeDeleteCriticalSection"
+  - "ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection"
+  - "ATLCORE/ATL::CComSafeDeleteCriticalSection::Init"
+  - "ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock"
+  - "ATLCORE/ATL::CComSafeDeleteCriticalSection::Term"
+  - "ATLCORE/ATL::m_bInitialized"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CComSafeDeleteCriticalSection class"
 ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CComSafeDeleteCriticalSection Class
 This class provides methods for obtaining and releasing ownership of a critical section object.  

@@ -4,20 +4,56 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_printf_p", "_wprintf_p", "_printf_p_l", "_wprintf_p_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_printf_p"
+  - "_wprintf_p"
+  - "_printf_p_l"
+  - "_wprintf_p_l"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["wprintf_p", "_wprintf_p", "printf_p_l", "_printf_p", "printf_p", "_wprintf_p_l", "_printf_p_l", "wprintf_p_l"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["printf_p function", "printf_p_l function", "wprintf_p function", "wprintf_p_l function", "_tprintf_p_l function", "_wprintf_p function", "_wprintf_p_l function", "_printf_p function", "tprintf_p_l function", "_printf_p_l function"]
+f1_keywords: 
+  - "wprintf_p"
+  - "_wprintf_p"
+  - "printf_p_l"
+  - "_printf_p"
+  - "printf_p"
+  - "_wprintf_p_l"
+  - "_printf_p_l"
+  - "wprintf_p_l"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "printf_p function"
+  - "printf_p_l function"
+  - "wprintf_p function"
+  - "wprintf_p_l function"
+  - "_tprintf_p_l function"
+  - "_wprintf_p function"
+  - "_wprintf_p_l function"
+  - "_printf_p function"
+  - "tprintf_p_l function"
+  - "_printf_p_l function"
 ms.assetid: 1b7e9ef9-a069-45db-af9d-c2730168322e
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l
 Prints formatted output to the standard output stream, and enables specification of the order in which parameters are used in the format string.  

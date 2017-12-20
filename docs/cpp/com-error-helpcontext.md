@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["_com_error::HelpContext"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["HelpContext method [C++]"]
+f1_keywords: 
+  - "_com_error::HelpContext"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "HelpContext method [C++]"
 ms.assetid: 160d6443-9b68-4cf5-a540-50da951a5b2b
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _com_error::HelpContext
 **Microsoft Specific**  

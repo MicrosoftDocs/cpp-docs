@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL::CNoAccessor", "CNoAccessor", "ATL.CNoAccessor"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CNoAccessor class"]
+f1_keywords: 
+  - "ATL::CNoAccessor"
+  - "CNoAccessor"
+  - "ATL.CNoAccessor"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CNoAccessor class"
 ms.assetid: eb669ae5-0a56-49a3-9646-c4ae6239da31
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CNoAccessor Class
 Can be used as a template argument (`TAccessor`) for template classes, such as `CCommand` and `CTable`, that require an accessor class argument.  

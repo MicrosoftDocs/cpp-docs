@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["void keyword [C], incomplete", "types [C], incomplete", "incomplete types", "unions, incomplete", "arrays [C], incomplete types", "void keyword [C]", "structures, incomplete"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "void keyword [C], incomplete"
+  - "types [C], incomplete"
+  - "incomplete types"
+  - "unions, incomplete"
+  - "arrays [C], incomplete types"
+  - "void keyword [C]"
+  - "structures, incomplete"
 ms.assetid: 01bc0cf6-9fa7-458c-9371-ecbe54ea6aee
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Incomplete Types
 An incomplete type is a type that describes an identifier but lacks information needed to determine the size of the identifier. An "incomplete type" can be:  

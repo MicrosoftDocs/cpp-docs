@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::deque::operator!="]
-dev_langs: ["C++"]
-helpviewer_keywords: ["operator!= member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::deque::operator!="
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator!= member [STL/CLR]"
 ms.assetid: c23c7bd1-813e-4518-9947-eb13d1176a13
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # deque::operator!= (STL/CLR)
 Deque not equal comparison.  

@@ -4,20 +4,50 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_makepath", "_wmakepath"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+apiname: 
+  - "_makepath"
+  - "_wmakepath"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-filesystem-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_wmakepath", "_tmakepath", "makepath", "tmakepath", "wmakepath", "_makepath"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_makepath function", "wmakepath function", "makepath function", "_tmakepath function", "paths", "_wmakepath function", "tmakepath function"]
+f1_keywords: 
+  - "_wmakepath"
+  - "_tmakepath"
+  - "makepath"
+  - "tmakepath"
+  - "wmakepath"
+  - "_makepath"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_makepath function"
+  - "wmakepath function"
+  - "makepath function"
+  - "_tmakepath function"
+  - "paths"
+  - "_wmakepath function"
+  - "tmakepath function"
 ms.assetid: 5930b197-a7b8-46eb-8519-2841a58cd026
 caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _makepath, _wmakepath
 Create a path name from components. More secure versions of these functions are available; see [_makepath_s, _wmakepath_s](../../c-runtime-library/reference/makepath-s-wmakepath-s.md).  

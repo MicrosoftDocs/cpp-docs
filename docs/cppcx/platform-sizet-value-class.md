@@ -7,7 +7,8 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["VCCORLIB/PlatformSizeT::SizeT constructor"]
+f1_keywords: 
+  - "VCCORLIB/PlatformSizeT::SizeT constructor"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -17,6 +18,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::SizeT value class
 Represents the size of an object. SizeT is an unsigned data type.  

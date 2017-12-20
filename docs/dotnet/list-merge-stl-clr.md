@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::list::merge"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["merge member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::list::merge"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "merge member [STL/CLR]"
 ms.assetid: f8e93cd3-bd08-4086-859b-08a2899cc9a6
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # list::merge (STL/CLR)
 Merges two ordered controlled sequences.  

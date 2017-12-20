@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["vc.codewiz.class.atl.control.misc"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ATL Control Wizard, appearance"]
+f1_keywords: 
+  - "vc.codewiz.class.atl.control.misc"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ATL Control Wizard, appearance"
 ms.assetid: cc16d7ff-74d7-4c15-9ebd-4b19201ff457
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Appearance, ATL Control Wizard
 Insert "Search Results" summary here.  

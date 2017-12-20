@@ -4,17 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLWCECompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLCompilerTool.UndefineAllPreprocessorDefinitions", "/u", "VC.Project.VCCLWCECompilerTool.UndefineAllPreprocessorDefinitions"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["-U compiler option [C++]", "Undefine Symbols compiler option", "/U compiler option [C++]", "U compiler option [C++]"]
+f1_keywords: 
+  - "VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions"
+  - "VC.Project.VCCLWCECompilerTool.UndefinePreprocessorDefinitions"
+  - "VC.Project.VCCLCompilerTool.UndefineAllPreprocessorDefinitions"
+  - "/u"
+  - "VC.Project.VCCLWCECompilerTool.UndefineAllPreprocessorDefinitions"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "-U compiler option [C++]"
+  - "Undefine Symbols compiler option"
+  - "/U compiler option [C++]"
+  - "U compiler option [C++]"
 ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /U, /u (Undefine Symbols)
 The **/U** compiler option undefines the specified preprocessor symbol. The **/u** compiler option undefines the Microsoft-specific symbols that the compiler defines.  

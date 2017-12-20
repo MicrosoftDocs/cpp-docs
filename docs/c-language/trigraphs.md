@@ -4,16 +4,32 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["??) trigraph", "??- trigraph", "question mark, in trigraphs", "??= trigraph", "?? trigraph", "??< trigraph", "??/ trigraph", "trigraphs", "? symbol, trigraph", "??> trigraph", "??! trigraph", "??' trigraph"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "??) trigraph"
+  - "??- trigraph"
+  - "question mark, in trigraphs"
+  - "??= trigraph"
+  - "?? trigraph"
+  - "??< trigraph"
+  - "??/ trigraph"
+  - "trigraphs"
+  - "? symbol, trigraph"
+  - "??> trigraph"
+  - "??! trigraph"
+  - "??' trigraph"
 ms.assetid: 617f76ec-b8e8-4cfe-916c-4bc32cbd9aeb
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Trigraphs
 The source character set of C source programs is contained within the 7-bit ASCII character set but is a superset of the ISO 646-1983 Invariant Code Set. Trigraph sequences allow C programs to be written using only the ISO (International Standards Organization) Invariant Code Set. Trigraphs are sequences of three characters (introduced by two consecutive question marks) that the compiler replaces with their corresponding punctuation characters. You can use trigraphs in C source files with a character set that does not contain convenient graphic representations for some punctuation characters.  

@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["parsing strings [C++]", "examples [C++], strings", "regular expressions [C++], parsing strings", "Split method, parsing strings", "strings [C++], parsing"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "parsing strings [C++]"
+  - "examples [C++], strings"
+  - "regular expressions [C++], parsing strings"
+  - "Split method, parsing strings"
+  - "strings [C++], parsing"
 ms.assetid: d52d2539-5ebb-4716-86b3-07314dd7e4bd
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Parse Strings Using the Split Method (C++/CLI)
 The following code example demonstrates using the <xref:System.String.Split%2A?displayProperty=fullName> method to extract each word from a string. A string containing multiple types of word delineators is constructed and then parsed by calling <xref:System.String.Split%2A> with a list of the delineators. Then, each word in the sentence is displayed separately.  

@@ -4,15 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
+dev_langs: 
+  - "C++"
 ms.assetid: ecda22bf-5bed-43f4-99fb-88aedd83d9d8
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /arch (x64)
 Specifies the architecture for code generation on x64. Also see [/arch (x86)](../../build/reference/arch-x86.md) and [/arch (ARM)](../../build/reference/arch-arm.md).  

@@ -12,6 +12,8 @@ caps.latest.revision: 20
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Interfaces (C++/CX)
 Although a ref class can inherit from at most one concrete base class, it can implement any number of interface classes. An interface class (or interface struct) itself can inherit (or require) multiple interface classes, can overload its member functions, and can have type parameters.  

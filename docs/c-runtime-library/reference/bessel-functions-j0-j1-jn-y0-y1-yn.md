@@ -4,20 +4,55 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_j0", "_j1", "_jn", "_y0", "_y1", "_yn"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+apiname: 
+  - "_j0"
+  - "_j1"
+  - "_jn"
+  - "_y0"
+  - "_y1"
+  - "_yn"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-math-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["c.bessel", "_j0", "_j1", "_jn", "_y0", "_y1", "_yn"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Bessel functions", "_j0 function", "_j1 function", "_jn function", "_y0 function", "_y1 function", "_yn function"]
+f1_keywords: 
+  - "c.bessel"
+  - "_j0"
+  - "_j1"
+  - "_jn"
+  - "_y0"
+  - "_y1"
+  - "_yn"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Bessel functions"
+  - "_j0 function"
+  - "_j1 function"
+  - "_jn function"
+  - "_y0 function"
+  - "_y1 function"
+  - "_yn function"
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Bessel Functions: _j0, _j1, _jn, _y0, _y1, _yn
 Computes the Bessel function of the first or second kind, of orders 0, 1, or n. The Bessel functions are commonly used in the mathematics of electromagnetic wave theory.  

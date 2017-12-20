@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["strings [C++], formatting", "data [C++], formatting", "regular expressions [C++], validating data formatting"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "strings [C++], formatting"
+  - "data [C++], formatting"
+  - "regular expressions [C++], validating data formatting"
 ms.assetid: 225775c3-3efc-4734-bde2-1fdf73e3d397
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Use Regular Expressions to Validate Data Formatting (C++/CLI)
 The following code example demonstrates the use of regular expressions to verify the formatting of a string. In the following code example, the string should contain a valid phone number. The following code example uses the string "\d{3}-\d{3}-\d{4}" to indicate that each field represents a valid phone number. The "d" in the string indicates a digit, and the argument after each "d" indicates the number of digits that must be present. In this case, the number is required to be separated by dashes.  

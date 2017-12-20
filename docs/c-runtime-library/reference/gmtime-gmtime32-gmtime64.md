@@ -4,20 +4,48 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_gmtime32", "gmtime", "_gmtime64"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+apiname: 
+  - "_gmtime32"
+  - "gmtime"
+  - "_gmtime64"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-time-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["gmtime", "_gmtime32", "_gmtime64"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["gmtime32 function", "_gmtime64 function", "gmtime function", "time functions", "_gmtime32 function", "gmtime64 function", "time structure conversion"]
+f1_keywords: 
+  - "gmtime"
+  - "_gmtime32"
+  - "_gmtime64"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "gmtime32 function"
+  - "_gmtime64 function"
+  - "gmtime function"
+  - "time functions"
+  - "_gmtime32 function"
+  - "gmtime64 function"
+  - "time structure conversion"
 ms.assetid: 315501f3-477e-475d-a414-ef100ee0db27
 caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # gmtime, _gmtime32, _gmtime64
 Converts a time value to a structure. More secure versions of these functions are available; see [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md).  

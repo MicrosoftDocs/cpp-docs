@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_map::difference_type"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["difference_type member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_map::difference_type"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "difference_type member [STL/CLR]"
 ms.assetid: 7c85c347-245d-4d2c-a507-e13599fbeff8
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_map::difference_type (STL/CLR)
 The types of a signed distance between two elements.  

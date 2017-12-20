@@ -18,6 +18,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # end Function
 Returns an iterator that points beyond the end of a collection that is accessed by the specified interface parameter.  

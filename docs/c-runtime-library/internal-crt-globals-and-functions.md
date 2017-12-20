@@ -853,6 +853,8 @@ ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Internal CRT Globals and Functions  
   

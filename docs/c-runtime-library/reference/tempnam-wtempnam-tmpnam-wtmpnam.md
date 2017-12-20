@@ -4,20 +4,57 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_wtempnam", "_wtmpnam", "tmpnam", "_tempnam"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+apiname: 
+  - "_wtempnam"
+  - "_wtmpnam"
+  - "tmpnam"
+  - "_tempnam"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-stdio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["wtempnam", "_wtmpnam", "wtmpnam", "tmpnam", "_wtempnam", "_tempnam"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["wtempnam function", "file names [C++], creating temporary", "_tempnam function", "ttmpnam function", "tmpnam function", "tempnam function", "wtmpnam function", "temporary files, creating", "file names [C++], temporary", "_ttmpnam function", "_wtmpnam function", "_wtempnam function"]
+f1_keywords: 
+  - "wtempnam"
+  - "_wtmpnam"
+  - "wtmpnam"
+  - "tmpnam"
+  - "_wtempnam"
+  - "_tempnam"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "wtempnam function"
+  - "file names [C++], creating temporary"
+  - "_tempnam function"
+  - "ttmpnam function"
+  - "tmpnam function"
+  - "tempnam function"
+  - "wtmpnam function"
+  - "temporary files, creating"
+  - "file names [C++], temporary"
+  - "_ttmpnam function"
+  - "_wtmpnam function"
+  - "_wtempnam function"
 ms.assetid: 3ce75f0f-5e30-42a6-9791-8d7cbfe70fca
 caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _tempnam, _wtempnam, tmpnam, _wtmpnam
 Generate names you can use to create temporary files. More secure versions of some of these functions are available; see [tmpnam_s, _wtmpnam_s](../../c-runtime-library/reference/tmpnam-s-wtmpnam-s.md).  

@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["conversions, type", "type conversion", "converting types", "integral promotions", "type casts, when performed"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "conversions, type"
+  - "type conversion"
+  - "converting types"
+  - "integral promotions"
+  - "type casts, when performed"
 ms.assetid: d130ee7c-03c3-48f4-af7b-1fdba0d3b086
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Type Conversions (C)
 Type conversions depend on the specified operator and the type of the operand or operators. Type conversions are performed in the following cases:  

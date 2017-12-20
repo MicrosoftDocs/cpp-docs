@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_set::hash_set"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["hash_set member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_set::hash_set"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "hash_set member [STL/CLR]"
 ms.assetid: 006414ed-db5a-4c08-ac81-4a8ae57d0aad
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_set::hash_set (STL/CLR)
 Constructs a container object.  

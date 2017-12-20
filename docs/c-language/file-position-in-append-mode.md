@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["file pointers [C++], append mode"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "file pointers [C++], append mode"
 ms.assetid: fca94e95-907c-4703-ad7d-2fcac1592168
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # File Position in Append Mode
 **ANSI 4.9.3** Whether the file position indicator of an append mode stream is initially positioned at the beginning or end of the file  

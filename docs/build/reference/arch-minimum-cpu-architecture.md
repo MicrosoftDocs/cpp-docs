@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet", "/arch"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["-arch compiler option [C++]", "/arch compiler option [C++]", "arch compiler option [C++]"]
+f1_keywords: 
+  - "VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet"
+  - "/arch"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "-arch compiler option [C++]"
+  - "/arch compiler option [C++]"
+  - "arch compiler option [C++]"
 ms.assetid: cc17da15-47bd-4e74-b905-4e73c3bdb8a0
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /arch (Minimum CPU Architecture)
 The architecture options specify the architecture for code generation. Select the base hardware architecture you are working with to see /arch options for that target platform.  

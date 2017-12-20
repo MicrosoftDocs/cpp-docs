@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::vector::capacity"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["capacity member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::vector::capacity"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "capacity member [STL/CLR]"
 ms.assetid: f82d8da9-8b4d-4288-8d18-8e9ca5911d87
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # vector::capacity (STL/CLR)
 Reports the size of allocated storage for the container.  

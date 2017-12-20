@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["application design [C++], database applications"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "application design [C++], database applications"
 ms.assetid: 0eb106b3-91b7-4c42-8c93-a8224aa9fe12
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Design and Create an ODBC Database Application
 These topics help you design and set up your ODBC database application.  

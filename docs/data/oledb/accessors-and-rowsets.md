@@ -4,16 +4,35 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["accessors [C++]", "OLE DB consumer templates, rowset support", "OLE DB consumer templates, accessors", "rowsets [C++], accessing", "bulk rowsets", "CAccessorRowset class, accessor types", "single rowsets", "CArrayRowset class, accessors", "CBulkRowset class, accessors", "array rowsets", "CAccessorBase class", "CRowset class, accessors and rowsets", "accessors [C++], rowsets", "rowsets [C++], supported types"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "accessors [C++]"
+  - "OLE DB consumer templates, rowset support"
+  - "OLE DB consumer templates, accessors"
+  - "rowsets [C++], accessing"
+  - "bulk rowsets"
+  - "CAccessorRowset class, accessor types"
+  - "single rowsets"
+  - "CArrayRowset class, accessors"
+  - "CBulkRowset class, accessors"
+  - "array rowsets"
+  - "CAccessorBase class"
+  - "CRowset class, accessors and rowsets"
+  - "accessors [C++], rowsets"
+  - "rowsets [C++], supported types"
 ms.assetid: edc9c8b3-1a2d-4c2d-869f-7e058c631042
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Accessors and Rowsets
 To set and retrieve data, OLE DB Templates use an accessor and a rowset through the [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) class. This class can handle multiple accessors of different types.  

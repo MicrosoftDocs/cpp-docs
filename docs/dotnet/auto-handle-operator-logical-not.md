@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["msclr.auto_handle.operator!", "msclr::auto_handle::operator!", "auto_handle.operator!", "auto_handle::operator!"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["operator!"]
+f1_keywords: 
+  - "msclr.auto_handle.operator!"
+  - "msclr::auto_handle::operator!"
+  - "auto_handle.operator!"
+  - "auto_handle::operator!"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator!"
 ms.assetid: 3f6c7729-3260-4842-87f9-c491c140b299
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # auto_handle::operator!
 Operator for using `auto_handle` in a conditional expression.  

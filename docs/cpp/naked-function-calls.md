@@ -4,16 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["virtual device drivers", "VXD virtual device drivers", "virtual device drivers, naked function calls", "naked functions", "prolog code", "epilog code", "naked keyword [C++]", "naked keyword [C++], storage-class attribute"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "virtual device drivers"
+  - "VXD virtual device drivers"
+  - "virtual device drivers, naked function calls"
+  - "naked functions"
+  - "prolog code"
+  - "epilog code"
+  - "naked keyword [C++]"
+  - "naked keyword [C++], storage-class attribute"
 ms.assetid: 2a66847a-a43f-4541-a7be-c9f5f29b5fdb
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Naked Function Calls
 ## Microsoft Specific  

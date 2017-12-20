@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::set::Count"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["count member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::set::Count"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "count member [STL/CLR]"
 ms.assetid: 78855f8c-3de5-4d3e-800b-0bbea5e829dd
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # set::count (STL/CLR)
 Finds the number of elements matching a specified key.  

@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: ["C2054"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["C2054"]
+f1_keywords: 
+  - "C2054"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "C2054"
 ms.assetid: 37f7c612-0d7d-4728-9e67-ac4160555f48
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Compiler Error C2054
 expected '(' to follow 'identifier'  

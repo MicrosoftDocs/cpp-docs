@@ -16,6 +16,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # default::(type_name)::ToString Method
 Returns a string that represents the current type.  

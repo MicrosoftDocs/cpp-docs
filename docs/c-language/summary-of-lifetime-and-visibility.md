@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["lifetime, and visibility", "visibility, identifiers"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "lifetime, and visibility"
+  - "visibility, identifiers"
 ms.assetid: ea05a253-7658-482c-9a6b-abd71169c42d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Summary of Lifetime and Visibility
 The following table is a summary of lifetime and visibility characteristics for most identifiers. The first three columns give the attributes that define lifetime and visibility. An identifier with the attributes given by the first three columns has the lifetime and visibility shown in the fourth and fifth columns. However, the table does not cover all possible cases. Refer to [Storage Classes](../c-language/c-storage-classes.md) for more information.  

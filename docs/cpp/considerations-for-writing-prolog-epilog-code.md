@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["stack frame layout", "prolog code", "epilog code", "__LOCAL_SIZE constant", "stack, stack frame layout"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "stack frame layout"
+  - "prolog code"
+  - "epilog code"
+  - "__LOCAL_SIZE constant"
+  - "stack, stack frame layout"
 ms.assetid: c7814de2-bb5c-4f5f-96d0-bcfd2ad3b182
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Considerations for Writing Prolog/Epilog Code
 ## Microsoft Specific  

@@ -4,16 +4,46 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["nothrownew.obj", "newmode.obj", "noenv.obj", "psetargv.obj", "loosefpmath.obj", "smallheap.obj", "fp10.obj", "nochkclr.obj", "chkstk.obj", "pcommode.obj", "pnoenv.obj", "link options [C++]", "invalidcontinue.obj", "pnothrownew.obj", "pwsetargv.obj", "pinvalidcontinue.obj", "wsetargv.obj", "binmode.obj", "setargv.obj", "noarg.obj", "pnewmode.obj", "commode.obj", "pthreadlocale.obj", "pbinmode.obj", "threadlocale.obj", "pnoarg.obj"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "nothrownew.obj"
+  - "newmode.obj"
+  - "noenv.obj"
+  - "psetargv.obj"
+  - "loosefpmath.obj"
+  - "smallheap.obj"
+  - "fp10.obj"
+  - "nochkclr.obj"
+  - "chkstk.obj"
+  - "pcommode.obj"
+  - "pnoenv.obj"
+  - "link options [C++]"
+  - "invalidcontinue.obj"
+  - "pnothrownew.obj"
+  - "pwsetargv.obj"
+  - "pinvalidcontinue.obj"
+  - "wsetargv.obj"
+  - "binmode.obj"
+  - "setargv.obj"
+  - "noarg.obj"
+  - "pnewmode.obj"
+  - "commode.obj"
+  - "pthreadlocale.obj"
+  - "pbinmode.obj"
+  - "threadlocale.obj"
+  - "pnoarg.obj"
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Link Options
 The CRT lib directory includes a number of small object files that enable specific CRT features without any code change. These are called "link options" since you just have to add them to the linker command line to use them.  

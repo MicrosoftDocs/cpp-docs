@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["vc.templates.ole"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["schema rowsets, classes"]
+f1_keywords: 
+  - "vc.templates.ole"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "schema rowsets, classes"
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Schema Rowset Classes and Typedef Classes
 A schema is a collection of database objects that are owned, or have been created by, a particular user. A catalog can contain one or more schemas, but must always contain a schema called INFORMATION_SCHEMA, which contains the views and domains of the information schema. Schema information in OLE DB is retrieved using predefined schema rowsets, and includes types, tables, columns, indexes, views, assertions and constraints, statistics, character sets, collations, and domains.  

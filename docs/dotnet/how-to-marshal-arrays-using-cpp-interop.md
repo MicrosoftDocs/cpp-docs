@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["arrays [C++], marshaling", "marshaling [C++], arrays", "interop [C++], arrays", "C++ Interop, arrays", "data marshaling [C++], arrays"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "arrays [C++], marshaling"
+  - "marshaling [C++], arrays"
+  - "interop [C++], arrays"
+  - "C++ Interop, arrays"
+  - "data marshaling [C++], arrays"
 ms.assetid: c2b37ab1-8acf-4855-ad3c-7d2864826b14
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Marshal Arrays Using C++ Interop
 This topic demonstrates one facet of Visual C++ interoperability. For more information, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  

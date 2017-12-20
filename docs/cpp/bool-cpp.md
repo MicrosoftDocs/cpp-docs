@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["bool_cpp", "__BOOL_DEFINED"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["bool keyword [C++]", "__BOOL_DEFINED macro"]
+f1_keywords: 
+  - "bool_cpp"
+  - "__BOOL_DEFINED"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "bool keyword [C++]"
+  - "__BOOL_DEFINED macro"
 ms.assetid: 9abed3f2-d21c-4eb4-97c5-716342e613d8
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # bool (C++)
 This keyword is a built-in type. A variable of this type can have values [true](../cpp/true-cpp.md) and [false](../cpp/false-cpp.md). Conditional expressions have the type `bool` and so have values of type `bool`. For example, `i!=0` now has **true** or **false** depending on the value of `i`.  

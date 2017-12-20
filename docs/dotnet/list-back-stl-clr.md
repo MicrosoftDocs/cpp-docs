@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::list::back"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["back member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::list::back"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "back member [STL/CLR]"
 ms.assetid: 3241e497-42ab-4108-8598-3f90eac76f07
 caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # list::back (STL/CLR)
 Accesses the last element.  

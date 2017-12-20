@@ -4,20 +4,49 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_putchar_nolock", "_putwchar_nolock"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_putchar_nolock"
+  - "_putwchar_nolock"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["putwchar_nolock", "_puttchar_nolock", "_putchar_nolock", "_putwchar_nolock", "putchar_nolock"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_puttchar_nolock function", "putchar_nolock function", "characters, writing", "standard output, writing to", "putwchar_nolock function", "_putchar_nolock function", "_putwchar_nolock function", "puttchar_nolock function"]
+f1_keywords: 
+  - "putwchar_nolock"
+  - "_puttchar_nolock"
+  - "_putchar_nolock"
+  - "_putwchar_nolock"
+  - "putchar_nolock"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_puttchar_nolock function"
+  - "putchar_nolock function"
+  - "characters, writing"
+  - "standard output, writing to"
+  - "putwchar_nolock function"
+  - "_putchar_nolock function"
+  - "_putwchar_nolock function"
+  - "puttchar_nolock function"
 ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
 caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _putchar_nolock, _putwchar_nolock
 Writes a character to **stdout** without locking the thread.  

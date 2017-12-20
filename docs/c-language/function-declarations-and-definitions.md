@@ -4,16 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["local declarations", "function definitions, function declarations", "declaring functions, function definitions", "internal declarations", "external declarations", "function prototypes, basics", "external linkage, function declarations", "declaring functions"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "local declarations"
+  - "function definitions, function declarations"
+  - "declaring functions, function definitions"
+  - "internal declarations"
+  - "external declarations"
+  - "function prototypes, basics"
+  - "external linkage, function declarations"
+  - "declaring functions"
 ms.assetid: 43fd98eb-7441-4473-a5d9-fc88c75577f7
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Function Declarations and Definitions
 Function prototypes establish the name of the function, its return type, and the type and number of its formal parameters. A function definition includes the function body.  

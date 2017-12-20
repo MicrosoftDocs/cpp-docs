@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["PROVIDER_COLUMN_ENTRY_GN"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["PROVIDER_COLUMN_ENTRY_GN macro"]
+f1_keywords: 
+  - "PROVIDER_COLUMN_ENTRY_GN"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "PROVIDER_COLUMN_ENTRY_GN macro"
 ms.assetid: be77ba85-634c-4e28-832f-d2fa40413254
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # PROVIDER_COLUMN_ENTRY_GN
 Represents a specific column supported by the provider.  

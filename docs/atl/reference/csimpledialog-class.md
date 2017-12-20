@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CSimpleDialog", "ATLWIN/ATL::CSimpleDialog", "ATLWIN/ATL::CSimpleDialog::DoModal"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CSimpleDialog class", "CSimpleDialog class, modal dialog boxes in ATL", "dialog boxes, modal", "modal dialog boxes, ATL"]
+f1_keywords: 
+  - "CSimpleDialog"
+  - "ATLWIN/ATL::CSimpleDialog"
+  - "ATLWIN/ATL::CSimpleDialog::DoModal"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CSimpleDialog class"
+  - "CSimpleDialog class, modal dialog boxes in ATL"
+  - "dialog boxes, modal"
+  - "modal dialog boxes, ATL"
 ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CSimpleDialog Class
 This class implements a basic modal dialog box.  

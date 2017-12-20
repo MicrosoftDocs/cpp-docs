@@ -12,6 +12,8 @@ caps.latest.revision: 35
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Collections (C++/CX)
 In a C++/CX program, you can make free use of Standard Template Library (STL) containers, or any other user-defined collection type. However, when you pass collections back and forth across the Windows Runtime application binary interface (ABI)—for example, to a XAML control or to a JavaScript client—you must use Windows Runtime collection types.  

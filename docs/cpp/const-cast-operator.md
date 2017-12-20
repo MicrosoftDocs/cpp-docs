@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["const_cast_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["const_cast keyword [C++]"]
+f1_keywords: 
+  - "const_cast_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "const_cast keyword [C++]"
 ms.assetid: 4d8bb203-ef33-4a10-9f9f-c64d4fbc1687
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # const_cast Operator
 Removes the **const**, `volatile`, and **__unaligned** attribute(s) from a class.  

@@ -4,16 +4,46 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["or_eq operator", "~ operator, extensions to C/C++", "& operator, extensions to C/C++", "&= operator", "iso646.h header", "Xor operator, Microsoft extensions to C/C++", "!= operator", "! operator, extension to C++", "Or operator, Microsoft extensions to C/C++", "^ operator, extensions to C/C++", "^= operator, C++ extensions", "xor_eq operator", "and_eq operator", "Microsoft extensions to C/C++", "|= operator", "|| operator", "And operator, extensions to C/C++", "NOT operator", "&& operator", "extensions, C language", "Visual C++, extensions to C/C++", "| operator, extensions", "not_eq operator", "Visual C, Microsoft extensions", "extensions", "compl method"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "or_eq operator"
+  - "~ operator, extensions to C/C++"
+  - "& operator, extensions to C/C++"
+  - "&= operator"
+  - "iso646.h header"
+  - "Xor operator, Microsoft extensions to C/C++"
+  - "!= operator"
+  - "! operator, extension to C++"
+  - "Or operator, Microsoft extensions to C/C++"
+  - "^ operator, extensions to C/C++"
+  - "^= operator, C++ extensions"
+  - "xor_eq operator"
+  - "and_eq operator"
+  - "Microsoft extensions to C/C++"
+  - "|= operator"
+  - "|| operator"
+  - "And operator, extensions to C/C++"
+  - "NOT operator"
+  - "&& operator"
+  - "extensions, C language"
+  - "Visual C++, extensions to C/C++"
+  - "| operator, extensions"
+  - "not_eq operator"
+  - "Visual C, Microsoft extensions"
+  - "extensions"
+  - "compl method"
 ms.assetid: e811a74a-45ba-4c00-b206-2f2321b8689a
 caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Microsoft Extensions to C and C++
 Visual C++ extends the ANSI C and ANSI C++ standards as follows.  

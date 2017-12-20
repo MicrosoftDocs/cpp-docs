@@ -7,7 +7,10 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["VCCORLIB/Platform::COMException", "VCCORLIB/Platform::Exception::HResult", "VCCORLIB/Platform::Exception::Message"]
+f1_keywords: 
+  - "VCCORLIB/Platform::COMException"
+  - "VCCORLIB/Platform::Exception::HResult"
+  - "VCCORLIB/Platform::Exception::Message"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -17,6 +20,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::COMException Class
 Represents COM errors that occur during application execution. COMException is the base class for a set of predefined, standard exceptions.  

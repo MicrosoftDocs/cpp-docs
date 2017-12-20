@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::search_n"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["search_n function [STL/CLR]"]
+f1_keywords: 
+  - "cliext::search_n"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "search_n function [STL/CLR]"
 ms.assetid: 34d9fd07-b160-4b1e-a632-303200740dfc
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # search_n (STL/CLR)
 Searches for the first subsequence in a range that of a specified number of elements having a particular value or a relation to that value as specified by a binary predicate.  

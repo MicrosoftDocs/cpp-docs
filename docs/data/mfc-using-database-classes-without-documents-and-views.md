@@ -4,16 +4,35 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["ODBC applications [C++], without views", "documents [C++], applications without", "ODBC applications [C++]", "document/view architecture [C++], in databases", "files [C++], MFC", "database classes [C++], MFC", "CRecordView class, using in database applications", "database applications [C++], without views", "database applications [C++], application wizard options", "application wizards [C++], creating database applications", "ODBC [C++], file support in database applications", "ODBC applications [C++], without documents", "database applications [C++], without documents", "user interface [C++], drawing information"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ODBC applications [C++], without views"
+  - "documents [C++], applications without"
+  - "ODBC applications [C++]"
+  - "document/view architecture [C++], in databases"
+  - "files [C++], MFC"
+  - "database classes [C++], MFC"
+  - "CRecordView class, using in database applications"
+  - "database applications [C++], without views"
+  - "database applications [C++], application wizard options"
+  - "application wizards [C++], creating database applications"
+  - "ODBC [C++], file support in database applications"
+  - "ODBC applications [C++], without documents"
+  - "database applications [C++], without documents"
+  - "user interface [C++], drawing information"
 ms.assetid: 15bf52d4-91cf-4b1d-8b37-87c3ae70123a
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # MFC: Using Database Classes Without Documents and Views
 Sometimes you might not want to use the framework's document/view architecture in your database applications. This topic explains:  

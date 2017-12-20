@@ -4,17 +4,36 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CStringData", "ATLSIMPSTR/ATL::CStringData", "ATLSIMPSTR/ATL::AddRef", "ATLSIMPSTR/ATL::data", "ATLSIMPSTR/ATL::IsLocked", "ATLSIMPSTR/ATL::IsShared", "ATLSIMPSTR/ATL::Lock", "ATLSIMPSTR/ATL::Release", "ATLSIMPSTR/ATL::Unlock", "ATLSIMPSTR/ATL::nAllocLength", "ATLSIMPSTR/ATL::nDataLength", "ATLSIMPSTR/ATL::nRefs", "ATLSIMPSTR/ATL::pStringMgr"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CStringData class", "shared classes, CStringData"]
+f1_keywords: 
+  - "CStringData"
+  - "ATLSIMPSTR/ATL::CStringData"
+  - "ATLSIMPSTR/ATL::AddRef"
+  - "ATLSIMPSTR/ATL::data"
+  - "ATLSIMPSTR/ATL::IsLocked"
+  - "ATLSIMPSTR/ATL::IsShared"
+  - "ATLSIMPSTR/ATL::Lock"
+  - "ATLSIMPSTR/ATL::Release"
+  - "ATLSIMPSTR/ATL::Unlock"
+  - "ATLSIMPSTR/ATL::nAllocLength"
+  - "ATLSIMPSTR/ATL::nDataLength"
+  - "ATLSIMPSTR/ATL::nRefs"
+  - "ATLSIMPSTR/ATL::pStringMgr"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CStringData class"
+  - "shared classes, CStringData"
 ms.assetid: 4e31b5ca-3dbe-4fd5-b692-8211fbfb2593
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CStringData Class
 This class represents the data of a string object.  

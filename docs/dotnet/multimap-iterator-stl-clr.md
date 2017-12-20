@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::multimap::iterator"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["iterator member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::multimap::iterator"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "iterator member [STL/CLR]"
 ms.assetid: 2923f4bc-b216-477b-b10e-22bf15847c67
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # multimap::iterator (STL/CLR)
 The type of an iterator for the controlled sequence.  

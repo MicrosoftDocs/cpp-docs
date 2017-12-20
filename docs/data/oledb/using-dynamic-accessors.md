@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "accessors [C++], dynamic"
+  - "dynamic accessors"
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Using Dynamic Accessors
 Dynamic accessors allow you to access a data source when you have no knowledge of the database schema (underlying structure). The OLE DB Templates library provides several classes to help you do this.  

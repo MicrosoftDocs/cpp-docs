@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["_com_error::HelpFile"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["HelpFile method [C++]"]
+f1_keywords: 
+  - "_com_error::HelpFile"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "HelpFile method [C++]"
 ms.assetid: d2d3a0a1-6b62-4d52-a818-3cfae545a4af
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _com_error::HelpFile
 **Microsoft Specific**  

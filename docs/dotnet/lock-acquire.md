@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["lock::acquire", "acquire", "msclr.lock.acquire", "msclr::lock::acquire", "lock.acquire"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["acquire method"]
+f1_keywords: 
+  - "lock::acquire"
+  - "acquire"
+  - "msclr.lock.acquire"
+  - "msclr::lock::acquire"
+  - "lock.acquire"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "acquire method"
 ms.assetid: c214274e-7519-4739-82aa-91b04a32d3f9
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # lock::acquire
 Acquires a lock on an object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.  

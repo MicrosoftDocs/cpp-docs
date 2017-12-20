@@ -4,17 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CAtlDllModuleT", "ATLBASE/ATL::CAtlDllModuleT", "ATLBASE/ATL::CAtlDllModuleT::CAtlDllModuleT", "ATLBASE/ATL::CAtlDllModuleT::DllCanUnloadNow", "ATLBASE/ATL::CAtlDllModuleT::DllGetClassObject", "ATLBASE/ATL::CAtlDllModuleT::DllMain", "ATLBASE/ATL::CAtlDllModuleT::DllRegisterServer", "ATLBASE/ATL::CAtlDllModuleT::DllUnregisterServer", "ATLBASE/ATL::CAtlDllModuleT::GetClassObject"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CAtlDllModuleT class"]
+f1_keywords: 
+  - "CAtlDllModuleT"
+  - "ATLBASE/ATL::CAtlDllModuleT"
+  - "ATLBASE/ATL::CAtlDllModuleT::CAtlDllModuleT"
+  - "ATLBASE/ATL::CAtlDllModuleT::DllCanUnloadNow"
+  - "ATLBASE/ATL::CAtlDllModuleT::DllGetClassObject"
+  - "ATLBASE/ATL::CAtlDllModuleT::DllMain"
+  - "ATLBASE/ATL::CAtlDllModuleT::DllRegisterServer"
+  - "ATLBASE/ATL::CAtlDllModuleT::DllUnregisterServer"
+  - "ATLBASE/ATL::CAtlDllModuleT::GetClassObject"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CAtlDllModuleT class"
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CAtlDllModuleT Class
 This class represents the module for a DLL.  

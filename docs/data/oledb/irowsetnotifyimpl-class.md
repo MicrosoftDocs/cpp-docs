@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL.IRowsetNotifyImpl", "ATL::IRowsetNotifyImpl", "IRowsetNotifyImpl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["IRowsetNotifyImpl class"]
+f1_keywords: 
+  - "ATL.IRowsetNotifyImpl"
+  - "ATL::IRowsetNotifyImpl"
+  - "IRowsetNotifyImpl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IRowsetNotifyImpl class"
 ms.assetid: fbfd0cb2-38ff-4b42-899a-8de902f834b8
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # IRowsetNotifyImpl Class
 Implements and registers [IRowsetNotify](https://msdn.microsoft.com/en-us/library/ms712959.aspx) on the consumer (also known as the "sink") so that it can handle notifications.  

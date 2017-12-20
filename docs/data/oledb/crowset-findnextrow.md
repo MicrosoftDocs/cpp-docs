@@ -4,17 +4,32 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL.CRowset.FindNextRow", "CRowset<TAccessor>.FindNextRow", "ATL::CRowset::FindNextRow", "CRowset::FindNextRow", "CRowset<TAccessor>::FindNextRow", "CRowset.FindNextRow", "ATL.CRowset<TAccessor>.FindNextRow", "ATL::CRowset<TAccessor>::FindNextRow", "FindNextRow"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["FindNextRow method"]
+f1_keywords: 
+  - "ATL.CRowset.FindNextRow"
+  - "CRowset<TAccessor>.FindNextRow"
+  - "ATL::CRowset::FindNextRow"
+  - "CRowset::FindNextRow"
+  - "CRowset<TAccessor>::FindNextRow"
+  - "CRowset.FindNextRow"
+  - "ATL.CRowset<TAccessor>.FindNextRow"
+  - "ATL::CRowset<TAccessor>::FindNextRow"
+  - "FindNextRow"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "FindNextRow method"
 ms.assetid: 36484df9-3625-4f15-bf69-db73a8d91c55
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CRowset::FindNextRow
 Finds the next matching row after the specified bookmark.  

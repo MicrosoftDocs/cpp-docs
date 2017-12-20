@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CEnumeratorAccessor.m_bIsParent", "ATL::CEnumeratorAccessor::m_bIsParent", "m_bIsParent", "ATL.CEnumeratorAccessor.m_bIsParent", "CEnumeratorAccessor::m_bIsParent"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["m_bIsParent"]
+f1_keywords: 
+  - "CEnumeratorAccessor.m_bIsParent"
+  - "ATL::CEnumeratorAccessor::m_bIsParent"
+  - "m_bIsParent"
+  - "ATL.CEnumeratorAccessor.m_bIsParent"
+  - "CEnumeratorAccessor::m_bIsParent"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "m_bIsParent"
 ms.assetid: ab267905-d7d9-41cb-96ff-7be4d8875657
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CEnumeratorAccessor::m_bIsParent
 A variable indicating whether the enumerator is a parent enumerator, if the row is an enumerator.  

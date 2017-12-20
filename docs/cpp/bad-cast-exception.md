@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["bad_cast", "bad_cast_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["exceptions [C++], bad_cast", "bad_cast keyword [C++]"]
+f1_keywords: 
+  - "bad_cast"
+  - "bad_cast_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "exceptions [C++], bad_cast"
+  - "bad_cast keyword [C++]"
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # bad_cast Exception
 The `bad_cast` exception is thrown by the `dynamic_cast` operator as the result of a failed cast to a reference type.  

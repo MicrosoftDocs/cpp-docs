@@ -4,20 +4,49 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_wfopen", "fopen"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+apiname: 
+  - "_wfopen"
+  - "fopen"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-stdio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["fopen", "_wfopen", "_tfopen", "corecrt_wstdio/_wfopen", "stdio/fopen"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["opening files, for file I/O", "wfopen function", "tfopen function", "_tfopen function", "_wfopen function", "files [C++], opening", "fopen function"]
+f1_keywords: 
+  - "fopen"
+  - "_wfopen"
+  - "_tfopen"
+  - "corecrt_wstdio/_wfopen"
+  - "stdio/fopen"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "opening files, for file I/O"
+  - "wfopen function"
+  - "tfopen function"
+  - "_tfopen function"
+  - "_wfopen function"
+  - "files [C++], opening"
+  - "fopen function"
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
 caps.latest.revision: 56
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # fopen, _wfopen
 Opens a file. More-secure versions of these functions that perform additional parameter validation and return error codes are available; see [fopen_s, _wfopen_s](../../c-runtime-library/reference/fopen-s-wfopen-s.md).  

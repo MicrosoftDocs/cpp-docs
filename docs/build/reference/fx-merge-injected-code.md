@@ -4,17 +4,29 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCCLWCECompilerTool.ExpandAttributedSource", "/Fx", "VC.Project.VCCLCompilerTool.ExpandAttributedSource"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Fx compiler option [C++]", "-Fx compiler option [C++]", "injected code", "merging injected code", "/Fx compiler option [C++]"]
+f1_keywords: 
+  - "VC.Project.VCCLWCECompilerTool.ExpandAttributedSource"
+  - "/Fx"
+  - "VC.Project.VCCLCompilerTool.ExpandAttributedSource"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Fx compiler option [C++]"
+  - "-Fx compiler option [C++]"
+  - "injected code"
+  - "merging injected code"
+  - "/Fx compiler option [C++]"
 ms.assetid: 14f0e301-3bab-45a3-bbdf-e7ce66f20560
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Fx (Merge Injected Code)
 Produces a copy of each source file with injected code merged into the source.  

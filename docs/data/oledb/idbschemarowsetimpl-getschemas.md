@@ -4,17 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL::IDBSchemaRowsetImpl::GetSchemas", "GetSchemas", "IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "ATL.IDBSchemaRowsetImpl.GetSchemas", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "IDBSchemaRowsetImpl.GetSchemas", "IDBSchemaRowsetImpl::GetSchemas"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetSchemas method"]
+f1_keywords: 
+  - "ATL::IDBSchemaRowsetImpl::GetSchemas"
+  - "GetSchemas"
+  - "IDBSchemaRowsetImpl<SessionClass>::GetSchemas"
+  - "ATL.IDBSchemaRowsetImpl.GetSchemas"
+  - "ATL::IDBSchemaRowsetImpl<SessionClass>::GetSchemas"
+  - "IDBSchemaRowsetImpl.GetSchemas"
+  - "IDBSchemaRowsetImpl::GetSchemas"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetSchemas method"
 ms.assetid: fbe725a6-3acd-45f8-bcaf-10a6c1239cd2
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # IDBSchemaRowsetImpl::GetSchemas
 Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md).  

@@ -19,6 +19,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::ChangedStateException Class
 Thrown when the internal state of an object has changed, thereby invalidating the results of the method.  

@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["c.types.character"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["character classification routines", "characters, testing"]
+f1_keywords: 
+  - "c.types.character"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "character classification routines"
+  - "characters, testing"
 ms.assetid: 3b6c8f0b-9701-407a-b384-9086698773f5
 caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Character Classification
 Each of these routines tests a specified single-byte character, wide character, or multibyte character for satisfaction of a condition. (By definition, the ASCII character set between 0 and 127 are a subset of all multibyte-character sets. For example, Japanese katakana includes ASCII as well as non-ASCII characters.)  

@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCLinkerTool.DefaultLibraries", "/defaultlib"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["-DEFAULTLIB linker option", "DEFAULTLIB linker option", "/DEFAULTLIB linker option", "libraries, adding to list of"]
+f1_keywords: 
+  - "VC.Project.VCLinkerTool.DefaultLibraries"
+  - "/defaultlib"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "-DEFAULTLIB linker option"
+  - "DEFAULTLIB linker option"
+  - "/DEFAULTLIB linker option"
+  - "libraries, adding to list of"
 ms.assetid: 6af7ff49-c170-4a13-97e2-2b9ae2de20c9
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /DEFAULTLIB (Specify Default Library)
 ```  

@@ -7,7 +7,9 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["VCCORLIB/Platform::Type::GetTypeCode", "VCCORLIB/Platform::Type::FullName"]
+f1_keywords: 
+  - "VCCORLIB/Platform::Type::GetTypeCode"
+  - "VCCORLIB/Platform::Type::FullName"
 dev_langs: 
   - "C++"
 helpviewer_keywords: 
@@ -17,6 +19,8 @@ caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Type Class
 Contains run-time information about a type—specifically, a string name and a typecode. Obtained by calling [Object::GetType](../cppcx/platform-object-class.md#gettype) on any object or  or using the [typeid](../windows/typeid-cpp-component-extensions.md) operator on a class or struct name.  

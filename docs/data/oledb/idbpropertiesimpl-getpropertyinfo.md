@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["IDBPropertiesImpl::GetPropertyInfo", "IDBPropertiesImpl.GetPropertyInfo", "GetPropertyInfo"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetPropertyInfo method"]
+f1_keywords: 
+  - "IDBPropertiesImpl::GetPropertyInfo"
+  - "IDBPropertiesImpl.GetPropertyInfo"
+  - "GetPropertyInfo"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetPropertyInfo method"
 ms.assetid: 170e9640-5010-4e0d-8a54-f50b23af08ad
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # IDBPropertiesImpl::GetPropertyInfo
 Returns property information supported by the data source.  

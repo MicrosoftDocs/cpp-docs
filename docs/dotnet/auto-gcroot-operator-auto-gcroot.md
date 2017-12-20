@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["auto_gcroot.operator auto_gcroot", "auto_gcroot::operator auto_gcroot", "msclr.auto_gcroot.operator auto_gcroot", "msclr::auto_gcroot::operator auto_gcroot"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["auto_gcroot operator"]
+f1_keywords: 
+  - "auto_gcroot.operator auto_gcroot"
+  - "auto_gcroot::operator auto_gcroot"
+  - "msclr.auto_gcroot.operator auto_gcroot"
+  - "msclr::auto_gcroot::operator auto_gcroot"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "auto_gcroot operator"
 ms.assetid: 43e3f27a-9f68-444f-9149-a9282a9b935a
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # auto_gcroot::operator auto_gcroot
 Type-cast operator between `auto_gcroot` and compatible types.  

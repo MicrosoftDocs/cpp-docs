@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "12/04/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/yl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["-Yl compiler option [C++]", "Yl compiler option [C++]", "/Yl compiler option [C++]"]
+f1_keywords: 
+  - "/yl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "-Yl compiler option [C++]"
+  - "Yl compiler option [C++]"
+  - "/Yl compiler option [C++]"
 ms.assetid: 8e4a396a-6790-4a9f-8387-df015a3220e7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Yl (Inject PCH Reference for Debug Library)
 

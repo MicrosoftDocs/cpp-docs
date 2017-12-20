@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["BEGIN_PROPSET_MAP"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["BEGIN_PROPSET_MAP macro"]
+f1_keywords: 
+  - "BEGIN_PROPSET_MAP"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "BEGIN_PROPSET_MAP macro"
 ms.assetid: c3a30618-6025-4d49-8688-a171294d2e93
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # BEGIN_PROPSET_MAP
 Marks the beginning of the property set map entries.  

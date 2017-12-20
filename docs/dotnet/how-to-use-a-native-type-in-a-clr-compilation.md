@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["compilation, native types in /clr", "/clr compiler option [C++], using native types"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "compilation, native types in /clr"
+  - "/clr compiler option [C++], using native types"
 ms.assetid: 3a505c90-4adb-4942-9cf9-7d1fdcbc01e7
 caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Use a Native Type in a /clr Compilation
 You can define a native type in a **/clr** compilation and any use of that native type from within the assembly is valid. However, native types will not be available for use from referenced metadata.  

@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: [".NET Framework [C++], file handling", "files [C++], .NET Framework and", "I/O [C++], .NET Framework applications", ".NET Framework [C++], I/O"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - ".NET Framework [C++], file handling"
+  - "files [C++], .NET Framework and"
+  - "I/O [C++], .NET Framework applications"
+  - ".NET Framework [C++], I/O"
 ms.assetid: 3296fd59-a83a-40d4-bd4a-6096cc13101b
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # File Handling and I/O (C++/CLI)
 Demonstrates various file operations using the .NET Framework.  

@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CAccessorBase::ReleaseAccessors", "CAccessorBase.ReleaseAccessors", "ReleaseAccessors"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ReleaseAccessors method"]
+f1_keywords: 
+  - "CAccessorBase::ReleaseAccessors"
+  - "CAccessorBase.ReleaseAccessors"
+  - "ReleaseAccessors"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ReleaseAccessors method"
 ms.assetid: f08bc88e-0552-4a9c-9c65-b4061094649a
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CAccessorBase::ReleaseAccessors
 Releases the accessors created by the class.  

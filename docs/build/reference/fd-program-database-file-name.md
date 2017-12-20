@@ -4,17 +4,31 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/FD", "VC.Project.VCCLWCECompilerTool.ProgramDataBaseFileName", "VC.Project.VCCLCompilerTool.ProgramDataBaseFileName"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/FD compiler option [C++]", "program database file name [C++]", "-FD compiler option [C++]", "PDB files, creating", "program database compiler option [C++]", ".pdb files, creating", "FD compiler option [C++]"]
+f1_keywords: 
+  - "/FD"
+  - "VC.Project.VCCLWCECompilerTool.ProgramDataBaseFileName"
+  - "VC.Project.VCCLCompilerTool.ProgramDataBaseFileName"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/FD compiler option [C++]"
+  - "program database file name [C++]"
+  - "-FD compiler option [C++]"
+  - "PDB files, creating"
+  - "program database compiler option [C++]"
+  - ".pdb files, creating"
+  - "FD compiler option [C++]"
 ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Fd (Program Database File Name)
 Specifies a file name for the program database (PDB) file created by [/Z7, /Zi, /ZI (Debug Information Format)](../../build/reference/z7-zi-zi-debug-information-format.md).  

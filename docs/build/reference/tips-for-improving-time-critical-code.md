@@ -4,16 +4,47 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["_lsearch function", "qsort function", "background tasks", "standard sort routines", "clock cycle losses", "code, time-critical", "memory [C++], monitoring usage", "execution, speed improvements", "local heap performance", "optimization [C++], time-critical code", "performance [C++], time-critical code", "threading [C++], performance", "cache [C++], hits and misses", "linear search performance", "page faults", "best practices, time-critical code", "searching [C++], improving performance", "sorting data, improving performance", "threading [C++], best practices", "threading [C++], background tasks", "lists, sorting", "bsearch function", "MFC [C++], performance", "sort routines", "programs [C++], performance", "_lfind function", "heap allocation, time-critical code performance"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_lsearch function"
+  - "qsort function"
+  - "background tasks"
+  - "standard sort routines"
+  - "clock cycle losses"
+  - "code, time-critical"
+  - "memory [C++], monitoring usage"
+  - "execution, speed improvements"
+  - "local heap performance"
+  - "optimization [C++], time-critical code"
+  - "performance [C++], time-critical code"
+  - "threading [C++], performance"
+  - "cache [C++], hits and misses"
+  - "linear search performance"
+  - "page faults"
+  - "best practices, time-critical code"
+  - "searching [C++], improving performance"
+  - "sorting data, improving performance"
+  - "threading [C++], best practices"
+  - "threading [C++], background tasks"
+  - "lists, sorting"
+  - "bsearch function"
+  - "MFC [C++], performance"
+  - "sort routines"
+  - "programs [C++], performance"
+  - "_lfind function"
+  - "heap allocation, time-critical code performance"
 ms.assetid: 3e95a8cc-6239-48d1-9d6d-feb701eccb54
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Tips for Improving Time-Critical Code
 Writing fast code requires understanding all aspects of your application and how it interacts with the system. This topic suggests alternatives to some of the more obvious coding techniques to help you ensure that the time-critical portions of your code perform satisfactorily.  

@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["SBR files", "BSCMAKE, input files", ".sbr files", "source browser files", "local symbols in browse information", "symbols"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "SBR files"
+  - "BSCMAKE, input files"
+  - ".sbr files"
+  - "source browser files"
+  - "local symbols in browse information"
+  - "symbols"
 ms.assetid: bdb4b93c-a88a-441a-84fd-01087d03be25
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Creating an .Sbr File
 The input files for BSCMAKE are .sbr files. The compiler creates an .sbr file for each object file (.obj) it compiles. When you build or update your browse information file, all .sbr files for your project must be available on disk.  

@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["defining macros", "macros, NMAKE", "NMAKE program, defining macros"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "defining macros"
+  - "macros, NMAKE"
+  - "NMAKE program, defining macros"
 ms.assetid: 0fc59ec5-5f58-4644-b7da-7b021f7001af
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Where to Define Macros
 Define macros in a command line, command file, makefile, or the Tools.ini file.  

@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::Attach", "ATLSECURITY/ATL::CAutoRevertImpersonation::Detach", "ATLSECURITY/ATL::CAutoRevertImpersonation::GetAccessToken"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CAutoRevertImpersonation class"]
+f1_keywords: 
+  - "CAutoRevertImpersonation"
+  - "ATLSECURITY/ATL::CAutoRevertImpersonation"
+  - "ATLSECURITY/ATL::CAutoRevertImpersonation::CAutoRevertImpersonation"
+  - "ATLSECURITY/ATL::CAutoRevertImpersonation::Attach"
+  - "ATLSECURITY/ATL::CAutoRevertImpersonation::Detach"
+  - "ATLSECURITY/ATL::CAutoRevertImpersonation::GetAccessToken"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CAutoRevertImpersonation class"
 ms.assetid: 43732849-1940-4bd4-9d52-7a5698bb8838
 caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CAutoRevertImpersonation Class
 This class reverts [CAccessToken](../../atl/reference/caccesstoken-class.md) objects to a nonimpersonating state when it goes out of scope.  

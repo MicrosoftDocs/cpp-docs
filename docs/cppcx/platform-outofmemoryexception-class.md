@@ -19,6 +19,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::OutOfMemoryException Class
 Thrown when there's insufficient memory to complete the operation.  

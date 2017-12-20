@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::map::begin"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["begin member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::map::begin"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "begin member [STL/CLR]"
 ms.assetid: a909d278-6214-4e11-984d-509fa528bfa3
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # map::begin (STL/CLR)
 Designates the beginning of the controlled sequence.  

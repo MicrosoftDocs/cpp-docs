@@ -21,6 +21,8 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _set_app_type
 An internal function used at startup to tell the CRT whether the app is a console app or a GUI app.  

@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["embedded pointers [C++]", "interop [C++], embedded pointers", "platform invoke [C++], embedded pointers", "marshaling [C++], embedded pointers", "data marshaling [C++], embedded pointers"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "embedded pointers [C++]"
+  - "interop [C++], embedded pointers"
+  - "platform invoke [C++], embedded pointers"
+  - "marshaling [C++], embedded pointers"
+  - "data marshaling [C++], embedded pointers"
 ms.assetid: f12c1b9a-4f82-45f8-83c8-3fc9321dbb98
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Marshal Embedded Pointers Using PInvoke
 Functions that are implemented in unmanaged DLLs can be called from managed code using Platform Invoke (P/Invoke) functionality. If the source code for the DLL is not available, P/Invoke is the only option for interoperating. However, unlike other .NET languages, Visual C++ provides an alternative to P/Invoke. For more information, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) and [How to: Marshal Embedded Pointers Using C++ Interop](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).  

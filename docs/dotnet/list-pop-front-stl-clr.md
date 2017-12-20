@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::list::pop_front"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["pop_front member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::list::pop_front"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "pop_front member [STL/CLR]"
 ms.assetid: 6a0bad42-6796-41d9-a3e9-1488b3882574
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # list::pop_front (STL/CLR)
 Removes the first element.  

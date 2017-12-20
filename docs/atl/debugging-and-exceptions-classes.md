@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["debugging and exceptions classes"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "debugging and exceptions classes"
 ms.assetid: d42d7649-9721-4a1a-8b38-d983a649fdb9
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Debugging and Exceptions Classes
 These classes provide support for exception handling and debugging.  

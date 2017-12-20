@@ -2,7 +2,7 @@
 title: "JavaScript integration (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"  
+ms.prod: "windows-client-threshold"
 ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
@@ -13,6 +13,8 @@ caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # JavaScript integration (C++/CX)
 For more information, see [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  

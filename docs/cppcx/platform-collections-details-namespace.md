@@ -16,6 +16,8 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Collections::Details Namespace
 This namespace supports the `Platform` infrastructure and is not intended to be used directly from your code.  

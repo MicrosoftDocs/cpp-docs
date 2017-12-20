@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["public_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["public keyword [C++]"]
+f1_keywords: 
+  - "public_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "public keyword [C++]"
 ms.assetid: f3e10a59-39f6-4bcd-827e-3e99f8f89497
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # public (C++)
 ## Syntax  

@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["editbin"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["EDITBIN program, command line"]
+f1_keywords: 
+  - "editbin"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "EDITBIN program, command line"
 ms.assetid: 28ff7f92-6c4e-4e7f-86d8-80d5b2f91662
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # EDITBIN Command Line
 To run EDITBIN, use the following syntax:  

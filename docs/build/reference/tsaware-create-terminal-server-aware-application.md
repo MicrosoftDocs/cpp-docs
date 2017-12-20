@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/tsaware", "VC.Project.VCLinkerTool.TerminalServerAware"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Terminal Server", "/TSAWARE linker option", "Terminal Server, Terminal Server-aware applications", "-TSAWARE linker option", "TSAWARE linker option"]
+f1_keywords: 
+  - "/tsaware"
+  - "VC.Project.VCLinkerTool.TerminalServerAware"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Terminal Server"
+  - "/TSAWARE linker option"
+  - "Terminal Server, Terminal Server-aware applications"
+  - "-TSAWARE linker option"
+  - "TSAWARE linker option"
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /TSAWARE (Create Terminal Server Aware Application)
 ```  

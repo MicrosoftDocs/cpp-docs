@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, calling", "OLE DB providers, testing"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "testing, OLE DB providers"
+  - "testing providers"
+  - "OLE DB providers, calling"
+  - "OLE DB providers, testing"
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Testing the Read-Only Provider
 To test a provider, you need a consumer. It helps if the consumer can match up with the provider. The OLE DB consumer templates are a thin wrapper around OLE DB and match with the provider COM objects. Because the source is shipped with the consumer templates, it is easy to debug a provider with them. The consumer templates are also a very small and fast way to develop consumer applications.  

@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["CString objects, C++ string manipulation", "CString objects, reference counting", "CString class (Visual C++)"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CString objects, C++ string manipulation"
+  - "CString objects, reference counting"
+  - "CString class (Visual C++)"
 ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Using CString
 The topics in this section describe how to program with `CString`. For reference documentation about the `CString` class, see the documentation for [CStringT](../atl-mfc-shared/reference/cstringt-class.md).  

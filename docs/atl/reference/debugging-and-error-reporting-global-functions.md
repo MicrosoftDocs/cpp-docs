@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["atlcomcli/ATL::AtlHresultFromLastError", "atlcom/ATL::AtlReportError", "atldef/ATL::AtlThrow"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["functions [ATL], error reporting"]
+f1_keywords: 
+  - "atlcomcli/ATL::AtlHresultFromLastError"
+  - "atlcom/ATL::AtlReportError"
+  - "atldef/ATL::AtlThrow"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "functions [ATL], error reporting"
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Debugging and Error Reporting Global Functions
 These functions provide useful debugging and trace facilities.  

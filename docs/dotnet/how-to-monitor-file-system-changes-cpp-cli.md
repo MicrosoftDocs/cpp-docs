@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["monitoring file system events", "FileSystemWatcher class, examples", "examples [C++], monitoring file system changes", "events [C++], monitoring", "file system events [C++]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "monitoring file system events"
+  - "FileSystemWatcher class, examples"
+  - "examples [C++], monitoring file system changes"
+  - "events [C++], monitoring"
+  - "file system events [C++]"
 ms.assetid: 207a3069-e63d-417e-8b56-00ab44f29c52
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Monitor File System Changes (C++/CLI)
 The following code example uses <xref:System.IO.FileSystemWatcher> to register for events corresponding to files being created, changed, deleted, or renamed. Instead of periodically polling a directory for changes to files, you can use the <xref:System.IO.FileSystemWatcher> class to fire events when a change is detected.  

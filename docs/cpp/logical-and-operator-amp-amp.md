@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["&&"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["logical AND operator", "AND operator", "&& operator"]
+f1_keywords: 
+  - "&&"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "logical AND operator"
+  - "AND operator"
+  - "&& operator"
 ms.assetid: 50cfa664-a8c4-4b31-9bab-2f80d7cd2d1f
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Logical AND Operator: &amp;&amp;
 ## Syntax  

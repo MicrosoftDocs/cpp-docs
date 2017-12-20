@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["compound statements", "statements, compound"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "compound statements"
+  - "statements, compound"
 ms.assetid: 32d1bf86-cbbc-42a9-ba3a-1be1c6c7754c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Compound Statement (C)
 A compound statement (also called a "block") typically appears as the body of another statement, such as the **if** statement. [Declarations and Types](../c-language/declarations-and-types.md) describes the form and meaning of the declarations that can appear at the head of a compound statement.  

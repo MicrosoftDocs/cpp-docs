@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList::CAutoPtrList"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CAutoPtrList class"]
+f1_keywords: 
+  - "CAutoPtrList"
+  - "ATLCOLL/ATL::CAutoPtrList"
+  - "ATLCOLL/ATL::CAutoPtrList::CAutoPtrList"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CAutoPtrList class"
 ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CAutoPtrList Class
 This class provides methods useful when constructing a list of smart pointers.  

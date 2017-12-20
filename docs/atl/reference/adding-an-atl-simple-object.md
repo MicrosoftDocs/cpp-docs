@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["vc.codewiz.classes.adding.atl"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ATL projects, adding objects", "objects [ATL]", "ATL, simple objects"]
+f1_keywords: 
+  - "vc.codewiz.classes.adding.atl"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ATL projects, adding objects"
+  - "objects [ATL]"
+  - "ATL, simple objects"
 ms.assetid: 9c57d2ef-0447-4c84-8982-3304b8e49847
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Adding an ATL Simple Object
 To add an ATL (Active Template Library) object to your project, your project must have been created as an ATL application or as an MFC application that contains ATL support. You can use the [ATL Project Wizard](../../atl/reference/atl-project-wizard.md) to create an ATL application, or [add an ATL object to your MFC application](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.  

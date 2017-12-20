@@ -4,20 +4,41 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["mbstowcs", "_mbstowcs_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+apiname: 
+  - "mbstowcs"
+  - "_mbstowcs_l"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-convert-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["mbstowcs"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_mbstowcs_l function", "mbstowcs_l function", "mbstowcs function"]
+f1_keywords: 
+  - "mbstowcs"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_mbstowcs_l function"
+  - "mbstowcs_l function"
+  - "mbstowcs function"
 ms.assetid: 96696b27-e068-4eeb-8006-3f7a0546ae6d
 caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # mbstowcs, _mbstowcs_l
 Converts a sequence of multibyte characters to a corresponding sequence of wide characters. More secure versions of these functions are available; see [mbstowcs_s, _mbstowcs_s_l](../../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md).  

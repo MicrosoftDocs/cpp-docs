@@ -18,6 +18,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::UIntPtr value class
 Represents an unsigned pointer whose size is appropriate for the platform (32-bit or 64-bit).  

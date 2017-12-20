@@ -4,20 +4,41 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["memmove", "wmemmove"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll"]
+apiname: 
+  - "memmove"
+  - "wmemmove"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ntdll.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["memmove", "wmemmove"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["wmemmove function", "memmove function"]
+f1_keywords: 
+  - "memmove"
+  - "wmemmove"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "wmemmove function"
+  - "memmove function"
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # memmove, wmemmove
 Moves one buffer to another. More secure versions of these functions are available; see [memmove_s, wmemmove_s](../../c-runtime-library/reference/memmove-s-wmemmove-s.md).  

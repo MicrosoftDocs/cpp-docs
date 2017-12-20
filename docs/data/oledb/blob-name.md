@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["BLOB_NAME"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["BLOB_NAME macro"]
+f1_keywords: 
+  - "BLOB_NAME"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "BLOB_NAME macro"
 ms.assetid: 757acd0d-946d-447d-937e-94ecd700ba38
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # BLOB_NAME
 Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object ([BLOB](https://msdn.microsoft.com/en-us/library/ms711511.aspx)). Similar to [BLOB_ENTRY](../../data/oledb/blob-entry.md), except that this macro takes a column name instead of a column number.  

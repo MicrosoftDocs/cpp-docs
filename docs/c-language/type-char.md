@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["type char", "unsigned char keyword [C]", "char keyword [C]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "type char"
+  - "unsigned char keyword [C]"
+  - "char keyword [C]"
 ms.assetid: a5da0866-e780-4793-be87-15a8426e7ea0
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Type char
 The `char` type is used to store the integer value of a member of the representable character set. That integer value is the ASCII code corresponding to the specified character.  

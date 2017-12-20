@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["ptr.Release", "ptr::Release", "msclr.com.ptr.Release", "msclr::com::ptr::Release"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Release method"]
+f1_keywords: 
+  - "ptr.Release"
+  - "ptr::Release"
+  - "msclr.com.ptr.Release"
+  - "msclr::com::ptr::Release"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Release method"
 ms.assetid: 7855781e-e4f6-4ad5-86a5-a81e2c3d90db
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # ptr::Release
 Releases all owned references on the COM object.  

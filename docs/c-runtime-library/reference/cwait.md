@@ -4,20 +4,39 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_cwait"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
+apiname: 
+  - "_cwait"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-process-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_cwait"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["cwait function", "_cwait function"]
+f1_keywords: 
+  - "_cwait"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "cwait function"
+  - "_cwait function"
 ms.assetid: d9b596b5-45f4-4e03-9896-3f383cb922b8
 caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _cwait
 Waits until another process terminates.  

@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["operators [C++], binary", "binary operators [C++]", "expressions [C++], binary operators"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operators [C++], binary"
+  - "binary operators [C++]"
+  - "expressions [C++], binary operators"
 ms.assetid: 6dea3df4-a4bd-42c3-9807-4a27c120ac9a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Expressions with Binary Operators
 Binary operators act on two operands in an expression. The binary operators are:  

@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/Qfast_transcendentals"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/Qfast_transcendentals", "Force Fast Transcendentals"]
+f1_keywords: 
+  - "/Qfast_transcendentals"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/Qfast_transcendentals"
+  - "Force Fast Transcendentals"
 ms.assetid: 4de24bd1-38e6-49d4-9a05-04c9937d24ac
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Qfast_transcendentals (Force Fast Transcendentals)
 Generates inline code for transcendental functions.  

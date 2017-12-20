@@ -4,17 +4,43 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::Format", "ATLCOMTIME/ATL::COleDateTimeSpan::GetDays", "ATLCOMTIME/ATL::COleDateTimeSpan::GetHours", "ATLCOMTIME/ATL::COleDateTimeSpan::GetMinutes", "ATLCOMTIME/ATL::COleDateTimeSpan::GetSeconds", "ATLCOMTIME/ATL::COleDateTimeSpan::GetStatus", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalDays", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalHours", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalMinutes", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalSeconds", "ATLCOMTIME/ATL::COleDateTimeSpan::SetDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::SetStatus", "ATLCOMTIME/ATL::COleDateTimeSpan::m_span", "ATLCOMTIME/ATL::COleDateTimeSpan::m_status"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["timespan", "time span", "shared classes, COleDateTimeSpan", "Date data type, MFC encapsulation of", "COleDateTimeSpan class"]
+f1_keywords: 
+  - "COleDateTimeSpan"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::COleDateTimeSpan"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::Format"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::GetDays"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::GetHours"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::GetMinutes"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::GetSeconds"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::GetStatus"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalDays"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalHours"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalMinutes"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalSeconds"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::SetDateTimeSpan"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::SetStatus"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::m_span"
+  - "ATLCOMTIME/ATL::COleDateTimeSpan::m_status"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "timespan"
+  - "time span"
+  - "shared classes, COleDateTimeSpan"
+  - "Date data type, MFC encapsulation of"
+  - "COleDateTimeSpan class"
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # COleDateTimeSpan Class
 Represents a relative time, a time span.  

@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["COLUMN_NAME_LENGTH_STATUS"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["COLUMN_NAME_LENGTH_STATUS macro"]
+f1_keywords: 
+  - "COLUMN_NAME_LENGTH_STATUS"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "COLUMN_NAME_LENGTH_STATUS macro"
 ms.assetid: f73bd592-7ca7-461c-b106-9a8b1adbb01e
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # COLUMN_NAME_LENGTH_STATUS
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes column length and column status.  

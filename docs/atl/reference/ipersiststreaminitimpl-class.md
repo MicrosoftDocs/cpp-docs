@@ -4,17 +4,32 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["IPersistStreamInitImpl", "ATLCOM/ATL::IPersistStreamInitImpl", "ATLCOM/ATL::IPersistStreamInitImpl::GetClassID", "ATLCOM/ATL::IPersistStreamInitImpl::GetSizeMax", "ATLCOM/ATL::IPersistStreamInitImpl::InitNew", "ATLCOM/ATL::IPersistStreamInitImpl::IsDirty", "ATLCOM/ATL::IPersistStreamInitImpl::Load", "ATLCOM/ATL::IPersistStreamInitImpl::Save"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["IPersistStreamInit ATL implementation", "IPersistStreamInitImpl class", "streams, ATL"]
+f1_keywords: 
+  - "IPersistStreamInitImpl"
+  - "ATLCOM/ATL::IPersistStreamInitImpl"
+  - "ATLCOM/ATL::IPersistStreamInitImpl::GetClassID"
+  - "ATLCOM/ATL::IPersistStreamInitImpl::GetSizeMax"
+  - "ATLCOM/ATL::IPersistStreamInitImpl::InitNew"
+  - "ATLCOM/ATL::IPersistStreamInitImpl::IsDirty"
+  - "ATLCOM/ATL::IPersistStreamInitImpl::Load"
+  - "ATLCOM/ATL::IPersistStreamInitImpl::Save"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IPersistStreamInit ATL implementation"
+  - "IPersistStreamInitImpl class"
+  - "streams, ATL"
 ms.assetid: ef217c3c-020f-4cf8-871e-ef68e57865b8
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # IPersistStreamInitImpl Class
 This class implements **IUnknown** and provides a default implementation of the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface.  

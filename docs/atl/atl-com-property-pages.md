@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["property pages, COM", "ATL COM objects", "COM property pages", "property pages, ATL", "COM objects, ATL", "ATL property pages"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "property pages, COM"
+  - "ATL COM objects"
+  - "COM property pages"
+  - "property pages, ATL"
+  - "COM objects, ATL"
+  - "ATL property pages"
 ms.assetid: 663c7caa-2e5e-4b5c-b8ea-fd434ceb1654
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # ATL COM Property Pages
 COM property pages provide a user interface for setting the properties (or calling the methods) of one or more COM objects. Property pages are used extensively by ActiveX controls for providing rich user interfaces that allow control properties to be set at design time.  

@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::collection_adapter::swap"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["swap member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::collection_adapter::swap"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "swap member [STL/CLR]"
 ms.assetid: 778f85bf-c6e3-48ff-bc97-0488f3e8f143
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # collection_adapter::swap (STL/CLR)
 Swaps the contents of two containers.  

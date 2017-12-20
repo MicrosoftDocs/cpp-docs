@@ -17,6 +17,8 @@ caps.latest.revision: 2
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Metadata::RuntimeClassName
 When applied to a class definition, ensures that a private class returns a valid name from the GetRuntimeClassName function..  

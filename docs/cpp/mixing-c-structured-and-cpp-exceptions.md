@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["exceptions [C++], mixed C and C++", "C++ exception handling, mixed-language", "structured exception handling [C++], mixed C and C++", "catch keyword [C++], mixed", "try-catch keyword [C++], mixed-language"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "exceptions [C++], mixed C and C++"
+  - "C++ exception handling, mixed-language"
+  - "structured exception handling [C++], mixed C and C++"
+  - "catch keyword [C++], mixed"
+  - "try-catch keyword [C++], mixed-language"
 ms.assetid: a149154e-36dd-4d1a-980b-efde2a563a56
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Mixing C (Structured) and C++ Exceptions
 If you want to write more portable code, using structured exception handling in a C++ program is not recommended. However, you may sometimes want to compile with **/EHa** and mix structured exceptions and C++ source code, and need some facility for handling both kinds of exceptions. Because a structured exception handler has no concept of objects or typed exceptions, it cannot handle exceptions thrown by C++ code; however, C++ **catch** handlers can handle structured exceptions. As such, C++ exception handling syntax (**try**, `throw`, **catch**) is not accepted by the C compiler, but structured exception handling syntax (`__try`, `__except`, `__finally`) is supported by the C++ compiler.  

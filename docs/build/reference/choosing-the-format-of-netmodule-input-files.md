@@ -4,15 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
+dev_langs: 
+  - "C++"
 ms.assetid: 4653d1bd-300f-4083-86f5-d1a06f44e61c
 caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Choosing the Format of .netmodule Input Files
 An MSIL .obj file (compiled with [/clr](../../build/reference/clr-common-language-runtime-compilation.md)) can also be used as a .netmodule file.  .obj files contain metadata and native symbols.  .netmodules only contain metadata.  

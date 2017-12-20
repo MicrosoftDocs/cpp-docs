@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["c.strings"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["strings [C++], manipulating", "string manipulation", "manipulating strings"]
+f1_keywords: 
+  - "c.strings"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "strings [C++], manipulating"
+  - "string manipulation"
+  - "manipulating strings"
 ms.assetid: 6545861a-59e7-408d-9d29-2ec9134fc91a
 caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # String Manipulation (CRT)
 These routines operate on null-terminated single-byte character, wide-character, and multibyte-character strings. Use the buffer-manipulation routines, described in [Buffer Manipulation](../c-runtime-library/buffer-manipulation.md), to work with character arrays that do not end with a null character.  

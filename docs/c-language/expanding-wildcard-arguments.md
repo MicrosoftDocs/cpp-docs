@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["asterisk wildcard", "question mark, wildcard", "expanding wildcard arguments", "wildcards, expanding"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "asterisk wildcard"
+  - "question mark, wildcard"
+  - "expanding wildcard arguments"
+  - "wildcards, expanding"
 ms.assetid: 80a11c4b-0199-420e-a342-cf1d803be5bc
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Expanding Wildcard Arguments
 **Microsoft Specific**  

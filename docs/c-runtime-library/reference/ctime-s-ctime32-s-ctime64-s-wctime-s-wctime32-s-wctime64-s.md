@@ -4,20 +4,68 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_ctime64_s", "_wctime32_s", "ctime_s", "_wctime64_s", "_ctime32_s", "_wctime_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+apiname: 
+  - "_ctime64_s"
+  - "_wctime32_s"
+  - "ctime_s"
+  - "_wctime64_s"
+  - "_ctime32_s"
+  - "_wctime_s"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-time-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["ctime64_s", "_ctime32_s", "_tctime32_s", "_ctime64_s", "_wctime_s", "_tctime_s", "_tctime64_s", "ctime_s", "ctime32_s"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_wctime32_s function", "ctime64_s function", "_tctime64_s function", "_wctime_s function", "tctime_s function", "_wctime64_s function", "ctime_s function", "ctime32_s function", "_ctime64_s function", "tctime64_s function", "wctime64_s function", "wctime_s function", "_tctime_s function", "tctime32_s function", "wctime32_s function", "time, converting", "_ctime32_s function", "_tctime32_s function"]
+f1_keywords: 
+  - "ctime64_s"
+  - "_ctime32_s"
+  - "_tctime32_s"
+  - "_ctime64_s"
+  - "_wctime_s"
+  - "_tctime_s"
+  - "_tctime64_s"
+  - "ctime_s"
+  - "ctime32_s"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_wctime32_s function"
+  - "ctime64_s function"
+  - "_tctime64_s function"
+  - "_wctime_s function"
+  - "tctime_s function"
+  - "_wctime64_s function"
+  - "ctime_s function"
+  - "ctime32_s function"
+  - "_ctime64_s function"
+  - "tctime64_s function"
+  - "wctime64_s function"
+  - "wctime_s function"
+  - "_tctime_s function"
+  - "tctime32_s function"
+  - "wctime32_s function"
+  - "time, converting"
+  - "_ctime32_s function"
+  - "_tctime32_s function"
 ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
 caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 Convert a time value to a string and adjust for local time zone settings. These are versions of [ctime, _ctime64, _wctime, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

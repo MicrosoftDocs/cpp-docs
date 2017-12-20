@@ -4,20 +4,61 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_ungetch_nolock", "_ungetwch_nolock", "_ungetwch", "_ungetch"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
+apiname: 
+  - "_ungetch_nolock"
+  - "_ungetwch_nolock"
+  - "_ungetwch"
+  - "_ungetch"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-conio-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["_ungetch_nolock", "ungetwch", "ungetch_nolock", "_ungetwch", "ungetch", "ungetwch_nolock", "_ungetch", "_ungettch_nolock", "_ungettch", "_ungetwch_nolock"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_ungetch function", "ungetwch function", "characters, pushing back to console", "_ungettch_nolock function", "ungettch function", "_ungettch function", "ungetch_nolock function", "ungettch_nolock function", "_ungetwch_nolock function", "_ungetch_nolock function", "ungetwch_nolock function", "_ungetwch function"]
+f1_keywords: 
+  - "_ungetch_nolock"
+  - "ungetwch"
+  - "ungetch_nolock"
+  - "_ungetwch"
+  - "ungetch"
+  - "ungetwch_nolock"
+  - "_ungetch"
+  - "_ungettch_nolock"
+  - "_ungettch"
+  - "_ungetwch_nolock"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_ungetch function"
+  - "ungetwch function"
+  - "characters, pushing back to console"
+  - "_ungettch_nolock function"
+  - "ungettch function"
+  - "_ungettch function"
+  - "ungetch_nolock function"
+  - "ungettch_nolock function"
+  - "_ungetwch_nolock function"
+  - "_ungetch_nolock function"
+  - "ungetwch_nolock function"
+  - "_ungetwch function"
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
 caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 Pushes back the last character that's read from the console.  

@@ -4,20 +4,50 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["isupper", "iswupper", "_iswupper_l", "_isupper_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apiname: 
+  - "isupper"
+  - "iswupper"
+  - "_iswupper_l"
+  - "_isupper_l"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
+  - "api-ms-win-crt-string-l1-1-0.dll"
 apitype: "DLLExport"
-f1_keywords: ["isupper", "_istupper", "iswupper"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["istupper function", "iswupper function", "isupper_l function", "_isupper_l function", "iswupper_l function", "_istupper function", "_iswupper_l function", "isupper function"]
+f1_keywords: 
+  - "isupper"
+  - "_istupper"
+  - "iswupper"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "istupper function"
+  - "iswupper function"
+  - "isupper_l function"
+  - "_isupper_l function"
+  - "iswupper_l function"
+  - "_istupper function"
+  - "_iswupper_l function"
+  - "isupper function"
 ms.assetid: da2bcc9f-241c-48c0-9a0e-ad273827e16a
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # isupper, _isupper_l, iswupper, _iswupper_l
 Determines whether an integer represents an uppercase character.  

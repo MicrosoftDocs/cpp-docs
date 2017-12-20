@@ -4,17 +4,35 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["c.runtime"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["MSVCR71.dll", "libraries [C++], multithreaded", "library files, run-time", "LIBCMT.lib", "LIBCP.lib", "LIBCPMT.lib", "run-time libraries, C", "CRT, release versions", "MSVCP71.dll", "LIBC.lib", "libraries [C++]", "libraries [C++], run-time", "linking [C++], libraries"]
+f1_keywords: 
+  - "c.runtime"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "MSVCR71.dll"
+  - "libraries [C++], multithreaded"
+  - "library files, run-time"
+  - "LIBCMT.lib"
+  - "LIBCP.lib"
+  - "LIBCPMT.lib"
+  - "run-time libraries, C"
+  - "CRT, release versions"
+  - "MSVCP71.dll"
+  - "LIBC.lib"
+  - "libraries [C++]"
+  - "libraries [C++], run-time"
+  - "linking [C++], libraries"
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
 caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CRT Library Features
 This topic discusses the various .lib files that comprise the C run-time libraries as well as their associated compiler options and preprocessor directives.  

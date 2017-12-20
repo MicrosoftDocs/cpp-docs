@@ -4,20 +4,46 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_getchar_nolock", "_getwchar_nolock"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_getchar_nolock"
+  - "_getwchar_nolock"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["getwchar_nolock", "_getwchar_nolock", "_getchar_nolock", "getchar_nolock"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_getwchar_nolock function", "getwchar_nolock function", "characters, reading", "_getchar_nolock function", "getchar_nolock function", "standard input, reading from"]
+f1_keywords: 
+  - "getwchar_nolock"
+  - "_getwchar_nolock"
+  - "_getchar_nolock"
+  - "getchar_nolock"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_getwchar_nolock function"
+  - "getwchar_nolock function"
+  - "characters, reading"
+  - "_getchar_nolock function"
+  - "getchar_nolock function"
+  - "standard input, reading from"
 ms.assetid: dc49ba60-0647-4ae9-aa9a-a0618b1666de
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _getchar_nolock, _getwchar_nolock
 Reads a character from standard input.  

@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["_ATL_FUNC_INFO", "ATL::_ATL_FUNC_INFO", "ATL._ATL_FUNC_INFO"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_ATL_FUNC_INFO structure", "ATL_FUNC_INFO structure"]
+f1_keywords: 
+  - "_ATL_FUNC_INFO"
+  - "ATL::_ATL_FUNC_INFO"
+  - "ATL._ATL_FUNC_INFO"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_ATL_FUNC_INFO structure"
+  - "ATL_FUNC_INFO structure"
 ms.assetid: 441ebe2c-f971-47de-9f52-a258e8d6f88e
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _ATL_FUNC_INFO Structure
 Contains type information used to describe a method or property on a dispinterface.  

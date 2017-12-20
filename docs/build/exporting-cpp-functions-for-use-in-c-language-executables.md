@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["functions [C++], C++ functions in C executables", "exporting DLLs [C++], C++ functions in C executables", "exporting functions [C++], C++ functions in C executables", "functions [C++], exporting"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "functions [C++], C++ functions in C executables"
+  - "exporting DLLs [C++], C++ functions in C executables"
+  - "exporting functions [C++], C++ functions in C executables"
+  - "functions [C++], exporting"
 ms.assetid: 80b9e982-f52d-4312-a891-f73cc69f3c2b
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Exporting C++ Functions for Use in C-Language Executables  
   

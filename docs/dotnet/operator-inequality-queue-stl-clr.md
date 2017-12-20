@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::queue::operator!="]
-dev_langs: ["C++"]
-helpviewer_keywords: ["operator!= member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::queue::operator!="
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator!= member [STL/CLR]"
 ms.assetid: aa9e23e5-518e-473c-b15c-9b610bb215d6
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # operator!= (queue) (STL/CLR)
 Queue not equal comparison.  

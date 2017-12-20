@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL::CDataSource::GetInitializationString", "CDataSource.GetInitializationString", "GetInitializationString", "CDataSource::GetInitializationString", "ATL.CDataSource.GetInitializationString"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetInitializationString method"]
+f1_keywords: 
+  - "ATL::CDataSource::GetInitializationString"
+  - "CDataSource.GetInitializationString"
+  - "GetInitializationString"
+  - "CDataSource::GetInitializationString"
+  - "ATL.CDataSource.GetInitializationString"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetInitializationString method"
 ms.assetid: 97134723-6e99-4004-a56d-ec57543dbf3b
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CDataSource::GetInitializationString
 Retrieves the initialization string of a data source that is currently open.  

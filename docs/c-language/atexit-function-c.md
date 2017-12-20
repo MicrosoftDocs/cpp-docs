@@ -4,16 +4,21 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["atexit function"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "atexit function"
 ms.assetid: 9e1a761d-52f7-4581-a790-3ff97c80f931
 caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # atexit Function (C)
 **ANSI 4.10.4.3** The status returned by the `atexit` function if the value of the argument is other than zero, EXIT_SUCCESS, or EXIT_FAILURE  

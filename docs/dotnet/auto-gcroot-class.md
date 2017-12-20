@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["msclr::auto_gcroot", "msclr.auto_gcroot", "auto_gcroot"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["auto_gcroot"]
+f1_keywords: 
+  - "msclr::auto_gcroot"
+  - "msclr.auto_gcroot"
+  - "auto_gcroot"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "auto_gcroot"
 ms.assetid: b5790912-265d-463e-a486-47302e91042a
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # auto_gcroot Class
 Automatic resource management (like [auto_ptr Class](../standard-library/auto-ptr-class.md)) which can be used to embed a virtual handle into a native type.  

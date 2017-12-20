@@ -4,20 +4,42 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["_RTC_SetErrorFuncW"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apiname: 
+  - "_RTC_SetErrorFuncW"
+apilocation: 
+  - "msvcrt.dll"
+  - "msvcr80.dll"
+  - "msvcr90.dll"
+  - "msvcr100.dll"
+  - "msvcr100_clr0400.dll"
+  - "msvcr110.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr120.dll"
+  - "msvcr120_clr0400.dll"
+  - "ucrtbase.dll"
 apitype: "DLLExport"
-f1_keywords: ["_RTC_SetErrorFuncW", "RTC_SetErrorFuncW"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["run-time errors", "RTC_SetErrorFuncW function", "_RTC_error_fnW typedef", "_RTC_SetErrorFuncW function", "RTC_error_fnW typedef"]
+f1_keywords: 
+  - "_RTC_SetErrorFuncW"
+  - "RTC_SetErrorFuncW"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "run-time errors"
+  - "RTC_SetErrorFuncW function"
+  - "_RTC_error_fnW typedef"
+  - "_RTC_SetErrorFuncW function"
+  - "RTC_error_fnW typedef"
 ms.assetid: b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a
 caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _RTC_SetErrorFuncW
 Designates a function as the handler for the reporting of run-time error checks (RTCs).  

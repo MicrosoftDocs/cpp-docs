@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_multiset::size"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["size member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_multiset::size"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "size member [STL/CLR]"
 ms.assetid: 45f1f35e-35c4-4e39-8485-0786c1de22e3
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_multiset::size (STL/CLR)
 Counts the number of elements.  

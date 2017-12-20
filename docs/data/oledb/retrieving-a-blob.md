@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["retrieving BLOBs", "BLOB (binary large object), retrieving", "OLE DB, BLOBs (binary large objects)"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "retrieving BLOBs"
+  - "BLOB (binary large object), retrieving"
+  - "OLE DB, BLOBs (binary large objects)"
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Retrieving a BLOB
 You can retrieve a binary large object (BLOB) in various ways. You can use **DBTYPE_BYTES** to retrieve the BLOB as a sequence of bytes or use an interface like `ISequentialStream`. For more information, see [BLOBS and OLE Objects](https://msdn.microsoft.com/en-us/library/ms711511.aspx) in the *OLE DB Programmer's Reference*.  

@@ -4,17 +4,52 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["IAxWinAmbientDispatch", "ATLIFACE/ATL::IAxWinAmbientDispatch", "ATLIFACE/ATL::get_AllowContextMenu", "ATLIFACE/ATL::get_AllowShowUI", "ATLIFACE/ATL::get_AllowWindowlessActivation", "ATLIFACE/ATL::get_BackColor", "ATLIFACE/ATL::get_DisplayAsDefault", "ATLIFACE/ATL::get_DocHostDoubleClickFlags", "ATLIFACE/ATL::get_DocHostFlags", "ATLIFACE/ATL::get_Font", "ATLIFACE/ATL::get_ForeColor", "ATLIFACE/ATL::get_LocaleID", "ATLIFACE/ATL::get_MessageReflect", "ATLIFACE/ATL::get_OptionKeyPath", "ATLIFACE/ATL::get_ShowGrabHandles", "ATLIFACE/ATL::get_ShowHatching", "ATLIFACE/ATL::get_UserMode", "ATLIFACE/ATL::put_AllowContextMenu", "ATLIFACE/ATL::put_AllowShowUI", "ATLIFACE/ATL::put_AllowWindowlessActivation", "ATLIFACE/ATL::put_BackColor", "ATLIFACE/ATL::put_DisplayAsDefault", "ATLIFACE/ATL::put_DocHostDoubleClickFlags", "ATLIFACE/ATL::put_DocHostFlags", "ATLIFACE/ATL::put_Font", "ATLIFACE/ATL::put_ForeColor", "ATLIFACE/ATL::put_LocaleID", "ATLIFACE/ATL::put_MessageReflect", "ATLIFACE/ATL::put_OptionKeyPath", "ATLIFACE/ATL::put_UserMode"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["IAxWinAmbientDispatch interface"]
+f1_keywords: 
+  - "IAxWinAmbientDispatch"
+  - "ATLIFACE/ATL::IAxWinAmbientDispatch"
+  - "ATLIFACE/ATL::get_AllowContextMenu"
+  - "ATLIFACE/ATL::get_AllowShowUI"
+  - "ATLIFACE/ATL::get_AllowWindowlessActivation"
+  - "ATLIFACE/ATL::get_BackColor"
+  - "ATLIFACE/ATL::get_DisplayAsDefault"
+  - "ATLIFACE/ATL::get_DocHostDoubleClickFlags"
+  - "ATLIFACE/ATL::get_DocHostFlags"
+  - "ATLIFACE/ATL::get_Font"
+  - "ATLIFACE/ATL::get_ForeColor"
+  - "ATLIFACE/ATL::get_LocaleID"
+  - "ATLIFACE/ATL::get_MessageReflect"
+  - "ATLIFACE/ATL::get_OptionKeyPath"
+  - "ATLIFACE/ATL::get_ShowGrabHandles"
+  - "ATLIFACE/ATL::get_ShowHatching"
+  - "ATLIFACE/ATL::get_UserMode"
+  - "ATLIFACE/ATL::put_AllowContextMenu"
+  - "ATLIFACE/ATL::put_AllowShowUI"
+  - "ATLIFACE/ATL::put_AllowWindowlessActivation"
+  - "ATLIFACE/ATL::put_BackColor"
+  - "ATLIFACE/ATL::put_DisplayAsDefault"
+  - "ATLIFACE/ATL::put_DocHostDoubleClickFlags"
+  - "ATLIFACE/ATL::put_DocHostFlags"
+  - "ATLIFACE/ATL::put_Font"
+  - "ATLIFACE/ATL::put_ForeColor"
+  - "ATLIFACE/ATL::put_LocaleID"
+  - "ATLIFACE/ATL::put_MessageReflect"
+  - "ATLIFACE/ATL::put_OptionKeyPath"
+  - "ATLIFACE/ATL::put_UserMode"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IAxWinAmbientDispatch interface"
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
 caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # IAxWinAmbientDispatch Interface
 This interface provides methods for specifying characteristics of the hosted control or container.  

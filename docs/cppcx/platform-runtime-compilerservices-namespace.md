@@ -18,6 +18,8 @@ caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Runtime::CompilerServices Namespace
 This namespace is intended for internal use only, and is not intended to be used for development.  

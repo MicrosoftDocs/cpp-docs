@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::priority_queue"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["priority_queue class [STL/CLR]", "<queue> header [STL/CLR]", "<cliext/queue> header [STL/CLR]"]
+f1_keywords: 
+  - "cliext::priority_queue"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "priority_queue class [STL/CLR]"
+  - "<queue> header [STL/CLR]"
+  - "<cliext/queue> header [STL/CLR]"
 ms.assetid: 4d0000d3-68ff-4c4b-8157-7060540136f5
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # priority_queue (STL/CLR)
 The template class describes an object that controls a varying-length ordered sequence of elements that has limited access. You use the container adapter `priority_queue` to manage an underlying container as a priority queue.  

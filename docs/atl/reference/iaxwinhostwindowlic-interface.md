@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["IAxWinHostWindowLic", "ATLIFACE/ATL::IAxWinHostWindowLic", "ATLIFACE/ATL::CreateControlLic", "ATLIFACE/ATL::CreateControlLicEx"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["IAxWinHostWindowLic interface"]
+f1_keywords: 
+  - "IAxWinHostWindowLic"
+  - "ATLIFACE/ATL::IAxWinHostWindowLic"
+  - "ATLIFACE/ATL::CreateControlLic"
+  - "ATLIFACE/ATL::CreateControlLicEx"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "IAxWinHostWindowLic interface"
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
 caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # IAxWinHostWindowLic Interface
 This interface provides methods for manipulating a licensed control and its host object.  

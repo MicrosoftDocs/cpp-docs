@@ -4,16 +4,30 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["class members [C++], static", "instance constructors, static members", "class members [C++], shared", "members [C++], static data members", "static members [C++], data members", "static data members [C++]", "data members [C++], static data members", "class instances [C++], shared members", "instance constructors, shared members", "class instances [C++], static members"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "class members [C++], static"
+  - "instance constructors, static members"
+  - "class members [C++], shared"
+  - "members [C++], static data members"
+  - "static members [C++], data members"
+  - "static data members [C++]"
+  - "data members [C++], static data members"
+  - "class instances [C++], shared members"
+  - "instance constructors, shared members"
+  - "class instances [C++], static members"
 ms.assetid: 9cc8cf0f-d74c-46f2-8e83-42d4e42c8370
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Static Members (C++)
 Classes can contain static member data and member functions. When a data member is declared as **static**, only one copy of the data is maintained for all objects of the class.

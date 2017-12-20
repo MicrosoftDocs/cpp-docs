@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_map::rend"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["rend member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_map::rend"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "rend member [STL/CLR]"
 ms.assetid: 87fb2a06-c92b-4d86-855d-22f5c04aabdb
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_map::rend (STL/CLR)
 Designates the end of the reversed controlled sequence.  

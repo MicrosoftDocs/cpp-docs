@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["try-except keyword [C]", "structured exception handling, try-except", "try-catch keyword [C]", "__try keyword [C]", "__except keyword [C]", "__except keyword [C], in try-except", "try-catch keyword [C], try-except keyword [C]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "try-except keyword [C]"
+  - "structured exception handling, try-except"
+  - "try-catch keyword [C]"
+  - "__try keyword [C]"
+  - "__except keyword [C]"
+  - "__except keyword [C], in try-except"
+  - "try-catch keyword [C], try-except keyword [C]"
 ms.assetid: f76db9d1-fc78-417f-b71f-18e545fc01c3
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # try-except Statement (C)
 **Microsoft Specific**  

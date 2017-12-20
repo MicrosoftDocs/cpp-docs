@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::set::operator<="]
-dev_langs: ["C++"]
-helpviewer_keywords: ["operator<= member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::set::operator<="
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "operator<= member [STL/CLR]"
 ms.assetid: acb5997b-cdc1-44d6-80c1-e20b01b4db02
 caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # operator&lt;= (set) (STL/CLR)
 List less than or equal comparison.  

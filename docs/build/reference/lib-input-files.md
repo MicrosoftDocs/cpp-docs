@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["Lib"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["input files, LIB"]
+f1_keywords: 
+  - "Lib"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "input files, LIB"
 ms.assetid: e1236f0d-cd90-446b-b900-f311f456085c
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # LIB Input Files
 The input files expected by LIB depend on the mode in which it is being used, as shown in the following table.  

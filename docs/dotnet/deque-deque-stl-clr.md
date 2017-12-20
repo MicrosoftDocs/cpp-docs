@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::deque::deque"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["deque member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::deque::deque"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "deque member [STL/CLR]"
 ms.assetid: e5bc9511-619e-469c-b50a-e06858e7fce7
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # deque::deque (STL/CLR)
 Constructs a container object.  

@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["marshaling [C++], arrays", "platform invoke [C++], arrays", "interop [C++], arrays", "data marshaling [C++], arrays"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "marshaling [C++], arrays"
+  - "platform invoke [C++], arrays"
+  - "interop [C++], arrays"
+  - "data marshaling [C++], arrays"
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
 caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Marshal Arrays Using PInvoke
 This topic explains how native functions that accept C-style strings can be called using the CLR string type <xref:System.String> using .NET Framework Platform Invoke support. Visual C++ programmers are encouraged to use the C++ Interop features instead (when possible) because P/Invoke provides little compile-time error reporting, is not type-safe, and can be tedious to implement. If the unmanaged API is packaged as a DLL and the source code is not available, P/Invoke is the only option (otherwise, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)).  

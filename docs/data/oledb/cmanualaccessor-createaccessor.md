@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL::CManualAccessor::CreateAccessor", "CreateAccessor", "ATL.CManualAccessor.CreateAccessor", "CManualAccessor.CreateAccessor", "CManualAccessor::CreateAccessor"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CreateAccessor method"]
+f1_keywords: 
+  - "ATL::CManualAccessor::CreateAccessor"
+  - "CreateAccessor"
+  - "ATL.CManualAccessor.CreateAccessor"
+  - "CManualAccessor.CreateAccessor"
+  - "CManualAccessor::CreateAccessor"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CreateAccessor method"
 ms.assetid: 594c8d6d-b49a-4818-a9a5-81c8115d4e42
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CManualAccessor::CreateAccessor
 Allocates memory for the column bind structures and initializes the column data members.  

@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL::CDynamicAccessor::GetColumnName", "GetColumnName", "ATL.CDynamicAccessor.GetColumnName", "CDynamicAccessor::GetColumnName", "CDynamicAccessor.GetColumnName"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetColumnName method"]
+f1_keywords: 
+  - "ATL::CDynamicAccessor::GetColumnName"
+  - "GetColumnName"
+  - "ATL.CDynamicAccessor.GetColumnName"
+  - "CDynamicAccessor::GetColumnName"
+  - "CDynamicAccessor.GetColumnName"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetColumnName method"
 ms.assetid: 96a7452a-1f5b-41e9-ab37-88dac026f961
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CDynamicAccessor::GetColumnName
 Retrieves the name of the specified column.  

@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["untyped variables", "declaring variables, simple"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "untyped variables"
+  - "declaring variables, simple"
 ms.assetid: b07adf9d-9e79-4b64-8a34-e6fe1c7eccec
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Simple Variable Declarations
 The declaration of a simple variable, the simplest form of a direct declarator, specifies the variable's name and type. It also specifies the variable's storage class and data type.  

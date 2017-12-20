@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["VC.Project.VCLinkerTool.AssemblyDebug", "/ASSEMBLYDEBUG"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/ASSEMBLYDEBUG linker option", "-ASSEMBLYDEBUG linker option", "ASSEMBLYDEBUG linker option"]
+f1_keywords: 
+  - "VC.Project.VCLinkerTool.AssemblyDebug"
+  - "/ASSEMBLYDEBUG"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/ASSEMBLYDEBUG linker option"
+  - "-ASSEMBLYDEBUG linker option"
+  - "ASSEMBLYDEBUG linker option"
 ms.assetid: 94443af3-470c-41d7-83a0-7434563d7982
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /ASSEMBLYDEBUG (Add DebuggableAttribute)
 ```  

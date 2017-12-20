@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL.IRowsetUpdateImpl.Undo", "ATL::IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl.Undo"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Undo method"]
+f1_keywords: 
+  - "ATL.IRowsetUpdateImpl.Undo"
+  - "ATL::IRowsetUpdateImpl::Undo"
+  - "IRowsetUpdateImpl::Undo"
+  - "IRowsetUpdateImpl.Undo"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Undo method"
 ms.assetid: f3dc7764-050c-4322-9b2f-9ca772a0fb88
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # IRowsetUpdateImpl::Undo
 Undoes any changes to the row since the last fetch or update.  

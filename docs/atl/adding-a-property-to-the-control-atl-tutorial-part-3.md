@@ -4,15 +4,19 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "get-started-article"
-dev_langs: ["C++"]
+dev_langs: 
+  - "C++"
 ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Adding a Property to the Control (ATL Tutorial, Part 3)
 `IPolyCtl` is the interface that contains the control's custom methods and properties, and you will add a property to it.  

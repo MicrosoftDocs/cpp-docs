@@ -4,16 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "command classes in OLE DB consumer", "classes [C++], OLE DB Consumer Wizard-generated", "consumer wizard-generated classes and methods", "user record classes in OLE DB consumer"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "attribute-injected classes and methods"
+  - "wizard-generated classes and methods"
+  - "OLE DB consumers, wizard-generated classes and methods"
+  - "command classes in OLE DB consumer"
+  - "classes [C++], OLE DB Consumer Wizard-generated"
+  - "consumer wizard-generated classes and methods"
+  - "user record classes in OLE DB consumer"
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Consumer Wizard-Generated Classes
 When you use the ATL OLE DB Consumer Wizard to generate a consumer, you have the choice of using OLE DB Templates or OLE DB attributes. In both cases, the wizard generates a command class and a user record class. The command class contains code to open the data source and rowset you specified in the wizard. The user record class contains a column map for the database table you selected. However, the generated code differs in each case:  

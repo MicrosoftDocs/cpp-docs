@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["classes [C++], operating on type", "class templates", "templates, class templates"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "classes [C++], operating on type"
+  - "class templates"
+  - "templates, class templates"
 ms.assetid: 633a53c8-24ee-4c23-8c88-e7c3cb0b7ac3
 caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Class Templates
 This topic describes rules that are specific to C++ class templates.  

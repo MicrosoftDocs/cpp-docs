@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/SAFESEH"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["/SAFESEH linker option", "-SAFESEH linker option", "SAFESEH linker option"]
+f1_keywords: 
+  - "/SAFESEH"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "/SAFESEH linker option"
+  - "-SAFESEH linker option"
+  - "SAFESEH linker option"
 ms.assetid: 7722ff99-b833-4c65-a855-aaca902ffcb7
 caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /SAFESEH (Image has Safe Exception Handlers)
 ```  

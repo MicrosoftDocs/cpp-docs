@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_set::upper_bound"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["upper_bound member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_set::upper_bound"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "upper_bound member [STL/CLR]"
 ms.assetid: dc8815f1-8b45-4f3d-a51f-54050d434d8f
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_set::upper_bound (STL/CLR)
 Finds end of range that matches a specified key.  

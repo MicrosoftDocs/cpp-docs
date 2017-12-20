@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: [".LISTALL"]
-dev_langs: ["C++"]
-helpviewer_keywords: [".LISTALL directive"]
+f1_keywords: 
+  - ".LISTALL"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - ".LISTALL directive"
 ms.assetid: fccb5117-542d-4ae3-869b-40cc2ab55ecb
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # .LISTALL
 Starts listing of all statements.  

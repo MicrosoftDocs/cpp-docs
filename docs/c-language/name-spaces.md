@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["union keyword [C], tags", "enumeration tags", "structure tags", "names [C++], declared elements", "name spaces [C++]", "tags, structure tags", "union keyword [C]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "union keyword [C], tags"
+  - "enumeration tags"
+  - "structure tags"
+  - "names [C++], declared elements"
+  - "name spaces [C++]"
+  - "tags, structure tags"
+  - "union keyword [C]"
 ms.assetid: b4bda1d1-cb5e-4f60-ac2b-29af93d8a9a2
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Name Spaces
 The compiler sets up "name spaces" to distinguish between the identifiers used for different kinds of items. The names within each name space must be unique to avoid conflict, but an identical name can appear in more than one name space. This means that you can use the same identifier for two or more different items, provided that the items are in different name spaces. The compiler can resolve references based on the syntactic context of the identifier in the program.  

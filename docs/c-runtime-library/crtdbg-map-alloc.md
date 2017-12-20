@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CRTDBG_MAP_ALLOC", "_CRTDBG_MAP_ALLOC"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["_CRTDBG_MAP_ALLOC macro", "memory allocation, in debug builds", "CRTDBG_MAP_ALLOC macro"]
+f1_keywords: 
+  - "CRTDBG_MAP_ALLOC"
+  - "_CRTDBG_MAP_ALLOC"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "_CRTDBG_MAP_ALLOC macro"
+  - "memory allocation, in debug builds"
+  - "CRTDBG_MAP_ALLOC macro"
 ms.assetid: 435242b8-caea-4063-b765-4a608200312b
 caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # _CRTDBG_MAP_ALLOC
 When the **_CRTDBG_MAP_ALLOC** flag is defined in the debug version of an application, the base version of the heap functions are directly mapped to their debug versions. The flag is used in Crtdbg.h to do the mapping. This flag is only available when the [_DEBUG](../c-runtime-library/debug.md) flag has been defined in the application.  

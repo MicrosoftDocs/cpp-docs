@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["template_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["templates, C++", "templates [C++]"]
+f1_keywords: 
+  - "template_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "templates, C++"
+  - "templates [C++]"
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Templates (C++)
 Templates are the basis for generic programming in C++. As a strongly-typed language, C++ requires all variables to have a specific type, either explicitly declared by the programmer or deduced by the compiler. However, many data structures and algorithms look the same no matter what type they are operating on. Templates enable you to define the operations of a class or function, and let the user specify what concrete types those operations should work on.  

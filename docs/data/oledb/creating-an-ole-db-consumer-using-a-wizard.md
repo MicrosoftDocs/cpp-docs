@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["OLE DB consumers, creating"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "OLE DB consumers, creating"
 ms.assetid: efefd4c0-4491-4072-aa9b-59545641efb3
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Creating an OLE DB Consumer Using a Wizard
 This procedure demonstrates how you can use the ATL Project Wizard and ATL OLE DB Consumer Wizard to generate an OLE DB Templates consumer and then modify the main code of the console application to retrieve and display data from a database table.  

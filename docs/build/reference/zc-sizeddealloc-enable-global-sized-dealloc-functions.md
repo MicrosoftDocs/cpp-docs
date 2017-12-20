@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "12/13/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["sizedDealloc", "/Zc:sizedDealloc"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["-Zc compiler options (C++)", "sizedDealloc", "Enable Global Sized Deallocation Functions", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
+f1_keywords: 
+  - "sizedDealloc"
+  - "/Zc:sizedDealloc"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "-Zc compiler options (C++)"
+  - "sizedDealloc"
+  - "Enable Global Sized Deallocation Functions"
+  - "/Zc compiler options (C++)"
+  - "Zc compiler options (C++)"
 ms.assetid: 3a73ace0-4d36-420a-b699-0ca6fc0dd134
 caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Zc:sizedDealloc (Enable Global Sized Deallocation Functions)  
 The `/Zc:sizedDealloc` compiler option tells the compiler to preferentially call global `operator delete` or `operator delete[]` functions that have a second parameter of type `size_t` when the size of the object is available. These functions may use the `size_t` parameter to optimize deallocator performance.   

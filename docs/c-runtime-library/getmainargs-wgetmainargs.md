@@ -4,20 +4,37 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: 
+  - "cpp-standard-libraries"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: ["__wgetmainargs", "__getmainargs"]
-apilocation: ["msvcr100.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr110.dll", "msvcr90.dll", "msvcr120.dll"]
+apiname: 
+  - "__wgetmainargs"
+  - "__getmainargs"
+apilocation: 
+  - "msvcr100.dll"
+  - "msvcrt.dll"
+  - "msvcr110_clr0400.dll"
+  - "msvcr80.dll"
+  - "msvcr110.dll"
+  - "msvcr90.dll"
+  - "msvcr120.dll"
 apitype: "DLLExport"
-f1_keywords: ["__wgetmainargs", "__getmainargs"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["__wgetmainargs", "__getmainargs"]
+f1_keywords: 
+  - "__wgetmainargs"
+  - "__getmainargs"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "__wgetmainargs"
+  - "__getmainargs"
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439
 caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # __getmainargs, __wgetmainargs
 Invokes command-line parsing and copies the arguments to `main()` back through the passed pointers.  

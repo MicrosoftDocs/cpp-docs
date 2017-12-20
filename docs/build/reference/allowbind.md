@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/allowbind"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ALLOWBIND editbin option", "/ALLOWBIND editbin option", "-ALLOWBIND editbin option"]
+f1_keywords: 
+  - "/allowbind"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ALLOWBIND editbin option"
+  - "/ALLOWBIND editbin option"
+  - "-ALLOWBIND editbin option"
 ms.assetid: eaadbb8c-4339-4281-9a75-3a1ce2352ff8
 caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /ALLOWBIND
 Specifies whether a DLL can be bound.  

@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["vc.atl.windows"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ATL, windows", "windows [C++], ATL"]
+f1_keywords: 
+  - "vc.atl.windows"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ATL, windows"
+  - "windows [C++], ATL"
 ms.assetid: 750b14d5-d787-4d2b-9728-ac199ccad489
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Windows Support Classes
 The following classes provide support for windows:  

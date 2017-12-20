@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["importing DLLs [C++], DEF files", "def files [C++], importing with", ".def files [C++], importing with", "dllimport attribute [C++], DEF files", "DLLs [C++], DEF files"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "importing DLLs [C++], DEF files"
+  - "def files [C++], importing with"
+  - ".def files [C++], importing with"
+  - "dllimport attribute [C++], DEF files"
+  - "DLLs [C++], DEF files"
 ms.assetid: aefdbf50-f603-488a-b0d7-ed737bae311d
 caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Importing Using DEF Files
 If you choose to use **__declspec(dllimport)** along with a .def file, you should change the .def file to use DATA in place of CONSTANT to reduce the likelihood that incorrect coding will cause a problem:  

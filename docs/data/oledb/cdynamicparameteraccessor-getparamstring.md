@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CDynamicParameterAccessor.GetParamString", "GetParamString", "CDynamicParameterAccessor::GetParamString", "ATL.CDynamicParameterAccessor.GetParamString", "ATL::CDynamicParameterAccessor::GetParamString"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetParamString method"]
+f1_keywords: 
+  - "CDynamicParameterAccessor.GetParamString"
+  - "GetParamString"
+  - "CDynamicParameterAccessor::GetParamString"
+  - "ATL.CDynamicParameterAccessor.GetParamString"
+  - "ATL::CDynamicParameterAccessor::GetParamString"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetParamString method"
 ms.assetid: 078c2b1c-7072-47c1-a203-f47e75363f91
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CDynamicParameterAccessor::GetParamString
 Retrieves the string data of the specified parameter stored in the buffer.  

@@ -4,16 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["versioning, diagnosing conflicts", "versioning", "exceptions, diagnosing odd behavior", "compatibility, between assemblies"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "versioning, diagnosing conflicts"
+  - "versioning"
+  - "exceptions, diagnosing odd behavior"
+  - "compatibility, between assemblies"
 ms.assetid: 297c71e3-04a8-4d24-a5dc-b04a2c5cc6fb
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # How to: Diagnose and Fix Assembly Compatibility Problems (C++/CLI)
 This topic explains what can happen when the version of an assembly referenced at compile time doesn't match the version of the assembly referenced at runtime, and how to avoid the problem.  

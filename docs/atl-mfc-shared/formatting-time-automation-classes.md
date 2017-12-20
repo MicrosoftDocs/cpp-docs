@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["Automation classes, formatting time", "time [C++], formatting", "formatting [C++], time"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Automation classes, formatting time"
+  - "time [C++], formatting"
+  - "formatting [C++], time"
 ms.assetid: 155c5bef-b555-4bed-9545-29afc49715f1
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Formatting Time: Automation Classes
 #### To format a time  

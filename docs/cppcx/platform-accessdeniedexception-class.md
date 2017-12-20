@@ -19,6 +19,8 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::AccessDeniedException Class
 Thrown when access to a resource or feature is denied.  

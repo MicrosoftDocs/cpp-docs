@@ -4,17 +4,34 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["atlcom/ATL::DECLARE_AGGREGATABLE", "atlcom/ATL::DECLARE_CLASSFACTORY", "atlcom/ATL::DECLARE_CLASSFACTORY_EX", "atlcom/ATL::DECLARE_CLASSFACTORY_AUTO_THREAD", "atlcom/ATL::DECLARE_CLASSFACTORY_SINGLETON", "atlcom/ATL::DECLARE_GET_CONTROLLING_UNKNOWN", "atlcom/ATL::DECLARE_NOT_AGGREGATABLE", "atlcom/ATL::DECLARE_ONLY_AGGREGATABLE", "atlcom/ATL::DECLARE_POLY_AGGREGATABLE", "atlcom/ATL::DECLARE_PROTECT_FINAL_CONSTRUCT", "atlcom/ATL::DECLARE_VIEW_STATUS"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["class factories, ATL macros", "aggregation [C++], ATL macros"]
+f1_keywords: 
+  - "atlcom/ATL::DECLARE_AGGREGATABLE"
+  - "atlcom/ATL::DECLARE_CLASSFACTORY"
+  - "atlcom/ATL::DECLARE_CLASSFACTORY_EX"
+  - "atlcom/ATL::DECLARE_CLASSFACTORY_AUTO_THREAD"
+  - "atlcom/ATL::DECLARE_CLASSFACTORY_SINGLETON"
+  - "atlcom/ATL::DECLARE_GET_CONTROLLING_UNKNOWN"
+  - "atlcom/ATL::DECLARE_NOT_AGGREGATABLE"
+  - "atlcom/ATL::DECLARE_ONLY_AGGREGATABLE"
+  - "atlcom/ATL::DECLARE_POLY_AGGREGATABLE"
+  - "atlcom/ATL::DECLARE_PROTECT_FINAL_CONSTRUCT"
+  - "atlcom/ATL::DECLARE_VIEW_STATUS"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "class factories, ATL macros"
+  - "aggregation [C++], ATL macros"
 ms.assetid: d99d379a-0eec-481f-8daa-252dac18f163
 caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Aggregation and Class Factory Macros
 These macros provide ways of controlling aggregation and of declaring class factories.  

@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["vc.atl.errors"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["error handling, error information classes", "error handling, classes", "error information, classes"]
+f1_keywords: 
+  - "vc.atl.errors"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "error handling, error information classes"
+  - "error handling, classes"
+  - "error information, classes"
 ms.assetid: ba40c8fb-81fd-4f61-8f47-fa2cb540e274
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Error Information Classes
 The following class indicates how error information is handled:  

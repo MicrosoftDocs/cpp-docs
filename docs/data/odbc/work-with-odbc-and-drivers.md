@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["ODBC drivers, using"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ODBC drivers, using"
 ms.assetid: ae1bf357-4ca4-4748-9336-8fc317f294ab
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Work with ODBC and Drivers
 ODBC allows you to write applications that are not dependent on just one database management system (DBMS). You can write one application that can operate on multiple DBMSs for which your users have the correct DBMS-specific ODBC driver.  

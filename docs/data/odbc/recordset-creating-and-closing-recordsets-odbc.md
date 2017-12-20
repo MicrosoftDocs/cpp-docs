@@ -4,16 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["ODBC recordsets, creating", "recordsets, creating", "recordsets, opening", "recordsets, closing", "ODBC recordsets, closing", "ODBC recordsets, opening"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ODBC recordsets, creating"
+  - "recordsets, creating"
+  - "recordsets, opening"
+  - "recordsets, closing"
+  - "ODBC recordsets, closing"
+  - "ODBC recordsets, opening"
 ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Recordset: Creating and Closing Recordsets (ODBC)
 This topic applies to the MFC ODBC classes.  

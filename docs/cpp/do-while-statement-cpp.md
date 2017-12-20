@@ -4,17 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["do_cpp"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["do keyword [C++], do-while", "do-while keyword [C++]", "do keyword [C++]", "while keyword [C++], do-while"]
+f1_keywords: 
+  - "do_cpp"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "do keyword [C++], do-while"
+  - "do-while keyword [C++]"
+  - "do keyword [C++]"
+  - "while keyword [C++], do-while"
 ms.assetid: e01e6f7c-7da1-4591-87f9-c26ff848e7b0
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # do-while Statement (C++)
 Executes a *statement* repeatedly until the specified termination condition (the *expression*) evaluates to zero.  

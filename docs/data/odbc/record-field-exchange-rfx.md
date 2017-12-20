@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["RFX (ODBC) [C++]", "data [MFC], moving between sources and recordsets", "database classes [C++], RFX", "data [MFC]", "ODBC [C++], RFX"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "RFX (ODBC) [C++]"
+  - "data [MFC], moving between sources and recordsets"
+  - "database classes [C++], RFX"
+  - "data [MFC]"
+  - "ODBC [C++], RFX"
 ms.assetid: f5ddfbf0-2901-48d7-9848-4fb84de3c7ee
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Record Field Exchange (RFX)
 The MFC ODBC database classes automate moving data between the data source and a [recordset](../../data/odbc/recordset-odbc.md) object. When you derive a class from [CRecordset](../../mfc/reference/crecordset-class.md) and do not use bulk row fetching, data is transferred by the record field exchange (RFX) mechanism.  

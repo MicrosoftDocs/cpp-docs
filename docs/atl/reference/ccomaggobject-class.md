@@ -4,17 +4,34 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["CComAggObject", "ATLCOM/ATL::CComAggObject", "ATLCOM/ATL::CComAggObject::CComAggObject", "ATLCOM/ATL::CComAggObject::AddRef", "ATLCOM/ATL::CComAggObject::CreateInstance", "ATLCOM/ATL::CComAggObject::FinalConstruct", "ATLCOM/ATL::CComAggObject::FinalRelease", "ATLCOM/ATL::CComAggObject::QueryInterface", "ATLCOM/ATL::CComAggObject::Release", "ATLCOM/ATL::CComAggObject::m_contained"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["aggregate objects [C++], in ATL", "aggregation [C++], ATL objects", "CComAggObject class"]
+f1_keywords: 
+  - "CComAggObject"
+  - "ATLCOM/ATL::CComAggObject"
+  - "ATLCOM/ATL::CComAggObject::CComAggObject"
+  - "ATLCOM/ATL::CComAggObject::AddRef"
+  - "ATLCOM/ATL::CComAggObject::CreateInstance"
+  - "ATLCOM/ATL::CComAggObject::FinalConstruct"
+  - "ATLCOM/ATL::CComAggObject::FinalRelease"
+  - "ATLCOM/ATL::CComAggObject::QueryInterface"
+  - "ATLCOM/ATL::CComAggObject::Release"
+  - "ATLCOM/ATL::CComAggObject::m_contained"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "aggregate objects [C++], in ATL"
+  - "aggregation [C++], ATL objects"
+  - "CComAggObject class"
 ms.assetid: 7aa90d69-d399-477b-880d-e2cdf0ef7881
 caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # CComAggObject Class
 This class implements the [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) interface for an aggregated object. By definition, an aggregated object is contained within an outer object. The `CComAggObject` class is similar to the [CComObject Class](../../atl/reference/ccomobject-class.md), except that it exposes an interface that is directly accessible to external clients.  

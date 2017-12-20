@@ -4,17 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["NotifyHandler"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["NotifyHandler function"]
+f1_keywords: 
+  - "NotifyHandler"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "NotifyHandler function"
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # NotifyHandler
 The name of the function identified by the third parameter of the `NOTIFY_HANDLER` macro in your message map.  

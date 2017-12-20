@@ -29,6 +29,8 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /O1, /O2 (Minimize Size, Maximize Speed)
 

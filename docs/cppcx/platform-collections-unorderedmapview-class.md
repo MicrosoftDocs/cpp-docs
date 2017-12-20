@@ -14,6 +14,8 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::Collections::UnorderedMapView Class
 Represents a read-only view into a *map*, which is a collection of key-value pairs.  

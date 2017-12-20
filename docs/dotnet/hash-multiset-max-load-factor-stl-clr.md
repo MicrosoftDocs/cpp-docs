@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_multiset::max_load_factor"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["max_load_factor member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_multiset::max_load_factor"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "max_load_factor member [STL/CLR]"
 ms.assetid: ca0a6e8e-b889-47e4-9edd-c5a321fdeb8f
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_multiset::max_load_factor (STL/CLR)
 Gets or sets the maximum elements per bucket.  

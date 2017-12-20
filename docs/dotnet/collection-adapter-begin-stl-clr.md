@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::collection_adapter::begin"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["begin member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::collection_adapter::begin"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "begin member [STL/CLR]"
 ms.assetid: fba55a3f-c1c6-4679-8c94-54cbb468e44c
 caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # collection_adapter::begin (STL/CLR)
 Designates the beginning of the controlled sequence.  

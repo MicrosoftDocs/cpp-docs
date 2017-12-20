@@ -19,6 +19,8 @@ ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /NATVIS (Add Natvis to PDB)
   

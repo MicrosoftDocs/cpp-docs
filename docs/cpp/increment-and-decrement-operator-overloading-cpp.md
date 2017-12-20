@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["increment operators [C++]", "increment operators [C++], types of", "decrement operators [C++]", "decrement operators [C++], types of"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "increment operators [C++]"
+  - "increment operators [C++], types of"
+  - "decrement operators [C++]"
+  - "decrement operators [C++], types of"
 ms.assetid: 5423c6ce-3999-4a77-92f6-ad540add1b1d
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Increment and Decrement Operator Overloading (C++)
 The increment and decrement operators fall into a special category because there are two variants of each:  

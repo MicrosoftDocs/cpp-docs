@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["base classes [C++], multiple", "derived classes [C++], multiple bases", "multiple inheritance, class declaration", "multiple base classes [C++]"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "base classes [C++], multiple"
+  - "derived classes [C++], multiple bases"
+  - "multiple inheritance, class declaration"
+  - "multiple base classes [C++]"
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
 caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Multiple Base Classes
 As described in [Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), a class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element. For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  

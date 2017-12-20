@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["declarations, enumerations", "define directive (#define), alternative to", "enumerators, declaring", "#define directive, alternative to", "named constants, enumeration declarations", "declaring enumerations"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "declarations, enumerations"
+  - "define directive (#define), alternative to"
+  - "enumerators, declaring"
+  - "#define directive, alternative to"
+  - "named constants, enumeration declarations"
+  - "declaring enumerations"
 ms.assetid: bd18f673-4dda-4bc1-92fd-d1ce10074910
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # C Enumeration Declarations
 An enumeration consists of a set of named integer constants. An enumeration type declaration gives the name of the (optional) enumeration tag and defines the set of named integer identifiers (called the "enumeration set," "enumerator constants," "enumerators," or "members"). A variable with enumeration type stores one of the values of the enumeration set defined by that type.  

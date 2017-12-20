@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["boxed value types, tracking handle to"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "boxed value types, tracking handle to"
 ms.assetid: 16c92048-5b74-47d5-8eca-dfea3d38879a
 caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # A Tracking Handle to a Boxed Value
 The usage of a tracking handle to reference a value type has changed from Managed Extensions for C++ to Visual C++.  

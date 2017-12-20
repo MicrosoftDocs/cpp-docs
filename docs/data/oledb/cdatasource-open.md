@@ -4,17 +4,27 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["ATL::CDataSource::Open", "ATL.CDataSource.Open", "CDataSource::Open", "CDataSource.Open"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["Open method"]
+f1_keywords: 
+  - "ATL::CDataSource::Open"
+  - "ATL.CDataSource.Open"
+  - "CDataSource::Open"
+  - "CDataSource.Open"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "Open method"
 ms.assetid: a6d28bd1-799a-48ed-8993-5f82d1705b77
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CDataSource::Open
 Opens a connection to a data source using a **CLSID**, **ProgID**, or `CEnumerator` moniker or prompts the user with a locator dialog box.  

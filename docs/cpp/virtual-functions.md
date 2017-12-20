@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["functions [C++], virtual functions", "derived classes [C++], virtual functions", "virtual functions"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "functions [C++], virtual functions"
+  - "derived classes [C++], virtual functions"
+  - "virtual functions"
 ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Virtual Functions
 A virtual function is a member function that you expect to be redefined in derived classes. When you refer to a derived class object using a pointer or a reference to the base class, you can call a virtual function for that object and execute the derived class's version of the function.  

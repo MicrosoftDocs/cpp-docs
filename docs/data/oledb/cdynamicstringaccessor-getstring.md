@@ -4,17 +4,25 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CDynamicStringAccessor.GetString", "CDynamicStringAccessor::GetString"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["GetString method"]
+f1_keywords: 
+  - "CDynamicStringAccessor.GetString"
+  - "CDynamicStringAccessor::GetString"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetString method"
 ms.assetid: 4af27f27-7589-49f5-93d8-6ef05c023c8a
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CDynamicStringAccessor::GetString
 Retrieves the specified column data as a string.  

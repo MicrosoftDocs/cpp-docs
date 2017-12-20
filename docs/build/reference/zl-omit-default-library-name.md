@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-tools"]
+ms.technology: 
+  - "cpp-tools"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["/zi", "VC.Project.VCCLCompilerTool.OmitDefaultLibName"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["-Zl compiler option [C++]", "ZI compiler option", "Omit Default Library Name compiler option", "/Zl compiler option [C++]", "default libraries, omitting names"]
+f1_keywords: 
+  - "/zi"
+  - "VC.Project.VCCLCompilerTool.OmitDefaultLibName"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "-Zl compiler option [C++]"
+  - "ZI compiler option"
+  - "Omit Default Library Name compiler option"
+  - "/Zl compiler option [C++]"
+  - "default libraries, omitting names"
 ms.assetid: b27d39d0-44d6-498c-84ae-27c1326fee59
 caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # /Zl (Omit Default Library Name)
 Omits the default C runtime library name from the .obj file. By default, the compiler puts the name of the library into the .obj file to direct the linker to the correct library.  

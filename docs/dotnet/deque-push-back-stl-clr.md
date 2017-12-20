@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::deque::push_back"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["push_back member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::deque::push_back"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "push_back member [STL/CLR]"
 ms.assetid: dafd5a4d-1fc7-434c-b129-a523099f8701
 caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # deque::push_back (STL/CLR)
 Adds a new last element.  

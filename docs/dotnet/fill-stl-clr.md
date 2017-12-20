@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::fill"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["fill function"]
+f1_keywords: 
+  - "cliext::fill"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "fill function"
 ms.assetid: eb67241c-9bb3-497e-bec6-639900c60758
 caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # fill (STL/CLR)
 Assigns the same new value to every element in a specified range.  

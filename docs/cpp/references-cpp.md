@@ -4,16 +4,26 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-language"]
+ms.technology: 
+  - "cpp-language"
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["objects [C++], referencing", "references [C++]", "references, to pointers", "declarations, references", "references, declaring", "referencing objects, declarator syntax"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "objects [C++], referencing"
+  - "references [C++]"
+  - "references, to pointers"
+  - "declarations, references"
+  - "references, declaring"
+  - "referencing objects, declarator syntax"
 ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # References (C++)
 A reference, like a pointer, stores the address of an object that is located elsewhere in memory. Unlike a pointer, a reference after it is initialized cannot be made to refer to a different object or set to null. There are two kinds of references: lvalue references which refer to a named variable and rvalue references which refer to a [temporary object](../cpp/temporary-objects.md). The & operator signifies an lvalue reference and the && operator signifies either an rvalue reference, or a universal reference (either rvalue or lvalue) depending on the context.  

@@ -4,17 +4,28 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["CDataSource::OpenFromFileName", "ATL::CDataSource::OpenFromFileName", "OpenFromFileName", "CDataSource.OpenFromFileName", "ATL.CDataSource.OpenFromFileName"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["OpenFromFileName method"]
+f1_keywords: 
+  - "CDataSource::OpenFromFileName"
+  - "ATL::CDataSource::OpenFromFileName"
+  - "OpenFromFileName"
+  - "CDataSource.OpenFromFileName"
+  - "ATL.CDataSource.OpenFromFileName"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "OpenFromFileName method"
 ms.assetid: c4226de6-59da-4368-9c15-c5afab86f68b
 caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # CDataSource::OpenFromFileName
 Opens a data source from a file specified by the user-supplied file name.  

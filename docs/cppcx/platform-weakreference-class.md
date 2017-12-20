@@ -14,6 +14,8 @@ caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Platform::WeakReference Class
 Represents a weak reference to an instance of a ref class.  

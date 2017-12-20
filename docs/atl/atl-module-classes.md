@@ -4,16 +4,23 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["CComModule class, what's changed", "ATL, module classes", "module classes"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "CComModule class, what's changed"
+  - "ATL, module classes"
+  - "module classes"
 ms.assetid: fd75382d-c955-46ba-a38e-37728b7fa00f
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # ATL Module Classes
 This topic discusses the module classes that were new in ATL 7.0.  

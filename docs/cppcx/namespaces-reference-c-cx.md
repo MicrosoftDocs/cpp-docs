@@ -16,6 +16,8 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
 ---
 # Namespaces Reference (C++/CX)
 The articles in this section of the documentation describe namespaces that support the compiler for C++/CX.  

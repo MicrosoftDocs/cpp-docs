@@ -4,16 +4,22 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["verifiable assemblies [C++], with SQL Server"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "verifiable assemblies [C++], with SQL Server"
 ms.assetid: 5248a60d-aa88-4ff3-b30a-b791c3ea2de9
 caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # Using Verifiable Assemblies with SQL Server (C++/CLI)
 Extended stored procedures, packaged as dynamic-link libraries (DLLs), provide a way to extend SQL Server functionality through functions developed with Visual C++. Extended stored procedures are implemented as functions inside DLLs. In addition to functions, extended stored procedures can also define [user-defined types](../cpp/classes-and-structs-cpp.md) and [aggregate functions](http://msdn.microsoft.com/en-us/de255454-f45e-4281-81f9-bc61893ac5da) (such as SUM or AVG).  

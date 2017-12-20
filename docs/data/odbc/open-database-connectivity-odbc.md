@@ -4,16 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: ["C++"]
-helpviewer_keywords: ["ODBC [C++]", "databases [C++], ODBC", "data access [C++], ODBC"]
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ODBC [C++]"
+  - "databases [C++], ODBC"
+  - "data access [C++], ODBC"
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
 caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "data-storage"
 ---
 # Open Database Connectivity (ODBC)
 The Microsoft Foundation Classes (MFC) library supplies classes for programming with Open Database Connectivity (ODBC). As of Visual Studio 2015 and SQL Server 2012 ODBC is the preferred way to connect to SQL data sources.

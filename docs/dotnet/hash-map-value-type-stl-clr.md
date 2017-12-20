@@ -4,17 +4,24 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: ["cpp-windows"]
+ms.technology: 
+  - "cpp-windows"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_map::value_type"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["value_type member [STL/CLR]"]
+f1_keywords: 
+  - "cliext::hash_map::value_type"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "value_type member [STL/CLR]"
 ms.assetid: 7aa29304-5e52-46be-b50e-45e11401764e
 caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: 
+  - "cplusplus"
+  - "dotnet"
 ---
 # hash_map::value_type (STL/CLR)
 The type of an element.  
