@@ -19,7 +19,7 @@ manager: "ghogen"
 # thread
 
 **Microsoft Specific**  
-The **thread** extended storage-class modifier is used to declare a thread local variable. For the portable equivalent in C++11 and later, use the [thread_local](../cpp/storage-classes-cpp.md#thread_local) storage class specifier.
+The **thread** extended storage-class modifier is used to declare a thread local variable. For the portable equivalent in C++11 and later, use the [thread_local](../cpp/storage-classes-cpp.md#thread_local) storage class specifier for portable code. On Windows **thread_local** is implemented with **__declspec(thread)**.
 
 ## Syntax
 
@@ -37,13 +37,18 @@ Declarations of thread local variables must use [extended attribute syntax](../c
 __declspec( thread ) int tls_i = 1;  
 ```
 
-You must observe these guidelines when declaring thread local objects and variables:
+When using thread-local variables in dynamically-loaded libraries, you need to be aware of factors that can cause a thread-local variable to not be initialized correctly:
+
+1) If the variable is initialized with a function call (including constructors), this function will only be called for the thread that caused the binary/DLL to load into the process, and for those threads that started after the binary/DLL was loaded. The initialization functions are not called for any other thread that was already running when the DLL was loaded. Dynamic initialization occurs on the DllMain call for DLL_THREAD_ATTACH, but the DLL never gets that message if the DLL isn't in the process when the thread starts. 
+
+2) Thread-local variables that are initialized statically with constant values are generally initialized properly on all threads. However, as of December 2017 there is a known conformance issue in the Microsoft C++ compiler whereby constexpr variables receive dynamic rather than static initialization.  
+  
+   Note: Both of these issues are expected to be fixed in future updates of the compiler.
+
+
+Additionally, you must observe these guidelines when declaring thread local objects and variables:
 
 - You can apply the **thread** attribute only to class and data declarations and definitions; **thread** cannot be used on function declarations or definitions.
-
-- The use of the **thread** attribute may interfere with [delay loading](../build/reference/linker-support-for-delay-loaded-dlls.md) of DLL imports.
-
-- On XP systems, **thread** may not function correctly if a DLL uses __declspec(thread) data and it is loaded dynamically via LoadLibrary.
 
 - You can specify the **thread** attribute only on data items with static storage duration. This includes global data objects (both **static** and **extern**), local static objects, and static data members of classes. You cannot declare automatic data objects with the **thread** attribute.
 
