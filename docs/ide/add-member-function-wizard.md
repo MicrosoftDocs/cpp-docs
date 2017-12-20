@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Add Member Function Wizard
 This wizard adds a member function declaration to the header file and a stub member function implementation to the implementation file for the selected class.  

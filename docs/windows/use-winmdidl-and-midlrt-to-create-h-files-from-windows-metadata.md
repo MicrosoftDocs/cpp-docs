@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Use winmdidl.exe and midlrt.exe to create .h files from windows metadata
 Winmdidl.exe and midlrt.exe enable COM-level interaction between native C++ code and Windows Runtime components. Winmdidl.exe takes as input a .winmd file that contains metadata for a Windows Runtime component and outputs an IDL file. Midlrt.exe converts that IDL file into header files that the C++ code can consume. Both tools run on the command line.  

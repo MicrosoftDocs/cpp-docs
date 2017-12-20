@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Toolbar (Image Editor for Icons)
 The **Image Editor** toolbar contains tools for drawing, painting, entering text, erasing, and manipulating views. It also contains an option selector, with which you can select options for using each tool. For example, you can choose from various brush widths, magnification factors, and line styles.  

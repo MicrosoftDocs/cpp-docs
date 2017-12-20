@@ -14,6 +14,7 @@ caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # typeid  (C++ Component Extensions)
 Gets a value that indicates the type of an object.  

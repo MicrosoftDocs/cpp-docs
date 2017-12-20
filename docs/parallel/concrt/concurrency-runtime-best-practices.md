@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency Runtime Best Practices
 This section describes best practices that can help you make effective use of the Concurrency Runtime. These best practices apply to the [Parallel Patterns Library](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL), the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md), and the [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md).  

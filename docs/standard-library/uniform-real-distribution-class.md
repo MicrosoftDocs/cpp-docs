@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # uniform_real_distribution Class
 Generates a uniform (every value is equally probable) floating-point distribution within an output range that is inclusive-exclusive.  

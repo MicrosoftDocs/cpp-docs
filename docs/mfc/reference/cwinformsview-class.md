@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CWinFormsView Class
 Provides generic functionality for hosting of a Windows Forms control as an MFC view.  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Multithreading with C++ and MFC
 The Microsoft Foundation Class (MFC) library provides support for multithreaded applications. This topic describes processes and threads and the MFC approach to multithreading.  

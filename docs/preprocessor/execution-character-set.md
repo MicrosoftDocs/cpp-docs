@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # execution_character_set
 Specifies the execution character set used for string and character literals. This directive is not needed for literals marked with the u8 prefix.  

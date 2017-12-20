@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Picking up a Color from an Image to Use Elsewhere (Image Editor for Icons)
 The **Select Color**, or color-pickup, tool makes any color on the image the current foreground color or background color, depending on whether you press the left or the right mouse button. To cancel the **Select Color** tool, choose another tool.  

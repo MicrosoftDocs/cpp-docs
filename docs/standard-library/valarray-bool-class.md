@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # valarray&lt;bool&gt; Class
 A specialized version of the template class **valarray\<Type>** to elements of type `bool`.  

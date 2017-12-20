@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Active Documents
 Active documents extend the compound document technology of OLE. These extensions are provided in the form of additional interfaces that manage views, so that objects can function within containers and yet retain control over their display and printing functions. This process makes it possible to display documents both in foreign frames (such as the Microsoft Office Binder or Microsoft Internet Explorer) and in native frames (such as the product's own view ports).  

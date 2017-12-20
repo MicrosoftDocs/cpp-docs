@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using TCHAR.H Data Types with _MBCS Code
 When the manifest constant **_MBCS** is defined, a given generic-text routine maps to one of the following kinds of routines:  

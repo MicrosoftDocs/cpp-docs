@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Containers: Client-Item Notifications
 This article discusses the overridable functions that the MFC framework calls when server applications modify items in your client application's document.  

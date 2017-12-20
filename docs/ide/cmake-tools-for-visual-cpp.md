@@ -13,6 +13,7 @@ ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMake projects in Visual C++
 This article assumes that you are familiar with CMake, a cross-platform, open-source tool for defining build processes that run on multiple platforms.  

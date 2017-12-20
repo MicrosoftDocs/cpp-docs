@@ -14,6 +14,7 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::~HString Destructor
 Destroys the current instance of the HString class.  

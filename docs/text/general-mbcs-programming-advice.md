@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # General MBCS Programming Advice
 Use the following tips:  

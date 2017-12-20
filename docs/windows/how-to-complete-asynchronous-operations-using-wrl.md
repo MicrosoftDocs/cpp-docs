@@ -13,6 +13,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Complete Asynchronous Operations Using WRL
 This document shows how to use the Windows Runtime C++ Template Library (WRL)to start asynchronous operations and perform work when the operations complete.  

@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Intrinsics and Assembly Language
 This section of the documentation contains information about compiler intrinsics and the assembly language.  

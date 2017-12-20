@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSectionTraits::Unlock Method
 Specializes a CriticalSection template so that it supports releasing ownership of the specified critical section object.  

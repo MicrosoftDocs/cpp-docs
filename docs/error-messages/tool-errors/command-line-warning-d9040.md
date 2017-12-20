@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9040
 ignoring option '/analyze'; Code Analysis warnings are not available in this edition of the compiler  

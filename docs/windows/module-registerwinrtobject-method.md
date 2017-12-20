@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::RegisterWinRTObject Method
 Registers one or more Windows Runtime objects so other applications can connect to them.  

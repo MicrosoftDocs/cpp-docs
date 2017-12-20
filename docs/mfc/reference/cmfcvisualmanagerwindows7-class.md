@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerWindows7 Class
 The `CMFCVisualManagerWindows7` gives an application the appearance of a [!INCLUDE[win7](../../build/includes/win7_md.md)] application.  

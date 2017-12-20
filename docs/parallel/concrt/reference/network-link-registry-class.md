@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # network_link_registry Class
 The `network_link_registry` abstract base class manages the links between source and target blocks.  

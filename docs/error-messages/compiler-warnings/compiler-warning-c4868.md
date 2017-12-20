@@ -7,6 +7,7 @@ ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4868
 

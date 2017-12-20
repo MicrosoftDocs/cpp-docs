@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::Add Method
 Appends the event handler represented by the specified delegate interface to the set of event handlers for the current EventSource object.  

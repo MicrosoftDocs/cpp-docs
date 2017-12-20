@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Template-Based Classes
 This article explains the type-safe template-based collection classes in MFC version 3.0 and later. Using these templates to create type-safe collections is more convenient and helps provide type safety more effectively than using the collection classes not based on templates.  

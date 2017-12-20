@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.13   Using the flush Directive with a List
 The following example uses the `flush` directive for point-to-point synchronization of specific objects between pairs of threads:  

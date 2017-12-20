@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding an MFC ODBC Consumer
 An MFC ODBC consumer consists of an ODBC recordset class and data bindings necessary to access a data source.  

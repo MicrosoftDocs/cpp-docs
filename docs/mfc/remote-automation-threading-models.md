@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Remote Automation Threading Models
 Remote Automation supports both the single-threaded and the apartment-threaded models of COM. On 32-bit and 64-bit platforms, which are all that Visual C++ supports, the threading model should be set to "apartment." For more information on how and where to do this, see [Creating Programs That Use Remote Automation](../mfc/creating-programs-that-use-remote-automation.md).  

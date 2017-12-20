@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C++ Standard Library Overview
 All C++ library entities are declared or defined in one or more standard headers. This implementation includes two additional headers, `<hash_map>` and `<hash_set>`, that are not required by the C++ Standard. For a complete list of headers that this implementation supports, see [Header Files Reference](../standard-library/cpp-standard-library-header-files.md).  

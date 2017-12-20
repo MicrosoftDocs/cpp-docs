@@ -13,6 +13,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Create a traditional Windows Desktop application (C++)
 

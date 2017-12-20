@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # id
 Specifies a `dispid` parameter for a member function (either a property or a method, in an interface or dispinterface).  

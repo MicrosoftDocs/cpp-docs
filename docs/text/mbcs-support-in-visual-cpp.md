@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MBCS Support in Visual C++
 When run on an MBCS-enabled version of the Windows 2000 or Windows XP operating system, the Visual C++ development system (including the integrated source code editor, debugger, and command line tools) is MBCS-enabled, with the exception of the memory window.  

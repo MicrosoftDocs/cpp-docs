@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing Image Properties (Image Editor for Icons)
 You can set or modify properties of an image using the [Properties window](/visualstudio/ide/reference/properties-window).  

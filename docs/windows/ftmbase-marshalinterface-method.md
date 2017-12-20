@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::MarshalInterface Method
 Writes into a stream the data required to initialize a proxy object in some client process.  

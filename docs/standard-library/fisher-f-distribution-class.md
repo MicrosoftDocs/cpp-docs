@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fisher_f_distribution Class
 Generates a Fisher F distribution.  

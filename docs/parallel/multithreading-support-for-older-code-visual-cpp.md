@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Multithreading Support for Older Code (Visual C++)
 Visual C++ allows you to have multiple concurrent threads of execution running simultaneously. With multithreading, you can spin off background tasks, manage simultaneous streams of input, manage a user interface, and much more.  

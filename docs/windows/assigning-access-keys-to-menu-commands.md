@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Assigning Access Keys to Menu Commands
 You can assign an access key (a mnemonic that allows the user to select the menu with the keyboard) to your menus and menu commands.  

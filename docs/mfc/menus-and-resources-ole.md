@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Menus and Resources (OLE)
 This group of articles explains the use of menus and resources in MFC OLE document applications.  

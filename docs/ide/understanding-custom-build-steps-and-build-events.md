@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Understanding Custom Build Steps and Build Events
 From within the Visual C++ development environment, there are three basic ways to customize the build process:  

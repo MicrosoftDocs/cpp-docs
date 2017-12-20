@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Porting Guide: MFC Scribble
 This topic is the first of several topics that introduce you to the upgrade procedure for Visual C++ projects that were created in older versions of Visual Studio to Visual Studio 2017. These topics introduce the upgrade process by example, starting with a very simple project and moving to slightly more complex ones. In this topic, we work through the upgrade process for a specific project, MFC Scribble. It is suitable as a basic introduction to the upgrade process for C++ projects.  

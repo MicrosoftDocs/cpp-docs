@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::Remove Method
 Deletes the event handler represented by the specified event registration token from the set of event handlers associated with the current EventSource object.  

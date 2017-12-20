@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating a Rebar Control
 [CReBarCtrl](../mfc/reference/crebarctrl-class.md) objects should be created before the parent object is visible. This minimizes the possibilities of painting problems.  

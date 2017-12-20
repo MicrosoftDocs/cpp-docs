@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Selecting Foreground or Background Colors (Image Editor for Icons)
 Except for the **Eraser**, tools on the **Image Editor** toolbar draw with the current foreground or background color when you press the left or right mouse button, respectively.  

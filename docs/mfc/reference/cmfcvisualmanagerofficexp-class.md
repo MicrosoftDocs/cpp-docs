@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerOfficeXP Class
 The `CMFCVisualManagerOfficeXP` gives an application a Microsoft Office XP appearance.  

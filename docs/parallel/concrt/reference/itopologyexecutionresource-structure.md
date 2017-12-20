@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ITopologyExecutionResource Structure
 An interface to an execution resource as defined by the Resource Manager.  

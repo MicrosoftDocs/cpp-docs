@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Window, Dialog, and Control Classes
 Class `CWnd` and its derived classes encapsulate an `HWND`, a handle to a Windows window. `CWnd` can be used by itself or as a base for deriving new classes. The derived classes supplied by the class library represent various kinds of windows.  

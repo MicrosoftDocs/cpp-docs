@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0025
 Batch file 'file' contains Unicode contents that could not be translated to user's ANSI code page.  

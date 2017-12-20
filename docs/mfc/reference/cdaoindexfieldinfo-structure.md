@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoIndexFieldInfo Structure
 The `CDaoIndexFieldInfo` structure contains information about an index field object defined for data access objects (DAO).  

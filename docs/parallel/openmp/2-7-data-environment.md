@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.7 Data Environment
 This section presents a directive and several clauses for controlling the data environment during the execution of parallel regions, as follows:  

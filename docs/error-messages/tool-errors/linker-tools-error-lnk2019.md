@@ -15,6 +15,7 @@ caps.latest.revision: 39
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2019
 unresolved external symbol '*symbol*' referenced in function '*function*'  

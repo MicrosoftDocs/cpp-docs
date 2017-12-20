@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CInternetSession Class
 Creates and initializes a single or several simultaneous Internet sessions and, if necessary, describes your connection to a proxy server.  

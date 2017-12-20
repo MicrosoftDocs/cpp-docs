@@ -14,6 +14,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;filesystem&gt;
 Include the header &lt;filesystem> for access to classes and functions that manipulate and retrieve information about paths, files and directories.  

@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Serialization: Making a Serializable Class
 Five main steps are required to make a class serializable. They are listed below and explained in the following sections:  

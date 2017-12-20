@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # forward_iterator_tag Struct
 A class that provides a return type for **iterator_category** function that represents a forward iterator.  

@@ -4,6 +4,7 @@ author: jasongroce
 ms.author: apexprodleads
 title: Linux Development with C++ Documentation
 description: Create and debug applications running on Linux.
+ms.workload: [[]]
 ---
 
 # Linux Development with C++ Documentation

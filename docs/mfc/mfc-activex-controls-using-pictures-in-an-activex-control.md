@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Using Pictures in an ActiveX Control
 This article describes the common Picture type and how to implement it in your ActiveX control. Topics include:  

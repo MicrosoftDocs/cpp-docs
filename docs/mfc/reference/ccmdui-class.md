@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CCmdUI Class
 Is used only within an `ON_UPDATE_COMMAND_UI` handler in a `CCmdTarget`-derived class.  

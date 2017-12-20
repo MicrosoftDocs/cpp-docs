@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4962
 'function' : Profile-guided optimizations disabled because optimizations caused profile data to become inconsistent"  

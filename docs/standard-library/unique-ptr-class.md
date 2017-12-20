@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # unique_ptr Class
 Stores a pointer to an owned object or array. The object/array is owned by no other `unique_ptr`. The object/array is destroyed when the `unique_ptr` is destroyed.  

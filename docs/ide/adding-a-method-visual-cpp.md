@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding a Method  (Visual C++)
 You can use the [Add Method Wizard](../ide/add-method-wizard.md) to add a method to an interface in your project. If the project contains a class associated with the interface, the wizard modifies the class, too.  

@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2262
 'attribute_specifiers' : InternalsVisibleTo declarations cannot have a version, culture, or processor architecture specified  

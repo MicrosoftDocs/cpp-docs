@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCOutlookBarTabCtrl Class
 A tab control that has the visual appearance of the **Navigation Pane** in Microsoft Outlook.  

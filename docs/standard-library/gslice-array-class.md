@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # gslice_array Class
 An internal, auxiliary template class that supports general slice objects by providing operations between subset arrays defined by the general slice of a valarray.  

@@ -14,6 +14,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::operator&amp; (bitset)", "std::operator&gt;&gt; (bitset)", "std::operator&lt;&lt; (bitset)"]
+ms.workload: ["cplusplus"]
 ---
 # &lt;bitset&gt; operators
 ||||  

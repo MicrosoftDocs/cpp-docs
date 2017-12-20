@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CHttpFile Class
 Provides the functionality to request and read files on an HTTP server.  

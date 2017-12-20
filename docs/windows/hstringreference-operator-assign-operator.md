@@ -14,6 +14,7 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # HStringReference::Operator= Operator
 Moves the value of another HStringReference object to the current HStringReference object.  

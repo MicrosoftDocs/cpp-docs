@@ -15,6 +15,7 @@ caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerVS2005 Class
 `CMFCVisualManagerVS2005` gives an application a Microsoft Visual Studio 2005 appearance.  

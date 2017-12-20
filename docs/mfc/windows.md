@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Windows
 This family of articles covers window objects in the MFC framework. All MFC windows derive from class [CWnd](../mfc/reference/cwnd-class.md), including frame windows, views, dialog boxes, and controls.  

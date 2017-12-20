@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # agent Class
 A class intended to be used as a base class for all independent agents. It is used to hide state from other agents and interact using message-passing.  

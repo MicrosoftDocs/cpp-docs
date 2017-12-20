@@ -14,6 +14,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Thread Safety in the C++ Standard Library
 The following thread safety rules apply to all classes in the C++ Standard Library—this includes `shared_ptr`, as described below.  Stronger guarantees are sometimes provided—for example, the standard iostream objects, as described below, and types specifically intended for multithreading, like those in [\<atomic>](../standard-library/atomic.md).  

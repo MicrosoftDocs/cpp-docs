@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # BITMAP Structure
 The **BITMAP** structure defines the height, width, color format, and bit values of a logical bitmap**.**  

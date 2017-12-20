@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Removing Space Between Buttons on a Toolbar
 The following procedure shows you how to remove a space between buttons on a toolbar.  

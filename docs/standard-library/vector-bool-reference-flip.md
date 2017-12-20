@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # vector&lt;bool&gt;::reference::flip
 Inverts the Boolean value of a referenced [vector\<bool>](../standard-library/vector-bool-class.md) element.  

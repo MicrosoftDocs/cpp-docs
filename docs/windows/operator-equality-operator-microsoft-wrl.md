@@ -14,6 +14,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # operator== Operator (Microsoft::WRL)
 Equality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../windows/comptrref-class.md) objects.  

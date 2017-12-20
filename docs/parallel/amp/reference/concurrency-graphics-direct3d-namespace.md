@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics::direct3d Namespace
 Provides the [get_texture](concurrency-graphics-direct3d-namespace-functions.md#get_texture) and [make_texture](concurrency-graphics-direct3d-namespace-functions.md#make_texture) methods.  

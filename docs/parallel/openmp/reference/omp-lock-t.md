@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # omp_lock_t
 A type that holds the status of a lock, whether the lock is available or if a thread owns a lock.  

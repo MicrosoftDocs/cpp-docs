@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OLE Background
 OLE is a mechanism that allows users to create and edit documents containing items or "objects" created by multiple applications.  

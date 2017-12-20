@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;cstdint&gt;
 Includes the Standard C library header \<stdint.h> and adds the associated names to the `std` namespace.  

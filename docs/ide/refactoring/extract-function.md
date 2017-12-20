@@ -11,6 +11,7 @@ ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 
 # Extract Function

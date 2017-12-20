@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3842
 'function': 'const' and 'volatile' qualifiers on member functions of WinRT or managed types are not supported  

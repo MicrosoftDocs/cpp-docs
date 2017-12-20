@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Troubleshooting the Dialog Editor
 Below are a few issues of which you should be aware when working in the Dialog editor.  

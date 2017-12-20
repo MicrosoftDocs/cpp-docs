@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CSharedFile Class
 The [CMemFile](../../mfc/reference/cmemfile-class.md)-derived class that supports shared memory files.  

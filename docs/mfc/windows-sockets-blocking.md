@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Blocking
 This article and two companion articles explain several issues in Windows Sockets programming. This article covers blocking. The other issues are covered in the articles: [Windows Sockets: Byte Ordering](../mfc/windows-sockets-byte-ordering.md) and [Windows Sockets: Converting Strings](../mfc/windows-sockets-converting-strings.md).  

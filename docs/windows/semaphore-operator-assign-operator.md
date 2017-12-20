@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Semaphore::operator= Operator
 Moves the specified handle from a Semaphore object to the current Semaphore object.  

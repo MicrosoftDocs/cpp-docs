@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # numeric_limits Class
 The template class describes arithmetic properties of built-in numerical types.  

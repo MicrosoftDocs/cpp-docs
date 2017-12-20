@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::chrono [C++], duration"]
+ms.workload: ["cplusplus"]
 ---
 # duration Class
 Describes a type that holds a *time interval*, which is an elapsed time between two time points.  

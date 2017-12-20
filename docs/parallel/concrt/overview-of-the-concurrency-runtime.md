@@ -14,6 +14,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Overview of the Concurrency Runtime
 This document provides an overview of the Concurrency Runtime. It describes the benefits of the Concurrency Runtime, when to use it, and how its components interact with each other and with the operating system and applications.  

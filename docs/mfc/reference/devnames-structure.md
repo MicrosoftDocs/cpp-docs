@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DEVNAMES Structure
 The `DEVNAMES` structure contains strings that identify the driver, device, and output-port names for a printer.  

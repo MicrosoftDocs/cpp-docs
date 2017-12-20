@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 4.2 OMP_NUM_THREADS
 The **OMP_NUM_THREADS** environment variable sets the default number of threads to use during execution, unless that number is explicitly changed by calling the **omp_set_num_threads** library routine or by an explicit **num_threads** clause on a **parallel** directive.  

@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CCachedDataPathProperty Class
 Implements an OLE control property transferred asynchronously and cached in a memory file.  

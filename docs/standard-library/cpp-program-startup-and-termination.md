@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C++ Program Startup and Termination
 A C++ program performs the same operations as a C program does at program startup and at program termination, plus a few more outlined here.  

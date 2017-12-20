@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4256
 'function' : constructor for class with virtual bases has '...'; calls may not be compatible with older versions of Visual C++  

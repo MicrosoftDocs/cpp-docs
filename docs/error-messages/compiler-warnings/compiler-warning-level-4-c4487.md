@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4487
 'derived_class_function' : matches inherited non-virtual method 'base_class_function' but is not explicitly marked 'new'  

@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;unordered_map&gt;
 Defines the container template classes [unordered_map](../standard-library/unordered-map-class.md) and [unordered_multimap](../standard-library/unordered-multimap-class.md) and their supporting templates.  

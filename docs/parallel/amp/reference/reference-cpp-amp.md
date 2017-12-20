@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Reference (C++ AMP)
 This section contains reference information for the C++ Accelerated Massive Parallelism (C++ AMP) runtime.  

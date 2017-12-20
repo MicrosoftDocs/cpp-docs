@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN066: Common MFC 3.x to 4.0 Porting Issues
 This technical note described the most common problems that can occur when attempting to port an application written with MFC 3.x (the MFC included with Visual C++ 2.x) to MFC 4.0.  

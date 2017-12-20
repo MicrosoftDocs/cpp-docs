@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.25   Examples of the copyprivate Data Attribute Clause
 **Example 1:** The `copyprivate` clause ([Section 2.7.2.8](../../parallel/openmp/2-7-2-8-copyprivate.md) on page 32) can be used to broadcast values acquired by a single thread directly to all instances of the private variables in the other threads.  

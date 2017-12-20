@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSectionTraits Structure
 Specializes a CriticalSection object to support either an invalid critical section or a function to release a critical section.  

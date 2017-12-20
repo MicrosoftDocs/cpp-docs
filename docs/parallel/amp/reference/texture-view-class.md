@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # texture_view Class
 Provides read access and write access to a texture. `texture_view` can only be used to read textures whose value type is `int`, `unsigned int`, or `float` that have default 32-bit bpse. To read other texture formats, use `texture_view<const value_type, _Rank>`.  

@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (Level 1) C4744
 'var' has different type in 'file1' and 'file2': 'type1' and 'type2'  

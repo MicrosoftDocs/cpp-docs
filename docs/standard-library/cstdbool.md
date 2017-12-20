@@ -13,6 +13,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;cstdbool&gt;
 Includes the Standard C library header \<stdbool.h> and adds the associated names to the `std` namespace.  

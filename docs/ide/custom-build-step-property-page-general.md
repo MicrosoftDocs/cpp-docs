@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Custom Build Step Property Page: General
 For each combination of project configuration and target platform in your project, you can specify a custom step to be performed when the project is built.  

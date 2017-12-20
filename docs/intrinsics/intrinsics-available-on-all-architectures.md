@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Intrinsics Available on All Architectures
 The following intrinsics are available with the x86, AMD64, and ARM architectures:  

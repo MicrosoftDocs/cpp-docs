@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Accelerator Type Property
 The accelerator **Type** property determines whether the shortcut key combination associated with the accelerator ID is a virtual key combination or an ASCII/ANSI key value:  

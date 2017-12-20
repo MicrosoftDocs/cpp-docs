@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # case (C++)
 Used with the [switch_type](../windows/switch-type.md) attribute in a **union**.  

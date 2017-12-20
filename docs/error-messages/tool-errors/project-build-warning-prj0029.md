@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Project Build Warning PRJ0029
 The 'Outputs' property for the project-level custom build step is not set. The custom build step will be skipped.  

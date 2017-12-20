@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Support for Unicode
 Unicode is a specification for supporting all character sets, including those that cannot be represented in just one byte. If you are programming for an international market, we recommend that you use either Unicode or [multibyte character sets](../text/support-for-multibyte-character-sets-mbcss.md) (MBCSs), or enable your program so you can build it for either by changing a switch.  

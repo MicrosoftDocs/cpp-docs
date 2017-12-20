@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # reduction
 Specifies that one or more variables that are private to each thread are the subject of a reduction operation at the end of the parallel region.  

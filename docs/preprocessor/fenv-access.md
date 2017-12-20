@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fenv_access
 Disables (ON) or enables (OFF) optimizations that could change flag tests and mode changes.  

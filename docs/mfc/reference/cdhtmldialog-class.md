@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDHtmlDialog Class
 Is used to create dialog boxes that use HTML rather than dialog resources to implement their user interface.  

@@ -15,6 +15,7 @@ caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CContextMenuManager Class
 The `CContextMenuManager` object manages shortcut menus, also known as context menus.  

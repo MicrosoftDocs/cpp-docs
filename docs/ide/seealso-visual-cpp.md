@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;seealso&gt; (Visual C++)
 The \<seealso> tag lets you specify the text that you might want to appear in a See Also section. Use [\<see>](../ide/see-visual-cpp.md) to specify a link from within text.  

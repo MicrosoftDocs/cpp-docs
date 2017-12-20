@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonQuickAccessToolBarDefaultState Class
 A helper class that manages default state for the Quick Access Toolbar that is positioned on the ribbon bar ( [CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md)).  

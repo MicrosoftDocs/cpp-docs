@@ -6,17 +6,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "error-reference"
-f1_keywords: 
-  - "C4838"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "C4838"
+f1_keywords: ["C4838"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["C4838"]
 ms.assetid: fea07924-5feb-4ed4-99b5-1a8c41d28db6
 caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4838
 conversion from 'type_1' to 'type_2' requires a narrowing conversion  

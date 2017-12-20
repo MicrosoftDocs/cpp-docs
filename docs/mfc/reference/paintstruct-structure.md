@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # PAINTSTRUCT Structure
 The `PAINTSTRUCT` structure contains information that can be used to paint the client area of a window.  

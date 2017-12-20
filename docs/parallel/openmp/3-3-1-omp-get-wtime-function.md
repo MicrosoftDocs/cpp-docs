@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.3.1 omp_get_wtime Function
 The `omp_get_wtime` function returns a double-precision floating point value equal to the elapsed wall clock time in seconds since some "time in the past".  The actual "time in the past" is arbitrary, but it is guaranteed not to change during the execution of the application program. The format is as follows:  

@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # not_equal_to Struct
 A binary predicate that performs the inequality operation ( `operator!=`) on its arguments.  

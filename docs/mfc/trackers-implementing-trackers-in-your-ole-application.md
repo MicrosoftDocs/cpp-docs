@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Trackers: Implementing Trackers in Your OLE Application
 Trackers provide a graphical interface to enable users to interact with OLE client items. By using different tracker styles, OLE client items can be displayed with hatched borders, resize handles, or a variety of other visual effects. This article describes:  

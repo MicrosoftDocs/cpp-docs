@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Filling a Bounded Area of an Image with a Color (Image Editor for Icons)
 The Image editor provides the **Fill** tool for filling any enclosed image area with the current drawing color or the current background color.  

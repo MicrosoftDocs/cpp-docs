@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # messages_byname Class
 The derived template class describes an object that can serve as a message facet of a given locale, enabling the retrieval of localized messages.  

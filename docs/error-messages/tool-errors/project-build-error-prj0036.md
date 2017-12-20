@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0036
 The 'Additional Files' property for the Web Deployment Tool contained an invalid entry.  

@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # independent_bits_engine Class
 Generates a random sequence of numbers with a specified number of bits by repacking bits from the values returned by its base engine.  

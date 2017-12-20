@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # valarray Class
 The template class describes an object that controls a sequence of elements of type **Type** that are stored as an array, designed for performing high-speed mathematical operations, and optimized for computational performance.  

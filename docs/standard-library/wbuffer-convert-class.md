@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # wbuffer_convert Class
 Describes a stream buffer that controls the transmission of elements to and from a byte stream buffer.  

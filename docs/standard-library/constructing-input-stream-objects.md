@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Constructing Input Stream Objects
 If you use only the `cin` object, you do not need to construct an input stream. You must construct an input stream if you use:  

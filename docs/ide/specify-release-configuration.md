@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Specify Release Configuration Settings, Create New Project From Existing Code Files Wizard
 Use this page of the Create New Project From Existing Code Files wizard to specify Release configuration project settings.  

@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Handlers for Standard Windows Messages
 Default handlers for standard Windows messages (**WM_**) are predefined in class `CWnd`. The class library bases names for these handlers on the message name. For example, the handler for the `WM_PAINT` message is declared in `CWnd` as:  

@@ -14,6 +14,7 @@ caps.latest.revision: 0
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings by compiler version  
   

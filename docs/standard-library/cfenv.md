@@ -13,6 +13,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;cfenv&gt;
 Includes the Standard C library header \<fenv.h> and adds the associated names to the `std` namespace.  

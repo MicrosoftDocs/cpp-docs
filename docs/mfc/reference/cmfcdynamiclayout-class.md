@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCDynamicLayout Class
 Specifies how controls in a window are moved and resized as the user resizes the window.  

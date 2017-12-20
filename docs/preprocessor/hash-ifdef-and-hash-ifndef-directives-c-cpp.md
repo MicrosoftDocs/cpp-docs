@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # #ifdef and #ifndef Directives (C/C++)
 The **#ifdef** and **#ifndef** directives perform the same task as the `#if` directive when it is used with **defined**( *identifier* ).  

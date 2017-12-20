@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.16   Using Locks
 In the following example, (for [Section 3.2](../../parallel/openmp/3-2-lock-functions.md) on page 41) note that the argument to the lock functions should have type `omp_lock_t`, and that there is no need to flush it.  The lock functions cause the threads to be idle while waiting for entry to the first critical section, but to do other work while waiting for entry to the second.  The `omp_set_lock` function blocks, but the `omp_test_lock` function does not, allowing the work in skip() to be done.  

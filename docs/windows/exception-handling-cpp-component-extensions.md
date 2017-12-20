@@ -14,6 +14,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Exception Handling  (C++ Component Extensions)
 Applications compiled with the **/ZW** compiler option or **/clr** compiler option both use *exceptions* to handle unexpected errors during program execution. The following topics discuss exception handling in either C++/CX or C++/CLI applications.  

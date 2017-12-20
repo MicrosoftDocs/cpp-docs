@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # less Struct
 A binary predicate that performs the less-than operation ( `operator<`) on its arguments.  

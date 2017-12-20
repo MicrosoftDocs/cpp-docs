@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoErrorInfo Structure
 The `CDaoErrorInfo` structure contains information about an error object defined for data access objects (DAO).  

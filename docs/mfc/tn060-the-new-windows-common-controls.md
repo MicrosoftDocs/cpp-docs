@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN060: The New Windows Common Controls
 Technical Note 60, describing the new Windows common controls and how to use them, has been incorporated into [Controls](../mfc/controls-mfc.md).  

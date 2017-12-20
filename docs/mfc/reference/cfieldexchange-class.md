@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CFieldExchange Class
 Supports the record field exchange (RFX) and bulk record field exchange (Bulk RFX) routines used by the database classes.  

@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3203
 'type' : unspecialized class template or generic can't be used as a template or generic argument for template or generic parameter 'param', expected a real type  

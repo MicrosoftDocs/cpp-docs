@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoParameterInfo Structure
 The `CDaoParameterInfo` structure contains information about a parameter object defined for data access objects (DAO).  

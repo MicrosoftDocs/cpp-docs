@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Open a Manifest Resource
 If you open a manifest resource from [Resource View](../windows/resource-view-window.md), the resource will open in binary format. To view the contents of a manifest resource in a more viewable format, you must open the resource from Solution Explorer.  

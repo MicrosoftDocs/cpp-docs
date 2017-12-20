@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CFontHolder Class
 Implements the stock Font property and encapsulates the functionality of a Windows font object and the `IFont` interface.  

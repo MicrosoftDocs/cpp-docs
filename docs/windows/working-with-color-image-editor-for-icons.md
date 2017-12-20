@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Working with Color (Image Editor for Icons)
 The Image editor contains many features that specifically handle and customize colors. You can set a foreground or background color, fill bounded areas with color, or select a color on an image to use as the current foreground or background color. You can use tools on the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) along with the colors palette in the [Colors window](../windows/colors-window-image-editor-for-icons.md) to create images.  

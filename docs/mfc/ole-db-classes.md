@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OLE DB Classes
 The OLE DB support in MFC currently consists of the class [COLEDBRecordView](../mfc/reference/coledbrecordview-class.md). `COleDBRecordView` displays database records in controls, through a form view directly connected to a [CRowset](../data/oledb/crowset-class.md) object. For more information about the OLE DB consumer templates, see [List of OLE DB Consumer Templates](../data/oledb/ole-db-consumer-templates-reference.md).  

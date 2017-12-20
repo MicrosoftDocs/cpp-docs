@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::ComPtr Constructor
 Intializes a new instance of the ComPtr class. Overloads provide default, copy, move, and conversion constructors.  

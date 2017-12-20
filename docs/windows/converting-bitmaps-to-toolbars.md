@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Converting Bitmaps to Toolbars
 You can create a new toolbar by converting a bitmap. The graphic from the bitmap converts to the button images for a toolbar. Usually the bitmap contains several button images on a single bitmap, with one image for each button. Images can be any size; the default is 16 pixels wide and the height of the image. You can specify the size of the button images in the [New Toolbar Resource dialog box](../windows/new-toolbar-resource-dialog-box.md) when you choose Toolbar Editor from the **Image** menu while in the Image editor.  

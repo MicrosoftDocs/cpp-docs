@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN020: ID Naming and Numbering Conventions
 This note describes the ID naming and numbering conventions that MFC 2.0 uses for resources, commands, strings, controls, and child windows.  

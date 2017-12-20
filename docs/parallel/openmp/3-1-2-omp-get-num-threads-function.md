@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.1.2 omp_get_num_threads Function
 The **omp_get_num_threads** function returns the number of threads currently in the team executing the parallel region from which it is called. The format is as follows:  

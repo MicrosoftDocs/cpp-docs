@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a 256-Color Icon or Cursor (Image Editor for Icons)
 Using the Image editor, icons and cursors can be sized large (64 × 64) with a 256-color palette to choose from. After creating the resource, a device image style is selected.  

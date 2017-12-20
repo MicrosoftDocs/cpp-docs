@@ -14,6 +14,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C++ Standard Library Reference
 A C++ program can call on a large number of functions from this conforming implementation of the C++ Standard Library. These functions perform essential services such as input and output and provide efficient implementations of frequently used operations.  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiling and Linking Multithread Programs
 The Bounce.c program is introduced in [Sample Multithread C Program](../parallel/sample-multithread-c-program.md).  

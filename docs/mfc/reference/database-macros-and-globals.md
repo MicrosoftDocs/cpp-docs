@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Database Macros and Globals
 The macros and globals listed below apply to ODBC-based database applications. They are not used with DAO-based applications.  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Internationalization Strategies
 Depending on your target operating systems and markets, you have several internationalization strategies:  

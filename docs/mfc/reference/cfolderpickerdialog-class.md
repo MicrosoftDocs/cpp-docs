@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CFolderPickerDialog Class
 CFolderPickerDialog class implements CFileDialog in the folder picker mode.  

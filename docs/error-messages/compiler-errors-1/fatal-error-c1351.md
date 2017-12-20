@@ -16,6 +16,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 robots: noindex,nofollow
+ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1351
 error loading dll 'dll': incompatible version  

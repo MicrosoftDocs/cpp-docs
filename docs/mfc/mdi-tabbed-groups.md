@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MDI Tabbed Groups
 The multiple document interface (MDI) tabbed groups feature enables multiple document interface (MDI) applications to display one or more tabbed windows (or groups of tabbed windows, known as *tabbed groups*) in the MDI client area. The tabbed windows can be aligned vertically or horizontally. If an application hosts more than one MDI tabbed group, the groups are separated by splitters.  

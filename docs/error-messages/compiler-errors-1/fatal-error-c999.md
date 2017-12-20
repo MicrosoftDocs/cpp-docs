@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Fatal Error C999
 UNKNOWN MESSAGE    Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information  

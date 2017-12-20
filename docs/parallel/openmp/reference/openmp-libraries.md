@@ -13,6 +13,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OpenMP Libraries
 Discusses the .lib files that make up the OpenMP run-time libraries in Visual C++.  

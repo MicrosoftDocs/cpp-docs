@@ -11,6 +11,7 @@ ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # Connect to Your remote Linux computer

@@ -13,6 +13,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # enum class  (C++ Component Extensions)
 Declares an enumeration at namespace scope, which is a user-defined type consisting of a set of named constants called enumerators.  

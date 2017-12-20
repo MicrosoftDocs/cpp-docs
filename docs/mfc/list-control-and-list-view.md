@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # List Control and List View
 For convenience, MFC encapsulates the list control in two ways. You can use list controls:  

@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockExclusiveTraits::GetInvalidValue Method
 Retrieves an SRWLockExclusiveTraits object that is always invalid.  

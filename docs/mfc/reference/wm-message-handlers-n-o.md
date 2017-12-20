@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # WM_ Message Handlers: N - O
 The following map entries on the left correspond to the function prototypes on the right:  

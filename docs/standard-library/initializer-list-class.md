@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::initializer_list::initializer_list", "std::initializer_list::begin", "std::initializer_list::end", "std::initializer_list::size"]
+ms.workload: ["cplusplus"]
 ---
 # initializer_list Class
 Provides access to an array of elements in which each member is of the specified type.  

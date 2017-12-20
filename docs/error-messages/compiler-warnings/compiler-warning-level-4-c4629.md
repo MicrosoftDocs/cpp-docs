@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4629
 digraph used, character sequence 'digraph' interpreted as token 'char' (insert a space between the two characters if this is not what you intended)  

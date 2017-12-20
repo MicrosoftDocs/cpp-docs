@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # out_of_memory Class
 The exception that is thrown when a method fails because of a lack of system or device memory.  

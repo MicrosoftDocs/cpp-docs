@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN048: Writing ODBC Setup and Administration Programs for MFC Database Applications
 > [!NOTE]

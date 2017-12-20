@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC Program or Control Source and Header Files
 The following files are created when you create an MFC project in Visual Studio, depending on the options you select for the project you create. For example, your project contains *Projname*dlg.cpp and *Projname*dlg.h files only if you create a dialog-based project or class.  

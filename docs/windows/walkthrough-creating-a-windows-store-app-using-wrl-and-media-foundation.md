@@ -13,6 +13,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating a Windows Store app using WRL and Media Foundation
 Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  

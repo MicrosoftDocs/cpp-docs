@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Regular Expressions (C++)
 The C++ standard library supports multiple regular expression grammars. This topic discusses the grammar variations available when using regular expressions.  

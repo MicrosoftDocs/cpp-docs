@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # multiplies Struct
 A predefined function object that performs the multiplication operation (binary `operator*`) on its arguments.  

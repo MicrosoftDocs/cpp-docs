@@ -14,6 +14,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Message Passing Functions
 The Asynchronous Agents Library provides several functions that let you pass messages among components.  

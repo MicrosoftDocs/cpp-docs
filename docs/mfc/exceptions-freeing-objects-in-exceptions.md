@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Exceptions: Freeing Objects in Exceptions
 This article explains the need and the method of freeing objects when an exception occurs. Topics include:  

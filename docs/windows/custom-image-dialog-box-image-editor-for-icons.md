@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Custom Image Dialog Box (Image Editor for Icons)
 Enables you to create a new image with a custom size and number of colors.

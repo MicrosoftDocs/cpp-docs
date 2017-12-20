@@ -11,6 +11,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Overview of potential upgrade issues (Visual C++)
 Over the years, the Visual C++ compiler has undergone many changes, along with changes in the C++ language itself, the C++ Standard Library, the C runtime (CRT), and other libraries such as MFC and ATL. As a result, when upgrading an application from an earlier version of Visual C++ you might encounter compiler and linker errors and warnings in code that previously compiled cleanly. The older the original code base, the greater the potential for such errors. This overview summarizes the most common classes of issues you are likely to encounter, and provides links to more detailed information.  

@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Redistributing Visual C++ ActiveX Controls
 Visual C++ 6.0 supplies ActiveX controls you can use in applications that you then redistribute. These controls are no longer included in Visual C++. Per the licensing agreements for Visual C++ 6.0, you can redistribute these controls with applications developed in Visual C++.  

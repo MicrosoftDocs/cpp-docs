@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Inserting a Space Between Buttons on a Toolbar
 In general, to insert a space between buttons, simply drag them away from one another on the toolbar. To remove space, drag them towards each other.  

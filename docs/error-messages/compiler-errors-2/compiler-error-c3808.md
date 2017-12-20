@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3808
 'type' : a class with the ComImport attribute cannot define member 'member', only abstract or dllimport functions are allowed  

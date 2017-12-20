@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # intrinsic
 Specifies that calls to functions specified in the pragma's argument list are intrinsic.  

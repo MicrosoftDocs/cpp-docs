@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Finding Binary Data
 You can search for either ASCII strings or hexadecimal bytes. For example, to find "Hello," you can search for either the string "Hello" or for "48 65 6C 6C 6F" (the hexadecimal equivalent).  

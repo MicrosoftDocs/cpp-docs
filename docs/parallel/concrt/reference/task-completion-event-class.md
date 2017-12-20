@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # task_completion_event Class
 The `task_completion_event` class allows you to delay the execution of a task until a condition is satisfied, or start a task in response to an external event.  

@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2676
 binary 'operator' : 'type' does not define this operator or a conversion to a type acceptable to the predefined operator  

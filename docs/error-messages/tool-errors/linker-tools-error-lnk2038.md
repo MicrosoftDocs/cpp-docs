@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2038
 mismatch detected for '\<name>': value '\<value 1>' doesn't match value '\<value 2>' in \<filename.obj>  

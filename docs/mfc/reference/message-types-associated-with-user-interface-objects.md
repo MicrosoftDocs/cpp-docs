@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Message Types Associated with User-Interface Objects
 The following table shows the types of objects with which you work, and the types of messages associated with them.  

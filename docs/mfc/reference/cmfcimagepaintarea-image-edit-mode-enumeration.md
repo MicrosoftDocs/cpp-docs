@@ -7,7 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["IMAGE_EDIT_MODE Enumeration", ]
+f1_keywords: ["IMAGE_EDIT_MODE Enumeration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IMAGE_EDIT_MODE Enumeration method [MFC]"]
 ms.assetid: e51db66a-fa1c-4766-9dac-a25b595f871a
@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration
 Specifies a drawing mode that you use to modify an image in an image editor dialog box.  

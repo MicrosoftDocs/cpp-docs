@@ -4,20 +4,17 @@ ms.custom: ""
 ms.date: "9/21/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications [C++]"
-  - "application deployment [C++]"
+dev_langs: ["C++"]
+helpviewer_keywords: ["deploying applications [C++]", "application deployment [C++]"]
 ms.assetid: d4b4ffc0-d2bd-4e4a-84a6-62f1c26f6a09
 caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Deployment in Visual C++
 

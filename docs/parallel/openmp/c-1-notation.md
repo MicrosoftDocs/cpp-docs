@@ -13,6 +13,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C.1 Notation
 The grammar rules consist of the name for a non-terminal, followed by a colon, followed by replacement alternatives on separate lines.  

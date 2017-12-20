@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Custom Events
 Custom events differ from stock events in that they are not automatically fired by class `COleControl`. A custom event recognizes a certain action, determined by the control developer, as an event. The event map entries for custom events are represented by the `EVENT_CUSTOM` macro. The following section implements a custom event for an ActiveX control project that was created using the ActiveX Control Wizard.  

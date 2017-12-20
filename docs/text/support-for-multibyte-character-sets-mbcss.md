@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Support for Multibyte Character Sets (MBCSs)
 Multibyte character sets (MBCSs) are an older approach to the need to support character sets, like Japanese and Chinese, that cannot be represented in a single byte. If you are doing new development, you should use Unicode for all text strings except perhaps system strings that are not seen by end users. MBCS is a legacy technology and is not recommended for new development.  

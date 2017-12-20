@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Character Assignment
 Consider the following example, in which the `while` loop scans a string, copying all characters except 'X' into another string:  

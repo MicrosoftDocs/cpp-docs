@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Dialog Editor States (Guides and Grids)
 You can arrange controls on dialog boxes with the Dialog editor in one of three different states:  

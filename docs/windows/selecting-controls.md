@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Selecting Controls
 Select controls to size, align, move, copy, or delete them, and then perform the operation you want. In most cases, you need to select more than one control to use the sizing and alignment tools on the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  

@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Project Build Warning PRJ0049
 Referenced target '\<Reference>' requires .NET Framework \<MinFrameworkVersion> and will fail to run on this project's target framework  

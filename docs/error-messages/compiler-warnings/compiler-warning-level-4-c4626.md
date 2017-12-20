@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4626
 'derived class' : assignment operator was implicitly defined as deleted because a base class assignment operator is inaccessible or deleted  

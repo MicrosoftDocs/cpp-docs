@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory::LockServer Method
 Increments or decrements the number of underlying objects that are tracked by the current ClassFactory object.  

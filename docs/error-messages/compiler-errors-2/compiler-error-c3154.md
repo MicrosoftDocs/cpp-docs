@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3154
 Expected ',' before ellipsis. Non-comma separated ellipsis not supported on parameter array functions.  

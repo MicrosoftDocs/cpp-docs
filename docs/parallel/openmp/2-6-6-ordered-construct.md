@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.6.6 ordered Construct
 The structured block following an **ordered** directive is executed in the order in which iterations would be executed in a sequential loop. The syntax of the **ordered** directive is as follows:  

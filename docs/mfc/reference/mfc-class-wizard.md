@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC Class Wizard
 Lets you add messages and message handlers to classes in your project. You can also start other wizards or add a class to your project.  

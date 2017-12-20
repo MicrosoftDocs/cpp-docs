@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Custom Manipulators with Arguments
 This section describes how to create output stream manipulators with one or more arguments, and how to use manipulators for nonoutput streams.  

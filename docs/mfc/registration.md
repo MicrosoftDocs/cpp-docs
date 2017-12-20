@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Registration
 When a user wants to insert an OLE item into an application, OLE presents a list of object types to choose from. OLE gets this list from the system registration database, which contains information provided by all server applications. When a server registers itself, the entries it puts into the system registration database (the Registry) describe each type of object it supplies, file extensions, and the path to itself, among other information.  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # hdrstop
 Gives you additional control over precompilation file names and over the location at which the compilation state is saved.  

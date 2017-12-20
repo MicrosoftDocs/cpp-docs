@@ -14,6 +14,7 @@ caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Parallel Containers and Objects
 The Parallel Patterns Library (PPL) includes several containers and objects that provide thread-safe access to their elements.  

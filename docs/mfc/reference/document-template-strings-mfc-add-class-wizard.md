@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Document Template Strings, MFC Add Class Wizard
 This page of the wizard is available only for classes meeting the following criteria:  

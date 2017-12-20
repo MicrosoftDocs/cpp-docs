@@ -9,6 +9,7 @@ ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings That Are Off by Default
 

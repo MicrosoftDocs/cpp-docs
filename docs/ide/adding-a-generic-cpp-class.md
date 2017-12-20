@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding a Generic C++ Class
 You can add a generic C++ class by using **Class View**. A generic C++ class is a class that you define or that is derived from a class that you define.  

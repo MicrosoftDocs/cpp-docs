@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;param&gt; (Visual C++)
 The \<param> tag should be used in the comment for a method declaration to describe one of the parameters for the method.  

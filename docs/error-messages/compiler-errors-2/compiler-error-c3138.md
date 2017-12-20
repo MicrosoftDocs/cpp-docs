@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3138
 'interface' : a 'attribute' interface must inherit from IDispatch, or from an interface that inherits from IDispatch  

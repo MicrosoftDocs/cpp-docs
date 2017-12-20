@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Converting an Image From One Format to Another (Image Editor for Icons)
 You can open GIF or JPEG images in the Image editor and save them as bitmaps. Also, you can open a bitmap file and save it as a GIF or JPEG. Images you work with need not be part of a project for editing in the development environment (see [stand-alone image editing](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)).  

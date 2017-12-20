@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Data Objects and Data Sources: Creation and Destruction
 As explained in the article [Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md), data objects and data sources represent both sides of a data transfer. This article explains when to create and destroy these objects and sources to perform your data transfers properly, including:  

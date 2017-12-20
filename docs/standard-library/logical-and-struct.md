@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # logical_and Struct
 A predefined function object that performs the logical conjunction operation ( `operator&&`) on its arguments.  

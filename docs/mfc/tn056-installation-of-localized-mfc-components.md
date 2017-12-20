@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN056: Installation of Localized MFC Components
 This tech note, which discussed the installation of localized MFC components, is now obsolete.  

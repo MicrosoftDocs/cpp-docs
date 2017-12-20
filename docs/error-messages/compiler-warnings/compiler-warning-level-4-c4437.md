@@ -13,6 +13,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4437
 dynamic_cast from virtual base 'class1' to 'class2' could fail in some contexts        Compile with /vd2 or define 'class2' with #pragma vtordisp(2) in effect  

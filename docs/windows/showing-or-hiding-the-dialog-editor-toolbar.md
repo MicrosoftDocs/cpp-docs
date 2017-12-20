@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Showing or Hiding the Dialog Editor Toolbar
 When you open the Dialog editor, the Dialog Editor toolbar automatically appears at the top of your solution.  

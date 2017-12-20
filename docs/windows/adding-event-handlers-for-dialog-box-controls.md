@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Event Handlers for Dialog Box Controls
 For project dialog boxes that are already associated with a class, you can take advantage of some shortcuts when you create event handlers. You can quickly create a handler either for the default control notification event or for any applicable Windows message.  

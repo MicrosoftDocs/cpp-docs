@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Clipboard: Using the OLE Clipboard Mechanism
 OLE uses standard formats and some OLE-specific formats for transferring data through the Clipboard.  

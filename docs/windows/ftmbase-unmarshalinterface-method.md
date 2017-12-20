@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::UnmarshalInterface Method
 Initializes a newly created proxy and returns an interface pointer to that proxy.  

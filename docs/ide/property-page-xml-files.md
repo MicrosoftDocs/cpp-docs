@@ -14,6 +14,7 @@ caps.latest.revision: 1
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 
 # Property Page XML rule files

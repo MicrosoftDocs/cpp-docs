@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # slice_array Class
 An internal, auxiliary template class that supports slice objects by providing operations between subset arrays defined by the slice of a valarray.  

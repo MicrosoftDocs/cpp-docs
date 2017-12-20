@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::UnregisterCOMObject Method
 Unregisters one or more COM objects, which prevents other applications from connecting to them.  

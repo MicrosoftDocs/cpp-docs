@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoWorkspaceInfo Structure
 The `CDaoWorkspaceInfo` structure contains information about a workspace defined for data access objects (DAO) database access.  

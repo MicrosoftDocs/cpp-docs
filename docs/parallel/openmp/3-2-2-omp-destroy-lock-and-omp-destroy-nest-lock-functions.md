@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.2.2 omp_destroy_lock and omp_destroy_nest_lock Functions
 These functions ensure that the pointed to lock variable *lock* is uninitialized. The format is as follows:  

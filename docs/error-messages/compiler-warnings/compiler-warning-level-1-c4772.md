@@ -10,6 +10,7 @@ ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4772
 

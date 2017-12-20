@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Functions
 The SafeInt library provides several functions that you can use without creating an instance of the [SafeInt Class](../windows/safeint-class.md). If you want to protect a single mathematical operation from integer overflow, you can use these functions. If you want to protect multiple mathematical operations, you should create `SafeInt` objects. It is more efficient to create `SafeInt` objects than to use these functions multiple times.  

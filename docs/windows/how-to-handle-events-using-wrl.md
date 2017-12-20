@@ -13,6 +13,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Handle Events Using WRL
 This document shows how to use the Windows Runtime C++ Template Library (WRL)to subscribe to and handle the events of a Windows Runtime object.  

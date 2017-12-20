@@ -14,6 +14,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Variable Argument Lists (...) (C++/CLI)
 This example shows how you can use the `...` syntax in Visual C++ to implement functions that have a variable number of arguments.  

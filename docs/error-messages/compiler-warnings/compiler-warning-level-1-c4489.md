@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4489
 'specifier' : not allowed on interface method 'method'; override specifiers are only allowed on ref class and value class methods  

@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC Library Versions
 This article provides information on available versions of the Microsoft Foundation Class (MFC) Library. Topics covered include:  

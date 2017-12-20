@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # BITMAPINFO Structure
 The `BITMAPINFO` structure defines the dimensions and color information for a Windows device-independent bitmap (DIB).  

@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # raw_storage_iterator Class
 An adaptor class that is provided to enable algorithms to store their results into uninitialized memory.  

@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # num_get Class
 A template class that describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to numeric values.  

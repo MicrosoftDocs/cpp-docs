@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing the Magnification Factor (Image Editor for Icons)
 By default, the Image editor displays the view in the left pane at actual size and the view in the right pane at 6 times actual size. The magnification factor (seen in the status bar at the bottom of the workspace) is the ratio between the actual size of the image and the displayed size. The default factor is 6 and the range is from 1 to 10.  

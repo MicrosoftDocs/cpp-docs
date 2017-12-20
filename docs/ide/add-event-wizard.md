@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Add Event Wizard
 This wizard adds an event to an MFC ActiveX control project. You can specify your own event, you can customize a typically stock event, or you can select from a list of stock events.  

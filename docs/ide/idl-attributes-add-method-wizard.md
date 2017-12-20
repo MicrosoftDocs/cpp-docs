@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IDL Attributes, Add Method Wizard
 Use this page of the Add Method Wizard to specify any interface definition language (IDL) settings for the method.  

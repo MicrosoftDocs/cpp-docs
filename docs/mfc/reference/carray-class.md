@@ -15,6 +15,7 @@ caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CArray Class
 Supports arrays that are like C arrays, but can dynamically reduce and grow as necessary.  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CVTRES Fatal Error CVT1100
 duplicate resource — type:type, name:name, language:language, flags:flags, size:size  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # integer_sequence Class
 Represents an integer sequence. Can be used to deduce and expand parameter packs in variadic types such as std::tuple\<T...> that are passed as arguments to a function.  

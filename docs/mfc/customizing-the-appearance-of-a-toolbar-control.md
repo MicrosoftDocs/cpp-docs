@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Customizing the Appearance of a Toolbar Control
 Class `CToolBarCtrl` provides many styles that affect the appearance (and, occasionally, the behavior) of the toolbar object. Modify the toolbar object by setting the `dwCtrlStyle` parameter of the `CToolBarCtrl::Create` (or `CToolBar::CreateEx`) member function, when you first create the toolbar control.  

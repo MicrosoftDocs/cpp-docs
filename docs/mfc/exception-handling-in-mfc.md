@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Exception Handling in MFC
 This article explains the exception-handling mechanisms available in MFC. Two mechanisms are available:  

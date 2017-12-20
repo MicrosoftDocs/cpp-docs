@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2664
 'function' : cannot convert argument n from 'type1' to 'type2'  

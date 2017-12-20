@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CStringArray Class
 Supports arrays of [CString](../../atl-mfc-shared/using-cstring.md) objects.  

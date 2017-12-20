@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Document and View Classes Created by the MFC Application Wizard
 The MFC Application Wizard gives you a head start on your program development by creating skeletal document and view classes for you. You can then [map commands and messages to these classes](../mfc/reference/mapping-messages-to-functions.md) and use the Visual C++ source code editor to write their member functions.  

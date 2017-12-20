@@ -12,6 +12,7 @@ ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C. OpenMP C and C++ Grammar
   

@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ostream_iterator Class
 The template class ostream_iterator describes an output iterator object that writes successive elements onto the output stream with the extraction **operator <<**.  

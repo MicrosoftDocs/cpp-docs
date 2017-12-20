@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Header Control Examples
 For examples of header controls, see the [Header Controls](http://msdn.microsoft.com/library/windows/desktop/bb775238) in the Windows SDK.  

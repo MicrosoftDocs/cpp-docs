@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_error_code_enum Class
 Represents a type predicate that tests for the [error_code](../standard-library/error-code-class.md) enumeration.  

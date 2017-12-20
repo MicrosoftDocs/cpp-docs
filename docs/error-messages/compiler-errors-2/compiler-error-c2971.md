@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2971
 'class' : template parameter 'param' : 'arg' : a local variable cannot be used as a non-type argument  

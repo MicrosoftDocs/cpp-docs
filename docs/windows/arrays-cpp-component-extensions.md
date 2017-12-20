@@ -15,6 +15,7 @@ caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Arrays (C++ Component Extensions)
 The `Platform::Array<T>` type in C++/CX, or the `array` keyword in C++/CLI, declares an array of a specified type and initial value.  

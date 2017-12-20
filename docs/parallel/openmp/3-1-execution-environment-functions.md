@@ -13,6 +13,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.1 Execution Environment Functions
 The functions described in this section affect and monitor threads, processors, and the parallel environment:  

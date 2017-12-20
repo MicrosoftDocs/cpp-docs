@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Accessing File Status
 `CFile` also supports getting file status, including whether the file exists, creation and modification dates and times, logical size, and path.  

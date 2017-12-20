@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::condition", "std::condition_variable::condition_variable", "std::condition_variable::native_handle", "std::condition_variable::notify_all", "std::condition_variable::notify_one", "std::condition_variable::wait", "std::condition_variable::wait_for", "std::condition_variable::wait_until"]
+ms.workload: ["cplusplus"]
 ---
 # condition_variable Class
 Use the `condition_variable` class to wait for an event when you have a `mutex` of type `unique_lock<mutex>`. Objects of this type may have better performance than objects of type [condition_variable_any<unique_lock\<mutex>>](../standard-library/condition-variable-any-class.md).  

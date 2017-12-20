@@ -11,6 +11,7 @@ ms.assetid: 607400eb-4180-4892-817f-eedfa628af61
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1211
 

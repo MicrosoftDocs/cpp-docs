@@ -14,6 +14,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying Your Program (C++)
 Now that you've created your application by completing the earlier related walkthroughs, which are listed in [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), the last step is to create an installer so that other users can install the program on their computers. To do this, you'll add a new project to your existing solution. The output of this new project is a setup.exe file that will install your app on another computer.  

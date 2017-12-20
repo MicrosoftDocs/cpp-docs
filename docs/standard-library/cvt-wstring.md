@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;cvt/wstring&gt;
 The header `<cvt/wstring>` in previous versions of Visual Studio defined the template class [wstring_convert Class](../standard-library/wstring-convert-class.md) in the stdext::cvt namespace. The header is maintained for backward compatibility. New code should use the version of the class that is defined in [\<locale>](../standard-library/locale.md) in the `std` namespace  

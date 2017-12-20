@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Example of Active Document Containment: Office Binder
 The Microsoft Office Binder is an example of an active document container. An Office Binder includes two primary panes, as containers typically do. The left pane contains icons that correspond to active documents in the Binder. Each document is called a *section* within the Binder. For example, a Binder can contain Word documents, PowerPoint files, Excel spreadsheets, and so on.  

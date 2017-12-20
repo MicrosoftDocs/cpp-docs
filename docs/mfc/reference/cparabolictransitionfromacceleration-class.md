@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CParabolicTransitionFromAcceleration Class
 Encapsulates a parabolic-acceleration transition.  

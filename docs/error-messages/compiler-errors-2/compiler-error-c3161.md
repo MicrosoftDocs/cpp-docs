@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3161
 'interface' : nesting class, struct, union or interface in an interface is illegal; nesting interface in a class, struct or union is illegal  

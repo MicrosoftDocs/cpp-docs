@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # call Class
 A `call` messaging block is a multi-source, ordered `target_block` that invokes a specified function when receiving a message.  

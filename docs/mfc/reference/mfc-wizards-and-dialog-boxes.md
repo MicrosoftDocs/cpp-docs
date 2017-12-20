@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC Wizards and Dialog Boxes
 The Microsoft Foundation Class (MFC) wizards generate boilerplate code for various kinds of components and objects. You can run the wizards by opening the shortcut menu for a project in **Solution Explorer** and choosing **Add**, **Class**.  

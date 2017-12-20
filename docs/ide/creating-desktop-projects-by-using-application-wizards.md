@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating Desktop Projects By Using Application Wizards
 Every type of Visual C++ project has an application wizard that helps you generate new projects quickly and easily, modeled from the project template.  To open an application wizard, use the **New Project** dialog box to specify project properties such as the name of the project, or the directory and solution where your project will reside.  

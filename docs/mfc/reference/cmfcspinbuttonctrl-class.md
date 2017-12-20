@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCSpinButtonCtrl Class
 The `CMFCSpinButtonCtrl` class supports a visual manager that draws a spin button control.  

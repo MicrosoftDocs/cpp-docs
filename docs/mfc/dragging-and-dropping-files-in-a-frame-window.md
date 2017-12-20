@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Dragging and Dropping Files in a Frame Window
 The frame window manages a relationship with File Explorer or File Manager.  

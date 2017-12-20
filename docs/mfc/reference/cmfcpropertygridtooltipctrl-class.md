@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridToolTipCtrl Class
 Implements a tooltip control that the [CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md) uses to display tooltips.  

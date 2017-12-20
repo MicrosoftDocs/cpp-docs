@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding ATL Support to Your MFC Project
 If you have already created an MFC-based application, then you can add support for the Active Template Library (ATL) easily by running the Add ATL Support to MFC Project Wizard.  

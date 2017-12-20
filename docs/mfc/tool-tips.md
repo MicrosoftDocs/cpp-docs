@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Tool Tips
 The procedures are distinct for adding tool tips to controls contained in windows derived from MFC class [CFrameWnd](../mfc/reference/cframewnd-class.md) and windows not derived from `CFrameWnd`.  

@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ISchedulerProxy Structure
 The interface by which schedulers communicate with the Concurrency Runtime's Resource Manager to negotiate resource allocation.  

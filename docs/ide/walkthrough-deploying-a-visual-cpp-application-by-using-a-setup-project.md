@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using a Setup Project
 Describes how to use a setup project to deploy a Visual C++ application.  

@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Modifying the Layout Grid
 When you are placing or arranging controls in a dialog box, you can use the layout grid for more precise positioning. When the grid is turned on, controls appear to "snap to" the dotted lines of the grid as if magnetized. You can turn this "snap to grid" feature on and off and change the size of the layout grid cells.  

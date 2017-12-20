@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How the Framework Calls a Handler
 The following topics first examine how the framework routes commands, then examine how other messages and control notifications are sent to windows:  

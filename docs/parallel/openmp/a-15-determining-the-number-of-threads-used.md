@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.15   Determining the Number of Threads Used
 Consider the following incorrect example (for [Section 3.1.2](../../parallel/openmp/3-1-2-omp-get-num-threads-function.md) on page 37):  

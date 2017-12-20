@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # piecewise_linear_distribution Class
 Generates a piecewise linear distribution that has varying-width intervals with linearly varying probability in each interval.  

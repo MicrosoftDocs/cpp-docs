@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cancellation_token_source Class
 The `cancellation_token_source` class represents the ability to cancel some cancelable operation.  

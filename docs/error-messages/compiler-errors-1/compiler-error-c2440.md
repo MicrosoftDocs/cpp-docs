@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2440
 'conversion' : cannot convert from 'type1' to 'type2'  

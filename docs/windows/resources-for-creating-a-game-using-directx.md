@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Resources for Creating a Game Using DirectX
 To create the best desktop games, use Visual C++ and DirectX together.  

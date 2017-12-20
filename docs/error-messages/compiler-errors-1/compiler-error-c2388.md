@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2388
 'symbol' : a symbol cannot be declared with both __declspec(appdomain) and \__declspec(process)  
