@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating a Makefile Project
 If you have a project that you build from the command line with a makefile, then the Visual Studio development environment will not recognize your project. To open and build your project using [!INCLUDE[vsUltShort](../ide/includes/vsultshort_md.md)], Visual Studio Professional, or Visual Studio Express for Windows Desktop, first create an empty project by selecting the MakeFile project template. You can then use this project to build your project from the Visual Studio development environment.  

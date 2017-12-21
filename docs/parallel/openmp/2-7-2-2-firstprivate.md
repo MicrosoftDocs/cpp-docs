@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.7.2.2 firstprivate
 The **firstprivate** clause provides a superset of the functionality provided by the **private** clause. The syntax of the **firstprivate** clause is as follows:  

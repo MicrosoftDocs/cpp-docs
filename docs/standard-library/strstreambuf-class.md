@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strstreambuf Class
 Describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a `char` array object.  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # override Specifier
 You can use the `override` keyword to designate member functions that override a virtual function in a base class.  

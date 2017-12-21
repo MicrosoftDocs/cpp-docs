@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .IF
 Generates code that tests `condition1` (for example, AX > 7) and executes the *statements* if that condition is true.  

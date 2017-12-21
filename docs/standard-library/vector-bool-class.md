@@ -15,6 +15,7 @@ caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # vector&lt;bool&gt; Class
 The `vector<bool>` class is a partial specialization of [vector](../standard-library/vector-class.md) for elements of type `bool`. It has an allocator for the underlying type that's used by the specialization, which provides space optimization by storing one `bool` value per bit.  

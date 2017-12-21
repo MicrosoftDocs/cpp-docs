@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IExecutionContext Structure
 An interface to an execution context which can run on a given virtual processor and be cooperatively context switched.  

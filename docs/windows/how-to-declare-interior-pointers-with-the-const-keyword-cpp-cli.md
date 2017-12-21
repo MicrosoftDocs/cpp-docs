@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Declare Interior Pointers with the const Keyword (C++/CLI)
 The following sample shows how to use `const` in the declaration of an interior pointer.  

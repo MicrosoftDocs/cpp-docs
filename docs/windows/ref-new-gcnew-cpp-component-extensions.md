@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ref new, gcnew  (C++ Component Extensions)
 The `ref new` aggregate keyword allocates an instance of a type that is garbage collected when the object becomes inaccessible, and that returns a handle ([^](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)) to the allocated object.  

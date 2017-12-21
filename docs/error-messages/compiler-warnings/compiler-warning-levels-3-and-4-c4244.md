@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (levels 3 and 4) C4244
 'conversion' conversion from 'type1' to 'type2', possible loss of data  

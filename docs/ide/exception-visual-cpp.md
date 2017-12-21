@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;exception&gt; (Visual C++)
 The \<exception> tag lets you specify which exceptions can be thrown. This tag is applied to a method definition.  

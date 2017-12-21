@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create CLR Console Applications (C++/CLI)
 You can use the Console Application template to create a console app project that already has essential project references and files.  

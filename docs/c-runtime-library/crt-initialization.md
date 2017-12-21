@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CRT Initialization
 This topic describes how the CRT initializes global states in native code.  

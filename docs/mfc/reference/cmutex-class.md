@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMutex Class
 Represents a "mutex" — a synchronization object that allows one thread mutually exclusive access to a resource.  

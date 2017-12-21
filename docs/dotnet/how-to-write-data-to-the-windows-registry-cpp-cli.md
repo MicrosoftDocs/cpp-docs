@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Write Data to the Windows Registry (C++/CLI)
 The following code example uses the <xref:Microsoft.Win32.Registry.CurrentUser> key to create a writable instance of the <xref:Microsoft.Win32.RegistryKey> class corresponding to the **Software** key. The <xref:Microsoft.Win32.RegistryKey.CreateSubKey%2A> method is then used to create a new key and add to key/value pairs.  

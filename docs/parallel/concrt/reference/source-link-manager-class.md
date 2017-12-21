@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # source_link_manager Class
 The `source_link_manager` object manages messaging block network links to `ISource` blocks.  

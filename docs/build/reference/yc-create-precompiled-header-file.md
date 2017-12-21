@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Yc (Create Precompiled Header File)
 Instructs the compiler to create a precompiled header (.pch) file that represents the state of compilation at a certain point.  

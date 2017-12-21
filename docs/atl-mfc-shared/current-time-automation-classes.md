@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Current Time: Automation Classes
 The following procedure shows how to create a `COleDateTime` object and initialize it with the current time.  

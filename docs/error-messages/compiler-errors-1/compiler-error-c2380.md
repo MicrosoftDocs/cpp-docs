@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2380
 type(s) preceding 'identifier' (constructor with return type, or illegal redefinition of current class-name?)  

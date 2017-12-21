@@ -17,6 +17,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # or
 An alternative to the &#124;&#124; operator.  

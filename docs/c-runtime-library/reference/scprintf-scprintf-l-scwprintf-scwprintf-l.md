@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _scprintf, _scprintf_l, _scwprintf, _scwprintf_l
 Returns the number of characters in the formatted string.  

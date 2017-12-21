@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAtlPreviewCtrlImpl Class
 This class is an ATL implementation of a window that is placed on a host window provided by the Shell  for Rich Preview.  

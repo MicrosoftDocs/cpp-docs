@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::mutex [C++]", "std::mutex [C++], mutex", "std::mutex [C++], lock", "std::mutex [C++], native_handle", "std::mutex [C++], try_lock", "std::mutex [C++], unlock"]
+ms.workload: ["cplusplus"]
 ---
 # mutex Class (C++ Standard Library)
 Represents a *mutex type*. Objects of this type can be used to enforce mutual exclusion within a program.  

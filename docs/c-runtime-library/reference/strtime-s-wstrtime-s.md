@@ -18,6 +18,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _strtime_s, _wstrtime_s
 Copy the current time to a buffer. These are versions of [_strtime, _wstrtime](../../c-runtime-library/reference/strtime-wstrtime.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

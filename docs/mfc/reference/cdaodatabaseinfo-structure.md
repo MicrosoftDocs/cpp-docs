@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoDatabaseInfo Structure
 The `CDaoDatabaseInfo` structure contains information about a database object defined for data access objects (DAO).  

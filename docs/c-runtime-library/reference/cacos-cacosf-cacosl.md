@@ -18,6 +18,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cacos, cacosf, cacosl
 Retrieves the arccosine of a complex number, with branch cuts outside the interval [-1, +1] along the real axis.  

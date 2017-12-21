@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Build Registration-Free COM Components
 Registration-free COM components are COM components that have manifests built into the DLLs.  

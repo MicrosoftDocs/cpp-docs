@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Regular Expressions to Rearrange Data (C++/CLI)
 The following code example demonstrates how the .NET Framework regular expression support can be used to rearrange, or reformat data. The following code example uses the <xref:System.Text.RegularExpressions.Regex> and <xref:System.Text.RegularExpressions.Match> classes to extract first and last names from a string and then display these name elements in reverse order.  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # scheduler_worker_creation_error Class
 This class describes an exception thrown because of a failure to create a worker execution context in the Concurrency Runtime.  

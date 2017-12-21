@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _set_doserrno
 Sets the value of the [_doserrno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) global variable.  

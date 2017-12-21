@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating an ATL Project
 The easiest way to create an ATL project is to use the ATL Project Wizard, located in the Win32 Projects folder of the **New Project dialog box**.  

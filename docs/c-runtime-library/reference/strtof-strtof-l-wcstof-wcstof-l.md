@@ -18,6 +18,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strtof, _strtof_l, wcstof, _wcstof_l
 Converts strings to a single-precision floating-point value.  

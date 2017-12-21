@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Commonly Overridden Member Functions
 The following table lists the most likely member functions to override in your `CDialog`-derived class.  

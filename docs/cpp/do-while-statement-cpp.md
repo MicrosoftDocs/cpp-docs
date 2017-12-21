@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # do-while Statement (C++)
 Executes a *statement* repeatedly until the specified termination condition (the *expression*) evaluates to zero.  

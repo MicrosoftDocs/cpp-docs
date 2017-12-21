@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Further Reading About the MFC ODBC Classes
 The following topics further explain the concepts and techniques introduced in this topic:  

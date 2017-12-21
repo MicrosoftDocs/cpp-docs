@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ARM Intrinsics
 The Visual C++ compiler makes the following intrinsics available on the ARM architecture. For more information about ARM, see the [ARM Architecture Reference Manuals](http://go.microsoft.com/fwlink/p/?LinkId=522049) and [ARM Assembler Tools Guide](http://go.microsoft.com/fwlink/p/?LinkId=246102) on the ARM Infocenter website.  

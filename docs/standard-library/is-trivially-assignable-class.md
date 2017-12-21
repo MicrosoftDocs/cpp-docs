@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_trivially_assignable Class
 Tests whether a value of `From` type can be trivially assigned to `To` type  

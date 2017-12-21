@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _mbbtombc, _mbbtombc_l
 Converts a single-byte multibyte character to a corresponding double-byte multibyte character.  

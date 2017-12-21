@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # REAL8
 Allocates and optionally initializes a double-precision (8-byte) floating-point number for each *initializer*.  

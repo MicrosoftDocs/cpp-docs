@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ordered_message_processor Class
 An `ordered_message_processor` is a `message_processor` that allows message blocks to process messages in the order they were received.  

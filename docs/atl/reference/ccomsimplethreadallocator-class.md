@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComSimpleThreadAllocator Class
 This class manages thread selection for the class `CComAutoThreadModule`.  

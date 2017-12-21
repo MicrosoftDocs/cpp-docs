@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # sync_per_container Class
 Describes a [synchronization filter](../standard-library/allocators-header.md) that provides a separate cache object for each allocator object.  

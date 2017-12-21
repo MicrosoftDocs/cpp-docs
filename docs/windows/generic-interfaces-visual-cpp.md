@@ -14,6 +14,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Generic Interfaces (Visual C++)
 The restrictions that apply to type parameters on classes are the same as those that apply to type parameters on interfaces (see [Generic Classes (C++/CLI)](../windows/generic-classes-cpp-cli.md)).  

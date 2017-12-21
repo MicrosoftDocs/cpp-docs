@@ -18,6 +18,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _mktemp_s, _wmktemp_s
 Creates a unique file name. These are versions of [_mktemp, _wmktemp](../../c-runtime-library/reference/mktemp-wmktemp.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

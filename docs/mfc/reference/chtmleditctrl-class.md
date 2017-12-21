@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CHtmlEditCtrl Class
 Provides the functionality of the WebBrowser ActiveX control in an MFC window.  

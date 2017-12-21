@@ -18,6 +18,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _getdcwd_nolock, _wgetdcwd_nolock
 Gets the full path of the current working directory on the specified drive.  

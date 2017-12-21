@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ___setlc_active_func, ___unguarded_readlc_active_add_func
 OBSOLETE. The CRT exports these internal functions only to preserve binary compatibility.  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL/MFC Concepts
 This section provides conceptual and task-based topics to help you program using the classes shared between Active Template Library (ATL) and Microsoft Foundation Class (MFC) Library.  

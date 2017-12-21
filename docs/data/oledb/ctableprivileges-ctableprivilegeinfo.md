@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CTablePrivileges, CTablePrivilegeInfo
 Call the typedef class **CTablePrivileges** to implement its parameter class **CTablePrivilegeInfo**.  

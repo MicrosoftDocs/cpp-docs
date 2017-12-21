@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # num_put Class
 A template class that describes an object that can serve as a locale facet to control conversions of numeric values to sequences of type `CharType`.  

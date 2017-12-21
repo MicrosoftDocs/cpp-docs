@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:strictStrings (Disable string literal type conversion)
 When specified, the compiler requires strict `const`-qualification conformance for pointers initialized by using string literals.  

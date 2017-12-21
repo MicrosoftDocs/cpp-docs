@@ -18,6 +18,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # wctob
 Determines if a wide character corresponds to a multibyte character and returns its multibyte character representation.  

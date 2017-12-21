@@ -13,6 +13,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Parallel Programming in Visual C++
 Visual C++ provides the following technologies to help you create multi-threaded and parallel programs that take advantage of multiple cores and use the GPU for general purpose programming.  

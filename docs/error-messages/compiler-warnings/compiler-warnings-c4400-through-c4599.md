@@ -10,6 +10,7 @@ ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings C4400 Through C4599
 

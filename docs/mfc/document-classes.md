@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Document Classes
 Document class objects, created by document-template objects, manage the application's data. You will derive a class for your documents from one of these classes.  

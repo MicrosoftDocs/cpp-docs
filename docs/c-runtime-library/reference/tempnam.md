@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # tempnam
 This POSIX function is deprecated. Use the ISO C++ conformant [_tempnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) instead.

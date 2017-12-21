@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # mem_fun_ref_t Class
 An adapter class that allows a **non_const** member function that takes no arguments to be called as a unary function object when initialized with a reference argument.  

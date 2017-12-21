@@ -13,6 +13,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;initializer_list&gt;
 Defines the container template class `initializer_list` and several supporting templates.  

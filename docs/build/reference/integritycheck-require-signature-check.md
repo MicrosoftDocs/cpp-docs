@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /INTEGRITYCHECK (Require Signature Check)
 Specifies that the digital signature of the binary image must be checked at load time.  

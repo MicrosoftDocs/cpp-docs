@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # General Property Page (File)
 When a file is selected in **Solution Explorer**, the **General** property page under the **Configuration Properties** node contains the following properties:  

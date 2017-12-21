@@ -13,6 +13,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Structures, Unions, Enumerations, and Bit Fields
 -   [Improper Access to a Union](../c-language/improper-access-to-a-union.md)  

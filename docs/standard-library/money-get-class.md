@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # money_get Class
 The template class describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to monetary values.  

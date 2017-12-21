@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /AI (Specify Metadata Directories)
 Specifies a directory that the compiler will search to resolve file references passed to the `#using` directive.  

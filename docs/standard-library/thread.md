@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;thread&gt;
 Include the standard header \<thread> to define the class `thread` and various supporting functions.  

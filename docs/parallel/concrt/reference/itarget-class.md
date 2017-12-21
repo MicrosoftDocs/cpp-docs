@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ITarget Class
 The `ITarget` class is the interface for all target blocks. Target blocks consume messages offered to them by `ISource` blocks.  

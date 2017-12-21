@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: How RFX Works
 This topic explains the RFX process. This is an advanced topic covering:  

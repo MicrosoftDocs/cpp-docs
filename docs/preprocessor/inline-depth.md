@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # inline_depth
 Specifies the inline heuristic search depth, such that, no function will be inlined if it is at a depth (in the call graph) greater than `n`.  

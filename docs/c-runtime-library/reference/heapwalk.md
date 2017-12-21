@@ -18,6 +18,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _heapwalk
 Traverses the heap and returns information about the next entry.  

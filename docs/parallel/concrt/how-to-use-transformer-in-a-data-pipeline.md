@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Use transformer in a Data Pipeline
 This topic contains a basic example that shows how to use the [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) class in a data pipeline. For a more complete example that uses a data pipeline to perform image processing, see [Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).  

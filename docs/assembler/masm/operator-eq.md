@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator EQ
 Returns true (-1) if *expression1* equals *expression2*, or returns false (0) if it does not.  

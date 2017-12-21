@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _U_RECT Class
 This argument adapter class allows either `RECT` pointers or references to be passed to a function that is implemented in terms of pointers.  

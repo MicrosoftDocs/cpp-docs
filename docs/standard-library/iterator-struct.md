@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # iterator Struct
 An empty base struct used to ensure that a user-defined iterator class works properly with **iterator_trait**s.  

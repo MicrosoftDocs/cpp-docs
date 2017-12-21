@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMyProviderSession (MyProviderSess.H)
 MyProviderSess.H contains the declaration and implementation for the OLE DB session object. The data source object creates the session object and represents a conversation between a consumer and provider. Several simultaneous sessions can be open for one data source. The inheritance list for `CMyProviderSession` follows:  

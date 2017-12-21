@@ -11,6 +11,7 @@ ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 
 # Convert to Raw String Literal

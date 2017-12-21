@@ -18,6 +18,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _lfind_s
 Performs a linear search for the specified key. A version of [_lfind](../../c-runtime-library/reference/lfind.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

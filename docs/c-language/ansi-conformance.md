@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ANSI Conformance
 Microsoft C conforms to the standard for the C language as set forth in the 9899:1990 edition of the ANSI C standard.  

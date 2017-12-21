@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _dup, _dup2
 Creates a second file descriptor for an open file (`_dup`), or reassigns a file descriptor (`_dup2`).  

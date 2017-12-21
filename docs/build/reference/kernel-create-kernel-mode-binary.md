@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /kernel (Create Kernel Mode Binary)
 Creates a binary that can be executed in the Windows kernel.  

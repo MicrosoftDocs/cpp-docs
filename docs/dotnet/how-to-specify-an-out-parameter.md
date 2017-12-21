@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Specify an out Parameter
 This sample shows how to specify that a function parameter is an out parameter and how to call that function from a C# program.  

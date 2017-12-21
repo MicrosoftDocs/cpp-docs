@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # wstring_convert Class
 The template class `wstring_convert` performs conversions between a wide string and a byte string.  

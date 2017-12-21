@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # licensed
 Indicates that the COM object to which it applies is licensed, and must be instantiated using **IClassFactory2**.  

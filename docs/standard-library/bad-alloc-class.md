@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # bad_alloc Class
 The class describes an exception thrown to indicate that an allocation request did not succeed.  

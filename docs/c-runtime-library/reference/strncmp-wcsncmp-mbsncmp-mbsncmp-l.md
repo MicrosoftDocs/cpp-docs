@@ -18,6 +18,7 @@ caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
 Compares up to the specified count of characters of two strings.  

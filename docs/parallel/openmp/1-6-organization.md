@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 1.6 Organization
 -   Run-time library functions ([see Chapter 3](../../parallel/openmp/3-run-time-library-functions.md)).  

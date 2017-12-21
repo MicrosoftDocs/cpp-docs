@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Graphics Operations (C++/CLI)
 Demonstrates image manipulation using the [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)].  

@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass Class
 Represents a WinRT or COM class that inherits the specified interfaces and provides the specified Windows Runtime, classic COM, and weak reference support.  

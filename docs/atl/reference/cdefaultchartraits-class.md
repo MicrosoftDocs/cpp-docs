@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDefaultCharTraits Class
 This class provides two static functions for converting characters between uppercase and lowercase.  

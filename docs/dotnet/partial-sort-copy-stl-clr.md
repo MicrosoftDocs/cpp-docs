@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # partial_sort_copy (STL/CLR)
 Copies elements from a source range into a destination range where the source elements are ordered by either less than or another specified binary predicate.  

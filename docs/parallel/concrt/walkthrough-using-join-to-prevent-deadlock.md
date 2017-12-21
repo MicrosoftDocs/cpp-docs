@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using join to Prevent Deadlock
 This topic uses the dining philosophers problem to illustrate how to use the [concurrency::join](../../parallel/concrt/reference/join-class.md) class to prevent deadlock in your application. In a software application, *deadlock* occurs when two or more processes each hold a resource and mutually wait for another process to release some other resource.  

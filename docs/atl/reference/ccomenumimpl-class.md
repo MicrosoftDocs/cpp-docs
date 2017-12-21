@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComEnumImpl Class
 This class provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array.  

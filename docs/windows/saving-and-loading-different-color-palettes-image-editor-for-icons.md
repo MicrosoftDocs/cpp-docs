@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Saving and Loading Different Color Palettes (Image Editor for Icons)
 You can save and load a Colors palette that contains [customized colors](../windows/customizing-or-changing-colors-image-editor-for-icons.md). (By default, the Colors palette most recently used is automatically loaded when you start Visual Studio.)  

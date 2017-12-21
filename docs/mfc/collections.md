@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Collections
 The Microsoft Foundation Class Library provides collection classes to manage groups of objects. These classes are of two types:  

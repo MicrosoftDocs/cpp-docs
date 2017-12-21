@@ -13,6 +13,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Raw Pseudo Operations
 This topic lists the pseudo operations.  

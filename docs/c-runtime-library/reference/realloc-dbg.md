@@ -18,6 +18,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _realloc_dbg
 Reallocates a specified block of memory in the heap by moving and/or resizing the block (debug version only).  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Command Line Property Pages
 Most property page folders contain a **Command Line** property page. This page displays which properties are set in the folder. The **Command Line** property page also contains an **Additional Options** box where you can specify properties that are valid for the tool but for which there is no property in the folder.  

@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Casting Integers to Floating-Point Values
 **ANSI 3.2.1.3** The direction of truncation when an integral number is converted to a floating-point number that cannot exactly represent the original value  

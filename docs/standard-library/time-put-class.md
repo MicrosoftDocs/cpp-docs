@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # time_put Class
 The template class describes an object that can serve as a locale facet to control conversions of time values to sequences of type `CharType`.  

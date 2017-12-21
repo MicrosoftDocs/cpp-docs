@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # #include Directive (C/C++)
 Tells the preprocessor to treat the contents of a specified file as if they appear in the source program at the point where the directive appears.  

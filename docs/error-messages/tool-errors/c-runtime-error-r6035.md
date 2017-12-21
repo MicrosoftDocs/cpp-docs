@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6035
 Microsoft Visual C++ Runtime Library, Error R6035 - A module in this application is initializing the module's global security cookie while a function relying on that security cookie is active.  Call __security_init_cookie earlier.  

@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IVirtualProcessorRoot Structure
 An abstraction for a hardware thread on which a thread proxy can execute.  

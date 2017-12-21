@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Message Maps (MFC)
 This section of the reference lists all [message mapping macros](../../mfc/reference/message-map-macros-mfc.md) and all [CWnd](../../mfc/reference/cwnd-class.md) message-map entries along with the corresponding member function prototypes:  

@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1237
 during code generation, compiler introduced reference to symbol 'symbol' defined in module 'module' compiled with /GL  

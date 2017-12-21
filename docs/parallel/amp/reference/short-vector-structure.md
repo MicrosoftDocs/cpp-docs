@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # short_vector Structure
 short_vector provides metaprogramming definitions which are useful for programming short vectors generically.  

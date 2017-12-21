@@ -13,6 +13,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::CopyTo Method
 Copies the current HString object to an HSTRING object.  

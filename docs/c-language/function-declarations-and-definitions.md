@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Function Declarations and Definitions
 Function prototypes establish the name of the function, its return type, and the type and number of its formal parameters. A function definition includes the function body.  

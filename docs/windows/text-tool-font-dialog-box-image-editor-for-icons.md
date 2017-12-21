@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Text Tool Font Dialog Box (Image Editor for Icons)
 Specifies font settings when you use the [Text Tool Dialog Box](../windows/text-tool-dialog-box-image-editor-for-icons.md) of the [Image Editor](../windows/image-editor-for-icons.md).  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Explicit Specialization of Function Templates
 With a function template, you can define special behavior for a specific type by providing an explicit specialization (override) of the function template for that type. For example:  

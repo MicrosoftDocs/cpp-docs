@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ultoa
 This POSIX function is deprecated. Use the ISO C++ conformant [_ultoa](../../c-runtime-library/reference/ultoa-ultow.md) or security-enhanced [_ultoa_s](../../c-runtime-library/reference/ultoa-s-ultow-s.md) instead.

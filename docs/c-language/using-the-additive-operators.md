@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using the Additive Operators
 The following examples, which illustrate the addition and subtraction operators, use these declarations:  

@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # x86 Intrinsics List
 This document lists intrinsics that the Visual C++ compiler supports when x86 is targeted.  

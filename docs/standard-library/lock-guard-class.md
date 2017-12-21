@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # lock_guard Class
 Represents a template that can be instantiated to create an object whose destructor unlocks a `mutex`.  

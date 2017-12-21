@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # const_cast Operator
 Removes the **const**, `volatile`, and **__unaligned** attribute(s) from a class.  

@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ltoa
 This POSIX function is deprecated. Use the ISO C++ conformant [_ltoa](../../c-runtime-library/reference/ltoa-ltow.md) or security-enhanced [_ltoa_s](../../c-runtime-library/reference/ltoa-s-ltow-s.md) instead.

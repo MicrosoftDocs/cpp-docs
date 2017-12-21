@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # putw
 This POSIX function is deprecated. Use the ISO C++ conformant [_putw](../../c-runtime-library/reference/putw.md) instead.

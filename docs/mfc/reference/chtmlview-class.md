@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CHtmlView Class
 Provides the functionality of the WebBrowser control within the context of MFC's document/view architecture.  

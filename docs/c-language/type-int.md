@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Type int
 The size of a signed or unsigned `int` item is the standard size of an integer on a particular machine. For example, in 16-bit operating systems, the `int` type is usually 16 bits, or 2 bytes. In 32-bit operating systems, the `int` type is usually 32 bits, or 4 bytes. Thus, the `int` type is equivalent to either the `short int` or the **long int** type, and the `unsigned int` type is equivalent to either the **unsigned short** or the `unsigned long` type, depending on the target environment. The `int` types all represent signed values unless specified otherwise.  

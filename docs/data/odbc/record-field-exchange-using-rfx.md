@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Using RFX
 This topic explains what you do to use RFX in relation to what the framework does.  

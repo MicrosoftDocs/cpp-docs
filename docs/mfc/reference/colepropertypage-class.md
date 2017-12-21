@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COlePropertyPage Class
 Used to display the properties of a custom control in a graphical interface, similar to a dialog box.  

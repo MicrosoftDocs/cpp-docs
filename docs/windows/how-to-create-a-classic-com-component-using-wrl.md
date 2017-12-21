@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Create a Classic COM Component Using WRL
 You can use the Windows Runtime C++ Template Library (WRL)to create basic classic COM components for use in desktop apps, in addition to using it for [!INCLUDE[win8_appstore_long](../build/reference/includes/win8_appstore_long_md.md)] apps. For the creation of COM components, the Windows Runtime C++ Template Library may require less code than the ATL. For information about the subset of COM that the Windows Runtime C++ Template Library supports, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumeratorAccessor::m_nType
 A variable indicating whether the row describes a data source or an enumerator.  

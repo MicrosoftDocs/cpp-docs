@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN050: MFC/OLE Common Dialogs (MFCUIx32)
 This note originally covered some issues and the future of the OLE common dialogs provided and used by MFC. The OLE common dialogs are now provided as a component built-in to the system (OLEDLG.DLL) and are fully documented in the product documentation.  

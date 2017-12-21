@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # exception Class
 The class serves as the base class for all exceptions thrown by certain expressions and by the C++ Standard Library.  

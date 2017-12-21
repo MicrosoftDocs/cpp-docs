@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Arrays (C++)
 An array is a collection of like objects. The simplest case of an array is a vector, which may be declared by the following sequence:  

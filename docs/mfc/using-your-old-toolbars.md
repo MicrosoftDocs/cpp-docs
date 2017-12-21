@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using Your Old Toolbars
 If you have used previous versions of Visual C++ to create customized toolbars, the new implementation of class [CToolBar](../mfc/reference/ctoolbar-class.md) could cause you problems. So that you don't have to give up your old toolbars to use the new functionality, the old implementation is still supported.  

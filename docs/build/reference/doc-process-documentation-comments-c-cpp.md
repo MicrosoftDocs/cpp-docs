@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /doc (Process Documentation Comments) (C/C++)
 Causes the compiler to process documentation comments in source code files and to create an .xdc file for each source code file that has documentation comments.  

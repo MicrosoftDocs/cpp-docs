@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtDbgReport, _CrtDbgReportW
 Generates a report with a debugging message and sends the report to three possible destinations (debug version only).  

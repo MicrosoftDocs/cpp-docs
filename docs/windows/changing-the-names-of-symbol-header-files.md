@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing the Names of Symbol Header Files
 Normally all symbol definitions are saved in Resource.h. However, you may need to change this include filename so that you can, for example, work with more than one resource file in the same directory.  

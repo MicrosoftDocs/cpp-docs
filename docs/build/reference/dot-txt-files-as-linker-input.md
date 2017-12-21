@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .Txt Files as Linker Input
 LINK expects various text files as additional input. The [command-file](../../build/reference/link-command-files.md) specifier (@) and the [Base Address](../../build/reference/base-base-address.md) (/BASE), [/DEF](../../build/reference/def-specify-module-definition-file.md), and [/ORDER](../../build/reference/order-put-functions-in-order.md) options all specify text files. These files can have any extension, not just .txt.  

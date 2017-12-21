@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3270
 'field': the FieldOffset attribute can only be used in the context of StructLayout(Explicit), in which case it is required  

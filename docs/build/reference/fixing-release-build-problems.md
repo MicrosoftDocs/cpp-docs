@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Fixing Release Build Problems
 If your code generates compile errors after switching from debug build to release build, there are some areas you should check.  

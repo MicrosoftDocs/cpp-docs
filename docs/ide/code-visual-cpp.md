@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;code&gt; (Visual C++)
 The \<code> tag gives you a way to indicate one or more lines as code.  

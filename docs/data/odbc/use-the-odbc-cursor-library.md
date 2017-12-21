@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Use the ODBC Cursor Library
 ODBC manages scrolling through recordsets through the Cursor Library. These topics explain how to work with the Cursor Library.  

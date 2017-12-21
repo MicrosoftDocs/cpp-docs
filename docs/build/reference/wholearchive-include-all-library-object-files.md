@@ -12,6 +12,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /WHOLEARCHIVE (Include All Library Object Files)
 Force the linker to include all object files in the static library in the linked executable.  

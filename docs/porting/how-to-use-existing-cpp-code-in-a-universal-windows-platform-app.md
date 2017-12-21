@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Use Existing C++ Code in a Universal Windows Platform App
 Perhaps the easiest way to get your desktop program running in the UWP environment is to use the Desktop Bridge technologies. These include the Desktop App Converter, which will package your existing application as a UWP app with no code changes required. For more information, see [Bring your desktop app to the Universal Windows Platform (UWP) with the Desktop Bridge](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-root).

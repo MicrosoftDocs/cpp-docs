@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 Write formatted output using a pointer to a list of arguments, with the ability to specify the order in which the arguments are used.  

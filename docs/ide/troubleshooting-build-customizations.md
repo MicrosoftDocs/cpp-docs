@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Troubleshooting Build Customizations
 If your custom build steps or events are not behaving as you expect, there are several things you can do to try to understand what is going wrong.  

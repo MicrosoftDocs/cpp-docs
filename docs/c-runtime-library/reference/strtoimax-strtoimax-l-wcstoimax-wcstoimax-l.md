@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l
 Converts a string to an integer value of the largest supported signed integer type.  

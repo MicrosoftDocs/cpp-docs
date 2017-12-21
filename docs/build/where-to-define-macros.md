@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Where to Define Macros
 Define macros in a command line, command file, makefile, or the Tools.ini file.  

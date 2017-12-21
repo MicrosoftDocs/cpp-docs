@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Application Settings, Makefile Project Wizard
 Provide the information for the project. The options you specify are reflected in the project's [property page](../ide/working-with-project-properties.md). Once you create the project, you can view and edit each of the following options in the **Nmake** page of the project's property page.  

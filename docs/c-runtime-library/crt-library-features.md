@@ -15,6 +15,7 @@ caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CRT Library Features
 This topic discusses the various .lib files that comprise the C run-time libraries as well as their associated compiler options and preprocessor directives.  

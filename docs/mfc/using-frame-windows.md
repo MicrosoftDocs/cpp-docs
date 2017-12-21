@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using Frame Windows
 The MFC framework creates document frame windows — and their views and documents — as part of its implementation of the New and Open commands on the File menu. Because the framework does most of the frame-window work for you, you play only a small role in creating, using, and destroying those windows. You can, however, explicitly create your own frame windows and child windows for special purposes.  

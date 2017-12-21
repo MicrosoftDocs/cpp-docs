@@ -14,6 +14,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Basic CString Operations
 This topic explains the following basic [CString](../atl-mfc-shared/reference/cstringt-class.md) operations:  

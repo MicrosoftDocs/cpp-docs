@@ -15,6 +15,7 @@ caps.latest.revision: 40
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /GS (Buffer Security Check)  
   

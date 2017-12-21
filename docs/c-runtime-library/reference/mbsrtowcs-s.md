@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # mbsrtowcs_s
 Convert a multibyte character string in the current locale to its wide character string representation. A version of [mbsrtowcs](../../c-runtime-library/reference/mbsrtowcs.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

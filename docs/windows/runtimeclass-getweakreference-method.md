@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::GetWeakReference Method
 Gets a pointer to the weak reference object for the current RuntimeClass object.  

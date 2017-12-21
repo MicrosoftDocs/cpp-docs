@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # getch
 This POSIX function is deprecated. Use the ISO C++ conformant [_getch](../../c-runtime-library/reference/getch-getwch.md) instead.  

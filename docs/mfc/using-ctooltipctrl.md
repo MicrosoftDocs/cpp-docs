@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CToolTipCtrl
 The [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) class encapsulates the functionality of a tool tip control, a small pop-up window that displays a single line of text describing the purpose of a tool in an application. A tool tip is hidden most of the time, appearing only when the user puts the cursor on a tool and leaves it there for approximately one-half second. The tool tip appears near the cursor and disappears when the user clicks a mouse button or moves the cursor off of the tool.  

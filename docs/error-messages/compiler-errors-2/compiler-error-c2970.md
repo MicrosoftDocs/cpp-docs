@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2970
 'class' : template parameter 'param' : 'arg' : an expression involving objects with internal linkage cannot be used as a non-type argument  

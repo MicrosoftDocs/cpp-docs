@@ -18,6 +18,7 @@ caps.latest.revision: 42
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # getenv_s, _wgetenv_s
 Gets a value from the current environment. These versions of [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

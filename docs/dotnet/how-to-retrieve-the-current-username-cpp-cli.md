@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Retrieve the Current Username (C++/CLI)
 The following code example demonstrates the retrieval of the current user name (the name of the user logged into Windows). The name is stored in the <xref:System.Environment.UserName%2A> string, which is defined in the <xref:System.Environment> namespace.  

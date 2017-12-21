@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Source Files and Source Programs
 A source program can be divided into one or more "source files," or "translation units." The input to the compiler is called a "translation unit."  

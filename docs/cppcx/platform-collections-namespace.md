@@ -7,17 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "collection/Platform::Collections"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Collections Namespace"
+f1_keywords: ["collection/Platform::Collections"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Collections Namespace"]
 ms.assetid: b5042864-5f22-40b7-b7a5-c0691f65cc47
 caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections Namespace
 The Platform::Collection namespace contains the `Map`, `MapView`, `Vector`, and `VectorView` classes. These classes are concrete implementations of the corresponding interfaces that are defined in the [Windows::Foundation::Collections](http://go.microsoft.com/fwlink/p/?LinkId=262645) namespace. The concrete collection types are not portable across the ABI (for example when a Javascript or C# program calls into a C++ component), but they are implicitly convertible to their corresponding interface types. For example, if you implement a public method that populates and returns a collection, then use [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) to implement the collection internally and use [Windows::Foundation::Collections::IVector](http://go.microsoft.com/fwlink/p/?LinkId=262410) as the return type. For more information, see [Collections](../cppcx/collections-c-cx.md) and [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md).  

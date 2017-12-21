@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MMWORD
 Used for 64-bit multimedia operands with MMX and SSE (XMM) instructions.  

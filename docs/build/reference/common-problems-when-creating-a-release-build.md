@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Common Problems When Creating a Release Build
 During development, you will usually build and test with a debug build of your project. If you then build your application for a release build, you may get an access violation.  

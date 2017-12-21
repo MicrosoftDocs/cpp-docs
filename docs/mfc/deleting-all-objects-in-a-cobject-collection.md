@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Deleting All Objects in a CObject Collection
 This article explains how to delete all objects in a collection (without deleting the collection object itself).  

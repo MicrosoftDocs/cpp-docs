@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Receiving Notification from Common Controls
 Common controls are child windows that send notification messages to the parent window when events, such as input from the user, occur in the control.  

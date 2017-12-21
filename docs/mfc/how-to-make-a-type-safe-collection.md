@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Make a Type-Safe Collection
 This article explains how to make type-safe collections for your own data types. Topics include:  

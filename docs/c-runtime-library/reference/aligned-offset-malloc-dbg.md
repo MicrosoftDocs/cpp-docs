@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_malloc_dbg
 Allocates memory on a specified alignment boundary (debug version only).  

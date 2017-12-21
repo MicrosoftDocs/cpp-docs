@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CCtrlView Class
 Adapts the document-view architecture to the common controls supported by Windows 98 and Windows NT versions 3.51 and later.  

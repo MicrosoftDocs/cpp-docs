@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMemFile Class
 The [CFile](../../mfc/reference/cfile-class.md)-derived class that supports memory files.  

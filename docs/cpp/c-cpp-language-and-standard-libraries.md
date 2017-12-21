@@ -13,6 +13,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C/C++ Language and Standard Libraries
 This section of the documentation includes guidelines and reference content for the Microsoft implementation of the ISO standards for C and C++.  

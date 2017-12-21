@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # piecewise_constant_distribution Class
 Generates a piecewise constant distribution that has varying-width intervals with uniform probability in each interval.  

@@ -14,6 +14,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Security-Enhanced Versions of CRT Functions
 More secure versions of run-time library routines are available. For further information concerning Security Enhancements in the CRT, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md).  

@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # sin, sinf, sinl, sinh, sinhf, sinhl
 Calculates sines and hyperbolic sines.  

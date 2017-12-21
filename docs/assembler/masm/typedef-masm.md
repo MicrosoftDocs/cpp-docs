@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TYPEDEF (MASM)
 Defines a new type called *name*, which is equivalent to `type`.  

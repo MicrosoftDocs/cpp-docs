@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # AFX_EXTENSION_MODULE Structure
 The `AFX_EXTENSION_MODULE` is used during initialization of MFC extension DLLs to hold the state of MFC extension DLL module.  

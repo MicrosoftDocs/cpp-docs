@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Use Database Forms (Record Views) with ODBC
 Some applications, such as data entry or data viewing, require a form, a view with dialog-style controls.  

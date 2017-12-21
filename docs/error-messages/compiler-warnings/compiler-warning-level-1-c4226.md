@@ -10,6 +10,7 @@ ms.assetid: 69d6bbde-1300-4e48-8a9c-3648c80ab441
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4226
 

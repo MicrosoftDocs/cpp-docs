@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_literal_type Class
 Tests whether a type can be used as a `constexpr` variable or be constructed, used by, or returned from `constexpr` functions.  

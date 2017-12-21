@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # greater Struct
 A binary predicate that performs the greater-than operation ( `operator>`) on its arguments.  

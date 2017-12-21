@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Program and Linkage  (C++)
 A program consists of one or more translation units linked together. Execution (conceptually) begins in the translation unit that contains the function **main**. (For more information on translation units, see [Phases of Translation](../preprocessor/phases-of-translation.md), in the *Preprocessor Reference*.) For more information about the **main** function, see [Program Startup: the main Function](../cpp/main-program-startup.md).)  

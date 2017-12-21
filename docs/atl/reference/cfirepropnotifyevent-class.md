@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CFirePropNotifyEvent Class
 This class provides methods for notifying the container's sink regarding control property changes.  

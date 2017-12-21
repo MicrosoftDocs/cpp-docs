@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtDoForAllClientObjects
 Calls an application-supplied function for all `_CLIENT_BLOCK` types in the heap (debug version only).  

@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Native and .NET Interoperability
 Visual C++ supports interoperability features that allow managed and unmanaged constructs to co-exist and interoperate within the same assembly, and even in the same file. A small subset of this functionality, such as P/Invoke, is supported by other .NET languages as well, but most of the interoperability support provided by Visual C++ is not available in other languages.  

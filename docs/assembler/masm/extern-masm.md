@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # EXTERN (MASM)
 Defines one or more external variables, labels, or symbols called *name* whose type is `type`.  

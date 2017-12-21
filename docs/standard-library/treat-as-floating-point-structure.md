@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # treat_as_floating_point Structure
 Specifies whether `Rep` can be treated as a floating-point type.  

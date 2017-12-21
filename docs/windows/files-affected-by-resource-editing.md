@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Files Affected by Resource Editing
 The Visual Studio environment works with the files shown in the following table during your resource editing session.  

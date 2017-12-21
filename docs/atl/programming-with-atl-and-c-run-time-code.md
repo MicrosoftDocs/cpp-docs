@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Programming with ATL and C Run-Time Code
 This section discusses the benefits of using the C Run-Time Library (CRT) with either static or dynamic linking.  

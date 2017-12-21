@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_nothrow_copy_assignable Class
 Tests whether type has a copy assignment operator that is known to the compiler not to throw.  

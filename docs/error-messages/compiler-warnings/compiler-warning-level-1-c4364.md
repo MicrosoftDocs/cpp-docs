@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4364
 \#using for assembly 'file' previously seen at location(line_number) without as_friend attribute; as_friend not applied  

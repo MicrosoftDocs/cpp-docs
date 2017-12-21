@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CPrintDialogEx Class
 Encapsulates the services provided by the Windows 2000 Print property sheet.  

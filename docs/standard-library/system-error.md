@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;system_error&gt;
 Include the header `<system_error>` to define the exception class `system_error` and related templates for processing low-level system errors.  

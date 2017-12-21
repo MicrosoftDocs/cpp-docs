@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CommandHandler
 `CommandHandler` is the function identified by the third parameter of the `COMMAND_HANDLER` macro in your message map.  

@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # make_unsigned Class
 Makes type or the smallest unsigned type greater than or equal in size to type.  

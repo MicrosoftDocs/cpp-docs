@@ -8,15 +8,14 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["COLLECTION/Platform::Collections::InputIterator::InputIterator"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "InputIterator Class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["InputIterator Class"]
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::InputIterator Class
 Provides a Standard Template Library InputIterator for collections derived from the Windows Runtime.  

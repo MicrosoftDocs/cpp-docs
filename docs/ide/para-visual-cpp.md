@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;para&gt; (Visual C++)
 The \<para> tag is for use inside a tag, such as [\<summary>](../ide/summary-visual-cpp.md), [\<remarks>](../ide/remarks-visual-cpp.md), or [\<returns>](../ide/returns-visual-cpp.md), and lets you add structure to the text.  

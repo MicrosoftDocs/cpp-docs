@@ -12,6 +12,7 @@ caps.latest.revision: 12
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Weak references and breaking cycles (C++/CX)
 In any type system that's based on reference-counting, references to types can form *cycles*—that is, one object refers to a second object, the second object refers to a third object, and so on until some final object refers back to the first object. In a cycle, objects can't be deleted correctly when one object's reference count becomes zero. To help you solve this problem, C++/CX provides the [Platform::WeakReference Class](../cppcx/platform-weakreference-class.md) class. A `WeakReference` object supports the [Resolve](../cppcx/platform-weakreference-class.md#resolve) method, which returns null if the object no longer exists, or throws an [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) if the object is alive but is not of type `T`.  

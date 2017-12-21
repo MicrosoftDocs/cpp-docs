@@ -13,6 +13,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Rich Edit Control Examples
 The MFC OLE sample [WORDPAD](../visual-cpp-samples.md) uses the `CRichEditView`, `CRichEditDoc`, and `CRichEditCntrItem` classes. By extension, it uses the [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md). For a quick description of these three classes, see [Classes Related to Rich Edit Controls](../mfc/classes-related-to-rich-edit-controls.md).  

@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # iostreams Conventions
 The iostreams headers support conversions between text and encoded forms, and input and output to external files:  

@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc (Conformance)
 
@@ -32,6 +33,7 @@ These are the `/Zc` compiler options:
 
 |Option|Behavior|
 |---|---|
+|[alignedNew\[-\]](zc-alignednew.md)|Enable C++17 over-aligned dynamic allocation (on by default in C++17).|
 |[auto\[-\]](zc-auto-deduce-variable-type.md)|Enforce the new Standard C++ meaning for `auto` (on by default).|
 |[externConstexpr\[-\]](zc-externconstexpr.md)|Enable external linkage for `constexpr` variables (off by default).|
 |[forScope\[-\]](zc-forscope-force-conformance-in-for-loop-scope.md)|Enforce Standard C++ `for` scoping rules (on by default).|

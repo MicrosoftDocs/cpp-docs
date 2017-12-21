@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # less_equal Struct
 A binary predicate that performs the less-than-or-equal-to operation ( `operator<=`) on its arguments.  

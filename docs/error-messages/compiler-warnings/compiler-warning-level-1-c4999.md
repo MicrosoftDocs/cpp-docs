@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4999
 UNKNOWN WARNING From the Help menu choose the Technical Support command or open the Technical Support help file for more information  

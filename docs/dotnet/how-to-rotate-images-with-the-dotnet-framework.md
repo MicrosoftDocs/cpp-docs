@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Rotate Images with the .NET Framework
 The following code example demonstrates the use of the <xref:System.Drawing.Image?displayProperty=fullName> class to load an image from disk, rotate it 90 degrees, and save it as a new .jpg file.  

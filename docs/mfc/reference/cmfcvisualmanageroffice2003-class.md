@@ -15,6 +15,7 @@ caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerOffice2003 Class
 `CMFCVisualManagerOffice2003` gives an application a Microsoft Office 2003 appearance.  

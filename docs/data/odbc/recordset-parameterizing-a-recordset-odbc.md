@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Parameterizing a Recordset (ODBC)
 This topic applies to the MFC ODBC classes.  

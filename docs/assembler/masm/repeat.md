@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # REPEAT
 Marks a block that is to be repeated *expression* times. Same as [REPT](../../assembler/masm/rept.md).  

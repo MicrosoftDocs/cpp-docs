@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # transmit_as
 Instructs the compiler to associate a presented type that client and server applications manipulate, with a transmitted type.  

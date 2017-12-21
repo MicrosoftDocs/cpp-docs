@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Z7, /Zi, /ZI (Debug Information Format)
 Select the type of debugging information created for your program and whether this information is kept in object (.obj) files or in a program database (PDB).  

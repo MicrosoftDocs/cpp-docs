@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonFontComboBox Class
 Implements a combo box that contains a list of fonts. You place the combo box on a ribbon panel.  

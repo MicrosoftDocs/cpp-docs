@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Microsoft Extensions to C and C++
 Visual C++ extends the ANSI C and ANSI C++ standards as follows.  

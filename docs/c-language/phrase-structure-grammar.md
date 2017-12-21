@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Phrase Structure Grammar
 -   [Expressions](../c-language/summary-of-expressions.md)  

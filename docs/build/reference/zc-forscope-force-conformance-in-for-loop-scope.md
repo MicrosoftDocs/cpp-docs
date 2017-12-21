@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:forScope (Force Conformance in for Loop Scope)
 Used to implement standard C++ behavior for [for](../../cpp/for-statement-cpp.md) loops with Microsoft extensions ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).  **/Zc:forScope** is on by default.  

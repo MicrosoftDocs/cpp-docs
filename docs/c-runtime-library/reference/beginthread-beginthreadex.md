@@ -18,6 +18,7 @@ caps.latest.revision: 36
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _beginthread, _beginthreadex
 Creates a thread.  

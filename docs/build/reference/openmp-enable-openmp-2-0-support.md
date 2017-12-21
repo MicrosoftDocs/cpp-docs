@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /openmp (Enable OpenMP 2.0 Support)
 Causes the compiler to process `#pragma`[omp](../../preprocessor/omp.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Makefile Project Wizard
 Use this wizard to create a command line for the build engine to execute. Once you create the project, you can view and edit the project's properties in the project's [property page](../ide/working-with-project-properties.md).  

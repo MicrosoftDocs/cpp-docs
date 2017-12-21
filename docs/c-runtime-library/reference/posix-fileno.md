@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fileno
 This POSIX function is deprecated. Use the ISO C++ conformant [_fileno](../../c-runtime-library/reference/fileno.md) instead.

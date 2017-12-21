@@ -14,6 +14,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Concepts of Isolated Applications and Side-by-side Assemblies
 An application is considered an [isolated application](http://msdn.microsoft.com/library/aa375190) if all of its components are [side-by-side assemblies](http://msdn.microsoft.com/library/ff951640). A side-by-side assembly is a collection of resources—a group of DLLs, windows classes, COM servers, type libraries, or interfaces—that are deployed together and made available for an application to use at run time. Typically, a side-by-side assembly is one to several DLLs.  

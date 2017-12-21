@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeIntException Class
 The `SafeInt` class uses `SafeIntException` to identify why a mathematical operation cannot be completed.  

@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __readfsbyte, __readfsdword, __readfsqword, __readfsword
 **Microsoft Specific**  

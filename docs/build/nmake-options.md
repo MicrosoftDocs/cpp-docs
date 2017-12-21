@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # NMAKE Options
 NMAKE options are described in the following table. Options are preceded by either a slash (/) or a dash (-) and are not case sensitive. Use [!CMDSWITCHES](../build/makefile-preprocessing-directives.md) to change option settings in a makefile or in Tools.ini.  

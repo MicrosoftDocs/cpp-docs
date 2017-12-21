@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # main Function Restrictions
 Several restrictions apply to the **main** function that do not apply to any other C++ functions. The **main** function:  

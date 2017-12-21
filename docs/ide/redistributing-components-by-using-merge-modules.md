@@ -14,6 +14,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Redistributing Components By Using Merge Modules
 Visual Studio includes [merge modules](http://msdn.microsoft.com/library/aa367434) for each Visual C++ component that's licensed to be redistributed with an application. When a merge module is compiled in a Windows Installer setup file, it enables the deployment of specific DLLs to computers that have a specific platform. In your setup file, specify that the merge modules are prerequisites for your application. When Visual Studio is installed, the merge modules are installed in \Program Files\Common Files\Merge Modules\\. (Only non-debug versions of Visual C++ DLLs may be redistributed.) For more information and a link to a list of merge modules that are licensed for redistribution, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  

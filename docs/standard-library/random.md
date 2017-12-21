@@ -15,6 +15,7 @@ caps.latest.revision: 58
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;random&gt;
 Defines facilities for random number generation, allowing creation of uniformly distributed random numbers.  

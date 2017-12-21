@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /GUARD (Enable Guard Checks)
 Specifies support for Control Flow Guard checks in the executable image.  

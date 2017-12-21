@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CW2WEX Class
 This class is used by the string conversion macros `CW2TEX` and `CT2WEX`, and the typedef `CW2W`.  

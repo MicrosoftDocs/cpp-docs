@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isprint, iswprint, _isprint_l, _iswprint_l
 Determines whether an integer represents a printable character.  

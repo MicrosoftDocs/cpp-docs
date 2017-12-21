@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::TryLockExclusive Method
 Attempts to acquire a SRWLock object in exclusive mode for the current or specified SRWLock object. If the call is successful, the calling thread takes ownership of the lock.  

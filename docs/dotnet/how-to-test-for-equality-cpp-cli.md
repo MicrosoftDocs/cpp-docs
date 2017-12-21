@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Test for Equality (C++/CLI)
 In the following sample, a test for equality that uses Managed Extensions for C++ is based on what the handles refer to.  

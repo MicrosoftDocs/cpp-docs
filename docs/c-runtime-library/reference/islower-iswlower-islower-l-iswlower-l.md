@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # islower, iswlower, _islower_l, _iswlower_l
 Determines whether an integer represents a lowercase character.  

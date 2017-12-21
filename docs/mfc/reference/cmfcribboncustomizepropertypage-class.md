@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonCustomizePropertyPage Class
 Implements a custom page for the **Customize** dialog box in Ribbon-based applications.  

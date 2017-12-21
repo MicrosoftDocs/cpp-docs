@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ___lc_locale_name_func
 Internal CRT function. Retrieves the current locale name of the thread.  

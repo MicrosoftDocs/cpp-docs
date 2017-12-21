@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Optimization Pragmas and Keywords
 Several keywords and pragmas that you use in your C or C++ code affect optimization:  

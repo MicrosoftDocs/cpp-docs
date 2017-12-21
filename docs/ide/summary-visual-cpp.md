@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;summary&gt; (Visual C++)
 The \<summary> tag should be used to describe a type or a type member. Use [\<remarks>](../ide/remarks-visual-cpp.md) to add supplemental information to a type description.  

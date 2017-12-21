@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # unique_lock Class
 Represents a template that can be instantiated to create objects that manage the locking and unlocking of a `mutex`.  

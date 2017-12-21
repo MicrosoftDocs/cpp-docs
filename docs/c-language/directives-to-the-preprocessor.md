@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Directives to the Preprocessor
 A "directive" instructs the C preprocessor to perform a specific action on the text of the program before compilation. [Preprocessor directives](../preprocessor/preprocessor-directives.md) are fully described in the *Preprocessor Reference*. This example uses the preprocessor directive `#define`:  

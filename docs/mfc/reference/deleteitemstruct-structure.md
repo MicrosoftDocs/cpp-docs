@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DELETEITEMSTRUCT Structure
 The `DELETEITEMSTRUCT` structure describes a deleted owner-drawn list-box or combo-box item.  

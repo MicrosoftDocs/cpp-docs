@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::recursive_mutex [C++]", "std::recursive_mutex [C++], recursive_mutex", "std::recursive_mutex [C++], lock", "std::recursive_mutex [C++], try_lock", "std::recursive_mutex [C++], unlock"]
+ms.workload: ["cplusplus"]
 ---
 # recursive_mutex Class
 Represents a *mutex type*. In contrast to [mutex](../standard-library/mutex-class-stl.md), the behavior of calls to locking methods for objects that are already locked is well-defined.  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Overriding a Virtual Function (Visual C++)
 You can override virtual functions defined in a base class from the Visual Studio [Properties window](/visualstudio/ide/reference/properties-window).  

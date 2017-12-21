@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Text Tool Dialog Box (Image Editor for Icons)
 Use the **Text Tool** dialog box to add text to a cursor, bitmap, or icon resource.  

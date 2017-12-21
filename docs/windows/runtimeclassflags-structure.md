@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassFlags Structure
 Contains the type for an instance of a [RuntimeClass](../windows/runtimeclass-class.md).  

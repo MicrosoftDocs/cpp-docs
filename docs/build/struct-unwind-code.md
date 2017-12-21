@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # struct UNWIND_CODE
 The unwind code array is used to record the sequence of operations in the prolog that affect the nonvolatile registers and RSP. Each code item has the following format:  

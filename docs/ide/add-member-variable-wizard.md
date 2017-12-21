@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Add Member Variable Wizard
 This wizard adds a member variable declaration to the header file and, depending on the options, it can add code to the .cpp file. Once you have added the member variable using the wizard, you can edit the code in the development environment.  

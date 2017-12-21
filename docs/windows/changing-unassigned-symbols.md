@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing Unassigned Symbols
 While in the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md), you can edit or delete existing symbols that are not already assigned to a resource or object.  

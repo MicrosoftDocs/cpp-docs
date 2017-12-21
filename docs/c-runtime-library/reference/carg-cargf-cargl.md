@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # carg, cargf, cargl
 Retrieves the argument  of a complex number, with a branch cut along the negative real axis.  

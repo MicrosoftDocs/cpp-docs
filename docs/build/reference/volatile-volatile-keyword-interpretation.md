@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /volatile (volatile Keyword Interpretation)
 Specifies how the [volatile](../../cpp/volatile-cpp.md) keyword is to be interpreted.  

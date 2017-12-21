@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _fmode
 The `_fmode` variable sets the default file-translation mode for text or binary translation. This global variable has been deprecated for the more secure functional versions [_get_fmode](../c-runtime-library/reference/get-fmode.md) and [_set_fmode](../c-runtime-library/reference/set-fmode.md), which should be used in place of the global variable. It is declared in Stdlib.h as follows.  

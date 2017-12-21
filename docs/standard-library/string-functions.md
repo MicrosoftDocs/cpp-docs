@@ -13,6 +13,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::getline [C++]", "std::stod [C++]", "std::stof [C++]", "std::stoi [C++]", "std::stol [C++]", "std::stold [C++]", "std::stoll [C++]", "std::stoul [C++]", "std::stoull [C++]", "std::swap [C++]", "std::to_string [C++]", "std::to_wstring [C++]"]
+ms.workload: ["cplusplus"]
 ---
 # &lt;string&gt; functions
 ||||  

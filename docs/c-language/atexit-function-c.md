@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # atexit Function (C)
 **ANSI 4.10.4.3** The status returned by the `atexit` function if the value of the argument is other than zero, EXIT_SUCCESS, or EXIT_FAILURE  

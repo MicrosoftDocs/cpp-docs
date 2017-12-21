@@ -16,6 +16,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # log2, log2f, log2l
 Determines the binary (base-2) logarithm of the specified value.  

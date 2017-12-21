@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMapStringToOb Class
 A dictionary collection class that maps unique `CString` objects to `CObject` pointers.  

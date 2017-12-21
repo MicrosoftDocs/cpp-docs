@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IOleObjectImpl Class
 This class implements **IUnknown** and is the principal interface through which a container communicates with a control.  

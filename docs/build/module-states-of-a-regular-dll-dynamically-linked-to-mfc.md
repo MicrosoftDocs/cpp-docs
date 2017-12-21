@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Module States of a Regular MFC DLL Dynamically Linked to MFC
 The ability to dynamically link a regular MFC DLL to the MFC DLL allows some configurations that are very complicated. For example, a regular MFC DLL and the executable that uses it can both dynamically link to the MFC DLL and to any MFC extension DLLs.  

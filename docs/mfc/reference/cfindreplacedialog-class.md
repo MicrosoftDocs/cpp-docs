@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CFindReplaceDialog Class
 Allows you to implement standard string Find/Replace dialog boxes in your application.  

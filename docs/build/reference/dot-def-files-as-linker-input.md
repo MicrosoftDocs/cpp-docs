@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .Def Files as Linker Input
 See [Module-definition (.def) files](../../build/reference/module-definition-dot-def-files.md) for more information. Use the [/DEF](../../build/reference/def-specify-module-definition-file.md) option to specify the .def file name.  

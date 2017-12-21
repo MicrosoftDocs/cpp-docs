@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency Runtime Walkthroughs
 The scenario-based topics in this section show how to use many of the features of the Concurrency Runtime.  

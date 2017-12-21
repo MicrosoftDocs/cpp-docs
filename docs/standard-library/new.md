@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;new&gt;
 Defines several types and functions that control the allocation and freeing of storage under program control. It also defines components for reporting on storage management errors.  

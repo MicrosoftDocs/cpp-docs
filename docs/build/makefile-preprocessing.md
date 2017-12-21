@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Makefile Preprocessing
 You can control the NMAKE session by using preprocessing directives and expressions. Preprocessing instructions can be placed in the makefile or in Tools.ini. Using directives, you can conditionally process your makefile, display error messages, include other makefiles, undefine a macro, and turn certain options on or off.  

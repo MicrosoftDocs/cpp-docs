@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating a Dialog Class with Code Wizards
 The following table lists dialog-related tasks that Code Wizards help you manage.  

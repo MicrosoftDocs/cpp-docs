@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # async_uuid
 Specifies the UUID that directs the MIDL compiler to define both synchronous and asynchronous versions of a COM interface.  

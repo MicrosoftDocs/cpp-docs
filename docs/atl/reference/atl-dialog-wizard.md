@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Dialog Wizard
 This wizard inserts into the project an ATL dialog box object, derived from [CAxDialogImpl](../../atl/reference/caxdialogimpl-class.md). A dialog box derived from `CAxDialogImpl` can host ActiveX controls.  

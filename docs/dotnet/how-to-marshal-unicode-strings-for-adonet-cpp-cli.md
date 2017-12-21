@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Unicode Strings for ADO.NET (C++/CLI)
 Demonstrates how to add a native Unicode string (`wchar_t *`) to a database and how to marshal a <xref:System.String?displayProperty=fullName> from a database to a native Unicode string.  

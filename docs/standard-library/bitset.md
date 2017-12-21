@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;bitset&gt;
 Defines the template class bitset and two supporting template functions for representing and manipulating fixed-size sequences of bits.  

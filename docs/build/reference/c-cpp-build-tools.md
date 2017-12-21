@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C/C++ Build Tools
 Visual C++ provides the following command-line tools for viewing or manipulating build output:  

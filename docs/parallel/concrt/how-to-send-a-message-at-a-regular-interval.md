@@ -14,6 +14,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Send a Message at a Regular Interval
 This example shows how to use the concurrency::[timer class](../../parallel/concrt/reference/timer-class.md) to send a message at a regular interval.  

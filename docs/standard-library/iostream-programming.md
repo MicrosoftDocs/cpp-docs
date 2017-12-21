@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # iostream Programming
 This section provides a [general description](../standard-library/what-a-stream-is.md) of the iostream classes and then describes [output streams](../standard-library/output-streams.md), [input streams](../standard-library/input-streams.md), and [input/output streams](../standard-library/input-output-streams.md). The end of the section provides information about advanced iostream programming.  

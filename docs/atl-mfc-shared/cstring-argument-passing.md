@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CString Argument Passing
 This article explains how to pass [CString](../atl-mfc-shared/reference/cstringt-class.md) objects to functions and how to return `CString` objects from functions.  

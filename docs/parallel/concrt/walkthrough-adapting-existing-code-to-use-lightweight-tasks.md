@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Adapting Existing Code to Use Lightweight Tasks
 This topic shows how to adapt existing code that uses the Windows API to create and execute a thread to use a lightweight task.  

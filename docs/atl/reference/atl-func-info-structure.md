@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ATL_FUNC_INFO Structure
 Contains type information used to describe a method or property on a dispinterface.  

@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Parallel Diagnostic Tools (Concurrency Runtime)
 [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] provides extensive support for debugging and profiling multi-threaded applications.  

@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # omp_set_dynamic
 Indicates that the number of threads available in subsequent parallel region can be adjusted by the run time.  

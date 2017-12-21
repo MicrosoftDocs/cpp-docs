@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CSplitterWnd Class
 Provides the functionality of a splitter window, which is a window that contains multiple panes.  

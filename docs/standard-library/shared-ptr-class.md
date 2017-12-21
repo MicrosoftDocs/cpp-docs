@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # shared_ptr Class
 Wraps a reference-counted smart pointer around a dynamically allocated object.  

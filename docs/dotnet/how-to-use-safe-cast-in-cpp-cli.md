@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use safe_cast in C++/CLI
 This article shows how to use safe_cast in C++/CLI applications. For information about safe_cast in [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)], see [safe_cast](../windows/safe-cast-cpp-component-extensions.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ISessionPropertiesImpl::SetProperties
 Sets properties in the **DBPROPSET_SESSION** property group.  

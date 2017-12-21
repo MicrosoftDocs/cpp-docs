@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # MFC Predefined Symbols
 MFC projects always include several header files that support windows. These are added via #include statements in the StdAfx.h file:  

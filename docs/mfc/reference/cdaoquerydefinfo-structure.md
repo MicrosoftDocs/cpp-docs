@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoQueryDefInfo Structure
 The `CDaoQueryDefInfo` structure contains information about a querydef object defined for data access objects (DAO).  

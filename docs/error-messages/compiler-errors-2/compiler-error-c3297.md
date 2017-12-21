@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3297
 'constraint_2' : cannot use 'constraint_1' as a constraint because 'constraint_1' has the value constraint  

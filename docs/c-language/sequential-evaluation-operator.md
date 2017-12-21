@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Sequential-Evaluation Operator
 The sequential-evaluation operator, also called the "comma operator," evaluates its two operands sequentially from left to right.  

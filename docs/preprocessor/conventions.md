@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Conventions
 The conventions use different font attributes for different components of the syntax. The symbols and fonts are as follows:  

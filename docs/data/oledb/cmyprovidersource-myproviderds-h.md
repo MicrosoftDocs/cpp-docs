@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMyProviderSource (MyProviderDS.H)
 The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  

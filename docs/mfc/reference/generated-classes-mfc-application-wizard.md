@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Generated Classes, MFC Application Wizard
 This topic lists the names of base classes and files that your project generates. By default, the names are based on the project name that you specified in the **New Project Dialog Box**. You can change most of these names, as described here:  

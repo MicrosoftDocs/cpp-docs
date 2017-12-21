@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # msclr namespace
 The `msclr` namespace contains all the classes of the C++ Support Library. For more information on those classes, see [C++ Support Library](../dotnet/cpp-support-library.md).  

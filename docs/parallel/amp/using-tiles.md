@@ -13,6 +13,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using Tiles
 You can use tiling to maximize the acceleration of your app. Tiling divides threads into equal rectangular subsets or *tiles*. If you use an appropriate tile size and tiled algorithm, you can get even more acceleration from your C++ AMP code. The basic components of tiling are:  

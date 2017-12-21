@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .Xml File Processing
 The compiler generates an ID string for each construct in your code that is tagged to generate documentation. For more information, see [Recommended Tags Documentation Comments](../ide/recommended-tags-for-documentation-comments-visual-cpp.md). The ID string uniquely identifies the construct. Programs that process the .xml file can use the ID string to identify the corresponding .NET Framework metadata or reflection item to which the documentation applies.  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Object Model
 The OLE DB object model comprises the following objects or components. The first four objects or components listed (data sources, sessions, commands, and rowsets) allow you to connect to a data source and view it. The rest, starting with accessors, relate to working with the data when it is displayed.  

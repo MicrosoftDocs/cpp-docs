@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding a Property (Visual C++)
 You can use the [Add Property Wizard](../ide/names-add-property-wizard.md) to add a method to an interface in your project.  

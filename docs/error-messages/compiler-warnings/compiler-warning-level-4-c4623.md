@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4623
 '`derived class`' : default constructor was implicitly defined as deleted because a base class default constructor is inaccessible or deleted  

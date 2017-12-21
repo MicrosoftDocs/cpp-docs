@@ -13,6 +13,7 @@ caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4435
 'class1' : Object layout under /vd2 will change due to virtual base 'class2'  

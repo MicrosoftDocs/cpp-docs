@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CL Command Files
 A command file is a text file that contains options and filenames you would otherwise type on the [command line](../../build/reference/compiler-command-line-syntax.md) or specify using the [CL environment variable](../../build/reference/cl-environment-variables.md). CL accepts a compiler command file as an argument in the CL environment variable or on the command line. Unlike either the command line or the CL environment variable, a command file allows you to use multiple lines of options and filenames.  

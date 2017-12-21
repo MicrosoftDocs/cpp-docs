@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Stock Properties
 If you are adding a property to an MFC dispinterface using the [Add Property Wizard](../ide/idl-attributes-add-property-wizard.md), you can choose a stock property from the **Property name** list in the [Names](../ide/names-add-property-wizard.md) page of the wizard. These properties are as follows:  

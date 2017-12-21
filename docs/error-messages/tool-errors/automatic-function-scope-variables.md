@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Automatic (Function Scope) Variables
 A variable declared within a function can only be used within the scope of that function.  

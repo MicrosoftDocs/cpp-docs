@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Predefined Accelerator Keys
 There are a number of predefined accelerator keys that may be part of a Windows application project. Some of these virtual keys are for the Windows environment. Other support browsers or Unicode applications. You can use any of these keys in any accelerator.  

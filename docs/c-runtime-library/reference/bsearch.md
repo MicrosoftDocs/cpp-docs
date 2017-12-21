@@ -18,6 +18,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # bsearch
 Performs a binary search of a sorted array. A more secure version of this function is available; see [bsearch_s](../../c-runtime-library/reference/bsearch-s.md).  

@@ -13,6 +13,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using C++ AMP in Windows Store Apps
 You can use C++ AMP (C++ Accelerated Massive Parallelism) in your [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app to perform calculations on the GPU (Graphics Processing Unit) or other computational accelerators. However, C++ AMP doesn't provide APIs for working directly with Windows Runtime types, and the Windows Runtime doesn't provide a wrapper for C++ AMP. When you use Windows Runtime types in your code—including those that you've created yourself—you must convert them to types that are compatible with C++ AMP.  

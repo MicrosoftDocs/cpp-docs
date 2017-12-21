@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Testing a Project (C++)
 When you run a program in Debug mode, you can use breakpoints to pause the program to examine the state of variables and objects.  

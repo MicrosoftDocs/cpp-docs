@@ -18,6 +18,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # lrint, lrintf, lrintl, llrint, llrintf, llrintl
 Rounds the specified floating-point value to the nearest integral value, by using the current rounding mode and direction.  

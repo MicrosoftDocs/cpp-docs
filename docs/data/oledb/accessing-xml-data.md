@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Accessing XML Data
 There are two separate methods of retrieving XML data from a data source: one uses [CStreamRowset](../../data/oledb/cstreamrowset-class.md) and the other uses [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md).  

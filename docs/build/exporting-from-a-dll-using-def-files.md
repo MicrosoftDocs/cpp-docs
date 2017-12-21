@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Exporting from a DLL Using DEF Files
 A module-definition (.def) file is a text file containing one or more module statements that describe various attributes of a DLL. If you are not using the **__declspec(dllexport)** keyword to export the DLL's functions, the DLL requires a .def file.  

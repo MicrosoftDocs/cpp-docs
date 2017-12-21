@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Inferred Dependents and Rules
 NMAKE assumes an inferred dependent for a target if an applicable inference rule exists. A rule applies if:  

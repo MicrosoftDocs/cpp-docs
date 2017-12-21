@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Implementing a Connection Point (Visual C++)
 To implement a connection point using the Implement Connection Point Wizard, you must have created a project as an ATL COM application or as an MFC application that contains ATL support. You can use the [ATL Project Wizard](../atl/reference/atl-project-wizard.md) to create an ATL application, or [add an ATL object to your MFC application](../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.  

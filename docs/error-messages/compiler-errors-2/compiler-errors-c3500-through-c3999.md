@@ -9,6 +9,7 @@ ms.assetid: bd6f23ad-b300-4e07-8e35-9661cab1585f
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Errors C3500 through C3999
 

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Editing a COM Interface
 By using commands from the Class View shortcut menu, you can define new methods and properties for the COM interfaces in your Visual C++ projects. In addition, from the Toolbox, you can define events for ActiveX controls.  

@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Technical Notes by Number
 The technical notes below are listed numerically, with the most recently written technical note first. For a listing by category, see [Technical Notes by Category](../mfc/technical-notes-by-category.md).  

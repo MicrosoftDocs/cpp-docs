@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Handlers for Message-Map Ranges
 This article explains how to map a range of messages to a single message handler function (instead of mapping one message to only one function).  

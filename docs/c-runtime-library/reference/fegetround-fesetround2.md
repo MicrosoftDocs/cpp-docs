@@ -18,6 +18,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fegetround, fesetround
 Gets or sets the current floating-point rounding mode.  

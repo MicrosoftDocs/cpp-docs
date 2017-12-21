@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /CLRTHREADATTRIBUTE (Set CLR Thread Attribute)
 Explicitly specify the threading attribute for the entry point of your CLR program.  

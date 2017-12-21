@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # no_registry
 `no_registry` tells the compiler not to search the registry for type libraries imported with `#import`.  

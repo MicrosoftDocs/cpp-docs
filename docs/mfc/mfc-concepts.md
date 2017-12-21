@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC Concepts
 This section provides conceptual and task-based topics to help you program using the Microsoft Foundation Class (MFC) Library.  

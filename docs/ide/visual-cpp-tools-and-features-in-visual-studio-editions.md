@@ -14,6 +14,7 @@ caps.latest.revision: 51
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Visual C++ Tools and Features in Visual Studio Editions
 The following tables show Visual C++ features that are available in Visual Studio. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.  

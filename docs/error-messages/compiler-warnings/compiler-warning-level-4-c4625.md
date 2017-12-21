@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4625
 'derived class' : copy constructor was implicitly defined as deleted because a base class copy constructor is inaccessible or deleted  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator +
 The first operator returns *expression1* plus *expression2*. The second operator reverses the sign of *expression*.  

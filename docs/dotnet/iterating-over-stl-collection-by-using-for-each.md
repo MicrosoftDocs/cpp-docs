@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Iterating Over C++ Standard Library Collection By Using for each
 The `for each` keyword can be used to iterate over a C++ Standard Library collection.  

@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COlePropertiesDialog Class
 Encapsulates the Windows common OLE Object Properties dialog box.  

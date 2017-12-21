@@ -14,6 +14,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # MakeAndInitialize Function
 Initializes the specified Windows Runtime class. Use this function to instantiate a component that is defined in the same module.  

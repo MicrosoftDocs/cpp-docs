@@ -4,20 +4,15 @@ ms.custom: ""
 ms.date: "9/26/2017"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
+ms.technology: ["vs-ide-general"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-f1_keywords:
-  - VC.Project.RaspberryDebugger.DebuggerType
-  - VC.Project.IVCLocalDebugPageObject.CommandArguments
-  - VC.Project.IVCLocalDebugPageObject.WorkingDirectory
-  - VC.Project.RaspberryDebugger.LaunchActivity
-  - VC.Project.LinuxDebugger.DebugChildProcesses
+f1_keywords: [VC.Project.RaspberryDebugger.DebuggerType, VC.Project.IVCLocalDebugPageObject.CommandArguments, VC.Project.IVCLocalDebugPageObject.WorkingDirectory, VC.Project.RaspberryDebugger.LaunchActivity, VC.Project.LinuxDebugger.DebugChildProcesses]
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # C++ Debugging Properties (Linux C++)

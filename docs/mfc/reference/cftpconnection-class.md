@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CFtpConnection Class
 Manages your FTP connection to an Internet server and allows direct manipulation of directories and files on that server.  

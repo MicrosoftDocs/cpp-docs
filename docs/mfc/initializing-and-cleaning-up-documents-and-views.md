@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Initializing and Cleaning Up Documents and Views
 Use the following guidelines for initializing and cleaning up after your documents and views:  

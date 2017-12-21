@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.26   Using the threadprivate Directive
 The following examples demonstrate how to use the `threadprivate` directive  ([Section 2.7.1](../../parallel/openmp/2-7-1-threadprivate-directive.md) on page 23) to give each thread a separate counter.  

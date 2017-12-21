@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # set::const_reverse_iterator (STL/CLR)
 The type of a constant reverse iterator for the controlled sequence..  

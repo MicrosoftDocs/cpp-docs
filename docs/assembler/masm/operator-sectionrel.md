@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator SECTIONREL
 Returns the section relative offset of expression relative to the section containing the target in the final executable.  

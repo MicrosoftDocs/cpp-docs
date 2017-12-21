@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Pointers to Members
 Declarations of pointers to members are special cases of pointer declarations.  They are declared using the following sequence:  

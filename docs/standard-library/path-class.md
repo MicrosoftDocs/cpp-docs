@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # path Class
 The **path** class stores an object of type string\_type, called myname here for the purposes of exposition, suitable for use as a pathname. string\_type is a synonym for basic\_string\<value_type>, where value\_type is a synonym for char under Windows or wchar_t under Posix.  

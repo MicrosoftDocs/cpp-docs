@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # equal_to Struct
 A binary predicate that performs the equality operation ( `operator==`) on its arguments.  

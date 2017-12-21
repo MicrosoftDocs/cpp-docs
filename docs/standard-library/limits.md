@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;limits&gt;
 Defines the template class `numeric_limits` and two enumerations concerning floating-point representations and rounding.  

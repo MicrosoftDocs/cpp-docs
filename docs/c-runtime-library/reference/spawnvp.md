@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # spawnvp
 This POSIX function is deprecated. Use the ISO C++ conformant [_spawnvp](../../c-runtime-library/reference/spawnvp-wspawnvp.md) instead.  

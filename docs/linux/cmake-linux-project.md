@@ -11,6 +11,7 @@ ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # Configure a Linux CMake project

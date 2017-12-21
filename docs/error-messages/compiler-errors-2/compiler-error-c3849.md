@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3849
 function-style call on an expression of type 'type' would lose const and/or volatile qualifiers for all number available operator overloads  

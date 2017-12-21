@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # adopt_lock_t Structure
 Represents a type that is used to define an [adopt_lock](../standard-library/mutex-functions.md#adopt_lock).  

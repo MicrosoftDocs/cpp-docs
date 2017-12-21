@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CShellManager Class
 Implements several methods that enable you to work with pointers to identifier lists (PIDLs).  

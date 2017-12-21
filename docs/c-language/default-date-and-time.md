@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Default Date and Time
 **ANSI 3.8.8** The definitions for _DATE\_ and _TIME\_ when, respectively, the date and time of translation are not available  

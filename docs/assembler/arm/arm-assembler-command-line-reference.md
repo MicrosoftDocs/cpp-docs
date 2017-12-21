@@ -13,6 +13,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ARM Assembler Command-Line Reference
 This article provides command-line information about the Microsoft ARM assembler, *armasm*, which compiles ARMv7 Thumb assembly language into the Microsoft implementation of the Common Object File Format (COFF). The linker can link COFF code with object code that is produced by the ARM assembler or by the C compiler, together with object libraries that are created by the librarian.  

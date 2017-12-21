@@ -18,6 +18,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 Pushes back the last character that's read from the console.  

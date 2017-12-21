@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPreviewCtrlImpl Class
 This class implements a window that is placed on a host window provided by the Shell for Rich Preview.  

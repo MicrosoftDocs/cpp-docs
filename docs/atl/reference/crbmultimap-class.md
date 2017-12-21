@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CRBMultiMap Class
 This class represents a mapping structure that allows each key can be associated with more than one value, using a Red-Black binary tree.  

@@ -18,6 +18,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _access, _waccess
 Determines if a file is read-only or not. More secure versions are available; see [_access_s, _waccess_s](../../c-runtime-library/reference/access-s-waccess-s.md).  

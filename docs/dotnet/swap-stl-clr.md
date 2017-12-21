@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # swap (STL/CLR)
 Exchanges the values of the elements between two types of objects, assigning the contents of the first object to the second object and the contents of the second to the first.  

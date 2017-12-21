@@ -18,6 +18,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l
 Prints formatted output to the standard output stream, and enables specification of the order in which parameters are used in the format string.  

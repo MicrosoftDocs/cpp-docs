@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Static Const Int Linkage Is No Longer Literal
 Declaration of a constant member of a class has changed from Managed Extensions for C++ to Visual C++.  

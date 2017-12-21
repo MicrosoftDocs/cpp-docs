@@ -14,6 +14,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Use Cancellation to Break from a Parallel Loop
 This example shows how to use cancellation to implement a basic parallel search algorithm.  

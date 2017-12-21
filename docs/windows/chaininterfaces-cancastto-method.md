@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::CanCastTo Method
 Indicates whether the specified interface ID can be cast to each of the specializations defined by the non-default template parameters.  

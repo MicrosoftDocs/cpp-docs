@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /guard (Enable Control Flow Guard)
 Enable compiler generation of Control Flow Guard security checks.  

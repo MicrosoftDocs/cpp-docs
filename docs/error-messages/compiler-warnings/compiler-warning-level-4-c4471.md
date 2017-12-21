@@ -15,6 +15,7 @@ caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4471
 '*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)  

@@ -15,6 +15,7 @@ caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # event  (C++ Component Extensions)
 The `event` keyword declares an *event*, which is a notification to registered subscribers (*event handlers*) that something of interest has occurred.  

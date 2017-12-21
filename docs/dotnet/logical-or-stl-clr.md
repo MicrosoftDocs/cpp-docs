@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # logical_or (STL/CLR)
 The template class describes a functor that, when called, returns true only if either the first argument or the second tests as true. You use it specify a function object in terms of its argument type.  

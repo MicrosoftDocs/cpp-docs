@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4571
 Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught  

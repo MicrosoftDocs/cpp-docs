@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /APPCONTAINER (Windows Store App)
 Specifies whether the linker creates an executable image that must be run in an app container.  

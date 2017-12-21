@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Standard Conversions and Implicit Boxing
 A standard conversion will be chosen by the compiler over a conversion that requires boxing.  

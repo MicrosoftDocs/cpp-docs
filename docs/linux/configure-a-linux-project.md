@@ -11,6 +11,7 @@ ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # Configure a Linux Project

@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # General Best Practices in the Concurrency Runtime
 This document describes best practices that apply to multiple areas of the Concurrency Runtime.  

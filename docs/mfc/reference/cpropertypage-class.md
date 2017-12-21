@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CPropertyPage Class
 Represents individual pages of a property sheet, otherwise known as a tab dialog box.  

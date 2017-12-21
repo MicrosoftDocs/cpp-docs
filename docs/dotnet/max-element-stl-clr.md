@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # max_element (STL/CLR)
 Finds the first occurrence of largest element in a specified range where the ordering criterion may be specified by a binary predicate.  

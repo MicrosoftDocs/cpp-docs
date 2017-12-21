@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Class
 Extends the integer primitives to help prevent integer overflow and lets you compare different types of integers.  

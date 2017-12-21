@@ -17,6 +17,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # offsetof Macro
 Retrieves the offset of a member from the beginning of its parent structure.  

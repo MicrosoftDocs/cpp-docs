@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Function Call Operator: ()
 A postfix-expression followed by the function-call operator, **( )**, specifies a function call.  

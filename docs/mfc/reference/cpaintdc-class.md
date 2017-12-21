@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CPaintDC Class
 A device-context class derived from [CDC](../../mfc/reference/cdc-class.md).  

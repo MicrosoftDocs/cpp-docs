@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating New Symbols
 When you are beginning a new project, you may find it convenient to map out the symbol names you need before creating the resources to which they will be assigned.  

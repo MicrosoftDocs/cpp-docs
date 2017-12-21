@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Abstract Declarators
 An abstract declarator is a declarator without an identifier, consisting of one or more pointer, array, or function modifiers. The pointer modifier (**\***) always precedes the identifier in a declarator; array (**[ ]**) and function ( **( )** ) modifiers follow the identifier. Knowing this, you can determine where the identifier would appear in an abstract declarator and interpret the declarator accordingly. See [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md) for additional information and examples of complex declarators. Generally `typedef` can be used to simplify declarators. See [Typedef Declarations](../c-language/typedef-declarations.md).  

@@ -14,6 +14,7 @@ caps.latest.revision: 7.2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 
 

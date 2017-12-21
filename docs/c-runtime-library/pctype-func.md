@@ -18,6 +18,7 @@ caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __pctype_func
 Retrieves a pointer to an array of character classification information.  

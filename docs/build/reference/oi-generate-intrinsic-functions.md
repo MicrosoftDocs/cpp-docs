@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Oi (Generate Intrinsic Functions)
 Replaces some function calls with intrinsic or otherwise special forms of the function that help your application run faster.  

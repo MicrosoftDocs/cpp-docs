@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Reference-Type Function Returns
 Functions can be declared to return a reference type. There are two reasons to make such a declaration:  

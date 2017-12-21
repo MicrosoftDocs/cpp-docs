@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Deprecated ANSI APIs
 The Microsoft Foundation Class (MFC) library is migrating toward classes and methods that are based on the Unicode character set. Consequently, the ANSI versions of several MFC methods are deprecated. Use the Unicode versions of these methods in your future applications.  

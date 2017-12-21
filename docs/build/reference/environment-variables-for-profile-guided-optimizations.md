@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Environment Variables for Profile-Guided Optimizations
 This section contains information about environment variables that affect test scenarios on an image created with /LTCG:PGI.  

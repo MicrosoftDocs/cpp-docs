@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /WINMDKEYFILE (Specify winmd Key File)
 Specifies a key or a key pair to sign a Windows Runtime Metadata (.winmd) file.  

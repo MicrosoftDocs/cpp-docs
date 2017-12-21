@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Managed Types and the main Function (C++/CLI)
 When writing an application using **/clr**, the arguments of the **main()** function cannot be of a managed type.  

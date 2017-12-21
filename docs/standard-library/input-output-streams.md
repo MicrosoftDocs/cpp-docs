@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Input/Output Streams
 `basic_iostream`, which is defined in the header file \<istream>, is the class template for objects that handle both input and output character-based I/O streams.  

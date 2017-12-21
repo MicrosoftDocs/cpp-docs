@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # setjmp/longjump
 When you include setjmpex.h or setjmp.h, all calls to [setjmp](../c-runtime-library/reference/setjmp.md) or [longjmp](../c-runtime-library/reference/longjmp.md) will result in an unwind that invokes destructors and finally calls.  This differs from x86, where including setjmp.h results in finally clauses and destructors not being invoked.  

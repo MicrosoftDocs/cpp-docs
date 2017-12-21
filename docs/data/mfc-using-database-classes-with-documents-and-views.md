@@ -8,12 +8,13 @@ ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-helpviewer_keywords: ["documents [C++], database applications", "recordsets [C++], documents and views", "CRecordView class, using in database forms", "views [C++], database applications", "forms [C++], database applications", "record views [C++], form-based applications", "document/view architecture [C++], in databases", "database applications [C++], forms", "database classes [C++], MFC", "ODBC recordsets [C++], documents and views", "ODBC [C++], forms", ]
+helpviewer_keywords: ["documents [C++], database applications", "recordsets [C++], documents and views", "CRecordView class, using in database forms", "views [C++], database applications", "forms [C++], database applications", "record views [C++], form-based applications", "document/view architecture [C++], in databases", "database applications [C++], forms", "database classes [C++], MFC", "ODBC recordsets [C++], documents and views", "ODBC [C++], forms"]
 ms.assetid: 83979974-fc63-46ac-b162-e8403a572e2c
 caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # MFC: Using Database Classes with Documents and Views
 You can use the MFC database classes with or without the document/view architecture. This topic emphasizes working with documents and views. It explains:  

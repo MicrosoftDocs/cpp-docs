@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CSecurityDesc Class
 This class is a wrapper for the **SECURITY_DESCRIPTOR** structure.  

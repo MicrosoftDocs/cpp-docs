@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # return Statement in Program Termination (C++)
 Issuing a `return` statement from **main** is functionally equivalent to calling the **exit** function. Consider the following example:  

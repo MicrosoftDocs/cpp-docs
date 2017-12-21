@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # bad_target Class
 This class describes an exception thrown when a messaging block is given a pointer to a target which is invalid for the operation being performed.  

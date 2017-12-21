@@ -14,6 +14,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # CompareStringOrdinal Method
 Supports the WRL infrastructure and is not intended to be used directly from your code.  

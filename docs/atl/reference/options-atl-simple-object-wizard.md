@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Options, ATL Simple Object Wizard
 Use this page of the ATL Simple Object Wizard to design for increased efficiency and error support for the object.  

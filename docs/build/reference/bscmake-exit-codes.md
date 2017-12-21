@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Exit Codes
 BSCMAKE returns an exit code (also called a return code or error code) to the operating system or the calling program.  

@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Modify Reference Class in a Native Function
 You can pass a reference class with a CLR array to a native function, and modify the class, using PInvoke services.  

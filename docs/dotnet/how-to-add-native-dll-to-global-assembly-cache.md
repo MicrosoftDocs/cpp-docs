@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Add Native DLL to Global Assembly Cache
 You can put a native DLL (not COM) into the Global Assembly Cache.  

@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package
 This step-by-step article describes how to use the Visual C++ Redistributable Package to deploy a Visual C++ application.  

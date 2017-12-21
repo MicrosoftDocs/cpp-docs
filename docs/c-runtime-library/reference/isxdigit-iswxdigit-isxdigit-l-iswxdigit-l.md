@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 Determines whether an integer represents a character that is a hexadecimal digit.  

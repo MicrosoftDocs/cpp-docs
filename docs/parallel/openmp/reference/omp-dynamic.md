@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OMP_DYNAMIC
 Specifies whether the OpenMP run time can adjust the number of threads in a parallel region.  

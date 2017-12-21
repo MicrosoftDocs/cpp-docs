@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # mem_fun1_t Class
 An adapter class that allows a **non_const** member function that takes a single argument to be called as a binary function object when initialized with a pointer argument.  

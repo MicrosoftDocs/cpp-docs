@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # User Records
 To use a static accessor (that is, an accessor derived from **CAccessor)**, your consumer must have a user record. The user record is a C++ class that contains data elements to handle input or output. The ATL OLE DB Consumer Wizard generates a user record for your consumer. You can add methods to the user record for optional tasks like handling commands.  

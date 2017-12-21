@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # task_handle Class
 The `task_handle` class represents an individual parallel work item. It encapsulates the instructions and the data required to execute a piece of work.  

@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # omp_get_dynamic
 Returns a value that indicates if the number of threads available in subsequent parallel region can be adjusted by the run time.  

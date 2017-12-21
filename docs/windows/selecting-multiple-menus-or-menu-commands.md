@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Selecting Multiple Menus or Menu Commands
 You can select multiple menu names or menu commands to perform bulk operations such as deleting or changing properties.  

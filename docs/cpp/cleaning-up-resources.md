@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Cleaning up Resources
 During termination-handler execution, you may not know which resources are actually allocated before the termination handler was called. It is possible that the `__try` statement block was interrupted before all resources were allocated, so that not all resources were opened.  

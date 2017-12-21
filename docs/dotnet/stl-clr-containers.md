@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # STL/CLR Containers
 The STL/CLR Library has the same containers that are found in the C++ Standard Library, but it runs within the managed environment of the .NET Framework. If you are already familiar with the C++ Standard Library, STL/CLR is the best way to continue to use the skills that you have already developed while upgrading your code to target the common language runtime (CLR).  

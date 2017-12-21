@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC: Configuring an ODBC Data Source
 To use a [data source](../../data/odbc/data-source-odbc.md) with an application you have developed, you must use ODBC Administrator to configure it. ODBC Administrator keeps track of available data sources and their connection information in the Windows registry. Use ODBC Administrator to add, modify, and delete data sources in the **Data Sources** dialog box and to add and delete ODBC drivers.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator XOR
 Returns the result of a bitwise **XOR** operation for *expression1* and *expression2*.  

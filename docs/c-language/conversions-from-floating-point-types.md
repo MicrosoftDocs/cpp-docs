@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Conversions from Floating-Point Types
 A **float** value converted to a **double** or `long double`, or a **double** converted to a `long double`, undergoes no change in value. A **double** value converted to a **float** value is represented exactly, if possible. Precision may be lost if the value cannot be represented exactly. If the result is out of range, the behavior is undefined. See [Limits on Floating-Point Constants](../c-language/limits-on-floating-point-constants.md) for the range of floating-point types.  

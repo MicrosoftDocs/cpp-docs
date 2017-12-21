@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # for (OpenMP)
 Causes the work done in a for loop inside a parallel region to be divided among threads.  

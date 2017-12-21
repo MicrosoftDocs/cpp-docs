@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Converting Multibyte Characters
 **ANSI 3.1.3.4** The current locale used to convert multibyte characters into corresponding wide characters (codes) for a wide character constant  

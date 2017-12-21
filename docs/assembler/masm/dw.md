@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DW
 Allocates and optionally initializes a word (2 bytes) of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal. `DW` is a synonym of [WORD](../../assembler/masm/word.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # INCLUDE (MASM)
 Inserts source code from the source file given by *filename* into the current source file during assembly.  

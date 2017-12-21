@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4339
 'type' : use of undefined type detected in WinRT or CLR meta-data - use of this type may lead to a runtime exception  

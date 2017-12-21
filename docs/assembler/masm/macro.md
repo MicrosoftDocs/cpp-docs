@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MACRO
 Marks a macro block called *name* and establishes *parameter* placeholders for arguments passed when the macro is called.  

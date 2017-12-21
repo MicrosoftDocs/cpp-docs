@@ -11,6 +11,7 @@ ms.assetid: 33d8c1f4-13f1-4f61-b407-30715b28142f
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "linux"]
 ---
 # Linux Project Property Page Reference
 

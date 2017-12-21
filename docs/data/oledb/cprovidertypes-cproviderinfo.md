@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CProviderTypes, CProviderInfo
 Call the typedef class **CProviderTypes** to implement its parameter class **CProviderInfo**.  

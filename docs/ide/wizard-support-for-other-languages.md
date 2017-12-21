@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Wizard Support for Other Languages
 When you install Visual Studio, the setup application detects the locale listed in your system and installs the appropriate language template or templates for that locale. For example, for Western European locales, setup installs English, French, Italian, Spanish, and German. These languages appear in the **Resource language** list on the [Application Type](../mfc/reference/application-type-mfc-application-wizard.md) page of the MFC Application Wizard.  

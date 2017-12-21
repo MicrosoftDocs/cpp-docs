@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Wide Characters
 **ANSI 3.1.3.4** The value of an integer character constant that contains more than one character or a wide character constant that contains more than one multibyte character  

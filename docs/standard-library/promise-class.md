@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::promise [C++]", "std::promise [C++], promise", "std::promise [C++], get_future", "std::promise [C++], set_exception", "std::promise [C++], set_exception_at_thread_exit", "std::promise [C++], set_value", "std::promise [C++], set_value_at_thread_exit", "std::promise [C++], swap"]
+ms.workload: ["cplusplus"]
 ---
 # promise Class
 Describes an *asynchronous provider*.  

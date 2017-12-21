@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # pop_macro
 Sets the value of the *macro_name* macro to the value on the top of the stack for this macro.  

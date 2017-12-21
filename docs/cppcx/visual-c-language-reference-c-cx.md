@@ -12,6 +12,7 @@ caps.latest.revision: 27
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Visual C++ Language Reference (C++/CX)
 

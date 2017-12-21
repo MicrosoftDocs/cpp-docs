@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cscanf
 This POSIX function is deprecated. Use the ISO C++ conformant [_cscanf](../../c-runtime-library/reference/cscanf-cscanf-l-cwscanf-cwscanf-l.md) instead.  

@@ -18,6 +18,7 @@ caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strstr, wcsstr, _mbsstr, _mbsstr_l
 Returns a pointer to the first occurrence of a search string in a string.  

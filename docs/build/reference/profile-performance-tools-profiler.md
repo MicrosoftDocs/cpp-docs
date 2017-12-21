@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /PROFILE (Performance Tools Profiler)
 Produces an output file that can be used with the Performance Tools profiler.  

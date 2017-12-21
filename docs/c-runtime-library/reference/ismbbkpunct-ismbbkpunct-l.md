@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbbkpunct, _ismbbkpunct_l
 Checks whether a multibyte character is a punctuation character.  

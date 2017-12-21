@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::packaged_task [C++]", "std::packaged_task [C++], packaged_task", "std::packaged_task [C++], get_future", "std::packaged_task [C++], make_ready_at_thread_exit", "std::packaged_task [C++], reset", "std::packaged_task [C++], swap", "std::packaged_task [C++], valid"]
+ms.workload: ["cplusplus"]
 ---
 # packaged_task Class
 Describes an *asynchronous provider* that is a call wrapper whose call signature is `Ty(ArgTypes...)`. Its *associated asynchronous state* holds a copy of its callable object in addition to the potential result.  

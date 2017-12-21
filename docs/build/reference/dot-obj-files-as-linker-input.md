@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .Obj Files as Linker Input
 The linker tool (LINK.EXE) accepts .obj files that are in Common Object File Format (COFF).  

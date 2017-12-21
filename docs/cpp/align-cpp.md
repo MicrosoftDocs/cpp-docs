@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # align (C++)
 In Visual Studio 2015 and later, use the C++11 standard `alignas` specifier to control alignment. For more information, see [Alignment](../cpp/alignment-cpp-declarations.md).  

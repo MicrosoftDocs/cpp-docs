@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.30   Use of Reprivatization
 The following example demonstrates the reprivatization of variables. Private variables can be marked `private` again in a nested directive. They do not have to be shared in the enclosing parallel region.  

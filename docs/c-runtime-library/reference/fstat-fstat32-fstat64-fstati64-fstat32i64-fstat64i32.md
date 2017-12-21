@@ -18,6 +18,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 Gets information about an open file.  

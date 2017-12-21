@@ -18,6 +18,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __RTDynamicCast
 Runtime implementation of the [dynamic_cast](../cpp/dynamic-cast-operator.md) operator.  

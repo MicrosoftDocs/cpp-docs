@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # COLUMN_ENTRY_TYPE_SIZE
 Represents a binding to the specific column in the database. Supports `type` and `size` parameters.  

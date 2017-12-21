@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2392
 'method1' : covariant returns types are not supported in managed or WinRTtypes, otherwise 'method2' would be overridden  

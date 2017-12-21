@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # critical_section Class
 A non-reentrant mutex which is explicitly aware of the Concurrency Runtime.  

@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Os, /Ot (Favor Small Code, Favor Fast Code)
 Minimizes or maximizes the size of EXEs and DLLs.  

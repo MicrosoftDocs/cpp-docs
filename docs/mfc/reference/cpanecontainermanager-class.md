@@ -15,6 +15,7 @@ caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CPaneContainerManager Class
 The `CPaneContainerManager` class manages the storage and display of the current docking layout.  

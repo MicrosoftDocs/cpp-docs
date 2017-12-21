@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _fcvt
 Converts a floating-point number to a string. A more secure version of this function is available; see [_fcvt_s](../../c-runtime-library/reference/fcvt-s.md).  

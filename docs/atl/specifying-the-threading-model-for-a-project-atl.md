@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Specifying the Threading Model for a Project (ATL)
 The following macros are available to specify the threading model of an ATL project:  

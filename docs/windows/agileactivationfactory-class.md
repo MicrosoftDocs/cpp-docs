@@ -14,6 +14,7 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # AgileActivationFactory Class
 Represents an apartment-friendly activation factory that implements [FtmBase](../windows/ftmbase-class.md).  

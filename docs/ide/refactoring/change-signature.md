@@ -11,6 +11,7 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 
 # Change Signature

@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # minus Struct
 A predefined function object that performs the subtraction operation (binary `operator-`)  on its arguments.  

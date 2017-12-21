@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fmod Function
 **ANSI 4.5.6.4** Whether a domain error occurs or zero is returned when the `fmod` function has a second argument of zero  

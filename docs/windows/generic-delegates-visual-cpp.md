@@ -14,6 +14,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Generic Delegates (Visual C++)
 You can use generic type parameters with delegates. For more information on delegates, see [delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md).  

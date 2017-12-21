@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN055: Migrating MFC ODBC Database Class Applications to MFC DAO Classes
 > [!NOTE]

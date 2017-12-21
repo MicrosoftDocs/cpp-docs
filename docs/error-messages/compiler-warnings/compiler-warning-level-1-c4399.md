@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4399
 'symbol' : per-process symbol should not be marked with __declspec(dllimport) when compiled with /clr:pure  

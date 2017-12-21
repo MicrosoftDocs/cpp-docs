@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # WHILE (MASM)
 Repeats assembly of block `statements` as long as *expression* remains true.  

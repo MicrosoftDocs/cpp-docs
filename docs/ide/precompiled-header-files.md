@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Precompiled Header Files
 These files are used to build a precompiled header file *Projname*.pch and a precompiled types file Stdafx.obj.  

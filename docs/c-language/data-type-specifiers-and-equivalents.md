@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Data Type Specifiers and Equivalents
 This book generally uses the forms of the type specifiers listed in the following table rather than the long forms, and it assumes that the `char` type is signed by default. Therefore, throughout this book, `char` is equivalent to **signed char**.  

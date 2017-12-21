@@ -18,6 +18,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # lgamma, lgammaf, lgammal
 Determines the natural logarithm of the absolute value of the gamma function of the specified value.  

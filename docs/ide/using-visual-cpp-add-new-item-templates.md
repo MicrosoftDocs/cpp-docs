@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using Visual C++ Add New Item Templates
 You can easily add items that are common to Visual C++ projects by using the **Add New Item** command. When you use the **Add New Item** command, the `Add New Item` dialog box appears with a list of item templates, which add the appropriate files to your project.  

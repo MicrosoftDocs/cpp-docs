@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3920
 'operator'' : cannot define a postfix increment/decrement WinRT or CLR operator  Calling the postfix WinRT or CLR operator will call the corresponding prefix WinRT or CLR operator (op_Increment/op_Decrement), but with postfix semantics  

@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ultoa_s, _ultow_s
 Convert an unsigned long integer to a string. These are versions of [_ultoa, _ultow](../../c-runtime-library/reference/ultoa-ultow.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

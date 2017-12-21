@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # runtime_exception Class
 The base type for exceptions in the C++ Accelerated Massive Parallelism (AMP) library.  

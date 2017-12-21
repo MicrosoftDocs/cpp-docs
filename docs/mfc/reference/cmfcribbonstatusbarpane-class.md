@@ -15,6 +15,7 @@ caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonStatusBarPane Class
 The `CMFCRibbonStatusBarPane` class implements a ribbon element that you can add to a ribbon status bar.  

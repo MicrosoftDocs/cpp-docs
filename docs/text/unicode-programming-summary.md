@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Unicode Programming Summary
 To take advantage of the MFC and C run-time support for Unicode, you need to:  

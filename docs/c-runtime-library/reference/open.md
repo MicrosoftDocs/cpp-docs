@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # open
 This POSIX function is deprecated. Use the ISO C++ conformant [_open](../../c-runtime-library/reference/open-wopen.md) instead.

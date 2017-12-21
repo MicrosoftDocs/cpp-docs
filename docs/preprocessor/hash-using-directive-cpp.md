@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # #using Directive (C++/CLR)
 Imports metadata into a program compiled with [/clr](../build/reference/clr-common-language-runtime-compilation.md).  

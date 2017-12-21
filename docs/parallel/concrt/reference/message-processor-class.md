@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # message_processor Class
 The `message_processor` class is the abstract base class for processing of `message` objects. There is no guarantee on the ordering of the messages.  

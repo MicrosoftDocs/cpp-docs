@@ -18,6 +18,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _strdup_dbg, _wcsdup_dbg
 Versions of [_strdup and _wcsdup](../../c-runtime-library/reference/strdup-wcsdup-mbsdup.md) that use the debug version of `malloc`.  

@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier Class
 Invokes an event handler when the last object in the current module is released. The event handler is specified by an object and its pointer-to-a-method member.  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Provider Support for Bookmarks
 The example in this topic adds the `IRowsetLocate` interface to the `CMyProviderRowset` class. In almost all cases, you start by adding an interface to an existing COM object. You can then test it by adding more calls from the consumer templates. The example demonstrates how to:  

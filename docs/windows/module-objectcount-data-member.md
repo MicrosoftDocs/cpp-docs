@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::objectCount_ Data Member
 Keeps track of how many classes have been created with the [Make](../windows/make-function.md) function.  

@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::experimental::filesystem::directory_iterator", "std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "std::experimental::filesystem::directory_iterator", "std::experimental::filesystem::directory_iterator::directory_iterator", "std::experimental::filesystem::directory_iterator::increment", "std::experimental::filesystem::directory_iterator::operator=", "std::experimental::filesystem::directory_iterator::operator==", "std::experimental::filesystem::directory_iterator::operator!=", "std::experimental::filesystem::directory_iterator::operator*", "std::experimental::filesystem::directory_iterator::operator-&gt;", "std::experimental::filesystem::directory_iterator::operator++"]
+ms.workload: ["cplusplus"]
 ---
 # directory_iterator Class
 Describes an input iterator that sequences through the filenames in a directory. For an iterator X, the expression *X evaluates to an object of class directory_entry that wraps the filename and anything known about its status.  

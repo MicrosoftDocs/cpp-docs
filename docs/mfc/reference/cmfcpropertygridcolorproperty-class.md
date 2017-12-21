@@ -15,6 +15,7 @@ caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridColorProperty Class
 The `CMFCPropertyGridColorProperty` class supports a property list control item that opens a color selection dialog box.  

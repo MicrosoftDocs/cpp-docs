@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CGlobalHeap Class
 This class implements [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) using the Win32 global heap functions.  

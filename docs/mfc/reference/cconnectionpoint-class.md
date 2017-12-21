@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CConnectionPoint Class
 Defines a special type of interface used to communicate with other OLE objects, called a "connection point."  

@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Enabling Tool Tips
 You can enable tool tip support for the child controls of a window (such as the controls on a form view or dialog box).  

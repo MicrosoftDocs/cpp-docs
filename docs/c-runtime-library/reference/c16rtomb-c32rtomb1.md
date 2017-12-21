@@ -18,6 +18,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # c16rtomb, c32rtomb
 Convert a UTF-16 or UTF-32 wide character into a multibyte character in the current locale.  

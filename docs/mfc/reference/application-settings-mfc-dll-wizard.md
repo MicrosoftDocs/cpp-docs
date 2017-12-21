@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Application Settings, MFC DLL Wizard
 Use this page of the MFC DLL wizard to design and add basic features to a new MFC DLL project.  

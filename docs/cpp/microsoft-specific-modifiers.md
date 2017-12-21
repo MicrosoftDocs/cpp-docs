@@ -13,6 +13,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Microsoft-Specific Modifiers
 This section describes Microsoft-specific extensions to C++ in the following areas:  

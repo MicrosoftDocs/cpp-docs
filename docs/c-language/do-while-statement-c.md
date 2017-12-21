@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # do-while Statement (C)
 The `do-while` statement lets you repeat a statement or compound statement until a specified expression becomes false.  

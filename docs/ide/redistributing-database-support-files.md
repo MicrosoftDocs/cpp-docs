@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Redistributing Database Support Files
 You can redistribute support files for Data Access Objects (DAO) and for the database technologies in the Microsoft Data Access SDK.  

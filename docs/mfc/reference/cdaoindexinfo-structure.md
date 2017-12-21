@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoIndexInfo Structure
 The `CDaoIndexInfo` structure contains information about an index object defined for data access objects (DAO).  

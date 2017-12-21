@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # HLSL Property Pages
 You can use the HLSL compiler (fxc.exe) property pages to configure how individual HLSL shader files are built. The properties are divided into three categories:  

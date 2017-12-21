@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # What Is a Host Object?
 A host object is a COM object that represents the ActiveX control container supplied by ATL for a particular window. The host object subclasses the container window so that it can reflect messages to the control, it provides the necessary container interfaces to be used by the control, and it exposes the [IAxWinHostWindow](../atl/reference/iaxwinhostwindow-interface.md) and [IAxWinAmbientDispatch](../atl/reference/iaxwinambientdispatch-interface.md) interfaces to allow you to configure the environment of the control.  

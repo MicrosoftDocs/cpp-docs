@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3035
 OpenMP 'ordered' directive must bind directly to a 'for' or 'parallel for' directive with the 'ordered' clause  

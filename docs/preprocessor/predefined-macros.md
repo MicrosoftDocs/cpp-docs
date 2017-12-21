@@ -15,6 +15,7 @@ caps.latest.revision: 75
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Predefined Macros
 

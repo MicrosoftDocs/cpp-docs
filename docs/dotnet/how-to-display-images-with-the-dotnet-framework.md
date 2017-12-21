@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Display Images with the .NET Framework
 The following code example modifies the OnPaint event handler to retrieve a pointer to the <xref:System.Drawing.Graphics> object for the main form. The <xref:System.Windows.Forms.Form.OnPaint%2A> function is intended for a Windows Forms application, most likely created with a Visual Studio application wizard.  

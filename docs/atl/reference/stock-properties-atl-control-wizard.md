@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Stock Properties, ATL Control Wizard
 This page of the wizard identifies the stock properties supported for the control. By default, no properties are identified.  

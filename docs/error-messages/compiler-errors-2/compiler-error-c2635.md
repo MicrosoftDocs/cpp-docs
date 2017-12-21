@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2635
 cannot convert an 'identifier1*' to an 'identifier2\*'; conversion from a virtual base class is implied  

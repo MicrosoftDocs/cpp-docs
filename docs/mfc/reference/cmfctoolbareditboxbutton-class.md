@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarEditBoxButton Class
 A toolbar button that contains an edit control ( [CEdit Class](../../mfc/reference/cedit-class.md)).  

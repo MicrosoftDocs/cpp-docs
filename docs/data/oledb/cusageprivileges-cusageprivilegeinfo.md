@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CUsagePrivileges, CUsagePrivilegeInfo
 Call the typedef class **CUsagePrivileges** to implement its parameter class **CUsagePrivilegeInfo**.  

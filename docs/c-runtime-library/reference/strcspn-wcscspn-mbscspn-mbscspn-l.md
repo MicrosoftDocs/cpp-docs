@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strcspn, wcscspn, _mbscspn, _mbscspn_l
 Returns the index of the first occurrence in a string, of a character that belongs to a set of characters.  

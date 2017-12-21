@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # literal (C++ Component Extensions)
 A variable (data member) marked as `literal` in a **/clr** compilation is the native equivalent of a `static const` variable.  

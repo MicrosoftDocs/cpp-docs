@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # atan, atanf, atanl, atan2, atan2f, atan2l
 Calculates the arctangent of `x` (`atan`, `atanf`, and `atanl`) or the arctangent of `y`/`x` (`atan2`, `atan2f`, and `atan2l`).  

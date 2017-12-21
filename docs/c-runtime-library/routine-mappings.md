@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Routine Mappings
 The generic-text routine mappings are defined in TCHAR.H. `_tccpy` and `_tclen` map to functions in the MBCS model; they are mapped to macros or inline functions in the SBCS and Unicode models for completeness. For information on a generic text routine, see the help topic about the corresponding `SBCS`-, `_MBCS`-, or `_UNICODE`-related routine.  

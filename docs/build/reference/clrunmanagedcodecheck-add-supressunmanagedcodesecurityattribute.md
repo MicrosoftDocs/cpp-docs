@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /CLRUNMANAGEDCODECHECK (Add SupressUnmanagedCodeSecurityAttribute)
 **/CLRUNMANAGEDCODECHECK** specifies whether the linker will apply <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> to linker-generated `PInvoke` calls from managed code into native DLLs.  

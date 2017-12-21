@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMultiPageDHtmlDialog Class
 A multipage dialog displays multiple HTML pages sequentially and handles the events from each page.  

@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # multi_link_registry Class
 The `multi_link_registry` object is a `network_link_registry` that manages multiple source blocks or multiple target blocks.  

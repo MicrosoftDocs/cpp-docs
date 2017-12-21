@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumeratorAccessor::m_bIsParent
 A variable indicating whether the enumerator is a parent enumerator, if the row is an enumerator.  

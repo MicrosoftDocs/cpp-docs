@@ -14,6 +14,7 @@ caps.latest.revision: 40
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio
 You can create Visual C++ programs that use .NET classes and compile them by using the Visual Studio Development Environment.  

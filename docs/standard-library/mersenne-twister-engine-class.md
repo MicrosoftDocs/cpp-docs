@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # mersenne_twister_engine Class
 Generates a high quality random sequence of integers based on the Mersenne twister algorithm.  

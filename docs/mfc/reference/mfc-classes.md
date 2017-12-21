@@ -14,6 +14,7 @@ caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC Classes
 The classes in the following list are included in the Microsoft Foundation Class (MFC) Library.  

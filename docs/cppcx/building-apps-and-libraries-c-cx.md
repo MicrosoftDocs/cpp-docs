@@ -12,6 +12,7 @@ caps.latest.revision: 11
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Building apps and libraries (C++/CX)
 The topics in this section provide a few details about using the build system to produce a Universal Windows Platform app or Windows Runtime component.  

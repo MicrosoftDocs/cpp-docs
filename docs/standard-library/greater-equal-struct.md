@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # greater_equal Struct
 A binary predicate that performs the greater-than-or-equal-to operation ( `operator>=`) on its arguments.  

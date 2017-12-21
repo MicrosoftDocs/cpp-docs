@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IColumnsInfoImpl::MapColumnIDs
 Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Return Value of cl.exe
 cl.exe returns zero for success (no errors) and non-zero otherwise.  

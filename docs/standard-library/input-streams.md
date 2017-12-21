@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Input Streams
 An input stream object is a source of bytes. The three most important input stream classes are [istream](../standard-library/basic-istream-class.md), [ifstream](../standard-library/basic-ifstream-class.md), and [istringstream](../standard-library/basic-istringstream-class.md).  

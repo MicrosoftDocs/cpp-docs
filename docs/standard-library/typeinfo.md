@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;typeinfo&gt;
 Include the standard header `<typeinfo>` to define several types associated with the type-identification operator [typeid Operator](../cpp/typeid-operator.md), which yields information about both static and dynamic types.  

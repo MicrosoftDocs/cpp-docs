@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # EXITM
 Terminates expansion of the current repeat or macro block and begins assembly of the next statement outside the block.  

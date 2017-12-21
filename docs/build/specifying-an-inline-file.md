@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Specifying an Inline File
 Specify two angle brackets (<<) in the command where *filename* is to appear. The angle brackets cannot be a macro expansion.  

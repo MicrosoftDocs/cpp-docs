@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using Task Manager
 One of the simplest ways to debug a service is through the use of the Task Manager in Windows NT 4.0 or Windows 2000. While the service is running, start the Task Manager and click the **Processes** tab. Right-click the name of the EXE and then click **Debug**. This launches Visual C++ attached to that running process. Now, click **Break** on the **Debug** menu to allow you to set breakpoints in your code. Click **Run** to run to your selected breakpoints.  

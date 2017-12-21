@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding a Class (Visual C++)
 To add a class in a Visual C++ project, in **Solution Explorer**, right-click the project, click **Add**, and then click **Class**. This opens the [Add Class Dialog Box](../ide/add-class-dialog-box.md) dialog box.  

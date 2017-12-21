@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ITopologyNode Structure
 An interface to a topology node as defined by the Resource Manager. A node contains one or more execution resources.  

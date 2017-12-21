@@ -18,6 +18,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _mkgmtime, _mkgmtime32, _mkgmtime64
 Converts a UTC time represented by a `tm struct` to a UTC time represented by a `time_t` type.  

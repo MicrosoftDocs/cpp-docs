@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # A Tracking Handle to a Boxed Value
 The usage of a tracking handle to reference a value type has changed from Managed Extensions for C++ to Visual C++.  

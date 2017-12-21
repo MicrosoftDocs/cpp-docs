@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Views  (MFC Data Access)
 This section applies only to the MFC ODBC classes. For information about OLE DB record views, see [COleDBRecordView](../mfc/reference/coledbrecordview-class.md) and [Using OLE DB Record Views](../data/oledb/using-ole-db-record-views.md).  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # system Function
 **ANSI 4.10.4.5** The contents and mode of execution of the string by the **system** function  

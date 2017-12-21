@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCReBar Class
 A `CMFCReBar` object is a control bar that provides layout, persistence, and state information for rebar controls.  

@@ -11,6 +11,7 @@ ms.assetid: 64b42a88-3bd9-4399-8b96-75bceffc353b
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 
 # Rename

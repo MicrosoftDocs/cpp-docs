@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # XMMWORD
 Used for 128-bit multimedia operands with MMX and SSE (XMM) instructions.  

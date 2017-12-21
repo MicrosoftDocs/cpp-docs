@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4727
 "PCH named pch_file with same timestamp found in obj_file_1 and obj_file_2.  Using first PCH.  

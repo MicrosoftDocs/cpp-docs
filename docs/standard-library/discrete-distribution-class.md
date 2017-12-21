@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # discrete_distribution Class
 Generates a discrete integer distribution that has uniform-width intervals with uniform probability in each interval.  

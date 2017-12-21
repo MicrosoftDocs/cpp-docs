@@ -14,6 +14,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /clr Restrictions
 Note the following restrictions on the use of **/clr**:  

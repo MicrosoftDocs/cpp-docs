@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Recommendations for Choosing Between ATL and MFC
 When developing components and applications, you can choose between two approaches — ATL and MFC (the Microsoft Foundation Class Library).  

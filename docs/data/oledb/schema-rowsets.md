@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Schema Rowsets
 Schema (or metadata) is any information about a database's structure or organization, such as information on the provider, rowset, table, columns, or other information aside from the actual database content. OLE DB allows you to obtain such information without opening the rowset by using schema rowsets.  

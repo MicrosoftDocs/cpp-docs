@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeLessThan
 Determines whether one number is less than another.  

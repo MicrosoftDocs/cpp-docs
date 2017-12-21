@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Explicit Override of an Interface Member
 The syntax for declaring an explicit override of an interface member within a class has changed from Managed Extensions for C++ to Visual C++.  

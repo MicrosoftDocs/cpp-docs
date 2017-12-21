@@ -18,6 +18,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler
 Gets the function that is called when the CRT detects an invalid argument.  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Implementing a Simple Consumer
 The following topics show how to edit the files created by the MFC Application Wizard and ATL OLE DB Consumer Wizard to create a simple consumer. This example has the following parts:  
