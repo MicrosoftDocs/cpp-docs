@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3202
 'arg name' : invalid default argument for template parameter 'parameter', expected a class template  

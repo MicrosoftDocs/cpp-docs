@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # allocator&lt;void&gt; Class
 A specialization of the template class allocator to type `void`, defining the types that make sense in this context.  

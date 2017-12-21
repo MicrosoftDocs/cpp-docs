@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2692
 'function_name' : fully prototyped functions required in C compiler with the '/clr' option  

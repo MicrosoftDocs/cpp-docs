@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CTooltipManager Class
 Maintains runtime information about tooltips. The `CTooltipManager` class is instantiated one time per application.  

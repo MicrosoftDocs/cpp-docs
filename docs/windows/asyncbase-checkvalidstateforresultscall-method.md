@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::CheckValidStateForResultsCall Method
 Tests whether the results of an asynchronous operation can be collected in the current asynchronous state.  

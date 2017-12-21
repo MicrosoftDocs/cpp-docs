@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::GetOnProgress Method
 Copies the address of the current progress event handler to the specified variable.  

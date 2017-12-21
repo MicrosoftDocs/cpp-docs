@@ -13,6 +13,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Activate and Use a Windows Runtime Component Using WRL
 This document shows how to use the Windows Runtime C++ Template Library (WRL)to initialize the Windows Runtime and how to activate and use a Windows Runtime component.  

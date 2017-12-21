@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # alloc_text
 Names the code section where the specified function definitions are to reside. The pragma must occur between a function declarator and the function definition for the named functions.  

@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1353
 metadata operation failed: runtime not installed or version mismatch  

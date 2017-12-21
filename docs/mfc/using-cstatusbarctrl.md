@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CStatusBarCtrl
 You can use the status bar control ([CStatusBarCtrl](../mfc/reference/cstatusbarctrl-class.md)) to create a control window that reflects various kinds of status information about the application. The status window can be divided into parts that display more than one type of information.  

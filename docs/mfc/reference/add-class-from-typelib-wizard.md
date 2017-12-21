@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Add Class from Typelib Wizard
 Use this wizard to add an MFC class from an available type library. The wizard creates a class for each interface you add from the selected type library.  

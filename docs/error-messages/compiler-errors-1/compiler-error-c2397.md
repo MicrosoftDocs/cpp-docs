@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2397
 conversion from 'type_1' to 'type_2' requires a narrowing conversion  

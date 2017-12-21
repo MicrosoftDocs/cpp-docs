@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # length_error Class
 The class serves as the base class for all exceptions thrown to report an attempt to generate an object too long to be specified.  

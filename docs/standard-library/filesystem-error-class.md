@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # filesystem_error Class
 A base class for all exceptions that are thrown to report a low-level system overflow.  

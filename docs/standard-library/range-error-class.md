@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # range_error Class
 The class serves as the base class for all exceptions thrown to report a range error.  

@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCColorPopupMenu Class
 Represents a pop-up menu that users use to select colors in a document or application.  

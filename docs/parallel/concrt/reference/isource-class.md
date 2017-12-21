@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ISource Class
 The `ISource` class is the interface for all source blocks. Source blocks propagate messages to `ITarget` blocks.  

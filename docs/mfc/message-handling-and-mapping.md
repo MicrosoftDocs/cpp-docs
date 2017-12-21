@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Message Handling and Mapping
 This article family describes how messages and commands are processed by the MFC framework and how you connect them to their handler functions.  

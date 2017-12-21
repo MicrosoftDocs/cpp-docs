@@ -14,6 +14,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Generic Functions (C++/CLI)
 A generic function is a function that is declared with type parameters. When called, actual types are used instead of the type parameters.  

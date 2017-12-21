@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::TryLockShared Method
 Attempts to acquire a SRWLock object in shared mode for the current or specified SRWLock object.  

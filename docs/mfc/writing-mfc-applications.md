@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Writing MFC Applications
 This article explains the initial steps you take to develop your application. First, you must decide what kind of application you are writing. Several of the choices were discussed in [Application Design Choices](../mfc/application-design-choices.md). Will your application be:  

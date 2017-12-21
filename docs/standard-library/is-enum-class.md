@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_enum Class
 Tests if type is an enumeration.  

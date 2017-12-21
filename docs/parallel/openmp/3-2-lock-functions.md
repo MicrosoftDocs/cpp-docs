@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.2 Lock Functions
 The functions described in this section manipulate locks used for synchronization.  

@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockExclusiveTraits Structure
 Describes common characteristics of the SRWLock class in exclusive lock mode.  

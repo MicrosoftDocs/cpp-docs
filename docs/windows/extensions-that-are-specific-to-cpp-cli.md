@@ -13,6 +13,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Extensions That Are Specific to C++/CLI
 The following language features, which are explained in this section of the documentation, apply only to C++/CLI.  

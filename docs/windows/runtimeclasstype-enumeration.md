@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassType Enumeration
 Specifies the type of [RuntimeClass](../windows/runtimeclass-class.md) instance that is supported.  

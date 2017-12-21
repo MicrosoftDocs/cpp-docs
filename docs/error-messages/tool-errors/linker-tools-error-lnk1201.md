@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1201
 error writing to program database 'filename'; check for insufficient disk space, invalid path, or insufficient privilege  

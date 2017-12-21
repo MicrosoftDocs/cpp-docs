@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces Structure
 Specifies verification and initialization functions that can be applied to a set of interface IDs.  

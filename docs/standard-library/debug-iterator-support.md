@@ -14,6 +14,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Debug Iterator Support
 The Visual C++ run-time library detects incorrect iterator use, and asserts and displays a dialog box at run time. To enable debug iterator support, you must use debug versions of the C++ Standard Library and C Runtime Library to compile your program. For more information, see [CRT Library Features](../c-runtime-library/crt-library-features.md). For information about how to use checked iterators, see [Checked Iterators](../standard-library/checked-iterators.md).  

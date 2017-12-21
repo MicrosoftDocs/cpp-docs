@@ -14,6 +14,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Customization for MFC
 This topic provides tips for customizing an MFC application.  

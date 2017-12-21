@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Declare and Use Interior Pointers and Managed Arrays (C++/CLI)
 The following C++/CLI sample shows how you can declare and use an interior pointer to an array.  

@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3268
 'function' : a generic function or a member-function of a generic class cannot have a variable parameter list  

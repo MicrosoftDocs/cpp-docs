@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.18   Nested for Directives
 The following example of `for` directive nesting ([Section 2.9](../../parallel/openmp/2-9-directive-nesting.md) on page 33) is compliant because the inner and outer `for` directives bind to different parallel regions:  

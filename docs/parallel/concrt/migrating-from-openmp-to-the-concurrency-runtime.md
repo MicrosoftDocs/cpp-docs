@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Migrating from OpenMP to the Concurrency Runtime
 The Concurrency Runtime enables a variety of programming models. These models may overlap or complement the models of other libraries. The documents in this section compare [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) to the Concurrency Runtime and provide examples about how to migrate existing OpenMP code to use the Concurrency Runtime.  

@@ -15,6 +15,7 @@ caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # property  (C++ Component Extensions)
 Declares a *property*, which is a member function that behaves and is accessed like a data member or an array element.  

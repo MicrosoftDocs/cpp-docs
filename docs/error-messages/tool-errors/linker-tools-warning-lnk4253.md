@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4253
 section 'section1' not merged into 'section2'; already merged into 'section3'  

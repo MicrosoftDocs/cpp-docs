@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Sequence of Operations for Creating ActiveX Controls
 The following table shows your role and the framework's role in creating ActiveX controls (formerly known as OLE controls).  

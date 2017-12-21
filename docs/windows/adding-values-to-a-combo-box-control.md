@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Values to a Combo Box Control
 You can add values to a combo box control as long as you have the Dialog editor open.  

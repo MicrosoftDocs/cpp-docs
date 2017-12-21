@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Dynamic Layout
 With MFC in Visual Studio 2015, you can create dialogs that the user can resize, and you can control the way the layout adjusts to the change in size. For example, you can attach buttons at the bottom of a dialog to the bottom edge so they always stay at the bottom. You can also set up certain controls such as listboxes, editboxes, and text fields to expand as the user expands the dialog.  

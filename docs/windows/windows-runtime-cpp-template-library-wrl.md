@@ -13,6 +13,7 @@ caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Windows Runtime C++ Template Library (WRL)
 The Windows Runtime C++ Template Library (WRL)is a template library that provides a low-level way to author and use Windows Runtime components.  

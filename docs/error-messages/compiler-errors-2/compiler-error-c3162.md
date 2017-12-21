@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3162
 'type' : a reference type which has a destructor cannot be used as the type of static data member 'member'  

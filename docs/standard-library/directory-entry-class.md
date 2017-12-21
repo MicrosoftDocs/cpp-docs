@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::experimental::filesystem::directory_entry", "std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &", "std::experimental::filesystem::directory_entry::directory_entry", "std::experimental::filesystem::directory_entry::operator=", "std::experimental::filesystem::directory_entry::assign", "std::experimental::filesystem::directory_entry::replace_filename", "std::experimental::filesystem::directory_entry::path", "std::experimental::filesystem::directory_entry::status", "std::experimental::filesystem::directory_entry::symlink_status", "std::experimental::filesystem::directory_entry::operator&lt;", "std::experimental::filesystem::directory_entry::operator==", "std::experimental::filesystem::directory_entry::operator!=", "std::experimental::filesystem::directory_entry::operator&lt;=", "std::experimental::filesystem::directory_entry::operator&gt;", "std::experimental::filesystem::directory_entry::operator&gt;="]
+ms.workload: ["cplusplus"]
 ---
 # directory_entry Class
 Describes an object that is returned by `*X`, where *X* is a [directory_iterator](../standard-library/directory-iterator-class.md) or a [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md).  

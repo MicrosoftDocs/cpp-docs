@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;fstream&gt;
 Defines several classes that support iostreams operations on sequences stored in external files.  

@@ -13,6 +13,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Porting to the Universal Windows Platform (C++)
 In this topic, you can find information on how to port existing C++ code to the Windows 10 app platform, the Universal Windows Platform. What is meant by the term *universal* is that your code can run on any of the devices that run Windows 10, including desktop, phone, tablets, and future devices that run Windows 10. You create a single project and a single XAML-base user interface that works well on any device that runs Windows 10. You can use dynamic layout features in XAML to allow the app's UI to adapt to different display sizes.  

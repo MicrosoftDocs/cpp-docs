@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_trivially_default_constructible Class
 Tests if type has trivial default constructor.  

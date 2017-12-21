@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OLE in MFC
 These articles explain the fundamentals of OLE programming using MFC. MFC provides the easiest way to write programs that use OLE:  

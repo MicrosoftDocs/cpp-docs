@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Clipboard: When to Use Each Clipboard Mechanism
 Follow these guidelines in using the Clipboard:  

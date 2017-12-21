@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.7.2.5 default
 The **default** clause allows the user to affect the data-sharing attributes of variables. The syntax of the **default** clause is as follows:  

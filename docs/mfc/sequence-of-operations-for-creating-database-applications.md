@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Sequence of Operations for Creating Database Applications
 The following table shows your role and the framework's role in writing database applications.  

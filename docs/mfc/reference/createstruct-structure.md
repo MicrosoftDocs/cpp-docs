@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CREATESTRUCT Structure
 The `CREATESTRUCT` structure defines the initialization parameters passed to the window procedure of an application.  

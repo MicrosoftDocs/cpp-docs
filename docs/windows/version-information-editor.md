@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Version Information Editor
 Version information consists of company and product identification, a product release number, and copyright and trademark notification. With the Version Information editor, you create and maintain this data, which is stored in the version information resource. The version information resource is not required by an application, but it is a useful place to collect information that identifies the application. Version information is also used by setup APIs.  

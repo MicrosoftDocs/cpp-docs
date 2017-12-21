@@ -14,6 +14,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Boxing  (C++ Component Extensions)
 The Visual C++ compiler can convert value types to objects in a process called *boxing*, and convert objects to value types in a process called *unboxing*.  

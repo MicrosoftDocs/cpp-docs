@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Predefined Symbol IDs
 When you begin a new project, depending on the project type, some symbol IDs are predefined for your use. These symbol IDs support the various libraries and project types such as MFC. They represent common tasks that are usually included in any application, or actions of hardware items, such as a mouse or printer.  

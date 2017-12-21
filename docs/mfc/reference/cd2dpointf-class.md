@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CD2DPointF Class
 A wrapper for `D2D1_POINT_2F`.  

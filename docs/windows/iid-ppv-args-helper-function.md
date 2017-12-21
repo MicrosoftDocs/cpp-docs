@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # IID_PPV_ARGS_Helper Function
 Verifies that the type of the specified argument derives from the `IUnknown` interface.  

@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # MutexTraits Structure
 Defines common characteristics of the [Mutex](../windows/mutex-class1.md) class.  

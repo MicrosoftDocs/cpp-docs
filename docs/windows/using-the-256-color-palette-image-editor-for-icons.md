@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Using the 256-Color Palette (Image Editor for Icons)
 To draw with a selection from the 256-color palette, you need to select the colors from the Colors palette in the [Colors window](../windows/colors-window-image-editor-for-icons.md).  

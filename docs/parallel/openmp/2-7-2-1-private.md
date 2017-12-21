@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.7.2.1 private
 The `private` clause declares the variables in variable-list to be private to each thread in a team. The syntax of the `private` clause is as follows:  

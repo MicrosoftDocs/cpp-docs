@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Input and Output, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
 Use this dialog box to specify input and output options for [Mt.exe](http://msdn.microsoft.com/library/aa375649).  

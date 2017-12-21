@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Providing Mouse Interaction While Inactive
 If your control is not immediately activated, you may still want it to process `WM_SETCURSOR` and `WM_MOUSEMOVE` messages, even though the control has no window of its own. This can be accomplished by enabling `COleControl`'s implementation of the `IPointerInactive` interface, which is disabled by default. (See the *ActiveX SDK* for a description of this interface.) To enable it, include the `pointerInactive` flag in the set of flags returned by [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags):  

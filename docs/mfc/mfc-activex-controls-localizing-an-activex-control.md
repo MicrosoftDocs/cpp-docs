@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Localizing an ActiveX Control
 This article discusses procedures for localizing ActiveX control interfaces.  

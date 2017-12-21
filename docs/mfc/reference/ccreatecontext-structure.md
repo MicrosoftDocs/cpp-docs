@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CCreateContext Structure
 The framework uses the `CCreateContext` structure when it creates the frame windows and views that are associated with a document.  

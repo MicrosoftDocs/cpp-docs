@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Add Class From ActiveX Control Wizard
 Use this wizard to add an MFC class from an available ActiveX control. The wizard creates a class for each interface you add from the selected ActiveX control.  

@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding Controls By Hand
 You can either [add controls to a dialog box with the dialog editor](../mfc/using-the-dialog-editor-to-add-controls.md) or add them yourself, with code.  

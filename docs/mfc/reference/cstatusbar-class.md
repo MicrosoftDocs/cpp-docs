@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CStatusBar Class
 A control bar with a row of text output panes, or "indicators."  

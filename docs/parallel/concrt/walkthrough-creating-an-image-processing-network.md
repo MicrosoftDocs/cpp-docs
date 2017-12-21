@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating an Image-Processing Network
 This document demonstrates how to create a network of asynchronous message blocks that perform image processing.  

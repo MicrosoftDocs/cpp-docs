@@ -15,6 +15,7 @@ caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarMenuButton Class
 A toolbar button that contains a pop-up menu.  

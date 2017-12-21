@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4165
 'HRESULT' is being converted to 'bool'; are you sure this is what you want?  

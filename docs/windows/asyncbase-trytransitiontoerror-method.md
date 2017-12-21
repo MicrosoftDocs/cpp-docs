@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::TryTransitionToError Method
 Indicates whether the specified error code can modify the internal error state.  

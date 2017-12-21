@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Graphical Resources (Image Editor for Icons)
 Graphical resources are the images you define for your application. You can draw freehand or draw using shapes. You can select parts of an image for editing, flipping or resizing, or you can create a custom brush from a selected part of an image and draw with that brush. You can define image properties, save images in different formats, and convert images from one format to another.  

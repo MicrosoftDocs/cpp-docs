@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4540
 dynamic_cast used to convert to inaccessible or ambiguous base; run-time test will fail ('type1' to 'type2')  

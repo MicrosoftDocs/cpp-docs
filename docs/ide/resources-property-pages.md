@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Resources Property Pages
 For more information on using the resource compiler, see [Using RC (The RC Command Line)](http://msdn.microsoft.com/library/windows/desktop/aa381055).  

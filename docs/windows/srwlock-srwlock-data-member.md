@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::SRWLock_ Data Member
 Contains the underlying lock variable for the current SRWLock object.  

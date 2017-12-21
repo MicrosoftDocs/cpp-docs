@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN036: Using CFormView with AppWizard and ClassWizard
 This technical note described how to modify an AppWizard generated application so that it used a `CFormView` instead of the default `CView` as its main view class. This is supported directly with this version of Visual C++.  

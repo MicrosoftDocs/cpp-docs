@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1 and 3) C4793
 'function' : function is compiled as native code: 'reason'  

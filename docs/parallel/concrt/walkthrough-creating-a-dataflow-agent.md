@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating a Dataflow Agent
 This document demonstrates how to create agent-based applications that are based on dataflow, instead of control flow.  

@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Making Controls the Same Width, Height, or Size
 You can resize a group of controls based on the size of the dominant control. You can also [resize a control based on the dimensions of its caption text](../windows/sizing-individual-controls.md).  

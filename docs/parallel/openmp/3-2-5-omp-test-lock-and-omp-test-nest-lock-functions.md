@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.2.5 omp_test_lock and omp_test_nest_lock Functions
 These functions attempt to set a lock but do not block execution of the thread. The format is as follows:  

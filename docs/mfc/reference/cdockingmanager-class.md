@@ -15,6 +15,7 @@ caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDockingManager Class
 Implements the core functionality that controls docking layout in a main frame window.  

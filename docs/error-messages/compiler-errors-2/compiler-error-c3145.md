@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3145
 'object' : global or static variable may not have managed or WinRT type 'type'  

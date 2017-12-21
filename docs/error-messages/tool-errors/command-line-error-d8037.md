@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8037
 cannot create temporary il file; clean temp directory of old il files  

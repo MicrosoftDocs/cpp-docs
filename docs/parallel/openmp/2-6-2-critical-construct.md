@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.6.2 critical Construct
 The **critical** directive identifies a construct that restricts execution of the associated structured block to a single thread at a time. The syntax of the **critical** directive is as follows:  

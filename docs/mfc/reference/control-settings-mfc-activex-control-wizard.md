@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Control Settings, MFC ActiveX Control Wizard
 Use this page of the wizard to specify how you want the control to behave. For example, you can base the control on standard Windows control types, optimize its behavior and appearance, or indicate that the control can act as a container for other controls.  

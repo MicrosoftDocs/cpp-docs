@@ -12,6 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 f1_keywords: [VC.Project.VCDirectories.IncludePath, VC.Project.VCDirectories.LibraryPath, VC.Project.VCDirectories.SourcePath, VC.Project.VCDirectories.ExcludePath]
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # VC++ Directories (Linux C++)

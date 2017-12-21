@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Concurrency Namespace (C++ AMP)
 Provides classes and functions that accelerate the execution of C++ code on data-parallel hardware. For more information, see [C++ AMP Overview](../cpp-amp-overview.md)  

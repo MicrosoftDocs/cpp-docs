@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::GetTrustLevel Method
 Gets the trust level of the object that the current ActivationFactory instantiates.  

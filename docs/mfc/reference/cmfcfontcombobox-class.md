@@ -15,6 +15,7 @@ caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCFontComboBox Class
 The `CMFCFontComboBox` class creates a combo box control that contains a list of fonts.  

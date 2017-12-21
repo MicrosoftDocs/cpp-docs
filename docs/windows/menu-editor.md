@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Menu Editor
 Menus allow you to arrange commands in a logical and easy-to-find fashion. With the Menu editor, you can create and edit menus by working directly with a menu bar that closely resembles the one in your finished application.  

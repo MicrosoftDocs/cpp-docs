@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating Programs That Use Remote Automation
 Any automation object, and any automation controller, is able to use Remote Automation without any change to the source code, without the need for recompilation, and without the need for relinking. Once you have a setup that works locally (that is, on the same machine), you need go through only a few steps to execute it remotely.  

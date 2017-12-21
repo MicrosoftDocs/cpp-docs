@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::condition_variable_any", "std::condition_variable_any::condition_variable_any", "std::condition_variable_any::notify_all", "std::condition_variable_any::notify_one", "std::condition_variable_any::wait", "std::condition_variable_any::wait_for", "std::condition_variable_any::wait_until"]
+ms.workload: ["cplusplus"]
 ---
 # condition_variable_any Class
 Use the class `condition_variable_any` to wait for an event that has any `mutex` type.  

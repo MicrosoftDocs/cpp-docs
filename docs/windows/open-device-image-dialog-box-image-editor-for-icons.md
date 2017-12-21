@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Open &lt;Device&gt; Image Dialog Box (Image Editor for Icons)
 Use this dialog box to open device images. It lists existing device images in the current resource (images that are part of the current resource).  

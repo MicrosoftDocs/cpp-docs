@@ -12,6 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 f1_keywords: [VC.Project.VCConfiguration.OutputDirectory, VC.Project.VCConfiguration.IntermediateDirectory, VC.Project.VCConfiguration.ConfigurationType, VC.Project.VCConfiguration.BuildLogFile]
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # MakeFile Project Properties (Linux C++)

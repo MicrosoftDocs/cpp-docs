@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Use Exception Handling to Break from a Parallel Loop
 This topic shows how to write a search algorithm for a basic tree structure.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Custom Color Selector Dialog Box (Image Editor for Icons)
 This dialog box allows you to customize the colors you use for your image. For more information, see [Customizing or Changing Colors](../windows/customizing-or-changing-colors-image-editor-for-icons.md).  

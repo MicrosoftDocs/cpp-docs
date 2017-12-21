@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Deployment Concepts
 This section discusses the main considerations for deploying C++ applications.  

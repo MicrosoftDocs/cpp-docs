@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoTableDefInfo Structure
 The `CDaoTableDefInfo` structure contains information about a tabledef object defined for data access objects (DAO).  

@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDatabase Class
 Represents a connection to a data source, through which you can operate on the data source.  

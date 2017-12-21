@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Microsoft::WRL Namespace
 Defines the fundamental types that make up the Windows Runtime C++ Template Library.  

@@ -10,6 +10,7 @@ ms.assetid: f4f99066-9258-4330-81a8-f4a75a1d95ee
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4839
 

@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonGallery Class
 Implements Office 2007-style ribbon galleries.  

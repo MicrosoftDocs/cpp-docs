@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::InvokeAll Method
 Calls each event handler associated with the current [EventSource](../windows/eventsource-class.md) object using the specified argument types and arguments.  

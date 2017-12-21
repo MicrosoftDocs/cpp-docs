@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # NMAKE Fatal Error U1100
 macro 'macroname' is illegal in the context of batch rule 'rule'  

@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Cropping or Extending an Entire Image (Image Editor for Icons)
 The following procedures shows you how to crop or extend an entire image.  

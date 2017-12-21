@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing a Symbol&#39;s Numeric Value
 For symbols associated with a single resource, you can use the [Properties Window](/visualstudio/ide/reference/properties-window) to change the symbol value. You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the value of symbols not currently assigned to a resource. For more information, see [Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md).  

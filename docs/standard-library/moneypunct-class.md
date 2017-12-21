@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # moneypunct Class
 The template class describes an object that can serve as a locale facet to describe the sequences of type `CharType` used to represent a monetary input field or a monetary output field. If the template parameter `Intl` is `true`, international conventions are observed.  

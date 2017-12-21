@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # subtract_with_carry_engine Class
 Generates a random sequence by the subtract-with-carry (lagged Fibonacci) algorithm.  

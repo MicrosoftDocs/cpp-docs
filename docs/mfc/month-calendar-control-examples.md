@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Month Calendar Control Examples
 The [CMNCTRL1](../visual-cpp-samples.md) sample application demonstrates the various attributes of the `CMonthCalCtrl` class. The control, found on a separate tab in the sample, demonstrates basic functionality and allows the user to dynamically modify certain attributes.  

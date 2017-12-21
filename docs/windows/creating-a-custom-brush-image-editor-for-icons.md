@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a Custom Brush (Image Editor for Icons)
 A custom brush is a rectangular portion of an image that you pick up and use like one of the Image editor's ready-made brushes. All operations you can perform on a selection, you can perform on a custom brush as well.  

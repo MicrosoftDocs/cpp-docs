@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # ModuleType Enumeration
 Specifies whether a module should support an in-process server or an out-of-process server.  

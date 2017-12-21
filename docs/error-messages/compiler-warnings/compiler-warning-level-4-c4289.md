@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4289
 nonstandard extension used : 'var' : loop control variable declared in the for-loop is used outside the for-loop scope  

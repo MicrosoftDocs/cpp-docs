@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # pointer_to_binary_function Class
 Converts a binary function pointer into an adaptable binary function.  

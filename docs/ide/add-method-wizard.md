@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Add Method Wizard
 Use this wizard to add a method to an interface. Depending on the project type or interface type to which you are adding a method, the wizard displays different options.  

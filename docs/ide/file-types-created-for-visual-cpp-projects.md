@@ -14,6 +14,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # File Types Created for Visual C++ Projects
 This topic describes all the types of files that are associated with Visual C++ projects for classic desktop applications. The actual files included in your project depend on the project type and the options you select when using a wizard.  

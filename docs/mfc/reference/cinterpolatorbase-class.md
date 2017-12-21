@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CInterpolatorBase Class
 Implements a callback, which is called by the Animation API when it has to calculate a new value of an animation variable.  

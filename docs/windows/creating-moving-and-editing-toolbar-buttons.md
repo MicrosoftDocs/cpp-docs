@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating, Moving, and Editing Toolbar Buttons
 You can easily create, move, copy, and edit toolbar buttons.  

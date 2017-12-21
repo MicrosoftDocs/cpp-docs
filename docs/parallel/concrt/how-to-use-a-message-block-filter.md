@@ -14,6 +14,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Use a Message Block Filter
 This document demonstrates how to use a filter function to enable an asynchronous message block to accept or reject a message on the basis of the payload of that message.  

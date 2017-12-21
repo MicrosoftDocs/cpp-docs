@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;example&gt; (Visual C++)
 The \<example> tag lets you specify an example of how to use a method or other library member. Commonly, this would also involve use of the [\<code>](../ide/code-visual-cpp.md) tag.  

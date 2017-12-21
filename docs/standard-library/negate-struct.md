@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # negate Struct
 A predefined function object that performs the arithmetic negation operation (unary `operator-`) on its argument.  

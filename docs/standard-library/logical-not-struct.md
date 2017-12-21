@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # logical_not Struct
 A predefined function object that performs the logical not operation ( `operator!`) on its argument.  

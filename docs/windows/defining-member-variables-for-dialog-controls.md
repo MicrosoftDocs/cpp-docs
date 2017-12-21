@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Defining Member Variables for Dialog Controls
 To define a member variable for any dialog box control except buttons, you can use the following method.  

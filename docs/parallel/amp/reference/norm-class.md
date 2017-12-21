@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # norm Class
 Represent a norm number. Each element is a floating point number in the range of [-1.0f, 1.0f].  

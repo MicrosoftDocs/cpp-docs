@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # char_traits&lt;char&gt; Struct
 A struct that is a specialization of the template struct **char_traits\<CharType>** to an element of type `char`.  

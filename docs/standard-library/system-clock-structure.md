@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # system_clock Structure
 Represents a *clock type* that is based on the real-time clock of the system.  

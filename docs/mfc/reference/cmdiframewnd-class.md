@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMDIFrameWnd Class
 Provides the functionality of a Windows multiple document interface (MDI) frame window, along with members for managing the window.  

@@ -11,6 +11,7 @@ helpviewer_keywords: ["LNK2038"]
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2038
 

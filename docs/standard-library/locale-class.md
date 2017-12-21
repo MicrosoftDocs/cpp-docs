@@ -15,6 +15,7 @@ caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # locale Class
 The class that describes a locale object that encapsulates culture-specific information as a set of facets that collectively define a specific localized environment.  

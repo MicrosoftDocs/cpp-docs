@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Document-Template Classes
 Document-template objects coordinate the creation of document, view, and frame window objects when a new document or view is created.  

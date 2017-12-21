@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CBitmap Class
 Encapsulates a Windows graphics device interface (GDI) bitmap and provides member functions to manipulate the bitmap.  

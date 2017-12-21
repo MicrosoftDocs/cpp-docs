@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 4.4 OMP_NESTED
 The `OMP_NESTED` environment variable enables or disables nested parallelism unless nested parallelism is enabled or disabled by calling the `o`**mp_set_nested** library routine. If set to **TRUE**, nested parallelism is enabled; if it is set to **FALSE**, nested parallelism is disabled. The default value is **FALSE**.  

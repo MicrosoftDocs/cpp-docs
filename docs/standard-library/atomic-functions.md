@@ -13,6 +13,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 helpviewer_keywords: ["std::atomic_compare_exchange_strong [C++]", "std::atomic_compare_exchange_strong_explicit [C++]", "std::atomic_compare_exchange_weak [C++]", "std::atomic_compare_exchange_weak_explicit [C++]", "std::atomic_exchange [C++]", "std::atomic_exchange_explicit [C++]", "std::atomic_fetch_add [C++]", "std::atomic_fetch_add_explicit [C++]", "std::atomic_fetch_and [C++]", "std::atomic_fetch_and_explicit [C++]", "std::atomic_fetch_or [C++]", "std::atomic_fetch_or_explicit [C++]", "std::atomic_fetch_sub [C++]", "std::atomic_fetch_sub_explicit [C++]", "std::atomic_fetch_xor [C++]", "std::atomic_fetch_xor_explicit [C++]", "std::atomic_flag_clear [C++]", "std::atomic_flag_clear_explicit [C++]", "std::atomic_flag_test_and_set [C++]", "std::atomic_flag_test_and_set_explicit [C++]", "std::atomic_init [C++]", "std::atomic_is_lock_free [C++]", "std::atomic_load [C++]", "std::atomic_load_explicit [C++]", "std::atomic_signal_fence [C++]", "std::atomic_store [C++]", "std::atomic_store_explicit [C++]", "std::atomic_thread_fence [C++]", "std::kill_dependency [C++]"]
+ms.workload: ["cplusplus"]
 ---
 # &lt;atomic&gt; functions
 ||||  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3807
 'type' : a class with the ComImport attribute cannot derive from 'type2', only interface implementation is allowed  

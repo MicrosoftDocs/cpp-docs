@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Attribute Targets (C++ Component Extensions)
 Attribute usage specifiers let you specify attribute targets.  Each attribute is defined to apply to certain language elements. For example, an attribute might be defined to apply only to classes and structs.  The following list shows the possible syntactic elements on which a custom attribute can be used. Combinations of these values (using logical or) may be used.  

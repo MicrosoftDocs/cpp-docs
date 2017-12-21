@@ -13,6 +13,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Porting Guide: COM Spy
 This topic is the second in a series of articles that demonstrates the process of upgrading older Visual C++ projects to the latest version of Visual Studio. The example code in this topic was last compiled with Visual Studio 2005.  

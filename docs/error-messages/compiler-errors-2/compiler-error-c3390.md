@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3390
 'type_arg' : invalid type argument for generic parameter 'param' of generic 'generic_type', must be a reference type  

@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier::method_ Data Member
 Holds a pointer to the event handler for the current Module::MethodReleaseNotifier object.  

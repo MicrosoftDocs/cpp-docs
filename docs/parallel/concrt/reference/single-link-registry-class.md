@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # single_link_registry Class
 The `single_link_registry` object is a `network_link_registry` that manages only a single source or target block.  

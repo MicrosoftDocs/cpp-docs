@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;clocale&gt;
 Includes the Standard C library header \<locale.h> and adds the associated names to the `std` namespace.  

@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_default_constructible Class
 Tests if a type has a default constructor.  

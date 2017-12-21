@@ -12,6 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 f1_keywords: [VC.Project.VCLinkerTool.OutputFile, VC.Project.VCLinkerTool.ShowProgress, VC.Project.VCLinkerTool.Version, VC.Project.VCLinkerTool.VerboseOutput, VC.Project.VCLinkerTool.UnresolvedReferences, VC.Project.VCLinkerTool.OptimizeForMemory, VC.Project.VCLinkerTool.SharedLibrarySearchPath, VC.Project.VCLinkerTool.AdditionalLibraryDirectories, VC.Project.VCConfiguration.BuildLogFile, VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames, VC.Project.VCLinkerTool.ForceSymbolReferences, VC.Project.VCLinkerTool.LibraryDependencies, VC.Project.VCLinkerTool.ForceFileOutput, VC.Project.VCLinkerTool.GenerateMapFile, VC.Project.VCLinkerTool.Relocation, VC.Project.VCLinkerTool.FunctionBinding, VC.Project.VCLinkerTool.NoExecStackRequired, VC.Project.WholeArchive, VC.Project.AdditionalOptionsPage, VC.Project.VCLinkerTool.AdditionalDependencies]
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # Linker Properties (Linux C++)

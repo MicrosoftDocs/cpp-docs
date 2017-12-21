@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2616
 'conversion' : cannot implicitly convert a non-lvalue 'type1' to a 'type2' that is not const  

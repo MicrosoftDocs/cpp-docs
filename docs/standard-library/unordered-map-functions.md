@@ -14,6 +14,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::swap (unordered_map/multimap)"]
+ms.workload: ["cplusplus"]
 ---
 # &lt;unordered_map&gt; functions
 |||  

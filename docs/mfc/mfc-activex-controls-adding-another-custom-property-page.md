@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Another Custom Property Page
 Occasionally, an ActiveX control will have more properties than can reasonably fit on one property page. In this case, you can add property pages to the ActiveX control to display these properties.  

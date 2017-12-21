@@ -12,6 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 f1_keywords: [VC.Project.IVCEventTool.CommandLine, VC.Project.IVCEventTool.Description, VC.Project.IVCEventTool.ExcludedFromBuild, VC.Project.VCConfiguration.BuildLogFile]
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # Build Event Properties (Linux C++) 

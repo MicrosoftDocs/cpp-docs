@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # out (C++)
 Identifies pointer parameters that are returned from the called procedure to the calling procedure (from the server to the client).  

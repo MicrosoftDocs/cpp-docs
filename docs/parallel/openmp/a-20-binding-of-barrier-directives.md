@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.20   Binding of barrier Directives
 The directive binding rules call for a **barrier** directive to bind to the closest enclosing `parallel` directive. For more information on directive binding, see [Section 2.8](../../parallel/openmp/2-8-directive-binding.md) on page 32.  

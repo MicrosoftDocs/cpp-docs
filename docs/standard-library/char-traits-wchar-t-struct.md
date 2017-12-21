@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # char_traits&lt;wchar_t&gt; Struct
 A class that is a specialization of the template struct **char_traits\<CharType>** to an element of type `wchar_t`.  

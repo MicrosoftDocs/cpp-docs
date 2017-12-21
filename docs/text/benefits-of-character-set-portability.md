@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Benefits of Character Set Portability
 You can benefit from using MFC and C run-time portability features even if you do not currently intend to internationalize your application:  

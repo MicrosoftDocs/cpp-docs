@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Win32 Internet Classes
 MFC wraps the Win32 Internet (WinInet) and ActiveX technology to make Internet programming easier.  

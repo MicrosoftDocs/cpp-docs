@@ -13,6 +13,7 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # WRL Reference
 This section contains reference information for the Windows Runtime C++ Template Library (WRL).  

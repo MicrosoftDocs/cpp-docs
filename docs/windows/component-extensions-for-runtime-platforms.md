@@ -14,6 +14,7 @@ caps.latest.revision: 77
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Component Extensions for Runtime Platforms
 Visual C++ provides language extensions to help you program against runtime platforms. By using C++/CX, you can program Universal Windows Platform apps and components that compile to native code. Although you can create Universal Windows Platform apps by programming directly against the Windows Runtime COM interfaces, by using C++/CX, you can work with constructors, exceptions, and other modern C++ programming idioms. To enable C++ programming in a managed execution environment on the .NET platform, you can use C++/CLI.  

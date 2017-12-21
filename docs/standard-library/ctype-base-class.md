@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ctype_base Class
 The class serves as a base class for facets of template class [ctype](../standard-library/ctype-class.md). A base class for the ctype class that is used to define enumeration types used to classify or test characters either individually or within entire ranges.  

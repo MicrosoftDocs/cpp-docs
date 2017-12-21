@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # odl
 Identifies an interface as an Object Description Language (ODL) interface. The MIDL compiler does not require the **odl** attribute; it is recognized only for compatibility with older .odl files.  

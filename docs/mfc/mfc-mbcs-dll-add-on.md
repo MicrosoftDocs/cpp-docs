@@ -14,6 +14,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC MBCS DLL Add-on
  You need the multibyte DLLs in order to build an MFC project in Visual Studio 2015 that has the **Character Set** property set to **Use Multi-Byte Character Set** or **Not Set**.  

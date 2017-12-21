@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Program or Control Source and Header Files
 The following files are created when you create an ATL project in Visual Studio, depending on the options you select for the project you create.  

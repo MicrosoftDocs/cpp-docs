@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4311
 'variable' : pointer truncation from 'type' to 'type'  

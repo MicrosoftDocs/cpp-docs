@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Drag and Drop: Implementing a Drop Source
 This article explains how to get your application to provide data to a drag-and-drop operation.  

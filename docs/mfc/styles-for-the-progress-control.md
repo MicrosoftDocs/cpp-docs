@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Styles for the Progress Control
 When you initially create the progress control ([CProgressCtrl::Create](../mfc/reference/cprogressctrl-class.md#create)), use the `dwStyle` parameter to specify the desired window styles for your progress control. The following list details the applicable window styles. The control ignores any window style other than the ones listed here. You should always create the control as a child window, usually of a dialog box parent.  

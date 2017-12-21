@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CBitmapRenderTarget Class
 A wrapper for ID2D1BitmapRenderTarget.  

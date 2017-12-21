@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # pointer_default
 Specifies the default pointer attribute for all pointers, except top-level pointers that appear in parameter lists.  

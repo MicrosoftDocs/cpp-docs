@@ -15,6 +15,7 @@ caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarImages Class
 The images on a toolbar. The `CMFCToolBarImages` class manages toolbar images loaded from application resources or from files.  

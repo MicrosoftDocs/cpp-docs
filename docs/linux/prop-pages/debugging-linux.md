@@ -12,6 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 f1_keywords: [VC.Project.RaspberryDebugger.DebuggerType, VC.Project.IVCLocalDebugPageObject.CommandArguments, VC.Project.IVCLocalDebugPageObject.WorkingDirectory, VC.Project.RaspberryDebugger.LaunchActivity, VC.Project.LinuxDebugger.DebugChildProcesses]
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # C++ Debugging Properties (Linux C++)

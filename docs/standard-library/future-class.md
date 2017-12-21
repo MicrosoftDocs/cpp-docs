@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::future [C++]", "std::future [C++], future", "std::future [C++], get", "std::future [C++], share", "std::future [C++], valid", "std::future [C++], wait", "std::future [C++], wait_for", "std::future [C++], wait_until"]
+ms.workload: ["cplusplus"]
 ---
 # future Class
 Describes an *asynchronous return object*.  

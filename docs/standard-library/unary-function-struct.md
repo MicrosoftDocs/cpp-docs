@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # unary_function Struct
 An empty base struct that defines types that may be inherited by derived classes that provides a unary function object.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Copy Resources
 You can copy resources from one file to another without changing them or you can [change the language or condition of a resource while copying it](../windows/how-to-change-the-language-or-condition-of-a-resource-while-copying.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Setting the Size of the Combo Box and Its Drop-Down List
 You can size a combo box when you add it to the dialog box. You can also specify the size of the drop-down list box.  

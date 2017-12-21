@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakRef::CopyTo Method
 Assigns a pointer to an interface, if available, to the specified pointer variable.  

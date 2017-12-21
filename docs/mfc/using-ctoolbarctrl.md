@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CToolBarCtrl
 You can use the toolbar control ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)) to create a control window containing buttons and optional spaces. Each button in the toolbar control window sends a command message to the parent window as the user chooses it. Typically, the buttons in a toolbar correspond to items in the application's menu, providing an additional and more direct way for the user to access an application's commands.  

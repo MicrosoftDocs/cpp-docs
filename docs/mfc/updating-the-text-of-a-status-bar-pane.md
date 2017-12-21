@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Updating the Text of a Status-Bar Pane
 This article explains how to change the text that appears in an MFC status bar pane. A status bar — a window object of class [CStatusBar](../mfc/reference/cstatusbar-class.md) — contains several "panes." Each pane is a rectangular area of the status bar that you can use to display information. For example, many applications display the status of the CAPS LOCK, NUM LOCK, and other keys in the rightmost panes. Applications also often display informative text in the leftmost pane (pane 0), sometimes called the "message pane." For example, the default MFC status bar uses the message pane to display a string explaining the currently selected menu item or toolbar button. The figure in [Status Bars](../mfc/status-bar-implementation-in-mfc.md) shows a status bar from an Application Wizard-created MFC application.  

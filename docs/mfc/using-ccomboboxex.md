@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CComboBoxEx
 The extended combo box control is an extension of the standard combo box control that provides native support for item images. These images can be used to indicate the status of individual items in the combo box, such as the currently selected and unselected items. To make item images easily accessible, the control provides image list support.  

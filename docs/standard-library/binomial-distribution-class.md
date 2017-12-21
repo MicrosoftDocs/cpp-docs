@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # binomial_distribution Class
 Generates a binomial distribution.  

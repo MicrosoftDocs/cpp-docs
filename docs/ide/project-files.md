@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Project Files
 A Visual C++ project file is an XML-based file that has the .vcxproj file name extension and contains information that is required to build a Visual C++ project.  

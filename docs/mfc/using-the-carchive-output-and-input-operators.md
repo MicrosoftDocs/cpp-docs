@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using the CArchive &lt;&lt; and &gt;&gt; Operators
 `CArchive` provides <\< and >> operators for writing and reading simple data types as well as `CObject`s to and from a file.  

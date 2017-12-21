@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN035: Using Multiple Resource Files and Header Files with Visual C++
 > [!NOTE]

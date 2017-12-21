@@ -14,6 +14,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Working with Projects and Solutions (C++)
 

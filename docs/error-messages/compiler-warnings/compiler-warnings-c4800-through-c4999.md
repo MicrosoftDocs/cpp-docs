@@ -9,6 +9,7 @@ ms.assetid: c3182430-8b3b-4ab2-a532-5cd436707dc8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings C4800 Through C5999
 

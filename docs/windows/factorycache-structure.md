@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # FactoryCache Structure
 Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  

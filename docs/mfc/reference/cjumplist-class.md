@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CJumpList Class
 A `CJumpList` is the list of shortcuts revealed when you right click on an icon in the task bar.  

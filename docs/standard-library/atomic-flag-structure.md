@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # atomic_flag Structure
 Describes an object that atomically sets and clears a `bool` flag. Operations on atomic flags are always lock-free.  

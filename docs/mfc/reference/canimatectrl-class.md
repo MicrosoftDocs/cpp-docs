@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAnimateCtrl Class
 Provides the functionality of the Windows common animation control.  

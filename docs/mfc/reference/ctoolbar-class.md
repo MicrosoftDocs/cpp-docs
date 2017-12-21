@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CToolBar Class
 Control bars that have a row of bitmapped buttons and optional separators.  

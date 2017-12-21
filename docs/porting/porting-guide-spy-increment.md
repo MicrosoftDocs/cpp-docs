@@ -13,6 +13,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Porting Guide: Spy++
 This porting case study is designed to give you an idea of what a typical porting project is like, the types of problems you might encounter, and some general tips and tricks for addressing porting problems. It's not meant to be a definitive guide to porting, since the experience of porting a project depends very much on the specifics of the code.  

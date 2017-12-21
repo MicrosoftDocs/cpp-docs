@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Manifest Tool Property Pages
 Use the **Manifest Tool** property pages to set build options for mt.exe.  

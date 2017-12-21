@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Support for Using wmain
 Visual C++ supports defining a **wmain** function and passing wide-character arguments to your Unicode application. You declare formal parameters to **wmain**, using a format similar to **main**. You can then pass wide-character arguments and, optionally, a wide-character environment pointer to the program. The `argv` and `envp` parameters to **wmain** are of type `wchar_t*`. For example:  

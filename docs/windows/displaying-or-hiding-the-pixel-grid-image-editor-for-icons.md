@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Displaying or Hiding the Pixel Grid (Image Editor for Icons)
 For all Image Editor panes with a magnification factor of 4 or greater, you can display a grid that delimits the individual pixels in the image.  

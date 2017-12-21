@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4098
 defaultlib 'library' conflicts with use of other libs; use /NODEFAULTLIB:library  

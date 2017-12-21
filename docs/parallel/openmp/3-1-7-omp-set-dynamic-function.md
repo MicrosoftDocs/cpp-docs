@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 3.1.7 omp_set_dynamic Function
 The **omp_set_dynamic** function enables or disables dynamic adjustment of the number of threads available for execution of parallel regions. The format is as follows:  

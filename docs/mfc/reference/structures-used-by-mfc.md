@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Structures Used by MFC
 The following table lists structures that are called from various member functions. For further information on individual structure usage, refer to the classes and member functions noted in the See Also list for each structure.  

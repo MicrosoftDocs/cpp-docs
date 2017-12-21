@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing an Image Outside of a Project (Image Editor for Icons)
 You can open and edit images in the development environment just as you would in any graphics application. The images you work with need not be part of a Visual Studio project for stand-alone editing.  

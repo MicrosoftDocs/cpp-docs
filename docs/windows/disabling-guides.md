@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Disabling Guides
 You can use special keys in conjunction with the mouse to disable the snapping effect of the guides. Using the ALT key disables the snapping effects of the guide selected. Moving a guide with the SHIFT key prevents snapped controls from moving with the guide.  

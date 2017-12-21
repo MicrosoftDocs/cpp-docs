@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # enable_shared_from_this Class
 Helps generate a `shared_ptr`.  

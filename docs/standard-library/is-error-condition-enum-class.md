@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_error_condition_enum Class
 Represents a type predicate that tests for the [error_condition](../standard-library/error-condition-class.md) enumeration.  

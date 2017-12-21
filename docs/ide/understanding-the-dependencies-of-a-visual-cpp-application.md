@@ -14,6 +14,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Understanding the Dependencies of a Visual C++ Application
 To determine which Visual C++ libraries an application depends on, you can view the project properties. (In Solution Explorer, right-click on the project and choose **Properties** to open the **Property Pages** dialog box.) You can also use the Dependency Walker (depends.exe), which gives a more comprehensive picture of the dependencies.  

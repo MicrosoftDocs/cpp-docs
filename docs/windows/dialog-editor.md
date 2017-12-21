@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Dialog Editor
 The Dialog editor allows you to create or edit dialog box resources. You open the dialog editor by double-clicking on a dialog’s .rc file in the Resource View window (**View &#124; Resource View**). Note that Resource View is not available in Express editions.  

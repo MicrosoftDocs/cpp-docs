@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # auto_inline
 Excludes any functions defined within the range where **off** is specified from being considered as candidates for automatic inline expansion.  

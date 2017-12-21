@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Redistributing an ATL application
 Starting in Visual Studio 2012, Active Template Library (ATL) is a header-only library. ATL projects do not have a Dynamic Link to ATL option. No redistributable ATL library is required.  

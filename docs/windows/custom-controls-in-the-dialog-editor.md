@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Custom Controls in the Dialog Editor
 The Dialog editor lets you use existing "custom" or "user" controls in a dialog box template.  

@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COleLinkingDoc Class
 The base class for OLE container documents that support linking to the embedded items they contain.  

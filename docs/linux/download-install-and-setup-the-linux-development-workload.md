@@ -11,6 +11,7 @@ ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # Download, install, and setup the Linux workload

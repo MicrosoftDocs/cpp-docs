@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Sizing Individual Controls
 Use the sizing handles to resize a control. When the pointer is positioned on a sizing handle, it changes shape to indicate the directions in which the control can be resized. Active sizing handles are solid; if a sizing handle is hollow, the control cannot be resized along that axis.  

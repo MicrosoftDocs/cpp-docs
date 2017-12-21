@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::GetOnComplete Method
 Copies the address of the current completion event handler to the specified variable.  

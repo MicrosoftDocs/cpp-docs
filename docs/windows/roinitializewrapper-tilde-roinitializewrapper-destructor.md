@@ -14,6 +14,7 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # RoInitializeWrapper::~RoInitializeWrapper Destructor
 Uninitializes the Windows Runtime.  

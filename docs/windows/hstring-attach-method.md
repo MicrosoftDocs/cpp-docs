@@ -14,6 +14,7 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::Attach Method
 Associates the specified HString object with the current HString object.  

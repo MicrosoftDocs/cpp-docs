@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Shrinking or Stretching an Entire Image (Image Editor for Icons)
 ### To shrink or stretch an entire image  

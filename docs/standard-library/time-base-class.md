@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # time_base Class
 The class serves as a base class for facets of template class time_get, defining just the enumerated type **dateorder** and several constants of this type.  

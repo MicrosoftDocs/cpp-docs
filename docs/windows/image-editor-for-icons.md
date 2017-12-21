@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Image Editor for Icons
 The Image editor has an extensive set of tools for creating and editing images, as well as features to help you create toolbar bitmaps. In addition to bitmaps, icons, and cursors, you can edit images in GIF or JPEG format using commands on the **Image** menu and tools on the **Image Editor** toolbar.  

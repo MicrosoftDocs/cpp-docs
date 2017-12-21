@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # setlocale
 Defines the locale (Country/Region and language) to be used when translating wide-character constants and string literals.  

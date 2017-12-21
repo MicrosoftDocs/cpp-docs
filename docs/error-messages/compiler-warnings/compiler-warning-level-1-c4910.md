@@ -14,6 +14,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4910
 '\<identifier>' : '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation  

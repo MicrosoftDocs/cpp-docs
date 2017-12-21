@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GetObjectCount Method
 Retrieves the number of objects managed by this module.  

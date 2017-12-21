@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CProgressCtrl
 You can use the progress control to indicate the progress of a lengthy operation. It is a rectangle that is gradually filled with the system highlight color as the operation progresses.  

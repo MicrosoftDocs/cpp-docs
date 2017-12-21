@@ -14,6 +14,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # String  (C++ Component Extensions)
 The Visual C++ compiler supports *strings*, which are objects that represent text as a sequence of characters. Visual C++ supports string variables, whose value is implicit, and literals, whose value is an explicit quoted string.  

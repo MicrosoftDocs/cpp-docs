@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # basic_streambuf Class
 Describes an abstract base class for deriving a stream buffer, which controls the transmission of elements to and from a specific representation of a stream.  

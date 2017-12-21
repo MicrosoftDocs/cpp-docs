@@ -14,6 +14,7 @@ caps.latest.revision: 36
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C++ Standard Library Header Files
 Header files for the C++ Standard Library and extensions, by category.  

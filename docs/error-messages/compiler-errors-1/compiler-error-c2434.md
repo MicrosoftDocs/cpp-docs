@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2434
 'symbol' : a symbol declared with __declspec(process) cannot be dynamically initialized in /clr:pure mode  

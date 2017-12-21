@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # invalid_compute_domain Class
 The exception that's thrown when the runtime can't start a kernel by using the compute domain specified at the [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) call site.  

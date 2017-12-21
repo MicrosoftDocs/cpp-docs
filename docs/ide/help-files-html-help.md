@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Help Files (HTML Help)
 The following files are created when you add the HTML Help type of Help support to your application by selecting the **Context-sensitive help** check box and then selecting **HTML Help format** in the [Advanced Features](../mfc/reference/advanced-features-mfc-application-wizard.md) page of the MFC Application Wizard.  

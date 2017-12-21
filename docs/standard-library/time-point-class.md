@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::chrono [C++], time_point"]
+ms.workload: ["cplusplus"]
 ---
 # time_point Class
 A `time_point` describes a type that represents a point in time. It holds an object of type [duration](../standard-library/duration-class.md) that stores the elapsed time since the epoch that is represented by the template argument `Clock`.  

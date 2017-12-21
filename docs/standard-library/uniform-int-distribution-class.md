@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # uniform_int_distribution Class
 Generates a uniform (every value is equally probable) integer distribution within an output range that is inclusive-inclusive.  

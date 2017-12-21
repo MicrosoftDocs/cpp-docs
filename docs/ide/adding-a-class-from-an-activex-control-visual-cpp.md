@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding a Class from an ActiveX Control (Visual C++)
 Use this wizard to create an MFC class from an interface in an available ActiveX control. You can add an MFC class to an [MFC application](../mfc/reference/creating-an-mfc-application.md), an [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md), or an [MFC ActiveX control](../mfc/reference/creating-an-mfc-activex-control.md).  

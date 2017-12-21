@@ -14,6 +14,7 @@ caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Redistributing the MFC Library
 If you dynamically link your application to the MFC library, you must redistribute the matching MFC DLL. For example, if your MFC app is built by using the version of MFC that ships with Visual Studio 2015, you must redistribute mfc140.dll or mfc140u.dll, depending on whether your app is compiled for narrow characters or Unicode support.  

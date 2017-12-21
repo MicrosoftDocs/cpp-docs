@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2028
 "exported_function" (decorated_name) referenced in function "function_containing_function_call" (decorated_name)  

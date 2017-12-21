@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Switching Between Dialog Box Controls and Code
 In MFC applications, you can double-click on dialog box controls to jump to their handler code or to quickly create stub handler functions.  

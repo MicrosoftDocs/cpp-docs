@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Profile-Guided Optimization Error PG0165
 Reading 'Filename.pgd' : 'PGD version is not supported (version mismatch)'.  

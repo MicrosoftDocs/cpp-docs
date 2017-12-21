@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Exceptions: Using MFC Macros and C++ Exceptions
 This article discusses considerations for writing code that uses both the MFC exception-handling macros and the C++ exception-handling keywords.  

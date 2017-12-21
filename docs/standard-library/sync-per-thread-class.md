@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # sync_per_thread Class
 Describes a [synchronization filter](../standard-library/allocators-header.md) that provides a separate cache object for each thread.  

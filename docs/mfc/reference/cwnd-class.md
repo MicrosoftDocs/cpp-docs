@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CWnd Class
 Provides the base functionality of all window classes in the Microsoft Foundation Class Library.  

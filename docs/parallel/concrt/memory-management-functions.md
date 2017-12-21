@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Memory Management Functions
 This document describes the memory management functions that the Concurrency Runtime provides to help you allocate and free memory in a concurrent manner.  

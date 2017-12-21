@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CD2DResource Class
 An abstract class that provides a interface for creating and managing D2D resources such as brushes, layers, and texts.  

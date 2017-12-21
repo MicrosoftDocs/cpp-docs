@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Safe Libraries: C++ Standard Library
 Several enhancements have been made to the libraries that ship with Visual C++, including the C++ Standard Library, to make them more secure.  

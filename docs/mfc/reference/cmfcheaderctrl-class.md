@@ -15,6 +15,7 @@ caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCHeaderCtrl Class
 The `CMFCHeaderCtrl` class supports sorting multiple columns in a header control.  

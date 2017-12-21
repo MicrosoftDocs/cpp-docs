@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # conditional Class
 Selects one of two types, depending on the specified condition.  

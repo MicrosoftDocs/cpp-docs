@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __readgsbyte, __readgsdword, __readgsqword, __readgsword
 **Microsoft Specific**  

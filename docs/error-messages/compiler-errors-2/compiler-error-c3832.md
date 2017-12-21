@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3832
 'type library': type library looks as if it was built for 32-bit pointers; please change the 'ptrsize' qualifier  

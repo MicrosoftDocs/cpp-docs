@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0050
 Failed to register output. Please ensure you have the appropriate permissions to modify the registry.  

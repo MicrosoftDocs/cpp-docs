@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;returns&gt; (Visual C++)
 The \<returns> tag should be used in the comment for a method declaration to describe the return value.  

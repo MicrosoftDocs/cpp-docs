@@ -14,6 +14,7 @@ caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Debugging a C++ AMP Application
 This topic demonstrates how to debug an application that uses C++ Accelerated Massive Parallelism (C++ AMP) to take advantage of the graphics processing unit (GPU). It uses a parallel-reduction program that sums up a large array of integers. This walkthrough illustrates the following tasks:  

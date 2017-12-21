@@ -15,6 +15,7 @@ caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyPage Class
 The `CMFCPropertyPage` class supports the display of pop-up menus on a property page.  

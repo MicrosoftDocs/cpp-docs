@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CEvent Class
 Represents an event, which is a synchronization object that enables one thread to notify another that an event has occurred.  

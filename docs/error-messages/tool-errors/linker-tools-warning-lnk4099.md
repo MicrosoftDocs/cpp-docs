@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4099
 PDB 'filename' was not found with 'object/library' or at 'path'; linking object as if no debug info  

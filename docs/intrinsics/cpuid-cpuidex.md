@@ -15,6 +15,7 @@ caps.latest.revision: 38
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __cpuid, __cpuidex
 **Microsoft Specific**  

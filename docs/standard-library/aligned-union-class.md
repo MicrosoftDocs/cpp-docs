@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # aligned_union Class
 Provides a POD type large enough and suitably aligned to store a union type, and the size required.  

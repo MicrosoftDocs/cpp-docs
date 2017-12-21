@@ -13,6 +13,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A. Examples
 The following are examples of the constructs defined in this document. Note that a statement following a directive is compound only when necessary, and a non-compound statement is indented with respect to a directive preceding it.

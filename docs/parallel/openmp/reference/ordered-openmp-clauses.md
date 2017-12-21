@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ordered (OpenMP Clauses)
 Required on a parallel [for](../../../parallel/openmp/reference/for-openmp.md) statement if an [ordered](../../../parallel/openmp/reference/ordered-openmp-directives.md) directive is to be used in the loop.  

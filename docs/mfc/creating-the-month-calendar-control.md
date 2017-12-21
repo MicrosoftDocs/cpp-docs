@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating the Month Calendar Control
 How the month calendar control is created depends on whether you are using the control in a dialog box or creating it in a nondialog window.  

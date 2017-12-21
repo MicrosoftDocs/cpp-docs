@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Writing a Multithreaded Win32 Program
 When you write a program with multiple threads, you must coordinate their behavior and [use of the program's resources](#_core_sharing_common_resources_between_threads). You must also make sure that each thread receives [its own stack](#_core_thread_stacks).  

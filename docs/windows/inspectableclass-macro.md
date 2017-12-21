@@ -14,6 +14,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # InspectableClass Macro
 Sets the runtime class name and trust level.  

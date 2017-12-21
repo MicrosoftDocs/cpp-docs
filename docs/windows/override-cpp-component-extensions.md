@@ -14,6 +14,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # override  (C++ Component Extensions)
 The `override` context-sensitive keyword indicates that a member of a type overrides a base class or a base interface member.  

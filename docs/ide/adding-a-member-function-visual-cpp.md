@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding a Member Function (Visual C++)
 In **Class View**, you can add a member function to any class. When you do this, a declaration is added to the header file, and a stub member-function body is added to the class's implementation file, which you can then modify.  

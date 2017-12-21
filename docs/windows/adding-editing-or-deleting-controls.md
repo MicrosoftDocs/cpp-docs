@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding, Editing, or Deleting Controls
 Using the Dialog editor, you can add, resize, edit, and delete controls in dialog boxes. You can also edit the properties of a control, such as its ID, or whether it is initially visible at run time.  

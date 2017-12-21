@@ -15,6 +15,7 @@ caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCMenuButton Class
 A button that displays a pop-up menu and reports on the user's menu selections.  

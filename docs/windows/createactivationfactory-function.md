@@ -15,6 +15,7 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # CreateActivationFactory Function
 Creates a factory that produces instances of the specified class that can be activated by the Windows Runtime.  

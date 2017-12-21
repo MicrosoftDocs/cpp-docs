@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Load a Ribbon Resource from an MFC Application
 To use the ribbon resource in your application, modify the application to load the ribbon resource.  

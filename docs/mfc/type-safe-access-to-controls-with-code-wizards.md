@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Type-Safe Access to Controls With Code Wizards
 If you are familiar with DDX features, you can use the Control property in the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md) to create type-safe access. This approach is easier than creating controls without code wizards.  

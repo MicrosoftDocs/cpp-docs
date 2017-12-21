@@ -15,6 +15,7 @@ caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCDropDownToolBar Class
 A toolbar that appears when the user presses and holds a top-level toolbar button.  

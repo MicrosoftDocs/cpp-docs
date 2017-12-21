@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # copyin
 Allows threads to access the master thread's value, for a [threadprivate](../../../parallel/openmp/reference/threadprivate.md) variable.  

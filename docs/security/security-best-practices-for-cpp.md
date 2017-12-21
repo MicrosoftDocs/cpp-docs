@@ -15,6 +15,7 @@ caps.latest.revision: 45
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Security Best Practices for C++
 This article contains information about security tools and practices. Using them does not make applications immune from attack, but it makes successful attacks less likely.  

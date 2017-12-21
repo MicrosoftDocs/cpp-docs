@@ -15,6 +15,7 @@ caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerOffice2007 Class
 `CMFCVisualManagerOffice2007` gives an application a Microsoft Office 2007 appearance. 

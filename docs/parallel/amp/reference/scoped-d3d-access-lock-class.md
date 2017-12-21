@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # scoped_d3d_access_lock Class
 RAII wrapper for a D3D access lock on an accelerator_view object.  

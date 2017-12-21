@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CWinFormsDialog Class
 A wrapper for an MFC dialog class that hosts a Windows Forms user control.  

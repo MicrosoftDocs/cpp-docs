@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # improper_scheduler_attach Class
 This class describes an exception thrown when the `Attach` method is called on a `Scheduler` object which is already attached to the current context.  

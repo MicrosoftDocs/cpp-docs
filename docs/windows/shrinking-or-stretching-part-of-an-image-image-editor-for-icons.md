@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Shrinking or Stretching Part of an Image (Image Editor for Icons)
 ### To shrink or stretch part of an image  

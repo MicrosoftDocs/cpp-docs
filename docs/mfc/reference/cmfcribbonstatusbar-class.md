@@ -15,6 +15,7 @@ caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonStatusBar Class
 The `CMFCRibbonStatusBar` class implements a status bar control that can display ribbon elements.  

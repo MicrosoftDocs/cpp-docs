@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;iomanip&gt;
 Include the `iostreams` standard header `<iomanip>` to define several manipulators that each take a single argument.  

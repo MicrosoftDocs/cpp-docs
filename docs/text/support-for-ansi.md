@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Support for ANSI
 Most MFC classes and methods support the ANSI character set, although the MFC framework as a whole is gradually evolving toward supporting only the Unicode character set. Because of the ongoing enhancements in [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] and Windows Common Controls version 6.1, support for several ANSI classes and methods is deprecated.  For more information, see [Deprecated ANSI APIs](../mfc/deprecated-ansi-apis.md) and [Support for Unicode](../text/support-for-unicode.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CSettingsStore Class
 Wraps Windows API functions, providing an object-oriented interface that you use to access the registry.  

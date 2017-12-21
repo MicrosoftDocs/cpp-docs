@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CFont Class
 Encapsulates a Windows graphics device interface (GDI) font and provides member functions for manipulating the font.  

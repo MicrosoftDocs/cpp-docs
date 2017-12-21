@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # usesgetlasterror
 Tells the caller that if there is an error when calling that function, then the caller can then call `GetLastError` to retrieve the error code.  

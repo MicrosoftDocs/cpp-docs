@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IDL Attributes, Add Property Wizard
 Use this page of the Add Property Wizard to specify any interface definition language (IDL) settings for the property.  

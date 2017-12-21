@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDialogEx Class
 The `CDialogEx` class specifies the background color and background image of a dialog box.  

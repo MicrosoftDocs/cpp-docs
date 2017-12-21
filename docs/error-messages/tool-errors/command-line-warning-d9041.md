@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9041
 invalid value 'value' for '/option'; assuming 'value'; add '/analyze' to command-line options when specifying this warning  

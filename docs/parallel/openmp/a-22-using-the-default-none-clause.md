@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.22   Using the default(none) Clause
 The following example distinguishes the variables that are affected by the `default(none)` clause from those that are not:  

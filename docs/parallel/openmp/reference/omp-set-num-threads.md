@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # omp_set_num_threads
 Sets the number of threads in subsequent parallel regions, unless overridden by a [num_threads](../../../parallel/openmp/reference/num-threads.md) clause.  

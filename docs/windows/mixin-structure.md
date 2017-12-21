@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # MixIn Structure
 Ensures that a runtime class derives from Windows Runtime interfaces, if any, and then classic COM interfaces.  

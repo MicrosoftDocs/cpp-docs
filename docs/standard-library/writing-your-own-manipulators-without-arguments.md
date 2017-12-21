@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Writing Your Own Manipulators Without Arguments
 Writing manipulators that do not use arguments requires neither class derivation nor use of complex macros. Suppose your printer requires the pair \<ESC>[ to enter bold mode. You can insert this pair directly into the stream:  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # TN061: ON_NOTIFY and WM_NOTIFY Messages
 > [!NOTE]

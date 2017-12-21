@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Viewing and Adding ActiveX Controls to a Dialog Box
 Visual Studio enables you to insert ActiveX controls into your dialog box.  

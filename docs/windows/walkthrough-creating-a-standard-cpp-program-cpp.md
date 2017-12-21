@@ -15,6 +15,7 @@ caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating a Standard C++ Program (C++)
 You can use Visual C++ in the Visual Studio integrated development environment (IDE) to create Standard C++ programs. By following the steps in this walkthrough, you can create a project, add a new file to the project, modify the file to add C++ code, and then compile and run the program by using [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  

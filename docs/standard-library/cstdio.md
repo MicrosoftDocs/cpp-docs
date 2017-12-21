@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;cstdio&gt;
 Includes the Standard C library header \<stdio.h> and adds the associated names to the `std` namespace.  

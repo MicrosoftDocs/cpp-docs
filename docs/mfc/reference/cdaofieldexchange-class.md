@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoFieldExchange Class
 Supports the DAO record field exchange (DFX) routines used by the DAO database classes.  

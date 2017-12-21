@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDaoRelationInfo Structure
 The `CDaoRelationInfo` structure contains information about a relation defined between fields of two tables in a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object.  

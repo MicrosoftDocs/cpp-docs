@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2687
 'type' : exception-declaration cannot be 'void' or denote an incomplete type or pointer or reference to an incomplete type  

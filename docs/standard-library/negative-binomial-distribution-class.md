@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # negative_binomial_distribution Class
 Generates a negative binomial distribution.  

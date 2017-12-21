@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Technical Notes by Category
 Technical notes are divided into the following categories. For a numerical listing of the technical notes, see [Technical Notes by Number](../mfc/technical-notes-by-number.md).  

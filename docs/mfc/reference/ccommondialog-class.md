@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CCommonDialog Class
 The base class for classes that encapsulate functionality of the Windows common dialogs.  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ordered (OpenMP Directives)
 Specifies that code under a parallelized for loop should be executed like a sequential loop.  

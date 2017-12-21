@@ -11,6 +11,7 @@ ms.assetid: 6c108e33-00cf-4c5a-830d-d65d470930a7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4206
 

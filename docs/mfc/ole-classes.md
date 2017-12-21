@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # OLE Classes
 The OLE classes work with the other application framework classes to provide easy access to the ActiveX API, giving your programs an easy way to provide the power of ActiveX to your users. Using ActiveX, you can:  

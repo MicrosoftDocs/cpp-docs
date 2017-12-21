@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4490
 'override' : incorrect use of override specifier; 'function' does not match a base ref class method  

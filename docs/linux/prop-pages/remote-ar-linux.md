@@ -12,6 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 f1_keywords: [VC.Project.Ar.CreateIndex, VC.Project.Ar.CreateThinArchive, VC.Project.Ar.NoWarnOnCreate, VC.Project.Ar.TruncateTimestamp, VC.Project.Ar.SuppressStartupBanner, VC.Project.Ar.Verbose, vc.project.AdditionalOptionsPage, VC.Project.Ar.OutputFile, VC.Project.VCConfiguration.BuildLogFile]
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # Remote Archive Properties (C++ Linux)

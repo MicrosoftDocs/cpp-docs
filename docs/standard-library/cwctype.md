@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;cwctype&gt;
 Includes the Standard C library header \<wctype.h> and adds the associated names to the `std` namespace.  

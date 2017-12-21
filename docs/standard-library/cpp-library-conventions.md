@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C++ Library Conventions
 The C++ library obeys much the same conventions as the Standard C Library, plus a few more outlined here.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Implement Connection Point Wizard
 This wizard implements a connection point for a COM object. A connectable object (that is, a source) can expose a connection point for its own interfaces or for any outgoing interface. Visual C++ and Windows both provide type libraries that have outgoing interfaces. Each outgoing interface can be implemented by a client on an object (that is, a sink).  

@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;sample container&gt; Operators
 For more information about the operators in \<sample container>, see [\<sample container>](../standard-library/sample-container.md).

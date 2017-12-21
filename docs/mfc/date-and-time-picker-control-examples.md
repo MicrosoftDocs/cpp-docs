@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Date and Time Picker Control Examples
 The [CMNCTRL1](../visual-cpp-samples.md) sample demonstrates the various attributes of the `CDateTimeCtrl` class. A separate page contains a date and time picker control that the user can manipulate by changing various attributes and testing the basic functionality of the control.  

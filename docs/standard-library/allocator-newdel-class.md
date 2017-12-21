@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # allocator_newdel Class
 Implements an allocator that uses `operator delete` to deallocate a memory block and `operator new` to allocate a memory block.  

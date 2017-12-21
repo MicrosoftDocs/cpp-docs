@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # call_as
 Enables a [local](../windows/local-cpp.md) function to be mapped to a remote function so that when the remote function is called, the local function is invoked.  

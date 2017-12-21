@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container
 This article describes the process for accessing the exposed [methods](../mfc/mfc-activex-controls-methods.md) and [properties](../mfc/mfc-activex-controls-properties.md) of embedded ActiveX controls. Basically, you will follow these steps:  

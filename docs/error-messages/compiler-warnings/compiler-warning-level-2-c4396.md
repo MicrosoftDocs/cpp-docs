@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4396
 "name" : the inline specifier cannot be used when a friend declaration refers to a specialization of a function template  

@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Manipulating the Progress Control
 There are three ways to change the current position of a progress control ([CProgressCtrl](../mfc/reference/cprogressctrl-class.md)).  

@@ -14,6 +14,7 @@ caps.latest.revision: 42
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Task Scheduler (Concurrency Runtime)
 The topics in this part of the documentation describe the important features of the Concurrency Runtime Task Scheduler. The Task Scheduler is useful when you want fine-tune the performance of your existing code that uses the Concurrency Runtime.  

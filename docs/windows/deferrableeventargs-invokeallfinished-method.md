@@ -13,6 +13,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # DeferrableEventArgs::InvokeAllFinished Method
 Called to indicate that all processing to handle a deferred event is complete.  

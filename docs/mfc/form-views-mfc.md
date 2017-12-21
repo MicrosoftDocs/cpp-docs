@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Form Views (MFC)
 You can add forms to any Visual C++ application that supports the MFC libraries, including a [forms-based application](../mfc/reference/creating-a-forms-based-mfc-application.md) (one whose view class is derived from `CFormView`). If you did not initially create your application to support forms, Visual C++ will add this support for you when you insert a new form. In an SDI or MDI application, which implements the default [document/view architecture](../mfc/document-view-architecture.md), when the user chooses the `New` command (by default, on the **File** menu), Visual C++ prompts the user to choose from the available forms.  

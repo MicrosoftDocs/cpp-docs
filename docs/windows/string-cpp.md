@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # string (C++)
 Indicates that the one-dimensional `char`, `wchar_t`, **byte** (or equivalent) array or the pointer to such an array must be treated as a string.  

@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassFlags::value Constant
 A field that contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.  

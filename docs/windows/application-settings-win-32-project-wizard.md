@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Application Settings, Win 32 Project Wizard
 Use this page of the wizard to set options for the Win32 project.  

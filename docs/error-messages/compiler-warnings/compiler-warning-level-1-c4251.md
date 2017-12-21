@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4251
 'identifier' : class 'type' needs to have dll-interface to be used by clients of class 'type2'  

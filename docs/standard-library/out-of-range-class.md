@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # out_of_range Class
 The class serves as the base class for all exceptions thrown to report an argument that is out of its valid range.  

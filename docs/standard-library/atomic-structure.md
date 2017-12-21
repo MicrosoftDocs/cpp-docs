@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # atomic Structure
 Describes an object that performs atomic operations on a stored value of type `Ty`.  

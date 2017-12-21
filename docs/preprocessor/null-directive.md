@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Null Directive
 The null preprocessor directive is a single number sign (**#**) alone on a line. It has no effect.  

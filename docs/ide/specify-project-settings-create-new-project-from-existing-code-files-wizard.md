@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Specify Project Settings, Create New Project From Existing Code Files Wizard
 Use this page of the Create New Project From Existing Code Files wizard to specify:  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Database Support, MFC Application Wizard
 This page provides options that allow you to specify the level of database support (plus a data source, if necessary) for your project.  

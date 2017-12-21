@@ -12,6 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 f1_keywords: [VC.Project.VCConfiguration.BuildLogFile]
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # Copy Sources Project Properties (Linux C++)

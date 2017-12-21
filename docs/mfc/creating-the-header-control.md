@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating the Header Control
 The header control is not directly available in the dialog editor (although you can add a list control, which includes a header control).  

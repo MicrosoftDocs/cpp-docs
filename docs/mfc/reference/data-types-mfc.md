@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Data Types (MFC)
 This topic lists the data types most commonly used in the Microsoft Foundation Class Library. Most of the data types are the same as those in the Platform Software Development Kit (SDK), while others are unique to MFC.  

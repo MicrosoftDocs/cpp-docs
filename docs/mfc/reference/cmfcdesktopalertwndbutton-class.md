@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertWndButton Class
 Allows buttons to be added to a desktop alert dialog box.  

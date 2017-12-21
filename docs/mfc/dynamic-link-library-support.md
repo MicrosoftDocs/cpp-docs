@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Dynamic-Link Library Support
 The NAFXCW.lib and NAFXCWD.lib libraries (listed in the Static-Link Library Naming Conventions table in [Library Naming Conventions](../mfc/library-naming-conventions.md)) create your project as a dynamic-link library, called a "regular MFC DLL" (formerly a "USRDLL") that can be used with applications not built with the class library. This DLL support is not the same as MFCx0.DLL and MFCx0D.DLL (known as AFXDLL), which contain the entire class library in a DLL. For more information, see [DLLs](../build/dlls-in-visual-cpp.md). For a table of DLL names, see [Naming Conventions for MFC DLLs](../build/naming-conventions-for-mfc-dlls.md).  

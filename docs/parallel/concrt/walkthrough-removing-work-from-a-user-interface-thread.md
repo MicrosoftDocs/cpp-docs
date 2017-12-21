@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Removing Work from a User-Interface Thread
 This document demonstrates how to use the Concurrency Runtime to move the work that is performed by the user-interface (UI) thread in a Microsoft Foundation Classes (MFC) application to a worker thread. This document also demonstrates how to improve the performance of a lengthy drawing operation.  

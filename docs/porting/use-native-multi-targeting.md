@@ -14,6 +14,7 @@ caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Use native multi-targeting in Visual Studio to build old projects
 

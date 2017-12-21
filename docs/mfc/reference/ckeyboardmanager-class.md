@@ -15,6 +15,7 @@ caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CKeyboardManager Class
 Manages shortcut key tables for the main frame window and child frame windows.  

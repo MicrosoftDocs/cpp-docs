@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Specifying Build Events
 You can use build events to specify commands that run before the build starts, before the link process, or after the build finishes.  

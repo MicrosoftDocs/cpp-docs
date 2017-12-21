@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Evening the Spacing Between Controls
 The Dialog editor enables you to space controls evenly between the outermost controls selected.  

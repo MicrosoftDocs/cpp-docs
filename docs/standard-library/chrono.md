@@ -14,6 +14,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;chrono&gt;
 Include the standard header \<chrono> to define classes and functions that represent and manipulate time durations and time instants.  

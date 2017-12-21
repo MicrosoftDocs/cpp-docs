@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Using a Drawing Tool (Image Editor for Icons)
 The Image editor's freehand drawing and erasing tools all work in the same way: you select the tool and, if necessary, [select foreground and background colors](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) and size and shape options. You then move the pointer to the image and click or drag to draw and erase.  

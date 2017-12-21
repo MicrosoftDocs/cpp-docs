@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # source_block Class
 The `source_block` class is an abstract base class for source-only blocks. The class provides basic link management functionality as well as common error checks.  

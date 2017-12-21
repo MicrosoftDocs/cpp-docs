@@ -14,6 +14,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C++ Binary Compatibility between Visual Studio 2015 and Visual Studio 2017
 

@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # future_error Class
 Describes an exception object that can be thrown by methods of types that manage [future](../standard-library/future-class.md) objects.  

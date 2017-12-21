@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Symbol Value Restrictions
 A symbol value can be any integer expressed in the normal manner for #define preprocessor directives. Here are some examples of symbol values:  

@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_nothrow_constructible Class
 Tests whether a type is constructible and is known not to throw when the specified argument types are used.  

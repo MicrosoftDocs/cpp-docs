@@ -14,6 +14,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4838
 conversion from 'type_1' to 'type_2' requires a narrowing conversion  

@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # random_access_iterator_tag Struct
 A class that provides a return type for **iterator_category** function that represents a random-access iterator.  

@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # duration_values Structure
 Provides specific values for the [duration](../standard-library/duration-class.md) template parameter `Rep`.  

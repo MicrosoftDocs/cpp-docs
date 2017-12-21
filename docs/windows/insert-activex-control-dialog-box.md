@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Insert ActiveX Control Dialog Box
 This dialog box enables you to [insert ActiveX controls into your dialog box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md) while using the [Dialog editor](../windows/dialog-editor.md).  

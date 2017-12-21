@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # shuffle_order_engine Class
 Generates a random sequence by reordering the values returned from its base engine.  

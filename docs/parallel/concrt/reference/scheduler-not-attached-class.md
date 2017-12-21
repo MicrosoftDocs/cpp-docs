@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # scheduler_not_attached Class
 This class describes an exception thrown when an operation is performed which requires a scheduler to be attached to the current context and one is not.  

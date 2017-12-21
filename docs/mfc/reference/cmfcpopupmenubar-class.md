@@ -15,6 +15,7 @@ caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPopupMenuBar Class
 A menu bar embedded into a pop-up menu.  

@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # const_seg
 Specifies the segment where [const](../cpp/const-cpp.md) variables are stored in the .obj file.  

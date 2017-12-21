@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # x64 (amd64) Intrinsics List
 This document lists intrinsics that the Visual C++ compiler supports when x64 (also referred to as amd64) is targeted.  

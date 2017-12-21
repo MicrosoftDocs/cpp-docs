@@ -11,6 +11,7 @@ ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # Deploy, run, and debug your Linux project

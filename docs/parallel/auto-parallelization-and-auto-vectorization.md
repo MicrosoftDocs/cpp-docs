@@ -13,6 +13,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Auto-Parallelization and Auto-Vectorization
 Auto-Parallelizer and Auto-Vectorizer are designed to provide automatic performance gains for loops in your code.  

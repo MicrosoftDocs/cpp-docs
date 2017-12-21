@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # A.7   Using the reduction Clause
 The following example demonstrates the reduction clause ([Section 2.7.2.6](../../parallel/openmp/2-7-2-6-reduction.md) on page 28):  

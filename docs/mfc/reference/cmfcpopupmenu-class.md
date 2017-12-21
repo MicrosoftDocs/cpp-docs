@@ -15,6 +15,7 @@ caps.latest.revision: 40
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCPopupMenu Class
 Implements Windows pop-up menu functionality and extends it by adding features such as tear-off menus and tooltips.

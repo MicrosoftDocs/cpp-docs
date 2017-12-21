@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # allocator_base Class
 Defines the base class and common functions needed to create a user-defined allocator from a synchronization filter.  

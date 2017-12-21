@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::UnregisterWinRTObject Method
 Unregisters one or more Windows Runtime objects so that other applications cannot connect to them.  

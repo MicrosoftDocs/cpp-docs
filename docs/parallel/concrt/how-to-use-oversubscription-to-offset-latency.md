@@ -14,6 +14,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Use Oversubscription to Offset Latency
 Oversubscription can improve the overall efficiency of some applications that contain tasks that have a high amount of latency. This topic illustrates how to use oversubscription to offset the latency that is caused by reading data from a network connection.  

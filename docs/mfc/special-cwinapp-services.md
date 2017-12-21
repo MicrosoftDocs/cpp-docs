@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Special CWinApp Services
 Besides running the message loop and giving you an opportunity to initialize the application and clean up after it, [CWinApp](../mfc/reference/cwinapp-class.md) provides several other services.  

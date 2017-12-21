@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # #error Directive (C/C++)
 The `#error` directive emits a user-specified error message at compile time and then terminates the compilation.  

@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # money_put Class
 The template class describes an object that can serve as a locale facet to control conversions of monetary values to sequences of type `CharType`.  

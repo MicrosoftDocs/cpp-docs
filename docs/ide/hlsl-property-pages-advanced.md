@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # HLSL Property Pages: Advanced
 To configure the following properties of the HLSL compiler (fxc.exe), use its **Advanced** property page. For information about how to access the **Advanced** property page in the HLSL folder, see [Working with Project Properties](../ide/working-with-project-properties.md).  

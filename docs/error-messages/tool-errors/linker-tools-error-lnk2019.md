@@ -11,6 +11,7 @@ helpviewer_keywords: ["nochkclr.obj", "LNK2019", "_check_commonlanguageruntime_v
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2019
 

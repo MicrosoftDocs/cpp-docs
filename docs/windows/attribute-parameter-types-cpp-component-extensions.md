@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Attribute Parameter Types  (C++ Component Extensions)
 Values passed to attributes must be known to the compiler at compile time.  Attribute parameters can be of the following types:  

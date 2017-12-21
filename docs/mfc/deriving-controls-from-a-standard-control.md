@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Deriving Controls from a Standard Control
 As with any [CWnd](../mfc/reference/cwnd-class.md)-derived class, you can modify a control's behavior by deriving a new class from an existing control class.  

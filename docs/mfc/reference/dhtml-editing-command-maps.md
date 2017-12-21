@@ -13,6 +13,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DHTML Editing Command Maps
 The following macros can be used to map DHTML editing commands in [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-derived classes. For an example of their use, see [HTMLEdit Sample](../../visual-cpp-samples.md).  

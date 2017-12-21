@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # New &lt;Device&gt; Image Type Dialog Box (Image Editor for Icons)
 Enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, click **New Image Type** on the **Image** menu.  

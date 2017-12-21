@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # random_device Class
 Generates a random sequence from an external device.  

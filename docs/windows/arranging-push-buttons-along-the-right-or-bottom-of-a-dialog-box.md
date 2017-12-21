@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Arranging Push Buttons Along the Right or Bottom of a Dialog Box
 ### To arrange push buttons along the right or bottom of a dialog box  

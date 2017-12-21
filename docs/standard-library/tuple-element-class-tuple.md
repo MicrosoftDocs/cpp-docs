@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # tuple_element Class
 Wraps a `tuple` element. Specializations wrap `array` elements and `pair` elements.  

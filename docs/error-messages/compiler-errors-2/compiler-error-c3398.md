@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3398
 'operator' : cannot convert from 'function_signature' to 'function_pointer'. Source expression must be a function symbol  

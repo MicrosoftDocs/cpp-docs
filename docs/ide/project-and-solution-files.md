@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Project and Solution Files
 The following files are created when you create a project in Visual Studio. They are used to manage project files in the solution.  

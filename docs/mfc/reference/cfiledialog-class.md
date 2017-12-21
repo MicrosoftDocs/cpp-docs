@@ -15,6 +15,7 @@ caps.latest.revision: 47
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CFileDialog Class
 Encapsulates the common dialog box that is used for file open or file save operations.  

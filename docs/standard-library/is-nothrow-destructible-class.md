@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # is_nothrow_destructible Class
 Tests whether the type is destructible and the destructor is known to the compiler not to throw.  

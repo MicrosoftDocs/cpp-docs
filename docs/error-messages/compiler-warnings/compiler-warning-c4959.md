@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4959
 cannot define unmanaged struct 'type' in /clr:safe because accessing its members yields unverifiable code  

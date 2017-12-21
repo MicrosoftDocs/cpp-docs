@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CMFCLinkCtrl Class
 The `CMFCLinkCtrl` class displays a button as a hyperlink and invokes the link's target when the button is clicked.  

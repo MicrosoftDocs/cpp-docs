@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Tab Controls and Property Sheets
 Property sheets are multiple-page dialogs or "tab dialogs" that can display up to 24 dialog template resources to the user. For examples of property sheets, see the Windows Display Properties dialog box or the following MFC sample application:  

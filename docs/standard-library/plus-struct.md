@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # plus Struct
 A predefined function object that performs the addition operation (binary `operator+`) on its arguments.  

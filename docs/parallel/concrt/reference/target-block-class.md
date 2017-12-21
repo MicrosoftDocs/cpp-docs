@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # target_block Class
 The `target_block` class is an abstract base class that provides basic link management functionality and error checking for target only blocks.  

@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # RECT Structure1
 The `RECT` structure defines the coordinates of the upper-left and lower-right corners of a rectangle.  

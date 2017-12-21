@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2688
 'C2::fgrv' : covariant returns with multiple or virtual inheritance not supported for varargs functions  

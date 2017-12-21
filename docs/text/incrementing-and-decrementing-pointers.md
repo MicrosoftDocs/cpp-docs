@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Incrementing and Decrementing Pointers
 Use the following tips:  

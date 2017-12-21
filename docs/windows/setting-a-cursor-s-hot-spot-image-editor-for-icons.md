@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Setting a Cursor&#39;s Hot Spot (Image Editor for Icons)
 The hot spot of a [cursor](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md) is the point to which Windows refers in tracking the cursor's position. By default, the hot spot is set to the upper-left corner of the cursor (coordinates 0,0). The Hotspot property in the [Properties window](/visualstudio/ide/reference/properties-window) shows the hot spot coordinates.  

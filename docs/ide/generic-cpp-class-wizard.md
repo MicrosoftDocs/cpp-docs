@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Generic C++ Class Wizard
 Adds a generic C++ class to a project. The class does not inherit from ATL or MFC.  

@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DDX_DHtml Helper Macros
 The DDX_DHtml helper macros allow easy access to the commonly used properties of controls on an HTML page.  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4240
 nonstandard extension used : access to 'classname' now defined to be 'access specifier', previously it was defined to be 'access specifier'  

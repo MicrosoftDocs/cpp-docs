@@ -12,6 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 f1_keywords: [VC.Project.VCConfiguration.OutputDirectory, VC.Project.VCConfiguration.IntermediateDirectory, VC.Project.VCConfiguration.TargetName, VC.Project.VCConfiguration.TargetExt, VC.Project.VCConfiguration.DeleteExtensionsOnClean, VC.Project.VCConfiguration.PlatformToolset, VC.Project.VCConfiguration.BuildLogFile, VC.Project.VCConfiguration.ConfigurationType, VC.Project.VCConfiguration.UseOfSTL]
+ms.workload: ["cplusplus", "linux"]
 ---
 
 # General Properties (Linux C++)

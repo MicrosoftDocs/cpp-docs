@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Stock Events to an ActiveX Control
 Stock events differ from custom events in that they are automatically fired by class [COleControl](../mfc/reference/colecontrol-class.md). `COleControl` contains predefined member functions that fire events resulting from common actions. Some common actions implemented by `COleControl` include single- and double-clicks on the control, keyboard events, and changes in the state of the mouse buttons. Event map entries for stock events are always preceded by the **EVENT_STOCK** prefix.  

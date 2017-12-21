@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Accelerator Tables
 In Visual C++, you can edit an accelerator table directly with in-place editing in the Accelerator editor.  

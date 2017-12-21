@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Containers: Compound Files
 This article explains the components and implementation of compound files and the advantages and disadvantages of using compound files in your OLE applications.  

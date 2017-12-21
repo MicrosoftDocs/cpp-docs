@@ -15,6 +15,7 @@ author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 helpviewer_keywords: ["std::timed_mutex [C++]", "std::timed_mutex [C++], timed_mutex", "std::timed_mutex [C++], lock", "std::timed_mutex [C++], try_lock", "std::timed_mutex [C++], try_lock_for", "std::timed_mutex [C++], try_lock_until", "std::timed_mutex [C++], unlock"]
+ms.workload: ["cplusplus"]
 ---
 # timed_mutex Class
 Represents a *timed mutex type*. Objects of this type are used to enforce mutual exclusion through time-limited blocking within a program.  

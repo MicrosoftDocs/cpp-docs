@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Comparing Synchronization Data Structures to the Windows API
 This topic compares the behavior of the synchronization data structures that are provided by the Concurrency Runtime to those provided by the Windows API.  

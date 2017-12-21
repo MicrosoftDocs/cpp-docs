@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Library Naming Conventions
 Object-code libraries for MFC use the following naming conventions. The library names have the form  

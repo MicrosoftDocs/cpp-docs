@@ -14,6 +14,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # &lt;condition_variable&gt;
 Defines the classes [condition_variable](../standard-library/condition-variable-class.md) and [condition_variable_any](../standard-library/condition-variable-any-class.md) that are used to create objects that wait for a condition to become true.  

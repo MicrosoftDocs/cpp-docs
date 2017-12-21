@@ -13,6 +13,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # 2.9 Directive Nesting
 Dynamic nesting of directives must adhere to the following rules:  

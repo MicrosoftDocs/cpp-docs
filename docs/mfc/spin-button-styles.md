@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Spin Button Styles
 Many of the settings for a spin button ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)) are controlled by styles. You can set the following styles using the **Properties** window in the dialog editor.  

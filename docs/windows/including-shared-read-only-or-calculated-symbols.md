@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "uwp"]
 ---
 # Including Shared (Read-Only) or Calculated Symbols
 The first time the development environment reads a resource file created by another application, it marks all included header files as read-only. Subsequently, you can use the [Resource Includes dialog box](../windows/resource-includes-dialog-box.md) to add additional read-only symbol header files.  

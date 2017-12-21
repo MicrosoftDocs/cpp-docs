@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COleDispatchException Class
 Handles exceptions specific to the OLE `IDispatch` interface, which is a key part of OLE automation.  
