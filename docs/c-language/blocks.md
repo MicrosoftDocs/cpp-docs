@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Blocks
 A sequence of declarations, definitions, and statements enclosed within curly braces (**{ }**) is called a "block." There are two types of blocks in C. The "compound statement," a statement composed of one or more statements (see [The Compound Statement](../c-language/compound-statement-c.md)), is one type of block. The other, the "function definition," consists of a compound statement (the body of the function) plus the function's associated "header" (the function name, return type, and formal parameters). A block within other blocks is said to be "nested."  

@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandImpl::CreateRowset
 Called by [Execute](../../data/oledb/icommandimpl-execute.md) to create a single rowset.  

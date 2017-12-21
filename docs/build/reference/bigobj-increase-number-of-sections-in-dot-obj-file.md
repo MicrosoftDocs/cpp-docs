@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /bigobj (Increase Number of Sections in .Obj file)
 **/bigobj** increases the number of sections that an object file can contain.  

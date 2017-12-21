@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Class Factories Classes
 The following classes implement or support a class factory:  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Precedence and Order of Evaluation
 The precedence and associativity of C operators affect the grouping and evaluation of operands in expressions. An operator's precedence is meaningful only if other operators with higher or lower precedence are present. Expressions with higher-precedence operators are evaluated first. Precedence can also be described by the word "binding." Operators with a higher precedence are said to have tighter binding.  

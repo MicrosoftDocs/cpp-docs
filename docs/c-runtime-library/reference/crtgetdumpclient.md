@@ -18,6 +18,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtGetDumpClient
 Retrieves the current application-defined function for dumping the `_CLIENT_BLOCK` type memory blocks (debug version only).  

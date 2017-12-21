@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /HEAP
 Sets the size of the heap in bytes. This option only applies to executable files.  

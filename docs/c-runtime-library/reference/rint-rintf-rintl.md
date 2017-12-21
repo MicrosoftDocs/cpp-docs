@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # rint, rintf, rintl
 Rounds a floating-point value to the nearest integer in floating-point format.  

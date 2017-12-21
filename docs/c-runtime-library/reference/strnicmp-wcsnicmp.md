@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strnicmp, wcsnicmp
 These POSIX functions are deprecated. Use the ISO C++ conformant [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) instead.

@@ -18,6 +18,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _acmdln, _tcmdln, _wcmdln
 Internal CRT global variable. The command line.  

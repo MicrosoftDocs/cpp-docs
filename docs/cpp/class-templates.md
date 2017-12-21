@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Class Templates
 This topic describes rules that are specific to C++ class templates.  

@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot Members
 Members of `auto_gcroot`.  

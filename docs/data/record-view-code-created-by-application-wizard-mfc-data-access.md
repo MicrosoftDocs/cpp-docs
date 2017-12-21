@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record View Code Created by Application Wizard  (MFC Data Access)
 The [MFC Application Wizard](../mfc/reference/database-support-mfc-application-wizard.md) overrides the view's `OnInitialUpdate` and `OnGetRecordset` member functions. After the framework creates the frame window, document, and view, it calls `OnInitialUpdate` to initialize the view. `OnInitialUpdate` obtains a pointer to the recordset from the document. A call to the base class [CView::OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) function opens the recordset. The following code shows this process for a `CRecordView`:  

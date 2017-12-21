@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /FUNCTIONPADMIN (Create Hotpatchable Image)
 Prepares an image for hotpatching.  

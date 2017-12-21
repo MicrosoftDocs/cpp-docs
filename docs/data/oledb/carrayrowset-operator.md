@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CArrayRowset::operator
 Provides array-like syntax for accessing a row in the rowset.  

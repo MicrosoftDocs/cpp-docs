@@ -18,6 +18,7 @@ caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 Convert a time value to a string and adjust for local time zone settings. More secure versions of these functions are available; see [ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md).  

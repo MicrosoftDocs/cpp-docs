@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IGetDataSourceImpl::GetDataSource
 Returns an interface pointer on the data source object that created the session.  

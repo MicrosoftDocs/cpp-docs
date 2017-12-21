@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .BREAK
 Generates code to terminate a [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md) block if *condition* is true.  

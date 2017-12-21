@@ -18,6 +18,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cprintf
 This POSIX function is deprecated. Use the ISO C++ conformant [_cprintf](../../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md) or security-enhanced [_cprintf_s](../../c-runtime-library/reference/cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md) instead.  

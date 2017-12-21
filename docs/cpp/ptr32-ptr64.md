@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __ptr32, __ptr64
 ## Microsoft Specific  

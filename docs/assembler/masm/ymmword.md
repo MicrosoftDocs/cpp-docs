@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # YMMWORD
 Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX) instructions.  

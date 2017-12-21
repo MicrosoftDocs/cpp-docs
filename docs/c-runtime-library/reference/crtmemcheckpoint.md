@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtMemCheckpoint
 Obtains the current state of the debug heap and stores in an application-supplied `_CrtMemState` structure (debug version only).  

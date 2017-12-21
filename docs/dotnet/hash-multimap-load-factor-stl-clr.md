@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multimap::load_factor (STL/CLR)
 Counts the average elements per bucket.  

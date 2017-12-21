@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # push_heap (STL/CLR)
 Adds an element that is at the end of a range to an existing heap consisting of the prior elements in the range.  

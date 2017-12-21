@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Long Filenames in a Makefile
 Enclose long filenames in double quotation marks, as follows:  

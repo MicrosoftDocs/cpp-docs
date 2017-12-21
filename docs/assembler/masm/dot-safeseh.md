@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .SAFESEH
 Registers a function as a structured exception handler.  

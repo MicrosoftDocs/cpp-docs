@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Regular MFC DLLs Statically Linked to MFC
 A regular MFC DLL statically linked to MFC is a DLL that uses MFC internally, and the exported functions in the DLL can be called by either MFC or non-MFC executables. As the name describes, this kind of DLL is built using the static link library version of MFC. Functions are usually exported from a regular MFC DLL using the standard C interface. For an example of how to write, build, and use a regular MFC DLL, see the sample [DLLScreenCap](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/DllScreenCap).  

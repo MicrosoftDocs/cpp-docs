@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Sources and Sessions
 The following figure shows the classes that support connecting to and accessing a data source. Each class is based on a standard OLE DB component implementation.  

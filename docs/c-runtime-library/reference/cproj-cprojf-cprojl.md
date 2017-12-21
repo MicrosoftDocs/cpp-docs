@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cproj, cprojf, cprojl
 Retrieves the projection of a complex number on the Reimann sphere.  

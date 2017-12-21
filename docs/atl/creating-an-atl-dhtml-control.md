@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Creating an ATL DHTML Control
 The ATL Control Wizard automates the process of creating a DHTML control. It generates the necessary resource files, including an HTML file containing sample code.  

@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Stack Allocation
 A function's prolog is responsible for allocating stack space for local variables, saved registers, stack parameters, and register parameters.  

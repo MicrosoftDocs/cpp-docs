@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # LOCAL (MASM)
 In the first directive, within a macro, **LOCAL** defines labels that are unique to each instance of the macro.  

@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l
 Writes formatted output by using a pointer to a list of arguments. These versions of [vprintf, _vprintf_l, vwprintf, _vwprintf_l](../../c-runtime-library/reference/vprintf-vprintf-l-vwprintf-vwprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

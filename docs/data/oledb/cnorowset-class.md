@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CNoRowset Class
 Can be used as a template argument (`TRowset`) for [CCommand](../../data/oledb/ccommand-class.md) or [CTable](../../data/oledb/ctable-class.md).  

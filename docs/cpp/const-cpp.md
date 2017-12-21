@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # const (C++)
 When modifying a data declaration, the **const** keyword specifies that the object or variable is not modifiable.  

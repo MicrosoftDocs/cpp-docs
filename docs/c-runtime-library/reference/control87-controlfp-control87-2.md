@@ -18,6 +18,7 @@ caps.latest.revision: 34
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _control87, _controlfp, __control87_2
 Gets and sets the floating-point control word. A more secure version of `_controlfp` is available; see [_controlfp_s](../../c-runtime-library/reference/controlfp-s.md).  

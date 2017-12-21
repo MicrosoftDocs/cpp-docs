@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create CLR Empty Projects
 To create a CLR empty project, use the **CLR Empty Project** template, which is available from the **New Project** dialog box.  

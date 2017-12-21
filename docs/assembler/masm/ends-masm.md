@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ENDS (MASM)
 Marks the end of segment, structure, or union *name* previously begun with [SEGMENT](../../assembler/masm/segment.md), [STRUCT](../../assembler/masm/struct-masm.md), [UNION](../../assembler/masm/union.md), or a simplified segment directive.  

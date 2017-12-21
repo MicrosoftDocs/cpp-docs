@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MMC Snap-In Classes
 The following classes provide support for developing Microsoft Management Console (MMC) snap-in components:  

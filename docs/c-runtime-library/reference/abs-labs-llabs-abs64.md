@@ -18,6 +18,7 @@ caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # abs, labs, llabs, _abs64
 Calculates the absolute value of the argument.  

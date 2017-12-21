@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Hosting a Windows Form User Control as an MFC Dialog Box
 MFC provides the template class [CWinFormsDialog](../mfc/reference/cwinformsdialog-class.md) so that you can host a Windows Forms user control (<xref:System.Windows.Forms.UserControl>) in a modal or modeless MFC dialog box. `CWinFormsDialog` is derived from the MFC class [CDialog](../mfc/reference/cdialog-class.md), so the dialog box can be launched as modal or modeless.  

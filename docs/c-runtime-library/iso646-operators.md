@@ -13,6 +13,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ISO646 Operators
 Provides readable alternatives to certain operators or punctuators. The standard header \<iso646.h> is available even in a freestanding implementation.  

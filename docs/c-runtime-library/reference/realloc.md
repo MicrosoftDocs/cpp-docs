@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # realloc
 Reallocate memory blocks.  

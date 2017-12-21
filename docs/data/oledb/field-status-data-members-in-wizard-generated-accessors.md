@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Field Status Data Members in Wizard-Generated Accessors
 When you use the ATL OLE DB Consumer Wizard to create a consumer, the wizard generates a data member in the user record class for each field that you specify in your column map. Each data member is of type `DWORD` and contains a status value corresponding to its respective field.  

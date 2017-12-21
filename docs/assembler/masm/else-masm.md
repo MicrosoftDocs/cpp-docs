@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ELSE (MASM)
 Marks the beginning of an alternate block within a conditional block.  

@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
 Returns a value that has the magnitude of one argument and the sign of another.  

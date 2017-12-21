@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_set::equal_range (STL/CLR)
 Finds range that matches a specified key.  

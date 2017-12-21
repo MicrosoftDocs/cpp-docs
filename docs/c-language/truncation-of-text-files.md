@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Truncation of Text Files
 **ANSI 4.9.3** Whether a write on a text stream causes the associated file to be truncated beyond that point  

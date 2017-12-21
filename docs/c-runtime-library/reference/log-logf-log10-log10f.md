@@ -18,6 +18,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # log, logf, log10, log10f
 Calculates logarithms.  

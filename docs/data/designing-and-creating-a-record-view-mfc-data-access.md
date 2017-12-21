@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Designing and Creating a Record View  (MFC Data Access)
 You can create your record view class with the [MFC Application Wizard](../mfc/reference/database-support-mfc-application-wizard.md). If you use an application wizard, it creates the record view class and a dialog template resource for it (without controls). You must use the Visual C++ Dialog editor to add controls to the dialog template resource. On the other hand, if you use **Add Class**, you must first create the dialog template resource in the Dialog editor and then create the record view class.  

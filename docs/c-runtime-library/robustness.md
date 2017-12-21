@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Robustness
 Use the following C run-time library functions to improve the robustness of your program.  

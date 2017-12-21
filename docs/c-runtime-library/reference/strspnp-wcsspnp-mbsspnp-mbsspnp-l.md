@@ -18,6 +18,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 Returns a pointer to the first character in a given string that is not in another given string.  

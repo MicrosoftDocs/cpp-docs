@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # deprecated (C++)
 This topic is about the Microsoft-specific deprecated declspec declaration. For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs. the Microsoft-specific declspec or pragma, see [C++ Standard Attributes](attributes2.md).

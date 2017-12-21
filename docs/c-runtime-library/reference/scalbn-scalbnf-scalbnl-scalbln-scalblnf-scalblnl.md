@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 Multiplies a floating-point number by an integral power of FLT_RADIX.  

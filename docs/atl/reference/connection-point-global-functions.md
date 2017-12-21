@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Connection Point Global Functions
 These functions provide support for connection points and sink maps.  

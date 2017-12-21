@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Call Properties and Methods of the Windows Forms Control
 Because [CWinFormsView::GetControl](../mfc/reference/cwinformsview-class.md#getcontrol) returns a pointer to <xref:System.Windows.Forms.Control?displayProperty=fullName>, and not a pointer to `WindowsControlLibrary1::UserControl1`, it is advisable to add a member of the user control type and initialize it in [IView::OnInitialUpdate](../mfc/reference/iview-interface.md#oninitialupdate). Now you can call methods and properties using `m_ViewControl`.  

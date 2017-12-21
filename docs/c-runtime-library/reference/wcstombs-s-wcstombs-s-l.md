@@ -18,6 +18,7 @@ caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # wcstombs_s, _wcstombs_s_l
 

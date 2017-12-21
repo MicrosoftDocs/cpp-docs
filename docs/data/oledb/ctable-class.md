@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CTable Class
 Provides a means to directly access a simple rowset (one with no parameters).  

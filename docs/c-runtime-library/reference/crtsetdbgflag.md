@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetDbgFlag
 Retrieves or modifies the state of the **_crtDbgFlag** flag to control the allocation behavior of the debug heap manager (debug version only).  

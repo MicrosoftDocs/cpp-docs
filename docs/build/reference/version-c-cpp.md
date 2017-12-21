@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # VERSION (C/C++)
 Tells LINK to put a number in the header of the .exe file or DLL.  

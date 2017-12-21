@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .Exe Files as Linker Input
 The [MS-DOS Stub File Name](../../build/reference/stub-ms-dos-stub-file-name.md) (/STUB) option specifies the name of an .exe file that runs with MS-DOS. LINK examines the specified file to be sure that it is a valid MS-DOS program.  

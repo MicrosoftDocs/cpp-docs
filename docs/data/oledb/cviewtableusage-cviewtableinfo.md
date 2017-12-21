@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CViewTableUsage, CViewTableInfo
 Call the typedef class **CViewTableUsage** to implement its parameter class **CViewTableInfo**.  

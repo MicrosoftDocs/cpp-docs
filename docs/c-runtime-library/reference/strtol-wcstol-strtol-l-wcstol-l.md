@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strtol, wcstol, _strtol_l, _wcstol_l
 Convert strings to a long-integer value.  

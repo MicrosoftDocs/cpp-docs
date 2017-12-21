@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock::try_acquire
 Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.  

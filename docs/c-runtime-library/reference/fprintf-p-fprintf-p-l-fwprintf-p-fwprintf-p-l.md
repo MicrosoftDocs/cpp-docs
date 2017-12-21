@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
 Prints formatted data to a stream.  

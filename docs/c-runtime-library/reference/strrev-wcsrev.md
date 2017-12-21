@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strrev, wcsrev
 These POSIX functions are deprecated. Use the ISO C++ conformant [_strrev, _wcsrev, _mbsrev, _mbsrev_l](../../c-runtime-library/reference/strrev-wcsrev-mbsrev-mbsrev-l.md) instead.

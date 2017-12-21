@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowsetImpl Class
 Provides a standard OLE DB rowset implementation without requiring multiple inheritance of many implementation interfaces.  

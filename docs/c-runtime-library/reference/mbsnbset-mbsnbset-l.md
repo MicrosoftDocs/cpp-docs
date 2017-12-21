@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbset, _mbsnbset_l
 Sets the first `n` bytes of a multibyte-character string to a specified character. More secure versions of these functions are available; see [_mbsnbset_s, _mbsnbset_s_l](../../c-runtime-library/reference/mbsnbset-s-mbsnbset-s-l.md).  

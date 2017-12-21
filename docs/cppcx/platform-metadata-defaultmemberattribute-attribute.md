@@ -7,17 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::Metadata::DefaultMemberAttribute"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Metadata::DefaultMemberAttribute Attribute"
+f1_keywords: ["VCCORLIB/Platform::Metadata::DefaultMemberAttribute"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Metadata::DefaultMemberAttribute Attribute"]
 ms.assetid: d8abda01-c257-4371-aec4-541d4825e0af
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::DefaultMemberAttribute Attribute
 Indicates the preferred function to invoke among several possible overloaded functions.  

@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbbkana, _ismbbkana_l
 Tests for a katakana symbol and is specific to code page 932.  

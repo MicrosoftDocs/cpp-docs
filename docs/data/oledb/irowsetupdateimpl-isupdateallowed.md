@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetUpdateImpl::IsUpdateAllowed
 Override this method to check for security, integrity, and so on before updates.  

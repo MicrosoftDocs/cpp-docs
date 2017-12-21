@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CRegKey Class
 This class provides methods for manipulating entries in the system registry.  

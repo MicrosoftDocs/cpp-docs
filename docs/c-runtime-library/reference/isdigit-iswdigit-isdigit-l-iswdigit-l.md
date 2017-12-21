@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isdigit, iswdigit, _isdigit_l, _iswdigit_l
 Determines whether an integer represents a decimal-digit character.  

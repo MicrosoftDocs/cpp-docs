@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Use ODBC to Work with Other Users
 Use ODBC in environments where multiple users are working with the same ODBC database.  

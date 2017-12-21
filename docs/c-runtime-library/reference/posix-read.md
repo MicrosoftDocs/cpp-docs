@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # read
 This POSIX function is deprecated. Use the ISO C++ conformant [_read](../../c-runtime-library/reference/read.md) instead.

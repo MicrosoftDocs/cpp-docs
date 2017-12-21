@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Signed Bitwise Operations
 **ANSI 3.3** The results of bitwise operations on signed integers  

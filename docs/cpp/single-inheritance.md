@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Single Inheritance
 In "single inheritance," a common form of inheritance, classes have only one base class. Consider the relationship illustrated in the following figure.  

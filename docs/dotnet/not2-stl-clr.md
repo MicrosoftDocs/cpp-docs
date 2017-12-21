@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # not2 (STL/CLR)
 Generates a `binary_negate` for a functor.  

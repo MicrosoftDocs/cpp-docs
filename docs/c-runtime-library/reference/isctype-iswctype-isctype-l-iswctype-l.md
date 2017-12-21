@@ -18,6 +18,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _isctype, iswctype, _isctype_l, _iswctype_l
 Tests `c` for the property specified by the `desc` argument. For each valid value of `desc`, there is an equivalent wide-character classification routine.  

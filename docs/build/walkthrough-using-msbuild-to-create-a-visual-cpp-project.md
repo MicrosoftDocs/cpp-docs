@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using MSBuild to Create a Visual C++ Project
 This walkthrough demonstrates how to use [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] to build a Visual C++ project at a command prompt. You will learn how to create the C++ source files and an XML-based project file for a Visual C++ console application. After building the project, you will learn how to customize the build process.  

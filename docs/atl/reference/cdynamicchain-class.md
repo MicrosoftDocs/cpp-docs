@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CDynamicChain Class
 This class provides methods supporting the dynamic chaining of message maps.  

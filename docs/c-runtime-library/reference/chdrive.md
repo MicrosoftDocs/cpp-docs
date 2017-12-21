@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _chdrive
 Changes the current working drive.  

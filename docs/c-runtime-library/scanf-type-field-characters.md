@@ -17,6 +17,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # scanf Type Field Characters
 The following information applies to any of the `scanf` family of functions, including the secure versions, such as `scanf_s`.  

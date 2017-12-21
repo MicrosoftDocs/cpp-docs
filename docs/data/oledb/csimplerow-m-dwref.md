@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSimpleRow::m_dwRef
 Reference count to an existing row handle.  

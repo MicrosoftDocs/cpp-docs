@@ -18,6 +18,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # logb, logbf, logbl, _logb, _logbf
 Extracts the exponent value of a floating-point argument.  

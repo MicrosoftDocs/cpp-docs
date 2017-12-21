@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l
 Convert a string to an `__int64` value.  

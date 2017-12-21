@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # tmpnam_s, _wtmpnam_s
 Generate names you can use to create temporary files. These are versions of [tmpnam and _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

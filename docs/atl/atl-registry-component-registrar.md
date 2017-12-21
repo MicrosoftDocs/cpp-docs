@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Registry Component (Registrar)
 The ATL Registrar provides optimized access to the system registry through a custom interface. The Registrar is free-threaded and allows static linking of code for C++ clients.  

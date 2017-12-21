@@ -8,15 +8,14 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["COLLECTION/Platform::Collections::VectorViewIterator::VectorViewIterator"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "VectorViewIterator Class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["VectorViewIterator Class"]
 ms.assetid: be3aa1ae-e6ba-4a06-8d6b-86d8128026f7
 caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorViewIterator Class
 Provides a Standard Template Library iterator for objects derived from the Windows Runtime`IVectorView` interface.  

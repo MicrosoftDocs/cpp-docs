@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Strong Name Assemblies (Assembly Signing) (C++/CLI)
 This topic discusses how you can sign your assembly, often referred to as giving your assembly a strong name.  

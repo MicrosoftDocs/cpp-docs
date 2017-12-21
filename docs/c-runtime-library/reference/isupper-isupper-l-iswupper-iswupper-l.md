@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isupper, _isupper_l, iswupper, _iswupper_l
 Determines whether an integer represents an uppercase character.  

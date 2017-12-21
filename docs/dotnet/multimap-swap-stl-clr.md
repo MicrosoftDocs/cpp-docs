@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::swap (STL/CLR)
 Swaps the contents of two containers.  

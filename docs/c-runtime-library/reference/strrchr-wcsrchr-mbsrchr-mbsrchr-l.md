@@ -18,6 +18,7 @@ caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 Scans a string for the last occurrence of a character.  

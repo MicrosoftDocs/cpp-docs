@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .NOLISTIF
 Suppresses listing of conditional blocks whose condition evaluates to false (0).  

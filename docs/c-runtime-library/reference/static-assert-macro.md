@@ -17,6 +17,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _STATIC_ASSERT Macro
 Evaluate an expression at compile time and generate an error when the result is `FALSE`.  

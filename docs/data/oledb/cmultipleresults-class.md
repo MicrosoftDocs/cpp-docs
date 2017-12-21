@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CMultipleResults Class
 If you want a command to handle multiple result sets, use `CMultipleResults` for the `CCommand` template argument *TMultiple*.  

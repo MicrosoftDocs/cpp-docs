@@ -18,6 +18,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _unlock_file
 Unlocks a file, allowing other processes to access the file.  

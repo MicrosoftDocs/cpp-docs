@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Incomplete Types
 An incomplete type is a type that describes an identifier but lacks information needed to determine the size of the identifier. An "incomplete type" can be:  

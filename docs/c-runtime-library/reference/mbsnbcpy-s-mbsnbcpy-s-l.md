@@ -18,6 +18,7 @@ caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbcpy_s, _mbsnbcpy_s_l
 Copies `n` bytes of a string to a destination string. These versions of [_mbsnbcpy, _mbsnbcpy_l](../../c-runtime-library/reference/mbsnbcpy-mbsnbcpy-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

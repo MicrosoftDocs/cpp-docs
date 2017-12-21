@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding Connection Points to an Object
 The [ATL Tutorial](../atl/active-template-library-atl-tutorial.md) demonstrates how to create a control with support for connection points, how to add events, and then how to implement the connection point. ATL implements connection points with the [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) class.  

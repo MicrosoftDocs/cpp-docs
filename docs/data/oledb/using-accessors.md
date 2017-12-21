@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Accessors
 The following topics explain how to determine which type of accessor is best for your data application and then how to use the different types of accessors available:  

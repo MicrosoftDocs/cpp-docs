@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # FILENAME_MAX
 The maximum permissible length for a `filename` string buffer size.  

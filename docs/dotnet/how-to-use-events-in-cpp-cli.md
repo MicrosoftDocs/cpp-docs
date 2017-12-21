@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Events in C++/CLI
 This article shows how to use an interface that declares an event and a function to invoke that event, and the class and event handler that implement the interface.  

@@ -18,6 +18,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _setjmp3
 Internal CRT function. A new implementation of the `setjmp` function.  

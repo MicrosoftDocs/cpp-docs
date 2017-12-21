@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Multiplicative Operators
 The multiplicative operators perform multiplication (**\***), division (**/**), and remainder (`%`) operations.  

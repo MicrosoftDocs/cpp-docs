@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fetestexcept
 Determines which of the specified floating-point exception status flags are currently set.  

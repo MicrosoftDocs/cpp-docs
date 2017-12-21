@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Padding and Alignment of Structure Members
 **ANSI 3.5.2.1** The padding and alignment of members of structures and whether a bit field can straddle a storage-unit boundary  

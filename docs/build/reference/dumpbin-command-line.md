@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DUMPBIN Command Line
 To run DUMPBIN, use the following syntax:  

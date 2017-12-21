@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # vprintf, _vprintf_l, vwprintf, _vwprintf_l
 Writes formatted output by using a pointer to a list of arguments. More secure versions of these functions are available, see [vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l](../../c-runtime-library/reference/vprintf-s-vprintf-s-l-vwprintf-s-vwprintf-s-l.md).  

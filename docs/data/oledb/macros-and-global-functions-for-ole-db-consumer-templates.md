@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Macros and Global Functions for OLE DB Consumer Templates
 The OLE DB Consumer Templates include the following macros and global functions:  

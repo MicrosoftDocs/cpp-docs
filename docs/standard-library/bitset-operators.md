@@ -92,7 +92,7 @@ basic_ostream<CharType, Traits>& operator<<(
 ### Remarks  
  The template function overloads **operator<<**, allowing a bitset to be written out without first converting it into a string. The template function effectively executes:  
   
- **ostr** << _ *Right*. [to_string](https://msdn.microsoft.com/library/2f93c55z.aspx) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )  
+ **ostr** << _ *Right*. [to_string](bitset-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )  
   
 ### Example  
   
@@ -149,7 +149,7 @@ _Istr,
  The template function returns the string `_Istr`.  
   
 ### Remarks  
- The template function overloads **operator>>** to store in the bitset _ *Right* the value bitset( `str`), where `str` is an object of type [basic_string](https://msdn.microsoft.com/library/syxtdd4f.aspx) < **CharType**, **Traits**, **allocator**\< **CharType**> > **&** extracted from `_Istr`.  
+ The template function overloads **operator>>** to store in the bitset _ *Right* the value bitset( `str`), where `str` is an object of type [basic_string](basic-string-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > **&** extracted from `_Istr`.  
   
  The template function extracts elements from `_Istr` and inserts them into the bitset until:  
   

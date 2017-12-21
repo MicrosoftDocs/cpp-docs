@@ -14,6 +14,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Differences in Exception Handling Behavior Under /CLR
 [Basic Concepts in Using Managed Exceptions](../dotnet/basic-concepts-in-using-managed-exceptions.md) discusses exception handling in managed applications. In this topic, differences from the standard behavior of exception handling and some restrictions are discussed in detail. For more information, see [The _set_se_translator Function](../c-runtime-library/reference/set-se-translator.md).  

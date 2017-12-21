@@ -14,6 +14,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Build C/C++ code on the command line
 

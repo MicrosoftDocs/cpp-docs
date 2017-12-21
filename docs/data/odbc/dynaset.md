@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Dynaset
 This topic describes dynasets and discusses their [availability](#_core_availability_of_dynasets).  

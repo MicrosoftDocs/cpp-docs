@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /sdl (Enable Additional Security Checks)
 Adds recommended Security Development Lifecycle (SDL) checks. These checks include extra security-relevant warnings as errors, and additional secure code-generation features.  

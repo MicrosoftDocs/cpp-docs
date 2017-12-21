@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /WINMDKEYCONTAINER (Specify Key Container)
 Specifies a key container to sign a Windows Metadata (.winmd) file.  

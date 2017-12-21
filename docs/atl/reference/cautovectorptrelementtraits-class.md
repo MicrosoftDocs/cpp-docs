@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAutoVectorPtrElementTraits Class
 This class provides methods, static functions, and typedefs useful when creating collections of smart pointers using vector new and delete operators.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CKeyColumns, CKeyColumnInfo
 Call the typedef class **CKeyColumns** to implement its parameter class **CKeyColumnInfo**.  

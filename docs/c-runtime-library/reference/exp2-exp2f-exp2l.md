@@ -18,6 +18,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # exp2, exp2f, exp2l
 Computes 2 raised to the specified value.  

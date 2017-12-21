@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # General Rules for Operator Overloading
 The following rules constrain how overloaded operators are implemented. However, they do not apply to the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators, which are covered separately.  

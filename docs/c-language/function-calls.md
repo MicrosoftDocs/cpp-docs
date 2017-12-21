@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Function Calls
 A *function call* is an expression that passes control and arguments (if any) to a function and has the form:  

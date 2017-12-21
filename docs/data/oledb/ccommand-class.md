@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CCommand Class
 Provides methods to set and execute a command.  

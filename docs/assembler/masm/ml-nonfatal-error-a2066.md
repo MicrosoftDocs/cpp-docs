@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2066
 **incompatible CPU mode and segment size**  

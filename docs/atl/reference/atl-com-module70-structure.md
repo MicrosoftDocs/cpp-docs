@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ATL_COM_MODULE70 Structure
 Used by COM-related code in ATL.  

@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Implementing CComObject, CComAggObject, and CComPolyObject
 The template classes [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), and [CComPolyObject](../atl/reference/ccompolyobject-class.md) are always the most derived classes in the inheritance chain. It is their responsibility to handle all of the methods in **IUnknown**: `QueryInterface`, `AddRef`, and **Release**. In addition, `CComAggObject` and `CComPolyObject` (when used for aggregated objects) provide the special reference counting and `QueryInterface` semantics required for the inner unknown.  

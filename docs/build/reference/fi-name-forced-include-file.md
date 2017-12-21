@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /FI (Name Forced Include File)
 Causes the preprocessor to process the specified header file.  

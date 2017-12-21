@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::capacity (STL/CLR)
 Reports the size of allocated storage for the container.  

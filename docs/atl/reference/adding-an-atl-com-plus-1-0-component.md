@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding an ATL COM+ 1.0 Component
 This wizard adds an object to your project that supports COM+ 1.0 services, including transactions.  

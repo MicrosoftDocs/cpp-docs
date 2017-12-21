@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Pointer Subtraction
 **ANSI 3.3.6, 4.1.1** The type of integer required to hold the difference between two pointers to elements of the same array, **ptrdiff_t**  

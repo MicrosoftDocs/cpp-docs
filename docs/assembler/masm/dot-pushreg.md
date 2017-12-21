@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .PUSHREG
 Generates a `UWOP_PUSH_NONVOL` unwind code entry for the specified register number using the current offset in the prologue.  

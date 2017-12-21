@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # File Position in Append Mode
 **ANSI 4.9.3** Whether the file position indicator of an append mode stream is initially positioned at the beginning or end of the file  

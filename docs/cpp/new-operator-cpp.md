@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # new Operator (C++)
 Allocates memory for an object or array of objects of *type-name* from the free store and returns a suitably typed, nonzero pointer to the object.  

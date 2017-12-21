@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Serialization (C++/CLI)
 Serialization (the process of storing the state of an object or member to a permanent medium) of managed classes (including individual fields or properties) is supported by the <xref:System.SerializableAttribute> and <xref:System.NonSerializedAttribute> classes.  

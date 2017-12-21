@@ -12,6 +12,7 @@ caps.latest.revision: 5
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator Windows::UI::Xaml::Interop::TypeName
 Enables conversion from `Platform::Type` to [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx).  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Optimization Best Practices
 This document describes some best practices for optimization in Visual C++. The following topics are discussed:  

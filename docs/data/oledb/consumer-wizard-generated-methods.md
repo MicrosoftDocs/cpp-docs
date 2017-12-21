@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Consumer Wizard-Generated Methods
 The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain functions of which you should be aware. Note that some methods are implemented differently in attributed projects, so there are a few caveats; each case is covered below. For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).  

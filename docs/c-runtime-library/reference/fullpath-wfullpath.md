@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _fullpath, _wfullpath
 Creates an absolute or full path name for the specified relative path name.  

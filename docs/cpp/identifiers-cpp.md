@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Identifiers (C++)
 An identifier is a sequence of characters used to denote one of the following:  

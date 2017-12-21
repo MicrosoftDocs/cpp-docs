@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # INCLUDELIB (MASM)
 Informs the linker that the current module should be linked with *libraryname*.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2069
 **no operands allowed for this instruction**  

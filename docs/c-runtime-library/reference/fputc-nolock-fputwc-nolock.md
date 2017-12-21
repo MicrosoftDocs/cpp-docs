@@ -18,6 +18,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _fputc_nolock, _fputwc_nolock
 Writes a character to a stream without locking the thread.  

@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
 Determines whether an integer represents a control character.  

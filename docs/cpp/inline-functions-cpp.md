@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Inline Functions (C++)
 A function defined in the body of a class declaration is an inline function.  

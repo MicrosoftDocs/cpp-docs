@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /utf-8 (Set Source and Executable character sets to UTF-8)
 Specifies both the source character set and the execution character set as UTF-8.  

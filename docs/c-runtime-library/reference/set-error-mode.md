@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _set_error_mode
 Modifies `__error_mode` to determine a non-default location where the C runtime writes an error message for an error that might end the program.  

@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CSocketAddr Class
 This class provides methods for converting host names to host addresses, supporting both IPv4 and IPV6 formats.  

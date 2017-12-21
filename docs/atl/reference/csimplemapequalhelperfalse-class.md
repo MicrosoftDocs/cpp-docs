@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CSimpleMapEqualHelperFalse Class
 This class is a helper for the [CSimpleMap](../../atl/reference/csimplemap-class.md) class.  

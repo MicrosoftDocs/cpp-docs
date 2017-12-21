@@ -18,6 +18,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # catanh, catanhf, catanhl
 Retrieves the inverse hyperbolic tangent of a complex number, with branch cuts outside the interval [-1; +1] along the real axis.  

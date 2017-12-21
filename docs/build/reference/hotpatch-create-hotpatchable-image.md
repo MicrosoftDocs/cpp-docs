@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /hotpatch (Create Hotpatchable Image)
 Prepares an image for hot patching.  

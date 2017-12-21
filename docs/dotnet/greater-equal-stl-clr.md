@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # greater_equal (STL/CLR)
 The template class describes a functor that, when called, returns true only if the first argument is greater than or equal to the second. You use it specify a function object in terms of its argument type.  

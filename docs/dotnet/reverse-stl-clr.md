@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # reverse (STL/CLR)
 Reverses the order of the elements within a range.  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2093
 'variable1' : cannot be initialized using address of automatic variable 'variable2'  

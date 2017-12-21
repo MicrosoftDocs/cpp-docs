@@ -15,6 +15,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Security Features in the CRT
 Many old CRT functions have newer, more secure versions. If a secure function exists, the older, less secure version is marked as deprecated and the new version has the `_s` ("secure") suffix.  

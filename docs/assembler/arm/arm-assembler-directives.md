@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ARM Assembler Directives
 For the most part, the Microsoft ARM assembler uses the ARM assembly language, which is documented in Chapter 7 of the [ARM assembler tools guide](http://go.microsoft.com/fwlink/?LinkId=246102). However, the Microsoft implementations of some assembly directives differ from the ARM assembly directives. This article explains the differences.  

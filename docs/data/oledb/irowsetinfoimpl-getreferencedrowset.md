@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetInfoImpl::GetReferencedRowset
 Returns an interface pointer to the rowset to which a bookmark applies.  

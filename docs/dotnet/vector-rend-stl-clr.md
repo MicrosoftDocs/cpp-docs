@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::rend (STL/CLR)
 Designates the end of the reversed controlled sequence.  

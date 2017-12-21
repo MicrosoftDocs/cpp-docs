@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # goto Statement (C++)
 The `goto` statement unconditionally transfers control to the statement labeled by the specified identifier.  

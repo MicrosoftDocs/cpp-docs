@@ -18,6 +18,7 @@ caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # gets_s, _getws_s
 Gets a line from the `stdin` stream. These versions of [gets, _getws](../../c-runtime-library/gets-getws.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 Reads formatted data of a specified length from a string. More secure versions of these functions are available; see [_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l](../../c-runtime-library/reference/snscanf-s-snscanf-s-l-snwscanf-s-snwscanf-s-l.md).  

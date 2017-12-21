@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorRowset::FreeRecordMemory
 Frees any columns in the current record that need to be freed.  

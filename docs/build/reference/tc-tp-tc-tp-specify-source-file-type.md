@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Tc, /Tp, /TC, /TP (Specify Source File Type)
 The **/Tc** option specifies that `filename` is a C source file, even if it does not have a .c extension. The **/Tp** option specifies that `filename` is a C++ source file, even if it doesn't have a .cpp or .cxx extension. A space between the option and `filename` is optional. Each option specifies one file; to specify additional files, repeat the option.  

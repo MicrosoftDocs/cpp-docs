@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Build Isolated Applications to Consume COM Components
 Isolated applications are applications that have manifests built into the program. You can create isolated applications to consume COM components.  

@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Environment Names
 **ANSI 4.10.4.4** The set of environment names and the method for altering the environment list used by the [getenv](../c-runtime-library/reference/getenv-wgetenv.md) function  

@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Statements (C++)
 C++ statements are the program elements that control how and in what order objects are manipulated. This section includes:  

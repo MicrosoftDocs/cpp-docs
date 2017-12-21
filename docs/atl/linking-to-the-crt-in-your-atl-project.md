@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linking to the CRT in Your ATL Project
 The [C Run-Time Libraries](../c-runtime-library/crt-library-features.md) (CRT) provide many useful functions that can make programming much easier during ATL development. All ATL projects link to the CRT library. You can see the advantages and disadvantages of linking method in [Benefits and Tradeoffs of the Method Used to Link to the CRT](../atl/benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md).  

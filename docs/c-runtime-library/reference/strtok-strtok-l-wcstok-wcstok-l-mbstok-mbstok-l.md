@@ -18,6 +18,7 @@ caps.latest.revision: 34
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 Finds the next token in a string, by using the current locale or a specified locale that's passed in. More secure versions of these functions are available; see [strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l](../../c-runtime-library/reference/strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md).  

@@ -14,6 +14,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Implement is and as C# Keywords (C++/CLI)
 This topic shows how to implement the functionality of the `is` and `as` C# keywords in Visual C++.  

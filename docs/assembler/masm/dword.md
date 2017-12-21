@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DWORD
 Allocates and optionally initializes a double word (4 bytes) of storage for each `initializer`.  

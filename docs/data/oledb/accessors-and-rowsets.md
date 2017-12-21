@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Accessors and Rowsets
 To set and retrieve data, OLE DB Templates use an accessor and a rowset through the [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) class. This class can handle multiple accessors of different types.  

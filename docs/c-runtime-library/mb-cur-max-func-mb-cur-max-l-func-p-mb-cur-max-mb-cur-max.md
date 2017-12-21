@@ -18,6 +18,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 Internal CRT function. Retrieves the maximum number of bytes in a multibyte character for the current or specified locale.  

@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # abort
 Aborts the current process and returns an error code.  

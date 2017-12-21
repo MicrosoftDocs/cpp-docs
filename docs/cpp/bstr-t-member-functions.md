@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _bstr_t Member Functions
 For information about `_bstr_t` member functions, see [_bstr_t Class](../cpp/bstr-t-class.md).  

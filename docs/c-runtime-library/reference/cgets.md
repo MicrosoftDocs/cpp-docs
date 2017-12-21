@@ -18,6 +18,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cgets
 This POSIX function is deprecated. Use the ISO C++ conformant [_cgets](../../c-runtime-library/cgets-cgetws.md) or security-enhanced [_cgets_s](../../c-runtime-library/reference/cgets-s-cgetws-s.md) instead.  

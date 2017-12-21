@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CStockPropImpl Class
 This class provides methods for supporting stock property values.  

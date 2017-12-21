@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # functional (STL/CLR)
 Include the STL/CLR header `<cliext/functional>` to define the a number of template classes and related template delegates and functions.  

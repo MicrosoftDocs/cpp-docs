@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Hosting ActiveX Controls Using ATL AXHost
 The sample in this topic shows how to create AXHost and how to host an ActiveX control using various ATL functions. It also shows how to access the control and sink events (using [IDispEventImpl](../atl/reference/idispeventimpl-class.md)) from the control that is hosted. The sample hosts the Calendar control in a main window or in a child window.  

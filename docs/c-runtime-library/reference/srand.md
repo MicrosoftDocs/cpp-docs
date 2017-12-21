@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # srand
 Sets the starting seed value for the pseudorandom number generator.  

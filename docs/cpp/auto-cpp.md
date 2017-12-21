@@ -13,6 +13,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # auto (C++)
 Deduces the type of a declared variable from its initialization expression.  

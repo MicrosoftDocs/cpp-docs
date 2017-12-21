@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # timespec_get, _timespec32_get, _timespec64_get
 Sets the interval pointed to by the first argument to the current calendar time, based on the specified time base.  

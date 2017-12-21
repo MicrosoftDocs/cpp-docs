@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l
 Write formatted output using a pointer to a list of arguments. More secure versions of these functions exist; see [vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l](../../c-runtime-library/reference/vfprintf-s-vfprintf-s-l-vfwprintf-s-vfwprintf-s-l.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # static_cast Operator
 Converts an *expression* to the type of *type-id,* based only on the types that are present in the expression.  

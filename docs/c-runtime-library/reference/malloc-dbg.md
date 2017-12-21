@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _malloc_dbg
 Allocates a block of memory in the heap with additional space for a debugging header and overwrite buffers (debug version only).  

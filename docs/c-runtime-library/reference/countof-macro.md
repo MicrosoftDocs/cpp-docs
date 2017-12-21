@@ -17,6 +17,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _countof Macro
 Compute the number of elements in a statically-allocated array.  

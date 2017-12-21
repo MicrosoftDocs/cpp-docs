@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CIatan2
 Calculates the arctangent of *x* / *y* where *x* and *y* are values on the top of the stack.  

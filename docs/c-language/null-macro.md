@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # NULL Macro
 **ANSI 4.1.5** The null pointer constant to which the macro NULL expands  

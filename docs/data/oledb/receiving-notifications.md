@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Receiving Notifications
 OLE DB provides interfaces for receiving notifications when events occur. These are described in [OLE DB Object Notifications](https://msdn.microsoft.com/en-us/library/ms725406.aspx) in the *OLE DB Programmer's Reference*. Setup of these events uses the standard COM connection-point mechanism. For example, an ATL object that wants to retrieve events through `IRowsetNotify` implements the `IRowsetNotify` interface by adding `IRowsetNotify` to the class-derived list and exposing it through a **COM_INTERFACE_ENTRY** macro.  

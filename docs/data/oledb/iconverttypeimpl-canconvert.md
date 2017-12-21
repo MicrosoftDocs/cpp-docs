@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IConvertTypeImpl::CanConvert
 Gives information on the availability of type conversions on a command or on a rowset.  

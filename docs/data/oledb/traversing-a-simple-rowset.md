@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Traversing a Simple Rowset
 The following example shows a quick and easy database access that does not involve commands. The following consumer code, in an ATL project, retrieves records from a table called *Artists* in a Microsoft Access database using the Microsoft OLE DB Provider for ODBC. The code creates a [CTable](../../data/oledb/ctable-class.md) table object with an accessor based on the user record class `CArtists`. It opens a connection, opens a session on the connection, and opens the table on the session.  

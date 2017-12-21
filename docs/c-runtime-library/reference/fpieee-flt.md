@@ -18,6 +18,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _fpieee_flt
 Invokes a user-defined trap handler for IEEE floating-point exceptions.  

@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # decltype  (C++)
 The `decltype` type specifier yields the type of a specified expression. The `decltype` type specifier, together with the [auto keyword](../cpp/auto-cpp.md), is useful primarily to developers who write template libraries. Use `auto` and `decltype` to declare a template function whose return type depends on the types of its template arguments. Or, use `auto` and `decltype` to declare a template function that wraps a call to another function, and then returns the return type of the wrapped function.  

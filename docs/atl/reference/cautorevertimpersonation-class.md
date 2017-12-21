@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAutoRevertImpersonation Class
 This class reverts [CAccessToken](../../atl/reference/caccesstoken-class.md) objects to a nonimpersonating state when it goes out of scope.  

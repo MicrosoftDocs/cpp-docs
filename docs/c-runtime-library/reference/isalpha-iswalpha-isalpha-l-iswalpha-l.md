@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isalpha, iswalpha, _isalpha_l, _iswalpha_l
 Determines whether an integer represents an alphabetic character.  

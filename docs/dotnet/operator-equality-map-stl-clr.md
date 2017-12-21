@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # operator== (map) (STL/CLR)
 List equal comparison.  

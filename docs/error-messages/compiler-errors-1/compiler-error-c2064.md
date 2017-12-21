@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2064
 term does not evaluate to a function taking N arguments  

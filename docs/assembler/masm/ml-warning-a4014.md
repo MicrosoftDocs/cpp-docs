@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML Warning A4014
 instructions and initialized data not supported in BSS segments  

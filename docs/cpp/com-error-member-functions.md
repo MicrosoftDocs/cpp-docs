@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _com_error Member Functions
 For information about the **_com_error** member functions, see [_com_error Class](../cpp/com-error-class.md).  

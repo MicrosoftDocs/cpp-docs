@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CInterfaceList Class
 This class provides methods useful when constructing a list of COM interface pointers.  

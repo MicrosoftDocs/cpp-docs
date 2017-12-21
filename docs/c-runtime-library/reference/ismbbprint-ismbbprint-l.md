@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbbprint, _ismbbprint_l
 Determines whether a specified multibyte character is a print character.  

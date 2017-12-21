@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Passing OLE DB Conformance Tests
 To make providers more consistent, the Data Access SDK provides a set of OLE DB conformance tests. The tests check all aspects of your provider and give you reasonable assurance that your provider functions as expected. You can find the OLE DB conformance tests on the Microsoft Data Access SDK. This section focuses on things you should do to pass the conformance tests. For information about running the OLE DB conformance tests, see the SDK.  

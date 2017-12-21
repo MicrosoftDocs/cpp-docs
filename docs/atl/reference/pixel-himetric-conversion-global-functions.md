@@ -14,6 +14,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Pixel/HIMETRIC Conversion Global Functions
 These functions provide support for converting to and from pixel and HIMETRIC units.  

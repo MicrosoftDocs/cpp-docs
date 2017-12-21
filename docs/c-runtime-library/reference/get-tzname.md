@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _get_tzname
 Retrieves the character string representation of the time zone name or the daylight standard time zone name (DST).  

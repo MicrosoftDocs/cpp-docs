@@ -15,6 +15,7 @@ caps.latest.revision: 43
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # volatile (C++)
 A type qualifier that you can use to declare that an object can be modified in the program by the hardware.  

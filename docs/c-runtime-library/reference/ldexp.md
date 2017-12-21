@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ldexp
 Multiplies a floating-point number by an integral power of two.  

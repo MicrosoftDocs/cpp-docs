@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # random_shuffle (STL/CLR)
 Rearranges a sequence of `N` elements in a range into one of `N`! possible arrangements selected at random.  

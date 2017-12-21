@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # wctomb_s, _wctomb_s_l
 Converts a wide character to the corresponding multibyte character. A version of [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

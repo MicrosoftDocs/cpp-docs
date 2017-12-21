@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Work with ODBC Database Connections
 The following topics explain how to connect to ODBC data sources.  

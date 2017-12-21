@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComDynamicUnkArray Class
 This class stores an array of **IUnknown** pointers.  

@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Services
 To create your ATL COM object so that it runs in a service, simply select Service (EXE) from the list of server options in the ATL Project Wizard. The wizard will then create a class derived from `CAtlServiceModuleT` to implement the service.  

@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MASM Macros
 In order to simplify the use of the [Raw Pseudo Operations](../build/raw-pseudo-operations.md), there are a set of macros, defined in ksamd64.inc, which can be used to create typical procedure prologues and epilogues.  

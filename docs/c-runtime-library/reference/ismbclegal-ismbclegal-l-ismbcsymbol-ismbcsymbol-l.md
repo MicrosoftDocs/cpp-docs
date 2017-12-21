@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l
 Checks whether a multibyte character is a legal or symbol character.  

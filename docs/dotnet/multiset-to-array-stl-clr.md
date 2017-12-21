@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multiset::to_array (STL/CLR)
 Copies the controlled sequence to a new array.  

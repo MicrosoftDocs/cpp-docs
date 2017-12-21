@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
 Converts between hiragana and katakana characters.  

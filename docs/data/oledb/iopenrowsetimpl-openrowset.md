@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IOpenRowsetImpl::OpenRowset
 Opens and returns a rowset that includes all rows from a single base table or index.  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # LIB Input Files
 The input files expected by LIB depend on the mode in which it is being used, as shown in the following table.  

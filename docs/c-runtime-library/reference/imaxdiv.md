@@ -18,6 +18,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # imaxdiv
 Computes the quotient and the remainder of two integer values of any size as a single operation.  

@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _RTC_GetErrDesc
 Returns a brief description of a run-time error check (RTC) type.  

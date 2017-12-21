@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Aggregation and Class Factory Macros
 These macros provide ways of controlling aggregation and of declaring class factories.  

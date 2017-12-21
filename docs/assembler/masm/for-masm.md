@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # FOR (MASM)
 Marks a block that will be repeated once for each `argument`, with the current `argument` replacing `parameter` on each repetition.  

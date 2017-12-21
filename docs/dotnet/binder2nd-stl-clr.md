@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # binder2nd (STL/CLR)
 The template class describes a one-argument functor that, when called, returns its stored two-argument functor called with the supplied first argument and its stored second argument. You use it specify a function object in terms of its stored functor.  

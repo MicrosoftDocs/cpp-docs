@@ -18,6 +18,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # imaxabs
 Calculates the absolute value of an integer of any size.  

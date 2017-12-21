@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _calloc_dbg
 Allocates a number of memory blocks in the heap with additional space for a debugging header and overwrite buffers (debug version only).  

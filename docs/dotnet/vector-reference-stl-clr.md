@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # vector::reference (STL/CLR)
 The type of a reference to an element.  

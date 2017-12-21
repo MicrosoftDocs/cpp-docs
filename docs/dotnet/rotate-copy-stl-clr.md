@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # rotate_copy (STL/CLR)
 Exchanges the elements in two adjacent ranges within a source range and copies the result to a destination range.  

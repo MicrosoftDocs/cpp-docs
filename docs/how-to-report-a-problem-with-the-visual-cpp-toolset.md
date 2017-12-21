@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to Report a Problem with the Visual C++ Toolset
 

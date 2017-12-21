@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ASP, ATL Active Server Page Component Wizard
 Use this page of the ATL Active Server Page Component Wizard to specify optional settings for handling information and state related to your ASP component.  

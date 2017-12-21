@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COleDateTimeSpan Class
 Represents a relative time, a time span.  

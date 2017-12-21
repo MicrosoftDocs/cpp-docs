@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /arch (Minimum CPU Architecture)
 The architecture options specify the architecture for code generation. Select the base hardware architecture you are working with to see /arch options for that target platform.  

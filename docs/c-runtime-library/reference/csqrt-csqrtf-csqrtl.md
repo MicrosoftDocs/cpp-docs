@@ -18,6 +18,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # csqrt, csqrtf, csqrtl
 Retrieves the square root of a complex number, with a branch cut along the negative real axis.  

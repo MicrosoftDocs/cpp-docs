@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Macros for OLE DB Provider Templates
 The OLE DB Templates Provider macros offer functionality in the following categories:  

@@ -18,6 +18,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbcmp, _mbsnbcmp_l
 Compares the first `n` bytes of two multibyte-character strings.  

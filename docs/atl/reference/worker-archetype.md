@@ -14,6 +14,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Worker Archetype
 Classes that conform to the *worker* archetype provide the code to process work items queued on a thread pool.  

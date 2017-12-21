@@ -17,6 +17,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Format Specification Fields: scanf and wscanf Functions
 The information here applies to the entire `scanf` family of functions, including the secure versions and describes the symbols used to tell the `scanf` functions how to parse the input stream, such as the input stream `stdin` for `scanf`, into values that are inserted into program variables.  

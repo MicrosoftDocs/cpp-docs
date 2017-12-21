@@ -18,6 +18,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _except_handler3
 Internal CRT function. Used by a framework to find the appropriate exception handler to process the current exception.  

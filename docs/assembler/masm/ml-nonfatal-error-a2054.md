@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2054
 **forced error : value not equal to 0**  

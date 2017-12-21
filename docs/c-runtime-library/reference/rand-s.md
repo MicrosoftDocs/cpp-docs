@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # rand_s
 Generates a pseudorandom number. A version of [rand](../../c-runtime-library/reference/rand.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

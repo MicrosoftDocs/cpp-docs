@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding an ATL OLE DB Provider
 Use this wizard to add an ATL OLE DB provider to a project. An ATL OLE DB provider consists of a data source, session, command, and rowset classes. The project must have been created as an ATL COM application.  

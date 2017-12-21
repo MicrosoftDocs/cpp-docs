@@ -18,6 +18,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Bessel Functions: _j0, _j1, _jn, _y0, _y1, _yn
 Computes the Bessel function of the first or second kind, of orders 0, 1, or n. The Bessel functions are commonly used in the mathematics of electromagnetic wave theory.  

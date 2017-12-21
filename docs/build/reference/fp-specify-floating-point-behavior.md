@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /fp (Specify Floating-Point Behavior)
 Specifies floating-point behavior in a source code file.  

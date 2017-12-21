@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _chsize_s
 Changes the size of a file. This is a version of [_chsize](../../c-runtime-library/reference/chsize.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

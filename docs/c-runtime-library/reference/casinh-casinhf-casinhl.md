@@ -18,6 +18,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # casinh, casinhf, casinhl
 Retrieves the inverse hyperbolic sine of a complex number, with branch cuts outside the interval [-i, +i] along the imaginary axis.  

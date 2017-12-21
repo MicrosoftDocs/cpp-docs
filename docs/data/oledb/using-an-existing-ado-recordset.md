@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using an Existing ADO Recordset
 To mix OLE DB consumer templates and Active Data Objects (ADO), use ADO to open a recordset (corresponding to a rowset in the OLE DB Consumer Templates). When you have a recordset, do the following to connect to an OLE DB rowset:  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Dot Directives
 Specify dot directives outside a description block, at the start of a line. Dot directives begin with a period ( . ) and are followed by a colon (:). Spaces and tabs are allowed. Dot directive names are case sensitive and are uppercase.  

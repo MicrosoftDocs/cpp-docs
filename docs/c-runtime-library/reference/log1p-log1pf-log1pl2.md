@@ -17,6 +17,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # log1p, log1pf, log1pl
 Computes the natural logarithm of 1 plus the specified value.  

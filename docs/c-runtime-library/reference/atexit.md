@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # atexit
 Processes the specified function at exit.  

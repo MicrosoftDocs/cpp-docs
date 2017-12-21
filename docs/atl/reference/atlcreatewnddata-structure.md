@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _AtlCreateWndData Structure
 This structure contains class instance data in windowing code in ATL.  

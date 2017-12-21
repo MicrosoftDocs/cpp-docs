@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DB
 Allocates and optionally initializes a byte of storage for each `initializer`. `DB` is a synonym of [BYTE](../../assembler/masm/byte-masm.md)  

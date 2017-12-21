@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # SUBTITLE
 Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).  

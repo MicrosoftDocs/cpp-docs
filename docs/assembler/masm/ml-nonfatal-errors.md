@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Errors
 For more information about ML nonfatal errors, see [ML Error Messages](../../assembler/masm/ml-error-messages.md).  

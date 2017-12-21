@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Gm (Enable Minimal Rebuild)
 Enables minimal rebuild, which determines whether C++ source files that include changed C++ class definitions (stored in header (.h) files) need to be recompiled.  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Postfix Operators
 The postfix operators have the highest precedence (the tightest binding) in expression evaluation.  

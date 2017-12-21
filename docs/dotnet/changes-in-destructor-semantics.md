@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Changes in Destructor Semantics
 Semantics for class destructors have changed significantly from Managed Extensions for C++ to Visual C++.  

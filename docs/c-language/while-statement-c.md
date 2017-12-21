@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # while Statement (C)
 The `while` statement lets you repeat a statement until a specified expression becomes false.  

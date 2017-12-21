@@ -14,6 +14,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # pgosweep
 Used in profile-guided optimization to write all profile data from a running program to the .pgc file.  

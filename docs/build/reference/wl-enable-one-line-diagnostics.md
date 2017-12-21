@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /WL (Enable One-Line Diagnostics)
 Appends additional information to an error or warning message.  

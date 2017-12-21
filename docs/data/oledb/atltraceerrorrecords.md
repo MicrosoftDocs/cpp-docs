@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # AtlTraceErrorRecords
 Dumps OLE DB Error Record information to the dump device if an error is returned.  

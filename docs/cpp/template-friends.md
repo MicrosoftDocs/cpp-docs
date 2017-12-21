@@ -14,6 +14,7 @@ author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
 robots: noindex,nofollow
+ms.workload: ["cplusplus"]
 ---
 # Template Friends
 

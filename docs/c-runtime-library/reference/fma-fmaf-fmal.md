@@ -18,6 +18,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fma, fmaf, fmal
 Multiplies two values together,  adds a third value, and then rounds the result, without losing any precision due to intermediary rounding.  

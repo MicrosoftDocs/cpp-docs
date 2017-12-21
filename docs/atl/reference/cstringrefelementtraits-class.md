@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CStringRefElementTraits Class
 This class provides static functions related to strings stored in collection class objects. The string objects are dealt with as references.  

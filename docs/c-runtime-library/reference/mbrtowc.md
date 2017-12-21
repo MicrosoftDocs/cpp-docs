@@ -18,6 +18,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # mbrtowc
 Convert a multibyte character in the current locale into the equivalent wide character, with the capability of restarting in the middle of a multibyte character.  

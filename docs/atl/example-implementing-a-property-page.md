@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Example: Implementing a Property Page
 This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface.  

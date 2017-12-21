@@ -8,15 +8,14 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["VCCORLIB/Platform::Guid"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Guid Struct"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Guid Struct"]
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
 caps.latest.revision: 6
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Guid value class
 Represents a [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) type in the Windows Runtime type system.  

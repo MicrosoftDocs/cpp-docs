@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl::RefRows
 Called by [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md) to either increment or release a reference count to an existing row handle.  

@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Define and Use Delegates (C++/CLI)
 This article shows how to define and consume delegates in C++/CLI.  

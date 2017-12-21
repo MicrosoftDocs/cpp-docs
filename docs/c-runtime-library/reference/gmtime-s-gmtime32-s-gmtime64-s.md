@@ -18,6 +18,7 @@ caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # gmtime_s, _gmtime32_s, _gmtime64_s
 Converts a time value to a structure. These are versions of [_gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

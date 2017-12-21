@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Buffer Manipulation
 Use these routines to work with areas of memory on a byte-by-byte basis.  

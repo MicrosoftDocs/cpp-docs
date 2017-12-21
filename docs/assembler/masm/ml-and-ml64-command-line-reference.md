@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML and ML64 Command-Line Reference
 Assembles and links one or more assembly-language source files. The command-line options are case sensitive.  

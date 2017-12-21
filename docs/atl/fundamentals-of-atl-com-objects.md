@@ -14,6 +14,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Fundamentals of ATL COM Objects
 The following illustration depicts the relationship among the classes and interfaces that are used to define an ATL COM object.  

@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /errorReport (Report Internal Compiler Errors)
 Lets you provide internal compiler error (ICE) information directly to Microsoft.  

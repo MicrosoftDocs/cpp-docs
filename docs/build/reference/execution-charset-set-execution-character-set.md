@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /execution-charset (Set Execution Character Set)
 Lets you specify the execution character set for your executable.  

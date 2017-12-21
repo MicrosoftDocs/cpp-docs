@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Preprocessing Directives
 -   [Character Constants and Conditional Inclusion](../c-language/character-constants-and-conditional-inclusion.md)  

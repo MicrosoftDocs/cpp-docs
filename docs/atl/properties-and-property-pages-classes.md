@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Properties and Property Pages Classes
 The following classes support properties and property pages:  

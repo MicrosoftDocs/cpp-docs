@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /vmm, /vms, /vmv (General Purpose Representation)
 Used when [/vmb, /vmg (Representation Method)](../../build/reference/vmb-vmg-representation-method.md) is selected as the [representation method](../../build/reference/vmb-vmg-representation-method.md). These options indicate the inheritance model of the not-yet-encountered class definition.  

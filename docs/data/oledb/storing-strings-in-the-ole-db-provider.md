@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Storing Strings in the OLE DB Provider
 In MyProviderRS.h, the ATL OLE DB Provider Wizard creates a default user record called `CWindowsFile`. To handle the two strings, either modify `CWindowsFile` or add your own user record as shown in the following code:  

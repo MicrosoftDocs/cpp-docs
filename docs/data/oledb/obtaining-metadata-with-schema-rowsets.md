@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Obtaining Metadata with Schema Rowsets
 Sometimes you need to obtain information about the provider, rowset, table, columns, or other database information without opening the rowset. Data about the database structure is called metadata and can be retrieved by a number of different methods. One method is to use schema rowsets.  

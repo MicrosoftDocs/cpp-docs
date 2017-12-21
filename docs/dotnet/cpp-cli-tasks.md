@@ -13,6 +13,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # C++/CLI Tasks
 The articles in this section of the documentation show how to use various features of C++/CLI.  

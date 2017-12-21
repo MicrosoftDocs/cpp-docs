@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Expression Statement
 Expression statements cause expressions to be evaluated. No transfer of control or iteration takes place as a result of an expression statement.  

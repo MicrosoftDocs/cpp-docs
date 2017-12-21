@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # lfind
 This POSIX function is deprecated. Use the ISO C++ conformant [_lfind](../../c-runtime-library/reference/lfind.md) or security-enhanced [_lfind_s](../../c-runtime-library/reference/lfind-s.md) instead.

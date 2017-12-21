@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # SQWORD
 Allocates and optionally initializes 8 signed bytes of storage for each `initializer`. Also can be used as a type specifier anywhere a type is legal.  

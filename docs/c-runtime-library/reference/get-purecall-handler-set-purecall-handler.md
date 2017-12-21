@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _get_purecall_handler, _set_purecall_handler
 Gets or sets the error handler for a pure virtual function call.  

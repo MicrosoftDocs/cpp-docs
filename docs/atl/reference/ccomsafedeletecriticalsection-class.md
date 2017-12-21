@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComSafeDeleteCriticalSection Class
 This class provides methods for obtaining and releasing ownership of a critical section object.  

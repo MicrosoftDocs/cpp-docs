@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # What Is AtlAxWin100?
 `AtlAxWin100` is the name of a window class that helps provide ATL's control-hosting functionality. When you create an instance of this class, the window procedure will automatically use the control-hosting API to create a host object associated with the window and load it with the control that you specify as the title of the window.  

@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAtlMap Class
 This class provides methods for creating and managing a map object.  

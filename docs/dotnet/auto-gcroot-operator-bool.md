@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_gcroot::operator bool
 Operator for using `auto_gcroot` in a conditional expression.  

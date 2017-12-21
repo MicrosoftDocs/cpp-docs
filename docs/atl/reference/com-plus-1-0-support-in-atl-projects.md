@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COM+ 1.0 Support in ATL Projects
 You can use the [ATL Project Wizard](../../atl/reference/creating-an-atl-project.md) to create a project with basic support for COM+ 1.0 components.  

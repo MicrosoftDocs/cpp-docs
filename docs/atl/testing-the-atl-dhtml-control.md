@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Testing the ATL DHTML Control
 Once you have created your project, you can build and test the sample control. Before you do this, use Class View and Solution Explorer to examine the project. The elements of your project are described in greater detail in [Identifying the Elements of the DHTML Control Project](../atl/identifying-the-elements-of-the-dhtml-control-project.md).  

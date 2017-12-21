@@ -14,6 +14,7 @@ caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Pure and Verifiable Code (C++/CLI)
 For .NET Programming, Visual C++ supports the creation of three distinct types of components and applications: mixed, pure, and verifiable. All three are available through the [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) compiler option.  

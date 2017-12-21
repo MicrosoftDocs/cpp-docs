@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Structure and Constant Definitions
 The default helper routine uses several structures to communicate with the hook functions and during any exceptions. Here are the notification and failure values, information structures, and the pointer-to-hook-function type passed to the hooks:  

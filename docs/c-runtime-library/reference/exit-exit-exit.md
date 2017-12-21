@@ -18,6 +18,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # exit, _Exit, _exit
 Terminates the calling process. The `exit` function terminates it after cleanup; `_exit` and `_Exit` terminate it immediately.  

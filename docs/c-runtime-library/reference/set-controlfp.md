@@ -18,6 +18,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _set_controlfp
 Sets the floating-point control word.  

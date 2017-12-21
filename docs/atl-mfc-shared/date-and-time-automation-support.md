@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Date and Time: Automation Support
 This article describes how to take advantage of the class library services related to date and time management. Procedures described include:  

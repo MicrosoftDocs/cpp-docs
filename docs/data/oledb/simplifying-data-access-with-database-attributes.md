@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Simplifying Data Access with Database Attributes
 This topic demonstrates the use of database attributes to simplify database operations.  

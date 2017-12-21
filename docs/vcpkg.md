@@ -1,18 +1,17 @@
 ---
-title: vcpkg-- a C++ Package Manager for Windows | Microsoft Docs 
+title: vcpkg-- a C++ Package Manager for Windows | Microsoft Docs
 description: vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows.
 keywords: vcpkg
 author: mikeblome
 ms.author: mblome
 ms.date: 05/30/2017
-ms.technology:  
-  - "cpp-ide"
+ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: "windows"
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
 ms.topic: "article"
-dev_langs: 
-  - "C++"
+dev_langs: ["C++"]
 manager: ghogen
+ms.workload: [cplusplus]
 ---
 
 # vcpkg: C++ Package Manager for Windows 

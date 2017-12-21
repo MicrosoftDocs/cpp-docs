@@ -13,6 +13,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Name Resolution for Dependent Types
 Use **typename** for qualified names in template definitions to tell the compiler that the given qualified name identifies a type. For more information, see [typename](../cpp/typename.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # collection_adapter::iterator (STL/CLR)
 The type of an iterator for the controlled sequence.  

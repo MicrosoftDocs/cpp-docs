@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Qpar-report (Auto-Parallelizer Reporting Level)
 Enables the reporting feature of the compiler's [Auto-Parallelizer](../../parallel/auto-parallelization-and-auto-vectorization.md) and specifies the level of informational messages for output during compilation.  

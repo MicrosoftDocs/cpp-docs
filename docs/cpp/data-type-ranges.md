@@ -14,6 +14,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Data Type Ranges
 Visual C++ 32-bit and 64-bit compilers recognize the types in the table later in this article.  

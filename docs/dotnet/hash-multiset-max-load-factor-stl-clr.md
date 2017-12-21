@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # hash_multiset::max_load_factor (STL/CLR)
 Gets or sets the maximum elements per bucket.  

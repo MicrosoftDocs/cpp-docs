@@ -15,6 +15,7 @@ caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:threadSafeInit (Thread-safe Local Static Initialization)  
 The `/Zc:threadSafeInit` compiler option tells the compiler to initialize static local (function scope) variables in a thread-safe way, eliminating the need for manual synchronization. Only initialization is thread-safe. Use and modification of static local variables by multiple threads must still be manually synchronized. This option is available starting in Visual Studio 2015. By default, Visual Studio enables this option.  

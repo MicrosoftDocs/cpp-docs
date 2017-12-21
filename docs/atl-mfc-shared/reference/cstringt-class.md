@@ -15,6 +15,7 @@ caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CStringT Class
 This class represents a `CStringT` object.  

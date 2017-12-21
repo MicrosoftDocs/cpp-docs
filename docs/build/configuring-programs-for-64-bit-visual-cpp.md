@@ -14,6 +14,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Configure Visual C++ for 64-bit, x64 targets
 

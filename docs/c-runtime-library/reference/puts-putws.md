@@ -18,6 +18,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # puts, _putws
 Writes a string to **stdout**.  

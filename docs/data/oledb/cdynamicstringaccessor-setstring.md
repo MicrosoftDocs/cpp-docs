@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessor::SetString
 Sets the specified column data as a string.  

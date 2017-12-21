@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # map::count (STL/CLR)
 Finds the number of elements matching a specified key.  

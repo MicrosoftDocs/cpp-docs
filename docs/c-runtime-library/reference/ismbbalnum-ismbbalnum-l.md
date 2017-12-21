@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbbalnum, _ismbbalnum_l
 Determines whether a specified multibyte character is alpha or numeric.  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IErrorRecordsImpl::GetBasicErrorInfo
 Returns basic information about the error, such as the return code and provider-specific error number.  

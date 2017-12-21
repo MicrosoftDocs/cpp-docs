@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Global Constants
 The Microsoft run-time library contains definitions for global constants used by library routines. To use these constants, include the appropriate header files as indicated in the description for each constant. The global constants are listed in the following table.  

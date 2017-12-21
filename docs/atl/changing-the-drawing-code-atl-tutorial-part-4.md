@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Changing the Drawing Code (ATL Tutorial, Part 4)
 By default, the control's drawing code displays a square and the text **PolyCtl**. In this step, you will change the code to display something more interesting. The following tasks are involved:  

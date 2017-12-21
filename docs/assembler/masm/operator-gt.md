@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator GT
 Returns true (-1) if *expression1* is greater than *expression2*, or returns false (0) if it is not.  

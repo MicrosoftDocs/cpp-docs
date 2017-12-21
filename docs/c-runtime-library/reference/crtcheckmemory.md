@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtCheckMemory
 Confirms the integrity of the memory blocks allocated in the debug heap (debug version only).  

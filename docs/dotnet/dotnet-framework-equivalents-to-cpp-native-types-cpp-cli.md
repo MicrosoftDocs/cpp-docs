@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # .NET Framework Equivalents to C++ Native Types (C++/CLI)
 The following table shows the keywords for built-in Visual C++ types, which are aliases of predefined types in the **System** namespace.  

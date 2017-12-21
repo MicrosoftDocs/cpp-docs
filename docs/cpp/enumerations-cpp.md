@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Enumerations (C++)
 An enumeration is a user-defined type that consists of a set of named integral constants that are known as enumerators.  

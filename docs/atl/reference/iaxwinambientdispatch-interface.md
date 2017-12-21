@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IAxWinAmbientDispatch Interface
 This interface provides methods for specifying characteristics of the hosted control or container.  

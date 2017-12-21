@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Free Threading in Your Provider
 All the OLE DB provider classes are thread-safe, and registry entries are set accordingly. It is a good idea to support free threading to help provide a high level of performance in multiuser situations. To help keep your provider thread-safe, you must verify that your code is blocked properly. Whenever you write or store data, you must block the access with critical sections.  

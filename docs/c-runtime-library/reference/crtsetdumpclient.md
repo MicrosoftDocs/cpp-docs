@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetDumpClient
 Installs an application-defined function to dump `_CLIENT_BLOCK` type memory blocks (debug version only).  

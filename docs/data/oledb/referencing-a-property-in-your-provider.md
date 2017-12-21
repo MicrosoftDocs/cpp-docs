@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Referencing a Property in Your Provider
 Find the property group and property ID for the property you want. For more information, see [OLE DB Properties](https://msdn.microsoft.com/en-us/library/ms722734.aspx) in the *OLE DB Programmer's Reference*.  

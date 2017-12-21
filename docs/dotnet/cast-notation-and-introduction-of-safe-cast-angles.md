@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Cast Notation and Introduction of safe_cast&lt;&gt;
 The cast notation has changed from Managed Extensions for C++ to Visual C++.  

@@ -18,6 +18,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _putch_nolock, _putwch_nolock
 Writes a character to the console without locking the thread.  

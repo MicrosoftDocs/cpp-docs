@@ -18,6 +18,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # modf, modff, modfl
 Splits a floating-point value into fractional and integer parts.  

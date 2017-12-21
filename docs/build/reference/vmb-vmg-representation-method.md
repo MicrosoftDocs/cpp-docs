@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /vmb, /vmg (Representation Method)
 Select the method that the compiler uses to represent pointers to class members.  

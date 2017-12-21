@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs
 When using an MFC extension DLL from a regular MFC DLL, if the MFC extension DLL is not wired into the **CDynLinkLibrary** object chain of the regular MFC DLL, you might run into one or more of a set of related problems. Because the debug versions of the MFC Database, OLE, and Sockets support DLLs are implemented as MFC extension DLLs, you might see similar problems if you are using these MFC features, even if you are not explicitly using any of your own MFC extension DLLs. Some symptoms are:  

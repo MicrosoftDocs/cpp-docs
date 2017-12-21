@@ -18,6 +18,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _getch, _getwch
 Gets a character from the console without echo.  

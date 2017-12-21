@@ -18,6 +18,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _set_output_format
 Customizes output formats used by formatted I/O functions.  

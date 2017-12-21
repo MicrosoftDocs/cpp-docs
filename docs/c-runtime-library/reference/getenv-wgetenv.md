@@ -18,6 +18,7 @@ caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # getenv, _wgetenv
 Gets a value from the current environment. More secure versions of these functions are available; see [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  

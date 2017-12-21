@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MessageHandler
 **MessageHandler** is the name of the function identified by the second parameter of the `MESSAGE_HANDLER` macro in your message map.  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC extension DLLs: Overview
 An MFC extension DLL is a DLL that typically implements reusable classes derived from existing Microsoft Foundation Class Library classes. MFC extension DLLs are built using the dynamic-link library version of MFC (also known as the shared version of MFC). Only MFC executables (either applications or regular MFC DLLs) that are built with the shared version of MFC can use an MFC extension DLL. With an MFC extension DLL, you can derive new custom classes from MFC and then offer this extended version of MFC to applications that call your DLL.  

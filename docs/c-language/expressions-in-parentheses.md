@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Expressions in Parentheses
 You can enclose any operand in parentheses without changing the type or value of the enclosed expression. For example, in the expression:  

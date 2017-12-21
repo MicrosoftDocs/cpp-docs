@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CxxThrowException
 Builds the exception record and calls the runtime environment to start processing the exception.  

@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IAtlStringMgr Class
 This class represents the interface to a `CStringT` memory manager.  

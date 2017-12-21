@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComFakeCriticalSection Class
 This class provides the same methods as [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) but does not provide a critical section.  

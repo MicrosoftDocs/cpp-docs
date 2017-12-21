@@ -18,6 +18,7 @@ caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _open, _wopen
 Opens a file. These functions are deprecated because more-secure versions are available; see [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md).  

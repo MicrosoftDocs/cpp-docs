@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /showIncludes (List Include Files)
 Causes the compiler to output a list of the include files. Nested include files are also displayed (files that are included from the files that you include).  

@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Windows Operations (C++/CLI)
 Demonstrates various Windows-specific tasks using the [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)].  

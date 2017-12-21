@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ecvt
 Converts a `double` number to a string. A more secure version of this function is available; see [_ecvt_s](../../c-runtime-library/reference/ecvt-s.md).  

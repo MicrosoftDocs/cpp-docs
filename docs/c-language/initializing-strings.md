@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Initializing Strings
 You can initialize an array of characters (or wide characters) with a string literal (or wide string literal). For example:  

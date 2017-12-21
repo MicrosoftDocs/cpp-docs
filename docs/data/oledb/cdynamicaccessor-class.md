@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicAccessor Class
 Allows you to access a data source when you have no knowledge of the database schema (the database's underlying structure).  

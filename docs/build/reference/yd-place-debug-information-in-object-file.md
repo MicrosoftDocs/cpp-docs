@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Yd (Place Debug Information in Object File)
 Paces complete debugging information in all object files created from a precompiled header (.pch) file when used with the [/Yc](../../build/reference/yc-create-precompiled-header-file.md) and [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md) options. Deprecated.  

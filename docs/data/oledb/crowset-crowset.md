@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::CRowset
 Creates a new `CRowset` object and (optionally) associates it with an [IRowset](https://msdn.microsoft.com/en-us/library/ms720986.aspx) interface supplied as a parameter.  

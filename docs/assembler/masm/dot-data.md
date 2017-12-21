@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .DATA
 When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data segment for initialized data (segment name _DATA).  

@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Importing Function Calls Using __declspec(dllimport)
 The following code example shows how to use **_declspec(dllimport)** to import function calls from a DLL into an application. Assume that `func1` is a function that resides in a DLL separate from the .exe file that contains the **main** function.  

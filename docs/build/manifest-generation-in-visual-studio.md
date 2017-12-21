@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Manifest Generation in Visual Studio
 Generation of a manifest file for a particular project can be controlled in the project **Property Pages** dialog. On the **Configuration Properties** tab, click **Linker**, then **Manifest File**, then **Generate Manifest**. By default the project properties of new projects are set to generate a manifest file. However it is possible to disable generation of the manifest for a project using the **Generate Manifest** property of the project. When this property is set to **Yes**, the manifest for this project is generated. Otherwise the linker ignores assembly information when resolving dependencies of the application code, and does not generate the manifest.  

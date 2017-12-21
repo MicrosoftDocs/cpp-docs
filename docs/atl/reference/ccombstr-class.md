@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComBSTR Class
 This class is a wrapper for `BSTR`s.  

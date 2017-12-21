@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /P (Preprocess to a File)
 Preprocesses C and C++ source files and writes the preprocessed output to a file.  

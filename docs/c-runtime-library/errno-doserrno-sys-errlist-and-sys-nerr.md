@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # errno, _doserrno, _sys_errlist, and _sys_nerr
 Global macros that hold error codes that are set during program execution, and string equivalents of the error codes for display.  

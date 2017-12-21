@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Dynamically Determining Columns Returned to the Consumer
 The PROVIDER_COLUMN_ENTRY macros normally handle the **IColumnsInfo::GetColumnsInfo** call. However, because a consumer might choose to use bookmarks, the provider must be able to change the columns returned depending on whether the consumer asks for a bookmark.  

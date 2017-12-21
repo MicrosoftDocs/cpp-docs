@@ -18,6 +18,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _byteswap_uint64, _byteswap_ulong, _byteswap_ushort
 Reverses the order of bytes in an integer.  

@@ -14,6 +14,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .netmodule Files as Linker Input
 link.exe now accepts MSIL .obj and .netmodules as input. The output file produced by the linker will be an assembly or a .netmodule with no run-time dependency on any of the .obj or .netmodules that were input to the linker.  

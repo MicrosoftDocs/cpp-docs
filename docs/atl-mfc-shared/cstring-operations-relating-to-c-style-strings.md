@@ -14,6 +14,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CString Operations Relating to C-Style Strings
 A [CString](../atl-mfc-shared/using-cstring.md) object contains character string data. `CString` inherits the set of the [methods and operators](../atl-mfc-shared/reference/cstringt-class.md) that are defined in the class template [CStringT](../atl-mfc-shared/reference/cstringt-class.md) to work with string data. (`CString` is a `typedef` that specializes `CStringT` to work with the kind of character data that `CString` supports.)  

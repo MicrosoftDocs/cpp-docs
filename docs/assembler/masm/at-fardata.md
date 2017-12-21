@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # @fardata
 The name of the segment defined by the [.FARDATA](../../assembler/masm/dot-fardata.md) directive (text macro).  

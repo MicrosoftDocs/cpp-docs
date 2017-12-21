@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _getche_nolock, _getwche_nolock
 Gets a character from the console, with echo and without locking the thread.  

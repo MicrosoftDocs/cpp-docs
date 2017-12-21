@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Type char
 The `char` type is used to store the integer value of a member of the representable character set. That integer value is the ASCII code corresponding to the specified character.  

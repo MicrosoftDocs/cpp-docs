@@ -18,6 +18,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # rewind
 Repositions the file pointer to the beginning of a file.  

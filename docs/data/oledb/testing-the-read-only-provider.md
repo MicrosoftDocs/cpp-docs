@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Testing the Read-Only Provider
 To test a provider, you need a consumer. It helps if the consumer can match up with the provider. The OLE DB consumer templates are a thin wrapper around OLE DB and match with the provider COM objects. Because the source is shipped with the consumer templates, it is easy to debug a provider with them. The consumer templates are also a very small and fast way to develop consumer applications.  

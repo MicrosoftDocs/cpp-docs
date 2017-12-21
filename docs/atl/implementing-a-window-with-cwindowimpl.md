@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Implementing a Window with CWindowImpl
 To implement a window, derive a class from `CWindowImpl`. In your derived class, declare a message map and the message handler functions. You can now use your class in three different ways:  

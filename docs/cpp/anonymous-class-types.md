@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Anonymous Class Types
 Classes can be anonymous — that is, they can be declared without an *identifier*. This is useful when you replace a class name with a `typedef` name, as in the following:  

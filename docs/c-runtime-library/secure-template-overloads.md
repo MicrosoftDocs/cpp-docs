@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Secure Template Overloads
 Microsoft has deprecated many C Runtime library (CRT) functions in favor of security-enhanced versions. For example, `strcpy_s` is the more secure replacement for `strcpy`. The deprecated functions are common sources of security bugs, because they do not prevent operations that can overwrite memory. By default, the compiler produces a deprecation warning when you use one of these functions. The CRT provides C++ template overloads for these functions to help ease the transition to the more secure variants.  

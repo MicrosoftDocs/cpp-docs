@@ -17,6 +17,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # vsscanf_s, vswscanf_s
 Reads formatted data from a string. These versions of [vsscanf, vswscanf](../../c-runtime-library/reference/vsscanf-vswscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

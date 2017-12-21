@@ -17,6 +17,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # to Functions
 Each of the **to** functions and its associated macro, if any, converts a single character to another character.  

@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CRect Class
 Similar to a Windows [RECT](../../mfc/reference/rect-structure1.md) structure.  

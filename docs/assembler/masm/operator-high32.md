@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator HIGH32
 Returns the high 32 bits of *expression*. MASM expressions are 64-bit values.  

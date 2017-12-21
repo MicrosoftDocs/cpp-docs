@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __int8, __int16, __int32, __int64
 ## Microsoft Specific  

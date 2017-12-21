@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _strdec, _wcsdec, _mbsdec, _mbsdec_l
 Moves a string pointer back one character.  

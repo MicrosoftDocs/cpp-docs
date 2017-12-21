@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IObjectSafetyImpl Class
 This class provides a default implementation of the `IObjectSafety` interface to allow a client to retrieve and set an object's safety levels.  

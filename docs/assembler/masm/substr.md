@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # SUBSTR
 Returns a substring of *textitem*, starting at *position*. The *textitem* can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.  

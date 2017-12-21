@@ -18,6 +18,7 @@ caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
 Gets the length of a string, by using the current locale or a specified locale. More secure versions of these functions are available; see [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](../../c-runtime-library/reference/strnlen-strnlen-s.md)  

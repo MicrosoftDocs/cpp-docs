@@ -11,6 +11,7 @@ helpviewer_keywords: ["Unicode, Visual C++"]
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Unicode Support in the Compiler and Linker
 

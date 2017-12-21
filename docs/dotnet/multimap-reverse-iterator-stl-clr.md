@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # multimap::reverse_iterator (STL/CLR)
 The type of a reverse iterator for the controlled sequence.  

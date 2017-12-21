@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Null Characters
 **ANSI 4.9.2** The number of null characters that can be appended to data written to a binary stream  

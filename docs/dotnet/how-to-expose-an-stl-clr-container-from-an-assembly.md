@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Expose an STL/CLR Container from an Assembly
 STL/CLR containers such as `list` and `map` are implemented as template ref classes. Because C++ templates are instantiated at compile time, two template classes that have exactly the same signature but are in different assemblies are actually different types. This means that template classes cannot be used across assembly boundaries.  

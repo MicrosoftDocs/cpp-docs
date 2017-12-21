@@ -18,6 +18,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _getche, _getwche
 Gets a character from the console with echo.  

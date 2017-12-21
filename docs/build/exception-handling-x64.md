@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Exception Handling (x64)
 This section discusses structured exception handling and C++ exception handling behavior on the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  

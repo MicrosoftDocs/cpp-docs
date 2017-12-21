@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # expm1, expm1f, expm1l
 Computes the base-e exponential of a value, minus one.  

@@ -18,6 +18,7 @@ caps.latest.revision: 29
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _sopen_s, _wsopen_s
 Opens a file for sharing. These versions of [_sopen and _wsopen](../../c-runtime-library/reference/sopen-wsopen.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

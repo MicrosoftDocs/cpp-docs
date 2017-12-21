@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Working with OLE DB Consumer Templates
 The following topics provide some examples of how to use the OLE DB Consumer Templates in common scenarios:  

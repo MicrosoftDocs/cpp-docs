@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Fo (Object File Name)
 Specifies an object (.obj) file name or directory to be used instead of the default.  

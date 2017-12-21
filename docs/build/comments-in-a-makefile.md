@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Comments in a Makefile
 Precede a comment with a number sign (#). NMAKE ignores text from the number sign to the next newline character. Examples:  

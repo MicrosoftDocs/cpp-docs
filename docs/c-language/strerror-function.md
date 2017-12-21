@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strerror Function
 **ANSI 4.11.6.2** The contents of the error message strings returned by the `strerror` function  

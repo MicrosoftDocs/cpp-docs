@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # swap_ranges (STL/CLR)
 Exchanges the elements of one range with the elements of another, equal sized range.  

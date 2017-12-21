@@ -13,6 +13,7 @@ caps.latest.revision: 22
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Visual C++ Samples
 

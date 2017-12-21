@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # ISessionPropertiesImpl::GetProperties
 Returns the list of properties in the **DBPROPSET_SESSION** property group that are currently set on the session.  

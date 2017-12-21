@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbbalpha, _ismbbalpha_l
 Determines whether a specified multibyte character is alpha.  

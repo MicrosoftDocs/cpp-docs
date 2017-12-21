@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
 Returns the number of characters in the formatted string using a pointer to a list of arguments.  

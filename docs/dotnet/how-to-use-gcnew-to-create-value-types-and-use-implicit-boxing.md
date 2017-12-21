@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use gcnew to Create Value Types and Use Implicit Boxing
 Using [gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md) on a value type will create a boxed value type, which can then be placed on the managed, garbage-collected heap.  

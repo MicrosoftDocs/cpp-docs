@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _fgetc_nolock, _fgetwc_nolock
 Reads a character from a stream without locking the thread.  

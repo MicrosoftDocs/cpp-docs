@@ -14,6 +14,7 @@ ms.assetid: 8e4a396a-6790-4a9f-8387-df015a3220e7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Yl (Inject PCH Reference for Debug Library)
 

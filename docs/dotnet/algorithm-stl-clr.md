@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # algorithm (STL/CLR)
 Defines STL/CLR container template functions that perform algorithms.  

@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IAxWinHostWindowLic Interface
 This interface provides methods for manipulating a licensed control and its host object.  

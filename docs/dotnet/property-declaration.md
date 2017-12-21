@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Property Declaration
 The way to declare a property in a managed class has changed from Managed Extensions for C++ to Visual C++.  

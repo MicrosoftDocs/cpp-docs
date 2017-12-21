@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Changes in the DLL Delayed Loading Helper Function Since Visual C++ 6.0
 If you have multiple versions of Visual C++ on your computer or if you defined your own helper function, you may be affected by changes made to the DLL delayed loading helper function. For example:  

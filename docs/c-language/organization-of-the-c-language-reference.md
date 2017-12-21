@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Organization of the C Language Reference
 -   [Elements of C](../c-language/elements-of-c.md)  

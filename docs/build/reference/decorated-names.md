@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Decorated Names
 Functions, data, and objects in C and C++ programs are represented internally by their decorated names. A *decorated name* is an encoded string created by the compiler during compilation of an object, data, or function definition. It records calling conventions, types, function parameters and other information together with the name. This name decoration, also known as *name mangling*, helps the linker find the correct functions and objects when linking an executable.  

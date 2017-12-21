@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CPrimitiveElementTraits Class
 This class provides default methods and functions for a collection class composed of primitive data types.  

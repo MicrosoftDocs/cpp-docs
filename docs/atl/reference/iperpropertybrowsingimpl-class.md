@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IPerPropertyBrowsingImpl Class
 This class implements **IUnknown** and allows a client to access the information in an object's property pages.  

@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Implementation of a Custom String Manager (Advanced Method)
 In specialized situations, you might want to implement a custom string manager that does more than just change which heap is used to allocate memory. In this situation, you must manually implement the [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) interface as your custom string manager.  

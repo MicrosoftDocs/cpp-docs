@@ -14,6 +14,7 @@ caps.latest.revision: 28
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies
 Loading a C/C++ application can fail if dependent libraries cannot be found. This article describes some common reasons why a C/C++ application fails to load, and suggests steps to resolve the problems.  

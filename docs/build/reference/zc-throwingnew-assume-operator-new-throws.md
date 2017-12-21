@@ -15,6 +15,7 @@ caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:throwingNew (Assume operator new throws)  
 When the `/Zc:throwingNew` option is specified, the compiler optimizes calls to `operator new` to skip checks for a null pointer return. This option tells the compiler to assume that all linked implementations of `operator new` and custom allocators conform to the C++ standard and throw on allocation failure. By default in Visual Studio, the compiler pessimistically generates null checks (`/Zc:throwingNew-`) for these calls, because users can link with a non-throwing implementation of `operator new` or write custom allocator routines that return null pointers.  

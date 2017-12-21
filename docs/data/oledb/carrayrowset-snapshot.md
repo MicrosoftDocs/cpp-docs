@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CArrayRowset::Snapshot
 Reads the entire rowset into memory, creating an image or snapshot of it.  

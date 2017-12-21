@@ -15,6 +15,7 @@ caps.latest.revision: 72
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /clr (Common Language Runtime Compilation)
 Enables applications and components to use features from the common language runtime (CLR).  

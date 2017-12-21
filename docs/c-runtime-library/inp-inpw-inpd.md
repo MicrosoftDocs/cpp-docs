@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _inp, _inpw, _inpd
 Inputs, from a port, a byte (`_inp`), a word (`_inpw`), or a double word (`_inpd`).  

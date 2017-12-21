@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # SWORD
 Allocates and optionally initializes a signed word (2 bytes) of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.  

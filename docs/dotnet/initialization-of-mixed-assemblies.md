@@ -14,6 +14,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Initialization of Mixed Assemblies
 Prior to Visual Studio 2005, DLLs compiled with the **/clr** compiler option could non-deterministically deadlock when loaded; this issue was called the mixed DLL loading or loader lock issue. Almost all non-determinism has been removed from the mixed DLL loading process. However, there are a few remaining scenarios for which loader lock can (deterministically) occur. For more information about this issue, see "Mixed DLL Loading Problem" in the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=556).  

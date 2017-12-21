@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Elapsed Time: General-Purpose Classes
 The following procedure shows how to calculate the difference between two `CTime` objects and get a `CTimeSpan` result.  

@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __if_exists Statement
 The `__if_exists` statement tests whether the specified identifier exists. If the identifier exists, the specified statement block is executed.  

@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Tokens
 In a C source program, the basic element recognized by the compiler is the "token." A token is source-program text that the compiler does not break down into component elements.  

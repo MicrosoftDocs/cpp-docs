@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAtlDebugInterfacesModule Class
 This class provides support for debugging interfaces.  

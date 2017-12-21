@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /RANGE
 Modifies the output of dumpbin when used with other dumpbin options, such as /RAWDATA or /DISASM.  

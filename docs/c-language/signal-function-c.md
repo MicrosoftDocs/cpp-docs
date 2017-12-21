@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # signal Function (C)
 **ANSI 4.7.1.1** The set of signals for the **signal** function  

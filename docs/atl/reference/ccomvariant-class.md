@@ -15,6 +15,7 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComVariant Class
 This class wraps the `VARIANT` type, providing a member indicating the type of data stored.  

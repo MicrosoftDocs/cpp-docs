@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # MFC extension DLLs
 An MFC extension DLL is a DLL that typically implements reusable classes derived from the existing Microsoft Foundation Class Library classes.  

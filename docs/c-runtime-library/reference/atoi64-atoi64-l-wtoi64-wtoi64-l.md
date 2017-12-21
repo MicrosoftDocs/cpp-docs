@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 Converts a string to a 64-bit integer.  

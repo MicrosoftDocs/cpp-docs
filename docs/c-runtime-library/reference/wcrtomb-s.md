@@ -18,6 +18,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # wcrtomb_s
 Convert a wide character into its multibyte character representation. A version of [wcrtomb](../../c-runtime-library/reference/wcrtomb.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

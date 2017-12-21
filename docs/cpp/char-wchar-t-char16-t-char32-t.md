@@ -14,6 +14,7 @@ caps.latest.revision: 2
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # char, wchar_t, char16_t, char32_t
 The types char, wchar_t, char16_t and char32_t are built in types that represent alphanumeric characters as well as non-alphanumeric glyphs and non-printing characters. char is eight bits in size, wchar_t and char16_t are 16 bits in size, and char32_t is 32 bits.  

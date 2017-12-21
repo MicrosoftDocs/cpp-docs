@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # filelength
 This POSIX function is deprecated. Use the ISO C++ conformant [_filelength](../../c-runtime-library/reference/filelength-filelengthi64.md) instead.

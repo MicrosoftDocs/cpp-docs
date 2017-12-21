@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Regular MFC DLLs Dynamically Linked to MFC
 A regular MFC DLL dynamically linked to MFC is a DLL that uses MFC internally, and the exported functions in the DLL can be called by either MFC or non-MFC executables. As the name describes, this kind of DLL is built using the dynamic-link library version of MFC (also known as the shared version of MFC). Functions are usually exported from a regular MFC DLL using the standard C interface.  

@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAtlAutoThreadModuleT Class
 This class provides methods for implementing a thread-pooled, apartment-model COM server.  

@@ -15,6 +15,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # lock::lock
 Constructs a `lock` object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.  

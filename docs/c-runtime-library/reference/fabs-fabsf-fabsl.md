@@ -18,6 +18,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fabs, fabsf, fabsl
 Calculates the absolute value of the floating-point argument.  

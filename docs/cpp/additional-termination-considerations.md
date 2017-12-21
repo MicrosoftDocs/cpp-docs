@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Additional Termination Considerations
 You can terminate a C++ program by using **exit**, `return`, or **abort**. You can add exit processing using the `atexit` function. These are discussed in the following sections.  

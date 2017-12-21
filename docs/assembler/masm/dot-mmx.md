@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .MMX
 Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions.  

@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # modulus (STL/CLR)
 The template class describes a functor that, when called, returns the first argument modulo the second. You use it specify a function object in terms of its argument type.  

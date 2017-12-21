@@ -14,6 +14,7 @@ caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Structures Using PInvoke
 This document explains how native functions that accept C-style strings can be called from managed functions that provide an instance of <xref:System.String> by using P/Invoke. Although we recommend that you use the C++ Interop features instead of P/Invoke because P/Invoke provides little compile-time error reporting, is not type-safe, and can be tedious to implement, if the unmanaged API is packaged as a DLL and the source code is not available, P/Invoke is the only option. Otherwise, see the following documents:  

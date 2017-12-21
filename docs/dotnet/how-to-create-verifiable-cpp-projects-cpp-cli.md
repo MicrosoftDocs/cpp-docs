@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create Verifiable C++ Projects (C++/CLI)
 Visual C++ application wizards do not create verifiable projects, but projects can be converted to be verifiable. This topic describes how to set project properties and modify project source files to transform your Visual C++ projects to produce verifiable applications.  

@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _umask
 Sets the default file-permission mask. A more secure version of this function is available; see [_umask_s](../../c-runtime-library/reference/umask-s.md).  

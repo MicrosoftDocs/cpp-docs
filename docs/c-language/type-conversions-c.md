@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Type Conversions (C)
 Type conversions depend on the specified operator and the type of the operand or operators. Type conversions are performed in the following cases:  

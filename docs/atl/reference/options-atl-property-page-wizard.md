@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Options, ATL Property Page Wizard
 Use this page of the wizard to define the threading model and aggregation level of property page you are creating.  

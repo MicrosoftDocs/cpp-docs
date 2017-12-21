@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # qsort
 Performs a quick sort. A more secure version of this function is available; see [qsort_s](../../c-runtime-library/reference/qsort-s.md).  

@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # setbuf
 Controls stream buffering. This function is deprecated; use [setvbuf](../../c-runtime-library/reference/setvbuf.md) instead.  

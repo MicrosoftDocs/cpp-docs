@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _fullpath_dbg, _wfullpath_dbg
 Versions of [_fullpath, _wfullpath](../../c-runtime-library/reference/fullpath-wfullpath.md) that use the debug version of `malloc` to allocate memory.  

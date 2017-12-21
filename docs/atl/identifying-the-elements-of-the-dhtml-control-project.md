@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Identifying the Elements of the DHTML Control Project
 Most DHTML control code is exactly like that created for any ATL control. For a basic understanding of the generic code, work through the [ATL tutorial](../atl/active-template-library-atl-tutorial.md), and read the sections [Creating an ATL Project](../atl/reference/creating-an-atl-project.md) and [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md).  

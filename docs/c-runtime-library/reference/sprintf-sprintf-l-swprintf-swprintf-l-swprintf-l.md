@@ -18,6 +18,7 @@ caps.latest.revision: 36
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 Write formatted data to a string. More secure versions of some of these functions are available; see [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). The secure versions of `swprintf` and `_swprintf_l` do not take a `count` parameter.  

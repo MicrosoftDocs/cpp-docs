@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # replace_copy (STL/CLR)
 Examines each element in a source range and replaces it if it matches a specified value while copying the result into a new destination range.  

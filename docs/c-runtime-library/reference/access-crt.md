@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # access (CRT)
 This POSIX function is deprecated. Use the ISO C++ conformant [_access](../../c-runtime-library/reference/access-waccess.md) or security-enhanced [_access_s](../../c-runtime-library/reference/access-s-waccess-s.md) instead.

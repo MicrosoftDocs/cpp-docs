@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Modifying the ATL Project
 At this point, your composite control project implements the necessary objects for your composite control. The next step is to add any controls that the composite control will contain and handle any necessary events.  

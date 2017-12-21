@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle
 Defines the `auto_handle` class and `swap` function.  
