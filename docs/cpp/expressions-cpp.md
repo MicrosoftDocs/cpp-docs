@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Expressions (C++)
 This section describes C++ expressions. Expressions are sequences of operators and operands that are used for one or more of these purposes:  

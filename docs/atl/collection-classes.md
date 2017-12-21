@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Collection Classes
 The following classes provide support for arrays, lists, maps, and also traits methods for helping with comparisons and element access.  

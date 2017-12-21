@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Fe (Name EXE File)
 Specifies a name and a directory for the .exe file or DLL created by the compiler.  

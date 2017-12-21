@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # execvp
 This POSIX function is deprecated. Use the ISO C++ conformant [_execvp](../../c-runtime-library/reference/execvp-wexecvp.md) instead.  

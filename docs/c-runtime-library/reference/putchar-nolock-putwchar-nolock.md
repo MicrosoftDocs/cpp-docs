@@ -18,6 +18,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _putchar_nolock, _putwchar_nolock
 Writes a character to **stdout** without locking the thread.  

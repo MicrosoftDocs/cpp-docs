@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Yu (Use Precompiled Header File)
 Instructs the compiler to use an existing precompiled header (.pch) file in the current compilation.  

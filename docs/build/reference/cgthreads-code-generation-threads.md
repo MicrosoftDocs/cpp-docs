@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /cgthreads (Code Generation Threads)
 Sets number of cl.exe threads to use for optimization and code generation.  

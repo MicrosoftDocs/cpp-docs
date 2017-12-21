@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Requirements for STL/CLR Container Elements
 All reference types that are inserted into STL/CLR containers must have, at a minimum, the following elements:  

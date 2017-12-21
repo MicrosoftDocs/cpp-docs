@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # COMMENT (MASM)
 Treats all *text* between or on the same line as the delimiters as a comment.  

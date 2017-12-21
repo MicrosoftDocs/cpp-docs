@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CXMLAccessor::GetXMLColumnData
 Retrieves the column type information of a table as XML-formatted string data, by column.  

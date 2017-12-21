@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fdopen
 This POSIX function is deprecated. Use the ISO C++ conformant [_fdopen](../../c-runtime-library/reference/fdopen-wfdopen.md) instead.

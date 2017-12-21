@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _setmaxstdio
 Sets a maximum for the number of simultaneously open files at the `stdio` level.  

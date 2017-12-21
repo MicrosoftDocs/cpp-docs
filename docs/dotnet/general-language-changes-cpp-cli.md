@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # General Language Changes (C++/CLI)
 A number of CLR language features changed from Managed Extensions for C++ to Visual C++.  

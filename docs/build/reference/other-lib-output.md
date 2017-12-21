@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Other LIB Output
 In the default mode, you can use the /LIST option to display information about the resulting library. You can redirect this output to a file.  

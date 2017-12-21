@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Templates
 The OLE DB templates make OLE DB data access easier. Visual C++ provides template classes that implement many of the commonly used OLE DB interfaces. You can use the Visual C++ consumer templates to write an OLE DB client (consumer) application and the provider templates to write a server (provider) application.  

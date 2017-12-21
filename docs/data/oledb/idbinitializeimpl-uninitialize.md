@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBInitializeImpl::Uninitialize
 Places the data source object in an uninitialized state by freeing internal resources such as the property support.  

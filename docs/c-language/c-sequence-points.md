@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Sequence Points
 Between consecutive "sequence points" an object's value can be modified only once by an expression. The C language defines the following sequence points:  

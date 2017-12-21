@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Current Time: General Purpose Classes
 The following procedure shows how to create a `CTime` object and initialize it with the current time.  

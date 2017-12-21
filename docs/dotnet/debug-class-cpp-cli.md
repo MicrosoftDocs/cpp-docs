@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Debug Class (C++/CLI)
 When using <xref:System.Diagnostics.Debug> in a Visual C++ application, the behavior does not change between a debug and a release build.  

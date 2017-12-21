@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetReportFile
 After you use [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) to specify `_CRTDBG_MODE_FILE`, you can specify the file handle to receive the message text. `_CrtSetReportFile` is also used by [_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) to specify the destination of text (debug version only).  

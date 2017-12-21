@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # logical_and (STL/CLR)
 The template class describes a functor that, when called, returns true only if both the first argument and the second test as true. You use it specify a function object in terms of its argument type.  

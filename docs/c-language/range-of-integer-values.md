@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Range of Integer Values
 **ANSI 3.1.2.5** The representations and sets of values of the various types of integers  

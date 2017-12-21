@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ispunct, iswpunct, _ispunct_l, _iswpunct_l
 Determines whether an integer represents a punctuation character.  

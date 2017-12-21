@@ -15,6 +15,7 @@ caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:referenceBinding (Enforce reference binding rules)
 When the **/Zc:referenceBinding** option is specified, the compiler does not allow a non-const lvalue reference to bind to a temporary.  

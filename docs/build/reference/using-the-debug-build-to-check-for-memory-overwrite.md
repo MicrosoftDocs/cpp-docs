@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using the Debug Build to Check for Memory Overwrite
 To use the debug build to check for memory overwrite, you must first rebuild your project for debug. Then, go to the very beginning of your application's `InitInstance` function and add the following line:  

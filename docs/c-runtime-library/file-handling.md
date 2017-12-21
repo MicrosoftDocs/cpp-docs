@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # File Handling
 Use these routines to create, delete, and manipulate files and to set and check file-access permissions.  

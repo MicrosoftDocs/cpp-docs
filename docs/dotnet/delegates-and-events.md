@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Delegates and Events
 The way to declare delegates and events has changed from Managed Extensions for C++ to Visual C++.  

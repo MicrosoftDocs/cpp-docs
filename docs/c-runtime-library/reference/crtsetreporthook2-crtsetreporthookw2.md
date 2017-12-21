@@ -18,6 +18,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetReportHook2, _CrtSetReportHookW2
 Installs or uninstalls a client-defined reporting function by hooking it into the C run-time debug reporting process (debug version only).  

@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # max (STL/CLR)
 Compares two objects and returns the larger of the two, where the ordering criterion may be specified by a binary predicate.  

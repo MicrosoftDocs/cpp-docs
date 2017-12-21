@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Bitwise Shift Operators
 The shift operators shift their first operand left (`<<`) or right (`>>`) by the number of positions the second operand specifies.  

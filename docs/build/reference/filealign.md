@@ -10,6 +10,7 @@ ms.assetid: c1017a35-8d71-4ad9-934b-a3e3ea037fa0
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /FILEALIGN (Align sections in files)
 

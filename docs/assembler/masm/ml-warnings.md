@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ML Warnings
 For more information about ML warnings, see [ML Error Messages](../../assembler/masm/ml-error-messages.md).  

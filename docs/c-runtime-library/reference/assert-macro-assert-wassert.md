@@ -18,6 +18,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # assert Macro, _assert, _wassert
 Evaluates an expression and, when the result is `false`, prints a diagnostic message and aborts the program.  

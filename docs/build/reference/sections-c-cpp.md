@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # SECTIONS (C/C++)
 Introduces a section of one or more `definitions` that are access specifiers on sections in your project's output file.  

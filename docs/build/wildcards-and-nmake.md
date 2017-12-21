@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Wildcards and NMAKE
 NMAKE expands filename wildcards (* and ?) in dependency lines. A wildcard specified in a command is passed to the command; NMAKE does not expand it.  

@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL_DRAWINFO Structure
 Contains information used for rendering to various targets, such as a printer, metafile, or ActiveX control.  

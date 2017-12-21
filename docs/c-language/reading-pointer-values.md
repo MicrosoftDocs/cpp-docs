@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Reading Pointer Values
 **ANSI 4.9.6.2** The input for **%p** conversion in the `fscanf` function  

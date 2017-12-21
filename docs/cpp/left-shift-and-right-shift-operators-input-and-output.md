@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)
 The bitwise shift operators are the right-shift operator (>>), which moves the bits of *shift-expression* to the right, and the left-shift operator (<<), which moves the bits of *shift-expression* to the left. <sup>1</sup>  

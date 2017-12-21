@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # find_if (STL/CLR)
 Locates the position of the first occurrence of an element in a range that satisfies a specified condition.  

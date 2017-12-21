@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:implicitNoexcept (Implicit Exception Specifiers)
 When the **/Zc:implicitNoexcept** option is specified, the compiler adds an implicit [noexcept](../../cpp/noexcept-cpp.md) exception specifier to compiler-defined special member functions and to user-defined destructors and deallocators. By default, **/Zc:implicitNoexcept** is enabled to conform to the ISO C++11 standard. Turning this option off disables implicit `noexcept` on user-defined destructors and dealloacators and compiler-defined special member functions.  

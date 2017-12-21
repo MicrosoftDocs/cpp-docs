@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBPropertiesImpl::SetProperties
 Sets properties in the Data Source and Initialization property groups, for data source objects, or the Initialization property group, for enumerators.  

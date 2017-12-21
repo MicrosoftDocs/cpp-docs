@@ -15,6 +15,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Fi (Preprocess Output File Name)
 Specifies the name of the output file to which the [/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md) compiler option writes preprocessed output.  

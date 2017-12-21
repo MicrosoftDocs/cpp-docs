@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CAtlTransactionManager Class
 CAtlTransactionManager class provides a wrapper to Kernel Transaction Manager (KTM) functions.  

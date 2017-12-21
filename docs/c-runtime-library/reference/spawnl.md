@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # spawnl
 This POSIX function is deprecated. Use the ISO C++ conformant [_spawnl](../../c-runtime-library/reference/spawnl-wspawnl.md) instead.  

@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Function Call (C)
 A "function call" is an expression that includes the name of the function being called or the value of a function pointer and, optionally, the arguments being passed to the function.  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .386P
 Enables assembly of all instructions (including privileged) for the 80386 processor; disables assembly of instructions introduced with later processors.  

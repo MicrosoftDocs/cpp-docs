@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Semantics of Expressions
 Expressions are evaluated according to the precedence and grouping of their operators. ([Operator Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md) in [Lexical Conventions](../cpp/lexical-conventions.md), shows the relationships the C++ operators impose on expressions.)  

@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # getpid
 This POSIX function is deprecated. Use the ISO C++ conformant [_getpid](../../c-runtime-library/reference/getpid.md) instead.  

@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zp (Struct Member Alignment)
 Controls how the members of a structure are packed into memory and specifies the same packing for all structures in a module.  

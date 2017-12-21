@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # REAL10
 Allocates and optionally initializes a 10-byte floating-point number for each *initializer*.  

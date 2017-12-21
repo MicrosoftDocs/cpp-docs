@@ -18,6 +18,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _set_new_handler
 Transfers control to your error-handling mechanism if the `new` operator fails to allocate memory.  

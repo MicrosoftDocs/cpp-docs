@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # switch Statement (C)
 The `switch` and **case** statements help control complex conditional and branching operations. The `switch` statement transfers control to a statement within its body.  

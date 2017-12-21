@@ -15,6 +15,7 @@ caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IAxWinAmbientDispatchEx Interface
 This interface implements supplemental ambient properties for a hosted control.  

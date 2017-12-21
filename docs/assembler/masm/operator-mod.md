@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator MOD
 Returns the integer value of the remainder (modulo) when dividing *expression1* by *expression2*.  

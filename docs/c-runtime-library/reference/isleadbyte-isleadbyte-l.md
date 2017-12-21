@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isleadbyte, _isleadbyte_l
 Determines whether a character is the lead byte of a multibyte character.  

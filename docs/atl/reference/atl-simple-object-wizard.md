@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Simple Object Wizard
 This wizard inserts into the project a minimal COM object. Use this page of the wizard to specify the names that identify the C++ class and files for your object and its COM functionality.  

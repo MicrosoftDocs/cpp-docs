@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Blank Lines
 **ANSI 4.9.2** Whether space characters that are written out to a text stream immediately before a newline character appear when read in  

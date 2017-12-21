@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator LOWWORD
 Returns the low 16 bits of *expression*. MASM expressions are 64-bit values.  

@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Read Windows Performance Counters (C++/CLI)
 Some applications and Windows subsystems expose performance data through the Windows performance system. These counters can be accessed using the <xref:System.Diagnostics.PerformanceCounterCategory> and <xref:System.Diagnostics.PerformanceCounter> classes, which reside in the <xref:System.Diagnostics?displayProperty=fullName> namespace.  

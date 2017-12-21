@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isalnum, iswalnum, _isalnum_l, _iswalnum_l
 Determines whether an integer represents an alphanumeric character.  

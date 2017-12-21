@@ -13,6 +13,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Range-based for Statement (C++)
 Executes `statement` repeatedly and sequentially for each element in `expression`.  

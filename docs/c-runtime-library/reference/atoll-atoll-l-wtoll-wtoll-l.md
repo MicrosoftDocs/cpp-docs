@@ -18,6 +18,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # atoll, _atoll_l, _wtoll, _wtoll_l
 Converts a string to a `long long` integer.  

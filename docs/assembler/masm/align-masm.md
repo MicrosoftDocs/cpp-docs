@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ALIGN (MASM)
 Aligns the next variable or instruction on a byte that is a multiple of `number`.  

@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Qualifiers: Access to Volatile Objects
 **ANSI 3.5.5.3** What constitutes an access to an object that has volatile-qualified type  

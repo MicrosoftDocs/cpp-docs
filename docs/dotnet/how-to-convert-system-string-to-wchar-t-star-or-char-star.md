@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert System::String to wchar_t* or char*
 You can use `PtrToStringChars` in Vcclr.h to convert <xref:System.String> to native `wchar_t *` or `char *`.  This always returns a wide Unicode string pointer because CLR strings are internally Unicode. You can then convert from wide as shown in the following example.  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # reinterpret_cast Operator
 Allows any pointer to be converted into any other pointer type. Also allows any integral type to be converted into any pointer type and vice versa.  

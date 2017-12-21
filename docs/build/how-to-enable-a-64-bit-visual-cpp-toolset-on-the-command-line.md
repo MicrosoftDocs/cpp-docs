@@ -14,6 +14,7 @@ caps.latest.revision: 30
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Enable a 64-Bit, x64 hosted Visual C++ toolset on the command line
 

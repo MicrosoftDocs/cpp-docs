@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strtoll, _strtoll_l, wcstoll, _wcstoll_l
 Converts a string to a `long long` value.  

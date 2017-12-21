@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Specifying Compiler Optimization for an ATL Project
 By default, the [ATL Control Wizard](../../atl/reference/atl-control-wizard.md) generates new classes with the ATL_NO_VTABLE macro, as follows:  

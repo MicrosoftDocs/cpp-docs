@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Options, ATL Active Server Page Component Wizard
 Use this page of the ATL Active Server Page Component Wizard to design for increased efficiency and error support for the object.  

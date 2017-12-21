@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateSessionImpl::CreateSession
 Creates a new session from the data source object and returns the requested interface on the newly created session.  

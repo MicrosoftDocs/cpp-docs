@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Modifying the Inheritance of RMyProviderRowset
 To add the `IRowsetLocate` interface to the simple read-only provider example, modify the inheritance of **RMyProviderRowset**. Initially, **RMyProviderRowset** inherits from `CRowsetImpl`. You need to modify it to inherit from **CRowsetBaseImpl**.  

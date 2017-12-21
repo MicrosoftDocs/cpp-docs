@@ -15,6 +15,7 @@ caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IDispatchImpl Class
 Provides a default implementation for the `IDispatch` part of a dual interface.  

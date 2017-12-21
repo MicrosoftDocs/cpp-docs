@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # .CONST
 When used with [.MODEL](../../assembler/masm/dot-model.md), starts a constant data segment (with segment name CONST).  

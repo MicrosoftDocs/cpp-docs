@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Generic-Text Mappings
 To simplify writing code for international markets, generic-text mappings are defined in TCHAR.H for:  

@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CString
 The topics in this section describe how to program with `CString`. For reference documentation about the `CString` class, see the documentation for [CStringT](../atl-mfc-shared/reference/cstringt-class.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CColumnPrivileges, CColumnPrivilegeInfo
 Call the typedef class **CColumnPrivileges** to implement its parameter class **CColumnPrivilegeInfo**.  

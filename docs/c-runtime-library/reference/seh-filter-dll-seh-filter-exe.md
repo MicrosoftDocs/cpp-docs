@@ -18,6 +18,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _seh_filter_dll, _seh_filter_exe
 Identifies the exception and the related action to be taken.  

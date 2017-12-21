@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Iterate Over Arrays with for each
 This topic shows how to use the [for each, in](../dotnet/for-each-in.md) keyword on different types of arrays.  

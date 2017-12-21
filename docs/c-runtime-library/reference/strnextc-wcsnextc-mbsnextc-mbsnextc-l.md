@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 Finds the next character in a string.  

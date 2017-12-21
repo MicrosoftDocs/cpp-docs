@@ -18,6 +18,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # clog10, clog10f, clog10l
 Retrieves the base 10 logarithm of a complex number.  

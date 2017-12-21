@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorRowset::Bind
 Creates the bindings if you specified **bBind** as false in [CCommand::Open](../../data/oledb/ccommand-open.md).  

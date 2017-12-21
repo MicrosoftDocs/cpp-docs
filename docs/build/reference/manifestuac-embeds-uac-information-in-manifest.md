@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /MANIFESTUAC (Embeds UAC information in manifest)
 Specifies whether User Account Control (UAC) information is embedded in the program manifest.  

@@ -18,6 +18,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strspn, wcsspn, _mbsspn, _mbsspn_l
 Returns the index of the first character, in a string, that does not belong to a set of characters.  

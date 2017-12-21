@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 Write formatted data to a string with the ability to specify the order that the parameters are used in the format string.  

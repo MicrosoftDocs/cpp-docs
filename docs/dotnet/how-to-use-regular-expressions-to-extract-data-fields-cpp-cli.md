@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Regular Expressions to Extract Data Fields (C++/CLI)
 The following code example demonstrates the use of regular expressions to extract data from a formatted string. The following code example uses the <xref:System.Text.RegularExpressions.Regex> class to specify a pattern that corresponds to an e-mail address. This patter includes field identifiers that can be used to retrieve the user and host name portions of each e-mail address. The <xref:System.Text.RegularExpressions.Match> class is used to perform the actual pattern matching. If the given e-mail address is valid, the user name and host names are extracted and displayed.  

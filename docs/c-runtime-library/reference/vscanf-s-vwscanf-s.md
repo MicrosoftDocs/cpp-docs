@@ -17,6 +17,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # vscanf_s, vwscanf_s
 Reads formatted data from the standard input stream. These versions of [vscanf, vwscanf](../../c-runtime-library/reference/vscanf-vwscanf.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Type Checking (CRT)
 The compiler performs limited type checking on functions that can take a variable number of arguments, as follows:  

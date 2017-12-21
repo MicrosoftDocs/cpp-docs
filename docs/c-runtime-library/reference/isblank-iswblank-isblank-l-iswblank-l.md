@@ -17,6 +17,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isblank, iswblank, _isblank_l, _iswblank_l
 Determines whether an integer represents a blank character.  

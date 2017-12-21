@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Working with OLE DB Provider Templates
 To learn how to work with the OLE DB provider templates, see the following topics:  

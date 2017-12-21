@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Compile MFC and ATL Code By Using /clr
 This topic discusses how to compile existing MFC and ATL programs to target the Common Language Runtime.  

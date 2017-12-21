@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Return Type
 The return type of a function establishes the size and type of the value returned by the function and corresponds to the type-specifier in the syntax below:  

@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /MD, /MT, /LD (Use Run-Time Library)
 Indicates whether a multithreaded module is a DLL and specifies retail or debug versions of the run-time library.  

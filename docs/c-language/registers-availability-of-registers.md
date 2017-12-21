@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Registers: Availability of Registers
 **ANSI 3.5.1** The extent to which objects can actually be placed in registers by use of the register storage-class specifier  

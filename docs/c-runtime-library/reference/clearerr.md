@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # clearerr
 Resets the error indicator for a stream. A more secure version of this function is available; see [clearerr_s](../../c-runtime-library/reference/clearerr-s.md).  

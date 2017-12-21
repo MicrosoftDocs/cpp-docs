@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # LINK Command Files
 You can pass command-line arguments to LINK in the form of a command file. To specify a command file to the linker, use the following syntax:  

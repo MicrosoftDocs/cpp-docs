@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Linkage in Names with File Scope
 The following linkage rules apply to names (other than `typedef` and enumerator names) with file scope:  

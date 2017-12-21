@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ltoa_s, _ltow_s
 Converts a long integer to a string. These are versions of [_ltoa, _ltow](../../c-runtime-library/reference/ltoa-ltow.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

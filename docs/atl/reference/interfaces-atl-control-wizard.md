@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Interfaces, ATL Control Wizard
 This page of the wizard identifies the interfaces that the control supports. By default, the supported interfaces are those typically used by most containers.  

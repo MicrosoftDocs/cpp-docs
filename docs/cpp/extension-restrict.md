@@ -15,6 +15,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __restrict
 Like the **__declspec ( [restrict](../cpp/restrict.md) )** modifier, the `__restrict` keyword indicates that a symbol is not aliased in the current scope. The `__restrict` keyword differs from the `__declspec ( restrict )` modifier in the following ways:  

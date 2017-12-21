@@ -15,6 +15,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /validate-charset (Validate for compatible characters)
 Validates that the source file text contains only characters representable as UTF-8.  

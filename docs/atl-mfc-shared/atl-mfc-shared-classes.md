@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL/MFC Shared Classes
 These utility classes can be used in any native C++ project without requiring any MFC DLL.  

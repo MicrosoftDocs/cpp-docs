@@ -18,6 +18,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtMemDumpStatistics
 Dumps the debug header information for a specified heap state in a user-readable form (debug version only).  

@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # lexicographical_compare (STL/CLR)
 Compares element by element between two sequences to determine which is lesser of the two.  

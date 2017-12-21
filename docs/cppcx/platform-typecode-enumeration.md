@@ -7,17 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::TypeCode"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::TypeCode Enumeration"
+f1_keywords: ["VCCORLIB/Platform::TypeCode"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::TypeCode Enumeration"]
 ms.assetid: 93c1305f-eb16-4bec-aead-f88d9518b4cf
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::TypeCode Enumeration
 Specifies a numeric category that represents a built-in type.  

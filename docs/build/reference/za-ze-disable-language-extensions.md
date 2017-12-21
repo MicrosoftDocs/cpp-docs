@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Za, /Ze (Disable Language Extensions)
 The **/Za** compiler option emits an error for language constructs that are not compatible with ANSI C89 or ISO C++11. The **/Ze** compiler option, which is on by default, enables Microsoft extensions.  

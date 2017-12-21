@@ -18,6 +18,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbbtrail, _ismbbtrail_l
 Determines whether a byte is a trailing byte of a multibyte character.  

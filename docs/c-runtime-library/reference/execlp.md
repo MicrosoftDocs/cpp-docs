@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # execlp
 This POSIX function is deprecated. Use the ISO C++ conformant [_execlp](../../c-runtime-library/reference/execlp-wexeclp.md) instead.  

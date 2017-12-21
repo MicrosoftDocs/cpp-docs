@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 Checks whether a multibyte character is lowercase or uppercase.  

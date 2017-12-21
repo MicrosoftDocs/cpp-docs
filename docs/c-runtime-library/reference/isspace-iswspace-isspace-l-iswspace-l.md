@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isspace, iswspace, _isspace_l, _iswspace_l
 Determines whether an integer represents a space character.  

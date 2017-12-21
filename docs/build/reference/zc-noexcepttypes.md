@@ -10,6 +10,7 @@ ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:noexceptTypes (C++17 noexcept rules)
 

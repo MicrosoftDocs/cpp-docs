@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Implementing a Window
 Class [CWindowImpl](../atl/reference/cwindowimpl-class.md) allows you to implement a window and handle its messages. Message handing in ATL is based on a message map. This section explains:  

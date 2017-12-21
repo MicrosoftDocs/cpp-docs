@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strtoul, _strtoul_l, wcstoul, _wcstoul_l
 Convert strings to an unsigned long-integer value.  

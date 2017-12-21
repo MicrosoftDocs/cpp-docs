@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Point of declaration in C++
 A name is considered to be declared immediately after its declarator but before its (optional) initializer. (For more information on declarators, see [Declarations and definitions](declarations-and-definitions-cpp.md).)  

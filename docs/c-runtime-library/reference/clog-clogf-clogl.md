@@ -18,6 +18,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # clog, clogf, clogl
 Retrieves the natural logarithm of a complex number, with a branch cut along the negative real axis.  

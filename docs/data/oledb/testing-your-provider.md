@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Testing Your Provider
 Before you release a provider, you should perform the following tests, in the order indicated. These tests ensure that the provider functions properly for most potential users.  

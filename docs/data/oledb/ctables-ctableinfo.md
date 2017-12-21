@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CTables, CTableInfo
 Call the typedef class **CTables** to implement its parameter class **CTableInfo**.  

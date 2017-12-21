@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # isgraph, iswgraph, _isgraph_l, _iswgraph_l
 Determines whether an integer represents a graphical character.  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Overriding a Dynamic Accessor
 When you use a dynamic accessor such as `CDynamicAccessor`, the command **Open** method creates an accessor for you automatically, based on the column information of the opened rowset. You can override the dynamic accessor to control exactly how the columns are bound.  

@@ -17,6 +17,7 @@ caps.latest.revision: 27
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ASSERT, _ASSERTE, _ASSERT_EXPR Macros
 Evaluate an expression and generate a debug report when the result is `False` (debug version only).  

@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # com::ptr Class
 A wrapper for a COM object that can be used as a member of a CLR class.  The wrapper also automates lifetime management of the COM object, releasing all owned references on the object when its destructor is called. Analogous to [CComPtr Class](../atl/reference/ccomptr-class.md).  

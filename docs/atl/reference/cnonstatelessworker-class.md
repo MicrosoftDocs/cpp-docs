@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CNonStatelessWorker Class
 Receives requests from a thread pool and passes them on to a worker object that is created and destroyed on each request.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zo (Enhance Optimized Debugging)
 Generate enhanced debugging information for optimized code in non-debug builds.  

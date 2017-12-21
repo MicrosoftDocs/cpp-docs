@@ -13,6 +13,7 @@ caps.latest.revision: 5
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Exceptions in C++/CLI
 The articles in this section of the documentation explain exception handling in C++/CLI and how it differs from standard exception handling.  

@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # toupper, _toupper, towupper, _toupper_l, _towupper_l
 Convert character to uppercase.  

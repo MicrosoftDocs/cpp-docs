@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _mbsnbicmp, _mbsnbicmp_l
 Compares `n` bytes of two multibyte-character strings, and ignores case.  

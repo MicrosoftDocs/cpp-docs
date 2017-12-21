@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CXMLAccessor Class
 Allows you to access data sources as string data when you have no knowledge of the data store's schema (underlying structure).  

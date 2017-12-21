@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Range of char Values
 **ANSI 3.2.1.1** Whether a "plain" **char** has the same range of values as a **signed char** or an `unsigned char`  

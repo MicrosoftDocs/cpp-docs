@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Read Data from the Windows Registry (C++/CLI)
 The following code example uses the <xref:Microsoft.Win32.Registry.CurrentUser> key to read data from the Windows registry. First, the subkeys are enumerated using the <xref:Microsoft.Win32.RegistryKey.GetSubKeyNames%2A> method and then the Identities subkey is opened using the <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> method. Like the root keys, each subkey is represented by the <xref:Microsoft.Win32.RegistryKey> class. Finally, the new <xref:Microsoft.Win32.RegistryKey> object is used to enumerate the key/value pairs.  

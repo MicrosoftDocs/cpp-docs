@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Automation in a DLL
 When you choose the Automation option in the MFC DLL Wizard, the wizard provides you with the following:  

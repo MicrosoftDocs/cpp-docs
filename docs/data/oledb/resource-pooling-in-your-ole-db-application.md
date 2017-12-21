@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Resource Pooling in Your OLE DB Application
 To leverage pooling in your application, you must make sure OLE DB services are invoked by obtaining your data source through **IDataInitialize** or **IDBPromptInitialize**. If you directly use `CoCreateInstance` to invoke the provider based on the provider's CLSID, no OLE DB services are invoked.  

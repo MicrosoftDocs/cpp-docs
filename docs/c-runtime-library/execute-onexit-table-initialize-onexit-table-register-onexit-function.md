@@ -17,6 +17,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 Manages the routines to be called at exit time.  

@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /nologo (Suppress Startup Banner) (C/C++)
 Suppresses the display of the copyright banner when the compiler starts up and display of informational messages during compiling.  

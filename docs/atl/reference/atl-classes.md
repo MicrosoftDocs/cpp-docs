@@ -14,6 +14,7 @@ caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Classes
 The Active Template Library (ATL) includes the following classes. To find a particular class by category, see the [ATL Class Overview](../../atl/atl-class-overview.md).  

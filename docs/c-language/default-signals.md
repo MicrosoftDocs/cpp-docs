@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Default Signals
 **ANSI 4.7.1.1** If the equivalent of **signal (***sig***, SIG_DFL)** is not executed prior to the call of a signal handler, the blocking of the signal that is performed  

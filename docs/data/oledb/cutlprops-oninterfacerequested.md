@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CUtlProps::OnInterfaceRequested
 Handles requests for an optional interface when a consumer calls a method on one of the object creation interfaces.  

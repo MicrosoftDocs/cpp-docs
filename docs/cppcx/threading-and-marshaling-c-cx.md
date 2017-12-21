@@ -8,17 +8,14 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: 
-  - "C4451"
-helpviewer_keywords: 
-  - "threading issues, C++/CX"
-  - "agility, C++/CX"
-  - "C++/CX, threading issues"
+f1_keywords: ["C4451"]
+helpviewer_keywords: ["threading issues, C++/CX", "agility, C++/CX", "C++/CX, threading issues"]
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
 caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Threading and Marshaling (C++/CX)
 In the vast majority of cases, instances of Windows Runtime classes, like standard C++ objects, can be accessed from any thread. Such classes are referred to as "agile". However, a small number of Windows Runtime classes that ship with Windows are non-agile, and must be consumed more like COM objects than standard C++ objects. You don't need to be a COM expert to use non-agile classes, but you do need to take into consideration the class's threading model and its marshaling behavior. This article provides background and guidance for those rare scenarios in which you need to consume an instance of a non-agile class.  

@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Unary Arithmetic Operators
 The C unary plus, arithmetic-negation, complement, and logical-negation operators are discussed in the following list:  

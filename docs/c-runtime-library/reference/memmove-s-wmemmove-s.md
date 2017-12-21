@@ -18,6 +18,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # memmove_s, wmemmove_s
 Moves one buffer to another. These are versions of [memmove, wmemmove](../../c-runtime-library/reference/memmove-wmemmove.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

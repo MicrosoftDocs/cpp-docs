@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator GE
 Returns true (-1) if *expression1* is greater than or equal to *expression2*, or returns false (0) if it is not.  

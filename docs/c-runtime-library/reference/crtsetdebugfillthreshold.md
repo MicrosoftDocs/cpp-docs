@@ -18,6 +18,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtSetDebugFillThreshold
 Retrieves or modifies the threshold controlling buffer-filling behavior in debug functions.  

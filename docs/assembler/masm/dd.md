@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DD
 Allocates and optionally initializes a double word (4 bytes) of storage for each `initializer`. `DD` is a synonym of [DWORD](../../assembler/masm/dword.md).  

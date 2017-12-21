@@ -13,6 +13,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Unwind Data for Exception Handling, Debugger Support
 This section discusses the data structures required for exception handling and debugging support.  

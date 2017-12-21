@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource::OpenWithPromptFileName
 This method prompts the user with a dialog box, then opens a data source using the file specified by the user.  

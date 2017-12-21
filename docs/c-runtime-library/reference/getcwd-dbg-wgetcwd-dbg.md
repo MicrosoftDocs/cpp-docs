@@ -18,6 +18,7 @@ caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _getcwd_dbg, _wgetcwd_dbg
 Debug versions of the [_getcwd, _wgetcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md) functions (only available during debug).  

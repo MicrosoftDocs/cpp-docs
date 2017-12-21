@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l
 Convert a string to an unsigned `__int64` value.  

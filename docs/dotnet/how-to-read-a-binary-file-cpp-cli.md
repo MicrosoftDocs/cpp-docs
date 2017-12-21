@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Read a Binary File (C++/CLI)
 The following code example shows how to read binary data from a file, by using two classes from the <xref:System.IO?displayProperty=fullName> namespace: <xref:System.IO.FileStream> and <xref:System.IO.BinaryReader>. <xref:System.IO.FileStream> represents the actual file. <xref:System.IO.BinaryReader> provides an interface to the stream that allows binary access.  

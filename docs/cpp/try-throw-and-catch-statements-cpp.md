@@ -15,6 +15,7 @@ caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # try, throw, and catch Statements (C++)
 To implement exception handling in C++, you use `try`, `throw`, and `catch` expressions.  

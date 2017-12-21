@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /CGTHREADS (Compiler Threads)
 Sets the number of cl.exe threads to use for optimization and code generation when link-time code generation is specified.  

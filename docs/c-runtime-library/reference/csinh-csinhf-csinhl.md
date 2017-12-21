@@ -18,6 +18,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # csinh, csinhf, csinhl
 Retrieves the hyperbolic sine of a complex number.  

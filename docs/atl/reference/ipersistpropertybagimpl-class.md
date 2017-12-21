@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IPersistPropertyBagImpl Class
 This class implements **IUnknown** and allows an object to save its properties to a client-supplied property bag.  

@@ -18,6 +18,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # erf, erff, erfl, erfc, erfcf, erfcl
 Computes the error function or the complementary error function of a value.  

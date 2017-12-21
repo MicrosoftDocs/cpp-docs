@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using a Record View  (MFC Data Access)
 This topic explains how you might commonly customize the default code for record views that the wizard writes for you. Typically, you want to constrain the record selection with a [filter](../data/odbc/recordset-filtering-records-odbc.md) or [parameters](../data/odbc/recordset-parameterizing-a-recordset-odbc.md), perhaps [sort](../data/odbc/recordset-sorting-records-odbc.md) the records, customize the SQL statement.  

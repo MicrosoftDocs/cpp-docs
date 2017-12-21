@@ -17,6 +17,7 @@ caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _spawn, _wspawn Functions
 Each of the `_spawn` functions creates and executes a new process:  

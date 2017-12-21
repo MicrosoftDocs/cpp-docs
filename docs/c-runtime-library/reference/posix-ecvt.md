@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ecvt
 This POSIX function is deprecated. Use the ISO C++ conformant [_ecvt](../../c-runtime-library/reference/ecvt.md) or security-enhanced [_ecvt_s](../../c-runtime-library/reference/ecvt-s.md) instead.

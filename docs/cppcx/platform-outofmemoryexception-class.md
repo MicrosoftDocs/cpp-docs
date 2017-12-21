@@ -7,18 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::OutOfMemoryException"
-  - "VCCORLIB/Platform::OutOfMemoryException::OutOfMemoryException"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::OutOfMemoryException"
+f1_keywords: ["VCCORLIB/Platform::OutOfMemoryException", "VCCORLIB/Platform::OutOfMemoryException::OutOfMemoryException"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::OutOfMemoryException"]
 ms.assetid: 49c19f6b-f66c-4448-b861-91dcbf32de2c
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::OutOfMemoryException Class
 Thrown when there's insufficient memory to complete the operation.  

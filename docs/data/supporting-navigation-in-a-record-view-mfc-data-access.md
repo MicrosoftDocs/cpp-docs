@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Navigation in a Record View  (MFC Data Access)
 This topic explains how to support movement from record to record in your [CRecordView](../mfc/reference/crecordview-class.md) class, including information about:  

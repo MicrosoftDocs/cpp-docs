@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtGetReportHook
 Retrieves the client-defined reporting function for hooking it into the C run time for the debug reporting process (debug version only).  

@@ -15,6 +15,7 @@ caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:sizedDealloc (Enable Global Sized Deallocation Functions)  
 The `/Zc:sizedDealloc` compiler option tells the compiler to preferentially call global `operator delete` or `operator delete[]` functions that have a second parameter of type `size_t` when the size of the object is available. These functions may use the `size_t` parameter to optimize deallocator performance.   

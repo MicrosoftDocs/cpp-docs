@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Integrate Custom Tools into the Project Properties
 You can add custom tool options to the Visual Studio **Property Pages** window by creating an underlying XML schema file.  

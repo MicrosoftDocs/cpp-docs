@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # typeof Goes to T::typeid
 The `typeof` operator used in Managed Extensions for C++ has been supplanted by the `typeid` keyword in Visual C++.  

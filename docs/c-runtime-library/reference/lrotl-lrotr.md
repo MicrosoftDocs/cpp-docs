@@ -18,6 +18,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _lrotl, _lrotr
 Rotates bits to the left (`_lrotl`) or right (`_lrotr`).  

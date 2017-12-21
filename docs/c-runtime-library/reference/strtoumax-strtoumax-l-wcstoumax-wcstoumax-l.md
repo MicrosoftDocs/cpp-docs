@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l
 Converts strings to an integer value of the largest supported unsigned integer type.  

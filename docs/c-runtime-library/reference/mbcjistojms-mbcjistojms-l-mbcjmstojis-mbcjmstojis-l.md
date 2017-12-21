@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 Converts between Japan Industry Standard (JIS) and Japan Microsoft (JMS) characters.  

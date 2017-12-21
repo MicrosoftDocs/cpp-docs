@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ccosh, ccoshf, ccoshl
 Retrieves the hyperbolic cosine of a complex number.  

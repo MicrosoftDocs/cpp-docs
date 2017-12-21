@@ -14,6 +14,7 @@ caps.latest.revision: 64
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Options Listed by Category
 This article contains a categorical list of compiler options. For an alphabetical list, see [Compiler Options Listed Alphabetically](../../build/reference/compiler-options-listed-alphabetically.md).  

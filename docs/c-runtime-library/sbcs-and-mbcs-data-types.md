@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # SBCS and MBCS Data Types
 Any Microsoft `MBCS` run-time library routine that handles only one multibyte character or one byte of a multibyte character expects an `unsigned int` argument (where 0x00 <= character value <= 0xFFFF and 0x00 <= byte value <= 0xFF ). An `MBCS` routine that handles multibyte bytes or characters in a string context expects a multibyte-character string to be represented as an `unsigned char` pointer.  

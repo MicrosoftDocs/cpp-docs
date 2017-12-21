@@ -14,6 +14,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Compiler Options
 cl.exe is a tool that controls the Microsoft C and C++ compilers and linker. cl.exe can be run only on operating systems that support Microsoft Visual Studio.  

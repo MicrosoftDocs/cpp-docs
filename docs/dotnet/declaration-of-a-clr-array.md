@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # Declaration of a CLR Array
 The syntax for declaring, instantiating, and initializing a managed array has changed from Managed Extensions for C++ to Visual C++.  

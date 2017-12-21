@@ -18,6 +18,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # getche
 This POSIX function is deprecated. Use the ISO C++ conformant [_getche](../../c-runtime-library/reference/getche-getwche.md) instead.  

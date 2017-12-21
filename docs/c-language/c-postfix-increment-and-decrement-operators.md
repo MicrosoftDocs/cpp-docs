@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # C Postfix Increment and Decrement Operators
 Operands of the postfix increment and decrement operators are scalar types that are modifiable l-values.  

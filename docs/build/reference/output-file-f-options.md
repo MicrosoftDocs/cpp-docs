@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Output-File (/F) Options
 The output-file options create or rename output files. They affect all C or C++ source files specified in the CL environment variable, on the command line, or in any command file.  

@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowsetImpl::m_rgRowData
 By default, a `CAtlArray` that templatizes on the user record template argument to `CRowsetImpl`.  

@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DT
 Allocates and optionally initializes 10 bytes of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal. `DT` is a synonym of [TBYTE](../../assembler/masm/tbyte.md).  

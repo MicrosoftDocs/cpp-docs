@@ -13,6 +13,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Value Types (Modern C++)
 C++ classes are by default value types. This topic provides an introductory overview of value types and issues relating to their use.  

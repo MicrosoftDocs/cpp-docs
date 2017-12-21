@@ -18,6 +18,7 @@ caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # __getmainargs, __wgetmainargs
 Invokes command-line parsing and copies the arguments to `main()` back through the passed pointers.  

@@ -18,6 +18,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _outp, _outpw, _outpd
 Outputs, at a port, a byte (`_outp`), a word (`_outpw`), or a double word (`_outpd`).  

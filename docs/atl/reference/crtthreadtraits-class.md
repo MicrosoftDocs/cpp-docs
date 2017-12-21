@@ -15,6 +15,7 @@ caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CRTThreadTraits Class
 This class provides the creation function for a CRT thread. Use this class if the thread will use CRT functions.  

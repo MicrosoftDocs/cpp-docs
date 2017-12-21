@@ -15,6 +15,7 @@ caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zm (Specify Precompiled Header Memory Allocation Limit)
 Determines the amount of memory that the compiler allocates to construct precompiled headers.  

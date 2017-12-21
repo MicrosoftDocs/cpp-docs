@@ -15,6 +15,7 @@ caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Lvalue Reference Declarator: &amp;
 Holds the address of an object but behaves syntactically like an object.  

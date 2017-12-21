@@ -15,6 +15,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:wchar_t (wchar_t Is Native Type)
 Parse `wchar_t` as a built-in type according to the C++ standard. By default, **/Zc:wchar_t** is on.  

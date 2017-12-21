@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _lock_file
 Locks a `FILE` object to ensure consistency for threads accessing the `FILE` object concurrently.  

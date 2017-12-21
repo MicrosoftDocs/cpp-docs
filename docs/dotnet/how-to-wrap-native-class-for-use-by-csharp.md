@@ -14,6 +14,7 @@ caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Wrap Native Class for Use by C#
 This sample shows how to wrap a native C++ class so it can be consumed by code authored in C#, or other .NET language.  

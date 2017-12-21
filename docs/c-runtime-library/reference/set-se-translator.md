@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _set_se_translator
 Handles Win32 exceptions (C structured exceptions) as C++ typed exceptions.  

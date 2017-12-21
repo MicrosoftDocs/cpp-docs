@@ -18,6 +18,7 @@ caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _alloca
 Allocates memory on the stack. This function is deprecated because a more secure version is available; see [_malloca](../../c-runtime-library/reference/malloca.md).  

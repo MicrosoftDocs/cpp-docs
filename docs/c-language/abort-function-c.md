@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # abort Function (C)
 **ANSI 4.10.4.1** The behavior of the **abort** function with regard to open and temporary files  

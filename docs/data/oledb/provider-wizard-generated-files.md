@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Provider Wizard-Generated Files
 The ATL OLE DB Provider Wizard generates the following files. The following topics use the short name "MyProvider", but the exact file names depend on the choice you made when creating the provider.  

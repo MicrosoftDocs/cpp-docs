@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Inserting a Composite Control
 The **Add Class** dialog box allows you to insert an ATL object into a project. Access this dialog box by right-clicking the project name in Solution Explorer, pointing to **Add**, and then clicking **Add Class**.  

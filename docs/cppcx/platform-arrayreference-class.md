@@ -8,15 +8,14 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["VCCORLIB/Platform::ArrayReference::ArrayReference"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::ArrayReference Class"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::ArrayReference Class"]
 ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
 caps.latest.revision: 4
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::ArrayReference Class
 `ArrayReference` is an optimization type that you can substitute for [Platform::Array^](../cppcx/platform-array-class.md) in input parameters when you want to fill a C-style array with the input data.  

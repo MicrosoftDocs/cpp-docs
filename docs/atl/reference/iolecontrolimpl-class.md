@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IOleControlImpl Class
 This class provides a default implementation of the **IOleControl** interface and implements **IUnknown**.  

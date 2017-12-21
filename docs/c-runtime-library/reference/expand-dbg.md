@@ -18,6 +18,7 @@ caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _expand_dbg
 Resizes a specified block of memory in the heap by expanding or contracting the block (debug version only).  

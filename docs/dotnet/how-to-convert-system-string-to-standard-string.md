@@ -14,6 +14,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert System::String to Standard String
 You can convert a <xref:System.String> to `std::string` or `std::wstring`, without using `PtrToStringChars` in Vcclr.h.  

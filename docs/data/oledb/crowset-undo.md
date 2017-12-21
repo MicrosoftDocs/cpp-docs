@@ -15,6 +15,7 @@ caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowset::Undo
 Undoes any changes made to a row since the last fetch or [Update](../../data/oledb/crowset-update.md).  

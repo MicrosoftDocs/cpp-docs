@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Operands and Expressions
 An "operand" is an entity on which an operator acts. An "expression" is a sequence of operators and operands that performs any combination of these actions:  

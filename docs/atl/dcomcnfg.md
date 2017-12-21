@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DCOMCNFG
 **DCOMCNFG** is a Windows NT 4.0 utility that allows you to configure various DCOM-specific settings in the registry. The **DCOMCNFG** window has three pages: Default Security, Default Properties, and Applications. Under Windows 2000 a fourth page, Default Protocols, is present.  

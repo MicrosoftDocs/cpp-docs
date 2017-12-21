@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtGetAllocHook
 Retrieves the current client-defined allocation function for hooking into the C run-time debug memory allocation process (debug version only).  

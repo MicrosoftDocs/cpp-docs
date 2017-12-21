@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Determine if an Image is Native or CLR
 One way to determine whether an image was built for the common language runtime is to use **dumpbin**[/CLRHEADER](../build/reference/clrheader.md).  

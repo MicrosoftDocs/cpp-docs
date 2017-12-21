@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyCP::Fire_OnRowsetChange
 Broadcasts an [OnRowsetChange](https://msdn.microsoft.com/en-us/library/ms722669.aspx) event to all listeners on the connection point **IID_IRowsetNotify** to notify consumers of a change affecting the entire rowset.  

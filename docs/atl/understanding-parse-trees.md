@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Understanding Parse Trees
 You can define one or more parse trees in your registrar script, where each parse tree has the following form:  

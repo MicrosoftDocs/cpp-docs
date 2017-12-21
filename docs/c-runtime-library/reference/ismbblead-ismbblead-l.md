@@ -18,6 +18,7 @@ caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbblead, _ismbblead_l
 Tests a character to determine whether it is a lead byte of a multibyte character.  

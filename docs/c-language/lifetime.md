@@ -14,6 +14,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Lifetime
 "Lifetime" is the period during execution of a program in which a variable or function exists. The storage duration of the identifier determines its lifetime.  

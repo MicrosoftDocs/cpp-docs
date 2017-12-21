@@ -15,6 +15,7 @@ caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IDocHostUIHandlerDispatch Interface
 An interface to the Microsoft HTML parsing and rendering engine.  

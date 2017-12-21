@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComObjectNoLock Class
 This class implements **IUnknown** for a nonaggregated object, but does not increment the module lock count in the constructor.  

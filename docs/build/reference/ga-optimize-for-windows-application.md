@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /GA (Optimize for Windows Application)
 Results in more efficient code for an .exe file for accessing thread-local storage (TLS) variables.  

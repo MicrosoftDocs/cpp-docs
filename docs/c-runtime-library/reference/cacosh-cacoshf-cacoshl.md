@@ -18,6 +18,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cacosh, cacoshf, cacoshl
 Retrieves the inverse hyperbolic cosine of a complex number with a branch cut at values less than 1 along the real axis. .  

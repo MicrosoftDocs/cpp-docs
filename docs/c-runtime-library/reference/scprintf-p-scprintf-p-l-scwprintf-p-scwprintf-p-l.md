@@ -18,6 +18,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
 Returns the number of characters in the formatted string, with the ability to specify the order in which parameters are used in the format string.  

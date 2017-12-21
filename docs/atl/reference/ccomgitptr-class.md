@@ -15,6 +15,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # CComGITPtr Class
 This class provides methods for dealing with interface pointers and the global interface table (GIT).  

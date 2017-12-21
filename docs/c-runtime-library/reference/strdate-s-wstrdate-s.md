@@ -18,6 +18,7 @@ caps.latest.revision: 24
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _strdate_s, _wstrdate_s
 Copy the current system date to a buffer. These are versions of [_strdate, _wstrdate](../../c-runtime-library/reference/strdate-wstrdate.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).  

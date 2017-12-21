@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Restrictions on Termination Handlers
 You cannot use a `goto` statement to jump into a `__try` statement block or a `__finally` statement block. Instead, you must enter the statement block through normal flow of control. (You can, however, jump out of a `__try` statement block.) Also, you cannot nest an exception handler or termination handler inside a `__finally` block.  

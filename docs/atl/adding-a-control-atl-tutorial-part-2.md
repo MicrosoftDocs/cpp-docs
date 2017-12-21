@@ -13,6 +13,7 @@ caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Adding a Control (ATL Tutorial, Part 2)
 In this step, you will add a control to your project, build it, and test it on a Web page.  

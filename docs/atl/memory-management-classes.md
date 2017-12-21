@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Memory Management Classes
 These classes provide support for heap pointers, smart pointers, and other memory allocation routines.  

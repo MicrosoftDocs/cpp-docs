@@ -14,6 +14,7 @@ caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Windows Runtime Unsupported CRT Functions
 Many C run-time (CRT) APIs can’t be used in [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps that execute in the Windows Runtime. These apps are built by using the /ZW compiler flag. For a list of unsupported CRT functions, see [CRT functions not supported by /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  

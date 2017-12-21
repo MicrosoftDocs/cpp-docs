@@ -14,6 +14,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Dependents
 In a dependency line, specify zero or more dependents after the colon (:) or double colon (::), using any valid filename or [pseudotarget](../build/pseudotargets.md). Separate multiple dependents with one or more spaces or tabs. Dependents are not case sensitive. Paths are permitted with filenames.  

@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # operator THIS
 Returns an operand of specified `type` whose offset and segment values are equal to the current location counter value.  

@@ -14,6 +14,7 @@ caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Strings (ATL/MFC)
 Nearly all programs work with string data. Visual C++ provides several ways to manage this string data.  

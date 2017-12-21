@@ -18,6 +18,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _CrtDumpMemoryLeaks
 Dumps all the memory blocks in the debug heap when a memory leak has occurred (debug version only).  

@@ -8,15 +8,14 @@ ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["VCCORLIB/Platform::String::String", "VCCORLIB/Platform::String::Begin", "VCCORLIB/Platform::String::CompareOrdinal", "VCCORLIB/Platform::String::Concat", "VCCORLIB/Platform::String::Data", "VCCORLIB/Platform::String::Dispose", "VCCORLIB/Platform::String::End", "VCCORLIB/Platform::String::Equals", "VCCORLIB/Platform::String::GetHashCode", "VCCORLIB/Platform::String::IsEmpty", "VCCORLIB/Platform::String::IsFastPass", "VCCORLIB/Platform::String::Length", "VCCORLIB/Platform::String::ToString"]
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::String"
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::String"]
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
 caps.latest.revision: 7
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::String Class
 Represents a sequential collection of Unicode characters that is used to represent text. For more information and examples, see [Strings](../cppcx/strings-c-cx.md).  

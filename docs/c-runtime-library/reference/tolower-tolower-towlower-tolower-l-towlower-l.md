@@ -18,6 +18,7 @@ caps.latest.revision: 22
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # tolower, _tolower, towlower, _tolower_l, _towlower_l
 Converts a character to lowercase.  

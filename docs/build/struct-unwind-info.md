@@ -13,6 +13,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # struct UNWIND_INFO
 The unwind data info structure is used to record the effects a function has on the stack pointer and where the nonvolatile registers are saved on the stack:  

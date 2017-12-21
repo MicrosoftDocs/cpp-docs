@@ -18,6 +18,7 @@ caps.latest.revision: 2
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _amsg_exit
 Emits a specified runtime error message and then exits your application with error code 255.  

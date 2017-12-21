@@ -15,6 +15,7 @@ caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # ATL Control Wizard
 Inserts into an ATL project (or an MFC project with ATL support) an ATL control. You can use this wizard to insert one of three kinds of controls:  

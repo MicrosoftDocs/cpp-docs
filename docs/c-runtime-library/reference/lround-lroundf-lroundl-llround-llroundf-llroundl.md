@@ -18,6 +18,7 @@ caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # lround, lroundf, lroundl, llround, llroundf, llroundl
 Rounds a floating-point value to the nearest integer.  

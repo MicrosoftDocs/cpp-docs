@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # sort (STL/CLR)
 Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate.  

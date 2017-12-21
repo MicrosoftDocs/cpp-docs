@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Diagnostic Printed by the assert Function
 **ANSI 4.2** The diagnostic printed by and the termination behavior of the **assert** function  

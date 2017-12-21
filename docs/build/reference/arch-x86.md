@@ -13,6 +13,7 @@ caps.latest.revision: 33
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /arch (x86)
 Specifies the architecture for code generation on x86. Also see [/arch (x64)](../../build/reference/arch-x64.md) and [/arch (ARM)](../../build/reference/arch-arm.md).  

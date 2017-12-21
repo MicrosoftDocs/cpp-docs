@@ -18,6 +18,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # nearbyint, nearbyintf, nearbyintl
 Rounds the specified floating-point value to an integer, and returns that value in a floating-point format.  

@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Using CStringT
 The topics in this section describe programming using the template class [CStringT](../atl-mfc-shared/reference/cstringt-class.md).  

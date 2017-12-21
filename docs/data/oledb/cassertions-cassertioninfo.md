@@ -15,6 +15,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAssertions, CAssertionInfo
 Call the typedef class **CAssertions** to implement its parameter class **CAssertionInfo**.  

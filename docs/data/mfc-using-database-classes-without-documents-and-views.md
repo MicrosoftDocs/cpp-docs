@@ -14,6 +14,7 @@ caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # MFC: Using Database Classes Without Documents and Views
 Sometimes you might not want to use the framework's document/view architecture in your database applications. This topic explains:  

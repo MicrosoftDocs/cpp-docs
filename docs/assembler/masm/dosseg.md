@@ -15,6 +15,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # DOSSEG
 Identical to [.DOSSEG](../../assembler/masm/dot-dosseg.md), which is the preferred form.  

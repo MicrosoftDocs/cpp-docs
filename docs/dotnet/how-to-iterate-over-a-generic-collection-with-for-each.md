@@ -14,6 +14,7 @@ caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Iterate Over a Generic Collection with for each
 The [Generics](../windows/generics-cpp-component-extensions.md) feature of Visual C++ allows you to create generic collections.  

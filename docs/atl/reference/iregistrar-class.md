@@ -14,6 +14,7 @@ ms.assetid: e88c04b7-0c93-4ae8-aeb9-ecd78f87421e
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # IRegistrar Interface
 This interface is defined in atliface.h and is used internally by CAtlModule member functions such as [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced).   

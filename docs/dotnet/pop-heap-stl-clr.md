@@ -15,6 +15,7 @@ caps.latest.revision: 4
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # pop_heap (STL/CLR)
 Removes the largest element from the front of a heap to the next-to-last position in the range and then forms a new heap from the remaining elements.  

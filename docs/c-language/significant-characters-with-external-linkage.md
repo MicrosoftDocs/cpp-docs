@@ -13,6 +13,7 @@ caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Significant Characters with External Linkage
 **ANSI 3.1.2** The number of significant characters with external linkage  

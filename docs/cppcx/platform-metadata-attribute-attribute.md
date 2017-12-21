@@ -7,17 +7,15 @@ ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: 
-  - "VCCORLIB/Platform::Metadata::Attribute"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "Platform::Metadata::Attribute Attribute"
+f1_keywords: ["VCCORLIB/Platform::Metadata::Attribute"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["Platform::Metadata::Attribute Attribute"]
 ms.assetid: 0e69727f-429b-4f7d-85c6-eea614f14dd7
 caps.latest.revision: 3
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::Attribute Attribute
 Represents the base class for all attributes.  

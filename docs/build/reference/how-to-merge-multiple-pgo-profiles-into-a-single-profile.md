@@ -14,6 +14,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # How to: Merge Multiple PGO Profiles into a Single Profile
 Profile-guided optimization (PGO) is a great tool for creating optimized binaries based on a scenario that is profiled. But what if you have an application that has several important, yet distinct scenarios; how do you create a single profile that PGO can use from several different scenarios? In Visual Studio, the PGO Manager, Pgomgr.exe, does this job for you.  

@@ -14,6 +14,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Implement the lock C# Keyword (C++/CLI)
 This topic shows how to implement the C# `lock` keyword in Visual C++. 

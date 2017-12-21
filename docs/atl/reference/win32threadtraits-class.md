@@ -15,6 +15,7 @@ caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Win32ThreadTraits Class
 This class provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.  

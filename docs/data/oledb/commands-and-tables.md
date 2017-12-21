@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # Commands and Tables
 Commands and tables allow you to access rowsets; that is, open rowsets, execute commands, and bind columns. The [CCommand](../../data/oledb/ccommand-class.md) and [CTable](../../data/oledb/ctable-class.md) classes instantiate the command and table objects, respectively. These classes derive from [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) as shown in the following figure.  

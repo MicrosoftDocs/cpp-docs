@@ -18,6 +18,7 @@ caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # cos, cosf, cosl, cosh, coshf, coshl
 Calculates the cosine (`cos`, `cosf`, or `cosl`), or hyperbolic cosine (`cosh`, `coshf`, or `coshl`).  

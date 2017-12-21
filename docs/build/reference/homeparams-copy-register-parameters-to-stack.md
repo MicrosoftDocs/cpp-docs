@@ -15,6 +15,7 @@ caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /homeparams (Copy Register Parameters to Stack)
 Forces parameters passed in registers to be written to their locations on the stack upon function entry.  

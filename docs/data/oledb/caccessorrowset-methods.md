@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CAccessorRowset Methods
 For information about the methods in `CAccessorRowset`, see [CAccessorRowset Members](../../data/oledb/caccessorrowset-members.md).

@@ -18,6 +18,7 @@ caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ismbbkalnum, _ismbbkalnum_l
 Determines whether a particular multibyte character is a non-ASCII text symbol.  

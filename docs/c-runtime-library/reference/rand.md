@@ -18,6 +18,7 @@ caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # rand
 Generates a pseudorandom number. A more secure version of this function is available, see [rand_s](../../c-runtime-library/reference/rand-s.md).  

@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # while Statement (C++)
 Executes *statement* repeatedly until *expression* evaluates to zero.  

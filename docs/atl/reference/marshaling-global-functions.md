@@ -14,6 +14,7 @@ caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Marshaling Global Functions
 These functions provide support for marshaling and converting marshaling data into interface pointers.  

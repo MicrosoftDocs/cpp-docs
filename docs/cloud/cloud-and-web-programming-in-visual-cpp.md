@@ -13,6 +13,7 @@ caps.latest.revision: 13
 author: "ghogen"
 ms.author: "ghogen"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Cloud and Web Programming in Visual C++
 In C++, you have several options for connecting to the web and the cloud.  

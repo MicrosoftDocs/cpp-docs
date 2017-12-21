@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _variant_t Member Functions
 For information about the `_variant_t` member functions, see [_variant_t Class](../cpp/variant-t-class.md).  

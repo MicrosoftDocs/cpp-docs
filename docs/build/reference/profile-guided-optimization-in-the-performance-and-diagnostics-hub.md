@@ -13,6 +13,7 @@ caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Profile Guided Optimization in the Performance and Diagnostics Hub
 The Profile Guided Optimization for Visual C++ plug-in in the Performance and Diagnostics Hub streamlines the profile guided optimization experience for developers. You can [download the plug-in](http://go.microsoft.com/fwlink/p/?LinkId=327915) from the Visual Studio website.  

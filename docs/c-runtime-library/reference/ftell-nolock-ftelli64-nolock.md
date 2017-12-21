@@ -18,6 +18,7 @@ caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _ftell_nolock, _ftelli64_nolock
 Gets the current position of a file pointer, without locking the thread.  

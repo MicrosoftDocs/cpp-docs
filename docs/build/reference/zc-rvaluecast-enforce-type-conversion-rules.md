@@ -15,6 +15,7 @@ caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /Zc:rvalueCast (Enforce type conversion rules)
 When the **/Zc:rvalueCast** option is specified, the compiler correctly identifies an rvalue reference type as the result of a cast operation in accordance with the C++11 standard. When the option is not specified, the compiler behavior is the same as in Visual Studio 2012. By default, **/Zc:rvalueCast** is off. For conformance and to eliminate errors in the use of casts, we recommend that you use **/Zc:rvalueCast**.  

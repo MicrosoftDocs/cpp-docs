@@ -15,6 +15,7 @@ caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
+ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDataSource::Open
 Opens a connection to a data source using a **CLSID**, **ProgID**, or `CEnumerator` moniker or prompts the user with a locator dialog box.  

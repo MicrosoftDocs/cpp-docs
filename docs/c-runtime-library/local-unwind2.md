@@ -18,6 +18,7 @@ caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _local_unwind2
 Internal CRT Function. Runs all termination handlers that are listed in the indicated scope table.  

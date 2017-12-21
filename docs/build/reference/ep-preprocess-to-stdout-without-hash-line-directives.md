@@ -15,6 +15,7 @@ caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # /EP (Preprocess to stdout Without #line Directives)
 Preprocesses C and C++ source files and copies the preprocessed files to the standard output device.  

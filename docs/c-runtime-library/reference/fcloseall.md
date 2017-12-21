@@ -18,6 +18,7 @@ caps.latest.revision: 4
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # fcloseall
 This POSIX function is deprecated. Use the ISO C++ conformant [_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md) instead.

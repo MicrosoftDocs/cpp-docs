@@ -14,6 +14,7 @@ caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # Error Message Edit Control
 The **Error Message** box contains the text of the system error message or module error message based on the value entered.  

@@ -18,6 +18,7 @@ caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
+ms.workload: ["cplusplus"]
 ---
 # _recalloc
 A combination of `realloc` and `calloc`. Reallocates an array in memory and initializes its elements to 0.  
