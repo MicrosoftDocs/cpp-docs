@@ -100,7 +100,7 @@ typedef mersenne_twister_engine<unsigned long long, 64, 312, 156,
     43, 6364136223846793005ULL> mt19937_64;  
 ```  
   
- For detailed information about the Mersenne twister algorithm, see the Wikipedia article [Mersenne twister](http://go.microsoft.com/fwlink/LinkId=402356).  
+ For detailed information about the Mersenne twister algorithm, see the Wikipedia article [Mersenne twister](http://go.microsoft.com/fwlink/p/?linkid=402356).  
   
 ## Example  
  For a code example, see [\<random>](../standard-library/random.md).  

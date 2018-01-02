@@ -28,7 +28,7 @@ You can change Visual C++ project settings to target different versions of the .
 > [!NOTE]
 >  To change the target platform toolset, you must have the associated version of Visual Studio or the Windows Platform SDK installed. For example, to target the Itanium platform with the **Windows7.1SDK** platform toolset, you must have [Microsoft Windows SDK for Windows 7 and .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) installed; however, you could use another compatible version of Visual Studio to do your development work, provided that you target the correct Framework version and platform toolset.  
   
- You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](http://go.microsoft.com/fwlink/?LinkId=196619) on the Visual C++ blog.  
+ You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](http://go.microsoft.com/fwlink/p/?linkid=196619) on the Visual C++ blog.  
   
 ### To change the target Framework  
   

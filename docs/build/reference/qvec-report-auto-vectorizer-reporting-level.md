@@ -49,4 +49,4 @@ Enables the reporting feature of the compiler [Auto-Vectorizer](../../parallel/a
  [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)   
  [Compiler Options](../../build/reference/compiler-options.md)   
  [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/?LinkId=263662)
+ [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)

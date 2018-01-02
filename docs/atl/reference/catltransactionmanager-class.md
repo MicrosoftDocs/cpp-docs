@@ -442,7 +442,7 @@ inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
  The name of the file or directory.  
   
  `dwAttributes`  
- The file attributes to set for the file. For more information, see [SetFileAttributesTransacted](http://go.microsoft.com/fwlink/linkid=158699).  
+ The file attributes to set for the file. For more information, see [SetFileAttributesTransacted](http://go.microsoft.com/fwlink/p/?linkid=158699).  
   
 ### Remarks  
  This wrapper calls the `SetFileAttributesTransacted` function.  

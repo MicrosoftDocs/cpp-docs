@@ -138,5 +138,5 @@ The Windows Runtime C++ Template Library (WRL)is a template library that provide
 |[Class Library Project Template](../windows/wrl-class-library-project-template.md)|Describes how to access the WRL Class Library project template. This template helps simplify the task of using Visual Studio to create Windows Runtime components.|  
 |[Key APIs by Category](../windows/key-wrl-apis-by-category.md)|Highlights the primary Windows Runtime C++ Template Library types, functions, and macros.|  
 |[Reference](../windows/wrl-reference.md)|Contains reference information for the Windows Runtime C++ Template Library.|  
-|[Quick Reference (Windows Runtime and Visual C++)](http://go.microsoft.com/fwlink/?LinkId=229180)|Briefly describes the C++/CX features that support the Windows Runtime.|  
-|[Using Windows Runtime Components in Visual C++](http://go.microsoft.com/fwlink/?LinkId=229155)|Shows how to use C++/CX to create a basic Windows Runtime component.|
+|[Quick Reference (Windows Runtime and Visual C++)](http://go.microsoft.com/fwlink/p/?linkid=229180)|Briefly describes the C++/CX features that support the Windows Runtime.|  
+|[Using Windows Runtime Components in Visual C++](http://go.microsoft.com/fwlink/p/?linkid=229155)|Shows how to use C++/CX to create a basic Windows Runtime component.|

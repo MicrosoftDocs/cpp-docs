@@ -80,7 +80,7 @@ This article contains information about security tools and practices. Using them
   s
 -   Identify potential security issues in an application.  
   
- The AppVerifier is part of the Application Compatibility Toolkit, which is available from the [Application Compatibility](http://go.microsoft.com/fwlink/?LinkId=91277) on the TechNet web site.  
+ The AppVerifier is part of the Application Compatibility Toolkit, which is available from the [Application Compatibility](http://go.microsoft.com/fwlink/p/?linkid=91277) on the TechNet web site.  
   
 
 ## Windows User Accounts  

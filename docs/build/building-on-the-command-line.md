@@ -39,7 +39,7 @@ The command prompt shortcuts are installed in a version-specific [!INCLUDE[vsprv
 
 The actual Start menu folder and shortcut names vary depending on the version of [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] you have installed, and the installation Nickname if you set one. For example, if you have Visual Studio 2017 installed, and you've given it an installation Nickname of 15.3, the developer command prompt shortcut is named **Developer Command Prompt for VS 2017 (15.3)**, in a folder named **Visual Studio 2017**. 
 
-If you've installed the [Build Tools for Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=840931) or [Visual C++ 2015 Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools) edition, there may only be specific native or cross tools developer command prompt options. 
+If you've installed the [Build Tools for Visual Studio 2017](https://go.microsoft.com/fwlink/p/?linkid=840931) or [Visual C++ 2015 Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools) edition, there may only be specific native or cross tools developer command prompt options. 
 
 <a name="developer_command_prompt"></a>
 ## To open a developer command prompt window  

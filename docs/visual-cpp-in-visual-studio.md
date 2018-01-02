@@ -57,7 +57,7 @@ Guidance for porting code and upgrading projects to Visual C++ in Visual Studio 
 [Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)  
  Learn more about new features and the latest information from the developers of [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)].
 
-[Visual Studio Downloads](http://go.microsoft.com/fwlink/?LinkId=235233)  
+[Visual Studio Downloads](http://go.microsoft.com/fwlink/p/?linkid=235233)  
 Download Visual C++.
 
 [Visual C++ Tools and Features in Visual Studio Editions](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)  
@@ -69,7 +69,7 @@ Find out which platforms are supported.
 [Visual C++ Samples](visual-cpp-samples.md)  
 Information about samples.
 
-[Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=235296)  
+[Visual Studio Community](http://go.microsoft.com/fwlink/p/?linkid=235296)  
 Find out how to get help, file bugs, and make suggestions for Visual Studio.
 
 ## Writing applications in C++

@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 Sends a signal to the executing program.  
   
 > [!NOTE]
->  Do not use this method to shut down a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, except in testing or debugging scenarios. Programmatic or UI ways to close a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app are not permitted according to Section 3.6 of the [Windows 8 app certification requirements](http://go.microsoft.com/fwlink/?LinkId=262889). For more information, see [Application lifecycle (Windows Store apps)](http://go.microsoft.com/fwlink/?LinkId=262853).  
+>  Do not use this method to shut down a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, except in testing or debugging scenarios. Programmatic or UI ways to close a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app are not permitted according to Section 3.6 of the [Windows 8 app certification requirements](http://go.microsoft.com/fwlink/p/?linkid=262889). For more information, see [Application lifecycle (Windows Store apps)](http://go.microsoft.com/fwlink/p/?linkid=262853).  
   
 ## Syntax  
   

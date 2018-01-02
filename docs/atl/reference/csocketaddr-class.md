@@ -195,7 +195,7 @@ addrinfo* const GetAddrInfoList() const;
 ```  
   
 ### Return Value  
- Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information about the `addrinfo` structure, see the "addrinfo" article in the [MSDN Library](http://go.microsoft.com/fwlink/linkid=556)  
+ Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information, see [addrinfo structure](https://msdn.microsoft.com/library/windows/desktop/ms737530).
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

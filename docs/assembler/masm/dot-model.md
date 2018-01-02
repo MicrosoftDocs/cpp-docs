@@ -52,7 +52,7 @@ Initializes the program memory model.
 |`stackoption`|Not used|`NEARSTACK`, `FARSTACK`|  
   
 ## Code  
- For MASM-related samples, download the Compiler samples from [Visual C++ Samples and Related Documentation for Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=178749).  
+ For MASM-related samples, download the Compiler samples from [Visual C++ Samples and Related Documentation for Visual Studio 2010](http://go.microsoft.com/fwlink/p/?linkid=178749).  
   
  The following example demonstrates the use of the `.MODEL` directive.  
   
@@ -90,4 +90,4 @@ end
   
 ## See Also  
  [Directives Reference](../../assembler/masm/directives-reference.md)   
- [Visual C++ Samples and Related Documentation for Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=178749)
+ [Visual C++ Samples and Related Documentation for Visual Studio 2010](http://go.microsoft.com/fwlink/p/?linkid=178749)
