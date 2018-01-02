@@ -11,12 +11,10 @@ ms.assetid: 77a9c1fb-7c41-4a9b-9418-18ac17ce4e74
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-f1_keywords: [VC.Project.IVCEventTool.CommandLine, VC.Project.IVCEventTool.Description, VC.Project.IVCEventTool.ExcludedFromBuild, VC.Project.VCConfiguration.BuildLogFile]
+#f1_keywords: [VC.Project.IVCEventTool.CommandLine, VC.Project.IVCEventTool.Description, VC.Project.IVCEventTool.ExcludedFromBuild, VC.Project.VCConfiguration.BuildLogFile]
 ms.workload: ["cplusplus", "linux"]
 ---
-
 # Custom Build Step Properties (Linux C++)
-
 
 Property | Description
 --- | ---

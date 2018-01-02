@@ -11,11 +11,11 @@ ms.assetid: 1a44230d-5dd8-4d33-93b4-e77e03e00150
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-f1_keywords: [VC.Project.VCConfiguration.BuildLogFile]
+#f1_keywords: [VC.Project.VCConfiguration.BuildLogFile]
 ms.workload: ["cplusplus", "linux"]
 ---
-
 # Copy Sources Project Properties (Linux C++)
+
 The properties set on this property page apply to all files in the project except whose file-level properties are set.
 
 Property | Description

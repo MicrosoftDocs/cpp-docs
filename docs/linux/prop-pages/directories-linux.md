@@ -11,10 +11,9 @@ ms.assetid: 12d45b93-0a5c-455e-b12a-9b9aad9a6d6c
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-f1_keywords: [VC.Project.VCDirectories.IncludePath, VC.Project.VCDirectories.LibraryPath, VC.Project.VCDirectories.SourcePath, VC.Project.VCDirectories.ExcludePath]
+#f1_keywords: [VC.Project.VCDirectories.IncludePath, VC.Project.VCDirectories.LibraryPath, VC.Project.VCDirectories.SourcePath, VC.Project.VCDirectories.ExcludePath]
 ms.workload: ["cplusplus", "linux"]
 ---
-
 # VC++ Directories (Linux C++)
 
 Property | Description
