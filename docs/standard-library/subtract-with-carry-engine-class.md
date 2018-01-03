@@ -65,7 +65,7 @@ class subtract_with_carry_engine;
  `ranlux48_base`: Used as a base for `ranlux48`.                   
 `typedef subtract_with_carry_engine<unsigned long long, 48, 5, 12> ranlux48_base;`  
   
- For detailed information about the subract with carry engine algorithm, see the Wikipedia article [Lagged Fibonacci generator](http://go.microsoft.com/fwlink/LinkId=402445).  
+ For detailed information about the subract with carry engine algorithm, see the Wikipedia article [Lagged Fibonacci generator](http://go.microsoft.com/fwlink/p/?linkid=402445).  
   
 ## Requirements  
  **Header:** \<random>  

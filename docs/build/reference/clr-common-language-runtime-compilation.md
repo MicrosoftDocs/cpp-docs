@@ -62,7 +62,7 @@ Enables applications and components to use features from the common language run
  Before Visual C++ 2005, **/clr:noAssembly** required **/LD**. **/LD** is now implied when you specify **/clr:noAssembly**.  
   
  **/clr:initialAppDomain**  
- Enables a [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] application to run on version 1 of the CLR. If you use **initialAppDomain**, then you may see some of the problems that are discussed in [BUG: AppDomainUnloaded exception when you use managed extensions for Visual C++ components](http://go.microsoft.com/fwlink/?LinkID=169465) on the Microsoft Support Web site.  
+ Enables a [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] application to run on version 1 of the CLR. If you use **initialAppDomain**, then you may see some of the problems that are discussed in [BUG: AppDomainUnloaded exception when you use managed extensions for Visual C++ components](http://go.microsoft.com/fwlink/p/?linkid=169465) on the Microsoft Support Web site.  
   
  An application that is compiled by using **initialAppDomain** should not be used by an application that uses ASP.NET because it is not supported in version 1 of the CLR.  
   

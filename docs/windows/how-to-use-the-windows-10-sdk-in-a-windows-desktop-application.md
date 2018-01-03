@@ -22,7 +22,7 @@ When you create a classic Windows desktop project in Visual Studio 2017, it is s
   
 ### To target the Windows 10 SDK  
   
-1.  Make sure the Windows 10 SDK is installed. The Windows 10 SDK is installed as part of the [Tools for Windows 10](http://go.microsoft.com/fwlink/?LinkID=617631).  
+1.  Make sure the Windows 10 SDK is installed. The Windows 10 SDK is installed as part of the [Tools for Windows 10](http://go.microsoft.com/fwlink/p/?linkid=617631).  
   
 2.  Open the shortcut menu for the project node, and choose **Retarget SDK Version**.  
   

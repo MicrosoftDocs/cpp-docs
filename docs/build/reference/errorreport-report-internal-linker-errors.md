@@ -1,7 +1,7 @@
 ---
 title: "-ERRORREPORT (Report Internal Linker Errors) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "12/28/2017"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
@@ -18,32 +18,43 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /ERRORREPORT (Report Internal Linker Errors)
-```  
-/errorReport:[ none | prompt | queue | send ]  
-```  
-  
-## Remarks  
- Lets you provide internal compiler error (ICE) information directly to Microsoft.  
-  
- The option **/errorReport:send** tries to automatically send error information to Microsoft, but success depends on registry settings. For more information about how to set the appropriate values in the registry, see [How to Turn on Automatic Error Reporting in Visual Studio 2008 Command-line Tools](http://go.microsoft.com/fwlink/?LinkID=184695) on the MSDN Web site.  
-  
-### To set this compiler option in the Visual Studio development environment  
-  
-1.  Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Click the **Configuration Properties** folder.  
-  
-3.  Click the **Linker** folder.  
-  
-4.  Click the **Advanced** property page.  
-  
-5.  Modify the **Error Reporting**property.  
-  
-### To set this compiler option programmatically  
-  
--   See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ErrorReporting%2A>.  
-  
-## See Also  
- [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md)   
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+
+> **/errorreport:**[ **none** | **prompt** | **queue** | **send** ]
+
+## Arguments
+
+**none**  
+Reports about internal compiler errors will not be collected or sent to Microsoft.
+
+**prompt**  
+Prompts you to send a report when you receive an internal compiler error. **prompt** is the default when an application is compiled in the development environment.
+
+**queue**  
+Queues the error report. When you log in with administrator privileges, a window is displayed so that you can report any failures since the last time you were logged in (you will not be prompted to send reports for failures more than once every three days). **queue** is the default when an application is compiled at a command prompt.
+
+**send**  
+Automatically sends reports of internal compiler errors to Microsoft if reporting is enabled by the Windows Error Reporting service settings.
+
+## Remarks
+
+The **/ERRORREPORT** option lets you provide internal compiler error (ICE) information directly to Microsoft.
+
+The option **/errorreport:send** automatically sends error information to Microsoft, if enabled by Windows Error Reporting service settings.
+
+### To set this compiler option in the Visual Studio development environment
+
+1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Open the **Configuration Properties** > **Linker** > **Advanced** property page.
+
+1. Modify the **Error Reporting** property.
+
+### To set this compiler option programmatically
+
+- See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ErrorReporting%2A>.
+
+## See also
+
+[/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md)  
+[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[Linker Options](../../build/reference/linker-options.md)  

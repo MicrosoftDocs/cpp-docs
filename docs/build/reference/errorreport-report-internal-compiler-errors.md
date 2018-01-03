@@ -54,7 +54,7 @@ Lets you provide internal compiler error (ICE) information directly to Microsoft
   
 3.  Click the **Advanced** property page.  
   
-4.  Modify the **Error Reporting**property.  
+4.  Modify the **Error Reporting** property.  
   
 ### To set this compiler option programmatically  
   

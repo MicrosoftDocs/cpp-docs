@@ -37,7 +37,7 @@ armasm [[options]] -o objectfile sourcefile
  Add the specified directories to the include search path.  
   
  -predefine `directive`  
- Specify a SETA, SETL, or SETS directive to predefine a symbol. Example: **armasm.exe -predefine "COUNT SETA 150" source.asm**. For more information, see the [ARM assembler tools guide](http://go.microsoft.com/fwlink/?LinkId=246102).  
+ Specify a SETA, SETL, or SETS directive to predefine a symbol. Example: **armasm.exe -predefine "COUNT SETA 150" source.asm**. For more information, see the [ARM assembler tools guide](http://go.microsoft.com/fwlink/p/?linkid=246102).  
   
  -nowarn  
  Disable all warning messages.  

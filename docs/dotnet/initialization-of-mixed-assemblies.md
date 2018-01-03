@@ -17,7 +17,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Initialization of Mixed Assemblies
-Prior to Visual Studio 2005, DLLs compiled with the **/clr** compiler option could non-deterministically deadlock when loaded; this issue was called the mixed DLL loading or loader lock issue. Almost all non-determinism has been removed from the mixed DLL loading process. However, there are a few remaining scenarios for which loader lock can (deterministically) occur. For more information about this issue, see "Mixed DLL Loading Problem" in the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=556).  
+Prior to Visual Studio 2005, DLLs compiled with the **/clr** compiler option could non-deterministically deadlock when loaded; this issue was called the mixed DLL loading or loader lock issue. Almost all non-determinism has been removed from the mixed DLL loading process. However, there are a few remaining scenarios for which loader lock can (deterministically) occur.
   
  Code within [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583) must not access the CLR. This means that `DllMain` should make no calls to managed functions, directly or indirectly; no managed code should be declared or implemented in `DllMain`; and no garbage collection or automatic library loading should take place within `DllMain`.  
   

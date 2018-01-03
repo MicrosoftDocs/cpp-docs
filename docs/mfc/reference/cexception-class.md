@@ -214,6 +214,6 @@ else
  [CObject Class](cobject-class.md)   
  [Hierarchy Chart](../hierarchy-chart.md)   
  [Exception Processing](exception-processing.md)   
- [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/linkid=128045)
+ [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/p/?linkid=128045)
 
 

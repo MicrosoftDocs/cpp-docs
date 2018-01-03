@@ -11,7 +11,7 @@ ms.workload: ["cplusplus"]
 ---
 # What's New for Visual C++ in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
 
-[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through the [Report a Problem](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) and [Provide a Suggestion](https://visualstudio.uservoice.com/) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, please visit [What's new in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]](https://go.microsoft.com/fwlink/?linkid=834481).
+[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through the [Report a Problem](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) and [Provide a Suggestion](https://visualstudio.uservoice.com/) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, please visit [What's new in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]](https://go.microsoft.com/fwlink/p/?linkid=834481).
 
 <!--The compiler and tools version number in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] is 14.10.24629. -->
 

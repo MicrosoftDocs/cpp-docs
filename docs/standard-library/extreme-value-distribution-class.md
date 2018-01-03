@@ -69,7 +69,7 @@ The random number generator engine. For possible types, see [\<random>](../stand
   
  For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
- For detailed information about the extreme value distribution, see the Wolfram MathWorld article [Extreme Value Distribution](http://go.microsoft.com/fwlink/LinkId=401110).  
+ For detailed information about the extreme value distribution, see the Wolfram MathWorld article [Extreme Value Distribution](http://go.microsoft.com/fwlink/p/?linkid=401110).  
   
 ## Example  
   

@@ -75,7 +75,7 @@ The `operator()` member functions return the next generated value based on the U
   
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
-For detailed information about the Normal distribution, see the Wolfram MathWorld article [Normal Distribution](http://go.microsoft.com/fwlink/LinkId=400924).  
+For detailed information about the Normal distribution, see the Wolfram MathWorld article [Normal Distribution](http://go.microsoft.com/fwlink/p/?linkid=400924).  
   
 ## Example  
   

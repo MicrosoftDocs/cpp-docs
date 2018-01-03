@@ -16,13 +16,13 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ARM Assembler Directives
-For the most part, the Microsoft ARM assembler uses the ARM assembly language, which is documented in Chapter 7 of the [ARM assembler tools guide](http://go.microsoft.com/fwlink/?LinkId=246102). However, the Microsoft implementations of some assembly directives differ from the ARM assembly directives. This article explains the differences.  
+For the most part, the Microsoft ARM assembler uses the ARM assembly language, which is documented in Chapter 7 of the [ARM assembler tools guide](http://go.microsoft.com/fwlink/p/?linkid=246102). However, the Microsoft implementations of some assembly directives differ from the ARM assembly directives. This article explains the differences.  
   
 ## Microsoft Implementations of ARM Assembly Directives  
  AREA  
  The Microsoft ARM assembler supports these AREA attributes: ALIGN, CODE, CODEALIGN, DATA, NOINIT, READONLY, READWRITE, THUMB, ARM.  
   
- All except THUMB and ARM work as documented in the [ARM assembler tools guide](http://go.microsoft.com/fwlink/?LinkId=246102).  
+ All except THUMB and ARM work as documented in the [ARM assembler tools guide](http://go.microsoft.com/fwlink/p/?linkid=246102).  
   
  In the Microsoft ARM assembler, THUMB indicates that a CODE section contains Thumb code, and is the default for CODE sections.  ARM indicates that the section contains ARM code.  
   

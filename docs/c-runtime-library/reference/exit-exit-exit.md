@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 Terminates the calling process. The `exit` function terminates it after cleanup; `_exit` and `_Exit` terminate it immediately.  
   
 > [!NOTE]
->  Do not use this method to shut down a Universal Windows Platform (UWP) app or a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, except in testing or debugging scenarios. Programmatic or UI ways to close a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app are not permitted. For more information about Windows 8 and 8.1 apps, see [App lifecycle](http://go.microsoft.com/fwlink/?LinkId=262853). For more information about Windows 10 apps, see [How-to guides for Windows 10 apps](http://go.microsoft.com/fwlink/p/?linkid=619133).  
+>  Do not use this method to shut down a Universal Windows Platform (UWP) app or a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, except in testing or debugging scenarios. Programmatic or UI ways to close a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app are not permitted. For more information about Windows 8 and 8.1 apps, see [App lifecycle](http://go.microsoft.com/fwlink/p/?linkid=262853). For more information about Windows 10 apps, see [How-to guides for Windows 10 apps](http://go.microsoft.com/fwlink/p/?linkid=619133).  
   
 ## Syntax  
   

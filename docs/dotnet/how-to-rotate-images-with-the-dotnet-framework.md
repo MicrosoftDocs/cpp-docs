@@ -20,7 +20,7 @@ ms.workload: ["cplusplus", "dotnet"]
 The following code example demonstrates the use of the <xref:System.Drawing.Image?displayProperty=fullName> class to load an image from disk, rotate it 90 degrees, and save it as a new .jpg file.  
   
 > [!NOTE]
->  GDI+ is included with Windows XP and is available as a redistributable for Windows NT 4.0 SP 6, Windows 2000, Windows 98, and Windows Millennium Edition. To download the latest redistributable, see [http://go.microsoft.com/fwlink/?linkid=11232](http://go.microsoft.com/fwlink/?linkid=11232). 
+>  GDI+ is included with Windows XP and is available as a redistributable for Windows NT 4.0 SP 6, Windows 2000, Windows 98, and Windows Millennium Edition. To download the latest redistributable, see [http://go.microsoft.com/fwlink/p/?linkid=11232](http://go.microsoft.com/fwlink/p/?linkid=11232). 
   
 ## Example  
   

@@ -980,7 +980,7 @@ void code_1505(int *A, int *B)
   
 ## See Also  
  [Auto-Parallelization and Auto-Vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/?LinkId=263662)   
+ [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)   
  [#pragma loop()](../../preprocessor/loop.md)   
  [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)   
  [/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   

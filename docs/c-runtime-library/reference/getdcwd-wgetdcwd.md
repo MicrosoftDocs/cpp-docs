@@ -64,7 +64,7 @@ wchar_t *_wgetdcwd(
   
  `_wgetdcwd` is a wide-character version of `_getdcwd`, and its `buffer` parameter and return value are wide-character strings. Otherwise, `_wgetdcwd` and `_getdcwd` behave identically.  
   
- This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and **GetFullPathName**. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/?LinkID=150542) and then search for **GetFullPathName**.  
+ This function is thread-safe even though it depends on **GetFullPathName**, which is itself not thread-safe. However, you can violate thread safety if your multithreaded application calls both this function and **GetFullPathName**. For more information, go to [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) and then search for **GetFullPathName**.  
   
  The version of this function that has the `_nolock` suffix behaves identically to this function except that it is not thread-safe and is not protected from interference by other threads. For more information, see [_getdcwd_nolock, _wgetdcwd_nolock](../../c-runtime-library/reference/getdcwd-nolock-wgetdcwd-nolock.md).  
   

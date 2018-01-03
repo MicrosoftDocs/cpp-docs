@@ -64,7 +64,7 @@ public:
   
  For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).  
   
- For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://go.microsoft.com/fwlink/LinkId=401094).  
+ For detailed information about the Student's *t*-distribution, see the Wolfram MathWorld article [Students t-Distribution](http://go.microsoft.com/fwlink/p/?linkid=401094).  
   
 ## Example  
   

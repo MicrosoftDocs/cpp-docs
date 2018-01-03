@@ -29,7 +29,7 @@ __declspec( safebuffers )
 ```  
   
 ## Remarks  
- The **/GS** compiler option causes the compiler to test for buffer overruns by inserting security checks on the stack. The types of data structures that are eligible for security checks are described in [/GS (Buffer Security Check)](../build/reference/gs-buffer-security-check.md). For more information about buffer overrun detection, see [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/?linkid=7260) on the MSDN Web site.  
+ The **/GS** compiler option causes the compiler to test for buffer overruns by inserting security checks on the stack. The types of data structures that are eligible for security checks are described in [/GS (Buffer Security Check)](../build/reference/gs-buffer-security-check.md). For more information about buffer overrun detection, see [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/p/?linkid=7260) on the MSDN Web site.  
   
  An expert manual code review or external analysis might determine that a function is safe from a buffer overrun. In that case, you can suppress security checks for a function by applying the `__declspec(safebuffers)` keyword to the function declaration.  
   

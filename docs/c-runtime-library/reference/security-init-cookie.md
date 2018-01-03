@@ -48,4 +48,4 @@ void __security_init_cookie(void);
  `__security_init_cookie` is a Microsoft extension to the standard C Runtime Library. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## See Also  
- [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/?linkid=7260)
+ [Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/p/?linkid=7260)

@@ -11,13 +11,13 @@ ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
-f1_keywords: [VC.Project.VCLinkerTool.OutputFile, VC.Project.VCLinkerTool.ShowProgress, VC.Project.VCLinkerTool.Version, VC.Project.VCLinkerTool.VerboseOutput, VC.Project.VCLinkerTool.UnresolvedReferences, VC.Project.VCLinkerTool.OptimizeForMemory, VC.Project.VCLinkerTool.SharedLibrarySearchPath, VC.Project.VCLinkerTool.AdditionalLibraryDirectories, VC.Project.VCConfiguration.BuildLogFile, VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames, VC.Project.VCLinkerTool.ForceSymbolReferences, VC.Project.VCLinkerTool.LibraryDependencies, VC.Project.VCLinkerTool.ForceFileOutput, VC.Project.VCLinkerTool.GenerateMapFile, VC.Project.VCLinkerTool.Relocation, VC.Project.VCLinkerTool.FunctionBinding, VC.Project.VCLinkerTool.NoExecStackRequired, VC.Project.WholeArchive, VC.Project.AdditionalOptionsPage, VC.Project.VCLinkerTool.AdditionalDependencies]
+#f1_keywords: [VC.Project.VCLinkerTool.OutputFile, VC.Project.VCLinkerTool.ShowProgress, VC.Project.VCLinkerTool.Version, VC.Project.VCLinkerTool.VerboseOutput, VC.Project.VCLinkerTool.UnresolvedReferences, VC.Project.VCLinkerTool.OptimizeForMemory, VC.Project.VCLinkerTool.SharedLibrarySearchPath, VC.Project.VCLinkerTool.AdditionalLibraryDirectories, VC.Project.VCConfiguration.BuildLogFile, VC.Project.VCLinkerTool.IgnoreDefaultLibraryNames, VC.Project.VCLinkerTool.ForceSymbolReferences, VC.Project.VCLinkerTool.LibraryDependencies, VC.Project.VCLinkerTool.ForceFileOutput, VC.Project.VCLinkerTool.GenerateMapFile, VC.Project.VCLinkerTool.Relocation, VC.Project.VCLinkerTool.FunctionBinding, VC.Project.VCLinkerTool.NoExecStackRequired, VC.Project.WholeArchive, VC.Project.AdditionalOptionsPage, VC.Project.VCLinkerTool.AdditionalDependencies]
 ms.workload: ["cplusplus", "linux"]
 ---
-
 # Linker Properties (Linux C++)
 
 ## General
+
 Property | Description | Choices
 --- | ---| ---
 Output File | The option overrides the default name and location of the program that the linker creates. (-o)
@@ -36,6 +36,7 @@ Link Timeout | Remote linking timeout, in milliseconds.
 Copy Output | Specifies whether to copy the build output file from the remote system to the local machine.
 
 ## Input
+
 Property | Description | Choices
 --- | ---| ---
 Ignore Specific Default Libraries | Specifies one or more names of default libraries to ignore. (--exclude-libs lib,lib)
@@ -45,21 +46,17 @@ Library Dependencies | This option allows specifying additional libraries to be 
 Additional Dependencies | Specifies additional items to add to the link command line.
 
 ## Debugging
+
 Property | Description | Choices
 --- | ---| ---
 Debugger Symbol Information | Debugger symbol information from the output file. | **Include All**<br>**Omit Debugger Symbol Information Only**<br>**Omit All Symbol Information**<br>
 Map File Name | The Map option tells the linker to create a map file with the user specified name. (-Map=)
 
 ## Advanced
+
 Property | Description | Choices
 --- | ---| ---
 Mark Variables ReadOnly After Relocation | This option marks variables read-only after relocation.
 Enable Immediate Function Binding | This option marks object for immediate function binding.
 Do Not Require Executable Stack | This option marks output as not requiring executable stack.
 Whole Archive | Whole Archive uses all code from Sources and Additional Dependencies.
-
-
-## Additional Options
-
-
-

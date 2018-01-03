@@ -33,11 +33,11 @@ When migrating applications from UNIX to Windows, you have several options:
 ### UNIX Migration Guides  
  The UNIX Custom Application Migration Guide provides technical help on code migration from UNIX to the Win32 environment.  
   
- [http://go.microsoft.com/fwlink/?LinkId=95428](http://go.microsoft.com/fwlink/?LinkId=95428)  
+ [http://go.microsoft.com/fwlink/p/?linkid=95428](http://go.microsoft.com/fwlink/p/?linkid=95428)  
   
  The Unix Migration Project Guide supplements the UNIX Custom Application Migration Guide by providing high-level help on migrating substantial projects from UNIX to Win32. The Guide provides advice on issues to consider at each stage of project migration. The Guide may be downloaded from:  
   
- [http://go.microsoft.com/fwlink/?linkid=20012](http://go.microsoft.com/fwlink/?linkid=20012)  
+ [http://go.microsoft.com/fwlink/p/?linkid=20012](http://go.microsoft.com/fwlink/p/?linkid=20012)  
   
 ### Microsoft Windows Services for UNIX (SFU)  
  Microsoft Windows Services for UNIX (SFU) provides a full range of cross-platform services for integrating Windows into existing UNIX-based environments. Services for UNIX provides file sharing, remote access and administration, password synchronization, common directory management, a common set of utilities, and a shell.  

@@ -20,12 +20,12 @@ ms.workload: ["cplusplus"]
 You can redistribute support files for Data Access Objects (DAO) and for the database technologies in the Microsoft Data Access SDK.  
   
 ## Installing DAO Support Files  
- To obtain the latest version of DAO, see [Article 239114: How to obtain the latest service pack for the Microsoft Jet 4.0 Database Engine](http://go.microsoft.com/fwlink/?LinkId=198014) on the Microsoft Support website.  
+ To obtain the latest version of DAO, see [Article 239114: How to obtain the latest service pack for the Microsoft Jet 4.0 Database Engine](http://go.microsoft.com/fwlink/p/?linkid=198014) on the Microsoft Support website.  
   
 ## Installing Microsoft Data Access SDK Support Files  
- Use Mdac_typ.exe to install support for ODBC, OLE DB, ActiveX Data Objects (ADO), and Remote Data Services (RDS). Mdac_typ.exe is located in the ..\WCU\MDAC28\ folder on the Visual Studio installation media. You can also download Mdac_typ.exe from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=198015) website.  
+ Use Mdac_typ.exe to install support for ODBC, OLE DB, ActiveX Data Objects (ADO), and Remote Data Services (RDS). Mdac_typ.exe is located in the ..\WCU\MDAC28\ folder on the Visual Studio installation media. You can also download Mdac_typ.exe from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=198015) website.  
   
- For more information, on the [MSDN](http://go.microsoft.com/fwlink/?LinkId=198016) website, search for "Redistributing MDAC 2.8 SP1". If you are using Visual Studio Setup projects to deploy your application, see [Deployment and Dependencies](http://msdn.microsoft.com/en-us/49e9b84d-bd6a-4388-b9ac-46ea79cf0733).  
+ For more information, on the [MSDN](http://go.microsoft.com/fwlink/p/?linkid=198016) website, search for "Redistributing MDAC 2.8 SP1". If you are using Visual Studio Setup projects to deploy your application, see [Deployment and Dependencies](http://msdn.microsoft.com/en-us/49e9b84d-bd6a-4388-b9ac-46ea79cf0733).  
   
 ## See Also  
  [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md)
