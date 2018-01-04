@@ -219,10 +219,14 @@ For this kind of crash please provide a [Link Repro](#link-repros) if you are us
 
 ## <a name="send"></a> Ways to send your report
 
-There are several ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or email us. The best choice for your report depends on the kind of problem you've encountered, how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
+There are several ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), use the [Developer Community site](https://developercommunity.visualstudio.com/spaces/62/index.html) to start a public report, or email us. The best choice for your report depends on the kind of problem you've encountered, how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
 
 > [!NOTE]
 > Regardless of how you submit your report, Microsoft respects your privacy. For information about how we treat the data that you send us, see the [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).
+
+### Developer Community
+
+The [Developer Community site](https://developercommunity.visualstudio.com/spaces/62/index.html) allows you to share your report with Microsoft and the public. The C++ tab there does not require an IDE, and you can open an issue and upload the files needed to repro the issue. If others have the same problem they can upvote your report, share work-arounds they found, or otherwise discuss the issue.
 
 ### Send an Email
 
