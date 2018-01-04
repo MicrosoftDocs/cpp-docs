@@ -1,17 +1,14 @@
 ---
 title: "Visual C++ in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "1/02/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-f1_keywords: ["visual c++", "visual c", "vc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["unmanaged code, C++", "development environment, Visual C++", "unmanaged code", "Visual C++", "Visual C++, reference"]
-ms.assetid: e8dcc44c-a3e2-4ffe-887c-fd15b18dc458
-caps.latest.revision: 61
 author: "mikeblome"
 ms.author: "mblome"
 manager: "ghogen"
@@ -69,7 +66,7 @@ Find out which platforms are supported.
 [Visual C++ Samples](visual-cpp-samples.md)  
 Information about samples.
 
-[Visual Studio Community](http://go.microsoft.com/fwlink/p/?linkid=235296)  
+[Visual Studio Developer Community](https://developercommunity.visualstudio.com/)  
 Find out how to get help, file bugs, and make suggestions for Visual Studio.
 
 ## Writing applications in C++
