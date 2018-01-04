@@ -1,15 +1,13 @@
 ---
 title: "How to Report a Problem with the Visual C++ Toolset | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "1/03/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: ["C++"]
-ms.assetid: ec24a49c-411d-47ce-aa4b-8398b6d3e8f6
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
@@ -25,9 +23,9 @@ In this document, you'll read about
 
 - [How to prepare your report](#prepare), and what makes a good report.
 
-- [Ways to send your report](#send), and what makes them different.
-
 - [How to generate a repro](#generate), and different kinds of repros.
+
+- [Ways to send your report](#send), and what makes them different.
 
 Your reports are important to us and to other developers like you. Thank you for helping us improve Visual C++!
 
@@ -43,7 +41,7 @@ At a minimum, your report should contain
 
 - A detailed description of the problem you encountered.
 
-- A 'repro'—source code that demonstrates the problem.
+- A 'repro': source code that demonstrates the problem.
 
 Read on to learn more about the specific information we need and where you can find it.
 
@@ -90,7 +88,7 @@ The best place to find this information is in the build log immediately after ex
 
 #### To report the contents of the command line
 
-1. Locate the **CL.command.1.tlog** file and open it. By default, this file is located at \\...\Visual Studio Version\Projects\SolutionName\ProjectName\Config\ProjectName.tlog\CL.command.1.tlog.
+1. Locate the **CL.command.1.tlog** file and open it. By default, this file is located at \\...\Visual Studio *version*\Projects\\*SolutionName*\\*ProjectName*\Config\\*ProjectName*.tlog\CL.command.1.tlog.
 
    Inside this file, you'll find the names of source code files followed by the command line arguments used to compile them, each on separate lines.
 
@@ -209,7 +207,7 @@ CONTEXT:
   Dr2    = 0000000000000000  Dr7    = 0000000000000000
 ```
 
-If incremental linking is enabled and the crash occurred only after initial linking—that is, only after the first full linking on which subsequent incremental linking is based—please also provide a copy of the object (.obj) and library (.lib) files that correspond to source files that were modified after the initial linking was completed.
+If incremental linking is enabled and the crash occurred only after initial linking, (that is, only after the first full linking on which subsequent incremental linking is based) please also provide a copy of the object (.obj) and library (.lib) files that correspond to source files that were modified after the initial linking was completed.
 
 #### Bad code generation
 
@@ -217,50 +215,13 @@ Bad code generation is rare, but occurs when the compiler mistakenly generates i
 
 For this kind of crash please provide a [Link Repro](#link-repros) if you are using Link-Time Code Generation (LTCG) or a [Preprocessed Repro](#preprocessed-repros) if not. LTGC is enabled by the `/GL` command-line argument to cl.exe.
 
-## <a name="send"></a> Ways to send your report
-
-There are several ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or email us. The best choice for your report depends on the kind of problem you've encountered, how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
-
-> [!NOTE]
-> Regardless of how you submit your report, Microsoft respects your privacy. For information about how we treat the data that you send us, see the [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).
-
-### Send an Email
-
-Email is another way to send your report directly to the Visual C++ team; you can reach us at [compilercrash@microsoft.com](mailto:compilercrash@microsoft.com).
-
-If you choose to send your report by email, you can use the following template as the body of your email message. Don't forget to attach source code or other files if you aren't including that information in the email body.
-
-```Example
-To: compilercrash@microsoft.com
-Subject: Visual C++ Error Report
------
-
-Compiler version:
-
-CL.EXE command line:
-
-Problem description:
-
-Source code and repro steps:
-
-```
-
-### Use the Report a Problem tool
-
-The Report a Problem tool in Visual Studio is a way for Visual Studio users to report a variety of problems with just a few clicks. It provides a simple form that you can use to specify detailed information about the problem you've encountered and then submit your report without ever leaving the IDE.
-
-Reporting your problem through the Report a Problem tool is unusual for the kinds of toolset problems discussed in this document; nevertheless, its an option you can choose if it suites your preferences.
-
-> [!TIP]
-> For other kinds of problems you might encounter in Visual Studio that are not related to the toolset (For example, UI issues, broken IDE functionality, or general crashes), the Report a Problem tool can be an especially good choice due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've encountered. You should never report these other kinds of errors by sending email to compilercrash@microsoft.com.
-
 ## <a name="generate"></a> Generate a repro
 
-A repro is a complete, self-contained code example, that demonstrates the problem you're reporting. A repro is **not** a code snippet—it must be a complete example that builds and runs (or would, except for the errors produced by the problem you're reporting). It should contain all the necessary #include directives, even for the standard headers.
+A repro is a complete, self-contained code example, that demonstrates the problem you're reporting. A repro is **not** a code snippet; it must be a complete example that builds and runs (or would, except for the errors produced by the problem you're reporting). It should contain all the necessary #include directives, even for the standard headers.
 
 Furthermore, a good repro is
 
-- **Minimal.** Repros should be as small as possible while still demonstrating exactly the problem you encountered. Repros do not need to be complex or realistic—simple, to-the-point repros are better. They do not need to include counter-examples of code that works, but may if it is illustrative; only example code that causes the issue is necessary.
+- **Minimal.** Repros should be as small as possible while still demonstrating exactly the problem you encountered. Repros do not need to be complex or realistic; simple, to-the-point repros are better. They do not need to include counter-examples of code that works, but may if it is illustrative; only example code that causes the issue is necessary.
 
 - **Self-Contained.** Repros should avoid unnecessary dependencies. If you can reproduce the problem without third-party libraries, please do so. If you can reproduce the problem without any library code (`std::out`, `printf()` are ok), please do so. Reducing the amount of code we have to consider as a possible contributor to the problem is enormously helpful to us.
 
@@ -326,3 +287,51 @@ Finally, package the repro by compressing the entire directory into a .zip file 
 If you can't reduce the problem to a single source file or preprocessed repro, and the problem does not require a link repro, we can investigate and IDE project. Code inside the project should still be minimal, and all the guidance from this document still applies.
 
 Create your repro as a minimal IDE project, then package it by compressing the entire directory structure into a .zip file or similar and attach it to your report.
+
+## <a name="send"></a> Ways to send your report
+
+There are several ways to get your report to us. You can use Visual Studio's built-in [Report a Problem Tool](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), or the [Visual Studio Developer Community](https://developercommunity.visualstudio.com/) pages. It's also possible to send an email with your report, but the first two methods are preferred. The choice depends on how you want to interact with the engineers who will investigate your report, and whether you'd like to track its progress or share your report with the community.
+
+> [!NOTE]
+> Regardless of how you submit your report, Microsoft respects your privacy. For information about how we treat the data that you send us, see the [Microsoft Visual Studio Product Family Privacy Statement](https://www.visualstudio.com/dn948229).
+
+### Use the Report a Problem tool
+
+The **Report a Problem** tool in Visual Studio is a way for Visual Studio users to report a variety of problems with just a few clicks. It provides a simple form that you can use to specify detailed information about the problem you've encountered and then submit your report without ever leaving the IDE.
+
+Reporting your problem through the **Report a Problem** tool is easy and convenient from the IDE. You can access it from the title bar by choosing the **Send Feedback** icon next to the **Quick Launch** search box, or you can find it on the menu bar in **Help** > **Send Feedback** > **Report a Problem**.
+
+When you choose to report a problem, first search the Developer Community for similar problems. If your problem has been reported before, upvote the topic and add comments with additional specifics. If you don't see a similar problem, choose the **Report new problem** button at the bottom of the Visual Studio Feedback dialog and follow the steps to report your problem.
+
+### Use the Visual Studio Developer Community pages
+
+The Visual Studio Developer Community pages are another convenient way to report problems and find solutions for Visual Studio, the C++ compiler, tools, and libraries. The [Visual Studio Questions](https://developercommunity.visualstudio.com/spaces/8/index.html) page is where to report problems with the IDE or installation. For issues with the C++ compiler, linker, and other tools and libraries, use the [C++ Questions](https://developercommunity.visualstudio.com/spaces/62/index.html) page.
+
+In the Developer Community banner near the top of each page is a search box you can use to find posts or topics that report problems similar to yours. You may find that a solution or other useful information related to your problem is already available in an existing topic. If someone has reported the same problem before, please upvote and comment on that topic rather than create a new problem report.
+
+If your problem has not been reported before, choose the **Report a problem** button next to the search box on the Developer Community page. You may be asked to sign in to your Visual Studio account and to agree to give the Developer Community app access to your profile. When you are signed in, you go directly to a page where you can report the problem. You can include your repro code and command line, screen shots, links to related discussions, and any other information you think is relevant and useful.
+
+### Send an Email
+
+Email is another way to send your report directly to the Visual C++ team. You can reach us at [compilercrash@microsoft.com](mailto:compilercrash@microsoft.com). Use this method only if the other two are unavailable, since email is not tracked as closely as the problems reported to the Developer Community by using the **Report a Problem** tool or the web pages, and comments and solutions are not visible to other Visual Studio users.
+
+If you choose to send your report by email, you can use the following template as the body of your email message. Don't forget to attach source code or other files if you aren't including that information in the email body.
+
+```Example
+To: compilercrash@microsoft.com
+Subject: Visual C++ Error Report
+-----
+
+Compiler version:
+
+CL.EXE command line:
+
+Problem description:
+
+Source code and repro steps:
+
+```
+
+> [!TIP]
+> For other kinds of problems you might encounter in Visual Studio that are not related to the toolset (For example, UI issues, broken IDE functionality, or general crashes), the Report a Problem tool can be an especially good choice due to its screenshot capabilities and its ability to record UI actions that lead to the problem you've encountered. You should never report these other kinds of errors by sending email to compilercrash@microsoft.com.
+
