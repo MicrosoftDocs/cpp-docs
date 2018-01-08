@@ -123,7 +123,7 @@ virtual void Abort();
 ```  
 CFile();  
 CFile(CAtlTransactionManager* pTM);  
-  CFile(HANDLE hFile);
+CFile(HANDLE hFile);
 
  
 CFile(
