@@ -1057,7 +1057,7 @@ int LineLength(int nLine = -1) const;
  Specifies the character index of a character in the line whose length is to be retrieved. If this parameter is -1, the length of the current line (the line that contains the caret) is returned, not including the length of any selected text within the line. When `LineLength` is called for a single-line edit control, this parameter is ignored.  
   
 ### Return Value  
- When `LineLength` is called for a multiple-line edit control, the return value is the length (in charactors) of the line specified by `nLine`. When `LineLength` is called for a single-line edit control, the return value is the length (in charactors) of the text in the edit control.  
+ When `LineLength` is called for a multiple-line edit control, the return value is the length (in `TCHAR`) of the line specified by `nLine`.  It does not include the carriage-return character at the end of the line. When `LineLength` is called for a single-line edit control, the return value is the length (in `TCHAR`) of the text in the edit control. If nLine is greater than the number of characters in the control, the return value is zero.
   
 ### Remarks  
  Use the [LineIndex](#lineindex) member function to retrieve a character index for a given line number within this `CRichEditCtrl` object.  
