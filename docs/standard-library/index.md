@@ -1,3 +1,3 @@
 ---
-redirect_url: /cpp/standard-library/standard-library-reference
+redirect_url: /cpp/standard-library/cpp-standard-library-reference
 ---
