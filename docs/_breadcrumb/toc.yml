@@ -28,7 +28,7 @@
           topicHref: /cpp/c-runtime-library/reference/alphabetical-function-reference
       - name: C++ Standard Library
         tocHref: /cpp/standard-library/
-        topicHref: /cpp/standard-library/cpp-standard-library 
+        topicHref: /cpp/standard-library/cpp-standard-library-reference 
       - name: Windows
         tocHref: /cpp/windows/
         topicHref: /cpp/windows/overview-of-windows-programming-in-cpp
