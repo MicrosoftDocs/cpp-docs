@@ -32,7 +32,7 @@ SDK (10.0.16299.0). Older versions of the SDK may fail to compile under **/permi
 
 The **/permissive-** option sets the [/Zc:strictStrings](../../build/reference/zc-conformance.md) and [/Zc:rvalueCast](../../build/reference/zc-conformance.md) options to conforming behavior. They default to non-conforming behavior. You can pass specific **/Zc** options after **/permissive-** on the command line to override this behavior.
 
-In versions of the compiler beginning in Visual Studio 2017 version 15.3, the **/permissive-** option sets the **/Zc:ternary** option. The compiler also implements more of the requirements for two-phase name look-up. When the **/permissive-** option is set, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in the templates. In this release, only name dependency analysis is performed.
+In versions of the compiler beginning in Visual Studio 2017 version 15.3, the **/permissive-** option sets the [/Zc:ternary](../../build/reference/zc-ternary.md) option. The compiler also implements more of the requirements for two-phase name look-up. When the **/permissive-** option is set, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in the templates. In this release, only name dependency analysis is performed.
 
 Environment-specific extensions and language areas that the standard leaves up to the implementation are not affected by **/permissive-**. For example, the Microsoft-specific `__declspec`, calling convention and structured exception handling keywords, and compiler-specific pragma directives or attributes are not flagged by the compiler in **/permissive-** mode.
 
