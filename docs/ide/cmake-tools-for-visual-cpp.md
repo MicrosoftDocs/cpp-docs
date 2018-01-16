@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 
 This article assumes that you are familiar with CMake, a cross-platform, open-source tool for defining build processes that run on multiple platforms.
 
-Until recently, Visual Studio users could use CMake to generate MSBuild project files, which the IDE then consumed for IntelliSense, browsing, and compilation. Starting in Visual Studio 2017, the **Visual C++ Tools for CMake** component uses the "Open Folder" feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. 
+Until recently, Visual Studio users could use CMake to generate MSBuild project files, which the IDE then consumed for IntelliSense, browsing, and compilation. Starting in Visual Studio 2017, the **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. 
 
 **Visual Studio 2017 version 15.3**: Support is provided for both Ninja and Visual Studio generators.
 
@@ -27,8 +27,10 @@ Until recently, Visual Studio users could use CMake to generate MSBuild project 
 
 **Visual Studio 2017 version 15.5**: Support is added for importing an existing CMake cache. Visual Studio automatically extracts customized variables and creates a pre-populated CMakeSettings.json file.
 
-## Installing
-Visual C++ Tools for CMake is installed by default as part of the Desktop development with C++ workload.
+
+## Installation
+
+**Visual C++ Tools for CMake** is installed by default as part of the **Desktop development with C++** workload.
 
 ![CMake component in C++ Desktop workload](media/cmake-install.png)
  
@@ -45,27 +47,32 @@ You can open folders containing any number of CMake projects. Visual Studio dete
 
 ![CMake project with multiple roots](media/cmake-multiple-roots.png) 
 
-## Importing an existing cache
+## Import an existing cache
 
-When you import an existing CMakeCache.txt file, Visual Studio will automatically extract customized variables and create a pre-populated CMakeSettings.json file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new CMakeSettings.json file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. Not everything in the cache is imported.  Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
+When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated CMakeSettings.json file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new CMakeSettings.json file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. Not everything in the cache is imported.  Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
 
-To import an existing cache, from the main menu choose **File | Open | CMake**:
+### To import an existing cache
 
-![Open CMake](media/cmake-file-open.png "File, Open, CMake") 
+1. From the main menu, choose **File | Open | CMake**:
 
-This brings up the **Import CMake from Cache** wizard. Navigate to the CMakeCache.txt file that you want to import, and then click **OK**. The **Import CMake Project from Cache** wizard appears:
+   ![Open CMake](media/cmake-file-open.png "File, Open, CMake") 
 
-![Import a CMake cache](media/cmake-import-wizard.png "Open the CMake import cache wizard") 
+   This brings up the **Import CMake from Cache** wizard. 
+   
+2. Navigate to the CMakeCache.txt file that you want to import, and then click **OK**. The **Import CMake Project from Cache** wizard appears:
 
-When the wizard completes, you will see the new CMakeCache.txt file in **Solution Explorer** next to the root CMakeLists.txt file in your project.
+   ![Import a CMake cache](media/cmake-import-wizard.png "Open the CMake import cache wizard") 
+
+   When the wizard completes, you can see the new CMakeCache.txt file in **Solution Explorer** next to the root CMakeLists.txt file in your project.
+
 
 ## Building CMake projects
 
 To build a CMake project, you have these choices:
 
-1. Select the target in the Debug dropdown and press **F5** or click the "Run" button. The project will automatically build first, just like with Visual Studio solutions.
-1. Right click on the CMakeLists.txt and select Build from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target, or
-1. From the main menu, select **Build | Build Solution** (**F7** or **Ctrl+Shift+B**) (make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar).
+1. Select the target in the **Debug** dropdown and press **F5**, or click the **Run** (green triangle) button. The project automatically builds first, just like a Visual Studio solution.
+1. Right click on the CMakeLists.txt and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target, or
+1. From the main menu, select **Build | Build Solution** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
 
 ![CMake build menu command](media/cmake-build-menu.png "Cmake build command menu") 
 
@@ -79,25 +86,27 @@ As you would expect, build results are shown in the **Output Window** and **Erro
  
 ![CMake build errors](media/cmake-build-errors.png "CMake build errors")
 
-In a folder with multiple build targets, you can choose the Build item on the CMake menu or the CMakeLists.txt context menu to specify which CMake target to build. Pressing **Ctrl+Shift+B** in a CMake project builds the current active document.
+In a folder with multiple build targets, you can choose the **Build** item on the **CMake** menu or the **CMakeLists.txt** context menu to specify which CMake target to build. Pressing **Ctrl+Shift+B** in a CMake project builds the current active document.
 
-## Debugging the project
+## Debug the project
 
-To debug a CMake project, choose the desired configuration and press **F5**, or press the Run button in the toolbar. If the Run button says "Select Startup Item", click on the down arrow and choose the target that you want to run. (In a CMake project, the "Current document" option is only valid for .cpp files.) 
+To debug a CMake project, choose the desired configuration and press **F5**, or press the **Run** button in the toolbar. If the **Run** button says "Select Startup Item", select the dropdown arrow and choose the target that you want to run. (In a CMake project, the "Current document" option is only valid for .cpp files.) 
 
- ![CMake run button](media/cmake-run-button.png "Cmake run button")
+![CMake run button](media/cmake-run-button.png "Cmake run button")
 
- Pressing **F5** will first build the project if changes have been made since the previous build.
 
-## Configuring CMake debugging sessions
+The **Run** or **F5** commands first build the project if changes have been made since the previous build.
 
-All executable CMake targets are shown in the Startup Item dropdown in the General toolbar. To start a debugging session, just select one and launch the debugger.
+## Configure CMake debugging sessions
 
- ![CMake startup item dropdown](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
+All executable CMake targets are shown in the **Startup Item** dropdown in the **General** toolbar. To start a debugging session, just select one and launch the debugger.
+
+![CMake startup item dropdown](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
+
 
 You can also start a debug session from the CMake menus.
 
-To customize the debugger settings for any executable CMake target in your project, right-click on the specific CMakeLists.txt file and select **Debug and Launch Settings**, When you select a CMake target in the sub-menu, a file called launch.vs.json is created. This file is pre-populated with information about the CMake target you have selected and allows you to specify additional parameters such as program arguments or debugger type. To reference any key in a CMakeSettings.json file, preface it with "cmake." in launch.vs.json. The following example shows a simple launch.vs.json file that pulls in the value of the "remoteCopySources" key in the CMakeSettings.json file for the currently selected configuration:
+To customize the debugger settings for any executable CMake target in your project, right-click on the specific CMakeLists.txt file and select **Debug and Launch Settings**. When you select a CMake target in the sub-menu, a file called launch.vs.json is created. This file is pre-populated with information about the CMake target you have selected and allows you to specify additional parameters such as program arguments or debugger type. To reference any key in a CMakeSettings.json file, preface it with "cmake." in launch.vs.json. The following example shows a simple launch.vs.json file that pulls in the value of the "remoteCopySources" key in the CMakeSettings.json file for the currently selected configuration:
 
 ```json
 {
@@ -115,9 +124,10 @@ To customize the debugger settings for any executable CMake target in your proje
 }
 ```
 
-As soon as you save the launch.vs.json file, an entry is created in the Startup Item dropdown with the new name. By editing the launch.vs.json file, you can create as many debug configurations as you like for any number of CMake targets.
+As soon as you save the launch.vs.json file, an entry is created in the **Startup Item** dropdown with the new name. By editing the launch.vs.json file, you can create as many debug configurations as you like for any number of CMake targets.
 
-**Visual Studio 2017 version 15.4**: Launch.vs.json supports variables that are declared in CMakeSettings.json (see below) and that are applicable to the currently-selected configuration. It also has a concept of the "currentDir", which will be set as the current directory of the launching app:
+**Visual Studio 2017 version 15.4**: Launch.vs.json supports variables that are declared in CMakeSettings.json (see below) and that are applicable to the currently-selected configuration. It also has a key named "currentDir", which sets the current directory of the launching app:
+
 
 ```json
 {
@@ -129,7 +139,7 @@ As soon as you save the launch.vs.json file, an entry is created in the Startup 
 }
 ```
 
-When you run the app, the value of `currentDir` is
+When you run the app, the value of `currentDir` is something similar to
 
 ```cmd
 C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
@@ -139,17 +149,19 @@ C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
 
 To edit a CMakeLists.txt file, right click on the file in **Solution Explorer** and choose **Open**. If you make changes to the file, a yellow status bar appears and informs you that IntelliSense will update, and gives you an opportunity to cancel the update operation. For information about CMakeLists.txt, see the [CMake documentation](https://cmake.org/documentation/).
 
-  ![CMakeLists.txt file editing](media/cmake-cmakelists.png "CMakeLists.txt file editing")
+   ![CMakeLists.txt file editing](media/cmake-cmakelists.png "CMakeLists.txt file editing")
 
-As soon as you save the file, the configuration step will automatically run again and display information in the Output Window. Errors and warnings are shown in the Error List or Output Window. Double-click on an error in the Error List to navigate to the offending line in CMakeLists.txt.
 
-  ![CMakeLists.txt file errors](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
+As soon as you save the file, the configuration step automatically runs again and displays information in the **Output** window. Errors and warnings are shown in the **Error List** or **Output** window. Double-click on an error in the **Error List** to navigate to the offending line in CMakeLists.txt.
+
+   ![CMakeLists.txt file errors](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
 
 ## <a name="cmake_settings"></a> CMake settings and custom configurations
 
-By default, Visual Studio provides six default CMake configurations ("x86-Debug", "x86-Release", "x64-Debug", "x64-Release", "Linux-Debug" and "Linux-Release"). These configurations define how CMake.exe is invoked to create the CMake cache for a given project. To modify these configurations, or create a new custom configuration, choose **CMake | Change CMake Settings**, and then choose the CMakeLists.txt file that the settings will apply to. The **Change CMake Settings** command is also available on the file's context menu in **Solution Explorer**. This command creates a CMakeSettings.json file in the project folder. This file is used to re-create the CMake cache file, for example after a "Clean" operation. 
+By default, Visual Studio provides six default CMake configurations ("x86-Debug", "x86-Release", "x64-Debug", "x64-Release", "Linux-Debug" and "Linux-Release"). These configurations define how CMake.exe is invoked to create the CMake cache for a given project. To modify these configurations, or create a new custom configuration, choose **CMake | Change CMake Settings**, and then choose the CMakeLists.txt file that the settings apply to. The **Change CMake Settings** command is also available on the file's context menu in **Solution Explorer**. This command creates a CMakeSettings.json file in the project folder. This file is used to re-create the CMake cache file, for example after a **Clean** operation. 
 
-  ![CMake main menu command for change settings](media/cmake-change-settings.png)
+   ![CMake main menu command for change settings](media/cmake-change-settings.png)
+
 
 JSON IntelliSense helps you edit the CMakeSettings.json file:
 
@@ -172,8 +184,9 @@ The following example shows a sample configuration, which you can use as the sta
 
 ```
 
-1. name: the name that will appear in the C++ configuration dropdown. This property value can also be used as a macro `${name}` to specify other property values. For an example, see the "buildRoot" definition in CMakeSettings.json.
-1. generator: maps to the -G switch and specifies the generator to be used. This property can also be used as a macro `${generator}` to help specify other property values. Visual Studio currently supports the following CMake generators:
+1. **name**: the name that appears in the C++ configuration dropdown. This property value can also be used as a macro, `${name}`, to specify other property values. For an example, see the **buildRoot** definition in CMakeSettings.json.
+1. **generator**: maps to the **-G** switch and specifies the generator to be used. This property can also be used as a macro, `${generator}`, to help specify other property values. Visual Studio currently supports the following CMake generators:
+
 
     - "Ninja"
     - "Visual Studio 14 2015"
@@ -187,10 +200,10 @@ Because Ninja is designed for fast builds speeds instead of flexibility and func
 
 To specify a Visual Studio generator, open the CMakeSettings.json from the main menu by choosing **CMake | Change CMake Settings**. Delete “Ninja” and type “V”. This activates IntelliSense, which enables you to choose the generator you want.
 
-1. buildRoot: maps to -DCMAKE_BINARY_DIR switch and specifies where the CMake cache will be created. If the folder does not exist, it will be created.
-1. variables: contains a name+value pair of CMake variables that will get passed as -Dname=value to CMake. If your CMake project build instructions specify adding any variables directly to the CMake cache file, it is recommended that you add them here instead.
-1. cmakeCommandArgs: specifies any additional switches you want to pass to CMake.exe.
-1. configurationType: defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo".
+1. **buildRoot**: maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created.
+1. **variables**: contains a name-value pair of CMake variables that will get passed as **-D**_name_**=**_value_ to CMake. If your CMake project build instructions specify the addition of any variables directly to the CMake cache file, it is recommended that you add them here instead.
+1. **cmakeCommandArgs**: specifies any additional switches you want to pass to CMake.exe.
+1. **configurationType**: defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo".
 
 ### Environment variables
 
@@ -219,16 +232,15 @@ usage: ninja [options] [targets...]
 |--------------|------------|
 | --version  | print ninja version ("1.7.1")|
 |   -C DIR   | change to DIR before doing anything else|
-|   -f FILE  | specify input build file [default=build.ninja]|
-|   -j N     | run N jobs in parallel [default=14, derived from CPUs available]|
-|   -k N     | keep going until N jobs fail [default=1]|
+|   -f FILE  | specify input build file (default=build.ninja)|
+|   -j N     | run N jobs in parallel (default=14, derived from CPUs available)|
+|   -k N     | keep going until N jobs fail (default=1)|
 |   -l N     | do not start new jobs if the load average is greater than N|
 |   -n      | dry run (don't run commands but act like they succeeded)|
 |   -v       | show all command lines while building|
 |   -d MODE  | enable debugging (use -d list to list modes)|
 |   -t TOOL  | run a subtool (use -t list to list subtools). terminates toplevel options; further flags are passed to the tool| 
 |   -w FLAG  | adjust warnings (use -w list to list warnings)|
-
 
 ### Inherited environments (Visual Studio 2017 version 15.5)
 
@@ -238,7 +250,7 @@ CmakeSettings.json now supports inherited environments. This feature enables you
   "inheritEnvironments": [ "msvc_x64_x64" ]
 ```
 
-The example above is the same as running the "Developer Command Prompt for VS 2017" with the `-arch=amd64 -host_arch=amd64` arguments.
+The example above is the same as running the **Developer Command Prompt for VS 2017** with the **-arch=amd64 -host_arch=amd64** arguments.
 
 The following table shows the default values and their command line equivalents:
 
@@ -254,7 +266,7 @@ The following table shows the default values and their command line equivalents:
 |msvc_arm64_x64|Compile for ARM64 using 64-bit tools|
 
 ### Custom environment variables
-In CmakeSettings.json, you can define custom environment variables globally or per-configuration in the **environments** property. The following example defines one global variable, **BuildDir**, which is inherited in both the x86-Debug and x64-Debug configurations. Each configuration uses the variable to specify the value for the buildRoot property for that configuration. Note also how each configuration uses the **inheritEnvironments** property to specify a variable that applies only to that configuration.
+In CmakeSettings.json, you can define custom environment variables globally or per-configuration in the **environments** property. The following example defines one global variable, **BuildDir**, which is inherited in both the x86-Debug and x64-Debug configurations. Each configuration uses the variable to specify the value for the **buildRoot** property for that configuration. Note also how each configuration uses the **inheritEnvironments** property to specify a variable that applies only to that configuration.
 
 ```json
 {
@@ -331,17 +343,17 @@ In the next example, the x86-Debug configuration defines its own value for the *
 
 ## Cmake configure step
 
-When significant changes are made to the CMakeSettings.json or to CMakeLists.txt files, Visual Studio automatically re-runs the CMake configure step. If the configure step finishes without errors, the information that is collected will be available in C++ IntelliSense and language services and also in build and debug operations.
+When significant changes are made to the CMakeSettings.json or to CMakeLists.txt files, Visual Studio automatically re-runs the CMake configure step. If the configure step finishes without errors, the information that is collected is available in C++ IntelliSense and language services and also in build and debug operations.
 
 When multiple CMake projects use the same CMake configuration name (for example, x86-Debug), all of them are configured and built (in their own build root folder) when that configuration is selected. You can debug the targets from all of the CMake projects that participate in that CMake configuration.
 
    ![CMake Build Only menu item](media/cmake-build-only.png "CMake Build Only menu item")
 
-To limit builds and debug sessions to a subset of the projects in the workspace, create a new configuration with a unique name in the CMakeSettings.json file and apply it to those projects only. When that configuration is selected, IntelliSense, building, and debugging will be enabled only for those specified projects.
+To limit builds and debug sessions to a subset of the projects in the workspace, create a new configuration with a unique name in the CMakeSettings.json file and apply it to those projects only. When that configuration is selected, the IntelliSense and build and debug commands are enabled only for those specified projects.
 
 ## Troubleshooting CMake cache errors
 
-If you need more information about the state of the CMake cache to diagnose a problem, open the CMake main menu or the CMakeLists.txt context menu in **Solution Explorer** to run one of these commands:
+If you need more information about the state of the CMake cache to diagnose a problem, open the **CMake** main menu or the **CMakeLists.txt** context menu in **Solution Explorer** to run one of these commands:
 
 - **View Cache** opens the CMakeCache.txt file from the build root folder in the editor. (Any edits you make here to CMakeCache.txt are wiped out if you clean the cache. To make changes that persist after the cache is cleaned, see [CMake settings and custom configurations](#cmake_settings) earlier in this article.)
 - **Open Cache Folder** opens an Explorer window to the build root folder.  
