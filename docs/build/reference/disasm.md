@@ -1,33 +1,41 @@
 ---
-title: "-DISASM | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+title: "/DISASM | Microsoft Docs"
+ms.date: "1/17/2018"
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 f1_keywords: ["/disasm"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-DISASM dumpbin option", "DISASM dumpbin option", "/DISASM dumpbin option"]
-ms.assetid: 5f6d1fde-50ce-486d-9c1d-9372b7f7b533
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /DISASM
-```  
-/DISASM  
-```  
-  
-## Remarks  
- This option displays disassembly of code sections, using symbols if present in the file.  
-  
- /DISASM should only be used on native (not managed) images.  
-  
- Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.  
-  
-## See Also  
- [DUMPBIN Options](../../build/reference/dumpbin-options.md)
+
+Print the disassembly of code sections in the DUMPBIN output.
+
+## Syntax
+
+> **/DISASM**{**:**\[**BYTES**|**NOBYTES**]}  
+
+### Arguments
+
+**BYTES**  
+Includes the instruction bytes together with the interpreted opcodes and arguments in the disassembly output. This is the default option.
+
+**NOBYTES**  
+Does not include the instruction bytes in the disassembly output.
+
+## Remarks
+
+The **/DISASM** option displays disassembly of code sections in the file. It uses debug symbols if they are present in the file.
+
+**/DISASM** should only be used on native, not managed, images. The equivalent tool for managed code is [ILDASM](/dotnet/framework/tools/ildasm-exe-il-disassembler).
+
+Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced by the [/GL (Whole program optimization)](../../build/reference/gl-whole-program-optimization.md) compiler option.
+
+## See also
+
+[DUMPBIN Options](../../build/reference/dumpbin-options.md)  
