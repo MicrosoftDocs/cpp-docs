@@ -266,4 +266,4 @@ VectorView(
   
 ## See Also  
  [Platform Namespace](platform-namespace-c-cx.md)   
- [Creating Windows Runtime Components in C++](/MicrosoftDocs/windows-uwp/blob/docs/windows-apps-src/winrt-components/creating-windows-runtime-components-in-cpp.md)
+ [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
