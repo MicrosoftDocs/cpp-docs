@@ -36,7 +36,7 @@ When performance optimization is needed, consider using:
   
 1.  The [array](../standard-library/array-class-stl.md) type when embedding is important, for example, as a class member.  
   
-2.  Unordered associative containers such as [unordered_map]((../standard-library/unordered-map-class.md). These have lower per-element overhead and constant-time lookup, but they can be harder to use correctly and efficiently.  
+2.  Unordered associative containers such as [unordered_map](../standard-library/unordered-map-class.md). These have lower per-element overhead and constant-time lookup, but they can be harder to use correctly and efficiently.  
   
 3.  Sorted `vector`. For more information, see [Algorithms](../cpp/algorithms-modern-cpp.md).  
   
