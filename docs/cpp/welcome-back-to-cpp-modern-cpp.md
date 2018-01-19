@@ -45,40 +45,60 @@ C++ is one of the most widely used programming languages in the world. Well-writ
  The C++ language itself has also evolved. Compare the following code snippets. This one shows how things used to be in C++:  
   
 ```cpp  
-// circle and shape are user-defined types  
-circle* p = new circle( 42 );   
-vector<shape*> v = load_shapes();  
-  
-for( vector<circle*>::iterator i = v.begin(); i != v.end(); ++i ) {  
-    if( *i && **i == *p )  
-        cout << **i << " is a match\n";  
-}  
-  
-for( vector<circle*>::iterator i = v.begin();  
-        i != v.end(); ++i ) {  
-    delete *i; // not exception safe  
-}  
-  
-delete p;  
-```  
-  
+
+#include <vector>
+
+void f()
+{
+    // Assume circle and shape are user-defined types  
+    circle* p = new circle( 42 );   
+    vector<shape*> v = load_shapes();  
+
+    for( vector<circle*>::iterator i = v.begin(); i != v.end(); ++i ) {  
+        if( *i && **i == *p )  
+            cout << **i << " is a match\n";  
+    }  
+
+    // CAUTION: If v's pointers own the objects, then you
+    // must delete them all before v goes out of scope.
+    // If v's pointers do not own the objects, and you delete
+    // them here, any code that tries to dereference copies
+    // of the pointers will cause null pointer exceptions.
+    for( vector<circle*>::iterator i = v.begin();  
+            i != v.end(); ++i ) {  
+        delete *i; // not exception safe  
+    }  
+
+    // Don't forget to delete this, too.  
+    delete p;  
+} // end f()
+```
+
  Here's how the same thing is accomplished in modern C++:  
   
-```cpp  
+```cpp
+
 #include <memory>  
 #include <vector>  
-// ...  
-// circle and shape are user-defined types  
-auto p = make_shared<circle>( 42 );  
-vector<shared_ptr<shape>> v = load_shapes();  
-  
-for( auto& s : v ) {  
-    if( s && *s == *p )  
-        cout << *s << " is a match\n";  
-} 
-```  
-  
- In modern C++, you don't have to use new/delete or explicit exception handling because you can use smart pointers instead. When you use the `auto` type deduction and [lambda function](../cpp/lambda-expressions-in-cpp.md), you can write code quicker, tighten it, and understand it better. And `for_each` is cleaner, easier to use, and less prone to unintended errors than a `for` loop. You can use boilerplate together with minimal lines of code to write your app. And you can make that code exception-safe and memory-safe, and have no allocation/deallocation or error codes to deal with.  
+
+void f()
+{
+    // ...  
+    auto p = make_shared<circle>( 42 );  
+    vector<shared_ptr<shape>> v = load_shapes();  
+
+    for( auto& s : v ) 
+    {  
+        if( s && *s == *p )
+        {
+            cout << *s << " is a match\n";
+        }
+    }
+}
+
+```
+
+ In modern C++, you don't have to use new/delete or explicit exception handling because you can use smart pointers instead. When you use the `auto` type deduction and [lambda function](../cpp/lambda-expressions-in-cpp.md), you can write code quicker, tighten it, and understand it better. And a range-based `for` loop is cleaner, easier to use, and less prone to unintended errors than a C-style `for` loop. You can use boilerplate together with minimal lines of code to write your app. And you can make that code exception-safe and memory-safe, and have no allocation/deallocation or error codes to deal with.  
   
  Modern C++ incorporates two kinds of polymorphism: compile-time, through templates, and run-time, through inheritance and virtualization. You can mix the two kinds of polymorphism to great effect. The C++ Standard Library template `shared_ptr` uses internal virtual methods to accomplish its apparently effortless type erasure. But don't over-use virtualization for polymorphism when a template is the better choice. Templates can be very powerful.  
   
