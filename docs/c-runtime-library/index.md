@@ -1,3 +1,3 @@
 ---
-redirect_url: /cpp/c-runtime-library/c-runtime-library-reference
+redirect_url: /cpp/c-runtime-library/c-run-time-library-reference
 ---

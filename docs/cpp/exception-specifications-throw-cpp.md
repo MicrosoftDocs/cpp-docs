@@ -1,7 +1,7 @@
 ---
-title: "Exception Specifications (throw) (C++) | Microsoft Docs"
+title: "Exception Specifications (throw, noexcept) (C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "01/12/2018"
+ms.date: "01/18/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 
 Exception specifications are a C++ language feature that indicate the programmer's intent about the exception types that can be propagated by a function. You can specify that a function may or may not exit by an exception by using an *exception specification*. The compiler can use this information to optimize calls to the function, and to terminate the program if an unexpected exception escapes the function. 
 
-Prior to C++17 there were two kinds of exception specification. The *noexcept specification* was new in C++11. It specifies whether the set of potential exceptions that can escape the function is empty. The *dynamic exception specification*, or `throw(optional_type_list)` specification, was deprecated in C++11 and removed in C++17, except for `throw()`, which is an alias for noexcept(true). This exception specification was designed to provide summary information about what exceptions can be thrown out of a function, but in practice it was found to be problematic. The one dynamic exception specification that did prove to be somewhat useful was the unconditional `throw()` specification. For example, the function declaration:
+Prior to C++17 there were two kinds of exception specification. The *noexcept specification* was new in C++11. It specifies whether the set of potential exceptions that can escape the function is empty. The *dynamic exception specification*, or `throw(optional_type_list)` specification, was deprecated in C++11 and removed in C++17, except for `throw()`, which is an alias for `noexcept(true)`. This exception specification was designed to provide summary information about what exceptions can be thrown out of a function, but in practice it was found to be problematic. The one dynamic exception specification that did prove to be somewhat useful was the unconditional `throw()` specification. For example, the function declaration:
 
 ```cpp
 void MyFunction(int i) throw();
