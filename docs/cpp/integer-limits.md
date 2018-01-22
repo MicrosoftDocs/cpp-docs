@@ -43,7 +43,7 @@ ms.workload: ["cplusplus"]
 |**ULONG_MAX**|Maximum value for a variable of type `unsigned long`.|4294967295 (0xffffffff)|
 |**LLONG_MIN**|Minimum value for a variable of type `long long`|-9223372036854775808|
 |**LLONG_MAX**|Maximum value for a variable of type `long long`|9223372036854775807|
-|**ULLONG_MAX**|Maximum value for a variable of type ``unsigned long long`|18446744073709551615 (0xffffffffffffffff)|
+|**ULLONG_MAX**|Maximum value for a variable of type `unsigned long long`|18446744073709551615 (0xffffffffffffffff)|
 
  If a value exceeds the largest integer representation, the Microsoft compiler generates an error.
 
