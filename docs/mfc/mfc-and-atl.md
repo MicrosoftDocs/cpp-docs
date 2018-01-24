@@ -18,7 +18,11 @@ ms.workload: ["cplusplus"]
 # MFC and ATL
 The Microsoft Foundation Classes (MFC) provide a C++ object-oriented wrapper over Win32 for rapid development of native desktop applications. The Active Template Library (ATL) is a wrapper library that simplifies COM development and is used extensively for creating ActiveX controls.  
   
- You can create MFC or ATL programs with Visual Studio Community Edition or higher. The Express editions do not support MFC or ATL. In Visual Studio 2015, Visual C++ is an optional component, and MFC and ATL components are optional sub-components under Visual C++. If you do not select these components when you first install Visual Studio, you will be prompted to install them the first time you attempt to create or open an MFC or ATL project.  
+You can create MFC or ATL programs with Visual Studio Community Edition or higher. The Express editions do not support MFC or ATL. 
+
+In Visual Studio 2015, Visual C++ is an optional component, and MFC and ATL components are optional sub-components under Visual C++. If you do not select these components when you first install Visual Studio, you will be prompted to install them the first time you attempt to create or open an MFC or ATL project.  
+
+In Visual Studio 2017 and later, MFC and ATL are optional sub-components under the **Desktop development with C++** workload in the Visual Studio Installer program. You can install ATL support without MFC, or combined MFC and ATL support (MFC depends on ATL). For more information about workloads and components, see [Install Visual Studio 2017](/visualstudio/install/install-visual-studio).
   
 ## Related Articles  
   
