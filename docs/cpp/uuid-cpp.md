@@ -26,9 +26,7 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-__declspec( uuid("  
-ComObjectGUID  
-") ) declarator  
+__declspec( uuid("ComObjectGUID") ) declarator  
 ```  
   
 ## Remarks  

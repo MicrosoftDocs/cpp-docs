@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
 ---
 # __declspec
 
-## Microsoft Specific
+**Microsoft Specific**
 
 The extended attribute syntax for specifying storage-class information uses the **__declspec** keyword, which specifies that an instance of a given type is to be stored with a Microsoft-specific storage-class attribute listed below. Examples of other storage-class modifiers include the **static** and **extern** keywords. However, these keywords are part of the ANSI specification of the C and C++ languages, and as such are not covered by extended attribute syntax. The extended attribute syntax simplifies and standardizes Microsoft-specific extensions to the C and C++ languages.
 
@@ -83,7 +83,7 @@ The general guideline for using the **__declspec** attribute for simple declarat
 The *decl-specifier-seq* should contain, among other things, a base type (e.g. **int**, **float**, a **typedef**, or a class name), a storage class (e.g. **static**, **extern**), or the **__declspec** extension. The *init-declarator-list* should contain, among other things, the pointer part of declarations. For example:
 
 ```cpp
-__declspec(selectany) int * pi1 = 0;   //OK, selectany & int both part of decl-specifier
+__declspec(selectany) int * pi1 = 0;   //Recommended, selectany & int both part of decl-specifier
 int __declspec(selectany) * pi2 = 0;   //OK, selectany & int both part of decl-specifier
 int * __declspec(selectany) pi3 = 0;   //ERROR, selectany is not part of a declarator
 ```
