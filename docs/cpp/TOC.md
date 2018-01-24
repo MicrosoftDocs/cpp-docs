@@ -342,6 +342,7 @@
 #### [restrict](restrict.md)
 #### [safebuffers](safebuffers.md)
 #### [selectany](selectany.md)
+#### [spectre](spectre.md)
 #### [thread](thread.md)
 #### [uuid (C++)](uuid-cpp.md)
 ### [__restrict](extension-restrict.md)
