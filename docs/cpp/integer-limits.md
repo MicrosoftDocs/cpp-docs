@@ -8,7 +8,7 @@ ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["integral limits", "limits, integer", "LIMITS.H header file", "integer limits"]
+helpviewer_keywords: ["integral limits", "limits, integer", "limits.h header file", "integer limits"]
 ms.assetid: 6922bdbf-0f49-443b-bc03-ee182e4cbd57
 caps.latest.revision: 8
 author: "mikeblome"
@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 # Integer Limits
 **Microsoft Specific**  
   
- The limits for integer types are listed in the following table. These limits are also defined in the standard header file LIMITS.H.  
+ The limits for integer types are listed in the following table. These limits are also defined in the standard header file \<limits.h>.  
   
 ### Limits on Integer Constants  
   
