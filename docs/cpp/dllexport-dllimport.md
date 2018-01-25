@@ -26,8 +26,8 @@ ms.workload: ["cplusplus"]
   
 ```  
   
-      __declspec( dllimport ) declarator  
-__declspec( dllexport ) declarator  
+   __declspec( dllimport ) declarator  
+   __declspec( dllexport ) declarator  
 ```  
   
 ## Remarks  
