@@ -31,7 +31,8 @@ C++ allows specification of more than one function of the same name in the same 
 |Presence or absence of ellipsis|Yes|  
 |Use of `typedef` names|No|  
 |Unspecified array bounds|No|  
-|**const** or `volatile` (see below)|Yes|  
+|**const** or `volatile` (see below)|Yes|
+|[ref-qualifier](#ref-qualifier)|Yes|  
   
  Although functions can be distinguished on the basis of return type, they cannot be overloaded on this basis.  `Const` or `volatile` are only used as a basis for overloading if they are used in a class to apply to the **this** pointer for the class, not the function's return type.  In other words, overloading applies only if the **const** or `volatile` keyword follows the function's argument list in the declaration.  
   
@@ -392,7 +393,7 @@ obj.name
   
  The left operand of the `->*` and `.*` (pointer to member) operators are treated the same way as the `.` and `->` (member-selection) operators with respect to argument matching.  
   
-## Restrictions  
+## Restrictions on overloading  
  Several restrictions govern an acceptable set of overloaded functions:  
   
 -   Any two functions in a set of overloaded functions must have different argument lists.  
@@ -518,7 +519,10 @@ double Account::Deposit( double dAmount, char *szPassword )
    else  
       return 0.0;  
 }  
-```  
+```
+
+## <a name="ref-qualifiers"></a> Ref-qualifiers on member functions  
+Ref qualifiers make it possible to overload a member function on the basis of whether the object pointed to by `this` is an rvalue or an lvalue. This feature can be used to avoid unnecessary copy operations. For example, assume class C initializes a large data set in its constructor, and returns a copy of that data in member function f(). If an object of C is an rvalue that is about to be destroyed, then it is safe for f() to simply move the data rather than copying it. 
   
 ## See Also  
  [Functions (C++)](../cpp/functions-cpp.md)

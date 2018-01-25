@@ -363,7 +363,7 @@ int main()
 }
 ```
 
-4. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).
+4. In addition to using the return value itself, you can "return" values by defining any number of parameters to use pass-by-reference so that the function can modify or initialize the values of objects that the caller provides. For more information, see [Reference-Type Function Arguments](reference-type-function-arguments.md).  
   
 ## Function pointers  
  C++ supports function pointers in the same manner as the C language. However a more type-safe alternative is usually to use a function object.  
