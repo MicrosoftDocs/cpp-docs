@@ -21,7 +21,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_SSE2_enable
-Enables or disables the use of [Streaming SIMD Extensions 2](http://msdn.microsoft.com/en-us/f98440eb-73a9-4f96-b203-ac41bb6701ea) (SSE2) instructions in CRT math routines. (This function is not available on x64 architectures because SSE2 is enabled by default.)  
+Enables or disables the use of Streaming SIMD Extensions 2 (SSE2) instructions in CRT math routines. (This function is not available on x64 architectures because SSE2 is enabled by default.)  
   
 ## Syntax  
   

@@ -63,5 +63,5 @@ long double expm1l(
   
 ## See Also  
  [Floating-Point Support](../../c-runtime-library/floating-point-support.md)   
- [exp2, exp2f, exp2l](http://msdn.microsoft.com/en-us/a7974629-be1e-4196-a562-6624a0732003)   
+ [exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)   
  [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)
