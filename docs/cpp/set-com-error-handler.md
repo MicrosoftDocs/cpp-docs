@@ -89,7 +89,7 @@ Exception raised: Unable to establish the connection!
 ```  
   
 ## Requirements  
- **Header:** comdef.h  
+ **Header:** \<comdef.h>  
   
  **Lib:** If the **wchar_t is Native Type** compiler option is on, use comsuppw.lib or comsuppwd.lib. If **wchar_t is Native Type** is off, use comsupp.lib. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
   
