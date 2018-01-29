@@ -27,7 +27,7 @@ Creates a new directory.
   
 ```  
   
-      int _mkdir(  
+int _mkdir(
    const char *dirname   
 );  
 int _wmkdir(  

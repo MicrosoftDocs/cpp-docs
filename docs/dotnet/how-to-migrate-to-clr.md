@@ -134,7 +134,7 @@ COMObj2->Method(args);  // C++ equivalent
 ## Using New Visual C++ Features  
  After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).  
   
- If you used Managed Extensions for C++, you can convert your code to use the new syntax. For a summary of syntactical differences, see the [(NOTINBUILD)Managed Extensions for C++ Syntax Upgrade Checklist](http://msdn.microsoft.com/en-us/edbded88-7ef3-4757-bd9d-b8f48ac2aada). For details on converting Managed Extensions for C++, see [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md).  
+ If you used Managed Extensions for C++, you can convert your code to use the new syntax. For details on converting Managed Extensions for C++, see [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md).  
   
  For information on .NET programming in Visual C++ see:  
   

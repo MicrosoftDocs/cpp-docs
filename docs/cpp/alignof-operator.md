@@ -27,10 +27,7 @@ C++11 introduces the `alignof` operator that returns the alignment, in bytes, of
 ## Syntax  
   
 ```  
-  
-      __alignof(   
-   type    
-)  
+  __alignof( type )
 ```  
   
 ## Remarks  

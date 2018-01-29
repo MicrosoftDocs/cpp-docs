@@ -54,7 +54,7 @@ ms.workload: ["cplusplus"]
 **END Microsoft Specific**  
   
 ## Requirements  
- **Header:** comutil.h  
+ **Header:** \<comutil.h>  
   
  **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   

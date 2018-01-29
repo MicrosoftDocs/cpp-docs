@@ -20,7 +20,7 @@ ms.workload: ["cplusplus"]
 # Compiler COM Support Classes
 **Microsoft Specific**  
   
- Standard classes are used to support some of the COM types. The classes are defined in comdef.h and the header files generated from the type library.  
+ Standard classes are used to support some of the COM types. The classes are defined in \<comdef.h> and the header files generated from the type library.  
   
 |Class|Purpose|  
 |-----------|-------------|  

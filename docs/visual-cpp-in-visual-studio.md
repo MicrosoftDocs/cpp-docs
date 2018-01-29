@@ -22,7 +22,7 @@ The Visual Studio 2017 programming language and development tools help you devel
 
 This content is for C++ developers who are writing programs.
 
-- If you are looking for a C++ redistributable package and runtime components so that you can run a program, go to the [Microsoft Download Center](http://www.microsoft.com/en-us/download/) and enter **Visual C++** in the search box.
+- If you are looking for a particular C++ redistributable package and runtime components so that you can run a program, go to the [Microsoft](http://www.microsoft.com/) website and enter **Visual C++ Redistributable** in the search box. Download and install the redistributable package for the architecture of your computer (for example, x64 if you are running 64-bit Windows) and the version of Visual C++ that you need. 
 
 - If you are looking for an introduction to C++ programming concepts, go to one of the many websites that offer this content, or get a copy of [Programming -- Principles and Practice Using C++ (Second Edition)](http://stroustrup.com/Programming/) by the inventor of C++, Bjarne Stroustrup. The Visual C++ content assumes you already have a basic familiarity with C++.
 

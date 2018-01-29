@@ -58,7 +58,7 @@ _ASSERTE( _CrtCheckMemory( ) );
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- For a sample of how to use `_CrtCheckMemory`, see [crt_dbg1](http://msdn.microsoft.com/en-us/17b4b20c-e849-48f5-8eb5-dca6509cbaf9).  
+ For a sample of how to use `_CrtCheckMemory`, see [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

@@ -54,11 +54,5 @@ The Microsoft run-time library provides routines for programming for the Microso
  [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)  
  Discusses the entry point and startup code used for a DLL.  
   
- [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
- Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the C++ Standard Library.  
-  
  [Debugging](/visualstudio/debugger/debugging-in-visual-studio)  
  Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.  
-  
-## See Also  
- [Visual C++ Libraries Reference](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)

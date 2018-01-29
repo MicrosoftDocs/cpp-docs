@@ -43,7 +43,5 @@ Unless your Visual C++ application is self-contained and can be deployed by usin
   
 ## See Also  
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
- [Not in Build: Choosing a Deployment Strategy](http://msdn.microsoft.com/en-us/ecd632d8-063c-4028-b785-81bba045107b)   
- [Windows Installer Deployment Overview](http://msdn.microsoft.com/en-us/3ce4610a-b54f-404e-b650-42f4a55dfc3b)   
  [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
  [Deployment Examples](../ide/deployment-examples.md)

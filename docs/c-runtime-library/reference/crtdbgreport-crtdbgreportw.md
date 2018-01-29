@@ -114,7 +114,7 @@ int main(int argc, char *argv[]) {
 }  
 ```  
   
- See [crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167) for an example of how to change the report function.  
+ See [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2) for an example of how to change the report function.  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   
