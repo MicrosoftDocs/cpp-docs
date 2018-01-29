@@ -33,13 +33,13 @@ Clone the vcpkg repo from GitHub: https://github.com/Microsoft/vcpkg. You can do
 Run the bootstrapper in the root folder: bootstrap-vcpkg.bat.
 
 ## Search the list of available libraries
-To see what packages are available, at the command prompt type: `vcpkg search`
+To see what packages are available, at the command prompt type: **vcpkg search**
 
 This command enumerates the control files in the vcpkg/ports subfolders. You will see a listing like this:
 
 ```cmd
 ace       6.4.3   The ADAPTIVE Communication Environment
-anax      2.1.0-1 An open source C++ entity system. <https://github...
+anax      2.1.0-1 An open source C++ entity system. \<https://github...
 antlr4    4.6-1   ANother Tool for Language Recognition
 apr       1.5.2   The Apache Portable Runtime (APR) is a C library ...
 asio      1.10.8  Asio is a cross-platform C++ library for network ...
@@ -48,7 +48,7 @@ atk       2.24.0  GNOME Accessibility Toolkit
 ...
 ```
 
-  You can filter on a pattern, for example `vcpkg search ta`:
+  You can filter on a pattern, for example **vcpkg search ta**:
 
 ```cmd
 botan       2.0.1      A cryptography library written in C++11
@@ -58,7 +58,7 @@ taglib      1.11.1-2   TagLib Audio Meta-Data Library
 ```
 
 ## Install a library on your local machine
-After you get the name of a library by using `vcpkg search`, you use `vcpkg install` to download the library and compile it. vcpkg uses the library's portfile in the ports directory. If no triplet is specified, vcpkg will install and compile for x86-windows. If the portfile specifies dependencies, vcpkg downloads and installs those also. After downloading, vcpkg builds the library by using whatever build system the library uses. CMake and MSBuild projects files are preferred, but MAKE is supported along with any other build system. If vcpkg cannot find the specified build system on the local machine, it downloads and installs it.
+After you get the name of a library by using **vcpkg search**, you use **vcpkg install** to download the library and compile it. vcpkg uses the library's portfile in the ports directory. If no triplet is specified, vcpkg will install and compile for x86-windows. If the portfile specifies dependencies, vcpkg downloads and installs those also. After downloading, vcpkg builds the library by using whatever build system the library uses. CMake and MSBuild projects files are preferred, but MAKE is supported along with any other build system. If vcpkg cannot find the specified build system on the local machine, it downloads and installs it.
 
 ```cmd
 > vcpkg install boost:x86-windows
@@ -71,7 +71,7 @@ Additional packages (*) will be installed to complete this operation.
 ```
 
 ## List the libraries already installed
-After you have installed some libraries, you can use `vcpkg list` to see what you have:
+After you have installed some libraries, you can use **vcpkg list** to see what you have:
 
 ```cmd
 > vcpkg list
@@ -86,7 +86,7 @@ zlib:x86-windows        1.2.11   A compression library
 
 ## Integrate with Visual Studio
 ### Per-user
-Run `vcpkg integrate install` to configure Visual Studio to locate all vcpkg header files and binaries on a per-user basis without the need for manual editing of VC++ Directories paths. If you have multiple clones, the clone from which you run this command becomes the new default location.
+Run **vcpkg integrate install** to configure Visual Studio to locate all vcpkg header files and binaries on a per-user basis without the need for manual editing of VC++ Directories paths. If you have multiple clones, the clone from which you run this command becomes the new default location.
 
 Now you can #include headers simply by typing the folder/header, and auto-complete assists you. No additional steps are required for linking to libs or adding project references. The following illustration shows how Visual Studio finds the azure-storage-cpp headers. vcpkg places its headers in the \installed subfolder, partitioned by target platform. The following diagram shows the list of include files in the `/was` subfolder for the library:
 
@@ -97,17 +97,17 @@ If you need to use a specific version of a library that is different from the ve
 
 1. Make a new clone of vcpkg 
 1. Modify the portfile for the library to obtain the version you need
-1. Run `vcpkg install <library>`.
-1. Use `vcpkg integrate project` to create a NuGet package that references that library on a per-project basis.
+1. Run **vcpkg install \<library>**.
+1. Use **vcpkg integrate project** to create a NuGet package that references that library on a per-project basis.
 
 
 ## Export compiled binaries and headers
-Requiring everyone on a team to download and build libraries can be inefficient. A single team member can do that work, and then use `vcpkg export` to create a zip file of the binaries and headers that can be easily shared with other team members. 
+Requiring everyone on a team to download and build libraries can be inefficient. A single team member can do that work, and then use **vcpkg export** to create a zip file of the binaries and headers that can be easily shared with other team members. 
 
 ## Update/upgrade installed libraries
-The public catalog is kept up-to-date with the latest versions of the libraries. To determine which of your local libraries are out-of-date, use `vcpkg update`. When you're ready to update your ports collection to the latest version of the public catalog, run the `vcpkg upgrade` command to automatically download and rebuild any or all of your installed libraries that are out of date.
+The public catalog is kept up-to-date with the latest versions of the libraries. To determine which of your local libraries are out-of-date, use **vcpkg update**. When you're ready to update your ports collection to the latest version of the public catalog, run the **vcpkg upgrade** command to automatically download and rebuild any or all of your installed libraries that are out of date.
 
-By default, the `upgrade` command only lists the libraries that are out of date; it doesn’t upgrade them. To perform the upgrade, use the `--no-dry-run` option. 
+By default, the **upgrade** command only lists the libraries that are out of date; it doesn’t upgrade them. To perform the upgrade, use the **--no-dry-run** option. 
 
 ```cmd
   vcpkg upgrade --no-dry-run 
@@ -115,10 +115,10 @@ By default, the `upgrade` command only lists the libraries that are out of date;
 
 ### Upgrade Options
 
-- `--no-dry-run`  Perform the upgrade; when not specified, the command only lists the out-of-date packages. 
-- `--keep-going`  Continue installing packages even if one fails. 
-- `--triplet <t>`  Set the default triplet for unqualified packages 
-- `--vcpkg-root <path>`  Specify the vcpkg directory to use instead of current directory or tool directory 
+- **--no-dry-run**  Perform the upgrade; when not specified, the command only lists the out-of-date packages. 
+- **--keep-going**  Continue installing packages even if one fails. 
+- **--triplet \<t>**  Set the default triplet for unqualified packages. 
+- **--vcpkg-root \<path>**  Specify the vcpkg directory to use instead of current directory or tool directory. 
 
 ### Upgrade example
 
@@ -141,7 +141,7 @@ If you are sure you want to rebuild the above packages, run this command with th
 You can include any libraries you like in your private ports collection. To suggest a new library for the public catalog, open an issue on the [GitHub vcpkg issue page](https://github.com/Microsoft/vcpkg/issues).
 
 ## Remove a library
-Type `vcpkg remove` to remove an installed library. If any other libraries depend on it, you are asked to rerun the command with `--recurse`, which causes all downstream libraries to be removed.
+Type **vcpkg remove** to remove an installed library. If any other libraries depend on it, you are asked to rerun the command with **--recurse**, which causes all downstream libraries to be removed.
 
 ## Customize vcpkg
 You can modify your clone of vcpkg in any way you like. You can create multiple vcpkg clones and modify the portfiles in each one to obtain specific versions of libraries or specify command-line parameters. For example, in an enterprise, one group of developers might be working on software that has one set of dependencies, and another group might have a different set. You can set up two clones of vcpkg, and modify each one to download the versions of the libraries and the compilation switches, etc, according to your needs. 
@@ -150,16 +150,17 @@ You can modify your clone of vcpkg in any way you like. You can create multiple 
 Just delete the directory. 
 
 ## Send feedback about vcpkg
-Use the `--survey` command to send feedback to Microsoft about vcpkg, including bug reports and suggestions for features.
+Use the **--survey** command to send feedback to Microsoft about vcpkg, including bug reports and suggestions for features.
 
 ## The vcpkg folder hierarchy
 All vcpkg functionality and data is self-contained in a single directory hierarchy, called an "instance". There are no registry settings or environment variables. You can have any number of instances of vcpkg on a machine and they do not interfere with each other. 
 
 The contents of a vcpkg instance are: 
+
 - buildtrees -- contains subfolders of sources from which each library is built
 - docs -- documentation and examples
 - downloads -- cached copies of any downloaded tools or sources. vcpkg searches here first when you run the install command .
-- installed-- Contains the headers and binaries for each installed library. When you integrate with VIsual Studio, you are essentially telling it add this folder to its search paths.
+- installed-- Contains the headers and binaries for each installed library. When you integrate with Visual Studio, you are essentially telling it add this folder to its search paths.
 - packages -- Internal folder for staging between installs.
 - ports -- Files that describe each library in the catalog, its version, and where to download it. You can add your own ports if needed.
 - scripts -- Scripts (cmake, powershell) used by vcpkg.
@@ -170,29 +171,29 @@ The contents of a vcpkg instance are:
 
 |Command|Description|
 |---------|---------|
-|`vcpkg search [pat]`|Search for packages available to install|
-|`vcpkg install <pkg>...`|Install a package|
-|`vcpkg remove <pkg>...`|Uninstall a package|
-|`vcpkg remove --outdated`|Uninstall all out-of-date packages|
-|`vcpkg list`|List installed packages|
-|`vcpkg update`|Display list of packages for updating|
-|`vcpkg upgrade`|Rebuild all outdated packages|
-|`vcpkg hash <file> [alg]`| Hash a file by specific algorithm, default SHA512|
-|`vcpkg integrate install`|Make installed packages available user-wide. Requires admin privileges on first use|
-|`vcpkg integrate remove`|Remove user-wide integration|
-|`vcpkg integrate project`|Generate a referencing NuGet package for individual VS project use|
-|`vcpkg export <pkg>... [opt]...`|Export a package|
-|`vcpkg edit <pkg>`|Open up a port for editing (uses %EDITOR%, default 'code')|
-|`vcpkg import <pkg>`|Import a pre-built library|
-|`vcpkg create <pkg> <url>  [archivename]`|Create a new package|
-|`vcpkg owns <pat>`| Search for files in installed packages|
-| `vcpkg cache`|List cached compiled packages|
-|`vcpkg version`|   Display version information|
-|`vcpkg contact`| Display contact information to send feedback|
+|**vcpkg search [pat]**|Search for packages available to install|
+|**vcpkg install \<pkg>...**|Install a package|
+|**vcpkg remove \<pkg>...**|Uninstall a package|
+|**vcpkg remove --outdated**|Uninstall all out-of-date packages|
+|**vcpkg list**|List installed packages|
+|**vcpkg update**|Display list of packages for updating|
+|**vcpkg upgrade**|Rebuild all outdated packages|
+|**vcpkg hash \<file> [alg]**|Hash a file by specific algorithm, default SHA512|
+|**vcpkg integrate install**|Make installed packages available user-wide. Requires admin privileges on first use|
+|**vcpkg integrate remove**|Remove user-wide integration|
+|**vcpkg integrate project**|Generate a referencing NuGet package for individual VS project use|
+|**vcpkg export \<pkg>... [opt]...**|Export a package|
+|**vcpkg edit \<pkg>**|Open up a port for editing (uses %EDITOR%, default 'code')|
+|**vcpkg import \<pkg>**|Import a pre-built library|
+|**vcpkg create \<pkg> \<url> [archivename]**|Create a new package|
+|**vcpkg owns \<pat>**|Search for files in installed packages|
+|**vcpkg cache**|List cached compiled packages|
+|**vcpkg version**|Display version information|
+|**vcpkg contact**|Display contact information to send feedback|
 
 
 ### Options:
 |Option|Description|
 |---------|---------|
-|`--triplet <t>`|Specify the target architecture triplet. (default: `%VCPKG_DEFAULT_TRIPLET%`, see also `vcpkg help triplet`)|
-|`--vcpkg-root <path>`|Specify the vcpkg root directory (default: `%VCPKG_ROOT%`)|
+|**--triplet \<t>**|Specify the target architecture triplet. (default: `%VCPKG_DEFAULT_TRIPLET%`, see also **vcpkg help triplet**)|
+|**--vcpkg-root \<path>**|Specify the vcpkg root directory (default: `%VCPKG_ROOT%`)|
