@@ -1,5 +1,5 @@
 ---
-title: "nearbyint, nearbyintf, nearbyintl1 | Microsoft Docs"
+title: "nearbyint, nearbyintf, nearbyintl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""

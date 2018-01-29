@@ -57,7 +57,7 @@ void _free_dbg(
  For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md) in the Introduction.  
   
 ## Example  
- For a sample of how to use `_free_dbg`, see [crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167).  
+ For a sample of how to use `_free_dbg`, see [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   

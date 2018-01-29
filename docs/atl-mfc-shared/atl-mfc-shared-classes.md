@@ -31,9 +31,5 @@ These utility classes can be used in any native C++ project without requiring an
  [Microsoft Foundation Class Library (MFC) Reference](../mfc/mfc-desktop-applications.md)  
  Provides reference material for the MFC Library, a set of classes in that constitute an application framework, which is the framework of an application written for the Windows API.  
   
- [Visual C++ Libraries](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
- Provides links to the various libraries provided with Visual C++, including ATL, MFC, OLE DB Templates, the C run-time library, and the C++ Standard Library.  
-  
  [Debugging](/visualstudio/debugger/debugging-in-visual-studio)  
  Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.
-

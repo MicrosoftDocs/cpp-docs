@@ -49,7 +49,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
  Debug versions of [C run-time libraries](../../c-runtime-library/crt-library-features.md) only.  
   
 ## Example  
- For a sample of how to use `_CrtSetReportHook`, see [report](http://msdn.microsoft.com/en-us/f6e08c30-6bd9-459a-830a-56deec0d2051).  
+ For a sample of how to use `_CrtSetReportHook`, see [report](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).  
   
 ## See Also  
  [Debug Routines](../../c-runtime-library/debug-routines.md)   
