@@ -27,7 +27,7 @@ Rotates bits to the left (`_rotl`) or right (`_rotr`).
   
 ```  
   
-      unsigned int _rotl(  
+unsigned int _rotl(  
    unsigned int value,  
    int shift   
 );  
