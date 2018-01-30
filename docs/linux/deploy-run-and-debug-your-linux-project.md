@@ -24,7 +24,7 @@ There are several ways to interact with and debug your Linux project.
 * View output from the target computer in a special Linux Console window. You can also use the console to send input to the target computer.
 
 > [!NOTE]
-> For ARM debugging on Linux, see this [blog post](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/).
+> For ARM debugging on Linux, see this blog post: [Debugging an embedded ARM device in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/).
 
 ## Debug your Linux project
 
