@@ -1,7 +1,7 @@
 ---
 title: "-Yl (Inject PCH Reference for Debug Library) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/04/2017"
+ms.date: "01/29/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
 ---
 # /Yl (Inject PCH Reference for Debug Library)
 
-The **/Yl** option creates a common symbol for a precompiled header file and injects references to this symbol in all files that use the precompiled header. This makes the complete type information for precompiled header symbols available to the debugger in all files that use the precompiled header. This option is enabled by default. Use of this option can prevent linker errors due to missing debug information in linked libraries that use precompiled headers.
+The **/Yl** option generates a unique symbol in a precompiled header file, and a reference to this symbol is injected in all object files that use the precompiled header.
 
 ## Syntax
 
@@ -29,20 +29,22 @@ The **/Yl** option creates a common symbol for a precompiled header file and inj
 ### Arguments
 
 *name*  
-An optional name used to define a symbol to be stored and referenced in object files that define or use the precompiled header.
+An optional name used as part of the unique symbol.
 
 *\-*  
 A dash (-) explicitly disables the **/Yl** compiler option.
 
 ## Remarks
 
-The **/Yl** option enables the debugger to get complete information about types in a precompiled header in every file that includes the precompiled header. This option creates an internal symbol name, injects the symbol definition in the object file used to create the precompiled header by the [/Yc](../../build/reference/yc-create-precompiled-header-file.md) option, and injects a reference to the symbol in all files that include the precompiled header by using the [/Yu](../../build/reference/yu-use-precompiled-header-file.md) compiler option. Because all source files that use the precompiled header refer to the named symbol, the linker always links the object file that defines the symbol and the associated precompiled header debugging information. This option is enabled by default.
+The **/Yl** compiler option creates a unique symbol definition in a precompiled header file created by using the [/Yc](../../build/reference/yc-create-precompiled-header-file.md) option. References to this symbol are automatically injected in all files that include the precompiled header by using the [/Yu](../../build/reference/yu-use-precompiled-header-file.md) compiler option. The **/Yl** option is enabled by default when **/Yc** is used to create a precompiled header file.
 
-The **/Yl**_name_ option is used to explicitly create the identifying symbol for the precompiled header file. The compiler uses the *name* argument to create a symbol similar to \_\_@@\_PchSym\_@00@...@*name*, where the ellipsis (...) represents a linker-generated character string. If the argument is omitted, the compiler generates a symbol name automatically.
+The **/Yl**_name_ option is used to create an identifiable symbol in the precompiled header file. The compiler uses the *name* argument as part of the decorated symbol name it creates, similar to \_\_@@\_PchSym\_@00@...@*name*, where the ellipsis (...) represents a unique compiler-generated character string. If the *name* argument is omitted, the compiler generates a symbol name automatically. Normally, you do not need to know the name of the symbol. However, when your project uses more than one precompiled header file, the **/Yl**_name_ option may be useful to determine which object files use which precompiled header. You can use *name* as a search string to find the symbol reference in a dump file.
 
-**/Yl-** disables the default behavior and does not put an identifying symbol reference in the object files that include the precompiled header. This option may be required for files compiled without the precompiled header file present.
+**/Yl-** disables the default behavior and does not put an identifying symbol in the precompiled header file. Compiled files that include this precompiled header do not get a common symbol reference.
 
-If you use **/Yl-**, **/Yc** and [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md) options to build a library, the compiler creates a precompiled header file that contains debugging information that is stored in an object file rather than a .pdb file. [LNK1211](../../error-messages/tool-errors/linker-tools-error-lnk1211.md) errors or [LNK4206](../../error-messages/tool-errors/linker-tools-warning-lnk4206.md) warnings can occur in builds that use this library and the precompiled header if the source file used to create the precompiled header does not define any symbols. The linker may exclude this library object file from the link, along with the associated precompiled header debug information, when nothing in the object file is referenced in the library client. To solve the problem, specify **/Yl** when you use **/Yc** to create a precompiled header file and **/Yu** to use it. This ensures that the object file that contains the debugging information is included in your build.
+When **/Yc** is not specified, any **/Yl** option has no effect, but if specified it must match any **/Yl** option passed when **/Yc** is specified.
+
+If you use **/Yl-**, **/Yc** and [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md) options to build a precompiled header file, the debugging information is stored in the object file for the source file used to create the precompiled header, rather than a separate .pdb file. If this object file is then made part of a library, [LNK1211](../../error-messages/tool-errors/linker-tools-error-lnk1211.md) errors or [LNK4206](../../error-messages/tool-errors/linker-tools-warning-lnk4206.md) warnings can occur in builds that use this library and the precompiled header file, if the source file used to create the precompiled header file does not define any symbols itself. The linker may exclude the object file from the link, along with the associated debugging information, when nothing in the object file is referenced in the library client. To solve this problem, specify **/Yl** (or remove the **/Yl-** option) when you use **/Yc** to create the precompiled header file. This ensures that the object file from the library that contains the debugging information gets linked in your build.
 
 For more information on precompiled headers, see:
 
@@ -54,7 +56,7 @@ For more information on precompiled headers, see:
 
 1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Choose the **Command Line** property page in the **C/C++** folder.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Add the **/Yl**_name_ compiler option in the **Additional Options** box. Choose **OK** to save your changes.
 
