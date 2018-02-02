@@ -4,7 +4,7 @@ description: vcpkg is a command line package manager that greatly simplifies the
 keywords: vcpkg
 author: mikeblome
 ms.author: mblome
-ms.date: 01/21/2018
+ms.date: 02/01/2018
 ms.technology: ["cpp-ide"]
 ms.tgt_pltfrm: "windows"
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
@@ -13,14 +13,16 @@ dev_langs: ["C++"]
 manager: ghogen
 ms.workload: [cplusplus]
 ---
+# vcpkg: C++ Package Manager for Windows
 
-# vcpkg: C++ Package Manager for Windows 
 vcpkg is a command-line package manager that greatly simplifies the acquisition and installation of third-party libraries on Windows. If your project uses third-party libraries, we recommend that you use vcpkg to install them. vcpkg supports both open-source and proprietary libraries. All libraries in the vcpkg public catalog have been tested for compatibility with Visual Studio 2015 and Visual Studio 2017. As of January 2018 there are over 600 libraries in the catalog and the C++ community is adding more libraries on an ongoing basis.
 
 ## Simple yet flexible
+
 With a single command, you can download sources and build a library. vcpkg is itself an open-source project, available on GitHub. You can customize your private clone(s) in any way you like. For example, you can specify different libraries, or different versions of libraries than what are found in the public catalog. You can have multiple clones of vcpkg on a single machine, each one producing custom sets of libraries and/or compilation switches, etc. Each clone is a self-contained, x-copyable environment with its own copy of vcpkg.exe that operates only on its own hierarchy. vcpkg is not added to any environment variables, and has no dependency on the Windows Registry or Visual Studio.
 
 ## Sources not binaries
+
 For libraries in the public catalog, vcpkg downloads sources instead of binaries[1]. It compiles those sources using Visual Studio 2017, or Visual Studio 2015 if 2017 is not installed. In C++, it is very important that any libraries you use are complied with the same compiler, and compiler version, as the application code that links to it. By using vcpkg, you eliminate or at least greatly reduce the potential for mismatched binaries and the problems they can cause. In teams that are standardized on a specific version of the Visual C++ compiler, one team member can use vcpkg to download sources and compile a set of binaries and then use the export command to zip up the binaries and headers for other team members. For more information, see Export compiled binaries and headers below. 
 
 If you create a vcpkg clone with private libraries in the ports collection, you can add a port that downloads prebuilt binaries and headers and write a portfile.cmake file that simply copies those files to the desired location.
@@ -28,11 +30,15 @@ If you create a vcpkg clone with private libraries in the ports collection, you 
 [1] *Note: for some proprietary libraries, sources are not available. Vcpkg will download compatible prebuilt binaries in these cases.*
 
 ## Installation
+
 Clone the vcpkg repo from GitHub: https://github.com/Microsoft/vcpkg. You can download to any folder location you prefer.
 
-Run the bootstrapper in the root folder: bootstrap-vcpkg.bat.
+Run the bootstrapper in the root folder: **bootstrap-vcpkg.bat**.
+
+## Basic tasks
 
 ## Search the list of available libraries
+
 To see what packages are available, at the command prompt type: **vcpkg search**
 
 This command enumerates the control files in the vcpkg/ports subfolders. You will see a listing like this:
@@ -48,7 +54,7 @@ atk       2.24.0  GNOME Accessibility Toolkit
 ...
 ```
 
-  You can filter on a pattern, for example **vcpkg search ta**:
+You can filter on a pattern, for example **vcpkg search ta**:
 
 ```cmd
 botan       2.0.1      A cryptography library written in C++11
@@ -57,7 +63,8 @@ taglib      1.11.1-2   TagLib Audio Meta-Data Library
 
 ```
 
-## Install a library on your local machine
+### Install a library on your local machine
+
 After you get the name of a library by using **vcpkg search**, you use **vcpkg install** to download the library and compile it. vcpkg uses the library's portfile in the ports directory. If no triplet is specified, vcpkg will install and compile for x86-windows. If the portfile specifies dependencies, vcpkg downloads and installs those also. After downloading, vcpkg builds the library by using whatever build system the library uses. CMake and MSBuild projects files are preferred, but MAKE is supported along with any other build system. If vcpkg cannot find the specified build system on the local machine, it downloads and installs it.
 
 ```cmd
@@ -71,6 +78,7 @@ Additional packages (*) will be installed to complete this operation.
 ```
 
 ## List the libraries already installed
+
 After you have installed some libraries, you can use **vcpkg list** to see what you have:
 
 ```cmd
@@ -85,14 +93,19 @@ zlib:x86-windows        1.2.11   A compression library
 ```
 
 ## Integrate with Visual Studio
+
 ### Per-user
+
 Run **vcpkg integrate install** to configure Visual Studio to locate all vcpkg header files and binaries on a per-user basis without the need for manual editing of VC++ Directories paths. If you have multiple clones, the clone from which you run this command becomes the new default location.
 
 Now you can #include headers simply by typing the folder/header, and auto-complete assists you. No additional steps are required for linking to libs or adding project references. The following illustration shows how Visual Studio finds the azure-storage-cpp headers. vcpkg places its headers in the \installed subfolder, partitioned by target platform. The following diagram shows the list of include files in the `/was` subfolder for the library:
 
- ![vcpkg Intellisense integration](media/vcpkg-intellisense.png "vcpkg and Intellisense")  
+Now you can #include headers simply by typing the folder/header, and auto-complete will help you. No additional steps are required for linking to libs or adding project references. The following illustration shows how Visual Studio finds the azure-storage-cpp headers. vcpkg places its headers in the \installed subfolder, partitioned by target platform. The following diagram shows the list of include files in the \was subfolder for the library:
+
+![vcpkg Intellisense integration](media/vcpkg-intellisense.png "vcpkg and Intellisense")
 
 ### Per project
+
 If you need to use a specific version of a library that is different from the version in your active vcpkg instance, follow these steps:
 
 1. Make a new clone of vcpkg 
@@ -100,11 +113,12 @@ If you need to use a specific version of a library that is different from the ve
 1. Run **vcpkg install \<library>**.
 1. Use **vcpkg integrate project** to create a NuGet package that references that library on a per-project basis.
 
-
 ## Export compiled binaries and headers
+
 Requiring everyone on a team to download and build libraries can be inefficient. A single team member can do that work, and then use **vcpkg export** to create a zip file of the binaries and headers that can be easily shared with other team members. 
 
 ## Update/upgrade installed libraries
+
 The public catalog is kept up-to-date with the latest versions of the libraries. To determine which of your local libraries are out-of-date, use **vcpkg update**. When you're ready to update your ports collection to the latest version of the public catalog, run the **vcpkg upgrade** command to automatically download and rebuild any or all of your installed libraries that are out of date.
 
 By default, the **upgrade** command only lists the libraries that are out of date; it doesn’t upgrade them. To perform the upgrade, use the **--no-dry-run** option. 
@@ -138,21 +152,27 @@ If you are sure you want to rebuild the above packages, run this command with th
 ```
 
 ## Contribute new libraries
+
 You can include any libraries you like in your private ports collection. To suggest a new library for the public catalog, open an issue on the [GitHub vcpkg issue page](https://github.com/Microsoft/vcpkg/issues).
 
 ## Remove a library
+
 Type **vcpkg remove** to remove an installed library. If any other libraries depend on it, you are asked to rerun the command with **--recurse**, which causes all downstream libraries to be removed.
 
 ## Customize vcpkg
+
 You can modify your clone of vcpkg in any way you like. You can create multiple vcpkg clones and modify the portfiles in each one to obtain specific versions of libraries or specify command-line parameters. For example, in an enterprise, one group of developers might be working on software that has one set of dependencies, and another group might have a different set. You can set up two clones of vcpkg, and modify each one to download the versions of the libraries and the compilation switches, etc, according to your needs. 
 
 ## Uninstall vcpkg
+
 Just delete the directory. 
 
 ## Send feedback about vcpkg
+
 Use the **--survey** command to send feedback to Microsoft about vcpkg, including bug reports and suggestions for features.
 
 ## The vcpkg folder hierarchy
+
 All vcpkg functionality and data is self-contained in a single directory hierarchy, called an "instance". There are no registry settings or environment variables. You can have any number of instances of vcpkg on a machine and they do not interfere with each other. 
 
 The contents of a vcpkg instance are: 
@@ -190,7 +210,6 @@ The contents of a vcpkg instance are:
 |**vcpkg cache**|List cached compiled packages|
 |**vcpkg version**|Display version information|
 |**vcpkg contact**|Display contact information to send feedback|
-
 
 ### Options:
 |Option|Description|

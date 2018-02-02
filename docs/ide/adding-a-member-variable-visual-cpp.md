@@ -1,5 +1,5 @@
 ---
-title: "Adding a Member Variable  (Visual C++) | Microsoft Docs"
+title: "Adding a Member Variable (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
