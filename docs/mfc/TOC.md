@@ -531,7 +531,6 @@
 ##### [Graphic Objects](graphic-objects.md)
 ###### [One-Stage and Two-Stage Construction of Objects](one-stage-and-two-stage-construction-of-objects.md)
 ###### [Selecting a Graphic Object into a Device Context](selecting-a-graphic-object-into-a-device-context.md)
-###### [CImage Limitations with Earlier Operating Systems](cimage-limitations-with-earlier-operating-systems.md)
 #### [Frame Windows](frame-windows.md)
 ##### [Frame-Window Classes](frame-window-classes.md)
 ###### [Frame-Window Classes Created by the Application Wizard](frame-window-classes-created-by-the-application-wizard.md)

@@ -53,7 +53,7 @@ unsigned long _inpd(
 ## Remarks  
  The `_inp`, `_inpw`, and `_inpd` functions read a byte, a word, and a double word, respectively, from the specified input port. The input value can be any unsigned short integer in the range 0 - 65,535.  
   
- Because these functions read directly from an I/O port, they might not be used in user code in Windows NT, Windows 2000, Windows XP, and Windows Server 2003.  
+ Because these functions read directly from an I/O port, they cannot be used in user code.  
   
 ## Requirements  
   

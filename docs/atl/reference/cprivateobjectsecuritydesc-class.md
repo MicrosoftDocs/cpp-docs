@@ -165,7 +165,7 @@ bool Create(
 ### Remarks  
  This method calls [CreatePrivateObjectSercurity](http://msdn.microsoft.com/library/windows/desktop/aa376405) or [CreatePrivateObjectSecurityEx](http://msdn.microsoft.com/library/windows/desktop/aa446581).  
   
- The second method, which permits specifying the object type GUID of the new object or controlling how ACEs are inherited, is only available on systems running Windows 2000 and later.  
+ The second method permits specifying the object type GUID of the new object or controlling how ACEs are inherited.  
   
 > [!NOTE]
 >  A self-relative security descriptor is a security descriptor that stores all of its security information in a contiguous block of memory.  
@@ -244,7 +244,7 @@ bool Set(
  Returns true on success, false on failure.  
   
 ### Remarks  
- The second method, which permits specifying the object type GUID of the object or controlling how ACEs are inherited, is only available on systems running Windows 2000 and later.  
+ The second method permits specifying the object type GUID of the object or controlling how ACEs are inherited.  
   
 ## See Also  
  [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561)   

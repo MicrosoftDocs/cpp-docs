@@ -21,9 +21,8 @@ You can benefit from using MFC and C run-time portability features even if you d
   
 -   Coding portably makes your code base flexible. You can later move it easily to Unicode or MBCS.  
   
--   Using Unicode makes your applications for Windows 2000 more efficient. Because Windows 2000 uses Unicode, non-Unicode strings passed to and from the operating system must be translated, which incurs overhead.  
-  
--   Using MBCS enables you to support international markets on Win32 platforms other than Windows 2000, such as Windows 95 or Windows 98.  
+-   Using Unicode makes your applications for Windows more efficient. Because Windows uses Unicode, non-Unicode strings passed to and from the operating system must be translated, which incurs overhead.  
+
   
 ## See Also  
  [Unicode and MBCS](../text/unicode-and-mbcs.md)   

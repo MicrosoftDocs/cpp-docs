@@ -1062,7 +1062,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Encapsulates the services provided by the Windows common dialog box for printing.  
   
  [CPrintDialogEx Class](../../mfc/reference/cprintdialogex-class.md)  
- Encapsulates the services provided by the Windows 2000 Print property sheet.  
+ Encapsulates the services provided by the Windows Print property sheet.  
   
  [CProgressCtrl Class](../../mfc/reference/cprogressctrl-class.md)  
  Provides the functionality of the Windows common progress bar control.  

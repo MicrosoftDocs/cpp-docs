@@ -49,7 +49,7 @@ int _putws(
   
  `_putws` is the wide-character version of `puts`; the two functions behave identically if the stream is opened in ANSI mode. `puts` doesn't currently support output into a UNICODE stream.  
   
- Under Windows 2000 and later, **_putwch** writes Unicode characters using the current CONSOLE LOCALE setting.  
+  **_putwch** writes Unicode characters using the current CONSOLE LOCALE setting.  
   
 ### Generic-Text Routine Mappings  
   
