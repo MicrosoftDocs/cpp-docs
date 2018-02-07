@@ -64,7 +64,7 @@ class CPrintDialog : public CCommonDialog
  Common print dialog boxes provide an easy way to implement Print and Print Setup dialog boxes in a manner consistent with Windows standards.  
   
 > [!NOTE]
->  The `CPrintDialogEx` class encapsulates the services provided by the Windows 2000 Print property sheet. For more information see the [CPrintDialogEx](../../mfc/reference/cprintdialogex-class.md) overview.  
+>  The `CPrintDialogEx` class encapsulates the services provided by the Windows Print property sheet. For more information see the [CPrintDialogEx](../../mfc/reference/cprintdialogex-class.md) overview.  
   
  `CPrintDialog`'s functionality is superceded by that of [CPageSetupDialog](../../mfc/reference/cpagesetupdialog-class.md), which is designed to provide you with a common dialog box for both print setup and page setup.  
   
