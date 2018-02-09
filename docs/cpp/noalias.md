@@ -25,11 +25,13 @@ ms.workload: ["cplusplus"]
 
 If a function is annotated as `noalias`, the optimizer can assume that, in addition to the parameters themselves, only first-level indirections of pointer parameters are referenced or modified inside the function. The visible global state is the set of all data that is not defined or referenced outside of the compilation scope, and their address is not taken. The compilation scope is all source files ([/LTCG (Link-time Code Generation)](../build/reference/ltcg-link-time-code-generation.md) builds) or a single source file (non-**/LTCG** build).
 
+The `noalias` annotation impacts only the body of the annotated function. Marking a function as `__declspec(noalias)` does not modify aliasing of pointers returned by the function.
+
+ For another annotation that can impact aliasing, see also [__declspec(restrict)](../cpp/restrict.md).
+
 ## Example
 
-The following sample demonstrates using `__declspec(restrict)` and `__declspec(noalias)`. Normally, memory returned from `malloc` is `restrict` because the CRT headers are decorated appropriately.
-
-However, in this example, the pointers `mempool` and `memptr` are global so the compiler has no assurance that the memory is not subject to aliasing. Decorating the functions that return pointers with `__declspec(restrict)` tells the compiler that the memory pointed to by the return value is not aliased.
+The following sample demonstrates using `__declspec(noalias)`. 
 
 Decorating the function in the example that accesses memory with `__declspec(noalias)` tells the compiler that this function does not interfere with the global state except through the pointers in its parameter list.
 
@@ -44,7 +46,7 @@ Decorating the function in the example that accesses memory with `__declspec(noa
 
 float * mempool, * memptr;
 
-__declspec(restrict) float * ma(int size)
+float * ma(int size)
 {
     float * retval;
     retval = memptr;
@@ -52,7 +54,7 @@ __declspec(restrict) float * ma(int size)
     return retval;
 }
 
-__declspec(restrict) float * init(int m, int n)
+float * init(int m, int n)
 {
     float * a;
     int i, j;
@@ -94,7 +96,7 @@ int main()
     a = init(M, N);
     b = init(N, P);
     c = init(M, P);
-
+ 
     multiply(a, b, c);
 }
 ```
@@ -103,3 +105,4 @@ int main()
 
 [__declspec](../cpp/declspec.md)  
 [Keywords](../cpp/keywords-cpp.md)
+[__declspec(restrict)](../cpp/restrict.md)
