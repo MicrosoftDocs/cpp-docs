@@ -1,7 +1,7 @@
 ---
 title: "noalias | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "02/09/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-language"]
@@ -25,15 +25,15 @@ ms.workload: ["cplusplus"]
 
 If a function is annotated as `noalias`, the optimizer can assume that, in addition to the parameters themselves, only first-level indirections of pointer parameters are referenced or modified inside the function. The visible global state is the set of all data that is not defined or referenced outside of the compilation scope, and their address is not taken. The compilation scope is all source files ([/LTCG (Link-time Code Generation)](../build/reference/ltcg-link-time-code-generation.md) builds) or a single source file (non-**/LTCG** build).
 
-The `noalias` annotation impacts only the body of the annotated function. Marking a function as `__declspec(noalias)` does not modify aliasing of pointers returned by the function.
+The `noalias` annotation only applies within the body of the annotated function. Marking a function as `__declspec(noalias)` does not affect the aliasing of pointers returned by the function.
 
- For another annotation that can impact aliasing, see also [__declspec(restrict)](../cpp/restrict.md).
+For another annotation that can impact aliasing, see [__declspec(restrict)](../cpp/restrict.md).
 
 ## Example
 
-The following sample demonstrates using `__declspec(noalias)`. 
+The following sample demonstrates the use of `__declspec(noalias)`.
 
-Decorating the function in the example that accesses memory with `__declspec(noalias)` tells the compiler that this function does not interfere with the global state except through the pointers in its parameter list.
+When the function `multiply` that accesses memory is annotated `__declspec(noalias)`, it tells the compiler that this function does not modify the global state except through the pointers in its parameter list.
 
 ```C
 // declspec_noalias.c
@@ -104,5 +104,5 @@ int main()
 ## See Also
 
 [__declspec](../cpp/declspec.md)  
-[Keywords](../cpp/keywords-cpp.md)
-[__declspec(restrict)](../cpp/restrict.md)
+[Keywords](../cpp/keywords-cpp.md)  
+[__declspec(restrict)](../cpp/restrict.md)  
