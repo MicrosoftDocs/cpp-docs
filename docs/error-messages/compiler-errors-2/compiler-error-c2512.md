@@ -1,7 +1,7 @@
 ---
 title: "Compiler Error C2512 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "02/09/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
