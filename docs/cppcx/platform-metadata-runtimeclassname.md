@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Metadata::RuntimeClassName"]
 helpviewer_keywords: ["RuntimeClassName", "Platform::Metadata::RuntimeClassName"]
 ms.assetid: fdef8f85-ab94-4edd-ba50-ee0da9358ff6

@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::UnorderedMap"]
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
 caps.latest.revision: 7

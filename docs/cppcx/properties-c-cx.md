@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5
 caps.latest.revision: 12
 author: "ghogen"
