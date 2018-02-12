@@ -1932,7 +1932,7 @@ The compiler has breaking changes in this release.
 - `64-bit native and cross-compilers.
 - /analyze (Enterprise Code Analysis) compiler option has been added.
 - /bigobj compiler option has been added.
-- /clr:pure, /clr:safe, and /clr:oldSyntax have been added.
+- /clr:pure, /clr:safe, and /clr:oldSyntax have been added. (Later deprecated in Visual Studio 2015.)
 - Deprecated compiler options: many compiler options have been deprecated in this release; see Deprecated Compiler Options for more information.
 - Double thunking in /clr code is reduced; see Double Thunking (C++) for more information.
 - /EH (Exception Handling Model) or /EHs can no longer be used to catch an exception that is raised with something other than a throw; use /EHa.

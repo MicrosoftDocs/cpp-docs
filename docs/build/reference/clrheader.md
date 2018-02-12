@@ -37,13 +37,9 @@ ms.workload: ["cplusplus"]
   
 -   0  -- /clr (image may contain native code).  
   
--   1 -- /clr:safe (image is MSIL only, able to run on any CLR platform, and possibly verifiable).  
-  
--   3 -- /clr:pure (image is MSIL only, but only able to run on x86 platforms).  
-  
  You can also programmatically check if an image was built for the common language runtime.  For more information, see [How to: Determine if an Image is Native or CLR](../../dotnet/how-to-determine-if-an-image-is-native-or-clr.md).  
   
- The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+ The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and will be removed in a future version of the compiler. Code that must be "pure" or "safe" should be ported to C#. 
   
 ## See Also  
  [DUMPBIN Options](../../build/reference/dumpbin-options.md)

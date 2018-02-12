@@ -105,7 +105,6 @@
 #### [Cast Notation and Introduction of safe_cast<>](cast-notation-and-introduction-of-safe-cast-angles.md)
 ## [Pure and Verifiable Code (C++/CLI)](pure-and-verifiable-code-cpp-cli.md)
 ### [Mixed, Pure, and Verifiable Feature Comparison (C++/CLI)](mixed-pure-and-verifiable-feature-comparison-cpp-cli.md)
-### [How to: Migrate to -clr:pure (C++/CLI)](how-to-migrate-to-clr-pure-cpp-cli.md)
 ### [How to: Create Verifiable C++ Projects (C++/CLI)](how-to-create-verifiable-cpp-projects-cpp-cli.md)
 ### [How to: Migrate to -clr:safe (C++/CLI)](how-to-migrate-to-clr-safe-cpp-cli.md)
 ### [Using Verifiable Assemblies with SQL Server (C++/CLI)](using-verifiable-assemblies-with-sql-server-cpp-cli.md)
