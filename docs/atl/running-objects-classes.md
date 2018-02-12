@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.atl.objects.running"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["object classes, running", "objects [C++], running objects classes"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["NOFITY_HANDLER"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MESSAGE_HANDLER macro", "COMMAND_HANDLER macro", "CommandHandler method", "MessageHandler method", "NotifyHandler method", "message maps, ATL", "NOTIFY_HANDLER macro, message handler functions", "ATL, message handlers"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::ATL_DRAWINFO", "ATL_DRAWINFO", "ATL.ATL_DRAWINFO"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL_DRAWINFO structure"]

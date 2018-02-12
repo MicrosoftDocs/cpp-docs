@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["message maps, ATL", "ATL, message handlers"]
 ms.assetid: 9e100400-65c7-4a85-8857-4e6cb6dd7340

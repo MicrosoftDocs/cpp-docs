@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["COM interfaces", "interfaces, COM"]
 ms.assetid: de6c8b12-6230-4fdc-af66-a28b91d5ee55
