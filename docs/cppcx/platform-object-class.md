@@ -18,7 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Object Class
-Provides common behavior for ref classes and ref structs in Windows Store apps. All ref class and ref struct instances are implicitly convertible to Platform::Object^ and can override its virtual ToString method.  
+Provides common behavior for ref classes and ref structs in Windows Runtime apps. All ref class and ref struct instances are implicitly convertible to Platform::Object^ and can override its virtual ToString method.  
   
 ## Syntax  
   

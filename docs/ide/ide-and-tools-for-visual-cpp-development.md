@@ -106,7 +106,7 @@ You can debug your program by pressing **F5** when your project configuration is
 
 ## Deploy completed applications
 
-You deploy a UWP app to customers through the Windows Store through the **Project** > **Store** menu option. Deployment of the CRT is handled automatically behind the scenes. For more information, see [Selling Apps](http://go.microsoft.com/fwlink/p/?LinkId=262280).
+You deploy a UWP app to customers through the Microsoft Store through the **Project** > **Store** menu option. Deployment of the CRT is handled automatically behind the scenes. For more information, see [Selling Apps](http://go.microsoft.com/fwlink/p/?LinkId=262280).
 
 When you deploy a native C++ desktop application to another computer, you must install the application itself and any library files that the application depends on. There are three ways to deploy the Universal C++ runtime (UCRT) with an application: central deployment, local deployment, or static linking. For more information, see [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md).
 

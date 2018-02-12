@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 Appends, at most, the first `n` bytes of one multibyte-character string to another. More secure versions of these functions are available; see [_mbsnbcat_s, _mbsnbcat_s_l](../../c-runtime-library/reference/mbsnbcat-s-mbsnbcat-s-l.md).  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   

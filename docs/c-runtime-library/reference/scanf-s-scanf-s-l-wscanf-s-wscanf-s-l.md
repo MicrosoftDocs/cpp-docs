@@ -118,7 +118,7 @@ wscanf_s(L"%9S", ws, (unsigned)_countof(ws));
 |`scanf_s`, `_scanf_s_l`|\<stdio.h>|  
 |`wscanf_s`, `_wscanf_s_l`|\<stdio.h> or \<wchar.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, `stdin`, `stdout`, and `stderr`, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
   
 ## Example  
   

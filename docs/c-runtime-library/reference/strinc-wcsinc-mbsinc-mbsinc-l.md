@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 Advances a string pointer by one character.  
   
 > [!IMPORTANT]
->  `_mbsinc` and `_mbsinc_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsinc` and `_mbsinc_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   

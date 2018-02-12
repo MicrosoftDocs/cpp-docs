@@ -63,7 +63,7 @@ int cstderr = _dup( _fileno( stderr ));
 |`_dup`|\<io.h>|  
 |`_dup2`|\<io.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+ The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDEUWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
 ## Example  
   

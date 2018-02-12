@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 Traverses the heap and returns information about the next entry.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime except in Debug builds. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime except in Debug builds. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   

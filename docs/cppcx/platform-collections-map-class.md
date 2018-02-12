@@ -258,7 +258,7 @@ A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/
 
 ## .NET Framework Equivalent
 
-Windows Store apps that use C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.
+Windows Runtime apps that use C# or Visual Basic project IMap\<K,V> as IDictionary\<K,V>.
 
 ## <a name="remove"></a>  Map::Remove Method
 

@@ -15,9 +15,9 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Quick Reference (C++/CX)
-The Windows Runtime supports Universal Windows Platform apps that execute only in a trustworthy operating system environment, use authorized functions, data types, and devices, and are distributed through the [!INCLUDE[win8_appstore_long](../cppcx/includes/win8-appstore-long-md.md)]. The C++/CX simplify the writing of apps for the Windows Runtime. This article is a quick reference; for more complete documentation, see [Type System](../cppcx/type-system-c-cx.md) and [Component Extensions for Runtime Platforms](http://go.microsoft.com/fwlink/p/?linkid=228720).  
+The Windows Runtime supports Universal Windows Platform (UWP) apps that execute only in a trustworthy operating system environment, use authorized functions, data types, and devices, and are distributed through the Microsoft Store. The C++/CX simplify the writing of apps for the Windows Runtime. This article is a quick reference; for more complete documentation, see [Type System](../cppcx/type-system-c-cx.md) and [Component Extensions for Runtime Platforms](http://go.microsoft.com/fwlink/p/?linkid=228720).  
   
- When you build on the command line, use the **/ZW** compiler option to build a Universal Windows Platform app or Windows Runtime component. To access Windows Runtime declarations, which are defined in the Windows Runtime metadata (.winmd) files, specify the `#using` directive or the **/FU** compiler option. When you create a project for a Universal Windows Platform app, Visual Studio by default sets these options and adds references to all Windows Runtime libraries.  
+ When you build on the command line, use the **/ZW** compiler option to build a UWP app or Windows Runtime component. To access Windows Runtime declarations, which are defined in the Windows Runtime metadata (.winmd) files, specify the `#using` directive or the **/FU** compiler option. When you create a project for a UWP app, Visual Studio by default sets these options and adds references to all Windows Runtime libraries.  
   
 ## Quick reference  
   

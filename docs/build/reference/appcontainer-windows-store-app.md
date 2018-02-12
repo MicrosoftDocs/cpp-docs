@@ -1,5 +1,5 @@
 ---
-title: "-APPCONTAINER (Windows Store App) | Microsoft Docs"
+title: "/APPCONTAINER (UWP/Microsoft Store App) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.reviewer: ""
@@ -15,7 +15,7 @@ ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# /APPCONTAINER (Windows Store App)
+# /APPCONTAINER (Microsoft Store App)
 Specifies whether the linker creates an executable image that must be run in an app container.  
   
 ## Syntax  
@@ -27,7 +27,7 @@ Specifies whether the linker creates an executable image that must be run in an 
 ## Remarks  
  By default, /APPCONTAINER is off.  
   
- This option modifies an executable to indicate whether the app must be run in the appcontainer process-isolation environment. Specify /APPCONTAINER for an app that must run in the appcontainer environment—for example, a [!INCLUDE[win8_appstore_long](../../build/reference/includes/win8_appstore_long_md.md)] app. (The option is set automatically in Visual Studio when you create a [!INCLUDE[win8_appstore_long](../../build/reference/includes/win8_appstore_long_md.md)] app from a template.) For a desktop app, specify /APPCONTAINER:NO or just omit the option.  
+ This option modifies an executable to indicate whether the app must be run in the appcontainer process-isolation environment. Specify /APPCONTAINER for an app that must run in the appcontainer environment—for example, a Universal Windows Platform (UWP) or Windows Phone 8.x app. (The option is set automatically in Visual Studio when you create a Universal Windows app from a template.) For a desktop app, specify /APPCONTAINER:NO or just omit the option.  
   
  The /APPCONTAINER option was introduced in [!INCLUDE[win8](../../build/reference/includes/win8_md.md)].  
   

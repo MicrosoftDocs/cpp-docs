@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 Gets the length of a string, by using the current locale or a specified locale. More secure versions of these functions are available; see [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](../../c-runtime-library/reference/strnlen-strnlen-s.md)  
   
 > [!IMPORTANT]
->  `_mbslen`, `_mbslen_l`, `_mbstrlen`, and `_mbstrlen_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbslen`, `_mbslen_l`, `_mbstrlen`, and `_mbstrlen_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   

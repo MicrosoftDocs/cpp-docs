@@ -16,7 +16,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Windows Runtime C++ Template Library (WRL)
-The Windows Runtime C++ Template Library (WRL)is a template library that provides a low-level way to author and use Windows Runtime components.  
+The Windows Runtime C++ Template Library (WRL) is a template library that provides a low-level way to author and use Windows Runtime components.  
   
 ## Benefits  
  The Windows Runtime C++ Template Library enables you to more easily implement and consume Component Object Model (COM) components. It provides housekeeping techniques like reference-counting to manage the lifetime of objects and testing `HRESULT` values to determine whether an operation succeeded or failed. To successfully use the Windows Runtime C++ Template Library, you must carefully follow these rules and techniques.  
@@ -38,7 +38,7 @@ The Windows Runtime C++ Template Library (WRL)is a template library that provide
  Here are some resources that can help you get working with the Windows Runtime C++ Template Library right away.  
   
  [The Windows Runtime Library (WRL)](http://channel9.msdn.com/Events/Windows-Camp/Developing-Windows-8-Metro-style-apps-in-Cpp/The-Windows-Runtime-Library-WRL-)  
- In this Channel 9 video, learn more about how the Windows Runtime C++ Template Library helps you write Universal Windows Platform apps and how to author and consume Windows Runtime components.  
+ In this Channel 9 video, learn more about how the Windows Runtime C++ Template Library helps you write Universal Windows Platform (UWP) apps and how to author and consume Windows Runtime components.  
   
  [How to: Activate and Use a Windows Runtime Component](../windows/how-to-activate-and-use-a-windows-runtime-component-using-wrl.md)  
  Shows how to use the Windows Runtime C++ Template Library to initialize the Windows Runtime and activate and use a Windows Runtime component.  
@@ -50,10 +50,10 @@ The Windows Runtime C++ Template Library (WRL)is a template library that provide
  Shows how to use the Windows Runtime C++ Template Library to subscribe to and handle the events of a Windows Runtime object.  
   
  [Walkthrough: Creating a Basic Windows Runtime Component](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md)  
- Shows how to use the Windows Runtime C++ Template Library to create a basic Windows Runtime component that adds two numbers. Also demonstrates how to raise events and use the component from a Universal Windows Platform app that uses JavaScript.  
+ Shows how to use the Windows Runtime C++ Template Library to create a basic Windows Runtime component that adds two numbers. Also demonstrates how to raise events and use the component from a UWP app that uses JavaScript.  
   
- [Walkthrough: Creating a Windows Store app using WRL and Media Foundation](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
- Learn how to create a Universal Windows Platform app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
+ [Walkthrough: Creating a UWP app using WRL and Media Foundation](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
+ Learn how to create a UWP app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
   
  [How to: Create a Classic COM Component](../windows/how-to-create-a-classic-com-component-using-wrl.md)  
  Shows how to use the Windows Runtime C++ Template Library to create a basic COM component and a basic way to register and consume the COM component from a desktop app.  
@@ -65,10 +65,10 @@ The Windows Runtime C++ Template Library (WRL)is a template library that provide
  Shows how to consume custom Windows Runtime components from WRL by creating an IDL file from the .winmd metadata.  
   
  [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)  
- Shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) and [IXMLHTTPRequest2Callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) interfaces together with tasks to send HTTP GET and POST requests to a web service in a Universal Windows Platform app.  
+ Shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) and [IXMLHTTPRequest2Callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) interfaces together with tasks to send HTTP GET and POST requests to a web service in a UWP app.  
   
  [Bing Maps Trip Optimizer sample](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)  
- Uses the `HttpRequest` class that's defined in [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) in the context of a complete Universal Windows Platform app.  
+ Uses the `HttpRequest` class that's defined in [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) in the context of a complete UWP app.  
   
  [Creating a Windows Runtime DLL component with C++ sample](http://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)  
  Shows how to use the Windows Runtime C++ Template Library to create an in-process DLL component and consume it from C++/CX, JavaScript, and C#.  
@@ -82,7 +82,7 @@ The Windows Runtime C++ Template Library (WRL)is a template library that provide
 ## Windows Runtime C++ Template Library Compared to ATL  
  Windows Runtime C++ Template Library resembles the Active Template Library (ATL) because you can use it to create small, fast COM objects. Windows Runtime C++ Template Library and ATL also share concepts such as definition of objects in modules, explicit registration of interfaces, and open creation of objects by using factories. You might be comfortable with Windows Runtime C++ Template Library if you're familiar with ATL.  
   
- Windows Runtime C++ Template Library supports the COM functionality that is required for Universal Windows Platform apps. Therefore, it differs from the ATL because it omits direct support for COM features such as:  
+ Windows Runtime C++ Template Library supports the COM functionality that is required for UWP apps. Therefore, it differs from the ATL because it omits direct support for COM features such as:  
   
 -   aggregation  
   

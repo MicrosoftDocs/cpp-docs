@@ -80,4 +80,4 @@ In the Visual Studio integrated development environment (IDE), there are several
   Detailed information about how to upgrade C++ applications that were created in earlier versions of Visual Studio, and also how to migrate applications that were created by using tools other than Visual Studio.  
   
 ## See Also  
- [Roadmap for Windows Store apps using C++](http://msdn.microsoft.com/en-us/0b71e4a4-5d8a-4a20-b2ec-e40062675ec1)
+ [Universal Windows Apps (C++)](../windows/universal-windows-apps-cpp.md)

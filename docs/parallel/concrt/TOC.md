@@ -2,7 +2,7 @@
 # [Overview of the Concurrency Runtime](overview-of-the-concurrency-runtime.md)
 # [Exception Handling in the Concurrency Runtime](exception-handling-in-the-concurrency-runtime.md)
 # [Parallel Diagnostic Tools (Concurrency Runtime)](parallel-diagnostic-tools-concurrency-runtime.md)
-# [Creating Asynchronous Operations in C++ for Windows Store Apps](creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)
+# [Creating Asynchronous Operations in C++ for UWP Apps](creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)
 # [Comparing the Concurrency Runtime to Other Concurrency Models](comparing-the-concurrency-runtime-to-other-concurrency-models.md)
 ## [Migrating from OpenMP to the Concurrency Runtime](migrating-from-openmp-to-the-concurrency-runtime.md)
 ### [How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime](how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)

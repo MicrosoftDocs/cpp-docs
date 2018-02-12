@@ -26,7 +26,7 @@ For more information about authoring and consuming [!INCLUDE[cppwrl_short](inclu
 
 The following code snippet demonstrates using WRL and [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] to consume [!INCLUDE[wrt](includes/wrt-md.md)] classes and examine a metadata file.
 
-The example is taken from a code snippet in the [Building Windows Store apps forum](http://social.msdn.microsoft.com/Forums/winappswithnativecode/thread/211ef583-db11-4e55-926b-6d9ab53dbdb4). The author of this code snippet offers the following disclaimers and stipulations:
+The example is taken from a code snippet in the Building Microsoft Store apps forum. The author of this code snippet offers the following disclaimers and stipulations:
 
 1. C++ doesn't provide specific APIs to reflect on [!INCLUDE[wrt](includes/wrt-md.md)] types, but Windows metadata files (.winmd) for a type are fully compliant with CLR metadata files. Windows provides the new metadata discovery APIs (RoGetMetaDataFile) to get to the .winmd file for a given type. However, these APIs are of limited use to C++ developers because you can't instantiate a class.
 

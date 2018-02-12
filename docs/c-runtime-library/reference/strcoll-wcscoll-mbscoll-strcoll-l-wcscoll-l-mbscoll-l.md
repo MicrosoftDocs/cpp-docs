@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 Compares strings by using the current locale or a specified LC_COLLATE conversion-state category.  
   
 > [!IMPORTANT]
->  `_mbscoll` and `_mbscoll_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbscoll` and `_mbscoll_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   

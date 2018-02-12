@@ -23,7 +23,7 @@ ms.workload: ["cplusplus"]
 Aborts the current process and returns an error code.
 
 > [!NOTE]
-> Do not use this method to shut down a Microsoft Store app or [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
+> Do not use this method to shut down a Microsoft Store app or Universal Windows Platform (UWP) app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
 
 ## Syntax
 

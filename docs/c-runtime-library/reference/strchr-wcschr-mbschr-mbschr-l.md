@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 Finds a character in a string, by using the current locale or a specified LC_CTYPE conversion-state category.  
   
 > [!IMPORTANT]
->  `_mbschr` and `_mbschr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbschr` and `_mbschr_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   

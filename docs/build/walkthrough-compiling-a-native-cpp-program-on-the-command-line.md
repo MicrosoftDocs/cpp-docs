@@ -17,7 +17,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Compiling a Native C++ Program on the Command Line
-Visual C++ includes a command-line C++ compiler that you can use to create everything from basic console apps to Universal Windows apps, Windows Store apps, and .NET components.  
+Visual C++ includes a command-line C++ compiler that you can use to create everything from basic console apps to Universal Windows Platform apps, Desktop apps, device drivers, and .NET components.  
   
  In this walkthrough, you create a basic, "Hello, World"-style C++ program by using a text editor, and then compile it on the command line. If you'd like to try the Visual Studio IDE instead of using the command line, see [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) or [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).  
   

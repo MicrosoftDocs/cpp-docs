@@ -35,7 +35,7 @@ Because Visual Studio supports multiple platform toolsets, you can target operat
   
  These libraries are supported by the platform toolsets installed by Visual Studio, depending on the target:  
   
-|Library|Default platform toolset targeting Windows desktop apps|Default platform toolset targeting [!INCLUDE[win8_appname_long](../build/includes/win8_appname_long_md.md)] apps|Windows XP platform toolset targeting [!INCLUDE[winxp](../build/includes/winxp_md.md)], [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]|  
+|Library|Default platform toolset targeting Windows desktop apps|Default platform toolset targeting UWP apps|Windows XP platform toolset targeting [!INCLUDE[winxp](../build/includes/winxp_md.md)], [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]|  
 |-------------|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|  
 |CRT|X|X|X|  
 |C++ Standard Library|X|X|X|  

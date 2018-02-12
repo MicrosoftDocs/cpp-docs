@@ -68,7 +68,7 @@ In this topic, you can find information on how to port existing C++ code to the 
     #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)  
     ```  
   
-     These statements respectively apply to Windows Store apps, Windows Phone Store apps, both, or neither (classic Win32 desktop only). These macros are only available in Windows SDK 8.1 and later, so if your code needs to compile with earlier versions of the Windows SDK or for other platforms besides Windows, then you should also consider the case that none of them are defined.  
+     These statements respectively apply to UWP apps, Windows Phone Store apps, both, or neither (classic Win32 desktop only). These macros are only available in Windows SDK 8.1 and later, so if your code needs to compile with earlier versions of the Windows SDK or for other platforms besides Windows, then you should also consider the case that none of them are defined.  
   
 11. Run and debug the app on an emulator or physical device, for each type of device that your app supports. To run an emulator, you need to run Visual Studio on a physical computer, not a virtual machine.  
   
@@ -86,7 +86,7 @@ In this topic, you can find information on how to port existing C++ code to the 
 4.  Build, and resolve any errors due to breaking changes between different versions of the Windows SDK.  
   
 ## Troubleshooting  
- You might encounter various errors during the process of porting code to the Universal Windows Platform. Here are some of the possible problems you might encounter.  
+ You might encounter various errors during the process of porting code to the UWP. Here are some of the possible problems you might encounter.  
   
  **Project Configuration Issues**  
   
@@ -106,7 +106,7 @@ could not find assembly 'platform.winmd': please specify the assembly search pat
 <ApplicationTypeRevision>10.0</ApplicationTypeRevision>  
 ```  
   
- If you created a new Universal Windows Platform project using Visual Studio, you should not see this error.  
+ If you created a new UWP project using Visual Studio, you should not see this error.  
   
 ## See Also  
  [Visual C++ Porting Guide](../porting/porting-to-the-universal-windows-platform-cpp.md)   

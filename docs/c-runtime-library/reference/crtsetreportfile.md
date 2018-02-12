@@ -87,7 +87,7 @@ _RPT0(_CRT_ERROR,"1st message\n");
 |-------------|---------------------|---------------------|  
 |`_CrtSetReportFile`|\<crtdbg.h>|\<errno.h>|  
   
- The console is not supported in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
+ The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console—`stdin`, `stdout`, and `stderr`—must be redirected before C run-time functions can use them in UWP apps. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).  
   
  **Libraries:** Debug versions of [CRT Library Features](../../c-runtime-library/crt-library-features.md) only.  
   

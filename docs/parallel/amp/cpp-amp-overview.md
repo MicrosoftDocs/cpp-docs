@@ -455,10 +455,10 @@ void MathExample() {
   
 - [Short Vector Library](http://msdn.microsoft.com/en-us/4c4f5bed-c396-493b-a238-c347563f645f): Defines a set of short vector types of length 2, 3, and 4 that are based on `int`, `uint`, `float`, `double`, [norm](../../parallel/amp/reference/norm-class.md), or [unorm](../../parallel/amp/reference/unorm-class.md).  
   
-## [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] Apps  
- Like other C++ libraries, you can use C++ AMP in your [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] apps. These articles describe how to include C++ AMP code in apps that is created by using C++, C#, Visual Basic, or JavaScript:  
+## Universal Windows Platform (UWP) Apps  
+ Like other C++ libraries, you can use C++ AMP in your UWP apps. These articles describe how to include C++ AMP code in apps that is created by using C++, C#, Visual Basic, or JavaScript:  
   
-- [Using C++ AMP in Windows Store Apps](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
+- [Using C++ AMP in UWP Apps](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
   
 - [Walkthrough: Creating a basic Windows Runtime component in C++ and calling it from JavaScript](http://go.microsoft.com/fwlink/p/?linkid=249077)  
   

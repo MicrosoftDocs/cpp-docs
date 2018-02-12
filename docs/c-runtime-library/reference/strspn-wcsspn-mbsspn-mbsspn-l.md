@@ -24,7 +24,7 @@ ms.workload: ["cplusplus"]
 Returns the index of the first character, in a string, that does not belong to a set of characters.  
   
 > [!IMPORTANT]
->  `_mbsspn` and `_mbsspn_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsspn` and `_mbsspn_l` cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
