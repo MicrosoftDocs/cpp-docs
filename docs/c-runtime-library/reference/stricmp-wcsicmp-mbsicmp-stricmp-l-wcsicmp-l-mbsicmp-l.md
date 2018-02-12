@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 apiname: ["_stricmp_l", "_mbsicmp", "_wcsicmp", "_mbsicmp_l", "_stricmp", "_wcsicmp_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
