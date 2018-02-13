@@ -40,14 +40,14 @@ END_CONNECTION_POINT_MAP
 > [!NOTE]
 >  The sample code might differ from what is listed here; you should regard the sample code as the more up-to-date version.  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////////  
 // class RUpdateRowset (in rowset.h)  
   
 class RUpdateRowset :   
 public CRowsetImpl< RUpdateRowset, CAgentMan, CUpdateCommand,   
-         CAtlArray< CAgentMan, CAtlArray<CAgentMan> >, CSimpleRow,   
-         IRowsetScrollImpl< RUpdateRowset, IRowsetScroll > >,  
+         CAtlArray< CAgentMan, CAtlArray<CAgentMan>>, CSimpleRow,   
+         IRowsetScrollImpl< RUpdateRowset, IRowsetScroll >>,  
       public IRowsetUpdateImpl< RUpdateRowset, CAgentMan >,  
       public IConnectionPointContainerImpl<RUpdateRowset>,  
       public IRowsetNotifyCP<RUpdateRowset>  

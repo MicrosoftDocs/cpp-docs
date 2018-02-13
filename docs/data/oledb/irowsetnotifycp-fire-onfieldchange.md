@@ -22,17 +22,14 @@ Broadcasts an [OnFieldChange](https://msdn.microsoft.com/en-us/library/ms715961.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Fire_OnFieldChange(  
-   IRowset* pRowset,  
+```cpp
+HRESULT Fire_OnFieldChange(IRowset* pRowset,  
    HROW hRow,  
    DBORDINAL cColumns,  
    DBORDINAL* rgColumns,  
    DBREASON eReason,  
    DBEVENTPHASE ePhase,  
-   BOOL fCantDeny   
-);  
+   BOOL fCantDeny);  
 ```  
   
 #### Parameters  

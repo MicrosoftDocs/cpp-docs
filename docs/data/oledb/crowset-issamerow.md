@@ -22,11 +22,8 @@ Compares the specified row with the current row.
   
 ## Syntax  
   
-```  
-  
-      HRESULT IsSameRow(   
-   HROW hRow    
-) const throw( );  
+```cpp
+HRESULT IsSameRow(HROW hRow) const throw();  
 ```  
   
 #### Parameters  

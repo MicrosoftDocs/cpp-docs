@@ -27,10 +27,13 @@ OLE DB provides interfaces for receiving notifications when events occur. These 
   
 ```  
 CDBPropSet propset(DBPROPSET_ROWSET);  
+
 propset.AddProperty(DBPROP_IConnectionPointContainer, true);  
   
+
 product.Open(session, _T("Products"), &propset);  
   
+
 AtlAdvise(product.m_spRowset, GetUnknown(), IID_IRowsetNotify, &m_dwCookie);  
 ```  
   

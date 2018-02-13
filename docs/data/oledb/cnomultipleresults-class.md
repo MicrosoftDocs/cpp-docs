@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CNoMultipleResults Class
 Used as a template argument (*TMultiple*) to [CCommand](../../data/oledb/ccommand-class.md) to create an optimized command that handles a single result set.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CNoMultipleResults  
 ```  
   

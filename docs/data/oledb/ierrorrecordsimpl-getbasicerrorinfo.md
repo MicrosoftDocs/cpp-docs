@@ -22,12 +22,9 @@ Returns basic information about the error, such as the return code and provider-
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetBasicErrorInfo )(  
-   ULONG ulRecordNum,  
-   ERRORINFO *pErrorInfo   
-);  
+```cpp
+      STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,  
+   ERRORINFO *pErrorInfo);  
 ```  
   
 #### Parameters  

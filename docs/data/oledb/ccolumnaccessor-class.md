@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CColumnAccessor Class
 Generates injected consumer code.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CColumnAccessor : public CAccessorBase  
 ```  
   

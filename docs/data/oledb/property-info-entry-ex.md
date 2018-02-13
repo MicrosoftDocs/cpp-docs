@@ -22,10 +22,8 @@ Represents a specific property in a property set.
   
 ## Syntax  
   
-```  
-  
-PROPERTY_INFO_ENTRY_EX(  
-dwPropID  
+```cpp
+PROPERTY_INFO_ENTRY_EX(dwPropID  
 , vt, dwFlags, value, options )  
 ```  
   

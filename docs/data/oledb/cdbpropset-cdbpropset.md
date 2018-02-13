@@ -22,15 +22,12 @@ The constructor. Initializes the **rgProperties**, **cProperties**, and **guidPr
   
 ## Syntax  
   
-```  
-  
-      CDBPropSet(  
-   const GUID& guid   
-);  
-CDBPropSet(   
-   const CDBPropSet& propset    
-);  
-CDBPropSet( );  
+```cpp
+      CDBPropSet(const GUID& guid);  
+
+CDBPropSet(const CDBPropSet& propset);  
+
+CDBPropSet();  
 ```  
   
 #### Parameters  

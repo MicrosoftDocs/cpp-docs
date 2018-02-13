@@ -22,9 +22,8 @@ Releases rows and the current [IRowset](https://msdn.microsoft.com/en-us/library
   
 ## Syntax  
   
-```  
-  
-void Close( ) throw( );  
+```cpp
+void Close() throw();  
   
 ```  
   

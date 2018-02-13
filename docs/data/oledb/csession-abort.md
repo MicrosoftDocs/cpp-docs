@@ -22,13 +22,10 @@ Terminates the transaction.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Abort(   
-   BOID* pboidReason = NULL,   
+```cpp
+HRESULT Abort(BOID* pboidReason = NULL,   
    BOOL bRetaining = FALSE,   
-   BOOL bAsync = FALSE    
-) const throw( );  
+   BOOL bAsync = FALSE) const throw();  
 ```  
   
 #### Parameters  

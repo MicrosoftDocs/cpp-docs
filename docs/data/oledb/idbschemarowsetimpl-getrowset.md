@@ -22,18 +22,15 @@ Returns a schema rowset.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD (GetRowset)(  
-   IUnknown *pUnkOuter,  
+```cpp
+      STDMETHOD (GetRowset)(IUnknown *pUnkOuter,  
    REFGUID rguidSchema,  
    ULONG cRestrictions,  
    const VARIANT rgRestrictions[],  
    REFIID riid,  
    ULONG cPropertySets,  
    DBPROPSET rgPropertySets[],  
-   IUnknown **ppRowset   
-);  
+   IUnknown **ppRowset);  
 ```  
   
 #### Parameters  

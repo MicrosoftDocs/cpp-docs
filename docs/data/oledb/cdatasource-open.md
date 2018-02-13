@@ -22,60 +22,44 @@ Opens a connection to a data source using a **CLSID**, **ProgID**, or `CEnumerat
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(  
-   const CLSID& clsid,  
+```cpp
+HRESULT Open(const CLSID& clsid,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(  
-   const CLSID& clsid,  
+   ULONG nPropertySets = 1) throw();  
+
+
+HRESULT Open(const CLSID& clsid,  
    LPCTSTR pName,  
    LPCTSTR pUserName = NULL,  
    LPCTSTR pPassword = NULL,  
-   long nInitMode = 0   
-) throw( );  
-HRESULT Open(  
-   LPCTSTR szProgID,  
+   long nInitMode = 0) throw();HRESULT Open(LPCTSTR szProgID,  
+  DBPROPSET* pPropSet = NULL,  
+   ULONG nPropertySets = 1) throw();HRESULT Open(LPCTSTR szProgID,  
+   LPCTSTR pName,  LPCTSTR pUserName = NULL,  
+   LPCTSTR pPassword = NULL,  
+   long nInitMode = 0) throw();  
+
+HRESULT Open(const CEnumerator& enumerator,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(  
-   LPCTSTR szProgID,  
+   ULONG nPropertySets = 1) throw();  
+
+HRESULT Open(const CEnumerator& enumerator,  
    LPCTSTR pName,  
    LPCTSTR pUserName = NULL,  
    LPCTSTR pPassword = NULL,  
-   long nInitMode = 0   
-) throw( );  
-HRESULT Open(  
-   const CEnumerator& enumerator,  
-   DBPROPSET* pPropSet = NULL,  
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(  
-   const CEnumerator& enumerator,  
-   LPCTSTR pName,  
-   LPCTSTR pUserName = NULL,  
-   LPCTSTR pPassword = NULL,  
-   long nInitMode = 0   
-) throw( );  
-HRESULT Open(  
-   HWND hWnd = GetActiveWindow( ),  
-   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_WIZARDSHEET   
-) throw( );  
-HRESULT Open(   
-   LPCWSTR szProgID,   
-   DBPROPSET* pPropSet = NULL,   
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(   
-   LPCSTR szProgID,   
-   LPCTSTR pName,   
-   LPCTSTR pUserName = NULL,   
+   long nInitMode = 0) throw();  
+
+HRESULT Open(HWND hWnd = GetActiveWindow(),  
+   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_WIZARDSHEET) throw();
+
+HRESULT Open(LPCWSTR szProgID,   
+  DBPROPSET* pPropSet = NULL,   
+   ULONG nPropertySets = 1) throw();
+
+HRESULT Open(LPCSTR szProgID,   
+   LPCTSTR pName,LPCTSTR pUserName = NULL,   
    LPCTSTR pPassword = NULL,   
-   long nInitMode = 0   
-) throw( );  
+   long nInitMode = 0) throw();  
 ```  
   
 #### Parameters  

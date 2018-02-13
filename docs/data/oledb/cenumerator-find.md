@@ -22,11 +22,8 @@ Looks for a specified name among available providers.
   
 ## Syntax  
   
-```  
-  
-      bool Find(   
-   TCHAR* szSearchName    
-) throw( );  
+```cpp
+      bool Find(TCHAR* szSearchName) throw();  
 ```  
   
 #### Parameters  

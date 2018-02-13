@@ -29,6 +29,7 @@ CCommand<CDynamicAccessor> product;
 // Open the table, passing false to prevent automatic binding   
 product.Open(session, _T("Select * FROM Products"), NULL, NULL, DBGUID_DEFAULT, false);  
   
+
 ULONG         nColumns;  
 DBCOLUMNINFO*   pColumnInfo;  
 // Get the column information from the opened rowset.  
@@ -53,6 +54,7 @@ product.Bind();
 // previous call to GetColumnInfo.  
 CoTaskMemFree(pColumnInfo);  
   
+
 char*   pszProductName;  
 char*   pszReorderLevel;  
 bool   bRC;  

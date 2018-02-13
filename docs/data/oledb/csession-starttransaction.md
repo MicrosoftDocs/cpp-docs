@@ -22,14 +22,11 @@ Begins a new transaction for this session.
   
 ## Syntax  
   
-```  
-  
-      HRESULT StartTransaction(  
-   ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,  
+```cpp
+HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,  
    ULONG isoFlags = 0,  
    ITransactionOptions* pOtherOptions = NULL,  
-   ULONG* pulTransactionLevel = NULL   
-) const throw( );  
+   ULONG* pulTransactionLevel = NULL) const throw();  
 ```  
   
 #### Parameters  

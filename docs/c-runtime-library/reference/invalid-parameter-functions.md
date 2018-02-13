@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 apiname: ["_invalid_parameter", "_invalid_parameter_noinfo", "_invalid_parameter_noinfo_noreturn", "_invoke_watson"]
 apilocation: ["api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"

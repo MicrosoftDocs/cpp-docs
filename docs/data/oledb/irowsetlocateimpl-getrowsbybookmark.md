@@ -22,16 +22,13 @@ Fetches one or more rows that match the specified bookmarks.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetRowsByBookmark )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (GetRowsByBookmark )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const DBBKMARK rgcbBookmarks[],  
    const BYTE* rgpBookmarks,  
    HROW rghRows[],  
-   DBROWSTATUS* rgRowStatus[]   
-);  
+   DBROWSTATUS* rgRowStatus[]);  
 ```  
   
 #### Parameters  

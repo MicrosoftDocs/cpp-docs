@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IDBSchemaRowsetImpl Class
 Provides implementation for schema rowsets.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class SessionClass>  
 class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset  
 ```  

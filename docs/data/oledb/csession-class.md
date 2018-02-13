@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CSession Class
 Represents a single database access session.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CSession  
 ```  
   

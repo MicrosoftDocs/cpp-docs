@@ -18,7 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # task_continuation_context Class
-The `task_continuation_context` class allows you to specify where you would like a continuation to be executed. It is only useful to use this class from a Windows Store app. For non-Windows Store apps, the task continuation's execution context is determined by the runtime, and not configurable.  
+The `task_continuation_context` class allows you to specify where you would like a continuation to be executed. It is only useful to use this class from a Windows Runtime app. For non-Windows Runtime apps, the task continuation's execution context is determined by the runtime, and not configurable.  
   
 ## Syntax  
   
@@ -84,7 +84,7 @@ static task_continuation_context use_arbitrary();
   
  `use_arbitrary` can be used to turn off the default behavior for a continuation on an apartment aware task created in an STA.  
   
- This method is only available to Windows Store apps.  
+ This method is only available to Windows Runtime apps.  
   
 ##  <a name="use_current"></a> use_current 
 
@@ -102,7 +102,7 @@ static task_continuation_context use_current();
   
  The value returned by `use_current` can be used to indicate to the Runtime that the continuation should execute in the captured context (STA vs MTA) regardless of whether or not the antecedent task is apartment aware. An apartment aware task is a task that unwraps a Windows Runtime `IAsyncInfo` interface, or a task that is descended from such a task.  
   
- This method is only available to Windows Store apps.  
+ This method is only available to Windows Runtime apps.  
   
 ##  <a name="use_default"></a> use_default 
 
@@ -116,7 +116,7 @@ static task_continuation_context use_default();
  The default continuation context.  
   
 ### Remarks  
- The default context is used if you don't specifiy a continuation context when you call the `then` method. In Windows applications for Windows 7 and below, as well as desktop applications on Windows 8 and higher, the runtime determines where task continuations will execute. However, in a Windows Store app, the default continuation context for a continuation on an apartment aware task is the apartment where `then` is invoked.  
+ The default context is used if you don't specifiy a continuation context when you call the `then` method. In Windows applications for Windows 7 and below, as well as desktop applications on Windows 8 and higher, the runtime determines where task continuations will execute. However, in a Windows Runtime app, the default continuation context for a continuation on an apartment aware task is the apartment where `then` is invoked.  
   
  An apartment aware task is a task that unwraps a Windows Runtime `IAsyncInfo` interface, or a task that is descended from such a task. Therefore, if you schedule a continuation on an apartment aware task in a Windows Runtime STA, the continuation will execute in that STA.  
   

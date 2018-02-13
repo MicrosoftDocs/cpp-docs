@@ -22,12 +22,9 @@ Returns an interface pointer on the data source object that created the session.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetDataSource)(   
-   REFIID riid,   
-   IUnknown ** ppDataSource    
-);  
+```cpp
+      STDMETHOD(GetDataSource)(REFIID riid,   
+   IUnknown ** ppDataSource);  
 ```  
   
 #### Parameters  

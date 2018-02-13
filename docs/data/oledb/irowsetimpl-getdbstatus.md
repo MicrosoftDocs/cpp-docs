@@ -22,12 +22,9 @@ Returns the `DBSTATUS` status flags for the specified field.
   
 ## Syntax  
   
-```  
-  
-      virtual DBSTATUS GetDBStatus(  
-   RowClass* currentRow,  
-   ATLCOLUMNINFO* columnNames   
-);  
+```cpp
+      virtual DBSTATUS GetDBStatus(RowClass* currentRow,  
+   ATLCOLUMNINFO* columnNames);  
 ```  
   
 #### Parameters  

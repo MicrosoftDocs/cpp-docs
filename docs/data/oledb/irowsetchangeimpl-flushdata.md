@@ -22,13 +22,9 @@ Overidden by provider to commit data to its store.
   
 ## Syntax  
   
-```  
-  
-      HRESULT FlushData(  
-   HROW hRowToFlush,  
-   HACCESSOR hAccessorToFlush   
-);  
-```  
+```
+HRESULT FlushData(HROW hRowToFlush,  
+   HACCESSOR hAccessorToFlush);  ```  
   
 #### Parameters  
  *hRowToFlush*  

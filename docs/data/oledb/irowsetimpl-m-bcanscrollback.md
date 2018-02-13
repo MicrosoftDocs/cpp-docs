@@ -22,8 +22,7 @@ Indicates whether a provider can have its cursor scroll backwards.
   
 ## Syntax  
   
-```  
-  
+```cpp
 unsigned  m_bCanScrollBack:1;  
   
 ```  

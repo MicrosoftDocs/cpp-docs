@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDataSource Class
 Corresponds to an OLE DB data source object, which represents a connection through a provider to a data source.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CDataSource  
 ```  
   

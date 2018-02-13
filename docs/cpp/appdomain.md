@@ -22,7 +22,7 @@ Specifies that each application domain of your managed application should have i
   
  Every application domain has its own copy of a per-appdomain variable. A constructor of an appdomain variable is executed when an assembly is loaded into an application domain, and the destructor is executed when the application domain is unloaded.  
   
- If you want all application domains within a process in the common language runtime to share a global variable, use the `__declspec(process)` modifier. `__declspec(process)` is in effect by default under [/clr](../build/reference/clr-common-language-runtime-compilation.md) and `__declspec(appdomain)` is in effect by default under **/clr:pure**. `__declspec(appdomain)` is enforced under **/clr:safe**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+ If you want all application domains within a process in the common language runtime to share a global variable, use the `__declspec(process)` modifier. `__declspec(process)` is in effect by default under [/clr](../build/reference/clr-common-language-runtime-compilation.md). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
  `__declspec(appdomain)` is only valid when one of the **/clr** compiler options is used. Only a global variable, static member variable, or a static local variable can be marked with `__declspec(appdomain)`. It is an error to apply `__declspec(appdomain)` to static members of managed types because they always have this behavior.  
   

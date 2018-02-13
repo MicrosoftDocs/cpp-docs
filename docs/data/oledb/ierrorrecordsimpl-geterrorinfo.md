@@ -22,13 +22,10 @@ Returns an [IErrorInfo](https://msdn.microsoft.com/en-us/library/ms718112.aspx) 
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetErrorInfo )(  
-   ULONG ulRecordNum,  
+```cpp
+      STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,  
    LCID lcid,  
-   IErrorInfo **ppErrorInfo   
-);  
+   IErrorInfo **ppErrorInfo);  
 ```  
   
 #### Parameters  

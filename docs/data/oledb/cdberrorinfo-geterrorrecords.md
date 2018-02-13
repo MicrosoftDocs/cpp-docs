@@ -22,16 +22,13 @@ Gets error records for the specified object.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetErrorRecords(   
-   IUnknown* pUnk,   
+```cpp
+HRESULT GetErrorRecords(IUnknown* pUnk,   
    const IID& iid,   
-   ULONG* pcRecords    
-) throw( );  
-HRESULT GetErrorRecords(   
-   ULONG* pcRecords    
-) throw( );  
+   ULONG* pcRecords) throw();  
+
+
+HRESULT GetErrorRecords(ULONG* pcRecords) throw();  
 ```  
   
 #### Parameters  

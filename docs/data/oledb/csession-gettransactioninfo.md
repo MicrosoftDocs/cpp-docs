@@ -22,11 +22,8 @@ Returns information regarding a transaction.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetTransactionInfo(   
-   XACTTRANSINFO* pInfo    
-) const throw( );  
+```cpp
+HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();  
 ```  
   
 #### Parameters  

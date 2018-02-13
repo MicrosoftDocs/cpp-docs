@@ -22,19 +22,8 @@ Used with `BEGIN_COLUMN_MAP` or `BEGIN_ACCESSOR_MAP` to bind a binary large obje
   
 ## Syntax  
   
-```  
-  
-BLOB_ENTRY_STATUS(  
-nOrdinal  
-,   
-IID  
-,   
-flags  
-,   
-data  
-,   
-status  
- )  
+```cpp
+BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)  
   
 ```  
   

@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDataConnection Class
 Manages the connection with the data source.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CDataConnection  
 ```  
   

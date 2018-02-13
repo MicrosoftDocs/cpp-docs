@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IDBInitializeImpl Class
 Provides an implementation for the [IDBInitialize](https://msdn.microsoft.com/en-us/library/ms713706.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T>  
 class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize  
 ```  

@@ -22,12 +22,9 @@ Returns an interface pointer on the object (command or session) that created thi
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetSpecification )(  
-   REFIID riid,  
-   IUnknown** ppSpecification   
-);  
+```cpp
+      STDMETHOD (GetSpecification )(REFIID riid,  
+   IUnknown** ppSpecification);  
 ```  
   
 #### Parameters  

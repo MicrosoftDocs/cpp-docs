@@ -22,13 +22,10 @@ Creates a new session from the data source object and returns the requested inte
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(CreateSession)(   
-   IUnknown * pUnkOuter,   
+```cpp
+      STDMETHOD(CreateSession)(IUnknown * pUnkOuter,   
    REFIID riid,   
-   IUnknown ** ppDBSession    
-);  
+   IUnknown ** ppDBSession);  
 ```  
   
 #### Parameters  

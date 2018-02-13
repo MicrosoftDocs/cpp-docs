@@ -22,12 +22,11 @@ Sets data values in one or more columns of a row.
   
 ## Syntax  
   
-```  
-  
-      HRESULT SetData( ) const throw( );   
-HRESULT SetData(  
-   int nAccessor   
-) const throw( );  
+```cpp
+HRESULT SetData() const throw();   
+
+
+HRESULT SetData(int nAccessor) const throw();  
 ```  
   
 #### Parameters  

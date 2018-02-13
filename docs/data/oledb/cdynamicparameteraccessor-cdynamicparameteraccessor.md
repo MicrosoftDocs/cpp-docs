@@ -22,13 +22,11 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
+```cpp
       typedef CDynamicParameterAccessor _ParamClass;  
-CDynamicParameterAccessor(   
-   DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
+CDynamicParameterAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
    DBLENGTH nBlobSize = 8000 )   
-   : CDynamicAccessor( eBlobHandling, nBlobSize )  
+   : CDynamicAccessor(eBlobHandling, nBlobSize )  
 ```  
   
 #### Parameters  

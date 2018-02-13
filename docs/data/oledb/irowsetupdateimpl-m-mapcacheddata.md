@@ -22,8 +22,7 @@ A map containing the original data for the deferred operation.
   
 ## Syntax  
   
-```  
-  
+```cpp
       CAtlMap<   
    HROW hRow,    
    Storage* pData   

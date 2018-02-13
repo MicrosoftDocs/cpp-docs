@@ -22,8 +22,7 @@ Allows you to access a data source when you have no knowledge of the database sc
   
 ## Syntax  
   
-```  
-  
+```cpp
       template< typename BaseType, DBTYPEENUM OleDbType >  
 class CDynamicStringAccessorT : public CDynamicAccessor  
 ```  

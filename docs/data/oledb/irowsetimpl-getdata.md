@@ -22,13 +22,10 @@ Retrieves data from the rowset's copy of the row.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetData )(  
-   HROW hRow,  
+```cpp
+      STDMETHOD(GetData )(HROW hRow,  
    HACCESSOR hAccessor,  
-   void* pDstData   
-);  
+   void* pDstData);  
 ```  
   
 #### Parameters  

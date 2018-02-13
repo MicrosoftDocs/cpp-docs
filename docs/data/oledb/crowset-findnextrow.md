@@ -22,18 +22,15 @@ Finds the next matching row after the specified bookmark.
   
 ## Syntax  
   
-```  
-  
-      HRESULT FindNextRow(   
-   DBCOMPAREOP op,   
-   BYTE* pData,   
+```
+HRESULT FindNextRow(DBCOMPAREOP op,   
+  BYTE* pData,   
    DBTYPE wType,   
    DBLENGTH nLength,   
    BYTE bPrecision,   
    BYTE bScale,   
    BOOL bSkipCurrent = TRUE,   
-   CBookmarkBase* pBookmark = NULL    
-) throw( );  
+   CBookmarkBase* pBookmark = NULL) throw();  
 ```  
   
 #### Parameters  

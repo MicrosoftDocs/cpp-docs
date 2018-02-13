@@ -22,15 +22,12 @@ Called by [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and [ReleaseR
   
 ## Syntax  
   
-```  
-  
-      HRESULT RefRows(  
-   DBCOUNTITEM cRows,  
-   const HROW rghRows[],  
+```
+HRESULT RefRows(DBCOUNTITEM cRows,  
+   const HROWrghRows[],  
    DBREFCOUNT rgRefCounts[],  
    DBROWSTATUS rgRowStatus[],  
-   BOOL bAdd   
-);  
+   BOOL bAdd);  
 ```  
   
 #### Parameters  

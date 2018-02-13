@@ -22,18 +22,8 @@ Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object 
   
 ## Syntax  
   
-```  
-  
-BLOB_NAME_LENGTH_STATUS(  
-pszName  
-,   
-IID  
-,   
-flags  
-,   
-data  
-,   
-length  
+```cpp
+BLOB_NAME_LENGTH_STATUS(pszName, IID, flags, data, length  
 , status )  
 ```  
   

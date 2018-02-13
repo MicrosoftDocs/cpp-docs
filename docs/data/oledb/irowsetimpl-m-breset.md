@@ -22,8 +22,7 @@ A bit flag used to determine if the cursor position is defined on the rowset.
   
 ## Syntax  
   
-```  
-  
+```cpp
 unsigned m_bReset:1;  
   
 ```  

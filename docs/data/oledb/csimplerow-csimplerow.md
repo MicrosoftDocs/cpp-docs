@@ -22,11 +22,8 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
-      CSimpleRow(  
-   DBCOUNTITEM iRowsetCur   
-);  
+```cpp
+      CSimpleRow(DBCOUNTITEM iRowsetCur);  
 ```  
   
 #### Parameters  

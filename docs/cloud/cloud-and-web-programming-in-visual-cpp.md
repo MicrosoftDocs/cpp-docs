@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 In C++, you have several options for connecting to the web and the cloud.  
   
  [Windows Azure Mobile Services](http://www.windowsazure.com/develop/mobile/)  
- Provides native APIs that you can use in Windows Store apps or Windows desktop apps to connect to Windows Azure Mobile Services. Although most of the examples on the website are in C#, you can also use C++. For more information, see [Quickstart: Adding a mobile service using C++](http://msdn.microsoft.com/library/windows/apps/dn263181.aspx).  
+ Provides native APIs that you can use in Universal Windows Platform (UWP) apps or Windows desktop apps to connect to Windows Azure Mobile Services. Although most of the examples on the website are in C#, you can also use C++. For more information, see [Quickstart: Adding a mobile service using C++](http://msdn.microsoft.com/library/windows/apps/dn263181.aspx).  
 
  [Microsoft Azure Storage Client Library for C++](https://blogs.msdn.microsoft.com/windowsazurestorage/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability/)  
  The Azure Storage Client Library for C++ provides a comprehensive API for working with Azure storage, including but not limited to the following abilities:
@@ -47,11 +47,11 @@ Supports Windows Desktop (7+), Windows Server (2012+), Universal Windows Platfor
  A Windows Runtime HTTP client class modeled on the .NET Framework class of the same name in the System.Web namespace. `HttpClient` fully supports asynchronous upload and download over HTTP, and pipeline filters that enable the insertion of custom HTTP handlers into the pipeline. The Windows SDK includes sample filters for metered networks, OAuth authentication, and more. For apps that target only Universal Windows Platform, we recommend that you use the `Windows::Web:HttpClient` class. 
   
 [IXMLHTTPRequest2 interface](http://msdn.microsoft.com/library/windows/apps/hh831151.aspx)  
- Provides a native COM interface that you can use in Windows Store apps or Windows desktop apps to connect to the Internet over HTTP and issue GET, PUT, and other HTTP commands. For more information, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md).  
+ Provides a native COM interface that you can use in Windows Runtime apps or Windows desktop apps to connect to the Internet over HTTP and issue GET, PUT, and other HTTP commands. For more information, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md).  
   
 [Windows Internet (WinInet)](http://msdn.microsoft.com/library/windows/desktop/aa385331\(v=vs.85\).aspx)  
  Windows API that you can use in Windows desktop apps to connect to the Internet.  
   
 ## See Also  
  [Visual C++](../visual-cpp-in-visual-studio.md)   
- [Connecting to networks and web services (Windows Store apps using C#/VB/C++ and XAML)](http://msdn.microsoft.com/library/windows/apps/br229573.aspx)
+ [Networks and web services](/windows/uwp/networking/)

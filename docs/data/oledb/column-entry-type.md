@@ -22,15 +22,8 @@ Represents a binding to the specific column in the database. Supports `type` par
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_TYPE (  
-nOrdinal  
-,   
-wType  
-,   
-data  
- )  
+```cpp
+COLUMN_ENTRY_TYPE (nOrdinal, wType, data)  
   
 ```  
   

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.tables.runtime"]
 dev_langs: ["C++"]
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2

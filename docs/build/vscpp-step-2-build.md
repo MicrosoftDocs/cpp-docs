@@ -79,6 +79,8 @@ If red squiggles appear under anything in the source code editor, the build may 
 
 You can also navigate to the solution Debug folder at the command line to run your app. You can't run your app from other directories without specifying the path to the app. However, you can copy your app to another directory and run it from there.
 
+If you don't see **Copy as path** in the shortcut menu, dismiss the menu, and then hold down the Shift key while you open it again. This is just for convenience. You can also copy the path to the folder from the File Explorer search bar, and paste it into the **Run** dialog, and then enter the name of your executable at the end. It's just a little more typing, but it has the same result.
+
 [Go back.](#run-your-code-in-a-command-window)
 
 

@@ -24,9 +24,7 @@ Represents one of the accessor types.
   
 ```  
   
-      template < class   
-      T  
-       >  
+template <class T>  
 class CAccessor : public CAccessorBase, public T  
 ```  
   

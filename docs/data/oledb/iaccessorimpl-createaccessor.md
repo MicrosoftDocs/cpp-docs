@@ -22,16 +22,13 @@ Creates an accessor from a set of bindings.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(CreateAccessor)(  
-   DBACCESSORFLAGS dwAccessorFlags,  
+```cpp
+      STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,  
    DBCOUNTITEM cBindings,  
    const DBBINDING rgBindings[],  
    DBLENGTH cbRowSize,  
    HACCESSOR* phAccessor,  
-   DBBINDSTATUS rgStatus[]   
-);  
+   DBBINDSTATUS rgStatus[]);  
 ```  
   
 #### Parameters  

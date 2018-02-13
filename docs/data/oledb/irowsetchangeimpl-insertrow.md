@@ -22,14 +22,11 @@ Creates and initializes a new row in the rowset.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( InsertRow )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,  
    HACCESSOR hAccessor,  
    void* pData,  
-   HROW* phRow   
-);  
+   HROW* phRow);  
 ```  
   
 #### Parameters  

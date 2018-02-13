@@ -22,12 +22,9 @@ Retrieves data from the current row and places it into the specified buffer.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetDataHere(   
-   int nAccessor,   
-   void* pBuffer    
-) throw( );  
+```
+HRESULT GetDataHere(int nAccessor,   
+  void* pBuffer) throw();  
 ```  
   
 #### Parameters  

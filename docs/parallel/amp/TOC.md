@@ -1,7 +1,7 @@
 # [C++ AMP (C++ Accelerated Massive Parallelism)](cpp-amp-cpp-accelerated-massive-parallelism.md)
 # [C++ AMP Overview](cpp-amp-overview.md)
 # [Using Tiles](using-tiles.md)
-# [Using C++ AMP in Windows Store Apps](using-cpp-amp-in-windows-store-apps.md)
+# [Using C++ AMP in UWP Apps](using-cpp-amp-in-windows-store-apps.md)
 # [Walkthrough: Matrix Multiplication](walkthrough-matrix-multiplication.md)
 # [Walkthrough: Debugging a C++ AMP Application](walkthrough-debugging-a-cpp-amp-application.md)
 # [Using Lambdas, Function Objects, and Restricted Functions](using-lambdas-function-objects-and-restricted-functions.md)

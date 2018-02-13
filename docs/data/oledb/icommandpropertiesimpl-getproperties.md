@@ -22,14 +22,11 @@ Returns all the requested property sets using the command's property map.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetProperties)(   
-   const ULONG cPropertyIDSets,   
+```cpp
+      STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,   
    const DBPROPIDSET rgPropertyIDSets[],   
    ULONG * pcPropertySets,   
-   DBPROPSET ** prgPropertySets    
-);  
+   DBPROPSET ** prgPropertySets);  
 ```  
   
 #### Parameters  

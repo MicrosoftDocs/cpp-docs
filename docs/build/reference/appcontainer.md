@@ -18,7 +18,7 @@ manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /APPCONTAINER
-Marks an executable that must run in an app container—for example, a [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] or Universal Windows app.  
+Marks an executable that must run in an app container—for example, a Microsoft Store or Universal Windows app.  
   
 ```  
   
@@ -26,7 +26,7 @@ Marks an executable that must run in an app container—for example, a [!INCLUDE
 ```  
   
 ## Remarks  
- An executable that has the **/APPCONTAINER** option set can only be run in an app container, which is the process-isolation environment introduced in Windows 8. For [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] and Universal Windows apps, this option must be set.  
+ An executable that has the **/APPCONTAINER** option set can only be run in an app container, which is the process-isolation environment introduced in Windows 8. For Microsoft Store and Universal Windows apps, this option must be set.  
   
 ## See Also  
  [EDITBIN Options](../../build/reference/editbin-options.md)   

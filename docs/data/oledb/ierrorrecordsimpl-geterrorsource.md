@@ -22,11 +22,8 @@ Gets the source code that caused the error from an error record.
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetErrorSource(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      LPOLESTR GetErrorSource(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

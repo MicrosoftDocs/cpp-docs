@@ -22,17 +22,14 @@ Binds the moniker for the enumerator, if one is specified, then retrieves the ro
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(   
-   LPMONIKER pMoniker    
-) throw( );  
-HRESULT Open(   
-   const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR    
-) throw( );  
-HRESULT Open(   
-   const CEnumerator& enumerator    
-) throw( );  
+```cpp
+HRESULT Open(LPMONIKER pMoniker) throw();  
+
+
+HRESULT Open(const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR) throw();  
+
+
+HRESULT Open(const CEnumerator& enumerator) throw();  
 ```  
   
 #### Parameters  

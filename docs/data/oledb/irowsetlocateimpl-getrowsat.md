@@ -22,18 +22,15 @@ Fetches rows starting with the row specified by an offset from a bookmark.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetRowsAt )(  
-   HWATCHREGION /* hReserved1 */,  
+```cpp
+      STDMETHOD (GetRowsAt )(HWATCHREGION /* hReserved1 */,  
    HCHAPTER hReserved2,  
    DBBKMARK cbBookmark,  
    const BYTE* pBookmark,  
    DBROWOFFSET lRowsOffset,  
    DBROWCOUNT cRows,  
    DBCOUNTITEM* pcRowsObtained,  
-   HROW** prghRows   
-);  
+   HROW** prghRows);  
 ```  
   
 #### Parameters  

@@ -22,14 +22,11 @@ Broadcasts an [OnRowsetChange](https://msdn.microsoft.com/en-us/library/ms722669
   
 ## Syntax  
   
-```  
-  
-      HRESULT Fire_OnRowsetChange(  
-   IRowset* pRowset,  
+```cpp
+HRESULT Fire_OnRowsetChange(IRowset* pRowset,  
    DBREASON eReason,  
    DBEVENTPHASE ePhase,  
-   BOOL fCantDeny   
-);  
+   BOOL fCantDeny);  
 ```  
   
 #### Parameters  

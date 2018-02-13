@@ -22,13 +22,9 @@ Sets the length of the specified parameter stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-      bool SetParamLength(  
-   DBORDINAL nParam,  
-   DBLENGTH length  
-);  
-```  
+```
+bool SetParamLength(DBORDINAL nParam,  
+   DBLENGTH length);  ```  
   
 #### Parameters  
  `nParam`  

@@ -22,12 +22,9 @@ Instantiates and initializes the `CDynamicAccessor` object.
   
 ## Syntax  
   
-```  
-  
-      CDynamicAccessor(   
-   DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
-   DBLENGTH nBlobSize = 8000   
-);  
+```cpp
+      CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
+   DBLENGTH nBlobSize = 8000);  
 ```  
   
 #### Parameters  

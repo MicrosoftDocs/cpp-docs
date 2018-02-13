@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IOpenRowsetImpl Class
 Provides implementation for the `IOpenRowset` interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class SessionClass>  
 class IOpenRowsetImpl : public IOpenRowset  
 ```  

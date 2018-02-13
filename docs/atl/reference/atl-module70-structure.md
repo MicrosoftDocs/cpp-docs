@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_ATL_MODULE70", "ATL::_ATL_MODULE70", "ATL._ATL_MODULE70"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL_MODULE70 structure", "_ATL_MODULE70 structure"]

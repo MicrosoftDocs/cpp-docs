@@ -22,17 +22,14 @@ Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object 
   
 ## Syntax  
   
-```  
-  
+```cpp
 BLOB_ENTRY_LENGTH_STATUS(  
-nOrdinal  
-,   
-IID  
-,   
-flags  
-,   
-data  
-, length, status )  
+    nOrdinal,  
+    IID,  
+    flags,  
+    data,
+    length,
+    status )  
 ```  
   
 #### Parameters  

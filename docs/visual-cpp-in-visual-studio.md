@@ -62,7 +62,7 @@ Find out how to get help, file bugs, and make suggestions for Visual Studio.
 ## Writing applications in C++
 
 [Universal Windows Apps](windows/universal-windows-apps-cpp.md)  
-Find guides and reference content on the Windows Developer Center. For information about developing Windows Store apps, see [Develop Windows Store apps using Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=248364) and [Roadmap for Windows Store apps using C++](http://go.microsoft.com/fwlink/p/?LinkId=244654).
+Find guides and reference content on the Windows Developer Center. For information about developing UWP apps, see [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide) and [Create your first UWP app using C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
 [Desktop Applications (C++)](windows/desktop-applications-visual-cpp.md)  
 Learn how to create desktop applications that have a message loop and callbacks.
@@ -118,7 +118,7 @@ Asynchronous and parallel algorithms that execute on the CPU.
 Massively parallel algorithms that execute on the GPU.
 
 [Windows Runtime Template Library (WRL)](http://msdn.microsoft.com/library/windows/apps/hh438466.aspx)  
-[!INCLUDE[win8_appname_long](build/includes/win8_appname_long_md.md)] apps and components.
+Universal Windows Platform (UWP) apps and components.
 
 [.NET Programming with C++/CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)  
 Programming for the common language runtime (CLR).

@@ -22,14 +22,11 @@ Returns the column metadata needed by most consumers.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetColumnInfo(   
-   IRowset* pRowset,   
+```cpp
+HRESULT GetColumnInfo(IRowset* pRowset,   
    DBORDINAL* pColumns,   
    DBCOLUMNINFO** ppColumnInfo,   
-   OLECHAR** ppStringsBuffer    
-) throw( );  
+   OLECHAR** ppStringsBuffer) throw();  
 ```  
   
 #### Parameters  

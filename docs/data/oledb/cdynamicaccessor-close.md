@@ -22,9 +22,8 @@ Unbinds all the columns, releases the allocated memory, and releases the [IAcces
   
 ## Syntax  
   
-```  
-  
-void Close( ) throw( );  
+```cpp
+void Close() throw();  
   
 ```  
   

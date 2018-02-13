@@ -22,13 +22,10 @@ Returns the value of a specified property for the connected data source object.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetProperty(   
-   const GUID& guid,   
+```cpp
+HRESULT GetProperty(const GUID& guid,   
    DBPROPID propid,   
-   VARIANT* pVariant    
-) const throw( );  
+   VARIANT* pVariant) const throw();  
 ```  
   
 #### Parameters  

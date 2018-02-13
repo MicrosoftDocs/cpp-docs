@@ -22,14 +22,11 @@ Returns the values of properties in the Data Source, Data Source Information, an
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetProperties)(   
-   ULONG cPropertySets,   
+```cpp
+      STDMETHOD(GetProperties)(ULONG cPropertySets,   
    const DBPROPIDSET rgPropertySets[],   
    ULONG * pcProperties,   
-   DBPROPSET ** prgProperties    
-);  
+   DBPROPSET ** prgProperties);  
 ```  
   
 #### Parameters  

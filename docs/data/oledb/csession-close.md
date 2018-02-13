@@ -22,9 +22,8 @@ Closes the session, which was opened by [CSession::Open](../../data/oledb/csessi
   
 ## Syntax  
   
-```  
-  
-void Close( ) throw( );  
+```cpp
+void Close() throw();  
   
 ```  
   

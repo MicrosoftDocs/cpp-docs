@@ -22,11 +22,8 @@ Marks the beginning of a property set in a property set map.
   
 ## Syntax  
   
-```  
-  
-BEGIN_PROPERTY_SET(  
-guid   
-)  
+```cpp
+BEGIN_PROPERTY_SET(guid)  
   
 ```  
   

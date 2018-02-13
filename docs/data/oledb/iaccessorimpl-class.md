@@ -20,17 +20,12 @@ ms.workload: ["cplusplus", "data-storage"]
 # IAccessorImpl Class
 Provides an implementation of the [IAccessor](https://msdn.microsoft.com/en-us/library/ms719672.aspx) interface.  
   
-## Syntax  
-  
-```  
-template <  
-   class T,   
-   class BindType = ATLBINDINGS,   
-   class BindingVector = CAtlMap <   
-      HACCESSOR hAccessor,   
-      BindType* pBindingsStructure   
-   >   
->  
+## Syntax
+
+```cpp
+template <class T, 
+          class BindType = ATLBINDINGS,
+          class BindingVector = CAtlMap <HACCESSOR hAccessor, BindType* pBindingsStructure>>  
 class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>  
 ```  
   

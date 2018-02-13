@@ -22,8 +22,7 @@ An index to the rowset, representing the cursor.
   
 ## Syntax  
   
-```  
-  
+```cpp
 DBROWOFFSET m_iRowset;  
   
 ```  

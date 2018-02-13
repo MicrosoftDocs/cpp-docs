@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::OperationCanceledException::OperationCanceledException", "VCCORLIB/Platform::OperationCanceledException"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OperationCanceledException"]

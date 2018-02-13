@@ -22,11 +22,8 @@ Denotes the beginning of a schema map.
   
 ## Syntax  
   
-```  
-  
-      BEGIN_SCHEMA_MAP(  
-   SchemaClass   
-);  
+```cpp
+      BEGIN_SCHEMA_MAP(SchemaClass);  
 ```  
   
 #### Parameters  

@@ -22,11 +22,8 @@ This macro chains property groups together.
   
 ## Syntax  
   
-```  
-  
-CHAIN_PROPERTY_SET(  
-ChainClass   
-)  
+```cpp
+CHAIN_PROPERTY_SET(ChainClass)  
   
 ```  
   

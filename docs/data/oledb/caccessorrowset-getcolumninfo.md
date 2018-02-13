@@ -22,17 +22,13 @@ Gets column information from the opened rowset.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetColumnInfo(  
-   DBORDINAL* pulColumns,  
+```cpp
+HRESULT GetColumnInfo(DBORDINAL* pulColumns,  
    DBCOLUMNINFO** ppColumnInfo,  
-   LPOLESTR* ppStrings   
-) const;  
-HRESULT GetColumnInfo(  
-   DBORDINAL* pColumns,  
-   DBCOLUMNINFO** ppColumnInfo   
-);  
+   LPOLESTR* ppStrings) const;  
+
+HRESULT GetColumnInfo(DBORDINAL* pColumns,  
+   DBCOLUMNINFO** ppColumnInfo);  
 ```  
   
 #### Parameters  

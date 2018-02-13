@@ -22,9 +22,8 @@ Marks the end of the column map entries.
   
 ## Syntax  
   
-```  
-  
-END_COLUMN_MAP( )  
+```cpp
+END_COLUMN_MAP()  
   
 ```  
   

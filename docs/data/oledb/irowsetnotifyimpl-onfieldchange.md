@@ -22,8 +22,7 @@ Notifies the consumer of any change to the value of a column.
   
 ## Syntax  
   
-```  
-  
+```cpp
 STDMETHOD(OnFieldChange)(   
 /* [in] */ IRowset* /* pRowset */,  
 /* [in] */ HROW /* hRow */,  

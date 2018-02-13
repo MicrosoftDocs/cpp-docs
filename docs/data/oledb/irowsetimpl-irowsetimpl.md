@@ -22,9 +22,8 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
-IRowsetImpl( );  
+```cpp
+IRowsetImpl();  
   
 ```  
   

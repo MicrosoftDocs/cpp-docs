@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CArrayRowset Class
 Accesses elements of a rowset using array syntax.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template < class TAccessor >  
 class CArrayRowset :   
    public CVirtualBuffer <TAccessor>,   

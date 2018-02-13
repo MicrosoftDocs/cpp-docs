@@ -22,9 +22,8 @@ Retrieves the maximum BLOB size in bytes.
   
 ## Syntax  
   
-```  
-  
-const DBLENGTH GetBlobSizeLimit( ) const;  
+```cpp
+const DBLENGTH GetBlobSizeLimit() const;  
   
 ```  
   

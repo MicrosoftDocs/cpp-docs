@@ -22,15 +22,11 @@ Retrieves the status of the specified parameter stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-      bool GetParamStatus(  
-   DBORDINAL nParam,  
-   DBSTATUS* pStatus  
-);  
-DBSTATUS* GetParamStatus(   
-   DBORDINAL nParam    
-) const throw( );  
+```
+bool GetParamStatus(DBORDINAL nParam,  
+  DBSTATUS* pStatus);  
+
+DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();  
 ```  
   
 #### Parameters  

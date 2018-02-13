@@ -22,26 +22,14 @@ Retrieves the string data of the specified parameter stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-      bool GetParamString(  
-   DBORDINAL nParam,  
-   CSimpleStringA& strOutput  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   CSimpleStringW& strOutput  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   CHAR* pBuffer,  
-   size_t* pMaxLen  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   WCHAR* pBuffer,  
-   size_t* pMaxLen  
-) throw( );  
+```
+bool GetParamString(DBORDINAL nParam,  
+  CSimpleStringA& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
+  CSimpleStringW& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
+  CHAR* pBuffer,  
+   size_t* pMaxLen) throw();bool GetParamString(DBORDINAL nParam,  
+  WCHAR* pBuffer,  
+   size_t* pMaxLen) throw();  
 ```  
   
 #### Parameters  

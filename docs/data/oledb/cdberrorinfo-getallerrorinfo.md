@@ -22,17 +22,13 @@ Returns all the types of error information contained in an error record.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetAllErrorInfo(  
-   ULONG ulRecordNum,  
-   LCID lcid,  
-   BSTR* pbstrDescription,  
+```
+HRESULT GetAllErrorInfo(ULONG ulRecordNum,  
+   LCID lcid,  BSTR* pbstrDescription,  
    BSTR* pbstrSource = NULL,  
    GUID* pguid = NULL,  
    DWORD* pdwHelpContext = NULL,  
-   BSTR* pbstrHelpFile = NULL  
-) const throw( );  
+   BSTR* pbstrHelpFile = NULL) const throw();  
 ```  
   
 #### Parameters  

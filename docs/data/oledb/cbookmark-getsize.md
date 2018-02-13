@@ -22,9 +22,8 @@ Retrieves the size of the bookmark buffer.
   
 ## Syntax  
   
-```  
-  
-virtual DBLENGTH GetSize( ) const throw( );  
+```cpp
+virtual DBLENGTH GetSize() const throw();  
   
 ```  
   

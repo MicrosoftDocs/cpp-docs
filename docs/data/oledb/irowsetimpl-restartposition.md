@@ -22,11 +22,8 @@ Repositions the next fetch position to its initial position; that is, its positi
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( RestartPosition )(  
-   HCHAPTER /* hReserved */   
-);  
+```cpp
+      STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);  
 ```  
   
 #### Parameters  

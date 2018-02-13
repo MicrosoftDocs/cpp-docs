@@ -22,8 +22,7 @@ The name of the data source or enumerator.
   
 ## Syntax  
   
-```  
-  
+```cpp
 WCHAR m_szName[129];  
   
 ```  

@@ -22,8 +22,7 @@ A pointer to implementation object for DB Properties information.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CUtlPropInfo<  
 T  
 >* m_pCUtlPropInfo;  

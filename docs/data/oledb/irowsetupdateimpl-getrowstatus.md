@@ -22,14 +22,11 @@ Returns the status of specified rows.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetRowStatus )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
-   DBPENDINGSTATUS rgPendingStatus[]   
-);  
+   DBPENDINGSTATUS rgPendingStatus[]);  
 ```  
   
 #### Parameters  

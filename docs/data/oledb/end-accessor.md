@@ -22,9 +22,8 @@ Marks the end of an accessor entry.
   
 ## Syntax  
   
-```  
-  
-END_ACCESSOR( )  
+```cpp
+END_ACCESSOR()  
   
 ```  
   

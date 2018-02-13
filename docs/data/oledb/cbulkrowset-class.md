@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CBulkRowset Class
 Fetches and manipulates rows to work on data in bulk by retrieving multiple row handles with a single call.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class TAccessor>  
 class CBulkRowset : public CRowset<TAccessor>  
 ```  

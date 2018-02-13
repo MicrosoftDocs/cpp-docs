@@ -22,9 +22,8 @@ Releases rows in a thread-safe manner.
   
 ## Syntax  
   
-```  
-  
-DWORD ReleaseRow( );  
+```cpp
+DWORD ReleaseRow();  
   
 ```  
   

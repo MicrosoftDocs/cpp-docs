@@ -22,11 +22,8 @@ Places the data source object in an uninitialized state by freeing internal reso
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(Uninitialize)(   
-   void    
-);  
+```cpp
+      STDMETHOD(Uninitialize)(void);  
 ```  
   
 ## Remarks  

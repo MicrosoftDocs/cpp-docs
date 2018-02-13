@@ -20,7 +20,7 @@ ms.workload: ["cplusplus", "data-storage"]
 # CMyProviderSource (MyProviderDS.H)
 The provider classes use multiple inheritance. The following code shows the inheritance chain for the data source object:  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////  
 // CMyProviderSource  
 class ATL_NO_VTABLE CMyProviderSource :   

@@ -22,13 +22,10 @@ Sets data values in one or more columns.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( SetData )(  
-   HROW hRow,  
+```cpp
+      STDMETHOD (SetData )(HROW hRow,  
    HACCESSOR hAccessor,  
-   void* pSrcData   
-);  
+   void* pSrcData);  
 ```  
   
 #### Parameters  

@@ -22,9 +22,8 @@ Retrieves the next row of data.
   
 ## Syntax  
   
-```  
-  
-HRESULT MoveNext( ) throw( );  
+```cpp
+HRESULT MoveNext() throw();  
   
 ```  
   

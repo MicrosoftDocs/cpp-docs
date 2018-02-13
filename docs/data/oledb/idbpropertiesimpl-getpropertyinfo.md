@@ -22,15 +22,12 @@ Returns property information supported by the data source.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetPropertyInfo)(   
-   ULONG cPropertySets,   
+```cpp
+      STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,   
    const DBPROPIDSET rgPropertySets[],   
    ULONG * pcPropertyInfoSets,   
    DBPROPINFOSET ** prgPropertyInfoSets,   
-   OLECHAR ** ppDescBuffer    
-);  
+   OLECHAR ** ppDescBuffer);  
 ```  
   
 #### Parameters  

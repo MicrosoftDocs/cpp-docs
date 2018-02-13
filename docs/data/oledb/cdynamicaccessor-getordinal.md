@@ -22,16 +22,12 @@ Retrieves the column number given a column name.
   
 ## Syntax  
   
-```  
-  
-      bool GetOrdinal(  
-   const CHAR* pColumnName,  
-   DBORDINAL* pOrdinal   
-) const throw( );  
-bool GetOrdinal(  
-   const WCHAR* pColumnName,  
-   DBORDINAL* pOrdinal   
-) const throw( );  
+```cpp
+      bool GetOrdinal(const CHAR* pColumnName,  
+   DBORDINAL* pOrdinal) const throw();  
+
+bool GetOrdinal(const WCHAR* pColumnName,  
+   DBORDINAL* pOrdinal) const throw();  
 ```  
   
 #### Parameters  

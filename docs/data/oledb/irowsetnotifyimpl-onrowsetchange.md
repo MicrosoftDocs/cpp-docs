@@ -22,8 +22,7 @@ Notifies the consumer of any change affecting the entire rowset.
   
 ## Syntax  
   
-```  
-  
+```cpp
    STDMETHOD(OnRowsetChange)(   
 /* [in] */ IRowset* /* pRowset */,  
 /* [in] */ DBREASON /* eReason */,  

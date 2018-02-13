@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc.atl.interfaces.dual"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["dual interfaces, classes", "dual interfaces"]

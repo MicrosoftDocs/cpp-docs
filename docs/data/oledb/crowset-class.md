@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CRowset Class
 Encapsulates an OLE DB rowset object and several related interfaces and provides manipulation methods for rowset data.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class TAccessor = CAccessorBase>  
 class CRowset  
 ```  

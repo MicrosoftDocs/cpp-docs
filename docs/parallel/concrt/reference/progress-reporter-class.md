@@ -46,7 +46,7 @@ class progress_reporter;
 |[report](#report)|Sends a progress report to the asynchronous action or operation to which this progress reporter is bound.|  
   
 ## Remarks  
- This type is only available to Windows Store apps.  
+ This type is only available to Windows Runtime apps.  
   
 ## Inheritance Hierarchy  
  `progress_reporter`  

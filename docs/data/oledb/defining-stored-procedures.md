@@ -46,16 +46,17 @@ DEFINE_COMMAND(CMySProcAccessor, _T("{CALL dbo.dt_adduserobject (?,?) }")
  Next, declare the command class:  
   
 ```  
-class CMySProc : public CCommand<CAccessor<CMySProcAccessor> >  
+class CMySProc : public CCommand<CAccessor<CMySProcAccessor>>  
 ```  
   
  Finally, call the stored procedure in `OpenRowset` as follows:  
   
 ```  
 CSession m_session;  
+
 HRESULT OpenRowset()  
 {  
-   return CCommand<CAccessor<CMySProcAccessor> >::Open(m_session);  
+   return CCommand<CAccessor<CMySProcAccessor>>::Open(m_session);  
 }  
 ```  
   

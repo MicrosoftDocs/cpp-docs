@@ -22,16 +22,13 @@ Broadcasts an [OnRowChange](https://msdn.microsoft.com/en-us/library/ms722694.as
   
 ## Syntax  
   
-```  
-  
-      HRESULT Fire_OnRowChange(  
-   IRowset* pRowset,  
+```cpp
+HRESULT Fire_OnRowChange(IRowset* pRowset,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBREASON eReason,  
    DBEVENTPHASE ePhase,  
-   BOOL fCantDeny   
-);  
+   BOOL fCantDeny);  
 ```  
   
 #### Parameters  

@@ -22,11 +22,8 @@ Creates a copy of an existing data connection.
   
 ## Syntax  
   
-```  
-  
-      CDataConnection& Copy(   
-   const CDataConnection & ds    
-) throw( );  
+```cpp
+      CDataConnection& Copy(const CDataConnection & ds) throw();  
 ```  
   
 #### Parameters  

@@ -22,9 +22,8 @@ Returns a reference to the contained `CDataSource` object.
   
 ## Syntax  
   
-```  
-  
-operator const CDataSource&() throw( );  
+```cpp
+operator const CDataSource&() throw();  
   
 ```  
   

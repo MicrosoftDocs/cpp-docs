@@ -22,12 +22,10 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
-      CBookmark( );   
-CBookmark(  
-   DBLENGTH nSize   
-);  
+```cpp
+      CBookmark();   
+
+CBookmark(DBLENGTH nSize);  
 ```  
   
 #### Parameters  

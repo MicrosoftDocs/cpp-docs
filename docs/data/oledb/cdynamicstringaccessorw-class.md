@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDynamicStringAccessorW Class
 Allows you to access a data source when you have no knowledge of the database schema (underlying structure).  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 typedef CDynamicStringAccessorT<WCHAR, DBTYPE_WSTR> CDynamicStringAccessorW;  
 ```  
   

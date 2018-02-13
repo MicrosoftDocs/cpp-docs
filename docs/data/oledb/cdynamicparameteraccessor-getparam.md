@@ -22,22 +22,16 @@ Retrieves the nonstring data for a specified parameter from the parameter buffer
   
 ## Syntax  
   
-```  
-  
-      template < class ctype > bool GetParam(   
-   DBORDINAL nParam,   
-   ctype* pData    
-) const throw( );  
-template < class ctype > bool GetParam(   
-   TCHAR* pParamName,   
-   ctype* pData    
-) const throw( );  
-void* GetParam(   
-   DBORDINAL nParam    
-) const throw( );  
-void* GetParam(   
-   TCHAR* pParamName    
-) const throw( );  
+```cpp
+template <class ctype>bool GetParam(DBORDINAL nParam,   
+  ctype* pData) const throw();  
+
+template <class ctype> bool GetParam(TCHAR* pParamName,   
+   ctype* pData) const throw();  
+
+void* GetParam(DBORDINAL nParam) const throw();  
+
+void* GetParam(TCHAR* pParamName) const throw();  
 ```  
   
 #### Parameters  

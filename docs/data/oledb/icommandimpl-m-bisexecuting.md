@@ -22,8 +22,7 @@ Indicates whether the command is currently executing.
   
 ## Syntax  
   
-```  
-  
+```cpp
 unsigned m_bIsExecuting:1;  
   
 ```  

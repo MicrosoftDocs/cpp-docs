@@ -22,11 +22,8 @@ Retrieves the column type information of a table as XML-formatted string data, b
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetXMLColumnData(   
-   CSimpleStringW& strOutput    
-) throw( );  
+```cpp
+HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();  
 ```  
   
 #### Parameters  

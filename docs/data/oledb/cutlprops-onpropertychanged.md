@@ -22,12 +22,9 @@ Called after setting a property to handle chained properties.
   
 ## Syntax  
   
-```  
-  
-      virtual HRESULT OnPropertyChanged(  
-   ULONG /* iCurSet */,  
-   DBPROP* pDBProp   
-);  
+```cpp
+      virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,  
+   DBPROP* pDBProp);  
 ```  
   
 #### Parameters  

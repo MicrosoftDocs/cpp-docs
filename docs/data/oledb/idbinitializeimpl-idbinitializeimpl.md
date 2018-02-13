@@ -22,9 +22,8 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
-IDBInitializeImpl( );  
+```cpp
+IDBInitializeImpl();  
   
 ```  
   

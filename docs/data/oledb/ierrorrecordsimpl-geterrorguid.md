@@ -22,11 +22,8 @@ Gets the error GUID from an error record.
   
 ## Syntax  
   
-```  
-  
-      REFGUID GetErrorGUID(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      REFGUID GetErrorGUID(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

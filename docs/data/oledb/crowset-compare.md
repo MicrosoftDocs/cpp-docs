@@ -22,13 +22,10 @@ Compares two bookmarks using [IRowsetLocate::Compare](https://msdn.microsoft.com
   
 ## Syntax  
   
-```  
-  
-      HRESULT Compare(   
-   const CBookmarkBase& bookmark1,   
+```cpp
+HRESULT Compare(const CBookmarkBase& bookmark1,   
    const CBookmarkBase& bookmark2,   
-   DBCOMPARE* pComparison    
-) const throw( );  
+   DBCOMPARE* pComparison) const throw();  
 ```  
   
 #### Parameters  

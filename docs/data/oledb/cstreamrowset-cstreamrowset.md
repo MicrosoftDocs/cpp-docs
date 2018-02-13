@@ -22,9 +22,8 @@ Instantiates and initializes the `CStreamRowset` object.
   
 ## Syntax  
   
-```  
-  
-CStreamRowset( );  
+```cpp
+CStreamRowset();  
   
 ```  
   

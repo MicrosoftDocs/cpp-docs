@@ -29,7 +29,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
  The following steps start an asynchronous timer and wait for the timer to expire. The complete example follows.  
   
 > [!WARNING]
->  Although you typically use the Windows Runtime C++ Template Library in a Universal Windows Platform app, this example uses a console app for illustration. Functions such as `wprintf_s` are not available from a Universal Windows Platform app. For more information about the types and functions that you can use in a Universal Windows Platform app, see [CRT functions not supported by /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx) and [Win32 and COM for Windows Store apps](http://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
+>  Although you typically use the Windows Runtime C++ Template Library in a Universal Windows Platform (UWP) app, this example uses a console app for illustration. Functions such as `wprintf_s` are not available from a UWP app. For more information about the types and functions that you can use in a UWP app, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) and [Win32 and COM for UWP apps](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
   
 1.  Include (`#include`) any required Windows Runtime, Windows Runtime C++ Template Library, or C++ Standard Library headers.  
   

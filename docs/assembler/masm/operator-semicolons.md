@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["%3B%3B", "operator %3B%3B"]
 dev_langs: ["C++"]
 helpviewer_keywords: [";; operator", "operator ;;"]

@@ -22,8 +22,7 @@ Contains the number of rows in the rowset that have already been read.
   
 ## Syntax  
   
-```  
-  
+```cpp
 ULONG m_nRowsRead;  
   
 ```  

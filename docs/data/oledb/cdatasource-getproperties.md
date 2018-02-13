@@ -22,14 +22,11 @@ Returns the property information requested for the connected data source object.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetProperties(   
-   ULONG ulPropIDSets,   
-   const DBPROPIDSET* pPropIDSet,   
+```
+HRESULT GetProperties(ULONG ulPropIDSets,   
+   constDBPROPIDSET* pPropIDSet,   
    ULONG* pulPropertySets,   
-   DBPROPSET** ppPropsets    
-) const throw( );  
+   DBPROPSET** ppPropsets) const throw();  
 ```  
   
 #### Parameters  

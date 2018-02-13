@@ -22,8 +22,7 @@ Returns a reference to the contained `CSession` object.
   
 ## Syntax  
   
-```  
-  
+```cpp
 operator const CSession&();  
   
 ```  

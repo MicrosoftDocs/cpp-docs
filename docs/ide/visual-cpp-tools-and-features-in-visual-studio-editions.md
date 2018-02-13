@@ -26,7 +26,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Platform|Visual Studio Express for Windows 10|Visual Studio Express for Windows Desktop|Visual Studio Community/Professional|Visual Studio Enterprise|  
 |Windows Desktop||X|X|X|  
 |Universal Windows Platform ((phone, tablet, PC, Xbox, IoT, and HoloLens))|X||X|X|  
-|Windows Store 8.1|||X|X|  
+|Microsoft Store 8.1|||X|X|  
 |Windows Phone 8.0|||X|X|  
 |Android|||X|X|  
 |iOS|||X|X|  
@@ -58,10 +58,10 @@ The following tables show Visual C++ features that are available in Visual Studi
 |--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
 |XAML Templates for UWP, Windows 8.1, Windows Phone 8.0|X||X|X|  
 |Direct3D App|X||X|X|  
-|DLL (Windows Store apps)|X||X|X|  
-|Static Library (Windows Store apps)|X||X|X|  
+|DLL (Universal Windows)|X||X|X|  
+|Static Library (Universal Windows)|X||X|X|  
 |Windows Runtime Component|X||X|X|  
-|Unit Test Library (Windows Store apps)|X||X|X|  
+|Unit Test App (Universal Windows)|X||X|X|  
 |ATL Project|||X|X|  
 |Class Library (CLR)||X|X|X|  
 |CLR Console Application||X|X|X|  

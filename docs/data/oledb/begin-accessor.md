@@ -23,13 +23,7 @@ Marks the beginning of an accessor entry.
 ## Syntax  
   
 ```  
-  
-BEGIN_ACCESSOR(  
-num  
-,   
-bAuto  
- )  
-  
+BEGIN_ACCESSOR(num, bAuto)  
 ```  
   
 #### Parameters  

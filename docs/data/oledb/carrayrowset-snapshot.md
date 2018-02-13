@@ -22,9 +22,8 @@ Reads the entire rowset into memory, creating an image or snapshot of it.
   
 ## Syntax  
   
-```  
-  
-HRESULT Snapshot( ) throw( );  
+```cpp
+HRESULT Snapshot() throw();  
   
 ```  
   

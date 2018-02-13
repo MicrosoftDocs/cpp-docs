@@ -22,19 +22,8 @@ Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object 
   
 ## Syntax  
   
-```  
-  
-BLOB_ENTRY_LENGTH(  
-nOrdinal  
-,   
-IID  
-,   
-flags  
-,   
-data  
-,   
-length  
- )  
+```cpp
+BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)  
   
 ```  
   

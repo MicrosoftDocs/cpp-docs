@@ -22,9 +22,8 @@ Adds a reference count to an existing row handle in a thread-safe manner.
   
 ## Syntax  
   
-```  
-  
-DWORD AddRefRow( );  
+```cpp
+DWORD AddRefRow();  
   
 ```  
   

@@ -22,11 +22,8 @@ Sets the BLOB handling value for the current row.
   
 ## Syntax  
   
-```  
-  
-      bool SetBlobHandling(  
-   DBBLOBHANDLINGENUM eBlobHandling   
-);  
+```cpp
+      bool SetBlobHandling(DBBLOBHANDLINGENUM eBlobHandling);  
 ```  
   
 #### Parameters  

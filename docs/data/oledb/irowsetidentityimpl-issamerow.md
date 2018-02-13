@@ -22,12 +22,9 @@ Compares two row handles to see if they refer to the same row.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( IsSameRow )(  
-   HROW hThisRow,  
-   HROW hThatRow   
-);  
+```cpp
+      STDMETHOD(IsSameRow )(HROW hThisRow,  
+   HROW hThatRow);  
 ```  
   
 #### Parameters  

@@ -22,13 +22,10 @@ Creates a new command and returns the requested interface.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(CreateCommand)(   
-   IUnknown * pUnkOuter,   
+```cpp
+      STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,   
    REFIID riid,   
-   IUnknown ** ppvCommand    
-);  
+   IUnknown ** ppvCommand);  
 ```  
   
 #### Parameters  

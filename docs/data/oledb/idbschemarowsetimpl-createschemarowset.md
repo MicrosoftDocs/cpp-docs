@@ -22,21 +22,16 @@ Implements a COM object creator function for the object specified by the templat
   
 ## Syntax  
   
-```  
-  
-      template < class   
-      SchemaRowsetClass  
-       >  
-HRESULT CreateSchemaRowset(  
-   IUnknown *pUnkOuter,  
+```cpp
+template template <class SchemaRowsetClass>  
+HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,  
    ULONG cRestrictions,  
    const VARIANT rgRestrictions[],  
    REFIID riid,  
    ULONG cPropertySets,  
    DBPROPSET rgPropertySets[],  
    IUnknown** ppRowset,  
-   SchemaRowsetClass*& pSchemaRowset   
-);  
+   SchemaRowsetClass*& pSchemaRowset);  
 ```  
   
 #### Parameters  

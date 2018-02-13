@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CEnumeratorAccessor Class
 Used by [CEnumerator](../../data/oledb/cenumerator-class.md) to access the data from the enumerator rowset.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CEnumeratorAccessor  
 ```  
   

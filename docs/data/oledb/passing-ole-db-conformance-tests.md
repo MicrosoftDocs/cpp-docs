@@ -29,7 +29,7 @@ To make providers more consistent, the Data Access SDK provides a set of OLE DB 
   
  The following code is the **ValidateCommandID** validation routine:  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
 // Class: CMyProviderRowset   

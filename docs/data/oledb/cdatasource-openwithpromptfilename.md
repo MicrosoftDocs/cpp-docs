@@ -22,14 +22,10 @@ This method prompts the user with a dialog box, then opens a data source using t
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenWithPromptFileName(   
-   HWND hWnd = GetActiveWindow(   
-   ),   
+```cpp
+HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),   
    DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE,   
-   LPCOLESTR szInitialDirectory = NULL    
-) throw( );  
+   LPCOLESTR szInitialDirectory = NULL) throw();  
 ```  
   
 #### Parameters  

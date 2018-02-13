@@ -22,8 +22,7 @@ Notifies the consumer of the first change to a row or of any change that affects
   
 ## Syntax  
   
-```  
-  
+```cpp
 STDMETHOD(OnRowChange)(   
 /* [in] */ IRowset* /* pRowset */,  
 /* [in] */ DBCOUNTITEM /* cRows */,  

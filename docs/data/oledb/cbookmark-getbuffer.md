@@ -22,9 +22,8 @@ Retrieves the pointer to the bookmark buffer.
   
 ## Syntax  
   
-```  
-  
-virtual BYTE* GetBuffer( ) const throw( );  
+```cpp
+virtual BYTE* GetBuffer() const throw();  
   
 ```  
   

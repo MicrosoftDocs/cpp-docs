@@ -7,7 +7,7 @@ ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Box"]
 dev_langs: ["C++"]
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6

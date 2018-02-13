@@ -22,13 +22,10 @@ A helper method called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows
   
 ## Syntax  
   
-```  
-  
-      HRESULT CreateRow(  
-   DBROWOFFSET lRowsOffset,  
-   DBCOUNTITEM& cRowsObtained,  
-   HROW* rgRows   
-);  
+```
+HRESULT CreateRow(DBROWOFFSET lRowsOffset,  
+  DBCOUNTITEM& cRowsObtained,  
+   HROW* rgRows);  
 ```  
   
 #### Parameters  

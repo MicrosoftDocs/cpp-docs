@@ -22,9 +22,8 @@ Cancels the current command execution.
   
 ## Syntax  
   
-```  
-  
-STDMETHOD(Cancel)( );  
+```cpp
+STDMETHOD(Cancel)();  
   
 ```  
   

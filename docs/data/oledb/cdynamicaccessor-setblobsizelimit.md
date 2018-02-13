@@ -22,11 +22,8 @@ Sets the maximum BLOB size in bytes.
   
 ## Syntax  
   
-```  
-  
-      void SetBlobSizeLimit(  
-   DBLENGTH nBlobSize   
-);  
+```cpp
+      void SetBlobSizeLimit(DBLENGTH nBlobSize);  
 ```  
   
 #### Parameters  

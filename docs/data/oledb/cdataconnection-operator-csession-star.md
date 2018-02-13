@@ -22,9 +22,8 @@ Returns a pointer to the contained `CSession` object.
   
 ## Syntax  
   
-```  
-  
-operator const CSession*() throw( );  
+```cpp
+operator const CSession*() throw();  
   
 ```  
   

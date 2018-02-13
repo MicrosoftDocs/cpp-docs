@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IDBCreateSessionImpl Class
 Provides an implementation for the [IDBCreateSession](https://msdn.microsoft.com/en-us/library/ms724076.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class SessionClass>  
 class ATL_NO_VTABLE IDBCreateSessionImpl   
    : public IDBCreateSession  

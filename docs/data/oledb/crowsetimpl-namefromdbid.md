@@ -22,13 +22,10 @@ Extracts a string from a **DBID** and copies it to the `bstr` passed in.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CRowsetBaseImpl::NameFromDBID(  
-   DBID* pDBID,  
+```cpp
+HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,  
    CComBSTR& bstr,  
-   bool bIndex   
-);  
+   bool bIndex);  
 ```  
   
 #### Parameters  

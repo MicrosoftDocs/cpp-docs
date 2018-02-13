@@ -22,11 +22,8 @@ Adds a bind entry to the output columns.
   
 ## Syntax  
   
-```  
-  
-      HRESULT AddBindEntry(   
-   const DBCOLUMNINFO& info    
-) throw( );  
+```cpp
+HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();  
 ```  
   
 #### Parameters  

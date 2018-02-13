@@ -22,15 +22,11 @@ Retrieves the length of the specified parameter stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-      bool GetParamLength(  
-   DBORDINAL nParam,  
-   DBLENGTH* pLength  
-);  
-DBLENGTH* GetParamLength(   
-   DBORDINAL nParam    
-) const throw( );  
+```
+bool GetParamLength(DBORDINAL nParam,  
+  DBLENGTH* pLength);  
+
+DBLENGTH* GetParamLength(DBORDINAL nParam) const throw();  
 ```  
   
 #### Parameters  

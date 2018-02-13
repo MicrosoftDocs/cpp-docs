@@ -22,8 +22,7 @@ Index to the rowset representing the cursor.
   
 ## Syntax  
   
-```  
-  
+```cpp
 KeyType m_iRowset;  
   
 ```  

@@ -22,11 +22,8 @@ Binds the bookmark column.
   
 ## Syntax  
   
-```  
-  
-BOOKMARK_ENTRY(  
-variable  
- )  
+```cpp
+BOOKMARK_ENTRY(variable)  
   
 ```  
   
@@ -36,7 +33,8 @@ variable
   
 ## Example  
 
-```cpp  
+```
+cpp  
 class CArtistsBookmark
 {
 public:

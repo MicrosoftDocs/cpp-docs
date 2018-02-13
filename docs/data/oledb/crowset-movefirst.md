@@ -22,9 +22,8 @@ Moves the cursor to the initial position and retrieves the initial row.
   
 ## Syntax  
   
-```  
-  
-HRESULT MoveFirst( ) throw( );  
+```cpp
+HRESULT MoveFirst() throw();  
   
 ```  
   

@@ -22,12 +22,9 @@ Returns the text command set by the last call to [SetCommandText](../../data/ole
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetCommandText)(   
-   GUID * pguidDialect,   
-   LPOLESTR * ppwszCommand    
-);  
+```cpp
+      STDMETHOD(GetCommandText)(GUID * pguidDialect,   
+   LPOLESTR * ppwszCommand);  
 ```  
   
 #### Parameters  

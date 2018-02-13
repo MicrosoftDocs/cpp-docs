@@ -22,16 +22,13 @@ Transmits any changes made to the row since the last fetch or update.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Update )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Update )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBCOUNTITEM* pcRows,  
    HROW** prgRows,  
-   DBROWSTATUS** prgRowStatus   
-);  
+   DBROWSTATUS** prgRowStatus);  
 ```  
   
 #### Parameters  

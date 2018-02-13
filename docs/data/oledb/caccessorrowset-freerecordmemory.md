@@ -22,9 +22,8 @@ Frees any columns in the current record that need to be freed.
   
 ## Syntax  
   
-```  
-  
-void FreeRecordMemory( );  
+```cpp
+void FreeRecordMemory();  
   
 ```  
   

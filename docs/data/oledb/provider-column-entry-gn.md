@@ -22,10 +22,8 @@ Represents a specific column supported by the provider.
   
 ## Syntax  
   
-```  
-  
-PROVIDER_COLUMN_ENTRY_GN (  
-name  
+```cpp
+PROVIDER_COLUMN_ENTRY_GN (name  
 , ordinal, flags, colSize, dbtype, precision, scale, guid )  
 ```  
   

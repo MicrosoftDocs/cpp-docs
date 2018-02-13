@@ -22,11 +22,8 @@ Gets the error description string from an error record.
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetErrorDescriptionString(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

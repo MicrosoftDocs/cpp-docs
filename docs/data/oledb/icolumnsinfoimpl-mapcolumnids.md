@@ -22,13 +22,10 @@ Returns an array of ordinals of the columns in a rowset that are identified by t
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD (MapColumnIDs)(  
-   DBORDINAL cColumnIDs,  
+```cpp
+      STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,  
    const DBID rgColumnIDs[],  
-   DBORDINAL rgColumns[]   
-);  
+   DBORDINAL rgColumns[]);  
 ```  
   
 #### Parameters  

@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CNoAccessor Class
 Can be used as a template argument (`TAccessor`) for template classes, such as `CCommand` and `CTable`, that require an accessor class argument.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CNoAccessor  
 ```  
   

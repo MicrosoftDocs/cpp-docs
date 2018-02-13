@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "error-reference"
 dev_langs: ["C++"]
 ms.assetid: 8151f355-85c5-4d36-b05f-ed0bdf912d3a
 caps.latest.revision: 8

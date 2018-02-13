@@ -25,13 +25,8 @@ Specifies the command that will be used to create the rowset when using the [CCo
   
 ## Syntax  
   
-```  
-  
-DEFINE_COMMAND(  
-x  
-,   
-szCommand  
- )  
+```cpp
+DEFINE_COMMAND(x, szCommand)  
   
 ```  
   

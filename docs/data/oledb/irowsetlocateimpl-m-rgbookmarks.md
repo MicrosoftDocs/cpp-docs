@@ -22,8 +22,7 @@ An array of bookmarks.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CAtlArray<DBROWCOUNT> m_rgBookmarks;  
   
 ```  

@@ -22,13 +22,10 @@ Specifies which restrictions you support on a particular schema rowset.
   
 ## Syntax  
   
-```  
-  
-      void SetRestrictions(  
-   ULONG cRestrictions,  
-   GUID* /* rguidSchema */,  
-   ULONG* rgRestrictions   
-);  
+```
+void SetRestrictions(ULONG cRestrictions,  
+  GUID* /* rguidSchema */,  
+   ULONG* rgRestrictions);  
 ```  
   
 #### Parameters  

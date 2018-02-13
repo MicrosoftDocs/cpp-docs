@@ -22,13 +22,10 @@ Override this method to check for security, integrity, and so on before updates.
   
 ## Syntax  
   
-```  
-  
-      HRESULT IsUpdateAllowed(  
-   DBPENDINGSTATUS /* [in] *//* status */,  
+```cpp
+HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] *//* status */,  
    HROW /* [in] *//* hRowUpdate */,  
-   DBROWSTATUS* /* [out] *//* pRowStatus */  
-);  
+   DBROWSTATUS* /* [out] *//* pRowStatus */);  
 ```  
   
 #### Parameters  

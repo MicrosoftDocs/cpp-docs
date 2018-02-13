@@ -22,12 +22,9 @@ Checks to see if either or both **DBID**s contain string values, and if so, copi
   
 ## Syntax  
   
-```  
-  
-      HRESULT CRowsetBaseImpl::ValidateCommandID(  
-   DBID* pTableID,  
-   DBID* pIndexID   
-);  
+```cpp
+HRESULT CRowsetBaseImpl::ValidateCommandID(DBID* pTableID,  
+   DBID* pIndexID);  
 ```  
   
 #### Parameters  

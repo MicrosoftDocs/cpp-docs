@@ -1,7 +1,7 @@
 # [C Run-Time Library Reference](c-run-time-library-reference.md)
 # [CRT Library Features](crt-library-features.md)
 ## [Compatibility](compatibility.md)
-### [Windows Store Apps, the Windows Runtime, and the C Run-Time](windows-store-apps-the-windows-runtime-and-the-c-run-time.md)
+### [UWP Apps, the Windows Runtime, and the C Run-Time](windows-store-apps-the-windows-runtime-and-the-c-run-time.md)
 ### [ANSI C Compliance](ansi-c-compliance.md)
 ### [UNIX](unix.md)
 ### [Windows Platforms (CRT)](windows-platforms-crt.md)

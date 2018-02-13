@@ -20,7 +20,7 @@ ms.workload: ["cplusplus", "data-storage"]
 # CMyProviderWindowsFile
 The wizard creates a class to contain one row of data; in this case, it is called `CMyProviderWindowsFile`. The following code for `CMyProviderWindowsFile` is wizard generated and lists all the files in a directory by using the **WIN32_FIND_DATA** structure. `CMyProviderWindowsFile` inherits from the **WIN32_FIND_DATA** structure:  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
   
@@ -42,7 +42,7 @@ END_PROVIDER_COLUMN_MAP()
   
  The `CMyProviderRowset` class also contains the `Execute` method. `Execute` is what actually reads the data in from the native source. The following code shows the wizard-generated `Execute` method. The function uses the Win32 **FindFirstFile** and `FindNextFile` APIs to retrieve information about the files in the directory and place them in instances of the `CMyProviderWindowsFile` class.  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
   

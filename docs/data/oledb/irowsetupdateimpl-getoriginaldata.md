@@ -22,13 +22,10 @@ Gets the data most recently transmitted to or obtained from the data source, ign
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetOriginalData )(  
-   HROW hRow,  
+```cpp
+      STDMETHOD (GetOriginalData )(HROW hRow,  
    HACCESSOR hAccessor,  
-   void* pData   
-);  
+   void* pData);  
 ```  
   
 #### Parameters  

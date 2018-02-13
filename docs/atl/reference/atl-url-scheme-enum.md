@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATLUTIL/ATL::ATL_URL_SCHEME"]
 ms.assetid: f4131046-8ba0-4ec1-8209-84203f05d20e

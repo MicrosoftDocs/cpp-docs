@@ -22,16 +22,12 @@ Adds a bind entry to the output columns.
   
 ## Syntax  
   
-```  
-  
-      void AddBindEntry(  
-   DBORDINAL nOrdinal,  
-   DBTYPE wType,  
-   DBLENGTH nColumnSize,  
+```
+void AddBindEntry(DBORDINAL nOrdinal,  
+   DBTYPE wType,  DBLENGTH nColumnSize,  
    void* pData,  
    void* pLength = NULL,  
-   void* pStatus = NULL   
-) throw ( );  
+   void* pStatus = NULL) throw ();  
 ```  
   
 #### Parameters  

@@ -22,11 +22,8 @@ Retrieves the name of the specified parameter.
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetParamName(   
-   DBORDINAL nParam    
-) const throw( );  
+```cpp
+      LPOLESTR GetParamName(DBORDINAL nParam) const throw();  
 ```  
   
 #### Parameters  

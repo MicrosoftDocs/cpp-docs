@@ -32,7 +32,7 @@ The Universal C Run-Time Library (UCRT) supports most of the C standard library 
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Windows Store Apps, the Windows Runtime, and the C Run-Time](../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md)|Describes when UCRT routines are not compatible with Universal Windows apps or Windows Store apps.|  
+|[UWP Apps, the Windows Runtime, and the C Run-Time](../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md)|Describes when UCRT routines are not compatible with Universal Windows apps or Microsoft Store apps.|  
 |[ANSI C Compliance](../c-runtime-library/ansi-c-compliance.md)|Describes standard-compliant naming in the UCRT.|  
 |[UNIX](../c-runtime-library/unix.md)|Provides guidelines for porting programs to UNIX.|  
 |[Windows Platforms (CRT)](../c-runtime-library/windows-platforms-crt.md)|Lists the operating systems that are the CRT supports.|  

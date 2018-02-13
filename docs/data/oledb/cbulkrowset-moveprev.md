@@ -22,9 +22,8 @@ Moves to the previous row.
   
 ## Syntax  
   
-```  
-  
-HRESULT MovePrev( ) throw( );  
+```cpp
+HRESULT MovePrev() throw();  
   
 ```  
   

@@ -120,11 +120,9 @@ ms.workload: ["cplusplus"]
 ## /LTCG and MSIL Modules  
  Modules that are compiled by using [/GL](../../build/reference/gl-whole-program-optimization.md) and [/clr](../../build/reference/clr-common-language-runtime-compilation.md) can be used as input to the linker when **/LTCG** is specified.  
   
--   **/LTCG** can accept native object files, mixed native/managed object files (compiled by using **/clr**), and pure object files (compiled by using **/clr:pure**), and safe object files (compiled by using **/clr:safe**). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
+-   **/LTCG** can accept native object files, and mixed native/managed object files (compiled by using **/clr**). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
--   **/LTCG** can accept safe .netmodules, which can be created by using **/clr:safe /LN** in Visual C++ and **/target:module** in any .NET Visual Studio compiler. .Netmodules produced by using **/clr** or **/clr:pure** are not accepted by **/LTCG**.  
-  
--   /LTCG:PGI does not accept native modules compiled by using **/GL** and **/clr**, or pure modules (produced by using **/clr:pure**)  
+-   /LTCG:PGI does not accept native modules compiled by using **/GL** and **/clr**  
   
 #### To set this compiler option in the Visual Studio development environment  
   

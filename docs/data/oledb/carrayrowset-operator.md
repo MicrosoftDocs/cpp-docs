@@ -22,8 +22,7 @@ Provides array-like syntax for accessing a row in the rowset.
   
 ## Syntax  
   
-```  
-  
+```cpp
       TAccessor  
       & operator[](int nrow);  
 ```  

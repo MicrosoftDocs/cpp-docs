@@ -22,11 +22,8 @@ Opens a connection to a data source using an initialization string.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(   
-   LPCOLESTR szInitString    
-) throw( );  
+```cpp
+HRESULT Open(LPCOLESTR szInitString) throw();  
 ```  
   
 #### Parameters  

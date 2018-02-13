@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IRowsetInfoImpl Class
 Provides an implementation for the [IRowsetInfo](https://msdn.microsoft.com/en-us/library/ms724541.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class PropClass = T>  
 class ATL_NO_VTABLE IRowsetInfoImpl :   
    public IRowsetInfo,    

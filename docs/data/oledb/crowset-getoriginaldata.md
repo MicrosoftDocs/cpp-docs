@@ -22,9 +22,8 @@ Calls **IRowsetUpdate::GetOriginalData** to retrieve the data most recently fetc
   
 ## Syntax  
   
-```  
-  
-HRESULT GetOriginalData( ) throw( );  
+```cpp
+HRESULT GetOriginalData() throw();  
   
 ```  
   

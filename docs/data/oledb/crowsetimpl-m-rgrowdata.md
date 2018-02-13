@@ -22,8 +22,7 @@ By default, a `CAtlArray` that templatizes on the user record template argument 
   
 ## Syntax  
   
-```  
-  
+```cpp
 ArrayType CRowsetBaseImpl::m_rgRowData;  
   
 ```  

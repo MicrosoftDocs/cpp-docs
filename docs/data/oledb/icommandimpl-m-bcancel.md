@@ -22,8 +22,7 @@ Indicates whether the command is canceled.
   
 ## Syntax  
   
-```  
-  
+```cpp
 unsigned m_bCancel:1;  
   
 ```  

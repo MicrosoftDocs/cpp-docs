@@ -22,9 +22,8 @@ Marks the end of property set map entries.
   
 ## Syntax  
   
-```  
-  
-END_PROPSET_MAP( )  
+```cpp
+END_PROPSET_MAP()  
   
 ```  
   

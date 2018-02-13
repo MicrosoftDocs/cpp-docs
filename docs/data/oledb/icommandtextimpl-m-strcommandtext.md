@@ -22,8 +22,7 @@ Stores the command text string.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CComBSTR m_strCommandText;  
   
 ```  

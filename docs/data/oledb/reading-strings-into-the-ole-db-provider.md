@@ -28,7 +28,7 @@ The `RMyProviderRowset::Execute` function opens a file and reads strings. The co
   
 ### Code  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
 class RMyProviderRowset : public CRowsetImpl< RMyProviderRowset, CAgentMan, CRMyProviderCommand>  

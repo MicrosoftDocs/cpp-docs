@@ -22,11 +22,8 @@ Gets the path name of the help file from an error record.
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetErrorHelpFile(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

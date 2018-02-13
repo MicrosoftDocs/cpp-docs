@@ -22,9 +22,8 @@ Calls [IRowset::AddRefRows](https://msdn.microsoft.com/en-us/library/ms719619.as
   
 ## Syntax  
   
-```  
-  
-HRESULT AddRefRows( ) throw( );  
+```cpp
+HRESULT AddRefRows() throw();  
   
 ```  
   

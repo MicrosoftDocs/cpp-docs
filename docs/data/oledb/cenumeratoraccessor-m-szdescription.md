@@ -22,8 +22,7 @@ The description of the data source or enumerator.
   
 ## Syntax  
   
-```  
-  
+```cpp
 WCHAR m_szDescription[129];  
   
 ```  

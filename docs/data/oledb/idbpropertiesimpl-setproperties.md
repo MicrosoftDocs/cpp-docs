@@ -22,12 +22,9 @@ Sets properties in the Data Source and Initialization property groups, for data 
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(SetProperties)(   
-   ULONG cPropertySets,   
-   DBPROPSET rgPropertySets[]    
-);  
+```cpp
+      STDMETHOD(SetProperties)(ULONG cPropertySets,   
+   DBPROPSET rgPropertySets[]);  
 ```  
   
 #### Parameters  

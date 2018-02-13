@@ -22,13 +22,10 @@ Gets a list of the command's parameters, their names, and their types.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CCommandBase::GetParameterInfo(  
-   DB_UPARAMS* pParams,  
+```cpp
+HRESULT CCommandBase::GetParameterInfo(DB_UPARAMS* pParams,  
    DBPARAMINFO** ppParamInfo,  
-   OLECHAR** ppNamesBuffer   
-) throw ( );  
+   OLECHAR** ppNamesBuffer) throw ();  
 ```  
   
 #### Parameters  

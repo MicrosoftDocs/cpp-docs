@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # ICommandTextImpl Class
 Provides an implementation for the [ICommandText](https://msdn.microsoft.com/en-us/library/ms714914.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T >  
 class ATL_NO_VTABLE ICommandTextImpl   
    : public ICommandImpl<T, ICommandText>  

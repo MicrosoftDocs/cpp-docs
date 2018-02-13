@@ -22,8 +22,7 @@ Indicates whether a provider supports backward fetching.
   
 ## Syntax  
   
-```  
-  
+```cpp
 unsigned m_bCanFetchBack:1;  
   
 ```  

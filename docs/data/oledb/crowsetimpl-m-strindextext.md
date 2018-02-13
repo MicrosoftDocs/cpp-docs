@@ -22,8 +22,7 @@ Contains the rowset's initial index.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CComBSTR CRowsetBaseImpl::m_strIndexText;  
   
 ```  

@@ -22,11 +22,8 @@ Opens a data source from a file specified by the user-supplied file name.
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenFromFileName(   
-   LPCOLESTR szFileName    
-) throw( );  
+```cpp
+HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();  
 ```  
   
 #### Parameters  

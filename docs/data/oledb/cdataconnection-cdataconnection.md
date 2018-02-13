@@ -22,12 +22,10 @@ Instantiates and initializes a `CDataConnection` object.
   
 ## Syntax  
   
-```  
-  
+```cpp
       CDataConnection();   
-CDataConnection(  
-   const CDataConnection &ds  
-);  
+
+CDataConnection(const CDataConnection &ds);  
 ```  
   
 #### Parameters  

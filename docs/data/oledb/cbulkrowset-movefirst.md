@@ -22,9 +22,8 @@ Retrieves the first row of data.
   
 ## Syntax  
   
-```  
-  
-HRESULT MoveFirst( ) throw( );  
+```cpp
+HRESULT MoveFirst() throw();  
   
 ```  
   

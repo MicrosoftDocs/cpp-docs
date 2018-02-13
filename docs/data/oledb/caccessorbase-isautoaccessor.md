@@ -22,11 +22,8 @@ Returns true if data is automatically retrieved for the accessor during a Move o
   
 ## Syntax  
   
-```  
-  
-      bool IsAutoAccessor(  
-   ULONG nAccessor   
-) const;  
+```cpp
+      bool IsAutoAccessor(ULONG nAccessor) const;  
 ```  
   
 #### Parameters  

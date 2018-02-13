@@ -22,20 +22,15 @@ Sets the status of the specified column.
   
 ## Syntax  
   
-```  
-  
-      bool SetStatus(   
-   DBORDINAL nColumn,   
-   DBSTATUS status    
-) throw( );  
-bool SetStatus(   
-   const CHAR* pColumnName,   
-   DBSTATUS status    
-) throw( );  
-bool SetStatus(   
-   const WCHAR* pColumnName,   
-   DBSTATUS status    
-) throw( );  
+```
+bool SetStatus(DBORDINAL nColumn,   
+   DBSTATUS status)throw();  
+
+bool SetStatus(const CHAR* pColumnName,   
+   DBSTATUS status) throw();  
+
+bool SetStatus(const WCHAR* pColumnName,   
+   DBSTATUS status) throw();  
 ```  
   
 #### Parameters  

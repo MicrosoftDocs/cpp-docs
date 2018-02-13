@@ -22,12 +22,9 @@ Retrieves the column characteristics.
   
 ## Syntax  
   
-```  
-  
-      bool GetColumnFlags(   
-   DBORDINAL nColumn,   
-   DBCOLUMNFLAGS* pFlags    
-) const throw( );  
+```
+bool GetColumnFlags(DBORDINAL nColumn,   
+  DBCOLUMNFLAGS* pFlags) const throw();  
 ```  
   
 #### Parameters  

@@ -22,11 +22,8 @@ Adds a property ID to the property ID set.
   
 ## Syntax  
   
-```  
-  
-      bool AddPropertyID(   
-   DBPROPID propid    
-) throw( );  
+```cpp
+      bool AddPropertyID(DBPROPID propid) throw();  
 ```  
   
 #### Parameters  

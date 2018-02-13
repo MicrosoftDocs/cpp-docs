@@ -22,9 +22,8 @@ Determines whether the current session is open or not.
   
 ## Syntax  
   
-```  
-  
-operator bool( ) throw( );  
+```cpp
+operator bool() throw();  
   
 ```  
   

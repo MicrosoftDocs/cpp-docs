@@ -22,12 +22,9 @@ Sets properties for the command object.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(SetProperties)(   
-   ULONG cPropertySets,   
-   DBPROPSET rgPropertySets[]    
-);  
+```cpp
+      STDMETHOD(SetProperties)(ULONG cPropertySets,   
+   DBPROPSET rgPropertySets[]);  
 ```  
   
 #### Parameters  

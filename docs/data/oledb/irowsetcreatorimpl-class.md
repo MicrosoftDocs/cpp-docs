@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IRowsetCreatorImpl Class
 Performs the same functions as `IObjectWithSite` but also enables the OLE DB properties **DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS**.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template < class T >  
 class ATL_NO_VTABLE IRowsetCreatorImpl   
    : public IObjectWithSiteImpl< T >  

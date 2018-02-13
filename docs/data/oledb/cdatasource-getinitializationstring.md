@@ -22,12 +22,9 @@ Retrieves the initialization string of a data source that is currently open.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetInitializationString(   
-   BSTR* pInitializationString,   
-   bool bIncludePassword = false    
-) throw( );  
+```cpp
+HRESULT GetInitializationString(BSTR* pInitializationString,   
+   bool bIncludePassword = false) throw();  
 ```  
   
 #### Parameters  

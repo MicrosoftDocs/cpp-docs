@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CMultipleResults Class
 If you want a command to handle multiple result sets, use `CMultipleResults` for the `CCommand` template argument *TMultiple*.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CMultipleResults  
 ```  
   

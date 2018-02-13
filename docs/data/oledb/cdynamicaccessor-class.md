@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDynamicAccessor Class
 Allows you to access a data source when you have no knowledge of the database schema (the database's underlying structure).  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CDynamicAccessor : public CAccessorBase  
 ```  
   

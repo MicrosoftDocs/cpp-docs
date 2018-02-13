@@ -22,13 +22,8 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ## Syntax  
   
-```  
-  
-COLUMN_NAME(  
-pszName  
-,   
-data  
- )  
+```cpp
+COLUMN_NAME(pszName, data)  
   
 ```  
   

@@ -22,13 +22,10 @@ Returns a pointer to an interface on a custom error object.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetCustomErrorObject )(  
-   ULONG ulRecordNum,  
+```cpp
+      STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,  
    REFIID riid,  
-   IUnknown **ppObject   
-);  
+   IUnknown **ppObject);  
 ```  
   
 #### Parameters  

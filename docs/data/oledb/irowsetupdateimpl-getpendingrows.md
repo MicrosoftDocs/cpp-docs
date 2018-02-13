@@ -22,15 +22,12 @@ Returns a list of rows with pending changes.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetPendingRows )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,  
    DBPENDINGSTATUS dwRowStatus,  
    DBCOUNTITEM* pcPendingRows,  
    HROW** prgPendingRows,  
-   DBPENDINGSTATUS** prgPendingStatus   
-);  
+   DBPENDINGSTATUS** prgPendingStatus);  
 ```  
   
 #### Parameters  
