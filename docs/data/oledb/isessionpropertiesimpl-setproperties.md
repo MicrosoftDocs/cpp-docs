@@ -22,12 +22,9 @@ Sets properties in the **DBPROPSET_SESSION** property group.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(SetProperties)(   
-   ULONG cPropertySets,   
-   DBPROPSET rgPropertySets[]    
-);  
+```cpp
+      STDMETHOD(SetProperties)(ULONG cPropertySets,   
+   DBPROPSET rgPropertySets[]);  
 ```  
   
 #### Parameters  

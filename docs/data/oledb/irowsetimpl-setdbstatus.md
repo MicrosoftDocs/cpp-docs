@@ -22,13 +22,10 @@ Sets the `DBSTATUS` status flags for the specified field.
   
 ## Syntax  
   
-```  
-  
-      virtual HRESULT SetDBStatus(  
-   DBSTATUS* statusFlags,  
+```cpp
+      virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,  
    RowClass* currentRow,  
-   ATLCOLUMNINFO* columnInfo   
-);  
+   ATLCOLUMNINFO* columnInfo);  
 ```  
   
 #### Parameters  

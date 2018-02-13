@@ -22,11 +22,8 @@ Marks the beginning of the parameter map entries.
   
 ## Syntax  
   
-```  
-  
-BEGIN_PARAM_MAP(  
-x  
- )  
+```cpp
+BEGIN_PARAM_MAP(x)  
   
 ```  
   

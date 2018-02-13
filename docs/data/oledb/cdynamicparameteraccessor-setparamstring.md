@@ -22,18 +22,12 @@ Sets the string data of the specified parameter stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-      bool SetParamString(   
-   DBORDINAL nParam,   
-   const CHAR* pString,   
-   DBSTATUS status = DBSTATUS_S_OK    
-) throw( );  
-bool SetParamString(   
-   DBORDINAL nParam,   
-   const WCHAR* pString,   
-   DBSTATUS status = DBSTATUS_S_OK    
-) throw( );  
+```
+bool SetParamString(DBORDINAL nParam,   
+   constCHAR* pString,   
+   DBSTATUS status = DBSTATUS_S_OK) throw();bool SetParamString(DBORDINAL nParam,   
+   constWCHAR* pString,   
+   DBSTATUS status = DBSTATUS_S_OK) throw();  
 ```  
   
 #### Parameters  

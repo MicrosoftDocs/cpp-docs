@@ -22,11 +22,8 @@ Marks the beginning of the provider column map entries.
   
 ## Syntax  
   
-```  
-  
-BEGIN_PROVIDER_COLUMN_MAP(  
-theClass   
-)  
+```cpp
+BEGIN_PROVIDER_COLUMN_MAP(theClass)  
   
 ```  
   

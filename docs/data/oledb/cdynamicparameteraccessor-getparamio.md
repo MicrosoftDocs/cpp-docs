@@ -22,12 +22,9 @@ Determines whether the specified parameter is an input or output parameter.
   
 ## Syntax  
   
-```  
-  
-      bool GetParamIO(   
-   DBORDINAL nParam,   
-   DBPARAMIO * pParamIO    
-) const throw( );  
+```
+bool GetParamIO(DBORDINAL nParam,   
+   DBPARAMIO* pParamIO) const throw();  
 ```  
   
 #### Parameters  

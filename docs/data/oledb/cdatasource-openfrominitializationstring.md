@@ -22,12 +22,9 @@ Opens a data source specified by the user-supplied initialization string.
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenFromInitializationString(   
-   LPCOLESTR szInitializationString,   
-   bool fPromptForInfo = false    
-) throw( );  
+```
+HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,   
+   bool fPromptForInfo= false) throw();  
 ```  
   
 #### Parameters  

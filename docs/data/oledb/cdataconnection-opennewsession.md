@@ -22,11 +22,8 @@ Opens a new session using the current connection object's data source.
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenNewSession(   
-   CSession & session    
-) throw( );  
+```cpp
+HRESULT OpenNewSession(CSession & session) throw();  
 ```  
   
 #### Parameters  

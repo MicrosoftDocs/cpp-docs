@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IGetDataSourceImpl Class
 Provides an implementation of the [IGetDataSource](https://msdn.microsoft.com/en-us/library/ms709721.aspx) object.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T>  
 class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource  
 ```  

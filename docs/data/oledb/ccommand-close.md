@@ -20,10 +20,10 @@ ms.workload: ["cplusplus", "data-storage"]
 # CCommand::Close
 Releases the accessor rowset associated with the command.  
   
-## Syntax  
-  
-```  
-void Close( );  
+## Syntax
+
+```cpp
+void Close();  
 ```  
   
 ## Remarks  

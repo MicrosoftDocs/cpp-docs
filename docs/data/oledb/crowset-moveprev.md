@@ -22,9 +22,8 @@ Moves the cursor to the previous record.
   
 ## Syntax  
   
-```  
-  
-HRESULT MovePrev( ) throw( );  
+```cpp
+HRESULT MovePrev() throw();  
   
 ```  
   

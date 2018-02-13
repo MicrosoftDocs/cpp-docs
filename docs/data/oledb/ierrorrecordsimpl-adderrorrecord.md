@@ -22,15 +22,12 @@ Adds a record to the OLE DB error object.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( AddErrorRecord )(  
-   ERRORINFO *pErrorInfo,  
+```cpp
+      STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,  
    DWORD dwLookupID,  
    DISPPARAMS *pdispparams,  
    IUnknown *punkCustomError,  
-   DWORD dwDynamicErrorID   
-);  
+   DWORD dwDynamicErrorID);  
 ```  
   
 #### Parameters  

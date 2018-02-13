@@ -22,16 +22,13 @@ Undoes any changes to the row since the last fetch or update.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Undo )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Undo )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[ ],  
    DBCOUNTITEM* pcRowsUndone,  
    HROW** prgRowsUndone,  
-   DBROWSTATUS** prgRowStatus   
-);  
+   DBROWSTATUS** prgRowStatus);  
 ```  
   
 #### Parameters  

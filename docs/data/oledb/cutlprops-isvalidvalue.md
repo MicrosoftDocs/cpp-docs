@@ -22,12 +22,9 @@ Used to validate a value before setting a property.
   
 ## Syntax  
   
-```  
-  
-      virtual HRESULT CUtlPropsBase::IsValidValue(  
-   ULONG /* iCurSet */,  
-   DBPROP* pDBProp   
-);  
+```cpp
+      virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,  
+   DBPROP* pDBProp);  
 ```  
   
 #### Parameters  

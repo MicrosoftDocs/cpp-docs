@@ -22,15 +22,12 @@ Executes the command.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Execute(  
-   IUnknown* pUnkOuter,  
+```cpp
+HRESULT Execute(IUnknown* pUnkOuter,  
    REFIID riid,  
    DBPARAMS* pParams,  
    DBROWCOUNT* pcRowsAffected,  
-   IUnknown** ppRowset   
-);  
+   IUnknown** ppRowset);  
 ```  
   
 #### Parameters  

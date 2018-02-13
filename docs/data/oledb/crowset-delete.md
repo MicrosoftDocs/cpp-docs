@@ -22,9 +22,8 @@ Calls [IRowsetChange::DeleteRows](https://msdn.microsoft.com/en-us/library/ms724
   
 ## Syntax  
   
-```  
-  
-HRESULT Delete( ) const throw( );  
+```cpp
+HRESULT Delete() const throw();  
   
 ```  
   

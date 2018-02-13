@@ -22,21 +22,17 @@ Creates a rowset object. Not called directly by user. See [IOpenRowset::OpenRows
   
 ## Syntax  
   
-```  
-  
-      template <class   
-      RowsetClass  
+```cpp
+      template template <class RowsetClass  
       >  
-HRESULT CreateRowset(  
-   IUnknown* pUnkOuter,  
+HRESULT CreateRowset(IUnknown* pUnkOuter,  
    DBID* pTableID,  
    DBID* pIndexID,  
    REFIID riid,  
    ULONG cPropertySets,  
    DBPROPSET rgPropertySets[],  
    IUnknown** ppRowset,  
-   RowsetClass*& pRowsetObj   
-);  
+   RowsetClass*& pRowsetObj);  
 ```  
   
 #### Parameters  

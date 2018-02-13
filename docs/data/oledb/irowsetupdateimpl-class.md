@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IRowsetUpdateImpl Class
 The OLE DB Templates implementation of the [IRowsetUpdate](https://msdn.microsoft.com/en-us/library/ms714401.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <  
    class T,   
    class Storage,   
@@ -30,13 +30,13 @@ template <
    class RowClass = CSimpleRow,   
    class MapClass = CAtlMap <RowClass::KeyType, RowClass*>   
 >  
+
 class IRowsetUpdateImpl : public IRowsetChangeImpl<  
    T,   
    Storage,   
    IRowsetUpdate,   
    RowClass,   
-   MapClass  
->  
+   MapClass>  
 ```  
   
 #### Parameters  

@@ -35,9 +35,9 @@ Dynamic accessors allow you to access a data source when you have no knowledge o
 #include <objbase.h>  
 #include <atldbcli.h>  
   
-int main( int argc, char* argv[] )  
+int main(int argc, char* argv[] )  
 {  
-    HRESULT hr = CoInitialize( NULL );  
+    HRESULT hr = CoInitialize(NULL );  
   
     CDataSource ds;  
     CSession ss;  
@@ -53,34 +53,34 @@ int main( int argc, char* argv[] )
       L"Use Encryption for Data=False;"  
       L"Tag with column collation when possible=False");  
   
-    hr = ss.Open( ds );  
-    hr = rs.Open( ss, "Shippers" );  
+    hr = ss.Open(ds );  
+    hr = rs.Open(ss, "Shippers" );  
   
-    hr = rs.MoveFirst( );  
-    while( SUCCEEDED( hr ) && hr != DB_S_ENDOFROWSET )  
+    hr = rs.MoveFirst();  
+    while(SUCCEEDED(hr ) && hr != DB_S_ENDOFROWSET )  
     {  
-        for( size_t i = 1; i <= rs.GetColumnCount( ); i++ )  
+        for(size_t i = 1; i <= rs.GetColumnCount(); i++ )  
         {  
             DBTYPE type;  
-            rs.GetColumnType( i, &type );  
+            rs.GetColumnType(i, &type );  
             printf_s( "Column %d [%S] is of type %d\n",  
-                      i, rs.GetColumnName( i ), type );   
+                      i, rs.GetColumnName(i ), type );   
   
-            switch( type )  
+            switch(type )  
             {  
                 case DBTYPE_WSTR:  
                     printf_s( "value is %S\n",  
-                              (WCHAR*)rs.GetValue( i ) );  
+                              (WCHAR*)rs.GetValue(i ) );  
                 break;  
                 case DBTYPE_STR:  
                     printf_s( "value is %s\n",  
-                              (CHAR*)rs.GetValue( i ) );  
+                              (CHAR*)rs.GetValue(i ) );  
                 default:  
                     printf_s( "value is %d\n",  
-                              *(long*)rs.GetValue( i ) );  
+                              *(long*)rs.GetValue(i ) );  
             }  
         }  
-        hr = rs.MoveNext( );  
+        hr = rs.MoveNext();  
     }  
   
     rs.Close();     
@@ -108,9 +108,9 @@ int main( int argc, char* argv[] )
 #include <objbase.h>  
 #include <atldbcli.h>  
   
-int main( int argc, char* argv[] )  
+int main(int argc, char* argv[] )  
 {  
-    HRESULT hr = CoInitialize( NULL );  
+    HRESULT hr = CoInitialize(NULL );  
     if (hr != S_OK)  
     {  
         exit (-1);  
@@ -130,18 +130,18 @@ int main( int argc, char* argv[] )
       L"Use Encryption for Data=False;"  
       L"Tag with column collation when possible=False");  
   
-    hr = ss.Open( ds );  
-    hr = rs.Open( ss, "Shippers" );  
+    hr = ss.Open(ds );  
+    hr = rs.Open(ss, "Shippers" );  
   
-    hr = rs.MoveFirst( );  
-    while( SUCCEEDED( hr ) && hr != DB_S_ENDOFROWSET )  
+    hr = rs.MoveFirst();  
+    while(SUCCEEDED(hr ) && hr != DB_S_ENDOFROWSET )  
     {  
-        for( size_t i = 1; i <= rs.GetColumnCount( ); i++ )  
+        for(size_t i = 1; i <= rs.GetColumnCount(); i++ )  
         {  
             printf_s( "column %d value is %s\n",   
-                      i, rs.GetString( i ) );  
+                      i, rs.GetString(i ) );  
         }  
-        hr = rs.MoveNext( );  
+        hr = rs.MoveNext();  
     }  
   
     rs.Close();     

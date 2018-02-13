@@ -22,11 +22,8 @@ Returns the number of records in the OLE DB record object.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetRecordCount )(  
-   ULONG *pcRecords   
-);  
+```cpp
+      STDMETHOD(GetRecordCount )(ULONG *pcRecords);  
 ```  
   
 #### Parameters  

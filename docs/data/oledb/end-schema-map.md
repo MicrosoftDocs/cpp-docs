@@ -22,9 +22,8 @@ Denotes the end of the schema map.
   
 ## Syntax  
   
-```  
-  
-END_SCHEMA_MAP( )  
+```cpp
+END_SCHEMA_MAP()  
   
 ```  
   

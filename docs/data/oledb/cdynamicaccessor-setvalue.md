@@ -22,23 +22,21 @@ Stores data to a specified column.
   
 ## Syntax  
   
-```  
-  
-      template < class ctype >    
+```cpp  
+template <class ctype>
 bool SetValue(   
    DBORDINAL nColumn,   
-   const ctype& data    
-) throw( );  
-template < class ctype >    
+   constctype& data) throw( );  
+
+template <class ctype>    
 bool SetValue(   
    const CHAR * pColumnName,   
-   const ctype& data    
-) throw( );  
+   const ctype& data) throw( );  
+
 template <class ctype>   
 bool SetValue(  
    const WCHAR *pColumnName,  
-   const ctype& data   
-) throw( );  
+   const ctype& data) throw( );  
 ```  
   
 #### Parameters  

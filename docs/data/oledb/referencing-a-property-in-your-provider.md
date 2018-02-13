@@ -31,9 +31,10 @@ CDBPropSet propset(DBPROPSET_ROWSET);
   
 ```  
 CDBPropSet propset(DBPROPSET_ROWSET);  
+
 propset.AddProperty(DBPROP_IRowsetChange, true);  
-propset.AddProperty(DBPROP_UPDATABILITY,  
-DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_DELETE);  
+
+propset.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_DELETE);  
 ```  
   
  Use the `IRowset` interface to call **GetProperties**. Pass the property set as a parameter. Here is the final code:  
@@ -45,13 +46,16 @@ CComQIPtr<IRowsetInfo, &IID_IRowsetInfo> spRowsetProps = pRowset;
   
 DBPROPIDSET set;  
 set.AddPropertyID(DBPROP_BOOKMARKS);  
+
 DBPROPSET* pPropSet = NULL;  
 ULONG ulPropSet = 0;  
+
 HRESULT hr;  
   
 if (spRowsetProps)  
    hr = spRowsetProps->GetProperties(1, &set, &ulPropSet, &pPropSet);  
   
+
 if (pPropSet)  
 {  
    CComVariant var = pPropSet->rgProperties[0].vValue;  

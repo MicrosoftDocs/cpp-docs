@@ -22,9 +22,8 @@ Discards the current command execution plan.
   
 ## Syntax  
   
-```  
-  
-HRESULT CCommandBase::Unprepare( ) throw( );  
+```cpp
+HRESULT CCommandBase::Unprepare() throw();  
   
 ```  
   

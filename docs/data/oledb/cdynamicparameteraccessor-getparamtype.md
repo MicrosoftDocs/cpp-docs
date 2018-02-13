@@ -22,12 +22,9 @@ Retrieves the data type of a specified parameter.
   
 ## Syntax  
   
-```  
-  
-      bool GetParamType(  
-   DBORDINAL nParam,  
-   DBTYPE* pType   
-) const throw( );  
+```
+bool GetParamType(DBORDINAL nParam,  
+  DBTYPE* pType) const throw();  
 ```  
   
 #### Parameters  

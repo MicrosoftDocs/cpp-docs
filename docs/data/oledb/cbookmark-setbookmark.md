@@ -22,12 +22,9 @@ Copies the bookmark value referenced by `pBuffer` to the `CBookmark` buffer and 
   
 ## Syntax  
   
-```  
-  
-      HRESULT SetBookmark(  
-   DBLENGTH nSize,  
-   BYTE* pBuffer   
-) throw( );  
+```
+HRESULT SetBookmark(DBLENGTH nSize,  
+  BYTE* pBuffer) throw();  
 ```  
   
 #### Parameters  

@@ -22,9 +22,8 @@ Creates a new `CBulkRowset` object and sets the default row count to 10.
   
 ## Syntax  
   
-```  
-  
-CBulkRowset( );  
+```cpp
+CBulkRowset();  
   
 ```  
   

@@ -22,11 +22,8 @@ Creates a new `CArrayRowset` object.
   
 ## Syntax  
   
-```  
-  
-      CArrayRowset(   
-   int nMax = 100000    
-);  
+```cpp
+      CArrayRowset(int nMax = 100000);  
 ```  
   
 #### Parameters  

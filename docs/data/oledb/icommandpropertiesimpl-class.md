@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # ICommandPropertiesImpl Class
 Provides an implementation of the [ICommandProperties](https://msdn.microsoft.com/en-us/library/ms723044.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class PropClass = T>  
 class ATL_NO_VTABLE ICommandPropertiesImpl   
    : public ICommandProperties, public CUtlProps<PropClass>  

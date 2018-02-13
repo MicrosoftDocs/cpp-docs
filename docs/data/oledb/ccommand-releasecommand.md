@@ -22,9 +22,8 @@ Releases the parameter accessor, then releases the command itself.
   
 ## Syntax  
   
-```  
-  
-void CCommandBase::ReleaseCommand( ) throw( );  
+```cpp
+void CCommandBase::ReleaseCommand() throw();  
   
 ```  
   

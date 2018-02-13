@@ -22,17 +22,8 @@ Represents a binding on the rowset to the specific column in the rowset.
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_PS(  
-nOrdinal  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
- )  
+```cpp
+COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)  
   
 ```  
   

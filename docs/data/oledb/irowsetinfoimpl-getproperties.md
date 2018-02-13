@@ -22,14 +22,11 @@ Returns the current settings for properties in the **DBPROPSET_ROWSET** group.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetProperties )(  
-   const ULONG cPropertyIDSets,  
+```cpp
+      STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,  
    const DBPROPIDSET rgPropertyIDSets[],  
    ULONG* pcPropertySets,  
-   DBPROPSET** prgPropertySets   
-);  
+   DBPROPSET** prgPropertySets);  
 ```  
   
 #### Parameters  

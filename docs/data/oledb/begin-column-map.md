@@ -23,11 +23,7 @@ Marks the beginning of a column map entry.
 ## Syntax  
   
 ```  
-  
-BEGIN_COLUMN_MAP(  
-x  
- )  
-  
+BEGIN_COLUMN_MAP(x)  
 ```  
   
 #### Parameters  

@@ -22,11 +22,8 @@ Compares two rows to see if they refer to the same row instance.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Compare(   
-   CSimpleRow* pRow    
-);  
+```cpp
+HRESULT Compare(CSimpleRow* pRow);  
 ```  
   
 #### Parameters  

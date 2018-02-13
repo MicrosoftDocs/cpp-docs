@@ -22,13 +22,10 @@ Returns an interface pointer to the rowset to which a bookmark applies.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetReferencedRowset )(  
-   DBORDINAL iOrdinal,  
+```cpp
+      STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,  
    REFIID riid,  
-   IUnknown** ppReferencedRowset   
-);  
+   IUnknown** ppReferencedRowset);  
 ```  
   
 #### Parameters  

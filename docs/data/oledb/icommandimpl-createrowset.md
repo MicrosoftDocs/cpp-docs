@@ -22,19 +22,15 @@ Called by [Execute](../../data/oledb/icommandimpl-execute.md) to create a single
   
 ## Syntax  
   
-```  
-  
-      template <class   
-      RowsetClass  
+```cpp
+      template template <class RowsetClass  
       >  
-HRESULT CreateRowset(  
-   IUnknown* pUnkOuter,  
+HRESULT CreateRowset(IUnknown* pUnkOuter,  
    REFIID riid,  
    DBPARAMS* pParams,  
    DBROWCOUNT* pcRowsAffected,  
    IUnknown** ppRowset,  
-   RowsetClass*& pRowsetObj   
-);  
+   RowsetClass*& pRowsetObj);  
 ```  
   
 #### Parameters  

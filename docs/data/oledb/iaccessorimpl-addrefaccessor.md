@@ -22,12 +22,9 @@ Adds a reference count to an existing accessor.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(AddRefAccessor)(  
-   HACCESSOR hAccessor,  
-   DBREFCOUNT* pcRefCount   
-);  
+```cpp
+      STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,  
+   DBREFCOUNT* pcRefCount);  
 ```  
   
 #### Parameters  

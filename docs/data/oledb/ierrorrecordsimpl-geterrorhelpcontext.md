@@ -22,11 +22,8 @@ Gets the help context ID from an error record.
   
 ## Syntax  
   
-```  
-  
-      DWORD GetErrorHelpContext(  
-   ERRORINFO& rCurError   
-);  
+```cpp
+      DWORD GetErrorHelpContext(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  

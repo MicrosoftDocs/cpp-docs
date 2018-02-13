@@ -22,14 +22,11 @@ Returns the basic columns bindings from the consumer in an accessor.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(GetBindings)(  
-   HACCESSOR hAccessor,  
+```cpp
+      STDMETHOD(GetBindings)(HACCESSOR hAccessor,  
    DBACCESSORFLAGS* pdwAccessorFlags,  
    DBCOUNTITEM* pcBindings,  
-   DBBINDING** prgBindings   
-);  
+   DBBINDING** prgBindings);  
 ```  
   
 #### Parameters  

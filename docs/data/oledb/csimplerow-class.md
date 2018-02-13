@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CSimpleRow Class
 Provides a default implementation for the row handle, which is used in the [IRowsetImpl](../../data/oledb/irowsetimpl-class.md) class.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CSimpleRow  
 ```  
   

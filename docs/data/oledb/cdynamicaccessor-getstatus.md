@@ -22,20 +22,15 @@ Retrieves the status of the specified column.
   
 ## Syntax  
   
-```  
-  
-      bool GetStatus(   
-   DBORDINAL nColumn,   
-   DBSTATUS* pStatus    
-) const throw( );  
-bool GetStatus(  
-   const CHAR* pColumnName,  
-   DBSTATUS* pStatus   
-) const throw( );  
-bool GetStatus(  
-   const WCHAR* pColumnName,  
-   DBSTATUS* pStatus   
-) const throw( );  
+```
+bool GetStatus(DBORDINAL nColumn,   
+  DBSTATUS* pStatus) const throw();  
+
+bool GetStatus(const CHAR* pColumnName,  
+   DBSTATUS* pStatus) const throw();  
+
+bool GetStatus(const WCHAR* pColumnName,  
+   DBSTATUS* pStatus) const throw();  
 ```  
   
 #### Parameters  

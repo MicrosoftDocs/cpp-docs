@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CStreamRowset Class
 Used in a `CCommand` or `CTable` declaration.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class TAccessor = CAccessorBase>  
 class CStreamRowset  
 ```  

@@ -22,11 +22,8 @@ Returns the status of all rows.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetRowStatus(   
-   DBPENDINGSTATUS* pStatus    
-) const throw( );  
+```cpp
+HRESULT GetRowStatus(DBPENDINGSTATUS* pStatus) const throw();  
 ```  
   
 #### Parameters  

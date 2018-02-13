@@ -22,13 +22,10 @@ Undoes any changes made to a row since the last fetch or [Update](../../data/ole
   
 ## Syntax  
   
-```  
-  
-      HRESULT Undo(   
-   DBCOUNTITEM* pcRows = NULL,   
+```cpp
+HRESULT Undo(DBCOUNTITEM* pcRows = NULL,   
    HROW* phRow = NULL,   
-   DBROWSTATUS* pStatus = NULL    
-) throw( );  
+   DBROWSTATUS* pStatus = NULL) throw();  
 ```  
   
 #### Parameters  

@@ -22,9 +22,8 @@ Retrieves the BLOB handling value for the current row.
   
 ## Syntax  
   
-```  
-  
-const DBBLOBHANDLINGENUM GetBlobHandling( ) const;  
+```cpp
+const DBBLOBHANDLINGENUM GetBlobHandling() const;  
   
 ```  
   

@@ -22,9 +22,8 @@ Initializes the `CAccessorRowset` object.
   
 ## Syntax  
   
-```  
-  
-CAccessorRowset( );  
+```cpp
+CAccessorRowset();  
   
 ```  
   

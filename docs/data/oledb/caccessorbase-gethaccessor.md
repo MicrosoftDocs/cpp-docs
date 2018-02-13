@@ -22,11 +22,8 @@ Retrieves the accessor handle of a specified accessor.
   
 ## Syntax  
   
-```  
-  
-      HACCESSOR GetHAccessor(  
-   ULONG nAccessor   
-) const;  
+```cpp
+      HACCESSOR GetHAccessor(ULONG nAccessor) const;  
 ```  
   
 #### Parameters  

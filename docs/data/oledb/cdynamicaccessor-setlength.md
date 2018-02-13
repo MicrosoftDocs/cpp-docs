@@ -22,20 +22,15 @@ Sets the length of the specified column.
   
 ## Syntax  
   
-```  
-  
-      bool SetLength(   
-   DBORDINAL nColumn,   
-   DBLENGTH nLength    
-) throw( );  
-bool SetLength(   
-   const CHAR* pColumnName,   
-   DBLENGTH nLength    
-) throw( );  
-bool SetLength(   
-   const WCHAR* pColumnName,   
-   DBLENGTH nLength    
-) throw( );  
+```
+bool SetLength(DBORDINAL nColumn,   
+   DBLENGTH nLength)throw();  
+
+bool SetLength(const CHAR* pColumnName,   
+   DBLENGTH nLength) throw();  
+
+bool SetLength(const WCHAR* pColumnName,   
+   DBLENGTH nLength) throw();  
 ```  
   
 #### Parameters  

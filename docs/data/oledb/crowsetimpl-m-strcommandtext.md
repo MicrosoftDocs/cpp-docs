@@ -22,8 +22,7 @@ Contains the rowset's initial command.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CComBSTR CRowsetBaseImpl::m_strCommandText;  
   
 ```  

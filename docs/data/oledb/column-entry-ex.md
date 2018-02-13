@@ -22,25 +22,8 @@ Represents a binding on the rowset to the specific column in the database.
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_EX(  
-nOrdinal  
-,   
-wType  
-,   
-nLength  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
-,   
-length  
-,   
-status  
- )  
+```cpp
+COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, status)  
   
 ```  
   

@@ -104,9 +104,10 @@ BEGIN_COLUMN_MAP(CProducts)
 END_COLUMN_MAP()  
 };  
   
-CTable<CAccessor<CProducts > > product;  
+CTable<CAccessor<CProducts >> product;  
   
 product.Open(session, "Product");  
+
 while (product.MoveNext() == S_OK)  
 {  
    // Check the product name isn't NULL before tracing it  

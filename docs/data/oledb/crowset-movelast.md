@@ -22,9 +22,8 @@ Moves the cursor to the last row.
   
 ## Syntax  
   
-```  
-  
-HRESULT MoveLast( ) throw( );  
+```cpp
+HRESULT MoveLast() throw();  
   
 ```  
   

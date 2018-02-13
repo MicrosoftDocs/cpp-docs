@@ -22,11 +22,8 @@ Sets the site that contains the rowset object. For more information, see [IObjec
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( SetSite )(  
-   IUnknown* pCreator   
-);  
+```cpp
+      STDMETHOD(SetSite )(IUnknown* pCreator);  
 ```  
   
 #### Parameters  

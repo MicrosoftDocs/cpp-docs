@@ -22,11 +22,8 @@ Validates and optimizes the current command.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CCommandBase::Prepare(  
-   ULONG cExpectedRuns = 0   
-) throw( );  
+```cpp
+HRESULT CCommandBase::Prepare(ULONG cExpectedRuns = 0) throw();  
 ```  
   
 #### Parameters  

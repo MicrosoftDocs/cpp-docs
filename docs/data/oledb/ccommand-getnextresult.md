@@ -22,12 +22,9 @@ Fetches the next result set if one is available.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetNextResult(  
-   DBROWCOUNT* pulRowsAffected,  
-   bool bBind = true   
-) throw( );  
+```cpp
+HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected,  
+   bool bBind = true) throw();  
 ```  
   
 #### Parameters  

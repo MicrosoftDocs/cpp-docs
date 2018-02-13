@@ -22,11 +22,8 @@ Sets the **guidPropertySet** field in the **DBPROPSET** structure.
   
 ## Syntax  
   
-```  
-  
-      void SetGUID(   
-   const GUID& guid    
-) throw( );  
+```cpp
+      void SetGUID(const GUID& guid) throw();  
 ```  
   
 #### Parameters  

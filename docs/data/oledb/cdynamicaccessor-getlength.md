@@ -22,20 +22,15 @@ Retrieves the length of the specified column.
   
 ## Syntax  
   
-```  
-  
-      bool GetLength(   
-   DBORDINAL nColumn,   
-   DBLENGTH* pLength    
-) const throw( );  
-bool GetLength(   
-   const CHAR* pColumnName,   
-   DBLENGTH* pLength    
-) const throw( );  
-bool GetLength(   
-   const WCHAR* pColumnName,   
-   DBLENGTH* pLength    
-) const throw( );  
+```
+bool GetLength(DBORDINAL nColumn,   
+  DBLENGTH* pLength) const throw();  
+
+bool GetLength(const CHAR* pColumnName,   
+   DBLENGTH* pLength) const throw();  
+
+bool GetLength(const WCHAR* pColumnName,   
+   DBLENGTH* pLength) const throw();  
 ```  
   
 #### Parameters  

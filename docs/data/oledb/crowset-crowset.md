@@ -22,12 +22,10 @@ Creates a new `CRowset` object and (optionally) associates it with an [IRowset](
   
 ## Syntax  
   
-```  
-  
-      CRowset( );   
-CRowset(  
-   IRowset* pRowset   
-);  
+```cpp
+      CRowset();   
+
+CRowset(IRowset* pRowset);  
 ```  
   
 #### Parameters  

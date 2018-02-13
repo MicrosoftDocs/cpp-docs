@@ -22,11 +22,8 @@ Retrieves the name of the specified column.
   
 ## Syntax  
   
-```  
-  
-      LPOLESTR GetColumnName(   
-   DBORDINAL nColumn    
-) const throw( );  
+```cpp
+      LPOLESTR GetColumnName(DBORDINAL nColumn) const throw();  
 ```  
   
 #### Parameters  

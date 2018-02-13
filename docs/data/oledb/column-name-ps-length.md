@@ -22,18 +22,8 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ## Syntax  
   
-```  
-  
-COLUMN_NAME_PS_LENGTH(  
-pszName  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
-,   
-length )  
+```cpp
+COLUMN_NAME_PS_LENGTH(pszName, nPrecision, nScale, data, length )  
 ```  
   
 #### Parameters  

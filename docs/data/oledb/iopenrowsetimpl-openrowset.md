@@ -22,17 +22,14 @@ Opens and returns a rowset that includes all rows from a single base table or in
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenRowset(  
-   IUnknown* pUnkOuter,  
+```cpp
+HRESULT OpenRowset(IUnknown* pUnkOuter,  
    DBID* pTableID,  
    DBID* pIndexID,  
    REFIID riid,  
    ULONG cPropertySets,  
    DBPROPSET rgPropertySets[],  
-   IUnknown** ppRowset   
-);  
+   IUnknown** ppRowset);  
 ```  
   
 #### Parameters  

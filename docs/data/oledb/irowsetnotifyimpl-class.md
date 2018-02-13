@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IRowsetNotifyImpl Class
 Implements and registers [IRowsetNotify](https://msdn.microsoft.com/en-us/library/ms712959.aspx) on the consumer (also known as the "sink") so that it can handle notifications.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify  
 ```  
   

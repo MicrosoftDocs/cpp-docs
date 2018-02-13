@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CNoRowset Class
 Can be used as a template argument (`TRowset`) for [CCommand](../../data/oledb/ccommand-class.md) or [CTable](../../data/oledb/ctable-class.md).  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class TAccessor = CAccessorBase>  
 class CNoRowset  
 ```  

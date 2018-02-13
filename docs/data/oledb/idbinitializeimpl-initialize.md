@@ -22,11 +22,8 @@ Initializes the data source object by preparing its property support.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(Initialize)(   
-   void    
-);  
+```cpp
+      STDMETHOD(Initialize)(void);  
 ```  
   
 ## Remarks  

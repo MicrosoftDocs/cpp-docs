@@ -22,14 +22,11 @@ Deletes rows from the rowset.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( DeleteRows )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
-   DBROWSTATUS rgRowStatus[]   
-);  
+   DBROWSTATUS rgRowStatus[]);  
 ```  
   
 #### Parameters  

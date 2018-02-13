@@ -22,9 +22,8 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
-IAccessorImpl( );  
+```cpp
+IAccessorImpl();  
   
 ```  
   

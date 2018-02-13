@@ -22,12 +22,9 @@ Validates and stores the **DBID**s in the two strings ([m_strCommandText](../../
   
 ## Syntax  
   
-```  
-  
-      HRESULT CRowsetBaseImpl::SetCommandText(  
-   DBID* pTableID,  
-   DBID* pIndexID   
-);  
+```cpp
+HRESULT CRowsetBaseImpl::SetCommandText(DBID* pTableID,  
+   DBID* pIndexID);  
 ```  
   
 #### Parameters  

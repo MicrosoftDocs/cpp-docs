@@ -22,13 +22,10 @@ Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( GetSchema s )(  
-   ULONG * pcSchemas,  
+```cpp
+      STDMETHOD (GetSchema s )(ULONG * pcSchemas,  
    GUID ** prgSchemas,  
-   ULONG** prgRest  
-);  
+   ULONG** prgRest);  
 ```  
   
 #### Parameters  

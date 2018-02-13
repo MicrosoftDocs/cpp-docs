@@ -22,13 +22,10 @@ Allocates memory for the parameter bind structures and initializes the parameter
   
 ## Syntax  
   
-```  
-  
-      HRESULT CreateParameterAccessor(   
-   int nBindEntries,   
-   void* pBuffer,   
-   DBLENGTH nBufferSize    
-) throw( );  
+```
+HRESULT CreateParameterAccessor(int nBindEntries,   
+  void* pBuffer,   
+   DBLENGTH nBufferSize) throw();  
 ```  
   
 #### Parameters  

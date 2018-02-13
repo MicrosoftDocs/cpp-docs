@@ -22,14 +22,11 @@ Adds a reference count to an existing row handle.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( AddRefRows )(  
-   DBCOUNTITEM cRows,  
+```cpp
+      STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBREFCOUNT rgRefCounts[],  
-   DBROWSTATUS rgRowStatus[]   
-);  
+   DBROWSTATUS rgRowStatus[]);  
 ```  
   
 #### Parameters  

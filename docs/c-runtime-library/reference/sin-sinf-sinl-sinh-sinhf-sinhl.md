@@ -25,36 +25,26 @@ Calculates sines and hyperbolic sines.
   
 ## Syntax  
   
-```  
-double sin(  
-   double x   
-);  
-float sin(  
-   float x  
-);  // C++ only  
-long double sin(  
-   long double x  
-);  // C++ only  
-float sinf(  
-   float x   
-);  
-long double sinl(   long double x  
-);  
-double sinh(  
-   double x   
-);  
-float sinh(  
-   float x   
-);  // C++ only  
-long double sinh(  
-   long double x  
-);  // C++ only  
-float sinhf(  
-   float x  
-);  
-long double sinhl(  
-   long double x  
-);  
+```cpp  
+double sin(double x);
+  
+float sin(float x);  // C++ only 
+ 
+long double sin(long double x);  // C++ only  
+
+float sinf(float x);  
+
+long double sinl(long double x);  
+
+double sinh(double x);  
+
+float sinh(float x);  // C++ only  
+
+long double sinh(long double x);  // C++ only  
+
+float sinhf(float x);  
+
+long double sinhl(long double x);  
 ```  
   
 #### Parameters  
@@ -96,7 +86,7 @@ long double sinhl(
 #include <math.h>  
 #include <stdio.h>  
   
-int main( void )  
+int main( void)  
 {  
    double pi = 3.1415926535;  
    double x, y;  

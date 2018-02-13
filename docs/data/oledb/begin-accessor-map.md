@@ -23,13 +23,7 @@ Marks the beginning of the accessor map entries.
 ## Syntax  
   
 ```  
-  
-BEGIN_ACCESSOR_MAP(  
-x  
-,   
-num  
- )  
-  
+BEGIN_ACCESSOR_MAP(x, num)  
 ```  
   
 #### Parameters  

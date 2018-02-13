@@ -22,12 +22,9 @@ Calls [IErrorRecords::GetBasicErrorInfo](https://msdn.microsoft.com/en-us/librar
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetBasicErrorInfo(   
-   ULONG ulRecordNum,   
-   ERRORINFO* pErrorInfo    
-) const throw( );  
+```
+HRESULT GetBasicErrorInfo(ULONG ulRecordNum,   
+  ERRORINFO* pErrorInfo) const throw();  
 ```  
   
 #### Parameters  

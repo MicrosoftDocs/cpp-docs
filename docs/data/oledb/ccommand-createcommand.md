@@ -22,11 +22,8 @@ Creates a new command.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CCommandBase::CreateCommand(  
-   const CSession& session   
-) throw ( );  
+```cpp
+HRESULT CCommandBase::CreateCommand(const CSession& session) throw ();  
 ```  
   
 #### Parameters  

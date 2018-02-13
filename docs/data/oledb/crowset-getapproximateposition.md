@@ -22,13 +22,10 @@ Returns the approximate position of a row corresponding to a bookmark.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetApproximatePosition(   
-   const CBookmarkBase* pBookmark,   
+```cpp
+HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark,   
    DBCOUNTITEM* pPosition,   
-   DBCOUNTITEM* pcRows    
-) throw( );  
+   DBCOUNTITEM* pcRows) throw();  
 ```  
   
 #### Parameters  

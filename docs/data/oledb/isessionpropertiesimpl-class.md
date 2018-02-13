@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # ISessionPropertiesImpl Class
 Provides an implementation of the [ISessionProperties](https://msdn.microsoft.com/en-us/library/ms713721.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class PropClass = T>  
 class ATL_NO_VTABLE ISessionPropertiesImpl :  
    public ISessionProperties,    

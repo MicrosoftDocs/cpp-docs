@@ -22,9 +22,8 @@ Marks the end of the accessor map entries.
   
 ## Syntax  
   
-```  
-  
-END_ACCESSOR_MAP( )  
+```cpp
+END_ACCESSOR_MAP()  
   
 ```  
   

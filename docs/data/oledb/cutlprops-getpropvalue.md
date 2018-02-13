@@ -22,13 +22,10 @@ Gets a property from a property set.
   
 ## Syntax  
   
-```  
-  
-      OUT_OF_LINE HRESULT GetPropValue(  
-   const GUID* pguidPropSet,  
+```cpp
+      OUT_OF_LINE HRESULT GetPropValue(const GUID* pguidPropSet,  
    DBPROPID dwPropId,  
-   VARIANT* pvValue   
-);  
+   VARIANT* pvValue);  
 ```  
   
 #### Parameters  

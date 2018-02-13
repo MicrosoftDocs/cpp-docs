@@ -22,13 +22,10 @@ Opens a new session for the data source object.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Open(  
-   const CDataSource& ds,  
+```cpp
+HRESULT Open(const CDataSource& ds,  
    DBPROPSET *pPropSet = NULL,  
-   ULONG ulPropSets = 0  
-) throw( );  
+   ULONG ulPropSets = 0) throw();  
 ```  
   
 #### Parameters  

@@ -22,58 +22,19 @@ Adds a property to the property set.
   
 ## Syntax  
   
-```  
-  
-      bool AddProperty(   
-   DWORD dwPropertyID,   
-   const VARIANT& var,   
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   LPCSTR szValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   LPCWSTR szValue,   
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   bool bValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   BYTE bValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-);  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   short nValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-);  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   long nValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-);  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   float fltValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-);  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   double dblValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
-bool AddProperty(  
-   DWORD dwPropertyID,  
-   CY cyValue,  
-   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED    
-) throw( );  
+```
+bool AddProperty(DWORD dwPropertyID,   
+   constVARIANT& var,   
+   DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   LPCSTR szValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   LPCWSTR szValue,DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   bool bValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   BYTE bValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
+   short nValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
+   long nValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
+   float fltValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED);bool AddProperty(DWORD dwPropertyID,  
+   double dblValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,  
+   CY cyValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();  
 ```  
   
 #### Parameters  

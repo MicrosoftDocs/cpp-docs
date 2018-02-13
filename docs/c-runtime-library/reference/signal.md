@@ -1,7 +1,7 @@
 ---
 title: "signal | Microsoft Docs"
 ms.custom: ""
-ms.date: "1/02/2018"
+ms.date: "02/12/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
@@ -28,9 +28,7 @@ Sets interrupt signal handling.
 ## Syntax
 
 ```C
-void (__cdecl *signal(
-   int sig,
-   void (__cdecl *func ) (int [, int ] )))(int);
+void __cdecl *signal(int sig, int (*func)(int, int));
 ```
 
 ### Parameters
@@ -38,11 +36,11 @@ _sig_
 Signal value.
 
 _func_  
-Function to be executed. The first parameter is a signal value and the second parameter is a sub-code that can be used when the first parameter is SIGFPE.
+The second parameter is a pointer to the function to be executed. The first parameter is a signal value and the second parameter is a sub-code that can be used when the first parameter is SIGFPE.
 
 ## Return Value
 
-`signal` returns the previous value of _func_ that's associated with the given signal. For example, if the previous value of _func_ was `SIG_IGN`, the return value is also `SIG_IGN`. A return value of `SIG_ERR` indicates an error; in that case, `errno` is set to `EINVAL`.
+`signal` returns the previous value of func that's associated with the given signal. For example, if the previous value of _func_ was `SIG_IGN`, the return value is also `SIG_IGN`. A return value of `SIG_ERR` indicates an error; in that case, `errno` is set to `EINVAL`.
 
 See [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about return codes.
 

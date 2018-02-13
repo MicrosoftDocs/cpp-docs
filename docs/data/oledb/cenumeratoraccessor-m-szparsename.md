@@ -22,8 +22,7 @@ String to pass to [IParseDisplayName](http://msdn.microsoft.com/library/windows/
   
 ## Syntax  
   
-```  
-  
+```cpp
 WCHAR m_szParseName[129];  
   
 ```  

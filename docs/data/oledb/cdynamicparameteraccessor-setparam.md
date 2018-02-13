@@ -22,21 +22,16 @@ Sets the parameter buffer using the specified (non-string) data.
   
 ## Syntax  
   
-```  
-  
-      template < class   
-      ctype >  
-bool SetParam(  
-   DBORDINAL nParam,  
-   const ctype* pData,  
-   DBSTATUS status = DBSTATUS_S_OK  
-) throw( );  
-template < class ctype >  
-bool SetParam(  
-   TCHAR* pParamName,  
-   const ctype* pData,  
-   DBSTATUS status = DBSTATUS_S_OK  
-) throw( );  
+```cpp
+template <class ctype>
+bool SetParam(DBORDINAL nParam,  
+               constctype* pData,  
+               DBSTATUS status = DBSTATUS_S_OK) throw();  
+
+template <class ctype>  
+bool SetParam(TCHAR* pParamName,  
+               const ctype* pData,  
+               DBSTATUS status = DBSTATUS_S_OK) throw();  
 ```  
   
 #### Parameters  

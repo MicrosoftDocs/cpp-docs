@@ -22,9 +22,8 @@ Retrieves the number of columns.
   
 ## Syntax  
   
-```  
-  
-DBORDINAL GetColumnCount( ) const throw( );  
+```cpp
+DBORDINAL GetColumnCount() const throw();  
   
 ```  
   

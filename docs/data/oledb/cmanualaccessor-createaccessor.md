@@ -22,13 +22,10 @@ Allocates memory for the column bind structures and initializes the column data 
   
 ## Syntax  
   
-```  
-  
-      HRESULT CreateAccessor(   
-   int nBindEntries,   
-   void* pBuffer,   
-   DBLENGTH nBufferSize    
-) throw( );  
+```
+HRESULT CreateAccessor(int nBindEntries,   
+  void* pBuffer,   
+   DBLENGTH nBufferSize) throw();  
 ```  
   
 #### Parameters  

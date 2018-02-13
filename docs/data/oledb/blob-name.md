@@ -22,16 +22,8 @@ Used with `BEGIN_COLUMN_MAP` and `END_COLUMN_MAP` to bind a binary large object 
   
 ## Syntax  
   
-```  
-  
-BLOB_NAME(  
-pszName  
-,   
-IID  
-,   
-flags  
-,   
-data )  
+```cpp
+BLOB_NAME(pszName, IID, flags, data )  
 ```  
   
 #### Parameters  

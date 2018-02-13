@@ -22,12 +22,9 @@ Returns an interface pointer to the session that created the command.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD (GetDBSession) (  
-   REFIID riid,  
-   IUnknown** ppSession   
-);  
+```cpp
+      STDMETHOD (GetDBSession) (REFIID riid,  
+   IUnknown** ppSession);  
 ```  
   
 #### Parameters  

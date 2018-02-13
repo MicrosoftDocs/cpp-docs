@@ -20,12 +20,13 @@ ms.workload: ["cplusplus", "data-storage"]
 # CBookmark Class
 Holds a bookmark value in its buffer.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template < DBLENGTH nSize = 0 >  
-class CBookmark : public CBookmarkBase  
-template < >  
+class CBookmark : public CBookmarkBase
+  
+template <>  
 class CBookmark< 0 > : public CBookmarkBase  
 ```  
   

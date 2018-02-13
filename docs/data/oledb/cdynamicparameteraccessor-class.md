@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CDynamicParameterAccessor Class
 Similar to [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) but obtains parameter information to be set by calling the [ICommandWithParameters](https://msdn.microsoft.com/en-us/library/ms712937.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CDynamicParameterAccessor : public CDynamicAccessor  
 ```  
   

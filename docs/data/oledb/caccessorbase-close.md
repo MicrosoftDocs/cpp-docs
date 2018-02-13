@@ -22,9 +22,8 @@ Closes the accessors.
   
 ## Syntax  
   
-```  
-  
-void Close( );  
+```cpp
+void Close();  
   
 ```  
   

@@ -22,13 +22,9 @@ Checks the validity of restrictions against a schema rowset.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CheckRestrictions(  
-   REFGUID rguidSchema,  
-   ULONG cRestrictions,  
-   const VARIANT rgRestrictions[]  
-);  
+```
+HRESULT CheckRestrictions(REFGUID rguidSchema,  
+   ULONG cRestrictions,  const VARIANT rgRestrictions[]);  
 ```  
   
 #### Parameters  

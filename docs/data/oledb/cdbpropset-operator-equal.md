@@ -22,11 +22,8 @@ Assigns the contents of one property set to another property set.
   
 ## Syntax  
   
-```  
-  
-      CDBPropSet& operator =(   
-   CDBPropSet& propset    
-) throw( );  
+```cpp
+      CDBPropSet& operator =(CDBPropSet& propset) throw();  
 ```  
   
 ## Requirements  

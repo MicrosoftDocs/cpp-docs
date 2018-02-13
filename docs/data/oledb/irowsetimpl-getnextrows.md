@@ -22,15 +22,12 @@ Fetches rows sequentially, remembering the previous position.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetNextRows )(  
-   HCHAPTER hReserved,  
+```cpp
+      STDMETHOD(GetNextRows )(HCHAPTER hReserved,  
    DBROWOFFSET lRowsOffset,  
    DBROWCOUNT cRows,  
    DBCOUNTITEM* pcRowsObtained,  
-   HROW** prghRows   
-);  
+   HROW** prghRows);  
 ```  
   
 #### Parameters  

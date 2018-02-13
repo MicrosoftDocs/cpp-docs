@@ -22,9 +22,8 @@ Marks the end of the parameter map entries.
   
 ## Syntax  
   
-```  
-  
-END_PARAM_MAP( )  
+```cpp
+END_PARAM_MAP()  
   
 ```  
   

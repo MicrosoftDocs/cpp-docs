@@ -22,11 +22,8 @@ Assigns a `CBookmark` object to another.
   
 ## Syntax  
   
-```  
-  
-      CBookmark& operator =(   
-   const CBookmark& bookmark    
-) throw( );  
+```cpp
+      CBookmark& operator =(const CBookmark& bookmark) throw();  
 ```  
   
 ## Remarks  

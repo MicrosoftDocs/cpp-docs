@@ -22,9 +22,8 @@ Releases any active accessors and the rowset.
   
 ## Syntax  
   
-```  
-  
-void Close( );  
+```cpp
+void Close();  
   
 ```  
   

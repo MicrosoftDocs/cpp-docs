@@ -22,11 +22,8 @@ Sets the number of row handles retrieved by each call.
   
 ## Syntax  
   
-```  
-  
-      void SetRows(  
-   DBROWCOUNT nRows   
-) throw( );  
+```cpp
+      void SetRows(DBROWCOUNT nRows) throw();  
 ```  
   
 #### Parameters  

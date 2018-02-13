@@ -22,15 +22,12 @@ Parses the display name to extract the component of the string that can be conve
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetMoniker(   
-   LPMONIKER* ppMoniker    
-) const throw( );  
-HRESULT GetMoniker(   
-   LPMONIKER* ppMoniker,   
-   LPCTSTR lpszDisplayName    
-) const throw( );  
+```cpp
+HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();  
+
+
+HRESULT GetMoniker(LPMONIKER* ppMoniker,   
+   LPCTSTR lpszDisplayName) const throw();  
 ```  
   
 #### Parameters  

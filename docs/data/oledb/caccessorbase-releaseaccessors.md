@@ -22,11 +22,8 @@ Releases the accessors created by the class.
   
 ## Syntax  
   
-```  
-  
-      HRESULT ReleaseAccessors(  
-   IUnknown* pUnk   
-);  
+```cpp
+HRESULT ReleaseAccessors(IUnknown* pUnk);  
 ```  
   
 #### Parameters  

@@ -22,9 +22,8 @@ Retrieves the number of parameters stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-DB_UPARAMS GetParamCount( ) const throw( );  
+```cpp
+DB_UPARAMS GetParamCount() const throw();  
   
 ```  
   

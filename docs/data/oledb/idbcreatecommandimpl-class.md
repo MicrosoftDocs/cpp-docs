@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IDBCreateCommandImpl Class
 Provides an implementation of the [IDBCreateCommand](https://msdn.microsoft.com/en-us/library/ms711625.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class CommandClass >  
 class ATL_NO_VTABLE IDBCreateCommandImpl   
    : public IDBCreateCommand  

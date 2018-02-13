@@ -22,10 +22,8 @@ Represents a specific column supported by the provider.
   
 ## Syntax  
   
-```  
-  
-PROVIDER_COLUMN_ENTRY (  
-name  
+```cpp
+PROVIDER_COLUMN_ENTRY (name  
 , ordinal, member )  
 ```  
   

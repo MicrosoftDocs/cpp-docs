@@ -22,18 +22,15 @@ Calls [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) to c
   
 ## Syntax  
   
-```  
-  
-      HRESULT CCommandBase::Create(  
-   const CSession& session,   
+```cpp
+HRESULT CCommandBase::Create(const CSession& session,   
    LPCWSTR wszCommand,   
-   REFGUID guidCommand = DBGUID_DEFAULT  
-) throw ( );  
-HRESULT CCommandBase::Create(  
-   const CSession& session,   
+   REFGUID guidCommand = DBGUID_DEFAULT) throw ();  
+
+
+HRESULT CCommandBase::Create(const CSession& session,   
    LPCSTR szCommand,   
-   REFGUID guidCommand = DBGUID_DEFAULT  
-) throw ( );  
+   REFGUID guidCommand = DBGUID_DEFAULT) throw ();  
 ```  
   
 #### Parameters  

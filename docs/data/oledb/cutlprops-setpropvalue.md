@@ -22,13 +22,10 @@ Sets a property in a property set.
   
 ## Syntax  
   
-```  
-  
-      HRESULT SetPropValue(  
-   const GUID* pguidPropSet,  
+```cpp
+HRESULT SetPropValue(const GUID* pguidPropSet,  
    DBPROPID dwPropId,  
-   VARIANT* pvValue   
-);  
+   VARIANT* pvValue);  
 ```  
   
 #### Parameters  

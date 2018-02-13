@@ -22,8 +22,7 @@ Data source flags.
   
 ## Syntax  
   
-```  
-  
+```cpp
 DWORD m_dwStatus;  
   
 ```  

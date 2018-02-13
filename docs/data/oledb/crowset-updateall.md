@@ -22,13 +22,10 @@ Transmits any pending changes made to all rows since the last fetch or **Update*
   
 ## Syntax  
   
-```  
-  
-      HRESULT UpdateAll(   
-   DBCOUNTITEM* pcRows = NULL,   
+```cpp
+HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,   
    HROW** pphRow = NULL,   
-   DBROWSTATUS** ppStatus = NULL    
-) throw( );  
+   DBROWSTATUS** ppStatus = NULL) throw();  
 ```  
   
 #### Parameters  

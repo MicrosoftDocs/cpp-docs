@@ -22,9 +22,8 @@ The constructor.
   
 ## Syntax  
   
-```  
-  
-ICommandImpl( );  
+```cpp
+ICommandImpl();  
   
 ```  
   

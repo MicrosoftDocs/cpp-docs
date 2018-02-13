@@ -32,11 +32,12 @@ BEGIN_COLUMN_MAP(CCategories)
 END_COLUMN_MAP()  
 };  
   
-CTable<CAccessor<CCategories> > categories;  
+CTable<CAccessor<CCategories>> categories;  
 ULONG          cb;  
 BYTE            myBuffer[65536];  
   
 categories.Open(session, "Categories");  
+
 while (categories.MoveNext() == S_OK)  
 {  
    do  

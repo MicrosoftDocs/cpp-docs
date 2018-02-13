@@ -22,11 +22,8 @@ Assigns the contents of one property ID set to another ID property set.
   
 ## Syntax  
   
-```  
-  
-      CDBPropIDSet& operator =(   
-   CDBPropIDSet& propset    
-) throw( );  
+```cpp
+      CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();  
 ```  
   
 ## Requirements  

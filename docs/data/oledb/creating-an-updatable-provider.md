@@ -207,7 +207,7 @@ HRESULT FlushData(HROW, HACCESSOR)
   
  The following example shows how `FlushData` is implemented in the `RUpdateRowset` class in the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample (see Rowset.h in the sample code):  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////////  
 // class RUpdateRowset (in rowset.h)  
 ...  
@@ -306,7 +306,7 @@ HRESULT FlushData(HROW, HACCESSOR)
   
  The following example shows how the **CommonGetColInfo** function is implemented in **CUpdateCommand** (see UpProvRS.cpp) in UpdatePV. Note how the columns have this **DBCOLUMNFLAGS_ISNULLABLE** for nullable columns.  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////////  
 // CUpdateCommand (in UpProvRS.cpp)  
   
@@ -418,6 +418,7 @@ trData[0].m_nNumericPrecision = 10;
 trData[0].m_ulColumnFlags = DBCOLUMNFLAGS_WRITE |  
                             DBCOLUMNFLAGS_ISFIXEDLENGTH;  
 lstrcpyW(trData[0].m_szColumnDefault, OLESTR("0"));  
+
 m_rgRowData.Add(trData[0]);  
 ```  
   

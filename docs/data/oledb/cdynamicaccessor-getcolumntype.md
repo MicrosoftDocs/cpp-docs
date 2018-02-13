@@ -22,12 +22,9 @@ Retrieves the data type of a specified column.
   
 ## Syntax  
   
-```  
-  
-      bool GetColumnType(   
-   DBORDINAL nColumn,   
-   DBTYPE* pType    
-) const throw( );  
+```
+bool GetColumnType(DBORDINAL nColumn,   
+  DBTYPE* pType) const throw();  
 ```  
   
 #### Parameters  

@@ -22,13 +22,9 @@ Sets the status of the specified parameter stored in the buffer.
   
 ## Syntax  
   
-```  
-  
-      bool SetParamStatus(  
-   DBORDINAL nParam,  
-   DBSTATUS status  
-);  
-```  
+```
+bool SetParamStatus(DBORDINAL nParam,  
+   DBSTATUS status);  ```  
   
 #### Parameters  
  `nParam`  

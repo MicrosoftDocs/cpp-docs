@@ -35,6 +35,7 @@ The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain f
   
 ```  
 HRESULT OpenAll();   
+
 void CloseAll();  
 ```  
   
@@ -142,6 +143,7 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
   
 ```  
 HRESULT OpenDataSource();   
+
 void CloseDataSource();  
 ```  
   

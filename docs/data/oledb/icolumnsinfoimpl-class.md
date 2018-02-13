@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IColumnsInfoImpl Class
 Provides an implementation of the [IColumnsInfo](https://msdn.microsoft.com/en-us/library/ms724541.aspx) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T>  
 class ATL_NO_VTABLE IColumnsInfoImpl :   
    public IColumnsInfo,    

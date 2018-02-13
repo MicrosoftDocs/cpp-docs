@@ -22,13 +22,10 @@ Specifies the native type of each command parameter.
   
 ## Syntax  
   
-```  
-  
-      HRESULT CCommandBase::SetParameterInfo(  
-   DB_UPARAMS ulParams,  
+```cpp
+HRESULT CCommandBase::SetParameterInfo(DB_UPARAMS ulParams,  
    const DBORDINAL* pOrdinals,  
-   const DBPARAMBINDINFO* pParamInfo   
-) throw( );  
+   const DBPARAMBINDINFO* pParamInfo) throw();  
 ```  
   
 #### Parameters  

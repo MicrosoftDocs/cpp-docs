@@ -22,17 +22,12 @@ Retrieves the specified column data as a string.
   
 ## Syntax  
   
-```  
-  
-      BaseType* GetString(  
-   DBORDINAL nColumn  
-) const throw( );  
-BaseType* GetString(  
-   const CHAR* pColumnName  
-) const throw( );  
-BaseType* GetString(  
-   const WCHAR* pColumnName  
-) const throw( );  
+```cpp
+      BaseType* GetString(DBORDINAL nColumn) const throw();  
+
+BaseType* GetString(const CHAR* pColumnName) const throw();  
+
+BaseType* GetString(const WCHAR* pColumnName) const throw();  
 ```  
   
 #### Parameters  

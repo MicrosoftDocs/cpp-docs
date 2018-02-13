@@ -22,9 +22,8 @@ Releases the [ISequentialStream](https://msdn.microsoft.com/en-us/library/ms7180
   
 ## Syntax  
   
-```  
-  
-void Close( );  
+```cpp
+void Close();  
   
 ```  
   

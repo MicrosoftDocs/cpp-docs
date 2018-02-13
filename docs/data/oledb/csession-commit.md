@@ -22,13 +22,10 @@ Commits the transaction.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Commit(   
-   BOOL bRetaining = FALSE,   
+```cpp
+HRESULT Commit(BOOL bRetaining = FALSE,   
    DWORD grfTC = XACTTC_SYNC,   
-   DWORD grfRM = 0    
-) const throw( );  
+   DWORD grfRM = 0) const throw();  
 ```  
   
 #### Parameters  

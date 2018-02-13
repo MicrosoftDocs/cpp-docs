@@ -22,12 +22,9 @@ Returns the error parameters.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( GetErrorParameters )(  
-   ULONG ulRecordNum,  
-   DISPPARAMS *pdispparams   
-);  
+```cpp
+      STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,  
+   DISPPARAMS *pdispparams);  
 ```  
   
 #### Parameters  

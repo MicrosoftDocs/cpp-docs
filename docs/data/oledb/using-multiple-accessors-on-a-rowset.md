@@ -106,7 +106,7 @@ int main(int argc, char* argv[])
         if (hr == S_OK)  
         {  
             // Ready to fetch/access data  
-            CTable<CAccessor<CJobs> > jobs;  
+            CTable<CAccessor<CJobs>> jobs;  
   
             // Set properties for making the rowset a read/write cursor  
             CDBPropSet dbRowset(DBPROPSET_ROWSET);  

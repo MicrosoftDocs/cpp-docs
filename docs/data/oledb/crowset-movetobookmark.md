@@ -22,12 +22,9 @@ Fetches the row marked by a bookmark or the row at a specified offset (`lSkip`) 
   
 ## Syntax  
   
-```  
-  
-      HRESULT MoveToBookmark(   
-   const CBookmarkBase& bookmark,   
-   LONG lSkip = 0    
-) throw( );  
+```cpp
+HRESULT MoveToBookmark(const CBookmarkBase& bookmark,   
+   LONG lSkip = 0) throw();  
 ```  
   
 #### Parameters  

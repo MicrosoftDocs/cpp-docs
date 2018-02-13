@@ -22,32 +22,21 @@ Retrieves the data for a specified column.
   
 ## Syntax  
   
-```  
-  
-      void* GetValue(   
-   DBORDINAL nColumn    
-) const throw( );  
-void* GetValue(  
-   const CHAR* pColumnName   
-) const throw( );  
-void* GetValue(  
-   const WCHAR* pColumnName   
-) const throw( );  
+```cpp
+void* GetValue(DBORDINAL nColumn) const throw();  
+
+void* GetValue(const CHAR* pColumnName) const throw();  
+
+void* GetValue(const WCHAR* pColumnName) const throw();  
+
+template < class ctype >
+bool GetValue(DBORDINAL nColumn, ctype* pData) const throw();  
+
 template < class ctype >  
-bool GetValue(  
-   DBORDINAL nColumn,  
-   ctype* pData   
-) const throw( );  
+bool GetValue(const CHAR* pColumnName, ctype* pData) const throw();  
+
 template < class ctype >  
-bool GetValue(  
-   const CHAR* pColumnName,  
-   ctype* pData   
-) const throw( );  
-template < class ctype >  
-bool GetValue(  
-   const WCHAR* pColumnName,  
-   ctype* pData   
-) const throw( );  
+bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();  
 ```  
   
 #### Parameters  

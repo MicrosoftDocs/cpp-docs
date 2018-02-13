@@ -22,12 +22,9 @@ Sets the command text, replacing the existing command text.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(SetCommandText)(   
-   REFGUID rguidDialect,   
-   LPCOLESTR pwszCommand    
-);  
+```cpp
+      STDMETHOD(SetCommandText)(REFGUID rguidDialect,   
+   LPCOLESTR pwszCommand);  
 ```  
   
 #### Parameters  

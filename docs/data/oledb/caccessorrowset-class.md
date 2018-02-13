@@ -20,16 +20,12 @@ ms.workload: ["cplusplus", "data-storage"]
 # CAccessorRowset Class
 Encapsulates a rowset and its associated accessors in a single class.  
   
-## Syntax  
-  
-```  
-template <   
-   class TAccessor = CNoAccessor,    
-   template <typename T> class TRowset = CRowset    
->  
-class CAccessorRowset :   
-   public TAccessor,    
-   public TRowset<TAccessor>  
+## Syntax
+
+```cpp
+template <class TAccessor = CNoAccessor, 
+          template <typename T> class TRowset = CRowset>  
+class CAccessorRowset : public TAccessor, public TRowset<TAccessor>  
 ```  
   
 #### Parameters  

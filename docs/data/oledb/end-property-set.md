@@ -22,11 +22,8 @@ Marks the end of a property set.
   
 ## Syntax  
   
-```  
-  
-END_PROPERTY_SET(  
-guid   
-)  
+```cpp
+END_PROPERTY_SET(guid)  
   
 ```  
   

@@ -20,16 +20,15 @@ ms.workload: ["cplusplus", "data-storage"]
 # IRowsetChangeImpl Class
 The OLE DB Templates implementation of the [IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx) interface in the OLE DB specification.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <  
    class T,   
    class Storage,   
    class BaseInterface = IRowsetChange,   
    class RowClass = CSimpleRow,   
-   class MapClass = CAtlMap < RowClass::KeyType, RowClass* >   
->  
+   class MapClass = CAtlMap <RowClass::KeyType, RowClass*>>  
 class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface  
 ```  
   

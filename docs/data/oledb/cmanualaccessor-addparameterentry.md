@@ -22,17 +22,13 @@ Adds a parameter entry to the parameter entry structures.
   
 ## Syntax  
   
-```  
-  
-      void AddParameterEntry(  
-   DBORDINAL nOrdinal,  
-   DBTYPE wType,  
-   DBLENGTH nColumnSize,  
+```
+void AddParameterEntry(DBORDINAL nOrdinal,  
+   DBTYPE wType,  DBLENGTH nColumnSize,  
    void* pData,  
    void* pLength = NULL,  
    void* pStatus = NULL,  
-   DBPARAMIO eParamIO = DBPARAMIO_INPUT   
-) throw ( );  
+   DBPARAMIO eParamIO = DBPARAMIO_INPUT) throw ();  
 ```  
   
 #### Parameters  

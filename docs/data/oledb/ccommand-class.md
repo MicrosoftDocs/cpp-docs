@@ -20,21 +20,16 @@ ms.workload: ["cplusplus", "data-storage"]
 # CCommand Class
 Provides methods to set and execute a command.  
   
-## Syntax  
-  
-```  
-template <  
-   class TAccessor = CNoAccessor,  
-   template < typename T > class TRowset = CRowset,  
-   class TMultiple = CNoMultipleResults   
->  
+## Syntax
+
+```cpp
+template <class TAccessor = CNoAccessor,  
+          template <typename T> class TRowset = CRowset,  
+          class TMultiple = CNoMultipleResults>  
 class CCommand :   
-   public CAccessorRowset <  
-      TAccessor,   
-      TRowset   
-   >,  
-   public CCommandBase,  
-   public TMultiple  
+           public CAccessorRowset <TAccessor, TRowset>,  
+           public CCommandBase,  
+           public TMultiple  
 ```  
   
 #### Parameters  

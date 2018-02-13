@@ -22,9 +22,8 @@ Retrieves the number of accessors created by the class.
   
 ## Syntax  
   
-```  
-  
-ULONG GetNumAccessors( ) const;  
+```cpp
+ULONG GetNumAccessors() const;  
   
 ```  
   

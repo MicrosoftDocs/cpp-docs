@@ -22,12 +22,9 @@ Checks to see if either or both parameters contain string values, and if so, cop
   
 ## Syntax  
   
-```  
-  
-      HRESULT CRowsetBaseImpl::GetCommandFromID(  
-   DBID* pTableID,  
-   DBID* pIndexID   
-);  
+```cpp
+HRESULT CRowsetBaseImpl::GetCommandFromID(DBID* pTableID,  
+   DBID* pIndexID);  
 ```  
   
 #### Parameters  

@@ -22,11 +22,8 @@ Dumps OLE DB Error Record information to the dump device if an error is returned
   
 ## Syntax  
   
-```  
-  
-      inline void AtlTraceErrorRecords(   
-   HRESULT hrErr = S_OK    
-);  
+```cpp
+      inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);  
 ```  
   
 #### Parameters  

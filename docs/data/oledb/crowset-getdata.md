@@ -22,12 +22,11 @@ Retrieves data from the rowset's copy of the row.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetData( ) throw( );   
-HRESULT GetData(   
-   int nAccessor    
-) throw( );  
+```cpp
+HRESULT GetData() throw();   
+
+
+HRESULT GetData(int nAccessor) throw();  
 ```  
   
 #### Parameters  

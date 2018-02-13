@@ -22,9 +22,8 @@ Calls [IRowset::ReleaseRows](https://msdn.microsoft.com/en-us/library/ms719771.a
   
 ## Syntax  
   
-```  
-  
-HRESULT ReleaseRows( ) throw( );  
+```cpp
+HRESULT ReleaseRows() throw();  
   
 ```  
   

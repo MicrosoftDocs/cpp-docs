@@ -22,8 +22,7 @@ A map of row handles currently contained by the provider in response to `GetNext
   
 ## Syntax  
   
-```  
-  
+```cpp
 MapClass  
  m_rgRowHandles;  
   

@@ -41,7 +41,7 @@ The following example assumes that you are adding OLE DB consumer support to an 
     ```  
     CDataSource ds;  
     CSession ss;  
-    class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor> >  
+    class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor>>  
     ```  
   
 -   Call **CoInitialize** to initialize COM. This is usually called in the main code. For example:  

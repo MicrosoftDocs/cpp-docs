@@ -22,15 +22,8 @@ Represents a binding on the rowset to the specific column in the database.
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_LENGTH(  
-nOrdinal  
-,   
-data  
-,   
-length  
- )  
+```cpp
+COLUMN_ENTRY_LENGTH(nOrdinal, data, length)  
   
 ```  
   

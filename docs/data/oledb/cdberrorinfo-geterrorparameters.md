@@ -22,12 +22,9 @@ Calls [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/en-us/libra
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetErrorParameters(   
-   ULONG ulRecordNum,   
-   DISPPARAMS* pdispparams    
-) const throw( );  
+```
+HRESULT GetErrorParameters(ULONG ulRecordNum,   
+  DISPPARAMS* pdispparams) const throw();  
 ```  
   
 #### Parameters  

@@ -22,16 +22,13 @@ Returns hash values for the specified bookmarks.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Hash )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Hash )(HCHAPTER /* hReserved */,  
    DBBKMARK cbBookmarks,  
    const DBBKMARK* rgcbBookmarks[],  
    const BYTE* rgpBookmarks[],  
    DBHASHVALUE rgHashValues[],  
-   DBROWSTATUS rgBookmarkStatus[]   
-);  
+   DBROWSTATUS rgBookmarkStatus[]);  
 ```  
   
 #### Parameters  

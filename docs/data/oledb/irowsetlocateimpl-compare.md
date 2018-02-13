@@ -22,16 +22,13 @@ Compares two bookmarks.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD ( Compare )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Compare )(HCHAPTER /* hReserved */,  
    DBBKMARK cbBookmark1,  
    const BYTE* pBookmark1,  
    DBBKMARK cbBookmark2,  
    const BYTE* pBookmark2,  
-   DBCOMPARE* pComparison   
-);  
+   DBCOMPARE* pComparison);  
 ```  
   
 #### Parameters  

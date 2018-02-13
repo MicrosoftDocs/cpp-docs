@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # IDBPropertiesImpl Class
 Provides an implementation for the `IDBProperties` interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T>   
 class ATL_NO_VTABLE IDBPropertiesImpl   
    : public IDBProperties, public CUtlProps<T>  

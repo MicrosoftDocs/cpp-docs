@@ -22,18 +22,15 @@ Opens a data source object using the service components in oledb32.dll.
   
 ## Syntax  
   
-```  
-  
-      HRESULT OpenWithServiceComponents (  
-   const CLSID clsid,  
+```cpp
+HRESULT OpenWithServiceComponents (const CLSID clsid,  
    DBPROPSET* pPropset = NULL,  
-   ULONG ulPropSets = 1   
-);  
-HRESULT OpenWithServiceComponents (  
-   LPCSTR szProgID,  
+   ULONG ulPropSets = 1);  
+
+
+HRESULT OpenWithServiceComponents (LPCSTR szProgID,  
    DBPROPSET* pPropset = NULL,  
-   ULONG ulPropSets = 1   
-);  
+   ULONG ulPropSets = 1);  
 ```  
   
 #### Parameters  

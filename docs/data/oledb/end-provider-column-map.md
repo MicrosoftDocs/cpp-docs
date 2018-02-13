@@ -22,9 +22,8 @@ Marks the end of the provider column map entries.
   
 ## Syntax  
   
-```  
-  
-END_PROVIDER_COLUMN_MAP( )  
+```cpp
+END_PROVIDER_COLUMN_MAP()  
   
 ```  
   

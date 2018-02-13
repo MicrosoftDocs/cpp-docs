@@ -22,15 +22,8 @@ Represents a binding on the rowset to the specific column in the database.
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_STATUS(  
-nOrdinal  
-,   
-data  
-,   
-status  
- )  
+```cpp
+COLUMN_ENTRY_STATUS(nOrdinal, data, status)  
   
 ```  
   

@@ -22,13 +22,10 @@ Returns the column metadata needed by most consumers.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD (GetColumnInfo)(  
-   DBORDINAL* pcColumns,  
+```cpp
+      STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,  
    DBCOLUMNINFO** prgInfo,  
-   OLECHAR** ppStringsBuffer   
-);  
+   OLECHAR** ppStringsBuffer);  
 ```  
   
 #### Parameters  

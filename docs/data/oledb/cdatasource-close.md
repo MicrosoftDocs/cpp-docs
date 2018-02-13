@@ -22,9 +22,8 @@ Closes the connection by releasing the **m_spInit** pointer.
   
 ## Syntax  
   
-```  
-  
-void Close( ) throw( );  
+```cpp
+void Close() throw();  
   
 ```  
   

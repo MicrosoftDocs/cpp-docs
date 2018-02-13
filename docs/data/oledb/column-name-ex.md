@@ -22,24 +22,8 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ## Syntax  
   
-```  
-  
-COLUMN_NAME_EX(  
-pszName  
-,   
-wType  
-,   
-nLength  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
-,   
-length  
-,   
-status )  
+```cpp
+COLUMN_NAME_EX(pszName, wType, nLength, nPrecision, nScale, data, length, status )  
 ```  
   
 #### Parameters  

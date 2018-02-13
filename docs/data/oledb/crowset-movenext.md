@@ -22,13 +22,9 @@ Moves the cursor to the next record.
   
 ## Syntax  
   
-```  
-  
-      HRESULT MoveNext( ) throw( );   
-HRESULT MoveNext(   
-   LONG lSkip,   
-   bool bForward = true    
-) throw( );  
+```cpp
+HRESULT MoveNext() throw();HRESULT MoveNext(LONG lSkip,   
+   bool bForward= true) throw();  
 ```  
   
 #### Parameters  

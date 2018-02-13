@@ -22,9 +22,8 @@ Cancels the current command execution.
   
 ## Syntax  
   
-```  
-  
-HRESULT CancelExecution( );  
+```cpp
+HRESULT CancelExecution();  
   
 ```  
   

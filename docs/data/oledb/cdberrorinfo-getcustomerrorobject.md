@@ -22,13 +22,9 @@ Calls [IErrorRecords::GetCustomErrorObject](https://msdn.microsoft.com/en-us/lib
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetCustomErrorObject(   
-   ULONG ulRecordNum,   
-   REFIID riid,   
-   IUnknown** ppObject    
-) const throw( );  
+```
+HRESULT GetCustomErrorObject(ULONG ulRecordNum,   
+   REFIID riid,IUnknown** ppObject) const throw();  
 ```  
   
 #### Parameters  

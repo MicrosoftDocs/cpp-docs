@@ -22,8 +22,7 @@ Reference count to an existing row handle.
   
 ## Syntax  
   
-```  
-  
+```cpp
 DWORD m_dwRef;  
   
 ```  

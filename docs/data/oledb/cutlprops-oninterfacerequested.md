@@ -22,11 +22,8 @@ Handles requests for an optional interface when a consumer calls a method on one
   
 ## Syntax  
   
-```  
-  
-      virtual HRESULT CUtlPropsBase::OnInterfaceRequested(  
-   REFIID riid  
-);  
+```cpp
+      virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);  
 ```  
   
 #### Parameters  

@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "data-storage"]
 # CManualAccessor Class
 Represents an accessor type designed for advanced use.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CManualAccessor : public CAccessorBase  
 ```  
   

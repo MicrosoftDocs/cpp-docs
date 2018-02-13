@@ -22,8 +22,7 @@ A variable indicating whether the enumerator is a parent enumerator, if the row 
   
 ## Syntax  
   
-```  
-  
+```cpp
 VARIANT_BOOL m_bIsParent;  
   
 ```  

@@ -22,12 +22,9 @@ Creates and initializes a new row using data from the accessor.
   
 ## Syntax  
   
-```  
-  
-      HRESULT Insert(   
-   int nAccessor = 0,   
-   bool bGetHRow = false    
-) throw( );  
+```cpp
+HRESULT Insert(int nAccessor = 0,   
+   bool bGetHRow = false) throw();  
 ```  
   
 #### Parameters  

@@ -22,8 +22,7 @@ An array of error records.
   
 ## Syntax  
   
-```  
-  
+```cpp
 CAtlArray<  
 RecordClass  
 > m_rgErrors;  

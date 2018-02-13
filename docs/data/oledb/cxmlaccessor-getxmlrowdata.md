@@ -22,12 +22,9 @@ Retrieves the entire contents of a table as XML-formatted string data, by row.
   
 ## Syntax  
   
-```  
-  
-      HRESULT GetXMLRowData(   
-   CSimpleStringW& strOutput,   
-   bool bAppend = false    
-) throw( );  
+```cpp
+HRESULT GetXMLRowData(CSimpleStringW& strOutput,   
+   bool bAppend = false) throw();  
 ```  
   
 #### Parameters  

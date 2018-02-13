@@ -22,12 +22,9 @@ Releases an accessor.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD(ReleaseAccessor)(  
-   HACCESSOR hAccessor,  
-   DBREFCOUNT* pcRefCount   
-);  
+```cpp
+      STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,  
+   DBREFCOUNT* pcRefCount);  
 ```  
   
 #### Parameters  

@@ -22,12 +22,9 @@ Retrieves column information for a particular client request.
   
 ## Syntax  
   
-```  
-  
-      static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(  
-   T* pv,  
-   ULONG* pcCols   
-);  
+```cpp
+      static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(T* pv,  
+   ULONG* pcCols);  
 ```  
   
 #### Parameters  

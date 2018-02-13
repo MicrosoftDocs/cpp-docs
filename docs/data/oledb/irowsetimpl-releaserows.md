@@ -22,15 +22,12 @@ Releases rows.
   
 ## Syntax  
   
-```  
-  
-      STDMETHOD( ReleaseRows )(  
-   DBCOUNTITEM cRows,  
+```cpp
+      STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBROWOPTIONS rgRowOptions[],  
    DBREFCOUNT rgRefCounts[],  
-   DBROWSTATUS rgRowStatus[]   
-);  
+   DBROWSTATUS rgRowStatus[]);  
 ```  
   
 #### Parameters  

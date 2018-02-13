@@ -22,17 +22,8 @@ Represents a binding to the specific column in the database. Supports `type` and
   
 ## Syntax  
   
-```  
-  
-COLUMN_ENTRY_TYPE_SIZE(  
-nOrdinal  
-,   
-wType  
-,   
-nLength  
-,   
-data  
- )  
+```cpp
+COLUMN_ENTRY_TYPE_SIZE(nOrdinal, wType, nLength, data)  
   
 ```  
   

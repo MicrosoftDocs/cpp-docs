@@ -22,8 +22,7 @@ A variable indicating whether the row describes a data source or an enumerator.
   
 ## Syntax  
   
-```  
-  
+```cpp
 USHORT m_nType;  
   
 ```  
