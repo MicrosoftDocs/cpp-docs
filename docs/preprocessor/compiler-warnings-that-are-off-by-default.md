@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings That Are Off by Default
 
-The compiler includes warnings that are turned off by default because most users don't want to see them. However, you can enable these warnings by using one of the following options.
+The compiler includes warnings that are turned off by default because most developers don't want to see them. However, you can enable these warnings by using one of the following options.
 
 **#pragma warning(default :** *warning_number* **)**  
 The specified warning (*warning_number*) is enabled at its default level. Documentation for the warning contains the default level of the warning.
