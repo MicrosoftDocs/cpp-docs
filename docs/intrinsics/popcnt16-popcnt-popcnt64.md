@@ -91,7 +91,7 @@ __popcnt16(0xff) = 8
 __popcnt16(0xffff) = 16  
 __popcnt(0x0) = 0  
 __popcnt(0xff) = 8  
-__oopcnt(0xffff) = 16  
+__popcnt(0xffff) = 16  
 __popcnt(0xffffffff) = 32  
 ```  
   
