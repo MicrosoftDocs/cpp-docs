@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 Because Visual Studio supports multiple platform toolsets, you can target operating systems and runtime libraries that are not supported by the default toolset. For example, by switching the platform toolset, you can use the C++11, C++14, and C++17 language enhancements supported by the Visual C++ compiler in Visual Studio to create apps that target [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. You can also use older platform toolsets to maintain binary-compatible legacy code and still take advantage of the latest features of the Visual Studio IDE.
 
 ## Install the Windows XP platform toolset
-
 To get the platform toolset and components to target [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] in Visual Studio 2017, run the Visual Studio Installer. When you initially install Visual Studio or when you choose **Modify** to modify an existing installation, make sure that the **Desktop development with C++** workload is selected. In the list of optional components for this workload, choose **Windows XP support for C++**, and then choose **Install** or **Modify**.
 
 ## Windows XP targeting experience
@@ -57,7 +56,7 @@ Due to differences in platform and library support, the development experience f
 
 - **C++ language features**
 
-   Only C++ language features implemented in Visual Studio 2012 are supported in apps that use the v110\_xp platform toolset. Only C++ language features implemented in Visual Studio 2013 are supported in apps that use the v120\_xp platform toolset. Only C++ language features implemented in Visual Studio 2012 are supported in apps that use the v140\_xp platform toolset. Visual Studio uses the corresponding compiler when it builds using the older platform toolsets. Use the most recent Windows XP platform toolset to take advantage of additional C++ language features implemented in that version of the compiler.
+   Only C++ language features implemented in Visual Studio 2012 are supported in apps that use the v110\_xp platform toolset. Only C++ language features implemented in Visual Studio 2013 are supported in apps that use the v120\_xp platform toolset. Only C++ language features implemented in Visual Studio 2015 are supported in apps that use the v140\_xp platform toolset. Visual Studio uses the corresponding compiler when it builds using the older platform toolsets. Use the most recent Windows XP platform toolset to take advantage of additional C++ language features implemented in that version of the compiler.
 
 - **Remote debugging**
 
