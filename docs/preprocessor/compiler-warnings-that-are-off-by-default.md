@@ -11,18 +11,23 @@ ms.author: "corob"
 manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# Compiler Warnings That Are Off by Default
+# Compiler warnings that are off by default
 
-The compiler includes warnings that are turned off by default because most developers don't want to see them. However, you can enable these warnings by using one of the following options.
+The compiler includes warnings that are turned off by default, because most developers don't want to see them. In some cases, they represent a stylistic choice, or are common idioms in older code, or take advantage of a Microsoft extension to the language. In other cases, they indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. Some of these warnings may be very noisy in library headers.
 
-**#pragma warning(default :** *warning_number* **)**  
-The specified warning (*warning_number*) is enabled at its default level. Documentation for the warning contains the default level of the warning.
+You can enable these warnings by using one of the following options:
 
-**#pragma warning(** *warning_level* **:** *warning_number* **)**  
-The specified warning (*warning_number*) is enabled at the specified level (*warning_level*).
+- **#pragma warning(default :** *warning_number* **)**  
+   The specified warning (*warning_number*) is enabled at its default level. Documentation for the warning contains the default level of the warning.
 
-[/Wall](../build/reference/compiler-option-warning-level.md)  
-**/Wall** enables all warnings that are off by default.
+- **#pragma warning(** *warning_level* **:** *warning_number* **)**  
+   The specified warning (*warning_number*) is enabled at the specified level (*warning_level*).
+
+- [/Wall](../build/reference/compiler-option-warning-level.md)  
+   **/Wall** enables all warnings that are off by default. If you use this option, you can turn off individual warnings by using the [/wd](../build/reference/compiler-option-warning-level.md) option.
+
+- [/w*lnnnn*](../build/reference/compiler-option-warning-level.md)  
+   This enables warning *nnnn* at level *l*.
 
 The following warnings are turned off by default.
 
@@ -121,6 +126,7 @@ The following warnings are turned off by default.
 |C5032 (level 4)|detected #pragma warning(push) with no corresponding #pragma warning(pop)|
 |C5035|use of feature '*feature*' causes function *function* to be compiled as guest code|
 |C5036 (level 1)|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*'|
+|[C5038](../error-messages/compiler-warnings/c5038.md)|data member '*member1*' will be initialized after data member '*member2*'|
 
 These warnings are off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set:
 
