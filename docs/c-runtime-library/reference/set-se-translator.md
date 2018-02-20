@@ -91,9 +91,9 @@ public:
 };  
 int main( void )  
 {  
+    _set_se_translator( trans_func ); 
     try  
-    {  
-        _set_se_translator( trans_func );  
+    {    
         SEFunc();  
     }  
     catch( SE_Exception e )  
@@ -105,8 +105,10 @@ void SEFunc()
 {  
     __try  
     {  
-        int x, y=0;  
-        x = 5 / y;  
+        int x = 5;
+        int y = 0;
+        int *p = &y;
+        *p = x / *p;
     }  
     __finally  
     {  
@@ -138,8 +140,11 @@ Caught a __try exception with SE_Exception.
 #include <stdio.h>  
   
 int thrower_func(int i) {  
-   int j = i/0;  
-  return 0;  
+   int x = 5;
+   int y = 0;
+   int *p = &y;
+   *p = x / *p; 
+   return 0;  
 }  
   
 class CMyException{  
@@ -148,25 +153,25 @@ class CMyException{
 #pragma unmanaged  
 void my_trans_func(unsigned int u, PEXCEPTION_POINTERS pExp )  
 {  
-printf("Translating the structured exception to a C++"  
+    printf("Translating the structured exception to a C++"  
              " exception.\n");  
-throw CMyException();  
+    throw CMyException();  
 }  
   
 void DoTest()  
 {  
     try  
     {  
-      thrower_func(10);  
+        thrower_func(10);  
     }   
   
     catch(CMyException e)  
     {  
-printf("Caught CMyException.\n");  
+        printf("Caught CMyException.\n");  
     }  
     catch(...)  
     {  
-      printf("Caught unexpected SEH exception.\n");  
+        printf("Caught unexpected SEH exception.\n");  
     }  
 }  
 #pragma managed  
