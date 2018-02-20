@@ -2,7 +2,6 @@
 title: "Static libraries (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/03/2017"
-ms.prod: "windows-client-threshold"
 ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""

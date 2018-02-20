@@ -2,7 +2,6 @@
 title: "JavaScript integration (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/18/2018"
-ms.prod: "windows-client-threshold"
 ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""

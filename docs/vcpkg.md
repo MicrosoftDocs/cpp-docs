@@ -11,7 +11,7 @@ ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
 ms.topic: "article"
 dev_langs: ["C++"]
 manager: ghogen
-ms.workload: [cplusplus]
+ms.workload: ["cplusplus"]
 ---
 # vcpkg: C++ Package Manager for Windows
 

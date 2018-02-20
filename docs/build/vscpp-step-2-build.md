@@ -1,6 +1,6 @@
 ---
 title: Build and run a C++ console app project | Microsoft Docs
-description: "Install Visual Studio support for Visual C++"
+description: "Build and run a Hello World console app in Visual C++"
 ms.custom: "mvc"
 ms.date: 12/12/2017
 ms.topic: "get-started-article"
