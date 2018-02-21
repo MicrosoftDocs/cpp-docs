@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["scheduler_worker_creation_error", "CONCRT/concurrency::scheduler_worker_creation_error", "CONCRT/concurrency::scheduler_worker_creation_error::scheduler_worker_creation_error"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler_worker_creation_error class"]

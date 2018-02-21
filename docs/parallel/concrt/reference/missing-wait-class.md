@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["missing_wait", "CONCRT/concurrency::missing_wait", "CONCRT/concurrency::missing_wait::missing_wait"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["missing_wait class"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["bad_target", "CONCRT/concurrency::bad_target", "CONCRT/concurrency::bad_target::bad_target"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["bad_target class"]

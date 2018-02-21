@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["location", "CONCRT/concurrency::location", "CONCRT/concurrency::location::location", "CONCRT/concurrency::location::current", "CONCRT/concurrency::location::from_numa_node"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["location class"]

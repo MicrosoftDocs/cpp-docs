@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration::cancellation_token_registration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cancellation_token_registration class"]

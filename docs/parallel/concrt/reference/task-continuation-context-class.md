@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["task_continuation_context", "PPLTASKS/concurrency::task_continuation_context", "PPLTASKS/concurrency::task_continuation_context::get_current_winrt_context", "PPLTASKS/concurrency::task_continuation_context::use_arbitrary", "PPLTASKS/concurrency::task_continuation_context::use_current", "PPLTASKS/concurrency::task_continuation_context::use_default", "PPLTASKS/concurrency::task_continuation_context::use_synchronous_execution"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_continuation_context class"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["message_processor", "AGENTS/concurrency::message_processor", "AGENTS/concurrency::message_processor::async_send", "AGENTS/concurrency::message_processor::sync_send", "AGENTS/concurrency::message_processor::wait", "AGENTS/concurrency::message_processor::process_incoming_message"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message_processor class"]

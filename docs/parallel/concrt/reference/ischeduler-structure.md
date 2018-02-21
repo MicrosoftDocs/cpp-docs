@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IScheduler", "CONCRTRM/concurrency::IScheduler", "CONCRTRM/concurrency::IScheduler::IScheduler::AddVirtualProcessors", "CONCRTRM/concurrency::IScheduler::IScheduler::GetId", "CONCRTRM/concurrency::IScheduler::IScheduler::GetPolicy", "CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyBusy", "CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle", "CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors", "CONCRTRM/concurrency::IScheduler::IScheduler::Statistics"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IScheduler structure"]

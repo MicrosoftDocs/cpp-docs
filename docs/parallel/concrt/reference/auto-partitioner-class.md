@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["auto_partitioner", "PPL/concurrency::auto_partitioner", "PPL/concurrency::auto_partitioner::auto_partitioner"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["auto_partitioner class"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IThreadProxy", "CONCRTRM/concurrency::IThreadProxy", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::GetId", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchOut", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchTo", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::YieldToSystem"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IThreadProxy structure"]

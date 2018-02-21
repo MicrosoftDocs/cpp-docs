@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency:[operator&amp;&amp"]
 dev_langs: ["C++"]
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
