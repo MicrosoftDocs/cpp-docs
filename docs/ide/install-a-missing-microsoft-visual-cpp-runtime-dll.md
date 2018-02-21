@@ -3,7 +3,6 @@ title: Install a missing Microsoft Visual C++ Runtime DLL | Microsoft Docs
 description: How to find and install missing Visual C++ runtime DLLs.
 ms.date: 08/30/2017
 ms.topic: "article"
-ms.prod: "visual-cpp"
 dev_langs: 
   - "C++"
 author: corob-msft

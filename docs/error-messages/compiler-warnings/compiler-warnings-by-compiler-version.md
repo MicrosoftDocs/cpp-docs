@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings by compiler version
 
-The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible.
+The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible. 
 
 These versions of the compiler introduced new warnings:
 
@@ -83,6 +83,7 @@ C5034|use of intrinsic '*intrinsic*' causes function *function* to be compiled a
 C5035|use of feature '*feature*' causes function *function* to be compiled as guest code
 C5036|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*'
 C5037|'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments
+C5038|data member '*member1*' will be initialized after data member '*member2*'
 
 ## Warnings introduced in Visual C++ 2017 RTM (compiler version 19.10.24903)
 
@@ -143,12 +144,12 @@ C4458|declaration of '*name*' hides class member
 C4459|declaration of '*name*' hides global declaration
 C4462|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.
 C4463|overflow; assigning *value* to bit-field that can only hold values from *value* to *value*
-C4473|'*description*' : not enough arguments passed for format string
-C4474|'*description*' : too many arguments passed for format string
-C4475|'*description*' : length modifier '*modifier*' cannot be used with type field character '*character*' in format specifier
-C4476|'*description*' : unknown type field character '*character*' in format specifier
-C4477|'*description*' : format string '*string*' requires an argument of type '*type*', but variadic argument *number* has type '*type*'
-C4478|'*description*' : positional and non-positional placeholders cannot be mixed in the same format string
+C4473|'*function*' : not enough arguments passed for format string
+C4474|'*function*' : too many arguments passed for format string
+C4475|'*function*' : length modifier '*modifier*' cannot be used with type field character '*character*' in format specifier
+C4476|'*function*' : unknown type field character '*character*' in format specifier
+C4477|'*function*' : format string '*string*' requires an argument of type '*type*', but variadic argument *number* has type '*type*'
+C4478|'*function*' : positional and non-positional placeholders cannot be mixed in the same format string
 C4494|'*type*' : Ignoring __declspec(allocator) because the function return type is not a pointer or reference
 C4495|nonstandard extension '__super' used: replace with explicit base class name
 C4496|nonstandard extension 'for each' used: replace with ranged-for statement

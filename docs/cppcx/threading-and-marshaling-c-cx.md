@@ -2,7 +2,6 @@
 title: "Threading and Marshaling (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/30/2016"
-ms.prod: "windows-client-threshold"
 ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""

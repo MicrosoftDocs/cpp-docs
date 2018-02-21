@@ -2,7 +2,6 @@
 title: "DLLs (C++/CX) | Microsoft Docs"
 ms.custom: ""
 ms.date: "02/06/2018"
-ms.prod: "windows-client-threshold"
 ms.technology: "cpp-windows"
 ms.reviewer: ""
 ms.suite: ""
