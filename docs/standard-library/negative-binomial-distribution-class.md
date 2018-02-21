@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::negative_binomial_distribution", "random/std::negative_binomial_distribution::reset", "random/std::negative_binomial_distribution::k", "random/std::negative_binomial_distribution::p", "random/std::negative_binomial_distribution::param", "random/std::negative_binomial_distribution::min", "random/std::negative_binomial_distribution::max", "random/std::negative_binomial_distribution::operator()", "random/std::negative_binomial_distribution::param_type", "random/std::negative_binomial_distribution::param_type::k", "random/std::negative_binomial_distribution::param_type::p", "random/std::negative_binomial_distribution::param_type::operator==", "random/std::negative_binomial_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::negative_binomial_distribution [C++]", "std::negative_binomial_distribution [C++], reset", "std::negative_binomial_distribution [C++], k", "std::negative_binomial_distribution [C++], p", "std::negative_binomial_distribution [C++], param", "std::negative_binomial_distribution [C++], min", "std::negative_binomial_distribution [C++], max", "std::negative_binomial_distribution [C++], param_type", "std::negative_binomial_distribution [C++], param_type"]

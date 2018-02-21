@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["<ccomplex>"]
 dev_langs: ["C++"]
 ms.assetid: a9fcb5f0-88e3-464b-a5fd-d1afb8cd7e6f

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["queue/std::operator!=", "queue/std::operator&gt;", "queue/std::operator&gt;=", "queue/std::operator&lt;", "queue/std::operator&lt;=", "queue/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 7c435b48-175c-45b0-88eb-24561044019c

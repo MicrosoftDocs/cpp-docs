@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["istream/std::operator&gt;&gt;"]
 dev_langs: ["C++"]
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2

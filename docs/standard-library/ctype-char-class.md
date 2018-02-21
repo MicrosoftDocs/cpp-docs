@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ctype<char>", "locale/std::ctype<char>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ctype<char> class"]

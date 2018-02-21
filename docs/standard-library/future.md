@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["<future>"]
 dev_langs: ["C++"]
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::normal_distribution", "random/std::normal_distribution::reset", "random/std::normal_distribution::mean", "random/std::normal_distribution::stddev", "random/std::normal_distribution::param", "random/std::normal_distribution::min", "random/std::normal_distribution::max", "random/std::normal_distribution::operator()", "random/std::normal_distribution::param_type", "random/std::normal_distribution::param_type::mean", "random/std::normal_distribution::param_type::stddev", "random/std::normal_distribution::param_type::operator==", "random/std::normal_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::normal_distribution [C++]", "std::normal_distribution [C++], reset", "std::normal_distribution [C++], mean", "std::normal_distribution [C++], stddev", "std::normal_distribution [C++], param", "std::normal_distribution [C++], min", "std::normal_distribution [C++], max", "std::normal_distribution [C++], param_type", "std::normal_distribution [C++], param_type"]

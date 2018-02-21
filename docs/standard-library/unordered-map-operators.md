@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["unordered_map/std::operator!=", "unordered_map/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed

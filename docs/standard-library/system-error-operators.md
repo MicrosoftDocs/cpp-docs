@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["system_error/std::operator!=", "system_error/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c

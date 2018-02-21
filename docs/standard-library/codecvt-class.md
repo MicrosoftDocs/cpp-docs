@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xlocale/std::codecvt", "xlocale/std::codecvt::extern_type", "xlocale/std::codecvt::intern_type", "xlocale/std::codecvt::state_type", "xlocale/std::codecvt::always_noconv", "xlocale/std::codecvt::do_always_noconv", "xlocale/std::codecvt::do_encoding", "xlocale/std::codecvt::do_in", "xlocale/std::codecvt::do_length", "xlocale/std::codecvt::do_max_length", "xlocale/std::codecvt::do_out", "xlocale/std::codecvt::do_unshift", "xlocale/std::codecvt::encoding", "xlocale/std::codecvt::in", "xlocale/std::codecvt::length", "xlocale/std::codecvt::max_length", "xlocale/std::codecvt::out", "xlocale/std::codecvt::unshift"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::codecvt [C++]", "std::codecvt [C++], extern_type", "std::codecvt [C++], intern_type", "std::codecvt [C++], state_type", "std::codecvt [C++], always_noconv", "std::codecvt [C++], do_always_noconv", "std::codecvt [C++], do_encoding", "std::codecvt [C++], do_in", "std::codecvt [C++], do_length", "std::codecvt [C++], do_max_length", "std::codecvt [C++], do_out", "std::codecvt [C++], do_unshift", "std::codecvt [C++], encoding", "std::codecvt [C++], in", "std::codecvt [C++], length", "std::codecvt [C++], max_length", "std::codecvt [C++], out", "std::codecvt [C++], unshift"]

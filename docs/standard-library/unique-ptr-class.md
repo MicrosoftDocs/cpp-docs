@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["memory/std::unique_ptr", "memory/std::unique_ptr::deleter_type", "memory/std::unique_ptr::element_type", "memory/std::unique_ptr::pointer", "memory/std::unique_ptr::get", "memory/std::unique_ptr::get_deleter", "memory/std::unique_ptr::release", "memory/std::unique_ptr::reset", "memory/std::unique_ptr::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::unique_ptr [C++]", "std::unique_ptr [C++], deleter_type", "std::unique_ptr [C++], element_type", "std::unique_ptr [C++], pointer", "std::unique_ptr [C++], get", "std::unique_ptr [C++], get_deleter", "std::unique_ptr [C++], release", "std::unique_ptr [C++], reset", "std::unique_ptr [C++], swap"]

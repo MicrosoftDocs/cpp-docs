@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xlocnum/std::numpunct", "xlocnum/std::numpunct::char_type", "xlocnum/std::numpunct::string_type", "xlocnum/std::numpunct::decimal_point", "xlocnum/std::numpunct::do_decimal_point", "xlocnum/std::numpunct::do_falsename", "xlocnum/std::numpunct::do_grouping", "xlocnum/std::numpunct::do_thousands_sep", "xlocnum/std::numpunct::do_truename", "xlocnum/std::numpunct::falsename", "xlocnum/std::numpunct::grouping", "xlocnum/std::numpunct::thousands_sep", "xlocnum/std::numpunct::truename"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::numpunct [C++]", "std::numpunct [C++], char_type", "std::numpunct [C++], string_type", "std::numpunct [C++], decimal_point", "std::numpunct [C++], do_decimal_point", "std::numpunct [C++], do_falsename", "std::numpunct [C++], do_grouping", "std::numpunct [C++], do_thousands_sep", "std::numpunct [C++], do_truename", "std::numpunct [C++], falsename", "std::numpunct [C++], grouping", "std::numpunct [C++], thousands_sep", "std::numpunct [C++], truename"]

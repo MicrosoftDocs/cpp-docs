@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["atomic/std::atomic"]
 dev_langs: ["C++"]
 ms.assetid: 261628ed-7049-41ac-99b9-cfe49f696b44
