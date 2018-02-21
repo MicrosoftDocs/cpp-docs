@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_bittestandcomplement64", "_bittestandcomplement64_cpp", "_bittestandcomplement_cpp", "_bittestandcomplement"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["btc instruction", "_bittestandcomplement intrinsic", "_bittestandcomplement64 intrinsic"]

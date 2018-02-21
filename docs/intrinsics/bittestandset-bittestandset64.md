@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_bittestandset_cpp", "_bittestandset64_cpp", "_bittestandset64", "_bittestandset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["bts instruction", "_bittestandset intrinsic", "_bittestandset64 intrinsic"]

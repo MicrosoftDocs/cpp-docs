@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_BitScanForward", "_BitScanForward_cpp", "_BitScanForward64_cpp", "_BitScanForward64"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_BitScanForward intrinsic", "bsf instruction", "BitScanForward intrinsic"]

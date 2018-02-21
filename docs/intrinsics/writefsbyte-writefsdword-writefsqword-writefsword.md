@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__writefsword", "__writefsbyte", "__writefsqword", "__writefsdword"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["writefsbyte intrinsic", "__writefsword intrinsic", "writefsqword intrinsic", "writefsdword intrinsic", "__writefsdword intrinsic", "__writefsqword intrinsic", "__writefsbyte intrinsic", "writefsword intrinsic"]

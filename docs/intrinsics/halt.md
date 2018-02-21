@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__halt", "__halt_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__halt intrinsic", "HLT instruction"]
