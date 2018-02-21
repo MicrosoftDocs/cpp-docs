@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["translation phases", "preprocessor, translation", "translation, compiler process", "preprocessor", "file translation [C++], compiler process", "files [C++], translation"]
 ms.assetid: a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db

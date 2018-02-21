@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["#error"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["#error directive", "preprocessor, directives", "error directive (#error directive)"]

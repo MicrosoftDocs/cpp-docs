@@ -2,7 +2,7 @@
 title: "Compiler Warnings That Are Off by Default | Microsoft Docs"
 ms.date: "11/04/2016"
 ms.technology: ["cpp-tools"]
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8

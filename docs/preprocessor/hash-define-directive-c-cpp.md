@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["#define"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["define directive (#define), syntax", "preprocessor, directives", "define directive (#define)", "#define directive, syntax", "#define directive"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor", "grammar, preprocessor", "preprocessor, grammar"]
 ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
