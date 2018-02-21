@@ -1,7 +1,7 @@
 ---
 title: "_set_se_translator | Microsoft Docs"
 ms.custom: ""
-ms.date: "02/21/2016"
+ms.date: "02/21/2018"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
