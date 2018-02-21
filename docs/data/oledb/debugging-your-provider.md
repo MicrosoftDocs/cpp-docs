@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["debugging [C++], providers", "OLE DB providers, debugging", "Visual C++ debugger, debugging providers", "Visual C++ debugger"]
 ms.assetid: 90d4e7db-06ea-4de0-a7f4-4f3751d50d93

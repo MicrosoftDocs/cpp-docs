@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CBookmark::GetSize", "ATL.CBookmark<nSize>.GetSize", "CBookmark<nSize>.GetSize", "CBookmark.GetSize", "ATL::CBookmark::GetSize", "CBookmark<0>::GetSize", "ATL::CBookmark<nSize>::GetSize", "ATL.CBookmark<0>.GetSize", "ATL::CBookmark<0>::GetSize", "ATL.CBookmark.GetSize", "CBookmark<0>.GetSize", "CBookmark<nSize>::GetSize"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetSize method"]

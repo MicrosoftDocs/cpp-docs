@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetImpl::m_iRowset", "IRowsetImpl.m_iRowset", "ATL::IRowsetImpl::m_iRowset", "ATL.IRowsetImpl.m_iRowset", "m_iRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_iRowset"]

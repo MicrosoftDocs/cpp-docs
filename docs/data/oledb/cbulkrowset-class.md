@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CBulkRowset", "ATL.CBulkRowset", "ATL::CBulkRowset<TAccessor>", "CBulkRowset", "ATL.CBulkRowset<TAccessor>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBulkRowset class"]

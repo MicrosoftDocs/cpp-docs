@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetImpl.m_bReset", "IRowsetImpl.m_bReset", "m_bReset", "IRowsetImpl::m_bReset", "ATL::IRowsetImpl::m_bReset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_bReset"]

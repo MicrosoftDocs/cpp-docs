@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CSimpleRow::ReleaseRow", "CSimpleRow::ReleaseRow", "ReleaseRow", "CSimpleRow.ReleaseRow", "ATL.CSimpleRow.ReleaseRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ReleaseRow method"]

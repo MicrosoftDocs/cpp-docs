@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets [C++], data types", "accessors [C++], types"]
 ms.assetid: 22483dd2-f4e0-4dcb-8e4d-cd43a9c1a3db

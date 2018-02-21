@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetValue", "CDynamicAccessor::GetValue<ctype>", "ATL.CDynamicAccessor.GetValue<ctype>", "CDynamicAccessor.GetValue", "CDynamicAccessor::GetValue", "ATL.CDynamicAccessor.GetValue", "ATL::CDynamicAccessor::GetValue", "ATL::CDynamicAccessor::GetValue<ctype>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetValue method"]

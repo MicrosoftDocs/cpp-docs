@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["PROVIDER_COLUMN_ENTRY_WSTR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["PROVIDER_COLUMN_ENTRY_WSTR macro"]

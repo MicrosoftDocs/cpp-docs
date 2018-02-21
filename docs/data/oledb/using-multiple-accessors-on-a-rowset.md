@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_ACCESSOR macro", "BEGIN_ACCESSOR macro, multiple accessors", "rowsets [C++], multiple accessors", "accessors [C++], rowsets"]
 ms.assetid: 80d4dc5d-4940-4a28-a4ee-d8602f71d2a6

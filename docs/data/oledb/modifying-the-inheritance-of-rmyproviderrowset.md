@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["RMyProviderRowset", "inheritance [C++]"]
 ms.assetid: 33089c90-98a4-43e7-8e67-d4bb137e267e

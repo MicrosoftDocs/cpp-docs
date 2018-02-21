@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB services [OLE DB], resource pooling", "resource pooling [OLE DB], services", "OLE DB, resource pooling", "OLE DB providers, resource pooling"]
 ms.assetid: 2ead1bcf-bbd4-43ea-a307-bb694b992fc1

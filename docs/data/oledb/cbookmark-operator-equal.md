@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CBookmark<0>::operator=", "CBookmark<0>.operator=", "ATL.CBookmark.operator=", "CBookmark::operator=", "ATL.CBookmark<0>.operator=", "ATL::CBookmark<0>::operator=", "CBookmark.operator=", "ATL::CBookmark::operator="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["= operator, with OLE DB templates", "operator =, bookmarks", "operator=, bookmarks"]

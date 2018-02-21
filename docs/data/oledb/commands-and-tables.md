@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumer templates, table support", "CCommand class, OLE DB consumer templates", "commands [C++], OLE DB Consumer Templates", "CTable class", "CAccessorRowset class, command and table classes", "rowsets, accessing", "tables [C++], OLE DB Consumer Templates", "OLE DB consumer templates, command support"]
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12

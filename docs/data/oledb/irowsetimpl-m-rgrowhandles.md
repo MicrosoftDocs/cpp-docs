@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IRowsetImpl::m_rgRowHandles", "IRowsetImpl.m_rgRowHandles", "m_rgRowHandles", "ATL::IRowsetImpl::m_rgRowHandles", "ATL.IRowsetImpl.m_rgRowHandles"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_rgRowHandles"]

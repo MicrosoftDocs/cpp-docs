@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicAccessor::SetLength", "CDynamicAccessor.SetLength", "CDynamicAccessor::SetLength", "ATL.CDynamicAccessor.SetLength"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetLength method"]

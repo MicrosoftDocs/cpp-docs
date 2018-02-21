@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowsetImpl::m_strCommandText", "CRowsetImpl.m_strCommandText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_strCommandText"]

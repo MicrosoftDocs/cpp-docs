@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_szCatalog", "m_szSourceCatalog", "m_szTargetSchema", "m_szTargetCatalog", "m_szTargetName", "CTranslationInfo", "m_szSourceName", "m_szSchema", "CTranslations", "m_szName", "m_szSourceSchema"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_szSourceSchema", "m_szSourceCatalog", "m_szSchema", "m_szTargetName", "m_szSourceName", "CTranslations typedef class", "m_szCatalog", "m_szTargetCatalog", "m_szName", "CTranslationInfo parameter class", "m_szTargetSchema"]
