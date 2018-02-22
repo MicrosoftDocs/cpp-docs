@@ -56,6 +56,9 @@ Select the type of debugging information created for your program and whether th
  **/ZI** is not compatible with [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).  
   
 > [!NOTE]
+>  **/ZI** The Edit and Continue feature is incompatible with use of the [LINE predefined macro](../../preprocessor/predefined-macros.md). Code compiled with **/ZI** cannot use **LINE** as a non-type template argument. **LINE** can used in macro expansion.
+  
+> [!NOTE]
 >  **/ZI** is only available in the compilers targeting x86 and x64 processors; this compiler option is not available in the compilers targeting ARM processors.  
   
  The compiler names the program database *project*.pdb. If you compile a file without a project, the compiler creates a database named VC*x*0.pdb., where *x* is the major version of [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] in use. The compiler embeds the name of the PDB in each .obj file created using this option, pointing the debugger to the location of symbolic and line-number information. When you use this option, your .obj files will be smaller, because debugging information is stored in the .pdb file rather than in .obj files.  
