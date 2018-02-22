@@ -243,7 +243,6 @@ usage: ninja [options] [targets...]
 |   -w FLAG  | adjust warnings (use -w list to list warnings)|
 
 ### Inherited environments (Visual Studio 2017 version 15.5)
-
 CMakeSettings.json now supports inherited environments. This feature enables you to (1) inherit default environments and (2) create custom environment variables that are passed to CMake.exe when it runs.
 
 ```json
@@ -285,7 +284,7 @@ In CMakeSettings.json, you can define custom environment variables globally or p
       "configurationType": "Debug",
       // Inherit the defaults for using the MSVC x86 compiler.
       "inheritEnvironments": [ "msvc_x86" ],
-      "buildRoot": "${env.BuildDir}\\${name}"M    },
+      "buildRoot": "${env.BuildDir}\\${name}"    },
     {
       "name": "x64-Debug",
       "generator": "Ninja",
