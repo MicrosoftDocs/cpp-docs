@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["IVirtualProcessorRoot", "CONCRTRM/concurrency::IVirtualProcessorRoot", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Activate", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Deactivate", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::EnsureAllTasksVisible", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::GetId"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IVirtualProcessorRoot structure"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_mm_extracti_si64", "_mm_extract_si64"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["extrq instruction", "_mm_extracti_si64 intrinsic", "_mm_extract_si64 intrinsic"]

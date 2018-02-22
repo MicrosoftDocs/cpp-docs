@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["stack/std::operator!=", "stack/std::operator&gt;", "stack/std::operator&gt;=", "stack/std::operator&lt;", "stack/std::operator&lt;=", "stack/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 9c1fc282-2f61-4727-9e80-84ea5d4934a2

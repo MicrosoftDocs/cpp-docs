@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors"]
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431

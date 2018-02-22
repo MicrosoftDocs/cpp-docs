@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicAccessor::CDynamicAccessor", "ATL::CDynamicAccessor::CDynamicAccessor", "ATL.CDynamicAccessor.CDynamicAccessor", "CDynamicAccessor.CDynamicAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicAccessor class, constructor"]

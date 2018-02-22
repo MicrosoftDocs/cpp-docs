@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["allocators", "C++ Standard Library, allocators"]
 ms.assetid: ac95023b-9e7d-49f5-861a-bf7a9a340746

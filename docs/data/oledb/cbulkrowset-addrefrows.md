@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CBulkRowset::AddRefRows", "AddRefRows", "CBulkRowset.AddRefRows", "ATL.CBulkRowset<TAccessor>.AddRefRows", "ATL::CBulkRowset::AddRefRows", "CBulkRowset<TAccessor>::AddRefRows", "ATL.CBulkRowset.AddRefRows", "ATL::CBulkRowset<TAccessor>::AddRefRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddRefRows method"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["reading data [C++], iostream programming", "data [C++], reading", "streams [C++], in iostream classes", "streams [C++]"]
 ms.assetid: a7e661e9-6cd1-4543-a9a4-c58ee9fd32f3

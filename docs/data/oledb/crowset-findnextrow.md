@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CRowset.FindNextRow", "CRowset<TAccessor>.FindNextRow", "ATL::CRowset::FindNextRow", "CRowset::FindNextRow", "CRowset<TAccessor>::FindNextRow", "CRowset.FindNextRow", "ATL.CRowset<TAccessor>.FindNextRow", "ATL::CRowset<TAccessor>::FindNextRow", "FindNextRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["FindNextRow method"]

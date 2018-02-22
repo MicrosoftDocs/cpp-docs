@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["strict_gs_check", "strict_gs_check_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["strict_gs_check pragma"]

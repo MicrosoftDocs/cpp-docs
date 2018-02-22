@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CBookmark<0>::SetBookmark", "ATL.CBookmark<0>.SetBookmark", "CBookmark<0>.SetBookmark", "SetBookmark", "ATL::CBookmark::SetBookmark", "ATL::CBookmark<0>::SetBookmark", "CBookmark.SetBookmark", "ATL.CBookmark.SetBookmark", "CBookmark::SetBookmark"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetBookmark method"]

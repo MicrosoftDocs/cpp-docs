@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["Scheduler", "CONCRT/concurrency::Scheduler", "CONCRT/concurrency::Scheduler::Scheduler", "CONCRT/concurrency::Scheduler::Attach", "CONCRT/concurrency::Scheduler::Create", "CONCRT/concurrency::Scheduler::CreateScheduleGroup", "CONCRT/concurrency::Scheduler::GetNumberOfVirtualProcessors", "CONCRT/concurrency::Scheduler::GetPolicy", "CONCRT/concurrency::Scheduler::Id", "CONCRT/concurrency::Scheduler::IsAvailableLocation", "CONCRT/concurrency::Scheduler::Reference", "CONCRT/concurrency::Scheduler::RegisterShutdownEvent", "CONCRT/concurrency::Scheduler::Release", "CONCRT/concurrency::Scheduler::ResetDefaultSchedulerPolicy", "CONCRT/concurrency::Scheduler::ScheduleTask", "CONCRT/concurrency::Scheduler::SetDefaultSchedulerPolicy"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Scheduler class"]

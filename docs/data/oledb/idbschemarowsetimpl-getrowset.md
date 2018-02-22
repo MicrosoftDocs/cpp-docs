@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IDBSchemaRowsetImpl::GetRowset", "ATL.IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl<SessionClass>::GetRowset", "IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl::GetRowset", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetRowset", "GetRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetRowset method"]

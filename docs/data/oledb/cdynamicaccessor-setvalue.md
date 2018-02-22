@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDynamicAccessor.SetValue", "ATL::CDynamicAccessor::SetValue", "ATL::CDynamicAccessor::SetValue<ctype>", "CDynamicAccessor.SetValue", "ATL.CDynamicAccessor.SetValue<ctype>", "CDynamicAccessor::SetValue", "CDynamicAccessor::SetValue<ctype>"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetValue method"]

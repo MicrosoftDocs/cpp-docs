@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CDynamicParameterAccessor.SetParamString", "ATL::CDynamicParameterAccessor::SetParamString", "SetParamString", "CDynamicParameterAccessor::SetParamString", "CDynamicParameterAccessor.SetParamString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetParamString method"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["amp_short_vectors/Concurrency::graphics::double_2::set_x", "amp_short_vectors/Concurrency::graphics::double_2::operator+=", "amp_short_vectors/Concurrency::graphics::double_2::operator=", "amp_short_vectors/Concurrency::graphics::double_2::operator/=", "amp_short_vectors/Concurrency::graphics::double_2::operator*=", "amp_short_vectors/Concurrency::graphics::double_2::yx", "amp_short_vectors/Concurrency::graphics::double_2::y", "amp_short_vectors/Concurrency::graphics::double_2::xy", "amp_short_vectors/Concurrency::graphics::double_2::set_xy", "amp_short_vectors/Concurrency::graphics::double_2::get_yx", "amp_short_vectors/Concurrency::graphics::double_2::set_yx", "amp_short_vectors/Concurrency::graphics::double_2::get_xy", "amp_short_vectors/Concurrency::graphics::double_2::operator++", "amp_short_vectors/Concurrency::graphics::double_2::get_x", "amp_short_vectors/Concurrency::graphics::double_2::operator-=", "amp_short_vectors/Concurrency::graphics::double_2::rg", "amp_short_vectors/Concurrency::graphics::double_2::gr", "amp_short_vectors/Concurrency::graphics::double_2::get_y", "amp_short_vectors/Concurrency::graphics::double_2::x", "amp_short_vectors/Concurrency::graphics::double_2::r", "amp_short_vectors/Concurrency::graphics::double_2::operator--", "amp_short_vectors/Concurrency::graphics::double_2", "amp_short_vectors/Concurrency::graphics::double_2::operator-", "amp_short_vectors/Concurrency::graphics::double_2::g", "amp_short_vectors/Concurrency::graphics::double_2::set_y"]
 dev_langs: ["C++"]
 ms.assetid: c19c2d21-3cbf-4ce5-b460-3b8253688f82

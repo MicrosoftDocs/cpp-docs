@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CDynamicAccessor::GetStatus", "CDynamicAccessor.GetStatus", "ATL.CDynamicAccessor.GetStatus", "CDynamicAccessor::GetStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetStatus method"]

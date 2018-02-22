@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBPropIDSet.AddPropertyID", "CDBPropIDSet::AddPropertyID", "AddPropertyID", "ATL.CDBPropIDSet.AddPropertyID", "ATL::CDBPropIDSet::AddPropertyID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddPropertyID method"]

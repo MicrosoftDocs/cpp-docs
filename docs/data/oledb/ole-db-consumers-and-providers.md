@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers, OLE DB data architecture", "OLE DB providers", "OLE DB consumers, OLE DB data architecture", "OLE DB consumers", "OLE DB, data model"]
 ms.assetid: 886cb39d-652b-4557-93f0-4b1b0754d8bc

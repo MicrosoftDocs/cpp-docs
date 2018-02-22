@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["databases [C++], OLE DB templates", "OLE DB consumers [C++], data access", "OLE DB consumer templates [C++]", "databases [C++], consumers"]
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82

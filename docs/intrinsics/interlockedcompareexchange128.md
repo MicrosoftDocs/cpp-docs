@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_InterlockedCompareExchange128_cpp", "_InterlockedCompareExchange128"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cmpxchg16b instruction", "_InterlockedCompareExchange128 intrinsic"]

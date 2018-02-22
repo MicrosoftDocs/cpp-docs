@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::IRowsetImpl::RefRows", "ATL.IRowsetImpl.RefRows", "IRowsetImpl.RefRows", "RefRows", "IRowsetImpl::RefRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["RefRows method"]

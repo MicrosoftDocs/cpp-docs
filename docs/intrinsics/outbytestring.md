@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__outbytestring"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rep outsb instruction", "__outbytestring intrinsic", "outsb instruction"]

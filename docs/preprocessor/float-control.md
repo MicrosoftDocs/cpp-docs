@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.float_control", "float_control_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["float_control pragma", "pragmas, float_control"]

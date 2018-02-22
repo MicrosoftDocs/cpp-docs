@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_szCollateName", "m_szCatalog", "DEFAULT_COLLATE_NAME", "m_szCollateSchema", "FORM_OF_USE", "DEFAULT_COLLATE_SCHEMA", "m_szCollateCatalog", "CCharacterSets", "CHARACTER_SET_NAME", "DEFAULT_COLLATE_CATALOG", "CHARACTER_SET_SCHEMA", "m_szFormOfUse", "NUMBER_OF_CHARACTERS", "m_szSchema", "CHARACTER_SET_CATALOG", "CCharacterSetInfo", "m_nNumCharacters", "m_szName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DEFAULT_COLLATE_SCHEMA", "m_nNumCharacters", "m_szSchema", "NUMBER_OF_CHARACTERS", "m_szCollateCatalog", "CCharacterSetInfo parameter class", "m_szCatalog", "CCharacterSets typedef class", "m_szCollateName", "m_szName", "m_szCollateSchema", "FORM_OF_USE OLE DB column", "CHARACTER_SET_NAME", "DEFAULT_COLLATE_CATALOG", "DEFAULT_COLLATE_NAME", "m_szFormOfUse", "CHARACTER_SET_SCHEMA", "CHARACTER_SET_CATALOG"]

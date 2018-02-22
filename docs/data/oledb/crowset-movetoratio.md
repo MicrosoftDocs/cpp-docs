@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["MoveToRatio", "CRowset<TAccessor>::MoveToRatio", "CRowset::MoveToRatio", "CRowset<TAccessor>.MoveToRatio", "ATL.CRowset.MoveToRatio", "ATL::CRowset::MoveToRatio", "CRowset.MoveToRatio", "ATL.CRowset<TAccessor>.MoveToRatio", "ATL::CRowset<TAccessor>::MoveToRatio"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MoveToRatio method"]

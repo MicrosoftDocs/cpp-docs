@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["valarray/std::gslice", "valarray/std::gslice::size", "valarray/std::gslice::start", "valarray/std::gslice::stride"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::gslice [C++]", "std::gslice [C++], size", "std::gslice [C++], start", "std::gslice [C++], stride"]

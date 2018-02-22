@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CRowset<TAccessor>.GetOriginalData", "CRowset<TAccessor>::GetOriginalData", "GetOriginalData", "ATL::CRowset<TAccessor>::GetOriginalData", "ATL.CRowset.GetOriginalData", "CRowset::GetOriginalData", "ATL::CRowset::GetOriginalData", "CRowset.GetOriginalData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetOriginalData method"]

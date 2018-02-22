@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CEnumeratorAccessor::m_szDescription", "CEnumeratorAccessor.m_szDescription", "CEnumeratorAccessor::m_szDescription", "ATL.CEnumeratorAccessor.m_szDescription"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_szDescription"]

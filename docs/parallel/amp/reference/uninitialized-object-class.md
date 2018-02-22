@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["uninitialized_object", "AMPRT/uninitialized_object", "AMPRT/Concurrency::uninitialized_object"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["uninitialized_object class"]

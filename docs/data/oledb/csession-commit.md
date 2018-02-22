@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CSession.Commit", "ATL.CSession.Commit", "ATL::CSession::Commit", "CSession::Commit"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Commit method"]

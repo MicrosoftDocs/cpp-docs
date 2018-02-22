@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["complex/std::complex::value_type", "complex/std::complex::imag", "complex/std::complex::real"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::complex [C++], value_type", "std::complex [C++], imag", "std::complex [C++], real"]

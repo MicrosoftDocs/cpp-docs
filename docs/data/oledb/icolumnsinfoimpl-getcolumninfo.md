@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetColumnInfo", "ATL::IColumnsInfoImpl::GetColumnInfo", "ATL.IColumnsInfoImpl.GetColumnInfo", "ATL::IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl::GetColumnInfo", "IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl.GetColumnInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetColumnInfo method"]

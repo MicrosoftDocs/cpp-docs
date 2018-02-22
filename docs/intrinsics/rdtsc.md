@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__rdtsc"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__rdtsc intrinsic", "rdtsc instruction", "Read Time Stamp Counter instruction"]

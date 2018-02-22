@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicAccessor.GetOrdinal", "ATL::CDynamicAccessor::GetOrdinal", "CDynamicAccessor::GetOrdinal", "ATL.CDynamicAccessor.GetOrdinal", "GetOrdinal"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetOrdinal method"]

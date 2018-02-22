@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["memory/std::raw_storage_iterator", "memory/std::raw_storage_iterator::element_type", "memory/std::raw_storage_iterator::iter_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::raw_storage_iterator [C++]", "std::raw_storage_iterator [C++], element_type", "std::raw_storage_iterator [C++], iter_type"]

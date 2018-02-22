@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor", "preprocessor, reference overview"]
 ms.assetid: e4a52843-7016-4f6d-8b40-cb1ace18f805

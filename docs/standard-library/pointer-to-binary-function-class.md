@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["xfunctional/std::pointer_to_binary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pointer_to_binary_function function", "pointer_to_binary_function class"]

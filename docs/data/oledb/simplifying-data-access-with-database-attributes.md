@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-attr.db_param", "vc-attr.db_column", "vc-attr.db_accessor", "vc-attr.db_command", "vc-attr.db_table", "vc-attr.db_source"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++], database", "attributes [C++], data access", "databases [C++], attributes", "data [C++], simplifying access", "data access [C++], database attributes", "database attributes [C++]", "OLE DB consumers [C++], database attributes", "attributes [C++], OLE DB consumer"]

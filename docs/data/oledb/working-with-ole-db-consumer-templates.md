@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["sample applications [C++], OLE DB Templates", "OLE DB consumer templates, about consumer templates"]
 ms.assetid: 526aa897-5961-4396-85cb-c84f77113551

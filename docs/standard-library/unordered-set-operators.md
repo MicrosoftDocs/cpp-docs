@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["unordered_set/std::operator!=", "unordered_set/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0

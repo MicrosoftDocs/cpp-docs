@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__noop_cpp", "__noop"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__noop keyword [C++]"]

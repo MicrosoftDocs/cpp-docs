@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CBulkRowset.SetRows", "CBulkRowset::SetRows", "CBulkRowset<TAccessor>.SetRows", "ATL.CBulkRowset<TAccessor>.SetRows", "CBulkRowset<TAccessor>::SetRows", "ATL::CBulkRowset<TAccessor>::SetRows", "ATL::CBulkRowset::SetRows", "CBulkRowset.SetRows", "SetRows"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SetRows method"]

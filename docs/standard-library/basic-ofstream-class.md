@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["fstream/std::basic_ofstream", "fstream/std::basic_ofstream::close", "fstream/std::basic_ofstream::is_open", "fstream/std::basic_ofstream::open", "fstream/std::basic_ofstream::rdbuf", "fstream/std::basic_ofstream::swap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::basic_ofstream [C++]", "std::basic_ofstream [C++], close", "std::basic_ofstream [C++], is_open", "std::basic_ofstream [C++], open", "std::basic_ofstream [C++], rdbuf", "std::basic_ofstream [C++], swap"]

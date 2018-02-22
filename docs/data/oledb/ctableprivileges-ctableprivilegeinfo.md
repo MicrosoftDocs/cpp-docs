@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_szCatalog", "m_bIsGrantable", "IS_GRANTABLE", "m_szType", "m_szSchema", "m_szGrantor", "GRANTOR", "GRANTEE", "CTablePrivileges", "CTablePrivilegeInfo", "m_szName", "m_szGrantee"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GRANTOR", "CTablePrivilegeInfo parameter class", "m_szSchema", "TABLE_CATALOG", "m_szType", "m_szCatalog", "TABLE_NAME", "IS_GRANTABLE", "TABLE_SCHEMA", "m_szName", "m_szGrantee", "CTablePrivileges typedef class", "m_szGrantor", "GRANTEE", "m_bIsGrantable"]

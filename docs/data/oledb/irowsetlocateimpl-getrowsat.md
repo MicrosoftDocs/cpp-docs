@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["GetRowsAt", "IRowsetLocateImpl.GetRowsAt", "ATL::IRowsetLocateImpl::GetRowsAt", "IRowsetLocateImpl::GetRowsAt", "ATL.IRowsetLocateImpl.GetRowsAt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetRowsAt method"]

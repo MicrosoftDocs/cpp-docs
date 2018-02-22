@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.detect_mismatch", "detect_mismatch_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, detect_mismatch", "detect_mismatch pragma"]

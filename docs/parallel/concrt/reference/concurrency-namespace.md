@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["concurrent_priority_queue/concurrency", "agents/concurrency", "concurrent_vector/concurrency", "concrt/concurrency", "internal_split_ordered_list/concurrency", "concurrent_queue/concurrency", "pplcancellation_token/concurrency", "pplinterface/concurrency", "ppltasks/concurrency", "ppl/concurrency", "concurrent_unordered_map/concurrency", "concrtrm/concurrency", "concurrent_unordered_set/concurrency", "pplconcrt/concurrency", "internal_concurrent_hash/concurrency"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency namespace"]

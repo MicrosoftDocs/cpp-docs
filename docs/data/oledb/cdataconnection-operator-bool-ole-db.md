@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["BOOL operator", "operator bool"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CRowset::Delete", "CRowset.Delete", "CRowset::Delete", "ATL.CRowset.Delete", "ATL::CRowset<TAccessor>::Delete", "CRowset<TAccessor>.Delete", "CRowset<TAccessor>::Delete", "ATL.CRowset<TAccessor>.Delete"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Delete method"]

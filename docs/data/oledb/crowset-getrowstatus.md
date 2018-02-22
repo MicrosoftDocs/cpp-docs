@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset.GetRowStatus", "ATL.CRowset<TAccessor>.GetRowStatus", "ATL::CRowset<TAccessor>::GetRowStatus", "CRowset::GetRowStatus", "ATL::CRowset::GetRowStatus", "CRowset<TAccessor>::GetRowStatus", "ATL.CRowset.GetRowStatus", "CRowset<TAccessor>.GetRowStatus", "GetRowStatus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetRowStatus method"]

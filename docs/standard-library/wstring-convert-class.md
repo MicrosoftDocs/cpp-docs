@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["wstring/stdext::cvt::wstring_convert", "locale/std::wstring_convert::byte_string", "locale/std::wstring_convert::wide_string", "locale/std::wstring_convert::state_type", "locale/std::wstring_convert::int_type", "locale/std::wstring_convert::from_bytes", "locale/std::wstring_convert::to_bytes", "locale/std::wstring_convert::converted", "locale/std::wstring_convert::state"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::cvt [C++], wstring_convert", "std::wstring_convert [C++], byte_string", "std::wstring_convert [C++], wide_string", "std::wstring_convert [C++], state_type", "std::wstring_convert [C++], int_type", "std::wstring_convert [C++], from_bytes", "std::wstring_convert [C++], to_bytes", "std::wstring_convert [C++], converted", "std::wstring_convert [C++], state"]

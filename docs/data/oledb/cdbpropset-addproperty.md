@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBPropSet::AddProperty", "CDBPropSet.AddProperty", "AddProperty", "ATL::CDBPropSet::AddProperty", "ATL.CDBPropSet.AddProperty"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AddProperty method"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL::CArrayRowset::m_nRowsRead", "ATL::CArrayRowset<TAccessor>::m_nRowsRead", "CArrayRowset<TAccessor>::m_nRowsRead", "ATL.CArrayRowset<TAccessor>.m_nRowsRead", "CArrayRowset.m_nRowsRead", "m_nRowsRead", "ATL.CArrayRowset.m_nRowsRead", "CArrayRowset::m_nRowsRead"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_nRowsRead"]

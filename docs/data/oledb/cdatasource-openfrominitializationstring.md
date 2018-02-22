@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDataSource.OpenFromInitializationString", "OpenFromInitializationString", "CDataSource::OpenFromInitializationString", "ATL::CDataSource::OpenFromInitializationString", "ATL.CDataSource.OpenFromInitializationString"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OpenFromInitializationString method"]

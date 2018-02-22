@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["clients, creating", "OLE DB consumers, implementing"]
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464

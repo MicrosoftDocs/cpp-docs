@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["random/std::gamma_distribution", "random/std::gamma_distribution::reset", "random/std::gamma_distribution::alpha", "random/std::gamma_distribution::beta", "random/std::gamma_distribution::param", "random/std::gamma_distribution::min", "random/std::gamma_distribution::max", "random/std::gamma_distribution::operator()", "random/std::gamma_distribution::param_type", "random/std::gamma_distribution::param_type::alpha", "random/std::gamma_distribution::param_type::beta", "random/std::gamma_distribution::param_type::operator==", "random/std::gamma_distribution::param_type::operator!="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["std::gamma_distribution [C++]", "std::gamma_distribution [C++], reset", "std::gamma_distribution [C++], alpha", "std::gamma_distribution [C++], beta", "std::gamma_distribution [C++], param", "std::gamma_distribution [C++], min", "std::gamma_distribution [C++], max", "std::gamma_distribution [C++], param_type", "std::gamma_distribution [C++], param_type"]

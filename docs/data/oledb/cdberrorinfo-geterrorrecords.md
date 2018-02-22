@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBErrorInfo.GetErrorRecords", "ATL.CDBErrorInfo.GetErrorRecords", "ATL::CDBErrorInfo::GetErrorRecords", "GetErrorRecords", "CDBErrorInfo::GetErrorRecords"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetErrorRecords method"]

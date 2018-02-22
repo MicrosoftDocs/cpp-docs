@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["m_szObjectCatalog", "CUsagePrivilegeInfo", "m_bIsGrantable", "OBJECT_NAME", "m_szPrivilegeType", "OBJECT_SCHEMA", "IS_GRANTABLE", "CUsagePrivileges", "m_szGrantor", "GRANTOR", "GRANTEE", "m_szObjectSchema", "OBJECT_CATALOG", "m_szObjectType", "m_szObjectName", "m_szGrantee", "OBJECT_TYPE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OBJECT_NAME", "GRANTOR", "OBJECT_CATALOG", "CUsagePrivileges typedef class", "m_szPrivilegeType", "OBJECT_SCHEMA", "m_szObjectSchema", "m_szObjectType", "IS_GRANTABLE", "OBJECT_TYPE", "CUsagePrivilegeInfo parameter class", "m_szGrantee", "m_szObjectCatalog", "m_szGrantor", "GRANTEE", "m_bIsGrantable", "m_szObjectName"]

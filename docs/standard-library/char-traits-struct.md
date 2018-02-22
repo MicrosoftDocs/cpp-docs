@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["iosfwd/std::char_traits", "iosfwd/std::char_traits::char_type", "iosfwd/std::char_traits::int_type", "iosfwd/std::char_traits::off_type", "iosfwd/std::char_traits::pos_type", "iosfwd/std::char_traits::state_type", "iosfwd/std::char_traits::assign", "iosfwd/std::char_traits::compare", "iosfwd/std::char_traits::copy", "iosfwd/std::char_traits::_Copy_s", "iosfwd/std::char_traits::eof", "iosfwd/std::char_traits::eq", "iosfwd/std::char_traits::eq_int_type", "iosfwd/std::char_traits::find", "iosfwd/std::char_traits::length", "iosfwd/std::char_traits::lt", "iosfwd/std::char_traits::move", "iosfwd/std::char_traits::_Move_s", "iosfwd/std::char_traits::not_eof", "iosfwd/std::char_traits::to_char_type", "iosfwd/std::char_traits::to_int_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["char_traits struct", "char_traits class"]

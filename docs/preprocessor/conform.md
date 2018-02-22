@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["conform_CPP", "vc-pragma.conform"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["conform pragma", "forScope conform pragma", "pragmas, conform"]

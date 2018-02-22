@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["accessors [C++], OLE DB Templates", "OLE DB consumer templates, accessors", "rowsets [C++], accessors"]
 ms.assetid: 6ce484a6-fbbe-40de-8ff9-5cddcd78d283

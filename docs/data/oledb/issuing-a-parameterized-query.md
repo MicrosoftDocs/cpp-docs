@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["parameter queries, running using CCommand class"]
 ms.assetid: aedb0fce-52a4-4c97-a5c9-b2114be6c3b0

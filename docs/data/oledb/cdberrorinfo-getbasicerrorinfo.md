@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDBErrorInfo::GetBasicErrorInfo", "ATL.CDBErrorInfo.GetBasicErrorInfo", "CDBErrorInfo.GetBasicErrorInfo", "ATL::CDBErrorInfo::GetBasicErrorInfo", "GetBasicErrorInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetBasicErrorInfo method"]

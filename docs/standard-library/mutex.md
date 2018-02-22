@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["<mutex>"]
 dev_langs: ["C++"]
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3

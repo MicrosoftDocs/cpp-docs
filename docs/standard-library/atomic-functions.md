@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["atomic/std::atomic_compare_exchange_strong", "atomic/std::atomic_compare_exchange_strong_explicit", "atomic/std::atomic_compare_exchange_weak", "atomic/std::atomic_compare_exchange_weak_explicit", "atomic/std::atomic_exchange", "atomic/std::atomic_exchange_explicit", "atomic/std::atomic_fetch_add", "atomic/std::atomic_fetch_add_explicit", "atomic/std::atomic_fetch_and", "atomic/std::atomic_fetch_and_explicit", "atomic/std::atomic_fetch_or", "atomic/std::atomic_fetch_or_explicit", "atomic/std::atomic_fetch_sub", "atomic/std::atomic_fetch_sub_explicit", "atomic/std::atomic_fetch_xor", "atomic/std::atomic_fetch_xor_explicit", "atomic/std::atomic_flag_clear", "atomic/std::atomic_flag_clear_explicit", "atomic/std::atomic_flag_test_and_set", "atomic/std::atomic_flag_test_and_set_explicit", "atomic/std::atomic_init", "atomic/std::atomic_is_lock_free", "atomic/std::atomic_load", "atomic/std::atomic_load_explicit", "atomic/std::atomic_signal_fence", "atomic/std::atomic_store", "atomic/std::atomic_store_explicit", "atomic/std::atomic_thread_fence", "atomic/std::kill_dependency"]
 ms.assetid: 5c53b4f8-6ff5-47d7-beb2-2d6ee3c6ea89
 caps.latest.revision: 12

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "conformance testing", "conformance testing [OLE DB]", "OLE DB providers, testing"]
 ms.assetid: d1a4f147-2edd-476c-b452-0e6a0ac09891

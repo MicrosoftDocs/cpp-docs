@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CDynamicParameterAccessor::GetParamName", "ATL.CDynamicParameterAccessor.GetParamName", "GetParamName", "CDynamicParameterAccessor.GetParamName", "ATL::CDynamicParameterAccessor::GetParamName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GetParamName method"]

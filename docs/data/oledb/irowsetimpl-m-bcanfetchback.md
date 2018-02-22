@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetImpl.m_bCanFetchBack", "ATL::IRowsetImpl::m_bCanFetchBack", "IRowsetImpl.m_bCanFetchBack", "IRowsetImpl::m_bCanFetchBack", "m_bCanFetchBack"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["m_bCanFetchBack"]

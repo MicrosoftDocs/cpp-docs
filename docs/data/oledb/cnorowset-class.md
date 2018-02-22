@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ATL.CNoRowset", "ATL::CNoRowset<TAccessor>", "CNoRowset", "ATL.CNoRowset<TAccessor>", "ATL::CNoRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CNoRowset class"]

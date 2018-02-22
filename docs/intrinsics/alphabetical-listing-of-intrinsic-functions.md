@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler intrinsics", "intrinsics, alphabetical list", "intrinsics"]
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895

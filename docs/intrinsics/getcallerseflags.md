@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_getcallerseflags", "_getcallerseflags_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_getcallerseflags intrinsic"]

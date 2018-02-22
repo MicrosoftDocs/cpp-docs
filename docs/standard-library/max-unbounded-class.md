@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/stdext::max_unbounded", "allocators/stdext::max_unbounded::allocated", "allocators/stdext::max_unbounded::deallocated", "allocators/stdext::max_unbounded::full", "allocators/stdext::max_unbounded::released", "allocators/stdext::max_unbounded::saved"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::max_unbounded", "stdext::max_unbounded [C++], allocated", "stdext::max_unbounded [C++], deallocated", "stdext::max_unbounded [C++], full", "stdext::max_unbounded [C++], released", "stdext::max_unbounded [C++], saved"]

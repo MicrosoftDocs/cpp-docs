@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.push_macro", "push_macro_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, push_macro", "push_macro pragma"]

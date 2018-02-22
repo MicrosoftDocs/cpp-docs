@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["ISource", "AGENTS/concurrency::ISource", "AGENTS/concurrency::ISource::accept", "AGENTS/concurrency::ISource::acquire_ref", "AGENTS/concurrency::ISource::consume", "AGENTS/concurrency::ISource::link_target", "AGENTS/concurrency::ISource::release", "AGENTS/concurrency::ISource::release_ref", "AGENTS/concurrency::ISource::reserve", "AGENTS/concurrency::ISource::unlink_target", "AGENTS/concurrency::ISource::unlink_targets"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ISource class"]

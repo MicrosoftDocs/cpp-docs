@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CRowset<TAccessor>::CRowset", "CRowset.CRowset", "ATL::CRowset::CRowset", "ATL::CRowset<TAccessor>::CRowset", "ATL.CRowset.CRowset", "CRowset", "CRowset<TAccessor>.CRowset", "CRowset::CRowset", "ATL.CRowset<TAccessor>.CRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRowset class, constructor"]

@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__ull_rshift"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ull_rshift intrinsic", "__ull_rshift intrinsic"]

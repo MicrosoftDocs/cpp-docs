@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-windows"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["omp_get_thread_num"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["omp_get_thread_num OpenMP function"]

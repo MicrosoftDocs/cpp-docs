@@ -6,7 +6,7 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: ["cpp-tools"]
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__vmx_off"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VMXOFF instruction", "__vmx_off intrinsic"]
