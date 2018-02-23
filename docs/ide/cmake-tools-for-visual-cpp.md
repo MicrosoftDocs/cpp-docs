@@ -243,8 +243,7 @@ usage: ninja [options] [targets...]
 |   -w FLAG  | adjust warnings (use -w list to list warnings)|
 
 ### Inherited environments (Visual Studio 2017 version 15.5)
-
-CmakeSettings.json now supports inherited environments. This feature enables you to (1) inherit default environments and (2) create custom environment variables that are passed to CMake.exe when it runs.
+CMakeSettings.json now supports inherited environments. This feature enables you to (1) inherit default environments and (2) create custom environment variables that are passed to CMake.exe when it runs.
 
 ```json
   "inheritEnvironments": [ "msvc_x64_x64" ]
@@ -266,7 +265,7 @@ The following table shows the default values and their command line equivalents:
 |msvc_arm64_x64|Compile for ARM64 using 64-bit tools|
 
 ### Custom environment variables
-In CmakeSettings.json, you can define custom environment variables globally or per-configuration in the **environments** property. The following example defines one global variable, **BuildDir**, which is inherited in both the x86-Debug and x64-Debug configurations. Each configuration uses the variable to specify the value for the **buildRoot** property for that configuration. Note also how each configuration uses the **inheritEnvironments** property to specify a variable that applies only to that configuration.
+In CMakeSettings.json, you can define custom environment variables globally or per-configuration in the **environments** property. The following example defines one global variable, **BuildDir**, which is inherited in both the x86-Debug and x64-Debug configurations. Each configuration uses the variable to specify the value for the **buildRoot** property for that configuration. Note also how each configuration uses the **inheritEnvironments** property to specify a variable that applies only to that configuration.
 
 ```json
 {
@@ -285,8 +284,7 @@ In CmakeSettings.json, you can define custom environment variables globally or p
       "configurationType": "Debug",
       // Inherit the defaults for using the MSVC x86 compiler.
       "inheritEnvironments": [ "msvc_x86" ],
-      "buildRoot": "${env.BuildDir}\\${name}"
-    },
+      "buildRoot": "${env.BuildDir}\\${name}"    },
     {
       "name": "x64-Debug",
       "generator": "Ninja",
@@ -341,7 +339,7 @@ In the next example, the x86-Debug configuration defines its own value for the *
 }
 ```
 
-## Cmake configure step
+## CMake configure step
 
 When significant changes are made to the CMakeSettings.json or to CMakeLists.txt files, Visual Studio automatically re-runs the CMake configure step. If the configure step finishes without errors, the information that is collected is available in C++ IntelliSense and language services and also in build and debug operations.
 
