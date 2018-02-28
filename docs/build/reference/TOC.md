@@ -148,6 +148,7 @@
 ##### [/Zc:throwingNew (Assume operator new throws)](zc-throwingnew-assume-operator-new-throws.md)
 ##### [/Zc:trigraphs (Trigraphs Substitution)](zc-trigraphs-trigraphs-substitution.md)
 ##### [/Zc:wchar_t (wchar_t Is Native Type)](zc-wchar-t-wchar-t-is-native-type.md)
+#### [/Zf (Faster PDB generation)](zf.md)
 #### [/Zg (Generate Function Prototypes)](zg-generate-function-prototypes.md)
 #### [/Zl (Omit Default Library Name)](zl-omit-default-library-name.md)
 #### [/Zm (Specify Precompiled Header Memory Allocation Limit)](zm-specify-precompiled-header-memory-allocation-limit.md)
