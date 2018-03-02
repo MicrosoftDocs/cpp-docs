@@ -7,9 +7,7 @@ ms.suite: ""
 ms.technology: ["cpp-language"]
 ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["auto_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["automatic storage class [C++], auto keyword", "auto keyword [C++]"]
 ms.assetid: 744a41c0-2510-4140-a1be-96257e722908
 caps.latest.revision: 14
 author: "mikeblome"
